@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: andrew@concrete5.org\n"
-"POT-Creation-Date: 2013-07-19 08:08+0000\n"
-"PO-Revision-Date: 2013-07-19 08:30+0000\n"
+"POT-Creation-Date: 2013-07-19 22:00+0000\n"
+"PO-Revision-Date: 2013-07-20 08:18+0000\n"
 "Last-Translator: aembler <andrew@concrete5.org>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/projects/p/concrete5/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
@@ -1249,7 +1249,7 @@ msgstr "使用中のアカウントではユーザーにアクセスできませ
 #, php-format
 msgid "%d page"
 msgid_plural "%d pages"
-msgstr[0] ""
+msgstr[0] "%d ページ"
 
 #: concrete/tools/dashboard/sitemap_empty_trash.php:27
 #, php-format
@@ -1521,8 +1521,8 @@ msgid "Copy Version"
 msgstr "バージョンをコピー"
 
 #: concrete/blocks/guestbook/view.php:21
-#: concrete/single_pages/dashboard/blocks/types/view.php:36
-#: concrete/single_pages/dashboard/blocks/types/view.php:47
+#: concrete/single_pages/dashboard/blocks/types/view.php:39
+#: concrete/single_pages/dashboard/blocks/types/view.php:50
 #: concrete/single_pages/dashboard/pages/themes/view.php:95
 #: concrete/single_pages/dashboard/system/basics/icons.php:27
 #: concrete/single_pages/dashboard/system/basics/icons.php:91
@@ -3329,7 +3329,7 @@ msgid "You do not have permission to install custom block types or add-ons."
 msgstr "カスタムブロックタイプやアドオンをインストールする権限がありません。"
 
 #: concrete/core/controllers/single_pages/dashboard/blocks/types.php:89
-#: concrete/single_pages/dashboard/blocks/types/view.php:47
+#: concrete/single_pages/dashboard/blocks/types/view.php:50
 msgid "Only the super user may remove block types."
 msgstr "スーパーユーザーのみがブロックタイプを取り除けます。"
 
@@ -3337,7 +3337,7 @@ msgstr "スーパーユーザーのみがブロックタイプを取り除けま
 msgid "This block type is internal. It cannot be uninstalled."
 msgstr "このブロックタイプは内部で使用しています。アンインストールすることはできません。"
 
-#: concrete/core/controllers/single_pages/dashboard/blocks/types.php:124
+#: concrete/core/controllers/single_pages/dashboard/blocks/types.php:125
 msgid "The block type has been removed."
 msgstr "ブロックタイプは削除されています。"
 
@@ -4636,6 +4636,20 @@ msgstr "エラー：レイアウトが属しているエリアがありません
 msgid "Unknown User"
 msgstr "不明なユーザー"
 
+#: concrete/core/models/page.php:1584
+#, php-format
+msgid "Page \"%s\" at path \"%s\" deleted"
+msgstr ""
+
+#: concrete/core/models/page.php:1584 concrete/core/models/page.php:1642
+msgid "Page Action"
+msgstr ""
+
+#: concrete/core/models/page.php:1642
+#, php-format
+msgid "Page \"%s\" at path \"%s\" Moved to trash"
+msgstr ""
+
 #: concrete/core/models/page_list.php:448
 #: concrete/single_pages/dashboard/reports/forms.php:169
 #: concrete/single_pages/dashboard/reports/surveys.php:23
@@ -5210,37 +5224,37 @@ msgstr "マーケットプレイスに接続しアイテムをダウンロード
 msgid "Version %d"
 msgstr "バージョン %d"
 
-#: concrete/core/models/block_types.php:711
+#: concrete/core/models/block_types.php:723
 #, php-format
 msgid ""
 "%s not found. Please check that the block controller file contains the "
 "correct class name."
 msgstr "%s が見つかりません。ブロックのcontrollerファイルに正しいクラス名が含まれているか確認してください。"
 
-#: concrete/core/models/block_types.php:720
+#: concrete/core/models/block_types.php:732
 msgid ""
 "Error: Block Type cannot be installed because no db.xml file can be found. "
 "Either create a db.xml file for this block type, or remove the $btTable "
 "variable from its controller."
 msgstr "エラー：db.xml が存在しないためにブロックタイプをインストールできませんでした。このブロックタイプの db.xml ファイルを作成するか、$btTable 変数をブロックタイプのコントローラーから削除してください。"
 
-#: concrete/core/models/block_types.php:724
+#: concrete/core/models/block_types.php:736
 msgid ""
 "Error: Block Type cannot be installed due to an unknown database error. "
 "Please check that the db.xml file for this block type is formatted "
 "correctly."
 msgstr "エラー：不明のデータベースエラーのためブロックタイプをインストールできませんでした。ブロックタイプの db.xml ファイルの書式が正しいかどうか確認してください。"
 
-#: concrete/core/models/block_types.php:785
+#: concrete/core/models/block_types.php:797
 #, php-format
 msgid "No block found with the handle %s."
 msgstr "ハンドル %s のブロックが見つかりません。"
 
-#: concrete/core/models/block_types.php:804
+#: concrete/core/models/block_types.php:816
 msgid "Error: Block Type table must contain at least two fields."
 msgstr "エラー：ブロックタイプのテーブルは少なくとも2つのフィールドを含める必要があります。"
 
-#: concrete/core/models/block_types.php:806
+#: concrete/core/models/block_types.php:818
 msgid "Error: Block Type table must contain a \"bID\" primary key field."
 msgstr "エラー：ブロックタイプのテーブルに「bID」のプライマリーキーフィールドを含める必要があります。"
 
@@ -6412,17 +6426,17 @@ msgid "No block types can be added to this area."
 msgstr "このエリアにはどのブロックタイプも追加できません。"
 
 #: concrete/elements/block_area_add_new.php:218
-#: concrete/single_pages/dashboard/blocks/types/view.php:73
+#: concrete/single_pages/dashboard/blocks/types/view.php:76
 msgid "More Blocks"
 msgstr "その他のブロック"
 
 #: concrete/elements/block_area_add_new.php:219
-#: concrete/single_pages/dashboard/blocks/types/view.php:74
+#: concrete/single_pages/dashboard/blocks/types/view.php:77
 msgid "Browse our marketplace of add-ons to extend your site!"
 msgstr "マーケットプレイスで拡張アドオンを探して機能強化！"
 
 #: concrete/elements/block_area_add_new.php:220
-#: concrete/single_pages/dashboard/blocks/types/view.php:75
+#: concrete/single_pages/dashboard/blocks/types/view.php:78
 msgid "More Add-ons"
 msgstr "追加アドオン"
 
@@ -8553,7 +8567,7 @@ msgid "Send Form Email From This Address"
 msgstr "新着フォームのメール通知をこのアドレスから受け取る"
 
 #: concrete/blocks/form/form_setup_html.php:205
-#: concrete/single_pages/dashboard/blocks/types/view.php:29
+#: concrete/single_pages/dashboard/blocks/types/view.php:32
 #: concrete/single_pages/dashboard/pages/single.php:60
 msgid "Refresh"
 msgstr "更新"
@@ -8838,6 +8852,14 @@ msgstr "アイコン"
 #: concrete/blocks/page_list/view.php:68
 msgid "RSS Feed"
 msgstr "RSSフィードタイトル"
+
+#: concrete/blocks/page_list/templates/blog_index_thumbnail.php:72
+msgid "Newer Posts"
+msgstr ""
+
+#: concrete/blocks/page_list/templates/blog_index_thumbnail.php:73
+msgid "Older Posts"
+msgstr ""
 
 #: concrete/blocks/page_list/templates/blog_index.php:18
 msgid "Comment"
@@ -9837,7 +9859,7 @@ msgstr "アドオンのアップデートが利用可能です！"
 msgid "No packages have been installed."
 msgstr "パッケージは何もインストールされていません。"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:56
+#: concrete/single_pages/dashboard/blocks/types/view.php:59
 #: concrete/single_pages/dashboard/extend/install.php:277
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:165
 msgid "Awaiting Installation"
@@ -9847,7 +9869,7 @@ msgstr "インストール待ち"
 msgid "Nothing currently available to install."
 msgstr "インストール可能なものはありません。"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:63
+#: concrete/single_pages/dashboard/blocks/types/view.php:66
 #: concrete/single_pages/dashboard/extend/install.php:304
 #: concrete/single_pages/dashboard/pages/themes/view.php:151
 #: concrete/single_pages/dashboard/system/attributes/types.php:52
@@ -9928,43 +9950,47 @@ msgstr "カスタムブロックタイプの追加、インストールされた
 msgid "Usage Count"
 msgstr "使用数"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:21
+#: concrete/single_pages/dashboard/blocks/types/view.php:20
+msgid "Usage Count on Active Pages"
+msgstr ""
+
+#: concrete/single_pages/dashboard/blocks/types/view.php:24
 msgid "Internal"
 msgstr "内部"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:22
+#: concrete/single_pages/dashboard/blocks/types/view.php:25
 msgid "This is an internal block type."
 msgstr "これは内部ブロックタイプです。"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:27
+#: concrete/single_pages/dashboard/blocks/types/view.php:30
 msgid "Back to Block Types"
 msgstr "ブロックタイプ一覧に戻る"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:34
+#: concrete/single_pages/dashboard/blocks/types/view.php:37
 #, php-format
 msgid ""
 "This will remove all instances of the %s block type. This cannot be undone. "
 "Are you sure?"
 msgstr "この操作は %s ブロックタイプに保存されているすべての情報を削除します。やり直す事ができませんがよろしいですか？"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:68
+#: concrete/single_pages/dashboard/blocks/types/view.php:71
 msgid "No custom block types are awaiting installation."
 msgstr "インストール待ちのカスタムブロックタイプはありません。"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:79
+#: concrete/single_pages/dashboard/blocks/types/view.php:82
 msgid "Installed Block Types"
 msgstr "インストールされたブロックタイプ"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:109
+#: concrete/single_pages/dashboard/blocks/types/view.php:112
 msgid ""
 "Are you sure you wish to reset the display order of installed block types?"
 msgstr "インストールしたブロックタイプの表示順序をリセットしてもよろしいですか？"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:111
+#: concrete/single_pages/dashboard/blocks/types/view.php:114
 msgid "Reset Order"
 msgstr "順序をリセット"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:117
+#: concrete/single_pages/dashboard/blocks/types/view.php:120
 msgid "Internal Block Types"
 msgstr "内部ブロックタイプ"
 

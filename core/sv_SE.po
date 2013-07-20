@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: andrew@concrete5.org\n"
-"POT-Creation-Date: 2013-07-19 08:08+0000\n"
-"PO-Revision-Date: 2013-07-19 09:31+0000\n"
+"POT-Creation-Date: 2013-07-19 22:00+0000\n"
+"PO-Revision-Date: 2013-07-20 09:00+0000\n"
 "Last-Translator: MrLindau <fredrik@fxlindau.se>\n"
 "Language-Team: Swedish (Sweden) (http://www.transifex.com/projects/p/concrete5/language/sv_SE/)\n"
 "MIME-Version: 1.0\n"
@@ -1521,8 +1521,8 @@ msgid "Copy Version"
 msgstr "Kopiera version"
 
 #: concrete/blocks/guestbook/view.php:21
-#: concrete/single_pages/dashboard/blocks/types/view.php:36
-#: concrete/single_pages/dashboard/blocks/types/view.php:47
+#: concrete/single_pages/dashboard/blocks/types/view.php:39
+#: concrete/single_pages/dashboard/blocks/types/view.php:50
 #: concrete/single_pages/dashboard/pages/themes/view.php:95
 #: concrete/single_pages/dashboard/system/basics/icons.php:27
 #: concrete/single_pages/dashboard/system/basics/icons.php:91
@@ -3329,7 +3329,7 @@ msgid "You do not have permission to install custom block types or add-ons."
 msgstr "Du saknar rättigheter att lägga till egna blocktyper eller tillägg."
 
 #: concrete/core/controllers/single_pages/dashboard/blocks/types.php:89
-#: concrete/single_pages/dashboard/blocks/types/view.php:47
+#: concrete/single_pages/dashboard/blocks/types/view.php:50
 msgid "Only the super user may remove block types."
 msgstr "Endast superanvändaren får ta bort blocktyper."
 
@@ -3337,7 +3337,7 @@ msgstr "Endast superanvändaren får ta bort blocktyper."
 msgid "This block type is internal. It cannot be uninstalled."
 msgstr "Denna blocktyp är inbyggd. Den kan inte avinstalleras."
 
-#: concrete/core/controllers/single_pages/dashboard/blocks/types.php:124
+#: concrete/core/controllers/single_pages/dashboard/blocks/types.php:125
 msgid "The block type has been removed."
 msgstr "Denna blocktyp har tagits bort."
 
@@ -4638,6 +4638,20 @@ msgstr "Fel: inget område kopplat till layout"
 msgid "Unknown User"
 msgstr "Okänd användare"
 
+#: concrete/core/models/page.php:1584
+#, php-format
+msgid "Page \"%s\" at path \"%s\" deleted"
+msgstr "Sidan \"%s\" med sökvägen \"%s\" borttagen"
+
+#: concrete/core/models/page.php:1584 concrete/core/models/page.php:1642
+msgid "Page Action"
+msgstr "Sidoaktivitet"
+
+#: concrete/core/models/page.php:1642
+#, php-format
+msgid "Page \"%s\" at path \"%s\" Moved to trash"
+msgstr "Sidan \"%s\" med sökvägen \"%s\" Flyttad till papperskorgen"
+
 #: concrete/core/models/page_list.php:448
 #: concrete/single_pages/dashboard/reports/forms.php:169
 #: concrete/single_pages/dashboard/reports/surveys.php:23
@@ -5212,37 +5226,37 @@ msgstr "Kunde inte ansluta till Marketplace för att hämta objektet."
 msgid "Version %d"
 msgstr "Version %d"
 
-#: concrete/core/models/block_types.php:711
+#: concrete/core/models/block_types.php:723
 #, php-format
 msgid ""
 "%s not found. Please check that the block controller file contains the "
 "correct class name."
 msgstr "%s kunde inte hittas. Kontrollera att controllerfilen för blocket innehåller rätt klassnamn."
 
-#: concrete/core/models/block_types.php:720
+#: concrete/core/models/block_types.php:732
 msgid ""
 "Error: Block Type cannot be installed because no db.xml file can be found. "
 "Either create a db.xml file for this block type, or remove the $btTable "
 "variable from its controller."
 msgstr "Fel: Blocktypen kan inte installeras för det går inte att hitta en db.xml-fil. Skapa en db.xml-fil för denna blocktyp, eller  ta bort variabeln $btTable från blockets styrenhet. "
 
-#: concrete/core/models/block_types.php:724
+#: concrete/core/models/block_types.php:736
 msgid ""
 "Error: Block Type cannot be installed due to an unknown database error. "
 "Please check that the db.xml file for this block type is formatted "
 "correctly."
 msgstr "Fel: Blocktypen kan inte installeras på grund av ett okänt databasfel. Var vänlig och kontrollera att db.xml är formaterad korrekt för denna blocktyp."
 
-#: concrete/core/models/block_types.php:785
+#: concrete/core/models/block_types.php:797
 #, php-format
 msgid "No block found with the handle %s."
 msgstr "Kunde inte hitta något block med handtaget %s."
 
-#: concrete/core/models/block_types.php:804
+#: concrete/core/models/block_types.php:816
 msgid "Error: Block Type table must contain at least two fields."
 msgstr "Fel: Block-typ måste innehålla minst två fält."
 
-#: concrete/core/models/block_types.php:806
+#: concrete/core/models/block_types.php:818
 msgid "Error: Block Type table must contain a \"bID\" primary key field."
 msgstr "Fel: Block-typ måste innehålla ett \"bID\" primär nyckelfält."
 
@@ -6418,17 +6432,17 @@ msgid "No block types can be added to this area."
 msgstr "Inga blocktyper kan läggas till i detta område."
 
 #: concrete/elements/block_area_add_new.php:218
-#: concrete/single_pages/dashboard/blocks/types/view.php:73
+#: concrete/single_pages/dashboard/blocks/types/view.php:76
 msgid "More Blocks"
 msgstr "Fler block"
 
 #: concrete/elements/block_area_add_new.php:219
-#: concrete/single_pages/dashboard/blocks/types/view.php:74
+#: concrete/single_pages/dashboard/blocks/types/view.php:77
 msgid "Browse our marketplace of add-ons to extend your site!"
 msgstr "Bläddra igenom vår marknadsplats efter tillägg för att bygga ut din webbplats!"
 
 #: concrete/elements/block_area_add_new.php:220
-#: concrete/single_pages/dashboard/blocks/types/view.php:75
+#: concrete/single_pages/dashboard/blocks/types/view.php:78
 msgid "More Add-ons"
 msgstr "Fler tillägg"
 
@@ -8559,7 +8573,7 @@ msgid "Send Form Email From This Address"
 msgstr "Skicka epost via formulär från denna adress"
 
 #: concrete/blocks/form/form_setup_html.php:205
-#: concrete/single_pages/dashboard/blocks/types/view.php:29
+#: concrete/single_pages/dashboard/blocks/types/view.php:32
 #: concrete/single_pages/dashboard/pages/single.php:60
 msgid "Refresh"
 msgstr "Uppdatera"
@@ -8844,6 +8858,14 @@ msgstr "RSS-ikon"
 #: concrete/blocks/page_list/view.php:68
 msgid "RSS Feed"
 msgstr "RSS-flöde"
+
+#: concrete/blocks/page_list/templates/blog_index_thumbnail.php:72
+msgid "Newer Posts"
+msgstr "Nyare poster"
+
+#: concrete/blocks/page_list/templates/blog_index_thumbnail.php:73
+msgid "Older Posts"
+msgstr "Äldre poster"
 
 #: concrete/blocks/page_list/templates/blog_index.php:18
 msgid "Comment"
@@ -9844,7 +9866,7 @@ msgstr "Det finns uppdateringar till dina tillägg!"
 msgid "No packages have been installed."
 msgstr "Inga paket har installerats."
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:56
+#: concrete/single_pages/dashboard/blocks/types/view.php:59
 #: concrete/single_pages/dashboard/extend/install.php:277
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:165
 msgid "Awaiting Installation"
@@ -9854,7 +9876,7 @@ msgstr "Inväntar installationen"
 msgid "Nothing currently available to install."
 msgstr "Ingenting är tillgängligt för installation just nu."
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:63
+#: concrete/single_pages/dashboard/blocks/types/view.php:66
 #: concrete/single_pages/dashboard/extend/install.php:304
 #: concrete/single_pages/dashboard/pages/themes/view.php:151
 #: concrete/single_pages/dashboard/system/attributes/types.php:52
@@ -9935,43 +9957,47 @@ msgstr "Lägg till egna block, uppdatera databastabellerna för installerade blo
 msgid "Usage Count"
 msgstr "Användningsräknare"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:21
+#: concrete/single_pages/dashboard/blocks/types/view.php:20
+msgid "Usage Count on Active Pages"
+msgstr "Aktivitetsräknare på aktiva sidor"
+
+#: concrete/single_pages/dashboard/blocks/types/view.php:24
 msgid "Internal"
 msgstr "Inbyggd"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:22
+#: concrete/single_pages/dashboard/blocks/types/view.php:25
 msgid "This is an internal block type."
 msgstr "Detta är en inbyggd blocktyp."
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:27
+#: concrete/single_pages/dashboard/blocks/types/view.php:30
 msgid "Back to Block Types"
 msgstr "Tillbaka till blocktyper"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:34
+#: concrete/single_pages/dashboard/blocks/types/view.php:37
 #, php-format
 msgid ""
 "This will remove all instances of the %s block type. This cannot be undone. "
 "Are you sure?"
 msgstr "Detta kommer att ta bort alla förekomster av blocktypen %s. Detta kan inte ångras. Är du säker?"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:68
+#: concrete/single_pages/dashboard/blocks/types/view.php:71
 msgid "No custom block types are awaiting installation."
 msgstr "Inga egna block väntar på att installeras."
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:79
+#: concrete/single_pages/dashboard/blocks/types/view.php:82
 msgid "Installed Block Types"
 msgstr "Installerade blocktyper"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:109
+#: concrete/single_pages/dashboard/blocks/types/view.php:112
 msgid ""
 "Are you sure you wish to reset the display order of installed block types?"
 msgstr "Är du säker på att du vill återställa visningsordningen av installerade blocktyper?"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:111
+#: concrete/single_pages/dashboard/blocks/types/view.php:114
 msgid "Reset Order"
 msgstr "Nollställ ordning"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:117
+#: concrete/single_pages/dashboard/blocks/types/view.php:120
 msgid "Internal Block Types"
 msgstr "Interna blocktyper"
 

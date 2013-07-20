@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: andrew@concrete5.org\n"
-"POT-Creation-Date: 2013-07-19 08:08+0000\n"
-"PO-Revision-Date: 2013-07-19 08:30+0000\n"
+"POT-Creation-Date: 2013-07-19 22:00+0000\n"
+"PO-Revision-Date: 2013-07-20 08:19+0000\n"
 "Last-Translator: aembler <andrew@concrete5.org>\n"
 "Language-Team: Persian (Iran) (http://www.transifex.com/projects/p/concrete5/language/fa_IR/)\n"
 "MIME-Version: 1.0\n"
@@ -1516,8 +1516,8 @@ msgid "Copy Version"
 msgstr "نسخه کپی"
 
 #: concrete/blocks/guestbook/view.php:21
-#: concrete/single_pages/dashboard/blocks/types/view.php:36
-#: concrete/single_pages/dashboard/blocks/types/view.php:47
+#: concrete/single_pages/dashboard/blocks/types/view.php:39
+#: concrete/single_pages/dashboard/blocks/types/view.php:50
 #: concrete/single_pages/dashboard/pages/themes/view.php:95
 #: concrete/single_pages/dashboard/system/basics/icons.php:27
 #: concrete/single_pages/dashboard/system/basics/icons.php:91
@@ -3324,7 +3324,7 @@ msgid "You do not have permission to install custom block types or add-ons."
 msgstr "شما اجازه نصب بلوکها و افزونها را ندارید"
 
 #: concrete/core/controllers/single_pages/dashboard/blocks/types.php:89
-#: concrete/single_pages/dashboard/blocks/types/view.php:47
+#: concrete/single_pages/dashboard/blocks/types/view.php:50
 msgid "Only the super user may remove block types."
 msgstr "تنها مدیریت اجازه حذف بلوک ها را دارد"
 
@@ -3332,7 +3332,7 @@ msgstr "تنها مدیریت اجازه حذف بلوک ها را دارد"
 msgid "This block type is internal. It cannot be uninstalled."
 msgstr "این بلوک از نوع داخلی است. این را نمی توان حذف کرد."
 
-#: concrete/core/controllers/single_pages/dashboard/blocks/types.php:124
+#: concrete/core/controllers/single_pages/dashboard/blocks/types.php:125
 msgid "The block type has been removed."
 msgstr "نوع بلوک حذف شد."
 
@@ -4631,6 +4631,20 @@ msgstr "خطا: هیچ محیطی برای طرح بندی انتخاب نشده
 msgid "Unknown User"
 msgstr "کاربر ناشناس"
 
+#: concrete/core/models/page.php:1584
+#, php-format
+msgid "Page \"%s\" at path \"%s\" deleted"
+msgstr ""
+
+#: concrete/core/models/page.php:1584 concrete/core/models/page.php:1642
+msgid "Page Action"
+msgstr ""
+
+#: concrete/core/models/page.php:1642
+#, php-format
+msgid "Page \"%s\" at path \"%s\" Moved to trash"
+msgstr ""
+
 #: concrete/core/models/page_list.php:448
 #: concrete/single_pages/dashboard/reports/forms.php:169
 #: concrete/single_pages/dashboard/reports/surveys.php:23
@@ -5205,37 +5219,37 @@ msgstr "قادر به اتصال به بازار برای بازیابی این 
 msgid "Version %d"
 msgstr "نسخه %d"
 
-#: concrete/core/models/block_types.php:711
+#: concrete/core/models/block_types.php:723
 #, php-format
 msgid ""
 "%s not found. Please check that the block controller file contains the "
 "correct class name."
 msgstr "%s پیدا نشد. مطمئن شوید فایل کنترلی بلوک نام کلاس درستی دارد."
 
-#: concrete/core/models/block_types.php:720
+#: concrete/core/models/block_types.php:732
 msgid ""
 "Error: Block Type cannot be installed because no db.xml file can be found. "
 "Either create a db.xml file for this block type, or remove the $btTable "
 "variable from its controller."
 msgstr "خطا: "
 
-#: concrete/core/models/block_types.php:724
+#: concrete/core/models/block_types.php:736
 msgid ""
 "Error: Block Type cannot be installed due to an unknown database error. "
 "Please check that the db.xml file for this block type is formatted "
 "correctly."
 msgstr "خطا: نوع بلوک را نمی توان به دلیل خطا در بانک اطلاعاتی ناشناخته نصب شده است. لطفا بررسی کنید که فایل db.xml برای این بلوک نوع فرمت به درستی."
 
-#: concrete/core/models/block_types.php:785
+#: concrete/core/models/block_types.php:797
 #, php-format
 msgid "No block found with the handle %s."
 msgstr "بلوک با دسته %s ."
 
-#: concrete/core/models/block_types.php:804
+#: concrete/core/models/block_types.php:816
 msgid "Error: Block Type table must contain at least two fields."
 msgstr "خطا: نوع بلوک باید حداقل دو فیلد باشد"
 
-#: concrete/core/models/block_types.php:806
+#: concrete/core/models/block_types.php:818
 msgid "Error: Block Type table must contain a \"bID\" primary key field."
 msgstr "خطا: نوع بلوک باید یک \"پیشنهاد\" زمینه کلید اولیه داشته باشد"
 
@@ -6407,17 +6421,17 @@ msgid "No block types can be added to this area."
 msgstr "هیچ نوع بلوک نمی تواند به این محل اضافه شود."
 
 #: concrete/elements/block_area_add_new.php:218
-#: concrete/single_pages/dashboard/blocks/types/view.php:73
+#: concrete/single_pages/dashboard/blocks/types/view.php:76
 msgid "More Blocks"
 msgstr "چند بلوک"
 
 #: concrete/elements/block_area_add_new.php:219
-#: concrete/single_pages/dashboard/blocks/types/view.php:74
+#: concrete/single_pages/dashboard/blocks/types/view.php:77
 msgid "Browse our marketplace of add-ons to extend your site!"
 msgstr "مرور بازار ما از افزونه به گسترش خود را در سایت !"
 
 #: concrete/elements/block_area_add_new.php:220
-#: concrete/single_pages/dashboard/blocks/types/view.php:75
+#: concrete/single_pages/dashboard/blocks/types/view.php:78
 msgid "More Add-ons"
 msgstr "افزودن افزونه های بیشتر"
 
@@ -8548,7 +8562,7 @@ msgid "Send Form Email From This Address"
 msgstr "ارسال ایمیل از این آدرس"
 
 #: concrete/blocks/form/form_setup_html.php:205
-#: concrete/single_pages/dashboard/blocks/types/view.php:29
+#: concrete/single_pages/dashboard/blocks/types/view.php:32
 #: concrete/single_pages/dashboard/pages/single.php:60
 msgid "Refresh"
 msgstr "بازنشانی"
@@ -8833,6 +8847,14 @@ msgstr "RSS آیکون"
 #: concrete/blocks/page_list/view.php:68
 msgid "RSS Feed"
 msgstr "RSS خوراک"
+
+#: concrete/blocks/page_list/templates/blog_index_thumbnail.php:72
+msgid "Newer Posts"
+msgstr ""
+
+#: concrete/blocks/page_list/templates/blog_index_thumbnail.php:73
+msgid "Older Posts"
+msgstr ""
 
 #: concrete/blocks/page_list/templates/blog_index.php:18
 msgid "Comment"
@@ -9832,7 +9854,7 @@ msgstr "اضافه کردن به روز رسانی در دسترس هستند!"
 msgid "No packages have been installed."
 msgstr "هیچ بسته ای نصب نشده است."
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:56
+#: concrete/single_pages/dashboard/blocks/types/view.php:59
 #: concrete/single_pages/dashboard/extend/install.php:277
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:165
 msgid "Awaiting Installation"
@@ -9842,7 +9864,7 @@ msgstr "در انتظار نصب"
 msgid "Nothing currently available to install."
 msgstr "هیچ چیز در حال حاضر در دسترس برای نصب."
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:63
+#: concrete/single_pages/dashboard/blocks/types/view.php:66
 #: concrete/single_pages/dashboard/extend/install.php:304
 #: concrete/single_pages/dashboard/pages/themes/view.php:151
 #: concrete/single_pages/dashboard/system/attributes/types.php:52
@@ -9923,43 +9945,47 @@ msgstr "اضافه کردن انواع بلوک های سفارشی، تازه �
 msgid "Usage Count"
 msgstr "شمار دفعات استفاده در تارنما"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:21
+#: concrete/single_pages/dashboard/blocks/types/view.php:20
+msgid "Usage Count on Active Pages"
+msgstr ""
+
+#: concrete/single_pages/dashboard/blocks/types/view.php:24
 msgid "Internal"
 msgstr "مربوط به هسته"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:22
+#: concrete/single_pages/dashboard/blocks/types/view.php:25
 msgid "This is an internal block type."
 msgstr "این نوع بلوک مربوط به هسته است."
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:27
+#: concrete/single_pages/dashboard/blocks/types/view.php:30
 msgid "Back to Block Types"
 msgstr "بازگشت به بلوک انواع"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:34
+#: concrete/single_pages/dashboard/blocks/types/view.php:37
 #, php-format
 msgid ""
 "This will remove all instances of the %s block type. This cannot be undone. "
 "Are you sure?"
 msgstr "این همه نمونه هایی از حذف %s نوع بلوک است. این را نمی توان باز گرداند. آیا شما مطمئن هستید؟"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:68
+#: concrete/single_pages/dashboard/blocks/types/view.php:71
 msgid "No custom block types are awaiting installation."
 msgstr "انواع بلوک سفارشی نمی منتظر نصب."
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:79
+#: concrete/single_pages/dashboard/blocks/types/view.php:82
 msgid "Installed Block Types"
 msgstr "نوع بلوک های نصب شده"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:109
+#: concrete/single_pages/dashboard/blocks/types/view.php:112
 msgid ""
 "Are you sure you wish to reset the display order of installed block types?"
 msgstr "آیا شما مطمئن هستید که میخواهید به منظور تنظیم مجدد صفحه نمایش از انواع بلوک نصب شده؟"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:111
+#: concrete/single_pages/dashboard/blocks/types/view.php:114
 msgid "Reset Order"
 msgstr "تنظیم مجدد سفارش"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:117
+#: concrete/single_pages/dashboard/blocks/types/view.php:120
 msgid "Internal Block Types"
 msgstr "انواع بلوک داخلی"
 

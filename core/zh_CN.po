@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: andrew@concrete5.org\n"
-"POT-Creation-Date: 2013-07-19 08:08+0000\n"
-"PO-Revision-Date: 2013-07-19 08:30+0000\n"
+"POT-Creation-Date: 2013-07-19 22:00+0000\n"
+"PO-Revision-Date: 2013-07-20 08:18+0000\n"
 "Last-Translator: aembler <andrew@concrete5.org>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/projects/p/concrete5/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -1516,8 +1516,8 @@ msgid "Copy Version"
 msgstr "复制版本"
 
 #: concrete/blocks/guestbook/view.php:21
-#: concrete/single_pages/dashboard/blocks/types/view.php:36
-#: concrete/single_pages/dashboard/blocks/types/view.php:47
+#: concrete/single_pages/dashboard/blocks/types/view.php:39
+#: concrete/single_pages/dashboard/blocks/types/view.php:50
 #: concrete/single_pages/dashboard/pages/themes/view.php:95
 #: concrete/single_pages/dashboard/system/basics/icons.php:27
 #: concrete/single_pages/dashboard/system/basics/icons.php:91
@@ -3324,7 +3324,7 @@ msgid "You do not have permission to install custom block types or add-ons."
 msgstr "您没有权限安装自定义的模块类型或加载项。"
 
 #: concrete/core/controllers/single_pages/dashboard/blocks/types.php:89
-#: concrete/single_pages/dashboard/blocks/types/view.php:47
+#: concrete/single_pages/dashboard/blocks/types/view.php:50
 msgid "Only the super user may remove block types."
 msgstr "只有超级用户可以删除模块类型。"
 
@@ -3332,7 +3332,7 @@ msgstr "只有超级用户可以删除模块类型。"
 msgid "This block type is internal. It cannot be uninstalled."
 msgstr "此模块类型是内含的，不能被卸载。"
 
-#: concrete/core/controllers/single_pages/dashboard/blocks/types.php:124
+#: concrete/core/controllers/single_pages/dashboard/blocks/types.php:125
 msgid "The block type has been removed."
 msgstr "模块类型已移除。"
 
@@ -4631,6 +4631,20 @@ msgstr "错误：没有分配到布局区域"
 msgid "Unknown User"
 msgstr "未知用户"
 
+#: concrete/core/models/page.php:1584
+#, php-format
+msgid "Page \"%s\" at path \"%s\" deleted"
+msgstr ""
+
+#: concrete/core/models/page.php:1584 concrete/core/models/page.php:1642
+msgid "Page Action"
+msgstr ""
+
+#: concrete/core/models/page.php:1642
+#, php-format
+msgid "Page \"%s\" at path \"%s\" Moved to trash"
+msgstr ""
+
 #: concrete/core/models/page_list.php:448
 #: concrete/single_pages/dashboard/reports/forms.php:169
 #: concrete/single_pages/dashboard/reports/surveys.php:23
@@ -5205,37 +5219,37 @@ msgstr "无法连接到市场来检索项"
 msgid "Version %d"
 msgstr "版本 %d"
 
-#: concrete/core/models/block_types.php:711
+#: concrete/core/models/block_types.php:723
 #, php-format
 msgid ""
 "%s not found. Please check that the block controller file contains the "
 "correct class name."
 msgstr "%s 没有找到。请检查该模块控制文件是否包含正确的类名。"
 
-#: concrete/core/models/block_types.php:720
+#: concrete/core/models/block_types.php:732
 msgid ""
 "Error: Block Type cannot be installed because no db.xml file can be found. "
 "Either create a db.xml file for this block type, or remove the $btTable "
 "variable from its controller."
 msgstr "错误：模块类型不能安装，因为没有找到 db.xml 文件。要不然为模块类型创建一个 db.xml 文件，或从控制器中删除$btTable变量。"
 
-#: concrete/core/models/block_types.php:724
+#: concrete/core/models/block_types.php:736
 msgid ""
 "Error: Block Type cannot be installed due to an unknown database error. "
 "Please check that the db.xml file for this block type is formatted "
 "correctly."
 msgstr "错误：模块类型不能安装因为一个未知的数据库错误。请检查此模块类型的 db.xml 文件是否正确格式化。"
 
-#: concrete/core/models/block_types.php:785
+#: concrete/core/models/block_types.php:797
 #, php-format
 msgid "No block found with the handle %s."
 msgstr "无块的手柄%s 。"
 
-#: concrete/core/models/block_types.php:804
+#: concrete/core/models/block_types.php:816
 msgid "Error: Block Type table must contain at least two fields."
 msgstr "错误：模块类型的表必须包含至少两个字段。"
 
-#: concrete/core/models/block_types.php:806
+#: concrete/core/models/block_types.php:818
 msgid "Error: Block Type table must contain a \"bID\" primary key field."
 msgstr "错误：模块类型表必须包含一个 \"bID\" 的关键字段。"
 
@@ -6407,17 +6421,17 @@ msgid "No block types can be added to this area."
 msgstr "块类型可以被添加到这个领域。"
 
 #: concrete/elements/block_area_add_new.php:218
-#: concrete/single_pages/dashboard/blocks/types/view.php:73
+#: concrete/single_pages/dashboard/blocks/types/view.php:76
 msgid "More Blocks"
 msgstr "更多的块"
 
 #: concrete/elements/block_area_add_new.php:219
-#: concrete/single_pages/dashboard/blocks/types/view.php:74
+#: concrete/single_pages/dashboard/blocks/types/view.php:77
 msgid "Browse our marketplace of add-ons to extend your site!"
 msgstr "浏览我们的市场的加载项来扩展您的网站！"
 
 #: concrete/elements/block_area_add_new.php:220
-#: concrete/single_pages/dashboard/blocks/types/view.php:75
+#: concrete/single_pages/dashboard/blocks/types/view.php:78
 msgid "More Add-ons"
 msgstr "更多加载项"
 
@@ -8548,7 +8562,7 @@ msgid "Send Form Email From This Address"
 msgstr "从这个地址发送表单电邮"
 
 #: concrete/blocks/form/form_setup_html.php:205
-#: concrete/single_pages/dashboard/blocks/types/view.php:29
+#: concrete/single_pages/dashboard/blocks/types/view.php:32
 #: concrete/single_pages/dashboard/pages/single.php:60
 msgid "Refresh"
 msgstr "刷新"
@@ -8833,6 +8847,14 @@ msgstr "RSS图标"
 #: concrete/blocks/page_list/view.php:68
 msgid "RSS Feed"
 msgstr "RSS Feed"
+
+#: concrete/blocks/page_list/templates/blog_index_thumbnail.php:72
+msgid "Newer Posts"
+msgstr ""
+
+#: concrete/blocks/page_list/templates/blog_index_thumbnail.php:73
+msgid "Older Posts"
+msgstr ""
 
 #: concrete/blocks/page_list/templates/blog_index.php:18
 msgid "Comment"
@@ -9832,7 +9854,7 @@ msgstr "添加更新！"
 msgid "No packages have been installed."
 msgstr "包已安装。"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:56
+#: concrete/single_pages/dashboard/blocks/types/view.php:59
 #: concrete/single_pages/dashboard/extend/install.php:277
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:165
 msgid "Awaiting Installation"
@@ -9842,7 +9864,7 @@ msgstr "等待安装"
 msgid "Nothing currently available to install."
 msgstr "没有目前可用的安装。"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:63
+#: concrete/single_pages/dashboard/blocks/types/view.php:66
 #: concrete/single_pages/dashboard/extend/install.php:304
 #: concrete/single_pages/dashboard/pages/themes/view.php:151
 #: concrete/single_pages/dashboard/system/attributes/types.php:52
@@ -9923,43 +9945,47 @@ msgstr "添加自定义的模块类型，刷新安装模块的数据库表，或
 msgid "Usage Count"
 msgstr "使用计数"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:21
+#: concrete/single_pages/dashboard/blocks/types/view.php:20
+msgid "Usage Count on Active Pages"
+msgstr ""
+
+#: concrete/single_pages/dashboard/blocks/types/view.php:24
 msgid "Internal"
 msgstr "内部"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:22
+#: concrete/single_pages/dashboard/blocks/types/view.php:25
 msgid "This is an internal block type."
 msgstr "这是一个内部的块类型。"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:27
+#: concrete/single_pages/dashboard/blocks/types/view.php:30
 msgid "Back to Block Types"
 msgstr "返回模块类型"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:34
+#: concrete/single_pages/dashboard/blocks/types/view.php:37
 #, php-format
 msgid ""
 "This will remove all instances of the %s block type. This cannot be undone. "
 "Are you sure?"
 msgstr "这将删除所有的%s区块类型的实例。这是不能撤消。你确定吗？"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:68
+#: concrete/single_pages/dashboard/blocks/types/view.php:71
 msgid "No custom block types are awaiting installation."
 msgstr "没有自定义的块类型等待安装。"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:79
+#: concrete/single_pages/dashboard/blocks/types/view.php:82
 msgid "Installed Block Types"
 msgstr "已安装的模块类型"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:109
+#: concrete/single_pages/dashboard/blocks/types/view.php:112
 msgid ""
 "Are you sure you wish to reset the display order of installed block types?"
 msgstr "您确定您想重新显示已安装模块类型的顺序吗？"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:111
+#: concrete/single_pages/dashboard/blocks/types/view.php:114
 msgid "Reset Order"
 msgstr "重订"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:117
+#: concrete/single_pages/dashboard/blocks/types/view.php:120
 msgid "Internal Block Types"
 msgstr "内部的模块类型"
 

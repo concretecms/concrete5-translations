@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: andrew@concrete5.org\n"
-"POT-Creation-Date: 2013-07-19 08:08+0000\n"
-"PO-Revision-Date: 2013-07-19 08:30+0000\n"
+"POT-Creation-Date: 2013-07-19 22:00+0000\n"
+"PO-Revision-Date: 2013-07-20 08:18+0000\n"
 "Last-Translator: aembler <andrew@concrete5.org>\n"
 "Language-Team: Hebrew (Israel) (http://www.transifex.com/projects/p/concrete5/language/he_IL/)\n"
 "MIME-Version: 1.0\n"
@@ -1525,8 +1525,8 @@ msgid "Copy Version"
 msgstr "העתקת גירסה"
 
 #: concrete/blocks/guestbook/view.php:21
-#: concrete/single_pages/dashboard/blocks/types/view.php:36
-#: concrete/single_pages/dashboard/blocks/types/view.php:47
+#: concrete/single_pages/dashboard/blocks/types/view.php:39
+#: concrete/single_pages/dashboard/blocks/types/view.php:50
 #: concrete/single_pages/dashboard/pages/themes/view.php:95
 #: concrete/single_pages/dashboard/system/basics/icons.php:27
 #: concrete/single_pages/dashboard/system/basics/icons.php:91
@@ -3333,7 +3333,7 @@ msgid "You do not have permission to install custom block types or add-ons."
 msgstr "אינך מורשה להתקין סוגי בלוק או תוספים מותאמים."
 
 #: concrete/core/controllers/single_pages/dashboard/blocks/types.php:89
-#: concrete/single_pages/dashboard/blocks/types/view.php:47
+#: concrete/single_pages/dashboard/blocks/types/view.php:50
 msgid "Only the super user may remove block types."
 msgstr "רק משתמש העל מורשה להסיר סוגי בלוקים."
 
@@ -3341,7 +3341,7 @@ msgstr "רק משתמש העל מורשה להסיר סוגי בלוקים."
 msgid "This block type is internal. It cannot be uninstalled."
 msgstr "סוג הבלוק הוא פנימי. לא ניתן להסיר את ההתקנה."
 
-#: concrete/core/controllers/single_pages/dashboard/blocks/types.php:124
+#: concrete/core/controllers/single_pages/dashboard/blocks/types.php:125
 msgid "The block type has been removed."
 msgstr "סוג בלוק הוסר."
 
@@ -4642,6 +4642,20 @@ msgstr "שגיאה: לא הוקצה איזור למתוה"
 msgid "Unknown User"
 msgstr "משתמש לא ידוע"
 
+#: concrete/core/models/page.php:1584
+#, php-format
+msgid "Page \"%s\" at path \"%s\" deleted"
+msgstr ""
+
+#: concrete/core/models/page.php:1584 concrete/core/models/page.php:1642
+msgid "Page Action"
+msgstr ""
+
+#: concrete/core/models/page.php:1642
+#, php-format
+msgid "Page \"%s\" at path \"%s\" Moved to trash"
+msgstr ""
+
 #: concrete/core/models/page_list.php:448
 #: concrete/single_pages/dashboard/reports/forms.php:169
 #: concrete/single_pages/dashboard/reports/surveys.php:23
@@ -5216,37 +5230,37 @@ msgstr "לא מצליח להתחבר לשוק כדי לשלוף את הפריט 
 msgid "Version %d"
 msgstr "גירסה %d"
 
-#: concrete/core/models/block_types.php:711
+#: concrete/core/models/block_types.php:723
 #, php-format
 msgid ""
 "%s not found. Please check that the block controller file contains the "
 "correct class name."
 msgstr "%s לא נמצא.  ודא שקובץ הקונטרולר לבלוק (block controller file) מכיל את שם הקלאס נכון."
 
-#: concrete/core/models/block_types.php:720
+#: concrete/core/models/block_types.php:732
 msgid ""
 "Error: Block Type cannot be installed because no db.xml file can be found. "
 "Either create a db.xml file for this block type, or remove the $btTable "
 "variable from its controller."
 msgstr "שגיאה: לא ניתן להתקין סוג הבלוק כי לא ניתן למצוא קובץ db.xml. או שתיצור קובץ db.xml לסוג הבלוק הזה, או להסיר משתנה  $btTable מהבקר שלו."
 
-#: concrete/core/models/block_types.php:724
+#: concrete/core/models/block_types.php:736
 msgid ""
 "Error: Block Type cannot be installed due to an unknown database error. "
 "Please check that the db.xml file for this block type is formatted "
 "correctly."
 msgstr "שגיאה: לא ניתן להתקין את סוג הבלוק עקב שגיאה בלתי צפויה במסד הנתונים. בדוק שקובץ ה-db.xml של סוג בלוק זה בפורמט הנכון."
 
-#: concrete/core/models/block_types.php:785
+#: concrete/core/models/block_types.php:797
 #, php-format
 msgid "No block found with the handle %s."
 msgstr "לא נמצא בלוק עם הידית %s."
 
-#: concrete/core/models/block_types.php:804
+#: concrete/core/models/block_types.php:816
 msgid "Error: Block Type table must contain at least two fields."
 msgstr "שגיאה: סוג הבלוק חייב לכלול לפחות שני שדות."
 
-#: concrete/core/models/block_types.php:806
+#: concrete/core/models/block_types.php:818
 msgid "Error: Block Type table must contain a \"bID\" primary key field."
 msgstr "שגיאה: סוג הבלוק חייב לכלול שדה מפתח עיקרי \"bID\"."
 
@@ -6422,17 +6436,17 @@ msgid "No block types can be added to this area."
 msgstr "לא ניתן להוסיף אף סוג בלוק לאיזור זה."
 
 #: concrete/elements/block_area_add_new.php:218
-#: concrete/single_pages/dashboard/blocks/types/view.php:73
+#: concrete/single_pages/dashboard/blocks/types/view.php:76
 msgid "More Blocks"
 msgstr "בלוקים נוספים"
 
 #: concrete/elements/block_area_add_new.php:219
-#: concrete/single_pages/dashboard/blocks/types/view.php:74
+#: concrete/single_pages/dashboard/blocks/types/view.php:77
 msgid "Browse our marketplace of add-ons to extend your site!"
 msgstr "גלוש בשוק התוספים כדי להוסיף יכולות לאתר שלך!"
 
 #: concrete/elements/block_area_add_new.php:220
-#: concrete/single_pages/dashboard/blocks/types/view.php:75
+#: concrete/single_pages/dashboard/blocks/types/view.php:78
 msgid "More Add-ons"
 msgstr "תוספים נוספים"
 
@@ -8563,7 +8577,7 @@ msgid "Send Form Email From This Address"
 msgstr "שלח דואר אלקטרוני מכתובת זו"
 
 #: concrete/blocks/form/form_setup_html.php:205
-#: concrete/single_pages/dashboard/blocks/types/view.php:29
+#: concrete/single_pages/dashboard/blocks/types/view.php:32
 #: concrete/single_pages/dashboard/pages/single.php:60
 msgid "Refresh"
 msgstr "רענן"
@@ -8848,6 +8862,14 @@ msgstr "אייקון RSS"
 #: concrete/blocks/page_list/view.php:68
 msgid "RSS Feed"
 msgstr "פיד RSS"
+
+#: concrete/blocks/page_list/templates/blog_index_thumbnail.php:72
+msgid "Newer Posts"
+msgstr ""
+
+#: concrete/blocks/page_list/templates/blog_index_thumbnail.php:73
+msgid "Older Posts"
+msgstr ""
 
 #: concrete/blocks/page_list/templates/blog_index.php:18
 msgid "Comment"
@@ -9848,7 +9870,7 @@ msgstr "עדכוני אד-אונים זמינים עכשיו!"
 msgid "No packages have been installed."
 msgstr "לא הותקנו חבילות כלשהן."
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:56
+#: concrete/single_pages/dashboard/blocks/types/view.php:59
 #: concrete/single_pages/dashboard/extend/install.php:277
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:165
 msgid "Awaiting Installation"
@@ -9858,7 +9880,7 @@ msgstr "מחכה להתקנה"
 msgid "Nothing currently available to install."
 msgstr "דבר אינו זמין כעת להתקנה."
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:63
+#: concrete/single_pages/dashboard/blocks/types/view.php:66
 #: concrete/single_pages/dashboard/extend/install.php:304
 #: concrete/single_pages/dashboard/pages/themes/view.php:151
 #: concrete/single_pages/dashboard/system/attributes/types.php:52
@@ -9939,43 +9961,47 @@ msgstr "הוספת סוגי בלוק מותאימים, רענון את טבלא�
 msgid "Usage Count"
 msgstr "ספירת שימושים"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:21
+#: concrete/single_pages/dashboard/blocks/types/view.php:20
+msgid "Usage Count on Active Pages"
+msgstr ""
+
+#: concrete/single_pages/dashboard/blocks/types/view.php:24
 msgid "Internal"
 msgstr "פנימי"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:22
+#: concrete/single_pages/dashboard/blocks/types/view.php:25
 msgid "This is an internal block type."
 msgstr "זהו סוג בלוק פנימי."
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:27
+#: concrete/single_pages/dashboard/blocks/types/view.php:30
 msgid "Back to Block Types"
 msgstr "חזרה לסוגי בלוק"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:34
+#: concrete/single_pages/dashboard/blocks/types/view.php:37
 #, php-format
 msgid ""
 "This will remove all instances of the %s block type. This cannot be undone. "
 "Are you sure?"
 msgstr "פעולה זו תסיר כל ערכאה של סוג הבלוק %s.  אין דרך חזרה אחר כך.  בטוח?"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:68
+#: concrete/single_pages/dashboard/blocks/types/view.php:71
 msgid "No custom block types are awaiting installation."
 msgstr "אין סוגי בלוק מותאמים שמחכים להתקנה."
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:79
+#: concrete/single_pages/dashboard/blocks/types/view.php:82
 msgid "Installed Block Types"
 msgstr "סוגי בלוק מותקנים"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:109
+#: concrete/single_pages/dashboard/blocks/types/view.php:112
 msgid ""
 "Are you sure you wish to reset the display order of installed block types?"
 msgstr "בטוח שברצונך לאפס את סדר התצוגה של סוגי הבלוק המותקנים?"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:111
+#: concrete/single_pages/dashboard/blocks/types/view.php:114
 msgid "Reset Order"
 msgstr "אפס סדר מיון"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:117
+#: concrete/single_pages/dashboard/blocks/types/view.php:120
 msgid "Internal Block Types"
 msgstr "סוגי בלוק פנימיים"
 

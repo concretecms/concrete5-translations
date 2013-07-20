@@ -13,9 +13,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: andrew@concrete5.org\n"
-"POT-Creation-Date: 2013-07-19 08:08+0000\n"
-"PO-Revision-Date: 2013-07-19 11:21+0000\n"
-"Last-Translator: Remo Laubacher <remo.laubacher@gmail.com>\n"
+"POT-Creation-Date: 2013-07-19 22:00+0000\n"
+"PO-Revision-Date: 2013-07-20 11:10+0000\n"
+"Last-Translator: Torsten Silbermann <service@53nord.net>\n"
 "Language-Team: German (Germany) (http://www.transifex.com/projects/p/concrete5/language/de_DE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1527,8 +1527,8 @@ msgid "Copy Version"
 msgstr "Versionen kopieren"
 
 #: concrete/blocks/guestbook/view.php:21
-#: concrete/single_pages/dashboard/blocks/types/view.php:36
-#: concrete/single_pages/dashboard/blocks/types/view.php:47
+#: concrete/single_pages/dashboard/blocks/types/view.php:39
+#: concrete/single_pages/dashboard/blocks/types/view.php:50
 #: concrete/single_pages/dashboard/pages/themes/view.php:95
 #: concrete/single_pages/dashboard/system/basics/icons.php:27
 #: concrete/single_pages/dashboard/system/basics/icons.php:91
@@ -2167,7 +2167,7 @@ msgstr "Keine Vorschläge"
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:396
 #: concrete/tools/i18n_js.php:146
 msgid "View"
-msgstr "Ansicht"
+msgstr "Anzeigen"
 
 #: concrete/elements/users/search_results.php:53
 #: concrete/tools/i18n_js.php:148
@@ -3335,7 +3335,7 @@ msgid "You do not have permission to install custom block types or add-ons."
 msgstr "Sie haben nicht die Berechtigung, eigene Blocktypen oder Erweiterungen zu installieren."
 
 #: concrete/core/controllers/single_pages/dashboard/blocks/types.php:89
-#: concrete/single_pages/dashboard/blocks/types/view.php:47
+#: concrete/single_pages/dashboard/blocks/types/view.php:50
 msgid "Only the super user may remove block types."
 msgstr "Nur ein Superadministrator kann Blocktypen entfernen."
 
@@ -3343,7 +3343,7 @@ msgstr "Nur ein Superadministrator kann Blocktypen entfernen."
 msgid "This block type is internal. It cannot be uninstalled."
 msgstr "Dies ist ein interner Blocktyp. Er kann nicht deinstalliert werden."
 
-#: concrete/core/controllers/single_pages/dashboard/blocks/types.php:124
+#: concrete/core/controllers/single_pages/dashboard/blocks/types.php:125
 msgid "The block type has been removed."
 msgstr "Dieser Blocktyp wurde entfernt."
 
@@ -3941,11 +3941,11 @@ msgstr "Das Standard-Auftragsalbum kann nicht gelöscht werden."
 
 #: concrete/core/controllers/single_pages/dashboard/system/optimization/jobs.php:202
 msgid "Job schedule updated successfully."
-msgstr "Auftragsplan erfolgreich aktualisiert"
+msgstr "Plan erfolgreich aktualisiert"
 
 #: concrete/core/controllers/single_pages/dashboard/system/optimization/jobs.php:216
 msgid "Job Set schedule updated successfully."
-msgstr "Plan für Auftragsalben erfolgreich aktualisiert"
+msgstr "Plan für Auftragsalbum erfolgreich aktualisiert"
 
 #: concrete/config/install/base/dashboard.xml:226
 #: concrete/config/install/disabled/blank/content.xml:38
@@ -4393,7 +4393,7 @@ msgstr[1] "%1$d veraltete Versionen von %2$d Seiten gelöscht (%3$d) ."
 
 #: concrete/core/jobs/index_search.php:14
 msgid "Index Search Engine - Updates"
-msgstr "Aktualisierung Suchmaschinenindex"
+msgstr "Suchmaschinenindex aktualisieren"
 
 #: concrete/core/jobs/index_search.php:18
 msgid ""
@@ -4403,7 +4403,7 @@ msgstr "Die Website indizieren, um die Suchfunktion zu optimieren. Es werden nur
 
 #: concrete/core/jobs/index_search.php:42
 msgid "Indexing complete. Index is up to date"
-msgstr "Indizierung fertig gestellt – Suchindex ist auf dem aktuellen Stand"
+msgstr "Indizierung fertiggestellt – Suchindex ist auf dem aktuellen Stand"
 
 #: concrete/core/jobs/index_search.php:45
 #, php-format
@@ -4425,7 +4425,7 @@ msgstr[1] "%d Seiten wurden aktualisiert."
 
 #: concrete/core/jobs/index_search_all.php:15
 msgid "Index Search Engine - All"
-msgstr "Suchmaschinenindex erstellen - alle"
+msgstr "Suchmaschinenindex erstellen"
 
 #: concrete/core/jobs/index_search_all.php:19
 msgid "Empties the page search index and reindexes all pages."
@@ -4643,6 +4643,20 @@ msgstr "Fehler: Dem Layout wurde kein Bereich zugeordnet"
 #: concrete/single_pages/profile/friends.php:23
 msgid "Unknown User"
 msgstr "Unbekannter Benutzer"
+
+#: concrete/core/models/page.php:1584
+#, php-format
+msgid "Page \"%s\" at path \"%s\" deleted"
+msgstr ""
+
+#: concrete/core/models/page.php:1584 concrete/core/models/page.php:1642
+msgid "Page Action"
+msgstr ""
+
+#: concrete/core/models/page.php:1642
+#, php-format
+msgid "Page \"%s\" at path \"%s\" Moved to trash"
+msgstr ""
 
 #: concrete/core/models/page_list.php:448
 #: concrete/single_pages/dashboard/reports/forms.php:169
@@ -5218,37 +5232,37 @@ msgstr "Es ist nicht möglich eine Verbindung zum Marketplace aufzubauen, um das
 msgid "Version %d"
 msgstr "Version %d"
 
-#: concrete/core/models/block_types.php:711
+#: concrete/core/models/block_types.php:723
 #, php-format
 msgid ""
 "%s not found. Please check that the block controller file contains the "
 "correct class name."
 msgstr "%s nicht gefunden. Bitte stellen Sie sicher, dass in der controller-Datei des Blocks der korrekte Klassennamen eingetragen ist."
 
-#: concrete/core/models/block_types.php:720
+#: concrete/core/models/block_types.php:732
 msgid ""
 "Error: Block Type cannot be installed because no db.xml file can be found. "
 "Either create a db.xml file for this block type, or remove the $btTable "
 "variable from its controller."
 msgstr "Fehler: Der Blocktyp kann nicht installiert werden, weil keine db.xml gefunden wurde. Erstellen Sie diese Datei oder löschen Sie die Variable $btTable aus dem Controller."
 
-#: concrete/core/models/block_types.php:724
+#: concrete/core/models/block_types.php:736
 msgid ""
 "Error: Block Type cannot be installed due to an unknown database error. "
 "Please check that the db.xml file for this block type is formatted "
 "correctly."
 msgstr "Fehler: Der Blocktyp kann wegen eines unbekannten Datenbankfehlers nicht installiert werden. Bitte prüfen Sie, ob die db.xml dieses Blocktyps korrekt ist."
 
-#: concrete/core/models/block_types.php:785
+#: concrete/core/models/block_types.php:797
 #, php-format
 msgid "No block found with the handle %s."
 msgstr "Kein Block mit der Kennung %s gefunden"
 
-#: concrete/core/models/block_types.php:804
+#: concrete/core/models/block_types.php:816
 msgid "Error: Block Type table must contain at least two fields."
 msgstr "Fehler: Die Tabelle für den Blocktyp muss mindestens zwei Felder enthalten."
 
-#: concrete/core/models/block_types.php:806
+#: concrete/core/models/block_types.php:818
 msgid "Error: Block Type table must contain a \"bID\" primary key field."
 msgstr "Fehler: Die Tabelle für den Blocktyp muss einen Primärschlüssel \"bID\" enthalten."
 
@@ -6424,17 +6438,17 @@ msgid "No block types can be added to this area."
 msgstr "Zu diesem Bereich können keine Blocktypen hinzugefügt werden."
 
 #: concrete/elements/block_area_add_new.php:218
-#: concrete/single_pages/dashboard/blocks/types/view.php:73
+#: concrete/single_pages/dashboard/blocks/types/view.php:76
 msgid "More Blocks"
 msgstr "Weitere Blöcke"
 
 #: concrete/elements/block_area_add_new.php:219
-#: concrete/single_pages/dashboard/blocks/types/view.php:74
+#: concrete/single_pages/dashboard/blocks/types/view.php:77
 msgid "Browse our marketplace of add-ons to extend your site!"
 msgstr "Marketplace nach Erweiterungen für Ihre Site durchsuchen"
 
 #: concrete/elements/block_area_add_new.php:220
-#: concrete/single_pages/dashboard/blocks/types/view.php:75
+#: concrete/single_pages/dashboard/blocks/types/view.php:78
 msgid "More Add-ons"
 msgstr "Weitere Erweiterungen"
 
@@ -8565,7 +8579,7 @@ msgid "Send Form Email From This Address"
 msgstr "Diese E-Mail-Adresse als Absender des Formulars angeben"
 
 #: concrete/blocks/form/form_setup_html.php:205
-#: concrete/single_pages/dashboard/blocks/types/view.php:29
+#: concrete/single_pages/dashboard/blocks/types/view.php:32
 #: concrete/single_pages/dashboard/pages/single.php:60
 msgid "Refresh"
 msgstr "Aktualisieren"
@@ -8850,6 +8864,14 @@ msgstr "RSS-Icon"
 #: concrete/blocks/page_list/view.php:68
 msgid "RSS Feed"
 msgstr "RSS-Feed"
+
+#: concrete/blocks/page_list/templates/blog_index_thumbnail.php:72
+msgid "Newer Posts"
+msgstr "Neuere Einträge"
+
+#: concrete/blocks/page_list/templates/blog_index_thumbnail.php:73
+msgid "Older Posts"
+msgstr "Ältere Einträge"
 
 #: concrete/blocks/page_list/templates/blog_index.php:18
 msgid "Comment"
@@ -9776,7 +9798,7 @@ msgstr "Ja, der Inhalt der Website soll auf die Inhalte aus diesem Paket zurück
 msgid ""
 "This will remove all elements associated with the %s package. This cannot be"
 " undone. Are you sure?"
-msgstr "Damit werden alle Elemente, die mit dem Paket %s zusammenhängen, entfernt. Dieser Vorgang kann nicht rückgängig gemacht werden. Sind Sie sicher?"
+msgstr "Es werden alle Elemente, die mit dem Paket %s zusammenhängen, entfernt. Dieser Schritt kann nicht rückgängig gemacht werden. Sind Sie sicher?"
 
 #: concrete/single_pages/dashboard/extend/install.php:56
 #: concrete/single_pages/dashboard/extend/install.php:211
@@ -9850,7 +9872,7 @@ msgstr "Aktualisierungen für Erweiterungen sind verfügbar!"
 msgid "No packages have been installed."
 msgstr "Keine Pakete installiert"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:56
+#: concrete/single_pages/dashboard/blocks/types/view.php:59
 #: concrete/single_pages/dashboard/extend/install.php:277
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:165
 msgid "Awaiting Installation"
@@ -9860,7 +9882,7 @@ msgstr "Zur Installation bereit"
 msgid "Nothing currently available to install."
 msgstr "Derzeit gibt es nichts zu installieren."
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:63
+#: concrete/single_pages/dashboard/blocks/types/view.php:66
 #: concrete/single_pages/dashboard/extend/install.php:304
 #: concrete/single_pages/dashboard/pages/themes/view.php:151
 #: concrete/single_pages/dashboard/system/attributes/types.php:52
@@ -9941,43 +9963,47 @@ msgstr "Eigene Blocktypen erstellen, Datenbanktabellen installierter Blöcke akt
 msgid "Usage Count"
 msgstr "Anzahl der Verwendungen"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:21
+#: concrete/single_pages/dashboard/blocks/types/view.php:20
+msgid "Usage Count on Active Pages"
+msgstr ""
+
+#: concrete/single_pages/dashboard/blocks/types/view.php:24
 msgid "Internal"
 msgstr "Intern"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:22
+#: concrete/single_pages/dashboard/blocks/types/view.php:25
 msgid "This is an internal block type."
 msgstr "Dies ist ein interner Blocktyp"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:27
+#: concrete/single_pages/dashboard/blocks/types/view.php:30
 msgid "Back to Block Types"
 msgstr "Zurück zu den Blocktypen"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:34
+#: concrete/single_pages/dashboard/blocks/types/view.php:37
 #, php-format
 msgid ""
 "This will remove all instances of the %s block type. This cannot be undone. "
 "Are you sure?"
-msgstr "Dies wird alle Instanzen des %s Blocktyps entfernen. Diese Aktion kann nicht rückgängig gemacht werden. Sind Sie sicher?"
+msgstr "Es werden alle Instanzen des %s Blocktyps entfernt. Dieser Schritt kann nicht rückgängig gemacht werden. Sind Sie sicher?"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:68
+#: concrete/single_pages/dashboard/blocks/types/view.php:71
 msgid "No custom block types are awaiting installation."
 msgstr "Keine Blocktypen zu installieren"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:79
+#: concrete/single_pages/dashboard/blocks/types/view.php:82
 msgid "Installed Block Types"
 msgstr "Installierte Blocktypen"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:109
+#: concrete/single_pages/dashboard/blocks/types/view.php:112
 msgid ""
 "Are you sure you wish to reset the display order of installed block types?"
 msgstr "Möchten Sie die Anzeigereihenfolge der installierten Blocktypen wirklich zurücksetzen?"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:111
+#: concrete/single_pages/dashboard/blocks/types/view.php:114
 msgid "Reset Order"
 msgstr "Reihenfolge zurücksetzen"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:117
+#: concrete/single_pages/dashboard/blocks/types/view.php:120
 msgid "Internal Block Types"
 msgstr "Interne Blocktypen"
 
@@ -10152,7 +10178,7 @@ msgstr "Album löschen"
 msgid ""
 "Warning, this cannot be undone. No attributes will be deleted but they will "
 "no longer be grouped together."
-msgstr "Achtung, dies kann nicht rückgängig gemacht werden. Die Attribute werden nicht gelöscht, sie werden aber nicht mehr gruppiert sein."
+msgstr "Dieser Schritt kann nicht rückgängig gemacht werden! Die Attribute werden nicht gelöscht, sind danach jedoch nicht mehr gruppiert."
 
 #: concrete/single_pages/dashboard/users/group_sets.php:49
 msgid "Delete Group Set"
@@ -10931,7 +10957,7 @@ msgstr "Löschen bestätigen"
 #: concrete/single_pages/dashboard/system/backup_restore/backup.php:62
 #: concrete/single_pages/dashboard/system/backup_restore/backup.php:75
 msgid "This action <strong>cannot be undone</strong>. Are you sure?"
-msgstr "Diese Aktion <strong>kann nicht rückgängig gemacht werden</strong>. Sind Sie sicher?"
+msgstr "Dieser Schritt <strong>kann nicht rückgängig gemacht werden</strong>. Sind Sie sicher?"
 
 #: concrete/single_pages/dashboard/system/backup_restore/backup.php:66
 msgid "Delete Backup"
@@ -11481,7 +11507,7 @@ msgstr "Aufträge"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:45
 msgid "Job Sets"
-msgstr "Auftragsalbum"
+msgstr "Auftragsalben"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:59
 msgid "Last Run"
@@ -11528,7 +11554,7 @@ msgstr "Wenn die Seite aufgerufen wird (wird nach dem Rendern der Seite ausgefü
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:115
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:310
 msgid "Run this Job Every"
-msgstr "Ausführen dieses Auftrags alle"
+msgstr "Ausführen alle"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:126
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:320
@@ -11587,20 +11613,20 @@ msgstr "Sie haben derzeit keine Aufträge installiert."
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:301
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:448
 msgid "Automation Instructions"
-msgstr "Automatisierungshinweise"
+msgstr "Automatisch ausführen"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:192
 #, php-format
 msgid ""
 "To run all the jobs in the <a href=\"%s\">%s</a> Job Set, schedule this URL "
 "using cron or a similar system:"
-msgstr ""
+msgstr "Um die Aufträge im Auftragsalbum <a href=\"%s\">%s</a> auszuführen, folgende URL mit cron oder einem vergleichbaren Tool aufrufen:"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:242
 msgid ""
 "Warning, this cannot be undone. No jobs will be deleted but they will no "
 "longer be grouped together."
-msgstr "Achtung, dieser Schritt kann nicht rückgängig gemacht werden. Die Aufträge werden danach nicht mehr gruppiert sein, jedoch nicht gelöscht."
+msgstr "Dieser Schritt kann nicht rückgängig gemacht werden! Die Aufträge werden nicht gelöscht, sind danach jedoch nicht mehr gruppiert. "
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:249
 msgid "Delete Job Set"
@@ -11618,11 +11644,11 @@ msgstr "Keine Aufträge gefunden."
 msgid ""
 "To run all the jobs in this Job Set, schedule this URL using cron or a "
 "similar system:"
-msgstr ""
+msgstr "Um die Aufträge im Auftragsalbum auszuführen, folgende URL mit cron oder einem vergleichbaren Tool aufrufen:"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:328
 msgid "Update Schedule"
-msgstr "Ausführungsplan aktualisieren"
+msgstr "Plan aktualisieren"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:352
 msgid "You have not added any Job sets."
