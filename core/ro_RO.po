@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: andrew@concrete5.org\n"
-"POT-Creation-Date: 2013-07-19 22:00+0000\n"
-"PO-Revision-Date: 2013-07-20 08:18+0000\n"
+"POT-Creation-Date: 2013-07-21 22:00+0000\n"
+"PO-Revision-Date: 2013-07-21 08:18+0000\n"
 "Last-Translator: aembler <andrew@concrete5.org>\n"
 "Language-Team: Romanian (Romania) (http://www.transifex.com/projects/p/concrete5/language/ro_RO/)\n"
 "MIME-Version: 1.0\n"
@@ -985,7 +985,7 @@ msgstr "Instalaeaza tema"
 #: concrete/blocks/autonav/form_setup_html.php:7
 #: concrete/blocks/form/form_setup_html.php:14
 #: concrete/blocks/form/form_setup_html.php:317
-#: concrete/blocks/page_list/page_list_form.php:5
+#: concrete/blocks/page_list/page_list_form.php:8
 #: concrete/elements/collection_theme.php:118
 #: concrete/elements/collection_theme.php:119
 #: concrete/single_pages/dashboard/composer/write.php:158
@@ -1779,7 +1779,7 @@ msgstr "Blocul a fost adaugat in clipboard."
 #: concrete/blocks/form/form_setup_html.php:13
 #: concrete/blocks/form/form_setup_html.php:310
 #: concrete/blocks/guestbook/view.php:20
-#: concrete/blocks/page_list/page_list_form.php:4
+#: concrete/blocks/page_list/page_list_form.php:7
 #: concrete/blocks/tags/tag_form.php:10
 #: concrete/config/install/base/login_registration.xml:11
 #: concrete/config/install/disabled/blank/content.xml:8
@@ -1881,7 +1881,7 @@ msgstr "A aparut o eroare neasteptata."
 
 #: concrete/helpers/concrete/dashboard.php:164
 #: concrete/helpers/concrete/dashboard.php:168
-#: concrete/helpers/concrete/dashboard.php:380 concrete/tools/i18n_js.php:55
+#: concrete/helpers/concrete/dashboard.php:395 concrete/tools/i18n_js.php:55
 msgid "Help"
 msgstr "Ajutor"
 
@@ -3727,7 +3727,13 @@ msgstr "Importerul a fost salvat."
 msgid "Unable to locate file %s"
 msgstr "Nu se poate gasi fisierul %s"
 
-#: concrete/core/controllers/single_pages/dashboard/system/backup_restore/backup.php:93
+#: concrete/core/controllers/single_pages/dashboard/system/backup_restore/backup.php:80
+#, php-format
+msgid ""
+"Error deleting the file %s. Please check the permissions of the folder %s"
+msgstr ""
+
+#: concrete/core/controllers/single_pages/dashboard/system/backup_restore/backup.php:99
 msgid "Invalid backup file specified."
 msgstr "A fost specificat un fisier de backup invalid."
 
@@ -3956,7 +3962,7 @@ msgid "Logs"
 msgstr "Loguri"
 
 #: concrete/blocks/date_nav/form_setup_html.php:30
-#: concrete/blocks/page_list/page_list_form.php:20
+#: concrete/blocks/page_list/page_list_form.php:23
 #: concrete/core/controllers/single_pages/dashboard/reports/logs.php:34
 #: concrete/core/controllers/single_pages/dashboard/reports/logs.php:37
 #: concrete/elements/custom_style/background.php:23
@@ -4500,7 +4506,7 @@ msgstr "Alegeti fisierul"
 #: concrete/blocks/guestbook/add.php:27 concrete/blocks/guestbook/add.php:37
 #: concrete/blocks/guestbook/add.php:57 concrete/blocks/guestbook/edit.php:26
 #: concrete/blocks/guestbook/edit.php:35 concrete/blocks/guestbook/edit.php:53
-#: concrete/blocks/page_list/page_list_form.php:109
+#: concrete/blocks/page_list/page_list_form.php:112
 #: concrete/blocks/survey/add.php:21 concrete/blocks/survey/edit.php:22
 #: concrete/core/models/attribute/types/boolean.php:38
 #: concrete/core/models/attribute/types/boolean.php:66
@@ -4520,7 +4526,7 @@ msgstr "Da"
 #: concrete/blocks/guestbook/add.php:28 concrete/blocks/guestbook/add.php:38
 #: concrete/blocks/guestbook/add.php:58 concrete/blocks/guestbook/edit.php:27
 #: concrete/blocks/guestbook/edit.php:36 concrete/blocks/guestbook/edit.php:54
-#: concrete/blocks/page_list/page_list_form.php:112
+#: concrete/blocks/page_list/page_list_form.php:115
 #: concrete/core/models/attribute/types/boolean.php:38
 #: concrete/elements/pages/search_form_advanced.php:71
 #: concrete/elements/pages/search_form_advanced.php:249
@@ -4580,7 +4586,7 @@ msgid "Active"
 msgstr "Activa"
 
 #: concrete/core/models/page_theme.php:580
-#: concrete/helpers/concrete/dashboard.php:253
+#: concrete/helpers/concrete/dashboard.php:268
 msgid "(No Name)"
 msgstr "(Fara nume)"
 
@@ -5786,7 +5792,7 @@ msgid "Field available in Dashboard User Search."
 msgstr "Camp disponibil in cautarea din dashboard de utilizatori."
 
 #: concrete/blocks/form/form_setup_html.php:12
-#: concrete/blocks/page_list/page_list_form.php:4
+#: concrete/blocks/page_list/page_list_form.php:7
 #: concrete/blocks/survey/add.php:33 concrete/blocks/tags/tag_form.php:10
 #: concrete/config/install/base/dashboard.xml:247
 #: concrete/config/install/disabled/blank/content.xml:41
@@ -8089,7 +8095,7 @@ msgid "Display Title"
 msgstr "Afisare titlu"
 
 #: concrete/blocks/date_nav/form_setup_html.php:22
-#: concrete/blocks/page_list/page_list_form.php:12
+#: concrete/blocks/page_list/page_list_form.php:15
 #: concrete/blocks/rss_displayer/form_setup_html.php:43
 #: concrete/blocks/tags/tag_form.php:24
 msgid "Display"
@@ -8241,32 +8247,32 @@ msgid "You don't have permission to access this RSS feed"
 msgstr "Nu aveti permisiunea sa accesati acest flux RSS"
 
 #: concrete/blocks/date_nav/form_setup_html.php:21
-#: concrete/blocks/page_list/page_list_form.php:11
+#: concrete/blocks/page_list/page_list_form.php:14
 msgid "Number and Type of Pages"
 msgstr "Numar si tip de pagini"
 
 #: concrete/blocks/date_nav/form_setup_html.php:24
-#: concrete/blocks/page_list/page_list_form.php:14
+#: concrete/blocks/page_list/page_list_form.php:17
 msgid "pages of type"
 msgstr "pagini de tipul"
 
 #: concrete/blocks/date_nav/form_setup_html.php:40
-#: concrete/blocks/page_list/page_list_form.php:37
+#: concrete/blocks/page_list/page_list_form.php:40
 msgid "Featured pages only."
 msgstr "Doar pagini evidentiate."
 
 #: concrete/blocks/date_nav/form_setup_html.php:47
-#: concrete/blocks/page_list/page_list_form.php:56
+#: concrete/blocks/page_list/page_list_form.php:59
 msgid "Location in Website"
 msgstr "Locatie in site"
 
 #: concrete/blocks/date_nav/form_setup_html.php:48
-#: concrete/blocks/page_list/page_list_form.php:57
+#: concrete/blocks/page_list/page_list_form.php:60
 msgid "Display pages that are located"
 msgstr "Afisare pagini din locatia"
 
 #: concrete/blocks/date_nav/form_setup_html.php:52
-#: concrete/blocks/page_list/page_list_form.php:62
+#: concrete/blocks/page_list/page_list_form.php:65
 #: concrete/blocks/search/form_setup_html.php:50
 msgid "everywhere"
 msgstr "oricare"
@@ -8276,13 +8282,13 @@ msgid "at the current level"
 msgstr "nivelul curent"
 
 #: concrete/blocks/date_nav/form_setup_html.php:56
-#: concrete/blocks/page_list/page_list_form.php:67
+#: concrete/blocks/page_list/page_list_form.php:70
 #: concrete/blocks/search/form_setup_html.php:57
 msgid "beneath this page"
 msgstr "sub aceasta pagina"
 
 #: concrete/blocks/date_nav/form_setup_html.php:58
-#: concrete/blocks/page_list/page_list_form.php:72
+#: concrete/blocks/page_list/page_list_form.php:75
 #: concrete/blocks/search/form_setup_html.php:63
 msgid "beneath another page"
 msgstr "sub alta pagina"
@@ -8333,17 +8339,17 @@ msgstr "Taiere titluri dupa"
 
 #: concrete/blocks/date_nav/form_setup_html.php:114
 #: concrete/blocks/date_nav/form_setup_html.php:125
-#: concrete/blocks/page_list/page_list_form.php:132
+#: concrete/blocks/page_list/page_list_form.php:135
 msgid "characters"
 msgstr "caractere"
 
 #: concrete/blocks/date_nav/form_setup_html.php:120
-#: concrete/blocks/page_list/page_list_form.php:127
+#: concrete/blocks/page_list/page_list_form.php:130
 msgid "Truncate Summaries"
 msgstr "Scurtare Sumare"
 
 #: concrete/blocks/date_nav/form_setup_html.php:123
-#: concrete/blocks/page_list/page_list_form.php:130
+#: concrete/blocks/page_list/page_list_form.php:133
 msgid "Truncate descriptions after"
 msgstr "Taiere descrieri dupa"
 
@@ -8784,74 +8790,74 @@ msgstr "Se posteaza in alta pagina in alta parte"
 msgid "OR Path"
 msgstr "SAU cale"
 
-#: concrete/blocks/page_list/page_list_form.php:29
+#: concrete/blocks/page_list/page_list_form.php:32
 msgid "Filter"
 msgstr "Filtru"
 
-#: concrete/blocks/page_list/page_list_form.php:39
+#: concrete/blocks/page_list/page_list_form.php:42
 msgid ""
 "(<strong>Note</strong>: You must create the \"is_featured\" page attribute "
 "first.)"
 msgstr "(<strong>Nota</strong>: Trebuie sa creati mai intai atributul de pagina \"is_featured\".)"
 
-#: concrete/blocks/page_list/page_list_form.php:44
+#: concrete/blocks/page_list/page_list_form.php:47
 msgid "Display page aliases."
 msgstr "Afisare aliasuri pagini."
 
-#: concrete/blocks/page_list/page_list_form.php:49
+#: concrete/blocks/page_list/page_list_form.php:52
 msgid "Pagination"
 msgstr "Paginatie"
 
-#: concrete/blocks/page_list/page_list_form.php:52
+#: concrete/blocks/page_list/page_list_form.php:55
 msgid ""
 "Display pagination interface if more items are available than are displayed."
 msgstr "Afisare interfata de paginare daca sunt disponibile mai multe obiecte decat sunt afisate."
 
-#: concrete/blocks/page_list/page_list_form.php:90
+#: concrete/blocks/page_list/page_list_form.php:93
 msgid "Include all child pages"
 msgstr "Se includ toate paginile descendente"
 
-#: concrete/blocks/page_list/page_list_form.php:95
+#: concrete/blocks/page_list/page_list_form.php:98
 msgid "Sort Pages"
 msgstr "Sortare pagini"
 
-#: concrete/blocks/page_list/page_list_form.php:96
+#: concrete/blocks/page_list/page_list_form.php:99
 msgid "Pages should appear"
 msgstr "Paginile ar trebui sa apara"
 
-#: concrete/blocks/page_list/page_list_form.php:98
+#: concrete/blocks/page_list/page_list_form.php:101
 msgid "in their sitemap order"
 msgstr "in ordinea din harta sitului"
 
-#: concrete/blocks/page_list/page_list_form.php:99
+#: concrete/blocks/page_list/page_list_form.php:102
 msgid "with the most recent first"
 msgstr "cu cele mai recente primele"
 
-#: concrete/blocks/page_list/page_list_form.php:100
+#: concrete/blocks/page_list/page_list_form.php:103
 msgid "with the earliest first"
 msgstr "cu primele adaugate primele"
 
-#: concrete/blocks/page_list/page_list_form.php:101
+#: concrete/blocks/page_list/page_list_form.php:104
 msgid "in alphabetical order"
 msgstr "in ordine alfabetica"
 
-#: concrete/blocks/page_list/page_list_form.php:102
+#: concrete/blocks/page_list/page_list_form.php:105
 msgid "in reverse alphabetical order"
 msgstr "in ordine invers alfabetica"
 
-#: concrete/blocks/page_list/page_list_form.php:107
+#: concrete/blocks/page_list/page_list_form.php:110
 msgid "Provide RSS Feed"
 msgstr "Ofera flux RSS"
 
-#: concrete/blocks/page_list/page_list_form.php:115
+#: concrete/blocks/page_list/page_list_form.php:118
 msgid "RSS Feed Title"
 msgstr "Titlu flux RSS"
 
-#: concrete/blocks/page_list/page_list_form.php:117
+#: concrete/blocks/page_list/page_list_form.php:120
 msgid "RSS Feed Description"
 msgstr "Descriere flux RSS"
 
-#: concrete/blocks/page_list/page_list_form.php:139
+#: concrete/blocks/page_list/page_list_form.php:142
 msgid "Preview Pane"
 msgstr "Panou previzualizare"
 
@@ -9907,23 +9913,23 @@ msgstr "Situl nu este conectat la comunitatea concrete5. Daca va conectati veti 
 #: concrete/config/install/disabled/standard/content.xml:433
 #: concrete/config/install/packages/blank/content.xml:7
 #: concrete/config/install/packages/standard/content.xml:222
-#: concrete/helpers/concrete/dashboard.php:415
+#: concrete/helpers/concrete/dashboard.php:430
 #: concrete/single_pages/dashboard/system/view.php:45
 #: concrete/single_pages/dashboard/view.php:42
 msgid "Home"
 msgstr "Acasa"
 
-#: concrete/helpers/concrete/dashboard.php:477
+#: concrete/helpers/concrete/dashboard.php:492
 #: concrete/single_pages/dashboard/view.php:63
 msgid "News"
 msgstr "Noutati"
 
-#: concrete/helpers/concrete/dashboard.php:477
+#: concrete/helpers/concrete/dashboard.php:492
 #: concrete/single_pages/dashboard/view.php:63
 msgid "Learn about your site and concrete5."
 msgstr "Invatati despre situl dumneavoastra si concrete5."
 
-#: concrete/helpers/concrete/dashboard.php:481
+#: concrete/helpers/concrete/dashboard.php:496
 #: concrete/single_pages/dashboard/system/seo/view.php:1
 #: concrete/single_pages/dashboard/system/view.php:4
 #: concrete/single_pages/dashboard/view.php:69
@@ -9933,7 +9939,7 @@ msgstr "Sistem &amp; Setari"
 #: concrete/config/install/base/dashboard.xml:425
 #: concrete/config/install/disabled/blank/content.xml:73
 #: concrete/config/install/disabled/standard/content.xml:73
-#: concrete/helpers/concrete/dashboard.php:481
+#: concrete/helpers/concrete/dashboard.php:496
 #: concrete/single_pages/dashboard/view.php:69
 msgid "Secure and setup your site."
 msgstr "Securizati si setati situl."
@@ -9941,12 +9947,12 @@ msgstr "Securizati si setati situl."
 #: concrete/config/install/base/dashboard.xml:366
 #: concrete/config/install/disabled/blank/content.xml:61
 #: concrete/config/install/disabled/standard/content.xml:61
-#: concrete/helpers/concrete/dashboard.php:485
+#: concrete/helpers/concrete/dashboard.php:500
 #: concrete/single_pages/dashboard/view.php:76
 msgid "Extend concrete5"
 msgstr "Extindere concrete5"
 
-#: concrete/helpers/concrete/dashboard.php:487
+#: concrete/helpers/concrete/dashboard.php:502
 #: concrete/single_pages/dashboard/view.php:78
 #, php-format
 msgid ""
@@ -9954,7 +9960,7 @@ msgid ""
 "href=\"%s\">themes</a> and <a href=\"%s\">add-ons</a>."
 msgstr "<a href=\"%s\">Instalati</a>, <a href=\"%s\">actualizati</a> sau descarcati mai multe <a href=\"%s\">teme</a> si <a href=\"%s\">addon-uri</a>."
 
-#: concrete/helpers/concrete/dashboard.php:493
+#: concrete/helpers/concrete/dashboard.php:508
 #: concrete/single_pages/dashboard/view.php:84
 #, php-format
 msgid "<a href=\"%s\">Install</a> or <a href=\"%s\">update</a> packages."
@@ -11979,7 +11985,7 @@ msgstr "Inspectare"
 #: concrete/config/install/base/dashboard.xml:261
 #: concrete/config/install/disabled/blank/content.xml:43
 #: concrete/config/install/disabled/standard/content.xml:43
-#: concrete/helpers/concrete/dashboard.php:365
+#: concrete/helpers/concrete/dashboard.php:380
 #: concrete/single_pages/dashboard/pages/themes/view.php:93
 msgid "Customize"
 msgstr "Personalizare"
@@ -12477,34 +12483,34 @@ msgstr "&lt; Inapoi la %s"
 msgid "Add to Favorites"
 msgstr "Adaugati la favorite"
 
-#: concrete/helpers/concrete/dashboard.php:247
+#: concrete/helpers/concrete/dashboard.php:264
 msgid "Recent"
 msgstr "Recente"
 
-#: concrete/helpers/concrete/dashboard.php:329
+#: concrete/helpers/concrete/dashboard.php:344
 msgid "View All"
 msgstr "Afisate toate"
 
-#: concrete/helpers/concrete/dashboard.php:361
+#: concrete/helpers/concrete/dashboard.php:376
 msgid "Dashboard Home"
 msgstr "Prima pagina dashboard"
 
 #: concrete/config/install/base/dashboard.xml:825
 #: concrete/config/install/disabled/blank/content.xml:220
 #: concrete/config/install/disabled/standard/content.xml:382
-#: concrete/helpers/concrete/dashboard.php:365
+#: concrete/helpers/concrete/dashboard.php:380
 msgid "Customize Dashboard Home"
 msgstr "Personalizare prima pagina dashboard"
 
-#: concrete/helpers/concrete/dashboard.php:373
+#: concrete/helpers/concrete/dashboard.php:388
 msgid "Your Site"
 msgstr "Situl dumneavoastra"
 
-#: concrete/helpers/concrete/dashboard.php:388
+#: concrete/helpers/concrete/dashboard.php:403
 msgid "Add-Ons"
 msgstr "Addon-uri"
 
-#: concrete/helpers/concrete/dashboard.php:508
+#: concrete/helpers/concrete/dashboard.php:523
 msgid "View Full Dashboard"
 msgstr "Afisare intregul dashboard"
 

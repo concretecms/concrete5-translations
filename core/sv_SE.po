@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: andrew@concrete5.org\n"
-"POT-Creation-Date: 2013-07-19 22:00+0000\n"
-"PO-Revision-Date: 2013-07-20 09:00+0000\n"
+"POT-Creation-Date: 2013-07-21 22:00+0000\n"
+"PO-Revision-Date: 2013-07-21 13:00+0000\n"
 "Last-Translator: MrLindau <fredrik@fxlindau.se>\n"
 "Language-Team: Swedish (Sweden) (http://www.transifex.com/projects/p/concrete5/language/sv_SE/)\n"
 "MIME-Version: 1.0\n"
@@ -983,7 +983,7 @@ msgstr "Installera tema"
 #: concrete/blocks/autonav/form_setup_html.php:7
 #: concrete/blocks/form/form_setup_html.php:14
 #: concrete/blocks/form/form_setup_html.php:317
-#: concrete/blocks/page_list/page_list_form.php:5
+#: concrete/blocks/page_list/page_list_form.php:8
 #: concrete/elements/collection_theme.php:118
 #: concrete/elements/collection_theme.php:119
 #: concrete/single_pages/dashboard/composer/write.php:158
@@ -1773,7 +1773,7 @@ msgstr "Blocket har kopieras till klippbordet."
 #: concrete/blocks/form/form_setup_html.php:13
 #: concrete/blocks/form/form_setup_html.php:310
 #: concrete/blocks/guestbook/view.php:20
-#: concrete/blocks/page_list/page_list_form.php:4
+#: concrete/blocks/page_list/page_list_form.php:7
 #: concrete/blocks/tags/tag_form.php:10
 #: concrete/config/install/base/login_registration.xml:11
 #: concrete/config/install/disabled/blank/content.xml:8
@@ -1875,7 +1875,7 @@ msgstr "Ett oväntat fel uppstod."
 
 #: concrete/helpers/concrete/dashboard.php:164
 #: concrete/helpers/concrete/dashboard.php:168
-#: concrete/helpers/concrete/dashboard.php:380 concrete/tools/i18n_js.php:55
+#: concrete/helpers/concrete/dashboard.php:395 concrete/tools/i18n_js.php:55
 msgid "Help"
 msgstr "Hjälp"
 
@@ -3721,7 +3721,13 @@ msgstr "Importfilter sparat."
 msgid "Unable to locate file %s"
 msgstr "Kunde inte hitta filen %s."
 
-#: concrete/core/controllers/single_pages/dashboard/system/backup_restore/backup.php:93
+#: concrete/core/controllers/single_pages/dashboard/system/backup_restore/backup.php:80
+#, php-format
+msgid ""
+"Error deleting the file %s. Please check the permissions of the folder %s"
+msgstr "Fel vid borttagning av fil %s. Kontrollera behörigheterna för katalog %s"
+
+#: concrete/core/controllers/single_pages/dashboard/system/backup_restore/backup.php:99
 msgid "Invalid backup file specified."
 msgstr "Ogiltig backup-fil angiven"
 
@@ -3950,7 +3956,7 @@ msgid "Logs"
 msgstr "Loggar"
 
 #: concrete/blocks/date_nav/form_setup_html.php:30
-#: concrete/blocks/page_list/page_list_form.php:20
+#: concrete/blocks/page_list/page_list_form.php:23
 #: concrete/core/controllers/single_pages/dashboard/reports/logs.php:34
 #: concrete/core/controllers/single_pages/dashboard/reports/logs.php:37
 #: concrete/elements/custom_style/background.php:23
@@ -4492,7 +4498,7 @@ msgstr "Välj fil"
 #: concrete/blocks/guestbook/add.php:27 concrete/blocks/guestbook/add.php:37
 #: concrete/blocks/guestbook/add.php:57 concrete/blocks/guestbook/edit.php:26
 #: concrete/blocks/guestbook/edit.php:35 concrete/blocks/guestbook/edit.php:53
-#: concrete/blocks/page_list/page_list_form.php:109
+#: concrete/blocks/page_list/page_list_form.php:112
 #: concrete/blocks/survey/add.php:21 concrete/blocks/survey/edit.php:22
 #: concrete/core/models/attribute/types/boolean.php:38
 #: concrete/core/models/attribute/types/boolean.php:66
@@ -4512,7 +4518,7 @@ msgstr "Ja"
 #: concrete/blocks/guestbook/add.php:28 concrete/blocks/guestbook/add.php:38
 #: concrete/blocks/guestbook/add.php:58 concrete/blocks/guestbook/edit.php:27
 #: concrete/blocks/guestbook/edit.php:36 concrete/blocks/guestbook/edit.php:54
-#: concrete/blocks/page_list/page_list_form.php:112
+#: concrete/blocks/page_list/page_list_form.php:115
 #: concrete/core/models/attribute/types/boolean.php:38
 #: concrete/elements/pages/search_form_advanced.php:71
 #: concrete/elements/pages/search_form_advanced.php:249
@@ -4572,7 +4578,7 @@ msgid "Active"
 msgstr "Aktiv"
 
 #: concrete/core/models/page_theme.php:580
-#: concrete/helpers/concrete/dashboard.php:253
+#: concrete/helpers/concrete/dashboard.php:268
 msgid "(No Name)"
 msgstr "(Inget namn)"
 
@@ -5774,7 +5780,7 @@ msgid "Field available in Dashboard User Search."
 msgstr "Fält tillgängligt i kontrollpanelens användarsök"
 
 #: concrete/blocks/form/form_setup_html.php:12
-#: concrete/blocks/page_list/page_list_form.php:4
+#: concrete/blocks/page_list/page_list_form.php:7
 #: concrete/blocks/survey/add.php:33 concrete/blocks/tags/tag_form.php:10
 #: concrete/config/install/base/dashboard.xml:247
 #: concrete/config/install/disabled/blank/content.xml:41
@@ -8077,7 +8083,7 @@ msgid "Display Title"
 msgstr "Visa titel"
 
 #: concrete/blocks/date_nav/form_setup_html.php:22
-#: concrete/blocks/page_list/page_list_form.php:12
+#: concrete/blocks/page_list/page_list_form.php:15
 #: concrete/blocks/rss_displayer/form_setup_html.php:43
 #: concrete/blocks/tags/tag_form.php:24
 msgid "Display"
@@ -8229,32 +8235,32 @@ msgid "You don't have permission to access this RSS feed"
 msgstr "Du har inte behörighet att läsa detta RSS flöde"
 
 #: concrete/blocks/date_nav/form_setup_html.php:21
-#: concrete/blocks/page_list/page_list_form.php:11
+#: concrete/blocks/page_list/page_list_form.php:14
 msgid "Number and Type of Pages"
 msgstr "Antal och typ av sidor"
 
 #: concrete/blocks/date_nav/form_setup_html.php:24
-#: concrete/blocks/page_list/page_list_form.php:14
+#: concrete/blocks/page_list/page_list_form.php:17
 msgid "pages of type"
 msgstr "sidor av typen"
 
 #: concrete/blocks/date_nav/form_setup_html.php:40
-#: concrete/blocks/page_list/page_list_form.php:37
+#: concrete/blocks/page_list/page_list_form.php:40
 msgid "Featured pages only."
 msgstr "specialartiklar (endast)."
 
 #: concrete/blocks/date_nav/form_setup_html.php:47
-#: concrete/blocks/page_list/page_list_form.php:56
+#: concrete/blocks/page_list/page_list_form.php:59
 msgid "Location in Website"
 msgstr "Plats i webbplats"
 
 #: concrete/blocks/date_nav/form_setup_html.php:48
-#: concrete/blocks/page_list/page_list_form.php:57
+#: concrete/blocks/page_list/page_list_form.php:60
 msgid "Display pages that are located"
 msgstr "Visa sidor som är placerade"
 
 #: concrete/blocks/date_nav/form_setup_html.php:52
-#: concrete/blocks/page_list/page_list_form.php:62
+#: concrete/blocks/page_list/page_list_form.php:65
 #: concrete/blocks/search/form_setup_html.php:50
 msgid "everywhere"
 msgstr "överallt"
@@ -8264,13 +8270,13 @@ msgid "at the current level"
 msgstr "på nuvarande nivå"
 
 #: concrete/blocks/date_nav/form_setup_html.php:56
-#: concrete/blocks/page_list/page_list_form.php:67
+#: concrete/blocks/page_list/page_list_form.php:70
 #: concrete/blocks/search/form_setup_html.php:57
 msgid "beneath this page"
 msgstr "under denna sida"
 
 #: concrete/blocks/date_nav/form_setup_html.php:58
-#: concrete/blocks/page_list/page_list_form.php:72
+#: concrete/blocks/page_list/page_list_form.php:75
 #: concrete/blocks/search/form_setup_html.php:63
 msgid "beneath another page"
 msgstr "under en annan sida"
@@ -8321,17 +8327,17 @@ msgstr "Korta av titlar efter"
 
 #: concrete/blocks/date_nav/form_setup_html.php:114
 #: concrete/blocks/date_nav/form_setup_html.php:125
-#: concrete/blocks/page_list/page_list_form.php:132
+#: concrete/blocks/page_list/page_list_form.php:135
 msgid "characters"
 msgstr "tecken"
 
 #: concrete/blocks/date_nav/form_setup_html.php:120
-#: concrete/blocks/page_list/page_list_form.php:127
+#: concrete/blocks/page_list/page_list_form.php:130
 msgid "Truncate Summaries"
 msgstr "Korta av summeringar"
 
 #: concrete/blocks/date_nav/form_setup_html.php:123
-#: concrete/blocks/page_list/page_list_form.php:130
+#: concrete/blocks/page_list/page_list_form.php:133
 msgid "Truncate descriptions after"
 msgstr "Korta av beskrivningar efter"
 
@@ -8640,7 +8646,7 @@ msgstr "Helt slumpmässig"
 msgid ""
 "This block was copied from another location. Editing it will create a new "
 "instance of it."
-msgstr "Det här blocket är en kopia från ett annat ställe. En redigering kommer skapa en ny instans av blocket."
+msgstr "Det här blocket är en kopia från en annan plats. En redigering kommer skapa en ny instans av blocket."
 
 #: concrete/blocks/rss_displayer/form_setup_html.php:11
 #: concrete/blocks/rss_displayer/templates/read_more.php:14
@@ -8772,74 +8778,74 @@ msgstr "Skicka till en annan sida på ett annat ställe"
 msgid "OR Path"
 msgstr "ELLER sökväg"
 
-#: concrete/blocks/page_list/page_list_form.php:29
+#: concrete/blocks/page_list/page_list_form.php:32
 msgid "Filter"
 msgstr "Filter"
 
-#: concrete/blocks/page_list/page_list_form.php:39
+#: concrete/blocks/page_list/page_list_form.php:42
 msgid ""
 "(<strong>Note</strong>: You must create the \"is_featured\" page attribute "
 "first.)"
 msgstr "(<strong>Observera</strong>: du måste skapa sidegenskapen \"is_featured\" först.)"
 
-#: concrete/blocks/page_list/page_list_form.php:44
+#: concrete/blocks/page_list/page_list_form.php:47
 msgid "Display page aliases."
 msgstr "Visa sidalias."
 
-#: concrete/blocks/page_list/page_list_form.php:49
+#: concrete/blocks/page_list/page_list_form.php:52
 msgid "Pagination"
 msgstr "Sidbrytning"
 
-#: concrete/blocks/page_list/page_list_form.php:52
+#: concrete/blocks/page_list/page_list_form.php:55
 msgid ""
 "Display pagination interface if more items are available than are displayed."
 msgstr "Visa sidbrytningsgränssnitt om det finns fler poster tillgängliga än vad som visas."
 
-#: concrete/blocks/page_list/page_list_form.php:90
+#: concrete/blocks/page_list/page_list_form.php:93
 msgid "Include all child pages"
 msgstr "Inkludera alla undersidor"
 
-#: concrete/blocks/page_list/page_list_form.php:95
+#: concrete/blocks/page_list/page_list_form.php:98
 msgid "Sort Pages"
 msgstr "Sortera sidor"
 
-#: concrete/blocks/page_list/page_list_form.php:96
+#: concrete/blocks/page_list/page_list_form.php:99
 msgid "Pages should appear"
 msgstr "Sidor visas"
 
-#: concrete/blocks/page_list/page_list_form.php:98
+#: concrete/blocks/page_list/page_list_form.php:101
 msgid "in their sitemap order"
 msgstr "i den ordning de står på webbplatsöversikten"
 
-#: concrete/blocks/page_list/page_list_form.php:99
+#: concrete/blocks/page_list/page_list_form.php:102
 msgid "with the most recent first"
 msgstr "med den nyaste först"
 
-#: concrete/blocks/page_list/page_list_form.php:100
+#: concrete/blocks/page_list/page_list_form.php:103
 msgid "with the earliest first"
 msgstr "med den tidigaste först"
 
-#: concrete/blocks/page_list/page_list_form.php:101
+#: concrete/blocks/page_list/page_list_form.php:104
 msgid "in alphabetical order"
 msgstr "i alfabetisk ordning"
 
-#: concrete/blocks/page_list/page_list_form.php:102
+#: concrete/blocks/page_list/page_list_form.php:105
 msgid "in reverse alphabetical order"
 msgstr "i omvänd alfabetisk ordning"
 
-#: concrete/blocks/page_list/page_list_form.php:107
+#: concrete/blocks/page_list/page_list_form.php:110
 msgid "Provide RSS Feed"
 msgstr "Tillhandahåll RSS-flöde"
 
-#: concrete/blocks/page_list/page_list_form.php:115
+#: concrete/blocks/page_list/page_list_form.php:118
 msgid "RSS Feed Title"
 msgstr "Titel på RSS-flöde"
 
-#: concrete/blocks/page_list/page_list_form.php:117
+#: concrete/blocks/page_list/page_list_form.php:120
 msgid "RSS Feed Description"
 msgstr "Beskrivning av RSS-flöde"
 
-#: concrete/blocks/page_list/page_list_form.php:139
+#: concrete/blocks/page_list/page_list_form.php:142
 msgid "Preview Pane"
 msgstr "Ruta för förhandsgranskning"
 
@@ -9112,7 +9118,7 @@ msgstr "på nuvarande nivå."
 
 #: concrete/blocks/autonav/form_setup_html.php:47
 msgid "At the level below."
-msgstr "på nivån under denna."
+msgstr "På nivån under denna."
 
 #: concrete/blocks/autonav/form_setup_html.php:48
 msgid "Beneath a particular page"
@@ -9894,23 +9900,23 @@ msgstr "Din webbplats är inte ansluten till concrete5:s nätverk. Ansluter du d
 #: concrete/config/install/disabled/standard/content.xml:433
 #: concrete/config/install/packages/blank/content.xml:7
 #: concrete/config/install/packages/standard/content.xml:222
-#: concrete/helpers/concrete/dashboard.php:415
+#: concrete/helpers/concrete/dashboard.php:430
 #: concrete/single_pages/dashboard/system/view.php:45
 #: concrete/single_pages/dashboard/view.php:42
 msgid "Home"
 msgstr "Hem"
 
-#: concrete/helpers/concrete/dashboard.php:477
+#: concrete/helpers/concrete/dashboard.php:492
 #: concrete/single_pages/dashboard/view.php:63
 msgid "News"
 msgstr "Nyheter"
 
-#: concrete/helpers/concrete/dashboard.php:477
+#: concrete/helpers/concrete/dashboard.php:492
 #: concrete/single_pages/dashboard/view.php:63
 msgid "Learn about your site and concrete5."
 msgstr "Lär dig mer om din webbplats och concrete5."
 
-#: concrete/helpers/concrete/dashboard.php:481
+#: concrete/helpers/concrete/dashboard.php:496
 #: concrete/single_pages/dashboard/system/seo/view.php:1
 #: concrete/single_pages/dashboard/system/view.php:4
 #: concrete/single_pages/dashboard/view.php:69
@@ -9920,7 +9926,7 @@ msgstr "System och inställningar"
 #: concrete/config/install/base/dashboard.xml:425
 #: concrete/config/install/disabled/blank/content.xml:73
 #: concrete/config/install/disabled/standard/content.xml:73
-#: concrete/helpers/concrete/dashboard.php:481
+#: concrete/helpers/concrete/dashboard.php:496
 #: concrete/single_pages/dashboard/view.php:69
 msgid "Secure and setup your site."
 msgstr "Säkra och gör inställningar för din webbplats."
@@ -9928,12 +9934,12 @@ msgstr "Säkra och gör inställningar för din webbplats."
 #: concrete/config/install/base/dashboard.xml:366
 #: concrete/config/install/disabled/blank/content.xml:61
 #: concrete/config/install/disabled/standard/content.xml:61
-#: concrete/helpers/concrete/dashboard.php:485
+#: concrete/helpers/concrete/dashboard.php:500
 #: concrete/single_pages/dashboard/view.php:76
 msgid "Extend concrete5"
 msgstr "Utöka concrete5"
 
-#: concrete/helpers/concrete/dashboard.php:487
+#: concrete/helpers/concrete/dashboard.php:502
 #: concrete/single_pages/dashboard/view.php:78
 #, php-format
 msgid ""
@@ -9941,7 +9947,7 @@ msgid ""
 "href=\"%s\">themes</a> and <a href=\"%s\">add-ons</a>."
 msgstr "<a href=\"%s\">Installera</a>, <a href=\"%s\">uppdatera</a> eller ladda ner fler <a href=\"%s\">teman</a> och <a href=\"%s\">tillägg</a>."
 
-#: concrete/helpers/concrete/dashboard.php:493
+#: concrete/helpers/concrete/dashboard.php:508
 #: concrete/single_pages/dashboard/view.php:84
 #, php-format
 msgid "<a href=\"%s\">Install</a> or <a href=\"%s\">update</a> packages."
@@ -11966,7 +11972,7 @@ msgstr "Inspektera"
 #: concrete/config/install/base/dashboard.xml:261
 #: concrete/config/install/disabled/blank/content.xml:43
 #: concrete/config/install/disabled/standard/content.xml:43
-#: concrete/helpers/concrete/dashboard.php:365
+#: concrete/helpers/concrete/dashboard.php:380
 #: concrete/single_pages/dashboard/pages/themes/view.php:93
 msgid "Customize"
 msgstr "Skräddarsy"
@@ -12464,34 +12470,34 @@ msgstr "&lt; Tillbaka till %s"
 msgid "Add to Favorites"
 msgstr "Lägg till favoriter"
 
-#: concrete/helpers/concrete/dashboard.php:247
+#: concrete/helpers/concrete/dashboard.php:264
 msgid "Recent"
 msgstr "Senaste"
 
-#: concrete/helpers/concrete/dashboard.php:329
+#: concrete/helpers/concrete/dashboard.php:344
 msgid "View All"
 msgstr "Visa alla"
 
-#: concrete/helpers/concrete/dashboard.php:361
+#: concrete/helpers/concrete/dashboard.php:376
 msgid "Dashboard Home"
 msgstr "Kontrollpanel - Hem"
 
 #: concrete/config/install/base/dashboard.xml:825
 #: concrete/config/install/disabled/blank/content.xml:220
 #: concrete/config/install/disabled/standard/content.xml:382
-#: concrete/helpers/concrete/dashboard.php:365
+#: concrete/helpers/concrete/dashboard.php:380
 msgid "Customize Dashboard Home"
 msgstr "Skräddarsy kontrollpanelen"
 
-#: concrete/helpers/concrete/dashboard.php:373
+#: concrete/helpers/concrete/dashboard.php:388
 msgid "Your Site"
 msgstr "Din webbplats"
 
-#: concrete/helpers/concrete/dashboard.php:388
+#: concrete/helpers/concrete/dashboard.php:403
 msgid "Add-Ons"
 msgstr "Tillägg"
 
-#: concrete/helpers/concrete/dashboard.php:508
+#: concrete/helpers/concrete/dashboard.php:523
 msgid "View Full Dashboard"
 msgstr "Visa hela kontrollpanelen"
 
