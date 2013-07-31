@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: andrew@concrete5.org\n"
-"POT-Creation-Date: 2013-07-29 22:00+0000\n"
-"PO-Revision-Date: 2013-07-30 09:00+0000\n"
-"Last-Translator: MrLindau <fredrik@fxlindau.se>\n"
+"POT-Creation-Date: 2013-07-30 22:00+0000\n"
+"PO-Revision-Date: 2013-07-31 08:18+0000\n"
+"Last-Translator: aembler <andrew@concrete5.org>\n"
 "Language-Team: Swedish (Sweden) (http://www.transifex.com/projects/p/concrete5/language/sv_SE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,7 +21,9 @@ msgstr ""
 
 #: concrete/elements/collection_theme.php:23 concrete/startup/process.php:88
 #: concrete/tools/add_block_popup.php:6 concrete/tools/add_block_popup.php:10
-#: concrete/tools/add_block_popup.php:24 concrete/tools/composer_target.php:6
+#: concrete/tools/add_block_popup.php:24
+#: concrete/tools/composer/preview.php:11
+#: concrete/tools/composer/preview.php:16 concrete/tools/composer_target.php:6
 #: concrete/tools/composer_target.php:11
 #: concrete/tools/dashboard/sitemap_drag_request.php:6
 #: concrete/tools/dashboard/sitemap_update.php:5
@@ -51,7 +53,7 @@ msgstr "Åtkomst nekad"
 #: concrete/elements/progress_bar.php:2 concrete/elements/system_errors.php:2
 #: concrete/mail/user_registered_approval_complete.php:2
 #: concrete/single_pages/dashboard/users/search.php:74
-#: concrete/tools/check_in.php:7
+#: concrete/tools/check_in.php:7 concrete/tools/composer/preview_frame.php:2
 #: concrete/tools/dashboard/attribute_set_order_update.php:11
 #: concrete/tools/dashboard/attribute_sets_update.php:14
 #: concrete/tools/dashboard/block_type_order_update.php:2
@@ -66,21 +68,11 @@ msgstr "Åtkomst nekad"
 #: concrete/tools/edit_area_popup.php:92
 #: concrete/tools/edit_block_popup.php:29
 #: concrete/tools/edit_collection_popup.php:95
-#: concrete/tools/files/add_to.php:7
-#: concrete/tools/files/bulk_properties.php:10
-#: concrete/tools/files/customize_search_columns.php:7
-#: concrete/tools/files/delete.php:7 concrete/tools/files/delete_set.php:8
-#: concrete/tools/files/download.php:11 concrete/tools/files/duplicate.php:9
-#: concrete/tools/files/edit.php:12 concrete/tools/files/get_data.php:7
-#: concrete/tools/files/get_data.php:29
+#: concrete/tools/files/edit.php:12 concrete/tools/files/get_data.php:29
 #: concrete/tools/files/permissions.php:10
 #: concrete/tools/files/properties.php:12 concrete/tools/files/replace.php:12
-#: concrete/tools/files/save_search.php:8
-#: concrete/tools/files/selector_data.php:14
 #: concrete/tools/files/selector_data.php:22 concrete/tools/files/star.php:8
 #: concrete/tools/files/view.php:18 concrete/tools/layout_services.php:40
-#: concrete/tools/permissions/access_entity.php:7
-#: concrete/tools/permissions/dialogs/access/entity/types/group_combination.php:6
 #: concrete/tools/pile_manager.php:10
 #: concrete/tools/sitemap_search_selector.php:5
 #: concrete/tools/user_group_selector.php:14
@@ -96,6 +88,19 @@ msgstr "Åtkomst nekad"
 #: concrete/tools/users/bulk_properties.php:26 concrete/tools/versions.php:20
 msgid "Access Denied."
 msgstr "Åtkomst nekad."
+
+#: concrete/tools/files/add_to.php:7
+#: concrete/tools/files/bulk_properties.php:10
+#: concrete/tools/files/customize_search_columns.php:7
+#: concrete/tools/files/delete.php:7 concrete/tools/files/delete_set.php:8
+#: concrete/tools/files/duplicate.php:9 concrete/tools/files/get_data.php:7
+#: concrete/tools/files/save_search.php:8
+#: concrete/tools/files/search_dialog.php:6
+#: concrete/tools/files/search_results.php:5
+#: concrete/tools/files/search_sets_reload.php:6
+#: concrete/tools/files/selector_data.php:14
+msgid "Unable to access the file manager."
+msgstr "Kunde inte komma åt filhanteraren."
 
 #: concrete/tools/files/customize_search_columns.php:42
 #: concrete/tools/pages/customize_search_columns.php:42
@@ -219,6 +224,10 @@ msgstr "Spara"
 #: concrete/tools/files/star.php:19
 msgid "INVALID ACTION"
 msgstr "OGILTIG ÅTGÄRD"
+
+#: concrete/tools/files/download.php:11
+msgid "Unable to search file sets."
+msgstr ""
 
 #: concrete/tools/files/import.php:263 concrete/tools/files/replace.php:28
 msgid "Add from Incoming Directory"
@@ -433,7 +442,7 @@ msgstr "Du har inte behörighet att avsöka någon av de valda filerna igen."
 
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:40
 #: concrete/single_pages/dashboard/composer/write.php:148
-#: concrete/single_pages/dashboard/composer/write.php:248
+#: concrete/single_pages/dashboard/composer/write.php:249
 #: concrete/single_pages/dashboard/scrapbook/view.php:265
 #: concrete/tools/files/permissions.php:39
 #: concrete/tools/page_controls_menu_js.php:184
@@ -579,7 +588,7 @@ msgstr "Sida tillagd till"
 
 #: concrete/blocks/slideshow/form_setup_html.php:21
 #: concrete/core/models/file_list.php:417
-#: concrete/core/models/page_list.php:463
+#: concrete/core/models/page_list.php:511
 #: concrete/elements/files/search_form_advanced.php:8
 #: concrete/elements/workflow/type_form_required.php:35
 #: concrete/single_pages/dashboard/files/sets.php:164
@@ -741,12 +750,6 @@ msgstr "Anonym"
 msgid "Deleted User"
 msgstr "Borttagen användare"
 
-#: concrete/tools/files/search_dialog.php:6
-#: concrete/tools/files/search_results.php:5
-#: concrete/tools/files/search_sets_reload.php:6
-msgid "Unable to access the file manager."
-msgstr "Kunde inte komma åt filhanteraren."
-
 #: concrete/elements/files/search_form_advanced.php:165
 #: concrete/tools/files/search_sets_reload.php:20
 msgid "In Set(s)"
@@ -862,8 +865,9 @@ msgid "Unable to copy one or more files."
 msgstr "Kunde inte kopiera en eller flera filer."
 
 #: concrete/core/controllers/blocks/form.php:326
-#: concrete/core/controllers/single_pages/dashboard/system/basics/icons.php:46
-#: concrete/core/controllers/single_pages/dashboard/system/basics/icons.php:80
+#: concrete/core/controllers/single_pages/dashboard/system/basics/icons.php:56
+#: concrete/core/controllers/single_pages/dashboard/system/basics/icons.php:88
+#: concrete/core/controllers/single_pages/dashboard/system/basics/icons.php:122
 #: concrete/core/libraries/file/importer.php:48
 #: concrete/tools/files/duplicate.php:42
 msgid "Invalid file."
@@ -1267,6 +1271,10 @@ msgid_plural "%d items"
 msgstr[0] "%d post"
 msgstr[1] "%d poster"
 
+#: concrete/tools/permissions/access_entity.php:7
+msgid "You do not have user search or group search permissions."
+msgstr ""
+
 #: concrete/tools/permissions/access_entity.php:33
 msgid "You must choose who this permission is for."
 msgstr "Du måste välja för vem behörigheten gäller."
@@ -1303,6 +1311,10 @@ msgstr "Hur länge kommer denna behörighet att gälla?"
 msgid "Error"
 msgstr "Fel"
 
+#: concrete/tools/permissions/dialogs/access/entity/types/group_combination.php:6
+msgid "You do not have group search permissions."
+msgstr ""
+
 #: concrete/tools/permissions/dialogs/access/entity/types/group_combination.php:17
 msgid ""
 "Only users who are members of ALL selected groups will be eligible for this "
@@ -1310,7 +1322,7 @@ msgid ""
 msgstr "Endast användare som är medlemmar ALLA valda grupper kommer att påverkas av denna rättighet."
 
 #: concrete/blocks/guestbook/view.php:70
-#: concrete/core/models/page_list.php:464
+#: concrete/core/models/page_list.php:512
 #: concrete/elements/attribute/type_form_required.php:56
 #: concrete/elements/block_master_collection_alias.php:27
 #: concrete/elements/collection_add.php:25
@@ -1526,6 +1538,7 @@ msgstr "Kopiera version"
 #: concrete/single_pages/dashboard/pages/themes/view.php:95
 #: concrete/single_pages/dashboard/system/basics/icons.php:27
 #: concrete/single_pages/dashboard/system/basics/icons.php:91
+#: concrete/single_pages/dashboard/system/basics/icons.php:150
 #: concrete/tools/versions.php:361
 msgid "Remove"
 msgstr "Ta bort"
@@ -2561,7 +2574,7 @@ msgid "Page Type"
 msgstr "Sidtyp"
 
 #: concrete/core/models/file_list.php:431
-#: concrete/core/models/page_list.php:467 concrete/tools/pages/delete.php:93
+#: concrete/core/models/page_list.php:515 concrete/tools/pages/delete.php:93
 msgid "Author"
 msgstr "Författare"
 
@@ -2761,8 +2774,9 @@ msgid "Complete required fields *"
 msgstr "Fyll i obligatoriska fält *"
 
 #: concrete/core/controllers/blocks/form.php:323
-#: concrete/core/controllers/single_pages/dashboard/system/basics/icons.php:43
-#: concrete/core/controllers/single_pages/dashboard/system/basics/icons.php:77
+#: concrete/core/controllers/single_pages/dashboard/system/basics/icons.php:53
+#: concrete/core/controllers/single_pages/dashboard/system/basics/icons.php:85
+#: concrete/core/controllers/single_pages/dashboard/system/basics/icons.php:119
 #: concrete/core/libraries/file/importer.php:51
 msgid "Invalid file extension."
 msgstr "Ogiltig filtyp."
@@ -2814,6 +2828,10 @@ msgstr "Visar månadsarkiv för sidor"
 #: concrete/core/controllers/blocks/date_archive.php:29
 msgid "Blog Date Archive"
 msgstr "Datumarkiv för blogg."
+
+#: concrete/core/controllers/blocks/date_archive.php:34
+msgid "Please enter the number of months you want to show."
+msgstr ""
 
 #: concrete/core/controllers/blocks/page_list.php:27
 #: concrete/core/controllers/blocks/tags.php:36
@@ -3124,37 +3142,36 @@ msgstr "Okänd publiceringsplats"
 msgid "Draft deleted."
 msgstr "Utkast borttaget."
 
-#: concrete/core/controllers/single_pages/dashboard/files/sets.php:26
+#: concrete/core/controllers/single_pages/dashboard/files/sets.php:25
 msgid "New file set added successfully."
 msgstr "Filgruppen lades till."
 
-#: concrete/core/controllers/single_pages/dashboard/files/sets.php:31
+#: concrete/core/controllers/single_pages/dashboard/files/sets.php:30
 msgid "File set deleted successfully."
 msgstr "Filgruppen togs bort."
 
-#: concrete/core/controllers/single_pages/dashboard/files/sets.php:52
+#: concrete/core/controllers/single_pages/dashboard/files/sets.php:51
 msgid "You do not have permission to delete this file set."
 msgstr "Du har inte behörighet att ta bort denna filgrupp."
 
-#: concrete/core/controllers/single_pages/dashboard/files/sets.php:63
+#: concrete/core/controllers/single_pages/dashboard/files/sets.php:62
 msgid "File set updated successfully."
 msgstr "Filgrupp uppdaterad."
 
-#: concrete/core/controllers/single_pages/dashboard/files/sets.php:79
+#: concrete/core/controllers/single_pages/dashboard/files/sets.php:78
 msgid "Invalid ID"
 msgstr "Ogiltigt ID"
 
 #: concrete/core/controllers/single_pages/dashboard/files/add_set.php:17
-#: concrete/core/controllers/single_pages/dashboard/files/sets.php:85
+#: concrete/core/controllers/single_pages/dashboard/files/sets.php:84
 msgid "Please Enter a Name"
 msgstr "Fyll i ett namn"
 
 #: concrete/core/controllers/single_pages/dashboard/files/add_set.php:22
-#: concrete/core/controllers/single_pages/dashboard/files/sets.php:90
-#: concrete/core/controllers/single_pages/dashboard/users/group/sets.php:27
-#: concrete/core/controllers/single_pages/dashboard/users/group/sets.php:73
-msgid "Set Names must only include alphanumerics and spaces."
-msgstr "Gruppnamn får endast innehålla alfanumeriska tecken och mellanslag."
+#: concrete/core/controllers/single_pages/dashboard/files/sets.php:89
+#, php-format
+msgid "File Set Name cannot contain the characters: %s"
+msgstr ""
 
 #: concrete/core/controllers/single_pages/dashboard/files/attributes.php:22
 #: concrete/core/controllers/single_pages/dashboard/pages/attributes.php:39
@@ -3541,6 +3558,11 @@ msgstr "Ett fel uppstod när kontot skulle skapas."
 msgid "Specify a name for your group set."
 msgstr "Ange ett namn för din uppsättning med grupper."
 
+#: concrete/core/controllers/single_pages/dashboard/users/group/sets.php:27
+#: concrete/core/controllers/single_pages/dashboard/users/group/sets.php:73
+msgid "Set Names must only include alphanumerics and spaces."
+msgstr "Gruppnamn får endast innehålla alfanumeriska tecken och mellanslag."
+
 #: concrete/core/controllers/single_pages/dashboard/users/group/sets.php:48
 msgid "Group set added successfully."
 msgstr "Gruppuppsättning tillagd."
@@ -3848,6 +3870,14 @@ msgstr "iPhone-ikonen uppdaterad."
 #: concrete/core/controllers/single_pages/dashboard/system/basics/icons.php:26
 msgid "iPhone icon removed successfully."
 msgstr "iPhone-ikonen togs bort."
+
+#: concrete/core/controllers/single_pages/dashboard/system/basics/icons.php:31
+msgid "Windows 8 icon updated successfully."
+msgstr ""
+
+#: concrete/core/controllers/single_pages/dashboard/system/basics/icons.php:36
+msgid "Windows 8 icon removed successfully."
+msgstr ""
 
 #: concrete/core/controllers/single_pages/dashboard/system/basics/timezone.php:12
 msgid "User time zones have been saved."
@@ -4617,7 +4647,7 @@ msgstr "Fel: Ogiltig jobbfil. Klassen %s hittades inte i %s."
 msgid "Email"
 msgstr "E-postadress"
 
-#: concrete/core/models/page_list.php:466
+#: concrete/core/models/page_list.php:514
 #: concrete/core/models/user_list.php:144
 #: concrete/elements/pages/search_form_advanced.php:9
 #: concrete/single_pages/dashboard/composer/drafts.php:13
@@ -4644,21 +4674,21 @@ msgstr "Fel: inget område kopplat till layout"
 msgid "Unknown User"
 msgstr "Okänd användare"
 
-#: concrete/core/models/page.php:1585
+#: concrete/core/models/page.php:1589
 #, php-format
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "Sidan \"%s\" med sökvägen \"%s\" borttagen"
 
-#: concrete/core/models/page.php:1585 concrete/core/models/page.php:1643
+#: concrete/core/models/page.php:1589 concrete/core/models/page.php:1647
 msgid "Page Action"
 msgstr "Sidoaktivitet"
 
-#: concrete/core/models/page.php:1643
+#: concrete/core/models/page.php:1647
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "Sidan \"%s\" med sökvägen \"%s\" Flyttad till papperskorgen"
 
-#: concrete/core/models/page_list.php:465
+#: concrete/core/models/page_list.php:513
 #: concrete/single_pages/dashboard/reports/forms.php:169
 #: concrete/single_pages/dashboard/reports/surveys.php:23
 #: concrete/single_pages/dashboard/system/backup_restore/backup.php:99
@@ -5958,12 +5988,14 @@ msgstr "Konfigurera resultatsvisningen"
 #: concrete/elements/files/upload_single.php:29
 #: concrete/single_pages/dashboard/system/basics/icons.php:42
 #: concrete/single_pages/dashboard/system/basics/icons.php:105
+#: concrete/single_pages/dashboard/system/basics/icons.php:164
 msgid "Upload File"
 msgstr "Ladda upp fil"
 
 #: concrete/elements/files/upload_single.php:14
 #: concrete/single_pages/dashboard/system/basics/icons.php:54
 #: concrete/single_pages/dashboard/system/basics/icons.php:117
+#: concrete/single_pages/dashboard/system/basics/icons.php:179
 msgid "Upload"
 msgstr "Ladda upp"
 
@@ -7188,6 +7220,7 @@ msgid "Content disabled in edit mode."
 msgstr "Innehåll inaktiverat i redigeringsläge."
 
 #: concrete/elements/custom_style/background.php:7
+#: concrete/single_pages/dashboard/system/basics/icons.php:171
 msgid "Background Color"
 msgstr "Bakgrundsfärg"
 
@@ -9445,7 +9478,7 @@ msgid "Block not found. Unable to edit in composer."
 msgstr "Blocket hittades ej. Kan ej redigera i Composer."
 
 #: concrete/single_pages/dashboard/composer/write.php:145
-#: concrete/single_pages/dashboard/composer/write.php:275
+#: concrete/single_pages/dashboard/composer/write.php:276
 msgid "Publish Page"
 msgstr "Publicera sida"
 
@@ -9461,7 +9494,11 @@ msgstr "Släng"
 msgid "Page saved at "
 msgstr "Sida sparad den"
 
-#: concrete/single_pages/dashboard/composer/write.php:296
+#: concrete/single_pages/dashboard/composer/write.php:225
+msgid "New Page"
+msgstr ""
+
+#: concrete/single_pages/dashboard/composer/write.php:297
 msgid "Discard this draft?"
 msgstr "Släng detta utkast?"
 
@@ -9471,16 +9508,16 @@ msgstr "Släng detta utkast?"
 #: concrete/config/install/disabled/blank/content.xml:140
 #: concrete/config/install/disabled/standard/content.xml:17
 #: concrete/config/install/disabled/standard/content.xml:140
-#: concrete/single_pages/dashboard/composer/write.php:339
+#: concrete/single_pages/dashboard/composer/write.php:340
 #: concrete/single_pages/dashboard/pages/types/view.php:256
 msgid "Composer"
 msgstr "Composer"
 
-#: concrete/single_pages/dashboard/composer/write.php:342
+#: concrete/single_pages/dashboard/composer/write.php:343
 msgid "What type of page would you like to write?"
 msgstr "Vilken typ av sida vill du skapa?"
 
-#: concrete/single_pages/dashboard/composer/write.php:349
+#: concrete/single_pages/dashboard/composer/write.php:350
 msgid "You have not setup any page types for Composer."
 msgstr "Du har ännu inte gjort några sidtyper för Composer."
 
@@ -11335,6 +11372,7 @@ msgstr "Favikon"
 
 #: concrete/single_pages/dashboard/system/basics/icons.php:19
 #: concrete/single_pages/dashboard/system/basics/icons.php:83
+#: concrete/single_pages/dashboard/system/basics/icons.php:140
 msgid "Selected Icon"
 msgstr "Vald ikon"
 
@@ -11351,6 +11389,15 @@ msgstr "iPhone-ikon "
 #: concrete/single_pages/dashboard/system/basics/icons.php:108
 msgid "iPhone home screen icons should be 57x57 and be in the .png format."
 msgstr "iPhone-ikon bör vara 57x57 pixlar och i .png-format."
+
+#: concrete/single_pages/dashboard/system/basics/icons.php:132
+msgid "Windows 8 Thumbnail"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/basics/icons.php:167
+msgid ""
+"Windows 8 start screen tiles should be 144x144 and be in the .png format."
+msgstr ""
 
 #: concrete/single_pages/dashboard/system/basics/timezone.php:19
 msgid "Enable user defined time zones."
