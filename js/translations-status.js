@@ -461,7 +461,7 @@
 			async: true,
 			cache: false,
 			dataType: 'xml',
-			url: baseURL + 'current';
+			url: baseURL + 'current'
 		}).done(function(data) {
 			startup.current = getChildElements(data);
 			startup();
@@ -470,7 +470,7 @@
 			async: true,
 			cache: false,
 			dataType: 'xml',
-			url: baseURL + 'history';
+			url: baseURL + 'history'
 		}).done(function(data) {
 			startup.history = getChildElements(data);
 			startup();
