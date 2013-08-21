@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>concrete5 translation stats</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<style>
+#message {
+	margin-top: 250px;
+	text-align: center;
+}
+#plot {
+	margin-top: 50px;
+}
+#tooltip {
+	text-align: center;
+	position: absolute;
+	display: none;
+	border: 3px solid #333;
+	margin: 0;
+	padding: 3px;
+	background-color: #555;
+	color: #fff;
+	opacity: 0.80;
+	border-radius: 3px;
+}
+.language-color {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+}
+</style>
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top" id="header" style="display: none">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Statistics for <span id="project"></span></a>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav" id="menu">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Draw <b class="caret"></b></a>
+					<ul class="dropdown-menu" id="draw">
+						<li><a href="javascript:;" data-value="percentual"><span class="glyphicon glyphicon-chevron-down" style="visibility: hidden"></span> percentual</a></li>
+						<li><a href="javascript:;" data-value="translated"><span class="glyphicon glyphicon-chevron-down" style="visibility: hidden"></span> absolute</a></li>
+						<li><a href="javascript:;" data-value="untranslated"><span class="glyphicon glyphicon-chevron-down" style="visibility: hidden"></span> untranslated</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div id="message" class="alert alert-info">
+		Loading... Please wait.
+	</div>
+</div>
+<div id="plot"></div>
+<script src="js/jquery.min.js"></script>
+<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/respond.min.js"></script>
+<![endif]-->
+<script src="js/jquery.flot.min.js"></script>
+<script src="js/jquery.flot.time.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/locale.js"></script>
+<script src="js/translations-status.js"></script>
+</body>
+</html>
