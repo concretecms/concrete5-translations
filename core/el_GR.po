@@ -11,9 +11,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2013-08-20 22:00+0000\n"
-"PO-Revision-Date: 2013-08-21 20:20+0000\n"
-"Last-Translator: Vasilis Zboukis <vasilis@minima.net.gr>\n"
+"POT-Creation-Date: 2013-08-23 22:00+0000\n"
+"PO-Revision-Date: 2013-08-24 09:00+0000\n"
+"Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Greek (Greece) (http://www.transifex.com/projects/p/concrete5/language/el_GR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -135,13 +135,13 @@ msgstr "Φθίνουσα"
 #: concrete/single_pages/dashboard/files/sets.php:114
 #: concrete/single_pages/dashboard/pages/themes/customize.php:98
 #: concrete/single_pages/dashboard/pages/themes/view.php:122
-#: concrete/single_pages/dashboard/pages/types/composer.php:186
+#: concrete/single_pages/dashboard/pages/types/composer.php:187
 #: concrete/single_pages/dashboard/pages/types/view.php:191
 #: concrete/single_pages/dashboard/scrapbook/view.php:180
 #: concrete/single_pages/dashboard/scrapbook/view.php:293
 #: concrete/single_pages/dashboard/system/attributes/types.php:32
 #: concrete/single_pages/dashboard/system/basics/editor.php:124
-#: concrete/single_pages/dashboard/system/basics/interface.php:43
+#: concrete/single_pages/dashboard/system/basics/interface.php:45
 #: concrete/single_pages/dashboard/system/basics/multilingual/view.php:40
 #: concrete/single_pages/dashboard/system/basics/site_name.php:15
 #: concrete/single_pages/dashboard/system/basics/timezone.php:26
@@ -598,10 +598,14 @@ msgstr "Σελίδα Προστέθηκε στο"
 msgid "Type"
 msgstr "Τύπος"
 
+#. %s is a number
 #: concrete/tools/files/bulk_properties.php:308
 #: concrete/tools/files/properties.php:249
-msgid "bytes"
-msgstr "bytes"
+#, php-format
+msgid "%s byte"
+msgid_plural "%s bytes"
+msgstr[0] ""
+msgstr[1] ""
 
 #: concrete/elements/pages/search_form_advanced.php:7
 #: concrete/tools/files/properties.php:252 concrete/tools/pages/delete.php:92
@@ -752,7 +756,6 @@ msgstr "Διαγραμμένος Χρήστης"
 msgid "In Set(s)"
 msgstr "Στο Σετ(ς)"
 
-#: concrete/elements/collection_metadata_fields.php:61
 #: concrete/elements/dashboard/attributes_table.php:88
 #: concrete/elements/files/search_form_advanced.php:192
 #: concrete/tools/files/search_sets_reload.php:26
@@ -1087,8 +1090,8 @@ msgstr "Επίπεδη προβολή"
 
 #: concrete/config/install/disabled/standard/content.xml:479
 #: concrete/config/install/packages/standard/content.xml:410
-#: concrete/core/controllers/blocks/search.php:99
-#: concrete/core/controllers/blocks/search.php:109
+#: concrete/core/controllers/blocks/search.php:98
+#: concrete/core/controllers/blocks/search.php:108
 #: concrete/elements/block_area_add_new.php:41
 #: concrete/elements/block_area_add_stack.php:17
 #: concrete/elements/files/search_form_advanced.php:215
@@ -1408,7 +1411,7 @@ msgid ""
 msgstr ""
 
 #: concrete/elements/pane_header.php:9
-#: concrete/helpers/concrete/dashboard.php:175
+#: concrete/helpers/concrete/dashboard.php:187
 #: concrete/themes/dashboard/elements/header_newsflow.php:4
 #: concrete/tools/add_block_popup.php:37 concrete/tools/i18n_js.php:31
 msgid "Close"
@@ -1883,9 +1886,9 @@ msgstr ""
 msgid "An unexpected error occurred."
 msgstr ""
 
-#: concrete/helpers/concrete/dashboard.php:164
-#: concrete/helpers/concrete/dashboard.php:168
-#: concrete/helpers/concrete/dashboard.php:395 concrete/tools/i18n_js.php:55
+#: concrete/helpers/concrete/dashboard.php:176
+#: concrete/helpers/concrete/dashboard.php:180
+#: concrete/helpers/concrete/dashboard.php:407 concrete/tools/i18n_js.php:55
 msgid "Help"
 msgstr "Βοήθεια"
 
@@ -2937,19 +2940,19 @@ msgstr "Συλαμβάνει την τελευταία ειδησεογραφί�
 msgid "Dashboard Newsflow Latest"
 msgstr "Ταμπλό Τελευταίας Ειδησεογραφίας "
 
-#: concrete/core/controllers/blocks/search.php:43
+#: concrete/core/controllers/blocks/search.php:42
 msgid "Please enter your Search Title."
 msgstr "Παρακαλούμε, εισάγετε Τίτλο Αναζήτησης."
 
-#: concrete/core/controllers/blocks/search.php:46
+#: concrete/core/controllers/blocks/search.php:45
 msgid "Please enter your Submit Button Text."
 msgstr "Παρακαλούμε, εισάγετε το κείμενο Κουμπιού Υποβολής σας ."
 
-#: concrete/core/controllers/blocks/search.php:95
+#: concrete/core/controllers/blocks/search.php:94
 msgid "Add a search box to your site."
 msgstr "Προσθέστε ένα πλαίσιο αναζήτησης στο δικτυακό σας τόπο."
 
-#: concrete/core/controllers/blocks/search.php:103
+#: concrete/core/controllers/blocks/search.php:102
 msgid "Please enter a valid search title."
 msgstr "Παρακαλώ εισάγετε έναν έγκυρο τίτλο αναζήτηση."
 
@@ -3567,7 +3570,7 @@ msgstr ""
 #: concrete/core/controllers/single_pages/dashboard/system/optimization/jobs.php:145
 #: concrete/core/controllers/single_pages/dashboard/users/group/sets.php:52
 msgid "Group set deleted successfully."
-msgstr ""
+msgstr "Το Σύνολο Ομάδας έχει διαγραφεί επιτυχώς."
 
 #: concrete/core/controllers/single_pages/dashboard/users/group/sets.php:56
 msgid "Group set updated successfully."
@@ -3623,11 +3626,11 @@ msgstr "Έκδοση concrete5"
 
 #: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:11
 msgid "concrete5 Packages"
-msgstr ""
+msgstr "Πακέτα concrete5 "
 
 #: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:30
 msgid "concrete5 Overrides"
-msgstr ""
+msgstr "Παρακάμψεις concrete5 "
 
 #: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:101
 msgid "Server Software"
@@ -3643,31 +3646,31 @@ msgstr "Έκδοση PHP"
 
 #: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:104
 msgid "PHP Extensions"
-msgstr ""
+msgstr "Επεκτάσεις PHP"
 
 #: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:111
 msgid "Unable to determine."
-msgstr ""
+msgstr "Αδύνατον να προσδιοριστεί."
 
 #: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:129
 msgid "PHP Settings"
-msgstr ""
+msgstr "Ρυθμίσεις PHP "
 
 #: concrete/core/controllers/single_pages/dashboard/system/environment/proxy.php:35
 msgid "Proxy configuration saved."
-msgstr ""
+msgstr "Η διαμόρφωση Proxy αποθηκεύτηκε."
 
 #: concrete/core/controllers/single_pages/dashboard/system/environment/logging.php:21
 msgid "Logging configuration saved."
-msgstr ""
+msgstr "Η διαμόρφωση καταγραφής αποθηκεύτηκε."
 
 #: concrete/core/controllers/single_pages/dashboard/system/environment/file_storage_locations.php:19
 msgid "File storage locations saved."
-msgstr ""
+msgstr "Οι Θέσεις αποθήκευσης Αρχείων έχουν αποθηκευτεί."
 
 #: concrete/core/controllers/single_pages/dashboard/system/environment/debug.php:25
 msgid "Debug configuration saved."
-msgstr ""
+msgstr "Οι ρυθμίσεις Debug αποθηκεύτηκαν."
 
 #: concrete/core/controllers/single_pages/dashboard/system/permissions/ip_blacklist.php:6
 #: concrete/elements/permission/duration.php:190
@@ -3701,11 +3704,11 @@ msgstr ""
 
 #: concrete/core/controllers/single_pages/dashboard/system/permissions/advanced.php:14
 msgid "Advanced permissions enabled."
-msgstr ""
+msgstr "Τα Ειδικά δικαιώματα ενεργοποιήθηκαν."
 
 #: concrete/core/controllers/single_pages/dashboard/system/permissions/antispam.php:9
 msgid "** None Activated"
-msgstr ""
+msgstr "** Κανένα ενεργοποιημένο"
 
 #: concrete/core/controllers/single_pages/dashboard/system/permissions/antispam.php:19
 msgid "Anti-spam settings saved."
@@ -3721,7 +3724,7 @@ msgstr ""
 
 #: concrete/core/controllers/single_pages/dashboard/system/mail/method.php:7
 msgid "Global mail settings saved."
-msgstr ""
+msgstr "Οι Παγκόσμιες ρυθμίσεις αλληλογραφίας αποθηκεύτηκαν."
 
 #: concrete/core/controllers/single_pages/dashboard/reports/forms.php:142
 #: concrete/core/controllers/single_pages/dashboard/reports/forms.php:150
@@ -3733,48 +3736,48 @@ msgstr "Άκυρο διακριτικό."
 
 #: concrete/core/controllers/single_pages/dashboard/system/mail/importers.php:30
 msgid "Importer saved."
-msgstr ""
+msgstr "Ο Εισαγωγέας αποθηκεύτηκε."
 
 #: concrete/core/controllers/single_pages/dashboard/system/backup_restore/backup.php:60
 #, php-format
 msgid "Unable to locate file %s"
-msgstr ""
+msgstr "Αδύνατον να εντοπιστεί το αρχείο %s"
 
 #: concrete/core/controllers/single_pages/dashboard/system/backup_restore/backup.php:80
 #, php-format
 msgid ""
 "Error deleting the file %s. Please check the permissions of the folder %s"
-msgstr ""
+msgstr "Σφάλμα κατά τη διαγραφή του αρχείου %s. Παρακαλώ ελέγξτε τα δικαιώματα του φακέλου %s."
 
 #: concrete/core/controllers/single_pages/dashboard/system/backup_restore/backup.php:99
 msgid "Invalid backup file specified."
-msgstr ""
+msgstr "Ορίσατε μη έγκυρο αρχείο backup."
 
 #: concrete/core/controllers/single_pages/dashboard/system/backup_restore/database.php:27
 msgid "Core database files and installed blocks refreshed."
-msgstr ""
+msgstr "Τα Αρχεία της βάσης δεδομένων πυρήνα και τα εγκατεστημένα μπλοκ ανανεώθηκαν."
 
 #: concrete/core/controllers/single_pages/dashboard/system/backup_restore/database.php:38
 msgid "Local database file refreshed."
-msgstr ""
+msgstr "Τα αρχεία της τοπικής βάσης δεδομένων ανανεώθηκαν."
 
 #: concrete/core/controllers/single_pages/dashboard/system/backup_restore/database.php:47
 msgid "You must choose an option to refresh."
-msgstr ""
+msgstr "Πρέπει να επιλέξετε μια επιλογή για να ανανεώσετε."
 
 #: concrete/core/controllers/single_pages/dashboard/system/backup_restore/update.php:82
 #, php-format
 msgid "The directory %s does not exist."
-msgstr ""
+msgstr "Ο φάκελος %s δεν υπάρχει."
 
 #: concrete/core/controllers/single_pages/dashboard/system/backup_restore/update.php:84
 #, php-format
 msgid "The directory %s must be writable by the web server."
-msgstr ""
+msgstr "Ο φάκελος %s πρέπει να είναι εγγράψιμος από τον web server."
 
 #: concrete/core/controllers/single_pages/dashboard/system/backup_restore/update.php:118
 msgid "Unable to retrieve software from update server."
-msgstr ""
+msgstr "Δεν είναι δυνατή η ανάκτηση του λογισμικού από το διακομιστή ενημέρωσης."
 
 #: concrete/core/controllers/single_pages/dashboard/system/backup_restore/update.php:127
 #: concrete/core/controllers/single_pages/dashboard/system/backup_restore/update.php:133
@@ -3785,13 +3788,13 @@ msgstr "Μη έγκυρη έκδοση"
 msgid ""
 "You may only apply updates with a greater version number than the version "
 "you are currently running."
-msgstr ""
+msgstr "Μπορείτε να εφαρμόσετε μόνο ενημερώσεις με μεγαλύτερο αριθμό έκδοσης από την έκδοση που τρέχετε ήδη."
 
 #: concrete/core/controllers/single_pages/dashboard/system/backup_restore/update.php:145
 msgid ""
 "Unable to write to config/site.php. You must make config/site.php writable "
 "in order to upgrade in this manner."
-msgstr ""
+msgstr "Αδύνατη η εγγραφή στο config/site.php. Πρέπει να δώσετε στο config/site.php δυνατότητα εγγραφής, προκειμένου να αναβαθμιστεί με αυτόν τον τρόπο."
 
 #: concrete/core/controllers/single_pages/dashboard/system/attributes/sets.php:39
 msgid "Attribute set added."
@@ -3835,7 +3838,7 @@ msgstr "Μη έγκυρο Σύνολο χαρακτηριστικών."
 msgid ""
 "This attribute set is locked. That means it was added by a package and "
 "cannot be manually removed."
-msgstr ""
+msgstr "Αυτό το Σύνολο Χαρακτηριστικών είναι κλειδωμένο. Αυτό σημαίνει ότι προστέθηκε μαζί με ένα Πακέτο και γι αυτό δεν μπορεί να διαγραφεί."
 
 #: concrete/core/controllers/single_pages/dashboard/system/registration/postlogin.php:38
 msgid "Login redirection saved."
@@ -3859,11 +3862,11 @@ msgstr "Το όνομα της ιστοσελίδας σας έχει αποθη
 
 #: concrete/core/controllers/single_pages/dashboard/system/basics/icons.php:11
 msgid "Icons updated successfully."
-msgstr ""
+msgstr "Τα Εικονίδια ενημερώθηκαν με επιτυχία."
 
 #: concrete/core/controllers/single_pages/dashboard/system/basics/icons.php:16
 msgid "Icon removed successfully."
-msgstr ""
+msgstr "Τα Εικονίδια αφαιρέθηκαν με επιτυχία."
 
 #: concrete/core/controllers/single_pages/dashboard/system/basics/icons.php:21
 msgid "iPhone icon updated successfully."
@@ -3871,113 +3874,113 @@ msgstr "Το εικονίδιο για το iPhone ενημερώθηκε με �
 
 #: concrete/core/controllers/single_pages/dashboard/system/basics/icons.php:26
 msgid "iPhone icon removed successfully."
-msgstr ""
+msgstr "Το εικονίδιο για iPhone αφαιρέθηκε με επιτυχία."
 
 #: concrete/core/controllers/single_pages/dashboard/system/basics/icons.php:31
 msgid "Windows 8 icon updated successfully."
-msgstr ""
+msgstr "Το εικονίδιο Windows 8 ενημερώθηκε με επιτυχία."
 
 #: concrete/core/controllers/single_pages/dashboard/system/basics/icons.php:36
 msgid "Windows 8 icon removed successfully."
-msgstr ""
+msgstr "Το εικονίδιο Windows 8  αφαιρέθηκε με επιτυχία."
 
 #: concrete/core/controllers/single_pages/dashboard/system/basics/timezone.php:12
 msgid "User time zones have been saved."
-msgstr ""
+msgstr "Οι ζώνες ώρας χρήστη έχουν αποθηκευτεί."
 
 #: concrete/core/controllers/single_pages/dashboard/system/basics/timezone.php:20
 msgid "User time zones have been enabled"
-msgstr ""
+msgstr "Οι ζώνες ώρας χρήστη έχουν ενεργοποιηθεί"
 
 #: concrete/core/controllers/single_pages/dashboard/system/basics/timezone.php:20
 msgid "User time zones have been disabled."
-msgstr ""
+msgstr "Οι ζώνες ώρας χρήστη έχει απενεργοποιηθεί."
 
 #: concrete/core/controllers/single_pages/dashboard/system/basics/editor.php:38
 msgid "Content text editor settings saved."
-msgstr ""
+msgstr "Οι ρυθμίσεις του επεξεργαστή κειμένου περιεχομένου αποθηκεύτηκαν."
 
 #: concrete/core/controllers/single_pages/dashboard/system/basics/editor.php:52
 msgid "The editor must be at least 580 pixels wide."
-msgstr ""
+msgstr "Ο επεξεργαστής πρέπει να έχει τουλάχιστον 580 pixels πλάτος."
 
 #: concrete/core/controllers/single_pages/dashboard/system/basics/editor.php:56
 msgid "The editor must be at least 100 pixels tall."
-msgstr ""
+msgstr "Ο επεξεργαστής πρέπει να έχει τουλάχιστον 100 pixels ύψος."
 
 #: concrete/core/controllers/single_pages/dashboard/system/basics/interface.php:22
 msgid "concrete5 interface settings saved successfully."
-msgstr ""
+msgstr "Οι ρυθμίσεις διασύνδεσης concrete5 αποθηκεύτηκαν με επιτυχία."
 
 #: concrete/core/controllers/single_pages/dashboard/system/basics/multilingual.php:31
 msgid ""
 "Interface settings saved. Please log out and in again to update all backend "
 "messages."
-msgstr ""
+msgstr "Ρυθμίσεις Interface αποθηκεύτηκαν. Παρακαλούμε αποσυνδεθείτε και πάλι για να ενημερώσετε όλα τα μηνύματα backend."
 
 #: concrete/core/controllers/single_pages/dashboard/system/optimization/cache.php:31
 msgid "Cache settings saved."
-msgstr ""
+msgstr "Οι Ρυθμίσεις Cache αποθηκεύτηκαν."
 
 #: concrete/core/controllers/single_pages/dashboard/system/optimization/clear_cache.php:23
 msgid "Cached files removed."
-msgstr ""
+msgstr "Τα Αποθηκευμένα αρχεία αφαιρέθηκαν."
 
 #: concrete/core/controllers/single_pages/dashboard/system/optimization/jobs.php:27
 #: concrete/core/controllers/single_pages/dashboard/system/optimization/jobs.php:47
 msgid "No job specified."
-msgstr ""
+msgstr "Δεν έχει οριστεί δουλειά."
 
 #: concrete/core/controllers/single_pages/dashboard/system/optimization/jobs.php:41
 msgid "This job cannot be uninstalled."
-msgstr ""
+msgstr "Αυτή η δουλειά δεν μπορεί να απεγκατασταθεί."
 
 #: concrete/core/controllers/single_pages/dashboard/system/optimization/jobs.php:44
 msgid "Job not found."
-msgstr ""
+msgstr "Η δουλειά δεν βρέθηκε."
 
 #: concrete/core/controllers/single_pages/dashboard/system/optimization/jobs.php:53
 msgid "Job succesfully uninstalled."
-msgstr ""
+msgstr "Η δουλειά απεγκαταστάθηκε με επιτυχία ."
 
 #: concrete/core/controllers/single_pages/dashboard/system/optimization/jobs.php:58
 msgid "Job succesfully installed."
-msgstr ""
+msgstr "Η δουλειά εγκαταστάθηκε με επιτυχία ."
 
 #: concrete/core/controllers/single_pages/dashboard/system/optimization/jobs.php:71
 msgid "All running jobs have been reset."
-msgstr ""
+msgstr "Όλες οι τρέχουσες εργασίες έχουν μηδενιστεί."
 
 #: concrete/core/controllers/single_pages/dashboard/system/optimization/jobs.php:76
 msgid "Job set added."
-msgstr ""
+msgstr "Το Σύνολο Εργασιών προστέθηκε. "
 
 #: concrete/core/controllers/single_pages/dashboard/system/optimization/jobs.php:94
 #: concrete/core/controllers/single_pages/dashboard/system/optimization/jobs.php:126
 #: concrete/core/controllers/single_pages/dashboard/system/optimization/jobs.php:157
 msgid "Invalid Job set."
-msgstr ""
+msgstr "Άκυρο Σύνολο Εργασιών."
 
 #: concrete/core/controllers/single_pages/dashboard/system/optimization/jobs.php:118
 msgid "Job Set updated successfully."
-msgstr ""
+msgstr "Το Σύνολο Εργασιών ενημερώθηκε με επιτυχία."
 
 #: concrete/core/controllers/single_pages/dashboard/system/optimization/jobs.php:129
 #: concrete/core/controllers/single_pages/dashboard/system/optimization/jobs.php:173
 msgid "Specify a name for your Job set."
-msgstr ""
+msgstr "Καθορίστε ένα όνομα για το Σύνολο Εργασιών σας."
 
 #: concrete/core/controllers/single_pages/dashboard/system/optimization/jobs.php:153
 msgid "You cannot delete the default Job set."
-msgstr ""
+msgstr "Δεν μπορείτε να διαγράψετε το Προεπιλεγμένο Σύνολο Εργασιών."
 
 #: concrete/core/controllers/single_pages/dashboard/system/optimization/jobs.php:202
 msgid "Job schedule updated successfully."
-msgstr ""
+msgstr "Το Πρόγραμμα Εργασιών ενημερώθηκε με επιτυχία."
 
 #: concrete/core/controllers/single_pages/dashboard/system/optimization/jobs.php:216
 msgid "Job Set schedule updated successfully."
-msgstr ""
+msgstr "Το Πρόγραμμα Συνόλου Εργασιών ενημερώθηκε με επιτυχία."
 
 #: concrete/config/install/base/dashboard.xml:226
 #: concrete/config/install/disabled/blank/content.xml:38
@@ -4224,12 +4227,12 @@ msgstr "Δεν είναι δυνατή η δημιουργία προσωριν�
 #: concrete/core/controllers/single_pages/upgrade.php:279
 #, php-format
 msgid "An Unexpected Error occurred while upgrading: %s"
-msgstr ""
+msgstr " μη αναμενόμενο σφάλμα παρουσιάστηκε κατά την αναβάθμιση: %s"
 
 #: concrete/core/controllers/single_pages/upgrade.php:283
 #, php-format
 msgid "Upgrade to <b>%s</b> complete!"
-msgstr ""
+msgstr "Η Αναβάθμιση σε <b>%s</b> ολοκληρώθηκε!"
 
 #: concrete/core/controllers/single_pages/login.php:47
 #: concrete/single_pages/dashboard/users/add.php:63
@@ -4418,7 +4421,7 @@ msgstr ""
 #. has been executed.
 #: concrete/core/jobs/remove_old_page_versions.php:55
 #, php-format
-msgid "%1$d versions deleted from %2$d page (%3$d)"
+msgid "%1$d versions deleted from %2$d page (%3$s)"
 msgid_plural "%1$d versions deleted from %2$d pages (%3$s)"
 msgstr[0] ""
 msgstr[1] ""
@@ -4610,7 +4613,7 @@ msgid "Active"
 msgstr "Ενεργό"
 
 #: concrete/core/models/page_theme.php:580
-#: concrete/helpers/concrete/dashboard.php:268
+#: concrete/helpers/concrete/dashboard.php:280
 msgid "(No Name)"
 msgstr ""
 
@@ -5771,7 +5774,7 @@ msgid "Set"
 msgstr "Σετ"
 
 #: concrete/elements/attribute/type_form_required.php:68
-#: concrete/models/attribute/types/select/form.php:108
+#: concrete/models/attribute/types/select/form.php:157
 msgid "** None"
 msgstr "**Κανένα"
 
@@ -5826,7 +5829,7 @@ msgstr ""
 #: concrete/elements/pages/search_form_advanced.php:167
 #: concrete/elements/permission/access/list.php:12
 #: concrete/elements/users/search_form_advanced.php:115
-#: concrete/models/attribute/types/select/form.php:44
+#: concrete/models/attribute/types/select/form.php:74
 #: concrete/models/attribute/types/select/type_form.php:107
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:200
 #: concrete/single_pages/dashboard/files/add_set.php:18
@@ -6070,7 +6073,7 @@ msgstr "Επεξεργασία εργαλειοθήκης"
 #: concrete/blocks/dashboard_featured_theme/view.php:10
 #: concrete/elements/block_header_add.php:59
 #: concrete/elements/block_header_edit.php:61
-#: concrete/helpers/concrete/dashboard.php:160
+#: concrete/helpers/concrete/dashboard.php:172
 msgid "Learn More"
 msgstr "Μάθε Περισσότερα"
 
@@ -7116,7 +7119,7 @@ msgstr ""
 #: concrete/config/install/base/dashboard.xml:300
 #: concrete/elements/permission/detail.php:31
 #: concrete/elements/permission/detail.php:79
-#: concrete/helpers/concrete/upgrade/version_560.php:135
+#: concrete/helpers/concrete/upgrade/version_560.php:140
 #: concrete/single_pages/dashboard/workflow/list.php:100
 msgid "Workflow"
 msgstr "Ροή εργασιών"
@@ -7382,6 +7385,11 @@ msgstr ""
 #: concrete/elements/custom_style/css.php:21
 msgid "Additional CSS"
 msgstr ""
+
+#: concrete/elements/collection_metadata_fields.php:61
+msgctxt "AttributeSetName"
+msgid "Other"
+msgstr "Άλλα"
 
 #: concrete/elements/collection_metadata_fields.php:82
 msgid "Selected Attributes"
@@ -7791,7 +7799,16 @@ msgstr ""
 msgid "Text Input Field"
 msgstr ""
 
-#: concrete/models/attribute/types/select/form.php:120
+#: concrete/models/attribute/types/select/form.php:10
+msgid "Remove Option"
+msgstr ""
+
+#: concrete/models/attribute/types/select/form.php:41
+msgid "Selected Options"
+msgstr ""
+
+#: concrete/models/attribute/types/select/form.php:169
+#: concrete/models/attribute/types/select/form.php:170
 msgid "Add Another Option"
 msgstr ""
 
@@ -9939,23 +9956,23 @@ msgstr ""
 #: concrete/config/install/disabled/standard/content.xml:433
 #: concrete/config/install/packages/blank/content.xml:7
 #: concrete/config/install/packages/standard/content.xml:222
-#: concrete/helpers/concrete/dashboard.php:437
+#: concrete/helpers/concrete/dashboard.php:449
 #: concrete/single_pages/dashboard/system/view.php:45
 #: concrete/single_pages/dashboard/view.php:42
 msgid "Home"
 msgstr "Κεντρική"
 
-#: concrete/helpers/concrete/dashboard.php:504
+#: concrete/helpers/concrete/dashboard.php:516
 #: concrete/single_pages/dashboard/view.php:63
 msgid "News"
 msgstr "Νέα"
 
-#: concrete/helpers/concrete/dashboard.php:504
+#: concrete/helpers/concrete/dashboard.php:516
 #: concrete/single_pages/dashboard/view.php:63
 msgid "Learn about your site and concrete5."
 msgstr ""
 
-#: concrete/helpers/concrete/dashboard.php:508
+#: concrete/helpers/concrete/dashboard.php:520
 #: concrete/single_pages/dashboard/system/seo/view.php:1
 #: concrete/single_pages/dashboard/system/view.php:4
 #: concrete/single_pages/dashboard/view.php:69
@@ -9965,7 +9982,7 @@ msgstr ""
 #: concrete/config/install/base/dashboard.xml:425
 #: concrete/config/install/disabled/blank/content.xml:73
 #: concrete/config/install/disabled/standard/content.xml:73
-#: concrete/helpers/concrete/dashboard.php:508
+#: concrete/helpers/concrete/dashboard.php:520
 #: concrete/single_pages/dashboard/view.php:69
 msgid "Secure and setup your site."
 msgstr "Ασφαλίστε και ρυθμίστε το site σας"
@@ -9973,12 +9990,12 @@ msgstr "Ασφαλίστε και ρυθμίστε το site σας"
 #: concrete/config/install/base/dashboard.xml:366
 #: concrete/config/install/disabled/blank/content.xml:61
 #: concrete/config/install/disabled/standard/content.xml:61
-#: concrete/helpers/concrete/dashboard.php:512
+#: concrete/helpers/concrete/dashboard.php:524
 #: concrete/single_pages/dashboard/view.php:76
 msgid "Extend concrete5"
 msgstr "Επεκτείνετε το concrete5"
 
-#: concrete/helpers/concrete/dashboard.php:514
+#: concrete/helpers/concrete/dashboard.php:526
 #: concrete/single_pages/dashboard/view.php:78
 #, php-format
 msgid ""
@@ -9986,7 +10003,7 @@ msgid ""
 "href=\"%s\">themes</a> and <a href=\"%s\">add-ons</a>."
 msgstr ""
 
-#: concrete/helpers/concrete/dashboard.php:520
+#: concrete/helpers/concrete/dashboard.php:532
 #: concrete/single_pages/dashboard/view.php:84
 #, php-format
 msgid "<a href=\"%s\">Install</a> or <a href=\"%s\">update</a> packages."
@@ -10046,7 +10063,7 @@ msgstr ""
 msgid "Internal Block Types"
 msgstr ""
 
-#: concrete/helpers/concrete/upgrade/version_560.php:124
+#: concrete/helpers/concrete/upgrade/version_560.php:129
 #: concrete/single_pages/dashboard/blocks/permissions.php:8
 msgid "Block &amp; Stack Permissions"
 msgstr ""
@@ -10104,7 +10121,7 @@ msgid "No stacks have been added."
 msgstr ""
 
 #: concrete/config/install/base/dashboard.xml:314
-#: concrete/helpers/concrete/upgrade/version_560.php:144
+#: concrete/helpers/concrete/upgrade/version_560.php:149
 #: concrete/single_pages/dashboard/workflow/me.php:3
 msgid "Waiting for Me"
 msgstr "Αναμονή για μένα"
@@ -10232,7 +10249,7 @@ msgid "Update Groups"
 msgstr ""
 
 #: concrete/config/install/base/dashboard.xml:179
-#: concrete/helpers/concrete/upgrade/version_560.php:107
+#: concrete/helpers/concrete/upgrade/version_560.php:112
 #: concrete/single_pages/dashboard/users/group_sets.php:106
 msgid "Group Sets"
 msgstr "Σύνολα Ομάδων"
@@ -10400,7 +10417,7 @@ msgid "Registration Data"
 msgstr "Πληροφορίες Εγγραφής"
 
 #: concrete/config/install/base/dashboard.xml:489
-#: concrete/helpers/concrete/upgrade/version_560.php:113
+#: concrete/helpers/concrete/upgrade/version_560.php:118
 #: concrete/single_pages/dashboard/system/seo/bulk_seo_tool.php:2
 msgid "Bulk SEO Updater"
 msgstr "Μαζική ενημέρωση SEO "
@@ -10836,7 +10853,7 @@ msgid "Disabled"
 msgstr "Ανενεργό"
 
 #: concrete/config/install/base/dashboard.xml:578
-#: concrete/helpers/concrete/upgrade/version_560.php:130
+#: concrete/helpers/concrete/upgrade/version_560.php:135
 #: concrete/single_pages/dashboard/system/permissions/advanced.php:5
 msgid "Advanced Permissions"
 msgstr "Ειδικές άδειες"
@@ -10903,7 +10920,7 @@ msgid "Task Permissions"
 msgstr "Δικαιώματα εργασίας"
 
 #: concrete/config/install/base/dashboard.xml:576
-#: concrete/helpers/concrete/upgrade/version_560.php:119
+#: concrete/helpers/concrete/upgrade/version_560.php:124
 #: concrete/single_pages/dashboard/system/permissions/users.php:7
 msgid "User Permissions"
 msgstr "Δικαιώματα χρηστών"
@@ -11460,6 +11477,10 @@ msgstr ""
 msgid "Specify Custom Image"
 msgstr ""
 
+#: concrete/single_pages/dashboard/system/basics/interface.php:40
+msgid "Options disabled, interface settings are specified in config/site.php."
+msgstr ""
+
 #: concrete/helpers/concrete/upgrade/version_542.php:37
 #: concrete/single_pages/dashboard/system/basics/multilingual/view.php:3
 msgid "Multilingual Setup"
@@ -11889,44 +11910,48 @@ msgstr ""
 msgid "(User ID: %s)"
 msgstr ""
 
-#: concrete/single_pages/dashboard/pages/types/composer.php:28
+#: concrete/single_pages/dashboard/pages/types/composer.php:25
+msgid "Page type"
+msgstr ""
+
+#: concrete/single_pages/dashboard/pages/types/composer.php:29
 msgid "Included in Composer?"
 msgstr ""
 
-#: concrete/single_pages/dashboard/pages/types/composer.php:36
+#: concrete/single_pages/dashboard/pages/types/composer.php:37
 msgid "Yes, include this page type in Composer."
 msgstr ""
 
-#: concrete/single_pages/dashboard/pages/types/composer.php:46
+#: concrete/single_pages/dashboard/pages/types/composer.php:47
 msgid "Composer Publishing Settings"
 msgstr ""
 
-#: concrete/single_pages/dashboard/pages/types/composer.php:55
+#: concrete/single_pages/dashboard/pages/types/composer.php:56
 msgid "Choose from all pages when publishing."
 msgstr ""
 
-#: concrete/single_pages/dashboard/pages/types/composer.php:60
+#: concrete/single_pages/dashboard/pages/types/composer.php:61
 msgid "Choose from pages of a certain type when publishing."
 msgstr ""
 
-#: concrete/single_pages/dashboard/pages/types/composer.php:75
+#: concrete/single_pages/dashboard/pages/types/composer.php:76
 msgid "Always publish below a certain page."
 msgstr ""
 
-#: concrete/single_pages/dashboard/pages/types/composer.php:93
+#: concrete/single_pages/dashboard/pages/types/composer.php:94
 msgid "Attributes to Display in Composer"
 msgstr ""
 
-#: concrete/single_pages/dashboard/pages/types/composer.php:140
+#: concrete/single_pages/dashboard/pages/types/composer.php:141
 msgid "Composer Content Order"
 msgstr ""
 
-#: concrete/single_pages/dashboard/pages/types/composer.php:187
-#: concrete/single_pages/dashboard/pages/types/composer.php:246
+#: concrete/single_pages/dashboard/pages/types/composer.php:188
+#: concrete/single_pages/dashboard/pages/types/composer.php:247
 msgid "Back to Page Types"
 msgstr ""
 
-#: concrete/single_pages/dashboard/pages/types/composer.php:242
+#: concrete/single_pages/dashboard/pages/types/composer.php:243
 msgid "Unable to access composer settings."
 msgstr ""
 
@@ -12035,7 +12060,7 @@ msgstr "Επιθεωρήση"
 #: concrete/config/install/base/dashboard.xml:261
 #: concrete/config/install/disabled/blank/content.xml:43
 #: concrete/config/install/disabled/standard/content.xml:43
-#: concrete/helpers/concrete/dashboard.php:380
+#: concrete/helpers/concrete/dashboard.php:392
 #: concrete/single_pages/dashboard/pages/themes/view.php:93
 msgid "Customize"
 msgstr "Προσαρμογή"
@@ -12524,43 +12549,43 @@ msgstr "Επιλογή Γλώσσας "
 msgid "%s more to display. <a href=\"%s\">View All</a>"
 msgstr ""
 
-#: concrete/helpers/concrete/dashboard.php:134
+#: concrete/helpers/concrete/dashboard.php:146
 #, php-format
 msgid "&lt; Back to %s"
 msgstr "&lt; Πίσω σε %s"
 
-#: concrete/helpers/concrete/dashboard.php:172
+#: concrete/helpers/concrete/dashboard.php:184
 msgid "Add to Favorites"
 msgstr ""
 
-#: concrete/helpers/concrete/dashboard.php:264
+#: concrete/helpers/concrete/dashboard.php:276
 msgid "Recent"
 msgstr "Πρόσφατο"
 
-#: concrete/helpers/concrete/dashboard.php:344
+#: concrete/helpers/concrete/dashboard.php:356
 msgid "View All"
 msgstr ""
 
-#: concrete/helpers/concrete/dashboard.php:376
+#: concrete/helpers/concrete/dashboard.php:388
 msgid "Dashboard Home"
 msgstr ""
 
 #: concrete/config/install/base/dashboard.xml:825
 #: concrete/config/install/disabled/blank/content.xml:220
 #: concrete/config/install/disabled/standard/content.xml:382
-#: concrete/helpers/concrete/dashboard.php:380
+#: concrete/helpers/concrete/dashboard.php:392
 msgid "Customize Dashboard Home"
 msgstr "Προσαρμογή Αρχικής σελίδας Ταμπλό"
 
-#: concrete/helpers/concrete/dashboard.php:388
+#: concrete/helpers/concrete/dashboard.php:400
 msgid "Your Site"
 msgstr "Το site σου"
 
-#: concrete/helpers/concrete/dashboard.php:403
+#: concrete/helpers/concrete/dashboard.php:415
 msgid "Add-Ons"
 msgstr "Προσθήκες"
 
-#: concrete/helpers/concrete/dashboard.php:535
+#: concrete/helpers/concrete/dashboard.php:547
 msgid "View Full Dashboard"
 msgstr ""
 
@@ -12851,25 +12876,25 @@ msgid "Newsflow"
 msgstr ""
 
 #: concrete/config/install/base/dashboard.xml:712
-#: concrete/helpers/concrete/upgrade/version_560.php:149
+#: concrete/helpers/concrete/upgrade/version_560.php:154
 msgid "Proxy Server"
 msgstr "Διακομιστής Διαμεσολάβησης"
 
 #. Keywords for page /dashboard/composer
 #: concrete/config/install/base/dashboard.xml:8
-#: concrete/helpers/concrete/upgrade/version_560.php:153
+#: concrete/helpers/concrete/upgrade/version_560.php:158
 msgid "blog, blogging"
 msgstr ""
 
 #. Keywords for page /dashboard/composer/write
 #: concrete/config/install/base/dashboard.xml:18
-#: concrete/helpers/concrete/upgrade/version_560.php:154
+#: concrete/helpers/concrete/upgrade/version_560.php:159
 msgid "new blog, write blog, blogging"
 msgstr ""
 
 #. Keywords for page /dashboard/composer/drafts
 #: concrete/config/install/base/dashboard.xml:28
-#: concrete/helpers/concrete/upgrade/version_560.php:155
+#: concrete/helpers/concrete/upgrade/version_560.php:160
 msgid "blog drafts, composer"
 msgstr ""
 
@@ -12877,26 +12902,26 @@ msgstr ""
 #. Keywords for page /dashboard/sitemap
 #: concrete/config/install/base/dashboard.xml:38
 #: concrete/config/install/base/dashboard.xml:45
-#: concrete/helpers/concrete/upgrade/version_560.php:156
-#: concrete/helpers/concrete/upgrade/version_560.php:157
+#: concrete/helpers/concrete/upgrade/version_560.php:161
+#: concrete/helpers/concrete/upgrade/version_560.php:162
 msgid "pages, add page, delete page, copy, move, alias"
 msgstr ""
 
 #. Keywords for page /dashboard/sitemap/explore
 #: concrete/config/install/base/dashboard.xml:55
-#: concrete/helpers/concrete/upgrade/version_560.php:158
+#: concrete/helpers/concrete/upgrade/version_560.php:163
 msgid "pages, add page, delete page, copy, move, alias, bulk"
 msgstr ""
 
 #. Keywords for page /dashboard/sitemap/search
 #: concrete/config/install/base/dashboard.xml:65
-#: concrete/helpers/concrete/upgrade/version_560.php:159
+#: concrete/helpers/concrete/upgrade/version_560.php:164
 msgid "find page, search page, search, find, pages, sitemap"
 msgstr ""
 
 #. Keywords for page /dashboard/files/search
 #: concrete/config/install/base/dashboard.xml:76
-#: concrete/helpers/concrete/upgrade/version_560.php:160
+#: concrete/helpers/concrete/upgrade/version_560.php:165
 msgid ""
 "add file, delete file, copy, move, alias, resize, crop, rename, images, "
 "title, attribute"
@@ -12904,25 +12929,25 @@ msgstr ""
 
 #. Keywords for page /dashboard/files/attributes
 #: concrete/config/install/base/dashboard.xml:86
-#: concrete/helpers/concrete/upgrade/version_560.php:161
+#: concrete/helpers/concrete/upgrade/version_560.php:166
 msgid "file, file attributes, title, attribute, description, rename"
 msgstr ""
 
 #. Keywords for page /dashboard/files/sets
 #: concrete/config/install/base/dashboard.xml:96
-#: concrete/helpers/concrete/upgrade/version_560.php:162
+#: concrete/helpers/concrete/upgrade/version_560.php:167
 msgid "files, category, categories"
 msgstr ""
 
 #. Keywords for page /dashboard/files/add_set
 #: concrete/config/install/base/dashboard.xml:109
-#: concrete/helpers/concrete/upgrade/version_560.php:163
+#: concrete/helpers/concrete/upgrade/version_560.php:168
 msgid "new file set"
 msgstr ""
 
 #. Keywords for page /dashboard/users
 #: concrete/config/install/base/dashboard.xml:119
-#: concrete/helpers/concrete/upgrade/version_560.php:164
+#: concrete/helpers/concrete/upgrade/version_560.php:169
 msgid ""
 "users, groups, people, find, delete user, remove user, change password, "
 "password"
@@ -12930,122 +12955,122 @@ msgstr ""
 
 #. Keywords for page /dashboard/users/search
 #: concrete/config/install/base/dashboard.xml:126
-#: concrete/helpers/concrete/upgrade/version_560.php:165
+#: concrete/helpers/concrete/upgrade/version_560.php:170
 msgid ""
 "find, search, people, delete user, remove user, change password, password"
 msgstr ""
 
 #. Keywords for page /dashboard/users/groups
 #: concrete/config/install/base/dashboard.xml:136
-#: concrete/helpers/concrete/upgrade/version_560.php:166
+#: concrete/helpers/concrete/upgrade/version_560.php:171
 msgid "user, group, people, permissions, access, expire"
 msgstr ""
 
 #. Keywords for page /dashboard/users/attributes
 #: concrete/config/install/base/dashboard.xml:146
-#: concrete/helpers/concrete/upgrade/version_560.php:167
+#: concrete/helpers/concrete/upgrade/version_560.php:172
 msgid "user attributes, user data, gather data, registration data"
 msgstr ""
 
 #. Keywords for page /dashboard/users/add
 #: concrete/config/install/base/dashboard.xml:156
-#: concrete/helpers/concrete/upgrade/version_560.php:168
+#: concrete/helpers/concrete/upgrade/version_560.php:173
 msgid "new user, create"
 msgstr ""
 
 #. Keywords for page /dashboard/users/add_group
 #: concrete/config/install/base/dashboard.xml:169
-#: concrete/helpers/concrete/upgrade/version_560.php:169
+#: concrete/helpers/concrete/upgrade/version_560.php:174
 msgid "new user group, new group, group, create"
 msgstr ""
 
 #. Keywords for page /dashboard/users/group_sets
 #: concrete/config/install/base/dashboard.xml:182
-#: concrete/helpers/concrete/upgrade/version_560.php:170
+#: concrete/helpers/concrete/upgrade/version_560.php:175
 msgid "group set"
 msgstr ""
 
 #. Keywords for page /dashboard/reports
 #: concrete/config/install/base/dashboard.xml:192
-#: concrete/helpers/concrete/upgrade/version_560.php:171
+#: concrete/helpers/concrete/upgrade/version_560.php:176
 msgid "forms, log, error, email, mysql, exception, survey"
 msgstr ""
 
 #. Keywords for page /dashboard/reports/statistics
 #: concrete/config/install/base/dashboard.xml:199
-#: concrete/helpers/concrete/upgrade/version_560.php:172
+#: concrete/helpers/concrete/upgrade/version_560.php:177
 msgid "hits, pageviews, visitors, activity"
 msgstr ""
 
 #. Keywords for page /dashboard/reports/forms
 #: concrete/config/install/base/dashboard.xml:209
-#: concrete/helpers/concrete/upgrade/version_560.php:173
+#: concrete/helpers/concrete/upgrade/version_560.php:178
 msgid "forms, questions, response, data"
 msgstr ""
 
 #. Keywords for page /dashboard/reports/surveys
 #: concrete/config/install/base/dashboard.xml:219
-#: concrete/helpers/concrete/upgrade/version_560.php:174
+#: concrete/helpers/concrete/upgrade/version_560.php:179
 msgid "questions, quiz, response"
 msgstr ""
 
 #. Keywords for page /dashboard/reports/logs
 #: concrete/config/install/base/dashboard.xml:229
-#: concrete/helpers/concrete/upgrade/version_560.php:175
+#: concrete/helpers/concrete/upgrade/version_560.php:180
 msgid "forms, log, error, email, mysql, exception, survey, history"
 msgstr ""
 
 #. Keywords for page /dashboard/pages/themes
 #: concrete/config/install/base/dashboard.xml:240
-#: concrete/helpers/concrete/upgrade/version_560.php:176
+#: concrete/helpers/concrete/upgrade/version_560.php:181
 msgid "new theme, theme, active theme, change theme, template, css"
 msgstr ""
 
 #. Keywords for page /dashboard/pages/themes/add
 #: concrete/config/install/base/dashboard.xml:250
-#: concrete/helpers/concrete/upgrade/version_560.php:177
+#: concrete/helpers/concrete/upgrade/version_560.php:182
 msgid "theme"
 msgstr ""
 
 #. Keywords for page /dashboard/pages/themes/inspect
 #: concrete/config/install/base/dashboard.xml:257
-#: concrete/helpers/concrete/upgrade/version_560.php:178
+#: concrete/helpers/concrete/upgrade/version_560.php:183
 msgid "page types"
 msgstr ""
 
 #. Keywords for page /dashboard/pages/themes/customize
 #: concrete/config/install/base/dashboard.xml:264
-#: concrete/helpers/concrete/upgrade/version_560.php:179
+#: concrete/helpers/concrete/upgrade/version_560.php:184
 msgid "custom theme, change theme, custom css, css"
 msgstr ""
 
 #. Keywords for page /dashboard/pages/types
 #: concrete/config/install/base/dashboard.xml:271
-#: concrete/helpers/concrete/upgrade/version_560.php:180
+#: concrete/helpers/concrete/upgrade/version_560.php:185
 msgid "page type defaults, global block, global area, starter, template"
 msgstr ""
 
 #. Keywords for page /dashboard/pages/attributes
 #: concrete/config/install/base/dashboard.xml:282
-#: concrete/helpers/concrete/upgrade/version_560.php:181
+#: concrete/helpers/concrete/upgrade/version_560.php:186
 msgid "page attributes, custom"
 msgstr ""
 
 #. Keywords for page /dashboard/pages/single
 #: concrete/config/install/base/dashboard.xml:292
-#: concrete/helpers/concrete/upgrade/version_560.php:182
+#: concrete/helpers/concrete/upgrade/version_560.php:187
 msgid "single, page, custom, application"
 msgstr ""
 
 #. Keywords for page /dashboard/workflow
 #: concrete/config/install/base/dashboard.xml:303
-#: concrete/helpers/concrete/upgrade/version_560.php:183
+#: concrete/helpers/concrete/upgrade/version_560.php:188
 msgid "add workflow, remove workflow"
 msgstr ""
 
 #. Keywords for page /dashboard/blocks/stacks
 #: concrete/config/install/base/dashboard.xml:325
-#: concrete/helpers/concrete/upgrade/version_560.php:184
+#: concrete/helpers/concrete/upgrade/version_560.php:189
 msgid ""
 "stacks, reusable content, scrapbook, copy, paste, paste block, copy block, "
 "site name, logo"
@@ -13053,19 +13078,19 @@ msgstr ""
 
 #. Keywords for page /dashboard/blocks/stacks/list
 #: concrete/config/install/base/dashboard.xml:351
-#: concrete/helpers/concrete/upgrade/version_560.php:185
+#: concrete/helpers/concrete/upgrade/version_560.php:190
 msgid "edit stacks, view stacks, all stacks"
 msgstr ""
 
 #. Keywords for page /dashboard/blocks/types
 #: concrete/config/install/base/dashboard.xml:358
-#: concrete/helpers/concrete/upgrade/version_560.php:186
+#: concrete/helpers/concrete/upgrade/version_560.php:191
 msgid "block, refresh, custom"
 msgstr ""
 
 #. Keywords for page /dashboard/extend
 #: concrete/config/install/base/dashboard.xml:374
-#: concrete/helpers/concrete/upgrade/version_560.php:187
+#: concrete/helpers/concrete/upgrade/version_560.php:192
 msgid ""
 "add-on, addon, add on, package, applications, ecommerce, discussions, "
 "forums, themes, templates, blocks"
@@ -13073,7 +13098,7 @@ msgstr ""
 
 #. Keywords for page /dashboard/extend/install
 #: concrete/config/install/base/dashboard.xml:393
-#: concrete/helpers/concrete/upgrade/version_560.php:188
+#: concrete/helpers/concrete/upgrade/version_560.php:193
 msgid ""
 "add-on, addon, ecommerce, install, discussions, forums, themes, templates, "
 "blocks"
@@ -13081,25 +13106,25 @@ msgstr ""
 
 #. Keywords for page /dashboard/extend/update
 #: concrete/config/install/base/dashboard.xml:400
-#: concrete/helpers/concrete/upgrade/version_560.php:189
+#: concrete/helpers/concrete/upgrade/version_560.php:194
 msgid "update, upgrade"
 msgstr ""
 
 #. Keywords for page /dashboard/extend/connect
 #: concrete/config/install/base/dashboard.xml:407
-#: concrete/helpers/concrete/upgrade/version_560.php:190
+#: concrete/helpers/concrete/upgrade/version_560.php:195
 msgid "concrete5.org, my account, marketplace"
 msgstr ""
 
 #. Keywords for page /dashboard/extend/themes
 #: concrete/config/install/base/dashboard.xml:414
-#: concrete/helpers/concrete/upgrade/version_560.php:191
+#: concrete/helpers/concrete/upgrade/version_560.php:196
 msgid "buy theme, new theme, marketplace, template"
 msgstr ""
 
 #. Keywords for page /dashboard/extend/add-ons
 #: concrete/config/install/base/dashboard.xml:421
-#: concrete/helpers/concrete/upgrade/version_560.php:192
+#: concrete/helpers/concrete/upgrade/version_560.php:197
 msgid ""
 "buy addon, buy add on, buy add-on, purchase addon, purchase add on, purchase"
 " add-on, find addon, new addon, marketplace"
@@ -13107,81 +13132,81 @@ msgstr ""
 
 #. Keywords for page /dashboard/system
 #: concrete/config/install/base/dashboard.xml:433
-#: concrete/helpers/concrete/upgrade/version_560.php:193
+#: concrete/helpers/concrete/upgrade/version_560.php:198
 msgid "dashboard, configuration"
 msgstr ""
 
 #. Keywords for page /dashboard/system/basics/site_name
 #: concrete/config/install/base/dashboard.xml:441
-#: concrete/helpers/concrete/upgrade/version_560.php:194
+#: concrete/helpers/concrete/upgrade/version_560.php:199
 msgid "website name, title"
 msgstr ""
 
 #. Keywords for page /dashboard/system/basics/icons
 #: concrete/config/install/base/dashboard.xml:448
-#: concrete/helpers/concrete/upgrade/version_560.php:195
+#: concrete/helpers/concrete/upgrade/version_560.php:200
 msgid "logo, favicon, iphone, icon, bookmark"
 msgstr ""
 
 #. Keywords for page /dashboard/system/basics/editor
 #: concrete/config/install/base/dashboard.xml:455
-#: concrete/helpers/concrete/upgrade/version_560.php:196
+#: concrete/helpers/concrete/upgrade/version_560.php:201
 msgid "tinymce, content block, fonts, editor, content, overlay"
 msgstr ""
 
 #. Keywords for page /dashboard/system/basics/multilingual
 #: concrete/config/install/base/dashboard.xml:462
-#: concrete/helpers/concrete/upgrade/version_560.php:197
+#: concrete/helpers/concrete/upgrade/version_560.php:202
 msgid "translate, translation, internationalization, multilingual"
 msgstr ""
 
 #. Keywords for page /dashboard/system/basics/timezone
 #: concrete/config/install/base/dashboard.xml:469
-#: concrete/helpers/concrete/upgrade/version_560.php:198
+#: concrete/helpers/concrete/upgrade/version_560.php:203
 msgid "timezone, profile, locale"
 msgstr ""
 
 #. Keywords for page /dashboard/system/basics/interface
 #: concrete/config/install/base/dashboard.xml:476
-#: concrete/helpers/concrete/upgrade/version_560.php:199
+#: concrete/helpers/concrete/upgrade/version_560.php:204
 msgid "interface, quick nav, dashboard background, background image"
 msgstr ""
 
 #. Keywords for page /dashboard/system/seo/urls
 #: concrete/config/install/base/dashboard.xml:485
-#: concrete/helpers/concrete/upgrade/version_560.php:200
+#: concrete/helpers/concrete/upgrade/version_560.php:205
 msgid "vanity, pretty url, seo, pageview, view"
 msgstr ""
 
 #. Keywords for page /dashboard/system/seo/bulk_seo_tool
 #: concrete/config/install/base/dashboard.xml:492
-#: concrete/helpers/concrete/upgrade/version_560.php:201
+#: concrete/helpers/concrete/upgrade/version_560.php:206
 msgid "bulk, seo, change keywords, engine, optimization, search"
 msgstr ""
 
 #. Keywords for page /dashboard/system/seo/tracking_codes
 #: concrete/config/install/base/dashboard.xml:499
-#: concrete/helpers/concrete/upgrade/version_560.php:202
+#: concrete/helpers/concrete/upgrade/version_560.php:207
 msgid "traffic, statistics, google analytics, quant, pageviews, hits"
 msgstr ""
 
 #. Keywords for page /dashboard/system/seo/statistics
 #: concrete/config/install/base/dashboard.xml:513
-#: concrete/helpers/concrete/upgrade/version_560.php:203
+#: concrete/helpers/concrete/upgrade/version_560.php:208
 msgid "turn off statistics, tracking, statistics, pageviews, hits"
 msgstr ""
 
 #. Keywords for page /dashboard/system/seo/search_index
 #: concrete/config/install/base/dashboard.xml:520
-#: concrete/helpers/concrete/upgrade/version_560.php:204
-#: concrete/helpers/concrete/upgrade/version_560.php:233
+#: concrete/helpers/concrete/upgrade/version_560.php:209
+#: concrete/helpers/concrete/upgrade/version_560.php:238
 msgid "configure search, site search, search option"
 msgstr ""
 
 #. Keywords for page /dashboard/system/optimization/cache
 #: concrete/config/install/base/dashboard.xml:528
-#: concrete/helpers/concrete/upgrade/version_560.php:205
-#: concrete/helpers/concrete/upgrade/version_560.php:234
+#: concrete/helpers/concrete/upgrade/version_560.php:210
+#: concrete/helpers/concrete/upgrade/version_560.php:239
 msgid ""
 "cache option, change cache, override, turn on cache, turn off cache, no "
 "cache, page cache, caching"
@@ -13189,13 +13214,13 @@ msgstr ""
 
 #. Keywords for page /dashboard/system/optimization/clear_cache
 #: concrete/config/install/base/dashboard.xml:535
-#: concrete/helpers/concrete/upgrade/version_560.php:206
+#: concrete/helpers/concrete/upgrade/version_560.php:211
 msgid "cache option, turn off cache, no cache, page cache, caching"
 msgstr ""
 
 #. Keywords for page /dashboard/system/optimization/jobs
 #: concrete/config/install/base/dashboard.xml:542
-#: concrete/helpers/concrete/upgrade/version_560.php:207
+#: concrete/helpers/concrete/upgrade/version_560.php:212
 msgid ""
 "index search, reindex search, build sitemap, sitemap.xml, clear old "
 "versions, page versions, remove old"
@@ -13203,85 +13228,85 @@ msgstr ""
 
 #. Keywords for page /dashboard/system/permissions/site
 #: concrete/config/install/base/dashboard.xml:551
-#: concrete/helpers/concrete/upgrade/version_560.php:208
+#: concrete/helpers/concrete/upgrade/version_560.php:213
 msgid "editors, hide site, offline, private, public, access"
 msgstr ""
 
 #. Keywords for page /dashboard/system/permissions/files
 #: concrete/config/install/base/dashboard.xml:558
-#: concrete/helpers/concrete/upgrade/version_560.php:209
+#: concrete/helpers/concrete/upgrade/version_560.php:214
 msgid "file options, file manager, upload, modify"
 msgstr ""
 
 #. Keywords for page /dashboard/system/permissions/file_types
 #: concrete/config/install/base/dashboard.xml:565
-#: concrete/helpers/concrete/upgrade/version_560.php:210
+#: concrete/helpers/concrete/upgrade/version_560.php:215
 msgid "security, files, media, extension, manager, upload"
 msgstr ""
 
 #. Keywords for page /dashboard/system/permissions/tasks
 #: concrete/config/install/base/dashboard.xml:572
-#: concrete/helpers/concrete/upgrade/version_560.php:211
+#: concrete/helpers/concrete/upgrade/version_560.php:216
 msgid "security, actions, administrator, admin, package, marketplace, search"
 msgstr ""
 
 #. Keywords for page /dashboard/system/permissions/ip_blacklist
 #: concrete/config/install/base/dashboard.xml:583
-#: concrete/helpers/concrete/upgrade/version_560.php:212
+#: concrete/helpers/concrete/upgrade/version_560.php:217
 msgid "security, lock ip, lock out, block ip, address, restrict, access"
 msgstr ""
 
 #. Keywords for page /dashboard/system/permissions/captcha
 #: concrete/config/install/base/dashboard.xml:590
-#: concrete/helpers/concrete/upgrade/version_560.php:213
+#: concrete/helpers/concrete/upgrade/version_560.php:218
 msgid "security, registration"
 msgstr ""
 
 #. Keywords for page /dashboard/system/permissions/antispam
 #: concrete/config/install/base/dashboard.xml:597
-#: concrete/helpers/concrete/upgrade/version_560.php:214
+#: concrete/helpers/concrete/upgrade/version_560.php:219
 msgid "antispam, block spam, security"
 msgstr ""
 
 #. Keywords for page /dashboard/system/permissions/maintenance_mode
 #: concrete/config/install/base/dashboard.xml:604
-#: concrete/helpers/concrete/upgrade/version_560.php:215
+#: concrete/helpers/concrete/upgrade/version_560.php:220
 msgid "lock site, under construction, hide, hidden"
 msgstr ""
 
 #. Keywords for page /dashboard/system/registration/postlogin
 #: concrete/config/install/base/dashboard.xml:613
-#: concrete/helpers/concrete/upgrade/version_560.php:216
+#: concrete/helpers/concrete/upgrade/version_560.php:221
 msgid "profile, login, redirect, specific, dashboard, administrators"
 msgstr ""
 
 #. Keywords for page /dashboard/system/registration/profiles
 #: concrete/config/install/base/dashboard.xml:620
-#: concrete/helpers/concrete/upgrade/version_560.php:217
+#: concrete/helpers/concrete/upgrade/version_560.php:222
 msgid "member profile, member page, community, forums, social, avatar"
 msgstr ""
 
 #. Keywords for page /dashboard/system/registration/public_registration
 #: concrete/config/install/base/dashboard.xml:627
-#: concrete/helpers/concrete/upgrade/version_560.php:218
+#: concrete/helpers/concrete/upgrade/version_560.php:223
 msgid "signup, new user, community"
 msgstr ""
 
 #. Keywords for page /dashboard/system/mail
 #: concrete/config/install/base/dashboard.xml:635
-#: concrete/helpers/concrete/upgrade/version_560.php:219
+#: concrete/helpers/concrete/upgrade/version_560.php:224
 msgid "smtp, mail settings"
 msgstr ""
 
 #. Keywords for page /dashboard/system/mail/method
 #: concrete/config/install/base/dashboard.xml:642
-#: concrete/helpers/concrete/upgrade/version_560.php:220
+#: concrete/helpers/concrete/upgrade/version_560.php:225
 msgid "email server, mail settings, mail configuration, external, internal"
 msgstr ""
 
 #. Keywords for page /dashboard/system/mail/importers
 #: concrete/config/install/base/dashboard.xml:649
-#: concrete/helpers/concrete/upgrade/version_560.php:221
+#: concrete/helpers/concrete/upgrade/version_560.php:226
 msgid ""
 "email server, mail settings, mail configuration, private message, message "
 "system, import, email, message"
@@ -13289,72 +13314,72 @@ msgstr ""
 
 #. Keywords for page /dashboard/system/attributes
 #: concrete/config/install/base/dashboard.xml:657
-#: concrete/helpers/concrete/upgrade/version_560.php:222
+#: concrete/helpers/concrete/upgrade/version_560.php:227
 msgid "attribute configuration"
 msgstr ""
 
 #. Keywords for page /dashboard/system/attributes/sets
 #: concrete/config/install/base/dashboard.xml:664
-#: concrete/helpers/concrete/upgrade/version_560.php:223
+#: concrete/helpers/concrete/upgrade/version_560.php:228
 msgid "attributes, sets"
 msgstr ""
 
 #. Keywords for page /dashboard/system/attributes/types
 #: concrete/config/install/base/dashboard.xml:671
-#: concrete/helpers/concrete/upgrade/version_560.php:224
+#: concrete/helpers/concrete/upgrade/version_560.php:229
 msgid "attributes, types"
 msgstr ""
 
 #. Keywords for page /dashboard/system/environment/info
 #: concrete/config/install/base/dashboard.xml:685
-#: concrete/helpers/concrete/upgrade/version_560.php:225
+#: concrete/helpers/concrete/upgrade/version_560.php:230
 msgid "overrides, system info, debug, support, help"
 msgstr ""
 
 #. Keywords for page /dashboard/system/environment/debug
 #: concrete/config/install/base/dashboard.xml:692
-#: concrete/helpers/concrete/upgrade/version_560.php:226
+#: concrete/helpers/concrete/upgrade/version_560.php:231
 msgid "errors, exceptions, develop, support, help"
 msgstr ""
 
 #. Keywords for page /dashboard/system/environment/logging
 #: concrete/config/install/base/dashboard.xml:699
-#: concrete/helpers/concrete/upgrade/version_560.php:227
+#: concrete/helpers/concrete/upgrade/version_560.php:232
 msgid "email, logging, logs, smtp, pop, errors, mysql, log"
 msgstr ""
 
 #. Keywords for page /dashboard/system/environment/file_storage_locations
 #: concrete/config/install/base/dashboard.xml:706
-#: concrete/helpers/concrete/upgrade/version_560.php:228
+#: concrete/helpers/concrete/upgrade/version_560.php:233
 msgid "security, alternate storage, hide files"
 msgstr ""
 
 #. Keywords for page /dashboard/system/environment/proxy
 #: concrete/config/install/base/dashboard.xml:715
-#: concrete/helpers/concrete/upgrade/version_560.php:229
+#: concrete/helpers/concrete/upgrade/version_560.php:234
 msgid "network, proxy server"
 msgstr ""
 
 #. Keywords for page /dashboard/system/backup_restore
 #: concrete/config/install/base/dashboard.xml:722
-#: concrete/helpers/concrete/upgrade/version_560.php:230
+#: concrete/helpers/concrete/upgrade/version_560.php:235
 msgid "export, backup, database, sql, mysql, encryption, restore"
 msgstr ""
 
 #. Keywords for page /dashboard/system/backup_restore/update
 #: concrete/config/install/base/dashboard.xml:730
-#: concrete/helpers/concrete/upgrade/version_560.php:231
+#: concrete/helpers/concrete/upgrade/version_560.php:236
 msgid "upgrade, new version, update"
 msgstr ""
 
 #. Keywords for page /dashboard/system/backup_restore/database
 #: concrete/config/install/base/dashboard.xml:737
-#: concrete/helpers/concrete/upgrade/version_560.php:232
+#: concrete/helpers/concrete/upgrade/version_560.php:237
 msgid ""
 "export, database, xml, starting, points, schema, refresh, custom, tables"
 msgstr ""
 
-#: concrete/helpers/concrete/upgrade/version_560.php:320
+#: concrete/helpers/concrete/upgrade/version_560.php:325
 msgid "Dashboard Icon"
 msgstr "Εικονίδιο Πίνακα"
 
