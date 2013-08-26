@@ -95,7 +95,7 @@ function sameDictionary(a, b) {
 */
 function doRequest(server, info) {
 	var options = {
-		async: !true,
+		async: true,
 		cache: false,
 		url: server.host + info.path,
 		username: server.username,
