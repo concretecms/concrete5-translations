@@ -98,8 +98,9 @@ function doRequest(server, info) {
 		async: true,
 		cache: false,
 		url: server.host + info.path,
-		username: server.username,
-		password: server.password
+		beforeSend: function(xhr) {
+			xhr.setRequestHeader('Authorization', 'Basic ' + window.btoa(server.username + ":" + server.password));
+		}
 	};
 	if(info.put) {
 		options.type = 'PUT';
