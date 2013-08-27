@@ -48,19 +48,28 @@
 	</div>
 
 	<div class="tx2tx-step" id="tx2tx-step-login">
-		<h1>Transifex-to-Transifex for concrete5</h1>
-		<h4>Compare and copy concrete5 translations between different resources</h4>
-		<p>
-			If you already logged in on Transifex.com, then below you have to fill-in the same username and password,
-			otherwise some strange results may happen.
-		</p>
+		<div class="tx2tx-info">
+			<h1>Transifex-to-Transifex for concrete5</h1>
+			<h4>Compare and copy concrete5 translations between different resources</h4>
+			<p>If you already logged in on Transifex.com, then below you have to fill-in just your username.</p>
+		</div>
 		<form>
 			<h2>Please sign-in</h2>
 			<input type="text" class="form-control" id="tx2tx-username" placeholder="Transifex username">
-			<input type="password" class="form-control" id="tx2tx-password" placeholder="Transifex password">
+			<label class="checkbox"><input type="checkbox" id="tx2tx-password-already" checked onchange="$('#tx2tx-password').prop('disabled', this.checked); "> I'm already logged in in Transifex</label>
+			<input type="password" class="form-control" id="tx2tx-password" placeholder="Transifex password" disabled>
+			<br>
 			<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
 		</form>
 		<div class="alert tx2tx-alert"></div>
+		<div class="tx2tx-info">
+			<br>
+			<strong>Browser support</strong>:<br>
+			<ul>
+				<li><u>Internet Explorer 10</u>: add this website to the Trusted Sites and set the security level for the trusted sites to Low</li>
+				<li><u>Chrome</u> you have to launch Chrome with the --disable-web-security command line parameter (under Windows: close all the Chrome windows, hit Win-R and type 'chrome --disable-web-security')</li>
+			</ul>
+		</div>
 	</div>
 
 	<div class="tx2tx-step" id="tx2tx-step-options">
@@ -72,11 +81,11 @@
 			</div>
 			<div class="form-group">
 				<label for="tx2tx-resource-left">Left resource</label>
-				<select class="form-control" class="tx2tx-resource" id="tx2tx-resource-left"></select>
+				<select class="form-control tx2tx-resource" id="tx2tx-resource-left"></select>
 			</div>
 			<div class="form-group">
 				<label for="tx2tx-resource-right">Right resource</label>
-				<select class="form-control" class="tx2tx-resource" id="tx2tx-resource-right"></select>
+				<select class="form-control tx2tx-resource" id="tx2tx-resource-right"></select>
 			</div>
 			<button class="btn btn-lg btn-primary btn-block" type="submit">Proceed</button>
 		</form>
@@ -118,8 +127,7 @@
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-				<button type="button" class="btn btn-primary" id="tx2tx-modal-reloadhow-viewonly">No</button>
-				<button type="button" class="btn btn-primary" id="tx2tx-modal-reloadhow-full">Yes</button>
+				<button type="button" class="btn btn-primary" id="tx2tx-modal-reloadhow-full">Reload</button>
 			</div>
 		</div>
 	</div>

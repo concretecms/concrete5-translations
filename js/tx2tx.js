@@ -27,10 +27,16 @@ var tx2tx = {
 			$('#tx2tx-username').val('').focus();
 			return;
 		}
-		var password = $('#tx2tx-password').val();
-		if(!password.length) {
-			$('#tx2tx-password').focus();
-			return;
+		var password;
+		if($('#tx2tx-password-already').prop('checked')) {
+			password = false;
+		}
+		else {
+			password = $('#tx2tx-password').val();
+			if(!password.length) {
+				$('#tx2tx-password').focus();
+				return;
+			}
 		}
 		var server = new tx.Server(username, password);
 		var fail = function(why) {
@@ -137,8 +143,14 @@ var tx2tx = {
 		}
 		resources.right = $('#tx2tx-resource-right option:selected').data('resource');
 		if(!resources.right) {
-			$('#tx2tx-resource-resource').focus();
+			$('#tx2tx-resource-right').focus();
 			fail('Please select the right resource');
+			return;
+		}
+		if(resources.left == resources.right) {
+			$('#tx2tx-resource-right').focus();
+			fail('The left resource is the same as the right resource.');
+			return;
 		}
 		tx2tx.setWorking('Retrieving ' + locale.decode(team.language_code) + ' translations for ' + resources.left.name + '...');
 		var translations = {};
@@ -245,9 +257,10 @@ var tx2tx = {
 	logout: function() {
 		delete tx2tx.translations;
 		delete tx2tx.myTeams;
+		tx2tx.project.server.standardLogout();
 		delete tx2tx.project;
 		tx2tx.setStep('login');
-		$('#tx2tx-password').val('').focus();
+		$('#tx2tx-password').val('');
 	},
 	Difference: function(left, right) {
 		this.left = left;
@@ -390,6 +403,11 @@ tx2tx.Difference.prototype = {
 	}
 };
 $(document).ready(function() {
+	var err;
+	err = tx.checkEnviro();
+	if(err.length) {
+		alert(err);
+	}
 	$('#tx2tx-step-login form').on('submit', function() { tx2tx.doLogin(); return false; });
 	$('#tx2tx-options-confirm-copy').on('click', function() {
 		var $i = $('#tx2tx-options-confirm-copy span.glyphicon-ok');
@@ -399,13 +417,11 @@ $(document).ready(function() {
 	$('#tx2tx-logout').on('click', function() { tx2tx.logout(); });
 	$('#tx2tx-step-options form').on('submit', function() { tx2tx.setOptions(); return false; });
 	$('#tx2tx-work-refresh').on('click', function() { $('#tx2tx-modal-reloadhow').modal(); });
-	$('#tx2tx-modal-reloadhow-viewonly').on('click', function() { $('#tx2tx-modal-reloadhow').modal('hide'); tx2tx.rebuildWorkList(); });
 	$('#tx2tx-modal-reloadhow-full').on('click', function() { $('#tx2tx-modal-reloadhow').modal('hide'); tx2tx.reloadTranslations(); });
 	tx2tx.setStep('login');
 	var presetUsername = $.cookie('tx2tx_username');
 	if(($.type(presetUsername) == 'string') && presetUsername.length) {
 		$('#tx2tx-username').val(presetUsername);
-		$('#tx2tx-password').focus();
 	}
 	else {
 		$('#tx2tx-username').focus();

@@ -1,19 +1,35 @@
 "use strict";
 (function(window, $, undefined) {
 
-// Let's check if the script has been interpreted with utf-8 charset
-if(('è'.length !== 1) || ('è'.charCodeAt(0) !== 232)) {
-	throw 'The script has not been interpreted as UTF-8!';
-}
-if(!(window.JSON && JSON.stringify)) {
-	throw 'JSON.stringify() function not available';
-}
-
 /** The default base URL for the API calls.
 * @constant
 * @type {string}
 */
 var DEFAULT_BASEURL = 'https://www.transifex.com/api/2';
+
+function checkEnviro() {
+	if(('è'.length !== 1) || ('è'.charCodeAt(0) !== 232)) {
+		return 'The script has not been interpreted as UTF-8.';
+	}
+	if(!(window.JSON && JSON.stringify)) {
+		return 'JSON.stringify() function not available.';
+	}
+	if(!$.support.cors) {
+		return 'Unsupported browser: CORS not available.';
+	}
+	return '';
+}
+
+function checkEnviroBeforeLaunch(fail) {
+	var err = checkEnviro();
+	if(err.length) {
+		if($.type(fail) === 'function') {
+			fail(err);
+		}
+		return false;
+	}
+	return true;
+}
 
 var pluralNames = {
 	'0': 'zero',
@@ -97,11 +113,12 @@ function doRequest(server, info) {
 	var options = {
 		async: true,
 		cache: false,
-		url: server.host + info.path,
-		beforeSend: function(xhr) {
-			xhr.setRequestHeader('Authorization', 'Basic ' + window.btoa(server.username + ":" + server.password));
-		}
+		url: server.host + info.path
 	};
+	if(isString(server.password)) {
+		options.username = server.username;
+		options.password = server.password;
+	}
 	if(info.put) {
 		options.type = 'PUT';
 		options.data = info.put;
@@ -167,6 +184,9 @@ function Server(username, password, baseURL) {
 }
 Server.prototype = {
 	getProject: function(slug, success, fail, forceReload) {
+		if(!checkEnviroBeforeLaunch()) {
+			return;
+		}
 		if((!forceReload) && (slug in this._loadedProjects)) {
 			if($.type(success) === 'function') {
 				success(this._loadedProjects[slug]);
@@ -187,6 +207,11 @@ Server.prototype = {
 				fail: fail
 			}
 		);
+	},
+	standardLogout: function() {
+		if(this.host.indexOf('https://www.transifex.com/') === 0) {
+			$(window.document.body).append($('<script src="https://www.transifex.com/signout/"></script>'));
+		}
 	}
 };
 
@@ -528,6 +553,7 @@ Translation.prototype = {
 };
 
 window.tx = {
+	checkEnviro: checkEnviro,
 	Server: Server,
 	getPluralName: getPluralName
 };
