@@ -288,7 +288,6 @@
 						.append($('<span></span>').text(item.series.resourceName))
 						.append('<br />' + date2string(dt, true) +  ': ' + item.datapoint[1])
 						.appendTo('body')
-						
 					;
 					var x, y;
 					if((item.pageX + $tt.width()) >= ($(window).width() - 10)) {
@@ -314,7 +313,7 @@
 			}
 			else {
 				$('#tooltip').remove();
-				previousPoint = null;            
+				previousPoint = null;
 			}
 		});
 		setChecked($("#draw a:first"), true);
