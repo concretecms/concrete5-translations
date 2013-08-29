@@ -144,7 +144,7 @@
 		if(m = /^core-(\d{3,4})$/.exec(code)) {
 			var s = 'concrete5 ';
 			for(var i = 0; i < m[1].length; i++) {
-				s += ((i > 0) ? '.' : '') . m[1].charAt(i);
+				s += ((i > 0) ? '.' : '') + m[1].charAt(i);
 			}
 			return s;
 		}
