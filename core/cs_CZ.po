@@ -6,9 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2013-08-27 22:00+0000\n"
-"PO-Revision-Date: 2013-08-28 07:08+0000\n"
-"Last-Translator: Petr Toman <petr.toman@pinknet.cz>\n"
+"POT-Creation-Date: 2013-08-31 10:56+0000\n"
+"PO-Revision-Date: 2013-08-31 10:58+0000\n"
+"Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Czech (Czech Republic) (http://www.transifex.com/projects/p/concrete5/language/cs_CZ/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -35,6 +35,7 @@ msgstr ""
 #: concrete/tools/pages/delete.php:7 concrete/tools/pages/design.php:7
 #: concrete/tools/pages/intelligent_search.php:7
 #: concrete/tools/pages/permissions.php:7
+#: concrete/tools/pages/permissions_access.php:7
 #: concrete/tools/pages/search_dialog.php:6
 #: concrete/tools/pages/search_results.php:7
 #: concrete/tools/pages/speed_settings.php:7
@@ -122,7 +123,7 @@ msgstr "Sestupně"
 #: concrete/elements/permission/details/block/timed_guest_access.php:38
 #: concrete/elements/permission/lists/area.php:82
 #: concrete/elements/permission/lists/block.php:64
-#: concrete/elements/permission/lists/collection.php:100
+#: concrete/elements/permission/lists/collection.php:104
 #: concrete/elements/permission/lists/file.php:63
 #: concrete/models/attribute/types/select/type_form.php:26
 #: concrete/single_pages/dashboard/blocks/permissions.php:22
@@ -168,6 +169,7 @@ msgstr "Sestupně"
 #: concrete/tools/files/customize_search_columns.php:108
 #: concrete/tools/pages/customize_search_columns.php:108
 #: concrete/tools/pages/permissions.php:151
+#: concrete/tools/pages/permissions_access.php:152
 #: concrete/tools/permissions/access_entity.php:108
 #: concrete/tools/permissions/dialogs/access/entity/types/group_combination.php:75
 #: concrete/tools/users/bulk_group_add.php:103
@@ -327,7 +329,7 @@ msgstr "Začít nahrávat"
 #: concrete/elements/permission/details/block/timed_guest_access.php:37
 #: concrete/elements/permission/lists/area.php:81
 #: concrete/elements/permission/lists/block.php:63
-#: concrete/elements/permission/lists/collection.php:99
+#: concrete/elements/permission/lists/collection.php:103
 #: concrete/elements/permission/lists/file.php:62
 #: concrete/models/attribute/types/select/type_form.php:25
 #: concrete/single_pages/dashboard/blocks/permissions.php:21
@@ -354,6 +356,7 @@ msgstr "Začít nahrávat"
 #: concrete/tools/pages/design.php:208
 #: concrete/tools/pages/permissions.php:150
 #: concrete/tools/pages/permissions.php:165
+#: concrete/tools/pages/permissions_access.php:151
 #: concrete/tools/pages/speed_settings.php:176
 #: concrete/tools/permissions/access_entity.php:107
 #: concrete/tools/permissions/dialogs/access/entity/types/group_combination.php:74
@@ -691,7 +694,7 @@ msgstr "Aktualizováno"
 #: concrete/elements/collection_attribute_values.php:18
 #: concrete/elements/collection_delete.php:59
 #: concrete/elements/files/search_results.php:33
-#: concrete/elements/pages/search_results.php:43
+#: concrete/elements/pages/search_results.php:45
 #: concrete/elements/users/search_results.php:50
 #: concrete/models/attribute/types/select/type_form.php:19
 #: concrete/single_pages/dashboard/files/sets.php:116
@@ -1094,7 +1097,7 @@ msgstr "Ploché zobrazení"
 #: concrete/elements/block_area_add_stack.php:17
 #: concrete/elements/files/search_form_advanced.php:215
 #: concrete/elements/marketplace/search_form.php:24
-#: concrete/elements/pages/search_form_advanced.php:157
+#: concrete/elements/pages/search_form_advanced.php:169
 #: concrete/elements/profile/sidebar.php:56
 #: concrete/elements/users/search_form_advanced.php:103
 #: concrete/single_pages/dashboard/files/sets.php:170
@@ -1238,7 +1241,6 @@ msgstr "Přejít"
 #: concrete/tools/users/customize_search_columns.php:7
 #: concrete/tools/users/search_dialog.php:6
 #: concrete/tools/users/search_results.php:6
-#: concrete/tools/users/search_results_export.php:8
 msgid "You have no access to users."
 msgstr "Nemáte přístup k uživatelům."
 
@@ -1625,6 +1627,10 @@ msgstr "Odebrat níže uvedené uživatele ze skupin/y"
 msgid "Select Group(s)"
 msgstr "Vybrat skupinu/y"
 
+#: concrete/tools/users/search_results_export.php:8
+msgid "You have no access to user export."
+msgstr ""
+
 #: concrete/core/controllers/single_pages/login.php:16
 #: concrete/core/helpers/form/user_selector.php:97
 #: concrete/core/models/user_list.php:142
@@ -1718,7 +1724,7 @@ msgstr "Přidat zásobník"
 msgid "Paste from Clipboard"
 msgstr "Vložit ze schránky"
 
-#: concrete/elements/pages/search_results.php:42
+#: concrete/elements/pages/search_results.php:44
 #: concrete/single_pages/dashboard/scrapbook/view.php:98
 #: concrete/single_pages/dashboard/scrapbook/view.php:256
 #: concrete/tools/i18n_js.php:15 concrete/tools/i18n_js.php:41
@@ -2498,6 +2504,7 @@ msgid "Get more themes."
 msgstr "Získat další motivy."
 
 #: concrete/tools/pages/permissions.php:37
+#: concrete/tools/pages/permissions_access.php:96
 msgid ""
 "You do not have permission to change permissions on any of the selected "
 "pages."
@@ -2549,15 +2556,50 @@ msgid ""
 "defaults or their parent pages."
 msgstr "Stránce můžete nastavit pouze specifická oprávnění, pokud má nastaveno překrývat výchozí nastavení nebo nastavení rodičovské stránky."
 
-#: concrete/elements/permission/lists/collection.php:89
+#: concrete/elements/permission/lists/collection.php:93
 #: concrete/tools/pages/permissions.php:163
 msgid "Changing this setting will affect this page immediately. Are you sure?"
 msgstr "Změna tohoto nastavení se na stránce ihned projeví. Jste si jist/á?"
 
-#: concrete/elements/permission/lists/collection.php:155
+#: concrete/elements/permission/lists/collection.php:159
 #: concrete/tools/pages/permissions.php:226
 msgid "Confirm Change"
 msgstr "Potvrdit změnu"
+
+#: concrete/tools/pages/permissions_access.php:111
+msgid "Warning:"
+msgstr ""
+
+#: concrete/tools/pages/permissions_access.php:111
+msgid ""
+"Any users or groups selected will be removed from the permissions on the "
+"selected pages."
+msgstr ""
+
+#: concrete/elements/permission/access/list.php:12
+#: concrete/elements/permission/access/list.php:31
+#: concrete/tools/pages/permissions_access.php:131
+#: concrete/tools/pages/permissions_access.php:187
+msgid "Add Access Entity"
+msgstr "Přidat přístup entitě"
+
+#: concrete/tools/pages/permissions_access.php:141
+msgid "Permissions Should"
+msgstr ""
+
+#: concrete/tools/pages/permissions_access.php:143
+msgid "Add To Existing Permissions"
+msgstr ""
+
+#: concrete/tools/pages/permissions_access.php:144
+msgid "Replace Permissions"
+msgstr ""
+
+#: concrete/tools/pages/permissions_access.php:225
+msgid ""
+"You may only add access to these selected pages if they have all been set to"
+" override parent or page defaults permissions."
+msgstr ""
 
 #: concrete/tools/pages/delete.php:81
 msgid "You do not have permission to delete any of the selected pages."
@@ -2567,7 +2609,9 @@ msgstr "Nemáte oprávnění smazat žádnou z vybraných stránek."
 msgid "Are you sure you want to delete the following pages?"
 msgstr "Opravdu chcete odstranit následující stránky?"
 
-#: concrete/elements/pages/search_form_advanced.php:131
+#: concrete/elements/pages/search_form_advanced.php:65
+#: concrete/elements/pages/search_form_advanced.php:143
+#: concrete/elements/pages/search_form_advanced.php:235
 #: concrete/single_pages/dashboard/composer/drafts.php:12
 #: concrete/single_pages/dashboard/system/seo/bulk_seo_tool.php:146
 #: concrete/tools/pages/delete.php:91
@@ -4220,21 +4264,21 @@ msgstr "Váš web je aktuální! Současná verze Concrete5 je <b>%s</b>. Tento 
 msgid "You must first upgrade your site to version 5.4.2.2"
 msgstr "Nejprve je nutné provést aktualizaci webu na verzi 5.4.2.2"
 
-#: concrete/core/controllers/single_pages/upgrade.php:191
+#: concrete/core/controllers/single_pages/upgrade.php:195
 msgid "Unable to locate database import file."
 msgstr "Nelze najít databázi pro import souborů."
 
-#: concrete/core/controllers/single_pages/upgrade.php:229
+#: concrete/core/controllers/single_pages/upgrade.php:233
 #, php-format
 msgid "Unable to create temporary db xml file: %s"
 msgstr "Nelze vytvořit dočasný XML soubor: %s"
 
-#: concrete/core/controllers/single_pages/upgrade.php:279
+#: concrete/core/controllers/single_pages/upgrade.php:284
 #, php-format
 msgid "An Unexpected Error occurred while upgrading: %s"
 msgstr "Při aktualizaci nastala neočekávaná chyba: %s"
 
-#: concrete/core/controllers/single_pages/upgrade.php:283
+#: concrete/core/controllers/single_pages/upgrade.php:288
 #, php-format
 msgid "Upgrade to <b>%s</b> complete!"
 msgstr "Aktualizace na <b>%s</b> dokončena!"
@@ -4545,8 +4589,8 @@ msgstr "Vyberte soubor"
 #: concrete/core/models/attribute/types/boolean.php:38
 #: concrete/core/models/attribute/types/boolean.php:66
 #: concrete/core/models/attribute/types/boolean.php:76
-#: concrete/elements/pages/search_form_advanced.php:72
-#: concrete/elements/pages/search_form_advanced.php:250
+#: concrete/elements/pages/search_form_advanced.php:84
+#: concrete/elements/pages/search_form_advanced.php:272
 #: concrete/single_pages/dashboard/system/mail/importers.php:3
 #: concrete/single_pages/dashboard/system/mail/importers.php:106
 #: concrete/single_pages/dashboard/system/mail/method.php:3
@@ -4562,8 +4606,8 @@ msgstr "Ano"
 #: concrete/blocks/guestbook/edit.php:36 concrete/blocks/guestbook/edit.php:54
 #: concrete/blocks/page_list/page_list_form.php:115
 #: concrete/core/models/attribute/types/boolean.php:38
-#: concrete/elements/pages/search_form_advanced.php:71
-#: concrete/elements/pages/search_form_advanced.php:249
+#: concrete/elements/pages/search_form_advanced.php:83
+#: concrete/elements/pages/search_form_advanced.php:271
 #: concrete/single_pages/dashboard/system/mail/importers.php:3
 #: concrete/single_pages/dashboard/system/mail/importers.php:106
 #: concrete/single_pages/dashboard/system/mail/method.php:3
@@ -4585,11 +4629,11 @@ msgstr "Výchozí země musí být v seznamu uživatelských zemí."
 #: concrete/elements/files/search_form_advanced.php:65
 #: concrete/elements/files/search_form_advanced.php:257
 #: concrete/elements/files/search_form_advanced.php:278
-#: concrete/elements/pages/search_form_advanced.php:38
-#: concrete/elements/pages/search_form_advanced.php:44
-#: concrete/elements/pages/search_form_advanced.php:50
-#: concrete/elements/pages/search_form_advanced.php:194
-#: concrete/elements/pages/search_form_advanced.php:208
+#: concrete/elements/pages/search_form_advanced.php:42
+#: concrete/elements/pages/search_form_advanced.php:48
+#: concrete/elements/pages/search_form_advanced.php:54
+#: concrete/elements/pages/search_form_advanced.php:206
+#: concrete/elements/pages/search_form_advanced.php:220
 #: concrete/elements/users/search_form_advanced.php:29
 msgid "to"
 msgstr "do"
@@ -5381,7 +5425,7 @@ msgid ""
 "present in the original message."
 msgstr "E-mail nelze zpracovat. Zkontrolujte, že váš e-mail obsahuje ověřovací hash z původní zprávy."
 
-#: concrete/core/libraries/view.php:986
+#: concrete/core/libraries/view.php:990
 #, php-format
 msgid ""
 "File %s not found. All themes need default.php and view.php files in them. "
@@ -5837,7 +5881,7 @@ msgstr "Pole bude k dispozici ve vyhledávání uživatelů v Administraci."
 #: concrete/elements/collection_add_external.php:38
 #: concrete/elements/collection_attribute_values.php:67
 #: concrete/elements/files/search_form_advanced.php:229
-#: concrete/elements/pages/search_form_advanced.php:167
+#: concrete/elements/pages/search_form_advanced.php:179
 #: concrete/elements/permission/access/list.php:12
 #: concrete/elements/users/search_form_advanced.php:115
 #: concrete/models/attribute/types/select/form.php:74
@@ -5970,32 +6014,32 @@ msgid "Keywords"
 msgstr "Klíčová slova"
 
 #: concrete/elements/files/search_form_advanced.php:204
-#: concrete/elements/pages/search_form_advanced.php:147
+#: concrete/elements/pages/search_form_advanced.php:159
 #: concrete/elements/users/search_form_advanced.php:92
 msgid "# Per Page"
 msgstr "Počet na stránku"
 
 #: concrete/elements/files/search_form_advanced.php:222
-#: concrete/elements/pages/search_form_advanced.php:161
+#: concrete/elements/pages/search_form_advanced.php:173
 #: concrete/single_pages/dashboard/system/seo/bulk_seo_tool.php:100
 msgid "Advanced Search"
 msgstr "Pokročilé vyhledávání"
 
 #: concrete/elements/files/search_form_advanced.php:228
 #: concrete/elements/marketplace/search_form.php:33
-#: concrete/elements/pages/search_form_advanced.php:166
+#: concrete/elements/pages/search_form_advanced.php:178
 #: concrete/elements/users/search_form_advanced.php:114
 msgid "Additional Filters"
 msgstr "Další filtry"
 
 #: concrete/elements/files/search_form_advanced.php:237
-#: concrete/elements/pages/search_form_advanced.php:174
+#: concrete/elements/pages/search_form_advanced.php:186
 #: concrete/elements/users/search_form_advanced.php:122
 msgid "Select Search Field."
 msgstr "Zvolte vyhledávací pole."
 
 #: concrete/elements/files/search_form_advanced.php:314
-#: concrete/elements/pages/search_form_advanced.php:272
+#: concrete/elements/pages/search_form_advanced.php:294
 #: concrete/elements/users/search_form_advanced.php:130
 msgid "Customize Results"
 msgstr "Přizpůsobit výsledky"
@@ -6698,7 +6742,7 @@ msgstr "Přístup k Workflow"
 msgid "Coming soon."
 msgstr "Již brzy!"
 
-#: concrete/elements/pages/search_form_advanced.php:124
+#: concrete/elements/pages/search_form_advanced.php:136
 #: concrete/elements/workflow/progress/categories/page/pending.php:11
 #: concrete/single_pages/dashboard/composer/drafts.php:11
 #: concrete/single_pages/dashboard/system/seo/bulk_seo_tool.php:137
@@ -6765,7 +6809,7 @@ msgstr "Odebrat ze skupiny"
 msgid "No users found."
 msgstr "Nebyli nalezeni žádní uživatelé."
 
-#: concrete/elements/users/search_results.php:123
+#: concrete/elements/users/search_results.php:126
 msgid "Export"
 msgstr "Exportovat"
 
@@ -7016,11 +7060,6 @@ msgstr "Časové pásmo"
 #: concrete/single_pages/dashboard/users/search.php:235
 msgid "Default Language"
 msgstr "Výchozí jazyk"
-
-#: concrete/elements/permission/access/list.php:12
-#: concrete/elements/permission/access/list.php:31
-msgid "Add Access Entity"
-msgstr "Přidat přístup entitě"
 
 #: concrete/elements/permission/clipboard.php:7
 msgid "Paste"
@@ -7420,11 +7459,19 @@ msgstr "Nejsou přiřazeny žádné atributy."
 msgid "Speed Settings"
 msgstr "Nastavení cache"
 
-#: concrete/elements/pages/search_results.php:62
+#: concrete/elements/pages/search_results.php:41
+msgid "Change Permissions - Add Access"
+msgstr ""
+
+#: concrete/elements/pages/search_results.php:42
+msgid "Change Permissions - Remove Access"
+msgstr ""
+
+#: concrete/elements/pages/search_results.php:64
 msgid "Score"
 msgstr "Skóre"
 
-#: concrete/elements/pages/search_results.php:153
+#: concrete/elements/pages/search_results.php:155
 #: concrete/single_pages/dashboard/pages/single.php:39
 #: concrete/single_pages/dashboard/system/seo/bulk_seo_tool.php:240
 msgid "No pages found."
@@ -7451,41 +7498,52 @@ msgid "Approved Version"
 msgstr "Schválená verze"
 
 #: concrete/elements/pages/search_form_advanced.php:17
+msgid "Permissions Inheritance"
+msgstr ""
+
+#: concrete/elements/pages/search_form_advanced.php:21
+#: concrete/elements/pages/search_form_advanced.php:64
+#: concrete/elements/pages/search_form_advanced.php:234
 #: concrete/single_pages/dashboard/system/seo/bulk_seo_tool.php:103
 msgid "Parent Page"
 msgstr "Rodičovská stránka"
 
-#: concrete/elements/pages/search_form_advanced.php:59
-#: concrete/elements/pages/search_form_advanced.php:233
+#: concrete/elements/pages/search_form_advanced.php:66
+#: concrete/elements/pages/search_form_advanced.php:236
+msgid "Itself (Override)"
+msgstr ""
+
+#: concrete/elements/pages/search_form_advanced.php:71
+#: concrete/elements/pages/search_form_advanced.php:255
 msgid "Unapproved"
 msgstr "Neschváleno"
 
-#: concrete/elements/pages/search_form_advanced.php:60
-#: concrete/elements/pages/search_form_advanced.php:234
+#: concrete/elements/pages/search_form_advanced.php:72
+#: concrete/elements/pages/search_form_advanced.php:256
 msgid "Approved"
 msgstr "Schváleno"
 
-#: concrete/elements/pages/search_form_advanced.php:70
-#: concrete/elements/pages/search_form_advanced.php:246
+#: concrete/elements/pages/search_form_advanced.php:82
+#: concrete/elements/pages/search_form_advanced.php:268
 msgid "Search All Children?"
 msgstr "Hledat všechny potomky?"
 
-#: concrete/elements/pages/search_form_advanced.php:77
-#: concrete/elements/pages/search_form_advanced.php:222
+#: concrete/elements/pages/search_form_advanced.php:89
+#: concrete/elements/pages/search_form_advanced.php:244
 msgid "More Than"
 msgstr "Více než"
 
-#: concrete/elements/pages/search_form_advanced.php:78
-#: concrete/elements/pages/search_form_advanced.php:223
+#: concrete/elements/pages/search_form_advanced.php:90
+#: concrete/elements/pages/search_form_advanced.php:245
 msgid "Equal To"
 msgstr "Rovno"
 
-#: concrete/elements/pages/search_form_advanced.php:79
-#: concrete/elements/pages/search_form_advanced.php:224
+#: concrete/elements/pages/search_form_advanced.php:91
+#: concrete/elements/pages/search_form_advanced.php:246
 msgid "Fewer Than"
 msgstr "Méně než"
 
-#: concrete/elements/pages/search_form_advanced.php:136
+#: concrete/elements/pages/search_form_advanced.php:148
 #: concrete/models/attribute/types/select/search.php:12
 msgid "** All"
 msgstr "** Vše"
@@ -13394,6 +13452,16 @@ msgstr "export, database, xml, starting, points, schema, refresh, custom, tables
 #: concrete/helpers/concrete/upgrade/version_560.php:325
 msgid "Dashboard Icon"
 msgstr "Ikona Administrace"
+
+#: concrete/helpers/concrete/upgrade/version_5622.php:12
+msgctxt "PermissionKeyName"
+msgid "Export Site Users"
+msgstr ""
+
+#: concrete/helpers/concrete/upgrade/version_5622.php:12
+msgctxt "PermissionKeyDescription"
+msgid "Controls whether a user can export site users or not"
+msgstr ""
 
 #: concrete/helpers/concrete/interface/help.php:7
 msgid ""
