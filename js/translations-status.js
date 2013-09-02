@@ -221,14 +221,14 @@
 				}
 			});
 		});
-		$("#menu").append($('<li class="dropdown"></li>')
+		$('#menu').append($('<li class="dropdown"></li>')
 			.append('<a href="#" class="dropdown-toggle" data-toggle="dropdown">Resource <b class="caret"></b></a>')
 			.append($ul = $('<ul class="dropdown-menu" id="resources"></ul>'))
 		);
 		$.each(project.resources, function() {
 			var $a;
 			$ul.append($('<li></li>')
-				.append($a = $('<a class="resource" href="javascript:;"></a>')
+				.append($a = $('<a class="resource" href="javascript:void(0);"></a>')
 					.data('code', this.code)
 					.text(' ' + getResourceName(this.code))
 					.prepend('<span class="glyphicon glyphicon-chevron-down" style="visibility: hidden"></span>')
@@ -257,14 +257,14 @@
 					return 0;
 				});
 				$.each(splitLanguages(dismissed ? 'Dismissed languages' : 'Languages', list), function() {
-					$("#menu").append($('<li class="dropdown"></li>')
+					$('#menu').append($('<li class="dropdown"></li>')
 						.append('<a href="#" class="dropdown-toggle" data-toggle="dropdown">' + this.name + ' <b class="caret"></b></a>')
 						.append($ul = $('<ul class="dropdown-menu" id="languages"></ul>'))
 					);
 					$.each(this.list, function() {
 						this.colorIndex = colorIndex = (colorIndex + 1) % colors.length;
 						$ul.append($('<li></li>')
-							.append($('<a class="language" href="javascript:;"></a>')
+							.append($('<a class="language" href="javascript:void(0);"></a>')
 								.data('code', this.code)
 								.data('colorIndex', this.colorIndex)
 								.text(' ' + this.name)
@@ -316,34 +316,106 @@
 				previousPoint = null;
 			}
 		});
-		setChecked($("#draw a:first"), true);
-		$("#header").show();
-		viewChart();
-		$('#draw a').on('click', function() {
+		$('#draw a.what').on('click', function() {
 			var $this = $(this);
 			if(!$this.data('checked')) {
-				setChecked($("#draw a"), false);
+				setChecked($('#draw a.what'), false);
 				setChecked($this, true);
 				viewChart();
 			}
 		});
 		$('a.resource').on('click', function() {
 			var $this = $(this);
-			setChecked($this, !$this.data('checked'));
+			var checked = !$this.data('checked');
+			if(checked && $('#one-resource').data('checked')) {
+				$.each($('a.resource'), function() {
+					var $resource = $(this);
+					if($resource.data('checked') && ($this.data('code') != $resource.data('code'))) {
+						setChecked($resource, false);
+					}
+				});
+			}
+			setChecked($this, checked);
 			viewChart();
 		});
 		$('a.language').on('click', function() {
 			var $this = $(this);
-			setChecked($this, !$this.data('checked'));
+			var checked = !$this.data('checked');
+			if(checked && $('#one-language').data('checked')) {
+				$.each($('a.language'), function() {
+					var $language = $(this);
+					if($language.data('checked') && ($this.data('code') != $language.data('code'))) {
+						setChecked($language, false);
+					}
+				});
+			}
+			setChecked($this, checked);
 			viewChart();
 		});
+		$('#one-resource').on('click', function() {
+			var $this = $(this);
+			var checked = !$this.data('checked');
+			setChecked($this, checked);
+			if(checked) {
+				var already = false, redraw = false;
+				$.each($('a.resource'), function() {
+					var $resource = $(this);
+					if($resource.data('checked')) {
+						if(already) {
+							setChecked($resource, false);
+							redraw = true;
+						}
+						else {
+							already = true;
+						}
+					}
+				});
+				if(redraw) {
+					viewChart();
+				}
+			}
+		});
+		$('#one-language').on('click', function() {
+			var $this = $(this);
+			var checked = !$this.data('checked');
+			setChecked($this, checked);
+			if(checked) {
+				var already = false, redraw = false;
+				$.each($('a.language'), function() {
+					var $language = $(this);
+					if($language.data('checked')) {
+						if(already) {
+							setChecked($language, false);
+							redraw = true;
+						}
+						else {
+							already = true;
+						}
+					}
+				});
+				if(redraw) {
+					viewChart();
+				}
+			}
+		});
+		$('#clear-languages').on('click', function() {
+			$.each($('a.language'), function() {
+				setChecked($(this), false);
+			});
+			viewChart();
+		});
+		setChecked($('#one-resource'), true);
+		setChecked($('#one-language'), true);
+		setChecked($('#draw a.what:first'), true);
+		$('#header').show();
+		viewChart();
 		$(window).on('resize', function() {
 			viewChart();
 		});
 	}
 	function viewChart() {
 		var draw = '';
-		$.each($("#draw a"), function() {
+		$.each($('#draw a.what'), function() {
 			var $this = $(this);
 			if($this.data('checked')) {
 				draw = $this.attr('data-value');
@@ -408,11 +480,11 @@
 			}
 		}
 		if(messages.length) {
-			$("#message").html('<p>' + messages.join('</p><p>') + '</p>').closest('div').show();
-			$("#plot").hide();
+			$('#message').html('<p>' + messages.join('</p><p>') + '</p>').closest('div').show();
+			$('#plot').hide();
 		}
 		else {
-			$("#message").empty().closest('div').hide();
+			$('#message').empty().closest('div').hide();
 			$('#plot')
 				.show()
 				.css({
@@ -459,24 +531,42 @@
 		}
 	}
 	$(document).ready(function() {
-		var baseURL = 'http://i18n.concrete5.ch/get-translations-status-data.php?which='
+		var baseURL = 'http://i18n.concrete5.ch/get-translations-status-data.php?which=';
+		var failed = false;
+		var fail = function(jqXHR, textStatus, errorThrown) {
+			if(!failed) {
+				failed = true;
+				var message;
+				if(errorThrown) {
+					message = errorThrown.message ? errorThrown.message : errorThrown;
+				}
+				else {
+					message = textStatus;
+				}
+				$('#message').removeClass('alert-info').addClass('alert-danger').text(message);
+			}
+		};
 		$.ajax({
 			async: true,
 			cache: false,
 			dataType: 'xml',
 			url: baseURL + 'current'
 		}).done(function(data) {
-			startup.current = getChildElements(data);
-			startup();
-		});
+			if(!failed) {
+				startup.current = getChildElements(data);
+				startup();
+			}
+		}).fail(fail);
 		$.ajax({
 			async: true,
 			cache: false,
 			dataType: 'xml',
 			url: baseURL + 'history'
 		}).done(function(data) {
-			startup.history = getChildElements(data);
-			startup();
-		});
+			if(!failed) {
+				startup.history = getChildElements(data);
+				startup();
+			}
+		}).fail(fail);
 	});
 })();
