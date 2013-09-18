@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2013-09-11 22:00+0000\n"
-"PO-Revision-Date: 2013-09-12 08:50+0000\n"
+"POT-Creation-Date: 2013-09-16 22:00+0000\n"
+"PO-Revision-Date: 2013-09-17 08:51+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Hebrew (Israel) (http://www.transifex.com/projects/p/concrete5/language/he_IL/)\n"
 "MIME-Version: 1.0\n"
@@ -3676,27 +3676,90 @@ msgstr "חבילות concrete5"
 msgid "concrete5 Overrides"
 msgstr "רמיסות קונקרט5"
 
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:101
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:102
+msgid "concrete5 Cache Settings"
+msgstr ""
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:103
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:104
+#: concrete/elements/permission/duration.php:150
+msgid "On"
+msgstr "ב-"
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:103
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:104
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:105
+#: concrete/single_pages/dashboard/system/registration/public_registration.php:17
+msgid "Off"
+msgstr "כבוי"
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:103
+#, php-format
+msgid "Block Cache - %s"
+msgstr ""
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:104
+#, php-format
+msgid "Overrides Cache - %s"
+msgstr ""
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:105
+#: concrete/single_pages/dashboard/system/optimization/cache.php:56
+msgid "On - If blocks on the particular page allow it."
+msgstr "מופעל - אם הבלוקים שבדף מסוים מרשים זאת."
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:105
+#: concrete/single_pages/dashboard/system/optimization/cache.php:62
+msgid "On - In all cases."
+msgstr "מופעל - בכל מצב."
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:105
+#, php-format
+msgid "Full Page Caching - %s"
+msgstr ""
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:107
+#: concrete/single_pages/dashboard/system/optimization/cache.php:72
+#, php-format
+msgid "Every %s (default setting)."
+msgstr "כל %s (הגרות ברירת מחדל)."
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:107
+#: concrete/single_pages/dashboard/system/optimization/cache.php:78
+msgid "Only when manually removed or the cache is cleared."
+msgstr "רק אם נמחק ידני או מנקים את זכרון המטמון (הקאש)."
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:107
+#, php-format
+msgid "Every %s minute."
+msgstr ""
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:107
+#, php-format
+msgid "Full Page Cache Lifetime - %s"
+msgstr ""
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:112
 msgid "Server Software"
 msgstr "תוכנת שרת"
 
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:102
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:113
 msgid "Server API"
 msgstr "API שרת"
 
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:103
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:114
 msgid "PHP Version"
 msgstr "גרסת PHP"
 
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:104
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:115
 msgid "PHP Extensions"
 msgstr "הרחבות PHP"
 
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:111
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:122
 msgid "Unable to determine."
 msgstr "לא ניתן לקבוע."
 
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:129
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:140
 msgid "PHP Settings"
 msgstr "הגדרות PHP"
 
@@ -7122,10 +7185,6 @@ msgstr "יום בשבוע"
 #: concrete/elements/permission/duration.php:137
 msgid "months"
 msgstr "חודשים"
-
-#: concrete/elements/permission/duration.php:150
-msgid "On"
-msgstr "ב-"
 
 #: concrete/elements/permission/duration.php:170
 msgid "weeks"
@@ -11362,10 +11421,6 @@ msgstr "קבע את האפשרויות להרשמה פומבית. "
 msgid "Allow visitors to signup as site members?"
 msgstr "תרשה למבקרים להירשם כחברים לאתר?"
 
-#: concrete/single_pages/dashboard/system/registration/public_registration.php:17
-msgid "Off"
-msgstr "כבוי"
-
 #: concrete/single_pages/dashboard/system/registration/public_registration.php:23
 msgid " On - email validation"
 msgstr "מופעל - אימות כתובת אימייל"
@@ -11587,26 +11642,9 @@ msgstr "כבוי - טוב לפיתוח"
 msgid "Off - Turn it on by hand for specific pages."
 msgstr "כבוי - הפעל אותו ידנית לדפים מסוימים."
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:56
-msgid "On - If blocks on the particular page allow it."
-msgstr "מופעל - אם הבלוקים שבדף מסוים מרשים זאת."
-
-#: concrete/single_pages/dashboard/system/optimization/cache.php:62
-msgid "On - In all cases."
-msgstr "מופעל - בכל מצב."
-
 #: concrete/single_pages/dashboard/system/optimization/cache.php:68
 msgid "Expire Pages from Cache"
 msgstr "העמודים בזכרון מטמון עם פג תוקף"
-
-#: concrete/single_pages/dashboard/system/optimization/cache.php:72
-#, php-format
-msgid "Every %s (default setting)."
-msgstr "כל %s (הגרות ברירת מחדל)."
-
-#: concrete/single_pages/dashboard/system/optimization/cache.php:78
-msgid "Only when manually removed or the cache is cleared."
-msgstr "רק אם נמחק ידני או מנקים את זכרון המטמון (הקאש)."
 
 #: concrete/single_pages/dashboard/system/optimization/cache.php:86
 msgid "Every "

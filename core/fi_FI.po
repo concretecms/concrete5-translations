@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2013-09-11 22:00+0000\n"
-"PO-Revision-Date: 2013-09-12 08:50+0000\n"
-"Last-Translator: Michele Locati <michele@locati.it>\n"
+"POT-Creation-Date: 2013-09-16 22:00+0000\n"
+"PO-Revision-Date: 2013-09-17 08:57+0000\n"
+"Last-Translator: Hypocrite\n"
 "Language-Team: Finnish (Finland) (http://www.transifex.com/projects/p/concrete5/language/fi_FI/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -3674,27 +3674,90 @@ msgstr "concrete5:n paketit"
 msgid "concrete5 Overrides"
 msgstr "concrete5 ylikirjoitukset"
 
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:101
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:102
+msgid "concrete5 Cache Settings"
+msgstr "concrete5 välimuistiasetukset"
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:103
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:104
+#: concrete/elements/permission/duration.php:150
+msgid "On"
+msgstr "Ajankohtana"
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:103
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:104
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:105
+#: concrete/single_pages/dashboard/system/registration/public_registration.php:17
+msgid "Off"
+msgstr "Pois päältä"
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:103
+#, php-format
+msgid "Block Cache - %s"
+msgstr "Lohkon välimuisti - %s"
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:104
+#, php-format
+msgid "Overrides Cache - %s"
+msgstr "Ylikirjoitusten välimuisti - %s"
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:105
+#: concrete/single_pages/dashboard/system/optimization/cache.php:56
+msgid "On - If blocks on the particular page allow it."
+msgstr "Päällä - Jos sivun lohko sallii sen."
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:105
+#: concrete/single_pages/dashboard/system/optimization/cache.php:62
+msgid "On - In all cases."
+msgstr "Päällä - Kaikissa tapauksissa."
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:105
+#, php-format
+msgid "Full Page Caching - %s"
+msgstr "Koko sivun välimuisti - %s"
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:107
+#: concrete/single_pages/dashboard/system/optimization/cache.php:72
+#, php-format
+msgid "Every %s (default setting)."
+msgstr "Joka %s (oletusasetus)"
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:107
+#: concrete/single_pages/dashboard/system/optimization/cache.php:78
+msgid "Only when manually removed or the cache is cleared."
+msgstr "Ainoastaan manuaalisesti poistettaessa tai kun välimuisti tyhjennetään."
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:107
+#, php-format
+msgid "Every %s minute."
+msgstr "Joka %s minuutti."
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:107
+#, php-format
+msgid "Full Page Cache Lifetime - %s"
+msgstr "Koko sivun välimuistin elinikä - %s"
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:112
 msgid "Server Software"
 msgstr "Palvelimen ohjelmisto"
 
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:102
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:113
 msgid "Server API"
 msgstr "Palvelimen API"
 
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:103
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:114
 msgid "PHP Version"
 msgstr "PHP:n versio"
 
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:104
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:115
 msgid "PHP Extensions"
 msgstr "PHP:n lisäosat"
 
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:111
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:122
 msgid "Unable to determine."
 msgstr "Ei voitu määrittää."
 
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:129
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:140
 msgid "PHP Settings"
 msgstr "PHP:n asetukset"
 
@@ -3983,11 +4046,11 @@ msgstr "Työtä ei löydy."
 
 #: concrete/core/controllers/single_pages/dashboard/system/optimization/jobs.php:53
 msgid "Job successfully uninstalled."
-msgstr ""
+msgstr "Työn asennus poistettu onnistuneesti."
 
 #: concrete/core/controllers/single_pages/dashboard/system/optimization/jobs.php:58
 msgid "Job successfully installed."
-msgstr ""
+msgstr "Työ asennettu onnistuneesti."
 
 #: concrete/core/controllers/single_pages/dashboard/system/optimization/jobs.php:71
 msgid "All running jobs have been reset."
@@ -7120,10 +7183,6 @@ msgstr "Viikon päivä"
 #: concrete/elements/permission/duration.php:137
 msgid "months"
 msgstr "kuukautta"
-
-#: concrete/elements/permission/duration.php:150
-msgid "On"
-msgstr "Ajankohtana"
 
 #: concrete/elements/permission/duration.php:170
 msgid "weeks"
@@ -11360,10 +11419,6 @@ msgstr "Määrittele julkiselle rekisteröitymiselle saatavilla olevat vaihtoehd
 msgid "Allow visitors to signup as site members?"
 msgstr "Salli vierailijoiden liittyä jäseniksi sivustolle?"
 
-#: concrete/single_pages/dashboard/system/registration/public_registration.php:17
-msgid "Off"
-msgstr "Pois päältä"
-
 #: concrete/single_pages/dashboard/system/registration/public_registration.php:23
 msgid " On - email validation"
 msgstr "Päällä - sähköpostivahvistus"
@@ -11585,26 +11640,9 @@ msgstr "Pois päältä - hyvä kehitykselle"
 msgid "Off - Turn it on by hand for specific pages."
 msgstr "Pois - Laita päälle käsin tietyillä sivuilla."
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:56
-msgid "On - If blocks on the particular page allow it."
-msgstr "Päällä - Jos sivun lohko sallii sen."
-
-#: concrete/single_pages/dashboard/system/optimization/cache.php:62
-msgid "On - In all cases."
-msgstr "Päällä - Kaikissa tapauksissa."
-
 #: concrete/single_pages/dashboard/system/optimization/cache.php:68
 msgid "Expire Pages from Cache"
 msgstr "Sivut vanhenevat välimuistista"
-
-#: concrete/single_pages/dashboard/system/optimization/cache.php:72
-#, php-format
-msgid "Every %s (default setting)."
-msgstr "Joka %s (oletusasetus)"
-
-#: concrete/single_pages/dashboard/system/optimization/cache.php:78
-msgid "Only when manually removed or the cache is cleared."
-msgstr "Ainoastaan manuaalisesti poistettaessa tai kun välimuisti tyhjennetään."
 
 #: concrete/single_pages/dashboard/system/optimization/cache.php:86
 msgid "Every "

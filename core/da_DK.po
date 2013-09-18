@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2013-09-11 22:00+0000\n"
-"PO-Revision-Date: 2013-09-12 08:50+0000\n"
+"POT-Creation-Date: 2013-09-16 22:00+0000\n"
+"PO-Revision-Date: 2013-09-17 08:51+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Danish (Denmark) (http://www.transifex.com/projects/p/concrete5/language/da_DK/)\n"
 "MIME-Version: 1.0\n"
@@ -3672,27 +3672,90 @@ msgstr "concrete5 Add-on pakker"
 msgid "concrete5 Overrides"
 msgstr "concrete5 Overrides"
 
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:101
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:102
+msgid "concrete5 Cache Settings"
+msgstr ""
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:103
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:104
+#: concrete/elements/permission/duration.php:150
+msgid "On"
+msgstr "Den"
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:103
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:104
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:105
+#: concrete/single_pages/dashboard/system/registration/public_registration.php:17
+msgid "Off"
+msgstr "Off"
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:103
+#, php-format
+msgid "Block Cache - %s"
+msgstr ""
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:104
+#, php-format
+msgid "Overrides Cache - %s"
+msgstr ""
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:105
+#: concrete/single_pages/dashboard/system/optimization/cache.php:56
+msgid "On - If blocks on the particular page allow it."
+msgstr "On - Hvis blocks på den specifikke side tillader det."
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:105
+#: concrete/single_pages/dashboard/system/optimization/cache.php:62
+msgid "On - In all cases."
+msgstr "On - I alle tilfælde."
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:105
+#, php-format
+msgid "Full Page Caching - %s"
+msgstr ""
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:107
+#: concrete/single_pages/dashboard/system/optimization/cache.php:72
+#, php-format
+msgid "Every %s (default setting)."
+msgstr "Hver %s (standardindstilling)."
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:107
+#: concrete/single_pages/dashboard/system/optimization/cache.php:78
+msgid "Only when manually removed or the cache is cleared."
+msgstr "Kun når manuelt fjernet eller cachen er slettet."
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:107
+#, php-format
+msgid "Every %s minute."
+msgstr ""
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:107
+#, php-format
+msgid "Full Page Cache Lifetime - %s"
+msgstr ""
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:112
 msgid "Server Software"
 msgstr "Software på webserver"
 
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:102
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:113
 msgid "Server API"
 msgstr "Webservers API"
 
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:103
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:114
 msgid "PHP Version"
 msgstr "PHP version"
 
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:104
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:115
 msgid "PHP Extensions"
 msgstr "PHP udvidelser"
 
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:111
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:122
 msgid "Unable to determine."
 msgstr "Kan ikke fastlægge."
 
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:129
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:140
 msgid "PHP Settings"
 msgstr "PHP indstillinger"
 
@@ -7118,10 +7181,6 @@ msgstr "Dag i Ugen"
 #: concrete/elements/permission/duration.php:137
 msgid "months"
 msgstr "måneder"
-
-#: concrete/elements/permission/duration.php:150
-msgid "On"
-msgstr "Den"
 
 #: concrete/elements/permission/duration.php:170
 msgid "weeks"
@@ -11358,10 +11417,6 @@ msgstr "Styring af mulighederne for offentlig registrering."
 msgid "Allow visitors to signup as site members?"
 msgstr "Tillad besøgende at tilmelding sig som website medlemmer?"
 
-#: concrete/single_pages/dashboard/system/registration/public_registration.php:17
-msgid "Off"
-msgstr "Off"
-
 #: concrete/single_pages/dashboard/system/registration/public_registration.php:23
 msgid " On - email validation"
 msgstr " On - e-mail validering"
@@ -11583,26 +11638,9 @@ msgstr "Off - God under udvikling."
 msgid "Off - Turn it on by hand for specific pages."
 msgstr "Off - Slå den til manuelt for specifikke sider."
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:56
-msgid "On - If blocks on the particular page allow it."
-msgstr "On - Hvis blocks på den specifikke side tillader det."
-
-#: concrete/single_pages/dashboard/system/optimization/cache.php:62
-msgid "On - In all cases."
-msgstr "On - I alle tilfælde."
-
 #: concrete/single_pages/dashboard/system/optimization/cache.php:68
 msgid "Expire Pages from Cache"
 msgstr "Udløb af Sider fra Cache"
-
-#: concrete/single_pages/dashboard/system/optimization/cache.php:72
-#, php-format
-msgid "Every %s (default setting)."
-msgstr "Hver %s (standardindstilling)."
-
-#: concrete/single_pages/dashboard/system/optimization/cache.php:78
-msgid "Only when manually removed or the cache is cleared."
-msgstr "Kun når manuelt fjernet eller cachen er slettet."
 
 #: concrete/single_pages/dashboard/system/optimization/cache.php:86
 msgid "Every "

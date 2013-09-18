@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2013-09-11 22:00+0000\n"
-"PO-Revision-Date: 2013-09-12 09:03+0000\n"
+"POT-Creation-Date: 2013-09-16 22:00+0000\n"
+"PO-Revision-Date: 2013-09-17 09:54+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Italian (Italy) (http://www.transifex.com/projects/p/concrete5/language/it_IT/)\n"
 "MIME-Version: 1.0\n"
@@ -3670,27 +3670,90 @@ msgstr "Pacchetti di concrete5"
 msgid "concrete5 Overrides"
 msgstr "Ridefinizioni di concrete5"
 
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:101
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:102
+msgid "concrete5 Cache Settings"
+msgstr "Impostazioni cache di concrete5"
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:103
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:104
+#: concrete/elements/permission/duration.php:150
+msgid "On"
+msgstr "Il"
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:103
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:104
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:105
+#: concrete/single_pages/dashboard/system/registration/public_registration.php:17
+msgid "Off"
+msgstr "Disattivato"
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:103
+#, php-format
+msgid "Block Cache - %s"
+msgstr "Cache blocchi - %s"
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:104
+#, php-format
+msgid "Overrides Cache - %s"
+msgstr "Override della cache - %s"
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:105
+#: concrete/single_pages/dashboard/system/optimization/cache.php:56
+msgid "On - If blocks on the particular page allow it."
+msgstr "Attivata: se i blocchi delle specifiche pagine lo permettono."
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:105
+#: concrete/single_pages/dashboard/system/optimization/cache.php:62
+msgid "On - In all cases."
+msgstr "Attiva - In tutti i casi."
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:105
+#, php-format
+msgid "Full Page Caching - %s"
+msgstr "Cache pagine intere - %s"
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:107
+#: concrete/single_pages/dashboard/system/optimization/cache.php:72
+#, php-format
+msgid "Every %s (default setting)."
+msgstr "Ogni %s (impostazione predefinita)."
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:107
+#: concrete/single_pages/dashboard/system/optimization/cache.php:78
+msgid "Only when manually removed or the cache is cleared."
+msgstr "Solo quando rimossa manualmente o quando viene vuotata la cache."
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:107
+#, php-format
+msgid "Every %s minute."
+msgstr "Ogni %s minuto."
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:107
+#, php-format
+msgid "Full Page Cache Lifetime - %s"
+msgstr "Durata cache pagine intere - %s"
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:112
 msgid "Server Software"
 msgstr "Software del server"
 
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:102
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:113
 msgid "Server API"
 msgstr "API server"
 
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:103
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:114
 msgid "PHP Version"
 msgstr "Versione php"
 
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:104
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:115
 msgid "PHP Extensions"
 msgstr "Estensioni php"
 
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:111
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:122
 msgid "Unable to determine."
 msgstr "Impossibile determinare."
 
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:129
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:140
 msgid "PHP Settings"
 msgstr "Impostazioni php"
 
@@ -7116,10 +7179,6 @@ msgstr "Giorno della settimana"
 #: concrete/elements/permission/duration.php:137
 msgid "months"
 msgstr "mesi"
-
-#: concrete/elements/permission/duration.php:150
-msgid "On"
-msgstr "Il"
 
 #: concrete/elements/permission/duration.php:170
 msgid "weeks"
@@ -11356,10 +11415,6 @@ msgstr "Controlla le opzioni disponibili per le registrazioni pubbliche."
 msgid "Allow visitors to signup as site members?"
 msgstr "Permetti ai visitatori di accedere come membri del sito?"
 
-#: concrete/single_pages/dashboard/system/registration/public_registration.php:17
-msgid "Off"
-msgstr "Disattivato"
-
 #: concrete/single_pages/dashboard/system/registration/public_registration.php:23
 msgid " On - email validation"
 msgstr " Attivato - validazione email"
@@ -11581,26 +11636,9 @@ msgstr "Disattiva - Preferibile durante lo sviluppo."
 msgid "Off - Turn it on by hand for specific pages."
 msgstr "Disattiva - Attivata manualmente per pagine specifiche."
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:56
-msgid "On - If blocks on the particular page allow it."
-msgstr "Attivata: se i blocchi delle specifiche pagine lo permettono."
-
-#: concrete/single_pages/dashboard/system/optimization/cache.php:62
-msgid "On - In all cases."
-msgstr "Attiva - In tutti i casi."
-
 #: concrete/single_pages/dashboard/system/optimization/cache.php:68
 msgid "Expire Pages from Cache"
 msgstr "Fai scadere le pagine nella cache"
-
-#: concrete/single_pages/dashboard/system/optimization/cache.php:72
-#, php-format
-msgid "Every %s (default setting)."
-msgstr "Ogni %s (impostazione predefinita)."
-
-#: concrete/single_pages/dashboard/system/optimization/cache.php:78
-msgid "Only when manually removed or the cache is cleared."
-msgstr "Solo quando rimossa manualmente o quando viene vuotata la cache."
 
 #: concrete/single_pages/dashboard/system/optimization/cache.php:86
 msgid "Every "

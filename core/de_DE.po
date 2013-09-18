@@ -15,8 +15,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2013-09-11 22:00+0000\n"
-"PO-Revision-Date: 2013-09-12 08:51+0000\n"
+"POT-Creation-Date: 2013-09-16 22:00+0000\n"
+"PO-Revision-Date: 2013-09-17 09:32+0000\n"
 "Last-Translator: Torsten Silbermann <mail@tsilbermann.de>\n"
 "Language-Team: German (Germany) (http://www.transifex.com/projects/p/concrete5/language/de_DE/)\n"
 "MIME-Version: 1.0\n"
@@ -3670,7 +3670,7 @@ msgstr "URL-Umschreibung deaktiviert"
 
 #: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:10
 msgid "concrete5 Version"
-msgstr "Version von concrete5"
+msgstr "concrete5-Version"
 
 #: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:11
 msgid "concrete5 Packages"
@@ -3680,27 +3680,90 @@ msgstr "concrete5-Pakete"
 msgid "concrete5 Overrides"
 msgstr "concrete5-Overrides"
 
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:101
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:102
+msgid "concrete5 Cache Settings"
+msgstr "concrete5 Cache-Einstellungen"
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:103
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:104
+#: concrete/elements/permission/duration.php:150
+msgid "On"
+msgstr "Am"
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:103
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:104
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:105
+#: concrete/single_pages/dashboard/system/registration/public_registration.php:17
+msgid "Off"
+msgstr "Aus"
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:103
+#, php-format
+msgid "Block Cache - %s"
+msgstr "Block-Cache - %s"
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:104
+#, php-format
+msgid "Overrides Cache - %s"
+msgstr "Overrides-Cache - %s"
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:105
+#: concrete/single_pages/dashboard/system/optimization/cache.php:56
+msgid "On - If blocks on the particular page allow it."
+msgstr "An - Nur wenn die Blöcke der jeweiligen Seite es erlauben"
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:105
+#: concrete/single_pages/dashboard/system/optimization/cache.php:62
+msgid "On - In all cases."
+msgstr "An – In allen Fällen"
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:105
+#, php-format
+msgid "Full Page Caching - %s"
+msgstr "Seiten-Cache - %s"
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:107
+#: concrete/single_pages/dashboard/system/optimization/cache.php:72
+#, php-format
+msgid "Every %s (default setting)."
+msgstr "Alle %s (Standardeinstellung)"
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:107
+#: concrete/single_pages/dashboard/system/optimization/cache.php:78
+msgid "Only when manually removed or the cache is cleared."
+msgstr "Nur wenn eine Seite manuell aus dem Cache entfernt oder der gesamte Cache geleert wird."
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:107
+#, php-format
+msgid "Every %s minute."
+msgstr "Alle %s Minuten"
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:107
+#, php-format
+msgid "Full Page Cache Lifetime - %s"
+msgstr "Laufzeit des Seiten-Cache - %s"
+
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:112
 msgid "Server Software"
 msgstr "Server-Software"
 
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:102
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:113
 msgid "Server API"
 msgstr "Server-API"
 
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:103
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:114
 msgid "PHP Version"
 msgstr "PHP-Version"
 
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:104
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:115
 msgid "PHP Extensions"
 msgstr "PHP-Erweiterungen"
 
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:111
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:122
 msgid "Unable to determine."
 msgstr "Konnte nicht bestimmt werden"
 
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:129
+#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:140
 msgid "PHP Settings"
 msgstr "PHP-Einstellungen"
 
@@ -3842,7 +3905,7 @@ msgstr "Sie dürfen nur Aktualisierungen anwenden, die eine höhere Versionsnumm
 msgid ""
 "Unable to write to config/site.php. You must make config/site.php writable "
 "in order to upgrade in this manner."
-msgstr "Kann in die Datei config/site.php nicht schreiben. Sie müssen die Datei config/site.php schreibbar (CHMOD) machen, um in dieser Weise ein Upgrade durchzuführen."
+msgstr "Die Datei config/site.php ist nicht beschreibbar. Um eine Aktualisierung durchführen zu können, müssen die Schreibrechte für diese Datei geändert werden."
 
 #: concrete/core/controllers/single_pages/dashboard/system/attributes/sets.php:39
 msgid "Attribute set added."
@@ -6337,7 +6400,7 @@ msgstr "Die neueste Version von concrete5 ist <strong>%s</strong>. Sie verwenden
 msgid ""
 "You have downloaded a new version of concrete5 but have not upgraded to it "
 "yet. <a href=\"%s\">Upgrade your site to %s now</a>!"
-msgstr "Sie haben eine neue concrete5-Version heruntergeladen, die Aktualisierung jedoch noch nicht ausgeführt. <a href=\"%s\">Aktualisieren Sie ihre Seite auf %s jetzt</a>!"
+msgstr "Sie haben eine neue concrete5-Version heruntergeladen, die Aktualisierung jedoch noch nicht durchgeführt. <a href=\"%s\">Aktualisieren Sie ihre Seite auf %s jetzt</a>!"
 
 #: concrete/elements/dashboard/notification_list.php:46
 msgid "Yesterday"
@@ -7127,10 +7190,6 @@ msgstr "Wochentag"
 msgid "months"
 msgstr "Monate"
 
-#: concrete/elements/permission/duration.php:150
-msgid "On"
-msgstr "Am"
-
 #: concrete/elements/permission/duration.php:170
 msgid "weeks"
 msgstr "Wochen"
@@ -7745,7 +7804,7 @@ msgid ""
 "To view this guestbook, visit: \n"
 "%s \n"
 "\n"
-msgstr "\nEs gibt eine neues Kommentar im Gästebuch.\n\n%s\n\nUm das Gästebuch zu sehen, besuchen Sie: \n%s \n\n"
+msgstr "\nEs gibt einen neuen Kommentar im Gästebuch.\n\n%s\n\nUm das Gästebuch zu sehen, besuchen Sie: \n%s \n\n"
 
 #: concrete/mail/block_form_submission.php:10
 #, php-format
@@ -9046,7 +9105,7 @@ msgstr "concrete5"
 msgid ""
 "You have downloaded a new version of concrete5 but have not upgraded to it "
 "yet."
-msgstr "Eine neue concrete5-Version wurde heruntergeladen, die Aktualisierung jedoch noch nicht ausgeführt."
+msgstr "Eine neue concrete5-Version wurde heruntergeladen, die Aktualisierung jedoch noch nicht durchgeführt."
 
 #: concrete/blocks/dashboard_app_status/view.php:11
 msgid "Update concrete5."
@@ -11366,10 +11425,6 @@ msgstr "Optionen für die offene Registrierung verwalten."
 msgid "Allow visitors to signup as site members?"
 msgstr "Registrierung von Besuchern als Benutzer erlauben?"
 
-#: concrete/single_pages/dashboard/system/registration/public_registration.php:17
-msgid "Off"
-msgstr "Aus"
-
 #: concrete/single_pages/dashboard/system/registration/public_registration.php:23
 msgid " On - email validation"
 msgstr "An – Mit Überprüfung der E-Mail-Adresse"
@@ -11591,26 +11646,9 @@ msgstr "Aus – Zu empfehlen beim Erstellen der Website"
 msgid "Off - Turn it on by hand for specific pages."
 msgstr "Aus – Kann für einzelne Seiten über die Seiteneigenschaften aktiviert werden"
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:56
-msgid "On - If blocks on the particular page allow it."
-msgstr "An - Nur wenn die Blöcke der jeweiligen Seite es erlauben"
-
-#: concrete/single_pages/dashboard/system/optimization/cache.php:62
-msgid "On - In all cases."
-msgstr "An – In allen Fällen"
-
 #: concrete/single_pages/dashboard/system/optimization/cache.php:68
 msgid "Expire Pages from Cache"
 msgstr "Wann soll der Cache ablaufen?"
-
-#: concrete/single_pages/dashboard/system/optimization/cache.php:72
-#, php-format
-msgid "Every %s (default setting)."
-msgstr "Alle %s (Standardeinstellung)"
-
-#: concrete/single_pages/dashboard/system/optimization/cache.php:78
-msgid "Only when manually removed or the cache is cleared."
-msgstr "Nur wenn eine Seite manuell aus dem Cache entfernt oder der gesamte Cache geleert wird."
 
 #: concrete/single_pages/dashboard/system/optimization/cache.php:86
 msgid "Every "
@@ -13890,7 +13928,7 @@ msgstr "Erstellen Sie eine Sicherung Ihrer Websitedatenbank. Dies funktioniert f
 
 #: concrete/helpers/concrete/interface/help.php:78
 msgid "Download the latest version of concrete5 and upgrade your site."
-msgstr "Sie haben eine neue concrete5-Version heruntergeladen, die Aktualisierung jedoch noch nicht ausgeführt."
+msgstr "Sie haben eine neue concrete5-Version heruntergeladen, die Aktualisierung jedoch noch nicht durchgeführt."
 
 #: concrete/helpers/concrete/interface/help.php:79
 msgid ""
