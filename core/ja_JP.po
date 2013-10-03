@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2013-09-24 22:00+0000\n"
-"PO-Revision-Date: 2013-09-25 08:49+0000\n"
+"POT-Creation-Date: 2013-10-02 07:09+0000\n"
+"PO-Revision-Date: 2013-10-02 08:49+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/projects/p/concrete5/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
@@ -131,6 +131,7 @@ msgstr "降順"
 #: concrete/elements/permission/lists/block.php:64
 #: concrete/elements/permission/lists/collection.php:104
 #: concrete/elements/permission/lists/file.php:63
+#: concrete/elements/permission/lists/tree/node.php:62
 #: concrete/models/attribute/types/select/type_form.php:35
 #: concrete/single_pages/dashboard/blocks/permissions.php:22
 #: concrete/single_pages/dashboard/composer/write.php:159
@@ -337,6 +338,7 @@ msgstr "アップロード開始"
 #: concrete/elements/permission/lists/block.php:63
 #: concrete/elements/permission/lists/collection.php:103
 #: concrete/elements/permission/lists/file.php:62
+#: concrete/elements/permission/lists/tree/node.php:61
 #: concrete/models/attribute/types/select/type_form.php:34
 #: concrete/single_pages/dashboard/blocks/permissions.php:21
 #: concrete/single_pages/dashboard/extend/install.php:43
@@ -366,6 +368,7 @@ msgstr "アップロード開始"
 #: concrete/tools/pages/speed_settings.php:176
 #: concrete/tools/permissions/access_entity.php:107
 #: concrete/tools/permissions/dialogs/access/entity/types/group_combination.php:74
+#: concrete/tools/tree/node/remove.php:18
 #: concrete/tools/users/bulk_activate.php:58
 #: concrete/tools/users/bulk_deactivate.php:68
 #: concrete/tools/users/bulk_delete.php:66
@@ -1041,6 +1044,17 @@ msgstr "マーケットプレイスで見る"
 #: concrete/tools/marketplace/details.php:120
 msgid "Invalid marketplace item."
 msgstr "マーケットプレイスの項目が不正です。"
+
+#: concrete/tools/tree/node/remove.php:15
+msgid ""
+"Are you sure you want to remove this node? It will not remove any resources "
+"from the system but it will remove all subcategories and their catalog "
+"resource references."
+msgstr ""
+
+#: concrete/tools/tree/node/remove.php:19
+msgid "Remove Node"
+msgstr ""
 
 #: concrete/elements/block_area_layout.php:23
 #: concrete/tools/layout_services.php:43
@@ -2470,7 +2484,7 @@ msgid ""
 "selected pages."
 msgstr "選択されたページのページタイプ、もしくはテーマを変更する権限がありません。"
 
-#: concrete/elements/collection_add.php:179
+#: concrete/elements/collection_add.php:198
 #: concrete/elements/collection_theme.php:52
 #: concrete/elements/collection_theme.php:61
 #: concrete/elements/collection_theme.php:68
@@ -3057,11 +3071,11 @@ msgstr "同じ階層ページへのリンク"
 msgid "Next & Previous Nav"
 msgstr "「次へ」「前へ」ナビ"
 
-#: concrete/core/controllers/blocks/date_nav.php:27
+#: concrete/core/controllers/blocks/date_nav.php:28
 msgid "A collapsible date based navigation tree"
 msgstr "伸縮する日付ナビ"
 
-#: concrete/core/controllers/blocks/date_nav.php:31
+#: concrete/core/controllers/blocks/date_nav.php:32
 msgid "Date Navigation"
 msgstr "日付ナビ"
 
@@ -4480,7 +4494,7 @@ msgid "You must select a valid sample content starting point."
 msgstr "有効なサンプルコンテンツを選択してください。"
 
 #: concrete/core/controllers/single_pages/install.php:212
-#: concrete/core/libraries/loader.php:265
+#: concrete/core/libraries/loader.php:264
 msgid "Unable to connect to database."
 msgstr "データベースに接続できません。"
 
@@ -4700,6 +4714,10 @@ msgstr "から"
 msgid " on "
 msgstr " - "
 
+#: concrete/core/models/tree/node/types/category.php:8
+msgid "Categories"
+msgstr ""
+
 #: concrete/core/models/file_version.php:94
 msgid "KB"
 msgstr "KB"
@@ -4773,7 +4791,7 @@ msgid "No Name"
 msgstr "名前なし"
 
 #: concrete/core/models/permission/response.php:66
-#: concrete/core/models/permissions.php:71
+#: concrete/core/models/permissions.php:73
 #, php-format
 msgid "Unable to get permission key for %s"
 msgstr "%s のパーミッションキーの取得に失敗しました。"
@@ -5312,51 +5330,51 @@ msgstr "Captchaをクリックすると違う文字候補が出てきます。"
 msgid "Please type the letters and numbers shown in the image."
 msgstr "画像中の文字と数字を入力してください。"
 
-#: concrete/core/models/package.php:312
+#: concrete/core/models/package.php:318
 #, php-format
 msgid "%s (%s)"
 msgstr "%s (%s)"
 
-#: concrete/core/models/package.php:317
+#: concrete/core/models/package.php:323
 #, php-format
 msgid " %s (%s)"
 msgstr " %s (%s)"
 
-#: concrete/core/models/package.php:502
+#: concrete/core/models/package.php:510
 msgid "You've already installed that package."
 msgstr "そのパッケージはすでにインストールされています。"
 
-#: concrete/core/models/package.php:503
+#: concrete/core/models/package.php:511
 msgid "Invalid Package."
 msgstr "無効なパッケージです。"
 
-#: concrete/core/models/package.php:504
+#: concrete/core/models/package.php:512
 #, php-format
 msgid "This package requires concrete5 version %s or greater."
 msgstr "このパッケージはconcrete5のバージョン %s 以上が必要です。"
 
-#: concrete/core/models/package.php:505
+#: concrete/core/models/package.php:513
 msgid "An error occurred while downloading the package."
 msgstr "パッケージのダウンロード中にエラーが発生しました。"
 
-#: concrete/core/models/package.php:506
+#: concrete/core/models/package.php:514
 msgid "concrete5 was not able to save the package after download."
 msgstr "concrete5がダウンロード後のパッケージを保存できませんでした。"
 
-#: concrete/core/models/package.php:507
+#: concrete/core/models/package.php:515
 msgid "An error occurred while trying to unzip the package."
 msgstr "パッケージのZIPファイルを解凍中にエラーが発生しました。"
 
-#: concrete/core/models/package.php:508
+#: concrete/core/models/package.php:516
 msgid "An error occurred while trying to install the package."
 msgstr "パッケージのインストール中にエラーが発生しました。"
 
-#: concrete/core/models/package.php:509
+#: concrete/core/models/package.php:517
 #, php-format
 msgid "Unable to backup old package directory to %s"
 msgstr "旧パッケージを「%s」ディレクトリーにバックアップできませんでした。"
 
-#: concrete/core/models/package.php:510
+#: concrete/core/models/package.php:518
 msgid ""
 "This package isn't currently available for this version of concrete5. Please"
 " contact the maintainer of this package for assistance."
@@ -5431,7 +5449,7 @@ msgstr "ハンドルに %s を持つ属性はすでに存在します。"
 msgid "Illegal variable name '%s' in element args."
 msgstr "エレメントの引数「%s」は不正な変数名です。"
 
-#: concrete/core/libraries/loader.php:265
+#: concrete/core/libraries/loader.php:264
 msgid "A database error occurred while processing this request."
 msgstr "リクエストの処理中にデータベースエラーが発生しました。"
 
@@ -5459,7 +5477,7 @@ msgstr "%s の最新バージョンがリリースされました。"
 msgid "New Version: %s."
 msgstr "新バージョン： %s."
 
-#: concrete/core/libraries/controller.php:436
+#: concrete/core/libraries/controller.php:439
 msgid "Invalid Redirect URL"
 msgstr "無効なリダイレクトURL"
 
@@ -6551,7 +6569,7 @@ msgstr "%sに追加"
 msgid "URL Slug"
 msgstr "URLスラッグ"
 
-#: concrete/elements/collection_add.php:199
+#: concrete/elements/collection_add.php:218
 #, php-format
 msgid "Add %s"
 msgstr "%sを追加"
@@ -7225,18 +7243,33 @@ msgstr "ワークフロー"
 msgid "Attach a workflow to this permission?"
 msgstr "この権限にワークフローを適用しますか？"
 
-#: concrete/elements/permission/lists/file.php:12
+#: concrete/elements/permission/lists/tree/node.php:10
+#, php-format
 msgid ""
-"Permissions for this file are currently dependent on file sets and global "
-"file permissions."
-msgstr "現在このファイルの権限は、ファイルセットとグローバルファイル権限設定に依存しています。"
+"Permissions for this node are currently inherited from <strong>%s</strong>."
+msgstr ""
 
 #: concrete/elements/permission/lists/area.php:22
 #: concrete/elements/permission/lists/area.php:32
 #: concrete/elements/permission/lists/block.php:15
 #: concrete/elements/permission/lists/file.php:15
+#: concrete/elements/permission/lists/tree/node.php:12
 msgid "Override Permissions"
 msgstr "権限を上書き"
+
+#: concrete/elements/permission/lists/tree/node.php:20
+msgid "Permissions for this node currently override its parents' permissions."
+msgstr ""
+
+#: concrete/elements/permission/lists/tree/node.php:23
+msgid "Revert to Parent Permisisons"
+msgstr ""
+
+#: concrete/elements/permission/lists/file.php:12
+msgid ""
+"Permissions for this file are currently dependent on file sets and global "
+"file permissions."
+msgstr "現在このファイルの権限は、ファイルセットとグローバルファイル権限設定に依存しています。"
 
 #: concrete/elements/permission/lists/file.php:23
 msgid ""

@@ -15,8 +15,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2013-09-26 22:00+0000\n"
-"PO-Revision-Date: 2013-09-28 05:09+0000\n"
+"POT-Creation-Date: 2013-10-02 07:09+0000\n"
+"PO-Revision-Date: 2013-10-02 09:15+0000\n"
 "Last-Translator: Torsten Silbermann <mail@tsilbermann.de>\n"
 "Language-Team: German (Germany) (http://www.transifex.com/projects/p/concrete5/language/de_DE/)\n"
 "MIME-Version: 1.0\n"
@@ -134,6 +134,7 @@ msgstr "Absteigend"
 #: concrete/elements/permission/lists/block.php:64
 #: concrete/elements/permission/lists/collection.php:104
 #: concrete/elements/permission/lists/file.php:63
+#: concrete/elements/permission/lists/tree/node.php:62
 #: concrete/models/attribute/types/select/type_form.php:35
 #: concrete/single_pages/dashboard/blocks/permissions.php:22
 #: concrete/single_pages/dashboard/composer/write.php:159
@@ -340,6 +341,7 @@ msgstr "Upload starten"
 #: concrete/elements/permission/lists/block.php:63
 #: concrete/elements/permission/lists/collection.php:103
 #: concrete/elements/permission/lists/file.php:62
+#: concrete/elements/permission/lists/tree/node.php:61
 #: concrete/models/attribute/types/select/type_form.php:34
 #: concrete/single_pages/dashboard/blocks/permissions.php:21
 #: concrete/single_pages/dashboard/extend/install.php:43
@@ -369,6 +371,7 @@ msgstr "Upload starten"
 #: concrete/tools/pages/speed_settings.php:176
 #: concrete/tools/permissions/access_entity.php:107
 #: concrete/tools/permissions/dialogs/access/entity/types/group_combination.php:74
+#: concrete/tools/tree/node/remove.php:18
 #: concrete/tools/users/bulk_activate.php:58
 #: concrete/tools/users/bulk_deactivate.php:68
 #: concrete/tools/users/bulk_delete.php:66
@@ -1048,6 +1051,17 @@ msgstr "Im Marketplace ansehen"
 msgid "Invalid marketplace item."
 msgstr "Ungültige Marketplace-Element-ID"
 
+#: concrete/tools/tree/node/remove.php:15
+msgid ""
+"Are you sure you want to remove this node? It will not remove any resources "
+"from the system but it will remove all subcategories and their catalog "
+"resource references."
+msgstr "Möchten Sie diesen Knoten wirklich entfernen? Es werden keine Ressourcen aus dem System entfernt, jedoch die Unterkategorien und die Verweise auf die Katalogrecourcen."
+
+#: concrete/tools/tree/node/remove.php:19
+msgid "Remove Node"
+msgstr "Knoten entfernen"
+
 #: concrete/elements/block_area_layout.php:23
 #: concrete/tools/layout_services.php:43
 msgid "Error: Layout not found"
@@ -1186,12 +1200,12 @@ msgstr "Sie haben beantragt, die Seite \"%s\" unter \"%s\" zu verschieben. Ein B
 
 #: concrete/tools/dashboard/sitemap_drag_request.php:163
 msgid "What do you wish to do?"
-msgstr "Was wollen Sie tun?"
+msgstr "Was möchten Sie tun?"
 
 #: concrete/tools/dashboard/sitemap_drag_request.php:165
 #, php-format
 msgid "You dragged \"%s\" onto \"%s.\" What do you wish to do?"
-msgstr "Sie haben \"%s\" auf \"%s\" gezogen. Was wollen Sie tun?"
+msgstr "Sie haben \"%s\" auf \"%s\" gezogen. Was möchten Sie tun?"
 
 #: concrete/tools/dashboard/sitemap_drag_request.php:178
 #: concrete/tools/i18n_js.php:37
@@ -1505,7 +1519,7 @@ msgid ""
 "version.<br/><br/>Anyone who can't edit this page sees this active version "
 "if permissions allow. Your edits are always made to the latest version. If "
 "you'd like to start editing from an old version, copy that version."
-msgstr "Dies sind frühere Versionen dieser Seite. Die fettgedruckte Zeile ist die aktuelle Version<br/><br/>Jeder, der diese Seite nicht bearbeiten darf, sieht diese aktive Version, sofern er dazu berechtigt ist. Ihre Bearbeitungen werden jeweils auf Basis der aktuellen Version ausgeführt. Wenn Sie von einer älteren Version ausgehend Bearbeitungen vornehmen wollen, kopieren Sie zunächst die gewünschte Version."
+msgstr "Dies sind frühere Versionen dieser Seite. Die fettgedruckte Zeile ist die aktuelle Version<br/><br/>Jeder, der diese Seite nicht bearbeiten darf, sieht diese aktive Version, sofern er dazu berechtigt ist. Ihre Bearbeitungen werden jeweils auf Basis der aktuellen Version ausgeführt. Wenn Sie von einer älteren Version ausgehend Bearbeitungen vornehmen möchten, kopieren Sie zunächst die gewünschte Version."
 
 #: concrete/tools/edit_collection_popup.php:126
 #: concrete/tools/versions.php:333
@@ -1769,7 +1783,7 @@ msgstr "Layout löschen"
 
 #: concrete/tools/i18n_js.php:25
 msgid "Are you sure you want to delete this layout preset?"
-msgstr "Wollen Sie diese Layoutvorgabe wirklich löschen?"
+msgstr "Möchten Sie diese Layoutvorgabe wirklich löschen?"
 
 #: concrete/tools/i18n_js.php:26 concrete/tools/i18n_js.php:46
 #: concrete/tools/i18n_js.php:104
@@ -1851,11 +1865,11 @@ msgstr "Blockstile definieren"
 
 #: concrete/tools/i18n_js.php:44
 msgid "Are you sure you want to remove all of these custom styles?"
-msgstr "Wollen Sie diese individuellen Stile wirklich entfernen?"
+msgstr "Möchten Sie diese individuellen Stile wirklich entfernen?"
 
 #: concrete/tools/i18n_js.php:45
 msgid "Are you sure you want to delete this custom style preset?"
-msgstr "Wollen Sie alle diese individuellen Stilvorgaben wirklich löschen?"
+msgstr "Möchten Sie alle diese individuellen Stilvorgaben wirklich löschen?"
 
 #: concrete/tools/i18n_js.php:47
 msgid "Setup on Child Pages"
@@ -3066,11 +3080,11 @@ msgstr "Durch benachbarte Seiten navigieren"
 msgid "Next & Previous Nav"
 msgstr "Weiter- & Zurück-Navigation"
 
-#: concrete/core/controllers/blocks/date_nav.php:27
+#: concrete/core/controllers/blocks/date_nav.php:28
 msgid "A collapsible date based navigation tree"
 msgstr "Ein ausklappbarer, datumsbasierter Navigationsbaum"
 
-#: concrete/core/controllers/blocks/date_nav.php:31
+#: concrete/core/controllers/blocks/date_nav.php:32
 msgid "Date Navigation"
 msgstr "Datumsnavigation"
 
@@ -4489,7 +4503,7 @@ msgid "You must select a valid sample content starting point."
 msgstr "Es muss ein gültiger Beispielinhalt ausgewählt werden."
 
 #: concrete/core/controllers/single_pages/install.php:212
-#: concrete/core/libraries/loader.php:265
+#: concrete/core/libraries/loader.php:264
 msgid "Unable to connect to database."
 msgstr "Verbindung zur Datenbank konnte nicht hergestellt werden."
 
@@ -4711,6 +4725,10 @@ msgstr "bis"
 msgid " on "
 msgstr " am "
 
+#: concrete/core/models/tree/node/types/category.php:8
+msgid "Categories"
+msgstr "Kategorien"
+
 #: concrete/core/models/file_version.php:94
 msgid "KB"
 msgstr "KB"
@@ -4784,7 +4802,7 @@ msgid "No Name"
 msgstr "Kein Name"
 
 #: concrete/core/models/permission/response.php:66
-#: concrete/core/models/permissions.php:71
+#: concrete/core/models/permissions.php:73
 #, php-format
 msgid "Unable to get permission key for %s"
 msgstr "Der Berechtigungsschlüssel für %s konnte nicht abgerufen werden."
@@ -5323,51 +5341,51 @@ msgstr "Bitte klicken Sie das Bild an, um einen neuen Sicherheitscode zu laden."
 msgid "Please type the letters and numbers shown in the image."
 msgstr "Bitte geben Sie die Zeichen ein, die im Sicherheitscode dargestellt sind."
 
-#: concrete/core/models/package.php:312
+#: concrete/core/models/package.php:318
 #, php-format
 msgid "%s (%s)"
 msgstr "%s (%s)"
 
-#: concrete/core/models/package.php:317
+#: concrete/core/models/package.php:323
 #, php-format
 msgid " %s (%s)"
 msgstr " %s (%s)"
 
-#: concrete/core/models/package.php:502
+#: concrete/core/models/package.php:510
 msgid "You've already installed that package."
 msgstr "Dieses Paket ist bereits installiert."
 
-#: concrete/core/models/package.php:503
+#: concrete/core/models/package.php:511
 msgid "Invalid Package."
 msgstr "Ungültiges Paket"
 
-#: concrete/core/models/package.php:504
+#: concrete/core/models/package.php:512
 #, php-format
 msgid "This package requires concrete5 version %s or greater."
 msgstr "Dieses Paket kann nur in concrete5 ab Version %s verwendet werden."
 
-#: concrete/core/models/package.php:505
+#: concrete/core/models/package.php:513
 msgid "An error occurred while downloading the package."
 msgstr "Beim Herunterladen des Paketes ist ein Fehler aufgetreten."
 
-#: concrete/core/models/package.php:506
+#: concrete/core/models/package.php:514
 msgid "concrete5 was not able to save the package after download."
 msgstr "concrete5 konnte das Paket nach dem Herunterladen nicht speichern."
 
-#: concrete/core/models/package.php:507
+#: concrete/core/models/package.php:515
 msgid "An error occurred while trying to unzip the package."
 msgstr "Beim Entpacken des Paketes ist ein Fehler aufgetreten."
 
-#: concrete/core/models/package.php:508
+#: concrete/core/models/package.php:516
 msgid "An error occurred while trying to install the package."
 msgstr "Beim Installieren des Paketes ist ein Fehler aufgetreten."
 
-#: concrete/core/models/package.php:509
+#: concrete/core/models/package.php:517
 #, php-format
 msgid "Unable to backup old package directory to %s"
 msgstr "Das alte Paketverzeichnis konnte nicht nach %s verschoben werden."
 
-#: concrete/core/models/package.php:510
+#: concrete/core/models/package.php:518
 msgid ""
 "This package isn't currently available for this version of concrete5. Please"
 " contact the maintainer of this package for assistance."
@@ -5442,7 +5460,7 @@ msgstr "Ein Attribut mit der Kennung %s existiert schon."
 msgid "Illegal variable name '%s' in element args."
 msgstr "Ungültiger Name '%s' in Element Parametern."
 
-#: concrete/core/libraries/loader.php:265
+#: concrete/core/libraries/loader.php:264
 msgid "A database error occurred while processing this request."
 msgstr "Ein Datenbankfehler ist aufgetreten während diese Anfrage ausgeführt wurde."
 
@@ -5470,7 +5488,7 @@ msgstr "Eine neue Version von %s ist verfügbar."
 msgid "New Version: %s."
 msgstr "Neue Version: %s"
 
-#: concrete/core/libraries/controller.php:436
+#: concrete/core/libraries/controller.php:439
 msgid "Invalid Redirect URL"
 msgstr "Unzulässige Umleitungs-URL"
 
@@ -5862,7 +5880,7 @@ msgstr "von"
 
 #: concrete/elements/attribute/type_form_required.php:30
 msgid "Are you sure you want to remove this attribute?"
-msgstr "Wollen Sie dieses Attribut wirklich löschen?"
+msgstr "Möchten Sie dieses Attribut wirklich löschen?"
 
 #: concrete/elements/attribute/type_form_required.php:40
 msgid "Delete Attribute"
@@ -6916,7 +6934,7 @@ msgstr "Erweitert"
 #: concrete/elements/block_controls.php:25
 #: concrete/elements/block_controls.php:30
 msgid "Do you want to delete this block?"
-msgstr "Wollen Sie diesen Block löschen?"
+msgstr "Möchten Sie diesen Block löschen?"
 
 #: concrete/elements/block_controls.php:27
 msgid ""
@@ -6928,7 +6946,7 @@ msgstr "Zu diesem Block existieren Aliasse. Wenn Sie diesen Block bearbeiten, we
 msgid ""
 "Do you want to delete this block? This item is an original. If you delete "
 "it, you will delete all blocks aliased to it"
-msgstr "Wollen Sie diesen Block löschen? Dieser Eintrag ist ein Original. Falls Sie es löschen, werden alle Aliasse dieses Blockes ebenfalls gelöscht."
+msgstr "Möchten Sie diesen Block löschen? Dieser Eintrag ist ein Original. Falls Sie es löschen, werden alle Aliasse dieses Blockes ebenfalls gelöscht."
 
 #: concrete/elements/permission/help.php:3
 #: concrete/elements/permission/help.php:4
@@ -7240,18 +7258,33 @@ msgstr "Arbeitsablauf"
 msgid "Attach a workflow to this permission?"
 msgstr "Soll dieser Berechtigung ein Arbeitsablauf hinzugefügt werden?"
 
-#: concrete/elements/permission/lists/file.php:12
+#: concrete/elements/permission/lists/tree/node.php:10
+#, php-format
 msgid ""
-"Permissions for this file are currently dependent on file sets and global "
-"file permissions."
-msgstr "Die Berechtigungen dieser Datei werden momentan von den Berechtigungen der Dateialben bzw. den globalen Dateiberechtigungen bestimmt."
+"Permissions for this node are currently inherited from <strong>%s</strong>."
+msgstr "Die Berechtigungen für diesen Knoten werden momentan von <strong>%s</strong> übernommen."
 
 #: concrete/elements/permission/lists/area.php:22
 #: concrete/elements/permission/lists/area.php:32
 #: concrete/elements/permission/lists/block.php:15
 #: concrete/elements/permission/lists/file.php:15
+#: concrete/elements/permission/lists/tree/node.php:12
 msgid "Override Permissions"
 msgstr "Berechtigungen überschreiben"
+
+#: concrete/elements/permission/lists/tree/node.php:20
+msgid "Permissions for this node currently override its parents' permissions."
+msgstr "Die Berechtigungen dieses Knotens überschreiben momentan die des Übergeordneten Knotens"
+
+#: concrete/elements/permission/lists/tree/node.php:23
+msgid "Revert to Parent Permisisons"
+msgstr "Auf übergeordnete Berechtigungen zurücksetzen."
+
+#: concrete/elements/permission/lists/file.php:12
+msgid ""
+"Permissions for this file are currently dependent on file sets and global "
+"file permissions."
+msgstr "Die Berechtigungen dieser Datei werden momentan von den Berechtigungen der Dateialben bzw. den globalen Dateiberechtigungen bestimmt."
 
 #: concrete/elements/permission/lists/file.php:23
 msgid ""
@@ -7312,7 +7345,7 @@ msgstr "Alias oder externen Link löschen?"
 
 #: concrete/elements/block_area_layout_delete_opts.php:16
 msgid "What would you like to do with this layout's blocks?"
-msgstr "Was wollen Sie mit dem Layout der Blöcke machen?"
+msgstr "Was möchten Sie mit dem Layout der Blöcke machen?"
 
 #: concrete/elements/block_area_layout_delete_opts.php:19
 msgid "Move them to the parent area below"
@@ -7329,7 +7362,7 @@ msgstr "Layout entfernen"
 
 #: concrete/elements/block_area_layout_delete_opts.php:31
 msgid "Are you sure you want to delete this layout section?"
-msgstr "Wollen Sie diesen Layoutbereich wirklich löschen?"
+msgstr "Möchten Sie diesen Layoutbereich wirklich löschen?"
 
 #: concrete/blocks/flash_content/view.php:13 concrete/blocks/video/view.php:19
 #: concrete/elements/block_edit_mode_disabled.php:8
@@ -9698,7 +9731,7 @@ msgstr "Dateien im Dateialbum"
 
 #: concrete/single_pages/dashboard/files/sets.php:25
 msgid "Are you sure you want to permanently remove this file set?"
-msgstr "Wollen Sie dieses Dateialbum wirklich unwiderruflich löschen?"
+msgstr "Möchten Sie dieses Dateialbum wirklich unwiderruflich löschen?"
 
 #: concrete/single_pages/dashboard/files/sets.php:53
 msgid "Custom Permissions"
@@ -9841,7 +9874,7 @@ msgstr "Umbennen"
 
 #: concrete/single_pages/dashboard/scrapbook/view.php:190
 msgid "Are you sure you want to permantly delete this scrapbook?"
-msgstr "Wollen Sie diesen Vorlagenkatalog endgültig löschen?"
+msgstr "Möchten Sie diesen Vorlagenkatalog endgültig löschen?"
 
 #: concrete/single_pages/dashboard/scrapbook/view.php:200
 msgid "Add a Global Scrapbook"
@@ -11948,7 +11981,7 @@ msgstr "Datum/Uhrzeit"
 
 #: concrete/single_pages/dashboard/reports/logs.php:58
 msgid "Are you sure you want to clear this log?"
-msgstr "Wollen Sie dieses Protokoll wirklich löschen?"
+msgstr "Möchten Sie dieses Protokoll wirklich löschen?"
 
 #: concrete/single_pages/dashboard/reports/logs.php:58
 msgid "Clear Log"
@@ -11960,11 +11993,11 @@ msgstr " um"
 
 #: concrete/single_pages/dashboard/reports/forms.php:23
 msgid "Are you sure you want to delete this form submission?"
-msgstr "Wollen Sie diesen Eintrag wirklich löschen?"
+msgstr "Möchten Sie diesen Eintrag wirklich löschen?"
 
 #: concrete/single_pages/dashboard/reports/forms.php:24
 msgid "Are you sure you want to delete this form and its form submissions?"
-msgstr "Wollen Sie dieses Formular und sämtliche Einträge dazu wirklich löschen?"
+msgstr "Möchten Sie dieses Formular und sämtliche Einträge dazu wirklich löschen?"
 
 #: concrete/single_pages/dashboard/reports/forms.php:25
 msgid "Are you sure you want to delete this form submissions?"
@@ -12303,7 +12336,7 @@ msgstr "Sonderseite hinzufügen"
 
 #: concrete/single_pages/dashboard/pages/single.php:16
 msgid "The page you want to add is available at:"
-msgstr "Die Seite, die Sie hinzufügen wollen ist verfügbar unter:"
+msgstr "Die Seite, die Sie hinzufügen möchten, ist verfügbar unter:"
 
 #: concrete/single_pages/dashboard/pages/single.php:26
 msgid "Already Installed"
@@ -12373,7 +12406,7 @@ msgstr "Aktualisieren"
 #: concrete/single_pages/upgrade.php:42
 #, php-format
 msgid "<a href=\"%s\">Click here</a> if you would like to re-run this script."
-msgstr "<a href=\"%s\">Bitte klicken Sie hier</a>, falls Sie dieses Skript erneut ausführen wollen."
+msgstr "<a href=\"%s\">Bitte klicken Sie hier</a>, falls Sie dieses Skript erneut ausführen möchten."
 
 #: concrete/single_pages/login.php:18
 #, php-format
@@ -13999,7 +14032,7 @@ msgid ""
 "for this page type are available here. Add blocks to your page type's "
 "defaults. After adding the block, click it and choose the option to make it "
 "available in composer."
-msgstr "Attribute oder Blockbereiche dieses Seitentyps, die mit dem Composer bearbeitet werden können, finden Sie hier. Fügen Sie Blöcke zu den Seitentyp-Standards hinzu. Nachdem Sie einen Block hinzugefügt haben, klicken Sie diesen an und wählen Sie aus, dass sie ihn für den Composer freigeben wollen."
+msgstr "Attribute oder Blockbereiche dieses Seitentyps, die mit dem Composer bearbeitet werden können, finden Sie hier. Fügen Sie Blöcke zu den Seitentyp-Standards hinzu. Nachdem Sie einen Block hinzugefügt haben, klicken Sie diesen an und wählen Sie aus, dass sie ihn für den Composer freigeben möchten."
 
 #: concrete/helpers/concrete/interface/help.php:88
 msgid ""

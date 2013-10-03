@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2013-09-24 22:00+0000\n"
-"PO-Revision-Date: 2013-09-25 13:52+0000\n"
+"POT-Creation-Date: 2013-10-02 07:09+0000\n"
+"PO-Revision-Date: 2013-10-02 09:02+0000\n"
 "Last-Translator: MrLindau <fredrik@fxlindau.se>\n"
 "Language-Team: Swedish (Sweden) (http://www.transifex.com/projects/p/concrete5/language/sv_SE/)\n"
 "MIME-Version: 1.0\n"
@@ -126,6 +126,7 @@ msgstr "Fallande"
 #: concrete/elements/permission/lists/block.php:64
 #: concrete/elements/permission/lists/collection.php:104
 #: concrete/elements/permission/lists/file.php:63
+#: concrete/elements/permission/lists/tree/node.php:62
 #: concrete/models/attribute/types/select/type_form.php:35
 #: concrete/single_pages/dashboard/blocks/permissions.php:22
 #: concrete/single_pages/dashboard/composer/write.php:159
@@ -332,6 +333,7 @@ msgstr "Starta uppladdningar"
 #: concrete/elements/permission/lists/block.php:63
 #: concrete/elements/permission/lists/collection.php:103
 #: concrete/elements/permission/lists/file.php:62
+#: concrete/elements/permission/lists/tree/node.php:61
 #: concrete/models/attribute/types/select/type_form.php:34
 #: concrete/single_pages/dashboard/blocks/permissions.php:21
 #: concrete/single_pages/dashboard/extend/install.php:43
@@ -361,6 +363,7 @@ msgstr "Starta uppladdningar"
 #: concrete/tools/pages/speed_settings.php:176
 #: concrete/tools/permissions/access_entity.php:107
 #: concrete/tools/permissions/dialogs/access/entity/types/group_combination.php:74
+#: concrete/tools/tree/node/remove.php:18
 #: concrete/tools/users/bulk_activate.php:58
 #: concrete/tools/users/bulk_deactivate.php:68
 #: concrete/tools/users/bulk_delete.php:66
@@ -1039,6 +1042,17 @@ msgstr "Visa på marknadsplatsen"
 #: concrete/tools/marketplace/details.php:120
 msgid "Invalid marketplace item."
 msgstr "Ogiltigt objekt på marknadsplatsen."
+
+#: concrete/tools/tree/node/remove.php:15
+msgid ""
+"Are you sure you want to remove this node? It will not remove any resources "
+"from the system but it will remove all subcategories and their catalog "
+"resource references."
+msgstr "Är du säker på att du vill ta bort denna nod? Inga resurser kommer att tas bort från systemet men det kommer att ta bort alla underkategorier och deras referenskatalog. "
+
+#: concrete/tools/tree/node/remove.php:19
+msgid "Remove Node"
+msgstr "Ta bort nod"
 
 #: concrete/elements/block_area_layout.php:23
 #: concrete/tools/layout_services.php:43
@@ -2471,7 +2485,7 @@ msgid ""
 "selected pages."
 msgstr "Du har inte behörighet att ändra sidtyper eller tema på någon utav de valda sidorna."
 
-#: concrete/elements/collection_add.php:179
+#: concrete/elements/collection_add.php:198
 #: concrete/elements/collection_theme.php:52
 #: concrete/elements/collection_theme.php:61
 #: concrete/elements/collection_theme.php:68
@@ -3058,11 +3072,11 @@ msgstr "Navigera genom syskonsidor."
 msgid "Next & Previous Nav"
 msgstr "Navigering till nästa/föregående"
 
-#: concrete/core/controllers/blocks/date_nav.php:27
+#: concrete/core/controllers/blocks/date_nav.php:28
 msgid "A collapsible date based navigation tree"
 msgstr "Ett datumbaserat navigationsträd"
 
-#: concrete/core/controllers/blocks/date_nav.php:31
+#: concrete/core/controllers/blocks/date_nav.php:32
 msgid "Date Navigation"
 msgstr "Datumnavigation"
 
@@ -4481,7 +4495,7 @@ msgid "You must select a valid sample content starting point."
 msgstr "Du måste välja vilken sorts exempelinnehåll du vill ha."
 
 #: concrete/core/controllers/single_pages/install.php:212
-#: concrete/core/libraries/loader.php:265
+#: concrete/core/libraries/loader.php:264
 msgid "Unable to connect to database."
 msgstr "Kunde inte ansluta till databasen."
 
@@ -4703,6 +4717,10 @@ msgstr "till"
 msgid " on "
 msgstr "den"
 
+#: concrete/core/models/tree/node/types/category.php:8
+msgid "Categories"
+msgstr "Kategorier"
+
 #: concrete/core/models/file_version.php:94
 msgid "KB"
 msgstr "KB"
@@ -4776,7 +4794,7 @@ msgid "No Name"
 msgstr "Inget namn"
 
 #: concrete/core/models/permission/response.php:66
-#: concrete/core/models/permissions.php:71
+#: concrete/core/models/permissions.php:73
 #, php-format
 msgid "Unable to get permission key for %s"
 msgstr "Kan inte få behörighetsnyckel för %s"
@@ -5315,51 +5333,51 @@ msgstr "Klicka på bilden för att se en ny captcha."
 msgid "Please type the letters and numbers shown in the image."
 msgstr "Fyll i bokstäverna och siffrorna som visas på bilden."
 
-#: concrete/core/models/package.php:312
+#: concrete/core/models/package.php:318
 #, php-format
 msgid "%s (%s)"
 msgstr "%s (%s)"
 
-#: concrete/core/models/package.php:317
+#: concrete/core/models/package.php:323
 #, php-format
 msgid " %s (%s)"
 msgstr " %s (%s)"
 
-#: concrete/core/models/package.php:502
+#: concrete/core/models/package.php:510
 msgid "You've already installed that package."
 msgstr "Du har redan installerat det paketet."
 
-#: concrete/core/models/package.php:503
+#: concrete/core/models/package.php:511
 msgid "Invalid Package."
 msgstr "Ogiltigt paket."
 
-#: concrete/core/models/package.php:504
+#: concrete/core/models/package.php:512
 #, php-format
 msgid "This package requires concrete5 version %s or greater."
 msgstr "Detta paket kräver concrete5 version %s eller senare."
 
-#: concrete/core/models/package.php:505
+#: concrete/core/models/package.php:513
 msgid "An error occurred while downloading the package."
 msgstr "Ett fel ägde rum när paketet laddades ned."
 
-#: concrete/core/models/package.php:506
+#: concrete/core/models/package.php:514
 msgid "concrete5 was not able to save the package after download."
 msgstr "concrete5 kunde inte spara paketet efter nedladdningen."
 
-#: concrete/core/models/package.php:507
+#: concrete/core/models/package.php:515
 msgid "An error occurred while trying to unzip the package."
 msgstr "Ett fel ägde rum när paketet packades upp med unzip."
 
-#: concrete/core/models/package.php:508
+#: concrete/core/models/package.php:516
 msgid "An error occurred while trying to install the package."
 msgstr "Ett fel ägde rum när paketet skulle installeras."
 
-#: concrete/core/models/package.php:509
+#: concrete/core/models/package.php:517
 #, php-format
 msgid "Unable to backup old package directory to %s"
 msgstr "Kunde inte säkerhetskopiera tidigare paketkatalog till %s"
 
-#: concrete/core/models/package.php:510
+#: concrete/core/models/package.php:518
 msgid ""
 "This package isn't currently available for this version of concrete5. Please"
 " contact the maintainer of this package for assistance."
@@ -5434,7 +5452,7 @@ msgstr "En egenskap med handtaget %s finns redan."
 msgid "Illegal variable name '%s' in element args."
 msgstr "Ogiltigt variabelnamn '% s' i elementet args."
 
-#: concrete/core/libraries/loader.php:265
+#: concrete/core/libraries/loader.php:264
 msgid "A database error occurred while processing this request."
 msgstr "Ett databasfel uppstod under bearbetningen av denna förfrågan."
 
@@ -5462,7 +5480,7 @@ msgstr "En uppdaterad version av %s finns tillgänglig."
 msgid "New Version: %s."
 msgstr "Ny version: %s."
 
-#: concrete/core/libraries/controller.php:436
+#: concrete/core/libraries/controller.php:439
 msgid "Invalid Redirect URL"
 msgstr "Ogiltig URL för omdirigering"
 
@@ -6558,7 +6576,7 @@ msgstr "Lägg till i %s"
 msgid "URL Slug"
 msgstr "URL Slug"
 
-#: concrete/elements/collection_add.php:199
+#: concrete/elements/collection_add.php:218
 #, php-format
 msgid "Add %s"
 msgstr "Lägg till %s"
@@ -7232,18 +7250,33 @@ msgstr "Arbetsflöde"
 msgid "Attach a workflow to this permission?"
 msgstr "Koppla ett arbetsflöde till denna behörighet?"
 
-#: concrete/elements/permission/lists/file.php:12
+#: concrete/elements/permission/lists/tree/node.php:10
+#, php-format
 msgid ""
-"Permissions for this file are currently dependent on file sets and global "
-"file permissions."
-msgstr "Behörigheter för denna fil är just nu beroende på filgrupper och globala filrättigheter."
+"Permissions for this node are currently inherited from <strong>%s</strong>."
+msgstr "Behörighet för denna nod är för tillfället ärvd från <strong>%s</strong>."
 
 #: concrete/elements/permission/lists/area.php:22
 #: concrete/elements/permission/lists/area.php:32
 #: concrete/elements/permission/lists/block.php:15
 #: concrete/elements/permission/lists/file.php:15
+#: concrete/elements/permission/lists/tree/node.php:12
 msgid "Override Permissions"
 msgstr "Åsidosätt behörigheter"
+
+#: concrete/elements/permission/lists/tree/node.php:20
+msgid "Permissions for this node currently override its parents' permissions."
+msgstr "Behörighet för denna nod är för tillfället åsidosatt av dess förälders behörighet. "
+
+#: concrete/elements/permission/lists/tree/node.php:23
+msgid "Revert to Parent Permisisons"
+msgstr "Återgå till förälderns behörighet"
+
+#: concrete/elements/permission/lists/file.php:12
+msgid ""
+"Permissions for this file are currently dependent on file sets and global "
+"file permissions."
+msgstr "Behörigheter för denna fil är just nu beroende på filgrupper och globala filrättigheter."
 
 #: concrete/elements/permission/lists/file.php:23
 msgid ""
