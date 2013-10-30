@@ -2,6 +2,7 @@
 # Translators:
 # cristianfalcone <admin@cristianfalcone.com>, 2012
 # weezero <dgarcia@dasu.com.ar>, 2012
+# José Ricardo Mantilla Mantilla <>, 2013
 # luis.barrueco <luis.barrueco@gmail.com>, 2012
 # Ramiro Castro <castro.ramiro@gmail.com>, 2012
 # xenner <cardosogeller@gmail.com>, 2013
@@ -9,9 +10,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2013-10-07 22:00+0000\n"
-"PO-Revision-Date: 2013-10-08 09:39+0000\n"
-"Last-Translator: Michele Locati <michele@locati.it>\n"
+"POT-Creation-Date: 2013-10-28 23:00+0000\n"
+"PO-Revision-Date: 2013-10-29 23:41+0000\n"
+"Last-Translator: José Ricardo Mantilla Mantilla <>\n"
 "Language-Team: Spanish (Argentina) (http://www.transifex.com/projects/p/concrete5/language/es_AR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1476,6 +1477,8 @@ msgid ""
 " it so changes to Page Defaults will no longer affect this block."
 msgstr "Este bloque es un alias de Predeter. Edición de aquí va a \"desconectar\" de modo cambia los valores predeterminados de la página ya no afecta a este bloque."
 
+#: concrete/single_pages/install.php:67 concrete/single_pages/install.php:125
+#: concrete/single_pages/install.php:317 concrete/single_pages/install.php:446
 #: concrete/tools/page_controls_menu_js.php:116
 #: concrete/tools/page_controls_menu_js.php:146
 #: concrete/tools/page_controls_menu_js.php:161 concrete/tools/versions.php:34
@@ -1656,7 +1659,7 @@ msgstr "Nombre de Usuario"
 #: concrete/single_pages/dashboard/system/mail/importers.php:97
 #: concrete/single_pages/dashboard/users/add.php:44
 #: concrete/single_pages/dashboard/users/search.php:188
-#: concrete/single_pages/install.php:151 concrete/single_pages/login.php:78
+#: concrete/single_pages/install.php:153 concrete/single_pages/login.php:78
 #: concrete/single_pages/login.php:95 concrete/single_pages/login.php:101
 #: concrete/single_pages/login.php:174 concrete/single_pages/login.php:253
 #: concrete/single_pages/register.php:59
@@ -3849,16 +3852,16 @@ msgstr "El archivo de respaldo especificado es inválido."
 #: concrete/core/controllers/single_pages/dashboard/system/backup_restore/backup.php:104
 msgid ""
 "There was an error trying to restore the database. This file was empty."
-msgstr ""
+msgstr "Hubo un error tratando de restaurar la base de datos. Este archivo estaba vacío."
 
 #: concrete/core/controllers/single_pages/dashboard/system/backup_restore/backup.php:118
 #, php-format
 msgid "There was an error trying to restore the database. Affected query: %s"
-msgstr ""
+msgstr "Hubo un error tratando de restaurar la base de datos. Consulta afectada: %s"
 
 #: concrete/core/controllers/single_pages/dashboard/system/backup_restore/backup.php:132
 msgid "Restoration Successful"
-msgstr ""
+msgstr "Restauración exitosa"
 
 #: concrete/core/controllers/single_pages/dashboard/system/backup_restore/database.php:27
 msgid "Core database files and installed blocks refreshed."
@@ -5785,7 +5788,7 @@ msgstr "&lt; Regresar al Inicio"
 
 #: concrete/single_pages/dashboard/users/search.php:326
 #: concrete/single_pages/download_file.php:41
-#: concrete/single_pages/install.php:101
+#: concrete/single_pages/install.php:102
 #: concrete/single_pages/profile/messages.php:44
 #: concrete/themes/dashboard/elements/header.php:111
 msgid "Back"
@@ -7091,7 +7094,7 @@ msgstr "¿Quién no puede buscar qué?"
 #: concrete/single_pages/dashboard/users/add.php:37
 #: concrete/single_pages/dashboard/users/search.php:221
 #: concrete/single_pages/download_file.php:33
-#: concrete/single_pages/install.php:157 concrete/single_pages/login.php:108
+#: concrete/single_pages/install.php:159 concrete/single_pages/login.php:108
 #: concrete/single_pages/login.php:185 concrete/single_pages/register.php:65
 msgid "Password"
 msgstr "Contraseña"
@@ -10534,7 +10537,7 @@ msgid ""
 msgstr "Usted no tiene acceso a la búsqueda del usuario. Esta configuración se puede cambiar en la sección de acceso de la página del panel de configuración."
 
 #: concrete/single_pages/dashboard/users/add.php:56
-#: concrete/single_pages/install.php:456 concrete/single_pages/login.php:217
+#: concrete/single_pages/install.php:460 concrete/single_pages/login.php:217
 msgid "Language"
 msgstr "Idioma"
 
@@ -11132,7 +11135,7 @@ msgid ""
 msgstr "No hay importadores electrónico. importadores Correo encuesta cuentas de correo electrónico de nuevos mensajes y las acciones desarrolladas en esos mensajes."
 
 #: concrete/single_pages/dashboard/system/mail/importers.php:96
-#: concrete/single_pages/install.php:178
+#: concrete/single_pages/install.php:180
 msgid "Server"
 msgstr "Servidor"
 
@@ -12322,7 +12325,7 @@ msgstr "Regresar al inicio"
 msgid "Your Details"
 msgstr "Sus Detalles"
 
-#: concrete/single_pages/install.php:163 concrete/single_pages/login.php:44
+#: concrete/single_pages/install.php:165 concrete/single_pages/login.php:44
 #: concrete/single_pages/register.php:71
 msgid "Confirm Password"
 msgstr "Confirmar contraseña"
@@ -12487,165 +12490,165 @@ msgstr "Este archivo requiere una contraseña para descargar"
 msgid "To install concrete5, please fill out the form below."
 msgstr "Para instalar concrete5, por favor llene el siguiente formulario."
 
-#: concrete/single_pages/install.php:66 concrete/single_pages/install.php:123
-#: concrete/single_pages/install.php:249 concrete/single_pages/install.php:314
-#: concrete/single_pages/install.php:442
+#: concrete/single_pages/install.php:66 concrete/single_pages/install.php:124
+#: concrete/single_pages/install.php:251 concrete/single_pages/install.php:316
+#: concrete/single_pages/install.php:445
 msgid "Install concrete5"
 msgstr "Instalar concrete5"
 
-#: concrete/single_pages/install.php:79
+#: concrete/single_pages/install.php:80
 msgid "Continue to your site"
 msgstr "Continúe su sitio"
 
-#: concrete/single_pages/install.php:86
+#: concrete/single_pages/install.php:87
 msgid "Beginning Installation"
 msgstr "Inicio de la instalación"
 
-#: concrete/single_pages/install.php:138
+#: concrete/single_pages/install.php:140
 msgid "Site Information"
 msgstr "Información del sitio"
 
-#: concrete/single_pages/install.php:140
+#: concrete/single_pages/install.php:142
 msgid "Name Your Site"
 msgstr "Nombre del sitio"
 
-#: concrete/single_pages/install.php:149
+#: concrete/single_pages/install.php:151
 msgid "Administrator Information"
 msgstr "Información del Administrador"
 
-#: concrete/single_pages/install.php:175
+#: concrete/single_pages/install.php:177
 msgid "Database Information"
 msgstr "Información de base de datos"
 
-#: concrete/single_pages/install.php:185
+#: concrete/single_pages/install.php:187
 msgid "MySQL Username"
 msgstr "Usuario MySQL "
 
-#: concrete/single_pages/install.php:192
+#: concrete/single_pages/install.php:194
 msgid "MySQL Password"
 msgstr "Contraseña MySQL "
 
-#: concrete/single_pages/install.php:199
+#: concrete/single_pages/install.php:201
 msgid "Database Name"
 msgstr "Nombre de la base de datos"
 
-#: concrete/single_pages/install.php:211
+#: concrete/single_pages/install.php:213
 msgid "Sample Content"
 msgstr "Contenido de la muestra"
 
-#: concrete/single_pages/install.php:238
+#: concrete/single_pages/install.php:240
 msgid ""
 "concrete5 veterans can choose \"Empty Site,\" but otherwise we recommend "
 "starting with some sample content."
 msgstr "veteranos concrete5 pueden elegir \"Sitio Vacío,\" pero por lo demás se recomienda comenzar con un cierto contenido de la muestra."
 
-#: concrete/single_pages/install.php:317
+#: concrete/single_pages/install.php:320
 msgid "Testing Required Items"
 msgstr "Probando elementos requeridos"
 
 #. %s is the php version
-#: concrete/single_pages/install.php:328
+#: concrete/single_pages/install.php:331
 #, php-format
 msgid "PHP %s"
 msgstr "PHP %s"
 
-#: concrete/single_pages/install.php:329
+#: concrete/single_pages/install.php:332
 #, php-format
 msgid "concrete5 requires at least PHP %s"
 msgstr "concrete5 requiere al menos PHP %s"
 
-#: concrete/single_pages/install.php:334
+#: concrete/single_pages/install.php:337
 msgid "JavaScript Enabled"
 msgstr "JavaScript  habilitado"
 
-#: concrete/single_pages/install.php:335
+#: concrete/single_pages/install.php:338
 msgid "Please enable JavaScript in your browser."
 msgstr "Por favor habilita javascript en tu navegador"
 
-#: concrete/single_pages/install.php:339
+#: concrete/single_pages/install.php:342
 msgid "MySQL Available"
 msgstr "MySQL disponible"
 
-#: concrete/single_pages/install.php:345
+#: concrete/single_pages/install.php:348
 msgid "Supports concrete5 request URLs"
 msgstr "Soporta solicitud URLs concrete5"
 
-#: concrete/single_pages/install.php:347
+#: concrete/single_pages/install.php:350
 msgid ""
 "concrete5 cannot parse the PATH_INFO or ORIG_PATH_INFO information provided "
 "by your server."
 msgstr "concrete5 no puede analizar la información PATH_INFO o ORIG_PATH_INFO proporcionada por su servidor."
 
-#: concrete/single_pages/install.php:358
+#: concrete/single_pages/install.php:361
 msgid "Image Manipulation Available"
 msgstr "Edición de imágenes disponible."
 
-#: concrete/single_pages/install.php:360
+#: concrete/single_pages/install.php:363
 msgid "concrete5 requires GD library 2.0.1 or greater"
 msgstr "concrete5 requiere librería GD 2.0.1 o mayor "
 
-#: concrete/single_pages/install.php:364
+#: concrete/single_pages/install.php:367
 msgid "XML Support"
 msgstr "Soporte XML"
 
-#: concrete/single_pages/install.php:366
+#: concrete/single_pages/install.php:369
 msgid "concrete5 requires PHP XML Parser and SimpleXML extensions"
 msgstr "concrete5 requiere PHP XML Parser y extenciones SimpleXML"
 
-#: concrete/single_pages/install.php:370
+#: concrete/single_pages/install.php:373
 msgid "Writable Files and Configuration Directories"
 msgstr "Archivos Escribibles y Configuración de Directorios"
 
-#: concrete/single_pages/install.php:372
+#: concrete/single_pages/install.php:375
 msgid ""
 "The config/, packages/ and files/ directories must be writable by your web "
 "server."
 msgstr "La configuracion/, paquetes/ y archivos/ directorios deben tener permisos de escritura por tu servidor web."
 
-#: concrete/single_pages/install.php:376
+#: concrete/single_pages/install.php:379
 msgid "Cookies Enabled"
 msgstr "Cookies Habilitado"
 
-#: concrete/single_pages/install.php:378
+#: concrete/single_pages/install.php:381
 msgid "Cookies must be enabled in your browser to install concrete5."
 msgstr "Cookies deben estar habilitadas en su navegador para instalar concrete5."
 
-#: concrete/single_pages/install.php:391
+#: concrete/single_pages/install.php:394
 msgid "Testing Optional Items"
 msgstr "Probando elementos opcionales"
 
-#: concrete/single_pages/install.php:403
+#: concrete/single_pages/install.php:406
 msgid "Remote File Importing Available"
 msgstr "Importación de archivos remoto disponible"
 
-#: concrete/single_pages/install.php:405
+#: concrete/single_pages/install.php:408
 msgid ""
 "Remote file importing through the file manager requires the iconv PHP "
 "extension."
 msgstr "Importación de archivos remotos a través del administrador de archivos requiere la extensión iconv de PHP."
 
-#: concrete/single_pages/install.php:417
+#: concrete/single_pages/install.php:420
 msgid "Continue to Installation"
 msgstr "Continuar con la instalación"
 
-#: concrete/single_pages/install.php:422
+#: concrete/single_pages/install.php:425
 msgid ""
 "There are problems with your installation environment. Please correct them "
 "and click the button below to re-run the pre-installation tests."
 msgstr "Hay problemas con el entorno de instalación. Por favor, corrija ellos y haga clic en el botón de abajo para volver a ejecutar las pruebas previas a la instalación."
 
-#: concrete/single_pages/install.php:426
+#: concrete/single_pages/install.php:429
 msgid "Run Tests"
 msgstr "Ejecutar Pruebas"
 
-#: concrete/single_pages/install.php:432
+#: concrete/single_pages/install.php:435
 #, php-format
 msgid ""
 "Having trouble? Check the <a href=\"%s\">installation help forums</a>, or <a"
 " href=\"%s\">have us host a copy</a> for you."
 msgstr "¿Tienes problemas? Consulta las <a href=\"%s\">foros de ayuda de instalación </a> o <a href=\"%s\">hacernos alojar una copia </a> para usted."
 
-#: concrete/single_pages/install.php:464
+#: concrete/single_pages/install.php:468
 msgid "Choose Language"
 msgstr "Elegir idioma"
 
