@@ -21,9 +21,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2013-11-02 23:00+0000\n"
-"PO-Revision-Date: 2013-11-03 15:31+0000\n"
-"Last-Translator: Константин Тарасов <cmsservicer@gmail.com>\n"
+"POT-Creation-Date: 2013-11-05 23:00+0000\n"
+"PO-Revision-Date: 2013-11-06 08:53+0000\n"
+"Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Russian (Russia) (http://www.transifex.com/projects/p/concrete5/language/ru_RU/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1083,7 +1083,7 @@ msgstr "Успешно"
 msgid "Where do you want to publish this page?"
 msgstr "Где вы хотите опубликовать эту страницу?"
 
-#: concrete/single_pages/dashboard/sitemap/full.php:75
+#: concrete/single_pages/dashboard/sitemap/full.php:73
 #: concrete/tools/sitemap_search_selector.php:5
 msgid "You do not have access to the sitemap."
 msgstr "У вас нет доступа к списку страниц."
@@ -1284,11 +1284,11 @@ msgstr "Порядок отображения сохранен."
 
 #: concrete/tools/jobs/run_single.php:52
 #, php-format
-msgid "%d items"
+msgid "%d item"
 msgid_plural "%d items"
-msgstr[0] "%d элемент"
-msgstr[1] "%d элементов"
-msgstr[2] "%d элементов"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: concrete/tools/permissions/access_entity.php:7
 msgid "You do not have user search or group search permissions."
@@ -2849,7 +2849,11 @@ msgstr "Неверное расширение файла."
 msgid "Please correct the following errors:"
 msgstr "Пожалуйста исправьте следующие ошибки:"
 
-#: concrete/core/controllers/blocks/form.php:452
+#: concrete/core/controllers/blocks/form.php:390
+msgid "No file specified"
+msgstr ""
+
+#: concrete/core/controllers/blocks/form.php:460
 #, php-format
 msgid "%s Form Submission"
 msgstr "Отправка формы %s"
@@ -3844,9 +3848,9 @@ msgstr "Допустимые типы файлов сохранены."
 msgid "Global mail settings saved."
 msgstr "Настройки почты обновлены."
 
-#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:142
 #: concrete/core/controllers/single_pages/dashboard/reports/forms.php:150
-#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:159
+#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:158
+#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:167
 #: concrete/core/controllers/single_pages/dashboard/system/mail/importers.php:17
 #: concrete/core/controllers/single_pages/dashboard/system/mail/method.php:12
 msgid "Invalid Token."
@@ -4126,7 +4130,7 @@ msgstr "Журналы"
 msgid "All"
 msgstr "Все"
 
-#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:117
+#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:125
 #: concrete/single_pages/dashboard/reports/forms.php:202
 msgid "File not found"
 msgstr "Файл не найден"
@@ -4501,7 +4505,7 @@ msgid "You must select a valid sample content starting point."
 msgstr "Вы должны выбрать тип содержимого."
 
 #: concrete/core/controllers/single_pages/install.php:212
-#: concrete/core/libraries/loader.php:264
+#: concrete/core/libraries/loader.php:265
 msgid "Unable to connect to database."
 msgstr "Невозможно соединиться с базой данных"
 
@@ -4813,16 +4817,16 @@ msgstr "Ошибка: нет областей присоединенных к р
 msgid "Unknown User"
 msgstr "Неизвестный пользователь"
 
-#: concrete/core/models/page.php:1603
+#: concrete/core/models/page.php:1604
 #, php-format
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "Страница \"%s\", расположенная в \"%s\" удалена"
 
-#: concrete/core/models/page.php:1603 concrete/core/models/page.php:1661
+#: concrete/core/models/page.php:1604 concrete/core/models/page.php:1662
 msgid "Page Action"
 msgstr "Действие страницы"
 
-#: concrete/core/models/page.php:1661
+#: concrete/core/models/page.php:1662
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "Страница \"%s\", расположенная в \"%s\" перемещена в корзину"
@@ -4911,7 +4915,7 @@ msgstr "Завершение."
 msgid "Unable to install database: %s"
 msgstr "Попытка инсталляции базы данных: %s не увенчалась успехом."
 
-#: concrete/config/localization.php:125
+#: concrete/config/localization.php:126
 #: concrete/core/models/starting_point_package.php:129
 #: concrete/elements/collection_preview_as_user.php:17
 #: concrete/single_pages/dashboard/reports/logs.php:70
@@ -4922,7 +4926,7 @@ msgstr "Гость"
 msgid "The guest group represents unregistered visitors to your site."
 msgstr "Группа Гости представляет незарегистрированных пользователей на вашем сайте."
 
-#: concrete/config/localization.php:126
+#: concrete/config/localization.php:127
 #: concrete/core/models/starting_point_package.php:130
 msgid "Registered Users"
 msgstr "Зарегистрированные пользователи"
@@ -5401,37 +5405,37 @@ msgstr "Невозможно соединиться с магазином для
 msgid "Version %d"
 msgstr "Версия %d"
 
-#: concrete/core/models/block_types.php:723
+#: concrete/core/models/block_types.php:724
 #, php-format
 msgid ""
 "%s not found. Please check that the block controller file contains the "
 "correct class name."
 msgstr "%s не обнаружен. Проверьте, что файл контроллера расширения содержит правильное имя класса."
 
-#: concrete/core/models/block_types.php:732
+#: concrete/core/models/block_types.php:733
 msgid ""
 "Error: Block Type cannot be installed because no db.xml file can be found. "
 "Either create a db.xml file for this block type, or remove the $btTable "
 "variable from its controller."
 msgstr "Ошибка: модуль не может быть установлен потому, что файл db.xml не может быть найден. Либо создайте db.xml файл для этого модуля, либо удалите btTable переменную из контроллера."
 
-#: concrete/core/models/block_types.php:736
+#: concrete/core/models/block_types.php:737
 msgid ""
 "Error: Block Type cannot be installed due to an unknown database error. "
 "Please check that the db.xml file for this block type is formatted "
 "correctly."
 msgstr "Ошибка: Модуль не может быть установлен из-за неизвестной ошибки базы данных. Пожалуйста проверьте правильность формата db.xml файла."
 
-#: concrete/core/models/block_types.php:797
+#: concrete/core/models/block_types.php:798
 #, php-format
 msgid "No block found with the handle %s."
 msgstr "Не обнаружено модулей с дескриптором %s ."
 
-#: concrete/core/models/block_types.php:816
+#: concrete/core/models/block_types.php:817
 msgid "Error: Block Type table must contain at least two fields."
 msgstr "Ошибка: Таблица модуля должна содержать хотя бы 2 поля."
 
-#: concrete/core/models/block_types.php:818
+#: concrete/core/models/block_types.php:819
 msgid "Error: Block Type table must contain a \"bID\" primary key field."
 msgstr "Ошибка: Таблица модуля должна содержать \"bID\" поле первичный ключ."
 
@@ -5456,7 +5460,7 @@ msgstr "Атрибут с идентификатором %s уже есть."
 msgid "Illegal variable name '%s' in element args."
 msgstr "Недопустимое имя переменной '%s' в аргументах элемента."
 
-#: concrete/core/libraries/loader.php:264
+#: concrete/core/libraries/loader.php:265
 msgid "A database error occurred while processing this request."
 msgstr "Произошла ошибка базы данных в процессе запроса."
 
@@ -6105,6 +6109,7 @@ msgstr "На странице"
 
 #: concrete/elements/files/search_form_advanced.php:222
 #: concrete/elements/pages/search_form_advanced.php:173
+#: concrete/elements/users/search_form_advanced.php:109
 #: concrete/single_pages/dashboard/system/seo/bulk_seo_tool.php:100
 msgid "Advanced Search"
 msgstr "Расширенный поиск"
@@ -6534,6 +6539,13 @@ msgstr "Открыть ссылку в новом окне"
 msgid "You have no items in your Clipboard."
 msgstr "Ваш буфер обмена пуст."
 
+#: concrete/config/localization.php:125
+#: concrete/elements/block_area_add_stack_contents.php:48
+#: concrete/elements/scrapbook_lists.php:33
+#: concrete/elements/scrapbook_lists.php:49
+msgid "This block is no longer available."
+msgstr "Этот модуль больше не поддерживается."
+
 #: concrete/elements/scrapbook_lists.php:46
 msgid "Remove from Clipboard"
 msgstr "Удалить из буфера обмена"
@@ -6924,12 +6936,6 @@ msgstr "Имя пользователя/Email адрес"
 #: concrete/elements/users/search_form_advanced.php:78
 msgid "Group(s)"
 msgstr "Группа(ы)"
-
-#: concrete/blocks/tags/tag_form.php:11
-#: concrete/elements/users/search_form_advanced.php:109
-#: concrete/single_pages/dashboard/system/basics/editor.php:25
-msgid "Advanced"
-msgstr "Расширенный"
 
 #: concrete/elements/block_controls.php:25
 #: concrete/elements/block_controls.php:30
@@ -8090,11 +8096,7 @@ msgctxt "Time format"
 msgid "12"
 msgstr "24"
 
-#: concrete/config/localization.php:124
-msgid "This block is no longer available."
-msgstr "Этот модуль больше не поддерживается."
-
-#: concrete/config/localization.php:127
+#: concrete/config/localization.php:128
 msgid "Admin"
 msgstr "Админ"
 
@@ -8281,6 +8283,11 @@ msgstr "Долгота: %s"
 msgid ""
 "Error: The required page attribute with the handle of: \"%s\" doesn't exist"
 msgstr "Ошибка: Обязательный атрибут: \"%s\" не существует"
+
+#: concrete/blocks/tags/tag_form.php:11
+#: concrete/single_pages/dashboard/system/basics/editor.php:25
+msgid "Advanced"
+msgstr "Расширенный"
 
 #: concrete/blocks/date_archive/form.php:7
 #: concrete/blocks/tags/tag_form.php:17
@@ -9807,15 +9814,15 @@ msgid ""
 "hierarchy."
 msgstr "Карта сайта позволяет просматривать сайт, как дерево и легко организовать иерархию страниц."
 
-#: concrete/single_pages/dashboard/sitemap/full.php:33
+#: concrete/single_pages/dashboard/sitemap/full.php:35
 msgid "Show System Pages"
 msgstr "Системные страницы"
 
-#: concrete/single_pages/dashboard/sitemap/full.php:52
+#: concrete/single_pages/dashboard/sitemap/full.php:50
 msgid "Resume Copy"
 msgstr "Продолжить копирование"
 
-#: concrete/single_pages/dashboard/sitemap/full.php:53
+#: concrete/single_pages/dashboard/sitemap/full.php:51
 msgid "Page copy operations pending."
 msgstr "Ожидание операций копирования страницы."
 

@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2013-11-04 23:00+0000\n"
-"PO-Revision-Date: 2013-11-06 04:40+0000\n"
+"POT-Creation-Date: 2013-11-05 23:00+0000\n"
+"PO-Revision-Date: 2013-11-07 02:50+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Spanish (Mexico) (http://www.transifex.com/projects/p/concrete5/language/es_MX/)\n"
 "MIME-Version: 1.0\n"
@@ -1064,7 +1064,7 @@ msgstr ""
 msgid "Where do you want to publish this page?"
 msgstr ""
 
-#: concrete/single_pages/dashboard/sitemap/full.php:75
+#: concrete/single_pages/dashboard/sitemap/full.php:73
 #: concrete/tools/sitemap_search_selector.php:5
 msgid "You do not have access to the sitemap."
 msgstr "No tiene acceso al mapa del sitio"
@@ -1263,7 +1263,7 @@ msgstr ""
 
 #: concrete/tools/jobs/run_single.php:52
 #, php-format
-msgid "%d items"
+msgid "%d item"
 msgid_plural "%d items"
 msgstr[0] ""
 msgstr[1] ""
@@ -2827,7 +2827,11 @@ msgstr "extensión de archivos invalida"
 msgid "Please correct the following errors:"
 msgstr "Por favor corrija los siguientes errores"
 
-#: concrete/core/controllers/blocks/form.php:452
+#: concrete/core/controllers/blocks/form.php:390
+msgid "No file specified"
+msgstr ""
+
+#: concrete/core/controllers/blocks/form.php:460
 #, php-format
 msgid "%s Form Submission"
 msgstr "%s Envio de formulario"
@@ -3822,9 +3826,9 @@ msgstr "Tipos de archivos permitidos guardados."
 msgid "Global mail settings saved."
 msgstr "Configuraciones de correo global guardadas."
 
-#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:142
 #: concrete/core/controllers/single_pages/dashboard/reports/forms.php:150
-#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:159
+#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:158
+#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:167
 #: concrete/core/controllers/single_pages/dashboard/system/mail/importers.php:17
 #: concrete/core/controllers/single_pages/dashboard/system/mail/method.php:12
 msgid "Invalid Token."
@@ -4104,7 +4108,7 @@ msgstr "Logs"
 msgid "All"
 msgstr "todos"
 
-#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:117
+#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:125
 #: concrete/single_pages/dashboard/reports/forms.php:202
 msgid "File not found"
 msgstr "Archivo no encontrado"
@@ -4789,16 +4793,16 @@ msgstr "Error: no se ha asignado una área al diseño."
 msgid "Unknown User"
 msgstr "Usuario desconocido"
 
-#: concrete/core/models/page.php:1603
+#: concrete/core/models/page.php:1604
 #, php-format
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "Pagina \"%s\" en la ruta  \"%s\" borrada"
 
-#: concrete/core/models/page.php:1603 concrete/core/models/page.php:1661
+#: concrete/core/models/page.php:1604 concrete/core/models/page.php:1662
 msgid "Page Action"
 msgstr "Acción de pagina"
 
-#: concrete/core/models/page.php:1661
+#: concrete/core/models/page.php:1662
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "Pagina \"%s\" en la ruta \"%s\" enviada a la basura"
@@ -5377,37 +5381,37 @@ msgstr "No se puede conectar al mercado para recuperar el elemento"
 msgid "Version %d"
 msgstr "Version %d"
 
-#: concrete/core/models/block_types.php:723
+#: concrete/core/models/block_types.php:724
 #, php-format
 msgid ""
 "%s not found. Please check that the block controller file contains the "
 "correct class name."
 msgstr "%s no encontrado. Por favor, compruebe que el archivo controlador de bloque contiene el nombre de clase correcto."
 
-#: concrete/core/models/block_types.php:732
+#: concrete/core/models/block_types.php:733
 msgid ""
 "Error: Block Type cannot be installed because no db.xml file can be found. "
 "Either create a db.xml file for this block type, or remove the $btTable "
 "variable from its controller."
 msgstr "Error: Tipo de bloque no se puede instalar porque no hay ningún archivo db.xml que se puede encontrar. O crear un archivo db.xml para este tipo de bloque o eliminar la variable $ btTable de su controlador."
 
-#: concrete/core/models/block_types.php:736
+#: concrete/core/models/block_types.php:737
 msgid ""
 "Error: Block Type cannot be installed due to an unknown database error. "
 "Please check that the db.xml file for this block type is formatted "
 "correctly."
 msgstr "Error: Tipo de bloque no se puede instalar debido a un error de base de datos desconocido. Por favor, compruebe que el archivo db.xml para este tipo de módulo tenga el formato correcto."
 
-#: concrete/core/models/block_types.php:797
+#: concrete/core/models/block_types.php:798
 #, php-format
 msgid "No block found with the handle %s."
 msgstr "No se encontró bloque con el manejador  %s."
 
-#: concrete/core/models/block_types.php:816
+#: concrete/core/models/block_types.php:817
 msgid "Error: Block Type table must contain at least two fields."
 msgstr "Error: la tabla Tipo de bloque debe contener al menos dos campos."
 
-#: concrete/core/models/block_types.php:818
+#: concrete/core/models/block_types.php:819
 msgid "Error: Block Type table must contain a \"bID\" primary key field."
 msgstr "Error: la tabla Tipo  bloque debe contener un campo de \"bID\" clave primaria."
 
@@ -6077,6 +6081,7 @@ msgstr "# Por Pagina"
 
 #: concrete/elements/files/search_form_advanced.php:222
 #: concrete/elements/pages/search_form_advanced.php:173
+#: concrete/elements/users/search_form_advanced.php:109
 #: concrete/single_pages/dashboard/system/seo/bulk_seo_tool.php:100
 msgid "Advanced Search"
 msgstr "Búsqueda avanzada"
@@ -6903,12 +6908,6 @@ msgstr "Nombre de usuario o correo electronico"
 #: concrete/elements/users/search_form_advanced.php:78
 msgid "Group(s)"
 msgstr "Grupo(s)"
-
-#: concrete/blocks/tags/tag_form.php:11
-#: concrete/elements/users/search_form_advanced.php:109
-#: concrete/single_pages/dashboard/system/basics/editor.php:25
-msgid "Advanced"
-msgstr "Avanzado"
 
 #: concrete/elements/block_controls.php:25
 #: concrete/elements/block_controls.php:30
@@ -8257,6 +8256,11 @@ msgid ""
 "Error: The required page attribute with the handle of: \"%s\" doesn't exist"
 msgstr "Error: El atributo requerido de la página con el manejador de: \"%s\" no existe"
 
+#: concrete/blocks/tags/tag_form.php:11
+#: concrete/single_pages/dashboard/system/basics/editor.php:25
+msgid "Advanced"
+msgstr "Avanzado"
+
 #: concrete/blocks/date_archive/form.php:7
 #: concrete/blocks/tags/tag_form.php:17
 msgid "Display Title"
@@ -9602,15 +9606,15 @@ msgstr ""
 
 #: concrete/single_pages/dashboard/composer/write.php:29
 msgid "Basic Information"
-msgstr ""
+msgstr "Información Básica"
 
 #: concrete/single_pages/dashboard/composer/write.php:55
 msgid "Date Posted"
-msgstr ""
+msgstr "Fecha de Publicacion"
 
 #: concrete/single_pages/dashboard/composer/write.php:68
 msgid "Publish Location"
-msgstr ""
+msgstr "Publicar Ubicacion"
 
 #: concrete/single_pages/dashboard/composer/write.php:79
 msgid "Choose publish location."
@@ -9674,7 +9678,7 @@ msgstr "Compositor de Bosquejos"
 
 #: concrete/single_pages/dashboard/composer/drafts.php:18
 msgid "(Untitled Page)"
-msgstr ""
+msgstr "(Pagina sin titulo)"
 
 #: concrete/single_pages/dashboard/composer/drafts.php:34
 #, php-format
@@ -9781,15 +9785,15 @@ msgid ""
 "hierarchy."
 msgstr "El mapa del sitio le permite ver su sitio como un árbol y organiza fácilmente su jerarquía."
 
-#: concrete/single_pages/dashboard/sitemap/full.php:33
+#: concrete/single_pages/dashboard/sitemap/full.php:35
 msgid "Show System Pages"
 msgstr "Muestra el Sistema de Paginas"
 
-#: concrete/single_pages/dashboard/sitemap/full.php:52
+#: concrete/single_pages/dashboard/sitemap/full.php:50
 msgid "Resume Copy"
 msgstr "Reanudar Copia"
 
-#: concrete/single_pages/dashboard/sitemap/full.php:53
+#: concrete/single_pages/dashboard/sitemap/full.php:51
 msgid "Page copy operations pending."
 msgstr "Operaciones de Copiado de  Pagina pendientes."
 
@@ -10020,7 +10024,7 @@ msgstr ""
 #: concrete/single_pages/dashboard/blocks/types/view.php:7
 #: concrete/single_pages/dashboard/extend/install.php:194
 msgid "Block Types"
-msgstr ""
+msgstr "Bloque Tipo"
 
 #: concrete/single_pages/dashboard/extend/install.php:213
 msgid "Back to Add Functionality"
@@ -10060,7 +10064,7 @@ msgstr ""
 #: concrete/single_pages/dashboard/extend/install.php:277
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:167
 msgid "Awaiting Installation"
-msgstr ""
+msgstr "Esperando Instalacion"
 
 #: concrete/single_pages/dashboard/extend/install.php:281
 msgid "Nothing currently available to install."
@@ -10072,7 +10076,7 @@ msgstr ""
 #: concrete/single_pages/dashboard/system/attributes/types.php:52
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:182
 msgid "Install"
-msgstr ""
+msgstr "Instalar"
 
 #: concrete/single_pages/dashboard/extend/install.php:328
 msgid ""
@@ -10141,7 +10145,7 @@ msgstr "<a href=\"%s\">Instalar</a> o <a href=\"%s\">actualizar</a> paquetes."
 msgid ""
 "Add custom block types, refresh the database tables of installed blocks, and"
 " uninstall blocks types from here."
-msgstr ""
+msgstr "Añada tipos de bloques personalizados, actualice las tablas de base de bloques instalados y desinstale los tipos de bloques de aquí."
 
 #: concrete/single_pages/dashboard/blocks/types/view.php:17
 msgid "Usage Count"
@@ -10149,34 +10153,34 @@ msgstr ""
 
 #: concrete/single_pages/dashboard/blocks/types/view.php:20
 msgid "Usage Count on Active Pages"
-msgstr ""
+msgstr "Conteo de uso en Paginas Activas"
 
 #: concrete/single_pages/dashboard/blocks/types/view.php:24
 msgid "Internal"
-msgstr ""
+msgstr "Interno"
 
 #: concrete/single_pages/dashboard/blocks/types/view.php:25
 msgid "This is an internal block type."
-msgstr ""
+msgstr "Este es un tipo de bloque interno"
 
 #: concrete/single_pages/dashboard/blocks/types/view.php:30
 msgid "Back to Block Types"
-msgstr ""
+msgstr "De Regreso a Tipos de Bloque"
 
 #: concrete/single_pages/dashboard/blocks/types/view.php:37
 #, php-format
 msgid ""
 "This will remove all instances of the %s block type. This cannot be undone. "
 "Are you sure?"
-msgstr ""
+msgstr "Esto eliminará todas las instancias del tipo de bloque %s. Esto no se puede deshacer. ¿Está seguro?"
 
 #: concrete/single_pages/dashboard/blocks/types/view.php:71
 msgid "No custom block types are awaiting installation."
-msgstr ""
+msgstr "No hay tipos de bloques personalizados esperando instalación."
 
 #: concrete/single_pages/dashboard/blocks/types/view.php:82
 msgid "Installed Block Types"
-msgstr ""
+msgstr "Tipos de Bloques Instalados"
 
 #: concrete/single_pages/dashboard/blocks/types/view.php:112
 msgid ""
@@ -10230,23 +10234,23 @@ msgid ""
 "Stacks give you a central place to stash blocks, where you can control their"
 " order, permissions, and even version them.<br><br>Add stacks to your site "
 "and you can update them in one place."
-msgstr ""
+msgstr "Las pilas le dan un lugar central para guardar bloques, donde se puede controlar el orden, los permisos e incluso la versión ellas. <br> Añada pilas a su sitio y actualícelas en un solo lugar."
 
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:152
 msgid "Global Areas"
-msgstr ""
+msgstr "Area Global"
 
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:167
 msgid "No global areas created yet."
-msgstr ""
+msgstr "No hay áreas globales creadas todavía."
 
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:174
 msgid "Other Stacks"
-msgstr ""
+msgstr "Otras Pilas"
 
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:188
 msgid "No stacks have been added."
-msgstr ""
+msgstr "Ninguna pila ha sido creada todavía."
 
 #: concrete/config/install/base/dashboard.xml:314
 #: concrete/helpers/concrete/upgrade/version_560.php:149
@@ -11140,56 +11144,56 @@ msgstr ""
 
 #: concrete/single_pages/dashboard/system/backup_restore/backup.php:14
 msgid "Confirm Delete"
-msgstr ""
+msgstr "Confirmar Borrado"
 
 #: concrete/single_pages/dashboard/system/backup_restore/backup.php:65
 #: concrete/single_pages/dashboard/system/backup_restore/backup.php:78
 msgid "This action <strong>cannot be undone</strong>. Are you sure?"
-msgstr ""
+msgstr "Este <strong> acción no se puede deshacer </strong>. ¿Está seguro?"
 
 #: concrete/single_pages/dashboard/system/backup_restore/backup.php:69
 msgid "Delete Backup"
-msgstr ""
+msgstr "Borrar  Respaldo"
 
 #: concrete/single_pages/dashboard/system/backup_restore/backup.php:82
 msgid "Restore Backup"
-msgstr ""
+msgstr "Restaurar Respaldo"
 
 #: concrete/config/install/base/dashboard.xml:726
 #: concrete/config/install/disabled/blank/content.xml:111
 #: concrete/config/install/disabled/standard/content.xml:111
 #: concrete/single_pages/dashboard/system/backup_restore/backup.php:94
 msgid "Backup Database"
-msgstr ""
+msgstr "Respaldar Base de Datos"
 
 #: concrete/single_pages/dashboard/system/backup_restore/backup.php:95
 msgid "Existing Backups"
-msgstr ""
+msgstr "Respaldos Existentes"
 
 #: concrete/single_pages/dashboard/system/backup_restore/backup.php:115
 msgid "Restore"
-msgstr ""
+msgstr "Restaurar"
 
 #: concrete/single_pages/dashboard/system/backup_restore/backup.php:126
 msgid "You have no backups available."
-msgstr ""
+msgstr "No tiene respaldos existentes"
 
 #: concrete/single_pages/dashboard/system/backup_restore/backup.php:132
 msgid "Create new Backup"
-msgstr ""
+msgstr "Cree nuevo Respaldo"
 
 #: concrete/single_pages/dashboard/system/backup_restore/backup.php:135
 msgid "Run Backup"
-msgstr ""
+msgstr "Ejecute Respaldo"
 
 #: concrete/single_pages/dashboard/system/backup_restore/backup.php:140
 #: concrete/single_pages/dashboard/system/backup_restore/backup.php:143
 msgid "Use Encryption"
-msgstr ""
+msgstr "Use Encriptacion"
 
 #: concrete/single_pages/dashboard/system/backup_restore/backup.php:149
 msgid "Important Information about Backup & Restore"
-msgstr ""
+msgstr "Información importante de Respaldo y Restauracion"
 
 #: concrete/single_pages/dashboard/system/backup_restore/backup.php:151
 msgid ""
@@ -11199,22 +11203,22 @@ msgid ""
 " backup, download the file and make sure that the entire database was saved "
 "correctly. If any error messages appear during the backup process, do "
 "<b>not</b> attempt to restore from that backup."
-msgstr ""
+msgstr "Ejecutar una copia de respaldo creará un archivo de exportación de base de datos y la almacenara en su servidor. El cifrado sólo se recomienda si usted planea almacenar el respaldo en el servidor de forma indefinida. Esto  <strong> no se recomienda </ strong>. Después de ejecutar el respaldo, descargue el archivo y asegúrese de que la base de datos se ha guardado correctamente. Si los mensajes de error aparecen durante el proceso de respaldo, <b> no </ b>  intente restaurar desde el respaldo."
 
 #: concrete/single_pages/dashboard/system/backup_restore/backup.php:156
 msgid "Backup"
-msgstr ""
+msgstr "Respaldo"
 
 #: concrete/single_pages/dashboard/system/backup_restore/backup.php:157
 msgid "You do not have permission to create or administer backups."
-msgstr ""
+msgstr "No tiene permiso para crear o administrar respaldos."
 
 #: concrete/config/install/base/dashboard.xml:734
 #: concrete/single_pages/dashboard/system/backup_restore/database.php:5
 #: concrete/single_pages/dashboard/system/backup_restore/database.php:21
 #: concrete/single_pages/dashboard/system/backup_restore/database.php:94
 msgid "Database XML"
-msgstr ""
+msgstr "Base de Datos XML"
 
 #: concrete/single_pages/dashboard/system/backup_restore/database.php:11
 msgid "Return to Export Database XML"
@@ -11374,19 +11378,19 @@ msgstr " Atributo en Categoria se utilizan para agrupar los diferentes tipos de 
 
 #: concrete/single_pages/dashboard/system/attributes/sets.php:182
 msgid "No attribute categories currently defined."
-msgstr ""
+msgstr "Ningún atributo de categoría esta actualmente definido"
 
 #: concrete/single_pages/dashboard/system/attributes/types.php:9
 msgid "Attribute Type Associations"
-msgstr ""
+msgstr "Asociaciones de Tipo de Atributo"
 
 #: concrete/single_pages/dashboard/system/attributes/types.php:38
 msgid "Custom Attribute Types"
-msgstr ""
+msgstr "Tipos de Atributo Personalizado"
 
 #: concrete/single_pages/dashboard/system/attributes/types.php:43
 msgid "There are no available attribute types awaiting installation."
-msgstr ""
+msgstr "No existen tipos de atributos disponibles esperando instalación."
 
 #: concrete/config/install/base/dashboard.xml:610
 #: concrete/single_pages/dashboard/system/registration/postlogin.php:2

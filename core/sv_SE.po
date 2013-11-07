@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2013-11-04 23:00+0000\n"
-"PO-Revision-Date: 2013-11-05 10:28+0000\n"
+"POT-Creation-Date: 2013-11-05 23:00+0000\n"
+"PO-Revision-Date: 2013-11-06 09:07+0000\n"
 "Last-Translator: MrLindau <fredrik@fxlindau.se>\n"
 "Language-Team: Swedish (Sweden) (http://www.transifex.com/projects/p/concrete5/language/sv_SE/)\n"
 "MIME-Version: 1.0\n"
@@ -1066,7 +1066,7 @@ msgstr "Lyckades"
 msgid "Where do you want to publish this page?"
 msgstr "Var vill du publicera denna sida?"
 
-#: concrete/single_pages/dashboard/sitemap/full.php:75
+#: concrete/single_pages/dashboard/sitemap/full.php:73
 #: concrete/tools/sitemap_search_selector.php:5
 msgid "You do not have access to the sitemap."
 msgstr "Du har inte åtkomst till webbplatskartan."
@@ -1265,7 +1265,7 @@ msgstr "Visningsordning sparad."
 
 #: concrete/tools/jobs/run_single.php:52
 #, php-format
-msgid "%d items"
+msgid "%d item"
 msgid_plural "%d items"
 msgstr[0] "%d post"
 msgstr[1] "%d poster"
@@ -2829,7 +2829,11 @@ msgstr "Ogiltig filtyp."
 msgid "Please correct the following errors:"
 msgstr "Rätta följande fel:"
 
-#: concrete/core/controllers/blocks/form.php:452
+#: concrete/core/controllers/blocks/form.php:390
+msgid "No file specified"
+msgstr "Ingen fil vald"
+
+#: concrete/core/controllers/blocks/form.php:460
 #, php-format
 msgid "%s Form Submission"
 msgstr "%s - formulärsvar"
@@ -3824,9 +3828,9 @@ msgstr "Tillåtna filtyper sparade."
 msgid "Global mail settings saved."
 msgstr "Globala e-postinställningar sparade."
 
-#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:142
 #: concrete/core/controllers/single_pages/dashboard/reports/forms.php:150
-#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:159
+#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:158
+#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:167
 #: concrete/core/controllers/single_pages/dashboard/system/mail/importers.php:17
 #: concrete/core/controllers/single_pages/dashboard/system/mail/method.php:12
 msgid "Invalid Token."
@@ -4106,7 +4110,7 @@ msgstr "Loggar"
 msgid "All"
 msgstr "Alla"
 
-#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:117
+#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:125
 #: concrete/single_pages/dashboard/reports/forms.php:202
 msgid "File not found"
 msgstr "Filen hittades inte"
@@ -4791,16 +4795,16 @@ msgstr "Fel: inget område kopplat till layout"
 msgid "Unknown User"
 msgstr "Okänd användare"
 
-#: concrete/core/models/page.php:1603
+#: concrete/core/models/page.php:1604
 #, php-format
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "Sidan \"%s\" med sökvägen \"%s\" borttagen"
 
-#: concrete/core/models/page.php:1603 concrete/core/models/page.php:1661
+#: concrete/core/models/page.php:1604 concrete/core/models/page.php:1662
 msgid "Page Action"
 msgstr "Sidoaktivitet"
 
-#: concrete/core/models/page.php:1661
+#: concrete/core/models/page.php:1662
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "Sidan \"%s\" med sökvägen \"%s\" Flyttad till papperskorgen"
@@ -5379,37 +5383,37 @@ msgstr "Kunde inte ansluta till Marketplace för att hämta objektet."
 msgid "Version %d"
 msgstr "Version %d"
 
-#: concrete/core/models/block_types.php:723
+#: concrete/core/models/block_types.php:724
 #, php-format
 msgid ""
 "%s not found. Please check that the block controller file contains the "
 "correct class name."
 msgstr "%s kunde inte hittas. Kontrollera att controllerfilen för blocket innehåller rätt klassnamn."
 
-#: concrete/core/models/block_types.php:732
+#: concrete/core/models/block_types.php:733
 msgid ""
 "Error: Block Type cannot be installed because no db.xml file can be found. "
 "Either create a db.xml file for this block type, or remove the $btTable "
 "variable from its controller."
 msgstr "Fel: Blocktypen kan inte installeras för det går inte att hitta en db.xml-fil. Skapa en db.xml-fil för denna blocktyp, eller  ta bort variabeln $btTable från blockets styrenhet. "
 
-#: concrete/core/models/block_types.php:736
+#: concrete/core/models/block_types.php:737
 msgid ""
 "Error: Block Type cannot be installed due to an unknown database error. "
 "Please check that the db.xml file for this block type is formatted "
 "correctly."
 msgstr "Fel: Blocktypen kan inte installeras på grund av ett okänt databasfel. Var vänlig och kontrollera att db.xml är formaterad korrekt för denna blocktyp."
 
-#: concrete/core/models/block_types.php:797
+#: concrete/core/models/block_types.php:798
 #, php-format
 msgid "No block found with the handle %s."
 msgstr "Kunde inte hitta något block med handtaget %s."
 
-#: concrete/core/models/block_types.php:816
+#: concrete/core/models/block_types.php:817
 msgid "Error: Block Type table must contain at least two fields."
 msgstr "Fel: Block-typ måste innehålla minst två fält."
 
-#: concrete/core/models/block_types.php:818
+#: concrete/core/models/block_types.php:819
 msgid "Error: Block Type table must contain a \"bID\" primary key field."
 msgstr "Fel: Block-typ måste innehålla ett \"bID\" primär nyckelfält."
 
@@ -6079,6 +6083,7 @@ msgstr "# per sida"
 
 #: concrete/elements/files/search_form_advanced.php:222
 #: concrete/elements/pages/search_form_advanced.php:173
+#: concrete/elements/users/search_form_advanced.php:109
 #: concrete/single_pages/dashboard/system/seo/bulk_seo_tool.php:100
 msgid "Advanced Search"
 msgstr "Avancerad sökning"
@@ -6905,12 +6910,6 @@ msgstr "Användarnamn eller e-postadress"
 #: concrete/elements/users/search_form_advanced.php:78
 msgid "Group(s)"
 msgstr "Grupp(er)"
-
-#: concrete/blocks/tags/tag_form.php:11
-#: concrete/elements/users/search_form_advanced.php:109
-#: concrete/single_pages/dashboard/system/basics/editor.php:25
-msgid "Advanced"
-msgstr "Avancerad"
 
 #: concrete/elements/block_controls.php:25
 #: concrete/elements/block_controls.php:30
@@ -8258,6 +8257,11 @@ msgstr "Longitud: %s"
 msgid ""
 "Error: The required page attribute with the handle of: \"%s\" doesn't exist"
 msgstr "Fel: sidegenskapen med handtaget \"%s\" finns inte."
+
+#: concrete/blocks/tags/tag_form.php:11
+#: concrete/single_pages/dashboard/system/basics/editor.php:25
+msgid "Advanced"
+msgstr "Avancerad"
 
 #: concrete/blocks/date_archive/form.php:7
 #: concrete/blocks/tags/tag_form.php:17
@@ -9783,15 +9787,15 @@ msgid ""
 "hierarchy."
 msgstr "Trädvyn låter dig se webbplatsen som ett träd, och enkelt sortera om sidor hierarkiskt."
 
-#: concrete/single_pages/dashboard/sitemap/full.php:33
+#: concrete/single_pages/dashboard/sitemap/full.php:35
 msgid "Show System Pages"
 msgstr "Visa systemsidor"
 
-#: concrete/single_pages/dashboard/sitemap/full.php:52
+#: concrete/single_pages/dashboard/sitemap/full.php:50
 msgid "Resume Copy"
 msgstr "Fortsätt kopiera"
 
-#: concrete/single_pages/dashboard/sitemap/full.php:53
+#: concrete/single_pages/dashboard/sitemap/full.php:51
 msgid "Page copy operations pending."
 msgstr "Kopiering av sidor inväntas."
 

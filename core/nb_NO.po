@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2013-11-02 23:00+0000\n"
-"PO-Revision-Date: 2013-11-03 21:22+0000\n"
+"POT-Creation-Date: 2013-11-05 23:00+0000\n"
+"PO-Revision-Date: 2013-11-06 08:54+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Norwegian Bokmål (Norway) (http://www.transifex.com/projects/p/concrete5/language/nb_NO/)\n"
 "MIME-Version: 1.0\n"
@@ -1063,7 +1063,7 @@ msgstr "Succes"
 msgid "Where do you want to publish this page?"
 msgstr "Hvor ønsker du at publicere denne side?"
 
-#: concrete/single_pages/dashboard/sitemap/full.php:75
+#: concrete/single_pages/dashboard/sitemap/full.php:73
 #: concrete/tools/sitemap_search_selector.php:5
 msgid "You do not have access to the sitemap."
 msgstr "Du har ikke adgang til sitemap."
@@ -1262,10 +1262,10 @@ msgstr "Orden for fremvisning gemt."
 
 #: concrete/tools/jobs/run_single.php:52
 #, php-format
-msgid "%d items"
+msgid "%d item"
 msgid_plural "%d items"
 msgstr[0] ""
-msgstr[1] "%d emner"
+msgstr[1] ""
 
 #: concrete/tools/permissions/access_entity.php:7
 msgid "You do not have user search or group search permissions."
@@ -2826,7 +2826,11 @@ msgstr "Ugyldig fil endelse."
 msgid "Please correct the following errors:"
 msgstr "Ret venligst følgende fejl:"
 
-#: concrete/core/controllers/blocks/form.php:452
+#: concrete/core/controllers/blocks/form.php:390
+msgid "No file specified"
+msgstr ""
+
+#: concrete/core/controllers/blocks/form.php:460
 #, php-format
 msgid "%s Form Submission"
 msgstr "%s modtagne formularer"
@@ -3821,9 +3825,9 @@ msgstr "Tilladte fil typer gemt."
 msgid "Global mail settings saved."
 msgstr "Globale post indstillinger gemt."
 
-#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:142
 #: concrete/core/controllers/single_pages/dashboard/reports/forms.php:150
-#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:159
+#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:158
+#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:167
 #: concrete/core/controllers/single_pages/dashboard/system/mail/importers.php:17
 #: concrete/core/controllers/single_pages/dashboard/system/mail/method.php:12
 msgid "Invalid Token."
@@ -4103,7 +4107,7 @@ msgstr "Logger"
 msgid "All"
 msgstr "Alle"
 
-#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:117
+#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:125
 #: concrete/single_pages/dashboard/reports/forms.php:202
 msgid "File not found"
 msgstr "Fil ikke fundet"
@@ -4478,7 +4482,7 @@ msgid "You must select a valid sample content starting point."
 msgstr "Du skal vælge et gyldigt start punkt for demo indhold."
 
 #: concrete/core/controllers/single_pages/install.php:212
-#: concrete/core/libraries/loader.php:264
+#: concrete/core/libraries/loader.php:265
 msgid "Unable to connect to database."
 msgstr "Kan ikke forbinde til databasen."
 
@@ -4788,16 +4792,16 @@ msgstr "Fejl: Intet område forbundet til layout"
 msgid "Unknown User"
 msgstr "Ukendt Bruger"
 
-#: concrete/core/models/page.php:1603
+#: concrete/core/models/page.php:1604
 #, php-format
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "Side \"%s\" med stien \"%s\" slettet"
 
-#: concrete/core/models/page.php:1603 concrete/core/models/page.php:1661
+#: concrete/core/models/page.php:1604 concrete/core/models/page.php:1662
 msgid "Page Action"
 msgstr "Side Handling"
 
-#: concrete/core/models/page.php:1661
+#: concrete/core/models/page.php:1662
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "Side \"%s\" med stien \"%s\" Flyttet til papirkurven"
@@ -4886,7 +4890,7 @@ msgstr "Efterbehandling."
 msgid "Unable to install database: %s"
 msgstr "Kan ikke installere database: %s"
 
-#: concrete/config/localization.php:125
+#: concrete/config/localization.php:126
 #: concrete/core/models/starting_point_package.php:129
 #: concrete/elements/collection_preview_as_user.php:17
 #: concrete/single_pages/dashboard/reports/logs.php:70
@@ -4897,7 +4901,7 @@ msgstr "Gjest"
 msgid "The guest group represents unregistered visitors to your site."
 msgstr "Denne gruppe repræsenterer uregistreret besøgende på din hjemmeside"
 
-#: concrete/config/localization.php:126
+#: concrete/config/localization.php:127
 #: concrete/core/models/starting_point_package.php:130
 msgid "Registered Users"
 msgstr "Registrerte brukere"
@@ -5376,37 +5380,37 @@ msgstr "Kan ikke forbinde til markedspladsen"
 msgid "Version %d"
 msgstr "Version %d"
 
-#: concrete/core/models/block_types.php:723
+#: concrete/core/models/block_types.php:724
 #, php-format
 msgid ""
 "%s not found. Please check that the block controller file contains the "
 "correct class name."
 msgstr "%s ikke fundet. Check at blokkens kontroller fil indeholder det korrekte klasse navn."
 
-#: concrete/core/models/block_types.php:732
+#: concrete/core/models/block_types.php:733
 msgid ""
 "Error: Block Type cannot be installed because no db.xml file can be found. "
 "Either create a db.xml file for this block type, or remove the $btTable "
 "variable from its controller."
 msgstr "Fejl: Block Type kan ikke installeres, fordi ingen db.xml fil kan findes. Enten skal du oprette en db.xml fil til denne blok type, eller fjerne $ btTable variabel fra dens controller."
 
-#: concrete/core/models/block_types.php:736
+#: concrete/core/models/block_types.php:737
 msgid ""
 "Error: Block Type cannot be installed due to an unknown database error. "
 "Please check that the db.xml file for this block type is formatted "
 "correctly."
 msgstr "Fejl: Block Type kan ikke installeres på grund af en ukendt database fejl. Kontroller venligst, at db.xml fil til denne blok type er formateret korrekt."
 
-#: concrete/core/models/block_types.php:797
+#: concrete/core/models/block_types.php:798
 #, php-format
 msgid "No block found with the handle %s."
 msgstr "Ingen blokke fundet med kaldenavn %s."
 
-#: concrete/core/models/block_types.php:816
+#: concrete/core/models/block_types.php:817
 msgid "Error: Block Type table must contain at least two fields."
 msgstr "Fejl: Bloker Type tabellen skal indeholde mindst to felter."
 
-#: concrete/core/models/block_types.php:818
+#: concrete/core/models/block_types.php:819
 msgid "Error: Block Type table must contain a \"bID\" primary key field."
 msgstr "Fejl: Bloker Type tabellen skal indeholde en \"bID\" primært nøglefelt."
 
@@ -5431,7 +5435,7 @@ msgstr "Der findes allerede en attribut med dette navn. %s."
 msgid "Illegal variable name '%s' in element args."
 msgstr "Illegal variabelnavn '%s' i element args."
 
-#: concrete/core/libraries/loader.php:264
+#: concrete/core/libraries/loader.php:265
 msgid "A database error occurred while processing this request."
 msgstr "Der opstod en database fejl under bearbejdning."
 
@@ -6076,6 +6080,7 @@ msgstr "# Per Side"
 
 #: concrete/elements/files/search_form_advanced.php:222
 #: concrete/elements/pages/search_form_advanced.php:173
+#: concrete/elements/users/search_form_advanced.php:109
 #: concrete/single_pages/dashboard/system/seo/bulk_seo_tool.php:100
 msgid "Advanced Search"
 msgstr "Avanceret søgning"
@@ -6505,6 +6510,13 @@ msgstr "Åben link i nyt vindue"
 msgid "You have no items in your Clipboard."
 msgstr "Du har ingen emner i din Udklipsholder."
 
+#: concrete/config/localization.php:125
+#: concrete/elements/block_area_add_stack_contents.php:48
+#: concrete/elements/scrapbook_lists.php:33
+#: concrete/elements/scrapbook_lists.php:49
+msgid "This block is no longer available."
+msgstr "Denne blokken er ikke lenger tilgjengelig."
+
 #: concrete/elements/scrapbook_lists.php:46
 msgid "Remove from Clipboard"
 msgstr "Fjern fra Udklipsholder."
@@ -6895,12 +6907,6 @@ msgstr "Brugernavn eller E-mail"
 #: concrete/elements/users/search_form_advanced.php:78
 msgid "Group(s)"
 msgstr "Gruppe(r)"
-
-#: concrete/blocks/tags/tag_form.php:11
-#: concrete/elements/users/search_form_advanced.php:109
-#: concrete/single_pages/dashboard/system/basics/editor.php:25
-msgid "Advanced"
-msgstr "Avansert"
 
 #: concrete/elements/block_controls.php:25
 #: concrete/elements/block_controls.php:30
@@ -8061,11 +8067,7 @@ msgctxt "Time format"
 msgid "12"
 msgstr "12"
 
-#: concrete/config/localization.php:124
-msgid "This block is no longer available."
-msgstr "Denne blokken er ikke lenger tilgjengelig."
-
-#: concrete/config/localization.php:127
+#: concrete/config/localization.php:128
 msgid "Admin"
 msgstr "Admin"
 
@@ -8252,6 +8254,11 @@ msgstr "Lengdegrad: %s"
 msgid ""
 "Error: The required page attribute with the handle of: \"%s\" doesn't exist"
 msgstr "FEJL: Sidens attribut: \"%s\" findes ikke"
+
+#: concrete/blocks/tags/tag_form.php:11
+#: concrete/single_pages/dashboard/system/basics/editor.php:25
+msgid "Advanced"
+msgstr "Avansert"
 
 #: concrete/blocks/date_archive/form.php:7
 #: concrete/blocks/tags/tag_form.php:17
@@ -9777,15 +9784,15 @@ msgid ""
 "hierarchy."
 msgstr "Sitemap giver dig mulighed for at se din hjemmeside som et træ og nemt organisere din hjemmesides hierarki."
 
-#: concrete/single_pages/dashboard/sitemap/full.php:33
+#: concrete/single_pages/dashboard/sitemap/full.php:35
 msgid "Show System Pages"
 msgstr "Vis system sider"
 
-#: concrete/single_pages/dashboard/sitemap/full.php:52
+#: concrete/single_pages/dashboard/sitemap/full.php:50
 msgid "Resume Copy"
 msgstr "Genoptag Kopiering"
 
-#: concrete/single_pages/dashboard/sitemap/full.php:53
+#: concrete/single_pages/dashboard/sitemap/full.php:51
 msgid "Page copy operations pending."
 msgstr "Side kopierings operationer afventer."
 
