@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2013-11-06 23:00+0000\n"
-"PO-Revision-Date: 2013-11-07 08:49+0000\n"
+"POT-Creation-Date: 2013-11-18 23:00+0000\n"
+"PO-Revision-Date: 2013-11-19 13:31+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/projects/p/concrete5/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -627,14 +627,14 @@ msgstr "位置"
 #: concrete/blocks/guestbook/add.php:4 concrete/blocks/guestbook/edit.php:4
 #: concrete/blocks/youtube/form_setup_html.php:20
 #: concrete/core/models/file_list.php:418
-#: concrete/core/models/file_version.php:231
+#: concrete/core/models/file_version.php:235
 #: concrete/tools/files/bulk_properties.php:313
 #: concrete/tools/files/properties.php:274
 #: concrete/tools/files/properties.php:348
 msgid "Title"
 msgstr "标题"
 
-#: concrete/core/models/file_version.php:234
+#: concrete/core/models/file_version.php:238
 #: concrete/elements/collection_add.php:48
 #: concrete/elements/collection_metadata.php:121
 #: concrete/single_pages/dashboard/blocks/types/view.php:14
@@ -648,7 +648,7 @@ msgstr "描述"
 
 #: concrete/config/install/packages/standard/content.xml:600
 #: concrete/core/controllers/blocks/tags.php:40
-#: concrete/core/models/file_version.php:237
+#: concrete/core/models/file_version.php:241
 #: concrete/tools/files/bulk_properties.php:315
 #: concrete/tools/files/properties.php:276
 msgid "Tags"
@@ -2749,7 +2749,7 @@ msgstr "文件链接存储在资产库中。"
 #: concrete/blocks/file/add.php:6 concrete/blocks/file/edit.php:9
 #: concrete/core/controllers/blocks/file.php:33
 #: concrete/core/libraries/file/types.php:136
-#: concrete/core/models/file_version.php:228
+#: concrete/core/models/file_version.php:232
 #: concrete/single_pages/dashboard/pages/themes/inspect.php:33
 #: concrete/single_pages/dashboard/reports/statistics.php:105
 #: concrete/single_pages/dashboard/system/backup_restore/backup.php:103
@@ -4894,27 +4894,31 @@ msgstr "表面加工"
 msgid "Unable to install database: %s"
 msgstr "无法安装数据库： %s"
 
-#: concrete/config/localization.php:126
+#: concrete/config/localization.php:127
 #: concrete/core/models/starting_point_package.php:129
-#: concrete/elements/collection_preview_as_user.php:17
-#: concrete/single_pages/dashboard/reports/logs.php:70
+msgctxt "GroupName"
 msgid "Guest"
 msgstr "访客"
 
 #: concrete/core/models/starting_point_package.php:129
+msgctxt "GroupDescription"
 msgid "The guest group represents unregistered visitors to your site."
 msgstr "客群表示未注册的游客到您的网站。"
 
-#: concrete/config/localization.php:127
+#: concrete/config/localization.php:129
 #: concrete/core/models/starting_point_package.php:130
+msgctxt "GroupName"
 msgid "Registered Users"
 msgstr "注册用户"
 
 #: concrete/core/models/starting_point_package.php:130
+msgctxt "GroupDescription"
 msgid "The registered users group represents all user accounts."
 msgstr "注册用户组代表所有用户帐户。"
 
+#: concrete/config/localization.php:131
 #: concrete/core/models/starting_point_package.php:131
+msgctxt "GroupName"
 msgid "Administrators"
 msgstr "管理员"
 
@@ -5610,7 +5614,7 @@ msgstr "后一页"
 msgid "Previous"
 msgstr "前一页"
 
-#: concrete/core/helpers/file.php:311
+#: concrete/core/helpers/file.php:323
 msgid "An error occured while attempting to determine file permissions."
 msgstr "发生错误，而试图确定文件的权限。"
 
@@ -6841,6 +6845,11 @@ msgstr "无。"
 msgid "Preview As"
 msgstr "预览作为"
 
+#: concrete/elements/collection_preview_as_user.php:17
+#: concrete/single_pages/dashboard/reports/logs.php:70
+msgid "Guest"
+msgstr "访客"
+
 #: concrete/elements/collection_preview_as_user.php:18
 msgid "Registered User"
 msgstr "注册用户"
@@ -8066,10 +8075,6 @@ msgstr "d-m-Y_H:i_"
 msgctxt "Time format"
 msgid "12"
 msgstr "12"
-
-#: concrete/config/localization.php:128
-msgid "Admin"
-msgstr "管理"
 
 #: concrete/config/file_types.php:16
 msgid "JPEG"
