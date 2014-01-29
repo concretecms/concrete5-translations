@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2013-12-02 23:00+0000\n"
-"PO-Revision-Date: 2013-12-04 05:40+0000\n"
-"Last-Translator: José Ricardo Mantilla Mantilla <>\n"
+"POT-Creation-Date: 2014-01-27 23:00+0000\n"
+"PO-Revision-Date: 2014-01-28 08:49+0000\n"
+"Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Spanish (Spain) (http://www.transifex.com/projects/p/concrete5/language/es_ES/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -812,7 +812,7 @@ msgstr "Ha habido un problema al descargar"
 #: concrete/single_pages/dashboard/extend/install.php:295
 #: concrete/single_pages/dashboard/system/backup_restore/backup.php:113
 #: concrete/single_pages/dashboard/system/backup_restore/update.php:19
-#: concrete/single_pages/download_file.php:35 concrete/tools/files/view.php:37
+#: concrete/single_pages/download_file.php:28 concrete/tools/files/view.php:37
 #: concrete/tools/i18n_js.php:148
 msgid "Download"
 msgstr "Descargar"
@@ -2482,7 +2482,7 @@ msgid ""
 "selected pages."
 msgstr "Usted no tiene permiso para modificar el tipo de página o tema en cualquiera de las páginas seleccionadas."
 
-#: concrete/elements/collection_add.php:198
+#: concrete/elements/collection_add.php:213
 #: concrete/elements/collection_theme.php:52
 #: concrete/elements/collection_theme.php:61
 #: concrete/elements/collection_theme.php:68
@@ -3984,6 +3984,10 @@ msgstr "Los perfiles públicos han sido deshabilitados."
 msgid "Your site's name has been saved."
 msgstr "Se ha guardado el nombre de tu sitio"
 
+#: concrete/core/controllers/single_pages/dashboard/system/basics/site_name.php:22
+msgid "Your site name may only contain letters and numbers."
+msgstr ""
+
 #: concrete/core/controllers/single_pages/dashboard/system/basics/icons.php:11
 msgid "Icons updated successfully."
 msgstr "Iconos actualizado con éxito."
@@ -4448,7 +4452,7 @@ msgstr "Esa dirección de email no está registrada."
 msgid "Forgot Password"
 msgstr "Contraseña olvidada"
 
-#: concrete/core/controllers/single_pages/download_file.php:80
+#: concrete/core/controllers/single_pages/download_file.php:91
 msgid "Password incorrect. Please try again."
 msgstr "La contraseña es incorrecta. Intentalo de nuevo."
 
@@ -5707,44 +5711,44 @@ msgstr "No hay usuarios seleccionados."
 msgid "Select Page"
 msgstr "Seleccionar página"
 
-#: concrete/core/helpers/mail.php:353
+#: concrete/core/helpers/mail.php:354
 msgid "Mail Exception Occurred. Unable to send mail: "
 msgstr "Excepción correo ocurrido. No se puede enviar por correo:"
 
-#: concrete/core/helpers/mail.php:356 concrete/core/helpers/mail.php:377
+#: concrete/core/helpers/mail.php:357 concrete/core/helpers/mail.php:378
 msgid "Template Used"
 msgstr "Plantilla utilizada"
 
-#: concrete/core/helpers/mail.php:357 concrete/core/helpers/mail.php:378
+#: concrete/core/helpers/mail.php:358 concrete/core/helpers/mail.php:379
 #: concrete/single_pages/profile/messages.php:57
 #: concrete/single_pages/profile/messages.php:135
 msgid "To"
 msgstr "Hacia"
 
-#: concrete/core/helpers/mail.php:358 concrete/core/helpers/mail.php:379
+#: concrete/core/helpers/mail.php:359 concrete/core/helpers/mail.php:380
 #: concrete/single_pages/profile/messages.php:57
 msgid "From"
 msgstr "De"
 
-#: concrete/core/helpers/mail.php:360 concrete/core/helpers/mail.php:381
+#: concrete/core/helpers/mail.php:361 concrete/core/helpers/mail.php:382
 msgid "Reply-To"
 msgstr "Responder a"
 
-#: concrete/core/helpers/mail.php:362 concrete/core/helpers/mail.php:383
+#: concrete/core/helpers/mail.php:363 concrete/core/helpers/mail.php:384
 #: concrete/single_pages/profile/messages.php:58
 #: concrete/single_pages/profile/messages.php:141
 msgid "Subject"
 msgstr "Tema"
 
-#: concrete/core/helpers/mail.php:363 concrete/core/helpers/mail.php:384
+#: concrete/core/helpers/mail.php:364 concrete/core/helpers/mail.php:385
 msgid "Body"
 msgstr "Mensaje"
 
-#: concrete/core/helpers/mail.php:373
+#: concrete/core/helpers/mail.php:374
 msgid "EMAILS ARE ENABLED. THIS EMAIL WAS SENT TO mail()"
 msgstr "Los emails están habilitados. Este email ha sido enviado a mail()"
 
-#: concrete/core/helpers/mail.php:375
+#: concrete/core/helpers/mail.php:376
 msgid "EMAILS ARE DISABLED. THIS EMAIL WAS LOGGED BUT NOT SENT"
 msgstr "Los correos electrónicos son DISABLED. Este correo electrónico fue LOGGED pero no enviados"
 
@@ -5801,7 +5805,7 @@ msgid "&lt; Back to Home"
 msgstr "&lt; Regresar al Inicio"
 
 #: concrete/single_pages/dashboard/users/search.php:326
-#: concrete/single_pages/download_file.php:41
+#: concrete/single_pages/download_file.php:34
 #: concrete/single_pages/install.php:102
 #: concrete/single_pages/profile/messages.php:44
 #: concrete/themes/dashboard/elements/header.php:111
@@ -6582,7 +6586,7 @@ msgstr "Agregar a %s"
 msgid "URL Slug"
 msgstr "URL Pegajosa"
 
-#: concrete/elements/collection_add.php:218
+#: concrete/elements/collection_add.php:233
 #, php-format
 msgid "Add %s"
 msgstr "Agregar %s"
@@ -7114,7 +7118,7 @@ msgstr "¿Quién no puede buscar qué?"
 #: concrete/single_pages/dashboard/system/mail/method.php:37
 #: concrete/single_pages/dashboard/users/add.php:37
 #: concrete/single_pages/dashboard/users/search.php:221
-#: concrete/single_pages/download_file.php:33
+#: concrete/single_pages/download_file.php:26
 #: concrete/single_pages/install.php:159 concrete/single_pages/login.php:108
 #: concrete/single_pages/login.php:185 concrete/single_pages/register.php:65
 msgid "Password"
@@ -8296,11 +8300,11 @@ msgstr "Mostrar las etiquetas de la página actual"
 msgid "Display available tags"
 msgstr "Mostrar las etiquetas disponibles"
 
-#: concrete/blocks/tags/tag_form.php:44
+#: concrete/blocks/tags/tag_form.php:46
 msgid "Number to Display"
 msgstr "Número para mostrar"
 
-#: concrete/blocks/tags/tag_form.php:54
+#: concrete/blocks/tags/tag_form.php:56
 msgid "Link Tags to Page"
 msgstr "Enlace Tags a la página"
 
@@ -12492,15 +12496,15 @@ msgstr "No tiene permisos para acceder a esta página."
 #: concrete/config/install/base/login_registration.xml:19
 #: concrete/config/install/disabled/blank/content.xml:138
 #: concrete/config/install/disabled/standard/content.xml:138
-#: concrete/single_pages/download_file.php:13
+#: concrete/single_pages/download_file.php:7
 msgid "Download File"
 msgstr "Bajar archivo"
 
-#: concrete/single_pages/download_file.php:17
+#: concrete/single_pages/download_file.php:11
 msgid "Invalid File."
 msgstr "Archivo inválido."
 
-#: concrete/single_pages/download_file.php:21
+#: concrete/single_pages/download_file.php:15
 msgid "This file requires a password to download."
 msgstr "Este archivo requiere una contraseña para descargar"
 

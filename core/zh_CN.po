@@ -11,9 +11,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2013-12-01 23:00+0000\n"
-"PO-Revision-Date: 2013-12-02 12:02+0000\n"
-"Last-Translator: mozillazg <opensource.mozillazg@gmail.com>\n"
+"POT-Creation-Date: 2014-01-27 23:00+0000\n"
+"PO-Revision-Date: 2014-01-28 08:49+0000\n"
+"Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/projects/p/concrete5/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -813,7 +813,7 @@ msgstr "有一个错误下载"
 #: concrete/single_pages/dashboard/extend/install.php:295
 #: concrete/single_pages/dashboard/system/backup_restore/backup.php:113
 #: concrete/single_pages/dashboard/system/backup_restore/update.php:19
-#: concrete/single_pages/download_file.php:35 concrete/tools/files/view.php:37
+#: concrete/single_pages/download_file.php:28 concrete/tools/files/view.php:37
 #: concrete/tools/i18n_js.php:148
 msgid "Download"
 msgstr "下载"
@@ -2478,7 +2478,7 @@ msgid ""
 "selected pages."
 msgstr "您没有权限修改选定的页面的页面类型或主题。"
 
-#: concrete/elements/collection_add.php:198
+#: concrete/elements/collection_add.php:213
 #: concrete/elements/collection_theme.php:52
 #: concrete/elements/collection_theme.php:61
 #: concrete/elements/collection_theme.php:68
@@ -3980,6 +3980,10 @@ msgstr "公用配置文件已被禁用。"
 msgid "Your site's name has been saved."
 msgstr "你的网站的名字已经被保存。"
 
+#: concrete/core/controllers/single_pages/dashboard/system/basics/site_name.php:22
+msgid "Your site name may only contain letters and numbers."
+msgstr ""
+
 #: concrete/core/controllers/single_pages/dashboard/system/basics/icons.php:11
 msgid "Icons updated successfully."
 msgstr "图标更新成功。"
@@ -4444,7 +4448,7 @@ msgstr "没有此电子邮件地址的记录。"
 msgid "Forgot Password"
 msgstr "忘记密码"
 
-#: concrete/core/controllers/single_pages/download_file.php:80
+#: concrete/core/controllers/single_pages/download_file.php:91
 msgid "Password incorrect. Please try again."
 msgstr "密码不正确。请再试一次。"
 
@@ -5697,44 +5701,44 @@ msgstr "未选中用户。"
 msgid "Select Page"
 msgstr "选择页面"
 
-#: concrete/core/helpers/mail.php:353
+#: concrete/core/helpers/mail.php:354
 msgid "Mail Exception Occurred. Unable to send mail: "
 msgstr "邮件发生异常。无法发送邮件："
 
-#: concrete/core/helpers/mail.php:356 concrete/core/helpers/mail.php:377
+#: concrete/core/helpers/mail.php:357 concrete/core/helpers/mail.php:378
 msgid "Template Used"
 msgstr "使用的模板"
 
-#: concrete/core/helpers/mail.php:357 concrete/core/helpers/mail.php:378
+#: concrete/core/helpers/mail.php:358 concrete/core/helpers/mail.php:379
 #: concrete/single_pages/profile/messages.php:57
 #: concrete/single_pages/profile/messages.php:135
 msgid "To"
 msgstr "收件人"
 
-#: concrete/core/helpers/mail.php:358 concrete/core/helpers/mail.php:379
+#: concrete/core/helpers/mail.php:359 concrete/core/helpers/mail.php:380
 #: concrete/single_pages/profile/messages.php:57
 msgid "From"
 msgstr "发件人"
 
-#: concrete/core/helpers/mail.php:360 concrete/core/helpers/mail.php:381
+#: concrete/core/helpers/mail.php:361 concrete/core/helpers/mail.php:382
 msgid "Reply-To"
 msgstr "回复"
 
-#: concrete/core/helpers/mail.php:362 concrete/core/helpers/mail.php:383
+#: concrete/core/helpers/mail.php:363 concrete/core/helpers/mail.php:384
 #: concrete/single_pages/profile/messages.php:58
 #: concrete/single_pages/profile/messages.php:141
 msgid "Subject"
 msgstr "标题"
 
-#: concrete/core/helpers/mail.php:363 concrete/core/helpers/mail.php:384
+#: concrete/core/helpers/mail.php:364 concrete/core/helpers/mail.php:385
 msgid "Body"
 msgstr "正文"
 
-#: concrete/core/helpers/mail.php:373
+#: concrete/core/helpers/mail.php:374
 msgid "EMAILS ARE ENABLED. THIS EMAIL WAS SENT TO mail()"
 msgstr "电子邮件已启用。将电子邮件发送到邮箱（）"
 
-#: concrete/core/helpers/mail.php:375
+#: concrete/core/helpers/mail.php:376
 msgid "EMAILS ARE DISABLED. THIS EMAIL WAS LOGGED BUT NOT SENT"
 msgstr "电子邮件将被禁用。此电子邮件记录但没有发送"
 
@@ -5791,7 +5795,7 @@ msgid "&lt; Back to Home"
 msgstr "返回首页"
 
 #: concrete/single_pages/dashboard/users/search.php:326
-#: concrete/single_pages/download_file.php:41
+#: concrete/single_pages/download_file.php:34
 #: concrete/single_pages/install.php:102
 #: concrete/single_pages/profile/messages.php:44
 #: concrete/themes/dashboard/elements/header.php:111
@@ -6572,7 +6576,7 @@ msgstr "添加到 %s"
 msgid "URL Slug"
 msgstr "URL弹头"
 
-#: concrete/elements/collection_add.php:218
+#: concrete/elements/collection_add.php:233
 #, php-format
 msgid "Add %s"
 msgstr "添加 %s"
@@ -7104,7 +7108,7 @@ msgstr "谁也无法搜索什么？"
 #: concrete/single_pages/dashboard/system/mail/method.php:37
 #: concrete/single_pages/dashboard/users/add.php:37
 #: concrete/single_pages/dashboard/users/search.php:221
-#: concrete/single_pages/download_file.php:33
+#: concrete/single_pages/download_file.php:26
 #: concrete/single_pages/install.php:159 concrete/single_pages/login.php:108
 #: concrete/single_pages/login.php:185 concrete/single_pages/register.php:65
 msgid "Password"
@@ -8286,11 +8290,11 @@ msgstr "显示当前页面的标签"
 msgid "Display available tags"
 msgstr "显示可用的标签"
 
-#: concrete/blocks/tags/tag_form.php:44
+#: concrete/blocks/tags/tag_form.php:46
 msgid "Number to Display"
 msgstr "显示数目"
 
-#: concrete/blocks/tags/tag_form.php:54
+#: concrete/blocks/tags/tag_form.php:56
 msgid "Link Tags to Page"
 msgstr "连接页面标签"
 
@@ -12481,15 +12485,15 @@ msgstr "您未被授权访问此页面。"
 #: concrete/config/install/base/login_registration.xml:19
 #: concrete/config/install/disabled/blank/content.xml:138
 #: concrete/config/install/disabled/standard/content.xml:138
-#: concrete/single_pages/download_file.php:13
+#: concrete/single_pages/download_file.php:7
 msgid "Download File"
 msgstr "文件下载"
 
-#: concrete/single_pages/download_file.php:17
+#: concrete/single_pages/download_file.php:11
 msgid "Invalid File."
 msgstr "文件无效"
 
-#: concrete/single_pages/download_file.php:21
+#: concrete/single_pages/download_file.php:15
 msgid "This file requires a password to download."
 msgstr "该文件需要密码才能下载。"
 
