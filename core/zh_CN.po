@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-02-04 07:47+0000\n"
-"PO-Revision-Date: 2014-02-04 09:11+0000\n"
+"POT-Creation-Date: 2014-02-07 23:00+0000\n"
+"PO-Revision-Date: 2014-02-08 08:50+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/projects/p/concrete5/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -23,7 +23,7 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: concrete/elements/collection_theme.php:23 concrete/startup/process.php:88
+#: concrete/elements/collection_theme.php:23 concrete/startup/process.php:95
 #: concrete/tools/add_block_popup.php:6 concrete/tools/add_block_popup.php:10
 #: concrete/tools/add_block_popup.php:24
 #: concrete/tools/composer/preview.php:11
@@ -128,7 +128,7 @@ msgstr "降序"
 #: concrete/elements/permission/details/block/timed_guest_access.php:38
 #: concrete/elements/permission/lists/area.php:82
 #: concrete/elements/permission/lists/block.php:64
-#: concrete/elements/permission/lists/collection.php:104
+#: concrete/elements/permission/lists/collection.php:102
 #: concrete/elements/permission/lists/file.php:63
 #: concrete/models/attribute/types/select/type_form.php:35
 #: concrete/single_pages/dashboard/blocks/permissions.php:22
@@ -335,7 +335,7 @@ msgstr "开始上传"
 #: concrete/elements/permission/details/block/timed_guest_access.php:37
 #: concrete/elements/permission/lists/area.php:81
 #: concrete/elements/permission/lists/block.php:63
-#: concrete/elements/permission/lists/collection.php:103
+#: concrete/elements/permission/lists/collection.php:101
 #: concrete/elements/permission/lists/file.php:62
 #: concrete/models/attribute/types/select/type_form.php:34
 #: concrete/single_pages/dashboard/blocks/permissions.php:21
@@ -499,8 +499,6 @@ msgstr "保存位置"
 #: concrete/blocks/dashboard_site_activity/view.php:5
 #: concrete/blocks/form/form_setup_html.php:101
 #: concrete/blocks/survey/add.php:27 concrete/blocks/survey/edit.php:32
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:25
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:95
 #: concrete/core/controllers/single_pages/dashboard/users/search.php:361
 #: concrete/elements/custom_style/background.php:20
 #: concrete/elements/permission/access/list.php:39
@@ -594,8 +592,8 @@ msgstr "页面添加到"
 #: concrete/elements/workflow/type_form_required.php:35
 #: concrete/single_pages/dashboard/files/sets.php:164
 #: concrete/single_pages/dashboard/pages/themes/inspect.php:34
-#: concrete/single_pages/dashboard/reports/logs.php:40
-#: concrete/single_pages/dashboard/reports/logs.php:56
+#: concrete/single_pages/dashboard/reports/logs.php:41
+#: concrete/single_pages/dashboard/reports/logs.php:57
 #: concrete/single_pages/dashboard/workflow/list.php:52
 #: concrete/tools/files/bulk_properties.php:302
 #: concrete/tools/files/properties.php:244
@@ -603,6 +601,8 @@ msgid "Type"
 msgstr "类型"
 
 #. %s is a number
+#. i18n %s is a number
+#: concrete/core/helpers/number.php:109
 #: concrete/tools/files/bulk_properties.php:308
 #: concrete/tools/files/properties.php:249
 #, php-format
@@ -729,7 +729,7 @@ msgid "Most recent 20 downloads:"
 msgstr "最近 20 项下载："
 
 #: concrete/single_pages/dashboard/reports/forms.php:172
-#: concrete/single_pages/dashboard/reports/logs.php:57
+#: concrete/single_pages/dashboard/reports/logs.php:58
 #: concrete/single_pages/dashboard/reports/statistics.php:106
 #: concrete/single_pages/dashboard/reports/surveys.php:24
 #: concrete/tools/files/properties.php:419
@@ -1098,10 +1098,10 @@ msgstr "平面视图"
 #: concrete/elements/files/search_form_advanced.php:216
 #: concrete/elements/marketplace/search_form.php:24
 #: concrete/elements/pages/search_form_advanced.php:169
-#: concrete/elements/profile/sidebar.php:56
+#: concrete/elements/profile/sidebar.php:61
 #: concrete/elements/users/search_form_advanced.php:103
 #: concrete/single_pages/dashboard/files/sets.php:170
-#: concrete/single_pages/dashboard/reports/logs.php:43
+#: concrete/single_pages/dashboard/reports/logs.php:44
 #: concrete/single_pages/dashboard/system/seo/bulk_seo_tool.php:99
 #: concrete/single_pages/dashboard/users/groups.php:69
 #: concrete/single_pages/members.php:4 concrete/single_pages/members.php:7
@@ -2558,12 +2558,12 @@ msgid ""
 "defaults or their parent pages."
 msgstr "如果页面设置为全局默认或者依照上级页面，只能对其设置特定权限。"
 
-#: concrete/elements/permission/lists/collection.php:93
+#: concrete/elements/permission/lists/collection.php:91
 #: concrete/tools/pages/permissions.php:163
 msgid "Changing this setting will affect this page immediately. Are you sure?"
 msgstr "更改此设置将立即影响此页。你确定吗？"
 
-#: concrete/elements/permission/lists/collection.php:159
+#: concrete/elements/permission/lists/collection.php:157
 #: concrete/tools/pages/permissions.php:226
 msgid "Confirm Change"
 msgstr "确认更改"
@@ -2837,7 +2837,7 @@ msgstr "请更正以下错误："
 msgid "No file specified"
 msgstr ""
 
-#: concrete/core/controllers/blocks/form.php:460
+#: concrete/core/controllers/blocks/form.php:458
 #, php-format
 msgid "%s Form Submission"
 msgstr "提交表单 %s "
@@ -3663,105 +3663,6 @@ msgstr "启用URL重写。我们能够自动更新。htaccess文件。"
 msgid "URL rewriting disabled."
 msgstr "禁用URL重写。"
 
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:10
-msgid "concrete5 Version"
-msgstr "concrete5 版本"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:11
-msgid "concrete5 Packages"
-msgstr "concrete5 套件"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:30
-msgid "concrete5 Overrides"
-msgstr "concrete5 超出"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:102
-msgid "concrete5 Cache Settings"
-msgstr ""
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:103
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:104
-#: concrete/elements/permission/duration.php:150
-msgid "On"
-msgstr "开启"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:103
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:104
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:105
-#: concrete/single_pages/dashboard/system/registration/public_registration.php:17
-msgid "Off"
-msgstr "关闭"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:103
-#, php-format
-msgid "Block Cache - %s"
-msgstr ""
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:104
-#, php-format
-msgid "Overrides Cache - %s"
-msgstr ""
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:105
-#: concrete/single_pages/dashboard/system/optimization/cache.php:56
-msgid "On - If blocks on the particular page allow it."
-msgstr "开 - 如果块在特定的页面上，允许它。"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:105
-#: concrete/single_pages/dashboard/system/optimization/cache.php:62
-msgid "On - In all cases."
-msgstr "开 - 在所有的情况下。"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:105
-#, php-format
-msgid "Full Page Caching - %s"
-msgstr ""
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:107
-#: concrete/single_pages/dashboard/system/optimization/cache.php:72
-#, php-format
-msgid "Every %s (default setting)."
-msgstr "每个 %s (默认设置)"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:107
-#: concrete/single_pages/dashboard/system/optimization/cache.php:78
-msgid "Only when manually removed or the cache is cleared."
-msgstr "只有在手动删除或者缓存被清空时。"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:107
-#, php-format
-msgid "Every %s minute."
-msgstr ""
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:107
-#, php-format
-msgid "Full Page Cache Lifetime - %s"
-msgstr ""
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:112
-msgid "Server Software"
-msgstr "服务器软件"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:113
-msgid "Server API"
-msgstr "服务器API"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:114
-msgid "PHP Version"
-msgstr "PHP 版本"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:115
-msgid "PHP Extensions"
-msgstr "PHP 扩展"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:122
-msgid "Unable to determine."
-msgstr "无法确定。"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:140
-msgid "PHP Settings"
-msgstr "PHP设置"
-
 #: concrete/core/controllers/single_pages/dashboard/system/environment/proxy.php:35
 msgid "Proxy configuration saved."
 msgstr "代理配置保存。"
@@ -4098,11 +3999,18 @@ msgstr "成功更新工作日程。"
 msgid "Job Set schedule updated successfully."
 msgstr "成功更新工作集日程。"
 
+#. i18n %s is a time
+#: concrete/core/controllers/single_pages/dashboard/reports/surveys.php:17
+#: concrete/single_pages/dashboard/reports/logs.php:67
+#, php-format
+msgid "Today at %s"
+msgstr ""
+
 #: concrete/config/install/base/dashboard.xml:226
 #: concrete/config/install/disabled/blank/content.xml:38
 #: concrete/config/install/disabled/standard/content.xml:38
 #: concrete/core/controllers/single_pages/dashboard/reports/logs.php:23
-#: concrete/single_pages/dashboard/reports/logs.php:16
+#: concrete/single_pages/dashboard/reports/logs.php:17
 msgid "Logs"
 msgstr "日志"
 
@@ -4598,35 +4506,25 @@ msgid ""
 "Generate the sitemap.xml file that search engines use to crawl your site."
 msgstr "生成sitemap.xml文件，搜索引擎抓取您的网站。"
 
-#: concrete/core/jobs/generate_sitemap.php:56
+#: concrete/core/jobs/generate_sitemap.php:64
 #, php-format
 msgid "The file %s is not writable"
 msgstr "文件 %s 不可写。"
 
-#: concrete/core/jobs/generate_sitemap.php:59
+#: concrete/core/jobs/generate_sitemap.php:67
 #, php-format
 msgid "Cannot open file %s"
 msgstr "不能打开文件 %s "
 
-#: concrete/core/jobs/generate_sitemap.php:62
+#: concrete/core/jobs/generate_sitemap.php:70
 #, php-format
-msgid "Error writing header of %s"
-msgstr "%s错误写入头"
+msgid "Error writing to file %s"
+msgstr ""
 
-#: concrete/core/jobs/generate_sitemap.php:76
-#, php-format
-msgid "Error writing footer of %s"
-msgstr "%s错误写入页脚"
-
-#: concrete/core/jobs/generate_sitemap.php:81
+#: concrete/core/jobs/generate_sitemap.php:75
 #, php-format
 msgid "%1$s file saved (%2$d pages)."
 msgstr "%1$s文件已保存（ %2$d 页）。"
-
-#: concrete/core/jobs/generate_sitemap.php:151
-#, php-format
-msgid "Error writing page with cID %d to sitemap.xml"
-msgstr "写页与CID %d sitemap.xml的错误"
 
 #: concrete/core/jobs/process_email.php:12
 msgid "Process Email Posts"
@@ -4791,22 +4689,22 @@ msgstr "无法获得许可密钥%s"
 msgid "Error: no area assigned to layout"
 msgstr "错误：没有分配到布局区域"
 
-#: concrete/core/models/page.php:268
+#: concrete/core/models/page.php:291
 #: concrete/core/models/user_private_message.php:147
 #: concrete/single_pages/profile/friends.php:23
 msgid "Unknown User"
 msgstr "未知用户"
 
-#: concrete/core/models/page.php:1604
+#: concrete/core/models/page.php:1629
 #, php-format
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "在%s路径的%s页面已删除"
 
-#: concrete/core/models/page.php:1604 concrete/core/models/page.php:1662
+#: concrete/core/models/page.php:1629 concrete/core/models/page.php:1687
 msgid "Page Action"
 msgstr "页面动作"
 
-#: concrete/core/models/page.php:1662
+#: concrete/core/models/page.php:1687
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "在%s路径的%s页面已放入回收站"
@@ -5540,10 +5438,6 @@ msgstr "调试"
 msgid "Unable to create backup file: %s"
 msgstr "无法创建备份文件： %s"
 
-#: concrete/core/libraries/indexed_search_result.php:24
-msgid "Y-m-d H:i:s"
-msgstr "Y-m-d H:i:s"
-
 #: concrete/core/libraries/file/importer.php:54
 msgid "The file was only partially uploaded."
 msgstr "文件仅部分上传。"
@@ -5576,7 +5470,7 @@ msgstr "视频"
 
 #: concrete/core/libraries/file/types.php:124
 #: concrete/helpers/concrete/upgrade/version_532.php:198
-#: concrete/single_pages/dashboard/reports/logs.php:58
+#: concrete/single_pages/dashboard/reports/logs.php:59
 msgid "Text"
 msgstr "文本"
 
@@ -5642,6 +5536,30 @@ msgstr[0] "%d 分钟"
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] "%d 秒"
+
+#. i18n %s is a number, KB means Kilobyte
+#: concrete/core/helpers/number.php:113
+#, php-format
+msgid "%s KB"
+msgstr ""
+
+#. i18n %s is a number, MB means Megabyte
+#: concrete/core/helpers/number.php:117
+#, php-format
+msgid "%s MB"
+msgstr ""
+
+#. i18n %s is a number, GB means Gigabyte
+#: concrete/core/helpers/number.php:121
+#, php-format
+msgid "%s GB"
+msgstr ""
+
+#. i18n %s is a number, TB means Terabyte
+#: concrete/core/helpers/number.php:123
+#, php-format
+msgid "%s TB"
+msgstr ""
 
 #: concrete/core/helpers/validation/ip.php:94
 msgid ""
@@ -6071,7 +5989,7 @@ msgstr "已保存的搜索"
 #: concrete/elements/marketplace/search_form.php:9
 #: concrete/elements/users/search_form_advanced.php:63
 #: concrete/single_pages/dashboard/files/sets.php:157
-#: concrete/single_pages/dashboard/reports/logs.php:34
+#: concrete/single_pages/dashboard/reports/logs.php:35
 #: concrete/single_pages/dashboard/system/seo/bulk_seo_tool.php:91
 #: concrete/single_pages/dashboard/users/groups.php:66
 msgid "Keywords"
@@ -6310,7 +6228,7 @@ msgstr "从我的好友中删除"
 msgid "Send Private Message"
 msgstr "发送私人信息"
 
-#: concrete/elements/profile/sidebar.php:51
+#: concrete/elements/profile/sidebar.php:56
 msgid "Search Members"
 msgstr "搜寻会员"
 
@@ -6847,7 +6765,7 @@ msgid "Preview As"
 msgstr "预览作为"
 
 #: concrete/elements/collection_preview_as_user.php:17
-#: concrete/single_pages/dashboard/reports/logs.php:70
+#: concrete/single_pages/dashboard/reports/logs.php:77
 msgid "Guest"
 msgstr "访客"
 
@@ -7200,6 +7118,10 @@ msgstr "一周的第一天"
 #: concrete/elements/permission/duration.php:137
 msgid "months"
 msgstr "月"
+
+#: concrete/elements/permission/duration.php:150
+msgid "On"
+msgstr "开启"
 
 #: concrete/elements/permission/duration.php:170
 msgid "weeks"
@@ -11436,6 +11358,10 @@ msgstr "控制公开注册的可用选项。"
 msgid "Allow visitors to signup as site members?"
 msgstr "允许游客来注册网站会员？"
 
+#: concrete/single_pages/dashboard/system/registration/public_registration.php:17
+msgid "Off"
+msgstr "关闭"
+
 #: concrete/single_pages/dashboard/system/registration/public_registration.php:23
 msgid " On - email validation"
 msgstr "开启 - 电子邮件验证"
@@ -11657,9 +11583,26 @@ msgstr "关 - 良好的发展空间。"
 msgid "Off - Turn it on by hand for specific pages."
 msgstr "关闭 - 打开特定页面上的手。"
 
+#: concrete/single_pages/dashboard/system/optimization/cache.php:56
+msgid "On - If blocks on the particular page allow it."
+msgstr "开 - 如果块在特定的页面上，允许它。"
+
+#: concrete/single_pages/dashboard/system/optimization/cache.php:62
+msgid "On - In all cases."
+msgstr "开 - 在所有的情况下。"
+
 #: concrete/single_pages/dashboard/system/optimization/cache.php:68
 msgid "Expire Pages from Cache"
 msgstr "缓存中过期的页面"
+
+#: concrete/single_pages/dashboard/system/optimization/cache.php:72
+#, php-format
+msgid "Every %s (default setting)."
+msgstr "每个 %s (默认设置)"
+
+#: concrete/single_pages/dashboard/system/optimization/cache.php:78
+msgid "Only when manually removed or the cache is cleared."
+msgstr "只有在手动删除或者缓存被清空时。"
 
 #: concrete/single_pages/dashboard/system/optimization/cache.php:86
 msgid "Every "
@@ -11938,26 +11881,22 @@ msgstr "最后一次回复"
 msgid "Number of Responses"
 msgstr "回复数"
 
-#: concrete/single_pages/dashboard/reports/logs.php:22
+#: concrete/single_pages/dashboard/reports/logs.php:23
 msgid "There are no log entries to show at the moment."
 msgstr "有没有日志条目显示的时刻。"
 
 #: concrete/helpers/concrete/upgrade/version_532.php:201
-#: concrete/single_pages/dashboard/reports/logs.php:55
+#: concrete/single_pages/dashboard/reports/logs.php:56
 msgid "Date/Time"
 msgstr "日期/时间"
 
-#: concrete/single_pages/dashboard/reports/logs.php:58
+#: concrete/single_pages/dashboard/reports/logs.php:59
 msgid "Are you sure you want to clear this log?"
 msgstr "您确定要清除该日志？"
 
-#: concrete/single_pages/dashboard/reports/logs.php:58
+#: concrete/single_pages/dashboard/reports/logs.php:59
 msgid "Clear Log"
 msgstr "清空日志"
-
-#: concrete/single_pages/dashboard/reports/logs.php:65
-msgid " at "
-msgstr "在"
 
 #: concrete/single_pages/dashboard/reports/forms.php:23
 msgid "Are you sure you want to delete this form submission?"
@@ -14025,33 +13964,33 @@ msgstr "发生异常："
 msgid "An error occurred while processing this request."
 msgstr "处理您的请求时出现错误。"
 
-#: concrete/startup/process.php:44 concrete/startup/process.php:56
+#: concrete/startup/process.php:51 concrete/startup/process.php:63
 #, php-format
 msgid "You may not arrange the contents of area %s."
 msgstr ""
 
-#: concrete/startup/process.php:66
+#: concrete/startup/process.php:73
 #, php-format
 msgid "You may not add %s to area %s."
 msgstr "无法将 %s 添加到区域 %s 。"
 
-#: concrete/startup/process.php:394
+#: concrete/startup/process.php:401
 msgid "The stack contains invalid block types."
 msgstr "该协议栈包含无效的模块类型。"
 
-#: concrete/startup/process.php:398
+#: concrete/startup/process.php:405
 msgid "Invalid stack."
 msgstr "无效的堆栈。"
 
-#: concrete/startup/process.php:464
+#: concrete/startup/process.php:471
 msgid "Layout preset not found"
 msgstr "布局预设"
 
-#: concrete/startup/process.php:688
+#: concrete/startup/process.php:695
 msgid "Access to block denied"
 msgstr "拒绝访问模块"
 
-#: concrete/startup/process.php:870
+#: concrete/startup/process.php:877
 msgid "Invalid block."
 msgstr "无效模块。"
 

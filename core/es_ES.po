@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-02-04 07:47+0000\n"
-"PO-Revision-Date: 2014-02-04 09:11+0000\n"
+"POT-Creation-Date: 2014-02-07 23:00+0000\n"
+"PO-Revision-Date: 2014-02-08 08:50+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Spanish (Spain) (http://www.transifex.com/projects/p/concrete5/language/es_ES/)\n"
 "MIME-Version: 1.0\n"
@@ -22,7 +22,7 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: concrete/elements/collection_theme.php:23 concrete/startup/process.php:88
+#: concrete/elements/collection_theme.php:23 concrete/startup/process.php:95
 #: concrete/tools/add_block_popup.php:6 concrete/tools/add_block_popup.php:10
 #: concrete/tools/add_block_popup.php:24
 #: concrete/tools/composer/preview.php:11
@@ -127,7 +127,7 @@ msgstr "Descendente"
 #: concrete/elements/permission/details/block/timed_guest_access.php:38
 #: concrete/elements/permission/lists/area.php:82
 #: concrete/elements/permission/lists/block.php:64
-#: concrete/elements/permission/lists/collection.php:104
+#: concrete/elements/permission/lists/collection.php:102
 #: concrete/elements/permission/lists/file.php:63
 #: concrete/models/attribute/types/select/type_form.php:35
 #: concrete/single_pages/dashboard/blocks/permissions.php:22
@@ -334,7 +334,7 @@ msgstr "Iniciar carga"
 #: concrete/elements/permission/details/block/timed_guest_access.php:37
 #: concrete/elements/permission/lists/area.php:81
 #: concrete/elements/permission/lists/block.php:63
-#: concrete/elements/permission/lists/collection.php:103
+#: concrete/elements/permission/lists/collection.php:101
 #: concrete/elements/permission/lists/file.php:62
 #: concrete/models/attribute/types/select/type_form.php:34
 #: concrete/single_pages/dashboard/blocks/permissions.php:21
@@ -498,8 +498,6 @@ msgstr "Guardar ubicación"
 #: concrete/blocks/dashboard_site_activity/view.php:5
 #: concrete/blocks/form/form_setup_html.php:101
 #: concrete/blocks/survey/add.php:27 concrete/blocks/survey/edit.php:32
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:25
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:95
 #: concrete/core/controllers/single_pages/dashboard/users/search.php:361
 #: concrete/elements/custom_style/background.php:20
 #: concrete/elements/permission/access/list.php:39
@@ -593,8 +591,8 @@ msgstr "Añadido a la página"
 #: concrete/elements/workflow/type_form_required.php:35
 #: concrete/single_pages/dashboard/files/sets.php:164
 #: concrete/single_pages/dashboard/pages/themes/inspect.php:34
-#: concrete/single_pages/dashboard/reports/logs.php:40
-#: concrete/single_pages/dashboard/reports/logs.php:56
+#: concrete/single_pages/dashboard/reports/logs.php:41
+#: concrete/single_pages/dashboard/reports/logs.php:57
 #: concrete/single_pages/dashboard/workflow/list.php:52
 #: concrete/tools/files/bulk_properties.php:302
 #: concrete/tools/files/properties.php:244
@@ -602,6 +600,8 @@ msgid "Type"
 msgstr "Tipo"
 
 #. %s is a number
+#. i18n %s is a number
+#: concrete/core/helpers/number.php:109
 #: concrete/tools/files/bulk_properties.php:308
 #: concrete/tools/files/properties.php:249
 #, php-format
@@ -729,7 +729,7 @@ msgid "Most recent 20 downloads:"
 msgstr "Las 20 descargas mas recientes."
 
 #: concrete/single_pages/dashboard/reports/forms.php:172
-#: concrete/single_pages/dashboard/reports/logs.php:57
+#: concrete/single_pages/dashboard/reports/logs.php:58
 #: concrete/single_pages/dashboard/reports/statistics.php:106
 #: concrete/single_pages/dashboard/reports/surveys.php:24
 #: concrete/tools/files/properties.php:419
@@ -1100,10 +1100,10 @@ msgstr "Vista plana"
 #: concrete/elements/files/search_form_advanced.php:216
 #: concrete/elements/marketplace/search_form.php:24
 #: concrete/elements/pages/search_form_advanced.php:169
-#: concrete/elements/profile/sidebar.php:56
+#: concrete/elements/profile/sidebar.php:61
 #: concrete/elements/users/search_form_advanced.php:103
 #: concrete/single_pages/dashboard/files/sets.php:170
-#: concrete/single_pages/dashboard/reports/logs.php:43
+#: concrete/single_pages/dashboard/reports/logs.php:44
 #: concrete/single_pages/dashboard/system/seo/bulk_seo_tool.php:99
 #: concrete/single_pages/dashboard/users/groups.php:69
 #: concrete/single_pages/members.php:4 concrete/single_pages/members.php:7
@@ -2563,12 +2563,12 @@ msgid ""
 "defaults or their parent pages."
 msgstr "Sólo puede especificar los permisos para las páginas si se establecen para anular valores predeterminados o sus páginas principales."
 
-#: concrete/elements/permission/lists/collection.php:93
+#: concrete/elements/permission/lists/collection.php:91
 #: concrete/tools/pages/permissions.php:163
 msgid "Changing this setting will affect this page immediately. Are you sure?"
 msgstr "El cambio de este ajuste afectará a esta página inmediatamente. ¿Estás seguro?"
 
-#: concrete/elements/permission/lists/collection.php:159
+#: concrete/elements/permission/lists/collection.php:157
 #: concrete/tools/pages/permissions.php:226
 msgid "Confirm Change"
 msgstr "Confirmar Cambio"
@@ -2842,7 +2842,7 @@ msgstr "Por favor corrija los siguientes errores:"
 msgid "No file specified"
 msgstr "Ningún archivo especificado"
 
-#: concrete/core/controllers/blocks/form.php:460
+#: concrete/core/controllers/blocks/form.php:458
 #, php-format
 msgid "%s Form Submission"
 msgstr "%s Formulario de Presentación"
@@ -3668,105 +3668,6 @@ msgstr "URL reescritura habilitado. Hemos sido capaces de actualizar de forma au
 msgid "URL rewriting disabled."
 msgstr "Reescritura de URLs deshabilitado."
 
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:10
-msgid "concrete5 Version"
-msgstr "Versión concrete5"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:11
-msgid "concrete5 Packages"
-msgstr "concrete5 Paquetes"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:30
-msgid "concrete5 Overrides"
-msgstr "concrete5 Invalida"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:102
-msgid "concrete5 Cache Settings"
-msgstr "concrete5 configuración de caché"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:103
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:104
-#: concrete/elements/permission/duration.php:150
-msgid "On"
-msgstr "En"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:103
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:104
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:105
-#: concrete/single_pages/dashboard/system/registration/public_registration.php:17
-msgid "Off"
-msgstr "Apagado"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:103
-#, php-format
-msgid "Block Cache - %s"
-msgstr "Bloque de cache - %s"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:104
-#, php-format
-msgid "Overrides Cache - %s"
-msgstr "Reemplaza la caché - %s"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:105
-#: concrete/single_pages/dashboard/system/optimization/cache.php:56
-msgid "On - If blocks on the particular page allow it."
-msgstr "On - Si los bloques en la página en particular lo permite."
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:105
-#: concrete/single_pages/dashboard/system/optimization/cache.php:62
-msgid "On - In all cases."
-msgstr "On - En todos los casos."
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:105
-#, php-format
-msgid "Full Page Caching - %s"
-msgstr "Cache de página completa - %s"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:107
-#: concrete/single_pages/dashboard/system/optimization/cache.php:72
-#, php-format
-msgid "Every %s (default setting)."
-msgstr "Cada %s (ajuste por defecto)."
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:107
-#: concrete/single_pages/dashboard/system/optimization/cache.php:78
-msgid "Only when manually removed or the cache is cleared."
-msgstr "Sólo cuando se retira manualmente o la memoria caché es limpiada."
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:107
-#, php-format
-msgid "Every %s minute."
-msgstr "Cada %s minutos."
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:107
-#, php-format
-msgid "Full Page Cache Lifetime - %s"
-msgstr "Tiempo de duración de la caché de página completa - %s"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:112
-msgid "Server Software"
-msgstr "Software de Servidor"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:113
-msgid "Server API"
-msgstr "Servidor de API"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:114
-msgid "PHP Version"
-msgstr "Versión de PHP"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:115
-msgid "PHP Extensions"
-msgstr "Extensiones PHP"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:122
-msgid "Unable to determine."
-msgstr "No se puede determinar."
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:140
-msgid "PHP Settings"
-msgstr "Configuración de PHP"
-
 #: concrete/core/controllers/single_pages/dashboard/system/environment/proxy.php:35
 msgid "Proxy configuration saved."
 msgstr "Configuración del proxy guardado."
@@ -4103,11 +4004,18 @@ msgstr "Tareas actualizadas correctamente"
 msgid "Job Set schedule updated successfully."
 msgstr "Conjunto de tareas actualizado correctamente"
 
+#. i18n %s is a time
+#: concrete/core/controllers/single_pages/dashboard/reports/surveys.php:17
+#: concrete/single_pages/dashboard/reports/logs.php:67
+#, php-format
+msgid "Today at %s"
+msgstr ""
+
 #: concrete/config/install/base/dashboard.xml:226
 #: concrete/config/install/disabled/blank/content.xml:38
 #: concrete/config/install/disabled/standard/content.xml:38
 #: concrete/core/controllers/single_pages/dashboard/reports/logs.php:23
-#: concrete/single_pages/dashboard/reports/logs.php:16
+#: concrete/single_pages/dashboard/reports/logs.php:17
 msgid "Logs"
 msgstr "Registros "
 
@@ -4605,35 +4513,25 @@ msgid ""
 "Generate the sitemap.xml file that search engines use to crawl your site."
 msgstr "Generar el archivo sitemap.xml que los motores de búsqueda utilizan para rastrear su sitio."
 
-#: concrete/core/jobs/generate_sitemap.php:56
+#: concrete/core/jobs/generate_sitemap.php:64
 #, php-format
 msgid "The file %s is not writable"
 msgstr "El archivo %s no tiene permisos de escritura"
 
-#: concrete/core/jobs/generate_sitemap.php:59
+#: concrete/core/jobs/generate_sitemap.php:67
 #, php-format
 msgid "Cannot open file %s"
 msgstr "No se puede abrir el archivo %s"
 
-#: concrete/core/jobs/generate_sitemap.php:62
+#: concrete/core/jobs/generate_sitemap.php:70
 #, php-format
-msgid "Error writing header of %s"
-msgstr "Error escribiendo cabecera de %s"
+msgid "Error writing to file %s"
+msgstr ""
 
-#: concrete/core/jobs/generate_sitemap.php:76
-#, php-format
-msgid "Error writing footer of %s"
-msgstr "Error escribiendo pie de %s"
-
-#: concrete/core/jobs/generate_sitemap.php:81
+#: concrete/core/jobs/generate_sitemap.php:75
 #, php-format
 msgid "%1$s file saved (%2$d pages)."
 msgstr "%1$s archivo salvado (%2$d páginas)."
-
-#: concrete/core/jobs/generate_sitemap.php:151
-#, php-format
-msgid "Error writing page with cID %d to sitemap.xml"
-msgstr "Error escribiendo página con CID %d a sitemap.xml"
 
 #: concrete/core/jobs/process_email.php:12
 msgid "Process Email Posts"
@@ -4798,22 +4696,22 @@ msgstr "No es posible obtener la clave de autorización para %s"
 msgid "Error: no area assigned to layout"
 msgstr "Error: no hay área asignada a la disposición"
 
-#: concrete/core/models/page.php:268
+#: concrete/core/models/page.php:291
 #: concrete/core/models/user_private_message.php:147
 #: concrete/single_pages/profile/friends.php:23
 msgid "Unknown User"
 msgstr "Usuario Desconocido"
 
-#: concrete/core/models/page.php:1604
+#: concrete/core/models/page.php:1629
 #, php-format
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "Página\"%s\" en la ruta \"%s\" eliminada"
 
-#: concrete/core/models/page.php:1604 concrete/core/models/page.php:1662
+#: concrete/core/models/page.php:1629 concrete/core/models/page.php:1687
 msgid "Page Action"
 msgstr "Acción de página"
 
-#: concrete/core/models/page.php:1662
+#: concrete/core/models/page.php:1687
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "Página\"%s\" en la ruta \"%s\" trasladada a la papelera"
@@ -5547,10 +5445,6 @@ msgstr "depurar"
 msgid "Unable to create backup file: %s"
 msgstr "No se puede crear el archivo de copia de seguridad: %s"
 
-#: concrete/core/libraries/indexed_search_result.php:24
-msgid "Y-m-d H:i:s"
-msgstr "Y-m-d H:i:s"
-
 #: concrete/core/libraries/file/importer.php:54
 msgid "The file was only partially uploaded."
 msgstr "El archivo fue sólo parcialmente cargado."
@@ -5583,7 +5477,7 @@ msgstr "Video"
 
 #: concrete/core/libraries/file/types.php:124
 #: concrete/helpers/concrete/upgrade/version_532.php:198
-#: concrete/single_pages/dashboard/reports/logs.php:58
+#: concrete/single_pages/dashboard/reports/logs.php:59
 msgid "Text"
 msgstr "Texto"
 
@@ -5653,6 +5547,30 @@ msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] "%d segundo"
 msgstr[1] "%d segundos"
+
+#. i18n %s is a number, KB means Kilobyte
+#: concrete/core/helpers/number.php:113
+#, php-format
+msgid "%s KB"
+msgstr ""
+
+#. i18n %s is a number, MB means Megabyte
+#: concrete/core/helpers/number.php:117
+#, php-format
+msgid "%s MB"
+msgstr ""
+
+#. i18n %s is a number, GB means Gigabyte
+#: concrete/core/helpers/number.php:121
+#, php-format
+msgid "%s GB"
+msgstr ""
+
+#. i18n %s is a number, TB means Terabyte
+#: concrete/core/helpers/number.php:123
+#, php-format
+msgid "%s TB"
+msgstr ""
 
 #: concrete/core/helpers/validation/ip.php:94
 msgid ""
@@ -6082,7 +6000,7 @@ msgstr "Búsqueda guardada"
 #: concrete/elements/marketplace/search_form.php:9
 #: concrete/elements/users/search_form_advanced.php:63
 #: concrete/single_pages/dashboard/files/sets.php:157
-#: concrete/single_pages/dashboard/reports/logs.php:34
+#: concrete/single_pages/dashboard/reports/logs.php:35
 #: concrete/single_pages/dashboard/system/seo/bulk_seo_tool.php:91
 #: concrete/single_pages/dashboard/users/groups.php:66
 msgid "Keywords"
@@ -6321,7 +6239,7 @@ msgstr "Eliminar de mis amigos"
 msgid "Send Private Message"
 msgstr "Enviar mensaje privado"
 
-#: concrete/elements/profile/sidebar.php:51
+#: concrete/elements/profile/sidebar.php:56
 msgid "Search Members"
 msgstr "Búsqueda de miembros"
 
@@ -6858,7 +6776,7 @@ msgid "Preview As"
 msgstr "Como preliminar"
 
 #: concrete/elements/collection_preview_as_user.php:17
-#: concrete/single_pages/dashboard/reports/logs.php:70
+#: concrete/single_pages/dashboard/reports/logs.php:77
 msgid "Guest"
 msgstr "Visitante"
 
@@ -7211,6 +7129,10 @@ msgstr "Día de la Semana"
 #: concrete/elements/permission/duration.php:137
 msgid "months"
 msgstr "mes"
+
+#: concrete/elements/permission/duration.php:150
+msgid "On"
+msgstr "En"
 
 #: concrete/elements/permission/duration.php:170
 msgid "weeks"
@@ -11448,6 +11370,10 @@ msgstr "Controla las opciones disponibles para el Registro Público."
 msgid "Allow visitors to signup as site members?"
 msgstr "Permitir a los visitantes a registrarse como miembros del sitio?"
 
+#: concrete/single_pages/dashboard/system/registration/public_registration.php:17
+msgid "Off"
+msgstr "Apagado"
+
 #: concrete/single_pages/dashboard/system/registration/public_registration.php:23
 msgid " On - email validation"
 msgstr " On - correo electrónico de validación"
@@ -11669,9 +11595,26 @@ msgstr "Off - Bueno para el desarrollo."
 msgid "Off - Turn it on by hand for specific pages."
 msgstr "Off - Póngalo en acción con la mano para páginas específicas."
 
+#: concrete/single_pages/dashboard/system/optimization/cache.php:56
+msgid "On - If blocks on the particular page allow it."
+msgstr "On - Si los bloques en la página en particular lo permite."
+
+#: concrete/single_pages/dashboard/system/optimization/cache.php:62
+msgid "On - In all cases."
+msgstr "On - En todos los casos."
+
 #: concrete/single_pages/dashboard/system/optimization/cache.php:68
 msgid "Expire Pages from Cache"
 msgstr "Vence páginas de la caché"
+
+#: concrete/single_pages/dashboard/system/optimization/cache.php:72
+#, php-format
+msgid "Every %s (default setting)."
+msgstr "Cada %s (ajuste por defecto)."
+
+#: concrete/single_pages/dashboard/system/optimization/cache.php:78
+msgid "Only when manually removed or the cache is cleared."
+msgstr "Sólo cuando se retira manualmente o la memoria caché es limpiada."
 
 #: concrete/single_pages/dashboard/system/optimization/cache.php:86
 msgid "Every "
@@ -11950,26 +11893,22 @@ msgstr "Última respuesta"
 msgid "Number of Responses"
 msgstr "Número de respuestas"
 
-#: concrete/single_pages/dashboard/reports/logs.php:22
+#: concrete/single_pages/dashboard/reports/logs.php:23
 msgid "There are no log entries to show at the moment."
 msgstr "No hay entradas en el registro para mostrar en este momento."
 
 #: concrete/helpers/concrete/upgrade/version_532.php:201
-#: concrete/single_pages/dashboard/reports/logs.php:55
+#: concrete/single_pages/dashboard/reports/logs.php:56
 msgid "Date/Time"
 msgstr "Fecha/hora"
 
-#: concrete/single_pages/dashboard/reports/logs.php:58
+#: concrete/single_pages/dashboard/reports/logs.php:59
 msgid "Are you sure you want to clear this log?"
 msgstr "¿Estás seguro que quieres borrar estos registros?"
 
-#: concrete/single_pages/dashboard/reports/logs.php:58
+#: concrete/single_pages/dashboard/reports/logs.php:59
 msgid "Clear Log"
 msgstr "Borrar registros"
-
-#: concrete/single_pages/dashboard/reports/logs.php:65
-msgid " at "
-msgstr "en"
 
 #: concrete/single_pages/dashboard/reports/forms.php:23
 msgid "Are you sure you want to delete this form submission?"
@@ -14037,33 +13976,33 @@ msgstr "Ha ocurrido una excepción:"
 msgid "An error occurred while processing this request."
 msgstr "Se produjo un error al procesar la solicitud."
 
-#: concrete/startup/process.php:44 concrete/startup/process.php:56
+#: concrete/startup/process.php:51 concrete/startup/process.php:63
 #, php-format
 msgid "You may not arrange the contents of area %s."
 msgstr "No puede añadir los contenido del area %s."
 
-#: concrete/startup/process.php:66
+#: concrete/startup/process.php:73
 #, php-format
 msgid "You may not add %s to area %s."
 msgstr "No puedes añadir %s a la zona %s."
 
-#: concrete/startup/process.php:394
+#: concrete/startup/process.php:401
 msgid "The stack contains invalid block types."
 msgstr "La pila contiene tipos de bloque no válido."
 
-#: concrete/startup/process.php:398
+#: concrete/startup/process.php:405
 msgid "Invalid stack."
 msgstr "Pila invalido"
 
-#: concrete/startup/process.php:464
+#: concrete/startup/process.php:471
 msgid "Layout preset not found"
 msgstr "Diseño no se encuentran predefinidos"
 
-#: concrete/startup/process.php:688
+#: concrete/startup/process.php:695
 msgid "Access to block denied"
 msgstr "Acceso para bloquear negado"
 
-#: concrete/startup/process.php:870
+#: concrete/startup/process.php:877
 msgid "Invalid block."
 msgstr "Bloque invalido"
 

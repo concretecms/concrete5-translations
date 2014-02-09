@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-02-06 23:00+0000\n"
-"PO-Revision-Date: 2014-02-08 06:20+0000\n"
-"Last-Translator: Wayne <wayne.cw.kao@gmail.com>\n"
+"POT-Creation-Date: 2014-02-07 23:00+0000\n"
+"PO-Revision-Date: 2014-02-08 08:50+0000\n"
+"Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Chinese (Taiwan) (http://www.transifex.com/projects/p/concrete5/language/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -496,8 +496,6 @@ msgstr "儲存位置"
 #: concrete/blocks/dashboard_site_activity/view.php:5
 #: concrete/blocks/form/form_setup_html.php:101
 #: concrete/blocks/survey/add.php:27 concrete/blocks/survey/edit.php:32
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:25
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:95
 #: concrete/core/controllers/single_pages/dashboard/users/search.php:361
 #: concrete/elements/custom_style/background.php:20
 #: concrete/elements/permission/access/list.php:39
@@ -591,8 +589,8 @@ msgstr "頁面已加至"
 #: concrete/elements/workflow/type_form_required.php:35
 #: concrete/single_pages/dashboard/files/sets.php:164
 #: concrete/single_pages/dashboard/pages/themes/inspect.php:34
-#: concrete/single_pages/dashboard/reports/logs.php:40
-#: concrete/single_pages/dashboard/reports/logs.php:56
+#: concrete/single_pages/dashboard/reports/logs.php:41
+#: concrete/single_pages/dashboard/reports/logs.php:57
 #: concrete/single_pages/dashboard/workflow/list.php:52
 #: concrete/tools/files/bulk_properties.php:302
 #: concrete/tools/files/properties.php:244
@@ -600,6 +598,8 @@ msgid "Type"
 msgstr "類型"
 
 #. %s is a number
+#. i18n %s is a number
+#: concrete/core/helpers/number.php:109
 #: concrete/tools/files/bulk_properties.php:308
 #: concrete/tools/files/properties.php:249
 #, php-format
@@ -726,7 +726,7 @@ msgid "Most recent 20 downloads:"
 msgstr "最近20 次的下載: "
 
 #: concrete/single_pages/dashboard/reports/forms.php:172
-#: concrete/single_pages/dashboard/reports/logs.php:57
+#: concrete/single_pages/dashboard/reports/logs.php:58
 #: concrete/single_pages/dashboard/reports/statistics.php:106
 #: concrete/single_pages/dashboard/reports/surveys.php:24
 #: concrete/tools/files/properties.php:419
@@ -1016,11 +1016,11 @@ msgstr ""
 #, php-format
 msgid "%d review"
 msgid_plural "%d reviews"
-msgstr[0] ""
+msgstr[0] "%d 檢視"
 
 #: concrete/tools/marketplace/details.php:76
 msgid "Read Reviews"
-msgstr ""
+msgstr "讀取檢閱"
 
 #: concrete/tools/marketplace/details.php:87
 #, php-format
@@ -1033,7 +1033,7 @@ msgstr ""
 
 #: concrete/tools/marketplace/details.php:106
 msgid "View in Marketplace"
-msgstr ""
+msgstr "檢視市場"
 
 #: concrete/tools/marketplace/details.php:120
 msgid "Invalid marketplace item."
@@ -1095,10 +1095,10 @@ msgstr "平面化檢視"
 #: concrete/elements/files/search_form_advanced.php:216
 #: concrete/elements/marketplace/search_form.php:24
 #: concrete/elements/pages/search_form_advanced.php:169
-#: concrete/elements/profile/sidebar.php:56
+#: concrete/elements/profile/sidebar.php:61
 #: concrete/elements/users/search_form_advanced.php:103
 #: concrete/single_pages/dashboard/files/sets.php:170
-#: concrete/single_pages/dashboard/reports/logs.php:43
+#: concrete/single_pages/dashboard/reports/logs.php:44
 #: concrete/single_pages/dashboard/system/seo/bulk_seo_tool.php:99
 #: concrete/single_pages/dashboard/users/groups.php:69
 #: concrete/single_pages/members.php:4 concrete/single_pages/members.php:7
@@ -1124,7 +1124,7 @@ msgstr "今天"
 
 #: concrete/tools/dashboard/chart_handler.php:52
 msgid "Views"
-msgstr ""
+msgstr "檢視"
 
 #: concrete/tools/dashboard/sitemap_drag_request.php:11
 msgid "An unspecified error has occurred."
@@ -3660,105 +3660,6 @@ msgstr "網址重新寫入已啟用. 我們可以自動更新 .htaccess 檔"
 msgid "URL rewriting disabled."
 msgstr "網址重新寫入已禁用."
 
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:10
-msgid "concrete5 Version"
-msgstr "concrete5 版本"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:11
-msgid "concrete5 Packages"
-msgstr "concrete5 套件"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:30
-msgid "concrete5 Overrides"
-msgstr "concrete5 覆蓋"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:102
-msgid "concrete5 Cache Settings"
-msgstr "concrete5 快取設定值"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:103
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:104
-#: concrete/elements/permission/duration.php:150
-msgid "On"
-msgstr "在"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:103
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:104
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:105
-#: concrete/single_pages/dashboard/system/registration/public_registration.php:17
-msgid "Off"
-msgstr ""
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:103
-#, php-format
-msgid "Block Cache - %s"
-msgstr "區塊快取 - %s"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:104
-#, php-format
-msgid "Overrides Cache - %s"
-msgstr "覆蓋快取 - %s"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:105
-#: concrete/single_pages/dashboard/system/optimization/cache.php:56
-msgid "On - If blocks on the particular page allow it."
-msgstr ""
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:105
-#: concrete/single_pages/dashboard/system/optimization/cache.php:62
-msgid "On - In all cases."
-msgstr ""
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:105
-#, php-format
-msgid "Full Page Caching - %s"
-msgstr "全頁面快取 - %s"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:107
-#: concrete/single_pages/dashboard/system/optimization/cache.php:72
-#, php-format
-msgid "Every %s (default setting)."
-msgstr ""
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:107
-#: concrete/single_pages/dashboard/system/optimization/cache.php:78
-msgid "Only when manually removed or the cache is cleared."
-msgstr "僅當手動移除或快取被清除時"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:107
-#, php-format
-msgid "Every %s minute."
-msgstr "每 %s 分鐘."
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:107
-#, php-format
-msgid "Full Page Cache Lifetime - %s"
-msgstr "全頁面快取生命期 - %s"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:112
-msgid "Server Software"
-msgstr "伺服器軟體"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:113
-msgid "Server API"
-msgstr "伺服器 API"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:114
-msgid "PHP Version"
-msgstr "PHP 版本"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:115
-msgid "PHP Extensions"
-msgstr "PHP 擴充庫"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:122
-msgid "Unable to determine."
-msgstr "無法確定"
-
-#: concrete/core/controllers/single_pages/dashboard/system/environment/info.php:140
-msgid "PHP Settings"
-msgstr "PHP 設定"
-
 #: concrete/core/controllers/single_pages/dashboard/system/environment/proxy.php:35
 msgid "Proxy configuration saved."
 msgstr "代理組態已儲存"
@@ -4095,11 +3996,18 @@ msgstr "成功地更新工作進度表"
 msgid "Job Set schedule updated successfully."
 msgstr "成功地更新工作組合排程"
 
+#. i18n %s is a time
+#: concrete/core/controllers/single_pages/dashboard/reports/surveys.php:17
+#: concrete/single_pages/dashboard/reports/logs.php:67
+#, php-format
+msgid "Today at %s"
+msgstr ""
+
 #: concrete/config/install/base/dashboard.xml:226
 #: concrete/config/install/disabled/blank/content.xml:38
 #: concrete/config/install/disabled/standard/content.xml:38
 #: concrete/core/controllers/single_pages/dashboard/reports/logs.php:23
-#: concrete/single_pages/dashboard/reports/logs.php:16
+#: concrete/single_pages/dashboard/reports/logs.php:17
 msgid "Logs"
 msgstr "記錄"
 
@@ -4595,35 +4503,25 @@ msgid ""
 "Generate the sitemap.xml file that search engines use to crawl your site."
 msgstr "產生搜尋引擎用來抓取您的網站的 sitemap.xml 檔案"
 
-#: concrete/core/jobs/generate_sitemap.php:56
+#: concrete/core/jobs/generate_sitemap.php:64
 #, php-format
 msgid "The file %s is not writable"
 msgstr "檔案 %s 為不可寫入的"
 
-#: concrete/core/jobs/generate_sitemap.php:59
+#: concrete/core/jobs/generate_sitemap.php:67
 #, php-format
 msgid "Cannot open file %s"
 msgstr "無法開啟檔案 %s"
 
-#: concrete/core/jobs/generate_sitemap.php:62
+#: concrete/core/jobs/generate_sitemap.php:70
 #, php-format
-msgid "Error writing header of %s"
-msgstr "寫入 %s 的標頭錯誤"
+msgid "Error writing to file %s"
+msgstr ""
 
-#: concrete/core/jobs/generate_sitemap.php:76
-#, php-format
-msgid "Error writing footer of %s"
-msgstr "寫入 %s 的註腳錯誤"
-
-#: concrete/core/jobs/generate_sitemap.php:81
+#: concrete/core/jobs/generate_sitemap.php:75
 #, php-format
 msgid "%1$s file saved (%2$d pages)."
 msgstr "%1$s檔案已儲存 (%2$d 頁面)."
-
-#: concrete/core/jobs/generate_sitemap.php:151
-#, php-format
-msgid "Error writing page with cID %d to sitemap.xml"
-msgstr "使用 cID %d 寫入頁面到 sitemap.xml 錯誤"
 
 #: concrete/core/jobs/process_email.php:12
 msgid "Process Email Posts"
@@ -4794,16 +4692,16 @@ msgstr "錯誤: 沒有區域被指定到布局"
 msgid "Unknown User"
 msgstr "未知的使用者"
 
-#: concrete/core/models/page.php:1627
+#: concrete/core/models/page.php:1629
 #, php-format
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "頁面 \"%s\" 於路徑 \"%s\" 已刪除"
 
-#: concrete/core/models/page.php:1627 concrete/core/models/page.php:1685
+#: concrete/core/models/page.php:1629 concrete/core/models/page.php:1687
 msgid "Page Action"
 msgstr "頁面動作"
 
-#: concrete/core/models/page.php:1685
+#: concrete/core/models/page.php:1687
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "頁面 \"%s\" 於路徑 \"%s\" 已移動到垃圾桶"
@@ -5537,10 +5435,6 @@ msgstr "偵錯"
 msgid "Unable to create backup file: %s"
 msgstr "無法建立輩份檔案: %s"
 
-#: concrete/core/libraries/indexed_search_result.php:24
-msgid "Y-m-d H:i:s"
-msgstr "年-月-日 時:分:秒"
-
 #: concrete/core/libraries/file/importer.php:54
 msgid "The file was only partially uploaded."
 msgstr "檔案僅部分被上傳"
@@ -5573,7 +5467,7 @@ msgstr "視訊"
 
 #: concrete/core/libraries/file/types.php:124
 #: concrete/helpers/concrete/upgrade/version_532.php:198
-#: concrete/single_pages/dashboard/reports/logs.php:58
+#: concrete/single_pages/dashboard/reports/logs.php:59
 msgid "Text"
 msgstr "文字"
 
@@ -5639,6 +5533,30 @@ msgstr[0] "%d 分"
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] "%d 秒"
+
+#. i18n %s is a number, KB means Kilobyte
+#: concrete/core/helpers/number.php:113
+#, php-format
+msgid "%s KB"
+msgstr ""
+
+#. i18n %s is a number, MB means Megabyte
+#: concrete/core/helpers/number.php:117
+#, php-format
+msgid "%s MB"
+msgstr ""
+
+#. i18n %s is a number, GB means Gigabyte
+#: concrete/core/helpers/number.php:121
+#, php-format
+msgid "%s GB"
+msgstr ""
+
+#. i18n %s is a number, TB means Terabyte
+#: concrete/core/helpers/number.php:123
+#, php-format
+msgid "%s TB"
+msgstr ""
 
 #: concrete/core/helpers/validation/ip.php:94
 msgid ""
@@ -6068,7 +5986,7 @@ msgstr "以儲存的搜尋"
 #: concrete/elements/marketplace/search_form.php:9
 #: concrete/elements/users/search_form_advanced.php:63
 #: concrete/single_pages/dashboard/files/sets.php:157
-#: concrete/single_pages/dashboard/reports/logs.php:34
+#: concrete/single_pages/dashboard/reports/logs.php:35
 #: concrete/single_pages/dashboard/system/seo/bulk_seo_tool.php:91
 #: concrete/single_pages/dashboard/users/groups.php:66
 msgid "Keywords"
@@ -6307,7 +6225,7 @@ msgstr "從我的朋友移除"
 msgid "Send Private Message"
 msgstr "傳送私人訊息"
 
-#: concrete/elements/profile/sidebar.php:51
+#: concrete/elements/profile/sidebar.php:56
 msgid "Search Members"
 msgstr "搜尋會員"
 
@@ -6844,7 +6762,7 @@ msgid "Preview As"
 msgstr "預覽為"
 
 #: concrete/elements/collection_preview_as_user.php:17
-#: concrete/single_pages/dashboard/reports/logs.php:70
+#: concrete/single_pages/dashboard/reports/logs.php:77
 msgid "Guest"
 msgstr "訪客"
 
@@ -7197,6 +7115,10 @@ msgstr "每週的一日"
 #: concrete/elements/permission/duration.php:137
 msgid "months"
 msgstr "月"
+
+#: concrete/elements/permission/duration.php:150
+msgid "On"
+msgstr "在"
 
 #: concrete/elements/permission/duration.php:170
 msgid "weeks"
@@ -7626,7 +7548,7 @@ msgid ""
 "You can review, approve or deny all pending actions from here:\n"
 "\n"
 "%s\n"
-msgstr ""
+msgstr "親愛的 %s,\n\n\n\n%s\n\n\n\n您可以預覽, 由此核准或拒絕所有擱置動作:\n\n\n\n%s\n"
 
 #: concrete/mail/user_register.php:4
 msgid "Registration - A New User Has Registered"
@@ -7713,7 +7635,7 @@ msgstr ""
 #: concrete/mail/private_message_response_enabled.php:12
 #, php-format
 msgid "To view this user's profile, visit: %s"
-msgstr ""
+msgstr "檢視此使用者的設定檔, 拜訪: %s"
 
 #: concrete/mail/private_message.php:16
 #: concrete/mail/private_message_response_enabled.php:14
@@ -7824,7 +7746,7 @@ msgid ""
 "\n"
 "To view all of this form's submissions, visit %s \n"
 "\n"
-msgstr ""
+msgstr "\n\n已傳送一個 %s 表單經由您的 concrete5 網站.\n\n\n\n%s\n\n\n\n檢視這個表單的所有傳送, 拜訪 %s \n\n"
 
 #: concrete/models/attribute/types/textarea/type_form.php:2
 msgid "Text Area Options"
@@ -9784,7 +9706,7 @@ msgstr ""
 msgid ""
 "The sitemap allows you to view your site as a tree and easily organize its "
 "hierarchy."
-msgstr ""
+msgstr "網站地圖讓您正如樹木一樣檢視您的網站和容易第組織它的層次"
 
 #: concrete/single_pages/dashboard/sitemap/full.php:35
 msgid "Show System Pages"
@@ -9801,7 +9723,7 @@ msgstr ""
 #: concrete/single_pages/dashboard/sitemap/explore.php:16
 msgid ""
 "Sitemap flat view lets you page through particular long lists of pages."
-msgstr ""
+msgstr "網站平面化減是讓您的頁面通過特殊長度頁面的清單"
 
 #: concrete/single_pages/dashboard/sitemap/explore.php:28
 msgid "You do not have access to the dashboard sitemap."
@@ -10093,24 +10015,24 @@ msgstr "您的網站沒有連接到concrete5社區.連接可以讓您很容易�
 #: concrete/single_pages/dashboard/system/view.php:47
 #: concrete/single_pages/dashboard/view.php:44
 msgid "Home"
-msgstr ""
+msgstr "首頁"
 
 #: concrete/helpers/concrete/dashboard.php:516
 #: concrete/single_pages/dashboard/view.php:65
 msgid "News"
-msgstr ""
+msgstr "新聞"
 
 #: concrete/helpers/concrete/dashboard.php:516
 #: concrete/single_pages/dashboard/view.php:65
 msgid "Learn about your site and concrete5."
-msgstr ""
+msgstr "學習甘於您的網站和 concrete5. "
 
 #: concrete/helpers/concrete/dashboard.php:520
 #: concrete/single_pages/dashboard/system/seo/view.php:3
 #: concrete/single_pages/dashboard/system/view.php:6
 #: concrete/single_pages/dashboard/view.php:71
 msgid "System &amp; Settings"
-msgstr ""
+msgstr "系統 &amp; 設定值"
 
 #: concrete/config/install/base/dashboard.xml:425
 #: concrete/config/install/disabled/blank/content.xml:73
@@ -10467,11 +10389,11 @@ msgstr ""
 
 #: concrete/single_pages/dashboard/users/search.php:361
 msgid "View User"
-msgstr ""
+msgstr "檢視使用者"
 
 #: concrete/single_pages/dashboard/users/search.php:361
 msgid "View User accounts."
-msgstr ""
+msgstr "檢視使用者帳號"
 
 #: concrete/single_pages/dashboard/users/search.php:375
 msgid "Mark Email as Valid"
@@ -10655,11 +10577,11 @@ msgstr ""
 msgid ""
 "Tracks page views in concrete5. Disabling this may increase site "
 "performance, but you will have to get statistics information from elsewhere."
-msgstr ""
+msgstr "於 concrete5 內追蹤頁面檢視. 禁用此將會提高網站效能, 但您將必須從別處獲取統計資訊."
 
 #: concrete/single_pages/dashboard/system/seo/statistics.php:13
 msgid "Track page view statistics."
-msgstr ""
+msgstr "追蹤頁面檢視統計"
 
 #: concrete/config/install/base/dashboard.xml:503
 #: concrete/helpers/concrete/upgrade/version_561.php:17
@@ -10915,7 +10837,7 @@ msgstr ""
 
 #: concrete/single_pages/dashboard/system/permissions/site.php:28
 msgid "Anyone may view the website."
-msgstr ""
+msgstr "任何可以檢視網站的人"
 
 #: concrete/config/install/base/dashboard.xml:116
 #: concrete/config/install/base/login_registration.xml:20
@@ -10930,7 +10852,7 @@ msgstr "會員"
 
 #: concrete/single_pages/dashboard/system/permissions/site.php:34
 msgid "Only registered users may view the website."
-msgstr ""
+msgstr "僅註冊的使用者可以檢視網站"
 
 #: concrete/single_pages/dashboard/system/permissions/site.php:40
 msgid "Private"
@@ -10938,7 +10860,7 @@ msgstr ""
 
 #: concrete/single_pages/dashboard/system/permissions/site.php:40
 msgid "Only the administrative group may view the website."
-msgstr ""
+msgstr "僅管理群組可以檢視網站"
 
 #: concrete/single_pages/dashboard/system/permissions/site.php:47
 msgid "Edit Access"
@@ -11233,7 +11155,7 @@ msgstr ""
 msgid ""
 "Click below to view your database schema in a format that can imported into "
 "concrete5 later."
-msgstr ""
+msgstr "點擊以下以檢視稍後可已匯入到 concrete5 的一個格式內資料庫結構描述"
 
 #: concrete/single_pages/dashboard/system/backup_restore/database.php:32
 msgid "Export Database Tables"
@@ -11431,6 +11353,10 @@ msgstr ""
 
 #: concrete/single_pages/dashboard/system/registration/public_registration.php:11
 msgid "Allow visitors to signup as site members?"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/registration/public_registration.php:17
+msgid "Off"
 msgstr ""
 
 #: concrete/single_pages/dashboard/system/registration/public_registration.php:23
@@ -11654,9 +11580,26 @@ msgstr ""
 msgid "Off - Turn it on by hand for specific pages."
 msgstr ""
 
+#: concrete/single_pages/dashboard/system/optimization/cache.php:56
+msgid "On - If blocks on the particular page allow it."
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/optimization/cache.php:62
+msgid "On - In all cases."
+msgstr ""
+
 #: concrete/single_pages/dashboard/system/optimization/cache.php:68
 msgid "Expire Pages from Cache"
 msgstr "從快取來的過期頁面"
+
+#: concrete/single_pages/dashboard/system/optimization/cache.php:72
+#, php-format
+msgid "Every %s (default setting)."
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/optimization/cache.php:78
+msgid "Only when manually removed or the cache is cleared."
+msgstr "僅當手動移除或快取被清除時"
 
 #: concrete/single_pages/dashboard/system/optimization/cache.php:86
 msgid "Every "
@@ -11860,11 +11803,11 @@ msgstr ""
 
 #: concrete/single_pages/dashboard/reports/statistics.php:12
 msgid "Recent Page Views"
-msgstr ""
+msgstr "最近的頁面檢視"
 
 #: concrete/single_pages/dashboard/reports/statistics.php:25
 msgid "Page Views"
-msgstr ""
+msgstr "頁面檢視"
 
 #: concrete/single_pages/dashboard/reports/statistics.php:36
 msgid "Recent Registrations"
@@ -11935,25 +11878,21 @@ msgstr ""
 msgid "Number of Responses"
 msgstr ""
 
-#: concrete/single_pages/dashboard/reports/logs.php:22
+#: concrete/single_pages/dashboard/reports/logs.php:23
 msgid "There are no log entries to show at the moment."
 msgstr ""
 
 #: concrete/helpers/concrete/upgrade/version_532.php:201
-#: concrete/single_pages/dashboard/reports/logs.php:55
+#: concrete/single_pages/dashboard/reports/logs.php:56
 msgid "Date/Time"
 msgstr "日期/時間"
 
-#: concrete/single_pages/dashboard/reports/logs.php:58
+#: concrete/single_pages/dashboard/reports/logs.php:59
 msgid "Are you sure you want to clear this log?"
 msgstr ""
 
-#: concrete/single_pages/dashboard/reports/logs.php:58
+#: concrete/single_pages/dashboard/reports/logs.php:59
 msgid "Clear Log"
-msgstr ""
-
-#: concrete/single_pages/dashboard/reports/logs.php:65
-msgid " at "
 msgstr ""
 
 #: concrete/single_pages/dashboard/reports/forms.php:23
@@ -11982,7 +11921,7 @@ msgstr ""
 
 #: concrete/single_pages/dashboard/reports/forms.php:113
 msgid "View Responses"
-msgstr ""
+msgstr "檢視回應"
 
 #: concrete/single_pages/dashboard/reports/forms.php:114
 msgid "Open Page"
@@ -12011,7 +11950,7 @@ msgstr ""
 
 #: concrete/single_pages/dashboard/reports/forms.php:158
 msgid "* Scroll right to view full results"
-msgstr ""
+msgstr "*向又捲動以檢視整個結果"
 
 #: concrete/single_pages/dashboard/reports/forms.php:176
 msgid "Actions"
@@ -12972,7 +12911,7 @@ msgstr ""
 
 #: concrete/helpers/concrete/upgrade/version_500a1.php:37
 msgid "Maintenance"
-msgstr ""
+msgstr "維護"
 
 #: concrete/helpers/concrete/upgrade/version_500a1.php:37
 msgid "Run common cleanup tasks."
@@ -13288,7 +13227,7 @@ msgstr "介面, 快速巡覽, 控制面板背景, 背景影像"
 #: concrete/config/install/base/dashboard.xml:485
 #: concrete/helpers/concrete/upgrade/version_560.php:205
 msgid "vanity, pretty url, seo, pageview, view"
-msgstr ""
+msgstr "虛榮, 漂亮的網址, 搜尋引型優化, 瀏覽量, 檢視"
 
 #. Keywords for page /dashboard/system/seo/bulk_seo_tool
 #: concrete/config/install/base/dashboard.xml:492
@@ -13300,13 +13239,13 @@ msgstr ""
 #: concrete/config/install/base/dashboard.xml:499
 #: concrete/helpers/concrete/upgrade/version_560.php:207
 msgid "traffic, statistics, google analytics, quant, pageviews, hits"
-msgstr ""
+msgstr "流量, 統計, Google 分析, quant, 瀏覽量, 點閱率"
 
 #. Keywords for page /dashboard/system/seo/statistics
 #: concrete/config/install/base/dashboard.xml:513
 #: concrete/helpers/concrete/upgrade/version_560.php:208
 msgid "turn off statistics, tracking, statistics, pageviews, hits"
-msgstr ""
+msgstr "關閉統計, 追蹤, 統計, 瀏覽量, 點閱率"
 
 #. Keywords for page /dashboard/system/seo/search_index
 #: concrete/config/install/base/dashboard.xml:520
@@ -14521,12 +14460,12 @@ msgstr "檢視版本"
 #: concrete/config/install/base/permissions.xml:23
 msgctxt "PermissionKeyDescription"
 msgid "Can view the page versions dialog and read past versions of a page."
-msgstr ""
+msgstr "可以檢視頁面版本對話和讀取舊版本的頁面"
 
 #: concrete/config/install/base/permissions.xml:24
 msgctxt "PermissionKeyName"
 msgid "View Page in Sitemap"
-msgstr ""
+msgstr "檢視頁面於網站地圖"
 
 #: concrete/config/install/base/permissions.xml:24
 msgctxt "PermissionKeyDescription"
@@ -14537,7 +14476,7 @@ msgstr ""
 #: concrete/config/install/base/permissions.xml:25
 msgctxt "PermissionKeyName"
 msgid "Preview Page As User"
-msgstr ""
+msgstr "以使用者身份預覽頁面"
 
 #: concrete/config/install/base/permissions.xml:25
 msgctxt "PermissionKeyDescription"
@@ -14705,12 +14644,12 @@ msgstr ""
 #: concrete/config/install/base/permissions.xml:51
 msgctxt "PermissionKeyName"
 msgid "View Area"
-msgstr ""
+msgstr "檢視區域"
 
 #: concrete/config/install/base/permissions.xml:51
 msgctxt "PermissionKeyDescription"
 msgid "Can view the area and its contents."
-msgstr ""
+msgstr "可以檢視區域和它的內容"
 
 #: concrete/config/install/base/permissions.xml:52
 msgctxt "PermissionKeyName"
@@ -14802,12 +14741,12 @@ msgstr "控制是否使用者可以排程遊客存取權限於此區域的區塊
 #: concrete/config/install/base/permissions.xml:62
 msgctxt "PermissionKeyName"
 msgid "View Block"
-msgstr ""
+msgstr "檢視區塊"
 
 #: concrete/config/install/base/permissions.xml:62
 msgctxt "PermissionKeyDescription"
 msgid "Controls whether users can view this block in the page."
-msgstr ""
+msgstr "控制是否使用者可以檢視此區塊於頁面中"
 
 #: concrete/config/install/base/permissions.xml:63
 msgctxt "PermissionKeyName"
@@ -14875,12 +14814,12 @@ msgstr "控制是否使用者可以排程遊客存取權限於此區塊. 遊客�
 #: concrete/config/install/base/permissions.xml:79
 msgctxt "PermissionKeyName"
 msgid "View Files"
-msgstr ""
+msgstr "檢視檔案"
 
 #: concrete/config/install/base/permissions.xml:70
 msgctxt "PermissionKeyDescription"
 msgid "Can view and download files in the site."
-msgstr ""
+msgstr "可以檢視和下載檔案於此網站"
 
 #: concrete/config/install/base/permissions.xml:71
 msgctxt "PermissionKeyName"
@@ -14971,12 +14910,12 @@ msgstr ""
 #: concrete/config/install/base/permissions.xml:79
 msgctxt "PermissionKeyDescription"
 msgid "Can view and download files."
-msgstr ""
+msgstr "可以檢視和下載檔案"
 
 #: concrete/config/install/base/permissions.xml:80
 msgctxt "PermissionKeyName"
 msgid "View File in File Manager"
-msgstr ""
+msgstr "檢視檔案於檔案總管"
 
 #: concrete/config/install/base/permissions.xml:80
 msgctxt "PermissionKeyDescription"
@@ -15056,7 +14995,7 @@ msgstr "編輯使用者詳細資料"
 #: concrete/config/install/base/permissions.xml:106
 msgctxt "PermissionKeyName"
 msgid "View User Attributes"
-msgstr ""
+msgstr "檢視使用者屬性"
 
 #: concrete/config/install/base/permissions.xml:112
 msgctxt "PermissionKeyName"
