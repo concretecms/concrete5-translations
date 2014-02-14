@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-02-11 23:00+0000\n"
-"PO-Revision-Date: 2014-02-13 06:30+0000\n"
+"POT-Creation-Date: 2014-02-12 23:00+0000\n"
+"PO-Revision-Date: 2014-02-14 07:00+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Chinese (Taiwan) (http://www.transifex.com/projects/p/concrete5/language/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -438,6 +438,7 @@ msgstr "檔案<strong>%s</strong>已被重新掃瞄"
 msgid "You do not have permission to rescan any of the selected files."
 msgstr "您沒有權限重新掃描任一已選檔案."
 
+#: concrete/core/models/package.php:330
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:40
 #: concrete/single_pages/dashboard/composer/write.php:148
 #: concrete/single_pages/dashboard/composer/write.php:267
@@ -2282,7 +2283,7 @@ msgstr "智慧型搜尋"
 #: concrete/themes/greensalad/default.php:63
 #: concrete/themes/greensalad/full.php:58
 #: concrete/themes/greensalad/home.php:63
-#: concrete/themes/greensalad/view.php:62
+#: concrete/themes/greensalad/view.php:63
 #: concrete/tools/page_controls_menu_js.php:96
 msgid "Sign Out"
 msgstr "登出"
@@ -4516,22 +4517,22 @@ msgid ""
 "Generate the sitemap.xml file that search engines use to crawl your site."
 msgstr "產生搜尋引擎用來抓取您的網站的 sitemap.xml 檔案"
 
-#: concrete/core/jobs/generate_sitemap.php:64
+#: concrete/core/jobs/generate_sitemap.php:67
 #, php-format
 msgid "The file %s is not writable"
 msgstr "檔案 %s 為不可寫入的"
 
-#: concrete/core/jobs/generate_sitemap.php:67
+#: concrete/core/jobs/generate_sitemap.php:70
 #, php-format
 msgid "Cannot open file %s"
 msgstr "無法開啟檔案 %s"
 
-#: concrete/core/jobs/generate_sitemap.php:70
+#: concrete/core/jobs/generate_sitemap.php:73
 #, php-format
 msgid "Error writing to file %s"
 msgstr ""
 
-#: concrete/core/jobs/generate_sitemap.php:75
+#: concrete/core/jobs/generate_sitemap.php:78
 #, php-format
 msgid "%1$s file saved (%2$d pages)."
 msgstr "%1$s檔案已儲存 (%2$d 頁面)."
@@ -4647,20 +4648,20 @@ msgstr "(無名稱)"
 msgid "(No Description)"
 msgstr "(無描述)"
 
-#: concrete/core/models/collection_version.php:171
+#: concrete/core/models/collection_version.php:174
 #, php-format
 msgid "New Version %s"
 msgstr "新版本 %s"
 
-#: concrete/core/models/job.php:164 concrete/core/models/job.php:318
+#: concrete/core/models/job.php:164 concrete/core/models/job.php:320
 msgid "The Job was run successfully."
 msgstr "成功地執行工作"
 
-#: concrete/core/models/job.php:278
+#: concrete/core/models/job.php:280
 msgid "Error: The Job class must be a child class of Job."
 msgstr "錯誤: 工作類別必須是工作的一個子類別"
 
-#: concrete/core/models/job.php:285
+#: concrete/core/models/job.php:287
 #, php-format
 msgid "Error: Invalid Job file. The class %s was not found in %s ."
 msgstr "錯誤: 無效的工作檔案. 未發現類別 %s 在 %s 內"
@@ -5233,51 +5234,122 @@ msgstr "點擊影像來檢視另一個驗證碼"
 msgid "Please type the letters and numbers shown in the image."
 msgstr "請輸入影像所顯示的字母和數字"
 
+#: concrete/core/models/package.php:297
+msgid "Attribute categories"
+msgstr ""
+
+#: concrete/core/models/package.php:300
+msgid "Permission categories"
+msgstr ""
+
+#: concrete/core/models/package.php:303
+msgid "Permission access entity types"
+msgstr ""
+
+#: concrete/core/models/package.php:306
+msgid "Attribute keys"
+msgstr ""
+
+#: concrete/core/models/package.php:309
+msgid "Attribute sets"
+msgstr ""
+
 #: concrete/core/models/package.php:312
+msgid "Group sets"
+msgstr ""
+
+#: concrete/core/models/package.php:315
+msgid "Page types"
+msgstr ""
+
+#: concrete/core/models/package.php:318
+msgid "Mail importers"
+msgstr ""
+
+#: concrete/core/models/package.php:321
+msgid "Configuration values"
+msgstr ""
+
+#: concrete/core/models/package.php:324
+msgid "Block types"
+msgstr ""
+
+#: concrete/core/models/package.php:327
+msgid "Page themes"
+msgstr ""
+
+#: concrete/core/models/package.php:333
+msgid "Single pages"
+msgstr ""
+
+#: concrete/core/models/package.php:336
+msgid "Attribute types"
+msgstr ""
+
+#: concrete/core/models/package.php:339
+msgid "Captcha libraries"
+msgstr ""
+
+#: concrete/core/models/package.php:342
+msgid "Antispam libraries"
+msgstr ""
+
+#: concrete/core/models/package.php:345
+#: concrete/single_pages/dashboard/system/optimization/jobs.php:46
+#: concrete/single_pages/dashboard/system/optimization/jobs.php:265
+#: concrete/single_pages/dashboard/system/optimization/jobs.php:371
+msgid "Jobs"
+msgstr "工作"
+
+#: concrete/core/models/package.php:348
+msgid "Workflow types"
+msgstr ""
+
+#: concrete/core/models/package.php:386
 #, php-format
 msgid "%s (%s)"
 msgstr "%s (%s)"
 
-#: concrete/core/models/package.php:317
+#: concrete/core/models/package.php:391
 #, php-format
 msgid " %s (%s)"
 msgstr "%s (%s)"
 
-#: concrete/core/models/package.php:502
+#: concrete/core/models/package.php:576
 msgid "You've already installed that package."
 msgstr "您已安裝了那個套件"
 
-#: concrete/core/models/package.php:503
+#: concrete/core/models/package.php:577
 msgid "Invalid Package."
 msgstr "無效的套件"
 
-#: concrete/core/models/package.php:504
+#: concrete/core/models/package.php:578
 #, php-format
 msgid "This package requires concrete5 version %s or greater."
 msgstr "此套件需要 concrete5 %s 或更優的版本"
 
-#: concrete/core/models/package.php:505
+#: concrete/core/models/package.php:579
 msgid "An error occurred while downloading the package."
 msgstr "當下載套件時發生了一個錯誤"
 
-#: concrete/core/models/package.php:506
+#: concrete/core/models/package.php:580
 msgid "concrete5 was not able to save the package after download."
 msgstr "concrete5 下載後無法儲存套件"
 
-#: concrete/core/models/package.php:507
+#: concrete/core/models/package.php:581
 msgid "An error occurred while trying to unzip the package."
 msgstr "當嘗試解壓套件時發生一個錯誤"
 
-#: concrete/core/models/package.php:508
+#: concrete/core/models/package.php:582
 msgid "An error occurred while trying to install the package."
 msgstr "當嘗試安裝套件時發生一個錯誤"
 
-#: concrete/core/models/package.php:509
+#: concrete/core/models/package.php:583
 #, php-format
 msgid "Unable to backup old package directory to %s"
 msgstr "無法備份舊套件目錄到 %s"
 
-#: concrete/core/models/package.php:510
+#: concrete/core/models/package.php:584
 msgid ""
 "This package isn't currently available for this version of concrete5. Please"
 " contact the maintainer of this package for assistance."
@@ -5671,7 +5743,7 @@ msgstr "電郵已禁用. 此電郵已記錄但未發送"
 #: concrete/themes/greensalad/default.php:49
 #: concrete/themes/greensalad/full.php:44
 #: concrete/themes/greensalad/home.php:49
-#: concrete/themes/greensalad/view.php:48
+#: concrete/themes/greensalad/view.php:49
 msgid "concrete5 - open source content management system for PHP and MySQL"
 msgstr ""
 
@@ -5680,7 +5752,7 @@ msgstr ""
 #: concrete/themes/greensalad/default.php:49
 #: concrete/themes/greensalad/full.php:44
 #: concrete/themes/greensalad/home.php:49
-#: concrete/themes/greensalad/view.php:48
+#: concrete/themes/greensalad/view.php:49
 msgid "concrete5 - open source CMS"
 msgstr "concrete5 - 開源內容管理系統"
 
@@ -5689,7 +5761,7 @@ msgstr "concrete5 - 開源內容管理系統"
 #: concrete/themes/greensalad/default.php:52
 #: concrete/themes/greensalad/full.php:47
 #: concrete/themes/greensalad/home.php:52
-#: concrete/themes/greensalad/view.php:51
+#: concrete/themes/greensalad/view.php:52
 msgid "All rights reserved."
 msgstr ""
 
@@ -5699,7 +5771,7 @@ msgstr ""
 #: concrete/themes/greensalad/default.php:63
 #: concrete/themes/greensalad/full.php:58
 #: concrete/themes/greensalad/home.php:63
-#: concrete/themes/greensalad/view.php:62
+#: concrete/themes/greensalad/view.php:63
 #, php-format
 msgid "Currently logged in as <b>%s</b>."
 msgstr ""
@@ -5710,7 +5782,7 @@ msgstr ""
 #: concrete/themes/greensalad/default.php:65
 #: concrete/themes/greensalad/full.php:60
 #: concrete/themes/greensalad/home.php:65
-#: concrete/themes/greensalad/view.php:64
+#: concrete/themes/greensalad/view.php:65
 msgid "Sign In to Edit this Site"
 msgstr ""
 
@@ -9954,14 +10026,6 @@ msgstr "解除安裝"
 msgid "Inspect Package"
 msgstr "檢查套件"
 
-#: concrete/config/install/base/dashboard.xml:355
-#: concrete/config/install/disabled/blank/content.xml:59
-#: concrete/config/install/disabled/standard/content.xml:59
-#: concrete/single_pages/dashboard/blocks/types/view.php:7
-#: concrete/single_pages/dashboard/extend/install.php:194
-msgid "Block Types"
-msgstr "區塊類別"
-
 #: concrete/single_pages/dashboard/extend/install.php:213
 msgid "Back to Add Functionality"
 msgstr "返回到加入功能性"
@@ -10076,6 +10140,13 @@ msgstr "<a href=\"%s\">安裝</a>, <a href=\"%s\">更新</a> 或下載更多 <a 
 #, php-format
 msgid "<a href=\"%s\">Install</a> or <a href=\"%s\">update</a> packages."
 msgstr "<a href=\"%s\">安裝</a> 或 <a href=\"%s\">升級</a> 套件."
+
+#: concrete/config/install/base/dashboard.xml:355
+#: concrete/config/install/disabled/blank/content.xml:59
+#: concrete/config/install/disabled/standard/content.xml:59
+#: concrete/single_pages/dashboard/blocks/types/view.php:7
+msgid "Block Types"
+msgstr "區塊類別"
 
 #: concrete/single_pages/dashboard/blocks/types/view.php:7
 msgid ""
@@ -10245,7 +10316,7 @@ msgstr ""
 #: concrete/single_pages/dashboard/users/groups.php:278
 #: concrete/single_pages/dashboard/users/groups.php:289
 msgid "Days"
-msgstr ""
+msgstr "日"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:120
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:316
@@ -10254,7 +10325,7 @@ msgstr ""
 #: concrete/single_pages/dashboard/users/groups.php:279
 #: concrete/single_pages/dashboard/users/groups.php:290
 msgid "Hours"
-msgstr ""
+msgstr "時"
 
 #: concrete/single_pages/dashboard/users/add_group.php:72
 #: concrete/single_pages/dashboard/users/groups.php:212
@@ -10672,50 +10743,50 @@ msgstr "環境"
 
 #: concrete/single_pages/dashboard/system/environment/info.php:4
 msgid "Unable to load environment info"
-msgstr ""
+msgstr "無法載入環境資訊"
 
 #: concrete/single_pages/dashboard/system/environment/proxy.php:5
 #: concrete/single_pages/dashboard/system/environment/proxy.php:16
 msgid "Proxy Server Settings"
-msgstr ""
+msgstr "代理伺服器設定值"
 
 #: concrete/single_pages/dashboard/system/environment/proxy.php:5
 msgid "Configures proxy server settings for your website"
-msgstr ""
+msgstr "為您的網站組態代理伺服器設定值"
 
 #: concrete/single_pages/dashboard/system/environment/proxy.php:19
 msgid "Proxy Host"
-msgstr ""
+msgstr "代理主機"
 
 #: concrete/single_pages/dashboard/system/environment/proxy.php:25
 msgid "Proxy Port"
-msgstr ""
+msgstr "代理連接埠"
 
 #: concrete/single_pages/dashboard/system/environment/proxy.php:31
 msgid "Proxy User"
-msgstr ""
+msgstr "代理使用者"
 
 #: concrete/single_pages/dashboard/system/environment/proxy.php:37
 msgid "Proxy Password"
-msgstr ""
+msgstr "代理密碼"
 
 #: concrete/single_pages/dashboard/system/environment/logging.php:5
 msgid "Logging"
-msgstr ""
+msgstr "登入"
 
 #: concrete/single_pages/dashboard/system/environment/logging.php:5
 msgid ""
 "Enables saving records of emails being sent out. This will save records even"
 " if actual email delivery is disabled on your site."
-msgstr ""
+msgstr "啟用向外傳送電郵的儲存記錄. 即使假如您的網站真正的禁用發送電郵這都將儲存記錄."
 
 #: concrete/single_pages/dashboard/system/environment/logging.php:17
 msgid "Log Application Exceptions"
-msgstr ""
+msgstr "日誌應用程式例外"
 
 #: concrete/single_pages/dashboard/system/environment/logging.php:24
 msgid "Log Emails Sent"
-msgstr ""
+msgstr "日誌電郵已傳送"
 
 #: concrete/config/install/base/dashboard.xml:703
 #: concrete/single_pages/dashboard/system/environment/file_storage_locations.php:3
@@ -10724,7 +10795,7 @@ msgstr "檔案儲存位置"
 
 #: concrete/single_pages/dashboard/system/environment/file_storage_locations.php:9
 msgid "Standard File Location"
-msgstr ""
+msgstr "標準檔案位置"
 
 #: concrete/single_pages/dashboard/pages/single.php:31
 #: concrete/single_pages/dashboard/system/environment/file_storage_locations.php:11
@@ -10738,19 +10809,19 @@ msgstr "替代存放目錄"
 
 #: concrete/single_pages/dashboard/system/environment/file_storage_locations.php:22
 msgid "Location Name"
-msgstr ""
+msgstr "位置名稱"
 
 #: concrete/single_pages/dashboard/system/environment/debug.php:3
 msgid "Debug Level"
-msgstr ""
+msgstr "除錯階層"
 
 #: concrete/single_pages/dashboard/system/environment/debug.php:14
 msgid "Hide errors from site visitors."
-msgstr ""
+msgstr "從網站訪客隱藏錯誤"
 
 #: concrete/single_pages/dashboard/system/environment/debug.php:18
 msgid "Show errors in page."
-msgstr ""
+msgstr "顯示錯誤於頁面"
 
 #: concrete/config/install/disabled/blank/content.xml:115
 #: concrete/config/install/disabled/standard/content.xml:115
@@ -10914,7 +10985,7 @@ msgstr "維護模式"
 #: concrete/single_pages/dashboard/system/mail/importers.php:100
 #: concrete/single_pages/dashboard/system/permissions/maintenance_mode.php:19
 msgid "Enabled"
-msgstr ""
+msgstr "已啟用"
 
 #: concrete/single_pages/dashboard/system/permissions/maintenance_mode.php:25
 msgid "Disabled"
@@ -11013,38 +11084,38 @@ msgstr "SMTP 方法"
 
 #: concrete/single_pages/dashboard/system/mail/method.php:16
 msgid "Send Mail Method"
-msgstr ""
+msgstr "傳送郵件方法"
 
 #: concrete/single_pages/dashboard/system/mail/method.php:19
 msgid "Default PHP Mail Function"
-msgstr ""
+msgstr "預設 PHP 郵件功能"
 
 #: concrete/single_pages/dashboard/system/mail/method.php:20
 msgid "External SMTP Server"
-msgstr ""
+msgstr "外部的 SMTP 伺服器"
 
 #: concrete/single_pages/dashboard/system/mail/method.php:25
 msgid "SMTP Settings"
-msgstr ""
+msgstr "SMTP 設定值"
 
 #: concrete/single_pages/dashboard/system/mail/importers.php:39
 #: concrete/single_pages/dashboard/system/mail/method.php:27
 msgid "Mail Server"
-msgstr ""
+msgstr "郵件伺服器"
 
 #: concrete/single_pages/dashboard/system/mail/importers.php:58
 #: concrete/single_pages/dashboard/system/mail/method.php:46
 msgid "Encryption"
-msgstr ""
+msgstr "加密"
 
 #: concrete/single_pages/dashboard/system/mail/importers.php:66
 #: concrete/single_pages/dashboard/system/mail/method.php:52
 msgid "Port (Leave blank for default)"
-msgstr ""
+msgstr "連接埠(留下空白為預設)"
 
 #: concrete/single_pages/dashboard/system/mail/importers.php:13
 msgid "Edit Importer"
-msgstr ""
+msgstr "編輯匯入者"
 
 #: concrete/single_pages/dashboard/pages/types/view.php:254
 #: concrete/single_pages/dashboard/system/mail/importers.php:20
@@ -11053,30 +11124,30 @@ msgstr "設定值"
 
 #: concrete/single_pages/dashboard/system/mail/importers.php:23
 msgid "Email Address to Route Emails To"
-msgstr ""
+msgstr "電郵位址到連線路徑電郵到"
 
 #: concrete/single_pages/dashboard/system/mail/importers.php:37
 msgid "POP Mail Server Authentication Settings"
-msgstr ""
+msgstr "POP 郵件伺服器驗證設定值"
 
 #: concrete/single_pages/dashboard/system/mail/importers.php:73
 msgid "Connection Method"
-msgstr ""
+msgstr "連接方法"
 
 #: concrete/single_pages/dashboard/system/mail/importers.php:89
 msgid "Mail Importers"
-msgstr ""
+msgstr "郵件匯入者"
 
 #: concrete/single_pages/dashboard/system/mail/importers.php:92
 msgid ""
 "There are no mail importers. Mail importers poll email accounts for new "
 "messages and run actions on those messages."
-msgstr ""
+msgstr "沒有郵件匯入者. 郵件匯入者為新訊息輪詢電郵帳號和執行那些訊息的動作."
 
 #: concrete/single_pages/dashboard/system/mail/importers.php:98
 #: concrete/single_pages/install.php:180
 msgid "Server"
-msgstr ""
+msgstr "伺服器"
 
 #: concrete/single_pages/dashboard/system/backup_restore/backup.php:14
 msgid "Confirm Delete"
@@ -11139,15 +11210,15 @@ msgid ""
 " backup, download the file and make sure that the entire database was saved "
 "correctly. If any error messages appear during the backup process, do "
 "<b>not</b> attempt to restore from that backup."
-msgstr ""
+msgstr "執行備份將建立一個資料庫匯出檔案和儲存它於您的伺服器. 如果您計畫儲存備份於不確定伺服器加密是唯一的建議. 這是 <strong>不推薦</strong>. 執行備份之後, 下載檔案並確定整個資料庫被正確地儲存. 在備份過程中如果有任何錯誤訊息, 做 <b>不</b> 長是從那個備份還原."
 
 #: concrete/single_pages/dashboard/system/backup_restore/backup.php:156
 msgid "Backup"
-msgstr ""
+msgstr "備份"
 
 #: concrete/single_pages/dashboard/system/backup_restore/backup.php:157
 msgid "You do not have permission to create or administer backups."
-msgstr ""
+msgstr "您沒有權限建立或管理備份"
 
 #: concrete/config/install/base/dashboard.xml:734
 #: concrete/single_pages/dashboard/system/backup_restore/database.php:5
@@ -11158,11 +11229,11 @@ msgstr "資料庫 XML"
 
 #: concrete/single_pages/dashboard/system/backup_restore/database.php:11
 msgid "Return to Export Database XML"
-msgstr ""
+msgstr "返回到匯出資料庫 XML"
 
 #: concrete/single_pages/dashboard/system/backup_restore/database.php:27
 msgid "Export Database Schema"
-msgstr ""
+msgstr "匯出資料庫方案"
 
 #: concrete/single_pages/dashboard/system/backup_restore/database.php:28
 msgid ""
@@ -11172,20 +11243,20 @@ msgstr "點擊以下以檢視稍後可已匯入到 concrete5 的一個格式內�
 
 #: concrete/single_pages/dashboard/system/backup_restore/database.php:32
 msgid "Export Database Tables"
-msgstr ""
+msgstr "匯出資料庫表單"
 
 #: concrete/single_pages/dashboard/system/backup_restore/database.php:43
 msgid "Database Refresh"
-msgstr ""
+msgstr "資料庫刷新"
 
 #: concrete/single_pages/dashboard/system/backup_restore/database.php:57
 msgid "Refresh core database tables and blocks."
-msgstr ""
+msgstr "刷新核心資料庫表單和區塊"
 
 #: concrete/single_pages/dashboard/system/backup_restore/database.php:62
 #, php-format
 msgid "Refreshes %s files contained in %s and all block directories."
-msgstr ""
+msgstr "刷新 %s 檔案包含於 %s 和所有的區塊目錄"
 
 #: concrete/single_pages/dashboard/system/backup_restore/database.php:71
 msgid "Reload custom tables."
@@ -11194,39 +11265,39 @@ msgstr "重新載入自訂表格"
 #: concrete/single_pages/dashboard/system/backup_restore/database.php:76
 #, php-format
 msgid "Reloads database tables contained in %s."
-msgstr ""
+msgstr "重新載入資料庫表單包含於 %s."
 
 #: concrete/single_pages/dashboard/system/backup_restore/database.php:82
 msgid "Refresh Databases"
-msgstr ""
+msgstr "刷新資料庫"
 
 #: concrete/single_pages/dashboard/system/backup_restore/database.php:97
 msgid "Developer options have been disabled in the config file."
-msgstr ""
+msgstr "開發者選項已被禁用於組態檔案."
 
 #: concrete/single_pages/dashboard/system/backup_restore/update.php:7
 msgid "Download Update"
-msgstr ""
+msgstr "下載更新"
 
 #: concrete/single_pages/dashboard/system/backup_restore/update.php:9
 #: concrete/single_pages/dashboard/system/backup_restore/update.php:70
 msgid "Check For Updates"
-msgstr ""
+msgstr "檢查更新"
 
 #: concrete/single_pages/dashboard/system/backup_restore/update.php:11
 #: concrete/single_pages/dashboard/system/backup_restore/update.php:72
 #, php-format
 msgid "Currently Running %s"
-msgstr ""
+msgstr "現正執行 %s"
 
 #: concrete/single_pages/dashboard/system/backup_restore/update.php:15
 msgid "Available Update"
-msgstr ""
+msgstr "可用的更新"
 
 #: concrete/single_pages/dashboard/system/backup_restore/update.php:21
 #, php-format
 msgid "Version: %s"
-msgstr ""
+msgstr "版本: %s"
 
 #: concrete/single_pages/dashboard/system/backup_restore/update.php:21
 msgid "F d, Y"
@@ -11235,44 +11306,44 @@ msgstr "F d, Y"
 #: concrete/single_pages/dashboard/system/backup_restore/update.php:21
 #, php-format
 msgid "Release Date: %s"
-msgstr ""
+msgstr "發行日期: %s"
 
 #: concrete/single_pages/dashboard/system/backup_restore/update.php:27
 msgid "Note: Downloading an update will NOT automatically install it."
-msgstr ""
+msgstr "注意: 下載更新將不會自動安裝它."
 
 #: concrete/single_pages/dashboard/system/backup_restore/update.php:32
 msgid "Install Local Update"
-msgstr ""
+msgstr "安裝本地更新"
 
 #: concrete/single_pages/dashboard/system/backup_restore/update.php:34
 #, php-format
 msgid "Make sure you <a href=\"%s\">backup your database</a> before updating."
-msgstr ""
+msgstr "確定您 <a href=\"%s\">備份您的資料庫</a> 更新之前."
 
 #: concrete/single_pages/dashboard/system/backup_restore/update.php:38
 #, php-format
 msgid "An update is available. Click below to update to <strong>%s</strong>."
-msgstr ""
+msgstr "有一個可用得更新.  點擊下面以更新到 <strong>%s</strong>."
 
 #: concrete/single_pages/dashboard/system/backup_restore/update.php:39
 #, php-format
 msgid "Current Version %s"
-msgstr ""
+msgstr "現在的版本 %s"
 
 #: concrete/single_pages/dashboard/system/backup_restore/update.php:48
 msgid ""
 "Several updates are available. Please choose the desired update from the "
 "list below."
-msgstr ""
+msgstr "數個可用得更新. 請從以下清單選擇想要的更新."
 
 #: concrete/single_pages/dashboard/system/backup_restore/update.php:49
 msgid "Current Version"
-msgstr ""
+msgstr "現在的版本"
 
 #: concrete/single_pages/dashboard/system/backup_restore/update.php:77
 msgid "No updates available."
-msgstr ""
+msgstr "沒有可用的更新"
 
 #: concrete/single_pages/dashboard/system/attributes/sets.php:11
 msgid "Update Set Details"
@@ -11459,40 +11530,40 @@ msgstr "書籤圖示"
 
 #: concrete/single_pages/dashboard/system/basics/icons.php:11
 msgid "Favicon"
-msgstr ""
+msgstr "網站圖示"
 
 #: concrete/single_pages/dashboard/system/basics/icons.php:19
 #: concrete/single_pages/dashboard/system/basics/icons.php:83
 #: concrete/single_pages/dashboard/system/basics/icons.php:140
 msgid "Selected Icon"
-msgstr ""
+msgstr "選取的圖示"
 
 #: concrete/single_pages/dashboard/system/basics/icons.php:45
 msgid ""
 "Your image should be 16x16 pixels, and should be a gif or a png with a .ico "
 "file extension."
-msgstr ""
+msgstr "您的影像必須是 16x16 像素, 且必須是一個 gif 或是 pgn 用一個 .ico 的附檔名"
 
 #: concrete/single_pages/dashboard/system/basics/icons.php:74
 msgid "iPhone Thumbnail"
-msgstr ""
+msgstr "iPhone 縮圖"
 
 #: concrete/single_pages/dashboard/system/basics/icons.php:108
 msgid "iPhone home screen icons should be 57x57 and be in the .png format."
-msgstr ""
+msgstr "iPhone 主螢幕圖是必須是 57x57 和必須是 .png 格式"
 
 #: concrete/single_pages/dashboard/system/basics/icons.php:132
 msgid "Windows 8 Thumbnail"
-msgstr ""
+msgstr "Windows 8 縮圖"
 
 #: concrete/single_pages/dashboard/system/basics/icons.php:167
 msgid ""
 "Windows 8 start screen tiles should be 144x144 and be in the .png format."
-msgstr ""
+msgstr "Windows 8 開始螢幕磚必須是 144x144 和必須是用 .png 格式"
 
 #: concrete/single_pages/dashboard/system/basics/timezone.php:19
 msgid "Enable user defined time zones."
-msgstr ""
+msgstr "啟用使用者定義時區."
 
 #: concrete/config/install/base/dashboard.xml:452
 #: concrete/config/install/disabled/blank/content.xml:102
@@ -11503,43 +11574,43 @@ msgstr "Rich Text 編輯器"
 
 #: concrete/single_pages/dashboard/system/basics/editor.php:2
 msgid "Control the options available for TinyMCE."
-msgstr ""
+msgstr "控制 TinyMCE 可用的選項"
 
 #: concrete/single_pages/dashboard/system/basics/editor.php:12
 msgid "Toolbar Set"
-msgstr ""
+msgstr "工具列組合"
 
 #: concrete/single_pages/dashboard/system/basics/editor.php:20
 msgid "Simple"
-msgstr ""
+msgstr "簡單的"
 
 #: concrete/single_pages/dashboard/system/basics/editor.php:32
 msgid "Office"
-msgstr ""
+msgstr "辦公室"
 
 #: concrete/single_pages/dashboard/system/basics/editor.php:47
 msgid "Editor Dimensions"
-msgstr ""
+msgstr "編輯器尺寸"
 
 #: concrete/single_pages/dashboard/system/basics/editor.php:50
 msgid "Width "
-msgstr ""
+msgstr "寬度"
 
 #: concrete/single_pages/dashboard/system/basics/editor.php:61
 msgid "Height "
-msgstr ""
+msgstr "高度"
 
 #: concrete/single_pages/dashboard/system/basics/editor.php:92
 msgid "TinyMCE Reference"
-msgstr ""
+msgstr "TinyMCE 參考值"
 
 #: concrete/single_pages/dashboard/system/basics/interface.php:2
 msgid "Interface Settings"
-msgstr ""
+msgstr "介面設定值"
 
 #: concrete/single_pages/dashboard/system/basics/interface.php:14
 msgid "Pull a picture of the day from concrete5.org (Default)"
-msgstr ""
+msgstr "從 concrete5.org 拉進一張當日的圖片(預設)"
 
 #: concrete/single_pages/dashboard/system/basics/interface.php:16
 msgid "Specify Custom Image"
@@ -11547,7 +11618,7 @@ msgstr "指定自訂影像"
 
 #: concrete/single_pages/dashboard/system/basics/interface.php:40
 msgid "Options disabled, interface settings are specified in config/site.php."
-msgstr ""
+msgstr "禁用選項, 介面設定值被指定於 config/site.php."
 
 #: concrete/helpers/concrete/upgrade/version_542.php:37
 #: concrete/single_pages/dashboard/system/basics/multilingual/view.php:3
@@ -11558,11 +11629,11 @@ msgstr "多國語言安裝"
 msgid ""
 "You don't have any interface languages installed. You must run concrete5 in "
 "English."
-msgstr ""
+msgstr "您為安裝任何介面語言. 您必須以英文執行 concrete5."
 
 #: concrete/single_pages/dashboard/system/basics/multilingual/view.php:18
 msgid "Offer choice of language on login."
-msgstr ""
+msgstr "於登入時提供語言選擇."
 
 #: concrete/single_pages/dashboard/system/optimization/cache.php:2
 msgid "Cache &amp; Speed Settings"
@@ -11579,7 +11650,7 @@ msgstr "關閉 - 為自訂區塊的開發好"
 #: concrete/single_pages/dashboard/system/optimization/cache.php:20
 #: concrete/single_pages/dashboard/system/optimization/cache.php:38
 msgid "On - Helps speed up a live site."
-msgstr ""
+msgstr "開啟 - 幫助加速一個直播網站"
 
 #: concrete/single_pages/dashboard/system/optimization/cache.php:27
 msgid "Overrides Cache"
@@ -11587,19 +11658,19 @@ msgstr "覆蓋快取"
 
 #: concrete/single_pages/dashboard/system/optimization/cache.php:32
 msgid "Off - Good for development."
-msgstr ""
+msgstr "關閉 - 為開發有益"
 
 #: concrete/single_pages/dashboard/system/optimization/cache.php:50
 msgid "Off - Turn it on by hand for specific pages."
-msgstr ""
+msgstr "關閉 - 為特定頁面手動開啟"
 
 #: concrete/single_pages/dashboard/system/optimization/cache.php:56
 msgid "On - If blocks on the particular page allow it."
-msgstr ""
+msgstr "開啟 - 如果封鎖了特別的頁面則允許它"
 
 #: concrete/single_pages/dashboard/system/optimization/cache.php:62
 msgid "On - In all cases."
-msgstr ""
+msgstr "開啟 - 於所有的狀況"
 
 #: concrete/single_pages/dashboard/system/optimization/cache.php:68
 msgid "Expire Pages from Cache"
@@ -11608,7 +11679,7 @@ msgstr "從快取來的過期頁面"
 #: concrete/single_pages/dashboard/system/optimization/cache.php:72
 #, php-format
 msgid "Every %s (default setting)."
-msgstr ""
+msgstr "每一 %s (預設設定). "
 
 #: concrete/single_pages/dashboard/system/optimization/cache.php:78
 msgid "Only when manually removed or the cache is cleared."
@@ -11616,11 +11687,11 @@ msgstr "僅當手動移除或快取被清除時"
 
 #: concrete/single_pages/dashboard/system/optimization/cache.php:86
 msgid "Every "
-msgstr ""
+msgstr "每一"
 
 #: concrete/single_pages/dashboard/system/optimization/cache.php:88
 msgid " minutes."
-msgstr ""
+msgstr "分鐘"
 
 #: concrete/config/install/base/dashboard.xml:532
 #: concrete/single_pages/dashboard/system/optimization/clear_cache.php:3
@@ -11641,98 +11712,92 @@ msgstr "假如您的網站顯示過時資訊, 或非預期行為, 清除快取�
 msgid "Automated Jobs"
 msgstr "自動化工作"
 
-#: concrete/single_pages/dashboard/system/optimization/jobs.php:46
-#: concrete/single_pages/dashboard/system/optimization/jobs.php:265
-#: concrete/single_pages/dashboard/system/optimization/jobs.php:371
-msgid "Jobs"
-msgstr ""
-
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:47
 msgid "Job Sets"
-msgstr ""
+msgstr "工作組合"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:61
 msgid "Last Run"
-msgstr ""
+msgstr "最後執行"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:62
 msgid "Results of Last Run"
-msgstr ""
+msgstr "最後執行的結果"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:63
 msgid "Reset All Jobs"
-msgstr ""
+msgstr "重新設定所有工作"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:76
 #, php-format
 msgid "Running since %s"
-msgstr ""
+msgstr "已執行從 %s"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:87
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:401
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:421
 msgid "Run"
-msgstr ""
+msgstr "執行"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:90
 msgid "Automate this Job"
-msgstr ""
+msgstr "自動化此工作"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:92
 msgid "Remove this Job"
-msgstr ""
+msgstr "移除此工作"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:108
 msgid "Run Job"
-msgstr ""
+msgstr "執行工作"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:112
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:309
 msgid ""
 "When people browse to the page.  (which runs after the main rendering "
 "request of the page.)"
-msgstr ""
+msgstr "當人們瀏覽頁面. (在頁面的主要演算上色要求後執行那個)"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:117
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:313
 msgid "Run this Job Every"
-msgstr ""
+msgstr "執行此工作每一"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:120
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:316
 msgid "Weeks"
-msgstr ""
+msgstr "週"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:120
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:316
 msgid "Months"
-msgstr ""
+msgstr "月"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:128
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:323
 msgid "Through Cron"
-msgstr ""
+msgstr "經由 Cron"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:133
 #, php-format
 msgid ""
 "The \"%s\" job supports queueing, meaning it can be run in a couple "
 "different ways:"
-msgstr ""
+msgstr "\"%s\" 工作支援已排入佇列, 意思是它可以執行於兩種不同的方式:"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:134
 msgid "No Queueing"
-msgstr ""
+msgstr "沒有排入佇列"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:136
 msgid ""
 "This will treat the job as though it were like any other concrete5 job. The "
 "entire job will be run at once."
-msgstr ""
+msgstr "這將視此工作如想像它正如其它 concrete5 的工作一樣. 整個工作將被一次執行."
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:138
 msgid "Queueing"
-msgstr ""
+msgstr "排入佇列"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:139
 msgid "First, schedule this URL for when you'd like this job to run:"
@@ -11748,24 +11813,24 @@ msgstr "然後, 確定此網址已被排程經常執行, 就像每3-5分鐘"
 msgid ""
 "The first URL starts the process - the second ensures that it completes in "
 "batches."
-msgstr ""
+msgstr "第一個網址開始程序 - 第二個確保它以批次完成"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:146
 #, php-format
 msgid ""
 "To run the \"%s\" job, automate the following URL using cron or a similar "
 "system:"
-msgstr ""
+msgstr "執行 \"%s\" 工作, 使用 cron 或是一個相類似的系統自動化下列網址:"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:163
 msgid "You have no jobs installed."
-msgstr ""
+msgstr "您沒有安裝任何工作."
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:193
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:304
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:451
 msgid "Automation Instructions"
-msgstr ""
+msgstr "自動化指令"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:194
 #, php-format

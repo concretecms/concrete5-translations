@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-02-11 23:00+0000\n"
-"PO-Revision-Date: 2014-02-12 10:00+0000\n"
+"POT-Creation-Date: 2014-02-12 23:00+0000\n"
+"PO-Revision-Date: 2014-02-13 10:11+0000\n"
 "Last-Translator: MrLindau <fredrik@fxlindau.se>\n"
 "Language-Team: Swedish (Sweden) (http://www.transifex.com/projects/p/concrete5/language/sv_SE/)\n"
 "MIME-Version: 1.0\n"
@@ -437,6 +437,7 @@ msgstr "Filen <strong>%s</strong> har avsökts igen"
 msgid "You do not have permission to rescan any of the selected files."
 msgstr "Du har inte behörighet att avsöka någon av de valda filerna igen."
 
+#: concrete/core/models/package.php:330
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:40
 #: concrete/single_pages/dashboard/composer/write.php:148
 #: concrete/single_pages/dashboard/composer/write.php:267
@@ -2287,7 +2288,7 @@ msgstr "Intelligent sökning"
 #: concrete/themes/greensalad/default.php:63
 #: concrete/themes/greensalad/full.php:58
 #: concrete/themes/greensalad/home.php:63
-#: concrete/themes/greensalad/view.php:62
+#: concrete/themes/greensalad/view.php:63
 #: concrete/tools/page_controls_menu_js.php:96
 msgid "Sign Out"
 msgstr "Logga ut"
@@ -4523,22 +4524,22 @@ msgid ""
 "Generate the sitemap.xml file that search engines use to crawl your site."
 msgstr "Skapa filen sitemap.xml som sökmotorer använder för att söka igenom din webbplats."
 
-#: concrete/core/jobs/generate_sitemap.php:64
+#: concrete/core/jobs/generate_sitemap.php:67
 #, php-format
 msgid "The file %s is not writable"
 msgstr "Filen %s är inte skrivbar"
 
-#: concrete/core/jobs/generate_sitemap.php:67
+#: concrete/core/jobs/generate_sitemap.php:70
 #, php-format
 msgid "Cannot open file %s"
 msgstr "Kan inte öppna filen %s"
 
-#: concrete/core/jobs/generate_sitemap.php:70
+#: concrete/core/jobs/generate_sitemap.php:73
 #, php-format
 msgid "Error writing to file %s"
 msgstr "Fel vid skrivning till fil %s"
 
-#: concrete/core/jobs/generate_sitemap.php:75
+#: concrete/core/jobs/generate_sitemap.php:78
 #, php-format
 msgid "%1$s file saved (%2$d pages)."
 msgstr "%1$s fil sparad (%2$d sidor)."
@@ -4654,20 +4655,20 @@ msgstr "(Inget namn)"
 msgid "(No Description)"
 msgstr "(Ingen beskrivning)"
 
-#: concrete/core/models/collection_version.php:171
+#: concrete/core/models/collection_version.php:174
 #, php-format
 msgid "New Version %s"
 msgstr "Ny version %s"
 
-#: concrete/core/models/job.php:164 concrete/core/models/job.php:318
+#: concrete/core/models/job.php:164 concrete/core/models/job.php:320
 msgid "The Job was run successfully."
 msgstr "Jobbet utfördes utan fel."
 
-#: concrete/core/models/job.php:278
+#: concrete/core/models/job.php:280
 msgid "Error: The Job class must be a child class of Job."
 msgstr "Fel: Jobbklassen måste vara en underklass till Job."
 
-#: concrete/core/models/job.php:285
+#: concrete/core/models/job.php:287
 #, php-format
 msgid "Error: Invalid Job file. The class %s was not found in %s ."
 msgstr "Fel: Ogiltig jobbfil. Klassen %s hittades inte i %s."
@@ -5240,51 +5241,122 @@ msgstr "Klicka på bilden för att se en ny captcha."
 msgid "Please type the letters and numbers shown in the image."
 msgstr "Fyll i bokstäverna och siffrorna som visas på bilden."
 
+#: concrete/core/models/package.php:297
+msgid "Attribute categories"
+msgstr "Egenskapskategorier"
+
+#: concrete/core/models/package.php:300
+msgid "Permission categories"
+msgstr "Behörighetskategorier"
+
+#: concrete/core/models/package.php:303
+msgid "Permission access entity types"
+msgstr "Behörighet enhetstyp"
+
+#: concrete/core/models/package.php:306
+msgid "Attribute keys"
+msgstr "Egenskapsnycklar"
+
+#: concrete/core/models/package.php:309
+msgid "Attribute sets"
+msgstr "Egenskapsgrupp"
+
 #: concrete/core/models/package.php:312
+msgid "Group sets"
+msgstr "Gruppuppsättning"
+
+#: concrete/core/models/package.php:315
+msgid "Page types"
+msgstr "Sidtyper"
+
+#: concrete/core/models/package.php:318
+msgid "Mail importers"
+msgstr "Importfilter för e-post"
+
+#: concrete/core/models/package.php:321
+msgid "Configuration values"
+msgstr "Konfigureringsvärden"
+
+#: concrete/core/models/package.php:324
+msgid "Block types"
+msgstr "Blocktyper"
+
+#: concrete/core/models/package.php:327
+msgid "Page themes"
+msgstr "Sidoteman"
+
+#: concrete/core/models/package.php:333
+msgid "Single pages"
+msgstr "Specialsidor"
+
+#: concrete/core/models/package.php:336
+msgid "Attribute types"
+msgstr "Egenskapstyper"
+
+#: concrete/core/models/package.php:339
+msgid "Captcha libraries"
+msgstr "Captcha-bibliotek."
+
+#: concrete/core/models/package.php:342
+msgid "Antispam libraries"
+msgstr "Anti-spam-bibliotek"
+
+#: concrete/core/models/package.php:345
+#: concrete/single_pages/dashboard/system/optimization/jobs.php:46
+#: concrete/single_pages/dashboard/system/optimization/jobs.php:265
+#: concrete/single_pages/dashboard/system/optimization/jobs.php:371
+msgid "Jobs"
+msgstr "Jobb"
+
+#: concrete/core/models/package.php:348
+msgid "Workflow types"
+msgstr "Typer av arbetsflöden"
+
+#: concrete/core/models/package.php:386
 #, php-format
 msgid "%s (%s)"
 msgstr "%s (%s)"
 
-#: concrete/core/models/package.php:317
+#: concrete/core/models/package.php:391
 #, php-format
 msgid " %s (%s)"
 msgstr " %s (%s)"
 
-#: concrete/core/models/package.php:502
+#: concrete/core/models/package.php:576
 msgid "You've already installed that package."
 msgstr "Du har redan installerat det paketet."
 
-#: concrete/core/models/package.php:503
+#: concrete/core/models/package.php:577
 msgid "Invalid Package."
 msgstr "Ogiltigt paket."
 
-#: concrete/core/models/package.php:504
+#: concrete/core/models/package.php:578
 #, php-format
 msgid "This package requires concrete5 version %s or greater."
 msgstr "Detta paket kräver concrete5 version %s eller senare."
 
-#: concrete/core/models/package.php:505
+#: concrete/core/models/package.php:579
 msgid "An error occurred while downloading the package."
 msgstr "Ett fel ägde rum när paketet laddades ned."
 
-#: concrete/core/models/package.php:506
+#: concrete/core/models/package.php:580
 msgid "concrete5 was not able to save the package after download."
 msgstr "concrete5 kunde inte spara paketet efter nedladdningen."
 
-#: concrete/core/models/package.php:507
+#: concrete/core/models/package.php:581
 msgid "An error occurred while trying to unzip the package."
 msgstr "Ett fel ägde rum när paketet packades upp med unzip."
 
-#: concrete/core/models/package.php:508
+#: concrete/core/models/package.php:582
 msgid "An error occurred while trying to install the package."
 msgstr "Ett fel ägde rum när paketet skulle installeras."
 
-#: concrete/core/models/package.php:509
+#: concrete/core/models/package.php:583
 #, php-format
 msgid "Unable to backup old package directory to %s"
 msgstr "Kunde inte säkerhetskopiera tidigare paketkatalog till %s"
 
-#: concrete/core/models/package.php:510
+#: concrete/core/models/package.php:584
 msgid ""
 "This package isn't currently available for this version of concrete5. Please"
 " contact the maintainer of this package for assistance."
@@ -5682,7 +5754,7 @@ msgstr "E-POST ÄR AVAKTIVERAD. DETTA MEDDELANDE LOGGADES MEN SKICKADES INTE"
 #: concrete/themes/greensalad/default.php:49
 #: concrete/themes/greensalad/full.php:44
 #: concrete/themes/greensalad/home.php:49
-#: concrete/themes/greensalad/view.php:48
+#: concrete/themes/greensalad/view.php:49
 msgid "concrete5 - open source content management system for PHP and MySQL"
 msgstr "concrete5 - innehållshanteringssystem med öppen källkod för PHP och MySQL"
 
@@ -5691,7 +5763,7 @@ msgstr "concrete5 - innehållshanteringssystem med öppen källkod för PHP och 
 #: concrete/themes/greensalad/default.php:49
 #: concrete/themes/greensalad/full.php:44
 #: concrete/themes/greensalad/home.php:49
-#: concrete/themes/greensalad/view.php:48
+#: concrete/themes/greensalad/view.php:49
 msgid "concrete5 - open source CMS"
 msgstr "concrete5 – innehållshanteringssystem med öppen källkod"
 
@@ -5700,7 +5772,7 @@ msgstr "concrete5 – innehållshanteringssystem med öppen källkod"
 #: concrete/themes/greensalad/default.php:52
 #: concrete/themes/greensalad/full.php:47
 #: concrete/themes/greensalad/home.php:52
-#: concrete/themes/greensalad/view.php:51
+#: concrete/themes/greensalad/view.php:52
 msgid "All rights reserved."
 msgstr "Alla rättigheter förbehållna."
 
@@ -5710,7 +5782,7 @@ msgstr "Alla rättigheter förbehållna."
 #: concrete/themes/greensalad/default.php:63
 #: concrete/themes/greensalad/full.php:58
 #: concrete/themes/greensalad/home.php:63
-#: concrete/themes/greensalad/view.php:62
+#: concrete/themes/greensalad/view.php:63
 #, php-format
 msgid "Currently logged in as <b>%s</b>."
 msgstr "Du är inloggad som <b>%s</b>."
@@ -5721,7 +5793,7 @@ msgstr "Du är inloggad som <b>%s</b>."
 #: concrete/themes/greensalad/default.php:65
 #: concrete/themes/greensalad/full.php:60
 #: concrete/themes/greensalad/home.php:65
-#: concrete/themes/greensalad/view.php:64
+#: concrete/themes/greensalad/view.php:65
 msgid "Sign In to Edit this Site"
 msgstr "Logga in för att redigera denna webbplats"
 
@@ -9966,14 +10038,6 @@ msgstr "Avinstallera"
 msgid "Inspect Package"
 msgstr "Förhandsgranska paket"
 
-#: concrete/config/install/base/dashboard.xml:355
-#: concrete/config/install/disabled/blank/content.xml:59
-#: concrete/config/install/disabled/standard/content.xml:59
-#: concrete/single_pages/dashboard/blocks/types/view.php:7
-#: concrete/single_pages/dashboard/extend/install.php:194
-msgid "Block Types"
-msgstr "Blocktyper"
-
 #: concrete/single_pages/dashboard/extend/install.php:213
 msgid "Back to Add Functionality"
 msgstr "Tillbaka till lägg till funktion"
@@ -10088,6 +10152,13 @@ msgstr "<a href=\"%s\">Installera</a>, <a href=\"%s\">uppdatera</a> eller ladda 
 #, php-format
 msgid "<a href=\"%s\">Install</a> or <a href=\"%s\">update</a> packages."
 msgstr "<a href=\"%s\">Installera</a> eller <a href=\"%s\">uppdatera</a> paket."
+
+#: concrete/config/install/base/dashboard.xml:355
+#: concrete/config/install/disabled/blank/content.xml:59
+#: concrete/config/install/disabled/standard/content.xml:59
+#: concrete/single_pages/dashboard/blocks/types/view.php:7
+msgid "Block Types"
+msgstr "Blocktyper"
 
 #: concrete/single_pages/dashboard/blocks/types/view.php:7
 msgid ""
@@ -11652,12 +11723,6 @@ msgstr "Om din webbplats visar gammal information eller beter sig konstigt, kan 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:43
 msgid "Automated Jobs"
 msgstr "Automatiserade jobb"
-
-#: concrete/single_pages/dashboard/system/optimization/jobs.php:46
-#: concrete/single_pages/dashboard/system/optimization/jobs.php:265
-#: concrete/single_pages/dashboard/system/optimization/jobs.php:371
-msgid "Jobs"
-msgstr "Jobb"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:47
 msgid "Job Sets"

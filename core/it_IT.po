@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-02-11 23:00+0000\n"
-"PO-Revision-Date: 2014-02-12 09:21+0000\n"
+"POT-Creation-Date: 2014-02-12 23:00+0000\n"
+"PO-Revision-Date: 2014-02-13 09:44+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Italian (Italy) (http://www.transifex.com/projects/p/concrete5/language/it_IT/)\n"
 "MIME-Version: 1.0\n"
@@ -435,6 +435,7 @@ msgstr "Il file <strong>%s</strong> è stato rianalizzato"
 msgid "You do not have permission to rescan any of the selected files."
 msgstr "Non si possiede l’autorizzazione per rianalizzare nessuno dei file selezionati."
 
+#: concrete/core/models/package.php:330
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:40
 #: concrete/single_pages/dashboard/composer/write.php:148
 #: concrete/single_pages/dashboard/composer/write.php:267
@@ -2285,7 +2286,7 @@ msgstr "Ricerca intelligente"
 #: concrete/themes/greensalad/default.php:63
 #: concrete/themes/greensalad/full.php:58
 #: concrete/themes/greensalad/home.php:63
-#: concrete/themes/greensalad/view.php:62
+#: concrete/themes/greensalad/view.php:63
 #: concrete/tools/page_controls_menu_js.php:96
 msgid "Sign Out"
 msgstr "Esci"
@@ -4521,22 +4522,22 @@ msgid ""
 "Generate the sitemap.xml file that search engines use to crawl your site."
 msgstr "Genera il file sitemap.xml utilizzato dai motori di ricerca per effettuare la scansione del sito."
 
-#: concrete/core/jobs/generate_sitemap.php:64
+#: concrete/core/jobs/generate_sitemap.php:67
 #, php-format
 msgid "The file %s is not writable"
 msgstr "Il file %s non è scrivibile"
 
-#: concrete/core/jobs/generate_sitemap.php:67
+#: concrete/core/jobs/generate_sitemap.php:70
 #, php-format
 msgid "Cannot open file %s"
 msgstr "Impossibile aprire il file %s"
 
-#: concrete/core/jobs/generate_sitemap.php:70
+#: concrete/core/jobs/generate_sitemap.php:73
 #, php-format
 msgid "Error writing to file %s"
 msgstr "Errore scrivendo nel file %s"
 
-#: concrete/core/jobs/generate_sitemap.php:75
+#: concrete/core/jobs/generate_sitemap.php:78
 #, php-format
 msgid "%1$s file saved (%2$d pages)."
 msgstr "Il file %1$s è stato salvato (%2$d pagine)."
@@ -4652,20 +4653,20 @@ msgstr "(senza nome)"
 msgid "(No Description)"
 msgstr "(senza descrizione)"
 
-#: concrete/core/models/collection_version.php:171
+#: concrete/core/models/collection_version.php:174
 #, php-format
 msgid "New Version %s"
 msgstr "Nuova versione %s"
 
-#: concrete/core/models/job.php:164 concrete/core/models/job.php:318
+#: concrete/core/models/job.php:164 concrete/core/models/job.php:320
 msgid "The Job was run successfully."
 msgstr "Il processo è terminato correttamente."
 
-#: concrete/core/models/job.php:278
+#: concrete/core/models/job.php:280
 msgid "Error: The Job class must be a child class of Job."
 msgstr "Errore: la classe Job deve essere una classe figlia di Job."
 
-#: concrete/core/models/job.php:285
+#: concrete/core/models/job.php:287
 #, php-format
 msgid "Error: Invalid Job file. The class %s was not found in %s ."
 msgstr "Errore: il file del processo non è valido. La classe %s non è stata trovata in %s."
@@ -5238,51 +5239,122 @@ msgstr "Fare clic sull’immagine per vedere un altro captcha."
 msgid "Please type the letters and numbers shown in the image."
 msgstr "Inserire le lettere ed i numeri mostrati nell’immagine."
 
+#: concrete/core/models/package.php:297
+msgid "Attribute categories"
+msgstr "Categorie di attributi"
+
+#: concrete/core/models/package.php:300
+msgid "Permission categories"
+msgstr "Categorie di permessi"
+
+#: concrete/core/models/package.php:303
+msgid "Permission access entity types"
+msgstr "Tipi di entità di permessi di accesso"
+
+#: concrete/core/models/package.php:306
+msgid "Attribute keys"
+msgstr "Chiavi di attributo"
+
+#: concrete/core/models/package.php:309
+msgid "Attribute sets"
+msgstr "Set di attributi"
+
 #: concrete/core/models/package.php:312
+msgid "Group sets"
+msgstr "Set di gruppi"
+
+#: concrete/core/models/package.php:315
+msgid "Page types"
+msgstr "Tipi di pagina"
+
+#: concrete/core/models/package.php:318
+msgid "Mail importers"
+msgstr "Importatori email"
+
+#: concrete/core/models/package.php:321
+msgid "Configuration values"
+msgstr "Valori di configurazione"
+
+#: concrete/core/models/package.php:324
+msgid "Block types"
+msgstr "Tipi di blocco"
+
+#: concrete/core/models/package.php:327
+msgid "Page themes"
+msgstr "Temi delle pagine"
+
+#: concrete/core/models/package.php:333
+msgid "Single pages"
+msgstr "Pagine singole"
+
+#: concrete/core/models/package.php:336
+msgid "Attribute types"
+msgstr "Tipi di attributo"
+
+#: concrete/core/models/package.php:339
+msgid "Captcha libraries"
+msgstr "Librerie captcha"
+
+#: concrete/core/models/package.php:342
+msgid "Antispam libraries"
+msgstr "Liprerie antispam"
+
+#: concrete/core/models/package.php:345
+#: concrete/single_pages/dashboard/system/optimization/jobs.php:46
+#: concrete/single_pages/dashboard/system/optimization/jobs.php:265
+#: concrete/single_pages/dashboard/system/optimization/jobs.php:371
+msgid "Jobs"
+msgstr "Processi"
+
+#: concrete/core/models/package.php:348
+msgid "Workflow types"
+msgstr "Tipi di flussi di lavoro"
+
+#: concrete/core/models/package.php:386
 #, php-format
 msgid "%s (%s)"
 msgstr "%s (%s)"
 
-#: concrete/core/models/package.php:317
+#: concrete/core/models/package.php:391
 #, php-format
 msgid " %s (%s)"
 msgstr " %s (%s)"
 
-#: concrete/core/models/package.php:502
+#: concrete/core/models/package.php:576
 msgid "You've already installed that package."
 msgstr "Questo pacchetto è già installato."
 
-#: concrete/core/models/package.php:503
+#: concrete/core/models/package.php:577
 msgid "Invalid Package."
 msgstr "Pacchetto non valido"
 
-#: concrete/core/models/package.php:504
+#: concrete/core/models/package.php:578
 #, php-format
 msgid "This package requires concrete5 version %s or greater."
 msgstr "Questo pacchetto richiede la versione %s o successiva di concrete5."
 
-#: concrete/core/models/package.php:505
+#: concrete/core/models/package.php:579
 msgid "An error occurred while downloading the package."
 msgstr "Errore durante lo scaricamento del pacchetto."
 
-#: concrete/core/models/package.php:506
+#: concrete/core/models/package.php:580
 msgid "concrete5 was not able to save the package after download."
 msgstr "concrete5 non è riuscito a salvare il pacchetto scaricato."
 
-#: concrete/core/models/package.php:507
+#: concrete/core/models/package.php:581
 msgid "An error occurred while trying to unzip the package."
 msgstr "Errore durante la decompressione del pacchetto."
 
-#: concrete/core/models/package.php:508
+#: concrete/core/models/package.php:582
 msgid "An error occurred while trying to install the package."
 msgstr "Errore durante l’installazione del pacchetto."
 
-#: concrete/core/models/package.php:509
+#: concrete/core/models/package.php:583
 #, php-format
 msgid "Unable to backup old package directory to %s"
 msgstr "Impossibile effettuare il backup in %s della vecchia cartella del pacchetto"
 
-#: concrete/core/models/package.php:510
+#: concrete/core/models/package.php:584
 msgid ""
 "This package isn't currently available for this version of concrete5. Please"
 " contact the maintainer of this package for assistance."
@@ -5680,7 +5752,7 @@ msgstr "LE EMAIL SONO DISABILITATE. QUESTA EMAIL È STATA SALVATA NEL REGISTRO M
 #: concrete/themes/greensalad/default.php:49
 #: concrete/themes/greensalad/full.php:44
 #: concrete/themes/greensalad/home.php:49
-#: concrete/themes/greensalad/view.php:48
+#: concrete/themes/greensalad/view.php:49
 msgid "concrete5 - open source content management system for PHP and MySQL"
 msgstr "concrete5 - content management system open source per PHP e MySQL"
 
@@ -5689,7 +5761,7 @@ msgstr "concrete5 - content management system open source per PHP e MySQL"
 #: concrete/themes/greensalad/default.php:49
 #: concrete/themes/greensalad/full.php:44
 #: concrete/themes/greensalad/home.php:49
-#: concrete/themes/greensalad/view.php:48
+#: concrete/themes/greensalad/view.php:49
 msgid "concrete5 - open source CMS"
 msgstr "concrete5 - CMS open source"
 
@@ -5698,7 +5770,7 @@ msgstr "concrete5 - CMS open source"
 #: concrete/themes/greensalad/default.php:52
 #: concrete/themes/greensalad/full.php:47
 #: concrete/themes/greensalad/home.php:52
-#: concrete/themes/greensalad/view.php:51
+#: concrete/themes/greensalad/view.php:52
 msgid "All rights reserved."
 msgstr "Tutti i diritti riservati."
 
@@ -5708,7 +5780,7 @@ msgstr "Tutti i diritti riservati."
 #: concrete/themes/greensalad/default.php:63
 #: concrete/themes/greensalad/full.php:58
 #: concrete/themes/greensalad/home.php:63
-#: concrete/themes/greensalad/view.php:62
+#: concrete/themes/greensalad/view.php:63
 #, php-format
 msgid "Currently logged in as <b>%s</b>."
 msgstr "Accesso effettuato come <b>%s</b>."
@@ -5719,7 +5791,7 @@ msgstr "Accesso effettuato come <b>%s</b>."
 #: concrete/themes/greensalad/default.php:65
 #: concrete/themes/greensalad/full.php:60
 #: concrete/themes/greensalad/home.php:65
-#: concrete/themes/greensalad/view.php:64
+#: concrete/themes/greensalad/view.php:65
 msgid "Sign In to Edit this Site"
 msgstr "Accedi per modificare il sito"
 
@@ -9964,14 +10036,6 @@ msgstr "Disinstalla"
 msgid "Inspect Package"
 msgstr "Analizza pacchetto"
 
-#: concrete/config/install/base/dashboard.xml:355
-#: concrete/config/install/disabled/blank/content.xml:59
-#: concrete/config/install/disabled/standard/content.xml:59
-#: concrete/single_pages/dashboard/blocks/types/view.php:7
-#: concrete/single_pages/dashboard/extend/install.php:194
-msgid "Block Types"
-msgstr "Tipi di blocco"
-
 #: concrete/single_pages/dashboard/extend/install.php:213
 msgid "Back to Add Functionality"
 msgstr "Torna a aggiungi funzionalità"
@@ -10086,6 +10150,13 @@ msgstr "<a href=\"%s\">Installa</a>, <a href=\"%s\">aggiorna</a> o scarica altri
 #, php-format
 msgid "<a href=\"%s\">Install</a> or <a href=\"%s\">update</a> packages."
 msgstr "<a href=\"%s\">Installa</a> o <a href=\"%s\">aggiorna</a> pacchetti."
+
+#: concrete/config/install/base/dashboard.xml:355
+#: concrete/config/install/disabled/blank/content.xml:59
+#: concrete/config/install/disabled/standard/content.xml:59
+#: concrete/single_pages/dashboard/blocks/types/view.php:7
+msgid "Block Types"
+msgstr "Tipi di blocco"
 
 #: concrete/single_pages/dashboard/blocks/types/view.php:7
 msgid ""
@@ -11650,12 +11721,6 @@ msgstr "Se il sito presenta informazioni obsolete o si comporta in modo anomalo,
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:43
 msgid "Automated Jobs"
 msgstr "Processi automatici"
-
-#: concrete/single_pages/dashboard/system/optimization/jobs.php:46
-#: concrete/single_pages/dashboard/system/optimization/jobs.php:265
-#: concrete/single_pages/dashboard/system/optimization/jobs.php:371
-msgid "Jobs"
-msgstr "Processi"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:47
 msgid "Job Sets"

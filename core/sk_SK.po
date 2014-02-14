@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-02-11 23:00+0000\n"
-"PO-Revision-Date: 2014-02-12 08:50+0000\n"
+"POT-Creation-Date: 2014-02-12 23:00+0000\n"
+"PO-Revision-Date: 2014-02-13 08:51+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Slovak (Slovakia) (http://www.transifex.com/projects/p/concrete5/language/sk_SK/)\n"
 "MIME-Version: 1.0\n"
@@ -436,6 +436,7 @@ msgstr "Súbor <strong>%s</strong> bol netestovaný"
 msgid "You do not have permission to rescan any of the selected files."
 msgstr "Nemáte oprávnenie vykonať prehľadanie niektorý z vybraných súborov."
 
+#: concrete/core/models/package.php:330
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:40
 #: concrete/single_pages/dashboard/composer/write.php:148
 #: concrete/single_pages/dashboard/composer/write.php:267
@@ -2292,7 +2293,7 @@ msgstr "Inteligentné vyhľadávanie"
 #: concrete/themes/greensalad/default.php:63
 #: concrete/themes/greensalad/full.php:58
 #: concrete/themes/greensalad/home.php:63
-#: concrete/themes/greensalad/view.php:62
+#: concrete/themes/greensalad/view.php:63
 #: concrete/tools/page_controls_menu_js.php:96
 msgid "Sign Out"
 msgstr "Odhlásiť sa"
@@ -4530,22 +4531,22 @@ msgid ""
 "Generate the sitemap.xml file that search engines use to crawl your site."
 msgstr "Vygeneruje súbor sitemap.xml, ktorý používajú vyhľadávače k prezeraniu Vášho webu."
 
-#: concrete/core/jobs/generate_sitemap.php:64
+#: concrete/core/jobs/generate_sitemap.php:67
 #, php-format
 msgid "The file %s is not writable"
 msgstr "Do súboru %s nemožno zapisovať"
 
-#: concrete/core/jobs/generate_sitemap.php:67
+#: concrete/core/jobs/generate_sitemap.php:70
 #, php-format
 msgid "Cannot open file %s"
 msgstr "Súbor %s nemožno otvoriť"
 
-#: concrete/core/jobs/generate_sitemap.php:70
+#: concrete/core/jobs/generate_sitemap.php:73
 #, php-format
 msgid "Error writing to file %s"
 msgstr ""
 
-#: concrete/core/jobs/generate_sitemap.php:75
+#: concrete/core/jobs/generate_sitemap.php:78
 #, php-format
 msgid "%1$s file saved (%2$d pages)."
 msgstr "%1$s súbor je uložený (%2$d stránok)."
@@ -4661,20 +4662,20 @@ msgstr "(Bez názvu)"
 msgid "(No Description)"
 msgstr "(Bez popisu)"
 
-#: concrete/core/models/collection_version.php:171
+#: concrete/core/models/collection_version.php:174
 #, php-format
 msgid "New Version %s"
 msgstr "Nová verzia %s"
 
-#: concrete/core/models/job.php:164 concrete/core/models/job.php:318
+#: concrete/core/models/job.php:164 concrete/core/models/job.php:320
 msgid "The Job was run successfully."
 msgstr "Úloha prebehla úspešne."
 
-#: concrete/core/models/job.php:278
+#: concrete/core/models/job.php:280
 msgid "Error: The Job class must be a child class of Job."
 msgstr "Chyba: Úloha musí byť potomkom triedy Job."
 
-#: concrete/core/models/job.php:285
+#: concrete/core/models/job.php:287
 #, php-format
 msgid "Error: Invalid Job file. The class %s was not found in %s ."
 msgstr "Chyba: Neplatný súbor úlohy. Trieda %s nebola v %s nájdená."
@@ -5247,51 +5248,122 @@ msgstr "Kliknite na obrázok pre znovuzobrazenie captcha."
 msgid "Please type the letters and numbers shown in the image."
 msgstr "Odpíšte písmená a čísla z obrázka."
 
+#: concrete/core/models/package.php:297
+msgid "Attribute categories"
+msgstr ""
+
+#: concrete/core/models/package.php:300
+msgid "Permission categories"
+msgstr ""
+
+#: concrete/core/models/package.php:303
+msgid "Permission access entity types"
+msgstr ""
+
+#: concrete/core/models/package.php:306
+msgid "Attribute keys"
+msgstr ""
+
+#: concrete/core/models/package.php:309
+msgid "Attribute sets"
+msgstr ""
+
 #: concrete/core/models/package.php:312
+msgid "Group sets"
+msgstr ""
+
+#: concrete/core/models/package.php:315
+msgid "Page types"
+msgstr ""
+
+#: concrete/core/models/package.php:318
+msgid "Mail importers"
+msgstr ""
+
+#: concrete/core/models/package.php:321
+msgid "Configuration values"
+msgstr ""
+
+#: concrete/core/models/package.php:324
+msgid "Block types"
+msgstr ""
+
+#: concrete/core/models/package.php:327
+msgid "Page themes"
+msgstr ""
+
+#: concrete/core/models/package.php:333
+msgid "Single pages"
+msgstr ""
+
+#: concrete/core/models/package.php:336
+msgid "Attribute types"
+msgstr ""
+
+#: concrete/core/models/package.php:339
+msgid "Captcha libraries"
+msgstr ""
+
+#: concrete/core/models/package.php:342
+msgid "Antispam libraries"
+msgstr ""
+
+#: concrete/core/models/package.php:345
+#: concrete/single_pages/dashboard/system/optimization/jobs.php:46
+#: concrete/single_pages/dashboard/system/optimization/jobs.php:265
+#: concrete/single_pages/dashboard/system/optimization/jobs.php:371
+msgid "Jobs"
+msgstr "Úlohy"
+
+#: concrete/core/models/package.php:348
+msgid "Workflow types"
+msgstr ""
+
+#: concrete/core/models/package.php:386
 #, php-format
 msgid "%s (%s)"
 msgstr "%s (%s)"
 
-#: concrete/core/models/package.php:317
+#: concrete/core/models/package.php:391
 #, php-format
 msgid " %s (%s)"
 msgstr " %s (%s)"
 
-#: concrete/core/models/package.php:502
+#: concrete/core/models/package.php:576
 msgid "You've already installed that package."
 msgstr "Tento balíček je už nainštalovaný."
 
-#: concrete/core/models/package.php:503
+#: concrete/core/models/package.php:577
 msgid "Invalid Package."
 msgstr "Neplatný balíček."
 
-#: concrete/core/models/package.php:504
+#: concrete/core/models/package.php:578
 #, php-format
 msgid "This package requires concrete5 version %s or greater."
 msgstr "Tento balík si vyžaduje concrete5 verziu %s alebo vyššiu."
 
-#: concrete/core/models/package.php:505
+#: concrete/core/models/package.php:579
 msgid "An error occurred while downloading the package."
 msgstr "Pri sťahovaní balíčka nastala chyba."
 
-#: concrete/core/models/package.php:506
+#: concrete/core/models/package.php:580
 msgid "concrete5 was not able to save the package after download."
 msgstr "Concrete5 nebol schopný uložiť balík po stiahnutí."
 
-#: concrete/core/models/package.php:507
+#: concrete/core/models/package.php:581
 msgid "An error occurred while trying to unzip the package."
 msgstr "Pri rozbaľovaní balíčka nastala chyba."
 
-#: concrete/core/models/package.php:508
+#: concrete/core/models/package.php:582
 msgid "An error occurred while trying to install the package."
 msgstr "Pri inštalovaní balíčka nastala chyba."
 
-#: concrete/core/models/package.php:509
+#: concrete/core/models/package.php:583
 #, php-format
 msgid "Unable to backup old package directory to %s"
 msgstr "Nemožno zálohovať starý priečinok balíčka do %s"
 
-#: concrete/core/models/package.php:510
+#: concrete/core/models/package.php:584
 msgid ""
 "This package isn't currently available for this version of concrete5. Please"
 " contact the maintainer of this package for assistance."
@@ -5693,7 +5765,7 @@ msgstr "EMAILY SÚ ZAKÁZANÉ. TENTO EMAIL BOL ZAZNAMENANÝ ALE NEODOSLANÝ"
 #: concrete/themes/greensalad/default.php:49
 #: concrete/themes/greensalad/full.php:44
 #: concrete/themes/greensalad/home.php:49
-#: concrete/themes/greensalad/view.php:48
+#: concrete/themes/greensalad/view.php:49
 msgid "concrete5 - open source content management system for PHP and MySQL"
 msgstr "concrete5 - open source systém založený na PHP a MySQL"
 
@@ -5702,7 +5774,7 @@ msgstr "concrete5 - open source systém založený na PHP a MySQL"
 #: concrete/themes/greensalad/default.php:49
 #: concrete/themes/greensalad/full.php:44
 #: concrete/themes/greensalad/home.php:49
-#: concrete/themes/greensalad/view.php:48
+#: concrete/themes/greensalad/view.php:49
 msgid "concrete5 - open source CMS"
 msgstr "concrete5 - open source CMS"
 
@@ -5711,7 +5783,7 @@ msgstr "concrete5 - open source CMS"
 #: concrete/themes/greensalad/default.php:52
 #: concrete/themes/greensalad/full.php:47
 #: concrete/themes/greensalad/home.php:52
-#: concrete/themes/greensalad/view.php:51
+#: concrete/themes/greensalad/view.php:52
 msgid "All rights reserved."
 msgstr "Všetky práva vyhradené."
 
@@ -5721,7 +5793,7 @@ msgstr "Všetky práva vyhradené."
 #: concrete/themes/greensalad/default.php:63
 #: concrete/themes/greensalad/full.php:58
 #: concrete/themes/greensalad/home.php:63
-#: concrete/themes/greensalad/view.php:62
+#: concrete/themes/greensalad/view.php:63
 #, php-format
 msgid "Currently logged in as <b>%s</b>."
 msgstr "V súčasnej dobe prihlásený ako  <b>%s</b>."
@@ -5732,7 +5804,7 @@ msgstr "V súčasnej dobe prihlásený ako  <b>%s</b>."
 #: concrete/themes/greensalad/default.php:65
 #: concrete/themes/greensalad/full.php:60
 #: concrete/themes/greensalad/home.php:65
-#: concrete/themes/greensalad/view.php:64
+#: concrete/themes/greensalad/view.php:65
 msgid "Sign In to Edit this Site"
 msgstr "Prihlásiť sa k editácií  stránky"
 
@@ -9978,14 +10050,6 @@ msgstr "Odinštalovať"
 msgid "Inspect Package"
 msgstr "Skontrolujte balík"
 
-#: concrete/config/install/base/dashboard.xml:355
-#: concrete/config/install/disabled/blank/content.xml:59
-#: concrete/config/install/disabled/standard/content.xml:59
-#: concrete/single_pages/dashboard/blocks/types/view.php:7
-#: concrete/single_pages/dashboard/extend/install.php:194
-msgid "Block Types"
-msgstr "Typy blokov"
-
 #: concrete/single_pages/dashboard/extend/install.php:213
 msgid "Back to Add Functionality"
 msgstr "Späť na pridanie funkcie"
@@ -10100,6 +10164,13 @@ msgstr "<a href=\"%s\">Inštaluj</a>, <a href=\"%s\">updatni</a> alebo stiahni s
 #, php-format
 msgid "<a href=\"%s\">Install</a> or <a href=\"%s\">update</a> packages."
 msgstr "<a href=\"%s\">Inštaluj</a> alebo <a href=\"%s\">aktualizuj</a> balíčky."
+
+#: concrete/config/install/base/dashboard.xml:355
+#: concrete/config/install/disabled/blank/content.xml:59
+#: concrete/config/install/disabled/standard/content.xml:59
+#: concrete/single_pages/dashboard/blocks/types/view.php:7
+msgid "Block Types"
+msgstr "Typy blokov"
 
 #: concrete/single_pages/dashboard/blocks/types/view.php:7
 msgid ""
@@ -11664,12 +11735,6 @@ msgstr "Ak sa na vašej stránke zobrazujú neaktuálne informácie, alebo sa ch
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:43
 msgid "Automated Jobs"
 msgstr "Automatické úlohy"
-
-#: concrete/single_pages/dashboard/system/optimization/jobs.php:46
-#: concrete/single_pages/dashboard/system/optimization/jobs.php:265
-#: concrete/single_pages/dashboard/system/optimization/jobs.php:371
-msgid "Jobs"
-msgstr "Úlohy"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:47
 msgid "Job Sets"
