@@ -22,8 +22,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-02-14 23:00+0000\n"
-"PO-Revision-Date: 2014-02-15 08:50+0000\n"
+"POT-Creation-Date: 2014-02-18 23:00+0000\n"
+"PO-Revision-Date: 2014-02-19 08:50+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Russian (Russia) (http://www.transifex.com/projects/p/concrete5/language/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -403,10 +403,6 @@ msgstr "Имя файла"
 msgid "Size"
 msgstr "Размер"
 
-#: concrete/tools/files/import.php:286
-msgid "Kb"
-msgstr "Kb"
-
 #: concrete/tools/files/import.php:291
 msgid "Remove files from incoming/ directory."
 msgstr "Удалить файлы из директории /incoming"
@@ -611,17 +607,6 @@ msgstr "Страница добавлена"
 #: concrete/tools/files/properties.php:244
 msgid "Type"
 msgstr "Тип"
-
-#. %s is a number
-#: concrete/core/helpers/number.php:109
-#: concrete/tools/files/bulk_properties.php:308
-#: concrete/tools/files/properties.php:249
-#, php-format
-msgid "%s byte"
-msgid_plural "%s bytes"
-msgstr[0] "%s байт"
-msgstr[1] "%s байта"
-msgstr[2] "%s байт"
 
 #: concrete/elements/pages/search_form_advanced.php:7
 #: concrete/tools/files/properties.php:252 concrete/tools/pages/delete.php:92
@@ -4646,10 +4631,6 @@ msgstr "до"
 msgid " on "
 msgstr " в "
 
-#: concrete/core/models/file_version.php:94
-msgid "KB"
-msgstr "KB"
-
 #: concrete/core/models/file_list.php:117
 msgid "Could not open with ZipArchive::CREATE"
 msgstr "Не удается открыть с ZipArchive::CREATE"
@@ -4832,7 +4813,7 @@ msgstr "Завершение."
 msgid "Unable to install database: %s"
 msgstr "Попытка инсталляции базы данных: %s не увенчалась успехом."
 
-#: concrete/config/localization.php:126
+#: concrete/config/localization.php:130
 #: concrete/core/models/starting_point_package.php:129
 msgctxt "GroupName"
 msgid "Guest"
@@ -4843,7 +4824,7 @@ msgctxt "GroupDescription"
 msgid "The guest group represents unregistered visitors to your site."
 msgstr "Группа Гости представляет незарегистрированных пользователей на вашем сайте."
 
-#: concrete/config/localization.php:128
+#: concrete/config/localization.php:132
 #: concrete/core/models/starting_point_package.php:130
 msgctxt "GroupName"
 msgid "Registered Users"
@@ -4854,7 +4835,7 @@ msgctxt "GroupDescription"
 msgid "The registered users group represents all user accounts."
 msgstr "Группы зарегистрированных пользователей представляют все учетные записи пользователей."
 
-#: concrete/config/localization.php:130
+#: concrete/config/localization.php:134
 #: concrete/core/models/starting_point_package.php:131
 msgctxt "GroupName"
 msgid "Administrators"
@@ -5655,26 +5636,35 @@ msgstr[0] "%d сек."
 msgstr[1] "%d сек."
 msgstr[2] "%d сек."
 
+#. %s is a number
+#: concrete/core/helpers/number.php:115
+#, php-format
+msgid "%s byte"
+msgid_plural "%s bytes"
+msgstr[0] "%s байт"
+msgstr[1] "%s байта"
+msgstr[2] "%s байт"
+
 #. %s is a number, KB means Kilobyte
-#: concrete/core/helpers/number.php:113
+#: concrete/core/helpers/number.php:119
 #, php-format
 msgid "%s KB"
 msgstr ""
 
 #. %s is a number, MB means Megabyte
-#: concrete/core/helpers/number.php:117
+#: concrete/core/helpers/number.php:123
 #, php-format
 msgid "%s MB"
 msgstr ""
 
 #. %s is a number, GB means Gigabyte
-#: concrete/core/helpers/number.php:121
+#: concrete/core/helpers/number.php:127
 #, php-format
 msgid "%s GB"
 msgstr ""
 
 #. %s is a number, TB means Terabyte
-#: concrete/core/helpers/number.php:123
+#: concrete/core/helpers/number.php:129
 #, php-format
 msgid "%s TB"
 msgstr ""
@@ -6551,7 +6541,7 @@ msgstr "Открыть ссылку в новом окне"
 msgid "You have no items in your Clipboard."
 msgstr "Ваш буфер обмена пуст."
 
-#: concrete/config/localization.php:124
+#: concrete/config/localization.php:128
 #: concrete/elements/block_area_add_stack_contents.php:48
 #: concrete/elements/scrapbook_lists.php:33
 #: concrete/elements/scrapbook_lists.php:49
@@ -8075,45 +8065,45 @@ msgstr "Тестовое содержимое, включая страницы �
 msgid "A great starting point for an attractive website with a blog."
 msgstr "Установка файлов и тестовой информации в БД сайта, включая страницы блога. Это удачный способ демонстрации возможностей системы."
 
-#: concrete/config/localization.php:45
+#: concrete/config/localization.php:53
 msgid "F d, Y \\a\\t g:i A"
 msgstr "d F Y в G:i"
 
-#: concrete/config/localization.php:49
+#: concrete/config/localization.php:57
 msgid "F d, Y \\a\\t g:i:s A"
 msgstr "d F, Y в G:i:s"
 
-#: concrete/config/localization.php:53
+#: concrete/config/localization.php:61
 msgid "n/j/Y \\a\\t g:i A"
 msgstr "d.m.Y в G:i"
 
-#: concrete/config/localization.php:61
+#: concrete/config/localization.php:65
 msgid "n/j/Y"
 msgstr "n/j/Y"
 
-#: concrete/config/localization.php:65
+#: concrete/config/localization.php:69
 msgid "F j, Y"
 msgstr "F j, Y"
 
-#: concrete/config/localization.php:69
+#: concrete/config/localization.php:73
 msgid "g:i A"
 msgstr "G:i"
 
-#: concrete/config/localization.php:73
+#: concrete/config/localization.php:77
 msgid "g:i:s A"
 msgstr "G:i:s"
 
-#: concrete/config/localization.php:77
+#: concrete/config/localization.php:81
 msgid "d-m-Y_H:i_"
 msgstr "d-m-Y_H:i_"
 
 #. http://api.jqueryui.com/datepicker/#utility-formatDate
-#: concrete/config/localization.php:112
+#: concrete/config/localization.php:116
 msgid "m/d/yy"
 msgstr ""
 
 #. can be 12 or 24
-#: concrete/config/localization.php:121
+#: concrete/config/localization.php:125
 msgctxt "Time format"
 msgid "12"
 msgstr "24"
