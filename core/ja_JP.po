@@ -3,19 +3,20 @@
 # acliss19xx <acliss19xx@gmail.com>, 2013
 # acliss19xx <acliss19xx@gmail.com>, 2012
 # Takuro Hishikawa <hishikawa@concrete5.co.jp>, 2012
-# Katz Ueno <katz515@gmail.com>, 2012-2013
+# Katz Ueno <katz515@gmail.com>, 2012-2014
 # ounziw <ounziw@gmail.com>, 2012
-# Takuro Hishikawa <hishikawa@concrete5.co.jp>, 2012-2013
+# Takuro Hishikawa <hishikawa@concrete5.co.jp>, 2012-2014
 # Tao Sasaki <>, 2014
 # 吉川 智 <tomoac@gmail.com>, 2012
 # Takuro Hishikawa <hishikawa@concrete5.co.jp>, 2012
+# hdk0016 <hdk0016@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-02-18 23:00+0000\n"
-"PO-Revision-Date: 2014-02-19 08:50+0000\n"
-"Last-Translator: Michele Locati <michele@locati.it>\n"
+"POT-Creation-Date: 2014-02-19 23:00+0000\n"
+"PO-Revision-Date: 2014-02-20 16:31+0000\n"
+"Last-Translator: Takuro Hishikawa <hishikawa@concrete5.co.jp>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/projects/p/concrete5/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1614,7 +1615,7 @@ msgstr "グループ選択"
 
 #: concrete/tools/users/search_results_export.php:8
 msgid "You have no access to user export."
-msgstr ""
+msgstr "ユーザーエクスポート権限がありません。"
 
 #: concrete/core/controllers/single_pages/login.php:16
 #: concrete/core/helpers/form/user_selector.php:116
@@ -1797,7 +1798,7 @@ msgstr "編集"
 #, php-format
 msgctxt "%s is a block type name"
 msgid "Edit %s"
-msgstr ""
+msgstr "%s を編集"
 
 #: concrete/tools/i18n_js.php:34
 msgid ""
@@ -2218,17 +2219,17 @@ msgstr "アップロード完了"
 
 #: concrete/tools/i18n_js.php:181
 msgid "Select Some Options"
-msgstr ""
+msgstr "オプションを選択"
 
 #: concrete/tools/i18n_js.php:182
 msgid "Select an Option"
-msgstr ""
+msgstr "オプションを選択"
 
 #. After this text we have a search criteria: for instance 'No results match
 #. "Criteria"'
 #: concrete/tools/i18n_js.php:183
 msgid "No results match"
-msgstr ""
+msgstr "一致する検索結果はありません"
 
 #: concrete/config/install/base/dashboard.xml:268
 #: concrete/config/install/disabled/blank/content.xml:44
@@ -2579,7 +2580,7 @@ msgstr "警告："
 msgid ""
 "Any users or groups selected will be removed from the permissions on the "
 "selected pages."
-msgstr ""
+msgstr "選択されたユーザーまたはグループは、選択されたページ上の権限が削除されます。"
 
 #: concrete/elements/permission/access/list.php:12
 #: concrete/elements/permission/access/list.php:31
@@ -2590,11 +2591,11 @@ msgstr "アクセスエンティティを追加"
 
 #: concrete/tools/pages/permissions_access.php:141
 msgid "Permissions Should"
-msgstr ""
+msgstr "この権限を"
 
 #: concrete/tools/pages/permissions_access.php:143
 msgid "Add To Existing Permissions"
-msgstr ""
+msgstr "既存の権限設定に追加します"
 
 #: concrete/tools/pages/permissions_access.php:144
 msgid "Replace Permissions"
@@ -2604,7 +2605,7 @@ msgstr "権限を置き換え"
 msgid ""
 "You may only add access to these selected pages if they have all been set to"
 " override parent or page defaults permissions."
-msgstr ""
+msgstr "これらの選択されたページへのアクセスを追加するには、これらのページが親ページの設定を上書きするか、ページタイプのデフォルトの権限を使用する設定になっている必要があります。"
 
 #: concrete/tools/pages/delete.php:81
 msgid "You do not have permission to delete any of the selected pages."
@@ -2838,7 +2839,7 @@ msgstr "以下のエラーを修正してください。"
 
 #: concrete/core/controllers/blocks/form.php:391
 msgid "No file specified"
-msgstr ""
+msgstr "ファイルが指定されていません"
 
 #: concrete/core/controllers/blocks/form.php:459
 #, php-format
@@ -3516,15 +3517,17 @@ msgstr "ユーザーIDは、%s文字以下である必要があります（半�
 
 #: concrete/core/controllers/single_pages/dashboard/users/add.php:47
 #: concrete/core/controllers/single_pages/dashboard/users/search.php:107
-#: concrete/core/controllers/single_pages/register.php:84
-msgid "A username may only contain letters, numbers and spaces."
-msgstr "ユーザーIDには、半角英数字と半角空白のみ含めることができます。"
+msgid ""
+"A username may only contain letters, numbers, spaces, dots (not at the "
+"beginning/end), underscores (not at the beginning/end)."
+msgstr "ユーザー名は半角英数字、スペース、ドット（最初と最後は不可）、アンダースコア（最初と最後は不可）のみ使用することができます。"
 
 #: concrete/core/controllers/single_pages/dashboard/users/add.php:49
 #: concrete/core/controllers/single_pages/dashboard/users/search.php:109
-#: concrete/core/controllers/single_pages/register.php:86
-msgid "A username may only contain letters or numbers."
-msgstr "ユーザーIDには、半角英文字と数字のみ含めることができます。"
+msgid ""
+"A username may only contain letters numbers, dots (not at the "
+"beginning/end), underscores (not at the beginning/end)."
+msgstr "ユーザー名は半角英数字、ドット（最初と最後は不可）、アンダースコア（最初と最後は不可）のみ使用することができます。"
 
 #: concrete/core/controllers/single_pages/dashboard/users/add.php:54
 #: concrete/core/controllers/single_pages/dashboard/users/search.php:113
@@ -3765,16 +3768,16 @@ msgstr "無効なバックアップファイルが指定されました。"
 #: concrete/core/controllers/single_pages/dashboard/system/backup_restore/backup.php:104
 msgid ""
 "There was an error trying to restore the database. This file was empty."
-msgstr ""
+msgstr "データベースのリストアの際にエラーが発生しました。ファイルが空のようです。"
 
 #: concrete/core/controllers/single_pages/dashboard/system/backup_restore/backup.php:118
 #, php-format
 msgid "There was an error trying to restore the database. Affected query: %s"
-msgstr ""
+msgstr "データベースのリストアの際にエラーが発生しました。影響のあるクエリー：%s"
 
 #: concrete/core/controllers/single_pages/dashboard/system/backup_restore/backup.php:132
 msgid "Restoration Successful"
-msgstr ""
+msgstr "リストア成功"
 
 #: concrete/core/controllers/single_pages/dashboard/system/backup_restore/database.php:27
 msgid "Core database files and installed blocks refreshed."
@@ -3960,11 +3963,11 @@ msgstr "ジョブが見つかりません。"
 
 #: concrete/core/controllers/single_pages/dashboard/system/optimization/jobs.php:53
 msgid "Job successfully uninstalled."
-msgstr ""
+msgstr "ジョブが正常にアンインストールされました。"
 
 #: concrete/core/controllers/single_pages/dashboard/system/optimization/jobs.php:58
 msgid "Job successfully installed."
-msgstr ""
+msgstr "ジョブが正常にインストールされました。"
 
 #: concrete/core/controllers/single_pages/dashboard/system/optimization/jobs.php:71
 msgid "All running jobs have been reset."
@@ -4006,7 +4009,7 @@ msgstr "ジョブセットのスケジュールを正常に更新されました
 #: concrete/single_pages/dashboard/reports/logs.php:67
 #, php-format
 msgid "Today at %s"
-msgstr ""
+msgstr "今日 %s"
 
 #: concrete/config/install/base/dashboard.xml:226
 #: concrete/config/install/disabled/blank/content.xml:38
@@ -4171,6 +4174,14 @@ msgstr "認証画像の文字が間違っています。画像にある英文字
 #, php-format
 msgid "The email address %s is already in use. Please choose another."
 msgstr "入力されたメールアドレス %s はすでに使用されています。別のメールアドレスを入力してください。"
+
+#: concrete/core/controllers/single_pages/register.php:84
+msgid "A username may only contain letters, numbers and spaces."
+msgstr "ユーザーIDには、半角英数字と半角空白のみ含めることができます。"
+
+#: concrete/core/controllers/single_pages/register.php:86
+msgid "A username may only contain letters or numbers."
+msgstr "ユーザーIDには、半角英文字と数字のみ含めることができます。"
 
 #: concrete/core/controllers/single_pages/register.php:91
 #, php-format
@@ -4520,7 +4531,7 @@ msgstr "%sファイルを開く事ができません"
 #: concrete/core/jobs/generate_sitemap.php:73
 #, php-format
 msgid "Error writing to file %s"
-msgstr ""
+msgstr "ファイル %s の書き込みエラー"
 
 #: concrete/core/jobs/generate_sitemap.php:78
 #, php-format
@@ -5222,63 +5233,63 @@ msgstr "画像中の文字と数字を入力してください。"
 
 #: concrete/core/models/package.php:297
 msgid "Attribute categories"
-msgstr ""
+msgstr "属性カテゴリー"
 
 #: concrete/core/models/package.php:300
 msgid "Permission categories"
-msgstr ""
+msgstr "権限カテゴリー"
 
 #: concrete/core/models/package.php:303
 msgid "Permission access entity types"
-msgstr ""
+msgstr "権限アクセスエンティティタイプ"
 
 #: concrete/core/models/package.php:306
 msgid "Attribute keys"
-msgstr ""
+msgstr "属性キー"
 
 #: concrete/core/models/package.php:309
 msgid "Attribute sets"
-msgstr ""
+msgstr "属性セット"
 
 #: concrete/core/models/package.php:312
 msgid "Group sets"
-msgstr ""
+msgstr "グループセット"
 
 #: concrete/core/models/package.php:315
 msgid "Page types"
-msgstr ""
+msgstr "ページタイプ"
 
 #: concrete/core/models/package.php:318
 msgid "Mail importers"
-msgstr ""
+msgstr "メールインポーター"
 
 #: concrete/core/models/package.php:321
 msgid "Configuration values"
-msgstr ""
+msgstr "設定値"
 
 #: concrete/core/models/package.php:324
 msgid "Block types"
-msgstr ""
+msgstr "ブロックタイプ"
 
 #: concrete/core/models/package.php:327
 msgid "Page themes"
-msgstr ""
+msgstr "ページテーマ"
 
 #: concrete/core/models/package.php:333
 msgid "Single pages"
-msgstr ""
+msgstr "シングルページ"
 
 #: concrete/core/models/package.php:336
 msgid "Attribute types"
-msgstr ""
+msgstr "属性タイプ"
 
 #: concrete/core/models/package.php:339
 msgid "Captcha libraries"
-msgstr ""
+msgstr "CAPTCHAライブラリー"
 
 #: concrete/core/models/package.php:342
 msgid "Antispam libraries"
-msgstr ""
+msgstr "スパム拒否ライブラリー"
 
 #: concrete/core/models/package.php:345
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:46
@@ -5289,7 +5300,7 @@ msgstr "ジョブ"
 
 #: concrete/core/models/package.php:348
 msgid "Workflow types"
-msgstr ""
+msgstr "ワークフロータイプ"
 
 #: concrete/core/models/package.php:386
 #, php-format
@@ -5616,25 +5627,25 @@ msgstr[0] "%s バイト"
 #: concrete/core/helpers/number.php:119
 #, php-format
 msgid "%s KB"
-msgstr ""
+msgstr "%s KB"
 
 #. %s is a number, MB means Megabyte
 #: concrete/core/helpers/number.php:123
 #, php-format
 msgid "%s MB"
-msgstr ""
+msgstr "%s MB"
 
 #. %s is a number, GB means Gigabyte
 #: concrete/core/helpers/number.php:127
 #, php-format
 msgid "%s GB"
-msgstr ""
+msgstr "%s GB"
 
 #. %s is a number, TB means Terabyte
 #: concrete/core/helpers/number.php:129
 #, php-format
 msgid "%s TB"
-msgstr ""
+msgstr "%s TB"
 
 #: concrete/core/helpers/validation/ip.php:94
 msgid ""
@@ -7390,7 +7401,7 @@ msgstr "デフォルト"
 #: concrete/elements/custom_style/spacing.php:33
 #: concrete/elements/custom_style/spacing.php:70
 msgid "Left"
-msgstr "左寄せ"
+msgstr "左"
 
 #: concrete/elements/custom_style/fonts.php:54
 msgid "Center"
@@ -7401,7 +7412,7 @@ msgstr "中央寄せ"
 #: concrete/elements/custom_style/spacing.php:17
 #: concrete/elements/custom_style/spacing.php:54
 msgid "Right"
-msgstr "右寄せ"
+msgstr "右"
 
 #: concrete/elements/custom_style/fonts.php:56
 msgid "Justify"
@@ -7415,13 +7426,13 @@ msgstr "マージン"
 #: concrete/elements/custom_style/spacing.php:9
 #: concrete/elements/custom_style/spacing.php:46
 msgid "Top"
-msgstr "上寄せ"
+msgstr "上"
 
 #: concrete/elements/custom_style/border.php:41
 #: concrete/elements/custom_style/spacing.php:25
 #: concrete/elements/custom_style/spacing.php:62
 msgid "Bottom"
-msgstr "下寄せ"
+msgstr "下"
 
 #: concrete/elements/custom_style/spacing.php:42
 msgid "Padding"
@@ -7525,11 +7536,11 @@ msgstr "スピード設定"
 
 #: concrete/elements/pages/search_results.php:41
 msgid "Change Permissions - Add Access"
-msgstr ""
+msgstr "権限を変更 - アクセスを追加"
 
 #: concrete/elements/pages/search_results.php:42
 msgid "Change Permissions - Remove Access"
-msgstr ""
+msgstr "権限を変更 - アクセスを削除"
 
 #: concrete/elements/pages/search_results.php:64
 msgid "Score"
@@ -7563,7 +7574,7 @@ msgstr "承認バージョン"
 
 #: concrete/elements/pages/search_form_advanced.php:17
 msgid "Permissions Inheritance"
-msgstr ""
+msgstr "権限の継承"
 
 #: concrete/elements/pages/search_form_advanced.php:21
 #: concrete/elements/pages/search_form_advanced.php:64
@@ -7575,7 +7586,7 @@ msgstr "親ページ"
 #: concrete/elements/pages/search_form_advanced.php:66
 #: concrete/elements/pages/search_form_advanced.php:236
 msgid "Itself (Override)"
-msgstr ""
+msgstr "手動（オーバーライド）"
 
 #: concrete/elements/pages/search_form_advanced.php:71
 #: concrete/elements/pages/search_form_advanced.php:255
@@ -8067,7 +8078,7 @@ msgstr "Y-m-d_H:i_"
 #. http://api.jqueryui.com/datepicker/#utility-formatDate
 #: concrete/config/localization.php:116
 msgid "m/d/yy"
-msgstr ""
+msgstr "yy/m/d"
 
 #. can be 12 or 24
 #: concrete/config/localization.php:125
@@ -13590,7 +13601,7 @@ msgid ""
 "as the current page. Define custom label text for each link, and choose "
 "whether or not to display arrows. The Loop option will display the first "
 "page again when a user reaches the last page in the nav."
-msgstr "このブロックは現在のページのサイトマップ上の同じレベルの隣接したページへのリンクを作成します。リンクのラベルテキストを設定し、矢印を表示するか否かを選択します。ループオプションで、ユーザーがナビゲーションの最後のページに到達した際に、最初のページをもう一度表示することができます。"
+msgstr "このブロックは現在のページのサイトマップ上の同じレベルの隣接したページへのリンクを作成します。リンクのラベルテキストを設定し、矢印を表示するかどうかを選択します。ループオプションで、ユーザーがナビゲーションの最後のページに到達した際に、最初のページをもう一度表示することができます。"
 
 #: concrete/helpers/concrete/interface/help.php:20
 msgid ""
@@ -13997,7 +14008,7 @@ msgid ""
 "edit pages, when logged in. For more granular control, set permissions on "
 "pages individually from Page Properties, or enable Advanced Permissions for "
 "even more granular control."
-msgstr "お使いのサイトの閲覧・編集に関する基本的なパラメーターを設定します。閲覧権限はサイトのページを全てのユーザーからアクセスできるようにするか、登録済みのユーザーのみか、管理者のみに設定できます。編集権限はどのグループがログイン中にページを編集できるかを設定します。さらに詳細に設定したい場合は、ページごとに権限を設定するか、より詳細に設定するには上級権限モードを有効にしてください。"
+msgstr "お使いのサイトの閲覧・編集を制御するための基本的かつ全般的なパラメーターです。閲覧権限はサイトのページを全てのユーザーからアクセスできるようにするか、登録済みのユーザーのみか、管理者のみに設定できます。編集権限はどのグループがログイン中にページを編集できるかを設定します。さらに詳細に設定したい場合は、ページごとに権限を設定するか、より詳細に設定するには上級権限モードを有効にしてください。"
 
 #: concrete/helpers/concrete/interface/help.php:87
 msgid ""
@@ -14763,7 +14774,7 @@ msgstr "エリアにレイアウトを追加"
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users get the ability to add layouts to a particular area."
-msgstr "どのユーザーが特定のエリアに対してレイアウトを追加できるかを管理します。"
+msgstr "ユーザーが特定のエリアに対してレイアウトを追加できるかどうかを制御します。"
 
 #: concrete/config/install/base/permissions.xml:56
 msgctxt "PermissionKeyName"
@@ -14775,7 +14786,7 @@ msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users see design controls and can modify an area's custom "
 "CSS."
-msgstr "どのユーザーがデザインの変更画面に入れたり、エリアのカスタムCSSを編集したりできるかを管理します。"
+msgstr "ユーザーがデザインの変更画面に入れたり、エリアのカスタムCSSを編集したりできるかどうかを制御します。"
 
 #: concrete/config/install/base/permissions.xml:57
 msgctxt "PermissionKeyName"
@@ -14787,7 +14798,7 @@ msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users can access the permissions on an area. Custom area "
 "permissions could override those of the page."
-msgstr "どのユーザーがエリアの権限設定にアクセスできるかを管理します。エリアの権限設定は、ページの権限設定を上書きできます。"
+msgstr "ユーザーがエリアの権限設定にアクセスできるかどうかを制御します。エリアの権限設定は、ページの権限設定を上書きします。"
 
 #: concrete/config/install/base/permissions.xml:58
 msgctxt "PermissionKeyName"
@@ -14797,7 +14808,7 @@ msgstr "エリアのコンテンツを削除"
 #: concrete/config/install/base/permissions.xml:58
 msgctxt "PermissionKeyDescription"
 msgid "Controls whether users can delete blocks from this area."
-msgstr "どのユーザーがこのエリアからブロックを削除できるかを管理します。"
+msgstr "ユーザーがこのエリアからブロックを削除できるかどうかを制御します。"
 
 #: concrete/config/install/base/permissions.xml:59
 msgctxt "PermissionKeyDescription"
@@ -14805,7 +14816,7 @@ msgid ""
 "Controls whether users can schedule guest access permissions on blocks in "
 "this area. Guest Access is a shortcut for granting permissions just to the "
 "Guest Group."
-msgstr "どのユーザーがこのエリア内のブロックの期間指定ゲストアクセス設定ができるかを管理します。ゲストアクセスはゲストグループに権限を与えるショートカットです。"
+msgstr "ユーザーがこのエリア内のブロックの期間指定ゲストアクセス設定ができるかどうかを制御します。ゲストアクセスはゲストグループに権限を与えるショートカットです。"
 
 #: concrete/config/install/base/permissions.xml:62
 msgctxt "PermissionKeyName"
@@ -14815,7 +14826,7 @@ msgstr "ブロックを表示"
 #: concrete/config/install/base/permissions.xml:62
 msgctxt "PermissionKeyDescription"
 msgid "Controls whether users can view this block in the page."
-msgstr "どのユーザーがページ内でこのブロックを表示できるかを管理します。"
+msgstr "ユーザーがページ内でこのブロックを表示できるかどうかを制御します。"
 
 #: concrete/config/install/base/permissions.xml:63
 msgctxt "PermissionKeyName"
@@ -14827,7 +14838,7 @@ msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users can edit this block. This overrides any area or page "
 "permissions."
-msgstr "どのユーザーがこのブロックを編集できるかを管理します。エリアまたはページの権限設定を上書きします。"
+msgstr "ユーザーがこのブロックを編集できるかどうかを制御します。エリアまたはページの権限設定を上書きします。"
 
 #: concrete/config/install/base/permissions.xml:64
 msgctxt "PermissionKeyName"
@@ -14839,7 +14850,7 @@ msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users can change the custom template on this block. This "
 "overrides any area or page permissions."
-msgstr "どのユーザーがこのブロックのカスタムテンプレートを変更できるかを管理します。エリアまたはページの権限設定を上書きします。"
+msgstr "ユーザーがこのブロックのカスタムテンプレートを変更できるかどうかを制御します。エリアまたはページの権限設定を上書きします。"
 
 #: concrete/config/install/base/permissions.xml:65
 msgctxt "PermissionKeyName"
@@ -14851,7 +14862,7 @@ msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users can delete this block. This overrides any area or "
 "page permissions."
-msgstr "どのユーザーがこのブロックを削除できるかを管理します。エリアまたはページの権限設定を上書きします。"
+msgstr "ユーザーがこのブロックを削除できるかどうかを制御します。エリアまたはページの権限設定を上書きします。"
 
 #: concrete/config/install/base/permissions.xml:66
 msgctxt "PermissionKeyName"
@@ -14863,21 +14874,21 @@ msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users can set custom design properties or CSS on this "
 "block."
-msgstr "どのユーザーがこのブロックのデザインプロパティやCSSを設定できるかを管理します。"
+msgstr "ユーザーがこのブロックのデザインプロパティやCSSを設定できるかどうかを制御します。"
 
 #: concrete/config/install/base/permissions.xml:67
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users can change permissions on this block, potentially "
 "granting themselves or others greater access."
-msgstr "どのユーザーがこのブロックの権限を変更できるかを管理します。"
+msgstr "ユーザーがこのブロックの権限を変更できるかを制御します。この権限を持つユーザーは潜在的にそれ以上の権限を持つ可能性があります。"
 
 #: concrete/config/install/base/permissions.xml:68
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users can schedule guest access permissions on this block. "
 "Guest Access is a shortcut for granting permissions just to the Guest Group."
-msgstr "どのユーザーがこのブロックの期間指定ゲストアクセスの設定ができるかを管理します。ゲストアクセスはゲストグループに権限を与えるショートカットです。"
+msgstr "ユーザーがこのブロックの期間指定ゲストアクセスの設定ができるかどうかを制御します。ゲストアクセスはゲストグループに権限を与えるショートカットです。"
 
 #: concrete/config/install/base/permissions.xml:70
 #: concrete/config/install/base/permissions.xml:79
@@ -14953,7 +14964,7 @@ msgstr "ファイルセットを削除"
 #: concrete/config/install/base/permissions.xml:76
 msgctxt "PermissionKeyDescription"
 msgid "Can delete file set."
-msgstr ""
+msgstr "ファイルセットを削除できます。"
 
 #: concrete/config/install/base/permissions.xml:77
 #: concrete/config/install/base/permissions.xml:85
@@ -15139,12 +15150,12 @@ msgstr "ニュースフローを表示"
 #: concrete/config/install/base/permissions.xml:191
 msgctxt "PermissionKeyName"
 msgid "Export Site Users"
-msgstr ""
+msgstr "サイトユーザーをエクスポート"
 
 #: concrete/config/install/base/permissions.xml:191
 msgctxt "PermissionKeyDescription"
 msgid "Controls whether a user can export site users or not"
-msgstr ""
+msgstr "ユーザーがサイトユーザーをエクスポートできるかどうかを制御する"
 
 #: concrete/config/install/base/attributes.xml:9
 msgctxt "AttributeTypeName"
@@ -15339,12 +15350,12 @@ msgstr "デジタル"
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:124
 msgctxt "SelectAttributeValue"
 msgid "afterlife"
-msgstr ""
+msgstr "あの世"
 
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:125
 msgctxt "SelectAttributeValue"
 msgid "new york times"
-msgstr ""
+msgstr "ニューヨーク・タイムズ"
 
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:126
 msgctxt "SelectAttributeValue"
@@ -15354,157 +15365,157 @@ msgstr "ソーシャルメディア"
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:127
 msgctxt "SelectAttributeValue"
 msgid "mom"
-msgstr ""
+msgstr "おかん"
 
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:128
 msgctxt "SelectAttributeValue"
 msgid "fashion"
-msgstr ""
+msgstr "ファッション"
 
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:129
 msgctxt "SelectAttributeValue"
 msgid "style"
-msgstr ""
+msgstr "スタイル"
 
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:130
 msgctxt "SelectAttributeValue"
 msgid "icon"
-msgstr ""
+msgstr "アイコン"
 
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:131
 msgctxt "SelectAttributeValue"
 msgid "book"
-msgstr ""
+msgstr "本"
 
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:132
 msgctxt "SelectAttributeValue"
 msgid "lookbook"
-msgstr ""
+msgstr "ルックブック"
 
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:133
 msgctxt "SelectAttributeValue"
 msgid "unique"
-msgstr ""
+msgstr "ユニーク"
 
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:134
 msgctxt "SelectAttributeValue"
 msgid "branding"
-msgstr ""
+msgstr "ブランディング"
 
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:135
 msgctxt "SelectAttributeValue"
 msgid "china"
-msgstr ""
+msgstr "中国"
 
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:136
 msgctxt "SelectAttributeValue"
 msgid "shoes"
-msgstr ""
+msgstr "靴"
 
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:137
 msgctxt "SelectAttributeValue"
 msgid "culture"
-msgstr ""
+msgstr "文化"
 
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:138
 msgctxt "SelectAttributeValue"
 msgid "stuff"
-msgstr ""
+msgstr "物"
 
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:139
 msgctxt "SelectAttributeValue"
 msgid "millitary"
-msgstr ""
+msgstr "ミリタリー"
 
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:140
 msgctxt "SelectAttributeValue"
 msgid "denim"
-msgstr ""
+msgstr "デニム"
 
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:141
 msgctxt "SelectAttributeValue"
 msgid "army"
-msgstr ""
+msgstr "アーミー"
 
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:142
 msgctxt "SelectAttributeValue"
 msgid "eco"
-msgstr ""
+msgstr "エコ"
 
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:143
 msgctxt "SelectAttributeValue"
 msgid "recycled"
-msgstr ""
+msgstr "リサイクル"
 
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:144
 msgctxt "SelectAttributeValue"
 msgid "test"
-msgstr ""
+msgstr "テスト"
 
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:145
 msgctxt "SelectAttributeValue"
 msgid "super test"
-msgstr ""
+msgstr "スーパーテスト"
 
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:146
 msgctxt "SelectAttributeValue"
 msgid "sunset"
-msgstr ""
+msgstr "サンセット"
 
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:147
 msgctxt "SelectAttributeValue"
 msgid "lorem ipsum"
-msgstr ""
+msgstr "lorem ipsum"
 
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:148
 msgctxt "SelectAttributeValue"
 msgid "later"
-msgstr ""
+msgstr "後で"
 
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:149
 msgctxt "SelectAttributeValue"
 msgid "this"
-msgstr ""
+msgstr "この"
 
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:150
 msgctxt "SelectAttributeValue"
 msgid "that"
-msgstr ""
+msgstr "あれ"
 
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:151
 msgctxt "SelectAttributeValue"
 msgid "quarterly"
-msgstr ""
+msgstr "四半期"
 
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:152
 msgctxt "SelectAttributeValue"
 msgid " pants"
-msgstr ""
+msgstr "パンツ"
 
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:153
 msgctxt "SelectAttributeValue"
 msgid "skinny"
-msgstr ""
+msgstr "スキニー"
 
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:154
 msgctxt "SelectAttributeValue"
 msgid "jeans"
-msgstr ""
+msgstr "ジーンズ"
 
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:155
 msgctxt "SelectAttributeValue"
 msgid "socks"
-msgstr ""
+msgstr "靴下"
 
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:156
 msgctxt "SelectAttributeValue"
 msgid "vans"
-msgstr ""
+msgstr "vans"
 
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:157
 msgctxt "SelectAttributeValue"
 msgid "rocknroll"
-msgstr ""
+msgstr "ロックンロール"
 
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:161
 msgctxt "AttributeKeyName"
@@ -15649,22 +15660,22 @@ msgstr "ページ"
 #: concrete/config/install/packages/standard/content.xml:10
 msgctxt "SelectAttributeValue"
 msgid "composer"
-msgstr ""
+msgstr "コンポーザー"
 
 #: concrete/config/install/packages/standard/content.xml:11
 msgctxt "SelectAttributeValue"
 msgid "hello"
-msgstr ""
+msgstr "ハロー"
 
 #: concrete/config/install/packages/standard/content.xml:12
 msgctxt "SelectAttributeValue"
 msgid "world"
-msgstr ""
+msgstr "ワールド"
 
 #: concrete/config/install/packages/standard/content.xml:13
 msgctxt "SelectAttributeValue"
 msgid "first post"
-msgstr ""
+msgstr "最初の投稿"
 
 #: concrete/config/install/packages/standard/content.xml:25
 #: concrete/config/install/packages/standard/content.xml:78
@@ -15705,7 +15716,7 @@ msgstr "ブログ投稿フッター"
 #: concrete/config/install/packages/standard/content.xml:47
 msgctxt "AreaName"
 msgid "FeaturedImage"
-msgstr "注目の画像"
+msgstr "アイキャッチ画像"
 
 #: concrete/config/install/packages/standard/content.xml:60
 msgctxt "AreaName"
@@ -15796,7 +15807,7 @@ msgstr "サムネイル"
 #: concrete/blocks/rss_displayer/templates/read_more.php
 msgctxt "TemplateFileName"
 msgid "Read More"
-msgstr "もっと読む"
+msgstr "続きを読む"
 
 #: concrete/blocks/search/templates/tag_cloud
 msgctxt "TemplateFileName"
@@ -15806,17 +15817,17 @@ msgstr "タグクラウド"
 #: concrete/blocks/page_list/templates/blog_index_thumbnail.php
 msgctxt "TemplateFileName"
 msgid "Blog Index Thumbnail"
-msgstr "Blog Index Thumbnail"
+msgstr "ブログインデックスサムネイル付き"
 
 #: concrete/blocks/page_list/templates/blog_index.php
 msgctxt "TemplateFileName"
 msgid "Blog Index"
-msgstr "Blog Index"
+msgstr "ブログインデックス"
 
 #: concrete/blocks/autonav/templates/header_menu.php
 msgctxt "TemplateFileName"
 msgid "Header Menu"
-msgstr ""
+msgstr "ヘッダーメニュー"
 
 #: concrete/blocks/autonav/templates/breadcrumb.php
 msgctxt "TemplateFileName"
