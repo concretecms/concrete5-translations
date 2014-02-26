@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-02-21 23:00+0000\n"
-"PO-Revision-Date: 2014-02-22 08:50+0000\n"
+"POT-Creation-Date: 2014-02-25 11:00+0000\n"
+"PO-Revision-Date: 2014-02-25 17:00+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Hebrew (Israel) (http://www.transifex.com/projects/p/concrete5/language/he_IL/)\n"
 "MIME-Version: 1.0\n"
@@ -229,6 +229,22 @@ msgstr "פעולנ לא תקינה."
 msgid "Unable to search file sets."
 msgstr ""
 
+#: concrete/tools/files/download.php:39
+msgid "None of the requested files could be found."
+msgstr ""
+
+#: concrete/tools/files/download.php:50
+msgid "The requested file couldn't be found."
+msgstr ""
+
+#: concrete/tools/files/download.php:52
+msgid "The requested file is not valid."
+msgstr ""
+
+#: concrete/tools/files/download.php:54
+msgid "An unexpected error occurred while looking for the requested file"
+msgstr ""
+
 #: concrete/tools/files/import.php:263 concrete/tools/files/replace.php:28
 msgid "Add from Incoming Directory"
 msgstr "הוסף מספריית העלאות ייעודית"
@@ -380,7 +396,7 @@ msgstr "ייבוא קבצים"
 
 #: concrete/tools/files/bulk_properties.php:293
 #: concrete/tools/files/import.php:272 concrete/tools/files/properties.php:218
-#: concrete/tools/files/properties.php:347
+#: concrete/tools/files/properties.php:352
 msgid "Filename"
 msgstr "שם קובץ"
 
@@ -388,7 +404,7 @@ msgstr "שם קובץ"
 #: concrete/elements/custom_style/fonts.php:23
 #: concrete/elements/files/search_form_advanced.php:7
 #: concrete/tools/files/bulk_properties.php:307
-#: concrete/tools/files/import.php:273 concrete/tools/files/properties.php:248
+#: concrete/tools/files/import.php:273 concrete/tools/files/properties.php:253
 msgid "Size"
 msgstr "גודל"
 
@@ -484,7 +500,7 @@ msgid "All versions of a file will be moved to the selected location."
 msgstr "כל גירסאות הקובץ יועברו למיקום הנבחר."
 
 #: concrete/tools/files/permissions.php:89
-#: concrete/tools/files/properties.php:265
+#: concrete/tools/files/properties.php:270
 msgid "Default Location"
 msgstr "מיקום ברירת מחדל"
 
@@ -574,11 +590,15 @@ msgstr "גרסה"
 msgid "URL to File"
 msgstr "כתובת URL לקובץ"
 
-#: concrete/tools/files/properties.php:232
+#: concrete/tools/files/properties.php:226
+msgid "Download URL"
+msgstr ""
+
+#: concrete/tools/files/properties.php:237
 msgid "Dashboard File Manager"
 msgstr "מנהל הקבצים שבלוח הבקרה"
 
-#: concrete/tools/files/properties.php:238
+#: concrete/tools/files/properties.php:243
 msgid "Page Added To"
 msgstr "הדף נוסף אל"
 
@@ -593,22 +613,22 @@ msgstr "הדף נוסף אל"
 #: concrete/single_pages/dashboard/reports/logs.php:57
 #: concrete/single_pages/dashboard/workflow/list.php:52
 #: concrete/tools/files/bulk_properties.php:302
-#: concrete/tools/files/properties.php:244
+#: concrete/tools/files/properties.php:249
 msgid "Type"
 msgstr "סוג"
 
 #: concrete/elements/pages/search_form_advanced.php:7
-#: concrete/tools/files/properties.php:252 concrete/tools/pages/delete.php:92
+#: concrete/tools/files/properties.php:257 concrete/tools/pages/delete.php:92
 msgid "Date Added"
 msgstr "נוסף בתאריך"
 
-#: concrete/tools/files/properties.php:253
+#: concrete/tools/files/properties.php:258
 #, php-format
 msgid "Added by <strong>%s</strong> on %s"
 msgstr "נוסף על ידי <strong>%s</strong> ב-%s"
 
 #: concrete/blocks/google_map/form_setup_html.php:13
-#: concrete/tools/files/properties.php:270
+#: concrete/tools/files/properties.php:275
 msgid "Location"
 msgstr "מיקום"
 
@@ -617,8 +637,8 @@ msgstr "מיקום"
 #: concrete/core/models/file_list.php:418
 #: concrete/core/models/file_version.php:235
 #: concrete/tools/files/bulk_properties.php:313
-#: concrete/tools/files/properties.php:274
-#: concrete/tools/files/properties.php:348
+#: concrete/tools/files/properties.php:279
+#: concrete/tools/files/properties.php:353
 msgid "Title"
 msgstr "כותרת"
 
@@ -630,7 +650,7 @@ msgstr "כותרת"
 #: concrete/single_pages/dashboard/users/add_group.php:27
 #: concrete/single_pages/dashboard/users/groups.php:159
 #: concrete/tools/files/bulk_properties.php:314
-#: concrete/tools/files/properties.php:275
+#: concrete/tools/files/properties.php:280
 msgid "Description"
 msgstr "תיאור"
 
@@ -638,47 +658,47 @@ msgstr "תיאור"
 #: concrete/core/controllers/blocks/tags.php:40
 #: concrete/core/models/file_version.php:241
 #: concrete/tools/files/bulk_properties.php:315
-#: concrete/tools/files/properties.php:276
+#: concrete/tools/files/properties.php:281
 msgid "Tags"
 msgstr "תגים"
 
-#: concrete/tools/files/properties.php:291
+#: concrete/tools/files/properties.php:296
 #, php-format
 msgid "%s File Properties"
 msgstr "%s מאפייני קובץ"
 
 #: concrete/tools/files/bulk_properties.php:277
-#: concrete/tools/files/properties.php:312
+#: concrete/tools/files/properties.php:317
 msgid "Other Properties"
 msgstr "מאפיינים נוספים"
 
 #: concrete/tools/files/bulk_properties.php:320
-#: concrete/tools/files/properties.php:330
+#: concrete/tools/files/properties.php:335
 msgid "File Preview"
 msgstr "קובץ תצוגה מקדימה"
 
-#: concrete/tools/files/properties.php:342
+#: concrete/tools/files/properties.php:347
 msgid "File Versions"
 msgstr "קובץ גרסאות"
 
 #: concrete/blocks/page_list/templates/blog_index.php:18
-#: concrete/tools/files/properties.php:349 concrete/tools/versions.php:349
+#: concrete/tools/files/properties.php:354 concrete/tools/versions.php:349
 msgid "Comments"
 msgstr "תגובות"
 
-#: concrete/tools/files/properties.php:350 concrete/tools/versions.php:350
+#: concrete/tools/files/properties.php:355 concrete/tools/versions.php:350
 msgid "Creator"
 msgstr "יוצר"
 
-#: concrete/tools/files/properties.php:351
+#: concrete/tools/files/properties.php:356
 msgid "Added On"
 msgstr "נוסף ב-"
 
-#: concrete/tools/files/properties.php:365
+#: concrete/tools/files/properties.php:370
 msgid "Preview File"
 msgstr "תצוגה מקדימה של קובץ"
 
-#: concrete/tools/files/properties.php:378
+#: concrete/tools/files/properties.php:383
 msgid "Updated "
 msgstr "עודכן"
 
@@ -698,7 +718,7 @@ msgstr "עודכן"
 #: concrete/single_pages/dashboard/users/groups.php:239
 #: concrete/single_pages/profile/messages.php:43
 #: concrete/tools/files/delete.php:91 concrete/tools/files/delete_set.php:47
-#: concrete/tools/files/properties.php:397 concrete/tools/i18n_js.php:9
+#: concrete/tools/files/properties.php:402 concrete/tools/i18n_js.php:9
 #: concrete/tools/i18n_js.php:23 concrete/tools/i18n_js.php:81
 #: concrete/tools/i18n_js.php:90 concrete/tools/i18n_js.php:110
 #: concrete/tools/i18n_js.php:159 concrete/tools/page_controls_menu_js.php:196
@@ -706,12 +726,12 @@ msgstr "עודכן"
 msgid "Delete"
 msgstr "מחיקה"
 
-#: concrete/tools/files/properties.php:415
+#: concrete/tools/files/properties.php:420
 #, php-format
 msgid "Total Downloads: %s"
 msgstr "סך כל ההורדות: %s"
 
-#: concrete/tools/files/properties.php:416
+#: concrete/tools/files/properties.php:421
 msgid "Most recent 20 downloads:"
 msgstr "20 ההורדות האחרונות:"
 
@@ -719,25 +739,25 @@ msgstr "20 ההורדות האחרונות:"
 #: concrete/single_pages/dashboard/reports/logs.php:58
 #: concrete/single_pages/dashboard/reports/statistics.php:106
 #: concrete/single_pages/dashboard/reports/surveys.php:24
-#: concrete/tools/files/properties.php:419
+#: concrete/tools/files/properties.php:424
 msgid "User"
 msgstr "משתמש"
 
-#: concrete/tools/files/properties.php:420
+#: concrete/tools/files/properties.php:425
 msgid "Download Time"
 msgstr "זמן הורדה"
 
-#: concrete/tools/files/properties.php:421
+#: concrete/tools/files/properties.php:426
 msgid "File Version ID"
 msgstr "מזהה לגירסת הקובץ"
 
 #: concrete/single_pages/dashboard/reports/statistics.php:138
-#: concrete/tools/files/properties.php:435
+#: concrete/tools/files/properties.php:440
 msgid "Anonymous"
 msgstr "אנונימי"
 
 #: concrete/single_pages/dashboard/reports/statistics.php:144
-#: concrete/tools/files/properties.php:441
+#: concrete/tools/files/properties.php:446
 msgid "Deleted User"
 msgstr "משתמש מחוק"
 
@@ -4640,12 +4660,12 @@ msgstr "נוסף"
 msgid "Active"
 msgstr "פעיל"
 
-#: concrete/core/models/page_theme.php:580
+#: concrete/core/models/page_theme.php:641
 #: concrete/helpers/concrete/dashboard.php:280
 msgid "(No Name)"
 msgstr "(ללא שם)"
 
-#: concrete/core/models/page_theme.php:581
+#: concrete/core/models/page_theme.php:669
 msgid "(No Description)"
 msgstr "(ללא תיאור)"
 
@@ -7879,43 +7899,43 @@ msgstr "עורך טקסט עשיר - גירסת משרד"
 msgid "Rich Text - Custom"
 msgstr "עורך טקסט עשיר - מותאם אישית"
 
-#: concrete/models/attribute/types/address/composer.php:6
+#: concrete/models/attribute/types/address/composer.php:8
 #: concrete/models/attribute/types/address/form.php:7
 msgid "Address 1"
 msgstr "כתובת 1"
 
-#: concrete/models/attribute/types/address/composer.php:13
+#: concrete/models/attribute/types/address/composer.php:15
 #: concrete/models/attribute/types/address/form.php:11
 msgid "Address 2"
 msgstr "כתובת 2"
 
-#: concrete/models/attribute/types/address/composer.php:20
+#: concrete/models/attribute/types/address/composer.php:22
 #: concrete/models/attribute/types/address/form.php:15
 msgid "City"
 msgstr "עיר"
 
-#: concrete/models/attribute/types/address/composer.php:27
+#: concrete/models/attribute/types/address/composer.php:29
 #: concrete/models/attribute/types/address/form.php:20
 msgid "State/Province"
 msgstr "מדינה/מחוז"
 
-#: concrete/models/attribute/types/address/composer.php:40
+#: concrete/models/attribute/types/address/composer.php:42
 #: concrete/models/attribute/types/address/form.php:32
 msgid "Choose State/Province"
 msgstr "בחר מדינה/מחוז"
 
-#: concrete/models/attribute/types/address/composer.php:62
+#: concrete/models/attribute/types/address/composer.php:64
 #: concrete/models/attribute/types/address/form.php:52
 #: concrete/models/attribute/types/address/type_form.php:3
 msgid "Choose Country"
 msgstr "בחר מדינה"
 
-#: concrete/models/attribute/types/address/composer.php:66
+#: concrete/models/attribute/types/address/composer.php:68
 #: concrete/models/attribute/types/address/form.php:56
 msgid "Country"
 msgstr "מדינה"
 
-#: concrete/models/attribute/types/address/composer.php:73
+#: concrete/models/attribute/types/address/composer.php:75
 #: concrete/models/attribute/types/address/form.php:61
 msgid "Postal Code"
 msgstr "מיקוד"
