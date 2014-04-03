@@ -15,8 +15,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-03-31 22:00+0000\n"
-"PO-Revision-Date: 2014-04-01 16:40+0000\n"
+"POT-Creation-Date: 2014-04-01 22:00+0000\n"
+"PO-Revision-Date: 2014-04-02 09:01+0000\n"
 "Last-Translator: Torsten Silbermann <mail@tsilbermann.de>\n"
 "Language-Team: German (Germany) (http://www.transifex.com/projects/p/concrete5/language/de_DE/)\n"
 "MIME-Version: 1.0\n"
@@ -232,19 +232,28 @@ msgstr "Remote Authentifizierung - Ungültige Aktion"
 msgid "Unable to search file sets."
 msgstr "Dateialben konnten nicht durchsucht werden."
 
-#: concrete/tools/files/download.php:39
+#: concrete/tools/files/download.php:40
 msgid "None of the requested files could be found."
 msgstr "Keine der angeforderten Dateien konnte gefunden werden."
 
-#: concrete/tools/files/download.php:50
+#: concrete/core/models/file_list.php:117 concrete/tools/files/download.php:46
+msgid "Could not open with ZipArchive::CREATE"
+msgstr "Datei konnte nicht mit ZipArchive::CREATE geöffnet werden"
+
+#: concrete/tools/files/download.php:61
+#, php-format
+msgid "External zip failed. Error description: %s"
+msgstr "Die ZIP-Komprimierung schlug fehl. Fehlermeldung: %s"
+
+#: concrete/tools/files/download.php:72
 msgid "The requested file couldn't be found."
 msgstr "Die angeforderte Datei konnte nicht gefunden werden."
 
-#: concrete/tools/files/download.php:52
+#: concrete/tools/files/download.php:74
 msgid "The requested file is not valid."
 msgstr "Die angeforderte Datei ist nicht gültig."
 
-#: concrete/tools/files/download.php:54
+#: concrete/tools/files/download.php:76
 msgid "An unexpected error occurred while looking for the requested file"
 msgstr "Bei der Suche nach der angeforderten Datei ist ein Fehler aufgetreten."
 
@@ -270,8 +279,11 @@ msgstr "Von entfernter URL hinzufügen"
 #: concrete/blocks/image/tools/crop_image.php:5
 #: concrete/tools/files/import.php:10
 #: concrete/tools/files/importers/incoming.php:7
-#: concrete/tools/files/importers/remote.php:9
-#: concrete/tools/files/importers/single.php:11
+#: concrete/tools/files/importers/incoming.php:20
+#: concrete/tools/files/importers/remote.php:8
+#: concrete/tools/files/importers/remote.php:16
+#: concrete/tools/files/importers/single.php:10
+#: concrete/tools/files/importers/single.php:21
 msgid "Unable to add files."
 msgstr "Dateien konnten nicht hinzugefügt werden."
 
@@ -783,9 +795,9 @@ msgstr "Andere"
 msgid "Files in no sets."
 msgstr "Dateien ohne Albenzugehörigkeit"
 
-#: concrete/tools/files/importers/incoming.php:66
-#: concrete/tools/files/importers/remote.php:146
-#: concrete/tools/files/importers/single.php:61
+#: concrete/tools/files/importers/incoming.php:70
+#: concrete/tools/files/importers/remote.php:149
+#: concrete/tools/files/importers/single.php:64
 msgid "Upload Error"
 msgstr "Fehler beim Upload"
 
@@ -793,31 +805,31 @@ msgstr "Fehler beim Upload"
 msgid "Upload Complete."
 msgstr "Hochladen beendet"
 
-#: concrete/tools/files/importers/incoming.php:55
+#: concrete/tools/files/importers/incoming.php:59
 msgid "You must select at least one file."
 msgstr "Sie müssen eine Datei auswählen."
 
-#: concrete/tools/files/importers/remote.php:34
+#: concrete/tools/files/importers/remote.php:37
 msgid "Remote URL import requires the iconv extension enabled on your server."
 msgstr "Importieren von entfernten URLs setzt die PHP-Erweiterung iconv voraus."
 
-#: concrete/tools/files/importers/remote.php:50
+#: concrete/tools/files/importers/remote.php:53
 msgid " is not a valid URL."
 msgstr " ist keine gültige Adresse."
 
-#: concrete/tools/files/importers/remote.php:60
+#: concrete/tools/files/importers/remote.php:63
 msgid "You must specify at least one valid URL."
 msgstr "Es muss mindenstens eine gültige URL angegeben werden."
 
-#: concrete/tools/files/importers/remote.php:89
+#: concrete/tools/files/importers/remote.php:92
 msgid "Unknown mime-type: "
 msgstr "Unbekannter Mime-Typ:"
 
-#: concrete/tools/files/importers/remote.php:131
+#: concrete/tools/files/importers/remote.php:134
 msgid "Could not determine the name of the file at "
 msgstr "Konnte den Namen der Datei nicht finden bei "
 
-#: concrete/tools/files/importers/remote.php:135
+#: concrete/tools/files/importers/remote.php:138
 msgid "There was an error downloading "
 msgstr "Beim Herunterladen ist ein Fehler aufgetreten."
 
@@ -4766,10 +4778,6 @@ msgstr "bis"
 msgid " on "
 msgstr " am "
 
-#: concrete/core/models/file_list.php:117
-msgid "Could not open with ZipArchive::CREATE"
-msgstr "Datei konnte nicht mit ZipArchive::CREATE geöffnet werden"
-
 #: concrete/core/models/file_list.php:131
 #, php-format
 msgid "Failed to create zip file as \"%s\": %s"
@@ -4855,11 +4863,11 @@ msgstr "Unbekannter Benutzer"
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "Seite \"%s\" im Pfad \"%s\" erfolgreich gelöscht"
 
-#: concrete/core/models/page.php:1629 concrete/core/models/page.php:1687
+#: concrete/core/models/page.php:1629 concrete/core/models/page.php:1691
 msgid "Page Action"
 msgstr "Seitenaktion"
 
-#: concrete/core/models/page.php:1687
+#: concrete/core/models/page.php:1691
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "Seite\"%s\" im Pfad \"%s\" in den Papierkorb verschoben"
@@ -5086,29 +5094,29 @@ msgid ""
 "\n"
 msgstr "Am %s hat der Benutzer %s die folgende Anfrage freigegeben: \n\n---\n%s\n---\n\n"
 
-#: concrete/core/models/workflow/request/requests/move_page.php:39
+#: concrete/core/models/workflow/request/requests/move_page.php:44
 #, php-format
 msgid "\"%s\" is pending a move to beneath \"%s\". Source Page: %s. Target Page: %s."
 msgstr "\"%s\" ist für eine Verschiebung nach \"%s\" vorgemerkt. Quellseite: %s. Zielseite: %s."
 
-#: concrete/core/models/workflow/request/requests/move_page.php:40
+#: concrete/core/models/workflow/request/requests/move_page.php:45
 #, php-format
 msgid ""
 "This page is pending a move beneath <strong><a href=\"%s\">%s</a></strong>. "
 msgstr "Diese Seite ist für eine Verschiebung nach <strong><a href=\"%s\">%s</a></strong> vorgemerkt. "
 
-#: concrete/core/models/workflow/request/requests/move_page.php:41
+#: concrete/core/models/workflow/request/requests/move_page.php:46
 #, php-format
 msgid ""
 "<a href=\"%s\">%s</a> is pending a move beneath <strong><a "
 "href=\"%s\">%s</a></strong>. "
 msgstr "<a href=\"%s\">%s</a> ist für eine Verschiebung nach <strong><a href=\"%s\">%s</a></strong> vorgemerkt. "
 
-#: concrete/core/models/workflow/request/requests/move_page.php:42
+#: concrete/core/models/workflow/request/requests/move_page.php:47
 msgid "Pending Move"
 msgstr "Verschieben steht aus"
 
-#: concrete/core/models/workflow/request/requests/move_page.php:59
+#: concrete/core/models/workflow/request/requests/move_page.php:64
 msgid "Approve Move"
 msgstr "Freigabe für das Verschieben erteilen"
 

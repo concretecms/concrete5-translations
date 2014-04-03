@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-03-26 23:00+0000\n"
-"PO-Revision-Date: 2014-03-27 08:45+0000\n"
+"POT-Creation-Date: 2014-04-01 22:00+0000\n"
+"PO-Revision-Date: 2014-04-02 08:45+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Chinese (Taiwan) (http://www.transifex.com/projects/p/concrete5/language/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -225,19 +225,28 @@ msgstr "無效的動作"
 msgid "Unable to search file sets."
 msgstr "無法搜尋檔案組合"
 
-#: concrete/tools/files/download.php:39
+#: concrete/tools/files/download.php:40
 msgid "None of the requested files could be found."
 msgstr "沒有一個要求的檔案可被發現."
 
-#: concrete/tools/files/download.php:50
+#: concrete/core/models/file_list.php:117 concrete/tools/files/download.php:46
+msgid "Could not open with ZipArchive::CREATE"
+msgstr "無法用 ZipArchive 開啟:: CREATE"
+
+#: concrete/tools/files/download.php:61
+#, php-format
+msgid "External zip failed. Error description: %s"
+msgstr ""
+
+#: concrete/tools/files/download.php:72
 msgid "The requested file couldn't be found."
 msgstr "要求的檔案無法被發現."
 
-#: concrete/tools/files/download.php:52
+#: concrete/tools/files/download.php:74
 msgid "The requested file is not valid."
 msgstr "要求的檔案是無效的."
 
-#: concrete/tools/files/download.php:54
+#: concrete/tools/files/download.php:76
 msgid "An unexpected error occurred while looking for the requested file"
 msgstr "當尋找要求的檔案時發生了一個非預期的錯誤."
 
@@ -263,8 +272,11 @@ msgstr "由遠端URL 加入"
 #: concrete/blocks/image/tools/crop_image.php:5
 #: concrete/tools/files/import.php:10
 #: concrete/tools/files/importers/incoming.php:7
-#: concrete/tools/files/importers/remote.php:9
-#: concrete/tools/files/importers/single.php:11
+#: concrete/tools/files/importers/incoming.php:20
+#: concrete/tools/files/importers/remote.php:8
+#: concrete/tools/files/importers/remote.php:16
+#: concrete/tools/files/importers/single.php:10
+#: concrete/tools/files/importers/single.php:21
 msgid "Unable to add files."
 msgstr "無法加入文件"
 
@@ -776,9 +788,9 @@ msgstr "其它"
 msgid "Files in no sets."
 msgstr "不屬任何集合的檔案"
 
-#: concrete/tools/files/importers/incoming.php:66
-#: concrete/tools/files/importers/remote.php:146
-#: concrete/tools/files/importers/single.php:61
+#: concrete/tools/files/importers/incoming.php:70
+#: concrete/tools/files/importers/remote.php:149
+#: concrete/tools/files/importers/single.php:64
 msgid "Upload Error"
 msgstr "上傳錯誤"
 
@@ -786,31 +798,31 @@ msgstr "上傳錯誤"
 msgid "Upload Complete."
 msgstr "上傳完成."
 
-#: concrete/tools/files/importers/incoming.php:55
+#: concrete/tools/files/importers/incoming.php:59
 msgid "You must select at least one file."
 msgstr "您必須選擇至少一個檔案"
 
-#: concrete/tools/files/importers/remote.php:34
+#: concrete/tools/files/importers/remote.php:37
 msgid "Remote URL import requires the iconv extension enabled on your server."
 msgstr "您的伺服器必先啟用iconv 擴件以匯入遠端網址."
 
-#: concrete/tools/files/importers/remote.php:50
+#: concrete/tools/files/importers/remote.php:53
 msgid " is not a valid URL."
 msgstr "不是一個有效的網址"
 
-#: concrete/tools/files/importers/remote.php:60
+#: concrete/tools/files/importers/remote.php:63
 msgid "You must specify at least one valid URL."
 msgstr "你必須至少指定一個有效的網址"
 
-#: concrete/tools/files/importers/remote.php:89
+#: concrete/tools/files/importers/remote.php:92
 msgid "Unknown mime-type: "
 msgstr "未知的檔案類型:"
 
-#: concrete/tools/files/importers/remote.php:131
+#: concrete/tools/files/importers/remote.php:134
 msgid "Could not determine the name of the file at "
 msgstr "無法判定此檔案的名字: "
 
-#: concrete/tools/files/importers/remote.php:135
+#: concrete/tools/files/importers/remote.php:138
 msgid "There was an error downloading "
 msgstr "下載時發生錯誤"
 
@@ -4752,10 +4764,6 @@ msgstr "到"
 msgid " on "
 msgstr "於"
 
-#: concrete/core/models/file_list.php:117
-msgid "Could not open with ZipArchive::CREATE"
-msgstr "無法用 ZipArchive 開啟:: CREATE"
-
 #: concrete/core/models/file_list.php:131
 #, php-format
 msgid "Failed to create zip file as \"%s\": %s"
@@ -4841,11 +4849,11 @@ msgstr "未知的使用者"
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "頁面 \"%s\" 於路徑 \"%s\" 已刪除"
 
-#: concrete/core/models/page.php:1629 concrete/core/models/page.php:1687
+#: concrete/core/models/page.php:1629 concrete/core/models/page.php:1691
 msgid "Page Action"
 msgstr "頁面動作"
 
-#: concrete/core/models/page.php:1687
+#: concrete/core/models/page.php:1691
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "頁面 \"%s\" 於路徑 \"%s\" 已移動到垃圾桶"
@@ -5072,29 +5080,29 @@ msgid ""
 "\n"
 msgstr "在 %s, 使用者 %s 已核准以下的需求: \n\n\n\n---\n\n%s\n\n---\n\n\n"
 
-#: concrete/core/models/workflow/request/requests/move_page.php:39
+#: concrete/core/models/workflow/request/requests/move_page.php:44
 #, php-format
 msgid "\"%s\" is pending a move to beneath \"%s\". Source Page: %s. Target Page: %s."
 msgstr "\"%s\" 被擱置移動到 \"%s\"之下. 來源頁面: %s. 目標頁面: %s."
 
-#: concrete/core/models/workflow/request/requests/move_page.php:40
+#: concrete/core/models/workflow/request/requests/move_page.php:45
 #, php-format
 msgid ""
 "This page is pending a move beneath <strong><a href=\"%s\">%s</a></strong>. "
 msgstr "此頁面被擱置移動到 <strong><a href=\"%s\">%s</a></strong>之下."
 
-#: concrete/core/models/workflow/request/requests/move_page.php:41
+#: concrete/core/models/workflow/request/requests/move_page.php:46
 #, php-format
 msgid ""
 "<a href=\"%s\">%s</a> is pending a move beneath <strong><a "
 "href=\"%s\">%s</a></strong>. "
 msgstr "<a href=\"%s\">%s</a>被擱置移動到 <strong><a href=\"%s\">%s</a></strong>之下."
 
-#: concrete/core/models/workflow/request/requests/move_page.php:42
+#: concrete/core/models/workflow/request/requests/move_page.php:47
 msgid "Pending Move"
 msgstr "擱置移動"
 
-#: concrete/core/models/workflow/request/requests/move_page.php:59
+#: concrete/core/models/workflow/request/requests/move_page.php:64
 msgid "Approve Move"
 msgstr "核准移動"
 

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-03-26 23:00+0000\n"
-"PO-Revision-Date: 2014-03-27 08:45+0000\n"
+"POT-Creation-Date: 2014-04-01 22:00+0000\n"
+"PO-Revision-Date: 2014-04-02 08:45+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Persian (Iran) (http://www.transifex.com/projects/p/concrete5/language/fa_IR/)\n"
 "MIME-Version: 1.0\n"
@@ -224,19 +224,28 @@ msgstr "عمل نامعتبر است"
 msgid "Unable to search file sets."
 msgstr "قادر به جستجو در مجموعه فایل نیست"
 
-#: concrete/tools/files/download.php:39
+#: concrete/tools/files/download.php:40
 msgid "None of the requested files could be found."
 msgstr ""
 
-#: concrete/tools/files/download.php:50
+#: concrete/core/models/file_list.php:117 concrete/tools/files/download.php:46
+msgid "Could not open with ZipArchive::CREATE"
+msgstr "آرشیو فایل فشرده باز نمیشود::ایجاد نمایید"
+
+#: concrete/tools/files/download.php:61
+#, php-format
+msgid "External zip failed. Error description: %s"
+msgstr ""
+
+#: concrete/tools/files/download.php:72
 msgid "The requested file couldn't be found."
 msgstr ""
 
-#: concrete/tools/files/download.php:52
+#: concrete/tools/files/download.php:74
 msgid "The requested file is not valid."
 msgstr ""
 
-#: concrete/tools/files/download.php:54
+#: concrete/tools/files/download.php:76
 msgid "An unexpected error occurred while looking for the requested file"
 msgstr ""
 
@@ -262,8 +271,11 @@ msgstr "افزودن به از URL از راه دور"
 #: concrete/blocks/image/tools/crop_image.php:5
 #: concrete/tools/files/import.php:10
 #: concrete/tools/files/importers/incoming.php:7
-#: concrete/tools/files/importers/remote.php:9
-#: concrete/tools/files/importers/single.php:11
+#: concrete/tools/files/importers/incoming.php:20
+#: concrete/tools/files/importers/remote.php:8
+#: concrete/tools/files/importers/remote.php:16
+#: concrete/tools/files/importers/single.php:10
+#: concrete/tools/files/importers/single.php:21
 msgid "Unable to add files."
 msgstr "افزودن تصویر غیر فعال است"
 
@@ -775,9 +787,9 @@ msgstr "دیگر"
 msgid "Files in no sets."
 msgstr "فایل ها در هیچ مجموعه."
 
-#: concrete/tools/files/importers/incoming.php:66
-#: concrete/tools/files/importers/remote.php:146
-#: concrete/tools/files/importers/single.php:61
+#: concrete/tools/files/importers/incoming.php:70
+#: concrete/tools/files/importers/remote.php:149
+#: concrete/tools/files/importers/single.php:64
 msgid "Upload Error"
 msgstr "خطای بارگذاری"
 
@@ -785,31 +797,31 @@ msgstr "خطای بارگذاری"
 msgid "Upload Complete."
 msgstr "بارگذاری "
 
-#: concrete/tools/files/importers/incoming.php:55
+#: concrete/tools/files/importers/incoming.php:59
 msgid "You must select at least one file."
 msgstr "شما باید حداقل یک فایل انتخاب کنید."
 
-#: concrete/tools/files/importers/remote.php:34
+#: concrete/tools/files/importers/remote.php:37
 msgid "Remote URL import requires the iconv extension enabled on your server."
 msgstr "واردات URL از راه دور نیاز به فرمت iconv را بر روی سرور خود فعال کنید."
 
-#: concrete/tools/files/importers/remote.php:50
+#: concrete/tools/files/importers/remote.php:53
 msgid " is not a valid URL."
 msgstr "آدرس معتبر نیست"
 
-#: concrete/tools/files/importers/remote.php:60
+#: concrete/tools/files/importers/remote.php:63
 msgid "You must specify at least one valid URL."
 msgstr "شما باید حداقل یک URL معتبر را مشخص کنید."
 
-#: concrete/tools/files/importers/remote.php:89
+#: concrete/tools/files/importers/remote.php:92
 msgid "Unknown mime-type: "
 msgstr "MIME ناشناخته از نوع:"
 
-#: concrete/tools/files/importers/remote.php:131
+#: concrete/tools/files/importers/remote.php:134
 msgid "Could not determine the name of the file at "
 msgstr "آیا نام فایل مشخص نیست"
 
-#: concrete/tools/files/importers/remote.php:135
+#: concrete/tools/files/importers/remote.php:138
 msgid "There was an error downloading "
 msgstr "خطا در دریافت"
 
@@ -4751,10 +4763,6 @@ msgstr "به"
 msgid " on "
 msgstr "در"
 
-#: concrete/core/models/file_list.php:117
-msgid "Could not open with ZipArchive::CREATE"
-msgstr "آرشیو فایل فشرده باز نمیشود::ایجاد نمایید"
-
 #: concrete/core/models/file_list.php:131
 #, php-format
 msgid "Failed to create zip file as \"%s\": %s"
@@ -4840,11 +4848,11 @@ msgstr "کاربر ناشناس"
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "صفحه \"%s\" در مسیر \"%s\" حذف شد."
 
-#: concrete/core/models/page.php:1629 concrete/core/models/page.php:1687
+#: concrete/core/models/page.php:1629 concrete/core/models/page.php:1691
 msgid "Page Action"
 msgstr "عمل صفحه"
 
-#: concrete/core/models/page.php:1687
+#: concrete/core/models/page.php:1691
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "صفحه \"%s\" در مسیر \"%s\" به سطل زباله منتقل شد."
@@ -5071,29 +5079,29 @@ msgid ""
 "\n"
 msgstr "در %s, کاربر %s را تایید درخواست زیر: \n\n ---\n %s\n ---\n\n\n"
 
-#: concrete/core/models/workflow/request/requests/move_page.php:39
+#: concrete/core/models/workflow/request/requests/move_page.php:44
 #, php-format
 msgid "\"%s\" is pending a move to beneath \"%s\". Source Page: %s. Target Page: %s."
 msgstr "\"%s\" در انتظار حرکت به زیر \"%s را\". منبع:%s را. هدف:%s را."
 
-#: concrete/core/models/workflow/request/requests/move_page.php:40
+#: concrete/core/models/workflow/request/requests/move_page.php:45
 #, php-format
 msgid ""
 "This page is pending a move beneath <strong><a href=\"%s\">%s</a></strong>. "
 msgstr "این صفحه در حال تعلیق است حرکت در زیر<strong><a href=\"%s\">%s</a></strong>."
 
-#: concrete/core/models/workflow/request/requests/move_page.php:41
+#: concrete/core/models/workflow/request/requests/move_page.php:46
 #, php-format
 msgid ""
 "<a href=\"%s\">%s</a> is pending a move beneath <strong><a "
 "href=\"%s\">%s</a></strong>. "
 msgstr "<a href=\"%s\">%s</a> در انتظار یک حرکت زیر <strong><a href=\"%s\">%s</a></strong>."
 
-#: concrete/core/models/workflow/request/requests/move_page.php:42
+#: concrete/core/models/workflow/request/requests/move_page.php:47
 msgid "Pending Move"
 msgstr "در انتظار حرکت"
 
-#: concrete/core/models/workflow/request/requests/move_page.php:59
+#: concrete/core/models/workflow/request/requests/move_page.php:64
 msgid "Approve Move"
 msgstr "تایید جابجایی"
 

@@ -11,9 +11,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-03-26 23:00+0000\n"
-"PO-Revision-Date: 2014-03-27 09:43+0000\n"
-"Last-Translator: Michele Locati <michele@locati.it>\n"
+"POT-Creation-Date: 2014-04-01 22:00+0000\n"
+"PO-Revision-Date: 2014-04-02 12:10+0000\n"
+"Last-Translator: fanmac <mwsoffice@gmail.com>\n"
 "Language-Team: Romanian (Romania) (http://www.transifex.com/projects/p/concrete5/language/ro_RO/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -228,19 +228,28 @@ msgstr "ACTIUNE INVALIDA"
 msgid "Unable to search file sets."
 msgstr ""
 
-#: concrete/tools/files/download.php:39
+#: concrete/tools/files/download.php:40
 msgid "None of the requested files could be found."
+msgstr "Nici unul din fisiere nu exista."
+
+#: concrete/core/models/file_list.php:117 concrete/tools/files/download.php:46
+msgid "Could not open with ZipArchive::CREATE"
 msgstr ""
 
-#: concrete/tools/files/download.php:50
+#: concrete/tools/files/download.php:61
+#, php-format
+msgid "External zip failed. Error description: %s"
+msgstr ""
+
+#: concrete/tools/files/download.php:72
 msgid "The requested file couldn't be found."
-msgstr ""
+msgstr "Fisierul cerut nu poate fi gasit."
 
-#: concrete/tools/files/download.php:52
+#: concrete/tools/files/download.php:74
 msgid "The requested file is not valid."
-msgstr ""
+msgstr "Fisierul cerut nu este valid."
 
-#: concrete/tools/files/download.php:54
+#: concrete/tools/files/download.php:76
 msgid "An unexpected error occurred while looking for the requested file"
 msgstr ""
 
@@ -266,8 +275,11 @@ msgstr "Adaugare din URL"
 #: concrete/blocks/image/tools/crop_image.php:5
 #: concrete/tools/files/import.php:10
 #: concrete/tools/files/importers/incoming.php:7
-#: concrete/tools/files/importers/remote.php:9
-#: concrete/tools/files/importers/single.php:11
+#: concrete/tools/files/importers/incoming.php:20
+#: concrete/tools/files/importers/remote.php:8
+#: concrete/tools/files/importers/remote.php:16
+#: concrete/tools/files/importers/single.php:10
+#: concrete/tools/files/importers/single.php:21
 msgid "Unable to add files."
 msgstr "Nu se pot adauga fisiere."
 
@@ -779,9 +791,9 @@ msgstr "Altele"
 msgid "Files in no sets."
 msgstr "Fisiere care nu sunt in seturi."
 
-#: concrete/tools/files/importers/incoming.php:66
-#: concrete/tools/files/importers/remote.php:146
-#: concrete/tools/files/importers/single.php:61
+#: concrete/tools/files/importers/incoming.php:70
+#: concrete/tools/files/importers/remote.php:149
+#: concrete/tools/files/importers/single.php:64
 msgid "Upload Error"
 msgstr "Eroare la upload"
 
@@ -789,31 +801,31 @@ msgstr "Eroare la upload"
 msgid "Upload Complete."
 msgstr "Upload finalizat."
 
-#: concrete/tools/files/importers/incoming.php:55
+#: concrete/tools/files/importers/incoming.php:59
 msgid "You must select at least one file."
 msgstr "Trebuie sa selectati cel putin un fisier."
 
-#: concrete/tools/files/importers/remote.php:34
+#: concrete/tools/files/importers/remote.php:37
 msgid "Remote URL import requires the iconv extension enabled on your server."
 msgstr "Importul din URL necesita extensia iconv sa fie activata pe server."
 
-#: concrete/tools/files/importers/remote.php:50
+#: concrete/tools/files/importers/remote.php:53
 msgid " is not a valid URL."
 msgstr "nu este un URL valid."
 
-#: concrete/tools/files/importers/remote.php:60
+#: concrete/tools/files/importers/remote.php:63
 msgid "You must specify at least one valid URL."
 msgstr "Trebuie sa specificati cel putin un URL valid."
 
-#: concrete/tools/files/importers/remote.php:89
+#: concrete/tools/files/importers/remote.php:92
 msgid "Unknown mime-type: "
 msgstr "Mime-type necunoscut:"
 
-#: concrete/tools/files/importers/remote.php:131
+#: concrete/tools/files/importers/remote.php:134
 msgid "Could not determine the name of the file at "
 msgstr "Nu am putut determina numele fisierului la"
 
-#: concrete/tools/files/importers/remote.php:135
+#: concrete/tools/files/importers/remote.php:138
 msgid "There was an error downloading "
 msgstr "A aparut o eroare la descarcare"
 
@@ -4769,10 +4781,6 @@ msgstr "la"
 msgid " on "
 msgstr "la"
 
-#: concrete/core/models/file_list.php:117
-msgid "Could not open with ZipArchive::CREATE"
-msgstr ""
-
 #: concrete/core/models/file_list.php:131
 #, php-format
 msgid "Failed to create zip file as \"%s\": %s"
@@ -4858,11 +4866,11 @@ msgstr "Utilizator necunoscut"
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "Pagina \"%s\" din calea \"%s\" a fost stearsa."
 
-#: concrete/core/models/page.php:1629 concrete/core/models/page.php:1687
+#: concrete/core/models/page.php:1629 concrete/core/models/page.php:1691
 msgid "Page Action"
 msgstr "Actiuni Pagina"
 
-#: concrete/core/models/page.php:1687
+#: concrete/core/models/page.php:1691
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr ""
@@ -5089,29 +5097,29 @@ msgid ""
 "\n"
 msgstr "La %s, utilizatorul %s a aprobat urmatoarea cerere: \n\n---\n%s\n---\n\n"
 
-#: concrete/core/models/workflow/request/requests/move_page.php:39
+#: concrete/core/models/workflow/request/requests/move_page.php:44
 #, php-format
 msgid "\"%s\" is pending a move to beneath \"%s\". Source Page: %s. Target Page: %s."
 msgstr "\"%s\" asteapta mutarea sub \"%s\". Pagina sursa: %s. Pagina destinatie: %s."
 
-#: concrete/core/models/workflow/request/requests/move_page.php:40
+#: concrete/core/models/workflow/request/requests/move_page.php:45
 #, php-format
 msgid ""
 "This page is pending a move beneath <strong><a href=\"%s\">%s</a></strong>. "
 msgstr "Aceasta pagina asteapta mutarea sub <strong><a href=\"%s\">%s</a></strong>. "
 
-#: concrete/core/models/workflow/request/requests/move_page.php:41
+#: concrete/core/models/workflow/request/requests/move_page.php:46
 #, php-format
 msgid ""
 "<a href=\"%s\">%s</a> is pending a move beneath <strong><a "
 "href=\"%s\">%s</a></strong>. "
 msgstr "<a href=\"%s\">%s</a> asteapta mutarea sub <strong><a href=\"%s\">%s</a></strong>. "
 
-#: concrete/core/models/workflow/request/requests/move_page.php:42
+#: concrete/core/models/workflow/request/requests/move_page.php:47
 msgid "Pending Move"
 msgstr "Asteapta mutarea"
 
-#: concrete/core/models/workflow/request/requests/move_page.php:59
+#: concrete/core/models/workflow/request/requests/move_page.php:64
 msgid "Approve Move"
 msgstr "Aprobare mutare"
 
@@ -5786,31 +5794,31 @@ msgid "%s byte"
 msgid_plural "%s bytes"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
+msgstr[2] "%s bytes"
 
 #. %s is a number, KB means Kilobyte
 #: concrete/core/helpers/number.php:119
 #, php-format
 msgid "%s KB"
-msgstr ""
+msgstr "%s KB"
 
 #. %s is a number, MB means Megabyte
 #: concrete/core/helpers/number.php:123
 #, php-format
 msgid "%s MB"
-msgstr ""
+msgstr "%s MB"
 
 #. %s is a number, GB means Gigabyte
 #: concrete/core/helpers/number.php:127
 #, php-format
 msgid "%s GB"
-msgstr ""
+msgstr "%s GB"
 
 #. %s is a number, TB means Terabyte
 #: concrete/core/helpers/number.php:129
 #, php-format
 msgid "%s TB"
-msgstr ""
+msgstr "%s TB"
 
 #: concrete/core/helpers/validation/ip.php:94
 msgid ""
@@ -10405,11 +10413,11 @@ msgstr "Nu puteti accesa aceste permisiuni."
 
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:44
 msgid "Block"
-msgstr ""
+msgstr "Block"
 
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:45
 msgid "Paste From Clipboard"
-msgstr ""
+msgstr "Lipire din Clipboard"
 
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:60
 msgid "Stack Permissions"
@@ -10440,7 +10448,7 @@ msgstr ""
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:198
 #, php-format
 msgid "Rename %s"
-msgstr ""
+msgstr "Redenumeste %s"
 
 #: concrete/config/install/base/dashboard.xml:322
 #: concrete/config/install/base/login_registration.xml:7
@@ -11984,12 +11992,12 @@ msgstr "Rezultatele ultimei rulari"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:63
 msgid "Reset All Jobs"
-msgstr ""
+msgstr "Resetare toate joburile"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:76
 #, php-format
 msgid "Running since %s"
-msgstr ""
+msgstr "Ruleaza din %s"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:87
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:401
