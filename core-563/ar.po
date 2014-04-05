@@ -5,9 +5,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-03-14 04:47+0000\n"
-"PO-Revision-Date: 2014-03-15 11:03+0000\n"
-"Last-Translator: Ossama Khayat <okhayat@gmail.com>\n"
+"POT-Creation-Date: 2014-04-04 05:51+0000\n"
+"PO-Revision-Date: 2014-04-04 06:00+0000\n"
+"Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Arabic (http://www.transifex.com/projects/p/concrete5/language/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -32,7 +32,7 @@ msgstr ""
 #: concrete/tools/pages/bulk_metadata_update.php:6
 #: concrete/tools/pages/customize_search_columns.php:7
 #: concrete/tools/pages/delete.php:7 concrete/tools/pages/design.php:7
-#: concrete/tools/pages/intelligent_search.php:7
+#: concrete/tools/pages/intelligent_search.php:6
 #: concrete/tools/pages/permissions.php:7
 #: concrete/tools/pages/permissions_access.php:7
 #: concrete/tools/pages/search_dialog.php:6
@@ -185,7 +185,6 @@ msgstr "احفظ"
 #: concrete/tools/dashboard/attribute_set_order_update.php:11
 #: concrete/tools/dashboard/attribute_sets_update.php:14
 #: concrete/tools/dashboard/block_type_order_update.php:11
-#: concrete/tools/dashboard/chart_handler.php:8
 #: concrete/tools/dashboard/scrapbook_services.php:7
 #: concrete/tools/dashboard/sitemap_copy_all.php:5
 #: concrete/tools/dashboard/sitemap_data.php:6
@@ -223,19 +222,28 @@ msgstr "إجراء غير صالح"
 msgid "Unable to search file sets."
 msgstr "تعذر البحث في مجموعات الملفات."
 
-#: concrete/tools/files/download.php:39
+#: concrete/tools/files/download.php:40
 msgid "None of the requested files could be found."
 msgstr "تعذر العثور على أي من الملفات المطلوبة"
 
-#: concrete/tools/files/download.php:50
+#: concrete/core/models/file_list.php:117 concrete/tools/files/download.php:46
+msgid "Could not open with ZipArchive::CREATE"
+msgstr "تعذر فتح الملف باستخدام ZipArchive::CREATE"
+
+#: concrete/tools/files/download.php:61
+#, php-format
+msgid "External zip failed. Error description: %s"
+msgstr ""
+
+#: concrete/tools/files/download.php:72
 msgid "The requested file couldn't be found."
 msgstr "تعذر العثور على الملف المطلوب."
 
-#: concrete/tools/files/download.php:52
+#: concrete/tools/files/download.php:74
 msgid "The requested file is not valid."
 msgstr "الملف المطلوب غير صالح."
 
-#: concrete/tools/files/download.php:54
+#: concrete/tools/files/download.php:76
 msgid "An unexpected error occurred while looking for the requested file"
 msgstr "حدث خطأ غير متوقع أثناء البحث عن الملف المطلوب."
 
@@ -261,8 +269,11 @@ msgstr "أضف من عنوان URL خارجي"
 #: concrete/blocks/image/tools/crop_image.php:5
 #: concrete/tools/files/import.php:10
 #: concrete/tools/files/importers/incoming.php:7
-#: concrete/tools/files/importers/remote.php:9
-#: concrete/tools/files/importers/single.php:11
+#: concrete/tools/files/importers/incoming.php:20
+#: concrete/tools/files/importers/remote.php:8
+#: concrete/tools/files/importers/remote.php:16
+#: concrete/tools/files/importers/single.php:10
+#: concrete/tools/files/importers/single.php:21
 msgid "Unable to add files."
 msgstr "تعذرت إضافة الملفات."
 
@@ -774,9 +785,9 @@ msgstr "آخَر"
 msgid "Files in no sets."
 msgstr "ملفات لا تنتمي لأي مجموعة"
 
-#: concrete/tools/files/importers/incoming.php:66
-#: concrete/tools/files/importers/remote.php:146
-#: concrete/tools/files/importers/single.php:61
+#: concrete/tools/files/importers/incoming.php:70
+#: concrete/tools/files/importers/remote.php:149
+#: concrete/tools/files/importers/single.php:64
 msgid "Upload Error"
 msgstr "خطأ في الرفع"
 
@@ -784,31 +795,31 @@ msgstr "خطأ في الرفع"
 msgid "Upload Complete."
 msgstr "اكتمل رفع الملفات."
 
-#: concrete/tools/files/importers/incoming.php:55
+#: concrete/tools/files/importers/incoming.php:59
 msgid "You must select at least one file."
 msgstr "يجب أن تختار ملفاً واحداً على الأقل."
 
-#: concrete/tools/files/importers/remote.php:34
+#: concrete/tools/files/importers/remote.php:37
 msgid "Remote URL import requires the iconv extension enabled on your server."
 msgstr "استيراد الملفات الخارجية يتطلب وجود وتفعيل iconv على خادمك."
 
-#: concrete/tools/files/importers/remote.php:50
+#: concrete/tools/files/importers/remote.php:53
 msgid " is not a valid URL."
 msgstr " ليس عنوان URL صحيح."
 
-#: concrete/tools/files/importers/remote.php:60
+#: concrete/tools/files/importers/remote.php:63
 msgid "You must specify at least one valid URL."
 msgstr "يجب أن تحدد عنوان URL واحد صحيح على الأقل."
 
-#: concrete/tools/files/importers/remote.php:89
+#: concrete/tools/files/importers/remote.php:92
 msgid "Unknown mime-type: "
 msgstr "نوع ملف (mime) مجهول:"
 
-#: concrete/tools/files/importers/remote.php:131
+#: concrete/tools/files/importers/remote.php:134
 msgid "Could not determine the name of the file at "
 msgstr "تعذر التعرف على اسم الملف في "
 
-#: concrete/tools/files/importers/remote.php:135
+#: concrete/tools/files/importers/remote.php:138
 msgid "There was an error downloading "
 msgstr "حدث خطأ أثناء تنزيل "
 
@@ -1131,16 +1142,6 @@ msgstr "السمة غير موجودة في %s"
 #: concrete/tools/themes/preview_external.php:17
 msgid "curl must be enabled to preview external themes."
 msgstr "يجب تفعيل curl لمعاينة السمات الخارجية."
-
-#: concrete/core/controllers/single_pages/dashboard/reports/statistics.php:44
-#: concrete/elements/dashboard/notification_list.php:44
-#: concrete/tools/dashboard/chart_handler.php:22
-msgid "Today"
-msgstr "اليوم"
-
-#: concrete/tools/dashboard/chart_handler.php:52
-msgid "Views"
-msgstr "الزيارات"
 
 #: concrete/tools/dashboard/sitemap_drag_request.php:11
 msgid "An unspecified error has occurred."
@@ -2286,7 +2287,7 @@ msgstr "أنواع الصفحات"
 msgid "Editing"
 msgstr "قيد التعديل"
 
-#: concrete/themes/dashboard/elements/header.php:113
+#: concrete/themes/dashboard/elements/header.php:114
 #: concrete/tools/page_controls_menu_js.php:78
 #, php-format
 msgid "Powered by <a href=\"%s\">concrete5</a>."
@@ -2298,18 +2299,18 @@ msgstr "مبني على <a href=\"%s\">concrete5</a>."
 #: concrete/config/install/disabled/standard/content.xml:16
 #: concrete/single_pages/dashboard/system/basics/interface.php:10
 #: concrete/single_pages/dashboard/view.php:3
-#: concrete/themes/dashboard/elements/header.php:118
+#: concrete/themes/dashboard/elements/header.php:119
 #: concrete/tools/page_controls_menu_js.php:96
 msgid "Dashboard"
 msgstr "لوحة التحكم"
 
-#: concrete/themes/dashboard/elements/header.php:119
+#: concrete/themes/dashboard/elements/header.php:120
 #: concrete/tools/page_controls_menu_js.php:98
 msgid "Intelligent Search"
 msgstr "البحث الذكي"
 
 #: concrete/themes/dark_chocolate/elements/footer.php:17
-#: concrete/themes/dashboard/elements/header.php:121
+#: concrete/themes/dashboard/elements/header.php:122
 #: concrete/themes/default/elements/footer.php:17
 #: concrete/themes/greek_yogurt/elements/footer.php:19
 #: concrete/themes/greensalad/default.php:63
@@ -3051,11 +3052,11 @@ msgstr "أضف مربع بحث لموقعك."
 msgid "Please enter a valid search title."
 msgstr "رجاءً أدخل عنوان بحث صحيح."
 
-#: concrete/core/controllers/blocks/content.php:25
+#: concrete/core/controllers/blocks/content.php:24
 msgid "HTML/WYSIWYG Editor Content."
 msgstr "محتوى يُعدّل بواسطة مُحرّر HTML/WYSIWYG."
 
-#: concrete/core/controllers/blocks/content.php:29
+#: concrete/core/controllers/blocks/content.php:28
 msgid "Content"
 msgstr "مُحتوى"
 
@@ -4165,6 +4166,11 @@ msgstr "حُدّث جدول الوظائف بنجاح."
 msgid "Job Set schedule updated successfully."
 msgstr "حُدّث جدول مجموعة الوظائف بنجاح."
 
+#: concrete/core/controllers/single_pages/dashboard/reports/statistics.php:44
+#: concrete/elements/dashboard/notification_list.php:44
+msgid "Today"
+msgstr "اليوم"
+
 #. %s is a time
 #: concrete/core/controllers/single_pages/dashboard/reports/surveys.php:17
 #: concrete/single_pages/dashboard/reports/logs.php:67
@@ -4790,10 +4796,6 @@ msgstr "إلى"
 msgid " on "
 msgstr " في "
 
-#: concrete/core/models/file_list.php:117
-msgid "Could not open with ZipArchive::CREATE"
-msgstr "تعذر فتح الملف باستخدام ZipArchive::CREATE"
-
 #: concrete/core/models/file_list.php:131
 #, php-format
 msgid "Failed to create zip file as \"%s\": %s"
@@ -4870,6 +4872,7 @@ msgstr "خطأ: لم تحدد أية مساحة للمُخطّط"
 
 #: concrete/core/models/page.php:291
 #: concrete/core/models/user_private_message.php:147
+#: concrete/core/models/workflow/progress/history.php:21
 #: concrete/single_pages/profile/friends.php:23
 msgid "Unknown User"
 msgstr "مستخدم مجهول."
@@ -4879,11 +4882,11 @@ msgstr "مستخدم مجهول."
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "حُذفت الصفحة \"%s\" من الرابط \"%s\""
 
-#: concrete/core/models/page.php:1629 concrete/core/models/page.php:1687
+#: concrete/core/models/page.php:1629 concrete/core/models/page.php:1691
 msgid "Page Action"
 msgstr "إجراءات الصفحة"
 
-#: concrete/core/models/page.php:1687
+#: concrete/core/models/page.php:1691
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "نُقلت الصفحة \"%s\" من الرابط \"%s\" إلى المهملات"
@@ -5110,29 +5113,29 @@ msgid ""
 "\n"
 msgstr "في %s، اعتمد المستخدم %s الطلب التالي: \n\n---\n%s\n---\n\n"
 
-#: concrete/core/models/workflow/request/requests/move_page.php:39
+#: concrete/core/models/workflow/request/requests/move_page.php:44
 #, php-format
 msgid "\"%s\" is pending a move to beneath \"%s\". Source Page: %s. Target Page: %s."
 msgstr "الصفحة \"%s\" بانتظار نقلها تحت \"%s\". من الصفحة: %s. إلى الصفحة: %s."
 
-#: concrete/core/models/workflow/request/requests/move_page.php:40
+#: concrete/core/models/workflow/request/requests/move_page.php:45
 #, php-format
 msgid ""
 "This page is pending a move beneath <strong><a href=\"%s\">%s</a></strong>. "
 msgstr "هذه الصفحة بانتظار نقلها تحت <strong><a href=\"%s\">%s</a></strong>. "
 
-#: concrete/core/models/workflow/request/requests/move_page.php:41
+#: concrete/core/models/workflow/request/requests/move_page.php:46
 #, php-format
 msgid ""
 "<a href=\"%s\">%s</a> is pending a move beneath <strong><a "
 "href=\"%s\">%s</a></strong>. "
 msgstr "<a href=\"%s\">%s</a> بانتظار نقلها تحت <strong><a href=\"%s\">%s</a></strong>. "
 
-#: concrete/core/models/workflow/request/requests/move_page.php:42
+#: concrete/core/models/workflow/request/requests/move_page.php:47
 msgid "Pending Move"
 msgstr "بانتظار النقل"
 
-#: concrete/core/models/workflow/request/requests/move_page.php:59
+#: concrete/core/models/workflow/request/requests/move_page.php:64
 msgid "Approve Move"
 msgstr "اعتمد النقل"
 
@@ -5274,7 +5277,7 @@ msgstr "اعتمد الصفحة"
 msgid "This permission key cannot start a workflow."
 msgstr "هذه الصلاحية لا تتيح بدء سير عمل."
 
-#: concrete/core/models/workflow/progress/history.php:21
+#: concrete/core/models/workflow/progress/history.php:25
 #, php-format
 msgid "Originally requested by %s."
 msgstr "الطلب الأساسي من %s."
@@ -5999,11 +6002,11 @@ msgstr "&lt; ارجع للرئيسية"
 #: concrete/single_pages/download_file.php:34
 #: concrete/single_pages/install.php:102
 #: concrete/single_pages/profile/messages.php:44
-#: concrete/themes/dashboard/elements/header.php:111
+#: concrete/themes/dashboard/elements/header.php:112
 msgid "Back"
 msgstr "ارجع"
 
-#: concrete/themes/dashboard/elements/header.php:111
+#: concrete/themes/dashboard/elements/header.php:112
 msgid "Return to Website"
 msgstr "ارجع إلى الموقع"
 

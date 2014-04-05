@@ -4,9 +4,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-03-14 04:47+0000\n"
-"PO-Revision-Date: 2014-03-30 04:50+0000\n"
-"Last-Translator: Remo Laubacher <remo.laubacher@gmail.com>\n"
+"POT-Creation-Date: 2014-04-04 05:51+0000\n"
+"PO-Revision-Date: 2014-04-04 06:00+0000\n"
+"Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/projects/p/concrete5/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,7 +31,7 @@ msgstr ""
 #: concrete/tools/pages/bulk_metadata_update.php:6
 #: concrete/tools/pages/customize_search_columns.php:7
 #: concrete/tools/pages/delete.php:7 concrete/tools/pages/design.php:7
-#: concrete/tools/pages/intelligent_search.php:7
+#: concrete/tools/pages/intelligent_search.php:6
 #: concrete/tools/pages/permissions.php:7
 #: concrete/tools/pages/permissions_access.php:7
 #: concrete/tools/pages/search_dialog.php:6
@@ -184,7 +184,6 @@ msgstr "保存"
 #: concrete/tools/dashboard/attribute_set_order_update.php:11
 #: concrete/tools/dashboard/attribute_sets_update.php:14
 #: concrete/tools/dashboard/block_type_order_update.php:11
-#: concrete/tools/dashboard/chart_handler.php:8
 #: concrete/tools/dashboard/scrapbook_services.php:7
 #: concrete/tools/dashboard/sitemap_copy_all.php:5
 #: concrete/tools/dashboard/sitemap_data.php:6
@@ -222,19 +221,28 @@ msgstr "无效的操作"
 msgid "Unable to search file sets."
 msgstr ""
 
-#: concrete/tools/files/download.php:39
+#: concrete/tools/files/download.php:40
 msgid "None of the requested files could be found."
 msgstr ""
 
-#: concrete/tools/files/download.php:50
+#: concrete/core/models/file_list.php:117 concrete/tools/files/download.php:46
+msgid "Could not open with ZipArchive::CREATE"
+msgstr "不能用 ZipArchive::CREATE 打开"
+
+#: concrete/tools/files/download.php:61
+#, php-format
+msgid "External zip failed. Error description: %s"
+msgstr ""
+
+#: concrete/tools/files/download.php:72
 msgid "The requested file couldn't be found."
 msgstr ""
 
-#: concrete/tools/files/download.php:52
+#: concrete/tools/files/download.php:74
 msgid "The requested file is not valid."
 msgstr ""
 
-#: concrete/tools/files/download.php:54
+#: concrete/tools/files/download.php:76
 msgid "An unexpected error occurred while looking for the requested file"
 msgstr ""
 
@@ -260,8 +268,11 @@ msgstr "从远程URL添加"
 #: concrete/blocks/image/tools/crop_image.php:5
 #: concrete/tools/files/import.php:10
 #: concrete/tools/files/importers/incoming.php:7
-#: concrete/tools/files/importers/remote.php:9
-#: concrete/tools/files/importers/single.php:11
+#: concrete/tools/files/importers/incoming.php:20
+#: concrete/tools/files/importers/remote.php:8
+#: concrete/tools/files/importers/remote.php:16
+#: concrete/tools/files/importers/single.php:10
+#: concrete/tools/files/importers/single.php:21
 msgid "Unable to add files."
 msgstr "无法添加文件。"
 
@@ -773,9 +784,9 @@ msgstr "其它"
 msgid "Files in no sets."
 msgstr "文件中的无套。"
 
-#: concrete/tools/files/importers/incoming.php:66
-#: concrete/tools/files/importers/remote.php:146
-#: concrete/tools/files/importers/single.php:61
+#: concrete/tools/files/importers/incoming.php:70
+#: concrete/tools/files/importers/remote.php:149
+#: concrete/tools/files/importers/single.php:64
 msgid "Upload Error"
 msgstr "上传出错"
 
@@ -783,31 +794,31 @@ msgstr "上传出错"
 msgid "Upload Complete."
 msgstr "上传完成。"
 
-#: concrete/tools/files/importers/incoming.php:55
+#: concrete/tools/files/importers/incoming.php:59
 msgid "You must select at least one file."
 msgstr "必须至少选择一个文件。"
 
-#: concrete/tools/files/importers/remote.php:34
+#: concrete/tools/files/importers/remote.php:37
 msgid "Remote URL import requires the iconv extension enabled on your server."
 msgstr "远程URL导入需要在您的服务器上启用iconv扩展。"
 
-#: concrete/tools/files/importers/remote.php:50
+#: concrete/tools/files/importers/remote.php:53
 msgid " is not a valid URL."
 msgstr "这个URL无效。"
 
-#: concrete/tools/files/importers/remote.php:60
+#: concrete/tools/files/importers/remote.php:63
 msgid "You must specify at least one valid URL."
 msgstr "您必须至少指定一个有效的URL。"
 
-#: concrete/tools/files/importers/remote.php:89
+#: concrete/tools/files/importers/remote.php:92
 msgid "Unknown mime-type: "
 msgstr "未知的MIME类型："
 
-#: concrete/tools/files/importers/remote.php:131
+#: concrete/tools/files/importers/remote.php:134
 msgid "Could not determine the name of the file at "
 msgstr "无法确定的文件的名称"
 
-#: concrete/tools/files/importers/remote.php:135
+#: concrete/tools/files/importers/remote.php:138
 msgid "There was an error downloading "
 msgstr "有一个错误下载"
 
@@ -1120,16 +1131,6 @@ msgstr "主题中找不到%s"
 #: concrete/tools/themes/preview_external.php:17
 msgid "curl must be enabled to preview external themes."
 msgstr "必须启用弯曲才能预览外部主题。"
-
-#: concrete/core/controllers/single_pages/dashboard/reports/statistics.php:44
-#: concrete/elements/dashboard/notification_list.php:44
-#: concrete/tools/dashboard/chart_handler.php:22
-msgid "Today"
-msgstr "今天"
-
-#: concrete/tools/dashboard/chart_handler.php:52
-msgid "Views"
-msgstr "视图"
 
 #: concrete/tools/dashboard/sitemap_drag_request.php:11
 msgid "An unspecified error has occurred."
@@ -2260,7 +2261,7 @@ msgstr "页类型"
 msgid "Editing"
 msgstr "正在编辑"
 
-#: concrete/themes/dashboard/elements/header.php:113
+#: concrete/themes/dashboard/elements/header.php:114
 #: concrete/tools/page_controls_menu_js.php:78
 #, php-format
 msgid "Powered by <a href=\"%s\">concrete5</a>."
@@ -2272,18 +2273,18 @@ msgstr "本站由<a href=\"%s\"> concrete5 </a>创建。"
 #: concrete/config/install/disabled/standard/content.xml:16
 #: concrete/single_pages/dashboard/system/basics/interface.php:10
 #: concrete/single_pages/dashboard/view.php:3
-#: concrete/themes/dashboard/elements/header.php:118
+#: concrete/themes/dashboard/elements/header.php:119
 #: concrete/tools/page_controls_menu_js.php:96
 msgid "Dashboard"
 msgstr "仪表盘"
 
-#: concrete/themes/dashboard/elements/header.php:119
+#: concrete/themes/dashboard/elements/header.php:120
 #: concrete/tools/page_controls_menu_js.php:98
 msgid "Intelligent Search"
 msgstr "智能搜索"
 
 #: concrete/themes/dark_chocolate/elements/footer.php:17
-#: concrete/themes/dashboard/elements/header.php:121
+#: concrete/themes/dashboard/elements/header.php:122
 #: concrete/themes/default/elements/footer.php:17
 #: concrete/themes/greek_yogurt/elements/footer.php:19
 #: concrete/themes/greensalad/default.php:63
@@ -3025,11 +3026,11 @@ msgstr "添加一个搜索框到您的网站。"
 msgid "Please enter a valid search title."
 msgstr "请输入一个有效的搜索标题。"
 
-#: concrete/core/controllers/blocks/content.php:25
+#: concrete/core/controllers/blocks/content.php:24
 msgid "HTML/WYSIWYG Editor Content."
 msgstr "HTML/WYSIWYG编辑器。"
 
-#: concrete/core/controllers/blocks/content.php:29
+#: concrete/core/controllers/blocks/content.php:28
 msgid "Content"
 msgstr "内容"
 
@@ -4139,6 +4140,11 @@ msgstr "成功更新工作日程。"
 msgid "Job Set schedule updated successfully."
 msgstr "成功更新工作集日程。"
 
+#: concrete/core/controllers/single_pages/dashboard/reports/statistics.php:44
+#: concrete/elements/dashboard/notification_list.php:44
+msgid "Today"
+msgstr "今天"
+
 #. %s is a time
 #: concrete/core/controllers/single_pages/dashboard/reports/surveys.php:17
 #: concrete/single_pages/dashboard/reports/logs.php:67
@@ -4754,10 +4760,6 @@ msgstr "收件人"
 msgid " on "
 msgstr "开启"
 
-#: concrete/core/models/file_list.php:117
-msgid "Could not open with ZipArchive::CREATE"
-msgstr "不能用 ZipArchive::CREATE 打开"
-
 #: concrete/core/models/file_list.php:131
 #, php-format
 msgid "Failed to create zip file as \"%s\": %s"
@@ -4834,6 +4836,7 @@ msgstr "错误：没有分配到布局区域"
 
 #: concrete/core/models/page.php:291
 #: concrete/core/models/user_private_message.php:147
+#: concrete/core/models/workflow/progress/history.php:21
 #: concrete/single_pages/profile/friends.php:23
 msgid "Unknown User"
 msgstr "未知用户"
@@ -4843,11 +4846,11 @@ msgstr "未知用户"
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "在%s路径的%s页面已删除"
 
-#: concrete/core/models/page.php:1629 concrete/core/models/page.php:1687
+#: concrete/core/models/page.php:1629 concrete/core/models/page.php:1691
 msgid "Page Action"
 msgstr "页面动作"
 
-#: concrete/core/models/page.php:1687
+#: concrete/core/models/page.php:1691
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "在%s路径的%s页面已放入回收站"
@@ -5074,29 +5077,29 @@ msgid ""
 "\n"
 msgstr "在 %s, 用户 %s 同意以下请求: \n\n---\n%s\n---\n\n"
 
-#: concrete/core/models/workflow/request/requests/move_page.php:39
+#: concrete/core/models/workflow/request/requests/move_page.php:44
 #, php-format
 msgid "\"%s\" is pending a move to beneath \"%s\". Source Page: %s. Target Page: %s."
 msgstr "\"%s\" 待移动到 \"%s\" 下方。来源： %s 。目标： %s 。"
 
-#: concrete/core/models/workflow/request/requests/move_page.php:40
+#: concrete/core/models/workflow/request/requests/move_page.php:45
 #, php-format
 msgid ""
 "This page is pending a move beneath <strong><a href=\"%s\">%s</a></strong>. "
 msgstr "此页待移到<strong><a href=\"%s\">%s</a></strong>之下。"
 
-#: concrete/core/models/workflow/request/requests/move_page.php:41
+#: concrete/core/models/workflow/request/requests/move_page.php:46
 #, php-format
 msgid ""
 "<a href=\"%s\">%s</a> is pending a move beneath <strong><a "
 "href=\"%s\">%s</a></strong>. "
 msgstr "<a href=\"%s\">%s</a> 此页待移到<strong><a href=\"%s\">%s</a></strong>之下。"
 
-#: concrete/core/models/workflow/request/requests/move_page.php:42
+#: concrete/core/models/workflow/request/requests/move_page.php:47
 msgid "Pending Move"
 msgstr "待定移动"
 
-#: concrete/core/models/workflow/request/requests/move_page.php:59
+#: concrete/core/models/workflow/request/requests/move_page.php:64
 msgid "Approve Move"
 msgstr "批准移动"
 
@@ -5238,7 +5241,7 @@ msgstr "审批页"
 msgid "This permission key cannot start a workflow."
 msgstr "此权限键不能启动工作流。"
 
-#: concrete/core/models/workflow/progress/history.php:21
+#: concrete/core/models/workflow/progress/history.php:25
 #, php-format
 msgid "Originally requested by %s."
 msgstr "%s要求。"
@@ -5938,11 +5941,11 @@ msgstr "返回首页"
 #: concrete/single_pages/download_file.php:34
 #: concrete/single_pages/install.php:102
 #: concrete/single_pages/profile/messages.php:44
-#: concrete/themes/dashboard/elements/header.php:111
+#: concrete/themes/dashboard/elements/header.php:112
 msgid "Back"
 msgstr "返回"
 
-#: concrete/themes/dashboard/elements/header.php:111
+#: concrete/themes/dashboard/elements/header.php:112
 msgid "Return to Website"
 msgstr "返回网站"
 

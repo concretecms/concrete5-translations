@@ -1,13 +1,14 @@
 # 
 # Translators:
+# Michele Locati <michele@locati.it>, 2014
 # Remo Laubacher <remo.laubacher@gmail.com>, 2014
 # Torsten Silbermann <mail@tsilbermann.de>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-03-14 04:47+0000\n"
-"PO-Revision-Date: 2014-03-24 18:50+0000\n"
+"POT-Creation-Date: 2014-04-04 05:51+0000\n"
+"PO-Revision-Date: 2014-04-04 17:40+0000\n"
 "Last-Translator: Torsten Silbermann <mail@tsilbermann.de>\n"
 "Language-Team: German (Germany) (http://www.transifex.com/projects/p/concrete5/language/de_DE/)\n"
 "MIME-Version: 1.0\n"
@@ -33,7 +34,7 @@ msgstr ""
 #: concrete/tools/pages/bulk_metadata_update.php:6
 #: concrete/tools/pages/customize_search_columns.php:7
 #: concrete/tools/pages/delete.php:7 concrete/tools/pages/design.php:7
-#: concrete/tools/pages/intelligent_search.php:7
+#: concrete/tools/pages/intelligent_search.php:6
 #: concrete/tools/pages/permissions.php:7
 #: concrete/tools/pages/permissions_access.php:7
 #: concrete/tools/pages/search_dialog.php:6
@@ -55,7 +56,7 @@ msgstr "Zugriff verweigert"
 #: concrete/tools/files/search_sets_reload.php:6
 #: concrete/tools/files/selector_data.php:14
 msgid "Unable to access the file manager."
-msgstr "Kann auf die Dateiverwaltung nicht zugreifen."
+msgstr "Zugriff auf die Dateiverwaltung nicht möglich."
 
 #: concrete/tools/files/customize_search_columns.php:42
 #: concrete/tools/pages/customize_search_columns.php:42
@@ -186,7 +187,6 @@ msgstr "Speichern"
 #: concrete/tools/dashboard/attribute_set_order_update.php:11
 #: concrete/tools/dashboard/attribute_sets_update.php:14
 #: concrete/tools/dashboard/block_type_order_update.php:11
-#: concrete/tools/dashboard/chart_handler.php:8
 #: concrete/tools/dashboard/scrapbook_services.php:7
 #: concrete/tools/dashboard/sitemap_copy_all.php:5
 #: concrete/tools/dashboard/sitemap_data.php:6
@@ -224,19 +224,28 @@ msgstr "Remote Authentifizierung - Ungültige Aktion"
 msgid "Unable to search file sets."
 msgstr "Dateialben konnten nicht durchsucht werden."
 
-#: concrete/tools/files/download.php:39
+#: concrete/tools/files/download.php:40
 msgid "None of the requested files could be found."
 msgstr "Keine der angeforderten Dateien konnte gefunden werden."
 
-#: concrete/tools/files/download.php:50
+#: concrete/core/models/file_list.php:117 concrete/tools/files/download.php:46
+msgid "Could not open with ZipArchive::CREATE"
+msgstr "Datei konnte nicht mit ZipArchive::CREATE geöffnet werden"
+
+#: concrete/tools/files/download.php:61
+#, php-format
+msgid "External zip failed. Error description: %s"
+msgstr "Die ZIP-Komprimierung schlug fehl. Fehlermeldung: %s"
+
+#: concrete/tools/files/download.php:72
 msgid "The requested file couldn't be found."
 msgstr "Die angeforderte Datei konnte nicht gefunden werden."
 
-#: concrete/tools/files/download.php:52
+#: concrete/tools/files/download.php:74
 msgid "The requested file is not valid."
 msgstr "Die angeforderte Datei ist nicht gültig."
 
-#: concrete/tools/files/download.php:54
+#: concrete/tools/files/download.php:76
 msgid "An unexpected error occurred while looking for the requested file"
 msgstr "Bei der Suche nach der angeforderten Datei ist ein Fehler aufgetreten."
 
@@ -262,8 +271,11 @@ msgstr "Von entfernter URL hinzufügen"
 #: concrete/blocks/image/tools/crop_image.php:5
 #: concrete/tools/files/import.php:10
 #: concrete/tools/files/importers/incoming.php:7
-#: concrete/tools/files/importers/remote.php:9
-#: concrete/tools/files/importers/single.php:11
+#: concrete/tools/files/importers/incoming.php:20
+#: concrete/tools/files/importers/remote.php:8
+#: concrete/tools/files/importers/remote.php:16
+#: concrete/tools/files/importers/single.php:10
+#: concrete/tools/files/importers/single.php:21
 msgid "Unable to add files."
 msgstr "Dateien konnten nicht hinzugefügt werden."
 
@@ -499,7 +511,7 @@ msgstr "Alle Versionen einer Datei werden zur ausgewählten Stelle verschoben."
 #: concrete/tools/files/permissions.php:89
 #: concrete/tools/files/properties.php:270
 msgid "Default Location"
-msgstr "Standard-Speicherort"
+msgstr "Standardspeicherort"
 
 #: concrete/tools/files/permissions.php:99
 msgid "Save Location"
@@ -775,9 +787,9 @@ msgstr "Andere"
 msgid "Files in no sets."
 msgstr "Dateien ohne Albenzugehörigkeit"
 
-#: concrete/tools/files/importers/incoming.php:66
-#: concrete/tools/files/importers/remote.php:146
-#: concrete/tools/files/importers/single.php:61
+#: concrete/tools/files/importers/incoming.php:70
+#: concrete/tools/files/importers/remote.php:149
+#: concrete/tools/files/importers/single.php:64
 msgid "Upload Error"
 msgstr "Fehler beim Upload"
 
@@ -785,31 +797,31 @@ msgstr "Fehler beim Upload"
 msgid "Upload Complete."
 msgstr "Hochladen beendet"
 
-#: concrete/tools/files/importers/incoming.php:55
+#: concrete/tools/files/importers/incoming.php:59
 msgid "You must select at least one file."
 msgstr "Sie müssen eine Datei auswählen."
 
-#: concrete/tools/files/importers/remote.php:34
+#: concrete/tools/files/importers/remote.php:37
 msgid "Remote URL import requires the iconv extension enabled on your server."
 msgstr "Importieren von entfernten URLs setzt die PHP-Erweiterung iconv voraus."
 
-#: concrete/tools/files/importers/remote.php:50
+#: concrete/tools/files/importers/remote.php:53
 msgid " is not a valid URL."
 msgstr " ist keine gültige Adresse."
 
-#: concrete/tools/files/importers/remote.php:60
+#: concrete/tools/files/importers/remote.php:63
 msgid "You must specify at least one valid URL."
 msgstr "Es muss mindenstens eine gültige URL angegeben werden."
 
-#: concrete/tools/files/importers/remote.php:89
+#: concrete/tools/files/importers/remote.php:92
 msgid "Unknown mime-type: "
 msgstr "Unbekannter Mime-Typ:"
 
-#: concrete/tools/files/importers/remote.php:131
+#: concrete/tools/files/importers/remote.php:134
 msgid "Could not determine the name of the file at "
 msgstr "Konnte den Namen der Datei nicht finden bei "
 
-#: concrete/tools/files/importers/remote.php:135
+#: concrete/tools/files/importers/remote.php:138
 msgid "There was an error downloading "
 msgstr "Beim Herunterladen ist ein Fehler aufgetreten."
 
@@ -1124,16 +1136,6 @@ msgstr "Theme in %s nicht gefunden"
 #: concrete/tools/themes/preview_external.php:17
 msgid "curl must be enabled to preview external themes."
 msgstr "cURL muss eingeschaltet sein, um eine Vorschau externer Themes zu erhalten."
-
-#: concrete/core/controllers/single_pages/dashboard/reports/statistics.php:44
-#: concrete/elements/dashboard/notification_list.php:44
-#: concrete/tools/dashboard/chart_handler.php:22
-msgid "Today"
-msgstr "Heute"
-
-#: concrete/tools/dashboard/chart_handler.php:52
-msgid "Views"
-msgstr "Ansichten"
 
 #: concrete/tools/dashboard/sitemap_drag_request.php:11
 msgid "An unspecified error has occurred."
@@ -2267,7 +2269,7 @@ msgstr "Seitentypen"
 msgid "Editing"
 msgstr "Bearbeiten"
 
-#: concrete/themes/dashboard/elements/header.php:113
+#: concrete/themes/dashboard/elements/header.php:114
 #: concrete/tools/page_controls_menu_js.php:78
 #, php-format
 msgid "Powered by <a href=\"%s\">concrete5</a>."
@@ -2279,18 +2281,18 @@ msgstr "Powered by <a href=\"%s\">concrete5</a>."
 #: concrete/config/install/disabled/standard/content.xml:16
 #: concrete/single_pages/dashboard/system/basics/interface.php:10
 #: concrete/single_pages/dashboard/view.php:3
-#: concrete/themes/dashboard/elements/header.php:118
+#: concrete/themes/dashboard/elements/header.php:119
 #: concrete/tools/page_controls_menu_js.php:96
 msgid "Dashboard"
 msgstr "Verwaltung"
 
-#: concrete/themes/dashboard/elements/header.php:119
+#: concrete/themes/dashboard/elements/header.php:120
 #: concrete/tools/page_controls_menu_js.php:98
 msgid "Intelligent Search"
 msgstr "Intelligente Suche"
 
 #: concrete/themes/dark_chocolate/elements/footer.php:17
-#: concrete/themes/dashboard/elements/header.php:121
+#: concrete/themes/dashboard/elements/header.php:122
 #: concrete/themes/default/elements/footer.php:17
 #: concrete/themes/greek_yogurt/elements/footer.php:19
 #: concrete/themes/greensalad/default.php:63
@@ -3032,11 +3034,11 @@ msgstr "Fügen Sie einen Suchfeld in Ihre Seite ein."
 msgid "Please enter a valid search title."
 msgstr "Bitte geben Sie einen gültigen Suchbegriff ein."
 
-#: concrete/core/controllers/blocks/content.php:25
+#: concrete/core/controllers/blocks/content.php:24
 msgid "HTML/WYSIWYG Editor Content."
 msgstr "HTML/WYSIWYG-Editor-Inhalt"
 
-#: concrete/core/controllers/blocks/content.php:29
+#: concrete/core/controllers/blocks/content.php:28
 msgid "Content"
 msgstr "Inhalt"
 
@@ -3729,7 +3731,7 @@ msgstr "Dateiablagepfad gespeichert"
 #: concrete/core/controllers/single_pages/dashboard/system/environment/file_storage_locations.php:25
 msgid ""
 "File storage location removed. Files using this location have been reset."
-msgstr "Dateiablage-Ort wurde entfernt. Dateien wurden zurückgesetzt."
+msgstr "Speicherort wurde entfernt. Betroffene Dateien wurden zurückgesetzt."
 
 #: concrete/core/controllers/single_pages/dashboard/system/environment/debug.php:25
 msgid "Debug configuration saved."
@@ -4145,6 +4147,11 @@ msgstr "Automatisierungseinstellungen erfolgreich aktualisiert"
 #: concrete/core/controllers/single_pages/dashboard/system/optimization/jobs.php:216
 msgid "Job Set schedule updated successfully."
 msgstr "Automatisierungseinstellungen für Auftragsalbum erfolgreich aktualisiert"
+
+#: concrete/core/controllers/single_pages/dashboard/reports/statistics.php:44
+#: concrete/elements/dashboard/notification_list.php:44
+msgid "Today"
+msgstr "Heute"
 
 #. %s is a time
 #: concrete/core/controllers/single_pages/dashboard/reports/surveys.php:17
@@ -4763,10 +4770,6 @@ msgstr "bis"
 msgid " on "
 msgstr " am "
 
-#: concrete/core/models/file_list.php:117
-msgid "Could not open with ZipArchive::CREATE"
-msgstr "Datei konnte nicht mit ZipArchive::CREATE geöffnet werden"
-
 #: concrete/core/models/file_list.php:131
 #, php-format
 msgid "Failed to create zip file as \"%s\": %s"
@@ -4843,6 +4846,7 @@ msgstr "Fehler: Dem Layout wurde kein Bereich zugeordnet"
 
 #: concrete/core/models/page.php:291
 #: concrete/core/models/user_private_message.php:147
+#: concrete/core/models/workflow/progress/history.php:21
 #: concrete/single_pages/profile/friends.php:23
 msgid "Unknown User"
 msgstr "Unbekannter Benutzer"
@@ -4852,11 +4856,11 @@ msgstr "Unbekannter Benutzer"
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "Seite \"%s\" im Pfad \"%s\" erfolgreich gelöscht"
 
-#: concrete/core/models/page.php:1629 concrete/core/models/page.php:1687
+#: concrete/core/models/page.php:1629 concrete/core/models/page.php:1691
 msgid "Page Action"
 msgstr "Seitenaktion"
 
-#: concrete/core/models/page.php:1687
+#: concrete/core/models/page.php:1691
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "Seite\"%s\" im Pfad \"%s\" in den Papierkorb verschoben"
@@ -5083,29 +5087,29 @@ msgid ""
 "\n"
 msgstr "Am %s hat der Benutzer %s die folgende Anfrage freigegeben: \n\n---\n%s\n---\n\n"
 
-#: concrete/core/models/workflow/request/requests/move_page.php:39
+#: concrete/core/models/workflow/request/requests/move_page.php:44
 #, php-format
 msgid "\"%s\" is pending a move to beneath \"%s\". Source Page: %s. Target Page: %s."
 msgstr "\"%s\" ist für eine Verschiebung nach \"%s\" vorgemerkt. Quellseite: %s. Zielseite: %s."
 
-#: concrete/core/models/workflow/request/requests/move_page.php:40
+#: concrete/core/models/workflow/request/requests/move_page.php:45
 #, php-format
 msgid ""
 "This page is pending a move beneath <strong><a href=\"%s\">%s</a></strong>. "
 msgstr "Diese Seite ist für eine Verschiebung nach <strong><a href=\"%s\">%s</a></strong> vorgemerkt. "
 
-#: concrete/core/models/workflow/request/requests/move_page.php:41
+#: concrete/core/models/workflow/request/requests/move_page.php:46
 #, php-format
 msgid ""
 "<a href=\"%s\">%s</a> is pending a move beneath <strong><a "
 "href=\"%s\">%s</a></strong>. "
 msgstr "<a href=\"%s\">%s</a> ist für eine Verschiebung nach <strong><a href=\"%s\">%s</a></strong> vorgemerkt. "
 
-#: concrete/core/models/workflow/request/requests/move_page.php:42
+#: concrete/core/models/workflow/request/requests/move_page.php:47
 msgid "Pending Move"
 msgstr "Verschieben steht aus"
 
-#: concrete/core/models/workflow/request/requests/move_page.php:59
+#: concrete/core/models/workflow/request/requests/move_page.php:64
 msgid "Approve Move"
 msgstr "Freigabe für das Verschieben erteilen"
 
@@ -5247,7 +5251,7 @@ msgstr "Seite freigeben"
 msgid "This permission key cannot start a workflow."
 msgstr "Mit dieser Berechtigung kann kein neuer Arbeitsablauf gestartet werden."
 
-#: concrete/core/models/workflow/progress/history.php:21
+#: concrete/core/models/workflow/progress/history.php:25
 #, php-format
 msgid "Originally requested by %s."
 msgstr "Ursprünglich von %s angefordert"
@@ -5952,11 +5956,11 @@ msgstr "&lt; Zurück zur Startseite"
 #: concrete/single_pages/download_file.php:34
 #: concrete/single_pages/install.php:102
 #: concrete/single_pages/profile/messages.php:44
-#: concrete/themes/dashboard/elements/header.php:111
+#: concrete/themes/dashboard/elements/header.php:112
 msgid "Back"
 msgstr "Zurück"
 
-#: concrete/themes/dashboard/elements/header.php:111
+#: concrete/themes/dashboard/elements/header.php:112
 msgid "Return to Website"
 msgstr "Zurück zur Website"
 
@@ -9869,7 +9873,7 @@ msgstr "(Unbenannte Seite)"
 #: concrete/single_pages/dashboard/composer/drafts.php:34
 #, php-format
 msgid "You have not created any drafts. <a href=\"%s\">Visit Composer &gt;</a>"
-msgstr "Sie haben noch keine Entwürfe erstellt. <a href=\"%s\">Mit Composer erstellen &gt;</a>"
+msgstr "Es sind keine Entwürfe vorhanden. <a href=\"%s\">Neuen Entwurf mit Composer erstellen &gt;</a>"
 
 #: concrete/single_pages/dashboard/files/sets.php:6
 msgid "File Set"
@@ -10762,7 +10766,7 @@ msgstr "Registrierungsdaten"
 #: concrete/helpers/concrete/upgrade/version_560.php:118
 #: concrete/single_pages/dashboard/system/seo/bulk_seo_tool.php:2
 msgid "Bulk SEO Updater"
-msgstr "SEO-Sammelaktualisierung"
+msgstr "SEO Sammelbearbeitung"
 
 #: concrete/single_pages/dashboard/system/seo/bulk_seo_tool.php:2
 msgid "Manage Search Engine Optimization (SEO) Related Page Properties."
@@ -10786,7 +10790,7 @@ msgstr "Alle Ebenen"
 
 #: concrete/single_pages/dashboard/system/seo/bulk_seo_tool.php:112
 msgid " No Meta Description"
-msgstr " Keine Meta-Beschreibung vorhanden"
+msgstr " Keine Metabeschreibung vorhanden"
 
 #: concrete/single_pages/dashboard/system/seo/bulk_seo_tool.php:113
 msgid " No Meta Keywords"
@@ -10998,7 +11002,7 @@ msgstr "Orte für die Dateiablage"
 
 #: concrete/single_pages/dashboard/system/environment/file_storage_locations.php:9
 msgid "Standard File Location"
-msgstr "Standard-Dateispeicherort"
+msgstr "Standardspeicherort"
 
 #: concrete/single_pages/dashboard/pages/single.php:31
 #: concrete/single_pages/dashboard/system/environment/file_storage_locations.php:11
@@ -11023,7 +11027,7 @@ msgstr "Sind Sie sicher? (Hinweis: Die Dateien werden zurückgesetzt.)"
 
 #: concrete/single_pages/dashboard/system/environment/file_storage_locations.php:39
 msgid "Delete Alternate"
-msgstr "Alternative löschen"
+msgstr "Alternativen Speicherort löschen"
 
 #: concrete/single_pages/dashboard/system/environment/debug.php:3
 msgid "Debug Level"
@@ -14176,7 +14180,7 @@ msgid ""
 "Create an alternate file-storage location (in addition to the standard file "
 "location) where you'll have the option of putting files after uploading them"
 " to the File Manager. "
-msgstr "Erstellen Sie einen zusätzlichen Ort für die Dateiablage, wo Dateien nach dem Hochladen über die Dateiverwaltung abgelegt werden können."
+msgstr "Das Erstellen eines zusätzlichen Speicherortes ermöglicht, Dateien in einem alternativen Verzeichnis abzulegen. Der Speicherort kann für die jeweiligen Dateien in der Dateiverwaltung geändert werden (durch Anklicken der Datei, Auswahl \"Zugriff & Berechtigungen\", Reiter \"Dateiablage\")."
 
 #: concrete/helpers/concrete/interface/help.php:77
 msgid ""
