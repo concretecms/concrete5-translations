@@ -140,9 +140,17 @@
 			case 'core':
 				return 'concrete5 development';
 		}
-		var m;
+		var m, s;
+		if(m = /^core-dev-(\d{2})$/.exec(code)) {
+			s = 'concrete5 development (';
+			for(var i = 0; i < m[1].length; i++) {
+				s += ((i > 0) ? '.' : '') + m[1].charAt(i);
+			}
+			s += ')';
+			return s;
+		}
 		if(m = /^core-(\d{3,4})$/.exec(code)) {
-			var s = 'concrete5 ';
+			s = 'concrete5 ';
 			for(var i = 0; i < m[1].length; i++) {
 				s += ((i > 0) ? '.' : '') + m[1].charAt(i);
 			}
