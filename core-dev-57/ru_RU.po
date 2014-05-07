@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-05-05 17:02+0000\n"
-"PO-Revision-Date: 2014-05-05 19:04+0000\n"
+"POT-Creation-Date: 2014-05-06 06:14+0000\n"
+"PO-Revision-Date: 2014-05-06 10:03+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Russian (Russia) (http://www.transifex.com/projects/p/concrete5/language/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -414,7 +414,7 @@ msgstr "По убыванию"
 #: concrete/single_pages/account/profile/edit.php:92
 #: concrete/single_pages/dashboard/blocks/permissions.php:22
 #: concrete/single_pages/dashboard/files/sets.php:108
-#: concrete/single_pages/dashboard/pages/themes/customize.php:98
+#: concrete/single_pages/dashboard/pages/themes/customize.php:97
 #: concrete/single_pages/dashboard/pages/themes/view.php:123
 #: concrete/single_pages/dashboard/pages/types/composer.php:187
 #: concrete/single_pages/dashboard/pages/types/permissions.php:26
@@ -466,6 +466,7 @@ msgstr "По убыванию"
 #: concrete/tools/users/bulk_group_remove.php:96
 #: concrete/tools/users/customize_search_columns.php:112
 #: concrete/views/dialogs/page/design.php:31
+#: concrete/views/dialogs/page/design/css.php:12
 #: concrete/views/dialogs/search/customize.php:75
 msgid "Save"
 msgstr "Сохранить"
@@ -756,6 +757,7 @@ msgstr "Оставьте следующее поле формы пустым, ч
 #: concrete/views/dialogs/page/delete.php:12
 #: concrete/views/dialogs/page/delete.php:18
 #: concrete/views/dialogs/page/design.php:30
+#: concrete/views/dialogs/page/design/css.php:11
 #: concrete/views/dialogs/search/customize.php:74
 #: concrete/views/panels/details/page/caching.php:117
 #: concrete/views/panels/details/page/location.php:66
@@ -1533,6 +1535,7 @@ msgstr "Описание"
 #: concrete/views/panels/details/page/seo.php:32
 #: concrete/views/panels/page/check_in.php:39
 #: concrete/views/panels/page/design.php:88
+#: concrete/views/panels/page/design/customize.php:77
 msgid "Save Changes"
 msgstr "Сохранить изменения"
 
@@ -1932,6 +1935,7 @@ msgstr ""
 
 #: concrete/tools/i18n_js.php:8 concrete/views/panels/page/design.php:35
 #: concrete/views/panels/page/design.php:78
+#: concrete/views/panels/page/design/customize.php:34
 msgid "Expand"
 msgstr ""
 
@@ -2213,12 +2217,10 @@ msgstr "Настройки пользователя сохранены."
 
 #: concrete/core/Application/Service/UserInterface/Help.php:188
 #: concrete/single_pages/dashboard/extend/install.php:225
-#: concrete/single_pages/dashboard/pages/themes/customize.php:110
+#: concrete/single_pages/dashboard/pages/themes/customize.php:109
 #: concrete/single_pages/dashboard/pages/themes/inspect.php:114
 #: concrete/single_pages/dashboard/pages/themes/view.php:36
 #: concrete/tools/i18n_js.php:77 concrete/tools/pages/permissions.php:166
-#: concrete/views/panels/page/design/customize.php:55
-#: concrete/views/panels/page/design/customize.php:126
 msgid "Ok"
 msgstr "Ok"
 
@@ -2850,6 +2852,10 @@ msgstr ""
 
 #: concrete/controllers/panel/detail/page/caching.php:25
 msgid "This page has been purged from the full page cache."
+msgstr ""
+
+#: concrete/controllers/panel/page/design/customize.php:93
+msgid "Invalid or non-customizable theme."
 msgstr ""
 
 #: concrete/controllers/panel/page/versions.php:56
@@ -4203,8 +4209,8 @@ msgid "Invalid page type publish target type."
 msgstr ""
 
 #: concrete/controllers/single_page/dashboard/pages/themes/customize.php:25
-#: concrete/single_pages/dashboard/pages/themes/customize.php:97
-#: concrete/single_pages/dashboard/pages/themes/customize.php:349
+#: concrete/single_pages/dashboard/pages/themes/customize.php:96
+#: concrete/single_pages/dashboard/pages/themes/customize.php:348
 #: concrete/single_pages/dashboard/pages/themes/inspect.php:112
 msgid "Return to Themes"
 msgstr "Вернуться к темам"
@@ -4818,6 +4824,7 @@ msgid "Subject"
 msgstr "Тема"
 
 #: concrete/core/Mail/Service.php:428 concrete/core/Mail/Service.php:449
+#: concrete/themes/greek_yogurt/css/styles.xml:14
 msgid "Body"
 msgstr "Содержимое"
 
@@ -5061,7 +5068,7 @@ msgstr ""
 msgid "%s TB"
 msgstr ""
 
-#: concrete/core/View/View.php:284
+#: concrete/core/View/View.php:286
 #, php-format
 msgid "Illegal variable name '%s' in element args."
 msgstr "Недопустимое имя переменной '%s' в аргументах элемента."
@@ -5233,24 +5240,12 @@ msgstr ""
 msgid "Unable to uninstall %s theme by moving it to the trash."
 msgstr "Невозможно удалить тему %s перемещением в корзину."
 
-#: concrete/core/Page/Theme/EditableStyle/EditableStyle.php:20
-msgid "Colors"
-msgstr ""
-
-#: concrete/core/Page/Theme/EditableStyle/EditableStyle.php:23
-msgid "Typography"
-msgstr ""
-
-#: concrete/core/Page/Theme/EditableStyle/EditableStyle.php:26
-msgid "Custom CSS"
-msgstr ""
-
-#: concrete/core/Page/Theme/Theme.php:545
+#: concrete/core/Page/Theme/Theme.php:609
 #: concrete/single_pages/dashboard/pages/types/form.php:47
 msgid "(No Name)"
 msgstr "(Без имени)"
 
-#: concrete/core/Page/Theme/Theme.php:573
+#: concrete/core/Page/Theme/Theme.php:654
 msgid "(No Description)"
 msgstr "(Без описания)"
 
@@ -5336,16 +5331,16 @@ msgstr "Новая версия %s"
 msgid "Version %d"
 msgstr "Версия %d"
 
-#: concrete/core/Page/Page.php:1976
+#: concrete/core/Page/Page.php:1985
 #, php-format
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "Страница \"%s\", расположенная в \"%s\" удалена"
 
-#: concrete/core/Page/Page.php:1976 concrete/core/Page/Page.php:2040
+#: concrete/core/Page/Page.php:1985 concrete/core/Page/Page.php:2049
 msgid "Page Action"
 msgstr "Действие страницы"
 
-#: concrete/core/Page/Page.php:2040
+#: concrete/core/Page/Page.php:2049
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "Страница \"%s\", расположенная в \"%s\" перемещена в корзину"
@@ -8343,13 +8338,9 @@ msgstr ""
 msgid "Content disabled in edit mode."
 msgstr "В режиме редактирования. Содержимое отключено."
 
-#: concrete/elements/custom_style/background.php:7
-#: concrete/single_pages/dashboard/system/basics/icons.php:171
-msgid "Background Color"
-msgstr "Цвет фона"
-
 #: concrete/elements/custom_style/background.php:15
 #: concrete/single_pages/dashboard/system/basics/images.php:12
+#: concrete/themes/greek_yogurt/css/styles.xml:22
 msgid "Background Image"
 msgstr "Фоновое изображение"
 
@@ -8379,6 +8370,7 @@ msgstr "Высота строки"
 
 #: concrete/elements/custom_style/border.php:48
 #: concrete/elements/custom_style/fonts.php:39
+#: concrete/themes/greek_yogurt/css/styles.xml:21
 msgid "Color"
 msgstr "Цвет"
 
@@ -8869,31 +8861,45 @@ msgstr ""
 msgid "Install More Themes"
 msgstr ""
 
-#: concrete/single_pages/dashboard/pages/themes/customize.php:16
-#: concrete/single_pages/dashboard/pages/themes/customize.php:342
-#: concrete/views/panels/page/design/customize.php:10
+#: concrete/single_pages/dashboard/pages/themes/customize.php:15
+#: concrete/single_pages/dashboard/pages/themes/customize.php:341
+#: concrete/views/panels/page/design/customize.php:9
 msgid "Customize Theme"
 msgstr "Настройка шаблона"
 
-#: concrete/views/panels/page/design/customize.php:43
+#: concrete/views/panels/page/design/customize.php:14
+msgid "Preset"
+msgstr ""
+
+#: concrete/blocks/tags/tag_form.php:11
+#: concrete/views/panels/page/design/customize.php:56
+msgid "Advanced"
+msgstr "Расширенный"
+
+#: concrete/views/panels/page/design/customize.php:59
+#: concrete/views/panels/page/design/customize.php:199
+msgid "Custom CSS"
+msgstr ""
+
+#: concrete/views/panels/page/design/customize.php:69
 msgid "Reset Customizations"
 msgstr ""
 
-#: concrete/views/panels/page/design/customize.php:281
+#: concrete/views/panels/page/design/customize.php:132
 msgid "Apply this design to just this page, or your entire site?"
 msgstr ""
 
-#: concrete/views/panels/page/design/customize.php:282
-#: concrete/views/panels/page/design/customize.php:293
+#: concrete/views/panels/page/design/customize.php:133
+#: concrete/views/panels/page/design/customize.php:210
 msgid "Entire Site"
 msgstr ""
 
-#: concrete/views/panels/page/design/customize.php:283
-#: concrete/views/panels/page/design/customize.php:294
+#: concrete/views/panels/page/design/customize.php:134
+#: concrete/views/panels/page/design/customize.php:211
 msgid "This Page"
 msgstr ""
 
-#: concrete/views/panels/page/design/customize.php:292
+#: concrete/views/panels/page/design/customize.php:209
 msgid ""
 "Reset the theme customizations for just this page, or your entire site?"
 msgstr ""
@@ -9714,8 +9720,8 @@ msgid "Proxy block for stacks added through the UI."
 msgstr "Проксирующий модуль стеков добавлен через интерфейс пользователя."
 
 #: concrete/blocks/core_stack_display/controller.php:27
-msgid "Stack Display (Core)"
-msgstr "Просмотр стека (Ядро)"
+msgid "Stack Display"
+msgstr ""
 
 #: concrete/blocks/core_gathering/controller.php:13
 msgid "Displays pages and data in list or grids."
@@ -9828,7 +9834,7 @@ msgid "Proxy block for area layouts."
 msgstr ""
 
 #: concrete/blocks/core_area_layout/controller.php:26
-msgid "Area Layout (Core)"
+msgid "Area Layout"
 msgstr ""
 
 #: concrete/blocks/core_gathering_display/controller.php:22
@@ -9836,7 +9842,7 @@ msgid "Proxy block for gathering items added to areas."
 msgstr ""
 
 #: concrete/blocks/core_gathering_display/controller.php:26
-msgid "Gathering Display (Core)"
+msgid "Gathering Display"
 msgstr ""
 
 #: concrete/blocks/content/controller.php:34
@@ -9861,10 +9867,6 @@ msgstr "Список страниц в зависимости от типа и/�
 msgid ""
 "Error: The required page attribute with the handle of: \"%s\" doesn't exist"
 msgstr "Ошибка: Обязательный атрибут: \"%s\" не существует"
-
-#: concrete/blocks/tags/tag_form.php:11
-msgid "Advanced"
-msgstr "Расширенный"
 
 #: concrete/blocks/date_archive/form.php:7
 #: concrete/blocks/tags/tag_form.php:17
@@ -10435,7 +10437,7 @@ msgid "Proxy block for blocks that need to be output through composer."
 msgstr ""
 
 #: concrete/blocks/core_page_type_composer_control_output/controller.php:21
-msgid "Composer Control (Core)"
+msgid "Composer Control"
 msgstr ""
 
 #: concrete/blocks/core_page_type_composer_control_output/view.php:13
@@ -10749,8 +10751,8 @@ msgid "Proxy block for blocks pasted through the scrapbook."
 msgstr "Проксирующий модуль для вставки модулей из заготовок."
 
 #: concrete/blocks/core_scrapbook_display/controller.php:25
-msgid "Scrapbook Display (Core)"
-msgstr "Просмотр заготовок (Ядро)"
+msgid "Scrapbook Display"
+msgstr ""
 
 #: concrete/blocks/core_scrapbook_display/edit.php:12
 msgid ""
@@ -13768,6 +13770,10 @@ msgid ""
 "Windows 8 start screen tiles should be 144x144 and be in the .png format."
 msgstr "Иконка для Windows 8 должна быть размером 144х144 и иметь формат .png."
 
+#: concrete/single_pages/dashboard/system/basics/icons.php:171
+msgid "Background Color"
+msgstr "Цвет фона"
+
 #: concrete/single_pages/dashboard/system/basics/timezone.php:19
 msgid "Enable user defined time zones."
 msgstr "Разрешить часовые пояса, определяемые пользователем."
@@ -14482,19 +14488,19 @@ msgstr ""
 msgid "Delete Page Type"
 msgstr ""
 
-#: concrete/single_pages/dashboard/pages/themes/customize.php:61
+#: concrete/single_pages/dashboard/pages/themes/customize.php:60
 msgid "Add Your CSS"
 msgstr "Добавить свой CSS"
 
-#: concrete/single_pages/dashboard/pages/themes/customize.php:99
+#: concrete/single_pages/dashboard/pages/themes/customize.php:98
 msgid "Reset"
 msgstr "Сброс"
 
-#: concrete/single_pages/dashboard/pages/themes/customize.php:111
+#: concrete/single_pages/dashboard/pages/themes/customize.php:110
 msgid "Reset styles in this theme?"
 msgstr "Сбросить стили в этой теме?"
 
-#: concrete/single_pages/dashboard/pages/themes/customize.php:345
+#: concrete/single_pages/dashboard/pages/themes/customize.php:344
 msgid "This theme contains no styles that can be customized."
 msgstr "Эта тема не содержит никаких стилей, которые могут быть настроены."
 
@@ -14764,6 +14770,62 @@ msgstr "Неверный файл."
 #: concrete/single_pages/download_file.php:15
 msgid "This file requires a password to download."
 msgstr "Для скачивания этого файла необходим пароль"
+
+#: concrete/themes/greek_yogurt/css/styles.xml:3
+msgid "Background Colors"
+msgstr ""
+
+#: concrete/themes/greek_yogurt/css/styles.xml:4
+msgid "Body Background"
+msgstr ""
+
+#: concrete/themes/greek_yogurt/css/styles.xml:5
+msgid "Header Background"
+msgstr ""
+
+#: concrete/themes/greek_yogurt/css/styles.xml:6
+msgid "Main Background"
+msgstr ""
+
+#: concrete/themes/greek_yogurt/css/styles.xml:7
+msgid "Footer Background"
+msgstr ""
+
+#: concrete/themes/greek_yogurt/css/styles.xml:9
+msgid "Header"
+msgstr "Заголовок"
+
+#: concrete/themes/greek_yogurt/css/styles.xml:10
+msgid "Navigation Link Color"
+msgstr ""
+
+#: concrete/themes/greek_yogurt/css/styles.xml:11
+msgid "Navigation Background Hover"
+msgstr ""
+
+#: concrete/themes/greek_yogurt/css/styles.xml:12
+msgid "Site Title"
+msgstr ""
+
+#: concrete/themes/greek_yogurt/css/styles.xml:15
+msgid "Typography"
+msgstr ""
+
+#: concrete/themes/greek_yogurt/css/styles.xml:16
+msgid "Link Color"
+msgstr ""
+
+#: concrete/themes/greek_yogurt/css/styles.xml:17
+msgid "Headings"
+msgstr ""
+
+#: concrete/themes/greek_yogurt/css/styles.xml:19
+msgid "Footer"
+msgstr ""
+
+#: concrete/themes/greek_yogurt/css/styles.xml:20
+msgid "Top Margin"
+msgstr ""
 
 #: concrete/config/install/base/dashboard.xml:6
 msgid "Whole world at a glance."
