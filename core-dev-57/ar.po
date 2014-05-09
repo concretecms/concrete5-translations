@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-05-06 22:00+0000\n"
-"PO-Revision-Date: 2014-05-07 09:52+0000\n"
+"POT-Creation-Date: 2014-05-07 22:00+0000\n"
+"PO-Revision-Date: 2014-05-08 10:11+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Arabic (http://www.transifex.com/projects/p/concrete5/language/ar/)\n"
 "MIME-Version: 1.0\n"
@@ -99,6 +99,7 @@ msgid "Confirm Password"
 msgstr "تأكيد كلمة السرّ"
 
 #: concrete/authentication/concrete/change_password.php:22
+#: concrete/authentication/concrete/form.php:30
 msgid "Sign In"
 msgstr "سجّل دخولك"
 
@@ -170,6 +171,10 @@ msgstr "اسم المستخدم"
 #: concrete/views/frontend/install.php:160
 msgid "Password"
 msgstr "كلمة السرّ"
+
+#: concrete/authentication/concrete/form.php:25
+msgid "Remain logged in to website."
+msgstr "احفظ تسجيل دخولي للموقع."
 
 #: concrete/authentication/concrete/form.php:26
 msgid "Forgot Password?"
@@ -516,15 +521,24 @@ msgstr "تعذر البحث في مجموعات الملفات."
 msgid "None of the requested files could be found."
 msgstr "تعذر العثور على أي من الملفات المطلوبة"
 
-#: concrete/tools/files/download.php:50
+#: concrete/core/File/FileList.php:124 concrete/tools/files/download.php:45
+msgid "Could not open with ZipArchive::CREATE"
+msgstr "تعذر فتح الملف باستخدام ZipArchive::CREATE"
+
+#: concrete/tools/files/download.php:60
+#, php-format
+msgid "External zip failed. Error description: %s"
+msgstr ""
+
+#: concrete/tools/files/download.php:71
 msgid "The requested file couldn't be found."
 msgstr "تعذر العثور على الملف المطلوب."
 
-#: concrete/tools/files/download.php:52
+#: concrete/tools/files/download.php:73
 msgid "The requested file is not valid."
 msgstr "الملف المطلوب غير صالح."
 
-#: concrete/tools/files/download.php:54
+#: concrete/tools/files/download.php:75
 msgid "An unexpected error occurred while looking for the requested file"
 msgstr "حدث خطأ غير متوقع أثناء البحث عن الملف المطلوب."
 
@@ -544,7 +558,7 @@ msgid "Add from Incoming Directory"
 msgstr "أضف من دليل الملفات الواردة"
 
 #: concrete/tools/files/replace.php:44 concrete/tools/files/replace.php:65
-#: concrete/tools/i18n_js.php:176
+#: concrete/tools/i18n_js.php:178
 msgid "Replace"
 msgstr "استبدل"
 
@@ -638,8 +652,8 @@ msgstr ""
 #: concrete/elements/panels/page.php:43
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:62
 #: concrete/single_pages/dashboard/pages/types/view.php:43
-#: concrete/tools/files/permissions.php:47 concrete/tools/i18n_js.php:121
-#: concrete/tools/i18n_js.php:180
+#: concrete/tools/files/permissions.php:47 concrete/tools/i18n_js.php:123
+#: concrete/tools/i18n_js.php:182
 msgid "Permissions"
 msgstr "الصلاحيات"
 
@@ -861,7 +875,7 @@ msgstr "حدث خطأ أثناء تنزيل "
 #: concrete/single_pages/dashboard/system/backup/backup.php:113
 #: concrete/single_pages/dashboard/system/backup/update.php:17
 #: concrete/single_pages/download_file.php:28 concrete/tools/files/view.php:35
-#: concrete/tools/i18n_js.php:171
+#: concrete/tools/i18n_js.php:173
 msgid "Download"
 msgstr "نزّل"
 
@@ -907,8 +921,8 @@ msgstr "(ملاحظة: لن تُحذف الملفات التي تحتويها ه
 #: concrete/single_pages/profile/messages.php:43
 #: concrete/tools/files/delete.php:92 concrete/tools/files/delete_set.php:47
 #: concrete/tools/gathering/item/delete.php:28 concrete/tools/i18n_js.php:27
-#: concrete/tools/i18n_js.php:85 concrete/tools/i18n_js.php:106
-#: concrete/tools/i18n_js.php:126 concrete/tools/i18n_js.php:182
+#: concrete/tools/i18n_js.php:85 concrete/tools/i18n_js.php:108
+#: concrete/tools/i18n_js.php:128 concrete/tools/i18n_js.php:184
 #: concrete/tools/pages/delete.php:122 concrete/tools/users/bulk_delete.php:67
 #: concrete/views/dialogs/page/delete.php:19
 #: concrete/views/panels/page/versions.php:37
@@ -944,7 +958,7 @@ msgstr "متأكد أنك تريد نسخ الملفات التالية؟"
 #: concrete/elements/files/search.php:36
 #: concrete/elements/permission/clipboard.php:5
 #: concrete/tools/dashboard/sitemap_drag_request.php:212
-#: concrete/tools/files/duplicate.php:113 concrete/tools/i18n_js.php:177
+#: concrete/tools/files/duplicate.php:113 concrete/tools/i18n_js.php:179
 #: concrete/tools/versions.php:363
 msgid "Copy"
 msgstr "انسخ"
@@ -1053,7 +1067,7 @@ msgstr "ركّب السمة"
 #: concrete/blocks/form/form_setup_html.php:18
 #: concrete/blocks/page_list/page_list_form.php:8
 #: concrete/elements/collection_theme.php:118
-#: concrete/elements/collection_theme.php:119 concrete/tools/i18n_js.php:114
+#: concrete/elements/collection_theme.php:119 concrete/tools/i18n_js.php:116
 #: concrete/tools/marketplace/details.php:106
 #: concrete/tools/marketplace/details.php:107
 #: concrete/tools/marketplace/refresh_theme.php:41
@@ -1194,7 +1208,7 @@ msgid "Full Sitemap"
 msgstr "خريطة الموقع الكاملة"
 
 #: concrete/config/install/base/dashboard.xml:23
-#: concrete/tools/i18n_js.php:138
+#: concrete/tools/i18n_js.php:140
 #: concrete/tools/sitemap_search_selector.php:36
 msgid "Flat View"
 msgstr "خريطة الموقع السطحية"
@@ -1506,7 +1520,7 @@ msgstr ""
 msgid "Page permissions saved successfully."
 msgstr ""
 
-#: concrete/tools/i18n_js.php:181
+#: concrete/tools/i18n_js.php:183
 #: concrete/tools/panels/details/page/properties.php:14
 msgid "Properties"
 msgstr "الخواص"
@@ -1987,7 +2001,7 @@ msgstr "الصق من الحافظة"
 #: concrete/elements/block_header.php:130
 #: concrete/elements/pages/search.php:43 concrete/elements/panels/page.php:19
 #: concrete/tools/i18n_js.php:18 concrete/tools/i18n_js.php:46
-#: concrete/tools/i18n_js.php:124 concrete/views/panels/page/design.php:10
+#: concrete/tools/i18n_js.php:126 concrete/views/panels/page/design.php:10
 msgid "Design"
 msgstr "التصميم"
 
@@ -2068,7 +2082,7 @@ msgstr "أغلق"
 #: concrete/single_pages/account/profile/public.php:13
 #: concrete/single_pages/dashboard/system/mail/importers.php:110
 #: concrete/single_pages/dashboard/users/points/actions.php:102
-#: concrete/tools/i18n_js.php:36 concrete/tools/i18n_js.php:175
+#: concrete/tools/i18n_js.php:36 concrete/tools/i18n_js.php:177
 msgid "Edit"
 msgstr "عدّل"
 
@@ -2142,7 +2156,7 @@ msgstr "جلب بيانات السمة من متجر concrete5.org"
 msgid "Retrieving add-on data from concrete5.org marketplace."
 msgstr "جلب بيانات الإضافة من متجر concrete5.org"
 
-#: concrete/tools/i18n_js.php:57 concrete/tools/i18n_js.php:174
+#: concrete/tools/i18n_js.php:57 concrete/tools/i18n_js.php:176
 msgid "Clear"
 msgstr "نظّف"
 
@@ -2275,64 +2289,74 @@ msgstr "أزل من المجموعة"
 msgid "Add to Group"
 msgstr "أضف إلى المجموعة"
 
-#: concrete/tools/i18n_js.php:93
+#: concrete/tools/i18n_js.php:89
+msgid "Let's start editing a page."
+msgstr ""
+
+#: concrete/elements/attribute/categories/user.php:24
+#: concrete/elements/page_types/composer/form/output/buttons.php:11
+#: concrete/tools/i18n_js.php:90
+msgid "Edit Mode"
+msgstr "وضع التعديل"
+
+#: concrete/tools/i18n_js.php:95
 msgid "Insert Link to File"
 msgstr ""
 
-#: concrete/tools/i18n_js.php:94
+#: concrete/tools/i18n_js.php:96
 msgid "Insert Image"
 msgstr ""
 
-#: concrete/tools/i18n_js.php:95
+#: concrete/tools/i18n_js.php:97
 msgid "Link to Page"
 msgstr ""
 
-#: concrete/elements/panels/page.php:23 concrete/tools/i18n_js.php:101
+#: concrete/elements/panels/page.php:23 concrete/tools/i18n_js.php:103
 #: concrete/views/panels/details/page/seo.php:6
 msgid "SEO"
 msgstr ""
 
 #: concrete/blocks/google_map/form_setup_html.php:15
-#: concrete/elements/panels/page.php:26 concrete/tools/i18n_js.php:102
-#: concrete/tools/i18n_js.php:103
+#: concrete/elements/panels/page.php:26 concrete/tools/i18n_js.php:104
+#: concrete/tools/i18n_js.php:105
 #: concrete/views/dialogs/file/properties.php:87
 #: concrete/views/panels/details/page/location.php:5
 msgid "Location"
 msgstr "الموقع"
 
-#: concrete/tools/i18n_js.php:104 concrete/tools/i18n_js.php:115
+#: concrete/tools/i18n_js.php:106 concrete/tools/i18n_js.php:117
 msgid "Visit"
 msgstr "اعرض"
 
-#: concrete/tools/i18n_js.php:105
+#: concrete/tools/i18n_js.php:107
 msgid "Edit External Link"
 msgstr "عدّل الرابط الخارجي"
 
-#: concrete/tools/i18n_js.php:107
+#: concrete/tools/i18n_js.php:109
 msgid "Copy Progress"
 msgstr "تقدُّم عملية النسخ"
 
-#: concrete/tools/i18n_js.php:108
+#: concrete/tools/i18n_js.php:110
 msgid "Add External Link"
 msgstr "أضف رابطاً خارجياً"
 
-#: concrete/tools/i18n_js.php:109
+#: concrete/tools/i18n_js.php:111
 msgid "Send To Top"
 msgstr "أرسل للأعلى"
 
-#: concrete/tools/i18n_js.php:110
+#: concrete/tools/i18n_js.php:112
 msgid "Send To Bottom"
 msgstr "أرسل للأسفل"
 
-#: concrete/tools/i18n_js.php:111
+#: concrete/tools/i18n_js.php:113
 msgid "Empty Trash"
 msgstr "إفراغ سلّة المهملات"
 
-#: concrete/tools/i18n_js.php:112
+#: concrete/tools/i18n_js.php:114
 msgid "Restore Page"
 msgstr "استعِد الصفحة"
 
-#: concrete/tools/i18n_js.php:113
+#: concrete/tools/i18n_js.php:115
 msgid "Delete Forever"
 msgstr "احذف نهائياً"
 
@@ -2340,108 +2364,108 @@ msgstr "احذف نهائياً"
 #: concrete/config/install/base/dashboard.xml:117
 #: concrete/config/install/base/dashboard.xml:315
 #: concrete/config/install/base/dashboard.xml:731
-#: concrete/elements/panels/page.php:36 concrete/tools/i18n_js.php:116
-#: concrete/tools/i18n_js.php:119 concrete/views/panels/page/attributes.php:6
+#: concrete/elements/panels/page.php:36 concrete/tools/i18n_js.php:118
+#: concrete/tools/i18n_js.php:121 concrete/views/panels/page/attributes.php:6
 msgid "Attributes"
 msgstr "الصفات"
 
-#: concrete/elements/panels/page.php:40 concrete/tools/i18n_js.php:117
-#: concrete/tools/i18n_js.php:118
+#: concrete/elements/panels/page.php:40 concrete/tools/i18n_js.php:119
+#: concrete/tools/i18n_js.php:120
 msgid "Caching"
 msgstr ""
 
-#: concrete/tools/i18n_js.php:120
+#: concrete/tools/i18n_js.php:122
 #: concrete/views/panels/details/page/permissions/advanced.php:5
 #: concrete/views/panels/details/page/permissions/simple.php:5
 msgid "Page Permissions"
 msgstr "صلاحيات الصفحة"
 
-#: concrete/tools/i18n_js.php:122
+#: concrete/tools/i18n_js.php:124
 msgid "Page permissions updated successfully."
 msgstr "حُدّثت صلاحيات الصفحة بنجاح."
 
-#: concrete/tools/i18n_js.php:123
+#: concrete/tools/i18n_js.php:125
 msgid "Theme and page type updated successfully."
 msgstr "حُدّثت السمة ونوع الصفحة بنجاح."
 
-#: concrete/elements/panels/page.php:46 concrete/tools/i18n_js.php:125
+#: concrete/elements/panels/page.php:46 concrete/tools/i18n_js.php:127
 #: concrete/views/dialogs/file/properties.php:12
 #: concrete/views/dialogs/file/properties.php:169
 #: concrete/views/panels/page/versions.php:284
 msgid "Versions"
 msgstr "النُّسخ"
 
-#: concrete/tools/i18n_js.php:127
+#: concrete/tools/i18n_js.php:129
 msgid "Delete Pages"
 msgstr "احذف الصفحات"
 
-#: concrete/tools/i18n_js.php:128
+#: concrete/tools/i18n_js.php:130
 msgid "The page has been removed successfully."
 msgstr "أزيلت الصفحة بنجاح."
 
-#: concrete/tools/i18n_js.php:129
+#: concrete/tools/i18n_js.php:131
 msgid ""
 "Delete request saved. You must complete the workflow before the page is "
 "fully removed."
 msgstr "حُفظ طلب الحذف. يجب أن تتمّ سيْر العمل قبل أن تُزال هذه الصفحة فعلياً."
 
-#: concrete/elements/collection_add.php:86 concrete/tools/i18n_js.php:130
+#: concrete/elements/collection_add.php:86 concrete/tools/i18n_js.php:132
 msgid "Add Page"
 msgstr "أضف صفحة"
 
-#: concrete/elements/pages/search.php:36 concrete/tools/i18n_js.php:131
+#: concrete/elements/pages/search.php:36 concrete/tools/i18n_js.php:133
 msgid "Move/Copy"
 msgstr "انقل/انسخ"
 
-#: concrete/tools/i18n_js.php:132
+#: concrete/tools/i18n_js.php:134
 msgid "Change Page Order"
 msgstr "غيّر ترتيب الصفحات"
 
-#: concrete/tools/i18n_js.php:133
+#: concrete/tools/i18n_js.php:135
 msgid "Move or reorder pages by dragging their icons."
 msgstr "انقل أو أعد ترتيب الصفحات بسحب أيقونتها."
 
-#: concrete/tools/i18n_js.php:134
+#: concrete/tools/i18n_js.php:136
 msgid "Choose a new parent page from the sitemap."
 msgstr "اختر صفحة حاوية جديدة من خريطة الموقع."
 
-#: concrete/tools/i18n_js.php:135
+#: concrete/tools/i18n_js.php:137
 msgid "Edit in Composer"
 msgstr "عدّل في المؤلف"
 
-#: concrete/tools/i18n_js.php:137
+#: concrete/tools/i18n_js.php:139
 msgid "Search Pages"
 msgstr "ابحث عن الصفحات"
 
-#: concrete/tools/i18n_js.php:139
+#: concrete/tools/i18n_js.php:141
 msgid "Back to Sitemap"
 msgstr "ارجع إلى خريطة الموقع"
 
-#: concrete/tools/i18n_js.php:140
+#: concrete/tools/i18n_js.php:142
 msgid "Search Results"
 msgstr "نتائج البحث"
 
-#: concrete/tools/i18n_js.php:141
+#: concrete/tools/i18n_js.php:143
 msgid "Created By"
 msgstr "أنشأه"
 
-#: concrete/tools/i18n_js.php:142
+#: concrete/tools/i18n_js.php:144
 msgid "Choose a Page"
 msgstr "اختر صفحة"
 
-#: concrete/tools/i18n_js.php:143
+#: concrete/tools/i18n_js.php:145
 msgid "Viewing"
 msgstr "تشاهد"
 
-#: concrete/tools/i18n_js.php:144
+#: concrete/tools/i18n_js.php:146
 msgid "Result(s)"
 msgstr "النتائج"
 
-#: concrete/tools/i18n_js.php:145
+#: concrete/tools/i18n_js.php:147
 msgid "max"
 msgstr "القصوى"
 
-#: concrete/tools/i18n_js.php:146
+#: concrete/tools/i18n_js.php:148
 msgid "No results found."
 msgstr "لم يعثر على شيء."
 
@@ -2449,99 +2473,99 @@ msgstr "لم يعثر على شيء."
 #: concrete/single_pages/dashboard/pages/templates/view.php:13
 #: concrete/single_pages/dashboard/system/attributes/topics/view.php:11
 #: concrete/single_pages/dashboard/system/backup/backup.php:30
-#: concrete/tools/i18n_js.php:147
+#: concrete/tools/i18n_js.php:149
 msgid "Are you sure?"
 msgstr "متأكد؟"
 
-#: concrete/tools/i18n_js.php:148
+#: concrete/tools/i18n_js.php:150
 msgid "Unable to load sitemap data. Response received: "
 msgstr "تعذر تحميل بيانات خريطة الموقع. الردّ الوارد:"
 
-#: concrete/tools/i18n_js.php:149
+#: concrete/tools/i18n_js.php:151
 msgid "Unable to load sitemap data."
 msgstr "تعذر تحميل بيانات خريطة الموقع."
 
-#: concrete/tools/i18n_js.php:150
+#: concrete/tools/i18n_js.php:152
 msgid "on"
 msgstr "في"
 
-#: concrete/tools/i18n_js.php:156
+#: concrete/tools/i18n_js.php:158
 msgid "Resume Editing"
 msgstr "أكمل التحرير"
 
-#: concrete/tools/i18n_js.php:157
+#: concrete/tools/i18n_js.php:159
 msgid "No Suggestions"
 msgstr "لا اقتراحات"
 
-#: concrete/tools/i18n_js.php:163
+#: concrete/tools/i18n_js.php:165
 msgid "Edit Group"
 msgstr "عدّل المجموعة"
 
-#: concrete/tools/i18n_js.php:164
+#: concrete/tools/i18n_js.php:166
 msgid "Edit Permissions"
 msgstr "عدّل الصلاحيات"
 
 #: concrete/elements/dashboard/attributes_table.php:16
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:399
-#: concrete/tools/i18n_js.php:170
+#: concrete/tools/i18n_js.php:172
 msgid "View"
 msgstr "عرض"
 
-#: concrete/elements/users/search.php:47 concrete/tools/i18n_js.php:172
+#: concrete/elements/users/search.php:47 concrete/tools/i18n_js.php:174
 msgid "Choose"
 msgstr "اختر"
 
-#: concrete/tools/i18n_js.php:173
+#: concrete/tools/i18n_js.php:175
 msgid "Copy File"
 msgstr "نسخ الملفات"
 
-#: concrete/tools/i18n_js.php:178
+#: concrete/tools/i18n_js.php:180
 msgid "Choose New File"
 msgstr "اختر ملفاً جديداً"
 
 #: concrete/config/install/base/dashboard.xml:738
 #: concrete/elements/files/search.php:34 concrete/elements/files/search.php:66
-#: concrete/tools/i18n_js.php:179
+#: concrete/tools/i18n_js.php:181
 msgid "Sets"
 msgstr "المجموعات"
 
 #: concrete/config/install/base/dashboard.xml:47
-#: concrete/tools/i18n_js.php:183
+#: concrete/tools/i18n_js.php:185
 msgid "File Manager"
 msgstr "مدير الملفات"
 
-#: concrete/tools/i18n_js.php:184
+#: concrete/tools/i18n_js.php:186
 msgid "You must choose a file."
 msgstr "يجب أن تختار ملفاً."
 
-#: concrete/elements/files/search.php:35 concrete/tools/i18n_js.php:185
+#: concrete/elements/files/search.php:35 concrete/tools/i18n_js.php:187
 #: concrete/views/dialogs/file/properties.php:29
 msgid "Rescan"
 msgstr "حدّث البيانات"
 
-#: concrete/tools/i18n_js.php:186
+#: concrete/tools/i18n_js.php:188
 msgid "Pending"
 msgstr "بالانتظار"
 
-#: concrete/tools/i18n_js.php:187
+#: concrete/tools/i18n_js.php:189
 msgid "Upload Complete"
 msgstr "اكتملت عملية الرفع"
 
-#: concrete/tools/i18n_js.php:188
+#: concrete/tools/i18n_js.php:190
 msgid "Upload Progress"
 msgstr ""
 
-#: concrete/tools/i18n_js.php:205
+#: concrete/tools/i18n_js.php:207
 msgid "Select Some Options"
 msgstr "اختر بعض الخيارات"
 
-#: concrete/tools/i18n_js.php:206
+#: concrete/tools/i18n_js.php:208
 msgid "Select an Option"
 msgstr "اختر أحد الخَيارات"
 
 #. After this text we have a search criteria: for instance 'No results match
 #. "Criteria"'
-#: concrete/tools/i18n_js.php:207
+#: concrete/tools/i18n_js.php:209
 msgid "No results match"
 msgstr "لا يوجد نتائج مطابقة"
 
@@ -2655,7 +2679,6 @@ msgstr "الافتراضي - %s دقائق"
 msgid "Custom"
 msgstr "مُخصّص"
 
-#: concrete/core/Conversation/Message/Message.php:125
 #: concrete/elements/collection_speed_settings.php:155
 #: concrete/single_pages/dashboard/system/permissions/blacklist.php:22
 #: concrete/tools/pages/speed_settings.php:166
@@ -3181,7 +3204,7 @@ msgstr "الصلة"
 msgid "The package has been updated successfully."
 msgstr "حُدّثت الحزمة بنجاح."
 
-#: concrete/controllers/single_page/dashboard/extend/install.php:158
+#: concrete/controllers/single_page/dashboard/extend/install.php:161
 #: concrete/controllers/single_page/dashboard/extend/update.php:68
 msgid "Invalid marketplace item ID."
 msgstr "مُعرّف عنصر المتجر غير صالح."
@@ -3198,20 +3221,24 @@ msgstr "الحزمة غير صالحة."
 msgid "The package type has been uninstalled."
 msgstr "أُزيل نوع الحزمة."
 
-#: concrete/controllers/single_page/dashboard/extend/install.php:143
+#: concrete/controllers/single_page/dashboard/extend/install.php:142
+msgid "Package controller file not found."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/extend/install.php:146
 msgid "You do not have permission to install add-ons."
 msgstr "ليس لديك صلاحية تركيب الإضافات."
 
-#: concrete/controllers/single_page/dashboard/extend/install.php:148
+#: concrete/controllers/single_page/dashboard/extend/install.php:151
 msgid "The package has been installed."
 msgstr "رُكّبت هذه الحزمة."
 
-#: concrete/controllers/single_page/dashboard/extend/install.php:171
+#: concrete/controllers/single_page/dashboard/extend/install.php:174
 #, php-format
 msgid "Marketplace item %s downloaded successfully."
 msgstr "نُزّل %s من المتجر بنجاح."
 
-#: concrete/controllers/single_page/dashboard/extend/install.php:174
+#: concrete/controllers/single_page/dashboard/extend/install.php:177
 msgid "You do not have permission to download add-ons."
 msgstr "ليس لديك صلاحية تنزيل الإضافات."
 
@@ -4919,10 +4946,6 @@ msgid ""
 "or the target directory does not exist."
 msgstr "تعذر نسخ الدليل %s إلى %s. قد تكون الصلاحيات غير مُعيّنة بشكل صحيح أو أن الدليل المُراد النقل إليه غير موجود."
 
-#: concrete/core/File/FileList.php:124
-msgid "Could not open with ZipArchive::CREATE"
-msgstr "تعذر فتح الملف باستخدام ZipArchive::CREATE"
-
 #: concrete/core/File/FileList.php:138
 #, php-format
 msgid "Failed to create zip file as \"%s\": %s"
@@ -6534,66 +6557,83 @@ msgstr ""
 
 #: concrete/core/Conversation/Discussion/Discussion.php:35
 #: concrete/core/Conversation/Message/Message.php:115
-#: concrete/core/Conversation/Message/Message.php:153
-#: concrete/core/Conversation/Message/Message.php:155
-#: concrete/core/Conversation/Message/Message.php:157
 #, php-format
 msgid "Posted on %s"
 msgstr ""
 
-#: concrete/core/Conversation/Message/Message.php:121
-msgid "year"
-msgstr ""
+#: concrete/core/Conversation/Message/Message.php:132
+#: concrete/core/Conversation/Message/Message.php:148
+#, php-format
+msgid "%d second ago"
+msgid_plural "%d seconds ago"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
 
-#: concrete/core/Conversation/Message/Message.php:121
-msgid "years"
-msgstr ""
+#: concrete/core/Conversation/Message/Message.php:138
+#, php-format
+msgid "%d year ago"
+msgid_plural "%d years ago"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
 
-#: concrete/core/Conversation/Message/Message.php:122
-msgid "month"
-msgstr ""
+#: concrete/core/Conversation/Message/Message.php:140
+#, php-format
+msgid "%d month ago"
+msgid_plural "%d months ago"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
 
-#: concrete/core/Conversation/Message/Message.php:122
-#: concrete/elements/permission/duration.php:136
-msgid "months"
-msgstr "أشهر"
+#: concrete/core/Conversation/Message/Message.php:142
+#, php-format
+msgid "%d day ago"
+msgid_plural "%d days ago"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
 
-#: concrete/core/Conversation/Message/Message.php:123
-msgid "day"
-msgstr "اليوم"
+#: concrete/core/Conversation/Message/Message.php:144
+#, php-format
+msgid "%d hour ago"
+msgid_plural "%d hours ago"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
 
-#: concrete/core/Conversation/Message/Message.php:123
-#: concrete/elements/permission/duration.php:115
-msgid "days"
-msgstr "أيام"
+#: concrete/core/Conversation/Message/Message.php:146
+#, php-format
+msgid "%d minute ago"
+msgid_plural "%d minutes ago"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
 
-#: concrete/core/Conversation/Message/Message.php:124
-msgid "hour"
-msgstr "ساعة"
-
-#: concrete/core/Conversation/Message/Message.php:124
-msgid "hours"
-msgstr "ساعات"
-
-#: concrete/core/Conversation/Message/Message.php:125
-msgid "minute"
-msgstr "دقيقة"
-
-#: concrete/core/Conversation/Message/Message.php:126
-msgid "second"
-msgstr "ثانية"
-
-#: concrete/core/Conversation/Message/Message.php:126
-#: concrete/single_pages/dashboard/system/permissions/blacklist.php:17
-msgid "seconds"
-msgstr "ثواني"
-
-#: concrete/core/Conversation/Message/Message.php:134
-msgid "0 seconds ago"
-msgstr ""
-
-#: concrete/core/Conversation/Message/Message.php:145
-msgid "ago"
+#: concrete/core/Conversation/Message/Message.php:154
+#: concrete/core/Conversation/Message/Message.php:156
+#: concrete/core/Conversation/Message/Message.php:158
+#, php-format
+msgctxt "Message posted date"
+msgid "Posted on %s"
 msgstr ""
 
 #: concrete/core/Localization/Service/Date.php:165
@@ -7009,11 +7049,6 @@ msgstr "يظهر في الملف الشخصي العام."
 #: concrete/elements/attribute/categories/user.php:19
 msgid "Displayed on Member List."
 msgstr "يظهر في قائمة الأعضاء."
-
-#: concrete/elements/attribute/categories/user.php:24
-#: concrete/elements/page_types/composer/form/output/buttons.php:11
-msgid "Edit Mode"
-msgstr "وضع التعديل"
 
 #: concrete/elements/attribute/categories/user.php:26
 msgid "Editable in Profile."
@@ -8157,6 +8192,10 @@ msgstr "يتكرر"
 msgid "Repeat every"
 msgstr "تكرار كل"
 
+#: concrete/elements/permission/duration.php:115
+msgid "days"
+msgstr "أيام"
+
 #: concrete/elements/permission/duration.php:125
 msgid "Repeat By"
 msgstr "يتكرر في"
@@ -8168,6 +8207,10 @@ msgstr "يوم الشهر"
 #: concrete/elements/permission/duration.php:128
 msgid "Day of Week"
 msgstr "يوم الأسبوع"
+
+#: concrete/elements/permission/duration.php:136
+msgid "months"
+msgstr "أشهر"
 
 #: concrete/elements/permission/duration.php:149
 msgid "On"
@@ -11926,7 +11969,7 @@ msgid "(Untitled Page)"
 msgstr "(صفحة غير مُعنْونة)"
 
 #: concrete/single_pages/dashboard/composer/drafts.php:31
-msgid "(Unknown)"
+msgid "(Unknown author)"
 msgstr ""
 
 #: concrete/single_pages/dashboard/composer/drafts.php:51
@@ -13407,6 +13450,10 @@ msgstr "محاولات تسجيل الدخول الفاشلة"
 #: concrete/single_pages/dashboard/system/permissions/blacklist.php:15
 msgid "in"
 msgstr "في"
+
+#: concrete/single_pages/dashboard/system/permissions/blacklist.php:17
+msgid "seconds"
+msgstr "ثواني"
 
 #: concrete/single_pages/dashboard/system/permissions/blacklist.php:20
 msgid "Ban IP For"

@@ -1,12 +1,14 @@
 # 
 # Translators:
 # MrLindau <fredrik@fxlindau.se>, 2014
+# Perra Jonasson <perra.jonasson@gmail.com>, 2014
+# rkalitta <robert.kalitta@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-05-06 22:00+0000\n"
-"PO-Revision-Date: 2014-05-07 11:40+0000\n"
+"POT-Creation-Date: 2014-05-07 22:00+0000\n"
+"PO-Revision-Date: 2014-05-08 20:00+0000\n"
 "Last-Translator: MrLindau <fredrik@fxlindau.se>\n"
 "Language-Team: Swedish (Sweden) (http://www.transifex.com/projects/p/concrete5/language/sv_SE/)\n"
 "MIME-Version: 1.0\n"
@@ -100,6 +102,7 @@ msgid "Confirm Password"
 msgstr "Bekräfta lösenord"
 
 #: concrete/authentication/concrete/change_password.php:22
+#: concrete/authentication/concrete/form.php:30
 msgid "Sign In"
 msgstr "Logga in"
 
@@ -171,6 +174,10 @@ msgstr "Användarnamn"
 #: concrete/views/frontend/install.php:160
 msgid "Password"
 msgstr "Lösenord"
+
+#: concrete/authentication/concrete/form.php:25
+msgid "Remain logged in to website."
+msgstr "Förbli inloggad på webbplatsen."
 
 #: concrete/authentication/concrete/form.php:26
 msgid "Forgot Password?"
@@ -517,15 +524,24 @@ msgstr "Kunde inte söka i filgrupper."
 msgid "None of the requested files could be found."
 msgstr "Ingen av de efterfrågade filerna kunde hittas."
 
-#: concrete/tools/files/download.php:50
+#: concrete/core/File/FileList.php:124 concrete/tools/files/download.php:45
+msgid "Could not open with ZipArchive::CREATE"
+msgstr "Kunde inte öppna med ZipArchive::CREATE"
+
+#: concrete/tools/files/download.php:60
+#, php-format
+msgid "External zip failed. Error description: %s"
+msgstr "Extern zip misslyckades. Felbeskrivning: %s"
+
+#: concrete/tools/files/download.php:71
 msgid "The requested file couldn't be found."
 msgstr "Den efterfrågade filen kunde inte hittas."
 
-#: concrete/tools/files/download.php:52
+#: concrete/tools/files/download.php:73
 msgid "The requested file is not valid."
 msgstr "Den efterfrågade filen är ej giltig."
 
-#: concrete/tools/files/download.php:54
+#: concrete/tools/files/download.php:75
 msgid "An unexpected error occurred while looking for the requested file"
 msgstr "Ett oväntat fel uppstod vid sökningen efter den efterfrågade filen"
 
@@ -545,7 +561,7 @@ msgid "Add from Incoming Directory"
 msgstr "Lägg till från katalogen incoming"
 
 #: concrete/tools/files/replace.php:44 concrete/tools/files/replace.php:65
-#: concrete/tools/i18n_js.php:176
+#: concrete/tools/i18n_js.php:178
 msgid "Replace"
 msgstr "Ersätt"
 
@@ -639,8 +655,8 @@ msgstr "Lagringsplats för filer sparad."
 #: concrete/elements/panels/page.php:43
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:62
 #: concrete/single_pages/dashboard/pages/types/view.php:43
-#: concrete/tools/files/permissions.php:47 concrete/tools/i18n_js.php:121
-#: concrete/tools/i18n_js.php:180
+#: concrete/tools/files/permissions.php:47 concrete/tools/i18n_js.php:123
+#: concrete/tools/i18n_js.php:182
 msgid "Permissions"
 msgstr "Behörighet"
 
@@ -862,7 +878,7 @@ msgstr "Ett fel uppstod vid nerladdning från "
 #: concrete/single_pages/dashboard/system/backup/backup.php:113
 #: concrete/single_pages/dashboard/system/backup/update.php:17
 #: concrete/single_pages/download_file.php:28 concrete/tools/files/view.php:35
-#: concrete/tools/i18n_js.php:171
+#: concrete/tools/i18n_js.php:173
 msgid "Download"
 msgstr "Ladda ner"
 
@@ -908,8 +924,8 @@ msgstr "(Observera: filerna i samlingen kommer inte att tas bort.)"
 #: concrete/single_pages/profile/messages.php:43
 #: concrete/tools/files/delete.php:92 concrete/tools/files/delete_set.php:47
 #: concrete/tools/gathering/item/delete.php:28 concrete/tools/i18n_js.php:27
-#: concrete/tools/i18n_js.php:85 concrete/tools/i18n_js.php:106
-#: concrete/tools/i18n_js.php:126 concrete/tools/i18n_js.php:182
+#: concrete/tools/i18n_js.php:85 concrete/tools/i18n_js.php:108
+#: concrete/tools/i18n_js.php:128 concrete/tools/i18n_js.php:184
 #: concrete/tools/pages/delete.php:122 concrete/tools/users/bulk_delete.php:67
 #: concrete/views/dialogs/page/delete.php:19
 #: concrete/views/panels/page/versions.php:37
@@ -945,7 +961,7 @@ msgstr "Är du säker på att du vill kopiera följande filer?"
 #: concrete/elements/files/search.php:36
 #: concrete/elements/permission/clipboard.php:5
 #: concrete/tools/dashboard/sitemap_drag_request.php:212
-#: concrete/tools/files/duplicate.php:113 concrete/tools/i18n_js.php:177
+#: concrete/tools/files/duplicate.php:113 concrete/tools/i18n_js.php:179
 #: concrete/tools/versions.php:363
 msgid "Copy"
 msgstr "Kopiera"
@@ -1050,7 +1066,7 @@ msgstr "Installera tema"
 #: concrete/blocks/form/form_setup_html.php:18
 #: concrete/blocks/page_list/page_list_form.php:8
 #: concrete/elements/collection_theme.php:118
-#: concrete/elements/collection_theme.php:119 concrete/tools/i18n_js.php:114
+#: concrete/elements/collection_theme.php:119 concrete/tools/i18n_js.php:116
 #: concrete/tools/marketplace/details.php:106
 #: concrete/tools/marketplace/details.php:107
 #: concrete/tools/marketplace/refresh_theme.php:41
@@ -1187,7 +1203,7 @@ msgid "Full Sitemap"
 msgstr "Träd"
 
 #: concrete/config/install/base/dashboard.xml:23
-#: concrete/tools/i18n_js.php:138
+#: concrete/tools/i18n_js.php:140
 #: concrete/tools/sitemap_search_selector.php:36
 msgid "Flat View"
 msgstr "Lista"
@@ -1487,7 +1503,7 @@ msgstr "Förfrågan om sidbehörigheter sparad. Du måste godkänna denna arbets
 msgid "Page permissions saved successfully."
 msgstr "Sidbehörigheter sparade."
 
-#: concrete/tools/i18n_js.php:181
+#: concrete/tools/i18n_js.php:183
 #: concrete/tools/panels/details/page/properties.php:14
 msgid "Properties"
 msgstr "Egenskaper"
@@ -1968,7 +1984,7 @@ msgstr "Klistra in från klippbordet"
 #: concrete/elements/block_header.php:130
 #: concrete/elements/pages/search.php:43 concrete/elements/panels/page.php:19
 #: concrete/tools/i18n_js.php:18 concrete/tools/i18n_js.php:46
-#: concrete/tools/i18n_js.php:124 concrete/views/panels/page/design.php:10
+#: concrete/tools/i18n_js.php:126 concrete/views/panels/page/design.php:10
 msgid "Design"
 msgstr "Design"
 
@@ -2049,7 +2065,7 @@ msgstr "Stäng"
 #: concrete/single_pages/account/profile/public.php:13
 #: concrete/single_pages/dashboard/system/mail/importers.php:110
 #: concrete/single_pages/dashboard/users/points/actions.php:102
-#: concrete/tools/i18n_js.php:36 concrete/tools/i18n_js.php:175
+#: concrete/tools/i18n_js.php:36 concrete/tools/i18n_js.php:177
 msgid "Edit"
 msgstr "Redigera"
 
@@ -2123,7 +2139,7 @@ msgstr "Mottager tema från concrete5.org:s marknadsplats."
 msgid "Retrieving add-on data from concrete5.org marketplace."
 msgstr "Mottager tillägg från concrete5.org:s marknadsplats."
 
-#: concrete/tools/i18n_js.php:57 concrete/tools/i18n_js.php:174
+#: concrete/tools/i18n_js.php:57 concrete/tools/i18n_js.php:176
 msgid "Clear"
 msgstr "Töm"
 
@@ -2256,64 +2272,74 @@ msgstr "Ta bort från grupp"
 msgid "Add to Group"
 msgstr "Lägg till i grupp"
 
-#: concrete/tools/i18n_js.php:93
+#: concrete/tools/i18n_js.php:89
+msgid "Let's start editing a page."
+msgstr "Låt oss börja redigera en sida."
+
+#: concrete/elements/attribute/categories/user.php:24
+#: concrete/elements/page_types/composer/form/output/buttons.php:11
+#: concrete/tools/i18n_js.php:90
+msgid "Edit Mode"
+msgstr "Redigeringsläge"
+
+#: concrete/tools/i18n_js.php:95
 msgid "Insert Link to File"
 msgstr "Infoga länk till fil"
 
-#: concrete/tools/i18n_js.php:94
+#: concrete/tools/i18n_js.php:96
 msgid "Insert Image"
 msgstr "Infoga bild"
 
-#: concrete/tools/i18n_js.php:95
+#: concrete/tools/i18n_js.php:97
 msgid "Link to Page"
 msgstr "Länk till sida"
 
-#: concrete/elements/panels/page.php:23 concrete/tools/i18n_js.php:101
+#: concrete/elements/panels/page.php:23 concrete/tools/i18n_js.php:103
 #: concrete/views/panels/details/page/seo.php:6
 msgid "SEO"
 msgstr "SEO"
 
 #: concrete/blocks/google_map/form_setup_html.php:15
-#: concrete/elements/panels/page.php:26 concrete/tools/i18n_js.php:102
-#: concrete/tools/i18n_js.php:103
+#: concrete/elements/panels/page.php:26 concrete/tools/i18n_js.php:104
+#: concrete/tools/i18n_js.php:105
 #: concrete/views/dialogs/file/properties.php:87
 #: concrete/views/panels/details/page/location.php:5
 msgid "Location"
 msgstr "Plats"
 
-#: concrete/tools/i18n_js.php:104 concrete/tools/i18n_js.php:115
+#: concrete/tools/i18n_js.php:106 concrete/tools/i18n_js.php:117
 msgid "Visit"
 msgstr "Besök"
 
-#: concrete/tools/i18n_js.php:105
+#: concrete/tools/i18n_js.php:107
 msgid "Edit External Link"
 msgstr "Redigera extern länk."
 
-#: concrete/tools/i18n_js.php:107
+#: concrete/tools/i18n_js.php:109
 msgid "Copy Progress"
 msgstr "Kopieringsförlopp "
 
-#: concrete/tools/i18n_js.php:108
+#: concrete/tools/i18n_js.php:110
 msgid "Add External Link"
 msgstr "Lägg till extern länk"
 
-#: concrete/tools/i18n_js.php:109
+#: concrete/tools/i18n_js.php:111
 msgid "Send To Top"
 msgstr "Flytta överst"
 
-#: concrete/tools/i18n_js.php:110
+#: concrete/tools/i18n_js.php:112
 msgid "Send To Bottom"
 msgstr "Flytta nederst"
 
-#: concrete/tools/i18n_js.php:111
+#: concrete/tools/i18n_js.php:113
 msgid "Empty Trash"
 msgstr "Töm papperskorgen"
 
-#: concrete/tools/i18n_js.php:112
+#: concrete/tools/i18n_js.php:114
 msgid "Restore Page"
 msgstr "Återställ sida"
 
-#: concrete/tools/i18n_js.php:113
+#: concrete/tools/i18n_js.php:115
 msgid "Delete Forever"
 msgstr "Ta bort för alltid"
 
@@ -2321,108 +2347,108 @@ msgstr "Ta bort för alltid"
 #: concrete/config/install/base/dashboard.xml:117
 #: concrete/config/install/base/dashboard.xml:315
 #: concrete/config/install/base/dashboard.xml:731
-#: concrete/elements/panels/page.php:36 concrete/tools/i18n_js.php:116
-#: concrete/tools/i18n_js.php:119 concrete/views/panels/page/attributes.php:6
+#: concrete/elements/panels/page.php:36 concrete/tools/i18n_js.php:118
+#: concrete/tools/i18n_js.php:121 concrete/views/panels/page/attributes.php:6
 msgid "Attributes"
 msgstr "Egenskaper"
 
-#: concrete/elements/panels/page.php:40 concrete/tools/i18n_js.php:117
-#: concrete/tools/i18n_js.php:118
+#: concrete/elements/panels/page.php:40 concrete/tools/i18n_js.php:119
+#: concrete/tools/i18n_js.php:120
 msgid "Caching"
 msgstr "Caching"
 
-#: concrete/tools/i18n_js.php:120
+#: concrete/tools/i18n_js.php:122
 #: concrete/views/panels/details/page/permissions/advanced.php:5
 #: concrete/views/panels/details/page/permissions/simple.php:5
 msgid "Page Permissions"
 msgstr "Sidbehörigheter"
 
-#: concrete/tools/i18n_js.php:122
+#: concrete/tools/i18n_js.php:124
 msgid "Page permissions updated successfully."
 msgstr "Sidbehörigheter uppdaterade."
 
-#: concrete/tools/i18n_js.php:123
+#: concrete/tools/i18n_js.php:125
 msgid "Theme and page type updated successfully."
 msgstr "Tema och sidtyp uppdaterade."
 
-#: concrete/elements/panels/page.php:46 concrete/tools/i18n_js.php:125
+#: concrete/elements/panels/page.php:46 concrete/tools/i18n_js.php:127
 #: concrete/views/dialogs/file/properties.php:12
 #: concrete/views/dialogs/file/properties.php:169
 #: concrete/views/panels/page/versions.php:284
 msgid "Versions"
 msgstr "Versioner"
 
-#: concrete/tools/i18n_js.php:127
+#: concrete/tools/i18n_js.php:129
 msgid "Delete Pages"
 msgstr "Ta bort sidor"
 
-#: concrete/tools/i18n_js.php:128
+#: concrete/tools/i18n_js.php:130
 msgid "The page has been removed successfully."
 msgstr "Sidan är borttagen."
 
-#: concrete/tools/i18n_js.php:129
+#: concrete/tools/i18n_js.php:131
 msgid ""
 "Delete request saved. You must complete the workflow before the page is "
 "fully removed."
 msgstr "Förfrågan om borttagning är sparad. Du måste fullfölja arbetsflödet innan sidan tas bort helt och hållet."
 
-#: concrete/elements/collection_add.php:86 concrete/tools/i18n_js.php:130
+#: concrete/elements/collection_add.php:86 concrete/tools/i18n_js.php:132
 msgid "Add Page"
 msgstr "Lägg till sida"
 
-#: concrete/elements/pages/search.php:36 concrete/tools/i18n_js.php:131
+#: concrete/elements/pages/search.php:36 concrete/tools/i18n_js.php:133
 msgid "Move/Copy"
 msgstr "Flytta/kopiera"
 
-#: concrete/tools/i18n_js.php:132
+#: concrete/tools/i18n_js.php:134
 msgid "Change Page Order"
 msgstr "Ändra sidordning"
 
-#: concrete/tools/i18n_js.php:133
+#: concrete/tools/i18n_js.php:135
 msgid "Move or reorder pages by dragging their icons."
 msgstr "Flytta eller ändra ordning på filer genom att dra deras ikoner."
 
-#: concrete/tools/i18n_js.php:134
+#: concrete/tools/i18n_js.php:136
 msgid "Choose a new parent page from the sitemap."
 msgstr "Välj en ny överordnad sida från platskartan."
 
-#: concrete/tools/i18n_js.php:135
+#: concrete/tools/i18n_js.php:137
 msgid "Edit in Composer"
 msgstr "Redigera i Composer"
 
-#: concrete/tools/i18n_js.php:137
+#: concrete/tools/i18n_js.php:139
 msgid "Search Pages"
 msgstr "Sök sidor"
 
-#: concrete/tools/i18n_js.php:139
+#: concrete/tools/i18n_js.php:141
 msgid "Back to Sitemap"
 msgstr "Återgå till översikt"
 
-#: concrete/tools/i18n_js.php:140
+#: concrete/tools/i18n_js.php:142
 msgid "Search Results"
 msgstr "Sökresultat"
 
-#: concrete/tools/i18n_js.php:141
+#: concrete/tools/i18n_js.php:143
 msgid "Created By"
 msgstr "Skapad av"
 
-#: concrete/tools/i18n_js.php:142
+#: concrete/tools/i18n_js.php:144
 msgid "Choose a Page"
 msgstr "Välj en sida"
 
-#: concrete/tools/i18n_js.php:143
+#: concrete/tools/i18n_js.php:145
 msgid "Viewing"
 msgstr "Visar"
 
-#: concrete/tools/i18n_js.php:144
+#: concrete/tools/i18n_js.php:146
 msgid "Result(s)"
 msgstr "Resultat"
 
-#: concrete/tools/i18n_js.php:145
+#: concrete/tools/i18n_js.php:147
 msgid "max"
 msgstr "max"
 
-#: concrete/tools/i18n_js.php:146
+#: concrete/tools/i18n_js.php:148
 msgid "No results found."
 msgstr "Inga resultat hittades."
 
@@ -2430,99 +2456,99 @@ msgstr "Inga resultat hittades."
 #: concrete/single_pages/dashboard/pages/templates/view.php:13
 #: concrete/single_pages/dashboard/system/attributes/topics/view.php:11
 #: concrete/single_pages/dashboard/system/backup/backup.php:30
-#: concrete/tools/i18n_js.php:147
+#: concrete/tools/i18n_js.php:149
 msgid "Are you sure?"
 msgstr "Är du säker?"
 
-#: concrete/tools/i18n_js.php:148
+#: concrete/tools/i18n_js.php:150
 msgid "Unable to load sitemap data. Response received: "
 msgstr "Kunde inte ladda trädvyn. Mottaget svar: "
 
-#: concrete/tools/i18n_js.php:149
+#: concrete/tools/i18n_js.php:151
 msgid "Unable to load sitemap data."
 msgstr "Kunde inte ladda trädvyn."
 
-#: concrete/tools/i18n_js.php:150
+#: concrete/tools/i18n_js.php:152
 msgid "on"
 msgstr "den"
 
-#: concrete/tools/i18n_js.php:156
+#: concrete/tools/i18n_js.php:158
 msgid "Resume Editing"
 msgstr "Fortsätt redigering"
 
-#: concrete/tools/i18n_js.php:157
+#: concrete/tools/i18n_js.php:159
 msgid "No Suggestions"
 msgstr "Inga förslag"
 
-#: concrete/tools/i18n_js.php:163
+#: concrete/tools/i18n_js.php:165
 msgid "Edit Group"
 msgstr "Redigera grupp"
 
-#: concrete/tools/i18n_js.php:164
+#: concrete/tools/i18n_js.php:166
 msgid "Edit Permissions"
 msgstr "Redigera behörigheter"
 
 #: concrete/elements/dashboard/attributes_table.php:16
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:399
-#: concrete/tools/i18n_js.php:170
+#: concrete/tools/i18n_js.php:172
 msgid "View"
 msgstr "Visa"
 
-#: concrete/elements/users/search.php:47 concrete/tools/i18n_js.php:172
+#: concrete/elements/users/search.php:47 concrete/tools/i18n_js.php:174
 msgid "Choose"
 msgstr "Välj"
 
-#: concrete/tools/i18n_js.php:173
+#: concrete/tools/i18n_js.php:175
 msgid "Copy File"
 msgstr "Kopiera fil"
 
-#: concrete/tools/i18n_js.php:178
+#: concrete/tools/i18n_js.php:180
 msgid "Choose New File"
 msgstr "Välj ny fil"
 
 #: concrete/config/install/base/dashboard.xml:738
 #: concrete/elements/files/search.php:34 concrete/elements/files/search.php:66
-#: concrete/tools/i18n_js.php:179
+#: concrete/tools/i18n_js.php:181
 msgid "Sets"
 msgstr "Grupper"
 
 #: concrete/config/install/base/dashboard.xml:47
-#: concrete/tools/i18n_js.php:183
+#: concrete/tools/i18n_js.php:185
 msgid "File Manager"
 msgstr "Filhanterare"
 
-#: concrete/tools/i18n_js.php:184
+#: concrete/tools/i18n_js.php:186
 msgid "You must choose a file."
 msgstr "Du måste välja en fil."
 
-#: concrete/elements/files/search.php:35 concrete/tools/i18n_js.php:185
+#: concrete/elements/files/search.php:35 concrete/tools/i18n_js.php:187
 #: concrete/views/dialogs/file/properties.php:29
 msgid "Rescan"
 msgstr "Sök igen"
 
-#: concrete/tools/i18n_js.php:186
+#: concrete/tools/i18n_js.php:188
 msgid "Pending"
 msgstr "Väntande"
 
-#: concrete/tools/i18n_js.php:187
+#: concrete/tools/i18n_js.php:189
 msgid "Upload Complete"
 msgstr "Uppladdning klar"
 
-#: concrete/tools/i18n_js.php:188
+#: concrete/tools/i18n_js.php:190
 msgid "Upload Progress"
 msgstr "Status för uppladdning"
 
-#: concrete/tools/i18n_js.php:205
+#: concrete/tools/i18n_js.php:207
 msgid "Select Some Options"
 msgstr "Välj något alternativ"
 
-#: concrete/tools/i18n_js.php:206
+#: concrete/tools/i18n_js.php:208
 msgid "Select an Option"
 msgstr "Välj ett alternativ"
 
 #. After this text we have a search criteria: for instance 'No results match
 #. "Criteria"'
-#: concrete/tools/i18n_js.php:207
+#: concrete/tools/i18n_js.php:209
 msgid "No results match"
 msgstr "Inga resultat passade"
 
@@ -2636,7 +2662,6 @@ msgstr "Förval - %s minuter"
 msgid "Custom"
 msgstr "Egen"
 
-#: concrete/core/Conversation/Message/Message.php:125
 #: concrete/elements/collection_speed_settings.php:155
 #: concrete/single_pages/dashboard/system/permissions/blacklist.php:22
 #: concrete/tools/pages/speed_settings.php:166
@@ -3158,7 +3183,7 @@ msgstr "Relevans"
 msgid "The package has been updated successfully."
 msgstr "Paketet har uppdaterats."
 
-#: concrete/controllers/single_page/dashboard/extend/install.php:158
+#: concrete/controllers/single_page/dashboard/extend/install.php:161
 #: concrete/controllers/single_page/dashboard/extend/update.php:68
 msgid "Invalid marketplace item ID."
 msgstr "Ogiltigt objekt-ID för marknadsplatsen."
@@ -3175,20 +3200,24 @@ msgstr "Ogiltigt paket."
 msgid "The package type has been uninstalled."
 msgstr "Denna pakettyp har avinstallerats."
 
-#: concrete/controllers/single_page/dashboard/extend/install.php:143
+#: concrete/controllers/single_page/dashboard/extend/install.php:142
+msgid "Package controller file not found."
+msgstr "Styrenhetsfil för paket hittades inte."
+
+#: concrete/controllers/single_page/dashboard/extend/install.php:146
 msgid "You do not have permission to install add-ons."
 msgstr "Du saknar behörighet att installera tillägg."
 
-#: concrete/controllers/single_page/dashboard/extend/install.php:148
+#: concrete/controllers/single_page/dashboard/extend/install.php:151
 msgid "The package has been installed."
 msgstr "Paketet har installerats."
 
-#: concrete/controllers/single_page/dashboard/extend/install.php:171
+#: concrete/controllers/single_page/dashboard/extend/install.php:174
 #, php-format
 msgid "Marketplace item %s downloaded successfully."
 msgstr "Objektet %s laddades ner från marknadsplatsen."
 
-#: concrete/controllers/single_page/dashboard/extend/install.php:174
+#: concrete/controllers/single_page/dashboard/extend/install.php:177
 msgid "You do not have permission to download add-ons."
 msgstr "Du saknar behörighet att ladda ned tillägg."
 
@@ -4892,10 +4921,6 @@ msgid ""
 "or the target directory does not exist."
 msgstr "Kunde inte kopiera katalog %s till %s. Kanske behörigheterna är felsatta eller så finns inte målkatalogen."
 
-#: concrete/core/File/FileList.php:124
-msgid "Could not open with ZipArchive::CREATE"
-msgstr "Kunde inte öppna med ZipArchive::CREATE"
-
 #: concrete/core/File/FileList.php:138
 #, php-format
 msgid "Failed to create zip file as \"%s\": %s"
@@ -5875,7 +5900,7 @@ msgid ""
 "user's permissions before rendering the link for each page. Display Pages "
 "selects the level of the Sitemap where you'd like the menu to begin. Options"
 " for displaying sub-pages for each item are also available."
-msgstr "Skapa en navigeringsmenyn som återspeglar strukturen på din webbplatskarta. Välj först i vilken ordning sidorna visas. Visningsbehörigheter kontrollerar en användares behörigheter innan länken för varje sida visas. \"Visa sidor\" väljer nivån webbplatskartan där du vill att menyn ska börja. Alternativ för att visa undersidor för varje objekt finns också tillgängliga."
+msgstr "Skapa en navigeringsmenyn som återspeglar strukturen på din webbplatskarta. Välj först i vilken ordning sidorna visas. Visningsbehörigheter kontrollerar en användares behörigheter innan länken för varje sida visas. \"Visa sidor\" väljer nivån webbplatskartan där du vill att menyn ska börja. Inställningar för att visa undersidor för varje objekt finns också tillgängliga."
 
 #: concrete/core/Application/Service/UserInterface/Help.php:11
 msgid ""
@@ -5911,7 +5936,7 @@ msgid ""
 "Select a Flash movie that you've uploaded to the File Manager, then set "
 "options for quality desired and minimum version of Flash required for a "
 "browser to display the movie."
-msgstr "Välj en Flash-film som du har laddat upp till filhanteraren, och ange sedan  önskad kvalitet och lägsta version av Flash som krävs för en webbläsare att visa filmen."
+msgstr "Välj en Flash-film som du har laddat upp till filhanteraren, och ange sedan önskad kvalitet och lägsta version av Flash som krävs för en webbläsare att visa filmen."
 
 #: concrete/core/Application/Service/UserInterface/Help.php:17
 msgid ""
@@ -5964,7 +5989,7 @@ msgid ""
 "Sorting Options to define the order in which pages will be displayed. "
 "Truncate Summaries will shorted Page Description text to a specified number "
 "of characters."
-msgstr "Sidlistaren skapar en navigeringsmeny som visar en viss nivå av webbplatskartan. Välj den plats på webbplatskartan som du vill visa och ställ in sorterings alternativ för att definiera i vilken ordning sidorna ska visas. Korta av summeringar kommer att korta ner sidobeskrivningens text till ett angivet antal tecken."
+msgstr "Sidlistaren skapar en navigeringsmeny som visar en viss nivå av webbplatskartan. Välj den plats på webbplatskartan som du vill visa och ställ in sorteringsordning för att definiera i vilken ordning sidorna ska visas. Korta av summeringar kommer att korta ner sidobeskrivningens text till ett angivet antal tecken."
 
 #: concrete/core/Application/Service/UserInterface/Help.php:24
 msgid ""
@@ -5987,7 +6012,7 @@ msgid ""
 "Add individual images selected from the File Manager, or choose an existing "
 "file set. Playback options allow you to display images in order or randomly."
 " concrete5 will render the images as an animated slideshow."
-msgstr "Lägga till enskilda bilder som valts från filhanteraren eller välja en befintlig filgrupp. Uppspelningsalternativ kan du visa bilder i ordning eller slumpmässigt. concrete5 kommer att visa bilderna som ett animerat bildspel."
+msgstr "Lägga till enskilda bilder som valts från filhanteraren eller välja en befintlig filgrupp. Inställningar för uppspelning låter dig visa bilder i ordning eller slumpmässigt. concrete5 kommer att visa bilderna som ett animerat bildspel."
 
 #: concrete/core/Application/Service/UserInterface/Help.php:27
 msgid ""
@@ -6503,67 +6528,60 @@ msgstr "Detta meddelande har köats för godkännande."
 
 #: concrete/core/Conversation/Discussion/Discussion.php:35
 #: concrete/core/Conversation/Message/Message.php:115
-#: concrete/core/Conversation/Message/Message.php:153
-#: concrete/core/Conversation/Message/Message.php:155
-#: concrete/core/Conversation/Message/Message.php:157
 #, php-format
 msgid "Posted on %s"
 msgstr "Postat den %s"
 
-#: concrete/core/Conversation/Message/Message.php:121
-msgid "year"
-msgstr "år"
+#: concrete/core/Conversation/Message/Message.php:132
+#: concrete/core/Conversation/Message/Message.php:148
+#, php-format
+msgid "%d second ago"
+msgid_plural "%d seconds ago"
+msgstr[0] "%d sekund sedan"
+msgstr[1] "%d sekunder sedan"
 
-#: concrete/core/Conversation/Message/Message.php:121
-msgid "years"
-msgstr "år"
+#: concrete/core/Conversation/Message/Message.php:138
+#, php-format
+msgid "%d year ago"
+msgid_plural "%d years ago"
+msgstr[0] "%d år sedan"
+msgstr[1] "%d år sedan"
 
-#: concrete/core/Conversation/Message/Message.php:122
-msgid "month"
-msgstr "månad"
+#: concrete/core/Conversation/Message/Message.php:140
+#, php-format
+msgid "%d month ago"
+msgid_plural "%d months ago"
+msgstr[0] "%d månad sedan"
+msgstr[1] "%d månader sedan"
 
-#: concrete/core/Conversation/Message/Message.php:122
-#: concrete/elements/permission/duration.php:136
-msgid "months"
-msgstr "månader"
+#: concrete/core/Conversation/Message/Message.php:142
+#, php-format
+msgid "%d day ago"
+msgid_plural "%d days ago"
+msgstr[0] "%d dag sedan"
+msgstr[1] "%d dagar sedan"
 
-#: concrete/core/Conversation/Message/Message.php:123
-msgid "day"
-msgstr "dag"
+#: concrete/core/Conversation/Message/Message.php:144
+#, php-format
+msgid "%d hour ago"
+msgid_plural "%d hours ago"
+msgstr[0] "%d timme sedan"
+msgstr[1] "%d timmar sedan"
 
-#: concrete/core/Conversation/Message/Message.php:123
-#: concrete/elements/permission/duration.php:115
-msgid "days"
-msgstr "dagar"
+#: concrete/core/Conversation/Message/Message.php:146
+#, php-format
+msgid "%d minute ago"
+msgid_plural "%d minutes ago"
+msgstr[0] "%d minut sedan"
+msgstr[1] "%d minuter sedan"
 
-#: concrete/core/Conversation/Message/Message.php:124
-msgid "hour"
-msgstr "timme"
-
-#: concrete/core/Conversation/Message/Message.php:124
-msgid "hours"
-msgstr "timmar"
-
-#: concrete/core/Conversation/Message/Message.php:125
-msgid "minute"
-msgstr "minut"
-
-#: concrete/core/Conversation/Message/Message.php:126
-msgid "second"
-msgstr "sekund"
-
-#: concrete/core/Conversation/Message/Message.php:126
-#: concrete/single_pages/dashboard/system/permissions/blacklist.php:17
-msgid "seconds"
-msgstr "sekunder"
-
-#: concrete/core/Conversation/Message/Message.php:134
-msgid "0 seconds ago"
-msgstr "0 sekunder sedan"
-
-#: concrete/core/Conversation/Message/Message.php:145
-msgid "ago"
-msgstr "för"
+#: concrete/core/Conversation/Message/Message.php:154
+#: concrete/core/Conversation/Message/Message.php:156
+#: concrete/core/Conversation/Message/Message.php:158
+#, php-format
+msgctxt "Message posted date"
+msgid "Posted on %s"
+msgstr "Postat den %s"
 
 #: concrete/core/Localization/Service/Date.php:165
 #, php-format
@@ -6941,7 +6959,7 @@ msgstr "Flera värden"
 
 #: concrete/elements/attribute/categories/user.php:14
 msgid "User Attribute Options"
-msgstr "Alternativ för användaregenskaper"
+msgstr "Inställningar för användaregenskaper"
 
 #: concrete/elements/attribute/categories/user.php:16
 msgid "Public Display"
@@ -6954,11 +6972,6 @@ msgstr "Visas i offentlig profil."
 #: concrete/elements/attribute/categories/user.php:19
 msgid "Displayed on Member List."
 msgstr "Visas i medlemslistan."
-
-#: concrete/elements/attribute/categories/user.php:24
-#: concrete/elements/page_types/composer/form/output/buttons.php:11
-msgid "Edit Mode"
-msgstr "Redigeringsläge"
 
 #: concrete/elements/attribute/categories/user.php:26
 msgid "Editable in Profile."
@@ -7085,7 +7098,7 @@ msgstr "Katergori"
 
 #: concrete/elements/marketplace/search_form.php:27
 msgid "More Options"
-msgstr "Fler alternativ"
+msgstr "Fler inställningar"
 
 #: concrete/elements/marketplace/search_form.php:33
 msgid "Additional Filters"
@@ -7643,7 +7656,7 @@ msgstr "Tillåt användare att lägga till i denna lista."
 
 #: concrete/elements/custom_style.php:6
 msgid "Custom design options have been disabled."
-msgstr "Egna designalternativ är inaktiverade."
+msgstr "Egna designinställningar har inaktiverats."
 
 #: concrete/elements/custom_style.php:35
 msgid "** Custom (No Preset)"
@@ -8055,7 +8068,7 @@ msgstr "Klistra in"
 
 #: concrete/elements/permission/duration.php:6
 msgid "** Options"
-msgstr "** Alternativ"
+msgstr "** Inställningar"
 
 #: concrete/elements/permission/duration.php:7
 msgid "Every Day"
@@ -8098,6 +8111,10 @@ msgstr "Repeteringar"
 msgid "Repeat every"
 msgstr "Repetera varje"
 
+#: concrete/elements/permission/duration.php:115
+msgid "days"
+msgstr "dagar"
+
 #: concrete/elements/permission/duration.php:125
 msgid "Repeat By"
 msgstr "Repetera den"
@@ -8109,6 +8126,10 @@ msgstr "Dag i månaden"
 #: concrete/elements/permission/duration.php:128
 msgid "Day of Week"
 msgstr "Dag i veckan"
+
+#: concrete/elements/permission/duration.php:136
+msgid "months"
+msgstr "månader"
 
 #: concrete/elements/permission/duration.php:149
 msgid "On"
@@ -8132,11 +8153,11 @@ msgstr "När ska gäster kunna se detta block?"
 
 #: concrete/elements/permission/message_list.php:11
 msgid "Custom Options saved."
-msgstr "Anpassade val sparade."
+msgstr "Anpassade inställningar sparade."
 
 #: concrete/elements/permission/message_list.php:13
 msgid "Workflow Options saved."
-msgstr "Alternativ för arbetsflöde sparat."
+msgstr "Inställningar för arbetsflöde sparat."
 
 #: concrete/elements/permission/message_list.php:15
 msgid "User/Group Removed"
@@ -10378,7 +10399,7 @@ msgstr "Hantera bifogade filer"
 msgid ""
 "Note: Entering values here will override global conversations file "
 "attachment settings for this block. Leave blank to use global settings."
-msgstr "Notera: Att ange värden här kommer att åsidosätta de globala inställningarna för bifogade konversationsfiler för detta block. Lämna tomt för använda de globala inställningarna."
+msgstr "Notera: Att ange värden här kommer att åsidosätta de globala inställningarna för bifogade konversationsfiler för detta block. Lämna tomt för att använda de globala inställningarna."
 
 #: concrete/blocks/core_conversation/form.php:163
 #: concrete/single_pages/dashboard/system/conversations/settings.php:12
@@ -10513,7 +10534,7 @@ msgstr "%s - formulärsvar"
 #: concrete/single_pages/dashboard/system/registration/public.php:43
 #: concrete/single_pages/register.php:86
 msgid "Options"
-msgstr "Alternativ"
+msgstr "Inställningar"
 
 #: concrete/blocks/form/form_setup_html.php:41
 msgid "Form Name"
@@ -11472,7 +11493,7 @@ msgstr "nivåer"
 
 #: concrete/attributes/textarea/type_form.php:2
 msgid "Text Area Options"
-msgstr "Alternativ för textområde"
+msgstr "Inställningar för textområde"
 
 #: concrete/attributes/textarea/type_form.php:5
 msgid "Input Format"
@@ -11520,7 +11541,7 @@ msgstr "Bakgrund/Textfärg"
 
 #: concrete/attributes/textarea/type_form.php:32
 msgid "Alignment Dropdown"
-msgstr "Justering dropdown"
+msgstr "Typ av justering för dropdown"
 
 #: concrete/attributes/textarea/type_form.php:33
 msgid "Horizontal Rule"
@@ -11577,7 +11598,7 @@ msgstr "Postnummer"
 
 #: concrete/attributes/address/type_form.php:17
 msgid "Address Options"
-msgstr "Adress inställningar"
+msgstr "Inställningar för adress"
 
 #: concrete/attributes/address/type_form.php:20
 msgid "Available Countries"
@@ -11605,7 +11626,7 @@ msgstr "Det förvalda landet måste finnas med i listan över användardefiniera
 
 #: concrete/attributes/date_time/type_form.php:2
 msgid "Date/Time Options"
-msgstr "Datum/Tid inställningar"
+msgstr "Inställningar för datum/tid"
 
 #: concrete/attributes/date_time/type_form.php:5
 msgid "Ask User For"
@@ -11638,7 +11659,7 @@ msgstr "Ta bort alternativ"
 
 #: concrete/attributes/select/form.php:41
 msgid "Selected Options"
-msgstr "Valda alternativ"
+msgstr "Valda inställningar"
 
 #: concrete/attributes/select/form.php:169
 #: concrete/attributes/select/form.php:170
@@ -11647,11 +11668,11 @@ msgstr "Lägg till ytterligare ett alternativ"
 
 #: concrete/attributes/select/type_form.php:42
 msgid "Select Options"
-msgstr "Alternativ för val"
+msgstr "Inställningar för val"
 
 #: concrete/attributes/select/type_form.php:48
 msgid "Allow multiple options to be chosen."
-msgstr "Tillåt att flera värden väljs."
+msgstr "Tillåt att flera alternativ väljs."
 
 #: concrete/attributes/select/type_form.php:54
 msgid "User Submissions"
@@ -11715,7 +11736,7 @@ msgstr "Ange URL för din Flickr-profil."
 
 #: concrete/attributes/boolean/type_form.php:2
 msgid "Checkbox Options"
-msgstr "Kryssbox inställningar"
+msgstr "Inställningar för kryssruta"
 
 #: concrete/attributes/boolean/type_form.php:5
 msgid "Default Value"
@@ -11855,8 +11876,8 @@ msgid "(Untitled Page)"
 msgstr "(Namnlös sida)"
 
 #: concrete/single_pages/dashboard/composer/drafts.php:31
-msgid "(Unknown)"
-msgstr "(Okänt)"
+msgid "(Unknown author)"
+msgstr "(Författare okänd)"
 
 #: concrete/single_pages/dashboard/composer/drafts.php:51
 #, php-format
@@ -13333,6 +13354,10 @@ msgstr "misslyckade login-försök"
 msgid "in"
 msgstr "i"
 
+#: concrete/single_pages/dashboard/system/permissions/blacklist.php:17
+msgid "seconds"
+msgstr "sekunder"
+
 #: concrete/single_pages/dashboard/system/permissions/blacklist.php:20
 msgid "Ban IP For"
 msgstr "Svartlista IP i"
@@ -13684,7 +13709,7 @@ msgstr "Skicka administratörer till kontrollpanelen"
 
 #: concrete/single_pages/dashboard/system/registration/profiles.php:11
 msgid "Profile Options"
-msgstr "Alternativ för profil"
+msgstr "Inställningar för profil"
 
 #: concrete/single_pages/dashboard/system/registration/profiles.php:15
 msgid "Enable public profiles."
@@ -13767,11 +13792,11 @@ msgstr "Redigerare för formaterad text"
 
 #: concrete/single_pages/dashboard/system/basics/editor.php:2
 msgid "Control the options available for TinyMCE."
-msgstr "Styr alternativen som finns tillgängliga för TinyMCE."
+msgstr "Styr inställningarna som finns tillgängliga för TinyMCE."
 
 #: concrete/single_pages/dashboard/system/basics/editor.php:7
 msgid "The editor currently has no globally configurable options."
-msgstr "Editorn har för närvarande inga globala konfigurerabara alternativ."
+msgstr "Editorn har för närvarande inga globala konfigurerabara inställningar."
 
 #: concrete/single_pages/dashboard/system/basics/images.php:2
 msgid "Interface Settings"
@@ -13787,7 +13812,7 @@ msgstr "Ange anpassad bild"
 
 #: concrete/single_pages/dashboard/system/basics/images.php:40
 msgid "Options disabled, interface settings are specified in config/site.php."
-msgstr "Alternativ avaktiverade, gränssnittets inställningar är specificerade i config/site.php"
+msgstr "Inställningar avaktiverade, gränssnittets egenskaper är specificerade i config/site.php"
 
 #: concrete/single_pages/dashboard/system/basics/multilingual/view.php:3
 msgid "Multilingual Setup"
