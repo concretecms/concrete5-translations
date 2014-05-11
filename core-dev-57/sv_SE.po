@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-05-08 22:00+0000\n"
-"PO-Revision-Date: 2014-05-09 13:52+0000\n"
+"POT-Creation-Date: 2014-05-09 22:00+0000\n"
+"PO-Revision-Date: 2014-05-10 18:30+0000\n"
 "Last-Translator: MrLindau <fredrik@fxlindau.se>\n"
 "Language-Team: Swedish (Sweden) (http://www.transifex.com/projects/p/concrete5/language/sv_SE/)\n"
 "MIME-Version: 1.0\n"
@@ -442,7 +442,7 @@ msgstr "Fallande"
 #: concrete/single_pages/dashboard/system/environment/storage.php:34
 #: concrete/single_pages/dashboard/system/mail/importers.php:82
 #: concrete/single_pages/dashboard/system/mail/method.php:61
-#: concrete/single_pages/dashboard/system/optimization/cache.php:113
+#: concrete/single_pages/dashboard/system/optimization/cache.php:114
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:153
 #: concrete/single_pages/dashboard/system/permissions/blacklist.php:67
 #: concrete/single_pages/dashboard/system/permissions/files.php:24
@@ -2596,7 +2596,7 @@ msgstr "%s minuter"
 msgid "Until manually cleared"
 msgstr "Förräns manuellt återställd"
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:61
+#: concrete/single_pages/dashboard/system/optimization/cache.php:60
 #: concrete/tools/pages/speed_settings.php:122
 msgid "Full Page Caching"
 msgstr "Cache av hela sidor"
@@ -13992,6 +13992,10 @@ msgid ""
 msgstr "Om din webbplats visar gammal information eller beter sig konstigt, kan det hjälpa att tömma cachet."
 
 #: concrete/single_pages/dashboard/system/optimization/cache.php:6
+msgid "Stores the output of blocks which support block caching"
+msgstr "Lagrar utseendet för block som har stöd för block-caching"
+
+#: concrete/single_pages/dashboard/system/optimization/cache.php:6
 msgid "Block Cache"
 msgstr "Block Cache"
 
@@ -13999,11 +14003,15 @@ msgstr "Block Cache"
 msgid "Off - Good for development of custom blocks."
 msgstr "Av - Bra vid utvecklandet av anpassade block. "
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:17
-#: concrete/single_pages/dashboard/system/optimization/cache.php:35
+#: concrete/single_pages/dashboard/system/optimization/cache.php:18
+#: concrete/single_pages/dashboard/system/optimization/cache.php:36
 #: concrete/single_pages/dashboard/system/optimization/cache.php:54
 msgid "On - Helps speed up a live site."
 msgstr "På - Hjälper till att snabba upp en publicerad webbplats"
+
+#: concrete/single_pages/dashboard/system/optimization/cache.php:24
+msgid "Stores the generation of CSS and JavaScript assets"
+msgstr "Lagrar genererade CSS och JavaScript"
 
 #: concrete/single_pages/dashboard/system/optimization/cache.php:24
 msgid "CSS and JavaScript Cache"
@@ -14013,19 +14021,27 @@ msgstr "CSS och JavaScript Cache"
 msgid "Off - Good for active theme and block development."
 msgstr "Av - Bra vid utvekling av teman och block."
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:43
+#: concrete/single_pages/dashboard/system/optimization/cache.php:42
+msgid "Stores the location and existence of source code files"
+msgstr "Lagrar plats och vart källkodsfiler existerar"
+
+#: concrete/single_pages/dashboard/system/optimization/cache.php:42
 msgid "Overrides Cache"
 msgstr "Åsidosätt cache"
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:48
+#: concrete/single_pages/dashboard/system/optimization/cache.php:47
 msgid "Off - Good for development."
 msgstr "Av - Bra alternativ vid utveckling."
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:66
+#: concrete/single_pages/dashboard/system/optimization/cache.php:60
+msgid "Stores the output of an entire page"
+msgstr "Lagrar utseendet av en hel sida"
+
+#: concrete/single_pages/dashboard/system/optimization/cache.php:64
 msgid "Off - Turn it on by hand for specific pages."
 msgstr "Av - Sätt på för hand för specifika sidor."
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:72
+#: concrete/single_pages/dashboard/system/optimization/cache.php:71
 msgid "On - If blocks on the particular page allow it."
 msgstr "På - Om blocken på den specifika sidan tillåter det."
 
@@ -14034,23 +14050,29 @@ msgid "On - In all cases."
 msgstr "På - I alla fall."
 
 #: concrete/single_pages/dashboard/system/optimization/cache.php:84
+msgid ""
+"Sets the amount of time to store the page output before generating a new "
+"version"
+msgstr "Fastställer tiden för hur länge sidans utseende ska sparas innan en ny version genereras"
+
+#: concrete/single_pages/dashboard/system/optimization/cache.php:84
 msgid "Expire Pages from Cache"
 msgstr "Ta bort sidorna från cache."
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:88
+#: concrete/single_pages/dashboard/system/optimization/cache.php:89
 #, php-format
 msgid "Every %s (default setting)."
 msgstr "Var %s (standardinställning)."
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:94
+#: concrete/single_pages/dashboard/system/optimization/cache.php:96
 msgid "Only when manually removed or the cache is cleared."
 msgstr "Endast när det är borttaget manuellt eller att cachen är rensad."
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:102
+#: concrete/single_pages/dashboard/system/optimization/cache.php:104
 msgid "Every "
 msgstr "Var"
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:104
+#: concrete/single_pages/dashboard/system/optimization/cache.php:106
 msgid " minutes."
 msgstr "minuter."
 

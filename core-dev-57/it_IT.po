@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-05-08 22:00+0000\n"
-"PO-Revision-Date: 2014-05-09 10:20+0000\n"
+"POT-Creation-Date: 2014-05-09 22:00+0000\n"
+"PO-Revision-Date: 2014-05-10 10:40+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Italian (Italy) (http://www.transifex.com/projects/p/concrete5/language/it_IT/)\n"
 "MIME-Version: 1.0\n"
@@ -440,7 +440,7 @@ msgstr "Discendente"
 #: concrete/single_pages/dashboard/system/environment/storage.php:34
 #: concrete/single_pages/dashboard/system/mail/importers.php:82
 #: concrete/single_pages/dashboard/system/mail/method.php:61
-#: concrete/single_pages/dashboard/system/optimization/cache.php:113
+#: concrete/single_pages/dashboard/system/optimization/cache.php:114
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:153
 #: concrete/single_pages/dashboard/system/permissions/blacklist.php:67
 #: concrete/single_pages/dashboard/system/permissions/files.php:24
@@ -2272,7 +2272,7 @@ msgstr "Aggiungi a gruppo"
 
 #: concrete/tools/i18n_js.php:89
 msgid "Let's start editing a page."
-msgstr ""
+msgstr "Iniziamo a modificare la pagina."
 
 #: concrete/elements/attribute/categories/user.php:24
 #: concrete/elements/page_types/composer/form/output/buttons.php:11
@@ -2594,7 +2594,7 @@ msgstr "%s minuti"
 msgid "Until manually cleared"
 msgstr "Finché svuotata a mano"
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:61
+#: concrete/single_pages/dashboard/system/optimization/cache.php:60
 #: concrete/tools/pages/speed_settings.php:122
 msgid "Full Page Caching"
 msgstr "Cache delle pagine intere"
@@ -12017,7 +12017,7 @@ msgstr ""
 
 #: concrete/single_pages/dashboard/conversations/messages.php:174
 msgid "Unapprove"
-msgstr ""
+msgstr "Disapprova"
 
 #: concrete/single_pages/dashboard/conversations/messages.php:181
 #: concrete/single_pages/dashboard/system/backup/backup.php:115
@@ -12047,7 +12047,7 @@ msgstr "Utente disattivato"
 
 #: concrete/single_pages/dashboard/conversations/messages.php:204
 msgid "Block user IP Address"
-msgstr ""
+msgstr "Blocca l’indirizzo IP dell’utente"
 
 #: concrete/single_pages/dashboard/conversations/messages.php:206
 msgid "IP Banned"
@@ -12249,7 +12249,7 @@ msgstr "Attualmente installati"
 #, php-format
 msgctxt "AddonVersion"
 msgid "v.%s"
-msgstr ""
+msgstr "v.%s"
 
 #: concrete/single_pages/dashboard/extend/install.php:270
 msgid "No packages have been installed."
@@ -13990,6 +13990,10 @@ msgid ""
 msgstr "Se il sito presenta informazioni obsolete o si comporta in modo anomalo, può essere utile cancellare la cache."
 
 #: concrete/single_pages/dashboard/system/optimization/cache.php:6
+msgid "Stores the output of blocks which support block caching"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/optimization/cache.php:6
 msgid "Block Cache"
 msgstr "Cache dei blocchi"
 
@@ -13997,11 +14001,15 @@ msgstr "Cache dei blocchi"
 msgid "Off - Good for development of custom blocks."
 msgstr "Disattivata: utile per lo sviluppo di blocchi personalizzati."
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:17
-#: concrete/single_pages/dashboard/system/optimization/cache.php:35
+#: concrete/single_pages/dashboard/system/optimization/cache.php:18
+#: concrete/single_pages/dashboard/system/optimization/cache.php:36
 #: concrete/single_pages/dashboard/system/optimization/cache.php:54
 msgid "On - Helps speed up a live site."
 msgstr "Attiva - Migliora la velocità del sito."
+
+#: concrete/single_pages/dashboard/system/optimization/cache.php:24
+msgid "Stores the generation of CSS and JavaScript assets"
+msgstr "Salva la generazione delle risorse CSS e JavaScript"
 
 #: concrete/single_pages/dashboard/system/optimization/cache.php:24
 msgid "CSS and JavaScript Cache"
@@ -14011,19 +14019,27 @@ msgstr "Cache di CSS e JavaScript"
 msgid "Off - Good for active theme and block development."
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:43
+#: concrete/single_pages/dashboard/system/optimization/cache.php:42
+msgid "Stores the location and existence of source code files"
+msgstr "Salva la posizione e l’esistenza dei file con il codice sorgente"
+
+#: concrete/single_pages/dashboard/system/optimization/cache.php:42
 msgid "Overrides Cache"
 msgstr "Precedenza sulla cache"
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:48
+#: concrete/single_pages/dashboard/system/optimization/cache.php:47
 msgid "Off - Good for development."
 msgstr "Disattiva - Preferibile durante lo sviluppo."
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:66
+#: concrete/single_pages/dashboard/system/optimization/cache.php:60
+msgid "Stores the output of an entire page"
+msgstr "Salva il risultato finale di una pagina intera"
+
+#: concrete/single_pages/dashboard/system/optimization/cache.php:64
 msgid "Off - Turn it on by hand for specific pages."
 msgstr "Disattiva - Attivata manualmente per pagine specifiche."
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:72
+#: concrete/single_pages/dashboard/system/optimization/cache.php:71
 msgid "On - If blocks on the particular page allow it."
 msgstr "Attivata: se i blocchi delle specifiche pagine lo permettono."
 
@@ -14032,23 +14048,29 @@ msgid "On - In all cases."
 msgstr "Attiva - In tutti i casi."
 
 #: concrete/single_pages/dashboard/system/optimization/cache.php:84
+msgid ""
+"Sets the amount of time to store the page output before generating a new "
+"version"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/optimization/cache.php:84
 msgid "Expire Pages from Cache"
 msgstr "Fai scadere le pagine nella cache"
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:88
+#: concrete/single_pages/dashboard/system/optimization/cache.php:89
 #, php-format
 msgid "Every %s (default setting)."
 msgstr "Ogni %s (impostazione predefinita)."
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:94
+#: concrete/single_pages/dashboard/system/optimization/cache.php:96
 msgid "Only when manually removed or the cache is cleared."
 msgstr "Solo quando rimossa manualmente o quando viene vuotata la cache."
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:102
+#: concrete/single_pages/dashboard/system/optimization/cache.php:104
 msgid "Every "
 msgstr "Ogni"
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:104
+#: concrete/single_pages/dashboard/system/optimization/cache.php:106
 msgid " minutes."
 msgstr " minuti."
 
@@ -16696,7 +16718,7 @@ msgstr "Moduli"
 #: concrete/config/install/base/blocktypes.xml:73
 msgctxt "BlockTypeSetName"
 msgid "Social Networking"
-msgstr ""
+msgstr "Reti social"
 
 #: concrete/config/install/base/blocktypes.xml:80
 msgctxt "BlockTypeSetName"
