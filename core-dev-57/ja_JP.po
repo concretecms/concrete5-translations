@@ -5,9 +5,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-05-09 22:00+0000\n"
-"PO-Revision-Date: 2014-05-10 09:56+0000\n"
-"Last-Translator: Michele Locati <michele@locati.it>\n"
+"POT-Creation-Date: 2014-05-10 22:00+0000\n"
+"PO-Revision-Date: 2014-05-12 01:40+0000\n"
+"Last-Translator: Takuro Hishikawa <hishikawa@concrete5.co.jp>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/projects/p/concrete5/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -325,7 +325,7 @@ msgstr ""
 #: concrete/tools/sitemap_overlay.php:6
 #: concrete/tools/themes/preview_internal.php:17 concrete/tools/versions.php:5
 msgid "Access Denied"
-msgstr "アクセス不可"
+msgstr "アクセス拒否"
 
 #: concrete/tools/files/add_to.php:7
 #: concrete/tools/files/customize_search_columns.php:7
@@ -366,7 +366,7 @@ msgstr "追加属性"
 #: concrete/tools/users/customize_search_columns.php:82
 #: concrete/views/dialogs/search/customize.php:39
 msgid "Column Order"
-msgstr "カラムの並び替え"
+msgstr "並び順"
 
 #: concrete/tools/files/customize_search_columns.php:80
 #: concrete/tools/pages/customize_search_columns.php:80
@@ -433,6 +433,7 @@ msgstr "降順"
 #: concrete/single_pages/dashboard/system/conversations/bannedwords.php:17
 #: concrete/single_pages/dashboard/system/conversations/bannedwords.php:47
 #: concrete/single_pages/dashboard/system/conversations/bannedwords.php:53
+#: concrete/single_pages/dashboard/system/conversations/points.php:24
 #: concrete/single_pages/dashboard/system/conversations/settings.php:44
 #: concrete/single_pages/dashboard/system/environment/debug.php:28
 #: concrete/single_pages/dashboard/system/environment/logging.php:32
@@ -1086,7 +1087,7 @@ msgstr "このアドオンはこのバージョンのconcrete5と互換性があ
 #, php-format
 msgid "%d review"
 msgid_plural "%d reviews"
-msgstr[0] ""
+msgstr[0] "%d レビュー"
 
 #: concrete/tools/marketplace/details.php:74
 msgid "Read Reviews"
@@ -1146,7 +1147,6 @@ msgstr ""
 #: concrete/single_pages/dashboard/pages/types/form.php:142
 #: concrete/single_pages/dashboard/system/backup/update.php:42
 #: concrete/single_pages/dashboard/system/backup/update.php:58
-#: concrete/single_pages/dashboard/system/conversations/points.php:22
 #: concrete/single_pages/dashboard/users/points/actions.php:56
 #: concrete/single_pages/dashboard/users/search.php:169
 #: concrete/tools/pages/design.php:209
@@ -1186,7 +1186,7 @@ msgstr ""
 #: concrete/tools/tree/node/add/topic_category.php:27
 #: concrete/views/dialogs/page/add_block.php:76
 msgid "Add"
-msgstr "追加"
+msgstr "新規"
 
 #: concrete/single_pages/dashboard/sitemap/full.php:80
 #: concrete/tools/sitemap_search_selector.php:5
@@ -1355,13 +1355,13 @@ msgstr "使用中のアカウントではユーザーにアクセスできませ
 #, php-format
 msgid "%d page"
 msgid_plural "%d pages"
-msgstr[0] ""
+msgstr[0] "%d ページ"
 
 #: concrete/tools/dashboard/sitemap_empty_trash.php:26
 #, php-format
 msgid "%d page deleted."
 msgid_plural "%d pages deleted."
-msgstr[0] ""
+msgstr[0] "%d ページが削除されました。"
 
 #: concrete/tools/dashboard/sitemap_update.php:17
 msgid "Display order saved."
@@ -1371,7 +1371,7 @@ msgstr "並び順が保存されました。"
 #, php-format
 msgid "%d item"
 msgid_plural "%d items"
-msgstr[0] ""
+msgstr[0] "%d 個のアイテム"
 
 #: concrete/tools/permissions/access_entity.php:12
 msgid "You do not have user search or group search permissions."
@@ -1448,6 +1448,7 @@ msgstr "選択されたグループ全てに属しているユーザーのみが
 #: concrete/single_pages/dashboard/system/attributes/sets.php:34
 #: concrete/single_pages/dashboard/system/attributes/sets.php:149
 #: concrete/single_pages/dashboard/system/attributes/types.php:15
+#: concrete/single_pages/dashboard/system/conversations/points.php:10
 #: concrete/single_pages/dashboard/system/mail/importers.php:97
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:60
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:171
@@ -1910,7 +1911,7 @@ msgstr ""
 #: concrete/elements/attribute/type_form_required.php:73
 #: concrete/tools/page_types/composer/form/edit_control.php:18
 msgid "** None"
-msgstr "** 無し"
+msgstr "** なし"
 
 #: concrete/tools/page_types/composer/form/edit_control.php:40
 msgid "Custom Label"
@@ -2140,8 +2141,8 @@ msgstr "クリア"
 msgid "This request took too long."
 msgstr "このリクエストの時間がかかりすぎました。"
 
-#: concrete/core/Application/Application.php:49
-#: concrete/core/Application/Application.php:51 concrete/tools/i18n_js.php:59
+#: concrete/core/Application/Application.php:86
+#: concrete/core/Application/Application.php:92 concrete/tools/i18n_js.php:59
 msgid "An unexpected error occurred."
 msgstr "予期せぬエラーが発生しました。"
 
@@ -3853,6 +3854,10 @@ msgstr "グローバルメール設定が保存されました。"
 msgid "Importer saved."
 msgstr "メールインポーターが保存されました。"
 
+#: concrete/controllers/single_page/dashboard/system/conversations/points.php:16
+msgid "Rating type updated."
+msgstr ""
+
 #: concrete/controllers/single_page/dashboard/system/attributes/sets.php:46
 msgid "Attribute set added."
 msgstr "属性セットが追加されました。"
@@ -4816,7 +4821,7 @@ msgstr "使用テンプレート"
 #: concrete/single_pages/profile/messages.php:57
 #: concrete/single_pages/profile/messages.php:135
 msgid "To"
-msgstr "行き先"
+msgstr "To"
 
 #: concrete/core/Mail/Service.php:423 concrete/core/Mail/Service.php:444
 #: concrete/single_pages/account/messages/inbox.php:78
@@ -5050,7 +5055,7 @@ msgstr ""
 #, php-format
 msgid "%s byte"
 msgid_plural "%s bytes"
-msgstr[0] ""
+msgstr[0] "%s バイト"
 
 #. %s is a number, KB means Kilobyte
 #: concrete/core/Utility/Service/Number.php:120
@@ -5334,7 +5339,7 @@ msgstr ""
 msgid "New Version %s"
 msgstr "新バージョン %s"
 
-#: concrete/core/Page/Collection/Collection.php:50
+#: concrete/core/Page/Collection/Collection.php:51
 #, php-format
 msgid "Version %d"
 msgstr "バージョン %d"
@@ -5875,11 +5880,11 @@ msgstr "リクエスト申請者： %s"
 msgid "The Job was run successfully."
 msgstr "ジョブが正常に実行されました。"
 
-#: concrete/core/Application/Application.php:42
+#: concrete/core/Application/Application.php:68
 msgid "Exception Occurred: "
 msgstr "例外が発生しました: "
 
-#: concrete/core/Application/Application.php:51
+#: concrete/core/Application/Application.php:93
 msgid "An error occurred while processing this request."
 msgstr "この要求の処理中にエラーが発生しました。"
 
@@ -6751,7 +6756,7 @@ msgstr "全てのページが処理されました。次回の実行時は最初
 #, php-format
 msgid "%1$d versions deleted from %2$d page (%3$s)"
 msgid_plural "%1$d versions deleted from %2$d pages (%3$s)"
-msgstr[0] ""
+msgstr[0] "%2$d ページから %1$d バージョンを削除  (%3$s)"
 
 #: concrete/jobs/index_search.php:11
 msgid "Index Search Engine - Updates"
@@ -6782,7 +6787,7 @@ msgstr "検索インデックスが更新されました。"
 #, php-format
 msgid "%d page required reindexing."
 msgid_plural "%d pages required reindexing."
-msgstr[0] ""
+msgstr[0] "%d ページの再索引が必要です。"
 
 #: concrete/jobs/index_search_all.php:14
 msgid "Index Search Engine - All"
@@ -6809,12 +6814,12 @@ msgstr "検索エンジンがあなたのサイトをクロールする際に使
 #: concrete/jobs/generate_sitemap.php:76
 #, php-format
 msgid "The file %s is not writable"
-msgstr "ファイル %s は書き込みできません。"
+msgstr "%sファイルは、書き込み許可されていません。"
 
 #: concrete/jobs/generate_sitemap.php:79
 #, php-format
 msgid "Cannot open file %s"
-msgstr "ファイル %s を開けません"
+msgstr "%sファイルを開く事ができません"
 
 #: concrete/jobs/generate_sitemap.php:82
 #, php-format
@@ -6888,7 +6893,7 @@ msgstr "セット"
 
 #: concrete/elements/attribute/type_form_required.php:85
 msgid "Searchable"
-msgstr "検索可"
+msgstr "検索可能"
 
 #: concrete/elements/attribute/type_form_required.php:89
 msgid "Content included in \"Keyword Search\"."
@@ -7298,11 +7303,11 @@ msgstr "このブロックを表示させたいページを選択してくださ
 #: concrete/elements/block_master_collection_alias.php:28
 #: concrete/single_pages/dashboard/users/search.php:77
 msgid "Date Created"
-msgstr "作成日"
+msgstr "作成日時"
 
 #: concrete/elements/block_master_collection_alias.php:29
 msgid "Date Modified"
-msgstr "変更日"
+msgstr "更新日時"
 
 #: concrete/elements/block_custom_template.php:19
 msgid "There are no custom templates available."
@@ -8037,7 +8042,7 @@ msgstr "タイムゾーン"
 #: concrete/elements/permission/keys/edit_user_properties.php:72
 #: concrete/single_pages/dashboard/system/basics/multilingual/view.php:30
 msgid "Default Language"
-msgstr "デフォルト言語"
+msgstr "既定の言語"
 
 #: concrete/elements/permission/clipboard.php:7
 msgid "Paste"
@@ -8072,7 +8077,7 @@ msgstr "終日"
 #: concrete/elements/permission/duration.php:81
 msgctxt "End date"
 msgid "To"
-msgstr "行き先"
+msgstr "To"
 
 #: concrete/elements/permission/duration.php:95
 msgid "Repeat..."
@@ -8375,7 +8380,7 @@ msgstr "左"
 
 #: concrete/elements/custom_style/fonts.php:54
 msgid "Center"
-msgstr "中央寄せ"
+msgstr "中央"
 
 #: concrete/elements/custom_style/border.php:40
 #: concrete/elements/custom_style/fonts.php:55
@@ -8386,7 +8391,7 @@ msgstr "右"
 
 #: concrete/elements/custom_style/fonts.php:56
 msgid "Justify"
-msgstr "そろえる"
+msgstr "均等割付け"
 
 #: concrete/elements/custom_style/spacing.php:5
 msgid "Margin"
@@ -11217,7 +11222,7 @@ msgstr "すでにこのアンケートに答えています。"
 #, php-format
 msgid "%d Vote"
 msgid_plural "%d Votes"
-msgstr[0] ""
+msgstr[0] "%d 票"
 
 #: concrete/blocks/survey/view.php:62
 msgid "survey results"
@@ -12461,7 +12466,6 @@ msgstr ""
 #: concrete/config/install/base/dashboard.xml:165
 #: concrete/config/install/base/dashboard.xml:716
 #: concrete/single_pages/account/profile/public.php:31
-#: concrete/single_pages/dashboard/system/conversations/points.php:4
 #: concrete/single_pages/dashboard/users/add_group.php:107
 #: concrete/single_pages/dashboard/users/groups.php:80
 #: concrete/single_pages/dashboard/users/points/view.php:3
@@ -13469,7 +13473,15 @@ msgid ""
 "messages and run actions on those messages."
 msgstr "メールインポーターがありません。メールインポーターはサーバー上のアカウントから新しいメッセージを取り込み、処理を実行します。"
 
-#: concrete/single_pages/dashboard/system/conversations/points.php:28
+#: concrete/single_pages/dashboard/system/conversations/points.php:4
+msgid "Installed Rating Types"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/conversations/points.php:11
+msgid "Point Value"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/conversations/points.php:29
 msgid "There are no Community Points Rating Types installed."
 msgstr ""
 
