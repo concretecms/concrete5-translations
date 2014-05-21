@@ -4,6 +4,7 @@
 # Gecko <geotom.dev@gmail.com>, 2012
 # Gecko <geotom.dev@gmail.com>, 2012
 # eli <translate@epc.gr>, 2012
+# Vasilis Fotopoulos <basalba@gmail.com>, 2014
 # Vasilis Fotopoulos <basalba@gmail.com>, 2013-2014
 # Vasilis Zboukis <vasilis@minima.net.gr>, 2013-2014
 # Γιώργος Τριγωνάκης <gtrig84@gmail.com>, 2012
@@ -11,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-05-15 22:00+0000\n"
-"PO-Revision-Date: 2014-05-16 08:32+0000\n"
+"POT-Creation-Date: 2014-05-20 10:00+0000\n"
+"PO-Revision-Date: 2014-05-20 11:11+0000\n"
 "Last-Translator: Vasilis Fotopoulos <basalba@gmail.com>\n"
 "Language-Team: Greek (Greece) (http://www.transifex.com/projects/p/concrete5/language/el_GR/)\n"
 "MIME-Version: 1.0\n"
@@ -641,7 +642,7 @@ msgstr "Ημερομηνία Προσθήκης"
 msgid "Added by <strong>%s</strong> on %s"
 msgstr "Προστέθηκε από <strong>%s</strong>στις %s"
 
-#: concrete/blocks/google_map/form_setup_html.php:13
+#: concrete/blocks/google_map/form_setup_html.php:23
 #: concrete/tools/files/properties.php:275
 msgid "Location"
 msgstr "Τοποθεσία"
@@ -3084,6 +3085,10 @@ msgstr "Google Map"
 msgid "Please enter a zoom number from 0 to 21."
 msgstr "Παρακαλούμε εισάγετε έναν αριθμό zoom από 0 μέχρι 21."
 
+#: concrete/core/controllers/blocks/google_map.php:64
+msgid "Get Directions"
+msgstr "Λήψη Οδηγιών"
+
 #: concrete/core/controllers/blocks/html.php:27
 msgid "For adding HTML by hand."
 msgstr "Για προσθήκη HTML με το χέρι."
@@ -4410,21 +4415,21 @@ msgstr "Η ιστοσελίδα σας είναι ήδη ενημερωμένη!
 msgid "You must first upgrade your site to version 5.4.2.2"
 msgstr "Θα πρέπει πρώτα να αναβαθμίσετε το site σας στην έκδοση 5.4.2.2"
 
-#: concrete/core/controllers/single_pages/upgrade.php:198
+#: concrete/core/controllers/single_pages/upgrade.php:202
 msgid "Unable to locate database import file."
 msgstr "Αδυναμία εντοπισμού του αρχείου εισαγωγής της βάσης δεδομένων."
 
-#: concrete/core/controllers/single_pages/upgrade.php:236
+#: concrete/core/controllers/single_pages/upgrade.php:240
 #, php-format
 msgid "Unable to create temporary db xml file: %s"
 msgstr "Δεν είναι δυνατή η δημιουργία προσωρινού αρχείου db xml file: %s"
 
-#: concrete/core/controllers/single_pages/upgrade.php:287
+#: concrete/core/controllers/single_pages/upgrade.php:291
 #, php-format
 msgid "An Unexpected Error occurred while upgrading: %s"
 msgstr " μη αναμενόμενο σφάλμα παρουσιάστηκε κατά την αναβάθμιση: %s"
 
-#: concrete/core/controllers/single_pages/upgrade.php:291
+#: concrete/core/controllers/single_pages/upgrade.php:295
 #, php-format
 msgid "Upgrade to <b>%s</b> complete!"
 msgstr "Η Αναβάθμιση σε <b>%s</b> ολοκληρώθηκε!"
@@ -6296,7 +6301,7 @@ msgstr "Ανέβασμα"
 msgid "Undo"
 msgstr "Αναίρεση"
 
-#: concrete/blocks/google_map/form_setup_html.php:20
+#: concrete/blocks/google_map/form_setup_html.php:30
 #: concrete/elements/files/edit/image.php:22
 msgid "Zoom"
 msgstr "Μεγέθυνση"
@@ -8404,22 +8409,42 @@ msgstr "WebM"
 msgid "Google Map disabled in edit mode."
 msgstr "Το Google Map είναι απενεργοποιημένο σε κατάσταση επεξεργασίας"
 
-#: concrete/blocks/google_map/form_setup_html.php:9
+#: concrete/blocks/google_map/form_setup_html.php:12
+msgid "General"
+msgstr "Γενικά"
+
+#: concrete/blocks/google_map/form_setup_html.php:13
+msgid "Balloon"
+msgstr "μπαλόνι"
+
+#: concrete/blocks/google_map/form_setup_html.php:19
 msgid "Map Title"
 msgstr "Τίτλος Χάρτη"
 
-#: concrete/blocks/google_map/form_setup_html.php:9
+#: concrete/blocks/google_map/form_setup_html.php:19
 #: concrete/blocks/rss_displayer/form_setup_html.php:29
 msgid "Optional"
 msgstr "Προαιρετικό"
 
-#: concrete/blocks/google_map/form_setup_html.php:16
+#: concrete/blocks/google_map/form_setup_html.php:26
 msgid "e.g. 17 SE 3rd #410, Portland, OR, 97214"
 msgstr "πχ. 17 SE 3rd #410, Portland, OR, 97214"
 
-#: concrete/blocks/google_map/form_setup_html.php:23
+#: concrete/blocks/google_map/form_setup_html.php:33
 msgid "Enter a number from 0 to 21, with 21 being the most zoomed in."
 msgstr "Εισάγεται έναν αριθμό από το 0 μέχρι 21, με το 21 το πιο μεγάλο ζουμ."
+
+#: concrete/blocks/google_map/form_setup_html.php:43
+msgid "Show a balloon?"
+msgstr "Εμφάνιση μπαλονιού;"
+
+#: concrete/blocks/google_map/form_setup_html.php:47
+msgid "Balloon content"
+msgstr "Περιεχόμενο μπαλονιού"
+
+#: concrete/blocks/google_map/form_setup_html.php:54
+msgid "Show link to Google Maps?"
+msgstr "Εμφάνιση σύνδεσης για το Google Maps;"
 
 #: concrete/blocks/google_map/scrapbook.php:4
 #, php-format

@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-05-16 22:00+0000\n"
-"PO-Revision-Date: 2014-05-17 16:17+0000\n"
+"POT-Creation-Date: 2014-05-20 10:00+0000\n"
+"PO-Revision-Date: 2014-05-20 15:41+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Italian (Italy) (http://www.transifex.com/projects/p/concrete5/language/it_IT/)\n"
 "MIME-Version: 1.0\n"
@@ -635,7 +635,7 @@ msgstr "Data inserimento"
 msgid "Added by <strong>%s</strong> on %s"
 msgstr "Aggiunto da <strong>%s</strong> il %s"
 
-#: concrete/blocks/google_map/form_setup_html.php:13
+#: concrete/blocks/google_map/form_setup_html.php:23
 #: concrete/tools/files/properties.php:275
 msgid "Location"
 msgstr "Posizione"
@@ -3078,6 +3078,10 @@ msgstr "Google Map"
 msgid "Please enter a zoom number from 0 to 21."
 msgstr "Inserire un livello di zoom compreso tra 0 e 21."
 
+#: concrete/core/controllers/blocks/google_map.php:64
+msgid "Get Directions"
+msgstr "Ottieni indicazioni"
+
 #: concrete/core/controllers/blocks/html.php:27
 msgid "For adding HTML by hand."
 msgstr "Per aggiungere codice HTML a mano."
@@ -4404,21 +4408,21 @@ msgstr "Il sito web è già aggiornato! L’attuale versione di concrete5 è la 
 msgid "You must first upgrade your site to version 5.4.2.2"
 msgstr "Prima è necessario aggiornare il sito alla versione 5.4.2.2"
 
-#: concrete/core/controllers/single_pages/upgrade.php:198
+#: concrete/core/controllers/single_pages/upgrade.php:202
 msgid "Unable to locate database import file."
 msgstr "Impossibile trovare il file di importazione del database."
 
-#: concrete/core/controllers/single_pages/upgrade.php:236
+#: concrete/core/controllers/single_pages/upgrade.php:240
 #, php-format
 msgid "Unable to create temporary db xml file: %s"
 msgstr "Impossibile creare il file xml temporaneo per il database: %s"
 
-#: concrete/core/controllers/single_pages/upgrade.php:287
+#: concrete/core/controllers/single_pages/upgrade.php:291
 #, php-format
 msgid "An Unexpected Error occurred while upgrading: %s"
 msgstr "Errore non previsto durante l’aggiornamento: %s"
 
-#: concrete/core/controllers/single_pages/upgrade.php:291
+#: concrete/core/controllers/single_pages/upgrade.php:295
 #, php-format
 msgid "Upgrade to <b>%s</b> complete!"
 msgstr "Aggiornamento a <b>%s</b> completato!"
@@ -6290,7 +6294,7 @@ msgstr "Carica"
 msgid "Undo"
 msgstr "Annulla"
 
-#: concrete/blocks/google_map/form_setup_html.php:20
+#: concrete/blocks/google_map/form_setup_html.php:30
 #: concrete/elements/files/edit/image.php:22
 msgid "Zoom"
 msgstr "Zoom"
@@ -8398,22 +8402,42 @@ msgstr "WebM"
 msgid "Google Map disabled in edit mode."
 msgstr "Mappa disabilitata nella modalità di modifica."
 
-#: concrete/blocks/google_map/form_setup_html.php:9
+#: concrete/blocks/google_map/form_setup_html.php:12
+msgid "General"
+msgstr "Generali"
+
+#: concrete/blocks/google_map/form_setup_html.php:13
+msgid "Balloon"
+msgstr "Fumetto"
+
+#: concrete/blocks/google_map/form_setup_html.php:19
 msgid "Map Title"
 msgstr "Titolo mappa"
 
-#: concrete/blocks/google_map/form_setup_html.php:9
+#: concrete/blocks/google_map/form_setup_html.php:19
 #: concrete/blocks/rss_displayer/form_setup_html.php:29
 msgid "Optional"
 msgstr "Opzionale"
 
-#: concrete/blocks/google_map/form_setup_html.php:16
+#: concrete/blocks/google_map/form_setup_html.php:26
 msgid "e.g. 17 SE 3rd #410, Portland, OR, 97214"
 msgstr "Esempio: Via Roma 42, 22100 Milano, Italia"
 
-#: concrete/blocks/google_map/form_setup_html.php:23
+#: concrete/blocks/google_map/form_setup_html.php:33
 msgid "Enter a number from 0 to 21, with 21 being the most zoomed in."
 msgstr "Inserisci un numero da 0 a 21, dove 21 indica il massimo livello di zoom."
+
+#: concrete/blocks/google_map/form_setup_html.php:43
+msgid "Show a balloon?"
+msgstr "Mostra un fumetto?"
+
+#: concrete/blocks/google_map/form_setup_html.php:47
+msgid "Balloon content"
+msgstr "Contenuto fumetto"
+
+#: concrete/blocks/google_map/form_setup_html.php:54
+msgid "Show link to Google Maps?"
+msgstr "Mostra collegamento a Google Maps?"
 
 #: concrete/blocks/google_map/scrapbook.php:4
 #, php-format
