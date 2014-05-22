@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-05-18 22:00+0000\n"
-"PO-Revision-Date: 2014-05-19 09:57+0000\n"
+"POT-Creation-Date: 2014-05-20 22:00+0000\n"
+"PO-Revision-Date: 2014-05-21 10:18+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Spanish (Mexico) (http://www.transifex.com/projects/p/concrete5/language/es_MX/)\n"
 "MIME-Version: 1.0\n"
@@ -126,7 +126,7 @@ msgstr "Ingrese su dirección de correo electrónico a continuación. Le enviare
 #: concrete/authentication/concrete/form.php:8
 #: concrete/blocks/form/form_setup_html.php:124
 #: concrete/blocks/form/form_setup_html.php:194
-#: concrete/controllers/single_page/login.php:26
+#: concrete/controllers/single_page/login.php:27
 #: concrete/core/Form/Service/Widget/UserSelector.php:87
 #: concrete/elements/permission/keys/edit_user_properties.php:31
 #: concrete/elements/permission/keys/edit_user_properties.php:68
@@ -143,7 +143,7 @@ msgid "Email Address"
 msgstr "Dirección de correo electronico"
 
 #: concrete/authentication/concrete/form.php:8
-#: concrete/controllers/single_page/login.php:28
+#: concrete/controllers/single_page/login.php:29
 #: concrete/core/Form/Service/Widget/UserSelector.php:86
 #: concrete/core/User/Search/ColumnSet/DefaultSet.php:20
 #: concrete/elements/permission/keys/edit_user_properties.php:30
@@ -199,7 +199,7 @@ msgid "Invalid username or password."
 msgstr "Nombre de usuario o contraseña no válidos."
 
 #: concrete/authentication/concrete/controller.php:33
-#: concrete/controllers/single_page/login.php:83
+#: concrete/controllers/single_page/login.php:84
 msgid "This user is inactive. Please contact us regarding this account."
 msgstr "Este usuario está inactivo. Por favor, póngase en contacto con nosotros con respecto a esta cuenta."
 
@@ -3603,7 +3603,7 @@ msgstr "Nombre de usuario invalido"
 
 #: concrete/controllers/single_page/account/profile/edit.php:111
 #: concrete/controllers/single_page/dashboard/users/add.php:99
-#: concrete/controllers/single_page/login.php:212
+#: concrete/controllers/single_page/login.php:213
 #: concrete/controllers/single_page/register.php:121
 #: concrete/core/Page/Type/Composer/Control/CollectionAttributeControl.php:100
 #, php-format
@@ -4443,33 +4443,33 @@ msgid ""
 "will not be able to login until your account has been approved."
 msgstr "Se ha registrado pero un administrador debe revisar su cuenta, usted no podrá accesar hasta que su cuenta haya sido aprobada."
 
-#: concrete/controllers/single_page/login.php:59
+#: concrete/controllers/single_page/login.php:60
 msgctxt "Default locale"
 msgid "** Default"
 msgstr "** por defecto."
 
-#: concrete/controllers/single_page/login.php:98
-#: concrete/controllers/single_page/login.php:102
+#: concrete/controllers/single_page/login.php:99
+#: concrete/controllers/single_page/login.php:103
 msgid "Invalid method."
 msgstr ""
 
-#: concrete/controllers/single_page/login.php:149
+#: concrete/controllers/single_page/login.php:150
 msgid "You can only identify as the admin user using the concrete login."
 msgstr ""
 
-#: concrete/controllers/single_page/login.php:169
+#: concrete/controllers/single_page/login.php:170
 msgid "Fill in these required settings in order to continue."
 msgstr ""
 
-#: concrete/controllers/single_page/login.php:193
+#: concrete/controllers/single_page/login.php:194
 msgid "Invalid Request, please attempt login again."
 msgstr ""
 
-#: concrete/controllers/single_page/login.php:200
+#: concrete/controllers/single_page/login.php:201
 msgid "Invalid Authentication Type"
 msgstr ""
 
-#: concrete/controllers/single_page/login.php:295
+#: concrete/controllers/single_page/login.php:296
 msgid "User is not registered. Check your authentication controller."
 msgstr ""
 
@@ -5349,16 +5349,16 @@ msgstr "Nueva Version %s"
 msgid "Version %d"
 msgstr "Version %d"
 
-#: concrete/core/Page/Page.php:1985
+#: concrete/core/Page/Page.php:2037
 #, php-format
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "Pagina \"%s\" en la ruta  \"%s\" borrada"
 
-#: concrete/core/Page/Page.php:1985 concrete/core/Page/Page.php:2049
+#: concrete/core/Page/Page.php:2037 concrete/core/Page/Page.php:2101
 msgid "Page Action"
 msgstr "Acción de pagina"
 
-#: concrete/core/Page/Page.php:2049
+#: concrete/core/Page/Page.php:2101
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "Pagina \"%s\" en la ruta \"%s\" enviada a la basura"
@@ -5374,6 +5374,54 @@ msgstr "Puntuacion"
 #: concrete/single_pages/dashboard/system/backup/backup.php:102
 msgid "Date"
 msgstr "Fecha"
+
+#. Detailed debug information
+#: concrete/core/Logging/Logger.php:100
+msgctxt "Log level"
+msgid "Debug"
+msgstr ""
+
+#. Interesting events
+#: concrete/core/Logging/Logger.php:102
+msgctxt "Log level"
+msgid "Info"
+msgstr ""
+
+#. Uncommon events
+#: concrete/core/Logging/Logger.php:104
+msgctxt "Log level"
+msgid "Notice"
+msgstr ""
+
+#. Exceptional occurrences that are not errors
+#: concrete/core/Logging/Logger.php:106
+msgctxt "Log level"
+msgid "Warning"
+msgstr ""
+
+#. Runtime errors
+#: concrete/core/Logging/Logger.php:108
+msgctxt "Log level"
+msgid "Error"
+msgstr "Error"
+
+#. Critical conditions
+#: concrete/core/Logging/Logger.php:110
+msgctxt "Log level"
+msgid "Critical"
+msgstr ""
+
+#. Action must be taken immediately
+#: concrete/core/Logging/Logger.php:112
+msgctxt "Log level"
+msgid "Alert"
+msgstr ""
+
+#. Urgent alert
+#: concrete/core/Logging/Logger.php:114
+msgctxt "Log level"
+msgid "Emergency"
+msgstr ""
 
 #: concrete/core/Backup/ContentImporter.php:292
 #, php-format

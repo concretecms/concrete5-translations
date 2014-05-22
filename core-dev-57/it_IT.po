@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-05-18 22:00+0000\n"
-"PO-Revision-Date: 2014-05-19 10:11+0000\n"
+"POT-Creation-Date: 2014-05-20 22:00+0000\n"
+"PO-Revision-Date: 2014-05-21 10:45+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Italian (Italy) (http://www.transifex.com/projects/p/concrete5/language/it_IT/)\n"
 "MIME-Version: 1.0\n"
@@ -127,7 +127,7 @@ msgstr "Inserire qui sotto l’indirizzo email presso cui inviare le istruzioni 
 #: concrete/authentication/concrete/form.php:8
 #: concrete/blocks/form/form_setup_html.php:124
 #: concrete/blocks/form/form_setup_html.php:194
-#: concrete/controllers/single_page/login.php:26
+#: concrete/controllers/single_page/login.php:27
 #: concrete/core/Form/Service/Widget/UserSelector.php:87
 #: concrete/elements/permission/keys/edit_user_properties.php:31
 #: concrete/elements/permission/keys/edit_user_properties.php:68
@@ -144,7 +144,7 @@ msgid "Email Address"
 msgstr "Indirizzo email"
 
 #: concrete/authentication/concrete/form.php:8
-#: concrete/controllers/single_page/login.php:28
+#: concrete/controllers/single_page/login.php:29
 #: concrete/core/Form/Service/Widget/UserSelector.php:86
 #: concrete/core/User/Search/ColumnSet/DefaultSet.php:20
 #: concrete/elements/permission/keys/edit_user_properties.php:30
@@ -200,7 +200,7 @@ msgid "Invalid username or password."
 msgstr "Il nome utente e/o la password non sono corretti."
 
 #: concrete/authentication/concrete/controller.php:33
-#: concrete/controllers/single_page/login.php:83
+#: concrete/controllers/single_page/login.php:84
 msgid "This user is inactive. Please contact us regarding this account."
 msgstr "Questo utente non è attivo. Contattaci per informazioni su questo account."
 
@@ -3604,7 +3604,7 @@ msgstr "Nome utente non valido"
 
 #: concrete/controllers/single_page/account/profile/edit.php:111
 #: concrete/controllers/single_page/dashboard/users/add.php:99
-#: concrete/controllers/single_page/login.php:212
+#: concrete/controllers/single_page/login.php:213
 #: concrete/controllers/single_page/register.php:121
 #: concrete/core/Page/Type/Composer/Control/CollectionAttributeControl.php:100
 #, php-format
@@ -4444,33 +4444,33 @@ msgid ""
 "will not be able to login until your account has been approved."
 msgstr "Sei registrato ma un amministratore del sito deve verificare il tuo account: non potrai accedere al sito finché il tuo account non verrà approvato."
 
-#: concrete/controllers/single_page/login.php:59
+#: concrete/controllers/single_page/login.php:60
 msgctxt "Default locale"
 msgid "** Default"
 msgstr "** Predefinito"
 
-#: concrete/controllers/single_page/login.php:98
-#: concrete/controllers/single_page/login.php:102
+#: concrete/controllers/single_page/login.php:99
+#: concrete/controllers/single_page/login.php:103
 msgid "Invalid method."
 msgstr "Metodo non valido."
 
-#: concrete/controllers/single_page/login.php:149
+#: concrete/controllers/single_page/login.php:150
 msgid "You can only identify as the admin user using the concrete login."
 msgstr "È possibile accedere come utente admin solo tramite l’autenticazione di concrete5."
 
-#: concrete/controllers/single_page/login.php:169
+#: concrete/controllers/single_page/login.php:170
 msgid "Fill in these required settings in order to continue."
 msgstr "Completare le seguenti impostazioni obbligatorie per proseguire."
 
-#: concrete/controllers/single_page/login.php:193
+#: concrete/controllers/single_page/login.php:194
 msgid "Invalid Request, please attempt login again."
 msgstr "Richiesta non valida: riprovare ad accedere."
 
-#: concrete/controllers/single_page/login.php:200
+#: concrete/controllers/single_page/login.php:201
 msgid "Invalid Authentication Type"
 msgstr "Tipo di autenticazione non valido"
 
-#: concrete/controllers/single_page/login.php:295
+#: concrete/controllers/single_page/login.php:296
 msgid "User is not registered. Check your authentication controller."
 msgstr "L’utente non è registrato. Verificare il proprio controller dell’autenticazione."
 
@@ -5350,16 +5350,16 @@ msgstr "Nuova versione %s"
 msgid "Version %d"
 msgstr "Versione %d"
 
-#: concrete/core/Page/Page.php:1985
+#: concrete/core/Page/Page.php:2037
 #, php-format
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "La pagina “%s” con percorso “%s” è stata eliminata"
 
-#: concrete/core/Page/Page.php:1985 concrete/core/Page/Page.php:2049
+#: concrete/core/Page/Page.php:2037 concrete/core/Page/Page.php:2101
 msgid "Page Action"
 msgstr "Azione pagina"
 
-#: concrete/core/Page/Page.php:2049
+#: concrete/core/Page/Page.php:2101
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "La pagina “%s” con percorso “%s” è stata spostata nel cestino"
@@ -5375,6 +5375,54 @@ msgstr "Punteggio"
 #: concrete/single_pages/dashboard/system/backup/backup.php:102
 msgid "Date"
 msgstr "Data"
+
+#. Detailed debug information
+#: concrete/core/Logging/Logger.php:100
+msgctxt "Log level"
+msgid "Debug"
+msgstr "Debug"
+
+#. Interesting events
+#: concrete/core/Logging/Logger.php:102
+msgctxt "Log level"
+msgid "Info"
+msgstr "Info"
+
+#. Uncommon events
+#: concrete/core/Logging/Logger.php:104
+msgctxt "Log level"
+msgid "Notice"
+msgstr "Notifica"
+
+#. Exceptional occurrences that are not errors
+#: concrete/core/Logging/Logger.php:106
+msgctxt "Log level"
+msgid "Warning"
+msgstr "Attenzione"
+
+#. Runtime errors
+#: concrete/core/Logging/Logger.php:108
+msgctxt "Log level"
+msgid "Error"
+msgstr "Errore"
+
+#. Critical conditions
+#: concrete/core/Logging/Logger.php:110
+msgctxt "Log level"
+msgid "Critical"
+msgstr "Critico"
+
+#. Action must be taken immediately
+#: concrete/core/Logging/Logger.php:112
+msgctxt "Log level"
+msgid "Alert"
+msgstr "Allarme"
+
+#. Urgent alert
+#: concrete/core/Logging/Logger.php:114
+msgctxt "Log level"
+msgid "Emergency"
+msgstr "Emergenza"
 
 #: concrete/core/Backup/ContentImporter.php:292
 #, php-format
@@ -5556,7 +5604,7 @@ msgstr "Aggiunta dei tipi di blocco."
 
 #: concrete/core/Package/StartingPointPackage.php:50
 msgid "Adding gathering data sources."
-msgstr "Aggiunta di fonti di dati per il raccoglitore."
+msgstr "Aggiunta delle fonti dei dati per il raccoglitore."
 
 #: concrete/core/Package/StartingPointPackage.php:51
 msgid "Page type basic setup."
@@ -5600,7 +5648,7 @@ msgstr "Impostazione delle autorizzazioni del sito."
 
 #: concrete/core/Package/StartingPointPackage.php:61
 msgid "Prefetching information."
-msgstr "Precaricamento informazioni."
+msgstr "Precaricamento delle informazioni."
 
 #: concrete/core/Package/StartingPointPackage.php:62
 msgid "Finishing."

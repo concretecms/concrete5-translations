@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-05-20 10:00+0000\n"
-"PO-Revision-Date: 2014-05-20 11:42+0000\n"
+"POT-Creation-Date: 2014-05-20 22:00+0000\n"
+"PO-Revision-Date: 2014-05-22 04:21+0000\n"
 "Last-Translator: Vasilis Fotopoulos <basalba@gmail.com>\n"
 "Language-Team: Greek (Greece) (http://www.transifex.com/projects/p/concrete5/language/el_GR/)\n"
 "MIME-Version: 1.0\n"
@@ -2882,12 +2882,12 @@ msgstr "Αυτή η σελίδα έχει εκκαθαριστεί από την
 
 #: concrete/controllers/panel/page/design/customize.php:93
 msgid "Invalid or non-customizable theme."
-msgstr ""
+msgstr "Άκυρο ή μη προσαρμόσιμο θέμα."
 
 #: concrete/controllers/panel/page/versions.php:56
 #, php-format
 msgid "Version %s copied successfully. New version is %s."
-msgstr ""
+msgstr "Η Έκδοση %s αντιγράφτηκε με επιτυχία. Η Νέα έκδοση είναι %s."
 
 #: concrete/controllers/panel/page/versions.php:67
 msgid "New Page Created From Version"
@@ -2964,7 +2964,7 @@ msgstr "Η Σελίδα διαγράφηκε με επιτυχία."
 msgid ""
 "Page deletion request saved. This action will have to be approved before the"
 " page is deleted."
-msgstr ""
+msgstr "Το αίτημα διαγραφής έχει αποθηκευτεί. Η δράση αυτή θα πρέπει να εγκριθεί πριν η σελίδα διαγραφεί."
 
 #: concrete/controllers/dialog/area/layout/presets.php:56
 msgid "Area layout preset updated successfully."
@@ -4457,7 +4457,7 @@ msgstr "Μη έγκυρη μέθοδος."
 
 #: concrete/controllers/single_page/login.php:150
 msgid "You can only identify as the admin user using the concrete login."
-msgstr ""
+msgstr "Μπορείτε μόνο να αναγνωριστήται ως διαχειριστής χρησιμοποιώντας τη σύνδεση του concrete. "
 
 #: concrete/controllers/single_page/login.php:170
 msgid "Fill in these required settings in order to continue."
@@ -5376,6 +5376,54 @@ msgstr "Βαθμός"
 #: concrete/single_pages/dashboard/system/backup/backup.php:102
 msgid "Date"
 msgstr "Ημερομηνία"
+
+#. Detailed debug information
+#: concrete/core/Logging/Logger.php:100
+msgctxt "Log level"
+msgid "Debug"
+msgstr "Εντοπισμός σφαλμάτων"
+
+#. Interesting events
+#: concrete/core/Logging/Logger.php:102
+msgctxt "Log level"
+msgid "Info"
+msgstr ""
+
+#. Uncommon events
+#: concrete/core/Logging/Logger.php:104
+msgctxt "Log level"
+msgid "Notice"
+msgstr ""
+
+#. Exceptional occurrences that are not errors
+#: concrete/core/Logging/Logger.php:106
+msgctxt "Log level"
+msgid "Warning"
+msgstr "Προειδοποίηση"
+
+#. Runtime errors
+#: concrete/core/Logging/Logger.php:108
+msgctxt "Log level"
+msgid "Error"
+msgstr "Σφάλμα"
+
+#. Critical conditions
+#: concrete/core/Logging/Logger.php:110
+msgctxt "Log level"
+msgid "Critical"
+msgstr ""
+
+#. Action must be taken immediately
+#: concrete/core/Logging/Logger.php:112
+msgctxt "Log level"
+msgid "Alert"
+msgstr ""
+
+#. Urgent alert
+#: concrete/core/Logging/Logger.php:114
+msgctxt "Log level"
+msgid "Emergency"
+msgstr ""
 
 #: concrete/core/Backup/ContentImporter.php:292
 #, php-format
@@ -9744,7 +9792,7 @@ msgstr "Όχι, οι απαντήσεις είναι απενεργοποιημ�
 
 #: concrete/blocks/core_gathering/form/posting.php:24
 msgid "Yes, this gathering can be posted to the front-end."
-msgstr ""
+msgstr "Ναι, αυτό το gathering μπορεί να αναρτηθεί στο front-end."
 
 #: concrete/blocks/core_gathering/form/posting.php:29
 msgid "Create pages using"
@@ -16485,22 +16533,22 @@ msgstr "Σύνθεση Τύπου Σελίδας"
 #: concrete/config/install/base/permissions.xml:99
 msgctxt "PermissionKeyName"
 msgid "Edit Page Type Permissions"
-msgstr ""
+msgstr "Επεξεργασία Αδειών Τύπου Σελίδας"
 
 #: concrete/config/install/base/permissions.xml:100
 msgctxt "PermissionKeyName"
 msgid "Edit Page Type Drafts"
-msgstr ""
+msgstr "Επεξεργασία Προσωρινών Τύπων Σελίδας"
 
 #: concrete/config/install/base/permissions.xml:104
 msgctxt "PermissionKeyName"
 msgid "View Topic Tree Node"
-msgstr ""
+msgstr "Προβολή Κόμβου Θεματικού Δένδρου"
 
 #: concrete/config/install/base/permissions.xml:105
 msgctxt "PermissionKeyName"
 msgid "View Topic Category Tree Node"
-msgstr ""
+msgstr "Προβολή Κόμβου Κατηγορίας Θεματικού Δένδρου"
 
 #: concrete/config/install/base/permissions.xml:108
 msgctxt "PermissionKeyName"
@@ -16535,7 +16583,7 @@ msgstr "Διαγραφή χρήστη"
 #: concrete/config/install/base/permissions.xml:143
 msgctxt "PermissionKeyName"
 msgid "Search User Group"
-msgstr ""
+msgstr "Αναζήτηση Ομάδας Χρηστών"
 
 #: concrete/config/install/base/permissions.xml:146
 msgctxt "PermissionKeyName"
@@ -16545,22 +16593,22 @@ msgstr "Επεξεργασία Ομάδας"
 #: concrete/config/install/base/permissions.xml:149
 msgctxt "PermissionKeyName"
 msgid "Assign Group"
-msgstr ""
+msgstr "Εκχώρηση Ομάδας"
 
 #: concrete/config/install/base/permissions.xml:153
 msgctxt "PermissionKeyName"
 msgid "Add Child Group"
-msgstr ""
+msgstr "Προσθήκη Θυγατρικής Ομάδας "
 
 #: concrete/config/install/base/permissions.xml:157
 msgctxt "PermissionKeyName"
 msgid "Edit Group Permissions"
-msgstr ""
+msgstr "Επεξεργασία Δικαιωμάτων Ομάδας"
 
 #: concrete/config/install/base/permissions.xml:160
 msgctxt "PermissionKeyName"
 msgid "Access Page Type Permissions"
-msgstr ""
+msgstr "Δικαιώματα Πρόσβασης Τύπου Σελίδας"
 
 #: concrete/config/install/base/permissions.xml:166
 msgctxt "PermissionKeyName"
@@ -16585,7 +16633,7 @@ msgstr "Πρόσβαση στους προεπιλεγμένους Τύπους 
 #: concrete/config/install/base/permissions.xml:187
 msgctxt "PermissionKeyName"
 msgid "Customize Themes"
-msgstr ""
+msgstr "Προσαρμογή Θεμάτων"
 
 #: concrete/config/install/base/permissions.xml:193
 msgctxt "PermissionKeyName"
@@ -16605,7 +16653,7 @@ msgstr "Προσθήκη Θεματικού Δένδρου"
 #: concrete/config/install/base/permissions.xml:211
 msgctxt "PermissionKeyName"
 msgid "Remove Topic Tree"
-msgstr ""
+msgstr "Κατάργηση Θεματικού Δένδρου "
 
 #: concrete/config/install/base/permissions.xml:217
 msgctxt "PermissionKeyName"
@@ -16640,7 +16688,7 @@ msgstr "Πρόσβαση στην Αναζήτηση Χρηστών"
 #: concrete/config/install/base/permissions.xml:241
 msgctxt "PermissionKeyDescription"
 msgid "Controls whether a user can view the search user interface."
-msgstr ""
+msgstr "Ελέγχει αν ο χρήστης μπορεί να δει το interface αναζήτησης χρήστη."
 
 #: concrete/config/install/base/permissions.xml:250
 msgid "SecurImage (Default)"
@@ -16880,7 +16928,7 @@ msgstr "Δεξιά Πλευρική Μπάρα"
 #: concrete/config/install/packages/bootstrap/content.xml:8
 msgctxt "PageTemplateName"
 msgid "Two Column"
-msgstr ""
+msgstr "Δύο Στήλες"
 
 #: concrete/config/install/packages/bootstrap/content.xml:9
 #: concrete/config/install/packages/standard/content.xml:9
@@ -16962,7 +17010,7 @@ msgstr "Καταχώρηση Ιστολογίου"
 #: concrete/config/install/packages/standard/content.xml:37
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Post Name"
-msgstr ""
+msgstr "Δημοσίευση Ονόματος "
 
 #: concrete/config/install/packages/standard/content.xml:43
 msgctxt "PageTypeComposerFormLayoutSetName"
@@ -16972,7 +17020,7 @@ msgstr "Πλοήγηση"
 #: concrete/config/install/packages/standard/content.xml:46
 msgctxt "PageTypeComposerFormLayoutSetName"
 msgid "Images"
-msgstr ""
+msgstr "Εικόνες"
 
 #: concrete/config/install/packages/standard/content.xml:47
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"

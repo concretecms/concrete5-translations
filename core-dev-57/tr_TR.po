@@ -5,9 +5,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-05-18 22:00+0000\n"
-"PO-Revision-Date: 2014-05-19 18:11+0000\n"
-"Last-Translator: coskuner <info@ademcoskuner.com>\n"
+"POT-Creation-Date: 2014-05-20 22:00+0000\n"
+"PO-Revision-Date: 2014-05-21 10:18+0000\n"
+"Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Turkish (Turkey) (http://www.transifex.com/projects/p/concrete5/language/tr_TR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -127,7 +127,7 @@ msgstr "Parola sıfırlama talimatlarını göndereceğimiz e-posta adresinizi a
 #: concrete/authentication/concrete/form.php:8
 #: concrete/blocks/form/form_setup_html.php:124
 #: concrete/blocks/form/form_setup_html.php:194
-#: concrete/controllers/single_page/login.php:26
+#: concrete/controllers/single_page/login.php:27
 #: concrete/core/Form/Service/Widget/UserSelector.php:87
 #: concrete/elements/permission/keys/edit_user_properties.php:31
 #: concrete/elements/permission/keys/edit_user_properties.php:68
@@ -144,7 +144,7 @@ msgid "Email Address"
 msgstr "E-Posta Adresi"
 
 #: concrete/authentication/concrete/form.php:8
-#: concrete/controllers/single_page/login.php:28
+#: concrete/controllers/single_page/login.php:29
 #: concrete/core/Form/Service/Widget/UserSelector.php:86
 #: concrete/core/User/Search/ColumnSet/DefaultSet.php:20
 #: concrete/elements/permission/keys/edit_user_properties.php:30
@@ -200,7 +200,7 @@ msgid "Invalid username or password."
 msgstr "Geçersiz kullanıcı adı veya parola."
 
 #: concrete/authentication/concrete/controller.php:33
-#: concrete/controllers/single_page/login.php:83
+#: concrete/controllers/single_page/login.php:84
 msgid "This user is inactive. Please contact us regarding this account."
 msgstr "Bu kullanıcı devre dışıdır. Bu hesap ile ilgili bizimle irtibata geçiniz."
 
@@ -3598,7 +3598,7 @@ msgstr "Geçersiz Kullanıcı Adı"
 
 #: concrete/controllers/single_page/account/profile/edit.php:111
 #: concrete/controllers/single_page/dashboard/users/add.php:99
-#: concrete/controllers/single_page/login.php:212
+#: concrete/controllers/single_page/login.php:213
 #: concrete/controllers/single_page/register.php:121
 #: concrete/core/Page/Type/Composer/Control/CollectionAttributeControl.php:100
 #, php-format
@@ -4438,33 +4438,33 @@ msgid ""
 "will not be able to login until your account has been approved."
 msgstr "Kaydınız tamamlandı ancak site yöneticisi hesabınıza onay verdikten sonra oturum açabilirsiniz."
 
-#: concrete/controllers/single_page/login.php:59
+#: concrete/controllers/single_page/login.php:60
 msgctxt "Default locale"
 msgid "** Default"
 msgstr "** Varsayılan"
 
-#: concrete/controllers/single_page/login.php:98
-#: concrete/controllers/single_page/login.php:102
+#: concrete/controllers/single_page/login.php:99
+#: concrete/controllers/single_page/login.php:103
 msgid "Invalid method."
 msgstr "Geçersiz yöntem."
 
-#: concrete/controllers/single_page/login.php:149
+#: concrete/controllers/single_page/login.php:150
 msgid "You can only identify as the admin user using the concrete login."
 msgstr "Admin kullanıcısı sadece concrete kimlik doğrulamasını kullanabilecek şekilde tanımlanır."
 
-#: concrete/controllers/single_page/login.php:169
+#: concrete/controllers/single_page/login.php:170
 msgid "Fill in these required settings in order to continue."
 msgstr "Devam etmek için şu zorunlu alanları doldurun."
 
-#: concrete/controllers/single_page/login.php:193
+#: concrete/controllers/single_page/login.php:194
 msgid "Invalid Request, please attempt login again."
 msgstr "Geçersiz İstek, lütfen tekrar oturum açma denemesinde bulunun."
 
-#: concrete/controllers/single_page/login.php:200
+#: concrete/controllers/single_page/login.php:201
 msgid "Invalid Authentication Type"
 msgstr "Geçersiz Kimlik Doğrulama Türü"
 
-#: concrete/controllers/single_page/login.php:295
+#: concrete/controllers/single_page/login.php:296
 msgid "User is not registered. Check your authentication controller."
 msgstr "Kullanıcı kayıtlı değil. Kimlik doğrulama denetleyicinizi kontrol edin."
 
@@ -5342,16 +5342,16 @@ msgstr "Yeni Sürüm %s"
 msgid "Version %d"
 msgstr "Sürüm %d"
 
-#: concrete/core/Page/Page.php:1985
+#: concrete/core/Page/Page.php:2037
 #, php-format
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "\"%s\" sayfası(\"%s\" yolunda olan) silindi"
 
-#: concrete/core/Page/Page.php:1985 concrete/core/Page/Page.php:2049
+#: concrete/core/Page/Page.php:2037 concrete/core/Page/Page.php:2101
 msgid "Page Action"
 msgstr "Sayfa Eylemi"
 
-#: concrete/core/Page/Page.php:2049
+#: concrete/core/Page/Page.php:2101
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "\"%s\" sayfası, \"%s\" yolundan çöpe taşındı"
@@ -5367,6 +5367,54 @@ msgstr "Skor"
 #: concrete/single_pages/dashboard/system/backup/backup.php:102
 msgid "Date"
 msgstr "Tarih"
+
+#. Detailed debug information
+#: concrete/core/Logging/Logger.php:100
+msgctxt "Log level"
+msgid "Debug"
+msgstr ""
+
+#. Interesting events
+#: concrete/core/Logging/Logger.php:102
+msgctxt "Log level"
+msgid "Info"
+msgstr ""
+
+#. Uncommon events
+#: concrete/core/Logging/Logger.php:104
+msgctxt "Log level"
+msgid "Notice"
+msgstr ""
+
+#. Exceptional occurrences that are not errors
+#: concrete/core/Logging/Logger.php:106
+msgctxt "Log level"
+msgid "Warning"
+msgstr ""
+
+#. Runtime errors
+#: concrete/core/Logging/Logger.php:108
+msgctxt "Log level"
+msgid "Error"
+msgstr "Hata"
+
+#. Critical conditions
+#: concrete/core/Logging/Logger.php:110
+msgctxt "Log level"
+msgid "Critical"
+msgstr ""
+
+#. Action must be taken immediately
+#: concrete/core/Logging/Logger.php:112
+msgctxt "Log level"
+msgid "Alert"
+msgstr ""
+
+#. Urgent alert
+#: concrete/core/Logging/Logger.php:114
+msgctxt "Log level"
+msgid "Emergency"
+msgstr ""
 
 #: concrete/core/Backup/ContentImporter.php:292
 #, php-format
