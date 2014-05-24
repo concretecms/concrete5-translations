@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-05-20 22:00+0000\n"
-"PO-Revision-Date: 2014-05-21 10:18+0000\n"
+"POT-Creation-Date: 2014-05-23 09:03+0000\n"
+"PO-Revision-Date: 2014-05-23 12:39+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Romanian (Romania) (http://www.transifex.com/projects/p/concrete5/language/ro_RO/)\n"
 "MIME-Version: 1.0\n"
@@ -346,7 +346,6 @@ msgid "Choose Headers"
 msgstr "Alegeti headerele"
 
 #: concrete/elements/collection_add.php:19
-#: concrete/elements/collection_metadata.php:82
 #: concrete/tools/files/customize_search_columns.php:45
 #: concrete/tools/pages/customize_search_columns.php:45
 #: concrete/tools/users/customize_search_columns.php:44
@@ -404,7 +403,6 @@ msgstr "Descendenta"
 #: concrete/elements/block_footer_edit.php:18
 #: concrete/elements/block_master_collection_alias.php:52
 #: concrete/elements/collection_attribute_values.php:25
-#: concrete/elements/collection_metadata.php:193
 #: concrete/elements/collection_permissions_simple.php:81
 #: concrete/elements/collection_speed_settings.php:170
 #: concrete/elements/collection_theme.php:135
@@ -696,7 +694,6 @@ msgstr "Lasati urmatorul camp gol pentru a permite tuturor sa descarce acest fis
 #: concrete/elements/collection_delete.php:48
 #: concrete/elements/collection_delete_external.php:55
 #: concrete/elements/collection_edit_external.php:35
-#: concrete/elements/collection_metadata.php:192
 #: concrete/elements/collection_permissions_simple.php:80
 #: concrete/elements/collection_speed_settings.php:169
 #: concrete/elements/collection_theme.php:134
@@ -776,7 +773,7 @@ msgstr "Lasati urmatorul camp gol pentru a permite tuturor sa descarce acest fis
 #: concrete/views/dialogs/page/design/css.php:11
 #: concrete/views/dialogs/search/customize.php:74
 #: concrete/views/panels/details/page/caching.php:117
-#: concrete/views/panels/details/page/location.php:66
+#: concrete/views/panels/details/page/location.php:53
 #: concrete/views/panels/details/page/permissions/advanced.php:62
 #: concrete/views/panels/details/page/permissions/simple.php:37
 #: concrete/views/panels/details/page/seo.php:31
@@ -1440,7 +1437,6 @@ msgstr "Doar utilizatorii care sunt membrii TUTUROR grupurilor selectate sunt el
 #: concrete/elements/collection_add.php:23
 #: concrete/elements/collection_add_external.php:15
 #: concrete/elements/collection_edit_external.php:15
-#: concrete/elements/collection_metadata.php:92
 #: concrete/elements/group/search.php:25
 #: concrete/elements/permission/keys/edit_page_properties.php:29
 #: concrete/elements/permission/keys/edit_page_properties.php:65
@@ -1530,7 +1526,6 @@ msgstr "Autor"
 #: concrete/core/File/Version.php:250
 #: concrete/core/Page/Type/Composer/Control/CorePageProperty/DescriptionCorePageProperty.php:10
 #: concrete/elements/collection_add.php:46
-#: concrete/elements/collection_metadata.php:120
 #: concrete/single_pages/dashboard/blocks/types/view.php:14
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:172
 #: concrete/single_pages/dashboard/users/add_group.php:33
@@ -1546,7 +1541,7 @@ msgstr "Descriere"
 #: concrete/tools/panels/details/page/properties.php:60
 #: concrete/views/panels/details/page/attributes.php:63
 #: concrete/views/panels/details/page/caching.php:118
-#: concrete/views/panels/details/page/location.php:67
+#: concrete/views/panels/details/page/location.php:54
 #: concrete/views/panels/details/page/permissions/advanced.php:63
 #: concrete/views/panels/details/page/permissions/simple.php:38
 #: concrete/views/panels/details/page/seo.php:32
@@ -5300,7 +5295,6 @@ msgstr ""
 
 #: concrete/core/Page/Type/Composer/Control/CorePageProperty/DateTimeCorePageProperty.php:9
 #: concrete/elements/collection_add.php:36
-#: concrete/elements/collection_metadata.php:101
 #: concrete/elements/permission/keys/edit_page_properties.php:32
 #: concrete/elements/permission/keys/edit_page_properties.php:68
 msgid "Public Date/Time"
@@ -5358,16 +5352,16 @@ msgstr "Versiune noua %s"
 msgid "Version %d"
 msgstr "Versiunea %d"
 
-#: concrete/core/Page/Page.php:2037
+#: concrete/core/Page/Page.php:2056
 #, php-format
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "Pagina \"%s\" din calea \"%s\" a fost stearsa."
 
-#: concrete/core/Page/Page.php:2037 concrete/core/Page/Page.php:2101
+#: concrete/core/Page/Page.php:2056 concrete/core/Page/Page.php:2120
 msgid "Page Action"
 msgstr "Actiuni Pagina"
 
-#: concrete/core/Page/Page.php:2101
+#: concrete/core/Page/Page.php:2120
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr ""
@@ -5430,6 +5424,21 @@ msgstr ""
 #: concrete/core/Logging/Logger.php:114
 msgctxt "Log level"
 msgid "Emergency"
+msgstr ""
+
+#: concrete/core/Logging/Logger.php:123
+msgctxt "Log channel"
+msgid "Application"
+msgstr "Aplicatie"
+
+#: concrete/core/Logging/Logger.php:125
+msgctxt "Log channel"
+msgid "Sent Emails"
+msgstr ""
+
+#: concrete/core/Logging/Logger.php:127
+msgctxt "Log channel"
+msgid "Exceptions"
 msgstr ""
 
 #: concrete/core/Backup/ContentImporter.php:292
@@ -7183,63 +7192,6 @@ msgstr "Continut"
 msgid "No stacks can be added to this area."
 msgstr "Nu pot fi adaugate stack-uri in aceasta arie."
 
-#: concrete/elements/collection_metadata.php:20
-msgid ""
-"Note: Since you haven't checked this page out for editing, these changes "
-"will immediately be approved."
-msgstr "Nota: pentru ca nu ati bifat aceasta pagina pentru editare, aceste modificari vor fi aprobate imediat."
-
-#: concrete/elements/collection_add.php:57
-#: concrete/elements/collection_metadata.php:83
-msgid "Custom Attributes"
-msgstr "Atribute personalizate"
-
-#: concrete/elements/collection_metadata.php:84
-msgid "Page Paths and Location"
-msgstr "Cale pagina si locatie"
-
-#: concrete/elements/collection_metadata.php:94
-#, php-format
-msgid "Page ID: %s"
-msgstr "ID pagina: %s"
-
-#: concrete/elements/collection_metadata.php:108
-#: concrete/elements/permission/keys/edit_page_properties.php:31
-#: concrete/elements/permission/keys/edit_page_properties.php:67
-msgid "Owner"
-msgstr "Proprietar"
-
-#: concrete/elements/collection_metadata.php:131
-msgid "Canonical URL"
-msgstr "URL canonic"
-
-#: concrete/elements/collection_metadata.php:140
-msgid ""
-"This page must always be available from at least one URL. That URL is listed"
-" above."
-msgstr "Aceasta pagina trebuie sa fie tot timpul disponibila de la cel putin un URL. Acest URL este listat mai sus."
-
-#: concrete/elements/collection_metadata.php:147
-msgid "More URLs"
-msgstr "Mai multe URL-uri"
-
-#: concrete/elements/collection_metadata.php:157
-#: concrete/elements/collection_metadata_fields.php:230
-#: concrete/views/panels/details/page/location.php:47
-msgid "Remove Path"
-msgstr "Inlaturare cale"
-
-#: concrete/elements/collection_metadata.php:163
-msgid "Add Path"
-msgstr "Adaugare cale"
-
-#: concrete/elements/collection_metadata.php:168
-#: concrete/views/panels/details/page/location.php:59
-msgid ""
-"Note: Additional page paths are not versioned. They will be available "
-"immediately."
-msgstr "Nota: Caile aditionale de pagina nu sunt versionate. Ele devin disponibile imediat."
-
 #: concrete/elements/profile/sidebar.php:7
 msgid "Member Since"
 msgstr "Membru din"
@@ -7588,6 +7540,10 @@ msgstr ""
 #: concrete/elements/block_area_footer.php:90
 msgid "Save Layout as Preset"
 msgstr ""
+
+#: concrete/elements/collection_add.php:57
+msgid "Custom Attributes"
+msgstr "Atribute personalizate"
 
 #: concrete/elements/collection_add.php:209 concrete/views/panels/add.php:111
 #: concrete/views/panels/add.php:147
@@ -7990,6 +7946,11 @@ msgstr "Toate atributele"
 #: concrete/elements/permission/keys/edit_page_properties.php:66
 msgid "Short Description"
 msgstr "Descriere scurta"
+
+#: concrete/elements/permission/keys/edit_page_properties.php:31
+#: concrete/elements/permission/keys/edit_page_properties.php:67
+msgid "Owner"
+msgstr "Proprietar"
 
 #: concrete/elements/permission/keys/edit_page_properties.php:33
 #: concrete/elements/permission/keys/edit_page_properties.php:69
@@ -8677,25 +8638,6 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: concrete/elements/collection_metadata_fields.php:62
-msgctxt "AttributeSetName"
-msgid "Other"
-msgstr "Altele"
-
-#: concrete/elements/collection_metadata_fields.php:86
-msgid ""
-"No attributes assigned. Any attributes you set here will automatically be "
-"set on pages when they are created."
-msgstr "Nu sunt atribute alocate. Orice atribut setat aici va fi in mod automat setat in pagini cand sunt create."
-
-#: concrete/elements/collection_metadata_fields.php:88
-msgid "No attributes assigned."
-msgstr "Nu sunt atribute alocate."
-
-#: concrete/elements/collection_metadata_fields.php:108
-msgid "remove"
-msgstr "inlaturare"
-
 #: concrete/elements/pages/search.php:6
 msgid "Full Page Index"
 msgstr "Index pagini intregi"
@@ -8900,15 +8842,21 @@ msgstr ""
 msgid "Other URLs that should redirect to this page"
 msgstr ""
 
-#: concrete/views/panels/details/page/location.php:56
+#: concrete/views/panels/details/page/location.php:43
 msgid "Add URL Redirect"
 msgstr ""
 
-#: concrete/views/panels/details/page/location.php:82
+#: concrete/views/panels/details/page/location.php:46
+msgid ""
+"Note: Additional page paths are not versioned. They will be available "
+"immediately."
+msgstr "Nota: Caile aditionale de pagina nu sunt versionate. Ele devin disponibile imediat."
+
+#: concrete/views/panels/details/page/location.php:69
 msgid "A location has not yet been chosen."
 msgstr ""
 
-#: concrete/views/panels/details/page/location.php:109
+#: concrete/views/panels/details/page/location.php:96
 msgid "Choose New Page Parent"
 msgstr ""
 
