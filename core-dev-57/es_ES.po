@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-05-24 04:00+0000\n"
-"PO-Revision-Date: 2014-05-24 09:59+0000\n"
+"POT-Creation-Date: 2014-05-27 16:04+0000\n"
+"PO-Revision-Date: 2014-05-27 16:23+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Spanish (Spain) (http://www.transifex.com/projects/p/concrete5/language/es_ES/)\n"
 "MIME-Version: 1.0\n"
@@ -430,6 +430,7 @@ msgstr "Descendente"
 #: concrete/single_pages/dashboard/system/conversations/bannedwords.php:17
 #: concrete/single_pages/dashboard/system/conversations/bannedwords.php:47
 #: concrete/single_pages/dashboard/system/conversations/bannedwords.php:53
+#: concrete/single_pages/dashboard/system/conversations/editor.php:5
 #: concrete/single_pages/dashboard/system/conversations/points.php:24
 #: concrete/single_pages/dashboard/system/conversations/settings.php:44
 #: concrete/single_pages/dashboard/system/environment/debug.php:28
@@ -904,7 +905,7 @@ msgstr "(Nota: Los archivos dentro del conjunto no se eliminará.)"
 #: concrete/elements/files/search.php:37 concrete/elements/pages/search.php:44
 #: concrete/elements/users/search.php:44
 #: concrete/single_pages/account/messages/inbox.php:48
-#: concrete/single_pages/dashboard/conversations/messages.php:183
+#: concrete/single_pages/dashboard/conversations/messages.php:189
 #: concrete/single_pages/dashboard/pages/types/form.php:116
 #: concrete/single_pages/dashboard/pages/types/form.php:225
 #: concrete/single_pages/dashboard/pages/types/view.php:45
@@ -1758,7 +1759,7 @@ msgid "Compare"
 msgstr "Comparar"
 
 #: concrete/core/Workflow/Progress/Action/ApprovalAction.php:6
-#: concrete/single_pages/dashboard/conversations/messages.php:176
+#: concrete/single_pages/dashboard/conversations/messages.php:182
 #: concrete/tools/versions.php:362 concrete/views/panels/page/versions.php:32
 msgid "Approve"
 msgstr "Aprobar"
@@ -2450,7 +2451,7 @@ msgstr "max"
 msgid "No results found."
 msgstr "No se encontraron resultados."
 
-#: concrete/single_pages/dashboard/conversations/messages.php:369
+#: concrete/single_pages/dashboard/conversations/messages.php:375
 #: concrete/single_pages/dashboard/pages/templates/view.php:13
 #: concrete/single_pages/dashboard/system/attributes/topics/view.php:11
 #: concrete/single_pages/dashboard/system/backup/backup.php:30
@@ -3865,6 +3866,14 @@ msgstr "Importador guardado."
 msgid "Rating types updated."
 msgstr ""
 
+#: concrete/controllers/single_page/dashboard/system/conversations/editor.php:33
+msgid "The active editor has been updated."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/conversations/editor.php:39
+msgid "Invalid editor handle."
+msgstr ""
+
 #: concrete/controllers/single_page/dashboard/system/attributes/sets.php:46
 msgid "Attribute set added."
 msgstr "Conjunto de atributos añadido."
@@ -4834,7 +4843,6 @@ msgid "Subject"
 msgstr "Tema"
 
 #: concrete/core/Mail/Service.php:431 concrete/core/Mail/Service.php:452
-#: concrete/themes/greek_yogurt/css/styles.xml:14
 msgid "Body"
 msgstr "Mensaje"
 
@@ -7842,15 +7850,22 @@ msgstr ""
 msgid "Preview Image"
 msgstr ""
 
+#. %s is the name of the author
 #: concrete/elements/gathering/templates/tile/image_byline_description_center/view.php:15
 #: concrete/elements/gathering/templates/tile/masthead_image_byline_left/view.php:16
 #: concrete/elements/gathering/templates/tile/masthead_image_byline_right/view.php:13
-msgid "By "
+#: concrete/single_pages/dashboard/conversations/messages.php:160
+#, php-format
+msgctxt "Authored"
+msgid "By %s"
 msgstr ""
 
+#. %s is the name of the author
 #: concrete/elements/gathering/templates/tile/image_overlay_headline/view.php:12
 #: concrete/elements/gathering/templates/tile/masthead_byline_description/view.php:10
-msgid "by "
+#, php-format
+msgctxt "Authored"
+msgid "by %s"
 msgstr ""
 
 #: concrete/blocks/rss_displayer/templates/read_more.php:36
@@ -8344,7 +8359,6 @@ msgstr "Contenido inhabilitado en modo de edición."
 
 #: concrete/elements/custom_style/background.php:15
 #: concrete/single_pages/dashboard/system/basics/images.php:12
-#: concrete/themes/greek_yogurt/css/styles.xml:22
 msgid "Background Image"
 msgstr "Imagen de fondo"
 
@@ -8374,7 +8388,6 @@ msgstr "Altura de la línea"
 
 #: concrete/elements/custom_style/border.php:48
 #: concrete/elements/custom_style/fonts.php:39
-#: concrete/themes/greek_yogurt/css/styles.xml:21
 msgid "Color"
 msgstr "Color"
 
@@ -8543,7 +8556,6 @@ msgid "Flag As Spam"
 msgstr ""
 
 #: concrete/elements/conversation/message.php:43
-#: concrete/single_pages/dashboard/conversations/messages.php:158
 #: concrete/single_pages/dashboard/reports/statistics.php:138
 #: concrete/views/dialogs/file/properties.php:262
 msgid "Anonymous"
@@ -11991,49 +12003,50 @@ msgstr ""
 msgid "Message is currently pending approval."
 msgstr ""
 
-#: concrete/single_pages/dashboard/conversations/messages.php:158
-msgid "By"
+#. when the author of a message is anonymous
+#: concrete/single_pages/dashboard/conversations/messages.php:162
+msgid "By Anonymous"
 msgstr ""
 
-#: concrete/single_pages/dashboard/conversations/messages.php:174
+#: concrete/single_pages/dashboard/conversations/messages.php:180
 msgid "Unapprove"
 msgstr ""
 
-#: concrete/single_pages/dashboard/conversations/messages.php:181
+#: concrete/single_pages/dashboard/conversations/messages.php:187
 #: concrete/single_pages/dashboard/system/backup/backup.php:115
 msgid "Restore"
 msgstr "Restaurar"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:187
+#: concrete/single_pages/dashboard/conversations/messages.php:193
 msgid "Unmark as spam"
 msgstr ""
 
-#: concrete/single_pages/dashboard/conversations/messages.php:189
+#: concrete/single_pages/dashboard/conversations/messages.php:195
 msgid "Mark as spam"
 msgstr ""
 
-#: concrete/single_pages/dashboard/conversations/messages.php:193
+#: concrete/single_pages/dashboard/conversations/messages.php:199
 msgid "Mark all user posts as spam"
 msgstr ""
 
-#: concrete/single_pages/dashboard/conversations/messages.php:197
+#: concrete/single_pages/dashboard/conversations/messages.php:203
 #: concrete/single_pages/dashboard/users/search.php:23
 msgid "Deactivate User"
 msgstr "Desactivar usuario"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:199
+#: concrete/single_pages/dashboard/conversations/messages.php:205
 msgid "User deactivated"
 msgstr ""
 
-#: concrete/single_pages/dashboard/conversations/messages.php:204
+#: concrete/single_pages/dashboard/conversations/messages.php:210
 msgid "Block user IP Address"
 msgstr ""
 
-#: concrete/single_pages/dashboard/conversations/messages.php:206
+#: concrete/single_pages/dashboard/conversations/messages.php:212
 msgid "IP Banned"
 msgstr ""
 
-#: concrete/single_pages/dashboard/conversations/messages.php:218
+#: concrete/single_pages/dashboard/conversations/messages.php:224
 msgid "There are no conversations with messages."
 msgstr ""
 
@@ -13485,11 +13498,6 @@ msgstr ""
 msgid "There are no Community Points Rating Types installed."
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/conversations/bannedwords.php:3
-#: concrete/single_pages/dashboard/system/conversations/editor.php:3
-msgid "Conversation Editor"
-msgstr ""
-
 #: concrete/single_pages/dashboard/system/conversations/settings.php:4
 msgid "Conversations Settings"
 msgstr ""
@@ -13502,6 +13510,10 @@ msgstr ""
 msgid ""
 "Note: These settings can be overridden in the block edit form for individual"
 " conversations."
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/conversations/bannedwords.php:3
+msgid "Conversation Editor"
 msgstr ""
 
 #: concrete/single_pages/dashboard/system/conversations/bannedwords.php:10
@@ -14401,6 +14413,7 @@ msgstr ""
 
 #: concrete/single_pages/dashboard/pages/types/form.php:15
 #: concrete/single_pages/dashboard/pages/types/form.php:61
+msgctxt "Name of a set"
 msgid "Set Name"
 msgstr ""
 
@@ -14792,60 +14805,89 @@ msgid "This file requires a password to download."
 msgstr "Este archivo requiere una contraseña para descargar"
 
 #: concrete/themes/greek_yogurt/css/styles.xml:3
+msgctxt "StyleSetName"
 msgid "Background Colors"
 msgstr ""
 
 #: concrete/themes/greek_yogurt/css/styles.xml:4
+msgctxt "StyleName"
 msgid "Body Background"
 msgstr ""
 
 #: concrete/themes/greek_yogurt/css/styles.xml:5
+msgctxt "StyleName"
 msgid "Header Background"
 msgstr ""
 
 #: concrete/themes/greek_yogurt/css/styles.xml:6
+msgctxt "StyleName"
 msgid "Main Background"
 msgstr ""
 
 #: concrete/themes/greek_yogurt/css/styles.xml:7
+msgctxt "StyleName"
 msgid "Footer Background"
 msgstr ""
 
 #: concrete/themes/greek_yogurt/css/styles.xml:9
+msgctxt "StyleSetName"
 msgid "Header"
 msgstr "Cabecera"
 
 #: concrete/themes/greek_yogurt/css/styles.xml:10
+msgctxt "StyleName"
 msgid "Navigation Link Color"
 msgstr ""
 
 #: concrete/themes/greek_yogurt/css/styles.xml:11
+msgctxt "StyleName"
 msgid "Navigation Background Hover"
 msgstr ""
 
 #: concrete/themes/greek_yogurt/css/styles.xml:12
+msgctxt "StyleName"
 msgid "Site Title"
 msgstr ""
 
+#: concrete/themes/greek_yogurt/css/styles.xml:14
+msgctxt "StyleSetName"
+msgid "Body"
+msgstr "Mensaje"
+
 #: concrete/themes/greek_yogurt/css/styles.xml:15
+msgctxt "StyleName"
 msgid "Typography"
 msgstr ""
 
 #: concrete/themes/greek_yogurt/css/styles.xml:16
+msgctxt "StyleName"
 msgid "Link Color"
 msgstr ""
 
 #: concrete/themes/greek_yogurt/css/styles.xml:17
+msgctxt "StyleName"
 msgid "Headings"
 msgstr ""
 
 #: concrete/themes/greek_yogurt/css/styles.xml:19
+msgctxt "StyleSetName"
 msgid "Footer"
 msgstr ""
 
 #: concrete/themes/greek_yogurt/css/styles.xml:20
+msgctxt "StyleName"
 msgid "Top Margin"
 msgstr ""
+
+#: concrete/themes/greek_yogurt/css/styles.xml:21
+msgctxt "StyleName"
+msgid "Color"
+msgstr "Color"
+
+#: concrete/themes/greek_yogurt/css/styles.xml:22
+msgctxt "StyleName"
+msgid "Background Image"
+msgstr "Imagen de fondo"
 
 #: concrete/config/install/base/dashboard.xml:6
 msgid "Whole world at a glance."
@@ -17134,3 +17176,13 @@ msgstr "Menú Header"
 msgctxt "TemplateFileName"
 msgid "Breadcrumb"
 msgstr "Seguimiento de Ruta"
+
+#: concrete/themes/greek_yogurt/css/presets/defaults.less:1
+msgctxt "PresetName"
+msgid "Greek Yogurt"
+msgstr ""
+
+#: concrete/themes/greek_yogurt/css/presets/orange_sunset.less:1
+msgctxt "PresetName"
+msgid "Orange Sunset"
+msgstr ""
