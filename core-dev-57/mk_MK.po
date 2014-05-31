@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-05-28 10:00+0000\n"
-"PO-Revision-Date: 2014-05-28 10:16+0000\n"
+"POT-Creation-Date: 2014-05-30 04:00+0000\n"
+"PO-Revision-Date: 2014-05-30 09:57+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Macedonian (Macedonia) (http://www.transifex.com/projects/p/concrete5/language/mk_MK/)\n"
 "MIME-Version: 1.0\n"
@@ -250,51 +250,64 @@ msgstr ""
 msgid "Login with Facebook"
 msgstr ""
 
-#: concrete/authentication/facebook/controller.php:19
+#: concrete/authentication/facebook/type_form.php:4
+msgid "Api Key"
+msgstr ""
+
+#: concrete/authentication/facebook/type_form.php:10
+msgid "Api Secret"
+msgstr ""
+
+#: concrete/authentication/facebook/type_form.php:15
+#, php-format
+msgid "<a href=\"%s\" target=\"_blank\">Click here</a> to obtain your access keys."
+msgstr ""
+
+#: concrete/authentication/facebook/controller.php:24
 msgid "Something went wrong, please try again."
 msgstr ""
 
 #. %s is the site name
-#: concrete/authentication/facebook/controller.php:25
+#: concrete/authentication/facebook/controller.php:30
 #, php-format
 msgid ""
 "<h2>Oh No!</h2>This facebook account isn't tied to any account of %1$s!"
 msgstr ""
 
-#: concrete/authentication/facebook/controller.php:27
+#: concrete/authentication/facebook/controller.php:32
 msgid ""
 "Please login with your Email and Password and then use the facebook login to"
 " tie them together."
 msgstr ""
 
-#: concrete/authentication/facebook/controller.php:30
+#: concrete/authentication/facebook/controller.php:35
 msgid ""
 "Please login with your Username and Password and then use the facebook login"
 " to tie them together."
 msgstr ""
 
-#: concrete/authentication/facebook/controller.php:34
+#: concrete/authentication/facebook/controller.php:39
 msgid "Successfully attached this facebook account to your user account."
 msgstr ""
 
 #. %s is the site name
-#: concrete/authentication/facebook/controller.php:36
+#: concrete/authentication/facebook/controller.php:41
 #, php-format
 msgid "This facebook account is already attached to your %s account."
 msgstr ""
 
-#: concrete/authentication/facebook/controller.php:38
+#: concrete/authentication/facebook/controller.php:43
 msgid ""
 "<h2>Oh No!</h2>The email used by your facebook account is already in "
 "use!<br>Please login to your concrete5 account and then use the facebook "
 "login to tie your accounts together."
 msgstr ""
 
-#: concrete/authentication/facebook/controller.php:57
+#: concrete/authentication/facebook/controller.php:62
 msgid "This facebook account is not tied to a user."
 msgstr ""
 
-#: concrete/authentication/facebook/controller.php:66
+#: concrete/authentication/facebook/controller.php:71
 msgid "This user is not tied to a facebook account."
 msgstr ""
 
@@ -448,7 +461,7 @@ msgstr ""
 #: concrete/single_pages/dashboard/system/permissions/site.php:65
 #: concrete/single_pages/dashboard/system/permissions/tasks.php:22
 #: concrete/single_pages/dashboard/system/permissions/users.php:22
-#: concrete/single_pages/dashboard/system/registration/authentication.php:102
+#: concrete/single_pages/dashboard/system/registration/authentication.php:94
 #: concrete/single_pages/dashboard/system/registration/postlogin.php:67
 #: concrete/single_pages/dashboard/system/registration/profiles.php:45
 #: concrete/single_pages/dashboard/system/registration/public.php:74
@@ -461,6 +474,7 @@ msgstr ""
 #: concrete/single_pages/dashboard/workflow/workflows.php:17
 #: concrete/tools/area/layout_presets.php:111
 #: concrete/tools/files/customize_search_columns.php:108
+#: concrete/tools/i18n_js.php:91
 #: concrete/tools/page_types/composer/form/edit_control.php:65
 #: concrete/tools/pages/customize_search_columns.php:108
 #: concrete/tools/pages/permissions.php:151
@@ -558,7 +572,7 @@ msgid "Add from Incoming Directory"
 msgstr ""
 
 #: concrete/tools/files/replace.php:44 concrete/tools/files/replace.php:65
-#: concrete/tools/i18n_js.php:178
+#: concrete/tools/i18n_js.php:190
 msgid "Replace"
 msgstr ""
 
@@ -608,7 +622,7 @@ msgstr ""
 #: concrete/core/File/Search/ColumnSet/DefaultSet.php:23
 #: concrete/elements/custom_style/fonts.php:23
 #: concrete/elements/files/search.php:6 concrete/tools/files/import.php:75
-#: concrete/views/dialogs/file/properties.php:67
+#: concrete/tools/i18n_js.php:94 concrete/views/dialogs/file/properties.php:67
 msgid "Size"
 msgstr "Големина"
 
@@ -652,8 +666,8 @@ msgstr ""
 #: concrete/elements/panels/page.php:43
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:62
 #: concrete/single_pages/dashboard/pages/types/view.php:43
-#: concrete/tools/files/permissions.php:47 concrete/tools/i18n_js.php:123
-#: concrete/tools/i18n_js.php:182
+#: concrete/tools/files/permissions.php:47 concrete/tools/i18n_js.php:135
+#: concrete/tools/i18n_js.php:194
 msgid "Permissions"
 msgstr "Дозволи"
 
@@ -681,6 +695,8 @@ msgstr ""
 #: concrete/blocks/core_gathering/view.php:14
 #: concrete/blocks/discussion/view.php:23
 #: concrete/blocks/form/form_setup_html.php:239
+#: concrete/core/Form/Service/Widget/Color.php:34
+#: concrete/core/StyleCustomizer/Style/ColorStyle.php:39
 #: concrete/core/Workflow/Progress/Action/CancelAction.php:7
 #: concrete/elements/block_custom_template.php:47
 #: concrete/elements/block_footer_add.php:18
@@ -728,7 +744,7 @@ msgstr ""
 #: concrete/single_pages/dashboard/system/permissions/files.php:23
 #: concrete/single_pages/dashboard/system/permissions/tasks.php:21
 #: concrete/single_pages/dashboard/system/permissions/users.php:21
-#: concrete/single_pages/dashboard/system/registration/authentication.php:98
+#: concrete/single_pages/dashboard/system/registration/authentication.php:89
 #: concrete/single_pages/dashboard/users/add.php:112
 #: concrete/single_pages/dashboard/users/add_group.php:221
 #: concrete/single_pages/dashboard/users/groups.php:208
@@ -874,7 +890,7 @@ msgstr ""
 #: concrete/single_pages/dashboard/system/backup/backup.php:113
 #: concrete/single_pages/dashboard/system/backup/update.php:17
 #: concrete/single_pages/download_file.php:28 concrete/tools/files/view.php:35
-#: concrete/tools/i18n_js.php:173
+#: concrete/tools/i18n_js.php:185
 msgid "Download"
 msgstr "Превземи"
 
@@ -920,8 +936,8 @@ msgstr ""
 #: concrete/single_pages/profile/messages.php:43
 #: concrete/tools/files/delete.php:92 concrete/tools/files/delete_set.php:47
 #: concrete/tools/gathering/item/delete.php:28 concrete/tools/i18n_js.php:27
-#: concrete/tools/i18n_js.php:85 concrete/tools/i18n_js.php:108
-#: concrete/tools/i18n_js.php:128 concrete/tools/i18n_js.php:184
+#: concrete/tools/i18n_js.php:85 concrete/tools/i18n_js.php:120
+#: concrete/tools/i18n_js.php:140 concrete/tools/i18n_js.php:196
 #: concrete/tools/pages/delete.php:122 concrete/tools/users/bulk_delete.php:67
 #: concrete/views/dialogs/page/delete.php:19
 #: concrete/views/panels/page/versions.php:37
@@ -957,7 +973,7 @@ msgstr ""
 #: concrete/elements/files/search.php:36
 #: concrete/elements/permission/clipboard.php:5
 #: concrete/tools/dashboard/sitemap_drag_request.php:212
-#: concrete/tools/files/duplicate.php:113 concrete/tools/i18n_js.php:179
+#: concrete/tools/files/duplicate.php:113 concrete/tools/i18n_js.php:191
 #: concrete/tools/versions.php:363
 msgid "Copy"
 msgstr "Копирај"
@@ -1062,7 +1078,7 @@ msgstr ""
 #: concrete/blocks/form/form_setup_html.php:18
 #: concrete/blocks/page_list/page_list_form.php:8
 #: concrete/elements/collection_theme.php:118
-#: concrete/elements/collection_theme.php:119 concrete/tools/i18n_js.php:116
+#: concrete/elements/collection_theme.php:119 concrete/tools/i18n_js.php:128
 #: concrete/tools/marketplace/details.php:106
 #: concrete/tools/marketplace/details.php:107
 #: concrete/tools/marketplace/refresh_theme.php:41
@@ -1198,7 +1214,7 @@ msgid "Full Sitemap"
 msgstr "Целосна сајтмапа"
 
 #: concrete/config/install/base/dashboard.xml:23
-#: concrete/tools/i18n_js.php:140
+#: concrete/tools/i18n_js.php:152
 #: concrete/tools/sitemap_search_selector.php:36
 msgid "Flat View"
 msgstr "Рамен поглед"
@@ -1221,6 +1237,7 @@ msgstr "Рамен поглед"
 #: concrete/single_pages/dashboard/sitemap/full.php:35
 #: concrete/single_pages/dashboard/system/seo/bulk.php:99
 #: concrete/single_pages/dashboard/users/groups/bulkupdate.php:126
+#: concrete/single_pages/dashboard/users/points/view.php:16
 #: concrete/tools/sitemap_search_selector.php:37
 #: concrete/views/panels/page/attributes.php:9
 msgid "Search"
@@ -1499,7 +1516,7 @@ msgstr ""
 msgid "Page permissions saved successfully."
 msgstr ""
 
-#: concrete/tools/i18n_js.php:183
+#: concrete/tools/i18n_js.php:195
 #: concrete/tools/panels/details/page/properties.php:14
 msgid "Properties"
 msgstr ""
@@ -1728,7 +1745,7 @@ msgid "Old Versions"
 msgstr ""
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:59
-#: concrete/single_pages/dashboard/system/registration/authentication.php:30
+#: concrete/single_pages/dashboard/system/registration/authentication.php:25
 #: concrete/tools/versions.php:352
 #: concrete/views/dialogs/file/properties.php:34
 msgid "ID"
@@ -1979,7 +1996,7 @@ msgstr ""
 #: concrete/elements/block_header.php:138
 #: concrete/elements/pages/search.php:43 concrete/elements/panels/page.php:19
 #: concrete/tools/i18n_js.php:18 concrete/tools/i18n_js.php:47
-#: concrete/tools/i18n_js.php:126 concrete/views/panels/page/design.php:10
+#: concrete/tools/i18n_js.php:138 concrete/views/panels/page/design.php:10
 msgid "Design"
 msgstr "Дизајн"
 
@@ -2064,7 +2081,7 @@ msgstr "Затвори"
 #: concrete/single_pages/account/profile/public.php:13
 #: concrete/single_pages/dashboard/system/mail/importers.php:110
 #: concrete/single_pages/dashboard/users/points/actions.php:102
-#: concrete/tools/i18n_js.php:37 concrete/tools/i18n_js.php:177
+#: concrete/tools/i18n_js.php:37 concrete/tools/i18n_js.php:189
 msgid "Edit"
 msgstr "Измени"
 
@@ -2138,7 +2155,7 @@ msgstr ""
 msgid "Retrieving add-on data from concrete5.org marketplace."
 msgstr ""
 
-#: concrete/tools/i18n_js.php:58 concrete/tools/i18n_js.php:176
+#: concrete/tools/i18n_js.php:58 concrete/tools/i18n_js.php:188
 msgid "Clear"
 msgstr ""
 
@@ -2277,64 +2294,109 @@ msgstr ""
 msgid "Edit Mode"
 msgstr "Мод за едитирање"
 
+#: concrete/tools/i18n_js.php:92
+msgid "Current Image"
+msgstr ""
+
+#: concrete/attributes/textarea/type_form.php:27
+#: concrete/blocks/image/controller.php:30 concrete/blocks/image/form.php:29
+#: concrete/core/File/Type/Type.php:35
+#: concrete/single_pages/dashboard/users/add_group.php:88
+#: concrete/single_pages/dashboard/users/groups.php:61
+#: concrete/tools/i18n_js.php:93
+msgid "Image"
+msgstr "Слика"
+
 #: concrete/tools/i18n_js.php:95
-msgid "Insert Link to File"
+msgid "Choose Font"
 msgstr ""
 
 #: concrete/tools/i18n_js.php:96
-msgid "Insert Image"
+msgid "Bold"
 msgstr ""
 
 #: concrete/tools/i18n_js.php:97
+msgid "Italic"
+msgstr ""
+
+#: concrete/tools/i18n_js.php:98
+msgid "Underline"
+msgstr ""
+
+#: concrete/tools/i18n_js.php:99
+msgid "Uppercase"
+msgstr ""
+
+#: concrete/tools/i18n_js.php:100
+msgid "Font Size"
+msgstr ""
+
+#: concrete/tools/i18n_js.php:101
+msgid "Letter spacing"
+msgstr ""
+
+#: concrete/elements/custom_style/fonts.php:31 concrete/tools/i18n_js.php:102
+msgid "Line Height"
+msgstr "Line Height"
+
+#: concrete/tools/i18n_js.php:107
+msgid "Insert Link to File"
+msgstr ""
+
+#: concrete/tools/i18n_js.php:108
+msgid "Insert Image"
+msgstr ""
+
+#: concrete/tools/i18n_js.php:109
 msgid "Link to Page"
 msgstr ""
 
-#: concrete/elements/panels/page.php:23 concrete/tools/i18n_js.php:103
+#: concrete/elements/panels/page.php:23 concrete/tools/i18n_js.php:115
 #: concrete/views/panels/details/page/seo.php:6
 msgid "SEO"
 msgstr ""
 
 #: concrete/blocks/google_map/form_setup_html.php:15
-#: concrete/elements/panels/page.php:26 concrete/tools/i18n_js.php:104
-#: concrete/tools/i18n_js.php:105
+#: concrete/elements/panels/page.php:26 concrete/tools/i18n_js.php:116
+#: concrete/tools/i18n_js.php:117
 #: concrete/views/dialogs/file/properties.php:87
 #: concrete/views/panels/details/page/location.php:5
 msgid "Location"
 msgstr "Локација"
 
-#: concrete/tools/i18n_js.php:106 concrete/tools/i18n_js.php:117
+#: concrete/tools/i18n_js.php:118 concrete/tools/i18n_js.php:129
 msgid "Visit"
 msgstr ""
 
-#: concrete/tools/i18n_js.php:107
+#: concrete/tools/i18n_js.php:119
 msgid "Edit External Link"
 msgstr ""
 
-#: concrete/tools/i18n_js.php:109
+#: concrete/tools/i18n_js.php:121
 msgid "Copy Progress"
 msgstr ""
 
-#: concrete/tools/i18n_js.php:110
+#: concrete/tools/i18n_js.php:122
 msgid "Add External Link"
 msgstr ""
 
-#: concrete/tools/i18n_js.php:111
+#: concrete/tools/i18n_js.php:123
 msgid "Send To Top"
 msgstr ""
 
-#: concrete/tools/i18n_js.php:112
+#: concrete/tools/i18n_js.php:124
 msgid "Send To Bottom"
 msgstr ""
 
-#: concrete/tools/i18n_js.php:113
+#: concrete/tools/i18n_js.php:125
 msgid "Empty Trash"
 msgstr ""
 
-#: concrete/tools/i18n_js.php:114
+#: concrete/tools/i18n_js.php:126
 msgid "Restore Page"
 msgstr ""
 
-#: concrete/tools/i18n_js.php:115
+#: concrete/tools/i18n_js.php:127
 msgid "Delete Forever"
 msgstr ""
 
@@ -2342,108 +2404,108 @@ msgstr ""
 #: concrete/config/install/base/dashboard.xml:117
 #: concrete/config/install/base/dashboard.xml:315
 #: concrete/config/install/base/dashboard.xml:731
-#: concrete/elements/panels/page.php:36 concrete/tools/i18n_js.php:118
-#: concrete/tools/i18n_js.php:121 concrete/views/panels/page/attributes.php:6
+#: concrete/elements/panels/page.php:36 concrete/tools/i18n_js.php:130
+#: concrete/tools/i18n_js.php:133 concrete/views/panels/page/attributes.php:6
 msgid "Attributes"
 msgstr ""
 
-#: concrete/elements/panels/page.php:40 concrete/tools/i18n_js.php:119
-#: concrete/tools/i18n_js.php:120
+#: concrete/elements/panels/page.php:40 concrete/tools/i18n_js.php:131
+#: concrete/tools/i18n_js.php:132
 msgid "Caching"
 msgstr ""
 
-#: concrete/tools/i18n_js.php:122
+#: concrete/tools/i18n_js.php:134
 #: concrete/views/panels/details/page/permissions/advanced.php:5
 #: concrete/views/panels/details/page/permissions/simple.php:5
 msgid "Page Permissions"
 msgstr ""
 
-#: concrete/tools/i18n_js.php:124
+#: concrete/tools/i18n_js.php:136
 msgid "Page permissions updated successfully."
 msgstr ""
 
-#: concrete/tools/i18n_js.php:125
+#: concrete/tools/i18n_js.php:137
 msgid "Theme and page type updated successfully."
 msgstr ""
 
-#: concrete/elements/panels/page.php:46 concrete/tools/i18n_js.php:127
+#: concrete/elements/panels/page.php:46 concrete/tools/i18n_js.php:139
 #: concrete/views/dialogs/file/properties.php:12
 #: concrete/views/dialogs/file/properties.php:169
 #: concrete/views/panels/page/versions.php:284
 msgid "Versions"
 msgstr ""
 
-#: concrete/tools/i18n_js.php:129
+#: concrete/tools/i18n_js.php:141
 msgid "Delete Pages"
 msgstr ""
 
-#: concrete/tools/i18n_js.php:130
+#: concrete/tools/i18n_js.php:142
 msgid "The page has been removed successfully."
 msgstr ""
 
-#: concrete/tools/i18n_js.php:131
+#: concrete/tools/i18n_js.php:143
 msgid ""
 "Delete request saved. You must complete the workflow before the page is "
 "fully removed."
 msgstr ""
 
-#: concrete/elements/collection_add.php:86 concrete/tools/i18n_js.php:132
+#: concrete/elements/collection_add.php:86 concrete/tools/i18n_js.php:144
 msgid "Add Page"
 msgstr "Додади страница"
 
-#: concrete/elements/pages/search.php:36 concrete/tools/i18n_js.php:133
+#: concrete/elements/pages/search.php:36 concrete/tools/i18n_js.php:145
 msgid "Move/Copy"
 msgstr "Премести/Копирај"
 
-#: concrete/tools/i18n_js.php:134
+#: concrete/tools/i18n_js.php:146
 msgid "Change Page Order"
 msgstr ""
 
-#: concrete/tools/i18n_js.php:135
+#: concrete/tools/i18n_js.php:147
 msgid "Move or reorder pages by dragging their icons."
 msgstr ""
 
-#: concrete/tools/i18n_js.php:136
+#: concrete/tools/i18n_js.php:148
 msgid "Choose a new parent page from the sitemap."
 msgstr ""
 
-#: concrete/tools/i18n_js.php:137
+#: concrete/tools/i18n_js.php:149
 msgid "Edit in Composer"
 msgstr ""
 
-#: concrete/tools/i18n_js.php:139
+#: concrete/tools/i18n_js.php:151
 msgid "Search Pages"
 msgstr "Барај страници"
 
-#: concrete/tools/i18n_js.php:141
+#: concrete/tools/i18n_js.php:153
 msgid "Back to Sitemap"
 msgstr ""
 
-#: concrete/tools/i18n_js.php:142
+#: concrete/tools/i18n_js.php:154
 msgid "Search Results"
 msgstr ""
 
-#: concrete/tools/i18n_js.php:143
+#: concrete/tools/i18n_js.php:155
 msgid "Created By"
 msgstr ""
 
-#: concrete/tools/i18n_js.php:144
+#: concrete/tools/i18n_js.php:156
 msgid "Choose a Page"
 msgstr ""
 
-#: concrete/tools/i18n_js.php:145
+#: concrete/tools/i18n_js.php:157
 msgid "Viewing"
 msgstr ""
 
-#: concrete/tools/i18n_js.php:146
+#: concrete/tools/i18n_js.php:158
 msgid "Result(s)"
 msgstr ""
 
-#: concrete/tools/i18n_js.php:147
+#: concrete/tools/i18n_js.php:159
 msgid "max"
 msgstr ""
 
-#: concrete/tools/i18n_js.php:148
+#: concrete/tools/i18n_js.php:160
 msgid "No results found."
 msgstr ""
 
@@ -2451,99 +2513,101 @@ msgstr ""
 #: concrete/single_pages/dashboard/pages/templates/view.php:13
 #: concrete/single_pages/dashboard/system/attributes/topics/view.php:11
 #: concrete/single_pages/dashboard/system/backup/backup.php:30
-#: concrete/tools/i18n_js.php:149
+#: concrete/tools/i18n_js.php:161
 msgid "Are you sure?"
 msgstr "Дали сте сигурни?"
 
-#: concrete/tools/i18n_js.php:150
+#: concrete/tools/i18n_js.php:162
 msgid "Unable to load sitemap data. Response received: "
 msgstr ""
 
-#: concrete/tools/i18n_js.php:151
+#: concrete/tools/i18n_js.php:163
 msgid "Unable to load sitemap data."
 msgstr ""
 
-#: concrete/tools/i18n_js.php:152
+#: concrete/tools/i18n_js.php:164
 msgid "on"
 msgstr "на"
 
-#: concrete/tools/i18n_js.php:158
+#: concrete/tools/i18n_js.php:170
 msgid "Resume Editing"
 msgstr ""
 
-#: concrete/tools/i18n_js.php:159
+#: concrete/tools/i18n_js.php:171
 msgid "No Suggestions"
 msgstr ""
 
-#: concrete/tools/i18n_js.php:165
+#: concrete/tools/i18n_js.php:177
 msgid "Edit Group"
 msgstr ""
 
-#: concrete/tools/i18n_js.php:166
+#: concrete/tools/i18n_js.php:178
 msgid "Edit Permissions"
 msgstr ""
 
 #: concrete/elements/dashboard/attributes_table.php:16
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:399
-#: concrete/tools/i18n_js.php:172
+#: concrete/tools/i18n_js.php:184
 msgid "View"
 msgstr "Поглед"
 
-#: concrete/elements/users/search.php:47 concrete/tools/i18n_js.php:174
+#: concrete/core/Form/Service/Widget/Color.php:35
+#: concrete/core/StyleCustomizer/Style/ColorStyle.php:40
+#: concrete/elements/users/search.php:47 concrete/tools/i18n_js.php:186
 msgid "Choose"
 msgstr "Избери"
 
-#: concrete/tools/i18n_js.php:175
+#: concrete/tools/i18n_js.php:187
 msgid "Copy File"
 msgstr ""
 
-#: concrete/tools/i18n_js.php:180
+#: concrete/tools/i18n_js.php:192
 msgid "Choose New File"
 msgstr ""
 
 #: concrete/config/install/base/dashboard.xml:738
 #: concrete/elements/files/search.php:34 concrete/elements/files/search.php:66
-#: concrete/tools/i18n_js.php:181
+#: concrete/tools/i18n_js.php:193
 msgid "Sets"
 msgstr "Множества"
 
 #: concrete/config/install/base/dashboard.xml:47
-#: concrete/tools/i18n_js.php:185
+#: concrete/tools/i18n_js.php:197
 msgid "File Manager"
 msgstr "Фаил менаџер"
 
-#: concrete/tools/i18n_js.php:186
+#: concrete/tools/i18n_js.php:198
 msgid "You must choose a file."
 msgstr ""
 
-#: concrete/elements/files/search.php:35 concrete/tools/i18n_js.php:187
+#: concrete/elements/files/search.php:35 concrete/tools/i18n_js.php:199
 #: concrete/views/dialogs/file/properties.php:29
 msgid "Rescan"
 msgstr ""
 
-#: concrete/tools/i18n_js.php:188
+#: concrete/tools/i18n_js.php:200
 msgid "Pending"
 msgstr ""
 
-#: concrete/tools/i18n_js.php:189
+#: concrete/tools/i18n_js.php:201
 msgid "Upload Complete"
 msgstr ""
 
-#: concrete/tools/i18n_js.php:190
+#: concrete/tools/i18n_js.php:202
 msgid "Upload Progress"
 msgstr ""
 
-#: concrete/tools/i18n_js.php:207
+#: concrete/tools/i18n_js.php:219
 msgid "Select Some Options"
 msgstr ""
 
-#: concrete/tools/i18n_js.php:208
+#: concrete/tools/i18n_js.php:220
 msgid "Select an Option"
 msgstr ""
 
 #. After this text we have a search criteria: for instance 'No results match
 #. "Criteria"'
-#: concrete/tools/i18n_js.php:209
+#: concrete/tools/i18n_js.php:221
 msgid "No results match"
 msgstr ""
 
@@ -3360,7 +3424,7 @@ msgstr ""
 #: concrete/controllers/single_page/dashboard/pages/templates/add.php:28
 #: concrete/controllers/single_page/dashboard/users/add_group.php:58
 #: concrete/controllers/single_page/dashboard/users/groups.php:61
-#: concrete/core/Attribute/Controller.php:181
+#: concrete/core/Attribute/Controller.php:208
 msgid "Name required."
 msgstr "Името е задолжително."
 
@@ -3976,6 +4040,30 @@ msgstr ""
 msgid "Invalid tree type."
 msgstr ""
 
+#: concrete/controllers/single_page/dashboard/system/registration/authentication.php:20
+msgid "Invalid Error Code"
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/registration/authentication.php:21
+#: concrete/controllers/single_page/login.php:201
+msgid "Invalid Authentication Type"
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/registration/authentication.php:48
+#, php-format
+msgid "The %s authentication type has been enabled."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/registration/authentication.php:60
+#, php-format
+msgid "The %s authentication type has been disabled."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/registration/authentication.php:74
+#, php-format
+msgid "The %s authentication type has been saved."
+msgstr ""
+
 #: concrete/controllers/single_page/dashboard/system/registration/public.php:55
 msgid "Registration settings have been saved."
 msgstr "Поставките за регистрација се зачувани."
@@ -4357,7 +4445,7 @@ msgstr ""
 
 #: concrete/controllers/single_page/dashboard/pages/templates.php:62
 #: concrete/controllers/single_page/dashboard/pages/templates/add.php:22
-#: concrete/core/Attribute/Controller.php:180
+#: concrete/core/Attribute/Controller.php:207
 msgid "Handle required."
 msgstr ""
 
@@ -4460,10 +4548,6 @@ msgstr ""
 
 #: concrete/controllers/single_page/login.php:194
 msgid "Invalid Request, please attempt login again."
-msgstr ""
-
-#: concrete/controllers/single_page/login.php:201
-msgid "Invalid Authentication Type"
 msgstr ""
 
 #: concrete/controllers/single_page/login.php:296
@@ -4921,14 +5005,6 @@ msgstr "Не може да се креира zip фајл како \"%s\": %s"
 msgid "An error occured while attempting to determine file permissions."
 msgstr "Настана грешка при обидот да се утврдат дозволите за пристап до фајлот."
 
-#: concrete/attributes/textarea/type_form.php:27
-#: concrete/blocks/image/controller.php:30 concrete/blocks/image/form.php:29
-#: concrete/core/File/Type/Type.php:35
-#: concrete/single_pages/dashboard/users/add_group.php:88
-#: concrete/single_pages/dashboard/users/groups.php:61
-msgid "Image"
-msgstr "Слика"
-
 #: concrete/core/File/Type/Type.php:38
 msgid "Video"
 msgstr "Видео"
@@ -5074,7 +5150,7 @@ msgstr ""
 msgid "%s TB"
 msgstr ""
 
-#: concrete/core/View/View.php:286
+#: concrete/core/View/View.php:287
 #, php-format
 msgid "Illegal variable name '%s' in element args."
 msgstr ""
@@ -5339,7 +5415,7 @@ msgstr ""
 msgid "New Version %s"
 msgstr "Нова Версиа %s"
 
-#: concrete/core/Page/Collection/Collection.php:51
+#: concrete/core/Page/Collection/Collection.php:61
 #, php-format
 msgid "Version %d"
 msgstr "Версиа %d"
@@ -5700,6 +5776,11 @@ msgstr ""
 #: concrete/core/Form/Service/Widget/PageSelector.php:36
 msgid "Select Page"
 msgstr "Селектирај страница"
+
+#: concrete/core/Form/Service/Widget/Color.php:36
+#: concrete/core/StyleCustomizer/Style/ColorStyle.php:41
+msgid "Clear Color Selection"
+msgstr ""
 
 #: concrete/core/Form/Service/Widget/UserSelector.php:32
 #: concrete/core/Form/Service/Widget/UserSelector.php:88
@@ -6540,18 +6621,18 @@ msgstr "Во моментов не можеме да го креираме пр�
 msgid "Viewing <b>%s</b> to <b>%s</b> (<b>%s</b> Total)"
 msgstr "Прегледување <b>%s</b> to <b>%s</b> (<b>%s</b> Вкупно)"
 
-#: concrete/core/Attribute/Controller.php:182
+#: concrete/core/Attribute/Controller.php:209
 msgid "Type required."
 msgstr "Типот е неопходен."
 
-#: concrete/core/Attribute/Controller.php:191
+#: concrete/core/Attribute/Controller.php:218
 msgid ""
 "Attribute handles may only contain letters, numbers and underscore \"_\" "
 "characters"
 msgstr ""
 
-#: concrete/core/Attribute/Controller.php:200
-#: concrete/core/Attribute/Controller.php:203
+#: concrete/core/Attribute/Controller.php:227
+#: concrete/core/Attribute/Controller.php:230
 #, php-format
 msgid "An attribute with the handle %s already exists."
 msgstr ""
@@ -6848,15 +6929,15 @@ msgid_plural "%d pages required reindexing."
 msgstr[0] ""
 msgstr[1] ""
 
-#: concrete/jobs/index_search_all.php:14
+#: concrete/jobs/index_search_all.php:21
 msgid "Index Search Engine - All"
 msgstr ""
 
-#: concrete/jobs/index_search_all.php:18
+#: concrete/jobs/index_search_all.php:26
 msgid "Empties the page search index and reindexes all pages."
 msgstr "Ги испразнува индексите за пребарување на страницата и ги реиндексира сите страници."
 
-#: concrete/jobs/index_search_all.php:42
+#: concrete/jobs/index_search_all.php:54
 #, php-format
 msgid "Index updated. %s pages indexed."
 msgstr "Индексот е ажуриран. %s страници се индексирани."
@@ -6942,7 +7023,7 @@ msgstr "%s: Основни детали"
 #: concrete/single_pages/dashboard/pages/templates/view.php:32
 #: concrete/single_pages/dashboard/system/attributes/sets.php:23
 #: concrete/single_pages/dashboard/system/attributes/sets.php:144
-#: concrete/single_pages/dashboard/system/registration/authentication.php:32
+#: concrete/single_pages/dashboard/system/registration/authentication.php:27
 msgid "Handle"
 msgstr ""
 
@@ -8377,10 +8458,6 @@ msgstr "Face"
 #: concrete/elements/custom_style/fonts.php:12
 msgid "Inherit"
 msgstr "Inherit"
-
-#: concrete/elements/custom_style/fonts.php:31
-msgid "Line Height"
-msgstr "Line Height"
 
 #: concrete/elements/custom_style/border.php:48
 #: concrete/elements/custom_style/fonts.php:39
@@ -13598,31 +13675,20 @@ msgstr ""
 msgid "There are no available attribute types awaiting installation."
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/registration/authentication.php:2
+#: concrete/single_pages/dashboard/system/registration/authentication.php:16
 #, php-format
 msgid "Edit %s Authentication Type"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:665
-#: concrete/single_pages/account/profile/edit.php:61
-#: concrete/single_pages/dashboard/system/registration/authentication.php:2
 #: concrete/single_pages/dashboard/system/registration/authentication.php:26
-msgid "Authentication Types"
-msgstr ""
-
-#: concrete/single_pages/dashboard/system/registration/authentication.php:3
-msgid "Manage Authentication Types"
-msgstr ""
-
-#: concrete/single_pages/dashboard/system/registration/authentication.php:31
 msgid "Display Name"
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/registration/authentication.php:101
+#: concrete/single_pages/dashboard/system/registration/authentication.php:92
 msgid "Disable"
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/registration/authentication.php:101
+#: concrete/single_pages/dashboard/system/registration/authentication.php:92
 msgid "Enable"
 msgstr ""
 
@@ -14730,6 +14796,11 @@ msgstr "Основни информации"
 #: concrete/config/install/base/dashboard.xml:500
 #: concrete/single_pages/account/profile/edit.php:29
 msgid "Time Zone"
+msgstr ""
+
+#: concrete/config/install/base/dashboard.xml:665
+#: concrete/single_pages/account/profile/edit.php:61
+msgid "Authentication Types"
 msgstr ""
 
 #: concrete/single_pages/account/profile/edit.php:77

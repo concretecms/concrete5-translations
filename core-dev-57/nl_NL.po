@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-05-28 10:00+0000\n"
-"PO-Revision-Date: 2014-05-28 10:16+0000\n"
+"POT-Creation-Date: 2014-05-30 04:00+0000\n"
+"PO-Revision-Date: 2014-05-30 09:58+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Dutch (Netherlands) (http://www.transifex.com/projects/p/concrete5/language/nl_NL/)\n"
 "MIME-Version: 1.0\n"
@@ -252,51 +252,64 @@ msgstr "Uw facebook-account koppelen aan deze account concrete5"
 msgid "Login with Facebook"
 msgstr "Login met Facebook"
 
-#: concrete/authentication/facebook/controller.php:19
+#: concrete/authentication/facebook/type_form.php:4
+msgid "Api Key"
+msgstr ""
+
+#: concrete/authentication/facebook/type_form.php:10
+msgid "Api Secret"
+msgstr ""
+
+#: concrete/authentication/facebook/type_form.php:15
+#, php-format
+msgid "<a href=\"%s\" target=\"_blank\">Click here</a> to obtain your access keys."
+msgstr ""
+
+#: concrete/authentication/facebook/controller.php:24
 msgid "Something went wrong, please try again."
 msgstr "Iets fout gegaan, probeer het opnieuw."
 
 #. %s is the site name
-#: concrete/authentication/facebook/controller.php:25
+#: concrete/authentication/facebook/controller.php:30
 #, php-format
 msgid ""
 "<h2>Oh No!</h2>This facebook account isn't tied to any account of %1$s!"
 msgstr "<h2>Oh No!</h2>Deze facebook-account is niet gekoppeld aan een account van %1$ s!"
 
-#: concrete/authentication/facebook/controller.php:27
+#: concrete/authentication/facebook/controller.php:32
 msgid ""
 "Please login with your Email and Password and then use the facebook login to"
 " tie them together."
 msgstr "Gelieve in te loggen met uw e-mailadres en wachtwoord en gebruik vervolgens de facebook login aan binden hen samen."
 
-#: concrete/authentication/facebook/controller.php:30
+#: concrete/authentication/facebook/controller.php:35
 msgid ""
 "Please login with your Username and Password and then use the facebook login"
 " to tie them together."
 msgstr "Gelieve in te loggen met uw gebruikersnaam en wachtwoord en gebruik vervolgens de facebook login ze aan elkaar te koppelen."
 
-#: concrete/authentication/facebook/controller.php:34
+#: concrete/authentication/facebook/controller.php:39
 msgid "Successfully attached this facebook account to your user account."
 msgstr "Met succes deze facebook-account aan uw gebruikersaccount gekoppeld."
 
 #. %s is the site name
-#: concrete/authentication/facebook/controller.php:36
+#: concrete/authentication/facebook/controller.php:41
 #, php-format
 msgid "This facebook account is already attached to your %s account."
 msgstr "Deze facebook-account is al gekoppeld aan uw %s account."
 
-#: concrete/authentication/facebook/controller.php:38
+#: concrete/authentication/facebook/controller.php:43
 msgid ""
 "<h2>Oh No!</h2>The email used by your facebook account is already in "
 "use!<br>Please login to your concrete5 account and then use the facebook "
 "login to tie your accounts together."
 msgstr "<h2>Oh No!</h2>De e-mail die wordt gebruikt door uw facebook-account is al in gebruik!<br>Gelieve in te loggen om uw concrete5 account en gebruik vervolgens de facebook login aan uw rekeningen samen te binden."
 
-#: concrete/authentication/facebook/controller.php:57
+#: concrete/authentication/facebook/controller.php:62
 msgid "This facebook account is not tied to a user."
 msgstr "Deze facebook-account is niet gebonden aan een gebruiker."
 
-#: concrete/authentication/facebook/controller.php:66
+#: concrete/authentication/facebook/controller.php:71
 msgid "This user is not tied to a facebook account."
 msgstr "Deze gebruiker is niet gebonden aan een facebook-account."
 
@@ -450,7 +463,7 @@ msgstr "Aflopend"
 #: concrete/single_pages/dashboard/system/permissions/site.php:65
 #: concrete/single_pages/dashboard/system/permissions/tasks.php:22
 #: concrete/single_pages/dashboard/system/permissions/users.php:22
-#: concrete/single_pages/dashboard/system/registration/authentication.php:102
+#: concrete/single_pages/dashboard/system/registration/authentication.php:94
 #: concrete/single_pages/dashboard/system/registration/postlogin.php:67
 #: concrete/single_pages/dashboard/system/registration/profiles.php:45
 #: concrete/single_pages/dashboard/system/registration/public.php:74
@@ -463,6 +476,7 @@ msgstr "Aflopend"
 #: concrete/single_pages/dashboard/workflow/workflows.php:17
 #: concrete/tools/area/layout_presets.php:111
 #: concrete/tools/files/customize_search_columns.php:108
+#: concrete/tools/i18n_js.php:91
 #: concrete/tools/page_types/composer/form/edit_control.php:65
 #: concrete/tools/pages/customize_search_columns.php:108
 #: concrete/tools/pages/permissions.php:151
@@ -560,7 +574,7 @@ msgid "Add from Incoming Directory"
 msgstr "Toevoegen vanuit Incoming map"
 
 #: concrete/tools/files/replace.php:44 concrete/tools/files/replace.php:65
-#: concrete/tools/i18n_js.php:178
+#: concrete/tools/i18n_js.php:190
 msgid "Replace"
 msgstr "Vervangen"
 
@@ -610,7 +624,7 @@ msgstr "Bestandsnaam"
 #: concrete/core/File/Search/ColumnSet/DefaultSet.php:23
 #: concrete/elements/custom_style/fonts.php:23
 #: concrete/elements/files/search.php:6 concrete/tools/files/import.php:75
-#: concrete/views/dialogs/file/properties.php:67
+#: concrete/tools/i18n_js.php:94 concrete/views/dialogs/file/properties.php:67
 msgid "Size"
 msgstr "Grootte"
 
@@ -654,8 +668,8 @@ msgstr "Opslaglocatie opgeslagen van de bestanden."
 #: concrete/elements/panels/page.php:43
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:62
 #: concrete/single_pages/dashboard/pages/types/view.php:43
-#: concrete/tools/files/permissions.php:47 concrete/tools/i18n_js.php:123
-#: concrete/tools/i18n_js.php:182
+#: concrete/tools/files/permissions.php:47 concrete/tools/i18n_js.php:135
+#: concrete/tools/i18n_js.php:194
 msgid "Permissions"
 msgstr "Machtigingen"
 
@@ -683,6 +697,8 @@ msgstr "Laat het volgende veld leeg om iedereen toe te staan het bestand te down
 #: concrete/blocks/core_gathering/view.php:14
 #: concrete/blocks/discussion/view.php:23
 #: concrete/blocks/form/form_setup_html.php:239
+#: concrete/core/Form/Service/Widget/Color.php:34
+#: concrete/core/StyleCustomizer/Style/ColorStyle.php:39
 #: concrete/core/Workflow/Progress/Action/CancelAction.php:7
 #: concrete/elements/block_custom_template.php:47
 #: concrete/elements/block_footer_add.php:18
@@ -730,7 +746,7 @@ msgstr "Laat het volgende veld leeg om iedereen toe te staan het bestand te down
 #: concrete/single_pages/dashboard/system/permissions/files.php:23
 #: concrete/single_pages/dashboard/system/permissions/tasks.php:21
 #: concrete/single_pages/dashboard/system/permissions/users.php:21
-#: concrete/single_pages/dashboard/system/registration/authentication.php:98
+#: concrete/single_pages/dashboard/system/registration/authentication.php:89
 #: concrete/single_pages/dashboard/users/add.php:112
 #: concrete/single_pages/dashboard/users/add_group.php:221
 #: concrete/single_pages/dashboard/users/groups.php:208
@@ -876,7 +892,7 @@ msgstr "Er is een fout opgetreden bij het downloaden"
 #: concrete/single_pages/dashboard/system/backup/backup.php:113
 #: concrete/single_pages/dashboard/system/backup/update.php:17
 #: concrete/single_pages/download_file.php:28 concrete/tools/files/view.php:35
-#: concrete/tools/i18n_js.php:173
+#: concrete/tools/i18n_js.php:185
 msgid "Download"
 msgstr "Download"
 
@@ -922,8 +938,8 @@ msgstr "(Bestanden binnen deze set worden niet verwijderd.)"
 #: concrete/single_pages/profile/messages.php:43
 #: concrete/tools/files/delete.php:92 concrete/tools/files/delete_set.php:47
 #: concrete/tools/gathering/item/delete.php:28 concrete/tools/i18n_js.php:27
-#: concrete/tools/i18n_js.php:85 concrete/tools/i18n_js.php:108
-#: concrete/tools/i18n_js.php:128 concrete/tools/i18n_js.php:184
+#: concrete/tools/i18n_js.php:85 concrete/tools/i18n_js.php:120
+#: concrete/tools/i18n_js.php:140 concrete/tools/i18n_js.php:196
 #: concrete/tools/pages/delete.php:122 concrete/tools/users/bulk_delete.php:67
 #: concrete/views/dialogs/page/delete.php:19
 #: concrete/views/panels/page/versions.php:37
@@ -959,7 +975,7 @@ msgstr "Weet u zeker dat u de volgende bestanden wil kopiëren?"
 #: concrete/elements/files/search.php:36
 #: concrete/elements/permission/clipboard.php:5
 #: concrete/tools/dashboard/sitemap_drag_request.php:212
-#: concrete/tools/files/duplicate.php:113 concrete/tools/i18n_js.php:179
+#: concrete/tools/files/duplicate.php:113 concrete/tools/i18n_js.php:191
 #: concrete/tools/versions.php:363
 msgid "Copy"
 msgstr "Kopiëren"
@@ -1064,7 +1080,7 @@ msgstr "Thema installeren"
 #: concrete/blocks/form/form_setup_html.php:18
 #: concrete/blocks/page_list/page_list_form.php:8
 #: concrete/elements/collection_theme.php:118
-#: concrete/elements/collection_theme.php:119 concrete/tools/i18n_js.php:116
+#: concrete/elements/collection_theme.php:119 concrete/tools/i18n_js.php:128
 #: concrete/tools/marketplace/details.php:106
 #: concrete/tools/marketplace/details.php:107
 #: concrete/tools/marketplace/refresh_theme.php:41
@@ -1200,7 +1216,7 @@ msgid "Full Sitemap"
 msgstr "Volledige Sitemap"
 
 #: concrete/config/install/base/dashboard.xml:23
-#: concrete/tools/i18n_js.php:140
+#: concrete/tools/i18n_js.php:152
 #: concrete/tools/sitemap_search_selector.php:36
 msgid "Flat View"
 msgstr "Platte weergave"
@@ -1223,6 +1239,7 @@ msgstr "Platte weergave"
 #: concrete/single_pages/dashboard/sitemap/full.php:35
 #: concrete/single_pages/dashboard/system/seo/bulk.php:99
 #: concrete/single_pages/dashboard/users/groups/bulkupdate.php:126
+#: concrete/single_pages/dashboard/users/points/view.php:16
 #: concrete/tools/sitemap_search_selector.php:37
 #: concrete/views/panels/page/attributes.php:9
 msgid "Search"
@@ -1501,7 +1518,7 @@ msgstr "Machtigingen paginaverzoek succesvol opgeslagen. U moet deze werkstroom 
 msgid "Page permissions saved successfully."
 msgstr "Machtigingen voor pagina met succes opgeslagen."
 
-#: concrete/tools/i18n_js.php:183
+#: concrete/tools/i18n_js.php:195
 #: concrete/tools/panels/details/page/properties.php:14
 msgid "Properties"
 msgstr "Eigenschappen"
@@ -1730,7 +1747,7 @@ msgid "Old Versions"
 msgstr "Oude Versies"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:59
-#: concrete/single_pages/dashboard/system/registration/authentication.php:30
+#: concrete/single_pages/dashboard/system/registration/authentication.php:25
 #: concrete/tools/versions.php:352
 #: concrete/views/dialogs/file/properties.php:34
 msgid "ID"
@@ -1981,7 +1998,7 @@ msgstr "Plakken van Klembord"
 #: concrete/elements/block_header.php:138
 #: concrete/elements/pages/search.php:43 concrete/elements/panels/page.php:19
 #: concrete/tools/i18n_js.php:18 concrete/tools/i18n_js.php:47
-#: concrete/tools/i18n_js.php:126 concrete/views/panels/page/design.php:10
+#: concrete/tools/i18n_js.php:138 concrete/views/panels/page/design.php:10
 msgid "Design"
 msgstr "Ontwerp"
 
@@ -2066,7 +2083,7 @@ msgstr "Sluiten"
 #: concrete/single_pages/account/profile/public.php:13
 #: concrete/single_pages/dashboard/system/mail/importers.php:110
 #: concrete/single_pages/dashboard/users/points/actions.php:102
-#: concrete/tools/i18n_js.php:37 concrete/tools/i18n_js.php:177
+#: concrete/tools/i18n_js.php:37 concrete/tools/i18n_js.php:189
 msgid "Edit"
 msgstr "Bewerken"
 
@@ -2140,7 +2157,7 @@ msgstr "Thema gegevens ophalen van de concrete5.org marktplaats."
 msgid "Retrieving add-on data from concrete5.org marketplace."
 msgstr "Extensie gegevens ophalen van de concrete5.org marktplaats."
 
-#: concrete/tools/i18n_js.php:58 concrete/tools/i18n_js.php:176
+#: concrete/tools/i18n_js.php:58 concrete/tools/i18n_js.php:188
 msgid "Clear"
 msgstr "Wissen"
 
@@ -2279,64 +2296,109 @@ msgstr "Laten we beginnen met het bewerken van een pagina."
 msgid "Edit Mode"
 msgstr "Bewerkmodus"
 
+#: concrete/tools/i18n_js.php:92
+msgid "Current Image"
+msgstr ""
+
+#: concrete/attributes/textarea/type_form.php:27
+#: concrete/blocks/image/controller.php:30 concrete/blocks/image/form.php:29
+#: concrete/core/File/Type/Type.php:35
+#: concrete/single_pages/dashboard/users/add_group.php:88
+#: concrete/single_pages/dashboard/users/groups.php:61
+#: concrete/tools/i18n_js.php:93
+msgid "Image"
+msgstr "Afbeelding"
+
 #: concrete/tools/i18n_js.php:95
+msgid "Choose Font"
+msgstr ""
+
+#: concrete/tools/i18n_js.php:96
+msgid "Bold"
+msgstr ""
+
+#: concrete/tools/i18n_js.php:97
+msgid "Italic"
+msgstr ""
+
+#: concrete/tools/i18n_js.php:98
+msgid "Underline"
+msgstr ""
+
+#: concrete/tools/i18n_js.php:99
+msgid "Uppercase"
+msgstr ""
+
+#: concrete/tools/i18n_js.php:100
+msgid "Font Size"
+msgstr ""
+
+#: concrete/tools/i18n_js.php:101
+msgid "Letter spacing"
+msgstr ""
+
+#: concrete/elements/custom_style/fonts.php:31 concrete/tools/i18n_js.php:102
+msgid "Line Height"
+msgstr "Regelhoogte"
+
+#: concrete/tools/i18n_js.php:107
 msgid "Insert Link to File"
 msgstr "Koppeling naar bestand invoegen"
 
-#: concrete/tools/i18n_js.php:96
+#: concrete/tools/i18n_js.php:108
 msgid "Insert Image"
 msgstr "Afbeelding invoegen"
 
-#: concrete/tools/i18n_js.php:97
+#: concrete/tools/i18n_js.php:109
 msgid "Link to Page"
 msgstr "Link naar pagina"
 
-#: concrete/elements/panels/page.php:23 concrete/tools/i18n_js.php:103
+#: concrete/elements/panels/page.php:23 concrete/tools/i18n_js.php:115
 #: concrete/views/panels/details/page/seo.php:6
 msgid "SEO"
 msgstr "SEO"
 
 #: concrete/blocks/google_map/form_setup_html.php:15
-#: concrete/elements/panels/page.php:26 concrete/tools/i18n_js.php:104
-#: concrete/tools/i18n_js.php:105
+#: concrete/elements/panels/page.php:26 concrete/tools/i18n_js.php:116
+#: concrete/tools/i18n_js.php:117
 #: concrete/views/dialogs/file/properties.php:87
 #: concrete/views/panels/details/page/location.php:5
 msgid "Location"
 msgstr "Locatie"
 
-#: concrete/tools/i18n_js.php:106 concrete/tools/i18n_js.php:117
+#: concrete/tools/i18n_js.php:118 concrete/tools/i18n_js.php:129
 msgid "Visit"
 msgstr "Bezoeken"
 
-#: concrete/tools/i18n_js.php:107
+#: concrete/tools/i18n_js.php:119
 msgid "Edit External Link"
 msgstr "Externe Link Bewerken"
 
-#: concrete/tools/i18n_js.php:109
+#: concrete/tools/i18n_js.php:121
 msgid "Copy Progress"
 msgstr "Kopieer voortgang"
 
-#: concrete/tools/i18n_js.php:110
+#: concrete/tools/i18n_js.php:122
 msgid "Add External Link"
 msgstr "Externe Link Toevoegen"
 
-#: concrete/tools/i18n_js.php:111
+#: concrete/tools/i18n_js.php:123
 msgid "Send To Top"
 msgstr "Naar boven"
 
-#: concrete/tools/i18n_js.php:112
+#: concrete/tools/i18n_js.php:124
 msgid "Send To Bottom"
 msgstr "Naar beneden"
 
-#: concrete/tools/i18n_js.php:113
+#: concrete/tools/i18n_js.php:125
 msgid "Empty Trash"
 msgstr "Prullenbak leegmaken"
 
-#: concrete/tools/i18n_js.php:114
+#: concrete/tools/i18n_js.php:126
 msgid "Restore Page"
 msgstr "Pagina Herstellen"
 
-#: concrete/tools/i18n_js.php:115
+#: concrete/tools/i18n_js.php:127
 msgid "Delete Forever"
 msgstr "Definitief Verwijderen"
 
@@ -2344,108 +2406,108 @@ msgstr "Definitief Verwijderen"
 #: concrete/config/install/base/dashboard.xml:117
 #: concrete/config/install/base/dashboard.xml:315
 #: concrete/config/install/base/dashboard.xml:731
-#: concrete/elements/panels/page.php:36 concrete/tools/i18n_js.php:118
-#: concrete/tools/i18n_js.php:121 concrete/views/panels/page/attributes.php:6
+#: concrete/elements/panels/page.php:36 concrete/tools/i18n_js.php:130
+#: concrete/tools/i18n_js.php:133 concrete/views/panels/page/attributes.php:6
 msgid "Attributes"
 msgstr "Attributen"
 
-#: concrete/elements/panels/page.php:40 concrete/tools/i18n_js.php:119
-#: concrete/tools/i18n_js.php:120
+#: concrete/elements/panels/page.php:40 concrete/tools/i18n_js.php:131
+#: concrete/tools/i18n_js.php:132
 msgid "Caching"
 msgstr "In cache plaatsen"
 
-#: concrete/tools/i18n_js.php:122
+#: concrete/tools/i18n_js.php:134
 #: concrete/views/panels/details/page/permissions/advanced.php:5
 #: concrete/views/panels/details/page/permissions/simple.php:5
 msgid "Page Permissions"
 msgstr "Pagina Machtigingen"
 
-#: concrete/tools/i18n_js.php:124
+#: concrete/tools/i18n_js.php:136
 msgid "Page permissions updated successfully."
 msgstr "Pagina rechten bijgewerkt."
 
-#: concrete/tools/i18n_js.php:125
+#: concrete/tools/i18n_js.php:137
 msgid "Theme and page type updated successfully."
 msgstr "Thema en pagina formaat bijgewerkt."
 
-#: concrete/elements/panels/page.php:46 concrete/tools/i18n_js.php:127
+#: concrete/elements/panels/page.php:46 concrete/tools/i18n_js.php:139
 #: concrete/views/dialogs/file/properties.php:12
 #: concrete/views/dialogs/file/properties.php:169
 #: concrete/views/panels/page/versions.php:284
 msgid "Versions"
 msgstr "Versies"
 
-#: concrete/tools/i18n_js.php:129
+#: concrete/tools/i18n_js.php:141
 msgid "Delete Pages"
 msgstr "Verwijder Pagina"
 
-#: concrete/tools/i18n_js.php:130
+#: concrete/tools/i18n_js.php:142
 msgid "The page has been removed successfully."
 msgstr "De pagina is verwijderd."
 
-#: concrete/tools/i18n_js.php:131
+#: concrete/tools/i18n_js.php:143
 msgid ""
 "Delete request saved. You must complete the workflow before the page is "
 "fully removed."
 msgstr "Verwijder verzoek opgeslagen. U moet de workflow voltooien  voordat de pagina volledig wordt verwijderd."
 
-#: concrete/elements/collection_add.php:86 concrete/tools/i18n_js.php:132
+#: concrete/elements/collection_add.php:86 concrete/tools/i18n_js.php:144
 msgid "Add Page"
 msgstr "Pagina Toevoegen"
 
-#: concrete/elements/pages/search.php:36 concrete/tools/i18n_js.php:133
+#: concrete/elements/pages/search.php:36 concrete/tools/i18n_js.php:145
 msgid "Move/Copy"
 msgstr "Verplaats/Kopieer"
 
-#: concrete/tools/i18n_js.php:134
+#: concrete/tools/i18n_js.php:146
 msgid "Change Page Order"
 msgstr "Verander pagina volgorde"
 
-#: concrete/tools/i18n_js.php:135
+#: concrete/tools/i18n_js.php:147
 msgid "Move or reorder pages by dragging their icons."
 msgstr "Verplaatsen of herordenen van pagina's door hen pictogram te verslepen."
 
-#: concrete/tools/i18n_js.php:136
+#: concrete/tools/i18n_js.php:148
 msgid "Choose a new parent page from the sitemap."
 msgstr "Kies een nieuwe ouderpagina uit de sitemap."
 
-#: concrete/tools/i18n_js.php:137
+#: concrete/tools/i18n_js.php:149
 msgid "Edit in Composer"
 msgstr "Bewerk in Composer"
 
-#: concrete/tools/i18n_js.php:139
+#: concrete/tools/i18n_js.php:151
 msgid "Search Pages"
 msgstr "Zoek Pagina's"
 
-#: concrete/tools/i18n_js.php:141
+#: concrete/tools/i18n_js.php:153
 msgid "Back to Sitemap"
 msgstr "Terug naar Sitemap"
 
-#: concrete/tools/i18n_js.php:142
+#: concrete/tools/i18n_js.php:154
 msgid "Search Results"
 msgstr "Zoekresultaten"
 
-#: concrete/tools/i18n_js.php:143
+#: concrete/tools/i18n_js.php:155
 msgid "Created By"
 msgstr "Aangemaakt door"
 
-#: concrete/tools/i18n_js.php:144
+#: concrete/tools/i18n_js.php:156
 msgid "Choose a Page"
 msgstr "Kies een Pagina"
 
-#: concrete/tools/i18n_js.php:145
+#: concrete/tools/i18n_js.php:157
 msgid "Viewing"
 msgstr "Bekijken"
 
-#: concrete/tools/i18n_js.php:146
+#: concrete/tools/i18n_js.php:158
 msgid "Result(s)"
 msgstr "Resultaten"
 
-#: concrete/tools/i18n_js.php:147
+#: concrete/tools/i18n_js.php:159
 msgid "max"
 msgstr "max"
 
-#: concrete/tools/i18n_js.php:148
+#: concrete/tools/i18n_js.php:160
 msgid "No results found."
 msgstr "Geen resultaten gevonden."
 
@@ -2453,99 +2515,101 @@ msgstr "Geen resultaten gevonden."
 #: concrete/single_pages/dashboard/pages/templates/view.php:13
 #: concrete/single_pages/dashboard/system/attributes/topics/view.php:11
 #: concrete/single_pages/dashboard/system/backup/backup.php:30
-#: concrete/tools/i18n_js.php:149
+#: concrete/tools/i18n_js.php:161
 msgid "Are you sure?"
 msgstr "Weet u het zeker?"
 
-#: concrete/tools/i18n_js.php:150
+#: concrete/tools/i18n_js.php:162
 msgid "Unable to load sitemap data. Response received: "
 msgstr "Kan sitemap informatie niet laden. Reactie ontvangen:"
 
-#: concrete/tools/i18n_js.php:151
+#: concrete/tools/i18n_js.php:163
 msgid "Unable to load sitemap data."
 msgstr "Kan sitemap informatie niet laden."
 
-#: concrete/tools/i18n_js.php:152
+#: concrete/tools/i18n_js.php:164
 msgid "on"
 msgstr "op"
 
-#: concrete/tools/i18n_js.php:158
+#: concrete/tools/i18n_js.php:170
 msgid "Resume Editing"
 msgstr "Doorgaan met Bewerken"
 
-#: concrete/tools/i18n_js.php:159
+#: concrete/tools/i18n_js.php:171
 msgid "No Suggestions"
 msgstr "Geen Suggesties"
 
-#: concrete/tools/i18n_js.php:165
+#: concrete/tools/i18n_js.php:177
 msgid "Edit Group"
 msgstr "Groep Wijzigen"
 
-#: concrete/tools/i18n_js.php:166
+#: concrete/tools/i18n_js.php:178
 msgid "Edit Permissions"
 msgstr "Wijzig Machtigingen"
 
 #: concrete/elements/dashboard/attributes_table.php:16
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:399
-#: concrete/tools/i18n_js.php:172
+#: concrete/tools/i18n_js.php:184
 msgid "View"
 msgstr "Bekijken"
 
-#: concrete/elements/users/search.php:47 concrete/tools/i18n_js.php:174
+#: concrete/core/Form/Service/Widget/Color.php:35
+#: concrete/core/StyleCustomizer/Style/ColorStyle.php:40
+#: concrete/elements/users/search.php:47 concrete/tools/i18n_js.php:186
 msgid "Choose"
 msgstr "Kiezen"
 
-#: concrete/tools/i18n_js.php:175
+#: concrete/tools/i18n_js.php:187
 msgid "Copy File"
 msgstr "Bestand kopiëren"
 
-#: concrete/tools/i18n_js.php:180
+#: concrete/tools/i18n_js.php:192
 msgid "Choose New File"
 msgstr "Kies nieuw bestand"
 
 #: concrete/config/install/base/dashboard.xml:738
 #: concrete/elements/files/search.php:34 concrete/elements/files/search.php:66
-#: concrete/tools/i18n_js.php:181
+#: concrete/tools/i18n_js.php:193
 msgid "Sets"
 msgstr "Verzamelset"
 
 #: concrete/config/install/base/dashboard.xml:47
-#: concrete/tools/i18n_js.php:185
+#: concrete/tools/i18n_js.php:197
 msgid "File Manager"
 msgstr "Bestandsbeheer"
 
-#: concrete/tools/i18n_js.php:186
+#: concrete/tools/i18n_js.php:198
 msgid "You must choose a file."
 msgstr "U moet een bestand kiezen."
 
-#: concrete/elements/files/search.php:35 concrete/tools/i18n_js.php:187
+#: concrete/elements/files/search.php:35 concrete/tools/i18n_js.php:199
 #: concrete/views/dialogs/file/properties.php:29
 msgid "Rescan"
 msgstr "Opnieuw scannen"
 
-#: concrete/tools/i18n_js.php:188
+#: concrete/tools/i18n_js.php:200
 msgid "Pending"
 msgstr "Wachten"
 
-#: concrete/tools/i18n_js.php:189
+#: concrete/tools/i18n_js.php:201
 msgid "Upload Complete"
 msgstr "Upload compleet"
 
-#: concrete/tools/i18n_js.php:190
+#: concrete/tools/i18n_js.php:202
 msgid "Upload Progress"
 msgstr "Uploaden vooruitgang"
 
-#: concrete/tools/i18n_js.php:207
+#: concrete/tools/i18n_js.php:219
 msgid "Select Some Options"
 msgstr "Selecteer Opties"
 
-#: concrete/tools/i18n_js.php:208
+#: concrete/tools/i18n_js.php:220
 msgid "Select an Option"
 msgstr "Selecteer een Optie"
 
 #. After this text we have a search criteria: for instance 'No results match
 #. "Criteria"'
-#: concrete/tools/i18n_js.php:209
+#: concrete/tools/i18n_js.php:221
 msgid "No results match"
 msgstr "Geen match gevonden"
 
@@ -3362,7 +3426,7 @@ msgstr "Vermelding van de punt van gebruiker verwijderd"
 #: concrete/controllers/single_page/dashboard/pages/templates/add.php:28
 #: concrete/controllers/single_page/dashboard/users/add_group.php:58
 #: concrete/controllers/single_page/dashboard/users/groups.php:61
-#: concrete/core/Attribute/Controller.php:181
+#: concrete/core/Attribute/Controller.php:208
 msgid "Name required."
 msgstr "Naam vereist."
 
@@ -3978,6 +4042,30 @@ msgstr "Dit knooppunt mag u niet verwijderen."
 msgid "Invalid tree type."
 msgstr "Ongeldige boom type."
 
+#: concrete/controllers/single_page/dashboard/system/registration/authentication.php:20
+msgid "Invalid Error Code"
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/registration/authentication.php:21
+#: concrete/controllers/single_page/login.php:201
+msgid "Invalid Authentication Type"
+msgstr "Ongeldig verificatietype"
+
+#: concrete/controllers/single_page/dashboard/system/registration/authentication.php:48
+#, php-format
+msgid "The %s authentication type has been enabled."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/registration/authentication.php:60
+#, php-format
+msgid "The %s authentication type has been disabled."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/registration/authentication.php:74
+#, php-format
+msgid "The %s authentication type has been saved."
+msgstr ""
+
 #: concrete/controllers/single_page/dashboard/system/registration/public.php:55
 msgid "Registration settings have been saved."
 msgstr "Registratie instellingen zijn opgeslagen."
@@ -4359,7 +4447,7 @@ msgstr "Ongeldige pagina template-object."
 
 #: concrete/controllers/single_page/dashboard/pages/templates.php:62
 #: concrete/controllers/single_page/dashboard/pages/templates/add.php:22
-#: concrete/core/Attribute/Controller.php:180
+#: concrete/core/Attribute/Controller.php:207
 msgid "Handle required."
 msgstr "Handvat vereist."
 
@@ -4463,10 +4551,6 @@ msgstr "Vul deze vereiste instellingen om voort te zetten."
 #: concrete/controllers/single_page/login.php:194
 msgid "Invalid Request, please attempt login again."
 msgstr "Ongeldige aanvraag, probeer login weer."
-
-#: concrete/controllers/single_page/login.php:201
-msgid "Invalid Authentication Type"
-msgstr "Ongeldig verificatietype"
 
 #: concrete/controllers/single_page/login.php:296
 msgid "User is not registered. Check your authentication controller."
@@ -4923,14 +5007,6 @@ msgstr "Fout bij het aanmaken van zip bestand \"%s\": %s"
 msgid "An error occured while attempting to determine file permissions."
 msgstr "Er is een fout opgetreden tijdens een poging om bestandsrechten te bepalen."
 
-#: concrete/attributes/textarea/type_form.php:27
-#: concrete/blocks/image/controller.php:30 concrete/blocks/image/form.php:29
-#: concrete/core/File/Type/Type.php:35
-#: concrete/single_pages/dashboard/users/add_group.php:88
-#: concrete/single_pages/dashboard/users/groups.php:61
-msgid "Image"
-msgstr "Afbeelding"
-
 #: concrete/core/File/Type/Type.php:38
 msgid "Video"
 msgstr "Video"
@@ -5076,7 +5152,7 @@ msgstr "%s GB"
 msgid "%s TB"
 msgstr "%s TB"
 
-#: concrete/core/View/View.php:286
+#: concrete/core/View/View.php:287
 #, php-format
 msgid "Illegal variable name '%s' in element args."
 msgstr "Niet toegestande variabele naam '%s' in element argumenten."
@@ -5341,7 +5417,7 @@ msgstr "Deze paginasjabloon is niet een geldige sjabloon voor dit paginatype."
 msgid "New Version %s"
 msgstr "Nieuwe Versie %s"
 
-#: concrete/core/Page/Collection/Collection.php:51
+#: concrete/core/Page/Collection/Collection.php:61
 #, php-format
 msgid "Version %d"
 msgstr "Versie %d"
@@ -5702,6 +5778,11 @@ msgstr "Een Badge gewonnen"
 #: concrete/core/Form/Service/Widget/PageSelector.php:36
 msgid "Select Page"
 msgstr "Selecteer Pagina"
+
+#: concrete/core/Form/Service/Widget/Color.php:36
+#: concrete/core/StyleCustomizer/Style/ColorStyle.php:41
+msgid "Clear Color Selection"
+msgstr ""
 
 #: concrete/core/Form/Service/Widget/UserSelector.php:32
 #: concrete/core/Form/Service/Widget/UserSelector.php:88
@@ -6542,18 +6623,18 @@ msgstr "Kan tijdelijk db xml bestand: %s , niet aanmaken."
 msgid "Viewing <b>%s</b> to <b>%s</b> (<b>%s</b> Total)"
 msgstr "Zichtbaar <b>%s</b> tot <b>%s</b> (<b>%s</b> Totaal)"
 
-#: concrete/core/Attribute/Controller.php:182
+#: concrete/core/Attribute/Controller.php:209
 msgid "Type required."
 msgstr "Formaat vereist."
 
-#: concrete/core/Attribute/Controller.php:191
+#: concrete/core/Attribute/Controller.php:218
 msgid ""
 "Attribute handles may only contain letters, numbers and underscore \"_\" "
 "characters"
 msgstr "Attribuut handvatten mogen alleen letters, cijfers en underscores \"_\" bevatten."
 
-#: concrete/core/Attribute/Controller.php:200
-#: concrete/core/Attribute/Controller.php:203
+#: concrete/core/Attribute/Controller.php:227
+#: concrete/core/Attribute/Controller.php:230
 #, php-format
 msgid "An attribute with the handle %s already exists."
 msgstr "Een attribuut met het handvat %s bestaat al."
@@ -6850,15 +6931,15 @@ msgid_plural "%d pages required reindexing."
 msgstr[0] "%d pagina moet opnieuw geïndexeerd worden."
 msgstr[1] "%d pagina's moeten opnieuw geïndexeerd worden."
 
-#: concrete/jobs/index_search_all.php:14
+#: concrete/jobs/index_search_all.php:21
 msgid "Index Search Engine - All"
 msgstr "Indexeer Zoek Machine - Alle pagina's"
 
-#: concrete/jobs/index_search_all.php:18
+#: concrete/jobs/index_search_all.php:26
 msgid "Empties the page search index and reindexes all pages."
 msgstr "Leegt de zoekmachine en indexeert opnieuw alle pagina's."
 
-#: concrete/jobs/index_search_all.php:42
+#: concrete/jobs/index_search_all.php:54
 #, php-format
 msgid "Index updated. %s pages indexed."
 msgstr "Index bijgewerkt. %s pagina's geïndexeerd."
@@ -6944,7 +7025,7 @@ msgstr "%s: Basis Gegevens"
 #: concrete/single_pages/dashboard/pages/templates/view.php:32
 #: concrete/single_pages/dashboard/system/attributes/sets.php:23
 #: concrete/single_pages/dashboard/system/attributes/sets.php:144
-#: concrete/single_pages/dashboard/system/registration/authentication.php:32
+#: concrete/single_pages/dashboard/system/registration/authentication.php:27
 msgid "Handle"
 msgstr "Handvat"
 
@@ -8379,10 +8460,6 @@ msgstr "Lettertype"
 #: concrete/elements/custom_style/fonts.php:12
 msgid "Inherit"
 msgstr "Erven"
-
-#: concrete/elements/custom_style/fonts.php:31
-msgid "Line Height"
-msgstr "Regelhoogte"
 
 #: concrete/elements/custom_style/border.php:48
 #: concrete/elements/custom_style/fonts.php:39
@@ -13600,31 +13677,20 @@ msgstr "Aangepaste Attribuut Formaten"
 msgid "There are no available attribute types awaiting installation."
 msgstr "Er zijn geen attribuut formaten beschikbaar voor installatie."
 
-#: concrete/single_pages/dashboard/system/registration/authentication.php:2
+#: concrete/single_pages/dashboard/system/registration/authentication.php:16
 #, php-format
 msgid "Edit %s Authentication Type"
 msgstr "Verificatietype %s bewerken"
 
-#: concrete/config/install/base/dashboard.xml:665
-#: concrete/single_pages/account/profile/edit.php:61
-#: concrete/single_pages/dashboard/system/registration/authentication.php:2
 #: concrete/single_pages/dashboard/system/registration/authentication.php:26
-msgid "Authentication Types"
-msgstr "Verificatietypen"
-
-#: concrete/single_pages/dashboard/system/registration/authentication.php:3
-msgid "Manage Authentication Types"
-msgstr "Verificatietypen beheren"
-
-#: concrete/single_pages/dashboard/system/registration/authentication.php:31
 msgid "Display Name"
 msgstr "Weergavenaam"
 
-#: concrete/single_pages/dashboard/system/registration/authentication.php:101
+#: concrete/single_pages/dashboard/system/registration/authentication.php:92
 msgid "Disable"
 msgstr "Uitschakelen"
 
-#: concrete/single_pages/dashboard/system/registration/authentication.php:101
+#: concrete/single_pages/dashboard/system/registration/authentication.php:92
 msgid "Enable"
 msgstr "Inschakelen"
 
@@ -14733,6 +14799,11 @@ msgstr "Standaard Informatie"
 #: concrete/single_pages/account/profile/edit.php:29
 msgid "Time Zone"
 msgstr "Tijdzone"
+
+#: concrete/config/install/base/dashboard.xml:665
+#: concrete/single_pages/account/profile/edit.php:61
+msgid "Authentication Types"
+msgstr "Verificatietypen"
 
 #: concrete/single_pages/account/profile/edit.php:77
 msgid "Leave blank to keep current password."

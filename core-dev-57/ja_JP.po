@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-05-28 10:00+0000\n"
-"PO-Revision-Date: 2014-05-28 10:16+0000\n"
+"POT-Creation-Date: 2014-05-30 04:00+0000\n"
+"PO-Revision-Date: 2014-05-30 09:58+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/projects/p/concrete5/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
@@ -252,51 +252,64 @@ msgstr "あなたの Facebook アカウントを concrete5 アカウントに紐
 msgid "Login with Facebook"
 msgstr "Facebook でログイン"
 
-#: concrete/authentication/facebook/controller.php:19
+#: concrete/authentication/facebook/type_form.php:4
+msgid "Api Key"
+msgstr ""
+
+#: concrete/authentication/facebook/type_form.php:10
+msgid "Api Secret"
+msgstr ""
+
+#: concrete/authentication/facebook/type_form.php:15
+#, php-format
+msgid "<a href=\"%s\" target=\"_blank\">Click here</a> to obtain your access keys."
+msgstr ""
+
+#: concrete/authentication/facebook/controller.php:24
 msgid "Something went wrong, please try again."
 msgstr "不明のエラーが発生しました。もう一度試してください。"
 
 #. %s is the site name
-#: concrete/authentication/facebook/controller.php:25
+#: concrete/authentication/facebook/controller.php:30
 #, php-format
 msgid ""
 "<h2>Oh No!</h2>This facebook account isn't tied to any account of %1$s!"
 msgstr "<h2>エラー</h2>この Facebook アカウントは、%1$s アカウントに紐付けされていません。"
 
-#: concrete/authentication/facebook/controller.php:27
+#: concrete/authentication/facebook/controller.php:32
 msgid ""
 "Please login with your Email and Password and then use the facebook login to"
 " tie them together."
 msgstr "Facebook ログインと紐付けさせるために、まず、メールアドレスとパスワードでログインしてください。"
 
-#: concrete/authentication/facebook/controller.php:30
+#: concrete/authentication/facebook/controller.php:35
 msgid ""
 "Please login with your Username and Password and then use the facebook login"
 " to tie them together."
 msgstr "Facebook ログインと紐付けさせるために、まず、IDとパスワードでログインしてください。"
 
-#: concrete/authentication/facebook/controller.php:34
+#: concrete/authentication/facebook/controller.php:39
 msgid "Successfully attached this facebook account to your user account."
 msgstr "Facebook アカウントが、あなたのユーザーアカウントに紐付けされました。"
 
 #. %s is the site name
-#: concrete/authentication/facebook/controller.php:36
+#: concrete/authentication/facebook/controller.php:41
 #, php-format
 msgid "This facebook account is already attached to your %s account."
 msgstr "この Facebook アカウントは、あなたの %s アカウントに既に紐付けされています。"
 
-#: concrete/authentication/facebook/controller.php:38
+#: concrete/authentication/facebook/controller.php:43
 msgid ""
 "<h2>Oh No!</h2>The email used by your facebook account is already in "
 "use!<br>Please login to your concrete5 account and then use the facebook "
 "login to tie your accounts together."
 msgstr "<h2>エラー</h2>Facebook アカウントで使用されているメールアドレスは、既に当サイトで使われています。<br>concrete5 アカウントでログインしてから、アカウント同士を紐付けさせてください。"
 
-#: concrete/authentication/facebook/controller.php:57
+#: concrete/authentication/facebook/controller.php:62
 msgid "This facebook account is not tied to a user."
 msgstr "この Facebook アカウントは、ユーザーに紐付けされていません。"
 
-#: concrete/authentication/facebook/controller.php:66
+#: concrete/authentication/facebook/controller.php:71
 msgid "This user is not tied to a facebook account."
 msgstr "このユーザーは Facebook アカウントに紐付けされていません。"
 
@@ -450,7 +463,7 @@ msgstr "降順"
 #: concrete/single_pages/dashboard/system/permissions/site.php:65
 #: concrete/single_pages/dashboard/system/permissions/tasks.php:22
 #: concrete/single_pages/dashboard/system/permissions/users.php:22
-#: concrete/single_pages/dashboard/system/registration/authentication.php:102
+#: concrete/single_pages/dashboard/system/registration/authentication.php:94
 #: concrete/single_pages/dashboard/system/registration/postlogin.php:67
 #: concrete/single_pages/dashboard/system/registration/profiles.php:45
 #: concrete/single_pages/dashboard/system/registration/public.php:74
@@ -463,6 +476,7 @@ msgstr "降順"
 #: concrete/single_pages/dashboard/workflow/workflows.php:17
 #: concrete/tools/area/layout_presets.php:111
 #: concrete/tools/files/customize_search_columns.php:108
+#: concrete/tools/i18n_js.php:91
 #: concrete/tools/page_types/composer/form/edit_control.php:65
 #: concrete/tools/pages/customize_search_columns.php:108
 #: concrete/tools/pages/permissions.php:151
@@ -560,7 +574,7 @@ msgid "Add from Incoming Directory"
 msgstr "入稿用ディレクトリーからの追加"
 
 #: concrete/tools/files/replace.php:44 concrete/tools/files/replace.php:65
-#: concrete/tools/i18n_js.php:178
+#: concrete/tools/i18n_js.php:190
 msgid "Replace"
 msgstr "置き換え"
 
@@ -610,7 +624,7 @@ msgstr "ファイル名"
 #: concrete/core/File/Search/ColumnSet/DefaultSet.php:23
 #: concrete/elements/custom_style/fonts.php:23
 #: concrete/elements/files/search.php:6 concrete/tools/files/import.php:75
-#: concrete/views/dialogs/file/properties.php:67
+#: concrete/tools/i18n_js.php:94 concrete/views/dialogs/file/properties.php:67
 msgid "Size"
 msgstr "サイズ"
 
@@ -654,8 +668,8 @@ msgstr ""
 #: concrete/elements/panels/page.php:43
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:62
 #: concrete/single_pages/dashboard/pages/types/view.php:43
-#: concrete/tools/files/permissions.php:47 concrete/tools/i18n_js.php:123
-#: concrete/tools/i18n_js.php:182
+#: concrete/tools/files/permissions.php:47 concrete/tools/i18n_js.php:135
+#: concrete/tools/i18n_js.php:194
 msgid "Permissions"
 msgstr "権限"
 
@@ -683,6 +697,8 @@ msgstr "このファイルをすべての人がダウンロードできるよう
 #: concrete/blocks/core_gathering/view.php:14
 #: concrete/blocks/discussion/view.php:23
 #: concrete/blocks/form/form_setup_html.php:239
+#: concrete/core/Form/Service/Widget/Color.php:34
+#: concrete/core/StyleCustomizer/Style/ColorStyle.php:39
 #: concrete/core/Workflow/Progress/Action/CancelAction.php:7
 #: concrete/elements/block_custom_template.php:47
 #: concrete/elements/block_footer_add.php:18
@@ -730,7 +746,7 @@ msgstr "このファイルをすべての人がダウンロードできるよう
 #: concrete/single_pages/dashboard/system/permissions/files.php:23
 #: concrete/single_pages/dashboard/system/permissions/tasks.php:21
 #: concrete/single_pages/dashboard/system/permissions/users.php:21
-#: concrete/single_pages/dashboard/system/registration/authentication.php:98
+#: concrete/single_pages/dashboard/system/registration/authentication.php:89
 #: concrete/single_pages/dashboard/users/add.php:112
 #: concrete/single_pages/dashboard/users/add_group.php:221
 #: concrete/single_pages/dashboard/users/groups.php:208
@@ -876,7 +892,7 @@ msgstr "ダウンロード中にエラーが発生しました"
 #: concrete/single_pages/dashboard/system/backup/backup.php:113
 #: concrete/single_pages/dashboard/system/backup/update.php:17
 #: concrete/single_pages/download_file.php:28 concrete/tools/files/view.php:35
-#: concrete/tools/i18n_js.php:173
+#: concrete/tools/i18n_js.php:185
 msgid "Download"
 msgstr "ダウンロード"
 
@@ -922,8 +938,8 @@ msgstr "(注意：セットの中にあるファイルは削除されません)"
 #: concrete/single_pages/profile/messages.php:43
 #: concrete/tools/files/delete.php:92 concrete/tools/files/delete_set.php:47
 #: concrete/tools/gathering/item/delete.php:28 concrete/tools/i18n_js.php:27
-#: concrete/tools/i18n_js.php:85 concrete/tools/i18n_js.php:108
-#: concrete/tools/i18n_js.php:128 concrete/tools/i18n_js.php:184
+#: concrete/tools/i18n_js.php:85 concrete/tools/i18n_js.php:120
+#: concrete/tools/i18n_js.php:140 concrete/tools/i18n_js.php:196
 #: concrete/tools/pages/delete.php:122 concrete/tools/users/bulk_delete.php:67
 #: concrete/views/dialogs/page/delete.php:19
 #: concrete/views/panels/page/versions.php:37
@@ -959,7 +975,7 @@ msgstr "以下のファイルをコピーしていいですか？"
 #: concrete/elements/files/search.php:36
 #: concrete/elements/permission/clipboard.php:5
 #: concrete/tools/dashboard/sitemap_drag_request.php:212
-#: concrete/tools/files/duplicate.php:113 concrete/tools/i18n_js.php:179
+#: concrete/tools/files/duplicate.php:113 concrete/tools/i18n_js.php:191
 #: concrete/tools/versions.php:363
 msgid "Copy"
 msgstr "コピー"
@@ -1063,7 +1079,7 @@ msgstr "テーマをインストールする"
 #: concrete/blocks/form/form_setup_html.php:18
 #: concrete/blocks/page_list/page_list_form.php:8
 #: concrete/elements/collection_theme.php:118
-#: concrete/elements/collection_theme.php:119 concrete/tools/i18n_js.php:116
+#: concrete/elements/collection_theme.php:119 concrete/tools/i18n_js.php:128
 #: concrete/tools/marketplace/details.php:106
 #: concrete/tools/marketplace/details.php:107
 #: concrete/tools/marketplace/refresh_theme.php:41
@@ -1198,7 +1214,7 @@ msgid "Full Sitemap"
 msgstr "フルサイトマップ"
 
 #: concrete/config/install/base/dashboard.xml:23
-#: concrete/tools/i18n_js.php:140
+#: concrete/tools/i18n_js.php:152
 #: concrete/tools/sitemap_search_selector.php:36
 msgid "Flat View"
 msgstr "フラットビュー"
@@ -1221,6 +1237,7 @@ msgstr "フラットビュー"
 #: concrete/single_pages/dashboard/sitemap/full.php:35
 #: concrete/single_pages/dashboard/system/seo/bulk.php:99
 #: concrete/single_pages/dashboard/users/groups/bulkupdate.php:126
+#: concrete/single_pages/dashboard/users/points/view.php:16
 #: concrete/tools/sitemap_search_selector.php:37
 #: concrete/views/panels/page/attributes.php:9
 msgid "Search"
@@ -1496,7 +1513,7 @@ msgstr ""
 msgid "Page permissions saved successfully."
 msgstr ""
 
-#: concrete/tools/i18n_js.php:183
+#: concrete/tools/i18n_js.php:195
 #: concrete/tools/panels/details/page/properties.php:14
 msgid "Properties"
 msgstr "設定"
@@ -1725,7 +1742,7 @@ msgid "Old Versions"
 msgstr "古いバージョン"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:59
-#: concrete/single_pages/dashboard/system/registration/authentication.php:30
+#: concrete/single_pages/dashboard/system/registration/authentication.php:25
 #: concrete/tools/versions.php:352
 #: concrete/views/dialogs/file/properties.php:34
 msgid "ID"
@@ -1976,7 +1993,7 @@ msgstr "クリップボードからペースト"
 #: concrete/elements/block_header.php:138
 #: concrete/elements/pages/search.php:43 concrete/elements/panels/page.php:19
 #: concrete/tools/i18n_js.php:18 concrete/tools/i18n_js.php:47
-#: concrete/tools/i18n_js.php:126 concrete/views/panels/page/design.php:10
+#: concrete/tools/i18n_js.php:138 concrete/views/panels/page/design.php:10
 msgid "Design"
 msgstr "デザイン"
 
@@ -2061,7 +2078,7 @@ msgstr "閉じる"
 #: concrete/single_pages/account/profile/public.php:13
 #: concrete/single_pages/dashboard/system/mail/importers.php:110
 #: concrete/single_pages/dashboard/users/points/actions.php:102
-#: concrete/tools/i18n_js.php:37 concrete/tools/i18n_js.php:177
+#: concrete/tools/i18n_js.php:37 concrete/tools/i18n_js.php:189
 msgid "Edit"
 msgstr "編集"
 
@@ -2135,7 +2152,7 @@ msgstr "concrete5.orgのマーケットプレイスからテーマを検索し�
 msgid "Retrieving add-on data from concrete5.org marketplace."
 msgstr "concrete5.orgのマーケットプレイスからアドオンを検索します。"
 
-#: concrete/tools/i18n_js.php:58 concrete/tools/i18n_js.php:176
+#: concrete/tools/i18n_js.php:58 concrete/tools/i18n_js.php:188
 msgid "Clear"
 msgstr "クリア"
 
@@ -2274,64 +2291,109 @@ msgstr ""
 msgid "Edit Mode"
 msgstr "編集モード"
 
+#: concrete/tools/i18n_js.php:92
+msgid "Current Image"
+msgstr ""
+
+#: concrete/attributes/textarea/type_form.php:27
+#: concrete/blocks/image/controller.php:30 concrete/blocks/image/form.php:29
+#: concrete/core/File/Type/Type.php:35
+#: concrete/single_pages/dashboard/users/add_group.php:88
+#: concrete/single_pages/dashboard/users/groups.php:61
+#: concrete/tools/i18n_js.php:93
+msgid "Image"
+msgstr "画像"
+
 #: concrete/tools/i18n_js.php:95
-msgid "Insert Link to File"
+msgid "Choose Font"
 msgstr ""
 
 #: concrete/tools/i18n_js.php:96
-msgid "Insert Image"
+msgid "Bold"
 msgstr ""
 
 #: concrete/tools/i18n_js.php:97
+msgid "Italic"
+msgstr ""
+
+#: concrete/tools/i18n_js.php:98
+msgid "Underline"
+msgstr ""
+
+#: concrete/tools/i18n_js.php:99
+msgid "Uppercase"
+msgstr ""
+
+#: concrete/tools/i18n_js.php:100
+msgid "Font Size"
+msgstr ""
+
+#: concrete/tools/i18n_js.php:101
+msgid "Letter spacing"
+msgstr ""
+
+#: concrete/elements/custom_style/fonts.php:31 concrete/tools/i18n_js.php:102
+msgid "Line Height"
+msgstr "行間"
+
+#: concrete/tools/i18n_js.php:107
+msgid "Insert Link to File"
+msgstr ""
+
+#: concrete/tools/i18n_js.php:108
+msgid "Insert Image"
+msgstr ""
+
+#: concrete/tools/i18n_js.php:109
 msgid "Link to Page"
 msgstr ""
 
-#: concrete/elements/panels/page.php:23 concrete/tools/i18n_js.php:103
+#: concrete/elements/panels/page.php:23 concrete/tools/i18n_js.php:115
 #: concrete/views/panels/details/page/seo.php:6
 msgid "SEO"
 msgstr ""
 
 #: concrete/blocks/google_map/form_setup_html.php:15
-#: concrete/elements/panels/page.php:26 concrete/tools/i18n_js.php:104
-#: concrete/tools/i18n_js.php:105
+#: concrete/elements/panels/page.php:26 concrete/tools/i18n_js.php:116
+#: concrete/tools/i18n_js.php:117
 #: concrete/views/dialogs/file/properties.php:87
 #: concrete/views/panels/details/page/location.php:5
 msgid "Location"
 msgstr "場所"
 
-#: concrete/tools/i18n_js.php:106 concrete/tools/i18n_js.php:117
+#: concrete/tools/i18n_js.php:118 concrete/tools/i18n_js.php:129
 msgid "Visit"
 msgstr "訪問"
 
-#: concrete/tools/i18n_js.php:107
+#: concrete/tools/i18n_js.php:119
 msgid "Edit External Link"
 msgstr "外部リンクを編集"
 
-#: concrete/tools/i18n_js.php:109
+#: concrete/tools/i18n_js.php:121
 msgid "Copy Progress"
 msgstr "複製の進行"
 
-#: concrete/tools/i18n_js.php:110
+#: concrete/tools/i18n_js.php:122
 msgid "Add External Link"
 msgstr "外部リンクを追加"
 
-#: concrete/tools/i18n_js.php:111
+#: concrete/tools/i18n_js.php:123
 msgid "Send To Top"
 msgstr "一番上に移動"
 
-#: concrete/tools/i18n_js.php:112
+#: concrete/tools/i18n_js.php:124
 msgid "Send To Bottom"
 msgstr "一番下に移動"
 
-#: concrete/tools/i18n_js.php:113
+#: concrete/tools/i18n_js.php:125
 msgid "Empty Trash"
 msgstr "ゴミ箱を空にする"
 
-#: concrete/tools/i18n_js.php:114
+#: concrete/tools/i18n_js.php:126
 msgid "Restore Page"
 msgstr "ページを復元"
 
-#: concrete/tools/i18n_js.php:115
+#: concrete/tools/i18n_js.php:127
 msgid "Delete Forever"
 msgstr "完全に削除"
 
@@ -2339,108 +2401,108 @@ msgstr "完全に削除"
 #: concrete/config/install/base/dashboard.xml:117
 #: concrete/config/install/base/dashboard.xml:315
 #: concrete/config/install/base/dashboard.xml:731
-#: concrete/elements/panels/page.php:36 concrete/tools/i18n_js.php:118
-#: concrete/tools/i18n_js.php:121 concrete/views/panels/page/attributes.php:6
+#: concrete/elements/panels/page.php:36 concrete/tools/i18n_js.php:130
+#: concrete/tools/i18n_js.php:133 concrete/views/panels/page/attributes.php:6
 msgid "Attributes"
 msgstr "属性"
 
-#: concrete/elements/panels/page.php:40 concrete/tools/i18n_js.php:119
-#: concrete/tools/i18n_js.php:120
+#: concrete/elements/panels/page.php:40 concrete/tools/i18n_js.php:131
+#: concrete/tools/i18n_js.php:132
 msgid "Caching"
 msgstr ""
 
-#: concrete/tools/i18n_js.php:122
+#: concrete/tools/i18n_js.php:134
 #: concrete/views/panels/details/page/permissions/advanced.php:5
 #: concrete/views/panels/details/page/permissions/simple.php:5
 msgid "Page Permissions"
 msgstr "ページ権限"
 
-#: concrete/tools/i18n_js.php:124
+#: concrete/tools/i18n_js.php:136
 msgid "Page permissions updated successfully."
 msgstr "ページ権限が正常に更新されました。"
 
-#: concrete/tools/i18n_js.php:125
+#: concrete/tools/i18n_js.php:137
 msgid "Theme and page type updated successfully."
 msgstr "テーマとページタイプが正常に更新されました。"
 
-#: concrete/elements/panels/page.php:46 concrete/tools/i18n_js.php:127
+#: concrete/elements/panels/page.php:46 concrete/tools/i18n_js.php:139
 #: concrete/views/dialogs/file/properties.php:12
 #: concrete/views/dialogs/file/properties.php:169
 #: concrete/views/panels/page/versions.php:284
 msgid "Versions"
 msgstr "バージョン"
 
-#: concrete/tools/i18n_js.php:129
+#: concrete/tools/i18n_js.php:141
 msgid "Delete Pages"
 msgstr "ページ削除"
 
-#: concrete/tools/i18n_js.php:130
+#: concrete/tools/i18n_js.php:142
 msgid "The page has been removed successfully."
 msgstr "ページが正常に削除されました。"
 
-#: concrete/tools/i18n_js.php:131
+#: concrete/tools/i18n_js.php:143
 msgid ""
 "Delete request saved. You must complete the workflow before the page is "
 "fully removed."
 msgstr "削除申請が保存されました。ページを完全に削除するにはワークフローを完了する必要があります。"
 
-#: concrete/elements/collection_add.php:86 concrete/tools/i18n_js.php:132
+#: concrete/elements/collection_add.php:86 concrete/tools/i18n_js.php:144
 msgid "Add Page"
 msgstr "新規ページ"
 
-#: concrete/elements/pages/search.php:36 concrete/tools/i18n_js.php:133
+#: concrete/elements/pages/search.php:36 concrete/tools/i18n_js.php:145
 msgid "Move/Copy"
 msgstr "移動／コピー"
 
-#: concrete/tools/i18n_js.php:134
+#: concrete/tools/i18n_js.php:146
 msgid "Change Page Order"
 msgstr "ページ順を変更"
 
-#: concrete/tools/i18n_js.php:135
+#: concrete/tools/i18n_js.php:147
 msgid "Move or reorder pages by dragging their icons."
 msgstr "ページを移動・並び替えするには、アイコンをドラッグしてください。"
 
-#: concrete/tools/i18n_js.php:136
+#: concrete/tools/i18n_js.php:148
 msgid "Choose a new parent page from the sitemap."
 msgstr "新しい親ページをサイトマップから選択"
 
-#: concrete/tools/i18n_js.php:137
+#: concrete/tools/i18n_js.php:149
 msgid "Edit in Composer"
 msgstr "コンポーザーで編集"
 
-#: concrete/tools/i18n_js.php:139
+#: concrete/tools/i18n_js.php:151
 msgid "Search Pages"
 msgstr "ページ検索"
 
-#: concrete/tools/i18n_js.php:141
+#: concrete/tools/i18n_js.php:153
 msgid "Back to Sitemap"
 msgstr "サイトマップに戻る"
 
-#: concrete/tools/i18n_js.php:142
+#: concrete/tools/i18n_js.php:154
 msgid "Search Results"
 msgstr "検索結果"
 
-#: concrete/tools/i18n_js.php:143
+#: concrete/tools/i18n_js.php:155
 msgid "Created By"
 msgstr "作成者"
 
-#: concrete/tools/i18n_js.php:144
+#: concrete/tools/i18n_js.php:156
 msgid "Choose a Page"
 msgstr "ページを選択"
 
-#: concrete/tools/i18n_js.php:145
+#: concrete/tools/i18n_js.php:157
 msgid "Viewing"
 msgstr "閲覧中"
 
-#: concrete/tools/i18n_js.php:146
+#: concrete/tools/i18n_js.php:158
 msgid "Result(s)"
 msgstr "結果"
 
-#: concrete/tools/i18n_js.php:147
+#: concrete/tools/i18n_js.php:159
 msgid "max"
 msgstr "最大"
 
-#: concrete/tools/i18n_js.php:148
+#: concrete/tools/i18n_js.php:160
 msgid "No results found."
 msgstr "該当する結果がありません。"
 
@@ -2448,99 +2510,101 @@ msgstr "該当する結果がありません。"
 #: concrete/single_pages/dashboard/pages/templates/view.php:13
 #: concrete/single_pages/dashboard/system/attributes/topics/view.php:11
 #: concrete/single_pages/dashboard/system/backup/backup.php:30
-#: concrete/tools/i18n_js.php:149
+#: concrete/tools/i18n_js.php:161
 msgid "Are you sure?"
 msgstr "よろしいですか？"
 
-#: concrete/tools/i18n_js.php:150
+#: concrete/tools/i18n_js.php:162
 msgid "Unable to load sitemap data. Response received: "
 msgstr "サイトマップを読み込みません。受信したレスポンス："
 
-#: concrete/tools/i18n_js.php:151
+#: concrete/tools/i18n_js.php:163
 msgid "Unable to load sitemap data."
 msgstr "サイトマップデータがロードできません。"
 
-#: concrete/tools/i18n_js.php:152
+#: concrete/tools/i18n_js.php:164
 msgid "on"
 msgstr "日時"
 
-#: concrete/tools/i18n_js.php:158
+#: concrete/tools/i18n_js.php:170
 msgid "Resume Editing"
 msgstr "編集を続ける"
 
-#: concrete/tools/i18n_js.php:159
+#: concrete/tools/i18n_js.php:171
 msgid "No Suggestions"
 msgstr "ヒントはありません"
 
-#: concrete/tools/i18n_js.php:165
+#: concrete/tools/i18n_js.php:177
 msgid "Edit Group"
 msgstr "グループを編集"
 
-#: concrete/tools/i18n_js.php:166
+#: concrete/tools/i18n_js.php:178
 msgid "Edit Permissions"
 msgstr "権限を編集"
 
 #: concrete/elements/dashboard/attributes_table.php:16
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:399
-#: concrete/tools/i18n_js.php:172
+#: concrete/tools/i18n_js.php:184
 msgid "View"
 msgstr "表示"
 
-#: concrete/elements/users/search.php:47 concrete/tools/i18n_js.php:174
+#: concrete/core/Form/Service/Widget/Color.php:35
+#: concrete/core/StyleCustomizer/Style/ColorStyle.php:40
+#: concrete/elements/users/search.php:47 concrete/tools/i18n_js.php:186
 msgid "Choose"
 msgstr "選択"
 
-#: concrete/tools/i18n_js.php:175
+#: concrete/tools/i18n_js.php:187
 msgid "Copy File"
 msgstr "ファイルをコピー"
 
-#: concrete/tools/i18n_js.php:180
+#: concrete/tools/i18n_js.php:192
 msgid "Choose New File"
 msgstr "新ファイル選択"
 
 #: concrete/config/install/base/dashboard.xml:738
 #: concrete/elements/files/search.php:34 concrete/elements/files/search.php:66
-#: concrete/tools/i18n_js.php:181
+#: concrete/tools/i18n_js.php:193
 msgid "Sets"
 msgstr "セット"
 
 #: concrete/config/install/base/dashboard.xml:47
-#: concrete/tools/i18n_js.php:185
+#: concrete/tools/i18n_js.php:197
 msgid "File Manager"
 msgstr "ファイルマネージャー"
 
-#: concrete/tools/i18n_js.php:186
+#: concrete/tools/i18n_js.php:198
 msgid "You must choose a file."
 msgstr "ファイルを選択してください。"
 
-#: concrete/elements/files/search.php:35 concrete/tools/i18n_js.php:187
+#: concrete/elements/files/search.php:35 concrete/tools/i18n_js.php:199
 #: concrete/views/dialogs/file/properties.php:29
 msgid "Rescan"
 msgstr "再スキャン"
 
-#: concrete/tools/i18n_js.php:188
+#: concrete/tools/i18n_js.php:200
 msgid "Pending"
 msgstr "保留中"
 
-#: concrete/tools/i18n_js.php:189
+#: concrete/tools/i18n_js.php:201
 msgid "Upload Complete"
 msgstr "アップロード完了"
 
-#: concrete/tools/i18n_js.php:190
+#: concrete/tools/i18n_js.php:202
 msgid "Upload Progress"
 msgstr ""
 
-#: concrete/tools/i18n_js.php:207
+#: concrete/tools/i18n_js.php:219
 msgid "Select Some Options"
 msgstr "オプションを選択"
 
-#: concrete/tools/i18n_js.php:208
+#: concrete/tools/i18n_js.php:220
 msgid "Select an Option"
 msgstr "オプションを選択"
 
 #. After this text we have a search criteria: for instance 'No results match
 #. "Criteria"'
-#: concrete/tools/i18n_js.php:209
+#: concrete/tools/i18n_js.php:221
 msgid "No results match"
 msgstr "一致する検索結果はありません"
 
@@ -3356,7 +3420,7 @@ msgstr ""
 #: concrete/controllers/single_page/dashboard/pages/templates/add.php:28
 #: concrete/controllers/single_page/dashboard/users/add_group.php:58
 #: concrete/controllers/single_page/dashboard/users/groups.php:61
-#: concrete/core/Attribute/Controller.php:181
+#: concrete/core/Attribute/Controller.php:208
 msgid "Name required."
 msgstr "名前を入力してください。"
 
@@ -3972,6 +4036,30 @@ msgstr ""
 msgid "Invalid tree type."
 msgstr ""
 
+#: concrete/controllers/single_page/dashboard/system/registration/authentication.php:20
+msgid "Invalid Error Code"
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/registration/authentication.php:21
+#: concrete/controllers/single_page/login.php:201
+msgid "Invalid Authentication Type"
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/registration/authentication.php:48
+#, php-format
+msgid "The %s authentication type has been enabled."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/registration/authentication.php:60
+#, php-format
+msgid "The %s authentication type has been disabled."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/registration/authentication.php:74
+#, php-format
+msgid "The %s authentication type has been saved."
+msgstr ""
+
 #: concrete/controllers/single_page/dashboard/system/registration/public.php:55
 msgid "Registration settings have been saved."
 msgstr "ユーザー登録設定が保存されました。"
@@ -4353,7 +4441,7 @@ msgstr ""
 
 #: concrete/controllers/single_page/dashboard/pages/templates.php:62
 #: concrete/controllers/single_page/dashboard/pages/templates/add.php:22
-#: concrete/core/Attribute/Controller.php:180
+#: concrete/core/Attribute/Controller.php:207
 msgid "Handle required."
 msgstr "ハンドル（半角英文字）は必須です。"
 
@@ -4456,10 +4544,6 @@ msgstr ""
 
 #: concrete/controllers/single_page/login.php:194
 msgid "Invalid Request, please attempt login again."
-msgstr ""
-
-#: concrete/controllers/single_page/login.php:201
-msgid "Invalid Authentication Type"
 msgstr ""
 
 #: concrete/controllers/single_page/login.php:296
@@ -4916,14 +5000,6 @@ msgstr "ZIPファイル \"%s\" を保存出来ませんでした %s"
 msgid "An error occured while attempting to determine file permissions."
 msgstr "ファイル権限の設定時にエラーが発生しました。"
 
-#: concrete/attributes/textarea/type_form.php:27
-#: concrete/blocks/image/controller.php:30 concrete/blocks/image/form.php:29
-#: concrete/core/File/Type/Type.php:35
-#: concrete/single_pages/dashboard/users/add_group.php:88
-#: concrete/single_pages/dashboard/users/groups.php:61
-msgid "Image"
-msgstr "画像"
-
 #: concrete/core/File/Type/Type.php:38
 msgid "Video"
 msgstr "ビデオ"
@@ -5068,7 +5144,7 @@ msgstr "%s GB"
 msgid "%s TB"
 msgstr "%s TB"
 
-#: concrete/core/View/View.php:286
+#: concrete/core/View/View.php:287
 #, php-format
 msgid "Illegal variable name '%s' in element args."
 msgstr "エレメントの引数「%s」は不正な変数名です。"
@@ -5333,7 +5409,7 @@ msgstr ""
 msgid "New Version %s"
 msgstr "新バージョン %s"
 
-#: concrete/core/Page/Collection/Collection.php:51
+#: concrete/core/Page/Collection/Collection.php:61
 #, php-format
 msgid "Version %d"
 msgstr "バージョン %d"
@@ -5694,6 +5770,11 @@ msgstr ""
 #: concrete/core/Form/Service/Widget/PageSelector.php:36
 msgid "Select Page"
 msgstr "ページを選択"
+
+#: concrete/core/Form/Service/Widget/Color.php:36
+#: concrete/core/StyleCustomizer/Style/ColorStyle.php:41
+msgid "Clear Color Selection"
+msgstr ""
 
 #: concrete/core/Form/Service/Widget/UserSelector.php:32
 #: concrete/core/Form/Service/Widget/UserSelector.php:88
@@ -6534,18 +6615,18 @@ msgstr "一時的な db xml file の作成ができません: %s"
 msgid "Viewing <b>%s</b> to <b>%s</b> (<b>%s</b> Total)"
 msgstr "<b>%s</b>から<b>%s</b>までを表示 (計<b>%s</b>)"
 
-#: concrete/core/Attribute/Controller.php:182
+#: concrete/core/Attribute/Controller.php:209
 msgid "Type required."
 msgstr "タイプが必要です。"
 
-#: concrete/core/Attribute/Controller.php:191
+#: concrete/core/Attribute/Controller.php:218
 msgid ""
 "Attribute handles may only contain letters, numbers and underscore \"_\" "
 "characters"
 msgstr "属性のハンドルは半角英数字と半角下線(_)のみが使用できます"
 
-#: concrete/core/Attribute/Controller.php:200
-#: concrete/core/Attribute/Controller.php:203
+#: concrete/core/Attribute/Controller.php:227
+#: concrete/core/Attribute/Controller.php:230
 #, php-format
 msgid "An attribute with the handle %s already exists."
 msgstr "ハンドルに %s を持つ属性はすでに存在します。"
@@ -6830,15 +6911,15 @@ msgid "%d page required reindexing."
 msgid_plural "%d pages required reindexing."
 msgstr[0] "%d ページの再索引が必要です。"
 
-#: concrete/jobs/index_search_all.php:14
+#: concrete/jobs/index_search_all.php:21
 msgid "Index Search Engine - All"
 msgstr "検索エンジンインデックス（全て）"
 
-#: concrete/jobs/index_search_all.php:18
+#: concrete/jobs/index_search_all.php:26
 msgid "Empties the page search index and reindexes all pages."
 msgstr "ページ検索インデックスを空にし、全てのページを再インデックスします。"
 
-#: concrete/jobs/index_search_all.php:42
+#: concrete/jobs/index_search_all.php:54
 #, php-format
 msgid "Index updated. %s pages indexed."
 msgstr "インデックスを更新しました。 %s ページをインデックスしました。"
@@ -6924,7 +7005,7 @@ msgstr "%s: 基本情報"
 #: concrete/single_pages/dashboard/pages/templates/view.php:32
 #: concrete/single_pages/dashboard/system/attributes/sets.php:23
 #: concrete/single_pages/dashboard/system/attributes/sets.php:144
-#: concrete/single_pages/dashboard/system/registration/authentication.php:32
+#: concrete/single_pages/dashboard/system/registration/authentication.php:27
 msgid "Handle"
 msgstr "ハンドル"
 
@@ -8358,10 +8439,6 @@ msgstr "フェイス"
 #: concrete/elements/custom_style/fonts.php:12
 msgid "Inherit"
 msgstr "継承"
-
-#: concrete/elements/custom_style/fonts.php:31
-msgid "Line Height"
-msgstr "行間"
 
 #: concrete/elements/custom_style/border.php:48
 #: concrete/elements/custom_style/fonts.php:39
@@ -13575,31 +13652,20 @@ msgstr "カスタム属性タイプ"
 msgid "There are no available attribute types awaiting installation."
 msgstr "現在、インストール待ち属性タイプはありません。"
 
-#: concrete/single_pages/dashboard/system/registration/authentication.php:2
+#: concrete/single_pages/dashboard/system/registration/authentication.php:16
 #, php-format
 msgid "Edit %s Authentication Type"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:665
-#: concrete/single_pages/account/profile/edit.php:61
-#: concrete/single_pages/dashboard/system/registration/authentication.php:2
 #: concrete/single_pages/dashboard/system/registration/authentication.php:26
-msgid "Authentication Types"
-msgstr ""
-
-#: concrete/single_pages/dashboard/system/registration/authentication.php:3
-msgid "Manage Authentication Types"
-msgstr ""
-
-#: concrete/single_pages/dashboard/system/registration/authentication.php:31
 msgid "Display Name"
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/registration/authentication.php:101
+#: concrete/single_pages/dashboard/system/registration/authentication.php:92
 msgid "Disable"
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/registration/authentication.php:101
+#: concrete/single_pages/dashboard/system/registration/authentication.php:92
 msgid "Enable"
 msgstr ""
 
@@ -14708,6 +14774,11 @@ msgstr "基本情報"
 #: concrete/single_pages/account/profile/edit.php:29
 msgid "Time Zone"
 msgstr "タイムゾーン"
+
+#: concrete/config/install/base/dashboard.xml:665
+#: concrete/single_pages/account/profile/edit.php:61
+msgid "Authentication Types"
+msgstr ""
 
 #: concrete/single_pages/account/profile/edit.php:77
 msgid "Leave blank to keep current password."
