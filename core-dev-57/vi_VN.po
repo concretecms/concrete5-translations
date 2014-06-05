@@ -1,12 +1,12 @@
 # 
 # Translators:
-# khuongdt <khuongdt@hotmail.com>, 2014
+# Khuong D.T <khuongdt@hotmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-05-30 04:00+0000\n"
-"PO-Revision-Date: 2014-05-30 09:57+0000\n"
+"POT-Creation-Date: 2014-06-04 10:00+0000\n"
+"PO-Revision-Date: 2014-06-04 10:02+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Vietnamese (Viet Nam) (http://www.transifex.com/projects/p/concrete5/language/vi_VN/)\n"
 "MIME-Version: 1.0\n"
@@ -1179,7 +1179,7 @@ msgstr ""
 #: concrete/attributes/select/type_form.php:107
 #: concrete/blocks/core_gathering/form/sources.php:16
 #: concrete/blocks/form/form_setup_html.php:16
-#: concrete/blocks/survey/add.php:33 concrete/blocks/tags/tag_form.php:10
+#: concrete/blocks/survey/add.php:43 concrete/blocks/survey/edit.php:52
 #: concrete/controllers/single_page/dashboard/users/points/actions.php:21
 #: concrete/elements/attribute/type_form_required.php:132
 #: concrete/elements/block_footer_add.php:19
@@ -1722,7 +1722,7 @@ msgstr "Ai đó đã mở trang này ra để chỉnh sửa."
 #: concrete/blocks/autonav/form_setup_html.php:62
 #: concrete/blocks/dashboard_site_activity/view.php:5
 #: concrete/blocks/form/form_setup_html.php:90
-#: concrete/blocks/survey/add.php:27 concrete/blocks/survey/edit.php:32
+#: concrete/blocks/survey/add.php:35 concrete/blocks/survey/edit.php:38
 #: concrete/elements/custom_style/background.php:20
 #: concrete/elements/permission/access/list.php:31
 #: concrete/elements/permission/labels.php:49
@@ -1920,7 +1920,7 @@ msgstr "Đây là một khu vực toàn cục. Nội dung được thêm ở đ�
 msgid "Invalid control"
 msgstr ""
 
-#: concrete/attributes/select/form.php:157
+#: concrete/attributes/select/form.php:158
 #: concrete/controllers/single_page/dashboard/users/points/actions.php:43
 #: concrete/elements/attribute/type_form_required.php:73
 #: concrete/tools/page_types/composer/form/edit_control.php:18
@@ -2070,7 +2070,6 @@ msgstr "Đóng"
 #: concrete/blocks/autonav/form_setup_html.php:7
 #: concrete/blocks/form/form_setup_html.php:17
 #: concrete/blocks/page_list/page_list_form.php:7
-#: concrete/blocks/tags/tag_form.php:10
 #: concrete/controllers/single_page/dashboard/users/points/actions.php:30
 #: concrete/elements/collection_attribute_values.php:17
 #: concrete/elements/conversation/message.php:32
@@ -4598,7 +4597,7 @@ msgstr "Không"
 #: concrete/blocks/form/form_setup_html.php:153
 #: concrete/blocks/form/form_setup_html.php:224
 #: concrete/blocks/page_list/page_list_form.php:118
-#: concrete/blocks/survey/add.php:21 concrete/blocks/survey/edit.php:22
+#: concrete/blocks/survey/add.php:25 concrete/blocks/survey/edit.php:24
 #: concrete/controllers/search/pages.php:230
 #: concrete/elements/page_types/form/base.php:58
 #: concrete/single_pages/dashboard/system/mail/importers.php:5
@@ -5065,6 +5064,8 @@ msgstr "Xảy ra một lỗi không rõ trong khi tải lên tệp tin. Hãy ki�
 msgid "Type"
 msgstr "Kiểu"
 
+#: concrete/blocks/search/form_setup_html.php:30
+#: concrete/blocks/tags/tag_form.php:10
 #: concrete/blocks/youtube/form_setup_html.php:20
 #: concrete/core/File/Search/ColumnSet/DefaultSet.php:20
 #: concrete/core/File/Version.php:247
@@ -5305,7 +5306,7 @@ msgstr "Kết hợp nhóm"
 msgid " + "
 msgstr "+"
 
-#: concrete/core/Page/Stack/Stack.php:59
+#: concrete/core/Page/Stack/Stack.php:108
 msgid "No Name"
 msgstr "Không có tên"
 
@@ -8925,7 +8926,6 @@ msgstr "Tùy chỉnh chủ đề"
 msgid "Preset"
 msgstr ""
 
-#: concrete/blocks/tags/tag_form.php:11
 #: concrete/views/panels/page/design/customize.php:56
 msgid "Advanced"
 msgstr "Nâng cao"
@@ -9915,31 +9915,23 @@ msgid ""
 "Error: The required page attribute with the handle of: \"%s\" doesn't exist"
 msgstr "Lỗi: Thuộc tính bắt buộc của trang với điều khiển: %s không tồn tại"
 
-#: concrete/blocks/date_archive/form.php:7
-#: concrete/blocks/tags/tag_form.php:17
-msgid "Display Title"
-msgstr "Hiển thị tiêu đề"
+#: concrete/blocks/tags/tag_form.php:15
+msgid "Display Tags"
+msgstr ""
 
-#: concrete/blocks/date_nav/form_setup_html.php:22
-#: concrete/blocks/page_list/page_list_form.php:17
-#: concrete/blocks/rss_displayer/form_setup_html.php:43
-#: concrete/blocks/tags/tag_form.php:24
-msgid "Display"
-msgstr "Hiển thị"
-
-#: concrete/blocks/tags/tag_form.php:27
+#: concrete/blocks/tags/tag_form.php:19
 msgid "Display Tags for the current page"
 msgstr "Hiển thị các thẻ cho trang hiện tại"
 
-#: concrete/blocks/tags/tag_form.php:28
+#: concrete/blocks/tags/tag_form.php:24
 msgid "Display available tags"
 msgstr "Hiển thị các thẻ có sẵn"
 
-#: concrete/blocks/tags/tag_form.php:46
+#: concrete/blocks/tags/tag_form.php:42
 msgid "Number to Display"
 msgstr "Số để Hiển thị"
 
-#: concrete/blocks/tags/tag_form.php:56
+#: concrete/blocks/tags/tag_form.php:50
 msgid "Link Tags to Page"
 msgstr "Thẻ Liên Kết  đến Trang"
 
@@ -10120,6 +10112,12 @@ msgstr "Năm  *ví dụ: 2014*"
 msgid "Number and Type of Pages"
 msgstr "Số và kiểu của trang"
 
+#: concrete/blocks/date_nav/form_setup_html.php:22
+#: concrete/blocks/page_list/page_list_form.php:17
+#: concrete/blocks/rss_displayer/form_setup_html.php:43
+msgid "Display"
+msgstr "Hiển thị"
+
 #: concrete/blocks/date_nav/form_setup_html.php:24
 #: concrete/blocks/page_list/page_list_form.php:19
 msgid "pages of type"
@@ -10142,7 +10140,6 @@ msgstr "Hiển thị các trang như đã đặt"
 
 #: concrete/blocks/date_nav/form_setup_html.php:52
 #: concrete/blocks/page_list/page_list_form.php:71
-#: concrete/blocks/search/form_setup_html.php:50
 msgid "everywhere"
 msgstr "mọi nơi"
 
@@ -10152,13 +10149,11 @@ msgstr "ở mức hiện tại"
 
 #: concrete/blocks/date_nav/form_setup_html.php:56
 #: concrete/blocks/page_list/page_list_form.php:76
-#: concrete/blocks/search/form_setup_html.php:57
 msgid "beneath this page"
 msgstr "ở dưới trang này"
 
 #: concrete/blocks/date_nav/form_setup_html.php:58
 #: concrete/blocks/page_list/page_list_form.php:81
-#: concrete/blocks/search/form_setup_html.php:63
 msgid "beneath another page"
 msgstr "ở dưới trang khác"
 
@@ -10571,7 +10566,7 @@ msgstr "%s Biểu mẫu gửi lên"
 #: concrete/attributes/textarea/type_form.php:41
 #: concrete/blocks/form/form_setup_html.php:19
 #: concrete/blocks/form/form_setup_html.php:39
-#: concrete/blocks/survey/add.php:25 concrete/blocks/survey/edit.php:27
+#: concrete/blocks/survey/add.php:33 concrete/blocks/survey/edit.php:33
 #: concrete/single_pages/dashboard/reports/forms.php:86
 #: concrete/single_pages/dashboard/system/registration/public.php:43
 #: concrete/single_pages/register.php:86
@@ -10617,7 +10612,7 @@ msgstr ""
 
 #: concrete/blocks/form/form_setup_html.php:112
 #: concrete/blocks/form/form_setup_html.php:182
-#: concrete/blocks/survey/add.php:17 concrete/blocks/survey/edit.php:17
+#: concrete/blocks/survey/add.php:18 concrete/blocks/survey/edit.php:17
 #: concrete/blocks/survey/view.php:38
 msgid "Question"
 msgstr "Câu hỏi"
@@ -11033,27 +11028,35 @@ msgid ""
 "until the reindex job has been run at least once in the dashboard."
 msgstr "Chỉ mục tìm kiếm không tồn tại. Khối này sẽ không hoạt động cho đến khi công việc đánh lại chỉ mục chạy ít nhất một lần trong bảng điều khiển."
 
-#: concrete/blocks/search/form_setup_html.php:30
-msgid "Search Title"
-msgstr "Tiêu đề tìm kiếm"
+#: concrete/blocks/search/form_setup_html.php:35
+msgid "Button Text"
+msgstr ""
 
-#: concrete/blocks/search/form_setup_html.php:37
-msgid "Submit Button Text"
-msgstr "Chữ của nút gửi lên"
+#: concrete/blocks/search/form_setup_html.php:40
+msgid "Search for Pages"
+msgstr ""
 
 #: concrete/blocks/search/form_setup_html.php:44
-msgid "Search Within Path"
-msgstr "Tìm kiếm trong đường dẫn"
+msgid "Everywhere"
+msgstr ""
 
-#: concrete/blocks/search/form_setup_html.php:86
+#: concrete/blocks/search/form_setup_html.php:50
+msgid "Beneath this Page"
+msgstr ""
+
+#: concrete/blocks/search/form_setup_html.php:56
+msgid "Beneath Another Page"
+msgstr ""
+
+#: concrete/blocks/search/form_setup_html.php:77
 msgid "Results Page"
 msgstr "Trang kết quả"
 
-#: concrete/blocks/search/form_setup_html.php:92
-msgid "Post to Another Page Elsewhere"
-msgstr "Gửi đến một trang khác ở đâu đó"
+#: concrete/blocks/search/form_setup_html.php:81
+msgid "Post Results to a Different Page"
+msgstr ""
 
-#: concrete/blocks/search/form_setup_html.php:103
+#: concrete/blocks/search/form_setup_html.php:92
 msgid "OR Path"
 msgstr "Hoặc đường dẫn"
 
@@ -11183,6 +11186,10 @@ msgstr "Liên kết đến các tệp tin trong thư viện tài nguyên."
 msgid "You must give your file a link."
 msgstr "Bạn phải cho tệp tin của bạn một liên kết."
 
+#: concrete/blocks/date_archive/form.php:7
+msgid "Display Title"
+msgstr "Hiển thị tiêu đề"
+
 #: concrete/blocks/date_archive/form.php:10
 msgid "# of Months to display"
 msgstr "# số tháng hiển thị"
@@ -11301,17 +11308,17 @@ msgstr "Biểu quyết"
 msgid "Please Login to Vote"
 msgstr "Hãy đăng nhập để biểu quyết"
 
-#: concrete/blocks/survey/add.php:20 concrete/blocks/survey/edit.php:21
+#: concrete/blocks/survey/add.php:22 concrete/blocks/survey/edit.php:21
 msgid "Open to all site visitors?"
 msgstr "Mở tới tất cả khách của trang?"
 
-#: concrete/blocks/survey/add.php:23 concrete/blocks/survey/edit.php:24
+#: concrete/blocks/survey/add.php:30 concrete/blocks/survey/edit.php:29
 msgid "No. Registration is required to answer."
 msgstr "Không. Bắt buộc đăng ký để trả lời."
 
-#: concrete/blocks/survey/add.php:31 concrete/blocks/survey/edit.php:42
-msgid "Add option"
-msgstr "Thêm lựa chọn"
+#: concrete/blocks/survey/add.php:39 concrete/blocks/survey/edit.php:48
+msgid "Add Option"
+msgstr ""
 
 #: concrete/blocks/youtube/controller.php:25
 msgid "Embeds a YouTube Video in your web page."
@@ -11701,8 +11708,8 @@ msgstr "Loại bỏ tùy chọn"
 msgid "Selected Options"
 msgstr "Tùy chọn lựa chọn"
 
-#: concrete/attributes/select/form.php:169
 #: concrete/attributes/select/form.php:170
+#: concrete/attributes/select/form.php:171
 msgid "Add Another Option"
 msgstr "Thêm tùy chọn khác"
 

@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-05-30 04:00+0000\n"
-"PO-Revision-Date: 2014-05-30 10:41+0000\n"
+"POT-Creation-Date: 2014-06-04 10:00+0000\n"
+"PO-Revision-Date: 2014-06-04 10:31+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Italian (Italy) (http://www.transifex.com/projects/p/concrete5/language/it_IT/)\n"
 "MIME-Version: 1.0\n"
@@ -1181,7 +1181,7 @@ msgstr "Argomento"
 #: concrete/attributes/select/type_form.php:107
 #: concrete/blocks/core_gathering/form/sources.php:16
 #: concrete/blocks/form/form_setup_html.php:16
-#: concrete/blocks/survey/add.php:33 concrete/blocks/tags/tag_form.php:10
+#: concrete/blocks/survey/add.php:43 concrete/blocks/survey/edit.php:52
 #: concrete/controllers/single_page/dashboard/users/points/actions.php:21
 #: concrete/elements/attribute/type_form_required.php:132
 #: concrete/elements/block_footer_add.php:19
@@ -1727,7 +1727,7 @@ msgstr "Qualcuno sta già modificando questa pagina."
 #: concrete/blocks/autonav/form_setup_html.php:62
 #: concrete/blocks/dashboard_site_activity/view.php:5
 #: concrete/blocks/form/form_setup_html.php:90
-#: concrete/blocks/survey/add.php:27 concrete/blocks/survey/edit.php:32
+#: concrete/blocks/survey/add.php:35 concrete/blocks/survey/edit.php:38
 #: concrete/elements/custom_style/background.php:20
 #: concrete/elements/permission/access/list.php:31
 #: concrete/elements/permission/labels.php:49
@@ -1925,7 +1925,7 @@ msgstr "Questa è un’area globale. Il contenuto aggiunto qui sarà visibile in
 msgid "Invalid control"
 msgstr "Controllo non valido"
 
-#: concrete/attributes/select/form.php:157
+#: concrete/attributes/select/form.php:158
 #: concrete/controllers/single_page/dashboard/users/points/actions.php:43
 #: concrete/elements/attribute/type_form_required.php:73
 #: concrete/tools/page_types/composer/form/edit_control.php:18
@@ -2075,7 +2075,6 @@ msgstr "Chiudi"
 #: concrete/blocks/autonav/form_setup_html.php:7
 #: concrete/blocks/form/form_setup_html.php:17
 #: concrete/blocks/page_list/page_list_form.php:7
-#: concrete/blocks/tags/tag_form.php:10
 #: concrete/controllers/single_page/dashboard/users/points/actions.php:30
 #: concrete/elements/collection_attribute_values.php:17
 #: concrete/elements/conversation/message.php:32
@@ -2297,7 +2296,7 @@ msgstr "Modalità modifica"
 
 #: concrete/tools/i18n_js.php:92
 msgid "Current Image"
-msgstr ""
+msgstr "Immagine attuale"
 
 #: concrete/attributes/textarea/type_form.php:27
 #: concrete/blocks/image/controller.php:30 concrete/blocks/image/form.php:29
@@ -4604,7 +4603,7 @@ msgstr "No"
 #: concrete/blocks/form/form_setup_html.php:153
 #: concrete/blocks/form/form_setup_html.php:224
 #: concrete/blocks/page_list/page_list_form.php:118
-#: concrete/blocks/survey/add.php:21 concrete/blocks/survey/edit.php:22
+#: concrete/blocks/survey/add.php:25 concrete/blocks/survey/edit.php:24
 #: concrete/controllers/search/pages.php:230
 #: concrete/elements/page_types/form/base.php:58
 #: concrete/single_pages/dashboard/system/mail/importers.php:5
@@ -5072,6 +5071,8 @@ msgstr "Si è verificato un errore sconosciuto durante l’upload del file. Veri
 msgid "Type"
 msgstr "Tipo"
 
+#: concrete/blocks/search/form_setup_html.php:30
+#: concrete/blocks/tags/tag_form.php:10
 #: concrete/blocks/youtube/form_setup_html.php:20
 #: concrete/core/File/Search/ColumnSet/DefaultSet.php:20
 #: concrete/core/File/Version.php:247
@@ -5313,7 +5314,7 @@ msgstr "Combinazione gruppi"
 msgid " + "
 msgstr " + "
 
-#: concrete/core/Page/Stack/Stack.php:59
+#: concrete/core/Page/Stack/Stack.php:108
 msgid "No Name"
 msgstr "Nessun nome"
 
@@ -8947,7 +8948,6 @@ msgstr "Personalizza tema"
 msgid "Preset"
 msgstr "Combinazione"
 
-#: concrete/blocks/tags/tag_form.php:11
 #: concrete/views/panels/page/design/customize.php:56
 msgid "Advanced"
 msgstr "Avanzata"
@@ -9937,31 +9937,23 @@ msgid ""
 "Error: The required page attribute with the handle of: \"%s\" doesn't exist"
 msgstr "Errore: l’attributo di pagina con handle “%s” richiesto non esiste"
 
-#: concrete/blocks/date_archive/form.php:7
-#: concrete/blocks/tags/tag_form.php:17
-msgid "Display Title"
-msgstr "Mostra titolo"
+#: concrete/blocks/tags/tag_form.php:15
+msgid "Display Tags"
+msgstr "Mostra tag"
 
-#: concrete/blocks/date_nav/form_setup_html.php:22
-#: concrete/blocks/page_list/page_list_form.php:17
-#: concrete/blocks/rss_displayer/form_setup_html.php:43
-#: concrete/blocks/tags/tag_form.php:24
-msgid "Display"
-msgstr "Mostra"
-
-#: concrete/blocks/tags/tag_form.php:27
+#: concrete/blocks/tags/tag_form.php:19
 msgid "Display Tags for the current page"
 msgstr "Mostra i tag della pagina corrente"
 
-#: concrete/blocks/tags/tag_form.php:28
+#: concrete/blocks/tags/tag_form.php:24
 msgid "Display available tags"
 msgstr "Mostra i tag disponibili"
 
-#: concrete/blocks/tags/tag_form.php:46
+#: concrete/blocks/tags/tag_form.php:42
 msgid "Number to Display"
 msgstr "Numero da mostrare"
 
-#: concrete/blocks/tags/tag_form.php:56
+#: concrete/blocks/tags/tag_form.php:50
 msgid "Link Tags to Page"
 msgstr "Collega tag alla pagina"
 
@@ -10142,6 +10134,12 @@ msgstr "F"
 msgid "Number and Type of Pages"
 msgstr "Numero e tipo di pagine"
 
+#: concrete/blocks/date_nav/form_setup_html.php:22
+#: concrete/blocks/page_list/page_list_form.php:17
+#: concrete/blocks/rss_displayer/form_setup_html.php:43
+msgid "Display"
+msgstr "Mostra"
+
 #: concrete/blocks/date_nav/form_setup_html.php:24
 #: concrete/blocks/page_list/page_list_form.php:19
 msgid "pages of type"
@@ -10164,7 +10162,6 @@ msgstr "Mostra pagine posizionate"
 
 #: concrete/blocks/date_nav/form_setup_html.php:52
 #: concrete/blocks/page_list/page_list_form.php:71
-#: concrete/blocks/search/form_setup_html.php:50
 msgid "everywhere"
 msgstr "ovunque"
 
@@ -10174,13 +10171,11 @@ msgstr "al livello attuale"
 
 #: concrete/blocks/date_nav/form_setup_html.php:56
 #: concrete/blocks/page_list/page_list_form.php:76
-#: concrete/blocks/search/form_setup_html.php:57
 msgid "beneath this page"
 msgstr "sotto questa pagina"
 
 #: concrete/blocks/date_nav/form_setup_html.php:58
 #: concrete/blocks/page_list/page_list_form.php:81
-#: concrete/blocks/search/form_setup_html.php:63
 msgid "beneath another page"
 msgstr "sotto un’altra pagina"
 
@@ -10593,7 +10588,7 @@ msgstr "Invio modulo %s"
 #: concrete/attributes/textarea/type_form.php:41
 #: concrete/blocks/form/form_setup_html.php:19
 #: concrete/blocks/form/form_setup_html.php:39
-#: concrete/blocks/survey/add.php:25 concrete/blocks/survey/edit.php:27
+#: concrete/blocks/survey/add.php:33 concrete/blocks/survey/edit.php:33
 #: concrete/single_pages/dashboard/reports/forms.php:86
 #: concrete/single_pages/dashboard/system/registration/public.php:43
 #: concrete/single_pages/register.php:86
@@ -10639,7 +10634,7 @@ msgstr "Domanda aggiunta. Per vederla fare clic sulla scheda dell`anteprima."
 
 #: concrete/blocks/form/form_setup_html.php:112
 #: concrete/blocks/form/form_setup_html.php:182
-#: concrete/blocks/survey/add.php:17 concrete/blocks/survey/edit.php:17
+#: concrete/blocks/survey/add.php:18 concrete/blocks/survey/edit.php:17
 #: concrete/blocks/survey/view.php:38
 msgid "Question"
 msgstr "Domanda"
@@ -11056,27 +11051,35 @@ msgid ""
 "until the reindex job has been run at least once in the dashboard."
 msgstr "Sembra che l’indice di ricerca non esista. Questo blocco non funzionerà finché il processo di reindicizzazione non verrà eseguita almeno una volta dal pannello di controllo."
 
-#: concrete/blocks/search/form_setup_html.php:30
-msgid "Search Title"
-msgstr "Titolo ricerca"
+#: concrete/blocks/search/form_setup_html.php:35
+msgid "Button Text"
+msgstr "Testo del pulsante"
 
-#: concrete/blocks/search/form_setup_html.php:37
-msgid "Submit Button Text"
-msgstr "Testo pulsante invio"
+#: concrete/blocks/search/form_setup_html.php:40
+msgid "Search for Pages"
+msgstr "Cerca pagine"
 
 #: concrete/blocks/search/form_setup_html.php:44
-msgid "Search Within Path"
-msgstr "Cerca nel percorso"
+msgid "Everywhere"
+msgstr "Ovunque"
 
-#: concrete/blocks/search/form_setup_html.php:86
+#: concrete/blocks/search/form_setup_html.php:50
+msgid "Beneath this Page"
+msgstr "sotto questa pagina"
+
+#: concrete/blocks/search/form_setup_html.php:56
+msgid "Beneath Another Page"
+msgstr "sotto un’altra pagina"
+
+#: concrete/blocks/search/form_setup_html.php:77
 msgid "Results Page"
 msgstr "Pagina dei risultati"
 
-#: concrete/blocks/search/form_setup_html.php:92
-msgid "Post to Another Page Elsewhere"
-msgstr "Inserisci in un’altra pagina da qualche altra parte"
+#: concrete/blocks/search/form_setup_html.php:81
+msgid "Post Results to a Different Page"
+msgstr "posta i risultati in un’altra pagina"
 
-#: concrete/blocks/search/form_setup_html.php:103
+#: concrete/blocks/search/form_setup_html.php:92
 msgid "OR Path"
 msgstr "OPPURE percorso"
 
@@ -11206,6 +11209,10 @@ msgstr "Collegamento ai file salvato nella libreria configurazioni."
 msgid "You must give your file a link."
 msgstr "È necessario assegnare un collegamento al file."
 
+#: concrete/blocks/date_archive/form.php:7
+msgid "Display Title"
+msgstr "Mostra titolo"
+
 #: concrete/blocks/date_archive/form.php:10
 msgid "# of Months to display"
 msgstr "N° di mesi da mostrare"
@@ -11325,17 +11332,17 @@ msgstr "Vota"
 msgid "Please Login to Vote"
 msgstr "Effettuare l’accesso per votare"
 
-#: concrete/blocks/survey/add.php:20 concrete/blocks/survey/edit.php:21
+#: concrete/blocks/survey/add.php:22 concrete/blocks/survey/edit.php:21
 msgid "Open to all site visitors?"
 msgstr "Apri a tutti i visitatori del sito?"
 
-#: concrete/blocks/survey/add.php:23 concrete/blocks/survey/edit.php:24
+#: concrete/blocks/survey/add.php:30 concrete/blocks/survey/edit.php:29
 msgid "No. Registration is required to answer."
 msgstr "No. È necessario registrarsi per rispondere."
 
-#: concrete/blocks/survey/add.php:31 concrete/blocks/survey/edit.php:42
-msgid "Add option"
-msgstr "Aggiungi opzione"
+#: concrete/blocks/survey/add.php:39 concrete/blocks/survey/edit.php:48
+msgid "Add Option"
+msgstr "Inserisci opzione"
 
 #: concrete/blocks/youtube/controller.php:25
 msgid "Embeds a YouTube Video in your web page."
@@ -11725,8 +11732,8 @@ msgstr "Rimuovi opzione"
 msgid "Selected Options"
 msgstr "Opzioni selezionate"
 
-#: concrete/attributes/select/form.php:169
 #: concrete/attributes/select/form.php:170
+#: concrete/attributes/select/form.php:171
 msgid "Add Another Option"
 msgstr "Aggiungi un’altra opzione"
 

@@ -1,15 +1,15 @@
 # 
 # Translators:
-# MrLindau <fredrik@fxlindau.se>, 2014
-# Perra Jonasson <perra.jonasson@gmail.com>, 2014
-# rkalitta <robert.kalitta@gmail.com>, 2014
+# Fredrik Lindau <fredrik@fxlindau.se>, 2014
+# perra.jonasson <perra.jonasson@gmail.com>, 2014
+# Robert Kalitta <robert.kalitta@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-05-30 04:00+0000\n"
-"PO-Revision-Date: 2014-05-30 12:22+0000\n"
-"Last-Translator: MrLindau <fredrik@fxlindau.se>\n"
+"POT-Creation-Date: 2014-06-04 10:00+0000\n"
+"PO-Revision-Date: 2014-06-05 05:01+0000\n"
+"Last-Translator: Fredrik Lindau <fredrik@fxlindau.se>\n"
 "Language-Team: Swedish (Sweden) (http://www.transifex.com/projects/p/concrete5/language/sv_SE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1183,7 +1183,7 @@ msgstr "Ämne"
 #: concrete/attributes/select/type_form.php:107
 #: concrete/blocks/core_gathering/form/sources.php:16
 #: concrete/blocks/form/form_setup_html.php:16
-#: concrete/blocks/survey/add.php:33 concrete/blocks/tags/tag_form.php:10
+#: concrete/blocks/survey/add.php:43 concrete/blocks/survey/edit.php:52
 #: concrete/controllers/single_page/dashboard/users/points/actions.php:21
 #: concrete/elements/attribute/type_form_required.php:132
 #: concrete/elements/block_footer_add.php:19
@@ -1689,7 +1689,7 @@ msgstr "Det här är ett globalt block. Ändringar som görs här kommer att åt
 msgid ""
 "This block is an alias of Page Defaults. Editing it here will \"disconnect\""
 " it so changes to Page Defaults will no longer affect this block."
-msgstr "Detta block är ett alias för sidförvalen. Om du redigerar den här, \"losskopplas\" den så att ändringar i sidförvalen inte längre påverkar detta block."
+msgstr "Detta block är ett alias för sidans förval. Om du redigerar den här, \"frikopplas\" den så att ändringar i sidans förval inte längre påverkar detta block."
 
 #: concrete/tools/versions.php:35 concrete/views/frontend/install.php:69
 #: concrete/views/frontend/install.php:127
@@ -1729,7 +1729,7 @@ msgstr "Någon har redan öppnat denna sida för redigering."
 #: concrete/blocks/autonav/form_setup_html.php:62
 #: concrete/blocks/dashboard_site_activity/view.php:5
 #: concrete/blocks/form/form_setup_html.php:90
-#: concrete/blocks/survey/add.php:27 concrete/blocks/survey/edit.php:32
+#: concrete/blocks/survey/add.php:35 concrete/blocks/survey/edit.php:38
 #: concrete/elements/custom_style/background.php:20
 #: concrete/elements/permission/access/list.php:31
 #: concrete/elements/permission/labels.php:49
@@ -1927,7 +1927,7 @@ msgstr "Detta är ett globalt område. Innehåll som läggs till här kommer att
 msgid "Invalid control"
 msgstr "Ogiltig kontroll."
 
-#: concrete/attributes/select/form.php:157
+#: concrete/attributes/select/form.php:158
 #: concrete/controllers/single_page/dashboard/users/points/actions.php:43
 #: concrete/elements/attribute/type_form_required.php:73
 #: concrete/tools/page_types/composer/form/edit_control.php:18
@@ -2077,7 +2077,6 @@ msgstr "Stäng"
 #: concrete/blocks/autonav/form_setup_html.php:7
 #: concrete/blocks/form/form_setup_html.php:17
 #: concrete/blocks/page_list/page_list_form.php:7
-#: concrete/blocks/tags/tag_form.php:10
 #: concrete/controllers/single_page/dashboard/users/points/actions.php:30
 #: concrete/elements/collection_attribute_values.php:17
 #: concrete/elements/conversation/message.php:32
@@ -2699,7 +2698,7 @@ msgstr "Cache-lagra under hur lång tid?"
 #: concrete/tools/pages/speed_settings.php:157
 #, php-format
 msgid "Default - %s minutes"
-msgstr "Förval - %s minuter"
+msgstr "Förvald - %s minuter"
 
 #: concrete/blocks/core_conversation/form.php:153
 #: concrete/elements/collection_speed_settings.php:152
@@ -2751,7 +2750,7 @@ msgstr "Välj en sidtyp"
 #: concrete/tools/pages/design.php:142
 #, php-format
 msgid "This is the defaults page for the %s page type. You cannot change it."
-msgstr "Detta är standardsidan för sidtypen %s. Du kan inte ändra den."
+msgstr "Detta är den förvalda sidan för sidtypen %s. Du kan inte ändra den."
 
 #: concrete/elements/collection_theme.php:69
 #: concrete/tools/pages/design.php:149
@@ -2868,7 +2867,7 @@ msgstr "Byt ut behörigheter"
 msgid ""
 "You may only add access to these selected pages if they have all been set to"
 " override parent or page defaults permissions."
-msgstr "Du kan endast tilldela behörigheter för de valda sidorna om alla har inställningen att åsidosätta överordnade sidor eller de förinställda behörigheterna. "
+msgstr "Du kan endast tilldela behörigheter för de valda sidorna om alla har inställningen att åsidosätta överordnade sidor eller sidors förvalda behörigheter. "
 
 #: concrete/tools/pages/delete.php:81
 msgid "You do not have permission to delete any of the selected pages."
@@ -3614,7 +3613,7 @@ msgstr "Lösenord uppdaterat."
 #: concrete/controllers/single_page/login.php:60
 msgctxt "Default locale"
 msgid "** Default"
-msgstr "** Standard"
+msgstr "** Förvalda"
 
 #: concrete/controllers/single_page/dashboard/users/search.php:374
 msgid "User deleted successfully."
@@ -3877,7 +3876,7 @@ msgstr "SMTP-server: %s"
 #: concrete/controllers/single_page/dashboard/system/mail/method/test.php:46
 msgctxt "SMTP Port"
 msgid "default"
-msgstr "standard"
+msgstr "förvald"
 
 #: concrete/controllers/single_page/dashboard/system/mail/method/test.php:46
 #, php-format
@@ -4606,7 +4605,7 @@ msgstr "Nej"
 #: concrete/blocks/form/form_setup_html.php:153
 #: concrete/blocks/form/form_setup_html.php:224
 #: concrete/blocks/page_list/page_list_form.php:118
-#: concrete/blocks/survey/add.php:21 concrete/blocks/survey/edit.php:22
+#: concrete/blocks/survey/add.php:25 concrete/blocks/survey/edit.php:24
 #: concrete/controllers/search/pages.php:230
 #: concrete/elements/page_types/form/base.php:58
 #: concrete/single_pages/dashboard/system/mail/importers.php:5
@@ -5074,6 +5073,8 @@ msgstr "Ett okänt fel inträffade när filen överfördes. Kontrollera att filu
 msgid "Type"
 msgstr "Typ"
 
+#: concrete/blocks/search/form_setup_html.php:30
+#: concrete/blocks/tags/tag_form.php:10
 #: concrete/blocks/youtube/form_setup_html.php:20
 #: concrete/core/File/Search/ColumnSet/DefaultSet.php:20
 #: concrete/core/File/Version.php:247
@@ -5315,7 +5316,7 @@ msgstr "Gruppkombination"
 msgid " + "
 msgstr "+"
 
-#: concrete/core/Page/Stack/Stack.php:59
+#: concrete/core/Page/Stack/Stack.php:108
 msgid "No Name"
 msgstr "Inget namn"
 
@@ -7525,7 +7526,7 @@ msgstr "Mall för sidtyp."
 #: concrete/elements/page_controls_footer.php:134
 #, php-format
 msgid "Page Defaults for %s Page Type. All edits take effect immediately."
-msgstr "Förvald sida för %s sidotyper. Alla ändringar genomförs omedelbart."
+msgstr "Förval för %s sidotyp. Alla ändringar genomförs omedelbart."
 
 #: concrete/elements/page_controls_footer.php:201
 msgid "Submit for Approval"
@@ -8145,7 +8146,7 @@ msgstr "Tidszon"
 #: concrete/elements/permission/keys/edit_user_properties.php:72
 #: concrete/single_pages/dashboard/system/basics/multilingual/view.php:30
 msgid "Default Language"
-msgstr "Standardspråk "
+msgstr "Förvalt språk "
 
 #: concrete/elements/permission/clipboard.php:7
 msgid "Paste"
@@ -8326,7 +8327,7 @@ msgstr "Följande områdesbehörigheter är ärvda från ett överordnat område
 msgid ""
 "The following area permissions are inherited from an area set in "
 "<strong>%s</strong> defaults."
-msgstr "Följande områdesbehörigheter ärvs från en områdesgrupp som anges i <strong>% s </strong> standard."
+msgstr "Följande områdesbehörigheter ärvs från en områdesgrupp som anges i <strong>%s </strong> förval."
 
 #: concrete/elements/permission/lists/area.php:30
 msgid "The following area permissions are inherited from an area set on "
@@ -8762,7 +8763,7 @@ msgstr "Välj kolumner"
 
 #: concrete/views/dialogs/search/customize.php:55
 msgid "Default Column"
-msgstr "Standardkolumn"
+msgstr "Förvald kolumn"
 
 #: concrete/views/dialogs/area/layout/presets.php:47
 msgid "Save Preset"
@@ -8949,7 +8950,6 @@ msgstr "Anpassa tema"
 msgid "Preset"
 msgstr "Förinställning"
 
-#: concrete/blocks/tags/tag_form.php:11
 #: concrete/views/panels/page/design/customize.php:56
 msgid "Advanced"
 msgstr "Avancerad"
@@ -9221,7 +9221,7 @@ msgstr "JSON -filändelse aktiverat"
 msgid ""
 "You must enable PHP's JSON support. This should be enabled by default in PHP"
 " 5.2 and above."
-msgstr "Du måste aktivera PHP:s JSON support. Detta ska vara aktiverat som standard i PHP 5.2 och högre."
+msgstr "Du måste aktivera PHP:s JSON support. Detta ska vara aktiverat som förval i PHP 5.2 och högre."
 
 #: concrete/views/frontend/install.php:369
 msgid "Image Manipulation Available"
@@ -9939,31 +9939,23 @@ msgid ""
 "Error: The required page attribute with the handle of: \"%s\" doesn't exist"
 msgstr "Fel: Sidegenskapen med handtaget \"%s\" finns inte."
 
-#: concrete/blocks/date_archive/form.php:7
-#: concrete/blocks/tags/tag_form.php:17
-msgid "Display Title"
-msgstr "Visa titel"
+#: concrete/blocks/tags/tag_form.php:15
+msgid "Display Tags"
+msgstr "Visa taggar"
 
-#: concrete/blocks/date_nav/form_setup_html.php:22
-#: concrete/blocks/page_list/page_list_form.php:17
-#: concrete/blocks/rss_displayer/form_setup_html.php:43
-#: concrete/blocks/tags/tag_form.php:24
-msgid "Display"
-msgstr "Visa"
-
-#: concrete/blocks/tags/tag_form.php:27
+#: concrete/blocks/tags/tag_form.php:19
 msgid "Display Tags for the current page"
 msgstr "Visningstaggar för aktuell sida"
 
-#: concrete/blocks/tags/tag_form.php:28
+#: concrete/blocks/tags/tag_form.php:24
 msgid "Display available tags"
 msgstr "Visa tillgängliga taggar"
 
-#: concrete/blocks/tags/tag_form.php:46
+#: concrete/blocks/tags/tag_form.php:42
 msgid "Number to Display"
 msgstr "Visa antal"
 
-#: concrete/blocks/tags/tag_form.php:56
+#: concrete/blocks/tags/tag_form.php:50
 msgid "Link Tags to Page"
 msgstr "Länka taggar till sida"
 
@@ -10144,6 +10136,12 @@ msgstr "F"
 msgid "Number and Type of Pages"
 msgstr "Antal och typ av sidor"
 
+#: concrete/blocks/date_nav/form_setup_html.php:22
+#: concrete/blocks/page_list/page_list_form.php:17
+#: concrete/blocks/rss_displayer/form_setup_html.php:43
+msgid "Display"
+msgstr "Visa"
+
 #: concrete/blocks/date_nav/form_setup_html.php:24
 #: concrete/blocks/page_list/page_list_form.php:19
 msgid "pages of type"
@@ -10166,7 +10164,6 @@ msgstr "Visa sidor som är placerade"
 
 #: concrete/blocks/date_nav/form_setup_html.php:52
 #: concrete/blocks/page_list/page_list_form.php:71
-#: concrete/blocks/search/form_setup_html.php:50
 msgid "everywhere"
 msgstr "överallt"
 
@@ -10176,13 +10173,11 @@ msgstr "på nuvarande nivå"
 
 #: concrete/blocks/date_nav/form_setup_html.php:56
 #: concrete/blocks/page_list/page_list_form.php:76
-#: concrete/blocks/search/form_setup_html.php:57
 msgid "beneath this page"
 msgstr "under denna sida"
 
 #: concrete/blocks/date_nav/form_setup_html.php:58
 #: concrete/blocks/page_list/page_list_form.php:81
-#: concrete/blocks/search/form_setup_html.php:63
 msgid "beneath another page"
 msgstr "under en annan sida"
 
@@ -10201,7 +10196,7 @@ msgstr "Platt"
 
 #: concrete/blocks/date_nav/form_setup_html.php:84
 msgid "Open by default to the..."
-msgstr "Öppna som standard till…"
+msgstr "Öppna som förvald till…"
 
 #: concrete/blocks/date_nav/form_setup_html.php:86
 msgid "Current Page"
@@ -10451,7 +10446,7 @@ msgstr "Datumformat"
 
 #: concrete/blocks/core_conversation/form.php:141
 msgid "Use Site Default."
-msgstr "Använd standard för webbplatsen."
+msgstr "Använd förval för webbplatsen."
 
 #: concrete/blocks/core_conversation/form.php:147
 msgid "Time elapsed since post."
@@ -10595,7 +10590,7 @@ msgstr "%s - formulärsvar"
 #: concrete/attributes/textarea/type_form.php:41
 #: concrete/blocks/form/form_setup_html.php:19
 #: concrete/blocks/form/form_setup_html.php:39
-#: concrete/blocks/survey/add.php:25 concrete/blocks/survey/edit.php:27
+#: concrete/blocks/survey/add.php:33 concrete/blocks/survey/edit.php:33
 #: concrete/single_pages/dashboard/reports/forms.php:86
 #: concrete/single_pages/dashboard/system/registration/public.php:43
 #: concrete/single_pages/register.php:86
@@ -10641,7 +10636,7 @@ msgstr "Fråga tillagd. För att se den klicka på fliken förhandsgranska."
 
 #: concrete/blocks/form/form_setup_html.php:112
 #: concrete/blocks/form/form_setup_html.php:182
-#: concrete/blocks/survey/add.php:17 concrete/blocks/survey/edit.php:17
+#: concrete/blocks/survey/add.php:18 concrete/blocks/survey/edit.php:17
 #: concrete/blocks/survey/view.php:38
 msgid "Question"
 msgstr "Fråga"
@@ -11058,27 +11053,35 @@ msgid ""
 "until the reindex job has been run at least once in the dashboard."
 msgstr "Sökindexet verkar inte existera. Detta block kommer inte att fungera förrän omindexeringsjobbet har körts åtminstone en gång via instrumentpanelen."
 
-#: concrete/blocks/search/form_setup_html.php:30
-msgid "Search Title"
-msgstr "Söktitel"
+#: concrete/blocks/search/form_setup_html.php:35
+msgid "Button Text"
+msgstr "Knapptext"
 
-#: concrete/blocks/search/form_setup_html.php:37
-msgid "Submit Button Text"
-msgstr "Text på skicka-knapp"
+#: concrete/blocks/search/form_setup_html.php:40
+msgid "Search for Pages"
+msgstr "Sök efter sidor"
 
 #: concrete/blocks/search/form_setup_html.php:44
-msgid "Search Within Path"
-msgstr "Sök i sökvägen"
+msgid "Everywhere"
+msgstr "Överallt"
 
-#: concrete/blocks/search/form_setup_html.php:86
+#: concrete/blocks/search/form_setup_html.php:50
+msgid "Beneath this Page"
+msgstr "Nedanför denna sida"
+
+#: concrete/blocks/search/form_setup_html.php:56
+msgid "Beneath Another Page"
+msgstr "Nedanför en annan sida"
+
+#: concrete/blocks/search/form_setup_html.php:77
 msgid "Results Page"
 msgstr "Resultatsida"
 
-#: concrete/blocks/search/form_setup_html.php:92
-msgid "Post to Another Page Elsewhere"
-msgstr "Skicka till en annan sida på ett annat ställe"
+#: concrete/blocks/search/form_setup_html.php:81
+msgid "Post Results to a Different Page"
+msgstr "Publicera resultat till en annan sida"
 
-#: concrete/blocks/search/form_setup_html.php:103
+#: concrete/blocks/search/form_setup_html.php:92
 msgid "OR Path"
 msgstr "ELLER sökväg"
 
@@ -11208,6 +11211,10 @@ msgstr "Länka till filer i resursbiblioteket."
 msgid "You must give your file a link."
 msgstr "Du måste ge din fil en länk."
 
+#: concrete/blocks/date_archive/form.php:7
+msgid "Display Title"
+msgstr "Visa titel"
+
 #: concrete/blocks/date_archive/form.php:10
 msgid "# of Months to display"
 msgstr "# månader att visa"
@@ -11327,17 +11334,17 @@ msgstr "Rösta"
 msgid "Please Login to Vote"
 msgstr "Logga in för att rösta"
 
-#: concrete/blocks/survey/add.php:20 concrete/blocks/survey/edit.php:21
+#: concrete/blocks/survey/add.php:22 concrete/blocks/survey/edit.php:21
 msgid "Open to all site visitors?"
 msgstr "Tillgänglig för alla besökare på webbplatsen?"
 
-#: concrete/blocks/survey/add.php:23 concrete/blocks/survey/edit.php:24
+#: concrete/blocks/survey/add.php:30 concrete/blocks/survey/edit.php:29
 msgid "No. Registration is required to answer."
 msgstr "Nej. Registrering krävs för att få svara."
 
-#: concrete/blocks/survey/add.php:31 concrete/blocks/survey/edit.php:42
-msgid "Add option"
-msgstr "Lägg till alternativ."
+#: concrete/blocks/survey/add.php:39 concrete/blocks/survey/edit.php:48
+msgid "Add Option"
+msgstr "Lägg till alternativ"
 
 #: concrete/blocks/youtube/controller.php:25
 msgid "Embeds a YouTube Video in your web page."
@@ -11727,8 +11734,8 @@ msgstr "Ta bort alternativ"
 msgid "Selected Options"
 msgstr "Valda inställningar"
 
-#: concrete/attributes/select/form.php:169
 #: concrete/attributes/select/form.php:170
+#: concrete/attributes/select/form.php:171
 msgid "Add Another Option"
 msgstr "Lägg till ytterligare ett alternativ"
 
@@ -11810,7 +11817,7 @@ msgstr "Förvalt värde"
 
 #: concrete/attributes/boolean/type_form.php:8
 msgid "The checkbox will be checked by default."
-msgstr "Kryssrutan kommer att vara ikryssad från början."
+msgstr "Kryssrutan kommer att vara förvald från början."
 
 #: concrete/single_pages/profile/messages.php:9
 msgid "Back to Mailbox"
@@ -13016,7 +13023,7 @@ msgstr "Separera reserverade ord med komma. Dessa ord kommer automatiskt att tas
 
 #: concrete/single_pages/dashboard/system/seo/excluded.php:13
 msgid "Reset To Default"
-msgstr "Återställ till standard"
+msgstr "Återställ till förval"
 
 #: concrete/config/install/base/dashboard.xml:530
 #: concrete/single_pages/dashboard/system/seo/codes.php:9
@@ -13094,7 +13101,7 @@ msgstr "Metatitel"
 #: concrete/single_pages/dashboard/system/seo/bulk.php:178
 #: concrete/single_pages/dashboard/system/seo/bulk.php:193
 msgid "Default value. Click to edit."
-msgstr "Standardvärde. Klicka för att ändra."
+msgstr "Förvalt värde. Klicka för att ändra."
 
 #: concrete/single_pages/dashboard/system/seo/bulk.php:182
 msgid "Meta Description"
@@ -13503,7 +13510,7 @@ msgstr "Metod att skicka e-post med"
 
 #: concrete/single_pages/dashboard/system/mail/method.php:19
 msgid "Default PHP Mail Function"
-msgstr "Standardfunktionen mail i PHP"
+msgstr "Förvald mail-funktion i PHP"
 
 #: concrete/single_pages/dashboard/system/mail/method.php:20
 msgid "External SMTP Server"
@@ -13526,7 +13533,7 @@ msgstr "Kryptering"
 #: concrete/single_pages/dashboard/system/mail/importers.php:66
 #: concrete/single_pages/dashboard/system/mail/method.php:52
 msgid "Port (Leave blank for default)"
-msgstr "Port (lämna tomt för standard)"
+msgstr "Port (lämna tomt för förval)"
 
 #: concrete/single_pages/dashboard/system/mail/method.php:60
 msgid "Test Settings"
@@ -13866,7 +13873,7 @@ msgstr "Inställningar för användargränssnitt "
 
 #: concrete/single_pages/dashboard/system/basics/images.php:14
 msgid "Pull a picture of the day from concrete5.org (Default)"
-msgstr "Använd dagens bild från concrete5.org (standard)"
+msgstr "Använd dagens bild från concrete5.org (förvalt)"
 
 #: concrete/single_pages/dashboard/system/basics/images.php:16
 msgid "Specify Custom Image"
@@ -13899,7 +13906,7 @@ msgstr "Erbjud val av språk vid inloggning."
 msgid ""
 "By default, site name is displayed in the browser title bar. It is also the "
 "default name for your project on concrete5.org"
-msgstr "Som standard visas webbplatsens namn i webbläsarens övre list. Det är även standardnamnet för ditt projekt på concrete5.org"
+msgstr "Som standard visas webbplatsens namn i webbläsarens övre list. Det är även det förvalda namnet för ditt projekt på concrete5.org"
 
 #: concrete/single_pages/dashboard/system/backup/backup.php:14
 msgid "Confirm Delete"
@@ -14124,7 +14131,7 @@ msgstr "Ta bort sidorna från cache."
 #: concrete/single_pages/dashboard/system/optimization/cache.php:89
 #, php-format
 msgid "Every %s (default setting)."
-msgstr "Var %s (standardinställning)."
+msgstr "Var %s (förvald inställning)."
 
 #: concrete/single_pages/dashboard/system/optimization/cache.php:96
 msgid "Only when manually removed or the cache is cleared."
@@ -14631,7 +14638,7 @@ msgstr "För att använda ett särskilt tema för mobila webbläsare, välj i li
 
 #: concrete/single_pages/dashboard/pages/themes/view.php:118
 msgid "** Same as website (default)"
-msgstr "** Samma som webbplatsen (standard)"
+msgstr "** Samma som webbplatsen (förvalt)"
 
 #: concrete/single_pages/dashboard/pages/themes/view.php:133
 msgid "Themes Available to Install"
@@ -14671,7 +14678,7 @@ msgstr "Omsluter statiska sidor."
 
 #: concrete/single_pages/dashboard/pages/themes/inspect.php:62
 msgid "Default template."
-msgstr "Standardmall."
+msgstr "Förvald mall."
 
 #: concrete/single_pages/dashboard/pages/themes/inspect.php:65
 msgid "Template for internal concrete5 page."
@@ -15161,7 +15168,7 @@ msgstr "Skapa formulär"
 
 #: concrete/config/install/base/dashboard.xml:285
 msgid "Defaults and Output"
-msgstr "Standardinställningar och output"
+msgstr "Förval och output"
 
 #: concrete/config/install/base/dashboard.xml:301
 msgid "Form factors for pages in your site."
@@ -16747,7 +16754,7 @@ msgstr "Styr om användare kan se sökrutan för användare."
 
 #: concrete/config/install/base/permissions.xml:250
 msgid "SecurImage (Default)"
-msgstr "SecurImage (Standard)"
+msgstr "SecurImage (Förvald)"
 
 #: concrete/config/install/base/image_editor.xml:4
 msgctxt "ImageEditorControlSetName"

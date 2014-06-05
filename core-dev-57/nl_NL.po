@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-05-30 04:00+0000\n"
-"PO-Revision-Date: 2014-05-30 09:58+0000\n"
+"POT-Creation-Date: 2014-06-04 10:00+0000\n"
+"PO-Revision-Date: 2014-06-04 10:21+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Dutch (Netherlands) (http://www.transifex.com/projects/p/concrete5/language/nl_NL/)\n"
 "MIME-Version: 1.0\n"
@@ -1182,7 +1182,7 @@ msgstr "Onderwerp"
 #: concrete/attributes/select/type_form.php:107
 #: concrete/blocks/core_gathering/form/sources.php:16
 #: concrete/blocks/form/form_setup_html.php:16
-#: concrete/blocks/survey/add.php:33 concrete/blocks/tags/tag_form.php:10
+#: concrete/blocks/survey/add.php:43 concrete/blocks/survey/edit.php:52
 #: concrete/controllers/single_page/dashboard/users/points/actions.php:21
 #: concrete/elements/attribute/type_form_required.php:132
 #: concrete/elements/block_footer_add.php:19
@@ -1728,7 +1728,7 @@ msgstr "Iemand anders heeft deze pagina uitgechecked."
 #: concrete/blocks/autonav/form_setup_html.php:62
 #: concrete/blocks/dashboard_site_activity/view.php:5
 #: concrete/blocks/form/form_setup_html.php:90
-#: concrete/blocks/survey/add.php:27 concrete/blocks/survey/edit.php:32
+#: concrete/blocks/survey/add.php:35 concrete/blocks/survey/edit.php:38
 #: concrete/elements/custom_style/background.php:20
 #: concrete/elements/permission/access/list.php:31
 #: concrete/elements/permission/labels.php:49
@@ -1926,7 +1926,7 @@ msgstr "Dit is een globaal gebied. Inhoud hier  toegevoegd zal zichtbaar zijn op
 msgid "Invalid control"
 msgstr "Ongeldige control"
 
-#: concrete/attributes/select/form.php:157
+#: concrete/attributes/select/form.php:158
 #: concrete/controllers/single_page/dashboard/users/points/actions.php:43
 #: concrete/elements/attribute/type_form_required.php:73
 #: concrete/tools/page_types/composer/form/edit_control.php:18
@@ -2076,7 +2076,6 @@ msgstr "Sluiten"
 #: concrete/blocks/autonav/form_setup_html.php:7
 #: concrete/blocks/form/form_setup_html.php:17
 #: concrete/blocks/page_list/page_list_form.php:7
-#: concrete/blocks/tags/tag_form.php:10
 #: concrete/controllers/single_page/dashboard/users/points/actions.php:30
 #: concrete/elements/collection_attribute_values.php:17
 #: concrete/elements/conversation/message.php:32
@@ -4605,7 +4604,7 @@ msgstr "Nee"
 #: concrete/blocks/form/form_setup_html.php:153
 #: concrete/blocks/form/form_setup_html.php:224
 #: concrete/blocks/page_list/page_list_form.php:118
-#: concrete/blocks/survey/add.php:21 concrete/blocks/survey/edit.php:22
+#: concrete/blocks/survey/add.php:25 concrete/blocks/survey/edit.php:24
 #: concrete/controllers/search/pages.php:230
 #: concrete/elements/page_types/form/base.php:58
 #: concrete/single_pages/dashboard/system/mail/importers.php:5
@@ -5073,6 +5072,8 @@ msgstr "Een onbekende fout is opgetreden tijdens het uploaden van het bestand. C
 msgid "Type"
 msgstr "Formaat"
 
+#: concrete/blocks/search/form_setup_html.php:30
+#: concrete/blocks/tags/tag_form.php:10
 #: concrete/blocks/youtube/form_setup_html.php:20
 #: concrete/core/File/Search/ColumnSet/DefaultSet.php:20
 #: concrete/core/File/Version.php:247
@@ -5314,7 +5315,7 @@ msgstr "Groep Combinaties"
 msgid " + "
 msgstr "+"
 
-#: concrete/core/Page/Stack/Stack.php:59
+#: concrete/core/Page/Stack/Stack.php:108
 msgid "No Name"
 msgstr "Geen Naam"
 
@@ -8948,7 +8949,6 @@ msgstr "Thema Aanpassen"
 msgid "Preset"
 msgstr "Voorinstelling"
 
-#: concrete/blocks/tags/tag_form.php:11
 #: concrete/views/panels/page/design/customize.php:56
 msgid "Advanced"
 msgstr "Geavanceerd"
@@ -9938,31 +9938,23 @@ msgid ""
 "Error: The required page attribute with the handle of: \"%s\" doesn't exist"
 msgstr "Fout: Het vereiste pagina attribuut met het handvat \"%s\" bestaat niet"
 
-#: concrete/blocks/date_archive/form.php:7
-#: concrete/blocks/tags/tag_form.php:17
-msgid "Display Title"
-msgstr "Toon titel"
+#: concrete/blocks/tags/tag_form.php:15
+msgid "Display Tags"
+msgstr ""
 
-#: concrete/blocks/date_nav/form_setup_html.php:22
-#: concrete/blocks/page_list/page_list_form.php:17
-#: concrete/blocks/rss_displayer/form_setup_html.php:43
-#: concrete/blocks/tags/tag_form.php:24
-msgid "Display"
-msgstr "Weergeven"
-
-#: concrete/blocks/tags/tag_form.php:27
+#: concrete/blocks/tags/tag_form.php:19
 msgid "Display Tags for the current page"
 msgstr "Toon Label voor de huidige pagina"
 
-#: concrete/blocks/tags/tag_form.php:28
+#: concrete/blocks/tags/tag_form.php:24
 msgid "Display available tags"
 msgstr "Toon beschikbare labels"
 
-#: concrete/blocks/tags/tag_form.php:46
+#: concrete/blocks/tags/tag_form.php:42
 msgid "Number to Display"
 msgstr "Aantal labels om te tonen"
 
-#: concrete/blocks/tags/tag_form.php:56
+#: concrete/blocks/tags/tag_form.php:50
 msgid "Link Tags to Page"
 msgstr "Link naar Pagina Label"
 
@@ -10143,6 +10135,12 @@ msgstr "F"
 msgid "Number and Type of Pages"
 msgstr "Aantal en Formaat Pagina's"
 
+#: concrete/blocks/date_nav/form_setup_html.php:22
+#: concrete/blocks/page_list/page_list_form.php:17
+#: concrete/blocks/rss_displayer/form_setup_html.php:43
+msgid "Display"
+msgstr "Weergeven"
+
 #: concrete/blocks/date_nav/form_setup_html.php:24
 #: concrete/blocks/page_list/page_list_form.php:19
 msgid "pages of type"
@@ -10165,7 +10163,6 @@ msgstr "Geef pagina's weer die zijn gesitueerd"
 
 #: concrete/blocks/date_nav/form_setup_html.php:52
 #: concrete/blocks/page_list/page_list_form.php:71
-#: concrete/blocks/search/form_setup_html.php:50
 msgid "everywhere"
 msgstr "overal"
 
@@ -10175,13 +10172,11 @@ msgstr "op het huidige niveau"
 
 #: concrete/blocks/date_nav/form_setup_html.php:56
 #: concrete/blocks/page_list/page_list_form.php:76
-#: concrete/blocks/search/form_setup_html.php:57
 msgid "beneath this page"
 msgstr "onder deze pagina"
 
 #: concrete/blocks/date_nav/form_setup_html.php:58
 #: concrete/blocks/page_list/page_list_form.php:81
-#: concrete/blocks/search/form_setup_html.php:63
 msgid "beneath another page"
 msgstr "onder een andere pagina"
 
@@ -10594,7 +10589,7 @@ msgstr "%s Formulier Versturen"
 #: concrete/attributes/textarea/type_form.php:41
 #: concrete/blocks/form/form_setup_html.php:19
 #: concrete/blocks/form/form_setup_html.php:39
-#: concrete/blocks/survey/add.php:25 concrete/blocks/survey/edit.php:27
+#: concrete/blocks/survey/add.php:33 concrete/blocks/survey/edit.php:33
 #: concrete/single_pages/dashboard/reports/forms.php:86
 #: concrete/single_pages/dashboard/system/registration/public.php:43
 #: concrete/single_pages/register.php:86
@@ -10640,7 +10635,7 @@ msgstr "Vraag toegevoegd. Klik op het tabblad voorbeeld als u wilt bekijken."
 
 #: concrete/blocks/form/form_setup_html.php:112
 #: concrete/blocks/form/form_setup_html.php:182
-#: concrete/blocks/survey/add.php:17 concrete/blocks/survey/edit.php:17
+#: concrete/blocks/survey/add.php:18 concrete/blocks/survey/edit.php:17
 #: concrete/blocks/survey/view.php:38
 msgid "Question"
 msgstr "Vraag"
@@ -11057,27 +11052,35 @@ msgid ""
 "until the reindex job has been run at least once in the dashboard."
 msgstr "De zoek index blijkt niet te bestaan. Totdat de re-indexering opdracht is uitgevoerd in het dashboard, zal dit blok niet werken."
 
-#: concrete/blocks/search/form_setup_html.php:30
-msgid "Search Title"
-msgstr "Zoek Titel"
+#: concrete/blocks/search/form_setup_html.php:35
+msgid "Button Text"
+msgstr "Knoptekst"
 
-#: concrete/blocks/search/form_setup_html.php:37
-msgid "Submit Button Text"
-msgstr "Verstuur Knop Tekst"
+#: concrete/blocks/search/form_setup_html.php:40
+msgid "Search for Pages"
+msgstr ""
 
 #: concrete/blocks/search/form_setup_html.php:44
-msgid "Search Within Path"
-msgstr "Zoek Binnen Pad"
+msgid "Everywhere"
+msgstr ""
 
-#: concrete/blocks/search/form_setup_html.php:86
+#: concrete/blocks/search/form_setup_html.php:50
+msgid "Beneath this Page"
+msgstr ""
+
+#: concrete/blocks/search/form_setup_html.php:56
+msgid "Beneath Another Page"
+msgstr ""
+
+#: concrete/blocks/search/form_setup_html.php:77
 msgid "Results Page"
 msgstr "Resultaten Pagina"
 
-#: concrete/blocks/search/form_setup_html.php:92
-msgid "Post to Another Page Elsewhere"
-msgstr "Plaats op een andere pagina"
+#: concrete/blocks/search/form_setup_html.php:81
+msgid "Post Results to a Different Page"
+msgstr ""
 
-#: concrete/blocks/search/form_setup_html.php:103
+#: concrete/blocks/search/form_setup_html.php:92
 msgid "OR Path"
 msgstr "OF Pad"
 
@@ -11207,6 +11210,10 @@ msgstr "Link naar bestanden die zijn opgeslagen in de asset bibliotheek."
 msgid "You must give your file a link."
 msgstr "U moet uw bestand een link geven."
 
+#: concrete/blocks/date_archive/form.php:7
+msgid "Display Title"
+msgstr "Toon titel"
+
 #: concrete/blocks/date_archive/form.php:10
 msgid "# of Months to display"
 msgstr "# toon aantal maanden"
@@ -11326,17 +11333,17 @@ msgstr "Stem"
 msgid "Please Login to Vote"
 msgstr "Meld u aan om te stemmen"
 
-#: concrete/blocks/survey/add.php:20 concrete/blocks/survey/edit.php:21
+#: concrete/blocks/survey/add.php:22 concrete/blocks/survey/edit.php:21
 msgid "Open to all site visitors?"
 msgstr "Beschikbaar voor alle bezoekers?"
 
-#: concrete/blocks/survey/add.php:23 concrete/blocks/survey/edit.php:24
+#: concrete/blocks/survey/add.php:30 concrete/blocks/survey/edit.php:29
 msgid "No. Registration is required to answer."
 msgstr "Nee. Registratie is vereist om te antwoorden."
 
-#: concrete/blocks/survey/add.php:31 concrete/blocks/survey/edit.php:42
-msgid "Add option"
-msgstr "Optie toevoegen"
+#: concrete/blocks/survey/add.php:39 concrete/blocks/survey/edit.php:48
+msgid "Add Option"
+msgstr ""
 
 #: concrete/blocks/youtube/controller.php:25
 msgid "Embeds a YouTube Video in your web page."
@@ -11726,8 +11733,8 @@ msgstr "Verwijder optie"
 msgid "Selected Options"
 msgstr "Geselecteerde opties"
 
-#: concrete/attributes/select/form.php:169
 #: concrete/attributes/select/form.php:170
+#: concrete/attributes/select/form.php:171
 msgid "Add Another Option"
 msgstr "Optie toevoegen"
 

@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-05-30 04:00+0000\n"
-"PO-Revision-Date: 2014-05-30 09:57+0000\n"
+"POT-Creation-Date: 2014-06-04 10:00+0000\n"
+"PO-Revision-Date: 2014-06-04 10:02+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/projects/p/concrete5/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -1178,7 +1178,7 @@ msgstr ""
 #: concrete/attributes/select/type_form.php:107
 #: concrete/blocks/core_gathering/form/sources.php:16
 #: concrete/blocks/form/form_setup_html.php:16
-#: concrete/blocks/survey/add.php:33 concrete/blocks/tags/tag_form.php:10
+#: concrete/blocks/survey/add.php:43 concrete/blocks/survey/edit.php:52
 #: concrete/controllers/single_page/dashboard/users/points/actions.php:21
 #: concrete/elements/attribute/type_form_required.php:132
 #: concrete/elements/block_footer_add.php:19
@@ -1721,7 +1721,7 @@ msgstr "有人已勾选此页进行编辑。"
 #: concrete/blocks/autonav/form_setup_html.php:62
 #: concrete/blocks/dashboard_site_activity/view.php:5
 #: concrete/blocks/form/form_setup_html.php:90
-#: concrete/blocks/survey/add.php:27 concrete/blocks/survey/edit.php:32
+#: concrete/blocks/survey/add.php:35 concrete/blocks/survey/edit.php:38
 #: concrete/elements/custom_style/background.php:20
 #: concrete/elements/permission/access/list.php:31
 #: concrete/elements/permission/labels.php:49
@@ -1919,7 +1919,7 @@ msgstr "这是一个全球性的领域。在这里添加的内容在每一页包
 msgid "Invalid control"
 msgstr ""
 
-#: concrete/attributes/select/form.php:157
+#: concrete/attributes/select/form.php:158
 #: concrete/controllers/single_page/dashboard/users/points/actions.php:43
 #: concrete/elements/attribute/type_form_required.php:73
 #: concrete/tools/page_types/composer/form/edit_control.php:18
@@ -2069,7 +2069,6 @@ msgstr "关闭"
 #: concrete/blocks/autonav/form_setup_html.php:7
 #: concrete/blocks/form/form_setup_html.php:17
 #: concrete/blocks/page_list/page_list_form.php:7
-#: concrete/blocks/tags/tag_form.php:10
 #: concrete/controllers/single_page/dashboard/users/points/actions.php:30
 #: concrete/elements/collection_attribute_values.php:17
 #: concrete/elements/conversation/message.php:32
@@ -4597,7 +4596,7 @@ msgstr "否"
 #: concrete/blocks/form/form_setup_html.php:153
 #: concrete/blocks/form/form_setup_html.php:224
 #: concrete/blocks/page_list/page_list_form.php:118
-#: concrete/blocks/survey/add.php:21 concrete/blocks/survey/edit.php:22
+#: concrete/blocks/survey/add.php:25 concrete/blocks/survey/edit.php:24
 #: concrete/controllers/search/pages.php:230
 #: concrete/elements/page_types/form/base.php:58
 #: concrete/single_pages/dashboard/system/mail/importers.php:5
@@ -5064,6 +5063,8 @@ msgstr "上传文件时发生未知错误。请检查启用了文件上传，并
 msgid "Type"
 msgstr "类型"
 
+#: concrete/blocks/search/form_setup_html.php:30
+#: concrete/blocks/tags/tag_form.php:10
 #: concrete/blocks/youtube/form_setup_html.php:20
 #: concrete/core/File/Search/ColumnSet/DefaultSet.php:20
 #: concrete/core/File/Version.php:247
@@ -5304,7 +5305,7 @@ msgstr "组合并"
 msgid " + "
 msgstr "+"
 
-#: concrete/core/Page/Stack/Stack.php:59
+#: concrete/core/Page/Stack/Stack.php:108
 msgid "No Name"
 msgstr "没有名字"
 
@@ -8924,7 +8925,6 @@ msgstr "自定义主题"
 msgid "Preset"
 msgstr ""
 
-#: concrete/blocks/tags/tag_form.php:11
 #: concrete/views/panels/page/design/customize.php:56
 msgid "Advanced"
 msgstr "高级"
@@ -9914,31 +9914,23 @@ msgid ""
 "Error: The required page attribute with the handle of: \"%s\" doesn't exist"
 msgstr "错误：所需的页面属性：\"%s\" 不存在"
 
-#: concrete/blocks/date_archive/form.php:7
-#: concrete/blocks/tags/tag_form.php:17
-msgid "Display Title"
-msgstr "显示标题"
+#: concrete/blocks/tags/tag_form.php:15
+msgid "Display Tags"
+msgstr ""
 
-#: concrete/blocks/date_nav/form_setup_html.php:22
-#: concrete/blocks/page_list/page_list_form.php:17
-#: concrete/blocks/rss_displayer/form_setup_html.php:43
-#: concrete/blocks/tags/tag_form.php:24
-msgid "Display"
-msgstr "显示"
-
-#: concrete/blocks/tags/tag_form.php:27
+#: concrete/blocks/tags/tag_form.php:19
 msgid "Display Tags for the current page"
 msgstr "显示当前页面的标签"
 
-#: concrete/blocks/tags/tag_form.php:28
+#: concrete/blocks/tags/tag_form.php:24
 msgid "Display available tags"
 msgstr "显示可用的标签"
 
-#: concrete/blocks/tags/tag_form.php:46
+#: concrete/blocks/tags/tag_form.php:42
 msgid "Number to Display"
 msgstr "显示数目"
 
-#: concrete/blocks/tags/tag_form.php:56
+#: concrete/blocks/tags/tag_form.php:50
 msgid "Link Tags to Page"
 msgstr "连接页面标签"
 
@@ -10119,6 +10111,12 @@ msgstr ""
 msgid "Number and Type of Pages"
 msgstr "的数量和类型的页面"
 
+#: concrete/blocks/date_nav/form_setup_html.php:22
+#: concrete/blocks/page_list/page_list_form.php:17
+#: concrete/blocks/rss_displayer/form_setup_html.php:43
+msgid "Display"
+msgstr "显示"
+
 #: concrete/blocks/date_nav/form_setup_html.php:24
 #: concrete/blocks/page_list/page_list_form.php:19
 msgid "pages of type"
@@ -10141,7 +10139,6 @@ msgstr "显示目前所处的页面"
 
 #: concrete/blocks/date_nav/form_setup_html.php:52
 #: concrete/blocks/page_list/page_list_form.php:71
-#: concrete/blocks/search/form_setup_html.php:50
 msgid "everywhere"
 msgstr "任何地方"
 
@@ -10151,13 +10148,11 @@ msgstr "在当前级别"
 
 #: concrete/blocks/date_nav/form_setup_html.php:56
 #: concrete/blocks/page_list/page_list_form.php:76
-#: concrete/blocks/search/form_setup_html.php:57
 msgid "beneath this page"
 msgstr "此页下"
 
 #: concrete/blocks/date_nav/form_setup_html.php:58
 #: concrete/blocks/page_list/page_list_form.php:81
-#: concrete/blocks/search/form_setup_html.php:63
 msgid "beneath another page"
 msgstr "下面的另一页"
 
@@ -10570,7 +10565,7 @@ msgstr "提交表单 %s "
 #: concrete/attributes/textarea/type_form.php:41
 #: concrete/blocks/form/form_setup_html.php:19
 #: concrete/blocks/form/form_setup_html.php:39
-#: concrete/blocks/survey/add.php:25 concrete/blocks/survey/edit.php:27
+#: concrete/blocks/survey/add.php:33 concrete/blocks/survey/edit.php:33
 #: concrete/single_pages/dashboard/reports/forms.php:86
 #: concrete/single_pages/dashboard/system/registration/public.php:43
 #: concrete/single_pages/register.php:86
@@ -10616,7 +10611,7 @@ msgstr ""
 
 #: concrete/blocks/form/form_setup_html.php:112
 #: concrete/blocks/form/form_setup_html.php:182
-#: concrete/blocks/survey/add.php:17 concrete/blocks/survey/edit.php:17
+#: concrete/blocks/survey/add.php:18 concrete/blocks/survey/edit.php:17
 #: concrete/blocks/survey/view.php:38
 msgid "Question"
 msgstr "提问"
@@ -11032,27 +11027,35 @@ msgid ""
 "until the reindex job has been run at least once in the dashboard."
 msgstr "搜索索引似乎并不存在。此模块将无法正常工作，直到在仪表盘中至少运行一次重新编制索引的作业。"
 
-#: concrete/blocks/search/form_setup_html.php:30
-msgid "Search Title"
-msgstr "搜索标题"
+#: concrete/blocks/search/form_setup_html.php:35
+msgid "Button Text"
+msgstr ""
 
-#: concrete/blocks/search/form_setup_html.php:37
-msgid "Submit Button Text"
-msgstr "递交按钮文本"
+#: concrete/blocks/search/form_setup_html.php:40
+msgid "Search for Pages"
+msgstr ""
 
 #: concrete/blocks/search/form_setup_html.php:44
-msgid "Search Within Path"
-msgstr "在路径搜索"
+msgid "Everywhere"
+msgstr ""
 
-#: concrete/blocks/search/form_setup_html.php:86
+#: concrete/blocks/search/form_setup_html.php:50
+msgid "Beneath this Page"
+msgstr ""
+
+#: concrete/blocks/search/form_setup_html.php:56
+msgid "Beneath Another Page"
+msgstr ""
+
+#: concrete/blocks/search/form_setup_html.php:77
 msgid "Results Page"
 msgstr "结果页"
 
-#: concrete/blocks/search/form_setup_html.php:92
-msgid "Post to Another Page Elsewhere"
-msgstr "发表到另一页"
+#: concrete/blocks/search/form_setup_html.php:81
+msgid "Post Results to a Different Page"
+msgstr ""
 
-#: concrete/blocks/search/form_setup_html.php:103
+#: concrete/blocks/search/form_setup_html.php:92
 msgid "OR Path"
 msgstr "或路径"
 
@@ -11182,6 +11185,10 @@ msgstr "文件链接存储在资产库中。"
 msgid "You must give your file a link."
 msgstr "你必须给文件一个链接。"
 
+#: concrete/blocks/date_archive/form.php:7
+msgid "Display Title"
+msgstr "显示标题"
+
 #: concrete/blocks/date_archive/form.php:10
 msgid "# of Months to display"
 msgstr "显示月份数"
@@ -11300,17 +11307,17 @@ msgstr "投票"
 msgid "Please Login to Vote"
 msgstr "请先登录进行投票"
 
-#: concrete/blocks/survey/add.php:20 concrete/blocks/survey/edit.php:21
+#: concrete/blocks/survey/add.php:22 concrete/blocks/survey/edit.php:21
 msgid "Open to all site visitors?"
 msgstr "开放给所有的网站访问者吗？"
 
-#: concrete/blocks/survey/add.php:23 concrete/blocks/survey/edit.php:24
+#: concrete/blocks/survey/add.php:30 concrete/blocks/survey/edit.php:29
 msgid "No. Registration is required to answer."
 msgstr "否。注册号是必须回答。"
 
-#: concrete/blocks/survey/add.php:31 concrete/blocks/survey/edit.php:42
-msgid "Add option"
-msgstr "添加选项"
+#: concrete/blocks/survey/add.php:39 concrete/blocks/survey/edit.php:48
+msgid "Add Option"
+msgstr ""
 
 #: concrete/blocks/youtube/controller.php:25
 msgid "Embeds a YouTube Video in your web page."
@@ -11700,8 +11707,8 @@ msgstr ""
 msgid "Selected Options"
 msgstr ""
 
-#: concrete/attributes/select/form.php:169
 #: concrete/attributes/select/form.php:170
+#: concrete/attributes/select/form.php:171
 msgid "Add Another Option"
 msgstr "添加另一种选项"
 
