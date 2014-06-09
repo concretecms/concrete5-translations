@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-06-07 04:00+0000\n"
-"PO-Revision-Date: 2014-06-07 10:11+0000\n"
+"POT-Creation-Date: 2014-06-08 04:00+0000\n"
+"PO-Revision-Date: 2014-06-08 09:59+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Danish (Denmark) (http://www.transifex.com/projects/p/concrete5/language/da_DK/)\n"
 "MIME-Version: 1.0\n"
@@ -571,7 +571,7 @@ msgstr "Tilføj fra intern mappe"
 msgid "Replace"
 msgstr "Skift"
 
-#: concrete/tools/files/import.php:97 concrete/tools/files/replace.php:49
+#: concrete/tools/files/import.php:103 concrete/tools/files/replace.php:49
 #, php-format
 msgid "No files found in %s"
 msgstr "Ingen filer fundet i %s"
@@ -598,7 +598,7 @@ msgstr "Tilføj inkomne"
 msgid "Add Remote Files"
 msgstr "Tilføj eksterne filer"
 
-#: concrete/tools/files/import.php:68
+#: concrete/tools/files/import.php:73
 #: concrete/views/dialogs/file/properties.php:38
 #: concrete/views/dialogs/file/properties.php:169
 msgid "Filename"
@@ -606,12 +606,12 @@ msgstr "Filnavn"
 
 #: concrete/core/File/Search/ColumnSet/DefaultSet.php:23
 #: concrete/elements/custom_style/fonts.php:23
-#: concrete/elements/files/search.php:6 concrete/tools/files/import.php:69
+#: concrete/elements/files/search.php:6 concrete/tools/files/import.php:74
 #: concrete/tools/i18n_js.php:94 concrete/views/dialogs/file/properties.php:70
 msgid "Size"
 msgstr "Størrelse"
 
-#: concrete/tools/files/import.php:87
+#: concrete/tools/files/import.php:92
 msgid "Remove files from incoming/ directory."
 msgstr "Fjern filer fra mappen incoming/."
 
@@ -683,7 +683,7 @@ msgstr "Fjern filer fra mappen incoming/."
 #: concrete/tools/dashboard/sitemap_drag_request.php:226
 #: concrete/tools/dashboard/sitemap_drag_request.php:228
 #: concrete/tools/files/delete.php:91 concrete/tools/files/delete_set.php:48
-#: concrete/tools/files/duplicate.php:114 concrete/tools/files/import.php:102
+#: concrete/tools/files/duplicate.php:114 concrete/tools/files/import.php:108
 #: concrete/tools/files/permissions.php:73
 #: concrete/tools/files/permissions.php:102
 #: concrete/tools/gathering/item/delete.php:27 concrete/tools/i18n_js.php:9
@@ -723,11 +723,11 @@ msgid "Cancel"
 msgstr "Annuller"
 
 #: concrete/single_pages/dashboard/files/search.php:17
-#: concrete/tools/files/import.php:103
+#: concrete/tools/files/import.php:109
 msgid "Add Files"
 msgstr "Tilføj filer"
 
-#: concrete/tools/files/import.php:110
+#: concrete/tools/files/import.php:116
 msgid "Enter URL to valid file(s)"
 msgstr "Indtast URL for at validere fil(er)"
 
@@ -822,14 +822,12 @@ msgstr "Andet"
 msgid "Files in no sets."
 msgstr "Filer uden sæt."
 
-#: concrete/tools/files/importers/incoming.php:35
-#: concrete/tools/files/importers/remote.php:109
+#: concrete/tools/files/importers/remote.php:110
 #: concrete/tools/files/importers/single.php:34
 msgid "File uploaded successfully."
 msgstr ""
 
-#: concrete/tools/files/importers/incoming.php:37
-#: concrete/tools/files/importers/remote.php:111
+#: concrete/tools/files/importers/remote.php:112
 #: concrete/tools/files/importers/single.php:36
 msgid "File replaced successfully."
 msgstr ""
@@ -838,31 +836,38 @@ msgstr ""
 msgid "Upload Complete."
 msgstr "Upload fuldført."
 
-#: concrete/tools/files/importers/incoming.php:63
+#: concrete/tools/files/importers/incoming.php:59
 msgid "You must select at least one file."
 msgstr "Du skal vælge mindst én fil."
+
+#: concrete/tools/files/importers/incoming.php:70
+#, php-format
+msgid "%s file imported successfully."
+msgid_plural "%s files imported successfully"
+msgstr[0] ""
+msgstr[1] ""
 
 #: concrete/tools/files/importers/remote.php:32
 msgid "Remote URL import requires the iconv extension enabled on your server."
 msgstr "Remote URL import kræver iconv udvidelsen aktiveret på din server."
 
-#: concrete/tools/files/importers/remote.php:48
+#: concrete/tools/files/importers/remote.php:50
 msgid " is not a valid URL."
 msgstr "er ikke en gyldig URL."
 
-#: concrete/tools/files/importers/remote.php:58
+#: concrete/tools/files/importers/remote.php:60
 msgid "You must specify at least one valid URL."
 msgstr "Du skal indtaste mindst en gyldig URL."
 
-#: concrete/tools/files/importers/remote.php:87
+#: concrete/tools/files/importers/remote.php:88
 msgid "Unknown mime-type: "
 msgstr "Ukendt mime type: "
 
-#: concrete/tools/files/importers/remote.php:135
+#: concrete/tools/files/importers/remote.php:136
 msgid "Could not determine the name of the file at "
 msgstr "Kan ikke bestemme navn på filen fra "
 
-#: concrete/tools/files/importers/remote.php:139
+#: concrete/tools/files/importers/remote.php:140
 msgid "There was an error downloading "
 msgstr "Der var en fejl under download "
 
@@ -1124,15 +1129,15 @@ msgid ""
 "Are you sure you want to remove this node? It will not remove any resources "
 "from the system but it will remove all subcategories and their catalog "
 "resource references."
-msgstr ""
+msgstr "Er du sikker på du vil fjerne denne node? Det vil ikke fjerne nogen ressourcer fra systemet, men det vil fjerne alle underkategorier og deres katalog ressource referencer."
 
 #: concrete/tools/tree/node/remove.php:19
 msgid "Remove Node"
-msgstr ""
+msgstr "Slet Node"
 
 #: concrete/tools/tree/node/drag_request.php:15
 msgid "You do not have permission to drag this node here."
-msgstr ""
+msgstr "Du har ikke tilladelse til at trække denne node her."
 
 #: concrete/tools/tree/node/add/topic_category.php:19
 #: concrete/tools/tree/node/edit/topic_category.php:17
@@ -3369,7 +3374,7 @@ msgstr "Workflow opdateret."
 
 #: concrete/controllers/single_page/dashboard/users/points.php:59
 msgid "User Point Entry Deleted"
-msgstr ""
+msgstr "Bruger Point Indtastning Slettet"
 
 #: concrete/controllers/single_page/dashboard/pages/templates.php:68
 #: concrete/controllers/single_page/dashboard/pages/templates/add.php:28
@@ -3384,61 +3389,61 @@ msgstr "Navn påkrævet."
 msgid ""
 "You must specify a description for this badge. It will be displayed "
 "publicly."
-msgstr ""
+msgstr "Du skal angive en beskrivelse af denne badge. Det vil blive vist offentligt."
 
 #: concrete/controllers/single_page/dashboard/users/add_group.php:81
 #, php-format
 msgid "You do not have permission to add a group beneath %s"
-msgstr ""
+msgstr "Du har ikke tilladelse til at tilføje en gruppe under %s"
 
 #: concrete/controllers/single_page/dashboard/users/groups/bulkupdate.php:37
 msgid "Invalid target parent group."
-msgstr ""
+msgstr "Ugyldig target forælder gruppe."
 
 #: concrete/controllers/single_page/dashboard/users/groups/bulkupdate.php:50
 msgid "You must select at least one group to move"
-msgstr ""
+msgstr "Du skal vælge mindst én gruppe at flytte"
 
 #: concrete/controllers/single_page/dashboard/users/groups/bulkupdate.php:67
 msgid "You must specify a search string."
-msgstr ""
+msgstr "Du skal angive en søgestreng."
 
 #: concrete/controllers/single_page/dashboard/users/points/actions.php:124
 msgid "Community Point Action Deleted"
-msgstr ""
+msgstr "Community Point Action Slettet"
 
 #: concrete/controllers/single_page/dashboard/users/points/actions.php:130
 msgid "Community Point Action Saved"
-msgstr ""
+msgstr "Community Point Action Gemt"
 
 #: concrete/controllers/single_page/dashboard/users/points/assign.php:56
 msgid "User Required"
-msgstr ""
+msgstr "Bruger Påkrævet"
 
 #: concrete/controllers/single_page/dashboard/users/points/assign.php:58
 msgid "Action Required"
-msgstr ""
+msgstr "Action Påkrævet"
 
 #: concrete/controllers/single_page/dashboard/users/points/assign.php:60
 msgid "Points Required"
-msgstr ""
+msgstr "Point Påkrævet"
 
 #: concrete/controllers/single_page/dashboard/users/points/assign.php:83
 msgid "-- None --"
-msgstr ""
+msgstr "-- Ingen --"
 
 #: concrete/controllers/single_page/dashboard/users/points/assign.php:116
 msgid "User Point Entry Saved"
-msgstr ""
+msgstr "Bruger Point Indtastning Gemt"
 
 #: concrete/controllers/single_page/dashboard/users/groups.php:33
 #: concrete/controllers/single_page/dashboard/users/groups.php:52
 msgid "You do not have access to edit this group."
-msgstr ""
+msgstr "Du har ikke adgang til at redigere denne gruppe."
 
 #: concrete/controllers/single_page/dashboard/users/groups.php:41
 msgid "Groups moved successfully."
-msgstr ""
+msgstr "Grupperne flyttet med succes"
 
 #: concrete/controllers/single_page/dashboard/users/groups.php:85
 msgid "Group added successfully"
@@ -3462,7 +3467,7 @@ msgstr "Gruppen er slettet."
 
 #: concrete/controllers/single_page/dashboard/users/search.php:52
 msgid "Avatar saved successfully."
-msgstr ""
+msgstr "Avatar gemt med succes."
 
 #: concrete/controllers/single_page/dashboard/users/search.php:108
 #: concrete/controllers/single_page/dashboard/users/search.php:111
@@ -3487,15 +3492,15 @@ msgstr "Emailadressen ·'%s' er allerede i brug. Vælg en anden."
 
 #: concrete/controllers/single_page/dashboard/users/search.php:171
 msgid "Email saved successfully."
-msgstr ""
+msgstr "E-mail gemt med succes."
 
 #: concrete/controllers/single_page/dashboard/users/search.php:191
 msgid "Time zone saved successfully."
-msgstr ""
+msgstr "Tidszone gemt med succes."
 
 #: concrete/controllers/single_page/dashboard/users/search.php:211
 msgid "Language saved successfully."
-msgstr ""
+msgstr "Sprog gemt med succes."
 
 #: concrete/controllers/single_page/dashboard/users/add.php:58
 #: concrete/controllers/single_page/dashboard/users/search.php:228
@@ -3533,7 +3538,7 @@ msgstr "Brugernavnet '%s findes allerede. Vælg et andet"
 
 #: concrete/controllers/single_page/dashboard/users/search.php:253
 msgid "Username saved successfully."
-msgstr ""
+msgstr "Brugernavn gemt med succes."
 
 #: concrete/controllers/single_page/dashboard/users/search.php:269
 #: concrete/controllers/single_page/dashboard/users/search.php:295
@@ -3556,7 +3561,7 @@ msgstr "Et kodeord må ikke indeholde  \", ', >, <, eller mellemrum."
 
 #: concrete/controllers/single_page/dashboard/users/search.php:336
 msgid "Password updated successfully."
-msgstr ""
+msgstr "Password opdateret med succes."
 
 #: concrete/controllers/single_page/dashboard/users/search.php:360
 #: concrete/controllers/single_page/login.php:60
@@ -3571,19 +3576,19 @@ msgstr "Bruger slettet."
 #: concrete/controllers/single_page/dashboard/users/search.php:401
 #, php-format
 msgid "View/Edit %s"
-msgstr ""
+msgstr "Vis/Rediger %s"
 
 #: concrete/controllers/single_page/dashboard/users/search.php:404
 msgid "User activated successfully."
-msgstr ""
+msgstr "Bruger aktiveret med succes."
 
 #: concrete/controllers/single_page/dashboard/users/search.php:407
 msgid "User deactivated successfully."
-msgstr ""
+msgstr "Bruger deaktiveret med succes."
 
 #: concrete/controllers/single_page/dashboard/users/search.php:410
 msgid "User created successfully."
-msgstr ""
+msgstr "Bruger oprettet med succes."
 
 #: concrete/controllers/single_page/dashboard/users/search.php:413
 msgid "Email marked as valid."
@@ -4001,15 +4006,15 @@ msgstr "Træ slettet med succes"
 
 #: concrete/controllers/single_page/dashboard/system/attributes/topics.php:204
 msgid "You may not remove the top level node."
-msgstr ""
+msgstr "Du må ikke slette top level node"
 
 #: concrete/controllers/single_page/dashboard/system/attributes/topics.php:209
 msgid "You may not remove this node."
-msgstr ""
+msgstr "Du må ikke slette denne node."
 
 #: concrete/controllers/single_page/dashboard/system/attributes/topics.php:213
 msgid "Invalid tree type."
-msgstr ""
+msgstr "Ugyldig træ type."
 
 #: concrete/controllers/single_page/dashboard/system/registration/authentication.php:20
 msgid "Invalid Error Code"
@@ -4018,7 +4023,7 @@ msgstr ""
 #: concrete/controllers/single_page/dashboard/system/registration/authentication.php:21
 #: concrete/controllers/single_page/login.php:201
 msgid "Invalid Authentication Type"
-msgstr ""
+msgstr "Ugyldig Godkendelsestype"
 
 #: concrete/controllers/single_page/dashboard/system/registration/authentication.php:48
 #, php-format
@@ -4507,7 +4512,7 @@ msgstr "Du er registreret, og afventer at en administrator godkender din bruger.
 #: concrete/controllers/single_page/login.php:99
 #: concrete/controllers/single_page/login.php:103
 msgid "Invalid method."
-msgstr ""
+msgstr "Ugyldigt metode."
 
 #: concrete/controllers/single_page/login.php:150
 msgid "You can only identify as the admin user using the concrete login."
@@ -4515,15 +4520,15 @@ msgstr ""
 
 #: concrete/controllers/single_page/login.php:170
 msgid "Fill in these required settings in order to continue."
-msgstr ""
+msgstr "Udfylde disse nødvendige indstillinger for at fortsætte."
 
 #: concrete/controllers/single_page/login.php:194
 msgid "Invalid Request, please attempt login again."
-msgstr ""
+msgstr "Ugyldig anmodning, du bedes forsøge login igen."
 
 #: concrete/controllers/single_page/login.php:296
 msgid "User is not registered. Check your authentication controller."
-msgstr ""
+msgstr "Brugeren er ikke registreret. Tjek din godkendelses controller."
 
 #: concrete/controllers/single_page/download_file.php:91
 msgid "Password incorrect. Please try again."
@@ -6521,13 +6526,13 @@ msgstr "Den grundlæggende cache gemmer noget af Concrete5 koden i hukommelsen. 
 msgid ""
 "Define where this page lives on your website. View and delegate what other "
 "pages are redirecting to this page."
-msgstr ""
+msgstr "Definere, hvor denne side bor på din hjemmeside. Se og uddelegere, hvad andre sider omdirigerer til denne side."
 
 #: concrete/core/Application/Service/UserInterface/Help.php:107
 msgid ""
 "Use the form below to create your page. You can also preview your page in "
 "edit mode at any time."
-msgstr ""
+msgstr "Brug formularen nedenfor til at lave din side. Du kan også se din side i redigeringstilstand til enhver tid."
 
 #: concrete/core/Application/Service/UserInterface/Help.php:108
 msgid "This is the help text for attributes. This should probably be changed."
@@ -6537,16 +6542,16 @@ msgstr ""
 msgid ""
 "Full page caching can dramatically improve page speed for pages that don't "
 "need to have absolutely up-to-the-minute content."
-msgstr ""
+msgstr "Fuld side caching kan dramatisk forbedre side hastighed for sider, der ikke behøver at have absolut up-to-the-minute indhold."
 
 #: concrete/core/Application/Service/UserInterface/Help.php:189
 msgid "Hide All"
-msgstr ""
+msgstr "Skjul Alle"
 
 #: concrete/core/Application/Service/UserInterface.php:284
 #: concrete/elements/page_controls_footer.php:184
 msgid "Hide"
-msgstr ""
+msgstr "Skjul"
 
 #: concrete/core/Application/Service/Dashboard.php:142
 #, php-format
@@ -6592,7 +6597,7 @@ msgstr "Add-Ons"
 #: concrete/core/Application/Service/Dashboard/Sitemap.php:86
 #, php-format
 msgid "%s more to display. <strong>View all &gt;</strong>"
-msgstr ""
+msgstr "%s mere at få vist. <strong>Vis alle &gt;</strong>"
 
 #: concrete/core/Application/Service/Upgrade.php:127
 #, php-format
@@ -6742,13 +6747,13 @@ msgstr "Kan ikke få oplysninger om dette produkt."
 #: concrete/core/Area/GlobalArea.php:21
 #, php-format
 msgid "Sitewide %s"
-msgstr ""
+msgstr "Sitewide %s"
 
 #: concrete/core/Area/Layout/Column.php:71
 #: concrete/core/Area/Layout/ThemeGridColumn.php:34
 #, php-format
 msgid "Column %s"
-msgstr ""
+msgstr "Kolonne %s"
 
 #: concrete/themes/core/error.php:18
 msgid "&lt; Back to Home"
@@ -8251,7 +8256,7 @@ msgstr "Vedhæfte et workflow til denne tilladelse?"
 #, php-format
 msgid ""
 "Permissions for this node are currently inherited from <strong>%s</strong>."
-msgstr ""
+msgstr "Tilladelser til denne node er i øjeblikket arvet fra <strong>%s</strong>."
 
 #: concrete/elements/permission/lists/area.php:15
 #: concrete/elements/permission/lists/area.php:35
@@ -8264,7 +8269,7 @@ msgstr "Tilsidesæt Tilladelser"
 
 #: concrete/elements/permission/lists/tree/node.php:24
 msgid "Permissions for this node currently override its parents' permissions."
-msgstr ""
+msgstr "Tilladelser til denne node tilsidesætte øjeblikket sine forældresiders tilladelser."
 
 #: concrete/elements/permission/lists/tree/node.php:27
 msgid "Revert to Parent Permisisons"
@@ -11627,7 +11632,7 @@ msgstr "Landsdel"
 #: concrete/attributes/address/composer.php:42
 #: concrete/attributes/address/form.php:32
 msgid "Choose State/Province"
-msgstr "V&aelig;lg Landsdel"
+msgstr "Vælg Landsdel"
 
 #: concrete/attributes/address/composer.php:64
 #: concrete/attributes/address/form.php:52
@@ -16587,12 +16592,12 @@ msgstr ""
 #: concrete/config/install/base/permissions.xml:104
 msgctxt "PermissionKeyName"
 msgid "View Topic Tree Node"
-msgstr ""
+msgstr "Vis Emne Træ Node"
 
 #: concrete/config/install/base/permissions.xml:105
 msgctxt "PermissionKeyName"
 msgid "View Topic Category Tree Node"
-msgstr ""
+msgstr "Vis Emne Kategori Træ Node"
 
 #: concrete/config/install/base/permissions.xml:108
 msgctxt "PermissionKeyName"

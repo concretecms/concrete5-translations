@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-06-07 04:00+0000\n"
-"PO-Revision-Date: 2014-06-07 10:11+0000\n"
+"POT-Creation-Date: 2014-06-08 04:00+0000\n"
+"PO-Revision-Date: 2014-06-08 09:59+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Vietnamese (Viet Nam) (http://www.transifex.com/projects/p/concrete5/language/vi_VN/)\n"
 "MIME-Version: 1.0\n"
@@ -571,7 +571,7 @@ msgstr "Thêm từ thư mục nguồn đến"
 msgid "Replace"
 msgstr "Thay thế"
 
-#: concrete/tools/files/import.php:97 concrete/tools/files/replace.php:49
+#: concrete/tools/files/import.php:103 concrete/tools/files/replace.php:49
 #, php-format
 msgid "No files found in %s"
 msgstr "Không tìn thấy các tệp tin trong %s"
@@ -598,7 +598,7 @@ msgstr "Thêm nguồn đến"
 msgid "Add Remote Files"
 msgstr "Thêm các tệp tin từ xa"
 
-#: concrete/tools/files/import.php:68
+#: concrete/tools/files/import.php:73
 #: concrete/views/dialogs/file/properties.php:38
 #: concrete/views/dialogs/file/properties.php:169
 msgid "Filename"
@@ -606,12 +606,12 @@ msgstr "Tên tệp tin"
 
 #: concrete/core/File/Search/ColumnSet/DefaultSet.php:23
 #: concrete/elements/custom_style/fonts.php:23
-#: concrete/elements/files/search.php:6 concrete/tools/files/import.php:69
+#: concrete/elements/files/search.php:6 concrete/tools/files/import.php:74
 #: concrete/tools/i18n_js.php:94 concrete/views/dialogs/file/properties.php:70
 msgid "Size"
 msgstr "Kích cỡ"
 
-#: concrete/tools/files/import.php:87
+#: concrete/tools/files/import.php:92
 msgid "Remove files from incoming/ directory."
 msgstr "Loại bỏ các tệp tin từ nguồn nhập / thư mục."
 
@@ -683,7 +683,7 @@ msgstr "Loại bỏ các tệp tin từ nguồn nhập / thư mục."
 #: concrete/tools/dashboard/sitemap_drag_request.php:226
 #: concrete/tools/dashboard/sitemap_drag_request.php:228
 #: concrete/tools/files/delete.php:91 concrete/tools/files/delete_set.php:48
-#: concrete/tools/files/duplicate.php:114 concrete/tools/files/import.php:102
+#: concrete/tools/files/duplicate.php:114 concrete/tools/files/import.php:108
 #: concrete/tools/files/permissions.php:73
 #: concrete/tools/files/permissions.php:102
 #: concrete/tools/gathering/item/delete.php:27 concrete/tools/i18n_js.php:9
@@ -723,11 +723,11 @@ msgid "Cancel"
 msgstr "Hủy"
 
 #: concrete/single_pages/dashboard/files/search.php:17
-#: concrete/tools/files/import.php:103
+#: concrete/tools/files/import.php:109
 msgid "Add Files"
 msgstr "Thêm các tệp tin"
 
-#: concrete/tools/files/import.php:110
+#: concrete/tools/files/import.php:116
 msgid "Enter URL to valid file(s)"
 msgstr "Nhập địa chỉ URL của (các) tệp tin hợp lệ"
 
@@ -822,14 +822,12 @@ msgstr "Khác"
 msgid "Files in no sets."
 msgstr "Tệp tin trong không thiết lập"
 
-#: concrete/tools/files/importers/incoming.php:35
-#: concrete/tools/files/importers/remote.php:109
+#: concrete/tools/files/importers/remote.php:110
 #: concrete/tools/files/importers/single.php:34
 msgid "File uploaded successfully."
 msgstr ""
 
-#: concrete/tools/files/importers/incoming.php:37
-#: concrete/tools/files/importers/remote.php:111
+#: concrete/tools/files/importers/remote.php:112
 #: concrete/tools/files/importers/single.php:36
 msgid "File replaced successfully."
 msgstr ""
@@ -838,31 +836,37 @@ msgstr ""
 msgid "Upload Complete."
 msgstr "Hoàn thành tải lên"
 
-#: concrete/tools/files/importers/incoming.php:63
+#: concrete/tools/files/importers/incoming.php:59
 msgid "You must select at least one file."
 msgstr "Bạn phải chọn ít nhất một tập tin."
+
+#: concrete/tools/files/importers/incoming.php:70
+#, php-format
+msgid "%s file imported successfully."
+msgid_plural "%s files imported successfully"
+msgstr[0] ""
 
 #: concrete/tools/files/importers/remote.php:32
 msgid "Remote URL import requires the iconv extension enabled on your server."
 msgstr "Trình nhập Địa chỉ URL từ xa đòi hỏi iconv mở rộng được kích hoạt trên máy chủ của bạn."
 
-#: concrete/tools/files/importers/remote.php:48
+#: concrete/tools/files/importers/remote.php:50
 msgid " is not a valid URL."
 msgstr "Không phải là một địa chỉ URL hợp lệ"
 
-#: concrete/tools/files/importers/remote.php:58
+#: concrete/tools/files/importers/remote.php:60
 msgid "You must specify at least one valid URL."
 msgstr "Bạn phải chỉ định ít nhất một địa chỉ URL hợp lệ."
 
-#: concrete/tools/files/importers/remote.php:87
+#: concrete/tools/files/importers/remote.php:88
 msgid "Unknown mime-type: "
 msgstr "Chưa biết kiểu mime"
 
-#: concrete/tools/files/importers/remote.php:135
+#: concrete/tools/files/importers/remote.php:136
 msgid "Could not determine the name of the file at "
 msgstr "Không thể xác định tên của tập tin tại"
 
-#: concrete/tools/files/importers/remote.php:139
+#: concrete/tools/files/importers/remote.php:140
 msgid "There was an error downloading "
 msgstr "Có một lỗi trong quá trình tải về"
 
