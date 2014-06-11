@@ -5,9 +5,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-06-08 04:00+0000\n"
-"PO-Revision-Date: 2014-06-08 09:59+0000\n"
-"Last-Translator: Michele Locati <michele@locati.it>\n"
+"POT-Creation-Date: 2014-06-10 04:00+0000\n"
+"PO-Revision-Date: 2014-06-11 03:20+0000\n"
+"Last-Translator: Adem Coşkuner <info@ademcoskuner.com>\n"
 "Language-Team: Turkish (Turkey) (http://www.transifex.com/projects/p/concrete5/language/tr_TR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -844,31 +844,37 @@ msgstr "En az 1 dosya seçmelisiniz."
 #, php-format
 msgid "%s file imported successfully."
 msgid_plural "%s files imported successfully"
-msgstr[0] ""
+msgstr[0] "%s dosya başarıyla içe aktarıldı"
 
 #: concrete/tools/files/importers/remote.php:32
 msgid "Remote URL import requires the iconv extension enabled on your server."
 msgstr "Harici adresten eklemek için iconv uzantısı sunucunuzda etkinleştirilmiş olmalıdır."
 
 #: concrete/tools/files/importers/remote.php:50
-msgid " is not a valid URL."
-msgstr " geçerli bir adres değil"
+#, php-format
+msgid "%s is not a valid URL."
+msgstr "%s, geçerli bir URL değil."
 
 #: concrete/tools/files/importers/remote.php:60
 msgid "You must specify at least one valid URL."
 msgstr "En az bir geçerli adres belirtmelisiniz."
 
 #: concrete/tools/files/importers/remote.php:88
-msgid "Unknown mime-type: "
-msgstr "Bilinmeyen dosya türü(mime-type):"
+#, php-format
+msgid "Unknown mime-type: %s"
+msgstr "Bilinmeyen mime(dosya) türü: %s"
 
+#. %s is an URL
 #: concrete/tools/files/importers/remote.php:136
-msgid "Could not determine the name of the file at "
-msgstr "Şu adresteki dosyanın adı belirlenemiyor: "
+#, php-format
+msgid "Could not determine the name of the file at %s"
+msgstr "%s'teki dosya adı saptanamadı."
 
+#. %s is an URL
 #: concrete/tools/files/importers/remote.php:140
-msgid "There was an error downloading "
-msgstr "İndirirken bir hata oluştu "
+#, php-format
+msgid "There was an error downloading %s"
+msgstr "%s'i indirirken bir hata ile karşılaşıldı."
 
 #: concrete/elements/conversation/message.php:78
 #: concrete/elements/files/search.php:32
@@ -3703,32 +3709,32 @@ msgstr "Günlük yapılandırması kaydedildi."
 
 #: concrete/controllers/single_page/dashboard/system/environment/storage.php:33
 msgid "File storage location added."
-msgstr ""
+msgstr "Dosya depolama konumu eklendi."
 
 #: concrete/controllers/single_page/dashboard/system/environment/storage.php:38
 msgid "File storage location removed."
-msgstr ""
+msgstr "Dosya depolama konumu silindi."
 
 #: concrete/controllers/single_page/dashboard/system/environment/storage.php:43
 msgid "File storage location saved."
-msgstr ""
+msgstr "Dosya depolama konumu kaydedildi."
 
 #: concrete/controllers/single_page/dashboard/system/environment/storage.php:65
 msgid "Invalid type object."
-msgstr ""
+msgstr "Geçersiz tür nesnesi."
 
 #: concrete/controllers/single_page/dashboard/system/environment/storage.php:74
 msgid "Your file storage location must have a name."
-msgstr ""
+msgstr "Dosya depolama konumunuzun bir ismi olmalıdır."
 
 #: concrete/controllers/single_page/dashboard/system/environment/storage.php:89
 #: concrete/controllers/single_page/dashboard/system/environment/storage.php:114
 msgid "Invalid file storage location object."
-msgstr ""
+msgstr "Geçersiz dosya depolama konumu nesnesi."
 
 #: concrete/controllers/single_page/dashboard/system/environment/storage.php:117
 msgid "You may not delete the default file storage location."
-msgstr ""
+msgstr "Varsayılan dosya depolama konumunu silemezsiniz."
 
 #: concrete/controllers/single_page/dashboard/system/environment/debug.php:28
 msgid "Debug configuration saved."
@@ -3889,7 +3895,7 @@ msgstr "Global e-posta ayarları kaydedildi."
 
 #: concrete/controllers/single_page/dashboard/system/mail/importers.php:36
 msgid "Importer saved."
-msgstr "Importer kaydedildi."
+msgstr "İçe aktarım aracı kaydedildi."
 
 #: concrete/controllers/single_page/dashboard/system/conversations/points.php:16
 msgid "Rating types updated."
@@ -4964,11 +4970,11 @@ msgstr "\"%s\" olarak zip dosyası oluşturulamadı: %s"
 
 #: concrete/core/File/StorageLocation/Configuration/LocalConfiguration.php:69
 msgid "You must include a root path for this storage location."
-msgstr ""
+msgstr "Bu depolama konumu için bir kök dizin belirtmelisiniz."
 
 #: concrete/core/File/StorageLocation/Configuration/LocalConfiguration.php:71
 msgid "The specified root path does not exist."
-msgstr ""
+msgstr "Belirtilen kök dizin mevcut değil."
 
 #: concrete/core/File/Service/File.php:333
 msgid "An error occured while attempting to determine file permissions."
@@ -5009,7 +5015,7 @@ msgstr "Dosya kısmen karşıya yüklendi."
 
 #: concrete/core/File/Importer.php:45
 msgid "No default file storage location could be found to store this file."
-msgstr ""
+msgstr "Bu dosyayı depolamak için hiçbir varsayılan dosya depolama konumu bulunamadı."
 
 #: concrete/core/File/Importer.php:49
 #, php-format
@@ -5717,7 +5723,7 @@ msgstr "Varsayılan"
 
 #: concrete/core/Package/StartingPointPackage.php:143
 msgid "Local"
-msgstr ""
+msgstr "Yerel"
 
 #: concrete/core/Package/StartingPointPackage.php:172
 #, php-format
@@ -8406,11 +8412,11 @@ msgstr "Düzenleme modunda içerik görüntülenemez."
 
 #: concrete/elements/storage_location_types/local.php:9
 msgid "Root Path"
-msgstr ""
+msgstr "Kök Yol"
 
 #: concrete/elements/storage_location_types/local.php:13
 msgid "Relative Path"
-msgstr ""
+msgstr "Bağıl Yol"
 
 #: concrete/elements/custom_style/background.php:15
 #: concrete/single_pages/dashboard/system/basics/images.php:12
@@ -9242,13 +9248,13 @@ msgstr "Dosya yöneticisi doğrultusunda uzaktan dosya aktarımı, iconv PHP uza
 
 #: concrete/views/frontend/install.php:429
 msgid "Zip Support"
-msgstr ""
+msgstr "Sıkıştırma Desteği"
 
 #: concrete/views/frontend/install.php:431
 msgid ""
 "Downloading zipped files from the file manager and remote updating requires "
 "the Zip extension."
-msgstr ""
+msgstr "Dosya yöneticisinden sıkıştırılmış dosyalar indirirken ve uzaktan güncelleme yapılırken Zip eklentisine ihtiyaç duyulur."
 
 #: concrete/views/frontend/install.php:444
 msgid "Continue to Installation"
@@ -10270,11 +10276,11 @@ msgstr "Resmi Kırp + Yükle"
 
 #: concrete/blocks/image/form.php:32
 msgid "Image Hover"
-msgstr ""
+msgstr "Mouse Üzerindeyken"
 
 #: concrete/blocks/image/form.php:32
 msgid "(Optional)"
-msgstr ""
+msgstr "(Opsiyonel)"
 
 #: concrete/blocks/image/form.php:33
 msgid "Choose Image On-State"
@@ -10282,7 +10288,7 @@ msgstr "Üzerinde-Durumu Resmi Seç"
 
 #: concrete/blocks/image/form.php:42
 msgid "Image Link"
-msgstr ""
+msgstr "Resim Bağlantısı"
 
 #: concrete/blocks/image/form.php:45
 msgid "Another Page"
@@ -10298,11 +10304,11 @@ msgstr "Sayfa Seç:"
 
 #: concrete/blocks/image/form.php:62
 msgid "Alt. Text"
-msgstr ""
+msgstr "Alternatif Metin"
 
 #: concrete/blocks/image/form.php:79
 msgid "Constrain Image Size"
-msgstr ""
+msgstr "Resim Boyutlarını Sınırla"
 
 #: concrete/blocks/image/form.php:81
 msgid "Max Width"
@@ -10882,11 +10888,11 @@ msgstr "Akış Başlığı"
 
 #: concrete/blocks/rss_displayer/form_setup_html.php:23
 msgid "Items to Show"
-msgstr ""
+msgstr "Gösterilecek Öğeler"
 
 #: concrete/blocks/rss_displayer/form_setup_html.php:29
 msgid "Include Summary"
-msgstr ""
+msgstr "Özeti Dahil Et"
 
 #: concrete/blocks/rss_displayer/form_setup_html.php:36
 msgid "Open links in a new window"
@@ -11403,7 +11409,7 @@ msgstr "Bu, harici formlar dizininizde bulunan tüm dosyaların listesidir: %s"
 
 #: concrete/blocks/external_form/edit.php:5
 msgid "File to Include"
-msgstr ""
+msgstr "Dahil Edilecek Dosya"
 
 #: concrete/blocks/autonav/controller.php:33
 msgid "Creates navigation trees and sitemaps."
@@ -11966,7 +11972,7 @@ msgstr "Hiçbir dosya grubu bulunamadı."
 
 #: concrete/single_pages/dashboard/files/search.php:11
 msgid "<strong>Upload Files</strong> / Click to Choose or Drag &amp; Drop. / "
-msgstr ""
+msgstr "<strong>Dosyaları Yükle</strong> / Seç'e tıklayın veya or Sürükle &amp; Bırak yapın. / "
 
 #: concrete/single_pages/dashboard/files/search.php:27
 msgid "You do not have access to the file manager."
@@ -13153,7 +13159,7 @@ msgstr "Gönderilen E-Postaları Günlüğe Kaydet"
 
 #: concrete/single_pages/dashboard/system/environment/storage.php:21
 msgid "Delete Location"
-msgstr ""
+msgstr "Konumu Sil"
 
 #: concrete/config/install/base/dashboard.xml:471
 #: concrete/single_pages/dashboard/system/environment/storage.php:39
@@ -13162,34 +13168,34 @@ msgstr "Temeller"
 
 #: concrete/single_pages/dashboard/system/environment/storage.php:57
 msgid "Yes, make this the default storage location for new files."
-msgstr ""
+msgstr "Evet, bunu yeni dosyalar için varsayılan depolama konumu yap."
 
 #: concrete/single_pages/dashboard/system/environment/storage.php:62
 msgid "No, this is not the default storage location."
-msgstr ""
+msgstr "Hayır, bu varsayılan depolama konumu değil."
 
 #: concrete/single_pages/dashboard/system/environment/storage.php:71
 #, php-format
 msgid "Options %s Storage Type"
-msgstr ""
+msgstr "%s Depolama Türü Seçenekleri"
 
 #: concrete/single_pages/dashboard/system/environment/storage.php:91
 msgid ""
 "Delete this storage location? All files using it will have their storage "
 "location reset to the default."
-msgstr ""
+msgstr "Bu depolama konumu silinsin mi? Bunu kullanan tüm dosyaların depolama konumları varsayılan olarak sıfırlanacaktır."
 
 #: concrete/single_pages/dashboard/system/environment/storage.php:99
 msgid "Storage Locations"
-msgstr ""
+msgstr "Depolama Konumları"
 
 #: concrete/single_pages/dashboard/system/environment/storage.php:109
 msgid "Add Location"
-msgstr ""
+msgstr "Konum Ekle"
 
 #: concrete/single_pages/dashboard/system/environment/storage.php:110
 msgid "Choose Type"
-msgstr ""
+msgstr "Türü Seç"
 
 #: concrete/single_pages/dashboard/system/environment/debug.php:3
 msgid "Debug Level"

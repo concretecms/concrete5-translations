@@ -15,8 +15,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-06-07 04:00+0000\n"
-"PO-Revision-Date: 2014-06-07 10:10+0000\n"
+"POT-Creation-Date: 2014-06-10 04:00+0000\n"
+"PO-Revision-Date: 2014-06-10 13:01+0000\n"
 "Last-Translator: Torsten Silbermann <mail@tsilbermann.de>\n"
 "Language-Team: German (Germany) (http://www.transifex.com/projects/p/concrete5/language/de_DE/)\n"
 "MIME-Version: 1.0\n"
@@ -39,6 +39,7 @@ msgstr ""
 #: concrete/tools/edit_collection_popup.php:6
 #: concrete/tools/files/selector_data.php:5
 #: concrete/tools/jobs/run_single.php:61
+#: concrete/tools/marketplace/connect.php:8
 #: concrete/tools/pages/bulk_metadata_update.php:6
 #: concrete/tools/pages/customize_search_columns.php:7
 #: concrete/tools/pages/delete.php:7 concrete/tools/pages/design.php:7
@@ -207,7 +208,8 @@ msgstr "Speichern"
 #: concrete/tools/files/permissions.php:10
 #: concrete/tools/files/properties.php:12 concrete/tools/files/replace.php:12
 #: concrete/tools/files/selector_data.php:22 concrete/tools/files/star.php:8
-#: concrete/tools/files/view.php:18 concrete/tools/layout_services.php:40
+#: concrete/tools/files/view.php:18 concrete/tools/layout_services.php:11
+#: concrete/tools/layout_services.php:23 concrete/tools/layout_services.php:56
 #: concrete/tools/pile_manager.php:10
 #: concrete/tools/sitemap_search_selector.php:5
 #: concrete/tools/user_group_selector.php:14
@@ -935,55 +937,55 @@ msgstr "Möchten Sie die folgenden Dateien wirklich löschen?"
 
 #: concrete/tools/marketplace/add-ons.php:9
 #: concrete/tools/marketplace/details.php:9
-#: concrete/tools/marketplace/download.php:5
+#: concrete/tools/marketplace/download.php:11
 #: concrete/tools/marketplace/themes.php:9
 msgid "You do not have permission to download packages from the marketplace."
 msgstr "Sie haben nicht die Berechtigung, Pakete vom Marketplace herunterzuladen."
 
-#: concrete/tools/marketplace/download.php:36
+#: concrete/tools/marketplace/download.php:42
 msgid "Invalid package or no package specified."
 msgstr "Ungültiges Paket oder keine Pakete gewählt"
 
-#: concrete/tools/marketplace/download.php:63
+#: concrete/tools/marketplace/download.php:69
 msgid "The package was successfully installed."
 msgstr "Das Paket wurde erfolgreich installiert."
 
-#: concrete/tools/marketplace/download.php:66
+#: concrete/tools/marketplace/download.php:72
 msgid ""
 "The package was successfully downloaded and decompressed on your server."
 msgstr "Das Paket wurde erfolgreich heruntergeladen und auf Ihrem Server entpackt."
 
-#: concrete/tools/marketplace/download.php:69
+#: concrete/tools/marketplace/download.php:75
 msgid "Return"
 msgstr "Zurück"
 
-#: concrete/tools/marketplace/download.php:74
+#: concrete/tools/marketplace/download.php:80
 msgid "The package could not be installed:"
 msgstr "Das Paket konnte nicht installiert werden:"
 
-#: concrete/tools/marketplace/download.php:80
+#: concrete/tools/marketplace/download.php:86
 msgid "To install the package manually:"
 msgstr "Um das Paket manuell zu installieren, gehen Sie wie folgt vor:"
 
-#: concrete/tools/marketplace/download.php:82
+#: concrete/tools/marketplace/download.php:88
 #, php-format
 msgid "Download the package from <a href=\"%s\">here</a>."
 msgstr "Herunterladen des Paketes unter folgender <a href=\"%s\">Adresse</a>."
 
-#: concrete/tools/marketplace/download.php:83
+#: concrete/tools/marketplace/download.php:89
 msgid ""
 "Upload and unpack the package on your web server. Place the unpacked files "
 "in the packages directory of the root of your concrete5 installation."
 msgstr "Laden und entpacken Sie das Paket auf Ihren Server. Verschieben Sie die entpackten Dateien in das Verzeichnis /packages im Wurzelverzeichnis Ihrer concrete5-Installation."
 
-#: concrete/tools/marketplace/download.php:84
+#: concrete/tools/marketplace/download.php:90
 #, php-format
 msgid ""
 "Go to the <a href=\"%s\">Add Functionality</a> page in your concrete5 "
 "Dashboard."
 msgstr "Zu <a href=\"%s\">Erweiterungen hinzufügen</a>in der Verwaltung."
 
-#: concrete/tools/marketplace/download.php:85
+#: concrete/tools/marketplace/download.php:91
 msgid "Click the Install button next to the package name."
 msgstr "Klicken Sie auf die Schaltfläche Installieren direkt neben dem Namen des Paketes."
 
@@ -993,22 +995,22 @@ msgstr "Klicken Sie auf die Schaltfläche Installieren direkt neben dem Namen de
 #: concrete/elements/collection_theme.php:102
 #: concrete/single_pages/dashboard/pages/themes/view.php:21
 #: concrete/single_pages/dashboard/pages/themes/view.php:52
-#: concrete/tools/marketplace/refresh_theme.php:26
+#: concrete/tools/marketplace/refresh_theme.php:27
 #: concrete/tools/pages/design.php:180
 msgid "Themes"
 msgstr "Themes"
 
 #: concrete/tools/marketplace/checkout.php:12
-#: concrete/tools/marketplace/frame.php:32
-#: concrete/tools/marketplace/refresh_theme.php:28
+#: concrete/tools/marketplace/frame.php:33
+#: concrete/tools/marketplace/refresh_theme.php:29
 msgid "You do not have permission to connect to the marketplace."
 msgstr "Sie haben nicht die Berechtigung, die Site mit dem Marketplace zu verknüpfen."
 
-#: concrete/tools/marketplace/refresh_theme.php:30
+#: concrete/tools/marketplace/refresh_theme.php:31
 msgid "Unable to connect to the marketplace."
 msgstr "Verbindung zum Marketplace konnte nicht hergestellt werden."
 
-#: concrete/tools/marketplace/refresh_theme.php:40
+#: concrete/tools/marketplace/refresh_theme.php:41
 msgid "Install theme"
 msgstr "Theme installieren"
 
@@ -1025,8 +1027,8 @@ msgstr "Theme installieren"
 #: concrete/single_pages/dashboard/system/basics/editor.php:86
 #: concrete/tools/i18n_js.php:98 concrete/tools/marketplace/details.php:108
 #: concrete/tools/marketplace/details.php:109
-#: concrete/tools/marketplace/refresh_theme.php:41
 #: concrete/tools/marketplace/refresh_theme.php:42
+#: concrete/tools/marketplace/refresh_theme.php:43
 #: concrete/tools/pages/design.php:194 concrete/tools/pages/design.php:195
 msgid "Preview"
 msgstr "Vorschau"
@@ -1070,23 +1072,23 @@ msgid "Invalid marketplace item."
 msgstr "Ungültige Marketplace-Element-ID"
 
 #: concrete/elements/block_area_layout.php:23
-#: concrete/tools/layout_services.php:43
+#: concrete/tools/layout_services.php:59
 msgid "Error: Layout not found"
 msgstr "Fehler: Layout nicht gefunden"
 
-#: concrete/tools/layout_services.php:151
+#: concrete/tools/layout_services.php:167
 msgid "Error: Invalid column count. Please refresh your page."
 msgstr "Fehler: Ungültiger Spaltenzähler. Bitte aktualisieren Sie Ihre Seite."
 
-#: concrete/tools/layout_services.php:170
+#: concrete/tools/layout_services.php:186
 msgid "Invalid Task."
 msgstr "Ungültige Aufgabe"
 
-#: concrete/tools/layout_services.php:177
+#: concrete/tools/layout_services.php:193
 msgid "Unknown Error"
 msgstr "Unbekannter Fehler"
 
-#: concrete/tools/layout_services.php:178
+#: concrete/tools/layout_services.php:194
 msgid "Success"
 msgstr "Fertig"
 
@@ -1423,6 +1425,10 @@ msgstr "Gruppen"
 #: concrete/tools/user_group_selector.php:36
 msgid "Users"
 msgstr "Benutzer"
+
+#: concrete/tools/spellchecker_service.php:16
+msgid "SuggestPopup"
+msgstr "Wortvorschläge"
 
 #: concrete/tools/add_block_popup.php:35
 msgid ""
@@ -3509,7 +3515,7 @@ msgstr "Arbeitsablauf erfolgreich angelegt. Sie können nun seine Eigenschaften 
 msgid "Workflow updated."
 msgstr "Arbeitsablauf aktualisiert"
 
-#: concrete/core/controllers/single_pages/dashboard/pages/types.php:58
+#: concrete/core/controllers/single_pages/dashboard/pages/types.php:71
 #: concrete/core/controllers/single_pages/dashboard/pages/types/add.php:29
 #: concrete/core/controllers/single_pages/dashboard/users/add_group.php:29
 #: concrete/core/controllers/single_pages/dashboard/users/groups.php:19
@@ -4195,13 +4201,13 @@ msgstr "Composereinstellungen aktualisiert"
 msgid "Parent page not selected"
 msgstr "Es wurde keine übergeordnete Seite ausgewählt."
 
-#: concrete/core/controllers/single_pages/dashboard/pages/types.php:52
+#: concrete/core/controllers/single_pages/dashboard/pages/types.php:63
 #: concrete/core/controllers/single_pages/dashboard/pages/types/add.php:19
 #: concrete/core/libraries/attribute/controller.php:172
 msgid "Handle required."
 msgstr "Bitte geben Sie eine Kennung an."
 
-#: concrete/core/controllers/single_pages/dashboard/pages/types.php:54
+#: concrete/core/controllers/single_pages/dashboard/pages/types.php:66
 #: concrete/core/controllers/single_pages/dashboard/pages/types/add.php:21
 msgid "Handles must contain only letters, numbers or the underscore symbol."
 msgstr "Kennungen dürfen nur Buchstaben, Zahlen und Unterstriche enthalten."
@@ -4210,7 +4216,7 @@ msgstr "Kennungen dürfen nur Buchstaben, Zahlen und Unterstriche enthalten."
 msgid "Handle already exists."
 msgstr "Die Kennung existiert bereits."
 
-#: concrete/core/controllers/single_pages/dashboard/pages/types.php:60
+#: concrete/core/controllers/single_pages/dashboard/pages/types.php:74
 #: concrete/core/controllers/single_pages/dashboard/pages/types/add.php:31
 msgid "Invalid characters in page type name."
 msgstr "Unzulässige Zeichen im Seitentyp-Namen"
@@ -4300,21 +4306,21 @@ msgstr "Seitenattribut erstellt"
 msgid "Page Attribute Deleted."
 msgstr "Seitenattribut gelöscht"
 
-#: concrete/core/controllers/single_pages/dashboard/pages/types.php:23
+#: concrete/core/controllers/single_pages/dashboard/pages/types.php:31
 msgid ""
 "You must delete all pages of this type, and remove all page versions that "
 "contain this page type before deleting this page type."
 msgstr "Es müssen zuerst alle Seiten dieses Typs gelöscht werden, bevor dieser Seitentyp gelöscht werden kann."
 
-#: concrete/core/controllers/single_pages/dashboard/pages/types.php:29
+#: concrete/core/controllers/single_pages/dashboard/pages/types.php:38
 msgid "Page type added successfully."
 msgstr "Seitentyp erfolgreich hinzugefügt"
 
-#: concrete/core/controllers/single_pages/dashboard/pages/types.php:34
+#: concrete/core/controllers/single_pages/dashboard/pages/types.php:44
 msgid "Page type updated successfully."
 msgstr "Seitentyp erfolgreich geändert"
 
-#: concrete/core/controllers/single_pages/dashboard/pages/types.php:39
+#: concrete/core/controllers/single_pages/dashboard/pages/types.php:50
 msgid "This page type is no longer included in composer."
 msgstr "Dieser Seitentyp ist nicht mehr in Composer enthalten."
 
@@ -6152,7 +6158,7 @@ msgid "Set"
 msgstr "Album"
 
 #: concrete/elements/attribute/type_form_required.php:68
-#: concrete/models/attribute/types/select/form.php:157
+#: concrete/models/attribute/types/select/form.php:186
 msgid "** None"
 msgstr "** Keine"
 
@@ -6207,7 +6213,7 @@ msgstr "Feld verfügbar in der Benutzersuche der Verwaltung"
 #: concrete/elements/pages/search_form_advanced.php:179
 #: concrete/elements/permission/access/list.php:12
 #: concrete/elements/users/search_form_advanced.php:115
-#: concrete/models/attribute/types/select/form.php:74
+#: concrete/models/attribute/types/select/form.php:92
 #: concrete/models/attribute/types/select/type_form.php:107
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:42
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:274
@@ -8206,12 +8212,12 @@ msgstr "Textfeld"
 msgid "Remove Option"
 msgstr "Optionen entfernen"
 
-#: concrete/models/attribute/types/select/form.php:41
+#: concrete/models/attribute/types/select/form.php:46
 msgid "Selected Options"
 msgstr "gewählte Optionen"
 
-#: concrete/models/attribute/types/select/form.php:169
-#: concrete/models/attribute/types/select/form.php:170
+#: concrete/models/attribute/types/select/form.php:200
+#: concrete/models/attribute/types/select/form.php:204
 msgid "Add Another Option"
 msgstr "Option hinzufügen"
 
@@ -9921,7 +9927,7 @@ msgstr "Neue Seite"
 
 #: concrete/single_pages/dashboard/composer/write.php:315
 msgid "Discard this draft?"
-msgstr "Diesen Entwurf verwerfen?"
+msgstr "Diesen Entwurf löschen?"
 
 #: concrete/config/install/base/dashboard.xml:5
 #: concrete/config/install/base/dashboard.xml:750

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-06-07 04:00+0000\n"
-"PO-Revision-Date: 2014-06-07 10:10+0000\n"
+"POT-Creation-Date: 2014-06-10 04:00+0000\n"
+"PO-Revision-Date: 2014-06-10 13:01+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Czech (Czech Republic) (http://www.transifex.com/projects/p/concrete5/language/cs_CZ/)\n"
 "MIME-Version: 1.0\n"
@@ -31,6 +31,7 @@ msgstr ""
 #: concrete/tools/edit_collection_popup.php:6
 #: concrete/tools/files/selector_data.php:5
 #: concrete/tools/jobs/run_single.php:61
+#: concrete/tools/marketplace/connect.php:8
 #: concrete/tools/pages/bulk_metadata_update.php:6
 #: concrete/tools/pages/customize_search_columns.php:7
 #: concrete/tools/pages/delete.php:7 concrete/tools/pages/design.php:7
@@ -199,7 +200,8 @@ msgstr "Uložit"
 #: concrete/tools/files/permissions.php:10
 #: concrete/tools/files/properties.php:12 concrete/tools/files/replace.php:12
 #: concrete/tools/files/selector_data.php:22 concrete/tools/files/star.php:8
-#: concrete/tools/files/view.php:18 concrete/tools/layout_services.php:40
+#: concrete/tools/files/view.php:18 concrete/tools/layout_services.php:11
+#: concrete/tools/layout_services.php:23 concrete/tools/layout_services.php:56
 #: concrete/tools/pile_manager.php:10
 #: concrete/tools/sitemap_search_selector.php:5
 #: concrete/tools/user_group_selector.php:14
@@ -235,7 +237,7 @@ msgstr "Chyba při volání funkce ZipArchive::CREATE"
 #: concrete/tools/files/download.php:61
 #, php-format
 msgid "External zip failed. Error description: %s"
-msgstr ""
+msgstr "Chyba externího zip souboru. Popis chyby: %s"
 
 #: concrete/tools/files/download.php:72
 msgid "The requested file couldn't be found."
@@ -928,55 +930,55 @@ msgstr "Opravdu chcete smazat následující soubory?"
 
 #: concrete/tools/marketplace/add-ons.php:9
 #: concrete/tools/marketplace/details.php:9
-#: concrete/tools/marketplace/download.php:5
+#: concrete/tools/marketplace/download.php:11
 #: concrete/tools/marketplace/themes.php:9
 msgid "You do not have permission to download packages from the marketplace."
 msgstr "Nemáte oprávnění stahovat balíčky z Tržiště."
 
-#: concrete/tools/marketplace/download.php:36
+#: concrete/tools/marketplace/download.php:42
 msgid "Invalid package or no package specified."
 msgstr "Neplatný balíček nebo nebyl balíček zadán."
 
-#: concrete/tools/marketplace/download.php:63
+#: concrete/tools/marketplace/download.php:69
 msgid "The package was successfully installed."
 msgstr "Balíček byl úspěšně nainstalován."
 
-#: concrete/tools/marketplace/download.php:66
+#: concrete/tools/marketplace/download.php:72
 msgid ""
 "The package was successfully downloaded and decompressed on your server."
 msgstr "Balíček byl úspěšně stažen a rozbalen na vašem serveru."
 
-#: concrete/tools/marketplace/download.php:69
+#: concrete/tools/marketplace/download.php:75
 msgid "Return"
 msgstr "Zpět"
 
-#: concrete/tools/marketplace/download.php:74
+#: concrete/tools/marketplace/download.php:80
 msgid "The package could not be installed:"
 msgstr "Balíček nemohl být nainstalován:"
 
-#: concrete/tools/marketplace/download.php:80
+#: concrete/tools/marketplace/download.php:86
 msgid "To install the package manually:"
 msgstr "Pro ruční instalaci balíčku:"
 
-#: concrete/tools/marketplace/download.php:82
+#: concrete/tools/marketplace/download.php:88
 #, php-format
 msgid "Download the package from <a href=\"%s\">here</a>."
 msgstr "Stáhnout balíček <a href=\"%s\">odsud</a>."
 
-#: concrete/tools/marketplace/download.php:83
+#: concrete/tools/marketplace/download.php:89
 msgid ""
 "Upload and unpack the package on your web server. Place the unpacked files "
 "in the packages directory of the root of your concrete5 installation."
 msgstr "Nahrajte a rozbalte balíček na váš webový server. Rozbalené soubory nahrajte do složky balíčků v kořenové složce vaší instalace Concrete5."
 
-#: concrete/tools/marketplace/download.php:84
+#: concrete/tools/marketplace/download.php:90
 #, php-format
 msgid ""
 "Go to the <a href=\"%s\">Add Functionality</a> page in your concrete5 "
 "Dashboard."
 msgstr "Přejděte na stránku <a href=\"%s\">Přidat funkce</a> v Administraci."
 
-#: concrete/tools/marketplace/download.php:85
+#: concrete/tools/marketplace/download.php:91
 msgid "Click the Install button next to the package name."
 msgstr "Klikněte na instalační tlačítko vedle názvu balíčku."
 
@@ -986,22 +988,22 @@ msgstr "Klikněte na instalační tlačítko vedle názvu balíčku."
 #: concrete/elements/collection_theme.php:102
 #: concrete/single_pages/dashboard/pages/themes/view.php:21
 #: concrete/single_pages/dashboard/pages/themes/view.php:52
-#: concrete/tools/marketplace/refresh_theme.php:26
+#: concrete/tools/marketplace/refresh_theme.php:27
 #: concrete/tools/pages/design.php:180
 msgid "Themes"
 msgstr "Motivy"
 
 #: concrete/tools/marketplace/checkout.php:12
-#: concrete/tools/marketplace/frame.php:32
-#: concrete/tools/marketplace/refresh_theme.php:28
+#: concrete/tools/marketplace/frame.php:33
+#: concrete/tools/marketplace/refresh_theme.php:29
 msgid "You do not have permission to connect to the marketplace."
 msgstr "Nemáte oprávnění pro připojení k Tržišti."
 
-#: concrete/tools/marketplace/refresh_theme.php:30
+#: concrete/tools/marketplace/refresh_theme.php:31
 msgid "Unable to connect to the marketplace."
 msgstr "Nelze se připojit k Tržišti."
 
-#: concrete/tools/marketplace/refresh_theme.php:40
+#: concrete/tools/marketplace/refresh_theme.php:41
 msgid "Install theme"
 msgstr "Instalovat motiv"
 
@@ -1018,8 +1020,8 @@ msgstr "Instalovat motiv"
 #: concrete/single_pages/dashboard/system/basics/editor.php:86
 #: concrete/tools/i18n_js.php:98 concrete/tools/marketplace/details.php:108
 #: concrete/tools/marketplace/details.php:109
-#: concrete/tools/marketplace/refresh_theme.php:41
 #: concrete/tools/marketplace/refresh_theme.php:42
+#: concrete/tools/marketplace/refresh_theme.php:43
 #: concrete/tools/pages/design.php:194 concrete/tools/pages/design.php:195
 msgid "Preview"
 msgstr "Náhled"
@@ -1064,23 +1066,23 @@ msgid "Invalid marketplace item."
 msgstr "Neplatná položka Tržiště"
 
 #: concrete/elements/block_area_layout.php:23
-#: concrete/tools/layout_services.php:43
+#: concrete/tools/layout_services.php:59
 msgid "Error: Layout not found"
 msgstr "Chyba: Rozložení nebylo nalezeno."
 
-#: concrete/tools/layout_services.php:151
+#: concrete/tools/layout_services.php:167
 msgid "Error: Invalid column count. Please refresh your page."
 msgstr "Chyba: Neplatný počet sloupců. Obnovte prosím stránku."
 
-#: concrete/tools/layout_services.php:170
+#: concrete/tools/layout_services.php:186
 msgid "Invalid Task."
 msgstr "Neplatná úloha."
 
-#: concrete/tools/layout_services.php:177
+#: concrete/tools/layout_services.php:193
 msgid "Unknown Error"
 msgstr "Neznámá chyba"
 
-#: concrete/tools/layout_services.php:178
+#: concrete/tools/layout_services.php:194
 msgid "Success"
 msgstr "OK"
 
@@ -1420,6 +1422,10 @@ msgstr "Skupiny"
 #: concrete/tools/user_group_selector.php:36
 msgid "Users"
 msgstr "Uživatelé"
+
+#: concrete/tools/spellchecker_service.php:16
+msgid "SuggestPopup"
+msgstr ""
 
 #: concrete/tools/add_block_popup.php:35
 msgid ""
@@ -2753,7 +2759,7 @@ msgstr "Vlastnosti doplňku z concrete5.org."
 
 #: concrete/core/controllers/blocks/dashboard_featured_addon.php:30
 msgid "Dashboard Featured Add-On"
-msgstr "Doporučený doplňek Administrace"
+msgstr "Doporučený doplněk Administrace"
 
 #: concrete/core/controllers/blocks/form_minisurvey.php:186
 msgid "Submit"
@@ -3087,7 +3093,7 @@ msgstr "Zadejte prosím číslo pro přiblížení od 0 do 21."
 
 #: concrete/core/controllers/blocks/google_map.php:64
 msgid "Get Directions"
-msgstr ""
+msgstr "Zobrazit trasu"
 
 #: concrete/core/controllers/blocks/html.php:27
 msgid "For adding HTML by hand."
@@ -3506,7 +3512,7 @@ msgstr "Workflow bylo úspěšně vytvořeno. Nyní můžete změnit jeho vlastn
 msgid "Workflow updated."
 msgstr "Workflow bylo aktualizováno."
 
-#: concrete/core/controllers/single_pages/dashboard/pages/types.php:58
+#: concrete/core/controllers/single_pages/dashboard/pages/types.php:71
 #: concrete/core/controllers/single_pages/dashboard/pages/types/add.php:29
 #: concrete/core/controllers/single_pages/dashboard/users/add_group.php:29
 #: concrete/core/controllers/single_pages/dashboard/users/groups.php:19
@@ -4192,13 +4198,13 @@ msgstr "Nastavení Editoru byla aktualizována."
 msgid "Parent page not selected"
 msgstr "Není vybrána rodičovská stránka"
 
-#: concrete/core/controllers/single_pages/dashboard/pages/types.php:52
+#: concrete/core/controllers/single_pages/dashboard/pages/types.php:63
 #: concrete/core/controllers/single_pages/dashboard/pages/types/add.php:19
 #: concrete/core/libraries/attribute/controller.php:172
 msgid "Handle required."
 msgstr "Handle je povinné."
 
-#: concrete/core/controllers/single_pages/dashboard/pages/types.php:54
+#: concrete/core/controllers/single_pages/dashboard/pages/types.php:66
 #: concrete/core/controllers/single_pages/dashboard/pages/types/add.php:21
 msgid "Handles must contain only letters, numbers or the underscore symbol."
 msgstr "Handle může obsahovat pouze písmena, čísla a znak podtržítko."
@@ -4207,7 +4213,7 @@ msgstr "Handle může obsahovat pouze písmena, čísla a znak podtržítko."
 msgid "Handle already exists."
 msgstr "Handle již existuje."
 
-#: concrete/core/controllers/single_pages/dashboard/pages/types.php:60
+#: concrete/core/controllers/single_pages/dashboard/pages/types.php:74
 #: concrete/core/controllers/single_pages/dashboard/pages/types/add.php:31
 msgid "Invalid characters in page type name."
 msgstr "Název typu stránky obsahuje neplatné znaky."
@@ -4297,21 +4303,21 @@ msgstr "Atribut stránky byl vytvořen."
 msgid "Page Attribute Deleted."
 msgstr "Atribut stránky byl smazán."
 
-#: concrete/core/controllers/single_pages/dashboard/pages/types.php:23
+#: concrete/core/controllers/single_pages/dashboard/pages/types.php:31
 msgid ""
 "You must delete all pages of this type, and remove all page versions that "
 "contain this page type before deleting this page type."
 msgstr "Před smazáním tohoto typu stránky musíte smazat všechny stránky tohoto typu a smazat všechny verze stránek, které tento typ stránky obsahují."
 
-#: concrete/core/controllers/single_pages/dashboard/pages/types.php:29
+#: concrete/core/controllers/single_pages/dashboard/pages/types.php:38
 msgid "Page type added successfully."
 msgstr "Typ stránky byl úspěšně přidán."
 
-#: concrete/core/controllers/single_pages/dashboard/pages/types.php:34
+#: concrete/core/controllers/single_pages/dashboard/pages/types.php:44
 msgid "Page type updated successfully."
 msgstr "Typ stránky byl úspěšně aktualizován."
 
-#: concrete/core/controllers/single_pages/dashboard/pages/types.php:39
+#: concrete/core/controllers/single_pages/dashboard/pages/types.php:50
 msgid "This page type is no longer included in composer."
 msgstr "Tento typ stránky již není v Editoru vložen."
 
@@ -4775,7 +4781,7 @@ msgstr "do"
 #: concrete/core/models/attribute/types/date_time.php:47
 #, php-format
 msgid "%1$s on %2$s"
-msgstr ""
+msgstr "%1$s dne %2$s"
 
 #: concrete/core/models/file_list.php:131
 #, php-format
@@ -5836,7 +5842,7 @@ msgstr "n/j/Y \\a\\t g:i A"
 
 #: concrete/core/helpers/date.php:422
 msgid "Tomorrow"
-msgstr ""
+msgstr "Zítra"
 
 #: concrete/core/helpers/date.php:424
 msgid "Yesterday"
@@ -5852,13 +5858,13 @@ msgstr "Dnes ve %s"
 #: concrete/core/helpers/date.php:452
 #, php-format
 msgid "Tomorrow at %s"
-msgstr ""
+msgstr "Zítra v %s"
 
 #. %s is a time
 #: concrete/core/helpers/date.php:454
 #, php-format
 msgid "Yesterday at %s"
-msgstr ""
+msgstr "Včera v %s"
 
 #. Used when dates are used to start filenames: see
 #. http://www.php.net/manual/en/function.date.php
@@ -6156,7 +6162,7 @@ msgid "Set"
 msgstr "Nastavit"
 
 #: concrete/elements/attribute/type_form_required.php:68
-#: concrete/models/attribute/types/select/form.php:157
+#: concrete/models/attribute/types/select/form.php:186
 msgid "** None"
 msgstr "** Nic"
 
@@ -6211,7 +6217,7 @@ msgstr "Pole bude k dispozici ve vyhledávání uživatelů v Administraci."
 #: concrete/elements/pages/search_form_advanced.php:179
 #: concrete/elements/permission/access/list.php:12
 #: concrete/elements/users/search_form_advanced.php:115
-#: concrete/models/attribute/types/select/form.php:74
+#: concrete/models/attribute/types/select/form.php:92
 #: concrete/models/attribute/types/select/type_form.php:107
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:42
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:274
@@ -6685,7 +6691,7 @@ msgstr "Aktualizace Concrete5"
 
 #: concrete/elements/dashboard/notification_list.php:59
 msgid "Update Addon"
-msgstr "Aktualizovat doplňek"
+msgstr "Aktualizovat doplněk"
 
 #: concrete/blocks/rss_displayer/templates/read_more.php:36
 #: concrete/elements/dashboard/notification_list.php:61
@@ -8210,12 +8216,12 @@ msgstr "Vstupní textové pole"
 msgid "Remove Option"
 msgstr "Odebrat volbu"
 
-#: concrete/models/attribute/types/select/form.php:41
+#: concrete/models/attribute/types/select/form.php:46
 msgid "Selected Options"
 msgstr "Vybrané volby"
 
-#: concrete/models/attribute/types/select/form.php:169
-#: concrete/models/attribute/types/select/form.php:170
+#: concrete/models/attribute/types/select/form.php:200
+#: concrete/models/attribute/types/select/form.php:204
 msgid "Add Another Option"
 msgstr "Přidat další volbu"
 
@@ -8460,11 +8466,11 @@ msgstr "Google Mapa je v režimu úprav nedostupná."
 
 #: concrete/blocks/google_map/form_setup_html.php:12
 msgid "General"
-msgstr ""
+msgstr "Obecné"
 
 #: concrete/blocks/google_map/form_setup_html.php:13
 msgid "Balloon"
-msgstr ""
+msgstr "Bublina"
 
 #: concrete/blocks/google_map/form_setup_html.php:19
 msgid "Map Title"
@@ -8485,15 +8491,15 @@ msgstr "Zadejte číslo od 0 do 21, kde 21 je největší přiblížení."
 
 #: concrete/blocks/google_map/form_setup_html.php:43
 msgid "Show a balloon?"
-msgstr ""
+msgstr "Zobrazit bublinu?"
 
 #: concrete/blocks/google_map/form_setup_html.php:47
 msgid "Balloon content"
-msgstr ""
+msgstr "Obsah bubliny"
 
 #: concrete/blocks/google_map/form_setup_html.php:54
 msgid "Show link to Google Maps?"
-msgstr ""
+msgstr "Zobrazit odkaz na Google Mapy?"
 
 #: concrete/blocks/google_map/scrapbook.php:4
 #, php-format
@@ -8551,7 +8557,7 @@ msgstr "Přiřadit štítek stránce"
 
 #: concrete/blocks/dashboard_featured_addon/view.php:2
 msgid "Featured Add-On"
-msgstr "Doporučený doplňek"
+msgstr "Doporučený doplněk"
 
 #: concrete/blocks/dashboard_featured_addon/view.php:12
 #: concrete/blocks/dashboard_featured_theme/view.php:12
@@ -8790,7 +8796,7 @@ msgstr "znaků"
 #: concrete/blocks/date_nav/form_setup_html.php:120
 #: concrete/blocks/page_list/page_list_form.php:130
 msgid "Truncate Summaries"
-msgstr "Ořízout souhrny"
+msgstr "Oříznout souhrny"
 
 #: concrete/blocks/date_nav/form_setup_html.php:123
 #: concrete/blocks/page_list/page_list_form.php:133
@@ -9482,7 +9488,7 @@ msgstr "Poslední editace"
 msgid ""
 "Total form submissions: <strong>%s</strong> (<strong>%s</strong> today). <a "
 "href=\"%s\">View Form Results</a>."
-msgstr "Celkový počet odeslaných formulářů: <strong>%s</strong> (<strong>%s</strong> today). <a href=\"%s\">Zobrazit výsledky z formulářů</a>."
+msgstr "Celkový počet odeslaných formulářů: <strong>%s</strong> (<strong>%s</strong> dnes). <a href=\"%s\">Zobrazit výsledky z formulářů</a>."
 
 #: concrete/blocks/dashboard_site_activity/view.php:8
 msgid "More Statistics"
@@ -9500,7 +9506,7 @@ msgstr "Zahrnout soubor"
 #: concrete/blocks/external_form/add.php:7
 #: concrete/blocks/external_form/edit.php:8
 msgid "Select a form"
-msgstr "Vybrete formulář"
+msgstr "Vyberte formulář"
 
 #: concrete/blocks/external_form/add.php:17
 #: concrete/blocks/external_form/edit.php:19
@@ -9622,7 +9628,7 @@ msgstr "M jS, Y"
 
 #: concrete/blocks/guestbook/view.php:21
 msgid "Are you sure you would like to remove this comment?"
-msgstr "Opradu chcete odstranit tento komentář?"
+msgstr "Opravdu chcete odstranit tento komentář?"
 
 #: concrete/blocks/guestbook/view.php:23
 msgid "Un-Approve"
@@ -9718,7 +9724,7 @@ msgstr "Moji přátelé"
 #: concrete/single_pages/profile/friends.php:39
 #, php-format
 msgid "Member Since %s"
-msgstr ""
+msgstr "Členem od %s"
 
 #: concrete/single_pages/dashboard/users/add.php:45
 #: concrete/single_pages/dashboard/users/search.php:189
@@ -14644,7 +14650,7 @@ msgstr "Nastavení odesílání a zpracování e-mailů."
 #. Keywords for page /dashboard/system/mail/method/test_settings
 #: concrete/config/install/base/dashboard.xml:649
 msgid "test smtp, test mail"
-msgstr ""
+msgstr "test smtp, test mailu"
 
 #: concrete/config/install/base/dashboard.xml:653
 msgid "Email Importers"
@@ -15789,12 +15795,12 @@ msgstr ""
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:144
 msgctxt "SelectAttributeValue"
 msgid "test"
-msgstr ""
+msgstr "test"
 
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:145
 msgctxt "SelectAttributeValue"
 msgid "super test"
-msgstr ""
+msgstr "super test"
 
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:146
 msgctxt "SelectAttributeValue"
@@ -15804,7 +15810,7 @@ msgstr ""
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:147
 msgctxt "SelectAttributeValue"
 msgid "lorem ipsum"
-msgstr ""
+msgstr "lorem ipsum"
 
 #: concrete/config/install/disabled/blog/install_blocks_attributes_permissions_jobs.xml:148
 msgctxt "SelectAttributeValue"
@@ -16014,7 +16020,7 @@ msgstr ""
 #: concrete/config/install/packages/standard/content.xml:13
 msgctxt "SelectAttributeValue"
 msgid "first post"
-msgstr ""
+msgstr "první příspěvek"
 
 #: concrete/config/install/packages/standard/content.xml:25
 #: concrete/config/install/packages/standard/content.xml:78
