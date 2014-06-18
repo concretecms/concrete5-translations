@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-06-16 04:00+0000\n"
-"PO-Revision-Date: 2014-06-16 12:17+0000\n"
+"POT-Creation-Date: 2014-06-17 10:00+0000\n"
+"PO-Revision-Date: 2014-06-17 13:00+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Italian (Italy) (http://www.transifex.com/projects/p/concrete5/language/it_IT/)\n"
 "MIME-Version: 1.0\n"
@@ -135,7 +135,7 @@ msgstr "Discendente"
 #: concrete/single_pages/dashboard/pages/types/view.php:191
 #: concrete/single_pages/dashboard/scrapbook/view.php:182
 #: concrete/single_pages/dashboard/scrapbook/view.php:295
-#: concrete/single_pages/dashboard/system/attributes/types.php:32
+#: concrete/single_pages/dashboard/system/attributes/types.php:48
 #: concrete/single_pages/dashboard/system/basics/editor.php:125
 #: concrete/single_pages/dashboard/system/basics/interface.php:45
 #: concrete/single_pages/dashboard/system/basics/multilingual/view.php:40
@@ -749,6 +749,8 @@ msgstr "I 20 download più recenti:"
 #: concrete/single_pages/dashboard/reports/logs.php:58
 #: concrete/single_pages/dashboard/reports/statistics.php:107
 #: concrete/single_pages/dashboard/reports/surveys.php:24
+#: concrete/single_pages/dashboard/system/attributes/sets.php:202
+#: concrete/single_pages/dashboard/system/attributes/types.php:22
 #: concrete/tools/files/properties.php:424
 msgid "User"
 msgstr "Utente"
@@ -1354,7 +1356,7 @@ msgstr "Solo gli utenti membri di TUTTI i gruppi selezionati godranno di questa 
 #: concrete/single_pages/dashboard/pages/types/view.php:217
 #: concrete/single_pages/dashboard/reports/surveys.php:72
 #: concrete/single_pages/dashboard/system/attributes/sets.php:34
-#: concrete/single_pages/dashboard/system/attributes/sets.php:151
+#: concrete/single_pages/dashboard/system/attributes/sets.php:168
 #: concrete/single_pages/dashboard/system/attributes/types.php:13
 #: concrete/single_pages/dashboard/system/mail/importers.php:97
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:60
@@ -2785,6 +2787,8 @@ msgstr "Collegamento ai file salvato nella libreria configurazioni."
 #: concrete/core/models/file_version.php:232
 #: concrete/single_pages/dashboard/pages/themes/inspect.php:33
 #: concrete/single_pages/dashboard/reports/statistics.php:106
+#: concrete/single_pages/dashboard/system/attributes/sets.php:205
+#: concrete/single_pages/dashboard/system/attributes/types.php:25
 #: concrete/single_pages/dashboard/system/backup_restore/backup.php:103
 msgid "File"
 msgstr "File"
@@ -4018,6 +4022,14 @@ msgid ""
 "This attribute set is locked. That means it was added by a package and "
 "cannot be manually removed."
 msgstr "Questo set di attributi è bloccato: significa che è stato aggiunto da un pacchetto e che non può essere rimosso manualmente."
+
+#: concrete/core/controllers/single_pages/dashboard/system/attributes/types.php:33
+msgid "Attribute Type Associations saved."
+msgstr "Le associazioni dei tipi di attributo sono state salvate."
+
+#: concrete/core/controllers/single_pages/dashboard/system/attributes/types.php:36
+msgid "Attribute Type added."
+msgstr "Tipo di attributo aggiunto."
 
 #: concrete/core/controllers/single_pages/dashboard/system/registration/postlogin.php:36
 msgid "Login redirection saved."
@@ -6131,7 +6143,7 @@ msgstr "%s: informazioni di base"
 #: concrete/single_pages/dashboard/pages/types/view.php:64
 #: concrete/single_pages/dashboard/pages/types/view.php:218
 #: concrete/single_pages/dashboard/system/attributes/sets.php:23
-#: concrete/single_pages/dashboard/system/attributes/sets.php:144
+#: concrete/single_pages/dashboard/system/attributes/sets.php:161
 msgid "Handle"
 msgstr "Handle"
 
@@ -10012,8 +10024,8 @@ msgid "Are you sure you want to delete this file set?"
 msgstr "Eliminare questo set di file?"
 
 #: concrete/single_pages/dashboard/files/add_set.php:4
-#: concrete/single_pages/dashboard/system/attributes/sets.php:139
-#: concrete/single_pages/dashboard/system/attributes/sets.php:160
+#: concrete/single_pages/dashboard/system/attributes/sets.php:156
+#: concrete/single_pages/dashboard/system/attributes/sets.php:177
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:360
 #: concrete/single_pages/dashboard/users/group_sets.php:128
 #: concrete/single_pages/dashboard/users/group_sets.php:152
@@ -10333,7 +10345,7 @@ msgstr "Non c’è nulla da installare."
 #: concrete/single_pages/dashboard/blocks/types/view.php:66
 #: concrete/single_pages/dashboard/extend/install.php:304
 #: concrete/single_pages/dashboard/pages/themes/view.php:151
-#: concrete/single_pages/dashboard/system/attributes/types.php:52
+#: concrete/single_pages/dashboard/system/attributes/types.php:68
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:182
 msgid "Install"
 msgstr "Installa"
@@ -11693,35 +11705,55 @@ msgstr "Aggiorna attributi"
 msgid "No attributes found."
 msgstr "Nessun attributo trovato."
 
-#: concrete/single_pages/dashboard/system/attributes/sets.php:117
-msgid "Attribute Sets"
-msgstr "Set di attributi"
+#: concrete/single_pages/dashboard/system/attributes/sets.php:121
+msgid "Page Attribute Sets"
+msgstr "Set di attributi per le pagine"
 
-#: concrete/single_pages/dashboard/system/attributes/sets.php:134
+#: concrete/single_pages/dashboard/system/attributes/sets.php:124
+msgid "User Attribute Sets"
+msgstr "Set di attributi per gli utenti"
+
+#: concrete/single_pages/dashboard/system/attributes/sets.php:127
+msgid "File Attribute Sets"
+msgstr "Set di attributi per i file"
+
+#. %s is an attribute category name
+#: concrete/single_pages/dashboard/system/attributes/sets.php:130
+#, php-format
+msgid "%s Attribute Sets"
+msgstr "Set di attributi per: %s"
+
+#: concrete/single_pages/dashboard/system/attributes/sets.php:151
 msgid "No attribute sets currently defined."
 msgstr "Non è stato definito alcun set di attributi."
 
-#: concrete/single_pages/dashboard/system/attributes/sets.php:171
+#: concrete/single_pages/dashboard/system/attributes/sets.php:188
 msgid "Attribute Categories"
 msgstr "Categorie di attributi"
 
-#: concrete/single_pages/dashboard/system/attributes/sets.php:172
+#: concrete/single_pages/dashboard/system/attributes/sets.php:189
 msgid "Attribute Categories are used to group different types of sets."
 msgstr "Le categorie di attributi vengono usate per raggruppare vari tipi di set."
 
-#: concrete/single_pages/dashboard/system/attributes/sets.php:182
+#: concrete/config/install/disabled/blank/content.xml:146
+#: concrete/single_pages/dashboard/system/attributes/sets.php:199
+#: concrete/single_pages/dashboard/system/attributes/types.php:19
+msgid "Page"
+msgstr "Pagina"
+
+#: concrete/single_pages/dashboard/system/attributes/sets.php:215
 msgid "No attribute categories currently defined."
 msgstr "Al momento non sono state definite categorie di attributi."
 
 #: concrete/single_pages/dashboard/system/attributes/types.php:9
 msgid "Attribute Type Associations"
-msgstr "Associazioni tipo attributo"
+msgstr "Associazioni dei tipi di attributo"
 
-#: concrete/single_pages/dashboard/system/attributes/types.php:38
+#: concrete/single_pages/dashboard/system/attributes/types.php:54
 msgid "Custom Attribute Types"
 msgstr "Tipi di attributo personalizzati"
 
-#: concrete/single_pages/dashboard/system/attributes/types.php:43
+#: concrete/single_pages/dashboard/system/attributes/types.php:59
 msgid "There are no available attribute types awaiting installation."
 msgstr "Nessun tipo di attributo disponibile per l’installazione."
 
@@ -15982,10 +16014,6 @@ msgstr "Commenti:"
 #: concrete/config/install/disabled/standard/install_blocks_attributes_permissions_jobs.xml:205
 msgid "View Newsflow Updates in an Overlay"
 msgstr "Vedi notizie sugli aggiornamenti in una finestra di popup."
-
-#: concrete/config/install/disabled/blank/content.xml:146
-msgid "Page"
-msgstr "Pagina"
 
 #: concrete/config/install/packages/standard/content.xml:10
 msgctxt "SelectAttributeValue"
