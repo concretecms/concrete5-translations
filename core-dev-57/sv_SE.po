@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-06-24 10:00+0000\n"
-"PO-Revision-Date: 2014-06-24 15:32+0000\n"
+"POT-Creation-Date: 2014-06-25 04:00+0000\n"
+"PO-Revision-Date: 2014-06-25 10:59+0000\n"
 "Last-Translator: Fredrik Lindau <fredrik@fxlindau.se>\n"
 "Language-Team: Swedish (Sweden) (http://www.transifex.com/projects/p/concrete5/language/sv_SE/)\n"
 "MIME-Version: 1.0\n"
@@ -31,7 +31,7 @@ msgstr "Ogiltig stack."
 msgid "Access to block denied"
 msgstr "Åtkomst till blocket gavs ej"
 
-#: concrete/bootstrap/process.php:672
+#: concrete/bootstrap/process.php:673
 msgid "Invalid block."
 msgstr "Ogiltigt block"
 
@@ -1533,7 +1533,7 @@ msgstr "Författare"
 #: concrete/core/File/Version.php:253
 #: concrete/core/Page/Type/Composer/Control/CorePageProperty/DescriptionCorePageProperty.php:10
 #: concrete/elements/collection_add.php:46
-#: concrete/single_pages/dashboard/blocks/types/view.php:14
+#: concrete/single_pages/dashboard/blocks/types/view.php:8
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:172
 #: concrete/single_pages/dashboard/users/add_group.php:33
 #: concrete/single_pages/dashboard/users/groups.php:40
@@ -1748,8 +1748,7 @@ msgstr "Godkänn"
 msgid "Copy Version"
 msgstr "Kopiera version"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:39
-#: concrete/single_pages/dashboard/blocks/types/view.php:50
+#: concrete/single_pages/dashboard/blocks/types/view.php:31
 #: concrete/single_pages/dashboard/pages/themes/view.php:92
 #: concrete/single_pages/dashboard/system/basics/icons.php:27
 #: concrete/single_pages/dashboard/system/basics/icons.php:91
@@ -3305,32 +3304,31 @@ msgstr "Stacken duplicerad"
 msgid "Stack order updated successfully."
 msgstr "Stack-ordningen uppdaterad."
 
-#: concrete/controllers/single_page/dashboard/blocks/types.php:46
+#: concrete/controllers/single_page/dashboard/blocks/types.php:42
 msgid "Display Order Reset."
 msgstr "Nollställ visningsordning"
 
-#: concrete/controllers/single_page/dashboard/blocks/types.php:59
+#: concrete/controllers/single_page/dashboard/blocks/types.php:55
 msgid "Block Type Refreshed. Any database schema changes have been applied."
 msgstr "Blocktyp uppdaterad. Eventuella förändringar av databasschemat har tillämpats."
 
-#: concrete/controllers/single_page/dashboard/blocks/types.php:77
-msgid "Block Type Installed."
-msgstr "Blocktyp installerad."
-
-#: concrete/controllers/single_page/dashboard/blocks/types.php:84
+#: concrete/controllers/single_page/dashboard/blocks/types.php:74
 msgid "You do not have permission to install custom block types or add-ons."
 msgstr "Du saknar behörighet att lägga till anpassade blocktyper eller tillägg."
 
-#: concrete/controllers/single_page/dashboard/blocks/types.php:99
-#: concrete/single_pages/dashboard/blocks/types/view.php:50
+#: concrete/controllers/single_page/dashboard/blocks/types.php:82
+msgid "Block type installed successfully."
+msgstr "Block-typ installerad."
+
+#: concrete/controllers/single_page/dashboard/blocks/types.php:95
 msgid "Only the super user may remove block types."
 msgstr "Endast superanvändaren får ta bort blocktyper."
 
-#: concrete/controllers/single_page/dashboard/blocks/types.php:107
+#: concrete/controllers/single_page/dashboard/blocks/types.php:103
 msgid "This block type is internal. It cannot be uninstalled."
 msgstr "Denna blocktyp är inbyggd. Den kan inte avinstalleras."
 
-#: concrete/controllers/single_page/dashboard/blocks/types.php:135
+#: concrete/controllers/single_page/dashboard/blocks/types.php:131
 msgid "The block type has been removed."
 msgstr "Denna blocktyp har tagits bort."
 
@@ -4331,23 +4329,23 @@ msgstr "Du måste ange minst en mall för att kunna skapa."
 msgid "Files in the theme were activated successfully."
 msgstr "Filerna i temat aktiverades."
 
-#: concrete/controllers/single_page/dashboard/pages/single.php:12
+#: concrete/controllers/single_page/dashboard/pages/single.php:14
 msgid "Page Successfully Added."
 msgstr "Sidan tillagd."
 
-#: concrete/controllers/single_page/dashboard/pages/single.php:17
-msgid "Page Successfully Refreshed."
-msgstr "Sidan uppdaterades framgångsrikt"
-
-#: concrete/controllers/single_page/dashboard/pages/single.php:35
+#: concrete/controllers/single_page/dashboard/pages/single.php:32
 msgid "That page has already been added."
 msgstr "Den sidan har redan lagt till."
 
-#: concrete/controllers/single_page/dashboard/pages/single.php:39
+#: concrete/controllers/single_page/dashboard/pages/single.php:35
 msgid "That specified path doesn't appear to be a valid static page."
 msgstr "Den angivna sökvägen verkar inte vara en giltig statisk sida."
 
-#: concrete/controllers/single_page/dashboard/pages/single.php:55
+#: concrete/controllers/single_page/dashboard/pages/single.php:43
+msgid "Page Successfully Refreshed."
+msgstr "Sidan uppdaterades framgångsrikt"
+
+#: concrete/controllers/single_page/dashboard/pages/single.php:57
 msgid "You do not have permissions to refresh this page."
 msgstr "Du saknar behörighet att uppdatera sidan."
 
@@ -5402,7 +5400,7 @@ msgstr "Denna sidomall är inte en giltig mall för denna typ av sida."
 msgid "New Version %s"
 msgstr "Ny version %s"
 
-#: concrete/core/Page/Collection/Collection.php:61
+#: concrete/core/Page/Collection/Collection.php:262
 #, php-format
 msgid "Version %d"
 msgstr "Version %d"
@@ -7542,17 +7540,17 @@ msgstr "Sidan inväntar godkännande."
 msgid "This page is newer than what appears to visitors on your live site."
 msgstr "Denna sida är nyare än den som visas för besökare på din publicerade webbplats."
 
-#: concrete/elements/scrapbook_lists.php:12
+#: concrete/elements/scrapbook_lists.php:14
 msgid "You have no items in your Clipboard."
 msgstr "Du har inga objekt på ditt klippbord."
 
 #: concrete/elements/block_area_add_stack_contents.php:48
-#: concrete/elements/scrapbook_lists.php:33
-#: concrete/elements/scrapbook_lists.php:49
+#: concrete/elements/scrapbook_lists.php:35
+#: concrete/elements/scrapbook_lists.php:51
 msgid "This block is no longer available."
 msgstr "Blocket finns inte längre."
 
-#: concrete/elements/scrapbook_lists.php:46
+#: concrete/elements/scrapbook_lists.php:48
 msgid "Remove from Clipboard"
 msgstr "Ta bort från urklipp"
 
@@ -10802,7 +10800,7 @@ msgstr "Proxyblock för block som kopierats in från din scrapbook."
 msgid "Scrapbook Display"
 msgstr "Scrapbook-visning"
 
-#: concrete/blocks/core_scrapbook_display/edit.php:12
+#: concrete/blocks/core_scrapbook_display/edit.php:15
 msgid ""
 "This block was copied from another location. Editing it will create a new "
 "instance of it."
@@ -12300,7 +12298,7 @@ msgstr "v.%s"
 msgid "No packages have been installed."
 msgstr "Inga paket har installerats."
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:59
+#: concrete/single_pages/dashboard/blocks/types/view.php:49
 #: concrete/single_pages/dashboard/extend/install.php:275
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:167
 msgid "Awaiting Installation"
@@ -12310,7 +12308,7 @@ msgstr "Inväntar installationen"
 msgid "Nothing currently available to install."
 msgstr "Ingenting är tillgängligt för installation just nu."
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:66
+#: concrete/single_pages/dashboard/blocks/types/view.php:57
 #: concrete/single_pages/dashboard/extend/install.php:304
 #: concrete/single_pages/dashboard/pages/themes/view.php:152
 #: concrete/single_pages/dashboard/system/attributes/types.php:54
@@ -12324,79 +12322,56 @@ msgid ""
 "easily extend a site with themes and add-ons."
 msgstr "Din webbplats är inte ansluten till concrete5:s community. Ansluter du dig kan du enkelt utöka din webbplats med teman och tillägg."
 
-#: concrete/config/install/base/dashboard.xml:399
-#: concrete/single_pages/dashboard/blocks/types/view.php:7
-msgid "Block Types"
-msgstr "Blocktyper"
-
-#: concrete/single_pages/dashboard/blocks/types/view.php:7
-msgid ""
-"Add custom block types, refresh the database tables of installed blocks, and"
-" uninstall blocks types from here."
-msgstr "Lägg till anpassade block, uppdatera databastabellerna för installerade block och avinstallera block här."
-
-#: concrete/single_pages/dashboard/blocks/types/view.php:17
+#: concrete/single_pages/dashboard/blocks/types/view.php:11
 msgid "Usage Count"
 msgstr "Användningsräknare"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:20
+#: concrete/single_pages/dashboard/blocks/types/view.php:14
 msgid "Usage Count on Active Pages"
 msgstr "Aktivitetsräknare på aktiva sidor"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:24
+#: concrete/single_pages/dashboard/blocks/types/view.php:18
 msgid "Internal"
 msgstr "Inbyggd"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:25
+#: concrete/single_pages/dashboard/blocks/types/view.php:19
 msgid "This is an internal block type."
 msgstr "Detta är en inbyggd blocktyp."
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:30
+#: concrete/single_pages/dashboard/blocks/types/view.php:24
 msgid "Back to Block Types"
 msgstr "Tillbaka till blocktyper"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:32
+#: concrete/single_pages/dashboard/blocks/types/view.php:30
+#: concrete/single_pages/dashboard/blocks/types/view.php:43
 #: concrete/single_pages/dashboard/pages/single.php:60
 msgid "Refresh"
 msgstr "Uppdatera"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:37
+#: concrete/single_pages/dashboard/blocks/types/view.php:36
 #, php-format
 msgid ""
 "This will remove all instances of the %s block type. This cannot be undone. "
 "Are you sure?"
 msgstr "Detta kommer att ta bort alla förekomster av blocktypen %s. Detta kan inte ångras. Är du säker?"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:71
+#: concrete/single_pages/dashboard/blocks/types/view.php:64
 msgid "No custom block types are awaiting installation."
 msgstr "Inga anpassade block väntar på att installeras."
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:76
-msgid "More Blocks"
-msgstr "Fler block"
-
-#: concrete/single_pages/dashboard/blocks/types/view.php:77
-msgid "Browse our marketplace of add-ons to extend your site!"
-msgstr "Bläddra igenom vår marknadsplats efter tillägg för att bygga ut din webbplats!"
-
-#: concrete/single_pages/dashboard/blocks/types/view.php:78
+#: concrete/single_pages/dashboard/blocks/types/view.php:69
 msgid "More Add-ons"
 msgstr "Fler tillägg"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:82
+#: concrete/single_pages/dashboard/blocks/types/view.php:70
+msgid "Browse our marketplace of add-ons to extend your site!"
+msgstr "Bläddra igenom vår marknadsplats efter tillägg för att bygga ut din webbplats!"
+
+#: concrete/single_pages/dashboard/blocks/types/view.php:76
 msgid "Installed Block Types"
 msgstr "Installerade blocktyper"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:112
-msgid ""
-"Are you sure you wish to reset the display order of installed block types?"
-msgstr "Är du säker på att du vill återställa visningsordningen av installerade blocktyper?"
-
-#: concrete/single_pages/dashboard/blocks/types/view.php:114
-msgid "Reset Order"
-msgstr "Nollställ ordning"
-
-#: concrete/single_pages/dashboard/blocks/types/view.php:120
+#: concrete/single_pages/dashboard/blocks/types/view.php:88
 msgid "Internal Block Types"
 msgstr "Interna blocktyper"
 
@@ -15221,6 +15196,10 @@ msgstr "Stacklista"
 #: concrete/config/install/base/dashboard.xml:395
 msgid "edit stacks, view stacks, all stacks"
 msgstr "redigera stackar, visa stackar, alla stackar"
+
+#: concrete/config/install/base/dashboard.xml:399
+msgid "Block Types"
+msgstr "Blocktyper"
 
 #: concrete/config/install/base/dashboard.xml:399
 msgid "Manage the installed block types in your site."

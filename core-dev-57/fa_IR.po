@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-06-24 10:00+0000\n"
-"PO-Revision-Date: 2014-06-24 10:34+0000\n"
+"POT-Creation-Date: 2014-06-25 04:00+0000\n"
+"PO-Revision-Date: 2014-06-25 09:50+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Persian (Iran) (http://www.transifex.com/projects/p/concrete5/language/fa_IR/)\n"
 "MIME-Version: 1.0\n"
@@ -28,7 +28,7 @@ msgstr "نامعتبر پشته ."
 msgid "Access to block denied"
 msgstr "دسترسی به مسدود را تکذیب کرد"
 
-#: concrete/bootstrap/process.php:672
+#: concrete/bootstrap/process.php:673
 msgid "Invalid block."
 msgstr "نامعتبر بلوک ."
 
@@ -1524,7 +1524,7 @@ msgstr "نویسنده"
 #: concrete/core/File/Version.php:253
 #: concrete/core/Page/Type/Composer/Control/CorePageProperty/DescriptionCorePageProperty.php:10
 #: concrete/elements/collection_add.php:46
-#: concrete/single_pages/dashboard/blocks/types/view.php:14
+#: concrete/single_pages/dashboard/blocks/types/view.php:8
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:172
 #: concrete/single_pages/dashboard/users/add_group.php:33
 #: concrete/single_pages/dashboard/users/groups.php:40
@@ -1739,8 +1739,7 @@ msgstr "تأیید"
 msgid "Copy Version"
 msgstr "نسخه کپی"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:39
-#: concrete/single_pages/dashboard/blocks/types/view.php:50
+#: concrete/single_pages/dashboard/blocks/types/view.php:31
 #: concrete/single_pages/dashboard/pages/themes/view.php:92
 #: concrete/single_pages/dashboard/system/basics/icons.php:27
 #: concrete/single_pages/dashboard/system/basics/icons.php:91
@@ -3295,32 +3294,31 @@ msgstr ""
 msgid "Stack order updated successfully."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/blocks/types.php:46
+#: concrete/controllers/single_page/dashboard/blocks/types.php:42
 msgid "Display Order Reset."
 msgstr "نمایش ترتیب تنظیم مجدد ."
 
-#: concrete/controllers/single_page/dashboard/blocks/types.php:59
+#: concrete/controllers/single_page/dashboard/blocks/types.php:55
 msgid "Block Type Refreshed. Any database schema changes have been applied."
 msgstr "نوع بلوک بازسازی شد. هرگونه تغییر شمای پایگاه داده اعمال شد."
 
-#: concrete/controllers/single_page/dashboard/blocks/types.php:77
-msgid "Block Type Installed."
-msgstr "نوع بلوک نصب شد."
-
-#: concrete/controllers/single_page/dashboard/blocks/types.php:84
+#: concrete/controllers/single_page/dashboard/blocks/types.php:74
 msgid "You do not have permission to install custom block types or add-ons."
 msgstr "شما اجازه نصب بلوکها و افزونها را ندارید"
 
-#: concrete/controllers/single_page/dashboard/blocks/types.php:99
-#: concrete/single_pages/dashboard/blocks/types/view.php:50
+#: concrete/controllers/single_page/dashboard/blocks/types.php:82
+msgid "Block type installed successfully."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/blocks/types.php:95
 msgid "Only the super user may remove block types."
 msgstr "تنها مدیریت اجازه حذف بلوک ها را دارد"
 
-#: concrete/controllers/single_page/dashboard/blocks/types.php:107
+#: concrete/controllers/single_page/dashboard/blocks/types.php:103
 msgid "This block type is internal. It cannot be uninstalled."
 msgstr "این بلوک از نوع داخلی است. این را نمی توان حذف کرد."
 
-#: concrete/controllers/single_page/dashboard/blocks/types.php:135
+#: concrete/controllers/single_page/dashboard/blocks/types.php:131
 msgid "The block type has been removed."
 msgstr "نوع بلوک حذف شد."
 
@@ -4321,23 +4319,23 @@ msgstr ""
 msgid "Files in the theme were activated successfully."
 msgstr "فایل های موجود در پوسته با موفقیت فعال شدند."
 
-#: concrete/controllers/single_page/dashboard/pages/single.php:12
+#: concrete/controllers/single_page/dashboard/pages/single.php:14
 msgid "Page Successfully Added."
 msgstr "صفحه با موفقیت اضافه شده است."
 
-#: concrete/controllers/single_page/dashboard/pages/single.php:17
-msgid "Page Successfully Refreshed."
-msgstr "صفحه با موفقیت بارگزاری مجدد شد"
-
-#: concrete/controllers/single_page/dashboard/pages/single.php:35
+#: concrete/controllers/single_page/dashboard/pages/single.php:32
 msgid "That page has already been added."
 msgstr "این صفحه قبلا ساخته شده است"
 
-#: concrete/controllers/single_page/dashboard/pages/single.php:39
+#: concrete/controllers/single_page/dashboard/pages/single.php:35
 msgid "That specified path doesn't appear to be a valid static page."
 msgstr "مسیر مشخص شده صفحه استاتیک معتبری نیست."
 
-#: concrete/controllers/single_page/dashboard/pages/single.php:55
+#: concrete/controllers/single_page/dashboard/pages/single.php:43
+msgid "Page Successfully Refreshed."
+msgstr "صفحه با موفقیت بارگزاری مجدد شد"
+
+#: concrete/controllers/single_page/dashboard/pages/single.php:57
 msgid "You do not have permissions to refresh this page."
 msgstr "شما اجازه بارگزاری مجدد این صفحه را ندارید"
 
@@ -5390,7 +5388,7 @@ msgstr ""
 msgid "New Version %s"
 msgstr "نسخه جدید %s"
 
-#: concrete/core/Page/Collection/Collection.php:61
+#: concrete/core/Page/Collection/Collection.php:262
 #, php-format
 msgid "Version %d"
 msgstr "نسخه %d"
@@ -7517,17 +7515,17 @@ msgstr ""
 msgid "This page is newer than what appears to visitors on your live site."
 msgstr ""
 
-#: concrete/elements/scrapbook_lists.php:12
+#: concrete/elements/scrapbook_lists.php:14
 msgid "You have no items in your Clipboard."
 msgstr "شما هیچ کالایی در Clipboard شما."
 
 #: concrete/elements/block_area_add_stack_contents.php:48
-#: concrete/elements/scrapbook_lists.php:33
-#: concrete/elements/scrapbook_lists.php:49
+#: concrete/elements/scrapbook_lists.php:35
+#: concrete/elements/scrapbook_lists.php:51
 msgid "This block is no longer available."
 msgstr "این بلوک دیگر در دسترس نیست."
 
-#: concrete/elements/scrapbook_lists.php:46
+#: concrete/elements/scrapbook_lists.php:48
 msgid "Remove from Clipboard"
 msgstr "حذف از کلیپ بورد"
 
@@ -10775,7 +10773,7 @@ msgstr "بلوک پروکسی از بلوک سبانده شده به بلوک د
 msgid "Scrapbook Display"
 msgstr ""
 
-#: concrete/blocks/core_scrapbook_display/edit.php:12
+#: concrete/blocks/core_scrapbook_display/edit.php:15
 msgid ""
 "This block was copied from another location. Editing it will create a new "
 "instance of it."
@@ -12271,7 +12269,7 @@ msgstr ""
 msgid "No packages have been installed."
 msgstr "هیچ بسته ای نصب نشده است."
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:59
+#: concrete/single_pages/dashboard/blocks/types/view.php:49
 #: concrete/single_pages/dashboard/extend/install.php:275
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:167
 msgid "Awaiting Installation"
@@ -12281,7 +12279,7 @@ msgstr "در انتظار نصب"
 msgid "Nothing currently available to install."
 msgstr "هیچ چیز در حال حاضر در دسترس برای نصب."
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:66
+#: concrete/single_pages/dashboard/blocks/types/view.php:57
 #: concrete/single_pages/dashboard/extend/install.php:304
 #: concrete/single_pages/dashboard/pages/themes/view.php:152
 #: concrete/single_pages/dashboard/system/attributes/types.php:54
@@ -12295,79 +12293,56 @@ msgid ""
 "easily extend a site with themes and add-ons."
 msgstr "سایت شما به جامعه کانکریت5 متصل نمی شوند. این اتصال به شما اجازه می دهد تا شما به راحتی گسترش یک تارنما با پوسته ها و افزونه ها."
 
-#: concrete/config/install/base/dashboard.xml:399
-#: concrete/single_pages/dashboard/blocks/types/view.php:7
-msgid "Block Types"
-msgstr "نوع بلوک ها"
-
-#: concrete/single_pages/dashboard/blocks/types/view.php:7
-msgid ""
-"Add custom block types, refresh the database tables of installed blocks, and"
-" uninstall blocks types from here."
-msgstr "اضافه کردن انواع بلوک های سفارشی، تازه کردن جداول پایگاه داده از بلوک های نصب شده و حذف انواع بلوک از اینجا."
-
-#: concrete/single_pages/dashboard/blocks/types/view.php:17
+#: concrete/single_pages/dashboard/blocks/types/view.php:11
 msgid "Usage Count"
 msgstr "شمار دفعات استفاده در تارنما"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:20
+#: concrete/single_pages/dashboard/blocks/types/view.php:14
 msgid "Usage Count on Active Pages"
 msgstr "میزان استفاده از صفحات فعال"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:24
+#: concrete/single_pages/dashboard/blocks/types/view.php:18
 msgid "Internal"
 msgstr "مربوط به هسته"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:25
+#: concrete/single_pages/dashboard/blocks/types/view.php:19
 msgid "This is an internal block type."
 msgstr "این نوع بلوک مربوط به هسته است."
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:30
+#: concrete/single_pages/dashboard/blocks/types/view.php:24
 msgid "Back to Block Types"
 msgstr "بازگشت به بلوک انواع"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:32
+#: concrete/single_pages/dashboard/blocks/types/view.php:30
+#: concrete/single_pages/dashboard/blocks/types/view.php:43
 #: concrete/single_pages/dashboard/pages/single.php:60
 msgid "Refresh"
 msgstr "بازنشانی"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:37
+#: concrete/single_pages/dashboard/blocks/types/view.php:36
 #, php-format
 msgid ""
 "This will remove all instances of the %s block type. This cannot be undone. "
 "Are you sure?"
 msgstr "این همه نمونه هایی از حذف %s نوع بلوک است. این را نمی توان باز گرداند. آیا شما مطمئن هستید؟"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:71
+#: concrete/single_pages/dashboard/blocks/types/view.php:64
 msgid "No custom block types are awaiting installation."
 msgstr "انواع بلوک سفارشی نمی منتظر نصب."
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:76
-msgid "More Blocks"
-msgstr "چند بلوک"
-
-#: concrete/single_pages/dashboard/blocks/types/view.php:77
-msgid "Browse our marketplace of add-ons to extend your site!"
-msgstr "مرور بازار ما از افزونه به گسترش خود را در سایت !"
-
-#: concrete/single_pages/dashboard/blocks/types/view.php:78
+#: concrete/single_pages/dashboard/blocks/types/view.php:69
 msgid "More Add-ons"
 msgstr "افزودن افزونه های بیشتر"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:82
+#: concrete/single_pages/dashboard/blocks/types/view.php:70
+msgid "Browse our marketplace of add-ons to extend your site!"
+msgstr "مرور بازار ما از افزونه به گسترش خود را در سایت !"
+
+#: concrete/single_pages/dashboard/blocks/types/view.php:76
 msgid "Installed Block Types"
 msgstr "نوع بلوک های نصب شده"
 
-#: concrete/single_pages/dashboard/blocks/types/view.php:112
-msgid ""
-"Are you sure you wish to reset the display order of installed block types?"
-msgstr "آیا شما مطمئن هستید که میخواهید به منظور تنظیم مجدد صفحه نمایش از انواع بلوک نصب شده؟"
-
-#: concrete/single_pages/dashboard/blocks/types/view.php:114
-msgid "Reset Order"
-msgstr "تنظیم مجدد سفارش"
-
-#: concrete/single_pages/dashboard/blocks/types/view.php:120
+#: concrete/single_pages/dashboard/blocks/types/view.php:88
 msgid "Internal Block Types"
 msgstr "انواع بلوک داخلی"
 
@@ -15191,6 +15166,10 @@ msgstr "فهرست دسته ها"
 #: concrete/config/install/base/dashboard.xml:395
 msgid "edit stacks, view stacks, all stacks"
 msgstr "ویرایش دسته، دسته، همه دسته ها"
+
+#: concrete/config/install/base/dashboard.xml:399
+msgid "Block Types"
+msgstr "نوع بلوک ها"
 
 #: concrete/config/install/base/dashboard.xml:399
 msgid "Manage the installed block types in your site."
