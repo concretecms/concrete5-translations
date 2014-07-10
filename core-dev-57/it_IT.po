@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-07-08 04:00+0000\n"
-"PO-Revision-Date: 2014-07-08 10:01+0000\n"
+"POT-Creation-Date: 2014-07-09 04:00+0000\n"
+"PO-Revision-Date: 2014-07-09 10:41+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Italian (Italy) (http://www.transifex.com/projects/p/concrete5/language/it_IT/)\n"
 "MIME-Version: 1.0\n"
@@ -455,7 +455,7 @@ msgstr "Discendente"
 #: concrete/single_pages/dashboard/system/optimization/cache.php:114
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:153
 #: concrete/single_pages/dashboard/system/permissions/blacklist.php:67
-#: concrete/single_pages/dashboard/system/permissions/files.php:24
+#: concrete/single_pages/dashboard/system/permissions/files.php:23
 #: concrete/single_pages/dashboard/system/permissions/filetypes.php:20
 #: concrete/single_pages/dashboard/system/permissions/maintenance.php:17
 #: concrete/single_pages/dashboard/system/permissions/site.php:54
@@ -497,7 +497,6 @@ msgstr "Salva"
 #: concrete/controllers/dialog/file/properties.php:108
 #: concrete/controllers/single_page/dashboard/users/search.php:42
 #: concrete/controllers/single_page/dashboard/users/search.php:59
-#: concrete/elements/files/edit/image.php:15
 #: concrete/tools/dashboard/attribute_set_order_update.php:13
 #: concrete/tools/dashboard/attribute_sets_update.php:15
 #: concrete/tools/dashboard/block_type_order_update.php:11
@@ -519,7 +518,7 @@ msgstr "Salva"
 #: concrete/tools/users/bulk_delete.php:14
 #: concrete/tools/users/bulk_group_add.php:22
 #: concrete/tools/users/bulk_group_remove.php:22
-#: concrete/tools/versions.php:20
+#: concrete/tools/versions.php:20 concrete/views/image-editor/editor.php:17
 msgid "Access Denied."
 msgstr "Accesso negato."
 
@@ -605,6 +604,7 @@ msgstr "Nome file"
 #: concrete/elements/custom_style/fonts.php:23
 #: concrete/elements/files/search.php:6 concrete/tools/files/import.php:74
 #: concrete/tools/i18n_js.php:96 concrete/views/dialogs/file/properties.php:70
+#: concrete/views/image-editor/filters/vignette.php:14
 msgid "Size"
 msgstr "Dimensione"
 
@@ -668,7 +668,7 @@ msgstr "Rimuovi i file dalla cartella incoming/."
 #: concrete/single_pages/dashboard/pages/types/view.php:91
 #: concrete/single_pages/dashboard/system/attributes/topics/add.php:21
 #: concrete/single_pages/dashboard/system/attributes/topics/view.php:65
-#: concrete/single_pages/dashboard/system/permissions/files.php:23
+#: concrete/single_pages/dashboard/system/permissions/files.php:22
 #: concrete/single_pages/dashboard/system/registration/authentication.php:89
 #: concrete/single_pages/dashboard/users/add.php:112
 #: concrete/single_pages/dashboard/users/add_group.php:216
@@ -713,6 +713,7 @@ msgstr "Rimuovi i file dalla cartella incoming/."
 #: concrete/views/dialogs/page/design.php:30
 #: concrete/views/dialogs/page/design/css.php:11
 #: concrete/views/dialogs/search/customize.php:74
+#: concrete/views/image-editor/control-sets/position.php:94
 #: concrete/views/panels/details/page/caching.php:117
 #: concrete/views/panels/details/page/location.php:53
 #: concrete/views/panels/details/page/permissions/advanced.php:62
@@ -751,9 +752,9 @@ msgstr "La password del file è stata salvata."
 msgid "File storage location saved successfully."
 msgstr "La posizione di archiviazione dei file è stata salvata."
 
-#: concrete/core/Package/Package.php:326
+#: concrete/core/Package/Package.php:321
 #: concrete/elements/block_area_footer.php:71
-#: concrete/elements/block_header_view.php:176
+#: concrete/elements/block_header_view.php:178
 #: concrete/elements/page_controls_footer.php:58
 #: concrete/elements/page_types/composer/form/output/buttons.php:27
 #: concrete/elements/panels/page.php:104
@@ -906,7 +907,7 @@ msgid "(Note: files within the set will not be removed.)"
 msgstr "(Nota: i file appartenenti al set non saranno rimossi.)"
 
 #: concrete/attributes/select/type_form.php:19
-#: concrete/elements/block_header_view.php:156
+#: concrete/elements/block_header_view.php:158
 #: concrete/elements/collection_attribute_values.php:18
 #: concrete/elements/collection_delete.php:49
 #: concrete/elements/conversation/message.php:33
@@ -1211,9 +1212,7 @@ msgstr "Mappa del sito"
 msgid "Flat View"
 msgstr "Vista piana"
 
-#: concrete/blocks/search/controller.php:93
-#: concrete/blocks/search/controller.php:103
-#: concrete/config/install/packages/standard/content.xml:412
+#: concrete/blocks/search/controller.php:81
 #: concrete/elements/block_area_add_stack.php:17
 #: concrete/elements/files/search.php:45 concrete/elements/group/search.php:26
 #: concrete/elements/marketplace/search_form.php:24
@@ -1531,7 +1530,7 @@ msgstr "Data di creazione"
 msgid "Author"
 msgstr "Autore"
 
-#: concrete/core/File/Version.php:481
+#: concrete/core/File/Version.php:485
 #: concrete/core/Page/Type/Composer/Control/CorePageProperty/DescriptionCorePageProperty.php:10
 #: concrete/elements/collection_add.php:46
 #: concrete/single_pages/dashboard/blocks/types/view.php:8
@@ -1900,7 +1899,7 @@ msgid "Custom Label"
 msgstr "Etichetta personalizzata"
 
 #: concrete/elements/block_custom_template.php:24
-#: concrete/elements/block_header_view.php:169 concrete/tools/i18n_js.php:48
+#: concrete/elements/block_header_view.php:171 concrete/tools/i18n_js.php:48
 #: concrete/tools/page_types/composer/form/edit_control.php:46
 msgid "Custom Template"
 msgstr "Modello personalizzato"
@@ -1966,7 +1965,7 @@ msgstr "La pila è stata aggiunta correttamente"
 msgid "Paste from Clipboard"
 msgstr "Incolla dagli appunti"
 
-#: concrete/elements/block_header_view.php:165
+#: concrete/elements/block_header_view.php:167
 #: concrete/elements/page_controls_footer.php:61
 #: concrete/elements/pages/search.php:44 concrete/elements/panels/page.php:36
 #: concrete/tools/i18n_js.php:20 concrete/tools/i18n_js.php:49
@@ -1974,7 +1973,7 @@ msgstr "Incolla dagli appunti"
 msgid "Design"
 msgstr "Design"
 
-#: concrete/elements/block_header_view.php:140 concrete/tools/i18n_js.php:21
+#: concrete/elements/block_header_view.php:142 concrete/tools/i18n_js.php:21
 msgid "Edit Layout"
 msgstr "Modifica layout"
 
@@ -2069,7 +2068,7 @@ msgid ""
 "is active."
 msgstr "Impostazione autorizzazioni salvata. È necessario completare il flusso di lavoro per attivare questa modifica."
 
-#: concrete/elements/block_header_view.php:131 concrete/tools/i18n_js.php:42
+#: concrete/elements/block_header_view.php:133 concrete/tools/i18n_js.php:42
 msgid "Manage Stack Contents"
 msgstr "Gescisci contenuto pila"
 
@@ -2083,7 +2082,7 @@ msgstr "Confronta versioni"
 msgid "Blocks arranged successfully."
 msgstr "Blocchi riordinati correttamente."
 
-#: concrete/elements/block_header_view.php:151 concrete/tools/i18n_js.php:47
+#: concrete/elements/block_header_view.php:153 concrete/tools/i18n_js.php:47
 msgid "Copy to Clipboard"
 msgstr "Copia negli appunti"
 
@@ -2103,7 +2102,7 @@ msgstr "Rimuovere tutti questi stili personalizzati?"
 msgid "Are you sure you want to delete this custom style preset?"
 msgstr "Eliminare tutte queste combinazioni personalizzate di stile?"
 
-#: concrete/elements/block_header_view.php:182 concrete/tools/i18n_js.php:55
+#: concrete/elements/block_header_view.php:184 concrete/tools/i18n_js.php:55
 msgid "Setup on Child Pages"
 msgstr "Imposta nelle sottopagine"
 
@@ -2224,7 +2223,7 @@ msgstr "Impostazioni utente salvate."
 msgid "Ok"
 msgstr "Ok"
 
-#: concrete/elements/block_header_view.php:179 concrete/tools/i18n_js.php:81
+#: concrete/elements/block_header_view.php:181 concrete/tools/i18n_js.php:81
 msgid "Schedule Guest Access"
 msgstr "Pianifica accesso ospite"
 
@@ -3254,7 +3253,7 @@ msgstr "Non si possiede l’autorizzazione di scaricare estensioni."
 
 #: concrete/controllers/single_page/dashboard/blocks/permissions.php:36
 #: concrete/controllers/single_page/dashboard/pages/types/permissions.php:18
-#: concrete/controllers/single_page/dashboard/system/permissions/files.php:39
+#: concrete/controllers/single_page/dashboard/system/permissions/files.php:40
 #: concrete/controllers/single_page/dashboard/system/permissions/tasks.php:42
 #: concrete/controllers/single_page/dashboard/system/permissions/users.php:40
 msgid "Permissions updated successfully."
@@ -5026,7 +5025,7 @@ msgstr "Applicazione"
 
 #: concrete/blocks/file/add.php:6 concrete/blocks/file/controller.php:25
 #: concrete/blocks/file/edit.php:10 concrete/core/File/Type/Type.php:85
-#: concrete/core/File/Version.php:475
+#: concrete/core/File/Version.php:479
 #: concrete/single_pages/dashboard/pages/themes/inspect.php:34
 #: concrete/single_pages/dashboard/reports/statistics.php:105
 #: concrete/single_pages/dashboard/system/backup/backup.php:103
@@ -5078,7 +5077,7 @@ msgstr "Tipo"
 #: concrete/blocks/tags/tag_form.php:10
 #: concrete/blocks/youtube/form_setup_html.php:20
 #: concrete/core/File/Search/ColumnSet/DefaultSet.php:21
-#: concrete/core/File/Version.php:478
+#: concrete/core/File/Version.php:482
 #: concrete/views/dialogs/file/properties.php:86
 #: concrete/views/dialogs/file/properties.php:170
 msgid "Title"
@@ -5093,9 +5092,7 @@ msgstr "Aggiunto"
 msgid "Active"
 msgstr "Attivo"
 
-#: concrete/blocks/tags/controller.php:35
-#: concrete/config/install/packages/standard/content.xml:601
-#: concrete/core/File/Version.php:484
+#: concrete/blocks/tags/controller.php:35 concrete/core/File/Version.php:488
 #: concrete/elements/gathering/data_sources/flickr_feed/options.php:8
 #: concrete/views/dialogs/file/properties.php:94
 msgid "Tags"
@@ -5210,13 +5207,11 @@ msgid "Viewing <b>%s</b> to <b>%s</b> (<b>%s</b> Total)"
 msgstr "Visualizzazione da <b>%s</b> a <b>%s</b> (<b>%s</b> totali)"
 
 #: concrete/blocks/next_previous/add.php:4
-#: concrete/blocks/page_list/view.php:81
 #: concrete/core/Legacy/Pagination.php:153
 msgid "Next"
 msgstr "Avanti"
 
 #: concrete/blocks/next_previous/add.php:5
-#: concrete/blocks/page_list/view.php:79
 #: concrete/core/Legacy/Pagination.php:172
 msgid "Previous"
 msgstr "Indietro"
@@ -5563,122 +5558,122 @@ msgstr "Tipo: %s"
 msgid "spam"
 msgstr "spam"
 
-#: concrete/core/Package/Package.php:293
+#: concrete/core/Package/Package.php:288
 msgid "Attribute categories"
 msgstr "Categorie di attributi"
 
-#: concrete/core/Package/Package.php:296
+#: concrete/core/Package/Package.php:291
 msgid "Permission categories"
 msgstr "Categorie di autorizzazioni"
 
-#: concrete/core/Package/Package.php:299
+#: concrete/core/Package/Package.php:294
 msgid "Permission access entity types"
 msgstr "Tipi di entità di autorizzazioni di accesso"
 
-#: concrete/core/Package/Package.php:302
+#: concrete/core/Package/Package.php:297
 msgid "Attribute keys"
 msgstr "Chiavi di attributo"
 
-#: concrete/core/Package/Package.php:305
+#: concrete/core/Package/Package.php:300
 msgid "Attribute sets"
 msgstr "Set di attributi"
 
-#: concrete/core/Package/Package.php:308
+#: concrete/core/Package/Package.php:303
 msgid "Group sets"
 msgstr "Set di gruppi"
 
-#: concrete/core/Package/Package.php:311
+#: concrete/core/Package/Package.php:306
 msgid "Page types"
 msgstr "Tipi di pagina"
 
-#: concrete/core/Package/Package.php:314
+#: concrete/core/Package/Package.php:309
 msgid "Mail importers"
 msgstr "Importatori email"
 
-#: concrete/core/Package/Package.php:317
+#: concrete/core/Package/Package.php:312
 msgid "Configuration values"
 msgstr "Valori di configurazione"
 
-#: concrete/core/Package/Package.php:320
+#: concrete/core/Package/Package.php:315
 msgid "Block types"
 msgstr "Tipi di blocco"
 
-#: concrete/core/Package/Package.php:323
+#: concrete/core/Package/Package.php:318
 msgid "Page themes"
 msgstr "Temi delle pagine"
 
-#: concrete/core/Package/Package.php:329
+#: concrete/core/Package/Package.php:324
 msgid "Single pages"
 msgstr "Pagine singole"
 
-#: concrete/core/Package/Package.php:332
+#: concrete/core/Package/Package.php:327
 msgid "Attribute types"
 msgstr "Tipi di attributo"
 
-#: concrete/core/Package/Package.php:335
+#: concrete/core/Package/Package.php:330
 msgid "Captcha libraries"
 msgstr "Librerie captcha"
 
-#: concrete/core/Package/Package.php:338
+#: concrete/core/Package/Package.php:333
 msgid "Antispam libraries"
 msgstr "Liprerie antispam"
 
-#: concrete/core/Package/Package.php:341
+#: concrete/core/Package/Package.php:336
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:46
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:265
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:371
 msgid "Jobs"
 msgstr "Processi"
 
-#: concrete/core/Package/Package.php:344
+#: concrete/core/Package/Package.php:339
 msgid "Workflow types"
 msgstr "Tipi di flussi di lavoro"
 
-#: concrete/core/Package/Package.php:399
+#: concrete/core/Package/Package.php:394
 #, php-format
 msgid "%s (%s)"
 msgstr "%s (%s)"
 
-#: concrete/core/Package/Package.php:404
+#: concrete/core/Package/Package.php:399
 #, php-format
 msgid " %s (%s)"
 msgstr " %s (%s)"
 
-#: concrete/core/Package/Package.php:607
+#: concrete/core/Package/Package.php:602
 msgid "You've already installed that package."
 msgstr "Questo pacchetto è già installato."
 
-#: concrete/core/Package/Package.php:608
+#: concrete/core/Package/Package.php:603
 msgid "Invalid Package."
 msgstr "Pacchetto non valido"
 
-#: concrete/core/Package/Package.php:609
+#: concrete/core/Package/Package.php:604
 #, php-format
 msgid "This package requires concrete5 version %s or greater."
 msgstr "Questo pacchetto richiede la versione %s o successiva di concrete5."
 
-#: concrete/core/Package/Package.php:610
+#: concrete/core/Package/Package.php:605
 msgid "An error occurred while downloading the package."
 msgstr "Errore durante lo scaricamento del pacchetto."
 
-#: concrete/core/Package/Package.php:611
+#: concrete/core/Package/Package.php:606
 msgid "concrete5 was not able to save the package after download."
 msgstr "concrete5 non è riuscito a salvare il pacchetto scaricato."
 
-#: concrete/core/Package/Package.php:612
+#: concrete/core/Package/Package.php:607
 msgid "An error occurred while trying to unzip the package."
 msgstr "Errore durante la decompressione del pacchetto."
 
-#: concrete/core/Package/Package.php:613
+#: concrete/core/Package/Package.php:608
 msgid "An error occurred while trying to install the package."
 msgstr "Errore durante l’installazione del pacchetto."
 
-#: concrete/core/Package/Package.php:614
+#: concrete/core/Package/Package.php:609
 #, php-format
 msgid "Unable to backup old package directory to %s"
 msgstr "Impossibile effettuare il backup in %s della vecchia cartella del pacchetto"
 
-#: concrete/core/Package/Package.php:615
+#: concrete/core/Package/Package.php:610
 msgid ""
 "This package isn't currently available for this version of concrete5. Please"
 " contact the maintainer of this package for assistance."
@@ -7466,8 +7461,7 @@ msgstr "Connessione alla community"
 msgid "My Account"
 msgstr "Il mio account"
 
-#: concrete/config/install/packages/bootstrap/content.xml:52
-#: concrete/config/install/packages/standard/content.xml:254
+#: concrete/config/install/packages/elemental_blank/content.xml:41
 #: concrete/elements/account/menu.php:60
 #: concrete/single_pages/account/profile/public_profile.php:14
 #: concrete/single_pages/dashboard/system/view.php:41
@@ -7658,7 +7652,7 @@ msgid "No timed permission assignments"
 msgstr "Nessuna autorizzazione temporizzata"
 
 #: concrete/elements/block_area_footer.php:56
-#: concrete/elements/block_header_view.php:165
+#: concrete/elements/block_header_view.php:167
 msgid "Custom Style"
 msgstr "Stile personalizzato"
 
@@ -8630,6 +8624,8 @@ msgstr "rilievo"
 #: concrete/blocks/video/form_setup_html.php:10
 #: concrete/blocks/youtube/form_setup_html.php:30
 #: concrete/elements/custom_style/border.php:26
+#: concrete/views/image-editor/control-sets/position.php:17
+#: concrete/views/image-editor/control-sets/position.php:67
 msgid "Width"
 msgstr "Larghezza"
 
@@ -8664,28 +8660,28 @@ msgstr "Nomi classi css"
 msgid "Additional CSS"
 msgstr "CSS aggiuntivo"
 
-#: concrete/elements/block_header_view.php:87
-#: concrete/elements/block_header_view.php:91
+#: concrete/elements/block_header_view.php:89
+#: concrete/elements/block_header_view.php:93
 msgid "Do you want to delete this block?"
 msgstr "Eliminare questo blocco?"
 
-#: concrete/elements/block_header_view.php:89
+#: concrete/elements/block_header_view.php:91
 msgid ""
 "Do you want to delete this block? This item is an original. If you delete "
 "it, you will delete all blocks aliased to it"
 msgstr "Eliminare questo blocco? Questo oggetto è un blocco primigenio: se viene eliminato verranno eliminati anche i suoi alias"
 
-#: concrete/elements/block_header_view.php:142
-#: concrete/elements/block_header_view.php:145
+#: concrete/elements/block_header_view.php:144
+#: concrete/elements/block_header_view.php:147
 msgid "Edit Block"
 msgstr "Modifica blocco"
 
-#: concrete/elements/block_header_view.php:145
+#: concrete/elements/block_header_view.php:147
 #, php-format
 msgid "Edit %s"
 msgstr "Modifica %s"
 
-#: concrete/elements/block_header_view.php:176
+#: concrete/elements/block_header_view.php:178
 msgid "Block Permissions"
 msgstr "Autorizzazioni del blocco"
 
@@ -8823,6 +8819,59 @@ msgstr "Modifica autorizzazioni - Aggiungi accesso"
 #: concrete/elements/pages/search.php:42
 msgid "Change Permissions - Remove Access"
 msgstr "Modifica autorizzazioni - Revoca accesso"
+
+#: concrete/views/image-editor/filters/gaussian_blur.php:3
+msgid "Radius"
+msgstr "Raggio"
+
+#: concrete/views/image-editor/filters/sepia.php:1
+msgid "Apply a sepia tone"
+msgstr "Applica una tinta seppiata"
+
+#: concrete/views/image-editor/filters/grayscale.php:1
+msgid "Convert image to grayscale"
+msgstr "Converti immagine in scala di grigi"
+
+#: concrete/views/image-editor/filters/none.php:1
+msgid "Remove all filters"
+msgstr "Rimuovi tutti i filtri"
+
+#: concrete/views/image-editor/filters/vignette.php:3
+msgid "Strength"
+msgstr "Intensità"
+
+#: concrete/views/image-editor/filters/vignette.php:9
+msgid "60%"
+msgstr "60&"
+
+#: concrete/views/image-editor/filters/vignette.php:20
+msgid "50%"
+msgstr "50%"
+
+#: concrete/views/image-editor/editor.php:58
+msgid "No view found."
+msgstr "Non è stata trovata alcuna vista."
+
+#: concrete/views/image-editor/control-sets/position.php:4
+msgid "Scale"
+msgstr "Scala"
+
+#: concrete/blocks/google_map/form_setup_html.php:39
+#: concrete/blocks/video/form_setup_html.php:17
+#: concrete/blocks/youtube/form_setup_html.php:36
+#: concrete/views/image-editor/control-sets/position.php:27
+#: concrete/views/image-editor/control-sets/position.php:77
+msgid "Height"
+msgstr "Altezza"
+
+#: concrete/blocks/image/composer/thumbnail.php:66
+#: concrete/views/image-editor/control-sets/position.php:59
+msgid "Crop Image"
+msgstr "Ritaglia immagine"
+
+#: concrete/views/image-editor/control-sets/position.php:97
+msgid "Finalize Crop"
+msgstr "Completa ritaglio"
 
 #: concrete/single_pages/dashboard/users/search.php:136
 #: concrete/views/dialogs/file/bulk/properties.php:9
@@ -9246,7 +9295,6 @@ msgid "Site Information"
 msgstr "Informazioni sul sito"
 
 #: concrete/config/install/base/dashboard.xml:472
-#: concrete/config/install/packages/standard/content.xml:239
 #: concrete/single_pages/dashboard/system/basics/name.php:7
 #: concrete/views/frontend/install.php:144
 msgid "Site Name"
@@ -9674,21 +9722,13 @@ msgid ""
 "\n"
 msgstr "\nIl modulo %s nel tuo sito concrete5 è stato inviato.\n\n%s\n\nPer vedere tutti gli invii di questo modulo visitare %s \n\n"
 
-#: concrete/config/install/packages/bootstrap/controller.php:8
+#: concrete/config/install/packages/elemental_blank/controller.php:10
 msgid "Empty Site"
 msgstr "Sito vuoto"
 
-#: concrete/config/install/packages/bootstrap/controller.php:12
-msgid "Creates an empty site using a basic plain Bootstrap theme."
-msgstr "Crea un sito vuoto utilizzando un semplice tema Bootstrap di base."
-
-#: concrete/config/install/packages/standard/controller.php:8
-msgid "Sample Content with Blog"
-msgstr "Contenuto d’esempio con blog"
-
-#: concrete/config/install/packages/standard/controller.php:12
-msgid "A great starting point for an attractive website with a blog."
-msgstr "Un ottimo punto di partenza per un interessante sito web dotato di un blog."
+#: concrete/config/install/packages/elemental_blank/controller.php:14
+msgid "Creates an empty site using the unstyled Elemental theme."
+msgstr "Crea un sito vuoto utilizzando il tema senza fronzoli Elemental."
 
 #: concrete/config/file_types.php:17
 msgid "JPEG"
@@ -9898,12 +9938,6 @@ msgstr "Inserisci un numero da 0 a 21, dove 21 indica il massimo livello di zoom
 #: concrete/blocks/google_map/form_setup_html.php:32
 msgid "Map Size"
 msgstr "Dimensione mappa"
-
-#: concrete/blocks/google_map/form_setup_html.php:39
-#: concrete/blocks/video/form_setup_html.php:17
-#: concrete/blocks/youtube/form_setup_html.php:36
-msgid "Height"
-msgstr "Altezza"
 
 #: concrete/blocks/google_map/scrapbook.php:4
 #, php-format
@@ -10383,10 +10417,6 @@ msgid "Actual Height"
 msgstr "Altezza attuale"
 
 #: concrete/blocks/image/composer/thumbnail.php:66
-msgid "Crop Image"
-msgstr "Ritaglia immagine"
-
-#: concrete/blocks/image/composer/thumbnail.php:66
 msgid "Crop + Upload Image"
 msgstr "Ritaglia e carica immagine"
 
@@ -10450,11 +10480,11 @@ msgstr "Forza le dimensioni"
 msgid "Adds images and onstates from the library to pages."
 msgstr "Aggiungi immagini e onstate dalla libreria alle pagine."
 
-#: concrete/blocks/image/controller.php:86
+#: concrete/blocks/image/controller.php:84
 msgid "You must select an image."
 msgstr "È necessario selezionare un’immagine."
 
-#: concrete/blocks/image/controller.php:139
+#: concrete/blocks/image/controller.php:137
 msgid "You must specify a valid image file."
 msgstr "È necessario specificare un file d’immagine valido."
 
@@ -11104,23 +11134,11 @@ msgstr "migliore"
 msgid "Minimum Version"
 msgstr "Versione minima"
 
-#: concrete/blocks/search/controller.php:37
-msgid "Please enter your Search Title."
-msgstr "Specificare il titolo della ricerca."
-
-#: concrete/blocks/search/controller.php:40
-msgid "Please enter your Submit Button Text."
-msgstr "Specificare il testo del pulsante d’invio."
-
-#: concrete/blocks/search/controller.php:89
+#: concrete/blocks/search/controller.php:77
 msgid "Add a search box to your site."
 msgstr "Aggiunge al sito un campo di ricerca."
 
-#: concrete/blocks/search/controller.php:97
-msgid "Please enter a valid search title."
-msgstr "Specificare un titolo valido per la ricerca."
-
-#: concrete/blocks/search/view.php:27
+#: concrete/blocks/search/view.php:28
 msgid "There were no results found. Please try another keyword or phrase."
 msgstr "Non ci sono risultati. Riprovare con un’altra parola o frase."
 
@@ -13279,11 +13297,7 @@ msgstr "Nascondi errori ai visitatori del sito."
 msgid "Show errors in page."
 msgstr "Mostra errori nella pagina."
 
-#: concrete/single_pages/dashboard/system/permissions/files.php:9
-msgid "File Permissions"
-msgstr "Autorizzazioni file"
-
-#: concrete/single_pages/dashboard/system/permissions/files.php:19
+#: concrete/single_pages/dashboard/system/permissions/files.php:17
 #: concrete/single_pages/dashboard/system/permissions/tasks.php:17
 #: concrete/single_pages/dashboard/system/permissions/users.php:17
 msgid "You cannot access task permissions."
@@ -15838,19 +15852,7 @@ msgid "Directory"
 msgstr "Cartella"
 
 #: concrete/config/install/base/login_registration.xml:20
-#: concrete/config/install/packages/bootstrap/content.xml:31
-#: concrete/config/install/packages/bootstrap/content.xml:40
-#: concrete/config/install/packages/standard/content.xml:79
-#: concrete/config/install/packages/standard/content.xml:124
-#: concrete/config/install/packages/standard/content.xml:154
-#: concrete/config/install/packages/standard/content.xml:184
-#: concrete/config/install/packages/standard/content.xml:271
-#: concrete/config/install/packages/standard/content.xml:310
-#: concrete/config/install/packages/standard/content.xml:334
-#: concrete/config/install/packages/standard/content.xml:436
-#: concrete/config/install/packages/standard/content.xml:457
-#: concrete/config/install/packages/standard/content.xml:541
-#: concrete/config/install/packages/standard/content.xml:585
+#: concrete/config/install/packages/elemental_blank/content.xml:29
 msgctxt "AreaName"
 msgid "Main"
 msgstr "Principale"
@@ -16799,20 +16801,25 @@ msgstr "Forma"
 
 #: concrete/config/install/base/image_editor.xml:14
 msgctxt "ImageEditorFilterName"
+msgid "None"
+msgstr "Nessuno"
+
+#: concrete/config/install/base/image_editor.xml:15
+msgctxt "ImageEditorFilterName"
 msgid "Grayscale"
 msgstr "Scala di grigi"
 
-#: concrete/config/install/base/image_editor.xml:15
+#: concrete/config/install/base/image_editor.xml:16
 msgctxt "ImageEditorFilterName"
 msgid "Sepia"
 msgstr "Seppia"
 
-#: concrete/config/install/base/image_editor.xml:16
+#: concrete/config/install/base/image_editor.xml:17
 msgctxt "ImageEditorFilterName"
 msgid "Blur"
 msgstr "Sfuoca"
 
-#: concrete/config/install/base/image_editor.xml:17
+#: concrete/config/install/base/image_editor.xml:18
 msgctxt "ImageEditorFilterName"
 msgid "Vignette"
 msgstr "Vignetta"
@@ -16992,238 +16999,34 @@ msgctxt "AttributeSetName"
 msgid "Navigation and Indexing"
 msgstr "Navigazione e indicizzazione"
 
-#: concrete/config/install/packages/bootstrap/content.xml:7
-#: concrete/config/install/packages/standard/content.xml:7
-msgctxt "PageTemplateName"
-msgid "Right Sidebar"
-msgstr "Barra a destra"
-
-#: concrete/config/install/packages/bootstrap/content.xml:8
-msgctxt "PageTemplateName"
-msgid "Two Column"
-msgstr "Due colonne"
-
-#: concrete/config/install/packages/bootstrap/content.xml:9
-#: concrete/config/install/packages/standard/content.xml:9
+#: concrete/config/install/packages/elemental_blank/content.xml:7
 msgctxt "PageTemplateName"
 msgid "Full"
 msgstr "Completo"
 
-#: concrete/config/install/packages/bootstrap/content.xml:12
-#: concrete/config/install/packages/standard/content.xml:89
+#: concrete/config/install/packages/elemental_blank/content.xml:10
 msgid "Page"
 msgstr "Pagina"
 
-#: concrete/config/install/packages/bootstrap/content.xml:17
-#: concrete/config/install/packages/standard/content.xml:36
-#: concrete/config/install/packages/standard/content.xml:94
+#: concrete/config/install/packages/elemental_blank/content.xml:15
 msgctxt "PageTypeComposerFormLayoutSetName"
 msgid "Basics"
 msgstr "Essenziali"
 
-#: concrete/config/install/packages/bootstrap/content.xml:18
-#: concrete/config/install/packages/standard/content.xml:95
+#: concrete/config/install/packages/elemental_blank/content.xml:16
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Page Name"
 msgstr "Nome della pagina"
 
-#: concrete/config/install/packages/bootstrap/content.xml:24
-#: concrete/config/install/packages/standard/content.xml:50
-#: concrete/config/install/packages/standard/content.xml:101
+#: concrete/config/install/packages/elemental_blank/content.xml:22
 msgctxt "PageTypeComposerFormLayoutSetName"
 msgid "Content"
 msgstr "Contenuto"
 
-#: concrete/config/install/packages/bootstrap/content.xml:25
-#: concrete/config/install/packages/standard/content.xml:51
-#: concrete/config/install/packages/standard/content.xml:102
+#: concrete/config/install/packages/elemental_blank/content.xml:23
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Body"
 msgstr "Corpo"
-
-#: concrete/config/install/packages/standard/content.xml:8
-msgctxt "PageTemplateName"
-msgid "Left Sidebar"
-msgstr "Barra a sinistra"
-
-#: concrete/config/install/packages/standard/content.xml:10
-msgctxt "PageTemplateName"
-msgid "Blog Entry"
-msgstr "Voce del blog"
-
-#: concrete/config/install/packages/standard/content.xml:13
-msgctxt "AttributeKeyName"
-msgid "Tags"
-msgstr "Tag"
-
-#: concrete/config/install/packages/standard/content.xml:16
-msgctxt "SelectAttributeValue"
-msgid "composer"
-msgstr "composer"
-
-#: concrete/config/install/packages/standard/content.xml:17
-msgctxt "SelectAttributeValue"
-msgid "hello"
-msgstr "ciao"
-
-#: concrete/config/install/packages/standard/content.xml:18
-msgctxt "SelectAttributeValue"
-msgid "world"
-msgstr "mondo"
-
-#: concrete/config/install/packages/standard/content.xml:19
-msgctxt "SelectAttributeValue"
-msgid "first post"
-msgstr "primo post"
-
-#: concrete/config/install/packages/standard/content.xml:29
-msgid "Blog Entry"
-msgstr "Voce del blog"
-
-#: concrete/config/install/packages/standard/content.xml:37
-msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
-msgid "Post Name"
-msgstr "Nome del post"
-
-#: concrete/config/install/packages/standard/content.xml:43
-msgctxt "PageTypeComposerFormLayoutSetName"
-msgid "Navigation"
-msgstr "Navigazione"
-
-#: concrete/config/install/packages/standard/content.xml:46
-msgctxt "PageTypeComposerFormLayoutSetName"
-msgid "Images"
-msgstr "Immagini"
-
-#: concrete/config/install/packages/standard/content.xml:47
-msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
-msgid "Thumbnail"
-msgstr "Miniatura"
-
-#: concrete/config/install/packages/standard/content.xml:48
-msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
-msgid "Header Image"
-msgstr "Immagine intestazione"
-
-#: concrete/config/install/packages/standard/content.xml:57
-#: concrete/config/install/packages/standard/content.xml:133
-#: concrete/config/install/packages/standard/content.xml:163
-#: concrete/config/install/packages/standard/content.xml:255
-#: concrete/config/install/packages/standard/content.xml:307
-#: concrete/config/install/packages/standard/content.xml:331
-#: concrete/config/install/packages/standard/content.xml:413
-#: concrete/config/install/packages/standard/content.xml:479
-#: concrete/config/install/packages/standard/content.xml:538
-#: concrete/config/install/packages/standard/content.xml:597
-msgctxt "AreaName"
-msgid "Sidebar"
-msgstr "Barra laterale"
-
-#: concrete/config/install/packages/standard/content.xml:69
-#: concrete/config/install/packages/standard/content.xml:108
-#: concrete/config/install/packages/standard/content.xml:138
-#: concrete/config/install/packages/standard/content.xml:168
-#: concrete/config/install/packages/standard/content.xml:289
-#: concrete/config/install/packages/standard/content.xml:325
-#: concrete/config/install/packages/standard/content.xml:408
-#: concrete/config/install/packages/standard/content.xml:448
-#: concrete/config/install/packages/standard/content.xml:507
-#: concrete/config/install/packages/standard/content.xml:522
-#: concrete/config/install/packages/standard/content.xml:582
-msgctxt "AreaName"
-msgid "Header Image"
-msgstr "Immagine intestazione"
-
-#: concrete/config/install/packages/standard/content.xml:74
-#: concrete/config/install/packages/standard/content.xml:550
-msgctxt "AreaName"
-msgid "Thumbnail Image"
-msgstr "Miniatura"
-
-#: concrete/config/install/packages/standard/content.xml:196
-msgid "Header Nav"
-msgstr "Nav intestazione"
-
-#: concrete/config/install/packages/standard/content.xml:197
-#: concrete/config/install/packages/standard/content.xml:215
-#: concrete/config/install/packages/standard/content.xml:240
-msgid "Main"
-msgstr "Principale"
-
-#: concrete/config/install/packages/standard/content.xml:214
-msgid "Side Nav"
-msgstr "Nav laterale"
-
-#: concrete/config/install/packages/standard/content.xml:306
-msgid "About"
-msgstr "Informazioni su"
-
-#: concrete/config/install/packages/standard/content.xml:324
-#: concrete/config/install/packages/standard/content.xml:407
-#: concrete/config/install/packages/standard/content.xml:456
-msgctxt "AreaName"
-msgid "HeaderImage"
-msgstr "ImmagineIntestazione"
-
-#: concrete/config/install/packages/standard/content.xml:330
-msgid "Contact Us"
-msgstr "Contattaci"
-
-#: concrete/config/install/packages/standard/content.xml:440
-msgid "Search This Site"
-msgstr "Cerca nel sito"
-
-#: concrete/config/install/packages/standard/content.xml:452
-msgid "Blog"
-msgstr "Blog"
-
-#: concrete/config/install/packages/standard/content.xml:500
-#: concrete/config/install/packages/standard/content.xml:611
-msgid "Archives"
-msgstr "Archivi"
-
-#: concrete/config/install/packages/standard/content.xml:511
-msgid "Hello World"
-msgstr "Ciao mondo"
-
-#: concrete/config/install/packages/standard/content.xml:511
-msgid "This is my first blog post!"
-msgstr "Questo è il mio primo post del blog!"
-
-#: concrete/config/install/packages/standard/content.xml:523
-msgid "Header Image"
-msgstr "Immagine intestazione"
-
-#: concrete/config/install/packages/standard/content.xml:542
-msgid "Blog Content"
-msgstr "Contenuto blog"
-
-#: concrete/config/install/packages/standard/content.xml:551
-msgid "Thumbnail Image"
-msgstr "Miniatura"
-
-#: concrete/config/install/packages/standard/content.xml:565
-msgctxt "AreaName"
-msgid "Blog Post More"
-msgstr "Altro sul post del blog"
-
-#: concrete/config/install/packages/standard/content.xml:566
-msgctxt "AreaName"
-msgid "Blog Post Header"
-msgstr "Intestazione post del blog"
-
-#: concrete/config/install/packages/standard/content.xml:567
-msgctxt "AreaName"
-msgid "Blog Post Footer"
-msgstr "Terminatore post del blog"
-
-#: concrete/config/install/packages/standard/content.xml:569
-msgid "Blog Archives"
-msgstr "Archivi del blog"
-
-#: concrete/config/install/packages/standard/content.xml:589
-msgid "Search Blog"
-msgstr "Cerca nel blog"
 
 #: concrete/blocks/image/composer/header.php
 msgctxt "TemplateFileName"

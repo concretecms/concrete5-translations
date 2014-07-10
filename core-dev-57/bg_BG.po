@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-07-08 04:00+0000\n"
-"PO-Revision-Date: 2014-07-08 09:44+0000\n"
+"POT-Creation-Date: 2014-07-09 04:00+0000\n"
+"PO-Revision-Date: 2014-07-09 15:11+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Bulgarian (Bulgaria) (http://www.transifex.com/projects/p/concrete5/language/bg_BG/)\n"
 "MIME-Version: 1.0\n"
@@ -454,7 +454,7 @@ msgstr "Низходящо"
 #: concrete/single_pages/dashboard/system/optimization/cache.php:114
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:153
 #: concrete/single_pages/dashboard/system/permissions/blacklist.php:67
-#: concrete/single_pages/dashboard/system/permissions/files.php:24
+#: concrete/single_pages/dashboard/system/permissions/files.php:23
 #: concrete/single_pages/dashboard/system/permissions/filetypes.php:20
 #: concrete/single_pages/dashboard/system/permissions/maintenance.php:17
 #: concrete/single_pages/dashboard/system/permissions/site.php:54
@@ -496,7 +496,6 @@ msgstr "Запис"
 #: concrete/controllers/dialog/file/properties.php:108
 #: concrete/controllers/single_page/dashboard/users/search.php:42
 #: concrete/controllers/single_page/dashboard/users/search.php:59
-#: concrete/elements/files/edit/image.php:15
 #: concrete/tools/dashboard/attribute_set_order_update.php:13
 #: concrete/tools/dashboard/attribute_sets_update.php:15
 #: concrete/tools/dashboard/block_type_order_update.php:11
@@ -518,7 +517,7 @@ msgstr "Запис"
 #: concrete/tools/users/bulk_delete.php:14
 #: concrete/tools/users/bulk_group_add.php:22
 #: concrete/tools/users/bulk_group_remove.php:22
-#: concrete/tools/versions.php:20
+#: concrete/tools/versions.php:20 concrete/views/image-editor/editor.php:17
 msgid "Access Denied."
 msgstr "Отказан достъп."
 
@@ -604,6 +603,7 @@ msgstr "Име на файл"
 #: concrete/elements/custom_style/fonts.php:23
 #: concrete/elements/files/search.php:6 concrete/tools/files/import.php:74
 #: concrete/tools/i18n_js.php:96 concrete/views/dialogs/file/properties.php:70
+#: concrete/views/image-editor/filters/vignette.php:14
 msgid "Size"
 msgstr "Размер"
 
@@ -667,7 +667,7 @@ msgstr "Премахване на файлове от директория incom
 #: concrete/single_pages/dashboard/pages/types/view.php:91
 #: concrete/single_pages/dashboard/system/attributes/topics/add.php:21
 #: concrete/single_pages/dashboard/system/attributes/topics/view.php:65
-#: concrete/single_pages/dashboard/system/permissions/files.php:23
+#: concrete/single_pages/dashboard/system/permissions/files.php:22
 #: concrete/single_pages/dashboard/system/registration/authentication.php:89
 #: concrete/single_pages/dashboard/users/add.php:112
 #: concrete/single_pages/dashboard/users/add_group.php:216
@@ -712,6 +712,7 @@ msgstr "Премахване на файлове от директория incom
 #: concrete/views/dialogs/page/design.php:30
 #: concrete/views/dialogs/page/design/css.php:11
 #: concrete/views/dialogs/search/customize.php:74
+#: concrete/views/image-editor/control-sets/position.php:94
 #: concrete/views/panels/details/page/caching.php:117
 #: concrete/views/panels/details/page/location.php:53
 #: concrete/views/panels/details/page/permissions/advanced.php:62
@@ -750,9 +751,9 @@ msgstr ""
 msgid "File storage location saved successfully."
 msgstr ""
 
-#: concrete/core/Package/Package.php:326
+#: concrete/core/Package/Package.php:321
 #: concrete/elements/block_area_footer.php:71
-#: concrete/elements/block_header_view.php:176
+#: concrete/elements/block_header_view.php:178
 #: concrete/elements/page_controls_footer.php:58
 #: concrete/elements/page_types/composer/form/output/buttons.php:27
 #: concrete/elements/panels/page.php:104
@@ -905,7 +906,7 @@ msgid "(Note: files within the set will not be removed.)"
 msgstr "(Забележка: файловете от набора няма да бъдат изтрити.)"
 
 #: concrete/attributes/select/type_form.php:19
-#: concrete/elements/block_header_view.php:156
+#: concrete/elements/block_header_view.php:158
 #: concrete/elements/collection_attribute_values.php:18
 #: concrete/elements/collection_delete.php:49
 #: concrete/elements/conversation/message.php:33
@@ -1210,9 +1211,7 @@ msgstr "Пълна карта"
 msgid "Flat View"
 msgstr "Плосък списък"
 
-#: concrete/blocks/search/controller.php:93
-#: concrete/blocks/search/controller.php:103
-#: concrete/config/install/packages/standard/content.xml:412
+#: concrete/blocks/search/controller.php:81
 #: concrete/elements/block_area_add_stack.php:17
 #: concrete/elements/files/search.php:45 concrete/elements/group/search.php:26
 #: concrete/elements/marketplace/search_form.php:24
@@ -1530,7 +1529,7 @@ msgstr ""
 msgid "Author"
 msgstr "Автор"
 
-#: concrete/core/File/Version.php:481
+#: concrete/core/File/Version.php:485
 #: concrete/core/Page/Type/Composer/Control/CorePageProperty/DescriptionCorePageProperty.php:10
 #: concrete/elements/collection_add.php:46
 #: concrete/single_pages/dashboard/blocks/types/view.php:8
@@ -1899,7 +1898,7 @@ msgid "Custom Label"
 msgstr ""
 
 #: concrete/elements/block_custom_template.php:24
-#: concrete/elements/block_header_view.php:169 concrete/tools/i18n_js.php:48
+#: concrete/elements/block_header_view.php:171 concrete/tools/i18n_js.php:48
 #: concrete/tools/page_types/composer/form/edit_control.php:46
 msgid "Custom Template"
 msgstr "Собствен шаблон"
@@ -1965,7 +1964,7 @@ msgstr ""
 msgid "Paste from Clipboard"
 msgstr "Поставяне съдържанието на системния буфер"
 
-#: concrete/elements/block_header_view.php:165
+#: concrete/elements/block_header_view.php:167
 #: concrete/elements/page_controls_footer.php:61
 #: concrete/elements/pages/search.php:44 concrete/elements/panels/page.php:36
 #: concrete/tools/i18n_js.php:20 concrete/tools/i18n_js.php:49
@@ -1973,7 +1972,7 @@ msgstr "Поставяне съдържанието на системния бу
 msgid "Design"
 msgstr "Дизайн"
 
-#: concrete/elements/block_header_view.php:140 concrete/tools/i18n_js.php:21
+#: concrete/elements/block_header_view.php:142 concrete/tools/i18n_js.php:21
 msgid "Edit Layout"
 msgstr "Редакция на макет"
 
@@ -2068,7 +2067,7 @@ msgid ""
 "is active."
 msgstr "Настройките на правата са запазени. За да активирате промените, завършете процедурите."
 
-#: concrete/elements/block_header_view.php:131 concrete/tools/i18n_js.php:42
+#: concrete/elements/block_header_view.php:133 concrete/tools/i18n_js.php:42
 msgid "Manage Stack Contents"
 msgstr "Управление на пакетното съдържание"
 
@@ -2082,7 +2081,7 @@ msgstr "Сравняване на версии"
 msgid "Blocks arranged successfully."
 msgstr "Блоковете са наредени успешно."
 
-#: concrete/elements/block_header_view.php:151 concrete/tools/i18n_js.php:47
+#: concrete/elements/block_header_view.php:153 concrete/tools/i18n_js.php:47
 msgid "Copy to Clipboard"
 msgstr "Копиране в системният буфер"
 
@@ -2102,7 +2101,7 @@ msgstr "Сигурни ли сте, че искате да изтриете вс
 msgid "Are you sure you want to delete this custom style preset?"
 msgstr "Сигурни ли сте, че искате да изтриете този набор от стилове?"
 
-#: concrete/elements/block_header_view.php:182 concrete/tools/i18n_js.php:55
+#: concrete/elements/block_header_view.php:184 concrete/tools/i18n_js.php:55
 msgid "Setup on Child Pages"
 msgstr "Настройка на подчинените страници"
 
@@ -2223,7 +2222,7 @@ msgstr "Настройките на потребителя са запазени
 msgid "Ok"
 msgstr "Ok"
 
-#: concrete/elements/block_header_view.php:179 concrete/tools/i18n_js.php:81
+#: concrete/elements/block_header_view.php:181 concrete/tools/i18n_js.php:81
 msgid "Schedule Guest Access"
 msgstr "График за достъп на гости"
 
@@ -2647,7 +2646,7 @@ msgstr "Множество стойности"
 #: concrete/views/panels/details/page/caching.php:73
 #, php-format
 msgid "Use global setting - %s"
-msgstr ""
+msgstr "Използвай глобални настройки - %s"
 
 #: concrete/elements/collection_speed_settings.php:128
 #: concrete/tools/pages/speed_settings.php:133
@@ -3253,7 +3252,7 @@ msgstr "Нямате право да сваляте добавки."
 
 #: concrete/controllers/single_page/dashboard/blocks/permissions.php:36
 #: concrete/controllers/single_page/dashboard/pages/types/permissions.php:18
-#: concrete/controllers/single_page/dashboard/system/permissions/files.php:39
+#: concrete/controllers/single_page/dashboard/system/permissions/files.php:40
 #: concrete/controllers/single_page/dashboard/system/permissions/tasks.php:42
 #: concrete/controllers/single_page/dashboard/system/permissions/users.php:40
 msgid "Permissions updated successfully."
@@ -4594,7 +4593,7 @@ msgstr ""
 
 #: concrete/controllers/search/pages.php:234
 msgid "Search All Children?"
-msgstr ""
+msgstr "Търсене във всички подчинени?"
 
 #: concrete/attributes/boolean/controller.php:40
 #: concrete/blocks/form/form_setup_html.php:66
@@ -5025,7 +5024,7 @@ msgstr "Приложение"
 
 #: concrete/blocks/file/add.php:6 concrete/blocks/file/controller.php:25
 #: concrete/blocks/file/edit.php:10 concrete/core/File/Type/Type.php:85
-#: concrete/core/File/Version.php:475
+#: concrete/core/File/Version.php:479
 #: concrete/single_pages/dashboard/pages/themes/inspect.php:34
 #: concrete/single_pages/dashboard/reports/statistics.php:105
 #: concrete/single_pages/dashboard/system/backup/backup.php:103
@@ -5077,7 +5076,7 @@ msgstr "Тип"
 #: concrete/blocks/tags/tag_form.php:10
 #: concrete/blocks/youtube/form_setup_html.php:20
 #: concrete/core/File/Search/ColumnSet/DefaultSet.php:21
-#: concrete/core/File/Version.php:478
+#: concrete/core/File/Version.php:482
 #: concrete/views/dialogs/file/properties.php:86
 #: concrete/views/dialogs/file/properties.php:170
 msgid "Title"
@@ -5092,9 +5091,7 @@ msgstr "Добавен"
 msgid "Active"
 msgstr "Активен"
 
-#: concrete/blocks/tags/controller.php:35
-#: concrete/config/install/packages/standard/content.xml:601
-#: concrete/core/File/Version.php:484
+#: concrete/blocks/tags/controller.php:35 concrete/core/File/Version.php:488
 #: concrete/elements/gathering/data_sources/flickr_feed/options.php:8
 #: concrete/views/dialogs/file/properties.php:94
 msgid "Tags"
@@ -5183,7 +5180,7 @@ msgstr ""
 #: concrete/core/Tree/Node/Type/Group.php:27
 #: concrete/elements/permission/keys/assign_user_groups.php:31
 msgid "All Groups"
-msgstr ""
+msgstr "Всички групи"
 
 #: concrete/core/Tree/Type/Group.php:8
 msgid "Groups Tree"
@@ -5209,13 +5206,11 @@ msgid "Viewing <b>%s</b> to <b>%s</b> (<b>%s</b> Total)"
 msgstr "Показани от <b>%s</b> до <b>%s</b> (от общо <b>%s</b>)"
 
 #: concrete/blocks/next_previous/add.php:4
-#: concrete/blocks/page_list/view.php:81
 #: concrete/core/Legacy/Pagination.php:153
 msgid "Next"
 msgstr "Следващи"
 
 #: concrete/blocks/next_previous/add.php:5
-#: concrete/blocks/page_list/view.php:79
 #: concrete/core/Legacy/Pagination.php:172
 msgid "Previous"
 msgstr "Предишни"
@@ -5223,33 +5218,33 @@ msgstr "Предишни"
 #: concrete/core/Permission/Duration.php:160
 #, php-format
 msgid "Starts %s. "
-msgstr ""
+msgstr "Започва %s."
 
 #: concrete/core/Permission/Duration.php:162
 msgid "Already Started. "
-msgstr ""
+msgstr "Вече започнато."
 
 #: concrete/core/Permission/Duration.php:165
 #, php-format
 msgid "Ends %s. "
-msgstr ""
+msgstr "Свършва %s."
 
 #: concrete/core/Permission/Duration.php:167
 msgid "No End Date. "
-msgstr ""
+msgstr "Без крайна дата."
 
 #: concrete/core/Permission/Duration.php:170
 #, php-format
 msgid "Repeats %s. "
-msgstr ""
+msgstr "Повтаря %s."
 
 #: concrete/core/Permission/Key/Key.php:21
 msgid "Included"
-msgstr ""
+msgstr "Включително"
 
 #: concrete/core/Permission/Key/Key.php:22
 msgid "Excluded"
-msgstr ""
+msgstr "С изключение на"
 
 #: concrete/core/Permission/Checker.php:75
 #: concrete/core/Permission/Response/Response.php:59
@@ -5276,7 +5271,7 @@ msgstr "Група"
 
 #: concrete/core/Permission/Access/Entity/GroupEntity.php:66
 msgid "(Deleted Group)"
-msgstr ""
+msgstr "(Изтрита група)"
 
 #: concrete/config/install/base/dashboard.xml:127
 #: concrete/core/Permission/Access/Entity/UserEntity.php:16
@@ -5292,17 +5287,17 @@ msgstr "Потребител"
 
 #: concrete/core/Permission/Access/Entity/UserEntity.php:59
 msgid "(Deleted User)"
-msgstr ""
+msgstr "(Изтрит потребител)"
 
 #: concrete/core/Permission/Access/Entity/GroupSetEntity.php:16
 msgid "Add Group Set"
-msgstr ""
+msgstr "Добавете групов пакет"
 
 #: concrete/config/install/base/permissions.xml:298
 #: concrete/core/Permission/Access/Entity/GroupSetEntity.php:16
 msgctxt "PermissionAccessEntityTypeName"
 msgid "Group Set"
-msgstr ""
+msgstr "Групов пакет"
 
 #: concrete/config/install/base/permissions.xml:344
 #: concrete/core/Permission/Access/Entity/FileUploaderEntity.php:36
@@ -5327,13 +5322,13 @@ msgstr "Собственик на страницата"
 
 #: concrete/core/Permission/Access/Entity/GroupCombinationEntity.php:16
 msgid "Add Group Combination"
-msgstr ""
+msgstr "Добавете групова комбинация"
 
 #: concrete/config/install/base/permissions.xml:318
 #: concrete/core/Permission/Access/Entity/GroupCombinationEntity.php:16
 msgctxt "PermissionAccessEntityTypeName"
 msgid "Group Combination"
-msgstr ""
+msgstr "Групова комбинация"
 
 #: concrete/core/Permission/Access/Entity/GroupCombinationEntity.php:93
 msgid " + "
@@ -5441,7 +5436,7 @@ msgstr "Нова версия %s"
 #: concrete/core/Page/Collection/Collection.php:262
 #, php-format
 msgid "Version %d"
-msgstr ""
+msgstr "Версия %d"
 
 #: concrete/core/Page/Page.php:2058
 #, php-format
@@ -5541,7 +5536,7 @@ msgstr ""
 #: concrete/core/Backup/Backup.php:24
 #, php-format
 msgid "Unable to create backup file: %s"
-msgstr ""
+msgstr "Не може да бъден създаден резервен файл: %s"
 
 #: concrete/core/Antispam/Service.php:65
 #, php-format
@@ -5562,122 +5557,122 @@ msgstr "Вид: %s"
 msgid "spam"
 msgstr "спам"
 
-#: concrete/core/Package/Package.php:293
+#: concrete/core/Package/Package.php:288
 msgid "Attribute categories"
 msgstr ""
 
-#: concrete/core/Package/Package.php:296
+#: concrete/core/Package/Package.php:291
 msgid "Permission categories"
 msgstr ""
 
-#: concrete/core/Package/Package.php:299
+#: concrete/core/Package/Package.php:294
 msgid "Permission access entity types"
 msgstr ""
 
-#: concrete/core/Package/Package.php:302
+#: concrete/core/Package/Package.php:297
 msgid "Attribute keys"
 msgstr ""
 
-#: concrete/core/Package/Package.php:305
+#: concrete/core/Package/Package.php:300
 msgid "Attribute sets"
 msgstr ""
 
-#: concrete/core/Package/Package.php:308
+#: concrete/core/Package/Package.php:303
 msgid "Group sets"
 msgstr ""
 
-#: concrete/core/Package/Package.php:311
+#: concrete/core/Package/Package.php:306
 msgid "Page types"
 msgstr ""
 
-#: concrete/core/Package/Package.php:314
+#: concrete/core/Package/Package.php:309
 msgid "Mail importers"
 msgstr ""
 
-#: concrete/core/Package/Package.php:317
+#: concrete/core/Package/Package.php:312
 msgid "Configuration values"
 msgstr ""
 
-#: concrete/core/Package/Package.php:320
+#: concrete/core/Package/Package.php:315
 msgid "Block types"
 msgstr ""
 
-#: concrete/core/Package/Package.php:323
+#: concrete/core/Package/Package.php:318
 msgid "Page themes"
 msgstr ""
 
-#: concrete/core/Package/Package.php:329
+#: concrete/core/Package/Package.php:324
 msgid "Single pages"
 msgstr ""
 
-#: concrete/core/Package/Package.php:332
+#: concrete/core/Package/Package.php:327
 msgid "Attribute types"
 msgstr ""
 
-#: concrete/core/Package/Package.php:335
+#: concrete/core/Package/Package.php:330
 msgid "Captcha libraries"
 msgstr ""
 
-#: concrete/core/Package/Package.php:338
+#: concrete/core/Package/Package.php:333
 msgid "Antispam libraries"
 msgstr ""
 
-#: concrete/core/Package/Package.php:341
+#: concrete/core/Package/Package.php:336
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:46
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:265
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:371
 msgid "Jobs"
 msgstr ""
 
-#: concrete/core/Package/Package.php:344
+#: concrete/core/Package/Package.php:339
 msgid "Workflow types"
 msgstr ""
 
-#: concrete/core/Package/Package.php:399
+#: concrete/core/Package/Package.php:394
 #, php-format
 msgid "%s (%s)"
 msgstr "%s (%s)"
 
-#: concrete/core/Package/Package.php:404
+#: concrete/core/Package/Package.php:399
 #, php-format
 msgid " %s (%s)"
 msgstr " %s (%s)"
 
-#: concrete/core/Package/Package.php:607
+#: concrete/core/Package/Package.php:602
 msgid "You've already installed that package."
 msgstr "Вие вече сте инсталирали този пакет."
 
-#: concrete/core/Package/Package.php:608
+#: concrete/core/Package/Package.php:603
 msgid "Invalid Package."
 msgstr ""
 
-#: concrete/core/Package/Package.php:609
+#: concrete/core/Package/Package.php:604
 #, php-format
 msgid "This package requires concrete5 version %s or greater."
-msgstr ""
+msgstr "Този пакет изисква версия %s или по-нова на concrete5. "
 
-#: concrete/core/Package/Package.php:610
+#: concrete/core/Package/Package.php:605
 msgid "An error occurred while downloading the package."
 msgstr "Възникна грешка при изтеглянето на пакета."
 
-#: concrete/core/Package/Package.php:611
+#: concrete/core/Package/Package.php:606
 msgid "concrete5 was not able to save the package after download."
-msgstr ""
+msgstr "concrete5 не можа да запази пакета след свалянето му."
 
-#: concrete/core/Package/Package.php:612
+#: concrete/core/Package/Package.php:607
 msgid "An error occurred while trying to unzip the package."
 msgstr "Възникна грешка при опит за разархивиране на пакета."
 
-#: concrete/core/Package/Package.php:613
+#: concrete/core/Package/Package.php:608
 msgid "An error occurred while trying to install the package."
 msgstr "Възникна грешка при опит за инсталиране на пакета."
 
-#: concrete/core/Package/Package.php:614
+#: concrete/core/Package/Package.php:609
 #, php-format
 msgid "Unable to backup old package directory to %s"
 msgstr ""
 
-#: concrete/core/Package/Package.php:615
+#: concrete/core/Package/Package.php:610
 msgid ""
 "This package isn't currently available for this version of concrete5. Please"
 " contact the maintainer of this package for assistance."
@@ -5685,15 +5680,15 @@ msgstr ""
 
 #: concrete/core/Package/StartingPointPackage.php:43
 msgid "Starting installation and creating directories."
-msgstr ""
+msgstr "Започва инсталиране и създаване на директории."
 
 #: concrete/core/Package/StartingPointPackage.php:44
 msgid "Creating database tables."
-msgstr ""
+msgstr "Създаване на таблици за база данни."
 
 #: concrete/core/Package/StartingPointPackage.php:45
 msgid "Adding admin user."
-msgstr ""
+msgstr "Добавяне на администраторски потребител."
 
 #: concrete/core/Package/StartingPointPackage.php:46
 msgid "Installing permissions & workflow."
@@ -5856,7 +5851,7 @@ msgstr ""
 
 #: concrete/core/Workflow/Request/DeletePageRequest.php:28
 msgid "page"
-msgstr ""
+msgstr "страница"
 
 #: concrete/core/Workflow/Request/DeletePageRequest.php:30
 #: concrete/views/panels/add.php:66
@@ -5866,7 +5861,7 @@ msgstr ""
 #: concrete/core/Workflow/Request/DeletePageRequest.php:33
 #, php-format
 msgid "\"%s\" has been marked for deletion. View the page here: %s."
-msgstr ""
+msgstr "\"%s\" е маркирано за изтриване. Вижте страницата тук: %s."
 
 #: concrete/core/Workflow/Request/DeletePageRequest.php:34
 #, php-format
@@ -5880,7 +5875,7 @@ msgstr ""
 
 #: concrete/core/Workflow/Request/DeletePageRequest.php:36
 msgid "Pending Delete"
-msgstr ""
+msgstr "Изчакване на изтриване"
 
 #: concrete/core/Workflow/Request/DeletePageRequest.php:53
 msgid "Approve Delete"
@@ -5989,7 +5984,7 @@ msgstr ""
 
 #: concrete/core/Workflow/Request/MovePageRequest.php:45
 msgid "Pending Move"
-msgstr ""
+msgstr "Изчакване на преместване"
 
 #: concrete/core/Workflow/Request/MovePageRequest.php:62
 msgid "Approve Move"
@@ -6063,7 +6058,7 @@ msgid ""
 "user's permissions before rendering the link for each page. Display Pages "
 "selects the level of the Sitemap where you'd like the menu to begin. Options"
 " for displaying sub-pages for each item are also available."
-msgstr ""
+msgstr "Създайте навигационно меню, което отразява структурата на картата на Вашият сайт. Първо изберете реда на показване на страниците. Правата за разглеждане проверяват потребителските права преди да дадат линк към всяка страница. Представените страници избират нивото на картата на сайта където бихте искали да започва менюто. Също има опции за показването на под-страници за всеки елемент."
 
 #: concrete/core/Application/Service/UserInterface/Help.php:11
 msgid ""
@@ -6851,7 +6846,7 @@ msgstr ""
 #: concrete/single_pages/dashboard/workflow/workflows.php:100
 #: concrete/themes/dashboard/elements/header.php:54
 msgid "Workflow"
-msgstr ""
+msgstr "процедури"
 
 #: concrete/config/install/base/dashboard.xml:367
 #: concrete/elements/page_controls_footer.php:80
@@ -6978,11 +6973,11 @@ msgstr ""
 
 #: concrete/jobs/remove_old_page_versions.php:9
 msgid "Remove Old Page Versions"
-msgstr ""
+msgstr "Премахване на старите версии на страницата"
 
 #: concrete/jobs/remove_old_page_versions.php:13
 msgid "Removes all except the 10 most recent page versions for each page."
-msgstr ""
+msgstr "Премахване на всички версии за всяка страница, с изключение на последните 10."
 
 #: concrete/jobs/remove_old_page_versions.php:31
 msgid "All pages have been processed, starting from beginning on next run."
@@ -7138,11 +7133,11 @@ msgstr "За търсене"
 
 #: concrete/elements/attribute/type_form_required.php:89
 msgid "Content included in \"Keyword Search\"."
-msgstr ""
+msgstr "Съдържанието е включено в \"Търсене с ключови думи\""
 
 #: concrete/elements/attribute/type_form_required.php:90
 msgid "Field available in \"Advanced Search\"."
-msgstr ""
+msgstr "Налично е поле в \"Разширено търсене\""
 
 #: concrete/elements/attribute/type_form_required.php:93
 msgid "Content included in sitewide page search index."
@@ -7262,7 +7257,7 @@ msgstr "Ключови думи"
 #: concrete/single_pages/dashboard/sitemap/full.php:39
 #: concrete/single_pages/dashboard/system/seo/bulk.php:100
 msgid "Advanced Search"
-msgstr ""
+msgstr "Разширено търсене"
 
 #: concrete/elements/files/search.php:50 concrete/elements/pages/search.php:57
 #: concrete/elements/users/search.php:61
@@ -7320,16 +7315,16 @@ msgstr "Безплатно"
 
 #: concrete/elements/marketplace/search_form.php:16
 msgid "Category"
-msgstr ""
+msgstr "Категория"
 
 #: concrete/elements/marketplace/search_form.php:27
 #: concrete/single_pages/dashboard/files/search.php:17
 msgid "More Options"
-msgstr ""
+msgstr "Още опции"
 
 #: concrete/elements/marketplace/search_form.php:33
 msgid "Additional Filters"
-msgstr ""
+msgstr "Допълнителни филтри"
 
 #: concrete/elements/marketplace/search_form.php:40
 msgid "Compatibility"
@@ -7465,8 +7460,7 @@ msgstr "Връзка с общността"
 msgid "My Account"
 msgstr ""
 
-#: concrete/config/install/packages/bootstrap/content.xml:52
-#: concrete/config/install/packages/standard/content.xml:254
+#: concrete/config/install/packages/elemental_blank/content.xml:41
 #: concrete/elements/account/menu.php:60
 #: concrete/single_pages/account/profile/public_profile.php:14
 #: concrete/single_pages/dashboard/system/view.php:41
@@ -7524,7 +7518,7 @@ msgstr "Преди да изтриете тази страница трябва 
 msgid ""
 "Warning! This is a system page. Deleting it could potentially break your "
 "site. Please proceed with caution."
-msgstr ""
+msgstr "Внимание! Това е системна страница. Изтриването ѝ потенциално би разбило Вашият сайт. Моля оперирайте с внимание."
 
 #: concrete/elements/collection_delete.php:55
 #: concrete/views/dialogs/page/delete.php:25
@@ -7547,7 +7541,7 @@ msgstr ""
 #: concrete/elements/collection_delete.php:63
 #: concrete/views/dialogs/page/delete.php:33
 msgid "This cannot be undone."
-msgstr ""
+msgstr "Това не може да бъде възстановено."
 
 #: concrete/blocks/image/form.php:56
 #: concrete/elements/collection_add_external.php:20
@@ -7641,7 +7635,7 @@ msgstr ""
 
 #: concrete/elements/collection_timed_permission_list.php:32
 msgid "Entire Page"
-msgstr ""
+msgstr "Цялата страница"
 
 #: concrete/elements/collection_timed_permission_list.php:39
 msgid "Nobody"
@@ -7654,10 +7648,10 @@ msgstr ""
 
 #: concrete/elements/collection_timed_permission_list.php:53
 msgid "No timed permission assignments"
-msgstr ""
+msgstr "Няма зададени временни права"
 
 #: concrete/elements/block_area_footer.php:56
-#: concrete/elements/block_header_view.php:165
+#: concrete/elements/block_header_view.php:167
 msgid "Custom Style"
 msgstr ""
 
@@ -7689,7 +7683,7 @@ msgstr "Допълнителни атрибути"
 #: concrete/views/panels/add.php:270 concrete/views/panels/add.php:309
 #, php-format
 msgid "Add %s"
-msgstr ""
+msgstr "Добавяне %s"
 
 #: concrete/elements/panels/dashboard.php:11
 #: concrete/elements/panels/dashboard.php:14
@@ -7753,32 +7747,32 @@ msgstr ""
 #: concrete/elements/collection_speed_settings.php:120
 #: concrete/views/panels/details/page/caching.php:40
 msgid "Enable Cache"
-msgstr ""
+msgstr "Включване на кеша"
 
 #: concrete/elements/collection_theme.php:54
 msgid "You do not have access to change this page's type."
-msgstr ""
+msgstr "Нямате достъп да променяте типа на тази страница."
 
 #: concrete/elements/collection_theme.php:129
 msgid "You do not have access to change this page's theme."
-msgstr ""
+msgstr "Нямате достъп да променяте скина на тази страница."
 
 #: concrete/elements/block_area_add_stack_contents.php:8
 msgid "There are no blocks in this stack."
-msgstr ""
+msgstr "Няма блокове в този пакет."
 
 #: concrete/elements/block_area_add_stack_contents.php:11
 #: concrete/elements/block_area_add_stack_contents.php:25
 msgid "Add the entire stack to this page."
-msgstr ""
+msgstr "Добавяне на целият пакет към страницата."
 
 #: concrete/elements/block_area_add_stack_contents.php:18
 msgid "Full Stack"
-msgstr ""
+msgstr "Пълен пакет"
 
 #: concrete/elements/block_area_add_stack_contents.php:19
 msgid "Individual Block"
-msgstr ""
+msgstr "Индивидуален блок"
 
 #: concrete/elements/block_area_add_stack_contents.php:48
 msgid "This block is no longer available."
@@ -7866,11 +7860,11 @@ msgstr ""
 
 #: concrete/elements/workflow/type_form_required.php:21
 msgid "Are you sure you want to remove this workflow?"
-msgstr ""
+msgstr "Сигурни ли сте, че искате да премахнете тази процедура?"
 
 #: concrete/elements/workflow/type_form_required.php:31
 msgid "Delete Workflow"
-msgstr ""
+msgstr "Изтриване на процедура "
 
 #: concrete/elements/workflow/type_form_required.php:48
 #: concrete/single_pages/dashboard/reports/surveys.php:56
@@ -7886,7 +7880,7 @@ msgstr "Редактирай детайли"
 #: concrete/elements/workflow/types/basic/edit_type_form.php:3
 #: concrete/elements/workflow/types/basic/type_form.php:3
 msgid "Workflow Access"
-msgstr ""
+msgstr "Достъп до процедури"
 
 #: concrete/elements/workflow/progress/categories/file/pending.php:2
 #: concrete/elements/workflow/progress/categories/user/pending.php:2
@@ -7916,7 +7910,7 @@ msgstr "Няма."
 
 #: concrete/elements/collection_preview_as_user.php:15
 msgid "Preview As"
-msgstr ""
+msgstr "Преглед като"
 
 #: concrete/elements/collection_preview_as_user.php:17
 #: concrete/single_pages/dashboard/reports/logs.php:80
@@ -7926,7 +7920,7 @@ msgstr "Гости"
 
 #: concrete/elements/collection_preview_as_user.php:18
 msgid "Registered User"
-msgstr ""
+msgstr "Регистриран потребител"
 
 #: concrete/elements/collection_preview_as_user.php:29
 msgid "On Date"
@@ -8031,11 +8025,11 @@ msgstr "Активирани потребители"
 
 #: concrete/elements/users/search.php:11
 msgid "Group Set"
-msgstr ""
+msgstr "Групов пакет"
 
 #: concrete/elements/users/search.php:43
 msgid "Remove from Group"
-msgstr ""
+msgstr "Премахнете от група"
 
 #: concrete/elements/users/search.php:55
 msgid "Username or Email"
@@ -8050,39 +8044,39 @@ msgstr ""
 #: concrete/elements/permission/help.php:5
 #: concrete/elements/permission/help.php:6
 msgid "Label"
-msgstr ""
+msgstr "Етикет"
 
 #: concrete/elements/permission/help.php:3
 msgid "Included Users/Groups"
-msgstr ""
+msgstr "Включени потребители/групи"
 
 #: concrete/elements/permission/help.php:4
 msgid "Included Users/Groups with timed permissions"
-msgstr ""
+msgstr "Включени потребители/групи с временни права"
 
 #: concrete/elements/permission/help.php:5
 msgid "Excluded Users/Groups"
-msgstr ""
+msgstr "Изключени потребители/групи"
 
 #: concrete/elements/permission/help.php:6
 msgid "Excluded Users/Groups with timed permissions"
-msgstr ""
+msgstr "Изключени потребители/групи с временни права"
 
 #: concrete/elements/permission/keys/edit_page_properties.php:12
 #: concrete/elements/permission/keys/edit_user_properties.php:13
 msgid "Who can edit what?"
-msgstr ""
+msgstr "Кой, какво може да редактира?"
 
 #: concrete/elements/permission/keys/edit_page_properties.php:22
 #: concrete/elements/permission/keys/edit_user_properties.php:23
 #: concrete/elements/permission/keys/view_user_attributes.php:25
 msgid "All Attributes"
-msgstr ""
+msgstr "Всички атрибути"
 
 #: concrete/elements/permission/keys/edit_page_properties.php:30
 #: concrete/elements/permission/keys/edit_page_properties.php:66
 msgid "Short Description"
-msgstr ""
+msgstr "Кратко описание"
 
 #: concrete/elements/permission/keys/edit_page_properties.php:31
 #: concrete/elements/permission/keys/edit_page_properties.php:67
@@ -8092,16 +8086,16 @@ msgstr "Собственик"
 #: concrete/elements/permission/keys/edit_page_properties.php:33
 #: concrete/elements/permission/keys/edit_page_properties.php:69
 msgid "Paths"
-msgstr ""
+msgstr "Пътища"
 
 #: concrete/elements/permission/keys/edit_page_properties.php:47
 #: concrete/elements/permission/keys/edit_user_properties.php:49
 msgid "Who can't edit what?"
-msgstr ""
+msgstr "Кой, какво не може да редактира?"
 
 #: concrete/elements/permission/keys/edit_page_properties.php:58
 msgid "No Page Attributes"
-msgstr ""
+msgstr "Няма атрибути на страницата"
 
 #: concrete/elements/permission/keys/add_block.php:66
 #: concrete/elements/permission/keys/add_file.php:71
@@ -8112,13 +8106,13 @@ msgstr ""
 #: concrete/elements/permission/keys/edit_user_properties.php:84
 #: concrete/elements/permission/keys/view_user_attributes.php:68
 msgid "No users or groups selected."
-msgstr ""
+msgstr "Няма избрани потребители или групи."
 
 #: concrete/elements/permission/keys/add_block.php:14
 #: concrete/elements/permission/keys/add_file.php:16
 #: concrete/elements/permission/keys/add_subpage.php:12
 msgid "Who can add what?"
-msgstr ""
+msgstr "Кой, какво може да добавя?"
 
 #: concrete/elements/permission/keys/add_subpage.php:22
 msgid "All Page Types"
@@ -8127,25 +8121,25 @@ msgstr ""
 #: concrete/elements/permission/keys/add_subpage.php:29
 #: concrete/elements/permission/keys/add_subpage.php:60
 msgid "Allow External Links"
-msgstr ""
+msgstr "Разреши външни връзки"
 
 #: concrete/elements/permission/keys/add_block.php:40
 #: concrete/elements/permission/keys/add_file.php:44
 #: concrete/elements/permission/keys/add_subpage.php:43
 msgid "Who can't add what?"
-msgstr ""
+msgstr "Кой, какво не може да добавя?"
 
 #: concrete/elements/permission/keys/add_subpage.php:53
 msgid "No Page Types"
-msgstr ""
+msgstr "Няма типове страници"
 
 #: concrete/elements/permission/keys/add_block.php:24
 msgid "All Block Types"
-msgstr ""
+msgstr "Всички типове блокове"
 
 #: concrete/elements/permission/keys/add_block.php:50
 msgid "No Block Types"
-msgstr ""
+msgstr "Няма типове блок"
 
 #: concrete/elements/permission/keys/edit_page_theme.php:12
 msgid "Who can set what?"
@@ -8153,7 +8147,7 @@ msgstr ""
 
 #: concrete/elements/permission/keys/edit_page_theme.php:22
 msgid "All Themes"
-msgstr ""
+msgstr "Всички теми"
 
 #: concrete/elements/permission/keys/edit_page_theme.php:39
 msgid "Who can't set what?"
@@ -8161,40 +8155,40 @@ msgstr ""
 
 #: concrete/elements/permission/keys/edit_page_theme.php:49
 msgid "No Themes"
-msgstr ""
+msgstr "Няма теми"
 
 #: concrete/elements/permission/keys/view_user_attributes.php:15
 msgid "Who can view what?"
-msgstr ""
+msgstr "Кой, какво може да преглежда?"
 
 #: concrete/elements/permission/keys/view_user_attributes.php:41
 msgid "Who can't view what?"
-msgstr ""
+msgstr "Кой, какво не може да преглежда?"
 
 #: concrete/elements/permission/keys/edit_user_properties.php:60
 #: concrete/elements/permission/keys/view_user_attributes.php:51
 msgid "No Attributes"
-msgstr ""
+msgstr "Няма атрибути"
 
 #: concrete/elements/permission/keys/add_file.php:26
 msgid "All File Types"
-msgstr ""
+msgstr "Всички типове файлове"
 
 #: concrete/elements/permission/keys/add_file.php:54
 msgid "No File Types"
-msgstr ""
+msgstr "Няма типове файлове"
 
 #: concrete/elements/permission/keys/assign_user_groups.php:21
 msgid "Who can assign what?"
-msgstr ""
+msgstr "Кой, какво може да задава?"
 
 #: concrete/elements/permission/keys/assign_user_groups.php:47
 msgid "Who can't assign what?"
-msgstr ""
+msgstr "Кой, какво не може да задава?"
 
 #: concrete/elements/permission/keys/assign_user_groups.php:57
 msgid "No Groups"
-msgstr ""
+msgstr "Няма групи"
 
 #: concrete/elements/permission/keys/edit_user_properties.php:33
 #: concrete/elements/permission/keys/edit_user_properties.php:70
@@ -8212,11 +8206,11 @@ msgstr "Часова зона"
 #: concrete/elements/permission/keys/edit_user_properties.php:72
 #: concrete/single_pages/dashboard/system/basics/multilingual/view.php:30
 msgid "Default Language"
-msgstr ""
+msgstr "Език по подразбиране"
 
 #: concrete/elements/permission/clipboard.php:7
 msgid "Paste"
-msgstr ""
+msgstr "постави"
 
 #: concrete/elements/permission/duration.php:6
 msgid "** Options"
@@ -8224,15 +8218,15 @@ msgstr ""
 
 #: concrete/elements/permission/duration.php:7
 msgid "Every Day"
-msgstr ""
+msgstr "Всеки ден"
 
 #: concrete/elements/permission/duration.php:8
 msgid "Every Week"
-msgstr ""
+msgstr "Всяка седмица"
 
 #: concrete/elements/permission/duration.php:9
 msgid "Every Month"
-msgstr ""
+msgstr "Всеки месец"
 
 #: concrete/elements/permission/duration.php:73
 msgctxt "Start date"
@@ -8242,7 +8236,7 @@ msgstr "Подател"
 #: concrete/elements/permission/duration.php:76
 #: concrete/elements/permission/duration.php:84
 msgid "All Day"
-msgstr ""
+msgstr "Цял ден"
 
 #: concrete/elements/permission/duration.php:81
 msgctxt "End date"
@@ -8251,53 +8245,53 @@ msgstr "До"
 
 #: concrete/elements/permission/duration.php:95
 msgid "Repeat..."
-msgstr ""
+msgstr "Повтаря..."
 
 #: concrete/elements/permission/duration.php:103
 msgid "Repeats"
-msgstr ""
+msgstr "Повторения"
 
 #: concrete/elements/permission/duration.php:112
 #: concrete/elements/permission/duration.php:133
 #: concrete/elements/permission/duration.php:166
 msgid "Repeat every"
-msgstr ""
+msgstr "Повтори всеки"
 
 #: concrete/elements/permission/duration.php:115
 msgid "days"
-msgstr ""
+msgstr "дни"
 
 #: concrete/elements/permission/duration.php:125
 msgid "Repeat By"
-msgstr ""
+msgstr "Повтаряне по"
 
 #: concrete/elements/permission/duration.php:127
 msgid "Day of Month"
-msgstr ""
+msgstr "Ден от месеца"
 
 #: concrete/elements/permission/duration.php:128
 msgid "Day of Week"
-msgstr ""
+msgstr "Ден от седмицата"
 
 #: concrete/elements/permission/duration.php:136
 msgid "months"
-msgstr ""
+msgstr "месеци"
 
 #: concrete/elements/permission/duration.php:149
 msgid "On"
-msgstr ""
+msgstr "на"
 
 #: concrete/elements/permission/duration.php:169
 msgid "weeks"
-msgstr ""
+msgstr "седмици"
 
 #: concrete/elements/permission/duration.php:180
 msgid "Starts On"
-msgstr ""
+msgstr "Започва на"
 
 #: concrete/elements/permission/duration.php:187
 msgid "Ends"
-msgstr ""
+msgstr "Свършва"
 
 #: concrete/elements/permission/details/block/timed_guest_access.php:33
 msgid "When should guests be able to view this block?"
@@ -8309,15 +8303,15 @@ msgstr ""
 
 #: concrete/elements/permission/message_list.php:13
 msgid "Workflow Options saved."
-msgstr ""
+msgstr "Процедурните опции са запазени."
 
 #: concrete/elements/permission/message_list.php:15
 msgid "User/Group Removed"
-msgstr ""
+msgstr "Потребителят/групата е премахната"
 
 #: concrete/elements/permission/message_list.php:17
 msgid "User/Group Added"
-msgstr ""
+msgstr "Потребителят/групата е добавен/а"
 
 #: concrete/elements/permission/detail.php:77
 msgid "Attach a workflow to this permission?"
@@ -8366,16 +8360,16 @@ msgstr ""
 msgid ""
 "Permissions for this block are currently dependent on the area containing "
 "this block."
-msgstr ""
+msgstr "Правата за този блок зависят от областта в която се съдържа."
 
 #: concrete/elements/permission/lists/block.php:23
 msgid ""
 "Permissions for this block currently override those of the area and page."
-msgstr ""
+msgstr "Правата за този блок отхвърлят тези на областта и страницата."
 
 #: concrete/elements/permission/lists/block.php:25
 msgid "Revert to Area Permissions"
-msgstr ""
+msgstr "Връщане на правата за страницата"
 
 #: concrete/elements/permission/lists/area.php:12
 msgid "The following area permissions are inherited from a parent area. "
@@ -8386,7 +8380,7 @@ msgstr ""
 msgid ""
 "The following area permissions are inherited from an area set in "
 "<strong>%s</strong> defaults."
-msgstr ""
+msgstr "Пълномощията за тази област са наследени то област в <strong>%s</strong> по пдразбиране"
 
 #: concrete/elements/permission/lists/area.php:30
 msgid "The following area permissions are inherited from an area set on "
@@ -8395,11 +8389,11 @@ msgstr "Пълномощията за тази област са наследе�
 #: concrete/elements/permission/lists/area.php:42
 msgid ""
 "The following area permissions are inherited from the page's permissions."
-msgstr ""
+msgstr "Пълномощията за тази област са наследени от пълномощията на страницата."
 
 #: concrete/elements/permission/lists/area.php:53
 msgid "Permissions for this area currently override those of the page."
-msgstr ""
+msgstr "Правата за тази област отхвърлят тези на страницата."
 
 #: concrete/elements/permission/lists/area.php:55
 msgid "Revert to Page Permissions"
@@ -8629,6 +8623,8 @@ msgstr "ръб"
 #: concrete/blocks/video/form_setup_html.php:10
 #: concrete/blocks/youtube/form_setup_html.php:30
 #: concrete/elements/custom_style/border.php:26
+#: concrete/views/image-editor/control-sets/position.php:17
+#: concrete/views/image-editor/control-sets/position.php:67
 msgid "Width"
 msgstr "Ширина"
 
@@ -8663,28 +8659,28 @@ msgstr "CSS имена на клас(ове)"
 msgid "Additional CSS"
 msgstr "Допълнителен CSS"
 
-#: concrete/elements/block_header_view.php:87
-#: concrete/elements/block_header_view.php:91
+#: concrete/elements/block_header_view.php:89
+#: concrete/elements/block_header_view.php:93
 msgid "Do you want to delete this block?"
 msgstr "Искате ли да изтриете този блок?"
 
-#: concrete/elements/block_header_view.php:89
+#: concrete/elements/block_header_view.php:91
 msgid ""
 "Do you want to delete this block? This item is an original. If you delete "
 "it, you will delete all blocks aliased to it"
 msgstr "Искате ли да изтриете тозиблок? Това е оригиналл Ако го изтриете, ще изтриете всички свързани с него блокове"
 
-#: concrete/elements/block_header_view.php:142
-#: concrete/elements/block_header_view.php:145
+#: concrete/elements/block_header_view.php:144
+#: concrete/elements/block_header_view.php:147
 msgid "Edit Block"
 msgstr ""
 
-#: concrete/elements/block_header_view.php:145
+#: concrete/elements/block_header_view.php:147
 #, php-format
 msgid "Edit %s"
 msgstr ""
 
-#: concrete/elements/block_header_view.php:176
+#: concrete/elements/block_header_view.php:178
 msgid "Block Permissions"
 msgstr ""
 
@@ -8797,7 +8793,7 @@ msgstr "Пълен индекс на страница"
 #: concrete/views/dialogs/page/design.php:23
 #: concrete/views/panels/page/design.php:43
 msgid "Theme"
-msgstr ""
+msgstr "Тема"
 
 #: concrete/elements/pages/search.php:10
 msgid "Public Date"
@@ -8823,6 +8819,59 @@ msgstr ""
 msgid "Change Permissions - Remove Access"
 msgstr ""
 
+#: concrete/views/image-editor/filters/gaussian_blur.php:3
+msgid "Radius"
+msgstr ""
+
+#: concrete/views/image-editor/filters/sepia.php:1
+msgid "Apply a sepia tone"
+msgstr ""
+
+#: concrete/views/image-editor/filters/grayscale.php:1
+msgid "Convert image to grayscale"
+msgstr ""
+
+#: concrete/views/image-editor/filters/none.php:1
+msgid "Remove all filters"
+msgstr ""
+
+#: concrete/views/image-editor/filters/vignette.php:3
+msgid "Strength"
+msgstr ""
+
+#: concrete/views/image-editor/filters/vignette.php:9
+msgid "60%"
+msgstr ""
+
+#: concrete/views/image-editor/filters/vignette.php:20
+msgid "50%"
+msgstr ""
+
+#: concrete/views/image-editor/editor.php:58
+msgid "No view found."
+msgstr ""
+
+#: concrete/views/image-editor/control-sets/position.php:4
+msgid "Scale"
+msgstr ""
+
+#: concrete/blocks/google_map/form_setup_html.php:39
+#: concrete/blocks/video/form_setup_html.php:17
+#: concrete/blocks/youtube/form_setup_html.php:36
+#: concrete/views/image-editor/control-sets/position.php:27
+#: concrete/views/image-editor/control-sets/position.php:77
+msgid "Height"
+msgstr "Височина"
+
+#: concrete/blocks/image/composer/thumbnail.php:66
+#: concrete/views/image-editor/control-sets/position.php:59
+msgid "Crop Image"
+msgstr "Изрежи Снимката"
+
+#: concrete/views/image-editor/control-sets/position.php:97
+msgid "Finalize Crop"
+msgstr ""
+
 #: concrete/single_pages/dashboard/users/search.php:136
 #: concrete/views/dialogs/file/bulk/properties.php:9
 #: concrete/views/dialogs/user/bulk/properties.php:9
@@ -8839,7 +8888,7 @@ msgstr "Атрибути на страница"
 
 #: concrete/views/dialogs/page/attributes.php:9
 msgid "Selected Attributes"
-msgstr ""
+msgstr "Избрани атрибути"
 
 #: concrete/views/dialogs/search/customize.php:10
 msgid "Choose Columns"
@@ -9128,7 +9177,7 @@ msgstr ""
 #: concrete/single_pages/dashboard/blocks/stacks/viewBAK.php:218
 #: concrete/views/panels/add.php:27
 msgid "Stacks"
-msgstr ""
+msgstr "Пакети"
 
 #: concrete/views/panels/add.php:31
 msgid "Gathering Tiles"
@@ -9245,7 +9294,6 @@ msgid "Site Information"
 msgstr ""
 
 #: concrete/config/install/base/dashboard.xml:472
-#: concrete/config/install/packages/standard/content.xml:239
 #: concrete/single_pages/dashboard/system/basics/name.php:7
 #: concrete/views/frontend/install.php:144
 msgid "Site Name"
@@ -9424,7 +9472,7 @@ msgstr ""
 
 #: concrete/mail/basic_workflow_notification.php:5
 msgid "Workflow Notification"
-msgstr ""
+msgstr "процедурно известие"
 
 #: concrete/mail/basic_workflow_notification.php:6
 #, php-format
@@ -9440,40 +9488,40 @@ msgstr ""
 
 #: concrete/mail/user_register.php:4
 msgid "Registration - A New User Has Registered"
-msgstr ""
+msgstr "Регистрация - Нов потребител се е регистрирал"
 
 #: concrete/mail/user_register.php:12 concrete/mail/user_register.php:41
 msgid "New User Registration"
-msgstr ""
+msgstr "Регистрация на нов потребител"
 
 #: concrete/mail/user_register.php:13 concrete/mail/user_register.php:43
 msgid "A new user has registered on your website."
-msgstr ""
+msgstr "Нов потребител се е регистрирал във Вашият сайт."
 
 #: concrete/mail/user_register.php:15 concrete/mail/user_register.php:45
 #: concrete/mail/user_register_approval_required.php:14
 #: concrete/mail/user_register_approval_required.php:43
 msgid "User Name"
-msgstr ""
+msgstr "Потребителско име"
 
 #: concrete/mail/user_register.php:26 concrete/mail/user_register.php:56
 msgid "This account may be managed directly at"
-msgstr ""
+msgstr "Този акаунт може да бъде управляван директно на"
 
 #: concrete/mail/user_registered_approval_complete.php:4
 msgid "Registration Approved"
-msgstr ""
+msgstr "Регистрацията е одобрена "
 
 #: concrete/mail/user_registered_approval_complete.php:12
 #: concrete/mail/user_registered_approval_complete.php:29
 msgid "Welcome to"
-msgstr ""
+msgstr "Добре дошли в"
 
 #: concrete/mail/user_registered_approval_complete.php:13
 #: concrete/mail/user_registered_approval_complete.php:31
 msgid ""
 "Your registration has been approved. You can log into your new account here"
-msgstr ""
+msgstr "Вашата регистрация беше одобрена. Можете да влезете в Вашият нов акаунт тук"
 
 #: concrete/mail/won_badge.php:5
 msgid "You Won a Badge!"
@@ -9533,7 +9581,7 @@ msgstr "Изпратено Ви бе съобщение от %s чрез про�
 msgid ""
 "Message:\n"
 "%s"
-msgstr ""
+msgstr "Съобщение:\n %s"
 
 #: concrete/mail/private_message.php:14
 #: concrete/mail/private_message_admin_warning.php:10
@@ -9554,17 +9602,17 @@ msgstr ""
 
 #: concrete/mail/mail_importer_error.php:6
 msgid "There was a problem processing your email."
-msgstr ""
+msgstr "Възникна проблем при обработването на емайла."
 
 #: concrete/mail/mail_importer_error.php:10
 #, php-format
 msgid "Error: %s"
-msgstr ""
+msgstr "Грешка: %s "
 
 #: concrete/mail/private_message_admin_warning.php:4
 #, php-format
 msgid "Private message limit exceeded for user: %s on %s"
-msgstr ""
+msgstr "Лимитът за лични съобщения е превишен за потребител:  %s на  %s "
 
 #: concrete/mail/private_message_admin_warning.php:8
 msgid ""
@@ -9585,31 +9633,31 @@ msgid ""
 "Someone has attempted to send you spam through your website. Details below:\n"
 "\n"
 "%s"
-msgstr ""
+msgstr "\n\nНякой се опита да Ви изпрати спам през Вашият сайт. Детайли:\n\n%s"
 
 #: concrete/mail/user_register_approval_required.php:4
 msgid "Registration - Approval Required"
-msgstr ""
+msgstr "Регистрация - Изисква одобрение"
 
 #: concrete/mail/user_register_approval_required.php:12
 #: concrete/mail/user_register_approval_required.php:39
 msgid "Registration Approval Required"
-msgstr ""
+msgstr "Изисква се одобрение за регистрация"
 
 #: concrete/mail/user_register_approval_required.php:13
 #: concrete/mail/user_register_approval_required.php:41
 msgid ""
 "A new user has registered on your website. This account must be approved "
 "before it is active and may login."
-msgstr ""
+msgstr "Нов потребител се е регистрирал във Вашият сайт. Този акаунт трябва да бъде одобрен преди да се активира и да бъде достъпен."
 
 #: concrete/mail/user_register_approval_required.php:17
 msgid "You may approve or remove this user account here:"
-msgstr ""
+msgstr "Вие можете да одобрите или премахнете този потребителски акунт тук:"
 
 #: concrete/mail/user_register_approval_required.php:54
 msgid "You may approve or remove this user account here"
-msgstr ""
+msgstr "Вие можете да одобрите или премахнете този потребителски акунт тук"
 
 #: concrete/mail/facebook_account_connect_validate.php:3
 #, php-format
@@ -9646,7 +9694,7 @@ msgid ""
 "\n"
 "Thanks for your interest in %s\n"
 "\n"
-msgstr ""
+msgstr "\n\nТрябва да натиснете следният линк за да активирате Вашият акаунт за %s:\n\n %s\n\nБлагодарим Ви за интересът към %s\n"
 
 #: concrete/mail/block_guestbook_notification.php:4
 #, php-format
@@ -9673,21 +9721,13 @@ msgid ""
 "\n"
 msgstr ""
 
-#: concrete/config/install/packages/bootstrap/controller.php:8
+#: concrete/config/install/packages/elemental_blank/controller.php:10
 msgid "Empty Site"
 msgstr "Празен Сайт"
 
-#: concrete/config/install/packages/bootstrap/controller.php:12
-msgid "Creates an empty site using a basic plain Bootstrap theme."
+#: concrete/config/install/packages/elemental_blank/controller.php:14
+msgid "Creates an empty site using the unstyled Elemental theme."
 msgstr ""
-
-#: concrete/config/install/packages/standard/controller.php:8
-msgid "Sample Content with Blog"
-msgstr "Пробно съдържание с Блог"
-
-#: concrete/config/install/packages/standard/controller.php:12
-msgid "A great starting point for an attractive website with a blog."
-msgstr "Страхотна начална точка за атрактивен уеб сайт с блог."
 
 #: concrete/config/file_types.php:17
 msgid "JPEG"
@@ -9897,12 +9937,6 @@ msgstr "Въведете число от 0 до 21, като 21 е с най-м�
 #: concrete/blocks/google_map/form_setup_html.php:32
 msgid "Map Size"
 msgstr ""
-
-#: concrete/blocks/google_map/form_setup_html.php:39
-#: concrete/blocks/video/form_setup_html.php:17
-#: concrete/blocks/youtube/form_setup_html.php:36
-msgid "Height"
-msgstr "Височина"
 
 #: concrete/blocks/google_map/scrapbook.php:4
 #, php-format
@@ -10382,10 +10416,6 @@ msgid "Actual Height"
 msgstr "Реална височина"
 
 #: concrete/blocks/image/composer/thumbnail.php:66
-msgid "Crop Image"
-msgstr "Изрежи Снимката"
-
-#: concrete/blocks/image/composer/thumbnail.php:66
 msgid "Crop + Upload Image"
 msgstr "Рязане + качване на изображение"
 
@@ -10449,11 +10479,11 @@ msgstr "Форсиране на точно съвпадение"
 msgid "Adds images and onstates from the library to pages."
 msgstr "Добавя картинките и състоянията от библиотеката по страниците."
 
-#: concrete/blocks/image/controller.php:86
+#: concrete/blocks/image/controller.php:84
 msgid "You must select an image."
 msgstr "Трябва да изберете картинка."
 
-#: concrete/blocks/image/controller.php:139
+#: concrete/blocks/image/controller.php:137
 msgid "You must specify a valid image file."
 msgstr ""
 
@@ -11103,23 +11133,11 @@ msgstr "най-добро"
 msgid "Minimum Version"
 msgstr "Минимална версия"
 
-#: concrete/blocks/search/controller.php:37
-msgid "Please enter your Search Title."
-msgstr "Моля въведете Заглавие за търсене."
-
-#: concrete/blocks/search/controller.php:40
-msgid "Please enter your Submit Button Text."
-msgstr "Моля въведете вашия текст за Бутона за изпращане"
-
-#: concrete/blocks/search/controller.php:89
+#: concrete/blocks/search/controller.php:77
 msgid "Add a search box to your site."
 msgstr "Добавяне на поле за търсене в сайта."
 
-#: concrete/blocks/search/controller.php:97
-msgid "Please enter a valid search title."
-msgstr "Въведете валидно заглавие за търсене."
-
-#: concrete/blocks/search/view.php:27
+#: concrete/blocks/search/view.php:28
 msgid "There were no results found. Please try another keyword or phrase."
 msgstr "Не са намерени резултати. Опитайте с друга ключова дума или фраза."
 
@@ -11649,7 +11667,7 @@ msgstr ""
 
 #: concrete/attributes/textarea/type_form.php:2
 msgid "Text Area Options"
-msgstr ""
+msgstr "Опции за текстовата област"
 
 #: concrete/attributes/textarea/type_form.php:5
 msgid "Input Format"
@@ -11750,7 +11768,7 @@ msgstr "Пощенски код"
 
 #: concrete/attributes/address/type_form.php:17
 msgid "Address Options"
-msgstr ""
+msgstr "Опции за адреса"
 
 #: concrete/attributes/address/type_form.php:20
 msgid "Available Countries"
@@ -11778,7 +11796,7 @@ msgstr "Страната по подразбирани трябва да бъд�
 
 #: concrete/attributes/date_time/type_form.php:2
 msgid "Date/Time Options"
-msgstr ""
+msgstr "Опции за дата/час"
 
 #: concrete/attributes/date_time/type_form.php:5
 msgid "Ask User For"
@@ -11820,7 +11838,7 @@ msgstr "Добавяне на опция"
 
 #: concrete/attributes/select/type_form.php:42
 msgid "Select Options"
-msgstr ""
+msgstr "Избери опции"
 
 #: concrete/attributes/select/type_form.php:48
 msgid "Allow multiple options to be chosen."
@@ -11828,7 +11846,7 @@ msgstr "Разрешава избирането на множество опци
 
 #: concrete/attributes/select/type_form.php:54
 msgid "User Submissions"
-msgstr ""
+msgstr "Потребителски подавания"
 
 #: concrete/attributes/select/type_form.php:63
 msgid "Option Order"
@@ -11888,7 +11906,7 @@ msgstr ""
 
 #: concrete/attributes/boolean/type_form.php:2
 msgid "Checkbox Options"
-msgstr ""
+msgstr "Опции на отметките"
 
 #: concrete/attributes/boolean/type_form.php:5
 msgid "Default Value"
@@ -12473,7 +12491,7 @@ msgstr ""
 
 #: concrete/single_pages/dashboard/blocks/types/view.php:69
 msgid "More Add-ons"
-msgstr ""
+msgstr "Още добавки"
 
 #: concrete/single_pages/dashboard/blocks/types/view.php:70
 msgid "Browse our marketplace of add-ons to extend your site!"
@@ -12489,7 +12507,7 @@ msgstr ""
 
 #: concrete/single_pages/dashboard/blocks/permissions.php:8
 msgid "Block &amp; Stack Permissions"
-msgstr ""
+msgstr "Блокирай &amp; права на комплектите"
 
 #: concrete/single_pages/dashboard/blocks/permissions.php:17
 msgid "You cannot access these permissions."
@@ -12518,14 +12536,14 @@ msgstr ""
 
 #: concrete/single_pages/dashboard/blocks/stacks/viewBAK.php:66
 msgid "Are you sure you want to remove this stack?"
-msgstr ""
+msgstr "Сигурни ли сте, че искате да премахнете този пакет?"
 
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:63
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:105
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:153
 #: concrete/single_pages/dashboard/blocks/stacks/viewBAK.php:66
 msgid "Delete Stack"
-msgstr ""
+msgstr "Изтрий пакет"
 
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:60
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:166
@@ -12537,7 +12555,7 @@ msgstr ""
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:23
 #: concrete/single_pages/dashboard/blocks/stacks/viewBAK.php:88
 msgid "Approve Changes"
-msgstr ""
+msgstr "Потвърди промени"
 
 #: concrete/single_pages/dashboard/blocks/stacks/viewBAK.php:176
 #, php-format
@@ -12566,12 +12584,12 @@ msgstr ""
 
 #: concrete/single_pages/dashboard/blocks/stacks/viewBAK.php:245
 msgid "Other Stacks"
-msgstr ""
+msgstr "Други пакети"
 
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:218
 #: concrete/single_pages/dashboard/blocks/stacks/viewBAK.php:262
 msgid "No stacks have been added."
-msgstr ""
+msgstr "Няма добавени пакети."
 
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:37
 msgid "Back to Stacks"
@@ -12790,7 +12808,7 @@ msgstr "Не са намерени групи."
 #: concrete/config/install/base/dashboard.xml:155
 #: concrete/single_pages/dashboard/users/group_sets.php:106
 msgid "Group Sets"
-msgstr ""
+msgstr "Групови пакети"
 
 #: concrete/single_pages/dashboard/users/group_sets.php:123
 msgid "You have not added any group sets."
@@ -13278,11 +13296,7 @@ msgstr ""
 msgid "Show errors in page."
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/permissions/files.php:9
-msgid "File Permissions"
-msgstr "Пълномощия за файл"
-
-#: concrete/single_pages/dashboard/system/permissions/files.php:19
+#: concrete/single_pages/dashboard/system/permissions/files.php:17
 #: concrete/single_pages/dashboard/system/permissions/tasks.php:17
 #: concrete/single_pages/dashboard/system/permissions/users.php:17
 msgid "You cannot access task permissions."
@@ -13423,7 +13437,7 @@ msgstr "Правомощия за действия"
 #: concrete/config/install/base/dashboard.xml:610
 #: concrete/single_pages/dashboard/system/permissions/users.php:8
 msgid "User Permissions"
-msgstr ""
+msgstr "Потребителски права"
 
 #: concrete/single_pages/dashboard/system/permissions/blacklist.php:6
 msgid "IP Address Blacklist"
@@ -14977,7 +14991,7 @@ msgstr "Всичко на куп"
 #: concrete/config/install/base/dashboard.xml:9
 #: concrete/config/install/base/dashboard.xml:16
 msgid "pages, add page, delete page, copy, move, alias"
-msgstr ""
+msgstr "страници, добави страница, изтрий страница, копирай, премести, псевдоним"
 
 #. Keywords for page /dashboard/sitemap/explore
 #: concrete/config/install/base/dashboard.xml:29
@@ -14991,7 +15005,7 @@ msgstr "Търсене в страниците"
 #. Keywords for page /dashboard/sitemap/search
 #: concrete/config/install/base/dashboard.xml:39
 msgid "find page, search page, search, find, pages, sitemap"
-msgstr ""
+msgstr "намери страница, търси страница, намери, страници, карта на сайта"
 
 #: concrete/config/install/base/dashboard.xml:46
 msgid "All documents and images."
@@ -15002,12 +15016,12 @@ msgstr "Всички документи иизображения"
 msgid ""
 "add file, delete file, copy, move, alias, resize, crop, rename, images, "
 "title, attribute"
-msgstr ""
+msgstr "добави файл, изтрий файл, премести, псевдоним, промени размера, изрежи, преименувай, изображения, заглавие, атрибути "
 
 #. Keywords for page /dashboard/files/attributes
 #: concrete/config/install/base/dashboard.xml:60
 msgid "file, file attributes, title, attribute, description, rename"
-msgstr ""
+msgstr "файл, файлови атрибути, заглавие, атрибути, описание, преименувай "
 
 #: concrete/config/install/base/dashboard.xml:67
 msgid "File Sets"
@@ -15016,12 +15030,12 @@ msgstr "Групи файлове"
 #. Keywords for page /dashboard/files/sets
 #: concrete/config/install/base/dashboard.xml:70
 msgid "files, category, categories"
-msgstr ""
+msgstr "файлове, категория, категории"
 
 #. Keywords for page /dashboard/files/add_set
 #: concrete/config/install/base/dashboard.xml:83
 msgid "new file set"
-msgstr ""
+msgstr "нов файлов комплект"
 
 #: concrete/config/install/base/dashboard.xml:90
 msgid "Add and manage the user accounts and groups on your website."
@@ -15032,7 +15046,7 @@ msgstr ""
 msgid ""
 "users, groups, people, find, delete user, remove user, change password, "
 "password"
-msgstr ""
+msgstr "потребители, групи, хора, намери, изтрий потребител, премахни потребител, промени парола, парола"
 
 #: concrete/config/install/base/dashboard.xml:97
 msgid "Search Users"
@@ -15042,7 +15056,7 @@ msgstr ""
 #: concrete/config/install/base/dashboard.xml:100
 msgid ""
 "find, search, people, delete user, remove user, change password, password"
-msgstr ""
+msgstr "намери, търсене, хора, изтрий потребител, премахни потребител, промени парола, парола"
 
 #: concrete/config/install/base/dashboard.xml:107
 msgid "User Groups"
@@ -15056,17 +15070,17 @@ msgstr ""
 #. Keywords for page /dashboard/users/attributes
 #: concrete/config/install/base/dashboard.xml:120
 msgid "user attributes, user data, gather data, registration data"
-msgstr ""
+msgstr "потребителски атрибути, потребителски данни, събиране на данни, регистриране на данни"
 
 #. Keywords for page /dashboard/users/add
 #: concrete/config/install/base/dashboard.xml:130
 msgid "new user, create"
-msgstr ""
+msgstr "нов потребител, създай"
 
 #. Keywords for page /dashboard/users/add_group
 #: concrete/config/install/base/dashboard.xml:143
 msgid "new user group, new group, group, create"
-msgstr ""
+msgstr "нова потребителска група, нова група, група, създай"
 
 #: concrete/config/install/base/dashboard.xml:153
 msgid "Move Multiple Groups"
@@ -15075,7 +15089,7 @@ msgstr ""
 #. Keywords for page /dashboard/users/group_sets
 #: concrete/config/install/base/dashboard.xml:158
 msgid "group set"
-msgstr ""
+msgstr "групов пакет"
 
 #. Keywords for page /dashboard/users/points
 #: concrete/config/install/base/dashboard.xml:168
@@ -15098,7 +15112,7 @@ msgstr "Извличане на данни от форми."
 #. Keywords for page /dashboard/reports
 #: concrete/config/install/base/dashboard.xml:188
 msgid "forms, log, error, email, mysql, exception, survey"
-msgstr ""
+msgstr "форми, лог, грешка, mysql, изключение, проучване"
 
 #: concrete/config/install/base/dashboard.xml:192
 msgid "View your site activity."
@@ -15107,7 +15121,7 @@ msgstr ""
 #. Keywords for page /dashboard/reports/statistics
 #: concrete/config/install/base/dashboard.xml:195
 msgid "hits, pageviews, visitors, activity"
-msgstr ""
+msgstr "попадения, прегледи на страницата, посетители, активност"
 
 #: concrete/config/install/base/dashboard.xml:202
 msgid "Get submission data."
@@ -15116,12 +15130,12 @@ msgstr "Приемане на изпратени данни."
 #. Keywords for page /dashboard/reports/forms
 #: concrete/config/install/base/dashboard.xml:205
 msgid "forms, questions, response, data"
-msgstr ""
+msgstr "форми, въпроси, отговор, данни"
 
 #. Keywords for page /dashboard/reports/surveys
 #: concrete/config/install/base/dashboard.xml:215
 msgid "questions, quiz, response"
-msgstr ""
+msgstr "въпроси, тест, отговор"
 
 #: concrete/config/install/base/dashboard.xml:222
 msgid "Logs"
@@ -15130,7 +15144,7 @@ msgstr "Логове"
 #. Keywords for page /dashboard/reports/logs
 #: concrete/config/install/base/dashboard.xml:225
 msgid "forms, log, error, email, mysql, exception, survey, history"
-msgstr ""
+msgstr "форми, лог, грешка, емайл, изключение, проучване, история"
 
 #: concrete/config/install/base/dashboard.xml:232
 #: concrete/config/install/base/dashboard.xml:233
@@ -15140,12 +15154,12 @@ msgstr "\"Преобличане\" на сайта."
 #. Keywords for page /dashboard/pages/themes
 #: concrete/config/install/base/dashboard.xml:236
 msgid "new theme, theme, active theme, change theme, template, css"
-msgstr ""
+msgstr "нова тема, тема, активна тема, промени тема, темплейт, css"
 
 #. Keywords for page /dashboard/pages/themes/inspect
 #: concrete/config/install/base/dashboard.xml:246
 msgid "page types"
-msgstr ""
+msgstr "типове старница"
 
 #. Keywords for page /dashboard/pages/themes/customize
 #: concrete/config/install/base/dashboard.xml:256
@@ -15189,7 +15203,7 @@ msgstr ""
 #. Keywords for page /dashboard/workflow
 #: concrete/config/install/base/dashboard.xml:349
 msgid "add workflow, remove workflow"
-msgstr ""
+msgstr "добави процедура, премахни процедура"
 
 #: concrete/config/install/base/dashboard.xml:353
 msgid "Workflow List"
@@ -15275,7 +15289,7 @@ msgstr ""
 #. Keywords for page /dashboard/extend/update
 #: concrete/config/install/base/dashboard.xml:439
 msgid "update, upgrade"
-msgstr ""
+msgstr "обнови, надгради"
 
 #: concrete/config/install/base/dashboard.xml:443
 msgid "Connect to the Community"
@@ -15288,7 +15302,7 @@ msgstr ""
 #. Keywords for page /dashboard/extend/connect
 #: concrete/config/install/base/dashboard.xml:446
 msgid "concrete5.org, my account, marketplace"
-msgstr ""
+msgstr "concrete5.org, моят акаунт, marketplace"
 
 #: concrete/config/install/base/dashboard.xml:450
 msgid "Download themes from concrete5.org."
@@ -15297,7 +15311,7 @@ msgstr ""
 #. Keywords for page /dashboard/extend/themes
 #: concrete/config/install/base/dashboard.xml:453
 msgid "buy theme, new theme, marketplace, template"
-msgstr ""
+msgstr "купи тема, нова тема, marketplace, темплейт"
 
 #: concrete/config/install/base/dashboard.xml:457
 msgid "Get More Add-Ons"
@@ -15330,7 +15344,7 @@ msgstr ""
 #. Keywords for page /dashboard/system/basics/name
 #: concrete/config/install/base/dashboard.xml:475
 msgid "website name, title"
-msgstr ""
+msgstr "име на уебсайта, заглавие"
 
 #: concrete/config/install/base/dashboard.xml:479
 msgid "Bookmark icon and mobile home screen icon setup."
@@ -15339,7 +15353,7 @@ msgstr ""
 #. Keywords for page /dashboard/system/basics/icons
 #: concrete/config/install/base/dashboard.xml:482
 msgid "logo, favicon, iphone, icon, bookmark"
-msgstr ""
+msgstr "лого, favicon, iphone, икона, показалец"
 
 #. Keywords for page /dashboard/system/basics/editor
 #: concrete/config/install/base/dashboard.xml:489
@@ -15353,12 +15367,12 @@ msgstr ""
 #. Keywords for page /dashboard/system/basics/multilingual
 #: concrete/config/install/base/dashboard.xml:496
 msgid "translate, translation, internationalization, multilingual"
-msgstr ""
+msgstr "преведи, превод, интернационализация, многоезиков"
 
 #. Keywords for page /dashboard/system/basics/timezone
 #: concrete/config/install/base/dashboard.xml:503
 msgid "timezone, profile, locale"
-msgstr ""
+msgstr "яасова зона, профил, място"
 
 #: concrete/config/install/base/dashboard.xml:507
 msgid "Interface Preferences"
@@ -15367,7 +15381,7 @@ msgstr ""
 #. Keywords for page /dashboard/system/basics/images
 #: concrete/config/install/base/dashboard.xml:510
 msgid "interface, quick nav, dashboard background, background image"
-msgstr ""
+msgstr "интерфейс, бърза навигация, фон на таблото, фоново изобраьение"
 
 #: concrete/config/install/base/dashboard.xml:515
 msgid "SEO & Statistics"
@@ -15384,7 +15398,7 @@ msgstr ""
 #. Keywords for page /dashboard/system/seo/urls
 #: concrete/config/install/base/dashboard.xml:519
 msgid "vanity, pretty url, seo, pageview, view"
-msgstr ""
+msgstr "суета, красив адрес, изглед на страницата, изглед"
 
 #. Keywords for page /dashboard/system/seo/bulk
 #: concrete/config/install/base/dashboard.xml:526
@@ -15413,7 +15427,7 @@ msgstr ""
 #. Keywords for page /dashboard/system/seo/searchindex
 #: concrete/config/install/base/dashboard.xml:554
 msgid "configure search, site search, search option"
-msgstr ""
+msgstr "настройка на търсенето, търсене в сайта, опции за търсене"
 
 #: concrete/config/install/base/dashboard.xml:558
 msgid "Optimization"
@@ -15432,12 +15446,12 @@ msgstr ""
 msgid ""
 "cache option, change cache, override, turn on cache, turn off cache, no "
 "cache, page cache, caching"
-msgstr ""
+msgstr "кеш опции, промени кеш, отменен, включи кеш, изключи кеш, няма кеш, кеш на страница, кеширане"
 
 #. Keywords for page /dashboard/system/optimization/clearcache
 #: concrete/config/install/base/dashboard.xml:569
 msgid "cache option, turn off cache, no cache, page cache, caching"
-msgstr ""
+msgstr "кеш опции, изключи кеш, няма кеш, кеш на страница, кеширане"
 
 #. Keywords for page /dashboard/system/optimization/jobs
 #: concrete/config/install/base/dashboard.xml:576
@@ -15457,7 +15471,7 @@ msgstr ""
 #. Keywords for page /dashboard/system/permissions/site
 #: concrete/config/install/base/dashboard.xml:585
 msgid "editors, hide site, offline, private, public, access"
-msgstr ""
+msgstr "редактори, скрий сайт, извън линия, личен, обществен, достъп"
 
 #: concrete/config/install/base/dashboard.xml:589
 msgid "File Manager Permissions"
@@ -15466,21 +15480,21 @@ msgstr ""
 #. Keywords for page /dashboard/system/permissions/files
 #: concrete/config/install/base/dashboard.xml:592
 msgid "file options, file manager, upload, modify"
-msgstr ""
+msgstr "файлови опции, файлов мениджър, качи, видоизмени"
 
 #. Keywords for page /dashboard/system/permissions/filetypes
 #: concrete/config/install/base/dashboard.xml:599
 msgid "security, files, media, extension, manager, upload"
-msgstr ""
+msgstr "защита, файлове, медия, разширение, мениджър, качи"
 
 #. Keywords for page /dashboard/system/permissions/tasks
 #: concrete/config/install/base/dashboard.xml:606
 msgid "security, actions, administrator, admin, package, marketplace, search"
-msgstr ""
+msgstr "защита, действие, администратор, админ, пакет, marketplace, търсене"
 
 #: concrete/config/install/base/dashboard.xml:612
 msgid "Advanced Permissions"
-msgstr ""
+msgstr "Разширени права"
 
 #: concrete/config/install/base/dashboard.xml:614
 msgid "IP Blacklist"
@@ -15489,7 +15503,7 @@ msgstr "Черен списък на IP адреси"
 #. Keywords for page /dashboard/system/permissions/blacklist
 #: concrete/config/install/base/dashboard.xml:617
 msgid "security, lock ip, lock out, block ip, address, restrict, access"
-msgstr ""
+msgstr "защита, заключи ip, заключи, адрес, ограничен, достъп"
 
 #: concrete/config/install/base/dashboard.xml:621
 msgid "Captcha Setup"
@@ -15498,7 +15512,7 @@ msgstr ""
 #. Keywords for page /dashboard/system/permissions/captcha
 #: concrete/config/install/base/dashboard.xml:624
 msgid "security, registration"
-msgstr ""
+msgstr "защита, регистрация"
 
 #: concrete/config/install/base/dashboard.xml:628
 msgid "Spam Control"
@@ -15507,12 +15521,12 @@ msgstr ""
 #. Keywords for page /dashboard/system/permissions/antispam
 #: concrete/config/install/base/dashboard.xml:631
 msgid "antispam, block spam, security"
-msgstr ""
+msgstr "антиспам, блокирай спам, защита"
 
 #. Keywords for page /dashboard/system/permissions/maintenance
 #: concrete/config/install/base/dashboard.xml:638
 msgid "lock site, under construction, hide, hidden"
-msgstr ""
+msgstr "заключи сайт, в процес на изграждане, скрий, скрит"
 
 #: concrete/config/install/base/dashboard.xml:643
 msgid "Login & Registration"
@@ -15534,7 +15548,7 @@ msgstr "Публични профили"
 #. Keywords for page /dashboard/system/registration/profiles
 #: concrete/config/install/base/dashboard.xml:654
 msgid "member profile, member page, community, forums, social, avatar"
-msgstr ""
+msgstr "членски профил, членска страница, общество, форуми, социален аватар"
 
 #. Keywords for page /dashboard/system/registration/public
 #: concrete/config/install/base/dashboard.xml:661
@@ -15553,7 +15567,7 @@ msgstr ""
 #. Keywords for page /dashboard/system/mail
 #: concrete/config/install/base/dashboard.xml:676
 msgid "smtp, mail settings"
-msgstr ""
+msgstr "smtp, настройки на майл"
 
 #: concrete/config/install/base/dashboard.xml:680
 msgid "SMTP Method"
@@ -15562,7 +15576,7 @@ msgstr ""
 #. Keywords for page /dashboard/system/mail/method
 #: concrete/config/install/base/dashboard.xml:683
 msgid "email server, mail settings, mail configuration, external, internal"
-msgstr ""
+msgstr "имейл сървър, настройки на мейл, конфигурации на мейл, външен, вътрешен"
 
 #: concrete/config/install/base/dashboard.xml:687
 msgid "Test Mail Settings"
@@ -15582,7 +15596,7 @@ msgstr ""
 msgid ""
 "email server, mail settings, mail configuration, private message, message "
 "system, import, email, message"
-msgstr ""
+msgstr "имейл сървър, настройки на мейл, конфигурации на мейл, лично съобщение, системно съобщение, въведи, емейл, съобщение"
 
 #: concrete/config/install/base/dashboard.xml:702
 msgid "Conversations"
@@ -15628,7 +15642,7 @@ msgstr ""
 #. Keywords for page /dashboard/system/attributes
 #: concrete/config/install/base/dashboard.xml:734
 msgid "attribute configuration"
-msgstr ""
+msgstr "конфигурации на атрибут"
 
 #: concrete/config/install/base/dashboard.xml:738
 msgid "Group attributes into sets for easier organization"
@@ -15637,7 +15651,7 @@ msgstr ""
 #. Keywords for page /dashboard/system/attributes/sets
 #: concrete/config/install/base/dashboard.xml:741
 msgid "attributes, sets"
-msgstr ""
+msgstr "атрибути, комплекти"
 
 #: concrete/config/install/base/dashboard.xml:745
 msgid "Types"
@@ -15650,7 +15664,7 @@ msgstr ""
 #. Keywords for page /dashboard/system/attributes/types
 #: concrete/config/install/base/dashboard.xml:748
 msgid "attributes, types"
-msgstr ""
+msgstr "атрибути, типове"
 
 #: concrete/config/install/base/dashboard.xml:752
 msgid "Topics"
@@ -15672,7 +15686,7 @@ msgstr ""
 #. Keywords for page /dashboard/system/environment/info
 #: concrete/config/install/base/dashboard.xml:771
 msgid "overrides, system info, debug, support, help"
-msgstr ""
+msgstr "отхвърляне, системна информация, дебъгване, поддръжка, помощ"
 
 #: concrete/config/install/base/dashboard.xml:775
 msgid "Debug Settings"
@@ -15681,7 +15695,7 @@ msgstr ""
 #. Keywords for page /dashboard/system/environment/debug
 #: concrete/config/install/base/dashboard.xml:778
 msgid "errors, exceptions, develop, support, help"
-msgstr ""
+msgstr "грешка, изключение, развитие, поддръжка, помощ"
 
 #: concrete/config/install/base/dashboard.xml:782
 msgid "Logging Settings"
@@ -15699,7 +15713,7 @@ msgstr ""
 #. Keywords for page /dashboard/system/environment/storage
 #: concrete/config/install/base/dashboard.xml:792
 msgid "security, alternate storage, hide files"
-msgstr ""
+msgstr "защита, алтернативна памет, скрий файлове"
 
 #: concrete/config/install/base/dashboard.xml:798
 msgid "Proxy Server"
@@ -15721,12 +15735,12 @@ msgstr ""
 #. Keywords for page /dashboard/system/backup
 #: concrete/config/install/base/dashboard.xml:808
 msgid "export, backup, database, sql, mysql, encryption, restore"
-msgstr ""
+msgstr "извличане, резервен, база данни, sql, mysql, криптиране, възстанови "
 
 #. Keywords for page /dashboard/system/backup/update
 #: concrete/config/install/base/dashboard.xml:816
 msgid "upgrade, new version, update"
-msgstr ""
+msgstr "ъпгрейд, нова версия, обнови"
 
 #: concrete/config/install/base/dashboard.xml:824
 msgid "Dashboard Primary + Five"
@@ -15837,19 +15851,7 @@ msgid "Directory"
 msgstr ""
 
 #: concrete/config/install/base/login_registration.xml:20
-#: concrete/config/install/packages/bootstrap/content.xml:31
-#: concrete/config/install/packages/bootstrap/content.xml:40
-#: concrete/config/install/packages/standard/content.xml:79
-#: concrete/config/install/packages/standard/content.xml:124
-#: concrete/config/install/packages/standard/content.xml:154
-#: concrete/config/install/packages/standard/content.xml:184
-#: concrete/config/install/packages/standard/content.xml:271
-#: concrete/config/install/packages/standard/content.xml:310
-#: concrete/config/install/packages/standard/content.xml:334
-#: concrete/config/install/packages/standard/content.xml:436
-#: concrete/config/install/packages/standard/content.xml:457
-#: concrete/config/install/packages/standard/content.xml:541
-#: concrete/config/install/packages/standard/content.xml:585
+#: concrete/config/install/packages/elemental_blank/content.xml:29
 msgctxt "AreaName"
 msgid "Main"
 msgstr "Основен"
@@ -16191,7 +16193,7 @@ msgstr ""
 #: concrete/config/install/base/permissions.xml:38
 msgctxt "PermissionKeyName"
 msgid "Approve Changes"
-msgstr ""
+msgstr "Потвърди промени"
 
 #: concrete/config/install/base/permissions.xml:38
 msgctxt "PermissionKeyDescription"
@@ -16740,7 +16742,7 @@ msgstr ""
 #: concrete/config/install/base/permissions.xml:229
 msgctxt "PermissionKeyName"
 msgid "View Newsflow"
-msgstr ""
+msgstr "Разгледай новините"
 
 #: concrete/config/install/base/permissions.xml:235
 msgctxt "PermissionKeyName"
@@ -16798,20 +16800,25 @@ msgstr ""
 
 #: concrete/config/install/base/image_editor.xml:14
 msgctxt "ImageEditorFilterName"
-msgid "Grayscale"
-msgstr ""
+msgid "None"
+msgstr "Нищо"
 
 #: concrete/config/install/base/image_editor.xml:15
 msgctxt "ImageEditorFilterName"
-msgid "Sepia"
+msgid "Grayscale"
 msgstr ""
 
 #: concrete/config/install/base/image_editor.xml:16
 msgctxt "ImageEditorFilterName"
-msgid "Blur"
+msgid "Sepia"
 msgstr ""
 
 #: concrete/config/install/base/image_editor.xml:17
+msgctxt "ImageEditorFilterName"
+msgid "Blur"
+msgstr ""
+
+#: concrete/config/install/base/image_editor.xml:18
 msgctxt "ImageEditorFilterName"
 msgid "Vignette"
 msgstr ""
@@ -16824,7 +16831,7 @@ msgstr "Име на страница"
 #: concrete/config/install/base/blocktypes.xml:47
 msgctxt "SystemContentEditorSnippetName"
 msgid "User Name"
-msgstr ""
+msgstr "Потребителско име"
 
 #: concrete/config/install/base/blocktypes.xml:51
 msgctxt "BlockTypeSetName"
@@ -16991,238 +16998,34 @@ msgctxt "AttributeSetName"
 msgid "Navigation and Indexing"
 msgstr ""
 
-#: concrete/config/install/packages/bootstrap/content.xml:7
-#: concrete/config/install/packages/standard/content.xml:7
-msgctxt "PageTemplateName"
-msgid "Right Sidebar"
-msgstr "Десен панел"
-
-#: concrete/config/install/packages/bootstrap/content.xml:8
-msgctxt "PageTemplateName"
-msgid "Two Column"
-msgstr ""
-
-#: concrete/config/install/packages/bootstrap/content.xml:9
-#: concrete/config/install/packages/standard/content.xml:9
+#: concrete/config/install/packages/elemental_blank/content.xml:7
 msgctxt "PageTemplateName"
 msgid "Full"
 msgstr "Изцяло"
 
-#: concrete/config/install/packages/bootstrap/content.xml:12
-#: concrete/config/install/packages/standard/content.xml:89
+#: concrete/config/install/packages/elemental_blank/content.xml:10
 msgid "Page"
 msgstr "Страница"
 
-#: concrete/config/install/packages/bootstrap/content.xml:17
-#: concrete/config/install/packages/standard/content.xml:36
-#: concrete/config/install/packages/standard/content.xml:94
+#: concrete/config/install/packages/elemental_blank/content.xml:15
 msgctxt "PageTypeComposerFormLayoutSetName"
 msgid "Basics"
 msgstr ""
 
-#: concrete/config/install/packages/bootstrap/content.xml:18
-#: concrete/config/install/packages/standard/content.xml:95
+#: concrete/config/install/packages/elemental_blank/content.xml:16
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Page Name"
 msgstr "Име на страница"
 
-#: concrete/config/install/packages/bootstrap/content.xml:24
-#: concrete/config/install/packages/standard/content.xml:50
-#: concrete/config/install/packages/standard/content.xml:101
+#: concrete/config/install/packages/elemental_blank/content.xml:22
 msgctxt "PageTypeComposerFormLayoutSetName"
 msgid "Content"
 msgstr "Съдържание"
 
-#: concrete/config/install/packages/bootstrap/content.xml:25
-#: concrete/config/install/packages/standard/content.xml:51
-#: concrete/config/install/packages/standard/content.xml:102
+#: concrete/config/install/packages/elemental_blank/content.xml:23
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Body"
 msgstr "Съдържание"
-
-#: concrete/config/install/packages/standard/content.xml:8
-msgctxt "PageTemplateName"
-msgid "Left Sidebar"
-msgstr "Ляв панел"
-
-#: concrete/config/install/packages/standard/content.xml:10
-msgctxt "PageTemplateName"
-msgid "Blog Entry"
-msgstr ""
-
-#: concrete/config/install/packages/standard/content.xml:13
-msgctxt "AttributeKeyName"
-msgid "Tags"
-msgstr "Етикети"
-
-#: concrete/config/install/packages/standard/content.xml:16
-msgctxt "SelectAttributeValue"
-msgid "composer"
-msgstr ""
-
-#: concrete/config/install/packages/standard/content.xml:17
-msgctxt "SelectAttributeValue"
-msgid "hello"
-msgstr ""
-
-#: concrete/config/install/packages/standard/content.xml:18
-msgctxt "SelectAttributeValue"
-msgid "world"
-msgstr ""
-
-#: concrete/config/install/packages/standard/content.xml:19
-msgctxt "SelectAttributeValue"
-msgid "first post"
-msgstr ""
-
-#: concrete/config/install/packages/standard/content.xml:29
-msgid "Blog Entry"
-msgstr ""
-
-#: concrete/config/install/packages/standard/content.xml:37
-msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
-msgid "Post Name"
-msgstr ""
-
-#: concrete/config/install/packages/standard/content.xml:43
-msgctxt "PageTypeComposerFormLayoutSetName"
-msgid "Navigation"
-msgstr "Навигация"
-
-#: concrete/config/install/packages/standard/content.xml:46
-msgctxt "PageTypeComposerFormLayoutSetName"
-msgid "Images"
-msgstr ""
-
-#: concrete/config/install/packages/standard/content.xml:47
-msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
-msgid "Thumbnail"
-msgstr ""
-
-#: concrete/config/install/packages/standard/content.xml:48
-msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
-msgid "Header Image"
-msgstr "Заглавно изображение"
-
-#: concrete/config/install/packages/standard/content.xml:57
-#: concrete/config/install/packages/standard/content.xml:133
-#: concrete/config/install/packages/standard/content.xml:163
-#: concrete/config/install/packages/standard/content.xml:255
-#: concrete/config/install/packages/standard/content.xml:307
-#: concrete/config/install/packages/standard/content.xml:331
-#: concrete/config/install/packages/standard/content.xml:413
-#: concrete/config/install/packages/standard/content.xml:479
-#: concrete/config/install/packages/standard/content.xml:538
-#: concrete/config/install/packages/standard/content.xml:597
-msgctxt "AreaName"
-msgid "Sidebar"
-msgstr ""
-
-#: concrete/config/install/packages/standard/content.xml:69
-#: concrete/config/install/packages/standard/content.xml:108
-#: concrete/config/install/packages/standard/content.xml:138
-#: concrete/config/install/packages/standard/content.xml:168
-#: concrete/config/install/packages/standard/content.xml:289
-#: concrete/config/install/packages/standard/content.xml:325
-#: concrete/config/install/packages/standard/content.xml:408
-#: concrete/config/install/packages/standard/content.xml:448
-#: concrete/config/install/packages/standard/content.xml:507
-#: concrete/config/install/packages/standard/content.xml:522
-#: concrete/config/install/packages/standard/content.xml:582
-msgctxt "AreaName"
-msgid "Header Image"
-msgstr "Заглавно изображение"
-
-#: concrete/config/install/packages/standard/content.xml:74
-#: concrete/config/install/packages/standard/content.xml:550
-msgctxt "AreaName"
-msgid "Thumbnail Image"
-msgstr "Умалено изображение"
-
-#: concrete/config/install/packages/standard/content.xml:196
-msgid "Header Nav"
-msgstr ""
-
-#: concrete/config/install/packages/standard/content.xml:197
-#: concrete/config/install/packages/standard/content.xml:215
-#: concrete/config/install/packages/standard/content.xml:240
-msgid "Main"
-msgstr "Основен"
-
-#: concrete/config/install/packages/standard/content.xml:214
-msgid "Side Nav"
-msgstr ""
-
-#: concrete/config/install/packages/standard/content.xml:306
-msgid "About"
-msgstr "Относно"
-
-#: concrete/config/install/packages/standard/content.xml:324
-#: concrete/config/install/packages/standard/content.xml:407
-#: concrete/config/install/packages/standard/content.xml:456
-msgctxt "AreaName"
-msgid "HeaderImage"
-msgstr ""
-
-#: concrete/config/install/packages/standard/content.xml:330
-msgid "Contact Us"
-msgstr "Контакти"
-
-#: concrete/config/install/packages/standard/content.xml:440
-msgid "Search This Site"
-msgstr "Търси този сайт"
-
-#: concrete/config/install/packages/standard/content.xml:452
-msgid "Blog"
-msgstr "Блог"
-
-#: concrete/config/install/packages/standard/content.xml:500
-#: concrete/config/install/packages/standard/content.xml:611
-msgid "Archives"
-msgstr "Архив"
-
-#: concrete/config/install/packages/standard/content.xml:511
-msgid "Hello World"
-msgstr ""
-
-#: concrete/config/install/packages/standard/content.xml:511
-msgid "This is my first blog post!"
-msgstr "Първата ми публикация в блога!"
-
-#: concrete/config/install/packages/standard/content.xml:523
-msgid "Header Image"
-msgstr "Заглавно изображение"
-
-#: concrete/config/install/packages/standard/content.xml:542
-msgid "Blog Content"
-msgstr "Съдържание на блога"
-
-#: concrete/config/install/packages/standard/content.xml:551
-msgid "Thumbnail Image"
-msgstr "Умалено изображение"
-
-#: concrete/config/install/packages/standard/content.xml:565
-msgctxt "AreaName"
-msgid "Blog Post More"
-msgstr ""
-
-#: concrete/config/install/packages/standard/content.xml:566
-msgctxt "AreaName"
-msgid "Blog Post Header"
-msgstr ""
-
-#: concrete/config/install/packages/standard/content.xml:567
-msgctxt "AreaName"
-msgid "Blog Post Footer"
-msgstr ""
-
-#: concrete/config/install/packages/standard/content.xml:569
-msgid "Blog Archives"
-msgstr "Архив на блога"
-
-#: concrete/config/install/packages/standard/content.xml:589
-msgid "Search Blog"
-msgstr "Търси в блога"
 
 #: concrete/blocks/image/composer/header.php
 msgctxt "TemplateFileName"
