@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-07-09 04:00+0000\n"
-"PO-Revision-Date: 2014-07-09 10:02+0000\n"
+"POT-Creation-Date: 2014-07-10 04:00+0000\n"
+"PO-Revision-Date: 2014-07-10 09:44+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Persian (Iran) (http://www.transifex.com/projects/p/concrete5/language/fa_IR/)\n"
 "MIME-Version: 1.0\n"
@@ -533,7 +533,7 @@ msgstr "قادر به جستجو در مجموعه فایل نیست"
 msgid "None of the requested files could be found."
 msgstr ""
 
-#: concrete/core/Backup/ContentExporter.php:144
+#: concrete/core/Backup/ContentExporter.php:186
 #: concrete/core/Legacy/FileList.php:116 concrete/tools/files/download.php:42
 msgid "Could not open with ZipArchive::CREATE"
 msgstr "آرشیو فایل فشرده باز نمیشود::ایجاد نمایید"
@@ -667,6 +667,8 @@ msgstr "حذف فایل از ورودی / دایرکتوری."
 #: concrete/single_pages/dashboard/pages/types/view.php:91
 #: concrete/single_pages/dashboard/system/attributes/topics/add.php:21
 #: concrete/single_pages/dashboard/system/attributes/topics/view.php:65
+#: concrete/single_pages/dashboard/system/basics/social.php:35
+#: concrete/single_pages/dashboard/system/basics/social.php:76
 #: concrete/single_pages/dashboard/system/permissions/files.php:22
 #: concrete/single_pages/dashboard/system/registration/authentication.php:89
 #: concrete/single_pages/dashboard/users/add.php:112
@@ -1181,6 +1183,7 @@ msgstr ""
 #: concrete/single_pages/dashboard/pages/single.php:21
 #: concrete/single_pages/dashboard/pages/templates/add.php:47
 #: concrete/single_pages/dashboard/pages/types/add.php:9
+#: concrete/single_pages/dashboard/system/basics/social.php:77
 #: concrete/single_pages/dashboard/system/environment/storage.php:81
 #: concrete/single_pages/dashboard/users/add.php:113
 #: concrete/single_pages/dashboard/users/points/actions.php:54
@@ -1899,7 +1902,7 @@ msgstr "قالب دست ساز"
 
 #: concrete/blocks/form/form_setup_html.php:152
 #: concrete/blocks/form/form_setup_html.php:223
-#: concrete/blocks/form/view.php:111
+#: concrete/blocks/form/view.php:110
 #: concrete/single_pages/dashboard/workflow/workflows.php:47
 #: concrete/tools/page_types/composer/form/edit_control.php:54
 msgid "Required"
@@ -2368,7 +2371,7 @@ msgstr "حذف برای همیشه لطفا برای"
 #: concrete/config/install/base/dashboard.xml:57
 #: concrete/config/install/base/dashboard.xml:117
 #: concrete/config/install/base/dashboard.xml:315
-#: concrete/config/install/base/dashboard.xml:731
+#: concrete/config/install/base/dashboard.xml:738
 #: concrete/elements/page_controls_footer.php:52
 #: concrete/elements/panels/page.php:79 concrete/tools/i18n_js.php:132
 #: concrete/tools/i18n_js.php:135 concrete/views/panels/page/attributes.php:6
@@ -2532,7 +2535,7 @@ msgstr "کپی کردن فایل"
 msgid "Choose New File"
 msgstr "فایل جدید را انتخاب کنید"
 
-#: concrete/config/install/base/dashboard.xml:738
+#: concrete/config/install/base/dashboard.xml:745
 #: concrete/elements/files/search.php:35 concrete/elements/files/search.php:67
 #: concrete/tools/i18n_js.php:195
 msgid "Sets"
@@ -3977,7 +3980,7 @@ msgid ""
 "cannot be manually removed."
 msgstr "این ویژگی قفل شده است، این بدان معنا است که بسته حذف نمی شود."
 
-#: concrete/config/install/base/dashboard.xml:759
+#: concrete/config/install/base/dashboard.xml:766
 #: concrete/controllers/single_page/dashboard/system/attributes/topics/add.php:14
 #: concrete/single_pages/dashboard/system/attributes/topics/add.php:22
 #: concrete/single_pages/dashboard/system/attributes/topics/view.php:22
@@ -4137,6 +4140,30 @@ msgstr "ذخیره تنظیمات رابط کاربری کانکریت5 "
 #: concrete/controllers/single_page/dashboard/system/basics/name.php:15
 msgid "Your site's name has been saved."
 msgstr "نام تارنما ذخیره شد."
+
+#: concrete/controllers/single_page/dashboard/system/basics/social.php:21
+msgid "Link Updated."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/basics/social.php:27
+msgid "Link Deleted."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/basics/social.php:33
+msgid "Social Link Added."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/basics/social.php:53
+msgid "You must choose a service."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/basics/social.php:82
+msgid "Invalid link."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/basics/social.php:113
+msgid "Choose a Service"
+msgstr ""
 
 #: concrete/controllers/single_page/dashboard/system/basics/multilingual.php:25
 msgid ""
@@ -4871,7 +4898,7 @@ msgstr "پاسخ داده شده"
 msgid "Unknown User"
 msgstr "کاربر ناشناس"
 
-#: concrete/config/install/base/dashboard.xml:673
+#: concrete/config/install/base/dashboard.xml:680
 #: concrete/core/User/Search/ColumnSet/DefaultSet.php:22
 #: concrete/elements/users/confirm_list.php:8
 #: concrete/mail/user_register_approval_required.php:15
@@ -5185,7 +5212,7 @@ msgstr "خطای پیش بینی شده رخ داد:"
 msgid "An error occurred while processing this request."
 msgstr "در زمان پردازش این درخواست یک خطای غیر منتظره رخ داده است"
 
-#: concrete/core/Backup/ContentExporter.php:147
+#: concrete/core/Backup/ContentExporter.php:189
 #: concrete/core/Legacy/FileList.php:119
 #, php-format
 msgid "Failed to create zip file as \"%s\": %s"
@@ -5429,16 +5456,16 @@ msgstr "نسخه جدید %s"
 msgid "Version %d"
 msgstr "نسخه %d"
 
-#: concrete/core/Page/Page.php:2058
+#: concrete/core/Page/Page.php:2006
 #, php-format
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "صفحه \"%s\" در مسیر \"%s\" حذف شد."
 
-#: concrete/core/Page/Page.php:2058 concrete/core/Page/Page.php:2122
+#: concrete/core/Page/Page.php:2006 concrete/core/Page/Page.php:2070
 msgid "Page Action"
 msgstr "عمل صفحه"
 
-#: concrete/core/Page/Page.php:2122
+#: concrete/core/Page/Page.php:2070
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "صفحه \"%s\" در مسیر \"%s\" به سطل زباله منتقل شد."
@@ -6613,7 +6640,7 @@ msgstr "صفحه اصلی پیشخوان"
 msgid "Customize"
 msgstr "شخصی سازی"
 
-#: concrete/config/install/base/dashboard.xml:908
+#: concrete/config/install/base/dashboard.xml:915
 #: concrete/core/Application/Service/Dashboard.php:325
 msgid "Customize Dashboard Home"
 msgstr "سفارشی کردن صفحه اول پیشخوان"
@@ -6951,6 +6978,28 @@ msgstr "اشتراک گذاری در فیس بوک"
 #, php-format
 msgid "Posted by %1$s on %2$s"
 msgstr "ارسال شده توسط %1$s on %2$s"
+
+#: concrete/themes/elemental/page_not_found.php:10
+msgid "404 Error"
+msgstr ""
+
+#: concrete/themes/elemental/page_not_found.php:11
+msgid "Page not found."
+msgstr ""
+
+#: concrete/themes/elemental/elements/footer.php:52
+msgid ""
+"Built with <a href=\"http://www.concrete5.org\" "
+"class=\"concrete5\">concrete5</a> CMS."
+msgstr ""
+
+#: concrete/themes/elemental/page_forbidden.php:10
+msgid "403 Error"
+msgstr ""
+
+#: concrete/themes/elemental/page_forbidden.php:11
+msgid "You are not allowed to access this page."
+msgstr ""
 
 #: concrete/jobs/remove_old_page_versions.php:9
 msgid "Remove Old Page Versions"
@@ -7525,6 +7574,7 @@ msgstr "این را نمی توان باز گرداند."
 #: concrete/elements/collection_add_external.php:20
 #: concrete/elements/collection_edit_external.php:20
 #: concrete/elements/workflow/progress/categories/page/pending.php:12
+#: concrete/single_pages/dashboard/system/basics/social.php:68
 msgid "URL"
 msgstr "آدرس "
 
@@ -8880,7 +8930,7 @@ msgid "Save Preset"
 msgstr ""
 
 #: concrete/config/install/base/dashboard.xml:192
-#: concrete/config/install/base/dashboard.xml:544
+#: concrete/config/install/base/dashboard.xml:551
 #: concrete/single_pages/dashboard/system/seo/statistics.php:3
 #: concrete/views/dialogs/file/properties.php:13
 msgid "Statistics"
@@ -9160,7 +9210,7 @@ msgstr "دسته"
 msgid "Gathering Tiles"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:823
+#: concrete/config/install/base/dashboard.xml:830
 #: concrete/views/panels/add.php:70
 msgid "Stack"
 msgstr "دسته"
@@ -9879,7 +9929,7 @@ msgstr "نقشه گوگل"
 msgid "Please enter a zoom number from 0 to 21."
 msgstr "لطفا عدد زوم از 0 تا 21 را وارد کنید."
 
-#: concrete/blocks/google_map/controller.php:109
+#: concrete/blocks/google_map/controller.php:110
 msgid "You must select a valid location."
 msgstr ""
 
@@ -10059,6 +10109,27 @@ msgstr ""
 msgid "Gathering Display"
 msgstr ""
 
+#: concrete/blocks/page_title/form_add_edit.php:6
+msgid "Custom Title"
+msgstr ""
+
+#: concrete/blocks/page_title/form_add_edit.php:9
+msgid "Override page name with custom title?"
+msgstr ""
+
+#: concrete/blocks/page_title/form_add_edit.php:14
+msgid "Custom Title Text"
+msgstr ""
+
+#: concrete/blocks/page_title/controller.php:25
+msgid "Displays a Page's Title"
+msgstr ""
+
+#: concrete/blocks/page_title/controller.php:30
+#: concrete/blocks/page_title/controller.php:47
+msgid "Page Title"
+msgstr ""
+
 #: concrete/blocks/content/controller.php:34
 msgid "HTML/WYSIWYG Editor Content."
 msgstr "ویرایشگر محتوای  HTML/WYSIWYG"
@@ -10116,11 +10187,11 @@ msgstr "بهترین افزونه ها"
 msgid "Cannot retrieve data from the concrete5 marketplace."
 msgstr "نمی تواند داده ها را از بازار کانکریت5 بازیابی کنید."
 
-#: concrete/blocks/next_previous/controller.php:16
+#: concrete/blocks/next_previous/controller.php:17
 msgid "Navigate through sibling pages."
 msgstr "حرکت از طریق صفحات مرتبط"
 
-#: concrete/blocks/next_previous/controller.php:20
+#: concrete/blocks/next_previous/controller.php:21
 msgid "Next & Previous Nav"
 msgstr "علامت قبلی و بعدی"
 
@@ -11447,6 +11518,33 @@ msgstr "IFRAME - این ابزار در دستگاه به کار می آیند"
 msgid "Flash Embed - Legacy method"
 msgstr "قراردادن فلش - استفاده از روش میراث"
 
+#: concrete/blocks/social_links/form.php:4
+msgid "Choose Social Links to Show"
+msgstr ""
+
+#: concrete/blocks/social_links/form.php:8
+#: concrete/single_pages/dashboard/system/basics/social.php:105
+msgid "You have not added any social links."
+msgstr ""
+
+#: concrete/blocks/social_links/form.php:31
+#, php-format
+msgid "Add social links <a href=\"%s\">in the dashboard</a>"
+msgstr ""
+
+#: concrete/blocks/social_links/controller.php:25
+msgid "Allows users to add social icons to their website"
+msgstr ""
+
+#: concrete/blocks/social_links/controller.php:30
+#: concrete/config/install/base/dashboard.xml:479
+msgid "Social Links"
+msgstr ""
+
+#: concrete/blocks/social_links/controller.php:75
+msgid "You must choose at least one link."
+msgstr ""
+
 #: concrete/blocks/dashboard_site_activity/controller.php:16
 msgid "Displays a summary of website activity."
 msgstr "نمایش خلاصه فعالیت های تارنما"
@@ -11851,6 +11949,7 @@ msgid "Topic Default Parent Node"
 msgstr ""
 
 #: concrete/attributes/social_links/form.php:22
+#: concrete/single_pages/dashboard/system/basics/social.php:86
 msgid "Add Link"
 msgstr ""
 
@@ -12571,6 +12670,7 @@ msgstr ""
 
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:101
 #: concrete/single_pages/dashboard/system/attributes/topics/view.php:62
+#: concrete/single_pages/dashboard/system/basics/social.php:32
 msgid "Are you sure? This action cannot be undone."
 msgstr ""
 
@@ -12634,7 +12734,7 @@ msgid "Badge Description"
 msgstr ""
 
 #: concrete/config/install/base/dashboard.xml:165
-#: concrete/config/install/base/dashboard.xml:716
+#: concrete/config/install/base/dashboard.xml:723
 #: concrete/single_pages/account/profile/public_profile.php:31
 #: concrete/single_pages/dashboard/users/add_group.php:102
 #: concrete/single_pages/dashboard/users/groups.php:73
@@ -13036,7 +13136,7 @@ msgstr "مشاهده صفحه آهنگ درکانکریت5 . غیر فعال ک�
 msgid "Track page view statistics."
 msgstr "پیگیری آمار نمایش صفحه."
 
-#: concrete/config/install/base/dashboard.xml:551
+#: concrete/config/install/base/dashboard.xml:558
 #: concrete/single_pages/dashboard/system/seo/searchindex.php:4
 msgid "Search Index"
 msgstr "جستوجوی صفحه اول"
@@ -13082,7 +13182,7 @@ msgstr "کلمات این سایت متعلق به جداگانه ای با یک
 msgid "Reset To Default"
 msgstr "به حالت پیش فرض"
 
-#: concrete/config/install/base/dashboard.xml:530
+#: concrete/config/install/base/dashboard.xml:537
 #: concrete/single_pages/dashboard/system/seo/codes.php:9
 #: concrete/single_pages/dashboard/system/seo/codes.php:14
 msgid "Tracking Codes"
@@ -13110,7 +13210,7 @@ msgstr "پایین صفحه از صفحه"
 msgid "System &amp; Settings"
 msgstr "سیستم و تنظیمات"
 
-#: concrete/config/install/base/dashboard.xml:523
+#: concrete/config/install/base/dashboard.xml:530
 #: concrete/single_pages/dashboard/system/seo/bulk.php:2
 msgid "Bulk SEO Updater"
 msgstr "بروزرسانی بهینه ساز تارنما"
@@ -13189,7 +13289,7 @@ msgstr "فعال کردن آدرس های قشنگ"
 msgid "Code for your .htaccess file"
 msgstr "کد برای شما فایل htaccess"
 
-#: concrete/config/install/base/dashboard.xml:761
+#: concrete/config/install/base/dashboard.xml:768
 #: concrete/single_pages/dashboard/system/environment/info.php:2
 msgid "Environment"
 msgstr "بستر مورد استفاه کانکریت5"
@@ -13276,7 +13376,7 @@ msgstr "نمایش خطاهای موجود در صفحه."
 msgid "You cannot access task permissions."
 msgstr "شما نمی توانید دسترسی به وظیفه مجوز ."
 
-#: concrete/config/install/base/dashboard.xml:582
+#: concrete/config/install/base/dashboard.xml:589
 #: concrete/single_pages/dashboard/system/permissions/site.php:7
 msgid "Site Access"
 msgstr "بازدید تارنما"
@@ -13334,7 +13434,7 @@ msgstr "شما باید کتابخانه کپچا نصب شده است."
 msgid "Save Additional Settings"
 msgstr "ذخیره تنظیمات اضافی"
 
-#: concrete/config/install/base/dashboard.xml:596
+#: concrete/config/install/base/dashboard.xml:603
 #: concrete/single_pages/dashboard/system/permissions/filetypes.php:3
 msgid "Allowed File Types"
 msgstr "فایل های مجاز"
@@ -13345,7 +13445,7 @@ msgid ""
 "extensions with commas. Periods and spaces will be ignored."
 msgstr "فقط فایل های با پسوند های زیر امکان پذیر است. پسوند جداگانه با کاما. دوره و فضاهای نادیده گرفته خواهد شد."
 
-#: concrete/config/install/base/dashboard.xml:635
+#: concrete/config/install/base/dashboard.xml:642
 #: concrete/single_pages/dashboard/system/permissions/maintenance.php:4
 msgid "Maintenance Mode"
 msgstr "حالت تعمیر و نگهداری تارنما"
@@ -13403,12 +13503,12 @@ msgstr "هر آدرس ایمیل را در این جعبه اطلاع داده �
 msgid "You have no anti-spam libraries installed."
 msgstr "شما هیچ کتابخانه ضد هرزنامه نصب شده است."
 
-#: concrete/config/install/base/dashboard.xml:603
+#: concrete/config/install/base/dashboard.xml:610
 #: concrete/single_pages/dashboard/system/permissions/tasks.php:8
 msgid "Task Permissions"
 msgstr "ویرایش سریع"
 
-#: concrete/config/install/base/dashboard.xml:610
+#: concrete/config/install/base/dashboard.xml:617
 #: concrete/single_pages/dashboard/system/permissions/users.php:8
 msgid "User Permissions"
 msgstr "ویرایش کاربر"
@@ -13672,7 +13772,7 @@ msgstr ""
 msgid "Enable"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:658
+#: concrete/config/install/base/dashboard.xml:665
 #: concrete/single_pages/dashboard/system/registration/public.php:2
 msgid "Public Registration"
 msgstr "ثبت نام عمومی"
@@ -13721,7 +13821,7 @@ msgstr "فعال کردن ورود از طریق OpenID"
 msgid "Use emails for login"
 msgstr "استفاده از ایمیل برای ورود به"
 
-#: concrete/config/install/base/dashboard.xml:644
+#: concrete/config/install/base/dashboard.xml:651
 #: concrete/single_pages/dashboard/system/registration/postlogin.php:2
 msgid "Login Destination"
 msgstr "ورود"
@@ -13772,7 +13872,7 @@ msgstr "حداکثر امتیاز Gravatar"
 msgid "Gravatar Image Set"
 msgstr "Gravatar تنظیم تصویر"
 
-#: concrete/config/install/base/dashboard.xml:479
+#: concrete/config/install/base/dashboard.xml:486
 #: concrete/single_pages/dashboard/system/basics/icons.php:2
 msgid "Bookmark Icons"
 msgstr "تصویر شاخص تارنما"
@@ -13824,7 +13924,7 @@ msgstr "رنگ پس زمینه"
 msgid "Enable user defined time zones."
 msgstr "فعال کردن مناطق تعریف شده توسط کاربر."
 
-#: concrete/config/install/base/dashboard.xml:486
+#: concrete/config/install/base/dashboard.xml:493
 #: concrete/single_pages/dashboard/system/basics/editor.php:2
 msgid "Rich Text Editor"
 msgstr "انتخاب ویرایشگر متن "
@@ -13878,6 +13978,19 @@ msgid ""
 "default name for your project on concrete5.org"
 msgstr ""
 
+#: concrete/single_pages/dashboard/system/basics/social.php:22
+#: concrete/single_pages/dashboard/system/basics/social.php:36
+msgid "Delete Link"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/basics/social.php:50
+msgid "Delete Social Link"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/basics/social.php:61
+msgid "Service"
+msgstr ""
+
 #: concrete/single_pages/dashboard/system/backup/backup.php:14
 msgid "Confirm Delete"
 msgstr "تکرار حذف"
@@ -13895,7 +14008,7 @@ msgstr "حذف پشتیبان گیری"
 msgid "Restore Backup"
 msgstr "بازگرداندن پشتیبان گیری"
 
-#: concrete/config/install/base/dashboard.xml:812
+#: concrete/config/install/base/dashboard.xml:819
 #: concrete/single_pages/dashboard/system/backup/backup.php:94
 msgid "Backup Database"
 msgstr "پشتیبان گیری پایگاه داده"
@@ -14009,7 +14122,7 @@ msgstr "چندین به روز رسانی در دسترس هستند. لطفا �
 msgid "Current Version"
 msgstr "نسخه فعلی"
 
-#: concrete/config/install/base/dashboard.xml:813
+#: concrete/config/install/base/dashboard.xml:820
 #: concrete/single_pages/dashboard/system/backup/update.php:66
 msgid "Update concrete5"
 msgstr "بروزرسانی کانکریت5"
@@ -14024,7 +14137,7 @@ msgid ""
 "it may help to clear your cache."
 msgstr "اگر تارنما تغییرات جدید را نمایش نمی دهد یا خطاهای غیرمنتظره می دهد، شاید پاک کردن کش راه حل آن باشد."
 
-#: concrete/config/install/base/dashboard.xml:566
+#: concrete/config/install/base/dashboard.xml:573
 #: concrete/single_pages/dashboard/system/optimization/clearcache.php:8
 msgid "Clear Cache"
 msgstr "پاک کردن کش"
@@ -14114,7 +14227,7 @@ msgstr "هر"
 msgid " minutes."
 msgstr "دقیقه."
 
-#: concrete/config/install/base/dashboard.xml:573
+#: concrete/config/install/base/dashboard.xml:580
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:43
 msgid "Automated Jobs"
 msgstr "فعالیت خودکار"
@@ -14785,12 +14898,12 @@ msgstr "ویرایش مشخصات"
 msgid "Basic Information"
 msgstr "اطلاعات عمومی"
 
-#: concrete/config/install/base/dashboard.xml:500
+#: concrete/config/install/base/dashboard.xml:507
 #: concrete/single_pages/account/profile/edit.php:29
 msgid "Time Zone"
 msgstr "ساعت منطقه جغرافیایی"
 
-#: concrete/config/install/base/dashboard.xml:665
+#: concrete/config/install/base/dashboard.xml:672
 #: concrete/single_pages/account/profile/edit.php:61
 msgid "Authentication Types"
 msgstr ""
@@ -15319,486 +15432,491 @@ msgstr "اطلاعات عمومی تارنمای شما"
 msgid "website name, title"
 msgstr "نام تارنما، عنوان"
 
-#: concrete/config/install/base/dashboard.xml:479
+#. Keywords for page /dashboard/system/basics/social
+#: concrete/config/install/base/dashboard.xml:482
+msgid "sharing, facebook, twitter"
+msgstr ""
+
+#: concrete/config/install/base/dashboard.xml:486
 msgid "Bookmark icon and mobile home screen icon setup."
 msgstr "تنظیم تصویر شاخص قابل مشاهده در تب مرورگر"
 
 #. Keywords for page /dashboard/system/basics/icons
-#: concrete/config/install/base/dashboard.xml:482
+#: concrete/config/install/base/dashboard.xml:489
 msgid "logo, favicon, iphone, icon, bookmark"
 msgstr "تصویر شاخص، تصوی کوچک، تصویر شاخص کوچک، تصویر شاخص  ، شاخص"
 
 #. Keywords for page /dashboard/system/basics/editor
-#: concrete/config/install/base/dashboard.xml:489
+#: concrete/config/install/base/dashboard.xml:496
 msgid "tinymce, content block, fonts, editor, content, overlay"
 msgstr "tinymce, بلوک محتوا, فونت, ویرایش, محتوا, پوشش"
 
-#: concrete/config/install/base/dashboard.xml:493
+#: concrete/config/install/base/dashboard.xml:500
 msgid "Languages"
 msgstr "انتخاب زبان"
 
 #. Keywords for page /dashboard/system/basics/multilingual
-#: concrete/config/install/base/dashboard.xml:496
+#: concrete/config/install/base/dashboard.xml:503
 msgid "translate, translation, internationalization, multilingual"
 msgstr "مترجم, ترجمه, بین المللی, چند زبانه"
 
 #. Keywords for page /dashboard/system/basics/timezone
-#: concrete/config/install/base/dashboard.xml:503
+#: concrete/config/install/base/dashboard.xml:510
 msgid "timezone, profile, locale"
 msgstr "منطقه زمانی، مشخصات، محلی"
 
-#: concrete/config/install/base/dashboard.xml:507
+#: concrete/config/install/base/dashboard.xml:514
 msgid "Interface Preferences"
 msgstr "تنظیمات عکس پس زمینه رابط کاربری"
 
 #. Keywords for page /dashboard/system/basics/images
-#: concrete/config/install/base/dashboard.xml:510
+#: concrete/config/install/base/dashboard.xml:517
 msgid "interface, quick nav, dashboard background, background image"
 msgstr "رابط کاربری، منو سریع، پس زمینه پیشخوان، تصویر پس زمینه"
 
-#: concrete/config/install/base/dashboard.xml:515
+#: concrete/config/install/base/dashboard.xml:522
 msgid "SEO & Statistics"
 msgstr "آمار وبهینه سازی تارنما برای موتورهای جستوجو"
 
-#: concrete/config/install/base/dashboard.xml:515
+#: concrete/config/install/base/dashboard.xml:522
 msgid "Enable pretty URLs, statistics and tracking codes."
 msgstr "فعال سازی زیبا ساز آدرس ها و ردیابی آمار و کدها"
 
-#: concrete/config/install/base/dashboard.xml:516
+#: concrete/config/install/base/dashboard.xml:523
 msgid "Pretty URLs"
 msgstr "آدرس های زیبا"
 
 #. Keywords for page /dashboard/system/seo/urls
-#: concrete/config/install/base/dashboard.xml:519
+#: concrete/config/install/base/dashboard.xml:526
 msgid "vanity, pretty url, seo, pageview, view"
 msgstr "باطل آدرس زیبا، جستجوگرها، نمایش صفحه "
 
 #. Keywords for page /dashboard/system/seo/bulk
-#: concrete/config/install/base/dashboard.xml:526
+#: concrete/config/install/base/dashboard.xml:533
 msgid "bulk, seo, change keywords, engine, optimization, search"
 msgstr "همه، جستجوگرها، تغییر کلمات کلیدی ، موتور جستوجو، بهینه سازی، جستجو"
 
 #. Keywords for page /dashboard/system/seo/codes
-#: concrete/config/install/base/dashboard.xml:533
+#: concrete/config/install/base/dashboard.xml:540
 msgid "traffic, statistics, google analytics, quant, pageviews, hits"
 msgstr "ترافیک، آمار، تجزیه و تحلیل گوگل، quant، بازدید، بازدید"
 
-#: concrete/config/install/base/dashboard.xml:537
+#: concrete/config/install/base/dashboard.xml:544
 msgid "Excluded URL Word List"
 msgstr "محروم لیست URL ورد"
 
 #. Keywords for page /dashboard/system/seo/excluded
-#: concrete/config/install/base/dashboard.xml:540
+#: concrete/config/install/base/dashboard.xml:547
 msgid "pretty, slug"
 msgstr "زیبا, مارپیچ"
 
 #. Keywords for page /dashboard/system/seo/statistics
-#: concrete/config/install/base/dashboard.xml:547
+#: concrete/config/install/base/dashboard.xml:554
 msgid "turn off statistics, tracking, statistics, pageviews, hits"
 msgstr "خاموش کردن آمار، ردیابی، آمار، بازدید، بازدید"
 
 #. Keywords for page /dashboard/system/seo/searchindex
-#: concrete/config/install/base/dashboard.xml:554
+#: concrete/config/install/base/dashboard.xml:561
 msgid "configure search, site search, search option"
 msgstr "پیکربندی های جستجو، جستجو در تارنما ، گزینه جستجو"
 
-#: concrete/config/install/base/dashboard.xml:558
+#: concrete/config/install/base/dashboard.xml:565
 msgid "Optimization"
 msgstr "بهینه سازی"
 
-#: concrete/config/install/base/dashboard.xml:558
+#: concrete/config/install/base/dashboard.xml:565
 msgid "Keep your site running well."
 msgstr "تارنمای شما به خوبی در حال فعالیت است"
 
-#: concrete/config/install/base/dashboard.xml:559
+#: concrete/config/install/base/dashboard.xml:566
 msgid "Cache & Speed Settings"
 msgstr "تنظیمات کش و سرعت"
 
 #. Keywords for page /dashboard/system/optimization/cache
-#: concrete/config/install/base/dashboard.xml:562
+#: concrete/config/install/base/dashboard.xml:569
 msgid ""
 "cache option, change cache, override, turn on cache, turn off cache, no "
 "cache, page cache, caching"
 msgstr "کش گزینه، تغییر کش ، لغو،  کش روشن ، کش خاموش ، بدون کش ، کش صفحه ، ذخیره"
 
 #. Keywords for page /dashboard/system/optimization/clearcache
-#: concrete/config/install/base/dashboard.xml:569
+#: concrete/config/install/base/dashboard.xml:576
 msgid "cache option, turn off cache, no cache, page cache, caching"
 msgstr "گزینه کش ، کش خاموش ، هیچ کش ، صفحه کش ، ذخیره"
 
 #. Keywords for page /dashboard/system/optimization/jobs
-#: concrete/config/install/base/dashboard.xml:576
+#: concrete/config/install/base/dashboard.xml:583
 msgid ""
 "index search, reindex search, build sitemap, sitemap.xml, clear old "
 "versions, page versions, remove old"
 msgstr "صفحه اول جستجو، reindex جستجو، ساخت نقشه سایت ، نقشه سایت XML، پاک کردن رونوشت های قدیمی، رونوشت های صفحه، حذف قدیمی"
 
-#: concrete/config/install/base/dashboard.xml:581
+#: concrete/config/install/base/dashboard.xml:588
 msgid "Permissions & Access"
 msgstr "ویرایش و دسترسی"
 
-#: concrete/config/install/base/dashboard.xml:581
+#: concrete/config/install/base/dashboard.xml:588
 msgid "Control who sees and edits your site."
 msgstr "مدیریت نمایش و ویرایش"
 
 #. Keywords for page /dashboard/system/permissions/site
-#: concrete/config/install/base/dashboard.xml:585
+#: concrete/config/install/base/dashboard.xml:592
 msgid "editors, hide site, offline, private, public, access"
 msgstr "ویرایشگر, سایت مخفی, آفلاین, خصوصی, عمومی, دسترسی"
 
-#: concrete/config/install/base/dashboard.xml:589
+#: concrete/config/install/base/dashboard.xml:596
 msgid "File Manager Permissions"
 msgstr "مدیریت و ویرایش فایل ها"
 
 #. Keywords for page /dashboard/system/permissions/files
-#: concrete/config/install/base/dashboard.xml:592
+#: concrete/config/install/base/dashboard.xml:599
 msgid "file options, file manager, upload, modify"
 msgstr "گزینه های فایل، مدیریت فایل ، بارگزاری ، ویرایش"
 
 #. Keywords for page /dashboard/system/permissions/filetypes
-#: concrete/config/install/base/dashboard.xml:599
+#: concrete/config/install/base/dashboard.xml:606
 msgid "security, files, media, extension, manager, upload"
 msgstr "امنیتی، فایل ها، رسانه ها، فرمت، مدیریت، بارگزاری"
 
 #. Keywords for page /dashboard/system/permissions/tasks
-#: concrete/config/install/base/dashboard.xml:606
+#: concrete/config/install/base/dashboard.xml:613
 msgid "security, actions, administrator, admin, package, marketplace, search"
 msgstr "امنیت، عملیات، مدیر، مدیر، بسته بندی ، بازار، جستجو"
 
-#: concrete/config/install/base/dashboard.xml:612
+#: concrete/config/install/base/dashboard.xml:619
 msgid "Advanced Permissions"
 msgstr "ویرایش پیشرفته"
 
-#: concrete/config/install/base/dashboard.xml:614
+#: concrete/config/install/base/dashboard.xml:621
 msgid "IP Blacklist"
 msgstr "لیست سیاه IP"
 
 #. Keywords for page /dashboard/system/permissions/blacklist
-#: concrete/config/install/base/dashboard.xml:617
+#: concrete/config/install/base/dashboard.xml:624
 msgid "security, lock ip, lock out, block ip, address, restrict, access"
 msgstr "امنیت، IP قفل، قفل کردن، مسدود کردن آی پی، آدرس، محدود، دسترسی به"
 
-#: concrete/config/install/base/dashboard.xml:621
+#: concrete/config/install/base/dashboard.xml:628
 msgid "Captcha Setup"
 msgstr "راه اندازی امنیتی"
 
 #. Keywords for page /dashboard/system/permissions/captcha
-#: concrete/config/install/base/dashboard.xml:624
+#: concrete/config/install/base/dashboard.xml:631
 msgid "security, registration"
 msgstr "امنیت، ثبت نام"
 
-#: concrete/config/install/base/dashboard.xml:628
+#: concrete/config/install/base/dashboard.xml:635
 msgid "Spam Control"
 msgstr "کنترل هرزنامه ها"
 
 #. Keywords for page /dashboard/system/permissions/antispam
-#: concrete/config/install/base/dashboard.xml:631
+#: concrete/config/install/base/dashboard.xml:638
 msgid "antispam, block spam, security"
 msgstr "ضد هرزنامه، بلوک هرزنامه، امنیت"
 
 #. Keywords for page /dashboard/system/permissions/maintenance
-#: concrete/config/install/base/dashboard.xml:638
+#: concrete/config/install/base/dashboard.xml:645
 msgid "lock site, under construction, hide, hidden"
 msgstr "قفل کردن تانما ، در دست ساخت، پنهان کردن، پنهان"
 
-#: concrete/config/install/base/dashboard.xml:643
+#: concrete/config/install/base/dashboard.xml:650
 msgid "Login & Registration"
 msgstr "ورود و ثبت نام"
 
-#: concrete/config/install/base/dashboard.xml:643
+#: concrete/config/install/base/dashboard.xml:650
 msgid "Change login behaviors and setup public profiles."
 msgstr "تغییر مشخصات ورودی و تنظیم اطلاعات عمومی"
 
 #. Keywords for page /dashboard/system/registration/postlogin
-#: concrete/config/install/base/dashboard.xml:647
+#: concrete/config/install/base/dashboard.xml:654
 msgid "profile, login, redirect, specific, dashboard, administrators"
 msgstr "مشخصات، ورود، تغییر مسیر، خاص، پیشخوان، مدیران"
 
-#: concrete/config/install/base/dashboard.xml:651
+#: concrete/config/install/base/dashboard.xml:658
 msgid "Public Profiles"
 msgstr "نمایه های عمومی"
 
 #. Keywords for page /dashboard/system/registration/profiles
-#: concrete/config/install/base/dashboard.xml:654
+#: concrete/config/install/base/dashboard.xml:661
 msgid "member profile, member page, community, forums, social, avatar"
 msgstr "مشخصات عضو، صفحه عضو، جامعه، انجمن ها، اجتماعی، آواتار"
 
 #. Keywords for page /dashboard/system/registration/public
-#: concrete/config/install/base/dashboard.xml:661
+#: concrete/config/install/base/dashboard.xml:668
 msgid "signup, new user, community"
 msgstr "ثبت نام، کاربر جدید، جامعه"
 
 #. Keywords for page /dashboard/system/registration/authentication
-#: concrete/config/install/base/dashboard.xml:668
+#: concrete/config/install/base/dashboard.xml:675
 msgid "auth, authentication, types, oauth, facebook, login, registration"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:673
+#: concrete/config/install/base/dashboard.xml:680
 msgid "Control how your site send and processes mail."
 msgstr "اطلاع رسانی وضعیت تارنمای شما از طریق رایانامه"
 
 #. Keywords for page /dashboard/system/mail
-#: concrete/config/install/base/dashboard.xml:676
+#: concrete/config/install/base/dashboard.xml:683
 msgid "smtp, mail settings"
 msgstr "تنظیمات رایانامه SMTP"
 
-#: concrete/config/install/base/dashboard.xml:680
+#: concrete/config/install/base/dashboard.xml:687
 msgid "SMTP Method"
 msgstr "روش SMTP"
 
 #. Keywords for page /dashboard/system/mail/method
-#: concrete/config/install/base/dashboard.xml:683
+#: concrete/config/install/base/dashboard.xml:690
 msgid "email server, mail settings, mail configuration, external, internal"
 msgstr "سرور رایانامه، تنظیمات رایانامه، پیکربندی رایانامه، خارجی، داخلی"
 
-#: concrete/config/install/base/dashboard.xml:687
+#: concrete/config/install/base/dashboard.xml:694
 msgid "Test Mail Settings"
 msgstr ""
 
 #. Keywords for page /dashboard/system/mail/method/test
-#: concrete/config/install/base/dashboard.xml:690
+#: concrete/config/install/base/dashboard.xml:697
 msgid "test smtp, test mail"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:694
+#: concrete/config/install/base/dashboard.xml:701
 msgid "Email Importers"
 msgstr "وارد کردن رایانامه"
 
 #. Keywords for page /dashboard/system/mail/importers
-#: concrete/config/install/base/dashboard.xml:697
+#: concrete/config/install/base/dashboard.xml:704
 msgid ""
 "email server, mail settings, mail configuration, private message, message "
 "system, import, email, message"
 msgstr "سرور رایانامه، تنظیمات رایانامه، پیکربندی ایمیل، پیام خصوصی، سیستم پیام، واردات فایل، ایمیل، پیام"
 
-#: concrete/config/install/base/dashboard.xml:702
+#: concrete/config/install/base/dashboard.xml:709
 msgid "Conversations"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:702
+#: concrete/config/install/base/dashboard.xml:709
 msgid "Manage your conversations settings"
 msgstr ""
 
 #. Keywords for page /dashboard/system/conversations
-#: concrete/config/install/base/dashboard.xml:705
+#: concrete/config/install/base/dashboard.xml:712
 msgid "conversations"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:709
+#: concrete/config/install/base/dashboard.xml:716
 msgid "Conversations Editor"
 msgstr ""
 
 #. Keywords for page /dashboard/system/conversations/editor
-#: concrete/config/install/base/dashboard.xml:712
+#: concrete/config/install/base/dashboard.xml:719
 msgid "conversations editor, editor"
 msgstr ""
 
 #. Keywords for page /dashboard/system/conversations/points
-#: concrete/config/install/base/dashboard.xml:719
+#: concrete/config/install/base/dashboard.xml:726
 msgid "conversations ratings, ratings, community, community points"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:723
+#: concrete/config/install/base/dashboard.xml:730
 msgid "Banned Words"
 msgstr ""
 
 #. Keywords for page /dashboard/system/conversations/bannedwords
-#: concrete/config/install/base/dashboard.xml:726
+#: concrete/config/install/base/dashboard.xml:733
 msgid ""
 "conversations bad words, banned words, banned, bad words, bad, words, list"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:731
+#: concrete/config/install/base/dashboard.xml:738
 msgid "Setup attributes for pages, users, files and more."
 msgstr "راه اندازی مشخصات برای صفحات، کاربران، فایل ها و ..."
 
 #. Keywords for page /dashboard/system/attributes
-#: concrete/config/install/base/dashboard.xml:734
+#: concrete/config/install/base/dashboard.xml:741
 msgid "attribute configuration"
 msgstr "پیکربندی ویژگی"
 
-#: concrete/config/install/base/dashboard.xml:738
+#: concrete/config/install/base/dashboard.xml:745
 msgid "Group attributes into sets for easier organization"
 msgstr "مشخصات گروه برای سازماندهی آسان"
 
 #. Keywords for page /dashboard/system/attributes/sets
-#: concrete/config/install/base/dashboard.xml:741
+#: concrete/config/install/base/dashboard.xml:748
 msgid "attributes, sets"
 msgstr "مشخصات، مجموعه"
 
-#: concrete/config/install/base/dashboard.xml:745
+#: concrete/config/install/base/dashboard.xml:752
 msgid "Types"
 msgstr "انواع"
 
-#: concrete/config/install/base/dashboard.xml:745
+#: concrete/config/install/base/dashboard.xml:752
 msgid "Choose which attribute types are available for different items."
 msgstr "مشخصات لازم را انتخاب نمایید"
 
 #. Keywords for page /dashboard/system/attributes/types
-#: concrete/config/install/base/dashboard.xml:748
+#: concrete/config/install/base/dashboard.xml:755
 msgid "attributes, types"
 msgstr "مشخصات، انواع"
 
-#: concrete/config/install/base/dashboard.xml:752
+#: concrete/config/install/base/dashboard.xml:759
 msgid "Topics"
 msgstr ""
 
 #. Keywords for page /dashboard/system/attributes/topics
-#: concrete/config/install/base/dashboard.xml:755
+#: concrete/config/install/base/dashboard.xml:762
 msgid "topics, tags, taxonomy"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:761
+#: concrete/config/install/base/dashboard.xml:768
 msgid "Advanced settings for web developers."
 msgstr "تنظیمات پیشرفته"
 
-#: concrete/config/install/base/dashboard.xml:768
+#: concrete/config/install/base/dashboard.xml:775
 msgid "Environment Information"
 msgstr "اطلاعات محیط"
 
 #. Keywords for page /dashboard/system/environment/info
-#: concrete/config/install/base/dashboard.xml:771
+#: concrete/config/install/base/dashboard.xml:778
 msgid "overrides, system info, debug, support, help"
 msgstr "باطل، اطلاعات سیستم، اشکال زدایی، پشتیبانی، کمک"
 
-#: concrete/config/install/base/dashboard.xml:775
+#: concrete/config/install/base/dashboard.xml:782
 msgid "Debug Settings"
 msgstr "تنطیمات خطاها"
 
 #. Keywords for page /dashboard/system/environment/debug
-#: concrete/config/install/base/dashboard.xml:778
+#: concrete/config/install/base/dashboard.xml:785
 msgid "errors, exceptions, develop, support, help"
 msgstr "خطاها، استثناها، توسعه، پشتیبانی، کمک"
 
-#: concrete/config/install/base/dashboard.xml:782
+#: concrete/config/install/base/dashboard.xml:789
 msgid "Logging Settings"
 msgstr "تتنظیمات ورود"
 
 #. Keywords for page /dashboard/system/environment/logging
-#: concrete/config/install/base/dashboard.xml:785
+#: concrete/config/install/base/dashboard.xml:792
 msgid "email, logging, logs, smtp, pop, errors, mysql, log"
 msgstr "ایمیل، ورود به سیستم، ورود به سیستم، SMTP، پاپ، اشتباهات، خروجی زیر، ورود به سیستم"
 
-#: concrete/config/install/base/dashboard.xml:789
+#: concrete/config/install/base/dashboard.xml:796
 msgid "File Storage Locations"
 msgstr "محل ذخیره سازی فایل"
 
 #. Keywords for page /dashboard/system/environment/storage
-#: concrete/config/install/base/dashboard.xml:792
+#: concrete/config/install/base/dashboard.xml:799
 msgid "security, alternate storage, hide files"
 msgstr "امنیت، ذخیره سازی دیگر، مخفی کردن فایل ها"
 
-#: concrete/config/install/base/dashboard.xml:798
+#: concrete/config/install/base/dashboard.xml:805
 msgid "Proxy Server"
 msgstr "پروکسی سرور"
 
 #. Keywords for page /dashboard/system/environment/proxy
-#: concrete/config/install/base/dashboard.xml:801
+#: concrete/config/install/base/dashboard.xml:808
 msgid "network, proxy server"
 msgstr "شبکه، سرور های پروکسی"
 
-#: concrete/config/install/base/dashboard.xml:805
+#: concrete/config/install/base/dashboard.xml:812
 msgid "Backup & Restore"
 msgstr "پشتیبان گیری و بازیابی"
 
-#: concrete/config/install/base/dashboard.xml:805
+#: concrete/config/install/base/dashboard.xml:812
 msgid "Backup or restore your website."
 msgstr "پشتیبان گیری و یا بازگردانی محتویات تارنما"
 
 #. Keywords for page /dashboard/system/backup
-#: concrete/config/install/base/dashboard.xml:808
+#: concrete/config/install/base/dashboard.xml:815
 msgid "export, backup, database, sql, mysql, encryption, restore"
 msgstr "صادرات، پشتیبان ، پایگاه داده، SQL، خروجی، رمزگذاری، بازیابی"
 
 #. Keywords for page /dashboard/system/backup/update
-#: concrete/config/install/base/dashboard.xml:816
+#: concrete/config/install/base/dashboard.xml:823
 msgid "upgrade, new version, update"
 msgstr "ارتقاء ، نسخه جدید، به روز رسانی"
 
-#: concrete/config/install/base/dashboard.xml:824
+#: concrete/config/install/base/dashboard.xml:831
 msgid "Dashboard Primary + Five"
 msgstr "پیشخوان اصلی + پنج"
 
-#: concrete/config/install/base/dashboard.xml:825
+#: concrete/config/install/base/dashboard.xml:832
 msgid "Dashboard Header + Four Column"
 msgstr "سر برگ پیشخوان + چهار ستون"
 
-#: concrete/config/install/base/dashboard.xml:829
+#: concrete/config/install/base/dashboard.xml:836
 msgctxt "PageTemplateName"
 msgid "Stack"
 msgstr "دسته"
 
-#: concrete/config/install/base/dashboard.xml:830
+#: concrete/config/install/base/dashboard.xml:837
 msgctxt "PageTemplateName"
 msgid "Dashboard Primary + Five"
 msgstr "پیشخوان اصلی + پنج"
 
-#: concrete/config/install/base/dashboard.xml:831
+#: concrete/config/install/base/dashboard.xml:838
 msgctxt "PageTemplateName"
 msgid "Dashboard Header + Four Column"
 msgstr "سر برگ پیشخوان + چهار ستون"
 
-#: concrete/config/install/base/dashboard.xml:834
+#: concrete/config/install/base/dashboard.xml:841
 msgid "Welcome to concrete5"
 msgstr "به انجمن کانکریت5 خوش آمدید"
 
-#: concrete/config/install/base/dashboard.xml:834
+#: concrete/config/install/base/dashboard.xml:841
 msgid ""
 "Learn about how to use concrete5, how to develop for concrete5, and get "
 "general help."
 msgstr "راهنمای استفاده از کانکریت5"
 
-#: concrete/config/install/base/dashboard.xml:840
+#: concrete/config/install/base/dashboard.xml:847
 msgctxt "AreaName"
 msgid "Header"
 msgstr "سربرگ"
 
-#: concrete/config/install/base/dashboard.xml:851
+#: concrete/config/install/base/dashboard.xml:858
 msgctxt "AreaName"
 msgid "Column 1"
 msgstr "ستون1"
 
-#: concrete/config/install/base/dashboard.xml:865
+#: concrete/config/install/base/dashboard.xml:872
 msgctxt "AreaName"
 msgid "Column 2"
 msgstr "ستون2"
 
-#: concrete/config/install/base/dashboard.xml:878
+#: concrete/config/install/base/dashboard.xml:885
 msgctxt "AreaName"
 msgid "Column 3"
 msgstr "ستون3"
 
-#: concrete/config/install/base/dashboard.xml:892
+#: concrete/config/install/base/dashboard.xml:899
 msgctxt "AreaName"
 msgid "Column 4"
 msgstr "ستون4"
 
-#: concrete/config/install/base/dashboard.xml:917
+#: concrete/config/install/base/dashboard.xml:924
 msgctxt "AreaName"
 msgid "Primary"
 msgstr "اصلی"
 
-#: concrete/config/install/base/dashboard.xml:921
+#: concrete/config/install/base/dashboard.xml:928
 msgctxt "AreaName"
 msgid "Secondary 1"
 msgstr "متوسط1"
 
-#: concrete/config/install/base/dashboard.xml:930
+#: concrete/config/install/base/dashboard.xml:937
 msgctxt "AreaName"
 msgid "Secondary 2"
 msgstr "متوسط2"
 
-#: concrete/config/install/base/dashboard.xml:939
+#: concrete/config/install/base/dashboard.xml:946
 msgctxt "AreaName"
 msgid "Secondary 3"
 msgstr "متوسط3"
 
-#: concrete/config/install/base/dashboard.xml:942
+#: concrete/config/install/base/dashboard.xml:949
 msgctxt "AreaName"
 msgid "Secondary 4"
 msgstr "متوسط4"
 
-#: concrete/config/install/base/dashboard.xml:945
+#: concrete/config/install/base/dashboard.xml:952
 msgctxt "AreaName"
 msgid "Secondary 5"
 msgstr "متوسط5"
@@ -16796,37 +16914,37 @@ msgctxt "ImageEditorFilterName"
 msgid "Vignette"
 msgstr ""
 
-#: concrete/config/install/base/blocktypes.xml:46
+#: concrete/config/install/base/blocktypes.xml:48
 msgctxt "SystemContentEditorSnippetName"
 msgid "Page Name"
 msgstr "نام صفحه"
 
-#: concrete/config/install/base/blocktypes.xml:47
+#: concrete/config/install/base/blocktypes.xml:49
 msgctxt "SystemContentEditorSnippetName"
 msgid "User Name"
 msgstr "نام کاربری"
 
-#: concrete/config/install/base/blocktypes.xml:51
+#: concrete/config/install/base/blocktypes.xml:53
 msgctxt "BlockTypeSetName"
 msgid "Basic"
 msgstr ""
 
-#: concrete/config/install/base/blocktypes.xml:58
+#: concrete/config/install/base/blocktypes.xml:60
 msgctxt "BlockTypeSetName"
 msgid "Navigation"
 msgstr "پیمایش"
 
-#: concrete/config/install/base/blocktypes.xml:71
+#: concrete/config/install/base/blocktypes.xml:74
 msgctxt "BlockTypeSetName"
 msgid "Forms"
 msgstr ""
 
-#: concrete/config/install/base/blocktypes.xml:76
+#: concrete/config/install/base/blocktypes.xml:79
 msgctxt "BlockTypeSetName"
 msgid "Social Networking"
 msgstr ""
 
-#: concrete/config/install/base/blocktypes.xml:81
+#: concrete/config/install/base/blocktypes.xml:85
 msgctxt "BlockTypeSetName"
 msgid "Multimedia"
 msgstr ""
@@ -16999,6 +17117,16 @@ msgstr "محتوا"
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Body"
 msgstr "پیام"
+
+#: concrete/blocks/image/templates/circle
+msgctxt "TemplateFileName"
+msgid "Circle"
+msgstr ""
+
+#: concrete/blocks/image/templates/right_tilt
+msgctxt "TemplateFileName"
+msgid "Right Tilt"
+msgstr ""
 
 #: concrete/blocks/image/composer/header.php
 msgctxt "TemplateFileName"

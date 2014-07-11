@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-07-09 04:00+0000\n"
-"PO-Revision-Date: 2014-07-09 10:02+0000\n"
+"POT-Creation-Date: 2014-07-10 04:00+0000\n"
+"PO-Revision-Date: 2014-07-10 09:44+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Russian (Russia) (http://www.transifex.com/projects/p/concrete5/language/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -533,7 +533,7 @@ msgstr "Невозможно найти набор файлов."
 msgid "None of the requested files could be found."
 msgstr ""
 
-#: concrete/core/Backup/ContentExporter.php:144
+#: concrete/core/Backup/ContentExporter.php:186
 #: concrete/core/Legacy/FileList.php:116 concrete/tools/files/download.php:42
 msgid "Could not open with ZipArchive::CREATE"
 msgstr "Не удается открыть с ZipArchive::CREATE"
@@ -667,6 +667,8 @@ msgstr "Удалить файлы из директории /incoming"
 #: concrete/single_pages/dashboard/pages/types/view.php:91
 #: concrete/single_pages/dashboard/system/attributes/topics/add.php:21
 #: concrete/single_pages/dashboard/system/attributes/topics/view.php:65
+#: concrete/single_pages/dashboard/system/basics/social.php:35
+#: concrete/single_pages/dashboard/system/basics/social.php:76
 #: concrete/single_pages/dashboard/system/permissions/files.php:22
 #: concrete/single_pages/dashboard/system/registration/authentication.php:89
 #: concrete/single_pages/dashboard/users/add.php:112
@@ -1187,6 +1189,7 @@ msgstr ""
 #: concrete/single_pages/dashboard/pages/single.php:21
 #: concrete/single_pages/dashboard/pages/templates/add.php:47
 #: concrete/single_pages/dashboard/pages/types/add.php:9
+#: concrete/single_pages/dashboard/system/basics/social.php:77
 #: concrete/single_pages/dashboard/system/environment/storage.php:81
 #: concrete/single_pages/dashboard/users/add.php:113
 #: concrete/single_pages/dashboard/users/points/actions.php:54
@@ -1911,7 +1914,7 @@ msgstr "Оформление"
 
 #: concrete/blocks/form/form_setup_html.php:152
 #: concrete/blocks/form/form_setup_html.php:223
-#: concrete/blocks/form/view.php:111
+#: concrete/blocks/form/view.php:110
 #: concrete/single_pages/dashboard/workflow/workflows.php:47
 #: concrete/tools/page_types/composer/form/edit_control.php:54
 msgid "Required"
@@ -2380,7 +2383,7 @@ msgstr "Удалить всегда"
 #: concrete/config/install/base/dashboard.xml:57
 #: concrete/config/install/base/dashboard.xml:117
 #: concrete/config/install/base/dashboard.xml:315
-#: concrete/config/install/base/dashboard.xml:731
+#: concrete/config/install/base/dashboard.xml:738
 #: concrete/elements/page_controls_footer.php:52
 #: concrete/elements/panels/page.php:79 concrete/tools/i18n_js.php:132
 #: concrete/tools/i18n_js.php:135 concrete/views/panels/page/attributes.php:6
@@ -2544,7 +2547,7 @@ msgstr "Копировать файл"
 msgid "Choose New File"
 msgstr "Выбрать новый файл"
 
-#: concrete/config/install/base/dashboard.xml:738
+#: concrete/config/install/base/dashboard.xml:745
 #: concrete/elements/files/search.php:35 concrete/elements/files/search.php:67
 #: concrete/tools/i18n_js.php:195
 msgid "Sets"
@@ -3991,7 +3994,7 @@ msgid ""
 "cannot be manually removed."
 msgstr "Эта группа атрибутов заблокирована. Это означает, что она была добавлена ​​в пакет и не может быть удалена вручную."
 
-#: concrete/config/install/base/dashboard.xml:759
+#: concrete/config/install/base/dashboard.xml:766
 #: concrete/controllers/single_page/dashboard/system/attributes/topics/add.php:14
 #: concrete/single_pages/dashboard/system/attributes/topics/add.php:22
 #: concrete/single_pages/dashboard/system/attributes/topics/view.php:22
@@ -4151,6 +4154,30 @@ msgstr "Настройки интерфейса concrete5 успешно сох�
 #: concrete/controllers/single_page/dashboard/system/basics/name.php:15
 msgid "Your site's name has been saved."
 msgstr "Название сайта сохранено."
+
+#: concrete/controllers/single_page/dashboard/system/basics/social.php:21
+msgid "Link Updated."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/basics/social.php:27
+msgid "Link Deleted."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/basics/social.php:33
+msgid "Social Link Added."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/basics/social.php:53
+msgid "You must choose a service."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/basics/social.php:82
+msgid "Invalid link."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/basics/social.php:113
+msgid "Choose a Service"
+msgstr ""
 
 #: concrete/controllers/single_page/dashboard/system/basics/multilingual.php:25
 msgid ""
@@ -4887,7 +4914,7 @@ msgstr "Отвечено"
 msgid "Unknown User"
 msgstr "Неизвестный пользователь"
 
-#: concrete/config/install/base/dashboard.xml:673
+#: concrete/config/install/base/dashboard.xml:680
 #: concrete/core/User/Search/ColumnSet/DefaultSet.php:22
 #: concrete/elements/users/confirm_list.php:8
 #: concrete/mail/user_register_approval_required.php:15
@@ -5203,7 +5230,7 @@ msgstr "Произошло исключение"
 msgid "An error occurred while processing this request."
 msgstr "Случилась ошибка во время запроса"
 
-#: concrete/core/Backup/ContentExporter.php:147
+#: concrete/core/Backup/ContentExporter.php:189
 #: concrete/core/Legacy/FileList.php:119
 #, php-format
 msgid "Failed to create zip file as \"%s\": %s"
@@ -5447,16 +5474,16 @@ msgstr "Новая версия %s"
 msgid "Version %d"
 msgstr "Версия %d"
 
-#: concrete/core/Page/Page.php:2058
+#: concrete/core/Page/Page.php:2006
 #, php-format
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "Страница \"%s\", расположенная в \"%s\" удалена"
 
-#: concrete/core/Page/Page.php:2058 concrete/core/Page/Page.php:2122
+#: concrete/core/Page/Page.php:2006 concrete/core/Page/Page.php:2070
 msgid "Page Action"
 msgstr "Действие страницы"
 
-#: concrete/core/Page/Page.php:2122
+#: concrete/core/Page/Page.php:2070
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "Страница \"%s\", расположенная в \"%s\" перемещена в корзину"
@@ -6631,7 +6658,7 @@ msgstr "Панель управления"
 msgid "Customize"
 msgstr "Настроить"
 
-#: concrete/config/install/base/dashboard.xml:908
+#: concrete/config/install/base/dashboard.xml:915
 #: concrete/core/Application/Service/Dashboard.php:325
 msgid "Customize Dashboard Home"
 msgstr "Настроить страницу управления"
@@ -6989,6 +7016,28 @@ msgstr "Поделиться в Facebook"
 #, php-format
 msgid "Posted by %1$s on %2$s"
 msgstr "Опубликовано %1$s на %2$s"
+
+#: concrete/themes/elemental/page_not_found.php:10
+msgid "404 Error"
+msgstr ""
+
+#: concrete/themes/elemental/page_not_found.php:11
+msgid "Page not found."
+msgstr ""
+
+#: concrete/themes/elemental/elements/footer.php:52
+msgid ""
+"Built with <a href=\"http://www.concrete5.org\" "
+"class=\"concrete5\">concrete5</a> CMS."
+msgstr ""
+
+#: concrete/themes/elemental/page_forbidden.php:10
+msgid "403 Error"
+msgstr ""
+
+#: concrete/themes/elemental/page_forbidden.php:11
+msgid "You are not allowed to access this page."
+msgstr ""
 
 #: concrete/jobs/remove_old_page_versions.php:9
 msgid "Remove Old Page Versions"
@@ -7569,6 +7618,7 @@ msgstr "Это не может быть отменено."
 #: concrete/elements/collection_add_external.php:20
 #: concrete/elements/collection_edit_external.php:20
 #: concrete/elements/workflow/progress/categories/page/pending.php:12
+#: concrete/single_pages/dashboard/system/basics/social.php:68
 msgid "URL"
 msgstr "URL"
 
@@ -8926,7 +8976,7 @@ msgid "Save Preset"
 msgstr ""
 
 #: concrete/config/install/base/dashboard.xml:192
-#: concrete/config/install/base/dashboard.xml:544
+#: concrete/config/install/base/dashboard.xml:551
 #: concrete/single_pages/dashboard/system/seo/statistics.php:3
 #: concrete/views/dialogs/file/properties.php:13
 msgid "Statistics"
@@ -9206,7 +9256,7 @@ msgstr "Стеки"
 msgid "Gathering Tiles"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:823
+#: concrete/config/install/base/dashboard.xml:830
 #: concrete/views/panels/add.php:70
 msgid "Stack"
 msgstr "Стэки"
@@ -9927,7 +9977,7 @@ msgstr "Карта Google"
 msgid "Please enter a zoom number from 0 to 21."
 msgstr "Введите степень увеличения от 0 до 21"
 
-#: concrete/blocks/google_map/controller.php:109
+#: concrete/blocks/google_map/controller.php:110
 msgid "You must select a valid location."
 msgstr ""
 
@@ -10107,6 +10157,27 @@ msgstr ""
 msgid "Gathering Display"
 msgstr ""
 
+#: concrete/blocks/page_title/form_add_edit.php:6
+msgid "Custom Title"
+msgstr ""
+
+#: concrete/blocks/page_title/form_add_edit.php:9
+msgid "Override page name with custom title?"
+msgstr ""
+
+#: concrete/blocks/page_title/form_add_edit.php:14
+msgid "Custom Title Text"
+msgstr ""
+
+#: concrete/blocks/page_title/controller.php:25
+msgid "Displays a Page's Title"
+msgstr ""
+
+#: concrete/blocks/page_title/controller.php:30
+#: concrete/blocks/page_title/controller.php:47
+msgid "Page Title"
+msgstr ""
+
 #: concrete/blocks/content/controller.php:34
 msgid "HTML/WYSIWYG Editor Content."
 msgstr "Модуль содержимого с удобным HTML/WYSIWYG редактором."
@@ -10164,11 +10235,11 @@ msgstr "Избранные расширения"
 msgid "Cannot retrieve data from the concrete5 marketplace."
 msgstr "Не получается получить данные из магазина на сайте concrete5.org"
 
-#: concrete/blocks/next_previous/controller.php:16
+#: concrete/blocks/next_previous/controller.php:17
 msgid "Navigate through sibling pages."
 msgstr "Навигация по соседним страницам."
 
-#: concrete/blocks/next_previous/controller.php:20
+#: concrete/blocks/next_previous/controller.php:21
 msgid "Next & Previous Nav"
 msgstr "Последовательная навигация"
 
@@ -11499,6 +11570,33 @@ msgstr "iFrame - Работает на большинстве устройств
 msgid "Flash Embed - Legacy method"
 msgstr "Внедренный Flash - Оставлено для совместимости"
 
+#: concrete/blocks/social_links/form.php:4
+msgid "Choose Social Links to Show"
+msgstr ""
+
+#: concrete/blocks/social_links/form.php:8
+#: concrete/single_pages/dashboard/system/basics/social.php:105
+msgid "You have not added any social links."
+msgstr ""
+
+#: concrete/blocks/social_links/form.php:31
+#, php-format
+msgid "Add social links <a href=\"%s\">in the dashboard</a>"
+msgstr ""
+
+#: concrete/blocks/social_links/controller.php:25
+msgid "Allows users to add social icons to their website"
+msgstr ""
+
+#: concrete/blocks/social_links/controller.php:30
+#: concrete/config/install/base/dashboard.xml:479
+msgid "Social Links"
+msgstr ""
+
+#: concrete/blocks/social_links/controller.php:75
+msgid "You must choose at least one link."
+msgstr ""
+
 #: concrete/blocks/dashboard_site_activity/controller.php:16
 msgid "Displays a summary of website activity."
 msgstr "Информация о работе сайта."
@@ -11903,6 +12001,7 @@ msgid "Topic Default Parent Node"
 msgstr ""
 
 #: concrete/attributes/social_links/form.php:22
+#: concrete/single_pages/dashboard/system/basics/social.php:86
 msgid "Add Link"
 msgstr ""
 
@@ -12623,6 +12722,7 @@ msgstr ""
 
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:101
 #: concrete/single_pages/dashboard/system/attributes/topics/view.php:62
+#: concrete/single_pages/dashboard/system/basics/social.php:32
 msgid "Are you sure? This action cannot be undone."
 msgstr ""
 
@@ -12686,7 +12786,7 @@ msgid "Badge Description"
 msgstr ""
 
 #: concrete/config/install/base/dashboard.xml:165
-#: concrete/config/install/base/dashboard.xml:716
+#: concrete/config/install/base/dashboard.xml:723
 #: concrete/single_pages/account/profile/public_profile.php:31
 #: concrete/single_pages/dashboard/users/add_group.php:102
 #: concrete/single_pages/dashboard/users/groups.php:73
@@ -13088,7 +13188,7 @@ msgstr "Отслеживание статистики посещений в conc
 msgid "Track page view statistics."
 msgstr "Отслеживать статистику посещений страниц."
 
-#: concrete/config/install/base/dashboard.xml:551
+#: concrete/config/install/base/dashboard.xml:558
 #: concrete/single_pages/dashboard/system/seo/searchindex.php:4
 msgid "Search Index"
 msgstr "Поисковый индекс"
@@ -13134,7 +13234,7 @@ msgstr "Разделяйте зарезервированный слова за�
 msgid "Reset To Default"
 msgstr "Сбросить на настройки по умолчанию"
 
-#: concrete/config/install/base/dashboard.xml:530
+#: concrete/config/install/base/dashboard.xml:537
 #: concrete/single_pages/dashboard/system/seo/codes.php:9
 #: concrete/single_pages/dashboard/system/seo/codes.php:14
 msgid "Tracking Codes"
@@ -13162,7 +13262,7 @@ msgstr "Подвал страницы"
 msgid "System &amp; Settings"
 msgstr "Настройки системы"
 
-#: concrete/config/install/base/dashboard.xml:523
+#: concrete/config/install/base/dashboard.xml:530
 #: concrete/single_pages/dashboard/system/seo/bulk.php:2
 msgid "Bulk SEO Updater"
 msgstr "Пакетное обновление метаданных"
@@ -13241,7 +13341,7 @@ msgstr "Включить SEF ссылки"
 msgid "Code for your .htaccess file"
 msgstr "Код для файла .htaccess в корне сайта"
 
-#: concrete/config/install/base/dashboard.xml:761
+#: concrete/config/install/base/dashboard.xml:768
 #: concrete/single_pages/dashboard/system/environment/info.php:2
 msgid "Environment"
 msgstr "Окружение"
@@ -13328,7 +13428,7 @@ msgstr "Показывать ошибки на странице."
 msgid "You cannot access task permissions."
 msgstr "У вас нет доступа к заданию прав"
 
-#: concrete/config/install/base/dashboard.xml:582
+#: concrete/config/install/base/dashboard.xml:589
 #: concrete/single_pages/dashboard/system/permissions/site.php:7
 msgid "Site Access"
 msgstr "Доступ к сайту"
@@ -13386,7 +13486,7 @@ msgstr "Не установлено ни одной библиотеки CAPTCHA
 msgid "Save Additional Settings"
 msgstr "Сохранить дополнительные параметры"
 
-#: concrete/config/install/base/dashboard.xml:596
+#: concrete/config/install/base/dashboard.xml:603
 #: concrete/single_pages/dashboard/system/permissions/filetypes.php:3
 msgid "Allowed File Types"
 msgstr "Допустимые типы файлов"
@@ -13397,7 +13497,7 @@ msgid ""
 "extensions with commas. Periods and spaces will be ignored."
 msgstr "Только файлы с указанными расширениями будут разрешены для использования. Разделяйте расширения запятыми. Пробелы и точки будут проигнорированы. "
 
-#: concrete/config/install/base/dashboard.xml:635
+#: concrete/config/install/base/dashboard.xml:642
 #: concrete/single_pages/dashboard/system/permissions/maintenance.php:4
 msgid "Maintenance Mode"
 msgstr "Режим обслуживания"
@@ -13455,12 +13555,12 @@ msgstr "На каждый e-mail из этого списка будет отп�
 msgid "You have no anti-spam libraries installed."
 msgstr "Не установлено ни одной антиспам библиотеки"
 
-#: concrete/config/install/base/dashboard.xml:603
+#: concrete/config/install/base/dashboard.xml:610
 #: concrete/single_pages/dashboard/system/permissions/tasks.php:8
 msgid "Task Permissions"
 msgstr "Права доступа к задаче"
 
-#: concrete/config/install/base/dashboard.xml:610
+#: concrete/config/install/base/dashboard.xml:617
 #: concrete/single_pages/dashboard/system/permissions/users.php:8
 msgid "User Permissions"
 msgstr "Права пользователя"
@@ -13724,7 +13824,7 @@ msgstr ""
 msgid "Enable"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:658
+#: concrete/config/install/base/dashboard.xml:665
 #: concrete/single_pages/dashboard/system/registration/public.php:2
 msgid "Public Registration"
 msgstr "Регистрация на сайте"
@@ -13773,7 +13873,7 @@ msgstr "Разрешить OpenID"
 msgid "Use emails for login"
 msgstr "Использовать e-mail как имя для входа"
 
-#: concrete/config/install/base/dashboard.xml:644
+#: concrete/config/install/base/dashboard.xml:651
 #: concrete/single_pages/dashboard/system/registration/postlogin.php:2
 msgid "Login Destination"
 msgstr "Переход после регистрации"
@@ -13824,7 +13924,7 @@ msgstr "Макс. Gravatar рейтинг"
 msgid "Gravatar Image Set"
 msgstr "Группа Gravatar"
 
-#: concrete/config/install/base/dashboard.xml:479
+#: concrete/config/install/base/dashboard.xml:486
 #: concrete/single_pages/dashboard/system/basics/icons.php:2
 msgid "Bookmark Icons"
 msgstr "Значок сайта"
@@ -13876,7 +13976,7 @@ msgstr "Цвет фона"
 msgid "Enable user defined time zones."
 msgstr "Разрешить часовые пояса, определяемые пользователем."
 
-#: concrete/config/install/base/dashboard.xml:486
+#: concrete/config/install/base/dashboard.xml:493
 #: concrete/single_pages/dashboard/system/basics/editor.php:2
 msgid "Rich Text Editor"
 msgstr "Редактор текста"
@@ -13930,6 +14030,19 @@ msgid ""
 "default name for your project on concrete5.org"
 msgstr ""
 
+#: concrete/single_pages/dashboard/system/basics/social.php:22
+#: concrete/single_pages/dashboard/system/basics/social.php:36
+msgid "Delete Link"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/basics/social.php:50
+msgid "Delete Social Link"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/basics/social.php:61
+msgid "Service"
+msgstr ""
+
 #: concrete/single_pages/dashboard/system/backup/backup.php:14
 msgid "Confirm Delete"
 msgstr "Подтвердить удаление"
@@ -13947,7 +14060,7 @@ msgstr "Удалить резервное копирование"
 msgid "Restore Backup"
 msgstr "Восстановление резервного копирования"
 
-#: concrete/config/install/base/dashboard.xml:812
+#: concrete/config/install/base/dashboard.xml:819
 #: concrete/single_pages/dashboard/system/backup/backup.php:94
 msgid "Backup Database"
 msgstr "Резервное копирование"
@@ -14061,7 +14174,7 @@ msgstr "Доступно несколько обновлений. Пожалуй
 msgid "Current Version"
 msgstr "Текущая версия"
 
-#: concrete/config/install/base/dashboard.xml:813
+#: concrete/config/install/base/dashboard.xml:820
 #: concrete/single_pages/dashboard/system/backup/update.php:66
 msgid "Update concrete5"
 msgstr "Обновления Concrete5"
@@ -14076,7 +14189,7 @@ msgid ""
 "it may help to clear your cache."
 msgstr "Если сайт показывает устаревшую информацию или поведение его нетипично, то можно очистить кэш для исключения его влияния на сайт."
 
-#: concrete/config/install/base/dashboard.xml:566
+#: concrete/config/install/base/dashboard.xml:573
 #: concrete/single_pages/dashboard/system/optimization/clearcache.php:8
 msgid "Clear Cache"
 msgstr "Очистка кэша"
@@ -14166,7 +14279,7 @@ msgstr "Каждые "
 msgid " minutes."
 msgstr "минут."
 
-#: concrete/config/install/base/dashboard.xml:573
+#: concrete/config/install/base/dashboard.xml:580
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:43
 msgid "Automated Jobs"
 msgstr "Автоматизированные задания"
@@ -14839,12 +14952,12 @@ msgstr "Редактировать профиль"
 msgid "Basic Information"
 msgstr "Основная информация"
 
-#: concrete/config/install/base/dashboard.xml:500
+#: concrete/config/install/base/dashboard.xml:507
 #: concrete/single_pages/account/profile/edit.php:29
 msgid "Time Zone"
 msgstr "Часовой пояс"
 
-#: concrete/config/install/base/dashboard.xml:665
+#: concrete/config/install/base/dashboard.xml:672
 #: concrete/single_pages/account/profile/edit.php:61
 msgid "Authentication Types"
 msgstr ""
@@ -15373,486 +15486,491 @@ msgstr "Основная информация о вашем сайте."
 msgid "website name, title"
 msgstr "название сайта, заголовок"
 
-#: concrete/config/install/base/dashboard.xml:479
+#. Keywords for page /dashboard/system/basics/social
+#: concrete/config/install/base/dashboard.xml:482
+msgid "sharing, facebook, twitter"
+msgstr ""
+
+#: concrete/config/install/base/dashboard.xml:486
 msgid "Bookmark icon and mobile home screen icon setup."
 msgstr "Добавить в закладки иконку и мобильный домашний экран значка установки."
 
 #. Keywords for page /dashboard/system/basics/icons
-#: concrete/config/install/base/dashboard.xml:482
+#: concrete/config/install/base/dashboard.xml:489
 msgid "logo, favicon, iphone, icon, bookmark"
 msgstr "логотип, favicon, iphone, icon, закладки"
 
 #. Keywords for page /dashboard/system/basics/editor
-#: concrete/config/install/base/dashboard.xml:489
+#: concrete/config/install/base/dashboard.xml:496
 msgid "tinymce, content block, fonts, editor, content, overlay"
 msgstr "tinymce, блок контента, шрифты, редактор, контент, оверлей"
 
-#: concrete/config/install/base/dashboard.xml:493
+#: concrete/config/install/base/dashboard.xml:500
 msgid "Languages"
 msgstr "Языковые настройки"
 
 #. Keywords for page /dashboard/system/basics/multilingual
-#: concrete/config/install/base/dashboard.xml:496
+#: concrete/config/install/base/dashboard.xml:503
 msgid "translate, translation, internationalization, multilingual"
 msgstr "перевести, перевод, интернационализация, многоязычный"
 
 #. Keywords for page /dashboard/system/basics/timezone
-#: concrete/config/install/base/dashboard.xml:503
+#: concrete/config/install/base/dashboard.xml:510
 msgid "timezone, profile, locale"
 msgstr "временная зона, профиль, локаль"
 
-#: concrete/config/install/base/dashboard.xml:507
+#: concrete/config/install/base/dashboard.xml:514
 msgid "Interface Preferences"
 msgstr "Настройки интерфейса"
 
 #. Keywords for page /dashboard/system/basics/images
-#: concrete/config/install/base/dashboard.xml:510
+#: concrete/config/install/base/dashboard.xml:517
 msgid "interface, quick nav, dashboard background, background image"
 msgstr "интерфейс, быстрая навигация, фон панели управления, фоновое изображение"
 
-#: concrete/config/install/base/dashboard.xml:515
+#: concrete/config/install/base/dashboard.xml:522
 msgid "SEO & Statistics"
 msgstr "SEO и статистика"
 
-#: concrete/config/install/base/dashboard.xml:515
+#: concrete/config/install/base/dashboard.xml:522
 msgid "Enable pretty URLs, statistics and tracking codes."
 msgstr "Активировать \"говорящие\" URLs, статистику и код отслеживания"
 
-#: concrete/config/install/base/dashboard.xml:516
+#: concrete/config/install/base/dashboard.xml:523
 msgid "Pretty URLs"
 msgstr "SEF ссылки"
 
 #. Keywords for page /dashboard/system/seo/urls
-#: concrete/config/install/base/dashboard.xml:519
+#: concrete/config/install/base/dashboard.xml:526
 msgid "vanity, pretty url, seo, pageview, view"
 msgstr "seo, дружественные url"
 
 #. Keywords for page /dashboard/system/seo/bulk
-#: concrete/config/install/base/dashboard.xml:526
+#: concrete/config/install/base/dashboard.xml:533
 msgid "bulk, seo, change keywords, engine, optimization, search"
 msgstr "массовые операции, seo, сменить ключевые слова, оптимизация, поиск"
 
 #. Keywords for page /dashboard/system/seo/codes
-#: concrete/config/install/base/dashboard.xml:533
+#: concrete/config/install/base/dashboard.xml:540
 msgid "traffic, statistics, google analytics, quant, pageviews, hits"
 msgstr "траффик, статистика, просмотры"
 
-#: concrete/config/install/base/dashboard.xml:537
+#: concrete/config/install/base/dashboard.xml:544
 msgid "Excluded URL Word List"
 msgstr "Слова для исключения из адреса"
 
 #. Keywords for page /dashboard/system/seo/excluded
-#: concrete/config/install/base/dashboard.xml:540
+#: concrete/config/install/base/dashboard.xml:547
 msgid "pretty, slug"
 msgstr "дружественный, псевдоним"
 
 #. Keywords for page /dashboard/system/seo/statistics
-#: concrete/config/install/base/dashboard.xml:547
+#: concrete/config/install/base/dashboard.xml:554
 msgid "turn off statistics, tracking, statistics, pageviews, hits"
 msgstr "отключение статистики, отслеживание, статистика, посещения"
 
 #. Keywords for page /dashboard/system/seo/searchindex
-#: concrete/config/install/base/dashboard.xml:554
+#: concrete/config/install/base/dashboard.xml:561
 msgid "configure search, site search, search option"
 msgstr "настройки поиска, поиск по сайту, опции поиска"
 
-#: concrete/config/install/base/dashboard.xml:558
+#: concrete/config/install/base/dashboard.xml:565
 msgid "Optimization"
 msgstr "Оптимизация"
 
-#: concrete/config/install/base/dashboard.xml:558
+#: concrete/config/install/base/dashboard.xml:565
 msgid "Keep your site running well."
 msgstr "Сохранять сайт работающим"
 
-#: concrete/config/install/base/dashboard.xml:559
+#: concrete/config/install/base/dashboard.xml:566
 msgid "Cache & Speed Settings"
 msgstr "Кэширование страниц"
 
 #. Keywords for page /dashboard/system/optimization/cache
-#: concrete/config/install/base/dashboard.xml:562
+#: concrete/config/install/base/dashboard.xml:569
 msgid ""
 "cache option, change cache, override, turn on cache, turn off cache, no "
 "cache, page cache, caching"
 msgstr "опции кэша, изменить кэш, отключить кэш, включить кэш, без кэша, кэширование страниц"
 
 #. Keywords for page /dashboard/system/optimization/clearcache
-#: concrete/config/install/base/dashboard.xml:569
+#: concrete/config/install/base/dashboard.xml:576
 msgid "cache option, turn off cache, no cache, page cache, caching"
 msgstr "опции кэша, включить кэш, выключить кэш, кэш страниц, кеширование"
 
 #. Keywords for page /dashboard/system/optimization/jobs
-#: concrete/config/install/base/dashboard.xml:576
+#: concrete/config/install/base/dashboard.xml:583
 msgid ""
 "index search, reindex search, build sitemap, sitemap.xml, clear old "
 "versions, page versions, remove old"
 msgstr "поисковый индекс, переиндексация, создание карты сайта, sitemap.xml, очистить старые версии, версии страниц, удалить старые"
 
-#: concrete/config/install/base/dashboard.xml:581
+#: concrete/config/install/base/dashboard.xml:588
 msgid "Permissions & Access"
 msgstr "Права доступа"
 
-#: concrete/config/install/base/dashboard.xml:581
+#: concrete/config/install/base/dashboard.xml:588
 msgid "Control who sees and edits your site."
 msgstr "Установите кто просматривает и редактирует ваш сайт."
 
 #. Keywords for page /dashboard/system/permissions/site
-#: concrete/config/install/base/dashboard.xml:585
+#: concrete/config/install/base/dashboard.xml:592
 msgid "editors, hide site, offline, private, public, access"
 msgstr "редакторы, скрыть сайт, оффлайн, частный, публичный, доступ"
 
-#: concrete/config/install/base/dashboard.xml:589
+#: concrete/config/install/base/dashboard.xml:596
 msgid "File Manager Permissions"
 msgstr "Доступ к менеджеру файлов"
 
 #. Keywords for page /dashboard/system/permissions/files
-#: concrete/config/install/base/dashboard.xml:592
+#: concrete/config/install/base/dashboard.xml:599
 msgid "file options, file manager, upload, modify"
 msgstr "опции файла, менеджер файлов, выгрузка, изменение"
 
 #. Keywords for page /dashboard/system/permissions/filetypes
-#: concrete/config/install/base/dashboard.xml:599
+#: concrete/config/install/base/dashboard.xml:606
 msgid "security, files, media, extension, manager, upload"
 msgstr "безопасность, файлы, расширения, менеджер, выгрузка"
 
 #. Keywords for page /dashboard/system/permissions/tasks
-#: concrete/config/install/base/dashboard.xml:606
+#: concrete/config/install/base/dashboard.xml:613
 msgid "security, actions, administrator, admin, package, marketplace, search"
 msgstr "безопасность, действия, администратор, админ, пакет, поиск, marketplace"
 
-#: concrete/config/install/base/dashboard.xml:612
+#: concrete/config/install/base/dashboard.xml:619
 msgid "Advanced Permissions"
 msgstr "Дополнительные права"
 
-#: concrete/config/install/base/dashboard.xml:614
+#: concrete/config/install/base/dashboard.xml:621
 msgid "IP Blacklist"
 msgstr "Черный список IP адресов"
 
 #. Keywords for page /dashboard/system/permissions/blacklist
-#: concrete/config/install/base/dashboard.xml:617
+#: concrete/config/install/base/dashboard.xml:624
 msgid "security, lock ip, lock out, block ip, address, restrict, access"
 msgstr "безопасность, блокировка ip, снятие блокировки, адрес, ограничения, доступ"
 
-#: concrete/config/install/base/dashboard.xml:621
+#: concrete/config/install/base/dashboard.xml:628
 msgid "Captcha Setup"
 msgstr "Настройки Captcha"
 
 #. Keywords for page /dashboard/system/permissions/captcha
-#: concrete/config/install/base/dashboard.xml:624
+#: concrete/config/install/base/dashboard.xml:631
 msgid "security, registration"
 msgstr "безопасность, регистрация"
 
-#: concrete/config/install/base/dashboard.xml:628
+#: concrete/config/install/base/dashboard.xml:635
 msgid "Spam Control"
 msgstr "Антиспам"
 
 #. Keywords for page /dashboard/system/permissions/antispam
-#: concrete/config/install/base/dashboard.xml:631
+#: concrete/config/install/base/dashboard.xml:638
 msgid "antispam, block spam, security"
 msgstr "антиспам, блокировка спама, безопасность"
 
 #. Keywords for page /dashboard/system/permissions/maintenance
-#: concrete/config/install/base/dashboard.xml:638
+#: concrete/config/install/base/dashboard.xml:645
 msgid "lock site, under construction, hide, hidden"
 msgstr "блокировка сайта, в разработке, скрыт, невидим"
 
-#: concrete/config/install/base/dashboard.xml:643
+#: concrete/config/install/base/dashboard.xml:650
 msgid "Login & Registration"
 msgstr "Регистрация на сайте"
 
-#: concrete/config/install/base/dashboard.xml:643
+#: concrete/config/install/base/dashboard.xml:650
 msgid "Change login behaviors and setup public profiles."
 msgstr "Изменение поведения при входе и настройка общедоступных профилей."
 
 #. Keywords for page /dashboard/system/registration/postlogin
-#: concrete/config/install/base/dashboard.xml:647
+#: concrete/config/install/base/dashboard.xml:654
 msgid "profile, login, redirect, specific, dashboard, administrators"
 msgstr "профиль, вход, перенаправление, определение, панель управления, администраторы"
 
-#: concrete/config/install/base/dashboard.xml:651
+#: concrete/config/install/base/dashboard.xml:658
 msgid "Public Profiles"
 msgstr "Общие профили"
 
 #. Keywords for page /dashboard/system/registration/profiles
-#: concrete/config/install/base/dashboard.xml:654
+#: concrete/config/install/base/dashboard.xml:661
 msgid "member profile, member page, community, forums, social, avatar"
 msgstr "профиль пользователя, страница пользователя, сообщество, форумы, социальный, аватар"
 
 #. Keywords for page /dashboard/system/registration/public
-#: concrete/config/install/base/dashboard.xml:661
+#: concrete/config/install/base/dashboard.xml:668
 msgid "signup, new user, community"
 msgstr "присоединиться, новый пользователь, сообщество"
 
 #. Keywords for page /dashboard/system/registration/authentication
-#: concrete/config/install/base/dashboard.xml:668
+#: concrete/config/install/base/dashboard.xml:675
 msgid "auth, authentication, types, oauth, facebook, login, registration"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:673
+#: concrete/config/install/base/dashboard.xml:680
 msgid "Control how your site send and processes mail."
 msgstr "Установите как ваш сайт отправляет и обрабатывает почту."
 
 #. Keywords for page /dashboard/system/mail
-#: concrete/config/install/base/dashboard.xml:676
+#: concrete/config/install/base/dashboard.xml:683
 msgid "smtp, mail settings"
 msgstr "smtp, настройки почты"
 
-#: concrete/config/install/base/dashboard.xml:680
+#: concrete/config/install/base/dashboard.xml:687
 msgid "SMTP Method"
 msgstr "Метод отправки сообщений"
 
 #. Keywords for page /dashboard/system/mail/method
-#: concrete/config/install/base/dashboard.xml:683
+#: concrete/config/install/base/dashboard.xml:690
 msgid "email server, mail settings, mail configuration, external, internal"
 msgstr "почтовый сервер, настройки почты, конфигурация почты, внешние, внутренний"
 
-#: concrete/config/install/base/dashboard.xml:687
+#: concrete/config/install/base/dashboard.xml:694
 msgid "Test Mail Settings"
 msgstr ""
 
 #. Keywords for page /dashboard/system/mail/method/test
-#: concrete/config/install/base/dashboard.xml:690
+#: concrete/config/install/base/dashboard.xml:697
 msgid "test smtp, test mail"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:694
+#: concrete/config/install/base/dashboard.xml:701
 msgid "Email Importers"
 msgstr "Импорт почты"
 
 #. Keywords for page /dashboard/system/mail/importers
-#: concrete/config/install/base/dashboard.xml:697
+#: concrete/config/install/base/dashboard.xml:704
 msgid ""
 "email server, mail settings, mail configuration, private message, message "
 "system, import, email, message"
 msgstr "почтовый сервер, настройки почты, конфигурация почты, личные сообщения, система сообщений, импорт, email, сообщение"
 
-#: concrete/config/install/base/dashboard.xml:702
+#: concrete/config/install/base/dashboard.xml:709
 msgid "Conversations"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:702
+#: concrete/config/install/base/dashboard.xml:709
 msgid "Manage your conversations settings"
 msgstr ""
 
 #. Keywords for page /dashboard/system/conversations
-#: concrete/config/install/base/dashboard.xml:705
+#: concrete/config/install/base/dashboard.xml:712
 msgid "conversations"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:709
+#: concrete/config/install/base/dashboard.xml:716
 msgid "Conversations Editor"
 msgstr ""
 
 #. Keywords for page /dashboard/system/conversations/editor
-#: concrete/config/install/base/dashboard.xml:712
+#: concrete/config/install/base/dashboard.xml:719
 msgid "conversations editor, editor"
 msgstr ""
 
 #. Keywords for page /dashboard/system/conversations/points
-#: concrete/config/install/base/dashboard.xml:719
+#: concrete/config/install/base/dashboard.xml:726
 msgid "conversations ratings, ratings, community, community points"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:723
+#: concrete/config/install/base/dashboard.xml:730
 msgid "Banned Words"
 msgstr ""
 
 #. Keywords for page /dashboard/system/conversations/bannedwords
-#: concrete/config/install/base/dashboard.xml:726
+#: concrete/config/install/base/dashboard.xml:733
 msgid ""
 "conversations bad words, banned words, banned, bad words, bad, words, list"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:731
+#: concrete/config/install/base/dashboard.xml:738
 msgid "Setup attributes for pages, users, files and more."
 msgstr "Настроить атрибуты для страниц, пользователей, файлов и прочего."
 
 #. Keywords for page /dashboard/system/attributes
-#: concrete/config/install/base/dashboard.xml:734
+#: concrete/config/install/base/dashboard.xml:741
 msgid "attribute configuration"
 msgstr "конфигурации атрибутов"
 
-#: concrete/config/install/base/dashboard.xml:738
+#: concrete/config/install/base/dashboard.xml:745
 msgid "Group attributes into sets for easier organization"
 msgstr "Сгрупировать атрибуты в группу для более легкой организации"
 
 #. Keywords for page /dashboard/system/attributes/sets
-#: concrete/config/install/base/dashboard.xml:741
+#: concrete/config/install/base/dashboard.xml:748
 msgid "attributes, sets"
 msgstr "атрибуты, наборы"
 
-#: concrete/config/install/base/dashboard.xml:745
+#: concrete/config/install/base/dashboard.xml:752
 msgid "Types"
 msgstr "Типы"
 
-#: concrete/config/install/base/dashboard.xml:745
+#: concrete/config/install/base/dashboard.xml:752
 msgid "Choose which attribute types are available for different items."
 msgstr "Выбрать какие атрибуты для чего доступны."
 
 #. Keywords for page /dashboard/system/attributes/types
-#: concrete/config/install/base/dashboard.xml:748
+#: concrete/config/install/base/dashboard.xml:755
 msgid "attributes, types"
 msgstr "атрибуты, типы"
 
-#: concrete/config/install/base/dashboard.xml:752
+#: concrete/config/install/base/dashboard.xml:759
 msgid "Topics"
 msgstr ""
 
 #. Keywords for page /dashboard/system/attributes/topics
-#: concrete/config/install/base/dashboard.xml:755
+#: concrete/config/install/base/dashboard.xml:762
 msgid "topics, tags, taxonomy"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:761
+#: concrete/config/install/base/dashboard.xml:768
 msgid "Advanced settings for web developers."
 msgstr "Дополнительные настройки для web-разработчиков."
 
-#: concrete/config/install/base/dashboard.xml:768
+#: concrete/config/install/base/dashboard.xml:775
 msgid "Environment Information"
 msgstr "Общая информация"
 
 #. Keywords for page /dashboard/system/environment/info
-#: concrete/config/install/base/dashboard.xml:771
+#: concrete/config/install/base/dashboard.xml:778
 msgid "overrides, system info, debug, support, help"
 msgstr "переопределение, системная информация, отладка, поддержка, помощь"
 
-#: concrete/config/install/base/dashboard.xml:775
+#: concrete/config/install/base/dashboard.xml:782
 msgid "Debug Settings"
 msgstr "Настройки отладки"
 
 #. Keywords for page /dashboard/system/environment/debug
-#: concrete/config/install/base/dashboard.xml:778
+#: concrete/config/install/base/dashboard.xml:785
 msgid "errors, exceptions, develop, support, help"
 msgstr "ошибки, исключения, разработка, поддержка, помощь"
 
-#: concrete/config/install/base/dashboard.xml:782
+#: concrete/config/install/base/dashboard.xml:789
 msgid "Logging Settings"
 msgstr "Настройки журналов"
 
 #. Keywords for page /dashboard/system/environment/logging
-#: concrete/config/install/base/dashboard.xml:785
+#: concrete/config/install/base/dashboard.xml:792
 msgid "email, logging, logs, smtp, pop, errors, mysql, log"
 msgstr "почта, журналирование, журналы, smtp, pop, ошибки, mysql, журнал"
 
-#: concrete/config/install/base/dashboard.xml:789
+#: concrete/config/install/base/dashboard.xml:796
 msgid "File Storage Locations"
 msgstr "Нахождение хранилища файлов"
 
 #. Keywords for page /dashboard/system/environment/storage
-#: concrete/config/install/base/dashboard.xml:792
+#: concrete/config/install/base/dashboard.xml:799
 msgid "security, alternate storage, hide files"
 msgstr "безопасность, альтернативное хранилище, скрытие файлов"
 
-#: concrete/config/install/base/dashboard.xml:798
+#: concrete/config/install/base/dashboard.xml:805
 msgid "Proxy Server"
 msgstr "Proxy сервер"
 
 #. Keywords for page /dashboard/system/environment/proxy
-#: concrete/config/install/base/dashboard.xml:801
+#: concrete/config/install/base/dashboard.xml:808
 msgid "network, proxy server"
 msgstr "сеть, прокси"
 
-#: concrete/config/install/base/dashboard.xml:805
+#: concrete/config/install/base/dashboard.xml:812
 msgid "Backup & Restore"
 msgstr "База данных"
 
-#: concrete/config/install/base/dashboard.xml:805
+#: concrete/config/install/base/dashboard.xml:812
 msgid "Backup or restore your website."
 msgstr "Резервное копирование или восстановление сайта."
 
 #. Keywords for page /dashboard/system/backup
-#: concrete/config/install/base/dashboard.xml:808
+#: concrete/config/install/base/dashboard.xml:815
 msgid "export, backup, database, sql, mysql, encryption, restore"
 msgstr "экспорт, резервирование, база данных, sql, mysql, шифрование, восстановление"
 
 #. Keywords for page /dashboard/system/backup/update
-#: concrete/config/install/base/dashboard.xml:816
+#: concrete/config/install/base/dashboard.xml:823
 msgid "upgrade, new version, update"
 msgstr "обновление, новая версия, модернизация"
 
-#: concrete/config/install/base/dashboard.xml:824
+#: concrete/config/install/base/dashboard.xml:831
 msgid "Dashboard Primary + Five"
 msgstr "Dashboard Primary + Five"
 
-#: concrete/config/install/base/dashboard.xml:825
+#: concrete/config/install/base/dashboard.xml:832
 msgid "Dashboard Header + Four Column"
 msgstr "Заголовок + Четыре колонки"
 
-#: concrete/config/install/base/dashboard.xml:829
+#: concrete/config/install/base/dashboard.xml:836
 msgctxt "PageTemplateName"
 msgid "Stack"
 msgstr "Стэки"
 
-#: concrete/config/install/base/dashboard.xml:830
+#: concrete/config/install/base/dashboard.xml:837
 msgctxt "PageTemplateName"
 msgid "Dashboard Primary + Five"
 msgstr "Dashboard Primary + Five"
 
-#: concrete/config/install/base/dashboard.xml:831
+#: concrete/config/install/base/dashboard.xml:838
 msgctxt "PageTemplateName"
 msgid "Dashboard Header + Four Column"
 msgstr "Заголовок + Четыре колонки"
 
-#: concrete/config/install/base/dashboard.xml:834
+#: concrete/config/install/base/dashboard.xml:841
 msgid "Welcome to concrete5"
 msgstr "Добро пожаловать в concrete5"
 
-#: concrete/config/install/base/dashboard.xml:834
+#: concrete/config/install/base/dashboard.xml:841
 msgid ""
 "Learn about how to use concrete5, how to develop for concrete5, and get "
 "general help."
 msgstr "Узнать как использовать concrete5, как разрабатывать под concrete5, и помощь."
 
-#: concrete/config/install/base/dashboard.xml:840
+#: concrete/config/install/base/dashboard.xml:847
 msgctxt "AreaName"
 msgid "Header"
 msgstr "Заголовок"
 
-#: concrete/config/install/base/dashboard.xml:851
+#: concrete/config/install/base/dashboard.xml:858
 msgctxt "AreaName"
 msgid "Column 1"
 msgstr "Колонка 1"
 
-#: concrete/config/install/base/dashboard.xml:865
+#: concrete/config/install/base/dashboard.xml:872
 msgctxt "AreaName"
 msgid "Column 2"
 msgstr "Колонка 2"
 
-#: concrete/config/install/base/dashboard.xml:878
+#: concrete/config/install/base/dashboard.xml:885
 msgctxt "AreaName"
 msgid "Column 3"
 msgstr "Колонка 3"
 
-#: concrete/config/install/base/dashboard.xml:892
+#: concrete/config/install/base/dashboard.xml:899
 msgctxt "AreaName"
 msgid "Column 4"
 msgstr "Колонка 4"
 
-#: concrete/config/install/base/dashboard.xml:917
+#: concrete/config/install/base/dashboard.xml:924
 msgctxt "AreaName"
 msgid "Primary"
 msgstr "Основной"
 
-#: concrete/config/install/base/dashboard.xml:921
+#: concrete/config/install/base/dashboard.xml:928
 msgctxt "AreaName"
 msgid "Secondary 1"
 msgstr "Дополнительный 1"
 
-#: concrete/config/install/base/dashboard.xml:930
+#: concrete/config/install/base/dashboard.xml:937
 msgctxt "AreaName"
 msgid "Secondary 2"
 msgstr "Дополнительный 2"
 
-#: concrete/config/install/base/dashboard.xml:939
+#: concrete/config/install/base/dashboard.xml:946
 msgctxt "AreaName"
 msgid "Secondary 3"
 msgstr "Дополнительный 3"
 
-#: concrete/config/install/base/dashboard.xml:942
+#: concrete/config/install/base/dashboard.xml:949
 msgctxt "AreaName"
 msgid "Secondary 4"
 msgstr "Дополнительный 4"
 
-#: concrete/config/install/base/dashboard.xml:945
+#: concrete/config/install/base/dashboard.xml:952
 msgctxt "AreaName"
 msgid "Secondary 5"
 msgstr "Дополнительный 5"
@@ -16850,37 +16968,37 @@ msgctxt "ImageEditorFilterName"
 msgid "Vignette"
 msgstr ""
 
-#: concrete/config/install/base/blocktypes.xml:46
+#: concrete/config/install/base/blocktypes.xml:48
 msgctxt "SystemContentEditorSnippetName"
 msgid "Page Name"
 msgstr "Страница"
 
-#: concrete/config/install/base/blocktypes.xml:47
+#: concrete/config/install/base/blocktypes.xml:49
 msgctxt "SystemContentEditorSnippetName"
 msgid "User Name"
 msgstr "Имя пользователя"
 
-#: concrete/config/install/base/blocktypes.xml:51
+#: concrete/config/install/base/blocktypes.xml:53
 msgctxt "BlockTypeSetName"
 msgid "Basic"
 msgstr ""
 
-#: concrete/config/install/base/blocktypes.xml:58
+#: concrete/config/install/base/blocktypes.xml:60
 msgctxt "BlockTypeSetName"
 msgid "Navigation"
 msgstr "Навигация"
 
-#: concrete/config/install/base/blocktypes.xml:71
+#: concrete/config/install/base/blocktypes.xml:74
 msgctxt "BlockTypeSetName"
 msgid "Forms"
 msgstr ""
 
-#: concrete/config/install/base/blocktypes.xml:76
+#: concrete/config/install/base/blocktypes.xml:79
 msgctxt "BlockTypeSetName"
 msgid "Social Networking"
 msgstr ""
 
-#: concrete/config/install/base/blocktypes.xml:81
+#: concrete/config/install/base/blocktypes.xml:85
 msgctxt "BlockTypeSetName"
 msgid "Multimedia"
 msgstr ""
@@ -17053,6 +17171,16 @@ msgstr "Текстовая информация"
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Body"
 msgstr "Содержимое"
+
+#: concrete/blocks/image/templates/circle
+msgctxt "TemplateFileName"
+msgid "Circle"
+msgstr ""
+
+#: concrete/blocks/image/templates/right_tilt
+msgctxt "TemplateFileName"
+msgid "Right Tilt"
+msgstr ""
 
 #: concrete/blocks/image/composer/header.php
 msgctxt "TemplateFileName"

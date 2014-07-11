@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-07-09 04:00+0000\n"
-"PO-Revision-Date: 2014-07-09 10:02+0000\n"
+"POT-Creation-Date: 2014-07-10 04:00+0000\n"
+"PO-Revision-Date: 2014-07-10 10:21+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Turkish (Turkey) (http://www.transifex.com/projects/p/concrete5/language/tr_TR/)\n"
 "MIME-Version: 1.0\n"
@@ -534,7 +534,7 @@ msgstr "Dosya grupları aranamıyor."
 msgid "None of the requested files could be found."
 msgstr "İstenilen dosyalardan hiçbiri bulunamadı."
 
-#: concrete/core/Backup/ContentExporter.php:144
+#: concrete/core/Backup/ContentExporter.php:186
 #: concrete/core/Legacy/FileList.php:116 concrete/tools/files/download.php:42
 msgid "Could not open with ZipArchive::CREATE"
 msgstr "ZipArchive::CREATE ile açılamadı."
@@ -668,6 +668,8 @@ msgstr "Incoming/ klasöründeki dosyaları sil."
 #: concrete/single_pages/dashboard/pages/types/view.php:91
 #: concrete/single_pages/dashboard/system/attributes/topics/add.php:21
 #: concrete/single_pages/dashboard/system/attributes/topics/view.php:65
+#: concrete/single_pages/dashboard/system/basics/social.php:35
+#: concrete/single_pages/dashboard/system/basics/social.php:76
 #: concrete/single_pages/dashboard/system/permissions/files.php:22
 #: concrete/single_pages/dashboard/system/registration/authentication.php:89
 #: concrete/single_pages/dashboard/users/add.php:112
@@ -1182,6 +1184,7 @@ msgstr "Konu"
 #: concrete/single_pages/dashboard/pages/single.php:21
 #: concrete/single_pages/dashboard/pages/templates/add.php:47
 #: concrete/single_pages/dashboard/pages/types/add.php:9
+#: concrete/single_pages/dashboard/system/basics/social.php:77
 #: concrete/single_pages/dashboard/system/environment/storage.php:81
 #: concrete/single_pages/dashboard/users/add.php:113
 #: concrete/single_pages/dashboard/users/points/actions.php:54
@@ -1900,7 +1903,7 @@ msgstr "Özel Şablon"
 
 #: concrete/blocks/form/form_setup_html.php:152
 #: concrete/blocks/form/form_setup_html.php:223
-#: concrete/blocks/form/view.php:111
+#: concrete/blocks/form/view.php:110
 #: concrete/single_pages/dashboard/workflow/workflows.php:47
 #: concrete/tools/page_types/composer/form/edit_control.php:54
 msgid "Required"
@@ -2369,7 +2372,7 @@ msgstr "Sonsuza Dek Kaldır"
 #: concrete/config/install/base/dashboard.xml:57
 #: concrete/config/install/base/dashboard.xml:117
 #: concrete/config/install/base/dashboard.xml:315
-#: concrete/config/install/base/dashboard.xml:731
+#: concrete/config/install/base/dashboard.xml:738
 #: concrete/elements/page_controls_footer.php:52
 #: concrete/elements/panels/page.php:79 concrete/tools/i18n_js.php:132
 #: concrete/tools/i18n_js.php:135 concrete/views/panels/page/attributes.php:6
@@ -2533,7 +2536,7 @@ msgstr "Dosyayı Kopyala"
 msgid "Choose New File"
 msgstr "Yeni Dosya Seç"
 
-#: concrete/config/install/base/dashboard.xml:738
+#: concrete/config/install/base/dashboard.xml:745
 #: concrete/elements/files/search.php:35 concrete/elements/files/search.php:67
 #: concrete/tools/i18n_js.php:195
 msgid "Sets"
@@ -3978,7 +3981,7 @@ msgid ""
 "cannot be manually removed."
 msgstr "Bu nitelik grubu kilitli. Yani bu, bir paket tarafından eklendi ve elle kaldırılamaz."
 
-#: concrete/config/install/base/dashboard.xml:759
+#: concrete/config/install/base/dashboard.xml:766
 #: concrete/controllers/single_page/dashboard/system/attributes/topics/add.php:14
 #: concrete/single_pages/dashboard/system/attributes/topics/add.php:22
 #: concrete/single_pages/dashboard/system/attributes/topics/view.php:22
@@ -4138,6 +4141,30 @@ msgstr "concrete5 arayüz ayarları güncellendi."
 #: concrete/controllers/single_page/dashboard/system/basics/name.php:15
 msgid "Your site's name has been saved."
 msgstr "Site isminiz kaydedildi."
+
+#: concrete/controllers/single_page/dashboard/system/basics/social.php:21
+msgid "Link Updated."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/basics/social.php:27
+msgid "Link Deleted."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/basics/social.php:33
+msgid "Social Link Added."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/basics/social.php:53
+msgid "You must choose a service."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/basics/social.php:82
+msgid "Invalid link."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/basics/social.php:113
+msgid "Choose a Service"
+msgstr ""
 
 #: concrete/controllers/single_page/dashboard/system/basics/multilingual.php:25
 msgid ""
@@ -4872,7 +4899,7 @@ msgstr "Yanıtlandı"
 msgid "Unknown User"
 msgstr "Bilinmeyen Kullanıcı"
 
-#: concrete/config/install/base/dashboard.xml:673
+#: concrete/config/install/base/dashboard.xml:680
 #: concrete/core/User/Search/ColumnSet/DefaultSet.php:22
 #: concrete/elements/users/confirm_list.php:8
 #: concrete/mail/user_register_approval_required.php:15
@@ -5186,7 +5213,7 @@ msgstr "İstisna Oluştu: "
 msgid "An error occurred while processing this request."
 msgstr "Bu istek işlenirken bir hata oluştu."
 
-#: concrete/core/Backup/ContentExporter.php:147
+#: concrete/core/Backup/ContentExporter.php:189
 #: concrete/core/Legacy/FileList.php:119
 #, php-format
 msgid "Failed to create zip file as \"%s\": %s"
@@ -5430,16 +5457,16 @@ msgstr "Yeni Sürüm %s"
 msgid "Version %d"
 msgstr "Sürüm %d"
 
-#: concrete/core/Page/Page.php:2058
+#: concrete/core/Page/Page.php:2006
 #, php-format
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "\"%s\" sayfası(\"%s\" yolunda olan) silindi"
 
-#: concrete/core/Page/Page.php:2058 concrete/core/Page/Page.php:2122
+#: concrete/core/Page/Page.php:2006 concrete/core/Page/Page.php:2070
 msgid "Page Action"
 msgstr "Sayfa Eylemi"
 
-#: concrete/core/Page/Page.php:2122
+#: concrete/core/Page/Page.php:2070
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "\"%s\" sayfası, \"%s\" yolundan çöpe taşındı"
@@ -6614,7 +6641,7 @@ msgstr "Kontrol Paneli Ana Sayfa"
 msgid "Customize"
 msgstr "Özelleştir"
 
-#: concrete/config/install/base/dashboard.xml:908
+#: concrete/config/install/base/dashboard.xml:915
 #: concrete/core/Application/Service/Dashboard.php:325
 msgid "Customize Dashboard Home"
 msgstr "Kontrol Paneli Ana Sayfasını Özelleştir"
@@ -6952,6 +6979,28 @@ msgstr "Facebook'ta Paylaş"
 #, php-format
 msgid "Posted by %1$s on %2$s"
 msgstr "%1$s tarafından %2$s tarihinde gönderildi"
+
+#: concrete/themes/elemental/page_not_found.php:10
+msgid "404 Error"
+msgstr ""
+
+#: concrete/themes/elemental/page_not_found.php:11
+msgid "Page not found."
+msgstr ""
+
+#: concrete/themes/elemental/elements/footer.php:52
+msgid ""
+"Built with <a href=\"http://www.concrete5.org\" "
+"class=\"concrete5\">concrete5</a> CMS."
+msgstr ""
+
+#: concrete/themes/elemental/page_forbidden.php:10
+msgid "403 Error"
+msgstr ""
+
+#: concrete/themes/elemental/page_forbidden.php:11
+msgid "You are not allowed to access this page."
+msgstr ""
 
 #: concrete/jobs/remove_old_page_versions.php:9
 msgid "Remove Old Page Versions"
@@ -7526,6 +7575,7 @@ msgstr "Bu işlem geri alınamaz."
 #: concrete/elements/collection_add_external.php:20
 #: concrete/elements/collection_edit_external.php:20
 #: concrete/elements/workflow/progress/categories/page/pending.php:12
+#: concrete/single_pages/dashboard/system/basics/social.php:68
 msgid "URL"
 msgstr "URL"
 
@@ -8799,39 +8849,39 @@ msgstr "İzinleri Değiştir - Erişim Kaldır"
 
 #: concrete/views/image-editor/filters/gaussian_blur.php:3
 msgid "Radius"
-msgstr ""
+msgstr "Yarıçap"
 
 #: concrete/views/image-editor/filters/sepia.php:1
 msgid "Apply a sepia tone"
-msgstr ""
+msgstr "Sepya tonu uygula"
 
 #: concrete/views/image-editor/filters/grayscale.php:1
 msgid "Convert image to grayscale"
-msgstr ""
+msgstr "Görüntüyü siyah beyaza dönüştür"
 
 #: concrete/views/image-editor/filters/none.php:1
 msgid "Remove all filters"
-msgstr ""
+msgstr "Tüm filtreleri kaldır"
 
 #: concrete/views/image-editor/filters/vignette.php:3
 msgid "Strength"
-msgstr ""
+msgstr "Sertlik"
 
 #: concrete/views/image-editor/filters/vignette.php:9
 msgid "60%"
-msgstr ""
+msgstr "60%"
 
 #: concrete/views/image-editor/filters/vignette.php:20
 msgid "50%"
-msgstr ""
+msgstr "50%"
 
 #: concrete/views/image-editor/editor.php:58
 msgid "No view found."
-msgstr ""
+msgstr "Görünüm bulunamadı."
 
 #: concrete/views/image-editor/control-sets/position.php:4
 msgid "Scale"
-msgstr ""
+msgstr "Ölçeklendir"
 
 #: concrete/blocks/google_map/form_setup_html.php:39
 #: concrete/blocks/video/form_setup_html.php:17
@@ -8848,7 +8898,7 @@ msgstr "Resmi Kırp"
 
 #: concrete/views/image-editor/control-sets/position.php:97
 msgid "Finalize Crop"
-msgstr ""
+msgstr "Kırpmayı Tamamla"
 
 #: concrete/single_pages/dashboard/users/search.php:136
 #: concrete/views/dialogs/file/bulk/properties.php:9
@@ -8881,7 +8931,7 @@ msgid "Save Preset"
 msgstr "Öntanımı Kaydet"
 
 #: concrete/config/install/base/dashboard.xml:192
-#: concrete/config/install/base/dashboard.xml:544
+#: concrete/config/install/base/dashboard.xml:551
 #: concrete/single_pages/dashboard/system/seo/statistics.php:3
 #: concrete/views/dialogs/file/properties.php:13
 msgid "Statistics"
@@ -9161,7 +9211,7 @@ msgstr "Yığınlar"
 msgid "Gathering Tiles"
 msgstr "Toplama Kutucukları"
 
-#: concrete/config/install/base/dashboard.xml:823
+#: concrete/config/install/base/dashboard.xml:830
 #: concrete/views/panels/add.php:70
 msgid "Stack"
 msgstr "Yığın"
@@ -9704,7 +9754,7 @@ msgstr "Boş Site"
 
 #: concrete/config/install/packages/elemental_blank/controller.php:14
 msgid "Creates an empty site using the unstyled Elemental theme."
-msgstr ""
+msgstr "Stilsiz temel temayı kullanarak bir site oluşturur."
 
 #: concrete/config/file_types.php:17
 msgid "JPEG"
@@ -9880,7 +9930,7 @@ msgstr "Google Haritası"
 msgid "Please enter a zoom number from 0 to 21."
 msgstr "Lütfen 0'la 21 arasında bir yakınlaştırma düzeyi belirleyin."
 
-#: concrete/blocks/google_map/controller.php:109
+#: concrete/blocks/google_map/controller.php:110
 msgid "You must select a valid location."
 msgstr "Geçerli bir yer seçmelisiniz."
 
@@ -10060,6 +10110,27 @@ msgstr "Alanlara eklenen toplama öğeleri için vekil blok."
 msgid "Gathering Display"
 msgstr "Toplama Görünümü"
 
+#: concrete/blocks/page_title/form_add_edit.php:6
+msgid "Custom Title"
+msgstr ""
+
+#: concrete/blocks/page_title/form_add_edit.php:9
+msgid "Override page name with custom title?"
+msgstr ""
+
+#: concrete/blocks/page_title/form_add_edit.php:14
+msgid "Custom Title Text"
+msgstr ""
+
+#: concrete/blocks/page_title/controller.php:25
+msgid "Displays a Page's Title"
+msgstr ""
+
+#: concrete/blocks/page_title/controller.php:30
+#: concrete/blocks/page_title/controller.php:47
+msgid "Page Title"
+msgstr ""
+
 #: concrete/blocks/content/controller.php:34
 msgid "HTML/WYSIWYG Editor Content."
 msgstr "HTML / WYSIWYg Editör İçeriği"
@@ -10117,11 +10188,11 @@ msgstr "Seçilmiş Eklentiler"
 msgid "Cannot retrieve data from the concrete5 marketplace."
 msgstr "concrete5 market'ten veriler çekilemiyor."
 
-#: concrete/blocks/next_previous/controller.php:16
+#: concrete/blocks/next_previous/controller.php:17
 msgid "Navigate through sibling pages."
 msgstr "Yan sayfalar arasında gezin."
 
-#: concrete/blocks/next_previous/controller.php:20
+#: concrete/blocks/next_previous/controller.php:21
 msgid "Next & Previous Nav"
 msgstr "Sonraki & Önceki Bağlantıları"
 
@@ -11448,6 +11519,33 @@ msgstr "Satıriçi çerçeveler - Birçok cihazda çalışır"
 msgid "Flash Embed - Legacy method"
 msgstr "Gömülü Flash - Genel yöntem"
 
+#: concrete/blocks/social_links/form.php:4
+msgid "Choose Social Links to Show"
+msgstr ""
+
+#: concrete/blocks/social_links/form.php:8
+#: concrete/single_pages/dashboard/system/basics/social.php:105
+msgid "You have not added any social links."
+msgstr ""
+
+#: concrete/blocks/social_links/form.php:31
+#, php-format
+msgid "Add social links <a href=\"%s\">in the dashboard</a>"
+msgstr ""
+
+#: concrete/blocks/social_links/controller.php:25
+msgid "Allows users to add social icons to their website"
+msgstr ""
+
+#: concrete/blocks/social_links/controller.php:30
+#: concrete/config/install/base/dashboard.xml:479
+msgid "Social Links"
+msgstr "Sosyal Bağlantılar"
+
+#: concrete/blocks/social_links/controller.php:75
+msgid "You must choose at least one link."
+msgstr ""
+
 #: concrete/blocks/dashboard_site_activity/controller.php:16
 msgid "Displays a summary of website activity."
 msgstr "Web sitedeki aktivitelerin özetini görüntüler."
@@ -11852,6 +11950,7 @@ msgid "Topic Default Parent Node"
 msgstr "Varsayılan Konu Üst Düğümü"
 
 #: concrete/attributes/social_links/form.php:22
+#: concrete/single_pages/dashboard/system/basics/social.php:86
 msgid "Add Link"
 msgstr "Bağlantı Ekle"
 
@@ -12572,6 +12671,7 @@ msgstr "Yığınlara Geri Dön"
 
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:101
 #: concrete/single_pages/dashboard/system/attributes/topics/view.php:62
+#: concrete/single_pages/dashboard/system/basics/social.php:32
 msgid "Are you sure? This action cannot be undone."
 msgstr "Emin misiniz? Bu eylem geri alınamaz."
 
@@ -12635,7 +12735,7 @@ msgid "Badge Description"
 msgstr "Rozet Açıklaması"
 
 #: concrete/config/install/base/dashboard.xml:165
-#: concrete/config/install/base/dashboard.xml:716
+#: concrete/config/install/base/dashboard.xml:723
 #: concrete/single_pages/account/profile/public_profile.php:31
 #: concrete/single_pages/dashboard/users/add_group.php:102
 #: concrete/single_pages/dashboard/users/groups.php:73
@@ -13037,7 +13137,7 @@ msgstr "concrete5'te sayfa görüntülenmelerini izler. Bunu kapatmak site perfo
 msgid "Track page view statistics."
 msgstr "Sayfa görüntülenme istatistiklerini izle."
 
-#: concrete/config/install/base/dashboard.xml:551
+#: concrete/config/install/base/dashboard.xml:558
 #: concrete/single_pages/dashboard/system/seo/searchindex.php:4
 msgid "Search Index"
 msgstr "Arama İndeksi"
@@ -13083,7 +13183,7 @@ msgstr "İstenen sözcükleri virgül ile ayırın. Bu sözcükler Kullanıcı D
 msgid "Reset To Default"
 msgstr "Varsayılana Sıfırla"
 
-#: concrete/config/install/base/dashboard.xml:530
+#: concrete/config/install/base/dashboard.xml:537
 #: concrete/single_pages/dashboard/system/seo/codes.php:9
 #: concrete/single_pages/dashboard/system/seo/codes.php:14
 msgid "Tracking Codes"
@@ -13111,7 +13211,7 @@ msgstr "Sayfa sonunda."
 msgid "System &amp; Settings"
 msgstr "Sistem &amp; Ayarlar"
 
-#: concrete/config/install/base/dashboard.xml:523
+#: concrete/config/install/base/dashboard.xml:530
 #: concrete/single_pages/dashboard/system/seo/bulk.php:2
 msgid "Bulk SEO Updater"
 msgstr "Toplu SEO Güncelleyici"
@@ -13190,7 +13290,7 @@ msgstr "Kullanıcı Dostu Adresleri Aktif Et"
 msgid "Code for your .htaccess file"
 msgstr ".htaccess dosyanız için kod"
 
-#: concrete/config/install/base/dashboard.xml:761
+#: concrete/config/install/base/dashboard.xml:768
 #: concrete/single_pages/dashboard/system/environment/info.php:2
 msgid "Environment"
 msgstr "Ortam"
@@ -13277,7 +13377,7 @@ msgstr "Hataları sayfada göster."
 msgid "You cannot access task permissions."
 msgstr "Görev izinlerine erişemezsiniz."
 
-#: concrete/config/install/base/dashboard.xml:582
+#: concrete/config/install/base/dashboard.xml:589
 #: concrete/single_pages/dashboard/system/permissions/site.php:7
 msgid "Site Access"
 msgstr "Site Erişimi"
@@ -13335,7 +13435,7 @@ msgstr "Hiçbir güvenlik kodu kütüphanesi yüklemediniz."
 msgid "Save Additional Settings"
 msgstr "Ek Nitelikleri Kaydet"
 
-#: concrete/config/install/base/dashboard.xml:596
+#: concrete/config/install/base/dashboard.xml:603
 #: concrete/single_pages/dashboard/system/permissions/filetypes.php:3
 msgid "Allowed File Types"
 msgstr "İzin Verilen Dosya Türleri"
@@ -13346,7 +13446,7 @@ msgid ""
 "extensions with commas. Periods and spaces will be ignored."
 msgstr "Sadece aşağıdaki uzantılar kabul edilecektir. Uzantıları virgülle ayırın. Noktalar ve boşluklar göz ardı edilecektir."
 
-#: concrete/config/install/base/dashboard.xml:635
+#: concrete/config/install/base/dashboard.xml:642
 #: concrete/single_pages/dashboard/system/permissions/maintenance.php:4
 msgid "Maintenance Mode"
 msgstr "Bakım Modu"
@@ -13404,12 +13504,12 @@ msgstr "Bu kutudaki herhangi bir e-posta adresi spam tespit edildiğinde bilgile
 msgid "You have no anti-spam libraries installed."
 msgstr "Yüklenmiş hiçbir anti-spam kütüphaneniz yok."
 
-#: concrete/config/install/base/dashboard.xml:603
+#: concrete/config/install/base/dashboard.xml:610
 #: concrete/single_pages/dashboard/system/permissions/tasks.php:8
 msgid "Task Permissions"
 msgstr "Görev İzinleri"
 
-#: concrete/config/install/base/dashboard.xml:610
+#: concrete/config/install/base/dashboard.xml:617
 #: concrete/single_pages/dashboard/system/permissions/users.php:8
 msgid "User Permissions"
 msgstr "Kullanıcı İzinleri"
@@ -13673,7 +13773,7 @@ msgstr "Devre Dışı Bırak"
 msgid "Enable"
 msgstr "Etkinleştir"
 
-#: concrete/config/install/base/dashboard.xml:658
+#: concrete/config/install/base/dashboard.xml:665
 #: concrete/single_pages/dashboard/system/registration/public.php:2
 msgid "Public Registration"
 msgstr "Herkese Açık Kayıt"
@@ -13722,7 +13822,7 @@ msgstr "OpenID'yi Etkinleştir"
 msgid "Use emails for login"
 msgstr "Giriş için emailleri kullan"
 
-#: concrete/config/install/base/dashboard.xml:644
+#: concrete/config/install/base/dashboard.xml:651
 #: concrete/single_pages/dashboard/system/registration/postlogin.php:2
 msgid "Login Destination"
 msgstr "Giriş Hedefi"
@@ -13773,7 +13873,7 @@ msgstr "Maximum Gravatar Derecesi"
 msgid "Gravatar Image Set"
 msgstr "Gravatar Resim Grubu"
 
-#: concrete/config/install/base/dashboard.xml:479
+#: concrete/config/install/base/dashboard.xml:486
 #: concrete/single_pages/dashboard/system/basics/icons.php:2
 msgid "Bookmark Icons"
 msgstr "Yer İmi Simgeleri"
@@ -13825,7 +13925,7 @@ msgstr "Arkaplan Rengi"
 msgid "Enable user defined time zones."
 msgstr "Kullanıcı tanımlı zaman dilimlerini etkinleştir."
 
-#: concrete/config/install/base/dashboard.xml:486
+#: concrete/config/install/base/dashboard.xml:493
 #: concrete/single_pages/dashboard/system/basics/editor.php:2
 msgid "Rich Text Editor"
 msgstr "Zengin Metin Editörü"
@@ -13879,6 +13979,19 @@ msgid ""
 "default name for your project on concrete5.org"
 msgstr "Varsayılan olarak, site adı tarayıcınızın başlık çubuğunda gösterilir. Ayrıca concrete5.org'daki projeniz için varsayılan isimdir."
 
+#: concrete/single_pages/dashboard/system/basics/social.php:22
+#: concrete/single_pages/dashboard/system/basics/social.php:36
+msgid "Delete Link"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/basics/social.php:50
+msgid "Delete Social Link"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/basics/social.php:61
+msgid "Service"
+msgstr ""
+
 #: concrete/single_pages/dashboard/system/backup/backup.php:14
 msgid "Confirm Delete"
 msgstr "Silmeyi Onayla"
@@ -13896,7 +14009,7 @@ msgstr "Yedeği Sil"
 msgid "Restore Backup"
 msgstr "Yedeği Geri YÜkle"
 
-#: concrete/config/install/base/dashboard.xml:812
+#: concrete/config/install/base/dashboard.xml:819
 #: concrete/single_pages/dashboard/system/backup/backup.php:94
 msgid "Backup Database"
 msgstr "Veritabanını Yedekle"
@@ -14010,7 +14123,7 @@ msgstr "Birkaç güncelleme mevcut. Lütfen aşağıdaki listeden istediğiniz g
 msgid "Current Version"
 msgstr "Geçerli Sürüm"
 
-#: concrete/config/install/base/dashboard.xml:813
+#: concrete/config/install/base/dashboard.xml:820
 #: concrete/single_pages/dashboard/system/backup/update.php:66
 msgid "Update concrete5"
 msgstr "concrete5'i Yükselt"
@@ -14025,7 +14138,7 @@ msgid ""
 "it may help to clear your cache."
 msgstr "Eğer siteniz günü geçmiş bilgileri gösteriyorsa, veya beklenmedik bir bir şekilde davranıyorsa, önbelleği temizlemek yardımcı olabilir."
 
-#: concrete/config/install/base/dashboard.xml:566
+#: concrete/config/install/base/dashboard.xml:573
 #: concrete/single_pages/dashboard/system/optimization/clearcache.php:8
 msgid "Clear Cache"
 msgstr "Önbelleği Temizle"
@@ -14115,7 +14228,7 @@ msgstr "Her "
 msgid " minutes."
 msgstr " dakika."
 
-#: concrete/config/install/base/dashboard.xml:573
+#: concrete/config/install/base/dashboard.xml:580
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:43
 msgid "Automated Jobs"
 msgstr "Otomatik Görevler"
@@ -14786,12 +14899,12 @@ msgstr "Profili Düzenle"
 msgid "Basic Information"
 msgstr "Temel Bilgiler"
 
-#: concrete/config/install/base/dashboard.xml:500
+#: concrete/config/install/base/dashboard.xml:507
 #: concrete/single_pages/account/profile/edit.php:29
 msgid "Time Zone"
 msgstr "Zaman Dilimi"
 
-#: concrete/config/install/base/dashboard.xml:665
+#: concrete/config/install/base/dashboard.xml:672
 #: concrete/single_pages/account/profile/edit.php:61
 msgid "Authentication Types"
 msgstr "Kimlik Doğrulama Türleri"
@@ -15320,486 +15433,491 @@ msgstr "Web siteniz hakkında temel bilgiler"
 msgid "website name, title"
 msgstr "website adı, başlık"
 
-#: concrete/config/install/base/dashboard.xml:479
+#. Keywords for page /dashboard/system/basics/social
+#: concrete/config/install/base/dashboard.xml:482
+msgid "sharing, facebook, twitter"
+msgstr ""
+
+#: concrete/config/install/base/dashboard.xml:486
 msgid "Bookmark icon and mobile home screen icon setup."
 msgstr "Yer imi ikonu ve mobil ana ekran ikonu kurulumu."
 
 #. Keywords for page /dashboard/system/basics/icons
-#: concrete/config/install/base/dashboard.xml:482
+#: concrete/config/install/base/dashboard.xml:489
 msgid "logo, favicon, iphone, icon, bookmark"
 msgstr "logo, yer imi simgesi, iphone, simge, yer imi"
 
 #. Keywords for page /dashboard/system/basics/editor
-#: concrete/config/install/base/dashboard.xml:489
+#: concrete/config/install/base/dashboard.xml:496
 msgid "tinymce, content block, fonts, editor, content, overlay"
 msgstr "tinymce, içerik bloğu, yazı tipleri, editör, içerik"
 
-#: concrete/config/install/base/dashboard.xml:493
+#: concrete/config/install/base/dashboard.xml:500
 msgid "Languages"
 msgstr "Diller"
 
 #. Keywords for page /dashboard/system/basics/multilingual
-#: concrete/config/install/base/dashboard.xml:496
+#: concrete/config/install/base/dashboard.xml:503
 msgid "translate, translation, internationalization, multilingual"
 msgstr "çevir, çeviri, uluslararası yapma, çoklu dil"
 
 #. Keywords for page /dashboard/system/basics/timezone
-#: concrete/config/install/base/dashboard.xml:503
+#: concrete/config/install/base/dashboard.xml:510
 msgid "timezone, profile, locale"
 msgstr "zaman bölgesi, profil, yerel"
 
-#: concrete/config/install/base/dashboard.xml:507
+#: concrete/config/install/base/dashboard.xml:514
 msgid "Interface Preferences"
 msgstr "Arayüz Tercihleri"
 
 #. Keywords for page /dashboard/system/basics/images
-#: concrete/config/install/base/dashboard.xml:510
+#: concrete/config/install/base/dashboard.xml:517
 msgid "interface, quick nav, dashboard background, background image"
 msgstr "arayüz, kolay menü, kontrol paneli arkaplanı, arkaplan resmi"
 
-#: concrete/config/install/base/dashboard.xml:515
+#: concrete/config/install/base/dashboard.xml:522
 msgid "SEO & Statistics"
 msgstr "Optimizasyon & İstatistikler"
 
-#: concrete/config/install/base/dashboard.xml:515
+#: concrete/config/install/base/dashboard.xml:522
 msgid "Enable pretty URLs, statistics and tracking codes."
 msgstr "Kullanıcı Dostu Adresleri, istatistik ve izleme kodlarını etkinleştir."
 
-#: concrete/config/install/base/dashboard.xml:516
+#: concrete/config/install/base/dashboard.xml:523
 msgid "Pretty URLs"
 msgstr "Kullanıcı Dostu Adresler"
 
 #. Keywords for page /dashboard/system/seo/urls
-#: concrete/config/install/base/dashboard.xml:519
+#: concrete/config/install/base/dashboard.xml:526
 msgid "vanity, pretty url, seo, pageview, view"
 msgstr "gösterim, kullanıcı dostu url, kısa adres, kısa url, kullanıcı dostu adres, seo, sayfa gösterimleri, gösterim"
 
 #. Keywords for page /dashboard/system/seo/bulk
-#: concrete/config/install/base/dashboard.xml:526
+#: concrete/config/install/base/dashboard.xml:533
 msgid "bulk, seo, change keywords, engine, optimization, search"
 msgstr "toplu, seo, anahtar kelimeleri değiştir, motor, optimizasyon, arama"
 
 #. Keywords for page /dashboard/system/seo/codes
-#: concrete/config/install/base/dashboard.xml:533
+#: concrete/config/install/base/dashboard.xml:540
 msgid "traffic, statistics, google analytics, quant, pageviews, hits"
 msgstr "trafik, istatistikleri, google analitik, kuantum, sayfa gösterimleri, hit"
 
-#: concrete/config/install/base/dashboard.xml:537
+#: concrete/config/install/base/dashboard.xml:544
 msgid "Excluded URL Word List"
 msgstr "Hariç Tutulan URL Kelime Listesi"
 
 #. Keywords for page /dashboard/system/seo/excluded
-#: concrete/config/install/base/dashboard.xml:540
+#: concrete/config/install/base/dashboard.xml:547
 msgid "pretty, slug"
 msgstr "kullanıcı dostu url, kısa url, kullanıcı dostu adres, kısa adres"
 
 #. Keywords for page /dashboard/system/seo/statistics
-#: concrete/config/install/base/dashboard.xml:547
+#: concrete/config/install/base/dashboard.xml:554
 msgid "turn off statistics, tracking, statistics, pageviews, hits"
 msgstr "istatistikleri kapat, izleme, istatistikler, sayfa gösterimleri, hit"
 
 #. Keywords for page /dashboard/system/seo/searchindex
-#: concrete/config/install/base/dashboard.xml:554
+#: concrete/config/install/base/dashboard.xml:561
 msgid "configure search, site search, search option"
 msgstr "aramayı yapılandır, siteyi ara, seçenek ara"
 
-#: concrete/config/install/base/dashboard.xml:558
+#: concrete/config/install/base/dashboard.xml:565
 msgid "Optimization"
 msgstr "Optimizasyon"
 
-#: concrete/config/install/base/dashboard.xml:558
+#: concrete/config/install/base/dashboard.xml:565
 msgid "Keep your site running well."
 msgstr "Sitenizin iyi çalışmasını sağlayın."
 
-#: concrete/config/install/base/dashboard.xml:559
+#: concrete/config/install/base/dashboard.xml:566
 msgid "Cache & Speed Settings"
 msgstr "Önbellek & Hız Ayarları"
 
 #. Keywords for page /dashboard/system/optimization/cache
-#: concrete/config/install/base/dashboard.xml:562
+#: concrete/config/install/base/dashboard.xml:569
 msgid ""
 "cache option, change cache, override, turn on cache, turn off cache, no "
 "cache, page cache, caching"
 msgstr "önbellek seçeneği, önbelleği değiştir, geçersiz kıl, düzenle, önbelleği aç, önbelleği kapat, önbellek yok, sayfa önbelleği, önbelleğe alma"
 
 #. Keywords for page /dashboard/system/optimization/clearcache
-#: concrete/config/install/base/dashboard.xml:569
+#: concrete/config/install/base/dashboard.xml:576
 msgid "cache option, turn off cache, no cache, page cache, caching"
 msgstr "önbellek seçeneği, önbelleği kapat, önbellek yok, sayfa önbelleği, önbelleğe alma"
 
 #. Keywords for page /dashboard/system/optimization/jobs
-#: concrete/config/install/base/dashboard.xml:576
+#: concrete/config/install/base/dashboard.xml:583
 msgid ""
 "index search, reindex search, build sitemap, sitemap.xml, clear old "
 "versions, page versions, remove old"
 msgstr "aramayı indeksle, aramayı yeniden indeksle, site haritası oluştur, sitemap.xml, eski sürümleri temizle, sayfa sürümleri, eskileri sil"
 
-#: concrete/config/install/base/dashboard.xml:581
+#: concrete/config/install/base/dashboard.xml:588
 msgid "Permissions & Access"
 msgstr "İzinler & Erişim"
 
-#: concrete/config/install/base/dashboard.xml:581
+#: concrete/config/install/base/dashboard.xml:588
 msgid "Control who sees and edits your site."
 msgstr "Siteyi kimlerin görebileceğini ve düzenleyebileceğini denetleyin."
 
 #. Keywords for page /dashboard/system/permissions/site
-#: concrete/config/install/base/dashboard.xml:585
+#: concrete/config/install/base/dashboard.xml:592
 msgid "editors, hide site, offline, private, public, access"
 msgstr "editörler, siteyi gizle, çevrimdışı, özel, herkese açık, erişim"
 
-#: concrete/config/install/base/dashboard.xml:589
+#: concrete/config/install/base/dashboard.xml:596
 msgid "File Manager Permissions"
 msgstr "Dosya Yöneticisi İzinleri"
 
 #. Keywords for page /dashboard/system/permissions/files
-#: concrete/config/install/base/dashboard.xml:592
+#: concrete/config/install/base/dashboard.xml:599
 msgid "file options, file manager, upload, modify"
 msgstr "dosya seçenekleri, dosya yöneticisi, yükle, düzenle"
 
 #. Keywords for page /dashboard/system/permissions/filetypes
-#: concrete/config/install/base/dashboard.xml:599
+#: concrete/config/install/base/dashboard.xml:606
 msgid "security, files, media, extension, manager, upload"
 msgstr "güvenlik, dosyalar, medya, uzantı, yönetici, yükle"
 
 #. Keywords for page /dashboard/system/permissions/tasks
-#: concrete/config/install/base/dashboard.xml:606
+#: concrete/config/install/base/dashboard.xml:613
 msgid "security, actions, administrator, admin, package, marketplace, search"
 msgstr "güvenlik, olaylar, yönetici, paket, market, ara"
 
-#: concrete/config/install/base/dashboard.xml:612
+#: concrete/config/install/base/dashboard.xml:619
 msgid "Advanced Permissions"
 msgstr "Gelişmiş İzinler"
 
-#: concrete/config/install/base/dashboard.xml:614
+#: concrete/config/install/base/dashboard.xml:621
 msgid "IP Blacklist"
 msgstr "IP Kara Listesi"
 
 #. Keywords for page /dashboard/system/permissions/blacklist
-#: concrete/config/install/base/dashboard.xml:617
+#: concrete/config/install/base/dashboard.xml:624
 msgid "security, lock ip, lock out, block ip, address, restrict, access"
 msgstr "güvenlik, ip kilitle, kilit, ip engelle, adres, kısıtla, erişim"
 
-#: concrete/config/install/base/dashboard.xml:621
+#: concrete/config/install/base/dashboard.xml:628
 msgid "Captcha Setup"
 msgstr "Güvenlik Kodu Kurulumu"
 
 #. Keywords for page /dashboard/system/permissions/captcha
-#: concrete/config/install/base/dashboard.xml:624
+#: concrete/config/install/base/dashboard.xml:631
 msgid "security, registration"
 msgstr "güvenlik, kayıt olma"
 
-#: concrete/config/install/base/dashboard.xml:628
+#: concrete/config/install/base/dashboard.xml:635
 msgid "Spam Control"
 msgstr "Spam Kontrolü"
 
 #. Keywords for page /dashboard/system/permissions/antispam
-#: concrete/config/install/base/dashboard.xml:631
+#: concrete/config/install/base/dashboard.xml:638
 msgid "antispam, block spam, security"
 msgstr "anti spam, spamı engelle, güvenlik"
 
 #. Keywords for page /dashboard/system/permissions/maintenance
-#: concrete/config/install/base/dashboard.xml:638
+#: concrete/config/install/base/dashboard.xml:645
 msgid "lock site, under construction, hide, hidden"
 msgstr "siteyi kilitle, yapım aşamasında, gizle, gizli"
 
-#: concrete/config/install/base/dashboard.xml:643
+#: concrete/config/install/base/dashboard.xml:650
 msgid "Login & Registration"
 msgstr "Oturum & Kayıt"
 
-#: concrete/config/install/base/dashboard.xml:643
+#: concrete/config/install/base/dashboard.xml:650
 msgid "Change login behaviors and setup public profiles."
 msgstr "Giriş davranışlarını değiştirin ve herkese açık profilleri kurun."
 
 #. Keywords for page /dashboard/system/registration/postlogin
-#: concrete/config/install/base/dashboard.xml:647
+#: concrete/config/install/base/dashboard.xml:654
 msgid "profile, login, redirect, specific, dashboard, administrators"
 msgstr "profil, giriş, yönlendir, belirli, kontrol paneli, yöneticiler"
 
-#: concrete/config/install/base/dashboard.xml:651
+#: concrete/config/install/base/dashboard.xml:658
 msgid "Public Profiles"
 msgstr "Herkese Açık Profiller"
 
 #. Keywords for page /dashboard/system/registration/profiles
-#: concrete/config/install/base/dashboard.xml:654
+#: concrete/config/install/base/dashboard.xml:661
 msgid "member profile, member page, community, forums, social, avatar"
 msgstr "üye profili, üye sayfası, topluluk, forumlar, sosyal, avatar"
 
 #. Keywords for page /dashboard/system/registration/public
-#: concrete/config/install/base/dashboard.xml:661
+#: concrete/config/install/base/dashboard.xml:668
 msgid "signup, new user, community"
 msgstr "kayıt ol, yeni kullanıcı, topluluk"
 
 #. Keywords for page /dashboard/system/registration/authentication
-#: concrete/config/install/base/dashboard.xml:668
+#: concrete/config/install/base/dashboard.xml:675
 msgid "auth, authentication, types, oauth, facebook, login, registration"
 msgstr "giriş, kimlik doğrulama, türler, oturum, facebook, giriş yap, kayıt, kullanıcı kaydı, üyelik"
 
-#: concrete/config/install/base/dashboard.xml:673
+#: concrete/config/install/base/dashboard.xml:680
 msgid "Control how your site send and processes mail."
 msgstr "Sitenizin mailleri nasıl gönderdiğini ve süreçlerini denetleyin."
 
 #. Keywords for page /dashboard/system/mail
-#: concrete/config/install/base/dashboard.xml:676
+#: concrete/config/install/base/dashboard.xml:683
 msgid "smtp, mail settings"
 msgstr "smtp, mail ayarları"
 
-#: concrete/config/install/base/dashboard.xml:680
+#: concrete/config/install/base/dashboard.xml:687
 msgid "SMTP Method"
 msgstr "SMTP Yöntemi"
 
 #. Keywords for page /dashboard/system/mail/method
-#: concrete/config/install/base/dashboard.xml:683
+#: concrete/config/install/base/dashboard.xml:690
 msgid "email server, mail settings, mail configuration, external, internal"
 msgstr "email sunucusu, mail ayarları, mail yapılandırması, harici, dahili"
 
-#: concrete/config/install/base/dashboard.xml:687
+#: concrete/config/install/base/dashboard.xml:694
 msgid "Test Mail Settings"
 msgstr "Test Maili Ayarları"
 
 #. Keywords for page /dashboard/system/mail/method/test
-#: concrete/config/install/base/dashboard.xml:690
+#: concrete/config/install/base/dashboard.xml:697
 msgid "test smtp, test mail"
 msgstr "smtp test, mail test"
 
-#: concrete/config/install/base/dashboard.xml:694
+#: concrete/config/install/base/dashboard.xml:701
 msgid "Email Importers"
 msgstr "Email Alıcıları"
 
 #. Keywords for page /dashboard/system/mail/importers
-#: concrete/config/install/base/dashboard.xml:697
+#: concrete/config/install/base/dashboard.xml:704
 msgid ""
 "email server, mail settings, mail configuration, private message, message "
 "system, import, email, message"
 msgstr "email sunucusu, mail ayarları, mail yapılandırması, özel mesaj, mesaj sistemi, al, email, mesaj"
 
-#: concrete/config/install/base/dashboard.xml:702
+#: concrete/config/install/base/dashboard.xml:709
 msgid "Conversations"
 msgstr "Konuşmalar"
 
-#: concrete/config/install/base/dashboard.xml:702
+#: concrete/config/install/base/dashboard.xml:709
 msgid "Manage your conversations settings"
 msgstr "Konuşma ayarlarınızı yönetin"
 
 #. Keywords for page /dashboard/system/conversations
-#: concrete/config/install/base/dashboard.xml:705
+#: concrete/config/install/base/dashboard.xml:712
 msgid "conversations"
 msgstr "konuşmalar"
 
-#: concrete/config/install/base/dashboard.xml:709
+#: concrete/config/install/base/dashboard.xml:716
 msgid "Conversations Editor"
 msgstr "Konuşma Düzenleyicisi"
 
 #. Keywords for page /dashboard/system/conversations/editor
-#: concrete/config/install/base/dashboard.xml:712
+#: concrete/config/install/base/dashboard.xml:719
 msgid "conversations editor, editor"
 msgstr "konuşma düzenleyicisi, düzenleyici"
 
 #. Keywords for page /dashboard/system/conversations/points
-#: concrete/config/install/base/dashboard.xml:719
+#: concrete/config/install/base/dashboard.xml:726
 msgid "conversations ratings, ratings, community, community points"
 msgstr "konuşma puanları, puanlar, değerlendirme, topluluk, topluluk puanları"
 
-#: concrete/config/install/base/dashboard.xml:723
+#: concrete/config/install/base/dashboard.xml:730
 msgid "Banned Words"
 msgstr "Yasaklı Kelimeler"
 
 #. Keywords for page /dashboard/system/conversations/bannedwords
-#: concrete/config/install/base/dashboard.xml:726
+#: concrete/config/install/base/dashboard.xml:733
 msgid ""
 "conversations bad words, banned words, banned, bad words, bad, words, list"
 msgstr "kötü kelimeli konuşmalar, engelli kelimeler, engelli, kötü kelimeler, kötü, argo, kelimeler, liste"
 
-#: concrete/config/install/base/dashboard.xml:731
+#: concrete/config/install/base/dashboard.xml:738
 msgid "Setup attributes for pages, users, files and more."
 msgstr "Sayfalar, kullanıcılar, dosyalar ve dahası için nitelikleri kur."
 
 #. Keywords for page /dashboard/system/attributes
-#: concrete/config/install/base/dashboard.xml:734
+#: concrete/config/install/base/dashboard.xml:741
 msgid "attribute configuration"
 msgstr "nitelik yapılandırma"
 
-#: concrete/config/install/base/dashboard.xml:738
+#: concrete/config/install/base/dashboard.xml:745
 msgid "Group attributes into sets for easier organization"
 msgstr "Kolay organizasyon için nitelikleri kümeler halinde gruplandırın"
 
 #. Keywords for page /dashboard/system/attributes/sets
-#: concrete/config/install/base/dashboard.xml:741
+#: concrete/config/install/base/dashboard.xml:748
 msgid "attributes, sets"
 msgstr "nitelikler, kümeler"
 
-#: concrete/config/install/base/dashboard.xml:745
+#: concrete/config/install/base/dashboard.xml:752
 msgid "Types"
 msgstr "Türler"
 
-#: concrete/config/install/base/dashboard.xml:745
+#: concrete/config/install/base/dashboard.xml:752
 msgid "Choose which attribute types are available for different items."
 msgstr "Hangi nitelik türlerinin farklı ögeler için uygun olduğunu seçin."
 
 #. Keywords for page /dashboard/system/attributes/types
-#: concrete/config/install/base/dashboard.xml:748
+#: concrete/config/install/base/dashboard.xml:755
 msgid "attributes, types"
 msgstr "nitelikler, türler"
 
-#: concrete/config/install/base/dashboard.xml:752
+#: concrete/config/install/base/dashboard.xml:759
 msgid "Topics"
 msgstr "Konular"
 
 #. Keywords for page /dashboard/system/attributes/topics
-#: concrete/config/install/base/dashboard.xml:755
+#: concrete/config/install/base/dashboard.xml:762
 msgid "topics, tags, taxonomy"
 msgstr "konular, etiketler, taksonomi"
 
-#: concrete/config/install/base/dashboard.xml:761
+#: concrete/config/install/base/dashboard.xml:768
 msgid "Advanced settings for web developers."
 msgstr "Web geliştiricileri için gelişmiş ayarlar."
 
-#: concrete/config/install/base/dashboard.xml:768
+#: concrete/config/install/base/dashboard.xml:775
 msgid "Environment Information"
 msgstr "Ortam Bilgileri"
 
 #. Keywords for page /dashboard/system/environment/info
-#: concrete/config/install/base/dashboard.xml:771
+#: concrete/config/install/base/dashboard.xml:778
 msgid "overrides, system info, debug, support, help"
 msgstr "düzenlemeler, sistem bilgisi, hata ayıklama, destek, yardım"
 
-#: concrete/config/install/base/dashboard.xml:775
+#: concrete/config/install/base/dashboard.xml:782
 msgid "Debug Settings"
-msgstr "Haya Ayıklama Ayarları"
+msgstr "Hata Ayıklama Ayarları"
 
 #. Keywords for page /dashboard/system/environment/debug
-#: concrete/config/install/base/dashboard.xml:778
+#: concrete/config/install/base/dashboard.xml:785
 msgid "errors, exceptions, develop, support, help"
 msgstr "hatalar, istisnalar, geliştir, destek, yardım"
 
-#: concrete/config/install/base/dashboard.xml:782
+#: concrete/config/install/base/dashboard.xml:789
 msgid "Logging Settings"
 msgstr "Günlük Ayarları"
 
 #. Keywords for page /dashboard/system/environment/logging
-#: concrete/config/install/base/dashboard.xml:785
+#: concrete/config/install/base/dashboard.xml:792
 msgid "email, logging, logs, smtp, pop, errors, mysql, log"
 msgstr "email, günlük tutma, günlükler, smtp, pop, hatalar, mysql, günlük"
 
-#: concrete/config/install/base/dashboard.xml:789
+#: concrete/config/install/base/dashboard.xml:796
 msgid "File Storage Locations"
 msgstr "Dosya Depolama Konumları"
 
 #. Keywords for page /dashboard/system/environment/storage
-#: concrete/config/install/base/dashboard.xml:792
+#: concrete/config/install/base/dashboard.xml:799
 msgid "security, alternate storage, hide files"
 msgstr "güvenlik, alternatif depolama, dosyaları gizle"
 
-#: concrete/config/install/base/dashboard.xml:798
+#: concrete/config/install/base/dashboard.xml:805
 msgid "Proxy Server"
 msgstr "Proxy Sunucusu"
 
 #. Keywords for page /dashboard/system/environment/proxy
-#: concrete/config/install/base/dashboard.xml:801
+#: concrete/config/install/base/dashboard.xml:808
 msgid "network, proxy server"
 msgstr "ağ, proxy sunucusu"
 
-#: concrete/config/install/base/dashboard.xml:805
+#: concrete/config/install/base/dashboard.xml:812
 msgid "Backup & Restore"
 msgstr "Yedekle & Geri Yükle"
 
-#: concrete/config/install/base/dashboard.xml:805
+#: concrete/config/install/base/dashboard.xml:812
 msgid "Backup or restore your website."
 msgstr "Web sitenizi yedekleyin veya geri yükleyin."
 
 #. Keywords for page /dashboard/system/backup
-#: concrete/config/install/base/dashboard.xml:808
+#: concrete/config/install/base/dashboard.xml:815
 msgid "export, backup, database, sql, mysql, encryption, restore"
 msgstr "dışa aktar, yedekle, veritabanı, sql, mysql, şifreleme, restore et"
 
 #. Keywords for page /dashboard/system/backup/update
-#: concrete/config/install/base/dashboard.xml:816
+#: concrete/config/install/base/dashboard.xml:823
 msgid "upgrade, new version, update"
 msgstr "yükselt, yeni sürüm, güncelle"
 
-#: concrete/config/install/base/dashboard.xml:824
+#: concrete/config/install/base/dashboard.xml:831
 msgid "Dashboard Primary + Five"
 msgstr "Kontrol Paneli Birincil + Beş"
 
-#: concrete/config/install/base/dashboard.xml:825
+#: concrete/config/install/base/dashboard.xml:832
 msgid "Dashboard Header + Four Column"
 msgstr "Kontrol Paneli Başlık + Dört Sütun"
 
-#: concrete/config/install/base/dashboard.xml:829
+#: concrete/config/install/base/dashboard.xml:836
 msgctxt "PageTemplateName"
 msgid "Stack"
 msgstr "Yığın"
 
-#: concrete/config/install/base/dashboard.xml:830
+#: concrete/config/install/base/dashboard.xml:837
 msgctxt "PageTemplateName"
 msgid "Dashboard Primary + Five"
 msgstr "Kontrol Paneli Birincil + Beş"
 
-#: concrete/config/install/base/dashboard.xml:831
+#: concrete/config/install/base/dashboard.xml:838
 msgctxt "PageTemplateName"
 msgid "Dashboard Header + Four Column"
 msgstr "Kontrol Paneli Başlık + Dört Sütun"
 
-#: concrete/config/install/base/dashboard.xml:834
+#: concrete/config/install/base/dashboard.xml:841
 msgid "Welcome to concrete5"
 msgstr "concrete5'e hoş geldiniz"
 
-#: concrete/config/install/base/dashboard.xml:834
+#: concrete/config/install/base/dashboard.xml:841
 msgid ""
 "Learn about how to use concrete5, how to develop for concrete5, and get "
 "general help."
 msgstr "concrete5'i nasıl kullanacağınızı, nasıl geliştireceğinizi öğrenin, ve genel yardım alın."
 
-#: concrete/config/install/base/dashboard.xml:840
+#: concrete/config/install/base/dashboard.xml:847
 msgctxt "AreaName"
 msgid "Header"
 msgstr "Başlık"
 
-#: concrete/config/install/base/dashboard.xml:851
+#: concrete/config/install/base/dashboard.xml:858
 msgctxt "AreaName"
 msgid "Column 1"
 msgstr "Sütun 1"
 
-#: concrete/config/install/base/dashboard.xml:865
+#: concrete/config/install/base/dashboard.xml:872
 msgctxt "AreaName"
 msgid "Column 2"
 msgstr "Sütun 2"
 
-#: concrete/config/install/base/dashboard.xml:878
+#: concrete/config/install/base/dashboard.xml:885
 msgctxt "AreaName"
 msgid "Column 3"
 msgstr "Sütun 3"
 
-#: concrete/config/install/base/dashboard.xml:892
+#: concrete/config/install/base/dashboard.xml:899
 msgctxt "AreaName"
 msgid "Column 4"
 msgstr "Sütun 5"
 
-#: concrete/config/install/base/dashboard.xml:917
+#: concrete/config/install/base/dashboard.xml:924
 msgctxt "AreaName"
 msgid "Primary"
 msgstr "Birincil"
 
-#: concrete/config/install/base/dashboard.xml:921
+#: concrete/config/install/base/dashboard.xml:928
 msgctxt "AreaName"
 msgid "Secondary 1"
 msgstr "İkincil 1"
 
-#: concrete/config/install/base/dashboard.xml:930
+#: concrete/config/install/base/dashboard.xml:937
 msgctxt "AreaName"
 msgid "Secondary 2"
 msgstr "İkincil 2"
 
-#: concrete/config/install/base/dashboard.xml:939
+#: concrete/config/install/base/dashboard.xml:946
 msgctxt "AreaName"
 msgid "Secondary 3"
 msgstr "İkincil 3"
 
-#: concrete/config/install/base/dashboard.xml:942
+#: concrete/config/install/base/dashboard.xml:949
 msgctxt "AreaName"
 msgid "Secondary 4"
 msgstr "İkincil 4"
 
-#: concrete/config/install/base/dashboard.xml:945
+#: concrete/config/install/base/dashboard.xml:952
 msgctxt "AreaName"
 msgid "Secondary 5"
 msgstr "İkincil 5"
@@ -16797,37 +16915,37 @@ msgctxt "ImageEditorFilterName"
 msgid "Vignette"
 msgstr "Kitap Süsü"
 
-#: concrete/config/install/base/blocktypes.xml:46
+#: concrete/config/install/base/blocktypes.xml:48
 msgctxt "SystemContentEditorSnippetName"
 msgid "Page Name"
 msgstr "Sayfa Adı"
 
-#: concrete/config/install/base/blocktypes.xml:47
+#: concrete/config/install/base/blocktypes.xml:49
 msgctxt "SystemContentEditorSnippetName"
 msgid "User Name"
 msgstr "Kullanıcı Adı"
 
-#: concrete/config/install/base/blocktypes.xml:51
+#: concrete/config/install/base/blocktypes.xml:53
 msgctxt "BlockTypeSetName"
 msgid "Basic"
 msgstr "Temel"
 
-#: concrete/config/install/base/blocktypes.xml:58
+#: concrete/config/install/base/blocktypes.xml:60
 msgctxt "BlockTypeSetName"
 msgid "Navigation"
 msgstr "Navigasyon"
 
-#: concrete/config/install/base/blocktypes.xml:71
+#: concrete/config/install/base/blocktypes.xml:74
 msgctxt "BlockTypeSetName"
 msgid "Forms"
 msgstr "Formlar"
 
-#: concrete/config/install/base/blocktypes.xml:76
+#: concrete/config/install/base/blocktypes.xml:79
 msgctxt "BlockTypeSetName"
 msgid "Social Networking"
 msgstr "Sosyal Ağ"
 
-#: concrete/config/install/base/blocktypes.xml:81
+#: concrete/config/install/base/blocktypes.xml:85
 msgctxt "BlockTypeSetName"
 msgid "Multimedia"
 msgstr "Multimedya"
@@ -17000,6 +17118,16 @@ msgstr "İçerik"
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Body"
 msgstr "İleti Gövdesi"
+
+#: concrete/blocks/image/templates/circle
+msgctxt "TemplateFileName"
+msgid "Circle"
+msgstr ""
+
+#: concrete/blocks/image/templates/right_tilt
+msgctxt "TemplateFileName"
+msgid "Right Tilt"
+msgstr ""
 
 #: concrete/blocks/image/composer/header.php
 msgctxt "TemplateFileName"
