@@ -4,15 +4,16 @@
 # nour nader <thenino2013@gmail.com>, 2013
 # faridboushra <fboushra@gmail.com>, 2012
 # faridboushra <fboushra@gmail.com>, 2012
+# nour nader <thenino2013@gmail.com>, 2013
 # Ossama Khayat <okhayat@gmail.com>, 2013-2014
 # Xees <xees@live.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-07-07 10:00+0000\n"
-"PO-Revision-Date: 2014-07-07 10:10+0000\n"
-"Last-Translator: Michele Locati <michele@locati.it>\n"
+"POT-Creation-Date: 2014-07-11 04:00+0000\n"
+"PO-Revision-Date: 2014-07-11 14:01+0000\n"
+"Last-Translator: Ossama Khayat <okhayat@gmail.com>\n"
 "Language-Team: Arabic (http://www.transifex.com/projects/p/concrete5/language/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -240,7 +241,7 @@ msgstr "تعذر فتح الملف باستخدام ZipArchive::CREATE"
 #: concrete/tools/files/download.php:61
 #, php-format
 msgid "External zip failed. Error description: %s"
-msgstr ""
+msgstr "تعذر استدعاء برنامج zip خارجي. وصف الخطأ: %s"
 
 #: concrete/tools/files/download.php:72
 msgid "The requested file couldn't be found."
@@ -1445,7 +1446,7 @@ msgstr "المستخدمون"
 
 #: concrete/tools/spellchecker_service.php:16
 msgid "SuggestPopup"
-msgstr ""
+msgstr "SuggestPopup"
 
 #: concrete/tools/add_block_popup.php:35
 msgid ""
@@ -3115,7 +3116,7 @@ msgstr "رجاءً اكتب رقم لمستوى التحجيم من 0 إلى 21.
 
 #: concrete/core/controllers/blocks/google_map.php:64
 msgid "Get Directions"
-msgstr ""
+msgstr "إحصل على المسار"
 
 #: concrete/core/controllers/blocks/html.php:27
 msgid "For adding HTML by hand."
@@ -4050,11 +4051,11 @@ msgstr "مجموعة الصفات محمية. يعني هذا أنها أضيف�
 
 #: concrete/core/controllers/single_pages/dashboard/system/attributes/types.php:33
 msgid "Attribute Type Associations saved."
-msgstr ""
+msgstr "حُفظ ربط نوع الصفة"
 
 #: concrete/core/controllers/single_pages/dashboard/system/attributes/types.php:36
 msgid "Attribute Type added."
-msgstr ""
+msgstr "أُضيف نوع الصفة"
 
 #: concrete/core/controllers/single_pages/dashboard/system/registration/postlogin.php:36
 msgid "Login redirection saved."
@@ -4416,13 +4417,13 @@ msgid ""
 msgstr "تعذر تحديد النسخة الحالية من concrete5. لا يمكن الاستمرار بالترقية."
 
 #: concrete/core/controllers/single_pages/upgrade.php:51
-#: concrete/core/controllers/single_pages/upgrade.php:81
+#: concrete/core/controllers/single_pages/upgrade.php:86
 #, php-format
 msgid "Upgrading from <b>%s</b>"
 msgstr "الترقية من <b>%s</b>"
 
 #: concrete/core/controllers/single_pages/upgrade.php:52
-#: concrete/core/controllers/single_pages/upgrade.php:82
+#: concrete/core/controllers/single_pages/upgrade.php:87
 #, php-format
 msgid "Upgrading to <b>%s</b>"
 msgstr "الترقية إلى <b>%s</b>"
@@ -4434,34 +4435,45 @@ msgid ""
 msgstr "يستخدم موقعك نسخة concrete5 أحدث من هذه. لا يمكنك القيام بالترقية."
 
 #: concrete/core/controllers/single_pages/upgrade.php:56
-#, php-format
-msgid ""
-"Your site is already up to date! The current version of concrete5 is "
-"<b>%s</b>. You should remove this file for security."
-msgstr "موقعك مُحدَّث! نسخة concrete5 الحالية هي <b>%s</b>. يجب أن تحذف هذا الملف لحماية موقعك."
+msgid "Your site is already up to date!"
+msgstr "موقعك مُحدّث!"
 
-#: concrete/core/controllers/single_pages/upgrade.php:62
+#: concrete/core/controllers/single_pages/upgrade.php:58
+#, php-format
+msgid "The current version of concrete5 is %s."
+msgstr "نسخة concrete5 الحالية هي %s."
+
+#: concrete/core/controllers/single_pages/upgrade.php:60
+msgid "You should remove this file for security."
+msgstr "للأمان، يجب أن تزيل هذا الملف."
+
+#: concrete/core/controllers/single_pages/upgrade.php:67
 msgid "You must first upgrade your site to version 5.4.2.2"
 msgstr "يجب عليك أولا ترقية موقعك إلى النسخة 5.4.2.2"
 
-#: concrete/core/controllers/single_pages/upgrade.php:202
+#: concrete/core/controllers/single_pages/upgrade.php:207
 msgid "Unable to locate database import file."
 msgstr "تعذر العثور على ملف استيراد قاعدة البيانات."
 
-#: concrete/core/controllers/single_pages/upgrade.php:240
+#: concrete/core/controllers/single_pages/upgrade.php:245
 #, php-format
 msgid "Unable to create temporary db xml file: %s"
 msgstr "تعذر إنشاء ملف XML مؤقت لقاعدة بيانات: %s"
 
-#: concrete/core/controllers/single_pages/upgrade.php:302
+#: concrete/core/controllers/single_pages/upgrade.php:307
 #, php-format
 msgid "An Unexpected Error occurred while upgrading: %s"
 msgstr "حدث خطأ غير متوقع أثناء الترقية: %s"
 
-#: concrete/core/controllers/single_pages/upgrade.php:306
+#. %s is the concrete5 version number
+#: concrete/core/controllers/single_pages/upgrade.php:313
 #, php-format
-msgid "Upgrade to <b>%s</b> complete!"
-msgstr "اكتملت الترقية إلى <b>%s</b>!"
+msgid "Upgrade to %s complete!"
+msgstr "انتهت الترقية إلى %s!"
+
+#: concrete/core/controllers/single_pages/upgrade.php:316
+msgid "Upgrade to latest version complete!"
+msgstr "تمت الترقية للنسخة الأحدث!"
 
 #: concrete/core/controllers/single_pages/login.php:28
 #: concrete/single_pages/dashboard/users/search.php:242
@@ -4817,7 +4829,7 @@ msgstr "إلى"
 #: concrete/core/models/attribute/types/date_time.php:47
 #, php-format
 msgid "%1$s on %2$s"
-msgstr ""
+msgstr "%1$s الساعة %2$s"
 
 #: concrete/core/models/file_list.php:131
 #, php-format
@@ -5563,37 +5575,37 @@ msgstr "تعذر الاتصال بالمتجر وإحضار العنصر"
 msgid "Version %d"
 msgstr "النسخة %d"
 
-#: concrete/core/models/block_types.php:712
+#: concrete/core/models/block_types.php:715
 #, php-format
 msgid ""
 "%s not found. Please check that the block controller file contains the "
 "correct class name."
 msgstr "الملف %s غير موجود. الرجاء التأكد من احتواء البلوك على ملف تحكم controller يحتوي اسم الصنف class الصحيح."
 
-#: concrete/core/models/block_types.php:721
+#: concrete/core/models/block_types.php:724
 msgid ""
 "Error: Block Type cannot be installed because no db.xml file can be found. "
 "Either create a db.xml file for this block type, or remove the $btTable "
 "variable from its controller."
 msgstr "خطأ: لا يمكن تركيب نوع البلوك لعدم وجود ملف db.xml. أنشئ ملف db.xml لنوع البلوك هذا، أو أزل متغيّر $btTable من ملف controller."
 
-#: concrete/core/models/block_types.php:725
+#: concrete/core/models/block_types.php:728
 msgid ""
 "Error: Block Type cannot be installed due to an unknown database error. "
 "Please check that the db.xml file for this block type is formatted "
 "correctly."
 msgstr "خطأ: لا يمكن تركيب نوع البلوك بسبب خطأ مجهول في قاعدة البيانات. يرجى التحقق من أن ملف db.xml لهذا النوع بلوك تم صياغته بشكل صحيح."
 
-#: concrete/core/models/block_types.php:786
+#: concrete/core/models/block_types.php:789
 #, php-format
 msgid "No block found with the handle %s."
 msgstr "تعذر العثور على بلوك بالاسم البرمجي %s."
 
-#: concrete/core/models/block_types.php:805
+#: concrete/core/models/block_types.php:808
 msgid "Error: Block Type table must contain at least two fields."
 msgstr "خطأ: يجب أن يحتوي نوع البلوك على حقلين على الأقل."
 
-#: concrete/core/models/block_types.php:807
+#: concrete/core/models/block_types.php:810
 msgid "Error: Block Type table must contain a \"bID\" primary key field."
 msgstr "خطأ: يجب أن يحتوي البلوك على حقل \"bID\" أساسي."
 
@@ -5879,7 +5891,7 @@ msgstr "F d, Y \\a\\t g:i A"
 #. http://www.php.net/manual/en/function.date.php
 #: concrete/core/helpers/date.php:388
 msgid "n/j/Y \\a\\t g:i:s A"
-msgstr ""
+msgstr "n/j/Y \\a\\t g:i:s A"
 
 #. Short date format and time without seconds: see
 #. http://www.php.net/manual/en/function.date.php
@@ -5890,7 +5902,7 @@ msgstr "n/j/Y \\a\\t g:i A"
 
 #: concrete/core/helpers/date.php:422
 msgid "Tomorrow"
-msgstr ""
+msgstr "غداً"
 
 #: concrete/core/helpers/date.php:424
 msgid "Yesterday"
@@ -5906,13 +5918,13 @@ msgstr "اليوم الساعة %s"
 #: concrete/core/helpers/date.php:452
 #, php-format
 msgid "Tomorrow at %s"
-msgstr ""
+msgstr "غداً الساعة %s"
 
 #. %s is a time
 #: concrete/core/helpers/date.php:454
 #, php-format
 msgid "Yesterday at %s"
-msgstr ""
+msgstr "بالأمس الساعة %s"
 
 #. Used when dates are used to start filenames: see
 #. http://www.php.net/manual/en/function.date.php
@@ -8517,11 +8529,11 @@ msgstr "خرائط جوجل معطلة في وضع التحرير."
 
 #: concrete/blocks/google_map/form_setup_html.php:12
 msgid "General"
-msgstr ""
+msgstr "عام"
 
 #: concrete/blocks/google_map/form_setup_html.php:13
 msgid "Balloon"
-msgstr ""
+msgstr "بالون"
 
 #: concrete/blocks/google_map/form_setup_html.php:19
 msgid "Map Title"
@@ -8542,15 +8554,15 @@ msgstr "أدخل رقما من 0 إلى 21، حيث أن القيمة 21 هي ا
 
 #: concrete/blocks/google_map/form_setup_html.php:43
 msgid "Show a balloon?"
-msgstr ""
+msgstr "إظهار بالون؟"
 
 #: concrete/blocks/google_map/form_setup_html.php:47
 msgid "Balloon content"
-msgstr ""
+msgstr "مُحتوى البالون"
 
 #: concrete/blocks/google_map/form_setup_html.php:54
 msgid "Show link to Google Maps?"
-msgstr ""
+msgstr "إظهار رابط خرائط قوقل؟"
 
 #: concrete/blocks/google_map/scrapbook.php:4
 #, php-format
@@ -9779,7 +9791,7 @@ msgstr "أصدقائي"
 #: concrete/single_pages/profile/friends.php:39
 #, php-format
 msgid "Member Since %s"
-msgstr ""
+msgstr "عضو منذ %s"
 
 #: concrete/single_pages/dashboard/users/add.php:45
 #: concrete/single_pages/dashboard/users/search.php:189
@@ -11765,21 +11777,21 @@ msgstr "لا يوجد صفات."
 
 #: concrete/single_pages/dashboard/system/attributes/sets.php:121
 msgid "Page Attribute Sets"
-msgstr ""
+msgstr "مجموعات صفات الصفحات"
 
 #: concrete/single_pages/dashboard/system/attributes/sets.php:124
 msgid "User Attribute Sets"
-msgstr ""
+msgstr "مجموعات صفات المستخدمين"
 
 #: concrete/single_pages/dashboard/system/attributes/sets.php:127
 msgid "File Attribute Sets"
-msgstr ""
+msgstr "مجموعات صفات الملفات"
 
 #. %s is an attribute category name
 #: concrete/single_pages/dashboard/system/attributes/sets.php:130
 #, php-format
 msgid "%s Attribute Sets"
-msgstr ""
+msgstr "مجموعات صفات %s"
 
 #: concrete/single_pages/dashboard/system/attributes/sets.php:151
 msgid "No attribute sets currently defined."

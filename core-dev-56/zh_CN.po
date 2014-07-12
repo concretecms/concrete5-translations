@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-07-07 10:00+0000\n"
-"PO-Revision-Date: 2014-07-07 10:10+0000\n"
+"POT-Creation-Date: 2014-07-11 04:00+0000\n"
+"PO-Revision-Date: 2014-07-11 10:01+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/projects/p/concrete5/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -4392,13 +4392,13 @@ msgid ""
 msgstr "无法确定当前版本的concrete5。升级无法继续。"
 
 #: concrete/core/controllers/single_pages/upgrade.php:51
-#: concrete/core/controllers/single_pages/upgrade.php:81
+#: concrete/core/controllers/single_pages/upgrade.php:86
 #, php-format
 msgid "Upgrading from <b>%s</b>"
 msgstr "升级从<b> %s </ B>"
 
 #: concrete/core/controllers/single_pages/upgrade.php:52
-#: concrete/core/controllers/single_pages/upgrade.php:82
+#: concrete/core/controllers/single_pages/upgrade.php:87
 #, php-format
 msgid "Upgrading to <b>%s</b>"
 msgstr "升级为<b> %s </ B>"
@@ -4410,34 +4410,45 @@ msgid ""
 msgstr "您的网站使用了一个的高版本的 concrete5，不能升级。"
 
 #: concrete/core/controllers/single_pages/upgrade.php:56
-#, php-format
-msgid ""
-"Your site is already up to date! The current version of concrete5 is "
-"<b>%s</b>. You should remove this file for security."
-msgstr "网站已经是最新版！当前 concrete5 版本是<B> %s </b>。为了安全应该删除此文件。"
+msgid "Your site is already up to date!"
+msgstr ""
 
-#: concrete/core/controllers/single_pages/upgrade.php:62
+#: concrete/core/controllers/single_pages/upgrade.php:58
+#, php-format
+msgid "The current version of concrete5 is %s."
+msgstr ""
+
+#: concrete/core/controllers/single_pages/upgrade.php:60
+msgid "You should remove this file for security."
+msgstr ""
+
+#: concrete/core/controllers/single_pages/upgrade.php:67
 msgid "You must first upgrade your site to version 5.4.2.2"
 msgstr "必须先升级到版本5.4.2.2"
 
-#: concrete/core/controllers/single_pages/upgrade.php:202
+#: concrete/core/controllers/single_pages/upgrade.php:207
 msgid "Unable to locate database import file."
 msgstr "我们无法找到数据库导入文件。"
 
-#: concrete/core/controllers/single_pages/upgrade.php:240
+#: concrete/core/controllers/single_pages/upgrade.php:245
 #, php-format
 msgid "Unable to create temporary db xml file: %s"
 msgstr "无法创建临时DB XML文件： %s"
 
-#: concrete/core/controllers/single_pages/upgrade.php:302
+#: concrete/core/controllers/single_pages/upgrade.php:307
 #, php-format
 msgid "An Unexpected Error occurred while upgrading: %s"
 msgstr "在升级中发生意外的错误： %s"
 
-#: concrete/core/controllers/single_pages/upgrade.php:306
+#. %s is the concrete5 version number
+#: concrete/core/controllers/single_pages/upgrade.php:313
 #, php-format
-msgid "Upgrade to <b>%s</b> complete!"
-msgstr "完成升级到<b> %s </b>！"
+msgid "Upgrade to %s complete!"
+msgstr ""
+
+#: concrete/core/controllers/single_pages/upgrade.php:316
+msgid "Upgrade to latest version complete!"
+msgstr ""
 
 #: concrete/core/controllers/single_pages/login.php:28
 #: concrete/single_pages/dashboard/users/search.php:242
@@ -5529,37 +5540,37 @@ msgstr "无法连接到市场来检索项"
 msgid "Version %d"
 msgstr "版本 %d"
 
-#: concrete/core/models/block_types.php:712
+#: concrete/core/models/block_types.php:715
 #, php-format
 msgid ""
 "%s not found. Please check that the block controller file contains the "
 "correct class name."
 msgstr "%s 没有找到。请检查该模块控制文件是否包含正确的类名。"
 
-#: concrete/core/models/block_types.php:721
+#: concrete/core/models/block_types.php:724
 msgid ""
 "Error: Block Type cannot be installed because no db.xml file can be found. "
 "Either create a db.xml file for this block type, or remove the $btTable "
 "variable from its controller."
 msgstr "错误：模块类型不能安装，因为没有找到 db.xml 文件。要不然为模块类型创建一个 db.xml 文件，或从控制器中删除$btTable变量。"
 
-#: concrete/core/models/block_types.php:725
+#: concrete/core/models/block_types.php:728
 msgid ""
 "Error: Block Type cannot be installed due to an unknown database error. "
 "Please check that the db.xml file for this block type is formatted "
 "correctly."
 msgstr "错误：模块类型不能安装因为一个未知的数据库错误。请检查此模块类型的 db.xml 文件是否正确格式化。"
 
-#: concrete/core/models/block_types.php:786
+#: concrete/core/models/block_types.php:789
 #, php-format
 msgid "No block found with the handle %s."
 msgstr "无块的手柄%s 。"
 
-#: concrete/core/models/block_types.php:805
+#: concrete/core/models/block_types.php:808
 msgid "Error: Block Type table must contain at least two fields."
 msgstr "错误：模块类型的表必须包含至少两个字段。"
 
-#: concrete/core/models/block_types.php:807
+#: concrete/core/models/block_types.php:810
 msgid "Error: Block Type table must contain a \"bID\" primary key field."
 msgstr "错误：模块类型表必须包含一个 \"bID\" 的关键字段。"
 

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-07-10 04:00+0000\n"
-"PO-Revision-Date: 2014-07-10 06:31+0000\n"
+"POT-Creation-Date: 2014-07-11 04:00+0000\n"
+"PO-Revision-Date: 2014-07-11 17:11+0000\n"
 "Last-Translator: Adem Coşkuner <info@ademcoskuner.com>\n"
 "Language-Team: Turkish (Turkey) (http://www.transifex.com/projects/p/concrete5/language/tr_TR/)\n"
 "MIME-Version: 1.0\n"
@@ -4388,13 +4388,13 @@ msgid ""
 msgstr "concrete5'in şu anki sürümü belirlenemiyor. Yükseltme devam edemiyor."
 
 #: concrete/core/controllers/single_pages/upgrade.php:51
-#: concrete/core/controllers/single_pages/upgrade.php:81
+#: concrete/core/controllers/single_pages/upgrade.php:86
 #, php-format
 msgid "Upgrading from <b>%s</b>"
 msgstr "<b>%s</b> sürümünden yükseltiliyor."
 
 #: concrete/core/controllers/single_pages/upgrade.php:52
-#: concrete/core/controllers/single_pages/upgrade.php:82
+#: concrete/core/controllers/single_pages/upgrade.php:87
 #, php-format
 msgid "Upgrading to <b>%s</b>"
 msgstr "%s sürümüne yükseltiliyor."
@@ -4406,34 +4406,45 @@ msgid ""
 msgstr "Şu anki web siteniz concrete5'in bundan daha yeni bir versiyonunu kullanıyor. Yükseltme yapamazsınız."
 
 #: concrete/core/controllers/single_pages/upgrade.php:56
-#, php-format
-msgid ""
-"Your site is already up to date! The current version of concrete5 is "
-"<b>%s</b>. You should remove this file for security."
-msgstr "Siteniz zaten güncel! concrete5'in geçerli sürümü <b>%s</b>. Bu dosyayı güvenliğiniz için silmelisiniz."
+msgid "Your site is already up to date!"
+msgstr "Siteniz zaten güncel."
 
-#: concrete/core/controllers/single_pages/upgrade.php:62
+#: concrete/core/controllers/single_pages/upgrade.php:58
+#, php-format
+msgid "The current version of concrete5 is %s."
+msgstr "concrete5'in güncel sürümü %s'dir."
+
+#: concrete/core/controllers/single_pages/upgrade.php:60
+msgid "You should remove this file for security."
+msgstr "Güvenliğiniz için bu dosyayı silmelisiniz."
+
+#: concrete/core/controllers/single_pages/upgrade.php:67
 msgid "You must first upgrade your site to version 5.4.2.2"
 msgstr "İlk olarak sitenizi 5.4.2.2 sürümüne yükseltmelisiniz."
 
-#: concrete/core/controllers/single_pages/upgrade.php:202
+#: concrete/core/controllers/single_pages/upgrade.php:207
 msgid "Unable to locate database import file."
 msgstr "Veritabanı içeri aktarım dosyası bulunamıyor."
 
-#: concrete/core/controllers/single_pages/upgrade.php:240
+#: concrete/core/controllers/single_pages/upgrade.php:245
 #, php-format
 msgid "Unable to create temporary db xml file: %s"
 msgstr "Geçici db xml dosyası oluşturulamıyor: %s"
 
-#: concrete/core/controllers/single_pages/upgrade.php:302
+#: concrete/core/controllers/single_pages/upgrade.php:307
 #, php-format
 msgid "An Unexpected Error occurred while upgrading: %s"
 msgstr "Yükseltme sırasında beklenmeyen hata : %s"
 
-#: concrete/core/controllers/single_pages/upgrade.php:306
+#. %s is the concrete5 version number
+#: concrete/core/controllers/single_pages/upgrade.php:313
 #, php-format
-msgid "Upgrade to <b>%s</b> complete!"
-msgstr "<b>%s</b> sürümüne yükseltme tamamlandı."
+msgid "Upgrade to %s complete!"
+msgstr "%s'e yükseltme tamamlandı!"
+
+#: concrete/core/controllers/single_pages/upgrade.php:316
+msgid "Upgrade to latest version complete!"
+msgstr "Son sürüme yükseltme tamamlandı!"
 
 #: concrete/core/controllers/single_pages/login.php:28
 #: concrete/single_pages/dashboard/users/search.php:242
@@ -5525,37 +5536,37 @@ msgstr "Ögeyi almak için markete bağlanılamıyor"
 msgid "Version %d"
 msgstr "Sürüm %d"
 
-#: concrete/core/models/block_types.php:712
+#: concrete/core/models/block_types.php:715
 #, php-format
 msgid ""
 "%s not found. Please check that the block controller file contains the "
 "correct class name."
 msgstr "%s bulunamadı. Lütfen bloğun denetleyici dosyasının doğru sınıf adını içerip içermediğini kontrol edin."
 
-#: concrete/core/models/block_types.php:721
+#: concrete/core/models/block_types.php:724
 msgid ""
 "Error: Block Type cannot be installed because no db.xml file can be found. "
 "Either create a db.xml file for this block type, or remove the $btTable "
 "variable from its controller."
 msgstr "Hata: Blok Tipi kurulamıyor çünkü db.xml dosyası bulunamıyor. Ya bu blok tipi için db.xml dosyası oluşturun ya da denetleyici dosyasından $btTable değişkenini kaldırın."
 
-#: concrete/core/models/block_types.php:725
+#: concrete/core/models/block_types.php:728
 msgid ""
 "Error: Block Type cannot be installed due to an unknown database error. "
 "Please check that the db.xml file for this block type is formatted "
 "correctly."
 msgstr "Hata: Blok Tipi bilinmeyen bir veritabanı hatası nedeniyle kurulamıyor. Lütfen bu blok tipinin düzgün biçimlendirilmiş olup olmadığını db.xml dosyasından kontrol edin."
 
-#: concrete/core/models/block_types.php:786
+#: concrete/core/models/block_types.php:789
 #, php-format
 msgid "No block found with the handle %s."
 msgstr "%s tanıtıcısıyla ilgili blok bulunamadı."
 
-#: concrete/core/models/block_types.php:805
+#: concrete/core/models/block_types.php:808
 msgid "Error: Block Type table must contain at least two fields."
 msgstr "Hata: Blok Tipi tablosu en az 2 alan içermelidir."
 
-#: concrete/core/models/block_types.php:807
+#: concrete/core/models/block_types.php:810
 msgid "Error: Block Type table must contain a \"bID\" primary key field."
 msgstr "Hata: Blok tipi tablosu en az bir birincil \"bID\" anahtar alanı içermelidir."
 

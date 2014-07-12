@@ -15,8 +15,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-07-07 10:00+0000\n"
-"PO-Revision-Date: 2014-07-07 10:11+0000\n"
+"POT-Creation-Date: 2014-07-11 04:00+0000\n"
+"PO-Revision-Date: 2014-07-11 10:16+0000\n"
 "Last-Translator: Torsten Silbermann <mail@tsilbermann.de>\n"
 "Language-Team: German (Germany) (http://www.transifex.com/projects/p/concrete5/language/de_DE/)\n"
 "MIME-Version: 1.0\n"
@@ -4401,13 +4401,13 @@ msgid ""
 msgstr "Die aktuelle Version von concrete5 konnte nicht ermittelt werden. Die Aktualisierung kann nicht fortgesetzt werden."
 
 #: concrete/core/controllers/single_pages/upgrade.php:51
-#: concrete/core/controllers/single_pages/upgrade.php:81
+#: concrete/core/controllers/single_pages/upgrade.php:86
 #, php-format
 msgid "Upgrading from <b>%s</b>"
 msgstr "Aktualisierung von <b>%s</b>"
 
 #: concrete/core/controllers/single_pages/upgrade.php:52
-#: concrete/core/controllers/single_pages/upgrade.php:82
+#: concrete/core/controllers/single_pages/upgrade.php:87
 #, php-format
 msgid "Upgrading to <b>%s</b>"
 msgstr "Aktualisierung auf <b>%s</b>"
@@ -4419,34 +4419,45 @@ msgid ""
 msgstr "Ihre Website verwendet derzeit eine Version von concrete5, die höher ist als diese. Sie können keine Aktualisierung durchführen."
 
 #: concrete/core/controllers/single_pages/upgrade.php:56
-#, php-format
-msgid ""
-"Your site is already up to date! The current version of concrete5 is "
-"<b>%s</b>. You should remove this file for security."
-msgstr "Ihre Website ist auf dem aktuellsten Stand! Die aktuelle Version von concrete5 ist <b>%s</b>. Diese Datei sollten Sie aus Sicherheitsgründen entfernen."
+msgid "Your site is already up to date!"
+msgstr "Die Site ist bereits auf dem neuesten Stand."
 
-#: concrete/core/controllers/single_pages/upgrade.php:62
+#: concrete/core/controllers/single_pages/upgrade.php:58
+#, php-format
+msgid "The current version of concrete5 is %s."
+msgstr "Die aktuelle concrete5 Version: %s"
+
+#: concrete/core/controllers/single_pages/upgrade.php:60
+msgid "You should remove this file for security."
+msgstr "Diese Datei sollte aus Sicherheitsgründen gelöscht werden."
+
+#: concrete/core/controllers/single_pages/upgrade.php:67
 msgid "You must first upgrade your site to version 5.4.2.2"
 msgstr "Sie müssen zunächst auf Version 5.4.2.2 upgraden."
 
-#: concrete/core/controllers/single_pages/upgrade.php:202
+#: concrete/core/controllers/single_pages/upgrade.php:207
 msgid "Unable to locate database import file."
 msgstr "Zu importierende Datenbankdatei konnte nicht gefunden werden."
 
-#: concrete/core/controllers/single_pages/upgrade.php:240
+#: concrete/core/controllers/single_pages/upgrade.php:245
 #, php-format
 msgid "Unable to create temporary db xml file: %s"
 msgstr "Die XML-Datei <b>%s</b> für die temporäre Datenbank konnte nicht erstellt werden."
 
-#: concrete/core/controllers/single_pages/upgrade.php:302
+#: concrete/core/controllers/single_pages/upgrade.php:307
 #, php-format
 msgid "An Unexpected Error occurred while upgrading: %s"
 msgstr "Ein unerwarteter Fehler ist während des Upgrades aufgetreten: %s"
 
-#: concrete/core/controllers/single_pages/upgrade.php:306
+#. %s is the concrete5 version number
+#: concrete/core/controllers/single_pages/upgrade.php:313
 #, php-format
-msgid "Upgrade to <b>%s</b> complete!"
-msgstr "Aktualisierung auf <b>%s</b> abgeschlossen!"
+msgid "Upgrade to %s complete!"
+msgstr "Aktualisierung auf %s abgeschlossen!"
+
+#: concrete/core/controllers/single_pages/upgrade.php:316
+msgid "Upgrade to latest version complete!"
+msgstr "Aktualisierung auf die neuste Version abgeschlossen!"
 
 #: concrete/core/controllers/single_pages/login.php:28
 #: concrete/single_pages/dashboard/users/search.php:242
@@ -5540,37 +5551,37 @@ msgstr "Es ist nicht möglich eine Verbindung zum Marketplace aufzubauen, um das
 msgid "Version %d"
 msgstr "Version %d"
 
-#: concrete/core/models/block_types.php:712
+#: concrete/core/models/block_types.php:715
 #, php-format
 msgid ""
 "%s not found. Please check that the block controller file contains the "
 "correct class name."
 msgstr "%s nicht gefunden. Bitte stellen Sie sicher, dass in der controller-Datei des Blocks der korrekte Klassennamen eingetragen ist."
 
-#: concrete/core/models/block_types.php:721
+#: concrete/core/models/block_types.php:724
 msgid ""
 "Error: Block Type cannot be installed because no db.xml file can be found. "
 "Either create a db.xml file for this block type, or remove the $btTable "
 "variable from its controller."
 msgstr "Fehler: Der Blocktyp kann nicht installiert werden, weil keine db.xml gefunden wurde. Erstellen Sie diese Datei oder löschen Sie die Variable $btTable aus dem Controller."
 
-#: concrete/core/models/block_types.php:725
+#: concrete/core/models/block_types.php:728
 msgid ""
 "Error: Block Type cannot be installed due to an unknown database error. "
 "Please check that the db.xml file for this block type is formatted "
 "correctly."
 msgstr "Fehler: Der Blocktyp kann wegen eines unbekannten Datenbankfehlers nicht installiert werden. Bitte prüfen Sie, ob die db.xml dieses Blocktyps korrekt ist."
 
-#: concrete/core/models/block_types.php:786
+#: concrete/core/models/block_types.php:789
 #, php-format
 msgid "No block found with the handle %s."
 msgstr "Kein Block mit der Kennung %s gefunden"
 
-#: concrete/core/models/block_types.php:805
+#: concrete/core/models/block_types.php:808
 msgid "Error: Block Type table must contain at least two fields."
 msgstr "Fehler: Die Tabelle für den Blocktyp muss mindestens zwei Felder enthalten."
 
-#: concrete/core/models/block_types.php:807
+#: concrete/core/models/block_types.php:810
 msgid "Error: Block Type table must contain a \"bID\" primary key field."
 msgstr "Fehler: Die Tabelle für den Blocktyp muss einen Primärschlüssel \"bID\" enthalten."
 
