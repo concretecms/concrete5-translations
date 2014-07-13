@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-07-11 04:00+0000\n"
-"PO-Revision-Date: 2014-07-11 10:01+0000\n"
+"POT-Creation-Date: 2014-07-12 04:00+0000\n"
+"PO-Revision-Date: 2014-07-12 09:54+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Persian (Iran) (http://www.transifex.com/projects/p/concrete5/language/fa_IR/)\n"
 "MIME-Version: 1.0\n"
@@ -722,8 +722,8 @@ msgstr "به هنگام شده "
 #: concrete/models/attribute/types/select/type_form.php:19
 #: concrete/single_pages/dashboard/files/sets.php:116
 #: concrete/single_pages/dashboard/pages/types/view.php:192
-#: concrete/single_pages/dashboard/reports/forms.php:127
-#: concrete/single_pages/dashboard/reports/forms.php:217
+#: concrete/single_pages/dashboard/reports/forms.php:128
+#: concrete/single_pages/dashboard/reports/forms.php:229
 #: concrete/single_pages/dashboard/scrapbook/view.php:193
 #: concrete/single_pages/dashboard/scrapbook/view.php:275
 #: concrete/single_pages/dashboard/system/backup_restore/backup.php:117
@@ -747,7 +747,8 @@ msgstr "مجموع دریافت ها: %s"
 msgid "Most recent 20 downloads:"
 msgstr "20 دریافت جدید: "
 
-#: concrete/single_pages/dashboard/reports/forms.php:172
+#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:56
+#: concrete/single_pages/dashboard/reports/forms.php:179
 #: concrete/single_pages/dashboard/reports/logs.php:58
 #: concrete/single_pages/dashboard/reports/statistics.php:107
 #: concrete/single_pages/dashboard/reports/surveys.php:24
@@ -2805,7 +2806,7 @@ msgid "Build simple forms and surveys."
 msgstr "ساخت فرم  و نظرسنجی ساده"
 
 #: concrete/core/controllers/blocks/form.php:35
-#: concrete/single_pages/dashboard/reports/forms.php:84
+#: concrete/single_pages/dashboard/reports/forms.php:82
 msgid "Form"
 msgstr "فرم"
 
@@ -3808,8 +3809,8 @@ msgid "You will receive a test message from %s"
 msgstr ""
 
 #: concrete/core/controllers/single_pages/dashboard/reports/forms.php:155
-#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:163
-#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:172
+#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:164
+#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:174
 #: concrete/core/controllers/single_pages/dashboard/system/mail/importers.php:17
 #: concrete/core/controllers/single_pages/dashboard/system/mail/method.php:12
 #: concrete/core/controllers/single_pages/dashboard/system/mail/method/test_settings.php:13
@@ -4187,8 +4188,18 @@ msgstr "لاگ ها"
 msgid "All"
 msgstr "همه"
 
-#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:130
-#: concrete/single_pages/dashboard/reports/forms.php:202
+#. %1$s is the survey name, %2$s is the date.
+#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:37
+#, php-format
+msgid "%1$s Form Data Output - Run on %2$s"
+msgstr ""
+
+#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:51
+msgid "Submitted Date"
+msgstr ""
+
+#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:129
+#: concrete/single_pages/dashboard/reports/forms.php:212
 msgid "File not found"
 msgstr "فایل یافت نشد"
 
@@ -4888,7 +4899,7 @@ msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "صفحه \"%s\" در مسیر \"%s\" به سطل زباله منتقل شد."
 
 #: concrete/core/models/page_list.php:515
-#: concrete/single_pages/dashboard/reports/forms.php:169
+#: concrete/single_pages/dashboard/reports/forms.php:178
 #: concrete/single_pages/dashboard/reports/surveys.php:23
 #: concrete/single_pages/dashboard/system/backup_restore/backup.php:102
 msgid "Date"
@@ -8907,7 +8918,7 @@ msgstr "مجوز نامعتبر"
 #: concrete/blocks/form/form_setup_html.php:15
 #: concrete/blocks/form/form_setup_html.php:32
 #: concrete/blocks/survey/add.php:25 concrete/blocks/survey/edit.php:27
-#: concrete/single_pages/dashboard/reports/forms.php:86
+#: concrete/single_pages/dashboard/reports/forms.php:84
 #: concrete/single_pages/dashboard/scrapbook/view.php:164
 #: concrete/single_pages/dashboard/sitemap/full.php:29
 #: concrete/single_pages/dashboard/system/registration/public_registration.php:43
@@ -12349,11 +12360,11 @@ msgstr "آیا شما مطمئن هستید که میخواهید برای حذ�
 #: concrete/config/install/disabled/blank/content.xml:36
 #: concrete/config/install/disabled/standard/content.xml:36
 #: concrete/helpers/concrete/upgrade/version_510.php:79
-#: concrete/single_pages/dashboard/reports/forms.php:68
+#: concrete/single_pages/dashboard/reports/forms.php:69
 msgid "Form Results"
 msgstr "نتایج فرم"
 
-#: concrete/single_pages/dashboard/reports/forms.php:85
+#: concrete/single_pages/dashboard/reports/forms.php:83
 msgid "Submissions"
 msgstr "مطالب ارسالی"
 
@@ -12369,32 +12380,32 @@ msgstr "باز کردن صفحه"
 msgid "Delete Submissions"
 msgstr "حذف مطالب ارسالی"
 
-#: concrete/single_pages/dashboard/reports/forms.php:136
+#: concrete/single_pages/dashboard/reports/forms.php:139
 msgid "There are no available forms in your site."
 msgstr "فرم های قابل دسترس در سایت شما وجود دارد."
 
-#: concrete/single_pages/dashboard/reports/forms.php:140
+#: concrete/single_pages/dashboard/reports/forms.php:144
 #, php-format
 msgid "Responses to %s"
 msgstr "پاسخ به %s"
 
-#: concrete/single_pages/dashboard/reports/forms.php:143
+#: concrete/single_pages/dashboard/reports/forms.php:148
 msgid "No one has yet submitted this form."
 msgstr "هنوز کسی به این فرم پاسخ نداده است."
 
-#: concrete/single_pages/dashboard/reports/forms.php:147
+#: concrete/single_pages/dashboard/reports/forms.php:157
 msgid "Export to Excel"
 msgstr "خروجی اکسل"
 
-#: concrete/single_pages/dashboard/reports/forms.php:158
+#: concrete/single_pages/dashboard/reports/forms.php:167
 msgid "* Scroll right to view full results"
 msgstr "* رفته برای دیدن نتایج کامل"
 
-#: concrete/single_pages/dashboard/reports/forms.php:176
+#: concrete/single_pages/dashboard/reports/forms.php:185
 msgid "Actions"
 msgstr "عملیات"
 
-#: concrete/single_pages/dashboard/reports/forms.php:190
+#: concrete/single_pages/dashboard/reports/forms.php:198
 #, php-format
 msgid "(User ID: %s)"
 msgstr "(ID کاربر: %s )"

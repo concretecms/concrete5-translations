@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-07-11 04:00+0000\n"
-"PO-Revision-Date: 2014-07-11 10:01+0000\n"
+"POT-Creation-Date: 2014-07-12 04:00+0000\n"
+"PO-Revision-Date: 2014-07-12 09:54+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Czech (Czech Republic) (http://www.transifex.com/projects/p/concrete5/language/cs_CZ/)\n"
 "MIME-Version: 1.0\n"
@@ -722,8 +722,8 @@ msgstr "Aktualizováno"
 #: concrete/models/attribute/types/select/type_form.php:19
 #: concrete/single_pages/dashboard/files/sets.php:116
 #: concrete/single_pages/dashboard/pages/types/view.php:192
-#: concrete/single_pages/dashboard/reports/forms.php:127
-#: concrete/single_pages/dashboard/reports/forms.php:217
+#: concrete/single_pages/dashboard/reports/forms.php:128
+#: concrete/single_pages/dashboard/reports/forms.php:229
 #: concrete/single_pages/dashboard/scrapbook/view.php:193
 #: concrete/single_pages/dashboard/scrapbook/view.php:275
 #: concrete/single_pages/dashboard/system/backup_restore/backup.php:117
@@ -747,7 +747,8 @@ msgstr "Celkem stažení: %s"
 msgid "Most recent 20 downloads:"
 msgstr "Posledních 20 stažení:"
 
-#: concrete/single_pages/dashboard/reports/forms.php:172
+#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:56
+#: concrete/single_pages/dashboard/reports/forms.php:179
 #: concrete/single_pages/dashboard/reports/logs.php:58
 #: concrete/single_pages/dashboard/reports/statistics.php:107
 #: concrete/single_pages/dashboard/reports/surveys.php:24
@@ -2815,7 +2816,7 @@ msgid "Build simple forms and surveys."
 msgstr "Tvorba jednoduchých formulářů a anket."
 
 #: concrete/core/controllers/blocks/form.php:35
-#: concrete/single_pages/dashboard/reports/forms.php:84
+#: concrete/single_pages/dashboard/reports/forms.php:82
 msgid "Form"
 msgstr "Formulář"
 
@@ -3818,8 +3819,8 @@ msgid "You will receive a test message from %s"
 msgstr "Obdržíte testovací e-mail od %s"
 
 #: concrete/core/controllers/single_pages/dashboard/reports/forms.php:155
-#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:163
-#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:172
+#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:164
+#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:174
 #: concrete/core/controllers/single_pages/dashboard/system/mail/importers.php:17
 #: concrete/core/controllers/single_pages/dashboard/system/mail/method.php:12
 #: concrete/core/controllers/single_pages/dashboard/system/mail/method/test_settings.php:13
@@ -4197,8 +4198,18 @@ msgstr "Logy"
 msgid "All"
 msgstr "Vše"
 
-#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:130
-#: concrete/single_pages/dashboard/reports/forms.php:202
+#. %1$s is the survey name, %2$s is the date.
+#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:37
+#, php-format
+msgid "%1$s Form Data Output - Run on %2$s"
+msgstr ""
+
+#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:51
+msgid "Submitted Date"
+msgstr ""
+
+#: concrete/core/controllers/single_pages/dashboard/reports/forms.php:129
+#: concrete/single_pages/dashboard/reports/forms.php:212
 msgid "File not found"
 msgstr "Soubor nebyl nalezen"
 
@@ -4902,7 +4913,7 @@ msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "Stránka \"%s\" na adrese \"%s\" byla přesunuta do koše"
 
 #: concrete/core/models/page_list.php:515
-#: concrete/single_pages/dashboard/reports/forms.php:169
+#: concrete/single_pages/dashboard/reports/forms.php:178
 #: concrete/single_pages/dashboard/reports/surveys.php:23
 #: concrete/single_pages/dashboard/system/backup_restore/backup.php:102
 msgid "Date"
@@ -8931,7 +8942,7 @@ msgstr "Neplatná oprávnění"
 #: concrete/blocks/form/form_setup_html.php:15
 #: concrete/blocks/form/form_setup_html.php:32
 #: concrete/blocks/survey/add.php:25 concrete/blocks/survey/edit.php:27
-#: concrete/single_pages/dashboard/reports/forms.php:86
+#: concrete/single_pages/dashboard/reports/forms.php:84
 #: concrete/single_pages/dashboard/scrapbook/view.php:164
 #: concrete/single_pages/dashboard/sitemap/full.php:29
 #: concrete/single_pages/dashboard/system/registration/public_registration.php:43
@@ -12375,11 +12386,11 @@ msgstr "Opravdu chcete smazat údaje zaslané z tohoto formuláře?"
 #: concrete/config/install/disabled/blank/content.xml:36
 #: concrete/config/install/disabled/standard/content.xml:36
 #: concrete/helpers/concrete/upgrade/version_510.php:79
-#: concrete/single_pages/dashboard/reports/forms.php:68
+#: concrete/single_pages/dashboard/reports/forms.php:69
 msgid "Form Results"
 msgstr "Výsledky z formulářů"
 
-#: concrete/single_pages/dashboard/reports/forms.php:85
+#: concrete/single_pages/dashboard/reports/forms.php:83
 msgid "Submissions"
 msgstr "Zaslané údaje"
 
@@ -12395,32 +12406,32 @@ msgstr "Otevřít stránku"
 msgid "Delete Submissions"
 msgstr "Smazat zaslané údaje"
 
-#: concrete/single_pages/dashboard/reports/forms.php:136
+#: concrete/single_pages/dashboard/reports/forms.php:139
 msgid "There are no available forms in your site."
 msgstr "Na vašem webu nejsou k dispozici žádné formuláře."
 
-#: concrete/single_pages/dashboard/reports/forms.php:140
+#: concrete/single_pages/dashboard/reports/forms.php:144
 #, php-format
 msgid "Responses to %s"
 msgstr "Odpovědi na %s"
 
-#: concrete/single_pages/dashboard/reports/forms.php:143
+#: concrete/single_pages/dashboard/reports/forms.php:148
 msgid "No one has yet submitted this form."
 msgstr "Tento formulář zatím nikdo neodeslal."
 
-#: concrete/single_pages/dashboard/reports/forms.php:147
+#: concrete/single_pages/dashboard/reports/forms.php:157
 msgid "Export to Excel"
 msgstr "Exportovat do Excelu"
 
-#: concrete/single_pages/dashboard/reports/forms.php:158
+#: concrete/single_pages/dashboard/reports/forms.php:167
 msgid "* Scroll right to view full results"
 msgstr "* Pro zobrazení komplených výsledků odrolujte doprava"
 
-#: concrete/single_pages/dashboard/reports/forms.php:176
+#: concrete/single_pages/dashboard/reports/forms.php:185
 msgid "Actions"
 msgstr "Akce"
 
-#: concrete/single_pages/dashboard/reports/forms.php:190
+#: concrete/single_pages/dashboard/reports/forms.php:198
 #, php-format
 msgid "(User ID: %s)"
 msgstr "(ID uživatele: %s)"
