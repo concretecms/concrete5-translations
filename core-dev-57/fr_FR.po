@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-07-12 04:00+0000\n"
-"PO-Revision-Date: 2014-07-12 09:43+0000\n"
+"POT-Creation-Date: 2014-07-13 18:57+0000\n"
+"PO-Revision-Date: 2014-07-13 19:21+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: French (France) (http://www.transifex.com/projects/p/concrete5/language/fr_FR/)\n"
 "MIME-Version: 1.0\n"
@@ -434,7 +434,7 @@ msgstr "Descendant"
 #: concrete/single_pages/dashboard/pages/themes/customize.php:97
 #: concrete/single_pages/dashboard/pages/themes/view.php:115
 #: concrete/single_pages/dashboard/pages/types/composer.php:187
-#: concrete/single_pages/dashboard/pages/types/permissions.php:26
+#: concrete/single_pages/dashboard/pages/types/permissions.php:24
 #: concrete/single_pages/dashboard/pages/types/view.php:12
 #: concrete/single_pages/dashboard/system/attributes/types.php:34
 #: concrete/single_pages/dashboard/system/basics/images.php:45
@@ -470,7 +470,7 @@ msgstr "Descendant"
 #: concrete/single_pages/dashboard/system/seo/codes.php:22
 #: concrete/single_pages/dashboard/system/seo/excluded.php:13
 #: concrete/single_pages/dashboard/system/seo/searchindex.php:34
-#: concrete/single_pages/dashboard/system/seo/statistics.php:19
+#: concrete/single_pages/dashboard/system/seo/statistics.php:15
 #: concrete/single_pages/dashboard/system/seo/urls.php:29
 #: concrete/single_pages/dashboard/workflow/workflows.php:17
 #: concrete/tools/area/layout_presets.php:111
@@ -535,7 +535,7 @@ msgstr "Impossible de rechercher dans la collection de fichiers."
 msgid "None of the requested files could be found."
 msgstr "Aucun des fichiers demandés ne peut être trouvé."
 
-#: concrete/core/Backup/ContentExporter.php:186
+#: concrete/core/Backup/ContentExporter.php:198
 #: concrete/core/Legacy/FileList.php:116 concrete/tools/files/download.php:42
 msgid "Could not open with ZipArchive::CREATE"
 msgstr "Ouverture avec ZipArchive::CREATE impossible"
@@ -1216,6 +1216,8 @@ msgid "Flat View"
 msgstr "Vue à plat"
 
 #: concrete/blocks/search/controller.php:81
+#: concrete/config/install/packages/elemental_full/content.xml:251
+#: concrete/config/install/packages/elemental_full/content.xml:277
 #: concrete/elements/block_area_add_stack.php:17
 #: concrete/elements/files/search.php:45 concrete/elements/group/search.php:26
 #: concrete/elements/marketplace/search_form.php:24
@@ -5226,7 +5228,7 @@ msgstr "Une exception est survenue:"
 msgid "An error occurred while processing this request."
 msgstr "Une erreur est survenue lors du traitement de la requête."
 
-#: concrete/core/Backup/ContentExporter.php:189
+#: concrete/core/Backup/ContentExporter.php:201
 #: concrete/core/Legacy/FileList.php:119
 #, php-format
 msgid "Failed to create zip file as \"%s\": %s"
@@ -5270,11 +5272,11 @@ msgstr "Pas de date de fin"
 msgid "Repeats %s. "
 msgstr "Répétition %s."
 
-#: concrete/core/Permission/Key/Key.php:21
+#: concrete/core/Permission/Key/Key.php:22
 msgid "Included"
 msgstr "Inclus"
 
-#: concrete/core/Permission/Key/Key.php:22
+#: concrete/core/Permission/Key/Key.php:23
 msgid "Excluded"
 msgstr "Exclus"
 
@@ -6655,6 +6657,7 @@ msgid "Customize"
 msgstr "Personnaliser"
 
 #: concrete/config/install/base/dashboard.xml:915
+#: concrete/config/install/packages/elemental_full/content.xml:201
 #: concrete/core/Application/Service/Dashboard.php:325
 msgid "Customize Dashboard Home"
 msgstr "Personnaliser l’accueil du tableau de bord"
@@ -6821,8 +6824,8 @@ msgstr "la méthode %s n'existe pas pour la classe %s"
 msgid "Sitewide %s"
 msgstr "Largeur du site %s"
 
-#: concrete/core/Area/Layout/Column.php:71
-#: concrete/core/Area/Layout/ThemeGridColumn.php:33
+#: concrete/core/Area/Layout/Column.php:80
+#: concrete/core/Area/Layout/ThemeGridColumn.php:39
 #, php-format
 msgid "Column %s"
 msgstr "Colonne %s"
@@ -7218,7 +7221,7 @@ msgid "Field available in Dashboard User Search."
 msgstr "Champ disponible dans la recherche utilisateur du tableau de bord."
 
 #: concrete/elements/attribute/type_form_required.php:128
-#: concrete/single_pages/dashboard/pages/types/permissions.php:25
+#: concrete/single_pages/dashboard/pages/types/permissions.php:23
 #: concrete/single_pages/dashboard/system/environment/storage.php:77
 #: concrete/single_pages/download_file.php:34
 #: concrete/single_pages/profile/messages.php:44
@@ -7515,6 +7518,7 @@ msgid "My Account"
 msgstr "Mon compte"
 
 #: concrete/config/install/packages/elemental_blank/content.xml:41
+#: concrete/config/install/packages/elemental_full/content.xml:146
 #: concrete/elements/account/menu.php:60
 #: concrete/single_pages/account/profile/public_profile.php:14
 #: concrete/single_pages/dashboard/system/view.php:41
@@ -8972,7 +8976,6 @@ msgstr "Sauvegarder le pré-réglage"
 
 #: concrete/config/install/base/dashboard.xml:192
 #: concrete/config/install/base/dashboard.xml:551
-#: concrete/single_pages/dashboard/system/seo/statistics.php:3
 #: concrete/views/dialogs/file/properties.php:13
 msgid "Statistics"
 msgstr "Statistiques"
@@ -9789,6 +9792,16 @@ msgid ""
 "\n"
 msgstr "\nUne soumission du formulaire %s a été effectuée sur votre site web Concrete5.\n\n%s\n\nPour voir l'intégralité de cet envoi, visitez %s \n\n"
 
+#: concrete/config/install/packages/elemental_full/controller.php:10
+msgid "Full Site"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/controller.php:14
+msgid ""
+"Creates a full website with the Elemental theme, including a home page, "
+"multiple page types, portfolio, contact forms, blogs and more.."
+msgstr ""
+
 #: concrete/config/install/packages/elemental_blank/controller.php:10
 msgid "Empty Site"
 msgstr "Site vide"
@@ -10234,10 +10247,11 @@ msgid "Frequently Asked Questions Block"
 msgstr ""
 
 #: concrete/blocks/faq/controller.php:25
+#: concrete/config/install/packages/elemental_full/content.xml:744
 msgid "Frequently Asked Questions"
 msgstr ""
 
-#: concrete/blocks/faq/view.php:23
+#: concrete/blocks/faq/view.php:24
 msgid "No Faq Entries Entered."
 msgstr ""
 
@@ -11637,7 +11651,7 @@ msgstr ""
 msgid "Social Links"
 msgstr "Liens sociaux"
 
-#: concrete/blocks/social_links/controller.php:75
+#: concrete/blocks/social_links/controller.php:82
 msgid "You must choose at least one link."
 msgstr ""
 
@@ -13216,13 +13230,7 @@ msgstr "Vous n'avez pas accès à la recherche d'utilisateur. Ce paramètrage pe
 msgid "Registration Data"
 msgstr "Données d'enregistrement"
 
-#: concrete/single_pages/dashboard/system/seo/statistics.php:3
-msgid ""
-"Tracks page views in concrete5. Disabling this may increase site "
-"performance, but you will have to get statistics information from elsewhere."
-msgstr "Concrete5 gère les statistiques des pages vues. Les désactiver devrait augmenter les performances de votre site, mais vous devrez les obtenir ailleurs."
-
-#: concrete/single_pages/dashboard/system/seo/statistics.php:13
+#: concrete/single_pages/dashboard/system/seo/statistics.php:9
 msgid "Track page view statistics."
 msgstr "Statistiques des pages vues."
 
@@ -14690,12 +14698,7 @@ msgstr "Mettre le paramétrage à jour"
 msgid "Delete Control "
 msgstr "Supprimer le contrôle"
 
-#: concrete/config/install/base/dashboard.xml:293
-#: concrete/single_pages/dashboard/pages/types/permissions.php:9
-msgid "Page Type Permissions"
-msgstr "Permissions des types de pages"
-
-#: concrete/single_pages/dashboard/pages/types/permissions.php:21
+#: concrete/single_pages/dashboard/pages/types/permissions.php:19
 msgid "You cannot access page type permissions."
 msgstr "Vous n'avez pas accès aux permissions de types de pages."
 
@@ -15356,6 +15359,10 @@ msgstr "Composer le formulaire"
 msgid "Defaults and Output"
 msgstr "Défauts et affichage"
 
+#: concrete/config/install/base/dashboard.xml:293
+msgid "Page Type Permissions"
+msgstr "Permissions des types de pages"
+
 #: concrete/config/install/base/dashboard.xml:301
 msgid "Form factors for pages in your site."
 msgstr "Facteur de forme pour les pages de votre site"
@@ -15953,66 +15960,79 @@ msgid "Dashboard Header + Four Column"
 msgstr "En-tête du tableau de bord + quatre colonnes"
 
 #: concrete/config/install/base/dashboard.xml:841
+#: concrete/config/install/packages/elemental_full/content.xml:149
 msgid "Welcome to concrete5"
 msgstr "Bienvenue sur concrete5"
 
 #: concrete/config/install/base/dashboard.xml:841
+#: concrete/config/install/packages/elemental_full/content.xml:149
 msgid ""
 "Learn about how to use concrete5, how to develop for concrete5, and get "
 "general help."
 msgstr "Apprendre à utiliser concrete5, développer pour concrete5 et recevoir de l'aide."
 
 #: concrete/config/install/base/dashboard.xml:847
+#: concrete/config/install/packages/elemental_full/content.xml:155
 msgctxt "AreaName"
 msgid "Header"
 msgstr "En-tête"
 
 #: concrete/config/install/base/dashboard.xml:858
+#: concrete/config/install/packages/elemental_full/content.xml:164
 msgctxt "AreaName"
 msgid "Column 1"
 msgstr "Colonne 1"
 
 #: concrete/config/install/base/dashboard.xml:872
+#: concrete/config/install/packages/elemental_full/content.xml:173
 msgctxt "AreaName"
 msgid "Column 2"
 msgstr "Colonne 2"
 
 #: concrete/config/install/base/dashboard.xml:885
+#: concrete/config/install/packages/elemental_full/content.xml:182
 msgctxt "AreaName"
 msgid "Column 3"
 msgstr "Colonne 3"
 
 #: concrete/config/install/base/dashboard.xml:899
+#: concrete/config/install/packages/elemental_full/content.xml:191
 msgctxt "AreaName"
 msgid "Column 4"
 msgstr "Colonne 4"
 
 #: concrete/config/install/base/dashboard.xml:924
+#: concrete/config/install/packages/elemental_full/content.xml:210
 msgctxt "AreaName"
 msgid "Primary"
 msgstr "Primaire"
 
 #: concrete/config/install/base/dashboard.xml:928
+#: concrete/config/install/packages/elemental_full/content.xml:214
 msgctxt "AreaName"
 msgid "Secondary 1"
 msgstr "Secondaire 1"
 
 #: concrete/config/install/base/dashboard.xml:937
+#: concrete/config/install/packages/elemental_full/content.xml:224
 msgctxt "AreaName"
 msgid "Secondary 2"
 msgstr "Secondaire 2"
 
 #: concrete/config/install/base/dashboard.xml:946
+#: concrete/config/install/packages/elemental_full/content.xml:234
 msgctxt "AreaName"
 msgid "Secondary 3"
 msgstr "Secondaire 3"
 
 #: concrete/config/install/base/dashboard.xml:949
+#: concrete/config/install/packages/elemental_full/content.xml:237
 msgctxt "AreaName"
 msgid "Secondary 4"
 msgstr "Secondaire 4"
 
 #: concrete/config/install/base/dashboard.xml:952
+#: concrete/config/install/packages/elemental_full/content.xml:240
 msgctxt "AreaName"
 msgid "Secondary 5"
 msgstr "Secondaire 5"
@@ -16039,6 +16059,16 @@ msgstr "Répertoire"
 
 #: concrete/config/install/base/login_registration.xml:20
 #: concrete/config/install/packages/elemental_blank/content.xml:29
+#: concrete/config/install/packages/elemental_full/content.xml:147
+#: concrete/config/install/packages/elemental_full/content.xml:272
+#: concrete/config/install/packages/elemental_full/content.xml:288
+#: concrete/config/install/packages/elemental_full/content.xml:425
+#: concrete/config/install/packages/elemental_full/content.xml:436
+#: concrete/config/install/packages/elemental_full/content.xml:604
+#: concrete/config/install/packages/elemental_full/content.xml:745
+#: concrete/config/install/packages/elemental_full/content.xml:766
+#: concrete/config/install/packages/elemental_full/content.xml:777
+#: concrete/config/install/packages/elemental_full/content.xml:788
 msgctxt "AreaName"
 msgid "Main"
 msgstr "Principal"
@@ -17165,10 +17195,111 @@ msgctxt "AttributeSetName"
 msgid "Navigation and Indexing"
 msgstr "Navigation et indexation"
 
+#: concrete/config/install/packages/elemental_full/content.xml:7
+msgctxt "PageTemplateName"
+msgid "Blank"
+msgstr ""
+
 #: concrete/config/install/packages/elemental_blank/content.xml:7
+#: concrete/config/install/packages/elemental_full/content.xml:8
 msgctxt "PageTemplateName"
 msgid "Full"
 msgstr "Complet"
+
+#: concrete/config/install/packages/elemental_full/content.xml:9
+msgctxt "PageTemplateName"
+msgid "Left Sidebar"
+msgstr "Colonne Gauche"
+
+#: concrete/config/install/packages/elemental_full/content.xml:10
+msgctxt "PageTemplateName"
+msgid "Right Sidebar"
+msgstr "Colonne Droite"
+
+#: concrete/config/install/packages/elemental_full/content.xml:13
+msgid "Empty Page"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:17
+msgctxt "PageTypeFormLayoutSetName"
+msgid "Basics"
+msgstr "Base"
+
+#: concrete/config/install/packages/elemental_full/content.xml:18
+msgctxt "PageTypeFormLayoutSetControlCustomLabel"
+msgid "Page Name"
+msgstr "Nom de page"
+
+#: concrete/config/install/packages/elemental_full/content.xml:41
+msgid "Footer Contact"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:42
+#: concrete/config/install/packages/elemental_full/content.xml:53
+#: concrete/config/install/packages/elemental_full/content.xml:64
+#: concrete/config/install/packages/elemental_full/content.xml:75
+#: concrete/config/install/packages/elemental_full/content.xml:87
+#: concrete/config/install/packages/elemental_full/content.xml:96
+#: concrete/config/install/packages/elemental_full/content.xml:115
+#: concrete/config/install/packages/elemental_full/content.xml:131
+msgid "Main"
+msgstr "Principal"
+
+#: concrete/config/install/packages/elemental_full/content.xml:52
+msgid "Footer Legal"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:63
+msgid "Footer Navigation"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:74
+msgid "Footer Site Title"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:86
+msgid "Footer Social"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:95
+msgid "Header Navigation"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:114
+msgid "Header Search"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:130
+msgid "Header Site Title"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:287
+msgid "About"
+msgstr "A propos"
+
+#: concrete/config/install/packages/elemental_full/content.xml:419
+msgid "Blank Page"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:435
+msgid "Contact Us"
+msgstr "Nous Contacter"
+
+#: concrete/config/install/packages/elemental_full/content.xml:603
+msgid "Careers"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:765
+msgid "Derb."
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:776
+msgid "My name"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:787
+msgid "derb"
+msgstr ""
 
 #: concrete/config/install/packages/elemental_blank/content.xml:10
 msgid "Page"
