@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-07-14 05:35+0000\n"
-"PO-Revision-Date: 2014-07-14 05:36+0000\n"
+"POT-Creation-Date: 2014-07-15 16:01+0000\n"
+"PO-Revision-Date: 2014-07-15 16:22+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Arabic (http://www.transifex.com/projects/p/concrete5/language/ar/)\n"
 "MIME-Version: 1.0\n"
@@ -16,19 +16,19 @@ msgstr ""
 "X-Poedit-Basepath: ../..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: concrete/bootstrap/process.php:327
+#: concrete/bootstrap/process.php:329
 msgid "The stack contains invalid block types."
 msgstr "تحتوي الكوْمة أنواع بلوكات غير صالحة."
 
-#: concrete/bootstrap/process.php:331
+#: concrete/bootstrap/process.php:333
 msgid "Invalid stack."
 msgstr "كوْمة غير صالحة."
 
-#: concrete/bootstrap/process.php:470
+#: concrete/bootstrap/process.php:472
 msgid "Access to block denied"
 msgstr "الوصول إلى هذا البلوك محظور"
 
-#: concrete/bootstrap/process.php:673
+#: concrete/bootstrap/process.php:669
 msgid "Invalid block."
 msgstr "بلوك غير صالح."
 
@@ -313,6 +313,7 @@ msgid "This facebook account is not tied to a user."
 msgstr ""
 
 #: concrete/controllers/backend/user_interface.php:28
+#: concrete/controllers/backend/user_interface/block.php:42
 #: concrete/controllers/backend/user_interface/file.php:37
 #: concrete/controllers/backend/user_interface/page.php:33
 #: concrete/controllers/dialog/file/properties.php:51
@@ -413,12 +414,12 @@ msgstr "تنازلياً"
 #: concrete/elements/attribute/type_form_required.php:130
 #: concrete/elements/block_custom_template.php:48
 #: concrete/elements/block_footer_edit.php:18
-#: concrete/elements/block_master_collection_alias.php:52
 #: concrete/elements/collection_attribute_values.php:25
 #: concrete/elements/collection_permissions_simple.php:81
 #: concrete/elements/collection_speed_settings.php:170
 #: concrete/elements/collection_theme.php:135
-#: concrete/elements/custom_style.php:118
+#: concrete/elements/custom_style.php:78
+#: concrete/elements/custom_styleBAK.php:118
 #: concrete/elements/page_types/composer/form/output/buttons.php:13
 #: concrete/elements/permission/detail.php:94
 #: concrete/elements/permission/details/block/timed_guest_access.php:39
@@ -468,13 +469,14 @@ msgstr "تنازلياً"
 #: concrete/single_pages/dashboard/system/seo/bulk.php:228
 #: concrete/single_pages/dashboard/system/seo/codes.php:22
 #: concrete/single_pages/dashboard/system/seo/excluded.php:13
-#: concrete/single_pages/dashboard/system/seo/searchindex.php:34
+#: concrete/single_pages/dashboard/system/seo/searchindex.php:35
 #: concrete/single_pages/dashboard/system/seo/statistics.php:15
 #: concrete/single_pages/dashboard/system/seo/urls.php:29
 #: concrete/single_pages/dashboard/workflow/workflows.php:17
 #: concrete/tools/area/layout_presets.php:111
 #: concrete/tools/files/customize_search_columns.php:108
-#: concrete/tools/i18n_js.php:93
+#: concrete/tools/i18n_js.php:93 concrete/tools/i18n_redactor_js.php:43
+#: concrete/tools/i18n_redactor_js.php:101
 #: concrete/tools/page_types/composer/form/edit_control.php:65
 #: concrete/tools/pages/customize_search_columns.php:108
 #: concrete/tools/pages/permissions.php:151
@@ -484,6 +486,7 @@ msgstr "تنازلياً"
 #: concrete/tools/users/bulk_group_add.php:96
 #: concrete/tools/users/bulk_group_remove.php:95
 #: concrete/tools/users/customize_search_columns.php:112
+#: concrete/views/dialogs/block/aliasing.php:44
 #: concrete/views/dialogs/page/design.php:31
 #: concrete/views/dialogs/page/design/css.php:12
 #: concrete/views/dialogs/search/customize.php:75
@@ -505,7 +508,6 @@ msgstr "احفظ"
 #: concrete/tools/dashboard/sitemap_delete_forever.php:5
 #: concrete/tools/dashboard/sitemap_empty_trash.php:6
 #: concrete/tools/edit_area_popup.php:27 concrete/tools/edit_area_popup.php:82
-#: concrete/tools/edit_block_popup.php:31
 #: concrete/tools/edit_collection_popup.php:82
 #: concrete/tools/files/edit.php:12 concrete/tools/files/permissions.php:12
 #: concrete/tools/files/replace.php:12
@@ -554,7 +556,7 @@ msgstr ""
 #: concrete/single_pages/dashboard/system/basics/icons.php:54
 #: concrete/single_pages/dashboard/system/basics/icons.php:117
 #: concrete/single_pages/dashboard/system/basics/icons.php:179
-#: concrete/tools/files/replace.php:26
+#: concrete/tools/files/replace.php:26 concrete/tools/i18n_redactor_js.php:69
 msgid "Upload"
 msgstr "ارفع"
 
@@ -623,7 +625,6 @@ msgstr "أزل الملفات من دليل الملفات الواردة /incom
 #: concrete/core/Workflow/Progress/Action/CancelAction.php:7
 #: concrete/elements/block_custom_template.php:47
 #: concrete/elements/block_footer_edit.php:19
-#: concrete/elements/block_master_collection_alias.php:51
 #: concrete/elements/collection_add.php:85
 #: concrete/elements/collection_add_external.php:35
 #: concrete/elements/collection_attribute_values.php:24
@@ -637,7 +638,9 @@ msgstr "أزل الملفات من دليل الملفات الواردة /incom
 #: concrete/elements/collection_theme.php:134
 #: concrete/elements/conversation/display.php:76
 #: concrete/elements/conversation/display.php:79
-#: concrete/elements/custom_style.php:117
+#: concrete/elements/custom_style.php:75
+#: concrete/elements/custom_styleBAK.php:117
+#: concrete/elements/page_types/composer/form/layout_set/control.php:18
 #: concrete/elements/permission/detail.php:93
 #: concrete/elements/permission/details/block/timed_guest_access.php:38
 #: concrete/elements/permission/lists/area.php:94
@@ -660,10 +663,9 @@ msgstr "أزل الملفات من دليل الملفات الواردة /incom
 #: concrete/single_pages/dashboard/pages/templates/add.php:46
 #: concrete/single_pages/dashboard/pages/templates/view.php:58
 #: concrete/single_pages/dashboard/pages/themes/view.php:34
-#: concrete/single_pages/dashboard/pages/types/form.php:22
-#: concrete/single_pages/dashboard/pages/types/form.php:109
-#: concrete/single_pages/dashboard/pages/types/form.php:135
-#: concrete/single_pages/dashboard/pages/types/form.php:218
+#: concrete/single_pages/dashboard/pages/types/form.php:21
+#: concrete/single_pages/dashboard/pages/types/form.php:52
+#: concrete/single_pages/dashboard/pages/types/form.php:69
 #: concrete/single_pages/dashboard/pages/types/view.php:11
 #: concrete/single_pages/dashboard/pages/types/view.php:91
 #: concrete/single_pages/dashboard/system/attributes/topics/add.php:21
@@ -688,6 +690,8 @@ msgstr "أزل الملفات من دليل الملفات الواردة /incom
 #: concrete/tools/files/permissions.php:73
 #: concrete/tools/files/permissions.php:102
 #: concrete/tools/gathering/item/delete.php:27 concrete/tools/i18n_js.php:10
+#: concrete/tools/i18n_redactor_js.php:41
+#: concrete/tools/i18n_redactor_js.php:100
 #: concrete/tools/page_types/composer/form/edit_control.php:64
 #: concrete/tools/pages/delete.php:121 concrete/tools/pages/design.php:208
 #: concrete/tools/pages/permissions.php:150
@@ -708,6 +712,7 @@ msgstr "أزل الملفات من دليل الملفات الواردة /incom
 #: concrete/tools/users/bulk_group_add.php:95
 #: concrete/tools/users/bulk_group_remove.php:94
 #: concrete/views/dialogs/area/layout/presets.php:46
+#: concrete/views/dialogs/block/aliasing.php:43
 #: concrete/views/dialogs/page/add_block.php:94
 #: concrete/views/dialogs/page/delete.php:8
 #: concrete/views/dialogs/page/delete.php:12
@@ -756,7 +761,7 @@ msgstr ""
 
 #: concrete/core/Package/Package.php:321
 #: concrete/elements/block_area_footer.php:71
-#: concrete/elements/block_header_view.php:178
+#: concrete/elements/block_header_view.php:172
 #: concrete/elements/page_controls_footer.php:58
 #: concrete/elements/page_types/composer/form/output/buttons.php:27
 #: concrete/elements/panels/page.php:104
@@ -892,7 +897,7 @@ msgstr ""
 #: concrete/single_pages/dashboard/system/backup/backup.php:113
 #: concrete/single_pages/dashboard/system/backup/update.php:17
 #: concrete/single_pages/download_file.php:28 concrete/tools/files/view.php:35
-#: concrete/tools/i18n_js.php:187
+#: concrete/tools/i18n_js.php:187 concrete/tools/i18n_redactor_js.php:70
 msgid "Download"
 msgstr "نزّل"
 
@@ -913,7 +918,7 @@ msgid "(Note: files within the set will not be removed.)"
 msgstr "(ملاحظة: لن تُحذف الملفات التي تحتويها هذه المجموعة.)"
 
 #: concrete/attributes/select/type_form.php:19
-#: concrete/elements/block_header_view.php:158
+#: concrete/elements/block_header_view.php:157
 #: concrete/elements/collection_attribute_values.php:18
 #: concrete/elements/collection_delete.php:49
 #: concrete/elements/conversation/message.php:33
@@ -925,8 +930,6 @@ msgstr "(ملاحظة: لن تُحذف الملفات التي تحتويها ه
 #: concrete/elements/pages/search.php:45 concrete/elements/users/search.php:45
 #: concrete/single_pages/account/messages/inbox.php:48
 #: concrete/single_pages/dashboard/conversations/messages.php:189
-#: concrete/single_pages/dashboard/pages/types/form.php:116
-#: concrete/single_pages/dashboard/pages/types/form.php:225
 #: concrete/single_pages/dashboard/pages/types/view.php:47
 #: concrete/single_pages/dashboard/pages/types/view.php:98
 #: concrete/single_pages/dashboard/reports/forms.php:127
@@ -941,7 +944,8 @@ msgstr "(ملاحظة: لن تُحذف الملفات التي تحتويها ه
 #: concrete/tools/gathering/item/delete.php:28 concrete/tools/i18n_js.php:29
 #: concrete/tools/i18n_js.php:87 concrete/tools/i18n_js.php:122
 #: concrete/tools/i18n_js.php:142 concrete/tools/i18n_js.php:198
-#: concrete/tools/pages/delete.php:122 concrete/tools/users/bulk_delete.php:67
+#: concrete/tools/i18n_redactor_js.php:44 concrete/tools/pages/delete.php:122
+#: concrete/tools/users/bulk_delete.php:67
 #: concrete/views/dialogs/page/delete.php:19
 #: concrete/views/panels/page/versions.php:37
 #: concrete/views/panels/page/versions.php:289
@@ -1166,7 +1170,6 @@ msgstr ""
 
 #: concrete/elements/files/add_to_sets.php:271
 #: concrete/single_pages/dashboard/pages/templates/view.php:61
-#: concrete/single_pages/dashboard/pages/types/form.php:142
 #: concrete/single_pages/dashboard/system/backup/update.php:42
 #: concrete/single_pages/dashboard/system/backup/update.php:58
 #: concrete/single_pages/dashboard/users/points/actions.php:59
@@ -1227,8 +1230,8 @@ msgid "Flat View"
 msgstr "خريطة الموقع السطحية"
 
 #: concrete/blocks/search/controller.php:82
-#: concrete/config/install/packages/elemental_full/content.xml:143
-#: concrete/config/install/packages/elemental_full/content.xml:168
+#: concrete/config/install/packages/elemental_full/content.xml:145
+#: concrete/config/install/packages/elemental_full/content.xml:170
 #: concrete/elements/block_area_add_stack.php:17
 #: concrete/elements/files/search.php:45 concrete/elements/group/search.php:26
 #: concrete/elements/marketplace/search_form.php:24
@@ -1466,7 +1469,6 @@ msgstr "المستخدمون الذين هم أعضاء في جميع المجم
 #: concrete/core/Page/Search/ColumnSet/DefaultSet.php:28
 #: concrete/core/User/Group/GroupSearchColumnSet.php:13
 #: concrete/elements/attribute/type_form_required.php:61
-#: concrete/elements/block_master_collection_alias.php:27
 #: concrete/elements/collection_add.php:23
 #: concrete/elements/collection_add_external.php:15
 #: concrete/elements/collection_edit_external.php:15
@@ -1505,6 +1507,7 @@ msgstr "المستخدمون الذين هم أعضاء في جميع المجم
 #: concrete/tools/pages/delete.php:90
 #: concrete/tools/panels/details/page/properties.php:19
 #: concrete/tools/permissions/dialogs/access/entity/types/group_combination.php:23
+#: concrete/views/dialogs/block/aliasing.php:19
 #: concrete/views/panels/details/page/attributes.php:24
 msgid "Name"
 msgstr "الاسم"
@@ -1656,29 +1659,346 @@ msgstr ""
 msgid "Add Message"
 msgstr ""
 
-#: concrete/tools/edit_block_popup.php:23
-msgid ""
-"Unable to retrieve block object. If this block has been moved please reload "
-"the page."
-msgstr "تعذر عرض البلوك. إن كان البلوك نُقل فرجاءً أعد تحميل الصفحة."
+#: concrete/blocks/html/controller.php:23 concrete/config/file_types.php:22
+#: concrete/tools/i18n_redactor_js.php:13
+msgid "HTML"
+msgstr "HTML"
 
-#: concrete/tools/edit_block_popup.php:43
-msgid ""
-"This block is contained within a global area. Changing its content will "
-"change it everywhere that global area is referenced."
-msgstr "هذا البلوك موضوع في مساحة عامة. تغيير محتواه سيَنْعكس على جميع المساحات التي يظهر بها."
+#: concrete/tools/i18n_redactor_js.php:14
+msgid "Insert Video"
+msgstr ""
 
-#: concrete/tools/edit_block_popup.php:49
-msgid ""
-"This is a global block.  Editing it here will change all instances of this "
-"block throughout the site."
-msgstr "هذا البلوك عام.  بتعديله هنا سيتم تعديل جميع نسخه في أرجاء الموقع."
+#: concrete/tools/i18n_js.php:110 concrete/tools/i18n_redactor_js.php:15
+msgid "Insert Image"
+msgstr ""
 
-#: concrete/tools/edit_block_popup.php:58
-msgid ""
-"This block is an alias of Page Defaults. Editing it here will \"disconnect\""
-" it so changes to Page Defaults will no longer affect this block."
-msgstr "هذا البلوك موصول بافتراضيات الصفحة. تعديله هنا \"سيَفْصل\" صلة البلوك ولن يتأثر بتعديلات افتراضيات الصفحة."
+#: concrete/tools/i18n_redactor_js.php:16
+msgid "Table"
+msgstr ""
+
+#: concrete/blocks/file/add.php:10 concrete/blocks/file/edit.php:14
+#: concrete/elements/conversation/display.php:82
+#: concrete/elements/conversation/social_share.php:13
+#: concrete/tools/i18n_redactor_js.php:17
+msgid "Link"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:18
+msgid "Insert link"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:19
+msgid "Edit link"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:20
+msgid "Unlink"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:21
+msgid "Formatting"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:22
+msgid "Normal text"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:23
+msgid "Quote"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:24
+msgid "Code"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:25
+msgid "Header 1"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:26
+msgid "Header 2"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:27
+msgid "Header 3"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:28
+msgid "Header 4"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:29
+msgid "Header 5"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:31
+msgid "Header 6"
+msgstr ""
+
+#: concrete/tools/i18n_js.php:98 concrete/tools/i18n_redactor_js.php:33
+msgid "Bold"
+msgstr ""
+
+#: concrete/tools/i18n_js.php:99 concrete/tools/i18n_redactor_js.php:34
+msgid "Italic"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:35
+msgid "Font Color"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:36
+msgid "Back Color"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:37
+msgid "Unordered List"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:38
+msgid "Ordered List"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:39
+msgid "Outdent"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:40
+msgid "Indent"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:42
+msgid "Insert"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:45
+msgid "Insert Table"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:46
+msgid "Add Row Above"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:47
+msgid "Add Row Below"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:48
+msgid "Add Column Left"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:49
+msgid "Add Column Right"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:50
+msgid "Delete Column"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:51
+msgid "Delete Row"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:52
+msgid "Delete Table"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:53
+msgid "Rows"
+msgstr "أسطر"
+
+#: concrete/tools/i18n_redactor_js.php:54
+msgid "Columns"
+msgstr "أعمدة"
+
+#: concrete/tools/i18n_redactor_js.php:55
+msgid "Add Head"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:56
+msgid "Delete Head"
+msgstr ""
+
+#: concrete/blocks/feature/form.php:10
+#: concrete/blocks/search/form_setup_html.php:30
+#: concrete/blocks/tags/tag_form.php:10
+#: concrete/blocks/youtube/form_setup_html.php:20
+#: concrete/core/File/Search/ColumnSet/DefaultSet.php:21
+#: concrete/core/File/Version.php:482 concrete/tools/i18n_redactor_js.php:57
+#: concrete/views/dialogs/file/properties.php:86
+#: concrete/views/dialogs/file/properties.php:170
+msgid "Title"
+msgstr "لقب"
+
+#: concrete/tools/i18n_redactor_js.php:58
+msgid "Position"
+msgstr "الموضع"
+
+#: concrete/blocks/autonav/form_setup_html.php:91
+#: concrete/blocks/dashboard_site_activity/view.php:5
+#: concrete/blocks/form/form_setup_html.php:90
+#: concrete/blocks/image/form.php:44 concrete/blocks/survey/add.php:36
+#: concrete/blocks/survey/edit.php:38 concrete/elements/custom_style.php:20
+#: concrete/elements/custom_style/background.php:20
+#: concrete/elements/permission/access/list.php:33
+#: concrete/elements/permission/labels.php:49
+#: concrete/single_pages/account/profile/public_profile.php:55
+#: concrete/single_pages/dashboard/pages/single.php:53
+#: concrete/single_pages/dashboard/system/basics/images.php:15
+#: concrete/single_pages/dashboard/system/mail/importers.php:6
+#: concrete/single_pages/dashboard/system/mail/method.php:6
+#: concrete/single_pages/dashboard/system/permissions/blacklist.php:44
+#: concrete/tools/i18n_js.php:90 concrete/tools/i18n_redactor_js.php:59
+#: concrete/tools/versions.php:347
+msgid "None"
+msgstr "لاشيء"
+
+#: concrete/elements/custom_style/border.php:42
+#: concrete/elements/custom_style/fonts.php:53
+#: concrete/elements/custom_style/spacing.php:33
+#: concrete/elements/custom_style/spacing.php:70
+#: concrete/tools/i18n_redactor_js.php:60
+msgid "Left"
+msgstr "يسار"
+
+#: concrete/elements/custom_style/border.php:40
+#: concrete/elements/custom_style/fonts.php:55
+#: concrete/elements/custom_style/spacing.php:17
+#: concrete/elements/custom_style/spacing.php:54
+#: concrete/tools/i18n_redactor_js.php:61
+msgid "Right"
+msgstr "يمين"
+
+#: concrete/elements/custom_style/fonts.php:54
+#: concrete/tools/i18n_redactor_js.php:62
+msgid "Center"
+msgstr "وسط"
+
+#: concrete/tools/i18n_redactor_js.php:63
+msgid "Image Web Link"
+msgstr ""
+
+#: concrete/core/File/Type/Type.php:73 concrete/tools/i18n_redactor_js.php:64
+msgid "Text"
+msgstr "نص"
+
+#: concrete/config/install/base/dashboard.xml:680
+#: concrete/core/User/Search/ColumnSet/DefaultSet.php:22
+#: concrete/elements/users/confirm_list.php:8
+#: concrete/mail/user_register_approval_required.php:15
+#: concrete/single_pages/account/profile/edit.php:22
+#: concrete/themes/greek_yogurt/blog_entry.php:71
+#: concrete/tools/i18n_redactor_js.php:65
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+#: concrete/blocks/image/form.php:56
+#: concrete/elements/collection_add_external.php:20
+#: concrete/elements/collection_edit_external.php:20
+#: concrete/elements/workflow/progress/categories/page/pending.php:12
+#: concrete/single_pages/dashboard/system/basics/social.php:68
+#: concrete/tools/i18n_redactor_js.php:66
+msgid "URL"
+msgstr "عنوان URL"
+
+#: concrete/tools/i18n_redactor_js.php:67
+msgid "Video Embed Code"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:68
+msgid "Insert File"
+msgstr ""
+
+#: concrete/core/Form/Service/Widget/Color.php:35
+#: concrete/core/StyleCustomizer/Style/ColorStyle.php:40
+#: concrete/elements/users/search.php:48 concrete/tools/i18n_js.php:188
+#: concrete/tools/i18n_redactor_js.php:71
+msgid "Choose"
+msgstr "اختر"
+
+#: concrete/tools/i18n_redactor_js.php:72
+msgid "Or choose"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:73
+msgid "Drop file here"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:74
+msgid "Align text to the left"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:75
+msgid "Center text"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:76
+msgid "Align text to the right"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:77
+msgid "Justify text"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:78
+msgid "Insert Horizontal Rule"
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:18
+#: concrete/tools/i18n_redactor_js.php:79
+msgid "Deleted"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:80
+msgid "Anchor"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:81
+msgid "Open link in new tab"
+msgstr ""
+
+#: concrete/tools/i18n_js.php:100 concrete/tools/i18n_redactor_js.php:82
+msgid "Underline"
+msgstr ""
+
+#: concrete/elements/custom_style/fonts.php:48
+#: concrete/tools/i18n_redactor_js.php:83
+msgid "Alignment"
+msgstr "المحاذاة"
+
+#: concrete/tools/i18n_redactor_js.php:84
+msgid "Name (optional)"
+msgstr ""
+
+#: concrete/attributes/select/type_form.php:18
+#: concrete/blocks/form/form_setup_html.php:17
+#: concrete/blocks/page_list/page_list_form.php:7
+#: concrete/controllers/single_page/dashboard/users/points/actions.php:33
+#: concrete/elements/collection_attribute_values.php:17
+#: concrete/elements/conversation/message.php:32
+#: concrete/single_pages/account/profile/public_profile.php:13
+#: concrete/single_pages/dashboard/system/mail/importers.php:90
+#: concrete/single_pages/dashboard/users/points/actions.php:105
+#: concrete/tools/i18n_js.php:39 concrete/tools/i18n_js.php:191
+#: concrete/tools/i18n_redactor_js.php:85
+msgid "Edit"
+msgstr "عدّل"
+
+#: concrete/tools/i18n_redactor_js.php:96
+msgid "Remove font"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:97
+msgid "Change font family"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:98
+msgid "Remove font size"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:99
+msgid "Change font size"
+msgstr ""
 
 #: concrete/tools/versions.php:35 concrete/views/frontend/install.php:69
 #: concrete/views/frontend/install.php:127
@@ -1714,24 +2034,6 @@ msgstr "هذه هي النسخ القديمة لهذه الصفحة. النسخ�
 #: concrete/tools/versions.php:337
 msgid "Someone has already checked out this page for editing."
 msgstr "يقوم أحد ما حالياً بتعديل هذه الصفحة."
-
-#: concrete/blocks/autonav/form_setup_html.php:91
-#: concrete/blocks/dashboard_site_activity/view.php:5
-#: concrete/blocks/form/form_setup_html.php:90
-#: concrete/blocks/image/form.php:44 concrete/blocks/survey/add.php:36
-#: concrete/blocks/survey/edit.php:38
-#: concrete/elements/custom_style/background.php:20
-#: concrete/elements/permission/access/list.php:33
-#: concrete/elements/permission/labels.php:49
-#: concrete/single_pages/account/profile/public_profile.php:55
-#: concrete/single_pages/dashboard/pages/single.php:53
-#: concrete/single_pages/dashboard/system/basics/images.php:15
-#: concrete/single_pages/dashboard/system/mail/importers.php:6
-#: concrete/single_pages/dashboard/system/mail/method.php:6
-#: concrete/single_pages/dashboard/system/permissions/blacklist.php:44
-#: concrete/tools/i18n_js.php:90 concrete/tools/versions.php:347
-msgid "None"
-msgstr "لاشيء"
 
 #: concrete/tools/versions.php:348
 msgid "Old Versions"
@@ -1928,7 +2230,7 @@ msgid "Custom Label"
 msgstr ""
 
 #: concrete/elements/block_custom_template.php:24
-#: concrete/elements/block_header_view.php:171 concrete/tools/i18n_js.php:48
+#: concrete/tools/i18n_js.php:48
 #: concrete/tools/page_types/composer/form/edit_control.php:46
 msgid "Custom Template"
 msgstr "قالب مُخصّص"
@@ -1994,7 +2296,6 @@ msgstr ""
 msgid "Paste from Clipboard"
 msgstr "الصق من الحافظة"
 
-#: concrete/elements/block_header_view.php:167
 #: concrete/elements/page_controls_footer.php:61
 #: concrete/elements/pages/search.php:44 concrete/elements/panels/page.php:36
 #: concrete/tools/i18n_js.php:20 concrete/tools/i18n_js.php:49
@@ -2002,7 +2303,7 @@ msgstr "الصق من الحافظة"
 msgid "Design"
 msgstr "التصميم"
 
-#: concrete/elements/block_header_view.php:142 concrete/tools/i18n_js.php:21
+#: concrete/elements/block_header_view.php:141 concrete/tools/i18n_js.php:21
 msgid "Edit Layout"
 msgstr "عدّل المخطّط"
 
@@ -2072,19 +2373,6 @@ msgstr "مُحتوى"
 msgid "Close"
 msgstr "أغلق"
 
-#: concrete/attributes/select/type_form.php:18
-#: concrete/blocks/form/form_setup_html.php:17
-#: concrete/blocks/page_list/page_list_form.php:7
-#: concrete/controllers/single_page/dashboard/users/points/actions.php:33
-#: concrete/elements/collection_attribute_values.php:17
-#: concrete/elements/conversation/message.php:32
-#: concrete/single_pages/account/profile/public_profile.php:13
-#: concrete/single_pages/dashboard/system/mail/importers.php:90
-#: concrete/single_pages/dashboard/users/points/actions.php:105
-#: concrete/tools/i18n_js.php:39 concrete/tools/i18n_js.php:191
-msgid "Edit"
-msgstr "عدّل"
-
 #: concrete/tools/i18n_js.php:40
 #, php-format
 msgctxt "%s is a block type name"
@@ -2097,7 +2385,7 @@ msgid ""
 "is active."
 msgstr "حُفظ إعداد الصلاحية. يجب أن تتمّ سيْر العمل قبل تفعيل هذا التغيير."
 
-#: concrete/elements/block_header_view.php:133 concrete/tools/i18n_js.php:42
+#: concrete/elements/block_header_view.php:132 concrete/tools/i18n_js.php:42
 msgid "Manage Stack Contents"
 msgstr "إدارة محتويات الكوْمة"
 
@@ -2111,7 +2399,7 @@ msgstr "قارن النُّسخ"
 msgid "Blocks arranged successfully."
 msgstr "رُتّبت البلوكات بنجاح."
 
-#: concrete/elements/block_header_view.php:153 concrete/tools/i18n_js.php:47
+#: concrete/elements/block_header_view.php:152 concrete/tools/i18n_js.php:47
 msgid "Copy to Clipboard"
 msgstr "انسخ إلى الحافظة"
 
@@ -2131,7 +2419,7 @@ msgstr "متأكد أنك تريد إزالة جميع هذه الأنماط ا�
 msgid "Are you sure you want to delete this custom style preset?"
 msgstr "متأكد أنك تريد حذف هذا الإعداد المسبق المخصص للنمط؟"
 
-#: concrete/elements/block_header_view.php:184 concrete/tools/i18n_js.php:55
+#: concrete/elements/block_header_view.php:178 concrete/tools/i18n_js.php:55
 msgid "Setup on Child Pages"
 msgstr "أعدّه على الصفحات التابعة"
 
@@ -2252,7 +2540,7 @@ msgstr "حُفظت إعدادات المستخدمين."
 msgid "Ok"
 msgstr "موافق"
 
-#: concrete/elements/block_header_view.php:181 concrete/tools/i18n_js.php:81
+#: concrete/elements/block_header_view.php:175 concrete/tools/i18n_js.php:81
 msgid "Schedule Guest Access"
 msgstr "جدْولة الإتاحة للزوار"
 
@@ -2300,7 +2588,7 @@ msgstr ""
 
 #: concrete/attributes/textarea/type_form.php:27
 #: concrete/blocks/image/controller.php:30 concrete/blocks/image/form.php:28
-#: concrete/core/File/Type/Type.php:67
+#: concrete/core/File/Type/Type.php:67 concrete/elements/custom_style.php:60
 #: concrete/single_pages/dashboard/users/add_group.php:83
 #: concrete/single_pages/dashboard/users/groups.php:58
 #: concrete/tools/i18n_js.php:95
@@ -2309,18 +2597,6 @@ msgstr "صورة"
 
 #: concrete/tools/i18n_js.php:97
 msgid "Choose Font"
-msgstr ""
-
-#: concrete/tools/i18n_js.php:98
-msgid "Bold"
-msgstr ""
-
-#: concrete/tools/i18n_js.php:99
-msgid "Italic"
-msgstr ""
-
-#: concrete/tools/i18n_js.php:100
-msgid "Underline"
 msgstr ""
 
 #: concrete/tools/i18n_js.php:101
@@ -2341,10 +2617,6 @@ msgstr "ارتفاع الخط"
 
 #: concrete/tools/i18n_js.php:109
 msgid "Insert Link to File"
-msgstr ""
-
-#: concrete/tools/i18n_js.php:110
-msgid "Insert Image"
 msgstr ""
 
 #: concrete/tools/i18n_js.php:111
@@ -2554,12 +2826,6 @@ msgstr "عدّل الصلاحيات"
 #: concrete/tools/i18n_js.php:186
 msgid "View"
 msgstr "عرض"
-
-#: concrete/core/Form/Service/Widget/Color.php:35
-#: concrete/core/StyleCustomizer/Style/ColorStyle.php:40
-#: concrete/elements/users/search.php:48 concrete/tools/i18n_js.php:188
-msgid "Choose"
-msgstr "اختر"
 
 #: concrete/tools/i18n_js.php:189
 msgid "Copy File"
@@ -2982,6 +3248,14 @@ msgid ""
 "location."
 msgstr ""
 
+#: concrete/controllers/dialog/block/aliasing.php:64
+msgid "Defaults updated."
+msgstr ""
+
+#: concrete/controllers/dialog/block/design.php:61
+msgid "Custom design updated."
+msgstr ""
+
 #: concrete/controllers/dialog/user/bulk/properties.php:79
 msgid "Users updated successfully."
 msgstr ""
@@ -3114,10 +3388,6 @@ msgstr "حُفظ الترتيب"
 #: concrete/controllers/single_page/dashboard/conversations/messages.php:17
 msgid "Approved"
 msgstr "مُعتمدة"
-
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:18
-msgid "Deleted"
-msgstr ""
 
 #: concrete/controllers/search/pages.php:226
 #: concrete/controllers/single_page/dashboard/conversations/messages.php:19
@@ -4943,15 +5213,6 @@ msgstr "مردود عليها"
 msgid "Unknown User"
 msgstr "مستخدم مجهول."
 
-#: concrete/config/install/base/dashboard.xml:680
-#: concrete/core/User/Search/ColumnSet/DefaultSet.php:22
-#: concrete/elements/users/confirm_list.php:8
-#: concrete/mail/user_register_approval_required.php:15
-#: concrete/single_pages/account/profile/edit.php:22
-#: concrete/themes/greek_yogurt/blog_entry.php:71
-msgid "Email"
-msgstr "البريد الإلكتروني"
-
 #: concrete/core/Page/Search/ColumnSet/DefaultSet.php:30
 #: concrete/core/User/Search/ColumnSet/DefaultSet.php:23
 #: concrete/elements/pages/search.php:9
@@ -5070,10 +5331,6 @@ msgstr "واجهنا مشكلة في محاولة تحديد صلاحيات ال
 msgid "Video"
 msgstr "فيديو"
 
-#: concrete/core/File/Type/Type.php:73
-msgid "Text"
-msgstr "نص"
-
 #: concrete/core/File/Type/Type.php:76
 msgid "Audio"
 msgstr "صوت"
@@ -5135,17 +5392,6 @@ msgstr "حدث خطأ غير معروف أثناء تحميل الملف. يرج
 #: concrete/views/dialogs/file/properties.php:66
 msgid "Type"
 msgstr "النوع"
-
-#: concrete/blocks/feature/form.php:10
-#: concrete/blocks/search/form_setup_html.php:30
-#: concrete/blocks/tags/tag_form.php:10
-#: concrete/blocks/youtube/form_setup_html.php:20
-#: concrete/core/File/Search/ColumnSet/DefaultSet.php:21
-#: concrete/core/File/Version.php:482
-#: concrete/views/dialogs/file/properties.php:86
-#: concrete/views/dialogs/file/properties.php:170
-msgid "Title"
-msgstr "لقب"
 
 #: concrete/core/File/Search/ColumnSet/DefaultSet.php:22
 msgid "Added"
@@ -5417,7 +5663,7 @@ msgid "Twitter Bootstrap"
 msgstr ""
 
 #: concrete/core/Page/Theme/Theme.php:616
-#: concrete/single_pages/dashboard/pages/types/form.php:47
+#: concrete/single_pages/dashboard/pages/types/form.php:44
 msgid "(No Name)"
 msgstr "(غير مسمّى)"
 
@@ -5877,7 +6123,7 @@ msgstr ""
 msgid "Select Page"
 msgstr "اختر الصفحة"
 
-#: concrete/core/Form/Service/Widget/Color.php:36
+#: concrete/core/Form/Service/Widget/Color.php:37
 #: concrete/core/StyleCustomizer/Style/ColorStyle.php:41
 msgid "Clear Color Selection"
 msgstr ""
@@ -7600,35 +7846,13 @@ msgid "My Account"
 msgstr ""
 
 #: concrete/config/install/packages/elemental_blank/content.xml:41
-#: concrete/config/install/packages/elemental_full/content.xml:140
+#: concrete/config/install/packages/elemental_full/content.xml:142
 #: concrete/elements/account/menu.php:60
 #: concrete/single_pages/account/profile/public_profile.php:14
 #: concrete/single_pages/dashboard/system/view.php:41
 #: concrete/single_pages/dashboard/view.php:42
 msgid "Home"
 msgstr "الرئيسية"
-
-#: concrete/elements/block_master_collection_alias.php:17
-msgid ""
-"There are no pages of this type added to your website. If there were, you'd "
-"be able to choose which of those pages this block appears on."
-msgstr "لا يوجد صفحات من هذا النوع مضافة لموقعك. إن وُجدت، فستستطيع أن تختار أي من هذه الصفحات يظهر عليها هذا البلوك."
-
-#: concrete/elements/block_master_collection_alias.php:21
-msgid ""
-"Choose which pages below this particular block should appear on. Any "
-"previously selected blocks may also be removed using the checkbox. Click the"
-" checkbox in the header to select/deselect all pages."
-msgstr "اختر من الصفحات أدناه التي تريد أن يظهر بها هذا البلوك. ويمكنك أيضاً إزالة أي من البلوكات المُحدّدة مسبقاً. اضغط على مربع الاختيار الموجود في الأعلى لإزالة/اختيار جميع الصفحات."
-
-#: concrete/elements/block_master_collection_alias.php:28
-#: concrete/single_pages/dashboard/users/search.php:78
-msgid "Date Created"
-msgstr "تاريخ الإنشاء"
-
-#: concrete/elements/block_master_collection_alias.php:29
-msgid "Date Modified"
-msgstr "تاريخ التعديل"
 
 #: concrete/elements/block_custom_template.php:19
 msgid "There are no custom templates available."
@@ -7686,14 +7910,6 @@ msgstr "الصفحات المحذوفة تنقل إلى المهملات في خ
 #: concrete/views/dialogs/page/delete.php:33
 msgid "This cannot be undone."
 msgstr "لا يمكن التراجع عن هذا الأمر."
-
-#: concrete/blocks/image/form.php:56
-#: concrete/elements/collection_add_external.php:20
-#: concrete/elements/collection_edit_external.php:20
-#: concrete/elements/workflow/progress/categories/page/pending.php:12
-#: concrete/single_pages/dashboard/system/basics/social.php:68
-msgid "URL"
-msgstr "عنوان URL"
 
 #: concrete/elements/collection_add_external.php:26
 #: concrete/elements/collection_edit_external.php:26
@@ -7796,7 +8012,6 @@ msgid "No timed permission assignments"
 msgstr "لم تُحدّد أي صلاحيات مؤقتة"
 
 #: concrete/elements/block_area_footer.php:56
-#: concrete/elements/block_header_view.php:167
 msgid "Custom Style"
 msgstr ""
 
@@ -7932,72 +8147,50 @@ msgstr "(لا ينطبق)"
 msgid "Allow users to add to this list."
 msgstr "اسمح للمستخدمين الإضافة إلى هذه القائمة."
 
-#: concrete/elements/custom_style.php:6
-msgid "Custom design options have been disabled."
-msgstr "خيارات التصميم المخصص مُعطّلة."
+#: concrete/elements/custom_style.php:21
+#: concrete/elements/custom_style/background.php:21
+msgid "Horizontal"
+msgstr "أفقي"
+
+#: concrete/elements/custom_style.php:22
+#: concrete/elements/custom_style/background.php:22
+msgid "Vertical"
+msgstr "عمودي"
+
+#: concrete/elements/custom_style.php:23 concrete/elements/custom_style.php:64
+msgid "Tile"
+msgstr ""
 
 #: concrete/elements/custom_style.php:35
-msgid "** Custom (No Preset)"
-msgstr "** مخصص (ليس معد مسبقاً)"
+msgid "Text Color"
+msgstr ""
 
-#: concrete/elements/custom_style.php:56
-msgid "Saved Presets"
-msgstr "الإعدادات المسبقة"
+#: concrete/elements/custom_style.php:40
+msgid "Link Color"
+msgstr ""
 
-#: concrete/elements/custom_style.php:68
-#: concrete/elements/custom_style/fonts.php:4
-msgid "Fonts"
-msgstr "الخطوط"
+#: concrete/elements/custom_style.php:44
+msgid "Base Font Size"
+msgstr ""
 
-#: concrete/elements/custom_style.php:69
+#: concrete/elements/custom_style.php:53
 #: concrete/elements/custom_style/background.php:4
+#: concrete/elements/custom_styleBAK.php:69
 msgid "Background"
 msgstr "الخلفية"
 
-#: concrete/elements/custom_style.php:70
-#: concrete/elements/custom_style/border.php:4
-msgid "Border"
-msgstr "الإطار"
+#: concrete/elements/custom_style.php:55
+#: concrete/elements/custom_style/border.php:48
+#: concrete/elements/custom_style/fonts.php:39
+msgid "Color"
+msgstr "اللون"
 
-#: concrete/elements/custom_style.php:71
-msgid "Spacing"
-msgstr "التباعد"
-
-#: concrete/elements/custom_style.php:72
-msgid "CSS"
-msgstr "CSS"
-
-#: concrete/elements/custom_style.php:95
-msgid "You are changing a preset"
-msgstr "تقوم حالياً بتغيير إعداد مُسبق"
-
-#: concrete/elements/custom_style.php:96
-#, php-format
-msgid "Update \"%s\" preset everywhere it is used"
-msgstr "حدّث الإعداد المسبق \"%s\" حيثما كان مستخدماً"
-
-#: concrete/elements/custom_style.php:97
-#, php-format
-msgid "Use this style here, and leave \"%s\" unchanged"
-msgstr "استخدم هذا النمط هنا، واترك \"%s\" دون تغيير"
-
-#: concrete/elements/custom_style.php:98
-msgid "Save this style as a new preset"
-msgstr "احفظ هذا النمط كإعداد مسبق جديد"
-
-#: concrete/elements/custom_style.php:106
-msgid "Save this style as a new preset."
-msgstr "احفظ هذا النمط كإعداد مسبق جديد."
-
-#: concrete/elements/custom_style.php:120
-msgid "Reset Styles"
-msgstr "استرجع الأنماط الأصلية"
-
-#: concrete/elements/custom_style.php:128
-msgid ""
-"Note: Styles set here are often overridden by those defined within the "
-"various block types."
-msgstr "ملاحظة: الأنماط المُعيّنة هنا غالباً ما تتجاوزها تلك التي في أنواع البلوكات المختلفة."
+#: concrete/blocks/image/composer.php:18
+#: concrete/blocks/image/composer/thumbnail.php:31
+#: concrete/blocks/image/form.php:29 concrete/elements/custom_style.php:61
+#: concrete/single_pages/dashboard/system/basics/images.php:19
+msgid "Choose Image"
+msgstr "اختر الصورة"
 
 #: concrete/elements/workflow/edit_type_form_required.php:14
 msgid "Workflow Basics"
@@ -8574,6 +8767,13 @@ msgstr ""
 msgid "Delete this control? This cannot be undone."
 msgstr ""
 
+#: concrete/elements/page_types/composer/form/layout_set/control.php:19
+#: concrete/single_pages/dashboard/pages/types/form.php:70
+#: concrete/single_pages/dashboard/system/attributes/sets.php:43
+#: concrete/single_pages/dashboard/users/group_sets.php:31
+msgid "Update Set"
+msgstr "حدّث المجموعة"
+
 #: concrete/elements/page_types/composer/form/output/buttons.php:7
 msgid "Publish"
 msgstr ""
@@ -8666,13 +8866,10 @@ msgstr "صورة الخلفية"
 msgid "Repeat"
 msgstr "تكرار"
 
-#: concrete/elements/custom_style/background.php:21
-msgid "Horizontal"
-msgstr "أفقي"
-
-#: concrete/elements/custom_style/background.php:22
-msgid "Vertical"
-msgstr "عمودي"
+#: concrete/elements/custom_style/fonts.php:4
+#: concrete/elements/custom_styleBAK.php:68
+msgid "Fonts"
+msgstr "الخطوط"
 
 #: concrete/elements/custom_style/fonts.php:8
 msgid "Face"
@@ -8681,33 +8878,6 @@ msgstr "نوع الخط"
 #: concrete/elements/custom_style/fonts.php:12
 msgid "Inherit"
 msgstr "مُكتسب"
-
-#: concrete/elements/custom_style/border.php:48
-#: concrete/elements/custom_style/fonts.php:39
-msgid "Color"
-msgstr "اللون"
-
-#: concrete/elements/custom_style/fonts.php:48
-msgid "Alignment"
-msgstr "المحاذاة"
-
-#: concrete/elements/custom_style/border.php:42
-#: concrete/elements/custom_style/fonts.php:53
-#: concrete/elements/custom_style/spacing.php:33
-#: concrete/elements/custom_style/spacing.php:70
-msgid "Left"
-msgstr "يسار"
-
-#: concrete/elements/custom_style/fonts.php:54
-msgid "Center"
-msgstr "وسط"
-
-#: concrete/elements/custom_style/border.php:40
-#: concrete/elements/custom_style/fonts.php:55
-#: concrete/elements/custom_style/spacing.php:17
-#: concrete/elements/custom_style/spacing.php:54
-msgid "Right"
-msgstr "يمين"
 
 #: concrete/elements/custom_style/fonts.php:56
 msgid "Justify"
@@ -8736,6 +8906,11 @@ msgstr "أسفل"
 #: concrete/elements/custom_style/spacing.php:42
 msgid "Padding"
 msgstr "التباعد"
+
+#: concrete/elements/custom_style/border.php:4
+#: concrete/elements/custom_styleBAK.php:70
+msgid "Border"
+msgstr "الإطار"
 
 #: concrete/elements/custom_style/border.php:8
 msgid "Style"
@@ -8828,19 +9003,75 @@ msgid ""
 "it, you will delete all blocks aliased to it"
 msgstr "متأكد أنك تريد حذف هذا البلوك؟ لأن هذا البلوك هو الأساسي، فإن حذفته فستُحذف جميع البلوكات الموصولة به."
 
-#: concrete/elements/block_header_view.php:144
-#: concrete/elements/block_header_view.php:147
+#: concrete/elements/block_header_view.php:143
+#: concrete/elements/block_header_view.php:146
 msgid "Edit Block"
 msgstr "تعديل بلوك"
 
-#: concrete/elements/block_header_view.php:147
+#: concrete/elements/block_header_view.php:146
 #, php-format
 msgid "Edit %s"
 msgstr "عدّل %s"
 
-#: concrete/elements/block_header_view.php:178
+#: concrete/elements/block_header_view.php:165
+msgid "Design &amp; Custom Template"
+msgstr ""
+
+#: concrete/elements/block_header_view.php:172
 msgid "Block Permissions"
 msgstr ""
+
+#: concrete/elements/custom_styleBAK.php:6
+msgid "Custom design options have been disabled."
+msgstr "خيارات التصميم المخصص مُعطّلة."
+
+#: concrete/elements/custom_styleBAK.php:35
+msgid "** Custom (No Preset)"
+msgstr "** مخصص (ليس معد مسبقاً)"
+
+#: concrete/elements/custom_styleBAK.php:56
+msgid "Saved Presets"
+msgstr "الإعدادات المسبقة"
+
+#: concrete/elements/custom_styleBAK.php:71
+msgid "Spacing"
+msgstr "التباعد"
+
+#: concrete/elements/custom_styleBAK.php:72
+msgid "CSS"
+msgstr "CSS"
+
+#: concrete/elements/custom_styleBAK.php:95
+msgid "You are changing a preset"
+msgstr "تقوم حالياً بتغيير إعداد مُسبق"
+
+#: concrete/elements/custom_styleBAK.php:96
+#, php-format
+msgid "Update \"%s\" preset everywhere it is used"
+msgstr "حدّث الإعداد المسبق \"%s\" حيثما كان مستخدماً"
+
+#: concrete/elements/custom_styleBAK.php:97
+#, php-format
+msgid "Use this style here, and leave \"%s\" unchanged"
+msgstr "استخدم هذا النمط هنا، واترك \"%s\" دون تغيير"
+
+#: concrete/elements/custom_styleBAK.php:98
+msgid "Save this style as a new preset"
+msgstr "احفظ هذا النمط كإعداد مسبق جديد"
+
+#: concrete/elements/custom_styleBAK.php:106
+msgid "Save this style as a new preset."
+msgstr "احفظ هذا النمط كإعداد مسبق جديد."
+
+#: concrete/elements/custom_styleBAK.php:120
+msgid "Reset Styles"
+msgstr "استرجع الأنماط الأصلية"
+
+#: concrete/elements/custom_styleBAK.php:128
+msgid ""
+"Note: Styles set here are often overridden by those defined within the "
+"various block types."
+msgstr "ملاحظة: الأنماط المُعيّنة هنا غالباً ما تتجاوزها تلك التي في أنواع البلوكات المختلفة."
 
 #: concrete/elements/conversation/social_share.php:9
 msgid "Share"
@@ -8852,12 +9083,6 @@ msgstr ""
 
 #: concrete/elements/conversation/social_share.php:12
 msgid "Facebook"
-msgstr ""
-
-#: concrete/blocks/file/add.php:10 concrete/blocks/file/edit.php:14
-#: concrete/elements/conversation/display.php:82
-#: concrete/elements/conversation/social_share.php:13
-msgid "Link"
 msgstr ""
 
 #: concrete/elements/conversation/message.php:30
@@ -9033,6 +9258,52 @@ msgstr "قص الصورة"
 #: concrete/views/image-editor/control-sets/position.php:97
 msgid "Finalize Crop"
 msgstr ""
+
+#: concrete/views/dialogs/block/aliasing.php:9
+msgid ""
+"There are no pages of this type added to your website. If there were, you'd "
+"be able to choose which of those pages this block appears on."
+msgstr "لا يوجد صفحات من هذا النوع مضافة لموقعك. إن وُجدت، فستستطيع أن تختار أي من هذه الصفحات يظهر عليها هذا البلوك."
+
+#: concrete/views/dialogs/block/aliasing.php:13
+msgid ""
+"Choose which pages below this particular block should appear on. Any "
+"previously selected blocks may also be removed using the checkbox. Click the"
+" checkbox in the header to select/deselect all pages."
+msgstr "اختر من الصفحات أدناه التي تريد أن يظهر بها هذا البلوك. ويمكنك أيضاً إزالة أي من البلوكات المُحدّدة مسبقاً. اضغط على مربع الاختيار الموجود في الأعلى لإزالة/اختيار جميع الصفحات."
+
+#: concrete/single_pages/dashboard/users/search.php:78
+#: concrete/views/dialogs/block/aliasing.php:20
+msgid "Date Created"
+msgstr "تاريخ الإنشاء"
+
+#: concrete/views/dialogs/block/aliasing.php:21
+msgid "Date Modified"
+msgstr "تاريخ التعديل"
+
+#: concrete/views/dialogs/block/edit.php:6
+msgid ""
+"Unable to retrieve block object. If this block has been moved please reload "
+"the page."
+msgstr "تعذر عرض البلوك. إن كان البلوك نُقل فرجاءً أعد تحميل الصفحة."
+
+#: concrete/views/dialogs/block/edit.php:14
+msgid ""
+"This block is contained within a global area. Changing its content will "
+"change it everywhere that global area is referenced."
+msgstr "هذا البلوك موضوع في مساحة عامة. تغيير محتواه سيَنْعكس على جميع المساحات التي يظهر بها."
+
+#: concrete/views/dialogs/block/edit.php:20
+msgid ""
+"This is a global block.  Editing it here will change all instances of this "
+"block throughout the site."
+msgstr "هذا البلوك عام.  بتعديله هنا سيتم تعديل جميع نسخه في أرجاء الموقع."
+
+#: concrete/views/dialogs/block/edit.php:29
+msgid ""
+"This block is an alias of Page Defaults. Editing it here will \"disconnect\""
+" it so changes to Page Defaults will no longer affect this block."
+msgstr "هذا البلوك موصول بافتراضيات الصفحة. تعديله هنا \"سيَفْصل\" صلة البلوك ولن يتأثر بتعديلات افتراضيات الصفحة."
 
 #: concrete/single_pages/dashboard/users/search.php:136
 #: concrete/views/dialogs/file/bulk/properties.php:9
@@ -9924,10 +10195,6 @@ msgstr "صورة ويندوز نقطية"
 msgid "TIFF"
 msgstr "TIFF"
 
-#: concrete/blocks/html/controller.php:23 concrete/config/file_types.php:22
-msgid "HTML"
-msgstr "HTML"
-
 #: concrete/config/file_types.php:23
 msgid "Flash"
 msgstr "فلاش"
@@ -10341,7 +10608,7 @@ msgid "Frequently Asked Questions Block"
 msgstr ""
 
 #: concrete/blocks/faq/controller.php:26
-#: concrete/config/install/packages/elemental_full/content.xml:613
+#: concrete/config/install/packages/elemental_full/content.xml:615
 msgid "Frequently Asked Questions"
 msgstr ""
 
@@ -10624,13 +10891,6 @@ msgstr ""
 #: concrete/single_pages/profile/messages.php:146
 msgid "Message"
 msgstr "الرسالة"
-
-#: concrete/blocks/image/composer.php:18
-#: concrete/blocks/image/composer/thumbnail.php:31
-#: concrete/blocks/image/form.php:29
-#: concrete/single_pages/dashboard/system/basics/images.php:19
-msgid "Choose Image"
-msgstr "اختر الصورة"
 
 #: concrete/blocks/image/composer/thumbnail.php:33
 msgid "Target Width"
@@ -12343,6 +12603,7 @@ msgid "Are you sure you want to permanently remove this file set?"
 msgstr "متأكد أنك تريد إزالة مجموعة الملفات هذه نهائياً؟"
 
 #: concrete/single_pages/dashboard/files/sets.php:21
+#: concrete/single_pages/dashboard/pages/types/form.php:53
 #: concrete/single_pages/dashboard/system/attributes/sets.php:49
 #: concrete/single_pages/dashboard/system/attributes/sets.php:56
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:276
@@ -13058,11 +13319,6 @@ msgstr "أزل المستخدم من المجموعة وعطّل حسابه"
 msgid "Edit Set"
 msgstr "عدّل المجموعة"
 
-#: concrete/single_pages/dashboard/system/attributes/sets.php:43
-#: concrete/single_pages/dashboard/users/group_sets.php:31
-msgid "Update Set"
-msgstr "حدّث المجموعة"
-
 #: concrete/single_pages/dashboard/system/attributes/sets.php:50
 #: concrete/single_pages/dashboard/users/group_sets.php:42
 msgid ""
@@ -13098,8 +13354,8 @@ msgstr "مجموعات المجموعات"
 msgid "You have not added any group sets."
 msgstr "لم تُضف أي مجموعة مجموعات."
 
-#: concrete/single_pages/dashboard/pages/types/form.php:23
-#: concrete/single_pages/dashboard/pages/types/form.php:30
+#: concrete/single_pages/dashboard/pages/types/form.php:22
+#: concrete/single_pages/dashboard/pages/types/form.php:28
 #: concrete/single_pages/dashboard/system/attributes/sets.php:139
 #: concrete/single_pages/dashboard/system/attributes/sets.php:155
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:407
@@ -13336,38 +13592,29 @@ msgstr "بيانات التسجيل"
 msgid "Track page view statistics."
 msgstr "تتبّع إحصائيات زيارة الصفحات."
 
-#: concrete/config/install/base/dashboard.xml:558
-#: concrete/single_pages/dashboard/system/seo/searchindex.php:4
-msgid "Search Index"
-msgstr "فهرس البحث"
-
-#: concrete/single_pages/dashboard/system/seo/searchindex.php:4
-msgid "Choose which areas on your site are indexed."
-msgstr "اختر مساحات الموقع التي ستتم فهرستها."
-
-#: concrete/single_pages/dashboard/system/seo/searchindex.php:9
+#: concrete/single_pages/dashboard/system/seo/searchindex.php:7
 msgid "Indexing Method"
 msgstr "طريقة الفهرسة"
 
-#: concrete/single_pages/dashboard/system/seo/searchindex.php:12
+#: concrete/single_pages/dashboard/system/seo/searchindex.php:10
 msgid "Whitelist: Selected areas are only areas indexed."
 msgstr "إضافة للفهرس: المساحات المحددة فقط هي التي سيتم فهرستها."
 
-#: concrete/single_pages/dashboard/system/seo/searchindex.php:13
+#: concrete/single_pages/dashboard/system/seo/searchindex.php:11
 msgid "Blacklist: Every area but the selected areas are indexed."
 msgstr "حجب عن الفهرس: جميع المساحات عدا المحددة ستتم فهرستها."
 
-#: concrete/single_pages/dashboard/system/seo/searchindex.php:20
+#: concrete/single_pages/dashboard/system/seo/searchindex.php:18
 msgid "Areas"
 msgstr "المساحات"
 
-#: concrete/single_pages/dashboard/system/seo/searchindex.php:31
+#: concrete/single_pages/dashboard/system/seo/searchindex.php:32
 msgid ""
 "Once the index is clear, you must reindex your site from the Automated Jobs "
 "page."
 msgstr "بعد تنظيف الفهرس، يجب أن تعيد فهرسة موقعك من خلال صفحة الوظائف الآلية."
 
-#: concrete/single_pages/dashboard/system/seo/searchindex.php:31
+#: concrete/single_pages/dashboard/system/seo/searchindex.php:32
 msgid "Clear Search Index"
 msgstr "نظّف فهرس البحث"
 
@@ -14766,38 +15013,38 @@ msgstr "(مُعرف المستخدم: %s)"
 msgid "Edit Defaults"
 msgstr ""
 
-#: concrete/single_pages/dashboard/pages/types/form.php:15
-#: concrete/single_pages/dashboard/pages/types/form.php:61
+#: concrete/single_pages/dashboard/pages/types/form.php:14
+#: concrete/single_pages/dashboard/pages/types/form.php:63
 msgctxt "Name of a set"
 msgid "Set Name"
 msgstr ""
 
-#: concrete/single_pages/dashboard/pages/types/form.php:42
+#: concrete/single_pages/dashboard/pages/types/form.php:39
 msgid "Add Form Control"
 msgstr ""
 
-#: concrete/single_pages/dashboard/pages/types/form.php:51
+#: concrete/single_pages/dashboard/pages/types/form.php:48
 msgid "Delete this form layout set? This cannot be undone."
 msgstr ""
 
-#: concrete/single_pages/dashboard/pages/types/form.php:82
+#: concrete/single_pages/dashboard/pages/types/form.php:88
 msgid "You have not added any composer form layout control sets."
 msgstr ""
 
-#: concrete/single_pages/dashboard/pages/types/form.php:95
+#: concrete/single_pages/dashboard/pages/types/form.php:128
 msgid "Add Control Set"
 msgstr ""
 
-#: concrete/single_pages/dashboard/pages/types/form.php:105
-msgid "Delete Set "
+#: concrete/single_pages/dashboard/pages/types/form.php:138
+msgid "Delete Control Set"
 msgstr ""
 
-#: concrete/single_pages/dashboard/pages/types/form.php:131
-msgid "Update Set "
+#: concrete/single_pages/dashboard/pages/types/form.php:148
+msgid "Update Control Set"
 msgstr ""
 
-#: concrete/single_pages/dashboard/pages/types/form.php:214
-msgid "Delete Control "
+#: concrete/single_pages/dashboard/pages/types/form.php:215
+msgid "Delete Control"
 msgstr ""
 
 #: concrete/single_pages/dashboard/pages/types/permissions.php:19
@@ -15720,6 +15967,10 @@ msgstr "سهل, سهلة, اختصار, رابط, pretty, slug"
 msgid "turn off statistics, tracking, statistics, pageviews, hits"
 msgstr "تعطيل الإحصائيات, تتبع, إحصائيات, مشاهدات, زيارات, turn off statistics, tracking, statistics, pageviews, hits"
 
+#: concrete/config/install/base/dashboard.xml:558
+msgid "Search Index"
+msgstr "فهرس البحث"
+
 #. Keywords for page /dashboard/system/seo/searchindex
 #: concrete/config/install/base/dashboard.xml:561
 msgid "configure search, site search, search option"
@@ -16152,13 +16403,13 @@ msgstr ""
 
 #: concrete/config/install/base/login_registration.xml:20
 #: concrete/config/install/packages/elemental_blank/content.xml:29
-#: concrete/config/install/packages/elemental_full/content.xml:141
-#: concrete/config/install/packages/elemental_full/content.xml:164
-#: concrete/config/install/packages/elemental_full/content.xml:179
-#: concrete/config/install/packages/elemental_full/content.xml:312
-#: concrete/config/install/packages/elemental_full/content.xml:323
-#: concrete/config/install/packages/elemental_full/content.xml:482
-#: concrete/config/install/packages/elemental_full/content.xml:614
+#: concrete/config/install/packages/elemental_full/content.xml:143
+#: concrete/config/install/packages/elemental_full/content.xml:166
+#: concrete/config/install/packages/elemental_full/content.xml:181
+#: concrete/config/install/packages/elemental_full/content.xml:314
+#: concrete/config/install/packages/elemental_full/content.xml:325
+#: concrete/config/install/packages/elemental_full/content.xml:484
+#: concrete/config/install/packages/elemental_full/content.xml:616
 msgctxt "AreaName"
 msgid "Main"
 msgstr "الرئيسية"
@@ -17310,96 +17561,88 @@ msgstr "شريط جانبي أيمن"
 msgid "Empty Page"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:17
-msgctxt "PageTypeFormLayoutSetName"
+#: concrete/config/install/packages/elemental_blank/content.xml:15
+#: concrete/config/install/packages/elemental_full/content.xml:18
+msgctxt "PageTypeComposerFormLayoutSetName"
 msgid "Basics"
 msgstr "الأساسيات"
 
-#: concrete/config/install/packages/elemental_full/content.xml:18
-msgctxt "PageTypeFormLayoutSetControlCustomLabel"
+#: concrete/config/install/packages/elemental_blank/content.xml:16
+#: concrete/config/install/packages/elemental_full/content.xml:19
+msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Page Name"
 msgstr "اسم الصفحة"
 
-#: concrete/config/install/packages/elemental_full/content.xml:41
+#: concrete/config/install/packages/elemental_full/content.xml:43
 msgid "Footer Contact"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:42
-#: concrete/config/install/packages/elemental_full/content.xml:53
-#: concrete/config/install/packages/elemental_full/content.xml:64
-#: concrete/config/install/packages/elemental_full/content.xml:75
-#: concrete/config/install/packages/elemental_full/content.xml:86
-#: concrete/config/install/packages/elemental_full/content.xml:95
-#: concrete/config/install/packages/elemental_full/content.xml:113
-#: concrete/config/install/packages/elemental_full/content.xml:128
+#: concrete/config/install/packages/elemental_full/content.xml:44
+#: concrete/config/install/packages/elemental_full/content.xml:55
+#: concrete/config/install/packages/elemental_full/content.xml:66
+#: concrete/config/install/packages/elemental_full/content.xml:77
+#: concrete/config/install/packages/elemental_full/content.xml:88
+#: concrete/config/install/packages/elemental_full/content.xml:97
+#: concrete/config/install/packages/elemental_full/content.xml:115
+#: concrete/config/install/packages/elemental_full/content.xml:130
 msgid "Main"
 msgstr "الرئيسية"
 
-#: concrete/config/install/packages/elemental_full/content.xml:52
+#: concrete/config/install/packages/elemental_full/content.xml:54
 msgid "Footer Legal"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:63
+#: concrete/config/install/packages/elemental_full/content.xml:65
 msgid "Footer Navigation"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:74
+#: concrete/config/install/packages/elemental_full/content.xml:76
 msgid "Footer Site Title"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:85
+#: concrete/config/install/packages/elemental_full/content.xml:87
 msgid "Footer Social"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:94
+#: concrete/config/install/packages/elemental_full/content.xml:96
 msgid "Header Navigation"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:112
+#: concrete/config/install/packages/elemental_full/content.xml:114
 msgid "Header Search"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:127
+#: concrete/config/install/packages/elemental_full/content.xml:129
 msgid "Header Site Title"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:178
+#: concrete/config/install/packages/elemental_full/content.xml:180
 msgid "About"
 msgstr "نبذة"
 
-#: concrete/config/install/packages/elemental_full/content.xml:306
+#: concrete/config/install/packages/elemental_full/content.xml:308
 msgid "Blank Page"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:322
+#: concrete/config/install/packages/elemental_full/content.xml:324
 msgid "Contact Us"
 msgstr "اتصل بنا"
 
-#: concrete/config/install/packages/elemental_full/content.xml:481
+#: concrete/config/install/packages/elemental_full/content.xml:483
 msgid "Careers"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:633
-msgid "What are page page versions?"
+#: concrete/config/install/packages/elemental_full/content.xml:635
+msgid "What are page versions?"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:640
+#: concrete/config/install/packages/elemental_full/content.xml:642
 msgid "How do I add more people as editors in my website?"
 msgstr ""
 
 #: concrete/config/install/packages/elemental_blank/content.xml:10
 msgid "Page"
 msgstr "صفحة"
-
-#: concrete/config/install/packages/elemental_blank/content.xml:15
-msgctxt "PageTypeComposerFormLayoutSetName"
-msgid "Basics"
-msgstr "الأساسيات"
-
-#: concrete/config/install/packages/elemental_blank/content.xml:16
-msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
-msgid "Page Name"
-msgstr "اسم الصفحة"
 
 #: concrete/config/install/packages/elemental_blank/content.xml:22
 msgctxt "PageTypeComposerFormLayoutSetName"

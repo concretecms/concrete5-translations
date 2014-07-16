@@ -6,9 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-07-14 05:35+0000\n"
-"PO-Revision-Date: 2014-07-14 09:20+0000\n"
-"Last-Translator: Vasilis Fotopoulos <basalba@gmail.com>\n"
+"POT-Creation-Date: 2014-07-15 16:01+0000\n"
+"PO-Revision-Date: 2014-07-15 16:22+0000\n"
+"Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Greek (Greece) (http://www.transifex.com/projects/p/concrete5/language/el_GR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,19 +18,19 @@ msgstr ""
 "X-Poedit-Basepath: ../..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: concrete/bootstrap/process.php:327
+#: concrete/bootstrap/process.php:329
 msgid "The stack contains invalid block types."
 msgstr "Η Στοίβα περιέχει μη έγκυρους Τύπους Μπλοκ."
 
-#: concrete/bootstrap/process.php:331
+#: concrete/bootstrap/process.php:333
 msgid "Invalid stack."
 msgstr "Μη έγκυρη Στοίβα."
 
-#: concrete/bootstrap/process.php:470
+#: concrete/bootstrap/process.php:472
 msgid "Access to block denied"
 msgstr "Η Πρόσβασης στο Μπλοκ δεν είναι δυνατή"
 
-#: concrete/bootstrap/process.php:673
+#: concrete/bootstrap/process.php:669
 msgid "Invalid block."
 msgstr "Μη έγκυρο Μπλοκ."
 
@@ -315,6 +315,7 @@ msgid "This facebook account is not tied to a user."
 msgstr "Αυτός ο λογαριασμός facebook δεν είναι συνδεδεμένος με έναν χρήστη."
 
 #: concrete/controllers/backend/user_interface.php:28
+#: concrete/controllers/backend/user_interface/block.php:42
 #: concrete/controllers/backend/user_interface/file.php:37
 #: concrete/controllers/backend/user_interface/page.php:33
 #: concrete/controllers/dialog/file/properties.php:51
@@ -415,12 +416,12 @@ msgstr "Φθίνουσα"
 #: concrete/elements/attribute/type_form_required.php:130
 #: concrete/elements/block_custom_template.php:48
 #: concrete/elements/block_footer_edit.php:18
-#: concrete/elements/block_master_collection_alias.php:52
 #: concrete/elements/collection_attribute_values.php:25
 #: concrete/elements/collection_permissions_simple.php:81
 #: concrete/elements/collection_speed_settings.php:170
 #: concrete/elements/collection_theme.php:135
-#: concrete/elements/custom_style.php:118
+#: concrete/elements/custom_style.php:78
+#: concrete/elements/custom_styleBAK.php:118
 #: concrete/elements/page_types/composer/form/output/buttons.php:13
 #: concrete/elements/permission/detail.php:94
 #: concrete/elements/permission/details/block/timed_guest_access.php:39
@@ -470,13 +471,14 @@ msgstr "Φθίνουσα"
 #: concrete/single_pages/dashboard/system/seo/bulk.php:228
 #: concrete/single_pages/dashboard/system/seo/codes.php:22
 #: concrete/single_pages/dashboard/system/seo/excluded.php:13
-#: concrete/single_pages/dashboard/system/seo/searchindex.php:34
+#: concrete/single_pages/dashboard/system/seo/searchindex.php:35
 #: concrete/single_pages/dashboard/system/seo/statistics.php:15
 #: concrete/single_pages/dashboard/system/seo/urls.php:29
 #: concrete/single_pages/dashboard/workflow/workflows.php:17
 #: concrete/tools/area/layout_presets.php:111
 #: concrete/tools/files/customize_search_columns.php:108
-#: concrete/tools/i18n_js.php:93
+#: concrete/tools/i18n_js.php:93 concrete/tools/i18n_redactor_js.php:43
+#: concrete/tools/i18n_redactor_js.php:101
 #: concrete/tools/page_types/composer/form/edit_control.php:65
 #: concrete/tools/pages/customize_search_columns.php:108
 #: concrete/tools/pages/permissions.php:151
@@ -486,6 +488,7 @@ msgstr "Φθίνουσα"
 #: concrete/tools/users/bulk_group_add.php:96
 #: concrete/tools/users/bulk_group_remove.php:95
 #: concrete/tools/users/customize_search_columns.php:112
+#: concrete/views/dialogs/block/aliasing.php:44
 #: concrete/views/dialogs/page/design.php:31
 #: concrete/views/dialogs/page/design/css.php:12
 #: concrete/views/dialogs/search/customize.php:75
@@ -507,7 +510,6 @@ msgstr "Αποθήκευση"
 #: concrete/tools/dashboard/sitemap_delete_forever.php:5
 #: concrete/tools/dashboard/sitemap_empty_trash.php:6
 #: concrete/tools/edit_area_popup.php:27 concrete/tools/edit_area_popup.php:82
-#: concrete/tools/edit_block_popup.php:31
 #: concrete/tools/edit_collection_popup.php:82
 #: concrete/tools/files/edit.php:12 concrete/tools/files/permissions.php:12
 #: concrete/tools/files/replace.php:12
@@ -556,7 +558,7 @@ msgstr "Προσθήκη από τον υπολογιστή"
 #: concrete/single_pages/dashboard/system/basics/icons.php:54
 #: concrete/single_pages/dashboard/system/basics/icons.php:117
 #: concrete/single_pages/dashboard/system/basics/icons.php:179
-#: concrete/tools/files/replace.php:26
+#: concrete/tools/files/replace.php:26 concrete/tools/i18n_redactor_js.php:69
 msgid "Upload"
 msgstr "Ανέβασμα"
 
@@ -625,7 +627,6 @@ msgstr "Αφαιρέστε τα αρχεία από τον Κατάλογο  inc
 #: concrete/core/Workflow/Progress/Action/CancelAction.php:7
 #: concrete/elements/block_custom_template.php:47
 #: concrete/elements/block_footer_edit.php:19
-#: concrete/elements/block_master_collection_alias.php:51
 #: concrete/elements/collection_add.php:85
 #: concrete/elements/collection_add_external.php:35
 #: concrete/elements/collection_attribute_values.php:24
@@ -639,7 +640,9 @@ msgstr "Αφαιρέστε τα αρχεία από τον Κατάλογο  inc
 #: concrete/elements/collection_theme.php:134
 #: concrete/elements/conversation/display.php:76
 #: concrete/elements/conversation/display.php:79
-#: concrete/elements/custom_style.php:117
+#: concrete/elements/custom_style.php:75
+#: concrete/elements/custom_styleBAK.php:117
+#: concrete/elements/page_types/composer/form/layout_set/control.php:18
 #: concrete/elements/permission/detail.php:93
 #: concrete/elements/permission/details/block/timed_guest_access.php:38
 #: concrete/elements/permission/lists/area.php:94
@@ -662,10 +665,9 @@ msgstr "Αφαιρέστε τα αρχεία από τον Κατάλογο  inc
 #: concrete/single_pages/dashboard/pages/templates/add.php:46
 #: concrete/single_pages/dashboard/pages/templates/view.php:58
 #: concrete/single_pages/dashboard/pages/themes/view.php:34
-#: concrete/single_pages/dashboard/pages/types/form.php:22
-#: concrete/single_pages/dashboard/pages/types/form.php:109
-#: concrete/single_pages/dashboard/pages/types/form.php:135
-#: concrete/single_pages/dashboard/pages/types/form.php:218
+#: concrete/single_pages/dashboard/pages/types/form.php:21
+#: concrete/single_pages/dashboard/pages/types/form.php:52
+#: concrete/single_pages/dashboard/pages/types/form.php:69
 #: concrete/single_pages/dashboard/pages/types/view.php:11
 #: concrete/single_pages/dashboard/pages/types/view.php:91
 #: concrete/single_pages/dashboard/system/attributes/topics/add.php:21
@@ -690,6 +692,8 @@ msgstr "Αφαιρέστε τα αρχεία από τον Κατάλογο  inc
 #: concrete/tools/files/permissions.php:73
 #: concrete/tools/files/permissions.php:102
 #: concrete/tools/gathering/item/delete.php:27 concrete/tools/i18n_js.php:10
+#: concrete/tools/i18n_redactor_js.php:41
+#: concrete/tools/i18n_redactor_js.php:100
 #: concrete/tools/page_types/composer/form/edit_control.php:64
 #: concrete/tools/pages/delete.php:121 concrete/tools/pages/design.php:208
 #: concrete/tools/pages/permissions.php:150
@@ -710,6 +714,7 @@ msgstr "Αφαιρέστε τα αρχεία από τον Κατάλογο  inc
 #: concrete/tools/users/bulk_group_add.php:95
 #: concrete/tools/users/bulk_group_remove.php:94
 #: concrete/views/dialogs/area/layout/presets.php:46
+#: concrete/views/dialogs/block/aliasing.php:43
 #: concrete/views/dialogs/page/add_block.php:94
 #: concrete/views/dialogs/page/delete.php:8
 #: concrete/views/dialogs/page/delete.php:12
@@ -758,7 +763,7 @@ msgstr "Η θέση αποθήκευσης του αρχείου αποθηκε�
 
 #: concrete/core/Package/Package.php:321
 #: concrete/elements/block_area_footer.php:71
-#: concrete/elements/block_header_view.php:178
+#: concrete/elements/block_header_view.php:172
 #: concrete/elements/page_controls_footer.php:58
 #: concrete/elements/page_types/composer/form/output/buttons.php:27
 #: concrete/elements/panels/page.php:104
@@ -890,7 +895,7 @@ msgstr "Παρουσιάστηκε ένα σφάλμα στο κατέβασμα
 #: concrete/single_pages/dashboard/system/backup/backup.php:113
 #: concrete/single_pages/dashboard/system/backup/update.php:17
 #: concrete/single_pages/download_file.php:28 concrete/tools/files/view.php:35
-#: concrete/tools/i18n_js.php:187
+#: concrete/tools/i18n_js.php:187 concrete/tools/i18n_redactor_js.php:70
 msgid "Download"
 msgstr "Κατέβασμα"
 
@@ -911,7 +916,7 @@ msgid "(Note: files within the set will not be removed.)"
 msgstr "(Σημείωση: τα αρχεία μέσα στο σετ δεν θα καταργηθούν.)"
 
 #: concrete/attributes/select/type_form.php:19
-#: concrete/elements/block_header_view.php:158
+#: concrete/elements/block_header_view.php:157
 #: concrete/elements/collection_attribute_values.php:18
 #: concrete/elements/collection_delete.php:49
 #: concrete/elements/conversation/message.php:33
@@ -923,8 +928,6 @@ msgstr "(Σημείωση: τα αρχεία μέσα στο σετ δεν θα 
 #: concrete/elements/pages/search.php:45 concrete/elements/users/search.php:45
 #: concrete/single_pages/account/messages/inbox.php:48
 #: concrete/single_pages/dashboard/conversations/messages.php:189
-#: concrete/single_pages/dashboard/pages/types/form.php:116
-#: concrete/single_pages/dashboard/pages/types/form.php:225
 #: concrete/single_pages/dashboard/pages/types/view.php:47
 #: concrete/single_pages/dashboard/pages/types/view.php:98
 #: concrete/single_pages/dashboard/reports/forms.php:127
@@ -939,7 +942,8 @@ msgstr "(Σημείωση: τα αρχεία μέσα στο σετ δεν θα 
 #: concrete/tools/gathering/item/delete.php:28 concrete/tools/i18n_js.php:29
 #: concrete/tools/i18n_js.php:87 concrete/tools/i18n_js.php:122
 #: concrete/tools/i18n_js.php:142 concrete/tools/i18n_js.php:198
-#: concrete/tools/pages/delete.php:122 concrete/tools/users/bulk_delete.php:67
+#: concrete/tools/i18n_redactor_js.php:44 concrete/tools/pages/delete.php:122
+#: concrete/tools/users/bulk_delete.php:67
 #: concrete/views/dialogs/page/delete.php:19
 #: concrete/views/panels/page/versions.php:37
 #: concrete/views/panels/page/versions.php:289
@@ -1156,7 +1160,6 @@ msgstr "Όνομα Κατηγορίας"
 
 #: concrete/elements/files/add_to_sets.php:271
 #: concrete/single_pages/dashboard/pages/templates/view.php:61
-#: concrete/single_pages/dashboard/pages/types/form.php:142
 #: concrete/single_pages/dashboard/system/backup/update.php:42
 #: concrete/single_pages/dashboard/system/backup/update.php:58
 #: concrete/single_pages/dashboard/users/points/actions.php:59
@@ -1217,8 +1220,8 @@ msgid "Flat View"
 msgstr "Επίπεδη Προβολή"
 
 #: concrete/blocks/search/controller.php:82
-#: concrete/config/install/packages/elemental_full/content.xml:143
-#: concrete/config/install/packages/elemental_full/content.xml:168
+#: concrete/config/install/packages/elemental_full/content.xml:145
+#: concrete/config/install/packages/elemental_full/content.xml:170
 #: concrete/elements/block_area_add_stack.php:17
 #: concrete/elements/files/search.php:45 concrete/elements/group/search.php:26
 #: concrete/elements/marketplace/search_form.php:24
@@ -1444,7 +1447,6 @@ msgstr "Μόνο χρήστες που είναι μέλη όλων των επ�
 #: concrete/core/Page/Search/ColumnSet/DefaultSet.php:28
 #: concrete/core/User/Group/GroupSearchColumnSet.php:13
 #: concrete/elements/attribute/type_form_required.php:61
-#: concrete/elements/block_master_collection_alias.php:27
 #: concrete/elements/collection_add.php:23
 #: concrete/elements/collection_add_external.php:15
 #: concrete/elements/collection_edit_external.php:15
@@ -1483,6 +1485,7 @@ msgstr "Μόνο χρήστες που είναι μέλη όλων των επ�
 #: concrete/tools/pages/delete.php:90
 #: concrete/tools/panels/details/page/properties.php:19
 #: concrete/tools/permissions/dialogs/access/entity/types/group_combination.php:23
+#: concrete/views/dialogs/block/aliasing.php:19
 #: concrete/views/panels/details/page/attributes.php:24
 msgid "Name"
 msgstr "Όνομα"
@@ -1634,29 +1637,346 @@ msgstr "Ανιχνεύτηκαν Απαγορευμένες λέξεις ."
 msgid "Add Message"
 msgstr "Προσθήκη μηνύματος"
 
-#: concrete/tools/edit_block_popup.php:23
-msgid ""
-"Unable to retrieve block object. If this block has been moved please reload "
-"the page."
-msgstr "Δεν είναι δυνατή η ανάκτηση του αντικείμενου του μπλοκ. Αν αυτό το μπλοκ έχει μετακινηθεί ξαναφορτώστε τη σελίδα."
+#: concrete/blocks/html/controller.php:23 concrete/config/file_types.php:22
+#: concrete/tools/i18n_redactor_js.php:13
+msgid "HTML"
+msgstr "HTML"
 
-#: concrete/tools/edit_block_popup.php:43
-msgid ""
-"This block is contained within a global area. Changing its content will "
-"change it everywhere that global area is referenced."
-msgstr "Αυτό το μπλοκ περιέχεται εντός μιας παγκόσμιας περιοχής. Η αλλαγή του περιεχομένου της, θα αλλάξει παντού όπου η παγκόσμια περιοχή έχει αναφορές."
+#: concrete/tools/i18n_redactor_js.php:14
+msgid "Insert Video"
+msgstr ""
 
-#: concrete/tools/edit_block_popup.php:49
-msgid ""
-"This is a global block.  Editing it here will change all instances of this "
-"block throughout the site."
-msgstr "Αυτό είναι ένα παγκόσμιο μπλοκ. Η επεξεργασία εδώ θα αλλάξει όλες τις εμφανίσεις αυτού του μπλοκ σε όλο το site."
+#: concrete/tools/i18n_js.php:110 concrete/tools/i18n_redactor_js.php:15
+msgid "Insert Image"
+msgstr "Εισαγωγή Εικόνας"
 
-#: concrete/tools/edit_block_popup.php:58
-msgid ""
-"This block is an alias of Page Defaults. Editing it here will \"disconnect\""
-" it so changes to Page Defaults will no longer affect this block."
-msgstr "Το μπλοκ αυτό είναι ένα ψευδώνυμο της Προεπιλεγμένης Σελίδας. Η επεξεργασία εδώ θα το \"αποσυνδέσει\" έτσι ώστε οι αλλαγές στη Προεπιλεγμένη σελίδα δεν θα επηρεάσουν αυτό το μπλοκ."
+#: concrete/tools/i18n_redactor_js.php:16
+msgid "Table"
+msgstr ""
+
+#: concrete/blocks/file/add.php:10 concrete/blocks/file/edit.php:14
+#: concrete/elements/conversation/display.php:82
+#: concrete/elements/conversation/social_share.php:13
+#: concrete/tools/i18n_redactor_js.php:17
+msgid "Link"
+msgstr "Σύνδεσμος"
+
+#: concrete/tools/i18n_redactor_js.php:18
+msgid "Insert link"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:19
+msgid "Edit link"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:20
+msgid "Unlink"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:21
+msgid "Formatting"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:22
+msgid "Normal text"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:23
+msgid "Quote"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:24
+msgid "Code"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:25
+msgid "Header 1"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:26
+msgid "Header 2"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:27
+msgid "Header 3"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:28
+msgid "Header 4"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:29
+msgid "Header 5"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:31
+msgid "Header 6"
+msgstr ""
+
+#: concrete/tools/i18n_js.php:98 concrete/tools/i18n_redactor_js.php:33
+msgid "Bold"
+msgstr "Έντονο"
+
+#: concrete/tools/i18n_js.php:99 concrete/tools/i18n_redactor_js.php:34
+msgid "Italic"
+msgstr "Πλάγια"
+
+#: concrete/tools/i18n_redactor_js.php:35
+msgid "Font Color"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:36
+msgid "Back Color"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:37
+msgid "Unordered List"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:38
+msgid "Ordered List"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:39
+msgid "Outdent"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:40
+msgid "Indent"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:42
+msgid "Insert"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:45
+msgid "Insert Table"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:46
+msgid "Add Row Above"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:47
+msgid "Add Row Below"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:48
+msgid "Add Column Left"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:49
+msgid "Add Column Right"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:50
+msgid "Delete Column"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:51
+msgid "Delete Row"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:52
+msgid "Delete Table"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:53
+msgid "Rows"
+msgstr "Σειρές"
+
+#: concrete/tools/i18n_redactor_js.php:54
+msgid "Columns"
+msgstr "Στήλες"
+
+#: concrete/tools/i18n_redactor_js.php:55
+msgid "Add Head"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:56
+msgid "Delete Head"
+msgstr ""
+
+#: concrete/blocks/feature/form.php:10
+#: concrete/blocks/search/form_setup_html.php:30
+#: concrete/blocks/tags/tag_form.php:10
+#: concrete/blocks/youtube/form_setup_html.php:20
+#: concrete/core/File/Search/ColumnSet/DefaultSet.php:21
+#: concrete/core/File/Version.php:482 concrete/tools/i18n_redactor_js.php:57
+#: concrete/views/dialogs/file/properties.php:86
+#: concrete/views/dialogs/file/properties.php:170
+msgid "Title"
+msgstr "Τίτλος"
+
+#: concrete/tools/i18n_redactor_js.php:58
+msgid "Position"
+msgstr "Θέση"
+
+#: concrete/blocks/autonav/form_setup_html.php:91
+#: concrete/blocks/dashboard_site_activity/view.php:5
+#: concrete/blocks/form/form_setup_html.php:90
+#: concrete/blocks/image/form.php:44 concrete/blocks/survey/add.php:36
+#: concrete/blocks/survey/edit.php:38 concrete/elements/custom_style.php:20
+#: concrete/elements/custom_style/background.php:20
+#: concrete/elements/permission/access/list.php:33
+#: concrete/elements/permission/labels.php:49
+#: concrete/single_pages/account/profile/public_profile.php:55
+#: concrete/single_pages/dashboard/pages/single.php:53
+#: concrete/single_pages/dashboard/system/basics/images.php:15
+#: concrete/single_pages/dashboard/system/mail/importers.php:6
+#: concrete/single_pages/dashboard/system/mail/method.php:6
+#: concrete/single_pages/dashboard/system/permissions/blacklist.php:44
+#: concrete/tools/i18n_js.php:90 concrete/tools/i18n_redactor_js.php:59
+#: concrete/tools/versions.php:347
+msgid "None"
+msgstr "Κανένα"
+
+#: concrete/elements/custom_style/border.php:42
+#: concrete/elements/custom_style/fonts.php:53
+#: concrete/elements/custom_style/spacing.php:33
+#: concrete/elements/custom_style/spacing.php:70
+#: concrete/tools/i18n_redactor_js.php:60
+msgid "Left"
+msgstr "Αριστερά"
+
+#: concrete/elements/custom_style/border.php:40
+#: concrete/elements/custom_style/fonts.php:55
+#: concrete/elements/custom_style/spacing.php:17
+#: concrete/elements/custom_style/spacing.php:54
+#: concrete/tools/i18n_redactor_js.php:61
+msgid "Right"
+msgstr "Δεξιά"
+
+#: concrete/elements/custom_style/fonts.php:54
+#: concrete/tools/i18n_redactor_js.php:62
+msgid "Center"
+msgstr "Κεντραρισμένο"
+
+#: concrete/tools/i18n_redactor_js.php:63
+msgid "Image Web Link"
+msgstr ""
+
+#: concrete/core/File/Type/Type.php:73 concrete/tools/i18n_redactor_js.php:64
+msgid "Text"
+msgstr "Κείμενο"
+
+#: concrete/config/install/base/dashboard.xml:680
+#: concrete/core/User/Search/ColumnSet/DefaultSet.php:22
+#: concrete/elements/users/confirm_list.php:8
+#: concrete/mail/user_register_approval_required.php:15
+#: concrete/single_pages/account/profile/edit.php:22
+#: concrete/themes/greek_yogurt/blog_entry.php:71
+#: concrete/tools/i18n_redactor_js.php:65
+msgid "Email"
+msgstr "Email"
+
+#: concrete/blocks/image/form.php:56
+#: concrete/elements/collection_add_external.php:20
+#: concrete/elements/collection_edit_external.php:20
+#: concrete/elements/workflow/progress/categories/page/pending.php:12
+#: concrete/single_pages/dashboard/system/basics/social.php:68
+#: concrete/tools/i18n_redactor_js.php:66
+msgid "URL"
+msgstr "URL"
+
+#: concrete/tools/i18n_redactor_js.php:67
+msgid "Video Embed Code"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:68
+msgid "Insert File"
+msgstr ""
+
+#: concrete/core/Form/Service/Widget/Color.php:35
+#: concrete/core/StyleCustomizer/Style/ColorStyle.php:40
+#: concrete/elements/users/search.php:48 concrete/tools/i18n_js.php:188
+#: concrete/tools/i18n_redactor_js.php:71
+msgid "Choose"
+msgstr "Επιλογή"
+
+#: concrete/tools/i18n_redactor_js.php:72
+msgid "Or choose"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:73
+msgid "Drop file here"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:74
+msgid "Align text to the left"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:75
+msgid "Center text"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:76
+msgid "Align text to the right"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:77
+msgid "Justify text"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:78
+msgid "Insert Horizontal Rule"
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:18
+#: concrete/tools/i18n_redactor_js.php:79
+msgid "Deleted"
+msgstr "Διεγράφη"
+
+#: concrete/tools/i18n_redactor_js.php:80
+msgid "Anchor"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:81
+msgid "Open link in new tab"
+msgstr ""
+
+#: concrete/tools/i18n_js.php:100 concrete/tools/i18n_redactor_js.php:82
+msgid "Underline"
+msgstr "Υπογραμμισμένο "
+
+#: concrete/elements/custom_style/fonts.php:48
+#: concrete/tools/i18n_redactor_js.php:83
+msgid "Alignment"
+msgstr "Ευθυγράμμιση"
+
+#: concrete/tools/i18n_redactor_js.php:84
+msgid "Name (optional)"
+msgstr ""
+
+#: concrete/attributes/select/type_form.php:18
+#: concrete/blocks/form/form_setup_html.php:17
+#: concrete/blocks/page_list/page_list_form.php:7
+#: concrete/controllers/single_page/dashboard/users/points/actions.php:33
+#: concrete/elements/collection_attribute_values.php:17
+#: concrete/elements/conversation/message.php:32
+#: concrete/single_pages/account/profile/public_profile.php:13
+#: concrete/single_pages/dashboard/system/mail/importers.php:90
+#: concrete/single_pages/dashboard/users/points/actions.php:105
+#: concrete/tools/i18n_js.php:39 concrete/tools/i18n_js.php:191
+#: concrete/tools/i18n_redactor_js.php:85
+msgid "Edit"
+msgstr "Επεξεργασία"
+
+#: concrete/tools/i18n_redactor_js.php:96
+msgid "Remove font"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:97
+msgid "Change font family"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:98
+msgid "Remove font size"
+msgstr ""
+
+#: concrete/tools/i18n_redactor_js.php:99
+msgid "Change font size"
+msgstr ""
 
 #: concrete/tools/versions.php:35 concrete/views/frontend/install.php:69
 #: concrete/views/frontend/install.php:127
@@ -1692,24 +2012,6 @@ msgstr "Εδώ είναι παλαιότερες εκδόσεις αυτής τ�
 #: concrete/tools/versions.php:337
 msgid "Someone has already checked out this page for editing."
 msgstr "Καποιος επεξεργάζεται ήδη αυτη τη σελίδα."
-
-#: concrete/blocks/autonav/form_setup_html.php:91
-#: concrete/blocks/dashboard_site_activity/view.php:5
-#: concrete/blocks/form/form_setup_html.php:90
-#: concrete/blocks/image/form.php:44 concrete/blocks/survey/add.php:36
-#: concrete/blocks/survey/edit.php:38
-#: concrete/elements/custom_style/background.php:20
-#: concrete/elements/permission/access/list.php:33
-#: concrete/elements/permission/labels.php:49
-#: concrete/single_pages/account/profile/public_profile.php:55
-#: concrete/single_pages/dashboard/pages/single.php:53
-#: concrete/single_pages/dashboard/system/basics/images.php:15
-#: concrete/single_pages/dashboard/system/mail/importers.php:6
-#: concrete/single_pages/dashboard/system/mail/method.php:6
-#: concrete/single_pages/dashboard/system/permissions/blacklist.php:44
-#: concrete/tools/i18n_js.php:90 concrete/tools/versions.php:347
-msgid "None"
-msgstr "Κανένα"
 
 #: concrete/tools/versions.php:348
 msgid "Old Versions"
@@ -1906,7 +2208,7 @@ msgid "Custom Label"
 msgstr "Προσαρμοσμένες Ετικέτες"
 
 #: concrete/elements/block_custom_template.php:24
-#: concrete/elements/block_header_view.php:171 concrete/tools/i18n_js.php:48
+#: concrete/tools/i18n_js.php:48
 #: concrete/tools/page_types/composer/form/edit_control.php:46
 msgid "Custom Template"
 msgstr "Προσαρμοσμένα Προτύπα"
@@ -1972,7 +2274,6 @@ msgstr "Η Στοίβα προστέθηκε επιτυχώς"
 msgid "Paste from Clipboard"
 msgstr "Επικόλληση από το Πρόχειρο"
 
-#: concrete/elements/block_header_view.php:167
 #: concrete/elements/page_controls_footer.php:61
 #: concrete/elements/pages/search.php:44 concrete/elements/panels/page.php:36
 #: concrete/tools/i18n_js.php:20 concrete/tools/i18n_js.php:49
@@ -1980,7 +2281,7 @@ msgstr "Επικόλληση από το Πρόχειρο"
 msgid "Design"
 msgstr "Design"
 
-#: concrete/elements/block_header_view.php:142 concrete/tools/i18n_js.php:21
+#: concrete/elements/block_header_view.php:141 concrete/tools/i18n_js.php:21
 msgid "Edit Layout"
 msgstr "Επεξεργασία Layout"
 
@@ -2050,19 +2351,6 @@ msgstr "Περιεχόμενο"
 msgid "Close"
 msgstr "Κλείσιμο"
 
-#: concrete/attributes/select/type_form.php:18
-#: concrete/blocks/form/form_setup_html.php:17
-#: concrete/blocks/page_list/page_list_form.php:7
-#: concrete/controllers/single_page/dashboard/users/points/actions.php:33
-#: concrete/elements/collection_attribute_values.php:17
-#: concrete/elements/conversation/message.php:32
-#: concrete/single_pages/account/profile/public_profile.php:13
-#: concrete/single_pages/dashboard/system/mail/importers.php:90
-#: concrete/single_pages/dashboard/users/points/actions.php:105
-#: concrete/tools/i18n_js.php:39 concrete/tools/i18n_js.php:191
-msgid "Edit"
-msgstr "Επεξεργασία"
-
 #: concrete/tools/i18n_js.php:40
 #, php-format
 msgctxt "%s is a block type name"
@@ -2075,7 +2363,7 @@ msgid ""
 "is active."
 msgstr "Η Ρύθμιση δικαιωμάτων έχει αποθηκευτεί. Πρέπει να ολοκληρώσετε τη ροή εργασίας πριν αυτή η αλλαγή είναι ενεργή."
 
-#: concrete/elements/block_header_view.php:133 concrete/tools/i18n_js.php:42
+#: concrete/elements/block_header_view.php:132 concrete/tools/i18n_js.php:42
 msgid "Manage Stack Contents"
 msgstr "Διαχειριστείτε Περιεχόμενα Στοίβας"
 
@@ -2089,7 +2377,7 @@ msgstr "Σύγκριση Εκδόσεων"
 msgid "Blocks arranged successfully."
 msgstr "Τα Μπλοκ  ανατοποθετήθηκαν με επιτυχία."
 
-#: concrete/elements/block_header_view.php:153 concrete/tools/i18n_js.php:47
+#: concrete/elements/block_header_view.php:152 concrete/tools/i18n_js.php:47
 msgid "Copy to Clipboard"
 msgstr "Αντιγραφή στο πρόχειρο"
 
@@ -2109,7 +2397,7 @@ msgstr "Είστε βέβαιοι ότι θέλετε να αφαιρέσετε 
 msgid "Are you sure you want to delete this custom style preset?"
 msgstr "Είστε σίγουροι ότι θέλετε να διαγράψετε αυτό το προσαρμοσμένο στυλ;"
 
-#: concrete/elements/block_header_view.php:184 concrete/tools/i18n_js.php:55
+#: concrete/elements/block_header_view.php:178 concrete/tools/i18n_js.php:55
 msgid "Setup on Child Pages"
 msgstr "Ρύθμιση στις Θυγατρικές Σελίδες"
 
@@ -2230,7 +2518,7 @@ msgstr "Οι Ρυθμίσεις Χρήστη αποθηκεύτηκαν."
 msgid "Ok"
 msgstr "Εντάξει"
 
-#: concrete/elements/block_header_view.php:181 concrete/tools/i18n_js.php:81
+#: concrete/elements/block_header_view.php:175 concrete/tools/i18n_js.php:81
 msgid "Schedule Guest Access"
 msgstr "Προγραμματίστε την Πρόσβαση Επισκεπτών"
 
@@ -2278,7 +2566,7 @@ msgstr "Τρέχουσα Εικόνα"
 
 #: concrete/attributes/textarea/type_form.php:27
 #: concrete/blocks/image/controller.php:30 concrete/blocks/image/form.php:28
-#: concrete/core/File/Type/Type.php:67
+#: concrete/core/File/Type/Type.php:67 concrete/elements/custom_style.php:60
 #: concrete/single_pages/dashboard/users/add_group.php:83
 #: concrete/single_pages/dashboard/users/groups.php:58
 #: concrete/tools/i18n_js.php:95
@@ -2288,18 +2576,6 @@ msgstr "Εικόνα"
 #: concrete/tools/i18n_js.php:97
 msgid "Choose Font"
 msgstr "Επιλέξτε Γραμματοσειρά"
-
-#: concrete/tools/i18n_js.php:98
-msgid "Bold"
-msgstr "Έντονο"
-
-#: concrete/tools/i18n_js.php:99
-msgid "Italic"
-msgstr "Πλάγια"
-
-#: concrete/tools/i18n_js.php:100
-msgid "Underline"
-msgstr "Υπογραμμισμένο "
 
 #: concrete/tools/i18n_js.php:101
 msgid "Uppercase"
@@ -2320,10 +2596,6 @@ msgstr "Ύψος Γραμμής"
 #: concrete/tools/i18n_js.php:109
 msgid "Insert Link to File"
 msgstr "Εισάγετε τον Σύνδεσμο του Αρχείου"
-
-#: concrete/tools/i18n_js.php:110
-msgid "Insert Image"
-msgstr "Εισαγωγή Εικόνας"
 
 #: concrete/tools/i18n_js.php:111
 msgid "Link to Page"
@@ -2532,12 +2804,6 @@ msgstr "Επεξεργασία Δικαιωμάτων"
 #: concrete/tools/i18n_js.php:186
 msgid "View"
 msgstr "Προβολή"
-
-#: concrete/core/Form/Service/Widget/Color.php:35
-#: concrete/core/StyleCustomizer/Style/ColorStyle.php:40
-#: concrete/elements/users/search.php:48 concrete/tools/i18n_js.php:188
-msgid "Choose"
-msgstr "Επιλογή"
 
 #: concrete/tools/i18n_js.php:189
 msgid "Copy File"
@@ -2956,6 +3222,14 @@ msgid ""
 "location."
 msgstr "Δεν έχετε δικαιώματα για να προσθέσετε μια σελίδα αυτού του τύπου στην επιλεγμένη θέση."
 
+#: concrete/controllers/dialog/block/aliasing.php:64
+msgid "Defaults updated."
+msgstr "Οι προεπιλογές ενημερώθηκαν."
+
+#: concrete/controllers/dialog/block/design.php:61
+msgid "Custom design updated."
+msgstr "Το προσαρμοσμένο design ενημερώθηκε."
+
 #: concrete/controllers/dialog/user/bulk/properties.php:79
 msgid "Users updated successfully."
 msgstr "Οι χρήστες ενημερώθηκαν με επιτυχία."
@@ -3088,10 +3362,6 @@ msgstr "Η Σειρά ταξινόμησης αποθηκεύτηκε"
 #: concrete/controllers/single_page/dashboard/conversations/messages.php:17
 msgid "Approved"
 msgstr "Επικυρωμένη"
-
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:18
-msgid "Deleted"
-msgstr "Διεγράφη"
 
 #: concrete/controllers/search/pages.php:226
 #: concrete/controllers/single_page/dashboard/conversations/messages.php:19
@@ -4913,15 +5183,6 @@ msgstr "Απαντημένα"
 msgid "Unknown User"
 msgstr "Άγνωστος Χρήστης"
 
-#: concrete/config/install/base/dashboard.xml:680
-#: concrete/core/User/Search/ColumnSet/DefaultSet.php:22
-#: concrete/elements/users/confirm_list.php:8
-#: concrete/mail/user_register_approval_required.php:15
-#: concrete/single_pages/account/profile/edit.php:22
-#: concrete/themes/greek_yogurt/blog_entry.php:71
-msgid "Email"
-msgstr "Email"
-
 #: concrete/core/Page/Search/ColumnSet/DefaultSet.php:30
 #: concrete/core/User/Search/ColumnSet/DefaultSet.php:23
 #: concrete/elements/pages/search.php:9
@@ -5040,10 +5301,6 @@ msgstr "Παρουσιάστηκε σφάλμα κατά την προσπάθε
 msgid "Video"
 msgstr "Βίντεο"
 
-#: concrete/core/File/Type/Type.php:73
-msgid "Text"
-msgstr "Κείμενο"
-
 #: concrete/core/File/Type/Type.php:76
 msgid "Audio"
 msgstr "Ήχος"
@@ -5105,17 +5362,6 @@ msgstr "Παρουσιάστηκε άγνωστο σφάλμα κατά τη μ�
 #: concrete/views/dialogs/file/properties.php:66
 msgid "Type"
 msgstr "Τύπος"
-
-#: concrete/blocks/feature/form.php:10
-#: concrete/blocks/search/form_setup_html.php:30
-#: concrete/blocks/tags/tag_form.php:10
-#: concrete/blocks/youtube/form_setup_html.php:20
-#: concrete/core/File/Search/ColumnSet/DefaultSet.php:21
-#: concrete/core/File/Version.php:482
-#: concrete/views/dialogs/file/properties.php:86
-#: concrete/views/dialogs/file/properties.php:170
-msgid "Title"
-msgstr "Τίτλος"
 
 #: concrete/core/File/Search/ColumnSet/DefaultSet.php:22
 msgid "Added"
@@ -5383,7 +5629,7 @@ msgid "Twitter Bootstrap"
 msgstr "Twitter Bootstrap"
 
 #: concrete/core/Page/Theme/Theme.php:616
-#: concrete/single_pages/dashboard/pages/types/form.php:47
+#: concrete/single_pages/dashboard/pages/types/form.php:44
 msgid "(No Name)"
 msgstr "(Χωρίς όνομα)"
 
@@ -5843,7 +6089,7 @@ msgstr "Κερδίσατε ένα Badge"
 msgid "Select Page"
 msgstr "Επιλέξτε Σελίδα"
 
-#: concrete/core/Form/Service/Widget/Color.php:36
+#: concrete/core/Form/Service/Widget/Color.php:37
 #: concrete/core/StyleCustomizer/Style/ColorStyle.php:41
 msgid "Clear Color Selection"
 msgstr "Απαλοιφή Επιλεγμένου χρώματος "
@@ -7518,35 +7764,13 @@ msgid "My Account"
 msgstr "Ο λογαριασμός μου"
 
 #: concrete/config/install/packages/elemental_blank/content.xml:41
-#: concrete/config/install/packages/elemental_full/content.xml:140
+#: concrete/config/install/packages/elemental_full/content.xml:142
 #: concrete/elements/account/menu.php:60
 #: concrete/single_pages/account/profile/public_profile.php:14
 #: concrete/single_pages/dashboard/system/view.php:41
 #: concrete/single_pages/dashboard/view.php:42
 msgid "Home"
 msgstr "Κεντρική"
-
-#: concrete/elements/block_master_collection_alias.php:17
-msgid ""
-"There are no pages of this type added to your website. If there were, you'd "
-"be able to choose which of those pages this block appears on."
-msgstr "Δεν υπάρχουν σελίδες αυτού του τύπου στην ιστοσελίδα σας. Αν υπήρχε, θα είσαστε σε θέση να επιλέξετε σε ποια από αυτές τις σελίδες θα εμφανίζεται αυτό το μπλοκ ."
-
-#: concrete/elements/block_master_collection_alias.php:21
-msgid ""
-"Choose which pages below this particular block should appear on. Any "
-"previously selected blocks may also be removed using the checkbox. Click the"
-" checkbox in the header to select/deselect all pages."
-msgstr "Επιλέξτε ποιες σελίδες κάτω από αυτό το συγκεκριμένο Μπλοκ θα πρέπει να εμφανίζονται. Κάποια ήδη επιλεγμένα μπλοκ μπορεί επίσης να αφαιρεθούν χρησιμοποιώντας το κουτάκι επιλογών. Κάντε κλικ στο κουτάκι επιλογών στην κεφαλίδα για να ενεργοποιήσετε / απενεργοποιήσετε όλες τις σελίδες."
-
-#: concrete/elements/block_master_collection_alias.php:28
-#: concrete/single_pages/dashboard/users/search.php:78
-msgid "Date Created"
-msgstr "Ημερομηνία Δημιουργίας"
-
-#: concrete/elements/block_master_collection_alias.php:29
-msgid "Date Modified"
-msgstr "Ημερομηνία Τροποποίησης"
 
 #: concrete/elements/block_custom_template.php:19
 msgid "There are no custom templates available."
@@ -7600,14 +7824,6 @@ msgstr "Οι σελίδων που έχουν διαγραφεί μεταφέρ�
 #: concrete/views/dialogs/page/delete.php:33
 msgid "This cannot be undone."
 msgstr "Αυτό δεν μπορεί να αναιρεθεί."
-
-#: concrete/blocks/image/form.php:56
-#: concrete/elements/collection_add_external.php:20
-#: concrete/elements/collection_edit_external.php:20
-#: concrete/elements/workflow/progress/categories/page/pending.php:12
-#: concrete/single_pages/dashboard/system/basics/social.php:68
-msgid "URL"
-msgstr "URL"
 
 #: concrete/elements/collection_add_external.php:26
 #: concrete/elements/collection_edit_external.php:26
@@ -7710,7 +7926,6 @@ msgid "No timed permission assignments"
 msgstr "Δεν υπάρχουν αναθέσεις Προσωρινών δικαιωμάτων"
 
 #: concrete/elements/block_area_footer.php:56
-#: concrete/elements/block_header_view.php:167
 msgid "Custom Style"
 msgstr "Προσαρμοσμένο Στυλ"
 
@@ -7846,72 +8061,50 @@ msgstr "(Δεν ισχύει)"
 msgid "Allow users to add to this list."
 msgstr "Επιτρέπει στους χρήστες να προστίθενται στον κατάλογο αυτόν."
 
-#: concrete/elements/custom_style.php:6
-msgid "Custom design options have been disabled."
-msgstr "Οι προσαρμοσμένες επιλογές σχεδιασμού έχουν απενεργοποιηθεί."
+#: concrete/elements/custom_style.php:21
+#: concrete/elements/custom_style/background.php:21
+msgid "Horizontal"
+msgstr "Οριζόντια"
+
+#: concrete/elements/custom_style.php:22
+#: concrete/elements/custom_style/background.php:22
+msgid "Vertical"
+msgstr "Κάθετα"
+
+#: concrete/elements/custom_style.php:23 concrete/elements/custom_style.php:64
+msgid "Tile"
+msgstr ""
 
 #: concrete/elements/custom_style.php:35
-msgid "** Custom (No Preset)"
-msgstr "Προσαρμοσμένη ** (Όχι Προρύθμιση)"
+msgid "Text Color"
+msgstr "Χρώμα Κειμένου"
 
-#: concrete/elements/custom_style.php:56
-msgid "Saved Presets"
-msgstr "Αποθηκευμένες Προρυθμίσεις"
+#: concrete/elements/custom_style.php:40
+msgid "Link Color"
+msgstr "Χρώμα Συνδέσμου"
 
-#: concrete/elements/custom_style.php:68
-#: concrete/elements/custom_style/fonts.php:4
-msgid "Fonts"
-msgstr "Γραμματοσειρά"
+#: concrete/elements/custom_style.php:44
+msgid "Base Font Size"
+msgstr ""
 
-#: concrete/elements/custom_style.php:69
+#: concrete/elements/custom_style.php:53
 #: concrete/elements/custom_style/background.php:4
+#: concrete/elements/custom_styleBAK.php:69
 msgid "Background"
 msgstr "Φόντο"
 
-#: concrete/elements/custom_style.php:70
-#: concrete/elements/custom_style/border.php:4
-msgid "Border"
-msgstr "Όριο"
+#: concrete/elements/custom_style.php:55
+#: concrete/elements/custom_style/border.php:48
+#: concrete/elements/custom_style/fonts.php:39
+msgid "Color"
+msgstr "Χρώμα"
 
-#: concrete/elements/custom_style.php:71
-msgid "Spacing"
-msgstr "Απόσταση"
-
-#: concrete/elements/custom_style.php:72
-msgid "CSS"
-msgstr "CSS"
-
-#: concrete/elements/custom_style.php:95
-msgid "You are changing a preset"
-msgstr "Πρόκειται να αλλάξετε μια προκαθορισμένη ρύθμιση"
-
-#: concrete/elements/custom_style.php:96
-#, php-format
-msgid "Update \"%s\" preset everywhere it is used"
-msgstr "Ενημέρωση \"%s\" προκαθορισμένης ρύθμισης παντού όπου χρησιμοποιείται"
-
-#: concrete/elements/custom_style.php:97
-#, php-format
-msgid "Use this style here, and leave \"%s\" unchanged"
-msgstr "Χρησιμοποιήστε αυτό το στυλ εδώ, και να αφήστε το \"%s\" αμετάβλητο"
-
-#: concrete/elements/custom_style.php:98
-msgid "Save this style as a new preset"
-msgstr "Αποθηκεύστε αυτό το στυλ ως νέα προρύθμιση."
-
-#: concrete/elements/custom_style.php:106
-msgid "Save this style as a new preset."
-msgstr "Αποθηκεύστε αυτό το στυλ ως νέα προρύθμιση."
-
-#: concrete/elements/custom_style.php:120
-msgid "Reset Styles"
-msgstr "Επαναφορά Στυλ"
-
-#: concrete/elements/custom_style.php:128
-msgid ""
-"Note: Styles set here are often overridden by those defined within the "
-"various block types."
-msgstr "Σημείωση: Οι ρυθμίσεις του Στυλ που γίνονται εδώ συχνά παρακάμπτονται από εκείνες που ορίζονται στο πλαίσιο των διαφόρων Τύπων Μπλοκ."
+#: concrete/blocks/image/composer.php:18
+#: concrete/blocks/image/composer/thumbnail.php:31
+#: concrete/blocks/image/form.php:29 concrete/elements/custom_style.php:61
+#: concrete/single_pages/dashboard/system/basics/images.php:19
+msgid "Choose Image"
+msgstr "Επιλέξτε Εικόνα"
 
 #: concrete/elements/workflow/edit_type_form_required.php:14
 msgid "Workflow Basics"
@@ -8488,6 +8681,13 @@ msgstr "Επεξεργασία Ελέγχου Φόρμας"
 msgid "Delete this control? This cannot be undone."
 msgstr "Διαγράψτε αυτό το στοιχείο ελέγχου; Αυτό δεν μπορεί να αναιρεθεί."
 
+#: concrete/elements/page_types/composer/form/layout_set/control.php:19
+#: concrete/single_pages/dashboard/pages/types/form.php:70
+#: concrete/single_pages/dashboard/system/attributes/sets.php:43
+#: concrete/single_pages/dashboard/users/group_sets.php:31
+msgid "Update Set"
+msgstr "Ενημέρωση Σετ"
+
 #: concrete/elements/page_types/composer/form/output/buttons.php:7
 msgid "Publish"
 msgstr "Δημοσιεύστε"
@@ -8580,13 +8780,10 @@ msgstr "Εικόνα Φόντου"
 msgid "Repeat"
 msgstr "Επανάληψη"
 
-#: concrete/elements/custom_style/background.php:21
-msgid "Horizontal"
-msgstr "Οριζόντια"
-
-#: concrete/elements/custom_style/background.php:22
-msgid "Vertical"
-msgstr "Κάθετα"
+#: concrete/elements/custom_style/fonts.php:4
+#: concrete/elements/custom_styleBAK.php:68
+msgid "Fonts"
+msgstr "Γραμματοσειρά"
 
 #: concrete/elements/custom_style/fonts.php:8
 msgid "Face"
@@ -8595,33 +8792,6 @@ msgstr "Πρόσωπο"
 #: concrete/elements/custom_style/fonts.php:12
 msgid "Inherit"
 msgstr "Κληρονομεί"
-
-#: concrete/elements/custom_style/border.php:48
-#: concrete/elements/custom_style/fonts.php:39
-msgid "Color"
-msgstr "Χρώμα"
-
-#: concrete/elements/custom_style/fonts.php:48
-msgid "Alignment"
-msgstr "Ευθυγράμμιση"
-
-#: concrete/elements/custom_style/border.php:42
-#: concrete/elements/custom_style/fonts.php:53
-#: concrete/elements/custom_style/spacing.php:33
-#: concrete/elements/custom_style/spacing.php:70
-msgid "Left"
-msgstr "Αριστερά"
-
-#: concrete/elements/custom_style/fonts.php:54
-msgid "Center"
-msgstr "Κεντραρισμένο"
-
-#: concrete/elements/custom_style/border.php:40
-#: concrete/elements/custom_style/fonts.php:55
-#: concrete/elements/custom_style/spacing.php:17
-#: concrete/elements/custom_style/spacing.php:54
-msgid "Right"
-msgstr "Δεξιά"
 
 #: concrete/elements/custom_style/fonts.php:56
 msgid "Justify"
@@ -8650,6 +8820,11 @@ msgstr "Κάτω μέρος"
 #: concrete/elements/custom_style/spacing.php:42
 msgid "Padding"
 msgstr "Γέμισμα"
+
+#: concrete/elements/custom_style/border.php:4
+#: concrete/elements/custom_styleBAK.php:70
+msgid "Border"
+msgstr "Όριο"
 
 #: concrete/elements/custom_style/border.php:8
 msgid "Style"
@@ -8742,19 +8917,75 @@ msgid ""
 "it, you will delete all blocks aliased to it"
 msgstr "Θέλετε να διαγράψετε αυτό το μπλοκ; Αυτό το στοιχείο είναι ένα πρωτότυπο. Αν το διαγράψετε, θα διαγράψετε όλα τα μπλοκ που το χρησιμοποιούν ως ψευδώνυμο."
 
-#: concrete/elements/block_header_view.php:144
-#: concrete/elements/block_header_view.php:147
+#: concrete/elements/block_header_view.php:143
+#: concrete/elements/block_header_view.php:146
 msgid "Edit Block"
 msgstr "Επεξεργασία Μπλοκ"
 
-#: concrete/elements/block_header_view.php:147
+#: concrete/elements/block_header_view.php:146
 #, php-format
 msgid "Edit %s"
 msgstr "Επεξεργασία %s"
 
-#: concrete/elements/block_header_view.php:178
+#: concrete/elements/block_header_view.php:165
+msgid "Design &amp; Custom Template"
+msgstr "Σχεδιασμός & Προσαρμοσμένα Πρότυπα"
+
+#: concrete/elements/block_header_view.php:172
 msgid "Block Permissions"
 msgstr "Μπλοκ Δικαιώματα"
+
+#: concrete/elements/custom_styleBAK.php:6
+msgid "Custom design options have been disabled."
+msgstr "Οι προσαρμοσμένες επιλογές σχεδιασμού έχουν απενεργοποιηθεί."
+
+#: concrete/elements/custom_styleBAK.php:35
+msgid "** Custom (No Preset)"
+msgstr "Προσαρμοσμένη ** (Όχι Προρύθμιση)"
+
+#: concrete/elements/custom_styleBAK.php:56
+msgid "Saved Presets"
+msgstr "Αποθηκευμένες Προρυθμίσεις"
+
+#: concrete/elements/custom_styleBAK.php:71
+msgid "Spacing"
+msgstr "Απόσταση"
+
+#: concrete/elements/custom_styleBAK.php:72
+msgid "CSS"
+msgstr "CSS"
+
+#: concrete/elements/custom_styleBAK.php:95
+msgid "You are changing a preset"
+msgstr "Πρόκειται να αλλάξετε μια προκαθορισμένη ρύθμιση"
+
+#: concrete/elements/custom_styleBAK.php:96
+#, php-format
+msgid "Update \"%s\" preset everywhere it is used"
+msgstr "Ενημέρωση \"%s\" προκαθορισμένης ρύθμισης παντού όπου χρησιμοποιείται"
+
+#: concrete/elements/custom_styleBAK.php:97
+#, php-format
+msgid "Use this style here, and leave \"%s\" unchanged"
+msgstr "Χρησιμοποιήστε αυτό το στυλ εδώ, και να αφήστε το \"%s\" αμετάβλητο"
+
+#: concrete/elements/custom_styleBAK.php:98
+msgid "Save this style as a new preset"
+msgstr "Αποθηκεύστε αυτό το στυλ ως νέα προρύθμιση."
+
+#: concrete/elements/custom_styleBAK.php:106
+msgid "Save this style as a new preset."
+msgstr "Αποθηκεύστε αυτό το στυλ ως νέα προρύθμιση."
+
+#: concrete/elements/custom_styleBAK.php:120
+msgid "Reset Styles"
+msgstr "Επαναφορά Στυλ"
+
+#: concrete/elements/custom_styleBAK.php:128
+msgid ""
+"Note: Styles set here are often overridden by those defined within the "
+"various block types."
+msgstr "Σημείωση: Οι ρυθμίσεις του Στυλ που γίνονται εδώ συχνά παρακάμπτονται από εκείνες που ορίζονται στο πλαίσιο των διαφόρων Τύπων Μπλοκ."
 
 #: concrete/elements/conversation/social_share.php:9
 msgid "Share"
@@ -8767,12 +8998,6 @@ msgstr "Twitter"
 #: concrete/elements/conversation/social_share.php:12
 msgid "Facebook"
 msgstr "Facebook"
-
-#: concrete/blocks/file/add.php:10 concrete/blocks/file/edit.php:14
-#: concrete/elements/conversation/display.php:82
-#: concrete/elements/conversation/social_share.php:13
-msgid "Link"
-msgstr "Σύνδεσμος"
 
 #: concrete/elements/conversation/message.php:30
 msgid "Best Answer"
@@ -8943,6 +9168,52 @@ msgstr "Περικοπή Εικόνας"
 #: concrete/views/image-editor/control-sets/position.php:97
 msgid "Finalize Crop"
 msgstr "Οριστικοποίηση Περικοπής"
+
+#: concrete/views/dialogs/block/aliasing.php:9
+msgid ""
+"There are no pages of this type added to your website. If there were, you'd "
+"be able to choose which of those pages this block appears on."
+msgstr "Δεν υπάρχουν σελίδες αυτού του τύπου στην ιστοσελίδα σας. Αν υπήρχε, θα είσαστε σε θέση να επιλέξετε σε ποια από αυτές τις σελίδες θα εμφανίζεται αυτό το μπλοκ ."
+
+#: concrete/views/dialogs/block/aliasing.php:13
+msgid ""
+"Choose which pages below this particular block should appear on. Any "
+"previously selected blocks may also be removed using the checkbox. Click the"
+" checkbox in the header to select/deselect all pages."
+msgstr "Επιλέξτε ποιες σελίδες κάτω από αυτό το συγκεκριμένο Μπλοκ θα πρέπει να εμφανίζονται. Κάποια ήδη επιλεγμένα μπλοκ μπορεί επίσης να αφαιρεθούν χρησιμοποιώντας το κουτάκι επιλογών. Κάντε κλικ στο κουτάκι επιλογών στην κεφαλίδα για να ενεργοποιήσετε / απενεργοποιήσετε όλες τις σελίδες."
+
+#: concrete/single_pages/dashboard/users/search.php:78
+#: concrete/views/dialogs/block/aliasing.php:20
+msgid "Date Created"
+msgstr "Ημερομηνία Δημιουργίας"
+
+#: concrete/views/dialogs/block/aliasing.php:21
+msgid "Date Modified"
+msgstr "Ημερομηνία Τροποποίησης"
+
+#: concrete/views/dialogs/block/edit.php:6
+msgid ""
+"Unable to retrieve block object. If this block has been moved please reload "
+"the page."
+msgstr "Δεν είναι δυνατή η ανάκτηση του αντικείμενου του μπλοκ. Αν αυτό το μπλοκ έχει μετακινηθεί ξαναφορτώστε τη σελίδα."
+
+#: concrete/views/dialogs/block/edit.php:14
+msgid ""
+"This block is contained within a global area. Changing its content will "
+"change it everywhere that global area is referenced."
+msgstr "Αυτό το μπλοκ περιέχεται εντός μιας παγκόσμιας περιοχής. Η αλλαγή του περιεχομένου της, θα αλλάξει παντού όπου η παγκόσμια περιοχή έχει αναφορές."
+
+#: concrete/views/dialogs/block/edit.php:20
+msgid ""
+"This is a global block.  Editing it here will change all instances of this "
+"block throughout the site."
+msgstr "Αυτό είναι ένα παγκόσμιο μπλοκ. Η επεξεργασία εδώ θα αλλάξει όλες τις εμφανίσεις αυτού του μπλοκ σε όλο το site."
+
+#: concrete/views/dialogs/block/edit.php:29
+msgid ""
+"This block is an alias of Page Defaults. Editing it here will \"disconnect\""
+" it so changes to Page Defaults will no longer affect this block."
+msgstr "Το μπλοκ αυτό είναι ένα ψευδώνυμο της Προεπιλεγμένης Σελίδας. Η επεξεργασία εδώ θα το \"αποσυνδέσει\" έτσι ώστε οι αλλαγές στη Προεπιλεγμένη σελίδα δεν θα επηρεάσουν αυτό το μπλοκ."
 
 #: concrete/single_pages/dashboard/users/search.php:136
 #: concrete/views/dialogs/file/bulk/properties.php:9
@@ -9830,10 +10101,6 @@ msgstr "Windows Bitmap"
 msgid "TIFF"
 msgstr "TIFF"
 
-#: concrete/blocks/html/controller.php:23 concrete/config/file_types.php:22
-msgid "HTML"
-msgstr "HTML"
-
 #: concrete/config/file_types.php:23
 msgid "Flash"
 msgstr "Flash"
@@ -10247,7 +10514,7 @@ msgid "Frequently Asked Questions Block"
 msgstr "Μπλοκ Συχνές Ερωτήσεις "
 
 #: concrete/blocks/faq/controller.php:26
-#: concrete/config/install/packages/elemental_full/content.xml:613
+#: concrete/config/install/packages/elemental_full/content.xml:615
 msgid "Frequently Asked Questions"
 msgstr "Συχνές Ερωτήσεις"
 
@@ -10530,13 +10797,6 @@ msgstr "Το θέμα σας δεν μπορεί να είναι κενό."
 #: concrete/single_pages/profile/messages.php:146
 msgid "Message"
 msgstr "Μήνυμα"
-
-#: concrete/blocks/image/composer.php:18
-#: concrete/blocks/image/composer/thumbnail.php:31
-#: concrete/blocks/image/form.php:29
-#: concrete/single_pages/dashboard/system/basics/images.php:19
-msgid "Choose Image"
-msgstr "Επιλέξτε Εικόνα"
 
 #: concrete/blocks/image/composer/thumbnail.php:33
 msgid "Target Width"
@@ -12241,6 +12501,7 @@ msgid "Are you sure you want to permanently remove this file set?"
 msgstr "Είστε βέβαιοι ότι θέλετε να καταργήσετε οριστικά αυτό το Σετ Αρχείων;"
 
 #: concrete/single_pages/dashboard/files/sets.php:21
+#: concrete/single_pages/dashboard/pages/types/form.php:53
 #: concrete/single_pages/dashboard/system/attributes/sets.php:49
 #: concrete/single_pages/dashboard/system/attributes/sets.php:56
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:276
@@ -12956,11 +13217,6 @@ msgstr "Αφαιρέστε το χρήστη από την ομάδα και ν�
 msgid "Edit Set"
 msgstr "Επεξεργασία Σετ"
 
-#: concrete/single_pages/dashboard/system/attributes/sets.php:43
-#: concrete/single_pages/dashboard/users/group_sets.php:31
-msgid "Update Set"
-msgstr "Ενημέρωση Σετ"
-
 #: concrete/single_pages/dashboard/system/attributes/sets.php:50
 #: concrete/single_pages/dashboard/users/group_sets.php:42
 msgid ""
@@ -12996,8 +13252,8 @@ msgstr "Σετ Ομάδων"
 msgid "You have not added any group sets."
 msgstr "Δεν έχετε προσθέσει κάποιο Σετ Ομάδων."
 
-#: concrete/single_pages/dashboard/pages/types/form.php:23
-#: concrete/single_pages/dashboard/pages/types/form.php:30
+#: concrete/single_pages/dashboard/pages/types/form.php:22
+#: concrete/single_pages/dashboard/pages/types/form.php:28
 #: concrete/single_pages/dashboard/system/attributes/sets.php:139
 #: concrete/single_pages/dashboard/system/attributes/sets.php:155
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:407
@@ -13234,38 +13490,29 @@ msgstr "Πληροφορίες Εγγραφής"
 msgid "Track page view statistics."
 msgstr "Παρακολούθηση στατιστικών σελίδας"
 
-#: concrete/config/install/base/dashboard.xml:558
-#: concrete/single_pages/dashboard/system/seo/searchindex.php:4
-msgid "Search Index"
-msgstr "Ευρετήριο Αναζήτησης "
-
-#: concrete/single_pages/dashboard/system/seo/searchindex.php:4
-msgid "Choose which areas on your site are indexed."
-msgstr "Επιλέξτε ποιες περιοχές στο δικτυακό σας τόπο είναι σε ευρετήριο."
-
-#: concrete/single_pages/dashboard/system/seo/searchindex.php:9
+#: concrete/single_pages/dashboard/system/seo/searchindex.php:7
 msgid "Indexing Method"
 msgstr "Μέθοδος Ευρετηρίου"
 
-#: concrete/single_pages/dashboard/system/seo/searchindex.php:12
+#: concrete/single_pages/dashboard/system/seo/searchindex.php:10
 msgid "Whitelist: Selected areas are only areas indexed."
 msgstr "Λευκή Λίστα: Οι Επιλεγμένες περιοχές είναι οι μόνες περιοχές στο ευρετήριο."
 
-#: concrete/single_pages/dashboard/system/seo/searchindex.php:13
+#: concrete/single_pages/dashboard/system/seo/searchindex.php:11
 msgid "Blacklist: Every area but the selected areas are indexed."
 msgstr "Μαύρη λίστα: Κάθε περιοχή, εκτός από τις επιλεγμένες περιοχές είναι στο ευρετήριο."
 
-#: concrete/single_pages/dashboard/system/seo/searchindex.php:20
+#: concrete/single_pages/dashboard/system/seo/searchindex.php:18
 msgid "Areas"
 msgstr "Περιοχές"
 
-#: concrete/single_pages/dashboard/system/seo/searchindex.php:31
+#: concrete/single_pages/dashboard/system/seo/searchindex.php:32
 msgid ""
 "Once the index is clear, you must reindex your site from the Automated Jobs "
 "page."
 msgstr "Όταν το ευρετήριο καθαρίσει, θα πρέπει να να δημιουργήσετε ευρετήριο ξανά για το site σας από το από τη Σελίδα Αυτοματοποιημένων Εργασιών"
 
-#: concrete/single_pages/dashboard/system/seo/searchindex.php:31
+#: concrete/single_pages/dashboard/system/seo/searchindex.php:32
 msgid "Clear Search Index"
 msgstr "Απαλοιφή Ευρετήριου Αναζήτησης"
 
@@ -14664,39 +14911,39 @@ msgstr "(User ID: %s)"
 msgid "Edit Defaults"
 msgstr "Επεξεργασία προεπιλογών"
 
-#: concrete/single_pages/dashboard/pages/types/form.php:15
-#: concrete/single_pages/dashboard/pages/types/form.php:61
+#: concrete/single_pages/dashboard/pages/types/form.php:14
+#: concrete/single_pages/dashboard/pages/types/form.php:63
 msgctxt "Name of a set"
 msgid "Set Name"
 msgstr "Όνομα Σετ"
 
-#: concrete/single_pages/dashboard/pages/types/form.php:42
+#: concrete/single_pages/dashboard/pages/types/form.php:39
 msgid "Add Form Control"
 msgstr "Προσθήκη ελέγχου φόρμας"
 
-#: concrete/single_pages/dashboard/pages/types/form.php:51
+#: concrete/single_pages/dashboard/pages/types/form.php:48
 msgid "Delete this form layout set? This cannot be undone."
 msgstr "Διαγράψτε αυτό σετ layout της φόρμας; Αυτό δεν μπορεί να αναιρεθεί."
 
-#: concrete/single_pages/dashboard/pages/types/form.php:82
+#: concrete/single_pages/dashboard/pages/types/form.php:88
 msgid "You have not added any composer form layout control sets."
 msgstr "Δεν έχετε προσθέσει σετ ελέγχου layout της φόρμας του συνθέτη."
 
-#: concrete/single_pages/dashboard/pages/types/form.php:95
+#: concrete/single_pages/dashboard/pages/types/form.php:128
 msgid "Add Control Set"
 msgstr "Προσθήκη Σετ Ελέγχου"
 
-#: concrete/single_pages/dashboard/pages/types/form.php:105
-msgid "Delete Set "
-msgstr "Διαγραφή Set"
+#: concrete/single_pages/dashboard/pages/types/form.php:138
+msgid "Delete Control Set"
+msgstr ""
 
-#: concrete/single_pages/dashboard/pages/types/form.php:131
-msgid "Update Set "
-msgstr "Ενημέρωση Set"
+#: concrete/single_pages/dashboard/pages/types/form.php:148
+msgid "Update Control Set"
+msgstr ""
 
-#: concrete/single_pages/dashboard/pages/types/form.php:214
-msgid "Delete Control "
-msgstr "Διαγραφή Ελέγχου"
+#: concrete/single_pages/dashboard/pages/types/form.php:215
+msgid "Delete Control"
+msgstr ""
 
 #: concrete/single_pages/dashboard/pages/types/permissions.php:19
 msgid "You cannot access page type permissions."
@@ -15614,6 +15861,10 @@ msgstr "pretty, slug"
 msgid "turn off statistics, tracking, statistics, pageviews, hits"
 msgstr "απενεργοποιήστε στατιστικά στοιχεία, παρακολούθηση, στατιστικά, εμφανίσεις σελίδων, επισκέψεις"
 
+#: concrete/config/install/base/dashboard.xml:558
+msgid "Search Index"
+msgstr "Ευρετήριο Αναζήτησης "
+
 #. Keywords for page /dashboard/system/seo/searchindex
 #: concrete/config/install/base/dashboard.xml:561
 msgid "configure search, site search, search option"
@@ -16046,13 +16297,13 @@ msgstr "Κατάλογος"
 
 #: concrete/config/install/base/login_registration.xml:20
 #: concrete/config/install/packages/elemental_blank/content.xml:29
-#: concrete/config/install/packages/elemental_full/content.xml:141
-#: concrete/config/install/packages/elemental_full/content.xml:164
-#: concrete/config/install/packages/elemental_full/content.xml:179
-#: concrete/config/install/packages/elemental_full/content.xml:312
-#: concrete/config/install/packages/elemental_full/content.xml:323
-#: concrete/config/install/packages/elemental_full/content.xml:482
-#: concrete/config/install/packages/elemental_full/content.xml:614
+#: concrete/config/install/packages/elemental_full/content.xml:143
+#: concrete/config/install/packages/elemental_full/content.xml:166
+#: concrete/config/install/packages/elemental_full/content.xml:181
+#: concrete/config/install/packages/elemental_full/content.xml:314
+#: concrete/config/install/packages/elemental_full/content.xml:325
+#: concrete/config/install/packages/elemental_full/content.xml:484
+#: concrete/config/install/packages/elemental_full/content.xml:616
 msgctxt "AreaName"
 msgid "Main"
 msgstr "Κύριο"
@@ -17204,96 +17455,88 @@ msgstr "Δεξιά Πλευρική Μπάρα"
 msgid "Empty Page"
 msgstr "Κενή Σελίδα"
 
-#: concrete/config/install/packages/elemental_full/content.xml:17
-msgctxt "PageTypeFormLayoutSetName"
+#: concrete/config/install/packages/elemental_blank/content.xml:15
+#: concrete/config/install/packages/elemental_full/content.xml:18
+msgctxt "PageTypeComposerFormLayoutSetName"
 msgid "Basics"
 msgstr "Βασικά"
 
-#: concrete/config/install/packages/elemental_full/content.xml:18
-msgctxt "PageTypeFormLayoutSetControlCustomLabel"
+#: concrete/config/install/packages/elemental_blank/content.xml:16
+#: concrete/config/install/packages/elemental_full/content.xml:19
+msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Page Name"
 msgstr "Όνομα Σελίδας"
 
-#: concrete/config/install/packages/elemental_full/content.xml:41
+#: concrete/config/install/packages/elemental_full/content.xml:43
 msgid "Footer Contact"
 msgstr "Υποσέλιδο Επικοινωνίας"
 
-#: concrete/config/install/packages/elemental_full/content.xml:42
-#: concrete/config/install/packages/elemental_full/content.xml:53
-#: concrete/config/install/packages/elemental_full/content.xml:64
-#: concrete/config/install/packages/elemental_full/content.xml:75
-#: concrete/config/install/packages/elemental_full/content.xml:86
-#: concrete/config/install/packages/elemental_full/content.xml:95
-#: concrete/config/install/packages/elemental_full/content.xml:113
-#: concrete/config/install/packages/elemental_full/content.xml:128
+#: concrete/config/install/packages/elemental_full/content.xml:44
+#: concrete/config/install/packages/elemental_full/content.xml:55
+#: concrete/config/install/packages/elemental_full/content.xml:66
+#: concrete/config/install/packages/elemental_full/content.xml:77
+#: concrete/config/install/packages/elemental_full/content.xml:88
+#: concrete/config/install/packages/elemental_full/content.xml:97
+#: concrete/config/install/packages/elemental_full/content.xml:115
+#: concrete/config/install/packages/elemental_full/content.xml:130
 msgid "Main"
 msgstr "Κύριο"
 
-#: concrete/config/install/packages/elemental_full/content.xml:52
+#: concrete/config/install/packages/elemental_full/content.xml:54
 msgid "Footer Legal"
 msgstr "Τίτλοι Υποσέλιδου"
 
-#: concrete/config/install/packages/elemental_full/content.xml:63
+#: concrete/config/install/packages/elemental_full/content.xml:65
 msgid "Footer Navigation"
 msgstr "Πλοήγηση Υποσέλιδου"
 
-#: concrete/config/install/packages/elemental_full/content.xml:74
+#: concrete/config/install/packages/elemental_full/content.xml:76
 msgid "Footer Site Title"
 msgstr "Τίτλος Ιστοχώρου Υποσέλιδου"
 
-#: concrete/config/install/packages/elemental_full/content.xml:85
+#: concrete/config/install/packages/elemental_full/content.xml:87
 msgid "Footer Social"
 msgstr "Κοινωνική Δικτύωση Υποσέλιδου"
 
-#: concrete/config/install/packages/elemental_full/content.xml:94
+#: concrete/config/install/packages/elemental_full/content.xml:96
 msgid "Header Navigation"
 msgstr "Επικεφαλίδα πλοήγησης"
 
-#: concrete/config/install/packages/elemental_full/content.xml:112
+#: concrete/config/install/packages/elemental_full/content.xml:114
 msgid "Header Search"
 msgstr "Αναζήτηση Κεφαλίδας"
 
-#: concrete/config/install/packages/elemental_full/content.xml:127
+#: concrete/config/install/packages/elemental_full/content.xml:129
 msgid "Header Site Title"
 msgstr "Τίτλος Ιστοχώρου Κεφαλίδας"
 
-#: concrete/config/install/packages/elemental_full/content.xml:178
+#: concrete/config/install/packages/elemental_full/content.xml:180
 msgid "About"
 msgstr "Σχετικά με"
 
-#: concrete/config/install/packages/elemental_full/content.xml:306
+#: concrete/config/install/packages/elemental_full/content.xml:308
 msgid "Blank Page"
 msgstr "Κενή Σελίδα"
 
-#: concrete/config/install/packages/elemental_full/content.xml:322
+#: concrete/config/install/packages/elemental_full/content.xml:324
 msgid "Contact Us"
 msgstr "Επικοινωνήστε μαζί μας"
 
-#: concrete/config/install/packages/elemental_full/content.xml:481
+#: concrete/config/install/packages/elemental_full/content.xml:483
 msgid "Careers"
 msgstr "Careers"
 
-#: concrete/config/install/packages/elemental_full/content.xml:633
-msgid "What are page page versions?"
-msgstr "Ποιες είναι οι εκδόσεις της σελίδας;"
+#: concrete/config/install/packages/elemental_full/content.xml:635
+msgid "What are page versions?"
+msgstr "Τι είναι οι εκδόσεις σελίδας;"
 
-#: concrete/config/install/packages/elemental_full/content.xml:640
+#: concrete/config/install/packages/elemental_full/content.xml:642
 msgid "How do I add more people as editors in my website?"
 msgstr "Πώς μπορώ να προσθέσω περισσότερους ανθρώπους ως συντάκτες στην ιστοσελίδα μου;"
 
 #: concrete/config/install/packages/elemental_blank/content.xml:10
 msgid "Page"
 msgstr "Σελίδα"
-
-#: concrete/config/install/packages/elemental_blank/content.xml:15
-msgctxt "PageTypeComposerFormLayoutSetName"
-msgid "Basics"
-msgstr "Βασικά"
-
-#: concrete/config/install/packages/elemental_blank/content.xml:16
-msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
-msgid "Page Name"
-msgstr "Όνομα Σελίδας"
 
 #: concrete/config/install/packages/elemental_blank/content.xml:22
 msgctxt "PageTypeComposerFormLayoutSetName"
