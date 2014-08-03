@@ -5,9 +5,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-07-29 04:00+0000\n"
-"PO-Revision-Date: 2014-07-29 10:02+0000\n"
-"Last-Translator: Heikki Ylipaavalniemi\n"
+"POT-Creation-Date: 2014-08-02 10:14+0000\n"
+"PO-Revision-Date: 2014-08-02 10:31+0000\n"
+"Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Finnish (Finland) (http://www.transifex.com/projects/p/concrete5/language/fi_FI/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -429,7 +429,7 @@ msgstr "Laskeva"
 #: concrete/elements/permission/lists/tree/node.php:66
 #: concrete/single_pages/account/profile/edit.php:92
 #: concrete/single_pages/dashboard/blocks/permissions.php:19
-#: concrete/single_pages/dashboard/files/sets.php:108
+#: concrete/single_pages/dashboard/files/sets.php:101
 #: concrete/single_pages/dashboard/pages/themes/customize.php:97
 #: concrete/single_pages/dashboard/pages/themes/view.php:115
 #: concrete/single_pages/dashboard/pages/types/composer.php:187
@@ -438,7 +438,7 @@ msgstr "Laskeva"
 #: concrete/single_pages/dashboard/system/attributes/types.php:34
 #: concrete/single_pages/dashboard/system/basics/icons.php:17
 #: concrete/single_pages/dashboard/system/basics/icons.php:39
-#: concrete/single_pages/dashboard/system/basics/icons.php:69
+#: concrete/single_pages/dashboard/system/basics/icons.php:86
 #: concrete/single_pages/dashboard/system/basics/images.php:38
 #: concrete/single_pages/dashboard/system/basics/multilingual/view.php:40
 #: concrete/single_pages/dashboard/system/basics/name.php:13
@@ -452,14 +452,15 @@ msgstr "Laskeva"
 #: concrete/single_pages/dashboard/system/environment/debug.php:24
 #: concrete/single_pages/dashboard/system/environment/logging.php:26
 #: concrete/single_pages/dashboard/system/environment/proxy.php:40
-#: concrete/single_pages/dashboard/system/environment/storage.php:79
+#: concrete/single_pages/dashboard/system/files/filetypes.php:20
+#: concrete/single_pages/dashboard/system/files/permissions.php:23
+#: concrete/single_pages/dashboard/system/files/storage.php:79
+#: concrete/single_pages/dashboard/system/files/thumbnails.php:73
 #: concrete/single_pages/dashboard/system/mail/importers.php:65
 #: concrete/single_pages/dashboard/system/mail/method.php:52
 #: concrete/single_pages/dashboard/system/optimization/cache.php:114
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:190
 #: concrete/single_pages/dashboard/system/permissions/blacklist.php:67
-#: concrete/single_pages/dashboard/system/permissions/files.php:23
-#: concrete/single_pages/dashboard/system/permissions/filetypes.php:20
 #: concrete/single_pages/dashboard/system/permissions/maintenance.php:17
 #: concrete/single_pages/dashboard/system/permissions/site.php:54
 #: concrete/single_pages/dashboard/system/permissions/tasks.php:22
@@ -500,6 +501,8 @@ msgstr "Tallenna"
 #: concrete/controllers/backend/user.php:76
 #: concrete/controllers/dialog/file/properties.php:105
 #: concrete/controllers/dialog/file/properties.php:108
+#: concrete/controllers/dialog/file/thumbnails/edit.php:34
+#: concrete/controllers/dialog/file/thumbnails/edit.php:37
 #: concrete/controllers/single_page/dashboard/users/search.php:42
 #: concrete/controllers/single_page/dashboard/users/search.php:59
 #: concrete/tools/dashboard/attribute_set_order_update.php:13
@@ -538,7 +541,7 @@ msgstr "Tiedostoryhmien haku epäonnistui."
 msgid "None of the requested files could be found."
 msgstr "Yhtään pyydetyistä tiedostoista ei löytynyt."
 
-#: concrete/core/Backup/ContentExporter.php:198
+#: concrete/core/Backup/ContentExporter.php:203
 #: concrete/core/Legacy/FileList.php:116 concrete/tools/files/download.php:42
 msgid "Could not open with ZipArchive::CREATE"
 msgstr "Ei voitu avata ZipArchive::CREATE:n avulla."
@@ -597,14 +600,13 @@ msgstr "Lisää muualla olevia tiedostoja"
 
 #: concrete/tools/files/import.php:73
 #: concrete/views/dialogs/file/properties.php:38
-#: concrete/views/dialogs/file/properties.php:169
+#: concrete/views/dialogs/file/properties.php:177
 msgid "Filename"
 msgstr "Tiedostonimi"
 
 #: concrete/core/File/Search/ColumnSet/DefaultSet.php:24
-#: concrete/elements/custom_style/fonts.php:23
 #: concrete/elements/files/search.php:6 concrete/tools/files/import.php:74
-#: concrete/tools/i18n_js.php:96 concrete/views/dialogs/file/properties.php:70
+#: concrete/tools/i18n_js.php:96 concrete/views/dialogs/file/properties.php:78
 #: concrete/views/image-editor/filters/vignette.php:14
 msgid "Size"
 msgstr "Koko"
@@ -653,7 +655,7 @@ msgstr "Poista tiedostot incoming/-hakemistosta."
 #: concrete/single_pages/dashboard/extend/install.php:43
 #: concrete/single_pages/dashboard/extend/install.php:95
 #: concrete/single_pages/dashboard/files/add_set.php:19
-#: concrete/single_pages/dashboard/files/sets.php:107
+#: concrete/single_pages/dashboard/files/sets.php:100
 #: concrete/single_pages/dashboard/pages/templates/add.php:46
 #: concrete/single_pages/dashboard/pages/templates/view.php:58
 #: concrete/single_pages/dashboard/pages/themes/view.php:34
@@ -664,9 +666,10 @@ msgstr "Poista tiedostot incoming/-hakemistosta."
 #: concrete/single_pages/dashboard/pages/types/view.php:91
 #: concrete/single_pages/dashboard/system/attributes/topics/add.php:21
 #: concrete/single_pages/dashboard/system/attributes/topics/view.php:65
+#: concrete/single_pages/dashboard/system/basics/icons.php:76
 #: concrete/single_pages/dashboard/system/basics/social.php:35
 #: concrete/single_pages/dashboard/system/basics/social.php:76
-#: concrete/single_pages/dashboard/system/permissions/files.php:22
+#: concrete/single_pages/dashboard/system/files/permissions.php:22
 #: concrete/single_pages/dashboard/system/registration/authentication.php:90
 #: concrete/single_pages/dashboard/users/add.php:109
 #: concrete/single_pages/dashboard/users/add_group.php:216
@@ -771,7 +774,7 @@ msgid "Protect with Password"
 msgstr "Suojaa salasanalla"
 
 #: concrete/tools/files/permissions.php:46
-#: concrete/views/dialogs/file/properties.php:81
+#: concrete/views/dialogs/file/properties.php:89
 msgid "Storage Location"
 msgstr "Varaston sijainti"
 
@@ -811,7 +814,7 @@ msgstr "Tallenna sijainti"
 msgid "In Set(s)"
 msgstr "Ryhmissä"
 
-#: concrete/controllers/panel/page/attributes.php:50
+#: concrete/controllers/panel/page/attributes.php:54
 #: concrete/elements/dashboard/attributes_table.php:81
 #: concrete/elements/files/search.php:72
 #: concrete/tools/files/search_sets_reload.php:23
@@ -883,7 +886,7 @@ msgstr "Virhe ladattaessa osoitetta %s"
 #: concrete/elements/conversation/message.php:78
 #: concrete/elements/files/search.php:33
 #: concrete/single_pages/dashboard/extend/install.php:291
-#: concrete/single_pages/dashboard/system/backup/backup.php:113
+#: concrete/single_pages/dashboard/system/backup/backup.php:112
 #: concrete/single_pages/dashboard/system/backup/update.php:24
 #: concrete/single_pages/download_file.php:28 concrete/tools/files/view.php:35
 #: concrete/tools/i18n_js.php:187 concrete/tools/i18n_redactor_js.php:70
@@ -923,7 +926,7 @@ msgstr "(Huomaa: tässä ryhmässä olevia tiedostoja ei poisteta.)"
 #: concrete/single_pages/dashboard/pages/types/view.php:98
 #: concrete/single_pages/dashboard/reports/forms.php:141
 #: concrete/single_pages/dashboard/reports/forms.php:290
-#: concrete/single_pages/dashboard/system/backup/backup.php:117
+#: concrete/single_pages/dashboard/system/backup/backup.php:116
 #: concrete/single_pages/dashboard/system/conversations/bannedwords.php:43
 #: concrete/single_pages/dashboard/system/conversations/bannedwords.php:64
 #: concrete/single_pages/dashboard/users/groups.php:202
@@ -949,9 +952,6 @@ msgstr "Yhden tai useamman tiedoston kopiointi epäonnistui."
 
 #: concrete/blocks/form/controller.php:325
 #: concrete/controllers/backend/user_interface/file.php:21
-#: concrete/controllers/single_page/dashboard/system/basics/icons.php:63
-#: concrete/controllers/single_page/dashboard/system/basics/icons.php:94
-#: concrete/controllers/single_page/dashboard/system/basics/icons.php:126
 #: concrete/core/File/Importer.php:36 concrete/tools/files/duplicate.php:42
 msgid "Invalid file."
 msgstr "Virheellinen tiedosto."
@@ -1106,7 +1106,7 @@ msgstr "Lue arvosteluja"
 #: concrete/single_pages/dashboard/extend/install.php:262
 #: concrete/single_pages/dashboard/files/sets.php:29
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:255
-#: concrete/single_pages/dashboard/users/group_sets.php:19
+#: concrete/single_pages/dashboard/users/group_sets.php:13
 #: concrete/single_pages/dashboard/users/points/view.php:32
 #: concrete/tools/marketplace/details.php:79
 #: concrete/views/dialogs/file/properties.php:11
@@ -1150,7 +1150,7 @@ msgstr "Sinulla ei ole oikeutta raahata tätä solmua tänne."
 msgid "Category Name"
 msgstr "Kategorianimi"
 
-#: concrete/elements/files/add_to_sets.php:271
+#: concrete/elements/files/add_to_sets.php:264
 #: concrete/single_pages/dashboard/pages/templates/view.php:61
 #: concrete/single_pages/dashboard/system/backup/update.php:66
 #: concrete/single_pages/dashboard/system/backup/update.php:91
@@ -1184,7 +1184,8 @@ msgstr "Aihe"
 #: concrete/single_pages/dashboard/pages/templates/add.php:47
 #: concrete/single_pages/dashboard/pages/types/add.php:9
 #: concrete/single_pages/dashboard/system/basics/social.php:77
-#: concrete/single_pages/dashboard/system/environment/storage.php:81
+#: concrete/single_pages/dashboard/system/files/storage.php:81
+#: concrete/single_pages/dashboard/system/files/thumbnails.php:75
 #: concrete/single_pages/dashboard/users/add.php:110
 #: concrete/single_pages/dashboard/users/points/actions.php:57
 #: concrete/single_pages/dashboard/workflow/workflows.php:70
@@ -1211,7 +1212,7 @@ msgid "Flat View"
 msgstr "Litteä näkymä"
 
 #: concrete/blocks/search/controller.php:82
-#: concrete/config/install/packages/elemental_full/content.xml:515
+#: concrete/config/install/packages/elemental_full/content.xml:698
 #: concrete/elements/block_area_add_stack.php:17
 #: concrete/elements/files/search.php:45 concrete/elements/group/search.php:26
 #: concrete/elements/marketplace/search_form.php:24
@@ -1221,7 +1222,7 @@ msgstr "Litteä näkymä"
 #: concrete/single_pages/account/members/directory.php:12
 #: concrete/single_pages/account/members/directory.php:13
 #: concrete/single_pages/dashboard/conversations/messages.php:94
-#: concrete/single_pages/dashboard/files/sets.php:149
+#: concrete/single_pages/dashboard/files/sets.php:141
 #: concrete/single_pages/dashboard/reports/logs.php:21
 #: concrete/single_pages/dashboard/reports/logs.php:26
 #: concrete/single_pages/dashboard/sitemap/full.php:35
@@ -1348,7 +1349,7 @@ msgstr "Valitse sivu"
 
 #: concrete/elements/collection_preview_as_user.php:32
 #: concrete/elements/dashboard/attributes_table.php:156
-#: concrete/single_pages/dashboard/system/environment/storage.php:115
+#: concrete/single_pages/dashboard/system/files/storage.php:115
 #: concrete/single_pages/dashboard/system/permissions/blacklist.php:36
 #: concrete/tools/dashboard/sitemap_drag_request.php:230
 msgid "Go"
@@ -1455,19 +1456,21 @@ msgstr "Vain käyttäjät, jotka ovat jäseniä KAIKISSA valituissa ryhmissä sa
 #: concrete/single_pages/dashboard/pages/types/view.php:32
 #: concrete/single_pages/dashboard/reports/surveys.php:82
 #: concrete/single_pages/dashboard/sitemap/full.php:34
-#: concrete/single_pages/dashboard/system/attributes/sets.php:36
-#: concrete/single_pages/dashboard/system/attributes/sets.php:151
+#: concrete/single_pages/dashboard/system/attributes/sets.php:37
+#: concrete/single_pages/dashboard/system/attributes/sets.php:145
 #: concrete/single_pages/dashboard/system/attributes/types.php:15
 #: concrete/single_pages/dashboard/system/conversations/points.php:10
-#: concrete/single_pages/dashboard/system/environment/storage.php:41
+#: concrete/single_pages/dashboard/system/files/storage.php:41
+#: concrete/single_pages/dashboard/system/files/thumbnails.php:50
+#: concrete/single_pages/dashboard/system/files/thumbnails.php:102
 #: concrete/single_pages/dashboard/system/mail/importers.php:77
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:53
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:207
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:258
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:411
 #: concrete/single_pages/dashboard/users/add_group.php:24
-#: concrete/single_pages/dashboard/users/group_sets.php:22
-#: concrete/single_pages/dashboard/users/group_sets.php:137
+#: concrete/single_pages/dashboard/users/group_sets.php:15
+#: concrete/single_pages/dashboard/users/group_sets.php:106
 #: concrete/single_pages/dashboard/users/groups.php:34
 #: concrete/single_pages/dashboard/workflow/workflows.php:39
 #: concrete/tools/pages/delete.php:90
@@ -1531,7 +1534,7 @@ msgstr "Tekijä"
 #: concrete/blocks/faq/form_setup_html.php:71
 #: concrete/blocks/faq/form_setup_html.php:92
 #: concrete/blocks/image_slider/form_setup_html.php:170
-#: concrete/core/File/Version.php:485
+#: concrete/core/File/Version.php:474
 #: concrete/core/Page/Type/Composer/Control/CorePageProperty/DescriptionCorePageProperty.php:10
 #: concrete/elements/collection_add.php:46
 #: concrete/single_pages/dashboard/blocks/types/view.php:8
@@ -1539,7 +1542,7 @@ msgstr "Tekijä"
 #: concrete/single_pages/dashboard/users/add_group.php:29
 #: concrete/single_pages/dashboard/users/groups.php:39
 #: concrete/tools/panels/details/page/properties.php:49
-#: concrete/views/dialogs/file/properties.php:90
+#: concrete/views/dialogs/file/properties.php:98
 #: concrete/views/panels/details/page/attributes.php:54
 msgid "Description"
 msgstr "Kuvaus"
@@ -1794,9 +1797,9 @@ msgstr "Poista ylätunniste"
 #: concrete/blocks/tags/tag_form.php:10
 #: concrete/blocks/youtube/form_setup_html.php:20
 #: concrete/core/File/Search/ColumnSet/DefaultSet.php:21
-#: concrete/core/File/Version.php:482 concrete/tools/i18n_redactor_js.php:57
-#: concrete/views/dialogs/file/properties.php:86
-#: concrete/views/dialogs/file/properties.php:170
+#: concrete/core/File/Version.php:471 concrete/tools/i18n_redactor_js.php:57
+#: concrete/views/dialogs/file/properties.php:94
+#: concrete/views/dialogs/file/properties.php:178
 msgid "Title"
 msgstr "Otsikko"
 
@@ -1810,7 +1813,6 @@ msgstr "Sijainti"
 #: concrete/blocks/image/form.php:44 concrete/blocks/survey/edit.php:48
 #: concrete/elements/custom_style.php:61 concrete/elements/custom_style.php:67
 #: concrete/elements/custom_style.php:79 concrete/elements/custom_style.php:86
-#: concrete/elements/custom_style/background.php:20
 #: concrete/elements/permission/access/list.php:33
 #: concrete/elements/permission/labels.php:49
 #: concrete/single_pages/account/profile/public_profile.php:55
@@ -1827,10 +1829,6 @@ msgstr "Ei mitään"
 #: concrete/elements/custom_style.php:81
 #: concrete/elements/custom_style.php:207
 #: concrete/elements/custom_style.php:239
-#: concrete/elements/custom_style/border.php:42
-#: concrete/elements/custom_style/fonts.php:53
-#: concrete/elements/custom_style/spacing.php:33
-#: concrete/elements/custom_style/spacing.php:70
 #: concrete/tools/i18n_redactor_js.php:60
 msgid "Left"
 msgstr "Vasen"
@@ -1838,15 +1836,10 @@ msgstr "Vasen"
 #: concrete/elements/custom_style.php:80
 #: concrete/elements/custom_style.php:193
 #: concrete/elements/custom_style.php:225
-#: concrete/elements/custom_style/border.php:40
-#: concrete/elements/custom_style/fonts.php:55
-#: concrete/elements/custom_style/spacing.php:17
-#: concrete/elements/custom_style/spacing.php:54
 #: concrete/tools/i18n_redactor_js.php:61
 msgid "Right"
 msgstr "Oikea"
 
-#: concrete/elements/custom_style/fonts.php:54
 #: concrete/tools/i18n_redactor_js.php:62
 msgid "Center"
 msgstr "Keskitetty"
@@ -1859,7 +1852,7 @@ msgstr "Kuvan www-linkki"
 msgid "Text"
 msgstr "Teksti"
 
-#: concrete/config/install/base/dashboard.xml:680
+#: concrete/config/install/base/dashboard.xml:696
 #: concrete/core/User/Search/ColumnSet/DefaultSet.php:22
 #: concrete/elements/users/confirm_list.php:8
 #: concrete/mail/user_register_approval_required.php:15
@@ -1889,8 +1882,9 @@ msgstr "Lisää tiedosto"
 
 #: concrete/core/Form/Service/Widget/Color.php:35
 #: concrete/core/StyleCustomizer/Style/ColorStyle.php:42
-#: concrete/elements/users/search.php:48 concrete/tools/i18n_js.php:188
-#: concrete/tools/i18n_redactor_js.php:71
+#: concrete/elements/users/search.php:48
+#: concrete/single_pages/dashboard/system/basics/icons.php:77
+#: concrete/tools/i18n_js.php:188 concrete/tools/i18n_redactor_js.php:71
 msgid "Choose"
 msgstr "Valitse"
 
@@ -1940,7 +1934,6 @@ msgid "Underline"
 msgstr "Alleviivaus"
 
 #: concrete/elements/custom_style.php:127
-#: concrete/elements/custom_style/fonts.php:48
 #: concrete/tools/i18n_redactor_js.php:83
 msgid "Alignment"
 msgstr "Tasaus"
@@ -2026,15 +2019,14 @@ msgstr "Vanhat versiot"
 msgid "ID"
 msgstr "Tunniste"
 
-#: concrete/blocks/page_list/templates/blog_index.php:18
 #: concrete/single_pages/dashboard/users/points/assign.php:28
 #: concrete/tools/versions.php:353
-#: concrete/views/dialogs/file/properties.php:171
+#: concrete/views/dialogs/file/properties.php:179
 msgid "Comments"
 msgstr "Kommentit"
 
 #: concrete/tools/versions.php:354
-#: concrete/views/dialogs/file/properties.php:172
+#: concrete/views/dialogs/file/properties.php:180
 msgid "Creator"
 msgstr "Luoja"
 
@@ -2214,6 +2206,7 @@ msgstr "Oma sivupohja"
 #: concrete/blocks/form/form_setup_html.php:152
 #: concrete/blocks/form/form_setup_html.php:223
 #: concrete/blocks/form/view.php:108
+#: concrete/single_pages/dashboard/system/files/thumbnails.php:105
 #: concrete/tools/page_types/composer/form/edit_control.php:54
 msgid "Required"
 msgstr "Pakollinen"
@@ -2590,7 +2583,7 @@ msgstr "Fontin koko"
 msgid "Letter spacing"
 msgstr "Kirjainten välistys"
 
-#: concrete/elements/custom_style/fonts.php:31 concrete/tools/i18n_js.php:104
+#: concrete/tools/i18n_js.php:104
 msgid "Line Height"
 msgstr "Rivin korkeus"
 
@@ -2609,7 +2602,7 @@ msgid "SEO"
 msgstr "Hakukoneoptimointi"
 
 #: concrete/blocks/google_map/form_setup_html.php:15
-#: concrete/blocks/page_list/page_list_form.php:79
+#: concrete/blocks/page_list/page_list_form.php:87
 #: concrete/elements/page_controls_footer.php:50
 #: concrete/elements/panels/page.php:59 concrete/tools/i18n_js.php:118
 #: concrete/tools/i18n_js.php:119
@@ -2656,7 +2649,7 @@ msgstr "Poista pysyvästi"
 #: concrete/config/install/base/dashboard.xml:57
 #: concrete/config/install/base/dashboard.xml:117
 #: concrete/config/install/base/dashboard.xml:315
-#: concrete/config/install/base/dashboard.xml:738
+#: concrete/config/install/base/dashboard.xml:754
 #: concrete/elements/page_controls_footer.php:52
 #: concrete/elements/panels/page.php:79 concrete/tools/i18n_js.php:132
 #: concrete/tools/i18n_js.php:135 concrete/views/panels/page/attributes.php:6
@@ -2686,7 +2679,7 @@ msgstr "Teema ja sivutyyppi päivitetty onnistuneesti."
 #: concrete/elements/page_controls_footer.php:64
 #: concrete/elements/panels/page.php:114 concrete/tools/i18n_js.php:141
 #: concrete/views/dialogs/file/properties.php:12
-#: concrete/views/dialogs/file/properties.php:164
+#: concrete/views/dialogs/file/properties.php:172
 #: concrete/views/panels/page/versions.php:284
 msgid "Versions"
 msgstr "Versiot"
@@ -2816,7 +2809,7 @@ msgstr "Kopioi tiedosto"
 msgid "Choose New File"
 msgstr "Valitse uusi tiedosto"
 
-#: concrete/config/install/base/dashboard.xml:745
+#: concrete/config/install/base/dashboard.xml:761
 #: concrete/elements/files/search.php:35 concrete/elements/files/search.php:67
 #: concrete/tools/i18n_js.php:195
 msgid "Sets"
@@ -3136,11 +3129,11 @@ msgid "Page Type"
 msgstr "Sivutyyppi"
 
 #: concrete/elements/pages/search.php:7 concrete/tools/pages/delete.php:92
-#: concrete/views/dialogs/file/properties.php:74
+#: concrete/views/dialogs/file/properties.php:82
 msgid "Date Added"
 msgstr "Lisätty"
 
-#: concrete/controllers/panel/detail/page/attributes.php:120
+#: concrete/controllers/panel/detail/page/attributes.php:121
 #: concrete/controllers/panel/detail/page/caching.php:24
 #: concrete/controllers/panel/detail/page/caching.php:38
 #: concrete/controllers/panel/detail/page/location.php:95
@@ -3175,7 +3168,7 @@ msgstr "Sivun sijaintitieto tallennettu onnistuneesti."
 msgid "The SEO information has been saved."
 msgstr "SEO-tiedot tallennettu."
 
-#: concrete/controllers/panel/detail/page/attributes.php:121
+#: concrete/controllers/panel/detail/page/attributes.php:122
 msgid "Page Attributes have been saved."
 msgstr "Sivuattribuutit tallennettu onnistuneesti."
 
@@ -3310,6 +3303,7 @@ msgid "Attribute saved successfully."
 msgstr "Attribuutti tallennettu onnistuneesti."
 
 #: concrete/controllers/dialog/file/properties.php:99
+#: concrete/controllers/dialog/file/thumbnails/edit.php:28
 msgid "File updated successfully."
 msgstr "Tiedosto päivitetty onnistuneesti."
 
@@ -3545,7 +3539,7 @@ msgstr "Sinulla ei ole oikeutta ladata lisäosia."
 
 #: concrete/controllers/single_page/dashboard/blocks/permissions.php:38
 #: concrete/controllers/single_page/dashboard/pages/types/permissions.php:18
-#: concrete/controllers/single_page/dashboard/system/permissions/files.php:40
+#: concrete/controllers/single_page/dashboard/system/files/permissions.php:40
 #: concrete/controllers/single_page/dashboard/system/permissions/tasks.php:42
 #: concrete/controllers/single_page/dashboard/system/permissions/users.php:40
 msgid "Permissions updated successfully."
@@ -3652,6 +3646,7 @@ msgid "Pages"
 msgstr "Sivut"
 
 #: concrete/config/install/base/dashboard.xml:46
+#: concrete/config/install/base/dashboard.xml:565
 #: concrete/controllers/single_page/dashboard/workflow/me.php:31
 #: concrete/elements/page_controls_footer.php:75
 #: concrete/themes/dashboard/elements/header.php:50
@@ -3704,7 +3699,7 @@ msgstr "Käyttäjäpiste poistettu."
 #: concrete/controllers/single_page/dashboard/pages/templates/add.php:28
 #: concrete/controllers/single_page/dashboard/users/add_group.php:58
 #: concrete/controllers/single_page/dashboard/users/groups.php:64
-#: concrete/core/Attribute/Controller.php:218
+#: concrete/core/Attribute/Controller.php:223
 msgid "Name required."
 msgstr "Nimi on pakollinen."
 
@@ -3986,6 +3981,74 @@ msgstr "Kenttä \"%s\" on pakollinen"
 msgid "An error occurred while trying to create the account."
 msgstr "Käyttäjätunnuksen luomisessa tapahtui virhe."
 
+#: concrete/controllers/single_page/dashboard/system/files/filetypes.php:31
+msgid "Allowed file types saved."
+msgstr "Sallitut tiedostotyypit tallennettu."
+
+#: concrete/controllers/single_page/dashboard/system/files/thumbnails.php:28
+msgid "Thumbnail type added."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/files/thumbnails.php:34
+msgid "Thumbnail type updated."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/files/thumbnails.php:44
+msgid "Your thumbnail type must have a name."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/files/thumbnails.php:48
+msgid ""
+"Your thumbnail type handle must only contain lowercase letters and "
+"underscores."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/files/thumbnails.php:53
+msgid "Width must be greater than zero."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/files/thumbnails.php:60
+msgid "Thumbnail type removed."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/files/thumbnails.php:73
+#: concrete/controllers/single_page/dashboard/system/files/thumbnails.php:96
+msgid "Invalid thumbnail type object."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/files/thumbnails.php:76
+msgid "You may not delete a required thumbnail type."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/files/storage.php:33
+msgid "File storage location added."
+msgstr "Tiedostovaraston sijainti lisätty."
+
+#: concrete/controllers/single_page/dashboard/system/files/storage.php:38
+msgid "File storage location removed."
+msgstr "Tiedostovaraston sijainti poistettu."
+
+#: concrete/controllers/single_page/dashboard/system/files/storage.php:43
+msgid "File storage location saved."
+msgstr "Tiedostovaraston sijainti tallennettu."
+
+#: concrete/controllers/single_page/dashboard/system/files/storage.php:65
+msgid "Invalid type object."
+msgstr "Virheellinen tyypin objekti."
+
+#: concrete/controllers/single_page/dashboard/system/files/storage.php:74
+msgid "Your file storage location must have a name."
+msgstr "Tiedostovaraston sijainnilla täytyy olla nimi."
+
+#: concrete/controllers/single_page/dashboard/system/files/storage.php:89
+#: concrete/controllers/single_page/dashboard/system/files/storage.php:114
+msgid "Invalid file storage location object."
+msgstr "Virheellinen tiedostovaraston sijainnin objekti."
+
+#: concrete/controllers/single_page/dashboard/system/files/storage.php:117
+msgid "You may not delete the default file storage location."
+msgstr "Et voi poistaa tiedostovaraston oletussijaintia."
+
 #: concrete/controllers/single_page/dashboard/system/seo/statistics.php:17
 msgid "Statistics tracking preference saved."
 msgstr "Tilastojen seuranta-asetukset tallennettu."
@@ -4041,35 +4104,6 @@ msgstr "Välityspalvelimen asetukset tallennettu."
 msgid "Logging configuration saved."
 msgstr "Lokiasetukset tallennettu."
 
-#: concrete/controllers/single_page/dashboard/system/environment/storage.php:33
-msgid "File storage location added."
-msgstr "Tiedostovaraston sijainti lisätty."
-
-#: concrete/controllers/single_page/dashboard/system/environment/storage.php:38
-msgid "File storage location removed."
-msgstr "Tiedostovaraston sijainti poistettu."
-
-#: concrete/controllers/single_page/dashboard/system/environment/storage.php:43
-msgid "File storage location saved."
-msgstr "Tiedostovaraston sijainti tallennettu."
-
-#: concrete/controllers/single_page/dashboard/system/environment/storage.php:65
-msgid "Invalid type object."
-msgstr "Virheellinen tyypin objekti."
-
-#: concrete/controllers/single_page/dashboard/system/environment/storage.php:74
-msgid "Your file storage location must have a name."
-msgstr "Tiedostovaraston sijainnilla täytyy olla nimi."
-
-#: concrete/controllers/single_page/dashboard/system/environment/storage.php:89
-#: concrete/controllers/single_page/dashboard/system/environment/storage.php:114
-msgid "Invalid file storage location object."
-msgstr "Virheellinen tiedostovaraston sijainnin objekti."
-
-#: concrete/controllers/single_page/dashboard/system/environment/storage.php:117
-msgid "You may not delete the default file storage location."
-msgstr "Et voi poistaa tiedostovaraston oletussijaintia."
-
 #: concrete/controllers/single_page/dashboard/system/environment/debug.php:28
 msgid "Debug configuration saved."
 msgstr "Virheenetsinnän asetukset tallennettu."
@@ -4085,10 +4119,6 @@ msgstr "Captcha-asetukset tallennettu."
 #: concrete/controllers/single_page/dashboard/system/permissions/captcha.php:37
 msgid "Invalid captcha library."
 msgstr "Virheellinen captcha-kirjasto."
-
-#: concrete/controllers/single_page/dashboard/system/permissions/filetypes.php:31
-msgid "Allowed file types saved."
-msgstr "Sallitut tiedostotyypit tallennettu."
 
 #: concrete/controllers/single_page/dashboard/system/permissions/maintenance.php:38
 msgid "Maintenance Mode turned on. Your site is now private."
@@ -4243,51 +4273,51 @@ msgstr "Aktiivinen editori on päivitetty."
 msgid "Invalid editor handle."
 msgstr "Virheellinen editorin tunniste."
 
-#: concrete/controllers/single_page/dashboard/system/attributes/sets.php:47
+#: concrete/controllers/single_page/dashboard/system/attributes/sets.php:48
 msgid "Attribute set added."
 msgstr "Attribuuttiryhmä lisätty."
 
-#: concrete/controllers/single_page/dashboard/system/attributes/sets.php:50
+#: concrete/controllers/single_page/dashboard/system/attributes/sets.php:51
 msgid "Attribute set deleted."
 msgstr "Attribuuttiryhmä poistettu."
 
-#: concrete/controllers/single_page/dashboard/system/attributes/sets.php:53
+#: concrete/controllers/single_page/dashboard/system/attributes/sets.php:54
 msgid "Attribute set updated."
 msgstr "Attribuuttiryhmä päivitetty."
 
-#: concrete/controllers/single_page/dashboard/system/attributes/sets.php:62
-#: concrete/controllers/single_page/dashboard/system/attributes/sets.php:98
+#: concrete/controllers/single_page/dashboard/system/attributes/sets.php:63
+#: concrete/controllers/single_page/dashboard/system/attributes/sets.php:99
 msgid "Specify a handle for your attribute set."
 msgstr "Määrittele tunniste attribuuttiryhmällesi."
 
-#: concrete/controllers/single_page/dashboard/system/attributes/sets.php:66
-#: concrete/controllers/single_page/dashboard/system/attributes/sets.php:102
+#: concrete/controllers/single_page/dashboard/system/attributes/sets.php:67
+#: concrete/controllers/single_page/dashboard/system/attributes/sets.php:103
 msgid "That handle is in use."
 msgstr "Tunniste on jo käytössä."
 
-#: concrete/controllers/single_page/dashboard/system/attributes/sets.php:70
-#: concrete/controllers/single_page/dashboard/system/attributes/sets.php:106
+#: concrete/controllers/single_page/dashboard/system/attributes/sets.php:71
+#: concrete/controllers/single_page/dashboard/system/attributes/sets.php:107
 msgid "Specify a name for your attribute set."
 msgstr "Määrittele nimi attribuuttiryhmällesi."
 
-#: concrete/controllers/single_page/dashboard/system/attributes/sets.php:73
+#: concrete/controllers/single_page/dashboard/system/attributes/sets.php:74
 #, php-format
 msgid "Name cannot contain the characters: %s"
 msgstr "Nimi ei voi sisältää seuraavia merkkejä: %s"
 
-#: concrete/controllers/single_page/dashboard/system/attributes/sets.php:95
-#: concrete/controllers/single_page/dashboard/system/attributes/sets.php:127
-#: concrete/controllers/single_page/dashboard/system/attributes/sets.php:155
+#: concrete/controllers/single_page/dashboard/system/attributes/sets.php:96
+#: concrete/controllers/single_page/dashboard/system/attributes/sets.php:128
+#: concrete/controllers/single_page/dashboard/system/attributes/sets.php:156
 msgid "Invalid attribute set."
 msgstr "Virheellinen attribuuttiryhmä."
 
-#: concrete/controllers/single_page/dashboard/system/attributes/sets.php:157
+#: concrete/controllers/single_page/dashboard/system/attributes/sets.php:158
 msgid ""
 "This attribute set is locked. That means it was added by a package and "
 "cannot be manually removed."
 msgstr "Tämä attribuutti on lukittu. Se tarkoittaa, että paketti on lisännyt sen eikä sitä voida poistaa manuaalisesti."
 
-#: concrete/config/install/base/dashboard.xml:766
+#: concrete/config/install/base/dashboard.xml:782
 #: concrete/controllers/single_page/dashboard/system/attributes/topics/add.php:14
 #: concrete/single_pages/dashboard/system/attributes/topics/add.php:22
 #: concrete/single_pages/dashboard/system/attributes/topics/view.php:22
@@ -4396,37 +4426,29 @@ msgstr "Julkiset profiilit päällä."
 msgid "Public profiles have been disabled."
 msgstr "Julkiset profiilit pois päältä."
 
-#: concrete/controllers/single_page/dashboard/system/basics/icons.php:19
+#: concrete/controllers/single_page/dashboard/system/basics/icons.php:25
 msgid "Icons updated successfully."
 msgstr "Ikonit päivitetty onnistuneesti."
 
-#: concrete/controllers/single_page/dashboard/system/basics/icons.php:24
+#: concrete/controllers/single_page/dashboard/system/basics/icons.php:29
 msgid "Icon removed successfully."
 msgstr "Ikoni poistettu onnistuneesti."
 
-#: concrete/controllers/single_page/dashboard/system/basics/icons.php:29
+#: concrete/controllers/single_page/dashboard/system/basics/icons.php:33
 msgid "iPhone icon updated successfully."
 msgstr "iPhone-ikoni päivitetty onnistuneesti."
 
-#: concrete/controllers/single_page/dashboard/system/basics/icons.php:34
+#: concrete/controllers/single_page/dashboard/system/basics/icons.php:37
 msgid "iPhone icon removed successfully."
 msgstr "iPhone-ikoni poistettu onnistuneesti."
 
-#: concrete/controllers/single_page/dashboard/system/basics/icons.php:39
+#: concrete/controllers/single_page/dashboard/system/basics/icons.php:41
 msgid "Windows 8 icon updated successfully."
 msgstr "Windows 8 -ikoni päivitetty onnistuneesti."
 
-#: concrete/controllers/single_page/dashboard/system/basics/icons.php:44
+#: concrete/controllers/single_page/dashboard/system/basics/icons.php:45
 msgid "Windows 8 icon removed successfully."
 msgstr "Windows 8 -ikoni poistettu onnistuneesti."
-
-#: concrete/blocks/form/controller.php:322
-#: concrete/controllers/single_page/dashboard/system/basics/icons.php:60
-#: concrete/controllers/single_page/dashboard/system/basics/icons.php:91
-#: concrete/controllers/single_page/dashboard/system/basics/icons.php:123
-#: concrete/core/File/Importer.php:39
-msgid "Invalid file extension."
-msgstr "Virheellinen tiedostopääte."
 
 #: concrete/controllers/single_page/dashboard/system/basics/timezone.php:16
 msgid "User time zones have been saved."
@@ -4478,32 +4500,36 @@ msgid ""
 "messages."
 msgstr "Käyttöliittymän asetukset tallennettu. Kirjaudu ulos ja sen jälkeen uudestaan sisään päivittääksesi kaikki hallintapuolen viestit."
 
-#: concrete/controllers/single_page/dashboard/system/backup/backup.php:61
+#: concrete/controllers/single_page/dashboard/system/backup/backup.php:17
+msgid "This has not been implemented in 5.7"
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/backup/backup.php:70
 #, php-format
 msgid "Unable to locate file %s"
 msgstr "Tiedostoa %s ei löydy."
 
-#: concrete/controllers/single_page/dashboard/system/backup/backup.php:81
+#: concrete/controllers/single_page/dashboard/system/backup/backup.php:90
 #, php-format
 msgid ""
 "Error deleting the file %s. Please check the permissions of the folder %s"
 msgstr "Virhe poistettaessa tiedostoa %s. Tarkista hakemiston %s oikeudet."
 
-#: concrete/controllers/single_page/dashboard/system/backup/backup.php:100
+#: concrete/controllers/single_page/dashboard/system/backup/backup.php:109
 msgid "Invalid backup file specified."
 msgstr "Virheellinen varmuuskopiotiedosto."
 
-#: concrete/controllers/single_page/dashboard/system/backup/backup.php:105
+#: concrete/controllers/single_page/dashboard/system/backup/backup.php:114
 msgid ""
 "There was an error trying to restore the database. This file was empty."
 msgstr "Tietokannan palauttamisessa tapahtui virhe. Tiedosto oli tyhjä."
 
-#: concrete/controllers/single_page/dashboard/system/backup/backup.php:119
+#: concrete/controllers/single_page/dashboard/system/backup/backup.php:128
 #, php-format
 msgid "There was an error trying to restore the database. Affected query: %s"
 msgstr "Tietokannan palauttamisessa tapahtui virhe. Kysely, johon vaikutti: %s"
 
-#: concrete/controllers/single_page/dashboard/system/backup/backup.php:133
+#: concrete/controllers/single_page/dashboard/system/backup/backup.php:142
 msgid "Restoration Successful"
 msgstr "Palautus onnistui"
 
@@ -4631,7 +4657,7 @@ msgstr "Lähetyspäivämäärä"
 #: concrete/single_pages/dashboard/users/points/assign.php:7
 #: concrete/single_pages/dashboard/users/points/view.php:9
 #: concrete/single_pages/dashboard/users/points/view.php:28
-#: concrete/views/dialogs/file/properties.php:241
+#: concrete/views/dialogs/file/properties.php:249
 #: concrete/views/panels/page/preview_as/form.php:58
 msgid "User"
 msgstr "Käyttäjä"
@@ -4809,7 +4835,7 @@ msgstr "Virheellinen sivupohjan objekti."
 
 #: concrete/controllers/single_page/dashboard/pages/templates.php:62
 #: concrete/controllers/single_page/dashboard/pages/templates/add.php:22
-#: concrete/core/Attribute/Controller.php:217
+#: concrete/core/Attribute/Controller.php:222
 msgid "Handle required."
 msgstr "Tunniste on pakollinen."
 
@@ -4951,11 +4977,15 @@ msgstr "Hae kaikkia alaosia?"
 #: concrete/blocks/form/form_setup_html.php:154
 #: concrete/blocks/form/form_setup_html.php:225
 #: concrete/blocks/page_attribute_display/templates/boolean.php:4
-#: concrete/blocks/page_list/page_list_form.php:149
-#: concrete/blocks/page_list/page_list_form.php:176
-#: concrete/blocks/page_list/page_list_form.php:206
+#: concrete/blocks/page_list/page_list_form.php:157
+#: concrete/blocks/page_list/page_list_form.php:184
+#: concrete/blocks/page_list/page_list_form.php:200
+#: concrete/blocks/page_list/page_list_form.php:230
+#: concrete/blocks/page_list/page_list_form.php:247
+#: concrete/blocks/page_list/page_list_form.php:269
 #: concrete/controllers/search/pages.php:235
 #: concrete/elements/page_types/form/base.php:51
+#: concrete/single_pages/dashboard/system/files/thumbnails.php:115
 #: concrete/single_pages/dashboard/system/mail/importers.php:5
 #: concrete/single_pages/dashboard/system/mail/importers.php:88
 #: concrete/single_pages/dashboard/system/mail/method.php:5
@@ -4970,11 +5000,15 @@ msgstr "Ei"
 #: concrete/blocks/form/form_setup_html.php:153
 #: concrete/blocks/form/form_setup_html.php:224
 #: concrete/blocks/page_attribute_display/templates/boolean.php:4
-#: concrete/blocks/page_list/page_list_form.php:155
-#: concrete/blocks/page_list/page_list_form.php:182
-#: concrete/blocks/page_list/page_list_form.php:212
+#: concrete/blocks/page_list/page_list_form.php:163
+#: concrete/blocks/page_list/page_list_form.php:190
+#: concrete/blocks/page_list/page_list_form.php:206
+#: concrete/blocks/page_list/page_list_form.php:236
+#: concrete/blocks/page_list/page_list_form.php:254
+#: concrete/blocks/page_list/page_list_form.php:275
 #: concrete/controllers/search/pages.php:236
 #: concrete/elements/page_types/form/base.php:51
+#: concrete/single_pages/dashboard/system/files/thumbnails.php:115
 #: concrete/single_pages/dashboard/system/mail/importers.php:5
 #: concrete/single_pages/dashboard/system/mail/importers.php:88
 #: concrete/single_pages/dashboard/system/mail/method.php:5
@@ -5227,7 +5261,7 @@ msgstr "Ei luettu"
 msgid "Replied"
 msgstr "Vastattu"
 
-#: concrete/core/Page/Page.php:411
+#: concrete/core/Page/Page.php:407
 #: concrete/core/User/PrivateMessage/PrivateMessage.php:142
 msgid "Unknown User"
 msgstr "Tuntematon käyttäjä"
@@ -5331,6 +5365,11 @@ msgid ""
 "or the target directory does not exist."
 msgstr "Hakemiston %s kopiointi kohtaan %s epäonnistui. Ehkä oikeudet ovat asetettu väärin tai kohdehakemistoa ei ole olemassa."
 
+#: concrete/core/File/Image/Thumbnail/Type/Type.php:219
+#, php-format
+msgid "%s (Retina Version)"
+msgstr ""
+
 #: concrete/core/File/StorageLocation/Configuration/LocalConfiguration.php:69
 msgid "You must include a root path for this storage location."
 msgstr "Sinun täytyy lisätä juuripolku tälle varastosijainnille."
@@ -5361,12 +5400,16 @@ msgstr "Sovellus"
 
 #: concrete/blocks/file/add.php:6 concrete/blocks/file/controller.php:25
 #: concrete/blocks/file/edit.php:10 concrete/core/File/Type/Type.php:85
-#: concrete/core/File/Version.php:479
+#: concrete/core/File/Version.php:468
 #: concrete/single_pages/dashboard/pages/themes/inspect.php:34
 #: concrete/single_pages/dashboard/reports/statistics.php:76
-#: concrete/single_pages/dashboard/system/backup/backup.php:103
+#: concrete/single_pages/dashboard/system/backup/backup.php:102
 msgid "File"
 msgstr "Tiedosto"
+
+#: concrete/blocks/form/controller.php:322 concrete/core/File/Importer.php:39
+msgid "Invalid file extension."
+msgstr "Virheellinen tiedostopääte."
 
 #: concrete/core/File/Importer.php:42
 msgid "The file was only partially uploaded."
@@ -5416,9 +5459,9 @@ msgstr "Lisätty"
 msgid "Active"
 msgstr "Aktiivinen"
 
-#: concrete/blocks/tags/controller.php:35 concrete/core/File/Version.php:488
+#: concrete/blocks/tags/controller.php:35 concrete/core/File/Version.php:477
 #: concrete/elements/gathering/data_sources/flickr_feed/options.php:8
-#: concrete/views/dialogs/file/properties.php:94
+#: concrete/views/dialogs/file/properties.php:102
 msgid "Tags"
 msgstr "Tagit"
 
@@ -5445,7 +5488,7 @@ msgstr "Autentikontityyppi ei vaadi mitään muokkauksia."
 
 #. %s is a number
 #: concrete/core/Utility/Service/Number.php:116
-#: concrete/views/dialogs/file/properties.php:71
+#: concrete/views/dialogs/file/properties.php:79
 #, php-format
 msgid "%s byte"
 msgid_plural "%s bytes"
@@ -5519,7 +5562,7 @@ msgstr "Tapahtui poikkeus:"
 msgid "An error occurred while processing this request."
 msgstr "Virhe pyynnön käsittelyssä."
 
-#: concrete/core/Backup/ContentExporter.php:201
+#: concrete/core/Backup/ContentExporter.php:206
 #: concrete/core/Legacy/FileList.php:119
 #, php-format
 msgid "Failed to create zip file as \"%s\": %s"
@@ -5672,12 +5715,12 @@ msgstr "960-ruudukkojärjestelmä"
 msgid "Twitter Bootstrap"
 msgstr "Twitter Bootstrap"
 
-#: concrete/core/Page/Theme/Theme.php:604
+#: concrete/core/Page/Theme/Theme.php:610
 #: concrete/single_pages/dashboard/pages/types/form.php:44
 msgid "(No Name)"
 msgstr "(Ei nimeä)"
 
-#: concrete/core/Page/Theme/Theme.php:649
+#: concrete/core/Page/Theme/Theme.php:655
 msgid "(No Description)"
 msgstr "(Ei kuvausta)"
 
@@ -5751,16 +5794,16 @@ msgstr "Uusi versio %s"
 msgid "Version %d"
 msgstr "Versio %d"
 
-#: concrete/core/Page/Page.php:2013
+#: concrete/core/Page/Page.php:2028
 #, php-format
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "Sivu \"%s\" polussa \"%s\" poistettu"
 
-#: concrete/core/Page/Page.php:2013 concrete/core/Page/Page.php:2077
+#: concrete/core/Page/Page.php:2028 concrete/core/Page/Page.php:2092
 msgid "Page Action"
 msgstr "Sivun toiminto"
 
-#: concrete/core/Page/Page.php:2077
+#: concrete/core/Page/Page.php:2092
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "Sivu \"%s\" polussa \"%s\" siirretty roskakoriin"
@@ -5773,7 +5816,7 @@ msgstr "Tulos"
 #: concrete/core/Page/Search/ColumnSet/DefaultSet.php:29
 #: concrete/single_pages/dashboard/reports/forms.php:237
 #: concrete/single_pages/dashboard/reports/surveys.php:31
-#: concrete/single_pages/dashboard/system/backup/backup.php:102
+#: concrete/single_pages/dashboard/system/backup/backup.php:101
 #: concrete/views/panels/page/preview_as/form.php:11
 msgid "Date"
 msgstr "Päivämäärä"
@@ -5848,7 +5891,7 @@ msgid "Exceptions"
 msgstr "Poikkeukset"
 
 #: concrete/blocks/core_area_layout/controller.php:169
-#: concrete/core/Backup/ContentImporter.php:311
+#: concrete/core/Backup/ContentImporter.php:314
 #, php-format
 msgid "Invalid block type handle: %s"
 msgstr "Virheellinen lohkotyypin tunniste: %s"
@@ -6078,48 +6121,55 @@ msgstr "Esihaetaan tietoja."
 msgid "Finishing."
 msgstr "Viimeistellään."
 
-#: concrete/core/Package/StartingPointPackage.php:142
 #: concrete/core/Package/StartingPointPackage.php:145
-#: concrete/elements/custom_style/fonts.php:52
-#: concrete/single_pages/dashboard/system/environment/storage.php:54
+#: concrete/core/Package/StartingPointPackage.php:148
+#: concrete/single_pages/dashboard/system/files/storage.php:54
 msgid "Default"
 msgstr "Oletus"
 
-#: concrete/core/Package/StartingPointPackage.php:143
+#: concrete/core/Package/StartingPointPackage.php:146
 msgid "Local"
 msgstr "Paikallinen"
 
-#: concrete/core/Package/StartingPointPackage.php:172
+#: concrete/core/Package/StartingPointPackage.php:152
+msgid "File Manager Thumbnails"
+msgstr ""
+
+#: concrete/core/Package/StartingPointPackage.php:160
+msgid "File Manager Detail Thumbnails"
+msgstr ""
+
+#: concrete/core/Package/StartingPointPackage.php:189
 #, php-format
 msgid "Unable to install database: %s"
 msgstr "Tietokannan asentaminen epäonnistui: %s"
 
-#: concrete/core/Package/StartingPointPackage.php:199
+#: concrete/core/Package/StartingPointPackage.php:216
 msgctxt "GroupName"
 msgid "Guest"
 msgstr "Vieras"
 
-#: concrete/core/Package/StartingPointPackage.php:199
+#: concrete/core/Package/StartingPointPackage.php:216
 msgctxt "GroupDescription"
 msgid "The guest group represents unregistered visitors to your site."
 msgstr "Vierasryhmä edustaa rekisteröitymättömiä vierailijoita sivustollasi."
 
-#: concrete/core/Package/StartingPointPackage.php:200
+#: concrete/core/Package/StartingPointPackage.php:217
 msgctxt "GroupName"
 msgid "Registered Users"
 msgstr "Rekisteröityneet käyttäjät"
 
-#: concrete/core/Package/StartingPointPackage.php:200
+#: concrete/core/Package/StartingPointPackage.php:217
 msgctxt "GroupDescription"
 msgid "The registered users group represents all user accounts."
 msgstr "Rekisteröityneet käyttäjäryhmä edustaa kaikkia käyttäjätilejä."
 
-#: concrete/core/Package/StartingPointPackage.php:201
+#: concrete/core/Package/StartingPointPackage.php:218
 msgctxt "GroupName"
 msgid "Administrators"
 msgstr "Ylläpitäjät"
 
-#: concrete/core/Package/StartingPointPackage.php:217
+#: concrete/core/Package/StartingPointPackage.php:234
 msgid "Won a Badge"
 msgstr "Ansaitsi merkin"
 
@@ -6129,6 +6179,7 @@ msgstr "Valitse sivu"
 
 #: concrete/core/Form/Service/Widget/Color.php:37
 #: concrete/core/StyleCustomizer/Style/ColorStyle.php:43
+#: concrete/single_pages/dashboard/system/basics/icons.php:78
 msgid "Clear Color Selection"
 msgstr "Tyhjennä värivalinta"
 
@@ -6937,7 +6988,7 @@ msgid "Hide All"
 msgstr "Piilota kaikki"
 
 #: concrete/core/Application/Service/UserInterface.php:284
-#: concrete/elements/page_controls_footer.php:237
+#: concrete/elements/page_controls_footer.php:227
 msgid "Hide"
 msgstr "Piilota"
 
@@ -6968,7 +7019,7 @@ msgstr "Hallintapaneelin koti"
 msgid "Customize"
 msgstr "Muokkaa"
 
-#: concrete/config/install/base/dashboard.xml:915
+#: concrete/config/install/base/dashboard.xml:924
 #: concrete/core/Application/Service/Dashboard.php:325
 msgid "Customize Dashboard Home"
 msgstr "Muokkaa Hallintapaneelin kotia"
@@ -6991,18 +7042,18 @@ msgstr "%s lisää näytettäväksi. <strong>Näytä kaikki &gt;</strong>"
 msgid "Unable to create temporary db xml file: %s"
 msgstr "Väliaikaista tietokannan XML-tiedostoa ei voitu luoda: %s"
 
-#: concrete/core/Attribute/Controller.php:219
+#: concrete/core/Attribute/Controller.php:224
 msgid "Type required."
 msgstr "Tyyppi pakollinen."
 
-#: concrete/core/Attribute/Controller.php:230
+#: concrete/core/Attribute/Controller.php:235
 msgid ""
 "Attribute handles may only contain letters, numbers and underscore \"_\" "
 "characters"
 msgstr "Attribuutin tunnisteet voivat sisältää vain kirjaimia, numeroita ja alaviivoja \"_\"."
 
-#: concrete/core/Attribute/Controller.php:239
-#: concrete/core/Attribute/Controller.php:242
+#: concrete/core/Attribute/Controller.php:244
+#: concrete/core/Attribute/Controller.php:247
 #, php-format
 msgid "An attribute with the handle %s already exists."
 msgstr "Attribuutti tunnisteella %s on jo olemassa."
@@ -7125,7 +7176,7 @@ msgstr "Kauppapaikan polettia ei voitu luoda. Tarkista, että allow_url_fopen on
 msgid "Unable to get information about this product."
 msgstr "Tästä tuotteesta ei saatu tietoja."
 
-#: concrete/core/Search/ItemList/Database/AttributedItemList.php:42
+#: concrete/core/Search/ItemList/Database/AttributedItemList.php:43
 #, php-format
 msgid "%s method does not exist for the %s class"
 msgstr "%s metodia ei ole olemassa luokalle %s"
@@ -7276,7 +7327,6 @@ msgstr "Kirjaudu ulos"
 msgid "Sign In to Edit this Site"
 msgstr "Kirjaudu sisään muokataksesi sivustoa"
 
-#: concrete/blocks/page_list/templates/blog_index.php:29
 #: concrete/themes/default/blog_entry.php:19
 #, php-format
 msgid "Posted by %s on %s"
@@ -7314,23 +7364,23 @@ msgstr "Jaa Facebookissa"
 msgid "Posted by %1$s on %2$s"
 msgstr "Lähettänyt %1$s ajankohtana %2$s"
 
-#: concrete/themes/elemental/page_theme.php:31
+#: concrete/themes/elemental/page_theme.php:62
 msgid "Title Thin"
 msgstr "Ohut otsikko"
 
-#: concrete/themes/elemental/page_theme.php:32
+#: concrete/themes/elemental/page_theme.php:63
 msgid "Title Caps"
 msgstr "Suuraakkosotsikko"
 
-#: concrete/themes/elemental/page_theme.php:33
+#: concrete/themes/elemental/page_theme.php:64
 msgid "Standard Button"
 msgstr "Tavallinen painike"
 
-#: concrete/themes/elemental/page_theme.php:34
+#: concrete/themes/elemental/page_theme.php:65
 msgid "Success Button"
 msgstr "Onnistumispainike"
 
-#: concrete/themes/elemental/page_theme.php:35
+#: concrete/themes/elemental/page_theme.php:66
 msgid "Primary Button"
 msgstr "Ensisijainen painike"
 
@@ -7502,8 +7552,10 @@ msgstr "%s: Perustiedot"
 #: concrete/elements/attribute/type_form_required.php:52
 #: concrete/single_pages/dashboard/pages/templates/add.php:20
 #: concrete/single_pages/dashboard/pages/templates/view.php:32
-#: concrete/single_pages/dashboard/system/attributes/sets.php:25
-#: concrete/single_pages/dashboard/system/attributes/sets.php:146
+#: concrete/single_pages/dashboard/system/attributes/sets.php:28
+#: concrete/single_pages/dashboard/system/attributes/sets.php:140
+#: concrete/single_pages/dashboard/system/files/thumbnails.php:43
+#: concrete/single_pages/dashboard/system/files/thumbnails.php:101
 #: concrete/single_pages/dashboard/system/registration/authentication.php:27
 msgid "Handle"
 msgstr "Tunniste"
@@ -7550,7 +7602,8 @@ msgstr "Kenttä sisältyy Hallintapaneelin käyttäjähakuun."
 
 #: concrete/elements/attribute/type_form_required.php:128
 #: concrete/single_pages/dashboard/pages/types/permissions.php:23
-#: concrete/single_pages/dashboard/system/environment/storage.php:77
+#: concrete/single_pages/dashboard/system/files/storage.php:77
+#: concrete/single_pages/dashboard/system/files/thumbnails.php:71
 #: concrete/single_pages/download_file.php:34
 #: concrete/single_pages/profile/messages.php:44
 #: concrete/views/frontend/install.php:104
@@ -7671,28 +7724,32 @@ msgstr "Pienoiskuva"
 msgid "File sets saved successfully."
 msgstr "Tiedostoryhmät tallennettu onnistuneesti."
 
-#: concrete/elements/files/add_to_sets.php:212
+#: concrete/elements/files/add_to_sets.php:197
+msgid "Add to New Set"
+msgstr "Lisää uuteen ryhmään"
+
+#: concrete/elements/files/add_to_sets.php:199
+msgid "Make set public"
+msgstr "Tee ryhmästä julkinen"
+
+#: concrete/elements/files/add_to_sets.php:206
 msgid "Existing Set"
 msgstr "Olemassaoleva ryhmä"
 
-#: concrete/elements/files/add_to_sets.php:249
+#: concrete/elements/files/add_to_sets.php:213
+msgid "Filter Sets"
+msgstr ""
+
+#: concrete/elements/files/add_to_sets.php:250
 msgid "You have not created any file sets yet."
 msgstr "Et ole luonut vielä tiedostoryhmiä."
 
-#: concrete/elements/files/add_to_sets.php:255
+#: concrete/elements/files/add_to_sets.php:256
 #, php-format
 msgid ""
 "If a file set does not appear above, you either have no access to add files "
 "to it, or it does not accept the file types %s."
 msgstr "Jos tiedostoryhmää ei näy yläpuolella, sinulla ei joko ole oikeutta lisätä tiedostoja siihen, tai se ei hyväksy tiedostotyyppejä %s."
-
-#: concrete/elements/files/add_to_sets.php:262
-msgid "Add to New Set"
-msgstr "Lisää uuteen ryhmään"
-
-#: concrete/elements/files/add_to_sets.php:264
-msgid "Make set public"
-msgstr "Tee ryhmästä julkinen"
 
 #: concrete/elements/marketplace/results.php:22
 msgid "Free"
@@ -7846,7 +7903,7 @@ msgid "My Account"
 msgstr "Oma tilini"
 
 #: concrete/config/install/packages/elemental_blank/content.xml:43
-#: concrete/config/install/packages/elemental_full/content.xml:390
+#: concrete/config/install/packages/elemental_full/content.xml:573
 #: concrete/elements/account/menu.php:60
 #: concrete/single_pages/account/profile/public_profile.php:14
 #: concrete/single_pages/dashboard/system/view.php:41
@@ -7909,10 +7966,35 @@ msgstr "Muokkaa tätä sivua"
 msgid "Page Properties"
 msgstr "Sivun asetukset"
 
+#: concrete/elements/page_controls_footer.php:96
+msgid "Exit Edit Mode"
+msgstr "Poistu muokkaustilasta"
+
+#: concrete/elements/page_controls_footer.php:98
+msgid "Edit This Page"
+msgstr ""
+
+#: concrete/elements/page_controls_footer.php:101
+msgid "Page Design, Location, Attributes and Settings"
+msgstr ""
+
+#: concrete/elements/page_controls_footer.php:107
+#: concrete/elements/page_controls_footer.php:109
+msgid "Add Content to The Page"
+msgstr ""
+
 #: concrete/elements/page_controls_footer.php:126
 #, php-format
 msgid "Powered by <a href=\"%s\">concrete5</a>."
 msgstr "Voimanlähteenä <a href=\"%s\">concrete5</a>."
+
+#: concrete/elements/page_controls_footer.php:129
+msgid "Dashboard – Change Site-wide Settings"
+msgstr ""
+
+#: concrete/elements/page_controls_footer.php:131
+msgid "Add Pages and Navigate Your Site"
+msgstr ""
 
 #: concrete/elements/page_controls_footer.php:158
 msgid "Editing Unavailable."
@@ -7939,28 +8021,19 @@ msgstr "Sivun alias."
 msgid "This page is an alias of one that actually appears elsewhere."
 msgstr "Tämä sivu on toisaalla sijaitsevan sivun alias."
 
-#: concrete/elements/page_controls_footer.php:186
-msgid "Page Type Template."
-msgstr "Sivutyypin pohja."
-
-#: concrete/elements/page_controls_footer.php:187
-#, php-format
-msgid "Page Defaults for %s Page Type. All edits take effect immediately."
-msgstr "Sivun oletukset sivutyypille %s. Kaikki muutokset tulevat voimaan heti. "
-
-#: concrete/elements/page_controls_footer.php:254
+#: concrete/elements/page_controls_footer.php:244
 msgid "Submit for Approval"
 msgstr "Lähetä hyväksyttäväksi"
 
-#: concrete/elements/page_controls_footer.php:258
+#: concrete/elements/page_controls_footer.php:248
 msgid "Approve Version"
 msgstr "Hyväksy versio"
 
-#: concrete/elements/page_controls_footer.php:266
+#: concrete/elements/page_controls_footer.php:256
 msgid "Page is Pending Approval."
 msgstr "Sivu odottaa hyväksyntää."
 
-#: concrete/elements/page_controls_footer.php:267
+#: concrete/elements/page_controls_footer.php:257
 msgid "This page is newer than what appears to visitors on your live site."
 msgstr "Tämä sivu on uudempi kuin mikä näytetään sivustosi vierailijoille."
 
@@ -8128,12 +8201,10 @@ msgid "Allow users to add to this list."
 msgstr "Salli käyttäjien lisätä tälle listalle."
 
 #: concrete/elements/custom_style.php:62
-#: concrete/elements/custom_style/background.php:21
 msgid "Horizontal"
 msgstr "Vaakatasossa"
 
 #: concrete/elements/custom_style.php:63
-#: concrete/elements/custom_style/background.php:22
 msgid "Vertical"
 msgstr "Pystysuuntainen"
 
@@ -8174,6 +8245,10 @@ msgstr "Upotettu"
 msgid "Outset"
 msgstr "Korotettu"
 
+#: concrete/elements/custom_style.php:106
+msgid "Text Size and Color"
+msgstr ""
+
 #: concrete/elements/custom_style.php:110
 msgid "Text Color"
 msgstr "Tekstin väri"
@@ -8186,16 +8261,17 @@ msgstr "Linkin väri"
 msgid "Base Font Size"
 msgstr "Fontin peruskoko"
 
+#: concrete/elements/custom_style.php:134
+msgid "Background Color and Image"
+msgstr ""
+
 #: concrete/elements/custom_style.php:137
-#: concrete/elements/custom_style/background.php:4
 msgid "Background"
 msgstr "Tausta"
 
 #: concrete/elements/custom_style.php:139
 #: concrete/elements/custom_style.php:158
 #: concrete/elements/custom_style.php:254
-#: concrete/elements/custom_style/border.php:48
-#: concrete/elements/custom_style/fonts.php:39
 msgid "Color"
 msgstr "Väri"
 
@@ -8206,13 +8282,15 @@ msgstr "Väri"
 msgid "Choose Image"
 msgstr "Valitse kuva"
 
+#: concrete/elements/custom_style.php:154
+msgid "Borders"
+msgstr ""
+
 #: concrete/elements/custom_style.php:156
-#: concrete/elements/custom_style/border.php:4
 msgid "Border"
 msgstr "Reunus"
 
 #: concrete/elements/custom_style.php:163
-#: concrete/elements/custom_style/border.php:8
 msgid "Style"
 msgstr "Tyyli"
 
@@ -8221,7 +8299,8 @@ msgstr "Tyyli"
 #: concrete/blocks/video/form_setup_html.php:10
 #: concrete/blocks/youtube/form_setup_html.php:30
 #: concrete/elements/custom_style.php:167
-#: concrete/elements/custom_style/border.php:26
+#: concrete/single_pages/dashboard/system/files/thumbnails.php:57
+#: concrete/single_pages/dashboard/system/files/thumbnails.php:103
 #: concrete/views/image-editor/control-sets/position.php:17
 #: concrete/views/image-editor/control-sets/position.php:67
 msgid "Width"
@@ -8232,8 +8311,11 @@ msgstr "Leveys"
 msgid "Radius"
 msgstr "Säde"
 
+#: concrete/elements/custom_style.php:182
+msgid "Margin and Padding"
+msgstr ""
+
 #: concrete/elements/custom_style.php:184
-#: concrete/elements/custom_style/spacing.php:42
 msgid "Padding"
 msgstr "Padding"
 
@@ -8241,9 +8323,6 @@ msgstr "Padding"
 #: concrete/blocks/core_conversation/form.php:124
 #: concrete/elements/custom_style.php:186
 #: concrete/elements/custom_style.php:218
-#: concrete/elements/custom_style/border.php:39
-#: concrete/elements/custom_style/spacing.php:9
-#: concrete/elements/custom_style/spacing.php:46
 msgid "Top"
 msgstr "Ylhäällä"
 
@@ -8251,16 +8330,16 @@ msgstr "Ylhäällä"
 #: concrete/blocks/core_conversation/form.php:130
 #: concrete/elements/custom_style.php:200
 #: concrete/elements/custom_style.php:232
-#: concrete/elements/custom_style/border.php:41
-#: concrete/elements/custom_style/spacing.php:25
-#: concrete/elements/custom_style/spacing.php:62
 msgid "Bottom"
 msgstr "Alhaalla"
 
 #: concrete/elements/custom_style.php:216
-#: concrete/elements/custom_style/spacing.php:5
 msgid "Margin"
 msgstr "Marginaali"
+
+#: concrete/elements/custom_style.php:250
+msgid "Shadow and Rotation (CSS3)"
+msgstr ""
 
 #: concrete/elements/custom_style.php:252
 msgid "Shadow"
@@ -8289,6 +8368,10 @@ msgstr "Kierr"
 #: concrete/elements/custom_style.php:289
 msgid "Rotation (in degrees)"
 msgstr "Kierto (asteissa)"
+
+#: concrete/elements/custom_style.php:299
+msgid "Custom CSS Classes, Block Name, Custom Templates and Reset Styles"
+msgstr ""
 
 #: concrete/elements/custom_style.php:301
 #: concrete/views/panels/page/design/customize.php:65
@@ -8408,8 +8491,7 @@ msgstr "Muokkaa kokoelmapohjaa"
 msgid "Twitter User"
 msgstr "Twitter-käyttäjä"
 
-#: concrete/blocks/page_list/templates/blog_index.php:60
-#: concrete/blocks/page_list/view.php:85
+#: concrete/blocks/page_list/view.php:120
 #: concrete/elements/gathering/data_sources/rss_feed/options.php:8
 msgid "RSS Feed"
 msgstr "RSS-syöte"
@@ -8886,8 +8968,8 @@ msgstr "Poista tämä hallinta? Tätä ei voida peruuttaa."
 
 #: concrete/elements/page_types/composer/form/layout_set/control.php:19
 #: concrete/single_pages/dashboard/pages/types/form.php:70
-#: concrete/single_pages/dashboard/system/attributes/sets.php:45
-#: concrete/single_pages/dashboard/users/group_sets.php:31
+#: concrete/single_pages/dashboard/system/attributes/sets.php:42
+#: concrete/single_pages/dashboard/users/group_sets.php:19
 msgid "Update Set"
 msgstr "Päivitä ryhmä"
 
@@ -8939,7 +9021,6 @@ msgstr "Sallitut sivupohjat"
 
 #: concrete/blocks/date_nav/form_setup_html.php:30
 #: concrete/blocks/page_list/page_list_form.php:31
-#: concrete/elements/custom_style/background.php:23
 #: concrete/elements/page_types/form/base.php:56
 msgid "All"
 msgstr "Kaikki"
@@ -8973,98 +9054,6 @@ msgstr "Juuripolku"
 #: concrete/elements/storage_location_types/local.php:13
 msgid "Relative Path"
 msgstr "Suhteellinen polku"
-
-#: concrete/elements/custom_style/background.php:15
-#: concrete/single_pages/dashboard/system/basics/images.php:9
-msgid "Background Image"
-msgstr "Taustakuva"
-
-#: concrete/elements/custom_style/background.php:19
-msgid "Repeat"
-msgstr "Toista"
-
-#: concrete/elements/custom_style/fonts.php:4
-msgid "Fonts"
-msgstr "Fontit"
-
-#: concrete/elements/custom_style/fonts.php:8
-msgid "Face"
-msgstr "Kirjasin"
-
-#: concrete/elements/custom_style/fonts.php:12
-msgid "Inherit"
-msgstr "Peri"
-
-#: concrete/elements/custom_style/fonts.php:56
-msgid "Justify"
-msgstr "Tasattu"
-
-#: concrete/elements/custom_style/border.php:12
-msgid "none"
-msgstr "ei mitään"
-
-#: concrete/elements/custom_style/border.php:13
-msgid "solid"
-msgstr "kiinteä (solid)"
-
-#: concrete/elements/custom_style/border.php:14
-msgid "dotted"
-msgstr "pisteellinen (dotted)"
-
-#: concrete/elements/custom_style/border.php:15
-msgid "dashed"
-msgstr "katkoviivoitettu (dashed)"
-
-#: concrete/elements/custom_style/border.php:16
-msgid "double"
-msgstr "kaksinkertainen (double)"
-
-#: concrete/elements/custom_style/border.php:17
-msgid "groove"
-msgstr "ura (groove)"
-
-#: concrete/elements/custom_style/border.php:18
-msgid "inset"
-msgstr "upotettu (inset)"
-
-#: concrete/elements/custom_style/border.php:19
-msgid "outset"
-msgstr "korotettu (outset)"
-
-#: concrete/elements/custom_style/border.php:20
-msgid "ridge"
-msgstr "harjamainen (ridge)"
-
-#: concrete/elements/custom_style/border.php:29
-msgid "px"
-msgstr "px"
-
-#: concrete/elements/custom_style/border.php:34
-#: concrete/views/dialogs/search/customize.php:64
-msgid "Direction"
-msgstr "Suunta"
-
-#: concrete/elements/custom_style/border.php:38
-msgid "Full"
-msgstr "Täysleveä"
-
-#: concrete/elements/custom_style/css.php:7
-msgid "CSS ID"
-msgstr "CSS ID"
-
-#: concrete/elements/custom_style/css.php:10
-msgid ""
-"Invalid ID.  This id is currently being used by another element on this "
-"page."
-msgstr "Virheellinen ID. Tätä ID:tä käyttää toinen elementti tällä sivulla."
-
-#: concrete/elements/custom_style/css.php:14
-msgid "CSS Class Name(s)"
-msgstr "CSS luokkien nimi/nimet"
-
-#: concrete/elements/custom_style/css.php:21
-msgid "Additional CSS"
-msgstr "CSS lisäykset"
 
 #: concrete/elements/block_header_view.php:85
 #: concrete/elements/block_header_view.php:89
@@ -9123,7 +9112,7 @@ msgstr "Merkitse roskapostiksi"
 
 #: concrete/elements/conversation/message.php:43
 #: concrete/single_pages/dashboard/reports/statistics.php:109
-#: concrete/views/dialogs/file/properties.php:257
+#: concrete/views/dialogs/file/properties.php:265
 msgid "Anonymous"
 msgstr "Tuntematon"
 
@@ -9260,6 +9249,8 @@ msgstr "Mittasuhde"
 #: concrete/blocks/page_attribute_display/form.php:37
 #: concrete/blocks/video/form_setup_html.php:17
 #: concrete/blocks/youtube/form_setup_html.php:36
+#: concrete/single_pages/dashboard/system/files/thumbnails.php:64
+#: concrete/single_pages/dashboard/system/files/thumbnails.php:104
 #: concrete/views/image-editor/control-sets/position.php:27
 #: concrete/views/image-editor/control-sets/position.php:77
 msgid "Height"
@@ -9347,6 +9338,10 @@ msgstr "Valitse sarakkeet"
 msgid "Default Column"
 msgstr "Oletussarake"
 
+#: concrete/views/dialogs/search/customize.php:64
+msgid "Direction"
+msgstr "Suunta"
+
 #: concrete/views/dialogs/area/layout/presets.php:47
 msgid "Save Preset"
 msgstr "Tallenna esiasetus"
@@ -9377,60 +9372,97 @@ msgstr "Hallintapaneelin tiedostohallinta"
 msgid "Page Added To"
 msgstr "Sivu lisätty kohtaan"
 
-#: concrete/views/dialogs/file/properties.php:75
+#: concrete/config/install/base/dashboard.xml:580
+#: concrete/views/dialogs/file/properties.php:73
+msgid "Thumbnails"
+msgstr ""
+
+#: concrete/views/dialogs/file/properties.php:74
+msgid "Thumbnail Images"
+msgstr ""
+
+#: concrete/views/dialogs/file/properties.php:83
 #, php-format
 msgid "Added by <strong>%s</strong> on %s"
 msgstr "Lisännyt <strong>%s</strong> ajankohtana %s"
 
-#: concrete/views/dialogs/file/properties.php:106
+#: concrete/views/dialogs/file/properties.php:114
 #, php-format
 msgid "%s File Properties"
 msgstr "%s tiedoston ominaisuudet"
 
-#: concrete/views/dialogs/file/properties.php:131
+#: concrete/views/dialogs/file/properties.php:139
 msgid "Other Properties"
 msgstr "Muut ominaisuudet"
 
-#: concrete/views/dialogs/file/properties.php:150
+#: concrete/views/dialogs/file/properties.php:158
 msgid "File Preview"
 msgstr "Tiedoston esikatselu"
 
-#: concrete/views/dialogs/file/properties.php:173
+#: concrete/views/dialogs/file/properties.php:181
 msgid "Added On"
 msgstr "Lisätty"
 
-#: concrete/views/dialogs/file/properties.php:187
+#: concrete/views/dialogs/file/properties.php:195
 msgid "Preview File"
 msgstr "Esikatsele tiedostoa"
 
-#: concrete/views/dialogs/file/properties.php:200
+#: concrete/views/dialogs/file/properties.php:208
 msgid "Updated "
 msgstr "Päivitetty"
 
-#: concrete/views/dialogs/file/properties.php:233
+#: concrete/views/dialogs/file/properties.php:241
 msgid "Total Downloads"
 msgstr "Latauksia yhteensä"
 
-#: concrete/views/dialogs/file/properties.php:238
+#: concrete/views/dialogs/file/properties.php:246
 msgid "Most Recent Downloads"
 msgstr "Viimeisimmät lataukset"
 
-#: concrete/views/dialogs/file/properties.php:242
+#: concrete/views/dialogs/file/properties.php:250
 msgid "Download Time"
 msgstr "Latausaika"
 
-#: concrete/views/dialogs/file/properties.php:243
+#: concrete/views/dialogs/file/properties.php:251
 msgid "File Version ID"
 msgstr "Tiedoston version tunniste"
 
 #: concrete/single_pages/dashboard/reports/statistics.php:115
-#: concrete/views/dialogs/file/properties.php:263
+#: concrete/views/dialogs/file/properties.php:271
 msgid "Deleted User"
 msgstr "Poistettu käyttäjä"
 
-#: concrete/views/dialogs/file/properties.php:330
+#: concrete/views/dialogs/file/properties.php:338
 msgid "File rescanned successfully."
 msgstr "Tiedosto skannattu uudestaan uudestaan."
+
+#: concrete/single_pages/dashboard/system/files/thumbnails.php:114
+#: concrete/views/dialogs/file/thumbnails.php:8
+msgid "Automatic"
+msgstr ""
+
+#: concrete/views/dialogs/file/thumbnails.php:15
+#, php-format
+msgid "%s x %s dimensions"
+msgstr ""
+
+#: concrete/views/dialogs/file/thumbnails.php:18
+msgid "Edit Thumbnail Images"
+msgstr ""
+
+#: concrete/views/dialogs/file/thumbnails.php:18
+msgid "Edit Thumbnail"
+msgstr ""
+
+#: concrete/views/dialogs/file/thumbnails.php:27
+msgid ""
+"No thumbnail found. Usually this is because the source file is smaller than "
+"this thumbnail configuration."
+msgstr ""
+
+#: concrete/views/dialogs/file/thumbnails/edit.php:6
+msgid "Coming Soon"
+msgstr ""
 
 #: concrete/views/panels/page/versions.php:35
 #: concrete/views/panels/sitemap.php:5
@@ -9631,7 +9663,7 @@ msgstr "Pinot"
 msgid "Gathering Tiles"
 msgstr "Kokoelmatiilet"
 
-#: concrete/config/install/base/dashboard.xml:830
+#: concrete/config/install/base/dashboard.xml:839
 #: concrete/views/panels/add.php:70
 msgid "Stack"
 msgstr "Pino"
@@ -10507,7 +10539,7 @@ msgstr "Tietolähteet"
 
 #: concrete/blocks/core_gathering/add.php:7
 #: concrete/blocks/core_gathering/edit.php:8
-#: concrete/blocks/page_list/page_list_form.php:143
+#: concrete/blocks/page_list/page_list_form.php:151
 #: concrete/single_pages/dashboard/pages/types/view.php:43
 msgid "Output"
 msgstr "Tulostus"
@@ -10658,11 +10690,11 @@ msgstr "Sivun otsikko"
 msgid "HTML/WYSIWYG Editor Content."
 msgstr "HTML/WYWISYG-editorin sisältö."
 
-#: concrete/blocks/content/view.php:6
+#: concrete/blocks/content/view.php:5
 msgid "Empty Content Block."
 msgstr "Tyhjä sisältölohko."
 
-#: concrete/blocks/page_list/controller.php:26
+#: concrete/blocks/page_list/controller.php:27
 #: concrete/blocks/tags/controller.php:31
 msgid "List pages based on type, area."
 msgstr "Listaa sivut perustuen tyyppiin ja alueeseen."
@@ -10716,7 +10748,7 @@ msgid "Frequently Asked Questions Block"
 msgstr "Usein kysyttyjen kysymysten lohko"
 
 #: concrete/blocks/faq/controller.php:26
-#: concrete/config/install/packages/elemental_full/content.xml:1151
+#: concrete/config/install/packages/elemental_full/content.xml:1343
 msgid "Frequently Asked Questions"
 msgstr "Usein kysytyt kysymykset"
 
@@ -10940,7 +10972,7 @@ msgstr "Typistä otsikot"
 
 #: concrete/blocks/date_nav/form_setup_html.php:114
 #: concrete/blocks/date_nav/form_setup_html.php:125
-#: concrete/blocks/page_list/page_list_form.php:195
+#: concrete/blocks/page_list/page_list_form.php:219
 msgid "characters"
 msgstr "merkin jälkeen"
 
@@ -11052,11 +11084,11 @@ msgstr "Pakota tarkka kuvan vastaavuus"
 msgid "Adds images and onstates from the library to pages."
 msgstr "Lisää kuvia ja päälläolon tiloja kirjastosta sivuille."
 
-#: concrete/blocks/image/controller.php:85
+#: concrete/blocks/image/controller.php:46
 msgid "You must select an image."
 msgstr "Sinun täytyy valita kuva."
 
-#: concrete/blocks/image/controller.php:138
+#: concrete/blocks/image/controller.php:99
 msgid "You must specify a valid image file."
 msgstr "Sinun täytyy valita hyväksyttävä kuvatiedosto."
 
@@ -11577,7 +11609,7 @@ msgstr "Asenna Adobe Flash nähdäksesi tämä sisältö."
 msgid "Flash File"
 msgstr "Flash-tiedosto"
 
-#: concrete/attributes/image_file/controller.php:75
+#: concrete/attributes/image_file/controller.php:77
 #: concrete/blocks/file/add.php:7 concrete/blocks/file/edit.php:11
 #: concrete/blocks/flash_content/add.php:10
 #: concrete/blocks/flash_content/edit.php:14
@@ -11641,7 +11673,6 @@ msgid ""
 "until the reindex job has been run at least once in the dashboard."
 msgstr "Hakuindeksiä ei näytä olevan olemassa. Tämä lohko ei toimi ennen kuin uudelleenindeksointi on tehty ainakin kerran hallintapaneelista."
 
-#: concrete/blocks/page_list/page_list_form.php:217
 #: concrete/blocks/search/form_setup_html.php:35
 msgid "Button Text"
 msgstr "Painikkeen teksti"
@@ -11650,7 +11681,7 @@ msgstr "Painikkeen teksti"
 msgid "Search for Pages"
 msgstr "Hae sivuja"
 
-#: concrete/blocks/page_list/page_list_form.php:84
+#: concrete/blocks/page_list/page_list_form.php:92
 #: concrete/blocks/search/form_setup_html.php:43
 msgid "Everywhere"
 msgstr "Kaikkialta"
@@ -11664,10 +11695,12 @@ msgid "Beneath Another Page"
 msgstr "Toisen sivun alapuolelta"
 
 #: concrete/blocks/search/form_setup_html.php:75
+#: concrete/blocks/topic_list/form.php:29
 msgid "Results Page"
 msgstr "Tulossivu"
 
 #: concrete/blocks/search/form_setup_html.php:79
+#: concrete/blocks/topic_list/form.php:33
 msgid "Post Results to a Different Page"
 msgstr "Lähetä tulokset toiselle sivulle"
 
@@ -11682,8 +11715,8 @@ msgid "Settings"
 msgstr "Asetukset"
 
 #: concrete/blocks/page_list/page_list_form.php:48
-msgid "Filters"
-msgstr "Suodattimet"
+msgid "Filtering"
+msgstr ""
 
 #: concrete/blocks/page_list/page_list_form.php:59
 msgid ""
@@ -11695,77 +11728,119 @@ msgstr "(<strong>Huomaa</strong>: Sinun täytyy luoda ensin sivuattribuutti \"is
 msgid "Display page aliases."
 msgstr "Näytä sivujen aliakset."
 
-#: concrete/blocks/page_list/page_list_form.php:71
+#: concrete/blocks/page_list/page_list_form.php:74
+msgid "Enable Other Blocks to Filter This Page List."
+msgstr ""
+
+#: concrete/blocks/page_list/page_list_form.php:76
+msgid ""
+"Allows other blocks like the topic list block to pass search criteria to "
+"this page list block."
+msgstr ""
+
+#: concrete/blocks/page_list/page_list_form.php:79
 msgid "Pagination"
 msgstr "Sivutus"
 
-#: concrete/blocks/page_list/page_list_form.php:75
+#: concrete/blocks/page_list/page_list_form.php:83
 msgid ""
 "Display pagination interface if more items are available than are displayed."
 msgstr "Näytä sivutuksen käyttöliittymä, jos kohteita on enemmän kuin näkyvillä olevat."
 
-#: concrete/blocks/page_list/page_list_form.php:91
+#: concrete/blocks/page_list/page_list_form.php:99
 msgid "Beneath this page"
 msgstr "Tämän sivun alapuolelta"
 
-#: concrete/blocks/page_list/page_list_form.php:98
+#: concrete/blocks/page_list/page_list_form.php:106
 msgid "Beneath another page"
 msgstr "Toisen sivun alapuolelta"
 
-#: concrete/blocks/page_list/page_list_form.php:116
+#: concrete/blocks/page_list/page_list_form.php:124
 msgid "Include all child pages"
 msgstr "Sisällytä kaikki alasivut"
 
-#: concrete/blocks/page_list/page_list_form.php:122
+#: concrete/blocks/page_list/page_list_form.php:130
 msgid "Sort"
 msgstr "Järjestä"
 
-#: concrete/blocks/page_list/page_list_form.php:126
+#: concrete/blocks/page_list/page_list_form.php:134
 msgid "Sitemap order"
 msgstr "Sivukartan järjestykseen"
 
-#: concrete/blocks/page_list/page_list_form.php:129
+#: concrete/blocks/page_list/page_list_form.php:137
 msgid "Most recent first"
 msgstr "Uusin ensimmäisenä"
 
-#: concrete/blocks/page_list/page_list_form.php:132
+#: concrete/blocks/page_list/page_list_form.php:140
 msgid "Earliest first"
 msgstr "Vanhin ensimmäisenä"
 
-#: concrete/blocks/page_list/page_list_form.php:135
+#: concrete/blocks/page_list/page_list_form.php:143
 msgid "Alphabetical order"
 msgstr "Aakkosjärjestyksessä"
 
-#: concrete/blocks/page_list/page_list_form.php:138
+#: concrete/blocks/page_list/page_list_form.php:146
 msgid "Reverse alphabetical order"
 msgstr "Käänteisessä aakkosjärjestyksessä"
 
-#: concrete/blocks/page_list/page_list_form.php:145
+#: concrete/blocks/page_list/page_list_form.php:153
 msgid "Provide RSS Feed"
 msgstr "Tarjoa RSS-syöte"
 
-#: concrete/blocks/page_list/page_list_form.php:160
+#: concrete/blocks/page_list/page_list_form.php:168
 msgid "RSS Feed Title"
 msgstr "RSS-syötteen otsikko"
 
-#: concrete/blocks/page_list/page_list_form.php:165
+#: concrete/blocks/page_list/page_list_form.php:173
 msgid "RSS Feed Description"
 msgstr "RSS-syötteen kuvaus"
 
-#: concrete/blocks/page_list/page_list_form.php:172
+#: concrete/blocks/page_list/page_list_form.php:180
+msgid "Include Page Name"
+msgstr ""
+
+#: concrete/blocks/page_list/page_list_form.php:196
 msgid "Include Page Description"
 msgstr "Sisällytä sivun kuvaus"
 
-#: concrete/blocks/page_list/page_list_form.php:186
+#: concrete/blocks/page_list/page_list_form.php:210
 msgid "Display Truncated Description"
 msgstr "Näytä typistetty yhteenveto"
 
-#: concrete/blocks/page_list/page_list_form.php:202
-msgid "Use Button For Link"
-msgstr "Käytä painiketta linkkinä"
+#: concrete/blocks/page_list/page_list_form.php:226
+msgid "Include Public Page Date"
+msgstr ""
+
+#: concrete/blocks/page_list/page_list_form.php:239
+msgid ""
+"This is usually the date the page is created. It can be changed from the "
+"page attributes panel."
+msgstr ""
+
+#: concrete/blocks/page_list/page_list_form.php:242
+msgid "Display Thumbnail Image"
+msgstr ""
+
+#: concrete/blocks/page_list/page_list_form.php:259
+msgid ""
+"You must create an attribute with the 'thumbnail' handle in order to use "
+"this option."
+msgstr ""
+
+#: concrete/blocks/page_list/page_list_form.php:265
+msgid "Use Different Link than Page Name"
+msgstr ""
+
+#: concrete/blocks/page_list/page_list_form.php:280
+msgid "Link Text"
+msgstr "Linkkiteksti"
+
+#: concrete/blocks/page_list/page_list_form.php:287
+msgid "Message to Display When No Pages Listed."
+msgstr ""
 
 #: concrete/blocks/autonav/form_setup_html.php:145
-#: concrete/blocks/page_list/page_list_form.php:231
+#: concrete/blocks/page_list/page_list_form.php:300
 msgid "Included Pages"
 msgstr "Sisällytetyt sivut"
 
@@ -11775,38 +11850,17 @@ msgid ""
 "permission to access this RSS feed"
 msgstr "Tämä sivulista ei käytä mukautettua blogin sivupohjaa, tai sinulla sinulla ei ole oikeutta avata RSS-syötettä"
 
-#: concrete/blocks/page_list/controller.php:31
+#: concrete/blocks/page_list/controller.php:32
 msgid "Page List"
 msgstr "Sivulista"
 
-#: concrete/blocks/page_list/controller.php:37
+#: concrete/blocks/page_list/controller.php:38
 msgid "Please give your RSS Feed a name."
 msgstr "Anna RSS-syötteelle nimi."
 
-#: concrete/blocks/page_list/templates/blog_index.php:60
-#: concrete/blocks/page_list/view.php:85
+#: concrete/blocks/page_list/view.php:120
 msgid "RSS Icon"
 msgstr "RSS-ikoni"
-
-#: concrete/blocks/page_list/templates/blog_index_thumbnail.php:72
-msgid "Newer Posts"
-msgstr "Uudemmat kirjoitukset"
-
-#: concrete/blocks/page_list/templates/blog_index_thumbnail.php:73
-msgid "Older Posts"
-msgstr "Vanhemmat kirjoitukset"
-
-#: concrete/blocks/page_list/templates/blog_index.php:18
-msgid "Comment"
-msgstr "Kommentti"
-
-#: concrete/blocks/page_list/templates/blog_index.php:42
-msgid "Read full post"
-msgstr "Lue koko kirjoitus"
-
-#: concrete/blocks/page_list/templates/blog_index.php:59
-msgid "Subscribe to RSS Feed"
-msgstr "Tilaa RSS-syöte"
 
 #: concrete/blocks/feature/form.php:15
 msgid "Paragraph"
@@ -12117,20 +12171,40 @@ msgstr "Tämä on lista kaikista tiedostoista, jotka löytyvät sinun ulkoisten 
 msgid "File to Include"
 msgstr "Liitettävä tiedosto"
 
-#: concrete/attributes/topics/type_form.php:43
 #: concrete/blocks/topic_list/form.php:4
+msgid "Mode"
+msgstr ""
+
+#: concrete/blocks/topic_list/form.php:6
+msgid "Search – Display a list of all topics for use on a search sidebar."
+msgstr ""
+
+#: concrete/blocks/topic_list/form.php:7
+msgid "Page – Display a list of just topics for the page."
+msgstr ""
+
+#: concrete/attributes/topics/type_form.php:43
+#: concrete/blocks/topic_list/form.php:11
 msgid "Topic Tree"
 msgstr "Aihepuu"
 
-#: concrete/blocks/topic_list/controller.php:24
+#: concrete/blocks/topic_list/form.php:20
+msgid "Topic Attribute To Display"
+msgstr ""
+
+#: concrete/blocks/topic_list/controller.php:27
 msgid ""
 "Displays a list of your site's topics, allowing you to click on them to "
 "filter a page list."
 msgstr "Näyttää listan sivustosi aiheista, sallien sinun napsauttaa niitä suodattaaksesi sivulistaa."
 
-#: concrete/blocks/topic_list/controller.php:29
+#: concrete/blocks/topic_list/controller.php:32
 msgid "Topic List"
 msgstr "Aihelista"
+
+#: concrete/blocks/topic_list/view.php:37
+msgid "No topics."
+msgstr ""
 
 #: concrete/blocks/autonav/controller.php:78
 msgid "Creates navigation trees and sitemaps."
@@ -12390,7 +12464,7 @@ msgstr "Tekstikenttä"
 msgid " on "
 msgstr "ajankohtana"
 
-#: concrete/attributes/image_file/controller.php:105
+#: concrete/attributes/image_file/controller.php:107
 #, php-format
 msgid "You must specify a valid file for %s"
 msgstr "Sinun täytyy valita hyväksyttävä tiedosto %s"
@@ -12632,10 +12706,10 @@ msgstr "Oletko varma, että haluat poistaa tämän tiedostoryhmän pysyvästi?"
 
 #: concrete/single_pages/dashboard/files/sets.php:21
 #: concrete/single_pages/dashboard/pages/types/form.php:53
-#: concrete/single_pages/dashboard/system/attributes/sets.php:51
-#: concrete/single_pages/dashboard/system/attributes/sets.php:58
+#: concrete/single_pages/dashboard/system/attributes/sets.php:55
+#: concrete/single_pages/dashboard/system/attributes/sets.php:59
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:276
-#: concrete/single_pages/dashboard/users/group_sets.php:39
+#: concrete/single_pages/dashboard/users/group_sets.php:64
 msgid "Delete Set"
 msgstr "Poista ryhmä"
 
@@ -12643,38 +12717,38 @@ msgstr "Poista ryhmä"
 msgid "Files in Set"
 msgstr "Tiedostot ryhmässä"
 
-#: concrete/single_pages/dashboard/files/sets.php:49
+#: concrete/single_pages/dashboard/files/sets.php:46
 msgid "Enable custom permissions for this file set."
 msgstr "Ota käyttöön mukautetut oikeudet tälle tiedostoryhmälle."
 
-#: concrete/single_pages/dashboard/files/sets.php:80
+#: concrete/single_pages/dashboard/files/sets.php:75
 msgid ""
 "Click and drag to reorder the files in this set. New files added to this set"
 " will automatically be appended to the end."
 msgstr "Napsauta ja raahaa tiedostoja tässä ryhmässä uudelleenjärjestelläksesi niitä. Uudet tiedostot lisätään automaattisesti listan loppuun."
 
-#: concrete/single_pages/dashboard/files/sets.php:102
+#: concrete/single_pages/dashboard/files/sets.php:95
 msgid "There are no files in this set."
 msgstr "Tässä ryhmässä ei ole yhtään tiedostoa."
 
 #: concrete/config/install/base/dashboard.xml:77
-#: concrete/single_pages/dashboard/files/sets.php:140
+#: concrete/single_pages/dashboard/files/sets.php:132
 msgid "Add File Set"
 msgstr "Lisää tiedostoryhmä"
 
-#: concrete/single_pages/dashboard/files/sets.php:148
+#: concrete/single_pages/dashboard/files/sets.php:140
 msgid "File Set Name"
 msgstr "Tiedostoryhmän nimi"
 
-#: concrete/single_pages/dashboard/files/sets.php:153
+#: concrete/single_pages/dashboard/files/sets.php:145
 msgid "Public Sets"
 msgstr "Julkiset ryhmät"
 
-#: concrete/single_pages/dashboard/files/sets.php:154
+#: concrete/single_pages/dashboard/files/sets.php:146
 msgid "My Sets"
 msgstr "Omat ryhmät"
 
-#: concrete/single_pages/dashboard/files/sets.php:174
+#: concrete/single_pages/dashboard/files/sets.php:166
 msgid "No file sets found."
 msgstr "Tiedostoryhmiä ei löytynyt."
 
@@ -12766,7 +12840,7 @@ msgid "Unapprove"
 msgstr "Älä hyväksy"
 
 #: concrete/single_pages/dashboard/conversations/messages.php:187
-#: concrete/single_pages/dashboard/system/backup/backup.php:115
+#: concrete/single_pages/dashboard/system/backup/backup.php:114
 msgid "Restore"
 msgstr "Palauta"
 
@@ -13181,7 +13255,7 @@ msgid "Badge Description"
 msgstr "Ansiomerkin kuvaus"
 
 #: concrete/config/install/base/dashboard.xml:165
-#: concrete/config/install/base/dashboard.xml:723
+#: concrete/config/install/base/dashboard.xml:739
 #: concrete/single_pages/account/profile/public_profile.php:31
 #: concrete/single_pages/dashboard/users/add_group.php:102
 #: concrete/single_pages/dashboard/users/groups.php:73
@@ -13288,57 +13362,46 @@ msgstr "Poista käyttäjätunnuksen aktivointi"
 msgid "Remove the user from the group and deactivate the account"
 msgstr "Poista käyttäjä ryhmästä ja muuta tili aktivoimattomaksi."
 
-#: concrete/single_pages/dashboard/system/attributes/sets.php:8
-#: concrete/single_pages/dashboard/users/group_sets.php:7
-msgid "Edit Set"
-msgstr "Muokkaa ryhmää"
-
-#: concrete/single_pages/dashboard/system/attributes/sets.php:52
-#: concrete/single_pages/dashboard/users/group_sets.php:42
-msgid ""
-"Warning, this cannot be undone. No attributes will be deleted but they will "
-"no longer be grouped together."
-msgstr "Varoitus, tätä ei voida peruuttaa. Attribuutteja ei poisteta, mutta ne eivät ole enää ryhmiteltynä samaan yhteen."
-
-#: concrete/single_pages/dashboard/users/group_sets.php:49
-msgid "Delete Group Set"
-msgstr "Poista ryhmäjoukko"
-
 #: concrete/single_pages/dashboard/users/add.php:85
-#: concrete/single_pages/dashboard/users/group_sets.php:63
-#: concrete/single_pages/dashboard/users/group_sets.php:144
+#: concrete/single_pages/dashboard/users/group_sets.php:29
+#: concrete/single_pages/dashboard/users/group_sets.php:113
 #: concrete/single_pages/dashboard/users/search.php:121
 msgid "Groups"
 msgstr "Ryhmät"
 
-#: concrete/single_pages/dashboard/users/group_sets.php:86
+#: concrete/single_pages/dashboard/users/group_sets.php:46
 msgid "Update Groups"
 msgstr "Päivitä ryhmät"
 
-#: concrete/single_pages/dashboard/users/group_sets.php:92
+#: concrete/single_pages/dashboard/users/group_sets.php:50
 msgid "No groups found."
 msgstr "Ryhmää ei löytynyt."
 
-#: concrete/config/install/base/dashboard.xml:155
-#: concrete/single_pages/dashboard/users/group_sets.php:106
-msgid "Group Sets"
-msgstr "Ryhmäjoukot"
+#: concrete/single_pages/dashboard/users/group_sets.php:66
+msgid ""
+"Warning, this cannot be undone. No groups will be deleted but they will no "
+"longer be grouped together."
+msgstr ""
 
-#: concrete/single_pages/dashboard/users/group_sets.php:127
+#: concrete/single_pages/dashboard/users/group_sets.php:69
+msgid "Delete Group Set"
+msgstr "Poista ryhmäjoukko"
+
+#: concrete/single_pages/dashboard/users/group_sets.php:95
 msgid "You have not added any group sets."
 msgstr "Et ole lisännyt ryhmäjoukkoja."
 
 #: concrete/single_pages/dashboard/pages/types/form.php:22
 #: concrete/single_pages/dashboard/pages/types/form.php:28
-#: concrete/single_pages/dashboard/system/attributes/sets.php:141
-#: concrete/single_pages/dashboard/system/attributes/sets.php:157
+#: concrete/single_pages/dashboard/system/attributes/sets.php:138
+#: concrete/single_pages/dashboard/system/attributes/sets.php:151
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:407
-#: concrete/single_pages/dashboard/users/group_sets.php:132
-#: concrete/single_pages/dashboard/users/group_sets.php:156
+#: concrete/single_pages/dashboard/users/group_sets.php:102
+#: concrete/single_pages/dashboard/users/group_sets.php:122
 msgid "Add Set"
 msgstr "Lisää ryhmä"
 
-#: concrete/single_pages/dashboard/users/group_sets.php:162
+#: concrete/single_pages/dashboard/users/group_sets.php:127
 #, php-format
 msgid "You must enable <a href=\"%s\">advanced permissions</a> to use group sets."
 msgstr "Sinun täytyy ottaa käyttöön <a href=\"%s\">monipuoliset oikeudet</a> käyttääksesi ryhmäjoukkoja."
@@ -13562,6 +13625,81 @@ msgstr "Sinulla ei ole oikeutta käyttäjähakuun. Tämän asetuksen voi muuttaa
 msgid "Registration Data"
 msgstr "Rekisteröitymistiedot"
 
+#: concrete/config/install/base/dashboard.xml:573
+#: concrete/single_pages/dashboard/system/files/filetypes.php:3
+msgid "Allowed File Types"
+msgstr "Sallitut tiedostomuodot"
+
+#: concrete/single_pages/dashboard/system/files/filetypes.php:8
+msgid ""
+"Only files with the following extensions will be allowed. Separate "
+"extensions with commas. Periods and spaces will be ignored."
+msgstr "Ainoastaan tiedostot, joilla on seuraava tiedostopääte ovat sallittuja. Erottele tiedostopäätteet pilkuilla. Pisteet ja välilyönnit jätetään huomioimatta."
+
+#: concrete/single_pages/dashboard/system/files/permissions.php:17
+#: concrete/single_pages/dashboard/system/permissions/tasks.php:17
+#: concrete/single_pages/dashboard/system/permissions/users.php:17
+msgid "You cannot access task permissions."
+msgstr "Et voi päästä tehtävien oikeuksiin."
+
+#: concrete/single_pages/dashboard/system/files/thumbnails.php:24
+msgid "Delete Type"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/files/thumbnails.php:67
+msgid ""
+"Only place a value in here if you want this thumbnail to force its "
+"dimensions to the width and height."
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/files/thumbnails.php:85
+msgid "Delete this thumbnail type?"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/files/thumbnails.php:95
+msgid "Add Type"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/files/storage.php:21
+msgid "Delete Location"
+msgstr "Poista sijainti"
+
+#: concrete/config/install/base/dashboard.xml:471
+#: concrete/single_pages/dashboard/system/files/storage.php:39
+msgid "Basics"
+msgstr "Perusteet"
+
+#: concrete/single_pages/dashboard/system/files/storage.php:57
+msgid "Yes, make this the default storage location for new files."
+msgstr "Kyllä, tee tästä oletussijainti uusille tiedostoille."
+
+#: concrete/single_pages/dashboard/system/files/storage.php:62
+msgid "No, this is not the default storage location."
+msgstr "Ei, tämä ei ole oletussijainti tiedostoille."
+
+#: concrete/single_pages/dashboard/system/files/storage.php:71
+#, php-format
+msgid "Options %s Storage Type"
+msgstr "Asetukset %s sijaintityyppi"
+
+#: concrete/single_pages/dashboard/system/files/storage.php:91
+msgid ""
+"Delete this storage location? All files using it will have their storage "
+"location reset to the default."
+msgstr "Poista tämä varastosijainti? Kaikkien sitä käyttävien tiedostojen sijainniksi palautetaan oletus."
+
+#: concrete/single_pages/dashboard/system/files/storage.php:99
+msgid "Storage Locations"
+msgstr "Varastosijainnit"
+
+#: concrete/single_pages/dashboard/system/files/storage.php:109
+msgid "Add Location"
+msgstr "Lisää sijainti"
+
+#: concrete/single_pages/dashboard/system/files/storage.php:110
+msgid "Choose Type"
+msgstr "Valitse tyyppi"
+
 #: concrete/single_pages/dashboard/system/seo/statistics.php:9
 msgid "Track page view statistics."
 msgstr "Ota käyttöön kävijätilastot."
@@ -13704,7 +13842,7 @@ msgstr "Ota käyttöön nätit www-osoitteet"
 msgid "Code for your .htaccess file"
 msgstr ".htaccess tiedostosi koodi"
 
-#: concrete/config/install/base/dashboard.xml:768
+#: concrete/config/install/base/dashboard.xml:784
 #: concrete/single_pages/dashboard/system/environment/info.php:2
 msgid "Environment"
 msgstr "Ympäristö"
@@ -13737,46 +13875,6 @@ msgstr "Tallenna ohjelmiston poikkeukset lokihistoriaan"
 msgid "Log Emails Sent"
 msgstr "Tallenna sähköpostit lokihistoriaan"
 
-#: concrete/single_pages/dashboard/system/environment/storage.php:21
-msgid "Delete Location"
-msgstr "Poista sijainti"
-
-#: concrete/config/install/base/dashboard.xml:471
-#: concrete/single_pages/dashboard/system/environment/storage.php:39
-msgid "Basics"
-msgstr "Perusteet"
-
-#: concrete/single_pages/dashboard/system/environment/storage.php:57
-msgid "Yes, make this the default storage location for new files."
-msgstr "Kyllä, tee tästä oletussijainti uusille tiedostoille."
-
-#: concrete/single_pages/dashboard/system/environment/storage.php:62
-msgid "No, this is not the default storage location."
-msgstr "Ei, tämä ei ole oletussijainti tiedostoille."
-
-#: concrete/single_pages/dashboard/system/environment/storage.php:71
-#, php-format
-msgid "Options %s Storage Type"
-msgstr "Asetukset %s sijaintityyppi"
-
-#: concrete/single_pages/dashboard/system/environment/storage.php:91
-msgid ""
-"Delete this storage location? All files using it will have their storage "
-"location reset to the default."
-msgstr "Poista tämä varastosijainti? Kaikkien sitä käyttävien tiedostojen sijainniksi palautetaan oletus."
-
-#: concrete/single_pages/dashboard/system/environment/storage.php:99
-msgid "Storage Locations"
-msgstr "Varastosijainnit"
-
-#: concrete/single_pages/dashboard/system/environment/storage.php:109
-msgid "Add Location"
-msgstr "Lisää sijainti"
-
-#: concrete/single_pages/dashboard/system/environment/storage.php:110
-msgid "Choose Type"
-msgstr "Valitse tyyppi"
-
 #: concrete/single_pages/dashboard/system/environment/debug.php:10
 msgid "Hide errors from site visitors."
 msgstr "Piilota virheet vierailijoilta."
@@ -13785,13 +13883,7 @@ msgstr "Piilota virheet vierailijoilta."
 msgid "Show errors in page."
 msgstr "Näytä virheet sivulla."
 
-#: concrete/single_pages/dashboard/system/permissions/files.php:17
-#: concrete/single_pages/dashboard/system/permissions/tasks.php:17
-#: concrete/single_pages/dashboard/system/permissions/users.php:17
-msgid "You cannot access task permissions."
-msgstr "Et voi päästä tehtävien oikeuksiin."
-
-#: concrete/config/install/base/dashboard.xml:589
+#: concrete/config/install/base/dashboard.xml:618
 #: concrete/single_pages/dashboard/system/permissions/site.php:7
 msgid "Site Access"
 msgstr "Sivuston pääsyoikeudet"
@@ -13849,18 +13941,7 @@ msgstr "Sinulla ei ole captcha-kirjastoja asennettuna."
 msgid "Save Additional Settings"
 msgstr "Tallenna lisäasetukset"
 
-#: concrete/config/install/base/dashboard.xml:603
-#: concrete/single_pages/dashboard/system/permissions/filetypes.php:3
-msgid "Allowed File Types"
-msgstr "Sallitut tiedostomuodot"
-
-#: concrete/single_pages/dashboard/system/permissions/filetypes.php:8
-msgid ""
-"Only files with the following extensions will be allowed. Separate "
-"extensions with commas. Periods and spaces will be ignored."
-msgstr "Ainoastaan tiedostot, joilla on seuraava tiedostopääte ovat sallittuja. Erottele tiedostopäätteet pilkuilla. Pisteet ja välilyönnit jätetään huomioimatta."
-
-#: concrete/config/install/base/dashboard.xml:642
+#: concrete/config/install/base/dashboard.xml:658
 #: concrete/single_pages/dashboard/system/permissions/maintenance.php:4
 msgid "Maintenance Mode"
 msgstr "Huoltotila"
@@ -13918,12 +13999,12 @@ msgstr "Tässä kentässä oleviin sähköpostiosoitteisiin lähetetään tieto,
 msgid "You have no anti-spam libraries installed."
 msgstr "Sinulla ei ole roskapostikirjastoja asennettuna."
 
-#: concrete/config/install/base/dashboard.xml:610
+#: concrete/config/install/base/dashboard.xml:626
 #: concrete/single_pages/dashboard/system/permissions/tasks.php:8
 msgid "Task Permissions"
 msgstr "Tehtäväoikeudet"
 
-#: concrete/config/install/base/dashboard.xml:617
+#: concrete/config/install/base/dashboard.xml:633
 #: concrete/single_pages/dashboard/system/permissions/users.php:8
 msgid "User Permissions"
 msgstr "Käyttäjäoikeudet"
@@ -14102,17 +14183,23 @@ msgstr "Sana"
 msgid "Are you sure you want to delete this word?"
 msgstr "Haluatko varmasti poistaa tämän sanan?"
 
-#: concrete/single_pages/dashboard/system/attributes/sets.php:13
+#: concrete/single_pages/dashboard/system/attributes/sets.php:14
 msgid "Update Set Details"
 msgstr "Päivitä ryhmän tietoja"
 
-#: concrete/single_pages/dashboard/system/attributes/sets.php:17
+#: concrete/single_pages/dashboard/system/attributes/sets.php:18
 msgid ""
 "This attribute set is locked. It cannot be deleted, and its handle cannot be"
 " changed."
 msgstr "Tämä attribuuttiryhmä on lukittu. Sitä ei voi poistaa, ja sen tunnistetta ei voi muuttaa."
 
-#: concrete/single_pages/dashboard/system/attributes/sets.php:65
+#: concrete/single_pages/dashboard/system/attributes/sets.php:56
+msgid ""
+"Warning, this cannot be undone. No attributes will be deleted but they will "
+"no longer be grouped together."
+msgstr "Varoitus, tätä ei voida peruuttaa. Attribuutteja ei poisteta, mutta ne eivät ole enää ryhmiteltynä samaan yhteen."
+
+#: concrete/single_pages/dashboard/system/attributes/sets.php:73
 msgid "Add Attributes to Set"
 msgstr "Lisää attribuutteja ryhmään"
 
@@ -14124,23 +14211,19 @@ msgstr "Päivitä attribuutit"
 msgid "No attributes found."
 msgstr "Attribuutteja ei löytynyt."
 
-#: concrete/single_pages/dashboard/system/attributes/sets.php:119
-msgid "Attribute Sets"
-msgstr "Attribuuttiryhmät"
-
-#: concrete/single_pages/dashboard/system/attributes/sets.php:136
+#: concrete/single_pages/dashboard/system/attributes/sets.php:129
 msgid "No attribute sets currently defined."
 msgstr "Attribuuttiryhmiä ei ole tällä hetkellä määriteltynä."
 
-#: concrete/single_pages/dashboard/system/attributes/sets.php:167
+#: concrete/single_pages/dashboard/system/attributes/sets.php:160
 msgid "Attribute Categories"
 msgstr "Attribuuttikategoriat"
 
-#: concrete/single_pages/dashboard/system/attributes/sets.php:168
+#: concrete/single_pages/dashboard/system/attributes/sets.php:161
 msgid "Attribute Categories are used to group different types of sets."
 msgstr "Attribuuttikategorioita käytetään erilaisten tyyppien ryhmittelyyn."
 
-#: concrete/single_pages/dashboard/system/attributes/sets.php:178
+#: concrete/single_pages/dashboard/system/attributes/sets.php:175
 msgid "No attribute categories currently defined."
 msgstr "Attribuuttikategorioita ei ole tällä hetkellä määriteltynä."
 
@@ -14187,7 +14270,7 @@ msgstr "Pois käytöstä"
 msgid "Enable"
 msgstr "Käytössä"
 
-#: concrete/config/install/base/dashboard.xml:665
+#: concrete/config/install/base/dashboard.xml:681
 #: concrete/single_pages/dashboard/system/registration/open.php:3
 msgid "Public Registration"
 msgstr "Julkinen rekisteröityminen"
@@ -14309,10 +14392,6 @@ msgid ""
 "Windows 8 start screen tiles should be 144x144 and be in the .png format."
 msgstr "Windows 8:n aloitusruudun tiilien tulisi olla 144x144 ja PNG-muodossa."
 
-#: concrete/single_pages/dashboard/system/basics/icons.php:65
-msgid "Background Color"
-msgstr "Taustaväri"
-
 #: concrete/single_pages/dashboard/system/basics/timezone.php:12
 msgid ""
 "With this setting enabled, users may specify their own time zone in their "
@@ -14336,6 +14415,10 @@ msgstr "Muokkaa TinyMCE:lle saatavilla olevia asetuksia."
 #: concrete/single_pages/dashboard/system/basics/editor.php:7
 msgid "The editor currently has no globally configurable options."
 msgstr "Editorilla ei ole tällä hetkellä yleisesti määriteltäviä asetuksia."
+
+#: concrete/single_pages/dashboard/system/basics/images.php:9
+msgid "Background Image"
+msgstr "Taustakuva"
 
 #: concrete/single_pages/dashboard/system/basics/images.php:10
 msgid "Pull a picture of the day from concrete5.org (Default)"
@@ -14404,37 +14487,32 @@ msgstr "Poista varmuuskopio"
 msgid "Restore Backup"
 msgstr "Palauta varmuuskopio"
 
-#: concrete/config/install/base/dashboard.xml:819
 #: concrete/single_pages/dashboard/system/backup/backup.php:94
-msgid "Backup Database"
-msgstr "Varmuuskopioi tietokanta"
-
-#: concrete/single_pages/dashboard/system/backup/backup.php:95
 msgid "Existing Backups"
 msgstr "Olemassaolevat varmuuskopiot"
 
-#: concrete/single_pages/dashboard/system/backup/backup.php:126
+#: concrete/single_pages/dashboard/system/backup/backup.php:125
 msgid "You have no backups available."
 msgstr "Sinulla ei ole varmuuskopioita saatavilla."
 
-#: concrete/single_pages/dashboard/system/backup/backup.php:132
+#: concrete/single_pages/dashboard/system/backup/backup.php:131
 msgid "Create new Backup"
 msgstr "Luo uusi varmuuskopio"
 
-#: concrete/single_pages/dashboard/system/backup/backup.php:135
-msgid "Run Backup"
-msgstr "Luo varmuuskopio"
-
-#: concrete/single_pages/dashboard/system/backup/backup.php:140
-#: concrete/single_pages/dashboard/system/backup/backup.php:143
+#: concrete/single_pages/dashboard/system/backup/backup.php:139
+#: concrete/single_pages/dashboard/system/backup/backup.php:142
 msgid "Use Encryption"
 msgstr "Käytä salausta"
 
-#: concrete/single_pages/dashboard/system/backup/backup.php:149
+#: concrete/single_pages/dashboard/system/backup/backup.php:147
+msgid "Run Backup"
+msgstr "Luo varmuuskopio"
+
+#: concrete/single_pages/dashboard/system/backup/backup.php:152
 msgid "Important Information about Backup & Restore"
 msgstr "Tärkeää tietoa varmuuskopioinnista ja palautuksesta"
 
-#: concrete/single_pages/dashboard/system/backup/backup.php:151
+#: concrete/single_pages/dashboard/system/backup/backup.php:154
 msgid ""
 "Running a backup will create a database export file and store it on your "
 "server. Encryption is only advised if you plan on storing the backup on the "
@@ -14443,10 +14521,6 @@ msgid ""
 "correctly. If any error messages appear during the backup process, do "
 "<b>not</b> attempt to restore from that backup."
 msgstr "Varmuuskopioinnin ajaminen luo tietokannastasi siirtotiedoston ja tallentaa sen palvelimellesi. Salausta kannattaa käyttää ainoastaan, jos et aio poistaa varmuuskopiota. Salauksen käyttäminen <strong>ei ole</strong> suositeltua. Varmuuskopioinnin luonnin jälkeen lataa tiedosto ja varmista, että koko tietokanta tallennettiin onnistuneesti. Jos virheitä ilmenee, <strong>älä</strong> yritä palauttaa sivustoa virheellisestä varmuuskopiosta."
-
-#: concrete/single_pages/dashboard/system/backup/backup.php:156
-msgid "Backup"
-msgstr "Varmuuskopiointi"
 
 #: concrete/single_pages/dashboard/system/backup/backup.php:157
 msgid "You do not have permission to create or administer backups."
@@ -14514,7 +14588,7 @@ msgstr "Useampi päivitys saatavilla. Ole hyvä ja valitse haluttu päivitys lis
 msgid "Current Version"
 msgstr "Nykyinen versio"
 
-#: concrete/config/install/base/dashboard.xml:820
+#: concrete/config/install/base/dashboard.xml:829
 #: concrete/single_pages/dashboard/system/backup/update.php:102
 msgid "Update concrete5"
 msgstr "Päivitä concrete5"
@@ -14529,7 +14603,7 @@ msgid ""
 "it may help to clear your cache."
 msgstr "Välimuistin tyhjentäminen voi auttaa, jos sivustollasi näkyy vanhentunutta tietoa tai se käyttäytyy muuten odottamattomasti."
 
-#: concrete/config/install/base/dashboard.xml:573
+#: concrete/config/install/base/dashboard.xml:602
 #: concrete/single_pages/dashboard/system/optimization/clearcache.php:8
 msgid "Clear Cache"
 msgstr "Tyhjennä välimuisti"
@@ -15287,7 +15361,7 @@ msgstr "Perustiedot"
 msgid "Time Zone"
 msgstr "Aikavyöhyke"
 
-#: concrete/config/install/base/dashboard.xml:672
+#: concrete/config/install/base/dashboard.xml:688
 #: concrete/single_pages/account/profile/edit.php:61
 msgid "Authentication Types"
 msgstr "Autentikointityypit"
@@ -15652,30 +15726,35 @@ msgstr "Sekalaiset"
 
 #: concrete/themes/elemental/css/styles.xml:55
 msgctxt "StyleName"
+msgid "Content Divider Color"
+msgstr ""
+
+#: concrete/themes/elemental/css/styles.xml:56
+msgctxt "StyleName"
 msgid "Default Button Border"
 msgstr "Oletus painikkeen reunus"
 
-#: concrete/themes/elemental/css/styles.xml:56
+#: concrete/themes/elemental/css/styles.xml:57
 msgctxt "StyleName"
 msgid "Sidebar Faint Background"
 msgstr "Sivupalstan himmeä taustaväri"
 
-#: concrete/themes/elemental/css/styles.xml:57
+#: concrete/themes/elemental/css/styles.xml:58
 msgctxt "StyleName"
 msgid "Title Thin"
 msgstr "Ohut otsikko"
 
-#: concrete/themes/elemental/css/styles.xml:58
+#: concrete/themes/elemental/css/styles.xml:59
 msgctxt "StyleName"
 msgid "Title Caps Bold"
 msgstr "Lihavoitu suuraakkosotsikko"
 
-#: concrete/themes/elemental/css/styles.xml:59
+#: concrete/themes/elemental/css/styles.xml:60
 msgctxt "StyleName"
 msgid "Home Feature Title"
 msgstr "Etusivun noston otsikko"
 
-#: concrete/themes/elemental/css/styles.xml:60
+#: concrete/themes/elemental/css/styles.xml:61
 msgctxt "StyleName"
 msgid "Home Feature Icon"
 msgstr "Etusivun noston ikoni"
@@ -15783,6 +15862,10 @@ msgstr "uusi käyttäjäryhmä, uusi ryhmä, ryhmä, luo"
 #: concrete/config/install/base/dashboard.xml:153
 msgid "Move Multiple Groups"
 msgstr "Siirrä useampi ryhmä"
+
+#: concrete/config/install/base/dashboard.xml:155
+msgid "Group Sets"
+msgstr "Ryhmäjoukot"
 
 #. Keywords for page /dashboard/users/group_sets
 #: concrete/config/install/base/dashboard.xml:158
@@ -16152,411 +16235,420 @@ msgstr "Hakuindeksi"
 msgid "configure search, site search, search option"
 msgstr "konfiguroi haku, sivuston haku, haun vaihtoehdot"
 
-#: concrete/config/install/base/dashboard.xml:565
+#: concrete/config/install/base/dashboard.xml:566
+msgid "File Manager Permissions"
+msgstr "Tiedostohallinnan oikeudet"
+
+#. Keywords for page /dashboard/system/files/permissions
+#: concrete/config/install/base/dashboard.xml:569
+msgid "file options, file manager, upload, modify"
+msgstr "tiedosto-ominaisuudet, tiedostohallinta, lähetä, muokkaa"
+
+#. Keywords for page /dashboard/system/files/filetypes
+#: concrete/config/install/base/dashboard.xml:576
+msgid "security, files, media, extension, manager, upload"
+msgstr "turvallisuus, tiedostot, media, laajennokset, hallinta, lähetä"
+
+#. Keywords for page /dashboard/system/files/thumbnails
+#: concrete/config/install/base/dashboard.xml:583
+msgid "images, picture, responsive, retina"
+msgstr ""
+
+#: concrete/config/install/base/dashboard.xml:587
+msgid "File Storage Locations"
+msgstr "Tiedostovarastojen sijainnit"
+
+#. Keywords for page /dashboard/system/files/storage
+#: concrete/config/install/base/dashboard.xml:590
+msgid "security, alternate storage, hide files"
+msgstr "turvallisuus, vaihtoehtoinen tila, piilota tiedostot"
+
+#: concrete/config/install/base/dashboard.xml:594
 msgid "Optimization"
 msgstr "Optimointi"
 
-#: concrete/config/install/base/dashboard.xml:565
+#: concrete/config/install/base/dashboard.xml:594
 msgid "Keep your site running well."
 msgstr "Pidä sivustosi kunnossa."
 
-#: concrete/config/install/base/dashboard.xml:566
+#: concrete/config/install/base/dashboard.xml:595
 msgid "Cache & Speed Settings"
 msgstr "Välimuisti- ja nopeusasetukset"
 
 #. Keywords for page /dashboard/system/optimization/cache
-#: concrete/config/install/base/dashboard.xml:569
+#: concrete/config/install/base/dashboard.xml:598
 msgid ""
 "cache option, change cache, override, turn on cache, turn off cache, no "
 "cache, page cache, caching"
 msgstr "välimuistiasetukset, muuta välimuisti, ylikirjoita, ota välimuisti käyttöön, ota välimuisti pois käytöstä, ei välimuistia, sivun välimuisti, välimuisti"
 
 #. Keywords for page /dashboard/system/optimization/clearcache
-#: concrete/config/install/base/dashboard.xml:576
+#: concrete/config/install/base/dashboard.xml:605
 msgid "cache option, turn off cache, no cache, page cache, caching"
 msgstr "välimuistin vaihtoehdot, ota välimuisti pois käytöstä, ei välimuistia, sivun välimuisti, välimuisti"
 
-#: concrete/config/install/base/dashboard.xml:580
+#: concrete/config/install/base/dashboard.xml:609
 msgid "Automated Jobs"
 msgstr "Automatisoidut työt"
 
 #. Keywords for page /dashboard/system/optimization/jobs
-#: concrete/config/install/base/dashboard.xml:583
+#: concrete/config/install/base/dashboard.xml:612
 msgid ""
 "index search, reindex search, build sitemap, sitemap.xml, clear old "
 "versions, page versions, remove old"
 msgstr "indeksoi haku, uudelleenindeksoi haku, rakenne sivukartta, sitemap.xml, poista vanhat versiot, sivuversiot, poista vanha"
 
-#: concrete/config/install/base/dashboard.xml:588
+#: concrete/config/install/base/dashboard.xml:617
 msgid "Permissions & Access"
 msgstr "Pääsy- ja muut oikeudet"
 
-#: concrete/config/install/base/dashboard.xml:588
+#: concrete/config/install/base/dashboard.xml:617
 msgid "Control who sees and edits your site."
 msgstr "Määrittele kuka näkee ja voi muokata sivustoasi."
 
 #. Keywords for page /dashboard/system/permissions/site
-#: concrete/config/install/base/dashboard.xml:592
+#: concrete/config/install/base/dashboard.xml:621
 msgid "editors, hide site, offline, private, public, access"
 msgstr "editorit, piilota sivusto, pois käytöstä, julkinen, pääsyoikeus"
 
-#: concrete/config/install/base/dashboard.xml:596
-msgid "File Manager Permissions"
-msgstr "Tiedostohallinnan oikeudet"
-
-#. Keywords for page /dashboard/system/permissions/files
-#: concrete/config/install/base/dashboard.xml:599
-msgid "file options, file manager, upload, modify"
-msgstr "tiedosto-ominaisuudet, tiedostohallinta, lähetä, muokkaa"
-
-#. Keywords for page /dashboard/system/permissions/filetypes
-#: concrete/config/install/base/dashboard.xml:606
-msgid "security, files, media, extension, manager, upload"
-msgstr "turvallisuus, tiedostot, media, laajennokset, hallinta, lähetä"
-
 #. Keywords for page /dashboard/system/permissions/tasks
-#: concrete/config/install/base/dashboard.xml:613
+#: concrete/config/install/base/dashboard.xml:629
 msgid "security, actions, administrator, admin, package, marketplace, search"
 msgstr "turvallisuus, toimenpiteet, ylläpito, ylläpitäjä, paketti, kauppapaikka, haku"
 
-#: concrete/config/install/base/dashboard.xml:619
+#: concrete/config/install/base/dashboard.xml:635
 msgid "Advanced Permissions"
 msgstr "Monipuoliset oikeudet"
 
-#: concrete/config/install/base/dashboard.xml:621
+#: concrete/config/install/base/dashboard.xml:637
 msgid "IP Blacklist"
 msgstr "IP-osoitteiden musta lista"
 
 #. Keywords for page /dashboard/system/permissions/blacklist
-#: concrete/config/install/base/dashboard.xml:624
+#: concrete/config/install/base/dashboard.xml:640
 msgid "security, lock ip, lock out, block ip, address, restrict, access"
 msgstr "turvallisuus, lukitse ip, estä ip, osoite, rajoita, pääsy"
 
-#: concrete/config/install/base/dashboard.xml:628
+#: concrete/config/install/base/dashboard.xml:644
 msgid "Captcha Setup"
 msgstr "Captcha-asetukset"
 
 #. Keywords for page /dashboard/system/permissions/captcha
-#: concrete/config/install/base/dashboard.xml:631
+#: concrete/config/install/base/dashboard.xml:647
 msgid "security, registration"
 msgstr "turvallisuus, rekisteröinti"
 
-#: concrete/config/install/base/dashboard.xml:635
+#: concrete/config/install/base/dashboard.xml:651
 msgid "Spam Control"
 msgstr "Roskapostin asetukset"
 
 #. Keywords for page /dashboard/system/permissions/antispam
-#: concrete/config/install/base/dashboard.xml:638
+#: concrete/config/install/base/dashboard.xml:654
 msgid "antispam, block spam, security"
 msgstr "roskaposti, estä roskaposti, turvallisuus"
 
 #. Keywords for page /dashboard/system/permissions/maintenance
-#: concrete/config/install/base/dashboard.xml:645
+#: concrete/config/install/base/dashboard.xml:661
 msgid "lock site, under construction, hide, hidden"
 msgstr "lukitse sivusto, rakennusvaiheessa, piilotettu, piilossa"
 
-#: concrete/config/install/base/dashboard.xml:650
+#: concrete/config/install/base/dashboard.xml:666
 msgid "Login & Registration"
 msgstr "Kirjautuminen ja rekisteröityminen"
 
-#: concrete/config/install/base/dashboard.xml:650
+#: concrete/config/install/base/dashboard.xml:666
 msgid "Change login behaviors and setup public profiles."
 msgstr "Muuta kirjautumisasetukset ja määrittele julkiset profiilit."
 
-#: concrete/config/install/base/dashboard.xml:651
+#: concrete/config/install/base/dashboard.xml:667
 msgid "Login Destination"
 msgstr "Kirjautumisen kohdesivu"
 
 #. Keywords for page /dashboard/system/registration/postlogin
-#: concrete/config/install/base/dashboard.xml:654
+#: concrete/config/install/base/dashboard.xml:670
 msgid "profile, login, redirect, specific, dashboard, administrators"
 msgstr "profiili, kirjautuminen, uudelleenohjaa, tietty, hallintapaneeli, ylläpitäjät"
 
-#: concrete/config/install/base/dashboard.xml:658
+#: concrete/config/install/base/dashboard.xml:674
 msgid "Public Profiles"
 msgstr "Julkiset profiilit"
 
 #. Keywords for page /dashboard/system/registration/profiles
-#: concrete/config/install/base/dashboard.xml:661
+#: concrete/config/install/base/dashboard.xml:677
 msgid "member profile, member page, community, forums, social, avatar"
 msgstr "käyttäjäprofiili, käyttäjäsivu, yhteisö, keskustelut, sosiaalinen, avatar"
 
 #. Keywords for page /dashboard/system/registration/open
-#: concrete/config/install/base/dashboard.xml:668
+#: concrete/config/install/base/dashboard.xml:684
 msgid "signup, new user, community, public registration, public, registration"
 msgstr "kirjautuminen, uusi käyttäjä, yhteisö, julkinen rekisteröityminen, julkinen, rekisteröityminen"
 
 #. Keywords for page /dashboard/system/registration/authentication
-#: concrete/config/install/base/dashboard.xml:675
+#: concrete/config/install/base/dashboard.xml:691
 msgid "auth, authentication, types, oauth, facebook, login, registration"
 msgstr "tunnistus, tunnistautuminen, tyypit, oauth, facebook, kirjautuminen, rekisteröityminen"
 
-#: concrete/config/install/base/dashboard.xml:680
+#: concrete/config/install/base/dashboard.xml:696
 msgid "Control how your site send and processes mail."
 msgstr "Määrittele kuinka sivustosi lähettää ja käsittelee sähköposteja."
 
 #. Keywords for page /dashboard/system/mail
-#: concrete/config/install/base/dashboard.xml:683
+#: concrete/config/install/base/dashboard.xml:699
 msgid "smtp, mail settings"
 msgstr "smtp, sähköpostiasetukset"
 
-#: concrete/config/install/base/dashboard.xml:687
+#: concrete/config/install/base/dashboard.xml:703
 msgid "SMTP Method"
 msgstr "SMTP-tapa"
 
 #. Keywords for page /dashboard/system/mail/method
-#: concrete/config/install/base/dashboard.xml:690
+#: concrete/config/install/base/dashboard.xml:706
 msgid "email server, mail settings, mail configuration, external, internal"
 msgstr "sähköpostipalvelin, sähköpostiasetukset, sähköpostin konfiguraatio, ulkoinen, sisäinen"
 
-#: concrete/config/install/base/dashboard.xml:694
+#: concrete/config/install/base/dashboard.xml:710
 msgid "Test Mail Settings"
 msgstr "Testaa sähköpostiasetukset"
 
 #. Keywords for page /dashboard/system/mail/method/test
-#: concrete/config/install/base/dashboard.xml:697
+#: concrete/config/install/base/dashboard.xml:713
 msgid "test smtp, test mail"
 msgstr "testaa smtp, testaa posti"
 
-#: concrete/config/install/base/dashboard.xml:701
+#: concrete/config/install/base/dashboard.xml:717
 msgid "Email Importers"
 msgstr "Sähköpostien tuonti"
 
 #. Keywords for page /dashboard/system/mail/importers
-#: concrete/config/install/base/dashboard.xml:704
+#: concrete/config/install/base/dashboard.xml:720
 msgid ""
 "email server, mail settings, mail configuration, private message, message "
 "system, import, email, message"
 msgstr "sähköpostipalvelin, sähköpostiasetukset, sähköpostin konfiguraatio, yksityisviesti, viestijärjestelmä, vie, sähköposti, viesti"
 
-#: concrete/config/install/base/dashboard.xml:709
+#: concrete/config/install/base/dashboard.xml:725
 msgid "Conversations"
 msgstr "Keskustelut"
 
-#: concrete/config/install/base/dashboard.xml:709
+#: concrete/config/install/base/dashboard.xml:725
 msgid "Manage your conversations settings"
 msgstr "Hallinnoi keskusteluidesi asetuksia"
 
 #. Keywords for page /dashboard/system/conversations
-#: concrete/config/install/base/dashboard.xml:712
+#: concrete/config/install/base/dashboard.xml:728
 msgid "conversations"
 msgstr "keskustelut"
 
-#: concrete/config/install/base/dashboard.xml:716
+#: concrete/config/install/base/dashboard.xml:732
 msgid "Conversations Editor"
 msgstr "Keskustelujen editori"
 
 #. Keywords for page /dashboard/system/conversations/editor
-#: concrete/config/install/base/dashboard.xml:719
+#: concrete/config/install/base/dashboard.xml:735
 msgid "conversations editor, editor"
 msgstr "keskustelujen editori, editori"
 
 #. Keywords for page /dashboard/system/conversations/points
-#: concrete/config/install/base/dashboard.xml:726
+#: concrete/config/install/base/dashboard.xml:742
 msgid "conversations ratings, ratings, community, community points"
 msgstr "keskustelujen arvioinnit, arvioinnit, yhteisö, yhteisöpisteet"
 
-#: concrete/config/install/base/dashboard.xml:730
+#: concrete/config/install/base/dashboard.xml:746
 msgid "Banned Words"
 msgstr "Kielletyt sanat"
 
 #. Keywords for page /dashboard/system/conversations/bannedwords
-#: concrete/config/install/base/dashboard.xml:733
+#: concrete/config/install/base/dashboard.xml:749
 msgid ""
 "conversations bad words, banned words, banned, bad words, bad, words, list"
 msgstr "keskustelujen kielletyt sanat, estetyt sanat, estetty, kielletty, kielletyt sanat, sanat, lista"
 
-#: concrete/config/install/base/dashboard.xml:738
+#: concrete/config/install/base/dashboard.xml:754
 msgid "Setup attributes for pages, users, files and more."
 msgstr "Määrittele attribuutit sivuille, käyttäjille, tiedostoille ja muille."
 
 #. Keywords for page /dashboard/system/attributes
-#: concrete/config/install/base/dashboard.xml:741
+#: concrete/config/install/base/dashboard.xml:757
 msgid "attribute configuration"
 msgstr "attribuuttien konfigurointi"
 
-#: concrete/config/install/base/dashboard.xml:745
+#: concrete/config/install/base/dashboard.xml:761
 msgid "Group attributes into sets for easier organization"
 msgstr "Ryhmittele attribuutteja helpompaa organisointia varten."
 
 #. Keywords for page /dashboard/system/attributes/sets
-#: concrete/config/install/base/dashboard.xml:748
+#: concrete/config/install/base/dashboard.xml:764
 msgid "attributes, sets"
 msgstr "attribuutit, ryhmät"
 
-#: concrete/config/install/base/dashboard.xml:752
+#: concrete/config/install/base/dashboard.xml:768
 msgid "Types"
 msgstr "Tyypit"
 
-#: concrete/config/install/base/dashboard.xml:752
+#: concrete/config/install/base/dashboard.xml:768
 msgid "Choose which attribute types are available for different items."
 msgstr "Valitse, mitkä attribuuttityypit ovat saatavissa eri kohteille."
 
 #. Keywords for page /dashboard/system/attributes/types
-#: concrete/config/install/base/dashboard.xml:755
+#: concrete/config/install/base/dashboard.xml:771
 msgid "attributes, types"
 msgstr "attribuutit, tyypit"
 
-#: concrete/config/install/base/dashboard.xml:759
+#: concrete/config/install/base/dashboard.xml:775
 msgid "Topics"
 msgstr "Aiheet"
 
 #. Keywords for page /dashboard/system/attributes/topics
-#: concrete/config/install/base/dashboard.xml:762
+#: concrete/config/install/base/dashboard.xml:778
 msgid "topics, tags, taxonomy"
 msgstr "aiheet, avainsanat, tagit, termit"
 
-#: concrete/config/install/base/dashboard.xml:768
+#: concrete/config/install/base/dashboard.xml:784
 msgid "Advanced settings for web developers."
 msgstr "Lisäasetukset webkehittäjille."
 
-#: concrete/config/install/base/dashboard.xml:775
+#: concrete/config/install/base/dashboard.xml:791
 msgid "Environment Information"
 msgstr "Ympäristötiedot"
 
 #. Keywords for page /dashboard/system/environment/info
-#: concrete/config/install/base/dashboard.xml:778
+#: concrete/config/install/base/dashboard.xml:794
 msgid "overrides, system info, debug, support, help"
 msgstr "ylikirjoitukset, järjestelmätiedot, virheenetsintä, tuki, ohje, apua"
 
-#: concrete/config/install/base/dashboard.xml:782
+#: concrete/config/install/base/dashboard.xml:798
 msgid "Debug Settings"
 msgstr "Vianetsintäasetukset"
 
 #. Keywords for page /dashboard/system/environment/debug
-#: concrete/config/install/base/dashboard.xml:785
+#: concrete/config/install/base/dashboard.xml:801
 msgid "errors, exceptions, develop, support, help"
 msgstr "virheet, poikkeukset, kehitä, ohje, apu"
 
-#: concrete/config/install/base/dashboard.xml:789
+#: concrete/config/install/base/dashboard.xml:805
 msgid "Logging Settings"
 msgstr "Lokiasetukset"
 
 #. Keywords for page /dashboard/system/environment/logging
-#: concrete/config/install/base/dashboard.xml:792
+#: concrete/config/install/base/dashboard.xml:808
 msgid "email, logging, logs, smtp, pop, errors, mysql, log"
 msgstr "sähköposti, lokit, logit, smtp, pop, virheet, mysql, loki, logi"
 
-#: concrete/config/install/base/dashboard.xml:796
-msgid "File Storage Locations"
-msgstr "Tiedostovarastojen sijainnit"
-
-#. Keywords for page /dashboard/system/environment/storage
-#: concrete/config/install/base/dashboard.xml:799
-msgid "security, alternate storage, hide files"
-msgstr "turvallisuus, vaihtoehtoinen tila, piilota tiedostot"
-
-#: concrete/config/install/base/dashboard.xml:805
+#: concrete/config/install/base/dashboard.xml:814
 msgid "Proxy Server"
 msgstr "Välityspalvelin"
 
 #. Keywords for page /dashboard/system/environment/proxy
-#: concrete/config/install/base/dashboard.xml:808
+#: concrete/config/install/base/dashboard.xml:817
 msgid "network, proxy server"
 msgstr "verkko, välityspalvelin"
 
-#: concrete/config/install/base/dashboard.xml:812
+#: concrete/config/install/base/dashboard.xml:821
 msgid "Backup & Restore"
 msgstr "Varmuuskopiointi ja palautus"
 
-#: concrete/config/install/base/dashboard.xml:812
+#: concrete/config/install/base/dashboard.xml:821
 msgid "Backup or restore your website."
 msgstr "Päivitä tai palauta sivustosi."
 
 #. Keywords for page /dashboard/system/backup
-#: concrete/config/install/base/dashboard.xml:815
+#: concrete/config/install/base/dashboard.xml:824
 msgid "export, backup, database, sql, mysql, encryption, restore"
 msgstr "vie, varmuuskopio, tietokanta, sql, mysql, suojaus, palauta"
 
+#: concrete/config/install/base/dashboard.xml:828
+msgid "Backup Database"
+msgstr "Varmuuskopioi tietokanta"
+
 #. Keywords for page /dashboard/system/backup/update
-#: concrete/config/install/base/dashboard.xml:823
+#: concrete/config/install/base/dashboard.xml:832
 msgid "upgrade, new version, update"
 msgstr "päivitä, uusi versio"
 
-#: concrete/config/install/base/dashboard.xml:831
+#: concrete/config/install/base/dashboard.xml:840
 msgid "Dashboard Primary + Five"
 msgstr "Hallintapaneelin ensisijainen + viisi"
 
-#: concrete/config/install/base/dashboard.xml:832
+#: concrete/config/install/base/dashboard.xml:841
 msgid "Dashboard Header + Four Column"
 msgstr "Hallintapaneelin yläosa + neljä saraketta"
 
-#: concrete/config/install/base/dashboard.xml:836
+#: concrete/config/install/base/dashboard.xml:845
 msgctxt "PageTemplateName"
 msgid "Stack"
 msgstr "Pino"
 
-#: concrete/config/install/base/dashboard.xml:837
+#: concrete/config/install/base/dashboard.xml:846
 msgctxt "PageTemplateName"
 msgid "Dashboard Primary + Five"
 msgstr "Hallintapaneelin ensisijainen + viisi"
 
-#: concrete/config/install/base/dashboard.xml:838
+#: concrete/config/install/base/dashboard.xml:847
 msgctxt "PageTemplateName"
 msgid "Dashboard Header + Four Column"
 msgstr "Hallintapaneelin yläosa + neljä saraketta"
 
-#: concrete/config/install/base/dashboard.xml:841
+#: concrete/config/install/base/dashboard.xml:850
 msgid "Welcome to concrete5"
 msgstr "Tervetuloa concrete5:een"
 
-#: concrete/config/install/base/dashboard.xml:841
+#: concrete/config/install/base/dashboard.xml:850
 msgid ""
 "Learn about how to use concrete5, how to develop for concrete5, and get "
 "general help."
 msgstr "Lue, kuinka käytät concrete5:sta, kuinka concrete5:lle kehitetään, ja hae yleistä apua."
 
-#: concrete/config/install/base/dashboard.xml:847
+#: concrete/config/install/base/dashboard.xml:856
 msgctxt "AreaName"
 msgid "Header"
 msgstr "Yläosa"
 
-#: concrete/config/install/base/dashboard.xml:858
+#: concrete/config/install/base/dashboard.xml:867
 msgctxt "AreaName"
 msgid "Column 1"
 msgstr "Sarake 1"
 
-#: concrete/config/install/base/dashboard.xml:872
+#: concrete/config/install/base/dashboard.xml:881
 msgctxt "AreaName"
 msgid "Column 2"
 msgstr "Sarake 2"
 
-#: concrete/config/install/base/dashboard.xml:885
+#: concrete/config/install/base/dashboard.xml:894
 msgctxt "AreaName"
 msgid "Column 3"
 msgstr "Sarake 3"
 
-#: concrete/config/install/base/dashboard.xml:899
+#: concrete/config/install/base/dashboard.xml:908
 msgctxt "AreaName"
 msgid "Column 4"
 msgstr "Saraje 4"
 
-#: concrete/config/install/base/dashboard.xml:924
+#: concrete/config/install/base/dashboard.xml:933
 msgctxt "AreaName"
 msgid "Primary"
 msgstr "Ensisijainen"
 
-#: concrete/config/install/base/dashboard.xml:928
+#: concrete/config/install/base/dashboard.xml:937
 msgctxt "AreaName"
 msgid "Secondary 1"
 msgstr "Toissijainen 1"
 
-#: concrete/config/install/base/dashboard.xml:937
+#: concrete/config/install/base/dashboard.xml:946
 msgctxt "AreaName"
 msgid "Secondary 2"
 msgstr "Toissijainen 2"
 
-#: concrete/config/install/base/dashboard.xml:946
+#: concrete/config/install/base/dashboard.xml:955
 msgctxt "AreaName"
 msgid "Secondary 3"
 msgstr "Toissijainen 3"
 
-#: concrete/config/install/base/dashboard.xml:949
+#: concrete/config/install/base/dashboard.xml:958
 msgctxt "AreaName"
 msgid "Secondary 4"
 msgstr "Toissijainen 4"
 
-#: concrete/config/install/base/dashboard.xml:952
+#: concrete/config/install/base/dashboard.xml:961
 msgctxt "AreaName"
 msgid "Secondary 5"
 msgstr "Toissijainen 5"
@@ -16583,16 +16675,19 @@ msgstr "Hakemisto"
 
 #: concrete/config/install/base/login_registration.xml:20
 #: concrete/config/install/packages/elemental_blank/content.xml:29
-#: concrete/config/install/packages/elemental_full/content.xml:193
-#: concrete/config/install/packages/elemental_full/content.xml:391
-#: concrete/config/install/packages/elemental_full/content.xml:536
-#: concrete/config/install/packages/elemental_full/content.xml:554
-#: concrete/config/install/packages/elemental_full/content.xml:696
-#: concrete/config/install/packages/elemental_full/content.xml:710
-#: concrete/config/install/packages/elemental_full/content.xml:876
-#: concrete/config/install/packages/elemental_full/content.xml:1053
-#: concrete/config/install/packages/elemental_full/content.xml:1116
-#: concrete/config/install/packages/elemental_full/content.xml:1152
+#: concrete/config/install/packages/elemental_full/content.xml:204
+#: concrete/config/install/packages/elemental_full/content.xml:295
+#: concrete/config/install/packages/elemental_full/content.xml:407
+#: concrete/config/install/packages/elemental_full/content.xml:574
+#: concrete/config/install/packages/elemental_full/content.xml:719
+#: concrete/config/install/packages/elemental_full/content.xml:737
+#: concrete/config/install/packages/elemental_full/content.xml:882
+#: concrete/config/install/packages/elemental_full/content.xml:896
+#: concrete/config/install/packages/elemental_full/content.xml:1065
+#: concrete/config/install/packages/elemental_full/content.xml:1245
+#: concrete/config/install/packages/elemental_full/content.xml:1308
+#: concrete/config/install/packages/elemental_full/content.xml:1344
+#: concrete/config/install/packages/elemental_full/content.xml:1388
 msgctxt "AreaName"
 msgid "Main"
 msgstr "Pääosio"
@@ -17719,204 +17814,278 @@ msgctxt "AttributeSetName"
 msgid "Navigation and Indexing"
 msgstr "Navigaatio ja indeksointi"
 
-#: concrete/config/install/packages/elemental_full/content.xml:8
+#: concrete/config/install/packages/elemental_full/content.xml:5
 msgctxt "AttributeKeyName"
 msgid "Department"
 msgstr "Osasto"
 
-#: concrete/config/install/packages/elemental_full/content.xml:11
+#: concrete/config/install/packages/elemental_full/content.xml:8
 msgctxt "SelectAttributeValue"
 msgid "Finance"
 msgstr "Talous"
 
-#: concrete/config/install/packages/elemental_full/content.xml:12
+#: concrete/config/install/packages/elemental_full/content.xml:9
 msgctxt "SelectAttributeValue"
 msgid "Marketing and Sales"
 msgstr "Markkinointi ja myynti"
 
-#: concrete/config/install/packages/elemental_full/content.xml:13
+#: concrete/config/install/packages/elemental_full/content.xml:10
 msgctxt "SelectAttributeValue"
 msgid "Human Resources"
 msgstr "Henkilöstöresurssit"
 
-#: concrete/config/install/packages/elemental_full/content.xml:14
+#: concrete/config/install/packages/elemental_full/content.xml:11
 msgctxt "SelectAttributeValue"
 msgid "Technical and Operations"
 msgstr "Tekniset ja toiminnot"
 
-#: concrete/config/install/packages/elemental_full/content.xml:15
+#: concrete/config/install/packages/elemental_full/content.xml:12
 msgctxt "SelectAttributeValue"
 msgid "Management"
 msgstr "Hallinnointi"
 
-#: concrete/config/install/packages/elemental_full/content.xml:20
+#: concrete/config/install/packages/elemental_full/content.xml:17
 msgctxt "AttributeKeyName"
 msgid "Location"
 msgstr "Sijainti"
 
-#: concrete/config/install/packages/elemental_full/content.xml:25
+#: concrete/config/install/packages/elemental_full/content.xml:20
+msgctxt "AttributeKeyName"
+msgid "Exclude From Sub-Pages From Nav"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:23
+msgctxt "AttributeKeyName"
+msgid "Thumbnail"
+msgstr "Pienoiskuva"
+
+#: concrete/config/install/packages/elemental_full/content.xml:24
+msgctxt "AttributeKeyName"
+msgid "Topic"
+msgstr "Aihe"
+
+#: concrete/config/install/packages/elemental_full/content.xml:32
 msgctxt "AttributeSetName"
 msgid "Jobs"
 msgstr "Työt"
 
-#: concrete/config/install/packages/elemental_full/content.xml:31
+#: concrete/config/install/packages/elemental_full/content.xml:36
+msgctxt "AttributeSetName"
+msgid "Blog"
+msgstr "Blogi"
+
+#: concrete/config/install/packages/elemental_full/content.xml:42
 msgctxt "PageTemplateName"
 msgid "Blank"
 msgstr "Tyhjä"
 
 #: concrete/config/install/packages/elemental_blank/content.xml:7
-#: concrete/config/install/packages/elemental_full/content.xml:32
+#: concrete/config/install/packages/elemental_full/content.xml:43
 msgctxt "PageTemplateName"
 msgid "Full"
 msgstr "Täysleveä"
 
-#: concrete/config/install/packages/elemental_full/content.xml:33
+#: concrete/config/install/packages/elemental_full/content.xml:44
 msgctxt "PageTemplateName"
 msgid "Left Sidebar"
 msgstr "Vasen sivupalsta"
 
-#: concrete/config/install/packages/elemental_full/content.xml:34
+#: concrete/config/install/packages/elemental_full/content.xml:45
 msgctxt "PageTemplateName"
 msgid "Right Sidebar"
 msgstr "Oikea sivupalsta"
 
-#: concrete/config/install/packages/elemental_full/content.xml:37
+#: concrete/config/install/packages/elemental_full/content.xml:48
 msgid "Empty Page"
 msgstr "Tyhjä sivu"
 
 #: concrete/config/install/packages/elemental_blank/content.xml:15
-#: concrete/config/install/packages/elemental_full/content.xml:42
-#: concrete/config/install/packages/elemental_full/content.xml:73
+#: concrete/config/install/packages/elemental_full/content.xml:53
+#: concrete/config/install/packages/elemental_full/content.xml:84
 msgctxt "PageTypeComposerFormLayoutSetName"
 msgid "Basics"
 msgstr "Perusteet"
 
 #: concrete/config/install/packages/elemental_blank/content.xml:16
-#: concrete/config/install/packages/elemental_full/content.xml:44
+#: concrete/config/install/packages/elemental_full/content.xml:55
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Page Name"
 msgstr "Sivun nimi"
 
-#: concrete/config/install/packages/elemental_full/content.xml:66
+#: concrete/config/install/packages/elemental_full/content.xml:77
 msgid "Job Posting"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:75
+#: concrete/config/install/packages/elemental_full/content.xml:86
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Job Name"
 msgstr "Työn nimi"
 
-#: concrete/config/install/packages/elemental_full/content.xml:77
+#: concrete/config/install/packages/elemental_full/content.xml:88
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Posting Date"
 msgstr "Lähetyspäivämäärä"
 
-#: concrete/config/install/packages/elemental_full/content.xml:79
+#: concrete/config/install/packages/elemental_full/content.xml:90
 msgctxt "PageTypeComposerFormLayoutSetName"
 msgid "About This Job"
 msgstr "Tietoa tästä työstä"
 
-#: concrete/config/install/packages/elemental_full/content.xml:84
+#: concrete/config/install/packages/elemental_full/content.xml:95
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Brief Description"
 msgstr "Lyhyt kuvaus"
 
-#: concrete/config/install/packages/elemental_full/content.xml:86
+#: concrete/config/install/packages/elemental_full/content.xml:97
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Job Details"
 msgstr "Työn tiedot"
 
-#: concrete/config/install/packages/elemental_full/content.xml:94
-#: concrete/config/install/packages/elemental_full/content.xml:1072
-#: concrete/config/install/packages/elemental_full/content.xml:1135
+#: concrete/config/install/packages/elemental_full/content.xml:105
+#: concrete/config/install/packages/elemental_full/content.xml:1264
+#: concrete/config/install/packages/elemental_full/content.xml:1327
 msgctxt "AreaName"
 msgid "Page Header"
 msgstr "Sivun yläosa"
 
-#: concrete/config/install/packages/elemental_full/content.xml:106
-#: concrete/config/install/packages/elemental_full/content.xml:1077
-#: concrete/config/install/packages/elemental_full/content.xml:1140
+#: concrete/config/install/packages/elemental_full/content.xml:117
+#: concrete/config/install/packages/elemental_full/content.xml:422
+#: concrete/config/install/packages/elemental_full/content.xml:1269
+#: concrete/config/install/packages/elemental_full/content.xml:1332
 msgctxt "AreaName"
 msgid "Sidebar"
 msgstr "Sivupalsta"
 
-#: concrete/config/install/packages/elemental_full/content.xml:261
-#: concrete/config/install/packages/elemental_full/content.xml:1083
-#: concrete/config/install/packages/elemental_full/content.xml:1146
+#: concrete/config/install/packages/elemental_full/content.xml:272
+#: concrete/config/install/packages/elemental_full/content.xml:1275
+#: concrete/config/install/packages/elemental_full/content.xml:1338
 msgctxt "AreaName"
 msgid "Page Footer"
 msgstr "Sivun alatunniste"
 
-#: concrete/config/install/packages/elemental_full/content.xml:271
-msgid "Footer Contact"
-msgstr "Alatunnisteen yhteystiedot"
+#: concrete/config/install/packages/elemental_full/content.xml:280
+#: concrete/config/install/packages/elemental_full/content.xml:1382
+msgid "Blog"
+msgstr "Blogi"
 
-#: concrete/config/install/packages/elemental_full/content.xml:272
-#: concrete/config/install/packages/elemental_full/content.xml:286
-#: concrete/config/install/packages/elemental_full/content.xml:300
-#: concrete/config/install/packages/elemental_full/content.xml:314
-#: concrete/config/install/packages/elemental_full/content.xml:327
-#: concrete/config/install/packages/elemental_full/content.xml:339
-#: concrete/config/install/packages/elemental_full/content.xml:359
-#: concrete/config/install/packages/elemental_full/content.xml:376
-msgid "Main"
-msgstr "Pääosio"
+#: concrete/config/install/packages/elemental_full/content.xml:287
+msgctxt "PageTypeComposerFormLayoutSetName"
+msgid "Details"
+msgstr "Tiedot"
 
-#: concrete/config/install/packages/elemental_full/content.xml:285
-msgid "Footer Legal"
-msgstr "Alatunniste Lakitiedot"
+#: concrete/config/install/packages/elemental_full/content.xml:288
+msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
+msgid "Blog Name"
+msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:299
-msgid "Footer Navigation"
-msgstr "Alatunnisteen navigaatio"
-
-#: concrete/config/install/packages/elemental_full/content.xml:313
-msgid "Footer Site Title"
-msgstr "Alatunnisteen sivun otsikko"
-
-#: concrete/config/install/packages/elemental_full/content.xml:326
-msgid "Footer Social"
-msgstr "Alatunniste Sosiaalinen"
-
-#: concrete/config/install/packages/elemental_full/content.xml:338
-msgid "Header Navigation"
-msgstr "Ylätunniste Navigaatio"
-
-#: concrete/config/install/packages/elemental_full/content.xml:358
-msgid "Header Search"
-msgstr "Ylätunniste Haku"
-
-#: concrete/config/install/packages/elemental_full/content.xml:375
-msgid "Header Site Title"
-msgstr "Ylätunniste Sivuston otsikko"
-
-#: concrete/config/install/packages/elemental_full/content.xml:475
+#: concrete/config/install/packages/elemental_full/content.xml:378
+#: concrete/config/install/packages/elemental_full/content.xml:444
+#: concrete/config/install/packages/elemental_full/content.xml:658
+#: concrete/config/install/packages/elemental_full/content.xml:1394
 msgctxt "AreaName"
 msgid "Main Footer"
 msgstr "Pääosio Alatunniste"
 
-#: concrete/config/install/packages/elemental_full/content.xml:553
+#: concrete/config/install/packages/elemental_full/content.xml:386
+msgid "Blog Entry"
+msgstr "Blogikirjoitus"
+
+#: concrete/config/install/packages/elemental_full/content.xml:393
+msgctxt "PageTypeComposerFormLayoutSetName"
+msgid "Post Details"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:394
+msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
+msgid "Entry Name"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:395
+msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
+msgid "Short Description"
+msgstr "Lyhyt kuvaus"
+
+#: concrete/config/install/packages/elemental_full/content.xml:396
+msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
+msgid "Blog"
+msgstr "Blogi"
+
+#: concrete/config/install/packages/elemental_full/content.xml:397
+msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
+msgid "Topic"
+msgstr "Aihe"
+
+#: concrete/config/install/packages/elemental_blank/content.xml:22
+#: concrete/config/install/packages/elemental_full/content.xml:399
+msgctxt "PageTypeComposerFormLayoutSetName"
+msgid "Content"
+msgstr "Sisältö"
+
+#: concrete/config/install/packages/elemental_full/content.xml:454
+msgid "Footer Contact"
+msgstr "Alatunnisteen yhteystiedot"
+
+#: concrete/config/install/packages/elemental_full/content.xml:455
+#: concrete/config/install/packages/elemental_full/content.xml:469
+#: concrete/config/install/packages/elemental_full/content.xml:483
+#: concrete/config/install/packages/elemental_full/content.xml:497
+#: concrete/config/install/packages/elemental_full/content.xml:510
+#: concrete/config/install/packages/elemental_full/content.xml:522
+#: concrete/config/install/packages/elemental_full/content.xml:542
+#: concrete/config/install/packages/elemental_full/content.xml:559
+msgid "Main"
+msgstr "Pääosio"
+
+#: concrete/config/install/packages/elemental_full/content.xml:468
+msgid "Footer Legal"
+msgstr "Alatunniste Lakitiedot"
+
+#: concrete/config/install/packages/elemental_full/content.xml:482
+msgid "Footer Navigation"
+msgstr "Alatunnisteen navigaatio"
+
+#: concrete/config/install/packages/elemental_full/content.xml:496
+msgid "Footer Site Title"
+msgstr "Alatunnisteen sivun otsikko"
+
+#: concrete/config/install/packages/elemental_full/content.xml:509
+msgid "Footer Social"
+msgstr "Alatunniste Sosiaalinen"
+
+#: concrete/config/install/packages/elemental_full/content.xml:521
+msgid "Header Navigation"
+msgstr "Ylätunniste Navigaatio"
+
+#: concrete/config/install/packages/elemental_full/content.xml:541
+msgid "Header Search"
+msgstr "Ylätunniste Haku"
+
+#: concrete/config/install/packages/elemental_full/content.xml:558
+msgid "Header Site Title"
+msgstr "Ylätunniste Sivuston otsikko"
+
+#: concrete/config/install/packages/elemental_full/content.xml:736
 msgid "About"
 msgstr "Tietoja"
 
-#: concrete/config/install/packages/elemental_full/content.xml:690
+#: concrete/config/install/packages/elemental_full/content.xml:876
 msgid "Blank Page"
 msgstr "Tyhjä sivu"
 
-#: concrete/config/install/packages/elemental_full/content.xml:709
+#: concrete/config/install/packages/elemental_full/content.xml:895
 msgid "Contact Us"
 msgstr "Ota yhteyttä"
 
-#: concrete/config/install/packages/elemental_full/content.xml:875
+#: concrete/config/install/packages/elemental_full/content.xml:1064
 msgid "Careers"
 msgstr "Urat"
 
-#: concrete/config/install/packages/elemental_full/content.xml:1027
+#: concrete/config/install/packages/elemental_full/content.xml:1219
 msgid "Web Developer"
 msgstr "Websuunnittelija"
 
-#: concrete/config/install/packages/elemental_full/content.xml:1027
-#: concrete/config/install/packages/elemental_full/content.xml:1090
+#: concrete/config/install/packages/elemental_full/content.xml:1219
+#: concrete/config/install/packages/elemental_full/content.xml:1282
 msgid ""
 "Curabitur sagittis elementum felis at sodales. Nullam fermentum at urna quis"
 " accumsan. Nam bibendum leo nisi, lacinia molestie arcu consequat quis. "
@@ -17926,18 +18095,13 @@ msgid ""
 "consectetur lacus."
 msgstr "Curabitur sagittis elementum felis at sodales. Nullam fermentum at urna quis accumsan. Nam bibendum leo nisi, lacinia molestie arcu consequat quis. Morbi at suscipit risus. Sed consequat eleifend metus, vitae malesuada eros elementum sed. Fusce risus felis, viverra et dignissim at, lobortis non est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet consectetur lacus."
 
-#: concrete/config/install/packages/elemental_full/content.xml:1090
+#: concrete/config/install/packages/elemental_full/content.xml:1282
 msgid "Sales Associate"
 msgstr "Myyntikumppani"
 
 #: concrete/config/install/packages/elemental_blank/content.xml:10
 msgid "Page"
 msgstr "Sivu"
-
-#: concrete/config/install/packages/elemental_blank/content.xml:22
-msgctxt "PageTypeComposerFormLayoutSetName"
-msgid "Content"
-msgstr "Sisältö"
 
 #: concrete/config/install/packages/elemental_blank/content.xml:23
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
@@ -17954,15 +18118,10 @@ msgctxt "TemplateFileName"
 msgid "Date Time"
 msgstr "Päivämäärä ja aika"
 
-#: concrete/blocks/image/templates/circle
+#: concrete/blocks/page_title/templates/byline.php
 msgctxt "TemplateFileName"
-msgid "Circle"
-msgstr "Ympyrä"
-
-#: concrete/blocks/image/templates/right_tilt
-msgctxt "TemplateFileName"
-msgid "Right Tilt"
-msgstr "Oikea kallistus"
+msgid "Byline"
+msgstr ""
 
 #: concrete/blocks/image/composer/header.php
 msgctxt "TemplateFileName"
@@ -17983,16 +18142,6 @@ msgstr "Lue lisää"
 msgctxt "TemplateFileName"
 msgid "Tag Cloud"
 msgstr "Tagipilvi"
-
-#: concrete/blocks/page_list/templates/blog_index_thumbnail.php
-msgctxt "TemplateFileName"
-msgid "Blog Index Thumbnail"
-msgstr "Blogin hakemisto ja pienoiskuva"
-
-#: concrete/blocks/page_list/templates/blog_index.php
-msgctxt "TemplateFileName"
-msgid "Blog Index"
-msgstr "Blogin hakemisto"
 
 #: concrete/blocks/autonav/templates/header_menu.php
 msgctxt "TemplateFileName"
