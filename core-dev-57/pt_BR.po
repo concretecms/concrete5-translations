@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-08-04 04:00+0000\n"
-"PO-Revision-Date: 2014-08-04 09:56+0000\n"
+"POT-Creation-Date: 2014-08-05 04:00+0000\n"
+"PO-Revision-Date: 2014-08-05 09:57+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/concrete5/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
@@ -204,7 +204,7 @@ msgid ""
 msgstr "Chave expirada. Por favor, visite novamente a página \"Esqueci minha senha\" para gerar uma nova chave."
 
 #: concrete/authentication/concrete/controller.php:178
-#: concrete/controllers/install.php:264
+#: concrete/controllers/install.php:286
 #: concrete/controllers/single_page/account/profile/edit.php:94
 #: concrete/controllers/single_page/dashboard/users/search.php:324
 #: concrete/controllers/single_page/register.php:111
@@ -316,7 +316,7 @@ msgstr "Esta conta do facebook não está ligada a algum usuário."
 #: concrete/controllers/backend/user_interface.php:28
 #: concrete/controllers/backend/user_interface/block.php:47
 #: concrete/controllers/backend/user_interface/file.php:37
-#: concrete/controllers/backend/user_interface/page.php:32
+#: concrete/controllers/backend/user_interface/page.php:39
 #: concrete/controllers/dialog/file/properties.php:51
 #: concrete/controllers/dialog/file/properties.php:75
 #: concrete/controllers/dialog/page/add_block.php:27
@@ -1533,7 +1533,7 @@ msgstr "Autor"
 
 #: concrete/blocks/faq/form_setup_html.php:71
 #: concrete/blocks/faq/form_setup_html.php:92
-#: concrete/blocks/image_slider/form_setup_html.php:170
+#: concrete/blocks/image_slider/form_setup_html.php:201
 #: concrete/core/File/Version.php:474
 #: concrete/core/Page/Type/Composer/Control/CorePageProperty/DescriptionCorePageProperty.php:10
 #: concrete/elements/collection_add.php:46
@@ -1792,9 +1792,10 @@ msgid "Delete Head"
 msgstr ""
 
 #: concrete/blocks/feature/form.php:10
-#: concrete/blocks/image_slider/form_setup_html.php:166
+#: concrete/blocks/image_slider/form_setup_html.php:197
+#: concrete/blocks/related_pages/form.php:52
 #: concrete/blocks/search/form_setup_html.php:30
-#: concrete/blocks/tags/tag_form.php:10
+#: concrete/blocks/tags/tag_form.php:10 concrete/blocks/topic_list/form.php:44
 #: concrete/blocks/youtube/form_setup_html.php:20
 #: concrete/core/File/Search/ColumnSet/DefaultSet.php:21
 #: concrete/core/File/Version.php:471 concrete/tools/i18n_redactor_js.php:57
@@ -1863,7 +1864,7 @@ msgid "Email"
 msgstr "Email"
 
 #: concrete/blocks/image/form.php:56
-#: concrete/blocks/image_slider/form_setup_html.php:175
+#: concrete/blocks/image_slider/form_setup_html.php:206
 #: concrete/elements/collection_add_external.php:20
 #: concrete/elements/collection_edit_external.php:20
 #: concrete/elements/workflow/progress/categories/page/pending.php:12
@@ -2331,7 +2332,7 @@ msgstr ""
 msgid "The block has been added to your clipboard."
 msgstr ""
 
-#: concrete/blocks/content/controller.php:38 concrete/tools/i18n_js.php:37
+#: concrete/blocks/content/controller.php:40 concrete/tools/i18n_js.php:37
 msgid "Content"
 msgstr "Conteúdo"
 
@@ -2555,7 +2556,7 @@ msgstr ""
 
 #: concrete/attributes/textarea/type_form.php:27
 #: concrete/blocks/image/controller.php:30 concrete/blocks/image/form.php:28
-#: concrete/blocks/image_slider/form_setup_html.php:155
+#: concrete/blocks/image_slider/form_setup_html.php:186
 #: concrete/core/File/Type/Type.php:67 concrete/elements/custom_style.php:144
 #: concrete/single_pages/dashboard/users/add_group.php:83
 #: concrete/single_pages/dashboard/users/groups.php:58
@@ -2943,7 +2944,6 @@ msgid "Default - %s minutes"
 msgstr "Padrão - %s minutos"
 
 #: concrete/blocks/core_conversation/form.php:153
-#: concrete/blocks/next_previous/form_setup_html.php:14
 #: concrete/elements/collection_speed_settings.php:152
 #: concrete/elements/permission/keys/add_block.php:23
 #: concrete/elements/permission/keys/add_block.php:47
@@ -4959,6 +4959,7 @@ msgstr "Senha incorreta. Por favor tente novamente."
 msgid "to"
 msgstr "para"
 
+#: concrete/blocks/related_pages/form.php:13
 #: concrete/controllers/search/pages.php:220
 #: concrete/single_pages/dashboard/system/seo/bulk.php:59
 msgid "Parent Page"
@@ -5053,13 +5054,13 @@ msgstr[1] ""
 msgid "Invalid file version."
 msgstr ""
 
-#: concrete/controllers/backend/page/arrange_blocks.php:35
-#: concrete/controllers/backend/page/arrange_blocks.php:44
+#: concrete/controllers/backend/page/arrange_blocks.php:40
+#: concrete/controllers/backend/page/arrange_blocks.php:49
 #, php-format
 msgid "You may not arrange the contents of area %s."
 msgstr ""
 
-#: concrete/controllers/backend/page/arrange_blocks.php:51
+#: concrete/controllers/backend/page/arrange_blocks.php:56
 #, php-format
 msgid "You may not add %s to area %s."
 msgstr ""
@@ -5113,11 +5114,7 @@ msgstr "Atualização para <b>%s</ b> concluída!"
 msgid "Unable to locate database import file."
 msgstr "Não foi possível localizar arquivo de importação de dados."
 
-#: concrete/controllers/install.php:65
-msgid "concrete5 is already installed."
-msgstr "concrete5 já está instalado."
-
-#: concrete/controllers/install.php:91
+#: concrete/controllers/install.php:70
 #, php-format
 msgid ""
 "Congratulations. concrete5 has been installed. You have been logged in as "
@@ -5125,68 +5122,70 @@ msgid ""
 "you may do so from the users area of the dashboard."
 msgstr "Parabéns. concrete5 foi instalado. Você entrou como <b>%s</b> com a senha que você escolheu. Se desejar trocar esta senha, você pode fazê-lo na área de usuários do painel."
 
-#: concrete/controllers/install.php:128
-msgid ""
-"Your configuration directory config/ does not appear to be writable by the "
-"web server."
-msgstr "Seu diretório de configuração config/ parece não ter permissão de escrita pelo servidor web."
-
-#: concrete/controllers/install.php:132
-msgid ""
-"Your files directory files/ does not appear to be writable by the web "
-"server."
-msgstr "Seu diretório de arquivos files/ parece não ter permissão de escrita pelo servidor web."
-
-#: concrete/controllers/install.php:136
-msgid ""
-"Your packages directory packages/ does not appear to be writable by the web "
-"server."
-msgstr "Seu diretório de pacotes packages/ parece não ter permissão de escrita pelo servidor web."
-
-#: concrete/controllers/install.php:148
-msgid ""
-"Function mysql_connect() not found. Your system does not appear to have "
-"MySQL available within PHP."
-msgstr "Função mysql_connect() não encontrada. Seu sistema parece não ter suporte a MySQL com PHP."
-
-#: concrete/controllers/install.php:181
-msgid "You must select a valid sample content starting point."
-msgstr "Você deve selecionar um ponto de início válido para o conteúdo de exemplo."
-
-#: concrete/controllers/install.php:215
+#: concrete/controllers/install.php:109
 msgid "Unable to connect to database."
 msgstr "Não é possível conectar-se ao banco de dados."
 
-#: concrete/controllers/install.php:219
+#: concrete/controllers/install.php:115
 #, php-format
 msgid ""
 "There are already %s tables in this database. concrete5 must be installed in"
 " an empty database."
 msgstr "Já existe %s tabelas no banco selecionado. O concrete5 precisa ser instalado em um banco de dados vazio."
 
-#: concrete/controllers/install.php:250
+#: concrete/controllers/install.php:126
+msgid "The PDO extension is not loaded."
+msgstr ""
+
+#: concrete/controllers/install.php:154
+msgid "concrete5 is already installed."
+msgstr "concrete5 já está instalado."
+
+#: concrete/controllers/install.php:182
+msgid ""
+"Your configuration directory config/ does not appear to be writable by the "
+"web server."
+msgstr "Seu diretório de configuração config/ parece não ter permissão de escrita pelo servidor web."
+
+#: concrete/controllers/install.php:186
+msgid ""
+"Your files directory files/ does not appear to be writable by the web "
+"server."
+msgstr "Seu diretório de arquivos files/ parece não ter permissão de escrita pelo servidor web."
+
+#: concrete/controllers/install.php:190
+msgid ""
+"Your packages directory packages/ does not appear to be writable by the web "
+"server."
+msgstr "Seu diretório de pacotes packages/ parece não ter permissão de escrita pelo servidor web."
+
+#: concrete/controllers/install.php:272
 msgid "Please specify your site's name"
 msgstr "Por favor preencha o nome do site."
 
-#: concrete/controllers/install.php:251
+#: concrete/controllers/install.php:273
 msgid "Please specify a valid email address"
 msgstr "Por favor digite um endereço de email válido."
 
-#: concrete/controllers/install.php:252
+#: concrete/controllers/install.php:274
 msgid "You must specify a valid database name"
 msgstr "Você deve especificar um nome válido para o banco de dados."
 
-#: concrete/controllers/install.php:253
+#: concrete/controllers/install.php:275
 msgid "You must specify a valid database server"
 msgstr "Você deve especificar um servidor de banco de dados válido."
 
-#: concrete/controllers/install.php:300
+#: concrete/controllers/install.php:321
 msgid "Unable to open config/site.php for writing."
 msgstr "Não foi possível abrir o arquivo config/site.php para escrita"
 
-#: concrete/controllers/install.php:320
+#: concrete/controllers/install.php:342
 msgid "Unable to open config/site_user.php for writing."
 msgstr "Não foi possível abrir o arquivo \"config/site_user.php\" para escrita."
+
+#: concrete/controllers/install.php:364
+msgid "You must select a valid sample content starting point."
+msgstr "Você deve selecionar um ponto de início válido para o conteúdo de exemplo."
 
 #: concrete/core/User/Point/Action/WonBadgeActionDescription.php:12
 #, php-format
@@ -5261,7 +5260,7 @@ msgstr "Não lido"
 msgid "Replied"
 msgstr "Respondido"
 
-#: concrete/core/Page/Page.php:407
+#: concrete/core/Page/Page.php:406
 #: concrete/core/User/PrivateMessage/PrivateMessage.php:142
 msgid "Unknown User"
 msgstr "Usuário desconhecido"
@@ -5794,16 +5793,16 @@ msgstr "Nova versão %s"
 msgid "Version %d"
 msgstr "Versão %d"
 
-#: concrete/core/Page/Page.php:2028
+#: concrete/core/Page/Page.php:2037
 #, php-format
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "Página \"%s\" no caminho \"%s\" excluída"
 
-#: concrete/core/Page/Page.php:2028 concrete/core/Page/Page.php:2092
+#: concrete/core/Page/Page.php:2037 concrete/core/Page/Page.php:2101
 msgid "Page Action"
 msgstr "Ação da página"
 
-#: concrete/core/Page/Page.php:2092
+#: concrete/core/Page/Page.php:2101
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "Página \"%s\" do diretório \"%s\" foi movida para a Lixeira"
@@ -7204,7 +7203,7 @@ msgstr "Voltar ao início"
 msgid "Dashboard"
 msgstr "Painel principal"
 
-#: concrete/blocks/next_previous/form_setup_html.php:76
+#: concrete/blocks/next_previous/form_setup_html.php:48
 #: concrete/config/install/base/dashboard.xml:6
 #: concrete/elements/page_controls_footer.php:74
 #: concrete/single_pages/dashboard/sitemap/explore.php:17
@@ -7364,23 +7363,23 @@ msgstr "Compartilhar no Facebook"
 msgid "Posted by %1$s on %2$s"
 msgstr "Postado por %1$s em %2$s"
 
-#: concrete/themes/elemental/page_theme.php:62
+#: concrete/themes/elemental/page_theme.php:65
 msgid "Title Thin"
 msgstr ""
 
-#: concrete/themes/elemental/page_theme.php:63
+#: concrete/themes/elemental/page_theme.php:66
 msgid "Title Caps"
 msgstr ""
 
-#: concrete/themes/elemental/page_theme.php:64
+#: concrete/themes/elemental/page_theme.php:67
 msgid "Standard Button"
 msgstr ""
 
-#: concrete/themes/elemental/page_theme.php:65
+#: concrete/themes/elemental/page_theme.php:68
 msgid "Success Button"
 msgstr ""
 
-#: concrete/themes/elemental/page_theme.php:66
+#: concrete/themes/elemental/page_theme.php:69
 msgid "Primary Button"
 msgstr ""
 
@@ -7715,7 +7714,7 @@ msgid "Choose Field"
 msgstr ""
 
 #: concrete/blocks/page_attribute_display/form.php:31
-#: concrete/elements/files/search.php:134
+#: concrete/elements/files/search.php:133
 #: concrete/single_pages/dashboard/pages/themes/inspect.php:21
 msgid "Thumbnail"
 msgstr "Miniatura"
@@ -9021,6 +9020,7 @@ msgstr ""
 
 #: concrete/blocks/date_nav/form_setup_html.php:30
 #: concrete/blocks/page_list/page_list_form.php:31
+#: concrete/blocks/related_pages/form.php:31
 #: concrete/elements/page_types/form/base.php:56
 msgid "All"
 msgstr "Todos"
@@ -9840,8 +9840,8 @@ msgid "Please enable JavaScript in your browser."
 msgstr "Por favor habilite o Javascript em seu browser."
 
 #: concrete/views/frontend/install.php:344
-msgid "MySQL Available"
-msgstr "MySQL Disponive"
+msgid "MySQL PDO Extension Enabled"
+msgstr ""
 
 #: concrete/views/frontend/install.php:350
 msgid "Supports concrete5 request URLs"
@@ -10379,31 +10379,59 @@ msgstr ""
 msgid "Image Slider"
 msgstr ""
 
-#: concrete/blocks/image_slider/view.php:39
+#: concrete/blocks/image_slider/view.php:5
+msgid "Image Slider disabled in edit mode."
+msgstr ""
+
+#: concrete/blocks/image_slider/view.php:45
 msgid "No Slides Entered."
 msgstr ""
 
-#: concrete/blocks/image_slider/form_setup_html.php:134
+#: concrete/blocks/image_slider/form_setup_html.php:164
 msgid "Navigation"
 msgstr "Navegação"
 
-#: concrete/blocks/image_slider/form_setup_html.php:137
+#: concrete/blocks/image_slider/form_setup_html.php:167
 msgid "Arrows"
 msgstr "Setas"
 
-#: concrete/blocks/image_slider/form_setup_html.php:142
+#: concrete/blocks/image_slider/form_setup_html.php:172
 msgid "Bullets"
 msgstr ""
 
 #: concrete/blocks/faq/form_setup_html.php:57
-#: concrete/blocks/image_slider/form_setup_html.php:146
+#: concrete/blocks/image_slider/form_setup_html.php:176
 msgid "Add Entry"
 msgstr ""
 
 #: concrete/blocks/faq/form_setup_html.php:76
 #: concrete/blocks/faq/form_setup_html.php:97
-#: concrete/blocks/image_slider/form_setup_html.php:180
+#: concrete/blocks/image_slider/form_setup_html.php:211
 msgid "Delete Entry"
+msgstr ""
+
+#: concrete/blocks/share_this_page/form.php:5
+msgid "Add Service"
+msgstr ""
+
+#: concrete/blocks/share_this_page/form.php:6
+msgid "Services"
+msgstr ""
+
+#: concrete/blocks/share_this_page/form.php:18
+msgid "Choose Sharing Service"
+msgstr ""
+
+#: concrete/blocks/share_this_page/controller.php:26
+msgid "Allows users to share this page with social networks."
+msgstr ""
+
+#: concrete/blocks/share_this_page/controller.php:31
+msgid "Share This Page"
+msgstr ""
+
+#: concrete/blocks/share_this_page/controller.php:101
+msgid "You must choose at least one service."
 msgstr ""
 
 #: concrete/blocks/google_map/controller.php:26
@@ -10593,6 +10621,34 @@ msgstr ""
 msgid "Area Layout"
 msgstr ""
 
+#: concrete/blocks/related_pages/form.php:4
+msgid "Topic Attribute to Use For Relation"
+msgstr ""
+
+#: concrete/blocks/related_pages/form.php:17
+msgid "Filter by Parent Page"
+msgstr ""
+
+#: concrete/blocks/related_pages/form.php:28
+msgid "Filter by Page Type"
+msgstr ""
+
+#: concrete/blocks/related_pages/form.php:47
+#: concrete/single_pages/dashboard/system/seo/bulk.php:45
+msgid "Number of Pages to Display"
+msgstr ""
+
+#: concrete/blocks/related_pages/controller.php:29
+msgid ""
+"Displays a list of pages related to this page. Uses the topic attribute for "
+"relation."
+msgstr ""
+
+#: concrete/blocks/related_pages/controller.php:34
+#: concrete/blocks/related_pages/controller.php:41
+msgid "Related Pages"
+msgstr ""
+
 #: concrete/blocks/core_gathering_display/controller.php:22
 msgid "Proxy block for gathering items added to areas."
 msgstr ""
@@ -10682,7 +10738,7 @@ msgstr ""
 msgid "Page Title"
 msgstr ""
 
-#: concrete/blocks/content/controller.php:34
+#: concrete/blocks/content/controller.php:36
 msgid "HTML/WYSIWYG Editor Content."
 msgstr "Editor HTML/WYSIWYG"
 
@@ -10765,49 +10821,37 @@ msgstr "Navegar pelas próximas páginas"
 msgid "Next & Previous Nav"
 msgstr "Navegação Próximo e Anterior"
 
-#: concrete/blocks/next_previous/form_setup_html.php:10
-msgid "Labels"
-msgstr "Rótulos"
-
-#: concrete/blocks/next_previous/form_setup_html.php:20
-msgid "Page Titles"
-msgstr "Títulos da Página"
-
-#: concrete/blocks/next_previous/form_setup_html.php:30
+#: concrete/blocks/next_previous/form_setup_html.php:8
 msgid "Next Label"
 msgstr "Próximo rótulo"
 
-#: concrete/blocks/next_previous/form_setup_html.php:31
-#: concrete/blocks/next_previous/form_setup_html.php:37
-#: concrete/blocks/next_previous/form_setup_html.php:43
+#: concrete/blocks/next_previous/form_setup_html.php:9
+#: concrete/blocks/next_previous/form_setup_html.php:15
+#: concrete/blocks/next_previous/form_setup_html.php:21
 msgid "leave blank to hide"
 msgstr "deixe em branco para ocultar"
 
-#: concrete/blocks/next_previous/form_setup_html.php:36
+#: concrete/blocks/next_previous/form_setup_html.php:14
 msgid "Previous Label"
 msgstr "Rótulo anterior"
 
-#: concrete/blocks/next_previous/form_setup_html.php:42
+#: concrete/blocks/next_previous/form_setup_html.php:20
 msgid "Up Label"
 msgstr "Etiqueta \"Para cima\""
 
-#: concrete/blocks/next_previous/form_setup_html.php:53
-msgid "Include Arrows"
-msgstr ""
-
-#: concrete/blocks/next_previous/form_setup_html.php:59
+#: concrete/blocks/next_previous/form_setup_html.php:31
 msgid "Loop Navigation"
 msgstr ""
 
-#: concrete/blocks/next_previous/form_setup_html.php:66
+#: concrete/blocks/next_previous/form_setup_html.php:38
 msgid "Exclude system pages."
 msgstr "Excluir páginas do sistema"
 
-#: concrete/blocks/next_previous/form_setup_html.php:74
+#: concrete/blocks/next_previous/form_setup_html.php:46
 msgid "Order Pages"
 msgstr ""
 
-#: concrete/blocks/next_previous/form_setup_html.php:77
+#: concrete/blocks/next_previous/form_setup_html.php:49
 msgid "Chronological"
 msgstr "Cronológico"
 
@@ -12176,7 +12220,7 @@ msgid "Search – Display a list of all topics for use on a search sidebar."
 msgstr ""
 
 #: concrete/blocks/topic_list/form.php:7
-msgid "Page – Display a list of just topics for the page."
+msgid "Page – Display a list of topics for the current page."
 msgstr ""
 
 #: concrete/attributes/topics/type_form.php:43
@@ -12198,7 +12242,12 @@ msgstr ""
 msgid "Topic List"
 msgstr ""
 
-#: concrete/blocks/topic_list/view.php:37
+#: concrete/blocks/topic_list/controller.php:38
+#: concrete/config/install/base/dashboard.xml:775
+msgid "Topics"
+msgstr ""
+
+#: concrete/blocks/topic_list/view.php:42
 msgid "No topics."
 msgstr ""
 
@@ -12752,7 +12801,7 @@ msgstr "Nenhum conjunto de arquivos encontrado."
 msgid "<strong>Upload Files</strong> / Click to Choose or Drag &amp; Drop. / "
 msgstr ""
 
-#: concrete/single_pages/dashboard/files/search.php:27
+#: concrete/single_pages/dashboard/files/search.php:28
 msgid "You do not have access to the file manager."
 msgstr "Você não tem acesso ao gerenciador de arquivos."
 
@@ -13759,10 +13808,6 @@ msgstr ""
 #: concrete/single_pages/dashboard/system/seo/view.php:3
 msgid "System &amp; Settings"
 msgstr "Sistema &amp; Configurações"
-
-#: concrete/single_pages/dashboard/system/seo/bulk.php:45
-msgid "Number of Pages to Display"
-msgstr ""
 
 #: concrete/single_pages/dashboard/system/seo/bulk.php:67
 msgid "How Many Levels Below Parent?"
@@ -16490,10 +16535,6 @@ msgstr "Escolha quais tipos de atributos estão disponíveis para diferentes ite
 msgid "attributes, types"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:775
-msgid "Topics"
-msgstr ""
-
 #. Keywords for page /dashboard/system/attributes/topics
 #: concrete/config/install/base/dashboard.xml:778
 msgid "topics, tags, taxonomy"
@@ -17635,37 +17676,37 @@ msgctxt "ImageEditorFilterName"
 msgid "Vignette"
 msgstr ""
 
-#: concrete/config/install/base/blocktypes.xml:52
+#: concrete/config/install/base/blocktypes.xml:54
 msgctxt "SystemContentEditorSnippetName"
 msgid "Page Name"
 msgstr "Nome da página"
 
-#: concrete/config/install/base/blocktypes.xml:53
+#: concrete/config/install/base/blocktypes.xml:55
 msgctxt "SystemContentEditorSnippetName"
 msgid "User Name"
 msgstr ""
 
-#: concrete/config/install/base/blocktypes.xml:57
+#: concrete/config/install/base/blocktypes.xml:59
 msgctxt "BlockTypeSetName"
 msgid "Basic"
 msgstr ""
 
-#: concrete/config/install/base/blocktypes.xml:65
+#: concrete/config/install/base/blocktypes.xml:67
 msgctxt "BlockTypeSetName"
 msgid "Navigation"
 msgstr "Navegação"
 
-#: concrete/config/install/base/blocktypes.xml:80
+#: concrete/config/install/base/blocktypes.xml:83
 msgctxt "BlockTypeSetName"
 msgid "Forms"
 msgstr ""
 
-#: concrete/config/install/base/blocktypes.xml:85
+#: concrete/config/install/base/blocktypes.xml:88
 msgctxt "BlockTypeSetName"
 msgid "Social Networking"
 msgstr ""
 
-#: concrete/config/install/base/blocktypes.xml:91
+#: concrete/config/install/base/blocktypes.xml:95
 msgctxt "BlockTypeSetName"
 msgid "Multimedia"
 msgstr ""
@@ -17847,7 +17888,7 @@ msgstr "Localização"
 
 #: concrete/config/install/packages/elemental_full/content.xml:20
 msgctxt "AttributeKeyName"
-msgid "Exclude From Sub-Pages From Nav"
+msgid "Exclude Sub-Pages From Nav"
 msgstr ""
 
 #: concrete/config/install/packages/elemental_full/content.xml:23
