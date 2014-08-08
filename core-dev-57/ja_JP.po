@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-08-06 11:28+0000\n"
-"PO-Revision-Date: 2014-08-06 11:51+0000\n"
-"Last-Translator: Michele Locati <michele@locati.it>\n"
+"POT-Creation-Date: 2014-08-07 05:57+0000\n"
+"PO-Revision-Date: 2014-08-07 18:16+0000\n"
+"Last-Translator: Katz Ueno <katzueno@deerstudio.com>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/projects/p/concrete5/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -255,15 +255,15 @@ msgstr "Facebook でログイン"
 
 #: concrete/authentication/facebook/form.php:5
 msgid "Log in with Facebook"
-msgstr ""
+msgstr "Facebook でログイン"
 
 #: concrete/authentication/facebook/type_form.php:4
 msgid "App ID"
-msgstr ""
+msgstr "App ID"
 
 #: concrete/authentication/facebook/type_form.php:8
 msgid "App Secret"
-msgstr ""
+msgstr "App シークレット"
 
 #: concrete/authentication/facebook/type_form.php:13
 #, php-format
@@ -279,44 +279,44 @@ msgstr "不明のエラーが発生しました。もう一度試してくださ
 #, php-format
 msgid ""
 "<h2>Oh No!</h2>This Facebook account isn't tied to any account of %1$s!"
-msgstr ""
+msgstr "<h2>エラー：</h2>この Facebook アカウントは、%1$s のどのアカウントとも紐付けられていません。"
 
 #: concrete/authentication/facebook/controller.php:43
 msgid ""
 "Please login with your Email and Password and then use the Facebook login to"
 " tie them together."
-msgstr ""
+msgstr "メールとパスワードでログインをし、Facebook ログインを使って紐付けてください。"
 
 #: concrete/authentication/facebook/controller.php:46
 msgid ""
 "Please login with your Username and Password and then use the Facebook login"
 " to tie them together."
-msgstr ""
+msgstr "ユーザーIDとパスワードでログインし、Facebook ログインをして紐付けてください。"
 
 #: concrete/authentication/facebook/controller.php:50
 msgid "Successfully attached this Facebook account to your user account."
-msgstr ""
+msgstr "ユーザーアカウントと Facebook アカウントへの紐付けが成功しました！"
 
 #. %s is the site name
 #: concrete/authentication/facebook/controller.php:54
 #, php-format
 msgid "This Facebook account is already attached to your %s account."
-msgstr ""
+msgstr "この Facebook アカウントは、アカウント %s に既に紐付けられています。"
 
 #: concrete/authentication/facebook/controller.php:59
 msgid ""
 "<h2>Oh No!</h2>The email used by your Facebook account is already in "
 "use!<br>Please login to your concrete5 account and then use the Facebook "
 "login to tie your accounts together."
-msgstr ""
+msgstr "<h2>エラー：</h2>Facebook アカウントで使われているメールアドレスは、既に使われています! <br> concrete5 アカウントでログインし、Facebook ログインを使ってアカウントを紐付けてください。"
 
 #: concrete/authentication/facebook/controller.php:141
 msgid "This user is not tied to a Facebook account."
-msgstr ""
+msgstr "このユーザーは Facebook アカウント紐付けられていません。"
 
 #: concrete/authentication/facebook/controller.php:224
 msgid "This Facebook account is not tied to a user."
-msgstr ""
+msgstr "この Facebook アカウントはユーザーに紐付けられていません。"
 
 #: concrete/controllers/backend/user_interface.php:28
 #: concrete/controllers/backend/user_interface/block.php:47
@@ -350,7 +350,7 @@ msgstr "アクセス拒否"
 #: concrete/tools/files/add_to.php:7
 #: concrete/tools/files/customize_search_columns.php:7
 #: concrete/tools/files/delete.php:8 concrete/tools/files/delete_set.php:8
-#: concrete/tools/files/duplicate.php:9 concrete/tools/files/save_search.php:8
+#: concrete/tools/files/duplicate.php:8 concrete/tools/files/save_search.php:8
 #: concrete/tools/files/search_dialog.php:6
 #: concrete/tools/files/search_results.php:5
 #: concrete/tools/files/search_sets_reload.php:6
@@ -690,7 +690,7 @@ msgstr "サーバーの入稿用ディレクトリー上のファイルを削除
 #: concrete/tools/dashboard/sitemap_drag_request.php:226
 #: concrete/tools/dashboard/sitemap_drag_request.php:228
 #: concrete/tools/files/delete.php:90 concrete/tools/files/delete_set.php:48
-#: concrete/tools/files/duplicate.php:114 concrete/tools/files/import.php:108
+#: concrete/tools/files/duplicate.php:120 concrete/tools/files/import.php:108
 #: concrete/tools/files/permissions.php:73
 #: concrete/tools/files/permissions.php:102
 #: concrete/tools/gathering/item/delete.php:27 concrete/tools/i18n_js.php:10
@@ -823,7 +823,7 @@ msgid "In Set(s)"
 msgstr "セット"
 
 #: concrete/controllers/panel/page/attributes.php:54
-#: concrete/elements/dashboard/attributes_table.php:81
+#: concrete/elements/dashboard/attributes_table.php:76
 #: concrete/elements/files/search.php:72
 #: concrete/tools/files/search_sets_reload.php:23
 #: concrete/views/dialogs/page/add_block_list.php:54
@@ -960,7 +960,7 @@ msgstr "ファイルの一部もしくは全部がコピーできませんでし
 
 #: concrete/blocks/form/controller.php:325
 #: concrete/controllers/backend/user_interface/file.php:21
-#: concrete/src/File/Importer.php:36 concrete/tools/files/duplicate.php:42
+#: concrete/src/File/Importer.php:36 concrete/tools/files/duplicate.php:41
 msgid "Invalid file."
 msgstr "無効なファイルです。"
 
@@ -968,18 +968,18 @@ msgstr "無効なファイルです。"
 msgid "You do not have the ability to copy this file."
 msgstr "このファイルをコピーすることはできません。"
 
-#: concrete/tools/files/duplicate.php:81
+#: concrete/tools/files/duplicate.php:82
 msgid "You do not have permission to copy any of the selected files."
 msgstr "選択されたファイルをコピーする権限がありません。"
 
-#: concrete/tools/files/duplicate.php:83
+#: concrete/tools/files/duplicate.php:84
 msgid "Are you sure you want to copy the following files?"
 msgstr "以下のファイルをコピーしていいですか？"
 
 #: concrete/elements/files/search.php:37
 #: concrete/elements/permission/clipboard.php:5
 #: concrete/tools/dashboard/sitemap_drag_request.php:212
-#: concrete/tools/files/duplicate.php:113 concrete/tools/i18n_js.php:193
+#: concrete/tools/files/duplicate.php:121 concrete/tools/i18n_js.php:193
 #: concrete/tools/versions.php:363
 msgid "Copy"
 msgstr "コピー"
@@ -1056,7 +1056,7 @@ msgstr "管理画面の<a href=\"%s\">機能を追加</a>ページに行って�
 msgid "Click the Install button next to the package name."
 msgstr "パッケージの名前の隣にあるインストールボタンをクリックしてください。"
 
-#: concrete/config/install/base/dashboard.xml:262
+#: concrete/config/install/base/dashboard.xml:261
 #: concrete/elements/collection_theme.php:102
 #: concrete/tools/marketplace/refresh_theme.php:26
 #: concrete/tools/pages/design.php:178
@@ -1218,7 +1218,7 @@ msgid "Flat View"
 msgstr "フラットビュー"
 
 #: concrete/blocks/search/controller.php:82
-#: concrete/config/install/packages/elemental_full/content.xml:887
+#: concrete/config/install/packages/elemental_full/content.xml:1213
 #: concrete/elements/block_area_add_stack.php:17
 #: concrete/elements/files/search.php:45 concrete/elements/group/search.php:26
 #: concrete/elements/marketplace/search_form.php:24
@@ -1354,17 +1354,12 @@ msgid "Choose Page"
 msgstr "ページを選択"
 
 #: concrete/elements/collection_preview_as_user.php:32
-#: concrete/elements/dashboard/attributes_table.php:156
+#: concrete/elements/dashboard/attributes_table.php:146
 #: concrete/single_pages/dashboard/system/files/storage.php:115
 #: concrete/single_pages/dashboard/system/permissions/blacklist.php:36
 #: concrete/tools/dashboard/sitemap_drag_request.php:230
 msgid "Go"
 msgstr "実行"
-
-#: concrete/tools/dashboard/user_attributes_update.php:6
-#: concrete/tools/users/customize_search_columns.php:7
-msgid "You have no access to users."
-msgstr "使用中のアカウントではユーザーにアクセスできません。"
 
 #: concrete/tools/dashboard/sitemap_copy_all.php:86
 #: concrete/tools/dashboard/sitemap_delete_forever.php:42
@@ -1488,7 +1483,7 @@ msgstr "名前"
 msgid "No users or groups added."
 msgstr "ユーザーやグループが追加されていません。"
 
-#: concrete/config/install/base/dashboard.xml:157
+#: concrete/config/install/base/dashboard.xml:156
 #: concrete/single_pages/dashboard/users/add_group.php:217
 #: concrete/single_pages/dashboard/users/groups.php:258
 #: concrete/single_pages/dashboard/users/search.php:128
@@ -1861,7 +1856,7 @@ msgstr "画像Webリンク"
 msgid "Text"
 msgstr "テキスト"
 
-#: concrete/config/install/base/dashboard.xml:814
+#: concrete/config/install/base/dashboard.xml:804
 #: concrete/elements/users/confirm_list.php:8
 #: concrete/mail/user_register_approval_required.php:15
 #: concrete/single_pages/account/profile/edit.php:22
@@ -1984,7 +1979,7 @@ msgstr "フォントサイズ変更"
 
 #: concrete/tools/i18n_redactor_js.php:103
 msgid "Remove Style"
-msgstr ""
+msgstr "スタイルを除く"
 
 #: concrete/tools/versions.php:35 concrete/views/frontend/install.php:69
 #: concrete/views/frontend/install.php:127
@@ -2137,6 +2132,11 @@ msgstr "ユーザーはこのリストから削除されています一括で削
 msgid "Are you sure you would like to delete the following users?"
 msgstr "以下のユーザーを削除してもいいですか？"
 
+#: concrete/controllers/backend/user_attributes.php:56
+#: concrete/tools/users/customize_search_columns.php:7
+msgid "You have no access to users."
+msgstr "使用中のアカウントではユーザーにアクセスできません。"
+
 #: concrete/tools/users/bulk_activate.php:53
 msgid "Are you sure you would like to activate the following users?"
 msgstr "あなたは次のユーザーをアクティブしてもよろしいですか？"
@@ -2200,7 +2200,7 @@ msgstr "これはグローバルエリアです。ここに追加されたコン
 msgid "Invalid control"
 msgstr "無効なコントロール"
 
-#: concrete/attributes/select/form.php:158
+#: concrete/attributes/select/form.php:160
 #: concrete/controllers/single_page/dashboard/users/points/actions.php:46
 #: concrete/elements/attribute/type_form_required.php:73
 #: concrete/tools/page_types/composer/form/edit_control.php:18
@@ -2409,7 +2409,7 @@ msgstr "子ページの設定"
 msgid "Composer Settings"
 msgstr "コンポーザー設定"
 
-#: concrete/config/install/base/dashboard.xml:510
+#: concrete/config/install/base/dashboard.xml:506
 #: concrete/elements/collection_theme.php:99
 #: concrete/single_pages/dashboard/pages/themes/view.php:162
 #: concrete/tools/i18n_js.php:57
@@ -2662,10 +2662,10 @@ msgstr "ページを復元"
 msgid "Delete Forever"
 msgstr "完全に削除"
 
-#: concrete/config/install/base/dashboard.xml:66
-#: concrete/config/install/base/dashboard.xml:132
-#: concrete/config/install/base/dashboard.xml:355
-#: concrete/config/install/base/dashboard.xml:883
+#: concrete/config/install/base/dashboard.xml:65
+#: concrete/config/install/base/dashboard.xml:131
+#: concrete/config/install/base/dashboard.xml:354
+#: concrete/config/install/base/dashboard.xml:871
 #: concrete/elements/page_controls_footer.php:83
 #: concrete/elements/page_controls_footer.php:85
 #: concrete/elements/panels/page.php:79 concrete/single_pages/login.php:33
@@ -2829,7 +2829,7 @@ msgstr "ファイルをコピー"
 msgid "Choose New File"
 msgstr "新ファイル選択"
 
-#: concrete/config/install/base/dashboard.xml:891
+#: concrete/config/install/base/dashboard.xml:879
 #: concrete/elements/files/search.php:35 concrete/elements/files/search.php:67
 #: concrete/tools/i18n_js.php:195
 msgid "Sets"
@@ -3176,7 +3176,7 @@ msgstr "追加したいページの親階層ページを選択してください
 
 #: concrete/controllers/panel/detail/page/composer.php:52
 msgid "You do not have permission to publish a page in this location."
-msgstr ""
+msgstr "この場所にページを公開する権限を持っていません。"
 
 #: concrete/controllers/panel/detail/page/composer.php:83
 msgid "You do not have permission to discard this page."
@@ -3213,7 +3213,7 @@ msgstr "%s バージョンが複製されました。新バージョンは %s �
 
 #: concrete/controllers/panel/page/versions.php:71
 msgid "You do not have permission to create new pages of this type."
-msgstr ""
+msgstr "このタイプの新規ページを作成できる権限がありません。"
 
 #: concrete/controllers/panel/page/versions.php:79
 msgid "New Page Created From Version"
@@ -3370,8 +3370,8 @@ msgstr "ファイルセット名には次の文字を含むことができませ
 #: concrete/controllers/single_page/dashboard/files/attributes.php:19
 #: concrete/controllers/single_page/dashboard/pages/attributes.php:41
 #: concrete/controllers/single_page/dashboard/users/attributes.php:19
-#: concrete/controllers/single_page/dashboard/users/attributes.php:50
-#: concrete/controllers/single_page/dashboard/users/attributes.php:71
+#: concrete/controllers/single_page/dashboard/users/attributes.php:52
+#: concrete/controllers/single_page/dashboard/users/attributes.php:73
 msgid "Invalid attribute ID."
 msgstr "属性IDが無効です。"
 
@@ -3671,7 +3671,7 @@ msgid "Pages"
 msgstr "ページ"
 
 #: concrete/config/install/base/dashboard.xml:52
-#: concrete/config/install/base/dashboard.xml:653
+#: concrete/config/install/base/dashboard.xml:647
 #: concrete/controllers/single_page/dashboard/workflow/me.php:31
 #: concrete/elements/page_controls_footer.php:138
 #: concrete/themes/dashboard/elements/header.php:50
@@ -3972,19 +3972,19 @@ msgstr "ユーザが正常に作成されました。"
 msgid "Email marked as valid."
 msgstr "メールアドレスは有効です。"
 
-#: concrete/controllers/single_page/dashboard/users/attributes.php:90
+#: concrete/controllers/single_page/dashboard/users/attributes.php:92
 msgid "Invalid Attribute Type."
 msgstr "無効な属性タイプです。"
 
-#: concrete/controllers/single_page/dashboard/users/attributes.php:114
+#: concrete/controllers/single_page/dashboard/users/attributes.php:116
 msgid "User Attribute Deleted."
 msgstr "ユーザー項目が削除されました。"
 
-#: concrete/controllers/single_page/dashboard/users/attributes.php:118
+#: concrete/controllers/single_page/dashboard/users/attributes.php:120
 msgid "User Attribute Created."
 msgstr "ユーザー属性が追加されました。"
 
-#: concrete/controllers/single_page/dashboard/users/attributes.php:122
+#: concrete/controllers/single_page/dashboard/users/attributes.php:124
 msgid "User Attribute Updated."
 msgstr "ユーザー属性が更新されました。"
 
@@ -4012,38 +4012,38 @@ msgstr "許可ファイル拡張子が保存されました。"
 
 #: concrete/controllers/single_page/dashboard/system/files/thumbnails.php:28
 msgid "Thumbnail type added."
-msgstr ""
+msgstr "サムネイルタイプが追加されました。"
 
 #: concrete/controllers/single_page/dashboard/system/files/thumbnails.php:34
 msgid "Thumbnail type updated."
-msgstr ""
+msgstr "サムネイルタイプが更新されました。"
 
 #: concrete/controllers/single_page/dashboard/system/files/thumbnails.php:44
 msgid "Your thumbnail type must have a name."
-msgstr ""
+msgstr "サムネイルタイプは必ず名前が必要です。"
 
 #: concrete/controllers/single_page/dashboard/system/files/thumbnails.php:48
 msgid ""
 "Your thumbnail type handle must only contain lowercase letters and "
 "underscores."
-msgstr ""
+msgstr "サムネイルタイプのハンドルは、半角英数字の小文字と下線だけしか使えません。"
 
 #: concrete/controllers/single_page/dashboard/system/files/thumbnails.php:53
 msgid "Width must be greater than zero."
-msgstr ""
+msgstr "横幅は 0 より大きなくてはいけません。"
 
 #: concrete/controllers/single_page/dashboard/system/files/thumbnails.php:60
 msgid "Thumbnail type removed."
-msgstr ""
+msgstr "サムネイルタイプが取り除かれました。"
 
 #: concrete/controllers/single_page/dashboard/system/files/thumbnails.php:73
 #: concrete/controllers/single_page/dashboard/system/files/thumbnails.php:96
 msgid "Invalid thumbnail type object."
-msgstr ""
+msgstr "無効なサムネイルタイプのオブジェクトです。"
 
 #: concrete/controllers/single_page/dashboard/system/files/thumbnails.php:76
 msgid "You may not delete a required thumbnail type."
-msgstr ""
+msgstr "必須なサムネイルタイプを削除することは出来ません。"
 
 #: concrete/controllers/single_page/dashboard/system/files/storage.php:33
 msgid "File storage location added."
@@ -4342,7 +4342,7 @@ msgid ""
 "cannot be manually removed."
 msgstr "この属性セットはロックされています。パッケージによって追加されたため、手動で取り除くことができません。"
 
-#: concrete/config/install/base/dashboard.xml:915
+#: concrete/config/install/base/dashboard.xml:903
 #: concrete/controllers/single_page/dashboard/system/attributes/topics/add.php:14
 #: concrete/single_pages/dashboard/system/attributes/topics/add.php:22
 #: concrete/single_pages/dashboard/system/attributes/topics/view.php:22
@@ -4453,7 +4453,7 @@ msgstr "公開プロフィールを無効にしました。"
 
 #: concrete/controllers/single_page/dashboard/system/basics/accessibility.php:19
 msgid "Successfully saved accessibility settings."
-msgstr ""
+msgstr "アクセシビリティ設定の保存が完了しました。"
 
 #: concrete/controllers/single_page/dashboard/system/basics/icons.php:25
 msgid "Icons updated successfully."
@@ -4531,7 +4531,7 @@ msgstr "インターフェース設定が保存されました。一度ログア
 
 #: concrete/controllers/single_page/dashboard/system/backup/backup.php:17
 msgid "This has not been implemented in 5.7"
-msgstr ""
+msgstr "これはまだ 5.7 に組み込まれていません。"
 
 #: concrete/controllers/single_page/dashboard/system/backup/backup.php:70
 #, php-format
@@ -5078,6 +5078,10 @@ msgstr[0] "%s ファイルの再スキャンを完了しました。"
 msgid "Invalid file version."
 msgstr "ファイルバージョンが間違ってます。"
 
+#: concrete/controllers/backend/user_attributes.php:51
+msgid "Invalid Token"
+msgstr "無効なトークン"
+
 #: concrete/controllers/backend/page/arrange_blocks.php:40
 #: concrete/controllers/backend/page/arrange_blocks.php:49
 #, php-format
@@ -5159,7 +5163,7 @@ msgstr "このデータベースには%s個のテーブルが存在していま�
 
 #: concrete/controllers/install.php:126
 msgid "The PDO extension is not loaded."
-msgstr ""
+msgstr "PDOエクステンションが読み込まれていません。"
 
 #: concrete/controllers/install.php:154
 msgid "concrete5 is already installed."
@@ -5216,7 +5220,7 @@ msgid "&lt; Back to Home"
 msgstr "&lt; ホームに戻る"
 
 #: concrete/config/install/base/dashboard.xml:5
-#: concrete/config/install/base/dashboard.xml:473
+#: concrete/config/install/base/dashboard.xml:469
 #: concrete/elements/page_controls_footer.php:132
 #: concrete/elements/panels/dashboard.php:11
 #: concrete/elements/panels/dashboard.php:13
@@ -5233,7 +5237,7 @@ msgstr "管理画面"
 msgid "Sitemap"
 msgstr "サイトマップ"
 
-#: concrete/config/install/base/dashboard.xml:102
+#: concrete/config/install/base/dashboard.xml:101
 #: concrete/config/install/base/login_registration.xml:17
 #: concrete/elements/page_controls_footer.php:140
 #: concrete/single_pages/account/members/directory.php:6
@@ -5242,19 +5246,19 @@ msgstr "サイトマップ"
 msgid "Members"
 msgstr "メンバー"
 
-#: concrete/config/install/base/dashboard.xml:208
+#: concrete/config/install/base/dashboard.xml:207
 #: concrete/elements/page_controls_footer.php:142
 #: concrete/themes/dashboard/elements/header.php:52
 msgid "Reports"
 msgstr "レポート"
 
-#: concrete/config/install/base/dashboard.xml:260
+#: concrete/config/install/base/dashboard.xml:259
 #: concrete/elements/page_controls_footer.php:144
 #: concrete/themes/dashboard/elements/header.php:53
 msgid "Pages & Themes"
 msgstr "ページとテーマ"
 
-#: concrete/config/install/base/dashboard.xml:388
+#: concrete/config/install/base/dashboard.xml:387
 #: concrete/elements/page_controls_footer.php:146
 #: concrete/elements/permission/detail.php:31
 #: concrete/elements/permission/detail.php:79
@@ -5262,19 +5266,19 @@ msgstr "ページとテーマ"
 msgid "Workflow"
 msgstr "ワークフロー"
 
-#: concrete/config/install/base/dashboard.xml:412
+#: concrete/config/install/base/dashboard.xml:411
 #: concrete/elements/page_controls_footer.php:148
 #: concrete/themes/dashboard/elements/header.php:55
 msgid "Stacks & Blocks"
 msgstr "スタックとブロック"
 
-#: concrete/config/install/base/dashboard.xml:463
+#: concrete/config/install/base/dashboard.xml:461
 #: concrete/elements/page_controls_footer.php:150
 #: concrete/themes/dashboard/elements/header.php:56
 msgid "Extend concrete5"
 msgstr "concrete5を拡張"
 
-#: concrete/config/install/base/dashboard.xml:528
+#: concrete/config/install/base/dashboard.xml:522
 #: concrete/elements/page_controls_footer.php:152
 #: concrete/themes/dashboard/elements/header.php:57
 msgid "System & Settings"
@@ -5384,27 +5388,27 @@ msgstr "Facebook でシェア"
 msgid "Posted by %1$s on %2$s"
 msgstr "投稿者 %1$s 日時 %2$s"
 
-#: concrete/themes/elemental/page_theme.php:68
+#: concrete/themes/elemental/page_theme.php:67
 msgid "Title Thin"
 msgstr "細いタイトル"
 
-#: concrete/themes/elemental/page_theme.php:69
+#: concrete/themes/elemental/page_theme.php:68
 msgid "Title Caps"
 msgstr "大文字タイトル"
 
-#: concrete/themes/elemental/page_theme.php:70
+#: concrete/themes/elemental/page_theme.php:69
 msgid "Image Caption"
-msgstr ""
+msgstr "画像キャプション"
 
-#: concrete/themes/elemental/page_theme.php:71
+#: concrete/themes/elemental/page_theme.php:70
 msgid "Standard Button"
 msgstr "標準ボタン"
 
-#: concrete/themes/elemental/page_theme.php:72
+#: concrete/themes/elemental/page_theme.php:71
 msgid "Success Button"
 msgstr "OKボタン"
 
-#: concrete/themes/elemental/page_theme.php:73
+#: concrete/themes/elemental/page_theme.php:72
 msgid "Primary Button"
 msgstr "重要なボタン"
 
@@ -5424,7 +5428,7 @@ msgstr "Built with <a href=\"http://www.concrete5.org\" class=\"concrete5\">conc
 
 #: concrete/themes/elemental/elements/footer.php:69
 msgid "Log out"
-msgstr ""
+msgstr "ログアウト"
 
 #: concrete/themes/elemental/page_forbidden.php:10
 msgid "403 Error"
@@ -5739,7 +5743,7 @@ msgstr "%s ディレクトリーを %s にコピーできませんでした。�
 #: concrete/src/File/Image/Thumbnail/Type/Type.php:219
 #, php-format
 msgid "%s (Retina Version)"
-msgstr ""
+msgstr "%s (Ratina版)"
 
 #: concrete/src/File/StorageLocation/Configuration/LocalConfiguration.php:69
 msgid "You must include a root path for this storage location."
@@ -5921,7 +5925,8 @@ msgstr "カテゴリー"
 msgid "All Groups"
 msgstr "すべてのグループ"
 
-#: concrete/src/Tree/Type/Group.php:8
+#: concrete/src/Tree/Type/Group.php:24
+msgctxt "TreeName"
 msgid "Groups Tree"
 msgstr "グループツリー"
 
@@ -6012,7 +6017,7 @@ msgstr "グループ"
 msgid "(Deleted Group)"
 msgstr "（削除されたグループ）"
 
-#: concrete/config/install/base/dashboard.xml:143
+#: concrete/config/install/base/dashboard.xml:142
 #: concrete/single_pages/dashboard/users/search.php:274
 #: concrete/src/Permission/Access/Entity/UserEntity.php:66
 msgid "Add User"
@@ -6504,11 +6509,11 @@ msgstr "ローカル"
 
 #: concrete/src/Package/StartingPointPackage.php:152
 msgid "File Manager Thumbnails"
-msgstr ""
+msgstr "ファイルマネージャーサムネイル"
 
 #: concrete/src/Package/StartingPointPackage.php:160
 msgid "File Manager Detail Thumbnails"
-msgstr ""
+msgstr "ファイルマネージャー詳細サムネイル"
 
 #: concrete/src/Package/StartingPointPackage.php:189
 #, php-format
@@ -6796,11 +6801,11 @@ msgid ""
 "\n"
 "%s\n"
 "%s"
-msgstr ""
+msgstr "%sの記事を確認:\n\n%s\n%s"
 
 #: concrete/src/Sharing/ShareThisPage/Service.php:35
 msgid "Thought you'd enjoy this article."
-msgstr ""
+msgstr "この記事は楽しめましたか？"
 
 #: concrete/src/Job/Job.php:152 concrete/src/Job/Job.php:299
 msgid "The Job was run successfully."
@@ -7397,13 +7402,13 @@ msgstr "すべて見る"
 msgid "Dashboard Home"
 msgstr "管理画面"
 
-#: concrete/config/install/base/dashboard.xml:284
+#: concrete/config/install/base/dashboard.xml:283
 #: concrete/src/Application/Service/Dashboard.php:325
 #: concrete/views/panels/page/design.php:61
 msgid "Customize"
 msgstr "カスタマイズ"
 
-#: concrete/config/install/base/dashboard.xml:1067
+#: concrete/config/install/base/dashboard.xml:1055
 #: concrete/src/Application/Service/Dashboard.php:325
 msgid "Customize Dashboard Home"
 msgstr "カスタマイズ管理画面"
@@ -7771,7 +7776,7 @@ msgstr "存在するセット"
 
 #: concrete/elements/files/add_to_sets.php:213
 msgid "Filter Sets"
-msgstr ""
+msgstr "セットを絞り込む"
 
 #: concrete/elements/files/add_to_sets.php:250
 msgid "You have not created any file sets yet."
@@ -7859,12 +7864,12 @@ msgstr "一覧で"
 msgid "Manage Sets"
 msgstr "セットを編集"
 
-#: concrete/elements/dashboard/attributes_table.php:51
-#: concrete/elements/dashboard/attributes_table.php:119
+#: concrete/elements/dashboard/attributes_table.php:50
+#: concrete/elements/dashboard/attributes_table.php:112
 msgid "No attributes defined."
 msgstr "属性が定義されていません。"
 
-#: concrete/elements/dashboard/attributes_table.php:151
+#: concrete/elements/dashboard/attributes_table.php:141
 msgid "Add Attribute"
 msgstr "属性を追加"
 
@@ -7936,7 +7941,7 @@ msgid "My Account"
 msgstr "マイアカウント"
 
 #: concrete/config/install/packages/elemental_blank/content.xml:43
-#: concrete/config/install/packages/elemental_full/content.xml:617
+#: concrete/config/install/packages/elemental_full/content.xml:943
 #: concrete/elements/account/menu.php:60
 #: concrete/single_pages/account/profile/public_profile.php:14
 #: concrete/single_pages/dashboard/system/view.php:41
@@ -8009,7 +8014,7 @@ msgstr "編集モード終了"
 
 #: concrete/elements/page_controls_footer.php:184
 msgid "Edit This Page"
-msgstr ""
+msgstr "このページを編集"
 
 #: concrete/elements/page_controls_footer.php:187
 msgctxt "toolbar"
@@ -8018,7 +8023,7 @@ msgstr "編集モード"
 
 #: concrete/elements/page_controls_footer.php:196
 msgid "Page Design, Location, Attributes and Settings"
-msgstr ""
+msgstr "ページデザイン、場所、属性、設定"
 
 #: concrete/elements/page_controls_footer.php:199
 msgctxt "toolbar"
@@ -8028,7 +8033,7 @@ msgstr "設定"
 #: concrete/elements/page_controls_footer.php:211
 #: concrete/elements/page_controls_footer.php:219
 msgid "Add Content to The Page"
-msgstr ""
+msgstr "ページにコンテンツを追加"
 
 #: concrete/elements/page_controls_footer.php:214
 #: concrete/elements/page_controls_footer.php:222
@@ -8043,16 +8048,16 @@ msgstr "Powered by <a href=\"%s\">concrete5</a>."
 
 #: concrete/elements/page_controls_footer.php:252
 msgid "Dashboard – Change Site-wide Settings"
-msgstr ""
+msgstr "管理画面 - サイト全体の設定を変更"
 
 #: concrete/elements/page_controls_footer.php:255
 msgctxt "toolbar"
 msgid "Site Settings"
-msgstr ""
+msgstr "サイト設定"
 
 #: concrete/elements/page_controls_footer.php:262
 msgid "Add Pages and Navigate Your Site"
-msgstr ""
+msgstr "ページを追加し、サイトをナビゲートする"
 
 #: concrete/elements/page_controls_footer.php:266
 msgctxt "toolbar"
@@ -8310,7 +8315,7 @@ msgstr "外線"
 
 #: concrete/elements/custom_style.php:106
 msgid "Text Size and Color"
-msgstr ""
+msgstr "テキストサイズと色"
 
 #: concrete/elements/custom_style.php:110
 msgid "Text Color"
@@ -8326,7 +8331,7 @@ msgstr "基本フォントサイズ"
 
 #: concrete/elements/custom_style.php:134
 msgid "Background Color and Image"
-msgstr ""
+msgstr "背景色と画像"
 
 #: concrete/elements/custom_style.php:137
 msgid "Background"
@@ -8347,7 +8352,7 @@ msgstr "画像を選択"
 
 #: concrete/elements/custom_style.php:154
 msgid "Borders"
-msgstr ""
+msgstr "枠"
 
 #: concrete/elements/custom_style.php:156
 msgid "Border"
@@ -8376,7 +8381,7 @@ msgstr "半径"
 
 #: concrete/elements/custom_style.php:182
 msgid "Margin and Padding"
-msgstr ""
+msgstr "マージンとパディング"
 
 #: concrete/elements/custom_style.php:184
 msgid "Padding"
@@ -8402,7 +8407,7 @@ msgstr "マージン"
 
 #: concrete/elements/custom_style.php:250
 msgid "Shadow and Rotation (CSS3)"
-msgstr ""
+msgstr "シャドウと回転 (CSS3)"
 
 #: concrete/elements/custom_style.php:252
 msgid "Shadow"
@@ -8434,7 +8439,7 @@ msgstr "回転（角度）"
 
 #: concrete/elements/custom_style.php:299
 msgid "Custom CSS Classes, Block Name, Custom Templates and Reset Styles"
-msgstr ""
+msgstr "カスタムCSSクラス、ブロック名、カスタムテンプレートやスタイルのリセット"
 
 #: concrete/elements/custom_style.php:301
 #: concrete/views/panels/page/design/customize.php:65
@@ -9097,7 +9102,7 @@ msgstr "ページテンプレートの選択"
 msgid "Everything But Selected"
 msgstr "選択したもの以外すべて"
 
-#: concrete/config/install/base/dashboard.xml:338
+#: concrete/config/install/base/dashboard.xml:337
 #: concrete/elements/page_types/form/base.php:60
 msgid "Page Templates"
 msgstr "ページテンプレート"
@@ -9410,8 +9415,8 @@ msgstr "文字表示方向 (direction)"
 msgid "Save Preset"
 msgstr "プリセットを保存"
 
-#: concrete/config/install/base/dashboard.xml:216
-#: concrete/config/install/base/dashboard.xml:637
+#: concrete/config/install/base/dashboard.xml:215
+#: concrete/config/install/base/dashboard.xml:631
 #: concrete/views/dialogs/file/properties.php:13
 msgid "Statistics"
 msgstr "統計"
@@ -9436,14 +9441,14 @@ msgstr "管理画面ファイルマネージャー"
 msgid "Page Added To"
 msgstr "使用ページ"
 
-#: concrete/config/install/base/dashboard.xml:671
+#: concrete/config/install/base/dashboard.xml:665
 #: concrete/views/dialogs/file/properties.php:73
 msgid "Thumbnails"
-msgstr ""
+msgstr "サムネイル"
 
 #: concrete/views/dialogs/file/properties.php:74
 msgid "Thumbnail Images"
-msgstr ""
+msgstr "サムネイル画像"
 
 #: concrete/views/dialogs/file/properties.php:83
 #, php-format
@@ -9503,26 +9508,26 @@ msgstr "ファイルの再スキャンが成功しました。"
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:114
 #: concrete/views/dialogs/file/thumbnails.php:13
 msgid "Automatic"
-msgstr ""
+msgstr "自動"
 
 #: concrete/views/dialogs/file/thumbnails.php:29
 #, php-format
 msgid "%s x %s dimensions"
-msgstr ""
+msgstr "%s x %s 寸法"
 
 #: concrete/views/dialogs/file/thumbnails.php:35
 msgid "Edit Thumbnail Images"
-msgstr ""
+msgstr "サムネイル画像を編集"
 
 #: concrete/views/dialogs/file/thumbnails.php:36
 msgid "Edit Thumbnail"
-msgstr ""
+msgstr "サムネイルを編集"
 
 #: concrete/views/dialogs/file/thumbnails.php:54
 msgid ""
 "No thumbnail found. Usually this is because the source file is smaller than "
 "this thumbnail configuration."
-msgstr ""
+msgstr "サムネイルが見つかりません。元ファイルがサムネイル設定よりも小さいからかもしれません。"
 
 #: concrete/views/panels/page/versions.php:35
 #: concrete/views/panels/sitemap.php:5
@@ -9545,35 +9550,35 @@ msgstr "今の権限セット"
 #: concrete/views/panels/details/page/composer.php:8
 #, php-format
 msgid "Composer - %s"
-msgstr ""
+msgstr "コンポーザー - %s"
 
 #: concrete/views/panels/details/page/location.php:12
 msgid "Where will this page live on the site?"
-msgstr ""
+msgstr "このページの公開先はどこになりますか？"
 
 #: concrete/views/panels/details/page/location.php:14
 msgid "Where does this page live on the site?"
-msgstr ""
+msgstr "このページの公開先はどこですか？"
 
 #: concrete/views/panels/details/page/location.php:20
 msgid "Choose Location"
-msgstr ""
+msgstr "場所を選択"
 
 #: concrete/views/panels/details/page/location.php:25
 msgid "Current Canonical URL"
-msgstr ""
+msgstr "現在のカノニカルURL"
 
 #: concrete/views/panels/details/page/location.php:28
 msgid "None. Pages do not have canonical URLs until they are published."
-msgstr ""
+msgstr "なし。ページは公開されるまでカノニカルURLを持ちません。"
 
 #: concrete/views/panels/details/page/location.php:37
 msgid "Other URLs that should redirect to this page"
-msgstr ""
+msgstr "このページにリダイレクトされる他のURL"
 
 #: concrete/views/panels/details/page/location.php:43
 msgid "Add URL Redirect"
-msgstr ""
+msgstr "リダイレクトURLを追加"
 
 #: concrete/views/panels/details/page/location.php:46
 msgid ""
@@ -9583,48 +9588,48 @@ msgstr "注意: 追加ページパスは履歴管理されません。変更は�
 
 #: concrete/views/panels/details/page/location.php:69
 msgid "A location has not yet been chosen."
-msgstr ""
+msgstr "場所がまだ選択されていませんでした。"
 
 #: concrete/views/panels/details/page/location.php:96
 msgid "Choose New Page Parent"
-msgstr ""
+msgstr "新しい親ページを選択"
 
 #: concrete/views/panels/details/page/seo.php:11
 msgid ""
 "This page must always be available from at least one URL. This is that URL."
-msgstr ""
+msgstr "このページは最低1つのURLでアクセス可能でなければいけません。これがそのURLです。"
 
 #: concrete/views/panels/details/page/caching.php:35
 msgid "Page Caching"
-msgstr ""
+msgstr "ページキャッシュ"
 
 #: concrete/views/panels/details/page/caching.php:96
 msgid "Cache Status"
-msgstr ""
+msgstr "キャッシュステータス"
 
 #: concrete/views/panels/page/preview_as/form.php:15
 msgid "Time"
-msgstr ""
+msgstr "時間"
 
 #: concrete/views/panels/page/preview_as/form.php:46
 msgid "am"
-msgstr ""
+msgstr "午前"
 
 #: concrete/views/panels/page/preview_as/form.php:47
 msgid "pm"
-msgstr ""
+msgstr "午後"
 
 #: concrete/views/panels/page/preview_as/form.php:51
 msgid "View As"
-msgstr ""
+msgstr "閲覧ユーザー"
 
 #: concrete/views/panels/page/preview_as/form.php:55
 msgid "Site User"
-msgstr ""
+msgstr "サイトユーザー"
 
 #: concrete/views/panels/page/design.php:46
 msgid "Install More Themes"
-msgstr ""
+msgstr "追加テーマをインストール"
 
 #: concrete/single_pages/dashboard/pages/themes/customize.php:15
 #: concrete/single_pages/dashboard/pages/themes/customize.php:341
@@ -9634,7 +9639,7 @@ msgstr "テーマのカスタマイズ"
 
 #: concrete/views/panels/page/design/customize.php:14
 msgid "Preset"
-msgstr ""
+msgstr "プリセット"
 
 #: concrete/views/panels/page/design/customize.php:68
 #: concrete/views/panels/page/design/customize.php:208
@@ -9643,40 +9648,40 @@ msgstr "カスタムCSS"
 
 #: concrete/views/panels/page/design/customize.php:78
 msgid "Reset Customizations"
-msgstr ""
+msgstr "カスタマイズをリセット"
 
 #: concrete/views/panels/page/design/customize.php:141
 msgid "Apply this design to just this page, or your entire site?"
-msgstr ""
+msgstr "デザインをこのページもしくはサイト全体に適用しますか？"
 
 #: concrete/views/panels/page/design/customize.php:142
 #: concrete/views/panels/page/design/customize.php:219
 msgid "Entire Site"
-msgstr ""
+msgstr "サイトすべて"
 
 #: concrete/views/panels/page/design/customize.php:143
 #: concrete/views/panels/page/design/customize.php:220
 msgid "This Page"
-msgstr ""
+msgstr "このページ"
 
 #: concrete/views/panels/page/design/customize.php:218
 msgid ""
 "Reset the theme customizations for just this page, or your entire site?"
-msgstr ""
+msgstr "このページ、もしくは全体のテーマカスタマイズをリセットしますか？"
 
 #: concrete/views/panels/page/versions.php:26
 msgid "This is the approved page version."
-msgstr ""
+msgstr "これは承認されたページのバージョンです。"
 
 #: concrete/views/panels/page/versions.php:51
 #: concrete/views/panels/page/versions.php:53
 msgid "&larr; Newer"
-msgstr ""
+msgstr "&larr; 新しい"
 
 #: concrete/views/panels/page/versions.php:56
 #: concrete/views/panels/page/versions.php:58
 msgid "Older &rarr;"
-msgstr ""
+msgstr "古い &rarr;"
 
 #: concrete/views/panels/page/check_in.php:10
 msgid "Version Comments"
@@ -9701,21 +9706,21 @@ msgid ""
 "Fix common page errors from the <a href=\"#\" data-launch-panel-detail"
 "=\"page-composer\" data-panel-detail-url=\"%s\" data-panel-"
 "transition=\"fade\">Page Compose interface</a>."
-msgstr ""
+msgstr "<a href=\"#\" data-launch-panel-detail=\"page-composer\" data-panel-detail-url=\"%s\" data-panel-transition=\"fade\">ページ作成インタフェースから</a>共通のページエラーを修復."
 
 #: concrete/views/panels/page/check_in.php:67
 msgid "Discard Changes"
-msgstr ""
+msgstr "変更を破棄"
 
 #: concrete/views/panels/add.php:19
 msgid "Blocks"
-msgstr ""
+msgstr "ブロック"
 
 #: concrete/views/panels/add.php:23
 msgid "Clipboard"
-msgstr ""
+msgstr "クリップボード"
 
-#: concrete/config/install/base/dashboard.xml:414
+#: concrete/config/install/base/dashboard.xml:413
 #: concrete/config/install/base/login_registration.xml:7
 #: concrete/views/panels/add.php:27
 msgid "Stacks"
@@ -9723,9 +9728,9 @@ msgstr "スタック"
 
 #: concrete/views/panels/add.php:31
 msgid "Gathering Tiles"
-msgstr ""
+msgstr "ギャザリング・タイル"
 
-#: concrete/config/install/base/dashboard.xml:979
+#: concrete/config/install/base/dashboard.xml:967
 #: concrete/views/panels/add.php:70
 msgid "Stack"
 msgstr "スタック"
@@ -9734,7 +9739,7 @@ msgstr "スタック"
 #, php-format
 msgid "%d Block"
 msgid_plural "%d Blocks"
-msgstr[0] ""
+msgstr[0] "%d ブロック"
 
 #: concrete/views/frontend/user_error.php:2
 msgid "Unexpected User Error"
@@ -9834,7 +9839,7 @@ msgstr "インストールの開始"
 msgid "Site Information"
 msgstr "サイト情報"
 
-#: concrete/config/install/base/dashboard.xml:538
+#: concrete/config/install/base/dashboard.xml:532
 #: concrete/single_pages/dashboard/system/basics/name.php:7
 #: concrete/views/frontend/install.php:144
 msgid "Site Name"
@@ -9906,7 +9911,7 @@ msgstr "お使いのブラウザをJavaScriptが使えるように設定して�
 
 #: concrete/views/frontend/install.php:344
 msgid "MySQL PDO Extension Enabled"
-msgstr ""
+msgstr "MySQL PDO エクステンション有効"
 
 #: concrete/views/frontend/install.php:350
 msgid "Supports concrete5 request URLs"
@@ -9920,13 +9925,13 @@ msgstr "concrete5が必要な情報を取得できませんでした。このサ
 
 #: concrete/views/frontend/install.php:356
 msgid "JSON Extension Enabled"
-msgstr ""
+msgstr "JSON エクステンション有効"
 
 #: concrete/views/frontend/install.php:358
 msgid ""
 "You must enable PHP's JSON support. This should be enabled by default in PHP"
 " 5.2 and above."
-msgstr ""
+msgstr "PHP の JSON サポートを有効にする必要があります。PHP 5.2 以上であればデフォルトで有効になっています。"
 
 #: concrete/views/frontend/install.php:370
 msgid "Image Manipulation Available"
@@ -9952,7 +9957,7 @@ msgstr "アップロードファイルと設定ファイルのディレクトリ
 msgid ""
 "The packages/, application/config/ and application/files/ directories must "
 "be writable by your web server."
-msgstr ""
+msgstr "packages/, application/config/ と application/files/ ディレクトリはサーバーの書き込み許可されている必要があります。"
 
 #: concrete/views/frontend/install.php:388
 msgid "Cookies Enabled"
@@ -9978,13 +9983,13 @@ msgstr "ファイルマネージャーでリモートファイルをインポー
 
 #: concrete/views/frontend/install.php:429
 msgid "Zip Support"
-msgstr ""
+msgstr "ZIPサポート"
 
 #: concrete/views/frontend/install.php:431
 msgid ""
 "Downloading zipped files from the file manager and remote updating requires "
 "the Zip extension."
-msgstr ""
+msgstr "ファイルマネージャーから、ZIPファイルをファウンロードしたり、リモートアップデートを行う際は ZIP エクステンションが必要です。"
 
 #: concrete/views/frontend/install.php:444
 msgid "Continue to Installation"
@@ -10218,7 +10223,7 @@ msgstr "よろしければ、以下のリンクをクリックしてください
 #: concrete/mail/facebook_account_connect_validate.php:8
 #, php-format
 msgid "Please go to this like to validate: %s"
-msgstr ""
+msgstr "こちらのリンクより有効化する: %s"
 
 #: concrete/mail/validate_user_email.php:5
 msgid "Registration - Validate Email Address"
@@ -10264,13 +10269,13 @@ msgstr "\nあなたの concrete5 サイトのフォーム %s から送信され�
 
 #: concrete/config/install/packages/elemental_full/controller.php:10
 msgid "Full Site"
-msgstr ""
+msgstr "フルサイト"
 
 #: concrete/config/install/packages/elemental_full/controller.php:14
 msgid ""
 "Creates a full website with the Elemental theme, including a home page, "
 "multiple page types, portfolio, contact forms, blogs and more.."
-msgstr ""
+msgstr "Elemental テーマで、ホームページ、複数ページ、ポートフォリオ、フォーム、ブログなど、ウェブサイトを作成。"
 
 #: concrete/config/install/packages/elemental_blank/controller.php:10
 msgid "Empty Site"
@@ -10278,7 +10283,7 @@ msgstr "空白のサイト"
 
 #: concrete/config/install/packages/elemental_blank/controller.php:14
 msgid "Creates an empty site using the unstyled Elemental theme."
-msgstr ""
+msgstr "スタイル設定のない Elemental テーマを使って空白のサイトを作る。"
 
 #: concrete/config/file_types.php:17
 msgid "JPEG"
@@ -10429,7 +10434,7 @@ msgstr "WebM"
 
 #: concrete/blocks/horizontal_rule/controller.php:14
 msgid "Adds a thin hairline horizontal divider to the page."
-msgstr ""
+msgstr "ページに細い水平の境界線を加える。"
 
 #: concrete/attributes/textarea/type_form.php:33
 #: concrete/blocks/horizontal_rule/controller.php:18
@@ -10438,7 +10443,7 @@ msgstr "水平線"
 
 #: concrete/blocks/image_slider/controller.php:23
 msgid "Display your images and captions in an attractive slideshow format."
-msgstr ""
+msgstr "魅力あるスライドショーの形式で、画像やキャプションを表示。"
 
 #: concrete/blocks/image_slider/controller.php:28
 msgid "Image Slider"
@@ -10446,11 +10451,11 @@ msgstr "イメージスライダー"
 
 #: concrete/blocks/image_slider/view.php:5
 msgid "Image Slider disabled in edit mode."
-msgstr ""
+msgstr "編集モードではイメージスライダーは無効化。"
 
 #: concrete/blocks/image_slider/view.php:45
 msgid "No Slides Entered."
-msgstr ""
+msgstr "スライドが入力されていません。"
 
 #: concrete/blocks/image_slider/form_setup_html.php:164
 msgid "Navigation"
@@ -10462,42 +10467,42 @@ msgstr "矢印"
 
 #: concrete/blocks/image_slider/form_setup_html.php:172
 msgid "Bullets"
-msgstr ""
+msgstr "箇条書き"
 
 #: concrete/blocks/faq/form_setup_html.php:57
 #: concrete/blocks/image_slider/form_setup_html.php:176
 msgid "Add Entry"
-msgstr ""
+msgstr "エントリーを追加"
 
 #: concrete/blocks/faq/form_setup_html.php:76
 #: concrete/blocks/faq/form_setup_html.php:97
 #: concrete/blocks/image_slider/form_setup_html.php:211
 msgid "Delete Entry"
-msgstr ""
+msgstr "エントリーを削除"
 
 #: concrete/blocks/share_this_page/form.php:5
 msgid "Add Service"
-msgstr ""
+msgstr "サービスを追加"
 
 #: concrete/blocks/share_this_page/form.php:6
 msgid "Services"
-msgstr ""
+msgstr "サービス"
 
 #: concrete/blocks/share_this_page/form.php:18
 msgid "Choose Sharing Service"
-msgstr ""
+msgstr "シェアサービスを選択"
 
 #: concrete/blocks/share_this_page/controller.php:26
 msgid "Allows users to share this page with social networks."
-msgstr ""
+msgstr "ユーザーが、ソーシャル・ネットワークでこのページをシェアするのを許可する。"
 
 #: concrete/blocks/share_this_page/controller.php:31
 msgid "Share This Page"
-msgstr ""
+msgstr "このページをシェア"
 
 #: concrete/blocks/share_this_page/controller.php:101
 msgid "You must choose at least one service."
-msgstr ""
+msgstr "最低1つのサービスを選択。"
 
 #: concrete/blocks/google_map/controller.php:26
 msgid ""
@@ -10569,7 +10574,7 @@ msgstr "スタック（ブロックのグループ）を表示させる。"
 
 #: concrete/blocks/core_stack_display/controller.php:27
 msgid "Stack Display"
-msgstr ""
+msgstr "スタック表示"
 
 #: concrete/blocks/core_gathering/controller.php:13
 msgid "Displays pages and data in list or grids."
@@ -10596,7 +10601,7 @@ msgstr "いいえ、投稿を無効にします。"
 
 #: concrete/blocks/core_gathering/form/posting.php:24
 msgid "Yes, this gathering can be posted to the front-end."
-msgstr ""
+msgstr "はい、このギャザリングはフロントエンドに投稿できます。"
 
 #: concrete/blocks/core_gathering/form/posting.php:29
 msgid "Create pages using"
@@ -10684,35 +10689,35 @@ msgstr "エリアレイアウトの為の代理ブロック"
 
 #: concrete/blocks/core_area_layout/controller.php:31
 msgid "Area Layout"
-msgstr ""
+msgstr "エリアレイアウト"
 
 #: concrete/blocks/related_pages/form.php:4
 msgid "Topic Attribute to Use For Relation"
-msgstr ""
+msgstr "リレーション用途でのトピック属性"
 
 #: concrete/blocks/related_pages/form.php:17
 msgid "Filter by Parent Page"
-msgstr ""
+msgstr "親ページでフィルタ"
 
 #: concrete/blocks/related_pages/form.php:28
 msgid "Filter by Page Type"
-msgstr ""
+msgstr "ページタイプでフィルタ"
 
 #: concrete/blocks/related_pages/form.php:47
 #: concrete/single_pages/dashboard/system/seo/bulk.php:45
 msgid "Number of Pages to Display"
-msgstr ""
+msgstr "表示するページ数"
 
 #: concrete/blocks/related_pages/controller.php:28
 msgid ""
 "Displays a list of pages related to this page. Uses the topic attribute for "
 "relation."
-msgstr ""
+msgstr "このページと関係するページ一覧を表示。トピック属性をリレーションとして使用。"
 
 #: concrete/blocks/related_pages/controller.php:33
 #: concrete/blocks/related_pages/controller.php:40
 msgid "Related Pages"
-msgstr ""
+msgstr "関係するページ"
 
 #: concrete/blocks/core_gathering_display/controller.php:22
 msgid "Proxy block for gathering items added to areas."
@@ -10720,7 +10725,7 @@ msgstr "エリアにギャザリングのアイテムを集めて表示するブ
 
 #: concrete/blocks/core_gathering_display/controller.php:26
 msgid "Gathering Display"
-msgstr ""
+msgstr "ギャザリング表示"
 
 #: concrete/attributes/textarea/type_form.php:41
 #: concrete/blocks/form/form_setup_html.php:19
@@ -10733,75 +10738,75 @@ msgstr "オプション"
 
 #: concrete/blocks/page_attribute_display/form.php:11
 msgid "Display property with formatting"
-msgstr ""
+msgstr "プロパティのフォーマットを表示"
 
 #: concrete/blocks/page_attribute_display/form.php:26
 msgid "Format of Date Properties"
-msgstr ""
+msgstr "日付プロパティのフォーマット"
 
 #: concrete/blocks/page_attribute_display/form.php:28
 #, php-format
 msgid "See the formatting options at %s."
-msgstr ""
+msgstr "%s のフォーマットのオプションを見る"
 
 #: concrete/blocks/page_attribute_display/form.php:44
 msgid "Property to Display:"
-msgstr ""
+msgstr "表示するプロパティ"
 
 #: concrete/blocks/page_attribute_display/form.php:47
 msgid "Page Values"
-msgstr ""
+msgstr "ページの値"
 
 #: concrete/blocks/faq/form_setup_html.php:67
 #: concrete/blocks/faq/form_setup_html.php:88
 #: concrete/blocks/page_attribute_display/form.php:68
 msgid "Title Text"
-msgstr ""
+msgstr "タイトルテキスト"
 
 #: concrete/blocks/page_attribute_display/controller.php:33
 msgid "Displays the value of a page attribute for the current page."
-msgstr ""
+msgstr "現ページのページ属性の値の表示"
 
 #: concrete/blocks/page_attribute_display/controller.php:38
 msgid "Page Attribute Display"
-msgstr ""
+msgstr "ページ属性を表示"
 
 #: concrete/blocks/page_attribute_display/controller.php:116
 msgid "Page Description"
-msgstr ""
+msgstr "ページ説明"
 
 #: concrete/blocks/page_attribute_display/controller.php:117
 msgid "Page Date Created"
-msgstr ""
+msgstr "ページ作成日"
 
 #: concrete/blocks/page_attribute_display/controller.php:118
 msgid "Page Date Published"
-msgstr ""
+msgstr "ページ公開日"
 
 #: concrete/blocks/page_attribute_display/controller.php:119
 msgid "Page Date Modified"
-msgstr ""
+msgstr "ページ更新日"
 
 #: concrete/blocks/page_title/form_add_edit.php:6
 msgid "Custom Title"
-msgstr ""
+msgstr "カスタムタイトル"
 
 #: concrete/blocks/page_title/form_add_edit.php:9
 msgid "Override page name with custom title?"
-msgstr ""
+msgstr "ページ名をカスタムタイトルにオーバーライド"
 
 #: concrete/blocks/page_title/form_add_edit.php:14
 msgid "Custom Title Text"
-msgstr ""
+msgstr "カスタムタイトルテキスト"
 
 #: concrete/blocks/page_title/controller.php:25
 msgid "Displays a Page's Title"
-msgstr ""
+msgstr "ページタイトルを表示"
 
 #: concrete/blocks/page_title/controller.php:30
 #: concrete/blocks/page_title/controller.php:47
 msgid "Page Title"
-msgstr ""
+msgstr "ページタイトル"
 
 #: concrete/blocks/content/controller.php:36
 msgid "HTML/WYSIWYG Editor Content."
@@ -10824,7 +10829,7 @@ msgstr "エラー: 必須ページ属性 \"%s\" が存在しません。"
 
 #: concrete/blocks/tags/tag_form.php:15
 msgid "Display Tags"
-msgstr ""
+msgstr "タグを表示"
 
 #: concrete/blocks/date_nav/form_setup_html.php:86
 #: concrete/blocks/tags/tag_form.php:19
@@ -10833,7 +10838,7 @@ msgstr "現在のページ"
 
 #: concrete/blocks/tags/tag_form.php:24
 msgid "All Available Tags"
-msgstr ""
+msgstr "全ての使用可能なタグ"
 
 #: concrete/blocks/tags/tag_form.php:42
 msgid "Number to Display"
@@ -10841,7 +10846,7 @@ msgstr "表示件数"
 
 #: concrete/blocks/tags/tag_form.php:50
 msgid "Link Tags"
-msgstr ""
+msgstr "リンクタグ"
 
 #: concrete/blocks/dashboard_featured_addon/controller.php:29
 msgid "Features an add-on from concrete5.org."
@@ -10862,21 +10867,21 @@ msgstr "concrete5マーケットプレイスからのデータが取得できま
 
 #: concrete/blocks/faq/controller.php:21
 msgid "Frequently Asked Questions Block"
-msgstr ""
+msgstr "FAQブロック"
 
 #: concrete/blocks/faq/controller.php:26
-#: concrete/config/install/packages/elemental_full/content.xml:1532
+#: concrete/config/install/packages/elemental_full/content.xml:1858
 msgid "Frequently Asked Questions"
-msgstr ""
+msgstr "FAQ"
 
 #: concrete/blocks/faq/view.php:24
 msgid "No Faq Entries Entered."
-msgstr ""
+msgstr "FAQ のエントリーが入力されていません。"
 
 #: concrete/blocks/faq/form_setup_html.php:63
 #: concrete/blocks/faq/form_setup_html.php:84
 msgid "Anchor Link Text"
-msgstr ""
+msgstr "アンカーリンクテキスト"
 
 #: concrete/blocks/next_previous/controller.php:18
 msgid "Navigate through sibling pages."
@@ -10906,7 +10911,7 @@ msgstr "「上へ」のラベル"
 
 #: concrete/blocks/next_previous/form_setup_html.php:31
 msgid "Loop Navigation"
-msgstr ""
+msgstr "ループナビゲーション"
 
 #: concrete/blocks/next_previous/form_setup_html.php:38
 msgid "Exclude system pages."
@@ -10914,7 +10919,7 @@ msgstr "システムページを除く"
 
 #: concrete/blocks/next_previous/form_setup_html.php:46
 msgid "Order Pages"
-msgstr ""
+msgstr "ページ並び"
 
 #: concrete/blocks/next_previous/form_setup_html.php:49
 msgid "Chronological"
@@ -11131,11 +11136,11 @@ msgstr "トリミング + 画像のアップロード"
 
 #: concrete/blocks/image/form.php:32
 msgid "Image Hover"
-msgstr ""
+msgstr "ホバー画像"
 
 #: concrete/blocks/image/form.php:32
 msgid "(Optional)"
-msgstr ""
+msgstr "(オプション)"
 
 #: concrete/blocks/image/form.php:33
 msgid "Choose Image On-State"
@@ -11143,7 +11148,7 @@ msgstr "マウスオーバー画像を選択"
 
 #: concrete/blocks/image/form.php:42
 msgid "Image Link"
-msgstr ""
+msgstr "画像リンク"
 
 #: concrete/blocks/image/form.php:45
 msgid "Another Page"
@@ -11159,11 +11164,11 @@ msgstr "選択ページ"
 
 #: concrete/blocks/image/form.php:62
 msgid "Alt. Text"
-msgstr ""
+msgstr " ALTテキスト"
 
 #: concrete/blocks/image/form.php:79
 msgid "Constrain Image Size"
-msgstr ""
+msgstr "画像サイズを制限する"
 
 #: concrete/blocks/image/form.php:81
 msgid "Max Width"
@@ -11330,7 +11335,7 @@ msgstr "コンポーザーを通じて、出力しなければいけないブロ
 
 #: concrete/blocks/core_page_type_composer_control_output/controller.php:21
 msgid "Composer Control"
-msgstr ""
+msgstr "コンポーザーコントロール"
 
 #: concrete/blocks/core_page_type_composer_control_output/view.php:13
 #, php-format
@@ -11562,7 +11567,7 @@ msgstr "スクラップブックに追加されたブロックはありません
 
 #: concrete/blocks/core_scrapbook_display/controller.php:38
 msgid "Scrapbook Display"
-msgstr ""
+msgstr "スクラップブック表示"
 
 #: concrete/blocks/core_scrapbook_display/edit.php:15
 msgid ""
@@ -11666,11 +11671,11 @@ msgstr "フィードタイトル"
 
 #: concrete/blocks/rss_displayer/form_setup_html.php:23
 msgid "Items to Show"
-msgstr ""
+msgstr "表示アイテム"
 
 #: concrete/blocks/rss_displayer/form_setup_html.php:29
 msgid "Include Summary"
-msgstr ""
+msgstr "サマリーを含む"
 
 #: concrete/blocks/rss_displayer/form_setup_html.php:36
 msgid "Open links in a new window"
@@ -11779,24 +11784,24 @@ msgstr "検索インデックスが見つかりません。このブロックは
 
 #: concrete/blocks/search/form_setup_html.php:35
 msgid "Button Text"
-msgstr ""
+msgstr "ボタンテキスト"
 
 #: concrete/blocks/search/form_setup_html.php:39
 msgid "Search for Pages"
-msgstr ""
+msgstr "ページの検索"
 
 #: concrete/blocks/page_list/page_list_form.php:92
 #: concrete/blocks/search/form_setup_html.php:43
 msgid "Everywhere"
-msgstr ""
+msgstr "すべて"
 
 #: concrete/blocks/search/form_setup_html.php:49
 msgid "Beneath this Page"
-msgstr ""
+msgstr "ここのページ以下"
 
 #: concrete/blocks/search/form_setup_html.php:55
 msgid "Beneath Another Page"
-msgstr ""
+msgstr "他のページ以下"
 
 #: concrete/blocks/search/form_setup_html.php:75
 #: concrete/blocks/topic_list/form.php:29
@@ -11806,7 +11811,7 @@ msgstr "結果ページ"
 #: concrete/blocks/search/form_setup_html.php:79
 #: concrete/blocks/topic_list/form.php:33
 msgid "Post Results to a Different Page"
-msgstr ""
+msgstr "別ページに結果を表示"
 
 #: concrete/blocks/search/form_setup_html.php:90
 msgid "OR Path"
@@ -11820,7 +11825,7 @@ msgstr "設定"
 
 #: concrete/blocks/page_list/page_list_form.php:48
 msgid "Filtering"
-msgstr ""
+msgstr "フィルタ"
 
 #: concrete/blocks/page_list/page_list_form.php:59
 msgid ""
@@ -11834,7 +11839,7 @@ msgstr "転載（エイリアス）ページを表示"
 
 #: concrete/blocks/page_list/page_list_form.php:74
 msgid "Enable Other Blocks to Filter This Page List."
-msgstr ""
+msgstr "このページリストをフィルタするために他のブロックを有効にする。"
 
 #: concrete/blocks/page_list/page_list_form.php:76
 msgid ""
@@ -12188,7 +12193,7 @@ msgid "Allows users to add social icons to their website"
 msgstr ""
 
 #: concrete/blocks/social_links/controller.php:31
-#: concrete/config/install/base/dashboard.xml:554
+#: concrete/config/install/base/dashboard.xml:548
 msgid "Social Links"
 msgstr "ソーシャルリンク"
 
@@ -12295,18 +12300,18 @@ msgstr "トピックツリー"
 msgid "Topic Attribute To Display"
 msgstr ""
 
-#: concrete/blocks/topic_list/controller.php:27
+#: concrete/blocks/topic_list/controller.php:28
 msgid ""
 "Displays a list of your site's topics, allowing you to click on them to "
 "filter a page list."
 msgstr ""
 
-#: concrete/blocks/topic_list/controller.php:32
+#: concrete/blocks/topic_list/controller.php:33
 msgid "Topic List"
 msgstr ""
 
-#: concrete/blocks/topic_list/controller.php:38
-#: concrete/config/install/base/dashboard.xml:907
+#: concrete/blocks/topic_list/controller.php:39
+#: concrete/config/install/base/dashboard.xml:895
 msgid "Topics"
 msgstr "トピック"
 
@@ -12585,8 +12590,8 @@ msgstr "オプションを削除"
 msgid "Selected Options"
 msgstr "選択済みオプション"
 
-#: concrete/attributes/select/form.php:170
-#: concrete/attributes/select/form.php:171
+#: concrete/attributes/select/form.php:172
+#: concrete/attributes/select/form.php:173
 msgid "Add Another Option"
 msgstr "オプション項目を追加"
 
@@ -12839,7 +12844,7 @@ msgstr "ドラッグしてこのセット内のファイル順を変更できま
 msgid "There are no files in this set."
 msgstr "このセットにはファイルがありません。"
 
-#: concrete/config/install/base/dashboard.xml:88
+#: concrete/config/install/base/dashboard.xml:87
 #: concrete/single_pages/dashboard/files/sets.php:132
 msgid "Add File Set"
 msgstr "ファイルセットを追加"
@@ -13005,7 +13010,7 @@ msgstr "アドオンを探す"
 msgid "Get more add-ons from concrete5.org."
 msgstr "concrete5.orgからアドオンを入手する。"
 
-#: concrete/config/install/base/dashboard.xml:494
+#: concrete/config/install/base/dashboard.xml:490
 #: concrete/single_pages/dashboard/extend/install.php:245
 #: concrete/single_pages/dashboard/extend/update.php:31
 msgid "Update Add-Ons"
@@ -13313,7 +13318,7 @@ msgstr "追加されたスタックはありません。"
 msgid "Stack Name"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:404
+#: concrete/config/install/base/dashboard.xml:403
 #: concrete/single_pages/dashboard/workflow/me.php:3
 msgid "Waiting for Me"
 msgstr "確認待ち"
@@ -13361,8 +13366,8 @@ msgstr ""
 msgid "Badge Description"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:185
-#: concrete/config/install/base/dashboard.xml:866
+#: concrete/config/install/base/dashboard.xml:184
+#: concrete/config/install/base/dashboard.xml:854
 #: concrete/single_pages/account/profile/public_profile.php:31
 #: concrete/single_pages/dashboard/users/add_group.php:102
 #: concrete/single_pages/dashboard/users/groups.php:73
@@ -13732,7 +13737,7 @@ msgstr "ユーザー検索にアクセスする権限がありません。この
 msgid "Registration Data"
 msgstr "ユーザー登録情報"
 
-#: concrete/config/install/base/dashboard.xml:663
+#: concrete/config/install/base/dashboard.xml:657
 #: concrete/single_pages/dashboard/system/files/filetypes.php:3
 msgid "Allowed File Types"
 msgstr "許可されたファイル拡張子"
@@ -13771,7 +13776,7 @@ msgstr ""
 msgid "Delete Location"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:536
+#: concrete/config/install/base/dashboard.xml:530
 #: concrete/single_pages/dashboard/system/files/storage.php:39
 msgid "Basics"
 msgstr "基本"
@@ -13848,7 +13853,7 @@ msgstr "コンマで区切られた予約語の一覧です。これらの語は
 msgid "Reset To Default"
 msgstr "デフォルトへリセット"
 
-#: concrete/config/install/base/dashboard.xml:621
+#: concrete/config/install/base/dashboard.xml:615
 #: concrete/single_pages/dashboard/system/seo/codes.php:8
 msgid "Tracking Codes"
 msgstr "トラッキングコード"
@@ -13945,7 +13950,7 @@ msgstr "プリティーURLを使用する"
 msgid "Code for your .htaccess file"
 msgstr ".htaccess ファイル向けのコード"
 
-#: concrete/config/install/base/dashboard.xml:918
+#: concrete/config/install/base/dashboard.xml:906
 #: concrete/single_pages/dashboard/system/environment/info.php:2
 msgid "Environment"
 msgstr "サーバー設定一覧"
@@ -13986,7 +13991,7 @@ msgstr "来訪者からエラーを隠します。"
 msgid "Show errors in page."
 msgstr "エラーをページに表示します。"
 
-#: concrete/config/install/base/dashboard.xml:722
+#: concrete/config/install/base/dashboard.xml:712
 #: concrete/single_pages/dashboard/system/permissions/site.php:7
 msgid "Site Access"
 msgstr "サイトアクセス"
@@ -14044,7 +14049,7 @@ msgstr "現在、インストールされているCaptchaはありません。"
 msgid "Save Additional Settings"
 msgstr "追加設定を保存"
 
-#: concrete/config/install/base/dashboard.xml:769
+#: concrete/config/install/base/dashboard.xml:759
 #: concrete/single_pages/dashboard/system/permissions/maintenance.php:4
 msgid "Maintenance Mode"
 msgstr "メンテナンスモード"
@@ -14102,12 +14107,12 @@ msgstr "スパムが検出された際は、このボックスに入力したメ
 msgid "You have no anti-spam libraries installed."
 msgstr "アンチスパムライブラリーがインストールされていません。"
 
-#: concrete/config/install/base/dashboard.xml:731
+#: concrete/config/install/base/dashboard.xml:721
 #: concrete/single_pages/dashboard/system/permissions/tasks.php:8
 msgid "Task Permissions"
 msgstr "タスク権限"
 
-#: concrete/config/install/base/dashboard.xml:739
+#: concrete/config/install/base/dashboard.xml:729
 #: concrete/single_pages/dashboard/system/permissions/users.php:8
 msgid "User Permissions"
 msgstr "ユーザー権限"
@@ -14373,7 +14378,7 @@ msgstr ""
 msgid "Enable"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:797
+#: concrete/config/install/base/dashboard.xml:787
 #: concrete/single_pages/dashboard/system/registration/open.php:3
 msgid "Public Registration"
 msgstr "ユーザー登録の公開"
@@ -14514,7 +14519,7 @@ msgstr ""
 msgid "Enable user defined time zones."
 msgstr "ユーザー毎のタイムゾーン設定を有効にする。"
 
-#: concrete/config/install/base/dashboard.xml:570
+#: concrete/config/install/base/dashboard.xml:564
 #: concrete/single_pages/dashboard/system/basics/editor.php:2
 msgid "Rich Text Editor"
 msgstr "記事ブロックエディター設定"
@@ -14699,7 +14704,7 @@ msgstr "いくつかのアップデートが利用可能です。以下のリス
 msgid "Current Version"
 msgstr "現バージョン"
 
-#: concrete/config/install/base/dashboard.xml:969
+#: concrete/config/install/base/dashboard.xml:957
 #: concrete/single_pages/dashboard/system/backup/update.php:102
 msgid "Update concrete5"
 msgstr "concrete5をアップグレード"
@@ -14714,7 +14719,7 @@ msgid ""
 "it may help to clear your cache."
 msgstr "このサイトで古い情報が表示されたり、不明な結果を出している場合、サイトキャッシュを削除する事によって解決する場合があります。"
 
-#: concrete/config/install/base/dashboard.xml:700
+#: concrete/config/install/base/dashboard.xml:692
 #: concrete/single_pages/dashboard/system/optimization/clearcache.php:8
 msgid "Clear Cache"
 msgstr "キャッシュをクリア"
@@ -15029,7 +15034,7 @@ msgstr "オプション"
 msgid "IP Address"
 msgstr "IPアドレス"
 
-#: concrete/config/install/base/dashboard.xml:238
+#: concrete/config/install/base/dashboard.xml:237
 #: concrete/single_pages/dashboard/reports/surveys.php:68
 msgid "Surveys"
 msgstr "アンケート"
@@ -15092,7 +15097,7 @@ msgstr "このフォームと投稿の内容を削除してもよろしいです
 msgid "Are you sure you want to delete this form submissions?"
 msgstr "このフォームの投稿を削除してもよろしいですか？"
 
-#: concrete/config/install/base/dashboard.xml:227
+#: concrete/config/install/base/dashboard.xml:226
 #: concrete/single_pages/dashboard/reports/forms.php:69
 msgid "Form Results"
 msgstr "フォーム一覧"
@@ -15226,7 +15231,7 @@ msgstr "ページタイプ一欄に戻る"
 msgid "Unable to access composer settings."
 msgstr "コンポーザー設定にアクセスできませんでした。"
 
-#: concrete/config/install/base/dashboard.xml:301
+#: concrete/config/install/base/dashboard.xml:300
 #: concrete/single_pages/dashboard/pages/types/view.php:23
 #: concrete/single_pages/dashboard/pages/types/view.php:65
 msgid "Add Page Type"
@@ -15276,7 +15281,7 @@ msgstr "このテーマをお使いのサイトのすべてのページに適用
 msgid "No themes are installed."
 msgstr "いいえ、テーマが有効化されています"
 
-#: concrete/config/install/base/dashboard.xml:273
+#: concrete/config/install/base/dashboard.xml:272
 #: concrete/single_pages/dashboard/pages/themes/view.php:82
 msgid "Inspect"
 msgstr "検査"
@@ -15375,7 +15380,7 @@ msgid ""
 "None. This file will be used by pages with the <strong>%s</strong> template."
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:366
+#: concrete/config/install/base/dashboard.xml:365
 #: concrete/single_pages/dashboard/pages/single.php:5
 msgid "Single Pages"
 msgstr "シングルページ"
@@ -15466,12 +15471,12 @@ msgstr "プロフィール編集"
 msgid "Basic Information"
 msgstr "基本情報"
 
-#: concrete/config/install/base/dashboard.xml:586
+#: concrete/config/install/base/dashboard.xml:580
 #: concrete/single_pages/account/profile/edit.php:29
 msgid "Time Zone"
 msgstr "タイムゾーン"
 
-#: concrete/config/install/base/dashboard.xml:805
+#: concrete/config/install/base/dashboard.xml:795
 #: concrete/single_pages/account/profile/edit.php:61
 msgid "Authentication Types"
 msgstr "認証タイプ"
@@ -15861,7 +15866,7 @@ msgstr "細いタイトル"
 #: concrete/themes/elemental/css/styles.xml:59
 msgctxt "StyleName"
 msgid "Image Caption"
-msgstr ""
+msgstr "画像キャプション"
 
 #: concrete/themes/elemental/css/styles.xml:60
 msgctxt "StyleName"
@@ -15915,864 +15920,864 @@ msgid ""
 msgstr "add file, delete file, copy, move, alias, resize, crop, rename, images, title, attribute"
 
 #. Keywords for page /dashboard/files/attributes
-#: concrete/config/install/base/dashboard.xml:69
+#: concrete/config/install/base/dashboard.xml:68
 msgid "file, file attributes, title, attribute, description, rename"
 msgstr "file, file attributes, title, attribute, description, rename"
 
-#: concrete/config/install/base/dashboard.xml:77
+#: concrete/config/install/base/dashboard.xml:76
 msgid "File Sets"
 msgstr "ファイルセット"
 
 #. Keywords for page /dashboard/files/sets
-#: concrete/config/install/base/dashboard.xml:80
+#: concrete/config/install/base/dashboard.xml:79
 msgid "files, category, categories"
 msgstr "ファイル、カテゴリー"
 
 #. Keywords for page /dashboard/files/add_set
-#: concrete/config/install/base/dashboard.xml:94
+#: concrete/config/install/base/dashboard.xml:93
 msgid "new file set"
 msgstr "新規ファイル作成"
 
-#: concrete/config/install/base/dashboard.xml:102
+#: concrete/config/install/base/dashboard.xml:101
 msgid "Add and manage the user accounts and groups on your website."
 msgstr "サイトのユーザーアカウントやグループを追加または管理をする。"
 
 #. Keywords for page /dashboard/users
-#: concrete/config/install/base/dashboard.xml:105
+#: concrete/config/install/base/dashboard.xml:104
 msgid ""
 "users, groups, people, find, delete user, remove user, change password, "
 "password"
 msgstr "users, groups, people, find, delete user, remove user, change password, password"
 
-#: concrete/config/install/base/dashboard.xml:110
+#: concrete/config/install/base/dashboard.xml:109
 msgid "Search Users"
 msgstr "ユーザー検索"
 
 #. Keywords for page /dashboard/users/search
-#: concrete/config/install/base/dashboard.xml:113
+#: concrete/config/install/base/dashboard.xml:112
 msgid ""
 "find, search, people, delete user, remove user, change password, password"
 msgstr "find, search, people, delete user, remove user, change password, password"
 
-#: concrete/config/install/base/dashboard.xml:121
+#: concrete/config/install/base/dashboard.xml:120
 msgid "User Groups"
 msgstr "ユーザーグループ"
 
 #. Keywords for page /dashboard/users/groups
-#: concrete/config/install/base/dashboard.xml:124
+#: concrete/config/install/base/dashboard.xml:123
 msgid "user, group, people, permissions, expire, badges"
 msgstr ""
 
 #. Keywords for page /dashboard/users/attributes
-#: concrete/config/install/base/dashboard.xml:135
+#: concrete/config/install/base/dashboard.xml:134
 msgid "user attributes, user data, gather data, registration data"
 msgstr "user attributes, user data, gather data, registration data"
 
 #. Keywords for page /dashboard/users/add
-#: concrete/config/install/base/dashboard.xml:146
+#: concrete/config/install/base/dashboard.xml:145
 msgid "new user, create"
 msgstr "新しいユーザーをつくる"
 
 #. Keywords for page /dashboard/users/add_group
-#: concrete/config/install/base/dashboard.xml:160
+#: concrete/config/install/base/dashboard.xml:159
 msgid "new user group, new group, group, create"
 msgstr "new user group, new group, group, create"
 
-#: concrete/config/install/base/dashboard.xml:171
+#: concrete/config/install/base/dashboard.xml:170
 msgid "Move Multiple Groups"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:174
+#: concrete/config/install/base/dashboard.xml:173
 msgid "Group Sets"
 msgstr "グループセット"
 
 #. Keywords for page /dashboard/users/group_sets
-#: concrete/config/install/base/dashboard.xml:177
+#: concrete/config/install/base/dashboard.xml:176
 msgid "group set"
 msgstr "グループセット"
 
 #. Keywords for page /dashboard/users/points
-#: concrete/config/install/base/dashboard.xml:188
+#: concrete/config/install/base/dashboard.xml:187
 msgid "community, points, karma"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:196
+#: concrete/config/install/base/dashboard.xml:195
 msgid "Assign Points"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:199
+#: concrete/config/install/base/dashboard.xml:198
 msgid "Actions"
 msgstr "操作"
 
 #. Keywords for page /dashboard/users/points/actions
-#: concrete/config/install/base/dashboard.xml:202
+#: concrete/config/install/base/dashboard.xml:201
 msgid "action, community actions"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:208
+#: concrete/config/install/base/dashboard.xml:207
 msgid "Get data from forms and logs."
 msgstr "フォームやログの情報を閲覧"
 
 #. Keywords for page /dashboard/reports
-#: concrete/config/install/base/dashboard.xml:211
+#: concrete/config/install/base/dashboard.xml:210
 msgid "forms, log, error, email, mysql, exception, survey"
 msgstr "forms, log, error, email, mysql, exception, survey"
 
-#: concrete/config/install/base/dashboard.xml:216
+#: concrete/config/install/base/dashboard.xml:215
 msgid "View your site activity."
 msgstr "サイトの利用状況を表示する。"
 
 #. Keywords for page /dashboard/reports/statistics
-#: concrete/config/install/base/dashboard.xml:219
+#: concrete/config/install/base/dashboard.xml:218
 msgid "hits, pageviews, visitors, activity"
 msgstr "hits, pageviews, visitors, activity"
 
-#: concrete/config/install/base/dashboard.xml:227
+#: concrete/config/install/base/dashboard.xml:226
 msgid "Get submission data."
 msgstr "送信データを取得します。"
 
 #. Keywords for page /dashboard/reports/forms
-#: concrete/config/install/base/dashboard.xml:230
+#: concrete/config/install/base/dashboard.xml:229
 msgid "forms, questions, response, data"
 msgstr "forms, questions, response, data"
 
 #. Keywords for page /dashboard/reports/surveys
-#: concrete/config/install/base/dashboard.xml:241
+#: concrete/config/install/base/dashboard.xml:240
 msgid "questions, quiz, response"
 msgstr "questions, quiz, response"
 
-#: concrete/config/install/base/dashboard.xml:249
+#: concrete/config/install/base/dashboard.xml:248
 msgid "Logs"
 msgstr "ログ"
 
 #. Keywords for page /dashboard/reports/logs
-#: concrete/config/install/base/dashboard.xml:252
+#: concrete/config/install/base/dashboard.xml:251
 msgid "forms, log, error, email, mysql, exception, survey, history"
 msgstr "forms, log, error, email, mysql, exception, survey, history"
 
-#: concrete/config/install/base/dashboard.xml:260
-#: concrete/config/install/base/dashboard.xml:262
+#: concrete/config/install/base/dashboard.xml:259
+#: concrete/config/install/base/dashboard.xml:261
 msgid "Reskin your site."
 msgstr "デザイン管理"
 
 #. Keywords for page /dashboard/pages/themes
-#: concrete/config/install/base/dashboard.xml:265
+#: concrete/config/install/base/dashboard.xml:264
 msgid "new theme, theme, active theme, change theme, template, css"
 msgstr "new theme, theme, active theme, change theme, template, css"
 
 #. Keywords for page /dashboard/pages/themes/inspect
-#: concrete/config/install/base/dashboard.xml:276
+#: concrete/config/install/base/dashboard.xml:275
 msgid "page types"
 msgstr "ページタイプ"
 
 #. Keywords for page /dashboard/pages/themes/customize
-#: concrete/config/install/base/dashboard.xml:287
+#: concrete/config/install/base/dashboard.xml:286
 msgid "custom theme, change theme, custom css, css"
 msgstr "カスタムテーマ、テーマの変更、カスタムCSS、CSS"
 
-#: concrete/config/install/base/dashboard.xml:297
+#: concrete/config/install/base/dashboard.xml:296
 msgid "Page Types"
 msgstr "ページタイプ"
 
-#: concrete/config/install/base/dashboard.xml:311
+#: concrete/config/install/base/dashboard.xml:310
 msgid "Compose Form"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:320
+#: concrete/config/install/base/dashboard.xml:319
 msgid "Defaults and Output"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:329
+#: concrete/config/install/base/dashboard.xml:328
 msgid "Page Type Permissions"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:338
+#: concrete/config/install/base/dashboard.xml:337
 msgid "Form factors for pages in your site."
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:347
+#: concrete/config/install/base/dashboard.xml:346
 msgid "Add Page Template"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:347
+#: concrete/config/install/base/dashboard.xml:346
 msgid "Add page templates to your site."
 msgstr ""
 
 #. Keywords for page /dashboard/pages/attributes
-#: concrete/config/install/base/dashboard.xml:358
+#: concrete/config/install/base/dashboard.xml:357
 msgid "page attributes, custom"
 msgstr "ページ属性、カスタム"
 
 #. Keywords for page /dashboard/pages/single
-#: concrete/config/install/base/dashboard.xml:369
+#: concrete/config/install/base/dashboard.xml:368
 msgid "single, page, custom, application"
 msgstr "シングル、ページ、カスタム、アプリケーション"
 
 #. Keywords for page /dashboard/workflow
-#: concrete/config/install/base/dashboard.xml:391
+#: concrete/config/install/base/dashboard.xml:390
 msgid "add workflow, remove workflow"
 msgstr "add workflow, remove workflow"
 
-#: concrete/config/install/base/dashboard.xml:396
+#: concrete/config/install/base/dashboard.xml:395
 msgid "Workflow List"
 msgstr "ワークフロー一覧"
 
-#: concrete/config/install/base/dashboard.xml:412
+#: concrete/config/install/base/dashboard.xml:411
 msgid "Manage sitewide content and administer block types."
 msgstr "サイトのコンテンツを管理したり、ブロックタイプを管理します。"
 
-#: concrete/config/install/base/dashboard.xml:414
+#: concrete/config/install/base/dashboard.xml:413
 msgid "Share content across your site."
 msgstr "コンテンツをサイトで共有"
 
 #. Keywords for page /dashboard/blocks/stacks
-#: concrete/config/install/base/dashboard.xml:417
+#: concrete/config/install/base/dashboard.xml:416
 msgid ""
 "stacks, reusable content, scrapbook, copy, paste, paste block, copy block, "
 "site name, logo"
 msgstr "stacks, reusable content, scrapbook, copy, paste, paste block, copy block, site name, logo"
 
-#: concrete/config/install/base/dashboard.xml:428
+#: concrete/config/install/base/dashboard.xml:426
 msgid "Block & Stack Permissions"
 msgstr "ブロックとスタック権限"
 
-#: concrete/config/install/base/dashboard.xml:428
+#: concrete/config/install/base/dashboard.xml:426
 msgid "Control who can add blocks and stacks on your site."
 msgstr "誰がサイトにブロックやスタックを追加できるかを管理します。"
 
-#: concrete/config/install/base/dashboard.xml:436
+#: concrete/config/install/base/dashboard.xml:434
 msgid "Stack List"
 msgstr "スタックリスト"
 
 #. Keywords for page /dashboard/blocks/stacks/list
-#: concrete/config/install/base/dashboard.xml:445
+#: concrete/config/install/base/dashboard.xml:443
 msgid "edit stacks, view stacks, all stacks"
 msgstr "edit stacks, view stacks, all stacks"
 
-#: concrete/config/install/base/dashboard.xml:450
+#: concrete/config/install/base/dashboard.xml:448
 msgid "Block Types"
 msgstr "ブロックタイプ"
 
-#: concrete/config/install/base/dashboard.xml:450
+#: concrete/config/install/base/dashboard.xml:448
 msgid "Manage the installed block types in your site."
 msgstr "サイトにインストールされたブロックタイプを管理する。"
 
 #. Keywords for page /dashboard/blocks/types
-#: concrete/config/install/base/dashboard.xml:453
+#: concrete/config/install/base/dashboard.xml:451
 msgid "block, refresh, custom"
 msgstr "ブロック、リフレッシュ、カスタム"
 
-#: concrete/config/install/base/dashboard.xml:463
+#: concrete/config/install/base/dashboard.xml:461
 msgid ""
 "Connect to the concrete5 marketplace, install custom add-ons, and download "
 "updates for marketplace add-ons and themes."
 msgstr "concrete5マーケットプライスに接続、カスタムアドオンをインストール、そしてアドオンやテーマをアップデートする。"
 
 #. Keywords for page /dashboard/extend
-#: concrete/config/install/base/dashboard.xml:466
+#: concrete/config/install/base/dashboard.xml:464
 msgid ""
 "add-on, addon, add on, package, applications, ecommerce, discussions, "
 "forums, themes, templates, blocks"
 msgstr "アドオン, プラグイン, アプリケーション, パッケージ, ショッピングカート, フォーラム, Eコマース, テーマ, テンプレート, ブロック"
 
-#: concrete/config/install/base/dashboard.xml:486
+#: concrete/config/install/base/dashboard.xml:482
 msgid "Add Functionality"
 msgstr "機能追加"
 
-#: concrete/config/install/base/dashboard.xml:486
+#: concrete/config/install/base/dashboard.xml:482
 msgid "Install add-ons & themes."
 msgstr "アドオンとテーマをインストール"
 
 #. Keywords for page /dashboard/extend/install
-#: concrete/config/install/base/dashboard.xml:489
+#: concrete/config/install/base/dashboard.xml:485
 msgid ""
 "add-on, addon, ecommerce, install, discussions, forums, themes, templates, "
 "blocks"
 msgstr "add-on, addon, ecommerce, install, discussions, forums, themes, templates, blocks"
 
-#: concrete/config/install/base/dashboard.xml:494
+#: concrete/config/install/base/dashboard.xml:490
 msgid "Update your installed packages."
 msgstr "インストールされたパッケージをアップデートする。"
 
 #. Keywords for page /dashboard/extend/update
-#: concrete/config/install/base/dashboard.xml:497
+#: concrete/config/install/base/dashboard.xml:493
 msgid "update, upgrade"
 msgstr "update, upgrade"
 
-#: concrete/config/install/base/dashboard.xml:502
+#: concrete/config/install/base/dashboard.xml:498
 msgid "Connect to the Community"
 msgstr "コミュニティに接続"
 
-#: concrete/config/install/base/dashboard.xml:502
+#: concrete/config/install/base/dashboard.xml:498
 msgid "Connect to the concrete5 community."
 msgstr "concrete5コミュニティに接続"
 
 #. Keywords for page /dashboard/extend/connect
-#: concrete/config/install/base/dashboard.xml:505
+#: concrete/config/install/base/dashboard.xml:501
 msgid "concrete5.org, my account, marketplace"
 msgstr "concrete5.org, my account, marketplace"
 
-#: concrete/config/install/base/dashboard.xml:510
+#: concrete/config/install/base/dashboard.xml:506
 msgid "Download themes from concrete5.org."
 msgstr "concrete5.orgからテーマをダウンロードする。"
 
 #. Keywords for page /dashboard/extend/themes
-#: concrete/config/install/base/dashboard.xml:513
+#: concrete/config/install/base/dashboard.xml:509
 msgid "buy theme, new theme, marketplace, template"
 msgstr "buy theme, new theme, marketplace, template"
 
-#: concrete/config/install/base/dashboard.xml:518
+#: concrete/config/install/base/dashboard.xml:514
 msgid "Get More Add-Ons"
 msgstr "アドオンを入手"
 
-#: concrete/config/install/base/dashboard.xml:518
+#: concrete/config/install/base/dashboard.xml:514
 msgid "Download add-ons from concrete5.org."
 msgstr "concrete5.org.からアドオンをダウンロードする。"
 
 #. Keywords for page /dashboard/extend/add-ons
-#: concrete/config/install/base/dashboard.xml:521
+#: concrete/config/install/base/dashboard.xml:517
 msgid ""
 "buy addon, buy add on, buy add-on, purchase addon, purchase add on, purchase"
 " add-on, find addon, new addon, marketplace"
 msgstr "buy addon, buy add on, buy add-on, purchase addon, purchase add on, purchase add-on, find addon, new addon, marketplace"
 
-#: concrete/config/install/base/dashboard.xml:528
+#: concrete/config/install/base/dashboard.xml:522
 msgid "Secure and setup your site."
 msgstr "お使いのサイトの設定を行なう"
 
 #. Keywords for page /dashboard/system
-#: concrete/config/install/base/dashboard.xml:531
+#: concrete/config/install/base/dashboard.xml:525
 msgid "dashboard, configuration"
 msgstr "管理画面、設定"
 
-#: concrete/config/install/base/dashboard.xml:536
+#: concrete/config/install/base/dashboard.xml:530
 msgid "Basic information about your website."
 msgstr "サイトの基本情報"
 
 #. Keywords for page /dashboard/system/basics/name
-#: concrete/config/install/base/dashboard.xml:541
+#: concrete/config/install/base/dashboard.xml:535
 msgid "website name, title"
 msgstr "ウェブサイト名、タイトル"
 
-#: concrete/config/install/base/dashboard.xml:546
+#: concrete/config/install/base/dashboard.xml:540
 msgid "Accessibility"
 msgstr ""
 
 #. Keywords for page /dashboard/system/basics/accessibility
-#: concrete/config/install/base/dashboard.xml:549
+#: concrete/config/install/base/dashboard.xml:543
 msgid "accessibility, easy mode"
 msgstr ""
 
 #. Keywords for page /dashboard/system/basics/social
-#: concrete/config/install/base/dashboard.xml:557
+#: concrete/config/install/base/dashboard.xml:551
 msgid "sharing, facebook, twitter"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:562
+#: concrete/config/install/base/dashboard.xml:556
 msgid "Bookmark Icons"
 msgstr "ブックマークアイコン"
 
-#: concrete/config/install/base/dashboard.xml:562
+#: concrete/config/install/base/dashboard.xml:556
 msgid "Bookmark icon and mobile home screen icon setup."
 msgstr "ブックマークアイコンと携帯のホーム画面のアイコンの設定。"
 
 #. Keywords for page /dashboard/system/basics/icons
-#: concrete/config/install/base/dashboard.xml:565
+#: concrete/config/install/base/dashboard.xml:559
 msgid "logo, favicon, iphone, icon, bookmark"
 msgstr "logo, favicon, iphone, icon, bookmark"
 
 #. Keywords for page /dashboard/system/basics/editor
-#: concrete/config/install/base/dashboard.xml:573
+#: concrete/config/install/base/dashboard.xml:567
 msgid "tinymce, content block, fonts, editor, content, overlay"
 msgstr "TinyMCE, 記事ブロック, フォント, 編集, 記事, オーバーレイ"
 
-#: concrete/config/install/base/dashboard.xml:578
+#: concrete/config/install/base/dashboard.xml:572
 msgid "Languages"
 msgstr "言語"
 
 #. Keywords for page /dashboard/system/basics/multilingual
-#: concrete/config/install/base/dashboard.xml:581
+#: concrete/config/install/base/dashboard.xml:575
 msgid "translate, translation, internationalization, multilingual"
 msgstr "翻訳, 多言語, マルチリンガル, translate, translation, internationalization, multilingual"
 
 #. Keywords for page /dashboard/system/basics/timezone
-#: concrete/config/install/base/dashboard.xml:589
+#: concrete/config/install/base/dashboard.xml:583
 msgid "timezone, profile, locale"
 msgstr "タイムゾーン、プロフィール、場所"
 
-#: concrete/config/install/base/dashboard.xml:594
+#: concrete/config/install/base/dashboard.xml:588
 msgid "Interface Preferences"
 msgstr "インターフェイス設定"
 
 #. Keywords for page /dashboard/system/basics/images
-#: concrete/config/install/base/dashboard.xml:597
+#: concrete/config/install/base/dashboard.xml:591
 msgid "interface, quick nav, dashboard background, background image"
 msgstr "interface, quick nav, dashboard background, background image"
 
-#: concrete/config/install/base/dashboard.xml:603
+#: concrete/config/install/base/dashboard.xml:597
 msgid "SEO & Statistics"
 msgstr "SEOと統計"
 
-#: concrete/config/install/base/dashboard.xml:603
+#: concrete/config/install/base/dashboard.xml:597
 msgid "Enable pretty URLs, statistics and tracking codes."
 msgstr "プリティURL、統計、トラッキングコードを有効にします。"
 
-#: concrete/config/install/base/dashboard.xml:605
+#: concrete/config/install/base/dashboard.xml:599
 msgid "Pretty URLs"
 msgstr "プリティーURL"
 
 #. Keywords for page /dashboard/system/seo/urls
-#: concrete/config/install/base/dashboard.xml:608
+#: concrete/config/install/base/dashboard.xml:602
 msgid "vanity, pretty url, seo, pageview, view"
 msgstr "vanity, pretty url, seo, pageview, view"
 
-#: concrete/config/install/base/dashboard.xml:613
+#: concrete/config/install/base/dashboard.xml:607
 msgid "Bulk SEO Updater"
 msgstr "一括SEOアップデーター"
 
 #. Keywords for page /dashboard/system/seo/bulk
-#: concrete/config/install/base/dashboard.xml:616
+#: concrete/config/install/base/dashboard.xml:610
 msgid "bulk, seo, change keywords, engine, optimization, search"
 msgstr "bulk, seo, change keywords, engine, optimization, search"
 
 #. Keywords for page /dashboard/system/seo/codes
-#: concrete/config/install/base/dashboard.xml:624
+#: concrete/config/install/base/dashboard.xml:618
 msgid "traffic, statistics, google analytics, quant, pageviews, hits"
 msgstr "traffic, statistics, google analytics, quant, pageviews, hits"
 
-#: concrete/config/install/base/dashboard.xml:629
+#: concrete/config/install/base/dashboard.xml:623
 msgid "Excluded URL Word List"
 msgstr "URL除外語の一覧"
 
 #. Keywords for page /dashboard/system/seo/excluded
-#: concrete/config/install/base/dashboard.xml:632
+#: concrete/config/install/base/dashboard.xml:626
 msgid "pretty, slug"
 msgstr "URL, スラッグ, slug"
 
 #. Keywords for page /dashboard/system/seo/statistics
-#: concrete/config/install/base/dashboard.xml:640
+#: concrete/config/install/base/dashboard.xml:634
 msgid "turn off statistics, tracking, statistics, pageviews, hits"
 msgstr "turn off statistics, tracking, statistics, pageviews, hits"
 
-#: concrete/config/install/base/dashboard.xml:645
+#: concrete/config/install/base/dashboard.xml:639
 msgid "Search Index"
 msgstr "検索インデックス"
 
 #. Keywords for page /dashboard/system/seo/searchindex
-#: concrete/config/install/base/dashboard.xml:648
+#: concrete/config/install/base/dashboard.xml:642
 msgid "configure search, site search, search option"
 msgstr "検索、サイト検索、検索オプションを設定する"
 
-#: concrete/config/install/base/dashboard.xml:655
+#: concrete/config/install/base/dashboard.xml:649
 msgid "File Manager Permissions"
 msgstr "ファイルマネージャー権限"
 
 #. Keywords for page /dashboard/system/files/permissions
-#: concrete/config/install/base/dashboard.xml:658
+#: concrete/config/install/base/dashboard.xml:652
 msgid "file options, file manager, upload, modify"
 msgstr "file options, file manager, upload, modify"
 
 #. Keywords for page /dashboard/system/files/filetypes
-#: concrete/config/install/base/dashboard.xml:666
+#: concrete/config/install/base/dashboard.xml:660
 msgid "security, files, media, extension, manager, upload"
 msgstr "セキュリティ、ファイル、メディア、拡張、管理、アップロード"
 
 #. Keywords for page /dashboard/system/files/thumbnails
-#: concrete/config/install/base/dashboard.xml:674
+#: concrete/config/install/base/dashboard.xml:668
 msgid "images, picture, responsive, retina"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:679
+#: concrete/config/install/base/dashboard.xml:673
 msgid "File Storage Locations"
 msgstr "ファイル保存場所"
 
 #. Keywords for page /dashboard/system/files/storage
-#: concrete/config/install/base/dashboard.xml:682
+#: concrete/config/install/base/dashboard.xml:676
 msgid "security, alternate storage, hide files"
 msgstr "セキュリティ、代替ストレージ、非表示ファイル"
 
-#: concrete/config/install/base/dashboard.xml:688
+#: concrete/config/install/base/dashboard.xml:682
 msgid "Optimization"
 msgstr "最適化"
 
-#: concrete/config/install/base/dashboard.xml:688
+#: concrete/config/install/base/dashboard.xml:682
 msgid "Keep your site running well."
 msgstr "あなたのサイトがうまく動作しておいてください。"
 
-#: concrete/config/install/base/dashboard.xml:690
+#: concrete/config/install/base/dashboard.xml:684
 msgid "Cache & Speed Settings"
 msgstr "キャッシュとスピード設定"
 
 #. Keywords for page /dashboard/system/optimization/cache
-#: concrete/config/install/base/dashboard.xml:693
+#: concrete/config/install/base/dashboard.xml:687
 msgid ""
 "cache option, change cache, override, turn on cache, turn off cache, no "
 "cache, page cache, caching"
 msgstr "cache option, change cache, override, turn on cache, turn off cache, no cache, page cache, caching"
 
 #. Keywords for page /dashboard/system/optimization/clearcache
-#: concrete/config/install/base/dashboard.xml:703
+#: concrete/config/install/base/dashboard.xml:695
 msgid "cache option, turn off cache, no cache, page cache, caching"
 msgstr "cache option, turn off cache, no cache, page cache, caching"
 
-#: concrete/config/install/base/dashboard.xml:708
+#: concrete/config/install/base/dashboard.xml:700
 msgid "Automated Jobs"
 msgstr "自動実行ジョブ"
 
 #. Keywords for page /dashboard/system/optimization/jobs
-#: concrete/config/install/base/dashboard.xml:711
+#: concrete/config/install/base/dashboard.xml:703
 msgid ""
 "index search, reindex search, build sitemap, sitemap.xml, clear old "
 "versions, page versions, remove old"
 msgstr "index search, reindex search, build sitemap, sitemap.xml, clear old versions, page versions, remove old"
 
-#: concrete/config/install/base/dashboard.xml:720
+#: concrete/config/install/base/dashboard.xml:710
 msgid "Permissions & Access"
 msgstr "権限とアクセス"
 
-#: concrete/config/install/base/dashboard.xml:720
+#: concrete/config/install/base/dashboard.xml:710
 msgid "Control who sees and edits your site."
 msgstr "誰がサイトを閲覧したり編集したりできるかを管理します。"
 
 #. Keywords for page /dashboard/system/permissions/site
-#: concrete/config/install/base/dashboard.xml:725
+#: concrete/config/install/base/dashboard.xml:715
 msgid "editors, hide site, offline, private, public, access"
 msgstr "エディター, サイトを隠す, オフライン, 保護, 公開, アクセス"
 
 #. Keywords for page /dashboard/system/permissions/tasks
-#: concrete/config/install/base/dashboard.xml:734
+#: concrete/config/install/base/dashboard.xml:724
 msgid "security, actions, administrator, admin, package, marketplace, search"
 msgstr "セキュリティ、アクション、管理者、パッケージ、マーケットプレイス、検索"
 
-#: concrete/config/install/base/dashboard.xml:742
+#: concrete/config/install/base/dashboard.xml:732
 msgid "Advanced Permissions"
 msgstr "上級権限モード"
 
-#: concrete/config/install/base/dashboard.xml:745
+#: concrete/config/install/base/dashboard.xml:735
 msgid "IP Blacklist"
 msgstr "IPブラックリスト"
 
 #. Keywords for page /dashboard/system/permissions/blacklist
-#: concrete/config/install/base/dashboard.xml:748
+#: concrete/config/install/base/dashboard.xml:738
 msgid "security, lock ip, lock out, block ip, address, restrict, access"
 msgstr "security, lock ip, lock out, block ip, address, restrict, access"
 
-#: concrete/config/install/base/dashboard.xml:753
+#: concrete/config/install/base/dashboard.xml:743
 msgid "Captcha Setup"
 msgstr "Captcha設定"
 
 #. Keywords for page /dashboard/system/permissions/captcha
-#: concrete/config/install/base/dashboard.xml:756
+#: concrete/config/install/base/dashboard.xml:746
 msgid "security, registration"
 msgstr "security, registration"
 
-#: concrete/config/install/base/dashboard.xml:761
+#: concrete/config/install/base/dashboard.xml:751
 msgid "Spam Control"
 msgstr "スパムコントロール"
 
 #. Keywords for page /dashboard/system/permissions/antispam
-#: concrete/config/install/base/dashboard.xml:764
+#: concrete/config/install/base/dashboard.xml:754
 msgid "antispam, block spam, security"
 msgstr "アンチスパム、スパムブロック、セキュリティ"
 
 #. Keywords for page /dashboard/system/permissions/maintenance
-#: concrete/config/install/base/dashboard.xml:772
+#: concrete/config/install/base/dashboard.xml:762
 msgid "lock site, under construction, hide, hidden"
 msgstr "lock site, under construction, hide, hidden"
 
-#: concrete/config/install/base/dashboard.xml:779
+#: concrete/config/install/base/dashboard.xml:769
 msgid "Login & Registration"
 msgstr "ログインとユーザー登録"
 
-#: concrete/config/install/base/dashboard.xml:779
+#: concrete/config/install/base/dashboard.xml:769
 msgid "Change login behaviors and setup public profiles."
 msgstr "ログイン動作や公開プロフィールの設定を変更します。"
 
-#: concrete/config/install/base/dashboard.xml:781
+#: concrete/config/install/base/dashboard.xml:771
 msgid "Login Destination"
 msgstr "ログイン後スタートページ"
 
 #. Keywords for page /dashboard/system/registration/postlogin
-#: concrete/config/install/base/dashboard.xml:784
+#: concrete/config/install/base/dashboard.xml:774
 msgid "profile, login, redirect, specific, dashboard, administrators"
 msgstr "profile, login, redirect, specific, dashboard, administrators"
 
-#: concrete/config/install/base/dashboard.xml:789
+#: concrete/config/install/base/dashboard.xml:779
 msgid "Public Profiles"
 msgstr "公開プロフィール"
 
 #. Keywords for page /dashboard/system/registration/profiles
-#: concrete/config/install/base/dashboard.xml:792
+#: concrete/config/install/base/dashboard.xml:782
 msgid "member profile, member page, community, forums, social, avatar"
 msgstr "メンバープロフィール, メンバーページ, コミュニティ, フォーラム, ソーシャル, アバター"
 
 #. Keywords for page /dashboard/system/registration/open
-#: concrete/config/install/base/dashboard.xml:800
+#: concrete/config/install/base/dashboard.xml:790
 msgid "signup, new user, community, public registration, public, registration"
 msgstr ""
 
 #. Keywords for page /dashboard/system/registration/authentication
-#: concrete/config/install/base/dashboard.xml:808
+#: concrete/config/install/base/dashboard.xml:798
 msgid "auth, authentication, types, oauth, facebook, login, registration"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:814
+#: concrete/config/install/base/dashboard.xml:804
 msgid "Control how your site send and processes mail."
 msgstr "サイトがどのようにメールを送ったり処理するかを管理します。"
 
 #. Keywords for page /dashboard/system/mail
-#: concrete/config/install/base/dashboard.xml:817
+#: concrete/config/install/base/dashboard.xml:807
 msgid "smtp, mail settings"
 msgstr "SMTP、メール設定"
 
-#: concrete/config/install/base/dashboard.xml:822
+#: concrete/config/install/base/dashboard.xml:812
 msgid "SMTP Method"
 msgstr "SMTP メール送信方法"
 
 #. Keywords for page /dashboard/system/mail/method
-#: concrete/config/install/base/dashboard.xml:825
+#: concrete/config/install/base/dashboard.xml:815
 msgid "email server, mail settings, mail configuration, external, internal"
 msgstr "email server, mail settings, mail configuration, external, internal"
 
-#: concrete/config/install/base/dashboard.xml:830
+#: concrete/config/install/base/dashboard.xml:820
 msgid "Test Mail Settings"
 msgstr "メール設定テスト"
 
 #. Keywords for page /dashboard/system/mail/method/test
-#: concrete/config/install/base/dashboard.xml:833
+#: concrete/config/install/base/dashboard.xml:823
 msgid "test smtp, test mail"
 msgstr "SMTP テスト, メールテスト"
 
-#: concrete/config/install/base/dashboard.xml:838
+#: concrete/config/install/base/dashboard.xml:828
 msgid "Email Importers"
 msgstr "メールインポーター"
 
 #. Keywords for page /dashboard/system/mail/importers
-#: concrete/config/install/base/dashboard.xml:841
+#: concrete/config/install/base/dashboard.xml:831
 msgid ""
 "email server, mail settings, mail configuration, private message, message "
 "system, import, email, message"
 msgstr "email server, mail settings, mail configuration, private message, message system, import, email, message"
 
-#: concrete/config/install/base/dashboard.xml:850
+#: concrete/config/install/base/dashboard.xml:838
 msgid "Conversations"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:850
+#: concrete/config/install/base/dashboard.xml:838
 msgid "Manage your conversations settings"
 msgstr ""
 
 #. Keywords for page /dashboard/system/conversations
-#: concrete/config/install/base/dashboard.xml:853
+#: concrete/config/install/base/dashboard.xml:841
 msgid "conversations"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:858
+#: concrete/config/install/base/dashboard.xml:846
 msgid "Conversations Editor"
 msgstr ""
 
 #. Keywords for page /dashboard/system/conversations/editor
-#: concrete/config/install/base/dashboard.xml:861
+#: concrete/config/install/base/dashboard.xml:849
 msgid "conversations editor, editor"
 msgstr ""
 
 #. Keywords for page /dashboard/system/conversations/points
-#: concrete/config/install/base/dashboard.xml:869
+#: concrete/config/install/base/dashboard.xml:857
 msgid "conversations ratings, ratings, community, community points"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:874
+#: concrete/config/install/base/dashboard.xml:862
 msgid "Banned Words"
 msgstr ""
 
 #. Keywords for page /dashboard/system/conversations/bannedwords
-#: concrete/config/install/base/dashboard.xml:877
+#: concrete/config/install/base/dashboard.xml:865
 msgid ""
 "conversations bad words, banned words, banned, bad words, bad, words, list"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:883
+#: concrete/config/install/base/dashboard.xml:871
 msgid "Setup attributes for pages, users, files and more."
 msgstr "ページ、ユーザー、ファイルなどの属性の設定"
 
 #. Keywords for page /dashboard/system/attributes
-#: concrete/config/install/base/dashboard.xml:886
+#: concrete/config/install/base/dashboard.xml:874
 msgid "attribute configuration"
 msgstr "属性設定"
 
-#: concrete/config/install/base/dashboard.xml:891
+#: concrete/config/install/base/dashboard.xml:879
 msgid "Group attributes into sets for easier organization"
 msgstr "グループをセットにまとめて整理しやすく。"
 
 #. Keywords for page /dashboard/system/attributes/sets
-#: concrete/config/install/base/dashboard.xml:894
+#: concrete/config/install/base/dashboard.xml:882
 msgid "attributes, sets"
 msgstr "属性, セット"
 
-#: concrete/config/install/base/dashboard.xml:899
+#: concrete/config/install/base/dashboard.xml:887
 msgid "Types"
 msgstr "種類"
 
-#: concrete/config/install/base/dashboard.xml:899
+#: concrete/config/install/base/dashboard.xml:887
 msgid "Choose which attribute types are available for different items."
 msgstr "属性タイプが異なる項目に利用できるものを選択してください。"
 
 #. Keywords for page /dashboard/system/attributes/types
-#: concrete/config/install/base/dashboard.xml:902
+#: concrete/config/install/base/dashboard.xml:890
 msgid "attributes, types"
 msgstr "属性, タイプ"
 
 #. Keywords for page /dashboard/system/attributes/topics
-#: concrete/config/install/base/dashboard.xml:910
+#: concrete/config/install/base/dashboard.xml:898
 msgid "topics, tags, taxonomy"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:918
+#: concrete/config/install/base/dashboard.xml:906
 msgid "Advanced settings for web developers."
 msgstr "Web開発者向けの高度な設定"
 
-#: concrete/config/install/base/dashboard.xml:926
+#: concrete/config/install/base/dashboard.xml:914
 msgid "Environment Information"
 msgstr "環境情報"
 
 #. Keywords for page /dashboard/system/environment/info
-#: concrete/config/install/base/dashboard.xml:929
+#: concrete/config/install/base/dashboard.xml:917
 msgid "overrides, system info, debug, support, help"
 msgstr "オーバーライド, システム情報, デバッグ, サポート, ヘルプ"
 
-#: concrete/config/install/base/dashboard.xml:934
+#: concrete/config/install/base/dashboard.xml:922
 msgid "Debug Settings"
 msgstr "デバッグ設定"
 
 #. Keywords for page /dashboard/system/environment/debug
-#: concrete/config/install/base/dashboard.xml:937
+#: concrete/config/install/base/dashboard.xml:925
 msgid "errors, exceptions, develop, support, help"
 msgstr "errors, exceptions, develop, support, help"
 
-#: concrete/config/install/base/dashboard.xml:942
+#: concrete/config/install/base/dashboard.xml:930
 msgid "Logging Settings"
 msgstr "ログ設定"
 
 #. Keywords for page /dashboard/system/environment/logging
-#: concrete/config/install/base/dashboard.xml:945
+#: concrete/config/install/base/dashboard.xml:933
 msgid "email, logging, logs, smtp, pop, errors, mysql, log"
 msgstr "メール, ロギング, ログ, SMTP, ポップ, エラー, MySQL, ログ"
 
-#: concrete/config/install/base/dashboard.xml:951
+#: concrete/config/install/base/dashboard.xml:939
 msgid "Proxy Server"
 msgstr "プロキシサーバー"
 
 #. Keywords for page /dashboard/system/environment/proxy
-#: concrete/config/install/base/dashboard.xml:954
+#: concrete/config/install/base/dashboard.xml:942
 msgid "network, proxy server"
 msgstr "ネットワーク、プロキシサーバー"
 
-#: concrete/config/install/base/dashboard.xml:959
+#: concrete/config/install/base/dashboard.xml:947
 msgid "Backup & Restore"
 msgstr "バックアップとリストア"
 
-#: concrete/config/install/base/dashboard.xml:959
+#: concrete/config/install/base/dashboard.xml:947
 msgid "Backup or restore your website."
 msgstr "サイトのバックアップやリストア"
 
 #. Keywords for page /dashboard/system/backup
-#: concrete/config/install/base/dashboard.xml:962
+#: concrete/config/install/base/dashboard.xml:950
 msgid "export, backup, database, sql, mysql, encryption, restore"
 msgstr "export, backup, database, sql, mysql, encryption, restore"
 
-#: concrete/config/install/base/dashboard.xml:967
+#: concrete/config/install/base/dashboard.xml:955
 msgid "Backup Database"
 msgstr "データベースをバックアップ"
 
 #. Keywords for page /dashboard/system/backup/update
-#: concrete/config/install/base/dashboard.xml:972
+#: concrete/config/install/base/dashboard.xml:960
 msgid "upgrade, new version, update"
 msgstr "アップグレード、新バージョン、アップデート"
 
-#: concrete/config/install/base/dashboard.xml:980
+#: concrete/config/install/base/dashboard.xml:968
 msgid "Dashboard Primary + Five"
 msgstr "管理画面 プライマリー + 5"
 
-#: concrete/config/install/base/dashboard.xml:981
+#: concrete/config/install/base/dashboard.xml:969
 msgid "Dashboard Header + Four Column"
 msgstr "管理画面 ヘッダー + 4カラム"
 
-#: concrete/config/install/base/dashboard.xml:985
+#: concrete/config/install/base/dashboard.xml:973
 msgctxt "PageTemplateName"
 msgid "Stack"
 msgstr "スタック"
 
-#: concrete/config/install/base/dashboard.xml:986
+#: concrete/config/install/base/dashboard.xml:974
 msgctxt "PageTemplateName"
 msgid "Dashboard Primary + Five"
 msgstr "管理画面 プライマリー + 5"
 
-#: concrete/config/install/base/dashboard.xml:987
+#: concrete/config/install/base/dashboard.xml:975
 msgctxt "PageTemplateName"
 msgid "Dashboard Header + Four Column"
 msgstr "管理画面 ヘッダー + 4カラム"
 
-#: concrete/config/install/base/dashboard.xml:992
+#: concrete/config/install/base/dashboard.xml:980
 msgid "Welcome to concrete5"
 msgstr "concrete5へようこそ"
 
-#: concrete/config/install/base/dashboard.xml:992
+#: concrete/config/install/base/dashboard.xml:980
 msgid ""
 "Learn about how to use concrete5, how to develop for concrete5, and get "
 "general help."
 msgstr "concrete5 の使い方、開発方法を学んだり、一般ヘルプを見る"
 
-#: concrete/config/install/base/dashboard.xml:998
+#: concrete/config/install/base/dashboard.xml:986
 msgctxt "AreaName"
 msgid "Header"
 msgstr "ヘッダー"
 
-#: concrete/config/install/base/dashboard.xml:1009
+#: concrete/config/install/base/dashboard.xml:997
 msgctxt "AreaName"
 msgid "Column 1"
 msgstr "コラム1"
 
-#: concrete/config/install/base/dashboard.xml:1023
+#: concrete/config/install/base/dashboard.xml:1011
 msgctxt "AreaName"
 msgid "Column 2"
 msgstr "コラム２"
 
-#: concrete/config/install/base/dashboard.xml:1036
+#: concrete/config/install/base/dashboard.xml:1024
 msgctxt "AreaName"
 msgid "Column 3"
 msgstr "コラム３"
 
-#: concrete/config/install/base/dashboard.xml:1050
+#: concrete/config/install/base/dashboard.xml:1038
 msgctxt "AreaName"
 msgid "Column 4"
 msgstr "コラム４"
 
-#: concrete/config/install/base/dashboard.xml:1076
+#: concrete/config/install/base/dashboard.xml:1064
 msgctxt "AreaName"
 msgid "Primary"
 msgstr "プライマリー"
 
-#: concrete/config/install/base/dashboard.xml:1080
+#: concrete/config/install/base/dashboard.xml:1068
 msgctxt "AreaName"
 msgid "Secondary 1"
 msgstr "セカンダリー1"
 
-#: concrete/config/install/base/dashboard.xml:1089
+#: concrete/config/install/base/dashboard.xml:1077
 msgctxt "AreaName"
 msgid "Secondary 2"
 msgstr "セカンダリー2"
 
-#: concrete/config/install/base/dashboard.xml:1098
+#: concrete/config/install/base/dashboard.xml:1086
 msgctxt "AreaName"
 msgid "Secondary 3"
 msgstr "セカンダリー3"
 
-#: concrete/config/install/base/dashboard.xml:1101
+#: concrete/config/install/base/dashboard.xml:1089
 msgctxt "AreaName"
 msgid "Secondary 4"
 msgstr "セカンダリー 4"
 
-#: concrete/config/install/base/dashboard.xml:1104
+#: concrete/config/install/base/dashboard.xml:1092
 msgctxt "AreaName"
 msgid "Secondary 5"
 msgstr "セカンダリー 5"
@@ -16799,22 +16804,32 @@ msgstr ""
 
 #: concrete/config/install/base/login_registration.xml:20
 #: concrete/config/install/packages/elemental_blank/content.xml:29
-#: concrete/config/install/packages/elemental_full/content.xml:156
-#: concrete/config/install/packages/elemental_full/content.xml:247
-#: concrete/config/install/packages/elemental_full/content.xml:350
-#: concrete/config/install/packages/elemental_full/content.xml:618
-#: concrete/config/install/packages/elemental_full/content.xml:908
-#: concrete/config/install/packages/elemental_full/content.xml:926
-#: concrete/config/install/packages/elemental_full/content.xml:1071
-#: concrete/config/install/packages/elemental_full/content.xml:1085
-#: concrete/config/install/packages/elemental_full/content.xml:1254
-#: concrete/config/install/packages/elemental_full/content.xml:1434
-#: concrete/config/install/packages/elemental_full/content.xml:1497
-#: concrete/config/install/packages/elemental_full/content.xml:1533
-#: concrete/config/install/packages/elemental_full/content.xml:1577
-#: concrete/config/install/packages/elemental_full/content.xml:1643
-#: concrete/config/install/packages/elemental_full/content.xml:1711
-#: concrete/config/install/packages/elemental_full/content.xml:1779
+#: concrete/config/install/packages/elemental_full/content.xml:196
+#: concrete/config/install/packages/elemental_full/content.xml:287
+#: concrete/config/install/packages/elemental_full/content.xml:390
+#: concrete/config/install/packages/elemental_full/content.xml:551
+#: concrete/config/install/packages/elemental_full/content.xml:715
+#: concrete/config/install/packages/elemental_full/content.xml:794
+#: concrete/config/install/packages/elemental_full/content.xml:944
+#: concrete/config/install/packages/elemental_full/content.xml:1234
+#: concrete/config/install/packages/elemental_full/content.xml:1252
+#: concrete/config/install/packages/elemental_full/content.xml:1397
+#: concrete/config/install/packages/elemental_full/content.xml:1411
+#: concrete/config/install/packages/elemental_full/content.xml:1580
+#: concrete/config/install/packages/elemental_full/content.xml:1760
+#: concrete/config/install/packages/elemental_full/content.xml:1823
+#: concrete/config/install/packages/elemental_full/content.xml:1859
+#: concrete/config/install/packages/elemental_full/content.xml:1903
+#: concrete/config/install/packages/elemental_full/content.xml:1969
+#: concrete/config/install/packages/elemental_full/content.xml:2037
+#: concrete/config/install/packages/elemental_full/content.xml:2105
+#: concrete/config/install/packages/elemental_full/content.xml:2138
+#: concrete/config/install/packages/elemental_full/content.xml:2191
+#: concrete/config/install/packages/elemental_full/content.xml:2247
+#: concrete/config/install/packages/elemental_full/content.xml:2308
+#: concrete/config/install/packages/elemental_full/content.xml:2364
+#: concrete/config/install/packages/elemental_full/content.xml:2420
+#: concrete/config/install/packages/elemental_full/content.xml:2476
 msgctxt "AreaName"
 msgid "Main"
 msgstr "メイン"
@@ -17988,245 +18003,421 @@ msgstr "サムネイル"
 
 #: concrete/config/install/packages/elemental_full/content.xml:24
 msgctxt "AttributeKeyName"
-msgid "Topic"
-msgstr "トピック"
+msgid "Blog Entry Topics"
+msgstr ""
 
 #: concrete/config/install/packages/elemental_full/content.xml:25
 msgctxt "TreeName"
-msgid "Topics"
-msgstr "トピック"
+msgid "Blog Entries"
+msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:32
+#: concrete/config/install/packages/elemental_full/content.xml:27
+msgctxt "AttributeKeyName"
+msgid "Project Topics"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:28
+msgctxt "TreeName"
+msgid "Projects"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:30
+msgctxt "AttributeKeyName"
+msgid "Client"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:31
+msgctxt "AttributeKeyName"
+msgid "Task"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:34
+msgctxt "SelectAttributeValue"
+msgid "Architecture"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:35
+msgctxt "SelectAttributeValue"
+msgid "Multimedia"
+msgstr "マルチメディア"
+
+#: concrete/config/install/packages/elemental_full/content.xml:36
+msgctxt "SelectAttributeValue"
+msgid "Design"
+msgstr "デザイン"
+
+#: concrete/config/install/packages/elemental_full/content.xml:37
+msgctxt "SelectAttributeValue"
+msgid "Production"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:38
+msgctxt "SelectAttributeValue"
+msgid "Development"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:39
+msgctxt "SelectAttributeValue"
+msgid "Quality Assurance"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:43
+msgctxt "AttributeKeyName"
+msgid "Skills"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:46
+msgctxt "SelectAttributeValue"
+msgid "HTML"
+msgstr "HTML"
+
+#: concrete/config/install/packages/elemental_full/content.xml:47
+msgctxt "SelectAttributeValue"
+msgid "JavaScript"
+msgstr "JavaScript"
+
+#: concrete/config/install/packages/elemental_full/content.xml:48
+msgctxt "SelectAttributeValue"
+msgid "PHP"
+msgstr "PHP"
+
+#: concrete/config/install/packages/elemental_full/content.xml:49
+msgctxt "SelectAttributeValue"
+msgid "Database"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:50
+msgctxt "SelectAttributeValue"
+msgid "CSS"
+msgstr "CSS"
+
+#: concrete/config/install/packages/elemental_full/content.xml:51
+msgctxt "SelectAttributeValue"
+msgid "Ruby"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:52
+msgctxt "SelectAttributeValue"
+msgid "Java"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:53
+msgctxt "SelectAttributeValue"
+msgid "iOS/Android/App Development"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:54
+msgctxt "SelectAttributeValue"
+msgid "Photoshop"
+msgstr "Photoshop"
+
+#: concrete/config/install/packages/elemental_full/content.xml:55
+msgctxt "SelectAttributeValue"
+msgid "Python"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:56
+msgctxt "SelectAttributeValue"
+msgid "Writing"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:66
 msgctxt "AttributeSetName"
 msgid "Jobs"
 msgstr "ジョブ"
 
-#: concrete/config/install/packages/elemental_full/content.xml:36
+#: concrete/config/install/packages/elemental_full/content.xml:70
 msgctxt "AttributeSetName"
 msgid "Blog"
 msgstr "ブログ"
 
-#: concrete/config/install/packages/elemental_full/content.xml:42
+#: concrete/config/install/packages/elemental_full/content.xml:73
+msgctxt "AttributeSetName"
+msgid "Portfolio"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:82
 msgctxt "PageTemplateName"
 msgid "Blank"
 msgstr "空白"
 
 #: concrete/config/install/packages/elemental_blank/content.xml:7
-#: concrete/config/install/packages/elemental_full/content.xml:43
+#: concrete/config/install/packages/elemental_full/content.xml:83
 msgctxt "PageTemplateName"
 msgid "Full"
 msgstr "すべて"
 
-#: concrete/config/install/packages/elemental_full/content.xml:44
+#: concrete/config/install/packages/elemental_full/content.xml:84
 msgctxt "PageTemplateName"
 msgid "Left Sidebar"
 msgstr "左サイドバー"
 
-#: concrete/config/install/packages/elemental_full/content.xml:45
+#: concrete/config/install/packages/elemental_full/content.xml:85
 msgctxt "PageTemplateName"
 msgid "Right Sidebar"
 msgstr "右サイドバー"
 
-#: concrete/config/install/packages/elemental_full/content.xml:48
+#: concrete/config/install/packages/elemental_full/content.xml:88
 msgid "Empty Page"
 msgstr "空白のページ"
 
 #: concrete/config/install/packages/elemental_blank/content.xml:15
-#: concrete/config/install/packages/elemental_full/content.xml:53
-#: concrete/config/install/packages/elemental_full/content.xml:84
+#: concrete/config/install/packages/elemental_full/content.xml:93
+#: concrete/config/install/packages/elemental_full/content.xml:124
 msgctxt "PageTypeComposerFormLayoutSetName"
 msgid "Basics"
 msgstr "基本"
 
 #: concrete/config/install/packages/elemental_blank/content.xml:16
-#: concrete/config/install/packages/elemental_full/content.xml:55
+#: concrete/config/install/packages/elemental_full/content.xml:95
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Page Name"
 msgstr "ページ名"
 
-#: concrete/config/install/packages/elemental_full/content.xml:77
+#: concrete/config/install/packages/elemental_full/content.xml:117
 msgid "Job Posting"
 msgstr "求人の投稿"
 
-#: concrete/config/install/packages/elemental_full/content.xml:86
+#: concrete/config/install/packages/elemental_full/content.xml:126
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Job Name"
 msgstr "仕事の名前"
 
-#: concrete/config/install/packages/elemental_full/content.xml:88
+#: concrete/config/install/packages/elemental_full/content.xml:128
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Posting Date"
 msgstr "投稿日"
 
-#: concrete/config/install/packages/elemental_full/content.xml:90
+#: concrete/config/install/packages/elemental_full/content.xml:130
 msgctxt "PageTypeComposerFormLayoutSetName"
 msgid "About This Job"
 msgstr "この仕事について"
 
-#: concrete/config/install/packages/elemental_full/content.xml:95
+#: concrete/config/install/packages/elemental_full/content.xml:135
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Brief Description"
 msgstr "簡単な説明"
 
-#: concrete/config/install/packages/elemental_full/content.xml:97
+#: concrete/config/install/packages/elemental_full/content.xml:137
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Job Details"
 msgstr "求人詳細"
 
-#: concrete/config/install/packages/elemental_full/content.xml:105
-#: concrete/config/install/packages/elemental_full/content.xml:1453
-#: concrete/config/install/packages/elemental_full/content.xml:1516
-#: concrete/config/install/packages/elemental_full/content.xml:1655
-#: concrete/config/install/packages/elemental_full/content.xml:1723
-#: concrete/config/install/packages/elemental_full/content.xml:1791
+#: concrete/config/install/packages/elemental_full/content.xml:145
+#: concrete/config/install/packages/elemental_full/content.xml:663
+#: concrete/config/install/packages/elemental_full/content.xml:742
+#: concrete/config/install/packages/elemental_full/content.xml:1779
+#: concrete/config/install/packages/elemental_full/content.xml:1842
+#: concrete/config/install/packages/elemental_full/content.xml:1981
+#: concrete/config/install/packages/elemental_full/content.xml:2049
+#: concrete/config/install/packages/elemental_full/content.xml:2117
+#: concrete/config/install/packages/elemental_full/content.xml:2179
+#: concrete/config/install/packages/elemental_full/content.xml:2235
+#: concrete/config/install/packages/elemental_full/content.xml:2296
+#: concrete/config/install/packages/elemental_full/content.xml:2352
+#: concrete/config/install/packages/elemental_full/content.xml:2408
+#: concrete/config/install/packages/elemental_full/content.xml:2464
 msgctxt "AreaName"
 msgid "Page Header"
 msgstr "ページヘッダー"
 
-#: concrete/config/install/packages/elemental_full/content.xml:117
-#: concrete/config/install/packages/elemental_full/content.xml:365
-#: concrete/config/install/packages/elemental_full/content.xml:1458
-#: concrete/config/install/packages/elemental_full/content.xml:1521
-#: concrete/config/install/packages/elemental_full/content.xml:1658
-#: concrete/config/install/packages/elemental_full/content.xml:1726
-#: concrete/config/install/packages/elemental_full/content.xml:1794
+#: concrete/config/install/packages/elemental_full/content.xml:157
+#: concrete/config/install/packages/elemental_full/content.xml:405
+#: concrete/config/install/packages/elemental_full/content.xml:675
+#: concrete/config/install/packages/elemental_full/content.xml:754
+#: concrete/config/install/packages/elemental_full/content.xml:1784
+#: concrete/config/install/packages/elemental_full/content.xml:1847
+#: concrete/config/install/packages/elemental_full/content.xml:1984
+#: concrete/config/install/packages/elemental_full/content.xml:2052
+#: concrete/config/install/packages/elemental_full/content.xml:2120
+#: concrete/config/install/packages/elemental_full/content.xml:2184
+#: concrete/config/install/packages/elemental_full/content.xml:2240
+#: concrete/config/install/packages/elemental_full/content.xml:2301
+#: concrete/config/install/packages/elemental_full/content.xml:2357
+#: concrete/config/install/packages/elemental_full/content.xml:2413
+#: concrete/config/install/packages/elemental_full/content.xml:2469
 msgctxt "AreaName"
 msgid "Sidebar"
 msgstr "サイドバー"
 
-#: concrete/config/install/packages/elemental_full/content.xml:224
-#: concrete/config/install/packages/elemental_full/content.xml:463
-#: concrete/config/install/packages/elemental_full/content.xml:1464
-#: concrete/config/install/packages/elemental_full/content.xml:1527
-#: concrete/config/install/packages/elemental_full/content.xml:1615
-#: concrete/config/install/packages/elemental_full/content.xml:1683
-#: concrete/config/install/packages/elemental_full/content.xml:1751
+#: concrete/config/install/packages/elemental_full/content.xml:264
+#: concrete/config/install/packages/elemental_full/content.xml:503
+#: concrete/config/install/packages/elemental_full/content.xml:722
+#: concrete/config/install/packages/elemental_full/content.xml:801
+#: concrete/config/install/packages/elemental_full/content.xml:1790
+#: concrete/config/install/packages/elemental_full/content.xml:1853
+#: concrete/config/install/packages/elemental_full/content.xml:1941
+#: concrete/config/install/packages/elemental_full/content.xml:2009
+#: concrete/config/install/packages/elemental_full/content.xml:2077
+#: concrete/config/install/packages/elemental_full/content.xml:2202
+#: concrete/config/install/packages/elemental_full/content.xml:2258
+#: concrete/config/install/packages/elemental_full/content.xml:2319
+#: concrete/config/install/packages/elemental_full/content.xml:2375
+#: concrete/config/install/packages/elemental_full/content.xml:2431
+#: concrete/config/install/packages/elemental_full/content.xml:2487
 msgctxt "AreaName"
 msgid "Page Footer"
 msgstr "ページフッター"
 
-#: concrete/config/install/packages/elemental_full/content.xml:232
-#: concrete/config/install/packages/elemental_full/content.xml:1571
+#: concrete/config/install/packages/elemental_full/content.xml:272
+#: concrete/config/install/packages/elemental_full/content.xml:1897
 msgid "Blog"
 msgstr "ブログ"
 
-#: concrete/config/install/packages/elemental_full/content.xml:239
+#: concrete/config/install/packages/elemental_full/content.xml:279
 msgctxt "PageTypeComposerFormLayoutSetName"
 msgid "Details"
 msgstr "詳細"
 
-#: concrete/config/install/packages/elemental_full/content.xml:240
+#: concrete/config/install/packages/elemental_full/content.xml:280
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Blog Name"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:321
-#: concrete/config/install/packages/elemental_full/content.xml:882
-#: concrete/config/install/packages/elemental_full/content.xml:1583
+#: concrete/config/install/packages/elemental_full/content.xml:361
+#: concrete/config/install/packages/elemental_full/content.xml:627
+#: concrete/config/install/packages/elemental_full/content.xml:1208
+#: concrete/config/install/packages/elemental_full/content.xml:1909
+#: concrete/config/install/packages/elemental_full/content.xml:2145
 msgctxt "AreaName"
 msgid "Main Footer"
 msgstr "メインフッター"
 
-#: concrete/config/install/packages/elemental_full/content.xml:329
+#: concrete/config/install/packages/elemental_full/content.xml:369
 msgid "Blog Entry"
 msgstr "ブログ記事"
 
-#: concrete/config/install/packages/elemental_full/content.xml:336
+#: concrete/config/install/packages/elemental_full/content.xml:376
 msgctxt "PageTypeComposerFormLayoutSetName"
 msgid "Post Details"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:337
+#: concrete/config/install/packages/elemental_full/content.xml:377
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Entry Name"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:338
+#: concrete/config/install/packages/elemental_full/content.xml:378
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Short Description"
 msgstr "短い概要"
 
-#: concrete/config/install/packages/elemental_full/content.xml:339
+#: concrete/config/install/packages/elemental_full/content.xml:379
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Blog"
 msgstr "ブログ"
 
-#: concrete/config/install/packages/elemental_full/content.xml:340
+#: concrete/config/install/packages/elemental_full/content.xml:380
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
-msgid "Topic"
+msgid "Topics"
 msgstr "トピック"
 
 #: concrete/config/install/packages/elemental_blank/content.xml:22
-#: concrete/config/install/packages/elemental_full/content.xml:342
+#: concrete/config/install/packages/elemental_full/content.xml:382
+#: concrete/config/install/packages/elemental_full/content.xml:655
 msgctxt "PageTypeComposerFormLayoutSetName"
 msgid "Content"
 msgstr "記事"
 
-#: concrete/config/install/packages/elemental_full/content.xml:498
+#: concrete/config/install/packages/elemental_full/content.xml:536
+#: concrete/config/install/packages/elemental_full/content.xml:2132
+msgid "Portfolio"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:544
+msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
+msgid "Name"
+msgstr "名前"
+
+#: concrete/config/install/packages/elemental_full/content.xml:635
+msgid "Portfolio Project"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:643
+msgctxt "PageTypeComposerFormLayoutSetName"
+msgid "Page"
+msgstr "ページ"
+
+#: concrete/config/install/packages/elemental_full/content.xml:646
+msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
+msgid "Portfolio"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:648
+msgctxt "PageTypeComposerFormLayoutSetName"
+msgid "Project Data"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:650
+msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
+msgid "Date Completed"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:824
 msgid "Footer Contact"
 msgstr "フッターコンタクト"
 
-#: concrete/config/install/packages/elemental_full/content.xml:499
-#: concrete/config/install/packages/elemental_full/content.xml:513
-#: concrete/config/install/packages/elemental_full/content.xml:527
-#: concrete/config/install/packages/elemental_full/content.xml:541
-#: concrete/config/install/packages/elemental_full/content.xml:554
-#: concrete/config/install/packages/elemental_full/content.xml:566
-#: concrete/config/install/packages/elemental_full/content.xml:586
-#: concrete/config/install/packages/elemental_full/content.xml:603
+#: concrete/config/install/packages/elemental_full/content.xml:825
+#: concrete/config/install/packages/elemental_full/content.xml:839
+#: concrete/config/install/packages/elemental_full/content.xml:853
+#: concrete/config/install/packages/elemental_full/content.xml:867
+#: concrete/config/install/packages/elemental_full/content.xml:880
+#: concrete/config/install/packages/elemental_full/content.xml:892
+#: concrete/config/install/packages/elemental_full/content.xml:912
+#: concrete/config/install/packages/elemental_full/content.xml:929
 msgid "Main"
 msgstr "メイン"
 
-#: concrete/config/install/packages/elemental_full/content.xml:512
+#: concrete/config/install/packages/elemental_full/content.xml:838
 msgid "Footer Legal"
 msgstr "フッター規約"
 
-#: concrete/config/install/packages/elemental_full/content.xml:526
+#: concrete/config/install/packages/elemental_full/content.xml:852
 msgid "Footer Navigation"
 msgstr "フッターナビゲーション"
 
-#: concrete/config/install/packages/elemental_full/content.xml:540
+#: concrete/config/install/packages/elemental_full/content.xml:866
 msgid "Footer Site Title"
 msgstr "フッターサイトタイトル"
 
-#: concrete/config/install/packages/elemental_full/content.xml:553
+#: concrete/config/install/packages/elemental_full/content.xml:879
 msgid "Footer Social"
 msgstr "フッターソーシャル"
 
-#: concrete/config/install/packages/elemental_full/content.xml:565
+#: concrete/config/install/packages/elemental_full/content.xml:891
 msgid "Header Navigation"
 msgstr "ヘッダーナビゲーション"
 
-#: concrete/config/install/packages/elemental_full/content.xml:585
+#: concrete/config/install/packages/elemental_full/content.xml:911
 msgid "Header Search"
 msgstr "ヘッダー検索"
 
-#: concrete/config/install/packages/elemental_full/content.xml:602
+#: concrete/config/install/packages/elemental_full/content.xml:928
 msgid "Header Site Title"
 msgstr "ヘッダーサイトタイトル"
 
-#: concrete/config/install/packages/elemental_full/content.xml:925
+#: concrete/config/install/packages/elemental_full/content.xml:1251
 msgid "About"
 msgstr "概要"
 
-#: concrete/config/install/packages/elemental_full/content.xml:1065
+#: concrete/config/install/packages/elemental_full/content.xml:1391
 msgid "Blank Page"
 msgstr "空白のページ"
 
-#: concrete/config/install/packages/elemental_full/content.xml:1084
+#: concrete/config/install/packages/elemental_full/content.xml:1410
 msgid "Contact Us"
 msgstr "お問い合わせ"
 
-#: concrete/config/install/packages/elemental_full/content.xml:1253
+#: concrete/config/install/packages/elemental_full/content.xml:1579
 msgid "Careers"
 msgstr "求人"
 
-#: concrete/config/install/packages/elemental_full/content.xml:1408
+#: concrete/config/install/packages/elemental_full/content.xml:1734
 msgid "Web Developer"
 msgstr "ウェブデベロッパー"
 
-#: concrete/config/install/packages/elemental_full/content.xml:1408
-#: concrete/config/install/packages/elemental_full/content.xml:1471
+#: concrete/config/install/packages/elemental_full/content.xml:1734
+#: concrete/config/install/packages/elemental_full/content.xml:1797
 msgid ""
 "Curabitur sagittis elementum felis at sodales. Nullam fermentum at urna quis"
 " accumsan. Nam bibendum leo nisi, lacinia molestie arcu consequat quis. "
@@ -18236,15 +18427,15 @@ msgid ""
 "consectetur lacus."
 msgstr "親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でもない。新築の二階から首を出していたら、同級生の一人が冗談に、いくら威張っても、そこから飛び降りる事は出来まい。弱虫やーい。と囃したからである。小使に負ぶさって帰って来た時、おやじが大きな眼をして二階ぐらいから飛び降りて腰を抜かす奴があるかと云ったから、この次は抜かさずに飛んで見せますと答えた。（青空文庫より）"
 
-#: concrete/config/install/packages/elemental_full/content.xml:1471
+#: concrete/config/install/packages/elemental_full/content.xml:1797
 msgid "Sales Associate"
 msgstr "セールスアソシエイト"
 
-#: concrete/config/install/packages/elemental_full/content.xml:1587
+#: concrete/config/install/packages/elemental_full/content.xml:1913
 msgid "Hello World!"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1587
+#: concrete/config/install/packages/elemental_full/content.xml:1913
 msgid ""
 "Pellentesque ultricies ligula vel neque dictum, eu mollis tortor adipiscing."
 " Etiam congue, est vel tincidunt vestibulum, nunc nunc porta nulla, at "
@@ -18252,40 +18443,40 @@ msgid ""
 "mattis aliquam ante dictum."
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1611
-#: concrete/config/install/packages/elemental_full/content.xml:1747
+#: concrete/config/install/packages/elemental_full/content.xml:1937
+#: concrete/config/install/packages/elemental_full/content.xml:2073
 msgctxt "Topic"
 msgid "/Projects"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1666
-#: concrete/config/install/packages/elemental_full/content.xml:1734
-#: concrete/config/install/packages/elemental_full/content.xml:1802
+#: concrete/config/install/packages/elemental_full/content.xml:1992
+#: concrete/config/install/packages/elemental_full/content.xml:2060
+#: concrete/config/install/packages/elemental_full/content.xml:2128
 msgctxt "AreaName"
 msgid "Sidebar Footer"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1670
+#: concrete/config/install/packages/elemental_full/content.xml:1996
 msgid "Another Blog Post"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1670
+#: concrete/config/install/packages/elemental_full/content.xml:1996
 msgid ""
 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet "
 "consectetur lacus. Vestibulum neque lectus, egestas non cursus vitae, "
 "aliquam at magna."
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1679
+#: concrete/config/install/packages/elemental_full/content.xml:2005
 msgctxt "Topic"
 msgid "/Humor"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1738
+#: concrete/config/install/packages/elemental_full/content.xml:2064
 msgid "A Beautiful Site Deserves a Beautiful Blog"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1738
+#: concrete/config/install/packages/elemental_full/content.xml:2064
 msgid ""
 "Donec blandit lectus nec neque ullamcorper rhoncus. Sed adipiscing tempus "
 "sem eu molestie. Aenean laoreet pretium ante vitae ultrices. Aenean eu "
@@ -18293,44 +18484,102 @@ msgid ""
 " erat."
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1814
+#: concrete/config/install/packages/elemental_full/content.xml:2149
+msgid "Project Title"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:2158
+#: concrete/config/install/packages/elemental_full/content.xml:2274
+#: concrete/config/install/packages/elemental_full/content.xml:2335
+#: concrete/config/install/packages/elemental_full/content.xml:2391
+#: concrete/config/install/packages/elemental_full/content.xml:2447
+msgctxt "Topic"
+msgid "/Homework"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:2209
+msgid "Project Title 2"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:2218
+msgctxt "Topic"
+msgid "/Activities"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:2265
+msgid "Project Title 3"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:2326
+msgid "Project Title 4"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:2382
+msgid "Project Title 5"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:2438
+msgid "Project Title 6"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:2503
 msgctxt "TopicCategoryName"
 msgid "Reviews"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1815
+#: concrete/config/install/packages/elemental_full/content.xml:2504
 msgctxt "TopicName"
 msgid "Gadgets"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1816
+#: concrete/config/install/packages/elemental_full/content.xml:2505
 msgctxt "TopicName"
 msgid "Movies"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1817
+#: concrete/config/install/packages/elemental_full/content.xml:2506
 msgctxt "TopicName"
 msgid "Books"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1818
+#: concrete/config/install/packages/elemental_full/content.xml:2507
 msgctxt "TopicName"
 msgid "Music"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1820
+#: concrete/config/install/packages/elemental_full/content.xml:2509
 msgctxt "TopicName"
 msgid "Projects"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1821
+#: concrete/config/install/packages/elemental_full/content.xml:2510
 msgctxt "TopicName"
 msgid "Sports"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1822
+#: concrete/config/install/packages/elemental_full/content.xml:2511
 msgctxt "TopicName"
 msgid "Humor"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:2514
+msgctxt "TopicName"
+msgid "Crafts"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:2515
+msgctxt "TopicName"
+msgid "Homework"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:2516
+msgctxt "TopicName"
+msgid "Supplies"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:2517
+msgctxt "TopicName"
+msgid "Activities"
 msgstr ""
 
 #: concrete/config/install/packages/elemental_full/themes.xml:7
@@ -18391,6 +18640,16 @@ msgstr "続きを読む"
 msgctxt "TemplateFileName"
 msgid "Tag Cloud"
 msgstr "タグクラウド"
+
+#: concrete/blocks/page_list/templates/thumbnail_grid
+msgctxt "TemplateFileName"
+msgid "Thumbnail Grid"
+msgstr ""
+
+#: concrete/blocks/topic_list/templates/flat_filter.php
+msgctxt "TemplateFileName"
+msgid "Flat Filter"
+msgstr ""
 
 #: concrete/blocks/autonav/templates/header_menu.php
 msgctxt "TemplateFileName"

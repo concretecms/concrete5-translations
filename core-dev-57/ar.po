@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-08-06 11:28+0000\n"
-"PO-Revision-Date: 2014-08-06 11:51+0000\n"
+"POT-Creation-Date: 2014-08-07 05:57+0000\n"
+"PO-Revision-Date: 2014-08-07 06:12+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Arabic (http://www.transifex.com/projects/p/concrete5/language/ar/)\n"
 "MIME-Version: 1.0\n"
@@ -345,7 +345,7 @@ msgstr "ممنوع الوصول"
 #: concrete/tools/files/add_to.php:7
 #: concrete/tools/files/customize_search_columns.php:7
 #: concrete/tools/files/delete.php:8 concrete/tools/files/delete_set.php:8
-#: concrete/tools/files/duplicate.php:9 concrete/tools/files/save_search.php:8
+#: concrete/tools/files/duplicate.php:8 concrete/tools/files/save_search.php:8
 #: concrete/tools/files/search_dialog.php:6
 #: concrete/tools/files/search_results.php:5
 #: concrete/tools/files/search_sets_reload.php:6
@@ -685,7 +685,7 @@ msgstr "أزل الملفات من دليل الملفات الواردة /incom
 #: concrete/tools/dashboard/sitemap_drag_request.php:226
 #: concrete/tools/dashboard/sitemap_drag_request.php:228
 #: concrete/tools/files/delete.php:90 concrete/tools/files/delete_set.php:48
-#: concrete/tools/files/duplicate.php:114 concrete/tools/files/import.php:108
+#: concrete/tools/files/duplicate.php:120 concrete/tools/files/import.php:108
 #: concrete/tools/files/permissions.php:73
 #: concrete/tools/files/permissions.php:102
 #: concrete/tools/gathering/item/delete.php:27 concrete/tools/i18n_js.php:10
@@ -818,7 +818,7 @@ msgid "In Set(s)"
 msgstr "في المجموعات"
 
 #: concrete/controllers/panel/page/attributes.php:54
-#: concrete/elements/dashboard/attributes_table.php:81
+#: concrete/elements/dashboard/attributes_table.php:76
 #: concrete/elements/files/search.php:72
 #: concrete/tools/files/search_sets_reload.php:23
 #: concrete/views/dialogs/page/add_block_list.php:54
@@ -960,7 +960,7 @@ msgstr "تعذر نسخ بعض الملفات."
 
 #: concrete/blocks/form/controller.php:325
 #: concrete/controllers/backend/user_interface/file.php:21
-#: concrete/src/File/Importer.php:36 concrete/tools/files/duplicate.php:42
+#: concrete/src/File/Importer.php:36 concrete/tools/files/duplicate.php:41
 msgid "Invalid file."
 msgstr "ملف غير صالح."
 
@@ -968,18 +968,18 @@ msgstr "ملف غير صالح."
 msgid "You do not have the ability to copy this file."
 msgstr "ليس لديك صلاحية نسخ هذا الملف."
 
-#: concrete/tools/files/duplicate.php:81
+#: concrete/tools/files/duplicate.php:82
 msgid "You do not have permission to copy any of the selected files."
 msgstr "ليس لديك صلاحية نسخ أي من الملفات المحددة."
 
-#: concrete/tools/files/duplicate.php:83
+#: concrete/tools/files/duplicate.php:84
 msgid "Are you sure you want to copy the following files?"
 msgstr "متأكد أنك تريد نسخ الملفات التالية؟"
 
 #: concrete/elements/files/search.php:37
 #: concrete/elements/permission/clipboard.php:5
 #: concrete/tools/dashboard/sitemap_drag_request.php:212
-#: concrete/tools/files/duplicate.php:113 concrete/tools/i18n_js.php:193
+#: concrete/tools/files/duplicate.php:121 concrete/tools/i18n_js.php:193
 #: concrete/tools/versions.php:363
 msgid "Copy"
 msgstr "انسخ"
@@ -1061,7 +1061,7 @@ msgstr "اذهب إلى صفحة <a href=\"%s\">الإضافات البرمجي�
 msgid "Click the Install button next to the package name."
 msgstr "اضغط زر التركيب مقابل اسم الحزمة."
 
-#: concrete/config/install/base/dashboard.xml:262
+#: concrete/config/install/base/dashboard.xml:261
 #: concrete/elements/collection_theme.php:102
 #: concrete/tools/marketplace/refresh_theme.php:26
 #: concrete/tools/pages/design.php:178
@@ -1228,7 +1228,7 @@ msgid "Flat View"
 msgstr "خريطة الموقع السطحية"
 
 #: concrete/blocks/search/controller.php:82
-#: concrete/config/install/packages/elemental_full/content.xml:887
+#: concrete/config/install/packages/elemental_full/content.xml:1213
 #: concrete/elements/block_area_add_stack.php:17
 #: concrete/elements/files/search.php:45 concrete/elements/group/search.php:26
 #: concrete/elements/marketplace/search_form.php:24
@@ -1364,17 +1364,12 @@ msgid "Choose Page"
 msgstr "اختر الصفحة"
 
 #: concrete/elements/collection_preview_as_user.php:32
-#: concrete/elements/dashboard/attributes_table.php:156
+#: concrete/elements/dashboard/attributes_table.php:146
 #: concrete/single_pages/dashboard/system/files/storage.php:115
 #: concrete/single_pages/dashboard/system/permissions/blacklist.php:36
 #: concrete/tools/dashboard/sitemap_drag_request.php:230
 msgid "Go"
 msgstr "نفّذ"
-
-#: concrete/tools/dashboard/user_attributes_update.php:6
-#: concrete/tools/users/customize_search_columns.php:7
-msgid "You have no access to users."
-msgstr "ليس لديك صلاحية الوصول لإدارة المستخدمين."
 
 #: concrete/tools/dashboard/sitemap_copy_all.php:86
 #: concrete/tools/dashboard/sitemap_delete_forever.php:42
@@ -1513,7 +1508,7 @@ msgstr "الاسم"
 msgid "No users or groups added."
 msgstr "لم تُضف أي مستخدمين أو مجموعات."
 
-#: concrete/config/install/base/dashboard.xml:157
+#: concrete/config/install/base/dashboard.xml:156
 #: concrete/single_pages/dashboard/users/add_group.php:217
 #: concrete/single_pages/dashboard/users/groups.php:258
 #: concrete/single_pages/dashboard/users/search.php:128
@@ -1886,7 +1881,7 @@ msgstr ""
 msgid "Text"
 msgstr "نص"
 
-#: concrete/config/install/base/dashboard.xml:814
+#: concrete/config/install/base/dashboard.xml:804
 #: concrete/elements/users/confirm_list.php:8
 #: concrete/mail/user_register_approval_required.php:15
 #: concrete/single_pages/account/profile/edit.php:22
@@ -2162,6 +2157,11 @@ msgstr "أُزيلت أسماء المستخدمين الذين ليس لديك 
 msgid "Are you sure you would like to delete the following users?"
 msgstr "متأكد أنك تريد حذف المستخدمين التالين؟"
 
+#: concrete/controllers/backend/user_attributes.php:56
+#: concrete/tools/users/customize_search_columns.php:7
+msgid "You have no access to users."
+msgstr "ليس لديك صلاحية الوصول لإدارة المستخدمين."
+
 #: concrete/tools/users/bulk_activate.php:53
 msgid "Are you sure you would like to activate the following users?"
 msgstr "متأكد أنك تريد تفعيل حسابات المستخدمين التالية؟"
@@ -2225,7 +2225,7 @@ msgstr "هذه مساحة عامة. أي إضافة هنا ستظهر على ج�
 msgid "Invalid control"
 msgstr ""
 
-#: concrete/attributes/select/form.php:158
+#: concrete/attributes/select/form.php:160
 #: concrete/controllers/single_page/dashboard/users/points/actions.php:46
 #: concrete/elements/attribute/type_form_required.php:73
 #: concrete/tools/page_types/composer/form/edit_control.php:18
@@ -2434,7 +2434,7 @@ msgstr "أعدّه على الصفحات التابعة"
 msgid "Composer Settings"
 msgstr "إعدادات المؤلف"
 
-#: concrete/config/install/base/dashboard.xml:510
+#: concrete/config/install/base/dashboard.xml:506
 #: concrete/elements/collection_theme.php:99
 #: concrete/single_pages/dashboard/pages/themes/view.php:162
 #: concrete/tools/i18n_js.php:57
@@ -2687,10 +2687,10 @@ msgstr "استعِد الصفحة"
 msgid "Delete Forever"
 msgstr "احذف نهائياً"
 
-#: concrete/config/install/base/dashboard.xml:66
-#: concrete/config/install/base/dashboard.xml:132
-#: concrete/config/install/base/dashboard.xml:355
-#: concrete/config/install/base/dashboard.xml:883
+#: concrete/config/install/base/dashboard.xml:65
+#: concrete/config/install/base/dashboard.xml:131
+#: concrete/config/install/base/dashboard.xml:354
+#: concrete/config/install/base/dashboard.xml:871
 #: concrete/elements/page_controls_footer.php:83
 #: concrete/elements/page_controls_footer.php:85
 #: concrete/elements/panels/page.php:79 concrete/single_pages/login.php:33
@@ -2854,7 +2854,7 @@ msgstr "نسخ الملفات"
 msgid "Choose New File"
 msgstr "اختر ملفاً جديداً"
 
-#: concrete/config/install/base/dashboard.xml:891
+#: concrete/config/install/base/dashboard.xml:879
 #: concrete/elements/files/search.php:35 concrete/elements/files/search.php:67
 #: concrete/tools/i18n_js.php:195
 msgid "Sets"
@@ -3400,8 +3400,8 @@ msgstr "اسم مجموعة الملفات لا يمكن أن يحتوي الأ�
 #: concrete/controllers/single_page/dashboard/files/attributes.php:19
 #: concrete/controllers/single_page/dashboard/pages/attributes.php:41
 #: concrete/controllers/single_page/dashboard/users/attributes.php:19
-#: concrete/controllers/single_page/dashboard/users/attributes.php:50
-#: concrete/controllers/single_page/dashboard/users/attributes.php:71
+#: concrete/controllers/single_page/dashboard/users/attributes.php:52
+#: concrete/controllers/single_page/dashboard/users/attributes.php:73
 msgid "Invalid attribute ID."
 msgstr "مُعرف الصِفة غير صالح"
 
@@ -3701,7 +3701,7 @@ msgid "Pages"
 msgstr "الصفحات"
 
 #: concrete/config/install/base/dashboard.xml:52
-#: concrete/config/install/base/dashboard.xml:653
+#: concrete/config/install/base/dashboard.xml:647
 #: concrete/controllers/single_page/dashboard/workflow/me.php:31
 #: concrete/elements/page_controls_footer.php:138
 #: concrete/themes/dashboard/elements/header.php:50
@@ -4002,19 +4002,19 @@ msgstr ""
 msgid "Email marked as valid."
 msgstr "فُعّل عنوان البريد الإلكتروني."
 
-#: concrete/controllers/single_page/dashboard/users/attributes.php:90
+#: concrete/controllers/single_page/dashboard/users/attributes.php:92
 msgid "Invalid Attribute Type."
 msgstr "نوع الصفة غير صالح."
 
-#: concrete/controllers/single_page/dashboard/users/attributes.php:114
+#: concrete/controllers/single_page/dashboard/users/attributes.php:116
 msgid "User Attribute Deleted."
 msgstr "حُذفت صفة المستخدم."
 
-#: concrete/controllers/single_page/dashboard/users/attributes.php:118
+#: concrete/controllers/single_page/dashboard/users/attributes.php:120
 msgid "User Attribute Created."
 msgstr "أُنشئت صفة المستخدم."
 
-#: concrete/controllers/single_page/dashboard/users/attributes.php:122
+#: concrete/controllers/single_page/dashboard/users/attributes.php:124
 msgid "User Attribute Updated."
 msgstr "حُدثت صفة المستخدم."
 
@@ -4372,7 +4372,7 @@ msgid ""
 "cannot be manually removed."
 msgstr "مجموعة الصفات محمية. يعني هذا أنها أضيفت ضمن حزمة وبالتالي لا يمكن إزالتها يدوياً."
 
-#: concrete/config/install/base/dashboard.xml:915
+#: concrete/config/install/base/dashboard.xml:903
 #: concrete/controllers/single_page/dashboard/system/attributes/topics/add.php:14
 #: concrete/single_pages/dashboard/system/attributes/topics/add.php:22
 #: concrete/single_pages/dashboard/system/attributes/topics/view.php:22
@@ -5113,6 +5113,10 @@ msgstr[5] ""
 msgid "Invalid file version."
 msgstr ""
 
+#: concrete/controllers/backend/user_attributes.php:51
+msgid "Invalid Token"
+msgstr ""
+
 #: concrete/controllers/backend/page/arrange_blocks.php:40
 #: concrete/controllers/backend/page/arrange_blocks.php:49
 #, php-format
@@ -5251,7 +5255,7 @@ msgid "&lt; Back to Home"
 msgstr "&lt; ارجع للرئيسية"
 
 #: concrete/config/install/base/dashboard.xml:5
-#: concrete/config/install/base/dashboard.xml:473
+#: concrete/config/install/base/dashboard.xml:469
 #: concrete/elements/page_controls_footer.php:132
 #: concrete/elements/panels/dashboard.php:11
 #: concrete/elements/panels/dashboard.php:13
@@ -5268,7 +5272,7 @@ msgstr "لوحة التحكم"
 msgid "Sitemap"
 msgstr "خريطة الموقع"
 
-#: concrete/config/install/base/dashboard.xml:102
+#: concrete/config/install/base/dashboard.xml:101
 #: concrete/config/install/base/login_registration.xml:17
 #: concrete/elements/page_controls_footer.php:140
 #: concrete/single_pages/account/members/directory.php:6
@@ -5277,19 +5281,19 @@ msgstr "خريطة الموقع"
 msgid "Members"
 msgstr "أعضاء"
 
-#: concrete/config/install/base/dashboard.xml:208
+#: concrete/config/install/base/dashboard.xml:207
 #: concrete/elements/page_controls_footer.php:142
 #: concrete/themes/dashboard/elements/header.php:52
 msgid "Reports"
 msgstr "التقارير"
 
-#: concrete/config/install/base/dashboard.xml:260
+#: concrete/config/install/base/dashboard.xml:259
 #: concrete/elements/page_controls_footer.php:144
 #: concrete/themes/dashboard/elements/header.php:53
 msgid "Pages & Themes"
 msgstr "الصفحات والسمات"
 
-#: concrete/config/install/base/dashboard.xml:388
+#: concrete/config/install/base/dashboard.xml:387
 #: concrete/elements/page_controls_footer.php:146
 #: concrete/elements/permission/detail.php:31
 #: concrete/elements/permission/detail.php:79
@@ -5297,19 +5301,19 @@ msgstr "الصفحات والسمات"
 msgid "Workflow"
 msgstr "سير العمل"
 
-#: concrete/config/install/base/dashboard.xml:412
+#: concrete/config/install/base/dashboard.xml:411
 #: concrete/elements/page_controls_footer.php:148
 #: concrete/themes/dashboard/elements/header.php:55
 msgid "Stacks & Blocks"
 msgstr "الكوْمات والبلوكات"
 
-#: concrete/config/install/base/dashboard.xml:463
+#: concrete/config/install/base/dashboard.xml:461
 #: concrete/elements/page_controls_footer.php:150
 #: concrete/themes/dashboard/elements/header.php:56
 msgid "Extend concrete5"
 msgstr "تحسين concrete5"
 
-#: concrete/config/install/base/dashboard.xml:528
+#: concrete/config/install/base/dashboard.xml:522
 #: concrete/elements/page_controls_footer.php:152
 #: concrete/themes/dashboard/elements/header.php:57
 msgid "System & Settings"
@@ -5419,27 +5423,27 @@ msgstr "شارك على فيسبوك"
 msgid "Posted by %1$s on %2$s"
 msgstr "كتبه %1$s في %2$s"
 
-#: concrete/themes/elemental/page_theme.php:68
+#: concrete/themes/elemental/page_theme.php:67
 msgid "Title Thin"
 msgstr ""
 
-#: concrete/themes/elemental/page_theme.php:69
+#: concrete/themes/elemental/page_theme.php:68
 msgid "Title Caps"
 msgstr ""
 
-#: concrete/themes/elemental/page_theme.php:70
+#: concrete/themes/elemental/page_theme.php:69
 msgid "Image Caption"
 msgstr ""
 
-#: concrete/themes/elemental/page_theme.php:71
+#: concrete/themes/elemental/page_theme.php:70
 msgid "Standard Button"
 msgstr ""
 
-#: concrete/themes/elemental/page_theme.php:72
+#: concrete/themes/elemental/page_theme.php:71
 msgid "Success Button"
 msgstr ""
 
-#: concrete/themes/elemental/page_theme.php:73
+#: concrete/themes/elemental/page_theme.php:72
 msgid "Primary Button"
 msgstr ""
 
@@ -5971,7 +5975,8 @@ msgstr ""
 msgid "All Groups"
 msgstr "جميع المجموعات"
 
-#: concrete/src/Tree/Type/Group.php:8
+#: concrete/src/Tree/Type/Group.php:24
+msgctxt "TreeName"
 msgid "Groups Tree"
 msgstr ""
 
@@ -6062,7 +6067,7 @@ msgstr "المجموعة"
 msgid "(Deleted Group)"
 msgstr "(مجموعة محذوفة)"
 
-#: concrete/config/install/base/dashboard.xml:143
+#: concrete/config/install/base/dashboard.xml:142
 #: concrete/single_pages/dashboard/users/search.php:274
 #: concrete/src/Permission/Access/Entity/UserEntity.php:66
 msgid "Add User"
@@ -7447,13 +7452,13 @@ msgstr "اعرض الكل"
 msgid "Dashboard Home"
 msgstr "واجهة لوحة التحكم"
 
-#: concrete/config/install/base/dashboard.xml:284
+#: concrete/config/install/base/dashboard.xml:283
 #: concrete/src/Application/Service/Dashboard.php:325
 #: concrete/views/panels/page/design.php:61
 msgid "Customize"
 msgstr "خصّص"
 
-#: concrete/config/install/base/dashboard.xml:1067
+#: concrete/config/install/base/dashboard.xml:1055
 #: concrete/src/Application/Service/Dashboard.php:325
 msgid "Customize Dashboard Home"
 msgstr "تخصيص واجهة لوحة التحكم"
@@ -7959,12 +7964,12 @@ msgstr ""
 msgid "Manage Sets"
 msgstr "أدر المجموعات"
 
-#: concrete/elements/dashboard/attributes_table.php:51
-#: concrete/elements/dashboard/attributes_table.php:119
+#: concrete/elements/dashboard/attributes_table.php:50
+#: concrete/elements/dashboard/attributes_table.php:112
 msgid "No attributes defined."
 msgstr "لم يتم تعريف أي صفات."
 
-#: concrete/elements/dashboard/attributes_table.php:151
+#: concrete/elements/dashboard/attributes_table.php:141
 msgid "Add Attribute"
 msgstr "أضف صفة"
 
@@ -8036,7 +8041,7 @@ msgid "My Account"
 msgstr ""
 
 #: concrete/config/install/packages/elemental_blank/content.xml:43
-#: concrete/config/install/packages/elemental_full/content.xml:617
+#: concrete/config/install/packages/elemental_full/content.xml:943
 #: concrete/elements/account/menu.php:60
 #: concrete/single_pages/account/profile/public_profile.php:14
 #: concrete/single_pages/dashboard/system/view.php:41
@@ -9202,7 +9207,7 @@ msgstr ""
 msgid "Everything But Selected"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:338
+#: concrete/config/install/base/dashboard.xml:337
 #: concrete/elements/page_types/form/base.php:60
 msgid "Page Templates"
 msgstr ""
@@ -9520,8 +9525,8 @@ msgstr "الاتجاه"
 msgid "Save Preset"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:216
-#: concrete/config/install/base/dashboard.xml:637
+#: concrete/config/install/base/dashboard.xml:215
+#: concrete/config/install/base/dashboard.xml:631
 #: concrete/views/dialogs/file/properties.php:13
 msgid "Statistics"
 msgstr "الإحصائيات"
@@ -9546,7 +9551,7 @@ msgstr "مدير الملفات في لوحة التحكم"
 msgid "Page Added To"
 msgstr "أُضيفت الصفحة إلى"
 
-#: concrete/config/install/base/dashboard.xml:671
+#: concrete/config/install/base/dashboard.xml:665
 #: concrete/views/dialogs/file/properties.php:73
 msgid "Thumbnails"
 msgstr ""
@@ -9825,7 +9830,7 @@ msgstr ""
 msgid "Clipboard"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:414
+#: concrete/config/install/base/dashboard.xml:413
 #: concrete/config/install/base/login_registration.xml:7
 #: concrete/views/panels/add.php:27
 msgid "Stacks"
@@ -9835,7 +9840,7 @@ msgstr "الكوْمات"
 msgid "Gathering Tiles"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:979
+#: concrete/config/install/base/dashboard.xml:967
 #: concrete/views/panels/add.php:70
 msgid "Stack"
 msgstr "كوْمة"
@@ -9949,7 +9954,7 @@ msgstr "بدء التركيب"
 msgid "Site Information"
 msgstr "معلومات الموقع"
 
-#: concrete/config/install/base/dashboard.xml:538
+#: concrete/config/install/base/dashboard.xml:532
 #: concrete/single_pages/dashboard/system/basics/name.php:7
 #: concrete/views/frontend/install.php:144
 msgid "Site Name"
@@ -10980,7 +10985,7 @@ msgid "Frequently Asked Questions Block"
 msgstr ""
 
 #: concrete/blocks/faq/controller.php:26
-#: concrete/config/install/packages/elemental_full/content.xml:1532
+#: concrete/config/install/packages/elemental_full/content.xml:1858
 msgid "Frequently Asked Questions"
 msgstr ""
 
@@ -12313,7 +12318,7 @@ msgid "Allows users to add social icons to their website"
 msgstr ""
 
 #: concrete/blocks/social_links/controller.php:31
-#: concrete/config/install/base/dashboard.xml:554
+#: concrete/config/install/base/dashboard.xml:548
 msgid "Social Links"
 msgstr ""
 
@@ -12420,18 +12425,18 @@ msgstr ""
 msgid "Topic Attribute To Display"
 msgstr ""
 
-#: concrete/blocks/topic_list/controller.php:27
+#: concrete/blocks/topic_list/controller.php:28
 msgid ""
 "Displays a list of your site's topics, allowing you to click on them to "
 "filter a page list."
 msgstr ""
 
-#: concrete/blocks/topic_list/controller.php:32
+#: concrete/blocks/topic_list/controller.php:33
 msgid "Topic List"
 msgstr ""
 
-#: concrete/blocks/topic_list/controller.php:38
-#: concrete/config/install/base/dashboard.xml:907
+#: concrete/blocks/topic_list/controller.php:39
+#: concrete/config/install/base/dashboard.xml:895
 msgid "Topics"
 msgstr ""
 
@@ -12710,8 +12715,8 @@ msgstr "أزل الخيار"
 msgid "Selected Options"
 msgstr "الخيارات المُحدّدة"
 
-#: concrete/attributes/select/form.php:170
-#: concrete/attributes/select/form.php:171
+#: concrete/attributes/select/form.php:172
+#: concrete/attributes/select/form.php:173
 msgid "Add Another Option"
 msgstr "أضف خياراً آخر"
 
@@ -12964,7 +12969,7 @@ msgstr "اضغط واسحب لتُعيد ترتيب الملفات في هذه �
 msgid "There are no files in this set."
 msgstr "لا تحتوي هذه المجموعة أي ملفات."
 
-#: concrete/config/install/base/dashboard.xml:88
+#: concrete/config/install/base/dashboard.xml:87
 #: concrete/single_pages/dashboard/files/sets.php:132
 msgid "Add File Set"
 msgstr "أضف مجموعة للملفات"
@@ -13130,7 +13135,7 @@ msgstr "استعرض الإضافات"
 msgid "Get more add-ons from concrete5.org."
 msgstr "احصل على المزيد من الإضافات من متجر concrete5.org"
 
-#: concrete/config/install/base/dashboard.xml:494
+#: concrete/config/install/base/dashboard.xml:490
 #: concrete/single_pages/dashboard/extend/install.php:245
 #: concrete/single_pages/dashboard/extend/update.php:31
 msgid "Update Add-Ons"
@@ -13438,7 +13443,7 @@ msgstr "لم تُضف أي كوْمات."
 msgid "Stack Name"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:404
+#: concrete/config/install/base/dashboard.xml:403
 #: concrete/single_pages/dashboard/workflow/me.php:3
 msgid "Waiting for Me"
 msgstr "بانتظاري"
@@ -13491,8 +13496,8 @@ msgstr ""
 msgid "Badge Description"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:185
-#: concrete/config/install/base/dashboard.xml:866
+#: concrete/config/install/base/dashboard.xml:184
+#: concrete/config/install/base/dashboard.xml:854
 #: concrete/single_pages/account/profile/public_profile.php:31
 #: concrete/single_pages/dashboard/users/add_group.php:102
 #: concrete/single_pages/dashboard/users/groups.php:73
@@ -13862,7 +13867,7 @@ msgstr "ليس لديك صلاحيات البحث في المستخدمين. ي�
 msgid "Registration Data"
 msgstr "بيانات التسجيل"
 
-#: concrete/config/install/base/dashboard.xml:663
+#: concrete/config/install/base/dashboard.xml:657
 #: concrete/single_pages/dashboard/system/files/filetypes.php:3
 msgid "Allowed File Types"
 msgstr "أنواع الملفات المسموح بها"
@@ -13901,7 +13906,7 @@ msgstr ""
 msgid "Delete Location"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:536
+#: concrete/config/install/base/dashboard.xml:530
 #: concrete/single_pages/dashboard/system/files/storage.php:39
 msgid "Basics"
 msgstr "الأساسيات"
@@ -13978,7 +13983,7 @@ msgstr "افصل بين قائمة كلمات العنوان المستثناة 
 msgid "Reset To Default"
 msgstr "استعِدْ القِيَم الافتراضية"
 
-#: concrete/config/install/base/dashboard.xml:621
+#: concrete/config/install/base/dashboard.xml:615
 #: concrete/single_pages/dashboard/system/seo/codes.php:8
 msgid "Tracking Codes"
 msgstr "رموز التتبع"
@@ -14075,7 +14080,7 @@ msgstr "تمكين الروابط السهلة"
 msgid "Code for your .htaccess file"
 msgstr "نصّ ملف .htaccess"
 
-#: concrete/config/install/base/dashboard.xml:918
+#: concrete/config/install/base/dashboard.xml:906
 #: concrete/single_pages/dashboard/system/environment/info.php:2
 msgid "Environment"
 msgstr "بيئة العمل"
@@ -14116,7 +14121,7 @@ msgstr "اخف الأخطاء عن زوار الموقع."
 msgid "Show errors in page."
 msgstr "أظهر الأخطاء في الصفحة."
 
-#: concrete/config/install/base/dashboard.xml:722
+#: concrete/config/install/base/dashboard.xml:712
 #: concrete/single_pages/dashboard/system/permissions/site.php:7
 msgid "Site Access"
 msgstr "إتاحة الموقع"
@@ -14174,7 +14179,7 @@ msgstr "لا يوجد مكتبات كابتشا مُركّبة."
 msgid "Save Additional Settings"
 msgstr "احفظ الإعدادات الإضافية"
 
-#: concrete/config/install/base/dashboard.xml:769
+#: concrete/config/install/base/dashboard.xml:759
 #: concrete/single_pages/dashboard/system/permissions/maintenance.php:4
 msgid "Maintenance Mode"
 msgstr "وضع الصيانة"
@@ -14232,12 +14237,12 @@ msgstr "سيُرسل تنويه إلى جميع عناوين البريد الإ
 msgid "You have no anti-spam libraries installed."
 msgstr "لا يوجد مكتبات محاربة سبام مُركّبة."
 
-#: concrete/config/install/base/dashboard.xml:731
+#: concrete/config/install/base/dashboard.xml:721
 #: concrete/single_pages/dashboard/system/permissions/tasks.php:8
 msgid "Task Permissions"
 msgstr "صلاحيات المهام"
 
-#: concrete/config/install/base/dashboard.xml:739
+#: concrete/config/install/base/dashboard.xml:729
 #: concrete/single_pages/dashboard/system/permissions/users.php:8
 msgid "User Permissions"
 msgstr "صلاحيات المستخدمين"
@@ -14503,7 +14508,7 @@ msgstr ""
 msgid "Enable"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:797
+#: concrete/config/install/base/dashboard.xml:787
 #: concrete/single_pages/dashboard/system/registration/open.php:3
 msgid "Public Registration"
 msgstr "التسجيل العام"
@@ -14644,7 +14649,7 @@ msgstr ""
 msgid "Enable user defined time zones."
 msgstr "فعّل المناطق الزمنية المحددة من قبل المستخدمين."
 
-#: concrete/config/install/base/dashboard.xml:570
+#: concrete/config/install/base/dashboard.xml:564
 #: concrete/single_pages/dashboard/system/basics/editor.php:2
 msgid "Rich Text Editor"
 msgstr "المحرّر المرئي"
@@ -14829,7 +14834,7 @@ msgstr "تتوفر عدّة تحديثات. رجاءً اختر التحديث �
 msgid "Current Version"
 msgstr "النسخة الحالية"
 
-#: concrete/config/install/base/dashboard.xml:969
+#: concrete/config/install/base/dashboard.xml:957
 #: concrete/single_pages/dashboard/system/backup/update.php:102
 msgid "Update concrete5"
 msgstr "حدّث Concrete5"
@@ -14844,7 +14849,7 @@ msgid ""
 "it may help to clear your cache."
 msgstr "إن بدأ ظهور المحتوى القديم في موقعك، أو أنه يعمل بشكل غير متوقع، فقد يساعد تنظيف الكاش في حل المشكلة."
 
-#: concrete/config/install/base/dashboard.xml:700
+#: concrete/config/install/base/dashboard.xml:692
 #: concrete/single_pages/dashboard/system/optimization/clearcache.php:8
 msgid "Clear Cache"
 msgstr "نظّف الكاش"
@@ -15159,7 +15164,7 @@ msgstr "الخيار"
 msgid "IP Address"
 msgstr "عنوان IP"
 
-#: concrete/config/install/base/dashboard.xml:238
+#: concrete/config/install/base/dashboard.xml:237
 #: concrete/single_pages/dashboard/reports/surveys.php:68
 msgid "Surveys"
 msgstr "الاستبيانات"
@@ -15222,7 +15227,7 @@ msgstr "متأكد أنك تريد حذف هذه الاستمارة وجميع �
 msgid "Are you sure you want to delete this form submissions?"
 msgstr "متأكد أنك تريد حذف مشاركات هذه الاستمارة؟"
 
-#: concrete/config/install/base/dashboard.xml:227
+#: concrete/config/install/base/dashboard.xml:226
 #: concrete/single_pages/dashboard/reports/forms.php:69
 msgid "Form Results"
 msgstr "مشاركات الاستمارات"
@@ -15356,7 +15361,7 @@ msgstr "ارجع إلى أنواع الصفحات"
 msgid "Unable to access composer settings."
 msgstr "تعذر الوصول إلى إعدادات المؤلف."
 
-#: concrete/config/install/base/dashboard.xml:301
+#: concrete/config/install/base/dashboard.xml:300
 #: concrete/single_pages/dashboard/pages/types/view.php:23
 #: concrete/single_pages/dashboard/pages/types/view.php:65
 msgid "Add Page Type"
@@ -15406,7 +15411,7 @@ msgstr "تطبيق هذه السمة على جميع صفحات موقعك؟"
 msgid "No themes are installed."
 msgstr "لا يوجد سمات."
 
-#: concrete/config/install/base/dashboard.xml:273
+#: concrete/config/install/base/dashboard.xml:272
 #: concrete/single_pages/dashboard/pages/themes/view.php:82
 msgid "Inspect"
 msgstr "تفحّص"
@@ -15505,7 +15510,7 @@ msgid ""
 "None. This file will be used by pages with the <strong>%s</strong> template."
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:366
+#: concrete/config/install/base/dashboard.xml:365
 #: concrete/single_pages/dashboard/pages/single.php:5
 msgid "Single Pages"
 msgstr "الصفحات المفردة"
@@ -15601,12 +15606,12 @@ msgstr "عدّل الملف الشخصي"
 msgid "Basic Information"
 msgstr "المعلومات الأساسية"
 
-#: concrete/config/install/base/dashboard.xml:586
+#: concrete/config/install/base/dashboard.xml:580
 #: concrete/single_pages/account/profile/edit.php:29
 msgid "Time Zone"
 msgstr "المنطقة الزمنية"
 
-#: concrete/config/install/base/dashboard.xml:805
+#: concrete/config/install/base/dashboard.xml:795
 #: concrete/single_pages/account/profile/edit.php:61
 msgid "Authentication Types"
 msgstr ""
@@ -16050,864 +16055,864 @@ msgid ""
 msgstr "اضف ملف, احذف ملف, انسخ, انقل, نسخ, نقل, وصل, وصلة, تحجيم, قص, تغيير اسم, صور, عنوان, صفة, add file, delete file, copy, move, alias, resize, crop, rename, images, title, attribute"
 
 #. Keywords for page /dashboard/files/attributes
-#: concrete/config/install/base/dashboard.xml:69
+#: concrete/config/install/base/dashboard.xml:68
 msgid "file, file attributes, title, attribute, description, rename"
 msgstr "ملف, صفة, صفات, خواص, عنوان, وصف, تغيير اسم, file, file attributes, title, attribute, description, rename"
 
-#: concrete/config/install/base/dashboard.xml:77
+#: concrete/config/install/base/dashboard.xml:76
 msgid "File Sets"
 msgstr "مجموعات الملفات"
 
 #. Keywords for page /dashboard/files/sets
-#: concrete/config/install/base/dashboard.xml:80
+#: concrete/config/install/base/dashboard.xml:79
 msgid "files, category, categories"
 msgstr "ملفات, تصنيف, تصنيفات, files, category, categories"
 
 #. Keywords for page /dashboard/files/add_set
-#: concrete/config/install/base/dashboard.xml:94
+#: concrete/config/install/base/dashboard.xml:93
 msgid "new file set"
 msgstr "مجموعة ملفات جديدة, new file set"
 
-#: concrete/config/install/base/dashboard.xml:102
+#: concrete/config/install/base/dashboard.xml:101
 msgid "Add and manage the user accounts and groups on your website."
 msgstr "إضافة و إدارة حسابات ومجموعات المستخدمين في موقعك."
 
 #. Keywords for page /dashboard/users
-#: concrete/config/install/base/dashboard.xml:105
+#: concrete/config/install/base/dashboard.xml:104
 msgid ""
 "users, groups, people, find, delete user, remove user, change password, "
 "password"
 msgstr "مستخدمين, مجموعات, بحث, حذف مستخدم, تغيير كلمة السر, users, groups, people, find, delete user, remove user, change password, password"
 
-#: concrete/config/install/base/dashboard.xml:110
+#: concrete/config/install/base/dashboard.xml:109
 msgid "Search Users"
 msgstr "البحث في المستخدمين"
 
 #. Keywords for page /dashboard/users/search
-#: concrete/config/install/base/dashboard.xml:113
+#: concrete/config/install/base/dashboard.xml:112
 msgid ""
 "find, search, people, delete user, remove user, change password, password"
 msgstr "بحث, حذف مستخدم, تغيير كلمة السر, كلمة السر, find, search, people, delete user, remove user, change password, password"
 
-#: concrete/config/install/base/dashboard.xml:121
+#: concrete/config/install/base/dashboard.xml:120
 msgid "User Groups"
 msgstr "مجموعات المستخدمين"
 
 #. Keywords for page /dashboard/users/groups
-#: concrete/config/install/base/dashboard.xml:124
+#: concrete/config/install/base/dashboard.xml:123
 msgid "user, group, people, permissions, expire, badges"
 msgstr ""
 
 #. Keywords for page /dashboard/users/attributes
-#: concrete/config/install/base/dashboard.xml:135
+#: concrete/config/install/base/dashboard.xml:134
 msgid "user attributes, user data, gather data, registration data"
 msgstr "صفة, صفات المستخدمين, بيانات المستخدمين, جمع البيانات, بيانات التسجيل, user attributes, user data, gather data, registration data"
 
 #. Keywords for page /dashboard/users/add
-#: concrete/config/install/base/dashboard.xml:146
+#: concrete/config/install/base/dashboard.xml:145
 msgid "new user, create"
 msgstr "مستخدم جديد, إنشاء, إضافة, new user, create"
 
 #. Keywords for page /dashboard/users/add_group
-#: concrete/config/install/base/dashboard.xml:160
+#: concrete/config/install/base/dashboard.xml:159
 msgid "new user group, new group, group, create"
 msgstr "مجموعة مستخدمين جديدة, مجموعة جديدة, مجموعة, جديد, جديدة, إنشاء, new user group, new group, group, create"
 
-#: concrete/config/install/base/dashboard.xml:171
+#: concrete/config/install/base/dashboard.xml:170
 msgid "Move Multiple Groups"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:174
+#: concrete/config/install/base/dashboard.xml:173
 msgid "Group Sets"
 msgstr "مجموعات المجموعات"
 
 #. Keywords for page /dashboard/users/group_sets
-#: concrete/config/install/base/dashboard.xml:177
+#: concrete/config/install/base/dashboard.xml:176
 msgid "group set"
 msgstr "مجموعة مجموعات, group set"
 
 #. Keywords for page /dashboard/users/points
-#: concrete/config/install/base/dashboard.xml:188
+#: concrete/config/install/base/dashboard.xml:187
 msgid "community, points, karma"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:196
+#: concrete/config/install/base/dashboard.xml:195
 msgid "Assign Points"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:199
+#: concrete/config/install/base/dashboard.xml:198
 msgid "Actions"
 msgstr "الإجراءات"
 
 #. Keywords for page /dashboard/users/points/actions
-#: concrete/config/install/base/dashboard.xml:202
+#: concrete/config/install/base/dashboard.xml:201
 msgid "action, community actions"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:208
+#: concrete/config/install/base/dashboard.xml:207
 msgid "Get data from forms and logs."
 msgstr "اجلب البيانات من الاستمارات والسجلات."
 
 #. Keywords for page /dashboard/reports
-#: concrete/config/install/base/dashboard.xml:211
+#: concrete/config/install/base/dashboard.xml:210
 msgid "forms, log, error, email, mysql, exception, survey"
 msgstr "استمارة, استمارات سجل, خطأ, بريد إلكتروني, استثناء, استفتاء, استطلاع, تصويت, forms, log, error, email, mysql, exception, survey"
 
-#: concrete/config/install/base/dashboard.xml:216
+#: concrete/config/install/base/dashboard.xml:215
 msgid "View your site activity."
 msgstr "شاهد نشاط موقعك."
 
 #. Keywords for page /dashboard/reports/statistics
-#: concrete/config/install/base/dashboard.xml:219
+#: concrete/config/install/base/dashboard.xml:218
 msgid "hits, pageviews, visitors, activity"
 msgstr "زيارات, مشاهدات, زوار, نشاطات, نشاط, hits, pageviews, visitors, activity"
 
-#: concrete/config/install/base/dashboard.xml:227
+#: concrete/config/install/base/dashboard.xml:226
 msgid "Get submission data."
 msgstr "احضر بيانات المشاركات."
 
 #. Keywords for page /dashboard/reports/forms
-#: concrete/config/install/base/dashboard.xml:230
+#: concrete/config/install/base/dashboard.xml:229
 msgid "forms, questions, response, data"
 msgstr "استمارات, أسئلة, مشاركات, مشاركة, إجابة, جواب, بيانات, forms, questions, response, data"
 
 #. Keywords for page /dashboard/reports/surveys
-#: concrete/config/install/base/dashboard.xml:241
+#: concrete/config/install/base/dashboard.xml:240
 msgid "questions, quiz, response"
 msgstr "أسئلة, اختبار, جواب, أجوبة, questions, quiz, response"
 
-#: concrete/config/install/base/dashboard.xml:249
+#: concrete/config/install/base/dashboard.xml:248
 msgid "Logs"
 msgstr "السجلات"
 
 #. Keywords for page /dashboard/reports/logs
-#: concrete/config/install/base/dashboard.xml:252
+#: concrete/config/install/base/dashboard.xml:251
 msgid "forms, log, error, email, mysql, exception, survey, history"
 msgstr "استمارات, سجل, خطأ, بريد إلكتروني, رسالة, استطلاع, استفتاء, تصويت, forms, log, error, email, mysql, exception, survey, history"
 
-#: concrete/config/install/base/dashboard.xml:260
-#: concrete/config/install/base/dashboard.xml:262
+#: concrete/config/install/base/dashboard.xml:259
+#: concrete/config/install/base/dashboard.xml:261
 msgid "Reskin your site."
 msgstr "غيّر مظهر موقعك."
 
 #. Keywords for page /dashboard/pages/themes
-#: concrete/config/install/base/dashboard.xml:265
+#: concrete/config/install/base/dashboard.xml:264
 msgid "new theme, theme, active theme, change theme, template, css"
 msgstr "سمة جديدة, سمة, سمة مفعلة, تغيير السمة, قالب, قوالب, نمط, new theme, theme, active theme, change theme, template, css"
 
 #. Keywords for page /dashboard/pages/themes/inspect
-#: concrete/config/install/base/dashboard.xml:276
+#: concrete/config/install/base/dashboard.xml:275
 msgid "page types"
 msgstr "page types, أنواع الصفحات"
 
 #. Keywords for page /dashboard/pages/themes/customize
-#: concrete/config/install/base/dashboard.xml:287
+#: concrete/config/install/base/dashboard.xml:286
 msgid "custom theme, change theme, custom css, css"
 msgstr "سمة مخصصة, تغيير السمة, نمط مخصص, custom theme, change theme, custom css, css"
 
-#: concrete/config/install/base/dashboard.xml:297
+#: concrete/config/install/base/dashboard.xml:296
 msgid "Page Types"
 msgstr "أنواع الصفحات"
 
-#: concrete/config/install/base/dashboard.xml:311
+#: concrete/config/install/base/dashboard.xml:310
 msgid "Compose Form"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:320
+#: concrete/config/install/base/dashboard.xml:319
 msgid "Defaults and Output"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:329
+#: concrete/config/install/base/dashboard.xml:328
 msgid "Page Type Permissions"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:338
+#: concrete/config/install/base/dashboard.xml:337
 msgid "Form factors for pages in your site."
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:347
+#: concrete/config/install/base/dashboard.xml:346
 msgid "Add Page Template"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:347
+#: concrete/config/install/base/dashboard.xml:346
 msgid "Add page templates to your site."
 msgstr ""
 
 #. Keywords for page /dashboard/pages/attributes
-#: concrete/config/install/base/dashboard.xml:358
+#: concrete/config/install/base/dashboard.xml:357
 msgid "page attributes, custom"
 msgstr "خواص الصفحة, مخصص, page attributes, custom"
 
 #. Keywords for page /dashboard/pages/single
-#: concrete/config/install/base/dashboard.xml:369
+#: concrete/config/install/base/dashboard.xml:368
 msgid "single, page, custom, application"
 msgstr "مفرد, مفردة, مخصص, تطبيق, صفحة, single, page, custom, application"
 
 #. Keywords for page /dashboard/workflow
-#: concrete/config/install/base/dashboard.xml:391
+#: concrete/config/install/base/dashboard.xml:390
 msgid "add workflow, remove workflow"
 msgstr "إضافة سير عمل, إزالة سير عمل, add workflow, remove workflow"
 
-#: concrete/config/install/base/dashboard.xml:396
+#: concrete/config/install/base/dashboard.xml:395
 msgid "Workflow List"
 msgstr "قائمة سير العمل"
 
-#: concrete/config/install/base/dashboard.xml:412
+#: concrete/config/install/base/dashboard.xml:411
 msgid "Manage sitewide content and administer block types."
 msgstr "ادارة محتويات الموقع الواسعة و ادارة انواع القطع"
 
-#: concrete/config/install/base/dashboard.xml:414
+#: concrete/config/install/base/dashboard.xml:413
 msgid "Share content across your site."
 msgstr "وزّع المحتوى في أنحاء موقعك."
 
 #. Keywords for page /dashboard/blocks/stacks
-#: concrete/config/install/base/dashboard.xml:417
+#: concrete/config/install/base/dashboard.xml:416
 msgid ""
 "stacks, reusable content, scrapbook, copy, paste, paste block, copy block, "
 "site name, logo"
 msgstr "كومات, محتوى, قصاصات, نسخ, لصق, لصق بلوك, نسخ بلوك, اسم الموقع, شعار, stacks, reusable content, scrapbook, copy, paste, paste block, copy block, site name, logo"
 
-#: concrete/config/install/base/dashboard.xml:428
+#: concrete/config/install/base/dashboard.xml:426
 msgid "Block & Stack Permissions"
 msgstr "صلاحيات البلوكات والكوْمات"
 
-#: concrete/config/install/base/dashboard.xml:428
+#: concrete/config/install/base/dashboard.xml:426
 msgid "Control who can add blocks and stacks on your site."
 msgstr "التحكم فى اختيار من يمكنة اضافة القطع والأكوام للموقع"
 
-#: concrete/config/install/base/dashboard.xml:436
+#: concrete/config/install/base/dashboard.xml:434
 msgid "Stack List"
 msgstr "قائمة الكومة"
 
 #. Keywords for page /dashboard/blocks/stacks/list
-#: concrete/config/install/base/dashboard.xml:445
+#: concrete/config/install/base/dashboard.xml:443
 msgid "edit stacks, view stacks, all stacks"
 msgstr "تعديل الكومات, عرض الكومات, جميع الكومات, edit stacks, view stacks, all stacks"
 
-#: concrete/config/install/base/dashboard.xml:450
+#: concrete/config/install/base/dashboard.xml:448
 msgid "Block Types"
 msgstr "أنواع البلوكات"
 
-#: concrete/config/install/base/dashboard.xml:450
+#: concrete/config/install/base/dashboard.xml:448
 msgid "Manage the installed block types in your site."
 msgstr "أدر البلوكات المركبة في موقعك."
 
 #. Keywords for page /dashboard/blocks/types
-#: concrete/config/install/base/dashboard.xml:453
+#: concrete/config/install/base/dashboard.xml:451
 msgid "block, refresh, custom"
 msgstr "بلوك, تحديث, انعاش, مخصص, block, refresh, custom"
 
-#: concrete/config/install/base/dashboard.xml:463
+#: concrete/config/install/base/dashboard.xml:461
 msgid ""
 "Connect to the concrete5 marketplace, install custom add-ons, and download "
 "updates for marketplace add-ons and themes."
 msgstr "توصيل لسوق concrete5،تركيب اضافات مخصصة ، وتحميل التحديثات من السوق إضافات والثيمات."
 
 #. Keywords for page /dashboard/extend
-#: concrete/config/install/base/dashboard.xml:466
+#: concrete/config/install/base/dashboard.xml:464
 msgid ""
 "add-on, addon, add on, package, applications, ecommerce, discussions, "
 "forums, themes, templates, blocks"
 msgstr "إضافة, حزمة, تطبيقات, متجر, نقاشات, مشاركات, منتديات, سمات, قوالب, بلوكات, add-on, addon, add on, package, applications, ecommerce, discussions, forums, themes, templates, blocks"
 
-#: concrete/config/install/base/dashboard.xml:486
+#: concrete/config/install/base/dashboard.xml:482
 msgid "Add Functionality"
 msgstr "الإضافات البرمجية"
 
-#: concrete/config/install/base/dashboard.xml:486
+#: concrete/config/install/base/dashboard.xml:482
 msgid "Install add-ons & themes."
 msgstr "تركيب الإضافات والسمات."
 
 #. Keywords for page /dashboard/extend/install
-#: concrete/config/install/base/dashboard.xml:489
+#: concrete/config/install/base/dashboard.xml:485
 msgid ""
 "add-on, addon, ecommerce, install, discussions, forums, themes, templates, "
 "blocks"
 msgstr "إضافة, متجر, تجارة, تركيب, تثبيت, مشاركات, نقاشات, منتديات, سمات, قوالب, بلوكات, add-on, addon, ecommerce, install, discussions, forums, themes, templates, blocks"
 
-#: concrete/config/install/base/dashboard.xml:494
+#: concrete/config/install/base/dashboard.xml:490
 msgid "Update your installed packages."
 msgstr "تحديث الحزم المركبة."
 
 #. Keywords for page /dashboard/extend/update
-#: concrete/config/install/base/dashboard.xml:497
+#: concrete/config/install/base/dashboard.xml:493
 msgid "update, upgrade"
 msgstr "تحديث, ترقية, update, upgrade"
 
-#: concrete/config/install/base/dashboard.xml:502
+#: concrete/config/install/base/dashboard.xml:498
 msgid "Connect to the Community"
 msgstr "الاتصال بالمجتمع"
 
-#: concrete/config/install/base/dashboard.xml:502
+#: concrete/config/install/base/dashboard.xml:498
 msgid "Connect to the concrete5 community."
 msgstr "الاتصال بمجتمع concrete5."
 
 #. Keywords for page /dashboard/extend/connect
-#: concrete/config/install/base/dashboard.xml:505
+#: concrete/config/install/base/dashboard.xml:501
 msgid "concrete5.org, my account, marketplace"
 msgstr "concrete5.org، حسابي، المتجر"
 
-#: concrete/config/install/base/dashboard.xml:510
+#: concrete/config/install/base/dashboard.xml:506
 msgid "Download themes from concrete5.org."
 msgstr "تنزيل السمات من concrete5.org."
 
 #. Keywords for page /dashboard/extend/themes
-#: concrete/config/install/base/dashboard.xml:513
+#: concrete/config/install/base/dashboard.xml:509
 msgid "buy theme, new theme, marketplace, template"
 msgstr "اشتر سمة, سمة جديدة, المتجر, قالب, buy theme, new theme, marketplace, template"
 
-#: concrete/config/install/base/dashboard.xml:518
+#: concrete/config/install/base/dashboard.xml:514
 msgid "Get More Add-Ons"
 msgstr "احصل على المزيد من الإضافات"
 
-#: concrete/config/install/base/dashboard.xml:518
+#: concrete/config/install/base/dashboard.xml:514
 msgid "Download add-ons from concrete5.org."
 msgstr "تنزيل الإضافات من concrete5.org."
 
 #. Keywords for page /dashboard/extend/add-ons
-#: concrete/config/install/base/dashboard.xml:521
+#: concrete/config/install/base/dashboard.xml:517
 msgid ""
 "buy addon, buy add on, buy add-on, purchase addon, purchase add on, purchase"
 " add-on, find addon, new addon, marketplace"
 msgstr "اشتر اضافات, شراء اضافات, بحث عن اضافة, اضافة جديدة, المتجر, متجر, buy addon, buy add on, buy add-on, purchase addon, purchase add on, purchase add-on, find addon, new addon, marketplace"
 
-#: concrete/config/install/base/dashboard.xml:528
+#: concrete/config/install/base/dashboard.xml:522
 msgid "Secure and setup your site."
 msgstr "أمّن وأعدّ موقعك."
 
 #. Keywords for page /dashboard/system
-#: concrete/config/install/base/dashboard.xml:531
+#: concrete/config/install/base/dashboard.xml:525
 msgid "dashboard, configuration"
 msgstr "لوحة التحكم, تهيئة, dashboard, configuration"
 
-#: concrete/config/install/base/dashboard.xml:536
+#: concrete/config/install/base/dashboard.xml:530
 msgid "Basic information about your website."
 msgstr "معلومات أساسية عن موقعك."
 
 #. Keywords for page /dashboard/system/basics/name
-#: concrete/config/install/base/dashboard.xml:541
+#: concrete/config/install/base/dashboard.xml:535
 msgid "website name, title"
 msgstr "اسم الموقع، عنوان، تسمية، website name, title"
 
-#: concrete/config/install/base/dashboard.xml:546
+#: concrete/config/install/base/dashboard.xml:540
 msgid "Accessibility"
 msgstr ""
 
 #. Keywords for page /dashboard/system/basics/accessibility
-#: concrete/config/install/base/dashboard.xml:549
+#: concrete/config/install/base/dashboard.xml:543
 msgid "accessibility, easy mode"
 msgstr ""
 
 #. Keywords for page /dashboard/system/basics/social
-#: concrete/config/install/base/dashboard.xml:557
+#: concrete/config/install/base/dashboard.xml:551
 msgid "sharing, facebook, twitter"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:562
+#: concrete/config/install/base/dashboard.xml:556
 msgid "Bookmark Icons"
 msgstr "أيقونات الإشارة المرجعية"
 
-#: concrete/config/install/base/dashboard.xml:562
+#: concrete/config/install/base/dashboard.xml:556
 msgid "Bookmark icon and mobile home screen icon setup."
 msgstr "إعداد أيقونة المفضلة وأيقونة صفحة الجوال"
 
 #. Keywords for page /dashboard/system/basics/icons
-#: concrete/config/install/base/dashboard.xml:565
+#: concrete/config/install/base/dashboard.xml:559
 msgid "logo, favicon, iphone, icon, bookmark"
 msgstr "شعار, ايقونة المفضلة, آيفون, أيقونة, إشارة مرجعية logo, favicon, iphone, icon, bookmark"
 
 #. Keywords for page /dashboard/system/basics/editor
-#: concrete/config/install/base/dashboard.xml:573
+#: concrete/config/install/base/dashboard.xml:567
 msgid "tinymce, content block, fonts, editor, content, overlay"
 msgstr "بلوك محتوى, خطوط, محرر, محتوى, tinymce, content block, fonts, editor, content, overlay"
 
-#: concrete/config/install/base/dashboard.xml:578
+#: concrete/config/install/base/dashboard.xml:572
 msgid "Languages"
 msgstr "اللغات"
 
 #. Keywords for page /dashboard/system/basics/multilingual
-#: concrete/config/install/base/dashboard.xml:581
+#: concrete/config/install/base/dashboard.xml:575
 msgid "translate, translation, internationalization, multilingual"
 msgstr "ترجم, ترجمة, توطين, تدويل, تعدد لغات, لغات, translate, translation, internationalization, multilingual"
 
 #. Keywords for page /dashboard/system/basics/timezone
-#: concrete/config/install/base/dashboard.xml:589
+#: concrete/config/install/base/dashboard.xml:583
 msgid "timezone, profile, locale"
 msgstr "منطقة زمنية, ملف شخصي, ملف, شخصي, تعريب, لغة, timezone, profile, locale"
 
-#: concrete/config/install/base/dashboard.xml:594
+#: concrete/config/install/base/dashboard.xml:588
 msgid "Interface Preferences"
 msgstr "تفضيلات الواجهة"
 
 #. Keywords for page /dashboard/system/basics/images
-#: concrete/config/install/base/dashboard.xml:597
+#: concrete/config/install/base/dashboard.xml:591
 msgid "interface, quick nav, dashboard background, background image"
 msgstr "واجهة, تنقل سريع, خلفية لوحة التحكم, صورة الخلفية, خلفية, الخلفية, interface, quick nav, dashboard background, background image"
 
-#: concrete/config/install/base/dashboard.xml:603
+#: concrete/config/install/base/dashboard.xml:597
 msgid "SEO & Statistics"
 msgstr "الإحصائيات وموالفة محرّكات البحث (SEO)"
 
-#: concrete/config/install/base/dashboard.xml:603
+#: concrete/config/install/base/dashboard.xml:597
 msgid "Enable pretty URLs, statistics and tracking codes."
 msgstr "تمكين الروابط السهلة والإحصائيات ورموز التتبع."
 
-#: concrete/config/install/base/dashboard.xml:605
+#: concrete/config/install/base/dashboard.xml:599
 msgid "Pretty URLs"
 msgstr "الروابط السهلة"
 
 #. Keywords for page /dashboard/system/seo/urls
-#: concrete/config/install/base/dashboard.xml:608
+#: concrete/config/install/base/dashboard.xml:602
 msgid "vanity, pretty url, seo, pageview, view"
 msgstr "vanity, pretty url, seo, pageview, view, سهل, رابط, روابط, سيو, عرض, معاينة, موالفة"
 
-#: concrete/config/install/base/dashboard.xml:613
+#: concrete/config/install/base/dashboard.xml:607
 msgid "Bulk SEO Updater"
 msgstr "تحديثات موالفة محرّكات البحث"
 
 #. Keywords for page /dashboard/system/seo/bulk
-#: concrete/config/install/base/dashboard.xml:616
+#: concrete/config/install/base/dashboard.xml:610
 msgid "bulk, seo, change keywords, engine, optimization, search"
 msgstr "bulk, seo, change keywords, engine, optimization, search, سيو, كلمات البحث, محرك, تحسين, أداء, بحث"
 
 #. Keywords for page /dashboard/system/seo/codes
-#: concrete/config/install/base/dashboard.xml:624
+#: concrete/config/install/base/dashboard.xml:618
 msgid "traffic, statistics, google analytics, quant, pageviews, hits"
 msgstr "زيارات, إحصائيات, إحصائيات جوجل, مشاهدات, traffic, statistics, google analytics, quant, pageviews, hits"
 
-#: concrete/config/install/base/dashboard.xml:629
+#: concrete/config/install/base/dashboard.xml:623
 msgid "Excluded URL Word List"
 msgstr "قائمة كلمات العنوان المستثناة"
 
 #. Keywords for page /dashboard/system/seo/excluded
-#: concrete/config/install/base/dashboard.xml:632
+#: concrete/config/install/base/dashboard.xml:626
 msgid "pretty, slug"
 msgstr "سهل, سهلة, اختصار, رابط, pretty, slug"
 
 #. Keywords for page /dashboard/system/seo/statistics
-#: concrete/config/install/base/dashboard.xml:640
+#: concrete/config/install/base/dashboard.xml:634
 msgid "turn off statistics, tracking, statistics, pageviews, hits"
 msgstr "تعطيل الإحصائيات, تتبع, إحصائيات, مشاهدات, زيارات, turn off statistics, tracking, statistics, pageviews, hits"
 
-#: concrete/config/install/base/dashboard.xml:645
+#: concrete/config/install/base/dashboard.xml:639
 msgid "Search Index"
 msgstr "فهرس البحث"
 
 #. Keywords for page /dashboard/system/seo/searchindex
-#: concrete/config/install/base/dashboard.xml:648
+#: concrete/config/install/base/dashboard.xml:642
 msgid "configure search, site search, search option"
 msgstr "إعداد البحث, تهيئة البحث, بحث الموقع, configure search, site search, search option"
 
-#: concrete/config/install/base/dashboard.xml:655
+#: concrete/config/install/base/dashboard.xml:649
 msgid "File Manager Permissions"
 msgstr "صلاحيات مدير الملفات"
 
 #. Keywords for page /dashboard/system/files/permissions
-#: concrete/config/install/base/dashboard.xml:658
+#: concrete/config/install/base/dashboard.xml:652
 msgid "file options, file manager, upload, modify"
 msgstr "خيارات الملف, مدير الملفات, رفع, تحميل, تعديل, file options, file manager, upload, modify"
 
 #. Keywords for page /dashboard/system/files/filetypes
-#: concrete/config/install/base/dashboard.xml:666
+#: concrete/config/install/base/dashboard.xml:660
 msgid "security, files, media, extension, manager, upload"
 msgstr "أمن, حماية, أمان, ملفات, وسائط, لاحقة, امتداد, نوع, مدير, رفع, security, files, media, extension, manager, upload"
 
 #. Keywords for page /dashboard/system/files/thumbnails
-#: concrete/config/install/base/dashboard.xml:674
+#: concrete/config/install/base/dashboard.xml:668
 msgid "images, picture, responsive, retina"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:679
+#: concrete/config/install/base/dashboard.xml:673
 msgid "File Storage Locations"
 msgstr "مواضع تخزين الملفات"
 
 #. Keywords for page /dashboard/system/files/storage
-#: concrete/config/install/base/dashboard.xml:682
+#: concrete/config/install/base/dashboard.xml:676
 msgid "security, alternate storage, hide files"
 msgstr "حماية, أمن, تخزين بديل, إخفاء الملفات, security, alternate storage, hide files"
 
-#: concrete/config/install/base/dashboard.xml:688
+#: concrete/config/install/base/dashboard.xml:682
 msgid "Optimization"
 msgstr "التحسين"
 
-#: concrete/config/install/base/dashboard.xml:688
+#: concrete/config/install/base/dashboard.xml:682
 msgid "Keep your site running well."
 msgstr "حافظ على سير عمل موقعك بشكل جيّد."
 
-#: concrete/config/install/base/dashboard.xml:690
+#: concrete/config/install/base/dashboard.xml:684
 msgid "Cache & Speed Settings"
 msgstr "إعدادات الكاش والسرعة"
 
 #. Keywords for page /dashboard/system/optimization/cache
-#: concrete/config/install/base/dashboard.xml:693
+#: concrete/config/install/base/dashboard.xml:687
 msgid ""
 "cache option, change cache, override, turn on cache, turn off cache, no "
 "cache, page cache, caching"
 msgstr "كاش, تغيير الكاش, تجاوز, تشغيل الكاش, تعطيل الكاش, تفعيل الكاش, كاش الصفحة, الكاش, cache option, change cache, override, turn on cache, turn off cache, no cache, page cache, caching"
 
 #. Keywords for page /dashboard/system/optimization/clearcache
-#: concrete/config/install/base/dashboard.xml:703
+#: concrete/config/install/base/dashboard.xml:695
 msgid "cache option, turn off cache, no cache, page cache, caching"
 msgstr "خيار الكاش, تعطيل الكاش, تعطيل الكاش, بدون كاش, كاش الصفحة, cache option, turn off cache, no cache, page cache, caching"
 
-#: concrete/config/install/base/dashboard.xml:708
+#: concrete/config/install/base/dashboard.xml:700
 msgid "Automated Jobs"
 msgstr "الوظائف الآلية"
 
 #. Keywords for page /dashboard/system/optimization/jobs
-#: concrete/config/install/base/dashboard.xml:711
+#: concrete/config/install/base/dashboard.xml:703
 msgid ""
 "index search, reindex search, build sitemap, sitemap.xml, clear old "
 "versions, page versions, remove old"
 msgstr "فهرسة البحث, إعادة فهرسة البحث, بناء خريطة الموقع, إزالة الكاش, إزالة النسخ, نسخ الصفحة, تعديلات الصفحة, index search, reindex search, build sitemap, sitemap.xml, clear old versions, page versions, remove old"
 
-#: concrete/config/install/base/dashboard.xml:720
+#: concrete/config/install/base/dashboard.xml:710
 msgid "Permissions & Access"
 msgstr "الصلاحيات والوصول"
 
-#: concrete/config/install/base/dashboard.xml:720
+#: concrete/config/install/base/dashboard.xml:710
 msgid "Control who sees and edits your site."
 msgstr "تحديد من يمكنه أن يعرض ويعدل موقعك."
 
 #. Keywords for page /dashboard/system/permissions/site
-#: concrete/config/install/base/dashboard.xml:725
+#: concrete/config/install/base/dashboard.xml:715
 msgid "editors, hide site, offline, private, public, access"
 msgstr "محرر, إخفاء الموقع, حجب الموقع, خاص, سري, عام, وصول, editors, hide site, offline, private, public, access"
 
 #. Keywords for page /dashboard/system/permissions/tasks
-#: concrete/config/install/base/dashboard.xml:734
+#: concrete/config/install/base/dashboard.xml:724
 msgid "security, actions, administrator, admin, package, marketplace, search"
 msgstr "أمن, حماية, إجراءات, مدير, إدارة, حزمة, متجر, بحث, security, actions, administrator, admin, package, marketplace, search"
 
-#: concrete/config/install/base/dashboard.xml:742
+#: concrete/config/install/base/dashboard.xml:732
 msgid "Advanced Permissions"
 msgstr "الصلاحيات المتقدمة"
 
-#: concrete/config/install/base/dashboard.xml:745
+#: concrete/config/install/base/dashboard.xml:735
 msgid "IP Blacklist"
 msgstr "قائمة IP السوداء"
 
 #. Keywords for page /dashboard/system/permissions/blacklist
-#: concrete/config/install/base/dashboard.xml:748
+#: concrete/config/install/base/dashboard.xml:738
 msgid "security, lock ip, lock out, block ip, address, restrict, access"
 msgstr "قفل, حماية, أمن, حجب, منع, عنوان, وصول, security, lock ip, lock out, block ip, address, restrict, access"
 
-#: concrete/config/install/base/dashboard.xml:753
+#: concrete/config/install/base/dashboard.xml:743
 msgid "Captcha Setup"
 msgstr "إعداد الكابتشا"
 
 #. Keywords for page /dashboard/system/permissions/captcha
-#: concrete/config/install/base/dashboard.xml:756
+#: concrete/config/install/base/dashboard.xml:746
 msgid "security, registration"
 msgstr "أمن, حماية, تسجيل, اشتراك, security, registration"
 
-#: concrete/config/install/base/dashboard.xml:761
+#: concrete/config/install/base/dashboard.xml:751
 msgid "Spam Control"
 msgstr "التحكم في السبام"
 
 #. Keywords for page /dashboard/system/permissions/antispam
-#: concrete/config/install/base/dashboard.xml:764
+#: concrete/config/install/base/dashboard.xml:754
 msgid "antispam, block spam, security"
 msgstr "سبام, ازعاج, محاربة سبام, أمن, حماية, antispam, block spam, security"
 
 #. Keywords for page /dashboard/system/permissions/maintenance
-#: concrete/config/install/base/dashboard.xml:772
+#: concrete/config/install/base/dashboard.xml:762
 msgid "lock site, under construction, hide, hidden"
 msgstr "حجب الموقع, قيد الإنشاء, إخفاء, مخفي, محجوب, lock site, under construction, hide, hidden"
 
-#: concrete/config/install/base/dashboard.xml:779
+#: concrete/config/install/base/dashboard.xml:769
 msgid "Login & Registration"
 msgstr "تسجيل الدخول والاشتراك"
 
-#: concrete/config/install/base/dashboard.xml:779
+#: concrete/config/install/base/dashboard.xml:769
 msgid "Change login behaviors and setup public profiles."
 msgstr "تغيير سلوكيات تسجيل الدخول وإعداد الملفات الشخصية العامة."
 
-#: concrete/config/install/base/dashboard.xml:781
+#: concrete/config/install/base/dashboard.xml:771
 msgid "Login Destination"
 msgstr "وِجهة الدخول"
 
 #. Keywords for page /dashboard/system/registration/postlogin
-#: concrete/config/install/base/dashboard.xml:784
+#: concrete/config/install/base/dashboard.xml:774
 msgid "profile, login, redirect, specific, dashboard, administrators"
 msgstr "ملف شخصي, صفحة شخصية, توجيه, محدد, لوحة التحكم, المدراء, profile, login, redirect, specific, dashboard, administrators"
 
-#: concrete/config/install/base/dashboard.xml:789
+#: concrete/config/install/base/dashboard.xml:779
 msgid "Public Profiles"
 msgstr "تعميم الملفات الشخصية"
 
 #. Keywords for page /dashboard/system/registration/profiles
-#: concrete/config/install/base/dashboard.xml:792
+#: concrete/config/install/base/dashboard.xml:782
 msgid "member profile, member page, community, forums, social, avatar"
 msgstr "صفحة شخصية, صفحة العضو, ملف العضو, مجتمع, منتديات, اجتماعي, أفاتار, member profile, member page, community, forums, social, avatar"
 
 #. Keywords for page /dashboard/system/registration/open
-#: concrete/config/install/base/dashboard.xml:800
+#: concrete/config/install/base/dashboard.xml:790
 msgid "signup, new user, community, public registration, public, registration"
 msgstr ""
 
 #. Keywords for page /dashboard/system/registration/authentication
-#: concrete/config/install/base/dashboard.xml:808
+#: concrete/config/install/base/dashboard.xml:798
 msgid "auth, authentication, types, oauth, facebook, login, registration"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:814
+#: concrete/config/install/base/dashboard.xml:804
 msgid "Control how your site send and processes mail."
 msgstr "التحكم في كيفية إرسال البريد الإلكتروني ومُعالجته."
 
 #. Keywords for page /dashboard/system/mail
-#: concrete/config/install/base/dashboard.xml:817
+#: concrete/config/install/base/dashboard.xml:807
 msgid "smtp, mail settings"
 msgstr "بريد, رسالة, رسائل, ايميل, إعدادات البريد, smtp, mail settings"
 
-#: concrete/config/install/base/dashboard.xml:822
+#: concrete/config/install/base/dashboard.xml:812
 msgid "SMTP Method"
 msgstr "استخدام SMTP"
 
 #. Keywords for page /dashboard/system/mail/method
-#: concrete/config/install/base/dashboard.xml:825
+#: concrete/config/install/base/dashboard.xml:815
 msgid "email server, mail settings, mail configuration, external, internal"
 msgstr "خادم البريد, إعدادات البريد, تهيئة البريد, خارجي, داخلي, email server, mail settings, mail configuration, external, internal"
 
-#: concrete/config/install/base/dashboard.xml:830
+#: concrete/config/install/base/dashboard.xml:820
 msgid "Test Mail Settings"
 msgstr "إعدادات البريد التجريبي"
 
 #. Keywords for page /dashboard/system/mail/method/test
-#: concrete/config/install/base/dashboard.xml:833
+#: concrete/config/install/base/dashboard.xml:823
 msgid "test smtp, test mail"
 msgstr "تجربة, test smtp, test mail"
 
-#: concrete/config/install/base/dashboard.xml:838
+#: concrete/config/install/base/dashboard.xml:828
 msgid "Email Importers"
 msgstr "مستورِدات البريد الإلكتروني"
 
 #. Keywords for page /dashboard/system/mail/importers
-#: concrete/config/install/base/dashboard.xml:841
+#: concrete/config/install/base/dashboard.xml:831
 msgid ""
 "email server, mail settings, mail configuration, private message, message "
 "system, import, email, message"
 msgstr "خادم البريد, إعداد البريد, تهيئة البريد, رسالة خاصة, نظام الرسائل, استيراد, بريد إلكتروني, رسالة, email server, mail settings, mail configuration, private message, message system, import, email, message"
 
-#: concrete/config/install/base/dashboard.xml:850
+#: concrete/config/install/base/dashboard.xml:838
 msgid "Conversations"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:850
+#: concrete/config/install/base/dashboard.xml:838
 msgid "Manage your conversations settings"
 msgstr ""
 
 #. Keywords for page /dashboard/system/conversations
-#: concrete/config/install/base/dashboard.xml:853
+#: concrete/config/install/base/dashboard.xml:841
 msgid "conversations"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:858
+#: concrete/config/install/base/dashboard.xml:846
 msgid "Conversations Editor"
 msgstr ""
 
 #. Keywords for page /dashboard/system/conversations/editor
-#: concrete/config/install/base/dashboard.xml:861
+#: concrete/config/install/base/dashboard.xml:849
 msgid "conversations editor, editor"
 msgstr ""
 
 #. Keywords for page /dashboard/system/conversations/points
-#: concrete/config/install/base/dashboard.xml:869
+#: concrete/config/install/base/dashboard.xml:857
 msgid "conversations ratings, ratings, community, community points"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:874
+#: concrete/config/install/base/dashboard.xml:862
 msgid "Banned Words"
 msgstr ""
 
 #. Keywords for page /dashboard/system/conversations/bannedwords
-#: concrete/config/install/base/dashboard.xml:877
+#: concrete/config/install/base/dashboard.xml:865
 msgid ""
 "conversations bad words, banned words, banned, bad words, bad, words, list"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:883
+#: concrete/config/install/base/dashboard.xml:871
 msgid "Setup attributes for pages, users, files and more."
 msgstr "إعداد صِفات الصفحات والمستخدمين والملفات وغيرها."
 
 #. Keywords for page /dashboard/system/attributes
-#: concrete/config/install/base/dashboard.xml:886
+#: concrete/config/install/base/dashboard.xml:874
 msgid "attribute configuration"
 msgstr "تهيئة الصفات, attribute configuration"
 
-#: concrete/config/install/base/dashboard.xml:891
+#: concrete/config/install/base/dashboard.xml:879
 msgid "Group attributes into sets for easier organization"
 msgstr "جَمْع الصفات في مجموعات لتنظيم أسهل."
 
 #. Keywords for page /dashboard/system/attributes/sets
-#: concrete/config/install/base/dashboard.xml:894
+#: concrete/config/install/base/dashboard.xml:882
 msgid "attributes, sets"
 msgstr "صفات, مجموعات, attributes, sets"
 
-#: concrete/config/install/base/dashboard.xml:899
+#: concrete/config/install/base/dashboard.xml:887
 msgid "Types"
 msgstr "الأنواع"
 
-#: concrete/config/install/base/dashboard.xml:899
+#: concrete/config/install/base/dashboard.xml:887
 msgid "Choose which attribute types are available for different items."
 msgstr "اختر أنواع الصِّفات المتاحة لمُختلف العناصر."
 
 #. Keywords for page /dashboard/system/attributes/types
-#: concrete/config/install/base/dashboard.xml:902
+#: concrete/config/install/base/dashboard.xml:890
 msgid "attributes, types"
 msgstr "صفات, أنواع, attributes, types"
 
 #. Keywords for page /dashboard/system/attributes/topics
-#: concrete/config/install/base/dashboard.xml:910
+#: concrete/config/install/base/dashboard.xml:898
 msgid "topics, tags, taxonomy"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:918
+#: concrete/config/install/base/dashboard.xml:906
 msgid "Advanced settings for web developers."
 msgstr "الإعدادات المتقدمة لمطوري الوب."
 
-#: concrete/config/install/base/dashboard.xml:926
+#: concrete/config/install/base/dashboard.xml:914
 msgid "Environment Information"
 msgstr "معلومات بيئة العمل"
 
 #. Keywords for page /dashboard/system/environment/info
-#: concrete/config/install/base/dashboard.xml:929
+#: concrete/config/install/base/dashboard.xml:917
 msgid "overrides, system info, debug, support, help"
 msgstr "تجاوز, تجاوزات, معلومات النظام, إزالة العلل, دعم, الدعم الفني, مساعدة, المساعدة, overrides, system info, debug, support, help"
 
-#: concrete/config/install/base/dashboard.xml:934
+#: concrete/config/install/base/dashboard.xml:922
 msgid "Debug Settings"
 msgstr "إعدادات إزالة العلل"
 
 #. Keywords for page /dashboard/system/environment/debug
-#: concrete/config/install/base/dashboard.xml:937
+#: concrete/config/install/base/dashboard.xml:925
 msgid "errors, exceptions, develop, support, help"
 msgstr "أخطاء, استثناءات, استثناء, تطوير, دعم, مساعدة, errors, exceptions, develop, support, help"
 
-#: concrete/config/install/base/dashboard.xml:942
+#: concrete/config/install/base/dashboard.xml:930
 msgid "Logging Settings"
 msgstr "إعدادات كتابة السجلّات"
 
 #. Keywords for page /dashboard/system/environment/logging
-#: concrete/config/install/base/dashboard.xml:945
+#: concrete/config/install/base/dashboard.xml:933
 msgid "email, logging, logs, smtp, pop, errors, mysql, log"
 msgstr "رسالة, بريد إلكتروني, سجل, سجلات, أخطاء, email, logging, logs, smtp, pop, errors, mysql, log"
 
-#: concrete/config/install/base/dashboard.xml:951
+#: concrete/config/install/base/dashboard.xml:939
 msgid "Proxy Server"
 msgstr "خادم البروكسي"
 
 #. Keywords for page /dashboard/system/environment/proxy
-#: concrete/config/install/base/dashboard.xml:954
+#: concrete/config/install/base/dashboard.xml:942
 msgid "network, proxy server"
 msgstr "شبكة, خادم بروكسي, network, proxy server"
 
-#: concrete/config/install/base/dashboard.xml:959
+#: concrete/config/install/base/dashboard.xml:947
 msgid "Backup & Restore"
 msgstr "النسخ الاحتياطي والاستعادة"
 
-#: concrete/config/install/base/dashboard.xml:959
+#: concrete/config/install/base/dashboard.xml:947
 msgid "Backup or restore your website."
 msgstr "النسخ الاحتياطي لموقعك واستعادته."
 
 #. Keywords for page /dashboard/system/backup
-#: concrete/config/install/base/dashboard.xml:962
+#: concrete/config/install/base/dashboard.xml:950
 msgid "export, backup, database, sql, mysql, encryption, restore"
 msgstr "تصدير, نسخ, احتياطي, قاعدة, بيانات, تشفير, استرجاع, export, backup, database, sql, mysql, encryption, restore"
 
-#: concrete/config/install/base/dashboard.xml:967
+#: concrete/config/install/base/dashboard.xml:955
 msgid "Backup Database"
 msgstr "النسخ الاحتياطي لقاعدة البيانات"
 
 #. Keywords for page /dashboard/system/backup/update
-#: concrete/config/install/base/dashboard.xml:972
+#: concrete/config/install/base/dashboard.xml:960
 msgid "upgrade, new version, update"
 msgstr "ترقية, تحديث, إصدار, نسخة, جديد, جديدة, upgrade, new version, update"
 
-#: concrete/config/install/base/dashboard.xml:980
+#: concrete/config/install/base/dashboard.xml:968
 msgid "Dashboard Primary + Five"
 msgstr "لوحة أجهزة القياس الأساسية + الخمسة"
 
-#: concrete/config/install/base/dashboard.xml:981
+#: concrete/config/install/base/dashboard.xml:969
 msgid "Dashboard Header + Four Column"
 msgstr "ترويسة لوحة التحكم + أربعة أعمدة"
 
-#: concrete/config/install/base/dashboard.xml:985
+#: concrete/config/install/base/dashboard.xml:973
 msgctxt "PageTemplateName"
 msgid "Stack"
 msgstr "كوْمة"
 
-#: concrete/config/install/base/dashboard.xml:986
+#: concrete/config/install/base/dashboard.xml:974
 msgctxt "PageTemplateName"
 msgid "Dashboard Primary + Five"
 msgstr "لوحة أجهزة القياس الأساسية + الخمسة"
 
-#: concrete/config/install/base/dashboard.xml:987
+#: concrete/config/install/base/dashboard.xml:975
 msgctxt "PageTemplateName"
 msgid "Dashboard Header + Four Column"
 msgstr "ترويسة لوحة التحكم + أربعة أعمدة"
 
-#: concrete/config/install/base/dashboard.xml:992
+#: concrete/config/install/base/dashboard.xml:980
 msgid "Welcome to concrete5"
 msgstr "مرحبا بكم في concrete5"
 
-#: concrete/config/install/base/dashboard.xml:992
+#: concrete/config/install/base/dashboard.xml:980
 msgid ""
 "Learn about how to use concrete5, how to develop for concrete5, and get "
 "general help."
 msgstr "تعلم كيفية استخدام concrete5،وتطويره والحصول على المساعدة عامّة."
 
-#: concrete/config/install/base/dashboard.xml:998
+#: concrete/config/install/base/dashboard.xml:986
 msgctxt "AreaName"
 msgid "Header"
 msgstr "الترويسة"
 
-#: concrete/config/install/base/dashboard.xml:1009
+#: concrete/config/install/base/dashboard.xml:997
 msgctxt "AreaName"
 msgid "Column 1"
 msgstr "عمود 1"
 
-#: concrete/config/install/base/dashboard.xml:1023
+#: concrete/config/install/base/dashboard.xml:1011
 msgctxt "AreaName"
 msgid "Column 2"
 msgstr "عمود 2"
 
-#: concrete/config/install/base/dashboard.xml:1036
+#: concrete/config/install/base/dashboard.xml:1024
 msgctxt "AreaName"
 msgid "Column 3"
 msgstr "عمود 3"
 
-#: concrete/config/install/base/dashboard.xml:1050
+#: concrete/config/install/base/dashboard.xml:1038
 msgctxt "AreaName"
 msgid "Column 4"
 msgstr "عمود 4"
 
-#: concrete/config/install/base/dashboard.xml:1076
+#: concrete/config/install/base/dashboard.xml:1064
 msgctxt "AreaName"
 msgid "Primary"
 msgstr "أولي"
 
-#: concrete/config/install/base/dashboard.xml:1080
+#: concrete/config/install/base/dashboard.xml:1068
 msgctxt "AreaName"
 msgid "Secondary 1"
 msgstr "ثانوي 1"
 
-#: concrete/config/install/base/dashboard.xml:1089
+#: concrete/config/install/base/dashboard.xml:1077
 msgctxt "AreaName"
 msgid "Secondary 2"
 msgstr "ثانوي 2"
 
-#: concrete/config/install/base/dashboard.xml:1098
+#: concrete/config/install/base/dashboard.xml:1086
 msgctxt "AreaName"
 msgid "Secondary 3"
 msgstr "ثانوي 3"
 
-#: concrete/config/install/base/dashboard.xml:1101
+#: concrete/config/install/base/dashboard.xml:1089
 msgctxt "AreaName"
 msgid "Secondary 4"
 msgstr "ثانوي 4"
 
-#: concrete/config/install/base/dashboard.xml:1104
+#: concrete/config/install/base/dashboard.xml:1092
 msgctxt "AreaName"
 msgid "Secondary 5"
 msgstr "ثانوي 5"
@@ -16934,22 +16939,32 @@ msgstr ""
 
 #: concrete/config/install/base/login_registration.xml:20
 #: concrete/config/install/packages/elemental_blank/content.xml:29
-#: concrete/config/install/packages/elemental_full/content.xml:156
-#: concrete/config/install/packages/elemental_full/content.xml:247
-#: concrete/config/install/packages/elemental_full/content.xml:350
-#: concrete/config/install/packages/elemental_full/content.xml:618
-#: concrete/config/install/packages/elemental_full/content.xml:908
-#: concrete/config/install/packages/elemental_full/content.xml:926
-#: concrete/config/install/packages/elemental_full/content.xml:1071
-#: concrete/config/install/packages/elemental_full/content.xml:1085
-#: concrete/config/install/packages/elemental_full/content.xml:1254
-#: concrete/config/install/packages/elemental_full/content.xml:1434
-#: concrete/config/install/packages/elemental_full/content.xml:1497
-#: concrete/config/install/packages/elemental_full/content.xml:1533
-#: concrete/config/install/packages/elemental_full/content.xml:1577
-#: concrete/config/install/packages/elemental_full/content.xml:1643
-#: concrete/config/install/packages/elemental_full/content.xml:1711
-#: concrete/config/install/packages/elemental_full/content.xml:1779
+#: concrete/config/install/packages/elemental_full/content.xml:196
+#: concrete/config/install/packages/elemental_full/content.xml:287
+#: concrete/config/install/packages/elemental_full/content.xml:390
+#: concrete/config/install/packages/elemental_full/content.xml:551
+#: concrete/config/install/packages/elemental_full/content.xml:715
+#: concrete/config/install/packages/elemental_full/content.xml:794
+#: concrete/config/install/packages/elemental_full/content.xml:944
+#: concrete/config/install/packages/elemental_full/content.xml:1234
+#: concrete/config/install/packages/elemental_full/content.xml:1252
+#: concrete/config/install/packages/elemental_full/content.xml:1397
+#: concrete/config/install/packages/elemental_full/content.xml:1411
+#: concrete/config/install/packages/elemental_full/content.xml:1580
+#: concrete/config/install/packages/elemental_full/content.xml:1760
+#: concrete/config/install/packages/elemental_full/content.xml:1823
+#: concrete/config/install/packages/elemental_full/content.xml:1859
+#: concrete/config/install/packages/elemental_full/content.xml:1903
+#: concrete/config/install/packages/elemental_full/content.xml:1969
+#: concrete/config/install/packages/elemental_full/content.xml:2037
+#: concrete/config/install/packages/elemental_full/content.xml:2105
+#: concrete/config/install/packages/elemental_full/content.xml:2138
+#: concrete/config/install/packages/elemental_full/content.xml:2191
+#: concrete/config/install/packages/elemental_full/content.xml:2247
+#: concrete/config/install/packages/elemental_full/content.xml:2308
+#: concrete/config/install/packages/elemental_full/content.xml:2364
+#: concrete/config/install/packages/elemental_full/content.xml:2420
+#: concrete/config/install/packages/elemental_full/content.xml:2476
 msgctxt "AreaName"
 msgid "Main"
 msgstr "الرئيسية"
@@ -18123,245 +18138,421 @@ msgstr "صورة مُصغّرة"
 
 #: concrete/config/install/packages/elemental_full/content.xml:24
 msgctxt "AttributeKeyName"
-msgid "Topic"
+msgid "Blog Entry Topics"
 msgstr ""
 
 #: concrete/config/install/packages/elemental_full/content.xml:25
 msgctxt "TreeName"
-msgid "Topics"
+msgid "Blog Entries"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:32
+#: concrete/config/install/packages/elemental_full/content.xml:27
+msgctxt "AttributeKeyName"
+msgid "Project Topics"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:28
+msgctxt "TreeName"
+msgid "Projects"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:30
+msgctxt "AttributeKeyName"
+msgid "Client"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:31
+msgctxt "AttributeKeyName"
+msgid "Task"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:34
+msgctxt "SelectAttributeValue"
+msgid "Architecture"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:35
+msgctxt "SelectAttributeValue"
+msgid "Multimedia"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:36
+msgctxt "SelectAttributeValue"
+msgid "Design"
+msgstr "التصميم"
+
+#: concrete/config/install/packages/elemental_full/content.xml:37
+msgctxt "SelectAttributeValue"
+msgid "Production"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:38
+msgctxt "SelectAttributeValue"
+msgid "Development"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:39
+msgctxt "SelectAttributeValue"
+msgid "Quality Assurance"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:43
+msgctxt "AttributeKeyName"
+msgid "Skills"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:46
+msgctxt "SelectAttributeValue"
+msgid "HTML"
+msgstr "HTML"
+
+#: concrete/config/install/packages/elemental_full/content.xml:47
+msgctxt "SelectAttributeValue"
+msgid "JavaScript"
+msgstr "جافاسكربت"
+
+#: concrete/config/install/packages/elemental_full/content.xml:48
+msgctxt "SelectAttributeValue"
+msgid "PHP"
+msgstr "PHP"
+
+#: concrete/config/install/packages/elemental_full/content.xml:49
+msgctxt "SelectAttributeValue"
+msgid "Database"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:50
+msgctxt "SelectAttributeValue"
+msgid "CSS"
+msgstr "CSS"
+
+#: concrete/config/install/packages/elemental_full/content.xml:51
+msgctxt "SelectAttributeValue"
+msgid "Ruby"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:52
+msgctxt "SelectAttributeValue"
+msgid "Java"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:53
+msgctxt "SelectAttributeValue"
+msgid "iOS/Android/App Development"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:54
+msgctxt "SelectAttributeValue"
+msgid "Photoshop"
+msgstr "فوتوشوب"
+
+#: concrete/config/install/packages/elemental_full/content.xml:55
+msgctxt "SelectAttributeValue"
+msgid "Python"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:56
+msgctxt "SelectAttributeValue"
+msgid "Writing"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:66
 msgctxt "AttributeSetName"
 msgid "Jobs"
 msgstr "الوظائف"
 
-#: concrete/config/install/packages/elemental_full/content.xml:36
+#: concrete/config/install/packages/elemental_full/content.xml:70
 msgctxt "AttributeSetName"
 msgid "Blog"
 msgstr "مدوّنة"
 
-#: concrete/config/install/packages/elemental_full/content.xml:42
+#: concrete/config/install/packages/elemental_full/content.xml:73
+msgctxt "AttributeSetName"
+msgid "Portfolio"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:82
 msgctxt "PageTemplateName"
 msgid "Blank"
 msgstr ""
 
 #: concrete/config/install/packages/elemental_blank/content.xml:7
-#: concrete/config/install/packages/elemental_full/content.xml:43
+#: concrete/config/install/packages/elemental_full/content.xml:83
 msgctxt "PageTemplateName"
 msgid "Full"
 msgstr "كامل"
 
-#: concrete/config/install/packages/elemental_full/content.xml:44
+#: concrete/config/install/packages/elemental_full/content.xml:84
 msgctxt "PageTemplateName"
 msgid "Left Sidebar"
 msgstr "شريط جانبي أيسر"
 
-#: concrete/config/install/packages/elemental_full/content.xml:45
+#: concrete/config/install/packages/elemental_full/content.xml:85
 msgctxt "PageTemplateName"
 msgid "Right Sidebar"
 msgstr "شريط جانبي أيمن"
 
-#: concrete/config/install/packages/elemental_full/content.xml:48
+#: concrete/config/install/packages/elemental_full/content.xml:88
 msgid "Empty Page"
 msgstr ""
 
 #: concrete/config/install/packages/elemental_blank/content.xml:15
-#: concrete/config/install/packages/elemental_full/content.xml:53
-#: concrete/config/install/packages/elemental_full/content.xml:84
+#: concrete/config/install/packages/elemental_full/content.xml:93
+#: concrete/config/install/packages/elemental_full/content.xml:124
 msgctxt "PageTypeComposerFormLayoutSetName"
 msgid "Basics"
 msgstr "الأساسيات"
 
 #: concrete/config/install/packages/elemental_blank/content.xml:16
-#: concrete/config/install/packages/elemental_full/content.xml:55
+#: concrete/config/install/packages/elemental_full/content.xml:95
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Page Name"
 msgstr "اسم الصفحة"
 
-#: concrete/config/install/packages/elemental_full/content.xml:77
+#: concrete/config/install/packages/elemental_full/content.xml:117
 msgid "Job Posting"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:86
+#: concrete/config/install/packages/elemental_full/content.xml:126
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Job Name"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:88
+#: concrete/config/install/packages/elemental_full/content.xml:128
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Posting Date"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:90
+#: concrete/config/install/packages/elemental_full/content.xml:130
 msgctxt "PageTypeComposerFormLayoutSetName"
 msgid "About This Job"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:95
+#: concrete/config/install/packages/elemental_full/content.xml:135
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Brief Description"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:97
+#: concrete/config/install/packages/elemental_full/content.xml:137
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Job Details"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:105
-#: concrete/config/install/packages/elemental_full/content.xml:1453
-#: concrete/config/install/packages/elemental_full/content.xml:1516
-#: concrete/config/install/packages/elemental_full/content.xml:1655
-#: concrete/config/install/packages/elemental_full/content.xml:1723
-#: concrete/config/install/packages/elemental_full/content.xml:1791
+#: concrete/config/install/packages/elemental_full/content.xml:145
+#: concrete/config/install/packages/elemental_full/content.xml:663
+#: concrete/config/install/packages/elemental_full/content.xml:742
+#: concrete/config/install/packages/elemental_full/content.xml:1779
+#: concrete/config/install/packages/elemental_full/content.xml:1842
+#: concrete/config/install/packages/elemental_full/content.xml:1981
+#: concrete/config/install/packages/elemental_full/content.xml:2049
+#: concrete/config/install/packages/elemental_full/content.xml:2117
+#: concrete/config/install/packages/elemental_full/content.xml:2179
+#: concrete/config/install/packages/elemental_full/content.xml:2235
+#: concrete/config/install/packages/elemental_full/content.xml:2296
+#: concrete/config/install/packages/elemental_full/content.xml:2352
+#: concrete/config/install/packages/elemental_full/content.xml:2408
+#: concrete/config/install/packages/elemental_full/content.xml:2464
 msgctxt "AreaName"
 msgid "Page Header"
 msgstr "رأس الصفحة"
 
-#: concrete/config/install/packages/elemental_full/content.xml:117
-#: concrete/config/install/packages/elemental_full/content.xml:365
-#: concrete/config/install/packages/elemental_full/content.xml:1458
-#: concrete/config/install/packages/elemental_full/content.xml:1521
-#: concrete/config/install/packages/elemental_full/content.xml:1658
-#: concrete/config/install/packages/elemental_full/content.xml:1726
-#: concrete/config/install/packages/elemental_full/content.xml:1794
+#: concrete/config/install/packages/elemental_full/content.xml:157
+#: concrete/config/install/packages/elemental_full/content.xml:405
+#: concrete/config/install/packages/elemental_full/content.xml:675
+#: concrete/config/install/packages/elemental_full/content.xml:754
+#: concrete/config/install/packages/elemental_full/content.xml:1784
+#: concrete/config/install/packages/elemental_full/content.xml:1847
+#: concrete/config/install/packages/elemental_full/content.xml:1984
+#: concrete/config/install/packages/elemental_full/content.xml:2052
+#: concrete/config/install/packages/elemental_full/content.xml:2120
+#: concrete/config/install/packages/elemental_full/content.xml:2184
+#: concrete/config/install/packages/elemental_full/content.xml:2240
+#: concrete/config/install/packages/elemental_full/content.xml:2301
+#: concrete/config/install/packages/elemental_full/content.xml:2357
+#: concrete/config/install/packages/elemental_full/content.xml:2413
+#: concrete/config/install/packages/elemental_full/content.xml:2469
 msgctxt "AreaName"
 msgid "Sidebar"
 msgstr "شريط جانبي"
 
-#: concrete/config/install/packages/elemental_full/content.xml:224
-#: concrete/config/install/packages/elemental_full/content.xml:463
-#: concrete/config/install/packages/elemental_full/content.xml:1464
-#: concrete/config/install/packages/elemental_full/content.xml:1527
-#: concrete/config/install/packages/elemental_full/content.xml:1615
-#: concrete/config/install/packages/elemental_full/content.xml:1683
-#: concrete/config/install/packages/elemental_full/content.xml:1751
+#: concrete/config/install/packages/elemental_full/content.xml:264
+#: concrete/config/install/packages/elemental_full/content.xml:503
+#: concrete/config/install/packages/elemental_full/content.xml:722
+#: concrete/config/install/packages/elemental_full/content.xml:801
+#: concrete/config/install/packages/elemental_full/content.xml:1790
+#: concrete/config/install/packages/elemental_full/content.xml:1853
+#: concrete/config/install/packages/elemental_full/content.xml:1941
+#: concrete/config/install/packages/elemental_full/content.xml:2009
+#: concrete/config/install/packages/elemental_full/content.xml:2077
+#: concrete/config/install/packages/elemental_full/content.xml:2202
+#: concrete/config/install/packages/elemental_full/content.xml:2258
+#: concrete/config/install/packages/elemental_full/content.xml:2319
+#: concrete/config/install/packages/elemental_full/content.xml:2375
+#: concrete/config/install/packages/elemental_full/content.xml:2431
+#: concrete/config/install/packages/elemental_full/content.xml:2487
 msgctxt "AreaName"
 msgid "Page Footer"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:232
-#: concrete/config/install/packages/elemental_full/content.xml:1571
+#: concrete/config/install/packages/elemental_full/content.xml:272
+#: concrete/config/install/packages/elemental_full/content.xml:1897
 msgid "Blog"
 msgstr "مدوّنة"
 
-#: concrete/config/install/packages/elemental_full/content.xml:239
+#: concrete/config/install/packages/elemental_full/content.xml:279
 msgctxt "PageTypeComposerFormLayoutSetName"
 msgid "Details"
 msgstr "التفاصيل"
 
-#: concrete/config/install/packages/elemental_full/content.xml:240
+#: concrete/config/install/packages/elemental_full/content.xml:280
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Blog Name"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:321
-#: concrete/config/install/packages/elemental_full/content.xml:882
-#: concrete/config/install/packages/elemental_full/content.xml:1583
+#: concrete/config/install/packages/elemental_full/content.xml:361
+#: concrete/config/install/packages/elemental_full/content.xml:627
+#: concrete/config/install/packages/elemental_full/content.xml:1208
+#: concrete/config/install/packages/elemental_full/content.xml:1909
+#: concrete/config/install/packages/elemental_full/content.xml:2145
 msgctxt "AreaName"
 msgid "Main Footer"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:329
+#: concrete/config/install/packages/elemental_full/content.xml:369
 msgid "Blog Entry"
 msgstr "تدوينة جديدة"
 
-#: concrete/config/install/packages/elemental_full/content.xml:336
+#: concrete/config/install/packages/elemental_full/content.xml:376
 msgctxt "PageTypeComposerFormLayoutSetName"
 msgid "Post Details"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:337
+#: concrete/config/install/packages/elemental_full/content.xml:377
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Entry Name"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:338
+#: concrete/config/install/packages/elemental_full/content.xml:378
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Short Description"
 msgstr "الوصف المختصر"
 
-#: concrete/config/install/packages/elemental_full/content.xml:339
+#: concrete/config/install/packages/elemental_full/content.xml:379
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Blog"
 msgstr "مدوّنة"
 
-#: concrete/config/install/packages/elemental_full/content.xml:340
+#: concrete/config/install/packages/elemental_full/content.xml:380
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
-msgid "Topic"
+msgid "Topics"
 msgstr ""
 
 #: concrete/config/install/packages/elemental_blank/content.xml:22
-#: concrete/config/install/packages/elemental_full/content.xml:342
+#: concrete/config/install/packages/elemental_full/content.xml:382
+#: concrete/config/install/packages/elemental_full/content.xml:655
 msgctxt "PageTypeComposerFormLayoutSetName"
 msgid "Content"
 msgstr "مُحتوى"
 
-#: concrete/config/install/packages/elemental_full/content.xml:498
+#: concrete/config/install/packages/elemental_full/content.xml:536
+#: concrete/config/install/packages/elemental_full/content.xml:2132
+msgid "Portfolio"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:544
+msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
+msgid "Name"
+msgstr "الاسم"
+
+#: concrete/config/install/packages/elemental_full/content.xml:635
+msgid "Portfolio Project"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:643
+msgctxt "PageTypeComposerFormLayoutSetName"
+msgid "Page"
+msgstr "صفحة"
+
+#: concrete/config/install/packages/elemental_full/content.xml:646
+msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
+msgid "Portfolio"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:648
+msgctxt "PageTypeComposerFormLayoutSetName"
+msgid "Project Data"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:650
+msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
+msgid "Date Completed"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:824
 msgid "Footer Contact"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:499
-#: concrete/config/install/packages/elemental_full/content.xml:513
-#: concrete/config/install/packages/elemental_full/content.xml:527
-#: concrete/config/install/packages/elemental_full/content.xml:541
-#: concrete/config/install/packages/elemental_full/content.xml:554
-#: concrete/config/install/packages/elemental_full/content.xml:566
-#: concrete/config/install/packages/elemental_full/content.xml:586
-#: concrete/config/install/packages/elemental_full/content.xml:603
+#: concrete/config/install/packages/elemental_full/content.xml:825
+#: concrete/config/install/packages/elemental_full/content.xml:839
+#: concrete/config/install/packages/elemental_full/content.xml:853
+#: concrete/config/install/packages/elemental_full/content.xml:867
+#: concrete/config/install/packages/elemental_full/content.xml:880
+#: concrete/config/install/packages/elemental_full/content.xml:892
+#: concrete/config/install/packages/elemental_full/content.xml:912
+#: concrete/config/install/packages/elemental_full/content.xml:929
 msgid "Main"
 msgstr "الرئيسية"
 
-#: concrete/config/install/packages/elemental_full/content.xml:512
+#: concrete/config/install/packages/elemental_full/content.xml:838
 msgid "Footer Legal"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:526
+#: concrete/config/install/packages/elemental_full/content.xml:852
 msgid "Footer Navigation"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:540
+#: concrete/config/install/packages/elemental_full/content.xml:866
 msgid "Footer Site Title"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:553
+#: concrete/config/install/packages/elemental_full/content.xml:879
 msgid "Footer Social"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:565
+#: concrete/config/install/packages/elemental_full/content.xml:891
 msgid "Header Navigation"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:585
+#: concrete/config/install/packages/elemental_full/content.xml:911
 msgid "Header Search"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:602
+#: concrete/config/install/packages/elemental_full/content.xml:928
 msgid "Header Site Title"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:925
+#: concrete/config/install/packages/elemental_full/content.xml:1251
 msgid "About"
 msgstr "نبذة"
 
-#: concrete/config/install/packages/elemental_full/content.xml:1065
+#: concrete/config/install/packages/elemental_full/content.xml:1391
 msgid "Blank Page"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1084
+#: concrete/config/install/packages/elemental_full/content.xml:1410
 msgid "Contact Us"
 msgstr "اتصل بنا"
 
-#: concrete/config/install/packages/elemental_full/content.xml:1253
+#: concrete/config/install/packages/elemental_full/content.xml:1579
 msgid "Careers"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1408
+#: concrete/config/install/packages/elemental_full/content.xml:1734
 msgid "Web Developer"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1408
-#: concrete/config/install/packages/elemental_full/content.xml:1471
+#: concrete/config/install/packages/elemental_full/content.xml:1734
+#: concrete/config/install/packages/elemental_full/content.xml:1797
 msgid ""
 "Curabitur sagittis elementum felis at sodales. Nullam fermentum at urna quis"
 " accumsan. Nam bibendum leo nisi, lacinia molestie arcu consequat quis. "
@@ -18371,15 +18562,15 @@ msgid ""
 "consectetur lacus."
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1471
+#: concrete/config/install/packages/elemental_full/content.xml:1797
 msgid "Sales Associate"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1587
+#: concrete/config/install/packages/elemental_full/content.xml:1913
 msgid "Hello World!"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1587
+#: concrete/config/install/packages/elemental_full/content.xml:1913
 msgid ""
 "Pellentesque ultricies ligula vel neque dictum, eu mollis tortor adipiscing."
 " Etiam congue, est vel tincidunt vestibulum, nunc nunc porta nulla, at "
@@ -18387,40 +18578,40 @@ msgid ""
 "mattis aliquam ante dictum."
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1611
-#: concrete/config/install/packages/elemental_full/content.xml:1747
+#: concrete/config/install/packages/elemental_full/content.xml:1937
+#: concrete/config/install/packages/elemental_full/content.xml:2073
 msgctxt "Topic"
 msgid "/Projects"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1666
-#: concrete/config/install/packages/elemental_full/content.xml:1734
-#: concrete/config/install/packages/elemental_full/content.xml:1802
+#: concrete/config/install/packages/elemental_full/content.xml:1992
+#: concrete/config/install/packages/elemental_full/content.xml:2060
+#: concrete/config/install/packages/elemental_full/content.xml:2128
 msgctxt "AreaName"
 msgid "Sidebar Footer"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1670
+#: concrete/config/install/packages/elemental_full/content.xml:1996
 msgid "Another Blog Post"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1670
+#: concrete/config/install/packages/elemental_full/content.xml:1996
 msgid ""
 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet "
 "consectetur lacus. Vestibulum neque lectus, egestas non cursus vitae, "
 "aliquam at magna."
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1679
+#: concrete/config/install/packages/elemental_full/content.xml:2005
 msgctxt "Topic"
 msgid "/Humor"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1738
+#: concrete/config/install/packages/elemental_full/content.xml:2064
 msgid "A Beautiful Site Deserves a Beautiful Blog"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1738
+#: concrete/config/install/packages/elemental_full/content.xml:2064
 msgid ""
 "Donec blandit lectus nec neque ullamcorper rhoncus. Sed adipiscing tempus "
 "sem eu molestie. Aenean laoreet pretium ante vitae ultrices. Aenean eu "
@@ -18428,44 +18619,102 @@ msgid ""
 " erat."
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1814
+#: concrete/config/install/packages/elemental_full/content.xml:2149
+msgid "Project Title"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:2158
+#: concrete/config/install/packages/elemental_full/content.xml:2274
+#: concrete/config/install/packages/elemental_full/content.xml:2335
+#: concrete/config/install/packages/elemental_full/content.xml:2391
+#: concrete/config/install/packages/elemental_full/content.xml:2447
+msgctxt "Topic"
+msgid "/Homework"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:2209
+msgid "Project Title 2"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:2218
+msgctxt "Topic"
+msgid "/Activities"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:2265
+msgid "Project Title 3"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:2326
+msgid "Project Title 4"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:2382
+msgid "Project Title 5"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:2438
+msgid "Project Title 6"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:2503
 msgctxt "TopicCategoryName"
 msgid "Reviews"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1815
+#: concrete/config/install/packages/elemental_full/content.xml:2504
 msgctxt "TopicName"
 msgid "Gadgets"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1816
+#: concrete/config/install/packages/elemental_full/content.xml:2505
 msgctxt "TopicName"
 msgid "Movies"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1817
+#: concrete/config/install/packages/elemental_full/content.xml:2506
 msgctxt "TopicName"
 msgid "Books"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1818
+#: concrete/config/install/packages/elemental_full/content.xml:2507
 msgctxt "TopicName"
 msgid "Music"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1820
+#: concrete/config/install/packages/elemental_full/content.xml:2509
 msgctxt "TopicName"
 msgid "Projects"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1821
+#: concrete/config/install/packages/elemental_full/content.xml:2510
 msgctxt "TopicName"
 msgid "Sports"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1822
+#: concrete/config/install/packages/elemental_full/content.xml:2511
 msgctxt "TopicName"
 msgid "Humor"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:2514
+msgctxt "TopicName"
+msgid "Crafts"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:2515
+msgctxt "TopicName"
+msgid "Homework"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:2516
+msgctxt "TopicName"
+msgid "Supplies"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:2517
+msgctxt "TopicName"
+msgid "Activities"
 msgstr ""
 
 #: concrete/config/install/packages/elemental_full/themes.xml:7
@@ -18526,6 +18775,16 @@ msgstr "اقرأ المزيد"
 msgctxt "TemplateFileName"
 msgid "Tag Cloud"
 msgstr "مجموعة الوُسوم"
+
+#: concrete/blocks/page_list/templates/thumbnail_grid
+msgctxt "TemplateFileName"
+msgid "Thumbnail Grid"
+msgstr ""
+
+#: concrete/blocks/topic_list/templates/flat_filter.php
+msgctxt "TemplateFileName"
+msgid "Flat Filter"
+msgstr ""
 
 #: concrete/blocks/autonav/templates/header_menu.php
 msgctxt "TemplateFileName"
