@@ -6,9 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-08-09 17:25+0000\n"
-"PO-Revision-Date: 2014-08-09 17:26+0000\n"
-"Last-Translator: Michele Locati <michele@locati.it>\n"
+"POT-Creation-Date: 2014-08-10 04:00+0000\n"
+"PO-Revision-Date: 2014-08-10 11:59+0000\n"
+"Last-Translator: fanmac <mwsoffice@gmail.com>\n"
 "Language-Team: Romanian (Romania) (http://www.transifex.com/projects/p/concrete5/language/ro_RO/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -34,34 +34,54 @@ msgstr "Accesul la bloc este interzis"
 msgid "Invalid block."
 msgstr "Bloc invalid."
 
+#. Long date format and time without seconds: see
+#. http://www.php.net/manual/en/function.date.php
 #: concrete/bootstrap/preferences.php:125
 #: concrete/single_pages/account/messages/inbox.php:97
 #: concrete/single_pages/account/messages/inbox.php:207
 #: concrete/single_pages/account/messages/inbox.php:217
+#: concrete/src/Localization/Service/Date.php:403
 msgid "F d, Y \\a\\t g:i A"
 msgstr "d F Y \\a\\t g:i A"
 
+#. Long date format and time with seconds: see
+#. http://www.php.net/manual/en/function.date.php
 #: concrete/bootstrap/preferences.php:126
+#: concrete/src/Localization/Service/Date.php:400
 msgid "F d, Y \\a\\t g:i:s A"
 msgstr "F d, Y \\a\\t g:i:s A"
 
+#. Short date format and time without seconds: see
+#. http://www.php.net/manual/en/function.date.php
 #: concrete/bootstrap/preferences.php:127
+#: concrete/src/Localization/Service/Date.php:409
 msgid "n/j/Y \\a\\t g:i A"
 msgstr "j/n/Y \\a\\t g:i A"
 
+#. Short date format: see http://www.php.net/manual/en/function.date.php
 #: concrete/bootstrap/preferences.php:128
+#: concrete/src/Localization/Service/Date.php:346
+#: concrete/src/Localization/Service/Date.php:510
 msgid "n/j/Y"
 msgstr "j/n/Y"
 
+#. Long date format: see http://www.php.net/manual/en/function.date.php
 #: concrete/bootstrap/preferences.php:129
+#: concrete/src/Localization/Service/Date.php:344
 msgid "F j, Y"
 msgstr "F j, Y"
 
+#. Time format without seconds: see
+#. http://www.php.net/manual/en/function.date.php
 #: concrete/bootstrap/preferences.php:130
+#: concrete/src/Localization/Service/Date.php:373
 msgid "g:i A"
 msgstr "g:i A"
 
+#. Time format with seconds: see
+#. http://www.php.net/manual/en/function.date.php
 #: concrete/bootstrap/preferences.php:131
+#: concrete/src/Localization/Service/Date.php:371
 msgid "g:i:s A"
 msgstr "g:i:s A"
 
@@ -76,6 +96,7 @@ msgstr "m/d/yy"
 
 #. can be 12 or 24
 #: concrete/bootstrap/preferences.php:143
+#: concrete/src/Localization/Service/Date.php:562
 msgctxt "Time format"
 msgid "12"
 msgstr "12"
@@ -178,7 +199,7 @@ msgstr "Limba"
 #: concrete/authentication/concrete/form.php:41
 #: concrete/themes/elemental/elements/footer.php:60
 msgid "Log in"
-msgstr ""
+msgstr "Autentificare"
 
 #: concrete/authentication/concrete/controller.php:136
 #: concrete/authentication/concrete/controller.php:140
@@ -252,7 +273,7 @@ msgstr "Autentificare cu Facebook"
 
 #: concrete/authentication/facebook/form.php:5
 msgid "Log in with Facebook"
-msgstr ""
+msgstr "Autentificare cu Facebook"
 
 #: concrete/authentication/facebook/type_form.php:4
 msgid "App ID"
@@ -265,11 +286,11 @@ msgstr ""
 #: concrete/authentication/facebook/type_form.php:13
 #, php-format
 msgid "<a href=\"%s\" target=\"_blank\">Click here</a> to obtain your access keys."
-msgstr ""
+msgstr "<a href=\"%s\" target=\"_blank\">Click aici</a>pentru a obtine codul de acces."
 
 #: concrete/authentication/facebook/controller.php:32
 msgid "Something went wrong, please try again."
-msgstr ""
+msgstr "A intervenit o eroare, va rugam sa reincercati."
 
 #. %s is the site name
 #: concrete/authentication/facebook/controller.php:39
@@ -1229,7 +1250,7 @@ msgid "Flat View"
 msgstr "Afisare plata"
 
 #: concrete/blocks/search/controller.php:82
-#: concrete/config/install/packages/elemental_full/content.xml:2344
+#: concrete/config/install/packages/elemental_full/content.xml:2349
 #: concrete/elements/block_area_add_stack.php:17
 #: concrete/elements/files/search.php:45 concrete/elements/group/search.php:26
 #: concrete/elements/marketplace/search_form.php:24
@@ -1582,7 +1603,7 @@ msgstr "Salvare modificari"
 
 #: concrete/tools/conversations/add_file.php:15
 msgid "Bad token"
-msgstr ""
+msgstr "Token gresit"
 
 #: concrete/tools/conversations/add_file.php:23
 msgid "Block ID or Page ID not sent"
@@ -1684,6 +1705,7 @@ msgstr "Editare link"
 msgid "Unlink"
 msgstr ""
 
+#: concrete/blocks/date_navigation/form.php:55
 #: concrete/tools/i18n_redactor_js.php:21
 msgid "Formatting"
 msgstr ""
@@ -1702,31 +1724,31 @@ msgstr ""
 
 #: concrete/tools/i18n_redactor_js.php:25
 msgid "Header 1"
-msgstr ""
+msgstr "Titlu 1"
 
 #: concrete/tools/i18n_redactor_js.php:26
 msgid "Header 2"
-msgstr ""
+msgstr "Titlu 2"
 
 #: concrete/tools/i18n_redactor_js.php:27
 msgid "Header 3"
-msgstr ""
+msgstr "Titlu 3"
 
 #: concrete/tools/i18n_redactor_js.php:28
 msgid "Header 4"
-msgstr ""
+msgstr "Titlu 4"
 
 #: concrete/tools/i18n_redactor_js.php:29
 msgid "Header 5"
-msgstr ""
+msgstr "Titlu 5"
 
 #: concrete/tools/i18n_redactor_js.php:31
 msgid "Header 6"
-msgstr ""
+msgstr "Titlu 6"
 
 #: concrete/tools/i18n_redactor_js.php:32
 msgid "Custom Styles"
-msgstr ""
+msgstr "Stil personalizat"
 
 #: concrete/tools/i18n_redactor_js.php:34
 msgid "Bold"
@@ -1746,11 +1768,11 @@ msgstr ""
 
 #: concrete/tools/i18n_redactor_js.php:38
 msgid "Unordered List"
-msgstr ""
+msgstr "Lista neordonata"
 
 #: concrete/tools/i18n_redactor_js.php:39
 msgid "Ordered List"
-msgstr ""
+msgstr "Lista ordonata"
 
 #: concrete/tools/i18n_redactor_js.php:40
 msgid "Outdent"
@@ -1762,39 +1784,39 @@ msgstr ""
 
 #: concrete/tools/i18n_redactor_js.php:43
 msgid "Insert"
-msgstr ""
+msgstr "Inserare"
 
 #: concrete/tools/i18n_redactor_js.php:46
 msgid "Insert Table"
-msgstr ""
+msgstr "Inserare tabel"
 
 #: concrete/tools/i18n_redactor_js.php:47
 msgid "Add Row Above"
-msgstr ""
+msgstr "Adauga linie inainte"
 
 #: concrete/tools/i18n_redactor_js.php:48
 msgid "Add Row Below"
-msgstr ""
+msgstr "Adauga linie dupa"
 
 #: concrete/tools/i18n_redactor_js.php:49
 msgid "Add Column Left"
-msgstr ""
+msgstr "Adauga coloana stanga"
 
 #: concrete/tools/i18n_redactor_js.php:50
 msgid "Add Column Right"
-msgstr ""
+msgstr "Adauga coloana dreapta"
 
 #: concrete/tools/i18n_redactor_js.php:51
 msgid "Delete Column"
-msgstr ""
+msgstr "Sterge coloana"
 
 #: concrete/tools/i18n_redactor_js.php:52
 msgid "Delete Row"
-msgstr ""
+msgstr "Stergere linia"
 
 #: concrete/tools/i18n_redactor_js.php:53
 msgid "Delete Table"
-msgstr ""
+msgstr "Sterge tabel"
 
 #: concrete/tools/i18n_redactor_js.php:54
 msgid "Rows"
@@ -1806,12 +1828,13 @@ msgstr "Coloane"
 
 #: concrete/tools/i18n_redactor_js.php:56
 msgid "Add Head"
-msgstr ""
+msgstr "Adauga titlu"
 
 #: concrete/tools/i18n_redactor_js.php:57
 msgid "Delete Head"
-msgstr ""
+msgstr "Sterge titlu"
 
+#: concrete/blocks/date_navigation/form.php:57
 #: concrete/blocks/feature/form.php:10
 #: concrete/blocks/image_slider/form_setup_html.php:197
 #: concrete/blocks/search/form_setup_html.php:30
@@ -1900,7 +1923,7 @@ msgstr ""
 
 #: concrete/tools/i18n_redactor_js.php:69
 msgid "Insert File"
-msgstr ""
+msgstr "Inserare fisier"
 
 #: concrete/elements/users/search.php:48
 #: concrete/single_pages/dashboard/system/basics/icons.php:77
@@ -1945,11 +1968,11 @@ msgstr "Sters"
 
 #: concrete/tools/i18n_redactor_js.php:81
 msgid "Anchor"
-msgstr ""
+msgstr "Ancora"
 
 #: concrete/tools/i18n_redactor_js.php:82
 msgid "Open link in new tab"
-msgstr ""
+msgstr "Deschidere link in tab nou"
 
 #: concrete/tools/i18n_js.php:100 concrete/tools/i18n_redactor_js.php:83
 msgid "Underline"
@@ -1981,7 +2004,7 @@ msgstr "Editare"
 
 #: concrete/tools/i18n_redactor_js.php:97
 msgid "Remove font"
-msgstr ""
+msgstr "Inlaturare font"
 
 #: concrete/tools/i18n_redactor_js.php:98
 msgid "Change font family"
@@ -4126,7 +4149,7 @@ msgstr "Fisierele din cache au fost inlaturate."
 
 #: concrete/controllers/single_page/dashboard/system/seo/bulk.php:31
 msgid "success"
-msgstr ""
+msgstr "succes"
 
 #: concrete/controllers/single_page/dashboard/system/seo/urls.php:61
 msgid "URL rewriting enabled. You need to update .htaccess by hand."
@@ -4674,11 +4697,13 @@ msgid "Job Set schedule updated successfully."
 msgstr ""
 
 #: concrete/controllers/single_page/dashboard/reports/statistics.php:50
+#: concrete/src/Localization/Service/Date.php:437
 msgid "Today"
 msgstr "Azi"
 
 #. %s is a time
 #: concrete/controllers/single_page/dashboard/reports/surveys.php:22
+#: concrete/src/Localization/Service/Date.php:469
 #, php-format
 msgid "Today at %s"
 msgstr "Astazi la %s"
@@ -5409,31 +5434,31 @@ msgstr "Distribuie pe Facebook"
 msgid "Posted by %1$s on %2$s"
 msgstr "Postat de %1$s la %2$s"
 
-#: concrete/themes/elemental/page_theme.php:77
+#: concrete/themes/elemental/page_theme.php:78
 msgid "Title Thin"
 msgstr ""
 
-#: concrete/themes/elemental/page_theme.php:78
+#: concrete/themes/elemental/page_theme.php:79
 msgid "Title Caps Bold"
 msgstr ""
 
-#: concrete/themes/elemental/page_theme.php:79
+#: concrete/themes/elemental/page_theme.php:80
 msgid "Title Caps"
 msgstr ""
 
-#: concrete/themes/elemental/page_theme.php:80
+#: concrete/themes/elemental/page_theme.php:81
 msgid "Image Caption"
 msgstr ""
 
-#: concrete/themes/elemental/page_theme.php:81
+#: concrete/themes/elemental/page_theme.php:82
 msgid "Standard Button"
 msgstr ""
 
-#: concrete/themes/elemental/page_theme.php:82
+#: concrete/themes/elemental/page_theme.php:83
 msgid "Success Button"
 msgstr ""
 
-#: concrete/themes/elemental/page_theme.php:83
+#: concrete/themes/elemental/page_theme.php:84
 msgid "Primary Button"
 msgstr ""
 
@@ -5772,7 +5797,7 @@ msgstr "Nu se poate copia folderul %s la %s. Poate permisiunile sunt setate gres
 #: concrete/src/File/Image/Thumbnail/Type/Type.php:219
 #, php-format
 msgid "%s (Retina Version)"
-msgstr ""
+msgstr "%s (Retina Version)"
 
 #: concrete/src/File/StorageLocation/Configuration/LocalConfiguration.php:69
 msgid "You must include a root path for this storage location."
@@ -7388,7 +7413,7 @@ msgstr ""
 
 #: concrete/src/Application/Service/UserInterface/Help.php:117
 msgid "Need some help?"
-msgstr ""
+msgstr "Ai nevoie de ajutor?"
 
 #: concrete/src/Application/Service/UserInterface/Help.php:120
 #, php-format
@@ -7457,7 +7482,7 @@ msgstr "Addon-uri"
 #: concrete/src/Application/Service/Dashboard/Sitemap.php:85
 #, php-format
 msgid "%s more to display. <strong>View all &gt;</strong>"
-msgstr ""
+msgstr "inca %s de afisat. <strong>Afisare toate &gt;</strong>"
 
 #: concrete/src/Application/Service/Upgrade.php:127
 #, php-format
@@ -7511,51 +7536,51 @@ msgstr "Postat pe %s"
 #, php-format
 msgid "%d second ago"
 msgid_plural "%d seconds ago"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "acum %d secunda"
+msgstr[1] "acum %d secunde"
+msgstr[2] "acum %d secunde"
 
 #: concrete/src/Conversation/Message/Message.php:144
 #, php-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "acum %d an"
+msgstr[1] "acum %d ani"
+msgstr[2] "acum %d ani"
 
 #: concrete/src/Conversation/Message/Message.php:146
 #, php-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "acum %d luna"
+msgstr[1] "acum %d luni"
+msgstr[2] "acum %d luni"
 
 #: concrete/src/Conversation/Message/Message.php:148
 #, php-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "acum %d zi"
+msgstr[1] "acum %d zile"
+msgstr[2] "acum %d zile"
 
 #: concrete/src/Conversation/Message/Message.php:150
 #, php-format
 msgid "%d hour ago"
 msgid_plural "%d hours ago"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "acum %d ora"
+msgstr[1] "acum %d ore"
+msgstr[2] "acum %d ore"
 
 #: concrete/src/Conversation/Message/Message.php:152
 #, php-format
 msgid "%d minute ago"
 msgid_plural "%d minutes ago"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "acum %d minut"
+msgstr[1] "acum %d minute"
+msgstr[2] "acum %d minute"
 
-#: concrete/src/Localization/Service/Date.php:164
+#: concrete/src/Localization/Service/Date.php:193
 #, php-format
 msgid "%d day"
 msgid_plural "%d days"
@@ -7563,8 +7588,8 @@ msgstr[0] "%d zi"
 msgstr[1] "%d zile"
 msgstr[2] "%d zile"
 
-#: concrete/src/Localization/Service/Date.php:166
-#: concrete/src/Localization/Service/Date.php:169
+#: concrete/src/Localization/Service/Date.php:195
+#: concrete/src/Localization/Service/Date.php:198
 #, php-format
 msgid "%d hour"
 msgid_plural "%d hours"
@@ -7572,8 +7597,8 @@ msgstr[0] "%d ora"
 msgstr[1] "%d ore"
 msgstr[2] "%d ore"
 
-#: concrete/src/Localization/Service/Date.php:172
-#: concrete/src/Localization/Service/Date.php:177
+#: concrete/src/Localization/Service/Date.php:200
+#: concrete/src/Localization/Service/Date.php:203
 #, php-format
 msgid "%d minute"
 msgid_plural "%d minutes"
@@ -7581,14 +7606,40 @@ msgstr[0] "%d minut"
 msgstr[1] "%d minute"
 msgstr[2] "%d minute"
 
-#: concrete/src/Localization/Service/Date.php:180
-#: concrete/src/Localization/Service/Date.php:185
+#: concrete/src/Localization/Service/Date.php:205
+#: concrete/src/Localization/Service/Date.php:208
 #, php-format
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] "%d secunda"
 msgstr[1] "%d secunde"
 msgstr[2] "%d secunde"
+
+#. Short date format and time with seconds: see
+#. http://www.php.net/manual/en/function.date.php
+#: concrete/src/Localization/Service/Date.php:407
+msgid "n/j/Y \\a\\t g:i:s A"
+msgstr "n/j/Y \\a\\t g:i:s A"
+
+#: concrete/src/Localization/Service/Date.php:439
+msgid "Tomorrow"
+msgstr "Maine"
+
+#: concrete/src/Localization/Service/Date.php:441
+msgid "Yesterday"
+msgstr "Ieri"
+
+#. %s is a time
+#: concrete/src/Localization/Service/Date.php:471
+#, php-format
+msgid "Tomorrow at %s"
+msgstr "Maine la %s"
+
+#. %s is a time
+#: concrete/src/Localization/Service/Date.php:473
+#, php-format
+msgid "Yesterday at %s"
+msgstr ""
 
 #: concrete/src/Marketplace/RemoteItem.php:171
 msgid "Unable to connect to marketplace to retrieve item"
@@ -7994,7 +8045,7 @@ msgid "My Account"
 msgstr "Contul meu"
 
 #: concrete/config/install/packages/elemental_blank/content.xml:43
-#: concrete/config/install/packages/elemental_full/content.xml:871
+#: concrete/config/install/packages/elemental_full/content.xml:876
 #: concrete/elements/account/menu.php:60
 #: concrete/single_pages/account/profile/public_profile.php:14
 #: concrete/single_pages/dashboard/system/view.php:41
@@ -8030,9 +8081,9 @@ msgstr "Sigur doriti sa stergeti aceasta pagina?"
 #, php-format
 msgid "This will remove %s child page."
 msgid_plural "This will remove %s child pages."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Acesta va inlatura %s pagina descendenta."
+msgstr[1] "Acesta va inlatura %s pagini descendente."
+msgstr[2] "Acesta va inlatura %s pagini descendente."
 
 #: concrete/elements/collection_delete.php:61
 #: concrete/views/dialogs/page/delete.php:33
@@ -8069,7 +8120,7 @@ msgstr "Iesire din modul de editare"
 
 #: concrete/elements/page_controls_footer.php:184
 msgid "Edit This Page"
-msgstr ""
+msgstr "Editare pagina"
 
 #: concrete/elements/page_controls_footer.php:187
 msgctxt "toolbar"
@@ -8108,7 +8159,7 @@ msgstr ""
 #: concrete/elements/page_controls_footer.php:255
 msgctxt "toolbar"
 msgid "Site Settings"
-msgstr ""
+msgstr "Setari site"
 
 #: concrete/elements/page_controls_footer.php:262
 msgid "Add Pages and Navigate Your Site"
@@ -8338,7 +8389,7 @@ msgstr ""
 
 #: concrete/elements/custom_style.php:68
 msgid "Solid"
-msgstr ""
+msgstr "Solid"
 
 #: concrete/elements/custom_style.php:69
 msgid "Dotted"
@@ -8350,7 +8401,7 @@ msgstr ""
 
 #: concrete/elements/custom_style.php:71
 msgid "Double"
-msgstr ""
+msgstr "Dubla"
 
 #: concrete/elements/custom_style.php:72
 msgid "Groove"
@@ -8370,11 +8421,11 @@ msgstr ""
 
 #: concrete/elements/custom_style.php:106
 msgid "Text Size and Color"
-msgstr ""
+msgstr "Marime si culoare text"
 
 #: concrete/elements/custom_style.php:110
 msgid "Text Color"
-msgstr ""
+msgstr "Culoare text"
 
 #: concrete/elements/custom_style.php:115
 msgid "Link Color"
@@ -8407,7 +8458,7 @@ msgstr "Alegeti imaginea"
 
 #: concrete/elements/custom_style.php:154
 msgid "Borders"
-msgstr ""
+msgstr "Borduri"
 
 #: concrete/elements/custom_style.php:156
 msgid "Border"
@@ -8436,7 +8487,7 @@ msgstr ""
 
 #: concrete/elements/custom_style.php:182
 msgid "Margin and Padding"
-msgstr ""
+msgstr "Margine si umplere"
 
 #: concrete/elements/custom_style.php:184
 msgid "Padding"
@@ -8462,19 +8513,19 @@ msgstr "Margine"
 
 #: concrete/elements/custom_style.php:250
 msgid "Shadow and Rotation (CSS3)"
-msgstr ""
+msgstr "Umbra si rotatia (CSS3)"
 
 #: concrete/elements/custom_style.php:252
 msgid "Shadow"
-msgstr ""
+msgstr "Umbra"
 
 #: concrete/elements/custom_style.php:259
 msgid "Horizontal Position"
-msgstr ""
+msgstr "Pozitia pe orizontala"
 
 #: concrete/elements/custom_style.php:266
 msgid "Vertical Position"
-msgstr ""
+msgstr "Pozitia pe verticala"
 
 #: concrete/elements/custom_style.php:273
 msgid "Blur"
@@ -8515,7 +8566,7 @@ msgstr "Nimic selectat"
 
 #: concrete/elements/custom_style.php:329
 msgid "Clear Styles"
-msgstr ""
+msgstr "Golire stiluri"
 
 #: concrete/elements/workflow/edit_type_form_required.php:13
 msgid "Workflow Basics"
@@ -8565,6 +8616,7 @@ msgstr "Dati clic pentru istoric."
 msgid "There is nothing currently waiting for you."
 msgstr "Nu este nimic in asteptare pentru dumneavoastra."
 
+#: concrete/blocks/date_navigation/view.php:16
 #: concrete/elements/workflow/progress/categories/page/pending.php:87
 #: concrete/elements/workflow/progress/categories/page/pending.php:96
 msgid "None."
@@ -8630,7 +8682,7 @@ msgstr "Editeaza %s sablon"
 
 #: concrete/elements/gathering/tile.php:25
 msgid "Delete Item"
-msgstr ""
+msgstr "Stergere obiect"
 
 #: concrete/elements/gathering/tile.php:25
 msgid "Delete Tile"
@@ -8660,7 +8712,7 @@ msgstr "Previzualizare imagine"
 #, php-format
 msgctxt "Authored"
 msgid "By %s"
-msgstr ""
+msgstr "De %s"
 
 #. %s is the name of the author
 #: concrete/elements/gathering/templates/tile/image_overlay_headline/view.php:12
@@ -8668,7 +8720,7 @@ msgstr ""
 #, php-format
 msgctxt "Authored"
 msgid "by %s"
-msgstr ""
+msgstr "de %s"
 
 #: concrete/blocks/rss_displayer/templates/read_more.php:36
 #: concrete/elements/gathering/templates/tile/featured/view.php:11
@@ -9143,6 +9195,7 @@ msgid "Allowed Page Templates"
 msgstr ""
 
 #: concrete/blocks/date_nav/form_setup_html.php:30
+#: concrete/blocks/date_navigation/form.php:23
 #: concrete/blocks/page_list/page_list_form.php:31
 #: concrete/blocks/topic_list/templates/flat_filter.php:10
 #: concrete/elements/page_types/form/base.php:56
@@ -10332,7 +10385,7 @@ msgstr "\nA fost completat si trimis un formular %s din situl dumneavoastra.\n\n
 
 #: concrete/config/install/packages/elemental_full/controller.php:10
 msgid "Full Site"
-msgstr ""
+msgstr "Site complet"
 
 #: concrete/config/install/packages/elemental_full/controller.php:14
 msgid ""
@@ -10548,7 +10601,7 @@ msgid "Add Service"
 msgstr ""
 
 #: concrete/blocks/share_this_page/form.php:6
-#: concrete/config/install/packages/elemental_full/content.xml:1186
+#: concrete/config/install/packages/elemental_full/content.xml:1191
 msgid "Services"
 msgstr ""
 
@@ -10797,7 +10850,7 @@ msgstr ""
 #: concrete/blocks/faq/form_setup_html.php:88
 #: concrete/blocks/page_attribute_display/form.php:68
 msgid "Title Text"
-msgstr ""
+msgstr "Text titlu"
 
 #: concrete/blocks/page_attribute_display/controller.php:33
 msgid "Displays the value of a page attribute for the current page."
@@ -10809,19 +10862,19 @@ msgstr ""
 
 #: concrete/blocks/page_attribute_display/controller.php:116
 msgid "Page Description"
-msgstr ""
+msgstr "Descriere pagina"
 
 #: concrete/blocks/page_attribute_display/controller.php:117
 msgid "Page Date Created"
-msgstr ""
+msgstr "Data crearii paginii"
 
 #: concrete/blocks/page_attribute_display/controller.php:118
 msgid "Page Date Published"
-msgstr ""
+msgstr "Data publicarii paginii"
 
 #: concrete/blocks/page_attribute_display/controller.php:119
 msgid "Page Date Modified"
-msgstr ""
+msgstr "Data modificarii paginii"
 
 #: concrete/blocks/page_title/form_add_edit.php:6
 msgid "Custom Title"
@@ -10865,7 +10918,7 @@ msgstr "Eroare: Atributul cerut de pagina \"%s\" nu exista."
 
 #: concrete/blocks/tags/tag_form.php:15
 msgid "Display Tags"
-msgstr ""
+msgstr "Afiseaza etichetele"
 
 #: concrete/blocks/date_nav/form_setup_html.php:86
 #: concrete/blocks/tags/tag_form.php:19
@@ -10906,7 +10959,7 @@ msgid "Frequently Asked Questions Block"
 msgstr ""
 
 #: concrete/blocks/faq/controller.php:26
-#: concrete/config/install/packages/elemental_full/content.xml:2987
+#: concrete/config/install/packages/elemental_full/content.xml:2992
 msgid "Frequently Asked Questions"
 msgstr ""
 
@@ -11017,6 +11070,7 @@ msgid "A collapsible date based navigation tree"
 msgstr "Un arbore de navigare colapsabil bazat pe data"
 
 #: concrete/blocks/date_nav/controller.php:23
+#: concrete/blocks/date_navigation/controller.php:32
 msgid "Date Navigation"
 msgstr "Navigare data"
 
@@ -11827,17 +11881,17 @@ msgstr ""
 
 #: concrete/blocks/testimonial/controller.php:28
 msgid "Testimonial"
-msgstr ""
+msgstr "Testimonial"
 
 #: concrete/blocks/testimonial/view.php:16
 #, php-format
 msgid "%s, <a href=\"%s\">%s</a>"
-msgstr ""
+msgstr "%s, <a href=\"%s\">%s</a>"
 
 #: concrete/blocks/testimonial/view.php:22
 #, php-format
 msgid "%s, %s"
-msgstr ""
+msgstr "%s, %s"
 
 #: concrete/blocks/search/controller.php:78
 msgid "Add a search box to your site."
@@ -11855,7 +11909,7 @@ msgstr "Indexul de cautare nu pare sa existe. Acest bloc nu va functiona pana ca
 
 #: concrete/blocks/search/form_setup_html.php:35
 msgid "Button Text"
-msgstr ""
+msgstr "Text buton"
 
 #: concrete/blocks/search/form_setup_html.php:39
 msgid "Search for Pages"
@@ -11894,9 +11948,10 @@ msgstr "SAU cale"
 msgid "Settings"
 msgstr "Setari"
 
+#: concrete/blocks/date_navigation/form.php:3
 #: concrete/blocks/page_list/page_list_form.php:48
 msgid "Filtering"
-msgstr ""
+msgstr "Filtrare"
 
 #: concrete/blocks/page_list/page_list_form.php:59
 msgid ""
@@ -11949,11 +12004,11 @@ msgstr "Se includ toate paginile descendente"
 
 #: concrete/blocks/page_list/page_list_form.php:146
 msgid "Sort"
-msgstr ""
+msgstr "Sortare"
 
 #: concrete/blocks/page_list/page_list_form.php:150
 msgid "Sitemap order"
-msgstr ""
+msgstr "Ordinea din harta sitului"
 
 #: concrete/blocks/page_list/page_list_form.php:153
 msgid "Most recent first"
@@ -11973,7 +12028,7 @@ msgstr ""
 
 #: concrete/blocks/page_list/page_list_form.php:165
 msgid "Random"
-msgstr ""
+msgstr "La intamplare"
 
 #: concrete/blocks/page_list/page_list_form.php:172
 msgid "Provide RSS Feed"
@@ -12072,7 +12127,7 @@ msgstr "Recomandare"
 
 #: concrete/blocks/feature/controller.php:69
 msgid "Choose Icon"
-msgstr ""
+msgstr "Selectare iconita"
 
 #: concrete/blocks/dashboard_featured_theme/controller.php:29
 msgid "Features a theme from concrete5.org."
@@ -12093,30 +12148,6 @@ msgstr "Legatura catre fisiere stocate in libraria de asseturi."
 #: concrete/blocks/file/controller.php:42
 msgid "You must give your file a link."
 msgstr "Trebuie sa dati o legatura fisierului."
-
-#: concrete/blocks/date_archive/form.php:7
-msgid "Display Title"
-msgstr "Afisare titlu"
-
-#: concrete/blocks/date_archive/form.php:10
-msgid "# of Months to display"
-msgstr "# de luni de afisat"
-
-#: concrete/blocks/date_archive/form.php:15
-msgid "Months Link to Page"
-msgstr "Link pagina luni"
-
-#: concrete/blocks/date_archive/controller.php:21
-msgid "Displays month archive for pages"
-msgstr "Afisare arhiva lunara pentru pagini"
-
-#: concrete/blocks/date_archive/controller.php:25
-msgid "Blog Date Archive"
-msgstr "Arhiva data blog"
-
-#: concrete/blocks/date_archive/controller.php:30
-msgid "Please enter the number of months you want to show."
-msgstr "Va rugam sa introduceti numarul de luni in care doriti sa se afiseze."
 
 #: concrete/blocks/dashboard_app_status/controller.php:27
 msgid "Displays update and welcome back information on your dashboard."
@@ -12177,6 +12208,34 @@ msgstr "In acest moment sunt <strong>%s</strong> actualizari disponibile."
 #: concrete/blocks/dashboard_app_status/view.php:21
 msgid "Update add-ons."
 msgstr "Actualizare addonuri."
+
+#: concrete/blocks/date_navigation/form.php:5
+msgid "By Parent Page"
+msgstr ""
+
+#: concrete/blocks/date_navigation/form.php:9
+msgid "Filter by Parent Page"
+msgstr ""
+
+#: concrete/blocks/date_navigation/form.php:20
+msgid "By Page Type"
+msgstr ""
+
+#: concrete/blocks/date_navigation/form.php:39
+msgid "Results"
+msgstr "Rezultate"
+
+#: concrete/blocks/date_navigation/form.php:44
+msgid "Redirect to Different Page on Click"
+msgstr ""
+
+#: concrete/blocks/date_navigation/controller.php:27
+msgid "Displays a list of months to filter a page list by."
+msgstr ""
+
+#: concrete/blocks/date_navigation/controller.php:39
+msgid "Archives"
+msgstr ""
 
 #: concrete/blocks/survey/controller.php:50
 msgid "Provide a simple survey, along with results in a pie chart format."
@@ -14026,7 +14085,7 @@ msgstr "Segment URL"
 
 #: concrete/single_pages/dashboard/system/seo/bulk.php:196
 msgid "Save All"
-msgstr ""
+msgstr "Salveaza tot"
 
 #: concrete/single_pages/dashboard/pages/single.php:37
 #: concrete/single_pages/dashboard/system/seo/bulk.php:200
@@ -15119,7 +15178,7 @@ msgstr "Rezultatele pentru &#34;%s&#34;"
 
 #: concrete/single_pages/dashboard/reports/surveys.php:18
 msgid "Go back"
-msgstr ""
+msgstr "Inapoi"
 
 #: concrete/single_pages/dashboard/reports/surveys.php:29
 msgid "Option"
@@ -16902,31 +16961,31 @@ msgstr ""
 #: concrete/config/install/packages/elemental_blank/content.xml:29
 #: concrete/config/install/packages/elemental_full/content.xml:187
 #: concrete/config/install/packages/elemental_full/content.xml:278
-#: concrete/config/install/packages/elemental_full/content.xml:381
-#: concrete/config/install/packages/elemental_full/content.xml:547
-#: concrete/config/install/packages/elemental_full/content.xml:716
-#: concrete/config/install/packages/elemental_full/content.xml:877
-#: concrete/config/install/packages/elemental_full/content.xml:1187
-#: concrete/config/install/packages/elemental_full/content.xml:1353
-#: concrete/config/install/packages/elemental_full/content.xml:1442
-#: concrete/config/install/packages/elemental_full/content.xml:1530
-#: concrete/config/install/packages/elemental_full/content.xml:1626
-#: concrete/config/install/packages/elemental_full/content.xml:1717
-#: concrete/config/install/packages/elemental_full/content.xml:1805
-#: concrete/config/install/packages/elemental_full/content.xml:1894
-#: concrete/config/install/packages/elemental_full/content.xml:1913
-#: concrete/config/install/packages/elemental_full/content.xml:2114
-#: concrete/config/install/packages/elemental_full/content.xml:2180
-#: concrete/config/install/packages/elemental_full/content.xml:2248
-#: concrete/config/install/packages/elemental_full/content.xml:2316
-#: concrete/config/install/packages/elemental_full/content.xml:2365
-#: concrete/config/install/packages/elemental_full/content.xml:2383
-#: concrete/config/install/packages/elemental_full/content.xml:2557
-#: concrete/config/install/packages/elemental_full/content.xml:2571
-#: concrete/config/install/packages/elemental_full/content.xml:2711
-#: concrete/config/install/packages/elemental_full/content.xml:2891
-#: concrete/config/install/packages/elemental_full/content.xml:2953
-#: concrete/config/install/packages/elemental_full/content.xml:2988
+#: concrete/config/install/packages/elemental_full/content.xml:386
+#: concrete/config/install/packages/elemental_full/content.xml:552
+#: concrete/config/install/packages/elemental_full/content.xml:721
+#: concrete/config/install/packages/elemental_full/content.xml:882
+#: concrete/config/install/packages/elemental_full/content.xml:1192
+#: concrete/config/install/packages/elemental_full/content.xml:1358
+#: concrete/config/install/packages/elemental_full/content.xml:1447
+#: concrete/config/install/packages/elemental_full/content.xml:1535
+#: concrete/config/install/packages/elemental_full/content.xml:1631
+#: concrete/config/install/packages/elemental_full/content.xml:1722
+#: concrete/config/install/packages/elemental_full/content.xml:1810
+#: concrete/config/install/packages/elemental_full/content.xml:1899
+#: concrete/config/install/packages/elemental_full/content.xml:1918
+#: concrete/config/install/packages/elemental_full/content.xml:2119
+#: concrete/config/install/packages/elemental_full/content.xml:2185
+#: concrete/config/install/packages/elemental_full/content.xml:2253
+#: concrete/config/install/packages/elemental_full/content.xml:2321
+#: concrete/config/install/packages/elemental_full/content.xml:2370
+#: concrete/config/install/packages/elemental_full/content.xml:2388
+#: concrete/config/install/packages/elemental_full/content.xml:2562
+#: concrete/config/install/packages/elemental_full/content.xml:2576
+#: concrete/config/install/packages/elemental_full/content.xml:2716
+#: concrete/config/install/packages/elemental_full/content.xml:2896
+#: concrete/config/install/packages/elemental_full/content.xml:2958
+#: concrete/config/install/packages/elemental_full/content.xml:2993
 msgctxt "AreaName"
 msgid "Main"
 msgstr "Principala"
@@ -18306,67 +18365,67 @@ msgid "Job Details"
 msgstr ""
 
 #: concrete/config/install/packages/elemental_full/content.xml:145
-#: concrete/config/install/packages/elemental_full/content.xml:661
-#: concrete/config/install/packages/elemental_full/content.xml:1397
-#: concrete/config/install/packages/elemental_full/content.xml:1486
-#: concrete/config/install/packages/elemental_full/content.xml:1582
-#: concrete/config/install/packages/elemental_full/content.xml:1673
-#: concrete/config/install/packages/elemental_full/content.xml:1761
-#: concrete/config/install/packages/elemental_full/content.xml:1849
-#: concrete/config/install/packages/elemental_full/content.xml:2192
-#: concrete/config/install/packages/elemental_full/content.xml:2260
-#: concrete/config/install/packages/elemental_full/content.xml:2328
-#: concrete/config/install/packages/elemental_full/content.xml:2910
-#: concrete/config/install/packages/elemental_full/content.xml:2972
+#: concrete/config/install/packages/elemental_full/content.xml:666
+#: concrete/config/install/packages/elemental_full/content.xml:1402
+#: concrete/config/install/packages/elemental_full/content.xml:1491
+#: concrete/config/install/packages/elemental_full/content.xml:1587
+#: concrete/config/install/packages/elemental_full/content.xml:1678
+#: concrete/config/install/packages/elemental_full/content.xml:1766
+#: concrete/config/install/packages/elemental_full/content.xml:1854
+#: concrete/config/install/packages/elemental_full/content.xml:2197
+#: concrete/config/install/packages/elemental_full/content.xml:2265
+#: concrete/config/install/packages/elemental_full/content.xml:2333
+#: concrete/config/install/packages/elemental_full/content.xml:2915
+#: concrete/config/install/packages/elemental_full/content.xml:2977
 msgctxt "AreaName"
 msgid "Page Header"
 msgstr "Header pagina"
 
 #: concrete/config/install/packages/elemental_full/content.xml:157
-#: concrete/config/install/packages/elemental_full/content.xml:396
-#: concrete/config/install/packages/elemental_full/content.xml:676
-#: concrete/config/install/packages/elemental_full/content.xml:1435
-#: concrete/config/install/packages/elemental_full/content.xml:1523
-#: concrete/config/install/packages/elemental_full/content.xml:1619
-#: concrete/config/install/packages/elemental_full/content.xml:1710
-#: concrete/config/install/packages/elemental_full/content.xml:1798
-#: concrete/config/install/packages/elemental_full/content.xml:1887
-#: concrete/config/install/packages/elemental_full/content.xml:2195
-#: concrete/config/install/packages/elemental_full/content.xml:2263
-#: concrete/config/install/packages/elemental_full/content.xml:2331
-#: concrete/config/install/packages/elemental_full/content.xml:2915
-#: concrete/config/install/packages/elemental_full/content.xml:2977
+#: concrete/config/install/packages/elemental_full/content.xml:401
+#: concrete/config/install/packages/elemental_full/content.xml:681
+#: concrete/config/install/packages/elemental_full/content.xml:1440
+#: concrete/config/install/packages/elemental_full/content.xml:1528
+#: concrete/config/install/packages/elemental_full/content.xml:1624
+#: concrete/config/install/packages/elemental_full/content.xml:1715
+#: concrete/config/install/packages/elemental_full/content.xml:1803
+#: concrete/config/install/packages/elemental_full/content.xml:1892
+#: concrete/config/install/packages/elemental_full/content.xml:2200
+#: concrete/config/install/packages/elemental_full/content.xml:2268
+#: concrete/config/install/packages/elemental_full/content.xml:2336
+#: concrete/config/install/packages/elemental_full/content.xml:2920
+#: concrete/config/install/packages/elemental_full/content.xml:2982
 msgctxt "AreaName"
 msgid "Sidebar"
 msgstr ""
 
 #: concrete/config/install/packages/elemental_full/content.xml:255
-#: concrete/config/install/packages/elemental_full/content.xml:352
-#: concrete/config/install/packages/elemental_full/content.xml:499
-#: concrete/config/install/packages/elemental_full/content.xml:623
-#: concrete/config/install/packages/elemental_full/content.xml:723
-#: concrete/config/install/packages/elemental_full/content.xml:1171
-#: concrete/config/install/packages/elemental_full/content.xml:1274
-#: concrete/config/install/packages/elemental_full/content.xml:1360
-#: concrete/config/install/packages/elemental_full/content.xml:1453
-#: concrete/config/install/packages/elemental_full/content.xml:1541
-#: concrete/config/install/packages/elemental_full/content.xml:1637
-#: concrete/config/install/packages/elemental_full/content.xml:1728
-#: concrete/config/install/packages/elemental_full/content.xml:1816
-#: concrete/config/install/packages/elemental_full/content.xml:1905
-#: concrete/config/install/packages/elemental_full/content.xml:2104
-#: concrete/config/install/packages/elemental_full/content.xml:2120
-#: concrete/config/install/packages/elemental_full/content.xml:2152
-#: concrete/config/install/packages/elemental_full/content.xml:2220
-#: concrete/config/install/packages/elemental_full/content.xml:2288
-#: concrete/config/install/packages/elemental_full/content.xml:2920
-#: concrete/config/install/packages/elemental_full/content.xml:2982
+#: concrete/config/install/packages/elemental_full/content.xml:357
+#: concrete/config/install/packages/elemental_full/content.xml:504
+#: concrete/config/install/packages/elemental_full/content.xml:628
+#: concrete/config/install/packages/elemental_full/content.xml:728
+#: concrete/config/install/packages/elemental_full/content.xml:1176
+#: concrete/config/install/packages/elemental_full/content.xml:1279
+#: concrete/config/install/packages/elemental_full/content.xml:1365
+#: concrete/config/install/packages/elemental_full/content.xml:1458
+#: concrete/config/install/packages/elemental_full/content.xml:1546
+#: concrete/config/install/packages/elemental_full/content.xml:1642
+#: concrete/config/install/packages/elemental_full/content.xml:1733
+#: concrete/config/install/packages/elemental_full/content.xml:1821
+#: concrete/config/install/packages/elemental_full/content.xml:1910
+#: concrete/config/install/packages/elemental_full/content.xml:2109
+#: concrete/config/install/packages/elemental_full/content.xml:2125
+#: concrete/config/install/packages/elemental_full/content.xml:2157
+#: concrete/config/install/packages/elemental_full/content.xml:2225
+#: concrete/config/install/packages/elemental_full/content.xml:2293
+#: concrete/config/install/packages/elemental_full/content.xml:2925
+#: concrete/config/install/packages/elemental_full/content.xml:2987
 msgctxt "AreaName"
 msgid "Page Footer"
 msgstr ""
 
 #: concrete/config/install/packages/elemental_full/content.xml:263
-#: concrete/config/install/packages/elemental_full/content.xml:2108
+#: concrete/config/install/packages/elemental_full/content.xml:2113
 msgid "Blog"
 msgstr "Blog"
 
@@ -18380,185 +18439,185 @@ msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Blog Name"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:360
+#: concrete/config/install/packages/elemental_full/content.xml:365
 msgid "Blog Entry"
 msgstr "Intrare blog"
 
-#: concrete/config/install/packages/elemental_full/content.xml:367
+#: concrete/config/install/packages/elemental_full/content.xml:372
 msgctxt "PageTypeComposerFormLayoutSetName"
 msgid "Post Details"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:368
+#: concrete/config/install/packages/elemental_full/content.xml:373
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Entry Name"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:369
+#: concrete/config/install/packages/elemental_full/content.xml:374
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Short Description"
 msgstr "Descriere scurta"
 
-#: concrete/config/install/packages/elemental_full/content.xml:370
+#: concrete/config/install/packages/elemental_full/content.xml:375
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Blog"
 msgstr "Blog"
 
-#: concrete/config/install/packages/elemental_full/content.xml:371
+#: concrete/config/install/packages/elemental_full/content.xml:376
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Topics"
 msgstr ""
 
 #: concrete/config/install/packages/elemental_blank/content.xml:22
-#: concrete/config/install/packages/elemental_full/content.xml:373
+#: concrete/config/install/packages/elemental_full/content.xml:378
 msgctxt "PageTypeComposerFormLayoutSetName"
 msgid "Content"
 msgstr "Continut"
 
-#: concrete/config/install/packages/elemental_full/content.xml:532
-#: concrete/config/install/packages/elemental_full/content.xml:1347
+#: concrete/config/install/packages/elemental_full/content.xml:537
+#: concrete/config/install/packages/elemental_full/content.xml:1352
 msgid "Portfolio"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:540
+#: concrete/config/install/packages/elemental_full/content.xml:545
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Name"
 msgstr "Nume"
 
-#: concrete/config/install/packages/elemental_full/content.xml:631
+#: concrete/config/install/packages/elemental_full/content.xml:636
 msgid "Portfolio Project"
-msgstr ""
-
-#: concrete/config/install/packages/elemental_full/content.xml:638
-msgctxt "PageTypeComposerFormLayoutSetName"
-msgid "Page"
-msgstr "Pagina"
-
-#: concrete/config/install/packages/elemental_full/content.xml:641
-msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
-msgid "Portfolio"
 msgstr ""
 
 #: concrete/config/install/packages/elemental_full/content.xml:643
 msgctxt "PageTypeComposerFormLayoutSetName"
+msgid "Page"
+msgstr "Pagina"
+
+#: concrete/config/install/packages/elemental_full/content.xml:646
+msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
+msgid "Portfolio"
+msgstr ""
+
+#: concrete/config/install/packages/elemental_full/content.xml:648
+msgctxt "PageTypeComposerFormLayoutSetName"
 msgid "Project Data"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:645
+#: concrete/config/install/packages/elemental_full/content.xml:650
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Date Completed"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:651
+#: concrete/config/install/packages/elemental_full/content.xml:656
 msgctxt "PageTypeComposerFormLayoutSetName"
 msgid "Image Slider"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:654
+#: concrete/config/install/packages/elemental_full/content.xml:659
 msgctxt "PageTypeComposerFormLayoutSetName"
 msgid "Body"
 msgstr "Continut"
 
-#: concrete/config/install/packages/elemental_full/content.xml:752
+#: concrete/config/install/packages/elemental_full/content.xml:757
 msgid "Footer Contact"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:753
-#: concrete/config/install/packages/elemental_full/content.xml:767
-#: concrete/config/install/packages/elemental_full/content.xml:781
-#: concrete/config/install/packages/elemental_full/content.xml:795
-#: concrete/config/install/packages/elemental_full/content.xml:808
-#: concrete/config/install/packages/elemental_full/content.xml:820
-#: concrete/config/install/packages/elemental_full/content.xml:840
-#: concrete/config/install/packages/elemental_full/content.xml:857
+#: concrete/config/install/packages/elemental_full/content.xml:758
+#: concrete/config/install/packages/elemental_full/content.xml:772
+#: concrete/config/install/packages/elemental_full/content.xml:786
+#: concrete/config/install/packages/elemental_full/content.xml:800
+#: concrete/config/install/packages/elemental_full/content.xml:813
+#: concrete/config/install/packages/elemental_full/content.xml:825
+#: concrete/config/install/packages/elemental_full/content.xml:845
+#: concrete/config/install/packages/elemental_full/content.xml:862
 msgid "Main"
 msgstr "Principala"
 
-#: concrete/config/install/packages/elemental_full/content.xml:766
+#: concrete/config/install/packages/elemental_full/content.xml:771
 msgid "Footer Legal"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:780
+#: concrete/config/install/packages/elemental_full/content.xml:785
 msgid "Footer Navigation"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:794
+#: concrete/config/install/packages/elemental_full/content.xml:799
 msgid "Footer Site Title"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:807
+#: concrete/config/install/packages/elemental_full/content.xml:812
 msgid "Footer Social"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:819
+#: concrete/config/install/packages/elemental_full/content.xml:824
 msgid "Header Navigation"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:839
+#: concrete/config/install/packages/elemental_full/content.xml:844
 msgid "Header Search"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:856
+#: concrete/config/install/packages/elemental_full/content.xml:861
 msgid "Header Site Title"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1364
+#: concrete/config/install/packages/elemental_full/content.xml:1369
 msgid "Project Title"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1364
-#: concrete/config/install/packages/elemental_full/content.xml:1460
-#: concrete/config/install/packages/elemental_full/content.xml:1548
-#: concrete/config/install/packages/elemental_full/content.xml:1644
-#: concrete/config/install/packages/elemental_full/content.xml:1735
-#: concrete/config/install/packages/elemental_full/content.xml:1823
+#: concrete/config/install/packages/elemental_full/content.xml:1369
+#: concrete/config/install/packages/elemental_full/content.xml:1465
+#: concrete/config/install/packages/elemental_full/content.xml:1553
+#: concrete/config/install/packages/elemental_full/content.xml:1649
+#: concrete/config/install/packages/elemental_full/content.xml:1740
+#: concrete/config/install/packages/elemental_full/content.xml:1828
 msgid ""
 "Pellentesque ultricies ligula vel neque dictum, eu mollis tortor adipiscing."
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1376
-#: concrete/config/install/packages/elemental_full/content.xml:1560
-#: concrete/config/install/packages/elemental_full/content.xml:1656
-#: concrete/config/install/packages/elemental_full/content.xml:1744
-#: concrete/config/install/packages/elemental_full/content.xml:1832
+#: concrete/config/install/packages/elemental_full/content.xml:1381
+#: concrete/config/install/packages/elemental_full/content.xml:1565
+#: concrete/config/install/packages/elemental_full/content.xml:1661
+#: concrete/config/install/packages/elemental_full/content.xml:1749
+#: concrete/config/install/packages/elemental_full/content.xml:1837
 msgctxt "Topic"
 msgid "/Homework"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1460
+#: concrete/config/install/packages/elemental_full/content.xml:1465
 msgid "Project Title 2"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1469
+#: concrete/config/install/packages/elemental_full/content.xml:1474
 msgctxt "Topic"
 msgid "/Activities"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1548
+#: concrete/config/install/packages/elemental_full/content.xml:1553
 msgid "Project Title 3"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1644
+#: concrete/config/install/packages/elemental_full/content.xml:1649
 msgid "Project Title 4"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1735
+#: concrete/config/install/packages/elemental_full/content.xml:1740
 msgid "Project Title 5"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1823
+#: concrete/config/install/packages/elemental_full/content.xml:1828
 msgid "Project Title 6"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:1912
+#: concrete/config/install/packages/elemental_full/content.xml:1917
 msgid "Team"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:2124
+#: concrete/config/install/packages/elemental_full/content.xml:2129
 msgid "Hello World!"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:2124
+#: concrete/config/install/packages/elemental_full/content.xml:2129
 msgid ""
 "Pellentesque ultricies ligula vel neque dictum, eu mollis tortor adipiscing."
 " Etiam congue, est vel tincidunt vestibulum, nunc nunc porta nulla, at "
@@ -18566,40 +18625,40 @@ msgid ""
 "mattis aliquam ante dictum."
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:2148
-#: concrete/config/install/packages/elemental_full/content.xml:2284
+#: concrete/config/install/packages/elemental_full/content.xml:2153
+#: concrete/config/install/packages/elemental_full/content.xml:2289
 msgctxt "Topic"
 msgid "/Projects"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:2203
-#: concrete/config/install/packages/elemental_full/content.xml:2271
-#: concrete/config/install/packages/elemental_full/content.xml:2339
+#: concrete/config/install/packages/elemental_full/content.xml:2208
+#: concrete/config/install/packages/elemental_full/content.xml:2276
+#: concrete/config/install/packages/elemental_full/content.xml:2344
 msgctxt "AreaName"
 msgid "Sidebar Footer"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:2207
+#: concrete/config/install/packages/elemental_full/content.xml:2212
 msgid "Another Blog Post"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:2207
+#: concrete/config/install/packages/elemental_full/content.xml:2212
 msgid ""
 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet "
 "consectetur lacus. Vestibulum neque lectus, egestas non cursus vitae, "
 "aliquam at magna."
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:2216
+#: concrete/config/install/packages/elemental_full/content.xml:2221
 msgctxt "Topic"
 msgid "/Humor"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:2275
+#: concrete/config/install/packages/elemental_full/content.xml:2280
 msgid "A Beautiful Site Deserves a Beautiful Blog"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:2275
+#: concrete/config/install/packages/elemental_full/content.xml:2280
 msgid ""
 "Donec blandit lectus nec neque ullamcorper rhoncus. Sed adipiscing tempus "
 "sem eu molestie. Aenean laoreet pretium ante vitae ultrices. Aenean eu "
@@ -18607,28 +18666,28 @@ msgid ""
 " erat."
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:2382
+#: concrete/config/install/packages/elemental_full/content.xml:2387
 msgid "Contact"
-msgstr ""
+msgstr "Contact"
 
-#: concrete/config/install/packages/elemental_full/content.xml:2551
+#: concrete/config/install/packages/elemental_full/content.xml:2556
 msgid "Blank Page"
-msgstr ""
+msgstr "Pagina alba"
 
-#: concrete/config/install/packages/elemental_full/content.xml:2570
+#: concrete/config/install/packages/elemental_full/content.xml:2575
 msgid "About"
 msgstr "Despre"
 
-#: concrete/config/install/packages/elemental_full/content.xml:2710
+#: concrete/config/install/packages/elemental_full/content.xml:2715
 msgid "Careers"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:2865
+#: concrete/config/install/packages/elemental_full/content.xml:2870
 msgid "Web Developer"
-msgstr ""
+msgstr "Web Developer"
 
-#: concrete/config/install/packages/elemental_full/content.xml:2865
-#: concrete/config/install/packages/elemental_full/content.xml:2927
+#: concrete/config/install/packages/elemental_full/content.xml:2870
+#: concrete/config/install/packages/elemental_full/content.xml:2932
 msgid ""
 "Curabitur sagittis elementum felis at sodales. Nullam fermentum at urna quis"
 " accumsan. Nam bibendum leo nisi, lacinia molestie arcu consequat quis. "
@@ -18638,84 +18697,84 @@ msgid ""
 "consectetur lacus."
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:2927
+#: concrete/config/install/packages/elemental_full/content.xml:2932
 msgid "Sales Associate"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:3034
+#: concrete/config/install/packages/elemental_full/content.xml:3039
 msgctxt "TopicCategoryName"
 msgid "Reviews"
-msgstr ""
-
-#: concrete/config/install/packages/elemental_full/content.xml:3035
-msgctxt "TopicName"
-msgid "Gadgets"
-msgstr ""
-
-#: concrete/config/install/packages/elemental_full/content.xml:3036
-msgctxt "TopicName"
-msgid "Movies"
-msgstr ""
-
-#: concrete/config/install/packages/elemental_full/content.xml:3037
-msgctxt "TopicName"
-msgid "Books"
-msgstr ""
-
-#: concrete/config/install/packages/elemental_full/content.xml:3038
-msgctxt "TopicName"
-msgid "Music"
-msgstr ""
+msgstr "Review-uri"
 
 #: concrete/config/install/packages/elemental_full/content.xml:3040
+msgctxt "TopicName"
+msgid "Gadgets"
+msgstr "Gadget-uri"
+
+#: concrete/config/install/packages/elemental_full/content.xml:3041
+msgctxt "TopicName"
+msgid "Movies"
+msgstr "Filme"
+
+#: concrete/config/install/packages/elemental_full/content.xml:3042
+msgctxt "TopicName"
+msgid "Books"
+msgstr "Carti"
+
+#: concrete/config/install/packages/elemental_full/content.xml:3043
+msgctxt "TopicName"
+msgid "Music"
+msgstr "Muzica"
+
+#: concrete/config/install/packages/elemental_full/content.xml:3045
 msgctxt "TopicName"
 msgid "Projects"
 msgstr "Proiecte"
 
-#: concrete/config/install/packages/elemental_full/content.xml:3041
+#: concrete/config/install/packages/elemental_full/content.xml:3046
 msgctxt "TopicName"
 msgid "Sports"
-msgstr ""
+msgstr "Sporturi"
 
-#: concrete/config/install/packages/elemental_full/content.xml:3042
+#: concrete/config/install/packages/elemental_full/content.xml:3047
 msgctxt "TopicName"
 msgid "Humor"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:3045
+#: concrete/config/install/packages/elemental_full/content.xml:3050
 msgctxt "TopicName"
 msgid "Crafts"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:3046
+#: concrete/config/install/packages/elemental_full/content.xml:3051
 msgctxt "TopicName"
 msgid "Homework"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:3047
+#: concrete/config/install/packages/elemental_full/content.xml:3052
 msgctxt "TopicName"
 msgid "Supplies"
 msgstr ""
 
-#: concrete/config/install/packages/elemental_full/content.xml:3048
+#: concrete/config/install/packages/elemental_full/content.xml:3053
 msgctxt "TopicName"
 msgid "Activities"
-msgstr ""
+msgstr "Activitati"
 
 #: concrete/config/install/packages/elemental_full/themes.xml:7
 msgctxt "ThumbnailTypeName"
 msgid "Small Image"
-msgstr ""
+msgstr "Imagine mica"
 
 #: concrete/config/install/packages/elemental_full/themes.xml:8
 msgctxt "ThumbnailTypeName"
 msgid "Medium Image"
-msgstr ""
+msgstr "Imagine medie"
 
 #: concrete/config/install/packages/elemental_full/themes.xml:9
 msgctxt "ThumbnailTypeName"
 msgid "Large Image"
-msgstr ""
+msgstr "Imagine mare"
 
 #: concrete/config/install/packages/elemental_blank/content.xml:10
 msgid "Page"
@@ -18794,29 +18853,29 @@ msgstr ""
 #: concrete/themes/greek_yogurt/css/presets/defaults.less:1
 msgctxt "PresetName"
 msgid "Greek Yogurt"
-msgstr ""
+msgstr "Greek Yogurt"
 
 #: concrete/themes/greek_yogurt/css/presets/orange_sunset.less:1
 msgctxt "PresetName"
 msgid "Orange Sunset"
-msgstr ""
+msgstr "Orange Sunset"
 
 #: concrete/themes/elemental/css/presets/night-road.less:1
 msgctxt "PresetName"
 msgid "Night Road"
-msgstr ""
+msgstr "Night Road"
 
 #: concrete/themes/elemental/css/presets/defaults.less:1
 msgctxt "PresetName"
 msgid "Sunrise"
-msgstr ""
+msgstr "Sunrise"
 
 #: concrete/themes/elemental/css/presets/blue-sky.less:1
 msgctxt "PresetName"
 msgid "Blue Sky"
-msgstr ""
+msgstr "Blue Sky"
 
 #: concrete/themes/elemental/css/presets/royal.less:1
 msgctxt "PresetName"
 msgid "Royal"
-msgstr ""
+msgstr "Royal"

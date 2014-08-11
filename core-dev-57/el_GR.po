@@ -6,9 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-08-09 17:25+0000\n"
-"PO-Revision-Date: 2014-08-09 17:26+0000\n"
-"Last-Translator: Michele Locati <michele@locati.it>\n"
+"POT-Creation-Date: 2014-08-10 04:00+0000\n"
+"PO-Revision-Date: 2014-08-10 14:21+0000\n"
+"Last-Translator: Vasilis Fotopoulos <basalba@gmail.com>\n"
 "Language-Team: Greek (Greece) (http://www.transifex.com/projects/p/concrete5/language/el_GR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -34,34 +34,54 @@ msgstr "Η Πρόσβασης στο Μπλοκ δεν είναι δυνατή"
 msgid "Invalid block."
 msgstr "Μη έγκυρο Μπλοκ."
 
+#. Long date format and time without seconds: see
+#. http://www.php.net/manual/en/function.date.php
 #: concrete/bootstrap/preferences.php:125
 #: concrete/single_pages/account/messages/inbox.php:97
 #: concrete/single_pages/account/messages/inbox.php:207
 #: concrete/single_pages/account/messages/inbox.php:217
+#: concrete/src/Localization/Service/Date.php:403
 msgid "F d, Y \\a\\t g:i A"
 msgstr "F d, Y \\a\\t g:i A"
 
+#. Long date format and time with seconds: see
+#. http://www.php.net/manual/en/function.date.php
 #: concrete/bootstrap/preferences.php:126
+#: concrete/src/Localization/Service/Date.php:400
 msgid "F d, Y \\a\\t g:i:s A"
 msgstr "F d, Y \\a\\t g:i:s A"
 
+#. Short date format and time without seconds: see
+#. http://www.php.net/manual/en/function.date.php
 #: concrete/bootstrap/preferences.php:127
+#: concrete/src/Localization/Service/Date.php:409
 msgid "n/j/Y \\a\\t g:i A"
 msgstr "n/j/Y \\a\\t g:i A"
 
+#. Short date format: see http://www.php.net/manual/en/function.date.php
 #: concrete/bootstrap/preferences.php:128
+#: concrete/src/Localization/Service/Date.php:346
+#: concrete/src/Localization/Service/Date.php:510
 msgid "n/j/Y"
 msgstr "n/j/Y"
 
+#. Long date format: see http://www.php.net/manual/en/function.date.php
 #: concrete/bootstrap/preferences.php:129
+#: concrete/src/Localization/Service/Date.php:344
 msgid "F j, Y"
 msgstr "F j, Y"
 
+#. Time format without seconds: see
+#. http://www.php.net/manual/en/function.date.php
 #: concrete/bootstrap/preferences.php:130
+#: concrete/src/Localization/Service/Date.php:373
 msgid "g:i A"
 msgstr "g:i A"
 
+#. Time format with seconds: see
+#. http://www.php.net/manual/en/function.date.php
 #: concrete/bootstrap/preferences.php:131
+#: concrete/src/Localization/Service/Date.php:371
 msgid "g:i:s A"
 msgstr "g:i:s A"
 
@@ -76,6 +96,7 @@ msgstr "μ/η/χρ"
 
 #. can be 12 or 24
 #: concrete/bootstrap/preferences.php:143
+#: concrete/src/Localization/Service/Date.php:562
 msgctxt "Time format"
 msgid "12"
 msgstr "12"
@@ -1203,11 +1224,11 @@ msgstr "Προσθήκη"
 
 #: concrete/tools/i18n_dynatree_js.php:9
 msgid "Loading..."
-msgstr ""
+msgstr "Φόρτωση ..."
 
 #: concrete/tools/i18n_dynatree_js.php:10
 msgid "Load error!"
-msgstr ""
+msgstr "Σφάλμα φόρτωσης!"
 
 #: concrete/single_pages/dashboard/sitemap/full.php:80
 #: concrete/tools/sitemap_search_selector.php:5
@@ -1226,7 +1247,7 @@ msgid "Flat View"
 msgstr "Επίπεδη Προβολή"
 
 #: concrete/blocks/search/controller.php:82
-#: concrete/config/install/packages/elemental_full/content.xml:2344
+#: concrete/config/install/packages/elemental_full/content.xml:2349
 #: concrete/elements/block_area_add_stack.php:17
 #: concrete/elements/files/search.php:45 concrete/elements/group/search.php:26
 #: concrete/elements/marketplace/search_form.php:24
@@ -1678,6 +1699,7 @@ msgstr "Επεξεργασία συνδέσμου"
 msgid "Unlink"
 msgstr "Αφαίρεση συνδέσμου "
 
+#: concrete/blocks/date_navigation/form.php:55
 #: concrete/tools/i18n_redactor_js.php:21
 msgid "Formatting"
 msgstr "Μορφοποίηση"
@@ -1806,6 +1828,7 @@ msgstr "Προσθήκη Κεφαλίδας"
 msgid "Delete Head"
 msgstr "Διαγραφή Κεφαλίδας"
 
+#: concrete/blocks/date_navigation/form.php:57
 #: concrete/blocks/feature/form.php:10
 #: concrete/blocks/image_slider/form_setup_html.php:197
 #: concrete/blocks/search/form_setup_html.php:30
@@ -4667,11 +4690,13 @@ msgid "Job Set schedule updated successfully."
 msgstr "Το χρονοδιάγραμμα Σετ Εργασιών ενημερώθηκε με επιτυχία."
 
 #: concrete/controllers/single_page/dashboard/reports/statistics.php:50
+#: concrete/src/Localization/Service/Date.php:437
 msgid "Today"
 msgstr "Σήμερα"
 
 #. %s is a time
 #: concrete/controllers/single_page/dashboard/reports/surveys.php:22
+#: concrete/src/Localization/Service/Date.php:469
 #, php-format
 msgid "Today at %s"
 msgstr "Σήμερα στις %s"
@@ -5401,31 +5426,31 @@ msgstr "Μοιραστείτε το στο Facebook"
 msgid "Posted by %1$s on %2$s"
 msgstr "Αναρτήθηκε από %1$s στο %2$s"
 
-#: concrete/themes/elemental/page_theme.php:77
+#: concrete/themes/elemental/page_theme.php:78
 msgid "Title Thin"
 msgstr "Τίτλος Λεπτός"
 
-#: concrete/themes/elemental/page_theme.php:78
+#: concrete/themes/elemental/page_theme.php:79
 msgid "Title Caps Bold"
 msgstr "Έντονα Κεφαλαία Τίτλου "
 
-#: concrete/themes/elemental/page_theme.php:79
+#: concrete/themes/elemental/page_theme.php:80
 msgid "Title Caps"
 msgstr "Τίτλος Κεφαλαία"
 
-#: concrete/themes/elemental/page_theme.php:80
+#: concrete/themes/elemental/page_theme.php:81
 msgid "Image Caption"
 msgstr "Λεζάντα Εικόνας"
 
-#: concrete/themes/elemental/page_theme.php:81
+#: concrete/themes/elemental/page_theme.php:82
 msgid "Standard Button"
 msgstr "Στάνταρ Κουμπί"
 
-#: concrete/themes/elemental/page_theme.php:82
+#: concrete/themes/elemental/page_theme.php:83
 msgid "Success Button"
 msgstr "Κουμπί Επιτυχίας"
 
-#: concrete/themes/elemental/page_theme.php:83
+#: concrete/themes/elemental/page_theme.php:84
 msgid "Primary Button"
 msgstr "Κυρίως  Κουμπί"
 
@@ -7367,7 +7392,7 @@ msgstr "Χρησιμοποίησε τη παρακάτω φόρμα για να 
 msgid ""
 "Manage the page attributes. To associate an attribute to the page click it "
 "in the left panel."
-msgstr ""
+msgstr "Διαχειριστείτε τα χαρακτηριστικά της σελίδας. Για να συσχετίσετε ένα χαρακτηριστικό στην σελίδα κάντε κλικ στο αριστερό πάνελ."
 
 #: concrete/src/Application/Service/UserInterface/Help.php:113
 msgid ""
@@ -7538,36 +7563,62 @@ msgid_plural "%d minutes ago"
 msgstr[0] "Πριν από %d λεπτό"
 msgstr[1] "Πριν από %d λεπτά"
 
-#: concrete/src/Localization/Service/Date.php:164
+#: concrete/src/Localization/Service/Date.php:193
 #, php-format
 msgid "%d day"
 msgid_plural "%d days"
 msgstr[0] "%d ημέρα"
 msgstr[1] "%d ημέρες"
 
-#: concrete/src/Localization/Service/Date.php:166
-#: concrete/src/Localization/Service/Date.php:169
+#: concrete/src/Localization/Service/Date.php:195
+#: concrete/src/Localization/Service/Date.php:198
 #, php-format
 msgid "%d hour"
 msgid_plural "%d hours"
 msgstr[0] "%d ώρα"
 msgstr[1] "%d ώρες"
 
-#: concrete/src/Localization/Service/Date.php:172
-#: concrete/src/Localization/Service/Date.php:177
+#: concrete/src/Localization/Service/Date.php:200
+#: concrete/src/Localization/Service/Date.php:203
 #, php-format
 msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "%d λεπτό"
 msgstr[1] "%d λεπτά"
 
-#: concrete/src/Localization/Service/Date.php:180
-#: concrete/src/Localization/Service/Date.php:185
+#: concrete/src/Localization/Service/Date.php:205
+#: concrete/src/Localization/Service/Date.php:208
 #, php-format
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] "%d δευτερόλεπτο"
 msgstr[1] "%d δευτερόλεπτα"
+
+#. Short date format and time with seconds: see
+#. http://www.php.net/manual/en/function.date.php
+#: concrete/src/Localization/Service/Date.php:407
+msgid "n/j/Y \\a\\t g:i:s A"
+msgstr "n/j/Y \\a\\t g:i:s A"
+
+#: concrete/src/Localization/Service/Date.php:439
+msgid "Tomorrow"
+msgstr "Αύριο"
+
+#: concrete/src/Localization/Service/Date.php:441
+msgid "Yesterday"
+msgstr "Αύριο"
+
+#. %s is a time
+#: concrete/src/Localization/Service/Date.php:471
+#, php-format
+msgid "Tomorrow at %s"
+msgstr "Αύριο στις %s"
+
+#. %s is a time
+#: concrete/src/Localization/Service/Date.php:473
+#, php-format
+msgid "Yesterday at %s"
+msgstr "Χθες στις %s"
 
 #: concrete/src/Marketplace/RemoteItem.php:171
 msgid "Unable to connect to marketplace to retrieve item"
@@ -7973,7 +8024,7 @@ msgid "My Account"
 msgstr "Ο λογαριασμός μου"
 
 #: concrete/config/install/packages/elemental_blank/content.xml:43
-#: concrete/config/install/packages/elemental_full/content.xml:871
+#: concrete/config/install/packages/elemental_full/content.xml:876
 #: concrete/elements/account/menu.php:60
 #: concrete/single_pages/account/profile/public_profile.php:14
 #: concrete/single_pages/dashboard/system/view.php:41
@@ -8481,7 +8532,7 @@ msgstr "Για προχωρημένους"
 
 #: concrete/elements/custom_style.php:304
 msgid "Custom Class"
-msgstr ""
+msgstr "Προσαρμοσμένη Κλάση"
 
 #: concrete/elements/custom_style.php:311
 msgid "Block Name"
@@ -8543,6 +8594,7 @@ msgstr "Κάντε κλικ για το ιστορικό"
 msgid "There is nothing currently waiting for you."
 msgstr "Δεν υπάρχει προς το παρόν κάτι να σας περιμένει."
 
+#: concrete/blocks/date_navigation/view.php:16
 #: concrete/elements/workflow/progress/categories/page/pending.php:87
 #: concrete/elements/workflow/progress/categories/page/pending.php:96
 msgid "None."
@@ -9121,6 +9173,7 @@ msgid "Allowed Page Templates"
 msgstr "Επιτρεπόμενα Πρότυπα Σελίδων"
 
 #: concrete/blocks/date_nav/form_setup_html.php:30
+#: concrete/blocks/date_navigation/form.php:23
 #: concrete/blocks/page_list/page_list_form.php:31
 #: concrete/blocks/topic_list/templates/flat_filter.php:10
 #: concrete/elements/page_types/form/base.php:56
@@ -9778,7 +9831,7 @@ msgstr[1] "%d Μπλοκ"
 
 #: concrete/views/panels/add.php:243
 msgid "An error occured while deleting this item:"
-msgstr ""
+msgstr "Παρουσιάστηκε σφάλμα κατά τη διαγραφή αυτού του στοιχείου:"
 
 #: concrete/views/frontend/user_error.php:2
 msgid "Unexpected User Error"
@@ -10524,7 +10577,7 @@ msgid "Add Service"
 msgstr "Προσθήκη Υπηρεσίας"
 
 #: concrete/blocks/share_this_page/form.php:6
-#: concrete/config/install/packages/elemental_full/content.xml:1186
+#: concrete/config/install/packages/elemental_full/content.xml:1191
 msgid "Services"
 msgstr "Υπηρεσίες"
 
@@ -10882,7 +10935,7 @@ msgid "Frequently Asked Questions Block"
 msgstr "Μπλοκ Συχνές Ερωτήσεις "
 
 #: concrete/blocks/faq/controller.php:26
-#: concrete/config/install/packages/elemental_full/content.xml:2987
+#: concrete/config/install/packages/elemental_full/content.xml:2992
 msgid "Frequently Asked Questions"
 msgstr "Συχνές Ερωτήσεις"
 
@@ -10993,6 +11046,7 @@ msgid "A collapsible date based navigation tree"
 msgstr "Ένα πτυσσόμενο δέντρο πλοήγησης με βάση την ημερομηνία"
 
 #: concrete/blocks/date_nav/controller.php:23
+#: concrete/blocks/date_navigation/controller.php:32
 msgid "Date Navigation"
 msgstr "Ημερολογιακή Πλοήγηση "
 
@@ -11784,35 +11838,35 @@ msgstr "Ελάχιστη Έκδοση"
 
 #: concrete/blocks/testimonial/form.php:32
 msgid "Company"
-msgstr ""
+msgstr "Εταιρία"
 
 #: concrete/blocks/testimonial/form.php:37
 msgid "Company URL"
-msgstr ""
+msgstr "URL Εταιρείας "
 
 #: concrete/blocks/testimonial/form.php:42
 msgid "Bio/Quote"
-msgstr ""
+msgstr "Βιογραφικό / Απόσπασμα"
 
 #: concrete/blocks/testimonial/controller.php:23
 msgid ""
 "Displays a quote or paragraph next to biographical information and a "
 "person's picture."
-msgstr ""
+msgstr "Εμφανίζει μια προσφορά ή παράγραφο δίπλα στα βιογραφικά στοιχεία και την εικόνα ενός ατόμου."
 
 #: concrete/blocks/testimonial/controller.php:28
 msgid "Testimonial"
-msgstr ""
+msgstr "Μαρτυρία"
 
 #: concrete/blocks/testimonial/view.php:16
 #, php-format
 msgid "%s, <a href=\"%s\">%s</a>"
-msgstr ""
+msgstr "%s, <a href=\"%s\">%s</a>"
 
 #: concrete/blocks/testimonial/view.php:22
 #, php-format
 msgid "%s, %s"
-msgstr ""
+msgstr "%s, %s"
 
 #: concrete/blocks/search/controller.php:78
 msgid "Add a search box to your site."
@@ -11869,6 +11923,7 @@ msgstr "Διαδρομή OR"
 msgid "Settings"
 msgstr "Ρυθμίσεις"
 
+#: concrete/blocks/date_navigation/form.php:3
 #: concrete/blocks/page_list/page_list_form.php:48
 msgid "Filtering"
 msgstr "Φιλτράρισμα"
@@ -11895,11 +11950,11 @@ msgstr "Επιτρέπει  ΆλλΑ Μπλοκ, όπως Η λίστα θεμά
 
 #: concrete/blocks/page_list/page_list_form.php:82
 msgid "Filter by Related Topic."
-msgstr ""
+msgstr "Φίλτρο με Σχετικό θέμα."
 
 #: concrete/blocks/page_list/page_list_form.php:88
 msgid "Choose topics attribute."
-msgstr ""
+msgstr "Επιλέξτε χαρακτηριστικό θέματος ."
 
 #: concrete/blocks/page_list/page_list_form.php:95
 msgid "Pagination"
@@ -12004,7 +12059,7 @@ msgstr "Σύνδεσμος Κειμένου"
 
 #: concrete/blocks/page_list/page_list_form.php:306
 msgid "Title of Page List"
-msgstr ""
+msgstr "Τίτλος της Λίστας Σελίδων"
 
 #: concrete/blocks/page_list/page_list_form.php:311
 msgid "Message to Display When No Pages Listed."
@@ -12069,30 +12124,6 @@ msgstr "Σύνδεση με αρχεία που είναι αποθηκευμέ�
 msgid "You must give your file a link."
 msgstr "Πρέπει να δώσετε ένα σύνδεσμο στο αρχείο σας."
 
-#: concrete/blocks/date_archive/form.php:7
-msgid "Display Title"
-msgstr "Εμφάνιση Τίτλου"
-
-#: concrete/blocks/date_archive/form.php:10
-msgid "# of Months to display"
-msgstr "# Μηνών για προβολή"
-
-#: concrete/blocks/date_archive/form.php:15
-msgid "Months Link to Page"
-msgstr "Μήνες συνδεδεμένοι στη σελίδα"
-
-#: concrete/blocks/date_archive/controller.php:21
-msgid "Displays month archive for pages"
-msgstr "Εμφανίζει το αρχείο του μήνα για τις σελίδες"
-
-#: concrete/blocks/date_archive/controller.php:25
-msgid "Blog Date Archive"
-msgstr "Ημερολογιακό Αρχείο του Ιστολόγιου"
-
-#: concrete/blocks/date_archive/controller.php:30
-msgid "Please enter the number of months you want to show."
-msgstr "Παρακαλούμε εισάγετε τον αριθμό των μηνών που θέλετε να εμφανίζονται."
-
 #: concrete/blocks/dashboard_app_status/controller.php:27
 msgid "Displays update and welcome back information on your dashboard."
 msgstr "Εμφανίζει πληροφορίες για ενημερώσεις και καλωσόρισμα στον Πίνακα Ελέγχου σας."
@@ -12152,6 +12183,34 @@ msgstr "Υπάρχουν προς το παρών <strong>%s</strong> νέες �
 #: concrete/blocks/dashboard_app_status/view.php:21
 msgid "Update add-ons."
 msgstr "Αναβάθμιση Πρόσθετων"
+
+#: concrete/blocks/date_navigation/form.php:5
+msgid "By Parent Page"
+msgstr "Με βάση τη Μητρική Σελίδα"
+
+#: concrete/blocks/date_navigation/form.php:9
+msgid "Filter by Parent Page"
+msgstr "Φίλτρο Με βάση τη Μητρική Σελίδα"
+
+#: concrete/blocks/date_navigation/form.php:20
+msgid "By Page Type"
+msgstr "Με βάση τον Τύπο Σελίδας"
+
+#: concrete/blocks/date_navigation/form.php:39
+msgid "Results"
+msgstr "Αποτελέσματα "
+
+#: concrete/blocks/date_navigation/form.php:44
+msgid "Redirect to Different Page on Click"
+msgstr "Ανακατεύθυνση σε άλλη σελίδα κάνοντας κλικ"
+
+#: concrete/blocks/date_navigation/controller.php:27
+msgid "Displays a list of months to filter a page list by."
+msgstr "Εμφανίζει μια λίστα των μηνών για να φιλτράρετε από μια λίστα σελίδων."
+
+#: concrete/blocks/date_navigation/controller.php:39
+msgid "Archives"
+msgstr "Αρχεία"
 
 #: concrete/blocks/survey/controller.php:50
 msgid "Provide a simple survey, along with results in a pie chart format."
@@ -15925,12 +15984,12 @@ msgstr "Προεπιλεγμένο Περίγραμμα Κουμπιού"
 #: concrete/themes/elemental/css/styles.xml:57
 msgctxt "StyleName"
 msgid "Accent Background"
-msgstr ""
+msgstr "Φόντο Έμφασης"
 
 #: concrete/themes/elemental/css/styles.xml:58
 msgctxt "StyleName"
 msgid "Accent Header Color"
-msgstr ""
+msgstr "Χρώμα Κεφαλίδας Εμφασης"
 
 #: concrete/themes/elemental/css/styles.xml:59
 msgctxt "StyleName"
@@ -16246,7 +16305,7 @@ msgstr "μπλοκ, ανανέωση, προσαρμοσμένο"
 msgid ""
 "add-on, addon, add on, package, app, ecommerce, discussions, forums, themes,"
 " templates, blocks"
-msgstr ""
+msgstr "add-on, addon, add on, πακέτο, app, ηλεκτρονικό εμπόριο, συζητήσεις, φόρουμ, θέματα, πρότυπα, μπλοκ"
 
 #: concrete/config/install/base/dashboard.xml:396
 msgid "Add Functionality"
@@ -16874,31 +16933,31 @@ msgstr "Κατάλογος"
 #: concrete/config/install/packages/elemental_blank/content.xml:29
 #: concrete/config/install/packages/elemental_full/content.xml:187
 #: concrete/config/install/packages/elemental_full/content.xml:278
-#: concrete/config/install/packages/elemental_full/content.xml:381
-#: concrete/config/install/packages/elemental_full/content.xml:547
-#: concrete/config/install/packages/elemental_full/content.xml:716
-#: concrete/config/install/packages/elemental_full/content.xml:877
-#: concrete/config/install/packages/elemental_full/content.xml:1187
-#: concrete/config/install/packages/elemental_full/content.xml:1353
-#: concrete/config/install/packages/elemental_full/content.xml:1442
-#: concrete/config/install/packages/elemental_full/content.xml:1530
-#: concrete/config/install/packages/elemental_full/content.xml:1626
-#: concrete/config/install/packages/elemental_full/content.xml:1717
-#: concrete/config/install/packages/elemental_full/content.xml:1805
-#: concrete/config/install/packages/elemental_full/content.xml:1894
-#: concrete/config/install/packages/elemental_full/content.xml:1913
-#: concrete/config/install/packages/elemental_full/content.xml:2114
-#: concrete/config/install/packages/elemental_full/content.xml:2180
-#: concrete/config/install/packages/elemental_full/content.xml:2248
-#: concrete/config/install/packages/elemental_full/content.xml:2316
-#: concrete/config/install/packages/elemental_full/content.xml:2365
-#: concrete/config/install/packages/elemental_full/content.xml:2383
-#: concrete/config/install/packages/elemental_full/content.xml:2557
-#: concrete/config/install/packages/elemental_full/content.xml:2571
-#: concrete/config/install/packages/elemental_full/content.xml:2711
-#: concrete/config/install/packages/elemental_full/content.xml:2891
-#: concrete/config/install/packages/elemental_full/content.xml:2953
-#: concrete/config/install/packages/elemental_full/content.xml:2988
+#: concrete/config/install/packages/elemental_full/content.xml:386
+#: concrete/config/install/packages/elemental_full/content.xml:552
+#: concrete/config/install/packages/elemental_full/content.xml:721
+#: concrete/config/install/packages/elemental_full/content.xml:882
+#: concrete/config/install/packages/elemental_full/content.xml:1192
+#: concrete/config/install/packages/elemental_full/content.xml:1358
+#: concrete/config/install/packages/elemental_full/content.xml:1447
+#: concrete/config/install/packages/elemental_full/content.xml:1535
+#: concrete/config/install/packages/elemental_full/content.xml:1631
+#: concrete/config/install/packages/elemental_full/content.xml:1722
+#: concrete/config/install/packages/elemental_full/content.xml:1810
+#: concrete/config/install/packages/elemental_full/content.xml:1899
+#: concrete/config/install/packages/elemental_full/content.xml:1918
+#: concrete/config/install/packages/elemental_full/content.xml:2119
+#: concrete/config/install/packages/elemental_full/content.xml:2185
+#: concrete/config/install/packages/elemental_full/content.xml:2253
+#: concrete/config/install/packages/elemental_full/content.xml:2321
+#: concrete/config/install/packages/elemental_full/content.xml:2370
+#: concrete/config/install/packages/elemental_full/content.xml:2388
+#: concrete/config/install/packages/elemental_full/content.xml:2562
+#: concrete/config/install/packages/elemental_full/content.xml:2576
+#: concrete/config/install/packages/elemental_full/content.xml:2716
+#: concrete/config/install/packages/elemental_full/content.xml:2896
+#: concrete/config/install/packages/elemental_full/content.xml:2958
+#: concrete/config/install/packages/elemental_full/content.xml:2993
 msgctxt "AreaName"
 msgid "Main"
 msgstr "Κύριο"
@@ -18278,67 +18337,67 @@ msgid "Job Details"
 msgstr "Λεπτομέρειες εργασίας"
 
 #: concrete/config/install/packages/elemental_full/content.xml:145
-#: concrete/config/install/packages/elemental_full/content.xml:661
-#: concrete/config/install/packages/elemental_full/content.xml:1397
-#: concrete/config/install/packages/elemental_full/content.xml:1486
-#: concrete/config/install/packages/elemental_full/content.xml:1582
-#: concrete/config/install/packages/elemental_full/content.xml:1673
-#: concrete/config/install/packages/elemental_full/content.xml:1761
-#: concrete/config/install/packages/elemental_full/content.xml:1849
-#: concrete/config/install/packages/elemental_full/content.xml:2192
-#: concrete/config/install/packages/elemental_full/content.xml:2260
-#: concrete/config/install/packages/elemental_full/content.xml:2328
-#: concrete/config/install/packages/elemental_full/content.xml:2910
-#: concrete/config/install/packages/elemental_full/content.xml:2972
+#: concrete/config/install/packages/elemental_full/content.xml:666
+#: concrete/config/install/packages/elemental_full/content.xml:1402
+#: concrete/config/install/packages/elemental_full/content.xml:1491
+#: concrete/config/install/packages/elemental_full/content.xml:1587
+#: concrete/config/install/packages/elemental_full/content.xml:1678
+#: concrete/config/install/packages/elemental_full/content.xml:1766
+#: concrete/config/install/packages/elemental_full/content.xml:1854
+#: concrete/config/install/packages/elemental_full/content.xml:2197
+#: concrete/config/install/packages/elemental_full/content.xml:2265
+#: concrete/config/install/packages/elemental_full/content.xml:2333
+#: concrete/config/install/packages/elemental_full/content.xml:2915
+#: concrete/config/install/packages/elemental_full/content.xml:2977
 msgctxt "AreaName"
 msgid "Page Header"
 msgstr "Κεφαλίδα Σελίδας"
 
 #: concrete/config/install/packages/elemental_full/content.xml:157
-#: concrete/config/install/packages/elemental_full/content.xml:396
-#: concrete/config/install/packages/elemental_full/content.xml:676
-#: concrete/config/install/packages/elemental_full/content.xml:1435
-#: concrete/config/install/packages/elemental_full/content.xml:1523
-#: concrete/config/install/packages/elemental_full/content.xml:1619
-#: concrete/config/install/packages/elemental_full/content.xml:1710
-#: concrete/config/install/packages/elemental_full/content.xml:1798
-#: concrete/config/install/packages/elemental_full/content.xml:1887
-#: concrete/config/install/packages/elemental_full/content.xml:2195
-#: concrete/config/install/packages/elemental_full/content.xml:2263
-#: concrete/config/install/packages/elemental_full/content.xml:2331
-#: concrete/config/install/packages/elemental_full/content.xml:2915
-#: concrete/config/install/packages/elemental_full/content.xml:2977
+#: concrete/config/install/packages/elemental_full/content.xml:401
+#: concrete/config/install/packages/elemental_full/content.xml:681
+#: concrete/config/install/packages/elemental_full/content.xml:1440
+#: concrete/config/install/packages/elemental_full/content.xml:1528
+#: concrete/config/install/packages/elemental_full/content.xml:1624
+#: concrete/config/install/packages/elemental_full/content.xml:1715
+#: concrete/config/install/packages/elemental_full/content.xml:1803
+#: concrete/config/install/packages/elemental_full/content.xml:1892
+#: concrete/config/install/packages/elemental_full/content.xml:2200
+#: concrete/config/install/packages/elemental_full/content.xml:2268
+#: concrete/config/install/packages/elemental_full/content.xml:2336
+#: concrete/config/install/packages/elemental_full/content.xml:2920
+#: concrete/config/install/packages/elemental_full/content.xml:2982
 msgctxt "AreaName"
 msgid "Sidebar"
 msgstr "Πλευρική Μπάρα"
 
 #: concrete/config/install/packages/elemental_full/content.xml:255
-#: concrete/config/install/packages/elemental_full/content.xml:352
-#: concrete/config/install/packages/elemental_full/content.xml:499
-#: concrete/config/install/packages/elemental_full/content.xml:623
-#: concrete/config/install/packages/elemental_full/content.xml:723
-#: concrete/config/install/packages/elemental_full/content.xml:1171
-#: concrete/config/install/packages/elemental_full/content.xml:1274
-#: concrete/config/install/packages/elemental_full/content.xml:1360
-#: concrete/config/install/packages/elemental_full/content.xml:1453
-#: concrete/config/install/packages/elemental_full/content.xml:1541
-#: concrete/config/install/packages/elemental_full/content.xml:1637
-#: concrete/config/install/packages/elemental_full/content.xml:1728
-#: concrete/config/install/packages/elemental_full/content.xml:1816
-#: concrete/config/install/packages/elemental_full/content.xml:1905
-#: concrete/config/install/packages/elemental_full/content.xml:2104
-#: concrete/config/install/packages/elemental_full/content.xml:2120
-#: concrete/config/install/packages/elemental_full/content.xml:2152
-#: concrete/config/install/packages/elemental_full/content.xml:2220
-#: concrete/config/install/packages/elemental_full/content.xml:2288
-#: concrete/config/install/packages/elemental_full/content.xml:2920
-#: concrete/config/install/packages/elemental_full/content.xml:2982
+#: concrete/config/install/packages/elemental_full/content.xml:357
+#: concrete/config/install/packages/elemental_full/content.xml:504
+#: concrete/config/install/packages/elemental_full/content.xml:628
+#: concrete/config/install/packages/elemental_full/content.xml:728
+#: concrete/config/install/packages/elemental_full/content.xml:1176
+#: concrete/config/install/packages/elemental_full/content.xml:1279
+#: concrete/config/install/packages/elemental_full/content.xml:1365
+#: concrete/config/install/packages/elemental_full/content.xml:1458
+#: concrete/config/install/packages/elemental_full/content.xml:1546
+#: concrete/config/install/packages/elemental_full/content.xml:1642
+#: concrete/config/install/packages/elemental_full/content.xml:1733
+#: concrete/config/install/packages/elemental_full/content.xml:1821
+#: concrete/config/install/packages/elemental_full/content.xml:1910
+#: concrete/config/install/packages/elemental_full/content.xml:2109
+#: concrete/config/install/packages/elemental_full/content.xml:2125
+#: concrete/config/install/packages/elemental_full/content.xml:2157
+#: concrete/config/install/packages/elemental_full/content.xml:2225
+#: concrete/config/install/packages/elemental_full/content.xml:2293
+#: concrete/config/install/packages/elemental_full/content.xml:2925
+#: concrete/config/install/packages/elemental_full/content.xml:2987
 msgctxt "AreaName"
 msgid "Page Footer"
 msgstr "Υποσέλιδο"
 
 #: concrete/config/install/packages/elemental_full/content.xml:263
-#: concrete/config/install/packages/elemental_full/content.xml:2108
+#: concrete/config/install/packages/elemental_full/content.xml:2113
 msgid "Blog"
 msgstr "Ιστολόγιο"
 
@@ -18352,185 +18411,185 @@ msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Blog Name"
 msgstr "Όνομα Ιστολογίου"
 
-#: concrete/config/install/packages/elemental_full/content.xml:360
+#: concrete/config/install/packages/elemental_full/content.xml:365
 msgid "Blog Entry"
 msgstr "Καταχώρηση Ιστολογίου"
 
-#: concrete/config/install/packages/elemental_full/content.xml:367
+#: concrete/config/install/packages/elemental_full/content.xml:372
 msgctxt "PageTypeComposerFormLayoutSetName"
 msgid "Post Details"
 msgstr "Λεπτομέρειες Δημοσίευσης"
 
-#: concrete/config/install/packages/elemental_full/content.xml:368
+#: concrete/config/install/packages/elemental_full/content.xml:373
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Entry Name"
 msgstr "Όνομα Καταχώρησης"
 
-#: concrete/config/install/packages/elemental_full/content.xml:369
+#: concrete/config/install/packages/elemental_full/content.xml:374
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Short Description"
 msgstr "Σύντομη Περιγραφή"
 
-#: concrete/config/install/packages/elemental_full/content.xml:370
+#: concrete/config/install/packages/elemental_full/content.xml:375
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Blog"
 msgstr "Ιστολόγιο"
 
-#: concrete/config/install/packages/elemental_full/content.xml:371
+#: concrete/config/install/packages/elemental_full/content.xml:376
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Topics"
 msgstr "Θέματα"
 
 #: concrete/config/install/packages/elemental_blank/content.xml:22
-#: concrete/config/install/packages/elemental_full/content.xml:373
+#: concrete/config/install/packages/elemental_full/content.xml:378
 msgctxt "PageTypeComposerFormLayoutSetName"
 msgid "Content"
 msgstr "Περιεχόμενο"
 
-#: concrete/config/install/packages/elemental_full/content.xml:532
-#: concrete/config/install/packages/elemental_full/content.xml:1347
+#: concrete/config/install/packages/elemental_full/content.xml:537
+#: concrete/config/install/packages/elemental_full/content.xml:1352
 msgid "Portfolio"
 msgstr "Χαρτοφυλάκιο"
 
-#: concrete/config/install/packages/elemental_full/content.xml:540
+#: concrete/config/install/packages/elemental_full/content.xml:545
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Name"
 msgstr "Όνομα"
 
-#: concrete/config/install/packages/elemental_full/content.xml:631
+#: concrete/config/install/packages/elemental_full/content.xml:636
 msgid "Portfolio Project"
 msgstr "Έργο Χαρτοφυλακίου"
 
-#: concrete/config/install/packages/elemental_full/content.xml:638
+#: concrete/config/install/packages/elemental_full/content.xml:643
 msgctxt "PageTypeComposerFormLayoutSetName"
 msgid "Page"
 msgstr "Σελίδα"
 
-#: concrete/config/install/packages/elemental_full/content.xml:641
+#: concrete/config/install/packages/elemental_full/content.xml:646
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Portfolio"
 msgstr "Χαρτοφυλάκιο"
 
-#: concrete/config/install/packages/elemental_full/content.xml:643
+#: concrete/config/install/packages/elemental_full/content.xml:648
 msgctxt "PageTypeComposerFormLayoutSetName"
 msgid "Project Data"
 msgstr "Δεδομένα χαρτοφυλακίου"
 
-#: concrete/config/install/packages/elemental_full/content.xml:645
+#: concrete/config/install/packages/elemental_full/content.xml:650
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Date Completed"
 msgstr "Ημερομηνία που ολοκληρώθηκε"
 
-#: concrete/config/install/packages/elemental_full/content.xml:651
+#: concrete/config/install/packages/elemental_full/content.xml:656
 msgctxt "PageTypeComposerFormLayoutSetName"
 msgid "Image Slider"
 msgstr "Slider Εικόνων"
 
-#: concrete/config/install/packages/elemental_full/content.xml:654
+#: concrete/config/install/packages/elemental_full/content.xml:659
 msgctxt "PageTypeComposerFormLayoutSetName"
 msgid "Body"
 msgstr "Σώμα"
 
-#: concrete/config/install/packages/elemental_full/content.xml:752
+#: concrete/config/install/packages/elemental_full/content.xml:757
 msgid "Footer Contact"
 msgstr "Υποσέλιδο Επικοινωνίας"
 
-#: concrete/config/install/packages/elemental_full/content.xml:753
-#: concrete/config/install/packages/elemental_full/content.xml:767
-#: concrete/config/install/packages/elemental_full/content.xml:781
-#: concrete/config/install/packages/elemental_full/content.xml:795
-#: concrete/config/install/packages/elemental_full/content.xml:808
-#: concrete/config/install/packages/elemental_full/content.xml:820
-#: concrete/config/install/packages/elemental_full/content.xml:840
-#: concrete/config/install/packages/elemental_full/content.xml:857
+#: concrete/config/install/packages/elemental_full/content.xml:758
+#: concrete/config/install/packages/elemental_full/content.xml:772
+#: concrete/config/install/packages/elemental_full/content.xml:786
+#: concrete/config/install/packages/elemental_full/content.xml:800
+#: concrete/config/install/packages/elemental_full/content.xml:813
+#: concrete/config/install/packages/elemental_full/content.xml:825
+#: concrete/config/install/packages/elemental_full/content.xml:845
+#: concrete/config/install/packages/elemental_full/content.xml:862
 msgid "Main"
 msgstr "Κύριο"
 
-#: concrete/config/install/packages/elemental_full/content.xml:766
+#: concrete/config/install/packages/elemental_full/content.xml:771
 msgid "Footer Legal"
 msgstr "Τίτλοι Υποσέλιδου"
 
-#: concrete/config/install/packages/elemental_full/content.xml:780
+#: concrete/config/install/packages/elemental_full/content.xml:785
 msgid "Footer Navigation"
 msgstr "Πλοήγηση Υποσέλιδου"
 
-#: concrete/config/install/packages/elemental_full/content.xml:794
+#: concrete/config/install/packages/elemental_full/content.xml:799
 msgid "Footer Site Title"
 msgstr "Τίτλος Ιστοχώρου Υποσέλιδου"
 
-#: concrete/config/install/packages/elemental_full/content.xml:807
+#: concrete/config/install/packages/elemental_full/content.xml:812
 msgid "Footer Social"
 msgstr "Κοινωνική Δικτύωση Υποσέλιδου"
 
-#: concrete/config/install/packages/elemental_full/content.xml:819
+#: concrete/config/install/packages/elemental_full/content.xml:824
 msgid "Header Navigation"
 msgstr "Επικεφαλίδα πλοήγησης"
 
-#: concrete/config/install/packages/elemental_full/content.xml:839
+#: concrete/config/install/packages/elemental_full/content.xml:844
 msgid "Header Search"
 msgstr "Αναζήτηση Κεφαλίδας"
 
-#: concrete/config/install/packages/elemental_full/content.xml:856
+#: concrete/config/install/packages/elemental_full/content.xml:861
 msgid "Header Site Title"
 msgstr "Τίτλος Ιστοχώρου Κεφαλίδας"
 
-#: concrete/config/install/packages/elemental_full/content.xml:1364
+#: concrete/config/install/packages/elemental_full/content.xml:1369
 msgid "Project Title"
 msgstr "Τίτλος Έργου"
 
-#: concrete/config/install/packages/elemental_full/content.xml:1364
-#: concrete/config/install/packages/elemental_full/content.xml:1460
-#: concrete/config/install/packages/elemental_full/content.xml:1548
-#: concrete/config/install/packages/elemental_full/content.xml:1644
-#: concrete/config/install/packages/elemental_full/content.xml:1735
-#: concrete/config/install/packages/elemental_full/content.xml:1823
+#: concrete/config/install/packages/elemental_full/content.xml:1369
+#: concrete/config/install/packages/elemental_full/content.xml:1465
+#: concrete/config/install/packages/elemental_full/content.xml:1553
+#: concrete/config/install/packages/elemental_full/content.xml:1649
+#: concrete/config/install/packages/elemental_full/content.xml:1740
+#: concrete/config/install/packages/elemental_full/content.xml:1828
 msgid ""
 "Pellentesque ultricies ligula vel neque dictum, eu mollis tortor adipiscing."
 msgstr "Pellentesque ultricies ligula vel neque dictum, eu mollis tortor adipiscing."
 
-#: concrete/config/install/packages/elemental_full/content.xml:1376
-#: concrete/config/install/packages/elemental_full/content.xml:1560
-#: concrete/config/install/packages/elemental_full/content.xml:1656
-#: concrete/config/install/packages/elemental_full/content.xml:1744
-#: concrete/config/install/packages/elemental_full/content.xml:1832
+#: concrete/config/install/packages/elemental_full/content.xml:1381
+#: concrete/config/install/packages/elemental_full/content.xml:1565
+#: concrete/config/install/packages/elemental_full/content.xml:1661
+#: concrete/config/install/packages/elemental_full/content.xml:1749
+#: concrete/config/install/packages/elemental_full/content.xml:1837
 msgctxt "Topic"
 msgid "/Homework"
 msgstr "/Homework"
 
-#: concrete/config/install/packages/elemental_full/content.xml:1460
+#: concrete/config/install/packages/elemental_full/content.xml:1465
 msgid "Project Title 2"
 msgstr "Τίτλος Έργου 2"
 
-#: concrete/config/install/packages/elemental_full/content.xml:1469
+#: concrete/config/install/packages/elemental_full/content.xml:1474
 msgctxt "Topic"
 msgid "/Activities"
 msgstr "/Activities"
 
-#: concrete/config/install/packages/elemental_full/content.xml:1548
+#: concrete/config/install/packages/elemental_full/content.xml:1553
 msgid "Project Title 3"
 msgstr "Τίτλος Έργου 3"
 
-#: concrete/config/install/packages/elemental_full/content.xml:1644
+#: concrete/config/install/packages/elemental_full/content.xml:1649
 msgid "Project Title 4"
 msgstr "Τίτλος Έργου 4"
 
-#: concrete/config/install/packages/elemental_full/content.xml:1735
+#: concrete/config/install/packages/elemental_full/content.xml:1740
 msgid "Project Title 5"
 msgstr "Τίτλος Έργου 5"
 
-#: concrete/config/install/packages/elemental_full/content.xml:1823
+#: concrete/config/install/packages/elemental_full/content.xml:1828
 msgid "Project Title 6"
 msgstr "Τίτλος Έργου 6"
 
-#: concrete/config/install/packages/elemental_full/content.xml:1912
+#: concrete/config/install/packages/elemental_full/content.xml:1917
 msgid "Team"
-msgstr ""
+msgstr "Ομάδα"
 
-#: concrete/config/install/packages/elemental_full/content.xml:2124
+#: concrete/config/install/packages/elemental_full/content.xml:2129
 msgid "Hello World!"
 msgstr "Γεια σου Κόσμε!"
 
-#: concrete/config/install/packages/elemental_full/content.xml:2124
+#: concrete/config/install/packages/elemental_full/content.xml:2129
 msgid ""
 "Pellentesque ultricies ligula vel neque dictum, eu mollis tortor adipiscing."
 " Etiam congue, est vel tincidunt vestibulum, nunc nunc porta nulla, at "
@@ -18538,40 +18597,40 @@ msgid ""
 "mattis aliquam ante dictum."
 msgstr "Pellentesque ultricies ligula vel neque dictum, eu mollis tortor adipiscing. Etiam congue, est vel tincidunt vestibulum, nunc nunc porta nulla, at adipiscing neque tellus quis urna. Quisque dignissim neque a ipsum sodales, mattis aliquam ante dictum."
 
-#: concrete/config/install/packages/elemental_full/content.xml:2148
-#: concrete/config/install/packages/elemental_full/content.xml:2284
+#: concrete/config/install/packages/elemental_full/content.xml:2153
+#: concrete/config/install/packages/elemental_full/content.xml:2289
 msgctxt "Topic"
 msgid "/Projects"
 msgstr "/Projects"
 
-#: concrete/config/install/packages/elemental_full/content.xml:2203
-#: concrete/config/install/packages/elemental_full/content.xml:2271
-#: concrete/config/install/packages/elemental_full/content.xml:2339
+#: concrete/config/install/packages/elemental_full/content.xml:2208
+#: concrete/config/install/packages/elemental_full/content.xml:2276
+#: concrete/config/install/packages/elemental_full/content.xml:2344
 msgctxt "AreaName"
 msgid "Sidebar Footer"
 msgstr "Υποσέλιδο πλευρικής εργαλειοθήκης "
 
-#: concrete/config/install/packages/elemental_full/content.xml:2207
+#: concrete/config/install/packages/elemental_full/content.xml:2212
 msgid "Another Blog Post"
 msgstr "Άλλη μια ανάρτηση ιστολογίου"
 
-#: concrete/config/install/packages/elemental_full/content.xml:2207
+#: concrete/config/install/packages/elemental_full/content.xml:2212
 msgid ""
 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet "
 "consectetur lacus. Vestibulum neque lectus, egestas non cursus vitae, "
 "aliquam at magna."
 msgstr "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet consectetur lacus. Vestibulum neque lectus, egestas non cursus vitae, aliquam at magna."
 
-#: concrete/config/install/packages/elemental_full/content.xml:2216
+#: concrete/config/install/packages/elemental_full/content.xml:2221
 msgctxt "Topic"
 msgid "/Humor"
 msgstr "/Humor"
 
-#: concrete/config/install/packages/elemental_full/content.xml:2275
+#: concrete/config/install/packages/elemental_full/content.xml:2280
 msgid "A Beautiful Site Deserves a Beautiful Blog"
 msgstr "Ένα όμορφο Site αξίζει ένα όμορφο ιστολόγιο"
 
-#: concrete/config/install/packages/elemental_full/content.xml:2275
+#: concrete/config/install/packages/elemental_full/content.xml:2280
 msgid ""
 "Donec blandit lectus nec neque ullamcorper rhoncus. Sed adipiscing tempus "
 "sem eu molestie. Aenean laoreet pretium ante vitae ultrices. Aenean eu "
@@ -18579,28 +18638,28 @@ msgid ""
 " erat."
 msgstr "Donec blandit lectus nec neque ullamcorper rhoncus. Sed adipiscing tempus sem eu molestie. Aenean laoreet pretium ante vitae ultrices. Aenean eu gravida magna, vel aliquet magna. In auctor convallis gravida. Phasellus est erat."
 
-#: concrete/config/install/packages/elemental_full/content.xml:2382
+#: concrete/config/install/packages/elemental_full/content.xml:2387
 msgid "Contact"
-msgstr ""
+msgstr "Επικοινωνία"
 
-#: concrete/config/install/packages/elemental_full/content.xml:2551
+#: concrete/config/install/packages/elemental_full/content.xml:2556
 msgid "Blank Page"
 msgstr "Κενή Σελίδα"
 
-#: concrete/config/install/packages/elemental_full/content.xml:2570
+#: concrete/config/install/packages/elemental_full/content.xml:2575
 msgid "About"
 msgstr "Σχετικά με"
 
-#: concrete/config/install/packages/elemental_full/content.xml:2710
+#: concrete/config/install/packages/elemental_full/content.xml:2715
 msgid "Careers"
 msgstr "Careers"
 
-#: concrete/config/install/packages/elemental_full/content.xml:2865
+#: concrete/config/install/packages/elemental_full/content.xml:2870
 msgid "Web Developer"
 msgstr "Web Developer"
 
-#: concrete/config/install/packages/elemental_full/content.xml:2865
-#: concrete/config/install/packages/elemental_full/content.xml:2927
+#: concrete/config/install/packages/elemental_full/content.xml:2870
+#: concrete/config/install/packages/elemental_full/content.xml:2932
 msgid ""
 "Curabitur sagittis elementum felis at sodales. Nullam fermentum at urna quis"
 " accumsan. Nam bibendum leo nisi, lacinia molestie arcu consequat quis. "
@@ -18610,66 +18669,66 @@ msgid ""
 "consectetur lacus."
 msgstr "Curabitur sagittis Elementum felis ut sodales . Nullam fermentum se urna QUIS accumsan . Nam Bibendum leo nisi , lacinia molestie Arcu consequat QUIS . Morbi sto suscipit risus . Sed consequat eleifend Metus , si̱meío̱ma malesuada éro̱s Elementum sed . Fusce risus felis , génous Viverra et dignissim se , lobortis mi̱ est tou Lorem ipsum dolor káthontai amet , consectetur adipiscing elit . Nullam kathísei amet consectetur Lacus ."
 
-#: concrete/config/install/packages/elemental_full/content.xml:2927
+#: concrete/config/install/packages/elemental_full/content.xml:2932
 msgid "Sales Associate"
 msgstr "Ομάδα Πωλήσεων"
 
-#: concrete/config/install/packages/elemental_full/content.xml:3034
+#: concrete/config/install/packages/elemental_full/content.xml:3039
 msgctxt "TopicCategoryName"
 msgid "Reviews"
 msgstr "Kριτικές"
 
-#: concrete/config/install/packages/elemental_full/content.xml:3035
+#: concrete/config/install/packages/elemental_full/content.xml:3040
 msgctxt "TopicName"
 msgid "Gadgets"
 msgstr "Gadgets"
 
-#: concrete/config/install/packages/elemental_full/content.xml:3036
+#: concrete/config/install/packages/elemental_full/content.xml:3041
 msgctxt "TopicName"
 msgid "Movies"
 msgstr "Ταινίες"
 
-#: concrete/config/install/packages/elemental_full/content.xml:3037
+#: concrete/config/install/packages/elemental_full/content.xml:3042
 msgctxt "TopicName"
 msgid "Books"
 msgstr "Βιβλία"
 
-#: concrete/config/install/packages/elemental_full/content.xml:3038
+#: concrete/config/install/packages/elemental_full/content.xml:3043
 msgctxt "TopicName"
 msgid "Music"
 msgstr " Μουσική"
 
-#: concrete/config/install/packages/elemental_full/content.xml:3040
+#: concrete/config/install/packages/elemental_full/content.xml:3045
 msgctxt "TopicName"
 msgid "Projects"
 msgstr "Έργα"
 
-#: concrete/config/install/packages/elemental_full/content.xml:3041
+#: concrete/config/install/packages/elemental_full/content.xml:3046
 msgctxt "TopicName"
 msgid "Sports"
 msgstr "Σπορ"
 
-#: concrete/config/install/packages/elemental_full/content.xml:3042
+#: concrete/config/install/packages/elemental_full/content.xml:3047
 msgctxt "TopicName"
 msgid "Humor"
 msgstr "Χιούμορ "
 
-#: concrete/config/install/packages/elemental_full/content.xml:3045
+#: concrete/config/install/packages/elemental_full/content.xml:3050
 msgctxt "TopicName"
 msgid "Crafts"
 msgstr "Χειροτεχνία"
 
-#: concrete/config/install/packages/elemental_full/content.xml:3046
+#: concrete/config/install/packages/elemental_full/content.xml:3051
 msgctxt "TopicName"
 msgid "Homework"
 msgstr "Εργασία για το σπίτι"
 
-#: concrete/config/install/packages/elemental_full/content.xml:3047
+#: concrete/config/install/packages/elemental_full/content.xml:3052
 msgctxt "TopicName"
 msgid "Supplies"
 msgstr "Προμήθειες"
 
-#: concrete/config/install/packages/elemental_full/content.xml:3048
+#: concrete/config/install/packages/elemental_full/content.xml:3053
 msgctxt "TopicName"
 msgid "Activities"
 msgstr "Δραστηριότητες"
@@ -18741,7 +18800,7 @@ msgstr "Πλέγμα Μικρογραφίας"
 #: concrete/blocks/feature/templates/hover_description
 msgctxt "TemplateFileName"
 msgid "Hover Description"
-msgstr ""
+msgstr "Περιγραφή Hover "
 
 #: concrete/blocks/topic_list/templates/flat_filter.php
 msgctxt "TemplateFileName"
