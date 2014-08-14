@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-08-12 04:00+0000\n"
-"PO-Revision-Date: 2014-08-12 09:55+0000\n"
+"POT-Creation-Date: 2014-08-13 06:05+0000\n"
+"PO-Revision-Date: 2014-08-13 06:08+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Estonian (Estonia) (http://www.transifex.com/projects/p/concrete5/language/et_EE/)\n"
 "MIME-Version: 1.0\n"
@@ -403,6 +403,7 @@ msgstr ""
 #: concrete/single_pages/dashboard/system/conversations/bannedwords.php:56
 #: concrete/single_pages/dashboard/system/conversations/bannedwords.php:63
 #: concrete/single_pages/dashboard/system/conversations/editor.php:5
+#: concrete/single_pages/dashboard/system/conversations/permissions.php:21
 #: concrete/single_pages/dashboard/system/conversations/points.php:25
 #: concrete/single_pages/dashboard/system/conversations/settings.php:44
 #: concrete/single_pages/dashboard/system/environment/debug.php:24
@@ -870,7 +871,7 @@ msgstr ""
 #: concrete/elements/block_header_view.php:159
 #: concrete/elements/collection_attribute_values.php:18
 #: concrete/elements/collection_delete.php:49
-#: concrete/elements/conversation/message.php:42
+#: concrete/elements/conversation/message.php:47
 #: concrete/elements/conversation/message/topic.php:42
 #: concrete/elements/files/search.php:38
 #: concrete/elements/page_controls_footer.php:124
@@ -1561,34 +1562,42 @@ msgid "Invalid conversation."
 msgstr ""
 
 #: concrete/tools/conversations/add_message.php:24
-#: concrete/tools/conversations/add_message.php:28
+msgid "You do not have access to add a message to this conversation."
+msgstr ""
+
+#: concrete/tools/conversations/add_message.php:30
+#: concrete/tools/conversations/add_message.php:34
 msgid "Invalid Page."
 msgstr ""
 
-#: concrete/tools/conversations/add_message.php:35
+#: concrete/tools/conversations/add_message.php:40
+msgid "You do not have permission to add attachments."
+msgstr ""
+
+#: concrete/tools/conversations/add_message.php:44
 msgid "You have too many attachments."
 msgstr ""
 
-#: concrete/tools/conversations/add_message.php:42
+#: concrete/tools/conversations/add_message.php:52
 msgid "Invalid conversation post token."
 msgstr ""
 
 #: concrete/blocks/core_conversation_message/controller.php:43
-#: concrete/tools/conversations/add_message.php:45
+#: concrete/tools/conversations/add_message.php:55
 msgid "Your message cannot be empty."
 msgstr ""
 
-#: concrete/tools/conversations/add_message.php:51
+#: concrete/tools/conversations/add_message.php:61
 msgid "Invalid parent message."
 msgstr ""
 
 #: concrete/blocks/core_conversation_message/controller.php:49
-#: concrete/tools/conversations/add_message.php:56
+#: concrete/tools/conversations/add_message.php:66
 msgid "Banned words detected."
 msgstr ""
 
 #: concrete/blocks/core_conversation/form.php:18
-#: concrete/tools/conversations/view_ajax.php:19
+#: concrete/tools/conversations/view_ajax.php:24
 msgid "Add Message"
 msgstr ""
 
@@ -1611,7 +1620,7 @@ msgstr ""
 
 #: concrete/blocks/file/add.php:10 concrete/blocks/file/edit.php:14
 #: concrete/elements/conversation/display.php:82
-#: concrete/elements/conversation/message.php:109
+#: concrete/elements/conversation/message.php:117
 #: concrete/tools/i18n_redactor_js.php:17
 msgid "Link"
 msgstr ""
@@ -1914,8 +1923,8 @@ msgstr ""
 #: concrete/blocks/form/form_setup_html.php:17
 #: concrete/controllers/single_page/dashboard/users/points/actions.php:33
 #: concrete/elements/collection_attribute_values.php:17
-#: concrete/elements/conversation/message.php:39
 #: concrete/elements/conversation/message.php:41
+#: concrete/elements/conversation/message.php:44
 #: concrete/single_pages/account/profile/public_profile.php:16
 #: concrete/single_pages/dashboard/system/conversations/bannedwords.php:42
 #: concrete/single_pages/dashboard/system/conversations/bannedwords.php:64
@@ -2522,7 +2531,7 @@ msgstr "Lisa gruppi"
 msgid "Let's start editing a page."
 msgstr ""
 
-#: concrete/elements/attribute/categories/user.php:24
+#: concrete/elements/attribute/categories/user.php:26
 #: concrete/elements/page_types/composer/form/output/buttons.php:11
 #: concrete/tools/i18n_js.php:92
 msgid "Edit Mode"
@@ -2630,7 +2639,7 @@ msgstr ""
 #: concrete/config/install/base/dashboard.xml:58
 #: concrete/config/install/base/dashboard.xml:109
 #: concrete/config/install/base/dashboard.xml:295
-#: concrete/config/install/base/dashboard.xml:784
+#: concrete/config/install/base/dashboard.xml:786
 #: concrete/elements/page_controls_footer.php:83
 #: concrete/elements/page_controls_footer.php:85
 #: concrete/elements/panels/page.php:79 concrete/single_pages/login.php:31
@@ -2794,7 +2803,7 @@ msgstr "Kopeeri fail"
 msgid "Choose New File"
 msgstr "Escoger archivo nuevo"
 
-#: concrete/config/install/base/dashboard.xml:792
+#: concrete/config/install/base/dashboard.xml:794
 #: concrete/elements/files/search.php:35 concrete/elements/files/search.php:67
 #: concrete/tools/i18n_js.php:195
 msgid "Sets"
@@ -3532,6 +3541,7 @@ msgstr ""
 
 #: concrete/controllers/single_page/dashboard/blocks/permissions.php:38
 #: concrete/controllers/single_page/dashboard/pages/types/permissions.php:18
+#: concrete/controllers/single_page/dashboard/system/conversations/permissions.php:38
 #: concrete/controllers/single_page/dashboard/system/files/permissions.php:40
 #: concrete/controllers/single_page/dashboard/system/permissions/tasks.php:42
 #: concrete/controllers/single_page/dashboard/system/permissions/users.php:40
@@ -4157,9 +4167,9 @@ msgstr ""
 msgid "You will receive a test message from %s"
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/reports/forms.php:161
-#: concrete/controllers/single_page/dashboard/reports/forms.php:169
-#: concrete/controllers/single_page/dashboard/reports/forms.php:178
+#: concrete/controllers/single_page/dashboard/reports/forms.php:124
+#: concrete/controllers/single_page/dashboard/reports/forms.php:132
+#: concrete/controllers/single_page/dashboard/reports/forms.php:141
 #: concrete/controllers/single_page/dashboard/system/mail/importers.php:23
 #: concrete/controllers/single_page/dashboard/system/mail/method.php:16
 #: concrete/controllers/single_page/dashboard/system/mail/method/test.php:17
@@ -4310,7 +4320,7 @@ msgid ""
 "cannot be manually removed."
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:816
+#: concrete/config/install/base/dashboard.xml:818
 #: concrete/controllers/single_page/dashboard/system/attributes/topics/add.php:14
 #: concrete/single_pages/dashboard/system/attributes/topics/add.php:22
 #: concrete/single_pages/dashboard/system/attributes/topics/view.php:22
@@ -4622,7 +4632,7 @@ msgid "Job Set schedule updated successfully."
 msgstr ""
 
 #: concrete/controllers/single_page/dashboard/reports/statistics.php:50
-#: concrete/src/Localization/Service/Date.php:479
+#: concrete/src/Localization/Service/Date.php:496
 msgid "Today"
 msgstr "Hoy"
 
@@ -4630,17 +4640,11 @@ msgstr "Hoy"
 msgid "All Channels"
 msgstr ""
 
-#. %1$s is the survey name, %2$s is the date.
-#: concrete/controllers/single_page/dashboard/reports/forms.php:50
-#, php-format
-msgid "%1$s Form Data Output - Run on %2$s"
-msgstr ""
-
-#: concrete/controllers/single_page/dashboard/reports/forms.php:66
+#: concrete/controllers/single_page/dashboard/reports/forms.php:52
 msgid "Submitted Date"
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/reports/forms.php:67
+#: concrete/controllers/single_page/dashboard/reports/forms.php:53
 #: concrete/single_pages/dashboard/reports/forms.php:240
 #: concrete/single_pages/dashboard/reports/logs.php:66
 #: concrete/single_pages/dashboard/reports/statistics.php:78
@@ -4654,7 +4658,7 @@ msgstr ""
 msgid "User"
 msgstr "Usuario"
 
-#: concrete/controllers/single_page/dashboard/reports/forms.php:135
+#: concrete/controllers/single_page/dashboard/reports/forms.php:101
 #: concrete/single_pages/dashboard/reports/forms.php:270
 msgid "File not found"
 msgstr "Archivo no encontrado"
@@ -5977,7 +5981,7 @@ msgid ""
 "the administrator of this site for more information."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:258
+#: concrete/config/install/base/permissions.xml:270
 #: concrete/src/Permission/Access/Entity/GroupEntity.php:18
 msgctxt "PermissionAccessEntityTypeName"
 msgid "Group"
@@ -5987,13 +5991,23 @@ msgstr "Grupo"
 msgid "(Deleted Group)"
 msgstr "(Kustutatud grupp)"
 
+#: concrete/config/install/base/permissions.xml:362
+#: concrete/src/Permission/Access/Entity/ConversationMessageAuthorEntity.php:42
+msgctxt "PermissionAccessEntityTypeName"
+msgid "Message Author"
+msgstr ""
+
+#: concrete/src/Permission/Access/Entity/ConversationMessageAuthorEntity.php:80
+msgid "Message Author"
+msgstr ""
+
 #: concrete/config/install/base/dashboard.xml:117
 #: concrete/single_pages/dashboard/users/search.php:277
 #: concrete/src/Permission/Access/Entity/UserEntity.php:66
 msgid "Add User"
 msgstr "Agregar usuario"
 
-#: concrete/config/install/base/permissions.xml:278
+#: concrete/config/install/base/permissions.xml:290
 #: concrete/src/Permission/Access/Entity/UserEntity.php:68
 msgctxt "PermissionAccessEntityTypeName"
 msgid "User"
@@ -6007,13 +6021,13 @@ msgstr "(Kustutatud kasutaja)"
 msgid "Add Group Set"
 msgstr "Lisa gruppide komplekt"
 
-#: concrete/config/install/base/permissions.xml:298
+#: concrete/config/install/base/permissions.xml:310
 #: concrete/src/Permission/Access/Entity/GroupSetEntity.php:16
 msgctxt "PermissionAccessEntityTypeName"
 msgid "Group Set"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:344
+#: concrete/config/install/base/permissions.xml:356
 #: concrete/src/Permission/Access/Entity/FileUploaderEntity.php:36
 msgctxt "PermissionAccessEntityTypeName"
 msgid "File Uploader"
@@ -6023,7 +6037,7 @@ msgstr ""
 msgid "File Uploader"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:339
+#: concrete/config/install/base/permissions.xml:351
 #: concrete/src/Permission/Access/Entity/PageOwnerEntity.php:41
 msgctxt "PermissionAccessEntityTypeName"
 msgid "Page Owner"
@@ -6038,7 +6052,7 @@ msgstr ""
 msgid "Add Group Combination"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:318
+#: concrete/config/install/base/permissions.xml:330
 #: concrete/src/Permission/Access/Entity/GroupCombinationEntity.php:17
 msgctxt "PermissionAccessEntityTypeName"
 msgid "Group Combination"
@@ -6387,135 +6401,135 @@ msgid ""
 " contact the maintainer of this package for assistance."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:43
+#: concrete/src/Package/StartingPointPackage.php:44
 msgid "Starting installation and creating directories."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:44
+#: concrete/src/Package/StartingPointPackage.php:45
 msgid "Creating database tables."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:45
+#: concrete/src/Package/StartingPointPackage.php:46
 msgid "Adding admin user."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:46
+#: concrete/src/Package/StartingPointPackage.php:47
 msgid "Installing permissions & workflow."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:47
+#: concrete/src/Package/StartingPointPackage.php:48
 msgid "Creating home page."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:48
+#: concrete/src/Package/StartingPointPackage.php:49
 msgid "Installing attributes."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:49
+#: concrete/src/Package/StartingPointPackage.php:50
 msgid "Adding block types."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:50
+#: concrete/src/Package/StartingPointPackage.php:51
 msgid "Adding gathering data sources."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:51
+#: concrete/src/Package/StartingPointPackage.php:52
 msgid "Page type basic setup."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:52
+#: concrete/src/Package/StartingPointPackage.php:53
 msgid "Adding themes."
 msgstr "Teemade lisamine."
 
-#: concrete/src/Package/StartingPointPackage.php:53
+#: concrete/src/Package/StartingPointPackage.php:54
 msgid "Installing automated jobs."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:54
+#: concrete/src/Package/StartingPointPackage.php:55
 msgid "Installing dashboard."
 msgstr "Töölaua paigaldamine."
 
-#: concrete/src/Package/StartingPointPackage.php:55
+#: concrete/src/Package/StartingPointPackage.php:56
 msgid "Installing login and registration pages."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:56
+#: concrete/src/Package/StartingPointPackage.php:57
 msgid "Adding image editor functionality."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:57
+#: concrete/src/Package/StartingPointPackage.php:58
 msgid "Configuring site."
 msgstr "Saidi seadistamine."
 
-#: concrete/src/Package/StartingPointPackage.php:58
+#: concrete/src/Package/StartingPointPackage.php:59
 msgid "Importing files."
 msgstr "Failideimportimine."
 
-#: concrete/src/Package/StartingPointPackage.php:59
+#: concrete/src/Package/StartingPointPackage.php:60
 msgid "Adding pages and content."
 msgstr "Lehekülgede ja sisu lisamine."
 
-#: concrete/src/Package/StartingPointPackage.php:60
+#: concrete/src/Package/StartingPointPackage.php:61
 msgid "Setting up site permissions."
 msgstr "Saidi õiguste seadistamine."
 
-#: concrete/src/Package/StartingPointPackage.php:61
+#: concrete/src/Package/StartingPointPackage.php:62
 msgid "Prefetching information."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:62
+#: concrete/src/Package/StartingPointPackage.php:63
 msgid "Finishing."
 msgstr ""
 
 #: concrete/single_pages/dashboard/system/files/storage.php:54
-#: concrete/src/Package/StartingPointPackage.php:145
-#: concrete/src/Package/StartingPointPackage.php:148
+#: concrete/src/Package/StartingPointPackage.php:146
+#: concrete/src/Package/StartingPointPackage.php:149
 msgid "Default"
 msgstr "Vaikeväärtus"
 
-#: concrete/src/Package/StartingPointPackage.php:146
+#: concrete/src/Package/StartingPointPackage.php:147
 msgid "Local"
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:152
+#: concrete/src/Package/StartingPointPackage.php:153
 msgid "File Manager Thumbnails"
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:160
+#: concrete/src/Package/StartingPointPackage.php:161
 msgid "File Manager Detail Thumbnails"
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:189
+#: concrete/src/Package/StartingPointPackage.php:190
 #, php-format
 msgid "Unable to install database: %s"
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:216
+#: concrete/src/Package/StartingPointPackage.php:217
 msgctxt "GroupName"
 msgid "Guest"
 msgstr "Visitante"
 
-#: concrete/src/Package/StartingPointPackage.php:216
+#: concrete/src/Package/StartingPointPackage.php:217
 msgctxt "GroupDescription"
 msgid "The guest group represents unregistered visitors to your site."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:217
+#: concrete/src/Package/StartingPointPackage.php:218
 msgctxt "GroupName"
 msgid "Registered Users"
 msgstr "Usuarios registrados"
 
-#: concrete/src/Package/StartingPointPackage.php:217
+#: concrete/src/Package/StartingPointPackage.php:218
 msgctxt "GroupDescription"
 msgid "The registered users group represents all user accounts."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:218
+#: concrete/src/Package/StartingPointPackage.php:219
 msgctxt "GroupName"
 msgid "Administrators"
 msgstr "Administraatorid"
 
-#: concrete/src/Package/StartingPointPackage.php:234
+#: concrete/src/Package/StartingPointPackage.php:235
 msgid "Won a Badge"
 msgstr ""
 
@@ -6543,10 +6557,10 @@ msgid "No users selected."
 msgstr ""
 
 #. Short date format: see http://www.php.net/manual/en/function.date.php
-#: concrete/src/Form/Service/Widget/DateTime.php:151
-#: concrete/src/Form/Service/Widget/DateTime.php:218
-#: concrete/src/Localization/Service/Date.php:388
-#: concrete/src/Localization/Service/Date.php:552
+#: concrete/src/Form/Service/Widget/DateTime.php:157
+#: concrete/src/Form/Service/Widget/DateTime.php:229
+#: concrete/src/Localization/Service/Date.php:405
+#: concrete/src/Localization/Service/Date.php:569
 msgid "n/j/Y"
 msgstr ""
 
@@ -6720,7 +6734,7 @@ msgstr "Aprobar movimiento"
 msgid "On %s, user %s submitted the following request: %s"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:254
+#: concrete/config/install/base/permissions.xml:266
 #: concrete/src/Workflow/BasicWorkflow.php:83
 msgid "Basic Workflow"
 msgstr ""
@@ -7388,7 +7402,7 @@ msgstr ""
 msgid "Customize"
 msgstr "Personalizar"
 
-#: concrete/config/install/base/dashboard.xml:968
+#: concrete/config/install/base/dashboard.xml:970
 #: concrete/src/Application/Service/Dashboard.php:325
 msgid "Customize Dashboard Home"
 msgstr "Kohanda töölauda"
@@ -7431,69 +7445,69 @@ msgstr "Ya existe un atributo con el nombre %s ."
 msgid "Invalid form token. Please reload this form and submit again."
 msgstr ""
 
-#: concrete/src/Conversation/Message/Message.php:107
+#: concrete/src/Conversation/Message/Message.php:129
 msgid "This message has been deleted."
 msgstr ""
 
-#: concrete/src/Conversation/Message/Message.php:111
+#: concrete/src/Conversation/Message/Message.php:133
 msgid "This message has been flagged as spam."
 msgstr ""
 
-#: concrete/src/Conversation/Message/Message.php:115
+#: concrete/src/Conversation/Message/Message.php:137
 msgid "This message is queued for approval."
 msgstr ""
 
 #: concrete/src/Conversation/Discussion/Discussion.php:35
-#: concrete/src/Conversation/Message/Message.php:143
-#: concrete/src/Conversation/Message/Message.php:182
-#: concrete/src/Conversation/Message/Message.php:184
-#: concrete/src/Conversation/Message/Message.php:186
-#: concrete/src/Conversation/Message/Message.php:188
-#: concrete/src/Conversation/Message/Message.php:190
-#: concrete/src/Conversation/Message/Message.php:192
-#: concrete/src/Conversation/Message/Message.php:194
+#: concrete/src/Conversation/Message/Message.php:165
+#: concrete/src/Conversation/Message/Message.php:204
+#: concrete/src/Conversation/Message/Message.php:206
+#: concrete/src/Conversation/Message/Message.php:208
+#: concrete/src/Conversation/Message/Message.php:210
+#: concrete/src/Conversation/Message/Message.php:212
+#: concrete/src/Conversation/Message/Message.php:214
+#: concrete/src/Conversation/Message/Message.php:216
 #, php-format
 msgctxt "Message posted date"
 msgid "Posted on %s"
 msgstr ""
 
-#: concrete/src/Conversation/Message/Message.php:160
-#: concrete/src/Conversation/Message/Message.php:176
+#: concrete/src/Conversation/Message/Message.php:182
+#: concrete/src/Conversation/Message/Message.php:198
 #, php-format
 msgid "%d second ago"
 msgid_plural "%d seconds ago"
 msgstr[0] ""
 msgstr[1] ""
 
-#: concrete/src/Conversation/Message/Message.php:166
+#: concrete/src/Conversation/Message/Message.php:188
 #, php-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] ""
 msgstr[1] ""
 
-#: concrete/src/Conversation/Message/Message.php:168
+#: concrete/src/Conversation/Message/Message.php:190
 #, php-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] ""
 msgstr[1] ""
 
-#: concrete/src/Conversation/Message/Message.php:170
+#: concrete/src/Conversation/Message/Message.php:192
 #, php-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] ""
 msgstr[1] ""
 
-#: concrete/src/Conversation/Message/Message.php:172
+#: concrete/src/Conversation/Message/Message.php:194
 #, php-format
 msgid "%d hour ago"
 msgid_plural "%d hours ago"
 msgstr[0] ""
 msgstr[1] ""
 
-#: concrete/src/Conversation/Message/Message.php:174
+#: concrete/src/Conversation/Message/Message.php:196
 #, php-format
 msgid "%d minute ago"
 msgid_plural "%d minutes ago"
@@ -7520,31 +7534,31 @@ msgstr ""
 msgid "Pacific Ocean"
 msgstr ""
 
-#: concrete/src/Localization/Service/Date.php:235
+#: concrete/src/Localization/Service/Date.php:236
 #, php-format
 msgid "%d day"
 msgid_plural "%d days"
 msgstr[0] ""
 msgstr[1] ""
 
-#: concrete/src/Localization/Service/Date.php:237
-#: concrete/src/Localization/Service/Date.php:240
+#: concrete/src/Localization/Service/Date.php:238
+#: concrete/src/Localization/Service/Date.php:241
 #, php-format
 msgid "%d hour"
 msgid_plural "%d hours"
 msgstr[0] ""
 msgstr[1] ""
 
-#: concrete/src/Localization/Service/Date.php:242
-#: concrete/src/Localization/Service/Date.php:245
+#: concrete/src/Localization/Service/Date.php:243
+#: concrete/src/Localization/Service/Date.php:246
 #, php-format
 msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] ""
 msgstr[1] ""
 
-#: concrete/src/Localization/Service/Date.php:247
-#: concrete/src/Localization/Service/Date.php:250
+#: concrete/src/Localization/Service/Date.php:248
+#: concrete/src/Localization/Service/Date.php:251
 #, php-format
 msgid "%d second"
 msgid_plural "%d seconds"
@@ -7552,25 +7566,25 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. Long date format: see http://www.php.net/manual/en/function.date.php
-#: concrete/src/Localization/Service/Date.php:386
+#: concrete/src/Localization/Service/Date.php:403
 msgid "F j, Y"
 msgstr ""
 
 #. Time format with seconds: see
 #. http://www.php.net/manual/en/function.date.php
-#: concrete/src/Localization/Service/Date.php:413
+#: concrete/src/Localization/Service/Date.php:430
 msgid "g:i:s A"
 msgstr ""
 
 #. Time format without seconds: see
 #. http://www.php.net/manual/en/function.date.php
-#: concrete/src/Localization/Service/Date.php:415
+#: concrete/src/Localization/Service/Date.php:432
 msgid "g:i A"
 msgstr ""
 
 #. Long date format and time with seconds: see
 #. http://www.php.net/manual/en/function.date.php
-#: concrete/src/Localization/Service/Date.php:442
+#: concrete/src/Localization/Service/Date.php:459
 msgid "F d, Y \\a\\t g:i:s A"
 msgstr ""
 
@@ -7579,50 +7593,50 @@ msgstr ""
 #: concrete/single_pages/account/messages/inbox.php:97
 #: concrete/single_pages/account/messages/inbox.php:207
 #: concrete/single_pages/account/messages/inbox.php:217
-#: concrete/src/Localization/Service/Date.php:445
+#: concrete/src/Localization/Service/Date.php:462
 msgid "F d, Y \\a\\t g:i A"
 msgstr ""
 
 #. Short date format and time with seconds: see
 #. http://www.php.net/manual/en/function.date.php
-#: concrete/src/Localization/Service/Date.php:449
+#: concrete/src/Localization/Service/Date.php:466
 msgid "n/j/Y \\a\\t g:i:s A"
 msgstr ""
 
 #. Short date format and time without seconds: see
 #. http://www.php.net/manual/en/function.date.php
-#: concrete/src/Localization/Service/Date.php:451
+#: concrete/src/Localization/Service/Date.php:468
 msgid "n/j/Y \\a\\t g:i A"
 msgstr ""
 
-#: concrete/src/Localization/Service/Date.php:481
+#: concrete/src/Localization/Service/Date.php:498
 msgid "Tomorrow"
 msgstr ""
 
-#: concrete/src/Localization/Service/Date.php:483
+#: concrete/src/Localization/Service/Date.php:500
 msgid "Yesterday"
 msgstr "Eile"
 
 #. %s is a time
-#: concrete/src/Localization/Service/Date.php:511
+#: concrete/src/Localization/Service/Date.php:528
 #, php-format
 msgid "Today at %s"
 msgstr ""
 
 #. %s is a time
-#: concrete/src/Localization/Service/Date.php:513
+#: concrete/src/Localization/Service/Date.php:530
 #, php-format
 msgid "Tomorrow at %s"
 msgstr ""
 
 #. %s is a time
-#: concrete/src/Localization/Service/Date.php:515
+#: concrete/src/Localization/Service/Date.php:532
 #, php-format
 msgid "Yesterday at %s"
 msgstr ""
 
 #. can be 12 or 24
-#: concrete/src/Localization/Service/Date.php:604
+#: concrete/src/Localization/Service/Date.php:621
 msgctxt "Time format"
 msgid "12"
 msgstr ""
@@ -7755,27 +7769,27 @@ msgstr ""
 msgid "Displayed in Public Profile."
 msgstr ""
 
-#: concrete/elements/attribute/categories/user.php:19
+#: concrete/elements/attribute/categories/user.php:21
 msgid "Displayed on Member List."
 msgstr ""
 
-#: concrete/elements/attribute/categories/user.php:26
+#: concrete/elements/attribute/categories/user.php:28
 msgid "Editable in Profile."
 msgstr "Profiilis muudetav."
 
-#: concrete/elements/attribute/categories/user.php:27
+#: concrete/elements/attribute/categories/user.php:31
 msgid "Editable and Required in Profile."
 msgstr ""
 
-#: concrete/elements/attribute/categories/user.php:33
+#: concrete/elements/attribute/categories/user.php:37
 msgid "Registration"
 msgstr "Registro"
 
-#: concrete/elements/attribute/categories/user.php:35
+#: concrete/elements/attribute/categories/user.php:39
 msgid "Show on Registration Form."
 msgstr ""
 
-#: concrete/elements/attribute/categories/user.php:36
+#: concrete/elements/attribute/categories/user.php:42
 msgid "Require on Registration Form."
 msgstr ""
 
@@ -9246,13 +9260,13 @@ msgstr ""
 msgid "Block Permissions"
 msgstr ""
 
-#: concrete/elements/conversation/message.php:32
+#: concrete/elements/conversation/message.php:34
 #: concrete/single_pages/dashboard/reports/statistics.php:110
 #: concrete/views/dialogs/file/properties.php:267
 msgid "Anonymous"
 msgstr "Anónimo"
 
-#: concrete/elements/conversation/message.php:43
+#: concrete/elements/conversation/message.php:50
 #: concrete/elements/conversation/message/topic.php:41
 msgid "Flag As Spam"
 msgstr ""
@@ -9260,22 +9274,22 @@ msgstr ""
 #: concrete/elements/conversation/display.php:54
 #: concrete/elements/conversation/display.php:130
 #: concrete/elements/conversation/display.php:154
-#: concrete/elements/conversation/message.php:90
+#: concrete/elements/conversation/message.php:98
 #: concrete/elements/conversation/message/topic.php:45
 #: concrete/single_pages/account/messages/inbox.php:43
 #: concrete/single_pages/profile/messages.php:42
 msgid "Reply"
 msgstr ""
 
-#: concrete/elements/conversation/message.php:103
+#: concrete/elements/conversation/message.php:111
 msgid "Share message URL on Twitter."
 msgstr ""
 
-#: concrete/elements/conversation/message.php:106
+#: concrete/elements/conversation/message.php:114
 msgid "Share message URL on Facebook."
 msgstr ""
 
-#: concrete/elements/conversation/message.php:109
+#: concrete/elements/conversation/message.php:117
 msgid "Get message URL."
 msgstr ""
 
@@ -9815,7 +9829,7 @@ msgstr ""
 msgid "Gathering Tiles"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:880
+#: concrete/config/install/base/dashboard.xml:882
 #: concrete/views/panels/add.php:70
 msgid "Stack"
 msgstr ""
@@ -10543,7 +10557,7 @@ msgstr ""
 msgid "Image Slider disabled in edit mode."
 msgstr ""
 
-#: concrete/blocks/image_slider/view.php:51
+#: concrete/blocks/image_slider/view.php:53
 msgid "No Slides Entered."
 msgstr ""
 
@@ -12335,7 +12349,7 @@ msgid "Topic List"
 msgstr ""
 
 #: concrete/blocks/topic_list/controller.php:39
-#: concrete/config/install/base/dashboard.xml:808
+#: concrete/config/install/base/dashboard.xml:810
 msgid "Topics"
 msgstr ""
 
@@ -13984,7 +13998,7 @@ msgstr "Habilitar URLs limpias"
 msgid "Code for your .htaccess file"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:819
+#: concrete/config/install/base/dashboard.xml:821
 #: concrete/single_pages/dashboard/system/environment/info.php:2
 msgid "Environment"
 msgstr "Keskkond"
@@ -14307,6 +14321,10 @@ msgstr ""
 msgid ""
 "Note: These settings can be overridden in the block edit form for individual"
 " conversations."
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/conversations/permissions.php:16
+msgid "You cannot access conversation permissions."
 msgstr ""
 
 #: concrete/single_pages/dashboard/system/conversations/bannedwords.php:6
@@ -14738,7 +14756,7 @@ msgstr ""
 msgid "Current Version"
 msgstr "Praegune versioon"
 
-#: concrete/config/install/base/dashboard.xml:870
+#: concrete/config/install/base/dashboard.xml:872
 #: concrete/single_pages/dashboard/system/backup/update.php:102
 msgid "Update concrete5"
 msgstr ""
@@ -15166,8 +15184,8 @@ msgid "No one has yet submitted this form."
 msgstr "Nadie ha enviado el formulario aún."
 
 #: concrete/single_pages/dashboard/reports/forms.php:214
-msgid "Export to Excel"
-msgstr "Exportar a excel"
+msgid "Export to CSV"
+msgstr ""
 
 #: concrete/single_pages/dashboard/reports/forms.php:226
 msgid "* Scroll right to view full results"
@@ -16632,188 +16650,192 @@ msgid ""
 "conversations bad words, banned words, banned, bad words, bad, words, list"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:784
+#: concrete/config/install/base/dashboard.xml:783
+msgid "Conversation Permissions"
+msgstr ""
+
+#: concrete/config/install/base/dashboard.xml:786
 msgid "Setup attributes for pages, users, files and more."
 msgstr ""
 
 #. Keywords for page /dashboard/system/attributes
-#: concrete/config/install/base/dashboard.xml:787
+#: concrete/config/install/base/dashboard.xml:789
 msgid "attribute configuration"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:792
+#: concrete/config/install/base/dashboard.xml:794
 msgid "Group attributes into sets for easier organization"
 msgstr ""
 
 #. Keywords for page /dashboard/system/attributes/sets
-#: concrete/config/install/base/dashboard.xml:795
+#: concrete/config/install/base/dashboard.xml:797
 msgid "attributes, sets"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:800
+#: concrete/config/install/base/dashboard.xml:802
 msgid "Types"
 msgstr "Tüübid"
 
-#: concrete/config/install/base/dashboard.xml:800
+#: concrete/config/install/base/dashboard.xml:802
 msgid "Choose which attribute types are available for different items."
 msgstr ""
 
 #. Keywords for page /dashboard/system/attributes/types
-#: concrete/config/install/base/dashboard.xml:803
+#: concrete/config/install/base/dashboard.xml:805
 msgid "attributes, types"
 msgstr ""
 
 #. Keywords for page /dashboard/system/attributes/topics
-#: concrete/config/install/base/dashboard.xml:811
+#: concrete/config/install/base/dashboard.xml:813
 msgid "topics, tags, taxonomy"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:819
+#: concrete/config/install/base/dashboard.xml:821
 msgid "Advanced settings for web developers."
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:827
+#: concrete/config/install/base/dashboard.xml:829
 msgid "Environment Information"
 msgstr "Keskkonna info"
 
 #. Keywords for page /dashboard/system/environment/info
-#: concrete/config/install/base/dashboard.xml:830
+#: concrete/config/install/base/dashboard.xml:832
 msgid "overrides, system info, debug, support, help"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:835
+#: concrete/config/install/base/dashboard.xml:837
 msgid "Debug Settings"
 msgstr "Veatuvastuse seaded"
 
 #. Keywords for page /dashboard/system/environment/debug
-#: concrete/config/install/base/dashboard.xml:838
+#: concrete/config/install/base/dashboard.xml:840
 msgid "errors, exceptions, develop, support, help"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:843
+#: concrete/config/install/base/dashboard.xml:845
 msgid "Logging Settings"
 msgstr "Logimise seaded"
 
 #. Keywords for page /dashboard/system/environment/logging
-#: concrete/config/install/base/dashboard.xml:846
+#: concrete/config/install/base/dashboard.xml:848
 msgid "email, logging, logs, smtp, pop, errors, mysql, log"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:852
+#: concrete/config/install/base/dashboard.xml:854
 msgid "Proxy Server"
 msgstr "Proksi server"
 
 #. Keywords for page /dashboard/system/environment/proxy
-#: concrete/config/install/base/dashboard.xml:855
+#: concrete/config/install/base/dashboard.xml:857
 msgid "network, proxy server"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:860
+#: concrete/config/install/base/dashboard.xml:862
 msgid "Backup & Restore"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:860
+#: concrete/config/install/base/dashboard.xml:862
 msgid "Backup or restore your website."
 msgstr ""
 
 #. Keywords for page /dashboard/system/backup
-#: concrete/config/install/base/dashboard.xml:863
+#: concrete/config/install/base/dashboard.xml:865
 msgid "export, backup, database, sql, mysql, encryption, restore"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:868
+#: concrete/config/install/base/dashboard.xml:870
 msgid "Backup Database"
 msgstr ""
 
 #. Keywords for page /dashboard/system/backup/update
-#: concrete/config/install/base/dashboard.xml:873
+#: concrete/config/install/base/dashboard.xml:875
 msgid "upgrade, new version, update"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:881
+#: concrete/config/install/base/dashboard.xml:883
 msgid "Dashboard Primary + Five"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:882
+#: concrete/config/install/base/dashboard.xml:884
 msgid "Dashboard Header + Four Column"
-msgstr ""
-
-#: concrete/config/install/base/dashboard.xml:886
-msgctxt "PageTemplateName"
-msgid "Stack"
-msgstr ""
-
-#: concrete/config/install/base/dashboard.xml:887
-msgctxt "PageTemplateName"
-msgid "Dashboard Primary + Five"
 msgstr ""
 
 #: concrete/config/install/base/dashboard.xml:888
 msgctxt "PageTemplateName"
+msgid "Stack"
+msgstr ""
+
+#: concrete/config/install/base/dashboard.xml:889
+msgctxt "PageTemplateName"
+msgid "Dashboard Primary + Five"
+msgstr ""
+
+#: concrete/config/install/base/dashboard.xml:890
+msgctxt "PageTemplateName"
 msgid "Dashboard Header + Four Column"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:893
+#: concrete/config/install/base/dashboard.xml:895
 msgid "Welcome to concrete5"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:893
+#: concrete/config/install/base/dashboard.xml:895
 msgid ""
 "Learn about how to use concrete5, how to develop for concrete5, and get "
 "general help."
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:899
+#: concrete/config/install/base/dashboard.xml:901
 msgctxt "AreaName"
 msgid "Header"
 msgstr "Päis"
 
-#: concrete/config/install/base/dashboard.xml:910
+#: concrete/config/install/base/dashboard.xml:912
 msgctxt "AreaName"
 msgid "Column 1"
 msgstr "Veerg 1"
 
-#: concrete/config/install/base/dashboard.xml:924
+#: concrete/config/install/base/dashboard.xml:926
 msgctxt "AreaName"
 msgid "Column 2"
 msgstr "Veerg 2"
 
-#: concrete/config/install/base/dashboard.xml:937
+#: concrete/config/install/base/dashboard.xml:939
 msgctxt "AreaName"
 msgid "Column 3"
 msgstr "Veerg 3"
 
-#: concrete/config/install/base/dashboard.xml:951
+#: concrete/config/install/base/dashboard.xml:953
 msgctxt "AreaName"
 msgid "Column 4"
 msgstr "Veerg 4"
 
-#: concrete/config/install/base/dashboard.xml:977
+#: concrete/config/install/base/dashboard.xml:979
 msgctxt "AreaName"
 msgid "Primary"
 msgstr "Peamine"
 
-#: concrete/config/install/base/dashboard.xml:981
+#: concrete/config/install/base/dashboard.xml:983
 msgctxt "AreaName"
 msgid "Secondary 1"
 msgstr "Teisejärguline 1"
 
-#: concrete/config/install/base/dashboard.xml:990
+#: concrete/config/install/base/dashboard.xml:992
 msgctxt "AreaName"
 msgid "Secondary 2"
 msgstr "Teisejärguline 2"
 
-#: concrete/config/install/base/dashboard.xml:999
+#: concrete/config/install/base/dashboard.xml:1001
 msgctxt "AreaName"
 msgid "Secondary 3"
 msgstr "Teisejärguline 3"
 
-#: concrete/config/install/base/dashboard.xml:1002
+#: concrete/config/install/base/dashboard.xml:1004
 msgctxt "AreaName"
 msgid "Secondary 4"
 msgstr "Teisejärguline 4"
 
-#: concrete/config/install/base/dashboard.xml:1005
+#: concrete/config/install/base/dashboard.xml:1007
 msgctxt "AreaName"
 msgid "Secondary 5"
 msgstr "Teisejärguline 5"
@@ -17076,65 +17098,65 @@ msgctxt "PageTypeComposerControlTypeName"
 msgid "Block"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:26
+#: concrete/config/install/base/permissions.xml:28
 msgctxt "PermissionKeyName"
 msgid "View"
 msgstr "Ver"
 
-#: concrete/config/install/base/permissions.xml:26
+#: concrete/config/install/base/permissions.xml:28
 msgctxt "PermissionKeyDescription"
 msgid "Can see a page exists and read its content."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:27
+#: concrete/config/install/base/permissions.xml:29
 msgctxt "PermissionKeyName"
 msgid "View Versions"
 msgstr "Vaata versioone"
 
-#: concrete/config/install/base/permissions.xml:27
+#: concrete/config/install/base/permissions.xml:29
 msgctxt "PermissionKeyDescription"
 msgid "Can view the page versions dialog and read past versions of a page."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:28
+#: concrete/config/install/base/permissions.xml:30
 msgctxt "PermissionKeyName"
 msgid "View Page in Sitemap"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:28
+#: concrete/config/install/base/permissions.xml:30
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether a user can see a page in the sitemap or intelligent search."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:29
+#: concrete/config/install/base/permissions.xml:31
 msgctxt "PermissionKeyName"
 msgid "Preview Page As User"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:29
+#: concrete/config/install/base/permissions.xml:31
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Ability to see what this page will look like at a specific time in the "
 "future as a specific user."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:30
+#: concrete/config/install/base/permissions.xml:32
 msgctxt "PermissionKeyName"
 msgid "Edit Properties"
 msgstr "Muuda omadusi"
 
-#: concrete/config/install/base/permissions.xml:30
+#: concrete/config/install/base/permissions.xml:32
 msgctxt "PermissionKeyDescription"
 msgid "Ability to change anything in the Page Properties menu."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:31
+#: concrete/config/install/base/permissions.xml:33
 msgctxt "PermissionKeyName"
 msgid "Edit Contents"
 msgstr "Muuda sisu"
 
-#: concrete/config/install/base/permissions.xml:31
+#: concrete/config/install/base/permissions.xml:33
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Ability to make edits to at least some of the content in the page. You can "
@@ -17142,117 +17164,117 @@ msgid ""
 "on them as well. "
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:32
+#: concrete/config/install/base/permissions.xml:34
 msgctxt "PermissionKeyName"
 msgid "Edit Speed Settings"
 msgstr "Muuda kiiruse seadeid"
 
-#: concrete/config/install/base/permissions.xml:32
+#: concrete/config/install/base/permissions.xml:34
 msgctxt "PermissionKeyDescription"
 msgid "Ability to change caching settings."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:33
+#: concrete/config/install/base/permissions.xml:35
 msgctxt "PermissionKeyName"
 msgid "Change Theme"
 msgstr "Muuda teemat"
 
-#: concrete/config/install/base/permissions.xml:33
+#: concrete/config/install/base/permissions.xml:35
 msgctxt "PermissionKeyDescription"
 msgid "Ability to change just the theme for this page."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:34
+#: concrete/config/install/base/permissions.xml:36
 msgctxt "PermissionKeyName"
 msgid "Change Page Template"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:34
+#: concrete/config/install/base/permissions.xml:36
 msgctxt "PermissionKeyDescription"
 msgid "Ability to change just the page template for this page."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:35
-#: concrete/config/install/base/permissions.xml:71
+#: concrete/config/install/base/permissions.xml:37
+#: concrete/config/install/base/permissions.xml:73
 msgctxt "PermissionKeyName"
 msgid "Edit Permissions"
 msgstr "Muuda õigusi"
 
-#: concrete/config/install/base/permissions.xml:35
+#: concrete/config/install/base/permissions.xml:37
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Ability to change permissions for this page. Warning: by granting this a "
 "user could give themselves more access."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:36
+#: concrete/config/install/base/permissions.xml:38
 msgctxt "PermissionKeyName"
 msgid "Delete"
 msgstr "Eliminar"
 
-#: concrete/config/install/base/permissions.xml:36
+#: concrete/config/install/base/permissions.xml:38
 msgctxt "PermissionKeyDescription"
 msgid "Ability to move this page to the site's Trash."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:37
+#: concrete/config/install/base/permissions.xml:39
 msgctxt "PermissionKeyName"
 msgid "Delete Versions"
 msgstr "Kustuta versioonid"
 
-#: concrete/config/install/base/permissions.xml:37
+#: concrete/config/install/base/permissions.xml:39
 msgctxt "PermissionKeyDescription"
 msgid "Ability to remove old versions of this page."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:38
+#: concrete/config/install/base/permissions.xml:40
 msgctxt "PermissionKeyName"
 msgid "Approve Changes"
 msgstr "Kiida muudatused heaks"
 
-#: concrete/config/install/base/permissions.xml:38
+#: concrete/config/install/base/permissions.xml:40
 msgctxt "PermissionKeyDescription"
 msgid "Can publish an unapproved version of the page."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:39
+#: concrete/config/install/base/permissions.xml:41
 msgctxt "PermissionKeyName"
 msgid "Add Sub-Page"
 msgstr "Lisa alamleht"
 
-#: concrete/config/install/base/permissions.xml:39
+#: concrete/config/install/base/permissions.xml:41
 msgctxt "PermissionKeyDescription"
 msgid "Can add a page beneath the current page."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:40
+#: concrete/config/install/base/permissions.xml:42
 msgctxt "PermissionKeyName"
 msgid "Move or Copy Page"
 msgstr "Liiguta või kopeeri lehte"
 
-#: concrete/config/install/base/permissions.xml:40
+#: concrete/config/install/base/permissions.xml:42
 msgctxt "PermissionKeyDescription"
 msgid "Can move or copy this page to another location."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:41
-#: concrete/config/install/base/permissions.xml:63
-#: concrete/config/install/base/permissions.xml:72
+#: concrete/config/install/base/permissions.xml:43
+#: concrete/config/install/base/permissions.xml:65
+#: concrete/config/install/base/permissions.xml:74
 msgctxt "PermissionKeyName"
 msgid "Schedule Guest Access"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:41
+#: concrete/config/install/base/permissions.xml:43
 msgctxt "PermissionKeyDescription"
 msgid "Can control scheduled guest access to this page."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:43
+#: concrete/config/install/base/permissions.xml:45
 msgctxt "PermissionKeyName"
 msgid "Add Block"
 msgstr "Agregar nuevo bloque"
 
-#: concrete/config/install/base/permissions.xml:43
+#: concrete/config/install/base/permissions.xml:45
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Can add a block to any area on the site. If someone is added here they can "
@@ -17260,12 +17282,12 @@ msgid ""
 " global permissions.)"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:48
+#: concrete/config/install/base/permissions.xml:50
 msgctxt "PermissionKeyName"
 msgid "Add Stack"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:48
+#: concrete/config/install/base/permissions.xml:50
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Can add a stack or block from a stack to any area on the site. If someone is"
@@ -17273,96 +17295,96 @@ msgid ""
 "permissions that override these global permissions.)"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:55
+#: concrete/config/install/base/permissions.xml:57
 msgctxt "PermissionKeyName"
 msgid "View Area"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:55
+#: concrete/config/install/base/permissions.xml:57
 msgctxt "PermissionKeyDescription"
 msgid "Can view the area and its contents."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:56
+#: concrete/config/install/base/permissions.xml:58
 msgctxt "PermissionKeyName"
 msgid "Edit Area Contents"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:56
+#: concrete/config/install/base/permissions.xml:58
 msgctxt "PermissionKeyDescription"
 msgid "Can edit blocks within this area."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:57
+#: concrete/config/install/base/permissions.xml:59
 msgctxt "PermissionKeyName"
 msgid "Add Block to Area"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:57
+#: concrete/config/install/base/permissions.xml:59
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Can add blocks to this area. This setting overrides the global Add Block "
 "permission for this area."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:58
+#: concrete/config/install/base/permissions.xml:60
 msgctxt "PermissionKeyName"
 msgid "Add Stack to Area"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:58
+#: concrete/config/install/base/permissions.xml:60
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Can add stacks to this area. This setting overrides the global Add Stack "
 "permission for this area."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:59
+#: concrete/config/install/base/permissions.xml:61
 msgctxt "PermissionKeyName"
 msgid "Add Layouts to Area"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:59
+#: concrete/config/install/base/permissions.xml:61
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users get the ability to add layouts to a particular area."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:60
+#: concrete/config/install/base/permissions.xml:62
 msgctxt "PermissionKeyName"
 msgid "Edit Area Design"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:60
+#: concrete/config/install/base/permissions.xml:62
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users see design controls and can modify an area's custom "
 "CSS."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:61
+#: concrete/config/install/base/permissions.xml:63
 msgctxt "PermissionKeyName"
 msgid "Edit Area Permissions"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:61
+#: concrete/config/install/base/permissions.xml:63
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users can access the permissions on an area. Custom area "
 "permissions could override those of the page."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:62
+#: concrete/config/install/base/permissions.xml:64
 msgctxt "PermissionKeyName"
 msgid "Delete Area Contents"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:62
+#: concrete/config/install/base/permissions.xml:64
 msgctxt "PermissionKeyDescription"
 msgid "Controls whether users can delete blocks from this area."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:63
+#: concrete/config/install/base/permissions.xml:65
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users can schedule guest access permissions on blocks in "
@@ -17370,416 +17392,456 @@ msgid ""
 "Guest Group."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:66
+#: concrete/config/install/base/permissions.xml:68
 msgctxt "PermissionKeyName"
 msgid "View Block"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:66
+#: concrete/config/install/base/permissions.xml:68
 msgctxt "PermissionKeyDescription"
 msgid "Controls whether users can view this block in the page."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:67
+#: concrete/config/install/base/permissions.xml:69
 msgctxt "PermissionKeyName"
 msgid "Edit Block"
 msgstr "Muuda blokki"
 
-#: concrete/config/install/base/permissions.xml:67
+#: concrete/config/install/base/permissions.xml:69
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users can edit this block. This overrides any area or page "
 "permissions."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:68
+#: concrete/config/install/base/permissions.xml:70
 msgctxt "PermissionKeyName"
 msgid "Change Custom Template"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:68
+#: concrete/config/install/base/permissions.xml:70
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users can change the custom template on this block. This "
 "overrides any area or page permissions."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:69
+#: concrete/config/install/base/permissions.xml:71
 msgctxt "PermissionKeyName"
 msgid "Delete Block"
 msgstr "Kustuta blokk"
 
-#: concrete/config/install/base/permissions.xml:69
+#: concrete/config/install/base/permissions.xml:71
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users can delete this block. This overrides any area or "
 "page permissions."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:70
+#: concrete/config/install/base/permissions.xml:72
 msgctxt "PermissionKeyName"
 msgid "Edit Design"
 msgstr "Muuda kujundust"
 
-#: concrete/config/install/base/permissions.xml:70
+#: concrete/config/install/base/permissions.xml:72
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users can set custom design properties or CSS on this "
 "block."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:71
+#: concrete/config/install/base/permissions.xml:73
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users can change permissions on this block, potentially "
 "granting themselves or others greater access."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:72
+#: concrete/config/install/base/permissions.xml:74
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users can schedule guest access permissions on this block. "
 "Guest Access is a shortcut for granting permissions just to the Guest Group."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:74
-#: concrete/config/install/base/permissions.xml:83
+#: concrete/config/install/base/permissions.xml:76
+#: concrete/config/install/base/permissions.xml:85
 msgctxt "PermissionKeyName"
 msgid "View Files"
 msgstr "Failide vaatamine"
 
-#: concrete/config/install/base/permissions.xml:74
+#: concrete/config/install/base/permissions.xml:76
 msgctxt "PermissionKeyDescription"
 msgid "Can view and download files in the site."
 msgstr "Saab saidil faile vaadata ja alla laadida."
 
-#: concrete/config/install/base/permissions.xml:75
+#: concrete/config/install/base/permissions.xml:77
 msgctxt "PermissionKeyName"
 msgid "Search Files in File Manager"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:75
+#: concrete/config/install/base/permissions.xml:77
 msgctxt "PermissionKeyDescription"
 msgid "Can access the file manager"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:76
-#: concrete/config/install/base/permissions.xml:85
+#: concrete/config/install/base/permissions.xml:78
+#: concrete/config/install/base/permissions.xml:87
 msgctxt "PermissionKeyName"
 msgid "Edit File Properties"
 msgstr "Muuda faili õigusi"
 
-#: concrete/config/install/base/permissions.xml:76
-#: concrete/config/install/base/permissions.xml:85
+#: concrete/config/install/base/permissions.xml:78
+#: concrete/config/install/base/permissions.xml:87
 msgctxt "PermissionKeyDescription"
 msgid "Can edit a file's properties."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:77
-#: concrete/config/install/base/permissions.xml:86
+#: concrete/config/install/base/permissions.xml:79
+#: concrete/config/install/base/permissions.xml:88
 msgctxt "PermissionKeyName"
 msgid "Edit File Contents"
 msgstr "Muuda faili sisu"
 
-#: concrete/config/install/base/permissions.xml:77
+#: concrete/config/install/base/permissions.xml:79
 msgctxt "PermissionKeyDescription"
 msgid "Can edit or replace files in set."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:78
-#: concrete/config/install/base/permissions.xml:87
+#: concrete/config/install/base/permissions.xml:80
+#: concrete/config/install/base/permissions.xml:89
 msgctxt "PermissionKeyName"
 msgid "Copy File"
 msgstr "Kopeeri fail"
 
-#: concrete/config/install/base/permissions.xml:78
+#: concrete/config/install/base/permissions.xml:80
 msgctxt "PermissionKeyDescription"
 msgid "Can copy files in file set."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:79
-#: concrete/config/install/base/permissions.xml:88
+#: concrete/config/install/base/permissions.xml:81
+#: concrete/config/install/base/permissions.xml:90
 msgctxt "PermissionKeyName"
 msgid "Edit File Access"
 msgstr "Muuda faili õigusi"
 
-#: concrete/config/install/base/permissions.xml:79
+#: concrete/config/install/base/permissions.xml:81
 msgctxt "PermissionKeyDescription"
 msgid "Can edit access to file sets."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:80
+#: concrete/config/install/base/permissions.xml:82
 msgctxt "PermissionKeyName"
 msgid "Delete File Set"
 msgstr "Kustuta failikomplekt"
 
-#: concrete/config/install/base/permissions.xml:80
+#: concrete/config/install/base/permissions.xml:82
 msgctxt "PermissionKeyDescription"
 msgid "Can delete file set."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:81
-#: concrete/config/install/base/permissions.xml:89
+#: concrete/config/install/base/permissions.xml:83
+#: concrete/config/install/base/permissions.xml:91
 msgctxt "PermissionKeyName"
 msgid "Delete File"
 msgstr "Kustuta fail"
 
-#: concrete/config/install/base/permissions.xml:81
+#: concrete/config/install/base/permissions.xml:83
 msgctxt "PermissionKeyDescription"
 msgid "Can delete files in set."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:82
+#: concrete/config/install/base/permissions.xml:84
 msgctxt "PermissionKeyName"
 msgid "Add File"
 msgstr "Agregar archivo"
 
-#: concrete/config/install/base/permissions.xml:82
+#: concrete/config/install/base/permissions.xml:84
 msgctxt "PermissionKeyDescription"
 msgid "Can add files to set."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:83
+#: concrete/config/install/base/permissions.xml:85
 msgctxt "PermissionKeyDescription"
 msgid "Can view and download files."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:84
+#: concrete/config/install/base/permissions.xml:86
 msgctxt "PermissionKeyName"
 msgid "View File in File Manager"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:84
+#: concrete/config/install/base/permissions.xml:86
 msgctxt "PermissionKeyDescription"
 msgid "Can access the File Manager."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:86
+#: concrete/config/install/base/permissions.xml:88
 msgctxt "PermissionKeyDescription"
 msgid "Can edit or replace files."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:87
+#: concrete/config/install/base/permissions.xml:89
 msgctxt "PermissionKeyDescription"
 msgid "Can copy file."
 msgstr "Saab faili kopeerida."
 
-#: concrete/config/install/base/permissions.xml:88
+#: concrete/config/install/base/permissions.xml:90
 msgctxt "PermissionKeyDescription"
 msgid "Can edit access to file."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:89
+#: concrete/config/install/base/permissions.xml:91
 msgctxt "PermissionKeyDescription"
 msgid "Can delete file."
 msgstr "Saab faili kustutada."
 
-#: concrete/config/install/base/permissions.xml:92
+#: concrete/config/install/base/permissions.xml:94
 msgctxt "PermissionKeyName"
 msgid "Approve or Deny"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:92
+#: concrete/config/install/base/permissions.xml:94
 msgctxt "PermissionKeyDescription"
 msgid "Grant ability to approve workflow."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:93
+#: concrete/config/install/base/permissions.xml:95
 msgctxt "PermissionKeyName"
 msgid "Notify on Entry"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:93
+#: concrete/config/install/base/permissions.xml:95
 msgctxt "PermissionKeyDescription"
 msgid "Notify approvers that a change has entered the workflow."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:94
+#: concrete/config/install/base/permissions.xml:96
 msgctxt "PermissionKeyName"
 msgid "Notify on Approve"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:94
+#: concrete/config/install/base/permissions.xml:96
 msgctxt "PermissionKeyDescription"
 msgid "Notify approvers that a change has been approved."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:95
+#: concrete/config/install/base/permissions.xml:97
 msgctxt "PermissionKeyName"
 msgid "Notify on Deny"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:95
+#: concrete/config/install/base/permissions.xml:97
 msgctxt "PermissionKeyDescription"
 msgid "Notify approvers that a change has been denied."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:98
+#: concrete/config/install/base/permissions.xml:100
 msgctxt "PermissionKeyName"
 msgid "Add Page Type"
 msgstr "Agregar tipo de página"
 
-#: concrete/config/install/base/permissions.xml:99
+#: concrete/config/install/base/permissions.xml:101
 msgctxt "PermissionKeyName"
 msgid "Edit Page Type Permissions"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:100
+#: concrete/config/install/base/permissions.xml:102
 msgctxt "PermissionKeyName"
 msgid "Edit Page Type Drafts"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:104
+#: concrete/config/install/base/permissions.xml:106
 msgctxt "PermissionKeyName"
 msgid "View Topic Tree Node"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:105
+#: concrete/config/install/base/permissions.xml:107
 msgctxt "PermissionKeyName"
 msgid "View Topic Category Tree Node"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:108
+#: concrete/config/install/base/permissions.xml:110
 msgctxt "PermissionKeyName"
-msgid "Edit User Details"
-msgstr "Muuda kasutaja üksikasju"
+msgid "Add Message to Conversation"
+msgstr ""
+
+#: concrete/config/install/base/permissions.xml:111
+msgctxt "PermissionKeyName"
+msgid "Add Message Attachments"
+msgstr ""
+
+#: concrete/config/install/base/permissions.xml:112
+msgctxt "PermissionKeyName"
+msgid "Edit Conversation Permissions"
+msgstr ""
+
+#: concrete/config/install/base/permissions.xml:113
+msgctxt "PermissionKeyName"
+msgid "Delete Message"
+msgstr ""
 
 #: concrete/config/install/base/permissions.xml:114
 msgctxt "PermissionKeyName"
-msgid "View User Attributes"
+msgid "Edit Message"
+msgstr ""
+
+#: concrete/config/install/base/permissions.xml:115
+msgctxt "PermissionKeyName"
+msgid "Rate Message"
+msgstr ""
+
+#: concrete/config/install/base/permissions.xml:116
+msgctxt "PermissionKeyName"
+msgid "Flag Message"
+msgstr ""
+
+#: concrete/config/install/base/permissions.xml:117
+msgctxt "PermissionKeyName"
+msgid "Approve Message"
 msgstr ""
 
 #: concrete/config/install/base/permissions.xml:120
 msgctxt "PermissionKeyName"
+msgid "Edit User Details"
+msgstr "Muuda kasutaja üksikasju"
+
+#: concrete/config/install/base/permissions.xml:126
+msgctxt "PermissionKeyName"
+msgid "View User Attributes"
+msgstr ""
+
+#: concrete/config/install/base/permissions.xml:132
+msgctxt "PermissionKeyName"
 msgid "Activate/Deactivate User"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:126
+#: concrete/config/install/base/permissions.xml:138
 msgctxt "PermissionKeyName"
 msgid "Sign in as User"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:129
+#: concrete/config/install/base/permissions.xml:141
 msgctxt "PermissionKeyName"
 msgid "Access Group Search"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:135
+#: concrete/config/install/base/permissions.xml:147
 msgctxt "PermissionKeyName"
 msgid "Delete User"
 msgstr "Eliminar usuario"
 
-#: concrete/config/install/base/permissions.xml:143
+#: concrete/config/install/base/permissions.xml:155
 msgctxt "PermissionKeyName"
 msgid "Search User Group"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:146
+#: concrete/config/install/base/permissions.xml:158
 msgctxt "PermissionKeyName"
 msgid "Edit Group"
 msgstr "Muuda gruppi"
 
-#: concrete/config/install/base/permissions.xml:149
+#: concrete/config/install/base/permissions.xml:161
 msgctxt "PermissionKeyName"
 msgid "Assign Group"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:153
+#: concrete/config/install/base/permissions.xml:165
 msgctxt "PermissionKeyName"
 msgid "Add Child Group"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:157
+#: concrete/config/install/base/permissions.xml:169
 msgctxt "PermissionKeyName"
 msgid "Edit Group Permissions"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:160
+#: concrete/config/install/base/permissions.xml:172
 msgctxt "PermissionKeyName"
 msgid "Access Page Type Permissions"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:166
+#: concrete/config/install/base/permissions.xml:178
 msgctxt "PermissionKeyName"
 msgid "Perform Backups"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:172
+#: concrete/config/install/base/permissions.xml:184
 msgctxt "PermissionKeyName"
 msgid "Access Task Permissions"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:175
+#: concrete/config/install/base/permissions.xml:187
 msgctxt "PermissionKeyName"
 msgid "Access Sitemap"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:181
+#: concrete/config/install/base/permissions.xml:193
 msgctxt "PermissionKeyName"
 msgid "Access Page Type Defaults"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:187
+#: concrete/config/install/base/permissions.xml:199
 msgctxt "PermissionKeyName"
 msgid "Customize Themes"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:193
+#: concrete/config/install/base/permissions.xml:205
 msgctxt "PermissionKeyName"
 msgid "Manage Layout Presets"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:199
+#: concrete/config/install/base/permissions.xml:211
 msgctxt "PermissionKeyName"
 msgid "Empty Trash"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:205
+#: concrete/config/install/base/permissions.xml:217
 msgctxt "PermissionKeyName"
 msgid "Add Topic Tree"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:211
+#: concrete/config/install/base/permissions.xml:223
 msgctxt "PermissionKeyName"
 msgid "Remove Topic Tree"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:217
+#: concrete/config/install/base/permissions.xml:229
 msgctxt "PermissionKeyName"
 msgid "Uninstall Packages"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:223
+#: concrete/config/install/base/permissions.xml:235
 msgctxt "PermissionKeyName"
 msgid "Install Packages"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:229
+#: concrete/config/install/base/permissions.xml:241
 msgctxt "PermissionKeyName"
 msgid "View Newsflow"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:235
+#: concrete/config/install/base/permissions.xml:247
 msgctxt "PermissionKeyName"
 msgid "Export Site Users"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:235
+#: concrete/config/install/base/permissions.xml:247
 msgctxt "PermissionKeyDescription"
 msgid "Controls whether a user can export site users or not"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:241
+#: concrete/config/install/base/permissions.xml:253
 msgctxt "PermissionKeyName"
 msgid "Access User Search"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:241
+#: concrete/config/install/base/permissions.xml:253
 msgctxt "PermissionKeyDescription"
 msgid "Controls whether a user can view the search user interface."
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:250
+#: concrete/config/install/base/permissions.xml:262
 msgid "SecurImage (Default)"
 msgstr ""
 

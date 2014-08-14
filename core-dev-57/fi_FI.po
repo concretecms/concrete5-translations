@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-08-12 04:00+0000\n"
-"PO-Revision-Date: 2014-08-12 09:56+0000\n"
+"POT-Creation-Date: 2014-08-13 06:05+0000\n"
+"PO-Revision-Date: 2014-08-13 06:20+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Finnish (Finland) (http://www.transifex.com/projects/p/concrete5/language/fi_FI/)\n"
 "MIME-Version: 1.0\n"
@@ -404,6 +404,7 @@ msgstr "Laskeva"
 #: concrete/single_pages/dashboard/system/conversations/bannedwords.php:56
 #: concrete/single_pages/dashboard/system/conversations/bannedwords.php:63
 #: concrete/single_pages/dashboard/system/conversations/editor.php:5
+#: concrete/single_pages/dashboard/system/conversations/permissions.php:21
 #: concrete/single_pages/dashboard/system/conversations/points.php:25
 #: concrete/single_pages/dashboard/system/conversations/settings.php:44
 #: concrete/single_pages/dashboard/system/environment/debug.php:24
@@ -871,7 +872,7 @@ msgstr "(Huomaa: tässä ryhmässä olevia tiedostoja ei poisteta.)"
 #: concrete/elements/block_header_view.php:159
 #: concrete/elements/collection_attribute_values.php:18
 #: concrete/elements/collection_delete.php:49
-#: concrete/elements/conversation/message.php:42
+#: concrete/elements/conversation/message.php:47
 #: concrete/elements/conversation/message/topic.php:42
 #: concrete/elements/files/search.php:38
 #: concrete/elements/page_controls_footer.php:124
@@ -1562,34 +1563,42 @@ msgid "Invalid conversation."
 msgstr "Virheellinen keskustelu."
 
 #: concrete/tools/conversations/add_message.php:24
-#: concrete/tools/conversations/add_message.php:28
+msgid "You do not have access to add a message to this conversation."
+msgstr ""
+
+#: concrete/tools/conversations/add_message.php:30
+#: concrete/tools/conversations/add_message.php:34
 msgid "Invalid Page."
 msgstr "Virheellinen sivu."
 
-#: concrete/tools/conversations/add_message.php:35
+#: concrete/tools/conversations/add_message.php:40
+msgid "You do not have permission to add attachments."
+msgstr ""
+
+#: concrete/tools/conversations/add_message.php:44
 msgid "You have too many attachments."
 msgstr "Sinulla on liian monta liitettä."
 
-#: concrete/tools/conversations/add_message.php:42
+#: concrete/tools/conversations/add_message.php:52
 msgid "Invalid conversation post token."
 msgstr "Virheellinen keskusteluviestin poletti"
 
 #: concrete/blocks/core_conversation_message/controller.php:43
-#: concrete/tools/conversations/add_message.php:45
+#: concrete/tools/conversations/add_message.php:55
 msgid "Your message cannot be empty."
 msgstr "Viestisi ei voi olla tyhjä."
 
-#: concrete/tools/conversations/add_message.php:51
+#: concrete/tools/conversations/add_message.php:61
 msgid "Invalid parent message."
 msgstr "Virheellinen isäntäviesti."
 
 #: concrete/blocks/core_conversation_message/controller.php:49
-#: concrete/tools/conversations/add_message.php:56
+#: concrete/tools/conversations/add_message.php:66
 msgid "Banned words detected."
 msgstr "Kiellettyjä sanoja havaittu."
 
 #: concrete/blocks/core_conversation/form.php:18
-#: concrete/tools/conversations/view_ajax.php:19
+#: concrete/tools/conversations/view_ajax.php:24
 msgid "Add Message"
 msgstr "Lisää viesti"
 
@@ -1612,7 +1621,7 @@ msgstr "Taulukko"
 
 #: concrete/blocks/file/add.php:10 concrete/blocks/file/edit.php:14
 #: concrete/elements/conversation/display.php:82
-#: concrete/elements/conversation/message.php:109
+#: concrete/elements/conversation/message.php:117
 #: concrete/tools/i18n_redactor_js.php:17
 msgid "Link"
 msgstr "Linkki"
@@ -1915,8 +1924,8 @@ msgstr "Nimi (vapaaehtoinen)"
 #: concrete/blocks/form/form_setup_html.php:17
 #: concrete/controllers/single_page/dashboard/users/points/actions.php:33
 #: concrete/elements/collection_attribute_values.php:17
-#: concrete/elements/conversation/message.php:39
 #: concrete/elements/conversation/message.php:41
+#: concrete/elements/conversation/message.php:44
 #: concrete/single_pages/account/profile/public_profile.php:16
 #: concrete/single_pages/dashboard/system/conversations/bannedwords.php:42
 #: concrete/single_pages/dashboard/system/conversations/bannedwords.php:64
@@ -2523,7 +2532,7 @@ msgstr "Lisää ryhmään"
 msgid "Let's start editing a page."
 msgstr "Aloitetaan sivun muokkaaminen."
 
-#: concrete/elements/attribute/categories/user.php:24
+#: concrete/elements/attribute/categories/user.php:26
 #: concrete/elements/page_types/composer/form/output/buttons.php:11
 #: concrete/tools/i18n_js.php:92
 msgid "Edit Mode"
@@ -2631,7 +2640,7 @@ msgstr "Poista pysyvästi"
 #: concrete/config/install/base/dashboard.xml:58
 #: concrete/config/install/base/dashboard.xml:109
 #: concrete/config/install/base/dashboard.xml:295
-#: concrete/config/install/base/dashboard.xml:784
+#: concrete/config/install/base/dashboard.xml:786
 #: concrete/elements/page_controls_footer.php:83
 #: concrete/elements/page_controls_footer.php:85
 #: concrete/elements/panels/page.php:79 concrete/single_pages/login.php:31
@@ -2795,7 +2804,7 @@ msgstr "Kopioi tiedosto"
 msgid "Choose New File"
 msgstr "Valitse uusi tiedosto"
 
-#: concrete/config/install/base/dashboard.xml:792
+#: concrete/config/install/base/dashboard.xml:794
 #: concrete/elements/files/search.php:35 concrete/elements/files/search.php:67
 #: concrete/tools/i18n_js.php:195
 msgid "Sets"
@@ -3533,6 +3542,7 @@ msgstr "Sinulla ei ole oikeutta ladata lisäosia."
 
 #: concrete/controllers/single_page/dashboard/blocks/permissions.php:38
 #: concrete/controllers/single_page/dashboard/pages/types/permissions.php:18
+#: concrete/controllers/single_page/dashboard/system/conversations/permissions.php:38
 #: concrete/controllers/single_page/dashboard/system/files/permissions.php:40
 #: concrete/controllers/single_page/dashboard/system/permissions/tasks.php:42
 #: concrete/controllers/single_page/dashboard/system/permissions/users.php:40
@@ -4158,9 +4168,9 @@ msgstr "Testisähköposti on lähetetty onnistuneesti %s."
 msgid "You will receive a test message from %s"
 msgstr "Saat testiviestin lähettäjältä %s"
 
-#: concrete/controllers/single_page/dashboard/reports/forms.php:161
-#: concrete/controllers/single_page/dashboard/reports/forms.php:169
-#: concrete/controllers/single_page/dashboard/reports/forms.php:178
+#: concrete/controllers/single_page/dashboard/reports/forms.php:124
+#: concrete/controllers/single_page/dashboard/reports/forms.php:132
+#: concrete/controllers/single_page/dashboard/reports/forms.php:141
 #: concrete/controllers/single_page/dashboard/system/mail/importers.php:23
 #: concrete/controllers/single_page/dashboard/system/mail/method.php:16
 #: concrete/controllers/single_page/dashboard/system/mail/method/test.php:17
@@ -4311,7 +4321,7 @@ msgid ""
 "cannot be manually removed."
 msgstr "Tämä attribuutti on lukittu. Se tarkoittaa, että paketti on lisännyt sen eikä sitä voida poistaa manuaalisesti."
 
-#: concrete/config/install/base/dashboard.xml:816
+#: concrete/config/install/base/dashboard.xml:818
 #: concrete/controllers/single_page/dashboard/system/attributes/topics/add.php:14
 #: concrete/single_pages/dashboard/system/attributes/topics/add.php:22
 #: concrete/single_pages/dashboard/system/attributes/topics/view.php:22
@@ -4623,7 +4633,7 @@ msgid "Job Set schedule updated successfully."
 msgstr "Töiden ryhmän ajastus päivitetty onnistuneesti."
 
 #: concrete/controllers/single_page/dashboard/reports/statistics.php:50
-#: concrete/src/Localization/Service/Date.php:479
+#: concrete/src/Localization/Service/Date.php:496
 msgid "Today"
 msgstr "Tänään"
 
@@ -4631,17 +4641,11 @@ msgstr "Tänään"
 msgid "All Channels"
 msgstr "Kaikki kanavat"
 
-#. %1$s is the survey name, %2$s is the date.
-#: concrete/controllers/single_page/dashboard/reports/forms.php:50
-#, php-format
-msgid "%1$s Form Data Output - Run on %2$s"
-msgstr "Lomakkeen %1$s tiedot - Ajettu %2$s"
-
-#: concrete/controllers/single_page/dashboard/reports/forms.php:66
+#: concrete/controllers/single_page/dashboard/reports/forms.php:52
 msgid "Submitted Date"
 msgstr "Lähetyspäivämäärä"
 
-#: concrete/controllers/single_page/dashboard/reports/forms.php:67
+#: concrete/controllers/single_page/dashboard/reports/forms.php:53
 #: concrete/single_pages/dashboard/reports/forms.php:240
 #: concrete/single_pages/dashboard/reports/logs.php:66
 #: concrete/single_pages/dashboard/reports/statistics.php:78
@@ -4655,7 +4659,7 @@ msgstr "Lähetyspäivämäärä"
 msgid "User"
 msgstr "Käyttäjä"
 
-#: concrete/controllers/single_page/dashboard/reports/forms.php:135
+#: concrete/controllers/single_page/dashboard/reports/forms.php:101
 #: concrete/single_pages/dashboard/reports/forms.php:270
 msgid "File not found"
 msgstr "Tiedostoa ei löydy"
@@ -5978,7 +5982,7 @@ msgid ""
 "the administrator of this site for more information."
 msgstr "Toimenpidettä ei voitu suorittaa: IP-osoitteesi on estetty. Ota yhteyttä sivuston ylläpitäjään saadaksesi lisätietoa."
 
-#: concrete/config/install/base/permissions.xml:258
+#: concrete/config/install/base/permissions.xml:270
 #: concrete/src/Permission/Access/Entity/GroupEntity.php:18
 msgctxt "PermissionAccessEntityTypeName"
 msgid "Group"
@@ -5988,13 +5992,23 @@ msgstr "Ryhmä"
 msgid "(Deleted Group)"
 msgstr "(Poistettu ryhmä)"
 
+#: concrete/config/install/base/permissions.xml:362
+#: concrete/src/Permission/Access/Entity/ConversationMessageAuthorEntity.php:42
+msgctxt "PermissionAccessEntityTypeName"
+msgid "Message Author"
+msgstr ""
+
+#: concrete/src/Permission/Access/Entity/ConversationMessageAuthorEntity.php:80
+msgid "Message Author"
+msgstr ""
+
 #: concrete/config/install/base/dashboard.xml:117
 #: concrete/single_pages/dashboard/users/search.php:277
 #: concrete/src/Permission/Access/Entity/UserEntity.php:66
 msgid "Add User"
 msgstr "Lisää käyttäjä"
 
-#: concrete/config/install/base/permissions.xml:278
+#: concrete/config/install/base/permissions.xml:290
 #: concrete/src/Permission/Access/Entity/UserEntity.php:68
 msgctxt "PermissionAccessEntityTypeName"
 msgid "User"
@@ -6008,13 +6022,13 @@ msgstr "(Poistettu käyttäjä)"
 msgid "Add Group Set"
 msgstr "Lisää ryhmäjoukko"
 
-#: concrete/config/install/base/permissions.xml:298
+#: concrete/config/install/base/permissions.xml:310
 #: concrete/src/Permission/Access/Entity/GroupSetEntity.php:16
 msgctxt "PermissionAccessEntityTypeName"
 msgid "Group Set"
 msgstr "Ryhmäjoukko"
 
-#: concrete/config/install/base/permissions.xml:344
+#: concrete/config/install/base/permissions.xml:356
 #: concrete/src/Permission/Access/Entity/FileUploaderEntity.php:36
 msgctxt "PermissionAccessEntityTypeName"
 msgid "File Uploader"
@@ -6024,7 +6038,7 @@ msgstr "Tiedostolataus"
 msgid "File Uploader"
 msgstr "Tiedostolataus"
 
-#: concrete/config/install/base/permissions.xml:339
+#: concrete/config/install/base/permissions.xml:351
 #: concrete/src/Permission/Access/Entity/PageOwnerEntity.php:41
 msgctxt "PermissionAccessEntityTypeName"
 msgid "Page Owner"
@@ -6039,7 +6053,7 @@ msgstr "Sivun omistaja"
 msgid "Add Group Combination"
 msgstr "Lisää ryhmäyhdistelmä"
 
-#: concrete/config/install/base/permissions.xml:318
+#: concrete/config/install/base/permissions.xml:330
 #: concrete/src/Permission/Access/Entity/GroupCombinationEntity.php:17
 msgctxt "PermissionAccessEntityTypeName"
 msgid "Group Combination"
@@ -6388,135 +6402,135 @@ msgid ""
 " contact the maintainer of this package for assistance."
 msgstr "Tämä paketti ole tällä hetkellä saatavilla tälle Concrete5:n versiolle. Ota yhteyttä paketin ylläpitäjään, jos haluat saada apua."
 
-#: concrete/src/Package/StartingPointPackage.php:43
+#: concrete/src/Package/StartingPointPackage.php:44
 msgid "Starting installation and creating directories."
 msgstr "Aloitetaan asennus ja luodaan hakemistot."
 
-#: concrete/src/Package/StartingPointPackage.php:44
+#: concrete/src/Package/StartingPointPackage.php:45
 msgid "Creating database tables."
 msgstr "Luodaan tietokantataulut."
 
-#: concrete/src/Package/StartingPointPackage.php:45
+#: concrete/src/Package/StartingPointPackage.php:46
 msgid "Adding admin user."
 msgstr "Lisätään ylläpitäjä."
 
-#: concrete/src/Package/StartingPointPackage.php:46
+#: concrete/src/Package/StartingPointPackage.php:47
 msgid "Installing permissions & workflow."
 msgstr "Asennetaan oikeuksia ja työnkulkuja."
 
-#: concrete/src/Package/StartingPointPackage.php:47
+#: concrete/src/Package/StartingPointPackage.php:48
 msgid "Creating home page."
 msgstr "Luodaan kotisivu."
 
-#: concrete/src/Package/StartingPointPackage.php:48
+#: concrete/src/Package/StartingPointPackage.php:49
 msgid "Installing attributes."
 msgstr "Asennetaan attribuutit."
 
-#: concrete/src/Package/StartingPointPackage.php:49
+#: concrete/src/Package/StartingPointPackage.php:50
 msgid "Adding block types."
 msgstr "Lisätään lohkotyypit."
 
-#: concrete/src/Package/StartingPointPackage.php:50
+#: concrete/src/Package/StartingPointPackage.php:51
 msgid "Adding gathering data sources."
 msgstr "Lisätään kokoelman datalähteet."
 
-#: concrete/src/Package/StartingPointPackage.php:51
+#: concrete/src/Package/StartingPointPackage.php:52
 msgid "Page type basic setup."
 msgstr "Sivutyypin perusasetukset."
 
-#: concrete/src/Package/StartingPointPackage.php:52
+#: concrete/src/Package/StartingPointPackage.php:53
 msgid "Adding themes."
 msgstr "Lisätään teemat."
 
-#: concrete/src/Package/StartingPointPackage.php:53
+#: concrete/src/Package/StartingPointPackage.php:54
 msgid "Installing automated jobs."
 msgstr "Asennetaan automatisoidut työt."
 
-#: concrete/src/Package/StartingPointPackage.php:54
+#: concrete/src/Package/StartingPointPackage.php:55
 msgid "Installing dashboard."
 msgstr "Asennetaan hallintapaneeli."
 
-#: concrete/src/Package/StartingPointPackage.php:55
+#: concrete/src/Package/StartingPointPackage.php:56
 msgid "Installing login and registration pages."
 msgstr "Asennetaan kirjautumis- ja rekisteröitymissivut."
 
-#: concrete/src/Package/StartingPointPackage.php:56
+#: concrete/src/Package/StartingPointPackage.php:57
 msgid "Adding image editor functionality."
 msgstr "Lisätään kuvaeditorin toiminnallisuutta."
 
-#: concrete/src/Package/StartingPointPackage.php:57
+#: concrete/src/Package/StartingPointPackage.php:58
 msgid "Configuring site."
 msgstr "Määritellään sivusto."
 
-#: concrete/src/Package/StartingPointPackage.php:58
+#: concrete/src/Package/StartingPointPackage.php:59
 msgid "Importing files."
 msgstr "Tuodaan tiedostot."
 
-#: concrete/src/Package/StartingPointPackage.php:59
+#: concrete/src/Package/StartingPointPackage.php:60
 msgid "Adding pages and content."
 msgstr "Lisätään sivut ja sisällöt."
 
-#: concrete/src/Package/StartingPointPackage.php:60
+#: concrete/src/Package/StartingPointPackage.php:61
 msgid "Setting up site permissions."
 msgstr "Asetetaan sivuston oikeudet."
 
-#: concrete/src/Package/StartingPointPackage.php:61
+#: concrete/src/Package/StartingPointPackage.php:62
 msgid "Prefetching information."
 msgstr "Esihaetaan tietoja."
 
-#: concrete/src/Package/StartingPointPackage.php:62
+#: concrete/src/Package/StartingPointPackage.php:63
 msgid "Finishing."
 msgstr "Viimeistellään."
 
 #: concrete/single_pages/dashboard/system/files/storage.php:54
-#: concrete/src/Package/StartingPointPackage.php:145
-#: concrete/src/Package/StartingPointPackage.php:148
+#: concrete/src/Package/StartingPointPackage.php:146
+#: concrete/src/Package/StartingPointPackage.php:149
 msgid "Default"
 msgstr "Oletus"
 
-#: concrete/src/Package/StartingPointPackage.php:146
+#: concrete/src/Package/StartingPointPackage.php:147
 msgid "Local"
 msgstr "Paikallinen"
 
-#: concrete/src/Package/StartingPointPackage.php:152
+#: concrete/src/Package/StartingPointPackage.php:153
 msgid "File Manager Thumbnails"
 msgstr "Tiedostohallinnan pienoiskuvat"
 
-#: concrete/src/Package/StartingPointPackage.php:160
+#: concrete/src/Package/StartingPointPackage.php:161
 msgid "File Manager Detail Thumbnails"
 msgstr "Tiedostohallinnan tietojen pienoiskuvat"
 
-#: concrete/src/Package/StartingPointPackage.php:189
+#: concrete/src/Package/StartingPointPackage.php:190
 #, php-format
 msgid "Unable to install database: %s"
 msgstr "Tietokannan asentaminen epäonnistui: %s"
 
-#: concrete/src/Package/StartingPointPackage.php:216
+#: concrete/src/Package/StartingPointPackage.php:217
 msgctxt "GroupName"
 msgid "Guest"
 msgstr "Vieras"
 
-#: concrete/src/Package/StartingPointPackage.php:216
+#: concrete/src/Package/StartingPointPackage.php:217
 msgctxt "GroupDescription"
 msgid "The guest group represents unregistered visitors to your site."
 msgstr "Vierasryhmä edustaa rekisteröitymättömiä vierailijoita sivustollasi."
 
-#: concrete/src/Package/StartingPointPackage.php:217
+#: concrete/src/Package/StartingPointPackage.php:218
 msgctxt "GroupName"
 msgid "Registered Users"
 msgstr "Rekisteröityneet käyttäjät"
 
-#: concrete/src/Package/StartingPointPackage.php:217
+#: concrete/src/Package/StartingPointPackage.php:218
 msgctxt "GroupDescription"
 msgid "The registered users group represents all user accounts."
 msgstr "Rekisteröityneet käyttäjäryhmä edustaa kaikkia käyttäjätilejä."
 
-#: concrete/src/Package/StartingPointPackage.php:218
+#: concrete/src/Package/StartingPointPackage.php:219
 msgctxt "GroupName"
 msgid "Administrators"
 msgstr "Ylläpitäjät"
 
-#: concrete/src/Package/StartingPointPackage.php:234
+#: concrete/src/Package/StartingPointPackage.php:235
 msgid "Won a Badge"
 msgstr "Ansaitsi merkin"
 
@@ -6544,10 +6558,10 @@ msgid "No users selected."
 msgstr "Ei käyttäjiä valittuna."
 
 #. Short date format: see http://www.php.net/manual/en/function.date.php
-#: concrete/src/Form/Service/Widget/DateTime.php:151
-#: concrete/src/Form/Service/Widget/DateTime.php:218
-#: concrete/src/Localization/Service/Date.php:388
-#: concrete/src/Localization/Service/Date.php:552
+#: concrete/src/Form/Service/Widget/DateTime.php:157
+#: concrete/src/Form/Service/Widget/DateTime.php:229
+#: concrete/src/Localization/Service/Date.php:405
+#: concrete/src/Localization/Service/Date.php:569
 msgid "n/j/Y"
 msgstr "n/j/Y"
 
@@ -6721,7 +6735,7 @@ msgstr "Hyväksy siirto"
 msgid "On %s, user %s submitted the following request: %s"
 msgstr "Ajankohtana %s, käyttäjä %s lähetti seuraavan pyynnön: %s"
 
-#: concrete/config/install/base/permissions.xml:254
+#: concrete/config/install/base/permissions.xml:266
 #: concrete/src/Workflow/BasicWorkflow.php:83
 msgid "Basic Workflow"
 msgstr "Perustyönkulku"
@@ -7389,7 +7403,7 @@ msgstr "Hallintapaneelin koti"
 msgid "Customize"
 msgstr "Muokkaa"
 
-#: concrete/config/install/base/dashboard.xml:968
+#: concrete/config/install/base/dashboard.xml:970
 #: concrete/src/Application/Service/Dashboard.php:325
 msgid "Customize Dashboard Home"
 msgstr "Muokkaa Hallintapaneelin kotia"
@@ -7432,69 +7446,69 @@ msgstr "Attribuutti tunnisteella %s on jo olemassa."
 msgid "Invalid form token. Please reload this form and submit again."
 msgstr "Virheellinen lomakkeen poletti. Ole hyvä ja päivitä lomake ja yritä lähettää se uudestaan."
 
-#: concrete/src/Conversation/Message/Message.php:107
+#: concrete/src/Conversation/Message/Message.php:129
 msgid "This message has been deleted."
 msgstr "Tämä viesti on poistettu."
 
-#: concrete/src/Conversation/Message/Message.php:111
+#: concrete/src/Conversation/Message/Message.php:133
 msgid "This message has been flagged as spam."
 msgstr "Tämä viesti on merkitty roskapostiksi."
 
-#: concrete/src/Conversation/Message/Message.php:115
+#: concrete/src/Conversation/Message/Message.php:137
 msgid "This message is queued for approval."
 msgstr "Tämä viesti odottaa hyväksyntää."
 
 #: concrete/src/Conversation/Discussion/Discussion.php:35
-#: concrete/src/Conversation/Message/Message.php:143
-#: concrete/src/Conversation/Message/Message.php:182
-#: concrete/src/Conversation/Message/Message.php:184
-#: concrete/src/Conversation/Message/Message.php:186
-#: concrete/src/Conversation/Message/Message.php:188
-#: concrete/src/Conversation/Message/Message.php:190
-#: concrete/src/Conversation/Message/Message.php:192
-#: concrete/src/Conversation/Message/Message.php:194
+#: concrete/src/Conversation/Message/Message.php:165
+#: concrete/src/Conversation/Message/Message.php:204
+#: concrete/src/Conversation/Message/Message.php:206
+#: concrete/src/Conversation/Message/Message.php:208
+#: concrete/src/Conversation/Message/Message.php:210
+#: concrete/src/Conversation/Message/Message.php:212
+#: concrete/src/Conversation/Message/Message.php:214
+#: concrete/src/Conversation/Message/Message.php:216
 #, php-format
 msgctxt "Message posted date"
 msgid "Posted on %s"
 msgstr "Lähetetty %s"
 
-#: concrete/src/Conversation/Message/Message.php:160
-#: concrete/src/Conversation/Message/Message.php:176
+#: concrete/src/Conversation/Message/Message.php:182
+#: concrete/src/Conversation/Message/Message.php:198
 #, php-format
 msgid "%d second ago"
 msgid_plural "%d seconds ago"
 msgstr[0] "%d sekunti sitten"
 msgstr[1] "%d sekuntia sitten"
 
-#: concrete/src/Conversation/Message/Message.php:166
+#: concrete/src/Conversation/Message/Message.php:188
 #, php-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "%d vuosi sitten"
 msgstr[1] "%d vuotta sitten"
 
-#: concrete/src/Conversation/Message/Message.php:168
+#: concrete/src/Conversation/Message/Message.php:190
 #, php-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d kuukausi sitten"
 msgstr[1] "%d kuukautta sitten"
 
-#: concrete/src/Conversation/Message/Message.php:170
+#: concrete/src/Conversation/Message/Message.php:192
 #, php-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d päivä sitten"
 msgstr[1] "%d päivää sitten"
 
-#: concrete/src/Conversation/Message/Message.php:172
+#: concrete/src/Conversation/Message/Message.php:194
 #, php-format
 msgid "%d hour ago"
 msgid_plural "%d hours ago"
 msgstr[0] "%d tunti sitten"
 msgstr[1] "%d tuntia sitten"
 
-#: concrete/src/Conversation/Message/Message.php:174
+#: concrete/src/Conversation/Message/Message.php:196
 #, php-format
 msgid "%d minute ago"
 msgid_plural "%d minutes ago"
@@ -7521,31 +7535,31 @@ msgstr ""
 msgid "Pacific Ocean"
 msgstr ""
 
-#: concrete/src/Localization/Service/Date.php:235
+#: concrete/src/Localization/Service/Date.php:236
 #, php-format
 msgid "%d day"
 msgid_plural "%d days"
 msgstr[0] "%d päivä"
 msgstr[1] "%d päivää sitten"
 
-#: concrete/src/Localization/Service/Date.php:237
-#: concrete/src/Localization/Service/Date.php:240
+#: concrete/src/Localization/Service/Date.php:238
+#: concrete/src/Localization/Service/Date.php:241
 #, php-format
 msgid "%d hour"
 msgid_plural "%d hours"
 msgstr[0] "%d tunti"
 msgstr[1] "%d tuntia"
 
-#: concrete/src/Localization/Service/Date.php:242
-#: concrete/src/Localization/Service/Date.php:245
+#: concrete/src/Localization/Service/Date.php:243
+#: concrete/src/Localization/Service/Date.php:246
 #, php-format
 msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "%d minuutti"
 msgstr[1] "%d minuuttia"
 
-#: concrete/src/Localization/Service/Date.php:247
-#: concrete/src/Localization/Service/Date.php:250
+#: concrete/src/Localization/Service/Date.php:248
+#: concrete/src/Localization/Service/Date.php:251
 #, php-format
 msgid "%d second"
 msgid_plural "%d seconds"
@@ -7553,25 +7567,25 @@ msgstr[0] "%d sekunti"
 msgstr[1] "%d sekuntia"
 
 #. Long date format: see http://www.php.net/manual/en/function.date.php
-#: concrete/src/Localization/Service/Date.php:386
+#: concrete/src/Localization/Service/Date.php:403
 msgid "F j, Y"
 msgstr "F j, Y"
 
 #. Time format with seconds: see
 #. http://www.php.net/manual/en/function.date.php
-#: concrete/src/Localization/Service/Date.php:413
+#: concrete/src/Localization/Service/Date.php:430
 msgid "g:i:s A"
 msgstr "g:i:s A"
 
 #. Time format without seconds: see
 #. http://www.php.net/manual/en/function.date.php
-#: concrete/src/Localization/Service/Date.php:415
+#: concrete/src/Localization/Service/Date.php:432
 msgid "g:i A"
 msgstr "g:i A"
 
 #. Long date format and time with seconds: see
 #. http://www.php.net/manual/en/function.date.php
-#: concrete/src/Localization/Service/Date.php:442
+#: concrete/src/Localization/Service/Date.php:459
 msgid "F d, Y \\a\\t g:i:s A"
 msgstr "F d, Y \\a\\t g:i:s A"
 
@@ -7580,50 +7594,50 @@ msgstr "F d, Y \\a\\t g:i:s A"
 #: concrete/single_pages/account/messages/inbox.php:97
 #: concrete/single_pages/account/messages/inbox.php:207
 #: concrete/single_pages/account/messages/inbox.php:217
-#: concrete/src/Localization/Service/Date.php:445
+#: concrete/src/Localization/Service/Date.php:462
 msgid "F d, Y \\a\\t g:i A"
 msgstr "F d, Y \\a\\t g:i A"
 
 #. Short date format and time with seconds: see
 #. http://www.php.net/manual/en/function.date.php
-#: concrete/src/Localization/Service/Date.php:449
+#: concrete/src/Localization/Service/Date.php:466
 msgid "n/j/Y \\a\\t g:i:s A"
 msgstr "j.n.Y \\a\\t H:i:s"
 
 #. Short date format and time without seconds: see
 #. http://www.php.net/manual/en/function.date.php
-#: concrete/src/Localization/Service/Date.php:451
+#: concrete/src/Localization/Service/Date.php:468
 msgid "n/j/Y \\a\\t g:i A"
 msgstr "n/j/Y g:i A"
 
-#: concrete/src/Localization/Service/Date.php:481
+#: concrete/src/Localization/Service/Date.php:498
 msgid "Tomorrow"
 msgstr "Huomenna"
 
-#: concrete/src/Localization/Service/Date.php:483
+#: concrete/src/Localization/Service/Date.php:500
 msgid "Yesterday"
 msgstr "Eilen"
 
 #. %s is a time
-#: concrete/src/Localization/Service/Date.php:511
+#: concrete/src/Localization/Service/Date.php:528
 #, php-format
 msgid "Today at %s"
 msgstr "Tänään %s"
 
 #. %s is a time
-#: concrete/src/Localization/Service/Date.php:513
+#: concrete/src/Localization/Service/Date.php:530
 #, php-format
 msgid "Tomorrow at %s"
 msgstr "Huomenna klo %s"
 
 #. %s is a time
-#: concrete/src/Localization/Service/Date.php:515
+#: concrete/src/Localization/Service/Date.php:532
 #, php-format
 msgid "Yesterday at %s"
 msgstr "Eilen klo %s"
 
 #. can be 12 or 24
-#: concrete/src/Localization/Service/Date.php:604
+#: concrete/src/Localization/Service/Date.php:621
 msgctxt "Time format"
 msgid "12"
 msgstr "12"
@@ -7756,27 +7770,27 @@ msgstr "Julkinen näkymä"
 msgid "Displayed in Public Profile."
 msgstr "Näytetään julkisessa profiilissa."
 
-#: concrete/elements/attribute/categories/user.php:19
+#: concrete/elements/attribute/categories/user.php:21
 msgid "Displayed on Member List."
 msgstr "Näytetään jäsenlistassa."
 
-#: concrete/elements/attribute/categories/user.php:26
+#: concrete/elements/attribute/categories/user.php:28
 msgid "Editable in Profile."
 msgstr "Muokattavissa profiilissa."
 
-#: concrete/elements/attribute/categories/user.php:27
+#: concrete/elements/attribute/categories/user.php:31
 msgid "Editable and Required in Profile."
 msgstr "Muokattavissa ja pakollinen profiilissa."
 
-#: concrete/elements/attribute/categories/user.php:33
+#: concrete/elements/attribute/categories/user.php:37
 msgid "Registration"
 msgstr "Rekisteröityminen"
 
-#: concrete/elements/attribute/categories/user.php:35
+#: concrete/elements/attribute/categories/user.php:39
 msgid "Show on Registration Form."
 msgstr "Näytä rekisteröitymislomakkeessa."
 
-#: concrete/elements/attribute/categories/user.php:36
+#: concrete/elements/attribute/categories/user.php:42
 msgid "Require on Registration Form."
 msgstr "Pakollinen rekisteröitymislomakkeessa."
 
@@ -9247,13 +9261,13 @@ msgstr "Ulkoasu ja omat pohjat"
 msgid "Block Permissions"
 msgstr "Lohkon oikeudet"
 
-#: concrete/elements/conversation/message.php:32
+#: concrete/elements/conversation/message.php:34
 #: concrete/single_pages/dashboard/reports/statistics.php:110
 #: concrete/views/dialogs/file/properties.php:267
 msgid "Anonymous"
 msgstr "Tuntematon"
 
-#: concrete/elements/conversation/message.php:43
+#: concrete/elements/conversation/message.php:50
 #: concrete/elements/conversation/message/topic.php:41
 msgid "Flag As Spam"
 msgstr "Merkitse roskapostiksi"
@@ -9261,22 +9275,22 @@ msgstr "Merkitse roskapostiksi"
 #: concrete/elements/conversation/display.php:54
 #: concrete/elements/conversation/display.php:130
 #: concrete/elements/conversation/display.php:154
-#: concrete/elements/conversation/message.php:90
+#: concrete/elements/conversation/message.php:98
 #: concrete/elements/conversation/message/topic.php:45
 #: concrete/single_pages/account/messages/inbox.php:43
 #: concrete/single_pages/profile/messages.php:42
 msgid "Reply"
 msgstr "Vastaa"
 
-#: concrete/elements/conversation/message.php:103
+#: concrete/elements/conversation/message.php:111
 msgid "Share message URL on Twitter."
 msgstr ""
 
-#: concrete/elements/conversation/message.php:106
+#: concrete/elements/conversation/message.php:114
 msgid "Share message URL on Facebook."
 msgstr ""
 
-#: concrete/elements/conversation/message.php:109
+#: concrete/elements/conversation/message.php:117
 msgid "Get message URL."
 msgstr ""
 
@@ -9816,7 +9830,7 @@ msgstr "Pinot"
 msgid "Gathering Tiles"
 msgstr "Kokoelmatiilet"
 
-#: concrete/config/install/base/dashboard.xml:880
+#: concrete/config/install/base/dashboard.xml:882
 #: concrete/views/panels/add.php:70
 msgid "Stack"
 msgstr "Pino"
@@ -10544,7 +10558,7 @@ msgstr "Kuvaliukuri"
 msgid "Image Slider disabled in edit mode."
 msgstr "Kuvaliuku pois päältä muokkaustilassa."
 
-#: concrete/blocks/image_slider/view.php:51
+#: concrete/blocks/image_slider/view.php:53
 msgid "No Slides Entered."
 msgstr "Ei lisättyjä dioja."
 
@@ -12336,7 +12350,7 @@ msgid "Topic List"
 msgstr "Aihelista"
 
 #: concrete/blocks/topic_list/controller.php:39
-#: concrete/config/install/base/dashboard.xml:808
+#: concrete/config/install/base/dashboard.xml:810
 msgid "Topics"
 msgstr "Aiheet"
 
@@ -13985,7 +13999,7 @@ msgstr "Ota käyttöön nätit www-osoitteet"
 msgid "Code for your .htaccess file"
 msgstr ".htaccess tiedostosi koodi"
 
-#: concrete/config/install/base/dashboard.xml:819
+#: concrete/config/install/base/dashboard.xml:821
 #: concrete/single_pages/dashboard/system/environment/info.php:2
 msgid "Environment"
 msgstr "Ympäristö"
@@ -14309,6 +14323,10 @@ msgid ""
 "Note: These settings can be overridden in the block edit form for individual"
 " conversations."
 msgstr "Huomaa: Nämä asetukset voidaan ylikirjoittaa lohkon muokkauslomakkeessa yksittäisille keskusteluille."
+
+#: concrete/single_pages/dashboard/system/conversations/permissions.php:16
+msgid "You cannot access conversation permissions."
+msgstr ""
 
 #: concrete/single_pages/dashboard/system/conversations/bannedwords.php:6
 msgid "Add Word"
@@ -14739,7 +14757,7 @@ msgstr "Useampi päivitys saatavilla. Ole hyvä ja valitse haluttu päivitys lis
 msgid "Current Version"
 msgstr "Nykyinen versio"
 
-#: concrete/config/install/base/dashboard.xml:870
+#: concrete/config/install/base/dashboard.xml:872
 #: concrete/single_pages/dashboard/system/backup/update.php:102
 msgid "Update concrete5"
 msgstr "Päivitä concrete5"
@@ -15167,8 +15185,8 @@ msgid "No one has yet submitted this form."
 msgstr "Kukaan ei ole vielä lähettänyt tätä lomaketta."
 
 #: concrete/single_pages/dashboard/reports/forms.php:214
-msgid "Export to Excel"
-msgstr "Vie Exceliin"
+msgid "Export to CSV"
+msgstr ""
 
 #: concrete/single_pages/dashboard/reports/forms.php:226
 msgid "* Scroll right to view full results"
@@ -16633,188 +16651,192 @@ msgid ""
 "conversations bad words, banned words, banned, bad words, bad, words, list"
 msgstr "keskustelujen kielletyt sanat, estetyt sanat, estetty, kielletty, kielletyt sanat, sanat, lista"
 
-#: concrete/config/install/base/dashboard.xml:784
+#: concrete/config/install/base/dashboard.xml:783
+msgid "Conversation Permissions"
+msgstr ""
+
+#: concrete/config/install/base/dashboard.xml:786
 msgid "Setup attributes for pages, users, files and more."
 msgstr "Määrittele attribuutit sivuille, käyttäjille, tiedostoille ja muille."
 
 #. Keywords for page /dashboard/system/attributes
-#: concrete/config/install/base/dashboard.xml:787
+#: concrete/config/install/base/dashboard.xml:789
 msgid "attribute configuration"
 msgstr "attribuuttien konfigurointi"
 
-#: concrete/config/install/base/dashboard.xml:792
+#: concrete/config/install/base/dashboard.xml:794
 msgid "Group attributes into sets for easier organization"
 msgstr "Ryhmittele attribuutteja helpompaa organisointia varten."
 
 #. Keywords for page /dashboard/system/attributes/sets
-#: concrete/config/install/base/dashboard.xml:795
+#: concrete/config/install/base/dashboard.xml:797
 msgid "attributes, sets"
 msgstr "attribuutit, ryhmät"
 
-#: concrete/config/install/base/dashboard.xml:800
+#: concrete/config/install/base/dashboard.xml:802
 msgid "Types"
 msgstr "Tyypit"
 
-#: concrete/config/install/base/dashboard.xml:800
+#: concrete/config/install/base/dashboard.xml:802
 msgid "Choose which attribute types are available for different items."
 msgstr "Valitse, mitkä attribuuttityypit ovat saatavissa eri kohteille."
 
 #. Keywords for page /dashboard/system/attributes/types
-#: concrete/config/install/base/dashboard.xml:803
+#: concrete/config/install/base/dashboard.xml:805
 msgid "attributes, types"
 msgstr "attribuutit, tyypit"
 
 #. Keywords for page /dashboard/system/attributes/topics
-#: concrete/config/install/base/dashboard.xml:811
+#: concrete/config/install/base/dashboard.xml:813
 msgid "topics, tags, taxonomy"
 msgstr "aiheet, avainsanat, tagit, termit"
 
-#: concrete/config/install/base/dashboard.xml:819
+#: concrete/config/install/base/dashboard.xml:821
 msgid "Advanced settings for web developers."
 msgstr "Lisäasetukset webkehittäjille."
 
-#: concrete/config/install/base/dashboard.xml:827
+#: concrete/config/install/base/dashboard.xml:829
 msgid "Environment Information"
 msgstr "Ympäristötiedot"
 
 #. Keywords for page /dashboard/system/environment/info
-#: concrete/config/install/base/dashboard.xml:830
+#: concrete/config/install/base/dashboard.xml:832
 msgid "overrides, system info, debug, support, help"
 msgstr "ylikirjoitukset, järjestelmätiedot, virheenetsintä, tuki, ohje, apua"
 
-#: concrete/config/install/base/dashboard.xml:835
+#: concrete/config/install/base/dashboard.xml:837
 msgid "Debug Settings"
 msgstr "Vianetsintäasetukset"
 
 #. Keywords for page /dashboard/system/environment/debug
-#: concrete/config/install/base/dashboard.xml:838
+#: concrete/config/install/base/dashboard.xml:840
 msgid "errors, exceptions, develop, support, help"
 msgstr "virheet, poikkeukset, kehitä, ohje, apu"
 
-#: concrete/config/install/base/dashboard.xml:843
+#: concrete/config/install/base/dashboard.xml:845
 msgid "Logging Settings"
 msgstr "Lokiasetukset"
 
 #. Keywords for page /dashboard/system/environment/logging
-#: concrete/config/install/base/dashboard.xml:846
+#: concrete/config/install/base/dashboard.xml:848
 msgid "email, logging, logs, smtp, pop, errors, mysql, log"
 msgstr "sähköposti, lokit, logit, smtp, pop, virheet, mysql, loki, logi"
 
-#: concrete/config/install/base/dashboard.xml:852
+#: concrete/config/install/base/dashboard.xml:854
 msgid "Proxy Server"
 msgstr "Välityspalvelin"
 
 #. Keywords for page /dashboard/system/environment/proxy
-#: concrete/config/install/base/dashboard.xml:855
+#: concrete/config/install/base/dashboard.xml:857
 msgid "network, proxy server"
 msgstr "verkko, välityspalvelin"
 
-#: concrete/config/install/base/dashboard.xml:860
+#: concrete/config/install/base/dashboard.xml:862
 msgid "Backup & Restore"
 msgstr "Varmuuskopiointi ja palautus"
 
-#: concrete/config/install/base/dashboard.xml:860
+#: concrete/config/install/base/dashboard.xml:862
 msgid "Backup or restore your website."
 msgstr "Päivitä tai palauta sivustosi."
 
 #. Keywords for page /dashboard/system/backup
-#: concrete/config/install/base/dashboard.xml:863
+#: concrete/config/install/base/dashboard.xml:865
 msgid "export, backup, database, sql, mysql, encryption, restore"
 msgstr "vie, varmuuskopio, tietokanta, sql, mysql, suojaus, palauta"
 
-#: concrete/config/install/base/dashboard.xml:868
+#: concrete/config/install/base/dashboard.xml:870
 msgid "Backup Database"
 msgstr "Varmuuskopioi tietokanta"
 
 #. Keywords for page /dashboard/system/backup/update
-#: concrete/config/install/base/dashboard.xml:873
+#: concrete/config/install/base/dashboard.xml:875
 msgid "upgrade, new version, update"
 msgstr "päivitä, uusi versio"
 
-#: concrete/config/install/base/dashboard.xml:881
+#: concrete/config/install/base/dashboard.xml:883
 msgid "Dashboard Primary + Five"
 msgstr "Hallintapaneelin ensisijainen + viisi"
 
-#: concrete/config/install/base/dashboard.xml:882
+#: concrete/config/install/base/dashboard.xml:884
 msgid "Dashboard Header + Four Column"
 msgstr "Hallintapaneelin yläosa + neljä saraketta"
 
-#: concrete/config/install/base/dashboard.xml:886
+#: concrete/config/install/base/dashboard.xml:888
 msgctxt "PageTemplateName"
 msgid "Stack"
 msgstr "Pino"
 
-#: concrete/config/install/base/dashboard.xml:887
+#: concrete/config/install/base/dashboard.xml:889
 msgctxt "PageTemplateName"
 msgid "Dashboard Primary + Five"
 msgstr "Hallintapaneelin ensisijainen + viisi"
 
-#: concrete/config/install/base/dashboard.xml:888
+#: concrete/config/install/base/dashboard.xml:890
 msgctxt "PageTemplateName"
 msgid "Dashboard Header + Four Column"
 msgstr "Hallintapaneelin yläosa + neljä saraketta"
 
-#: concrete/config/install/base/dashboard.xml:893
+#: concrete/config/install/base/dashboard.xml:895
 msgid "Welcome to concrete5"
 msgstr "Tervetuloa concrete5:een"
 
-#: concrete/config/install/base/dashboard.xml:893
+#: concrete/config/install/base/dashboard.xml:895
 msgid ""
 "Learn about how to use concrete5, how to develop for concrete5, and get "
 "general help."
 msgstr "Lue, kuinka käytät concrete5:sta, kuinka concrete5:lle kehitetään, ja hae yleistä apua."
 
-#: concrete/config/install/base/dashboard.xml:899
+#: concrete/config/install/base/dashboard.xml:901
 msgctxt "AreaName"
 msgid "Header"
 msgstr "Yläosa"
 
-#: concrete/config/install/base/dashboard.xml:910
+#: concrete/config/install/base/dashboard.xml:912
 msgctxt "AreaName"
 msgid "Column 1"
 msgstr "Sarake 1"
 
-#: concrete/config/install/base/dashboard.xml:924
+#: concrete/config/install/base/dashboard.xml:926
 msgctxt "AreaName"
 msgid "Column 2"
 msgstr "Sarake 2"
 
-#: concrete/config/install/base/dashboard.xml:937
+#: concrete/config/install/base/dashboard.xml:939
 msgctxt "AreaName"
 msgid "Column 3"
 msgstr "Sarake 3"
 
-#: concrete/config/install/base/dashboard.xml:951
+#: concrete/config/install/base/dashboard.xml:953
 msgctxt "AreaName"
 msgid "Column 4"
 msgstr "Saraje 4"
 
-#: concrete/config/install/base/dashboard.xml:977
+#: concrete/config/install/base/dashboard.xml:979
 msgctxt "AreaName"
 msgid "Primary"
 msgstr "Ensisijainen"
 
-#: concrete/config/install/base/dashboard.xml:981
+#: concrete/config/install/base/dashboard.xml:983
 msgctxt "AreaName"
 msgid "Secondary 1"
 msgstr "Toissijainen 1"
 
-#: concrete/config/install/base/dashboard.xml:990
+#: concrete/config/install/base/dashboard.xml:992
 msgctxt "AreaName"
 msgid "Secondary 2"
 msgstr "Toissijainen 2"
 
-#: concrete/config/install/base/dashboard.xml:999
+#: concrete/config/install/base/dashboard.xml:1001
 msgctxt "AreaName"
 msgid "Secondary 3"
 msgstr "Toissijainen 3"
 
-#: concrete/config/install/base/dashboard.xml:1002
+#: concrete/config/install/base/dashboard.xml:1004
 msgctxt "AreaName"
 msgid "Secondary 4"
 msgstr "Toissijainen 4"
 
-#: concrete/config/install/base/dashboard.xml:1005
+#: concrete/config/install/base/dashboard.xml:1007
 msgctxt "AreaName"
 msgid "Secondary 5"
 msgstr "Toissijainen 5"
@@ -17077,65 +17099,65 @@ msgctxt "PageTypeComposerControlTypeName"
 msgid "Block"
 msgstr "Lohko"
 
-#: concrete/config/install/base/permissions.xml:26
+#: concrete/config/install/base/permissions.xml:28
 msgctxt "PermissionKeyName"
 msgid "View"
 msgstr "Näytä"
 
-#: concrete/config/install/base/permissions.xml:26
+#: concrete/config/install/base/permissions.xml:28
 msgctxt "PermissionKeyDescription"
 msgid "Can see a page exists and read its content."
 msgstr "Voi nähdä, että sivu on olemassa ja voi lukea sen sisällön."
 
-#: concrete/config/install/base/permissions.xml:27
+#: concrete/config/install/base/permissions.xml:29
 msgctxt "PermissionKeyName"
 msgid "View Versions"
 msgstr "Näytä versiot"
 
-#: concrete/config/install/base/permissions.xml:27
+#: concrete/config/install/base/permissions.xml:29
 msgctxt "PermissionKeyDescription"
 msgid "Can view the page versions dialog and read past versions of a page."
 msgstr "Voi nähdä sivun versioikkunan ja lukea sivun aiempia versioita."
 
-#: concrete/config/install/base/permissions.xml:28
+#: concrete/config/install/base/permissions.xml:30
 msgctxt "PermissionKeyName"
 msgid "View Page in Sitemap"
 msgstr "Näytä sivu sivukartassa"
 
-#: concrete/config/install/base/permissions.xml:28
+#: concrete/config/install/base/permissions.xml:30
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether a user can see a page in the sitemap or intelligent search."
 msgstr "Määrittelee näkeekö käyttäjä sivun sivukartassa tai älykkäässä haussa."
 
-#: concrete/config/install/base/permissions.xml:29
+#: concrete/config/install/base/permissions.xml:31
 msgctxt "PermissionKeyName"
 msgid "Preview Page As User"
 msgstr "Esikatsella sivua käyttäjänä"
 
-#: concrete/config/install/base/permissions.xml:29
+#: concrete/config/install/base/permissions.xml:31
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Ability to see what this page will look like at a specific time in the "
 "future as a specific user."
 msgstr "Mahdollisuus nähdä, mille tämä sivu tulee näyttämään tiettynä aikana ja käyttäjänä tulevaisuudessa"
 
-#: concrete/config/install/base/permissions.xml:30
+#: concrete/config/install/base/permissions.xml:32
 msgctxt "PermissionKeyName"
 msgid "Edit Properties"
 msgstr "Muokkaa ominaisuuksia"
 
-#: concrete/config/install/base/permissions.xml:30
+#: concrete/config/install/base/permissions.xml:32
 msgctxt "PermissionKeyDescription"
 msgid "Ability to change anything in the Page Properties menu."
 msgstr "Mahdollisuus muuttaa mitä tahansa sivun ominaisuuksien valikossa."
 
-#: concrete/config/install/base/permissions.xml:31
+#: concrete/config/install/base/permissions.xml:33
 msgctxt "PermissionKeyName"
 msgid "Edit Contents"
 msgstr "Muokata sisältöjä"
 
-#: concrete/config/install/base/permissions.xml:31
+#: concrete/config/install/base/permissions.xml:33
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Ability to make edits to at least some of the content in the page. You can "
@@ -17143,117 +17165,117 @@ msgid ""
 "on them as well. "
 msgstr "Mahdollisuus tehdä muutoksia ainakin joihinkin tämän sivun sisältöihin. Voit lukita eri lohkoalueita ja tiettyjä lohkoja napsauttamalla Oikeudet myös niistä."
 
-#: concrete/config/install/base/permissions.xml:32
+#: concrete/config/install/base/permissions.xml:34
 msgctxt "PermissionKeyName"
 msgid "Edit Speed Settings"
 msgstr "Muokata nopeusasetuksia"
 
-#: concrete/config/install/base/permissions.xml:32
+#: concrete/config/install/base/permissions.xml:34
 msgctxt "PermissionKeyDescription"
 msgid "Ability to change caching settings."
 msgstr "Mahdollisuus muuttaa välimuistin asetuksia."
 
-#: concrete/config/install/base/permissions.xml:33
+#: concrete/config/install/base/permissions.xml:35
 msgctxt "PermissionKeyName"
 msgid "Change Theme"
 msgstr "Vaihtaa teema"
 
-#: concrete/config/install/base/permissions.xml:33
+#: concrete/config/install/base/permissions.xml:35
 msgctxt "PermissionKeyDescription"
 msgid "Ability to change just the theme for this page."
 msgstr "Mahdollisuus muuttaa vain tämän sivun teema."
 
-#: concrete/config/install/base/permissions.xml:34
+#: concrete/config/install/base/permissions.xml:36
 msgctxt "PermissionKeyName"
 msgid "Change Page Template"
 msgstr "Vaihda sivupohjaa"
 
-#: concrete/config/install/base/permissions.xml:34
+#: concrete/config/install/base/permissions.xml:36
 msgctxt "PermissionKeyDescription"
 msgid "Ability to change just the page template for this page."
 msgstr "Mahdollisuus vaihtaa vain sivupohjaa tälle sivulle."
 
-#: concrete/config/install/base/permissions.xml:35
-#: concrete/config/install/base/permissions.xml:71
+#: concrete/config/install/base/permissions.xml:37
+#: concrete/config/install/base/permissions.xml:73
 msgctxt "PermissionKeyName"
 msgid "Edit Permissions"
 msgstr "Muokata oikeuksia"
 
-#: concrete/config/install/base/permissions.xml:35
+#: concrete/config/install/base/permissions.xml:37
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Ability to change permissions for this page. Warning: by granting this a "
 "user could give themselves more access."
 msgstr "Mahdollisuus muuttaa tämän sivun oikeuksia. Varoitus: antamalla tämän oikeuden käyttäjälle, he voivat itse lisätä itselleen lisää oikeuksia."
 
-#: concrete/config/install/base/permissions.xml:36
+#: concrete/config/install/base/permissions.xml:38
 msgctxt "PermissionKeyName"
 msgid "Delete"
 msgstr "Poista"
 
-#: concrete/config/install/base/permissions.xml:36
+#: concrete/config/install/base/permissions.xml:38
 msgctxt "PermissionKeyDescription"
 msgid "Ability to move this page to the site's Trash."
 msgstr "Mahdollisuus siirtää tämä sivu sivuston Roskakoriin."
 
-#: concrete/config/install/base/permissions.xml:37
+#: concrete/config/install/base/permissions.xml:39
 msgctxt "PermissionKeyName"
 msgid "Delete Versions"
 msgstr "Poistaa versioita"
 
-#: concrete/config/install/base/permissions.xml:37
+#: concrete/config/install/base/permissions.xml:39
 msgctxt "PermissionKeyDescription"
 msgid "Ability to remove old versions of this page."
 msgstr "Mahdollisuus poistaa tämän sivun vanhoja versioita."
 
-#: concrete/config/install/base/permissions.xml:38
+#: concrete/config/install/base/permissions.xml:40
 msgctxt "PermissionKeyName"
 msgid "Approve Changes"
 msgstr "Hyväksy muutokset"
 
-#: concrete/config/install/base/permissions.xml:38
+#: concrete/config/install/base/permissions.xml:40
 msgctxt "PermissionKeyDescription"
 msgid "Can publish an unapproved version of the page."
 msgstr "Voi julkaista tämän sivun hyväksymättömiä versioita."
 
-#: concrete/config/install/base/permissions.xml:39
+#: concrete/config/install/base/permissions.xml:41
 msgctxt "PermissionKeyName"
 msgid "Add Sub-Page"
 msgstr "Lisätä alasivun"
 
-#: concrete/config/install/base/permissions.xml:39
+#: concrete/config/install/base/permissions.xml:41
 msgctxt "PermissionKeyDescription"
 msgid "Can add a page beneath the current page."
 msgstr "Voi lisätä sivun nykyisen sivun alle."
 
-#: concrete/config/install/base/permissions.xml:40
+#: concrete/config/install/base/permissions.xml:42
 msgctxt "PermissionKeyName"
 msgid "Move or Copy Page"
 msgstr "Siirtää tai kopioida sivun"
 
-#: concrete/config/install/base/permissions.xml:40
+#: concrete/config/install/base/permissions.xml:42
 msgctxt "PermissionKeyDescription"
 msgid "Can move or copy this page to another location."
 msgstr "Voi siirtää tai kopioida tämän sivun toiseen paikkaan."
 
-#: concrete/config/install/base/permissions.xml:41
-#: concrete/config/install/base/permissions.xml:63
-#: concrete/config/install/base/permissions.xml:72
+#: concrete/config/install/base/permissions.xml:43
+#: concrete/config/install/base/permissions.xml:65
+#: concrete/config/install/base/permissions.xml:74
 msgctxt "PermissionKeyName"
 msgid "Schedule Guest Access"
 msgstr "Ajastaa vieraiden pääsy"
 
-#: concrete/config/install/base/permissions.xml:41
+#: concrete/config/install/base/permissions.xml:43
 msgctxt "PermissionKeyDescription"
 msgid "Can control scheduled guest access to this page."
 msgstr "Voi määritellä ajastetun pääsyn vieraille tälle sivulle."
 
-#: concrete/config/install/base/permissions.xml:43
+#: concrete/config/install/base/permissions.xml:45
 msgctxt "PermissionKeyName"
 msgid "Add Block"
 msgstr "Lisää lohko"
 
-#: concrete/config/install/base/permissions.xml:43
+#: concrete/config/install/base/permissions.xml:45
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Can add a block to any area on the site. If someone is added here they can "
@@ -17261,12 +17283,12 @@ msgid ""
 " global permissions.)"
 msgstr "Voi lisätä lohkon mille tahansa sivun alueelle. Jos joku on lisätty tänne, he voivat lisätä lohkoja mille tahansa alueelle (ellei alueen oikeudet ylikirjoita näitä yleisä asetuksia)."
 
-#: concrete/config/install/base/permissions.xml:48
+#: concrete/config/install/base/permissions.xml:50
 msgctxt "PermissionKeyName"
 msgid "Add Stack"
 msgstr "Lisää pino"
 
-#: concrete/config/install/base/permissions.xml:48
+#: concrete/config/install/base/permissions.xml:50
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Can add a stack or block from a stack to any area on the site. If someone is"
@@ -17274,96 +17296,96 @@ msgid ""
 "permissions that override these global permissions.)"
 msgstr "Voi lisätä pinon tai lohkon pinosta mille tahansa sivun alueelle. Jos joku on lisätty tänne, he voivat lisätä pinoja mille tahansa alueelle (ellei alueen oikeudet ylikirjoita näitä yleisä asetuksia)."
 
-#: concrete/config/install/base/permissions.xml:55
+#: concrete/config/install/base/permissions.xml:57
 msgctxt "PermissionKeyName"
 msgid "View Area"
 msgstr "Nähdä alue"
 
-#: concrete/config/install/base/permissions.xml:55
+#: concrete/config/install/base/permissions.xml:57
 msgctxt "PermissionKeyDescription"
 msgid "Can view the area and its contents."
 msgstr "Voi nähdä alueen ja sen sisällön."
 
-#: concrete/config/install/base/permissions.xml:56
+#: concrete/config/install/base/permissions.xml:58
 msgctxt "PermissionKeyName"
 msgid "Edit Area Contents"
 msgstr "Muokata alueen sisältöjä"
 
-#: concrete/config/install/base/permissions.xml:56
+#: concrete/config/install/base/permissions.xml:58
 msgctxt "PermissionKeyDescription"
 msgid "Can edit blocks within this area."
 msgstr "Voi muokata alueen lohkoja."
 
-#: concrete/config/install/base/permissions.xml:57
+#: concrete/config/install/base/permissions.xml:59
 msgctxt "PermissionKeyName"
 msgid "Add Block to Area"
 msgstr "Lisätä lohkon alueelle"
 
-#: concrete/config/install/base/permissions.xml:57
+#: concrete/config/install/base/permissions.xml:59
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Can add blocks to this area. This setting overrides the global Add Block "
 "permission for this area."
 msgstr "Voi lisätä lohkoja tälle alueelle. Tämä asetus ylikirjoittaa yleisen Lisää lohko oikeuden tälle alueelle."
 
-#: concrete/config/install/base/permissions.xml:58
+#: concrete/config/install/base/permissions.xml:60
 msgctxt "PermissionKeyName"
 msgid "Add Stack to Area"
 msgstr "Lisätä pinon alueelle"
 
-#: concrete/config/install/base/permissions.xml:58
+#: concrete/config/install/base/permissions.xml:60
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Can add stacks to this area. This setting overrides the global Add Stack "
 "permission for this area."
 msgstr "Voi lisätä pinoja tälle alueelle. Tämä asetus ylikirjoittaa yleisen Lisää pino oikeuden tälle alueelle."
 
-#: concrete/config/install/base/permissions.xml:59
+#: concrete/config/install/base/permissions.xml:61
 msgctxt "PermissionKeyName"
 msgid "Add Layouts to Area"
 msgstr "Lisätä sivupohjia alueeseen"
 
-#: concrete/config/install/base/permissions.xml:59
+#: concrete/config/install/base/permissions.xml:61
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users get the ability to add layouts to a particular area."
 msgstr "Määrittelee voivatko käyttäjät lisätä sivupohjia tietylle alueelle."
 
-#: concrete/config/install/base/permissions.xml:60
+#: concrete/config/install/base/permissions.xml:62
 msgctxt "PermissionKeyName"
 msgid "Edit Area Design"
 msgstr "Muokata alueen ulkoasua"
 
-#: concrete/config/install/base/permissions.xml:60
+#: concrete/config/install/base/permissions.xml:62
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users see design controls and can modify an area's custom "
 "CSS."
 msgstr "Määrittelee näkevätkö käyttäjät ulkoasun asetukset ja voivat he muokata alueen omaa CSS:ää."
 
-#: concrete/config/install/base/permissions.xml:61
+#: concrete/config/install/base/permissions.xml:63
 msgctxt "PermissionKeyName"
 msgid "Edit Area Permissions"
 msgstr "Muokata alueen oikeuksia"
 
-#: concrete/config/install/base/permissions.xml:61
+#: concrete/config/install/base/permissions.xml:63
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users can access the permissions on an area. Custom area "
 "permissions could override those of the page."
 msgstr "Määrittelee voivatko käyttäjät päästä alueen oikeuksiin. Alueen omat oikeudet voivat ylikirjoittaa sivun oikeudet."
 
-#: concrete/config/install/base/permissions.xml:62
+#: concrete/config/install/base/permissions.xml:64
 msgctxt "PermissionKeyName"
 msgid "Delete Area Contents"
 msgstr "Poistaa alueen sisällöt"
 
-#: concrete/config/install/base/permissions.xml:62
+#: concrete/config/install/base/permissions.xml:64
 msgctxt "PermissionKeyDescription"
 msgid "Controls whether users can delete blocks from this area."
 msgstr "Määrittelee voivatko käyttäjät poistaa lohkoja tältä alueelta."
 
-#: concrete/config/install/base/permissions.xml:63
+#: concrete/config/install/base/permissions.xml:65
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users can schedule guest access permissions on blocks in "
@@ -17371,416 +17393,456 @@ msgid ""
 "Guest Group."
 msgstr "Määrittelee voivatko käyttäjät ajastaa vieraille pääsyoikeuden tämän alueen lohkoihin. Vieraiden pääsyoikeus on pikalinkki, jolla voi antaa oikeuden ainoastaan Vieras-ryhmälle."
 
-#: concrete/config/install/base/permissions.xml:66
+#: concrete/config/install/base/permissions.xml:68
 msgctxt "PermissionKeyName"
 msgid "View Block"
 msgstr "Nähdä lohko"
 
-#: concrete/config/install/base/permissions.xml:66
+#: concrete/config/install/base/permissions.xml:68
 msgctxt "PermissionKeyDescription"
 msgid "Controls whether users can view this block in the page."
 msgstr "Määrittelee voivatko käyttäjät nähdä tämän lohkon sivulla."
 
-#: concrete/config/install/base/permissions.xml:67
+#: concrete/config/install/base/permissions.xml:69
 msgctxt "PermissionKeyName"
 msgid "Edit Block"
 msgstr "Muokata lohkoa"
 
-#: concrete/config/install/base/permissions.xml:67
+#: concrete/config/install/base/permissions.xml:69
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users can edit this block. This overrides any area or page "
 "permissions."
 msgstr "Määrittelee voivatko käyttäjät muokata tätä lohkoa. Tämä ylikirjoittaa kaikki alueen ja sivun oikeudet."
 
-#: concrete/config/install/base/permissions.xml:68
+#: concrete/config/install/base/permissions.xml:70
 msgctxt "PermissionKeyName"
 msgid "Change Custom Template"
 msgstr "Vaihtaa oma sivupohja"
 
-#: concrete/config/install/base/permissions.xml:68
+#: concrete/config/install/base/permissions.xml:70
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users can change the custom template on this block. This "
 "overrides any area or page permissions."
 msgstr "Määrittelee voivatko käyttäjät vaihtaa lohkon oman sivupohjan. Tämä ylikirjoittaa kaikki alueen ja sivun oikeudet."
 
-#: concrete/config/install/base/permissions.xml:69
+#: concrete/config/install/base/permissions.xml:71
 msgctxt "PermissionKeyName"
 msgid "Delete Block"
 msgstr "Poistaa lohko"
 
-#: concrete/config/install/base/permissions.xml:69
+#: concrete/config/install/base/permissions.xml:71
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users can delete this block. This overrides any area or "
 "page permissions."
 msgstr "Määrittelee voivatko käyttäjät poistaa tämän lohkon. Tämä ylikirjoittaa kaikki alueen ja sivun oikeudet."
 
-#: concrete/config/install/base/permissions.xml:70
+#: concrete/config/install/base/permissions.xml:72
 msgctxt "PermissionKeyName"
 msgid "Edit Design"
 msgstr "Muokata ulkoasua"
 
-#: concrete/config/install/base/permissions.xml:70
+#: concrete/config/install/base/permissions.xml:72
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users can set custom design properties or CSS on this "
 "block."
 msgstr "Määrittelee voivatko käyttäjät asettaa omia ulkoasun asetuksia tai CSS:ää tälle lohkolle."
 
-#: concrete/config/install/base/permissions.xml:71
+#: concrete/config/install/base/permissions.xml:73
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users can change permissions on this block, potentially "
 "granting themselves or others greater access."
 msgstr "Määrittelee voivatko käyttäjät vaihtaa oikeuksia tälle lohkolle, mahdollisesti he voivat antaa myös lisää oikeuksia itselleen ja muille."
 
-#: concrete/config/install/base/permissions.xml:72
+#: concrete/config/install/base/permissions.xml:74
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users can schedule guest access permissions on this block. "
 "Guest Access is a shortcut for granting permissions just to the Guest Group."
 msgstr "Määrittelee voivatko käyttäjät ajastaa vieraiden pääsyoikeuden tähän lohkoon. Vieraiden pääsyoikeus on pikalinkki, jolla voi antaa oikeuden ainoastaan Vieras-ryhmälle."
 
-#: concrete/config/install/base/permissions.xml:74
-#: concrete/config/install/base/permissions.xml:83
+#: concrete/config/install/base/permissions.xml:76
+#: concrete/config/install/base/permissions.xml:85
 msgctxt "PermissionKeyName"
 msgid "View Files"
 msgstr "Nähdä tiedostot"
 
-#: concrete/config/install/base/permissions.xml:74
+#: concrete/config/install/base/permissions.xml:76
 msgctxt "PermissionKeyDescription"
 msgid "Can view and download files in the site."
 msgstr "Voi nähdä ja ladata tiedostoja sivustolta."
 
-#: concrete/config/install/base/permissions.xml:75
+#: concrete/config/install/base/permissions.xml:77
 msgctxt "PermissionKeyName"
 msgid "Search Files in File Manager"
 msgstr "Hakea tiedostoja tiedostohallinnassa"
 
-#: concrete/config/install/base/permissions.xml:75
+#: concrete/config/install/base/permissions.xml:77
 msgctxt "PermissionKeyDescription"
 msgid "Can access the file manager"
 msgstr "Pääsee tiedostohallintaan"
 
-#: concrete/config/install/base/permissions.xml:76
-#: concrete/config/install/base/permissions.xml:85
+#: concrete/config/install/base/permissions.xml:78
+#: concrete/config/install/base/permissions.xml:87
 msgctxt "PermissionKeyName"
 msgid "Edit File Properties"
 msgstr "Muokata tiedostojen ominaisuuksia"
 
-#: concrete/config/install/base/permissions.xml:76
-#: concrete/config/install/base/permissions.xml:85
+#: concrete/config/install/base/permissions.xml:78
+#: concrete/config/install/base/permissions.xml:87
 msgctxt "PermissionKeyDescription"
 msgid "Can edit a file's properties."
 msgstr "Voi muokata tiedoston ominaisuuksia."
 
-#: concrete/config/install/base/permissions.xml:77
-#: concrete/config/install/base/permissions.xml:86
+#: concrete/config/install/base/permissions.xml:79
+#: concrete/config/install/base/permissions.xml:88
 msgctxt "PermissionKeyName"
 msgid "Edit File Contents"
 msgstr "Muokata tiedoston sisältöjä"
 
-#: concrete/config/install/base/permissions.xml:77
+#: concrete/config/install/base/permissions.xml:79
 msgctxt "PermissionKeyDescription"
 msgid "Can edit or replace files in set."
 msgstr "Voi muokata tai korvata tiedostoja tiedostoryhmässä."
 
-#: concrete/config/install/base/permissions.xml:78
-#: concrete/config/install/base/permissions.xml:87
+#: concrete/config/install/base/permissions.xml:80
+#: concrete/config/install/base/permissions.xml:89
 msgctxt "PermissionKeyName"
 msgid "Copy File"
 msgstr "Kopioi tiedosto"
 
-#: concrete/config/install/base/permissions.xml:78
+#: concrete/config/install/base/permissions.xml:80
 msgctxt "PermissionKeyDescription"
 msgid "Can copy files in file set."
 msgstr "Voi kopioida tiedostoja tiedostoryhmässä."
 
-#: concrete/config/install/base/permissions.xml:79
-#: concrete/config/install/base/permissions.xml:88
+#: concrete/config/install/base/permissions.xml:81
+#: concrete/config/install/base/permissions.xml:90
 msgctxt "PermissionKeyName"
 msgid "Edit File Access"
 msgstr "Muuttaa tiedoston pääsyoikeuksia"
 
-#: concrete/config/install/base/permissions.xml:79
+#: concrete/config/install/base/permissions.xml:81
 msgctxt "PermissionKeyDescription"
 msgid "Can edit access to file sets."
 msgstr "Voi muokata pääsyoikeuksia tiedostoryhmään."
 
-#: concrete/config/install/base/permissions.xml:80
+#: concrete/config/install/base/permissions.xml:82
 msgctxt "PermissionKeyName"
 msgid "Delete File Set"
 msgstr "Poista tiedostoryhmä"
 
-#: concrete/config/install/base/permissions.xml:80
+#: concrete/config/install/base/permissions.xml:82
 msgctxt "PermissionKeyDescription"
 msgid "Can delete file set."
 msgstr "Voi poistaa tiedostoryhmän."
 
-#: concrete/config/install/base/permissions.xml:81
-#: concrete/config/install/base/permissions.xml:89
+#: concrete/config/install/base/permissions.xml:83
+#: concrete/config/install/base/permissions.xml:91
 msgctxt "PermissionKeyName"
 msgid "Delete File"
 msgstr "Poistaa tiedoston"
 
-#: concrete/config/install/base/permissions.xml:81
+#: concrete/config/install/base/permissions.xml:83
 msgctxt "PermissionKeyDescription"
 msgid "Can delete files in set."
 msgstr "Voi poistaa tiedostoja tiedostoryhmästä."
 
-#: concrete/config/install/base/permissions.xml:82
+#: concrete/config/install/base/permissions.xml:84
 msgctxt "PermissionKeyName"
 msgid "Add File"
 msgstr "Lisää tiedosto"
 
-#: concrete/config/install/base/permissions.xml:82
+#: concrete/config/install/base/permissions.xml:84
 msgctxt "PermissionKeyDescription"
 msgid "Can add files to set."
 msgstr "Voi lisätä tiedostoja tiedostoryhmään."
 
-#: concrete/config/install/base/permissions.xml:83
+#: concrete/config/install/base/permissions.xml:85
 msgctxt "PermissionKeyDescription"
 msgid "Can view and download files."
 msgstr "Voi nähdä ja ladata tiedostoja."
 
-#: concrete/config/install/base/permissions.xml:84
+#: concrete/config/install/base/permissions.xml:86
 msgctxt "PermissionKeyName"
 msgid "View File in File Manager"
 msgstr "Nähdä tiedoston tiedostohallinnassa"
 
-#: concrete/config/install/base/permissions.xml:84
+#: concrete/config/install/base/permissions.xml:86
 msgctxt "PermissionKeyDescription"
 msgid "Can access the File Manager."
 msgstr "Voi päästä tiedostohallintaan."
 
-#: concrete/config/install/base/permissions.xml:86
+#: concrete/config/install/base/permissions.xml:88
 msgctxt "PermissionKeyDescription"
 msgid "Can edit or replace files."
 msgstr "Voi muokata tai korvata tiedostoja."
 
-#: concrete/config/install/base/permissions.xml:87
+#: concrete/config/install/base/permissions.xml:89
 msgctxt "PermissionKeyDescription"
 msgid "Can copy file."
 msgstr "Voi kopioida tiedoston."
 
-#: concrete/config/install/base/permissions.xml:88
+#: concrete/config/install/base/permissions.xml:90
 msgctxt "PermissionKeyDescription"
 msgid "Can edit access to file."
 msgstr "Voi muokata pääsyoikeutta tiedostoon."
 
-#: concrete/config/install/base/permissions.xml:89
+#: concrete/config/install/base/permissions.xml:91
 msgctxt "PermissionKeyDescription"
 msgid "Can delete file."
 msgstr "Voi poistaa tiedoston."
 
-#: concrete/config/install/base/permissions.xml:92
+#: concrete/config/install/base/permissions.xml:94
 msgctxt "PermissionKeyName"
 msgid "Approve or Deny"
 msgstr "Hyväksy tai estä"
 
-#: concrete/config/install/base/permissions.xml:92
+#: concrete/config/install/base/permissions.xml:94
 msgctxt "PermissionKeyDescription"
 msgid "Grant ability to approve workflow."
 msgstr "Myönnä oikeus hyväksyä työnkulku."
 
-#: concrete/config/install/base/permissions.xml:93
+#: concrete/config/install/base/permissions.xml:95
 msgctxt "PermissionKeyName"
 msgid "Notify on Entry"
 msgstr "Ilmoita avaamisella"
 
-#: concrete/config/install/base/permissions.xml:93
+#: concrete/config/install/base/permissions.xml:95
 msgctxt "PermissionKeyDescription"
 msgid "Notify approvers that a change has entered the workflow."
 msgstr "Ilmoita hyväksyjille, että työnkulkuun on tullut muutos."
 
-#: concrete/config/install/base/permissions.xml:94
+#: concrete/config/install/base/permissions.xml:96
 msgctxt "PermissionKeyName"
 msgid "Notify on Approve"
 msgstr "Ilmoita hyväksymisellä"
 
-#: concrete/config/install/base/permissions.xml:94
+#: concrete/config/install/base/permissions.xml:96
 msgctxt "PermissionKeyDescription"
 msgid "Notify approvers that a change has been approved."
 msgstr "Ilmoita hyväksyjille, että muutos on hyväksytty."
 
-#: concrete/config/install/base/permissions.xml:95
+#: concrete/config/install/base/permissions.xml:97
 msgctxt "PermissionKeyName"
 msgid "Notify on Deny"
 msgstr "Ilmoita estämisellä"
 
-#: concrete/config/install/base/permissions.xml:95
+#: concrete/config/install/base/permissions.xml:97
 msgctxt "PermissionKeyDescription"
 msgid "Notify approvers that a change has been denied."
 msgstr "Ilmoita hyväksyjille, että muutos on hylätty."
 
-#: concrete/config/install/base/permissions.xml:98
+#: concrete/config/install/base/permissions.xml:100
 msgctxt "PermissionKeyName"
 msgid "Add Page Type"
 msgstr "Lisää sivutyyppi"
 
-#: concrete/config/install/base/permissions.xml:99
+#: concrete/config/install/base/permissions.xml:101
 msgctxt "PermissionKeyName"
 msgid "Edit Page Type Permissions"
 msgstr "Muokkaa sivutyypin oikeuksia"
 
-#: concrete/config/install/base/permissions.xml:100
+#: concrete/config/install/base/permissions.xml:102
 msgctxt "PermissionKeyName"
 msgid "Edit Page Type Drafts"
 msgstr "Muokkaa sivutyypin luonnoksia"
 
-#: concrete/config/install/base/permissions.xml:104
+#: concrete/config/install/base/permissions.xml:106
 msgctxt "PermissionKeyName"
 msgid "View Topic Tree Node"
 msgstr "Näytä aihepuun solmu"
 
-#: concrete/config/install/base/permissions.xml:105
+#: concrete/config/install/base/permissions.xml:107
 msgctxt "PermissionKeyName"
 msgid "View Topic Category Tree Node"
 msgstr "Näytä aihekategoriapuun solmu"
 
-#: concrete/config/install/base/permissions.xml:108
+#: concrete/config/install/base/permissions.xml:110
+msgctxt "PermissionKeyName"
+msgid "Add Message to Conversation"
+msgstr ""
+
+#: concrete/config/install/base/permissions.xml:111
+msgctxt "PermissionKeyName"
+msgid "Add Message Attachments"
+msgstr ""
+
+#: concrete/config/install/base/permissions.xml:112
+msgctxt "PermissionKeyName"
+msgid "Edit Conversation Permissions"
+msgstr ""
+
+#: concrete/config/install/base/permissions.xml:113
+msgctxt "PermissionKeyName"
+msgid "Delete Message"
+msgstr "Poista viesti"
+
+#: concrete/config/install/base/permissions.xml:114
+msgctxt "PermissionKeyName"
+msgid "Edit Message"
+msgstr ""
+
+#: concrete/config/install/base/permissions.xml:115
+msgctxt "PermissionKeyName"
+msgid "Rate Message"
+msgstr ""
+
+#: concrete/config/install/base/permissions.xml:116
+msgctxt "PermissionKeyName"
+msgid "Flag Message"
+msgstr ""
+
+#: concrete/config/install/base/permissions.xml:117
+msgctxt "PermissionKeyName"
+msgid "Approve Message"
+msgstr ""
+
+#: concrete/config/install/base/permissions.xml:120
 msgctxt "PermissionKeyName"
 msgid "Edit User Details"
 msgstr "Muokata käyttäjän tietoja"
 
-#: concrete/config/install/base/permissions.xml:114
+#: concrete/config/install/base/permissions.xml:126
 msgctxt "PermissionKeyName"
 msgid "View User Attributes"
 msgstr "Nähdä käyttäjän attribuutit"
 
-#: concrete/config/install/base/permissions.xml:120
+#: concrete/config/install/base/permissions.xml:132
 msgctxt "PermissionKeyName"
 msgid "Activate/Deactivate User"
 msgstr "Aktivoida tai poistaa käyttäjän aktivointi"
 
-#: concrete/config/install/base/permissions.xml:126
+#: concrete/config/install/base/permissions.xml:138
 msgctxt "PermissionKeyName"
 msgid "Sign in as User"
 msgstr "Kirjaudu käyttäjänä"
 
-#: concrete/config/install/base/permissions.xml:129
+#: concrete/config/install/base/permissions.xml:141
 msgctxt "PermissionKeyName"
 msgid "Access Group Search"
 msgstr "Käyttöoikeus ryhmähakuun"
 
-#: concrete/config/install/base/permissions.xml:135
+#: concrete/config/install/base/permissions.xml:147
 msgctxt "PermissionKeyName"
 msgid "Delete User"
 msgstr "Poistaa käyttäjä"
 
-#: concrete/config/install/base/permissions.xml:143
+#: concrete/config/install/base/permissions.xml:155
 msgctxt "PermissionKeyName"
 msgid "Search User Group"
 msgstr "Hae käyttäjäryhmästä"
 
-#: concrete/config/install/base/permissions.xml:146
+#: concrete/config/install/base/permissions.xml:158
 msgctxt "PermissionKeyName"
 msgid "Edit Group"
 msgstr "Muokkaa ryhmää"
 
-#: concrete/config/install/base/permissions.xml:149
+#: concrete/config/install/base/permissions.xml:161
 msgctxt "PermissionKeyName"
 msgid "Assign Group"
 msgstr "Liitä ryhmä"
 
-#: concrete/config/install/base/permissions.xml:153
+#: concrete/config/install/base/permissions.xml:165
 msgctxt "PermissionKeyName"
 msgid "Add Child Group"
 msgstr "Lisää alaryhmä"
 
-#: concrete/config/install/base/permissions.xml:157
+#: concrete/config/install/base/permissions.xml:169
 msgctxt "PermissionKeyName"
 msgid "Edit Group Permissions"
 msgstr "Muokkaa ryhmäoikeuksia"
 
-#: concrete/config/install/base/permissions.xml:160
+#: concrete/config/install/base/permissions.xml:172
 msgctxt "PermissionKeyName"
 msgid "Access Page Type Permissions"
 msgstr "Pääsyoikeus sivutyyppien oikeuksiin"
 
-#: concrete/config/install/base/permissions.xml:166
+#: concrete/config/install/base/permissions.xml:178
 msgctxt "PermissionKeyName"
 msgid "Perform Backups"
 msgstr "Suorittaa varmuuskopiointi"
 
-#: concrete/config/install/base/permissions.xml:172
+#: concrete/config/install/base/permissions.xml:184
 msgctxt "PermissionKeyName"
 msgid "Access Task Permissions"
 msgstr "Pääsee tehtävien oikeuksiin"
 
-#: concrete/config/install/base/permissions.xml:175
+#: concrete/config/install/base/permissions.xml:187
 msgctxt "PermissionKeyName"
 msgid "Access Sitemap"
 msgstr "Pääsee sivukarttaan"
 
-#: concrete/config/install/base/permissions.xml:181
+#: concrete/config/install/base/permissions.xml:193
 msgctxt "PermissionKeyName"
 msgid "Access Page Type Defaults"
 msgstr "Pääsee sivutyyppien oletuksiin"
 
-#: concrete/config/install/base/permissions.xml:187
+#: concrete/config/install/base/permissions.xml:199
 msgctxt "PermissionKeyName"
 msgid "Customize Themes"
 msgstr "Muokkaa teemoja"
 
-#: concrete/config/install/base/permissions.xml:193
+#: concrete/config/install/base/permissions.xml:205
 msgctxt "PermissionKeyName"
 msgid "Manage Layout Presets"
 msgstr "Hallinnoi tallennettuja rakenteita"
 
-#: concrete/config/install/base/permissions.xml:199
+#: concrete/config/install/base/permissions.xml:211
 msgctxt "PermissionKeyName"
 msgid "Empty Trash"
 msgstr "Tyhjennä roskakori"
 
-#: concrete/config/install/base/permissions.xml:205
+#: concrete/config/install/base/permissions.xml:217
 msgctxt "PermissionKeyName"
 msgid "Add Topic Tree"
 msgstr "Lisää aihepuu"
 
-#: concrete/config/install/base/permissions.xml:211
+#: concrete/config/install/base/permissions.xml:223
 msgctxt "PermissionKeyName"
 msgid "Remove Topic Tree"
 msgstr "Poista aihepuu"
 
-#: concrete/config/install/base/permissions.xml:217
+#: concrete/config/install/base/permissions.xml:229
 msgctxt "PermissionKeyName"
 msgid "Uninstall Packages"
 msgstr "Poista paketteja"
 
-#: concrete/config/install/base/permissions.xml:223
+#: concrete/config/install/base/permissions.xml:235
 msgctxt "PermissionKeyName"
 msgid "Install Packages"
 msgstr "Asentaa paketteja"
 
-#: concrete/config/install/base/permissions.xml:229
+#: concrete/config/install/base/permissions.xml:241
 msgctxt "PermissionKeyName"
 msgid "View Newsflow"
 msgstr "Näytä uutisvirta"
 
-#: concrete/config/install/base/permissions.xml:235
+#: concrete/config/install/base/permissions.xml:247
 msgctxt "PermissionKeyName"
 msgid "Export Site Users"
 msgstr "Vie sivuston käyttäjät"
 
-#: concrete/config/install/base/permissions.xml:235
+#: concrete/config/install/base/permissions.xml:247
 msgctxt "PermissionKeyDescription"
 msgid "Controls whether a user can export site users or not"
 msgstr "Määrittelee voiko käyttäjä viedä sivuston käyttäjät vai ei"
 
-#: concrete/config/install/base/permissions.xml:241
+#: concrete/config/install/base/permissions.xml:253
 msgctxt "PermissionKeyName"
 msgid "Access User Search"
 msgstr "Käyttöoikeus käyttäjähakuun"
 
-#: concrete/config/install/base/permissions.xml:241
+#: concrete/config/install/base/permissions.xml:253
 msgctxt "PermissionKeyDescription"
 msgid "Controls whether a user can view the search user interface."
 msgstr "Määrittelee pääseekö käyttäjä näkemään käyttäjähaun käyttöliittymää."
 
-#: concrete/config/install/base/permissions.xml:250
+#: concrete/config/install/base/permissions.xml:262
 msgid "SecurImage (Default)"
 msgstr "SecurImage (oletus)"
 
