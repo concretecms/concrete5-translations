@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-08-15 04:00+0000\n"
-"PO-Revision-Date: 2014-08-15 09:56+0000\n"
+"POT-Creation-Date: 2014-08-16 04:00+0000\n"
+"PO-Revision-Date: 2014-08-16 09:54+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Czech (Czech Republic) (http://www.transifex.com/projects/p/concrete5/language/cs_CZ/)\n"
 "MIME-Version: 1.0\n"
@@ -613,6 +613,8 @@ msgstr "Odstranit soubory ze složky incoming/."
 #: concrete/single_pages/dashboard/extend/install.php:95
 #: concrete/single_pages/dashboard/files/add_set.php:19
 #: concrete/single_pages/dashboard/files/sets.php:100
+#: concrete/single_pages/dashboard/pages/feeds.php:51
+#: concrete/single_pages/dashboard/pages/feeds.php:164
 #: concrete/single_pages/dashboard/pages/templates/add.php:46
 #: concrete/single_pages/dashboard/pages/templates/view.php:58
 #: concrete/single_pages/dashboard/pages/themes/view.php:34
@@ -1142,6 +1144,7 @@ msgstr ""
 #: concrete/elements/collection_attribute_values.php:67
 #: concrete/elements/permission/access/list.php:6
 #: concrete/single_pages/dashboard/files/add_set.php:20
+#: concrete/single_pages/dashboard/pages/feeds.php:165
 #: concrete/single_pages/dashboard/pages/single.php:19
 #: concrete/single_pages/dashboard/pages/templates/add.php:47
 #: concrete/single_pages/dashboard/pages/types/add.php:9
@@ -1505,6 +1508,7 @@ msgstr "Autor"
 #: concrete/blocks/image_slider/form_setup_html.php:201
 #: concrete/elements/collection_add.php:46
 #: concrete/single_pages/dashboard/blocks/types/view.php:8
+#: concrete/single_pages/dashboard/pages/feeds.php:84
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:208
 #: concrete/single_pages/dashboard/users/add_group.php:29
 #: concrete/single_pages/dashboard/users/groups.php:39
@@ -1798,6 +1802,7 @@ msgstr ""
 #: concrete/blocks/search/form_setup_html.php:30
 #: concrete/blocks/tags/tag_form.php:10 concrete/blocks/topic_list/form.php:44
 #: concrete/blocks/youtube/form_setup_html.php:20
+#: concrete/single_pages/dashboard/pages/feeds.php:76
 #: concrete/src/File/Search/ColumnSet/DefaultSet.php:27
 #: concrete/src/File/Version.php:464 concrete/tools/i18n_redactor_js.php:58
 #: concrete/views/dialogs/file/properties.php:96
@@ -1855,7 +1860,7 @@ msgstr ""
 msgid "Text"
 msgstr "Text"
 
-#: concrete/config/install/base/dashboard.xml:726
+#: concrete/config/install/base/dashboard.xml:735
 #: concrete/elements/users/confirm_list.php:8
 #: concrete/mail/user_register_approval_required.php:15
 #: concrete/single_pages/account/profile/edit.php:22
@@ -2408,7 +2413,7 @@ msgstr "Nastavit na stránkách potomků"
 msgid "Composer Settings"
 msgstr "Nastavení Editoru"
 
-#: concrete/config/install/base/dashboard.xml:428
+#: concrete/config/install/base/dashboard.xml:437
 #: concrete/elements/collection_theme.php:99
 #: concrete/single_pages/dashboard/pages/themes/view.php:162
 #: concrete/tools/i18n_js.php:57
@@ -2664,7 +2669,7 @@ msgstr "Smazat navždy"
 #: concrete/config/install/base/dashboard.xml:58
 #: concrete/config/install/base/dashboard.xml:109
 #: concrete/config/install/base/dashboard.xml:304
-#: concrete/config/install/base/dashboard.xml:795
+#: concrete/config/install/base/dashboard.xml:804
 #: concrete/elements/page_controls_footer.php:83
 #: concrete/elements/page_controls_footer.php:85
 #: concrete/elements/panels/page.php:79 concrete/single_pages/login.php:31
@@ -2828,7 +2833,7 @@ msgstr "Kopírovat soubor"
 msgid "Choose New File"
 msgstr "Vyberte nový soubor"
 
-#: concrete/config/install/base/dashboard.xml:803
+#: concrete/config/install/base/dashboard.xml:812
 #: concrete/elements/files/search.php:35 concrete/elements/files/search.php:67
 #: concrete/tools/i18n_js.php:195
 msgid "Sets"
@@ -3704,7 +3709,7 @@ msgid "Pages"
 msgstr "Stránky"
 
 #: concrete/config/install/base/dashboard.xml:48
-#: concrete/config/install/base/dashboard.xml:569
+#: concrete/config/install/base/dashboard.xml:578
 #: concrete/controllers/single_page/dashboard/workflow/me.php:31
 #: concrete/elements/page_controls_footer.php:138
 #: concrete/themes/dashboard/elements/header.php:50
@@ -4375,7 +4380,7 @@ msgid ""
 "cannot be manually removed."
 msgstr "Tato sada atributů je uzamčena, tzn. že byla přidána balíčkem a nelze ji ručně odstranit."
 
-#: concrete/config/install/base/dashboard.xml:827
+#: concrete/config/install/base/dashboard.xml:836
 #: concrete/controllers/single_page/dashboard/system/attributes/topics/add.php:14
 #: concrete/single_pages/dashboard/system/attributes/topics/add.php:22
 #: concrete/single_pages/dashboard/system/attributes/topics/view.php:22
@@ -4718,6 +4723,26 @@ msgstr "Uživatel"
 msgid "File not found"
 msgstr "Soubor nebyl nalezen"
 
+#: concrete/controllers/single_page/dashboard/pages/feeds.php:19
+msgid "Feed Updated."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/pages/feeds.php:25
+msgid "Feed Deleted."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/pages/feeds.php:31
+msgid "Feed Added."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/pages/feeds.php:99
+msgid "Invalid feed."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/pages/feeds.php:127
+msgid "** No Filtering"
+msgstr ""
+
 #: concrete/controllers/single_page/dashboard/pages/types/output.php:35
 msgid "Invalid page template."
 msgstr ""
@@ -5037,6 +5062,9 @@ msgstr "Hledat všechny potomky?"
 #: concrete/controllers/search/pages.php:235
 #: concrete/elements/page_types/form/base.php:53
 #: concrete/elements/page_types/form/base.php:58
+#: concrete/single_pages/dashboard/pages/feeds.php:108
+#: concrete/single_pages/dashboard/pages/feeds.php:123
+#: concrete/single_pages/dashboard/pages/feeds.php:138
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:115
 #: concrete/single_pages/dashboard/system/mail/importers.php:5
 #: concrete/single_pages/dashboard/system/mail/importers.php:88
@@ -5061,6 +5089,9 @@ msgstr "Ne"
 #: concrete/controllers/search/pages.php:236
 #: concrete/elements/page_types/form/base.php:53
 #: concrete/elements/page_types/form/base.php:58
+#: concrete/single_pages/dashboard/pages/feeds.php:102
+#: concrete/single_pages/dashboard/pages/feeds.php:117
+#: concrete/single_pages/dashboard/pages/feeds.php:132
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:115
 #: concrete/single_pages/dashboard/system/mail/importers.php:5
 #: concrete/single_pages/dashboard/system/mail/importers.php:88
@@ -5249,7 +5280,7 @@ msgid "&lt; Back to Home"
 msgstr "<Zpět na domovskou stránku"
 
 #: concrete/config/install/base/dashboard.xml:4
-#: concrete/config/install/base/dashboard.xml:391
+#: concrete/config/install/base/dashboard.xml:400
 #: concrete/elements/page_controls_footer.php:132
 #: concrete/elements/panels/dashboard.php:11
 #: concrete/elements/panels/dashboard.php:13
@@ -5287,7 +5318,7 @@ msgstr "Reporty"
 msgid "Pages & Themes"
 msgstr "Stránky a Motivy"
 
-#: concrete/config/install/base/dashboard.xml:330
+#: concrete/config/install/base/dashboard.xml:339
 #: concrete/elements/page_controls_footer.php:146
 #: concrete/elements/permission/detail.php:31
 #: concrete/elements/permission/detail.php:79
@@ -5295,19 +5326,19 @@ msgstr "Stránky a Motivy"
 msgid "Workflow"
 msgstr "Workflow"
 
-#: concrete/config/install/base/dashboard.xml:342
+#: concrete/config/install/base/dashboard.xml:351
 #: concrete/elements/page_controls_footer.php:148
 #: concrete/themes/dashboard/elements/header.php:55
 msgid "Stacks & Blocks"
 msgstr "Zásobníky a Bloky"
 
-#: concrete/config/install/base/dashboard.xml:383
+#: concrete/config/install/base/dashboard.xml:392
 #: concrete/elements/page_controls_footer.php:150
 #: concrete/themes/dashboard/elements/header.php:56
 msgid "Extend concrete5"
 msgstr "Rozšíření Concrete5"
 
-#: concrete/config/install/base/dashboard.xml:444
+#: concrete/config/install/base/dashboard.xml:453
 #: concrete/elements/page_controls_footer.php:152
 #: concrete/themes/dashboard/elements/header.php:57
 msgid "System & Settings"
@@ -7468,7 +7499,7 @@ msgstr "Administrace"
 msgid "Customize"
 msgstr "Upravit"
 
-#: concrete/config/install/base/dashboard.xml:979
+#: concrete/config/install/base/dashboard.xml:988
 #: concrete/src/Application/Service/Dashboard.php:325
 msgid "Customize Dashboard Home"
 msgstr "Přizpůsobit domovskou stránku Administrace"
@@ -7765,6 +7796,7 @@ msgid "%s: Basic Details"
 msgstr "%s: Základní údaje"
 
 #: concrete/elements/attribute/type_form_required.php:52
+#: concrete/single_pages/dashboard/pages/feeds.php:80
 #: concrete/single_pages/dashboard/pages/templates/add.php:20
 #: concrete/single_pages/dashboard/pages/templates/view.php:32
 #: concrete/single_pages/dashboard/system/attributes/sets.php:28
@@ -9596,7 +9628,7 @@ msgid "Save Preset"
 msgstr ""
 
 #: concrete/config/install/base/dashboard.xml:178
-#: concrete/config/install/base/dashboard.xml:553
+#: concrete/config/install/base/dashboard.xml:562
 #: concrete/views/dialogs/file/properties.php:15
 msgid "Statistics"
 msgstr "Statistiky"
@@ -9621,7 +9653,7 @@ msgstr "Správce souborů"
 msgid "Page Added To"
 msgstr "Stránka přidána do"
 
-#: concrete/config/install/base/dashboard.xml:587
+#: concrete/config/install/base/dashboard.xml:596
 #: concrete/views/dialogs/file/properties.php:75
 msgid "Thumbnails"
 msgstr ""
@@ -9896,7 +9928,7 @@ msgstr ""
 msgid "Clipboard"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:344
+#: concrete/config/install/base/dashboard.xml:353
 #: concrete/config/install/base/login_registration.xml:19
 #: concrete/views/panels/add.php:27
 msgid "Stacks"
@@ -9906,7 +9938,7 @@ msgstr "Zásobníky"
 msgid "Gathering Tiles"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:891
+#: concrete/config/install/base/dashboard.xml:900
 #: concrete/views/panels/add.php:70
 msgid "Stack"
 msgstr "Zásobník"
@@ -10021,7 +10053,7 @@ msgstr "Začíná instalace"
 msgid "Site Information"
 msgstr "Informace o webu"
 
-#: concrete/config/install/base/dashboard.xml:454
+#: concrete/config/install/base/dashboard.xml:463
 #: concrete/single_pages/dashboard/system/basics/name.php:7
 #: concrete/views/frontend/install.php:144
 msgid "Site Name"
@@ -12173,6 +12205,7 @@ msgid "By Parent Page"
 msgstr ""
 
 #: concrete/blocks/date_navigation/form.php:9
+#: concrete/single_pages/dashboard/pages/feeds.php:88
 msgid "Filter by Parent Page"
 msgstr ""
 
@@ -12304,7 +12337,7 @@ msgid "Allows users to add social icons to their website"
 msgstr ""
 
 #: concrete/blocks/social_links/controller.php:31
-#: concrete/config/install/base/dashboard.xml:470
+#: concrete/config/install/base/dashboard.xml:479
 msgid "Social Links"
 msgstr ""
 
@@ -12422,7 +12455,7 @@ msgid "Topic List"
 msgstr ""
 
 #: concrete/blocks/topic_list/controller.php:39
-#: concrete/config/install/base/dashboard.xml:819
+#: concrete/config/install/base/dashboard.xml:828
 msgid "Topics"
 msgstr ""
 
@@ -12874,7 +12907,7 @@ msgstr "Zaslat zprávu"
 msgid "Mailbox"
 msgstr "Poštovní schránka"
 
-#: concrete/config/install/base/dashboard.xml:321
+#: concrete/config/install/base/dashboard.xml:330
 #: concrete/config/install/base/login_registration.xml:39
 #: concrete/single_pages/account/messages/inbox.php:201
 #: concrete/single_pages/dashboard/conversations/messages.php:3
@@ -13126,7 +13159,7 @@ msgstr "Procházet doplňky"
 msgid "Get more add-ons from concrete5.org."
 msgstr "Získat více doplňků z concrete5.org."
 
-#: concrete/config/install/base/dashboard.xml:412
+#: concrete/config/install/base/dashboard.xml:421
 #: concrete/single_pages/dashboard/extend/install.php:245
 #: concrete/single_pages/dashboard/extend/update.php:31
 msgid "Update Add-Ons"
@@ -13417,6 +13450,7 @@ msgid "Delete Stack"
 msgstr "Smazat zásobník"
 
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:102
+#: concrete/single_pages/dashboard/pages/feeds.php:48
 #: concrete/single_pages/dashboard/system/attributes/topics/view.php:62
 #: concrete/single_pages/dashboard/system/basics/social.php:32
 msgid "Are you sure? This action cannot be undone."
@@ -13434,7 +13468,7 @@ msgstr "Nebyly přidány žádné zásobníky"
 msgid "Stack Name"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:340
+#: concrete/config/install/base/dashboard.xml:349
 #: concrete/single_pages/dashboard/workflow/me.php:3
 msgid "Waiting for Me"
 msgstr "Čeká na mě"
@@ -13485,7 +13519,7 @@ msgid "Badge Description"
 msgstr ""
 
 #: concrete/config/install/base/dashboard.xml:150
-#: concrete/config/install/base/dashboard.xml:776
+#: concrete/config/install/base/dashboard.xml:785
 #: concrete/single_pages/account/profile/public_profile.php:34
 #: concrete/single_pages/dashboard/users/add_group.php:102
 #: concrete/single_pages/dashboard/users/groups.php:73
@@ -13855,7 +13889,7 @@ msgstr "Nemáte přístup ho vyhledávání uživatelů. Toto nastavení lze zm�
 msgid "Registration Data"
 msgstr "Registrační údaje"
 
-#: concrete/config/install/base/dashboard.xml:579
+#: concrete/config/install/base/dashboard.xml:588
 #: concrete/single_pages/dashboard/system/files/filetypes.php:3
 msgid "Allowed File Types"
 msgstr "Povolené typy souborů"
@@ -13894,7 +13928,7 @@ msgstr ""
 msgid "Delete Location"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:452
+#: concrete/config/install/base/dashboard.xml:461
 #: concrete/single_pages/dashboard/system/files/storage.php:39
 msgid "Basics"
 msgstr "Základní"
@@ -13971,7 +14005,7 @@ msgstr "Slova oddělujte čárkami. Tato slova budou automaticky odstraněna z U
 msgid "Reset To Default"
 msgstr "Vrátit do výchozího nastavení"
 
-#: concrete/config/install/base/dashboard.xml:537
+#: concrete/config/install/base/dashboard.xml:546
 #: concrete/single_pages/dashboard/system/seo/codes.php:8
 msgid "Tracking Codes"
 msgstr "Sledovací kód"
@@ -14072,7 +14106,7 @@ msgstr "Povolit tzv. \"pretty URL\""
 msgid "Code for your .htaccess file"
 msgstr "Kód pro soubor .htaccess"
 
-#: concrete/config/install/base/dashboard.xml:830
+#: concrete/config/install/base/dashboard.xml:839
 #: concrete/single_pages/dashboard/system/environment/info.php:2
 msgid "Environment"
 msgstr "Prostředí"
@@ -14113,7 +14147,7 @@ msgstr "Skrýt chyby návštěvníkům stránek"
 msgid "Show errors in page."
 msgstr "Zobrazit chyby na stránce"
 
-#: concrete/config/install/base/dashboard.xml:634
+#: concrete/config/install/base/dashboard.xml:643
 #: concrete/single_pages/dashboard/system/permissions/site.php:7
 msgid "Site Access"
 msgstr "Přístup na web"
@@ -14171,7 +14205,7 @@ msgstr "Nemáte nainstalovánu žádnoy CAPTCHA knihovnu."
 msgid "Save Additional Settings"
 msgstr "Uložit rozšířená nastavení"
 
-#: concrete/config/install/base/dashboard.xml:681
+#: concrete/config/install/base/dashboard.xml:690
 #: concrete/single_pages/dashboard/system/permissions/maintenance.php:4
 msgid "Maintenance Mode"
 msgstr "Režim údržby"
@@ -14229,12 +14263,12 @@ msgstr "Na e-mailové adresy v tomto boxu bude zasláno upozornění v případ�
 msgid "You have no anti-spam libraries installed."
 msgstr "Nemáte nainstalovánu žádnou anti-spamovou knihovnu."
 
-#: concrete/config/install/base/dashboard.xml:643
+#: concrete/config/install/base/dashboard.xml:652
 #: concrete/single_pages/dashboard/system/permissions/tasks.php:8
 msgid "Task Permissions"
 msgstr "Oprávnění úloh"
 
-#: concrete/config/install/base/dashboard.xml:651
+#: concrete/config/install/base/dashboard.xml:660
 #: concrete/single_pages/dashboard/system/permissions/users.php:8
 msgid "User Permissions"
 msgstr "Oprávnění uživatelů"
@@ -14504,7 +14538,7 @@ msgstr ""
 msgid "Enable"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:709
+#: concrete/config/install/base/dashboard.xml:718
 #: concrete/single_pages/dashboard/system/registration/open.php:3
 msgid "Public Registration"
 msgstr "Veřejná registrace"
@@ -14645,7 +14679,7 @@ msgstr ""
 msgid "Enable user defined time zones."
 msgstr "Povolit uživatelsky definovaná časová pásma."
 
-#: concrete/config/install/base/dashboard.xml:486
+#: concrete/config/install/base/dashboard.xml:495
 #: concrete/single_pages/dashboard/system/basics/editor.php:2
 msgid "Rich Text Editor"
 msgstr "WYSIWYG editor"
@@ -14826,7 +14860,7 @@ msgstr "K dispozici je několik aktualizací. Vyberte požadovanou aktualizaci z
 msgid "Current Version"
 msgstr "Aktuální verze"
 
-#: concrete/config/install/base/dashboard.xml:881
+#: concrete/config/install/base/dashboard.xml:890
 #: concrete/single_pages/dashboard/system/backup/update.php:102
 msgid "Update concrete5"
 msgstr "Aktualizace Concrete5"
@@ -14841,7 +14875,7 @@ msgid ""
 "it may help to clear your cache."
 msgstr "Pokud váš web zobrazuje zastaralé informace nebo se chová neočekávaně, může pomoci vyčistit cache."
 
-#: concrete/config/install/base/dashboard.xml:614
+#: concrete/config/install/base/dashboard.xml:623
 #: concrete/single_pages/dashboard/system/optimization/clearcache.php:8
 msgid "Clear Cache"
 msgstr "Vyčistit cache"
@@ -15266,6 +15300,52 @@ msgstr "* Pro zobrazení komplených výsledků odrolujte doprava"
 msgid "(User ID: %s)"
 msgstr "(ID uživatele: %s)"
 
+#: concrete/single_pages/dashboard/pages/feeds.php:38
+#: concrete/single_pages/dashboard/pages/feeds.php:52
+#: concrete/single_pages/dashboard/pages/feeds.php:66
+msgid "Delete Feed"
+msgstr ""
+
+#: concrete/single_pages/dashboard/pages/feeds.php:94
+msgid "Filter By Page Type"
+msgstr ""
+
+#: concrete/single_pages/dashboard/pages/feeds.php:98
+msgid "Include All Sub-Pages of Parent?"
+msgstr ""
+
+#: concrete/single_pages/dashboard/pages/feeds.php:113
+msgid "Display Page Aliases?"
+msgstr ""
+
+#: concrete/single_pages/dashboard/pages/feeds.php:128
+msgid "Display Featured Only?"
+msgstr ""
+
+#: concrete/single_pages/dashboard/pages/feeds.php:143
+msgid "Get Content From"
+msgstr ""
+
+#: concrete/single_pages/dashboard/pages/feeds.php:147
+msgid "Short Description of Page"
+msgstr ""
+
+#: concrete/single_pages/dashboard/pages/feeds.php:153
+msgid "Pull Content from Area"
+msgstr ""
+
+#: concrete/single_pages/dashboard/pages/feeds.php:158
+msgid "Select Area"
+msgstr ""
+
+#: concrete/single_pages/dashboard/pages/feeds.php:188
+msgid "Add Feed"
+msgstr ""
+
+#: concrete/single_pages/dashboard/pages/feeds.php:199
+msgid "You have not added any feeds."
+msgstr ""
+
 #: concrete/single_pages/dashboard/pages/types/output.php:12
 msgid "Edit Defaults"
 msgstr ""
@@ -15613,12 +15693,12 @@ msgstr "Editovat profil"
 msgid "Basic Information"
 msgstr "Základní informace"
 
-#: concrete/config/install/base/dashboard.xml:502
+#: concrete/config/install/base/dashboard.xml:511
 #: concrete/single_pages/account/profile/edit.php:29
 msgid "Time Zone"
 msgstr "Časové pásmo"
 
-#: concrete/config/install/base/dashboard.xml:717
+#: concrete/config/install/base/dashboard.xml:726
 #: concrete/single_pages/account/profile/edit.php:61
 msgid "Authentication Types"
 msgstr ""
@@ -16264,670 +16344,679 @@ msgstr "page attributes, custom"
 msgid "single, page, custom, application"
 msgstr "single, page, custom, application"
 
-#: concrete/config/install/base/dashboard.xml:320
-#: concrete/config/install/base/dashboard.xml:760
+#: concrete/config/install/base/dashboard.xml:321
+msgid "RSS Feeds"
+msgstr ""
+
+#. Keywords for page /dashboard/pages/feeds
+#: concrete/config/install/base/dashboard.xml:324
+msgid "atom, rss, feed, syndication"
+msgstr ""
+
+#: concrete/config/install/base/dashboard.xml:329
+#: concrete/config/install/base/dashboard.xml:769
 msgid "Conversations"
 msgstr ""
 
 #. Keywords for page /dashboard/workflow
-#: concrete/config/install/base/dashboard.xml:333
+#: concrete/config/install/base/dashboard.xml:342
 msgid "add workflow, remove workflow"
 msgstr "add workflow, remove workflow"
 
-#: concrete/config/install/base/dashboard.xml:338
+#: concrete/config/install/base/dashboard.xml:347
 msgid "Workflow List"
 msgstr "Seznam Workflow"
 
-#: concrete/config/install/base/dashboard.xml:342
+#: concrete/config/install/base/dashboard.xml:351
 msgid "Manage sitewide content and administer block types."
 msgstr "Správa obsahu webu a typů bloků"
 
-#: concrete/config/install/base/dashboard.xml:344
+#: concrete/config/install/base/dashboard.xml:353
 msgid "Share content across your site."
 msgstr "Sdílet obsah v rámci celého webu."
 
 #. Keywords for page /dashboard/blocks/stacks
-#: concrete/config/install/base/dashboard.xml:347
+#: concrete/config/install/base/dashboard.xml:356
 msgid ""
 "stacks, reusable content, scrapbook, copy, paste, paste block, copy block, "
 "site name, logo"
 msgstr "stacks, reusable content, scrapbook, copy, paste, paste block, copy block, site name, logo"
 
-#: concrete/config/install/base/dashboard.xml:357
+#: concrete/config/install/base/dashboard.xml:366
 msgid "Block & Stack Permissions"
 msgstr "Oprávnění bloků a zásobníků"
 
-#: concrete/config/install/base/dashboard.xml:357
+#: concrete/config/install/base/dashboard.xml:366
 msgid "Control who can add blocks and stacks on your site."
 msgstr "Nastavit, kdo může přidávat bloky a zásobníky na vašem webu."
 
-#: concrete/config/install/base/dashboard.xml:359
+#: concrete/config/install/base/dashboard.xml:368
 msgid "Stack List"
 msgstr "Stohovatelný Seznam"
 
 #. Keywords for page /dashboard/blocks/stacks/list
-#: concrete/config/install/base/dashboard.xml:368
+#: concrete/config/install/base/dashboard.xml:377
 msgid "edit stacks, view stacks, all stacks"
 msgstr "edit stacks, view stacks, all stacks"
 
-#: concrete/config/install/base/dashboard.xml:373
+#: concrete/config/install/base/dashboard.xml:382
 msgid "Block Types"
 msgstr "Typy bloků"
 
-#: concrete/config/install/base/dashboard.xml:373
+#: concrete/config/install/base/dashboard.xml:382
 msgid "Manage the installed block types in your site."
 msgstr "Správa nainstalovaných typů bloků na vašem webu."
 
 #. Keywords for page /dashboard/blocks/types
-#: concrete/config/install/base/dashboard.xml:376
+#: concrete/config/install/base/dashboard.xml:385
 msgid "block, refresh, custom"
 msgstr "block, refresh, custom"
 
 #. Keywords for page /dashboard/extend
-#: concrete/config/install/base/dashboard.xml:386
+#: concrete/config/install/base/dashboard.xml:395
 msgid ""
 "add-on, addon, add on, package, app, ecommerce, discussions, forums, themes,"
 " templates, blocks"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:404
+#: concrete/config/install/base/dashboard.xml:413
 msgid "Add Functionality"
 msgstr "Přidat funkce"
 
-#: concrete/config/install/base/dashboard.xml:404
+#: concrete/config/install/base/dashboard.xml:413
 msgid "Install add-ons & themes."
 msgstr "Instalace doplňků a motivů."
 
 #. Keywords for page /dashboard/extend/install
-#: concrete/config/install/base/dashboard.xml:407
+#: concrete/config/install/base/dashboard.xml:416
 msgid ""
 "add-on, addon, ecommerce, install, discussions, forums, themes, templates, "
 "blocks"
 msgstr "add-on, addon, ecommerce, install, discussions, forums, themes, templates, blocks"
 
-#: concrete/config/install/base/dashboard.xml:412
+#: concrete/config/install/base/dashboard.xml:421
 msgid "Update your installed packages."
 msgstr "Aktualizujte nainstalované balíčky."
 
 #. Keywords for page /dashboard/extend/update
-#: concrete/config/install/base/dashboard.xml:415
+#: concrete/config/install/base/dashboard.xml:424
 msgid "update, upgrade"
 msgstr "update, upgrade"
 
-#: concrete/config/install/base/dashboard.xml:420
+#: concrete/config/install/base/dashboard.xml:429
 msgid "Connect to the Community"
 msgstr "Připojit se ke komunitě"
 
-#: concrete/config/install/base/dashboard.xml:420
+#: concrete/config/install/base/dashboard.xml:429
 msgid "Connect to the concrete5 community."
 msgstr "Připojte se k Concrete5 komunitě."
 
 #. Keywords for page /dashboard/extend/connect
-#: concrete/config/install/base/dashboard.xml:423
+#: concrete/config/install/base/dashboard.xml:432
 msgid "concrete5.org, my account, marketplace"
 msgstr "concrete5.org, my account, marketplace"
 
-#: concrete/config/install/base/dashboard.xml:428
+#: concrete/config/install/base/dashboard.xml:437
 msgid "Download themes from concrete5.org."
 msgstr "Stahovat motivy z concrete5.org."
 
 #. Keywords for page /dashboard/extend/themes
-#: concrete/config/install/base/dashboard.xml:431
+#: concrete/config/install/base/dashboard.xml:440
 msgid "buy theme, new theme, marketplace, template"
 msgstr "buy theme, new theme, marketplace, template"
 
-#: concrete/config/install/base/dashboard.xml:436
+#: concrete/config/install/base/dashboard.xml:445
 msgid "Get More Add-Ons"
 msgstr "Získejte další doplňky."
 
-#: concrete/config/install/base/dashboard.xml:436
+#: concrete/config/install/base/dashboard.xml:445
 msgid "Download add-ons from concrete5.org."
 msgstr "Stáhněte si doplňky z concrete5.org."
 
 #. Keywords for page /dashboard/extend/add-ons
-#: concrete/config/install/base/dashboard.xml:439
+#: concrete/config/install/base/dashboard.xml:448
 msgid ""
 "buy addon, buy add on, buy add-on, purchase addon, purchase add on, purchase"
 " add-on, find addon, new addon, marketplace"
 msgstr "buy addon, buy add on, buy add-on, purchase addon, purchase add on, purchase add-on, find addon, new addon, marketplace"
 
-#: concrete/config/install/base/dashboard.xml:444
+#: concrete/config/install/base/dashboard.xml:453
 msgid "Secure and setup your site."
 msgstr "Zabezpečení a nastavení vašeho webu."
 
 #. Keywords for page /dashboard/system
-#: concrete/config/install/base/dashboard.xml:447
+#: concrete/config/install/base/dashboard.xml:456
 msgid "dashboard, configuration"
 msgstr "dashboard, configuration"
 
-#: concrete/config/install/base/dashboard.xml:452
+#: concrete/config/install/base/dashboard.xml:461
 msgid "Basic information about your website."
 msgstr "Základní informace o vašem webu."
 
 #. Keywords for page /dashboard/system/basics/name
-#: concrete/config/install/base/dashboard.xml:457
+#: concrete/config/install/base/dashboard.xml:466
 msgid "website name, title"
 msgstr "website name, title"
 
-#: concrete/config/install/base/dashboard.xml:462
+#: concrete/config/install/base/dashboard.xml:471
 msgid "Accessibility"
 msgstr ""
 
 #. Keywords for page /dashboard/system/basics/accessibility
-#: concrete/config/install/base/dashboard.xml:465
+#: concrete/config/install/base/dashboard.xml:474
 msgid "accessibility, easy mode"
 msgstr ""
 
 #. Keywords for page /dashboard/system/basics/social
-#: concrete/config/install/base/dashboard.xml:473
+#: concrete/config/install/base/dashboard.xml:482
 msgid "sharing, facebook, twitter"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:478
+#: concrete/config/install/base/dashboard.xml:487
 msgid "Bookmark Icons"
 msgstr "Ikony záložek"
 
-#: concrete/config/install/base/dashboard.xml:478
+#: concrete/config/install/base/dashboard.xml:487
 msgid "Bookmark icon and mobile home screen icon setup."
 msgstr "Ikona záložek a nastavení ikony mobilní domovské stránky."
 
 #. Keywords for page /dashboard/system/basics/icons
-#: concrete/config/install/base/dashboard.xml:481
+#: concrete/config/install/base/dashboard.xml:490
 msgid "logo, favicon, iphone, icon, bookmark"
 msgstr "logo, favicon, iphone, icon, bookmark"
 
 #. Keywords for page /dashboard/system/basics/editor
-#: concrete/config/install/base/dashboard.xml:489
+#: concrete/config/install/base/dashboard.xml:498
 msgid "tinymce, content block, fonts, editor, content, overlay"
 msgstr "tinymce, content block, fonts, editor, content, overlay"
 
-#: concrete/config/install/base/dashboard.xml:494
+#: concrete/config/install/base/dashboard.xml:503
 msgid "Languages"
 msgstr "Jazyky"
 
 #. Keywords for page /dashboard/system/basics/multilingual
-#: concrete/config/install/base/dashboard.xml:497
+#: concrete/config/install/base/dashboard.xml:506
 msgid "translate, translation, internationalization, multilingual"
 msgstr "translate, translation, internationalization, multilingual"
 
 #. Keywords for page /dashboard/system/basics/timezone
-#: concrete/config/install/base/dashboard.xml:505
+#: concrete/config/install/base/dashboard.xml:514
 msgid "timezone, profile, locale"
 msgstr "timezone, profile, locale"
 
-#: concrete/config/install/base/dashboard.xml:510
+#: concrete/config/install/base/dashboard.xml:519
 msgid "Interface Preferences"
 msgstr "Nastavení rozhraní"
 
 #. Keywords for page /dashboard/system/basics/images
-#: concrete/config/install/base/dashboard.xml:513
+#: concrete/config/install/base/dashboard.xml:522
 msgid "interface, quick nav, dashboard background, background image"
 msgstr "interface, quick nav, dashboard background, background image"
 
-#: concrete/config/install/base/dashboard.xml:519
+#: concrete/config/install/base/dashboard.xml:528
 msgid "SEO & Statistics"
 msgstr "SEO a Statistiky"
 
-#: concrete/config/install/base/dashboard.xml:519
+#: concrete/config/install/base/dashboard.xml:528
 msgid "Enable pretty URLs, statistics and tracking codes."
 msgstr "Povolit tzv. \"pretty URL\", statistiky a sledovací kód."
 
-#: concrete/config/install/base/dashboard.xml:521
+#: concrete/config/install/base/dashboard.xml:530
 msgid "Pretty URLs"
 msgstr "\"Pretty URL\""
 
 #. Keywords for page /dashboard/system/seo/urls
-#: concrete/config/install/base/dashboard.xml:524
+#: concrete/config/install/base/dashboard.xml:533
 msgid "vanity, pretty url, seo, pageview, view"
 msgstr "vanity, pretty url, seo, pageview, view"
 
-#: concrete/config/install/base/dashboard.xml:529
+#: concrete/config/install/base/dashboard.xml:538
 msgid "Bulk SEO Updater"
 msgstr "Dávková aktualizace SEO"
 
 #. Keywords for page /dashboard/system/seo/bulk
-#: concrete/config/install/base/dashboard.xml:532
+#: concrete/config/install/base/dashboard.xml:541
 msgid "bulk, seo, change keywords, engine, optimization, search"
 msgstr "bulk, seo, change keywords, engine, optimization, search"
 
 #. Keywords for page /dashboard/system/seo/codes
-#: concrete/config/install/base/dashboard.xml:540
+#: concrete/config/install/base/dashboard.xml:549
 msgid "traffic, statistics, google analytics, quant, pageviews, hits"
 msgstr "traffic, statistics, google analytics, quant, pageviews, hits"
 
-#: concrete/config/install/base/dashboard.xml:545
+#: concrete/config/install/base/dashboard.xml:554
 msgid "Excluded URL Word List"
 msgstr "Seznam slov vynechávaných v URL"
 
 #. Keywords for page /dashboard/system/seo/excluded
-#: concrete/config/install/base/dashboard.xml:548
+#: concrete/config/install/base/dashboard.xml:557
 msgid "pretty, slug"
 msgstr "pretty, slug"
 
 #. Keywords for page /dashboard/system/seo/statistics
-#: concrete/config/install/base/dashboard.xml:556
+#: concrete/config/install/base/dashboard.xml:565
 msgid "turn off statistics, tracking, statistics, pageviews, hits"
 msgstr "turn off statistics, tracking, statistics, pageviews, hits"
 
-#: concrete/config/install/base/dashboard.xml:561
+#: concrete/config/install/base/dashboard.xml:570
 msgid "Search Index"
 msgstr "Vyhledávací index"
 
 #. Keywords for page /dashboard/system/seo/searchindex
-#: concrete/config/install/base/dashboard.xml:564
+#: concrete/config/install/base/dashboard.xml:573
 msgid "configure search, site search, search option"
 msgstr "configure search, site search, search option"
 
-#: concrete/config/install/base/dashboard.xml:571
+#: concrete/config/install/base/dashboard.xml:580
 msgid "File Manager Permissions"
 msgstr "Oprávnění Správce souborů"
 
 #. Keywords for page /dashboard/system/files/permissions
-#: concrete/config/install/base/dashboard.xml:574
+#: concrete/config/install/base/dashboard.xml:583
 msgid "file options, file manager, upload, modify"
 msgstr "file options, file manager, upload, modify"
 
 #. Keywords for page /dashboard/system/files/filetypes
-#: concrete/config/install/base/dashboard.xml:582
+#: concrete/config/install/base/dashboard.xml:591
 msgid "security, files, media, extension, manager, upload"
 msgstr "security, files, media, extension, manager, upload"
 
 #. Keywords for page /dashboard/system/files/thumbnails
-#: concrete/config/install/base/dashboard.xml:590
+#: concrete/config/install/base/dashboard.xml:599
 msgid "images, picture, responsive, retina"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:595
+#: concrete/config/install/base/dashboard.xml:604
 msgid "File Storage Locations"
 msgstr "Úložiště souborů"
 
 #. Keywords for page /dashboard/system/files/storage
-#: concrete/config/install/base/dashboard.xml:598
+#: concrete/config/install/base/dashboard.xml:607
 msgid "security, alternate storage, hide files"
 msgstr "security, alternate storage, hide files"
 
-#: concrete/config/install/base/dashboard.xml:604
+#: concrete/config/install/base/dashboard.xml:613
 msgid "Optimization"
 msgstr "Optimalizace"
 
-#: concrete/config/install/base/dashboard.xml:604
+#: concrete/config/install/base/dashboard.xml:613
 msgid "Keep your site running well."
 msgstr "Aby váš web běžel dobře."
 
-#: concrete/config/install/base/dashboard.xml:606
+#: concrete/config/install/base/dashboard.xml:615
 msgid "Cache & Speed Settings"
 msgstr "Cache a rychlostní nastavení"
 
 #. Keywords for page /dashboard/system/optimization/cache
-#: concrete/config/install/base/dashboard.xml:609
+#: concrete/config/install/base/dashboard.xml:618
 msgid ""
 "cache option, change cache, override, turn on cache, turn off cache, no "
 "cache, page cache, caching"
 msgstr "cache option, change cache, override, turn on cache, turn off cache, no cache, page cache, caching"
 
 #. Keywords for page /dashboard/system/optimization/clearcache
-#: concrete/config/install/base/dashboard.xml:617
+#: concrete/config/install/base/dashboard.xml:626
 msgid "cache option, turn off cache, no cache, page cache, caching"
 msgstr "cache option, turn off cache, no cache, page cache, caching"
 
-#: concrete/config/install/base/dashboard.xml:622
+#: concrete/config/install/base/dashboard.xml:631
 msgid "Automated Jobs"
 msgstr "Automatické úlohy"
 
 #. Keywords for page /dashboard/system/optimization/jobs
-#: concrete/config/install/base/dashboard.xml:625
+#: concrete/config/install/base/dashboard.xml:634
 msgid ""
 "index search, reindex search, build sitemap, sitemap.xml, clear old "
 "versions, page versions, remove old"
 msgstr "index search, reindex search, build sitemap, sitemap.xml, clear old versions, page versions, remove old"
 
-#: concrete/config/install/base/dashboard.xml:632
+#: concrete/config/install/base/dashboard.xml:641
 msgid "Permissions & Access"
 msgstr "Oprávnění a přístup"
 
-#: concrete/config/install/base/dashboard.xml:632
+#: concrete/config/install/base/dashboard.xml:641
 msgid "Control who sees and edits your site."
 msgstr "Nastavit oprávnění pro zobrazení a editaci webu."
 
 #. Keywords for page /dashboard/system/permissions/site
-#: concrete/config/install/base/dashboard.xml:637
+#: concrete/config/install/base/dashboard.xml:646
 msgid "editors, hide site, offline, private, public, access"
 msgstr "editors, hide site, offline, private, public, access"
 
 #. Keywords for page /dashboard/system/permissions/tasks
-#: concrete/config/install/base/dashboard.xml:646
+#: concrete/config/install/base/dashboard.xml:655
 msgid "security, actions, administrator, admin, package, marketplace, search"
 msgstr "security, actions, administrator, admin, package, marketplace, search"
 
-#: concrete/config/install/base/dashboard.xml:654
+#: concrete/config/install/base/dashboard.xml:663
 msgid "Advanced Permissions"
 msgstr "Pokročilá oprávnění"
 
-#: concrete/config/install/base/dashboard.xml:657
+#: concrete/config/install/base/dashboard.xml:666
 msgid "IP Blacklist"
 msgstr "Seznam zakázaných IP adres"
 
 #. Keywords for page /dashboard/system/permissions/blacklist
-#: concrete/config/install/base/dashboard.xml:660
+#: concrete/config/install/base/dashboard.xml:669
 msgid "security, lock ip, lock out, block ip, address, restrict, access"
 msgstr "security, lock ip, lock out, block ip, address, restrict, access"
 
-#: concrete/config/install/base/dashboard.xml:665
+#: concrete/config/install/base/dashboard.xml:674
 msgid "Captcha Setup"
 msgstr "Nastavení pro CAPTCHA kód"
 
 #. Keywords for page /dashboard/system/permissions/captcha
-#: concrete/config/install/base/dashboard.xml:668
+#: concrete/config/install/base/dashboard.xml:677
 msgid "security, registration"
 msgstr "security, registration"
 
-#: concrete/config/install/base/dashboard.xml:673
+#: concrete/config/install/base/dashboard.xml:682
 msgid "Spam Control"
 msgstr "Kontrola spamu"
 
 #. Keywords for page /dashboard/system/permissions/antispam
-#: concrete/config/install/base/dashboard.xml:676
+#: concrete/config/install/base/dashboard.xml:685
 msgid "antispam, block spam, security"
 msgstr "antispam, block spam, security"
 
 #. Keywords for page /dashboard/system/permissions/maintenance
-#: concrete/config/install/base/dashboard.xml:684
+#: concrete/config/install/base/dashboard.xml:693
 msgid "lock site, under construction, hide, hidden"
 msgstr "lock site, under construction, hide, hidden"
 
-#: concrete/config/install/base/dashboard.xml:691
+#: concrete/config/install/base/dashboard.xml:700
 msgid "Login & Registration"
 msgstr "Přihlášení a registrace"
 
-#: concrete/config/install/base/dashboard.xml:691
+#: concrete/config/install/base/dashboard.xml:700
 msgid "Change login behaviors and setup public profiles."
 msgstr "Změna přihlašování a nastavení veřejných profilů."
 
-#: concrete/config/install/base/dashboard.xml:693
+#: concrete/config/install/base/dashboard.xml:702
 msgid "Login Destination"
 msgstr "Cíl přihlášení"
 
 #. Keywords for page /dashboard/system/registration/postlogin
-#: concrete/config/install/base/dashboard.xml:696
+#: concrete/config/install/base/dashboard.xml:705
 msgid "profile, login, redirect, specific, dashboard, administrators"
 msgstr "profile, login, redirect, specific, dashboard, administrators"
 
-#: concrete/config/install/base/dashboard.xml:701
+#: concrete/config/install/base/dashboard.xml:710
 msgid "Public Profiles"
 msgstr "Veřejné profily"
 
 #. Keywords for page /dashboard/system/registration/profiles
-#: concrete/config/install/base/dashboard.xml:704
+#: concrete/config/install/base/dashboard.xml:713
 msgid "member profile, member page, community, forums, social, avatar"
 msgstr "member profile, member page, community, forums, social, avatar"
 
 #. Keywords for page /dashboard/system/registration/open
-#: concrete/config/install/base/dashboard.xml:712
+#: concrete/config/install/base/dashboard.xml:721
 msgid "signup, new user, community, public registration, public, registration"
 msgstr ""
 
 #. Keywords for page /dashboard/system/registration/authentication
-#: concrete/config/install/base/dashboard.xml:720
+#: concrete/config/install/base/dashboard.xml:729
 msgid "auth, authentication, types, oauth, facebook, login, registration"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:726
+#: concrete/config/install/base/dashboard.xml:735
 msgid "Control how your site send and processes mail."
 msgstr "Nastavení odesílání a zpracování e-mailů."
 
 #. Keywords for page /dashboard/system/mail
-#: concrete/config/install/base/dashboard.xml:729
+#: concrete/config/install/base/dashboard.xml:738
 msgid "smtp, mail settings"
 msgstr "smtp, mail settings"
 
-#: concrete/config/install/base/dashboard.xml:734
+#: concrete/config/install/base/dashboard.xml:743
 msgid "SMTP Method"
 msgstr "SMTP"
 
 #. Keywords for page /dashboard/system/mail/method
-#: concrete/config/install/base/dashboard.xml:737
+#: concrete/config/install/base/dashboard.xml:746
 msgid "email server, mail settings, mail configuration, external, internal"
 msgstr "email server, mail settings, mail configuration, external, internal"
 
-#: concrete/config/install/base/dashboard.xml:742
+#: concrete/config/install/base/dashboard.xml:751
 msgid "Test Mail Settings"
 msgstr "Nastavení testovacího mailu"
 
 #. Keywords for page /dashboard/system/mail/method/test
-#: concrete/config/install/base/dashboard.xml:745
+#: concrete/config/install/base/dashboard.xml:754
 msgid "test smtp, test mail"
 msgstr "test smtp, test mailu"
 
-#: concrete/config/install/base/dashboard.xml:750
+#: concrete/config/install/base/dashboard.xml:759
 msgid "Email Importers"
 msgstr "Import e-mailů"
 
 #. Keywords for page /dashboard/system/mail/importers
-#: concrete/config/install/base/dashboard.xml:753
+#: concrete/config/install/base/dashboard.xml:762
 msgid ""
 "email server, mail settings, mail configuration, private message, message "
 "system, import, email, message"
 msgstr "email server, mail settings, mail configuration, private message, message system, import, email, message"
 
-#: concrete/config/install/base/dashboard.xml:760
+#: concrete/config/install/base/dashboard.xml:769
 msgid "Manage your conversations settings"
 msgstr ""
 
 #. Keywords for page /dashboard/system/conversations
-#: concrete/config/install/base/dashboard.xml:763
+#: concrete/config/install/base/dashboard.xml:772
 msgid "conversations"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:768
+#: concrete/config/install/base/dashboard.xml:777
 msgid "Conversations Editor"
 msgstr ""
 
 #. Keywords for page /dashboard/system/conversations/editor
-#: concrete/config/install/base/dashboard.xml:771
+#: concrete/config/install/base/dashboard.xml:780
 msgid "conversations editor, editor"
 msgstr ""
 
 #. Keywords for page /dashboard/system/conversations/points
-#: concrete/config/install/base/dashboard.xml:779
+#: concrete/config/install/base/dashboard.xml:788
 msgid "conversations ratings, ratings, community, community points"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:784
+#: concrete/config/install/base/dashboard.xml:793
 msgid "Banned Words"
 msgstr ""
 
 #. Keywords for page /dashboard/system/conversations/bannedwords
-#: concrete/config/install/base/dashboard.xml:787
+#: concrete/config/install/base/dashboard.xml:796
 msgid ""
 "conversations bad words, banned words, banned, bad words, bad, words, list"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:792
+#: concrete/config/install/base/dashboard.xml:801
 msgid "Conversation Permissions"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:795
+#: concrete/config/install/base/dashboard.xml:804
 msgid "Setup attributes for pages, users, files and more."
 msgstr "Nastavení atributů pro stránky, uživatele, soubory a další."
 
 #. Keywords for page /dashboard/system/attributes
-#: concrete/config/install/base/dashboard.xml:798
+#: concrete/config/install/base/dashboard.xml:807
 msgid "attribute configuration"
 msgstr "attribute configuration"
 
-#: concrete/config/install/base/dashboard.xml:803
+#: concrete/config/install/base/dashboard.xml:812
 msgid "Group attributes into sets for easier organization"
 msgstr "Sdružit atributy do sad pro snazší organizaci"
 
 #. Keywords for page /dashboard/system/attributes/sets
-#: concrete/config/install/base/dashboard.xml:806
+#: concrete/config/install/base/dashboard.xml:815
 msgid "attributes, sets"
 msgstr "attributes, sets"
 
-#: concrete/config/install/base/dashboard.xml:811
+#: concrete/config/install/base/dashboard.xml:820
 msgid "Types"
 msgstr "Typy"
 
-#: concrete/config/install/base/dashboard.xml:811
+#: concrete/config/install/base/dashboard.xml:820
 msgid "Choose which attribute types are available for different items."
 msgstr "Vyberte, které typy atributů jsou dostupné pro různé položky."
 
 #. Keywords for page /dashboard/system/attributes/types
-#: concrete/config/install/base/dashboard.xml:814
+#: concrete/config/install/base/dashboard.xml:823
 msgid "attributes, types"
 msgstr "attributes, types"
 
 #. Keywords for page /dashboard/system/attributes/topics
-#: concrete/config/install/base/dashboard.xml:822
+#: concrete/config/install/base/dashboard.xml:831
 msgid "topics, tags, taxonomy"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:830
+#: concrete/config/install/base/dashboard.xml:839
 msgid "Advanced settings for web developers."
 msgstr "Pokročilá nastavení pro webové vývojáře."
 
-#: concrete/config/install/base/dashboard.xml:838
+#: concrete/config/install/base/dashboard.xml:847
 msgid "Environment Information"
 msgstr "Informace o prostředí"
 
 #. Keywords for page /dashboard/system/environment/info
-#: concrete/config/install/base/dashboard.xml:841
+#: concrete/config/install/base/dashboard.xml:850
 msgid "overrides, system info, debug, support, help"
 msgstr "overrides, system info, debug, support, help"
 
-#: concrete/config/install/base/dashboard.xml:846
+#: concrete/config/install/base/dashboard.xml:855
 msgid "Debug Settings"
 msgstr "Nastavení ladění"
 
 #. Keywords for page /dashboard/system/environment/debug
-#: concrete/config/install/base/dashboard.xml:849
+#: concrete/config/install/base/dashboard.xml:858
 msgid "errors, exceptions, develop, support, help"
 msgstr "errors, exceptions, develop, support, help"
 
-#: concrete/config/install/base/dashboard.xml:854
+#: concrete/config/install/base/dashboard.xml:863
 msgid "Logging Settings"
 msgstr "Nastavení přihlašování"
 
 #. Keywords for page /dashboard/system/environment/logging
-#: concrete/config/install/base/dashboard.xml:857
+#: concrete/config/install/base/dashboard.xml:866
 msgid "email, logging, logs, smtp, pop, errors, mysql, log"
 msgstr "email, logging, logs, smtp, pop, errors, mysql, log"
 
-#: concrete/config/install/base/dashboard.xml:863
+#: concrete/config/install/base/dashboard.xml:872
 msgid "Proxy Server"
 msgstr "Proxy server"
 
 #. Keywords for page /dashboard/system/environment/proxy
-#: concrete/config/install/base/dashboard.xml:866
+#: concrete/config/install/base/dashboard.xml:875
 msgid "network, proxy server"
 msgstr "network, proxy server"
 
-#: concrete/config/install/base/dashboard.xml:871
+#: concrete/config/install/base/dashboard.xml:880
 msgid "Backup & Restore"
 msgstr "Záloha a Obnovení"
 
-#: concrete/config/install/base/dashboard.xml:871
+#: concrete/config/install/base/dashboard.xml:880
 msgid "Backup or restore your website."
 msgstr "Zálohovat nebo obnovit web."
 
 #. Keywords for page /dashboard/system/backup
-#: concrete/config/install/base/dashboard.xml:874
+#: concrete/config/install/base/dashboard.xml:883
 msgid "export, backup, database, sql, mysql, encryption, restore"
 msgstr "export, backup, database, sql, mysql, encryption, restore"
 
-#: concrete/config/install/base/dashboard.xml:879
+#: concrete/config/install/base/dashboard.xml:888
 msgid "Backup Database"
 msgstr "Zálohování databáze"
 
 #. Keywords for page /dashboard/system/backup/update
-#: concrete/config/install/base/dashboard.xml:884
+#: concrete/config/install/base/dashboard.xml:893
 msgid "upgrade, new version, update"
 msgstr "upgrade, new version, update"
 
-#: concrete/config/install/base/dashboard.xml:892
+#: concrete/config/install/base/dashboard.xml:901
 msgid "Dashboard Primary + Five"
 msgstr "Administrace primární + pět"
 
-#: concrete/config/install/base/dashboard.xml:893
+#: concrete/config/install/base/dashboard.xml:902
 msgid "Dashboard Header + Four Column"
 msgstr "Záhlaví Administrace + čtyři sloupce"
 
-#: concrete/config/install/base/dashboard.xml:897
+#: concrete/config/install/base/dashboard.xml:906
 msgctxt "PageTemplateName"
 msgid "Stack"
 msgstr "Zásobník"
 
-#: concrete/config/install/base/dashboard.xml:898
+#: concrete/config/install/base/dashboard.xml:907
 msgctxt "PageTemplateName"
 msgid "Dashboard Primary + Five"
 msgstr "Administrace primární + pět"
 
-#: concrete/config/install/base/dashboard.xml:899
+#: concrete/config/install/base/dashboard.xml:908
 msgctxt "PageTemplateName"
 msgid "Dashboard Header + Four Column"
 msgstr "Záhlaví Administrace + čtyři sloupce"
 
-#: concrete/config/install/base/dashboard.xml:904
+#: concrete/config/install/base/dashboard.xml:913
 msgid "Welcome to concrete5"
 msgstr "Vítejte v Concrete5"
 
-#: concrete/config/install/base/dashboard.xml:904
+#: concrete/config/install/base/dashboard.xml:913
 msgid ""
 "Learn about how to use concrete5, how to develop for concrete5, and get "
 "general help."
 msgstr "Více o používání a vývoji pro Concrete5 a další obecná nápověda."
 
-#: concrete/config/install/base/dashboard.xml:910
+#: concrete/config/install/base/dashboard.xml:919
 msgctxt "AreaName"
 msgid "Header"
 msgstr "Záhlaví"
 
-#: concrete/config/install/base/dashboard.xml:921
+#: concrete/config/install/base/dashboard.xml:930
 msgctxt "AreaName"
 msgid "Column 1"
 msgstr "Sloupec 1"
 
-#: concrete/config/install/base/dashboard.xml:935
+#: concrete/config/install/base/dashboard.xml:944
 msgctxt "AreaName"
 msgid "Column 2"
 msgstr "Sloupec 2"
 
-#: concrete/config/install/base/dashboard.xml:948
+#: concrete/config/install/base/dashboard.xml:957
 msgctxt "AreaName"
 msgid "Column 3"
 msgstr "Sloupec 3"
 
-#: concrete/config/install/base/dashboard.xml:962
+#: concrete/config/install/base/dashboard.xml:971
 msgctxt "AreaName"
 msgid "Column 4"
 msgstr "Sloupec 4"
 
-#: concrete/config/install/base/dashboard.xml:988
+#: concrete/config/install/base/dashboard.xml:997
 msgctxt "AreaName"
 msgid "Primary"
 msgstr "Primární"
 
-#: concrete/config/install/base/dashboard.xml:992
+#: concrete/config/install/base/dashboard.xml:1001
 msgctxt "AreaName"
 msgid "Secondary 1"
 msgstr "Sekundární 1"
 
-#: concrete/config/install/base/dashboard.xml:1001
+#: concrete/config/install/base/dashboard.xml:1010
 msgctxt "AreaName"
 msgid "Secondary 2"
 msgstr "Sekundární 2"
 
-#: concrete/config/install/base/dashboard.xml:1010
+#: concrete/config/install/base/dashboard.xml:1020
 msgctxt "AreaName"
 msgid "Secondary 3"
 msgstr "Sekundární 3"
 
-#: concrete/config/install/base/dashboard.xml:1013
+#: concrete/config/install/base/dashboard.xml:1023
 msgctxt "AreaName"
 msgid "Secondary 4"
 msgstr "Sekundární 4"
 
-#: concrete/config/install/base/dashboard.xml:1016
+#: concrete/config/install/base/dashboard.xml:1026
 msgctxt "AreaName"
 msgid "Secondary 5"
 msgstr "Sekundární 5"

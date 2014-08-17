@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-08-15 04:00+0000\n"
-"PO-Revision-Date: 2014-08-15 09:56+0000\n"
+"POT-Creation-Date: 2014-08-16 04:00+0000\n"
+"PO-Revision-Date: 2014-08-16 09:54+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/projects/p/concrete5/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -612,6 +612,8 @@ msgstr "删除incoming/目录中的文件。"
 #: concrete/single_pages/dashboard/extend/install.php:95
 #: concrete/single_pages/dashboard/files/add_set.php:19
 #: concrete/single_pages/dashboard/files/sets.php:100
+#: concrete/single_pages/dashboard/pages/feeds.php:51
+#: concrete/single_pages/dashboard/pages/feeds.php:164
 #: concrete/single_pages/dashboard/pages/templates/add.php:46
 #: concrete/single_pages/dashboard/pages/templates/view.php:58
 #: concrete/single_pages/dashboard/pages/themes/view.php:34
@@ -1135,6 +1137,7 @@ msgstr ""
 #: concrete/elements/collection_attribute_values.php:67
 #: concrete/elements/permission/access/list.php:6
 #: concrete/single_pages/dashboard/files/add_set.php:20
+#: concrete/single_pages/dashboard/pages/feeds.php:165
 #: concrete/single_pages/dashboard/pages/single.php:19
 #: concrete/single_pages/dashboard/pages/templates/add.php:47
 #: concrete/single_pages/dashboard/pages/types/add.php:9
@@ -1492,6 +1495,7 @@ msgstr "作者"
 #: concrete/blocks/image_slider/form_setup_html.php:201
 #: concrete/elements/collection_add.php:46
 #: concrete/single_pages/dashboard/blocks/types/view.php:8
+#: concrete/single_pages/dashboard/pages/feeds.php:84
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:208
 #: concrete/single_pages/dashboard/users/add_group.php:29
 #: concrete/single_pages/dashboard/users/groups.php:39
@@ -1785,6 +1789,7 @@ msgstr ""
 #: concrete/blocks/search/form_setup_html.php:30
 #: concrete/blocks/tags/tag_form.php:10 concrete/blocks/topic_list/form.php:44
 #: concrete/blocks/youtube/form_setup_html.php:20
+#: concrete/single_pages/dashboard/pages/feeds.php:76
 #: concrete/src/File/Search/ColumnSet/DefaultSet.php:27
 #: concrete/src/File/Version.php:464 concrete/tools/i18n_redactor_js.php:58
 #: concrete/views/dialogs/file/properties.php:96
@@ -1842,7 +1847,7 @@ msgstr ""
 msgid "Text"
 msgstr "文本"
 
-#: concrete/config/install/base/dashboard.xml:726
+#: concrete/config/install/base/dashboard.xml:735
 #: concrete/elements/users/confirm_list.php:8
 #: concrete/mail/user_register_approval_required.php:15
 #: concrete/single_pages/account/profile/edit.php:22
@@ -2395,7 +2400,7 @@ msgstr "子页面设置"
 msgid "Composer Settings"
 msgstr "编辑器设置"
 
-#: concrete/config/install/base/dashboard.xml:428
+#: concrete/config/install/base/dashboard.xml:437
 #: concrete/elements/collection_theme.php:99
 #: concrete/single_pages/dashboard/pages/themes/view.php:162
 #: concrete/tools/i18n_js.php:57
@@ -2651,7 +2656,7 @@ msgstr "永久删除"
 #: concrete/config/install/base/dashboard.xml:58
 #: concrete/config/install/base/dashboard.xml:109
 #: concrete/config/install/base/dashboard.xml:304
-#: concrete/config/install/base/dashboard.xml:795
+#: concrete/config/install/base/dashboard.xml:804
 #: concrete/elements/page_controls_footer.php:83
 #: concrete/elements/page_controls_footer.php:85
 #: concrete/elements/panels/page.php:79 concrete/single_pages/login.php:31
@@ -2815,7 +2820,7 @@ msgstr "文件信息"
 msgid "Choose New File"
 msgstr "选择“新建文件”"
 
-#: concrete/config/install/base/dashboard.xml:803
+#: concrete/config/install/base/dashboard.xml:812
 #: concrete/elements/files/search.php:35 concrete/elements/files/search.php:67
 #: concrete/tools/i18n_js.php:195
 msgid "Sets"
@@ -3689,7 +3694,7 @@ msgid "Pages"
 msgstr "页面"
 
 #: concrete/config/install/base/dashboard.xml:48
-#: concrete/config/install/base/dashboard.xml:569
+#: concrete/config/install/base/dashboard.xml:578
 #: concrete/controllers/single_page/dashboard/workflow/me.php:31
 #: concrete/elements/page_controls_footer.php:138
 #: concrete/themes/dashboard/elements/header.php:50
@@ -4360,7 +4365,7 @@ msgid ""
 "cannot be manually removed."
 msgstr "此属性设置被锁定。这意味着，它由一个包中加入并无法手动除去。"
 
-#: concrete/config/install/base/dashboard.xml:827
+#: concrete/config/install/base/dashboard.xml:836
 #: concrete/controllers/single_page/dashboard/system/attributes/topics/add.php:14
 #: concrete/single_pages/dashboard/system/attributes/topics/add.php:22
 #: concrete/single_pages/dashboard/system/attributes/topics/view.php:22
@@ -4703,6 +4708,26 @@ msgstr "用户"
 msgid "File not found"
 msgstr "找不到文件"
 
+#: concrete/controllers/single_page/dashboard/pages/feeds.php:19
+msgid "Feed Updated."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/pages/feeds.php:25
+msgid "Feed Deleted."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/pages/feeds.php:31
+msgid "Feed Added."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/pages/feeds.php:99
+msgid "Invalid feed."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/pages/feeds.php:127
+msgid "** No Filtering"
+msgstr ""
+
 #: concrete/controllers/single_page/dashboard/pages/types/output.php:35
 msgid "Invalid page template."
 msgstr ""
@@ -5022,6 +5047,9 @@ msgstr "搜索所有儿童？"
 #: concrete/controllers/search/pages.php:235
 #: concrete/elements/page_types/form/base.php:53
 #: concrete/elements/page_types/form/base.php:58
+#: concrete/single_pages/dashboard/pages/feeds.php:108
+#: concrete/single_pages/dashboard/pages/feeds.php:123
+#: concrete/single_pages/dashboard/pages/feeds.php:138
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:115
 #: concrete/single_pages/dashboard/system/mail/importers.php:5
 #: concrete/single_pages/dashboard/system/mail/importers.php:88
@@ -5046,6 +5074,9 @@ msgstr "否"
 #: concrete/controllers/search/pages.php:236
 #: concrete/elements/page_types/form/base.php:53
 #: concrete/elements/page_types/form/base.php:58
+#: concrete/single_pages/dashboard/pages/feeds.php:102
+#: concrete/single_pages/dashboard/pages/feeds.php:117
+#: concrete/single_pages/dashboard/pages/feeds.php:132
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:115
 #: concrete/single_pages/dashboard/system/mail/importers.php:5
 #: concrete/single_pages/dashboard/system/mail/importers.php:88
@@ -5232,7 +5263,7 @@ msgid "&lt; Back to Home"
 msgstr "返回首页"
 
 #: concrete/config/install/base/dashboard.xml:4
-#: concrete/config/install/base/dashboard.xml:391
+#: concrete/config/install/base/dashboard.xml:400
 #: concrete/elements/page_controls_footer.php:132
 #: concrete/elements/panels/dashboard.php:11
 #: concrete/elements/panels/dashboard.php:13
@@ -5270,7 +5301,7 @@ msgstr "报告"
 msgid "Pages & Themes"
 msgstr "网页和主题"
 
-#: concrete/config/install/base/dashboard.xml:330
+#: concrete/config/install/base/dashboard.xml:339
 #: concrete/elements/page_controls_footer.php:146
 #: concrete/elements/permission/detail.php:31
 #: concrete/elements/permission/detail.php:79
@@ -5278,19 +5309,19 @@ msgstr "网页和主题"
 msgid "Workflow"
 msgstr "流程"
 
-#: concrete/config/install/base/dashboard.xml:342
+#: concrete/config/install/base/dashboard.xml:351
 #: concrete/elements/page_controls_footer.php:148
 #: concrete/themes/dashboard/elements/header.php:55
 msgid "Stacks & Blocks"
 msgstr "堆栈和模块"
 
-#: concrete/config/install/base/dashboard.xml:383
+#: concrete/config/install/base/dashboard.xml:392
 #: concrete/elements/page_controls_footer.php:150
 #: concrete/themes/dashboard/elements/header.php:56
 msgid "Extend concrete5"
 msgstr "扩展 concrete5"
 
-#: concrete/config/install/base/dashboard.xml:444
+#: concrete/config/install/base/dashboard.xml:453
 #: concrete/elements/page_controls_footer.php:152
 #: concrete/themes/dashboard/elements/header.php:57
 msgid "System & Settings"
@@ -7445,7 +7476,7 @@ msgstr "仪表盘首页"
 msgid "Customize"
 msgstr "自定义"
 
-#: concrete/config/install/base/dashboard.xml:979
+#: concrete/config/install/base/dashboard.xml:988
 #: concrete/src/Application/Service/Dashboard.php:325
 msgid "Customize Dashboard Home"
 msgstr "自定义仪表盘主页"
@@ -7722,6 +7753,7 @@ msgid "%s: Basic Details"
 msgstr "%s：基本细节"
 
 #: concrete/elements/attribute/type_form_required.php:52
+#: concrete/single_pages/dashboard/pages/feeds.php:80
 #: concrete/single_pages/dashboard/pages/templates/add.php:20
 #: concrete/single_pages/dashboard/pages/templates/view.php:32
 #: concrete/single_pages/dashboard/system/attributes/sets.php:28
@@ -9549,7 +9581,7 @@ msgid "Save Preset"
 msgstr ""
 
 #: concrete/config/install/base/dashboard.xml:178
-#: concrete/config/install/base/dashboard.xml:553
+#: concrete/config/install/base/dashboard.xml:562
 #: concrete/views/dialogs/file/properties.php:15
 msgid "Statistics"
 msgstr "统计"
@@ -9574,7 +9606,7 @@ msgstr "仪表盘文件管理器"
 msgid "Page Added To"
 msgstr "页面添加到"
 
-#: concrete/config/install/base/dashboard.xml:587
+#: concrete/config/install/base/dashboard.xml:596
 #: concrete/views/dialogs/file/properties.php:75
 msgid "Thumbnails"
 msgstr ""
@@ -9849,7 +9881,7 @@ msgstr ""
 msgid "Clipboard"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:344
+#: concrete/config/install/base/dashboard.xml:353
 #: concrete/config/install/base/login_registration.xml:19
 #: concrete/views/panels/add.php:27
 msgid "Stacks"
@@ -9859,7 +9891,7 @@ msgstr "栈"
 msgid "Gathering Tiles"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:891
+#: concrete/config/install/base/dashboard.xml:900
 #: concrete/views/panels/add.php:70
 msgid "Stack"
 msgstr "层叠"
@@ -9972,7 +10004,7 @@ msgstr "开始安装"
 msgid "Site Information"
 msgstr "站点信息"
 
-#: concrete/config/install/base/dashboard.xml:454
+#: concrete/config/install/base/dashboard.xml:463
 #: concrete/single_pages/dashboard/system/basics/name.php:7
 #: concrete/views/frontend/install.php:144
 msgid "Site Name"
@@ -12122,6 +12154,7 @@ msgid "By Parent Page"
 msgstr ""
 
 #: concrete/blocks/date_navigation/form.php:9
+#: concrete/single_pages/dashboard/pages/feeds.php:88
 msgid "Filter by Parent Page"
 msgstr ""
 
@@ -12251,7 +12284,7 @@ msgid "Allows users to add social icons to their website"
 msgstr ""
 
 #: concrete/blocks/social_links/controller.php:31
-#: concrete/config/install/base/dashboard.xml:470
+#: concrete/config/install/base/dashboard.xml:479
 msgid "Social Links"
 msgstr ""
 
@@ -12369,7 +12402,7 @@ msgid "Topic List"
 msgstr ""
 
 #: concrete/blocks/topic_list/controller.php:39
-#: concrete/config/install/base/dashboard.xml:819
+#: concrete/config/install/base/dashboard.xml:828
 msgid "Topics"
 msgstr ""
 
@@ -12821,7 +12854,7 @@ msgstr "发送消息"
 msgid "Mailbox"
 msgstr "邮箱"
 
-#: concrete/config/install/base/dashboard.xml:321
+#: concrete/config/install/base/dashboard.xml:330
 #: concrete/config/install/base/login_registration.xml:39
 #: concrete/single_pages/account/messages/inbox.php:201
 #: concrete/single_pages/dashboard/conversations/messages.php:3
@@ -13073,7 +13106,7 @@ msgstr "浏览附加元件"
 msgid "Get more add-ons from concrete5.org."
 msgstr "获取附加组件concrete5.org。"
 
-#: concrete/config/install/base/dashboard.xml:412
+#: concrete/config/install/base/dashboard.xml:421
 #: concrete/single_pages/dashboard/extend/install.php:245
 #: concrete/single_pages/dashboard/extend/update.php:31
 msgid "Update Add-Ons"
@@ -13364,6 +13397,7 @@ msgid "Delete Stack"
 msgstr "删除堆栈"
 
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:102
+#: concrete/single_pages/dashboard/pages/feeds.php:48
 #: concrete/single_pages/dashboard/system/attributes/topics/view.php:62
 #: concrete/single_pages/dashboard/system/basics/social.php:32
 msgid "Are you sure? This action cannot be undone."
@@ -13381,7 +13415,7 @@ msgstr "没有任何栈已被添加。"
 msgid "Stack Name"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:340
+#: concrete/config/install/base/dashboard.xml:349
 #: concrete/single_pages/dashboard/workflow/me.php:3
 msgid "Waiting for Me"
 msgstr "等着我"
@@ -13430,7 +13464,7 @@ msgid "Badge Description"
 msgstr ""
 
 #: concrete/config/install/base/dashboard.xml:150
-#: concrete/config/install/base/dashboard.xml:776
+#: concrete/config/install/base/dashboard.xml:785
 #: concrete/single_pages/account/profile/public_profile.php:34
 #: concrete/single_pages/dashboard/users/add_group.php:102
 #: concrete/single_pages/dashboard/users/groups.php:73
@@ -13800,7 +13834,7 @@ msgstr "您不必访问用户的搜索。在仪表板设置页面的访问部分
 msgid "Registration Data"
 msgstr "登记数据？？"
 
-#: concrete/config/install/base/dashboard.xml:579
+#: concrete/config/install/base/dashboard.xml:588
 #: concrete/single_pages/dashboard/system/files/filetypes.php:3
 msgid "Allowed File Types"
 msgstr "允许的文件类型"
@@ -13839,7 +13873,7 @@ msgstr ""
 msgid "Delete Location"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:452
+#: concrete/config/install/base/dashboard.xml:461
 #: concrete/single_pages/dashboard/system/files/storage.php:39
 msgid "Basics"
 msgstr "基础"
@@ -13916,7 +13950,7 @@ msgstr "使用逗号分隔单词。这些词将被自动从URL块删除。为了
 msgid "Reset To Default"
 msgstr "设置为默认"
 
-#: concrete/config/install/base/dashboard.xml:537
+#: concrete/config/install/base/dashboard.xml:546
 #: concrete/single_pages/dashboard/system/seo/codes.php:8
 msgid "Tracking Codes"
 msgstr "跟踪代码"
@@ -14017,7 +14051,7 @@ msgstr "启用漂亮的URL"
 msgid "Code for your .htaccess file"
 msgstr "守则。htaccess文件"
 
-#: concrete/config/install/base/dashboard.xml:830
+#: concrete/config/install/base/dashboard.xml:839
 #: concrete/single_pages/dashboard/system/environment/info.php:2
 msgid "Environment"
 msgstr "环境"
@@ -14058,7 +14092,7 @@ msgstr "从网站的访问者隐藏错误。"
 msgid "Show errors in page."
 msgstr "在页面中显示错误。"
 
-#: concrete/config/install/base/dashboard.xml:634
+#: concrete/config/install/base/dashboard.xml:643
 #: concrete/single_pages/dashboard/system/permissions/site.php:7
 msgid "Site Access"
 msgstr "网站访问"
@@ -14116,7 +14150,7 @@ msgstr "没有安装验证码的库。"
 msgid "Save Additional Settings"
 msgstr "节省额外的设置"
 
-#: concrete/config/install/base/dashboard.xml:681
+#: concrete/config/install/base/dashboard.xml:690
 #: concrete/single_pages/dashboard/system/permissions/maintenance.php:4
 msgid "Maintenance Mode"
 msgstr "维护模式"
@@ -14174,12 +14208,12 @@ msgstr "在此框中的任何电子邮件地址时，将收到的垃圾邮件检
 msgid "You have no anti-spam libraries installed."
 msgstr "没有安装反垃圾邮件库。"
 
-#: concrete/config/install/base/dashboard.xml:643
+#: concrete/config/install/base/dashboard.xml:652
 #: concrete/single_pages/dashboard/system/permissions/tasks.php:8
 msgid "Task Permissions"
 msgstr "任务权限"
 
-#: concrete/config/install/base/dashboard.xml:651
+#: concrete/config/install/base/dashboard.xml:660
 #: concrete/single_pages/dashboard/system/permissions/users.php:8
 msgid "User Permissions"
 msgstr "用户权限"
@@ -14449,7 +14483,7 @@ msgstr ""
 msgid "Enable"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:709
+#: concrete/config/install/base/dashboard.xml:718
 #: concrete/single_pages/dashboard/system/registration/open.php:3
 msgid "Public Registration"
 msgstr "公共登记"
@@ -14590,7 +14624,7 @@ msgstr ""
 msgid "Enable user defined time zones."
 msgstr "启用用户定义的时区。"
 
-#: concrete/config/install/base/dashboard.xml:486
+#: concrete/config/install/base/dashboard.xml:495
 #: concrete/single_pages/dashboard/system/basics/editor.php:2
 msgid "Rich Text Editor"
 msgstr "高级编辑器设置"
@@ -14771,7 +14805,7 @@ msgstr "几个有可用的更新。请从下面的列表中选择所需的更新
 msgid "Current Version"
 msgstr "当前安装的版本"
 
-#: concrete/config/install/base/dashboard.xml:881
+#: concrete/config/install/base/dashboard.xml:890
 #: concrete/single_pages/dashboard/system/backup/update.php:102
 msgid "Update concrete5"
 msgstr "更新concrete5"
@@ -14786,7 +14820,7 @@ msgid ""
 "it may help to clear your cache."
 msgstr "如果您的网站显示的是过时的信息，或有错误，它可以帮助清除缓存。"
 
-#: concrete/config/install/base/dashboard.xml:614
+#: concrete/config/install/base/dashboard.xml:623
 #: concrete/single_pages/dashboard/system/optimization/clearcache.php:8
 msgid "Clear Cache"
 msgstr "清空缓存"
@@ -15211,6 +15245,52 @@ msgstr "请滚动至右边查看完整结果"
 msgid "(User ID: %s)"
 msgstr "（用户 ID: %s）"
 
+#: concrete/single_pages/dashboard/pages/feeds.php:38
+#: concrete/single_pages/dashboard/pages/feeds.php:52
+#: concrete/single_pages/dashboard/pages/feeds.php:66
+msgid "Delete Feed"
+msgstr ""
+
+#: concrete/single_pages/dashboard/pages/feeds.php:94
+msgid "Filter By Page Type"
+msgstr ""
+
+#: concrete/single_pages/dashboard/pages/feeds.php:98
+msgid "Include All Sub-Pages of Parent?"
+msgstr ""
+
+#: concrete/single_pages/dashboard/pages/feeds.php:113
+msgid "Display Page Aliases?"
+msgstr ""
+
+#: concrete/single_pages/dashboard/pages/feeds.php:128
+msgid "Display Featured Only?"
+msgstr ""
+
+#: concrete/single_pages/dashboard/pages/feeds.php:143
+msgid "Get Content From"
+msgstr ""
+
+#: concrete/single_pages/dashboard/pages/feeds.php:147
+msgid "Short Description of Page"
+msgstr ""
+
+#: concrete/single_pages/dashboard/pages/feeds.php:153
+msgid "Pull Content from Area"
+msgstr ""
+
+#: concrete/single_pages/dashboard/pages/feeds.php:158
+msgid "Select Area"
+msgstr ""
+
+#: concrete/single_pages/dashboard/pages/feeds.php:188
+msgid "Add Feed"
+msgstr ""
+
+#: concrete/single_pages/dashboard/pages/feeds.php:199
+msgid "You have not added any feeds."
+msgstr ""
+
 #: concrete/single_pages/dashboard/pages/types/output.php:12
 msgid "Edit Defaults"
 msgstr ""
@@ -15556,12 +15636,12 @@ msgstr "编辑个人资料"
 msgid "Basic Information"
 msgstr "基本信息"
 
-#: concrete/config/install/base/dashboard.xml:502
+#: concrete/config/install/base/dashboard.xml:511
 #: concrete/single_pages/account/profile/edit.php:29
 msgid "Time Zone"
 msgstr "时区"
 
-#: concrete/config/install/base/dashboard.xml:717
+#: concrete/config/install/base/dashboard.xml:726
 #: concrete/single_pages/account/profile/edit.php:61
 msgid "Authentication Types"
 msgstr ""
@@ -16207,670 +16287,679 @@ msgstr "页面属性，自定义"
 msgid "single, page, custom, application"
 msgstr "单，页面，自定义应用程序"
 
-#: concrete/config/install/base/dashboard.xml:320
-#: concrete/config/install/base/dashboard.xml:760
+#: concrete/config/install/base/dashboard.xml:321
+msgid "RSS Feeds"
+msgstr ""
+
+#. Keywords for page /dashboard/pages/feeds
+#: concrete/config/install/base/dashboard.xml:324
+msgid "atom, rss, feed, syndication"
+msgstr ""
+
+#: concrete/config/install/base/dashboard.xml:329
+#: concrete/config/install/base/dashboard.xml:769
 msgid "Conversations"
 msgstr ""
 
 #. Keywords for page /dashboard/workflow
-#: concrete/config/install/base/dashboard.xml:333
+#: concrete/config/install/base/dashboard.xml:342
 msgid "add workflow, remove workflow"
 msgstr "添加工作流，删除工作流程"
 
-#: concrete/config/install/base/dashboard.xml:338
+#: concrete/config/install/base/dashboard.xml:347
 msgid "Workflow List"
 msgstr "流程列表"
 
-#: concrete/config/install/base/dashboard.xml:342
+#: concrete/config/install/base/dashboard.xml:351
 msgid "Manage sitewide content and administer block types."
 msgstr "管理站点内容和模块类型。"
 
-#: concrete/config/install/base/dashboard.xml:344
+#: concrete/config/install/base/dashboard.xml:353
 msgid "Share content across your site."
 msgstr "在您的网站分享内容。"
 
 #. Keywords for page /dashboard/blocks/stacks
-#: concrete/config/install/base/dashboard.xml:347
+#: concrete/config/install/base/dashboard.xml:356
 msgid ""
 "stacks, reusable content, scrapbook, copy, paste, paste block, copy block, "
 "site name, logo"
 msgstr "栈，可重复使用的内容，剪贴簿，复制，粘贴，粘贴块，复制块，网站名称，标识;"
 
-#: concrete/config/install/base/dashboard.xml:357
+#: concrete/config/install/base/dashboard.xml:366
 msgid "Block & Stack Permissions"
 msgstr "模块和堆栈权限"
 
-#: concrete/config/install/base/dashboard.xml:357
+#: concrete/config/install/base/dashboard.xml:366
 msgid "Control who can add blocks and stacks on your site."
 msgstr "控制谁可以在您的网站上添加模块和堆栈。"
 
-#: concrete/config/install/base/dashboard.xml:359
+#: concrete/config/install/base/dashboard.xml:368
 msgid "Stack List"
 msgstr "堆栈列表"
 
 #. Keywords for page /dashboard/blocks/stacks/list
-#: concrete/config/install/base/dashboard.xml:368
+#: concrete/config/install/base/dashboard.xml:377
 msgid "edit stacks, view stacks, all stacks"
 msgstr "编辑栈，视图栈，栈"
 
-#: concrete/config/install/base/dashboard.xml:373
+#: concrete/config/install/base/dashboard.xml:382
 msgid "Block Types"
 msgstr "模块类型"
 
-#: concrete/config/install/base/dashboard.xml:373
+#: concrete/config/install/base/dashboard.xml:382
 msgid "Manage the installed block types in your site."
 msgstr "在您的网站管理安装的模块类型。"
 
 #. Keywords for page /dashboard/blocks/types
-#: concrete/config/install/base/dashboard.xml:376
+#: concrete/config/install/base/dashboard.xml:385
 msgid "block, refresh, custom"
 msgstr "关闭，刷新，自定义"
 
 #. Keywords for page /dashboard/extend
-#: concrete/config/install/base/dashboard.xml:386
+#: concrete/config/install/base/dashboard.xml:395
 msgid ""
 "add-on, addon, add on, package, app, ecommerce, discussions, forums, themes,"
 " templates, blocks"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:404
+#: concrete/config/install/base/dashboard.xml:413
 msgid "Add Functionality"
 msgstr "新增功能"
 
-#: concrete/config/install/base/dashboard.xml:404
+#: concrete/config/install/base/dashboard.xml:413
 msgid "Install add-ons & themes."
 msgstr "安装加载项和主题。"
 
 #. Keywords for page /dashboard/extend/install
-#: concrete/config/install/base/dashboard.xml:407
+#: concrete/config/install/base/dashboard.xml:416
 msgid ""
 "add-on, addon, ecommerce, install, discussions, forums, themes, templates, "
 "blocks"
 msgstr "加载项，插件，安装包，电子商务，讨论，论坛，主题，模板"
 
-#: concrete/config/install/base/dashboard.xml:412
+#: concrete/config/install/base/dashboard.xml:421
 msgid "Update your installed packages."
 msgstr "更新已安装的软件包。"
 
 #. Keywords for page /dashboard/extend/update
-#: concrete/config/install/base/dashboard.xml:415
+#: concrete/config/install/base/dashboard.xml:424
 msgid "update, upgrade"
 msgstr "更新，升级"
 
-#: concrete/config/install/base/dashboard.xml:420
+#: concrete/config/install/base/dashboard.xml:429
 msgid "Connect to the Community"
 msgstr "连接到社区"
 
-#: concrete/config/install/base/dashboard.xml:420
+#: concrete/config/install/base/dashboard.xml:429
 msgid "Connect to the concrete5 community."
 msgstr "连接到 concrete5 社区。"
 
 #. Keywords for page /dashboard/extend/connect
-#: concrete/config/install/base/dashboard.xml:423
+#: concrete/config/install/base/dashboard.xml:432
 msgid "concrete5.org, my account, marketplace"
 msgstr "concrete5.org，我的帐户，市场"
 
-#: concrete/config/install/base/dashboard.xml:428
+#: concrete/config/install/base/dashboard.xml:437
 msgid "Download themes from concrete5.org."
 msgstr "从concrete5.org下载主题。"
 
 #. Keywords for page /dashboard/extend/themes
-#: concrete/config/install/base/dashboard.xml:431
+#: concrete/config/install/base/dashboard.xml:440
 msgid "buy theme, new theme, marketplace, template"
 msgstr "购买主题，新的主题，市场，模板"
 
-#: concrete/config/install/base/dashboard.xml:436
+#: concrete/config/install/base/dashboard.xml:445
 msgid "Get More Add-Ons"
 msgstr "获取更多加载项"
 
-#: concrete/config/install/base/dashboard.xml:436
+#: concrete/config/install/base/dashboard.xml:445
 msgid "Download add-ons from concrete5.org."
 msgstr "从concrete5.org下载加载项。"
 
 #. Keywords for page /dashboard/extend/add-ons
-#: concrete/config/install/base/dashboard.xml:439
+#: concrete/config/install/base/dashboard.xml:448
 msgid ""
 "buy addon, buy add on, buy add-on, purchase addon, purchase add on, purchase"
 " add-on, find addon, new addon, marketplace"
 msgstr "买的插件，购买加入，购买附加，购买插件，购买，购买，寻找插件，新的插件，市场"
 
-#: concrete/config/install/base/dashboard.xml:444
+#: concrete/config/install/base/dashboard.xml:453
 msgid "Secure and setup your site."
 msgstr "保护和设置您的网站。"
 
 #. Keywords for page /dashboard/system
-#: concrete/config/install/base/dashboard.xml:447
+#: concrete/config/install/base/dashboard.xml:456
 msgid "dashboard, configuration"
 msgstr "仪表板，配置"
 
-#: concrete/config/install/base/dashboard.xml:452
+#: concrete/config/install/base/dashboard.xml:461
 msgid "Basic information about your website."
 msgstr "网站的基本信息。"
 
 #. Keywords for page /dashboard/system/basics/name
-#: concrete/config/install/base/dashboard.xml:457
+#: concrete/config/install/base/dashboard.xml:466
 msgid "website name, title"
 msgstr "网站名称，标题"
 
-#: concrete/config/install/base/dashboard.xml:462
+#: concrete/config/install/base/dashboard.xml:471
 msgid "Accessibility"
 msgstr ""
 
 #. Keywords for page /dashboard/system/basics/accessibility
-#: concrete/config/install/base/dashboard.xml:465
+#: concrete/config/install/base/dashboard.xml:474
 msgid "accessibility, easy mode"
 msgstr ""
 
 #. Keywords for page /dashboard/system/basics/social
-#: concrete/config/install/base/dashboard.xml:473
+#: concrete/config/install/base/dashboard.xml:482
 msgid "sharing, facebook, twitter"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:478
+#: concrete/config/install/base/dashboard.xml:487
 msgid "Bookmark Icons"
 msgstr "书签图标"
 
-#: concrete/config/install/base/dashboard.xml:478
+#: concrete/config/install/base/dashboard.xml:487
 msgid "Bookmark icon and mobile home screen icon setup."
 msgstr "书签图标和移动主页图标的设置。"
 
 #. Keywords for page /dashboard/system/basics/icons
-#: concrete/config/install/base/dashboard.xml:481
+#: concrete/config/install/base/dashboard.xml:490
 msgid "logo, favicon, iphone, icon, bookmark"
 msgstr "标志，图标，图标，iphone，书签"
 
 #. Keywords for page /dashboard/system/basics/editor
-#: concrete/config/install/base/dashboard.xml:489
+#: concrete/config/install/base/dashboard.xml:498
 msgid "tinymce, content block, fonts, editor, content, overlay"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:494
+#: concrete/config/install/base/dashboard.xml:503
 msgid "Languages"
 msgstr "语言"
 
 #. Keywords for page /dashboard/system/basics/multilingual
-#: concrete/config/install/base/dashboard.xml:497
+#: concrete/config/install/base/dashboard.xml:506
 msgid "translate, translation, internationalization, multilingual"
 msgstr ""
 
 #. Keywords for page /dashboard/system/basics/timezone
-#: concrete/config/install/base/dashboard.xml:505
+#: concrete/config/install/base/dashboard.xml:514
 msgid "timezone, profile, locale"
 msgstr "时区，配置文件，语言环境"
 
-#: concrete/config/install/base/dashboard.xml:510
+#: concrete/config/install/base/dashboard.xml:519
 msgid "Interface Preferences"
 msgstr "界面首选项"
 
 #. Keywords for page /dashboard/system/basics/images
-#: concrete/config/install/base/dashboard.xml:513
+#: concrete/config/install/base/dashboard.xml:522
 msgid "interface, quick nav, dashboard background, background image"
 msgstr "界面，快速导航，仪表盘背景，背景图像;"
 
-#: concrete/config/install/base/dashboard.xml:519
+#: concrete/config/install/base/dashboard.xml:528
 msgid "SEO & Statistics"
 msgstr "搜索引擎优化和统计"
 
-#: concrete/config/install/base/dashboard.xml:519
+#: concrete/config/install/base/dashboard.xml:528
 msgid "Enable pretty URLs, statistics and tracking codes."
 msgstr "启用漂亮的网址，统计和跟踪代码。"
 
-#: concrete/config/install/base/dashboard.xml:521
+#: concrete/config/install/base/dashboard.xml:530
 msgid "Pretty URLs"
 msgstr "漂亮的URL"
 
 #. Keywords for page /dashboard/system/seo/urls
-#: concrete/config/install/base/dashboard.xml:524
+#: concrete/config/install/base/dashboard.xml:533
 msgid "vanity, pretty url, seo, pageview, view"
 msgstr "虚荣，漂亮的URL，搜索引擎优化，网页浏览，浏览"
 
-#: concrete/config/install/base/dashboard.xml:529
+#: concrete/config/install/base/dashboard.xml:538
 msgid "Bulk SEO Updater"
 msgstr "系列 SEO 更新器"
 
 #. Keywords for page /dashboard/system/seo/bulk
-#: concrete/config/install/base/dashboard.xml:532
+#: concrete/config/install/base/dashboard.xml:541
 msgid "bulk, seo, change keywords, engine, optimization, search"
 msgstr "散装变化的关键词，引擎优化，搜索，搜索引擎优化，"
 
 #. Keywords for page /dashboard/system/seo/codes
-#: concrete/config/install/base/dashboard.xml:540
+#: concrete/config/install/base/dashboard.xml:549
 msgid "traffic, statistics, google analytics, quant, pageviews, hits"
 msgstr "交通，统计，谷歌分析，定量，综合浏览量，点击率"
 
-#: concrete/config/install/base/dashboard.xml:545
+#: concrete/config/install/base/dashboard.xml:554
 msgid "Excluded URL Word List"
 msgstr "排除URL词语列表"
 
 #. Keywords for page /dashboard/system/seo/excluded
-#: concrete/config/install/base/dashboard.xml:548
+#: concrete/config/install/base/dashboard.xml:557
 msgid "pretty, slug"
 msgstr ""
 
 #. Keywords for page /dashboard/system/seo/statistics
-#: concrete/config/install/base/dashboard.xml:556
+#: concrete/config/install/base/dashboard.xml:565
 msgid "turn off statistics, tracking, statistics, pageviews, hits"
 msgstr "关闭统计，跟踪，统计，综合浏览量，点击率"
 
-#: concrete/config/install/base/dashboard.xml:561
+#: concrete/config/install/base/dashboard.xml:570
 msgid "Search Index"
 msgstr "搜索索引"
 
 #. Keywords for page /dashboard/system/seo/searchindex
-#: concrete/config/install/base/dashboard.xml:564
+#: concrete/config/install/base/dashboard.xml:573
 msgid "configure search, site search, search option"
 msgstr "配置搜索，网站搜索，搜索选项"
 
-#: concrete/config/install/base/dashboard.xml:571
+#: concrete/config/install/base/dashboard.xml:580
 msgid "File Manager Permissions"
 msgstr "文件管理权限"
 
 #. Keywords for page /dashboard/system/files/permissions
-#: concrete/config/install/base/dashboard.xml:574
+#: concrete/config/install/base/dashboard.xml:583
 msgid "file options, file manager, upload, modify"
 msgstr "文件选项，文件管理器，上传，修改"
 
 #. Keywords for page /dashboard/system/files/filetypes
-#: concrete/config/install/base/dashboard.xml:582
+#: concrete/config/install/base/dashboard.xml:591
 msgid "security, files, media, extension, manager, upload"
 msgstr "安全，文件，媒体，扩展，经理，上传"
 
 #. Keywords for page /dashboard/system/files/thumbnails
-#: concrete/config/install/base/dashboard.xml:590
+#: concrete/config/install/base/dashboard.xml:599
 msgid "images, picture, responsive, retina"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:595
+#: concrete/config/install/base/dashboard.xml:604
 msgid "File Storage Locations"
 msgstr "文件存储位置"
 
 #. Keywords for page /dashboard/system/files/storage
-#: concrete/config/install/base/dashboard.xml:598
+#: concrete/config/install/base/dashboard.xml:607
 msgid "security, alternate storage, hide files"
 msgstr "备用存储，安全，隐藏文件"
 
-#: concrete/config/install/base/dashboard.xml:604
+#: concrete/config/install/base/dashboard.xml:613
 msgid "Optimization"
 msgstr "优化"
 
-#: concrete/config/install/base/dashboard.xml:604
+#: concrete/config/install/base/dashboard.xml:613
 msgid "Keep your site running well."
 msgstr "让您的网站运行良好。"
 
-#: concrete/config/install/base/dashboard.xml:606
+#: concrete/config/install/base/dashboard.xml:615
 msgid "Cache & Speed Settings"
 msgstr "缓存和速度设置"
 
 #. Keywords for page /dashboard/system/optimization/cache
-#: concrete/config/install/base/dashboard.xml:609
+#: concrete/config/install/base/dashboard.xml:618
 msgid ""
 "cache option, change cache, override, turn on cache, turn off cache, no "
 "cache, page cache, caching"
 msgstr "高速缓存选项，更改高速缓存，溢出，启用高速缓存，关闭缓存，没有缓存，页面缓存，缓存"
 
 #. Keywords for page /dashboard/system/optimization/clearcache
-#: concrete/config/install/base/dashboard.xml:617
+#: concrete/config/install/base/dashboard.xml:626
 msgid "cache option, turn off cache, no cache, page cache, caching"
 msgstr "高速缓存选项，关闭缓存，没有缓存，页面缓存，缓存"
 
-#: concrete/config/install/base/dashboard.xml:622
+#: concrete/config/install/base/dashboard.xml:631
 msgid "Automated Jobs"
 msgstr "自动作业"
 
 #. Keywords for page /dashboard/system/optimization/jobs
-#: concrete/config/install/base/dashboard.xml:625
+#: concrete/config/install/base/dashboard.xml:634
 msgid ""
 "index search, reindex search, build sitemap, sitemap.xml, clear old "
 "versions, page versions, remove old"
 msgstr "索引搜索，重新编制索引的搜索，建立网站地图sitemap.xml的，明确的旧版本，网页版本，删除旧的"
 
-#: concrete/config/install/base/dashboard.xml:632
+#: concrete/config/install/base/dashboard.xml:641
 msgid "Permissions & Access"
 msgstr "访问权限"
 
-#: concrete/config/install/base/dashboard.xml:632
+#: concrete/config/install/base/dashboard.xml:641
 msgid "Control who sees and edits your site."
 msgstr "控制谁可以看到并编辑您的网站。"
 
 #. Keywords for page /dashboard/system/permissions/site
-#: concrete/config/install/base/dashboard.xml:637
+#: concrete/config/install/base/dashboard.xml:646
 msgid "editors, hide site, offline, private, public, access"
 msgstr ""
 
 #. Keywords for page /dashboard/system/permissions/tasks
-#: concrete/config/install/base/dashboard.xml:646
+#: concrete/config/install/base/dashboard.xml:655
 msgid "security, actions, administrator, admin, package, marketplace, search"
 msgstr "安全，操作，管理员，管理，包装，市场，搜索"
 
-#: concrete/config/install/base/dashboard.xml:654
+#: concrete/config/install/base/dashboard.xml:663
 msgid "Advanced Permissions"
 msgstr "高级权限"
 
-#: concrete/config/install/base/dashboard.xml:657
+#: concrete/config/install/base/dashboard.xml:666
 msgid "IP Blacklist"
 msgstr "IP黑名单"
 
 #. Keywords for page /dashboard/system/permissions/blacklist
-#: concrete/config/install/base/dashboard.xml:660
+#: concrete/config/install/base/dashboard.xml:669
 msgid "security, lock ip, lock out, block ip, address, restrict, access"
 msgstr "安全，锁定IP，锁定，阻止IP地址，限制，请访问"
 
-#: concrete/config/install/base/dashboard.xml:665
+#: concrete/config/install/base/dashboard.xml:674
 msgid "Captcha Setup"
 msgstr "验证码设置"
 
 #. Keywords for page /dashboard/system/permissions/captcha
-#: concrete/config/install/base/dashboard.xml:668
+#: concrete/config/install/base/dashboard.xml:677
 msgid "security, registration"
 msgstr "安全，注册"
 
-#: concrete/config/install/base/dashboard.xml:673
+#: concrete/config/install/base/dashboard.xml:682
 msgid "Spam Control"
 msgstr "垃圾控制"
 
 #. Keywords for page /dashboard/system/permissions/antispam
-#: concrete/config/install/base/dashboard.xml:676
+#: concrete/config/install/base/dashboard.xml:685
 msgid "antispam, block spam, security"
 msgstr "安全，阻止垃圾邮件，反垃圾邮件"
 
 #. Keywords for page /dashboard/system/permissions/maintenance
-#: concrete/config/install/base/dashboard.xml:684
+#: concrete/config/install/base/dashboard.xml:693
 msgid "lock site, under construction, hide, hidden"
 msgstr "锁定网站，正在建设中，隐藏，隐藏"
 
-#: concrete/config/install/base/dashboard.xml:691
+#: concrete/config/install/base/dashboard.xml:700
 msgid "Login & Registration"
 msgstr "登录和注册"
 
-#: concrete/config/install/base/dashboard.xml:691
+#: concrete/config/install/base/dashboard.xml:700
 msgid "Change login behaviors and setup public profiles."
 msgstr "更改登录的行为，并设置公共配置文件。"
 
-#: concrete/config/install/base/dashboard.xml:693
+#: concrete/config/install/base/dashboard.xml:702
 msgid "Login Destination"
 msgstr "登录目的地"
 
 #. Keywords for page /dashboard/system/registration/postlogin
-#: concrete/config/install/base/dashboard.xml:696
+#: concrete/config/install/base/dashboard.xml:705
 msgid "profile, login, redirect, specific, dashboard, administrators"
 msgstr "的个人主页上，登录，重定向，具体的，仪表盘，管理员"
 
-#: concrete/config/install/base/dashboard.xml:701
+#: concrete/config/install/base/dashboard.xml:710
 msgid "Public Profiles"
 msgstr "公共配置文件"
 
 #. Keywords for page /dashboard/system/registration/profiles
-#: concrete/config/install/base/dashboard.xml:704
+#: concrete/config/install/base/dashboard.xml:713
 msgid "member profile, member page, community, forums, social, avatar"
 msgstr ""
 
 #. Keywords for page /dashboard/system/registration/open
-#: concrete/config/install/base/dashboard.xml:712
+#: concrete/config/install/base/dashboard.xml:721
 msgid "signup, new user, community, public registration, public, registration"
 msgstr ""
 
 #. Keywords for page /dashboard/system/registration/authentication
-#: concrete/config/install/base/dashboard.xml:720
+#: concrete/config/install/base/dashboard.xml:729
 msgid "auth, authentication, types, oauth, facebook, login, registration"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:726
+#: concrete/config/install/base/dashboard.xml:735
 msgid "Control how your site send and processes mail."
 msgstr "控制你的网站发送和处理邮件。"
 
 #. Keywords for page /dashboard/system/mail
-#: concrete/config/install/base/dashboard.xml:729
+#: concrete/config/install/base/dashboard.xml:738
 msgid "smtp, mail settings"
 msgstr "SMTP，邮件设置"
 
-#: concrete/config/install/base/dashboard.xml:734
+#: concrete/config/install/base/dashboard.xml:743
 msgid "SMTP Method"
 msgstr "SMTP的方法"
 
 #. Keywords for page /dashboard/system/mail/method
-#: concrete/config/install/base/dashboard.xml:737
+#: concrete/config/install/base/dashboard.xml:746
 msgid "email server, mail settings, mail configuration, external, internal"
 msgstr "邮件服务器，邮件设置，邮件配置，外部，内部"
 
-#: concrete/config/install/base/dashboard.xml:742
+#: concrete/config/install/base/dashboard.xml:751
 msgid "Test Mail Settings"
 msgstr ""
 
 #. Keywords for page /dashboard/system/mail/method/test
-#: concrete/config/install/base/dashboard.xml:745
+#: concrete/config/install/base/dashboard.xml:754
 msgid "test smtp, test mail"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:750
+#: concrete/config/install/base/dashboard.xml:759
 msgid "Email Importers"
 msgstr "电子邮件输入者"
 
 #. Keywords for page /dashboard/system/mail/importers
-#: concrete/config/install/base/dashboard.xml:753
+#: concrete/config/install/base/dashboard.xml:762
 msgid ""
 "email server, mail settings, mail configuration, private message, message "
 "system, import, email, message"
 msgstr "邮件服务器，邮件设置，邮件配置，私人消息，消息系统，进口，邮件，信息"
 
-#: concrete/config/install/base/dashboard.xml:760
+#: concrete/config/install/base/dashboard.xml:769
 msgid "Manage your conversations settings"
 msgstr ""
 
 #. Keywords for page /dashboard/system/conversations
-#: concrete/config/install/base/dashboard.xml:763
+#: concrete/config/install/base/dashboard.xml:772
 msgid "conversations"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:768
+#: concrete/config/install/base/dashboard.xml:777
 msgid "Conversations Editor"
 msgstr ""
 
 #. Keywords for page /dashboard/system/conversations/editor
-#: concrete/config/install/base/dashboard.xml:771
+#: concrete/config/install/base/dashboard.xml:780
 msgid "conversations editor, editor"
 msgstr ""
 
 #. Keywords for page /dashboard/system/conversations/points
-#: concrete/config/install/base/dashboard.xml:779
+#: concrete/config/install/base/dashboard.xml:788
 msgid "conversations ratings, ratings, community, community points"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:784
+#: concrete/config/install/base/dashboard.xml:793
 msgid "Banned Words"
 msgstr ""
 
 #. Keywords for page /dashboard/system/conversations/bannedwords
-#: concrete/config/install/base/dashboard.xml:787
+#: concrete/config/install/base/dashboard.xml:796
 msgid ""
 "conversations bad words, banned words, banned, bad words, bad, words, list"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:792
+#: concrete/config/install/base/dashboard.xml:801
 msgid "Conversation Permissions"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:795
+#: concrete/config/install/base/dashboard.xml:804
 msgid "Setup attributes for pages, users, files and more."
 msgstr "设置页面，用户，文件和更多的属性。"
 
 #. Keywords for page /dashboard/system/attributes
-#: concrete/config/install/base/dashboard.xml:798
+#: concrete/config/install/base/dashboard.xml:807
 msgid "attribute configuration"
 msgstr "属性配置"
 
-#: concrete/config/install/base/dashboard.xml:803
+#: concrete/config/install/base/dashboard.xml:812
 msgid "Group attributes into sets for easier organization"
 msgstr "组属性可更便捷的组织"
 
 #. Keywords for page /dashboard/system/attributes/sets
-#: concrete/config/install/base/dashboard.xml:806
+#: concrete/config/install/base/dashboard.xml:815
 msgid "attributes, sets"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:811
+#: concrete/config/install/base/dashboard.xml:820
 msgid "Types"
 msgstr "类型"
 
-#: concrete/config/install/base/dashboard.xml:811
+#: concrete/config/install/base/dashboard.xml:820
 msgid "Choose which attribute types are available for different items."
 msgstr "选择的属性类型可用于不同的项目。"
 
 #. Keywords for page /dashboard/system/attributes/types
-#: concrete/config/install/base/dashboard.xml:814
+#: concrete/config/install/base/dashboard.xml:823
 msgid "attributes, types"
 msgstr "属性，类别"
 
 #. Keywords for page /dashboard/system/attributes/topics
-#: concrete/config/install/base/dashboard.xml:822
+#: concrete/config/install/base/dashboard.xml:831
 msgid "topics, tags, taxonomy"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:830
+#: concrete/config/install/base/dashboard.xml:839
 msgid "Advanced settings for web developers."
 msgstr "Web开发人员的高级设置。"
 
-#: concrete/config/install/base/dashboard.xml:838
+#: concrete/config/install/base/dashboard.xml:847
 msgid "Environment Information"
 msgstr "环境信息"
 
 #. Keywords for page /dashboard/system/environment/info
-#: concrete/config/install/base/dashboard.xml:841
+#: concrete/config/install/base/dashboard.xml:850
 msgid "overrides, system info, debug, support, help"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:846
+#: concrete/config/install/base/dashboard.xml:855
 msgid "Debug Settings"
 msgstr "调试设置"
 
 #. Keywords for page /dashboard/system/environment/debug
-#: concrete/config/install/base/dashboard.xml:849
+#: concrete/config/install/base/dashboard.xml:858
 msgid "errors, exceptions, develop, support, help"
 msgstr "错误，异常，开发，技术支持，帮助"
 
-#: concrete/config/install/base/dashboard.xml:854
+#: concrete/config/install/base/dashboard.xml:863
 msgid "Logging Settings"
 msgstr "记录设置"
 
 #. Keywords for page /dashboard/system/environment/logging
-#: concrete/config/install/base/dashboard.xml:857
+#: concrete/config/install/base/dashboard.xml:866
 msgid "email, logging, logs, smtp, pop, errors, mysql, log"
 msgstr ""
 
-#: concrete/config/install/base/dashboard.xml:863
+#: concrete/config/install/base/dashboard.xml:872
 msgid "Proxy Server"
 msgstr "代理服务器"
 
 #. Keywords for page /dashboard/system/environment/proxy
-#: concrete/config/install/base/dashboard.xml:866
+#: concrete/config/install/base/dashboard.xml:875
 msgid "network, proxy server"
 msgstr "网络，代理服务器"
 
-#: concrete/config/install/base/dashboard.xml:871
+#: concrete/config/install/base/dashboard.xml:880
 msgid "Backup & Restore"
 msgstr "备份和恢复"
 
-#: concrete/config/install/base/dashboard.xml:871
+#: concrete/config/install/base/dashboard.xml:880
 msgid "Backup or restore your website."
 msgstr "备份或还原您的网站。"
 
 #. Keywords for page /dashboard/system/backup
-#: concrete/config/install/base/dashboard.xml:874
+#: concrete/config/install/base/dashboard.xml:883
 msgid "export, backup, database, sql, mysql, encryption, restore"
 msgstr "导出，备份，数据库，SQL，MySQL的，加密，恢复;"
 
-#: concrete/config/install/base/dashboard.xml:879
+#: concrete/config/install/base/dashboard.xml:888
 msgid "Backup Database"
 msgstr "备份数据库"
 
 #. Keywords for page /dashboard/system/backup/update
-#: concrete/config/install/base/dashboard.xml:884
+#: concrete/config/install/base/dashboard.xml:893
 msgid "upgrade, new version, update"
 msgstr "升级，新版本，更新"
 
-#: concrete/config/install/base/dashboard.xml:892
+#: concrete/config/install/base/dashboard.xml:901
 msgid "Dashboard Primary + Five"
 msgstr "仪表盘 主+五次"
 
-#: concrete/config/install/base/dashboard.xml:893
+#: concrete/config/install/base/dashboard.xml:902
 msgid "Dashboard Header + Four Column"
 msgstr "仪表盘 头+四列"
 
-#: concrete/config/install/base/dashboard.xml:897
+#: concrete/config/install/base/dashboard.xml:906
 msgctxt "PageTemplateName"
 msgid "Stack"
 msgstr "层叠"
 
-#: concrete/config/install/base/dashboard.xml:898
+#: concrete/config/install/base/dashboard.xml:907
 msgctxt "PageTemplateName"
 msgid "Dashboard Primary + Five"
 msgstr "仪表盘 主+五次"
 
-#: concrete/config/install/base/dashboard.xml:899
+#: concrete/config/install/base/dashboard.xml:908
 msgctxt "PageTemplateName"
 msgid "Dashboard Header + Four Column"
 msgstr "仪表盘 头+四列"
 
-#: concrete/config/install/base/dashboard.xml:904
+#: concrete/config/install/base/dashboard.xml:913
 msgid "Welcome to concrete5"
 msgstr "欢迎来到concrete5"
 
-#: concrete/config/install/base/dashboard.xml:904
+#: concrete/config/install/base/dashboard.xml:913
 msgid ""
 "Learn about how to use concrete5, how to develop for concrete5, and get "
 "general help."
 msgstr "了解如何使用concrete5，如何为concrete5 开发，并获得一般帮助。"
 
-#: concrete/config/install/base/dashboard.xml:910
+#: concrete/config/install/base/dashboard.xml:919
 msgctxt "AreaName"
 msgid "Header"
 msgstr "标题"
 
-#: concrete/config/install/base/dashboard.xml:921
+#: concrete/config/install/base/dashboard.xml:930
 msgctxt "AreaName"
 msgid "Column 1"
 msgstr "列 1"
 
-#: concrete/config/install/base/dashboard.xml:935
+#: concrete/config/install/base/dashboard.xml:944
 msgctxt "AreaName"
 msgid "Column 2"
 msgstr "列 2"
 
-#: concrete/config/install/base/dashboard.xml:948
+#: concrete/config/install/base/dashboard.xml:957
 msgctxt "AreaName"
 msgid "Column 3"
 msgstr "列 3"
 
-#: concrete/config/install/base/dashboard.xml:962
+#: concrete/config/install/base/dashboard.xml:971
 msgctxt "AreaName"
 msgid "Column 4"
 msgstr "列 4"
 
-#: concrete/config/install/base/dashboard.xml:988
+#: concrete/config/install/base/dashboard.xml:997
 msgctxt "AreaName"
 msgid "Primary"
 msgstr "主要"
 
-#: concrete/config/install/base/dashboard.xml:992
+#: concrete/config/install/base/dashboard.xml:1001
 msgctxt "AreaName"
 msgid "Secondary 1"
 msgstr "次要 1"
 
-#: concrete/config/install/base/dashboard.xml:1001
+#: concrete/config/install/base/dashboard.xml:1010
 msgctxt "AreaName"
 msgid "Secondary 2"
 msgstr "次要 2"
 
-#: concrete/config/install/base/dashboard.xml:1010
+#: concrete/config/install/base/dashboard.xml:1020
 msgctxt "AreaName"
 msgid "Secondary 3"
 msgstr "次要 3"
 
-#: concrete/config/install/base/dashboard.xml:1013
+#: concrete/config/install/base/dashboard.xml:1023
 msgctxt "AreaName"
 msgid "Secondary 4"
 msgstr "次要 4"
 
-#: concrete/config/install/base/dashboard.xml:1016
+#: concrete/config/install/base/dashboard.xml:1026
 msgctxt "AreaName"
 msgid "Secondary 5"
 msgstr "次要 5"
