@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-08-17 17:11+0000\n"
-"PO-Revision-Date: 2014-08-17 20:41+0000\n"
+"POT-Creation-Date: 2014-08-19 04:00+0000\n"
+"PO-Revision-Date: 2014-08-19 11:41+0000\n"
 "Last-Translator: Fredrik Lindau <fredrik@fxlindau.se>\n"
 "Language-Team: Swedish (Sweden) (http://www.transifex.com/projects/p/concrete5/language/sv_SE/)\n"
 "MIME-Version: 1.0\n"
@@ -164,7 +164,7 @@ msgstr "Nyckeln är inte längre giltig. Var vänlig och gå till sidan för gl�
 #: concrete/controllers/install.php:286
 #: concrete/controllers/single_page/account/profile/edit.php:94
 #: concrete/controllers/single_page/dashboard/users/search.php:336
-#: concrete/controllers/single_page/register.php:111
+#: concrete/controllers/single_page/register.php:108
 msgid "The two passwords provided do not match."
 msgstr "Lösenorden stämmer inte överens."
 
@@ -546,7 +546,7 @@ msgstr "Lägg till från extern URL"
 #: concrete/controllers/backend/file.php:114
 #: concrete/tools/files/import.php:10
 #: concrete/tools/files/importers/incoming.php:8
-#: concrete/tools/files/importers/remote.php:10
+#: concrete/tools/files/importers/remote.php:11
 #: concrete/tools/files/importers/single.php:12
 msgid "Unable to add files."
 msgstr "Kunde inte lägga till filer."
@@ -643,6 +643,7 @@ msgstr "Ta bort filer från katalogen incoming/"
 #: concrete/src/StyleCustomizer/Style/ColorStyle.php:41
 #: concrete/src/Workflow/Progress/Action/CancelAction.php:7
 #: concrete/tools/area/layout_presets.php:110
+#: concrete/tools/conversations/edit_message.php:37
 #: concrete/tools/dashboard/sitemap_drag_request.php:169
 #: concrete/tools/dashboard/sitemap_drag_request.php:226
 #: concrete/tools/dashboard/sitemap_drag_request.php:228
@@ -793,12 +794,12 @@ msgstr "Annan"
 msgid "Files in no sets."
 msgstr "Filer utan filgrupp."
 
-#: concrete/tools/files/importers/remote.php:108
+#: concrete/tools/files/importers/remote.php:113
 #: concrete/tools/files/importers/single.php:34
 msgid "File uploaded successfully."
 msgstr "Fil uppladdad."
 
-#: concrete/tools/files/importers/remote.php:110
+#: concrete/tools/files/importers/remote.php:115
 #: concrete/tools/files/importers/single.php:36
 msgid "File replaced successfully."
 msgstr "Fil ersatt."
@@ -818,32 +819,27 @@ msgid_plural "%s files imported successfully"
 msgstr[0] "%s fil importerad"
 msgstr[1] "%s filer importerade"
 
-#: concrete/tools/files/importers/remote.php:32
+#: concrete/tools/files/importers/remote.php:33
 msgid "Remote URL import requires the iconv extension enabled on your server."
 msgstr "Import av URL från en annan server kräver att tillägget iconv är aktiverat på din server."
 
-#: concrete/tools/files/importers/remote.php:50
-#, php-format
-msgid "%s is not a valid URL."
-msgstr "%s är ingen giltig URL."
-
-#: concrete/tools/files/importers/remote.php:59
+#: concrete/tools/files/importers/remote.php:61
 msgid "You must specify at least one valid URL."
 msgstr "Du måste fylla i minst en giltig URL."
 
-#: concrete/tools/files/importers/remote.php:86
+#: concrete/tools/files/importers/remote.php:91
 #, php-format
 msgid "Unknown mime-type: %s"
 msgstr "Okänd mime-typ: %s"
 
 #. %s is an URL
-#: concrete/tools/files/importers/remote.php:134
+#: concrete/tools/files/importers/remote.php:139
 #, php-format
 msgid "Could not determine the name of the file at %s"
 msgstr "Kunde inte avgöra filnamnet på filen som ligger här %s"
 
 #. %s is an URL
-#: concrete/tools/files/importers/remote.php:138
+#: concrete/tools/files/importers/remote.php:143
 #, php-format
 msgid "There was an error downloading %s"
 msgstr "Ett fel uppstod vid nerladdning från %s"
@@ -1543,23 +1539,33 @@ msgid "Attach Files"
 msgstr "Bifoga filer"
 
 #: concrete/tools/conversations/add_message.php:52
-#: concrete/tools/conversations/update_message.php:11
+#: concrete/tools/conversations/update_message.php:14
 msgid "Invalid conversation post token."
 msgstr "Ogiltig symbol för konversationsinlägg."
 
 #: concrete/blocks/core_conversation_message/controller.php:43
 #: concrete/tools/conversations/add_message.php:55
-#: concrete/tools/conversations/update_message.php:14
+#: concrete/tools/conversations/update_message.php:17
 msgid "Your message cannot be empty."
 msgstr "Ditt meddelande kan inte vara tomt."
 
-#: concrete/tools/conversations/update_message.php:21
+#: concrete/tools/conversations/update_message.php:24
 msgid "Invalid message object."
 msgstr "Ogiltigt objekt för meddelande."
 
-#: concrete/tools/conversations/update_message.php:25
+#: concrete/tools/conversations/update_message.php:28
 msgid "You do not have access to edit this message."
 msgstr "Du har inte behörighet att redigera detta meddelande."
+
+#: concrete/tools/conversations/add_message.php:40
+#: concrete/tools/conversations/update_message.php:38
+msgid "You do not have permission to add attachments."
+msgstr "Du saknar behörighet att lägg till bilagor."
+
+#: concrete/tools/conversations/add_message.php:44
+#: concrete/tools/conversations/update_message.php:42
+msgid "You have too many attachments."
+msgstr "Du har för många bilagor."
 
 #: concrete/tools/conversations/add_file.php:15
 msgid "Bad token"
@@ -1605,14 +1611,6 @@ msgstr "Du har inte behörighet att lägga till ett meddelande i denna konversat
 #: concrete/tools/conversations/add_message.php:34
 msgid "Invalid Page."
 msgstr "Ogiltig sida."
-
-#: concrete/tools/conversations/add_message.php:40
-msgid "You do not have permission to add attachments."
-msgstr "Du saknar behörighet att lägg till bilagor."
-
-#: concrete/tools/conversations/add_message.php:44
-msgid "You have too many attachments."
-msgstr "Du har för många bilagor."
 
 #: concrete/tools/conversations/add_message.php:61
 msgid "Invalid parent message."
@@ -3883,15 +3881,15 @@ msgstr "Avatar sparad."
 
 #: concrete/controllers/single_page/dashboard/users/search.php:109
 #: concrete/controllers/single_page/dashboard/users/search.php:112
-#: concrete/controllers/single_page/register.php:166
-#: concrete/controllers/single_page/register.php:170
+#: concrete/controllers/single_page/register.php:163
+#: concrete/controllers/single_page/register.php:167
 msgid "Website Registration Notification"
 msgstr "Meddelande om webbplatsregistrering"
 
 #: concrete/controllers/single_page/account/profile/edit.php:73
 #: concrete/controllers/single_page/dashboard/users/add.php:51
 #: concrete/controllers/single_page/dashboard/users/search.php:163
-#: concrete/controllers/single_page/register.php:63
+#: concrete/controllers/single_page/register.php:60
 msgid "Invalid email address provided."
 msgstr "Ogiltig e-postadress ifylld."
 
@@ -3916,14 +3914,14 @@ msgstr "Språk sparat."
 
 #: concrete/controllers/single_page/dashboard/users/add.php:57
 #: concrete/controllers/single_page/dashboard/users/search.php:233
-#: concrete/controllers/single_page/register.php:71
+#: concrete/controllers/single_page/register.php:68
 #, php-format
 msgid "A username must be at least %s characters long."
 msgstr "Ett användarnamn måste vara minst %s tecken långt."
 
 #: concrete/controllers/single_page/dashboard/users/add.php:61
 #: concrete/controllers/single_page/dashboard/users/search.php:237
-#: concrete/controllers/single_page/register.php:75
+#: concrete/controllers/single_page/register.php:72
 #, php-format
 msgid "A username cannot be more than %s characters long."
 msgstr "Ett användarnamn kan inte vara längre än %s tecken."
@@ -4023,14 +4021,14 @@ msgid "User Attribute Updated."
 msgstr "Egenskapen för användaren är uppdaterat."
 
 #: concrete/controllers/single_page/dashboard/users/add.php:77
-#: concrete/controllers/single_page/register.php:94
+#: concrete/controllers/single_page/register.php:91
 msgid "Invalid Username"
 msgstr "Ogiltigt användarnamn"
 
 #: concrete/controllers/single_page/account/profile/edit.php:107
 #: concrete/controllers/single_page/dashboard/users/add.php:99
 #: concrete/controllers/single_page/login.php:326
-#: concrete/controllers/single_page/register.php:121
+#: concrete/controllers/single_page/register.php:118
 #: concrete/src/Page/Type/Composer/Control/CollectionAttributeControl.php:122
 #, php-format
 msgid "The field \"%s\" is required"
@@ -4332,6 +4330,10 @@ msgstr "Den aktiva editorn har blivit uppdaterad."
 msgid "Invalid editor handle."
 msgstr "Ogiltigt handtag för editor."
 
+#: concrete/controllers/single_page/dashboard/system/conversations/bannedwords.php:29
+msgid "Updated Banned Words."
+msgstr "Förbjudna ord uppdaterade."
+
 #: concrete/controllers/single_page/dashboard/system/attributes/sets.php:48
 msgid "Attribute set added."
 msgstr "Egenskapsgrupp tillagd."
@@ -4544,6 +4546,10 @@ msgstr "Länk borttagen."
 #: concrete/controllers/single_page/dashboard/system/basics/social.php:33
 msgid "Social Link Added."
 msgstr "Social länk tillagd."
+
+#: concrete/controllers/single_page/dashboard/system/basics/social.php:50
+msgid "You must specify a valid URL."
+msgstr "Du måste ange en giltig URL."
 
 #: concrete/controllers/single_page/dashboard/system/basics/social.php:53
 msgid "You must choose a service."
@@ -4949,51 +4955,51 @@ msgstr "Från: %s\nSkickat den: %s\nÄmne: %s"
 msgid "You haven't written a message!"
 msgstr "Du har inte skrivit något meddelande!"
 
-#: concrete/controllers/single_page/register.php:58
+#: concrete/controllers/single_page/register.php:55
 msgid ""
 "Incorrect image validation code. Please check the image and re-enter the "
 "letters or numbers as necessary."
 msgstr "Felaktig bekräftelsekod. Var vänlig och titta på bilden igen och fyll i bokstäverna eller siffrorna som visas."
 
-#: concrete/controllers/single_page/register.php:65
+#: concrete/controllers/single_page/register.php:62
 #, php-format
 msgid "The email address %s is already in use. Please choose another."
 msgstr "E-postadressen %s används redan. Var vänlig och välj en annan."
 
-#: concrete/controllers/single_page/register.php:81
+#: concrete/controllers/single_page/register.php:78
 msgid "A username may only contain letters, numbers and spaces."
 msgstr "Ett användarnamn får bara innehålla bokstäver, siffror samt mellanslag. "
 
-#: concrete/controllers/single_page/register.php:83
+#: concrete/controllers/single_page/register.php:80
 msgid "A username may only contain letters or numbers."
 msgstr "Ett användarnamn får bara innehålla bokstäver och siffror."
 
-#: concrete/controllers/single_page/register.php:88
+#: concrete/controllers/single_page/register.php:85
 #, php-format
 msgid "The username %s already exists. Please choose another"
 msgstr "Användarnamnet %s finns redan. Var vänlig och välj ett annat."
 
-#: concrete/controllers/single_page/register.php:202
+#: concrete/controllers/single_page/register.php:199
 msgid "Validate Email Address"
 msgstr "Bekräfta e-postadress"
 
-#: concrete/controllers/single_page/register.php:282
+#: concrete/controllers/single_page/register.php:279
 msgid "Your account has been created, and you are now logged in."
 msgstr "Ditt konto har skapats, och du är nu inloggad."
 
-#: concrete/controllers/single_page/register.php:287
+#: concrete/controllers/single_page/register.php:284
 msgid ""
 "You are registered but you need to validate your email address. Some or all "
 "functionality on this site will be limited until you do so."
 msgstr "Du har registrerats men du måste bekräfta din e-postadress. En del av eller alla funktionerna på denna webbplats kommer att vara begränsade tills du gör det."
 
-#: concrete/controllers/single_page/register.php:288
+#: concrete/controllers/single_page/register.php:285
 msgid ""
 "An email has been sent to your email address. Click on the URL contained in "
 "the email to validate your email address."
 msgstr "Ett e-postmeddelande har sänts till din e-postadress. Klicka på länken i brevet för att bekräfta din e-postadress."
 
-#: concrete/controllers/single_page/register.php:293
+#: concrete/controllers/single_page/register.php:290
 msgid ""
 "You are registered but a site administrator must review your account, you "
 "will not be able to login until your account has been approved."
@@ -8807,7 +8813,6 @@ msgctxt "Authored"
 msgid "by %s"
 msgstr "av %s"
 
-#: concrete/blocks/rss_displayer/templates/read_more.php:36
 #: concrete/elements/gathering/templates/tile/featured/view.php:11
 #: concrete/elements/gathering/templates/tile/masthead_byline_description/view.php:14
 msgid "Read More"
@@ -11688,13 +11693,8 @@ msgstr "Var vänlig och ange en giltig adress till ett flöde."
 msgid "Please enter the number of items to display."
 msgstr "Var vänlig och ange antalet inlägg att visa."
 
-#: concrete/blocks/rss_displayer/controller.php:55
-msgid "Oops, it looks like you've entered an invalid feed address!"
-msgstr "Hoppsan! Det verkar som om du har skrivit in en ogiltig adress till flödet."
-
 #: concrete/blocks/rss_displayer/form_setup_html.php:4
-#: concrete/blocks/rss_displayer/templates/read_more.php:14
-#: concrete/blocks/rss_displayer/view.php:14
+#: concrete/blocks/rss_displayer/view.php:16
 msgid "F jS"
 msgstr "F j"
 
@@ -11805,6 +11805,10 @@ msgstr "bäst"
 #: concrete/blocks/flash_content/edit.php:34
 msgid "Minimum Version"
 msgstr "Minsta version"
+
+#: concrete/blocks/testimonial/form.php:14
+msgid "Picture"
+msgstr "Bild"
 
 #: concrete/blocks/testimonial/form.php:32
 msgid "Company"
@@ -12692,11 +12696,11 @@ msgstr "Valda länder"
 msgid "Default Country"
 msgstr "Förvalt land"
 
-#: concrete/attributes/address/controller.php:156
+#: concrete/attributes/address/controller.php:193
 msgid "You must specify at least one country."
 msgstr "Du måste ange minst ett land."
 
-#: concrete/attributes/address/controller.php:158
+#: concrete/attributes/address/controller.php:200
 msgid "The default country must be in the list of custom countries."
 msgstr "Det förvalda landet måste finnas med i den anpassade listan över länder."
 
@@ -18921,11 +18925,6 @@ msgstr "Rubrik"
 msgctxt "TemplateFileName"
 msgid "Thumbnail"
 msgstr "Miniatyrbild"
-
-#: concrete/blocks/rss_displayer/templates/read_more.php
-msgctxt "TemplateFileName"
-msgid "Read More"
-msgstr "Läs mer"
 
 #: concrete/blocks/search/templates/tag_cloud
 msgctxt "TemplateFileName"

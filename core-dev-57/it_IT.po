@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-08-18 04:00+0000\n"
-"PO-Revision-Date: 2014-08-18 13:11+0000\n"
+"POT-Creation-Date: 2014-08-19 04:00+0000\n"
+"PO-Revision-Date: 2014-08-19 10:41+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Italian (Italy) (http://www.transifex.com/projects/p/concrete5/language/it_IT/)\n"
 "MIME-Version: 1.0\n"
@@ -162,7 +162,7 @@ msgstr "Chiave scaduta. È necessario consultare nuovamente la pagina password d
 #: concrete/controllers/install.php:286
 #: concrete/controllers/single_page/account/profile/edit.php:94
 #: concrete/controllers/single_page/dashboard/users/search.php:336
-#: concrete/controllers/single_page/register.php:111
+#: concrete/controllers/single_page/register.php:108
 msgid "The two passwords provided do not match."
 msgstr "Le due password inserite non coincidono."
 
@@ -544,7 +544,7 @@ msgstr "Aggiungi da URL remoto"
 #: concrete/controllers/backend/file.php:114
 #: concrete/tools/files/import.php:10
 #: concrete/tools/files/importers/incoming.php:8
-#: concrete/tools/files/importers/remote.php:10
+#: concrete/tools/files/importers/remote.php:11
 #: concrete/tools/files/importers/single.php:12
 msgid "Unable to add files."
 msgstr "Impossibile aggiungere file."
@@ -641,6 +641,7 @@ msgstr "Rimuovi i file dalla cartella incoming/."
 #: concrete/src/StyleCustomizer/Style/ColorStyle.php:41
 #: concrete/src/Workflow/Progress/Action/CancelAction.php:7
 #: concrete/tools/area/layout_presets.php:110
+#: concrete/tools/conversations/edit_message.php:37
 #: concrete/tools/dashboard/sitemap_drag_request.php:169
 #: concrete/tools/dashboard/sitemap_drag_request.php:226
 #: concrete/tools/dashboard/sitemap_drag_request.php:228
@@ -791,12 +792,12 @@ msgstr "Altro"
 msgid "Files in no sets."
 msgstr "File in nessun set."
 
-#: concrete/tools/files/importers/remote.php:108
+#: concrete/tools/files/importers/remote.php:113
 #: concrete/tools/files/importers/single.php:34
 msgid "File uploaded successfully."
 msgstr "Il file è stato caricato correttamente."
 
-#: concrete/tools/files/importers/remote.php:110
+#: concrete/tools/files/importers/remote.php:115
 #: concrete/tools/files/importers/single.php:36
 msgid "File replaced successfully."
 msgstr "Il file è stato sostituito."
@@ -816,32 +817,27 @@ msgid_plural "%s files imported successfully"
 msgstr[0] "%s file è stato importato con successo."
 msgstr[1] "%s file sono stati importati con successo"
 
-#: concrete/tools/files/importers/remote.php:32
+#: concrete/tools/files/importers/remote.php:33
 msgid "Remote URL import requires the iconv extension enabled on your server."
 msgstr "L’importazione da URL remoti richiede che sul server sia abilitata l’estensione iconv."
 
-#: concrete/tools/files/importers/remote.php:50
-#, php-format
-msgid "%s is not a valid URL."
-msgstr "%s non è un URL valido."
-
-#: concrete/tools/files/importers/remote.php:59
+#: concrete/tools/files/importers/remote.php:61
 msgid "You must specify at least one valid URL."
 msgstr "Specificare almeno un URL valido."
 
-#: concrete/tools/files/importers/remote.php:86
+#: concrete/tools/files/importers/remote.php:91
 #, php-format
 msgid "Unknown mime-type: %s"
 msgstr "Tipo mime sconosciuto: %s"
 
 #. %s is an URL
-#: concrete/tools/files/importers/remote.php:134
+#: concrete/tools/files/importers/remote.php:139
 #, php-format
 msgid "Could not determine the name of the file at %s"
 msgstr "Non è stato possibile determinare il nome del file all’indirizzo %s"
 
 #. %s is an URL
-#: concrete/tools/files/importers/remote.php:138
+#: concrete/tools/files/importers/remote.php:143
 #, php-format
 msgid "There was an error downloading %s"
 msgstr "Si è verificato un errore durante lo scaricamento di %s"
@@ -1541,23 +1537,33 @@ msgid "Attach Files"
 msgstr "Allega file"
 
 #: concrete/tools/conversations/add_message.php:52
-#: concrete/tools/conversations/update_message.php:11
+#: concrete/tools/conversations/update_message.php:14
 msgid "Invalid conversation post token."
 msgstr "Token del post della conversazione non valido."
 
 #: concrete/blocks/core_conversation_message/controller.php:43
 #: concrete/tools/conversations/add_message.php:55
-#: concrete/tools/conversations/update_message.php:14
+#: concrete/tools/conversations/update_message.php:17
 msgid "Your message cannot be empty."
 msgstr "Il messaggio non può essere vuoto."
 
-#: concrete/tools/conversations/update_message.php:21
+#: concrete/tools/conversations/update_message.php:24
 msgid "Invalid message object."
 msgstr "Oggetto messaggio non valido."
 
-#: concrete/tools/conversations/update_message.php:25
+#: concrete/tools/conversations/update_message.php:28
 msgid "You do not have access to edit this message."
 msgstr "Non si ha l’autorizzazione di modificare questo messaggio."
+
+#: concrete/tools/conversations/add_message.php:40
+#: concrete/tools/conversations/update_message.php:38
+msgid "You do not have permission to add attachments."
+msgstr "Non si possiede l’autorizzazione di aggiungere allegati."
+
+#: concrete/tools/conversations/add_message.php:44
+#: concrete/tools/conversations/update_message.php:42
+msgid "You have too many attachments."
+msgstr "Ci sono troppi allegati."
 
 #: concrete/tools/conversations/add_file.php:15
 msgid "Bad token"
@@ -1603,14 +1609,6 @@ msgstr "Non si possiede l’autorizzazione di aggiungere un messaggio a questa c
 #: concrete/tools/conversations/add_message.php:34
 msgid "Invalid Page."
 msgstr "Pagina non valida."
-
-#: concrete/tools/conversations/add_message.php:40
-msgid "You do not have permission to add attachments."
-msgstr "Non si possiede l’autorizzazione di aggiungere allegati."
-
-#: concrete/tools/conversations/add_message.php:44
-msgid "You have too many attachments."
-msgstr "Ci sono troppi allegati."
 
 #: concrete/tools/conversations/add_message.php:61
 msgid "Invalid parent message."
@@ -3881,15 +3879,15 @@ msgstr "L’avatar è stato salvato."
 
 #: concrete/controllers/single_page/dashboard/users/search.php:109
 #: concrete/controllers/single_page/dashboard/users/search.php:112
-#: concrete/controllers/single_page/register.php:166
-#: concrete/controllers/single_page/register.php:170
+#: concrete/controllers/single_page/register.php:163
+#: concrete/controllers/single_page/register.php:167
 msgid "Website Registration Notification"
 msgstr "Notifica registrazione sito web"
 
 #: concrete/controllers/single_page/account/profile/edit.php:73
 #: concrete/controllers/single_page/dashboard/users/add.php:51
 #: concrete/controllers/single_page/dashboard/users/search.php:163
-#: concrete/controllers/single_page/register.php:63
+#: concrete/controllers/single_page/register.php:60
 msgid "Invalid email address provided."
 msgstr "L’indirizzo email specificato non è corretto."
 
@@ -3914,14 +3912,14 @@ msgstr "La lingua è stata salvata."
 
 #: concrete/controllers/single_page/dashboard/users/add.php:57
 #: concrete/controllers/single_page/dashboard/users/search.php:233
-#: concrete/controllers/single_page/register.php:71
+#: concrete/controllers/single_page/register.php:68
 #, php-format
 msgid "A username must be at least %s characters long."
 msgstr "Il nome utente deve essere lungo almeno %s caratteri."
 
 #: concrete/controllers/single_page/dashboard/users/add.php:61
 #: concrete/controllers/single_page/dashboard/users/search.php:237
-#: concrete/controllers/single_page/register.php:75
+#: concrete/controllers/single_page/register.php:72
 #, php-format
 msgid "A username cannot be more than %s characters long."
 msgstr "Il nome utente non può essere più lungo di %s caratteri."
@@ -4021,14 +4019,14 @@ msgid "User Attribute Updated."
 msgstr "Attributo utente aggiornato."
 
 #: concrete/controllers/single_page/dashboard/users/add.php:77
-#: concrete/controllers/single_page/register.php:94
+#: concrete/controllers/single_page/register.php:91
 msgid "Invalid Username"
 msgstr "Nome utente non valido"
 
 #: concrete/controllers/single_page/account/profile/edit.php:107
 #: concrete/controllers/single_page/dashboard/users/add.php:99
 #: concrete/controllers/single_page/login.php:326
-#: concrete/controllers/single_page/register.php:121
+#: concrete/controllers/single_page/register.php:118
 #: concrete/src/Page/Type/Composer/Control/CollectionAttributeControl.php:122
 #, php-format
 msgid "The field \"%s\" is required"
@@ -4330,6 +4328,10 @@ msgstr "L’editor attivo è stato aggiornato."
 msgid "Invalid editor handle."
 msgstr "L’handle dell’editor non è valido."
 
+#: concrete/controllers/single_page/dashboard/system/conversations/bannedwords.php:29
+msgid "Updated Banned Words."
+msgstr "Le parole vietate sono state aggiornate."
+
 #: concrete/controllers/single_page/dashboard/system/attributes/sets.php:48
 msgid "Attribute set added."
 msgstr "Set di attributi aggiunto."
@@ -4542,6 +4544,10 @@ msgstr "Il collegamento è stato eliminato."
 #: concrete/controllers/single_page/dashboard/system/basics/social.php:33
 msgid "Social Link Added."
 msgstr "Il collegamento social è stato aggiunto."
+
+#: concrete/controllers/single_page/dashboard/system/basics/social.php:50
+msgid "You must specify a valid URL."
+msgstr "È necessario specificare un URL valido."
 
 #: concrete/controllers/single_page/dashboard/system/basics/social.php:53
 msgid "You must choose a service."
@@ -4947,51 +4953,51 @@ msgstr "Da: %s\nData invio: %s\nOggetto: %s"
 msgid "You haven't written a message!"
 msgstr "Il corpo del messaggio non è stato indicato!"
 
-#: concrete/controllers/single_page/register.php:58
+#: concrete/controllers/single_page/register.php:55
 msgid ""
 "Incorrect image validation code. Please check the image and re-enter the "
 "letters or numbers as necessary."
 msgstr "Codice di validazione immagine non corretto. Controllare l’immagine e inserire nuovamente le lettere e/o i numeri presenti."
 
-#: concrete/controllers/single_page/register.php:65
+#: concrete/controllers/single_page/register.php:62
 #, php-format
 msgid "The email address %s is already in use. Please choose another."
 msgstr "L’indirizzo email %s è già stato utilizzato. Indicarne un altro."
 
-#: concrete/controllers/single_page/register.php:81
+#: concrete/controllers/single_page/register.php:78
 msgid "A username may only contain letters, numbers and spaces."
 msgstr "Il nome utente può contenere solo lettere, numeri e spazi."
 
-#: concrete/controllers/single_page/register.php:83
+#: concrete/controllers/single_page/register.php:80
 msgid "A username may only contain letters or numbers."
 msgstr "Il nome utente può contenere solo lettere e numeri."
 
-#: concrete/controllers/single_page/register.php:88
+#: concrete/controllers/single_page/register.php:85
 #, php-format
 msgid "The username %s already exists. Please choose another"
 msgstr "Il nome utente %s esiste già. Sceglierne un altro"
 
-#: concrete/controllers/single_page/register.php:202
+#: concrete/controllers/single_page/register.php:199
 msgid "Validate Email Address"
 msgstr "Conferma indirizzo email"
 
-#: concrete/controllers/single_page/register.php:282
+#: concrete/controllers/single_page/register.php:279
 msgid "Your account has been created, and you are now logged in."
 msgstr "L’account utente è stato creato e l’accesso al sito è stato effettuato."
 
-#: concrete/controllers/single_page/register.php:287
+#: concrete/controllers/single_page/register.php:284
 msgid ""
 "You are registered but you need to validate your email address. Some or all "
 "functionality on this site will be limited until you do so."
 msgstr "Sei registrato ma devi confermare il tuo indirizzo email. Finché non lo farai, potresti non avere accesso ad alcune o a tutte le funzionalità del sito."
 
-#: concrete/controllers/single_page/register.php:288
+#: concrete/controllers/single_page/register.php:285
 msgid ""
 "An email has been sent to your email address. Click on the URL contained in "
 "the email to validate your email address."
 msgstr "È stata inviata un’email al tuo indirizzo di posta elettronica. Fai clic sul collegamento contenuto nel messaggio per confermare l’indirizzo email."
 
-#: concrete/controllers/single_page/register.php:293
+#: concrete/controllers/single_page/register.php:290
 msgid ""
 "You are registered but a site administrator must review your account, you "
 "will not be able to login until your account has been approved."
@@ -8805,7 +8811,6 @@ msgctxt "Authored"
 msgid "by %s"
 msgstr "di %s"
 
-#: concrete/blocks/rss_displayer/templates/read_more.php:36
 #: concrete/elements/gathering/templates/tile/featured/view.php:11
 #: concrete/elements/gathering/templates/tile/masthead_byline_description/view.php:14
 msgid "Read More"
@@ -11686,13 +11691,8 @@ msgstr "Inserire un indirizzo valido del feed."
 msgid "Please enter the number of items to display."
 msgstr "Specificare il numero di elementi da mostrare."
 
-#: concrete/blocks/rss_displayer/controller.php:55
-msgid "Oops, it looks like you've entered an invalid feed address!"
-msgstr "Ops, sembra che l’indirizzo del feed specificato non sia valido!"
-
 #: concrete/blocks/rss_displayer/form_setup_html.php:4
-#: concrete/blocks/rss_displayer/templates/read_more.php:14
-#: concrete/blocks/rss_displayer/view.php:14
+#: concrete/blocks/rss_displayer/view.php:16
 msgid "F jS"
 msgstr "j F"
 
@@ -11803,6 +11803,10 @@ msgstr "migliore"
 #: concrete/blocks/flash_content/edit.php:34
 msgid "Minimum Version"
 msgstr "Versione minima"
+
+#: concrete/blocks/testimonial/form.php:14
+msgid "Picture"
+msgstr "Immagine"
 
 #: concrete/blocks/testimonial/form.php:32
 msgid "Company"
@@ -12690,11 +12694,11 @@ msgstr "Nazioni selezionate"
 msgid "Default Country"
 msgstr "Nazione predefinita"
 
-#: concrete/attributes/address/controller.php:156
+#: concrete/attributes/address/controller.php:193
 msgid "You must specify at least one country."
 msgstr "È necessario indicare almeno una nazione."
 
-#: concrete/attributes/address/controller.php:158
+#: concrete/attributes/address/controller.php:200
 msgid "The default country must be in the list of custom countries."
 msgstr "La nazione predefinita deve essere presente nella lista delle nazioni personalizzate."
 
@@ -18919,11 +18923,6 @@ msgstr "Intestazione"
 msgctxt "TemplateFileName"
 msgid "Thumbnail"
 msgstr "Miniatura"
-
-#: concrete/blocks/rss_displayer/templates/read_more.php
-msgctxt "TemplateFileName"
-msgid "Read More"
-msgstr "Approfondisci"
 
 #: concrete/blocks/search/templates/tag_cloud
 msgctxt "TemplateFileName"

@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-08-17 17:11+0000\n"
-"PO-Revision-Date: 2014-08-17 17:31+0000\n"
+"POT-Creation-Date: 2014-08-19 04:00+0000\n"
+"PO-Revision-Date: 2014-08-19 10:11+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Slovenian (Slovenia) (http://www.transifex.com/projects/p/concrete5/language/sl_SI/)\n"
 "MIME-Version: 1.0\n"
@@ -162,7 +162,7 @@ msgstr "Ključ je potekel. Obiščite stran za pozabljena gesla za kreiranje nov
 #: concrete/controllers/install.php:286
 #: concrete/controllers/single_page/account/profile/edit.php:94
 #: concrete/controllers/single_page/dashboard/users/search.php:336
-#: concrete/controllers/single_page/register.php:111
+#: concrete/controllers/single_page/register.php:108
 msgid "The two passwords provided do not match."
 msgstr "Vneseni gesli se ne ujemata."
 
@@ -544,7 +544,7 @@ msgstr "Dodajanje z oddaljenega URL"
 #: concrete/controllers/backend/file.php:114
 #: concrete/tools/files/import.php:10
 #: concrete/tools/files/importers/incoming.php:8
-#: concrete/tools/files/importers/remote.php:10
+#: concrete/tools/files/importers/remote.php:11
 #: concrete/tools/files/importers/single.php:12
 msgid "Unable to add files."
 msgstr "Ne morem dodati datotek."
@@ -641,6 +641,7 @@ msgstr "Odstranitev datotek iz mape incoming/."
 #: concrete/src/StyleCustomizer/Style/ColorStyle.php:41
 #: concrete/src/Workflow/Progress/Action/CancelAction.php:7
 #: concrete/tools/area/layout_presets.php:110
+#: concrete/tools/conversations/edit_message.php:37
 #: concrete/tools/dashboard/sitemap_drag_request.php:169
 #: concrete/tools/dashboard/sitemap_drag_request.php:226
 #: concrete/tools/dashboard/sitemap_drag_request.php:228
@@ -791,12 +792,12 @@ msgstr "Drugo"
 msgid "Files in no sets."
 msgstr "Datoteke brez nabora."
 
-#: concrete/tools/files/importers/remote.php:108
+#: concrete/tools/files/importers/remote.php:113
 #: concrete/tools/files/importers/single.php:34
 msgid "File uploaded successfully."
 msgstr "Datoteka je uspešno naložena."
 
-#: concrete/tools/files/importers/remote.php:110
+#: concrete/tools/files/importers/remote.php:115
 #: concrete/tools/files/importers/single.php:36
 msgid "File replaced successfully."
 msgstr "Datoteka je bila uspešno prepisana."
@@ -818,32 +819,27 @@ msgstr[1] "%s datoteki sta uspešno uvoženi."
 msgstr[2] "%s datoteke so uspešno uvožene."
 msgstr[3] "%s datotek je uspešno uvoženih."
 
-#: concrete/tools/files/importers/remote.php:32
+#: concrete/tools/files/importers/remote.php:33
 msgid "Remote URL import requires the iconv extension enabled on your server."
 msgstr "Uvoz oddaljenih URL zahteva nameščen in omogočen iconv podaljšek."
 
-#: concrete/tools/files/importers/remote.php:50
-#, php-format
-msgid "%s is not a valid URL."
-msgstr " %s ni veljaven URL."
-
-#: concrete/tools/files/importers/remote.php:59
+#: concrete/tools/files/importers/remote.php:61
 msgid "You must specify at least one valid URL."
 msgstr "Določiti morate vsaj en veljaven URL."
 
-#: concrete/tools/files/importers/remote.php:86
+#: concrete/tools/files/importers/remote.php:91
 #, php-format
 msgid "Unknown mime-type: %s"
 msgstr "Neznan tip mime: %s"
 
 #. %s is an URL
-#: concrete/tools/files/importers/remote.php:134
+#: concrete/tools/files/importers/remote.php:139
 #, php-format
 msgid "Could not determine the name of the file at %s"
 msgstr "Ne morem določiti imena datoteke na %s"
 
 #. %s is an URL
-#: concrete/tools/files/importers/remote.php:138
+#: concrete/tools/files/importers/remote.php:143
 #, php-format
 msgid "There was an error downloading %s"
 msgstr "Pri nalaganju %s je prišlo do napake"
@@ -1553,23 +1549,33 @@ msgid "Attach Files"
 msgstr "Pripni datoteke"
 
 #: concrete/tools/conversations/add_message.php:52
-#: concrete/tools/conversations/update_message.php:11
+#: concrete/tools/conversations/update_message.php:14
 msgid "Invalid conversation post token."
 msgstr "Nepravilna oznaka pogovora."
 
 #: concrete/blocks/core_conversation_message/controller.php:43
 #: concrete/tools/conversations/add_message.php:55
-#: concrete/tools/conversations/update_message.php:14
+#: concrete/tools/conversations/update_message.php:17
 msgid "Your message cannot be empty."
 msgstr "Vaše sporočilo ne more biti prazno."
 
-#: concrete/tools/conversations/update_message.php:21
+#: concrete/tools/conversations/update_message.php:24
 msgid "Invalid message object."
 msgstr ""
 
-#: concrete/tools/conversations/update_message.php:25
+#: concrete/tools/conversations/update_message.php:28
 msgid "You do not have access to edit this message."
 msgstr ""
+
+#: concrete/tools/conversations/add_message.php:40
+#: concrete/tools/conversations/update_message.php:38
+msgid "You do not have permission to add attachments."
+msgstr ""
+
+#: concrete/tools/conversations/add_message.php:44
+#: concrete/tools/conversations/update_message.php:42
+msgid "You have too many attachments."
+msgstr "Imate preveč priponk."
 
 #: concrete/tools/conversations/add_file.php:15
 msgid "Bad token"
@@ -1615,14 +1621,6 @@ msgstr ""
 #: concrete/tools/conversations/add_message.php:34
 msgid "Invalid Page."
 msgstr "Nepravilna stran."
-
-#: concrete/tools/conversations/add_message.php:40
-msgid "You do not have permission to add attachments."
-msgstr ""
-
-#: concrete/tools/conversations/add_message.php:44
-msgid "You have too many attachments."
-msgstr "Imate preveč priponk."
 
 #: concrete/tools/conversations/add_message.php:61
 msgid "Invalid parent message."
@@ -3895,15 +3893,15 @@ msgstr "Avatar je bil uspešno shranjen."
 
 #: concrete/controllers/single_page/dashboard/users/search.php:109
 #: concrete/controllers/single_page/dashboard/users/search.php:112
-#: concrete/controllers/single_page/register.php:166
-#: concrete/controllers/single_page/register.php:170
+#: concrete/controllers/single_page/register.php:163
+#: concrete/controllers/single_page/register.php:167
 msgid "Website Registration Notification"
 msgstr "Obvestilo o registraciji spletne strani"
 
 #: concrete/controllers/single_page/account/profile/edit.php:73
 #: concrete/controllers/single_page/dashboard/users/add.php:51
 #: concrete/controllers/single_page/dashboard/users/search.php:163
-#: concrete/controllers/single_page/register.php:63
+#: concrete/controllers/single_page/register.php:60
 msgid "Invalid email address provided."
 msgstr "E-poštni naslov ni pravilen."
 
@@ -3928,14 +3926,14 @@ msgstr "Jezik je bil uspešno shranjen."
 
 #: concrete/controllers/single_page/dashboard/users/add.php:57
 #: concrete/controllers/single_page/dashboard/users/search.php:233
-#: concrete/controllers/single_page/register.php:71
+#: concrete/controllers/single_page/register.php:68
 #, php-format
 msgid "A username must be at least %s characters long."
 msgstr "Uporabniško ime biti dolgo najmanj %s znakov."
 
 #: concrete/controllers/single_page/dashboard/users/add.php:61
 #: concrete/controllers/single_page/dashboard/users/search.php:237
-#: concrete/controllers/single_page/register.php:75
+#: concrete/controllers/single_page/register.php:72
 #, php-format
 msgid "A username cannot be more than %s characters long."
 msgstr "Uporabniško ime ne more biti daljše od %s črk."
@@ -4035,14 +4033,14 @@ msgid "User Attribute Updated."
 msgstr "Uporabniški atribut je posodobljen."
 
 #: concrete/controllers/single_page/dashboard/users/add.php:77
-#: concrete/controllers/single_page/register.php:94
+#: concrete/controllers/single_page/register.php:91
 msgid "Invalid Username"
 msgstr "Nepravilno uporabniško ime"
 
 #: concrete/controllers/single_page/account/profile/edit.php:107
 #: concrete/controllers/single_page/dashboard/users/add.php:99
 #: concrete/controllers/single_page/login.php:326
-#: concrete/controllers/single_page/register.php:121
+#: concrete/controllers/single_page/register.php:118
 #: concrete/src/Page/Type/Composer/Control/CollectionAttributeControl.php:122
 #, php-format
 msgid "The field \"%s\" is required"
@@ -4344,6 +4342,10 @@ msgstr "Aktivni urejevalnik je bil posodobljen."
 msgid "Invalid editor handle."
 msgstr "Napačna oznaka urejevalnika."
 
+#: concrete/controllers/single_page/dashboard/system/conversations/bannedwords.php:29
+msgid "Updated Banned Words."
+msgstr ""
+
 #: concrete/controllers/single_page/dashboard/system/attributes/sets.php:48
 msgid "Attribute set added."
 msgstr "Nabor atributov je dodan."
@@ -4556,6 +4558,10 @@ msgstr "Povezava je pobrisana."
 #: concrete/controllers/single_page/dashboard/system/basics/social.php:33
 msgid "Social Link Added."
 msgstr "Dodana je družabna povezava."
+
+#: concrete/controllers/single_page/dashboard/system/basics/social.php:50
+msgid "You must specify a valid URL."
+msgstr ""
 
 #: concrete/controllers/single_page/dashboard/system/basics/social.php:53
 msgid "You must choose a service."
@@ -4961,51 +4967,51 @@ msgstr "Od: %s\nPoslano: %s\nZadeva: %s"
 msgid "You haven't written a message!"
 msgstr "Niste vpisali sporočila!"
 
-#: concrete/controllers/single_page/register.php:58
+#: concrete/controllers/single_page/register.php:55
 msgid ""
 "Incorrect image validation code. Please check the image and re-enter the "
 "letters or numbers as necessary."
 msgstr "Nepravilna slikovna koda za preverjanje. Preverite sliko in ponovno vnesite črke ali številke kot je potrebno. "
 
-#: concrete/controllers/single_page/register.php:65
+#: concrete/controllers/single_page/register.php:62
 #, php-format
 msgid "The email address %s is already in use. Please choose another."
 msgstr "E-poštni naslov %s je že v uporabi. Izberite drugega."
 
-#: concrete/controllers/single_page/register.php:81
+#: concrete/controllers/single_page/register.php:78
 msgid "A username may only contain letters, numbers and spaces."
 msgstr "Uporabniško ime lahko vsebuje le črke, številke in presledke."
 
-#: concrete/controllers/single_page/register.php:83
+#: concrete/controllers/single_page/register.php:80
 msgid "A username may only contain letters or numbers."
 msgstr "Uporabniško ime lahko vsebuje le črke in številke."
 
-#: concrete/controllers/single_page/register.php:88
+#: concrete/controllers/single_page/register.php:85
 #, php-format
 msgid "The username %s already exists. Please choose another"
 msgstr "Uporabniško ime %s že obstaja. Izberite drugo"
 
-#: concrete/controllers/single_page/register.php:202
+#: concrete/controllers/single_page/register.php:199
 msgid "Validate Email Address"
 msgstr "Preveri e-poštni naslov"
 
-#: concrete/controllers/single_page/register.php:282
+#: concrete/controllers/single_page/register.php:279
 msgid "Your account has been created, and you are now logged in."
 msgstr "Vaš račun je bil ustvarjen in sedaj ste prijavljeni."
 
-#: concrete/controllers/single_page/register.php:287
+#: concrete/controllers/single_page/register.php:284
 msgid ""
 "You are registered but you need to validate your email address. Some or all "
 "functionality on this site will be limited until you do so."
 msgstr "Ste registrirani, vendar morate preveriti vaš e-poštni naslov. Nekaj ali vsa funkcionalnost na tej strani bo omejena, dokler tega ne storite."
 
-#: concrete/controllers/single_page/register.php:288
+#: concrete/controllers/single_page/register.php:285
 msgid ""
 "An email has been sent to your email address. Click on the URL contained in "
 "the email to validate your email address."
 msgstr "Na vaš e-poštni naslov je bilo poslano sporočilo. Kliknite na povezavo v sporočilu za preverjanje vašega e-poštnega naslova."
 
-#: concrete/controllers/single_page/register.php:293
+#: concrete/controllers/single_page/register.php:290
 msgid ""
 "You are registered but a site administrator must review your account, you "
 "will not be able to login until your account has been approved."
@@ -8849,7 +8855,6 @@ msgctxt "Authored"
 msgid "by %s"
 msgstr "od %s"
 
-#: concrete/blocks/rss_displayer/templates/read_more.php:36
 #: concrete/elements/gathering/templates/tile/featured/view.php:11
 #: concrete/elements/gathering/templates/tile/masthead_byline_description/view.php:14
 msgid "Read More"
@@ -11736,13 +11741,8 @@ msgstr "Prosim, vnesite veljaven naslov vira."
 msgid "Please enter the number of items to display."
 msgstr "Prosim, vnesite število novic za prikaz."
 
-#: concrete/blocks/rss_displayer/controller.php:55
-msgid "Oops, it looks like you've entered an invalid feed address!"
-msgstr "Ups. izgleda, da ste vnesli nepravilen naslov vira!"
-
 #: concrete/blocks/rss_displayer/form_setup_html.php:4
-#: concrete/blocks/rss_displayer/templates/read_more.php:14
-#: concrete/blocks/rss_displayer/view.php:14
+#: concrete/blocks/rss_displayer/view.php:16
 msgid "F jS"
 msgstr "d.m.Y"
 
@@ -11853,6 +11853,10 @@ msgstr "najboljša"
 #: concrete/blocks/flash_content/edit.php:34
 msgid "Minimum Version"
 msgstr "Minimalna verzija"
+
+#: concrete/blocks/testimonial/form.php:14
+msgid "Picture"
+msgstr "Slika"
 
 #: concrete/blocks/testimonial/form.php:32
 msgid "Company"
@@ -12742,11 +12746,11 @@ msgstr "Izbrane države"
 msgid "Default Country"
 msgstr "Privzeta država"
 
-#: concrete/attributes/address/controller.php:156
+#: concrete/attributes/address/controller.php:193
 msgid "You must specify at least one country."
 msgstr "Določiti morate vsaj eno državo."
 
-#: concrete/attributes/address/controller.php:158
+#: concrete/attributes/address/controller.php:200
 msgid "The default country must be in the list of custom countries."
 msgstr "Privzeta država mora biti na spisku uporabnikovih držav."
 
@@ -18975,11 +18979,6 @@ msgstr "Glava"
 msgctxt "TemplateFileName"
 msgid "Thumbnail"
 msgstr "Sličica"
-
-#: concrete/blocks/rss_displayer/templates/read_more.php
-msgctxt "TemplateFileName"
-msgid "Read More"
-msgstr "Beri naprej"
 
 #: concrete/blocks/search/templates/tag_cloud
 msgctxt "TemplateFileName"

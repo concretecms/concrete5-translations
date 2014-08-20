@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-08-17 17:11+0000\n"
-"PO-Revision-Date: 2014-08-17 17:31+0000\n"
+"POT-Creation-Date: 2014-08-19 04:00+0000\n"
+"PO-Revision-Date: 2014-08-19 12:11+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Bulgarian (Bulgaria) (http://www.transifex.com/projects/p/concrete5/language/bg_BG/)\n"
 "MIME-Version: 1.0\n"
@@ -161,7 +161,7 @@ msgstr "Ключ с изтекъл срок. Моля, посетете стра
 #: concrete/controllers/install.php:286
 #: concrete/controllers/single_page/account/profile/edit.php:94
 #: concrete/controllers/single_page/dashboard/users/search.php:336
-#: concrete/controllers/single_page/register.php:111
+#: concrete/controllers/single_page/register.php:108
 msgid "The two passwords provided do not match."
 msgstr "Двете предоставени пароли не съвпадат."
 
@@ -543,7 +543,7 @@ msgstr "Добавете външен линк"
 #: concrete/controllers/backend/file.php:114
 #: concrete/tools/files/import.php:10
 #: concrete/tools/files/importers/incoming.php:8
-#: concrete/tools/files/importers/remote.php:10
+#: concrete/tools/files/importers/remote.php:11
 #: concrete/tools/files/importers/single.php:12
 msgid "Unable to add files."
 msgstr "Неуспешно добавяне на файлове."
@@ -640,6 +640,7 @@ msgstr "Премахване на файлове от директория incom
 #: concrete/src/StyleCustomizer/Style/ColorStyle.php:41
 #: concrete/src/Workflow/Progress/Action/CancelAction.php:7
 #: concrete/tools/area/layout_presets.php:110
+#: concrete/tools/conversations/edit_message.php:37
 #: concrete/tools/dashboard/sitemap_drag_request.php:169
 #: concrete/tools/dashboard/sitemap_drag_request.php:226
 #: concrete/tools/dashboard/sitemap_drag_request.php:228
@@ -790,12 +791,12 @@ msgstr "Друго"
 msgid "Files in no sets."
 msgstr "Файлове, който не са в групи."
 
-#: concrete/tools/files/importers/remote.php:108
+#: concrete/tools/files/importers/remote.php:113
 #: concrete/tools/files/importers/single.php:34
 msgid "File uploaded successfully."
 msgstr ""
 
-#: concrete/tools/files/importers/remote.php:110
+#: concrete/tools/files/importers/remote.php:115
 #: concrete/tools/files/importers/single.php:36
 msgid "File replaced successfully."
 msgstr ""
@@ -815,32 +816,27 @@ msgid_plural "%s files imported successfully"
 msgstr[0] ""
 msgstr[1] ""
 
-#: concrete/tools/files/importers/remote.php:32
+#: concrete/tools/files/importers/remote.php:33
 msgid "Remote URL import requires the iconv extension enabled on your server."
 msgstr "Въвеждането на външен линк изисква разширението iconv да бъде включено на Вашият сървър."
 
-#: concrete/tools/files/importers/remote.php:50
-#, php-format
-msgid "%s is not a valid URL."
-msgstr ""
-
-#: concrete/tools/files/importers/remote.php:59
+#: concrete/tools/files/importers/remote.php:61
 msgid "You must specify at least one valid URL."
 msgstr "Трябва да посочите поне един URL."
 
-#: concrete/tools/files/importers/remote.php:86
+#: concrete/tools/files/importers/remote.php:91
 #, php-format
 msgid "Unknown mime-type: %s"
 msgstr ""
 
 #. %s is an URL
-#: concrete/tools/files/importers/remote.php:134
+#: concrete/tools/files/importers/remote.php:139
 #, php-format
 msgid "Could not determine the name of the file at %s"
 msgstr ""
 
 #. %s is an URL
-#: concrete/tools/files/importers/remote.php:138
+#: concrete/tools/files/importers/remote.php:143
 #, php-format
 msgid "There was an error downloading %s"
 msgstr ""
@@ -1540,22 +1536,32 @@ msgid "Attach Files"
 msgstr ""
 
 #: concrete/tools/conversations/add_message.php:52
-#: concrete/tools/conversations/update_message.php:11
+#: concrete/tools/conversations/update_message.php:14
 msgid "Invalid conversation post token."
 msgstr ""
 
 #: concrete/blocks/core_conversation_message/controller.php:43
 #: concrete/tools/conversations/add_message.php:55
-#: concrete/tools/conversations/update_message.php:14
+#: concrete/tools/conversations/update_message.php:17
 msgid "Your message cannot be empty."
 msgstr ""
 
-#: concrete/tools/conversations/update_message.php:21
+#: concrete/tools/conversations/update_message.php:24
 msgid "Invalid message object."
 msgstr ""
 
-#: concrete/tools/conversations/update_message.php:25
+#: concrete/tools/conversations/update_message.php:28
 msgid "You do not have access to edit this message."
+msgstr ""
+
+#: concrete/tools/conversations/add_message.php:40
+#: concrete/tools/conversations/update_message.php:38
+msgid "You do not have permission to add attachments."
+msgstr ""
+
+#: concrete/tools/conversations/add_message.php:44
+#: concrete/tools/conversations/update_message.php:42
+msgid "You have too many attachments."
 msgstr ""
 
 #: concrete/tools/conversations/add_file.php:15
@@ -1601,14 +1607,6 @@ msgstr ""
 #: concrete/tools/conversations/add_message.php:30
 #: concrete/tools/conversations/add_message.php:34
 msgid "Invalid Page."
-msgstr ""
-
-#: concrete/tools/conversations/add_message.php:40
-msgid "You do not have permission to add attachments."
-msgstr ""
-
-#: concrete/tools/conversations/add_message.php:44
-msgid "You have too many attachments."
 msgstr ""
 
 #: concrete/tools/conversations/add_message.php:61
@@ -3880,15 +3878,15 @@ msgstr ""
 
 #: concrete/controllers/single_page/dashboard/users/search.php:109
 #: concrete/controllers/single_page/dashboard/users/search.php:112
-#: concrete/controllers/single_page/register.php:166
-#: concrete/controllers/single_page/register.php:170
+#: concrete/controllers/single_page/register.php:163
+#: concrete/controllers/single_page/register.php:167
 msgid "Website Registration Notification"
 msgstr "Известие за уебсайт регистрация"
 
 #: concrete/controllers/single_page/account/profile/edit.php:73
 #: concrete/controllers/single_page/dashboard/users/add.php:51
 #: concrete/controllers/single_page/dashboard/users/search.php:163
-#: concrete/controllers/single_page/register.php:63
+#: concrete/controllers/single_page/register.php:60
 msgid "Invalid email address provided."
 msgstr "Посочен е невалиден e-mail адрес."
 
@@ -3913,14 +3911,14 @@ msgstr ""
 
 #: concrete/controllers/single_page/dashboard/users/add.php:57
 #: concrete/controllers/single_page/dashboard/users/search.php:233
-#: concrete/controllers/single_page/register.php:71
+#: concrete/controllers/single_page/register.php:68
 #, php-format
 msgid "A username must be at least %s characters long."
 msgstr "Потребителското име трябва да е с дължина поне %s знака."
 
 #: concrete/controllers/single_page/dashboard/users/add.php:61
 #: concrete/controllers/single_page/dashboard/users/search.php:237
-#: concrete/controllers/single_page/register.php:75
+#: concrete/controllers/single_page/register.php:72
 #, php-format
 msgid "A username cannot be more than %s characters long."
 msgstr "Потребителското име не може да е с дължина повече от %s знака."
@@ -4020,14 +4018,14 @@ msgid "User Attribute Updated."
 msgstr "Потребителският атрибут е обновен."
 
 #: concrete/controllers/single_page/dashboard/users/add.php:77
-#: concrete/controllers/single_page/register.php:94
+#: concrete/controllers/single_page/register.php:91
 msgid "Invalid Username"
 msgstr "Невалидно потребителско име"
 
 #: concrete/controllers/single_page/account/profile/edit.php:107
 #: concrete/controllers/single_page/dashboard/users/add.php:99
 #: concrete/controllers/single_page/login.php:326
-#: concrete/controllers/single_page/register.php:121
+#: concrete/controllers/single_page/register.php:118
 #: concrete/src/Page/Type/Composer/Control/CollectionAttributeControl.php:122
 #, php-format
 msgid "The field \"%s\" is required"
@@ -4329,6 +4327,10 @@ msgstr ""
 msgid "Invalid editor handle."
 msgstr ""
 
+#: concrete/controllers/single_page/dashboard/system/conversations/bannedwords.php:29
+msgid "Updated Banned Words."
+msgstr ""
+
 #: concrete/controllers/single_page/dashboard/system/attributes/sets.php:48
 msgid "Attribute set added."
 msgstr "Пакетът свойства е добавен."
@@ -4540,6 +4542,10 @@ msgstr ""
 
 #: concrete/controllers/single_page/dashboard/system/basics/social.php:33
 msgid "Social Link Added."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/basics/social.php:50
+msgid "You must specify a valid URL."
 msgstr ""
 
 #: concrete/controllers/single_page/dashboard/system/basics/social.php:53
@@ -4946,51 +4952,51 @@ msgstr "Подател: %s\nИзпратено на: %s\nТема:  %s"
 msgid "You haven't written a message!"
 msgstr "Не сте написали съобщение!"
 
-#: concrete/controllers/single_page/register.php:58
+#: concrete/controllers/single_page/register.php:55
 msgid ""
 "Incorrect image validation code. Please check the image and re-enter the "
 "letters or numbers as necessary."
 msgstr "Грешен картинен код. Моля, огледайте картинката и въведете отново изписаните букви или цифри."
 
-#: concrete/controllers/single_page/register.php:65
+#: concrete/controllers/single_page/register.php:62
 #, php-format
 msgid "The email address %s is already in use. Please choose another."
 msgstr "Е-mail адрес %s вече е използван. Моля, изберете друг."
 
-#: concrete/controllers/single_page/register.php:81
+#: concrete/controllers/single_page/register.php:78
 msgid "A username may only contain letters, numbers and spaces."
 msgstr "Потребителското име може да съдържа само букви, цифри и интервали."
 
-#: concrete/controllers/single_page/register.php:83
+#: concrete/controllers/single_page/register.php:80
 msgid "A username may only contain letters or numbers."
 msgstr "Потребителското име може да съдържа само букви и цифри."
 
-#: concrete/controllers/single_page/register.php:88
+#: concrete/controllers/single_page/register.php:85
 #, php-format
 msgid "The username %s already exists. Please choose another"
 msgstr "Потребителското име %s вече съществува. Моля, изберете друго"
 
-#: concrete/controllers/single_page/register.php:202
+#: concrete/controllers/single_page/register.php:199
 msgid "Validate Email Address"
 msgstr "Проверка на e-mail адрес"
 
-#: concrete/controllers/single_page/register.php:282
+#: concrete/controllers/single_page/register.php:279
 msgid "Your account has been created, and you are now logged in."
 msgstr "Вашата регистрация е създадена и Вие сте вписан."
 
-#: concrete/controllers/single_page/register.php:287
+#: concrete/controllers/single_page/register.php:284
 msgid ""
 "You are registered but you need to validate your email address. Some or all "
 "functionality on this site will be limited until you do so."
 msgstr "Вие сте регистриран, но е необходима проверка на Вашия e-mail адрес. Някои от функциите на сайта няма да бъдат достъпни, докато не бъде извършена проверката."
 
-#: concrete/controllers/single_page/register.php:288
+#: concrete/controllers/single_page/register.php:285
 msgid ""
 "An email has been sent to your email address. Click on the URL contained in "
 "the email to validate your email address."
 msgstr "На Вашия e-mail адрес бе изпратено съобщение. Моля, кликнете върху съдържащата се в писмото връзка за да бъде проверен Вашия адрес."
 
-#: concrete/controllers/single_page/register.php:293
+#: concrete/controllers/single_page/register.php:290
 msgid ""
 "You are registered but a site administrator must review your account, you "
 "will not be able to login until your account has been approved."
@@ -5360,7 +5366,7 @@ msgstr ""
 #: concrete/themes/green_salad/home.php:49
 #: concrete/themes/green_salad/view.php:49
 msgid "concrete5 - open source CMS"
-msgstr ""
+msgstr "concrete5 - отворен източник CMS"
 
 #: concrete/themes/dark_chocolate/elements/footer.php:6
 #: concrete/themes/default/elements/footer.php:6
@@ -6053,12 +6059,12 @@ msgstr "С изключение на"
 #: concrete/src/Permission/Response/Response.php:60
 #, php-format
 msgid "Unable to get permission key for %s"
-msgstr ""
+msgstr "Не може да се придобият права за %s"
 
 #: concrete/src/Permission/Response/Response.php:56
 #, php-format
 msgid "Unable to get category for permission %s"
-msgstr ""
+msgstr "Не може да се намири категория за право %s"
 
 #: concrete/src/Permission/IPService.php:89
 msgid ""
@@ -6653,7 +6659,7 @@ msgstr "n/j/Y"
 #: concrete/src/Workflow/Request/ChangePagePermissionsInheritanceRequest.php:35
 #, php-format
 msgid "\"%s\" has pending permission inheritance. View the page here: %s."
-msgstr ""
+msgstr "\"%s\" чака наследяване на права. Вижте страницата тук: %s."
 
 #: concrete/src/Workflow/Request/ChangePagePermissionsInheritanceRequest.php:36
 #, php-format
@@ -6691,12 +6697,12 @@ msgstr "\"%s\" е маркирано за изтриване. Вижте стр�
 #: concrete/src/Workflow/Request/DeletePageRequest.php:34
 #, php-format
 msgid "This %s has been marked for deletion. "
-msgstr ""
+msgstr "%s е маркирано за изтриване."
 
 #: concrete/src/Workflow/Request/DeletePageRequest.php:35
 #, php-format
 msgid "<a href=\"%s\">%s</a> has been marked for deletion. "
-msgstr ""
+msgstr "<a href=\"%s\">%s</a> е маркирано за изтриване."
 
 #: concrete/src/Workflow/Request/DeletePageRequest.php:36
 msgid "Pending Delete"
@@ -6739,7 +6745,7 @@ msgstr "Чакащи права"
 
 #: concrete/src/Workflow/Request/Request.php:78
 msgid "This permission key cannot start a workflow."
-msgstr ""
+msgstr "Това право не може да стартира процедура."
 
 #: concrete/src/Workflow/Request/ChangeSubpageDefaultsInheritanceRequest.php:36
 #, php-format
@@ -7480,7 +7486,7 @@ msgstr "Прегледай Всички"
 
 #: concrete/src/Application/Service/Dashboard.php:321
 msgid "Dashboard Home"
-msgstr ""
+msgstr "Начало администрация"
 
 #: concrete/config/install/base/dashboard.xml:230
 #: concrete/src/Application/Service/Dashboard.php:325
@@ -8327,7 +8333,7 @@ msgstr "Няма зададени временни права"
 
 #: concrete/elements/block_area_footer.php:56
 msgid "Edit Area Design"
-msgstr ""
+msgstr "Редактирай дизайна на страницата"
 
 #: concrete/elements/block_area_footer.php:71
 msgid "Area Permissions"
@@ -8804,7 +8810,6 @@ msgctxt "Authored"
 msgid "by %s"
 msgstr ""
 
-#: concrete/blocks/rss_displayer/templates/read_more.php:36
 #: concrete/elements/gathering/templates/tile/featured/view.php:11
 #: concrete/elements/gathering/templates/tile/masthead_byline_description/view.php:14
 msgid "Read More"
@@ -8938,7 +8943,7 @@ msgstr "Няма типове блок"
 
 #: concrete/elements/permission/keys/edit_page_theme.php:12
 msgid "Who can set what?"
-msgstr ""
+msgstr "Кой, какво може да задава"
 
 #: concrete/elements/permission/keys/edit_page_theme.php:22
 msgid "All Themes"
@@ -8946,7 +8951,7 @@ msgstr "Всички теми"
 
 #: concrete/elements/permission/keys/edit_page_theme.php:39
 msgid "Who can't set what?"
-msgstr ""
+msgstr "Кой, какво не може да задава?"
 
 #: concrete/elements/permission/keys/edit_page_theme.php:49
 msgid "No Themes"
@@ -9106,7 +9111,7 @@ msgstr "Кога гостите могат да видят този блок?"
 
 #: concrete/elements/permission/message_list.php:11
 msgid "Custom Options saved."
-msgstr ""
+msgstr "Опциите по избор са запазени. "
 
 #: concrete/elements/permission/message_list.php:13
 msgid "Workflow Options saved."
@@ -9151,13 +9156,13 @@ msgstr ""
 msgid ""
 "Permissions for this file are currently dependent on file sets and global "
 "file permissions."
-msgstr ""
+msgstr "Правата за този файл са зависими от правата за файлови комплекти и глобални файлови права."
 
 #: concrete/elements/permission/lists/file.php:22
 msgid ""
 "Permissions for this file currently override its sets and the global file "
 "permissions."
-msgstr ""
+msgstr "Правата за този файл отхвърлят тези на комплектите и глобалните файлови права."
 
 #: concrete/elements/permission/lists/file.php:24
 msgid "Revert to File Set and Global Permissions"
@@ -9341,7 +9346,7 @@ msgstr "Искате ли да изтриете тозиблок? Това е о
 #: concrete/elements/block_header_view.php:145
 #: concrete/elements/block_header_view.php:148
 msgid "Edit Block"
-msgstr ""
+msgstr "Редактирай блок"
 
 #: concrete/elements/block_header_view.php:148
 #, php-format
@@ -11685,13 +11690,8 @@ msgstr "Моля, въведете валиден адрес на емисия."
 msgid "Please enter the number of items to display."
 msgstr "Въведете броят на обектите за показване."
 
-#: concrete/blocks/rss_displayer/controller.php:55
-msgid "Oops, it looks like you've entered an invalid feed address!"
-msgstr "Опа, Май сте въвели невалиден адрес на емисия!"
-
 #: concrete/blocks/rss_displayer/form_setup_html.php:4
-#: concrete/blocks/rss_displayer/templates/read_more.php:14
-#: concrete/blocks/rss_displayer/view.php:14
+#: concrete/blocks/rss_displayer/view.php:16
 msgid "F jS"
 msgstr "F jS"
 
@@ -11802,6 +11802,10 @@ msgstr "най-добро"
 #: concrete/blocks/flash_content/edit.php:34
 msgid "Minimum Version"
 msgstr "Минимална версия"
+
+#: concrete/blocks/testimonial/form.php:14
+msgid "Picture"
+msgstr ""
 
 #: concrete/blocks/testimonial/form.php:32
 msgid "Company"
@@ -12689,11 +12693,11 @@ msgstr "Избрани страни"
 msgid "Default Country"
 msgstr "Страна по подразбиране"
 
-#: concrete/attributes/address/controller.php:156
+#: concrete/attributes/address/controller.php:193
 msgid "You must specify at least one country."
 msgstr "Трябва да посочите поне една страна."
 
-#: concrete/attributes/address/controller.php:158
+#: concrete/attributes/address/controller.php:200
 msgid "The default country must be in the list of custom countries."
 msgstr "Страната по подразбирани трябва да бъде в списъка от дефинирани страни."
 
@@ -16242,7 +16246,7 @@ msgstr "форми, лог, грешка, mysql, изключение, проу�
 
 #: concrete/config/install/base/dashboard.xml:178
 msgid "View your site activity."
-msgstr ""
+msgstr "Вижте активността на сайта"
 
 #. Keywords for page /dashboard/reports/statistics
 #: concrete/config/install/base/dashboard.xml:181
@@ -16426,7 +16430,7 @@ msgstr "добавка, допълнение, електронна търгов�
 
 #: concrete/config/install/base/dashboard.xml:421
 msgid "Update your installed packages."
-msgstr ""
+msgstr "Обновете инсталираните пакети"
 
 #. Keywords for page /dashboard/extend/update
 #: concrete/config/install/base/dashboard.xml:424
@@ -16693,7 +16697,7 @@ msgstr "защита, заключи ip, заключи, адрес, огран�
 
 #: concrete/config/install/base/dashboard.xml:674
 msgid "Captcha Setup"
-msgstr ""
+msgstr "Captcha настройки"
 
 #. Keywords for page /dashboard/system/permissions/captcha
 #: concrete/config/install/base/dashboard.xml:677
@@ -17292,7 +17296,7 @@ msgstr ""
 #: concrete/config/install/base/permissions.xml:30
 msgctxt "PermissionKeyName"
 msgid "View Page in Sitemap"
-msgstr ""
+msgstr "Вижте страницата на картата"
 
 #: concrete/config/install/base/permissions.xml:30
 msgctxt "PermissionKeyDescription"
@@ -17479,17 +17483,17 @@ msgstr ""
 #: concrete/config/install/base/permissions.xml:58
 msgctxt "PermissionKeyName"
 msgid "Edit Area Contents"
-msgstr ""
+msgstr "Редактиране на съдржанието в страницата"
 
 #: concrete/config/install/base/permissions.xml:58
 msgctxt "PermissionKeyDescription"
 msgid "Can edit blocks within this area."
-msgstr ""
+msgstr "Може да редактирате блоковете в страницата"
 
 #: concrete/config/install/base/permissions.xml:59
 msgctxt "PermissionKeyName"
 msgid "Add Block to Area"
-msgstr ""
+msgstr "Добавете блок към страницата"
 
 #: concrete/config/install/base/permissions.xml:59
 msgctxt "PermissionKeyDescription"
@@ -17501,7 +17505,7 @@ msgstr ""
 #: concrete/config/install/base/permissions.xml:60
 msgctxt "PermissionKeyName"
 msgid "Add Stack to Area"
-msgstr ""
+msgstr "Добавете пакет към страницата"
 
 #: concrete/config/install/base/permissions.xml:60
 msgctxt "PermissionKeyDescription"
@@ -17524,7 +17528,7 @@ msgstr ""
 #: concrete/config/install/base/permissions.xml:62
 msgctxt "PermissionKeyName"
 msgid "Edit Area Design"
-msgstr ""
+msgstr "Редактирай дизайна на страницата"
 
 #: concrete/config/install/base/permissions.xml:62
 msgctxt "PermissionKeyDescription"
@@ -17536,7 +17540,7 @@ msgstr ""
 #: concrete/config/install/base/permissions.xml:63
 msgctxt "PermissionKeyName"
 msgid "Edit Area Permissions"
-msgstr ""
+msgstr "Редактирайте правата за страницата"
 
 #: concrete/config/install/base/permissions.xml:63
 msgctxt "PermissionKeyDescription"
@@ -17548,12 +17552,12 @@ msgstr ""
 #: concrete/config/install/base/permissions.xml:64
 msgctxt "PermissionKeyName"
 msgid "Delete Area Contents"
-msgstr ""
+msgstr "Изтрийте съдържанието на областта"
 
 #: concrete/config/install/base/permissions.xml:64
 msgctxt "PermissionKeyDescription"
 msgid "Controls whether users can delete blocks from this area."
-msgstr ""
+msgstr "Контролира дали потребители могат да трият блокве от тази област."
 
 #: concrete/config/install/base/permissions.xml:65
 msgctxt "PermissionKeyDescription"
@@ -17566,7 +17570,7 @@ msgstr ""
 #: concrete/config/install/base/permissions.xml:68
 msgctxt "PermissionKeyName"
 msgid "View Block"
-msgstr ""
+msgstr "Разгледай блок"
 
 #: concrete/config/install/base/permissions.xml:68
 msgctxt "PermissionKeyDescription"
@@ -17576,7 +17580,7 @@ msgstr ""
 #: concrete/config/install/base/permissions.xml:69
 msgctxt "PermissionKeyName"
 msgid "Edit Block"
-msgstr ""
+msgstr "Редактирай блок"
 
 #: concrete/config/install/base/permissions.xml:69
 msgctxt "PermissionKeyDescription"
@@ -17588,7 +17592,7 @@ msgstr ""
 #: concrete/config/install/base/permissions.xml:70
 msgctxt "PermissionKeyName"
 msgid "Change Custom Template"
-msgstr ""
+msgstr "Променете темплейта по избор"
 
 #: concrete/config/install/base/permissions.xml:70
 msgctxt "PermissionKeyDescription"
@@ -17600,7 +17604,7 @@ msgstr ""
 #: concrete/config/install/base/permissions.xml:71
 msgctxt "PermissionKeyName"
 msgid "Delete Block"
-msgstr ""
+msgstr "Изтрий блок"
 
 #: concrete/config/install/base/permissions.xml:71
 msgctxt "PermissionKeyDescription"
@@ -17612,7 +17616,7 @@ msgstr ""
 #: concrete/config/install/base/permissions.xml:72
 msgctxt "PermissionKeyName"
 msgid "Edit Design"
-msgstr ""
+msgstr "Редактирай дизайн"
 
 #: concrete/config/install/base/permissions.xml:72
 msgctxt "PermissionKeyDescription"
@@ -18918,11 +18922,6 @@ msgstr "горен колонтитул"
 msgctxt "TemplateFileName"
 msgid "Thumbnail"
 msgstr "Умалено"
-
-#: concrete/blocks/rss_displayer/templates/read_more.php
-msgctxt "TemplateFileName"
-msgid "Read More"
-msgstr "Виж още"
 
 #: concrete/blocks/search/templates/tag_cloud
 msgctxt "TemplateFileName"

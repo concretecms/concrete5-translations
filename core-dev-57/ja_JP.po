@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-08-17 17:11+0000\n"
-"PO-Revision-Date: 2014-08-17 17:31+0000\n"
+"POT-Creation-Date: 2014-08-19 04:00+0000\n"
+"PO-Revision-Date: 2014-08-19 10:11+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/projects/p/concrete5/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
@@ -166,7 +166,7 @@ msgstr "認証キーの期限が切れています。もう一度パスワード
 #: concrete/controllers/install.php:286
 #: concrete/controllers/single_page/account/profile/edit.php:94
 #: concrete/controllers/single_page/dashboard/users/search.php:336
-#: concrete/controllers/single_page/register.php:111
+#: concrete/controllers/single_page/register.php:108
 msgid "The two passwords provided do not match."
 msgstr "パスワードと、確認パスワードが一致しませんでした。"
 
@@ -548,7 +548,7 @@ msgstr "URLを指定してファイルを追加"
 #: concrete/controllers/backend/file.php:114
 #: concrete/tools/files/import.php:10
 #: concrete/tools/files/importers/incoming.php:8
-#: concrete/tools/files/importers/remote.php:10
+#: concrete/tools/files/importers/remote.php:11
 #: concrete/tools/files/importers/single.php:12
 msgid "Unable to add files."
 msgstr "ファイルを追加できませんでした。"
@@ -645,6 +645,7 @@ msgstr "サーバーの入稿用ディレクトリー上のファイルを削除
 #: concrete/src/StyleCustomizer/Style/ColorStyle.php:41
 #: concrete/src/Workflow/Progress/Action/CancelAction.php:7
 #: concrete/tools/area/layout_presets.php:110
+#: concrete/tools/conversations/edit_message.php:37
 #: concrete/tools/dashboard/sitemap_drag_request.php:169
 #: concrete/tools/dashboard/sitemap_drag_request.php:226
 #: concrete/tools/dashboard/sitemap_drag_request.php:228
@@ -795,12 +796,12 @@ msgstr "その他"
 msgid "Files in no sets."
 msgstr "セット定義されていないファイル"
 
-#: concrete/tools/files/importers/remote.php:108
+#: concrete/tools/files/importers/remote.php:113
 #: concrete/tools/files/importers/single.php:34
 msgid "File uploaded successfully."
 msgstr "ファイルのアップロードが成功しました。"
 
-#: concrete/tools/files/importers/remote.php:110
+#: concrete/tools/files/importers/remote.php:115
 #: concrete/tools/files/importers/single.php:36
 msgid "File replaced successfully."
 msgstr "ファイル置き換えが成功しました。"
@@ -819,32 +820,27 @@ msgid "%s file imported successfully."
 msgid_plural "%s files imported successfully"
 msgstr[0] "%s ファイルのインポートが完了しました。"
 
-#: concrete/tools/files/importers/remote.php:32
+#: concrete/tools/files/importers/remote.php:33
 msgid "Remote URL import requires the iconv extension enabled on your server."
 msgstr "リモートURLインポートは、お使いのサーバーでiconvエクステンションが必要です。"
 
-#: concrete/tools/files/importers/remote.php:50
-#, php-format
-msgid "%s is not a valid URL."
-msgstr "%s は有効な URL ではありません。"
-
-#: concrete/tools/files/importers/remote.php:59
+#: concrete/tools/files/importers/remote.php:61
 msgid "You must specify at least one valid URL."
 msgstr "正しいURLを指定してください。"
 
-#: concrete/tools/files/importers/remote.php:86
+#: concrete/tools/files/importers/remote.php:91
 #, php-format
 msgid "Unknown mime-type: %s"
 msgstr "不明な MIME-TYPE: %s"
 
 #. %s is an URL
-#: concrete/tools/files/importers/remote.php:134
+#: concrete/tools/files/importers/remote.php:139
 #, php-format
 msgid "Could not determine the name of the file at %s"
 msgstr "%s のファイル名を特定できませんでした。"
 
 #. %s is an URL
-#: concrete/tools/files/importers/remote.php:138
+#: concrete/tools/files/importers/remote.php:143
 #, php-format
 msgid "There was an error downloading %s"
 msgstr "%s ダウンロード中にエラーが発生しました。"
@@ -1539,23 +1535,33 @@ msgid "Attach Files"
 msgstr "添付ファイル"
 
 #: concrete/tools/conversations/add_message.php:52
-#: concrete/tools/conversations/update_message.php:11
+#: concrete/tools/conversations/update_message.php:14
 msgid "Invalid conversation post token."
 msgstr "会話の投稿トークンが無効です。"
 
 #: concrete/blocks/core_conversation_message/controller.php:43
 #: concrete/tools/conversations/add_message.php:55
-#: concrete/tools/conversations/update_message.php:14
+#: concrete/tools/conversations/update_message.php:17
 msgid "Your message cannot be empty."
 msgstr "メッセージを入力してください。"
 
-#: concrete/tools/conversations/update_message.php:21
+#: concrete/tools/conversations/update_message.php:24
 msgid "Invalid message object."
 msgstr ""
 
-#: concrete/tools/conversations/update_message.php:25
+#: concrete/tools/conversations/update_message.php:28
 msgid "You do not have access to edit this message."
 msgstr ""
+
+#: concrete/tools/conversations/add_message.php:40
+#: concrete/tools/conversations/update_message.php:38
+msgid "You do not have permission to add attachments."
+msgstr ""
+
+#: concrete/tools/conversations/add_message.php:44
+#: concrete/tools/conversations/update_message.php:42
+msgid "You have too many attachments."
+msgstr "添付の数が多すぎます。"
 
 #: concrete/tools/conversations/add_file.php:15
 msgid "Bad token"
@@ -1601,14 +1607,6 @@ msgstr ""
 #: concrete/tools/conversations/add_message.php:34
 msgid "Invalid Page."
 msgstr "無効なページ"
-
-#: concrete/tools/conversations/add_message.php:40
-msgid "You do not have permission to add attachments."
-msgstr ""
-
-#: concrete/tools/conversations/add_message.php:44
-msgid "You have too many attachments."
-msgstr "添付の数が多すぎます。"
 
 #: concrete/tools/conversations/add_message.php:61
 msgid "Invalid parent message."
@@ -3878,15 +3876,15 @@ msgstr "アバターが正常に保存されました。"
 
 #: concrete/controllers/single_page/dashboard/users/search.php:109
 #: concrete/controllers/single_page/dashboard/users/search.php:112
-#: concrete/controllers/single_page/register.php:166
-#: concrete/controllers/single_page/register.php:170
+#: concrete/controllers/single_page/register.php:163
+#: concrete/controllers/single_page/register.php:167
 msgid "Website Registration Notification"
 msgstr "ウェブサイト登録通知"
 
 #: concrete/controllers/single_page/account/profile/edit.php:73
 #: concrete/controllers/single_page/dashboard/users/add.php:51
 #: concrete/controllers/single_page/dashboard/users/search.php:163
-#: concrete/controllers/single_page/register.php:63
+#: concrete/controllers/single_page/register.php:60
 msgid "Invalid email address provided."
 msgstr "無効なメールアドレスです。"
 
@@ -3911,14 +3909,14 @@ msgstr "言語が正常に保存されました。"
 
 #: concrete/controllers/single_page/dashboard/users/add.php:57
 #: concrete/controllers/single_page/dashboard/users/search.php:233
-#: concrete/controllers/single_page/register.php:71
+#: concrete/controllers/single_page/register.php:68
 #, php-format
 msgid "A username must be at least %s characters long."
 msgstr "ユーザーIDは%s文字以上である必要があります（半角英数字）。"
 
 #: concrete/controllers/single_page/dashboard/users/add.php:61
 #: concrete/controllers/single_page/dashboard/users/search.php:237
-#: concrete/controllers/single_page/register.php:75
+#: concrete/controllers/single_page/register.php:72
 #, php-format
 msgid "A username cannot be more than %s characters long."
 msgstr "ユーザーIDは、%s文字以下である必要があります（半角英数文字）。"
@@ -4018,14 +4016,14 @@ msgid "User Attribute Updated."
 msgstr "ユーザー属性が更新されました。"
 
 #: concrete/controllers/single_page/dashboard/users/add.php:77
-#: concrete/controllers/single_page/register.php:94
+#: concrete/controllers/single_page/register.php:91
 msgid "Invalid Username"
 msgstr "不正なユーザーIDです。"
 
 #: concrete/controllers/single_page/account/profile/edit.php:107
 #: concrete/controllers/single_page/dashboard/users/add.php:99
 #: concrete/controllers/single_page/login.php:326
-#: concrete/controllers/single_page/register.php:121
+#: concrete/controllers/single_page/register.php:118
 #: concrete/src/Page/Type/Composer/Control/CollectionAttributeControl.php:122
 #, php-format
 msgid "The field \"%s\" is required"
@@ -4327,6 +4325,10 @@ msgstr "アクティブエディターが更新されました。"
 msgid "Invalid editor handle."
 msgstr "無効なエディターハンドルです。"
 
+#: concrete/controllers/single_page/dashboard/system/conversations/bannedwords.php:29
+msgid "Updated Banned Words."
+msgstr ""
+
 #: concrete/controllers/single_page/dashboard/system/attributes/sets.php:48
 msgid "Attribute set added."
 msgstr "属性セットが追加されました。"
@@ -4539,6 +4541,10 @@ msgstr "リンクが削除されました"
 #: concrete/controllers/single_page/dashboard/system/basics/social.php:33
 msgid "Social Link Added."
 msgstr "ソーシャルリンクが追加れました。"
+
+#: concrete/controllers/single_page/dashboard/system/basics/social.php:50
+msgid "You must specify a valid URL."
+msgstr ""
 
 #: concrete/controllers/single_page/dashboard/system/basics/social.php:53
 msgid "You must choose a service."
@@ -4944,51 +4950,51 @@ msgstr "差出人: %s\n日付: %s\n件名: %s"
 msgid "You haven't written a message!"
 msgstr "メッセージ本文が空白です"
 
-#: concrete/controllers/single_page/register.php:58
+#: concrete/controllers/single_page/register.php:55
 msgid ""
 "Incorrect image validation code. Please check the image and re-enter the "
 "letters or numbers as necessary."
 msgstr "認証画像の文字が間違っています。画像にある英文字や数字を確認し、もう一度入れ直してください。"
 
-#: concrete/controllers/single_page/register.php:65
+#: concrete/controllers/single_page/register.php:62
 #, php-format
 msgid "The email address %s is already in use. Please choose another."
 msgstr "入力されたメールアドレス %s はすでに使用されています。別のメールアドレスを入力してください。"
 
-#: concrete/controllers/single_page/register.php:81
+#: concrete/controllers/single_page/register.php:78
 msgid "A username may only contain letters, numbers and spaces."
 msgstr "ユーザーIDには、半角英数字と半角空白のみ含めることができます。"
 
-#: concrete/controllers/single_page/register.php:83
+#: concrete/controllers/single_page/register.php:80
 msgid "A username may only contain letters or numbers."
 msgstr "ユーザーIDには、半角英文字と数字のみ含めることができます。"
 
-#: concrete/controllers/single_page/register.php:88
+#: concrete/controllers/single_page/register.php:85
 #, php-format
 msgid "The username %s already exists. Please choose another"
 msgstr "ユーザーID %s はすでに使用されています。別のIDを入力してください。"
 
-#: concrete/controllers/single_page/register.php:202
+#: concrete/controllers/single_page/register.php:199
 msgid "Validate Email Address"
 msgstr "メールアドレスを確認"
 
-#: concrete/controllers/single_page/register.php:282
+#: concrete/controllers/single_page/register.php:279
 msgid "Your account has been created, and you are now logged in."
 msgstr "あなたのアカウントが作成されました。すでにログインしています。"
 
-#: concrete/controllers/single_page/register.php:287
+#: concrete/controllers/single_page/register.php:284
 msgid ""
 "You are registered but you need to validate your email address. Some or all "
 "functionality on this site will be limited until you do so."
 msgstr "ユーザー登録が完了しましたが、メールアドレスの確認が必要です。それまで、サイト内の機能の一部が利用できない場合があります。"
 
-#: concrete/controllers/single_page/register.php:288
+#: concrete/controllers/single_page/register.php:285
 msgid ""
 "An email has been sent to your email address. Click on the URL contained in "
 "the email to validate your email address."
 msgstr "メールアドレス確認のメールが送信されました。メールの中にあるURLをクリックして、メールアドレスの確認作業を行ってください。"
 
-#: concrete/controllers/single_page/register.php:293
+#: concrete/controllers/single_page/register.php:290
 msgid ""
 "You are registered but a site administrator must review your account, you "
 "will not be able to login until your account has been approved."
@@ -8787,7 +8793,6 @@ msgctxt "Authored"
 msgid "by %s"
 msgstr "%s で"
 
-#: concrete/blocks/rss_displayer/templates/read_more.php:36
 #: concrete/elements/gathering/templates/tile/featured/view.php:11
 #: concrete/elements/gathering/templates/tile/masthead_byline_description/view.php:14
 msgid "Read More"
@@ -11665,13 +11670,8 @@ msgstr "有効なRSSフィードのアドレスを入力してください。"
 msgid "Please enter the number of items to display."
 msgstr "RSSフィードの表示件数を入力してください。"
 
-#: concrete/blocks/rss_displayer/controller.php:55
-msgid "Oops, it looks like you've entered an invalid feed address!"
-msgstr "入力されたフィードのアドレスが間違っているようです"
-
 #: concrete/blocks/rss_displayer/form_setup_html.php:4
-#: concrete/blocks/rss_displayer/templates/read_more.php:14
-#: concrete/blocks/rss_displayer/view.php:14
+#: concrete/blocks/rss_displayer/view.php:16
 msgid "F jS"
 msgstr "n月j日"
 
@@ -11782,6 +11782,10 @@ msgstr "最高"
 #: concrete/blocks/flash_content/edit.php:34
 msgid "Minimum Version"
 msgstr "必須Flashバージョン"
+
+#: concrete/blocks/testimonial/form.php:14
+msgid "Picture"
+msgstr "イメージ"
 
 #: concrete/blocks/testimonial/form.php:32
 msgid "Company"
@@ -12668,11 +12672,11 @@ msgstr "選択済みの国"
 msgid "Default Country"
 msgstr "デフォルト国"
 
-#: concrete/attributes/address/controller.php:156
+#: concrete/attributes/address/controller.php:193
 msgid "You must specify at least one country."
 msgstr "国を少なくとも1つ選択してください。"
 
-#: concrete/attributes/address/controller.php:158
+#: concrete/attributes/address/controller.php:200
 msgid "The default country must be in the list of custom countries."
 msgstr "デフォルトの国は、リストにある国から選ぶ必要があります。"
 
@@ -18895,11 +18899,6 @@ msgstr "ヘッダー"
 msgctxt "TemplateFileName"
 msgid "Thumbnail"
 msgstr "サムネイル"
-
-#: concrete/blocks/rss_displayer/templates/read_more.php
-msgctxt "TemplateFileName"
-msgid "Read More"
-msgstr "続きを読む"
 
 #: concrete/blocks/search/templates/tag_cloud
 msgctxt "TemplateFileName"

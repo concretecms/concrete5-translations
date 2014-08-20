@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-08-17 17:11+0000\n"
-"PO-Revision-Date: 2014-08-17 21:40+0000\n"
+"POT-Creation-Date: 2014-08-19 04:00+0000\n"
+"PO-Revision-Date: 2014-08-19 20:21+0000\n"
 "Last-Translator: Vasilis Fotopoulos <basalba@gmail.com>\n"
 "Language-Team: Greek (Greece) (http://www.transifex.com/projects/p/concrete5/language/el_GR/)\n"
 "MIME-Version: 1.0\n"
@@ -163,7 +163,7 @@ msgstr "Το Κλειδί έχει λήξει. Παρακαλούμε επισκ
 #: concrete/controllers/install.php:286
 #: concrete/controllers/single_page/account/profile/edit.php:94
 #: concrete/controllers/single_page/dashboard/users/search.php:336
-#: concrete/controllers/single_page/register.php:111
+#: concrete/controllers/single_page/register.php:108
 msgid "The two passwords provided do not match."
 msgstr "Οι δύο κωδικοί που δώσατε δεν ταιριάζουν."
 
@@ -545,7 +545,7 @@ msgstr "Προσθήκη από Απομακρυσμένη URL"
 #: concrete/controllers/backend/file.php:114
 #: concrete/tools/files/import.php:10
 #: concrete/tools/files/importers/incoming.php:8
-#: concrete/tools/files/importers/remote.php:10
+#: concrete/tools/files/importers/remote.php:11
 #: concrete/tools/files/importers/single.php:12
 msgid "Unable to add files."
 msgstr "Δεν είναι δυνατή η προσθήκη αρχείων."
@@ -642,6 +642,7 @@ msgstr "Αφαιρέστε τα αρχεία από τον Κατάλογο  inc
 #: concrete/src/StyleCustomizer/Style/ColorStyle.php:41
 #: concrete/src/Workflow/Progress/Action/CancelAction.php:7
 #: concrete/tools/area/layout_presets.php:110
+#: concrete/tools/conversations/edit_message.php:37
 #: concrete/tools/dashboard/sitemap_drag_request.php:169
 #: concrete/tools/dashboard/sitemap_drag_request.php:226
 #: concrete/tools/dashboard/sitemap_drag_request.php:228
@@ -792,12 +793,12 @@ msgstr "Άλλα"
 msgid "Files in no sets."
 msgstr "Τα Αρχεία δεν είναι σε σετ."
 
-#: concrete/tools/files/importers/remote.php:108
+#: concrete/tools/files/importers/remote.php:113
 #: concrete/tools/files/importers/single.php:34
 msgid "File uploaded successfully."
 msgstr "Το αρχείο μεταφορτώθηκε επιτυχώς."
 
-#: concrete/tools/files/importers/remote.php:110
+#: concrete/tools/files/importers/remote.php:115
 #: concrete/tools/files/importers/single.php:36
 msgid "File replaced successfully."
 msgstr "Το Αρχείο αντικαταστάθηκε επιτυχώς."
@@ -817,32 +818,27 @@ msgid_plural "%s files imported successfully"
 msgstr[0] "%s έγινε εισαγωγή αρχείου με επιτυχία"
 msgstr[1] "%s έγινε εισαγωγή αρχείων με επιτυχία"
 
-#: concrete/tools/files/importers/remote.php:32
+#: concrete/tools/files/importers/remote.php:33
 msgid "Remote URL import requires the iconv extension enabled on your server."
 msgstr "Η εισαγωγή απομακρυσμένης URL απαιτεί την επέκταση iconv ενεργοποιημένη στο διακομιστή σας."
 
-#: concrete/tools/files/importers/remote.php:50
-#, php-format
-msgid "%s is not a valid URL."
-msgstr "%s δεν είναι έγκυρη διεύθυνση URL."
-
-#: concrete/tools/files/importers/remote.php:59
+#: concrete/tools/files/importers/remote.php:61
 msgid "You must specify at least one valid URL."
 msgstr "Πρέπει να καθορίσετε τουλάχιστον μία έγκυρη διεύθυνση URL."
 
-#: concrete/tools/files/importers/remote.php:86
+#: concrete/tools/files/importers/remote.php:91
 #, php-format
 msgid "Unknown mime-type: %s"
 msgstr "Άγνωστος mime-type: %s"
 
 #. %s is an URL
-#: concrete/tools/files/importers/remote.php:134
+#: concrete/tools/files/importers/remote.php:139
 #, php-format
 msgid "Could not determine the name of the file at %s"
 msgstr "Δεν έγινε δυνατόν να καθοριστεί το όνομα του αρχείου στο %s"
 
 #. %s is an URL
-#: concrete/tools/files/importers/remote.php:138
+#: concrete/tools/files/importers/remote.php:143
 #, php-format
 msgid "There was an error downloading %s"
 msgstr "Παρουσιάστηκε ένα σφάλμα στο κατέβασμα %s"
@@ -1542,23 +1538,33 @@ msgid "Attach Files"
 msgstr "Επισύναψη Αρχείων"
 
 #: concrete/tools/conversations/add_message.php:52
-#: concrete/tools/conversations/update_message.php:11
+#: concrete/tools/conversations/update_message.php:14
 msgid "Invalid conversation post token."
 msgstr "Άκυρο διακριτικό δημοσίευσης συνομιλίας."
 
 #: concrete/blocks/core_conversation_message/controller.php:43
 #: concrete/tools/conversations/add_message.php:55
-#: concrete/tools/conversations/update_message.php:14
+#: concrete/tools/conversations/update_message.php:17
 msgid "Your message cannot be empty."
 msgstr "Το μήνυμά σας δεν μπορεί να είναι κενό."
 
-#: concrete/tools/conversations/update_message.php:21
+#: concrete/tools/conversations/update_message.php:24
 msgid "Invalid message object."
 msgstr "Μη έγκυρο αντικείμενο μηνύματος."
 
-#: concrete/tools/conversations/update_message.php:25
+#: concrete/tools/conversations/update_message.php:28
 msgid "You do not have access to edit this message."
 msgstr "Δεν έχετε πρόσβαση για να επεξεργαστείτε αυτό το μήνυμα."
+
+#: concrete/tools/conversations/add_message.php:40
+#: concrete/tools/conversations/update_message.php:38
+msgid "You do not have permission to add attachments."
+msgstr "Δεν έχετε άδεια για να προσθέσετε συνημμένα."
+
+#: concrete/tools/conversations/add_message.php:44
+#: concrete/tools/conversations/update_message.php:42
+msgid "You have too many attachments."
+msgstr "Έχετε πάρα πολλά συνημμένα ."
 
 #: concrete/tools/conversations/add_file.php:15
 msgid "Bad token"
@@ -1604,14 +1610,6 @@ msgstr "Δεν έχετε πρόσβαση για να προσθέσετε έν
 #: concrete/tools/conversations/add_message.php:34
 msgid "Invalid Page."
 msgstr "Μη έγκυρη Σελίδα."
-
-#: concrete/tools/conversations/add_message.php:40
-msgid "You do not have permission to add attachments."
-msgstr "Δεν έχετε άδεια για να προσθέσετε συνημμένα."
-
-#: concrete/tools/conversations/add_message.php:44
-msgid "You have too many attachments."
-msgstr "Έχετε πάρα πολλά συνημμένα ."
 
 #: concrete/tools/conversations/add_message.php:61
 msgid "Invalid parent message."
@@ -3882,15 +3880,15 @@ msgstr "Το Avatar αποθηκεύτηκε με επιτυχία."
 
 #: concrete/controllers/single_page/dashboard/users/search.php:109
 #: concrete/controllers/single_page/dashboard/users/search.php:112
-#: concrete/controllers/single_page/register.php:166
-#: concrete/controllers/single_page/register.php:170
+#: concrete/controllers/single_page/register.php:163
+#: concrete/controllers/single_page/register.php:167
 msgid "Website Registration Notification"
 msgstr "Γνωστοποίηση Εγγραφής στο Website"
 
 #: concrete/controllers/single_page/account/profile/edit.php:73
 #: concrete/controllers/single_page/dashboard/users/add.php:51
 #: concrete/controllers/single_page/dashboard/users/search.php:163
-#: concrete/controllers/single_page/register.php:63
+#: concrete/controllers/single_page/register.php:60
 msgid "Invalid email address provided."
 msgstr "Η διεύθυνση ηλεκτρονικού ταχυδρομείου που δώσατε είναι Άκυρη."
 
@@ -3915,14 +3913,14 @@ msgstr "Η Γλώσσα αποθηκεύτηκε με επιτυχία."
 
 #: concrete/controllers/single_page/dashboard/users/add.php:57
 #: concrete/controllers/single_page/dashboard/users/search.php:233
-#: concrete/controllers/single_page/register.php:71
+#: concrete/controllers/single_page/register.php:68
 #, php-format
 msgid "A username must be at least %s characters long."
 msgstr "Ένα όνομα χρήστη πρέπει να είναι τουλάχιστον %s χαρακτήρες."
 
 #: concrete/controllers/single_page/dashboard/users/add.php:61
 #: concrete/controllers/single_page/dashboard/users/search.php:237
-#: concrete/controllers/single_page/register.php:75
+#: concrete/controllers/single_page/register.php:72
 #, php-format
 msgid "A username cannot be more than %s characters long."
 msgstr "Ένα όνομα χρήστη δεν μπορεί να έχει πάνω από %s χαρακτήρες."
@@ -4022,14 +4020,14 @@ msgid "User Attribute Updated."
 msgstr "Το Χαρακτηριστικό Χρήστη ενημερώθηκε."
 
 #: concrete/controllers/single_page/dashboard/users/add.php:77
-#: concrete/controllers/single_page/register.php:94
+#: concrete/controllers/single_page/register.php:91
 msgid "Invalid Username"
 msgstr "Μη έγκυρο Όνομα Χρήστη"
 
 #: concrete/controllers/single_page/account/profile/edit.php:107
 #: concrete/controllers/single_page/dashboard/users/add.php:99
 #: concrete/controllers/single_page/login.php:326
-#: concrete/controllers/single_page/register.php:121
+#: concrete/controllers/single_page/register.php:118
 #: concrete/src/Page/Type/Composer/Control/CollectionAttributeControl.php:122
 #, php-format
 msgid "The field \"%s\" is required"
@@ -4331,6 +4329,10 @@ msgstr "O ενεργός επεξεργαστής ενημερώθηκε."
 msgid "Invalid editor handle."
 msgstr "Μη έγκυρος δείκτης επεξεργαστή."
 
+#: concrete/controllers/single_page/dashboard/system/conversations/bannedwords.php:29
+msgid "Updated Banned Words."
+msgstr "Ενημερωμένες Αναγορευμένες Λέξεις "
+
 #: concrete/controllers/single_page/dashboard/system/attributes/sets.php:48
 msgid "Attribute set added."
 msgstr "Το Σετ Χαρακτηριστικών προστέθηκε."
@@ -4543,6 +4545,10 @@ msgstr "Ο Σύνδεσμος Διεγράφη "
 #: concrete/controllers/single_page/dashboard/system/basics/social.php:33
 msgid "Social Link Added."
 msgstr "Ο Κοινωνικός Σύνδεσμος προστέθηκε."
+
+#: concrete/controllers/single_page/dashboard/system/basics/social.php:50
+msgid "You must specify a valid URL."
+msgstr "Πρέπει να ορίσετε μια έγκυρη URL"
 
 #: concrete/controllers/single_page/dashboard/system/basics/social.php:53
 msgid "You must choose a service."
@@ -4948,51 +4954,51 @@ msgstr "Από: %s\nΗμερομηνία αποστολής: %s\nΘέμα: %s"
 msgid "You haven't written a message!"
 msgstr "Δεν έχετε γράψει μήνυμα!"
 
-#: concrete/controllers/single_page/register.php:58
+#: concrete/controllers/single_page/register.php:55
 msgid ""
 "Incorrect image validation code. Please check the image and re-enter the "
 "letters or numbers as necessary."
 msgstr "Εσφαλμένος κωδικός επικύρωσης εικόνας. Παρακαλούμε ελέγξτε την εικόνα και εισάγετε τα γράμματα ή τους αριθμούς, όπως απαιτείται."
 
-#: concrete/controllers/single_page/register.php:65
+#: concrete/controllers/single_page/register.php:62
 #, php-format
 msgid "The email address %s is already in use. Please choose another."
 msgstr "Η διεύθυνση ηλεκτρονικού ταχυδρομείου %s είναι ήδη σε χρήση. Παρακαλώ επιλέξτε μια άλλη."
 
-#: concrete/controllers/single_page/register.php:81
+#: concrete/controllers/single_page/register.php:78
 msgid "A username may only contain letters, numbers and spaces."
 msgstr "Ένα όνομα χρήστη μπορεί να περιέχει μόνο γράμματα, αριθμούς και διαστήματα."
 
-#: concrete/controllers/single_page/register.php:83
+#: concrete/controllers/single_page/register.php:80
 msgid "A username may only contain letters or numbers."
 msgstr "Ένα όνομα χρήστη μπορεί να περιέχει μόνο γράμματα ή αριθμούς."
 
-#: concrete/controllers/single_page/register.php:88
+#: concrete/controllers/single_page/register.php:85
 #, php-format
 msgid "The username %s already exists. Please choose another"
 msgstr "Το όνομα χρήστη %s υπάρχει ήδη. Παρακαλώ επιλέξτε ένα άλλο"
 
-#: concrete/controllers/single_page/register.php:202
+#: concrete/controllers/single_page/register.php:199
 msgid "Validate Email Address"
 msgstr "Επικύρωση Διεύθυνσης Email"
 
-#: concrete/controllers/single_page/register.php:282
+#: concrete/controllers/single_page/register.php:279
 msgid "Your account has been created, and you are now logged in."
 msgstr "Ο λογαριασμός σας δημιουργήθηκε, και είστε συνδεδεμένος τώρα."
 
-#: concrete/controllers/single_page/register.php:287
+#: concrete/controllers/single_page/register.php:284
 msgid ""
 "You are registered but you need to validate your email address. Some or all "
 "functionality on this site will be limited until you do so."
 msgstr "Η Εγγραφή σας έγινε, αλλά θα πρέπει να επικυρώσετε τη διεύθυνση email σας. Ορισμένες ή όλες οι λειτουργίες σε αυτό το site θα είναι περιορισμένες μέχρι να το κάνετε."
 
-#: concrete/controllers/single_page/register.php:288
+#: concrete/controllers/single_page/register.php:285
 msgid ""
 "An email has been sent to your email address. Click on the URL contained in "
 "the email to validate your email address."
 msgstr "Ένα email έχει σταλεί στην ηλεκτρονική σας διεύθυνση. Κάντε κλικ στη διεύθυνση URL που περιέχεται στο email για να επικυρώσετε τη διεύθυνση email σας."
 
-#: concrete/controllers/single_page/register.php:293
+#: concrete/controllers/single_page/register.php:290
 msgid ""
 "You are registered but a site administrator must review your account, you "
 "will not be able to login until your account has been approved."
@@ -8806,7 +8812,6 @@ msgctxt "Authored"
 msgid "by %s"
 msgstr "από %s"
 
-#: concrete/blocks/rss_displayer/templates/read_more.php:36
 #: concrete/elements/gathering/templates/tile/featured/view.php:11
 #: concrete/elements/gathering/templates/tile/masthead_byline_description/view.php:14
 msgid "Read More"
@@ -11687,13 +11692,8 @@ msgstr "Παρακαλώ εισάγετε μια έγκυρη διεύθυνση
 msgid "Please enter the number of items to display."
 msgstr "Παρακαλούμε, εισάγετε τον αριθμό των στοιχείων που θα εμφανίζονται."
 
-#: concrete/blocks/rss_displayer/controller.php:55
-msgid "Oops, it looks like you've entered an invalid feed address!"
-msgstr "Δυστυχώς, φαίνεται ότι έχετε εισάγει μια μη έγκυρη διεύθυνση τροφοδοσίας!"
-
 #: concrete/blocks/rss_displayer/form_setup_html.php:4
-#: concrete/blocks/rss_displayer/templates/read_more.php:14
-#: concrete/blocks/rss_displayer/view.php:14
+#: concrete/blocks/rss_displayer/view.php:16
 msgid "F jS"
 msgstr "F jS"
 
@@ -11804,6 +11804,10 @@ msgstr "καλύτερη"
 #: concrete/blocks/flash_content/edit.php:34
 msgid "Minimum Version"
 msgstr "Ελάχιστη Έκδοση"
+
+#: concrete/blocks/testimonial/form.php:14
+msgid "Picture"
+msgstr "Εικόνα"
 
 #: concrete/blocks/testimonial/form.php:32
 msgid "Company"
@@ -12691,11 +12695,11 @@ msgstr "Επιλεγμένες Χώρες"
 msgid "Default Country"
 msgstr "Προεπιλεγμένη Χώρα "
 
-#: concrete/attributes/address/controller.php:156
+#: concrete/attributes/address/controller.php:193
 msgid "You must specify at least one country."
 msgstr "Πρέπει να καθορίσετε τουλάχιστον μία χώρα."
 
-#: concrete/attributes/address/controller.php:158
+#: concrete/attributes/address/controller.php:200
 msgid "The default country must be in the list of custom countries."
 msgstr "Η προεπιλεγμένη χώρα πρέπει να είναι στη λίστα των προσαρμοσμένων χωρών."
 
@@ -18920,11 +18924,6 @@ msgstr "Κεφαλίδα"
 msgctxt "TemplateFileName"
 msgid "Thumbnail"
 msgstr "Μικρογραφία"
-
-#: concrete/blocks/rss_displayer/templates/read_more.php
-msgctxt "TemplateFileName"
-msgid "Read More"
-msgstr "Διαβάστε περισσότερα"
 
 #: concrete/blocks/search/templates/tag_cloud
 msgctxt "TemplateFileName"

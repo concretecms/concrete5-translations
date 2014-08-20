@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-08-17 17:11+0000\n"
-"PO-Revision-Date: 2014-08-17 17:31+0000\n"
+"POT-Creation-Date: 2014-08-19 04:00+0000\n"
+"PO-Revision-Date: 2014-08-19 09:57+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Arabic (http://www.transifex.com/projects/p/concrete5/language/ar/)\n"
 "MIME-Version: 1.0\n"
@@ -161,7 +161,7 @@ msgstr "انتهت صلاحية الرمز. يرجى زيارة صفحة است�
 #: concrete/controllers/install.php:286
 #: concrete/controllers/single_page/account/profile/edit.php:94
 #: concrete/controllers/single_page/dashboard/users/search.php:336
-#: concrete/controllers/single_page/register.php:111
+#: concrete/controllers/single_page/register.php:108
 msgid "The two passwords provided do not match."
 msgstr "كلمتا السرّ غير متطابقتين."
 
@@ -543,7 +543,7 @@ msgstr "أضف من عنوان URL خارجي"
 #: concrete/controllers/backend/file.php:114
 #: concrete/tools/files/import.php:10
 #: concrete/tools/files/importers/incoming.php:8
-#: concrete/tools/files/importers/remote.php:10
+#: concrete/tools/files/importers/remote.php:11
 #: concrete/tools/files/importers/single.php:12
 msgid "Unable to add files."
 msgstr "تعذرت إضافة الملفات."
@@ -640,6 +640,7 @@ msgstr "أزل الملفات من دليل الملفات الواردة /incom
 #: concrete/src/StyleCustomizer/Style/ColorStyle.php:41
 #: concrete/src/Workflow/Progress/Action/CancelAction.php:7
 #: concrete/tools/area/layout_presets.php:110
+#: concrete/tools/conversations/edit_message.php:37
 #: concrete/tools/dashboard/sitemap_drag_request.php:169
 #: concrete/tools/dashboard/sitemap_drag_request.php:226
 #: concrete/tools/dashboard/sitemap_drag_request.php:228
@@ -790,12 +791,12 @@ msgstr "آخر"
 msgid "Files in no sets."
 msgstr "ملفات لا تنتمي لأي مجموعة"
 
-#: concrete/tools/files/importers/remote.php:108
+#: concrete/tools/files/importers/remote.php:113
 #: concrete/tools/files/importers/single.php:34
 msgid "File uploaded successfully."
 msgstr ""
 
-#: concrete/tools/files/importers/remote.php:110
+#: concrete/tools/files/importers/remote.php:115
 #: concrete/tools/files/importers/single.php:36
 msgid "File replaced successfully."
 msgstr ""
@@ -819,32 +820,27 @@ msgstr[3] ""
 msgstr[4] ""
 msgstr[5] ""
 
-#: concrete/tools/files/importers/remote.php:32
+#: concrete/tools/files/importers/remote.php:33
 msgid "Remote URL import requires the iconv extension enabled on your server."
 msgstr "استيراد الملفات الخارجية يتطلب وجود وتفعيل iconv على خادمك."
 
-#: concrete/tools/files/importers/remote.php:50
-#, php-format
-msgid "%s is not a valid URL."
-msgstr ""
-
-#: concrete/tools/files/importers/remote.php:59
+#: concrete/tools/files/importers/remote.php:61
 msgid "You must specify at least one valid URL."
 msgstr "يجب أن تحدد عنوان URL واحد صحيح على الأقل."
 
-#: concrete/tools/files/importers/remote.php:86
+#: concrete/tools/files/importers/remote.php:91
 #, php-format
 msgid "Unknown mime-type: %s"
 msgstr ""
 
 #. %s is an URL
-#: concrete/tools/files/importers/remote.php:134
+#: concrete/tools/files/importers/remote.php:139
 #, php-format
 msgid "Could not determine the name of the file at %s"
 msgstr ""
 
 #. %s is an URL
-#: concrete/tools/files/importers/remote.php:138
+#: concrete/tools/files/importers/remote.php:143
 #, php-format
 msgid "There was an error downloading %s"
 msgstr ""
@@ -1564,22 +1560,32 @@ msgid "Attach Files"
 msgstr ""
 
 #: concrete/tools/conversations/add_message.php:52
-#: concrete/tools/conversations/update_message.php:11
+#: concrete/tools/conversations/update_message.php:14
 msgid "Invalid conversation post token."
 msgstr ""
 
 #: concrete/blocks/core_conversation_message/controller.php:43
 #: concrete/tools/conversations/add_message.php:55
-#: concrete/tools/conversations/update_message.php:14
+#: concrete/tools/conversations/update_message.php:17
 msgid "Your message cannot be empty."
 msgstr ""
 
-#: concrete/tools/conversations/update_message.php:21
+#: concrete/tools/conversations/update_message.php:24
 msgid "Invalid message object."
 msgstr ""
 
-#: concrete/tools/conversations/update_message.php:25
+#: concrete/tools/conversations/update_message.php:28
 msgid "You do not have access to edit this message."
+msgstr ""
+
+#: concrete/tools/conversations/add_message.php:40
+#: concrete/tools/conversations/update_message.php:38
+msgid "You do not have permission to add attachments."
+msgstr ""
+
+#: concrete/tools/conversations/add_message.php:44
+#: concrete/tools/conversations/update_message.php:42
+msgid "You have too many attachments."
 msgstr ""
 
 #: concrete/tools/conversations/add_file.php:15
@@ -1625,14 +1631,6 @@ msgstr ""
 #: concrete/tools/conversations/add_message.php:30
 #: concrete/tools/conversations/add_message.php:34
 msgid "Invalid Page."
-msgstr ""
-
-#: concrete/tools/conversations/add_message.php:40
-msgid "You do not have permission to add attachments."
-msgstr ""
-
-#: concrete/tools/conversations/add_message.php:44
-msgid "You have too many attachments."
 msgstr ""
 
 #: concrete/tools/conversations/add_message.php:61
@@ -3908,15 +3906,15 @@ msgstr ""
 
 #: concrete/controllers/single_page/dashboard/users/search.php:109
 #: concrete/controllers/single_page/dashboard/users/search.php:112
-#: concrete/controllers/single_page/register.php:166
-#: concrete/controllers/single_page/register.php:170
+#: concrete/controllers/single_page/register.php:163
+#: concrete/controllers/single_page/register.php:167
 msgid "Website Registration Notification"
 msgstr "تنويهات التسجيل بالموقع"
 
 #: concrete/controllers/single_page/account/profile/edit.php:73
 #: concrete/controllers/single_page/dashboard/users/add.php:51
 #: concrete/controllers/single_page/dashboard/users/search.php:163
-#: concrete/controllers/single_page/register.php:63
+#: concrete/controllers/single_page/register.php:60
 msgid "Invalid email address provided."
 msgstr "عنوان البريد الإلكتروني المكتوب غير صحيح."
 
@@ -3941,14 +3939,14 @@ msgstr ""
 
 #: concrete/controllers/single_page/dashboard/users/add.php:57
 #: concrete/controllers/single_page/dashboard/users/search.php:233
-#: concrete/controllers/single_page/register.php:71
+#: concrete/controllers/single_page/register.php:68
 #, php-format
 msgid "A username must be at least %s characters long."
 msgstr "يجب أن يتكون اسم المستخدم من %s أحرف على الأقل."
 
 #: concrete/controllers/single_page/dashboard/users/add.php:61
 #: concrete/controllers/single_page/dashboard/users/search.php:237
-#: concrete/controllers/single_page/register.php:75
+#: concrete/controllers/single_page/register.php:72
 #, php-format
 msgid "A username cannot be more than %s characters long."
 msgstr "لا يمكن أن يتكون اسم المستخدم من أكثر من %s أحرف."
@@ -4048,14 +4046,14 @@ msgid "User Attribute Updated."
 msgstr "حُدثت صفة المستخدم."
 
 #: concrete/controllers/single_page/dashboard/users/add.php:77
-#: concrete/controllers/single_page/register.php:94
+#: concrete/controllers/single_page/register.php:91
 msgid "Invalid Username"
 msgstr "اسم مستخدم غير صحيح"
 
 #: concrete/controllers/single_page/account/profile/edit.php:107
 #: concrete/controllers/single_page/dashboard/users/add.php:99
 #: concrete/controllers/single_page/login.php:326
-#: concrete/controllers/single_page/register.php:121
+#: concrete/controllers/single_page/register.php:118
 #: concrete/src/Page/Type/Composer/Control/CollectionAttributeControl.php:122
 #, php-format
 msgid "The field \"%s\" is required"
@@ -4357,6 +4355,10 @@ msgstr ""
 msgid "Invalid editor handle."
 msgstr ""
 
+#: concrete/controllers/single_page/dashboard/system/conversations/bannedwords.php:29
+msgid "Updated Banned Words."
+msgstr ""
+
 #: concrete/controllers/single_page/dashboard/system/attributes/sets.php:48
 msgid "Attribute set added."
 msgstr "أضيفت مجموعة الصفات."
@@ -4568,6 +4570,10 @@ msgstr ""
 
 #: concrete/controllers/single_page/dashboard/system/basics/social.php:33
 msgid "Social Link Added."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/basics/social.php:50
+msgid "You must specify a valid URL."
 msgstr ""
 
 #: concrete/controllers/single_page/dashboard/system/basics/social.php:53
@@ -4974,51 +4980,51 @@ msgstr "من : %s\nتاريخ الإرسال: %s\nالموضوع: %s"
 msgid "You haven't written a message!"
 msgstr "لم تكتب رسالة!"
 
-#: concrete/controllers/single_page/register.php:58
+#: concrete/controllers/single_page/register.php:55
 msgid ""
 "Incorrect image validation code. Please check the image and re-enter the "
 "letters or numbers as necessary."
 msgstr "رمز التحقق غير صحيح. يرجى الاطلاع على الصورة وإعادة إدخال الحروف أو الأرقام كما تظهر."
 
-#: concrete/controllers/single_page/register.php:65
+#: concrete/controllers/single_page/register.php:62
 #, php-format
 msgid "The email address %s is already in use. Please choose another."
 msgstr "عنوان البريد الإلكتروني %s مستخدم مسبقاً. رجاءً اختر عنواناً آخر."
 
-#: concrete/controllers/single_page/register.php:81
+#: concrete/controllers/single_page/register.php:78
 msgid "A username may only contain letters, numbers and spaces."
 msgstr "اسم المستخدم يمكن أن يحتوي أحرفاً لاتينية وأرقاماً ومسافات فقط."
 
-#: concrete/controllers/single_page/register.php:83
+#: concrete/controllers/single_page/register.php:80
 msgid "A username may only contain letters or numbers."
 msgstr "اسم المستخدم يمكن أن يحتوي أحرفاً لاتينية وأرقاماً فقط."
 
-#: concrete/controllers/single_page/register.php:88
+#: concrete/controllers/single_page/register.php:85
 #, php-format
 msgid "The username %s already exists. Please choose another"
 msgstr "اسم المستخدم %s مسجّل مسبقاً. رجاءً اختر اسماً آخر."
 
-#: concrete/controllers/single_page/register.php:202
+#: concrete/controllers/single_page/register.php:199
 msgid "Validate Email Address"
 msgstr "التحقق من عنوان البريد الإلكتروني"
 
-#: concrete/controllers/single_page/register.php:282
+#: concrete/controllers/single_page/register.php:279
 msgid "Your account has been created, and you are now logged in."
 msgstr "أُنشئ حسابك، وأنت الآن مُسجّل الدخول."
 
-#: concrete/controllers/single_page/register.php:287
+#: concrete/controllers/single_page/register.php:284
 msgid ""
 "You are registered but you need to validate your email address. Some or all "
 "functionality on this site will be limited until you do so."
 msgstr "تم تسجيلك لكن عليك تأكيد صحة عنوان بريدك الإلكتروني. بعض أو كافة الوظائف على هذا الموقع ستكون محدودة حتى تقوم بذلك."
 
-#: concrete/controllers/single_page/register.php:288
+#: concrete/controllers/single_page/register.php:285
 msgid ""
 "An email has been sent to your email address. Click on the URL contained in "
 "the email to validate your email address."
 msgstr "أرسلت رسالة إلى عنوان بريدك الإلكتروني. اضغط على الرابط الوارد في الرسالة لتأكيد عنوان بريدك الإلكتروني."
 
-#: concrete/controllers/single_page/register.php:293
+#: concrete/controllers/single_page/register.php:290
 msgid ""
 "You are registered but a site administrator must review your account, you "
 "will not be able to login until your account has been approved."
@@ -8892,7 +8898,6 @@ msgctxt "Authored"
 msgid "by %s"
 msgstr ""
 
-#: concrete/blocks/rss_displayer/templates/read_more.php:36
 #: concrete/elements/gathering/templates/tile/featured/view.php:11
 #: concrete/elements/gathering/templates/tile/masthead_byline_description/view.php:14
 msgid "Read More"
@@ -11785,13 +11790,8 @@ msgstr "رجاءً أدخل عنوان خلاصة صحيح."
 msgid "Please enter the number of items to display."
 msgstr "رجاء حدّد عدد العناصر المطلوب عرضها."
 
-#: concrete/blocks/rss_displayer/controller.php:55
-msgid "Oops, it looks like you've entered an invalid feed address!"
-msgstr "يبدو أنك أدخلت عنوان خلاصة غير صحيح!"
-
 #: concrete/blocks/rss_displayer/form_setup_html.php:4
-#: concrete/blocks/rss_displayer/templates/read_more.php:14
-#: concrete/blocks/rss_displayer/view.php:14
+#: concrete/blocks/rss_displayer/view.php:16
 msgid "F jS"
 msgstr "F jS"
 
@@ -11902,6 +11902,10 @@ msgstr "الأفضل"
 #: concrete/blocks/flash_content/edit.php:34
 msgid "Minimum Version"
 msgstr "أقدم نسخة"
+
+#: concrete/blocks/testimonial/form.php:14
+msgid "Picture"
+msgstr ""
 
 #: concrete/blocks/testimonial/form.php:32
 msgid "Company"
@@ -12793,11 +12797,11 @@ msgstr "الدول المحددة"
 msgid "Default Country"
 msgstr "الدولة الافتراضية"
 
-#: concrete/attributes/address/controller.php:156
+#: concrete/attributes/address/controller.php:193
 msgid "You must specify at least one country."
 msgstr "يجب أن تحدد دولة واحدة على الأقل."
 
-#: concrete/attributes/address/controller.php:158
+#: concrete/attributes/address/controller.php:200
 msgid "The default country must be in the list of custom countries."
 msgstr "الدولة الافتراضية يجب أن تكون ضمن قائمة الدول المخصصة."
 
@@ -19030,11 +19034,6 @@ msgstr "الترويسة"
 msgctxt "TemplateFileName"
 msgid "Thumbnail"
 msgstr "صورة مُصغّرة"
-
-#: concrete/blocks/rss_displayer/templates/read_more.php
-msgctxt "TemplateFileName"
-msgid "Read More"
-msgstr "اقرأ المزيد"
 
 #: concrete/blocks/search/templates/tag_cloud
 msgctxt "TemplateFileName"
