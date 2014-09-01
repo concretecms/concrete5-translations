@@ -5,9 +5,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-08-29 04:00+0000\n"
-"PO-Revision-Date: 2014-08-29 17:11+0000\n"
-"Last-Translator: alelektronik <ales.drinovec@gmail.com>\n"
+"POT-Creation-Date: 2014-08-30 04:00+0000\n"
+"PO-Revision-Date: 2014-08-30 09:57+0000\n"
+"Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Slovenian (Slovenia) (http://www.transifex.com/projects/p/concrete5/language/sl_SI/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -85,7 +85,7 @@ msgstr "Vpis z lokalnim računom."
 #: concrete/authentication/concrete/form.php:13
 #: concrete/blocks/form/form_setup_html.php:126
 #: concrete/blocks/form/form_setup_html.php:196
-#: concrete/controllers/single_page/login.php:168
+#: concrete/controllers/single_page/login.php:173
 #: concrete/elements/permission/keys/edit_user_properties.php:31
 #: concrete/elements/permission/keys/edit_user_properties.php:68
 #: concrete/mail/user_register.php:16 concrete/mail/user_register.php:47
@@ -102,7 +102,7 @@ msgid "Email Address"
 msgstr "E-poštni naslov"
 
 #: concrete/authentication/concrete/form.php:13
-#: concrete/controllers/single_page/login.php:170
+#: concrete/controllers/single_page/login.php:175
 #: concrete/elements/permission/keys/edit_user_properties.php:30
 #: concrete/elements/permission/keys/edit_user_properties.php:67
 #: concrete/elements/users/confirm_list.php:7
@@ -176,21 +176,26 @@ msgstr "Napačen ključ. Ponovno obiščite stran za pozabljena gesla za kreiran
 msgid "Please provide both username and password."
 msgstr "Vnesite uporabniško ime in geslo."
 
-#: concrete/authentication/concrete/controller.php:227
+#: concrete/authentication/concrete/controller.php:226
+#: concrete/controllers/single_page/login.php:46
+msgid "Your session has expired. Please sign in again."
+msgstr ""
+
+#: concrete/authentication/concrete/controller.php:230
 msgid ""
 "This account has not yet been validated. Please check the email associated "
 "with this account and follow the link it contains."
 msgstr "Ta račun še ni bil preverjen. Preverite e-pošto povezano s tem računom in sledite povezavi, ki jo vsebuje."
 
-#: concrete/authentication/concrete/controller.php:231
+#: concrete/authentication/concrete/controller.php:234
 msgid "Invalid email address or password."
 msgstr "Nepravilen e-poštni naslov ali geslo."
 
-#: concrete/authentication/concrete/controller.php:233
+#: concrete/authentication/concrete/controller.php:236
 msgid "Invalid username or password."
 msgstr "Nepravilno uporabniško ime ali geslo."
 
-#: concrete/authentication/concrete/controller.php:237
+#: concrete/authentication/concrete/controller.php:240
 #: concrete/controllers/single_page/login.php:41
 msgid "This user is inactive. Please contact us regarding this account."
 msgstr "Uporabnik ni aktiven. Stopite v kontakt z nami glede tega računa."
@@ -633,7 +638,6 @@ msgstr "Odstranitev datotek iz mape incoming/."
 #: concrete/single_pages/dashboard/users/search.php:177
 #: concrete/single_pages/dashboard/workflow/workflows.php:16
 #: concrete/single_pages/dashboard/workflow/workflows.php:69
-#: concrete/single_pages/profile/messages.php:157
 #: concrete/src/Form/Service/Widget/Color.php:34
 #: concrete/src/StyleCustomizer/Style/ColorStyle.php:41
 #: concrete/src/Workflow/Progress/Action/CancelAction.php:7
@@ -906,7 +910,6 @@ msgstr "Ali res želite pobrisati naslednje datoteke?"
 #: concrete/single_pages/dashboard/users/points/actions.php:106
 #: concrete/single_pages/dashboard/users/points/view.php:52
 #: concrete/single_pages/dashboard/users/search.php:37
-#: concrete/single_pages/profile/messages.php:47
 #: concrete/tools/files/delete.php:92
 #: concrete/tools/gathering/item/delete.php:28 concrete/tools/i18n_js.php:29
 #: concrete/tools/i18n_js.php:87 concrete/tools/i18n_js.php:122
@@ -915,7 +918,7 @@ msgstr "Ali res želite pobrisati naslednje datoteke?"
 #: concrete/tools/users/bulk_delete.php:67
 #: concrete/views/dialogs/page/delete.php:21
 #: concrete/views/panels/page/versions.php:37
-#: concrete/views/panels/page/versions.php:289
+#: concrete/views/panels/page/versions.php:291
 msgid "Delete"
 msgstr "Brisanje"
 
@@ -2060,7 +2063,7 @@ msgstr "Potrjevalec"
 msgid "Created"
 msgstr "Ustvaril"
 
-#: concrete/tools/versions.php:361 concrete/views/panels/page/versions.php:289
+#: concrete/tools/versions.php:361 concrete/views/panels/page/versions.php:291
 msgid "Compare"
 msgstr "Primerjava"
 
@@ -2683,8 +2686,8 @@ msgstr "Brisanje za vedno"
 #: concrete/config/install/base/dashboard.xml:808
 #: concrete/elements/page_controls_footer.php:83
 #: concrete/elements/page_controls_footer.php:85
-#: concrete/elements/panels/page.php:79 concrete/single_pages/login.php:31
-#: concrete/single_pages/login.php:67 concrete/tools/i18n_js.php:132
+#: concrete/elements/panels/page.php:79 concrete/single_pages/login.php:35
+#: concrete/single_pages/login.php:71 concrete/tools/i18n_js.php:132
 #: concrete/tools/i18n_js.php:135 concrete/views/panels/page/attributes.php:6
 msgid "Attributes"
 msgstr "Atributi"
@@ -2715,7 +2718,7 @@ msgstr "Tipi tem in strani so uspešno posodobljeni."
 #: concrete/elements/panels/page.php:114 concrete/tools/i18n_js.php:141
 #: concrete/views/dialogs/file/properties.php:14
 #: concrete/views/dialogs/file/properties.php:174
-#: concrete/views/panels/page/versions.php:284
+#: concrete/views/panels/page/versions.php:286
 msgid "Versions"
 msgstr "Verzije"
 
@@ -3373,7 +3376,7 @@ msgstr "Atribut je uspešno shranjen."
 msgid "File updated successfully."
 msgstr "Datoteka je uspešno posodobljena."
 
-#: concrete/controllers/dialog/file/search/customize.php:55
+#: concrete/controllers/dialog/file/search/customize.php:56
 msgid "File search columns saved successfully."
 msgstr "Stolpci za iskanje datotek so uspešno shranjeni."
 
@@ -3985,34 +3988,34 @@ msgstr "Geslo ne sme vsebovati \", ', >, <, ali presledkov."
 msgid "Password updated successfully."
 msgstr "Geslo je bilo uspešno posodobljeno."
 
-#: concrete/controllers/single_page/dashboard/users/search.php:368
-#: concrete/controllers/single_page/login.php:192
+#: concrete/controllers/single_page/dashboard/users/search.php:377
+#: concrete/controllers/single_page/login.php:197
 msgctxt "Default locale"
 msgid "** Default"
 msgstr "** Privzeto"
 
-#: concrete/controllers/single_page/dashboard/users/search.php:393
+#: concrete/controllers/single_page/dashboard/users/search.php:402
 msgid "User deleted successfully."
 msgstr "Uporabnik je bil uspešno izbrisan."
 
-#: concrete/controllers/single_page/dashboard/users/search.php:421
+#: concrete/controllers/single_page/dashboard/users/search.php:430
 #, php-format
 msgid "View/Edit %s"
 msgstr "Ogled/Urejanje %s"
 
-#: concrete/controllers/single_page/dashboard/users/search.php:424
+#: concrete/controllers/single_page/dashboard/users/search.php:433
 msgid "User activated successfully."
 msgstr "Uporabnik je bil uspešno aktiviran."
 
-#: concrete/controllers/single_page/dashboard/users/search.php:427
+#: concrete/controllers/single_page/dashboard/users/search.php:436
 msgid "User deactivated successfully."
 msgstr "Uporabnik je bil uspešno deaktiviran."
 
-#: concrete/controllers/single_page/dashboard/users/search.php:430
+#: concrete/controllers/single_page/dashboard/users/search.php:439
 msgid "User created successfully."
 msgstr "Uporabnik je bil uspešno ustvarjen."
 
-#: concrete/controllers/single_page/dashboard/users/search.php:433
+#: concrete/controllers/single_page/dashboard/users/search.php:442
 msgid "Email marked as valid."
 msgstr "E-pošta je označena kot veljavna."
 
@@ -4039,7 +4042,7 @@ msgstr "Nepravilno uporabniško ime"
 
 #: concrete/controllers/single_page/account/profile/edit.php:107
 #: concrete/controllers/single_page/dashboard/users/add.php:99
-#: concrete/controllers/single_page/login.php:317
+#: concrete/controllers/single_page/login.php:322
 #: concrete/controllers/single_page/register.php:118
 #: concrete/src/Page/Type/Composer/Control/CollectionAttributeControl.php:122
 #, php-format
@@ -4464,7 +4467,7 @@ msgid "Invalid Error Code"
 msgstr "Napačna koda napake."
 
 #: concrete/controllers/single_page/dashboard/system/registration/authentication.php:21
-#: concrete/controllers/single_page/login.php:301
+#: concrete/controllers/single_page/login.php:306
 msgid "Invalid Authentication Type"
 msgstr "Napačen tip avtentikacije"
 
@@ -5029,20 +5032,20 @@ msgid ""
 "will not be able to login until your account has been approved."
 msgstr "Ste registrirani, vendar mora administrator strani preveriti vaš račun. Prijaviti se ne boste mogli, dokler račun ne bo odobren."
 
-#: concrete/controllers/single_page/login.php:71
-#: concrete/controllers/single_page/login.php:75
+#: concrete/controllers/single_page/login.php:76
+#: concrete/controllers/single_page/login.php:80
 msgid "Invalid method."
 msgstr "Napačna metoda."
 
-#: concrete/controllers/single_page/login.php:124
+#: concrete/controllers/single_page/login.php:129
 msgid "You can only identify as the admin user using the concrete login."
 msgstr "Kot admin uporabnik se lahko identificirate le z direktno prijavo."
 
-#: concrete/controllers/single_page/login.php:267
+#: concrete/controllers/single_page/login.php:272
 msgid "User is not registered. Check your authentication controller."
 msgstr "Uporabnik ni registriran. Preverite vaš nadzornik avtentikacije."
 
-#: concrete/controllers/single_page/login.php:293
+#: concrete/controllers/single_page/login.php:298
 msgid "Invalid Request, please attempt login again."
 msgstr "Napačna zahteva, poskusite se ponovno prijaviti."
 
@@ -5537,14 +5540,14 @@ msgstr "Odstrani stare verzije strani."
 msgid "Removes all except the 10 most recent page versions for each page."
 msgstr "Odstrani vse, razen zadnjih 10 verzij strani za vsako stran."
 
-#: concrete/jobs/remove_old_page_versions.php:31
+#: concrete/jobs/remove_old_page_versions.php:34
 msgid "All pages have been processed, starting from beginning on next run."
 msgstr "Vse strani se obdelujejo od začetka z naslednjim zagonom."
 
 #. %1$d is the number of versions deleted, %2$d is the number of affected
 #. pages, %3$d is the number of times that the Remove Old Page Versions job
 #. has been executed.
-#: concrete/jobs/remove_old_page_versions.php:53
+#: concrete/jobs/remove_old_page_versions.php:56
 #, php-format
 msgid "%1$d versions deleted from %2$d page (%3$s)"
 msgid_plural "%1$d versions deleted from %2$d pages (%3$s)"
@@ -5756,14 +5759,11 @@ msgstr "Predloga v uporabi"
 
 #: concrete/single_pages/account/messages/inbox.php:81
 #: concrete/single_pages/account/messages/inbox.php:161
-#: concrete/single_pages/profile/messages.php:61
-#: concrete/single_pages/profile/messages.php:139
 #: concrete/src/Mail/Service.php:478
 msgid "To"
 msgstr "Na"
 
 #: concrete/single_pages/account/messages/inbox.php:81
-#: concrete/single_pages/profile/messages.php:61
 #: concrete/src/Mail/Service.php:479
 msgid "From"
 msgstr "Od"
@@ -5775,8 +5775,6 @@ msgstr "Odgovori"
 #: concrete/blocks/core_conversation_message/composer.php:12
 #: concrete/single_pages/account/messages/inbox.php:82
 #: concrete/single_pages/account/messages/inbox.php:168
-#: concrete/single_pages/profile/messages.php:62
-#: concrete/single_pages/profile/messages.php:145
 #: concrete/src/Mail/Service.php:483
 msgid "Subject"
 msgstr "Zadeva"
@@ -5965,7 +5963,7 @@ msgid "This authentication type does not require any customization."
 msgstr "Ta tip avtentikacije ne zahteva prilagajanja po meri."
 
 #. %s is a number
-#: concrete/src/Utility/Service/Number.php:127
+#: concrete/src/Utility/Service/Number.php:104
 #: concrete/views/dialogs/file/properties.php:81
 #, php-format
 msgid "%s byte"
@@ -5976,25 +5974,25 @@ msgstr[2] "%s byte"
 msgstr[3] "%s byte-ov"
 
 #. %s is a number, KB means Kilobyte
-#: concrete/src/Utility/Service/Number.php:131
+#: concrete/src/Utility/Service/Number.php:108
 #, php-format
 msgid "%s KB"
 msgstr "%s KB"
 
 #. %s is a number, MB means Megabyte
-#: concrete/src/Utility/Service/Number.php:135
+#: concrete/src/Utility/Service/Number.php:112
 #, php-format
 msgid "%s MB"
 msgstr "%s MB"
 
 #. %s is a number, GB means Gigabyte
-#: concrete/src/Utility/Service/Number.php:139
+#: concrete/src/Utility/Service/Number.php:116
 #, php-format
 msgid "%s GB"
 msgstr "%s GB"
 
 #. %s is a number, TB means Terabyte
-#: concrete/src/Utility/Service/Number.php:142
+#: concrete/src/Utility/Service/Number.php:119
 #, php-format
 msgid "%s TB"
 msgstr "%s TB"
@@ -6034,6 +6032,10 @@ msgstr "Vse skupine"
 msgctxt "TreeName"
 msgid "Groups Tree"
 msgstr "Drevo skupin"
+
+#: concrete/src/Database/Schema/Schema.php:28
+msgid "Invalid schema version found. Expecting 0.3"
+msgstr ""
 
 #: concrete/src/Error/Handler/ErrorHandler.php:33
 msgid "Exception Occurred: "
@@ -7864,7 +7866,6 @@ msgstr "Polje na voljo v iskalniku uporabnikovega kontrolnika."
 #: concrete/single_pages/dashboard/system/files/storage.php:77
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:71
 #: concrete/single_pages/download_file.php:34
-#: concrete/single_pages/profile/messages.php:48
 #: concrete/views/frontend/install.php:104
 msgid "Back"
 msgstr "Nazaj"
@@ -8285,7 +8286,7 @@ msgstr "Nastavitve spletnega mesta"
 
 #: concrete/elements/page_controls_footer.php:262
 msgid "Add Pages and Navigate Your Site"
-msgstr ""
+msgstr "Dodajanje strani in navigacija po spletnem mestu"
 
 #: concrete/elements/page_controls_footer.php:266
 msgctxt "toolbar"
@@ -8590,7 +8591,7 @@ msgid "Style"
 msgstr "Stil"
 
 #: concrete/blocks/page_attribute_display/form.php:33
-#: concrete/blocks/video/form_setup_html.php:10
+#: concrete/blocks/video/form_setup_html.php:4
 #: concrete/blocks/youtube/form_setup_html.php:24
 #: concrete/elements/custom_style.php:167
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:57
@@ -9345,7 +9346,7 @@ msgstr "Predloge strani"
 msgid "Publish Method"
 msgstr "Metoda objave"
 
-#: concrete/blocks/video/view.php:19
+#: concrete/blocks/video/view.php:17
 #: concrete/elements/block_edit_mode_disabled.php:8
 msgid "Content disabled in edit mode."
 msgstr "Vsebina je onemogočena v načinu urejanja."
@@ -9404,7 +9405,6 @@ msgstr "Označi kot neželeno pošto"
 #: concrete/elements/conversation/message.php:93
 #: concrete/elements/conversation/message/topic.php:45
 #: concrete/single_pages/account/messages/inbox.php:46
-#: concrete/single_pages/profile/messages.php:42
 msgid "Reply"
 msgstr "Odgovori"
 
@@ -9414,16 +9414,16 @@ msgstr "Deli URL sporočila na Twitter-ju."
 
 #: concrete/elements/conversation/message.php:109
 msgid "Share message URL on Facebook."
-msgstr ""
+msgstr "Deli URL od sporočila na Facebook-u."
 
 #: concrete/elements/conversation/message.php:112
 msgid "Get message URL."
-msgstr ""
+msgstr "Dobi URL od sporočila."
 
 #: concrete/blocks/form/mini_survey.php:178
 #: concrete/blocks/form/mini_survey.php:180 concrete/blocks/form/view.php:76
 #: concrete/elements/conversation/display.php:30
-#: concrete/single_pages/login.php:101
+#: concrete/single_pages/login.php:105
 msgid "Submit"
 msgstr "Pošlji"
 
@@ -9536,7 +9536,7 @@ msgid "Scale"
 msgstr "Pomanjšaj"
 
 #: concrete/blocks/page_attribute_display/form.php:37
-#: concrete/blocks/video/form_setup_html.php:17
+#: concrete/blocks/video/form_setup_html.php:11
 #: concrete/blocks/youtube/form_setup_html.php:28
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:64
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:104
@@ -9661,11 +9661,11 @@ msgstr "Stran je dodana na"
 #: concrete/config/install/base/dashboard.xml:600
 #: concrete/views/dialogs/file/properties.php:75
 msgid "Thumbnails"
-msgstr ""
+msgstr "Sličice"
 
 #: concrete/views/dialogs/file/properties.php:76
 msgid "Thumbnail Images"
-msgstr ""
+msgstr "Sličice"
 
 #: concrete/views/dialogs/file/properties.php:85
 #, php-format
@@ -9725,26 +9725,26 @@ msgstr "Datoteka je uspešno pregledana."
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:114
 #: concrete/views/dialogs/file/thumbnails.php:13
 msgid "Automatic"
-msgstr ""
+msgstr "Avtomatsko"
 
 #: concrete/views/dialogs/file/thumbnails.php:29
 #, php-format
 msgid "%s x %s dimensions"
-msgstr ""
+msgstr "%s x %s dimenzije"
 
 #: concrete/views/dialogs/file/thumbnails.php:35
 msgid "Edit Thumbnail Images"
-msgstr ""
+msgstr "Uredi sličice"
 
 #: concrete/views/dialogs/file/thumbnails.php:36
 msgid "Edit Thumbnail"
-msgstr ""
+msgstr "Uredi sličico"
 
 #: concrete/views/dialogs/file/thumbnails.php:54
 msgid ""
 "No thumbnail found. Usually this is because the source file is smaller than "
 "this thumbnail configuration."
-msgstr ""
+msgstr "Ne najdem sličice. Običajno je to zato, ker je izvorna datoteka manjša od nastavitev za sličico."
 
 #: concrete/views/panels/page/versions.php:35
 #: concrete/views/panels/sitemap.php:5
@@ -9753,7 +9753,7 @@ msgstr "Nova stran"
 
 #: concrete/views/panels/sitemap.php:15
 msgid "More"
-msgstr ""
+msgstr "Več"
 
 #: concrete/single_pages/dashboard/composer/drafts.php:7
 #: concrete/views/panels/sitemap.php:45
@@ -9815,7 +9815,7 @@ msgstr "Opomba: Dodatne poti strani ne veljajo kot sprememba verzije. Na voljo b
 msgid "A location has not yet been chosen."
 msgstr "Lokacija še ni bila izbrana."
 
-#: concrete/views/panels/details/page/location.php:96
+#: concrete/views/panels/details/page/location.php:99
 msgid "Choose New Page Parent"
 msgstr "Izbor nove višjenivojske strani"
 
@@ -9834,7 +9834,7 @@ msgstr "Stanje predpomnjenja"
 
 #: concrete/views/panels/page/preview_as/form.php:14
 msgid "Date / time"
-msgstr ""
+msgstr "Datum/čas"
 
 #: concrete/views/panels/page/preview_as/form.php:19
 msgid "View As"
@@ -9923,7 +9923,7 @@ msgid ""
 "Fix common page errors from the <a href=\"#\" data-launch-panel-detail"
 "=\"page-composer\" data-panel-detail-url=\"%s\" data-panel-"
 "transition=\"fade\">Page Compose interface</a>."
-msgstr ""
+msgstr "Popravi pogoste napake strani z <a href=\"#\" data-launch-panel-detail=\"page-composer\" data-panel-detail-url=\"%s\" data-panel-transition=\"fade\">Vmesnikom za izdelavo strani</a>."
 
 #: concrete/views/panels/page/check_in.php:67
 msgid "Discard Changes"
@@ -9963,7 +9963,7 @@ msgstr[3] "%d blokov"
 
 #: concrete/views/panels/add.php:243
 msgid "An error occured while deleting this item:"
-msgstr ""
+msgstr "Med brisanjem elementa je prišlo do napake:"
 
 #: concrete/views/frontend/user_error.php:2
 msgid "Unexpected User Error"
@@ -10135,7 +10135,7 @@ msgstr "Vključite prosim JavaScript v vašem brskalniku."
 
 #: concrete/views/frontend/install.php:344
 msgid "MySQL PDO Extension Enabled"
-msgstr ""
+msgstr "MySQL PDO razširitev je omogočena"
 
 #: concrete/views/frontend/install.php:350
 msgid "Supports concrete5 request URLs"
@@ -10434,17 +10434,17 @@ msgstr "Uporabnikov račun lahko odobrite ali odstranite tule"
 #, php-format
 msgid ""
 "A new Facebook account has been connected to your %s account, verify within."
-msgstr ""
+msgstr "Nov facebook račun je bil povezan z vašim %s računom, preverite."
 
 #: concrete/mail/facebook_account_connect_validate.php:7
 #, php-format
 msgid "Someone has tried to attach a Facebook account to your %s account,"
-msgstr ""
+msgstr "Nekdo je poskušal povezati Facebook račun z vašim %s računom, "
 
 #: concrete/mail/facebook_account_connect_validate.php:8
 #, php-format
 msgid "If this is you, please go to this link to validate the association: %s"
-msgstr ""
+msgstr "Če ste to vi, pojdite na to povezavo za potrditev povezave: %s"
 
 #: concrete/mail/validate_user_email.php:5
 msgid "Registration - Validate Email Address"
@@ -10672,7 +10672,7 @@ msgstr "Projekcija slik"
 
 #: concrete/blocks/image_slider/view.php:6
 msgid "Image Slider disabled in edit mode."
-msgstr ""
+msgstr "Prikaz slik je v urejevalnem načinu onemogočen."
 
 #: concrete/blocks/image_slider/view.php:53
 msgid "No Slides Entered."
@@ -10703,28 +10703,28 @@ msgstr "Briši vnos"
 
 #: concrete/blocks/share_this_page/form.php:5
 msgid "Add Service"
-msgstr ""
+msgstr "Dodaj storitev"
 
 #: concrete/blocks/share_this_page/form.php:6
 #: concrete/config/install/packages/elemental_full/content.xml:1174
 msgid "Services"
-msgstr ""
+msgstr "Storitve"
 
 #: concrete/blocks/share_this_page/form.php:18
 msgid "Choose Sharing Service"
-msgstr ""
+msgstr "Izberite storitev za deljenje"
 
 #: concrete/blocks/share_this_page/controller.php:26
 msgid "Allows users to share this page with social networks."
-msgstr ""
+msgstr "Dovoli uporabnikom deljenje te strani s socialnimi omrežji."
 
 #: concrete/blocks/share_this_page/controller.php:31
 msgid "Share This Page"
-msgstr ""
+msgstr "Deli to stran"
 
 #: concrete/blocks/share_this_page/controller.php:101
 msgid "You must choose at least one service."
-msgstr ""
+msgstr "Izbrati morate vsaj eno storitev."
 
 #: concrete/blocks/google_map/controller.php:26
 msgid ""
@@ -10750,7 +10750,7 @@ msgstr "Google Map je izključen v načinu urejanja."
 
 #: concrete/blocks/google_map/form_setup_html.php:6
 msgid "Map Title (optional)"
-msgstr ""
+msgstr "Naslov zemljevida (opcijsko)"
 
 #: concrete/blocks/google_map/form_setup_html.php:15
 msgid ""
@@ -10764,11 +10764,11 @@ msgstr "Povečava"
 
 #: concrete/blocks/google_map/form_setup_html.php:38
 msgid "Map Width"
-msgstr ""
+msgstr "Širina zemljevida"
 
 #: concrete/blocks/google_map/form_setup_html.php:49
 msgid "Map Height"
-msgstr ""
+msgstr "Višina zemljevida"
 
 #: concrete/blocks/google_map/scrapbook.php:4
 #, php-format
@@ -11018,15 +11018,15 @@ msgstr "Napaka: Zahtevana stran z oznako:  \"%s\" ne obstaja"
 
 #: concrete/blocks/tags/tag_form.php:15
 msgid "Display a List of Tags From"
-msgstr ""
+msgstr "Prikaz seznama oznak od"
 
 #: concrete/blocks/tags/tag_form.php:19
 msgid "The Current Page."
-msgstr ""
+msgstr "trenutne strani."
 
 #: concrete/blocks/tags/tag_form.php:24
 msgid "The Entire Site."
-msgstr ""
+msgstr "celega spletnega mesta."
 
 #: concrete/blocks/tags/tag_form.php:42
 msgid "Number to Display"
@@ -11034,7 +11034,7 @@ msgstr "Število za prikaz"
 
 #: concrete/blocks/tags/tag_form.php:50
 msgid "Link Tag to Search Page"
-msgstr ""
+msgstr "Oznaka povezave za iskanje strani"
 
 #: concrete/blocks/dashboard_featured_addon/controller.php:29
 msgid "Features an add-on from concrete5.org."
@@ -11119,32 +11119,44 @@ msgstr "Gor"
 
 #: concrete/blocks/video/controller.php:26
 msgid ""
-"Embeds uploaded video into a web page. Supports AVI, WMV, Quicktime/MPEG4 "
-"and FLV formats."
-msgstr "Vgradi naložen video na spletno stran. Podpira formate AVI, WMV, Quicktime/MPEG4 in FLV."
+"Embeds uploaded video into a web page. Supports WebM, Ogg, and "
+"Quicktime/MPEG4 formats."
+msgstr ""
 
 #: concrete/blocks/video/controller.php:30
 #: concrete/blocks/youtube/form_setup_html.php:32
 msgid "Video Player"
 msgstr "Video predvajalnik"
 
-#: concrete/blocks/video/controller.php:34
-msgid "You must select a valid FLV file."
-msgstr "Izbrati morate veljavno FLV datoteko."
+#: concrete/blocks/video/view.php:21
+msgid "No Video Files Selected."
+msgstr ""
 
-#: concrete/blocks/video/view.php:43
-msgid ""
-"Loading Video... If you're seeing this message you may not have Flash "
-"installed."
-msgstr "Nalagam video... Če vidite tole sporočilo, mogoče nimate nameščenega Flash-a."
+#: concrete/blocks/video/add.php:18 concrete/blocks/video/edit.php:31
+msgid "Video Files"
+msgstr ""
 
-#: concrete/blocks/video/add.php:9 concrete/blocks/video/edit.php:11
-msgid "Video File"
-msgstr "Video datoteka"
+#: concrete/blocks/video/add.php:19 concrete/blocks/video/edit.php:32
+msgid "Include WebM, Ogg, and MP4 file types for best cross-browser results"
+msgstr ""
 
-#: concrete/blocks/video/add.php:11 concrete/blocks/video/edit.php:13
+#: concrete/blocks/video/add.php:21 concrete/blocks/video/edit.php:34
+msgid "Video Placeholder Image"
+msgstr ""
+
+#: concrete/blocks/video/add.php:22 concrete/blocks/video/edit.php:35
+msgid "Choose Video Placeholder Image (Optional)"
+msgstr ""
+
+#: concrete/blocks/video/add.php:26 concrete/blocks/video/add.php:30
+#: concrete/blocks/video/add.php:34 concrete/blocks/video/edit.php:43
+#: concrete/blocks/video/edit.php:47
 msgid "Choose Video File"
 msgstr "Izberite video datoteko"
+
+#: concrete/blocks/video/edit.php:39
+msgid "Choose WebM Video File"
+msgstr ""
 
 #: concrete/blocks/html/controller.php:23
 msgid "For adding HTML by hand."
@@ -11166,7 +11178,6 @@ msgstr "Vaša zadeva ne more biti prazna."
 #: concrete/single_pages/account/messages/inbox.php:175
 #: concrete/single_pages/dashboard/conversations/messages.php:113
 #: concrete/single_pages/dashboard/reports/logs.php:67
-#: concrete/single_pages/profile/messages.php:150
 msgid "Message"
 msgstr "Sporočilo"
 
@@ -11262,7 +11273,7 @@ msgstr "Razvrščanje"
 
 #: concrete/blocks/core_conversation/form.php:44
 msgid "Most Recent First"
-msgstr ""
+msgstr "Zadnji najprej"
 
 #: concrete/blocks/core_conversation/form.php:50
 #: concrete/blocks/discussion/form.php:28
@@ -11754,35 +11765,35 @@ msgstr "Izberi datoteko"
 
 #: concrete/blocks/testimonial/form.php:32
 msgid "Company"
-msgstr ""
+msgstr "Firma"
 
 #: concrete/blocks/testimonial/form.php:37
 msgid "Company URL"
-msgstr ""
+msgstr "URL firme"
 
 #: concrete/blocks/testimonial/form.php:42
 msgid "Bio/Quote"
-msgstr ""
+msgstr "Biografija/Citat"
 
 #: concrete/blocks/testimonial/controller.php:23
 msgid ""
 "Displays a quote or paragraph next to biographical information and a "
 "person's picture."
-msgstr ""
+msgstr "Prikaz citata ali odstavka poleg osebnih podatkov in slike osebe."
 
 #: concrete/blocks/testimonial/controller.php:28
 msgid "Testimonial"
-msgstr ""
+msgstr "Pričevanja"
 
 #: concrete/blocks/testimonial/view.php:16
 #, php-format
 msgid "%s, <a href=\"%s\">%s</a>"
-msgstr ""
+msgstr "%s, <a href=\"%s\">%s</a>"
 
 #: concrete/blocks/testimonial/view.php:22
 #, php-format
 msgid "%s, %s"
-msgstr ""
+msgstr "%s, %s"
 
 #: concrete/blocks/search/controller.php:78
 msgid "Add a search box to your site."
@@ -11846,7 +11857,7 @@ msgstr "Prikaz"
 #: concrete/blocks/date_navigation/form.php:3
 #: concrete/blocks/page_list/page_list_form.php:48
 msgid "Filtering"
-msgstr ""
+msgstr "Filtriranje"
 
 #: concrete/blocks/page_list/page_list_form.php:54
 msgid "Featured pages only."
@@ -11864,21 +11875,21 @@ msgstr "Pokaži vzdevke strani."
 
 #: concrete/blocks/page_list/page_list_form.php:74
 msgid "Enable Other Blocks to Filter This Page List."
-msgstr ""
+msgstr "Omogoči drugim blokom filtriranje tega seznama strani."
 
 #: concrete/blocks/page_list/page_list_form.php:76
 msgid ""
 "Allows other blocks like the topic list block to pass search criteria to "
 "this page list block."
-msgstr ""
+msgstr "Omogoči drugim blokom, kot je blok spiska tem, da posreduje ikslani kriterij temu bloku seznama strani."
 
 #: concrete/blocks/page_list/page_list_form.php:82
 msgid "Filter by Related Topic."
-msgstr ""
+msgstr "Filtriraj po ustrezni temi."
 
 #: concrete/blocks/page_list/page_list_form.php:88
 msgid "Choose topics attribute."
-msgstr ""
+msgstr "Izberi atribut teme."
 
 #: concrete/blocks/page_list/page_list_form.php:95
 msgid "Pagination"
@@ -11936,7 +11947,7 @@ msgstr "Zagotovi vir RSS"
 #: concrete/blocks/page_list/page_list_form.php:187
 #, php-format
 msgid "RSS Feed can be found here: <a href=\"%s\" target=\"_blank\">%s</a>"
-msgstr ""
+msgstr "RSS vir najdete tule: <a href=\"%s\" target=\"_blank\">%s</a>"
 
 #: concrete/blocks/page_list/page_list_form.php:190
 msgid "RSS Feed Title"
@@ -11948,11 +11959,11 @@ msgstr "Opis vira RSS"
 
 #: concrete/blocks/page_list/page_list_form.php:199
 msgid "RSS Feed Location"
-msgstr ""
+msgstr "Lokacija vira RSS"
 
 #: concrete/blocks/page_list/page_list_form.php:210
 msgid "Include Page Name"
-msgstr ""
+msgstr "Vključi ime strani"
 
 #: concrete/blocks/page_list/page_list_form.php:226
 msgid "Include Page Description"
@@ -11968,27 +11979,27 @@ msgstr "znaki"
 
 #: concrete/blocks/page_list/page_list_form.php:256
 msgid "Include Public Page Date"
-msgstr ""
+msgstr "Vključi javni datum strani"
 
 #: concrete/blocks/page_list/page_list_form.php:269
 msgid ""
 "This is usually the date the page is created. It can be changed from the "
 "page attributes panel."
-msgstr ""
+msgstr "To je običajno datum nastanka strani. Lahko se ga spremeni na panelu atributov strani."
 
 #: concrete/blocks/page_list/page_list_form.php:272
 msgid "Display Thumbnail Image"
-msgstr ""
+msgstr "Prikaz sličice"
 
 #: concrete/blocks/page_list/page_list_form.php:289
 msgid ""
 "You must create an attribute with the 'thumbnail' handle in order to use "
 "this option."
-msgstr ""
+msgstr "Za uporabo te možnosti morate narediti atribut z oznako 'thumbnail'."
 
 #: concrete/blocks/page_list/page_list_form.php:295
 msgid "Use Different Link than Page Name"
-msgstr ""
+msgstr "Uporabi drugo povezavo kot je ime strani"
 
 #: concrete/blocks/page_list/page_list_form.php:310
 msgid "Link Text"
@@ -11996,11 +12007,11 @@ msgstr "Besedilo za povezavo"
 
 #: concrete/blocks/page_list/page_list_form.php:317
 msgid "Title of Page List"
-msgstr ""
+msgstr "Naslov seznama strani"
 
 #: concrete/blocks/page_list/page_list_form.php:322
 msgid "Message to Display When No Pages Listed."
-msgstr ""
+msgstr "Sporočilo za prikaz, ko na seznamu ni strani."
 
 #: concrete/blocks/autonav/form_setup_html.php:145
 #: concrete/blocks/page_list/page_list_form.php:335
@@ -12019,15 +12030,15 @@ msgstr "Prosim, če vašemu viru RSS dodelite ime"
 msgid ""
 "Your RSS feed must have a valid URL, containing only letters, numbers or "
 "underscores"
-msgstr ""
+msgstr "Vaš vir RSS mora imeti veljaven URL naslov, ki vsebuje le črke, številke ali podčrte."
 
 #: concrete/blocks/page_list/controller.php:277
 msgid "Your RSS feed must have a valid title."
-msgstr ""
+msgstr "Vaš vir RSS mora imeti veljaven naslov."
 
 #: concrete/blocks/page_list/controller.php:280
 msgid "Your RSS feed must have a valid description."
-msgstr ""
+msgstr "Vaš vir RSS mora imeti veljaven opis."
 
 #: concrete/blocks/feature/form.php:15
 msgid "Paragraph"
@@ -12132,28 +12143,28 @@ msgstr "Nadgradi dodatke. "
 
 #: concrete/blocks/date_navigation/form.php:5
 msgid "By Parent Page"
-msgstr ""
+msgstr "po višjenivojski strani"
 
 #: concrete/blocks/date_navigation/form.php:9
 #: concrete/single_pages/dashboard/pages/feeds.php:90
 msgid "Filter by Parent Page"
-msgstr ""
+msgstr "Filtriranje po višjenivojski strani"
 
 #: concrete/blocks/date_navigation/form.php:20
 msgid "By Page Type"
-msgstr ""
+msgstr "po tipu strani"
 
 #: concrete/blocks/date_navigation/form.php:39
 msgid "Results"
-msgstr ""
+msgstr "Rezultati"
 
 #: concrete/blocks/date_navigation/form.php:44
 msgid "Redirect to Different Page on Click"
-msgstr ""
+msgstr "Po kliku preusmeri na drugo stran"
 
 #: concrete/blocks/date_navigation/controller.php:27
 msgid "Displays a list of months to filter a page list by."
-msgstr ""
+msgstr "Prikaže seznam mesecev za filtriranje seznama strani."
 
 #: concrete/blocks/date_navigation/controller.php:32
 msgid "Date Navigation"
@@ -12336,7 +12347,7 @@ msgstr "To je le primer, kako deluje samostojno oblikovan obrazec."
 
 #: concrete/blocks/external_form/form/test_form.php:14
 msgid "Test"
-msgstr ""
+msgstr "Test"
 
 #: concrete/blocks/external_form/add.php:4
 msgid "File to include"
@@ -12359,15 +12370,15 @@ msgstr "Vključitev datoteke"
 
 #: concrete/blocks/topic_list/form.php:4
 msgid "Mode"
-msgstr ""
+msgstr "Način"
 
 #: concrete/blocks/topic_list/form.php:6
 msgid "Search – Display a list of all topics for use on a search sidebar."
-msgstr ""
+msgstr "Iskanje - prikaz seznama vseh tem za uporabo na iskalnem stranskem stolpcu."
 
 #: concrete/blocks/topic_list/form.php:7
 msgid "Page – Display a list of topics for the current page."
-msgstr ""
+msgstr "Stran - prikaz seznama tem za aktualno stran."
 
 #: concrete/attributes/topics/type_form.php:43
 #: concrete/blocks/topic_list/form.php:11
@@ -12376,7 +12387,7 @@ msgstr "Drevo tem"
 
 #: concrete/blocks/topic_list/form.php:20
 msgid "Topic Attribute To Display"
-msgstr ""
+msgstr "Atribut teme za prikaz"
 
 #: concrete/blocks/topic_list/controller.php:28
 msgid ""
@@ -12395,7 +12406,7 @@ msgstr "Vsebinske teme"
 
 #: concrete/blocks/topic_list/view.php:42
 msgid "No topics."
-msgstr ""
+msgstr "Ni tem."
 
 #: concrete/blocks/autonav/controller.php:78
 msgid "Creates navigation trees and sitemaps."
@@ -12758,123 +12769,6 @@ msgstr "Privzeta vrednost"
 msgid "The checkbox will be checked by default."
 msgstr "Izbirno polje bo privzeto označeno."
 
-#: concrete/single_pages/profile/messages.php:13
-msgid "Back to Mailbox"
-msgstr "Nazaj v poštni predal"
-
-#: concrete/single_pages/profile/messages.php:15
-msgid "Message Details"
-msgstr "Podrobnosti sporočila"
-
-#: concrete/single_pages/account/messages/inbox.php:51
-#: concrete/single_pages/profile/messages.php:47
-msgid "Delete this message?"
-msgstr "Brisanje tega sporočila?"
-
-#: concrete/single_pages/profile/messages.php:57
-msgid "Back to Mailbox List"
-msgstr "Nazaj v poštni predal"
-
-#: concrete/single_pages/account/messages/inbox.php:83
-#: concrete/single_pages/profile/messages.php:63
-msgid "Sent At"
-msgstr "Poslano dne"
-
-#: concrete/single_pages/account/messages/inbox.php:84
-#: concrete/single_pages/profile/messages.php:64
-msgid "Status"
-msgstr "Status"
-
-#: concrete/single_pages/account/messages/inbox.php:109
-#: concrete/single_pages/profile/messages.php:88
-msgid "No messages found."
-msgstr "Ni najdenih sporočil."
-
-#: concrete/single_pages/account/messages/inbox.php:122
-#: concrete/single_pages/profile/messages.php:100
-msgid "Reply Sent."
-msgstr "Odgovor je bil poslan."
-
-#: concrete/single_pages/profile/messages.php:101
-msgid "Return to Message."
-msgstr "Nazaj na sporočilo."
-
-#: concrete/single_pages/account/messages/inbox.php:129
-#: concrete/single_pages/profile/messages.php:107
-msgid "Message Sent."
-msgstr "Sporočilo je bilo poslano."
-
-#: concrete/single_pages/profile/messages.php:108
-msgid "Return to Profile."
-msgstr "Nazaj na profil."
-
-#: concrete/single_pages/account/messages/inbox.php:135
-#: concrete/single_pages/profile/messages.php:113
-msgid "Woops!"
-msgstr "Ups!"
-
-#: concrete/single_pages/profile/messages.php:114
-msgid ""
-"You've sent more messages than we can handle just now, that last one didn't go out. \n"
-"\t\t\t\tWe've notified an administrator to check into this. \n"
-"\t\t\t\tPlease wait a few minutes before sending a new message."
-msgstr "Poslali ste več sporočil, kot jih trenutno uspemo obdelati, zadnje ni šlo ven. \n\t\t\t\tO tem je obveščen administrator. \n\t\t\t\tPreden pošljete novo sporočilo, počakajte nekaj minut."
-
-#: concrete/single_pages/account/messages/inbox.php:152
-#: concrete/single_pages/profile/messages.php:130
-#, php-format
-msgid "Re: %s"
-msgstr "Re: %s"
-
-#: concrete/single_pages/account/messages/inbox.php:158
-#: concrete/single_pages/profile/messages.php:136
-msgid "Send a Private Message"
-msgstr "Pošiljanje zasebnega sporočila"
-
-#: concrete/single_pages/account/messages/inbox.php:182
-#: concrete/single_pages/profile/messages.php:156
-msgid "Send Message"
-msgstr "Pošiljanje sporočila"
-
-#: concrete/single_pages/account/messages/inbox.php:200
-#: concrete/single_pages/profile/messages.php:174
-msgid "Mailbox"
-msgstr "Poštni predal"
-
-#: concrete/config/install/base/dashboard.xml:332
-#: concrete/config/install/base/login_registration.xml:39
-#: concrete/single_pages/account/messages/inbox.php:201
-#: concrete/single_pages/dashboard/conversations/messages.php:3
-#: concrete/single_pages/profile/messages.php:175
-msgid "Messages"
-msgstr "Sporočila"
-
-#: concrete/single_pages/account/messages/inbox.php:202
-#: concrete/single_pages/profile/messages.php:176
-msgid "Latest Message"
-msgstr "Zadnje sporočilo"
-
-#: concrete/config/install/base/login_registration.xml:40
-#: concrete/single_pages/account/messages/inbox.php:17
-#: concrete/single_pages/account/messages/inbox.php:73
-#: concrete/single_pages/account/messages/inbox.php:205
-#: concrete/single_pages/profile/messages.php:179
-msgid "Inbox"
-msgstr "Prejeto"
-
-#: concrete/single_pages/account/messages/inbox.php:210
-#: concrete/single_pages/account/messages/inbox.php:220
-#: concrete/single_pages/profile/messages.php:184
-#: concrete/single_pages/profile/messages.php:194
-#, php-format
-msgid "<strong>%s</strong>, sent by %s on %s"
-msgstr "<strong>%s</strong>, poslal %s dne %s"
-
-#: concrete/single_pages/account/messages/inbox.php:215
-#: concrete/single_pages/profile/messages.php:189
-msgid "Sent Messages"
-msgstr "Poslana sporočila"
-
 #: concrete/single_pages/dashboard/composer/write.php:24
 msgid "What would you like to write?"
 msgstr "Kaj bi radi napisali?"
@@ -12980,6 +12874,13 @@ msgstr "Nimate dostopa do kazala Kontrolnika."
 #: concrete/single_pages/dashboard/sitemap/search.php:20
 msgid "You must have access to the dashboard sitemap to search pages."
 msgstr "Za iskanje po straneh morate imeti dostop do Kazala Kontrolnika."
+
+#: concrete/config/install/base/dashboard.xml:332
+#: concrete/config/install/base/login_registration.xml:39
+#: concrete/single_pages/account/messages/inbox.php:201
+#: concrete/single_pages/dashboard/conversations/messages.php:3
+msgid "Messages"
+msgstr "Sporočila"
 
 #: concrete/single_pages/dashboard/conversations/messages.php:91
 msgid "Search Messages"
@@ -13580,7 +13481,7 @@ msgstr "Ni najdenih skupin."
 msgid ""
 "Warning, this cannot be undone. No groups will be deleted but they will no "
 "longer be grouped together."
-msgstr ""
+msgstr "Pozor, tega ne morete razveljaviti. Skupine ne bodo pobrisane, le skupaj ne bodo več."
 
 #: concrete/single_pages/dashboard/users/group_sets.php:69
 msgid "Delete Group Set"
@@ -13843,21 +13744,21 @@ msgstr "Ne morete dostopati do dovoljenj za opravila."
 
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:24
 msgid "Delete Type"
-msgstr ""
+msgstr "Brisanje tipa"
 
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:67
 msgid ""
 "Only place a value in here if you want this thumbnail to force its "
 "dimensions to the width and height."
-msgstr ""
+msgstr "Le vnesite vrednost, če želite, da bo ta sličica dobila nastavljeno širino in višino. "
 
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:85
 msgid "Delete this thumbnail type?"
-msgstr ""
+msgstr "Brišem ta tip sličic?"
 
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:95
 msgid "Add Type"
-msgstr ""
+msgstr "Dodaj tip"
 
 #: concrete/single_pages/dashboard/system/files/storage.php:21
 msgid "Delete Location"
@@ -14169,7 +14070,7 @@ msgstr "Omogočite napredna dovoljenja"
 
 #: concrete/single_pages/dashboard/system/permissions/antispam.php:4
 msgid "Spam Whitelist Group"
-msgstr ""
+msgstr "Skupina dovoljenih neželenih sporočil"
 
 #: concrete/single_pages/dashboard/system/permissions/antispam.php:11
 msgid "Active Library"
@@ -14372,7 +14273,7 @@ msgstr "Opomba: te nastavitve so lahko preglašene v bloku za urejanje obrazca z
 
 #: concrete/single_pages/dashboard/system/conversations/permissions.php:16
 msgid "You cannot access conversation permissions."
-msgstr ""
+msgstr "Ne morete dostopati do dovoljenj pogovora."
 
 #: concrete/single_pages/dashboard/system/conversations/bannedwords.php:6
 msgid "Add Word"
@@ -14574,11 +14475,11 @@ msgstr "Gravatar nabor slik"
 
 #: concrete/single_pages/dashboard/system/basics/accessibility.php:5
 msgid "Enable Toolbar Titles"
-msgstr ""
+msgstr "Omogoči naslove orodjarn"
 
 #: concrete/single_pages/dashboard/system/basics/accessibility.php:11
 msgid "Increase Toolbar Font Size"
-msgstr ""
+msgstr "Povečaj velikost pisave orodjarne"
 
 #: concrete/single_pages/dashboard/system/basics/icons.php:6
 msgid "Favicon"
@@ -15228,7 +15129,7 @@ msgstr "Še nihče ni poslal odziva na ta obrazec."
 
 #: concrete/single_pages/dashboard/reports/forms.php:214
 msgid "Export to CSV"
-msgstr ""
+msgstr "Izvoz v CSV"
 
 #: concrete/single_pages/dashboard/reports/forms.php:226
 msgid "* Scroll right to view full results"
@@ -15243,47 +15144,47 @@ msgstr "(uporabniški ID: %s)"
 #: concrete/single_pages/dashboard/pages/feeds.php:54
 #: concrete/single_pages/dashboard/pages/feeds.php:68
 msgid "Delete Feed"
-msgstr ""
+msgstr "Brisanje vira"
 
 #: concrete/single_pages/dashboard/pages/feeds.php:96
 msgid "Filter By Page Type"
-msgstr ""
+msgstr "Filtriranje po tipu strani"
 
 #: concrete/single_pages/dashboard/pages/feeds.php:100
 msgid "Include All Sub-Pages of Parent?"
-msgstr ""
+msgstr "Vključi vse podstrani višjenivojske strani?"
 
 #: concrete/single_pages/dashboard/pages/feeds.php:115
 msgid "Display Page Aliases?"
-msgstr ""
+msgstr "Prikaz vzdevkov strani?"
 
 #: concrete/single_pages/dashboard/pages/feeds.php:130
 msgid "Display Featured Only?"
-msgstr ""
+msgstr "Prikaz le izpostavljenih?"
 
 #: concrete/single_pages/dashboard/pages/feeds.php:145
 msgid "Get Content From"
-msgstr ""
+msgstr "Dobi vsebino od"
 
 #: concrete/single_pages/dashboard/pages/feeds.php:149
 msgid "Short Description of Page"
-msgstr ""
+msgstr "Kratka vsebina strani"
 
 #: concrete/single_pages/dashboard/pages/feeds.php:155
 msgid "Pull Content from Area"
-msgstr ""
+msgstr "Povleci vsebino iz območja"
 
 #: concrete/single_pages/dashboard/pages/feeds.php:160
 msgid "Select Area"
-msgstr ""
+msgstr "Izberi območje"
 
 #: concrete/single_pages/dashboard/pages/feeds.php:190
 msgid "Add Feed"
-msgstr ""
+msgstr "Dodaj vir"
 
 #: concrete/single_pages/dashboard/pages/feeds.php:201
 msgid "You have not added any feeds."
-msgstr ""
+msgstr "Niste dodali nobenega vira."
 
 #: concrete/single_pages/dashboard/pages/types/output.php:12
 msgid "Edit Defaults"
@@ -15291,11 +15192,11 @@ msgstr "Urejanje privzetih vrednosti"
 
 #: concrete/single_pages/dashboard/pages/types/organize.php:5
 msgid "Frequently Used"
-msgstr ""
+msgstr "Pogosto uporabljeno"
 
 #: concrete/single_pages/dashboard/pages/types/organize.php:14
 msgid "Others"
-msgstr ""
+msgstr "Drugo"
 
 #: concrete/single_pages/dashboard/pages/types/composer.php:188
 #: concrete/single_pages/dashboard/pages/types/composer.php:247
@@ -15305,7 +15206,7 @@ msgstr "Nazaj na tipe strani"
 
 #: concrete/single_pages/dashboard/pages/types/organize.php:25
 msgid "Save Ordering"
-msgstr ""
+msgstr "Shrani razvrščanje"
 
 #: concrete/single_pages/dashboard/pages/types/form.php:14
 #: concrete/single_pages/dashboard/pages/types/form.php:69
@@ -15317,7 +15218,7 @@ msgstr "Nastavi ime"
 #: concrete/single_pages/dashboard/pages/types/form.php:73
 msgctxt "Description of a set"
 msgid "Set Description"
-msgstr ""
+msgstr "Nastavi opis"
 
 #: concrete/single_pages/dashboard/pages/types/form.php:45
 msgid "Add Form Control"
@@ -15393,7 +15294,7 @@ msgstr "Ne morem do nastavitev urejevalnika"
 
 #: concrete/single_pages/dashboard/pages/types/view.php:23
 msgid "Order &amp; Group"
-msgstr ""
+msgstr "Uredi in grupiraj"
 
 #: concrete/config/install/base/dashboard.xml:258
 #: concrete/single_pages/dashboard/pages/types/view.php:24
@@ -15607,7 +15508,7 @@ msgstr "Poveži"
 #: concrete/single_pages/account/profile/public_profile.php:31
 #, php-format
 msgid "Joined on %s"
-msgstr ""
+msgstr "Pridružen %s"
 
 #: concrete/single_pages/account/profile/public_profile.php:37
 msgid "Badge"
@@ -15657,17 +15558,52 @@ msgstr "Pustite prazno za ohranitev trenutnega gesla."
 msgid "Private Messages"
 msgstr "Zasebna sporočila"
 
+#: concrete/config/install/base/login_registration.xml:40
+#: concrete/single_pages/account/messages/inbox.php:17
+#: concrete/single_pages/account/messages/inbox.php:73
+#: concrete/single_pages/account/messages/inbox.php:205
+msgid "Inbox"
+msgstr "Prejeto"
+
 #: concrete/single_pages/account/messages/inbox.php:30
 msgid "Back to Messages"
 msgstr "Nazaj na sporočila"
+
+#: concrete/single_pages/account/messages/inbox.php:51
+msgid "Delete this message?"
+msgstr "Brisanje tega sporočila?"
+
+#: concrete/single_pages/account/messages/inbox.php:83
+msgid "Sent At"
+msgstr "Poslano dne"
+
+#: concrete/single_pages/account/messages/inbox.php:84
+msgid "Status"
+msgstr "Status"
+
+#: concrete/single_pages/account/messages/inbox.php:109
+msgid "No messages found."
+msgstr "Ni najdenih sporočil."
+
+#: concrete/single_pages/account/messages/inbox.php:122
+msgid "Reply Sent."
+msgstr "Odgovor je bil poslan."
 
 #: concrete/single_pages/account/messages/inbox.php:123
 msgid "Back to Message"
 msgstr "Nazaj na sporočilo"
 
+#: concrete/single_pages/account/messages/inbox.php:129
+msgid "Message Sent."
+msgstr "Sporočilo je bilo poslano."
+
 #: concrete/single_pages/account/messages/inbox.php:130
 msgid "Back to Profile"
 msgstr "Nazaj na profil"
+
+#: concrete/single_pages/account/messages/inbox.php:135
+msgid "Woops!"
+msgstr "Ups!"
 
 #: concrete/single_pages/account/messages/inbox.php:136
 msgid ""
@@ -15675,6 +15611,37 @@ msgid ""
 "\t\t\t\tWe've notified an administrator to check into this.\n"
 "\t\t\t\tPlease wait a few minutes before sending a new message."
 msgstr "Poslali ste več sporočil, kot jih lahko trenutno obdelamo. Zadnje ni šlo ven.\n⇥⇥⇥⇥Obvestili smo administratorja, da to preveri.\n⇥⇥⇥⇥Počakajte nekaj minut, preden pošljete novo sporočilo."
+
+#: concrete/single_pages/account/messages/inbox.php:152
+#, php-format
+msgid "Re: %s"
+msgstr "Re: %s"
+
+#: concrete/single_pages/account/messages/inbox.php:158
+msgid "Send a Private Message"
+msgstr "Pošiljanje zasebnega sporočila"
+
+#: concrete/single_pages/account/messages/inbox.php:182
+msgid "Send Message"
+msgstr "Pošiljanje sporočila"
+
+#: concrete/single_pages/account/messages/inbox.php:200
+msgid "Mailbox"
+msgstr "Poštni predal"
+
+#: concrete/single_pages/account/messages/inbox.php:202
+msgid "Latest Message"
+msgstr "Zadnje sporočilo"
+
+#: concrete/single_pages/account/messages/inbox.php:210
+#: concrete/single_pages/account/messages/inbox.php:220
+#, php-format
+msgid "<strong>%s</strong>, sent by %s on %s"
+msgstr "<strong>%s</strong>, poslal %s dne %s"
+
+#: concrete/single_pages/account/messages/inbox.php:215
+msgid "Sent Messages"
+msgstr "Poslana sporočila"
 
 #: concrete/single_pages/account/members/directory.php:21
 msgid "No users found."
@@ -15703,15 +15670,15 @@ msgstr "Prijava"
 msgid "Sign in to %s"
 msgstr "Vpišite se v %s"
 
-#: concrete/single_pages/login.php:22
+#: concrete/single_pages/login.php:26
 msgid "Sign into your website."
 msgstr "Vpišite se na vašo spletno stran."
 
-#: concrete/single_pages/login.php:22
+#: concrete/single_pages/login.php:26
 msgid "Required Attributes"
-msgstr ""
+msgstr "Zahtevani atributi"
 
-#: concrete/single_pages/login.php:124
+#: concrete/single_pages/login.php:128
 msgid "Photo Credit:"
 msgstr "Slika zahvale:"
 
@@ -16014,7 +15981,7 @@ msgstr "Razno"
 #: concrete/themes/elemental/css/styles.xml:55
 msgctxt "StyleName"
 msgid "Content Divider Color"
-msgstr ""
+msgstr "Barva ločnika vsebine"
 
 #: concrete/themes/elemental/css/styles.xml:56
 msgctxt "StyleName"
@@ -16024,12 +15991,12 @@ msgstr "Privzet rob gumba"
 #: concrete/themes/elemental/css/styles.xml:57
 msgctxt "StyleName"
 msgid "Accent Background"
-msgstr ""
+msgstr "Ozadje poudarka"
 
 #: concrete/themes/elemental/css/styles.xml:58
 msgctxt "StyleName"
 msgid "Accent Header Color"
-msgstr ""
+msgstr "Barva glave poudarka"
 
 #: concrete/themes/elemental/css/styles.xml:59
 msgctxt "StyleName"
@@ -16245,7 +16212,7 @@ msgstr "Tipi strani"
 
 #: concrete/config/install/base/dashboard.xml:249
 msgid "Organize Page Type Order"
-msgstr ""
+msgstr "Organiziraj razvrščanje tipov strani"
 
 #: concrete/config/install/base/dashboard.xml:268
 msgid "Compose Form"
@@ -16283,12 +16250,12 @@ msgstr "samostojna, stran, po meri, aplikacija"
 
 #: concrete/config/install/base/dashboard.xml:323
 msgid "RSS Feeds"
-msgstr ""
+msgstr "Viri RSS"
 
 #. Keywords for page /dashboard/pages/feeds
 #: concrete/config/install/base/dashboard.xml:326
 msgid "atom, rss, feed, syndication"
-msgstr ""
+msgstr "atom, rss, feed, syndication"
 
 #: concrete/config/install/base/dashboard.xml:331
 #: concrete/config/install/base/dashboard.xml:773
@@ -16354,7 +16321,7 @@ msgstr "blok, osveži, po meri"
 msgid ""
 "add-on, addon, add on, package, app, ecommerce, discussions, forums, themes,"
 " templates, blocks"
-msgstr ""
+msgstr "add-on, addon, add on, package, app, ecommerce, discussions, forums, themes, templates, blocks"
 
 #: concrete/config/install/base/dashboard.xml:415
 msgid "Add Functionality"
@@ -16437,12 +16404,12 @@ msgstr "stran spletne strani, naslov"
 
 #: concrete/config/install/base/dashboard.xml:473
 msgid "Accessibility"
-msgstr ""
+msgstr "Dostopnost"
 
 #. Keywords for page /dashboard/system/basics/accessibility
 #: concrete/config/install/base/dashboard.xml:476
 msgid "accessibility, easy mode"
-msgstr ""
+msgstr "dostopnost, enostaven način"
 
 #. Keywords for page /dashboard/system/basics/social
 #: concrete/config/install/base/dashboard.xml:484
@@ -16496,7 +16463,7 @@ msgstr "Iskanje (SEO) in statistika"
 
 #: concrete/config/install/base/dashboard.xml:530
 msgid "Enable pretty URLs and tracking codes."
-msgstr ""
+msgstr "Omogoči lepe URL in sledilne kode."
 
 #: concrete/config/install/base/dashboard.xml:532
 msgid "Pretty URLs"
@@ -16556,7 +16523,7 @@ msgstr "varnost, datoteke, mediji, podaljšek, upravitelj, nalaganje"
 #. Keywords for page /dashboard/system/files/thumbnails
 #: concrete/config/install/base/dashboard.xml:603
 msgid "images, picture, responsive, retina"
-msgstr ""
+msgstr "images, picture, responsive, retina"
 
 #: concrete/config/install/base/dashboard.xml:608
 msgid "File Storage Locations"
@@ -16765,7 +16732,7 @@ msgstr "prepovedane besede, prepovedano, grde besede, grdo, beseda, seznam"
 
 #: concrete/config/install/base/dashboard.xml:805
 msgid "Conversation Permissions"
-msgstr ""
+msgstr "Dovoljenja za pogovore"
 
 #: concrete/config/install/base/dashboard.xml:808
 msgid "Setup attributes for pages, users, files and more."
@@ -17777,17 +17744,17 @@ msgstr "Ogled vozlišča kategorije drevesa tem"
 #: concrete/config/install/base/permissions.xml:110
 msgctxt "PermissionKeyName"
 msgid "Add Message to Conversation"
-msgstr ""
+msgstr "Dodajanje sporočil pogovoru"
 
 #: concrete/config/install/base/permissions.xml:111
 msgctxt "PermissionKeyName"
 msgid "Add Message Attachments"
-msgstr ""
+msgstr "Dodajanje priponk sporočilom"
 
 #: concrete/config/install/base/permissions.xml:112
 msgctxt "PermissionKeyName"
 msgid "Edit Conversation Permissions"
-msgstr ""
+msgstr "Urejanje dovoljenj pogovora"
 
 #: concrete/config/install/base/permissions.xml:113
 msgctxt "PermissionKeyName"
@@ -17797,22 +17764,22 @@ msgstr "Brisanje sporočila"
 #: concrete/config/install/base/permissions.xml:114
 msgctxt "PermissionKeyName"
 msgid "Edit Message"
-msgstr ""
+msgstr "Urejanje sporočila"
 
 #: concrete/config/install/base/permissions.xml:115
 msgctxt "PermissionKeyName"
 msgid "Rate Message"
-msgstr ""
+msgstr "Ocenjevanje sporočila"
 
 #: concrete/config/install/base/permissions.xml:116
 msgctxt "PermissionKeyName"
 msgid "Flag Message"
-msgstr ""
+msgstr "Označevanje sporočila"
 
 #: concrete/config/install/base/permissions.xml:117
 msgctxt "PermissionKeyName"
 msgid "Approve Message"
-msgstr ""
+msgstr "Odobravanje sporočila"
 
 #: concrete/config/install/base/permissions.xml:120
 msgctxt "PermissionKeyName"
@@ -18126,7 +18093,7 @@ msgstr "Oznake"
 #: concrete/config/install/base/attributes.xml:104
 msgctxt "AttributeKeyName"
 msgid "Is Featured"
-msgstr ""
+msgstr "Is Featured"
 
 #: concrete/config/install/base/attributes.xml:107
 msgctxt "AttributeKeyName"
@@ -18216,7 +18183,7 @@ msgstr "Lokacija"
 #: concrete/config/install/packages/elemental_full/content.xml:20
 msgctxt "AttributeKeyName"
 msgid "Exclude Sub-Pages From Nav"
-msgstr ""
+msgstr "Izključi podstrani iz krmarjenja"
 
 #: concrete/config/install/packages/elemental_full/content.xml:23
 msgctxt "AttributeKeyName"
@@ -18226,37 +18193,37 @@ msgstr "Sličica"
 #: concrete/config/install/packages/elemental_full/content.xml:24
 msgctxt "AttributeKeyName"
 msgid "Blog Entry Topics"
-msgstr ""
+msgstr "Teme člankov"
 
 #: concrete/config/install/packages/elemental_full/content.xml:25
 msgctxt "TreeName"
 msgid "Blog Entries"
-msgstr ""
+msgstr "Članki"
 
 #: concrete/config/install/packages/elemental_full/content.xml:27
 msgctxt "AttributeKeyName"
 msgid "Project Topics"
-msgstr ""
+msgstr "Teme projektov"
 
 #: concrete/config/install/packages/elemental_full/content.xml:28
 msgctxt "TreeName"
 msgid "Projects"
-msgstr ""
+msgstr "Projekti"
 
 #: concrete/config/install/packages/elemental_full/content.xml:30
 msgctxt "AttributeKeyName"
 msgid "Client"
-msgstr ""
+msgstr "Stranka"
 
 #: concrete/config/install/packages/elemental_full/content.xml:31
 msgctxt "AttributeKeyName"
 msgid "Task"
-msgstr ""
+msgstr "Opravilo"
 
 #: concrete/config/install/packages/elemental_full/content.xml:34
 msgctxt "SelectAttributeValue"
 msgid "Architecture"
-msgstr ""
+msgstr "Arhitektura"
 
 #: concrete/config/install/packages/elemental_full/content.xml:35
 msgctxt "SelectAttributeValue"
@@ -18271,22 +18238,22 @@ msgstr "Oblikovanje"
 #: concrete/config/install/packages/elemental_full/content.xml:37
 msgctxt "SelectAttributeValue"
 msgid "Production"
-msgstr ""
+msgstr "Proizvodnja"
 
 #: concrete/config/install/packages/elemental_full/content.xml:38
 msgctxt "SelectAttributeValue"
 msgid "Development"
-msgstr ""
+msgstr "Razvoj"
 
 #: concrete/config/install/packages/elemental_full/content.xml:39
 msgctxt "SelectAttributeValue"
 msgid "Quality Assurance"
-msgstr ""
+msgstr "Zagotovilo kvalitete"
 
 #: concrete/config/install/packages/elemental_full/content.xml:43
 msgctxt "AttributeKeyName"
 msgid "Skills"
-msgstr ""
+msgstr "Spretnosti"
 
 #: concrete/config/install/packages/elemental_full/content.xml:46
 msgctxt "SelectAttributeValue"
@@ -18306,7 +18273,7 @@ msgstr "PHP"
 #: concrete/config/install/packages/elemental_full/content.xml:49
 msgctxt "SelectAttributeValue"
 msgid "Database"
-msgstr ""
+msgstr "Podatkovna baza"
 
 #: concrete/config/install/packages/elemental_full/content.xml:50
 msgctxt "SelectAttributeValue"
@@ -18316,17 +18283,17 @@ msgstr "CSS"
 #: concrete/config/install/packages/elemental_full/content.xml:51
 msgctxt "SelectAttributeValue"
 msgid "Ruby"
-msgstr ""
+msgstr "Ruby"
 
 #: concrete/config/install/packages/elemental_full/content.xml:52
 msgctxt "SelectAttributeValue"
 msgid "Java"
-msgstr ""
+msgstr "Java"
 
 #: concrete/config/install/packages/elemental_full/content.xml:53
 msgctxt "SelectAttributeValue"
 msgid "iOS/Android/App Development"
-msgstr ""
+msgstr "iOS/Android/App Development"
 
 #: concrete/config/install/packages/elemental_full/content.xml:54
 msgctxt "SelectAttributeValue"
@@ -18336,12 +18303,12 @@ msgstr "Photoshop"
 #: concrete/config/install/packages/elemental_full/content.xml:55
 msgctxt "SelectAttributeValue"
 msgid "Python"
-msgstr ""
+msgstr "Python"
 
 #: concrete/config/install/packages/elemental_full/content.xml:56
 msgctxt "SelectAttributeValue"
 msgid "Writing"
-msgstr ""
+msgstr "Pisanje"
 
 #: concrete/config/install/packages/elemental_full/content.xml:66
 msgctxt "AttributeSetName"
@@ -18356,7 +18323,7 @@ msgstr "Blog"
 #: concrete/config/install/packages/elemental_full/content.xml:73
 msgctxt "AttributeSetName"
 msgid "Portfolio"
-msgstr ""
+msgstr "Portfolio"
 
 #: concrete/config/install/packages/elemental_full/content.xml:82
 msgctxt "PageTemplateName"
@@ -18403,12 +18370,12 @@ msgstr "Blog vnosi"
 #: concrete/config/install/packages/elemental_full/content.xml:124
 msgctxt "PageTypeComposerFormLayoutSetName"
 msgid "Post Details"
-msgstr ""
+msgstr "Podrobnosti objave"
 
 #: concrete/config/install/packages/elemental_full/content.xml:125
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Entry Name"
-msgstr ""
+msgstr "Ime vnosa"
 
 #: concrete/config/install/packages/elemental_full/content.xml:126
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
@@ -18517,7 +18484,7 @@ msgstr "Glava strani"
 
 #: concrete/config/install/packages/elemental_full/content.xml:432
 msgid "Portfolio Project"
-msgstr ""
+msgstr "Portfolio projekt"
 
 #: concrete/config/install/packages/elemental_full/content.xml:439
 msgctxt "PageTypeComposerFormLayoutSetName"
@@ -18527,12 +18494,12 @@ msgstr "Stran"
 #: concrete/config/install/packages/elemental_full/content.xml:444
 msgctxt "PageTypeComposerFormLayoutSetName"
 msgid "Project Data"
-msgstr ""
+msgstr "Podatki projekta"
 
 #: concrete/config/install/packages/elemental_full/content.xml:446
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Date Completed"
-msgstr ""
+msgstr "Datum zaključka"
 
 #: concrete/config/install/packages/elemental_full/content.xml:452
 msgctxt "PageTypeComposerFormLayoutSetName"
@@ -18557,7 +18524,7 @@ msgstr "Podrobnosti"
 #: concrete/config/install/packages/elemental_full/content.xml:651
 #: concrete/config/install/packages/elemental_full/content.xml:1335
 msgid "Portfolio"
-msgstr ""
+msgstr "Portfolio"
 
 #: concrete/config/install/packages/elemental_full/content.xml:659
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
@@ -18609,7 +18576,7 @@ msgstr "Naslov strani v glavi"
 
 #: concrete/config/install/packages/elemental_full/content.xml:1352
 msgid "Project Title"
-msgstr ""
+msgstr "Naslov projekta"
 
 #: concrete/config/install/packages/elemental_full/content.xml:1352
 #: concrete/config/install/packages/elemental_full/content.xml:1448
@@ -18619,7 +18586,7 @@ msgstr ""
 #: concrete/config/install/packages/elemental_full/content.xml:1811
 msgid ""
 "Pellentesque ultricies ligula vel neque dictum, eu mollis tortor adipiscing."
-msgstr ""
+msgstr "Pellentesque ultricies ligula vel neque dictum, eu mollis tortor adipiscing."
 
 #: concrete/config/install/packages/elemental_full/content.xml:1364
 #: concrete/config/install/packages/elemental_full/content.xml:1548
@@ -18628,40 +18595,40 @@ msgstr ""
 #: concrete/config/install/packages/elemental_full/content.xml:1820
 msgctxt "Topic"
 msgid "/Homework"
-msgstr ""
+msgstr "/naloga"
 
 #: concrete/config/install/packages/elemental_full/content.xml:1448
 msgid "Project Title 2"
-msgstr ""
+msgstr "Naslov projekta 2"
 
 #: concrete/config/install/packages/elemental_full/content.xml:1457
 msgctxt "Topic"
 msgid "/Activities"
-msgstr ""
+msgstr "/aktivnosti"
 
 #: concrete/config/install/packages/elemental_full/content.xml:1536
 msgid "Project Title 3"
-msgstr ""
+msgstr "Naslov projekta 3"
 
 #: concrete/config/install/packages/elemental_full/content.xml:1632
 msgid "Project Title 4"
-msgstr ""
+msgstr "Naslov projekta 4"
 
 #: concrete/config/install/packages/elemental_full/content.xml:1723
 msgid "Project Title 5"
-msgstr ""
+msgstr "Naslov projekta 5"
 
 #: concrete/config/install/packages/elemental_full/content.xml:1811
 msgid "Project Title 6"
-msgstr ""
+msgstr "Naslov projekta 6"
 
 #: concrete/config/install/packages/elemental_full/content.xml:1900
 msgid "Team"
-msgstr ""
+msgstr "Ekipa"
 
 #: concrete/config/install/packages/elemental_full/content.xml:2113
 msgid "Hello World!"
-msgstr ""
+msgstr "Pozdravljen svet!"
 
 #: concrete/config/install/packages/elemental_full/content.xml:2113
 msgid ""
@@ -18669,40 +18636,40 @@ msgid ""
 " Etiam congue, est vel tincidunt vestibulum, nunc nunc porta nulla, at "
 "adipiscing neque tellus quis urna. Quisque dignissim neque a ipsum sodales, "
 "mattis aliquam ante dictum."
-msgstr ""
+msgstr "Pellentesque ultricies ligula vel neque dictum, eu mollis tortor adipiscing. Etiam congue, est vel tincidunt vestibulum, nunc nunc porta nulla, at adipiscing neque tellus quis urna. Quisque dignissim neque a ipsum sodales, mattis aliquam ante dictum."
 
 #: concrete/config/install/packages/elemental_full/content.xml:2137
 #: concrete/config/install/packages/elemental_full/content.xml:2273
 msgctxt "Topic"
 msgid "/Projects"
-msgstr ""
+msgstr "/projekti"
 
 #: concrete/config/install/packages/elemental_full/content.xml:2192
 #: concrete/config/install/packages/elemental_full/content.xml:2260
 #: concrete/config/install/packages/elemental_full/content.xml:2328
 msgctxt "AreaName"
 msgid "Sidebar Footer"
-msgstr ""
+msgstr "Noga stranskega stolpca"
 
 #: concrete/config/install/packages/elemental_full/content.xml:2196
 msgid "Another Blog Post"
-msgstr ""
+msgstr "Nova objava"
 
 #: concrete/config/install/packages/elemental_full/content.xml:2196
 msgid ""
 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet "
 "consectetur lacus. Vestibulum neque lectus, egestas non cursus vitae, "
 "aliquam at magna."
-msgstr ""
+msgstr "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet consectetur lacus. Vestibulum neque lectus, egestas non cursus vitae, aliquam at magna."
 
 #: concrete/config/install/packages/elemental_full/content.xml:2205
 msgctxt "Topic"
 msgid "/Humor"
-msgstr ""
+msgstr "/humor"
 
 #: concrete/config/install/packages/elemental_full/content.xml:2264
 msgid "A Beautiful Site Deserves a Beautiful Blog"
-msgstr ""
+msgstr "Lepa stran zasluži lep blog"
 
 #: concrete/config/install/packages/elemental_full/content.xml:2264
 msgid ""
@@ -18710,11 +18677,11 @@ msgid ""
 "sem eu molestie. Aenean laoreet pretium ante vitae ultrices. Aenean eu "
 "gravida magna, vel aliquet magna. In auctor convallis gravida. Phasellus est"
 " erat."
-msgstr ""
+msgstr "Donec blandit lectus nec neque ullamcorper rhoncus. Sed adipiscing tempus sem eu molestie. Aenean laoreet pretium ante vitae ultrices. Aenean eu gravida magna, vel aliquet magna. In auctor convallis gravida. Phasellus est erat."
 
 #: concrete/config/install/packages/elemental_full/content.xml:2371
 msgid "Contact"
-msgstr ""
+msgstr "Kontakt"
 
 #: concrete/config/install/packages/elemental_full/content.xml:2540
 msgid "Blank Page"
@@ -18750,62 +18717,62 @@ msgstr "Sodelavec prodaje"
 #: concrete/config/install/packages/elemental_full/content.xml:3020
 msgctxt "TopicCategoryName"
 msgid "Reviews"
-msgstr ""
+msgstr "Ocene"
 
 #: concrete/config/install/packages/elemental_full/content.xml:3021
 msgctxt "TopicName"
 msgid "Gadgets"
-msgstr ""
+msgstr "Pripomočki"
 
 #: concrete/config/install/packages/elemental_full/content.xml:3022
 msgctxt "TopicName"
 msgid "Movies"
-msgstr ""
+msgstr "Filmi"
 
 #: concrete/config/install/packages/elemental_full/content.xml:3023
 msgctxt "TopicName"
 msgid "Books"
-msgstr ""
+msgstr "Knjige"
 
 #: concrete/config/install/packages/elemental_full/content.xml:3024
 msgctxt "TopicName"
 msgid "Music"
-msgstr ""
+msgstr "Glasba"
 
 #: concrete/config/install/packages/elemental_full/content.xml:3026
 msgctxt "TopicName"
 msgid "Projects"
-msgstr ""
+msgstr "Projekti"
 
 #: concrete/config/install/packages/elemental_full/content.xml:3027
 msgctxt "TopicName"
 msgid "Sports"
-msgstr ""
+msgstr "Športi"
 
 #: concrete/config/install/packages/elemental_full/content.xml:3028
 msgctxt "TopicName"
 msgid "Humor"
-msgstr ""
+msgstr "Humor"
 
 #: concrete/config/install/packages/elemental_full/content.xml:3031
 msgctxt "TopicName"
 msgid "Crafts"
-msgstr ""
+msgstr "Ročne spretnosti"
 
 #: concrete/config/install/packages/elemental_full/content.xml:3032
 msgctxt "TopicName"
 msgid "Homework"
-msgstr ""
+msgstr "Naloga"
 
 #: concrete/config/install/packages/elemental_full/content.xml:3033
 msgctxt "TopicName"
 msgid "Supplies"
-msgstr ""
+msgstr "Potrebščine"
 
 #: concrete/config/install/packages/elemental_full/content.xml:3034
 msgctxt "TopicName"
 msgid "Activities"
-msgstr ""
+msgstr "Aktivnosti"
 
 #: concrete/config/install/packages/elemental_full/content.xml:3040
 msgctxt "FeedTitle"
@@ -18815,17 +18782,17 @@ msgstr "Blog"
 #: concrete/config/install/packages/elemental_full/content.xml:3041
 msgctxt "FeedDescription"
 msgid "concrete5 Blog"
-msgstr ""
+msgstr "concrete5 Blog"
 
 #: concrete/config/install/packages/elemental_full/themes.xml:7
 msgctxt "ThumbnailTypeName"
 msgid "Small Image"
-msgstr ""
+msgstr "Majhna slika"
 
 #: concrete/config/install/packages/elemental_full/themes.xml:8
 msgctxt "ThumbnailTypeName"
 msgid "Medium Image"
-msgstr ""
+msgstr "Srednja slika"
 
 #: concrete/config/install/packages/elemental_full/themes.xml:9
 msgctxt "ThumbnailTypeName"
@@ -18854,7 +18821,7 @@ msgstr "Datum Čas"
 #: concrete/blocks/page_title/templates/byline.php
 msgctxt "TemplateFileName"
 msgid "Byline"
-msgstr ""
+msgstr "Byline"
 
 #: concrete/blocks/search/templates/tag_cloud
 msgctxt "TemplateFileName"
@@ -18864,17 +18831,17 @@ msgstr "Oblak oznak"
 #: concrete/blocks/page_list/templates/thumbnail_grid
 msgctxt "TemplateFileName"
 msgid "Thumbnail Grid"
-msgstr ""
+msgstr "Mreža sličic"
 
 #: concrete/blocks/feature/templates/hover_description
 msgctxt "TemplateFileName"
 msgid "Hover Description"
-msgstr ""
+msgstr "Lebdeči opis"
 
 #: concrete/blocks/topic_list/templates/flat_filter.php
 msgctxt "TemplateFileName"
 msgid "Flat Filter"
-msgstr ""
+msgstr "Enostaven filter"
 
 #: concrete/blocks/autonav/templates/header_menu.php
 msgctxt "TemplateFileName"

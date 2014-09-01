@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-08-29 04:00+0000\n"
-"PO-Revision-Date: 2014-08-29 11:51+0000\n"
+"POT-Creation-Date: 2014-08-31 04:00+0000\n"
+"PO-Revision-Date: 2014-08-31 14:52+0000\n"
 "Last-Translator: Torsten Silbermann <mail@tsilbermann.de>\n"
 "Language-Team: German (Germany) (http://www.transifex.com/projects/p/concrete5/language/de_DE/)\n"
 "MIME-Version: 1.0\n"
@@ -87,7 +87,7 @@ msgstr "Mit Benutzerkonto anmelden"
 #: concrete/authentication/concrete/form.php:13
 #: concrete/blocks/form/form_setup_html.php:126
 #: concrete/blocks/form/form_setup_html.php:196
-#: concrete/controllers/single_page/login.php:168
+#: concrete/controllers/single_page/login.php:173
 #: concrete/elements/permission/keys/edit_user_properties.php:31
 #: concrete/elements/permission/keys/edit_user_properties.php:68
 #: concrete/mail/user_register.php:16 concrete/mail/user_register.php:47
@@ -104,7 +104,7 @@ msgid "Email Address"
 msgstr "E-Mail-Adresse"
 
 #: concrete/authentication/concrete/form.php:13
-#: concrete/controllers/single_page/login.php:170
+#: concrete/controllers/single_page/login.php:175
 #: concrete/elements/permission/keys/edit_user_properties.php:30
 #: concrete/elements/permission/keys/edit_user_properties.php:67
 #: concrete/elements/users/confirm_list.php:7
@@ -178,21 +178,26 @@ msgstr "Ungültiger Schlüssel: Bitte besuchen Sie die \"Passwort vergessen\"-Se
 msgid "Please provide both username and password."
 msgstr "Bitte Benutzernamen und Passwort angeben."
 
-#: concrete/authentication/concrete/controller.php:227
+#: concrete/authentication/concrete/controller.php:226
+#: concrete/controllers/single_page/login.php:46
+msgid "Your session has expired. Please sign in again."
+msgstr "Ihre Sitzung ist abgelaufen. Bitte erneut anmelden."
+
+#: concrete/authentication/concrete/controller.php:230
 msgid ""
 "This account has not yet been validated. Please check the email associated "
 "with this account and follow the link it contains."
 msgstr "Dieses Konto wurde noch nicht validiert. Bitte überprüfen Sie Ihre E-Mail Adresse, die mit diesem Konto verbunden ist und folgen Sie dem enthalten Link."
 
-#: concrete/authentication/concrete/controller.php:231
+#: concrete/authentication/concrete/controller.php:234
 msgid "Invalid email address or password."
 msgstr "Ungültige E-Mail-Adresse oder Passwort"
 
-#: concrete/authentication/concrete/controller.php:233
+#: concrete/authentication/concrete/controller.php:236
 msgid "Invalid username or password."
 msgstr "Ungültiger Benutzername oder Passwort"
 
-#: concrete/authentication/concrete/controller.php:237
+#: concrete/authentication/concrete/controller.php:240
 #: concrete/controllers/single_page/login.php:41
 msgid "This user is inactive. Please contact us regarding this account."
 msgstr "Dieser Benutzer ist inaktiv. Bitte kontaktieren Sie uns bezüglich dieses Kontos."
@@ -220,7 +225,7 @@ msgstr "App Secret"
 #: concrete/authentication/facebook/type_form.php:13
 #, php-format
 msgid "<a href=\"%s\" target=\"_blank\">Click here</a> to obtain your access keys."
-msgstr ""
+msgstr "<a href=\"%s\" target=\"_blank\">Hier klicken,</a> um Zugangsschlüssel zu erhalten."
 
 #: concrete/authentication/facebook/controller.php:32
 msgid "Something went wrong, please try again."
@@ -231,19 +236,19 @@ msgstr "Es ist etwas schiefgegangen. Bitte erneut versuchen."
 #, php-format
 msgid ""
 "<h2>Oh No!</h2>This Facebook account isn't tied to any account of %1$s!"
-msgstr ""
+msgstr "<h2>Oh nein!</h2>Dieses Facebook-Konto ist mit keinem Konto von %1$s verknüpft."
 
 #: concrete/authentication/facebook/controller.php:43
 msgid ""
 "Please login with your Email and Password and then use the Facebook login to"
 " tie them together."
-msgstr ""
+msgstr "Bitte mit E-Mail und Passwort einloggen und dann die Facebook-Anmeldung benutzen, um beide zu verknüpfen."
 
 #: concrete/authentication/facebook/controller.php:46
 msgid ""
 "Please login with your Username and Password and then use the Facebook login"
 " to tie them together."
-msgstr ""
+msgstr "Bitte mit Benutzernamen und Passwort anmelden und dann die Facebook-Anmeldung benutzen, um beide zu verknüpfen."
 
 #: concrete/authentication/facebook/controller.php:50
 msgid "Successfully attached this Facebook account to your user account."
@@ -260,15 +265,15 @@ msgid ""
 "<h2>Oh No!</h2>The email used by your Facebook account is already in "
 "use!<br>Please login to your concrete5 account and then use the Facebook "
 "login to tie your accounts together."
-msgstr ""
+msgstr "<h2> Oh nein!</h2> Die E-Mail-Adresse Ihres Facebook-Kontos wird bereits genutzt.<br>Bitte mit dem concrete5-Konto anmelden und dann die Facebook-Anmeldung benutzen, um beide zu verknüpfen."
 
 #: concrete/authentication/facebook/controller.php:141
 msgid "This user is not tied to a Facebook account."
-msgstr ""
+msgstr "Dieser Benutzer ist nicht mit einem Facebook-Konto verknüpft."
 
 #: concrete/authentication/facebook/controller.php:224
 msgid "This Facebook account is not tied to a user."
-msgstr ""
+msgstr "Dieses Facebook-Konto ist nicht mit einem Benutzer verknüpft."
 
 #: concrete/controllers/backend/user_interface.php:28
 #: concrete/controllers/backend/user_interface/block.php:47
@@ -321,7 +326,7 @@ msgstr "Spalten auswählen"
 #: concrete/tools/users/customize_search_columns.php:44
 #: concrete/views/dialogs/search/customize.php:13
 msgid "Standard Properties"
-msgstr "Standard Eigenschaften"
+msgstr "Standardeigenschaften"
 
 #: concrete/tools/files/customize_search_columns.php:64
 #: concrete/tools/pages/customize_search_columns.php:64
@@ -335,7 +340,7 @@ msgstr "Zusätzliche Attribute"
 #: concrete/tools/users/customize_search_columns.php:82
 #: concrete/views/dialogs/search/customize.php:37
 msgid "Column Order"
-msgstr "Spaltenreihenfolge"
+msgstr "Spaltensortierung"
 
 #: concrete/tools/files/customize_search_columns.php:80
 #: concrete/tools/pages/customize_search_columns.php:80
@@ -486,7 +491,7 @@ msgstr "Speichern"
 #: concrete/tools/users/bulk_group_remove.php:22
 #: concrete/tools/versions.php:20 concrete/views/image-editor/editor.php:17
 msgid "Access Denied."
-msgstr "Zugriff verweigert."
+msgstr "Zugriff verweigert"
 
 #: concrete/tools/files/star.php:19
 msgid "INVALID ACTION"
@@ -635,7 +640,6 @@ msgstr "Dateien von incoming-Verzeichnis löschen"
 #: concrete/single_pages/dashboard/users/search.php:177
 #: concrete/single_pages/dashboard/workflow/workflows.php:16
 #: concrete/single_pages/dashboard/workflow/workflows.php:69
-#: concrete/single_pages/profile/messages.php:157
 #: concrete/src/Form/Service/Widget/Color.php:34
 #: concrete/src/StyleCustomizer/Style/ColorStyle.php:41
 #: concrete/src/Workflow/Progress/Action/CancelAction.php:7
@@ -904,7 +908,6 @@ msgstr "Möchten Sie die folgenden Dateien wirklich löschen?"
 #: concrete/single_pages/dashboard/users/points/actions.php:106
 #: concrete/single_pages/dashboard/users/points/view.php:52
 #: concrete/single_pages/dashboard/users/search.php:37
-#: concrete/single_pages/profile/messages.php:47
 #: concrete/tools/files/delete.php:92
 #: concrete/tools/gathering/item/delete.php:28 concrete/tools/i18n_js.php:29
 #: concrete/tools/i18n_js.php:87 concrete/tools/i18n_js.php:122
@@ -913,7 +916,7 @@ msgstr "Möchten Sie die folgenden Dateien wirklich löschen?"
 #: concrete/tools/users/bulk_delete.php:67
 #: concrete/views/dialogs/page/delete.php:21
 #: concrete/views/panels/page/versions.php:37
-#: concrete/views/panels/page/versions.php:289
+#: concrete/views/panels/page/versions.php:291
 msgid "Delete"
 msgstr "Löschen"
 
@@ -1434,7 +1437,7 @@ msgstr "Keine Gruppenalben gefunden"
 msgid ""
 "Page permissions request saved successfully. You must approve this workflow "
 "request before the permissions are changed."
-msgstr ""
+msgstr "Die Anfrage für Seitenberechtigungen wurde gespeichert. Sie müssen die Anfrage für diesen Arbeitsablauf freigeben, bevor sich die Berechtigungen geändert haben."
 
 #: concrete/tools/permissions/categories/page.php:144
 msgid "Page permissions saved successfully."
@@ -1446,15 +1449,15 @@ msgstr ""
 
 #: concrete/tools/i18n_imageeditor_js.php:8
 msgid "Loading Components..."
-msgstr ""
+msgstr "Lädt Komponenten..."
 
 #: concrete/tools/i18n_imageeditor_js.php:9
 msgid "Loading Filters..."
-msgstr ""
+msgstr "Lädt Filter..."
 
 #: concrete/tools/i18n_imageeditor_js.php:10
 msgid "Loading Image..."
-msgstr ""
+msgstr "Lädt Bild..."
 
 #: concrete/blocks/faq/form_setup_html.php:15
 #: concrete/blocks/image_slider/form_setup_html.php:11
@@ -1540,7 +1543,7 @@ msgstr "Es muss eine Nachricht erstellt werden."
 
 #: concrete/tools/conversations/update_message.php:24
 msgid "Invalid message object."
-msgstr ""
+msgstr "Ungültiges Nachrichtenobjekt"
 
 #: concrete/tools/conversations/update_message.php:28
 msgid "You do not have access to edit this message."
@@ -1578,7 +1581,7 @@ msgstr "Dateigröße überschreitet das Limit"
 
 #: concrete/tools/conversations/add_file.php:85
 msgid "Attachment limit reached"
-msgstr ""
+msgstr "Limit für Anhänge erreicht."
 
 #: concrete/tools/conversations/add_file.php:109
 msgid "Invalid File Extension"
@@ -1919,19 +1922,19 @@ msgstr "Amker"
 
 #: concrete/tools/i18n_redactor_js.php:82
 msgid "Open link"
-msgstr ""
+msgstr "Link öffnen"
 
 #: concrete/tools/i18n_redactor_js.php:83
 msgid "Default Behavior"
-msgstr ""
+msgstr "Standardverhalten"
 
 #: concrete/tools/i18n_redactor_js.php:84
 msgid "In a Lightbox"
-msgstr ""
+msgstr "In einer Lightbox"
 
 #: concrete/tools/i18n_redactor_js.php:85
 msgid "Open Link in Lightbox"
-msgstr ""
+msgstr "Link in einer Lightbox öffnen."
 
 #: concrete/tools/i18n_redactor_js.php:86
 msgid "Open link in new tab"
@@ -2050,7 +2053,7 @@ msgstr "Freigegeben von"
 msgid "Created"
 msgstr "Erstellt"
 
-#: concrete/tools/versions.php:361 concrete/views/panels/page/versions.php:289
+#: concrete/tools/versions.php:361 concrete/views/panels/page/versions.php:291
 msgid "Compare"
 msgstr "Vergleichen"
 
@@ -2096,7 +2099,7 @@ msgstr "Soll diese Kachel wirklich gelöscht werden?"
 #: concrete/controllers/dialog/area/layout/presets.php:43
 #: concrete/tools/area/layout_presets.php:39
 msgid "Invalid layout object."
-msgstr ""
+msgstr "Ungültiges Layoutobjekt."
 
 #: concrete/controllers/dialog/area/layout/presets.php:29
 #: concrete/tools/area/layout_presets.php:59
@@ -2108,7 +2111,7 @@ msgstr "** Neu"
 msgid ""
 "Deleting a preset will not affect any layouts that have used that preset in "
 "the past."
-msgstr ""
+msgstr "Das Löschen einer Vorlage hat keinen Einfluss auf bereits erstellte  Layouts."
 
 #: concrete/tools/area/layout_presets.php:94
 #: concrete/views/dialogs/area/layout/presets.php:30
@@ -2125,7 +2128,7 @@ msgstr "Neuer Vorlagenname"
 msgid ""
 "Note: this will override the selected preset with the new preset. It will "
 "not update any layouts already in use."
-msgstr ""
+msgstr "Hinweis: Die markierte Vorlage wird durch die neue Vorlage ersetzt. Dies hat keinen Einfluss  auf bereits erstellten Layouts."
 
 #: concrete/tools/users/bulk_delete.php:58
 msgid ""
@@ -2357,7 +2360,7 @@ msgstr "Inhalt"
 #: concrete/elements/conversation/display.php:82
 #: concrete/elements/pane_header.php:9 concrete/tools/i18n_js.php:38
 msgid "Close"
-msgstr "Schliessen"
+msgstr "Schließen"
 
 #: concrete/tools/i18n_js.php:40
 #, php-format
@@ -2673,8 +2676,8 @@ msgstr "Endgültig löschen"
 #: concrete/config/install/base/dashboard.xml:808
 #: concrete/elements/page_controls_footer.php:83
 #: concrete/elements/page_controls_footer.php:85
-#: concrete/elements/panels/page.php:79 concrete/single_pages/login.php:31
-#: concrete/single_pages/login.php:67 concrete/tools/i18n_js.php:132
+#: concrete/elements/panels/page.php:79 concrete/single_pages/login.php:35
+#: concrete/single_pages/login.php:71 concrete/tools/i18n_js.php:132
 #: concrete/tools/i18n_js.php:135 concrete/views/panels/page/attributes.php:6
 msgid "Attributes"
 msgstr "Attribute"
@@ -2705,7 +2708,7 @@ msgstr "Theme und Seitentyp erfolgreich aktualisiert"
 #: concrete/elements/panels/page.php:114 concrete/tools/i18n_js.php:141
 #: concrete/views/dialogs/file/properties.php:14
 #: concrete/views/dialogs/file/properties.php:174
-#: concrete/views/panels/page/versions.php:284
+#: concrete/views/panels/page/versions.php:286
 msgid "Versions"
 msgstr "Versionen"
 
@@ -2893,7 +2896,7 @@ msgstr "Thema hinzufügen"
 
 #: concrete/tools/i18n_js.php:234
 msgid "Edit Topic"
-msgstr ""
+msgstr "Thema bearbeiten"
 
 #: concrete/tools/i18n_js.php:235
 msgid "Delete Topic"
@@ -3336,11 +3339,11 @@ msgstr ""
 
 #: concrete/controllers/dialog/area/layout/presets.php:56
 msgid "Area layout preset updated successfully."
-msgstr ""
+msgstr "Vorgabe für Bereichslayout wurde aktualisiert."
 
 #: concrete/controllers/dialog/area/layout/presets.php:58
 msgid "Area layout preset saved successfully."
-msgstr ""
+msgstr "Vorgabe für Bereichslayout wurde gespeichert."
 
 #: concrete/controllers/dialog/file/bulk/properties.php:74
 msgid "Files updated successfully."
@@ -3349,7 +3352,7 @@ msgstr "Dateien erfolgreich aktualisiert."
 #: concrete/controllers/dialog/file/properties.php:46
 #: concrete/controllers/single_page/dashboard/users/search.php:311
 msgid "Attribute cleared successfully."
-msgstr ""
+msgstr "Attribut wurde gelöscht."
 
 #: concrete/controllers/dialog/file/properties.php:69
 #: concrete/controllers/single_page/dashboard/users/search.php:285
@@ -3361,9 +3364,9 @@ msgstr "Attribut erfolgreich gespeichert."
 msgid "File updated successfully."
 msgstr "Datei erfolgreich aktualisiert."
 
-#: concrete/controllers/dialog/file/search/customize.php:55
+#: concrete/controllers/dialog/file/search/customize.php:56
 msgid "File search columns saved successfully."
-msgstr ""
+msgstr "Spalten für die Dateisuche wurden gespeichert."
 
 #: concrete/controllers/single_page/dashboard/files/sets.php:33
 msgid "New file set added successfully."
@@ -3432,12 +3435,12 @@ msgstr "Abgelehnt"
 
 #: concrete/controllers/single_page/dashboard/conversations/messages.php:26
 msgid "Recent First"
-msgstr ""
+msgstr "Neueste zuerst"
 
 #: concrete/blocks/core_conversation/form.php:44
 #: concrete/controllers/single_page/dashboard/conversations/messages.php:27
 msgid "Earliest First"
-msgstr ""
+msgstr "Früheste zuerst"
 
 #: concrete/controllers/single_page/dashboard/conversations/messages.php:96
 msgid "Message successfully unapproved."
@@ -3470,11 +3473,11 @@ msgstr "Nachricht erfolgreich"
 
 #: concrete/controllers/single_page/dashboard/conversations/messages.php:183
 msgid "Message successfully unmarked as spam."
-msgstr ""
+msgstr "Nachricht wurde als Spam demarkiert."
 
 #: concrete/controllers/single_page/dashboard/conversations/messages.php:209
 msgid "All user messages marked as spam."
-msgstr ""
+msgstr "Alle Benutzernachrichten wurden als Spam markiert."
 
 #: concrete/controllers/single_page/dashboard/conversations/messages.php:213
 #: concrete/controllers/single_page/dashboard/conversations/messages.php:236
@@ -3574,7 +3577,7 @@ msgstr "Das Paket wurde deinstalliert."
 
 #: concrete/controllers/single_page/dashboard/extend/install.php:145
 msgid "Package controller file not found."
-msgstr ""
+msgstr "Die Controllerdatei für dieses Paket konnte nicht gefunden werden."
 
 #: concrete/controllers/single_page/dashboard/extend/install.php:149
 msgid "You do not have permission to install add-ons."
@@ -3625,7 +3628,7 @@ msgstr "Ungültiger Stapel"
 
 #: concrete/controllers/single_page/dashboard/blocks/stacks.php:103
 msgid "You do not have access to approve this stack."
-msgstr ""
+msgstr "Sie haben keinen Zugriff auf die Freigabe dieses Stapels."
 
 #: concrete/controllers/single_page/dashboard/blocks/stacks.php:132
 msgid "Stack added successfully."
@@ -3639,7 +3642,7 @@ msgstr "Stapel erfolgreich freigegeben"
 msgid ""
 "Approve request saved. You must complete the approval workflow before these "
 "changes are publicly accessible."
-msgstr ""
+msgstr "Die Anfrage für die Freigabe wurde gespeichert. Der Arbeitsablauf für die Freigabe muss fertiggestellt werden, um die Änderungen öffentlich zugänglich zu machen."
 
 #: concrete/controllers/single_page/dashboard/blocks/stacks.php:141
 msgid ""
@@ -3765,12 +3768,12 @@ msgstr "Bitte geben Sie einen Namen an."
 msgid ""
 "You must specify a description for this badge. It will be displayed "
 "publicly."
-msgstr ""
+msgstr "Eine öffentlich angezeigte Beschreibung für dieses Abzeichen muss angegeben werden."
 
 #: concrete/controllers/single_page/dashboard/users/add_group.php:81
 #, php-format
 msgid "You do not have permission to add a group beneath %s"
-msgstr ""
+msgstr "Sie haben nicht die Berechtigung, Gruppen unterhalb von %s hinzuzufügen."
 
 #: concrete/controllers/single_page/dashboard/users/group_sets.php:23
 #: concrete/controllers/single_page/dashboard/users/group_sets.php:67
@@ -3803,7 +3806,7 @@ msgstr "Ungültiges Gruppenalbum"
 
 #: concrete/controllers/single_page/dashboard/users/groups/bulkupdate.php:40
 msgid "Invalid target parent group."
-msgstr ""
+msgstr "Ungültige Gruppe für übergeordnete Seiten"
 
 #: concrete/controllers/single_page/dashboard/users/groups/bulkupdate.php:53
 msgid "You must select at least one group to move"
@@ -3811,7 +3814,7 @@ msgstr "Sie müssen mindestens eine Gruppe zum Verschieben auswählen"
 
 #: concrete/controllers/single_page/dashboard/users/groups/bulkupdate.php:72
 msgid "You must specify a search string."
-msgstr ""
+msgstr "Bitte Suchwörter festlegen!"
 
 #: concrete/controllers/single_page/dashboard/users/points/actions.php:132
 msgid "Community Point Action Deleted"
@@ -3823,15 +3826,15 @@ msgstr ""
 
 #: concrete/controllers/single_page/dashboard/users/points/assign.php:58
 msgid "User Required"
-msgstr ""
+msgstr "Benutzer erforderlich"
 
 #: concrete/controllers/single_page/dashboard/users/points/assign.php:60
 msgid "Action Required"
-msgstr ""
+msgstr "Aktion erforderlich"
 
 #: concrete/controllers/single_page/dashboard/users/points/assign.php:62
 msgid "Points Required"
-msgstr ""
+msgstr "Punkte Erforderlich"
 
 #: concrete/controllers/single_page/dashboard/users/points/assign.php:85
 msgid "-- None --"
@@ -3839,7 +3842,7 @@ msgstr "-- Keine --"
 
 #: concrete/controllers/single_page/dashboard/users/points/assign.php:118
 msgid "User Point Entry Saved"
-msgstr ""
+msgstr "Eintrag für Benutzerpunkte gespeichert."
 
 #: concrete/controllers/backend/user.php:61
 #: concrete/controllers/single_page/dashboard/users/groups.php:33
@@ -3849,7 +3852,7 @@ msgstr "Ungültige Gruppe"
 #: concrete/controllers/single_page/dashboard/users/groups.php:36
 #: concrete/controllers/single_page/dashboard/users/groups.php:55
 msgid "You do not have access to edit this group."
-msgstr ""
+msgstr "Sie haben keinen Zugriff auf das Bearbeiten dieser Gruppe."
 
 #: concrete/controllers/single_page/dashboard/users/groups.php:44
 msgid "Groups moved successfully."
@@ -3973,34 +3976,34 @@ msgstr "Ein Passwort darf diese Zeichen nicht enthalten: \",',>,< sowie Leerzeic
 msgid "Password updated successfully."
 msgstr "Passwort erfolgreich geändert."
 
-#: concrete/controllers/single_page/dashboard/users/search.php:368
-#: concrete/controllers/single_page/login.php:192
+#: concrete/controllers/single_page/dashboard/users/search.php:376
+#: concrete/controllers/single_page/login.php:197
 msgctxt "Default locale"
 msgid "** Default"
 msgstr "Standard"
 
-#: concrete/controllers/single_page/dashboard/users/search.php:393
+#: concrete/controllers/single_page/dashboard/users/search.php:401
 msgid "User deleted successfully."
 msgstr "Benutzer erfolgreich gelöscht"
 
-#: concrete/controllers/single_page/dashboard/users/search.php:421
+#: concrete/controllers/single_page/dashboard/users/search.php:429
 #, php-format
 msgid "View/Edit %s"
 msgstr "%s anzeigen/bearbeiten"
 
-#: concrete/controllers/single_page/dashboard/users/search.php:424
+#: concrete/controllers/single_page/dashboard/users/search.php:432
 msgid "User activated successfully."
 msgstr "Benutzer erfolgreich aktualisiert."
 
-#: concrete/controllers/single_page/dashboard/users/search.php:427
+#: concrete/controllers/single_page/dashboard/users/search.php:435
 msgid "User deactivated successfully."
 msgstr "Benutzer erfolgreich deaktiviert."
 
-#: concrete/controllers/single_page/dashboard/users/search.php:430
+#: concrete/controllers/single_page/dashboard/users/search.php:438
 msgid "User created successfully."
 msgstr "Benutzer erfolgreich erstellt."
 
-#: concrete/controllers/single_page/dashboard/users/search.php:433
+#: concrete/controllers/single_page/dashboard/users/search.php:441
 msgid "Email marked as valid."
 msgstr "E-Mail als gültig markiert"
 
@@ -4027,7 +4030,7 @@ msgstr "Ungültiger Benutzername"
 
 #: concrete/controllers/single_page/account/profile/edit.php:107
 #: concrete/controllers/single_page/dashboard/users/add.php:99
-#: concrete/controllers/single_page/login.php:317
+#: concrete/controllers/single_page/login.php:322
 #: concrete/controllers/single_page/register.php:118
 #: concrete/src/Page/Type/Composer/Control/CollectionAttributeControl.php:122
 #, php-format
@@ -4044,21 +4047,21 @@ msgstr "Erlaubte Dateitypen gespeichert"
 
 #: concrete/controllers/single_page/dashboard/system/files/thumbnails.php:28
 msgid "Thumbnail type added."
-msgstr ""
+msgstr "Vorschaubild-Typ hinzugefügt."
 
 #: concrete/controllers/single_page/dashboard/system/files/thumbnails.php:34
 msgid "Thumbnail type updated."
-msgstr ""
+msgstr "Vorschaubild-Typ aktualisiert."
 
 #: concrete/controllers/single_page/dashboard/system/files/thumbnails.php:44
 msgid "Your thumbnail type must have a name."
-msgstr ""
+msgstr "Der Vorschaubild-Typ muss einen Namen haben."
 
 #: concrete/controllers/single_page/dashboard/system/files/thumbnails.php:48
 msgid ""
 "Your thumbnail type handle must only contain lowercase letters and "
 "underscores."
-msgstr ""
+msgstr "Die Kennung des Vorschaubild-Typen darf nur kleinbuchstaben_und_unterstriche enthalten."
 
 #: concrete/controllers/single_page/dashboard/system/files/thumbnails.php:53
 msgid "Width must be greater than zero."
@@ -4066,16 +4069,16 @@ msgstr "Breite muss größer null sein."
 
 #: concrete/controllers/single_page/dashboard/system/files/thumbnails.php:60
 msgid "Thumbnail type removed."
-msgstr ""
+msgstr "Vorschaubild-Typ entfernt."
 
 #: concrete/controllers/single_page/dashboard/system/files/thumbnails.php:73
 #: concrete/controllers/single_page/dashboard/system/files/thumbnails.php:96
 msgid "Invalid thumbnail type object."
-msgstr ""
+msgstr "Ungültiges Objekt für Vorschaubild-Typen"
 
 #: concrete/controllers/single_page/dashboard/system/files/thumbnails.php:76
 msgid "You may not delete a required thumbnail type."
-msgstr ""
+msgstr "Sie können den erforderlicher Vorschaubild-Typ nicht löschen."
 
 #: concrete/controllers/single_page/dashboard/system/files/storage.php:33
 msgid "File storage location added."
@@ -4100,11 +4103,11 @@ msgstr "Der Dateispeicherort benötigt einen Namen. "
 #: concrete/controllers/single_page/dashboard/system/files/storage.php:89
 #: concrete/controllers/single_page/dashboard/system/files/storage.php:114
 msgid "Invalid file storage location object."
-msgstr ""
+msgstr "Ungültiges Objekt für den Dateispeicherort"
 
 #: concrete/controllers/single_page/dashboard/system/files/storage.php:117
 msgid "You may not delete the default file storage location."
-msgstr ""
+msgstr "Sie können den Standard-Dateispeicherort nicht löschen."
 
 #: concrete/controllers/single_page/dashboard/system/seo/statistics.php:17
 msgid "Statistics tracking preference saved."
@@ -4429,7 +4432,7 @@ msgstr "Sie können diesen Knotenpunkt nicht bearbeiten."
 
 #: concrete/controllers/single_page/dashboard/system/attributes/topics.php:153
 msgid "You may not add a topic here."
-msgstr "Sie dürfen hier kein Thema hinzufügen."
+msgstr "Sie können hier kein Thema hinzufügen."
 
 #: concrete/controllers/single_page/dashboard/system/attributes/topics.php:174
 msgid "Tree deleted successfully."
@@ -4452,7 +4455,7 @@ msgid "Invalid Error Code"
 msgstr "Ungültiger Fehlercode"
 
 #: concrete/controllers/single_page/dashboard/system/registration/authentication.php:21
-#: concrete/controllers/single_page/login.php:301
+#: concrete/controllers/single_page/login.php:306
 msgid "Invalid Authentication Type"
 msgstr "Ungültiger Authentifizierungstyp"
 
@@ -5017,20 +5020,20 @@ msgid ""
 "will not be able to login until your account has been approved."
 msgstr "Sie sind registriert, aber ein Administrator muss Ihr Konto noch freigeben, damit Sie sich anmelden können."
 
-#: concrete/controllers/single_page/login.php:71
-#: concrete/controllers/single_page/login.php:75
+#: concrete/controllers/single_page/login.php:76
+#: concrete/controllers/single_page/login.php:80
 msgid "Invalid method."
 msgstr "Ungültige Methode."
 
-#: concrete/controllers/single_page/login.php:124
+#: concrete/controllers/single_page/login.php:129
 msgid "You can only identify as the admin user using the concrete login."
 msgstr ""
 
-#: concrete/controllers/single_page/login.php:267
+#: concrete/controllers/single_page/login.php:272
 msgid "User is not registered. Check your authentication controller."
 msgstr ""
 
-#: concrete/controllers/single_page/login.php:293
+#: concrete/controllers/single_page/login.php:298
 msgid "Invalid Request, please attempt login again."
 msgstr ""
 
@@ -5463,19 +5466,19 @@ msgstr "Geschrieben von %1$s am %2$s"
 
 #: concrete/themes/elemental/page_theme.php:81
 msgid "Title Thin"
-msgstr ""
+msgstr "schlanker Titel"
 
 #: concrete/themes/elemental/page_theme.php:82
 msgid "Title Caps Bold"
-msgstr ""
+msgstr "fettbedruckte Großbuchstaben im Titel"
 
 #: concrete/themes/elemental/page_theme.php:83
 msgid "Title Caps"
-msgstr ""
+msgstr "Großbuchstaben im Titel"
 
 #: concrete/themes/elemental/page_theme.php:84
 msgid "Image Caption"
-msgstr ""
+msgstr "Bildbeschreibung"
 
 #: concrete/themes/elemental/page_theme.php:85
 msgid "Standard Button"
@@ -5523,14 +5526,14 @@ msgstr "Alte Seitenversionen entfernen"
 msgid "Removes all except the 10 most recent page versions for each page."
 msgstr "Alle außer den letzten zehn Seitenversionen für jede Seite werden endgültig gelöscht."
 
-#: concrete/jobs/remove_old_page_versions.php:31
+#: concrete/jobs/remove_old_page_versions.php:34
 msgid "All pages have been processed, starting from beginning on next run."
 msgstr "Alle Seiten wurden bearbeitet, beim nächsten Durchlauf wird wieder vom Anfang gestartet."
 
 #. %1$d is the number of versions deleted, %2$d is the number of affected
 #. pages, %3$d is the number of times that the Remove Old Page Versions job
 #. has been executed.
-#: concrete/jobs/remove_old_page_versions.php:53
+#: concrete/jobs/remove_old_page_versions.php:56
 #, php-format
 msgid "%1$d versions deleted from %2$d page (%3$s)"
 msgid_plural "%1$d versions deleted from %2$d pages (%3$s)"
@@ -5599,7 +5602,7 @@ msgstr "Die Datei %s ist nicht schreibbar"
 #: concrete/jobs/generate_sitemap.php:79
 #, php-format
 msgid "Cannot open file %s"
-msgstr "Die Datei %s kann nicht geöffnet werden"
+msgstr "Die Datei %s kann nicht geöffnet werden."
 
 #: concrete/jobs/generate_sitemap.php:82
 #, php-format
@@ -5675,7 +5678,7 @@ msgstr "(Kein Betreff)"
 #: concrete/src/User/PrivateMessage/Limit.php:30
 #, php-format
 msgid "You may not send more than %s messages in %s minutes"
-msgstr "Sie dürfen nicht mehr als %s Nachrichten in %s Minuten versenden"
+msgstr "Sie können nicht mehr als %s Nachrichten in %s Minuten versenden."
 
 #: concrete/mail/private_message_admin_warning.php:6
 #: concrete/src/User/PrivateMessage/Limit.php:43
@@ -5738,14 +5741,11 @@ msgstr "Benutzte Vorlage"
 
 #: concrete/single_pages/account/messages/inbox.php:81
 #: concrete/single_pages/account/messages/inbox.php:161
-#: concrete/single_pages/profile/messages.php:61
-#: concrete/single_pages/profile/messages.php:139
 #: concrete/src/Mail/Service.php:478
 msgid "To"
 msgstr "Nach"
 
 #: concrete/single_pages/account/messages/inbox.php:81
-#: concrete/single_pages/profile/messages.php:61
 #: concrete/src/Mail/Service.php:479
 msgid "From"
 msgstr "Von"
@@ -5757,8 +5757,6 @@ msgstr "Antworten auf"
 #: concrete/blocks/core_conversation_message/composer.php:12
 #: concrete/single_pages/account/messages/inbox.php:82
 #: concrete/single_pages/account/messages/inbox.php:168
-#: concrete/single_pages/profile/messages.php:62
-#: concrete/single_pages/profile/messages.php:145
 #: concrete/src/Mail/Service.php:483
 msgid "Subject"
 msgstr "Betreff"
@@ -5947,34 +5945,34 @@ msgid "This authentication type does not require any customization."
 msgstr ""
 
 #. %s is a number
-#: concrete/src/Utility/Service/Number.php:127
+#: concrete/src/Utility/Service/Number.php:104
 #: concrete/views/dialogs/file/properties.php:81
 #, php-format
 msgid "%s byte"
 msgid_plural "%s bytes"
-msgstr[0] "%s byte"
-msgstr[1] "%s bytes"
+msgstr[0] "%s Byte"
+msgstr[1] "%s Bytes"
 
 #. %s is a number, KB means Kilobyte
-#: concrete/src/Utility/Service/Number.php:131
+#: concrete/src/Utility/Service/Number.php:108
 #, php-format
 msgid "%s KB"
 msgstr "%s KB"
 
 #. %s is a number, MB means Megabyte
-#: concrete/src/Utility/Service/Number.php:135
+#: concrete/src/Utility/Service/Number.php:112
 #, php-format
 msgid "%s MB"
 msgstr "%s MB"
 
 #. %s is a number, GB means Gigabyte
-#: concrete/src/Utility/Service/Number.php:139
+#: concrete/src/Utility/Service/Number.php:116
 #, php-format
 msgid "%s GB"
 msgstr "%s GB"
 
 #. %s is a number, TB means Terabyte
-#: concrete/src/Utility/Service/Number.php:142
+#: concrete/src/Utility/Service/Number.php:119
 #, php-format
 msgid "%s TB"
 msgstr "%s TB"
@@ -5999,7 +5997,7 @@ msgstr "Bitte klicken Sie das Bild an, um einen neuen Sicherheitscode zu laden."
 #: concrete/blocks/form/view.php:75
 #: concrete/src/Captcha/SecurimageController.php:44
 msgid "Please type the letters and numbers shown in the image."
-msgstr "Bitte geben Sie die Buchstaben und Ziffern ein, die Sie auf dem Bild sehen."
+msgstr "Bitte die Buchstaben/Ziffern vom Bild im Feld eintragen."
 
 #: concrete/src/Tree/Node/Type/Category.php:11
 msgid "Categories"
@@ -6014,6 +6012,10 @@ msgstr "Alle Gruppen"
 msgctxt "TreeName"
 msgid "Groups Tree"
 msgstr "Gruppenbaum"
+
+#: concrete/src/Database/Schema/Schema.php:28
+msgid "Invalid schema version found. Expecting 0.3"
+msgstr ""
 
 #: concrete/src/Error/Handler/ErrorHandler.php:33
 msgid "Exception Occurred: "
@@ -6368,7 +6370,7 @@ msgstr "Ausnahmen"
 #: concrete/src/Backup/ContentImporter.php:316
 #, php-format
 msgid "Invalid block type handle: %s"
-msgstr "Ungültiges Block-Pseudonym: %s"
+msgstr "Ungültige Blocktyp-Kennung: %s"
 
 #: concrete/src/Backup/Backup.php:24
 #, php-format
@@ -7100,7 +7102,7 @@ msgstr "Erlaubt die Suche nach Seiten anhand von Name oder Typ. Kicken Sie die K
 msgid ""
 "Upload, search, replace, and change files you're using on your site. Change "
 "properties and perform basic image editing tasks."
-msgstr "Hinzufügen, suchen, ersetzen und ändern von Dateien für die Webseite. Sogar Bildbearbeitung ist möglich."
+msgstr "Hinzufügen, suchen, ersetzen und ändern von Dateien für die Website. Sogar Bildbearbeitung ist möglich."
 
 #: concrete/src/Application/Service/UserInterface/Help.php:45
 msgid ""
@@ -7364,7 +7366,7 @@ msgid ""
 "automatically removing references to index.php. You may need to create a "
 "file called .htaccess on your server for this to work, but we will try to do"
 " it for you first."
-msgstr "Gut lesbare Webseitenadressen für Benutzer und Suchmaschinen. Falls der Server keine Schreibrechte hat, muss im Hauptverzeichnis eine .htaccess Datei erstellt werden."
+msgstr "Gut lesbare Websiteadressen für Besucher und Suchmaschinen. Falls der Server keine Schreibrechte hat, muss im Hauptverzeichnis eine .htaccess Datei erstellt werden."
 
 #: concrete/src/Application/Service/UserInterface/Help.php:87
 msgid ""
@@ -7777,7 +7779,7 @@ msgstr "%s: Details"
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:101
 #: concrete/single_pages/dashboard/system/registration/authentication.php:27
 msgid "Handle"
-msgstr "Pseudonym "
+msgstr "Kennung"
 
 #: concrete/elements/attribute/type_form_required.php:70
 msgid "Set"
@@ -7824,7 +7826,6 @@ msgstr "Feld verfügbar in der Benutzersuche der Verwaltung"
 #: concrete/single_pages/dashboard/system/files/storage.php:77
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:71
 #: concrete/single_pages/download_file.php:34
-#: concrete/single_pages/profile/messages.php:48
 #: concrete/views/frontend/install.php:104
 msgid "Back"
 msgstr "Zurück"
@@ -7926,7 +7927,7 @@ msgstr "Dateien hochladen"
 
 #: concrete/elements/files/search.php:64
 msgid "File Set"
-msgstr "Datei-Album"
+msgstr "Dateialbum"
 
 #: concrete/elements/files/search.php:73
 msgid "Files in no sets."
@@ -8548,7 +8549,7 @@ msgid "Style"
 msgstr "Stil"
 
 #: concrete/blocks/page_attribute_display/form.php:33
-#: concrete/blocks/video/form_setup_html.php:10
+#: concrete/blocks/video/form_setup_html.php:4
 #: concrete/blocks/youtube/form_setup_html.php:24
 #: concrete/elements/custom_style.php:167
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:57
@@ -8648,7 +8649,7 @@ msgstr "Stile zurücksetzen"
 
 #: concrete/elements/workflow/edit_type_form_required.php:13
 msgid "Workflow Basics"
-msgstr "Arbeitsablauf-Grundlagen"
+msgstr "Grundeinstellungen Arbeitsablauf"
 
 #: concrete/elements/workflow/type_form_required.php:26
 #: concrete/single_pages/dashboard/users/points/actions.php:65
@@ -8833,7 +8834,7 @@ msgstr "In Gruppe"
 #: concrete/elements/permission/help.php:5
 #: concrete/elements/permission/help.php:6
 msgid "Label"
-msgstr "Label"
+msgstr "Beschriftung"
 
 #: concrete/elements/permission/help.php:3
 msgid "Included Users/Groups"
@@ -9303,7 +9304,7 @@ msgstr ""
 msgid "Publish Method"
 msgstr "Veröffentlichungsmethode"
 
-#: concrete/blocks/video/view.php:19
+#: concrete/blocks/video/view.php:17
 #: concrete/elements/block_edit_mode_disabled.php:8
 msgid "Content disabled in edit mode."
 msgstr "Inhalt im Bearbeitungsmodus deaktiviert"
@@ -9362,7 +9363,6 @@ msgstr "Als Spam markieren"
 #: concrete/elements/conversation/message.php:93
 #: concrete/elements/conversation/message/topic.php:45
 #: concrete/single_pages/account/messages/inbox.php:46
-#: concrete/single_pages/profile/messages.php:42
 msgid "Reply"
 msgstr "Antwort"
 
@@ -9381,7 +9381,7 @@ msgstr ""
 #: concrete/blocks/form/mini_survey.php:178
 #: concrete/blocks/form/mini_survey.php:180 concrete/blocks/form/view.php:76
 #: concrete/elements/conversation/display.php:30
-#: concrete/single_pages/login.php:101
+#: concrete/single_pages/login.php:105
 msgid "Submit"
 msgstr "Absenden"
 
@@ -9433,7 +9433,7 @@ msgstr "Vollständiger Seitenindex"
 #: concrete/views/dialogs/page/design.php:25
 #: concrete/views/panels/page/design.php:43
 msgid "Theme"
-msgstr "Layout"
+msgstr "Theme"
 
 #: concrete/elements/pages/search.php:10
 msgid "Public Date"
@@ -9492,7 +9492,7 @@ msgid "Scale"
 msgstr "Skalieren"
 
 #: concrete/blocks/page_attribute_display/form.php:37
-#: concrete/blocks/video/form_setup_html.php:17
+#: concrete/blocks/video/form_setup_html.php:11
 #: concrete/blocks/youtube/form_setup_html.php:28
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:64
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:104
@@ -9529,7 +9529,7 @@ msgstr "Erstellungsdatum"
 
 #: concrete/views/dialogs/block/aliasing.php:22
 msgid "Date Modified"
-msgstr "Modifikationsdatum"
+msgstr "Änderungsdatum"
 
 #: concrete/views/dialogs/block/edit.php:6
 msgid ""
@@ -9617,11 +9617,11 @@ msgstr "Seiten hinzugefügt zu"
 #: concrete/config/install/base/dashboard.xml:600
 #: concrete/views/dialogs/file/properties.php:75
 msgid "Thumbnails"
-msgstr ""
+msgstr "Vorschaubilder"
 
 #: concrete/views/dialogs/file/properties.php:76
 msgid "Thumbnail Images"
-msgstr ""
+msgstr "Vorschaubilder"
 
 #: concrete/views/dialogs/file/properties.php:85
 #, php-format
@@ -9690,7 +9690,7 @@ msgstr ""
 
 #: concrete/views/dialogs/file/thumbnails.php:35
 msgid "Edit Thumbnail Images"
-msgstr ""
+msgstr "Vorschaubilder bearbeiten"
 
 #: concrete/views/dialogs/file/thumbnails.php:36
 msgid "Edit Thumbnail"
@@ -9771,7 +9771,7 @@ msgstr "Hinweis: Zusätzliche Seitenpfade sind nicht versioniert. Sie werden sof
 msgid "A location has not yet been chosen."
 msgstr ""
 
-#: concrete/views/panels/details/page/location.php:96
+#: concrete/views/panels/details/page/location.php:99
 msgid "Choose New Page Parent"
 msgstr ""
 
@@ -9782,23 +9782,23 @@ msgstr ""
 
 #: concrete/views/panels/details/page/caching.php:32
 msgid "Page Caching"
-msgstr ""
+msgstr "Seitencache"
 
 #: concrete/views/panels/details/page/caching.php:93
 msgid "Cache Status"
-msgstr ""
+msgstr "Cachestatus"
 
 #: concrete/views/panels/page/preview_as/form.php:14
 msgid "Date / time"
-msgstr ""
+msgstr "Datum / Zeit"
 
 #: concrete/views/panels/page/preview_as/form.php:19
 msgid "View As"
-msgstr ""
+msgstr "Anzeigen als"
 
 #: concrete/views/panels/page/preview_as/form.php:23
 msgid "Site User"
-msgstr ""
+msgstr "Benutzer"
 
 #: concrete/views/panels/page/design.php:46
 msgid "Install More Themes"
@@ -9844,17 +9844,17 @@ msgstr ""
 
 #: concrete/views/panels/page/versions.php:26
 msgid "This is the approved page version."
-msgstr ""
+msgstr "Dies ist die freigegebene Seitenversion."
 
 #: concrete/views/panels/page/versions.php:51
 #: concrete/views/panels/page/versions.php:53
 msgid "&larr; Newer"
-msgstr ""
+msgstr "&larr; neuer"
 
 #: concrete/views/panels/page/versions.php:56
 #: concrete/views/panels/page/versions.php:58
 msgid "Older &rarr;"
-msgstr ""
+msgstr "älter &rarr;"
 
 #: concrete/views/panels/page/check_in.php:10
 msgid "Version Comments"
@@ -10192,7 +10192,7 @@ msgstr "Probleme? Besuchen Sie <a href=\"%s\">das Hilfeforum für Installationsf
 
 #: concrete/views/frontend/install.php:487
 msgid "Choose Language"
-msgstr "Sprache auswählen"
+msgstr "Sprache wählen"
 
 #: concrete/mail/basic_workflow_notification.php:5
 msgid "Workflow Notification"
@@ -10245,7 +10245,7 @@ msgstr "Willkommen bei"
 #: concrete/mail/user_registered_approval_complete.php:31
 msgid ""
 "Your registration has been approved. You can log into your new account here"
-msgstr "Ihre Registrierung wurde bestätigt. Sie können sich nun hier einloggen"
+msgstr "Ihre Registrierung wurde bestätigt. Sie können sich nun hier einloggen:"
 
 #: concrete/mail/won_badge.php:5
 msgid "You Won a Badge!"
@@ -11073,32 +11073,44 @@ msgstr "Nach oben"
 
 #: concrete/blocks/video/controller.php:26
 msgid ""
-"Embeds uploaded video into a web page. Supports AVI, WMV, Quicktime/MPEG4 "
-"and FLV formats."
-msgstr "Bettet hochgeladene Videos in die Webseite ein. Unterstützt die Formate AVI, WMV, Quicktime/MPEG4 und FLV."
+"Embeds uploaded video into a web page. Supports WebM, Ogg, and "
+"Quicktime/MPEG4 formats."
+msgstr ""
 
 #: concrete/blocks/video/controller.php:30
 #: concrete/blocks/youtube/form_setup_html.php:32
 msgid "Video Player"
 msgstr "Videoplayer"
 
-#: concrete/blocks/video/controller.php:34
-msgid "You must select a valid FLV file."
-msgstr "Bitte wählen Sie eine gültige FLV-Datei aus."
+#: concrete/blocks/video/view.php:21
+msgid "No Video Files Selected."
+msgstr ""
 
-#: concrete/blocks/video/view.php:43
-msgid ""
-"Loading Video... If you're seeing this message you may not have Flash "
-"installed."
-msgstr "Video wird geladen... Wenn Sie diese Meldung sehen, ist Flash eventuell nicht installiert."
+#: concrete/blocks/video/add.php:18 concrete/blocks/video/edit.php:31
+msgid "Video Files"
+msgstr ""
 
-#: concrete/blocks/video/add.php:9 concrete/blocks/video/edit.php:11
-msgid "Video File"
-msgstr "Videodatei"
+#: concrete/blocks/video/add.php:19 concrete/blocks/video/edit.php:32
+msgid "Include WebM, Ogg, and MP4 file types for best cross-browser results"
+msgstr ""
 
-#: concrete/blocks/video/add.php:11 concrete/blocks/video/edit.php:13
+#: concrete/blocks/video/add.php:21 concrete/blocks/video/edit.php:34
+msgid "Video Placeholder Image"
+msgstr ""
+
+#: concrete/blocks/video/add.php:22 concrete/blocks/video/edit.php:35
+msgid "Choose Video Placeholder Image (Optional)"
+msgstr ""
+
+#: concrete/blocks/video/add.php:26 concrete/blocks/video/add.php:30
+#: concrete/blocks/video/add.php:34 concrete/blocks/video/edit.php:43
+#: concrete/blocks/video/edit.php:47
 msgid "Choose Video File"
 msgstr "Videodatei auswählen"
+
+#: concrete/blocks/video/edit.php:39
+msgid "Choose WebM Video File"
+msgstr ""
 
 #: concrete/blocks/html/controller.php:23
 msgid "For adding HTML by hand."
@@ -11120,7 +11132,6 @@ msgstr "Es muss ein Betreff angegeben werden."
 #: concrete/single_pages/account/messages/inbox.php:175
 #: concrete/single_pages/dashboard/conversations/messages.php:113
 #: concrete/single_pages/dashboard/reports/logs.php:67
-#: concrete/single_pages/profile/messages.php:150
 msgid "Message"
 msgstr "Nachricht"
 
@@ -11182,11 +11193,11 @@ msgstr "Genaue Bildübereinstimmung erzwingen"
 
 #: concrete/blocks/image/controller.php:26
 msgid "Adds images and onstates from the library to pages."
-msgstr "Bilder von der Bibliothek hinzufügen."
+msgstr "Bilder & Mouseoverbilder aus der Bibliothek hinzufügen"
 
 #: concrete/blocks/image/controller.php:47
 msgid "You must select an image."
-msgstr "Bild muss ausgewählt werden."
+msgstr "Es muss ein Bild ausgewählt werden."
 
 #: concrete/blocks/image/controller.php:101
 msgid "You must specify a valid image file."
@@ -11212,7 +11223,7 @@ msgstr "Flach"
 #: concrete/blocks/core_conversation/form.php:43
 #: concrete/blocks/discussion/form.php:22
 msgid "Ordering"
-msgstr "Geordnet nach"
+msgstr "Sortierung"
 
 #: concrete/blocks/core_conversation/form.php:44
 msgid "Most Recent First"
@@ -12708,123 +12719,6 @@ msgstr "Standardwert"
 msgid "The checkbox will be checked by default."
 msgstr "Kontrollkästchen standardmäßig aktivieren"
 
-#: concrete/single_pages/profile/messages.php:13
-msgid "Back to Mailbox"
-msgstr "Zurück zum Posteingang"
-
-#: concrete/single_pages/profile/messages.php:15
-msgid "Message Details"
-msgstr "Details"
-
-#: concrete/single_pages/account/messages/inbox.php:51
-#: concrete/single_pages/profile/messages.php:47
-msgid "Delete this message?"
-msgstr "Nachricht löschen?"
-
-#: concrete/single_pages/profile/messages.php:57
-msgid "Back to Mailbox List"
-msgstr "Zurück zum Posteingang"
-
-#: concrete/single_pages/account/messages/inbox.php:83
-#: concrete/single_pages/profile/messages.php:63
-msgid "Sent At"
-msgstr "Gesendet am"
-
-#: concrete/single_pages/account/messages/inbox.php:84
-#: concrete/single_pages/profile/messages.php:64
-msgid "Status"
-msgstr "Status"
-
-#: concrete/single_pages/account/messages/inbox.php:109
-#: concrete/single_pages/profile/messages.php:88
-msgid "No messages found."
-msgstr "Keine Nachrichten gefunden"
-
-#: concrete/single_pages/account/messages/inbox.php:122
-#: concrete/single_pages/profile/messages.php:100
-msgid "Reply Sent."
-msgstr "Antwort versendet"
-
-#: concrete/single_pages/profile/messages.php:101
-msgid "Return to Message."
-msgstr "Zurück zur Nachricht"
-
-#: concrete/single_pages/account/messages/inbox.php:129
-#: concrete/single_pages/profile/messages.php:107
-msgid "Message Sent."
-msgstr "Nachricht gesendet"
-
-#: concrete/single_pages/profile/messages.php:108
-msgid "Return to Profile."
-msgstr "Zurück zum Profil"
-
-#: concrete/single_pages/account/messages/inbox.php:135
-#: concrete/single_pages/profile/messages.php:113
-msgid "Woops!"
-msgstr "Hoppla!"
-
-#: concrete/single_pages/profile/messages.php:114
-msgid ""
-"You've sent more messages than we can handle just now, that last one didn't go out. \n"
-"\t\t\t\tWe've notified an administrator to check into this. \n"
-"\t\t\t\tPlease wait a few minutes before sending a new message."
-msgstr "Sie haben mehr Nachrichten gesendet als im Moment verarbeitet werden können. Die letzte wurde nicht mehr versendet \n\t\t\t\tDer Administrator wurde benachrichtigt um dies zu untersuchen. \n\t\t\t\tBitte warten Sie ein paar Minuten bevor Sie versuchen eine neue Nachricht zu versenden."
-
-#: concrete/single_pages/account/messages/inbox.php:152
-#: concrete/single_pages/profile/messages.php:130
-#, php-format
-msgid "Re: %s"
-msgstr "Aw: %s"
-
-#: concrete/single_pages/account/messages/inbox.php:158
-#: concrete/single_pages/profile/messages.php:136
-msgid "Send a Private Message"
-msgstr "Private Nachricht senden"
-
-#: concrete/single_pages/account/messages/inbox.php:182
-#: concrete/single_pages/profile/messages.php:156
-msgid "Send Message"
-msgstr "Nachricht senden"
-
-#: concrete/single_pages/account/messages/inbox.php:200
-#: concrete/single_pages/profile/messages.php:174
-msgid "Mailbox"
-msgstr "Mailbox"
-
-#: concrete/config/install/base/dashboard.xml:332
-#: concrete/config/install/base/login_registration.xml:39
-#: concrete/single_pages/account/messages/inbox.php:201
-#: concrete/single_pages/dashboard/conversations/messages.php:3
-#: concrete/single_pages/profile/messages.php:175
-msgid "Messages"
-msgstr "Nachrichten"
-
-#: concrete/single_pages/account/messages/inbox.php:202
-#: concrete/single_pages/profile/messages.php:176
-msgid "Latest Message"
-msgstr "Letzte Nachricht"
-
-#: concrete/config/install/base/login_registration.xml:40
-#: concrete/single_pages/account/messages/inbox.php:17
-#: concrete/single_pages/account/messages/inbox.php:73
-#: concrete/single_pages/account/messages/inbox.php:205
-#: concrete/single_pages/profile/messages.php:179
-msgid "Inbox"
-msgstr "Posteingang"
-
-#: concrete/single_pages/account/messages/inbox.php:210
-#: concrete/single_pages/account/messages/inbox.php:220
-#: concrete/single_pages/profile/messages.php:184
-#: concrete/single_pages/profile/messages.php:194
-#, php-format
-msgid "<strong>%s</strong>, sent by %s on %s"
-msgstr "<strong>%s</strong>, gesendet von %s um %s"
-
-#: concrete/single_pages/account/messages/inbox.php:215
-#: concrete/single_pages/profile/messages.php:189
-msgid "Sent Messages"
-msgstr "Gesendete Nachrichten"
-
 #: concrete/single_pages/dashboard/composer/write.php:24
 msgid "What would you like to write?"
 msgstr "Was möchten Sie schreiben?"
@@ -12930,6 +12824,13 @@ msgstr "Sie haben nicht die Berechtigung, auf die Sitemap in der Verwaltung zuzu
 #: concrete/single_pages/dashboard/sitemap/search.php:20
 msgid "You must have access to the dashboard sitemap to search pages."
 msgstr "Sie benötigen Zugriff auf die Sitemap in der Verwaltung, um Seiten suchen zu können."
+
+#: concrete/config/install/base/dashboard.xml:332
+#: concrete/config/install/base/login_registration.xml:39
+#: concrete/single_pages/account/messages/inbox.php:201
+#: concrete/single_pages/dashboard/conversations/messages.php:3
+msgid "Messages"
+msgstr "Nachrichten"
 
 #: concrete/single_pages/dashboard/conversations/messages.php:91
 msgid "Search Messages"
@@ -13303,7 +13204,7 @@ msgstr "Sie haben nicht die Berechtigung, diese Berechtigungen zu verändern."
 
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:23
 msgid "Approve Changes"
-msgstr "Änderungen bestätigen"
+msgstr "Änderungen freigeben"
 
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:37
 msgid "Back to Stacks"
@@ -13814,7 +13715,7 @@ msgstr ""
 #: concrete/config/install/base/dashboard.xml:463
 #: concrete/single_pages/dashboard/system/files/storage.php:39
 msgid "Basics"
-msgstr "Grundlagen"
+msgstr "Grundeinstellungen"
 
 #: concrete/single_pages/dashboard/system/files/storage.php:57
 msgid "Yes, make this the default storage location for new files."
@@ -13949,7 +13850,7 @@ msgstr "Geändert"
 
 #: concrete/single_pages/dashboard/system/seo/bulk.php:142
 msgid "Meta Title"
-msgstr "Meta-Titel"
+msgstr "Metatitel"
 
 #: concrete/single_pages/dashboard/system/seo/bulk.php:151
 #: concrete/single_pages/dashboard/system/seo/bulk.php:162
@@ -13975,7 +13876,7 @@ msgstr "Alle speichern"
 #: concrete/single_pages/dashboard/pages/single.php:37
 #: concrete/single_pages/dashboard/system/seo/bulk.php:201
 msgid "No pages found."
-msgstr "Keine Seiten gefunden."
+msgstr "Keine Seiten gefunden"
 
 #: concrete/single_pages/dashboard/system/seo/bulk.php:237
 msgid "An error occured while saving."
@@ -14710,7 +14611,7 @@ msgstr "Veröffentlichungsdatum: %s"
 
 #: concrete/single_pages/dashboard/system/backup/update.php:33
 msgid "Note: Downloading an update will NOT automatically install it."
-msgstr "Hinweis: Das Herunterladen einer Aktualisierung wird diese NICHT automatisch installieren."
+msgstr "Hinweis: Nach dem Herunterladen einer Aktualisierung wird diese NICHT automatisch installiert."
 
 #: concrete/single_pages/dashboard/system/backup/update.php:37
 #: concrete/single_pages/dashboard/system/backup/update.php:105
@@ -15603,17 +15504,52 @@ msgstr " Leer lassen, um das aktuelle Passwort beizubehalten."
 msgid "Private Messages"
 msgstr "Private Nachrichten"
 
+#: concrete/config/install/base/login_registration.xml:40
+#: concrete/single_pages/account/messages/inbox.php:17
+#: concrete/single_pages/account/messages/inbox.php:73
+#: concrete/single_pages/account/messages/inbox.php:205
+msgid "Inbox"
+msgstr "Posteingang"
+
 #: concrete/single_pages/account/messages/inbox.php:30
 msgid "Back to Messages"
 msgstr "Zurück zu den Nachrichten"
+
+#: concrete/single_pages/account/messages/inbox.php:51
+msgid "Delete this message?"
+msgstr "Nachricht löschen?"
+
+#: concrete/single_pages/account/messages/inbox.php:83
+msgid "Sent At"
+msgstr "Gesendet am"
+
+#: concrete/single_pages/account/messages/inbox.php:84
+msgid "Status"
+msgstr "Status"
+
+#: concrete/single_pages/account/messages/inbox.php:109
+msgid "No messages found."
+msgstr "Keine Nachrichten gefunden"
+
+#: concrete/single_pages/account/messages/inbox.php:122
+msgid "Reply Sent."
+msgstr "Antwort versendet"
 
 #: concrete/single_pages/account/messages/inbox.php:123
 msgid "Back to Message"
 msgstr "Zurück zur Nachricht"
 
+#: concrete/single_pages/account/messages/inbox.php:129
+msgid "Message Sent."
+msgstr "Nachricht gesendet"
+
 #: concrete/single_pages/account/messages/inbox.php:130
 msgid "Back to Profile"
 msgstr "Zurück zum Profil"
+
+#: concrete/single_pages/account/messages/inbox.php:135
+msgid "Woops!"
+msgstr "Hoppla!"
 
 #: concrete/single_pages/account/messages/inbox.php:136
 msgid ""
@@ -15621,6 +15557,37 @@ msgid ""
 "\t\t\t\tWe've notified an administrator to check into this.\n"
 "\t\t\t\tPlease wait a few minutes before sending a new message."
 msgstr ""
+
+#: concrete/single_pages/account/messages/inbox.php:152
+#, php-format
+msgid "Re: %s"
+msgstr "Aw: %s"
+
+#: concrete/single_pages/account/messages/inbox.php:158
+msgid "Send a Private Message"
+msgstr "Private Nachricht senden"
+
+#: concrete/single_pages/account/messages/inbox.php:182
+msgid "Send Message"
+msgstr "Nachricht senden"
+
+#: concrete/single_pages/account/messages/inbox.php:200
+msgid "Mailbox"
+msgstr "Mailbox"
+
+#: concrete/single_pages/account/messages/inbox.php:202
+msgid "Latest Message"
+msgstr "Letzte Nachricht"
+
+#: concrete/single_pages/account/messages/inbox.php:210
+#: concrete/single_pages/account/messages/inbox.php:220
+#, php-format
+msgid "<strong>%s</strong>, sent by %s on %s"
+msgstr "<strong>%s</strong>, gesendet von %s um %s"
+
+#: concrete/single_pages/account/messages/inbox.php:215
+msgid "Sent Messages"
+msgstr "Gesendete Nachrichten"
 
 #: concrete/single_pages/account/members/directory.php:21
 msgid "No users found."
@@ -15649,15 +15616,15 @@ msgstr "Registrieren"
 msgid "Sign in to %s"
 msgstr "Bei %s anmelden"
 
-#: concrete/single_pages/login.php:22
+#: concrete/single_pages/login.php:26
 msgid "Sign into your website."
 msgstr "Auf der Website anmelden"
 
-#: concrete/single_pages/login.php:22
+#: concrete/single_pages/login.php:26
 msgid "Required Attributes"
 msgstr ""
 
-#: concrete/single_pages/login.php:124
+#: concrete/single_pages/login.php:128
 msgid "Photo Credit:"
 msgstr ""
 
@@ -15980,17 +15947,17 @@ msgstr ""
 #: concrete/themes/elemental/css/styles.xml:59
 msgctxt "StyleName"
 msgid "Title Thin"
-msgstr ""
+msgstr "schlanker Titel"
 
 #: concrete/themes/elemental/css/styles.xml:60
 msgctxt "StyleName"
 msgid "Image Caption"
-msgstr ""
+msgstr "Bildbeschreibung"
 
 #: concrete/themes/elemental/css/styles.xml:61
 msgctxt "StyleName"
 msgid "Title Caps"
-msgstr ""
+msgstr "Großbuchstaben im Titel"
 
 #: concrete/themes/elemental/css/styles.xml:62
 msgctxt "StyleName"
@@ -16442,7 +16409,7 @@ msgstr "SEO & Statistiken"
 
 #: concrete/config/install/base/dashboard.xml:530
 msgid "Enable pretty URLs and tracking codes."
-msgstr ""
+msgstr "Lesbare URLs und Trackingcodes einrichten"
 
 #: concrete/config/install/base/dashboard.xml:532
 msgid "Pretty URLs"
@@ -17708,7 +17675,7 @@ msgstr ""
 #: concrete/config/install/base/permissions.xml:102
 msgctxt "PermissionKeyName"
 msgid "Edit Page Type Drafts"
-msgstr ""
+msgstr "Entwürfe von Seitentypen bearbeiten"
 
 #: concrete/config/install/base/permissions.xml:106
 msgctxt "PermissionKeyName"
@@ -18334,7 +18301,7 @@ msgstr "Leere Seite"
 #: concrete/config/install/packages/elemental_full/content.xml:296
 msgctxt "PageTypeComposerFormLayoutSetName"
 msgid "Basics"
-msgstr "Grundlagen"
+msgstr "Grundeinstellungen"
 
 #: concrete/config/install/packages/elemental_blank/content.xml:16
 #: concrete/config/install/packages/elemental_full/content.xml:95

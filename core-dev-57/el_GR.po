@@ -6,9 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-08-29 04:00+0000\n"
-"PO-Revision-Date: 2014-08-29 09:56+0000\n"
-"Last-Translator: Michele Locati <michele@locati.it>\n"
+"POT-Creation-Date: 2014-08-30 04:00+0000\n"
+"PO-Revision-Date: 2014-08-30 19:30+0000\n"
+"Last-Translator: Vasilis Fotopoulos <basalba@gmail.com>\n"
 "Language-Team: Greek (Greece) (http://www.transifex.com/projects/p/concrete5/language/el_GR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -86,7 +86,7 @@ msgstr "Σύνδεση με έναν τοπικό λογαριασμό."
 #: concrete/authentication/concrete/form.php:13
 #: concrete/blocks/form/form_setup_html.php:126
 #: concrete/blocks/form/form_setup_html.php:196
-#: concrete/controllers/single_page/login.php:168
+#: concrete/controllers/single_page/login.php:173
 #: concrete/elements/permission/keys/edit_user_properties.php:31
 #: concrete/elements/permission/keys/edit_user_properties.php:68
 #: concrete/mail/user_register.php:16 concrete/mail/user_register.php:47
@@ -103,7 +103,7 @@ msgid "Email Address"
 msgstr "Διεύθυνση email"
 
 #: concrete/authentication/concrete/form.php:13
-#: concrete/controllers/single_page/login.php:170
+#: concrete/controllers/single_page/login.php:175
 #: concrete/elements/permission/keys/edit_user_properties.php:30
 #: concrete/elements/permission/keys/edit_user_properties.php:67
 #: concrete/elements/users/confirm_list.php:7
@@ -177,21 +177,26 @@ msgstr "Μη έγκυρο κλειδί. Παρακαλούμε επισκεφθ�
 msgid "Please provide both username and password."
 msgstr "Παρακαλούμε δώστε το όνομα χρήστη και τον κωδικό πρόσβασης."
 
-#: concrete/authentication/concrete/controller.php:227
+#: concrete/authentication/concrete/controller.php:226
+#: concrete/controllers/single_page/login.php:46
+msgid "Your session has expired. Please sign in again."
+msgstr "Η συνεδρία σας έληξε. Παρακαλώ συνδεθείτε ξανά."
+
+#: concrete/authentication/concrete/controller.php:230
 msgid ""
 "This account has not yet been validated. Please check the email associated "
 "with this account and follow the link it contains."
 msgstr "Αυτός ο λογαριασμός δεν έχει ακόμη επικυρωθεί. Παρακαλώ ελέγξτε το email που σχετίζεται με αυτόν τον λογαριασμό και ακολουθήστε το link που περιέχει."
 
-#: concrete/authentication/concrete/controller.php:231
+#: concrete/authentication/concrete/controller.php:234
 msgid "Invalid email address or password."
 msgstr "Μη έγκυρη διεύθυνση ηλεκτρονικού ταχυδρομείου ή  κωδικός πρόσβασης."
 
-#: concrete/authentication/concrete/controller.php:233
+#: concrete/authentication/concrete/controller.php:236
 msgid "Invalid username or password."
 msgstr "Μη έγκυρο όνομα χρήστη ή κωδικός πρόσβασης."
 
-#: concrete/authentication/concrete/controller.php:237
+#: concrete/authentication/concrete/controller.php:240
 #: concrete/controllers/single_page/login.php:41
 msgid "This user is inactive. Please contact us regarding this account."
 msgstr "Αυτός ο χρήστης είναι ανενεργός. Παρακαλούμε επικοινωνήστε μαζί μας σχετικά με αυτό το λογαριασμό."
@@ -634,7 +639,6 @@ msgstr "Αφαιρέστε τα αρχεία από τον Κατάλογο  inc
 #: concrete/single_pages/dashboard/users/search.php:177
 #: concrete/single_pages/dashboard/workflow/workflows.php:16
 #: concrete/single_pages/dashboard/workflow/workflows.php:69
-#: concrete/single_pages/profile/messages.php:157
 #: concrete/src/Form/Service/Widget/Color.php:34
 #: concrete/src/StyleCustomizer/Style/ColorStyle.php:41
 #: concrete/src/Workflow/Progress/Action/CancelAction.php:7
@@ -903,7 +907,6 @@ msgstr "Είστε σίγουροι ότι θέλετε να διαγράψετ�
 #: concrete/single_pages/dashboard/users/points/actions.php:106
 #: concrete/single_pages/dashboard/users/points/view.php:52
 #: concrete/single_pages/dashboard/users/search.php:37
-#: concrete/single_pages/profile/messages.php:47
 #: concrete/tools/files/delete.php:92
 #: concrete/tools/gathering/item/delete.php:28 concrete/tools/i18n_js.php:29
 #: concrete/tools/i18n_js.php:87 concrete/tools/i18n_js.php:122
@@ -912,7 +915,7 @@ msgstr "Είστε σίγουροι ότι θέλετε να διαγράψετ�
 #: concrete/tools/users/bulk_delete.php:67
 #: concrete/views/dialogs/page/delete.php:21
 #: concrete/views/panels/page/versions.php:37
-#: concrete/views/panels/page/versions.php:289
+#: concrete/views/panels/page/versions.php:291
 msgid "Delete"
 msgstr "Διαγραφή"
 
@@ -2049,7 +2052,7 @@ msgstr "Υπεύθυνος έγκρισης"
 msgid "Created"
 msgstr "Δημιουργήθηκε"
 
-#: concrete/tools/versions.php:361 concrete/views/panels/page/versions.php:289
+#: concrete/tools/versions.php:361 concrete/views/panels/page/versions.php:291
 msgid "Compare"
 msgstr "Συγκρίνετε"
 
@@ -2672,8 +2675,8 @@ msgstr "Διαγραφή για πάντα"
 #: concrete/config/install/base/dashboard.xml:808
 #: concrete/elements/page_controls_footer.php:83
 #: concrete/elements/page_controls_footer.php:85
-#: concrete/elements/panels/page.php:79 concrete/single_pages/login.php:31
-#: concrete/single_pages/login.php:67 concrete/tools/i18n_js.php:132
+#: concrete/elements/panels/page.php:79 concrete/single_pages/login.php:35
+#: concrete/single_pages/login.php:71 concrete/tools/i18n_js.php:132
 #: concrete/tools/i18n_js.php:135 concrete/views/panels/page/attributes.php:6
 msgid "Attributes"
 msgstr "Χαρακτηριστικά"
@@ -2704,7 +2707,7 @@ msgstr "Το Θέμα και ο τύπος σελίδας ενημερώθηκα
 #: concrete/elements/panels/page.php:114 concrete/tools/i18n_js.php:141
 #: concrete/views/dialogs/file/properties.php:14
 #: concrete/views/dialogs/file/properties.php:174
-#: concrete/views/panels/page/versions.php:284
+#: concrete/views/panels/page/versions.php:286
 msgid "Versions"
 msgstr "Εκδόσεις"
 
@@ -3360,7 +3363,7 @@ msgstr "Το Χαρακτηριστικό αποθηκεύτηκε με επιτ
 msgid "File updated successfully."
 msgstr "Το Αρχείο ενημερώθηκε επιτυχώς."
 
-#: concrete/controllers/dialog/file/search/customize.php:55
+#: concrete/controllers/dialog/file/search/customize.php:56
 msgid "File search columns saved successfully."
 msgstr "Οι Στήλες αναζήτησης αρχείων αποθηκεύτηκαν με επιτυχία."
 
@@ -3972,34 +3975,34 @@ msgstr "Ο κωδικός πρόσβασης δεν μπορεί να περιέ
 msgid "Password updated successfully."
 msgstr "Κωδικός πρόσβασης ενημερώθηκε επιτυχώς."
 
-#: concrete/controllers/single_page/dashboard/users/search.php:368
-#: concrete/controllers/single_page/login.php:192
+#: concrete/controllers/single_page/dashboard/users/search.php:377
+#: concrete/controllers/single_page/login.php:197
 msgctxt "Default locale"
 msgid "** Default"
 msgstr "** Προεπιλογή "
 
-#: concrete/controllers/single_page/dashboard/users/search.php:393
+#: concrete/controllers/single_page/dashboard/users/search.php:402
 msgid "User deleted successfully."
 msgstr "Ο Χρήστης διαγράφηκε με επιτυχία."
 
-#: concrete/controllers/single_page/dashboard/users/search.php:421
+#: concrete/controllers/single_page/dashboard/users/search.php:430
 #, php-format
 msgid "View/Edit %s"
 msgstr "Προβολή / Επεξεργασία %s"
 
-#: concrete/controllers/single_page/dashboard/users/search.php:424
+#: concrete/controllers/single_page/dashboard/users/search.php:433
 msgid "User activated successfully."
 msgstr "Ο Χρήστης Ενεργοποιήθηκε με επιτυχία."
 
-#: concrete/controllers/single_page/dashboard/users/search.php:427
+#: concrete/controllers/single_page/dashboard/users/search.php:436
 msgid "User deactivated successfully."
 msgstr "Ο Χρήστης απενεργοποιήθηκε επιτυχώς."
 
-#: concrete/controllers/single_page/dashboard/users/search.php:430
+#: concrete/controllers/single_page/dashboard/users/search.php:439
 msgid "User created successfully."
 msgstr "Ο Χρήστης δημιουργήθηκε με επιτυχία."
 
-#: concrete/controllers/single_page/dashboard/users/search.php:433
+#: concrete/controllers/single_page/dashboard/users/search.php:442
 msgid "Email marked as valid."
 msgstr "Το e-mail χαρακτηρίζεται ως έγκυρο."
 
@@ -4026,7 +4029,7 @@ msgstr "Μη έγκυρο Όνομα Χρήστη"
 
 #: concrete/controllers/single_page/account/profile/edit.php:107
 #: concrete/controllers/single_page/dashboard/users/add.php:99
-#: concrete/controllers/single_page/login.php:317
+#: concrete/controllers/single_page/login.php:322
 #: concrete/controllers/single_page/register.php:118
 #: concrete/src/Page/Type/Composer/Control/CollectionAttributeControl.php:122
 #, php-format
@@ -4451,7 +4454,7 @@ msgid "Invalid Error Code"
 msgstr "Μη έγκυρος κωδικός σφάλματος"
 
 #: concrete/controllers/single_page/dashboard/system/registration/authentication.php:21
-#: concrete/controllers/single_page/login.php:301
+#: concrete/controllers/single_page/login.php:306
 msgid "Invalid Authentication Type"
 msgstr "Άκυρος Τύπος ελέγχου ταυτότητας"
 
@@ -5016,20 +5019,20 @@ msgid ""
 "will not be able to login until your account has been approved."
 msgstr "Έχετε εγγραφεί, αλλά ο διαχειριστής του ιστοτόπου πρέπει να εγκρίνει τον λογαριασμό σας, δεν θα είστε σε θέση να συνδεθείτε μέχρι να εγκριθεί ο λογαριασμός σας."
 
-#: concrete/controllers/single_page/login.php:71
-#: concrete/controllers/single_page/login.php:75
+#: concrete/controllers/single_page/login.php:76
+#: concrete/controllers/single_page/login.php:80
 msgid "Invalid method."
 msgstr "Μη έγκυρη μέθοδος."
 
-#: concrete/controllers/single_page/login.php:124
+#: concrete/controllers/single_page/login.php:129
 msgid "You can only identify as the admin user using the concrete login."
 msgstr "Μπορείτε μόνο να αναγνωριστήται ως διαχειριστής χρησιμοποιώντας τη σύνδεση του concrete. "
 
-#: concrete/controllers/single_page/login.php:267
+#: concrete/controllers/single_page/login.php:272
 msgid "User is not registered. Check your authentication controller."
 msgstr "Ο χρήστης δεν έχει καταχωρηθεί. Ελέγξτε τον ελεγκτή ταυτότητας."
 
-#: concrete/controllers/single_page/login.php:293
+#: concrete/controllers/single_page/login.php:298
 msgid "Invalid Request, please attempt login again."
 msgstr "Μη έγκυρη Αίτηση, παρακαλώ δοκιμάστε ξανά είσοδος."
 
@@ -5522,14 +5525,14 @@ msgstr "Κατάργηση Παλαιών Εκδόσεων της Σελίδας
 msgid "Removes all except the 10 most recent page versions for each page."
 msgstr "Αφαιρεί όλες τις εκδόσεις σελίδων, εκτός από τις 10 πιο πρόσφατες, για κάθε σελίδα."
 
-#: concrete/jobs/remove_old_page_versions.php:31
+#: concrete/jobs/remove_old_page_versions.php:34
 msgid "All pages have been processed, starting from beginning on next run."
 msgstr "Όλες οι σελίδες έχουν υποστεί επεξεργασία, ξεκινώντας από την αρχή στην επόμενη εκκίνηση."
 
 #. %1$d is the number of versions deleted, %2$d is the number of affected
 #. pages, %3$d is the number of times that the Remove Old Page Versions job
 #. has been executed.
-#: concrete/jobs/remove_old_page_versions.php:53
+#: concrete/jobs/remove_old_page_versions.php:56
 #, php-format
 msgid "%1$d versions deleted from %2$d page (%3$s)"
 msgid_plural "%1$d versions deleted from %2$d pages (%3$s)"
@@ -5737,14 +5740,11 @@ msgstr "Το Πρότυπο που χρησιμοποιείται"
 
 #: concrete/single_pages/account/messages/inbox.php:81
 #: concrete/single_pages/account/messages/inbox.php:161
-#: concrete/single_pages/profile/messages.php:61
-#: concrete/single_pages/profile/messages.php:139
 #: concrete/src/Mail/Service.php:478
 msgid "To"
 msgstr "Προς"
 
 #: concrete/single_pages/account/messages/inbox.php:81
-#: concrete/single_pages/profile/messages.php:61
 #: concrete/src/Mail/Service.php:479
 msgid "From"
 msgstr "Από"
@@ -5756,8 +5756,6 @@ msgstr "Απάντηση-Προς"
 #: concrete/blocks/core_conversation_message/composer.php:12
 #: concrete/single_pages/account/messages/inbox.php:82
 #: concrete/single_pages/account/messages/inbox.php:168
-#: concrete/single_pages/profile/messages.php:62
-#: concrete/single_pages/profile/messages.php:145
 #: concrete/src/Mail/Service.php:483
 msgid "Subject"
 msgstr "Θέμα"
@@ -5946,7 +5944,7 @@ msgid "This authentication type does not require any customization."
 msgstr "Αυτός ο Τύπος Ελέγχου Ταυτότητας δεν απαιτεί καμία προσαρμογή."
 
 #. %s is a number
-#: concrete/src/Utility/Service/Number.php:127
+#: concrete/src/Utility/Service/Number.php:104
 #: concrete/views/dialogs/file/properties.php:81
 #, php-format
 msgid "%s byte"
@@ -5955,25 +5953,25 @@ msgstr[0] "%s byte"
 msgstr[1] "%s bytes"
 
 #. %s is a number, KB means Kilobyte
-#: concrete/src/Utility/Service/Number.php:131
+#: concrete/src/Utility/Service/Number.php:108
 #, php-format
 msgid "%s KB"
 msgstr "%s KB"
 
 #. %s is a number, MB means Megabyte
-#: concrete/src/Utility/Service/Number.php:135
+#: concrete/src/Utility/Service/Number.php:112
 #, php-format
 msgid "%s MB"
 msgstr "%s MB"
 
 #. %s is a number, GB means Gigabyte
-#: concrete/src/Utility/Service/Number.php:139
+#: concrete/src/Utility/Service/Number.php:116
 #, php-format
 msgid "%s GB"
 msgstr "%s GB"
 
 #. %s is a number, TB means Terabyte
-#: concrete/src/Utility/Service/Number.php:142
+#: concrete/src/Utility/Service/Number.php:119
 #, php-format
 msgid "%s TB"
 msgstr "%s TB"
@@ -6013,6 +6011,10 @@ msgstr "Όλες οι Ομάδες"
 msgctxt "TreeName"
 msgid "Groups Tree"
 msgstr "Δένδρο Ομάδων"
+
+#: concrete/src/Database/Schema/Schema.php:28
+msgid "Invalid schema version found. Expecting 0.3"
+msgstr "Μη έγκυρη έκδοση schema βρέθηκε. Αναμενόταν 0.3"
 
 #: concrete/src/Error/Handler/ErrorHandler.php:33
 msgid "Exception Occurred: "
@@ -7639,19 +7641,19 @@ msgstr "Ειρηνικός Ωκεανός"
 
 #: concrete/src/Localization/Service/Date.php:167
 msgid "Greenwich Mean Time"
-msgstr ""
+msgstr "Ώρα Γκρίνουιτς"
 
 #: concrete/src/Localization/Service/Date.php:179
 msgid "South Pole"
-msgstr ""
+msgstr "Νότιος Πόλος"
 
 #: concrete/src/Localization/Service/Date.php:182
 msgid "Montreal"
-msgstr ""
+msgstr "Μόντρεαλ"
 
 #: concrete/src/Localization/Service/Date.php:185
 msgid "Shiprock"
-msgstr ""
+msgstr "Shiprock"
 
 #: concrete/src/Localization/Service/Date.php:259
 #, php-format
@@ -7823,7 +7825,6 @@ msgstr "Πεδίο διαθέσιμο στην αναζήτηση χρήστη �
 #: concrete/single_pages/dashboard/system/files/storage.php:77
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:71
 #: concrete/single_pages/download_file.php:34
-#: concrete/single_pages/profile/messages.php:48
 #: concrete/views/frontend/install.php:104
 msgid "Back"
 msgstr "Πίσω"
@@ -8547,7 +8548,7 @@ msgid "Style"
 msgstr "Το στυλ"
 
 #: concrete/blocks/page_attribute_display/form.php:33
-#: concrete/blocks/video/form_setup_html.php:10
+#: concrete/blocks/video/form_setup_html.php:4
 #: concrete/blocks/youtube/form_setup_html.php:24
 #: concrete/elements/custom_style.php:167
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:57
@@ -9302,7 +9303,7 @@ msgstr "Πρότυπα Σελίδας"
 msgid "Publish Method"
 msgstr "Μέθοδος Δημοσίευσης"
 
-#: concrete/blocks/video/view.php:19
+#: concrete/blocks/video/view.php:17
 #: concrete/elements/block_edit_mode_disabled.php:8
 msgid "Content disabled in edit mode."
 msgstr "Το περιεχόμενο ειναι απενεργοποιημένο σε κατάσταση επεξεργασίας"
@@ -9361,7 +9362,6 @@ msgstr "Επισήμανση ως Σπαμ"
 #: concrete/elements/conversation/message.php:93
 #: concrete/elements/conversation/message/topic.php:45
 #: concrete/single_pages/account/messages/inbox.php:46
-#: concrete/single_pages/profile/messages.php:42
 msgid "Reply"
 msgstr "Απάντηση"
 
@@ -9380,7 +9380,7 @@ msgstr "Πάρτε το URL του μηνύματος."
 #: concrete/blocks/form/mini_survey.php:178
 #: concrete/blocks/form/mini_survey.php:180 concrete/blocks/form/view.php:76
 #: concrete/elements/conversation/display.php:30
-#: concrete/single_pages/login.php:101
+#: concrete/single_pages/login.php:105
 msgid "Submit"
 msgstr "Υποβολή"
 
@@ -9491,7 +9491,7 @@ msgid "Scale"
 msgstr "Κλίμακα"
 
 #: concrete/blocks/page_attribute_display/form.php:37
-#: concrete/blocks/video/form_setup_html.php:17
+#: concrete/blocks/video/form_setup_html.php:11
 #: concrete/blocks/youtube/form_setup_html.php:28
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:64
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:104
@@ -9770,7 +9770,7 @@ msgstr "Σημείωση: Δεν Υπάρχουν επιπλέον εκδοχέ�
 msgid "A location has not yet been chosen."
 msgstr "Δεν έχει ακόμη επιλεγεί τοποθεσία."
 
-#: concrete/views/panels/details/page/location.php:96
+#: concrete/views/panels/details/page/location.php:99
 msgid "Choose New Page Parent"
 msgstr "Επιλέξτε Νέα Μητρική Σελίδα"
 
@@ -11072,32 +11072,44 @@ msgstr "Επάνω"
 
 #: concrete/blocks/video/controller.php:26
 msgid ""
-"Embeds uploaded video into a web page. Supports AVI, WMV, Quicktime/MPEG4 "
-"and FLV formats."
-msgstr "Ενσωματώνει το βίντεο που φορτώθηκε σε μια ιστοσελίδα. Υποστηρίζει μορφές AVI, WMV, Quicktime/MPEG4 και FLV ."
+"Embeds uploaded video into a web page. Supports WebM, Ogg, and "
+"Quicktime/MPEG4 formats."
+msgstr "Ενσωματώνει βίντεο που φορτώθηκε, σε μια ιστοσελίδα. Υποστηρίζει φορμάτ WebM, Ogg και Quicktime / MPEG4."
 
 #: concrete/blocks/video/controller.php:30
 #: concrete/blocks/youtube/form_setup_html.php:32
 msgid "Video Player"
 msgstr "Αναπαραγωγή Βίντεο"
 
-#: concrete/blocks/video/controller.php:34
-msgid "You must select a valid FLV file."
-msgstr "Πρέπει να επιλέξετε ένα έγκυρο αρχείο FLV."
+#: concrete/blocks/video/view.php:21
+msgid "No Video Files Selected."
+msgstr "Δεν επιλέχτηκαν αρχεία βίντεο ."
 
-#: concrete/blocks/video/view.php:43
-msgid ""
-"Loading Video... If you're seeing this message you may not have Flash "
-"installed."
-msgstr "Φόρτωση βίντεο ... Εάν βλέπετε αυτό το μήνυμα μπορεί να μην έχετε εγκατεστημένο το Flash."
+#: concrete/blocks/video/add.php:18 concrete/blocks/video/edit.php:31
+msgid "Video Files"
+msgstr "Αρχεία Βίντεο"
 
-#: concrete/blocks/video/add.php:9 concrete/blocks/video/edit.php:11
-msgid "Video File"
-msgstr "Αρχείο Βίντεο"
+#: concrete/blocks/video/add.php:19 concrete/blocks/video/edit.php:32
+msgid "Include WebM, Ogg, and MP4 file types for best cross-browser results"
+msgstr "Συμπεριλαμβάνει αρχεία WebM, Ogg και MP4 για καλύτερα αποτελέσματα cross-browser"
 
-#: concrete/blocks/video/add.php:11 concrete/blocks/video/edit.php:13
+#: concrete/blocks/video/add.php:21 concrete/blocks/video/edit.php:34
+msgid "Video Placeholder Image"
+msgstr "Εικόνα συμβόλου κράτησης θέσης Βίντεο "
+
+#: concrete/blocks/video/add.php:22 concrete/blocks/video/edit.php:35
+msgid "Choose Video Placeholder Image (Optional)"
+msgstr "Επιλέξτε εικόνα συμβόλου κράτησης θέσης βίντεο (Προαιρετικά)"
+
+#: concrete/blocks/video/add.php:26 concrete/blocks/video/add.php:30
+#: concrete/blocks/video/add.php:34 concrete/blocks/video/edit.php:43
+#: concrete/blocks/video/edit.php:47
 msgid "Choose Video File"
 msgstr "Επιλέξτε Αρχείο Βίντεο"
+
+#: concrete/blocks/video/edit.php:39
+msgid "Choose WebM Video File"
+msgstr "Επιλέξτε αρχείο WebM βίντεο"
 
 #: concrete/blocks/html/controller.php:23
 msgid "For adding HTML by hand."
@@ -11119,7 +11131,6 @@ msgstr "Το θέμα σας δεν μπορεί να είναι κενό."
 #: concrete/single_pages/account/messages/inbox.php:175
 #: concrete/single_pages/dashboard/conversations/messages.php:113
 #: concrete/single_pages/dashboard/reports/logs.php:67
-#: concrete/single_pages/profile/messages.php:150
 msgid "Message"
 msgstr "Μήνυμα"
 
@@ -12285,7 +12296,7 @@ msgstr "Αυτό είναι ένα παράδειγμα για το πώς δο�
 
 #: concrete/blocks/external_form/form/test_form.php:14
 msgid "Test"
-msgstr ""
+msgstr "Τεστ"
 
 #: concrete/blocks/external_form/add.php:4
 msgid "File to include"
@@ -12707,123 +12718,6 @@ msgstr "Προεπιλεγμένη Τιμή"
 msgid "The checkbox will be checked by default."
 msgstr "Το Πλαίσιο Επιλογής θα πρέπει να είναι τσεκαρισμένο από προεπιλογή."
 
-#: concrete/single_pages/profile/messages.php:13
-msgid "Back to Mailbox"
-msgstr "Επιστροφή στο Γραμματοκιβώτιο"
-
-#: concrete/single_pages/profile/messages.php:15
-msgid "Message Details"
-msgstr "Λεπτομέριες"
-
-#: concrete/single_pages/account/messages/inbox.php:51
-#: concrete/single_pages/profile/messages.php:47
-msgid "Delete this message?"
-msgstr "Διαγράψτε αυτό το μήνυμα;"
-
-#: concrete/single_pages/profile/messages.php:57
-msgid "Back to Mailbox List"
-msgstr "Επιστροφή στη Λίστα Γραμματοκιβωτίων"
-
-#: concrete/single_pages/account/messages/inbox.php:83
-#: concrete/single_pages/profile/messages.php:63
-msgid "Sent At"
-msgstr "Εστάλη στις"
-
-#: concrete/single_pages/account/messages/inbox.php:84
-#: concrete/single_pages/profile/messages.php:64
-msgid "Status"
-msgstr "Κατάσταση"
-
-#: concrete/single_pages/account/messages/inbox.php:109
-#: concrete/single_pages/profile/messages.php:88
-msgid "No messages found."
-msgstr "Δεν βρέθηκαν μηνύματα."
-
-#: concrete/single_pages/account/messages/inbox.php:122
-#: concrete/single_pages/profile/messages.php:100
-msgid "Reply Sent."
-msgstr "Η Απάντηση Στάλθηκε."
-
-#: concrete/single_pages/profile/messages.php:101
-msgid "Return to Message."
-msgstr "Επιστροφή στο Μήνυμα."
-
-#: concrete/single_pages/account/messages/inbox.php:129
-#: concrete/single_pages/profile/messages.php:107
-msgid "Message Sent."
-msgstr "Το Μήνυμα Στάλθηκε"
-
-#: concrete/single_pages/profile/messages.php:108
-msgid "Return to Profile."
-msgstr "Επιστροφή στο Προφίλ."
-
-#: concrete/single_pages/account/messages/inbox.php:135
-#: concrete/single_pages/profile/messages.php:113
-msgid "Woops!"
-msgstr "Ουπς"
-
-#: concrete/single_pages/profile/messages.php:114
-msgid ""
-"You've sent more messages than we can handle just now, that last one didn't go out. \n"
-"\t\t\t\tWe've notified an administrator to check into this. \n"
-"\t\t\t\tPlease wait a few minutes before sending a new message."
-msgstr "Έχετε στείλει περισσότερα μηνύματα από ότι μπορούμε να χειριστούμε μόλις τώρα, το τελευταίο δεν μπόρεσε να σταλεί.⏎\n⇥ ⇥ ⇥ ⇥ Ένας διαχειριστής έχει ειδοποιηθεί για να το ελέγξει. ⏎\n⇥ ⇥ ⇥ ⇥ Παρακαλώ περιμένετε λίγα λεπτά πριν από την αποστολή νέου μηνύματος."
-
-#: concrete/single_pages/account/messages/inbox.php:152
-#: concrete/single_pages/profile/messages.php:130
-#, php-format
-msgid "Re: %s"
-msgstr "Re: %s"
-
-#: concrete/single_pages/account/messages/inbox.php:158
-#: concrete/single_pages/profile/messages.php:136
-msgid "Send a Private Message"
-msgstr "Αποστολή προσωπικού μηνύματος"
-
-#: concrete/single_pages/account/messages/inbox.php:182
-#: concrete/single_pages/profile/messages.php:156
-msgid "Send Message"
-msgstr "Αποστολή μηνύματος"
-
-#: concrete/single_pages/account/messages/inbox.php:200
-#: concrete/single_pages/profile/messages.php:174
-msgid "Mailbox"
-msgstr "Γραμματοκιβώτιο"
-
-#: concrete/config/install/base/dashboard.xml:332
-#: concrete/config/install/base/login_registration.xml:39
-#: concrete/single_pages/account/messages/inbox.php:201
-#: concrete/single_pages/dashboard/conversations/messages.php:3
-#: concrete/single_pages/profile/messages.php:175
-msgid "Messages"
-msgstr "Μηνύματα"
-
-#: concrete/single_pages/account/messages/inbox.php:202
-#: concrete/single_pages/profile/messages.php:176
-msgid "Latest Message"
-msgstr "Τελευταίο Μήνυμα"
-
-#: concrete/config/install/base/login_registration.xml:40
-#: concrete/single_pages/account/messages/inbox.php:17
-#: concrete/single_pages/account/messages/inbox.php:73
-#: concrete/single_pages/account/messages/inbox.php:205
-#: concrete/single_pages/profile/messages.php:179
-msgid "Inbox"
-msgstr "Εισερχόμενα"
-
-#: concrete/single_pages/account/messages/inbox.php:210
-#: concrete/single_pages/account/messages/inbox.php:220
-#: concrete/single_pages/profile/messages.php:184
-#: concrete/single_pages/profile/messages.php:194
-#, php-format
-msgid "<strong>%s</strong>, sent by %s on %s"
-msgstr "<strong>%s</strong>, απεστάλησαν από τον %s στις %s"
-
-#: concrete/single_pages/account/messages/inbox.php:215
-#: concrete/single_pages/profile/messages.php:189
-msgid "Sent Messages"
-msgstr "Απεσταλμένα Μηνύματα"
-
 #: concrete/single_pages/dashboard/composer/write.php:24
 msgid "What would you like to write?"
 msgstr "Τι θα θέλατε να γράψετε;"
@@ -12929,6 +12823,13 @@ msgstr "Δεν έχετε πρόσβαση στο Χάρτη του Πίνακα
 #: concrete/single_pages/dashboard/sitemap/search.php:20
 msgid "You must have access to the dashboard sitemap to search pages."
 msgstr "Πρέπει να έχετε πρόσβαση στο στο Χάρτη του Πίνακα Ελέγχου για να αναζητήσετε σελίδες. "
+
+#: concrete/config/install/base/dashboard.xml:332
+#: concrete/config/install/base/login_registration.xml:39
+#: concrete/single_pages/account/messages/inbox.php:201
+#: concrete/single_pages/dashboard/conversations/messages.php:3
+msgid "Messages"
+msgstr "Μηνύματα"
 
 #: concrete/single_pages/dashboard/conversations/messages.php:91
 msgid "Search Messages"
@@ -15602,17 +15503,52 @@ msgstr "Αφήστε το κενό για να διατηρήσετε τον τ�
 msgid "Private Messages"
 msgstr "Προσωπικά Μηνύματα"
 
+#: concrete/config/install/base/login_registration.xml:40
+#: concrete/single_pages/account/messages/inbox.php:17
+#: concrete/single_pages/account/messages/inbox.php:73
+#: concrete/single_pages/account/messages/inbox.php:205
+msgid "Inbox"
+msgstr "Εισερχόμενα"
+
 #: concrete/single_pages/account/messages/inbox.php:30
 msgid "Back to Messages"
 msgstr "Πίσω στα Μηνύματα"
+
+#: concrete/single_pages/account/messages/inbox.php:51
+msgid "Delete this message?"
+msgstr "Διαγράψτε αυτό το μήνυμα;"
+
+#: concrete/single_pages/account/messages/inbox.php:83
+msgid "Sent At"
+msgstr "Εστάλη στις"
+
+#: concrete/single_pages/account/messages/inbox.php:84
+msgid "Status"
+msgstr "Κατάσταση"
+
+#: concrete/single_pages/account/messages/inbox.php:109
+msgid "No messages found."
+msgstr "Δεν βρέθηκαν μηνύματα."
+
+#: concrete/single_pages/account/messages/inbox.php:122
+msgid "Reply Sent."
+msgstr "Η Απάντηση Στάλθηκε."
 
 #: concrete/single_pages/account/messages/inbox.php:123
 msgid "Back to Message"
 msgstr "Πίσω στα Μηνύματα"
 
+#: concrete/single_pages/account/messages/inbox.php:129
+msgid "Message Sent."
+msgstr "Το Μήνυμα Στάλθηκε"
+
 #: concrete/single_pages/account/messages/inbox.php:130
 msgid "Back to Profile"
 msgstr "Πίσω στο Προφίλ"
+
+#: concrete/single_pages/account/messages/inbox.php:135
+msgid "Woops!"
+msgstr "Ουπς"
 
 #: concrete/single_pages/account/messages/inbox.php:136
 msgid ""
@@ -15620,6 +15556,37 @@ msgid ""
 "\t\t\t\tWe've notified an administrator to check into this.\n"
 "\t\t\t\tPlease wait a few minutes before sending a new message."
 msgstr "Έχετε στείλει περισσότερα μηνύματα από ότι μπορεί να χειριστούμε μόλις τώρα, το τελευταίο δεν στάλθηκε,\nΈχουμε κοινοποίησε σε έναν διαχειριστή για να το ελέγξει.\nΠαρακαλώ περιμένετε λίγα λεπτά πριν από την αποστολή ενός νέου μηνύματος."
+
+#: concrete/single_pages/account/messages/inbox.php:152
+#, php-format
+msgid "Re: %s"
+msgstr "Re: %s"
+
+#: concrete/single_pages/account/messages/inbox.php:158
+msgid "Send a Private Message"
+msgstr "Αποστολή προσωπικού μηνύματος"
+
+#: concrete/single_pages/account/messages/inbox.php:182
+msgid "Send Message"
+msgstr "Αποστολή μηνύματος"
+
+#: concrete/single_pages/account/messages/inbox.php:200
+msgid "Mailbox"
+msgstr "Γραμματοκιβώτιο"
+
+#: concrete/single_pages/account/messages/inbox.php:202
+msgid "Latest Message"
+msgstr "Τελευταίο Μήνυμα"
+
+#: concrete/single_pages/account/messages/inbox.php:210
+#: concrete/single_pages/account/messages/inbox.php:220
+#, php-format
+msgid "<strong>%s</strong>, sent by %s on %s"
+msgstr "<strong>%s</strong>, απεστάλησαν από τον %s στις %s"
+
+#: concrete/single_pages/account/messages/inbox.php:215
+msgid "Sent Messages"
+msgstr "Απεσταλμένα Μηνύματα"
 
 #: concrete/single_pages/account/members/directory.php:21
 msgid "No users found."
@@ -15648,15 +15615,15 @@ msgstr "Εγγραφή"
 msgid "Sign in to %s"
 msgstr "Σύνδεση στο %s"
 
-#: concrete/single_pages/login.php:22
+#: concrete/single_pages/login.php:26
 msgid "Sign into your website."
 msgstr "Σύνδεση στον ιστοχώρο σας."
 
-#: concrete/single_pages/login.php:22
+#: concrete/single_pages/login.php:26
 msgid "Required Attributes"
 msgstr "Απαιτούμενα Χαρακτηριστικά"
 
-#: concrete/single_pages/login.php:124
+#: concrete/single_pages/login.php:128
 msgid "Photo Credit:"
 msgstr "Αναφορά Φωτογραφίας:"
 
