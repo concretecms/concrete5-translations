@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-09-09 08:06+0000\n"
-"PO-Revision-Date: 2014-09-09 08:08+0000\n"
+"POT-Creation-Date: 2014-09-10 04:00+0000\n"
+"PO-Revision-Date: 2014-09-10 08:36+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Arabic (http://www.transifex.com/projects/p/concrete5/language/ar/)\n"
 "MIME-Version: 1.0\n"
@@ -670,6 +670,7 @@ msgstr "أزل الملفات من دليل الملفات الواردة /incom
 #: concrete/views/dialogs/area/layout/presets.php:21
 #: concrete/views/dialogs/block/aliasing.php:44
 #: concrete/views/dialogs/page/add_block.php:94
+#: concrete/views/dialogs/page/add_external.php:23
 #: concrete/views/dialogs/page/delete.php:8
 #: concrete/views/dialogs/page/delete.php:12
 #: concrete/views/dialogs/page/delete.php:20
@@ -916,7 +917,7 @@ msgstr "متأكد أنك تريد حذف الملفات التالية؟"
 #: concrete/tools/i18n_js.php:142 concrete/tools/i18n_js.php:198
 #: concrete/tools/i18n_redactor_js.php:45 concrete/tools/pages/delete.php:141
 #: concrete/tools/users/bulk_delete.php:67
-#: concrete/views/dialogs/page/delete.php:21
+#: concrete/views/dialogs/page/delete.php:21 concrete/views/panels/add.php:223
 #: concrete/views/panels/page/versions.php:37
 #: concrete/views/panels/page/versions.php:291
 msgid "Delete"
@@ -1125,6 +1126,7 @@ msgstr ""
 #: concrete/tools/tree/node/add/topic.php:24
 #: concrete/tools/tree/node/add/topic_category.php:25
 #: concrete/views/dialogs/page/add_block.php:95
+#: concrete/views/dialogs/page/add_external.php:24
 msgid "Add"
 msgstr "أضف"
 
@@ -1425,6 +1427,7 @@ msgstr "المستخدمون الذين هم أعضاء في جميع المجم
 #: concrete/tools/permissions/dialogs/access/entity/types/group_combination.php:23
 #: concrete/views/dialogs/area/layout/presets.php:14
 #: concrete/views/dialogs/block/aliasing.php:20
+#: concrete/views/dialogs/page/add_external.php:7
 #: concrete/views/panels/details/page/attributes.php:24
 msgid "Name"
 msgstr "الاسم"
@@ -1652,7 +1655,7 @@ msgstr ""
 msgid "Table"
 msgstr ""
 
-#: concrete/blocks/file/add.php:10 concrete/blocks/file/edit.php:14
+#: concrete/blocks/file/add.php:10
 #: concrete/elements/conversation/display.php:82
 #: concrete/elements/conversation/message.php:113
 #: concrete/tools/i18n_redactor_js.php:17
@@ -1881,6 +1884,7 @@ msgstr "البريد الإلكتروني"
 #: concrete/elements/workflow/progress/categories/page/pending.php:13
 #: concrete/single_pages/dashboard/system/basics/social.php:67
 #: concrete/tools/i18n_redactor_js.php:67
+#: concrete/views/dialogs/page/add_external.php:12
 msgid "URL"
 msgstr "عنوان URL"
 
@@ -2607,7 +2611,7 @@ msgid "SEO"
 msgstr ""
 
 #: concrete/blocks/google_map/form_setup_html.php:11
-#: concrete/blocks/page_list/page_list_form.php:103
+#: concrete/blocks/page_list/page_list_form.php:99
 #: concrete/elements/page_controls_footer.php:77
 #: concrete/elements/page_controls_footer.php:80
 #: concrete/elements/panels/page.php:59 concrete/tools/i18n_js.php:118
@@ -3143,7 +3147,7 @@ msgstr "ليس لديك صلاحية حذف أي من الصفحات المُح�
 msgid "Are you sure you want to delete the following pages?"
 msgstr "متأكد أنك تريد حذف الصفحات التالية؟"
 
-#: concrete/blocks/page_list/page_list_form.php:24
+#: concrete/blocks/page_list/page_list_form.php:20
 #: concrete/controllers/search/pages.php:221
 #: concrete/single_pages/dashboard/composer/drafts.php:16
 #: concrete/single_pages/dashboard/system/seo/bulk.php:135
@@ -3265,8 +3269,9 @@ msgstr ""
 #: concrete/controllers/panel/page/attributes.php:54
 #: concrete/elements/dashboard/attributes_table.php:72
 #: concrete/elements/files/search.php:72
+#: concrete/views/dialogs/page/add.php:21
 #: concrete/views/dialogs/page/add_block_list.php:54
-#: concrete/views/panels/add.php:324
+#: concrete/views/panels/add.php:322
 msgid "Other"
 msgstr "آخر"
 
@@ -3737,7 +3742,6 @@ msgstr "نوع البلوك هذا أساسي ولا يمكن إزالته."
 msgid "The block type has been removed."
 msgstr "أُزيل نوع البلوك."
 
-#: concrete/blocks/page_list/page_list_form.php:19
 #: concrete/controllers/single_page/dashboard/workflow/me.php:28
 msgid "Pages"
 msgstr "الصفحات"
@@ -5035,23 +5039,23 @@ msgstr "اسم المستخدم %s مسجّل مسبقاً. رجاءً اختر 
 msgid "Validate Email Address"
 msgstr "التحقق من عنوان البريد الإلكتروني"
 
-#: concrete/controllers/single_page/register.php:279
+#: concrete/controllers/single_page/register.php:272
 msgid "Your account has been created, and you are now logged in."
 msgstr "أُنشئ حسابك، وأنت الآن مُسجّل الدخول."
 
-#: concrete/controllers/single_page/register.php:284
+#: concrete/controllers/single_page/register.php:277
 msgid ""
 "You are registered but you need to validate your email address. Some or all "
 "functionality on this site will be limited until you do so."
 msgstr "تم تسجيلك لكن عليك تأكيد صحة عنوان بريدك الإلكتروني. بعض أو كافة الوظائف على هذا الموقع ستكون محدودة حتى تقوم بذلك."
 
-#: concrete/controllers/single_page/register.php:285
+#: concrete/controllers/single_page/register.php:278
 msgid ""
 "An email has been sent to your email address. Click on the URL contained in "
 "the email to validate your email address."
 msgstr "أرسلت رسالة إلى عنوان بريدك الإلكتروني. اضغط على الرابط الوارد في الرسالة لتأكيد عنوان بريدك الإلكتروني."
 
-#: concrete/controllers/single_page/register.php:290
+#: concrete/controllers/single_page/register.php:283
 msgid ""
 "You are registered but a site administrator must review your account, you "
 "will not be able to login until your account has been approved."
@@ -5108,12 +5112,12 @@ msgstr "بحث في جميع الصفحات التابعة؟"
 #: concrete/blocks/form/form_setup_html.php:156
 #: concrete/blocks/form/form_setup_html.php:227
 #: concrete/blocks/page_attribute_display/templates/boolean.php:4
-#: concrete/blocks/page_list/page_list_form.php:176
-#: concrete/blocks/page_list/page_list_form.php:214
-#: concrete/blocks/page_list/page_list_form.php:230
-#: concrete/blocks/page_list/page_list_form.php:260
-#: concrete/blocks/page_list/page_list_form.php:277
-#: concrete/blocks/page_list/page_list_form.php:299
+#: concrete/blocks/page_list/page_list_form.php:172
+#: concrete/blocks/page_list/page_list_form.php:210
+#: concrete/blocks/page_list/page_list_form.php:226
+#: concrete/blocks/page_list/page_list_form.php:256
+#: concrete/blocks/page_list/page_list_form.php:273
+#: concrete/blocks/page_list/page_list_form.php:295
 #: concrete/controllers/search/pages.php:235
 #: concrete/elements/page_types/form/base.php:55
 #: concrete/elements/page_types/form/base.php:60
@@ -5135,12 +5139,12 @@ msgstr "لا"
 #: concrete/blocks/form/form_setup_html.php:155
 #: concrete/blocks/form/form_setup_html.php:226
 #: concrete/blocks/page_attribute_display/templates/boolean.php:4
-#: concrete/blocks/page_list/page_list_form.php:182
-#: concrete/blocks/page_list/page_list_form.php:220
-#: concrete/blocks/page_list/page_list_form.php:236
-#: concrete/blocks/page_list/page_list_form.php:266
-#: concrete/blocks/page_list/page_list_form.php:284
-#: concrete/blocks/page_list/page_list_form.php:305
+#: concrete/blocks/page_list/page_list_form.php:178
+#: concrete/blocks/page_list/page_list_form.php:216
+#: concrete/blocks/page_list/page_list_form.php:232
+#: concrete/blocks/page_list/page_list_form.php:262
+#: concrete/blocks/page_list/page_list_form.php:280
+#: concrete/blocks/page_list/page_list_form.php:301
 #: concrete/controllers/search/pages.php:236
 #: concrete/elements/page_types/form/base.php:55
 #: concrete/elements/page_types/form/base.php:60
@@ -5678,17 +5682,17 @@ msgstr "تعذر التسجيل"
 #: concrete/mail/mail_importer_error.php:8
 #: concrete/mail/private_message.php:10
 #: concrete/mail/private_message_response_enabled.php:8
-#: concrete/src/User/UserInfo.php:308
+#: concrete/src/User/UserInfo.php:311
 #, php-format
 msgid "Subject: %s"
 msgstr "الموضوع: %s"
 
-#: concrete/src/User/UserInfo.php:310
+#: concrete/src/User/UserInfo.php:313
 #, php-format
 msgid "Message: %s"
 msgstr "رسالة: %s"
 
-#: concrete/src/User/UserInfo.php:317
+#: concrete/src/User/UserInfo.php:320
 msgid "(No Subject)"
 msgstr "(بلا عنوان)"
 
@@ -6278,11 +6282,11 @@ msgstr ""
 msgid "You must specify a page description."
 msgstr ""
 
-#: concrete/src/Page/Type/Type.php:833
+#: concrete/src/Page/Type/Type.php:843
 msgid "You must choose a page template."
 msgstr ""
 
-#: concrete/src/Page/Type/Type.php:836
+#: concrete/src/Page/Type/Type.php:846
 msgid "This page template is not a valid template for this page type."
 msgstr ""
 
@@ -7550,7 +7554,7 @@ msgstr "موقعك"
 msgid "Add-Ons"
 msgstr "الإضافات"
 
-#: concrete/src/Application/Service/Dashboard/Sitemap.php:85
+#: concrete/src/Application/Service/Dashboard/Sitemap.php:90
 #, php-format
 msgid "%s more to display. <strong>View all &gt;</strong>"
 msgstr ""
@@ -8233,6 +8237,7 @@ msgstr "لا يمكن التراجع عن هذا الأمر."
 
 #: concrete/elements/collection_add_external.php:26
 #: concrete/elements/collection_edit_external.php:26
+#: concrete/views/dialogs/page/add_external.php:19
 msgid "Open Link in New Window"
 msgstr "افتح الرابط في صفحة جديدة"
 
@@ -8397,7 +8402,7 @@ msgstr "الصفات المخصصة"
 #: concrete/views/dialogs/page/add_block_list.php:64
 #: concrete/views/dialogs/page/clipboard.php:22
 #: concrete/views/panels/add.php:91 concrete/views/panels/add.php:191
-#: concrete/views/panels/add.php:298 concrete/views/panels/add.php:337
+#: concrete/views/panels/add.php:296 concrete/views/panels/add.php:335
 #, php-format
 msgid "Add %s"
 msgstr "أضف %s"
@@ -9299,7 +9304,7 @@ msgstr ""
 
 #: concrete/blocks/date_navigation/form.php:23
 #: concrete/blocks/date_navigation/view.php:11
-#: concrete/blocks/page_list/page_list_form.php:31
+#: concrete/blocks/page_list/page_list_form.php:27
 #: concrete/blocks/topic_list/templates/flat_filter.php:10
 #: concrete/elements/page_types/form/base.php:66
 msgid "All"
@@ -9595,6 +9600,15 @@ msgstr "صفات الصفحات"
 #: concrete/views/dialogs/page/attributes.php:9
 msgid "Selected Attributes"
 msgstr "الصفات المحددة"
+
+#: concrete/views/dialogs/page/add.php:10
+msgid "Commonly Used"
+msgstr ""
+
+#: concrete/views/dialogs/page/add.php:31
+msgid ""
+"You do not have access to add any page types beneath the selected page."
+msgstr ""
 
 #: concrete/views/dialogs/search/customize.php:10
 msgid "Choose Columns"
@@ -9955,7 +9969,7 @@ msgstr[3] ""
 msgstr[4] ""
 msgstr[5] ""
 
-#: concrete/views/panels/add.php:244
+#: concrete/views/panels/add.php:243
 msgid "An error occured while deleting this item:"
 msgstr ""
 
@@ -10844,7 +10858,7 @@ msgstr ""
 
 #: concrete/blocks/core_gathering/add.php:7
 #: concrete/blocks/core_gathering/edit.php:8
-#: concrete/blocks/page_list/page_list_form.php:170
+#: concrete/blocks/page_list/page_list_form.php:166
 #: concrete/single_pages/dashboard/pages/types/view.php:44
 msgid "Output"
 msgstr ""
@@ -11817,7 +11831,7 @@ msgstr ""
 msgid "Search for Pages"
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:108
+#: concrete/blocks/page_list/page_list_form.php:104
 #: concrete/blocks/search/form_setup_html.php:43
 msgid "Everywhere"
 msgstr ""
@@ -11852,170 +11866,171 @@ msgid "Settings"
 msgstr "الإعدادات"
 
 #: concrete/blocks/page_list/page_list_form.php:15
-msgid "Display"
-msgstr "اعرض"
+#: concrete/single_pages/dashboard/system/seo/bulk.php:71
+msgid "Number of Pages to Display"
+msgstr ""
 
 #: concrete/blocks/date_navigation/form.php:3
-#: concrete/blocks/page_list/page_list_form.php:48
+#: concrete/blocks/page_list/page_list_form.php:44
 msgid "Filtering"
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:54
+#: concrete/blocks/page_list/page_list_form.php:50
 msgid "Featured pages only."
 msgstr "الصفحات المميزة فقط."
 
-#: concrete/blocks/page_list/page_list_form.php:59
+#: concrete/blocks/page_list/page_list_form.php:55
 msgid ""
 "(<strong>Note</strong>: You must create the \"is_featured\" page attribute "
 "first.)"
 msgstr "(<strong>ملاحظة</strong>: يجب عليك أن تضيف الصفة \"is_featured\" للصفحة أولا.)"
 
-#: concrete/blocks/page_list/page_list_form.php:67
+#: concrete/blocks/page_list/page_list_form.php:63
 msgid "Display page aliases."
 msgstr "إظهار وصلات الصفحات."
 
-#: concrete/blocks/page_list/page_list_form.php:74
+#: concrete/blocks/page_list/page_list_form.php:70
 msgid "Enable Other Blocks to Filter This Page List."
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:76
+#: concrete/blocks/page_list/page_list_form.php:72
 msgid ""
 "Allows other blocks like the topic list block to pass search criteria to "
 "this page list block."
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:82
+#: concrete/blocks/page_list/page_list_form.php:78
 msgid "Filter by Related Topic."
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:88
+#: concrete/blocks/page_list/page_list_form.php:84
 msgid "Choose topics attribute."
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:95
+#: concrete/blocks/page_list/page_list_form.php:91
 msgid "Pagination"
 msgstr "تقسيم الصفحات"
 
-#: concrete/blocks/page_list/page_list_form.php:99
+#: concrete/blocks/page_list/page_list_form.php:95
 msgid ""
 "Display pagination interface if more items are available than are displayed."
 msgstr "إظهار واجهة ترقيم الصفحات إن توفرت عناصر أكثر من الظاهرة."
 
-#: concrete/blocks/page_list/page_list_form.php:115
+#: concrete/blocks/page_list/page_list_form.php:111
 msgid "Beneath this page"
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:122
+#: concrete/blocks/page_list/page_list_form.php:118
 msgid "Beneath another page"
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:140
+#: concrete/blocks/page_list/page_list_form.php:136
 msgid "Include all child pages"
 msgstr "اشمل جميع الصفحات الفرعية"
 
-#: concrete/blocks/page_list/page_list_form.php:146
+#: concrete/blocks/page_list/page_list_form.php:142
 msgid "Sort"
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:150
+#: concrete/blocks/page_list/page_list_form.php:146
 msgid "Sitemap order"
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:153
+#: concrete/blocks/page_list/page_list_form.php:149
 msgid "Most recent first"
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:156
+#: concrete/blocks/page_list/page_list_form.php:152
 msgid "Earliest first"
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:159
+#: concrete/blocks/page_list/page_list_form.php:155
 msgid "Alphabetical order"
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:162
+#: concrete/blocks/page_list/page_list_form.php:158
 msgid "Reverse alphabetical order"
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:165
+#: concrete/blocks/page_list/page_list_form.php:161
 msgid "Random"
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:172
+#: concrete/blocks/page_list/page_list_form.php:168
 msgid "Provide RSS Feed"
 msgstr "تقديم خلاصة RSS"
 
-#: concrete/blocks/page_list/page_list_form.php:187
+#: concrete/blocks/page_list/page_list_form.php:183
 #, php-format
 msgid "RSS Feed can be found here: <a href=\"%s\" target=\"_blank\">%s</a>"
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:190
+#: concrete/blocks/page_list/page_list_form.php:186
 msgid "RSS Feed Title"
 msgstr "عنوان خلاصة RSS الإخبارية"
 
-#: concrete/blocks/page_list/page_list_form.php:195
+#: concrete/blocks/page_list/page_list_form.php:191
 msgid "RSS Feed Description"
 msgstr "وصف خلاصة RSS"
 
-#: concrete/blocks/page_list/page_list_form.php:199
+#: concrete/blocks/page_list/page_list_form.php:195
 msgid "RSS Feed Location"
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:210
+#: concrete/blocks/page_list/page_list_form.php:206
 msgid "Include Page Name"
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:226
+#: concrete/blocks/page_list/page_list_form.php:222
 msgid "Include Page Description"
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:240
+#: concrete/blocks/page_list/page_list_form.php:236
 msgid "Display Truncated Description"
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:249
+#: concrete/blocks/page_list/page_list_form.php:245
 msgid "characters"
 msgstr "(أ)حرف"
 
-#: concrete/blocks/page_list/page_list_form.php:256
+#: concrete/blocks/page_list/page_list_form.php:252
 msgid "Include Public Page Date"
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:269
+#: concrete/blocks/page_list/page_list_form.php:265
 msgid ""
 "This is usually the date the page is created. It can be changed from the "
 "page attributes panel."
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:272
+#: concrete/blocks/page_list/page_list_form.php:268
 msgid "Display Thumbnail Image"
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:289
+#: concrete/blocks/page_list/page_list_form.php:285
 msgid ""
 "You must create an attribute with the 'thumbnail' handle in order to use "
 "this option."
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:295
+#: concrete/blocks/page_list/page_list_form.php:291
 msgid "Use Different Link than Page Name"
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:310
+#: concrete/blocks/page_list/page_list_form.php:306
 msgid "Link Text"
 msgstr "رابط نصّي"
 
-#: concrete/blocks/page_list/page_list_form.php:317
+#: concrete/blocks/page_list/page_list_form.php:313
 msgid "Title of Page List"
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:322
+#: concrete/blocks/page_list/page_list_form.php:318
 msgid "Message to Display When No Pages Listed."
 msgstr ""
 
 #: concrete/blocks/autonav/form_setup_html.php:145
-#: concrete/blocks/page_list/page_list_form.php:335
+#: concrete/blocks/page_list/page_list_form.php:331
 msgid "Included Pages"
 msgstr ""
 
@@ -12086,6 +12101,10 @@ msgstr "يجب أن تختار ملفاً."
 #: concrete/blocks/file/controller.php:42
 msgid "You must give your file a link."
 msgstr "يجب أن تحدد رابطاً لملفك."
+
+#: concrete/blocks/file/edit.php:14
+msgid "Text for Linked File"
+msgstr ""
 
 #: concrete/blocks/dashboard_app_status/controller.php:27
 msgid "Displays update and welcome back information on your dashboard."
@@ -13625,7 +13644,7 @@ msgstr "يجب أن تكون مسجّل الدخول بصلاحية %s كي تت
 
 #: concrete/single_pages/dashboard/users/groups.php:121
 #, php-format
-msgid "Make sure a code file exists at %s"
+msgid "Make sure an automation group controller exists at %s"
 msgstr ""
 
 #: concrete/single_pages/dashboard/users/groups.php:130
@@ -13849,10 +13868,6 @@ msgstr "ذيل الصفحة"
 #: concrete/single_pages/dashboard/system/seo/view.php:3
 msgid "System &amp; Settings"
 msgstr "النظام والإعدادات"
-
-#: concrete/single_pages/dashboard/system/seo/bulk.php:71
-msgid "Number of Pages to Display"
-msgstr ""
 
 #: concrete/single_pages/dashboard/system/seo/bulk.php:93
 msgid "How Many Levels Below Parent?"
@@ -14697,7 +14712,7 @@ msgid ""
 msgstr "إن بدأ ظهور المحتوى القديم في موقعك، أو أنه يعمل بشكل غير متوقع، فقد يساعد تنظيف الكاش في حل المشكلة."
 
 #: concrete/config/install/base/dashboard.xml:629
-#: concrete/single_pages/dashboard/system/optimization/clearcache.php:8
+#: concrete/single_pages/dashboard/system/optimization/clearcache.php:7
 msgid "Clear Cache"
 msgstr "نظّف الكاش"
 

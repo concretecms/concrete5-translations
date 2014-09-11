@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-09-09 08:06+0000\n"
-"PO-Revision-Date: 2014-09-09 08:08+0000\n"
+"POT-Creation-Date: 2014-09-10 04:00+0000\n"
+"PO-Revision-Date: 2014-09-10 08:36+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Dutch (Netherlands) (http://www.transifex.com/projects/p/concrete5/language/nl_NL/)\n"
 "MIME-Version: 1.0\n"
@@ -672,6 +672,7 @@ msgstr "Bestanden uit incoming/ map verwijderen."
 #: concrete/views/dialogs/area/layout/presets.php:21
 #: concrete/views/dialogs/block/aliasing.php:44
 #: concrete/views/dialogs/page/add_block.php:94
+#: concrete/views/dialogs/page/add_external.php:23
 #: concrete/views/dialogs/page/delete.php:8
 #: concrete/views/dialogs/page/delete.php:12
 #: concrete/views/dialogs/page/delete.php:20
@@ -910,7 +911,7 @@ msgstr "Weet u zeker dat u de volgende bestanden wil verwijderen?"
 #: concrete/tools/i18n_js.php:142 concrete/tools/i18n_js.php:198
 #: concrete/tools/i18n_redactor_js.php:45 concrete/tools/pages/delete.php:141
 #: concrete/tools/users/bulk_delete.php:67
-#: concrete/views/dialogs/page/delete.php:21
+#: concrete/views/dialogs/page/delete.php:21 concrete/views/panels/add.php:223
 #: concrete/views/panels/page/versions.php:37
 #: concrete/views/panels/page/versions.php:291
 msgid "Delete"
@@ -1115,6 +1116,7 @@ msgstr "Onderwerp"
 #: concrete/tools/tree/node/add/topic.php:24
 #: concrete/tools/tree/node/add/topic_category.php:25
 #: concrete/views/dialogs/page/add_block.php:95
+#: concrete/views/dialogs/page/add_external.php:24
 msgid "Add"
 msgstr "Toevoegen"
 
@@ -1403,6 +1405,7 @@ msgstr "Alleen gebruikers die lid zijn van ALLE geselecteerde groepen komen in a
 #: concrete/tools/permissions/dialogs/access/entity/types/group_combination.php:23
 #: concrete/views/dialogs/area/layout/presets.php:14
 #: concrete/views/dialogs/block/aliasing.php:20
+#: concrete/views/dialogs/page/add_external.php:7
 #: concrete/views/panels/details/page/attributes.php:24
 msgid "Name"
 msgstr "Naam"
@@ -1630,7 +1633,7 @@ msgstr "Afbeelding invoegen"
 msgid "Table"
 msgstr "Tabel"
 
-#: concrete/blocks/file/add.php:10 concrete/blocks/file/edit.php:14
+#: concrete/blocks/file/add.php:10
 #: concrete/elements/conversation/display.php:82
 #: concrete/elements/conversation/message.php:113
 #: concrete/tools/i18n_redactor_js.php:17
@@ -1859,6 +1862,7 @@ msgstr "E-mail"
 #: concrete/elements/workflow/progress/categories/page/pending.php:13
 #: concrete/single_pages/dashboard/system/basics/social.php:67
 #: concrete/tools/i18n_redactor_js.php:67
+#: concrete/views/dialogs/page/add_external.php:12
 msgid "URL"
 msgstr "URL"
 
@@ -2585,7 +2589,7 @@ msgid "SEO"
 msgstr "SEO"
 
 #: concrete/blocks/google_map/form_setup_html.php:11
-#: concrete/blocks/page_list/page_list_form.php:103
+#: concrete/blocks/page_list/page_list_form.php:99
 #: concrete/elements/page_controls_footer.php:77
 #: concrete/elements/page_controls_footer.php:80
 #: concrete/elements/panels/page.php:59 concrete/tools/i18n_js.php:118
@@ -3121,7 +3125,7 @@ msgstr "U hebt onvoldoende rechten om de geselecteerde pagina's te verwijderen."
 msgid "Are you sure you want to delete the following pages?"
 msgstr "Weet u zeker dat u de volgende pagina's wilt verwijderen?"
 
-#: concrete/blocks/page_list/page_list_form.php:24
+#: concrete/blocks/page_list/page_list_form.php:20
 #: concrete/controllers/search/pages.php:221
 #: concrete/single_pages/dashboard/composer/drafts.php:16
 #: concrete/single_pages/dashboard/system/seo/bulk.php:135
@@ -3239,8 +3243,9 @@ msgstr "U bent niet gemachtigd om toe te voegen een pagina van dit type in de ge
 #: concrete/controllers/panel/page/attributes.php:54
 #: concrete/elements/dashboard/attributes_table.php:72
 #: concrete/elements/files/search.php:72
+#: concrete/views/dialogs/page/add.php:21
 #: concrete/views/dialogs/page/add_block_list.php:54
-#: concrete/views/panels/add.php:324
+#: concrete/views/panels/add.php:322
 msgid "Other"
 msgstr "Anders"
 
@@ -3711,7 +3716,6 @@ msgstr "Dit blok formaat is intern. Het kan niet verwijderd worden."
 msgid "The block type has been removed."
 msgstr "Het blok formaat is verwijderd."
 
-#: concrete/blocks/page_list/page_list_form.php:19
 #: concrete/controllers/single_page/dashboard/workflow/me.php:28
 msgid "Pages"
 msgstr "Pagina's"
@@ -5009,23 +5013,23 @@ msgstr "Deze gebruikersnaam %s is al in gebruik. Kies een andere gebruikersnaam.
 msgid "Validate Email Address"
 msgstr "E-mail Adres Valideren."
 
-#: concrete/controllers/single_page/register.php:279
+#: concrete/controllers/single_page/register.php:272
 msgid "Your account has been created, and you are now logged in."
 msgstr "Uw profiel is aangemaakt en u bent nu aangemeld."
 
-#: concrete/controllers/single_page/register.php:284
+#: concrete/controllers/single_page/register.php:277
 msgid ""
 "You are registered but you need to validate your email address. Some or all "
 "functionality on this site will be limited until you do so."
 msgstr "U bent geregistreerd maar u moet uw e-mail adres nog valideren. Valideer uw e-mail adres om gebruik te kunnen maken van de volledige functionaliteit."
 
-#: concrete/controllers/single_page/register.php:285
+#: concrete/controllers/single_page/register.php:278
 msgid ""
 "An email has been sent to your email address. Click on the URL contained in "
 "the email to validate your email address."
 msgstr "We hebben u een e-mail gestuurd. Klik op de URL in deze e-mail om uw e-mailadres te valideren."
 
-#: concrete/controllers/single_page/register.php:290
+#: concrete/controllers/single_page/register.php:283
 msgid ""
 "You are registered but a site administrator must review your account, you "
 "will not be able to login until your account has been approved."
@@ -5082,12 +5086,12 @@ msgstr "Doorzoek alle onderligende pagina's?"
 #: concrete/blocks/form/form_setup_html.php:156
 #: concrete/blocks/form/form_setup_html.php:227
 #: concrete/blocks/page_attribute_display/templates/boolean.php:4
-#: concrete/blocks/page_list/page_list_form.php:176
-#: concrete/blocks/page_list/page_list_form.php:214
-#: concrete/blocks/page_list/page_list_form.php:230
-#: concrete/blocks/page_list/page_list_form.php:260
-#: concrete/blocks/page_list/page_list_form.php:277
-#: concrete/blocks/page_list/page_list_form.php:299
+#: concrete/blocks/page_list/page_list_form.php:172
+#: concrete/blocks/page_list/page_list_form.php:210
+#: concrete/blocks/page_list/page_list_form.php:226
+#: concrete/blocks/page_list/page_list_form.php:256
+#: concrete/blocks/page_list/page_list_form.php:273
+#: concrete/blocks/page_list/page_list_form.php:295
 #: concrete/controllers/search/pages.php:235
 #: concrete/elements/page_types/form/base.php:55
 #: concrete/elements/page_types/form/base.php:60
@@ -5109,12 +5113,12 @@ msgstr "Nee"
 #: concrete/blocks/form/form_setup_html.php:155
 #: concrete/blocks/form/form_setup_html.php:226
 #: concrete/blocks/page_attribute_display/templates/boolean.php:4
-#: concrete/blocks/page_list/page_list_form.php:182
-#: concrete/blocks/page_list/page_list_form.php:220
-#: concrete/blocks/page_list/page_list_form.php:236
-#: concrete/blocks/page_list/page_list_form.php:266
-#: concrete/blocks/page_list/page_list_form.php:284
-#: concrete/blocks/page_list/page_list_form.php:305
+#: concrete/blocks/page_list/page_list_form.php:178
+#: concrete/blocks/page_list/page_list_form.php:216
+#: concrete/blocks/page_list/page_list_form.php:232
+#: concrete/blocks/page_list/page_list_form.php:262
+#: concrete/blocks/page_list/page_list_form.php:280
+#: concrete/blocks/page_list/page_list_form.php:301
 #: concrete/controllers/search/pages.php:236
 #: concrete/elements/page_types/form/base.php:55
 #: concrete/elements/page_types/form/base.php:60
@@ -5640,17 +5644,17 @@ msgstr "Fout bij Registratie"
 #: concrete/mail/mail_importer_error.php:8
 #: concrete/mail/private_message.php:10
 #: concrete/mail/private_message_response_enabled.php:8
-#: concrete/src/User/UserInfo.php:308
+#: concrete/src/User/UserInfo.php:311
 #, php-format
 msgid "Subject: %s"
 msgstr "Onderwerp: %s"
 
-#: concrete/src/User/UserInfo.php:310
+#: concrete/src/User/UserInfo.php:313
 #, php-format
 msgid "Message: %s"
 msgstr "Bericht: %s"
 
-#: concrete/src/User/UserInfo.php:317
+#: concrete/src/User/UserInfo.php:320
 msgid "(No Subject)"
 msgstr "(Geen onderwerp)"
 
@@ -6236,11 +6240,11 @@ msgstr "U moet een geldige gebruiker opgeven."
 msgid "You must specify a page description."
 msgstr "U moet een paginabeschrijving opgeven."
 
-#: concrete/src/Page/Type/Type.php:833
+#: concrete/src/Page/Type/Type.php:843
 msgid "You must choose a page template."
 msgstr "U moet een paginasjabloon kiezen."
 
-#: concrete/src/Page/Type/Type.php:836
+#: concrete/src/Page/Type/Type.php:846
 msgid "This page template is not a valid template for this page type."
 msgstr "Deze paginasjabloon is niet een geldige sjabloon voor dit paginatype."
 
@@ -7508,7 +7512,7 @@ msgstr "Uw Website"
 msgid "Add-Ons"
 msgstr "Uitbreidingen"
 
-#: concrete/src/Application/Service/Dashboard/Sitemap.php:85
+#: concrete/src/Application/Service/Dashboard/Sitemap.php:90
 #, php-format
 msgid "%s more to display. <strong>View all &gt;</strong>"
 msgstr "meer %s om weer te geven. <strong>Alle bekijken &gt;</strong>"
@@ -8147,6 +8151,7 @@ msgstr "Dit kan niet ongedaan worden gemaakt"
 
 #: concrete/elements/collection_add_external.php:26
 #: concrete/elements/collection_edit_external.php:26
+#: concrete/views/dialogs/page/add_external.php:19
 msgid "Open Link in New Window"
 msgstr "Link in nieuw venster openen"
 
@@ -8311,7 +8316,7 @@ msgstr "Aangepaste attributen"
 #: concrete/views/dialogs/page/add_block_list.php:64
 #: concrete/views/dialogs/page/clipboard.php:22
 #: concrete/views/panels/add.php:91 concrete/views/panels/add.php:191
-#: concrete/views/panels/add.php:298 concrete/views/panels/add.php:337
+#: concrete/views/panels/add.php:296 concrete/views/panels/add.php:335
 #, php-format
 msgid "Add %s"
 msgstr "%s toevoegen"
@@ -9213,7 +9218,7 @@ msgstr "Toegestaan paginasjablonen"
 
 #: concrete/blocks/date_navigation/form.php:23
 #: concrete/blocks/date_navigation/view.php:11
-#: concrete/blocks/page_list/page_list_form.php:31
+#: concrete/blocks/page_list/page_list_form.php:27
 #: concrete/blocks/topic_list/templates/flat_filter.php:10
 #: concrete/elements/page_types/form/base.php:66
 msgid "All"
@@ -9505,6 +9510,15 @@ msgstr "Pagina Attributen"
 #: concrete/views/dialogs/page/attributes.php:9
 msgid "Selected Attributes"
 msgstr "Geselecteerde Attributen"
+
+#: concrete/views/dialogs/page/add.php:10
+msgid "Commonly Used"
+msgstr ""
+
+#: concrete/views/dialogs/page/add.php:31
+msgid ""
+"You do not have access to add any page types beneath the selected page."
+msgstr ""
 
 #: concrete/views/dialogs/search/customize.php:10
 msgid "Choose Columns"
@@ -9861,7 +9875,7 @@ msgid_plural "%d Blocks"
 msgstr[0] "%d Blok"
 msgstr[1] "%d Blokken"
 
-#: concrete/views/panels/add.php:244
+#: concrete/views/panels/add.php:243
 msgid "An error occured while deleting this item:"
 msgstr ""
 
@@ -10750,7 +10764,7 @@ msgstr "Gegevensbronnen"
 
 #: concrete/blocks/core_gathering/add.php:7
 #: concrete/blocks/core_gathering/edit.php:8
-#: concrete/blocks/page_list/page_list_form.php:170
+#: concrete/blocks/page_list/page_list_form.php:166
 #: concrete/single_pages/dashboard/pages/types/view.php:44
 msgid "Output"
 msgstr "Uitvoer"
@@ -11719,7 +11733,7 @@ msgstr "Knoptekst"
 msgid "Search for Pages"
 msgstr "Zoeken naar pagina 's"
 
-#: concrete/blocks/page_list/page_list_form.php:108
+#: concrete/blocks/page_list/page_list_form.php:104
 #: concrete/blocks/search/form_setup_html.php:43
 msgid "Everywhere"
 msgstr "Overal"
@@ -11754,170 +11768,171 @@ msgid "Settings"
 msgstr "Instellingen"
 
 #: concrete/blocks/page_list/page_list_form.php:15
-msgid "Display"
-msgstr "Weergeven"
+#: concrete/single_pages/dashboard/system/seo/bulk.php:71
+msgid "Number of Pages to Display"
+msgstr "Aantal pagina's weer te geven"
 
 #: concrete/blocks/date_navigation/form.php:3
-#: concrete/blocks/page_list/page_list_form.php:48
+#: concrete/blocks/page_list/page_list_form.php:44
 msgid "Filtering"
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:54
+#: concrete/blocks/page_list/page_list_form.php:50
 msgid "Featured pages only."
 msgstr "Alleen aanbevolen pagina's"
 
-#: concrete/blocks/page_list/page_list_form.php:59
+#: concrete/blocks/page_list/page_list_form.php:55
 msgid ""
 "(<strong>Note</strong>: You must create the \"is_featured\" page attribute "
 "first.)"
 msgstr "(<strong>Notitie</strong>: U moet eerst de  \"is_aanbevolen\" pagina attribuut toevoegen.)"
 
-#: concrete/blocks/page_list/page_list_form.php:67
+#: concrete/blocks/page_list/page_list_form.php:63
 msgid "Display page aliases."
 msgstr "Pagina aliassen weergeven."
 
-#: concrete/blocks/page_list/page_list_form.php:74
+#: concrete/blocks/page_list/page_list_form.php:70
 msgid "Enable Other Blocks to Filter This Page List."
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:76
+#: concrete/blocks/page_list/page_list_form.php:72
 msgid ""
 "Allows other blocks like the topic list block to pass search criteria to "
 "this page list block."
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:82
+#: concrete/blocks/page_list/page_list_form.php:78
 msgid "Filter by Related Topic."
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:88
+#: concrete/blocks/page_list/page_list_form.php:84
 msgid "Choose topics attribute."
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:95
+#: concrete/blocks/page_list/page_list_form.php:91
 msgid "Pagination"
 msgstr "Paginering"
 
-#: concrete/blocks/page_list/page_list_form.php:99
+#: concrete/blocks/page_list/page_list_form.php:95
 msgid ""
 "Display pagination interface if more items are available than are displayed."
 msgstr "Paginering weergeven indien er meer items beschikbaar zijn dan weergegeven."
 
-#: concrete/blocks/page_list/page_list_form.php:115
+#: concrete/blocks/page_list/page_list_form.php:111
 msgid "Beneath this page"
 msgstr "Onder deze pagina"
 
-#: concrete/blocks/page_list/page_list_form.php:122
+#: concrete/blocks/page_list/page_list_form.php:118
 msgid "Beneath another page"
 msgstr "Onder een andere pagina"
 
-#: concrete/blocks/page_list/page_list_form.php:140
+#: concrete/blocks/page_list/page_list_form.php:136
 msgid "Include all child pages"
 msgstr "Inclusief alle onderliggende pagina's"
 
-#: concrete/blocks/page_list/page_list_form.php:146
+#: concrete/blocks/page_list/page_list_form.php:142
 msgid "Sort"
 msgstr "Sorteren"
 
-#: concrete/blocks/page_list/page_list_form.php:150
+#: concrete/blocks/page_list/page_list_form.php:146
 msgid "Sitemap order"
 msgstr "Sitemap volgorde"
 
-#: concrete/blocks/page_list/page_list_form.php:153
+#: concrete/blocks/page_list/page_list_form.php:149
 msgid "Most recent first"
 msgstr "Meest recente eerst"
 
-#: concrete/blocks/page_list/page_list_form.php:156
+#: concrete/blocks/page_list/page_list_form.php:152
 msgid "Earliest first"
 msgstr "Vroegste eerste"
 
-#: concrete/blocks/page_list/page_list_form.php:159
+#: concrete/blocks/page_list/page_list_form.php:155
 msgid "Alphabetical order"
 msgstr "Alfabetische volgorde"
 
-#: concrete/blocks/page_list/page_list_form.php:162
+#: concrete/blocks/page_list/page_list_form.php:158
 msgid "Reverse alphabetical order"
 msgstr "Omgekeerde alfabetische volgorde"
 
-#: concrete/blocks/page_list/page_list_form.php:165
+#: concrete/blocks/page_list/page_list_form.php:161
 msgid "Random"
 msgstr "Willekeurige"
 
-#: concrete/blocks/page_list/page_list_form.php:172
+#: concrete/blocks/page_list/page_list_form.php:168
 msgid "Provide RSS Feed"
 msgstr "RSS Feed Opgeven"
 
-#: concrete/blocks/page_list/page_list_form.php:187
+#: concrete/blocks/page_list/page_list_form.php:183
 #, php-format
 msgid "RSS Feed can be found here: <a href=\"%s\" target=\"_blank\">%s</a>"
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:190
+#: concrete/blocks/page_list/page_list_form.php:186
 msgid "RSS Feed Title"
 msgstr "RSS Feed Titel"
 
-#: concrete/blocks/page_list/page_list_form.php:195
+#: concrete/blocks/page_list/page_list_form.php:191
 msgid "RSS Feed Description"
 msgstr "RSS Feed Omschrijving"
 
-#: concrete/blocks/page_list/page_list_form.php:199
+#: concrete/blocks/page_list/page_list_form.php:195
 msgid "RSS Feed Location"
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:210
+#: concrete/blocks/page_list/page_list_form.php:206
 msgid "Include Page Name"
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:226
+#: concrete/blocks/page_list/page_list_form.php:222
 msgid "Include Page Description"
 msgstr "Paginabeschrijving bevatten"
 
-#: concrete/blocks/page_list/page_list_form.php:240
+#: concrete/blocks/page_list/page_list_form.php:236
 msgid "Display Truncated Description"
 msgstr "Afgeknotte beschrijving weergeven"
 
-#: concrete/blocks/page_list/page_list_form.php:249
+#: concrete/blocks/page_list/page_list_form.php:245
 msgid "characters"
 msgstr "karakters"
 
-#: concrete/blocks/page_list/page_list_form.php:256
+#: concrete/blocks/page_list/page_list_form.php:252
 msgid "Include Public Page Date"
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:269
+#: concrete/blocks/page_list/page_list_form.php:265
 msgid ""
 "This is usually the date the page is created. It can be changed from the "
 "page attributes panel."
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:272
+#: concrete/blocks/page_list/page_list_form.php:268
 msgid "Display Thumbnail Image"
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:289
+#: concrete/blocks/page_list/page_list_form.php:285
 msgid ""
 "You must create an attribute with the 'thumbnail' handle in order to use "
 "this option."
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:295
+#: concrete/blocks/page_list/page_list_form.php:291
 msgid "Use Different Link than Page Name"
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:310
+#: concrete/blocks/page_list/page_list_form.php:306
 msgid "Link Text"
 msgstr "Link tekst"
 
-#: concrete/blocks/page_list/page_list_form.php:317
+#: concrete/blocks/page_list/page_list_form.php:313
 msgid "Title of Page List"
 msgstr ""
 
-#: concrete/blocks/page_list/page_list_form.php:322
+#: concrete/blocks/page_list/page_list_form.php:318
 msgid "Message to Display When No Pages Listed."
 msgstr ""
 
 #: concrete/blocks/autonav/form_setup_html.php:145
-#: concrete/blocks/page_list/page_list_form.php:335
+#: concrete/blocks/page_list/page_list_form.php:331
 msgid "Included Pages"
 msgstr "Opgenomen pagina 's"
 
@@ -11988,6 +12003,10 @@ msgstr "U moet een bestand selecteren."
 #: concrete/blocks/file/controller.php:42
 msgid "You must give your file a link."
 msgstr "U moet uw bestand een link geven."
+
+#: concrete/blocks/file/edit.php:14
+msgid "Text for Linked File"
+msgstr ""
 
 #: concrete/blocks/dashboard_app_status/controller.php:27
 msgid "Displays update and welcome back information on your dashboard."
@@ -13519,8 +13538,8 @@ msgstr "U moet aangemeld zijn als %s om groepen te verwijderen."
 
 #: concrete/single_pages/dashboard/users/groups.php:121
 #, php-format
-msgid "Make sure a code file exists at %s"
-msgstr "Controleer of dat een codebestand bestaat op %s"
+msgid "Make sure an automation group controller exists at %s"
+msgstr ""
 
 #: concrete/single_pages/dashboard/users/groups.php:130
 msgid "Automatically remove users from this group"
@@ -13743,10 +13762,6 @@ msgstr "Footer van de pagina"
 #: concrete/single_pages/dashboard/system/seo/view.php:3
 msgid "System &amp; Settings"
 msgstr "Systeem &amp; Instellingen"
-
-#: concrete/single_pages/dashboard/system/seo/bulk.php:71
-msgid "Number of Pages to Display"
-msgstr "Aantal pagina's weer te geven"
 
 #: concrete/single_pages/dashboard/system/seo/bulk.php:93
 msgid "How Many Levels Below Parent?"
@@ -14591,7 +14606,7 @@ msgid ""
 msgstr "Als uw website oude informatie weergeeft of vreemd gedrag vertoont kan het helpen om de cache te legen."
 
 #: concrete/config/install/base/dashboard.xml:629
-#: concrete/single_pages/dashboard/system/optimization/clearcache.php:8
+#: concrete/single_pages/dashboard/system/optimization/clearcache.php:7
 msgid "Clear Cache"
 msgstr "Cache legen"
 

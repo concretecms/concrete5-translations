@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-09-09 08:06+0000\n"
-"PO-Revision-Date: 2014-09-09 11:38+0000\n"
+"POT-Creation-Date: 2014-09-10 04:00+0000\n"
+"PO-Revision-Date: 2014-09-10 15:33+0000\n"
 "Last-Translator: Adem Coşkuner <info@ademcoskuner.com>\n"
 "Language-Team: Turkish (Turkey) (http://www.transifex.com/projects/p/concrete5/language/tr_TR/)\n"
 "MIME-Version: 1.0\n"
@@ -671,6 +671,7 @@ msgstr "Incoming/ klasöründeki dosyaları sil."
 #: concrete/views/dialogs/area/layout/presets.php:21
 #: concrete/views/dialogs/block/aliasing.php:44
 #: concrete/views/dialogs/page/add_block.php:94
+#: concrete/views/dialogs/page/add_external.php:23
 #: concrete/views/dialogs/page/delete.php:8
 #: concrete/views/dialogs/page/delete.php:12
 #: concrete/views/dialogs/page/delete.php:20
@@ -907,7 +908,7 @@ msgstr "Aşağıdaki dosyaları silmek istediğinizden emin misiniz?"
 #: concrete/tools/i18n_js.php:142 concrete/tools/i18n_js.php:198
 #: concrete/tools/i18n_redactor_js.php:45 concrete/tools/pages/delete.php:141
 #: concrete/tools/users/bulk_delete.php:67
-#: concrete/views/dialogs/page/delete.php:21
+#: concrete/views/dialogs/page/delete.php:21 concrete/views/panels/add.php:223
 #: concrete/views/panels/page/versions.php:37
 #: concrete/views/panels/page/versions.php:291
 msgid "Delete"
@@ -1111,6 +1112,7 @@ msgstr "Konu"
 #: concrete/tools/tree/node/add/topic.php:24
 #: concrete/tools/tree/node/add/topic_category.php:25
 #: concrete/views/dialogs/page/add_block.php:95
+#: concrete/views/dialogs/page/add_external.php:24
 msgid "Add"
 msgstr "Ekle"
 
@@ -1396,6 +1398,7 @@ msgstr "Sadece seçilen tüm gruplardaki kullanıcılar için bu izin geçerli o
 #: concrete/tools/permissions/dialogs/access/entity/types/group_combination.php:23
 #: concrete/views/dialogs/area/layout/presets.php:14
 #: concrete/views/dialogs/block/aliasing.php:20
+#: concrete/views/dialogs/page/add_external.php:7
 #: concrete/views/panels/details/page/attributes.php:24
 msgid "Name"
 msgstr "İsim"
@@ -1623,7 +1626,7 @@ msgstr "Resim Ekle"
 msgid "Table"
 msgstr "Tablo"
 
-#: concrete/blocks/file/add.php:10 concrete/blocks/file/edit.php:14
+#: concrete/blocks/file/add.php:10
 #: concrete/elements/conversation/display.php:82
 #: concrete/elements/conversation/message.php:113
 #: concrete/tools/i18n_redactor_js.php:17
@@ -1852,6 +1855,7 @@ msgstr "E-Posta"
 #: concrete/elements/workflow/progress/categories/page/pending.php:13
 #: concrete/single_pages/dashboard/system/basics/social.php:67
 #: concrete/tools/i18n_redactor_js.php:67
+#: concrete/views/dialogs/page/add_external.php:12
 msgid "URL"
 msgstr "URL"
 
@@ -2578,7 +2582,7 @@ msgid "SEO"
 msgstr "SEO"
 
 #: concrete/blocks/google_map/form_setup_html.php:11
-#: concrete/blocks/page_list/page_list_form.php:103
+#: concrete/blocks/page_list/page_list_form.php:99
 #: concrete/elements/page_controls_footer.php:77
 #: concrete/elements/page_controls_footer.php:80
 #: concrete/elements/panels/page.php:59 concrete/tools/i18n_js.php:118
@@ -3114,7 +3118,7 @@ msgstr "Seçilen sayfalardan herhangi biri için silme izniniz yok."
 msgid "Are you sure you want to delete the following pages?"
 msgstr "Aşağıdaki sayfaları silmek istediğinizden emin misiniz?"
 
-#: concrete/blocks/page_list/page_list_form.php:24
+#: concrete/blocks/page_list/page_list_form.php:20
 #: concrete/controllers/search/pages.php:221
 #: concrete/single_pages/dashboard/composer/drafts.php:16
 #: concrete/single_pages/dashboard/system/seo/bulk.php:135
@@ -3231,8 +3235,9 @@ msgstr "Seçilen konumda bu türde bir sayfa ekleme izniniz yok."
 #: concrete/controllers/panel/page/attributes.php:54
 #: concrete/elements/dashboard/attributes_table.php:72
 #: concrete/elements/files/search.php:72
+#: concrete/views/dialogs/page/add.php:21
 #: concrete/views/dialogs/page/add_block_list.php:54
-#: concrete/views/panels/add.php:324
+#: concrete/views/panels/add.php:322
 msgid "Other"
 msgstr "Diğer"
 
@@ -3703,7 +3708,6 @@ msgstr "Bu dahili bir blok türü olduğu için kaldırılamaz."
 msgid "The block type has been removed."
 msgstr "Blok türü kaldırıldı."
 
-#: concrete/blocks/page_list/page_list_form.php:19
 #: concrete/controllers/single_page/dashboard/workflow/me.php:28
 msgid "Pages"
 msgstr "Sayfa"
@@ -5001,23 +5005,23 @@ msgstr "%s kullanıcı adı zaten kullanılıyor. Lütfen başka bir tane seçin
 msgid "Validate Email Address"
 msgstr "E-Posta Adresi Doğrula"
 
-#: concrete/controllers/single_page/register.php:279
+#: concrete/controllers/single_page/register.php:272
 msgid "Your account has been created, and you are now logged in."
 msgstr "Hesabınız oluşturuldu ve oturumunuz açıldı."
 
-#: concrete/controllers/single_page/register.php:284
+#: concrete/controllers/single_page/register.php:277
 msgid ""
 "You are registered but you need to validate your email address. Some or all "
 "functionality on this site will be limited until you do so."
 msgstr "Kayıt tamamlandığında e-posta adresini doğrulamanız gerekir. Doğrulama tamamlanana kadar bazı işlemleri gerçekleştiremeyebilirsiniz."
 
-#: concrete/controllers/single_page/register.php:285
+#: concrete/controllers/single_page/register.php:278
 msgid ""
 "An email has been sent to your email address. Click on the URL contained in "
 "the email to validate your email address."
 msgstr "Adresinize bir e-posta gönderildi. Doğrulama için e-postadaki bağlantıya tıklatın."
 
-#: concrete/controllers/single_page/register.php:290
+#: concrete/controllers/single_page/register.php:283
 msgid ""
 "You are registered but a site administrator must review your account, you "
 "will not be able to login until your account has been approved."
@@ -5074,12 +5078,12 @@ msgstr "Tüm Alt Sayfaları Ara"
 #: concrete/blocks/form/form_setup_html.php:156
 #: concrete/blocks/form/form_setup_html.php:227
 #: concrete/blocks/page_attribute_display/templates/boolean.php:4
-#: concrete/blocks/page_list/page_list_form.php:176
-#: concrete/blocks/page_list/page_list_form.php:214
-#: concrete/blocks/page_list/page_list_form.php:230
-#: concrete/blocks/page_list/page_list_form.php:260
-#: concrete/blocks/page_list/page_list_form.php:277
-#: concrete/blocks/page_list/page_list_form.php:299
+#: concrete/blocks/page_list/page_list_form.php:172
+#: concrete/blocks/page_list/page_list_form.php:210
+#: concrete/blocks/page_list/page_list_form.php:226
+#: concrete/blocks/page_list/page_list_form.php:256
+#: concrete/blocks/page_list/page_list_form.php:273
+#: concrete/blocks/page_list/page_list_form.php:295
 #: concrete/controllers/search/pages.php:235
 #: concrete/elements/page_types/form/base.php:55
 #: concrete/elements/page_types/form/base.php:60
@@ -5101,12 +5105,12 @@ msgstr "Hayır"
 #: concrete/blocks/form/form_setup_html.php:155
 #: concrete/blocks/form/form_setup_html.php:226
 #: concrete/blocks/page_attribute_display/templates/boolean.php:4
-#: concrete/blocks/page_list/page_list_form.php:182
-#: concrete/blocks/page_list/page_list_form.php:220
-#: concrete/blocks/page_list/page_list_form.php:236
-#: concrete/blocks/page_list/page_list_form.php:266
-#: concrete/blocks/page_list/page_list_form.php:284
-#: concrete/blocks/page_list/page_list_form.php:305
+#: concrete/blocks/page_list/page_list_form.php:178
+#: concrete/blocks/page_list/page_list_form.php:216
+#: concrete/blocks/page_list/page_list_form.php:232
+#: concrete/blocks/page_list/page_list_form.php:262
+#: concrete/blocks/page_list/page_list_form.php:280
+#: concrete/blocks/page_list/page_list_form.php:301
 #: concrete/controllers/search/pages.php:236
 #: concrete/elements/page_types/form/base.php:55
 #: concrete/elements/page_types/form/base.php:60
@@ -5629,17 +5633,17 @@ msgstr "Kayıt Başarısız"
 #: concrete/mail/mail_importer_error.php:8
 #: concrete/mail/private_message.php:10
 #: concrete/mail/private_message_response_enabled.php:8
-#: concrete/src/User/UserInfo.php:308
+#: concrete/src/User/UserInfo.php:311
 #, php-format
 msgid "Subject: %s"
 msgstr "Konu: %s"
 
-#: concrete/src/User/UserInfo.php:310
+#: concrete/src/User/UserInfo.php:313
 #, php-format
 msgid "Message: %s"
 msgstr "Mesaj: %s"
 
-#: concrete/src/User/UserInfo.php:317
+#: concrete/src/User/UserInfo.php:320
 msgid "(No Subject)"
 msgstr "(Konusuz)"
 
@@ -6224,11 +6228,11 @@ msgstr "Geçerli bir kullanıcı belirtmelisiniz."
 msgid "You must specify a page description."
 msgstr "Bir sayfa açıklaması belirtmelisiniz."
 
-#: concrete/src/Page/Type/Type.php:833
+#: concrete/src/Page/Type/Type.php:843
 msgid "You must choose a page template."
 msgstr "Bir sayfa şablonu seçmelisiniz."
 
-#: concrete/src/Page/Type/Type.php:836
+#: concrete/src/Page/Type/Type.php:846
 msgid "This page template is not a valid template for this page type."
 msgstr "Sayfa şablonu by sayfa türü için geçerli bir şablon değildir."
 
@@ -7496,7 +7500,7 @@ msgstr "Siteniz"
 msgid "Add-Ons"
 msgstr "Eklentiler"
 
-#: concrete/src/Application/Service/Dashboard/Sitemap.php:85
+#: concrete/src/Application/Service/Dashboard/Sitemap.php:90
 #, php-format
 msgid "%s more to display. <strong>View all &gt;</strong>"
 msgstr "%s tane daha gösterilebilir. <strong>Tümünü Göster &gt;</strong>"
@@ -8124,6 +8128,7 @@ msgstr "Bu işlem geri alınamaz."
 
 #: concrete/elements/collection_add_external.php:26
 #: concrete/elements/collection_edit_external.php:26
+#: concrete/views/dialogs/page/add_external.php:19
 msgid "Open Link in New Window"
 msgstr "Bağlantıyı Yeni Pencerede Aç"
 
@@ -8288,7 +8293,7 @@ msgstr "Özel Özellikler"
 #: concrete/views/dialogs/page/add_block_list.php:64
 #: concrete/views/dialogs/page/clipboard.php:22
 #: concrete/views/panels/add.php:91 concrete/views/panels/add.php:191
-#: concrete/views/panels/add.php:298 concrete/views/panels/add.php:337
+#: concrete/views/panels/add.php:296 concrete/views/panels/add.php:335
 #, php-format
 msgid "Add %s"
 msgstr "%s Ekle"
@@ -9190,7 +9195,7 @@ msgstr "İzin Verilen Sayfa Şablonları"
 
 #: concrete/blocks/date_navigation/form.php:23
 #: concrete/blocks/date_navigation/view.php:11
-#: concrete/blocks/page_list/page_list_form.php:31
+#: concrete/blocks/page_list/page_list_form.php:27
 #: concrete/blocks/topic_list/templates/flat_filter.php:10
 #: concrete/elements/page_types/form/base.php:66
 msgid "All"
@@ -9481,6 +9486,15 @@ msgstr "Sayfa Özellikleri"
 #: concrete/views/dialogs/page/attributes.php:9
 msgid "Selected Attributes"
 msgstr "Seçilen Özellikler"
+
+#: concrete/views/dialogs/page/add.php:10
+msgid "Commonly Used"
+msgstr "Sık Kullanılan"
+
+#: concrete/views/dialogs/page/add.php:31
+msgid ""
+"You do not have access to add any page types beneath the selected page."
+msgstr "Seçilen sayfanın altında herhangi bir sayfa türü ekleme izniniz yok."
 
 #: concrete/views/dialogs/search/customize.php:10
 msgid "Choose Columns"
@@ -9836,7 +9850,7 @@ msgid "%d Block"
 msgid_plural "%d Blocks"
 msgstr[0] "%d Blok"
 
-#: concrete/views/panels/add.php:244
+#: concrete/views/panels/add.php:243
 msgid "An error occured while deleting this item:"
 msgstr "Bu ögeyi silerken bir hata meydana geldi:"
 
@@ -10725,7 +10739,7 @@ msgstr "Veri Kaynakları"
 
 #: concrete/blocks/core_gathering/add.php:7
 #: concrete/blocks/core_gathering/edit.php:8
-#: concrete/blocks/page_list/page_list_form.php:170
+#: concrete/blocks/page_list/page_list_form.php:166
 #: concrete/single_pages/dashboard/pages/types/view.php:44
 msgid "Output"
 msgstr "Çıktı"
@@ -11693,7 +11707,7 @@ msgstr "Buton Metni"
 msgid "Search for Pages"
 msgstr "Sayfaları Ara"
 
-#: concrete/blocks/page_list/page_list_form.php:108
+#: concrete/blocks/page_list/page_list_form.php:104
 #: concrete/blocks/search/form_setup_html.php:43
 msgid "Everywhere"
 msgstr "Her Yerde"
@@ -11728,170 +11742,171 @@ msgid "Settings"
 msgstr "Ayarlar"
 
 #: concrete/blocks/page_list/page_list_form.php:15
-msgid "Display"
-msgstr "Göster"
+#: concrete/single_pages/dashboard/system/seo/bulk.php:71
+msgid "Number of Pages to Display"
+msgstr "Gösterilecek Sayfa Sayısı"
 
 #: concrete/blocks/date_navigation/form.php:3
-#: concrete/blocks/page_list/page_list_form.php:48
+#: concrete/blocks/page_list/page_list_form.php:44
 msgid "Filtering"
 msgstr "Filtreleme"
 
-#: concrete/blocks/page_list/page_list_form.php:54
+#: concrete/blocks/page_list/page_list_form.php:50
 msgid "Featured pages only."
 msgstr "Sadece öne çıkan sayfalar."
 
-#: concrete/blocks/page_list/page_list_form.php:59
+#: concrete/blocks/page_list/page_list_form.php:55
 msgid ""
 "(<strong>Note</strong>: You must create the \"is_featured\" page attribute "
 "first.)"
 msgstr "(<strong>Not</strong>: Önce \"is_featured\" sayfa özelliğini oluşturmalısınız.)"
 
-#: concrete/blocks/page_list/page_list_form.php:67
+#: concrete/blocks/page_list/page_list_form.php:63
 msgid "Display page aliases."
 msgstr "Sayfa yansımalarını görüntüle."
 
-#: concrete/blocks/page_list/page_list_form.php:74
+#: concrete/blocks/page_list/page_list_form.php:70
 msgid "Enable Other Blocks to Filter This Page List."
 msgstr "Diğer Blokların Bu Sayfa Listesini Filtrelemesini Etkinleştir"
 
-#: concrete/blocks/page_list/page_list_form.php:76
+#: concrete/blocks/page_list/page_list_form.php:72
 msgid ""
 "Allows other blocks like the topic list block to pass search criteria to "
 "this page list block."
 msgstr "Konu listesi ve benzer blokların bu sayfa listesi bloğuna arama kriteri göndermesini sağlar."
 
-#: concrete/blocks/page_list/page_list_form.php:82
+#: concrete/blocks/page_list/page_list_form.php:78
 msgid "Filter by Related Topic."
 msgstr "İlişkili Konuya Göre Filtrele."
 
-#: concrete/blocks/page_list/page_list_form.php:88
+#: concrete/blocks/page_list/page_list_form.php:84
 msgid "Choose topics attribute."
 msgstr "Konu özelliğini seçin."
 
-#: concrete/blocks/page_list/page_list_form.php:95
+#: concrete/blocks/page_list/page_list_form.php:91
 msgid "Pagination"
 msgstr "Sayfalama"
 
-#: concrete/blocks/page_list/page_list_form.php:99
+#: concrete/blocks/page_list/page_list_form.php:95
 msgid ""
 "Display pagination interface if more items are available than are displayed."
 msgstr "Gösterilenden daha fazla öge varsa sayfalama arayüzünü kullan."
 
-#: concrete/blocks/page_list/page_list_form.php:115
+#: concrete/blocks/page_list/page_list_form.php:111
 msgid "Beneath this page"
 msgstr "Bu sayfanın altında"
 
-#: concrete/blocks/page_list/page_list_form.php:122
+#: concrete/blocks/page_list/page_list_form.php:118
 msgid "Beneath another page"
 msgstr "Başka bir sayfanın altında"
 
-#: concrete/blocks/page_list/page_list_form.php:140
+#: concrete/blocks/page_list/page_list_form.php:136
 msgid "Include all child pages"
 msgstr "Tüm alt sayfaları dahil et"
 
-#: concrete/blocks/page_list/page_list_form.php:146
+#: concrete/blocks/page_list/page_list_form.php:142
 msgid "Sort"
 msgstr "Sırala"
 
-#: concrete/blocks/page_list/page_list_form.php:150
+#: concrete/blocks/page_list/page_list_form.php:146
 msgid "Sitemap order"
 msgstr "Site haritasına göre"
 
-#: concrete/blocks/page_list/page_list_form.php:153
+#: concrete/blocks/page_list/page_list_form.php:149
 msgid "Most recent first"
 msgstr "En yeni üstte"
 
-#: concrete/blocks/page_list/page_list_form.php:156
+#: concrete/blocks/page_list/page_list_form.php:152
 msgid "Earliest first"
 msgstr "En eski üstte"
 
-#: concrete/blocks/page_list/page_list_form.php:159
+#: concrete/blocks/page_list/page_list_form.php:155
 msgid "Alphabetical order"
 msgstr "Alfabetik sıralama"
 
-#: concrete/blocks/page_list/page_list_form.php:162
+#: concrete/blocks/page_list/page_list_form.php:158
 msgid "Reverse alphabetical order"
 msgstr "Ters alfabetik sıralama"
 
-#: concrete/blocks/page_list/page_list_form.php:165
+#: concrete/blocks/page_list/page_list_form.php:161
 msgid "Random"
 msgstr "Rastgele"
 
-#: concrete/blocks/page_list/page_list_form.php:172
+#: concrete/blocks/page_list/page_list_form.php:168
 msgid "Provide RSS Feed"
 msgstr "RSS Akışı Sağla"
 
-#: concrete/blocks/page_list/page_list_form.php:187
+#: concrete/blocks/page_list/page_list_form.php:183
 #, php-format
 msgid "RSS Feed can be found here: <a href=\"%s\" target=\"_blank\">%s</a>"
 msgstr "RSS Beslemeniz burada bulunur: <a href=\"%s\" target=\"_blank\">%s</a>"
 
-#: concrete/blocks/page_list/page_list_form.php:190
+#: concrete/blocks/page_list/page_list_form.php:186
 msgid "RSS Feed Title"
 msgstr "RSS Akışı Başlığı"
 
-#: concrete/blocks/page_list/page_list_form.php:195
+#: concrete/blocks/page_list/page_list_form.php:191
 msgid "RSS Feed Description"
 msgstr "RSS Akışı Açıklaması"
 
-#: concrete/blocks/page_list/page_list_form.php:199
+#: concrete/blocks/page_list/page_list_form.php:195
 msgid "RSS Feed Location"
 msgstr "RSS Besleme Konumu"
 
-#: concrete/blocks/page_list/page_list_form.php:210
+#: concrete/blocks/page_list/page_list_form.php:206
 msgid "Include Page Name"
 msgstr "Sayfa Adını Dahil Et"
 
-#: concrete/blocks/page_list/page_list_form.php:226
+#: concrete/blocks/page_list/page_list_form.php:222
 msgid "Include Page Description"
 msgstr "Sayfa Açıklamasını Dahil Et"
 
-#: concrete/blocks/page_list/page_list_form.php:240
+#: concrete/blocks/page_list/page_list_form.php:236
 msgid "Display Truncated Description"
 msgstr "Kısaltılmış Açıklamayı Göster"
 
-#: concrete/blocks/page_list/page_list_form.php:249
+#: concrete/blocks/page_list/page_list_form.php:245
 msgid "characters"
 msgstr "karakterden sonra"
 
-#: concrete/blocks/page_list/page_list_form.php:256
+#: concrete/blocks/page_list/page_list_form.php:252
 msgid "Include Public Page Date"
 msgstr "Herkese Açık Yayınlanma Tarihini Dahil Et"
 
-#: concrete/blocks/page_list/page_list_form.php:269
+#: concrete/blocks/page_list/page_list_form.php:265
 msgid ""
 "This is usually the date the page is created. It can be changed from the "
 "page attributes panel."
 msgstr "Bu, genellikle sayfanın oluşturulma tarihidir. Sayfa özellikleri panelinden değiştirilebilir."
 
-#: concrete/blocks/page_list/page_list_form.php:272
+#: concrete/blocks/page_list/page_list_form.php:268
 msgid "Display Thumbnail Image"
 msgstr "Önizleme Resmini Göster"
 
-#: concrete/blocks/page_list/page_list_form.php:289
+#: concrete/blocks/page_list/page_list_form.php:285
 msgid ""
 "You must create an attribute with the 'thumbnail' handle in order to use "
 "this option."
 msgstr "Bu seçeneği kullanmanız için 'thumbnail' işleciyle biz özellik oluşturmanız gerekir."
 
-#: concrete/blocks/page_list/page_list_form.php:295
+#: concrete/blocks/page_list/page_list_form.php:291
 msgid "Use Different Link than Page Name"
 msgstr "Sayfa Adından Başka Bir Bağlantı Kullan"
 
-#: concrete/blocks/page_list/page_list_form.php:310
+#: concrete/blocks/page_list/page_list_form.php:306
 msgid "Link Text"
 msgstr "Bağlantı Metni"
 
-#: concrete/blocks/page_list/page_list_form.php:317
+#: concrete/blocks/page_list/page_list_form.php:313
 msgid "Title of Page List"
 msgstr "Safa Listesinin Başlığı"
 
-#: concrete/blocks/page_list/page_list_form.php:322
+#: concrete/blocks/page_list/page_list_form.php:318
 msgid "Message to Display When No Pages Listed."
 msgstr "Hiçbir Sayfa Listelenmediğinde Görüntülenecek Mesaj."
 
 #: concrete/blocks/autonav/form_setup_html.php:145
-#: concrete/blocks/page_list/page_list_form.php:335
+#: concrete/blocks/page_list/page_list_form.php:331
 msgid "Included Pages"
 msgstr "Dahil Edilen Sayfalar"
 
@@ -11962,6 +11977,10 @@ msgstr "Bir dosya seçmelisiniz."
 #: concrete/blocks/file/controller.php:42
 msgid "You must give your file a link."
 msgstr "Dosyanıza bir link vermelisiniz."
+
+#: concrete/blocks/file/edit.php:14
+msgid "Text for Linked File"
+msgstr "Bağlantılı Dosya Metni"
 
 #: concrete/blocks/dashboard_app_status/controller.php:27
 msgid "Displays update and welcome back information on your dashboard."
@@ -13491,8 +13510,8 @@ msgstr "Grupları silmek için %s olarak oturum açmalısınız."
 
 #: concrete/single_pages/dashboard/users/groups.php:121
 #, php-format
-msgid "Make sure a code file exists at %s"
-msgstr "%s'te bir kod dosyası olduğundan emin olun"
+msgid "Make sure an automation group controller exists at %s"
+msgstr "%s'te bir otomasyon grup denetleyicisi olduğundan emin olun."
 
 #: concrete/single_pages/dashboard/users/groups.php:130
 msgid "Automatically remove users from this group"
@@ -13715,10 +13734,6 @@ msgstr "Sayfa sonunda."
 #: concrete/single_pages/dashboard/system/seo/view.php:3
 msgid "System &amp; Settings"
 msgstr "Sistem &amp; Ayarlar"
-
-#: concrete/single_pages/dashboard/system/seo/bulk.php:71
-msgid "Number of Pages to Display"
-msgstr "Gösterilecek Sayfa Sayısı"
 
 #: concrete/single_pages/dashboard/system/seo/bulk.php:93
 msgid "How Many Levels Below Parent?"
@@ -14563,7 +14578,7 @@ msgid ""
 msgstr "Eğer siteniz günü geçmiş bilgileri gösteriyorsa, veya beklenmedik bir bir şekilde davranıyorsa, önbelleği temizlemek yardımcı olabilir."
 
 #: concrete/config/install/base/dashboard.xml:629
-#: concrete/single_pages/dashboard/system/optimization/clearcache.php:8
+#: concrete/single_pages/dashboard/system/optimization/clearcache.php:7
 msgid "Clear Cache"
 msgstr "Önbelleği Temizle"
 
