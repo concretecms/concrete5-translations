@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-09-16 10:00+0000\n"
-"PO-Revision-Date: 2014-09-16 10:04+0000\n"
+"POT-Creation-Date: 2014-09-17 10:00+0000\n"
+"PO-Revision-Date: 2014-09-17 10:06+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Burmese (Myanmar) (http://www.transifex.com/projects/p/concrete5/language/my_MM/)\n"
 "MIME-Version: 1.0\n"
@@ -94,7 +94,7 @@ msgstr ""
 #: concrete/single_pages/dashboard/users/search.php:54
 #: concrete/single_pages/login_oauth.php:64
 #: concrete/single_pages/register.php:59
-#: concrete/src/Form/Service/Widget/UserSelector.php:87
+#: concrete/src/Form/Service/Widget/UserSelector.php:89
 #: concrete/tools/users/search_results_export.php:27
 #: concrete/views/frontend/install.php:160
 msgid "Email Address"
@@ -110,7 +110,7 @@ msgstr "အီးမေးလ်လိပ်စာ"
 #: concrete/single_pages/dashboard/users/add.php:10
 #: concrete/single_pages/dashboard/users/search.php:50
 #: concrete/single_pages/register.php:50
-#: concrete/src/Form/Service/Widget/UserSelector.php:86
+#: concrete/src/Form/Service/Widget/UserSelector.php:88
 #: concrete/src/User/Search/ColumnSet/DefaultSet.php:29
 #: concrete/tools/users/search_results_export.php:26
 msgid "Username"
@@ -199,15 +199,40 @@ msgstr ""
 msgid "This user is inactive. Please contact us regarding this account."
 msgstr ""
 
+#: concrete/authentication/facebook/hook.php:22
+#: concrete/config/install/base/dashboard.xml:740
+#: concrete/elements/users/confirm_list.php:8
+#: concrete/mail/user_register_approval_required.php:15
+#: concrete/single_pages/account/edit_profile.php:22
+#: concrete/src/User/Search/ColumnSet/DefaultSet.php:30
+#: concrete/themes/greek_yogurt/blog_entry.php:73
+#: concrete/tools/i18n_redactor_js.php:66
+msgid "Email"
+msgstr "အီးမေးလ်"
+
+#: concrete/authentication/facebook/hook.php:27
+msgid "Gender"
+msgstr ""
+
+#: concrete/authentication/facebook/hook.php:32
+msgid "Age"
+msgstr ""
+
+#: concrete/authentication/facebook/hook.php:42
+msgid "Successfully detached account."
+msgstr ""
+
 #: concrete/authentication/facebook/hook.php:59
 msgid "Attach your facebook account to this concrete5 account"
 msgstr ""
 
 #: concrete/authentication/facebook/hook.php:59
+#: concrete/authentication/facebook/hook.php:64
 msgid "Login with Facebook"
 msgstr ""
 
 #: concrete/authentication/facebook/form.php:5
+#: concrete/authentication/facebook/form.php:8
 msgid "Log in with Facebook"
 msgstr ""
 
@@ -219,9 +244,18 @@ msgstr ""
 msgid "App Secret"
 msgstr ""
 
-#: concrete/authentication/facebook/type_form.php:13
+#: concrete/authentication/facebook/type_form.php:12
+#: concrete/authentication/facebook/type_form.php:30
+msgid "Show secret"
+msgstr ""
+
+#: concrete/authentication/facebook/type_form.php:18
 #, php-format
 msgid "<a href=\"%s\" target=\"_blank\">Click here</a> to obtain your access keys."
+msgstr ""
+
+#: concrete/authentication/facebook/type_form.php:27
+msgid "Hide secret"
 msgstr ""
 
 #: concrete/authentication/facebook/controller.php:33
@@ -709,7 +743,7 @@ msgstr ""
 #: concrete/elements/panels/page.php:104
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:56
 #: concrete/single_pages/dashboard/pages/types/view.php:46
-#: concrete/src/Package/Package.php:332
+#: concrete/src/Package/Package.php:338
 #: concrete/tools/files/permissions.php:43 concrete/tools/i18n_js.php:137
 #: concrete/tools/i18n_js.php:196
 msgid "Permissions"
@@ -1762,16 +1796,6 @@ msgstr ""
 #: concrete/src/File/Type/Type.php:73 concrete/tools/i18n_redactor_js.php:65
 msgid "Text"
 msgstr "စာသား"
-
-#: concrete/config/install/base/dashboard.xml:740
-#: concrete/elements/users/confirm_list.php:8
-#: concrete/mail/user_register_approval_required.php:15
-#: concrete/single_pages/account/edit_profile.php:22
-#: concrete/src/User/Search/ColumnSet/DefaultSet.php:30
-#: concrete/themes/greek_yogurt/blog_entry.php:73
-#: concrete/tools/i18n_redactor_js.php:66
-msgid "Email"
-msgstr "အီးမေးလ်"
 
 #: concrete/blocks/image/form.php:56
 #: concrete/blocks/image_slider/form_setup_html.php:205
@@ -4430,7 +4454,7 @@ msgstr ""
 msgid "Choose a Service"
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/system/basics/multilingual.php:25
+#: concrete/controllers/single_page/dashboard/system/basics/multilingual.php:26
 msgid ""
 "Interface settings saved. Please log out and in again to update all backend "
 "messages."
@@ -6087,12 +6111,12 @@ msgstr ""
 msgid "You must specify a URL slug."
 msgstr ""
 
-#: concrete/src/Page/Type/Composer/Control/CorePageProperty/UserCorePageProperty.php:12
+#: concrete/src/Page/Type/Composer/Control/CorePageProperty/UserCorePageProperty.php:13
 msgctxt "PageTypeComposerControlName"
 msgid "User"
 msgstr "အသံုးပြုသူ"
 
-#: concrete/src/Page/Type/Composer/Control/CorePageProperty/UserCorePageProperty.php:30
+#: concrete/src/Page/Type/Composer/Control/CorePageProperty/UserCorePageProperty.php:31
 msgid "You must specify a valid user."
 msgstr ""
 
@@ -6248,118 +6272,118 @@ msgstr "ပုံစံ: %s"
 msgid "spam"
 msgstr "အမှိုက်မေးလ်"
 
-#: concrete/src/Package/Package.php:302
+#: concrete/src/Package/Package.php:308
 msgid "Attribute categories"
 msgstr ""
 
-#: concrete/src/Package/Package.php:305
+#: concrete/src/Package/Package.php:311
 msgid "Permission categories"
 msgstr ""
 
-#: concrete/src/Package/Package.php:308
+#: concrete/src/Package/Package.php:314
 msgid "Permission access entity types"
 msgstr ""
 
-#: concrete/src/Package/Package.php:311
+#: concrete/src/Package/Package.php:317
 msgid "Attribute keys"
 msgstr ""
 
-#: concrete/src/Package/Package.php:314
+#: concrete/src/Package/Package.php:320
 msgid "Attribute sets"
 msgstr ""
 
-#: concrete/src/Package/Package.php:317
+#: concrete/src/Package/Package.php:323
 msgid "Group sets"
 msgstr ""
 
-#: concrete/src/Package/Package.php:320
+#: concrete/src/Package/Package.php:326
 msgid "Page types"
 msgstr ""
 
-#: concrete/src/Package/Package.php:323
+#: concrete/src/Package/Package.php:329
 msgid "Mail importers"
 msgstr ""
 
-#: concrete/src/Package/Package.php:326
+#: concrete/src/Package/Package.php:332
 msgid "Block types"
 msgstr ""
 
-#: concrete/src/Package/Package.php:329
+#: concrete/src/Package/Package.php:335
 msgid "Page themes"
 msgstr ""
 
-#: concrete/src/Package/Package.php:335
+#: concrete/src/Package/Package.php:341
 msgid "Single pages"
 msgstr ""
 
-#: concrete/src/Package/Package.php:338
+#: concrete/src/Package/Package.php:344
 msgid "Attribute types"
 msgstr ""
 
-#: concrete/src/Package/Package.php:341
+#: concrete/src/Package/Package.php:347
 msgid "Captcha libraries"
 msgstr ""
 
-#: concrete/src/Package/Package.php:344
+#: concrete/src/Package/Package.php:350
 msgid "Antispam libraries"
 msgstr ""
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:39
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:299
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:418
-#: concrete/src/Package/Package.php:347
+#: concrete/src/Package/Package.php:353
 msgid "Jobs"
 msgstr "အလုပ်များ"
 
-#: concrete/src/Package/Package.php:350
+#: concrete/src/Package/Package.php:356
 msgid "Workflow types"
 msgstr ""
 
-#: concrete/src/Package/Package.php:407
+#: concrete/src/Package/Package.php:413
 #, php-format
 msgid "%s (%s)"
 msgstr "%s (%s)"
 
-#: concrete/src/Package/Package.php:413
+#: concrete/src/Package/Package.php:419
 #, php-format
 msgid " %s (%s)"
 msgstr "%s (%s)"
 
-#: concrete/src/Package/Package.php:619
+#: concrete/src/Package/Package.php:625
 msgid "You've already installed that package."
 msgstr ""
 
-#: concrete/src/Package/Package.php:620
+#: concrete/src/Package/Package.php:626
 msgid "Invalid Package."
 msgstr ""
 
-#: concrete/src/Package/Package.php:621
+#: concrete/src/Package/Package.php:627
 #, php-format
 msgid "This package requires concrete5 version %s or greater."
 msgstr ""
 
-#: concrete/src/Package/Package.php:622
+#: concrete/src/Package/Package.php:628
 msgid "An error occurred while downloading the package."
 msgstr ""
 
-#: concrete/src/Package/Package.php:623
+#: concrete/src/Package/Package.php:629
 msgid "concrete5 was not able to save the package after download."
 msgstr ""
 
-#: concrete/src/Package/Package.php:624
+#: concrete/src/Package/Package.php:630
 msgid "An error occurred while trying to unzip the package."
 msgstr ""
 
-#: concrete/src/Package/Package.php:625
+#: concrete/src/Package/Package.php:631
 msgid "An error occurred while trying to install the package."
 msgstr ""
 
-#: concrete/src/Package/Package.php:626
+#: concrete/src/Package/Package.php:632
 #, php-format
 msgid "Unable to backup old package directory to %s"
 msgstr ""
 
-#: concrete/src/Package/Package.php:627
+#: concrete/src/Package/Package.php:633
 msgid ""
 "This package isn't currently available for this version of concrete5. Please"
 " contact the maintainer of this package for assistance."
@@ -6509,16 +6533,16 @@ msgstr "စာမျက်နှာရွေးချယ်"
 msgid "Clear Color Selection"
 msgstr ""
 
-#: concrete/src/Form/Service/Widget/UserSelector.php:32
-#: concrete/src/Form/Service/Widget/UserSelector.php:88
+#: concrete/src/Form/Service/Widget/UserSelector.php:34
+#: concrete/src/Form/Service/Widget/UserSelector.php:90
 msgid "Choose User"
 msgstr "အသံုးပြုသူရွေး"
 
-#: concrete/src/Form/Service/Widget/UserSelector.php:32
+#: concrete/src/Form/Service/Widget/UserSelector.php:34
 msgid "Select User"
 msgstr "အသံုးပြုသူရွေးချယ်"
 
-#: concrete/src/Form/Service/Widget/UserSelector.php:99
+#: concrete/src/Form/Service/Widget/UserSelector.php:101
 msgid "No users selected."
 msgstr ""
 
@@ -7560,7 +7584,7 @@ msgstr ""
 msgid "%s method does not exist for the %s class"
 msgstr ""
 
-#: concrete/src/Area/Area.php:103
+#: concrete/src/Area/Area.php:96
 msgid ""
 "No grid framework found. Grid area methods require a valid grid framework "
 "defined in a PageTheme class."
@@ -11736,17 +11760,17 @@ msgstr "စာမျက်နှာစာရင်း"
 msgid "Please give your RSS Feed a name."
 msgstr ""
 
-#: concrete/blocks/page_list/controller.php:264
+#: concrete/blocks/page_list/controller.php:266
 msgid ""
 "Your RSS feed must have a valid URL, containing only letters, numbers or "
 "underscores"
 msgstr ""
 
-#: concrete/blocks/page_list/controller.php:267
+#: concrete/blocks/page_list/controller.php:269
 msgid "Your RSS feed must have a valid title."
 msgstr ""
 
-#: concrete/blocks/page_list/controller.php:270
+#: concrete/blocks/page_list/controller.php:272
 msgid "Your RSS feed must have a valid description."
 msgstr ""
 

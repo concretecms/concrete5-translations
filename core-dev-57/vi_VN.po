@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-09-16 10:00+0000\n"
-"PO-Revision-Date: 2014-09-16 10:04+0000\n"
+"POT-Creation-Date: 2014-09-17 10:00+0000\n"
+"PO-Revision-Date: 2014-09-17 10:06+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Vietnamese (Viet Nam) (http://www.transifex.com/projects/p/concrete5/language/vi_VN/)\n"
 "MIME-Version: 1.0\n"
@@ -95,7 +95,7 @@ msgstr "Đăng nhập với tài khoản nội bộ."
 #: concrete/single_pages/dashboard/users/search.php:54
 #: concrete/single_pages/login_oauth.php:64
 #: concrete/single_pages/register.php:59
-#: concrete/src/Form/Service/Widget/UserSelector.php:87
+#: concrete/src/Form/Service/Widget/UserSelector.php:89
 #: concrete/tools/users/search_results_export.php:27
 #: concrete/views/frontend/install.php:160
 msgid "Email Address"
@@ -111,7 +111,7 @@ msgstr "Địa chỉ thư điện tử"
 #: concrete/single_pages/dashboard/users/add.php:10
 #: concrete/single_pages/dashboard/users/search.php:50
 #: concrete/single_pages/register.php:50
-#: concrete/src/Form/Service/Widget/UserSelector.php:86
+#: concrete/src/Form/Service/Widget/UserSelector.php:88
 #: concrete/src/User/Search/ColumnSet/DefaultSet.php:29
 #: concrete/tools/users/search_results_export.php:26
 msgid "Username"
@@ -200,15 +200,40 @@ msgstr "Tên người dùng và mật khẩu không hợp lệ."
 msgid "This user is inactive. Please contact us regarding this account."
 msgstr "Người dùng này không hoạt động. Xin liên hệ với chúnh tôi về tài khoản này."
 
+#: concrete/authentication/facebook/hook.php:22
+#: concrete/config/install/base/dashboard.xml:740
+#: concrete/elements/users/confirm_list.php:8
+#: concrete/mail/user_register_approval_required.php:15
+#: concrete/single_pages/account/edit_profile.php:22
+#: concrete/src/User/Search/ColumnSet/DefaultSet.php:30
+#: concrete/themes/greek_yogurt/blog_entry.php:73
+#: concrete/tools/i18n_redactor_js.php:66
+msgid "Email"
+msgstr "Thư điện tử"
+
+#: concrete/authentication/facebook/hook.php:27
+msgid "Gender"
+msgstr ""
+
+#: concrete/authentication/facebook/hook.php:32
+msgid "Age"
+msgstr ""
+
+#: concrete/authentication/facebook/hook.php:42
+msgid "Successfully detached account."
+msgstr ""
+
 #: concrete/authentication/facebook/hook.php:59
 msgid "Attach your facebook account to this concrete5 account"
 msgstr "Gắn tài khoản facebook với tài khoản concrete5 này"
 
 #: concrete/authentication/facebook/hook.php:59
+#: concrete/authentication/facebook/hook.php:64
 msgid "Login with Facebook"
 msgstr "Đăng nhập với Facebook"
 
 #: concrete/authentication/facebook/form.php:5
+#: concrete/authentication/facebook/form.php:8
 msgid "Log in with Facebook"
 msgstr "Đăng nhập với Facebook"
 
@@ -220,10 +245,19 @@ msgstr ""
 msgid "App Secret"
 msgstr ""
 
-#: concrete/authentication/facebook/type_form.php:13
+#: concrete/authentication/facebook/type_form.php:12
+#: concrete/authentication/facebook/type_form.php:30
+msgid "Show secret"
+msgstr ""
+
+#: concrete/authentication/facebook/type_form.php:18
 #, php-format
 msgid "<a href=\"%s\" target=\"_blank\">Click here</a> to obtain your access keys."
 msgstr "<a href=\"%s\" target=\"_blank\">Bấm đây</a> để nhận các khóa truy cập của bạn."
+
+#: concrete/authentication/facebook/type_form.php:27
+msgid "Hide secret"
+msgstr ""
 
 #: concrete/authentication/facebook/controller.php:33
 msgid "Something went wrong, please try again."
@@ -710,7 +744,7 @@ msgstr ""
 #: concrete/elements/panels/page.php:104
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:56
 #: concrete/single_pages/dashboard/pages/types/view.php:46
-#: concrete/src/Package/Package.php:332
+#: concrete/src/Package/Package.php:338
 #: concrete/tools/files/permissions.php:43 concrete/tools/i18n_js.php:137
 #: concrete/tools/i18n_js.php:196
 msgid "Permissions"
@@ -1763,16 +1797,6 @@ msgstr ""
 #: concrete/src/File/Type/Type.php:73 concrete/tools/i18n_redactor_js.php:65
 msgid "Text"
 msgstr "Văn bản"
-
-#: concrete/config/install/base/dashboard.xml:740
-#: concrete/elements/users/confirm_list.php:8
-#: concrete/mail/user_register_approval_required.php:15
-#: concrete/single_pages/account/edit_profile.php:22
-#: concrete/src/User/Search/ColumnSet/DefaultSet.php:30
-#: concrete/themes/greek_yogurt/blog_entry.php:73
-#: concrete/tools/i18n_redactor_js.php:66
-msgid "Email"
-msgstr "Thư điện tử"
 
 #: concrete/blocks/image/form.php:56
 #: concrete/blocks/image_slider/form_setup_html.php:205
@@ -4431,7 +4455,7 @@ msgstr ""
 msgid "Choose a Service"
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/system/basics/multilingual.php:25
+#: concrete/controllers/single_page/dashboard/system/basics/multilingual.php:26
 msgid ""
 "Interface settings saved. Please log out and in again to update all backend "
 "messages."
@@ -6088,12 +6112,12 @@ msgstr "URL Slug"
 msgid "You must specify a URL slug."
 msgstr ""
 
-#: concrete/src/Page/Type/Composer/Control/CorePageProperty/UserCorePageProperty.php:12
+#: concrete/src/Page/Type/Composer/Control/CorePageProperty/UserCorePageProperty.php:13
 msgctxt "PageTypeComposerControlName"
 msgid "User"
 msgstr "Người dùng"
 
-#: concrete/src/Page/Type/Composer/Control/CorePageProperty/UserCorePageProperty.php:30
+#: concrete/src/Page/Type/Composer/Control/CorePageProperty/UserCorePageProperty.php:31
 msgid "You must specify a valid user."
 msgstr ""
 
@@ -6249,118 +6273,118 @@ msgstr "Kiểu: %s"
 msgid "spam"
 msgstr "Thư rác"
 
-#: concrete/src/Package/Package.php:302
+#: concrete/src/Package/Package.php:308
 msgid "Attribute categories"
 msgstr "Các hạng mục thuộc tính"
 
-#: concrete/src/Package/Package.php:305
+#: concrete/src/Package/Package.php:311
 msgid "Permission categories"
 msgstr "Các hạng mục quyền"
 
-#: concrete/src/Package/Package.php:308
+#: concrete/src/Package/Package.php:314
 msgid "Permission access entity types"
 msgstr "Các kiểu thực thể truy cập được phép"
 
-#: concrete/src/Package/Package.php:311
+#: concrete/src/Package/Package.php:317
 msgid "Attribute keys"
 msgstr "Các khóa thuộc tính"
 
-#: concrete/src/Package/Package.php:314
+#: concrete/src/Package/Package.php:320
 msgid "Attribute sets"
 msgstr "Các thiết lập thuộc tính"
 
-#: concrete/src/Package/Package.php:317
+#: concrete/src/Package/Package.php:323
 msgid "Group sets"
 msgstr "Các thiết lập nhóm"
 
-#: concrete/src/Package/Package.php:320
+#: concrete/src/Package/Package.php:326
 msgid "Page types"
 msgstr "Các kiểu trang"
 
-#: concrete/src/Package/Package.php:323
+#: concrete/src/Package/Package.php:329
 msgid "Mail importers"
 msgstr "Trình nhập thư điện tử"
 
-#: concrete/src/Package/Package.php:326
+#: concrete/src/Package/Package.php:332
 msgid "Block types"
 msgstr "Các kiểu khối"
 
-#: concrete/src/Package/Package.php:329
+#: concrete/src/Package/Package.php:335
 msgid "Page themes"
 msgstr "Chủ đề trang"
 
-#: concrete/src/Package/Package.php:335
+#: concrete/src/Package/Package.php:341
 msgid "Single pages"
 msgstr "Các trang đơn"
 
-#: concrete/src/Package/Package.php:338
+#: concrete/src/Package/Package.php:344
 msgid "Attribute types"
 msgstr "Các kiểu thuộc thính"
 
-#: concrete/src/Package/Package.php:341
+#: concrete/src/Package/Package.php:347
 msgid "Captcha libraries"
 msgstr "Thư viện Captcha"
 
-#: concrete/src/Package/Package.php:344
+#: concrete/src/Package/Package.php:350
 msgid "Antispam libraries"
 msgstr "Thư viện chống thư rác"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:39
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:299
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:418
-#: concrete/src/Package/Package.php:347
+#: concrete/src/Package/Package.php:353
 msgid "Jobs"
 msgstr "Các công việc"
 
-#: concrete/src/Package/Package.php:350
+#: concrete/src/Package/Package.php:356
 msgid "Workflow types"
 msgstr "Các kiểu luồng làm việc"
 
-#: concrete/src/Package/Package.php:407
+#: concrete/src/Package/Package.php:413
 #, php-format
 msgid "%s (%s)"
 msgstr "%s (%s)"
 
-#: concrete/src/Package/Package.php:413
+#: concrete/src/Package/Package.php:419
 #, php-format
 msgid " %s (%s)"
 msgstr "%s (%s)"
 
-#: concrete/src/Package/Package.php:619
+#: concrete/src/Package/Package.php:625
 msgid "You've already installed that package."
 msgstr "Bạn đã cài đặt gói phần mềm."
 
-#: concrete/src/Package/Package.php:620
+#: concrete/src/Package/Package.php:626
 msgid "Invalid Package."
 msgstr "Gói phần mềm không hợp lệ."
 
-#: concrete/src/Package/Package.php:621
+#: concrete/src/Package/Package.php:627
 #, php-format
 msgid "This package requires concrete5 version %s or greater."
 msgstr "Gói phần mềm này yêu cấu phiên bản concrete5 %s hay cao hơn."
 
-#: concrete/src/Package/Package.php:622
+#: concrete/src/Package/Package.php:628
 msgid "An error occurred while downloading the package."
 msgstr "Xảy ra một lỗi trong khi tải về gói phần mềm."
 
-#: concrete/src/Package/Package.php:623
+#: concrete/src/Package/Package.php:629
 msgid "concrete5 was not able to save the package after download."
 msgstr "Concrete5 không thể lưu lại các gói phần mềm sau khi tải về."
 
-#: concrete/src/Package/Package.php:624
+#: concrete/src/Package/Package.php:630
 msgid "An error occurred while trying to unzip the package."
 msgstr "Một lỗi xảy ra trong khi cố gắng để giải nén gói phần mềm."
 
-#: concrete/src/Package/Package.php:625
+#: concrete/src/Package/Package.php:631
 msgid "An error occurred while trying to install the package."
 msgstr "Một lỗi xảy ra trong khi cố gắng để cài đặt gói phần mềm."
 
-#: concrete/src/Package/Package.php:626
+#: concrete/src/Package/Package.php:632
 #, php-format
 msgid "Unable to backup old package directory to %s"
 msgstr "Không thể sao lưu thư mục gói phần mềm cũ để %s"
 
-#: concrete/src/Package/Package.php:627
+#: concrete/src/Package/Package.php:633
 msgid ""
 "This package isn't currently available for this version of concrete5. Please"
 " contact the maintainer of this package for assistance."
@@ -6510,16 +6534,16 @@ msgstr "Chọn trang"
 msgid "Clear Color Selection"
 msgstr ""
 
-#: concrete/src/Form/Service/Widget/UserSelector.php:32
-#: concrete/src/Form/Service/Widget/UserSelector.php:88
+#: concrete/src/Form/Service/Widget/UserSelector.php:34
+#: concrete/src/Form/Service/Widget/UserSelector.php:90
 msgid "Choose User"
 msgstr "Lựa chọn người dùng"
 
-#: concrete/src/Form/Service/Widget/UserSelector.php:32
+#: concrete/src/Form/Service/Widget/UserSelector.php:34
 msgid "Select User"
 msgstr "Chọn người dùng"
 
-#: concrete/src/Form/Service/Widget/UserSelector.php:99
+#: concrete/src/Form/Service/Widget/UserSelector.php:101
 msgid "No users selected."
 msgstr "Không người dùng nào được chọn."
 
@@ -7561,7 +7585,7 @@ msgstr "Không thể nhận thông tin về sản phẩm này."
 msgid "%s method does not exist for the %s class"
 msgstr ""
 
-#: concrete/src/Area/Area.php:103
+#: concrete/src/Area/Area.php:96
 msgid ""
 "No grid framework found. Grid area methods require a valid grid framework "
 "defined in a PageTheme class."
@@ -11737,17 +11761,17 @@ msgstr "Danh sách trang"
 msgid "Please give your RSS Feed a name."
 msgstr "Xin vui lòng cho nguồn RSS của bạn một cái tên."
 
-#: concrete/blocks/page_list/controller.php:264
+#: concrete/blocks/page_list/controller.php:266
 msgid ""
 "Your RSS feed must have a valid URL, containing only letters, numbers or "
 "underscores"
 msgstr ""
 
-#: concrete/blocks/page_list/controller.php:267
+#: concrete/blocks/page_list/controller.php:269
 msgid "Your RSS feed must have a valid title."
 msgstr ""
 
-#: concrete/blocks/page_list/controller.php:270
+#: concrete/blocks/page_list/controller.php:272
 msgid "Your RSS feed must have a valid description."
 msgstr ""
 
