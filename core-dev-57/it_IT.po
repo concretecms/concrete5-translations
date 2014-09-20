@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-09-17 10:00+0000\n"
-"PO-Revision-Date: 2014-09-17 10:21+0000\n"
+"POT-Creation-Date: 2014-09-19 10:00+0000\n"
+"PO-Revision-Date: 2014-09-19 12:11+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Italian (Italy) (http://www.transifex.com/projects/p/concrete5/language/it_IT/)\n"
 "MIME-Version: 1.0\n"
@@ -159,7 +159,7 @@ msgid ""
 msgstr "Chiave scaduta. È necessario consultare nuovamente la pagina password dimenticata per generare una nuova chiave."
 
 #: concrete/authentication/concrete/controller.php:177
-#: concrete/controllers/install.php:284
+#: concrete/controllers/install.php:271
 #: concrete/controllers/single_page/account/edit_profile.php:94
 #: concrete/controllers/single_page/dashboard/users/search.php:336
 #: concrete/controllers/single_page/register.php:109
@@ -247,7 +247,7 @@ msgstr "App Secret"
 
 #: concrete/authentication/facebook/type_form.php:12
 #: concrete/authentication/facebook/type_form.php:30
-msgid "Show secret"
+msgid "Show secret key"
 msgstr "Mostra chiave segreta"
 
 #: concrete/authentication/facebook/type_form.php:18
@@ -256,7 +256,7 @@ msgid "<a href=\"%s\" target=\"_blank\">Click here</a> to obtain your access key
 msgstr "<a href=\"%s\" target=\"_blank\">Fare clic qui</a> per ottenere le chiavi di accesso."
 
 #: concrete/authentication/facebook/type_form.php:27
-msgid "Hide secret"
+msgid "Hide secret key"
 msgstr "Nascondi chiave segreta"
 
 #: concrete/authentication/facebook/controller.php:33
@@ -435,7 +435,7 @@ msgstr "Discendente"
 #: concrete/single_pages/dashboard/system/conversations/permissions.php:21
 #: concrete/single_pages/dashboard/system/conversations/points.php:25
 #: concrete/single_pages/dashboard/system/conversations/settings.php:44
-#: concrete/single_pages/dashboard/system/environment/debug.php:24
+#: concrete/single_pages/dashboard/system/environment/debug.php:61
 #: concrete/single_pages/dashboard/system/environment/logging.php:26
 #: concrete/single_pages/dashboard/system/environment/proxy.php:40
 #: concrete/single_pages/dashboard/system/files/filetypes.php:20
@@ -744,7 +744,7 @@ msgstr "La posizione di archiviazione dei file è stata salvata."
 #: concrete/elements/panels/page.php:104
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:56
 #: concrete/single_pages/dashboard/pages/types/view.php:46
-#: concrete/src/Package/Package.php:338
+#: concrete/src/Package/Package.php:339
 #: concrete/tools/files/permissions.php:43 concrete/tools/i18n_js.php:137
 #: concrete/tools/i18n_js.php:196
 msgid "Permissions"
@@ -2269,7 +2269,8 @@ msgstr "Cancella"
 msgid "This request took too long."
 msgstr "La richiesta ha richiesto troppo tempo."
 
-#: concrete/src/Error/Handler/ErrorHandler.php:52
+#: concrete/src/Error/Handler/ErrorHandler.php:39
+#: concrete/src/Error/Handler/ErrorHandler.php:45
 #: concrete/tools/i18n_js.php:62
 msgid "An unexpected error occurred."
 msgstr "Si è verificato un errore imprevisto."
@@ -3114,7 +3115,7 @@ msgstr "Non si ha l’autorizzazione di aggiungere una pagina di questo tipo nel
 #: concrete/elements/files/search.php:70
 #: concrete/views/dialogs/page/add.php:21
 #: concrete/views/dialogs/page/add_block_list.php:54
-#: concrete/views/panels/add.php:322
+#: concrete/views/panels/add.php:329
 msgid "Other"
 msgstr "Altro"
 
@@ -4060,7 +4061,7 @@ msgstr "Configurazione proxy salvata."
 msgid "Logging configuration saved."
 msgstr "Configurazione registri salvata."
 
-#: concrete/controllers/single_page/dashboard/system/environment/debug.php:28
+#: concrete/controllers/single_page/dashboard/system/environment/debug.php:34
 msgid "Debug configuration saved."
 msgstr "Informazioni di debug salvate."
 
@@ -5072,72 +5073,72 @@ msgid ""
 "you may do so from the users area of the dashboard."
 msgstr "Complimenti. L’installazione di concrete5 è conclusa. Al momento sei collegato al sito come <b>%s</b> con la password specificata. È possibile cambiare questa password nell’area utenti del pannello di controllo."
 
-#: concrete/controllers/install.php:112
+#: concrete/controllers/install.php:99
 msgid "Unable to connect to database."
 msgstr "Impossibile connettersi al database."
 
-#: concrete/controllers/install.php:118
+#: concrete/controllers/install.php:105
 #, php-format
 msgid ""
 "There are already %s tables in this database. concrete5 must be installed in"
 " an empty database."
 msgstr "In questo database sono già presenti %s tabelle. concrete5 deve essere installato in un database vuoto."
 
-#: concrete/controllers/install.php:129
+#: concrete/controllers/install.php:116
 msgid "The PDO extension is not loaded."
 msgstr "L¹estensione PDO non è stata caricata."
 
-#: concrete/controllers/install.php:156
+#: concrete/controllers/install.php:143
 msgid "concrete5 is already installed."
 msgstr "concrete5 è già installato."
 
-#: concrete/controllers/install.php:184
+#: concrete/controllers/install.php:171
 msgid ""
 "Your configuration directory config/ does not appear to be writable by the "
 "web server."
 msgstr "Sembra che il server web non abbia accesso in scrittura alla cartella di configurazione config/"
 
-#: concrete/controllers/install.php:188
+#: concrete/controllers/install.php:175
 msgid ""
 "Your files directory files/ does not appear to be writable by the web "
 "server."
 msgstr "Sembra che il server web non abbia accesso in scrittura alla cartella dei file files/"
 
-#: concrete/controllers/install.php:192
+#: concrete/controllers/install.php:179
 msgid ""
 "Your packages directory packages/ does not appear to be writable by the web "
 "server."
 msgstr "Sembra che il server web non abbia accesso in scrittura alla cartella dei pacchetti packages/"
 
-#: concrete/controllers/install.php:270
+#: concrete/controllers/install.php:257
 msgid "Please specify your site's name"
 msgstr "Specificare il nome del sito"
 
-#: concrete/controllers/install.php:271
+#: concrete/controllers/install.php:258
 msgid "Please specify a valid email address"
 msgstr "Specificare un indirizzo email valido"
 
-#: concrete/controllers/install.php:272
+#: concrete/controllers/install.php:259
 msgid "You must specify a valid database name"
 msgstr "Specificare un nome di database valido"
 
-#: concrete/controllers/install.php:273
+#: concrete/controllers/install.php:260
 msgid "You must specify a valid database server"
 msgstr "Specificare un server valido per il database"
 
-#: concrete/controllers/install.php:325
+#: concrete/controllers/install.php:312
 msgid "Unable to open config/app.php for writing."
 msgstr "Impossibile aprire il file config/app.php in scrittura."
 
-#: concrete/controllers/install.php:346
+#: concrete/controllers/install.php:333
 msgid "Unable to open config/site_user.php for writing."
 msgstr "Impossibile aprire il file config/site_user.php in scrittura."
 
-#: concrete/controllers/install.php:368
+#: concrete/controllers/install.php:355
 msgid "You must select a valid sample content starting point."
 msgstr "È necessario selezionare un punto iniziale valido per il contenuto d’esempio."
 
-#: concrete/themes/core/error.php:18
+#: concrete/themes/core/error.php:32
 msgid "&lt; Back to Home"
 msgstr "&lt; Torna alla home"
 
@@ -5898,17 +5899,18 @@ msgctxt "TreeName"
 msgid "Groups Tree"
 msgstr "Albero dei gruppi"
 
-#: concrete/src/Database/Schema/Schema.php:28
+#: concrete/src/Database/Schema/Schema.php:34
 msgid "Invalid schema version found. Expecting 0.3"
 msgstr "La versione trovata dello schema non è corretta. Dovrebbe essere 0.3"
 
-#: concrete/src/Error/Handler/ErrorHandler.php:33
-msgid "Exception Occurred: "
-msgstr "Si è verificato un errore: "
-
-#: concrete/src/Error/Handler/ErrorHandler.php:53
+#: concrete/src/Error/Handler/ErrorHandler.php:46
+#: concrete/src/Error/Handler/JsonErrorHandler.php:21
 msgid "An error occurred while processing this request."
 msgstr "Si è verificato un errore durante l’elaborazione di questa richiesta."
+
+#: concrete/src/Error/Handler/ErrorHandler.php:57
+msgid "Exception Occurred: "
+msgstr "Si è verificato un errore: "
 
 #: concrete/src/Backup/ContentExporter.php:207
 #: concrete/src/Legacy/FileList.php:119
@@ -6284,118 +6286,126 @@ msgstr "Tipo: %s"
 msgid "spam"
 msgstr "spam"
 
-#: concrete/src/Package/Package.php:308
+#: concrete/src/Package/Package.php:225
+#, php-format
+msgid ""
+"Unable to load class for package %s. Please double-check that a valid "
+"controller.php exists and that the package has been updated for concrete5 "
+"5.7"
+msgstr "Non è stato possibile caricare la classe del pacchetto %s. Assicurarsi che il file controller.php esista e sia corretto, e che il pacchetto sia stato aggiornato per concrete5 5.7"
+
+#: concrete/src/Package/Package.php:309
 msgid "Attribute categories"
 msgstr "Categorie di attributi"
 
-#: concrete/src/Package/Package.php:311
+#: concrete/src/Package/Package.php:312
 msgid "Permission categories"
 msgstr "Categorie di autorizzazioni"
 
-#: concrete/src/Package/Package.php:314
+#: concrete/src/Package/Package.php:315
 msgid "Permission access entity types"
 msgstr "Tipi di entità di autorizzazioni di accesso"
 
-#: concrete/src/Package/Package.php:317
+#: concrete/src/Package/Package.php:318
 msgid "Attribute keys"
 msgstr "Chiavi di attributo"
 
-#: concrete/src/Package/Package.php:320
+#: concrete/src/Package/Package.php:321
 msgid "Attribute sets"
 msgstr "Set di attributi"
 
-#: concrete/src/Package/Package.php:323
+#: concrete/src/Package/Package.php:324
 msgid "Group sets"
 msgstr "Set di gruppi"
 
-#: concrete/src/Package/Package.php:326
+#: concrete/src/Package/Package.php:327
 msgid "Page types"
 msgstr "Tipi di pagina"
 
-#: concrete/src/Package/Package.php:329
+#: concrete/src/Package/Package.php:330
 msgid "Mail importers"
 msgstr "Importatori email"
 
-#: concrete/src/Package/Package.php:332
+#: concrete/src/Package/Package.php:333
 msgid "Block types"
 msgstr "Tipi di blocco"
 
-#: concrete/src/Package/Package.php:335
+#: concrete/src/Package/Package.php:336
 msgid "Page themes"
 msgstr "Temi delle pagine"
 
-#: concrete/src/Package/Package.php:341
+#: concrete/src/Package/Package.php:342
 msgid "Single pages"
 msgstr "Pagine singole"
 
-#: concrete/src/Package/Package.php:344
+#: concrete/src/Package/Package.php:345
 msgid "Attribute types"
 msgstr "Tipi di attributo"
 
-#: concrete/src/Package/Package.php:347
+#: concrete/src/Package/Package.php:348
 msgid "Captcha libraries"
 msgstr "Librerie captcha"
 
-#: concrete/src/Package/Package.php:350
+#: concrete/src/Package/Package.php:351
 msgid "Antispam libraries"
 msgstr "Liprerie antispam"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:39
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:299
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:418
-#: concrete/src/Package/Package.php:353
+#: concrete/src/Package/Package.php:354
 msgid "Jobs"
 msgstr "Processi"
 
-#: concrete/src/Package/Package.php:356
+#: concrete/src/Package/Package.php:357
 msgid "Workflow types"
 msgstr "Tipi di flussi di lavoro"
 
-#: concrete/src/Package/Package.php:413
+#: concrete/src/Package/Package.php:414
 #, php-format
 msgid "%s (%s)"
 msgstr "%s (%s)"
 
-#: concrete/src/Package/Package.php:419
+#: concrete/src/Package/Package.php:420
 #, php-format
 msgid " %s (%s)"
 msgstr " %s (%s)"
 
-#: concrete/src/Package/Package.php:625
+#: concrete/src/Package/Package.php:626
 msgid "You've already installed that package."
 msgstr "Questo pacchetto è già installato."
 
-#: concrete/src/Package/Package.php:626
+#: concrete/src/Package/Package.php:627
 msgid "Invalid Package."
 msgstr "Pacchetto non valido"
 
-#: concrete/src/Package/Package.php:627
+#: concrete/src/Package/Package.php:628
 #, php-format
 msgid "This package requires concrete5 version %s or greater."
 msgstr "Questo pacchetto richiede la versione %s o successiva di concrete5."
 
-#: concrete/src/Package/Package.php:628
+#: concrete/src/Package/Package.php:629
 msgid "An error occurred while downloading the package."
 msgstr "Errore durante lo scaricamento del pacchetto."
 
-#: concrete/src/Package/Package.php:629
+#: concrete/src/Package/Package.php:630
 msgid "concrete5 was not able to save the package after download."
 msgstr "concrete5 non è riuscito a salvare il pacchetto scaricato."
 
-#: concrete/src/Package/Package.php:630
+#: concrete/src/Package/Package.php:631
 msgid "An error occurred while trying to unzip the package."
 msgstr "Errore durante la decompressione del pacchetto."
 
-#: concrete/src/Package/Package.php:631
+#: concrete/src/Package/Package.php:632
 msgid "An error occurred while trying to install the package."
 msgstr "Errore durante l’installazione del pacchetto."
 
-#: concrete/src/Package/Package.php:632
+#: concrete/src/Package/Package.php:633
 #, php-format
 msgid "Unable to backup old package directory to %s"
 msgstr "Impossibile effettuare il backup in %s della vecchia cartella del pacchetto"
 
-#: concrete/src/Package/Package.php:633
+#: concrete/src/Package/Package.php:634
 msgid ""
 "This package isn't currently available for this version of concrete5. Please"
 " contact the maintainer of this package for assistance."
@@ -9236,7 +9246,7 @@ msgstr "Modello di pagina"
 #: concrete/views/dialogs/page/add_block_list.php:64
 #: concrete/views/dialogs/page/clipboard.php:22
 #: concrete/views/panels/add.php:91 concrete/views/panels/add.php:191
-#: concrete/views/panels/add.php:296 concrete/views/panels/add.php:335
+#: concrete/views/panels/add.php:300 concrete/views/panels/add.php:342
 #, php-format
 msgid "Add %s"
 msgstr "Aggiungi %s"
@@ -9721,6 +9731,10 @@ msgstr[1] "%d blocchi"
 #: concrete/views/panels/add.php:243
 msgid "An error occured while deleting this item:"
 msgstr "Si è verificato un errore durante l’eliminazione di questo elemento:"
+
+#: concrete/views/panels/add.php:319
+msgid "No block types available."
+msgstr "Non è disponibile alcun tipo di blocco."
 
 #: concrete/views/frontend/user_error.php:2
 msgid "Unexpected User Error"
@@ -13696,12 +13710,36 @@ msgid "Log Emails Sent"
 msgstr "Registra email inviate"
 
 #: concrete/single_pages/dashboard/system/environment/debug.php:10
-msgid "Hide errors from site visitors."
-msgstr "Nascondi errori ai visitatori del sito."
+msgid "Display Errors"
+msgstr "Mostra errori"
 
-#: concrete/single_pages/dashboard/system/environment/debug.php:15
-msgid "Show errors in page."
-msgstr "Mostra errori nella pagina."
+#: concrete/single_pages/dashboard/system/environment/debug.php:17
+msgid "Output error information to site users"
+msgstr "Mostra informazioni sugli errori agli utenti del sito"
+
+#: concrete/single_pages/dashboard/system/environment/debug.php:18
+msgid "Disable to show a generic error message"
+msgstr "Disabilitare per mostrare un messaggio d’errore generico"
+
+#: concrete/single_pages/dashboard/system/environment/debug.php:26
+msgid "Error detail"
+msgstr "Dettagli dell’errore"
+
+#: concrete/single_pages/dashboard/system/environment/debug.php:33
+msgid "Show the error message but nothing else"
+msgstr "Mostra solo il messaggio d’errore"
+
+#: concrete/single_pages/dashboard/system/environment/debug.php:40
+msgid "Show the debug error output"
+msgstr "Mostra le informazioni di debug"
+
+#: concrete/single_pages/dashboard/system/environment/debug.php:44
+msgid "May disclose sensitive information, use only for development."
+msgstr "Può rivelare informazioni sensibili: usare solo in fase di sviluppo."
+
+#: concrete/single_pages/dashboard/system/environment/debug.php:54
+msgid "Example"
+msgstr "Esempio"
 
 #: concrete/config/install/base/dashboard.xml:648
 #: concrete/single_pages/dashboard/system/permissions/site.php:7

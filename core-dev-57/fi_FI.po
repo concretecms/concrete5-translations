@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-09-18 10:00+0000\n"
-"PO-Revision-Date: 2014-09-18 08:01+0000\n"
+"POT-Creation-Date: 2014-09-19 10:00+0000\n"
+"PO-Revision-Date: 2014-09-19 10:40+0000\n"
 "Last-Translator: Heikki Ylipaavalniemi\n"
 "Language-Team: Finnish (Finland) (http://www.transifex.com/projects/p/concrete5/language/fi_FI/)\n"
 "MIME-Version: 1.0\n"
@@ -159,7 +159,7 @@ msgid ""
 msgstr "Avain vanhentunut. Ole hyvä ja vieraile Unohdin salasanai -sivulla luodaksesi uuden avaimen."
 
 #: concrete/authentication/concrete/controller.php:177
-#: concrete/controllers/install.php:284
+#: concrete/controllers/install.php:271
 #: concrete/controllers/single_page/account/edit_profile.php:94
 #: concrete/controllers/single_page/dashboard/users/search.php:336
 #: concrete/controllers/single_page/register.php:109
@@ -247,8 +247,8 @@ msgstr "Sovelluksen salaisuus"
 
 #: concrete/authentication/facebook/type_form.php:12
 #: concrete/authentication/facebook/type_form.php:30
-msgid "Show secret"
-msgstr "Näytä salaisuus"
+msgid "Show secret key"
+msgstr "Näytä salausavain"
 
 #: concrete/authentication/facebook/type_form.php:18
 #, php-format
@@ -256,8 +256,8 @@ msgid "<a href=\"%s\" target=\"_blank\">Click here</a> to obtain your access key
 msgstr "<a href=\"%s\" target=\"_blank\">Napsauta tästä</a> saadaksesi pääsyavaimesi."
 
 #: concrete/authentication/facebook/type_form.php:27
-msgid "Hide secret"
-msgstr "Piilota salaisuus"
+msgid "Hide secret key"
+msgstr "Piilota salausavain"
 
 #: concrete/authentication/facebook/controller.php:33
 msgid "Something went wrong, please try again."
@@ -435,7 +435,7 @@ msgstr "Laskeva"
 #: concrete/single_pages/dashboard/system/conversations/permissions.php:21
 #: concrete/single_pages/dashboard/system/conversations/points.php:25
 #: concrete/single_pages/dashboard/system/conversations/settings.php:44
-#: concrete/single_pages/dashboard/system/environment/debug.php:24
+#: concrete/single_pages/dashboard/system/environment/debug.php:61
 #: concrete/single_pages/dashboard/system/environment/logging.php:26
 #: concrete/single_pages/dashboard/system/environment/proxy.php:40
 #: concrete/single_pages/dashboard/system/files/filetypes.php:20
@@ -744,7 +744,7 @@ msgstr "Tiedostovaraston sijainti tallennettu onnistuneesti."
 #: concrete/elements/panels/page.php:104
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:56
 #: concrete/single_pages/dashboard/pages/types/view.php:46
-#: concrete/src/Package/Package.php:338
+#: concrete/src/Package/Package.php:339
 #: concrete/tools/files/permissions.php:43 concrete/tools/i18n_js.php:137
 #: concrete/tools/i18n_js.php:196
 msgid "Permissions"
@@ -2269,7 +2269,8 @@ msgstr "Tyhjennä"
 msgid "This request took too long."
 msgstr "Pyyntö kesti liian kauan."
 
-#: concrete/src/Error/Handler/ErrorHandler.php:52
+#: concrete/src/Error/Handler/ErrorHandler.php:39
+#: concrete/src/Error/Handler/ErrorHandler.php:45
 #: concrete/tools/i18n_js.php:62
 msgid "An unexpected error occurred."
 msgstr "Tapahtui odottamaton virhe:"
@@ -3114,7 +3115,7 @@ msgstr "Sinulla ei ole oikeutta lisätä tämän tyyppistä sivua valittuun sija
 #: concrete/elements/files/search.php:70
 #: concrete/views/dialogs/page/add.php:21
 #: concrete/views/dialogs/page/add_block_list.php:54
-#: concrete/views/panels/add.php:322
+#: concrete/views/panels/add.php:329
 msgid "Other"
 msgstr "Muu"
 
@@ -4060,7 +4061,7 @@ msgstr "Välityspalvelimen asetukset tallennettu."
 msgid "Logging configuration saved."
 msgstr "Lokiasetukset tallennettu."
 
-#: concrete/controllers/single_page/dashboard/system/environment/debug.php:28
+#: concrete/controllers/single_page/dashboard/system/environment/debug.php:34
 msgid "Debug configuration saved."
 msgstr "Virheenetsinnän asetukset tallennettu."
 
@@ -5070,74 +5071,74 @@ msgid ""
 "Congratulations. concrete5 has been installed. You have been logged in as "
 "<b>%s</b> with the password you chose. If you wish to change this password, "
 "you may do so from the users area of the dashboard."
-msgstr "Onnittelut, Concrete5 on asennettu. Sinut on kirjattu sisälle nimimerkillä <b>%s</b> valitsemallasi salasanalla. Jos haluat vaihtaa salasanasi, voit tehdä sen hallintapaneelin käyttäjien osiossa."
+msgstr "Onnittelut, Concrete5 on asennettu. Sinut on kirjattu sisälle tunnuksella <b>%s</b> ja valitsemallasi salasanalla. Jos haluat vaihtaa salasanasi, voit tehdä sen hallintapaneelin käyttäjien osiossa."
 
-#: concrete/controllers/install.php:112
+#: concrete/controllers/install.php:99
 msgid "Unable to connect to database."
 msgstr "Tietokantaan ei saatu yhteyttä."
 
-#: concrete/controllers/install.php:118
+#: concrete/controllers/install.php:105
 #, php-format
 msgid ""
 "There are already %s tables in this database. concrete5 must be installed in"
 " an empty database."
 msgstr "Tietokannassa on jo %s taulua. concrete5 täytyy asentaa tyhjään tietokantaan."
 
-#: concrete/controllers/install.php:129
+#: concrete/controllers/install.php:116
 msgid "The PDO extension is not loaded."
 msgstr "PDO-laajennusta ei ole ladattu."
 
-#: concrete/controllers/install.php:156
+#: concrete/controllers/install.php:143
 msgid "concrete5 is already installed."
 msgstr "concrete5 on jo asennettuna."
 
-#: concrete/controllers/install.php:184
+#: concrete/controllers/install.php:171
 msgid ""
 "Your configuration directory config/ does not appear to be writable by the "
 "web server."
 msgstr "Konfiguraatiohakemisto config/ ei näytä olevan palvelimen kirjoitettavissa."
 
-#: concrete/controllers/install.php:188
+#: concrete/controllers/install.php:175
 msgid ""
 "Your files directory files/ does not appear to be writable by the web "
 "server."
 msgstr "Tiedostohakemistosi files/ ei näytä olevan palvelimen kirjoitettavissa."
 
-#: concrete/controllers/install.php:192
+#: concrete/controllers/install.php:179
 msgid ""
 "Your packages directory packages/ does not appear to be writable by the web "
 "server."
 msgstr "Pakettihakemistosi packages/ ei näytä olevan palvelimen kirjoitettavissa."
 
-#: concrete/controllers/install.php:270
+#: concrete/controllers/install.php:257
 msgid "Please specify your site's name"
 msgstr "Kirjoita sivustosi nimi"
 
-#: concrete/controllers/install.php:271
+#: concrete/controllers/install.php:258
 msgid "Please specify a valid email address"
 msgstr "Anna toimiva sähköpostiosoite"
 
-#: concrete/controllers/install.php:272
+#: concrete/controllers/install.php:259
 msgid "You must specify a valid database name"
 msgstr "Sinun täytyy antaa toimiva tietokannan nimi"
 
-#: concrete/controllers/install.php:273
+#: concrete/controllers/install.php:260
 msgid "You must specify a valid database server"
 msgstr "Sinun täytyy antaa toimiva tietokantapalvelin"
 
-#: concrete/controllers/install.php:325
+#: concrete/controllers/install.php:312
 msgid "Unable to open config/app.php for writing."
 msgstr "Tiedostoa config/app.php ei voitu avata kirjoittamista varten."
 
-#: concrete/controllers/install.php:346
+#: concrete/controllers/install.php:333
 msgid "Unable to open config/site_user.php for writing."
 msgstr "Tiedostoa config/site_user.php ei voitu avata kirjoittamista varten."
 
-#: concrete/controllers/install.php:368
+#: concrete/controllers/install.php:355
 msgid "You must select a valid sample content starting point."
 msgstr "Sinun täytyy valita hyväksytty esimerkkisisällön lähtökohta."
 
-#: concrete/themes/core/error.php:18
+#: concrete/themes/core/error.php:32
 msgid "&lt; Back to Home"
 msgstr "&lt; Takaisin kotiin"
 
@@ -5640,7 +5641,7 @@ msgstr "Aihe"
 
 #: concrete/src/Mail/Service.php:484
 msgid "Body"
-msgstr "Viesti"
+msgstr "Sisältö"
 
 #: concrete/src/Mail/Service.php:494
 msgid "EMAILS ARE ENABLED. THIS EMAIL WAS SENT TO mail()"
@@ -5898,17 +5899,18 @@ msgctxt "TreeName"
 msgid "Groups Tree"
 msgstr "Ryhmän puu"
 
-#: concrete/src/Database/Schema/Schema.php:28
+#: concrete/src/Database/Schema/Schema.php:34
 msgid "Invalid schema version found. Expecting 0.3"
 msgstr "Virheellinen skeeman versio löydetty. Odotettiin versiota 0.3"
 
-#: concrete/src/Error/Handler/ErrorHandler.php:33
-msgid "Exception Occurred: "
-msgstr "Tapahtui poikkeus:"
-
-#: concrete/src/Error/Handler/ErrorHandler.php:53
+#: concrete/src/Error/Handler/ErrorHandler.php:46
+#: concrete/src/Error/Handler/JsonErrorHandler.php:21
 msgid "An error occurred while processing this request."
 msgstr "Virhe pyynnön käsittelyssä."
+
+#: concrete/src/Error/Handler/ErrorHandler.php:57
+msgid "Exception Occurred: "
+msgstr "Tapahtui poikkeus:"
 
 #: concrete/src/Backup/ContentExporter.php:207
 #: concrete/src/Legacy/FileList.php:119
@@ -6284,118 +6286,126 @@ msgstr "Tyyppi: %s"
 msgid "spam"
 msgstr "roskaposti"
 
-#: concrete/src/Package/Package.php:308
+#: concrete/src/Package/Package.php:225
+#, php-format
+msgid ""
+"Unable to load class for package %s. Please double-check that a valid "
+"controller.php exists and that the package has been updated for concrete5 "
+"5.7"
+msgstr "Luokan lataaminen epäonnistui paketille %s. Tarkista, että toimiva controller.php tiedosto on olemassa ja että paketti on päivitetty concrete5 5.7 versiolle."
+
+#: concrete/src/Package/Package.php:309
 msgid "Attribute categories"
 msgstr "Attribuuttikategoriat"
 
-#: concrete/src/Package/Package.php:311
+#: concrete/src/Package/Package.php:312
 msgid "Permission categories"
 msgstr "Oikeuskategoriat"
 
-#: concrete/src/Package/Package.php:314
+#: concrete/src/Package/Package.php:315
 msgid "Permission access entity types"
 msgstr "Pääsyoikeuksien entiteettityypit"
 
-#: concrete/src/Package/Package.php:317
+#: concrete/src/Package/Package.php:318
 msgid "Attribute keys"
 msgstr "Attribuuttiavaimet"
 
-#: concrete/src/Package/Package.php:320
+#: concrete/src/Package/Package.php:321
 msgid "Attribute sets"
 msgstr "Attribuuttiryhmät"
 
-#: concrete/src/Package/Package.php:323
+#: concrete/src/Package/Package.php:324
 msgid "Group sets"
 msgstr "Ryhmäjoukot"
 
-#: concrete/src/Package/Package.php:326
+#: concrete/src/Package/Package.php:327
 msgid "Page types"
 msgstr "Sivutyypit"
 
-#: concrete/src/Package/Package.php:329
+#: concrete/src/Package/Package.php:330
 msgid "Mail importers"
 msgstr "Sähköpostituojat"
 
-#: concrete/src/Package/Package.php:332
+#: concrete/src/Package/Package.php:333
 msgid "Block types"
 msgstr "Lohkotyypit"
 
-#: concrete/src/Package/Package.php:335
+#: concrete/src/Package/Package.php:336
 msgid "Page themes"
 msgstr "Sivuteemat"
 
-#: concrete/src/Package/Package.php:341
+#: concrete/src/Package/Package.php:342
 msgid "Single pages"
 msgstr "Yksittäiset sivut"
 
-#: concrete/src/Package/Package.php:344
+#: concrete/src/Package/Package.php:345
 msgid "Attribute types"
 msgstr "Attribuuttityypit"
 
-#: concrete/src/Package/Package.php:347
+#: concrete/src/Package/Package.php:348
 msgid "Captcha libraries"
 msgstr "Captcha-kirjastot"
 
-#: concrete/src/Package/Package.php:350
+#: concrete/src/Package/Package.php:351
 msgid "Antispam libraries"
 msgstr "Roskapostikirjastot"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:39
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:299
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:418
-#: concrete/src/Package/Package.php:353
+#: concrete/src/Package/Package.php:354
 msgid "Jobs"
 msgstr "Työt"
 
-#: concrete/src/Package/Package.php:356
+#: concrete/src/Package/Package.php:357
 msgid "Workflow types"
 msgstr "Työnkulkutyypit"
 
-#: concrete/src/Package/Package.php:413
+#: concrete/src/Package/Package.php:414
 #, php-format
 msgid "%s (%s)"
 msgstr "%s (%s)"
 
-#: concrete/src/Package/Package.php:419
+#: concrete/src/Package/Package.php:420
 #, php-format
 msgid " %s (%s)"
 msgstr " %s (%s)"
 
-#: concrete/src/Package/Package.php:625
+#: concrete/src/Package/Package.php:626
 msgid "You've already installed that package."
 msgstr "Olet jo asentanut tuon paketin."
 
-#: concrete/src/Package/Package.php:626
+#: concrete/src/Package/Package.php:627
 msgid "Invalid Package."
 msgstr "Virheellinen paketti."
 
-#: concrete/src/Package/Package.php:627
+#: concrete/src/Package/Package.php:628
 #, php-format
 msgid "This package requires concrete5 version %s or greater."
 msgstr "Tämä paketti vaatii concrete5:n version %s tai suuremman."
 
-#: concrete/src/Package/Package.php:628
+#: concrete/src/Package/Package.php:629
 msgid "An error occurred while downloading the package."
 msgstr "Paketin lataamisessa tapahtui virhe."
 
-#: concrete/src/Package/Package.php:629
+#: concrete/src/Package/Package.php:630
 msgid "concrete5 was not able to save the package after download."
 msgstr "concrete5 ei voinut tallentaa pakettia lataamisen jälkeen."
 
-#: concrete/src/Package/Package.php:630
+#: concrete/src/Package/Package.php:631
 msgid "An error occurred while trying to unzip the package."
 msgstr "Paketin purkamisessa tapahtui virhe."
 
-#: concrete/src/Package/Package.php:631
+#: concrete/src/Package/Package.php:632
 msgid "An error occurred while trying to install the package."
 msgstr "Paketin asennuksessa tapahtui virhe."
 
-#: concrete/src/Package/Package.php:632
+#: concrete/src/Package/Package.php:633
 #, php-format
 msgid "Unable to backup old package directory to %s"
 msgstr "Vanhan paketin varmuuskopiointi epäonnistui hakemistoksi %s"
 
-#: concrete/src/Package/Package.php:633
+#: concrete/src/Package/Package.php:634
 msgid ""
 "This package isn't currently available for this version of concrete5. Please"
 " contact the maintainer of this package for assistance."
@@ -8092,7 +8102,7 @@ msgstr "Ei ajastettuja oikeuksien luovutuksia."
 
 #: concrete/elements/block_area_footer.php:43
 msgid "Edit Area Design"
-msgstr "Muokata alueen ulkoasua"
+msgstr "Muokkaa alueen ulkoasua"
 
 #: concrete/elements/block_area_footer.php:58
 msgid "Area Permissions"
@@ -8104,7 +8114,7 @@ msgstr "Muokkaa ulkorakennetta"
 
 #: concrete/elements/block_area_footer.php:77
 msgid "Save Layout as Preset"
-msgstr "Tallenna rakenne esiasetuksesi"
+msgstr "Tallenna rakenne esiasetukseksi"
 
 #: concrete/elements/block_area_footer.php:78
 msgid "Manage Presets"
@@ -9236,7 +9246,7 @@ msgstr "Sivupohja"
 #: concrete/views/dialogs/page/add_block_list.php:64
 #: concrete/views/dialogs/page/clipboard.php:22
 #: concrete/views/panels/add.php:91 concrete/views/panels/add.php:191
-#: concrete/views/panels/add.php:296 concrete/views/panels/add.php:335
+#: concrete/views/panels/add.php:300 concrete/views/panels/add.php:342
 #, php-format
 msgid "Add %s"
 msgstr "Lisää %s"
@@ -9722,6 +9732,10 @@ msgstr[1] "%d lohkoa"
 msgid "An error occured while deleting this item:"
 msgstr "Kohteen poistamisessa tapahtui virhe:"
 
+#: concrete/views/panels/add.php:319
+msgid "No block types available."
+msgstr "Lohkotyyppejä ei ole saatavilla."
+
 #: concrete/views/frontend/user_error.php:2
 msgid "Unexpected User Error"
 msgstr "Odottamaton käyttäjävirhe"
@@ -9868,7 +9882,7 @@ msgstr "concrete5 veteraanit voivat valita \"Tyhjä sivusto\", mutta muutoin suo
 
 #: concrete/views/frontend/install.php:328
 msgid "Testing Required Items"
-msgstr "Testataan vaaditut kohteet"
+msgstr "Testataan vaadittavat kohteet"
 
 #. %s is the php version
 #: concrete/views/frontend/install.php:339
@@ -9949,7 +9963,7 @@ msgstr "Evästeiden täytyy olla käytössä selaimessasi, jotta voit asentaa co
 
 #: concrete/views/frontend/install.php:409
 msgid "Testing Optional Items"
-msgstr "Testaa vapaaehtoiset kohteet"
+msgstr "Testataan vapaaehtoiset kohteet"
 
 #: concrete/views/frontend/install.php:421
 msgid "Remote File Importing Available"
@@ -10405,11 +10419,11 @@ msgstr "Näyttää kuviasi ja kuvatekstejäsi houkuttelevassa diaesityksessä."
 
 #: concrete/blocks/image_slider/controller.php:28
 msgid "Image Slider"
-msgstr "Kuvaliukuri"
+msgstr "Kuvaesitys"
 
 #: concrete/blocks/image_slider/view.php:6
 msgid "Image Slider disabled in edit mode."
-msgstr "Kuvaliuku pois päältä muokkaustilassa."
+msgstr "Kuvaesitys pois päältä muokkaustilassa."
 
 #: concrete/blocks/image_slider/view.php:53
 msgid "No Slides Entered."
@@ -11541,7 +11555,7 @@ msgstr "Näyttää lainauksen tai kappaleen esittelytekstin vieressä ja henkil�
 
 #: concrete/blocks/testimonial/controller.php:28
 msgid "Testimonial"
-msgstr "Todistus"
+msgstr "Suositus"
 
 #: concrete/blocks/testimonial/view.php:16
 #, php-format
@@ -13696,12 +13710,36 @@ msgid "Log Emails Sent"
 msgstr "Tallenna sähköpostit lokihistoriaan"
 
 #: concrete/single_pages/dashboard/system/environment/debug.php:10
-msgid "Hide errors from site visitors."
-msgstr "Piilota virheet vierailijoilta."
+msgid "Display Errors"
+msgstr "Näytä virheet"
 
-#: concrete/single_pages/dashboard/system/environment/debug.php:15
-msgid "Show errors in page."
-msgstr "Näytä virheet sivulla."
+#: concrete/single_pages/dashboard/system/environment/debug.php:17
+msgid "Output error information to site users"
+msgstr "Näytä virhetiedot sivuston käyttäjille"
+
+#: concrete/single_pages/dashboard/system/environment/debug.php:18
+msgid "Disable to show a generic error message"
+msgstr "Ota pois käytöstä näyttääksesi yleisen virheviestin"
+
+#: concrete/single_pages/dashboard/system/environment/debug.php:26
+msgid "Error detail"
+msgstr "Virheen tiedot"
+
+#: concrete/single_pages/dashboard/system/environment/debug.php:33
+msgid "Show the error message but nothing else"
+msgstr "Näytä virheviesti, mutta ei mitään muuta"
+
+#: concrete/single_pages/dashboard/system/environment/debug.php:40
+msgid "Show the debug error output"
+msgstr "Näytä virheenetsinnän tiedot"
+
+#: concrete/single_pages/dashboard/system/environment/debug.php:44
+msgid "May disclose sensitive information, use only for development."
+msgstr "Voi sisältää arkaluontoisia tietoja, käytä vain kehitykseen."
+
+#: concrete/single_pages/dashboard/system/environment/debug.php:54
+msgid "Example"
+msgstr "Esimerkki"
 
 #: concrete/config/install/base/dashboard.xml:648
 #: concrete/single_pages/dashboard/system/permissions/site.php:7
@@ -15680,7 +15718,7 @@ msgstr "Reunuksen väri"
 #: concrete/themes/elemental/css/styles.xml:37
 msgctxt "StyleSetName"
 msgid "Image Slider"
-msgstr "Kuvaliukuri"
+msgstr "Kuvaesitys"
 
 #: concrete/themes/elemental/css/styles.xml:39
 msgctxt "StyleName"
@@ -18203,12 +18241,12 @@ msgstr "Päivämäärä valmis"
 #: concrete/config/install/packages/elemental_full/content.xml:453
 msgctxt "PageTypeComposerFormLayoutSetName"
 msgid "Image Slider"
-msgstr "Kuvaliukuri"
+msgstr "Kuvaesitys"
 
 #: concrete/config/install/packages/elemental_full/content.xml:456
 msgctxt "PageTypeComposerFormLayoutSetName"
 msgid "Body"
-msgstr "Viesti"
+msgstr "Sisältö"
 
 #: concrete/config/install/packages/elemental_full/content.xml:552
 #: concrete/config/install/packages/elemental_full/content.xml:2103
@@ -18505,7 +18543,7 @@ msgstr "Sivu"
 #: concrete/config/install/packages/elemental_blank/content.xml:23
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Body"
-msgstr "Viesti"
+msgstr "Sisältö"
 
 #: concrete/blocks/page_attribute_display/templates/boolean.php
 msgctxt "TemplateFileName"
