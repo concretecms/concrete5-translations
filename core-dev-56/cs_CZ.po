@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-08-06 10:00+0000\n"
-"PO-Revision-Date: 2014-08-06 11:50+0000\n"
+"POT-Creation-Date: 2014-09-22 10:00+0000\n"
+"PO-Revision-Date: 2014-09-22 10:02+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Czech (Czech Republic) (http://www.transifex.com/projects/p/concrete5/language/cs_CZ/)\n"
 "MIME-Version: 1.0\n"
@@ -3350,7 +3350,7 @@ msgstr "Relevance"
 msgid "The package has been updated successfully."
 msgstr "Balíček byl úspěšně aktualizován."
 
-#: concrete/core/controllers/single_pages/dashboard/extend/install.php:151
+#: concrete/core/controllers/single_pages/dashboard/extend/install.php:155
 #: concrete/core/controllers/single_pages/dashboard/extend/update.php:61
 msgid "Invalid marketplace item ID."
 msgstr "Neplatné ID položky v Tržišti."
@@ -3367,20 +3367,24 @@ msgstr "Neplatný balíček."
 msgid "The package type has been uninstalled."
 msgstr "Balíček byl odinstalován."
 
-#: concrete/core/controllers/single_pages/dashboard/extend/install.php:134
+#: concrete/core/controllers/single_pages/dashboard/extend/install.php:133
+msgid "Install failed - invalid package. Check log for details"
+msgstr ""
+
+#: concrete/core/controllers/single_pages/dashboard/extend/install.php:138
 msgid "You do not have permission to install add-ons."
 msgstr "Nemáte oprávnění k instalaci doplňků."
 
-#: concrete/core/controllers/single_pages/dashboard/extend/install.php:140
+#: concrete/core/controllers/single_pages/dashboard/extend/install.php:144
 msgid "The package has been installed."
 msgstr "Balíček byl nainstalován"
 
-#: concrete/core/controllers/single_pages/dashboard/extend/install.php:164
+#: concrete/core/controllers/single_pages/dashboard/extend/install.php:168
 #, php-format
 msgid "Marketplace item %s downloaded successfully."
 msgstr "Položka Tržiště %s byla úspěšně stažena."
 
-#: concrete/core/controllers/single_pages/dashboard/extend/install.php:167
+#: concrete/core/controllers/single_pages/dashboard/extend/install.php:171
 msgid "You do not have permission to download add-ons."
 msgstr "Nemáte oprávnění ke stažení doplňků."
 
@@ -4550,8 +4554,8 @@ msgstr "Neplatná e-mailová adresa."
 msgid "We have no record of that email address."
 msgstr "Tuto e-mailovou adresu nemáme v databázi."
 
-#: concrete/core/controllers/single_pages/login.php:461
-#: concrete/core/controllers/single_pages/login.php:465
+#: concrete/core/controllers/single_pages/login.php:454
+#: concrete/core/controllers/single_pages/login.php:458
 #: concrete/mail/forgot_password.php:4
 msgid "Forgot Password"
 msgstr "Zapomenuté heslo"
@@ -4895,16 +4899,16 @@ msgstr "Chyba: Rozložení není přiřazena žádná oblast."
 msgid "Unknown User"
 msgstr "Neznámý uživatel"
 
-#: concrete/core/models/page.php:1633
+#: concrete/core/models/page.php:1634
 #, php-format
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "Stránka \"%s\" na adrese \"%s\" byla smazána"
 
-#: concrete/core/models/page.php:1633 concrete/core/models/page.php:1695
+#: concrete/core/models/page.php:1634 concrete/core/models/page.php:1696
 msgid "Page Action"
 msgstr "Akce stránky"
 
-#: concrete/core/models/page.php:1695
+#: concrete/core/models/page.php:1696
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "Stránka \"%s\" na adrese \"%s\" byla přesunuta do koše"
@@ -5623,6 +5627,20 @@ msgstr "Neplatný název proměnné '%s' v argumentech elementu."
 msgid "A database error occurred while processing this request."
 msgstr "Během zpracování požadavku došlo k databázové chybě."
 
+#: concrete/core/libraries/loader.php:333
+#, php-format
+msgid ""
+"Warning - failed to load package with pkgHandle '%1$s'. Could not find "
+"package controller file: '%2$s'"
+msgstr ""
+
+#: concrete/core/libraries/loader.php:347
+#, php-format
+msgid ""
+"Warning - failed to load package in directory '%1$s'. The package controller"
+" does not define the expected class: '%2$s'"
+msgstr ""
+
 #: concrete/core/libraries/content/importer.php:221
 #, php-format
 msgid "Invalid block type handle: %s"
@@ -5791,7 +5809,7 @@ msgstr "Další"
 msgid "Previous"
 msgstr "Předchozí"
 
-#: concrete/core/helpers/file.php:323
+#: concrete/core/helpers/file.php:325
 msgid "An error occured while attempting to determine file permissions."
 msgstr "Nastala chyba při zjišťování oprávnění souboru."
 

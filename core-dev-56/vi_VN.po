@@ -6,9 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-08-24 10:00+0000\n"
-"PO-Revision-Date: 2014-08-25 03:40+0000\n"
-"Last-Translator: Khuong D.T <khuongdt@hotmail.com>\n"
+"POT-Creation-Date: 2014-09-22 10:00+0000\n"
+"PO-Revision-Date: 2014-09-22 10:03+0000\n"
+"Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Vietnamese (Viet Nam) (http://www.transifex.com/projects/p/concrete5/language/vi_VN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -3339,7 +3339,7 @@ msgstr "Liên quan"
 msgid "The package has been updated successfully."
 msgstr "Gói phần mềm được cập nhật thành công."
 
-#: concrete/core/controllers/single_pages/dashboard/extend/install.php:151
+#: concrete/core/controllers/single_pages/dashboard/extend/install.php:155
 #: concrete/core/controllers/single_pages/dashboard/extend/update.php:61
 msgid "Invalid marketplace item ID."
 msgstr "Chỉ mục thị trường không hợp lệ. "
@@ -3356,20 +3356,24 @@ msgstr "Gói cài đặt không hợp lệ"
 msgid "The package type has been uninstalled."
 msgstr "Gói cài đặt đã được gỡ bỏ."
 
-#: concrete/core/controllers/single_pages/dashboard/extend/install.php:134
+#: concrete/core/controllers/single_pages/dashboard/extend/install.php:133
+msgid "Install failed - invalid package. Check log for details"
+msgstr ""
+
+#: concrete/core/controllers/single_pages/dashboard/extend/install.php:138
 msgid "You do not have permission to install add-ons."
 msgstr "Bạn không có quyền cài đặt tiện ích."
 
-#: concrete/core/controllers/single_pages/dashboard/extend/install.php:140
+#: concrete/core/controllers/single_pages/dashboard/extend/install.php:144
 msgid "The package has been installed."
 msgstr "Các gói phần mềm đã được cài đặt."
 
-#: concrete/core/controllers/single_pages/dashboard/extend/install.php:164
+#: concrete/core/controllers/single_pages/dashboard/extend/install.php:168
 #, php-format
 msgid "Marketplace item %s downloaded successfully."
 msgstr "Mục thị trường được tải về thành công %s"
 
-#: concrete/core/controllers/single_pages/dashboard/extend/install.php:167
+#: concrete/core/controllers/single_pages/dashboard/extend/install.php:171
 msgid "You do not have permission to download add-ons."
 msgstr "Bạn không có quyền để tải về tiện ích."
 
@@ -5607,6 +5611,20 @@ msgstr "Tên biến không hợp lệ '%s' trong phần tử args."
 #: concrete/core/libraries/loader.php:265
 msgid "A database error occurred while processing this request."
 msgstr "Một lỗi cơ sở dữ liệu xảy ra trong khi thực hiện yêu cầu này."
+
+#: concrete/core/libraries/loader.php:333
+#, php-format
+msgid ""
+"Warning - failed to load package with pkgHandle '%1$s'. Could not find "
+"package controller file: '%2$s'"
+msgstr ""
+
+#: concrete/core/libraries/loader.php:347
+#, php-format
+msgid ""
+"Warning - failed to load package in directory '%1$s'. The package controller"
+" does not define the expected class: '%2$s'"
+msgstr ""
 
 #: concrete/core/libraries/content/importer.php:221
 #, php-format

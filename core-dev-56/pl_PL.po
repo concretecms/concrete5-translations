@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-08-31 04:00+0000\n"
-"PO-Revision-Date: 2014-08-31 15:22+0000\n"
+"POT-Creation-Date: 2014-09-22 10:00+0000\n"
+"PO-Revision-Date: 2014-09-22 10:02+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Polish (Poland) (http://www.transifex.com/projects/p/concrete5/language/pl_PL/)\n"
 "MIME-Version: 1.0\n"
@@ -3348,7 +3348,7 @@ msgstr "Najbardziej zbliżone"
 msgid "The package has been updated successfully."
 msgstr "Pakiet został zaktualizowany."
 
-#: concrete/core/controllers/single_pages/dashboard/extend/install.php:151
+#: concrete/core/controllers/single_pages/dashboard/extend/install.php:155
 #: concrete/core/controllers/single_pages/dashboard/extend/update.php:61
 msgid "Invalid marketplace item ID."
 msgstr "Błędne ID pozycji w sklepie."
@@ -3365,20 +3365,24 @@ msgstr "Błędny pakiet."
 msgid "The package type has been uninstalled."
 msgstr "Pakiet został odinstalowany."
 
-#: concrete/core/controllers/single_pages/dashboard/extend/install.php:134
+#: concrete/core/controllers/single_pages/dashboard/extend/install.php:133
+msgid "Install failed - invalid package. Check log for details"
+msgstr ""
+
+#: concrete/core/controllers/single_pages/dashboard/extend/install.php:138
 msgid "You do not have permission to install add-ons."
 msgstr "Nie masz uprawnienia do instalowania dodatków."
 
-#: concrete/core/controllers/single_pages/dashboard/extend/install.php:140
+#: concrete/core/controllers/single_pages/dashboard/extend/install.php:144
 msgid "The package has been installed."
 msgstr "Pakiet został zainstalowany."
 
-#: concrete/core/controllers/single_pages/dashboard/extend/install.php:164
+#: concrete/core/controllers/single_pages/dashboard/extend/install.php:168
 #, php-format
 msgid "Marketplace item %s downloaded successfully."
 msgstr "Element ze sklepu %s pobrany z powodzeniem."
 
-#: concrete/core/controllers/single_pages/dashboard/extend/install.php:167
+#: concrete/core/controllers/single_pages/dashboard/extend/install.php:171
 msgid "You do not have permission to download add-ons."
 msgstr "Nie masz uprawnień do pobrania dodatków."
 
@@ -5620,6 +5624,20 @@ msgstr ""
 #: concrete/core/libraries/loader.php:265
 msgid "A database error occurred while processing this request."
 msgstr "Błąd bazy danych podczas przetwarzania tego rządania"
+
+#: concrete/core/libraries/loader.php:333
+#, php-format
+msgid ""
+"Warning - failed to load package with pkgHandle '%1$s'. Could not find "
+"package controller file: '%2$s'"
+msgstr ""
+
+#: concrete/core/libraries/loader.php:347
+#, php-format
+msgid ""
+"Warning - failed to load package in directory '%1$s'. The package controller"
+" does not define the expected class: '%2$s'"
+msgstr ""
 
 #: concrete/core/libraries/content/importer.php:221
 #, php-format

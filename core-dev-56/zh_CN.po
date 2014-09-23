@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-08-06 10:00+0000\n"
-"PO-Revision-Date: 2014-08-06 11:50+0000\n"
+"POT-Creation-Date: 2014-09-22 10:00+0000\n"
+"PO-Revision-Date: 2014-09-22 10:02+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/projects/p/concrete5/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -3344,7 +3344,7 @@ msgstr "相关"
 msgid "The package has been updated successfully."
 msgstr "该软件包已成功更新。"
 
-#: concrete/core/controllers/single_pages/dashboard/extend/install.php:151
+#: concrete/core/controllers/single_pages/dashboard/extend/install.php:155
 #: concrete/core/controllers/single_pages/dashboard/extend/update.php:61
 msgid "Invalid marketplace item ID."
 msgstr "市场项目ID无效。"
@@ -3361,20 +3361,24 @@ msgstr "无效的程序包。"
 msgid "The package type has been uninstalled."
 msgstr "程序包类型已被卸载。"
 
-#: concrete/core/controllers/single_pages/dashboard/extend/install.php:134
+#: concrete/core/controllers/single_pages/dashboard/extend/install.php:133
+msgid "Install failed - invalid package. Check log for details"
+msgstr ""
+
+#: concrete/core/controllers/single_pages/dashboard/extend/install.php:138
 msgid "You do not have permission to install add-ons."
 msgstr "您没有安装加载项的权限。"
 
-#: concrete/core/controllers/single_pages/dashboard/extend/install.php:140
+#: concrete/core/controllers/single_pages/dashboard/extend/install.php:144
 msgid "The package has been installed."
 msgstr "该软件包已安装完毕。"
 
-#: concrete/core/controllers/single_pages/dashboard/extend/install.php:164
+#: concrete/core/controllers/single_pages/dashboard/extend/install.php:168
 #, php-format
 msgid "Marketplace item %s downloaded successfully."
 msgstr "市场项目 %s 下载成功。"
 
-#: concrete/core/controllers/single_pages/dashboard/extend/install.php:167
+#: concrete/core/controllers/single_pages/dashboard/extend/install.php:171
 msgid "You do not have permission to download add-ons."
 msgstr "您没有权限下载加载项。"
 
@@ -4544,8 +4548,8 @@ msgstr "电子邮件地址无效。"
 msgid "We have no record of that email address."
 msgstr "没有此电子邮件地址的记录。"
 
-#: concrete/core/controllers/single_pages/login.php:461
-#: concrete/core/controllers/single_pages/login.php:465
+#: concrete/core/controllers/single_pages/login.php:454
+#: concrete/core/controllers/single_pages/login.php:458
 #: concrete/mail/forgot_password.php:4
 msgid "Forgot Password"
 msgstr "忘记密码"
@@ -4885,16 +4889,16 @@ msgstr "错误：没有分配到布局区域"
 msgid "Unknown User"
 msgstr "未知用户"
 
-#: concrete/core/models/page.php:1633
+#: concrete/core/models/page.php:1634
 #, php-format
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "在%s路径的%s页面已删除"
 
-#: concrete/core/models/page.php:1633 concrete/core/models/page.php:1695
+#: concrete/core/models/page.php:1634 concrete/core/models/page.php:1696
 msgid "Page Action"
 msgstr "页面动作"
 
-#: concrete/core/models/page.php:1695
+#: concrete/core/models/page.php:1696
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "在%s路径的%s页面已放入回收站"
@@ -5613,6 +5617,20 @@ msgstr ""
 msgid "A database error occurred while processing this request."
 msgstr "处理这个请求时数据库发生了错误。"
 
+#: concrete/core/libraries/loader.php:333
+#, php-format
+msgid ""
+"Warning - failed to load package with pkgHandle '%1$s'. Could not find "
+"package controller file: '%2$s'"
+msgstr ""
+
+#: concrete/core/libraries/loader.php:347
+#, php-format
+msgid ""
+"Warning - failed to load package in directory '%1$s'. The package controller"
+" does not define the expected class: '%2$s'"
+msgstr ""
+
 #: concrete/core/libraries/content/importer.php:221
 #, php-format
 msgid "Invalid block type handle: %s"
@@ -5781,7 +5799,7 @@ msgstr "后一页"
 msgid "Previous"
 msgstr "前一页"
 
-#: concrete/core/helpers/file.php:323
+#: concrete/core/helpers/file.php:325
 msgid "An error occured while attempting to determine file permissions."
 msgstr "发生错误，而试图确定文件的权限。"
 

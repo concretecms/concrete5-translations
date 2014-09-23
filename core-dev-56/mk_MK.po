@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-08-06 10:00+0000\n"
-"PO-Revision-Date: 2014-08-06 11:51+0000\n"
+"POT-Creation-Date: 2014-09-22 10:00+0000\n"
+"PO-Revision-Date: 2014-09-22 10:02+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Macedonian (Macedonia) (http://www.transifex.com/projects/p/concrete5/language/mk_MK/)\n"
 "MIME-Version: 1.0\n"
@@ -3342,7 +3342,7 @@ msgstr "Релевантност"
 msgid "The package has been updated successfully."
 msgstr "Пакетот е успешно ажуриран."
 
-#: concrete/core/controllers/single_pages/dashboard/extend/install.php:151
+#: concrete/core/controllers/single_pages/dashboard/extend/install.php:155
 #: concrete/core/controllers/single_pages/dashboard/extend/update.php:61
 msgid "Invalid marketplace item ID."
 msgstr "Невалиден пазарски ИД на ставка."
@@ -3359,20 +3359,24 @@ msgstr "Невалиден пакет."
 msgid "The package type has been uninstalled."
 msgstr "Типот на пакетот је деинсталиран."
 
-#: concrete/core/controllers/single_pages/dashboard/extend/install.php:134
+#: concrete/core/controllers/single_pages/dashboard/extend/install.php:133
+msgid "Install failed - invalid package. Check log for details"
+msgstr ""
+
+#: concrete/core/controllers/single_pages/dashboard/extend/install.php:138
 msgid "You do not have permission to install add-ons."
 msgstr "Немате дозвола да инсталирате Add-ons."
 
-#: concrete/core/controllers/single_pages/dashboard/extend/install.php:140
+#: concrete/core/controllers/single_pages/dashboard/extend/install.php:144
 msgid "The package has been installed."
 msgstr "Пакетот е инсталиран."
 
-#: concrete/core/controllers/single_pages/dashboard/extend/install.php:164
+#: concrete/core/controllers/single_pages/dashboard/extend/install.php:168
 #, php-format
 msgid "Marketplace item %s downloaded successfully."
 msgstr "Пазарска ставка %s е успешно пребсемено."
 
-#: concrete/core/controllers/single_pages/dashboard/extend/install.php:167
+#: concrete/core/controllers/single_pages/dashboard/extend/install.php:171
 msgid "You do not have permission to download add-ons."
 msgstr "Немате дозвола да превземате add-ons."
 
@@ -4542,8 +4546,8 @@ msgstr "Погрешна емаил адреса."
 msgid "We have no record of that email address."
 msgstr "Нема зачувани записи за таа емаил адреса."
 
-#: concrete/core/controllers/single_pages/login.php:461
-#: concrete/core/controllers/single_pages/login.php:465
+#: concrete/core/controllers/single_pages/login.php:454
+#: concrete/core/controllers/single_pages/login.php:458
 #: concrete/mail/forgot_password.php:4
 msgid "Forgot Password"
 msgstr "Заборавена лозинка"
@@ -4885,16 +4889,16 @@ msgstr ""
 msgid "Unknown User"
 msgstr "Непознат корисник"
 
-#: concrete/core/models/page.php:1633
+#: concrete/core/models/page.php:1634
 #, php-format
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "Страницата \"%s\" на патеката \"%s\" е избришана"
 
-#: concrete/core/models/page.php:1633 concrete/core/models/page.php:1695
+#: concrete/core/models/page.php:1634 concrete/core/models/page.php:1696
 msgid "Page Action"
 msgstr "Акција на страницата"
 
-#: concrete/core/models/page.php:1695
+#: concrete/core/models/page.php:1696
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "Страницата \"%s\"на патеката \"%s\" е префрлена во корпата за отпадоци"
@@ -5613,6 +5617,20 @@ msgstr ""
 msgid "A database error occurred while processing this request."
 msgstr "Настана некоја грешка во базата на податоци додека се процесирање барањето."
 
+#: concrete/core/libraries/loader.php:333
+#, php-format
+msgid ""
+"Warning - failed to load package with pkgHandle '%1$s'. Could not find "
+"package controller file: '%2$s'"
+msgstr ""
+
+#: concrete/core/libraries/loader.php:347
+#, php-format
+msgid ""
+"Warning - failed to load package in directory '%1$s'. The package controller"
+" does not define the expected class: '%2$s'"
+msgstr ""
+
 #: concrete/core/libraries/content/importer.php:221
 #, php-format
 msgid "Invalid block type handle: %s"
@@ -5781,7 +5799,7 @@ msgstr "Следно"
 msgid "Previous"
 msgstr "Претходно"
 
-#: concrete/core/helpers/file.php:323
+#: concrete/core/helpers/file.php:325
 msgid "An error occured while attempting to determine file permissions."
 msgstr "Настана грешка при обидот да се утврдат дозволите за пристап до фајлот."
 

@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-09-21 10:00+0000\n"
-"PO-Revision-Date: 2014-09-21 10:30+0000\n"
+"POT-Creation-Date: 2014-09-22 10:00+0000\n"
+"PO-Revision-Date: 2014-09-22 10:02+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Bulgarian (Bulgaria) (http://www.transifex.com/projects/p/concrete5/language/bg_BG/)\n"
 "MIME-Version: 1.0\n"
@@ -3342,7 +3342,7 @@ msgstr "Съотвествие"
 msgid "The package has been updated successfully."
 msgstr "Пакетът бе успешно обновен."
 
-#: concrete/core/controllers/single_pages/dashboard/extend/install.php:151
+#: concrete/core/controllers/single_pages/dashboard/extend/install.php:155
 #: concrete/core/controllers/single_pages/dashboard/extend/update.php:61
 msgid "Invalid marketplace item ID."
 msgstr "Невалиден № обект в магазина."
@@ -3359,20 +3359,24 @@ msgstr "Невалиден пакет."
 msgid "The package type has been uninstalled."
 msgstr "Типът пакети бе деинсталиран."
 
-#: concrete/core/controllers/single_pages/dashboard/extend/install.php:134
+#: concrete/core/controllers/single_pages/dashboard/extend/install.php:133
+msgid "Install failed - invalid package. Check log for details"
+msgstr ""
+
+#: concrete/core/controllers/single_pages/dashboard/extend/install.php:138
 msgid "You do not have permission to install add-ons."
 msgstr "Нямате право да инсталирате добавки."
 
-#: concrete/core/controllers/single_pages/dashboard/extend/install.php:140
+#: concrete/core/controllers/single_pages/dashboard/extend/install.php:144
 msgid "The package has been installed."
 msgstr "Пакетът бе инсталиран."
 
-#: concrete/core/controllers/single_pages/dashboard/extend/install.php:164
+#: concrete/core/controllers/single_pages/dashboard/extend/install.php:168
 #, php-format
 msgid "Marketplace item %s downloaded successfully."
 msgstr "Обект %s бе изтеглен успешно от магазина."
 
-#: concrete/core/controllers/single_pages/dashboard/extend/install.php:167
+#: concrete/core/controllers/single_pages/dashboard/extend/install.php:171
 msgid "You do not have permission to download add-ons."
 msgstr "Нямате право да сваляте добавки."
 
@@ -5612,6 +5616,20 @@ msgstr "Невалидно име на променлива '%s'  в елеме�
 #: concrete/core/libraries/loader.php:265
 msgid "A database error occurred while processing this request."
 msgstr "Възникна грешка в базата данни при обработка на тази заявка."
+
+#: concrete/core/libraries/loader.php:333
+#, php-format
+msgid ""
+"Warning - failed to load package with pkgHandle '%1$s'. Could not find "
+"package controller file: '%2$s'"
+msgstr ""
+
+#: concrete/core/libraries/loader.php:347
+#, php-format
+msgid ""
+"Warning - failed to load package in directory '%1$s'. The package controller"
+" does not define the expected class: '%2$s'"
+msgstr ""
 
 #: concrete/core/libraries/content/importer.php:221
 #, php-format
