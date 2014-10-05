@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-10-02 10:00+0000\n"
-"PO-Revision-Date: 2014-10-02 10:05+0000\n"
+"POT-Creation-Date: 2014-10-04 10:00+0000\n"
+"PO-Revision-Date: 2014-10-04 10:01+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: German (Germany) (http://www.transifex.com/projects/p/concrete5/language/de_DE/)\n"
 "MIME-Version: 1.0\n"
@@ -127,7 +127,7 @@ msgstr "Für zwei Wochen angemeldet bleiben"
 #: concrete/authentication/concrete/form.php:33
 #: concrete/single_pages/dashboard/users/add.php:48
 #: concrete/single_pages/dashboard/users/search.php:103
-#: concrete/views/frontend/install.php:542
+#: concrete/views/frontend/install.php:547
 msgid "Language"
 msgstr "Sprache"
 
@@ -162,7 +162,7 @@ msgid ""
 msgstr "Schlüssel abgelaufen. Bitte besuchen Sie die \"Passwort vergessen\"-Seite um einen neuen Schlüssel anzufordern."
 
 #: concrete/authentication/concrete/controller.php:177
-#: concrete/controllers/install.php:307
+#: concrete/controllers/install.php:317
 #: concrete/controllers/single_page/account/edit_profile.php:94
 #: concrete/controllers/single_page/dashboard/users/search.php:336
 #: concrete/controllers/single_page/register.php:109
@@ -659,7 +659,7 @@ msgstr "Dateien von incoming-Verzeichnis löschen"
 #: concrete/single_pages/dashboard/users/search.php:177
 #: concrete/single_pages/dashboard/workflow/workflows.php:16
 #: concrete/single_pages/dashboard/workflow/workflows.php:69
-#: concrete/src/Form/Service/Widget/Color.php:34
+#: concrete/src/Form/Service/Widget/Color.php:32
 #: concrete/src/StyleCustomizer/Style/ColorStyle.php:41
 #: concrete/src/Workflow/Progress/Action/CancelAction.php:7
 #: concrete/tools/conversations/edit_message.php:37
@@ -1827,7 +1827,7 @@ msgstr "Datei einfügen"
 
 #: concrete/elements/users/search.php:49
 #: concrete/single_pages/dashboard/system/basics/icons.php:77
-#: concrete/src/Form/Service/Widget/Color.php:35
+#: concrete/src/Form/Service/Widget/Color.php:33
 #: concrete/src/StyleCustomizer/Style/ColorStyle.php:42
 #: concrete/tools/i18n_js.php:188 concrete/tools/i18n_redactor_js.php:72
 msgid "Choose"
@@ -3628,7 +3628,6 @@ msgid "You must give the workflow a name."
 msgstr "Bitte geben Sie dem Arbeitsablauf einen Namen."
 
 #: concrete/controllers/single_page/dashboard/workflow/workflows.php:45
-#: concrete/controllers/single_page/dashboard/workflow/workflows.php:86
 msgid "Workflow Names must only include alphanumerics and spaces."
 msgstr "Namen von Arbeitsabläufen dürfen nur Buchstaben, Zahlen und Leerzeichen enthalten."
 
@@ -3636,19 +3635,23 @@ msgstr "Namen von Arbeitsabläufen dürfen nur Buchstaben, Zahlen und Leerzeiche
 msgid "Workflow deleted successfully."
 msgstr "Der Arbeitsablauf wurde gelöscht."
 
-#: concrete/controllers/single_page/dashboard/workflow/workflows.php:91
+#: concrete/controllers/single_page/dashboard/workflow/workflows.php:85
+msgid "Invalid characters in workflow name."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/workflow/workflows.php:90
 msgid "Workflow with that name already exists."
 msgstr "Ein Arbeitsablauf diesen Namens ist bereits vorhanden."
 
-#: concrete/controllers/single_page/dashboard/workflow/workflows.php:96
+#: concrete/controllers/single_page/dashboard/workflow/workflows.php:95
 msgid "Invalid Workflow Type."
 msgstr "Ungültiger Arbeitsablauf-Typ"
 
-#: concrete/controllers/single_page/dashboard/workflow/workflows.php:123
+#: concrete/controllers/single_page/dashboard/workflow/workflows.php:122
 msgid "Workflow created successfully. You may now modify its properties."
 msgstr "Der Arbeitsablauf wurde angelegt. Die Eigenschaften können nun bearbeitet werden."
 
-#: concrete/controllers/single_page/dashboard/workflow/workflows.php:126
+#: concrete/controllers/single_page/dashboard/workflow/workflows.php:125
 msgid "Workflow updated."
 msgstr "Arbeitsablauf aktualisiert"
 
@@ -3676,34 +3679,37 @@ msgstr "Eine öffentlich angezeigte Beschreibung für dieses Abzeichen muss ange
 msgid "You do not have permission to add a group beneath %s"
 msgstr "Sie haben nicht die Berechtigung, Gruppen unterhalb von %s hinzuzufügen."
 
-#: concrete/controllers/single_page/dashboard/users/group_sets.php:23
-#: concrete/controllers/single_page/dashboard/users/group_sets.php:67
+#: concrete/controllers/single_page/dashboard/users/group_sets.php:24
+#: concrete/controllers/single_page/dashboard/users/group_sets.php:66
 msgid "Specify a name for your group set."
 msgstr "Bitte geben Sie einen Namen für das Gruppenalbum an."
 
-#: concrete/controllers/single_page/dashboard/users/group_sets.php:27
-#: concrete/controllers/single_page/dashboard/users/group_sets.php:73
-msgid "Set Names must only include alphanumerics and spaces."
-msgstr "Namen von Alben dürfen nur Buchstaben, Zahlen und Leerzeichen enthalten."
+#: concrete/controllers/single_page/dashboard/users/group_sets.php:26
+msgid "Invalid characters in group set name."
+msgstr ""
 
-#: concrete/controllers/single_page/dashboard/users/group_sets.php:48
+#: concrete/controllers/single_page/dashboard/users/group_sets.php:47
 msgid "Group set added successfully."
 msgstr "Das Gruppenalbum wurde hinzugefügt."
 
 #: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:182
-#: concrete/controllers/single_page/dashboard/users/group_sets.php:52
+#: concrete/controllers/single_page/dashboard/users/group_sets.php:51
 msgid "Group set deleted successfully."
 msgstr "Das Gruppenalbum wurde gelöscht."
 
-#: concrete/controllers/single_page/dashboard/users/group_sets.php:56
+#: concrete/controllers/single_page/dashboard/users/group_sets.php:55
 msgid "Group set updated successfully."
 msgstr "Das Gruppenalbum wurde aktualisiert."
 
-#: concrete/controllers/single_page/dashboard/users/group_sets.php:64
-#: concrete/controllers/single_page/dashboard/users/group_sets.php:89
-#: concrete/controllers/single_page/dashboard/users/group_sets.php:116
+#: concrete/controllers/single_page/dashboard/users/group_sets.php:63
+#: concrete/controllers/single_page/dashboard/users/group_sets.php:88
+#: concrete/controllers/single_page/dashboard/users/group_sets.php:115
 msgid "Invalid group set."
 msgstr "Ungültiges Gruppenalbum"
+
+#: concrete/controllers/single_page/dashboard/users/group_sets.php:72
+msgid "Set Names must only include alphanumerics and spaces."
+msgstr "Namen von Alben dürfen nur Buchstaben, Zahlen und Leerzeichen enthalten."
 
 #: concrete/controllers/single_page/dashboard/users/groups/bulkupdate.php:40
 msgid "Invalid target parent group."
@@ -5078,7 +5084,7 @@ msgstr "Sie können nichts im Bereich %s verschieben."
 msgid "You may not add %s to area %s."
 msgstr "Sie können %s nicht zum Bereich %s hinzufügen."
 
-#: concrete/controllers/install.php:73
+#: concrete/controllers/install.php:80
 #, php-format
 msgid ""
 "Congratulations. concrete5 has been installed. You have been logged in as "
@@ -5086,74 +5092,74 @@ msgid ""
 "you may do so from the users area of the dashboard."
 msgstr "concrete5 wurde erfolgreich installiert. Sie sind als <b>%s</b> mit dem gewählten Passwort angemeldet.<br/><br/>Wenn Sie das Passwort ändern möchten, können Sie dies in der Verwaltung unter Benutzer tun."
 
-#: concrete/controllers/install.php:99
+#: concrete/controllers/install.php:106
 msgid "Unable to connect to database."
 msgstr "Verbindung zur Datenbank konnte nicht hergestellt werden."
 
-#: concrete/controllers/install.php:105
+#: concrete/controllers/install.php:112
 #, php-format
 msgid ""
 "There are already %s tables in this database. concrete5 must be installed in"
 " an empty database."
 msgstr "In der Datenbank sind bereits %s Tabellen vorhanden. concrete5 muss in eine leere Datenbank installiert werden."
 
-#: concrete/controllers/install.php:116
+#: concrete/controllers/install.php:123
 msgid "The PDO extension is not loaded."
 msgstr "PHP PDO Erweiterung nicht geladen."
 
-#: concrete/controllers/install.php:143
+#: concrete/controllers/install.php:150
 msgid "concrete5 is already installed."
 msgstr "concrete5 ist bereits installiert."
 
-#: concrete/controllers/install.php:206
+#: concrete/controllers/install.php:216
 msgid ""
 "Your configuration directory config/ does not appear to be writable by the "
 "web server."
 msgstr "In das Konfigurationsverzeichnis \"config/\" kann nicht geschrieben werden."
 
-#: concrete/controllers/install.php:210
+#: concrete/controllers/install.php:220
 msgid ""
 "Your files directory files/ does not appear to be writable by the web "
 "server."
 msgstr "In das Verzeichnis \"files/\" kann nicht geschrieben werden."
 
-#: concrete/controllers/install.php:214
+#: concrete/controllers/install.php:224
 msgid ""
 "Your packages directory packages/ does not appear to be writable by the web "
 "server."
 msgstr "Der Webserver kann anscheinend nicht in Ihr Paketverzeichnis packages/ schreiben."
 
-#: concrete/controllers/install.php:265
+#: concrete/controllers/install.php:275
 #, php-format
 msgctxt "InstallError"
 msgid "%s.<br><br>Trace:<br>%s"
 msgstr ""
 
-#: concrete/controllers/install.php:293
+#: concrete/controllers/install.php:303
 msgid "Please specify your site's name"
 msgstr "Bitte den Namen der Website angeben."
 
-#: concrete/controllers/install.php:294
+#: concrete/controllers/install.php:304
 msgid "Please specify a valid email address"
 msgstr "Bitte geben Sie eine gültige E-Mail-Adresse ein."
 
-#: concrete/controllers/install.php:295
+#: concrete/controllers/install.php:305
 msgid "You must specify a valid database name"
 msgstr "Sie müssen einen gültigen Datenbanknamen angeben."
 
-#: concrete/controllers/install.php:296
+#: concrete/controllers/install.php:306
 msgid "You must specify a valid database server"
 msgstr "Sie müssen einen gültigen Datenbankserver angeben."
 
-#: concrete/controllers/install.php:348
+#: concrete/controllers/install.php:358
 msgid "Unable to open config/app.php for writing."
 msgstr "config/app.php konnte nicht gespeichert werden."
 
-#: concrete/controllers/install.php:369
+#: concrete/controllers/install.php:379
 msgid "Unable to open config/site_user.php for writing."
 msgstr "Die Datei \"config/site_user.php\" konnte nicht zum Schreiben geöffnet werden."
 
-#: concrete/controllers/install.php:391
+#: concrete/controllers/install.php:401
 msgid "You must select a valid sample content starting point."
 msgstr "Es muss ein gültiger Beispielinhalt ausgewählt werden."
 
@@ -5995,7 +6001,7 @@ msgstr "Der Berechtigungsschlüssel für %s konnte nicht abgerufen werden."
 msgid "Unable to get category for permission %s"
 msgstr "Kategorie für Berechtigungen %s konnte nicht gefunden werden"
 
-#: concrete/src/Permission/IPService.php:80
+#: concrete/src/Permission/IPService.php:92
 msgid ""
 "Unable to complete action: your IP address has been banned. Please contact "
 "the administrator of this site for more information."
@@ -6570,7 +6576,7 @@ msgid "Select Page"
 msgstr "Seite auswählen"
 
 #: concrete/single_pages/dashboard/system/basics/icons.php:78
-#: concrete/src/Form/Service/Widget/Color.php:37
+#: concrete/src/Form/Service/Widget/Color.php:35
 #: concrete/src/StyleCustomizer/Style/ColorStyle.php:43
 msgid "Clear Color Selection"
 msgstr "Farbauswahl löschen"
@@ -8391,19 +8397,19 @@ msgstr "Stile zurücksetzen"
 msgid "Workflow Basics"
 msgstr "Grundeinstellungen Arbeitsablauf"
 
-#: concrete/elements/workflow/type_form_required.php:18
+#: concrete/elements/workflow/type_form_required.php:17
 msgid "Are you sure you want to remove this workflow?"
 msgstr "Soll dieser Arbeitsablauf wirklich gelöscht werden?"
 
-#: concrete/elements/workflow/type_form_required.php:28
+#: concrete/elements/workflow/type_form_required.php:27
 msgid "Delete Workflow"
 msgstr "Arbeitsablauf löschen"
 
-#: concrete/elements/workflow/type_form_required.php:34
+#: concrete/elements/workflow/type_form_required.php:33
 msgid "Edit Details"
 msgstr "Details bearbeiten"
 
-#: concrete/elements/workflow/type_form_required.php:51
+#: concrete/elements/workflow/type_form_required.php:50
 #: concrete/single_pages/dashboard/users/points/actions.php:65
 #: concrete/single_pages/dashboard/users/points/assign.php:45
 msgid "Back to List"
@@ -9589,7 +9595,7 @@ msgstr "Neue übergeordnete Seite wählen"
 #: concrete/views/frontend/install.php:75
 #: concrete/views/frontend/install.php:133
 #: concrete/views/frontend/install.php:325
-#: concrete/views/frontend/install.php:529
+#: concrete/views/frontend/install.php:534
 #: concrete/views/panels/details/page/versions.php:6
 #, php-format
 msgid "Version %s"
@@ -9860,7 +9866,7 @@ msgstr "Bitte füllen Sie das Formular aus, um concrete5 zu installieren."
 #: concrete/views/frontend/install.php:132
 #: concrete/views/frontend/install.php:258
 #: concrete/views/frontend/install.php:324
-#: concrete/views/frontend/install.php:528
+#: concrete/views/frontend/install.php:533
 msgid "Install concrete5"
 msgstr "concrete5 installieren"
 
@@ -10022,77 +10028,88 @@ msgstr "Unterstützung für Internationalisierung"
 msgid "You must enable ctype support in your copy of PHP."
 msgstr "ctype-Unterstützung muss in der PHP-Kopie aktiviert sein."
 
-#: concrete/views/frontend/install.php:418
+#: concrete/views/frontend/install.php:411
+msgid "PHP Comments Preserved"
+msgstr ""
+
+#: concrete/views/frontend/install.php:412
+msgid ""
+"concrete5 is not compatible with opcode caches that strip PHP comments. "
+"Certain configurations of eAccelerator and Zend opcode caching may use this "
+"behavior, and it must be disabled."
+msgstr ""
+
+#: concrete/views/frontend/install.php:423
 msgid "Testing Optional Items"
 msgstr "Optionale Funktionen"
 
-#: concrete/views/frontend/install.php:430
+#: concrete/views/frontend/install.php:435
 msgid "Remote File Importing Available"
 msgstr "Dateiimport vom Webserver verfügbar"
 
-#: concrete/views/frontend/install.php:432
+#: concrete/views/frontend/install.php:437
 msgid ""
 "Remote file importing through the file manager requires the iconv PHP "
 "extension."
 msgstr "Importieren von Dateien auf dem Server über die Dateiverwaltung setzt die PHP-Erweiterung iconv voraus."
 
-#: concrete/views/frontend/install.php:444
+#: concrete/views/frontend/install.php:449
 msgid "Zip Support"
 msgstr "ZIP-Unterstützung"
 
-#: concrete/views/frontend/install.php:446
+#: concrete/views/frontend/install.php:451
 msgid ""
 "Downloading zipped files from the file manager and remote updating requires "
 "the Zip extension."
 msgstr "Für das Herunterladen von ZIP-Dateien wird die ZIP-Erweiterung benötigt."
 
-#: concrete/views/frontend/install.php:457
+#: concrete/views/frontend/install.php:462
 msgid "Memory Requirements"
 msgstr "Speicherbedarf"
 
-#: concrete/views/frontend/install.php:479
+#: concrete/views/frontend/install.php:484
 #, php-format
 msgid ""
 "concrete5 will not install with less than 24MB of RAM.\n"
 "                            Your memory limit is currently %sMB. Please increase your memory_limit using ini_set."
 msgstr "concrete5 wird nicht installiert, wenn weniger als 24MB RAM zur Verfügung stehen.\nMomentan stehen nur %sMB zur Verfügung. Bitte das memory_limit mithilfe von ini_set erhöhen."
 
-#: concrete/views/frontend/install.php:484
+#: concrete/views/frontend/install.php:489
 #, php-format
 msgid ""
 "concrete5 runs best with at least 64MB of RAM.\n"
 "                            Your memory limit is currently %sMB. You may experience problems uploading and resizing large images, and may have to install concrete5 without sample content."
 msgstr "concrete5 benötigt mindestens 64MB RAM für den reibungslosen Betrieb.\nMomentan stehen %sMB zur Verfügung. Dies kann beim Hochladen und Skalieren großer Bilder zu Problemen führen. Eventuell können auch keine Beispielinhalte installiert werden."
 
-#: concrete/views/frontend/install.php:488
+#: concrete/views/frontend/install.php:493
 #, php-format
 msgid ""
 "concrete5 runs best with at least 64MB of RAM.\n"
 "                            Your memory limit is currently %sMB."
 msgstr "concrete5 benötigt mindestens 64MB RAM für den reibungslosen Betrieb.\nMomentan stehen %sMB zur Verfügung."
 
-#: concrete/views/frontend/install.php:505
+#: concrete/views/frontend/install.php:510
 msgid "Continue to Installation"
 msgstr "Installation fortsetzen"
 
-#: concrete/views/frontend/install.php:510
+#: concrete/views/frontend/install.php:515
 msgid ""
 "There are problems with your installation environment. Please correct them "
 "and click the button below to re-run the pre-installation tests."
 msgstr "Es gibt Probleme mit der Installationsumgebung. Bitte beheben Sie diese. Klicken Sie danach auf die Schaltfläche unten, um den Test erneut auszuführen."
 
-#: concrete/views/frontend/install.php:513
+#: concrete/views/frontend/install.php:518
 msgid "Run Tests"
 msgstr "Tests erneut ausführen"
 
-#: concrete/views/frontend/install.php:518
+#: concrete/views/frontend/install.php:523
 #, php-format
 msgid ""
 "Having trouble? Check the <a href=\"%s\">installation help forums</a>, or <a"
 " href=\"%s\">have us host a copy</a> for you."
 msgstr "Probleme? Besuchen Sie <a href=\"%s\">das Hilfeforum für Installationsfragen</a>, oder <a href=\"%s\">lassen Sie uns concrete5 für Sie betreiben</a>."
 
-#: concrete/views/frontend/install.php:548
+#: concrete/views/frontend/install.php:553
 msgid "Choose Language"
 msgstr "Sprache wählen"
 

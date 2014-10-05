@@ -11,9 +11,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-10-02 10:00+0000\n"
-"PO-Revision-Date: 2014-10-02 23:10+0000\n"
-"Last-Translator: Takuro Hishikawa <hishikawa@concrete5.co.jp>\n"
+"POT-Creation-Date: 2014-10-04 10:00+0000\n"
+"PO-Revision-Date: 2014-10-04 10:01+0000\n"
+"Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/projects/p/concrete5/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -130,7 +130,7 @@ msgstr "2週間ログインしたままにする"
 #: concrete/authentication/concrete/form.php:33
 #: concrete/single_pages/dashboard/users/add.php:48
 #: concrete/single_pages/dashboard/users/search.php:103
-#: concrete/views/frontend/install.php:542
+#: concrete/views/frontend/install.php:547
 msgid "Language"
 msgstr "言語"
 
@@ -165,7 +165,7 @@ msgid ""
 msgstr "認証キーの期限が切れています。もう一度パスワードリセットのページに行き、リセット作業を行ってください。"
 
 #: concrete/authentication/concrete/controller.php:177
-#: concrete/controllers/install.php:307
+#: concrete/controllers/install.php:317
 #: concrete/controllers/single_page/account/edit_profile.php:94
 #: concrete/controllers/single_page/dashboard/users/search.php:336
 #: concrete/controllers/single_page/register.php:109
@@ -227,7 +227,7 @@ msgstr "年齢"
 
 #: concrete/authentication/facebook/hook.php:42
 msgid "Successfully detached account."
-msgstr "アカウント紐付けを解除しました。"
+msgstr "正常にアカウントの関連づけが解除されました。"
 
 #: concrete/authentication/facebook/hook.php:59
 msgid "Attach your facebook account to this concrete5 account"
@@ -662,7 +662,7 @@ msgstr "サーバーの入稿用ディレクトリー上のファイルを削除
 #: concrete/single_pages/dashboard/users/search.php:177
 #: concrete/single_pages/dashboard/workflow/workflows.php:16
 #: concrete/single_pages/dashboard/workflow/workflows.php:69
-#: concrete/src/Form/Service/Widget/Color.php:34
+#: concrete/src/Form/Service/Widget/Color.php:32
 #: concrete/src/StyleCustomizer/Style/ColorStyle.php:41
 #: concrete/src/Workflow/Progress/Action/CancelAction.php:7
 #: concrete/tools/conversations/edit_message.php:37
@@ -1824,7 +1824,7 @@ msgstr "ファイルを挿入"
 
 #: concrete/elements/users/search.php:49
 #: concrete/single_pages/dashboard/system/basics/icons.php:77
-#: concrete/src/Form/Service/Widget/Color.php:35
+#: concrete/src/Form/Service/Widget/Color.php:33
 #: concrete/src/StyleCustomizer/Style/ColorStyle.php:42
 #: concrete/tools/i18n_js.php:188 concrete/tools/i18n_redactor_js.php:72
 msgid "Choose"
@@ -3624,7 +3624,6 @@ msgid "You must give the workflow a name."
 msgstr "ワークフローに名前をつけてください。"
 
 #: concrete/controllers/single_page/dashboard/workflow/workflows.php:45
-#: concrete/controllers/single_page/dashboard/workflow/workflows.php:86
 msgid "Workflow Names must only include alphanumerics and spaces."
 msgstr "ワークフロー名はアルファベット・数字・スペースのみ使うことができます。"
 
@@ -3632,19 +3631,23 @@ msgstr "ワークフロー名はアルファベット・数字・スペースの
 msgid "Workflow deleted successfully."
 msgstr "ワークフローが正常に削除されました。"
 
-#: concrete/controllers/single_page/dashboard/workflow/workflows.php:91
+#: concrete/controllers/single_page/dashboard/workflow/workflows.php:85
+msgid "Invalid characters in workflow name."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/workflow/workflows.php:90
 msgid "Workflow with that name already exists."
 msgstr "その名前のワークフローはすでに存在しています。"
 
-#: concrete/controllers/single_page/dashboard/workflow/workflows.php:96
+#: concrete/controllers/single_page/dashboard/workflow/workflows.php:95
 msgid "Invalid Workflow Type."
 msgstr "不正なワークフロータイプです。"
 
-#: concrete/controllers/single_page/dashboard/workflow/workflows.php:123
+#: concrete/controllers/single_page/dashboard/workflow/workflows.php:122
 msgid "Workflow created successfully. You may now modify its properties."
 msgstr "ワークフローが正常に作成されました。プロパティを変更することができます。"
 
-#: concrete/controllers/single_page/dashboard/workflow/workflows.php:126
+#: concrete/controllers/single_page/dashboard/workflow/workflows.php:125
 msgid "Workflow updated."
 msgstr "ワークフローが更新されました。"
 
@@ -3672,34 +3675,37 @@ msgstr "このバッジの説明を入力してください。これは公開さ
 msgid "You do not have permission to add a group beneath %s"
 msgstr "グループを %s の下に追加する権限がありません。"
 
-#: concrete/controllers/single_page/dashboard/users/group_sets.php:23
-#: concrete/controllers/single_page/dashboard/users/group_sets.php:67
+#: concrete/controllers/single_page/dashboard/users/group_sets.php:24
+#: concrete/controllers/single_page/dashboard/users/group_sets.php:66
 msgid "Specify a name for your group set."
 msgstr "グループセットの名前を指定してください。"
 
-#: concrete/controllers/single_page/dashboard/users/group_sets.php:27
-#: concrete/controllers/single_page/dashboard/users/group_sets.php:73
-msgid "Set Names must only include alphanumerics and spaces."
-msgstr "セット名にはアルファベットとスペース以外は使えません。"
+#: concrete/controllers/single_page/dashboard/users/group_sets.php:26
+msgid "Invalid characters in group set name."
+msgstr ""
 
-#: concrete/controllers/single_page/dashboard/users/group_sets.php:48
+#: concrete/controllers/single_page/dashboard/users/group_sets.php:47
 msgid "Group set added successfully."
 msgstr "グループセットが正常に追加されました。"
 
 #: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:182
-#: concrete/controllers/single_page/dashboard/users/group_sets.php:52
+#: concrete/controllers/single_page/dashboard/users/group_sets.php:51
 msgid "Group set deleted successfully."
 msgstr "グループセットが正常に削除されました。"
 
-#: concrete/controllers/single_page/dashboard/users/group_sets.php:56
+#: concrete/controllers/single_page/dashboard/users/group_sets.php:55
 msgid "Group set updated successfully."
 msgstr "グループセットが正常に更新されました。"
 
-#: concrete/controllers/single_page/dashboard/users/group_sets.php:64
-#: concrete/controllers/single_page/dashboard/users/group_sets.php:89
-#: concrete/controllers/single_page/dashboard/users/group_sets.php:116
+#: concrete/controllers/single_page/dashboard/users/group_sets.php:63
+#: concrete/controllers/single_page/dashboard/users/group_sets.php:88
+#: concrete/controllers/single_page/dashboard/users/group_sets.php:115
 msgid "Invalid group set."
 msgstr "無効なグループセット"
+
+#: concrete/controllers/single_page/dashboard/users/group_sets.php:72
+msgid "Set Names must only include alphanumerics and spaces."
+msgstr "セット名にはアルファベットとスペース以外は使えません。"
 
 #: concrete/controllers/single_page/dashboard/users/groups/bulkupdate.php:40
 msgid "Invalid target parent group."
@@ -5073,7 +5079,7 @@ msgstr "エリア %s のコンテンツをアレンジすることができま�
 msgid "You may not add %s to area %s."
 msgstr "%s を %s エリアに追加できません。"
 
-#: concrete/controllers/install.php:73
+#: concrete/controllers/install.php:80
 #, php-format
 msgid ""
 "Congratulations. concrete5 has been installed. You have been logged in as "
@@ -5081,74 +5087,74 @@ msgid ""
 "you may do so from the users area of the dashboard."
 msgstr "おめでとうございます！ concrete5が無事にインストールされました。あなたは入力したパスワードで <b>%s</b> としてログイン中です。パスワードを変更する場合は、管理画面のユーザー設定から行なってください。"
 
-#: concrete/controllers/install.php:99
+#: concrete/controllers/install.php:106
 msgid "Unable to connect to database."
 msgstr "データベースに接続できません。"
 
-#: concrete/controllers/install.php:105
+#: concrete/controllers/install.php:112
 #, php-format
 msgid ""
 "There are already %s tables in this database. concrete5 must be installed in"
 " an empty database."
 msgstr "このデータベースには%s個のテーブルが存在しています。concrete5は空のデータベースにインストールする必要があります。"
 
-#: concrete/controllers/install.php:116
+#: concrete/controllers/install.php:123
 msgid "The PDO extension is not loaded."
 msgstr "PDOエクステンションが読み込まれていません。"
 
-#: concrete/controllers/install.php:143
+#: concrete/controllers/install.php:150
 msgid "concrete5 is already installed."
 msgstr "concrete5はすでにインストール済みです。"
 
-#: concrete/controllers/install.php:206
+#: concrete/controllers/install.php:216
 msgid ""
 "Your configuration directory config/ does not appear to be writable by the "
 "web server."
 msgstr "「/config」ディレクトリーに書き込みできません。"
 
-#: concrete/controllers/install.php:210
+#: concrete/controllers/install.php:220
 msgid ""
 "Your files directory files/ does not appear to be writable by the web "
 "server."
 msgstr "「/files」ディレクトリーに書き込みできません。"
 
-#: concrete/controllers/install.php:214
+#: concrete/controllers/install.php:224
 msgid ""
 "Your packages directory packages/ does not appear to be writable by the web "
 "server."
 msgstr "お使いのサーバーが「/packages」ディレクトリーに書き込む事ができません。"
 
-#: concrete/controllers/install.php:265
+#: concrete/controllers/install.php:275
 #, php-format
 msgctxt "InstallError"
 msgid "%s.<br><br>Trace:<br>%s"
 msgstr "%s.<br><br>トレース:<br>%s"
 
-#: concrete/controllers/install.php:293
+#: concrete/controllers/install.php:303
 msgid "Please specify your site's name"
 msgstr "サイト名を入力してください"
 
-#: concrete/controllers/install.php:294
+#: concrete/controllers/install.php:304
 msgid "Please specify a valid email address"
 msgstr "有効なメールアドレスを入力してください"
 
-#: concrete/controllers/install.php:295
+#: concrete/controllers/install.php:305
 msgid "You must specify a valid database name"
 msgstr "有効なデータベース名を入力してください"
 
-#: concrete/controllers/install.php:296
+#: concrete/controllers/install.php:306
 msgid "You must specify a valid database server"
 msgstr "有効なデータベースサーバーを入力してください"
 
-#: concrete/controllers/install.php:348
+#: concrete/controllers/install.php:358
 msgid "Unable to open config/app.php for writing."
 msgstr "config/app.php に書き込むことができません。"
 
-#: concrete/controllers/install.php:369
+#: concrete/controllers/install.php:379
 msgid "Unable to open config/site_user.php for writing."
 msgstr "config/site.phpファイルに書き込む事ができませんでした。"
 
-#: concrete/controllers/install.php:391
+#: concrete/controllers/install.php:401
 msgid "You must select a valid sample content starting point."
 msgstr "有効なサンプルコンテンツを選択してください。"
 
@@ -5987,7 +5993,7 @@ msgstr "%s のパーミッションキーの取得に失敗しました。"
 msgid "Unable to get category for permission %s"
 msgstr "パーミッション %s のカテゴリーを取得できません"
 
-#: concrete/src/Permission/IPService.php:80
+#: concrete/src/Permission/IPService.php:92
 msgid ""
 "Unable to complete action: your IP address has been banned. Please contact "
 "the administrator of this site for more information."
@@ -6562,7 +6568,7 @@ msgid "Select Page"
 msgstr "ページを選択"
 
 #: concrete/single_pages/dashboard/system/basics/icons.php:78
-#: concrete/src/Form/Service/Widget/Color.php:37
+#: concrete/src/Form/Service/Widget/Color.php:35
 #: concrete/src/StyleCustomizer/Style/ColorStyle.php:43
 msgid "Clear Color Selection"
 msgstr "色選択をクリア"
@@ -8373,19 +8379,19 @@ msgstr "スタイルをクリア"
 msgid "Workflow Basics"
 msgstr "基本ワークフロー"
 
-#: concrete/elements/workflow/type_form_required.php:18
+#: concrete/elements/workflow/type_form_required.php:17
 msgid "Are you sure you want to remove this workflow?"
 msgstr "このワークフローを削除してもよろしいですか？"
 
-#: concrete/elements/workflow/type_form_required.php:28
+#: concrete/elements/workflow/type_form_required.php:27
 msgid "Delete Workflow"
 msgstr "ワークフローを削除"
 
-#: concrete/elements/workflow/type_form_required.php:34
+#: concrete/elements/workflow/type_form_required.php:33
 msgid "Edit Details"
 msgstr "詳細を編集"
 
-#: concrete/elements/workflow/type_form_required.php:51
+#: concrete/elements/workflow/type_form_required.php:50
 #: concrete/single_pages/dashboard/users/points/actions.php:65
 #: concrete/single_pages/dashboard/users/points/assign.php:45
 msgid "Back to List"
@@ -9569,7 +9575,7 @@ msgstr "新しい親ページを選択"
 #: concrete/views/frontend/install.php:75
 #: concrete/views/frontend/install.php:133
 #: concrete/views/frontend/install.php:325
-#: concrete/views/frontend/install.php:529
+#: concrete/views/frontend/install.php:534
 #: concrete/views/panels/details/page/versions.php:6
 #, php-format
 msgid "Version %s"
@@ -9839,7 +9845,7 @@ msgstr "concrete5をインストールするには、下記のフォームに必
 #: concrete/views/frontend/install.php:132
 #: concrete/views/frontend/install.php:258
 #: concrete/views/frontend/install.php:324
-#: concrete/views/frontend/install.php:528
+#: concrete/views/frontend/install.php:533
 msgid "Install concrete5"
 msgstr "concrete5をインストール"
 
@@ -10001,77 +10007,88 @@ msgstr "多言語サポート"
 msgid "You must enable ctype support in your copy of PHP."
 msgstr "PHP で ctype サポートを有効にする必要があります。"
 
-#: concrete/views/frontend/install.php:418
+#: concrete/views/frontend/install.php:411
+msgid "PHP Comments Preserved"
+msgstr ""
+
+#: concrete/views/frontend/install.php:412
+msgid ""
+"concrete5 is not compatible with opcode caches that strip PHP comments. "
+"Certain configurations of eAccelerator and Zend opcode caching may use this "
+"behavior, and it must be disabled."
+msgstr ""
+
+#: concrete/views/frontend/install.php:423
 msgid "Testing Optional Items"
 msgstr "オプション項目のチェック"
 
-#: concrete/views/frontend/install.php:430
+#: concrete/views/frontend/install.php:435
 msgid "Remote File Importing Available"
 msgstr "リモートファイルのインポートが可能"
 
-#: concrete/views/frontend/install.php:432
+#: concrete/views/frontend/install.php:437
 msgid ""
 "Remote file importing through the file manager requires the iconv PHP "
 "extension."
 msgstr "ファイルマネージャーでリモートファイルをインポートするには、iconv PHP拡張が必要です。"
 
-#: concrete/views/frontend/install.php:444
+#: concrete/views/frontend/install.php:449
 msgid "Zip Support"
 msgstr "ZIPサポート"
 
-#: concrete/views/frontend/install.php:446
+#: concrete/views/frontend/install.php:451
 msgid ""
 "Downloading zipped files from the file manager and remote updating requires "
 "the Zip extension."
 msgstr "ファイルマネージャーから、ZIPファイルをファウンロードしたり、リモートアップデートを行う際は ZIP エクステンションが必要です。"
 
-#: concrete/views/frontend/install.php:457
+#: concrete/views/frontend/install.php:462
 msgid "Memory Requirements"
 msgstr "必須メモリ"
 
-#: concrete/views/frontend/install.php:479
+#: concrete/views/frontend/install.php:484
 #, php-format
 msgid ""
 "concrete5 will not install with less than 24MB of RAM.\n"
 "                            Your memory limit is currently %sMB. Please increase your memory_limit using ini_set."
 msgstr "concrete5 は 24MB 以下のメモリではインストール出来ません。\nこのサーバーの現在の memory limit は  %sMB です。ini_set を使って memory_limit を増やしてください。"
 
-#: concrete/views/frontend/install.php:484
+#: concrete/views/frontend/install.php:489
 #, php-format
 msgid ""
 "concrete5 runs best with at least 64MB of RAM.\n"
 "                            Your memory limit is currently %sMB. You may experience problems uploading and resizing large images, and may have to install concrete5 without sample content."
 msgstr "concrete5 は 64MB 以上のメモリでの動作を推奨します。\nこのサーバーの現在の memory limi は  %sMBです。大きな画像のアップロードやリサイズに問題が起こる可能性があり、サンプルコンテンツなしでインストールする必要がある場合があります。"
 
-#: concrete/views/frontend/install.php:488
+#: concrete/views/frontend/install.php:493
 #, php-format
 msgid ""
 "concrete5 runs best with at least 64MB of RAM.\n"
 "                            Your memory limit is currently %sMB."
 msgstr "concrete5 は 64MB 以上のメモリでの動作を推奨します。\nこのサーバーの現在の memory limi は  %sMBです。"
 
-#: concrete/views/frontend/install.php:505
+#: concrete/views/frontend/install.php:510
 msgid "Continue to Installation"
 msgstr "インストールを続ける"
 
-#: concrete/views/frontend/install.php:510
+#: concrete/views/frontend/install.php:515
 msgid ""
 "There are problems with your installation environment. Please correct them "
 "and click the button below to re-run the pre-installation tests."
 msgstr "インストール環境に問題があります。それらを訂正し、再インストールのテストをするには、以下のボタンをクリックしてください。"
 
-#: concrete/views/frontend/install.php:513
+#: concrete/views/frontend/install.php:518
 msgid "Run Tests"
 msgstr "再チェック"
 
-#: concrete/views/frontend/install.php:518
+#: concrete/views/frontend/install.php:523
 #, php-format
 msgid ""
 "Having trouble? Check the <a href=\"%s\">installation help forums</a>, or <a"
 " href=\"%s\">have us host a copy</a> for you."
 msgstr "インストールに問題がありますか？<a href=\"%s\">インストールに関するヘルプフォーラム</a>を確認するか、<a href=\"%s\">ホスティングサービス</a>もご用意しています。"
 
-#: concrete/views/frontend/install.php:548
+#: concrete/views/frontend/install.php:553
 msgid "Choose Language"
 msgstr "言語を選択"
 
