@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-10-07 10:00+0000\n"
-"PO-Revision-Date: 2014-10-07 17:35+0000\n"
+"POT-Creation-Date: 2014-10-08 10:00+0000\n"
+"PO-Revision-Date: 2014-10-08 16:01+0000\n"
 "Last-Translator: Adem Coşkuner <info@ademcoskuner.com>\n"
 "Language-Team: Turkish (Turkey) (http://www.transifex.com/projects/p/concrete5/language/tr_TR/)\n"
 "MIME-Version: 1.0\n"
@@ -416,7 +416,7 @@ msgstr "Azalan"
 #: concrete/single_pages/dashboard/blocks/permissions.php:19
 #: concrete/single_pages/dashboard/files/sets.php:101
 #: concrete/single_pages/dashboard/pages/themes/customize.php:97
-#: concrete/single_pages/dashboard/pages/themes/view.php:118
+#: concrete/single_pages/dashboard/pages/themes/view.php:82
 #: concrete/single_pages/dashboard/pages/types/composer.php:187
 #: concrete/single_pages/dashboard/pages/types/permissions.php:24
 #: concrete/single_pages/dashboard/pages/types/view.php:12
@@ -493,7 +493,7 @@ msgstr "Kaydet"
 #: concrete/controllers/dialog/file/properties.php:111
 #: concrete/controllers/dialog/file/thumbnails/edit.php:35
 #: concrete/controllers/dialog/file/thumbnails/edit.php:38
-#: concrete/controllers/search/users.php:38
+#: concrete/controllers/search/users.php:39
 #: concrete/controllers/single_page/dashboard/users/search.php:46
 #: concrete/controllers/single_page/dashboard/users/search.php:64
 #: concrete/tools/dashboard/attribute_set_order_update.php:13
@@ -595,7 +595,7 @@ msgstr "Harici Dosya Ekle"
 msgid "Filename"
 msgstr "Dosya ismi"
 
-#: concrete/controllers/search/files.php:229
+#: concrete/controllers/search/files.php:237
 #: concrete/src/File/Search/ColumnSet/DefaultSet.php:30
 #: concrete/tools/files/import.php:74 concrete/tools/i18n_js.php:96
 #: concrete/views/dialogs/file/properties.php:80
@@ -637,7 +637,7 @@ msgstr "Incoming/ klasöründeki dosyaları sil."
 #: concrete/single_pages/dashboard/pages/feeds.php:166
 #: concrete/single_pages/dashboard/pages/templates/add.php:46
 #: concrete/single_pages/dashboard/pages/templates/view.php:58
-#: concrete/single_pages/dashboard/pages/themes/view.php:34
+#: concrete/single_pages/dashboard/pages/themes/view.php:19
 #: concrete/single_pages/dashboard/pages/types/form.php:27
 #: concrete/single_pages/dashboard/pages/types/form.php:58
 #: concrete/single_pages/dashboard/pages/types/form.php:77
@@ -1967,8 +1967,8 @@ msgstr "Kullanıcılara erişiminiz yok."
 msgid "Are you sure you would like to activate the following users?"
 msgstr "Aşağıdaki kullanıcıları etkinleştirmek istediğizden emin misiniz?"
 
-#: concrete/single_pages/dashboard/pages/themes/view.php:77
-#: concrete/single_pages/dashboard/pages/themes/view.php:79
+#: concrete/single_pages/dashboard/pages/themes/view.php:48
+#: concrete/single_pages/dashboard/pages/themes/view.php:50
 #: concrete/tools/users/bulk_activate.php:59
 msgid "Activate"
 msgstr "Etkinleştir"
@@ -2243,7 +2243,7 @@ msgstr "Alt Sayfalara Kur"
 msgid "Composer Settings"
 msgstr "Kompozitör Ayarları"
 
-#: concrete/single_pages/dashboard/pages/themes/view.php:165
+#: concrete/single_pages/dashboard/pages/themes/view.php:121
 #: concrete/tools/i18n_js.php:57
 msgid "Get More Themes"
 msgstr "Daha Fazla Tema Alın"
@@ -2348,7 +2348,7 @@ msgstr "Kullanıcı Ayarları kaydedildi."
 #: concrete/single_pages/dashboard/extend/install.php:214
 #: concrete/single_pages/dashboard/pages/themes/customize.php:109
 #: concrete/single_pages/dashboard/pages/themes/inspect.php:117
-#: concrete/single_pages/dashboard/pages/themes/view.php:33
+#: concrete/single_pages/dashboard/pages/themes/view.php:18
 #: concrete/src/Application/Service/UserInterface/Help.php:180
 #: concrete/tools/i18n_js.php:80 concrete/tools/pages/permissions.php:166
 msgid "Ok"
@@ -2804,7 +2804,7 @@ msgstr "Bu sayfayı önbelleğe al."
 #: concrete/tools/pages/speed_settings.php:145
 #: concrete/views/panels/details/page/caching.php:62
 msgid "Cache for how long?"
-msgstr "Ne kadar süreliğine önbelleğe alınacak?"
+msgstr "Önbellek Süresi"
 
 #: concrete/tools/pages/speed_settings.php:157
 #, php-format
@@ -2979,7 +2979,7 @@ msgstr "Aşağıdaki sayfaları silmek istediğinizden emin misiniz?"
 msgid "Page Type"
 msgstr "Sayfa Türü"
 
-#: concrete/controllers/search/pages.php:285
+#: concrete/controllers/search/pages.php:286
 #: concrete/tools/pages/delete.php:93
 #: concrete/views/dialogs/file/properties.php:84
 msgid "Date Added"
@@ -3060,7 +3060,7 @@ msgstr "%s sürümünün kopyası"
 #: concrete/controllers/panel/page/versions.php:66
 #, php-format
 msgid "Version %s copied successfully. New version is %s."
-msgstr "%s sürümü başarıyla kopyalandı. Yeni sürüm %s'tir."
+msgstr "%s sürümü başarıyla kopyalandı. %s, yeni sürüm olarak atandı."
 
 #: concrete/controllers/panel/page/versions.php:81
 msgid "You do not have permission to create new pages of this type."
@@ -4945,20 +4945,20 @@ msgstr "Profil başarıyla güncellendi."
 
 #: concrete/attributes/date_time/controller.php:147
 #: concrete/attributes/number/controller.php:31
-#: concrete/controllers/search/files.php:174
-#: concrete/controllers/search/files.php:199
+#: concrete/controllers/search/files.php:181
+#: concrete/controllers/search/files.php:204
 #: concrete/controllers/search/pages.php:210
 #: concrete/controllers/search/pages.php:213
 #: concrete/controllers/search/pages.php:216
-#: concrete/controllers/search/users.php:190
+#: concrete/controllers/search/users.php:191
 msgid "to"
 msgstr "şuna"
 
-#: concrete/controllers/search/files.php:176
+#: concrete/controllers/search/files.php:183
 msgid "KB"
 msgstr "KB"
 
-#: concrete/controllers/search/files.php:230
+#: concrete/controllers/search/files.php:238
 #: concrete/single_pages/dashboard/pages/themes/inspect.php:35
 #: concrete/single_pages/dashboard/workflow/workflows.php:47
 #: concrete/src/File/Search/ColumnSet/DefaultSet.php:26
@@ -4967,20 +4967,20 @@ msgstr "KB"
 msgid "Type"
 msgstr "Tür"
 
-#: concrete/controllers/search/files.php:231
+#: concrete/controllers/search/files.php:239
 msgid "Extension"
 msgstr "Uzantı"
 
-#: concrete/controllers/search/files.php:232
+#: concrete/controllers/search/files.php:240
 msgid "Added Between"
 msgstr "Eklenme Aralığı"
 
-#: concrete/controllers/search/files.php:233
+#: concrete/controllers/search/files.php:241
 msgid "Added to Page"
 msgstr "Sayfaya Eklenmiş"
 
 #: concrete/controllers/search/pages.php:223
-#: concrete/controllers/search/pages.php:283
+#: concrete/controllers/search/pages.php:284
 #: concrete/single_pages/dashboard/system/seo/bulk.php:85
 msgid "Parent Page"
 msgstr "Üst Sayfa"
@@ -5056,52 +5056,52 @@ msgstr "Eşit"
 msgid "Fewer Than"
 msgstr "Daha Az"
 
-#: concrete/controllers/search/pages.php:284
+#: concrete/controllers/search/pages.php:285
 msgid "Full Page Index"
 msgstr "Tam Sayfa İndisi"
 
-#: concrete/controllers/search/pages.php:286
+#: concrete/controllers/search/pages.php:287
 #: concrete/views/dialogs/page/design.php:25
 #: concrete/views/panels/page/design.php:44
 msgid "Theme"
 msgstr "Tema"
 
-#: concrete/controllers/search/pages.php:287
+#: concrete/controllers/search/pages.php:288
 #: concrete/single_pages/dashboard/composer/drafts.php:17
 #: concrete/src/Page/Search/ColumnSet/DefaultSet.php:37
 msgid "Last Modified"
 msgstr "Son Düzenlenme"
 
-#: concrete/controllers/search/pages.php:288
+#: concrete/controllers/search/pages.php:289
 msgid "Public Date"
 msgstr "Yayın Tarihi"
 
-#: concrete/controllers/search/pages.php:289
+#: concrete/controllers/search/pages.php:290
 #: concrete/src/Permission/Access/Entity/PageOwnerEntity.php:72
 msgid "Page Owner"
 msgstr "Sayfa Sahibi"
 
-#: concrete/controllers/search/pages.php:290
+#: concrete/controllers/search/pages.php:291
 msgid "# Children"
 msgstr "# Alt Sayfalar"
 
-#: concrete/controllers/search/pages.php:291
+#: concrete/controllers/search/pages.php:292
 msgid "Approved Version"
 msgstr "Onaylı Sürüm"
 
-#: concrete/controllers/search/users.php:193
+#: concrete/controllers/search/users.php:194
 msgid "Inactive Users"
 msgstr "Devre Dışı Olan Kullanıcılar"
 
-#: concrete/controllers/search/users.php:193
+#: concrete/controllers/search/users.php:194
 msgid "Active Users"
 msgstr "Aktif Kullanıcılar"
 
-#: concrete/controllers/search/users.php:229
+#: concrete/controllers/search/users.php:231
 msgid "Registered Between"
 msgstr "Aralığında Kayıtlı"
 
-#: concrete/controllers/search/users.php:230
+#: concrete/controllers/search/users.php:232
 msgid "Activated Users"
 msgstr "Etkinleştirilmiş Kullanıcılar"
 
@@ -5142,7 +5142,7 @@ msgid ""
 "Congratulations. concrete5 has been installed. You have been logged in as "
 "<b>%s</b> with the password you chose. If you wish to change this password, "
 "you may do so from the users area of the dashboard."
-msgstr "Tebrikler. concrete5 kuruldu. <b>%s</b> olarak seçtiğiniz parola ile oturum açtınz. Parolanızı değiştirmek isterseniz, kontrol panelindeki kullanıcılar alanından yapabilirsiniz."
+msgstr "Tebrikler. concrete5 kuruldu. <b>%s</b> olarak seçtiğiniz parola ile oturum açtınız. Parolanızı değiştirmek isterseniz, kontrol panelindeki kullanıcılar alanından yapabilirsiniz."
 
 #: concrete/controllers/install.php:106
 msgid "Unable to connect to database."
@@ -6140,12 +6140,25 @@ msgstr "960 Izgara Sistemi"
 msgid "Twitter Bootstrap"
 msgstr "Twitter Bootstrap"
 
+#. %1$s is a filename, %2$s is a PHP class name
+#: concrete/src/Page/Theme/Theme.php:577
+#, php-format
+msgid "The theme file %1$s does not defines the class %2$s"
+msgstr "Tema dosyası %1$s, %2$s sınıfını tanımlamamış"
+
+#. %1$s is a filename, %2$s and %3$s are PHP class names
+#: concrete/src/Page/Theme/Theme.php:582
+#, php-format
+msgid ""
+"The theme file %1$s should define a %1$s class that extends the class %2$s"
+msgstr "Tema dosyası %1$s, %2$s sınıfını genişleten bir %1$s sınıfı tanımlamalıdır"
+
 #: concrete/single_pages/dashboard/pages/types/form.php:50
-#: concrete/src/Page/Theme/Theme.php:615
+#: concrete/src/Page/Theme/Theme.php:699
 msgid "(No Name)"
 msgstr "(İsimsiz)"
 
-#: concrete/src/Page/Theme/Theme.php:660
+#: concrete/src/Page/Theme/Theme.php:744
 msgid "(No Description)"
 msgstr "(Açıklamasız)"
 
@@ -8123,7 +8136,7 @@ msgstr "Sayfa Onay Bekliyor."
 
 #: concrete/elements/page_controls_footer.php:436
 msgid "This page is newer than what appears to visitors on your live site."
-msgstr "Bu sayfa, çalışan sitenizde ziyaretçilerinize görünenden daha yenidir."
+msgstr "Bu sayfa, ziyaretçilerinizin gördüğünden daha yenidir."
 
 #: concrete/elements/collection_timed_permission_list.php:16
 msgid "Permission on "
@@ -8545,7 +8558,7 @@ msgstr "Kullanıcı Adı veya E-posta"
 
 #: concrete/elements/users/search.php:59
 msgid "In Group"
-msgstr "Grupta"
+msgstr "Şu Grupta"
 
 #: concrete/elements/permission/help.php:3
 #: concrete/elements/permission/help.php:4
@@ -12541,7 +12554,7 @@ msgstr "Seçeneği Kaldır"
 
 #: concrete/attributes/select/form.php:41
 msgid "Selected Options"
-msgstr "Seçilen Seçenekler"
+msgstr "Seçilenler"
 
 #: concrete/attributes/select/form.php:172
 #: concrete/attributes/select/form.php:173
@@ -12976,7 +12989,7 @@ msgid "Add-On updates are available!"
 msgstr "Eklenti güncellemeleri mevcut."
 
 #: concrete/single_pages/dashboard/extend/install.php:253
-#: concrete/single_pages/dashboard/pages/themes/view.php:47
+#: concrete/single_pages/dashboard/pages/themes/view.php:27
 msgid "Currently Installed"
 msgstr "Şu Anda Yüklü Olanlar"
 
@@ -13004,7 +13017,7 @@ msgstr "Şu an kurulum için hiçbir şey mevcut değil."
 
 #: concrete/single_pages/dashboard/blocks/types/view.php:57
 #: concrete/single_pages/dashboard/extend/install.php:301
-#: concrete/single_pages/dashboard/pages/themes/view.php:146
+#: concrete/single_pages/dashboard/pages/themes/view.php:106
 #: concrete/single_pages/dashboard/system/attributes/types.php:59
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:218
 msgid "Install"
@@ -13042,8 +13055,8 @@ msgid "Refresh"
 msgstr "Yenile"
 
 #: concrete/single_pages/dashboard/blocks/types/view.php:31
-#: concrete/single_pages/dashboard/pages/themes/view.php:85
-#: concrete/single_pages/dashboard/pages/themes/view.php:87
+#: concrete/single_pages/dashboard/pages/themes/view.php:56
+#: concrete/single_pages/dashboard/pages/themes/view.php:58
 msgid "Remove"
 msgstr "Kaldır"
 
@@ -13214,7 +13227,7 @@ msgstr "Bu gruba otomatik olarak girilir."
 msgid ""
 "Automated Groups aren't assigned by administrators. They are checked against"
 " code at certain times that determines whether users should enter them."
-msgstr "Otomatikleştirilmiş Gruplar yöneticiler tarafından atanmazlar. Kullanıcıların gruplara girip girmeyeceğini belirler, belirli zamanlarda kod karşısında kontrol edilirler."
+msgstr "Otomatikleştirilmiş Gruplar yöneticiler tarafından atanmazlar. Kullanıcıların gruplara girip girmemesi gerektiğini belirleyen kodlar ile belirli zamanlarda  kontrol edilirler."
 
 #: concrete/single_pages/dashboard/users/add_group.php:126
 #: concrete/single_pages/dashboard/users/groups.php:94
@@ -15201,45 +15214,45 @@ msgstr "Bu temadaki stilleri sıfırlamak istiyor musunuz?"
 msgid "This theme contains no styles that can be customized."
 msgstr "Bu tema özelleştirilebilir hiçbir stil içermiyor."
 
-#: concrete/single_pages/dashboard/pages/themes/view.php:8
+#: concrete/single_pages/dashboard/pages/themes/view.php:7
 msgid "This theme is currently active on your site."
 msgstr "Sitenizde şu an bu tema aktif."
 
-#: concrete/single_pages/dashboard/pages/themes/view.php:26
+#: concrete/single_pages/dashboard/pages/themes/view.php:14
 msgid "Apply this theme to every page on your site?"
 msgstr "Sitenizdeki her sayfa için bu tema uygulansın mı?"
 
-#: concrete/single_pages/dashboard/pages/themes/view.php:55
+#: concrete/single_pages/dashboard/pages/themes/view.php:32
 msgid "No themes are installed."
 msgstr "Hiçbir kurulu tema bulunamadı."
 
 #: concrete/config/install/base/dashboard.xml:221
-#: concrete/single_pages/dashboard/pages/themes/view.php:82
+#: concrete/single_pages/dashboard/pages/themes/view.php:53
 msgid "Inspect"
 msgstr "İncele"
 
-#: concrete/single_pages/dashboard/pages/themes/view.php:108
-#: concrete/single_pages/dashboard/pages/themes/view.php:112
+#: concrete/single_pages/dashboard/pages/themes/view.php:71
+#: concrete/single_pages/dashboard/pages/themes/view.php:74
 msgid "Mobile Theme"
 msgstr "Mobil Tema"
 
-#: concrete/single_pages/dashboard/pages/themes/view.php:109
+#: concrete/single_pages/dashboard/pages/themes/view.php:72
 msgid "To use a separate theme for mobile browsers, specify it below."
 msgstr "Mobil tarayıcılar için farklı bir tema kullanmak isterseniz aşağıda belirtin."
 
-#: concrete/single_pages/dashboard/pages/themes/view.php:113
+#: concrete/single_pages/dashboard/pages/themes/view.php:76
 msgid "** Same as website (default)"
 msgstr "** Web site ile aynı (varsayılan)"
 
-#: concrete/single_pages/dashboard/pages/themes/view.php:127
+#: concrete/single_pages/dashboard/pages/themes/view.php:89
 msgid "Themes Available to Install"
 msgstr "Kurulmaya Hazır Temalar"
 
-#: concrete/single_pages/dashboard/pages/themes/view.php:163
+#: concrete/single_pages/dashboard/pages/themes/view.php:119
 msgid "Want more themes?"
 msgstr "Daha fazla tema ister misiniz?"
 
-#: concrete/single_pages/dashboard/pages/themes/view.php:164
+#: concrete/single_pages/dashboard/pages/themes/view.php:120
 msgid "You can download themes and add-ons from the concrete5 marketplace."
 msgstr "concrete5 marketten temalar ve eklentileri indirebilirsiniz."
 
