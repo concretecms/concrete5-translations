@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-10-15 10:00+0000\n"
-"PO-Revision-Date: 2014-10-15 10:22+0000\n"
+"POT-Creation-Date: 2014-10-16 10:00+0000\n"
+"PO-Revision-Date: 2014-10-16 10:05+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Greek (Greece) (http://www.transifex.com/projects/p/concrete5/language/el_GR/)\n"
 "MIME-Version: 1.0\n"
@@ -34,6 +34,149 @@ msgstr "Η Πρόσβασης στο Μπλοκ δεν είναι δυνατή"
 msgid "Invalid block."
 msgstr "Μη έγκυρο Μπλοκ."
 
+#: concrete/authentication/twitter/form.php:39
+#: concrete/authentication/twitter/form.php:47
+#: concrete/authentication/twitter/form.php:55
+#: concrete/authentication/twitter/hook.php:6
+#: concrete/authentication/twitter/hook.php:14
+msgid "twitter"
+msgstr ""
+
+#: concrete/authentication/facebook/form.php:19
+#: concrete/authentication/facebook/form.php:26
+#: concrete/authentication/facebook/hook.php:5
+#: concrete/authentication/facebook/hook.php:12
+#: concrete/authentication/twitter/form.php:39
+#: concrete/authentication/twitter/form.php:47
+#: concrete/authentication/twitter/hook.php:6
+#: concrete/authentication/twitter/hook.php:14
+#, php-format
+msgid "Attach a %s account"
+msgstr ""
+
+#: concrete/authentication/twitter/form.php:20
+#, php-format
+msgid "Register an account for \"%s\""
+msgstr ""
+
+#: concrete/authentication/twitter/form.php:25
+#: concrete/config/install/base/login_registration.xml:27
+#: concrete/single_pages/register.php:124
+msgid "Register"
+msgstr "Εγγραφή"
+
+#: concrete/authentication/facebook/form.php:34
+#: concrete/authentication/twitter/form.php:55
+#, php-format
+msgid "Sign in with %s"
+msgstr ""
+
+#: concrete/authentication/facebook/form.php:41
+#: concrete/authentication/twitter/form.php:63
+#, php-format
+msgid "Log in with %s"
+msgstr ""
+
+#: concrete/authentication/twitter/type_form.php:4
+msgid "Twitter Login Configuration"
+msgstr ""
+
+#: concrete/authentication/community/type_form.php:4
+#: concrete/authentication/facebook/type_form.php:27
+#: concrete/authentication/twitter/type_form.php:5
+#, php-format
+msgid "<a href=\"%s\" target=\"_blank\">Click here</a> to obtain your access keys."
+msgstr "<a href=\"%s\" target=\"_blank\">Πατήστε Εδώ</a> για να αποκτήσετε τα κλειδιά πρόσβασης σας."
+
+#: concrete/authentication/twitter/type_form.php:6
+msgid ""
+"Check the box labeled \"Allow this application to be used to Sign in with "
+"Twitter\"."
+msgstr ""
+
+#: concrete/authentication/twitter/type_form.php:7
+#, php-format
+msgid "Set the \"Callback URL\" to:%s."
+msgstr ""
+
+#: concrete/authentication/twitter/type_form.php:11
+msgid "Consumer Key (API Key)"
+msgstr ""
+
+#: concrete/authentication/twitter/type_form.php:15
+msgid "Consumer Secret (API Secret)"
+msgstr ""
+
+#: concrete/authentication/twitter/type_form.php:19
+#: concrete/authentication/twitter/type_form.php:42
+msgid "Show API secret"
+msgstr ""
+
+#: concrete/authentication/community/type_form.php:25
+#: concrete/authentication/facebook/type_form.php:20
+#: concrete/authentication/twitter/type_form.php:27
+msgid "Allow automatic registration"
+msgstr ""
+
+#: concrete/authentication/twitter/type_form.php:39
+msgid "Hide API secret"
+msgstr ""
+
+#: concrete/authentication/community/form.php:19
+#: concrete/authentication/community/hook.php:4
+msgid "Attach a community account"
+msgstr ""
+
+#: concrete/authentication/community/form.php:26
+#: concrete/authentication/community/hook.php:11
+msgid "Attach a concrete5.org account"
+msgstr ""
+
+#: concrete/authentication/community/form.php:34
+msgid "Sign in with a community account"
+msgstr ""
+
+#: concrete/authentication/community/form.php:41
+msgid "Log in with concrete5.org"
+msgstr ""
+
+#: concrete/authentication/community/form.php:45
+msgid ""
+"Join the concrete5.org community to setup multiple websites, shop for "
+"extensions, and get support."
+msgstr ""
+
+#: concrete/authentication/community/type_form.php:3
+msgid "Community Authentication Configuration"
+msgstr ""
+
+#: concrete/authentication/community/type_form.php:5
+#, php-format
+msgid "Set the \"Callback URL\" to: %s."
+msgstr ""
+
+#: concrete/authentication/community/type_form.php:9
+#: concrete/authentication/facebook/type_form.php:4
+msgid "App ID"
+msgstr "App ID"
+
+#: concrete/authentication/community/type_form.php:13
+#: concrete/authentication/facebook/type_form.php:8
+msgid "App Secret"
+msgstr "App Secret"
+
+#: concrete/authentication/community/type_form.php:17
+#: concrete/authentication/community/type_form.php:40
+#: concrete/authentication/facebook/type_form.php:12
+#: concrete/authentication/facebook/type_form.php:39
+msgid "Show secret key"
+msgstr "Εμφάνιση μυστικού κλειδιού"
+
+#: concrete/authentication/community/type_form.php:37
+#: concrete/authentication/facebook/type_form.php:36
+msgid "Hide secret key"
+msgstr "Απόκρυψη μυστικού κλειδιού"
+
 #: concrete/authentication/concrete/change_password.php:4
 msgid "Reset Password"
 msgstr "Επαναφορά κωδικού πρόσβασης"
@@ -43,12 +186,12 @@ msgid "Enter your new password below."
 msgstr "Πληκτρολογήστε το νέο κωδικό πρόσβασης σας παρακάτω."
 
 #: concrete/authentication/concrete/change_password.php:15
-#: concrete/single_pages/account/edit_profile.php:71
+#: concrete/single_pages/account/edit_profile.php:69
 msgid "New Password"
 msgstr "Νέος Κωδικός Πρόσβασης "
 
 #: concrete/authentication/concrete/change_password.php:19
-#: concrete/single_pages/account/edit_profile.php:77
+#: concrete/single_pages/account/edit_profile.php:75
 msgid "Confirm New Password"
 msgstr "Επιβεβαίωση Νέου Κωδικού Πρόσβασης"
 
@@ -62,11 +205,15 @@ msgstr "Αλλάξετε τον κωδικό πρόσβασης και συνδ�
 msgid "Forgot Your Password?"
 msgstr "Ξεχάσατε τον κωδικό σας;"
 
-#: concrete/authentication/concrete/password_sent.php:8
+#: concrete/authentication/concrete/password_sent.php:10
 msgid ""
-"An email containing instructions on resetting your password has been sent to"
-" your account address."
-msgstr "Ένα μήνυμα ηλεκτρονικού ταχυδρομείου που περιέχει οδηγίες σχετικά με την επαναφορά του κωδικού πρόσβασής σας έχει σταλεί στη διεύθυνση του λογαριασμού σας."
+"If there is an account associated with this email, instructions for "
+"resetting your password have been sent."
+msgstr ""
+
+#: concrete/authentication/concrete/password_sent.php:13
+msgid "Go Back"
+msgstr ""
 
 #: concrete/authentication/concrete/forgot_password.php:13
 #: concrete/single_pages/login_oauth.php:60
@@ -86,7 +233,7 @@ msgstr "Σύνδεση με έναν τοπικό λογαριασμό."
 #: concrete/authentication/concrete/form.php:13
 #: concrete/blocks/form/form_setup_html.php:126
 #: concrete/blocks/form/form_setup_html.php:196
-#: concrete/controllers/single_page/login.php:180
+#: concrete/controllers/single_page/login.php:182
 #: concrete/elements/permission/keys/edit_user_properties.php:31
 #: concrete/elements/permission/keys/edit_user_properties.php:68
 #: concrete/mail/user_register.php:16 concrete/mail/user_register.php:47
@@ -103,7 +250,7 @@ msgid "Email Address"
 msgstr "Διεύθυνση email"
 
 #: concrete/authentication/concrete/form.php:13
-#: concrete/controllers/single_page/login.php:182
+#: concrete/controllers/single_page/login.php:184
 #: concrete/elements/permission/keys/edit_user_properties.php:30
 #: concrete/elements/permission/keys/edit_user_properties.php:67
 #: concrete/elements/users/confirm_list.php:7
@@ -125,7 +272,7 @@ msgstr "Μείνετε συνδεδεμένοι για δύο εβδομάδες
 #: concrete/authentication/concrete/form.php:33
 #: concrete/single_pages/dashboard/users/add.php:48
 #: concrete/single_pages/dashboard/users/search.php:103
-#: concrete/views/frontend/install.php:547
+#: concrete/views/frontend/install.php:553
 msgid "Language"
 msgstr "Γλώσσα"
 
@@ -134,179 +281,80 @@ msgstr "Γλώσσα"
 msgid "Log in"
 msgstr "Είσοδος"
 
-#: concrete/authentication/concrete/controller.php:135
-#: concrete/authentication/concrete/controller.php:139
+#: concrete/authentication/concrete/controller.php:145
+#: concrete/authentication/concrete/controller.php:149
 #: concrete/authentication/concrete/form.php:42
 #: concrete/mail/forgot_password.php:4
 msgid "Forgot Password"
 msgstr "Ξεχάσατε τον κωδικό σας"
 
-#: concrete/authentication/concrete/controller.php:57
+#: concrete/authentication/concrete/controller.php:62
 msgid "There was a database error, try again."
 msgstr "Υπήρξε ένα σφάλμα στη βάση δεδομένων, δοκιμάστε ξανά."
 
-#: concrete/authentication/concrete/controller.php:105
+#: concrete/authentication/concrete/controller.php:115
 msgid "Invalid email address."
 msgstr "Μη έγκυρη διεύθυνση ηλεκτρονικού ταχυδρομείου."
 
-#: concrete/authentication/concrete/controller.php:110
+#: concrete/authentication/concrete/controller.php:120
 msgid "We have no record of that email address."
 msgstr "Δεν έχουμε καμία εγγραφή σε αυτή την διεύθυνση ηλεκτρονικού ταχυδρομείου."
 
-#: concrete/authentication/concrete/controller.php:168
+#: concrete/authentication/concrete/controller.php:173
 msgid ""
 "Key Expired. Please visit the forgot password page again to have a new key "
 "generated."
 msgstr "Το Κλειδί έχει λήξει. Παρακαλούμε επισκεφθείτε την σελίδα επαναφοράς κωδικού πρόσβασης ξανά για να δημιουργήσετε ένα νέο κλειδί."
 
-#: concrete/authentication/concrete/controller.php:177
-#: concrete/controllers/install.php:317
+#: concrete/authentication/concrete/controller.php:182
+#: concrete/controllers/install.php:318
 #: concrete/controllers/single_page/account/edit_profile.php:94
 #: concrete/controllers/single_page/dashboard/users/search.php:336
 #: concrete/controllers/single_page/register.php:109
 msgid "The two passwords provided do not match."
 msgstr "Οι δύο κωδικοί που δώσατε δεν ταιριάζουν."
 
-#: concrete/authentication/concrete/controller.php:209
+#: concrete/authentication/concrete/controller.php:214
 msgid ""
 "Invalid Key. Please visit the forgot password page again to have a new key "
 "generated."
 msgstr "Μη έγκυρο κλειδί. Παρακαλούμε επισκεφθείτε την σελίδα επαναφοράς κωδικού πρόσβασης ξανά για να δημιουργήσετε ένα νέο κλειδί."
 
-#: concrete/authentication/concrete/controller.php:218
+#: concrete/authentication/concrete/controller.php:223
 msgid "Please provide both username and password."
 msgstr "Παρακαλούμε δώστε το όνομα χρήστη και τον κωδικό πρόσβασης."
 
-#: concrete/authentication/concrete/controller.php:227
-#: concrete/controllers/single_page/login.php:44
+#: concrete/authentication/concrete/controller.php:232
+#: concrete/controllers/single_page/login.php:45
 msgid "Your session has expired. Please sign in again."
 msgstr "Η συνεδρία σας έληξε. Παρακαλώ συνδεθείτε ξανά."
 
-#: concrete/authentication/concrete/controller.php:231
+#: concrete/authentication/concrete/controller.php:236
 msgid ""
 "This account has not yet been validated. Please check the email associated "
 "with this account and follow the link it contains."
 msgstr "Αυτός ο λογαριασμός δεν έχει ακόμη επικυρωθεί. Παρακαλώ ελέγξτε το email που σχετίζεται με αυτόν τον λογαριασμό και ακολουθήστε το link που περιέχει."
 
-#: concrete/authentication/concrete/controller.php:235
+#: concrete/authentication/concrete/controller.php:240
 msgid "Invalid email address or password."
 msgstr "Μη έγκυρη διεύθυνση ηλεκτρονικού ταχυδρομείου ή  κωδικός πρόσβασης."
 
-#: concrete/authentication/concrete/controller.php:237
+#: concrete/authentication/concrete/controller.php:242
 msgid "Invalid username or password."
 msgstr "Μη έγκυρο όνομα χρήστη ή κωδικός πρόσβασης."
 
-#: concrete/authentication/concrete/controller.php:241
-#: concrete/controllers/single_page/login.php:39
+#: concrete/authentication/concrete/controller.php:246
+#: concrete/controllers/single_page/login.php:40
 msgid "This user is inactive. Please contact us regarding this account."
 msgstr "Αυτός ο χρήστης είναι ανενεργός. Παρακαλούμε επικοινωνήστε μαζί μας σχετικά με αυτό το λογαριασμό."
 
-#: concrete/authentication/facebook/hook.php:22
-#: concrete/config/install/base/dashboard.xml:731
-#: concrete/elements/users/confirm_list.php:8
-#: concrete/mail/user_register_approval_required.php:15
-#: concrete/single_pages/account/edit_profile.php:22
-#: concrete/src/User/Search/ColumnSet/DefaultSet.php:30
-#: concrete/themes/greek_yogurt/blog_entry.php:73
-#: concrete/tools/i18n_redactor_js.php:66
-msgid "Email"
-msgstr "Email"
-
-#: concrete/authentication/facebook/hook.php:27
-msgid "Gender"
-msgstr "Φύλλο"
-
-#: concrete/authentication/facebook/hook.php:32
-msgid "Age"
-msgstr "Ηλικία"
-
-#: concrete/authentication/facebook/hook.php:42
-msgid "Successfully detached account."
-msgstr "Επιτυχημένη απομόνωση λογαριασμού "
-
-#: concrete/authentication/facebook/hook.php:59
-msgid "Attach your facebook account to this concrete5 account"
-msgstr "Συνδέστε τον λογαριασμό σας facebook  σε αυτόν το λογαριασμό στο concrete5"
-
-#: concrete/authentication/facebook/hook.php:59
-#: concrete/authentication/facebook/hook.php:64
-msgid "Login with Facebook"
-msgstr "Σύνδεση με Facebook"
-
-#: concrete/authentication/facebook/form.php:5
-#: concrete/authentication/facebook/form.php:8
-msgid "Log in with Facebook"
-msgstr "Σύνδεση μέσω Facebook"
-
-#: concrete/authentication/facebook/type_form.php:4
-msgid "App ID"
-msgstr "App ID"
-
-#: concrete/authentication/facebook/type_form.php:8
-msgid "App Secret"
-msgstr "App Secret"
-
-#: concrete/authentication/facebook/type_form.php:12
-#: concrete/authentication/facebook/type_form.php:30
-msgid "Show secret key"
-msgstr "Εμφάνιση μυστικού κλειδιού"
-
-#: concrete/authentication/facebook/type_form.php:18
-#, php-format
-msgid "<a href=\"%s\" target=\"_blank\">Click here</a> to obtain your access keys."
-msgstr "<a href=\"%s\" target=\"_blank\">Πατήστε Εδώ</a> για να αποκτήσετε τα κλειδιά πρόσβασης σας."
-
-#: concrete/authentication/facebook/type_form.php:27
-msgid "Hide secret key"
-msgstr "Απόκρυψη μυστικού κλειδιού"
-
-#: concrete/authentication/facebook/controller.php:33
-msgid "Something went wrong, please try again."
-msgstr "Κάτι πήγε στραβά, παρακαλώ προσπαθήστε ξανά."
-
-#. %s is the site name
-#: concrete/authentication/facebook/controller.php:40
-#, php-format
-msgid ""
-"<h2>Oh No!</h2>This Facebook account isn't tied to any account of %1$s!"
-msgstr "<h2>Ω Όχι!</h2> Αυτός ο λογαριασμός Facebook δεν συνδέεται με οποιονδήποτε λογαριασμό του %1$s!"
-
-#: concrete/authentication/facebook/controller.php:44
-msgid ""
-"Please login with your Email and Password and then use the Facebook login to"
-" tie them together."
-msgstr "Παρακαλώ συνδεθείτε με το e-mail και τον κωδικό πρόσβασής σας και, στη συνέχεια, χρησιμοποιήστε τη σύνδεση στο Facebook για να τα δέσετε μαζί."
-
-#: concrete/authentication/facebook/controller.php:47
-msgid ""
-"Please login with your Username and Password and then use the Facebook login"
-" to tie them together."
-msgstr "Παρακαλώ συνδεθείτε με το όνομα χρήστη και τον κωδικό σας και στη συνέχεια χρησιμοποιήστε τη σύνδεση στο Facebook για να τα δέσετε μαζί."
-
-#: concrete/authentication/facebook/controller.php:51
-msgid "Successfully attached this Facebook account to your user account."
-msgstr "Επιτυχής επισύναψης αυτού του λογαριασμού Facebook στον λογαριασμό χρήστη σας."
-
-#. %s is the site name
-#: concrete/authentication/facebook/controller.php:55
-#, php-format
-msgid "This Facebook account is already attached to your %s account."
-msgstr "Αυτός ο λογαριασμός Facebook έχει ήδη συνδεθεί στο λογαριασμό σας %s."
-
-#: concrete/authentication/facebook/controller.php:60
-msgid ""
-"<h2>Oh No!</h2>The email used by your Facebook account is already in "
-"use!<br>Please login to your concrete5 account and then use the Facebook "
-"login to tie your accounts together."
-msgstr "<h2>Ω Όχι!</h2>Το μήνυμα ηλεκτρονικού ταχυδρομείου που χρησιμοποιείται  από το λογαριασμό σας στο Facebook είναι ήδη σε χρήση!<br>Παρακαλώ συνδεθείτε στο λογαριασμό concrete5 σας και στη συνέχεια χρησιμοποιήστε τη σύνδεση στο Facebook για να συνδέσει τους λογαριασμούς σας μαζί."
-
-#: concrete/authentication/facebook/controller.php:142
-msgid "This user is not tied to a Facebook account."
-msgstr "Αυτός ο χρήστης δεν είναι συνδεδεμένος με ένα λογαριασμό στο Facebook."
-
-#: concrete/authentication/facebook/controller.php:225
-msgid "This Facebook account is not tied to a user."
-msgstr "Αυτός ο λογαριασμός Facebook δεν είναι συνδεδεμένος με κάποιο χρήστη."
+#: concrete/authentication/facebook/form.php:19
+#: concrete/authentication/facebook/form.php:26
+#: concrete/authentication/facebook/form.php:34
+#: concrete/authentication/facebook/hook.php:5
+#: concrete/authentication/facebook/hook.php:12
+msgid "facebook"
+msgstr ""
 
 #: concrete/controllers/backend/user_interface.php:28
 #: concrete/controllers/backend/user_interface/block.php:47
@@ -403,15 +451,15 @@ msgstr "Φθίνουσα"
 #: concrete/blocks/core_gathering/tools/edit.php:50
 #: concrete/elements/attribute/type_form_required.php:130
 #: concrete/elements/block_footer_edit.php:18
-#: concrete/elements/custom_style.php:337
+#: concrete/elements/custom_style.php:333
 #: concrete/elements/page_types/composer/form/output/buttons.php:13
 #: concrete/elements/permission/detail.php:89
 #: concrete/elements/permission/details/block/timed_guest_access.php:39
 #: concrete/elements/permission/lists/area.php:95
-#: concrete/elements/permission/lists/block.php:64
+#: concrete/elements/permission/lists/block.php:66
 #: concrete/elements/permission/lists/file.php:63
 #: concrete/elements/permission/lists/tree/node.php:66
-#: concrete/single_pages/account/edit_profile.php:87
+#: concrete/single_pages/account/edit_profile.php:85
 #: concrete/single_pages/dashboard/blocks/permissions.php:19
 #: concrete/single_pages/dashboard/files/sets.php:101
 #: concrete/single_pages/dashboard/pages/themes/view.php:80
@@ -443,7 +491,7 @@ msgstr "Φθίνουσα"
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:73
 #: concrete/single_pages/dashboard/system/mail/importers.php:65
 #: concrete/single_pages/dashboard/system/mail/method.php:52
-#: concrete/single_pages/dashboard/system/optimization/cache.php:132
+#: concrete/single_pages/dashboard/system/optimization/cache.php:151
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:190
 #: concrete/single_pages/dashboard/system/permissions/antispam.php:58
 #: concrete/single_pages/dashboard/system/permissions/blacklist.php:67
@@ -452,7 +500,7 @@ msgstr "Φθίνουσα"
 #: concrete/single_pages/dashboard/system/permissions/site.php:60
 #: concrete/single_pages/dashboard/system/permissions/tasks.php:22
 #: concrete/single_pages/dashboard/system/permissions/users.php:22
-#: concrete/single_pages/dashboard/system/registration/authentication.php:95
+#: concrete/single_pages/dashboard/system/registration/authentication.php:102
 #: concrete/single_pages/dashboard/system/registration/open.php:92
 #: concrete/single_pages/dashboard/system/registration/postlogin.php:47
 #: concrete/single_pages/dashboard/system/registration/profiles.php:41
@@ -477,6 +525,7 @@ msgstr "Φθίνουσα"
 #: concrete/tools/users/bulk_group_remove.php:95
 #: concrete/tools/users/customize_search_columns.php:112
 #: concrete/views/dialogs/block/aliasing.php:45
+#: concrete/views/dialogs/block/cache.php:70
 #: concrete/views/dialogs/page/design.php:33
 #: concrete/views/dialogs/page/design/css.php:12
 #: concrete/views/dialogs/search/customize.php:73
@@ -614,12 +663,12 @@ msgstr "Αφαιρέστε τα αρχεία από τον Κατάλογο  inc
 #: concrete/elements/block_footer_edit.php:19
 #: concrete/elements/conversation/display.php:84
 #: concrete/elements/conversation/display.php:87
-#: concrete/elements/custom_style.php:334
+#: concrete/elements/custom_style.php:330
 #: concrete/elements/page_types/composer/form/layout_set/control.php:18
 #: concrete/elements/permission/detail.php:88
 #: concrete/elements/permission/details/block/timed_guest_access.php:38
 #: concrete/elements/permission/lists/area.php:94
-#: concrete/elements/permission/lists/block.php:63
+#: concrete/elements/permission/lists/block.php:65
 #: concrete/elements/permission/lists/file.php:62
 #: concrete/elements/permission/lists/tree/node.php:65
 #: concrete/single_pages/account/messages/inbox.php:178
@@ -647,7 +696,7 @@ msgstr "Αφαιρέστε τα αρχεία από τον Κατάλογο  inc
 #: concrete/single_pages/dashboard/system/basics/social.php:36
 #: concrete/single_pages/dashboard/system/basics/social.php:77
 #: concrete/single_pages/dashboard/system/files/permissions.php:22
-#: concrete/single_pages/dashboard/system/registration/authentication.php:90
+#: concrete/single_pages/dashboard/system/registration/authentication.php:97
 #: concrete/single_pages/dashboard/users/add.php:109
 #: concrete/single_pages/dashboard/users/add_group.php:216
 #: concrete/single_pages/dashboard/users/groups.php:198
@@ -687,6 +736,7 @@ msgstr "Αφαιρέστε τα αρχεία από τον Κατάλογο  inc
 #: concrete/tools/users/bulk_group_remove.php:94
 #: concrete/views/dialogs/area/layout/presets.php:21
 #: concrete/views/dialogs/block/aliasing.php:44
+#: concrete/views/dialogs/block/cache.php:69
 #: concrete/views/dialogs/page/add_block.php:94
 #: concrete/views/dialogs/page/add_external.php:23
 #: concrete/views/dialogs/page/delete.php:8
@@ -696,7 +746,7 @@ msgstr "Αφαιρέστε τα αρχεία από τον Κατάλογο  inc
 #: concrete/views/dialogs/page/design.php:32
 #: concrete/views/dialogs/page/design/css.php:11
 #: concrete/views/dialogs/search/customize.php:72
-#: concrete/views/image-editor/control-sets/position.php:95
+#: concrete/views/image-editor/control-sets/position.php:94
 #: concrete/views/image-editor/editor.php:72
 #: concrete/views/panels/details/page/caching.php:114
 #: concrete/views/panels/details/page/location.php:53
@@ -737,7 +787,7 @@ msgid "File storage location saved successfully."
 msgstr "Η θέση αποθήκευσης του αρχείου αποθηκεύτηκε με επιτυχία."
 
 #: concrete/elements/block_area_footer.php:58
-#: concrete/elements/block_header_view.php:174
+#: concrete/elements/block_header_view.php:181
 #: concrete/elements/page_controls_footer.php:103
 #: concrete/elements/page_controls_footer.php:106
 #: concrete/elements/panels/page.php:104
@@ -899,7 +949,7 @@ msgid "Are you sure you want to delete the following files?"
 msgstr "Είστε σίγουροι ότι θέλετε να διαγράψετε τα ακόλουθα αρχεία;"
 
 #: concrete/attributes/select/type_form.php:19
-#: concrete/elements/block_header_view.php:159
+#: concrete/elements/block_header_view.php:162
 #: concrete/elements/conversation/message.php:45
 #: concrete/elements/conversation/message/topic.php:42
 #: concrete/elements/files/search.php:25
@@ -1023,7 +1073,7 @@ msgid "Flat View"
 msgstr "Επίπεδη Προβολή"
 
 #: concrete/blocks/search/controller.php:93
-#: concrete/config/install/packages/elemental_full/content.xml:2339
+#: concrete/config/install/packages/elemental_full/content.xml:2341
 #: concrete/elements/files/search.php:32 concrete/elements/group/search.php:26
 #: concrete/elements/pages/search.php:39 concrete/elements/users/search.php:49
 #: concrete/single_pages/dashboard/conversations/messages.php:17
@@ -1040,6 +1090,7 @@ msgstr "Επίπεδη Προβολή"
 #: concrete/single_pages/members/directory.php:12
 #: concrete/single_pages/members/directory.php:13
 #: concrete/tools/sitemap_search_selector.php:37
+#: concrete/views/panels/add.php:259
 #: concrete/views/panels/page/attributes.php:9
 msgid "Search"
 msgstr "Αναζήτηση"
@@ -1269,6 +1320,7 @@ msgstr "Μόνο χρήστες που είναι μέλη όλων των επ�
 #: concrete/tools/permissions/dialogs/access/entity/types/group_combination.php:23
 #: concrete/views/dialogs/area/layout/presets.php:14
 #: concrete/views/dialogs/block/aliasing.php:20
+#: concrete/views/dialogs/block/cache.php:11
 #: concrete/views/dialogs/page/add_external.php:7
 #: concrete/views/panels/details/page/attributes.php:24
 msgid "Name"
@@ -1434,7 +1486,7 @@ msgstr "Ανιχνεύτηκαν Απαγορευμένες λέξεις ."
 msgid "Add Message"
 msgstr "Προσθήκη μηνύματος"
 
-#: concrete/blocks/html/controller.php:28 concrete/config/app.php:369
+#: concrete/blocks/html/controller.php:28 concrete/config/app.php:377
 #: concrete/tools/i18n_redactor_js.php:13
 msgid "HTML"
 msgstr "HTML"
@@ -1661,6 +1713,16 @@ msgstr "Σύνδεσμος εικόνας στο Web "
 #: concrete/src/File/Type/Type.php:73 concrete/tools/i18n_redactor_js.php:65
 msgid "Text"
 msgstr "Κείμενο"
+
+#: concrete/config/install/base/dashboard.xml:731
+#: concrete/elements/users/confirm_list.php:8
+#: concrete/mail/user_register_approval_required.php:15
+#: concrete/single_pages/account/edit_profile.php:22
+#: concrete/src/User/Search/ColumnSet/DefaultSet.php:30
+#: concrete/themes/greek_yogurt/blog_entry.php:73
+#: concrete/tools/i18n_redactor_js.php:66
+msgid "Email"
+msgstr "Email"
 
 #: concrete/blocks/image/form.php:56
 #: concrete/blocks/image_slider/form_setup_html.php:205
@@ -1898,7 +1960,7 @@ msgstr "**Κανένα"
 msgid "Custom Label"
 msgstr "Προσαρμοσμένες Ετικέτες"
 
-#: concrete/elements/custom_style.php:315 concrete/tools/i18n_js.php:48
+#: concrete/elements/custom_style.php:311 concrete/tools/i18n_js.php:48
 #: concrete/tools/page_types/composer/form/edit_control.php:50
 msgid "Custom Template"
 msgstr "Προσαρμοσμένα Προτύπα"
@@ -1982,7 +2044,7 @@ msgstr "Επικόλληση από το Πρόχειρο"
 msgid "Design"
 msgstr "Design"
 
-#: concrete/elements/block_header_view.php:143 concrete/tools/i18n_js.php:21
+#: concrete/elements/block_header_view.php:146 concrete/tools/i18n_js.php:21
 msgid "Edit Layout"
 msgstr "Επεξεργασία Layout"
 
@@ -2063,7 +2125,7 @@ msgid ""
 "is active."
 msgstr "Η Ρύθμιση δικαιωμάτων έχει αποθηκευτεί. Πρέπει να ολοκληρώσετε τη ροή εργασίας πριν αυτή η αλλαγή είναι ενεργή."
 
-#: concrete/elements/block_header_view.php:134 concrete/tools/i18n_js.php:42
+#: concrete/elements/block_header_view.php:137 concrete/tools/i18n_js.php:42
 msgid "Manage Stack Contents"
 msgstr "Διαχειριστείτε Περιεχόμενα Στοίβας"
 
@@ -2077,7 +2139,7 @@ msgstr "Σύγκριση Εκδόσεων"
 msgid "Blocks arranged successfully."
 msgstr "Τα Μπλοκ  ανατοποθετήθηκαν με επιτυχία."
 
-#: concrete/elements/block_header_view.php:154 concrete/tools/i18n_js.php:47
+#: concrete/elements/block_header_view.php:157 concrete/tools/i18n_js.php:47
 msgid "Copy to Clipboard"
 msgstr "Αντιγραφή στο πρόχειρο"
 
@@ -2097,7 +2159,7 @@ msgstr "Είστε βέβαιοι ότι θέλετε να αφαιρέσετε 
 msgid "Are you sure you want to delete this custom style preset?"
 msgstr "Είστε σίγουροι ότι θέλετε να διαγράψετε αυτό το προσαρμοσμένο στυλ;"
 
-#: concrete/elements/block_header_view.php:180 concrete/tools/i18n_js.php:55
+#: concrete/elements/block_header_view.php:187 concrete/tools/i18n_js.php:55
 msgid "Setup on Child Pages"
 msgstr "Ρύθμιση στις Θυγατρικές Σελίδες"
 
@@ -2128,6 +2190,7 @@ msgstr "Καθαρισμός"
 msgid "This request took too long."
 msgstr "Το αίτημα αυτό πήρε πάρα πολύ χρόνο."
 
+#: concrete/src/Authentication/Type/OAuth/OAuth1a/GenericOauth1aTypeController.php:44
 #: concrete/src/Error/Handler/ErrorHandler.php:39
 #: concrete/src/Error/Handler/ErrorHandler.php:45
 #: concrete/tools/i18n_js.php:62
@@ -2214,7 +2277,7 @@ msgid "User Settings saved."
 msgstr "Οι Ρυθμίσεις Χρήστη αποθηκεύτηκαν."
 
 #: concrete/single_pages/dashboard/extend/install.php:208
-#: concrete/single_pages/dashboard/pages/themes/inspect.php:117
+#: concrete/single_pages/dashboard/pages/themes/inspect.php:107
 #: concrete/single_pages/dashboard/pages/themes/view.php:18
 #: concrete/src/Application/Service/UserInterface/Help.php:180
 #: concrete/tools/i18n_js.php:81 concrete/tools/pages/permissions.php:166
@@ -2222,7 +2285,7 @@ msgstr "Οι Ρυθμίσεις Χρήστη αποθηκεύτηκαν."
 msgid "Ok"
 msgstr "Εντάξει"
 
-#: concrete/elements/block_header_view.php:177 concrete/tools/i18n_js.php:82
+#: concrete/elements/block_header_view.php:184 concrete/tools/i18n_js.php:82
 msgid "Schedule Guest Access"
 msgstr "Προγραμματίστε την Πρόσβαση Επισκεπτών"
 
@@ -2373,8 +2436,8 @@ msgstr "Προεπισκόπηση"
 #: concrete/config/install/base/dashboard.xml:801
 #: concrete/elements/page_controls_footer.php:87
 #: concrete/elements/page_controls_footer.php:89
-#: concrete/elements/panels/page.php:79 concrete/single_pages/login.php:40
-#: concrete/single_pages/login.php:70 concrete/tools/i18n_js.php:133
+#: concrete/elements/panels/page.php:79 concrete/single_pages/login.php:42
+#: concrete/single_pages/login.php:72 concrete/tools/i18n_js.php:133
 #: concrete/tools/i18n_js.php:136 concrete/views/panels/page/attributes.php:6
 msgid "Attributes"
 msgstr "Χαρακτηριστικά"
@@ -2382,7 +2445,7 @@ msgstr "Χαρακτηριστικά"
 #: concrete/elements/page_controls_footer.php:95
 #: concrete/elements/page_controls_footer.php:97
 #: concrete/elements/panels/page.php:92 concrete/tools/i18n_js.php:134
-#: concrete/tools/i18n_js.php:135
+#: concrete/tools/i18n_js.php:135 concrete/views/dialogs/block/cache.php:24
 msgid "Caching"
 msgstr "Προσωρινή αποθήκευση Cach"
 
@@ -2645,7 +2708,7 @@ msgstr "%s λεπτά"
 msgid "Until manually cleared"
 msgstr "Μέχρι εκκαθαριστεί χειροκίνητα"
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:78
+#: concrete/single_pages/dashboard/system/optimization/cache.php:97
 #: concrete/tools/pages/speed_settings.php:122
 msgid "Full Page Caching"
 msgstr "Caching Πλήρους Σελίδας"
@@ -2847,12 +2910,12 @@ msgstr "Οι Σελίδες διαγράφτηκαν με επιτυχία."
 #: concrete/controllers/panel/detail/page/caching.php:24
 #: concrete/controllers/panel/detail/page/caching.php:38
 #: concrete/controllers/panel/detail/page/location.php:95
-#: concrete/controllers/panel/detail/page/permissions.php:128
+#: concrete/controllers/panel/detail/page/permissions.php:129
 #: concrete/controllers/panel/detail/page/seo.php:46
 msgid "Page Updated"
 msgstr "Η Σελίδα Ενημερώθηκε"
 
-#: concrete/controllers/panel/detail/page/permissions.php:129
+#: concrete/controllers/panel/detail/page/permissions.php:130
 msgid "Page permissions have been saved."
 msgstr "Οι άδειες της σελίδας έχουν αποθηκευτεί."
 
@@ -2957,7 +3020,7 @@ msgstr "Δεν έχετε δικαιώματα για να προσθέσετε 
 #: concrete/elements/files/search.php:59
 #: concrete/views/dialogs/page/add.php:21
 #: concrete/views/dialogs/page/add_block_list.php:54
-#: concrete/views/panels/add.php:331
+#: concrete/views/panels/add.php:335
 msgid "Other"
 msgstr "Άλλα"
 
@@ -2965,13 +3028,17 @@ msgstr "Άλλα"
 msgid "Defaults updated."
 msgstr "Οι προεπιλογές ενημερώθηκαν."
 
+#: concrete/controllers/dialog/block/cache.php:48
+msgid "Advanced block settings saved successfully."
+msgstr ""
+
 #: concrete/controllers/dialog/area/design.php:33
 #: concrete/controllers/dialog/block/design.php:29
 msgid "Custom design reset."
 msgstr "Επαναφορά Προσαρμοσμένου design."
 
 #: concrete/controllers/dialog/area/design.php:95
-#: concrete/controllers/dialog/block/design.php:126
+#: concrete/controllers/dialog/block/design.php:96
 msgid "Design updated."
 msgstr "Το Design ενημερώθηκε."
 
@@ -3687,7 +3754,7 @@ msgid "Password updated successfully."
 msgstr "Κωδικός πρόσβασης ενημερώθηκε επιτυχώς."
 
 #: concrete/controllers/single_page/dashboard/users/search.php:379
-#: concrete/controllers/single_page/login.php:204
+#: concrete/controllers/single_page/login.php:206
 msgctxt "Default locale"
 msgid "** Default"
 msgstr "** Προεπιλογή "
@@ -3740,7 +3807,7 @@ msgstr "Μη έγκυρο Όνομα Χρήστη"
 
 #: concrete/controllers/single_page/account/edit_profile.php:107
 #: concrete/controllers/single_page/dashboard/users/add.php:100
-#: concrete/controllers/single_page/login.php:331
+#: concrete/controllers/single_page/login.php:333
 #: concrete/controllers/single_page/register.php:119
 #: concrete/src/Page/Type/Composer/Control/CollectionAttributeControl.php:136
 #, php-format
@@ -4165,7 +4232,7 @@ msgid "Invalid Error Code"
 msgstr "Μη έγκυρος κωδικός σφάλματος"
 
 #: concrete/controllers/single_page/dashboard/system/registration/authentication.php:21
-#: concrete/controllers/single_page/login.php:315
+#: concrete/controllers/single_page/login.php:317
 msgid "Invalid Authentication Type"
 msgstr "Άκυρος Τύπος ελέγχου ταυτότητας"
 
@@ -4351,7 +4418,7 @@ msgid ""
 "in order to upgrade in this manner."
 msgstr "Αδύνατη η εγγραφή στο config/site.php. Πρέπει να δώσετε στο config/site.php δυνατότητα εγγραφής, προκειμένου να αναβαθμιστεί με αυτόν τον τρόπο."
 
-#: concrete/controllers/single_page/dashboard/system/optimization/cache.php:44
+#: concrete/controllers/single_page/dashboard/system/optimization/cache.php:46
 msgid "Cache settings saved."
 msgstr "Οι Ρυθμίσεις Cache αποθηκεύτηκαν."
 
@@ -4518,17 +4585,27 @@ msgstr "Πρέπει να καθορίσετε τουλάχιστον ένα π�
 msgid "Invalid page type publish target type."
 msgstr "Άκυρος τύπος σελίδας δημοσίευσης τύπου στόχου."
 
-#: concrete/controllers/single_page/dashboard/pages/themes/inspect.php:32
-msgid ""
-"Theme installed. You may automatically create page types from template files"
-" contained in your theme using the form below."
-msgstr "Το Θέμα σας εγκαταστάθηκε. Μπορείτε να δημιουργήσετε αυτόματα τύπους σελίδων από τα αρχεία προτύπων που περιέχονται στο θέμα σας χρησιμοποιώντας την παρακάτω φόρμα."
+#: concrete/controllers/single_page/dashboard/pages/themes/inspect.php:18
+msgid "Page Templates in Theme"
+msgstr ""
 
-#: concrete/controllers/single_page/dashboard/pages/themes/inspect.php:48
+#: concrete/controllers/single_page/dashboard/pages/themes/inspect.php:40
+msgid ""
+"Theme installed. You may automatically create page templates from template "
+"files contained in your theme using the form below."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/pages/themes/inspect.php:43
+msgid ""
+"Theme activated. You may automatically create page templates from template "
+"files contained in your theme using the form below."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/pages/themes/inspect.php:60
 msgid "You must specify at least one template to create."
 msgstr "Πρέπει να καθορίσετε τουλάχιστον ένα πρότυπο για να δημιουργήσετε."
 
-#: concrete/controllers/single_page/dashboard/pages/themes/inspect.php:62
+#: concrete/controllers/single_page/dashboard/pages/themes/inspect.php:77
 msgid "Files in the theme were activated successfully."
 msgstr "Τα αρχεία στο Θέμα ενεργοποιήθηκαν με επιτυχία."
 
@@ -4571,10 +4648,6 @@ msgstr "Το Θέμα απεγκαταστάθηκε."
 #: concrete/controllers/single_page/dashboard/pages/themes.php:118
 msgid "That theme has already been installed."
 msgstr "Αυτό το θέμα έχει ήδη εγκατασταθεί."
-
-#: concrete/controllers/single_page/dashboard/pages/themes.php:144
-msgid "Theme activated"
-msgstr "Το Θέμα ενεργοποιήθηκε"
 
 #: concrete/controllers/single_page/dashboard/pages/attributes.php:14
 msgid "Page Attribute Updated."
@@ -4711,20 +4784,11 @@ msgid ""
 "will not be able to login until your account has been approved."
 msgstr "Έχετε εγγραφεί, αλλά ο διαχειριστής του ιστοτόπου πρέπει να εγκρίνει τον λογαριασμό σας, δεν θα είστε σε θέση να συνδεθείτε μέχρι να εγκριθεί ο λογαριασμός σας."
 
-#: concrete/controllers/single_page/login.php:74
-#: concrete/controllers/single_page/login.php:78
-msgid "Invalid method."
-msgstr "Μη έγκυρη μέθοδος."
-
-#: concrete/controllers/single_page/login.php:136
-msgid "You can only identify as the admin user using the concrete login."
-msgstr "Μπορείτε μόνο να αναγνωριστήται ως διαχειριστής χρησιμοποιώντας τη σύνδεση του concrete. "
-
-#: concrete/controllers/single_page/login.php:281
+#: concrete/controllers/single_page/login.php:283
 msgid "User is not registered. Check your authentication controller."
 msgstr "Ο χρήστης δεν έχει καταχωρηθεί. Ελέγξτε τον ελεγκτή ταυτότητας."
 
-#: concrete/controllers/single_page/login.php:307
+#: concrete/controllers/single_page/login.php:309
 msgid "Invalid Request, please attempt login again."
 msgstr "Μη έγκυρη Αίτηση, παρακαλώ δοκιμάστε ξανά είσοδος."
 
@@ -4756,7 +4820,7 @@ msgid "KB"
 msgstr "KB"
 
 #: concrete/controllers/search/files.php:238
-#: concrete/single_pages/dashboard/pages/themes/inspect.php:35
+#: concrete/single_pages/dashboard/pages/themes/inspect.php:25
 #: concrete/single_pages/dashboard/workflow/workflows.php:47
 #: concrete/src/File/Search/ColumnSet/DefaultSet.php:26
 #: concrete/src/Page/Search/ColumnSet/DefaultSet.php:34
@@ -4961,55 +5025,55 @@ msgstr "Η επέκταση PDO δεν έχει φορτωθεί."
 msgid "concrete5 is already installed."
 msgstr "Το concrete5 είναι ήδη εγκατεστημένο."
 
-#: concrete/controllers/install.php:216
+#: concrete/controllers/install.php:217
 msgid ""
 "Your configuration directory config/ does not appear to be writable by the "
 "web server."
 msgstr "Ο Φάκελος ρυθμίσεων σας config/ δεν φαίνεται να είναι εγγράψιμος από τον web server."
 
-#: concrete/controllers/install.php:220
+#: concrete/controllers/install.php:221
 msgid ""
 "Your files directory files/ does not appear to be writable by the web "
 "server."
 msgstr "Ο  φάκελος αρχείων σας files/ δεν φαίνεται να είναι εγγράψιμος από τον web server."
 
-#: concrete/controllers/install.php:224
+#: concrete/controllers/install.php:225
 msgid ""
 "Your packages directory packages/ does not appear to be writable by the web "
 "server."
 msgstr "Ο φάκελος Πακέτων σας packages/ δεν φαίνεται να είναι εγγράψιμος από τον web server."
 
-#: concrete/controllers/install.php:275
+#: concrete/controllers/install.php:276
 #, php-format
 msgctxt "InstallError"
 msgid "%s.<br><br>Trace:<br>%s"
 msgstr "%s.<br><br>Ίχνος:<br>%s"
 
-#: concrete/controllers/install.php:303
+#: concrete/controllers/install.php:304
 msgid "Please specify your site's name"
 msgstr "Παρακαλείστε να αναφέρετε το όνομα της ιστοσελίδας σας"
 
-#: concrete/controllers/install.php:304
+#: concrete/controllers/install.php:305
 msgid "Please specify a valid email address"
 msgstr "Παρακαλείστε  να αναφέρετε μια έγκυρη διεύθυνση email"
 
-#: concrete/controllers/install.php:305
+#: concrete/controllers/install.php:306
 msgid "You must specify a valid database name"
 msgstr "Πρέπει να καθορίσετε ένα έγκυρο όνομα βάσης δεδομένων"
 
-#: concrete/controllers/install.php:306
+#: concrete/controllers/install.php:307
 msgid "You must specify a valid database server"
 msgstr "Πρέπει να ορίσετε έναν έγκυρο server βάσης δεδομένων"
 
-#: concrete/controllers/install.php:358
+#: concrete/controllers/install.php:359
 msgid "Unable to open config/app.php for writing."
 msgstr "Δεν είναι δυνατόν να ανοίξει το config/app.php για γράψιμο."
 
-#: concrete/controllers/install.php:379
+#: concrete/controllers/install.php:380
 msgid "Unable to open config/site_user.php for writing."
 msgstr "Είναι αδύνατο το άνοιγμα του  config/site_user.php για γράψιμο."
 
-#: concrete/controllers/install.php:401
+#: concrete/controllers/install.php:402
 msgid "You must select a valid sample content starting point."
 msgstr "Πρέπει να επιλέξετε ένα έγκυρο περιεχόμενο δείγματος ως σημείο εκκίνησης."
 
@@ -5643,7 +5707,7 @@ msgstr "Εφαρμογή"
 
 #: concrete/blocks/file/add.php:6 concrete/blocks/file/controller.php:25
 #: concrete/blocks/file/edit.php:10
-#: concrete/single_pages/dashboard/pages/themes/inspect.php:34
+#: concrete/single_pages/dashboard/pages/themes/inspect.php:24
 #: concrete/single_pages/dashboard/reports/statistics.php:77
 #: concrete/single_pages/dashboard/system/backup/backup.php:101
 #: concrete/src/File/Type/Type.php:85 concrete/src/File/Version.php:471
@@ -5724,6 +5788,24 @@ msgstr "Ο έλεγχος ταυτότητας του πυρήνα του concre
 #: concrete/src/Authentication/AuthenticationType.php:356
 msgid "This authentication type does not require any customization."
 msgstr "Αυτός ο Τύπος Ελέγχου Ταυτότητας δεν απαιτεί καμία προσαρμογή."
+
+#: concrete/src/Authentication/Type/OAuth/OAuth1a/GenericOauth1aTypeController.php:39
+msgid ""
+"No local user account associated with this user, please log in with a local "
+"account and connect your account from your user profile."
+msgstr ""
+
+#: concrete/src/Authentication/Type/OAuth/OAuth1a/GenericOauth1aTypeController.php:47
+msgid "Failed to complete authentication."
+msgstr ""
+
+#: concrete/src/Authentication/Type/OAuth/OAuth1a/GenericOauth1aTypeController.php:75
+msgid "Successfully attached."
+msgstr ""
+
+#: concrete/src/Authentication/Type/OAuth/OAuth1a/GenericOauth1aTypeController.php:79
+msgid "Unable to attach user."
+msgstr ""
 
 #. %s is a number
 #: concrete/src/Utility/Service/Number.php:104
@@ -5876,7 +5958,7 @@ msgid ""
 "the administrator of this site for more information."
 msgstr "Αδύνατον να ολοκληρωθεί η δράση: Η διεύθυνση IP σας έχει απαγορευτεί. Παρακαλούμε επικοινωνήστε με το διαχειριστή του site για περισσότερες πληροφορίες."
 
-#: concrete/config/install/base/permissions.xml:276
+#: concrete/config/install/base/permissions.xml:278
 #: concrete/src/Permission/Access/Entity/GroupEntity.php:18
 msgctxt "PermissionAccessEntityTypeName"
 msgid "Group"
@@ -5886,7 +5968,7 @@ msgstr "Ομάδα"
 msgid "(Deleted Group)"
 msgstr "(Διαγραμμένη Ομάδα)"
 
-#: concrete/config/install/base/permissions.xml:369
+#: concrete/config/install/base/permissions.xml:371
 #: concrete/src/Permission/Access/Entity/ConversationMessageAuthorEntity.php:42
 msgctxt "PermissionAccessEntityTypeName"
 msgid "Message Author"
@@ -5897,12 +5979,12 @@ msgid "Message Author"
 msgstr "Συντάκτης Μηνύματος"
 
 #: concrete/config/install/base/dashboard.xml:117
-#: concrete/single_pages/dashboard/users/search.php:282
+#: concrete/single_pages/dashboard/users/search.php:285
 #: concrete/src/Permission/Access/Entity/UserEntity.php:66
 msgid "Add User"
 msgstr "Προσθήκη Χρήστη"
 
-#: concrete/config/install/base/permissions.xml:296
+#: concrete/config/install/base/permissions.xml:298
 #: concrete/src/Permission/Access/Entity/UserEntity.php:68
 msgctxt "PermissionAccessEntityTypeName"
 msgid "User"
@@ -5916,13 +5998,13 @@ msgstr "(Διαγραμμένος Χρήστης)"
 msgid "Add Group Set"
 msgstr "Προσθήκη Σετ Ομάδας"
 
-#: concrete/config/install/base/permissions.xml:316
+#: concrete/config/install/base/permissions.xml:318
 #: concrete/src/Permission/Access/Entity/GroupSetEntity.php:16
 msgctxt "PermissionAccessEntityTypeName"
 msgid "Group Set"
 msgstr "Σετ Ομάδας"
 
-#: concrete/config/install/base/permissions.xml:363
+#: concrete/config/install/base/permissions.xml:365
 #: concrete/src/Permission/Access/Entity/FileUploaderEntity.php:36
 msgctxt "PermissionAccessEntityTypeName"
 msgid "File Uploader"
@@ -5932,7 +6014,7 @@ msgstr "Μεταφορτωτής αρχείων"
 msgid "File Uploader"
 msgstr "Μεταφορτωτής αρχείων"
 
-#: concrete/config/install/base/permissions.xml:357
+#: concrete/config/install/base/permissions.xml:359
 #: concrete/src/Permission/Access/Entity/PageOwnerEntity.php:41
 msgctxt "PermissionAccessEntityTypeName"
 msgid "Page Owner"
@@ -5942,7 +6024,7 @@ msgstr "Ιδιοκτήτης της σελίδας"
 msgid "Add Group Combination"
 msgstr "Προσθήκη Συνδυασμού Ομάδας"
 
-#: concrete/config/install/base/permissions.xml:336
+#: concrete/config/install/base/permissions.xml:338
 #: concrete/src/Permission/Access/Entity/GroupCombinationEntity.php:17
 msgctxt "PermissionAccessEntityTypeName"
 msgid "Group Combination"
@@ -6433,32 +6515,32 @@ msgstr "Λεπτομέρειες Μικρογραφίας Διαχείρισης
 msgid "Unable to install database: %s"
 msgstr "Δεν είναι δυνατή η εγκατάσταση της βάσης δεδομένων: %s"
 
-#: concrete/src/Package/StartingPointPackage.php:229
+#: concrete/src/Package/StartingPointPackage.php:233
 msgctxt "GroupName"
 msgid "Guest"
 msgstr "Επισκέπτης"
 
-#: concrete/src/Package/StartingPointPackage.php:229
+#: concrete/src/Package/StartingPointPackage.php:233
 msgctxt "GroupDescription"
 msgid "The guest group represents unregistered visitors to your site."
 msgstr "Η ομάδα επισκεπτών αντιπροσωπεύει μη εγγεγραμμένους επισκέπτες στο site σας."
 
-#: concrete/src/Package/StartingPointPackage.php:230
+#: concrete/src/Package/StartingPointPackage.php:234
 msgctxt "GroupName"
 msgid "Registered Users"
 msgstr "Εγγεγραμμένοι χρήστες"
 
-#: concrete/src/Package/StartingPointPackage.php:230
+#: concrete/src/Package/StartingPointPackage.php:234
 msgctxt "GroupDescription"
 msgid "The registered users group represents all user accounts."
 msgstr "Η ομάδα εγγεγραμμένων χρηστών αντιπροσωπεύει όλους τους λογαριασμούς χρηστών."
 
-#: concrete/src/Package/StartingPointPackage.php:231
+#: concrete/src/Package/StartingPointPackage.php:235
 msgctxt "GroupName"
 msgid "Administrators"
 msgstr "Διαχειριστές"
 
-#: concrete/src/Package/StartingPointPackage.php:247
+#: concrete/src/Package/StartingPointPackage.php:251
 msgid "Won a Badge"
 msgstr "Κερδίσατε ένα Badge"
 
@@ -6661,7 +6743,7 @@ msgstr "Έγκριση Μετακίνησης"
 msgid "On %s, user %s submitted the following request: %s"
 msgstr "Στο %s, ο χρήστης %s υπέβαλε το ακόλουθο αίτημα: %s"
 
-#: concrete/config/install/base/permissions.xml:272
+#: concrete/config/install/base/permissions.xml:274
 #: concrete/src/Workflow/BasicWorkflow.php:83
 msgid "Basic Workflow"
 msgstr "Βασική Ροή Εργασιών"
@@ -7513,6 +7595,7 @@ msgstr ""
 msgid "Intermediate"
 msgstr ""
 
+#: concrete/elements/block_header_view.php:174
 #: concrete/elements/custom_style.php:301
 #: concrete/src/Marketplace/RemoteItem.php:52
 #: concrete/views/panels/page/design/customize.php:65
@@ -7609,7 +7692,7 @@ msgstr "%s: Βασικά Στοιχεία"
 #: concrete/single_pages/dashboard/system/attributes/sets.php:140
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:43
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:101
-#: concrete/single_pages/dashboard/system/registration/authentication.php:27
+#: concrete/single_pages/dashboard/system/registration/authentication.php:31
 msgid "Handle"
 msgstr "Δείκτης "
 
@@ -7741,7 +7824,6 @@ msgstr "Επιλέξτε Πεδίο"
 
 #: concrete/blocks/page_attribute_display/form.php:31
 #: concrete/elements/files/search.php:120
-#: concrete/single_pages/dashboard/pages/themes/inspect.php:21
 msgid "Thumbnail"
 msgstr "Μικρογραφία"
 
@@ -7865,7 +7947,7 @@ msgid "My Account"
 msgstr "Ο λογαριασμός μου"
 
 #: concrete/config/install/packages/elemental_blank/content.xml:43
-#: concrete/config/install/packages/elemental_full/content.xml:874
+#: concrete/config/install/packages/elemental_full/content.xml:876
 #: concrete/elements/account/menu.php:60
 #: concrete/single_pages/dashboard/system/view.php:41
 #: concrete/single_pages/dashboard/view.php:42
@@ -8161,8 +8243,8 @@ msgstr "Το στυλ"
 #: concrete/elements/custom_style.php:167
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:57
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:103
-#: concrete/views/image-editor/control-sets/position.php:18
-#: concrete/views/image-editor/control-sets/position.php:68
+#: concrete/views/image-editor/control-sets/position.php:17
+#: concrete/views/image-editor/control-sets/position.php:67
 msgid "Width"
 msgstr "Μήκος"
 
@@ -8237,15 +8319,11 @@ msgstr "Προσαρμοσμένες Κλάσεις CSS, Όνομα Μπλοκ, 
 msgid "Custom Class"
 msgstr "Προσαρμοσμένη Κλάση"
 
-#: concrete/elements/custom_style.php:311
-msgid "Block Name"
-msgstr "Όνομα Μπλοκ"
-
-#: concrete/elements/custom_style.php:317
+#: concrete/elements/custom_style.php:313
 msgid "None selected"
 msgstr "Δεν Επιλέχτηκε τίποτα "
 
-#: concrete/elements/custom_style.php:329
+#: concrete/elements/custom_style.php:325
 msgid "Clear Styles"
 msgstr "Απαλοιφή Στυλ"
 
@@ -8710,7 +8788,7 @@ msgstr "Τα Δικαιώματα για αυτόν τον κόμβο κληρο
 #: concrete/elements/permission/lists/area.php:15
 #: concrete/elements/permission/lists/area.php:35
 #: concrete/elements/permission/lists/area.php:45
-#: concrete/elements/permission/lists/block.php:15
+#: concrete/elements/permission/lists/block.php:14
 #: concrete/elements/permission/lists/file.php:14
 #: concrete/elements/permission/lists/tree/node.php:16
 msgid "Override Permissions"
@@ -8746,7 +8824,7 @@ msgid ""
 "this block."
 msgstr "Τα Δικαιώματα για αυτό το μπλοκ εξαρτώνται από την περιοχή που περιέχει αυτό το μπλοκ."
 
-#: concrete/elements/permission/lists/block.php:23
+#: concrete/elements/permission/lists/block.php:24
 msgid ""
 "Permissions for this block currently override those of the area and page."
 msgstr "Τα Δικαιώματα για αυτό το μπλοκ υπερισχύουν τώρα αυτών που υπάρχουν για την περιοχή και τη σελίδα."
@@ -8875,6 +8953,7 @@ msgstr "Όλα εκτός από τα Επιλεγμένα"
 
 #: concrete/config/install/base/dashboard.xml:283
 #: concrete/elements/page_types/form/base.php:70
+#: concrete/single_pages/dashboard/pages/themes/view.php:52
 msgid "Page Templates"
 msgstr "Πρότυπα Σελίδας"
 
@@ -8895,32 +8974,36 @@ msgstr "Διαδρομή Ρίζας "
 msgid "Relative Path"
 msgstr "Σχετική Διαδρομή"
 
-#: concrete/elements/block_header_view.php:85
-#: concrete/elements/block_header_view.php:89
+#: concrete/elements/block_header_view.php:88
+#: concrete/elements/block_header_view.php:92
 msgid "Do you want to delete this block?"
 msgstr "Θέλετε να διαγράψετε αυτό το μπλοκ;"
 
-#: concrete/elements/block_header_view.php:87
+#: concrete/elements/block_header_view.php:90
 msgid ""
 "Do you want to delete this block? This item is an original. If you delete "
 "it, you will delete all blocks aliased to it"
 msgstr "Θέλετε να διαγράψετε αυτό το μπλοκ; Αυτό το στοιχείο είναι ένα πρωτότυπο. Αν το διαγράψετε, θα διαγράψετε όλα τα μπλοκ που το χρησιμοποιούν ως ψευδώνυμο."
 
-#: concrete/elements/block_header_view.php:145
 #: concrete/elements/block_header_view.php:148
+#: concrete/elements/block_header_view.php:151
 msgid "Edit Block"
 msgstr "Επεξεργασία Μπλοκ"
 
-#: concrete/elements/block_header_view.php:148
+#: concrete/elements/block_header_view.php:151
 #, php-format
 msgid "Edit %s"
 msgstr "Επεξεργασία %s"
 
-#: concrete/elements/block_header_view.php:167
+#: concrete/elements/block_header_view.php:171
 msgid "Design &amp; Custom Template"
 msgstr "Σχεδιασμός & Προσαρμοσμένα Πρότυπα"
 
 #: concrete/elements/block_header_view.php:174
+msgid "Advanced Block Settings"
+msgstr ""
+
+#: concrete/elements/block_header_view.php:181
 msgid "Block Permissions"
 msgstr "Μπλοκ Δικαιώματα"
 
@@ -8959,7 +9042,7 @@ msgstr "Πάρτε το URL του μηνύματος."
 #: concrete/blocks/form/mini_survey.php:178
 #: concrete/blocks/form/mini_survey.php:180 concrete/blocks/form/view.php:76
 #: concrete/elements/conversation/display.php:30
-#: concrete/single_pages/login.php:104
+#: concrete/single_pages/login.php:106
 msgid "Submit"
 msgstr "Υποβολή"
 
@@ -9044,16 +9127,16 @@ msgstr "Κλίμακα"
 #: concrete/blocks/youtube/form_setup_html.php:28
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:64
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:104
-#: concrete/views/image-editor/control-sets/position.php:28
-#: concrete/views/image-editor/control-sets/position.php:78
+#: concrete/views/image-editor/control-sets/position.php:27
+#: concrete/views/image-editor/control-sets/position.php:77
 msgid "Height"
 msgstr "Ύψος"
 
-#: concrete/views/image-editor/control-sets/position.php:60
+#: concrete/views/image-editor/control-sets/position.php:59
 msgid "Crop Image"
 msgstr "Περικοπή Εικόνας"
 
-#: concrete/views/image-editor/control-sets/position.php:98
+#: concrete/views/image-editor/control-sets/position.php:97
 msgid "Finalize Crop"
 msgstr "Οριστικοποίηση Περικοπής"
 
@@ -9113,6 +9196,56 @@ msgstr "Ημερομηνία Δημιουργίας"
 msgid "Date Modified"
 msgstr "Ημερομηνία Τροποποίησης"
 
+#: concrete/views/dialogs/block/cache.php:14
+msgid "Block Name"
+msgstr "Όνομα Μπλοκ"
+
+#: concrete/views/dialogs/block/cache.php:15
+msgid ""
+"This can be useful when working with a block programmatically. This is "
+"rarely used or needed."
+msgstr ""
+
+#: concrete/views/dialogs/block/cache.php:26
+#, php-format
+msgid ""
+"Block caching is currently disabled globally. These settings won't take "
+"affect until block caching is turned on. You can turn these settings on from"
+" the <a href=\"%s\">Cache and Speed Settings</a> page in the Dashboard."
+msgstr ""
+
+#: concrete/views/dialogs/block/cache.php:30
+msgid "Override Block Type"
+msgstr ""
+
+#: concrete/views/dialogs/block/cache.php:34
+msgid "Override block type cache settings."
+msgstr ""
+
+#: concrete/blocks/autonav/form_setup_html.php:16
+#: concrete/blocks/page_list/page_list_form.php:11
+#: concrete/config/install/base/dashboard.xml:774
+#: concrete/single_pages/dashboard/system/mail/importers.php:19
+#: concrete/views/dialogs/block/cache.php:39
+msgid "Settings"
+msgstr "Ρυθμίσεις"
+
+#: concrete/views/dialogs/block/cache.php:43
+msgid "Cache block output."
+msgstr ""
+
+#: concrete/views/dialogs/block/cache.php:49
+msgid "Cache block output even for logged in users."
+msgstr ""
+
+#: concrete/views/dialogs/block/cache.php:55
+msgid "Cache block output on HTTP POST."
+msgstr ""
+
+#: concrete/views/dialogs/block/cache.php:61
+msgid "Cache for how long (in seconds)?"
+msgstr ""
+
 #: concrete/views/dialogs/block/edit.php:6
 msgid ""
 "Unable to retrieve block object. If this block has been moved please reload "
@@ -9165,7 +9298,7 @@ msgstr "Πρότυπο Σελίδας"
 #: concrete/views/dialogs/page/add_block_list.php:64
 #: concrete/views/dialogs/page/clipboard.php:22
 #: concrete/views/panels/add.php:91 concrete/views/panels/add.php:192
-#: concrete/views/panels/add.php:302 concrete/views/panels/add.php:344
+#: concrete/views/panels/add.php:306 concrete/views/panels/add.php:348
 #, php-format
 msgid "Add %s"
 msgstr "Προσθήκη %s"
@@ -9263,7 +9396,7 @@ msgid "Basic Properties"
 msgstr "Βασικές ιδιότητες"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:52
-#: concrete/single_pages/dashboard/system/registration/authentication.php:26
+#: concrete/single_pages/dashboard/system/registration/authentication.php:30
 #: concrete/views/dialogs/file/properties.php:36
 msgid "ID"
 msgstr "ID"
@@ -9465,7 +9598,7 @@ msgstr "Επιλέξτε Νέα Μητρική Σελίδα"
 #: concrete/views/frontend/install.php:75
 #: concrete/views/frontend/install.php:133
 #: concrete/views/frontend/install.php:325
-#: concrete/views/frontend/install.php:534
+#: concrete/views/frontend/install.php:540
 #: concrete/views/panels/details/page/versions.php:6
 #, php-format
 msgid "Version %s"
@@ -9645,11 +9778,11 @@ msgstr[1] "%d Μπλοκ"
 msgid "An error occured while deleting this item:"
 msgstr "Παρουσιάστηκε σφάλμα κατά τη διαγραφή αυτού του στοιχείου:"
 
-#: concrete/views/panels/add.php:321
+#: concrete/views/panels/add.php:325
 msgid "No block types available."
 msgstr "Δεν υπάρχουν διαθέσιμοι τύποι μπλοκ."
 
-#: concrete/views/panels/add.php:368
+#: concrete/views/panels/add.php:372
 msgid "Get More Blocks"
 msgstr ""
 
@@ -9734,7 +9867,7 @@ msgstr "Για να εγκαταστήσετε to concrete5, παρακαλού�
 #: concrete/views/frontend/install.php:132
 #: concrete/views/frontend/install.php:258
 #: concrete/views/frontend/install.php:324
-#: concrete/views/frontend/install.php:533
+#: concrete/views/frontend/install.php:539
 msgid "Install concrete5"
 msgstr "Εγκατάσταση concrete5 "
 
@@ -9852,132 +9985,143 @@ msgstr "Επέκταση File Info"
 msgid "You must enable PHP's Fileinfo Extension."
 msgstr "Πρέπει να ενεργοποιήσετε την επέκταση Fileinfo της PHP"
 
-#: concrete/views/frontend/install.php:381
+#: concrete/views/frontend/install.php:375
+msgid "ASP Style Tags Disabled"
+msgstr ""
+
+#: concrete/views/frontend/install.php:376
+msgid "You must disable PHP's ASP Style Tags."
+msgstr ""
+
+#: concrete/views/frontend/install.php:387
 msgid "Image Manipulation Available"
 msgstr "Χειραγώγησης Φωτογραφίας θα είναι διαθέσιμη"
 
-#: concrete/views/frontend/install.php:383
+#: concrete/views/frontend/install.php:389
 msgid ""
 "concrete5 requires GD library 2.0.1 or Imagick and ImageMagick 6.2.9 or "
 "greater."
 msgstr "Το concrete5 απαιτεί βιβλιοθήκη GD 2.0.1 ή Imagick και ImageMagick 6.2.9 ή μεγαλύτερο."
 
-#: concrete/views/frontend/install.php:387
+#: concrete/views/frontend/install.php:393
 msgid "XML Support"
 msgstr "Υποστήριξη XML"
 
-#: concrete/views/frontend/install.php:389
+#: concrete/views/frontend/install.php:395
 msgid "concrete5 requires PHP XML Parser and SimpleXML extensions"
 msgstr "Το concrete5 απαιτεί PHP XML Parser και SimpleXML επεκτάσεις"
 
-#: concrete/views/frontend/install.php:393
+#: concrete/views/frontend/install.php:399
 msgid "Writable Files and Configuration Directories"
 msgstr "Εγγράψιμα Αρχεία και Κατάλογοι Διαμόρφωσης"
 
-#: concrete/views/frontend/install.php:395
+#: concrete/views/frontend/install.php:401
 msgid ""
 "The packages/, application/config/ and application/files/ directories must "
 "be writable by your web server."
 msgstr "Οι φάκελοι packages/, application/config/ and application/files/ πρέπει να είναι εγγράψημοι από τον web server σας."
 
-#: concrete/views/frontend/install.php:399
+#: concrete/views/frontend/install.php:405
 msgid "Cookies Enabled"
 msgstr "Τα cookies είναι ενεργοποιημένα"
 
-#: concrete/views/frontend/install.php:401
+#: concrete/views/frontend/install.php:407
 msgid "Cookies must be enabled in your browser to install concrete5."
 msgstr "Τα cookies πρέπει να είναι ενεργοποιημένα στο browser σας για να εγκαταστήσετε το concrete5."
 
-#: concrete/views/frontend/install.php:405
+#: concrete/views/frontend/install.php:411
 msgid "Internationalization Support"
 msgstr "Υποστήριξη Internationalization"
 
-#: concrete/views/frontend/install.php:407
+#: concrete/views/frontend/install.php:413
 msgid "You must enable ctype support in your copy of PHP."
 msgstr "Πρέπει να ενεργοποιήσετε την υποστήριξη ctype της PHP."
 
-#: concrete/views/frontend/install.php:411
+#: concrete/views/frontend/install.php:417
 msgid "PHP Comments Preserved"
 msgstr "Τα PHP σχόλια διατηρήθηκαν "
 
-#: concrete/views/frontend/install.php:412
+#: concrete/views/frontend/install.php:418
 msgid ""
 "concrete5 is not compatible with opcode caches that strip PHP comments. "
 "Certain configurations of eAccelerator and Zend opcode caching may use this "
 "behavior, and it must be disabled."
 msgstr "Το concrete5 δεν είναι συμβατό με opcode caches  που αφαιρούν τα PHP σχόλια. Ορισμένες ρυθμίσεις του eAccelerator και Zend opcode caching μπορούν να χρησιμοποιήσουν αυτήν τη συμπεριφορά, και πρέπει να απενεργοποιηθούν"
 
-#: concrete/views/frontend/install.php:423
+#: concrete/views/frontend/install.php:429
 msgid "Testing Optional Items"
 msgstr "Δοκιμάζοντας Επιπρόσθετα Στοιχεία"
 
-#: concrete/views/frontend/install.php:435
+#: concrete/views/frontend/install.php:441
 msgid "Remote File Importing Available"
 msgstr "Η Εισαγωγή Απομακρυσμένων Αρχείων είναι Διαθέσιμα"
 
-#: concrete/views/frontend/install.php:437
+#: concrete/views/frontend/install.php:443
 msgid ""
 "Remote file importing through the file manager requires the iconv PHP "
 "extension."
 msgstr "Η Εισαγωγή Απομακρυσμένων Αρχείων μέσω του Διαχειριστή Αρχείων απαιτεί την PHP επέκταση iconv."
 
-#: concrete/views/frontend/install.php:449
+#: concrete/views/frontend/install.php:455
 msgid "Zip Support"
 msgstr "Υποστήριξη Zip"
 
-#: concrete/views/frontend/install.php:451
+#: concrete/views/frontend/install.php:457
 msgid ""
 "Downloading zipped files from the file manager and remote updating requires "
 "the Zip extension."
 msgstr "Για να κατεβάσετε συμπιεσμένα αρχεία από το διαχειριστή αρχείων και για απομακρυσμένη ενημέρωση απαιτεί την επέκταση Zip."
 
-#: concrete/views/frontend/install.php:462
+#: concrete/views/frontend/install.php:468
 msgid "Memory Requirements"
 msgstr "Απαιτήσεις Μνήμης"
 
-#: concrete/views/frontend/install.php:484
+#: concrete/views/frontend/install.php:490
 #, php-format
 msgid ""
 "concrete5 will not install with less than 24MB of RAM.\n"
 "                            Your memory limit is currently %sMB. Please increase your memory_limit using ini_set."
 msgstr "Το concrete5 δεν θα εγκαταστήσει με λιγότερο από 24MB RAM\nΤο όριο της μνήμης σας είναι %sMB. Παρακαλούμε αυξήστε το όριο μνήμης σας χρησιμοποιώντας το ini_set."
 
-#: concrete/views/frontend/install.php:489
+#: concrete/views/frontend/install.php:495
 #, php-format
 msgid ""
 "concrete5 runs best with at least 64MB of RAM.\n"
 "                            Your memory limit is currently %sMB. You may experience problems uploading and resizing large images, and may have to install concrete5 without sample content."
 msgstr "Το concrete5 τρέχει καλύτερα με τουλάχιστον 64MB RAM\nΤο όριο της μνήμης σας είναι σήμερα %sMB. Μπορείτε να αντιμετωπίσετε προβλήματα μεταφόρτωσης και αλλαγή μεγέθους μεγάλες εικόνες, και μπορεί να χρειαστεί να εγκαταστήσετε το concrete5 χωρίς δείγμα περιεχομένου."
 
-#: concrete/views/frontend/install.php:493
+#: concrete/views/frontend/install.php:499
 #, php-format
-msgid ""
-"concrete5 runs best with at least 64MB of RAM.\n"
-"                            Your memory limit is currently %sMB."
-msgstr "Το concrete5 τρέχει καλύτερα με τουλάχιστον 64MB RAM.\nΤο όριο της μνήμης σας είναι σήμερα %sMB."
+msgid "Memory limit %sMB."
+msgstr ""
 
-#: concrete/views/frontend/install.php:510
+#: concrete/views/frontend/install.php:515
 msgid "Continue to Installation"
 msgstr "Συνέχεια στην Εγκατάσταση"
 
-#: concrete/views/frontend/install.php:515
+#: concrete/views/frontend/install.php:520
 msgid ""
 "There are problems with your installation environment. Please correct them "
 "and click the button below to re-run the pre-installation tests."
 msgstr "Υπάρχει πρόβλημα με το περιβάλλον εγκατάστασης. Παρακαλώ διορθώστε τα και κάντε κλικ στο κουμπί παρακάτω για να εκτελέσετε ξανά το πρόγραμμα δοκιμών προ-εγκατάστασης."
 
-#: concrete/views/frontend/install.php:518
+#: concrete/views/frontend/install.php:523
 msgid "Run Tests"
 msgstr "Εκτελέστε τις Δοκιμές"
 
-#: concrete/views/frontend/install.php:523
+#: concrete/views/frontend/install.php:528
+msgctxt "InstallationHelpForums"
+msgid "http://www.concrete5.org/community/forums/installation"
+msgstr ""
+
+#: concrete/views/frontend/install.php:529
 #, php-format
 msgid ""
 "Having trouble? Check the <a href=\"%s\">installation help forums</a>, or <a"
 " href=\"%s\">have us host a copy</a> for you."
 msgstr "Αντιμετωπίζετε πρόβλημα; Ελέγξτε τα <a href=\"%s\">φόρουμ βοήθειας εγκατάστασης </a>, ή <a href=\"%s\">αφήστε ένα μήνυμα να το ανεβάσουμε</a>."
 
-#: concrete/views/frontend/install.php:553
+#: concrete/views/frontend/install.php:559
 msgid "Choose Language"
 msgstr "Επιλέξτε Γλώσσα"
 
@@ -10229,149 +10373,149 @@ msgstr "Κενό site"
 msgid "Creates an empty site using the unstyled Elemental theme."
 msgstr "Δημιουργεί ένα κενό site χρησιμοποιώντας το unstyled Elemental θέμα."
 
-#: concrete/config/app.php:364
+#: concrete/config/app.php:372
 msgid "JPEG"
 msgstr "JPEG"
 
-#: concrete/config/app.php:365
+#: concrete/config/app.php:373
 msgid "GIF"
 msgstr "GIF"
 
-#: concrete/config/app.php:366
+#: concrete/config/app.php:374
 msgid "PNG"
 msgstr "PNG"
 
-#: concrete/config/app.php:367
+#: concrete/config/app.php:375
 msgid "Windows Bitmap"
 msgstr "Windows Bitmap"
 
-#: concrete/config/app.php:368
+#: concrete/config/app.php:376
 msgid "TIFF"
 msgstr "TIFF"
 
-#: concrete/config/app.php:370
+#: concrete/config/app.php:378
 msgid "Flash"
 msgstr "Flash"
 
-#: concrete/blocks/feature/form.php:4 concrete/config/app.php:371
+#: concrete/blocks/feature/form.php:4 concrete/config/app.php:379
 #: concrete/single_pages/dashboard/pages/templates/add.php:27
 #: concrete/single_pages/dashboard/pages/templates/view.php:39
 msgid "Icon"
 msgstr "Εικονίδιο "
 
-#: concrete/config/app.php:372
+#: concrete/config/app.php:380
 msgid "SVG"
 msgstr "SVG"
 
-#: concrete/config/app.php:373
+#: concrete/config/app.php:381
 msgid "Windows Video"
 msgstr "Windows Βίντεο"
 
-#: concrete/config/app.php:374
+#: concrete/config/app.php:382
 msgid "Quicktime"
 msgstr "Quicktime"
 
-#: concrete/config/app.php:375
+#: concrete/config/app.php:383
 msgid "AVI"
 msgstr "AVI"
 
-#: concrete/config/app.php:376
+#: concrete/config/app.php:384
 msgid "3GP"
 msgstr "3GP"
 
-#: concrete/attributes/textarea/type_form.php:9 concrete/config/app.php:377
+#: concrete/attributes/textarea/type_form.php:9 concrete/config/app.php:385
 msgid "Plain Text"
 msgstr "Απλό Κείμενο"
 
-#: concrete/config/app.php:378
+#: concrete/config/app.php:386
 msgid "CSV"
 msgstr "CSV"
 
-#: concrete/config/app.php:379
+#: concrete/config/app.php:387
 msgid "XML"
 msgstr "XML"
 
-#: concrete/config/app.php:380
+#: concrete/config/app.php:388
 msgid "PHP"
 msgstr "PHP"
 
-#: concrete/config/app.php:381
+#: concrete/config/app.php:389
 msgid "MS Word"
 msgstr "MS Word"
 
-#: concrete/config/app.php:382
+#: concrete/config/app.php:390
 msgid "Stylesheet"
 msgstr "Φύλλα Stylesheet"
 
-#: concrete/config/app.php:383 concrete/config/app.php:386
+#: concrete/config/app.php:391 concrete/config/app.php:394
 msgid "MP4"
 msgstr "MP4"
 
-#: concrete/config/app.php:384
+#: concrete/config/app.php:392
 msgid "FLV"
 msgstr "FLV"
 
-#: concrete/config/app.php:385
+#: concrete/config/app.php:393
 msgid "MP3"
 msgstr "MP3"
 
-#: concrete/config/app.php:387
+#: concrete/config/app.php:395
 msgid "Realaudio"
 msgstr "Realaudio"
 
-#: concrete/config/app.php:388
+#: concrete/config/app.php:396
 msgid "Windows Audio"
 msgstr "Windows Audio"
 
-#: concrete/config/app.php:389
+#: concrete/config/app.php:397
 msgid "Rich Text"
 msgstr "Εμπλουτισμένο Κείμενο"
 
-#: concrete/config/app.php:390
+#: concrete/config/app.php:398
 msgid "JavaScript"
 msgstr "JavaScript"
 
-#: concrete/config/app.php:391
+#: concrete/config/app.php:399
 msgid "PDF"
 msgstr "PDF"
 
-#: concrete/config/app.php:392
+#: concrete/config/app.php:400
 msgid "Photoshop"
 msgstr "Photoshop"
 
-#: concrete/config/app.php:393
+#: concrete/config/app.php:401
 msgid "MPEG"
 msgstr "MPEG"
 
-#: concrete/config/app.php:394
+#: concrete/config/app.php:402
 msgid "MS Excel"
 msgstr "MS Excel"
 
-#: concrete/config/app.php:395
+#: concrete/config/app.php:403
 msgid "MS Powerpoint"
 msgstr "MS Powerpoint"
 
-#: concrete/config/app.php:396
+#: concrete/config/app.php:404
 msgid "TAR Archive"
 msgstr "Αρχείο TAR "
 
-#: concrete/config/app.php:397
+#: concrete/config/app.php:405
 msgid "Zip Archive"
 msgstr "Αρχείο zip "
 
-#: concrete/config/app.php:398
+#: concrete/config/app.php:406
 msgid "GZip Archive"
 msgstr "Αρχείο GZip"
 
-#: concrete/config/app.php:399
+#: concrete/config/app.php:407
 msgid "OGG"
 msgstr "OGG"
 
-#: concrete/config/app.php:400
+#: concrete/config/app.php:408
 msgid "OGG Video"
 msgstr "Βίντεο OGG"
 
-#: concrete/config/app.php:401
+#: concrete/config/app.php:409
 msgid "WebM"
 msgstr "WebM"
 
@@ -10428,7 +10572,7 @@ msgid "Add Service"
 msgstr "Προσθήκη Υπηρεσίας"
 
 #: concrete/blocks/share_this_page/form.php:6
-#: concrete/config/install/packages/elemental_full/content.xml:1180
+#: concrete/config/install/packages/elemental_full/content.xml:1182
 msgid "Services"
 msgstr "Υπηρεσίες"
 
@@ -11585,13 +11729,6 @@ msgstr "Δημοσίευση αποτελεσμάτων σε διαφορετι�
 #: concrete/blocks/search/form_setup_html.php:90
 msgid "OR Path"
 msgstr "Διαδρομή OR"
-
-#: concrete/blocks/autonav/form_setup_html.php:16
-#: concrete/blocks/page_list/page_list_form.php:11
-#: concrete/config/install/base/dashboard.xml:774
-#: concrete/single_pages/dashboard/system/mail/importers.php:19
-msgid "Settings"
-msgstr "Ρυθμίσεις"
 
 #: concrete/blocks/page_list/page_list_form.php:15
 #: concrete/single_pages/dashboard/system/seo/bulk.php:71
@@ -13474,12 +13611,12 @@ msgstr "Αυτό θα τελειώσει την τρέχουσα περίοδο 
 msgid "Are you sure you want to permanently remove this user?"
 msgstr "Είστε βέβαιοι ότι θέλετε να καταργήσετε οριστικά αυτόν το χρήστη;"
 
-#: concrete/single_pages/account/edit_profile.php:69
+#: concrete/single_pages/account/edit_profile.php:67
 #: concrete/single_pages/dashboard/users/search.php:243
 msgid "Change Password"
 msgstr "Αλλαγή κωδικού"
 
-#: concrete/single_pages/dashboard/users/search.php:292
+#: concrete/single_pages/dashboard/users/search.php:295
 msgid ""
 "You do not have access to user search. This setting may be changed in the "
 "access section of the dashboard settings page."
@@ -14148,20 +14285,20 @@ msgstr "Προσαρμοσμένοι Τύποι Χαρακτηριστικών"
 msgid "There are no available attribute types awaiting installation."
 msgstr "Δεν υπάρχουν διαθέσιμοι Τύποι Χαρακτηριστικών για εγκατάσταση."
 
-#: concrete/single_pages/dashboard/system/registration/authentication.php:16
+#: concrete/single_pages/dashboard/system/registration/authentication.php:20
 #, php-format
 msgid "Edit %s Authentication Type"
 msgstr "Επεξεργασία %s Τύπου Ελέγχου Ταυτότητας"
 
-#: concrete/single_pages/dashboard/system/registration/authentication.php:28
+#: concrete/single_pages/dashboard/system/registration/authentication.php:32
 msgid "Display Name"
 msgstr "Εμφάνιση Ονόματος"
 
-#: concrete/single_pages/dashboard/system/registration/authentication.php:93
+#: concrete/single_pages/dashboard/system/registration/authentication.php:100
 msgid "Disable"
 msgstr "Απενεργοποίηση"
 
-#: concrete/single_pages/dashboard/system/registration/authentication.php:93
+#: concrete/single_pages/dashboard/system/registration/authentication.php:100
 msgid "Enable"
 msgstr "Ενεργοποίηση"
 
@@ -14517,7 +14654,8 @@ msgstr "Off - Καλό για ανάπτυξη προσαρμοσμένων μπ
 #: concrete/single_pages/dashboard/system/optimization/cache.php:18
 #: concrete/single_pages/dashboard/system/optimization/cache.php:36
 #: concrete/single_pages/dashboard/system/optimization/cache.php:54
-#: concrete/single_pages/dashboard/system/optimization/cache.php:72
+#: concrete/single_pages/dashboard/system/optimization/cache.php:73
+#: concrete/single_pages/dashboard/system/optimization/cache.php:91
 msgid "On - Helps speed up a live site."
 msgstr "On - συμβάλλει στην επιτάχυνση ενός εν ενεργεία ιστότοπου."
 
@@ -14536,69 +14674,81 @@ msgid "Off - Good for active theme development when using LESS files."
 msgstr "Off - Καλό για ενεργό ανάπτυξη θέματος όταν χρησιμοποιούνται αρχεία LESS."
 
 #: concrete/single_pages/dashboard/system/optimization/cache.php:42
+msgid "Determines whether "
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/optimization/cache.php:42
+msgid "Compress LESS Output."
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/optimization/cache.php:47
+msgid "Off - Good for debugging generated CSS output."
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/optimization/cache.php:61
 msgid "Stores the generation of CSS and JavaScript assets"
 msgstr "Αποθηκεύει τη δημιουργία CSS και JavaScript στοιχείων"
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:42
+#: concrete/single_pages/dashboard/system/optimization/cache.php:61
 msgid "CSS and JavaScript Cache"
 msgstr "CSS και JavaScript Cache"
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:47
+#: concrete/single_pages/dashboard/system/optimization/cache.php:66
 msgid "Off - Good for active block and site development."
 msgstr "Off - Καλό για ενεργά μπλοκ και ανάπτυξη ιστοσελίδων."
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:60
+#: concrete/single_pages/dashboard/system/optimization/cache.php:79
 msgid "Stores the location and existence of source code files"
 msgstr "Αποθηκεύει την τοποθεσία και την ύπαρξη αρχείων πηγαίου κώδικα"
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:60
+#: concrete/single_pages/dashboard/system/optimization/cache.php:79
 msgid "Overrides Cache"
 msgstr "Παρακάμπτει τη Μνήμη Cache"
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:65
+#: concrete/single_pages/dashboard/system/optimization/cache.php:84
 msgid "Off - Good for development."
 msgstr "Off - Καλό για ανάπτυξη λογισμικού."
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:78
+#: concrete/single_pages/dashboard/system/optimization/cache.php:97
 msgid "Stores the output of an entire page"
 msgstr "Αποθηκεύει την έξοδο ολόκληρης της σελίδας"
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:82
+#: concrete/single_pages/dashboard/system/optimization/cache.php:101
 msgid "Off - Turn it on by hand for specific pages."
 msgstr "Off - Ενεργοποιήστε χειροκίνητα για συγκεκριμένες σελίδες."
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:89
+#: concrete/single_pages/dashboard/system/optimization/cache.php:108
 msgid "On - If blocks on the particular page allow it."
 msgstr "On - Αν τα μπλοκ στη συγκεκριμένη σελίδα το επιτρέπουν."
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:96
+#: concrete/single_pages/dashboard/system/optimization/cache.php:115
 msgid "On - In all cases."
 msgstr "On - Σε όλες τις περιπτώσεις."
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:102
+#: concrete/single_pages/dashboard/system/optimization/cache.php:121
 msgid ""
 "Sets the amount of time to store the page output before generating a new "
 "version"
 msgstr "Ορίζει το χρονικό διάστημα για να αποθηκεύσει την εξόδο της σελίδας πριν από τη δημιουργία μιας νέας έκδοσης"
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:102
+#: concrete/single_pages/dashboard/system/optimization/cache.php:121
 msgid "Expire Pages from Cache"
 msgstr "Λήξη Σελίδων από την Cache"
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:107
+#: concrete/single_pages/dashboard/system/optimization/cache.php:126
 #, php-format
 msgid "Every %s (default setting)."
 msgstr "Κάθε %s (προεπιλεγμένη ρύθμιση)."
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:114
+#: concrete/single_pages/dashboard/system/optimization/cache.php:133
 msgid "Only when manually removed or the cache is cleared."
 msgstr "Μόνο όταν αφαιρεθεί χειροκίνητα ή όταν καθαρίζετε η μνήμη cache."
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:122
+#: concrete/single_pages/dashboard/system/optimization/cache.php:141
 msgid "Every "
 msgstr "Κάθε"
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:124
+#: concrete/single_pages/dashboard/system/optimization/cache.php:143
 msgid " minutes."
 msgstr "λεπτά."
 
@@ -15127,11 +15277,6 @@ msgstr "Να Εφαρμοστεί αυτό το θέμα σε κάθε σελί�
 msgid "No themes are installed."
 msgstr "Δεν έχουν εγκατασταθεί θέματα."
 
-#: concrete/config/install/base/dashboard.xml:221
-#: concrete/single_pages/dashboard/pages/themes/view.php:52
-msgid "Inspect"
-msgstr "Επιθεωρήστε"
-
 #: concrete/single_pages/dashboard/pages/themes/view.php:69
 #: concrete/single_pages/dashboard/pages/themes/view.php:72
 msgid "Mobile Theme"
@@ -15157,76 +15302,69 @@ msgstr "Θέλετε περισσότερα θέματα;"
 msgid "You can download themes and add-ons from the concrete5 marketplace."
 msgstr "Μπορείτε να κατεβάσετε Θέματα και add-ons από την marketplace του concrete5."
 
-#: concrete/single_pages/dashboard/pages/themes/inspect.php:10
-msgid "Inspect Theme"
-msgstr "Επιθεωρήστε το Θέμα"
+#: concrete/single_pages/dashboard/pages/themes/inspect.php:13
+#, php-format
+msgid "%s Theme"
+msgstr ""
 
-#: concrete/single_pages/dashboard/pages/themes/inspect.php:16
-msgid "Theme name: "
-msgstr "Όνομα Θέματος:"
-
-#: concrete/single_pages/dashboard/pages/themes/inspect.php:30
-msgid "Files in Theme"
-msgstr "Αρχεία στο Θέμα"
-
-#: concrete/single_pages/dashboard/pages/themes/inspect.php:36
+#: concrete/single_pages/dashboard/pages/themes/inspect.php:26
 msgid "Action to take"
 msgstr "Δράση για να"
 
-#: concrete/single_pages/dashboard/pages/themes/inspect.php:48
+#: concrete/single_pages/dashboard/pages/themes/inspect.php:38
 msgid "There are no templates in this file."
 msgstr "Δεν υπάρχουν πρότυπα σε αυτό το αρχείο."
 
-#: concrete/single_pages/dashboard/pages/themes/inspect.php:59
+#: concrete/single_pages/dashboard/pages/themes/inspect.php:49
 msgid "Wrapper for static pages."
 msgstr "Ενδιάμεσο κάλυμμα για στατικές σελίδες."
 
-#: concrete/single_pages/dashboard/pages/themes/inspect.php:62
+#: concrete/single_pages/dashboard/pages/themes/inspect.php:52
 msgid "Custom page class file."
 msgstr "Προσαρμοσμένο αρχείο κλάσης σελίδας"
 
-#: concrete/single_pages/dashboard/pages/themes/inspect.php:65
+#: concrete/single_pages/dashboard/pages/themes/inspect.php:55
 msgid "Default template."
 msgstr "Προεπιλεγμένο πρότυπο."
 
-#: concrete/single_pages/dashboard/pages/themes/inspect.php:68
+#: concrete/single_pages/dashboard/pages/themes/inspect.php:58
 msgid "Template for internal concrete5 page."
 msgstr "Πρότυπο για την εσωτερική σελίδα του concrete5"
 
-#: concrete/single_pages/dashboard/pages/themes/inspect.php:71
+#: concrete/single_pages/dashboard/pages/themes/inspect.php:61
 msgid "New template."
 msgstr "Νέο πρότυπο."
 
-#: concrete/single_pages/dashboard/pages/themes/inspect.php:74
+#: concrete/single_pages/dashboard/pages/themes/inspect.php:64
 msgid "Existing page template."
 msgstr "Υφιστάμενο πρότυπο σελίδας."
 
-#: concrete/single_pages/dashboard/pages/themes/inspect.php:83
+#: concrete/single_pages/dashboard/pages/themes/inspect.php:73
 msgid "None. This file will automatically be used."
 msgstr "Κανένα. Αυτό το αρχείο θα χρησιμοποιηθεί αυτόματα."
 
-#: concrete/single_pages/dashboard/pages/themes/inspect.php:86
+#: concrete/single_pages/dashboard/pages/themes/inspect.php:76
 msgid ""
 "None. This file will automatically be used for pages without a template."
 msgstr "Κανένα. Αυτό το αρχείο θα χρησιμοποιηθεί αυτόματα για σελίδες χωρίς πρότυπο."
 
-#: concrete/single_pages/dashboard/pages/themes/inspect.php:89
+#: concrete/single_pages/dashboard/pages/themes/inspect.php:79
 #, php-format
 msgid ""
 "None. This file will automatically be used by the <strong>%s</strong> page."
 msgstr "Κανένα. Αυτό το αρχείο θα χρησιμοποιηθεί αυτόματα από τη σελίδα <strong>%s</strong>."
 
-#: concrete/single_pages/dashboard/pages/themes/inspect.php:93
+#: concrete/single_pages/dashboard/pages/themes/inspect.php:83
 msgid "Create page template."
 msgstr "Δημιουργία προτύπου σελίδας."
 
-#: concrete/single_pages/dashboard/pages/themes/inspect.php:96
+#: concrete/single_pages/dashboard/pages/themes/inspect.php:86
 #, php-format
 msgid ""
 "None. This file will be used by pages with the <strong>%s</strong> template."
 msgstr "Τίποτα. Αυτό το αρχείο θα χρησιμοποιηθεί από τις σελίδες με το <strong>%s</ strong> πρότυπο."
 
-#: concrete/single_pages/dashboard/pages/themes/inspect.php:115
+#: concrete/single_pages/dashboard/pages/themes/inspect.php:105
 msgid "Return to Themes"
 msgstr "Επιστροφή στα Θέματα"
 
@@ -15282,16 +15420,16 @@ msgid "Time Zone"
 msgstr "Ζώνες ώρας"
 
 #: concrete/config/install/base/dashboard.xml:722
-#: concrete/single_pages/account/edit_profile.php:57
+#: concrete/single_pages/account/edit_profile.php:55
 msgid "Authentication Types"
 msgstr "Τύποι Ελέγχου Ταυτότητας"
 
-#: concrete/single_pages/account/edit_profile.php:73
+#: concrete/single_pages/account/edit_profile.php:71
 msgid "Leave blank to keep current password."
 msgstr "Αφήστε το κενό για να διατηρήσετε τον τρέχοντα κωδικό πρόσβασης."
 
 #: concrete/single_pages/account/avatar.php:61
-#: concrete/single_pages/account/edit_profile.php:86
+#: concrete/single_pages/account/edit_profile.php:84
 #: concrete/single_pages/account/messages/inbox.php:72
 #: concrete/single_pages/account/messages/inbox.php:222
 msgid "Back to Account"
@@ -15436,25 +15574,20 @@ msgstr "Επιστροφή στην Αρχική"
 msgid "Your Details"
 msgstr "Οι λεπτομέριες σας"
 
-#: concrete/config/install/base/login_registration.xml:27
-#: concrete/single_pages/register.php:124
-msgid "Register"
-msgstr "Εγγραφή"
-
 #: concrete/single_pages/login_oauth.php:17
 #, php-format
 msgid "Sign in to %s"
 msgstr "Σύνδεση στο %s"
 
-#: concrete/single_pages/login.php:31
+#: concrete/single_pages/login.php:33
 msgid "Sign into your website."
 msgstr "Σύνδεση στον ιστοχώρο σας."
 
-#: concrete/single_pages/login.php:31
+#: concrete/single_pages/login.php:33
 msgid "Required Attributes"
 msgstr "Απαιτούμενα Χαρακτηριστικά"
 
-#: concrete/single_pages/login.php:127
+#: concrete/single_pages/login.php:129
 msgid "Photo Credit:"
 msgstr "Αναφορά Φωτογραφίας:"
 
@@ -16004,6 +16137,10 @@ msgstr "Αλλάξτε την οψη του site σας."
 #: concrete/config/install/base/dashboard.xml:216
 msgid "new theme, theme, active theme, change theme, template, css"
 msgstr "νέο θέμα, θέμα, ενεργό θέμα, αλλαγή θέματος, πρότυπο, CSS"
+
+#: concrete/config/install/base/dashboard.xml:221
+msgid "Inspect"
+msgstr "Επιθεωρήστε"
 
 #. Keywords for page /dashboard/pages/themes/inspect
 #: concrete/config/install/base/dashboard.xml:224
@@ -16674,28 +16811,28 @@ msgstr "Μάθετε το πώς να χρησιμοποιήσετε το concre
 #: concrete/config/install/packages/elemental_full/content.xml:518
 #: concrete/config/install/packages/elemental_full/content.xml:567
 #: concrete/config/install/packages/elemental_full/content.xml:667
-#: concrete/config/install/packages/elemental_full/content.xml:880
-#: concrete/config/install/packages/elemental_full/content.xml:1181
-#: concrete/config/install/packages/elemental_full/content.xml:1347
-#: concrete/config/install/packages/elemental_full/content.xml:1436
-#: concrete/config/install/packages/elemental_full/content.xml:1524
-#: concrete/config/install/packages/elemental_full/content.xml:1620
-#: concrete/config/install/packages/elemental_full/content.xml:1711
-#: concrete/config/install/packages/elemental_full/content.xml:1799
-#: concrete/config/install/packages/elemental_full/content.xml:1888
-#: concrete/config/install/packages/elemental_full/content.xml:1907
-#: concrete/config/install/packages/elemental_full/content.xml:2109
-#: concrete/config/install/packages/elemental_full/content.xml:2175
-#: concrete/config/install/packages/elemental_full/content.xml:2243
-#: concrete/config/install/packages/elemental_full/content.xml:2311
-#: concrete/config/install/packages/elemental_full/content.xml:2360
-#: concrete/config/install/packages/elemental_full/content.xml:2378
-#: concrete/config/install/packages/elemental_full/content.xml:2552
-#: concrete/config/install/packages/elemental_full/content.xml:2566
-#: concrete/config/install/packages/elemental_full/content.xml:2706
-#: concrete/config/install/packages/elemental_full/content.xml:2883
-#: concrete/config/install/packages/elemental_full/content.xml:2945
-#: concrete/config/install/packages/elemental_full/content.xml:2980
+#: concrete/config/install/packages/elemental_full/content.xml:882
+#: concrete/config/install/packages/elemental_full/content.xml:1183
+#: concrete/config/install/packages/elemental_full/content.xml:1349
+#: concrete/config/install/packages/elemental_full/content.xml:1438
+#: concrete/config/install/packages/elemental_full/content.xml:1526
+#: concrete/config/install/packages/elemental_full/content.xml:1622
+#: concrete/config/install/packages/elemental_full/content.xml:1713
+#: concrete/config/install/packages/elemental_full/content.xml:1801
+#: concrete/config/install/packages/elemental_full/content.xml:1890
+#: concrete/config/install/packages/elemental_full/content.xml:1909
+#: concrete/config/install/packages/elemental_full/content.xml:2111
+#: concrete/config/install/packages/elemental_full/content.xml:2177
+#: concrete/config/install/packages/elemental_full/content.xml:2245
+#: concrete/config/install/packages/elemental_full/content.xml:2313
+#: concrete/config/install/packages/elemental_full/content.xml:2362
+#: concrete/config/install/packages/elemental_full/content.xml:2380
+#: concrete/config/install/packages/elemental_full/content.xml:2554
+#: concrete/config/install/packages/elemental_full/content.xml:2568
+#: concrete/config/install/packages/elemental_full/content.xml:2708
+#: concrete/config/install/packages/elemental_full/content.xml:2885
+#: concrete/config/install/packages/elemental_full/content.xml:2947
+#: concrete/config/install/packages/elemental_full/content.xml:2982
 msgctxt "AreaName"
 msgid "Main"
 msgstr "Κύριο"
@@ -17056,7 +17193,7 @@ msgid "Ability to change just the page template for this page."
 msgstr "Δυνατότητα να αλλάξετε το πρότυπο σελίδας μόνο για αυτή τη σελίδα."
 
 #: concrete/config/install/base/permissions.xml:37
-#: concrete/config/install/base/permissions.xml:73
+#: concrete/config/install/base/permissions.xml:75
 msgctxt "PermissionKeyName"
 msgid "Edit Permissions"
 msgstr "Επεξεργασία Δικαιωμάτων"
@@ -17120,7 +17257,7 @@ msgstr "Μπορεί να μετακινήσει ή να αντιγράψει τ
 
 #: concrete/config/install/base/permissions.xml:43
 #: concrete/config/install/base/permissions.xml:65
-#: concrete/config/install/base/permissions.xml:74
+#: concrete/config/install/base/permissions.xml:76
 msgctxt "PermissionKeyName"
 msgid "Schedule Guest Access"
 msgstr "Προγραμματίστε πρόσβαση επισκεπτών"
@@ -17289,425 +17426,447 @@ msgstr "Ελέγχει αν οι χρήστες μπορούν να αλλάξο
 
 #: concrete/config/install/base/permissions.xml:71
 msgctxt "PermissionKeyName"
+msgid "Edit Cache Settings"
+msgstr ""
+
+#: concrete/config/install/base/permissions.xml:71
+msgctxt "PermissionKeyDescription"
+msgid ""
+"Controls whether users can change the block cache settings for this block "
+"instance."
+msgstr ""
+
+#: concrete/config/install/base/permissions.xml:72
+msgctxt "PermissionKeyName"
+msgid "Edit Name"
+msgstr ""
+
+#: concrete/config/install/base/permissions.xml:72
+msgctxt "PermissionKeyDescription"
+msgid "Controls whether users can change the block's name (rarely used.)"
+msgstr ""
+
+#: concrete/config/install/base/permissions.xml:73
+msgctxt "PermissionKeyName"
 msgid "Delete Block"
 msgstr "Διαγραφή Μπλοκ"
 
-#: concrete/config/install/base/permissions.xml:71
+#: concrete/config/install/base/permissions.xml:73
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users can delete this block. This overrides any area or "
 "page permissions."
 msgstr "Ελέγχει αν οι χρήστες μπορούν να διαγράψουν αυτό το μπλοκ.Αυτό αντικαθιστά οποιαδήποτε δικαιώματα της περιοχή ή της σελίδας."
 
-#: concrete/config/install/base/permissions.xml:72
+#: concrete/config/install/base/permissions.xml:74
 msgctxt "PermissionKeyName"
 msgid "Edit Design"
 msgstr "Επεξεργασία Ντιζάιν"
 
-#: concrete/config/install/base/permissions.xml:72
+#: concrete/config/install/base/permissions.xml:74
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users can set custom design properties or CSS on this "
 "block."
 msgstr "Ελέγχει αν οι χρήστες μπορούν να ορίσετε προσαρμοσμένες ιδιότητες ντιζάιν ή CSS σε αυτό το μπλοκ."
 
-#: concrete/config/install/base/permissions.xml:73
+#: concrete/config/install/base/permissions.xml:75
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users can change permissions on this block, potentially "
 "granting themselves or others greater access."
 msgstr "Ελέγχει αν οι χρήστες μπορούν να αλλάξουν δικαιώματα σε αυτό το μπλοκ, ενδεχομένως χορηγώντας στον εαυτό τους ή σε άλλους ανώτερα δικαιώματα πρόσβασης."
 
-#: concrete/config/install/base/permissions.xml:74
+#: concrete/config/install/base/permissions.xml:76
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users can schedule guest access permissions on this block. "
 "Guest Access is a shortcut for granting permissions just to the Guest Group."
 msgstr "Ελέγχει αν οι χρήστες μπορούν να προγραμματίσουν τα δικαιώματα πρόσβασης επισκεπτών σε αυτό το μπλοκ. Πρόσβαση Επισκεπτών είναι μια συντόμευση για τη χορήγηση δικαιωμάτων μόνο στην ομάδα επισκεπτών."
 
-#: concrete/config/install/base/permissions.xml:76
-#: concrete/config/install/base/permissions.xml:85
+#: concrete/config/install/base/permissions.xml:78
+#: concrete/config/install/base/permissions.xml:87
 msgctxt "PermissionKeyName"
 msgid "View Files"
 msgstr "Προβολή αρχείων"
 
-#: concrete/config/install/base/permissions.xml:76
+#: concrete/config/install/base/permissions.xml:78
 msgctxt "PermissionKeyDescription"
 msgid "Can view and download files in the site."
 msgstr "Μπορεί να δείτε και να κατεβάσετε αρχεία από το site."
 
-#: concrete/config/install/base/permissions.xml:77
+#: concrete/config/install/base/permissions.xml:79
 msgctxt "PermissionKeyName"
 msgid "Search Files in File Manager"
 msgstr "Αναζήτηση  Αρχείων στο Διαχειριστή Αρχείων"
 
-#: concrete/config/install/base/permissions.xml:77
+#: concrete/config/install/base/permissions.xml:79
 msgctxt "PermissionKeyDescription"
 msgid "Can access the file manager"
 msgstr " Μπορεί να έχει πρόσβαση στο διαχειριστή αρχείων"
 
-#: concrete/config/install/base/permissions.xml:78
-#: concrete/config/install/base/permissions.xml:87
+#: concrete/config/install/base/permissions.xml:80
+#: concrete/config/install/base/permissions.xml:89
 msgctxt "PermissionKeyName"
 msgid "Edit File Properties"
 msgstr "Επεξεργασία Ιδιοτήτων Αρχείου"
 
-#: concrete/config/install/base/permissions.xml:78
-#: concrete/config/install/base/permissions.xml:87
+#: concrete/config/install/base/permissions.xml:80
+#: concrete/config/install/base/permissions.xml:89
 msgctxt "PermissionKeyDescription"
 msgid "Can edit a file's properties."
 msgstr "Μπορείτε να επεξεργαστείτε τις ιδιότητες ενός αρχείου."
 
-#: concrete/config/install/base/permissions.xml:79
-#: concrete/config/install/base/permissions.xml:88
+#: concrete/config/install/base/permissions.xml:81
+#: concrete/config/install/base/permissions.xml:90
 msgctxt "PermissionKeyName"
 msgid "Edit File Contents"
 msgstr "Επεξεργασία Περιεχομένων Αρχείου"
 
-#: concrete/config/install/base/permissions.xml:79
+#: concrete/config/install/base/permissions.xml:81
 msgctxt "PermissionKeyDescription"
 msgid "Can edit or replace files in set."
 msgstr "Μπορείτε να επεξεργαστείτε ή να αντικαταστήσετε τα αρχεία στο σετ."
 
-#: concrete/config/install/base/permissions.xml:80
-#: concrete/config/install/base/permissions.xml:89
+#: concrete/config/install/base/permissions.xml:82
+#: concrete/config/install/base/permissions.xml:91
 msgctxt "PermissionKeyName"
 msgid "Copy File"
 msgstr "Αντιγραφή αρχείου"
 
-#: concrete/config/install/base/permissions.xml:80
+#: concrete/config/install/base/permissions.xml:82
 msgctxt "PermissionKeyDescription"
 msgid "Can copy files in file set."
 msgstr "Μπορεί να αντιγράψετε τα αρχεία στο σετ αρχείων."
 
-#: concrete/config/install/base/permissions.xml:81
-#: concrete/config/install/base/permissions.xml:90
+#: concrete/config/install/base/permissions.xml:83
+#: concrete/config/install/base/permissions.xml:92
 msgctxt "PermissionKeyName"
 msgid "Edit File Access"
 msgstr "Επεξεργασία Πρόσβασης στο Αρχείο"
 
-#: concrete/config/install/base/permissions.xml:81
+#: concrete/config/install/base/permissions.xml:83
 msgctxt "PermissionKeyDescription"
 msgid "Can edit access to file sets."
 msgstr "Μπορείτε να επεξεργαστείτε την πρόσβαση σε σετ αρχείων."
 
-#: concrete/config/install/base/permissions.xml:82
+#: concrete/config/install/base/permissions.xml:84
 msgctxt "PermissionKeyName"
 msgid "Delete File Set"
 msgstr "Διαγραφή Σετ Αρχείων"
 
-#: concrete/config/install/base/permissions.xml:82
+#: concrete/config/install/base/permissions.xml:84
 msgctxt "PermissionKeyDescription"
 msgid "Can delete file set."
 msgstr "Δεν μπορείτε να διαγράψετε το σετ αρχείων."
 
-#: concrete/config/install/base/permissions.xml:83
-#: concrete/config/install/base/permissions.xml:91
+#: concrete/config/install/base/permissions.xml:85
+#: concrete/config/install/base/permissions.xml:93
 msgctxt "PermissionKeyName"
 msgid "Delete File"
 msgstr "Διαγραφή αρχείου"
 
-#: concrete/config/install/base/permissions.xml:83
+#: concrete/config/install/base/permissions.xml:85
 msgctxt "PermissionKeyDescription"
 msgid "Can delete files in set."
 msgstr "Μπορεί να διαγράψει τα αρχεία του σετ."
 
-#: concrete/config/install/base/permissions.xml:84
+#: concrete/config/install/base/permissions.xml:86
 msgctxt "PermissionKeyName"
 msgid "Add File"
 msgstr "Προσθήκη αρχείου"
 
-#: concrete/config/install/base/permissions.xml:84
+#: concrete/config/install/base/permissions.xml:86
 msgctxt "PermissionKeyDescription"
 msgid "Can add files to set."
 msgstr "Μπορεί να προσθέτει αρχεία στο Σετ"
 
-#: concrete/config/install/base/permissions.xml:85
+#: concrete/config/install/base/permissions.xml:87
 msgctxt "PermissionKeyDescription"
 msgid "Can view and download files."
 msgstr "Μπορεί να δει και να κατεβάσει αρχεία."
 
-#: concrete/config/install/base/permissions.xml:86
+#: concrete/config/install/base/permissions.xml:88
 msgctxt "PermissionKeyName"
 msgid "View File in File Manager"
 msgstr "Δείτε το αρχείο στον Διαχειριστή Αρχείων"
 
-#: concrete/config/install/base/permissions.xml:86
+#: concrete/config/install/base/permissions.xml:88
 msgctxt "PermissionKeyDescription"
 msgid "Can access the File Manager."
 msgstr "Μπορεί να έχει πρόσβαση στον Διαχειριστή Αρχείων."
 
-#: concrete/config/install/base/permissions.xml:88
+#: concrete/config/install/base/permissions.xml:90
 msgctxt "PermissionKeyDescription"
 msgid "Can edit or replace files."
 msgstr "Μπορεί να επεξεργαστεί ή να αντικαταστήσει αρχεία."
 
-#: concrete/config/install/base/permissions.xml:89
+#: concrete/config/install/base/permissions.xml:91
 msgctxt "PermissionKeyDescription"
 msgid "Can copy file."
 msgstr "Μπορεί να αντιγράψει αρχείο."
 
-#: concrete/config/install/base/permissions.xml:90
+#: concrete/config/install/base/permissions.xml:92
 msgctxt "PermissionKeyDescription"
 msgid "Can edit access to file."
 msgstr "Μπορεί να επεξεργαστεί την πρόσβαση στο αρχείο."
 
-#: concrete/config/install/base/permissions.xml:91
+#: concrete/config/install/base/permissions.xml:93
 msgctxt "PermissionKeyDescription"
 msgid "Can delete file."
 msgstr "Μπορεί να διαγράψει το αρχείο."
 
-#: concrete/config/install/base/permissions.xml:94
+#: concrete/config/install/base/permissions.xml:96
 msgctxt "PermissionKeyName"
 msgid "Approve or Deny"
 msgstr "Έγκριση ή απόρριψη"
 
-#: concrete/config/install/base/permissions.xml:94
+#: concrete/config/install/base/permissions.xml:96
 msgctxt "PermissionKeyDescription"
 msgid "Grant ability to approve workflow."
 msgstr "Χορηγεί τη δυνατότητα να εγκρίνει τη ροή εργασίας."
 
-#: concrete/config/install/base/permissions.xml:95
+#: concrete/config/install/base/permissions.xml:97
 msgctxt "PermissionKeyName"
 msgid "Notify on Entry"
 msgstr "Ειδοποίηση κατά την είσοδο"
 
-#: concrete/config/install/base/permissions.xml:95
+#: concrete/config/install/base/permissions.xml:97
 msgctxt "PermissionKeyDescription"
 msgid "Notify approvers that a change has entered the workflow."
 msgstr "Ειδοποιεί τους επικυρωτές ότι έχει εισέλθει μια  αλλαγή  στη ροή εργασίας."
 
-#: concrete/config/install/base/permissions.xml:96
+#: concrete/config/install/base/permissions.xml:98
 msgctxt "PermissionKeyName"
 msgid "Notify on Approve"
 msgstr "Ειδοποίηση για Έγκριση"
 
-#: concrete/config/install/base/permissions.xml:96
+#: concrete/config/install/base/permissions.xml:98
 msgctxt "PermissionKeyDescription"
 msgid "Notify approvers that a change has been approved."
 msgstr "Ειδοποιεί τους επικυρωτές ότι η αλλαγή έχει εγκριθεί."
 
-#: concrete/config/install/base/permissions.xml:97
+#: concrete/config/install/base/permissions.xml:99
 msgctxt "PermissionKeyName"
 msgid "Notify on Deny"
 msgstr "Ειδοποίηση για Απόρριψη"
 
-#: concrete/config/install/base/permissions.xml:97
+#: concrete/config/install/base/permissions.xml:99
 msgctxt "PermissionKeyDescription"
 msgid "Notify approvers that a change has been denied."
 msgstr "Ειδοποιεί τους επικυρωτές ότι η αλλαγή έχει απορριφθεί."
 
-#: concrete/config/install/base/permissions.xml:100
+#: concrete/config/install/base/permissions.xml:102
 msgctxt "PermissionKeyName"
 msgid "Add Page Type"
 msgstr "Προσθήκη Τύπου σελίδας"
 
-#: concrete/config/install/base/permissions.xml:101
+#: concrete/config/install/base/permissions.xml:103
 msgctxt "PermissionKeyName"
 msgid "Edit Page Type Permissions"
 msgstr "Επεξεργασία Αδειών Τύπου Σελίδας"
 
-#: concrete/config/install/base/permissions.xml:102
+#: concrete/config/install/base/permissions.xml:104
 msgctxt "PermissionKeyName"
 msgid "Edit Page Type Drafts"
 msgstr "Επεξεργασία Προσωρινών Τύπων Σελίδας"
 
-#: concrete/config/install/base/permissions.xml:106
+#: concrete/config/install/base/permissions.xml:108
 msgctxt "PermissionKeyName"
 msgid "View Topic Tree Node"
 msgstr "Προβολή Κόμβου Θεματικού Δένδρου"
 
-#: concrete/config/install/base/permissions.xml:107
+#: concrete/config/install/base/permissions.xml:109
 msgctxt "PermissionKeyName"
 msgid "View Topic Category Tree Node"
 msgstr "Προβολή Κόμβου Κατηγορίας Θεματικού Δένδρου"
 
-#: concrete/config/install/base/permissions.xml:110
+#: concrete/config/install/base/permissions.xml:112
 msgctxt "PermissionKeyName"
 msgid "Add Message to Conversation"
 msgstr "Προσθέστε Μήνυμα στη Συνομιλία"
 
-#: concrete/config/install/base/permissions.xml:111
+#: concrete/config/install/base/permissions.xml:113
 msgctxt "PermissionKeyName"
 msgid "Add Message Attachments"
 msgstr "Προσθέστε Συνημμένα στο Μήνυμα"
 
-#: concrete/config/install/base/permissions.xml:112
+#: concrete/config/install/base/permissions.xml:114
 msgctxt "PermissionKeyName"
 msgid "Edit Conversation Permissions"
 msgstr "Επεξεργασία  Δικαιωμάτων Συνομιλίας"
 
-#: concrete/config/install/base/permissions.xml:113
+#: concrete/config/install/base/permissions.xml:115
 msgctxt "PermissionKeyName"
 msgid "Delete Message"
 msgstr "Διαγραφή Μηνύματος"
 
-#: concrete/config/install/base/permissions.xml:114
+#: concrete/config/install/base/permissions.xml:116
 msgctxt "PermissionKeyName"
 msgid "Edit Message"
 msgstr "Επεξεργασία Μηνύματος"
 
-#: concrete/config/install/base/permissions.xml:115
+#: concrete/config/install/base/permissions.xml:117
 msgctxt "PermissionKeyName"
 msgid "Rate Message"
 msgstr "Αξιολογήστε το Μήνυμα"
 
-#: concrete/config/install/base/permissions.xml:116
+#: concrete/config/install/base/permissions.xml:118
 msgctxt "PermissionKeyName"
 msgid "Flag Message"
 msgstr "Επισημάνατε το Μήνυμα"
 
-#: concrete/config/install/base/permissions.xml:117
+#: concrete/config/install/base/permissions.xml:119
 msgctxt "PermissionKeyName"
 msgid "Approve Message"
 msgstr "Έγκριση Μηνύματος"
 
-#: concrete/config/install/base/permissions.xml:120
+#: concrete/config/install/base/permissions.xml:122
 msgctxt "PermissionKeyName"
 msgid "Edit User Details"
 msgstr "Επεξεργασία Στοιχείων Χρήστη"
 
-#: concrete/config/install/base/permissions.xml:126
+#: concrete/config/install/base/permissions.xml:128
 msgctxt "PermissionKeyName"
 msgid "View User Attributes"
 msgstr "Προβολή Χαρακτηριστικών Χρήστη"
 
-#: concrete/config/install/base/permissions.xml:132
+#: concrete/config/install/base/permissions.xml:134
 msgctxt "PermissionKeyName"
 msgid "Activate/Deactivate User"
 msgstr "Ενεργοποίηση / Απενεργοποίηση Χρήστη"
 
-#: concrete/config/install/base/permissions.xml:138
+#: concrete/config/install/base/permissions.xml:140
 msgctxt "PermissionKeyName"
 msgid "Sign in as User"
 msgstr "Συνδεθείτε ως χρήστης"
 
-#: concrete/config/install/base/permissions.xml:141
+#: concrete/config/install/base/permissions.xml:143
 msgctxt "PermissionKeyName"
 msgid "Upgrade concrete5"
 msgstr "Αναβάθμιση του concrete5"
 
-#: concrete/config/install/base/permissions.xml:147
+#: concrete/config/install/base/permissions.xml:149
 msgctxt "PermissionKeyName"
 msgid "Access Group Search"
 msgstr "Πρόσβαση στην Αναζήτηση Ομάδων"
 
-#: concrete/config/install/base/permissions.xml:153
+#: concrete/config/install/base/permissions.xml:155
 msgctxt "PermissionKeyName"
 msgid "Delete User"
 msgstr "Διαγραφή χρήστη"
 
-#: concrete/config/install/base/permissions.xml:161
+#: concrete/config/install/base/permissions.xml:163
 msgctxt "PermissionKeyName"
 msgid "Search User Group"
 msgstr "Αναζήτηση Ομάδας Χρηστών"
 
-#: concrete/config/install/base/permissions.xml:164
+#: concrete/config/install/base/permissions.xml:166
 msgctxt "PermissionKeyName"
 msgid "Edit Group"
 msgstr "Επεξεργασία Ομάδας"
 
-#: concrete/config/install/base/permissions.xml:167
+#: concrete/config/install/base/permissions.xml:169
 msgctxt "PermissionKeyName"
 msgid "Assign Group"
 msgstr "Εκχώρηση Ομάδας"
 
-#: concrete/config/install/base/permissions.xml:171
+#: concrete/config/install/base/permissions.xml:173
 msgctxt "PermissionKeyName"
 msgid "Add Child Group"
 msgstr "Προσθήκη Θυγατρικής Ομάδας "
 
-#: concrete/config/install/base/permissions.xml:175
+#: concrete/config/install/base/permissions.xml:177
 msgctxt "PermissionKeyName"
 msgid "Edit Group Permissions"
 msgstr "Επεξεργασία Δικαιωμάτων Ομάδας"
 
-#: concrete/config/install/base/permissions.xml:178
+#: concrete/config/install/base/permissions.xml:180
 msgctxt "PermissionKeyName"
 msgid "Access Page Type Permissions"
 msgstr "Δικαιώματα Πρόσβασης Τύπου Σελίδας"
 
-#: concrete/config/install/base/permissions.xml:184
+#: concrete/config/install/base/permissions.xml:186
 msgctxt "PermissionKeyName"
 msgid "Perform Backups"
 msgstr "Εκτελέστε Αντίγραφα Ασφαλείας"
 
-#: concrete/config/install/base/permissions.xml:190
+#: concrete/config/install/base/permissions.xml:192
 msgctxt "PermissionKeyName"
 msgid "Access Task Permissions"
 msgstr "Πρόσβαση στα Δικαιώματα Εργασιών"
 
-#: concrete/config/install/base/permissions.xml:193
+#: concrete/config/install/base/permissions.xml:195
 msgctxt "PermissionKeyName"
 msgid "Access Sitemap"
 msgstr "Πρόσβαση στο Χάρτη του Site"
 
-#: concrete/config/install/base/permissions.xml:199
+#: concrete/config/install/base/permissions.xml:201
 msgctxt "PermissionKeyName"
 msgid "Access Page Type Defaults"
 msgstr "Πρόσβαση στους προεπιλεγμένους Τύπους Σελίδων"
 
-#: concrete/config/install/base/permissions.xml:205
+#: concrete/config/install/base/permissions.xml:207
 msgctxt "PermissionKeyName"
 msgid "Customize Themes"
 msgstr "Προσαρμογή Θεμάτων"
 
-#: concrete/config/install/base/permissions.xml:211
+#: concrete/config/install/base/permissions.xml:213
 msgctxt "PermissionKeyName"
 msgid "Manage Layout Presets"
 msgstr "Διαχειριστείτε τις Προρυθμίσεις Layout "
 
-#: concrete/config/install/base/permissions.xml:217
+#: concrete/config/install/base/permissions.xml:219
 msgctxt "PermissionKeyName"
 msgid "Empty Trash"
 msgstr "Άδειασμα Κάδου απορριμμάτων"
 
-#: concrete/config/install/base/permissions.xml:223
+#: concrete/config/install/base/permissions.xml:225
 msgctxt "PermissionKeyName"
 msgid "Add Topic Tree"
 msgstr "Προσθήκη Θεματικού Δένδρου"
 
-#: concrete/config/install/base/permissions.xml:229
+#: concrete/config/install/base/permissions.xml:231
 msgctxt "PermissionKeyName"
 msgid "Remove Topic Tree"
 msgstr "Κατάργηση Θεματικού Δένδρου "
 
-#: concrete/config/install/base/permissions.xml:235
+#: concrete/config/install/base/permissions.xml:237
 msgctxt "PermissionKeyName"
 msgid "Uninstall Packages"
 msgstr "Κατάργηση Εγκατάστασης Πακέτων"
 
-#: concrete/config/install/base/permissions.xml:241
+#: concrete/config/install/base/permissions.xml:243
 msgctxt "PermissionKeyName"
 msgid "Install Packages"
 msgstr "Εγκατάσταση Πακέτων"
 
-#: concrete/config/install/base/permissions.xml:247
+#: concrete/config/install/base/permissions.xml:249
 msgctxt "PermissionKeyName"
 msgid "View Newsflow"
 msgstr "Εμφάνηση Ειδησεογραφίας"
 
-#: concrete/config/install/base/permissions.xml:253
+#: concrete/config/install/base/permissions.xml:255
 msgctxt "PermissionKeyName"
 msgid "Export Site Users"
 msgstr "Εξαγωγή χρηστών του site"
 
-#: concrete/config/install/base/permissions.xml:253
+#: concrete/config/install/base/permissions.xml:255
 msgctxt "PermissionKeyDescription"
 msgid "Controls whether a user can export site users or not"
 msgstr "Ελέγχει αν ένας χρήστης μπορεί να εξάγει τους χρήστες του site ή όχι"
 
-#: concrete/config/install/base/permissions.xml:259
+#: concrete/config/install/base/permissions.xml:261
 msgctxt "PermissionKeyName"
 msgid "Access User Search"
 msgstr "Πρόσβαση στην Αναζήτηση Χρηστών"
 
-#: concrete/config/install/base/permissions.xml:259
+#: concrete/config/install/base/permissions.xml:261
 msgctxt "PermissionKeyDescription"
 msgid "Controls whether a user can view the search user interface."
 msgstr "Ελέγχει αν ο χρήστης μπορεί να δει το interface αναζήτησης χρήστη."
 
-#: concrete/config/install/base/permissions.xml:268
+#: concrete/config/install/base/permissions.xml:270
 msgid "SecurImage (Default)"
 msgstr "Εικόνα Ασφαλείας (Προεπιλογή)"
 
@@ -18182,17 +18341,17 @@ msgstr "Περιεχόμενο"
 #: concrete/config/install/packages/elemental_full/content.xml:154
 #: concrete/config/install/packages/elemental_full/content.xml:330
 #: concrete/config/install/packages/elemental_full/content.xml:478
-#: concrete/config/install/packages/elemental_full/content.xml:1429
-#: concrete/config/install/packages/elemental_full/content.xml:1517
-#: concrete/config/install/packages/elemental_full/content.xml:1613
-#: concrete/config/install/packages/elemental_full/content.xml:1704
-#: concrete/config/install/packages/elemental_full/content.xml:1792
-#: concrete/config/install/packages/elemental_full/content.xml:1881
-#: concrete/config/install/packages/elemental_full/content.xml:2190
-#: concrete/config/install/packages/elemental_full/content.xml:2258
-#: concrete/config/install/packages/elemental_full/content.xml:2326
-#: concrete/config/install/packages/elemental_full/content.xml:2907
-#: concrete/config/install/packages/elemental_full/content.xml:2969
+#: concrete/config/install/packages/elemental_full/content.xml:1431
+#: concrete/config/install/packages/elemental_full/content.xml:1519
+#: concrete/config/install/packages/elemental_full/content.xml:1615
+#: concrete/config/install/packages/elemental_full/content.xml:1706
+#: concrete/config/install/packages/elemental_full/content.xml:1794
+#: concrete/config/install/packages/elemental_full/content.xml:1883
+#: concrete/config/install/packages/elemental_full/content.xml:2192
+#: concrete/config/install/packages/elemental_full/content.xml:2260
+#: concrete/config/install/packages/elemental_full/content.xml:2328
+#: concrete/config/install/packages/elemental_full/content.xml:2909
+#: concrete/config/install/packages/elemental_full/content.xml:2971
 msgctxt "AreaName"
 msgid "Sidebar"
 msgstr "Πλευρική Μπάρα"
@@ -18202,22 +18361,22 @@ msgstr "Πλευρική Μπάρα"
 #: concrete/config/install/packages/elemental_full/content.xml:525
 #: concrete/config/install/packages/elemental_full/content.xml:644
 #: concrete/config/install/packages/elemental_full/content.xml:740
-#: concrete/config/install/packages/elemental_full/content.xml:1165
-#: concrete/config/install/packages/elemental_full/content.xml:1268
-#: concrete/config/install/packages/elemental_full/content.xml:1354
-#: concrete/config/install/packages/elemental_full/content.xml:1447
-#: concrete/config/install/packages/elemental_full/content.xml:1535
-#: concrete/config/install/packages/elemental_full/content.xml:1631
-#: concrete/config/install/packages/elemental_full/content.xml:1722
-#: concrete/config/install/packages/elemental_full/content.xml:1810
-#: concrete/config/install/packages/elemental_full/content.xml:1899
-#: concrete/config/install/packages/elemental_full/content.xml:2099
-#: concrete/config/install/packages/elemental_full/content.xml:2115
-#: concrete/config/install/packages/elemental_full/content.xml:2147
-#: concrete/config/install/packages/elemental_full/content.xml:2215
-#: concrete/config/install/packages/elemental_full/content.xml:2283
-#: concrete/config/install/packages/elemental_full/content.xml:2912
-#: concrete/config/install/packages/elemental_full/content.xml:2974
+#: concrete/config/install/packages/elemental_full/content.xml:1167
+#: concrete/config/install/packages/elemental_full/content.xml:1270
+#: concrete/config/install/packages/elemental_full/content.xml:1356
+#: concrete/config/install/packages/elemental_full/content.xml:1449
+#: concrete/config/install/packages/elemental_full/content.xml:1537
+#: concrete/config/install/packages/elemental_full/content.xml:1633
+#: concrete/config/install/packages/elemental_full/content.xml:1724
+#: concrete/config/install/packages/elemental_full/content.xml:1812
+#: concrete/config/install/packages/elemental_full/content.xml:1901
+#: concrete/config/install/packages/elemental_full/content.xml:2101
+#: concrete/config/install/packages/elemental_full/content.xml:2117
+#: concrete/config/install/packages/elemental_full/content.xml:2149
+#: concrete/config/install/packages/elemental_full/content.xml:2217
+#: concrete/config/install/packages/elemental_full/content.xml:2285
+#: concrete/config/install/packages/elemental_full/content.xml:2914
+#: concrete/config/install/packages/elemental_full/content.xml:2976
 msgctxt "AreaName"
 msgid "Page Footer"
 msgstr "Υποσέλιδο"
@@ -18253,17 +18412,17 @@ msgstr "Λεπτομέρειες εργασίας"
 
 #: concrete/config/install/packages/elemental_full/content.xml:318
 #: concrete/config/install/packages/elemental_full/content.xml:463
-#: concrete/config/install/packages/elemental_full/content.xml:1391
-#: concrete/config/install/packages/elemental_full/content.xml:1480
-#: concrete/config/install/packages/elemental_full/content.xml:1576
-#: concrete/config/install/packages/elemental_full/content.xml:1667
-#: concrete/config/install/packages/elemental_full/content.xml:1755
-#: concrete/config/install/packages/elemental_full/content.xml:1843
-#: concrete/config/install/packages/elemental_full/content.xml:2187
-#: concrete/config/install/packages/elemental_full/content.xml:2255
-#: concrete/config/install/packages/elemental_full/content.xml:2323
-#: concrete/config/install/packages/elemental_full/content.xml:2902
-#: concrete/config/install/packages/elemental_full/content.xml:2964
+#: concrete/config/install/packages/elemental_full/content.xml:1393
+#: concrete/config/install/packages/elemental_full/content.xml:1482
+#: concrete/config/install/packages/elemental_full/content.xml:1578
+#: concrete/config/install/packages/elemental_full/content.xml:1669
+#: concrete/config/install/packages/elemental_full/content.xml:1757
+#: concrete/config/install/packages/elemental_full/content.xml:1845
+#: concrete/config/install/packages/elemental_full/content.xml:2189
+#: concrete/config/install/packages/elemental_full/content.xml:2257
+#: concrete/config/install/packages/elemental_full/content.xml:2325
+#: concrete/config/install/packages/elemental_full/content.xml:2904
+#: concrete/config/install/packages/elemental_full/content.xml:2966
 msgctxt "AreaName"
 msgid "Page Header"
 msgstr "Κεφαλίδα Σελίδας"
@@ -18298,7 +18457,7 @@ msgid "Body"
 msgstr "Σώμα"
 
 #: concrete/config/install/packages/elemental_full/content.xml:552
-#: concrete/config/install/packages/elemental_full/content.xml:2103
+#: concrete/config/install/packages/elemental_full/content.xml:2105
 msgid "Blog"
 msgstr "Ιστολόγιο"
 
@@ -18308,7 +18467,7 @@ msgid "Details"
 msgstr "Λεπτομέριες"
 
 #: concrete/config/install/packages/elemental_full/content.xml:652
-#: concrete/config/install/packages/elemental_full/content.xml:1341
+#: concrete/config/install/packages/elemental_full/content.xml:1343
 msgid "Portfolio"
 msgstr "Χαρτοφυλάκιο"
 
@@ -18327,8 +18486,8 @@ msgstr "Υποσέλιδο Επικοινωνίας"
 #: concrete/config/install/packages/elemental_full/content.xml:798
 #: concrete/config/install/packages/elemental_full/content.xml:811
 #: concrete/config/install/packages/elemental_full/content.xml:823
-#: concrete/config/install/packages/elemental_full/content.xml:843
-#: concrete/config/install/packages/elemental_full/content.xml:860
+#: concrete/config/install/packages/elemental_full/content.xml:845
+#: concrete/config/install/packages/elemental_full/content.xml:862
 msgid "Main"
 msgstr "Κύριο"
 
@@ -18352,71 +18511,71 @@ msgstr "Κοινωνική Δικτύωση Υποσέλιδου"
 msgid "Header Navigation"
 msgstr "Επικεφαλίδα πλοήγησης"
 
-#: concrete/config/install/packages/elemental_full/content.xml:842
+#: concrete/config/install/packages/elemental_full/content.xml:844
 msgid "Header Search"
 msgstr "Αναζήτηση Κεφαλίδας"
 
-#: concrete/config/install/packages/elemental_full/content.xml:859
+#: concrete/config/install/packages/elemental_full/content.xml:861
 msgid "Header Site Title"
 msgstr "Τίτλος Ιστοχώρου Κεφαλίδας"
 
-#: concrete/config/install/packages/elemental_full/content.xml:1358
+#: concrete/config/install/packages/elemental_full/content.xml:1360
 msgid "Project Title"
 msgstr "Τίτλος Έργου"
 
-#: concrete/config/install/packages/elemental_full/content.xml:1358
-#: concrete/config/install/packages/elemental_full/content.xml:1454
-#: concrete/config/install/packages/elemental_full/content.xml:1542
-#: concrete/config/install/packages/elemental_full/content.xml:1638
-#: concrete/config/install/packages/elemental_full/content.xml:1729
-#: concrete/config/install/packages/elemental_full/content.xml:1817
+#: concrete/config/install/packages/elemental_full/content.xml:1360
+#: concrete/config/install/packages/elemental_full/content.xml:1456
+#: concrete/config/install/packages/elemental_full/content.xml:1544
+#: concrete/config/install/packages/elemental_full/content.xml:1640
+#: concrete/config/install/packages/elemental_full/content.xml:1731
+#: concrete/config/install/packages/elemental_full/content.xml:1819
 msgid ""
 "Pellentesque ultricies ligula vel neque dictum, eu mollis tortor adipiscing."
 msgstr "Pellentesque ultricies ligula vel neque dictum, eu mollis tortor adipiscing."
 
-#: concrete/config/install/packages/elemental_full/content.xml:1370
-#: concrete/config/install/packages/elemental_full/content.xml:1554
-#: concrete/config/install/packages/elemental_full/content.xml:1650
-#: concrete/config/install/packages/elemental_full/content.xml:1738
-#: concrete/config/install/packages/elemental_full/content.xml:1826
+#: concrete/config/install/packages/elemental_full/content.xml:1372
+#: concrete/config/install/packages/elemental_full/content.xml:1556
+#: concrete/config/install/packages/elemental_full/content.xml:1652
+#: concrete/config/install/packages/elemental_full/content.xml:1740
+#: concrete/config/install/packages/elemental_full/content.xml:1828
 msgctxt "Topic"
 msgid "/Homework"
 msgstr "/Homework"
 
-#: concrete/config/install/packages/elemental_full/content.xml:1454
+#: concrete/config/install/packages/elemental_full/content.xml:1456
 msgid "Project Title 2"
 msgstr "Τίτλος Έργου 2"
 
-#: concrete/config/install/packages/elemental_full/content.xml:1463
+#: concrete/config/install/packages/elemental_full/content.xml:1465
 msgctxt "Topic"
 msgid "/Activities"
 msgstr "/Activities"
 
-#: concrete/config/install/packages/elemental_full/content.xml:1542
+#: concrete/config/install/packages/elemental_full/content.xml:1544
 msgid "Project Title 3"
 msgstr "Τίτλος Έργου 3"
 
-#: concrete/config/install/packages/elemental_full/content.xml:1638
+#: concrete/config/install/packages/elemental_full/content.xml:1640
 msgid "Project Title 4"
 msgstr "Τίτλος Έργου 4"
 
-#: concrete/config/install/packages/elemental_full/content.xml:1729
+#: concrete/config/install/packages/elemental_full/content.xml:1731
 msgid "Project Title 5"
 msgstr "Τίτλος Έργου 5"
 
-#: concrete/config/install/packages/elemental_full/content.xml:1817
+#: concrete/config/install/packages/elemental_full/content.xml:1819
 msgid "Project Title 6"
 msgstr "Τίτλος Έργου 6"
 
-#: concrete/config/install/packages/elemental_full/content.xml:1906
+#: concrete/config/install/packages/elemental_full/content.xml:1908
 msgid "Team"
 msgstr "Ομάδα"
 
-#: concrete/config/install/packages/elemental_full/content.xml:2119
+#: concrete/config/install/packages/elemental_full/content.xml:2121
 msgid "Hello World!"
 msgstr "Γεια σου Κόσμε!"
 
-#: concrete/config/install/packages/elemental_full/content.xml:2119
+#: concrete/config/install/packages/elemental_full/content.xml:2121
 msgid ""
 "Pellentesque ultricies ligula vel neque dictum, eu mollis tortor adipiscing."
 " Etiam congue, est vel tincidunt vestibulum, nunc nunc porta nulla, at "
@@ -18424,40 +18583,40 @@ msgid ""
 "mattis aliquam ante dictum."
 msgstr "Pellentesque ultricies ligula vel neque dictum, eu mollis tortor adipiscing. Etiam congue, est vel tincidunt vestibulum, nunc nunc porta nulla, at adipiscing neque tellus quis urna. Quisque dignissim neque a ipsum sodales, mattis aliquam ante dictum."
 
-#: concrete/config/install/packages/elemental_full/content.xml:2143
-#: concrete/config/install/packages/elemental_full/content.xml:2279
+#: concrete/config/install/packages/elemental_full/content.xml:2145
+#: concrete/config/install/packages/elemental_full/content.xml:2281
 msgctxt "Topic"
 msgid "/Projects"
 msgstr "/Projects"
 
-#: concrete/config/install/packages/elemental_full/content.xml:2198
-#: concrete/config/install/packages/elemental_full/content.xml:2266
-#: concrete/config/install/packages/elemental_full/content.xml:2334
+#: concrete/config/install/packages/elemental_full/content.xml:2200
+#: concrete/config/install/packages/elemental_full/content.xml:2268
+#: concrete/config/install/packages/elemental_full/content.xml:2336
 msgctxt "AreaName"
 msgid "Sidebar Footer"
 msgstr "Υποσέλιδο πλευρικής εργαλειοθήκης "
 
-#: concrete/config/install/packages/elemental_full/content.xml:2202
+#: concrete/config/install/packages/elemental_full/content.xml:2204
 msgid "Another Blog Post"
 msgstr "Άλλη μια ανάρτηση ιστολογίου"
 
-#: concrete/config/install/packages/elemental_full/content.xml:2202
+#: concrete/config/install/packages/elemental_full/content.xml:2204
 msgid ""
 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet "
 "consectetur lacus. Vestibulum neque lectus, egestas non cursus vitae, "
 "aliquam at magna."
 msgstr "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet consectetur lacus. Vestibulum neque lectus, egestas non cursus vitae, aliquam at magna."
 
-#: concrete/config/install/packages/elemental_full/content.xml:2211
+#: concrete/config/install/packages/elemental_full/content.xml:2213
 msgctxt "Topic"
 msgid "/Humor"
 msgstr "/Humor"
 
-#: concrete/config/install/packages/elemental_full/content.xml:2270
+#: concrete/config/install/packages/elemental_full/content.xml:2272
 msgid "A Beautiful Site Deserves a Beautiful Blog"
 msgstr "Ένα όμορφο Site αξίζει ένα όμορφο ιστολόγιο"
 
-#: concrete/config/install/packages/elemental_full/content.xml:2270
+#: concrete/config/install/packages/elemental_full/content.xml:2272
 msgid ""
 "Donec blandit lectus nec neque ullamcorper rhoncus. Sed adipiscing tempus "
 "sem eu molestie. Aenean laoreet pretium ante vitae ultrices. Aenean eu "
@@ -18465,28 +18624,28 @@ msgid ""
 " erat."
 msgstr "Donec blandit lectus nec neque ullamcorper rhoncus. Sed adipiscing tempus sem eu molestie. Aenean laoreet pretium ante vitae ultrices. Aenean eu gravida magna, vel aliquet magna. In auctor convallis gravida. Phasellus est erat."
 
-#: concrete/config/install/packages/elemental_full/content.xml:2377
+#: concrete/config/install/packages/elemental_full/content.xml:2379
 msgid "Contact"
 msgstr "Επικοινωνία"
 
-#: concrete/config/install/packages/elemental_full/content.xml:2546
+#: concrete/config/install/packages/elemental_full/content.xml:2548
 msgid "Blank Page"
 msgstr "Κενή Σελίδα"
 
-#: concrete/config/install/packages/elemental_full/content.xml:2565
+#: concrete/config/install/packages/elemental_full/content.xml:2567
 msgid "About"
 msgstr "Σχετικά με"
 
-#: concrete/config/install/packages/elemental_full/content.xml:2705
+#: concrete/config/install/packages/elemental_full/content.xml:2707
 msgid "Careers"
 msgstr "Careers"
 
-#: concrete/config/install/packages/elemental_full/content.xml:2857
+#: concrete/config/install/packages/elemental_full/content.xml:2859
 msgid "Web Developer"
 msgstr "Web Developer"
 
-#: concrete/config/install/packages/elemental_full/content.xml:2857
-#: concrete/config/install/packages/elemental_full/content.xml:2919
+#: concrete/config/install/packages/elemental_full/content.xml:2859
+#: concrete/config/install/packages/elemental_full/content.xml:2921
 msgid ""
 "Curabitur sagittis elementum felis at sodales. Nullam fermentum at urna quis"
 " accumsan. Nam bibendum leo nisi, lacinia molestie arcu consequat quis. "
@@ -18496,80 +18655,80 @@ msgid ""
 "consectetur lacus."
 msgstr "Curabitur sagittis Elementum felis ut sodales . Nullam fermentum se urna QUIS accumsan . Nam Bibendum leo nisi , lacinia molestie Arcu consequat QUIS . Morbi sto suscipit risus . Sed consequat eleifend Metus , si̱meío̱ma malesuada éro̱s Elementum sed . Fusce risus felis , génous Viverra et dignissim se , lobortis mi̱ est tou Lorem ipsum dolor káthontai amet , consectetur adipiscing elit . Nullam kathísei amet consectetur Lacus ."
 
-#: concrete/config/install/packages/elemental_full/content.xml:2919
+#: concrete/config/install/packages/elemental_full/content.xml:2921
 msgid "Sales Associate"
 msgstr "Ομάδα Πωλήσεων"
 
-#: concrete/config/install/packages/elemental_full/content.xml:2979
+#: concrete/config/install/packages/elemental_full/content.xml:2981
 msgid "Frequently Asked Questions"
 msgstr "Συχνές Ερωτήσεις"
 
-#: concrete/config/install/packages/elemental_full/content.xml:3026
+#: concrete/config/install/packages/elemental_full/content.xml:3028
 msgctxt "TopicCategoryName"
 msgid "Reviews"
 msgstr "Kριτικές"
 
-#: concrete/config/install/packages/elemental_full/content.xml:3027
+#: concrete/config/install/packages/elemental_full/content.xml:3029
 msgctxt "TopicName"
 msgid "Gadgets"
 msgstr "Gadgets"
 
-#: concrete/config/install/packages/elemental_full/content.xml:3028
+#: concrete/config/install/packages/elemental_full/content.xml:3030
 msgctxt "TopicName"
 msgid "Movies"
 msgstr "Ταινίες"
 
-#: concrete/config/install/packages/elemental_full/content.xml:3029
+#: concrete/config/install/packages/elemental_full/content.xml:3031
 msgctxt "TopicName"
 msgid "Books"
 msgstr "Βιβλία"
 
-#: concrete/config/install/packages/elemental_full/content.xml:3030
+#: concrete/config/install/packages/elemental_full/content.xml:3032
 msgctxt "TopicName"
 msgid "Music"
 msgstr " Μουσική"
 
-#: concrete/config/install/packages/elemental_full/content.xml:3032
+#: concrete/config/install/packages/elemental_full/content.xml:3034
 msgctxt "TopicName"
 msgid "Projects"
 msgstr "Έργα"
 
-#: concrete/config/install/packages/elemental_full/content.xml:3033
+#: concrete/config/install/packages/elemental_full/content.xml:3035
 msgctxt "TopicName"
 msgid "Sports"
 msgstr "Σπορ"
 
-#: concrete/config/install/packages/elemental_full/content.xml:3034
+#: concrete/config/install/packages/elemental_full/content.xml:3036
 msgctxt "TopicName"
 msgid "Humor"
 msgstr "Χιούμορ "
 
-#: concrete/config/install/packages/elemental_full/content.xml:3037
+#: concrete/config/install/packages/elemental_full/content.xml:3039
 msgctxt "TopicName"
 msgid "Crafts"
 msgstr "Χειροτεχνία"
 
-#: concrete/config/install/packages/elemental_full/content.xml:3038
+#: concrete/config/install/packages/elemental_full/content.xml:3040
 msgctxt "TopicName"
 msgid "Homework"
 msgstr "Εργασία για το σπίτι"
 
-#: concrete/config/install/packages/elemental_full/content.xml:3039
+#: concrete/config/install/packages/elemental_full/content.xml:3041
 msgctxt "TopicName"
 msgid "Supplies"
 msgstr "Προμήθειες"
 
-#: concrete/config/install/packages/elemental_full/content.xml:3040
+#: concrete/config/install/packages/elemental_full/content.xml:3042
 msgctxt "TopicName"
 msgid "Activities"
 msgstr "Δραστηριότητες"
 
-#: concrete/config/install/packages/elemental_full/content.xml:3046
+#: concrete/config/install/packages/elemental_full/content.xml:3048
 msgctxt "FeedTitle"
 msgid "Blog"
 msgstr "Ιστολόγιο"
 
-#: concrete/config/install/packages/elemental_full/content.xml:3047
+#: concrete/config/install/packages/elemental_full/content.xml:3049
 msgctxt "FeedDescription"
 msgid "concrete5 Blog"
 msgstr "Ιστολόγιο concrete5 "
