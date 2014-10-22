@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-10-18 10:00+0000\n"
-"PO-Revision-Date: 2014-10-18 10:05+0000\n"
+"POT-Creation-Date: 2014-10-21 10:00+0000\n"
+"PO-Revision-Date: 2014-10-21 10:08+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Greek (Greece) (http://www.transifex.com/projects/p/concrete5/language/el_GR/)\n"
 "MIME-Version: 1.0\n"
@@ -307,7 +307,7 @@ msgid ""
 msgstr "Το Κλειδί έχει λήξει. Παρακαλούμε επισκεφθείτε την σελίδα επαναφοράς κωδικού πρόσβασης ξανά για να δημιουργήσετε ένα νέο κλειδί."
 
 #: concrete/authentication/concrete/controller.php:182
-#: concrete/controllers/install.php:318
+#: concrete/controllers/install.php:323
 #: concrete/controllers/single_page/account/edit_profile.php:94
 #: concrete/controllers/single_page/dashboard/users/search.php:336
 #: concrete/controllers/single_page/register.php:109
@@ -1094,6 +1094,7 @@ msgstr "Επίπεδη Προβολή"
 #: concrete/single_pages/dashboard/users/points/view.php:15
 #: concrete/single_pages/members/directory.php:12
 #: concrete/single_pages/members/directory.php:13
+#: concrete/themes/dashboard/marketplace.php:30
 #: concrete/tools/sitemap_search_selector.php:37
 #: concrete/views/panels/add.php:259
 #: concrete/views/panels/page/attributes.php:9
@@ -5023,63 +5024,69 @@ msgid ""
 " an empty database."
 msgstr "Υπάρχουν ήδη %s πίνακες στη Βάση Δεδομένων. Το concrete5 πρέπει να εγκατασταθεί σε μια κενή βάση δεδομένων."
 
-#: concrete/controllers/install.php:122
+#: concrete/controllers/install.php:117
+msgid ""
+"Your MySQL database does not support InnoDB database tables. These are "
+"required."
+msgstr ""
+
+#: concrete/controllers/install.php:127
 msgid "The PDO extension is not loaded."
 msgstr "Η επέκταση PDO δεν έχει φορτωθεί."
 
-#: concrete/controllers/install.php:149
+#: concrete/controllers/install.php:154
 msgid "concrete5 is already installed."
 msgstr "Το concrete5 είναι ήδη εγκατεστημένο."
 
-#: concrete/controllers/install.php:217
+#: concrete/controllers/install.php:222
 msgid ""
 "Your configuration directory config/ does not appear to be writable by the "
 "web server."
 msgstr "Ο Φάκελος ρυθμίσεων σας config/ δεν φαίνεται να είναι εγγράψιμος από τον web server."
 
-#: concrete/controllers/install.php:221
+#: concrete/controllers/install.php:226
 msgid ""
 "Your files directory files/ does not appear to be writable by the web "
 "server."
 msgstr "Ο  φάκελος αρχείων σας files/ δεν φαίνεται να είναι εγγράψιμος από τον web server."
 
-#: concrete/controllers/install.php:225
+#: concrete/controllers/install.php:230
 msgid ""
 "Your packages directory packages/ does not appear to be writable by the web "
 "server."
 msgstr "Ο φάκελος Πακέτων σας packages/ δεν φαίνεται να είναι εγγράψιμος από τον web server."
 
-#: concrete/controllers/install.php:276
+#: concrete/controllers/install.php:281
 #, php-format
 msgctxt "InstallError"
 msgid "%s.<br><br>Trace:<br>%s"
 msgstr "%s.<br><br>Ίχνος:<br>%s"
 
-#: concrete/controllers/install.php:304
+#: concrete/controllers/install.php:309
 msgid "Please specify your site's name"
 msgstr "Παρακαλείστε να αναφέρετε το όνομα της ιστοσελίδας σας"
 
-#: concrete/controllers/install.php:305
+#: concrete/controllers/install.php:310
 msgid "Please specify a valid email address"
 msgstr "Παρακαλείστε  να αναφέρετε μια έγκυρη διεύθυνση email"
 
-#: concrete/controllers/install.php:306
+#: concrete/controllers/install.php:311
 msgid "You must specify a valid database name"
 msgstr "Πρέπει να καθορίσετε ένα έγκυρο όνομα βάσης δεδομένων"
 
-#: concrete/controllers/install.php:307
+#: concrete/controllers/install.php:312
 msgid "You must specify a valid database server"
 msgstr "Πρέπει να ορίσετε έναν έγκυρο server βάσης δεδομένων"
 
-#: concrete/controllers/install.php:359
+#: concrete/controllers/install.php:364
 msgid "Unable to open config/app.php for writing."
 msgstr "Δεν είναι δυνατόν να ανοίξει το config/app.php για γράψιμο."
 
-#: concrete/controllers/install.php:380
+#: concrete/controllers/install.php:385
 msgid "Unable to open config/site_user.php for writing."
 msgstr "Είναι αδύνατο το άνοιγμα του  config/site_user.php για γράψιμο."
 
-#: concrete/controllers/install.php:402
+#: concrete/controllers/install.php:407
 msgid "You must select a valid sample content starting point."
 msgstr "Πρέπει να επιλέξετε ένα έγκυρο περιεχόμενο δείγματος ως σημείο εκκίνησης."
 
@@ -5098,20 +5105,20 @@ msgid "Back"
 msgstr "Πίσω"
 
 #: concrete/elements/conversation/display.php:96
-#: concrete/themes/dashboard/marketplace.php:41
+#: concrete/themes/dashboard/marketplace.php:42
 msgid "Recent"
 msgstr "Πρόσφατο"
 
-#: concrete/themes/dashboard/marketplace.php:42
+#: concrete/themes/dashboard/marketplace.php:43
 msgid "Price"
 msgstr "Τιμή"
 
 #: concrete/blocks/core_conversation/form.php:57
-#: concrete/themes/dashboard/marketplace.php:43
+#: concrete/themes/dashboard/marketplace.php:44
 msgid "Rating"
 msgstr "Βαθμολογία"
 
-#: concrete/themes/dashboard/marketplace.php:44
+#: concrete/themes/dashboard/marketplace.php:45
 msgid "Skill Level"
 msgstr "Επίπεδο Ικανότητας"
 
