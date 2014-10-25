@@ -11,9 +11,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-10-23 10:00+0000\n"
-"PO-Revision-Date: 2014-10-23 10:22+0000\n"
-"Last-Translator: Michele Locati <michele@locati.it>\n"
+"POT-Creation-Date: 2014-10-24 10:00+0000\n"
+"PO-Revision-Date: 2014-10-25 01:20+0000\n"
+"Last-Translator: Katz Ueno <katzueno@deerstudio.com>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/projects/p/concrete5/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -312,7 +312,7 @@ msgid ""
 msgstr "認証キーの期限が切れています。もう一度パスワードリセットのページに行き、リセット作業を行ってください。"
 
 #: concrete/authentication/concrete/controller.php:187
-#: concrete/controllers/install.php:323
+#: concrete/controllers/install.php:329
 #: concrete/controllers/single_page/account/edit_profile.php:94
 #: concrete/controllers/single_page/dashboard/users/search.php:336
 #: concrete/controllers/single_page/register.php:109
@@ -361,14 +361,14 @@ msgstr "このユーザーのアカウントは現在停止されています。
 msgid "facebook"
 msgstr "facebook"
 
-#: concrete/controllers/backend/user_interface.php:28
+#: concrete/controllers/backend/page.php:50
+#: concrete/controllers/backend/user_interface.php:34
 #: concrete/controllers/backend/user_interface/block.php:47
-#: concrete/controllers/backend/user_interface/file.php:37
-#: concrete/controllers/backend/user_interface/page.php:39
+#: concrete/controllers/backend/user_interface/file.php:36
+#: concrete/controllers/backend/user_interface/page.php:25
 #: concrete/controllers/dialog/file/properties.php:54
 #: concrete/controllers/dialog/file/properties.php:78
 #: concrete/controllers/dialog/page/add_block.php:28
-#: concrete/controllers/panel/page/check_in.php:140
 #: concrete/tools/dashboard/sitemap_drag_request.php:7
 #: concrete/tools/dashboard/sitemap_update.php:5
 #: concrete/tools/edit_area_popup.php:6
@@ -910,7 +910,7 @@ msgid "Unable to copy one or more files."
 msgstr "ファイルをコピーできません。"
 
 #: concrete/blocks/form/controller.php:327
-#: concrete/controllers/backend/user_interface/file.php:21
+#: concrete/controllers/backend/user_interface/file.php:20
 #: concrete/src/File/Importer.php:36 concrete/tools/files/duplicate.php:43
 msgid "Invalid file."
 msgstr "無効なファイルです。"
@@ -2931,7 +2931,6 @@ msgid "Page saved on %s"
 msgstr "更新日時: %s"
 
 #: concrete/controllers/panel/detail/page/composer.php:57
-#: concrete/controllers/panel/page/check_in.php:43
 msgid "You must choose a page to publish this page beneath."
 msgstr "このページを公開する親ページを選択してください。"
 
@@ -3009,6 +3008,10 @@ msgstr "%s バージョンが正常に承認されました"
 #: concrete/controllers/panel/page/versions.php:179
 msgid "You do not have permission to approve page versions."
 msgstr "ページバージョンを承認する権限がありません。"
+
+#: concrete/controllers/panel/page/check_in.php:43
+msgid "You haven't chosen where to publish this page."
+msgstr "ページの公開先が選択されていません。"
 
 #: concrete/controllers/panel/page/check_in.php:66
 msgid "Invalid target page."
@@ -3146,34 +3149,34 @@ msgstr "ファイルが正常に更新されました。"
 msgid "File search columns saved successfully."
 msgstr "ファイル検索の項目が正常に保存されました。"
 
-#: concrete/controllers/upgrade.php:66
+#: concrete/controllers/upgrade.php:58
 #, php-format
 msgid "Upgrade to <b>%s</b> complete!"
 msgstr "<b>%s</b>へのアップグレードが完了しました。"
 
-#: concrete/controllers/upgrade.php:79
+#: concrete/controllers/upgrade.php:70
 msgid ""
 "Unable to determine your current version of concrete5. Upgrading cannot "
 "continue."
 msgstr "concrete5の現在のバージョンを判別できません。アップグレードを続行できません。"
 
-#: concrete/controllers/upgrade.php:84 concrete/controllers/upgrade.php:95
+#: concrete/controllers/upgrade.php:75 concrete/controllers/upgrade.php:86
 #, php-format
 msgid "Upgrading from <b>%s</b>"
 msgstr "<b>%s</b>からアップグレード"
 
-#: concrete/controllers/upgrade.php:85 concrete/controllers/upgrade.php:96
+#: concrete/controllers/upgrade.php:76 concrete/controllers/upgrade.php:87
 #, php-format
 msgid "Upgrading to <b>%s</b>"
 msgstr "<b>%s</b>にアップグレード"
 
-#: concrete/controllers/upgrade.php:87
+#: concrete/controllers/upgrade.php:78
 msgid ""
 "Your current website uses a version of concrete5 greater than this one. You "
 "cannot upgrade."
 msgstr "あなたの現在のウェブサイトはこれより新しいconcrete5のバージョンを使用します。アップグレードできません。"
 
-#: concrete/controllers/upgrade.php:91
+#: concrete/controllers/upgrade.php:82
 #, php-format
 msgid ""
 "Your site is already up to date! The current version of concrete5 is "
@@ -4429,7 +4432,7 @@ msgstr "キャッシュ設定が保存されました。"
 
 #: concrete/controllers/single_page/dashboard/system/optimization/query_log.php:43
 msgid "Database query log cleared."
-msgstr ""
+msgstr "データベースクエリログがクリアされました。"
 
 #: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:39
 #: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:62
@@ -5030,7 +5033,7 @@ msgstr "このデータベースには%s個のテーブルが存在していま�
 msgid ""
 "Your MySQL database does not support InnoDB database tables. These are "
 "required."
-msgstr ""
+msgstr "MySQL Database が InnoDB をサポートしていません。これは必須条件です。"
 
 #: concrete/controllers/install.php:127
 msgid "The PDO extension is not loaded."
@@ -5040,55 +5043,55 @@ msgstr "PDOエクステンションが読み込まれていません。"
 msgid "concrete5 is already installed."
 msgstr "concrete5はすでにインストール済みです。"
 
-#: concrete/controllers/install.php:222
+#: concrete/controllers/install.php:228
 msgid ""
 "Your configuration directory config/ does not appear to be writable by the "
 "web server."
 msgstr "「/config」ディレクトリーに書き込みできません。"
 
-#: concrete/controllers/install.php:226
+#: concrete/controllers/install.php:232
 msgid ""
 "Your files directory files/ does not appear to be writable by the web "
 "server."
 msgstr "「/files」ディレクトリーに書き込みできません。"
 
-#: concrete/controllers/install.php:230
+#: concrete/controllers/install.php:236
 msgid ""
 "Your packages directory packages/ does not appear to be writable by the web "
 "server."
 msgstr "お使いのサーバーが「/packages」ディレクトリーに書き込む事ができません。"
 
-#: concrete/controllers/install.php:281
+#: concrete/controllers/install.php:287
 #, php-format
 msgctxt "InstallError"
 msgid "%s.<br><br>Trace:<br>%s"
 msgstr "%s.<br><br>トレース:<br>%s"
 
-#: concrete/controllers/install.php:309
+#: concrete/controllers/install.php:315
 msgid "Please specify your site's name"
 msgstr "サイト名を入力してください"
 
-#: concrete/controllers/install.php:310
+#: concrete/controllers/install.php:316
 msgid "Please specify a valid email address"
 msgstr "有効なメールアドレスを入力してください"
 
-#: concrete/controllers/install.php:311
+#: concrete/controllers/install.php:317
 msgid "You must specify a valid database name"
 msgstr "有効なデータベース名を入力してください"
 
-#: concrete/controllers/install.php:312
+#: concrete/controllers/install.php:318
 msgid "You must specify a valid database server"
 msgstr "有効なデータベースサーバーを入力してください"
 
-#: concrete/controllers/install.php:364
+#: concrete/controllers/install.php:370
 msgid "Unable to open config/app.php for writing."
 msgstr "config/app.phpを保存するために開くことができません。"
 
-#: concrete/controllers/install.php:385
+#: concrete/controllers/install.php:391
 msgid "Unable to open config/site_user.php for writing."
 msgstr "config/site_user.phpを保存するために開くことができません。"
 
-#: concrete/controllers/install.php:407
+#: concrete/controllers/install.php:413
 msgid "You must select a valid sample content starting point."
 msgstr "有効なサンプルコンテンツを選択してください。"
 
@@ -5193,13 +5196,13 @@ msgctxt "toolbar"
 msgid "Return to Website"
 msgstr "ウェブサイトに戻る"
 
-#: concrete/elements/page_controls_footer.php:269
+#: concrete/elements/page_controls_footer.php:270
 #: concrete/themes/dashboard/elements/header.php:82
 msgctxt "toolbar"
 msgid "Dashboard"
 msgstr "管理画面"
 
-#: concrete/elements/page_controls_footer.php:289
+#: concrete/elements/page_controls_footer.php:290
 #: concrete/themes/dashboard/elements/header.php:90
 msgctxt "toolbar"
 msgid "Add Page"
@@ -5268,7 +5271,7 @@ msgid "Currently logged in as <b>%s</b>."
 msgstr "<b>%s</b> としてログイン中"
 
 #: concrete/elements/account/menu.php:61
-#: concrete/elements/page_controls_footer.php:276
+#: concrete/elements/page_controls_footer.php:277
 #: concrete/themes/dark_chocolate/elements/footer.php:17
 #: concrete/themes/default/elements/footer.php:17
 #: concrete/themes/greek_yogurt/elements/footer.php:19
@@ -6006,12 +6009,12 @@ msgstr "ユーザー"
 msgid "(Deleted User)"
 msgstr "（デフォルトユーザー）"
 
-#: concrete/src/Permission/Access/Entity/GroupSetEntity.php:16
+#: concrete/src/Permission/Access/Entity/GroupSetEntity.php:17
 msgid "Add Group Set"
 msgstr "グループセットを追加"
 
 #: concrete/config/install/base/permissions.xml:318
-#: concrete/src/Permission/Access/Entity/GroupSetEntity.php:16
+#: concrete/src/Permission/Access/Entity/GroupSetEntity.php:17
 msgctxt "PermissionAccessEntityTypeName"
 msgid "Group Set"
 msgstr "グループセット"
@@ -6096,8 +6099,8 @@ msgid "Page Name"
 msgstr "ページ名"
 
 #: concrete/src/Page/Type/Composer/Control/CorePageProperty/NameCorePageProperty.php:39
-msgid "You must specify a page name."
-msgstr "ページ名を入力してください。"
+msgid "You haven't chosen a page name."
+msgstr "ページ名が指定されていません。"
 
 #: concrete/src/Page/Type/Composer/Control/CorePageProperty/PageTemplateCorePageProperty.php:11
 msgctxt "PageTypeComposerControlName"
@@ -7371,7 +7374,7 @@ msgstr "常に最新のコンテンツを表示する必要のないページに
 msgid "Hide All"
 msgstr "すべて隠す"
 
-#: concrete/elements/page_controls_footer.php:402
+#: concrete/elements/page_controls_footer.php:404
 #: concrete/src/Application/Service/UserInterface.php:285
 msgid "Hide"
 msgstr "隠す"
@@ -8004,62 +8007,62 @@ msgctxt "toolbar"
 msgid "Add"
 msgstr "新規"
 
-#: concrete/elements/page_controls_footer.php:257
+#: concrete/elements/page_controls_footer.php:258
 #, php-format
 msgid "Powered by <a href=\"%s\">concrete5</a>."
 msgstr "Powered by <a href=\"%s\">concrete5</a>."
 
-#: concrete/elements/page_controls_footer.php:266
+#: concrete/elements/page_controls_footer.php:267
 msgid "Dashboard – Change Site-wide Settings"
 msgstr "管理画面 - サイト全体の設定を変更"
 
-#: concrete/elements/page_controls_footer.php:278
+#: concrete/elements/page_controls_footer.php:279
 msgctxt "toolbar"
 msgid "Sign Out"
 msgstr "ログアウト"
 
-#: concrete/elements/page_controls_footer.php:285
+#: concrete/elements/page_controls_footer.php:286
 msgid "Add Pages and Navigate Your Site"
 msgstr "ページの追加と、サイトの案内"
 
-#: concrete/elements/page_controls_footer.php:321
+#: concrete/elements/page_controls_footer.php:323
 msgid "Editing Unavailable."
 msgstr "編集できません。"
 
-#: concrete/elements/page_controls_footer.php:322
+#: concrete/elements/page_controls_footer.php:324
 #, php-format
 msgid "%s is currently editing this page."
 msgstr "%s さんがこのページを編集しています"
 
-#: concrete/elements/page_controls_footer.php:333
+#: concrete/elements/page_controls_footer.php:335
 msgid "View/Edit Original"
 msgstr "オリジナルを表示／編集"
 
-#: concrete/elements/page_controls_footer.php:336
+#: concrete/elements/page_controls_footer.php:338
 msgid "Remove Alias"
 msgstr "エイリアスを削除"
 
-#: concrete/elements/page_controls_footer.php:341
+#: concrete/elements/page_controls_footer.php:343
 msgid "Page Alias."
 msgstr "ページエイリアス。"
 
-#: concrete/elements/page_controls_footer.php:342
+#: concrete/elements/page_controls_footer.php:344
 msgid "This page is an alias of one that actually appears elsewhere."
 msgstr "このページは、他の位置に存在するページのエイリアスです。"
 
-#: concrete/elements/page_controls_footer.php:422
+#: concrete/elements/page_controls_footer.php:424
 msgid "Submit for Approval"
 msgstr "承認を申請"
 
-#: concrete/elements/page_controls_footer.php:426
+#: concrete/elements/page_controls_footer.php:428
 msgid "Approve Version"
 msgstr "このバージョンを承認する"
 
-#: concrete/elements/page_controls_footer.php:435
+#: concrete/elements/page_controls_footer.php:437
 msgid "Page is Pending Approval."
 msgstr "ページは承認待ちです。"
 
-#: concrete/elements/page_controls_footer.php:436
+#: concrete/elements/page_controls_footer.php:438
 msgid "This page is newer than what appears to visitors on your live site."
 msgstr "このページは訪問者が公開サイトにアクセスした時に表示される状態より新しい内容になっています。"
 
@@ -9743,10 +9746,10 @@ msgstr "ワークフローに送信"
 #: concrete/views/panels/page/check_in.php:52
 #, php-format
 msgid ""
-"Fix common page errors from the <a href=\"#\" data-launch-panel-detail"
-"=\"page-composer\" data-panel-detail-url=\"%s\" data-panel-"
-"transition=\"fade\">Page Compose interface</a>."
-msgstr "<a href=\"#\" data-launch-panel-detail=\"page-composer\" data-panel-detail-url=\"%s\" data-panel-transition=\"fade\">ページ作成インタフェースから</a>共通のページエラーを修復."
+"You can specify page name, page location and attributes from the <a "
+"href=\"#\" data-launch-panel-detail=\"page-composer\" data-panel-detail-"
+"url=\"%s\" data-panel-transition=\"fade\">Page Compose interface</a>."
+msgstr "<a href=\"#\" data-launch-panel-detail=\"page-composer\" data-panel-detail-url=\"%s\" data-panel-transition=\"fade\">ページコンポーズインターフェース</a>から、ページ名、場所、属性を指定できます。"
 
 #: concrete/views/panels/page/check_in.php:67
 msgid "Discard Changes"
@@ -13168,7 +13171,7 @@ msgstr "スタックを複製"
 
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:66
 msgid "Clear Global Area"
-msgstr ""
+msgstr "グローバルエリアをクリア"
 
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:68
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:112
@@ -13877,11 +13880,11 @@ msgstr "メール送信ログ"
 
 #: concrete/single_pages/dashboard/system/environment/logging.php:26
 msgid "Log Database Queries"
-msgstr ""
+msgstr "データベースクエリを保存"
 
 #: concrete/single_pages/dashboard/system/environment/logging.php:33
 msgid "Clear Query Log on Reload"
-msgstr ""
+msgstr "クエリーログをリロード時に消去"
 
 #: concrete/single_pages/dashboard/system/environment/debug.php:10
 msgid "Display Errors"
@@ -14766,19 +14769,19 @@ msgstr "分ごと"
 #: concrete/single_pages/dashboard/system/optimization/query_log.php:24
 #, php-format
 msgid "Total Logged: %s"
-msgstr ""
+msgstr "ログ数合計：%s"
 
 #: concrete/single_pages/dashboard/system/optimization/query_log.php:33
 msgid "Times Run"
-msgstr ""
+msgstr "所要時間"
 
 #: concrete/single_pages/dashboard/system/optimization/query_log.php:34
 msgid "Query"
-msgstr ""
+msgstr "クエリー"
 
 #: concrete/single_pages/dashboard/system/optimization/query_log.php:43
 msgid "Query Details"
-msgstr ""
+msgstr "クエリー詳細"
 
 #: concrete/single_pages/dashboard/system/optimization/query_log.php:60
 msgid "Clear Log"
@@ -14786,7 +14789,7 @@ msgstr "ログをクリア"
 
 #: concrete/single_pages/dashboard/system/optimization/query_log.php:66
 msgid "The database query log is empty."
-msgstr ""
+msgstr "データベースクエリーログは空です。"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:40
 msgid "Job Sets"
@@ -16538,12 +16541,12 @@ msgstr "index search, reindex search, build sitemap, sitemap.xml, clear old vers
 
 #: concrete/config/install/base/dashboard.xml:632
 msgid "Database Query Log"
-msgstr ""
+msgstr "データベースクエリーログ"
 
 #. Keywords for page /dashboard/system/optimization/query_log
 #: concrete/config/install/base/dashboard.xml:635
 msgid "queries, database, mysql"
-msgstr ""
+msgstr "クエリー、データベース、MySQL"
 
 #: concrete/config/install/base/dashboard.xml:642
 msgid "Permissions & Access"

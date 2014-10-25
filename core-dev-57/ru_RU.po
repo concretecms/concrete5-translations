@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-10-23 10:00+0000\n"
-"PO-Revision-Date: 2014-10-23 10:22+0000\n"
+"POT-Creation-Date: 2014-10-24 10:00+0000\n"
+"PO-Revision-Date: 2014-10-24 10:05+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Russian (Russia) (http://www.transifex.com/projects/p/concrete5/language/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -308,7 +308,7 @@ msgid ""
 msgstr "Ключ устарел. Пожалуйста, посетите страницу напоминания пароля еще раз для генерации нового персонального ключа."
 
 #: concrete/authentication/concrete/controller.php:187
-#: concrete/controllers/install.php:323
+#: concrete/controllers/install.php:329
 #: concrete/controllers/single_page/account/edit_profile.php:94
 #: concrete/controllers/single_page/dashboard/users/search.php:336
 #: concrete/controllers/single_page/register.php:109
@@ -357,14 +357,14 @@ msgstr "Пользователь не активен. Свяжитесь с на
 msgid "facebook"
 msgstr ""
 
-#: concrete/controllers/backend/user_interface.php:28
+#: concrete/controllers/backend/page.php:50
+#: concrete/controllers/backend/user_interface.php:34
 #: concrete/controllers/backend/user_interface/block.php:47
-#: concrete/controllers/backend/user_interface/file.php:37
-#: concrete/controllers/backend/user_interface/page.php:39
+#: concrete/controllers/backend/user_interface/file.php:36
+#: concrete/controllers/backend/user_interface/page.php:25
 #: concrete/controllers/dialog/file/properties.php:54
 #: concrete/controllers/dialog/file/properties.php:78
 #: concrete/controllers/dialog/page/add_block.php:28
-#: concrete/controllers/panel/page/check_in.php:140
 #: concrete/tools/dashboard/sitemap_drag_request.php:7
 #: concrete/tools/dashboard/sitemap_update.php:5
 #: concrete/tools/edit_area_popup.php:6
@@ -908,7 +908,7 @@ msgid "Unable to copy one or more files."
 msgstr "Невозможно скопировать один или несколько файлов."
 
 #: concrete/blocks/form/controller.php:327
-#: concrete/controllers/backend/user_interface/file.php:21
+#: concrete/controllers/backend/user_interface/file.php:20
 #: concrete/src/File/Importer.php:36 concrete/tools/files/duplicate.php:43
 msgid "Invalid file."
 msgstr "Недействительный файл."
@@ -2937,7 +2937,6 @@ msgid "Page saved on %s"
 msgstr "Страница сохранена %s"
 
 #: concrete/controllers/panel/detail/page/composer.php:57
-#: concrete/controllers/panel/page/check_in.php:43
 msgid "You must choose a page to publish this page beneath."
 msgstr "Необходимо выбрать целевую страницу, под которой будет находиться новая созданная страница."
 
@@ -3017,6 +3016,10 @@ msgstr "Версия %s успешно утверждена."
 #: concrete/controllers/panel/page/versions.php:179
 msgid "You do not have permission to approve page versions."
 msgstr "У вас не достаточно прав для утверждения версий страниц."
+
+#: concrete/controllers/panel/page/check_in.php:43
+msgid "You haven't chosen where to publish this page."
+msgstr ""
 
 #: concrete/controllers/panel/page/check_in.php:66
 msgid "Invalid target page."
@@ -3154,34 +3157,34 @@ msgstr "Файл успешно обновлен."
 msgid "File search columns saved successfully."
 msgstr "Колонки в поиске файлов успешно сохранены."
 
-#: concrete/controllers/upgrade.php:66
+#: concrete/controllers/upgrade.php:58
 #, php-format
 msgid "Upgrade to <b>%s</b> complete!"
 msgstr "Обновление до <b>%s</b> завершено!"
 
-#: concrete/controllers/upgrade.php:79
+#: concrete/controllers/upgrade.php:70
 msgid ""
 "Unable to determine your current version of concrete5. Upgrading cannot "
 "continue."
 msgstr "Невозможно определить версию concrete5. Дальнейшее обновление не возможно."
 
-#: concrete/controllers/upgrade.php:84 concrete/controllers/upgrade.php:95
+#: concrete/controllers/upgrade.php:75 concrete/controllers/upgrade.php:86
 #, php-format
 msgid "Upgrading from <b>%s</b>"
 msgstr "Обновление от <b>%s</b>"
 
-#: concrete/controllers/upgrade.php:85 concrete/controllers/upgrade.php:96
+#: concrete/controllers/upgrade.php:76 concrete/controllers/upgrade.php:87
 #, php-format
 msgid "Upgrading to <b>%s</b>"
 msgstr "Обновление до <b>%s</b>"
 
-#: concrete/controllers/upgrade.php:87
+#: concrete/controllers/upgrade.php:78
 msgid ""
 "Your current website uses a version of concrete5 greater than this one. You "
 "cannot upgrade."
 msgstr "На вашем сайте версия concrete5 выше чем данная. Обновление не возможно."
 
-#: concrete/controllers/upgrade.php:91
+#: concrete/controllers/upgrade.php:82
 #, php-format
 msgid ""
 "Your site is already up to date! The current version of concrete5 is "
@@ -5050,55 +5053,55 @@ msgstr "Расширение PDO не загружено."
 msgid "concrete5 is already installed."
 msgstr "concrete5 уже установлена."
 
-#: concrete/controllers/install.php:222
+#: concrete/controllers/install.php:228
 msgid ""
 "Your configuration directory config/ does not appear to be writable by the "
 "web server."
 msgstr "config/ -  не доступен для записи"
 
-#: concrete/controllers/install.php:226
+#: concrete/controllers/install.php:232
 msgid ""
 "Your files directory files/ does not appear to be writable by the web "
 "server."
 msgstr "files/ -  не доступен для записи"
 
-#: concrete/controllers/install.php:230
+#: concrete/controllers/install.php:236
 msgid ""
 "Your packages directory packages/ does not appear to be writable by the web "
 "server."
 msgstr "Директория пакетов packages/ закрыта на запись и не может быть обновлена web сервером."
 
-#: concrete/controllers/install.php:281
+#: concrete/controllers/install.php:287
 #, php-format
 msgctxt "InstallError"
 msgid "%s.<br><br>Trace:<br>%s"
 msgstr "%s.<br><br>Trace:<br>%s"
 
-#: concrete/controllers/install.php:309
+#: concrete/controllers/install.php:315
 msgid "Please specify your site's name"
 msgstr "Укажите название вашего сайта"
 
-#: concrete/controllers/install.php:310
+#: concrete/controllers/install.php:316
 msgid "Please specify a valid email address"
 msgstr "Укажите существующий email адрес"
 
-#: concrete/controllers/install.php:311
+#: concrete/controllers/install.php:317
 msgid "You must specify a valid database name"
 msgstr "Укажите название существующей базы данных"
 
-#: concrete/controllers/install.php:312
+#: concrete/controllers/install.php:318
 msgid "You must specify a valid database server"
 msgstr "Укажите сервер базы данных"
 
-#: concrete/controllers/install.php:364
+#: concrete/controllers/install.php:370
 msgid "Unable to open config/app.php for writing."
 msgstr "Файл config/app.php недоступен для записи."
 
-#: concrete/controllers/install.php:385
+#: concrete/controllers/install.php:391
 msgid "Unable to open config/site_user.php for writing."
 msgstr "Файл config/site_user.php недоступен для записи."
 
-#: concrete/controllers/install.php:407
+#: concrete/controllers/install.php:413
 msgid "You must select a valid sample content starting point."
 msgstr "Вы должны выбрать тип содержимого."
 
@@ -5203,13 +5206,13 @@ msgctxt "toolbar"
 msgid "Return to Website"
 msgstr "Назад"
 
-#: concrete/elements/page_controls_footer.php:269
+#: concrete/elements/page_controls_footer.php:270
 #: concrete/themes/dashboard/elements/header.php:82
 msgctxt "toolbar"
 msgid "Dashboard"
 msgstr "Панель управления"
 
-#: concrete/elements/page_controls_footer.php:289
+#: concrete/elements/page_controls_footer.php:290
 #: concrete/themes/dashboard/elements/header.php:90
 msgctxt "toolbar"
 msgid "Add Page"
@@ -5278,7 +5281,7 @@ msgid "Currently logged in as <b>%s</b>."
 msgstr "Вы вошли как <b>%s</b>."
 
 #: concrete/elements/account/menu.php:61
-#: concrete/elements/page_controls_footer.php:276
+#: concrete/elements/page_controls_footer.php:277
 #: concrete/themes/dark_chocolate/elements/footer.php:17
 #: concrete/themes/default/elements/footer.php:17
 #: concrete/themes/greek_yogurt/elements/footer.php:19
@@ -6022,12 +6025,12 @@ msgstr "Пользователь"
 msgid "(Deleted User)"
 msgstr "(Удаленный Пользователь)"
 
-#: concrete/src/Permission/Access/Entity/GroupSetEntity.php:16
+#: concrete/src/Permission/Access/Entity/GroupSetEntity.php:17
 msgid "Add Group Set"
 msgstr "Добавить набор групп"
 
 #: concrete/config/install/base/permissions.xml:318
-#: concrete/src/Permission/Access/Entity/GroupSetEntity.php:16
+#: concrete/src/Permission/Access/Entity/GroupSetEntity.php:17
 msgctxt "PermissionAccessEntityTypeName"
 msgid "Group Set"
 msgstr "Набор групп"
@@ -6112,8 +6115,8 @@ msgid "Page Name"
 msgstr "Название страницы"
 
 #: concrete/src/Page/Type/Composer/Control/CorePageProperty/NameCorePageProperty.php:39
-msgid "You must specify a page name."
-msgstr "Необходимо указать название страницы."
+msgid "You haven't chosen a page name."
+msgstr ""
 
 #: concrete/src/Page/Type/Composer/Control/CorePageProperty/PageTemplateCorePageProperty.php:11
 msgctxt "PageTypeComposerControlName"
@@ -7387,7 +7390,7 @@ msgstr "Полностраничное кэширование может сущ�
 msgid "Hide All"
 msgstr "Скрыть"
 
-#: concrete/elements/page_controls_footer.php:402
+#: concrete/elements/page_controls_footer.php:404
 #: concrete/src/Application/Service/UserInterface.php:285
 msgid "Hide"
 msgstr "Закрыть"
@@ -8040,62 +8043,62 @@ msgctxt "toolbar"
 msgid "Add"
 msgstr "Добавить"
 
-#: concrete/elements/page_controls_footer.php:257
+#: concrete/elements/page_controls_footer.php:258
 #, php-format
 msgid "Powered by <a href=\"%s\">concrete5</a>."
 msgstr "Разработано на <a href=\"%s\">concrete5</a>."
 
-#: concrete/elements/page_controls_footer.php:266
+#: concrete/elements/page_controls_footer.php:267
 msgid "Dashboard – Change Site-wide Settings"
 msgstr "Панель управления - изменение настроек для всего сайта"
 
-#: concrete/elements/page_controls_footer.php:278
+#: concrete/elements/page_controls_footer.php:279
 msgctxt "toolbar"
 msgid "Sign Out"
 msgstr "Выход"
 
-#: concrete/elements/page_controls_footer.php:285
+#: concrete/elements/page_controls_footer.php:286
 msgid "Add Pages and Navigate Your Site"
 msgstr "Добавление страниц и навигация по сайту"
 
-#: concrete/elements/page_controls_footer.php:321
+#: concrete/elements/page_controls_footer.php:323
 msgid "Editing Unavailable."
 msgstr "Редактирование невозможно."
 
-#: concrete/elements/page_controls_footer.php:322
+#: concrete/elements/page_controls_footer.php:324
 #, php-format
 msgid "%s is currently editing this page."
 msgstr "Пользователь %s редактирует эту страницу в данный момент."
 
-#: concrete/elements/page_controls_footer.php:333
+#: concrete/elements/page_controls_footer.php:335
 msgid "View/Edit Original"
 msgstr "Посмотреть/редактировать оригинал"
 
-#: concrete/elements/page_controls_footer.php:336
+#: concrete/elements/page_controls_footer.php:338
 msgid "Remove Alias"
 msgstr "Удалить копию"
 
-#: concrete/elements/page_controls_footer.php:341
+#: concrete/elements/page_controls_footer.php:343
 msgid "Page Alias."
 msgstr "Псевдоним страницы"
 
-#: concrete/elements/page_controls_footer.php:342
+#: concrete/elements/page_controls_footer.php:344
 msgid "This page is an alias of one that actually appears elsewhere."
 msgstr "Эта страница является псевдоним страницы, которая на самом деле появляется в другом месте."
 
-#: concrete/elements/page_controls_footer.php:422
+#: concrete/elements/page_controls_footer.php:424
 msgid "Submit for Approval"
 msgstr "Представлено на утверждение"
 
-#: concrete/elements/page_controls_footer.php:426
+#: concrete/elements/page_controls_footer.php:428
 msgid "Approve Version"
 msgstr "Утвердить версию"
 
-#: concrete/elements/page_controls_footer.php:435
+#: concrete/elements/page_controls_footer.php:437
 msgid "Page is Pending Approval."
 msgstr "Страница ожидает утверждения."
 
-#: concrete/elements/page_controls_footer.php:436
+#: concrete/elements/page_controls_footer.php:438
 msgid "This page is newer than what appears to visitors on your live site."
 msgstr "Данная страница новее, чем та, которую видят посетители сайта."
 
@@ -9783,10 +9786,10 @@ msgstr "Добавить в процесс"
 #: concrete/views/panels/page/check_in.php:52
 #, php-format
 msgid ""
-"Fix common page errors from the <a href=\"#\" data-launch-panel-detail"
-"=\"page-composer\" data-panel-detail-url=\"%s\" data-panel-"
-"transition=\"fade\">Page Compose interface</a>."
-msgstr "Исправьте возникшие ошибки через <a href=\"#\" data-launch-panel-detail=\"page-composer\" data-panel-detail-url=\"%s\" data-panel-transition=\"fade\">интерфейс публикатора страницы</a>."
+"You can specify page name, page location and attributes from the <a "
+"href=\"#\" data-launch-panel-detail=\"page-composer\" data-panel-detail-"
+"url=\"%s\" data-panel-transition=\"fade\">Page Compose interface</a>."
+msgstr ""
 
 #: concrete/views/panels/page/check_in.php:67
 msgid "Discard Changes"

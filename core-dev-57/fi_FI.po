@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-10-23 10:00+0000\n"
-"PO-Revision-Date: 2014-10-23 10:22+0000\n"
+"POT-Creation-Date: 2014-10-24 10:00+0000\n"
+"PO-Revision-Date: 2014-10-24 10:05+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Finnish (Finland) (http://www.transifex.com/projects/p/concrete5/language/fi_FI/)\n"
 "MIME-Version: 1.0\n"
@@ -306,7 +306,7 @@ msgid ""
 msgstr "Avain vanhentunut. Ole hyvä ja vieraile Unohdin salasanai -sivulla luodaksesi uuden avaimen."
 
 #: concrete/authentication/concrete/controller.php:187
-#: concrete/controllers/install.php:323
+#: concrete/controllers/install.php:329
 #: concrete/controllers/single_page/account/edit_profile.php:94
 #: concrete/controllers/single_page/dashboard/users/search.php:336
 #: concrete/controllers/single_page/register.php:109
@@ -355,14 +355,14 @@ msgstr "Tämä käyttäjä ei ole aktiivinen. Ole hyvä ja ota yhteyttä meihin.
 msgid "facebook"
 msgstr ""
 
-#: concrete/controllers/backend/user_interface.php:28
+#: concrete/controllers/backend/page.php:50
+#: concrete/controllers/backend/user_interface.php:34
 #: concrete/controllers/backend/user_interface/block.php:47
-#: concrete/controllers/backend/user_interface/file.php:37
-#: concrete/controllers/backend/user_interface/page.php:39
+#: concrete/controllers/backend/user_interface/file.php:36
+#: concrete/controllers/backend/user_interface/page.php:25
 #: concrete/controllers/dialog/file/properties.php:54
 #: concrete/controllers/dialog/file/properties.php:78
 #: concrete/controllers/dialog/page/add_block.php:28
-#: concrete/controllers/panel/page/check_in.php:140
 #: concrete/tools/dashboard/sitemap_drag_request.php:7
 #: concrete/tools/dashboard/sitemap_update.php:5
 #: concrete/tools/edit_area_popup.php:6
@@ -905,7 +905,7 @@ msgid "Unable to copy one or more files."
 msgstr "Yhden tai useamman tiedoston kopiointi epäonnistui."
 
 #: concrete/blocks/form/controller.php:327
-#: concrete/controllers/backend/user_interface/file.php:21
+#: concrete/controllers/backend/user_interface/file.php:20
 #: concrete/src/File/Importer.php:36 concrete/tools/files/duplicate.php:43
 msgid "Invalid file."
 msgstr "Virheellinen tiedosto."
@@ -2930,7 +2930,6 @@ msgid "Page saved on %s"
 msgstr "Sivu tallennettu %s"
 
 #: concrete/controllers/panel/detail/page/composer.php:57
-#: concrete/controllers/panel/page/check_in.php:43
 msgid "You must choose a page to publish this page beneath."
 msgstr "Sinun täytyy valita sivu julkaistaksesi tämän sivun sen alla."
 
@@ -3009,6 +3008,10 @@ msgstr "Versio %s hyväksytty onnistuneesti"
 #: concrete/controllers/panel/page/versions.php:179
 msgid "You do not have permission to approve page versions."
 msgstr "Sinulla ei ole oikeutta hyväksyä sivuversioita."
+
+#: concrete/controllers/panel/page/check_in.php:43
+msgid "You haven't chosen where to publish this page."
+msgstr ""
 
 #: concrete/controllers/panel/page/check_in.php:66
 msgid "Invalid target page."
@@ -3146,34 +3149,34 @@ msgstr "Tiedosto päivitetty onnistuneesti."
 msgid "File search columns saved successfully."
 msgstr "Tiedostohaun sarakkeet tallennettu onnistuneesti."
 
-#: concrete/controllers/upgrade.php:66
+#: concrete/controllers/upgrade.php:58
 #, php-format
 msgid "Upgrade to <b>%s</b> complete!"
 msgstr "Päivitys versioon <b>%s</b> valmis!"
 
-#: concrete/controllers/upgrade.php:79
+#: concrete/controllers/upgrade.php:70
 msgid ""
 "Unable to determine your current version of concrete5. Upgrading cannot "
 "continue."
 msgstr "Concrete5:n nykyistä versiota ei voitu selvittää. Päivittämistä ei voi jatkaa."
 
-#: concrete/controllers/upgrade.php:84 concrete/controllers/upgrade.php:95
+#: concrete/controllers/upgrade.php:75 concrete/controllers/upgrade.php:86
 #, php-format
 msgid "Upgrading from <b>%s</b>"
 msgstr "Päivitetään versiosta <b>%s</b>"
 
-#: concrete/controllers/upgrade.php:85 concrete/controllers/upgrade.php:96
+#: concrete/controllers/upgrade.php:76 concrete/controllers/upgrade.php:87
 #, php-format
 msgid "Upgrading to <b>%s</b>"
 msgstr "Päivitetään versioon <b>%s</b>"
 
-#: concrete/controllers/upgrade.php:87
+#: concrete/controllers/upgrade.php:78
 msgid ""
 "Your current website uses a version of concrete5 greater than this one. You "
 "cannot upgrade."
 msgstr "Sivustosi käyttää concrete5:n versiota, joka on tätä suurempi. Et voi päivittää."
 
-#: concrete/controllers/upgrade.php:91
+#: concrete/controllers/upgrade.php:82
 #, php-format
 msgid ""
 "Your site is already up to date! The current version of concrete5 is "
@@ -5041,55 +5044,55 @@ msgstr "PDO-laajennusta ei ole ladattu."
 msgid "concrete5 is already installed."
 msgstr "concrete5 on jo asennettuna."
 
-#: concrete/controllers/install.php:222
+#: concrete/controllers/install.php:228
 msgid ""
 "Your configuration directory config/ does not appear to be writable by the "
 "web server."
 msgstr "Konfiguraatiohakemisto config/ ei näytä olevan palvelimen kirjoitettavissa."
 
-#: concrete/controllers/install.php:226
+#: concrete/controllers/install.php:232
 msgid ""
 "Your files directory files/ does not appear to be writable by the web "
 "server."
 msgstr "Tiedostohakemistosi files/ ei näytä olevan palvelimen kirjoitettavissa."
 
-#: concrete/controllers/install.php:230
+#: concrete/controllers/install.php:236
 msgid ""
 "Your packages directory packages/ does not appear to be writable by the web "
 "server."
 msgstr "Pakettihakemistosi packages/ ei näytä olevan palvelimen kirjoitettavissa."
 
-#: concrete/controllers/install.php:281
+#: concrete/controllers/install.php:287
 #, php-format
 msgctxt "InstallError"
 msgid "%s.<br><br>Trace:<br>%s"
 msgstr ""
 
-#: concrete/controllers/install.php:309
+#: concrete/controllers/install.php:315
 msgid "Please specify your site's name"
 msgstr "Kirjoita sivustosi nimi"
 
-#: concrete/controllers/install.php:310
+#: concrete/controllers/install.php:316
 msgid "Please specify a valid email address"
 msgstr "Anna toimiva sähköpostiosoite"
 
-#: concrete/controllers/install.php:311
+#: concrete/controllers/install.php:317
 msgid "You must specify a valid database name"
 msgstr "Sinun täytyy antaa toimiva tietokannan nimi"
 
-#: concrete/controllers/install.php:312
+#: concrete/controllers/install.php:318
 msgid "You must specify a valid database server"
 msgstr "Sinun täytyy antaa toimiva tietokantapalvelin"
 
-#: concrete/controllers/install.php:364
+#: concrete/controllers/install.php:370
 msgid "Unable to open config/app.php for writing."
 msgstr "Tiedostoa config/app.php ei voitu avata kirjoittamista varten."
 
-#: concrete/controllers/install.php:385
+#: concrete/controllers/install.php:391
 msgid "Unable to open config/site_user.php for writing."
 msgstr "Tiedostoa config/site_user.php ei voitu avata kirjoittamista varten."
 
-#: concrete/controllers/install.php:407
+#: concrete/controllers/install.php:413
 msgid "You must select a valid sample content starting point."
 msgstr "Sinun täytyy valita hyväksytty esimerkkisisällön lähtökohta."
 
@@ -5194,13 +5197,13 @@ msgctxt "toolbar"
 msgid "Return to Website"
 msgstr "Palaa sivustolle"
 
-#: concrete/elements/page_controls_footer.php:269
+#: concrete/elements/page_controls_footer.php:270
 #: concrete/themes/dashboard/elements/header.php:82
 msgctxt "toolbar"
 msgid "Dashboard"
 msgstr "Hallintapaneeli"
 
-#: concrete/elements/page_controls_footer.php:289
+#: concrete/elements/page_controls_footer.php:290
 #: concrete/themes/dashboard/elements/header.php:90
 msgctxt "toolbar"
 msgid "Add Page"
@@ -5269,7 +5272,7 @@ msgid "Currently logged in as <b>%s</b>."
 msgstr "Kirjautuneena sisään tunnuksella <b>%s</b>."
 
 #: concrete/elements/account/menu.php:61
-#: concrete/elements/page_controls_footer.php:276
+#: concrete/elements/page_controls_footer.php:277
 #: concrete/themes/dark_chocolate/elements/footer.php:17
 #: concrete/themes/default/elements/footer.php:17
 #: concrete/themes/greek_yogurt/elements/footer.php:19
@@ -6010,12 +6013,12 @@ msgstr "Käyttäjä"
 msgid "(Deleted User)"
 msgstr "(Poistettu käyttäjä)"
 
-#: concrete/src/Permission/Access/Entity/GroupSetEntity.php:16
+#: concrete/src/Permission/Access/Entity/GroupSetEntity.php:17
 msgid "Add Group Set"
 msgstr "Lisää ryhmäjoukko"
 
 #: concrete/config/install/base/permissions.xml:318
-#: concrete/src/Permission/Access/Entity/GroupSetEntity.php:16
+#: concrete/src/Permission/Access/Entity/GroupSetEntity.php:17
 msgctxt "PermissionAccessEntityTypeName"
 msgid "Group Set"
 msgstr "Ryhmäjoukko"
@@ -6100,8 +6103,8 @@ msgid "Page Name"
 msgstr "Sivun nimi"
 
 #: concrete/src/Page/Type/Composer/Control/CorePageProperty/NameCorePageProperty.php:39
-msgid "You must specify a page name."
-msgstr "Sinun täytyy määritellä sivun nimi."
+msgid "You haven't chosen a page name."
+msgstr ""
 
 #: concrete/src/Page/Type/Composer/Control/CorePageProperty/PageTemplateCorePageProperty.php:11
 msgctxt "PageTypeComposerControlName"
@@ -7375,7 +7378,7 @@ msgstr "Koko sivun välimuisti voi parantaa sivun nopeutta dramaattisesti sivuil
 msgid "Hide All"
 msgstr "Piilota kaikki"
 
-#: concrete/elements/page_controls_footer.php:402
+#: concrete/elements/page_controls_footer.php:404
 #: concrete/src/Application/Service/UserInterface.php:285
 msgid "Hide"
 msgstr "Piilota"
@@ -8018,62 +8021,62 @@ msgctxt "toolbar"
 msgid "Add"
 msgstr "Lisää"
 
-#: concrete/elements/page_controls_footer.php:257
+#: concrete/elements/page_controls_footer.php:258
 #, php-format
 msgid "Powered by <a href=\"%s\">concrete5</a>."
 msgstr "Voimanlähteenä <a href=\"%s\">concrete5</a>."
 
-#: concrete/elements/page_controls_footer.php:266
+#: concrete/elements/page_controls_footer.php:267
 msgid "Dashboard – Change Site-wide Settings"
 msgstr "Hallintapaneeli – Muuta sivuston laajuisia asetuksia"
 
-#: concrete/elements/page_controls_footer.php:278
+#: concrete/elements/page_controls_footer.php:279
 msgctxt "toolbar"
 msgid "Sign Out"
 msgstr "Kirjaudu ulos"
 
-#: concrete/elements/page_controls_footer.php:285
+#: concrete/elements/page_controls_footer.php:286
 msgid "Add Pages and Navigate Your Site"
 msgstr "Lisää sivuja ja selaa sivustoasi"
 
-#: concrete/elements/page_controls_footer.php:321
+#: concrete/elements/page_controls_footer.php:323
 msgid "Editing Unavailable."
 msgstr "Muokkaus ei ole saatavissa."
 
-#: concrete/elements/page_controls_footer.php:322
+#: concrete/elements/page_controls_footer.php:324
 #, php-format
 msgid "%s is currently editing this page."
 msgstr "%s muokkaa sivua tällä hetkellä."
 
-#: concrete/elements/page_controls_footer.php:333
+#: concrete/elements/page_controls_footer.php:335
 msgid "View/Edit Original"
 msgstr "Näytä tai muokkaa alkuperäistä"
 
-#: concrete/elements/page_controls_footer.php:336
+#: concrete/elements/page_controls_footer.php:338
 msgid "Remove Alias"
 msgstr "Poista alias"
 
-#: concrete/elements/page_controls_footer.php:341
+#: concrete/elements/page_controls_footer.php:343
 msgid "Page Alias."
 msgstr "Sivun alias."
 
-#: concrete/elements/page_controls_footer.php:342
+#: concrete/elements/page_controls_footer.php:344
 msgid "This page is an alias of one that actually appears elsewhere."
 msgstr "Tämä sivu on toisaalla sijaitsevan sivun alias."
 
-#: concrete/elements/page_controls_footer.php:422
+#: concrete/elements/page_controls_footer.php:424
 msgid "Submit for Approval"
 msgstr "Lähetä hyväksyttäväksi"
 
-#: concrete/elements/page_controls_footer.php:426
+#: concrete/elements/page_controls_footer.php:428
 msgid "Approve Version"
 msgstr "Hyväksy versio"
 
-#: concrete/elements/page_controls_footer.php:435
+#: concrete/elements/page_controls_footer.php:437
 msgid "Page is Pending Approval."
 msgstr "Sivu odottaa hyväksyntää."
 
-#: concrete/elements/page_controls_footer.php:436
+#: concrete/elements/page_controls_footer.php:438
 msgid "This page is newer than what appears to visitors on your live site."
 msgstr "Tämä sivu on uudempi kuin mikä näytetään sivustosi vierailijoille."
 
@@ -9759,10 +9762,10 @@ msgstr "Lähetä työnkulkuun"
 #: concrete/views/panels/page/check_in.php:52
 #, php-format
 msgid ""
-"Fix common page errors from the <a href=\"#\" data-launch-panel-detail"
-"=\"page-composer\" data-panel-detail-url=\"%s\" data-panel-"
-"transition=\"fade\">Page Compose interface</a>."
-msgstr "Korjaa yleisiä sivuvirheitä <a href=\"#\" data-launch-panel-detail=\"page-composer\" data-panel-detail-url=\"%s\" data-panel-transition=\"fade\">Sivun julkaisu -käyttöliittymästä</a>."
+"You can specify page name, page location and attributes from the <a "
+"href=\"#\" data-launch-panel-detail=\"page-composer\" data-panel-detail-"
+"url=\"%s\" data-panel-transition=\"fade\">Page Compose interface</a>."
+msgstr ""
 
 #: concrete/views/panels/page/check_in.php:67
 msgid "Discard Changes"
