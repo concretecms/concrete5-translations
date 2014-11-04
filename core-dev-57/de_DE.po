@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-11-01 05:00+0000\n"
-"PO-Revision-Date: 2014-11-01 12:20+0000\n"
+"POT-Creation-Date: 2014-11-03 05:00+0000\n"
+"PO-Revision-Date: 2014-11-04 06:30+0000\n"
 "Last-Translator: Torsten Silbermann <mail@tsilbermann.de>\n"
 "Language-Team: German (Germany) (http://www.transifex.com/projects/p/concrete5/language/de_DE/)\n"
 "MIME-Version: 1.0\n"
@@ -54,12 +54,12 @@ msgstr "Twitter"
 #: concrete/authentication/twitter/hook.php:14
 #, php-format
 msgid "Attach a %s account"
-msgstr "Ein %s-Konto anfügen"
+msgstr "Ein %s-Konto anfügen."
 
 #: concrete/authentication/twitter/form.php:20
 #, php-format
 msgid "Register an account for \"%s\""
-msgstr "Ein Konto registrieren für \"%s\""
+msgstr "Ein Konto für \"%s\" registrieren."
 
 #: concrete/authentication/twitter/form.php:25
 #: concrete/config/install/base/login_registration.xml:27
@@ -132,7 +132,7 @@ msgstr ""
 #: concrete/authentication/community/form.php:26
 #: concrete/authentication/community/hook.php:11
 msgid "Attach a concrete5.org account"
-msgstr "Ein concrete5.org-Konto anfügen"
+msgstr "Ein concrete5.org-Konto anfügen."
 
 #: concrete/authentication/community/form.php:34
 msgid "Sign in with a community account"
@@ -287,7 +287,7 @@ msgid "Language"
 msgstr "Sprache"
 
 #: concrete/authentication/concrete/form.php:41
-#: concrete/themes/elemental/elements/footer.php:60
+#: concrete/themes/elemental/elements/footer.php:70
 msgid "Log in"
 msgstr "Anmelden"
 
@@ -1008,7 +1008,7 @@ msgstr "Soll diese Verzweigung wirklich entfernt werden? Es werden keine Ressour
 msgid "Remove Node"
 msgstr "Verzweigung entfernen"
 
-#: concrete/tools/tree/node/drag_request.php:15
+#: concrete/tools/tree/node/drag_request.php:16
 msgid "You do not have permission to drag this node here."
 msgstr "Sie haben nicht die Berechtigung, diesen Verzweigung hierher zu verschieben."
 
@@ -1523,7 +1523,7 @@ msgstr "Bild einfügen"
 msgid "Table"
 msgstr "Tabelle"
 
-#: concrete/blocks/file/add.php:10
+#: concrete/blocks/feature/form.php:27 concrete/blocks/file/add.php:10
 #: concrete/elements/conversation/display.php:90
 #: concrete/elements/conversation/message.php:113
 #: concrete/tools/i18n_redactor_js.php:17
@@ -1672,7 +1672,7 @@ msgid "Delete Head"
 msgstr "Kopfzeile löschen"
 
 #: concrete/blocks/date_navigation/form.php:57
-#: concrete/blocks/feature/form.php:10 concrete/blocks/image/form.php:72
+#: concrete/blocks/feature/form.php:15 concrete/blocks/image/form.php:72
 #: concrete/blocks/image_slider/form_setup_html.php:209
 #: concrete/blocks/search/form_setup_html.php:30
 #: concrete/blocks/tags/tag_form.php:10 concrete/blocks/topic_list/form.php:44
@@ -1692,6 +1692,7 @@ msgstr "Position"
 
 #: concrete/blocks/autonav/form_setup_html.php:93
 #: concrete/blocks/dashboard_site_activity/view.php:5
+#: concrete/blocks/feature/form.php:31
 #: concrete/blocks/form/form_setup_html.php:92
 #: concrete/blocks/image/form.php:49 concrete/blocks/survey/edit.php:48
 #: concrete/elements/custom_style.php:61 concrete/elements/custom_style.php:67
@@ -1730,7 +1731,8 @@ msgstr "Zentriert"
 msgid "Image Web Link"
 msgstr "Bildlink"
 
-#: concrete/src/File/Type/Type.php:73 concrete/tools/i18n_redactor_js.php:65
+#: concrete/blocks/feature/form.php:12 concrete/src/File/Type/Type.php:73
+#: concrete/tools/i18n_redactor_js.php:65
 msgid "Text"
 msgstr "Text"
 
@@ -1744,7 +1746,7 @@ msgstr "Text"
 msgid "Email"
 msgstr "E-Mail"
 
-#: concrete/blocks/image/form.php:61
+#: concrete/blocks/feature/form.php:43 concrete/blocks/image/form.php:61
 #: concrete/blocks/image_slider/form_setup_html.php:218
 #: concrete/elements/workflow/progress/categories/page/pending.php:13
 #: concrete/single_pages/dashboard/system/basics/social.php:69
@@ -5386,13 +5388,13 @@ msgstr "404 Fehler"
 msgid "Page not found."
 msgstr "Seite nicht gefunden."
 
-#: concrete/themes/elemental/elements/footer.php:54
+#: concrete/themes/elemental/elements/footer.php:64
 msgid ""
 "Built with <a href=\"http://www.concrete5.org\" "
 "class=\"concrete5\">concrete5</a> CMS."
 msgstr "Erstellt mit <a href=\"http://www.concrete5.org\" class=\"concrete5\">concrete5</a> CMS."
 
-#: concrete/themes/elemental/elements/footer.php:69
+#: concrete/themes/elemental/elements/footer.php:79
 msgid "Log out"
 msgstr "Abmelden"
 
@@ -5604,7 +5606,7 @@ msgstr "Ungelesen"
 msgid "Replied"
 msgstr "Beantwortet"
 
-#: concrete/src/Page/Page.php:413
+#: concrete/src/Page/Page.php:410
 #: concrete/src/User/PrivateMessage/PrivateMessage.php:145
 msgid "Unknown User"
 msgstr "Unbekannter Benutzer"
@@ -6198,16 +6200,16 @@ msgstr "Alle Elemente"
 msgid "Featured Items"
 msgstr "Vorgestellte Elemente"
 
-#: concrete/src/Page/Page.php:2044
+#: concrete/src/Page/Page.php:2041
 #, php-format
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "Die Seite \"%s\" im Pfad \"%s\" wurde gelöscht."
 
-#: concrete/src/Page/Page.php:2044 concrete/src/Page/Page.php:2108
+#: concrete/src/Page/Page.php:2041 concrete/src/Page/Page.php:2105
 msgid "Page Action"
 msgstr "Seitenaktion"
 
-#: concrete/src/Page/Page.php:2108
+#: concrete/src/Page/Page.php:2105
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "Seite\"%s\" im Pfad \"%s\" in den Papierkorb verschoben"
@@ -9244,7 +9246,7 @@ msgstr "Blockname"
 msgid ""
 "This can be useful when working with a block programmatically. This is "
 "rarely used or needed."
-msgstr "Ein spezieller Name wird nur in seltenen Fällen benötigt (z.B. wenn mit dem Block gezielt weitergearbeitet wird)."
+msgstr "Ein Blockname, der im Programmcode verwendet werden kann."
 
 #: concrete/views/dialogs/block/cache.php:26
 #, php-format
@@ -11098,15 +11100,15 @@ msgstr "Bitte ein Bild für den Mouseover-Effekt wählen"
 msgid "Image Link"
 msgstr "Bildlink"
 
-#: concrete/blocks/image/form.php:50
+#: concrete/blocks/feature/form.php:32 concrete/blocks/image/form.php:50
 msgid "Another Page"
 msgstr "Andere Seite"
 
-#: concrete/blocks/image/form.php:51
+#: concrete/blocks/feature/form.php:33 concrete/blocks/image/form.php:51
 msgid "External URL"
 msgstr "Externe URL"
 
-#: concrete/blocks/image/form.php:56
+#: concrete/blocks/feature/form.php:38 concrete/blocks/image/form.php:56
 msgid "Choose Page:"
 msgstr "Seite auswählen:"
 
@@ -11710,6 +11712,11 @@ msgstr "%s, <a href=\"%s\">%s</a>"
 
 #: concrete/blocks/testimonial/view.php:22
 #, php-format
+msgid "<a href=\"%s\">%s</a>"
+msgstr ""
+
+#: concrete/blocks/testimonial/view.php:28
+#, php-format
 msgid "%s, %s"
 msgstr "%s, %s"
 
@@ -11958,19 +11965,19 @@ msgstr "Der RSS-Feed muss eine gültige Beschreibung haben."
 msgid "Empty Page List Block."
 msgstr "Leerer Block Seitenliste"
 
-#: concrete/blocks/feature/form.php:15
+#: concrete/blocks/feature/form.php:20
 msgid "Paragraph"
 msgstr "Absatz"
 
-#: concrete/blocks/feature/controller.php:25
+#: concrete/blocks/feature/controller.php:28
 msgid "Displays an icon, a title, and a short paragraph description."
 msgstr "Zeigt ein Symbol, einen Titel und eine Kurzbeschreibung an"
 
-#: concrete/blocks/feature/controller.php:30
+#: concrete/blocks/feature/controller.php:33
 msgid "Feature"
 msgstr "Hervorgehoben"
 
-#: concrete/blocks/feature/controller.php:76
+#: concrete/blocks/feature/controller.php:100
 msgid "Choose Icon"
 msgstr "Symbol auswählen"
 
