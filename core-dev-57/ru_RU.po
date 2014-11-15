@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-11-13 05:00+0000\n"
-"PO-Revision-Date: 2014-11-13 21:52+0000\n"
+"POT-Creation-Date: 2014-11-14 05:00+0000\n"
+"PO-Revision-Date: 2014-11-14 22:25+0000\n"
 "Last-Translator: Anton Schepetkov <schepetkov@gmail.com>\n"
 "Language-Team: Russian (Russia) (http://www.transifex.com/projects/p/concrete5/language/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -62,7 +62,7 @@ msgstr "Регистрация аккаунта для \"%s\""
 
 #: concrete/authentication/twitter/form.php:25
 #: concrete/config/install/base/login_registration.xml:27
-#: concrete/single_pages/register.php:124
+#: concrete/single_pages/register.php:113
 msgid "Register"
 msgstr "Регистрация"
 
@@ -178,25 +178,25 @@ msgstr "Показать секретный ключ"
 msgid "Hide secret key"
 msgstr "Скрыть секретный ключ"
 
-#: concrete/authentication/concrete/change_password.php:4
+#: concrete/authentication/concrete/change_password.php:9
 msgid "Reset Password"
 msgstr "Сброс пароля"
 
-#: concrete/authentication/concrete/change_password.php:5
+#: concrete/authentication/concrete/change_password.php:10
 msgid "Enter your new password below."
 msgstr "Ниже введите новый пароль."
 
-#: concrete/authentication/concrete/change_password.php:15
-#: concrete/single_pages/account/edit_profile.php:69
+#: concrete/authentication/concrete/change_password.php:20
+#: concrete/single_pages/account/edit_profile.php:70
 msgid "New Password"
 msgstr "Новый пароль"
 
-#: concrete/authentication/concrete/change_password.php:19
-#: concrete/single_pages/account/edit_profile.php:75
+#: concrete/authentication/concrete/change_password.php:24
+#: concrete/single_pages/account/edit_profile.php:76
 msgid "Confirm New Password"
 msgstr "Подтвердите новый пароль"
 
-#: concrete/authentication/concrete/change_password.php:23
+#: concrete/authentication/concrete/change_password.php:28
 msgid "Change password and sign in"
 msgstr "Сменить пароль и авторизоваться"
 
@@ -251,7 +251,7 @@ msgstr "Войти с локальной учетной записью."
 #: concrete/single_pages/dashboard/users/add.php:34
 #: concrete/single_pages/dashboard/users/search.php:54
 #: concrete/single_pages/login_oauth.php:64
-#: concrete/single_pages/register.php:59
+#: concrete/single_pages/register.php:57
 #: concrete/src/Form/Service/Widget/UserSelector.php:88
 #: concrete/tools/users/search_results_export.php:27
 #: concrete/views/frontend/install.php:160
@@ -283,7 +283,7 @@ msgstr "Имя пользователя"
 #: concrete/single_pages/dashboard/users/search.php:58
 #: concrete/single_pages/dashboard/users/search.php:167
 #: concrete/single_pages/download_file.php:26
-#: concrete/single_pages/register.php:65
+#: concrete/single_pages/register.php:61
 #: concrete/views/frontend/install.php:166
 msgid "Password"
 msgstr "Пароль"
@@ -311,6 +311,10 @@ msgstr "Войти"
 msgid "Forgot Password"
 msgstr "Забыли пароль"
 
+#: concrete/authentication/concrete/form.php:53
+msgid "Not a member? Register"
+msgstr "Еще не зарегистрированы? Создайте аккаунт."
+
 #: concrete/authentication/concrete/controller.php:62
 msgid "There was a database error, try again."
 msgstr "Произошла ошибка в базе данных, выполните действие повторно."
@@ -333,7 +337,7 @@ msgstr "Ключ устарел. Пожалуйста, посетите стра
 #: concrete/controllers/install.php:328
 #: concrete/controllers/single_page/account/edit_profile.php:94
 #: concrete/controllers/single_page/dashboard/users/search.php:336
-#: concrete/controllers/single_page/register.php:109
+#: concrete/controllers/single_page/register.php:106
 msgid "The two passwords provided do not match."
 msgstr "Пароли не совпадают."
 
@@ -486,7 +490,7 @@ msgstr "По убыванию"
 #: concrete/elements/permission/lists/block.php:66
 #: concrete/elements/permission/lists/file.php:63
 #: concrete/elements/permission/lists/tree/node.php:66
-#: concrete/single_pages/account/edit_profile.php:85
+#: concrete/single_pages/account/edit_profile.php:86
 #: concrete/single_pages/dashboard/blocks/permissions.php:19
 #: concrete/single_pages/dashboard/files/sets.php:101
 #: concrete/single_pages/dashboard/pages/themes/view.php:80
@@ -1758,7 +1762,7 @@ msgstr "Текстовая строка"
 #: concrete/config/install/base/dashboard.xml:736
 #: concrete/elements/users/confirm_list.php:8
 #: concrete/mail/user_register_approval_required.php:15
-#: concrete/single_pages/account/edit_profile.php:22
+#: concrete/single_pages/account/edit_profile.php:21
 #: concrete/src/User/Search/ColumnSet/DefaultSet.php:30
 #: concrete/themes/greek_yogurt/blog_entry.php:73
 #: concrete/tools/i18n_redactor_js.php:66
@@ -2978,11 +2982,11 @@ msgstr "Страница сохранена %s"
 msgid "You must choose a page to publish this page beneath."
 msgstr "Необходимо выбрать целевую страницу, под которой будет находиться новая созданная страница."
 
-#: concrete/controllers/panel/detail/page/composer.php:62
+#: concrete/controllers/panel/detail/page/composer.php:63
 msgid "You do not have permission to publish a page in this location."
 msgstr "У вас недостаточно прав для публикации страницы в этом месте."
 
-#: concrete/controllers/panel/detail/page/composer.php:93
+#: concrete/controllers/panel/detail/page/composer.php:94
 msgid "You do not have permission to discard this page."
 msgstr "У вас недостаточно прав для отмены изменений на странице."
 
@@ -3716,15 +3720,15 @@ msgstr "Аватара успешно сохранена."
 
 #: concrete/controllers/single_page/dashboard/users/search.php:110
 #: concrete/controllers/single_page/dashboard/users/search.php:113
-#: concrete/controllers/single_page/register.php:164
-#: concrete/controllers/single_page/register.php:168
+#: concrete/controllers/single_page/register.php:161
+#: concrete/controllers/single_page/register.php:165
 msgid "Website Registration Notification"
 msgstr "Уведомление о регистрации на сайте"
 
 #: concrete/controllers/single_page/account/edit_profile.php:73
 #: concrete/controllers/single_page/dashboard/users/add.php:52
 #: concrete/controllers/single_page/dashboard/users/search.php:164
-#: concrete/controllers/single_page/register.php:61
+#: concrete/controllers/single_page/register.php:58
 msgid "Invalid email address provided."
 msgstr "Введен неверный e-mail."
 
@@ -3749,14 +3753,14 @@ msgstr "Язык успешно сохранен."
 
 #: concrete/controllers/single_page/dashboard/users/add.php:58
 #: concrete/controllers/single_page/dashboard/users/search.php:234
-#: concrete/controllers/single_page/register.php:69
+#: concrete/controllers/single_page/register.php:66
 #, php-format
 msgid "A username must be at least %s characters long."
 msgstr "Имя пользователя должно быть не короче %s символов"
 
 #: concrete/controllers/single_page/dashboard/users/add.php:62
 #: concrete/controllers/single_page/dashboard/users/search.php:238
-#: concrete/controllers/single_page/register.php:73
+#: concrete/controllers/single_page/register.php:70
 #, php-format
 msgid "A username cannot be more than %s characters long."
 msgstr "Имя пользователя не может быть длиннее %s символов"
@@ -3856,14 +3860,14 @@ msgid "User Attribute Updated."
 msgstr "Атрибуты пользователя обновлены."
 
 #: concrete/controllers/single_page/dashboard/users/add.php:78
-#: concrete/controllers/single_page/register.php:92
+#: concrete/controllers/single_page/register.php:89
 msgid "Invalid Username"
 msgstr "Неверное имя пользователя"
 
 #: concrete/controllers/single_page/account/edit_profile.php:107
 #: concrete/controllers/single_page/dashboard/users/add.php:100
 #: concrete/controllers/single_page/login.php:335
-#: concrete/controllers/single_page/register.php:119
+#: concrete/controllers/single_page/register.php:116
 #: concrete/src/Page/Type/Composer/Control/CollectionAttributeControl.php:136
 #, php-format
 msgid "The field \"%s\" is required"
@@ -4793,51 +4797,51 @@ msgstr "От: %s\nДата: %s\nТема: %s"
 msgid "You haven't written a message!"
 msgstr "Вы не написали сообщение!"
 
-#: concrete/controllers/single_page/register.php:56
+#: concrete/controllers/single_page/register.php:53
 msgid ""
 "Incorrect image validation code. Please check the image and re-enter the "
 "letters or numbers as necessary."
 msgstr "Введен неправильный код проверки. Пожалуйста, посмотрите на изображение и введите код правильно."
 
-#: concrete/controllers/single_page/register.php:63
+#: concrete/controllers/single_page/register.php:60
 #, php-format
 msgid "The email address %s is already in use. Please choose another."
 msgstr "E-mail %s уже используется. Укажите другой."
 
-#: concrete/controllers/single_page/register.php:79
+#: concrete/controllers/single_page/register.php:76
 msgid "A username may only contain letters, numbers and spaces."
 msgstr "Имя пользователя может содержать только буквы, цифры и пробелы."
 
-#: concrete/controllers/single_page/register.php:81
+#: concrete/controllers/single_page/register.php:78
 msgid "A username may only contain letters or numbers."
 msgstr "Имя пользователя может содержать только буквы и цифры."
 
-#: concrete/controllers/single_page/register.php:86
+#: concrete/controllers/single_page/register.php:83
 #, php-format
 msgid "The username %s already exists. Please choose another"
 msgstr "Имя пользователя %s уже зарегистрированно. Попробуйте другое"
 
-#: concrete/controllers/single_page/register.php:199
+#: concrete/controllers/single_page/register.php:196
 msgid "Validate Email Address"
 msgstr "Подтвердите e-mail"
 
-#: concrete/controllers/single_page/register.php:271
+#: concrete/controllers/single_page/register.php:257
 msgid "Your account has been created, and you are now logged in."
 msgstr "Ваша учетная запись создана, и вы теперь вошли."
 
-#: concrete/controllers/single_page/register.php:276
+#: concrete/controllers/single_page/register.php:262
 msgid ""
 "You are registered but you need to validate your email address. Some or all "
 "functionality on this site will be limited until you do so."
 msgstr "Вы зарегистрированны, но вам необходимо подтвердить ваш e-mail. Часть функций будет отключена до этого времени."
 
-#: concrete/controllers/single_page/register.php:277
+#: concrete/controllers/single_page/register.php:263
 msgid ""
 "An email has been sent to your email address. Click on the URL contained in "
 "the email to validate your email address."
 msgstr "Вам на e-mail было послано сообщение. Для подтверждения нажмите на ссылку в письме."
 
-#: concrete/controllers/single_page/register.php:282
+#: concrete/controllers/single_page/register.php:268
 msgid ""
 "You are registered but a site administrator must review your account, you "
 "will not be able to login until your account has been approved."
@@ -9976,7 +9980,7 @@ msgid "Administrator Information"
 msgstr "Администратор"
 
 #: concrete/single_pages/dashboard/users/search.php:172
-#: concrete/single_pages/register.php:71
+#: concrete/single_pages/register.php:65
 #: concrete/views/frontend/install.php:172
 msgid "Confirm Password"
 msgstr "Подтвердите пароль"
@@ -10861,7 +10865,7 @@ msgstr "Отображение фрагментов коллектора"
 #: concrete/blocks/form/form_setup_html.php:39
 #: concrete/blocks/page_attribute_display/form.php:6
 #: concrete/single_pages/dashboard/system/registration/open.php:56
-#: concrete/single_pages/register.php:86
+#: concrete/single_pages/register.php:78
 msgid "Options"
 msgstr "Настройки"
 
@@ -13694,7 +13698,7 @@ msgstr "Сейчас текущая сессия будет завершена �
 msgid "Are you sure you want to permanently remove this user?"
 msgstr "Вы уверены что хотите удалить этого пользователя?"
 
-#: concrete/single_pages/account/edit_profile.php:67
+#: concrete/single_pages/account/edit_profile.php:68
 #: concrete/single_pages/dashboard/users/search.php:243
 msgid "Change Password"
 msgstr "Сменить пароль"
@@ -15526,26 +15530,26 @@ msgstr "Типы страниц не найдены."
 msgid "Edit Profile"
 msgstr "Редактировать профиль"
 
-#: concrete/single_pages/account/edit_profile.php:20
+#: concrete/single_pages/account/edit_profile.php:19
 msgid "Basic Information"
 msgstr "Основная информация"
 
 #: concrete/config/install/base/dashboard.xml:500
-#: concrete/single_pages/account/edit_profile.php:27
+#: concrete/single_pages/account/edit_profile.php:26
 msgid "Time Zone"
 msgstr "Часовой пояс"
 
 #: concrete/config/install/base/dashboard.xml:727
-#: concrete/single_pages/account/edit_profile.php:55
+#: concrete/single_pages/account/edit_profile.php:56
 msgid "Authentication Types"
 msgstr "Типы аутентификации"
 
-#: concrete/single_pages/account/edit_profile.php:71
+#: concrete/single_pages/account/edit_profile.php:72
 msgid "Leave blank to keep current password."
 msgstr "Оставьте пустым, чтобы не менять пароль."
 
 #: concrete/single_pages/account/avatar.php:61
-#: concrete/single_pages/account/edit_profile.php:84
+#: concrete/single_pages/account/edit_profile.php:85
 #: concrete/single_pages/account/messages/inbox.php:72
 #: concrete/single_pages/account/messages/inbox.php:222
 msgid "Back to Account"
