@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-11-20 05:00+0000\n"
-"PO-Revision-Date: 2014-11-20 12:31+0000\n"
+"POT-Creation-Date: 2014-11-25 11:00+0000\n"
+"PO-Revision-Date: 2014-11-26 04:43+0000\n"
 "Last-Translator: Takuro Hishikawa <hishikawa@concrete5.co.jp>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/projects/p/concrete5/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
@@ -486,7 +486,7 @@ msgstr "降順"
 #: concrete/blocks/core_gathering/tools/edit.php:50
 #: concrete/elements/attribute/type_form_required.php:130
 #: concrete/elements/block_footer_edit.php:18
-#: concrete/elements/custom_style.php:333
+#: concrete/elements/custom_style.php:332
 #: concrete/elements/page_types/composer/form/output/buttons.php:13
 #: concrete/elements/permission/detail.php:89
 #: concrete/elements/permission/details/block/timed_guest_access.php:39
@@ -698,7 +698,7 @@ msgstr "サーバーの入稿用ディレクトリー上のファイルを削除
 #: concrete/elements/block_footer_edit.php:19
 #: concrete/elements/conversation/display.php:84
 #: concrete/elements/conversation/display.php:87
-#: concrete/elements/custom_style.php:330
+#: concrete/elements/custom_style.php:329
 #: concrete/elements/page_types/composer/form/layout_set/control.php:18
 #: concrete/elements/permission/detail.php:88
 #: concrete/elements/permission/details/block/timed_guest_access.php:38
@@ -1713,7 +1713,7 @@ msgstr "ポジション"
 #: concrete/blocks/form/form_setup_html.php:92
 #: concrete/blocks/image/form.php:49 concrete/blocks/survey/edit.php:48
 #: concrete/elements/custom_style.php:61 concrete/elements/custom_style.php:67
-#: concrete/elements/custom_style.php:79 concrete/elements/custom_style.php:86
+#: concrete/elements/custom_style.php:79
 #: concrete/elements/permission/access/list.php:33
 #: concrete/elements/permission/labels.php:49
 #: concrete/single_pages/dashboard/pages/single.php:51
@@ -1727,15 +1727,15 @@ msgid "None"
 msgstr "なし"
 
 #: concrete/elements/custom_style.php:81
-#: concrete/elements/custom_style.php:207
-#: concrete/elements/custom_style.php:239
+#: concrete/elements/custom_style.php:206
+#: concrete/elements/custom_style.php:238
 #: concrete/tools/i18n_redactor_js.php:61
 msgid "Left"
 msgstr "左"
 
 #: concrete/elements/custom_style.php:80
-#: concrete/elements/custom_style.php:193
-#: concrete/elements/custom_style.php:225
+#: concrete/elements/custom_style.php:192
+#: concrete/elements/custom_style.php:224
 #: concrete/tools/i18n_redactor_js.php:62
 msgid "Right"
 msgstr "右"
@@ -1849,7 +1849,7 @@ msgstr "リンクを新しいタブで開く"
 msgid "Underline"
 msgstr "下線"
 
-#: concrete/elements/custom_style.php:127
+#: concrete/elements/custom_style.php:126
 #: concrete/tools/i18n_redactor_js.php:88
 msgid "Alignment"
 msgstr "位置合わせ"
@@ -1999,7 +1999,7 @@ msgstr "** なし"
 msgid "Custom Label"
 msgstr "カスタムラベル"
 
-#: concrete/elements/custom_style.php:311 concrete/tools/i18n_js.php:48
+#: concrete/elements/custom_style.php:310 concrete/tools/i18n_js.php:48
 #: concrete/tools/page_types/composer/form/edit_control.php:50
 msgid "Custom Template"
 msgstr "カスタムテンプレート"
@@ -2373,7 +2373,7 @@ msgstr "現在の画像"
 #: concrete/attributes/textarea/type_form.php:27
 #: concrete/blocks/image/controller.php:31 concrete/blocks/image/form.php:32
 #: concrete/blocks/image_slider/form_setup_html.php:198
-#: concrete/elements/custom_style.php:144
+#: concrete/elements/custom_style.php:143
 #: concrete/single_pages/dashboard/users/add_group.php:83
 #: concrete/single_pages/dashboard/users/groups.php:58
 #: concrete/src/File/Type/Type.php:67 concrete/tools/i18n_js.php:96
@@ -4161,6 +4161,10 @@ msgstr "アクティブエディターが更新されました。"
 msgid "Invalid editor handle."
 msgstr "無効なエディターハンドルです。"
 
+#: concrete/controllers/single_page/dashboard/system/conversations/settings.php:66
+msgid "Updated conversations settings."
+msgstr "コメント欄設定を更新しました。"
+
 #: concrete/controllers/single_page/dashboard/system/conversations/bannedwords.php:29
 msgid "Updated Banned Words."
 msgstr "禁止語句を更新しました。"
@@ -4277,6 +4281,14 @@ msgstr "このノードを削除する権限がありません。"
 #: concrete/controllers/single_page/dashboard/system/attributes/topics.php:214
 msgid "Invalid tree type."
 msgstr "無効なツリータイプです。"
+
+#: concrete/controllers/single_page/dashboard/system/attributes/types.php:41
+msgid "Attribute Type Associations saved."
+msgstr "属性タイプの関連付けを保存しました。"
+
+#: concrete/controllers/single_page/dashboard/system/attributes/types.php:44
+msgid "Attribute Type added."
+msgstr "属性タイプを追加しました。"
 
 #: concrete/controllers/single_page/dashboard/system/registration/authentication.php:20
 msgid "Invalid Error Code"
@@ -7558,6 +7570,15 @@ msgid "%d minute ago"
 msgid_plural "%d minutes ago"
 msgstr[0] "%d 分前"
 
+#: concrete/src/Conversation/Message/Message.php:283
+#: concrete/src/Conversation/Message/Message.php:295
+msgid "Invalid flag type."
+msgstr "不正なフラグタイプです。"
+
+#: concrete/src/Conversation/FlagType/FlagType.php:19
+msgid "Flag type already initialized."
+msgstr "フラグタイプはすでに初期化されています。"
+
 #: concrete/src/Localization/Service/Date.php:107
 msgid "Arctic"
 msgstr "北極"
@@ -7652,7 +7673,7 @@ msgid "Intermediate"
 msgstr "中級者"
 
 #: concrete/elements/block_header_view.php:174
-#: concrete/elements/custom_style.php:301
+#: concrete/elements/custom_style.php:300
 #: concrete/src/Marketplace/RemoteItem.php:52
 #: concrete/views/panels/page/design/customize.php:69
 msgid "Advanced"
@@ -8209,7 +8230,7 @@ msgid "Vertical"
 msgstr "垂直"
 
 #: concrete/elements/custom_style.php:64
-#: concrete/elements/custom_style.php:148
+#: concrete/elements/custom_style.php:147
 msgid "Tile"
 msgstr "タイル"
 
@@ -8245,58 +8266,58 @@ msgstr "内線"
 msgid "Outset"
 msgstr "外線"
 
-#: concrete/elements/custom_style.php:106
+#: concrete/elements/custom_style.php:105
 msgid "Text Size and Color"
 msgstr "テキストサイズと色"
 
-#: concrete/elements/custom_style.php:110
+#: concrete/elements/custom_style.php:109
 msgid "Text Color"
 msgstr "文字色"
 
-#: concrete/elements/custom_style.php:115
+#: concrete/elements/custom_style.php:114
 msgid "Link Color"
 msgstr "リンク色"
 
-#: concrete/elements/custom_style.php:120
+#: concrete/elements/custom_style.php:119
 msgid "Base Font Size"
 msgstr "基本フォントサイズ"
 
-#: concrete/elements/custom_style.php:134
+#: concrete/elements/custom_style.php:133
 msgid "Background Color and Image"
 msgstr "背景色と画像"
 
-#: concrete/elements/custom_style.php:137
+#: concrete/elements/custom_style.php:136
 msgid "Background"
 msgstr "背景"
 
-#: concrete/elements/custom_style.php:139
-#: concrete/elements/custom_style.php:158
-#: concrete/elements/custom_style.php:254
+#: concrete/elements/custom_style.php:138
+#: concrete/elements/custom_style.php:157
+#: concrete/elements/custom_style.php:253
 msgid "Color"
 msgstr "色"
 
 #: concrete/blocks/image/composer.php:21 concrete/blocks/image/form.php:33
-#: concrete/elements/custom_style.php:145
+#: concrete/elements/custom_style.php:144
 #: concrete/single_pages/dashboard/system/basics/images.php:15
 msgid "Choose Image"
 msgstr "画像を選択"
 
-#: concrete/elements/custom_style.php:154
+#: concrete/elements/custom_style.php:153
 msgid "Borders"
 msgstr "枠"
 
-#: concrete/elements/custom_style.php:156
+#: concrete/elements/custom_style.php:155
 msgid "Border"
 msgstr "枠"
 
-#: concrete/elements/custom_style.php:163
+#: concrete/elements/custom_style.php:162
 msgid "Style"
 msgstr "スタイル"
 
 #: concrete/blocks/page_attribute_display/form.php:33
 #: concrete/blocks/video/form_setup_html.php:4
 #: concrete/blocks/youtube/form_setup_html.php:24
-#: concrete/elements/custom_style.php:167
+#: concrete/elements/custom_style.php:166
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:57
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:103
 #: concrete/views/image-editor/control-sets/position.php:17
@@ -8304,82 +8325,82 @@ msgstr "スタイル"
 msgid "Width"
 msgstr "幅"
 
-#: concrete/elements/custom_style.php:174
+#: concrete/elements/custom_style.php:173
 #: concrete/views/image-editor/filters/gaussian_blur.php:3
 msgid "Radius"
 msgstr "半径"
 
-#: concrete/elements/custom_style.php:182
+#: concrete/elements/custom_style.php:181
 msgid "Margin and Padding"
 msgstr "マージンとパディング"
 
-#: concrete/elements/custom_style.php:184
+#: concrete/elements/custom_style.php:183
 msgid "Padding"
 msgstr "パディング"
 
 #: concrete/blocks/core_conversation/form.php:89
 #: concrete/blocks/core_conversation/form.php:126
-#: concrete/elements/custom_style.php:186
-#: concrete/elements/custom_style.php:218
+#: concrete/elements/custom_style.php:185
+#: concrete/elements/custom_style.php:217
 msgid "Top"
 msgstr "上"
 
 #: concrete/blocks/core_conversation/form.php:94
 #: concrete/blocks/core_conversation/form.php:132
-#: concrete/elements/custom_style.php:200
-#: concrete/elements/custom_style.php:232
+#: concrete/elements/custom_style.php:199
+#: concrete/elements/custom_style.php:231
 msgid "Bottom"
 msgstr "下"
 
-#: concrete/elements/custom_style.php:216
+#: concrete/elements/custom_style.php:215
 msgid "Margin"
 msgstr "マージン"
 
-#: concrete/elements/custom_style.php:250
+#: concrete/elements/custom_style.php:249
 msgid "Shadow and Rotation (CSS3)"
 msgstr "シャドウと回転 (CSS3)"
 
-#: concrete/elements/custom_style.php:252
+#: concrete/elements/custom_style.php:251
 msgid "Shadow"
 msgstr "シャドウ"
 
-#: concrete/elements/custom_style.php:259
+#: concrete/elements/custom_style.php:258
 msgid "Horizontal Position"
 msgstr "水平位置"
 
-#: concrete/elements/custom_style.php:266
+#: concrete/elements/custom_style.php:265
 msgid "Vertical Position"
 msgstr "垂直位置"
 
-#: concrete/elements/custom_style.php:273
+#: concrete/elements/custom_style.php:272
 msgid "Blur"
 msgstr "ぼかし"
 
-#: concrete/elements/custom_style.php:280
+#: concrete/elements/custom_style.php:279
 msgid "Spread"
 msgstr "広がり"
 
-#: concrete/elements/custom_style.php:287
+#: concrete/elements/custom_style.php:286
 msgid "Rotate"
 msgstr "回転"
 
-#: concrete/elements/custom_style.php:289
+#: concrete/elements/custom_style.php:288
 msgid "Rotation (in degrees)"
 msgstr "回転（角度）"
 
-#: concrete/elements/custom_style.php:299
+#: concrete/elements/custom_style.php:298
 msgid "Custom CSS Classes, Block Name, Custom Templates and Reset Styles"
 msgstr "カスタムCSSクラス、ブロック名、カスタムテンプレートやスタイルのリセット"
 
-#: concrete/elements/custom_style.php:304
+#: concrete/elements/custom_style.php:303
 msgid "Custom Class"
 msgstr "カスタムクラス"
 
-#: concrete/elements/custom_style.php:313
+#: concrete/elements/custom_style.php:312
 msgid "None selected"
 msgstr "何も選択されていません"
 
-#: concrete/elements/custom_style.php:325
+#: concrete/elements/custom_style.php:324
 msgid "Clear Styles"
 msgstr "スタイルをクリア"
 
