@@ -5,9 +5,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-11-27 05:00+0000\n"
-"PO-Revision-Date: 2014-11-27 15:17+0000\n"
-"Last-Translator: Michele Locati <michele@locati.it>\n"
+"POT-Creation-Date: 2014-12-01 05:00+0000\n"
+"PO-Revision-Date: 2014-12-02 06:30+0000\n"
+"Last-Translator: Heikki Ylipaavalniemi\n"
 "Language-Team: Finnish (Finland) (http://www.transifex.com/projects/p/concrete5/language/fi_FI/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -200,7 +200,7 @@ msgstr "Vaihda salasana ja kirjaudu sisälle"
 
 #: concrete/authentication/concrete/password_changed.php:5
 msgid "Successfully changed password"
-msgstr ""
+msgstr "Salasana vaihdettu onnistuneesti"
 
 #: concrete/authentication/concrete/password_changed.php:9
 msgid "Click here to log in"
@@ -229,14 +229,7 @@ msgid ""
 "password."
 msgstr "Anna sähköpostiosoitteesi alapuolelle. Lähetämme sinulle sähköpostissa ohjeet, kuinka voit palauttaa salasanasi."
 
-#: concrete/authentication/concrete/forgot_password.php:19
-msgid "Reset and Email Password"
-msgstr "Luo jo lähetä uusi salasana"
-
-#: concrete/authentication/concrete/form.php:8
-msgid "Sign in with a local account."
-msgstr "Kirjaudu sisälle paikallisella tilillä."
-
+#: concrete/authentication/concrete/forgot_password.php:17
 #: concrete/authentication/concrete/form.php:13
 #: concrete/blocks/form/form_setup_html.php:126
 #: concrete/blocks/form/form_setup_html.php:196
@@ -255,6 +248,14 @@ msgstr "Kirjaudu sisälle paikallisella tilillä."
 #: concrete/views/frontend/install.php:160
 msgid "Email Address"
 msgstr "Sähköpostiosoite"
+
+#: concrete/authentication/concrete/forgot_password.php:19
+msgid "Reset and Email Password"
+msgstr "Luo jo lähetä uusi salasana"
+
+#: concrete/authentication/concrete/form.php:8
+msgid "Sign in with a local account."
+msgstr "Kirjaudu sisälle paikallisella tilillä."
 
 #: concrete/authentication/concrete/form.php:13
 #: concrete/controllers/single_page/login.php:183
@@ -325,13 +326,13 @@ msgstr "Virheellinen sähköpostiosoite."
 msgid "We have no record of that email address."
 msgstr "Sähköpostiosoitetta ei löytynyt rekisteristämme."
 
-#: concrete/authentication/concrete/controller.php:180
+#: concrete/authentication/concrete/controller.php:182
 msgid ""
 "Key Expired. Please visit the forgot password page again to have a new key "
 "generated."
 msgstr "Avain vanhentunut. Ole hyvä ja vieraile Unohdin salasanai -sivulla luodaksesi uuden avaimen."
 
-#: concrete/authentication/concrete/controller.php:189
+#: concrete/authentication/concrete/controller.php:191
 #: concrete/controllers/install.php:328
 #: concrete/controllers/single_page/account/edit_profile.php:94
 #: concrete/controllers/single_page/dashboard/users/search.php:336
@@ -339,40 +340,40 @@ msgstr "Avain vanhentunut. Ole hyvä ja vieraile Unohdin salasanai -sivulla luod
 msgid "The two passwords provided do not match."
 msgstr "Annetut salasanat eivät vastaa tosiaan."
 
-#: concrete/authentication/concrete/controller.php:214
+#: concrete/authentication/concrete/controller.php:216
 msgid ""
 "Invalid Key. Please visit the forgot password page again to have a new key "
 "generated."
 msgstr "Virheellinen avain. Ole hyvä ja vieraile Unohdin salasanai -sivulla luodaksesi uuden avaimen."
 
-#: concrete/authentication/concrete/controller.php:220
+#: concrete/authentication/concrete/controller.php:222
 msgid "Password changed successfully!"
 msgstr ""
 
-#: concrete/authentication/concrete/controller.php:229
+#: concrete/authentication/concrete/controller.php:231
 msgid "Please provide both username and password."
 msgstr "Ole hyvä ja anna sekä käyttäjätunnus että salasana."
 
-#: concrete/authentication/concrete/controller.php:238
+#: concrete/authentication/concrete/controller.php:240
 #: concrete/controllers/single_page/login.php:44
 msgid "Your session has expired. Please sign in again."
 msgstr "Istuntosi on vanhentunut. Ole hyvä ja kirjaudu uudestaan sisälle."
 
-#: concrete/authentication/concrete/controller.php:243
+#: concrete/authentication/concrete/controller.php:245
 msgid ""
 "This account has not yet been validated. Please check the email associated "
 "with this account and follow the link it contains."
 msgstr "Tätä käyttäjätunnusta ei ole vielä vahvistettu. Ole hyvä ja tarkista sähköpostisi ja seuraa sähköpostin sisältämää linkkiä."
 
-#: concrete/authentication/concrete/controller.php:247
+#: concrete/authentication/concrete/controller.php:249
 msgid "Invalid email address or password."
 msgstr "Virheellinen sähköpostiosoite tai salasana."
 
-#: concrete/authentication/concrete/controller.php:249
+#: concrete/authentication/concrete/controller.php:251
 msgid "Invalid username or password."
 msgstr "Virheellinen käyttäjätunnus tai salasana."
 
-#: concrete/authentication/concrete/controller.php:253
+#: concrete/authentication/concrete/controller.php:255
 #: concrete/controllers/single_page/login.php:39
 msgid "This user is inactive. Please contact us regarding this account."
 msgstr "Tämä käyttäjä ei ole aktiivinen. Ole hyvä ja ota yhteyttä meihin."
@@ -11351,14 +11352,14 @@ msgstr "Välityslohko lohkoille, jotka pitää viedä julkaisijan kautta."
 msgid "Composer Control"
 msgstr "Julkaisijahallinta"
 
-#: concrete/blocks/core_page_type_composer_control_output/view.php:13
+#: concrete/blocks/core_page_type_composer_control_output/view.php:18
 #, php-format
 msgid ""
 "The %s page type composer form element will output its contents here (Block "
 "ID %s)"
 msgstr "Sivutyypin %s julkaisijan lomake-elementti tulostaa sisältönsä tähän (Lohkon ID %s)"
 
-#: concrete/blocks/core_page_type_composer_control_output/edit.php:20
+#: concrete/blocks/core_page_type_composer_control_output/edit.php:25
 msgid "Control"
 msgstr "Hallinta"
 
