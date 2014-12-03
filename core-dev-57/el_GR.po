@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-11-27 05:00+0000\n"
-"PO-Revision-Date: 2014-11-27 16:11+0000\n"
+"POT-Creation-Date: 2014-12-02 05:00+0000\n"
+"PO-Revision-Date: 2014-12-02 17:37+0000\n"
 "Last-Translator: Vasilis Fotopoulos <basalba@gmail.com>\n"
 "Language-Team: Greek (Greece) (http://www.transifex.com/projects/p/concrete5/language/el_GR/)\n"
 "MIME-Version: 1.0\n"
@@ -46,6 +46,10 @@ msgstr "twitter"
 #: concrete/authentication/facebook/form.php:26
 #: concrete/authentication/facebook/hook.php:5
 #: concrete/authentication/facebook/hook.php:12
+#: concrete/authentication/google/form.php:19
+#: concrete/authentication/google/form.php:26
+#: concrete/authentication/google/hook.php:5
+#: concrete/authentication/google/hook.php:12
 #: concrete/authentication/twitter/form.php:39
 #: concrete/authentication/twitter/form.php:47
 #: concrete/authentication/twitter/hook.php:6
@@ -66,12 +70,14 @@ msgid "Register"
 msgstr "Εγγραφή"
 
 #: concrete/authentication/facebook/form.php:34
+#: concrete/authentication/google/form.php:34
 #: concrete/authentication/twitter/form.php:55
 #, php-format
 msgid "Sign in with %s"
 msgstr "Συνδεθείτε με %s"
 
 #: concrete/authentication/facebook/form.php:41
+#: concrete/authentication/google/form.php:41
 #: concrete/authentication/twitter/form.php:63
 #, php-format
 msgid "Log in with %s"
@@ -83,6 +89,7 @@ msgstr "Ρύθμιση Παραμέτρων Σύνδεσης με το Twitter"
 
 #: concrete/authentication/community/type_form.php:4
 #: concrete/authentication/facebook/type_form.php:27
+#: concrete/authentication/google/type_form.php:50
 #: concrete/authentication/twitter/type_form.php:5
 #, php-format
 msgid "<a href=\"%s\" target=\"_blank\">Click here</a> to obtain your access keys."
@@ -114,6 +121,7 @@ msgstr "Εμφάνιση μυστικού API secret"
 
 #: concrete/authentication/community/type_form.php:25
 #: concrete/authentication/facebook/type_form.php:20
+#: concrete/authentication/google/type_form.php:20
 #: concrete/authentication/twitter/type_form.php:27
 msgid "Allow automatic registration"
 msgstr "Να επιτρέπεται η αυτόματη εγγραφή"
@@ -121,6 +129,93 @@ msgstr "Να επιτρέπεται η αυτόματη εγγραφή"
 #: concrete/authentication/twitter/type_form.php:39
 msgid "Hide API secret"
 msgstr "Απόκρυψη του API secret"
+
+#: concrete/authentication/google/form.php:19
+#: concrete/authentication/google/form.php:26
+#: concrete/authentication/google/form.php:34
+#: concrete/authentication/google/hook.php:5
+#: concrete/authentication/google/hook.php:12
+msgid "Google"
+msgstr "Google"
+
+#: concrete/authentication/community/type_form.php:9
+#: concrete/authentication/facebook/type_form.php:4
+#: concrete/authentication/google/type_form.php:4
+msgid "App ID"
+msgstr "App ID"
+
+#: concrete/authentication/community/type_form.php:13
+#: concrete/authentication/facebook/type_form.php:8
+#: concrete/authentication/google/type_form.php:8
+msgid "App Secret"
+msgstr "App Secret"
+
+#: concrete/authentication/community/type_form.php:17
+#: concrete/authentication/community/type_form.php:40
+#: concrete/authentication/facebook/type_form.php:12
+#: concrete/authentication/facebook/type_form.php:39
+#: concrete/authentication/google/type_form.php:12
+#: concrete/authentication/google/type_form.php:62
+msgid "Show secret key"
+msgstr "Εμφάνιση μυστικού κλειδιού"
+
+#: concrete/authentication/google/type_form.php:26
+msgid "Domain Filtering"
+msgstr "Φιλτράρισμα Domain "
+
+#: concrete/authentication/google/type_form.php:27
+msgid ""
+"Google allows accounts be created against custom domains like "
+"\"example.com\". These lists allow you to use standard PHP regular "
+"expressions to filter against the domain name or the google app domain "
+"account domain.For example user@example.com would filter against "
+"\"example.com\"."
+msgstr "Η Google επιτρέπει να δημιουργούνται λογαριασμοί  ως προσαρμοσμένα domains όπως \"example.com\". Αυτές οι λίστες  σας επιτρέπουν να χρησιμοποιήσετε συνήθεις εκφράσεις  PHP  για να φιλτράρετε κατά το όνομα domain ή λογαριασμού Google app domain.For παράδειγμα user@example.com θα φιλτραριστεί στο \"example.com\"."
+
+#: concrete/authentication/google/type_form.php:33
+msgid "Domain Whitelist regex"
+msgstr "regex για Λίστα επιτρεπόμενων "
+
+#: concrete/authentication/google/type_form.php:35
+#, php-format
+msgid "One per line, to whitelist all %s domains: %s"
+msgstr "Μία ανά γραμμή, για βάλετε στη στη Λίστα επιτρεπόμενων όλα τα  %s domains: %s"
+
+#: concrete/authentication/google/type_form.php:41
+msgid "Domain Blacklist regex"
+msgstr "regex για Λίστα Αποκλεισμένων "
+
+#: concrete/authentication/google/type_form.php:43
+msgid "One per line"
+msgstr "Μία ανά γραμμή"
+
+#: concrete/authentication/google/type_form.php:44
+msgid "Regex"
+msgstr "Regex"
+
+#: concrete/authentication/google/type_form.php:44
+msgid "Error Message"
+msgstr "Μήνυμα Λάθους"
+
+#: concrete/authentication/google/type_form.php:44
+#, php-format
+msgid "Format: %s."
+msgstr "Μορφοποίηση: %s."
+
+#: concrete/authentication/google/type_form.php:45
+msgid "Invalid domain."
+msgstr "Μη έγκυρο domain."
+
+#: concrete/authentication/google/type_form.php:45
+#, php-format
+msgid "To disallow everything other than whitelist: %s."
+msgstr ""
+
+#: concrete/authentication/community/type_form.php:37
+#: concrete/authentication/facebook/type_form.php:36
+#: concrete/authentication/google/type_form.php:59
+msgid "Hide secret key"
+msgstr "Απόκρυψη μυστικού κλειδιού"
 
 #: concrete/authentication/community/form.php:19
 #: concrete/authentication/community/hook.php:4
@@ -154,28 +249,6 @@ msgstr "Διαμόρφωση Ελέγχου ταυτότητας Κοινότη�
 #, php-format
 msgid "Set the \"Callback URL\" to: %s."
 msgstr "Ρυθμίστε το \"Callback URL\" στο: %s."
-
-#: concrete/authentication/community/type_form.php:9
-#: concrete/authentication/facebook/type_form.php:4
-msgid "App ID"
-msgstr "App ID"
-
-#: concrete/authentication/community/type_form.php:13
-#: concrete/authentication/facebook/type_form.php:8
-msgid "App Secret"
-msgstr "App Secret"
-
-#: concrete/authentication/community/type_form.php:17
-#: concrete/authentication/community/type_form.php:40
-#: concrete/authentication/facebook/type_form.php:12
-#: concrete/authentication/facebook/type_form.php:39
-msgid "Show secret key"
-msgstr "Εμφάνιση μυστικού κλειδιού"
-
-#: concrete/authentication/community/type_form.php:37
-#: concrete/authentication/facebook/type_form.php:36
-msgid "Hide secret key"
-msgstr "Απόκρυψη μυστικού κλειδιού"
 
 #: concrete/authentication/concrete/change_password.php:9
 msgid "Reset Password"
@@ -230,14 +303,7 @@ msgid ""
 "password."
 msgstr "Εισάγετε παρακάτω τη διεύθυνση email σας. Θα σας στείλουμε οδηγίες για την επαναφορά του κωδικού πρόσβασής σας."
 
-#: concrete/authentication/concrete/forgot_password.php:19
-msgid "Reset and Email Password"
-msgstr "Επαναφορά Κωδικού μέσω Email  "
-
-#: concrete/authentication/concrete/form.php:8
-msgid "Sign in with a local account."
-msgstr "Σύνδεση με έναν τοπικό λογαριασμό."
-
+#: concrete/authentication/concrete/forgot_password.php:17
 #: concrete/authentication/concrete/form.php:13
 #: concrete/blocks/form/form_setup_html.php:126
 #: concrete/blocks/form/form_setup_html.php:196
@@ -256,6 +322,14 @@ msgstr "Σύνδεση με έναν τοπικό λογαριασμό."
 #: concrete/views/frontend/install.php:160
 msgid "Email Address"
 msgstr "Διεύθυνση email"
+
+#: concrete/authentication/concrete/forgot_password.php:19
+msgid "Reset and Email Password"
+msgstr "Επαναφορά Κωδικού μέσω Email  "
+
+#: concrete/authentication/concrete/form.php:8
+msgid "Sign in with a local account."
+msgstr "Σύνδεση με έναν τοπικό λογαριασμό."
 
 #: concrete/authentication/concrete/form.php:13
 #: concrete/controllers/single_page/login.php:183
@@ -326,54 +400,54 @@ msgstr "Μη έγκυρη διεύθυνση ηλεκτρονικού ταχυδ
 msgid "We have no record of that email address."
 msgstr "Δεν έχουμε καμία εγγραφή σε αυτή την διεύθυνση ηλεκτρονικού ταχυδρομείου."
 
-#: concrete/authentication/concrete/controller.php:180
+#: concrete/authentication/concrete/controller.php:182
 msgid ""
 "Key Expired. Please visit the forgot password page again to have a new key "
 "generated."
 msgstr "Το Κλειδί έχει λήξει. Παρακαλούμε επισκεφθείτε την σελίδα επαναφοράς κωδικού πρόσβασης ξανά για να δημιουργήσετε ένα νέο κλειδί."
 
-#: concrete/authentication/concrete/controller.php:189
+#: concrete/authentication/concrete/controller.php:191
 #: concrete/controllers/install.php:328
 #: concrete/controllers/single_page/account/edit_profile.php:94
-#: concrete/controllers/single_page/dashboard/users/search.php:336
+#: concrete/controllers/single_page/dashboard/users/search.php:337
 #: concrete/controllers/single_page/register.php:106
 msgid "The two passwords provided do not match."
 msgstr "Οι δύο κωδικοί που δώσατε δεν ταιριάζουν."
 
-#: concrete/authentication/concrete/controller.php:214
+#: concrete/authentication/concrete/controller.php:216
 msgid ""
 "Invalid Key. Please visit the forgot password page again to have a new key "
 "generated."
 msgstr "Μη έγκυρο κλειδί. Παρακαλούμε επισκεφθείτε την σελίδα επαναφοράς κωδικού πρόσβασης ξανά για να δημιουργήσετε ένα νέο κλειδί."
 
-#: concrete/authentication/concrete/controller.php:220
+#: concrete/authentication/concrete/controller.php:222
 msgid "Password changed successfully!"
 msgstr "Ο κωδικός σας άλλαξε με επιτυχία!"
 
-#: concrete/authentication/concrete/controller.php:229
+#: concrete/authentication/concrete/controller.php:231
 msgid "Please provide both username and password."
 msgstr "Παρακαλούμε δώστε το όνομα χρήστη και τον κωδικό πρόσβασης."
 
-#: concrete/authentication/concrete/controller.php:238
+#: concrete/authentication/concrete/controller.php:240
 #: concrete/controllers/single_page/login.php:44
 msgid "Your session has expired. Please sign in again."
 msgstr "Η συνεδρία σας έληξε. Παρακαλώ συνδεθείτε ξανά."
 
-#: concrete/authentication/concrete/controller.php:243
+#: concrete/authentication/concrete/controller.php:245
 msgid ""
 "This account has not yet been validated. Please check the email associated "
 "with this account and follow the link it contains."
 msgstr "Αυτός ο λογαριασμός δεν έχει ακόμη επικυρωθεί. Παρακαλώ ελέγξτε το email που σχετίζεται με αυτόν τον λογαριασμό και ακολουθήστε το link που περιέχει."
 
-#: concrete/authentication/concrete/controller.php:247
+#: concrete/authentication/concrete/controller.php:249
 msgid "Invalid email address or password."
 msgstr "Μη έγκυρη διεύθυνση ηλεκτρονικού ταχυδρομείου ή  κωδικός πρόσβασης."
 
-#: concrete/authentication/concrete/controller.php:249
+#: concrete/authentication/concrete/controller.php:251
 msgid "Invalid username or password."
 msgstr "Μη έγκυρο όνομα χρήστη ή κωδικός πρόσβασης."
 
-#: concrete/authentication/concrete/controller.php:253
+#: concrete/authentication/concrete/controller.php:255
 #: concrete/controllers/single_page/login.php:39
 msgid "This user is inactive. Please contact us regarding this account."
 msgstr "Αυτός ο χρήστης είναι ανενεργός. Παρακαλούμε επικοινωνήστε μαζί μας σχετικά με αυτό το λογαριασμό."
@@ -1524,7 +1598,7 @@ msgid "Add Message"
 msgstr "Προσθήκη μηνύματος"
 
 #: concrete/blocks/html/controller.php:28 concrete/blocks/image/form.php:44
-#: concrete/config/app.php:382 concrete/tools/i18n_redactor_js.php:13
+#: concrete/config/app.php:383 concrete/tools/i18n_redactor_js.php:13
 msgid "HTML"
 msgstr "HTML"
 
@@ -2231,6 +2305,7 @@ msgid "This request took too long."
 msgstr "Το αίτημα αυτό πήρε πάρα πολύ χρόνο."
 
 #: concrete/src/Authentication/Type/OAuth/OAuth1a/GenericOauth1aTypeController.php:44
+#: concrete/src/Authentication/Type/OAuth/OAuth2/GenericOauth2TypeController.php:57
 #: concrete/src/Error/Handler/ErrorHandler.php:37
 #: concrete/src/Error/Handler/ErrorHandler.php:43
 #: concrete/tools/i18n_js.php:62
@@ -3179,12 +3254,12 @@ msgid "Files updated successfully."
 msgstr "Τα Αρχεία ενημερώθηκαν επιτυχώς."
 
 #: concrete/controllers/dialog/file/properties.php:49
-#: concrete/controllers/single_page/dashboard/users/search.php:314
+#: concrete/controllers/single_page/dashboard/users/search.php:315
 msgid "Attribute cleared successfully."
 msgstr "Το Χαρακτηριστικό εκκαθαρίστηκε επιτυχώς."
 
 #: concrete/controllers/dialog/file/properties.php:72
-#: concrete/controllers/single_page/dashboard/users/search.php:288
+#: concrete/controllers/single_page/dashboard/users/search.php:289
 msgid "Attribute saved successfully."
 msgstr "Το Χαρακτηριστικό αποθηκεύτηκε με επιτυχία."
 
@@ -3550,35 +3625,32 @@ msgid "Invalid workflow ID."
 msgstr "Μη έγκυρο ID ροής εργασιών."
 
 #: concrete/controllers/single_page/dashboard/workflow/workflows.php:42
-#: concrete/controllers/single_page/dashboard/workflow/workflows.php:83
+#: concrete/controllers/single_page/dashboard/workflow/workflows.php:82
 msgid "You must give the workflow a name."
 msgstr "Πρέπει να δώσετε στη ροή εργασίας ένα όνομα."
 
-#: concrete/controllers/single_page/dashboard/workflow/workflows.php:45
-msgid "Workflow Names must only include alphanumerics and spaces."
-msgstr "Τα ονόματα Ροής Εργασιών πρέπει να περιλαμβάνουν μόνο αλφαριθμητικά και διαστήματα."
-
-#: concrete/controllers/single_page/dashboard/workflow/workflows.php:73
-msgid "Workflow deleted successfully."
-msgstr "Η Ροή Εργασιών διαγράφηκε με επιτυχία."
-
-#: concrete/controllers/single_page/dashboard/workflow/workflows.php:85
+#: concrete/controllers/single_page/dashboard/workflow/workflows.php:44
+#: concrete/controllers/single_page/dashboard/workflow/workflows.php:84
 msgid "Invalid characters in workflow name."
 msgstr "Μη έγκυροι χαρακτήρες στο όνομα της ροής εργασίας."
 
-#: concrete/controllers/single_page/dashboard/workflow/workflows.php:90
+#: concrete/controllers/single_page/dashboard/workflow/workflows.php:72
+msgid "Workflow deleted successfully."
+msgstr "Η Ροή Εργασιών διαγράφηκε με επιτυχία."
+
+#: concrete/controllers/single_page/dashboard/workflow/workflows.php:89
 msgid "Workflow with that name already exists."
 msgstr " Υπάρχει ήδη Ροή Εργασιών με αυτό το όνομα."
 
-#: concrete/controllers/single_page/dashboard/workflow/workflows.php:95
+#: concrete/controllers/single_page/dashboard/workflow/workflows.php:94
 msgid "Invalid Workflow Type."
 msgstr "Άκυρος Τύπος Ροής Εργασιών."
 
-#: concrete/controllers/single_page/dashboard/workflow/workflows.php:122
+#: concrete/controllers/single_page/dashboard/workflow/workflows.php:121
 msgid "Workflow created successfully. You may now modify its properties."
 msgstr "Η Ροή Εργασιών δημιουργήθηκε με επιτυχία. Μπορείτε να τροποποιήσετε τώρα τις ιδιότητές της."
 
-#: concrete/controllers/single_page/dashboard/workflow/workflows.php:125
+#: concrete/controllers/single_page/dashboard/workflow/workflows.php:124
 msgid "Workflow updated."
 msgstr "Η Ροή Εργασιών ενημερώθηκε."
 
@@ -3716,85 +3788,85 @@ msgstr "Η Ομάδα διαγράφηκε με επιτυχία."
 msgid "Avatar saved successfully."
 msgstr "Το Avatar αποθηκεύτηκε με επιτυχία."
 
-#: concrete/controllers/single_page/dashboard/users/search.php:110
-#: concrete/controllers/single_page/dashboard/users/search.php:113
-#: concrete/controllers/single_page/register.php:159
-#: concrete/controllers/single_page/register.php:163
+#: concrete/controllers/single_page/dashboard/users/search.php:109
+#: concrete/controllers/single_page/dashboard/users/search.php:112
+#: concrete/controllers/single_page/register.php:160
+#: concrete/controllers/single_page/register.php:164
 msgid "Website Registration Notification"
 msgstr "Γνωστοποίηση Εγγραφής στο Website"
 
 #: concrete/controllers/single_page/account/edit_profile.php:73
 #: concrete/controllers/single_page/dashboard/users/add.php:52
-#: concrete/controllers/single_page/dashboard/users/search.php:164
+#: concrete/controllers/single_page/dashboard/users/search.php:165
 #: concrete/controllers/single_page/register.php:58
 msgid "Invalid email address provided."
 msgstr "Η διεύθυνση ηλεκτρονικού ταχυδρομείου που δώσατε είναι Άκυρη."
 
 #: concrete/controllers/single_page/account/edit_profile.php:75
 #: concrete/controllers/single_page/dashboard/users/add.php:54
-#: concrete/controllers/single_page/dashboard/users/search.php:166
+#: concrete/controllers/single_page/dashboard/users/search.php:167
 #, php-format
 msgid "The email address '%s' is already in use. Please choose another."
 msgstr "Η διεύθυνση email '%s'  είναι ήδη σε χρήση. Παρακαλώ επιλέξτε μια άλλη."
 
-#: concrete/controllers/single_page/dashboard/users/search.php:174
+#: concrete/controllers/single_page/dashboard/users/search.php:175
 msgid "Email saved successfully."
 msgstr "Το Email αποθηκευτεί με επιτυχία."
 
-#: concrete/controllers/single_page/dashboard/users/search.php:195
+#: concrete/controllers/single_page/dashboard/users/search.php:196
 msgid "Time zone saved successfully."
 msgstr "Η Ζώνη ώρας αποθηκεύτηκε με επιτυχία."
 
-#: concrete/controllers/single_page/dashboard/users/search.php:216
+#: concrete/controllers/single_page/dashboard/users/search.php:217
 msgid "Language saved successfully."
 msgstr "Η Γλώσσα αποθηκεύτηκε με επιτυχία."
 
 #: concrete/controllers/single_page/dashboard/users/add.php:58
-#: concrete/controllers/single_page/dashboard/users/search.php:234
+#: concrete/controllers/single_page/dashboard/users/search.php:235
 #: concrete/controllers/single_page/register.php:66
 #, php-format
 msgid "A username must be at least %s characters long."
 msgstr "Ένα όνομα χρήστη πρέπει να είναι τουλάχιστον %s χαρακτήρες."
 
 #: concrete/controllers/single_page/dashboard/users/add.php:62
-#: concrete/controllers/single_page/dashboard/users/search.php:238
+#: concrete/controllers/single_page/dashboard/users/search.php:239
 #: concrete/controllers/single_page/register.php:70
 #, php-format
 msgid "A username cannot be more than %s characters long."
 msgstr "Ένα όνομα χρήστη δεν μπορεί να έχει πάνω από %s χαρακτήρες."
 
 #: concrete/controllers/single_page/dashboard/users/add.php:67
-#: concrete/controllers/single_page/dashboard/users/search.php:243
+#: concrete/controllers/single_page/dashboard/users/search.php:244
 msgid ""
 "A username may only contain letters, numbers, spaces, dots (not at the "
 "beginning/end), underscores (not at the beginning/end)."
 msgstr "Ένα όνομα χρήστη μπορεί να περιέχει μόνο γράμματα, αριθμούς, διαστήματα, τελείες (όχι στην αρχή ή το τέλος), κάτω παύλες (όχι στην αρχή ή το τέλος)."
 
 #: concrete/controllers/single_page/dashboard/users/add.php:69
-#: concrete/controllers/single_page/dashboard/users/search.php:245
+#: concrete/controllers/single_page/dashboard/users/search.php:246
 msgid ""
 "A username may only contain letters numbers, dots (not at the "
 "beginning/end), underscores (not at the beginning/end)."
 msgstr "Ένα όνομα χρήστη μπορεί να περιέχει μόνο γράμματα αριθμούς, τελείες (όχι στην αρχή ή το τέλος), κάτω παύλες (όχι στην αρχή ή το τέλος)."
 
 #: concrete/controllers/single_page/dashboard/users/add.php:74
-#: concrete/controllers/single_page/dashboard/users/search.php:250
+#: concrete/controllers/single_page/dashboard/users/search.php:251
 #, php-format
 msgid "The username '%s' already exists. Please choose another"
 msgstr "Το όνομα χρήστη '%s' υπάρχει ήδη. Παρακαλώ επιλέξτε ένα άλλο"
 
-#: concrete/controllers/single_page/dashboard/users/search.php:258
+#: concrete/controllers/single_page/dashboard/users/search.php:259
 msgid "Username saved successfully."
 msgstr "Το Όνομα Χρήστη αποθηκεύτηκε με επιτυχία."
 
-#: concrete/controllers/single_page/dashboard/users/search.php:275
-#: concrete/controllers/single_page/dashboard/users/search.php:303
+#: concrete/controllers/single_page/dashboard/users/search.php:276
+#: concrete/controllers/single_page/dashboard/users/search.php:304
 msgid "You do not have permission to modify this attribute."
 msgstr "Δεν έχετε δικαίωμα να τροποποιήσετε αυτό το χαρακτηριστικό."
 
 #: concrete/controllers/single_page/account/edit_profile.php:85
 #: concrete/controllers/single_page/dashboard/users/add.php:83
-#: concrete/controllers/single_page/dashboard/users/search.php:326
+#: concrete/controllers/single_page/dashboard/users/search.php:327
 #: concrete/src/Application/Service/User.php:39
 #, php-format
 msgid "A password must be between %s and %s characters"
@@ -3802,42 +3874,42 @@ msgstr "Ο κωδικός πρόσβασης πρέπει να είναι μετ
 
 #: concrete/controllers/single_page/account/edit_profile.php:89
 #: concrete/controllers/single_page/dashboard/users/add.php:87
-#: concrete/controllers/single_page/dashboard/users/search.php:332
+#: concrete/controllers/single_page/dashboard/users/search.php:333
 msgid "A password may not contain \", ', >, <, or any spaces."
 msgstr "Ο κωδικός πρόσβασης δεν μπορεί να περιέχει  \", ', >, <, ή κενά."
 
-#: concrete/controllers/single_page/dashboard/users/search.php:345
+#: concrete/controllers/single_page/dashboard/users/search.php:346
 msgid "Password updated successfully."
 msgstr "Κωδικός πρόσβασης ενημερώθηκε επιτυχώς."
 
-#: concrete/controllers/single_page/dashboard/users/search.php:379
+#: concrete/controllers/single_page/dashboard/users/search.php:380
 #: concrete/controllers/single_page/login.php:205
 msgctxt "Default locale"
 msgid "** Default"
 msgstr "** Προεπιλογή "
 
-#: concrete/controllers/single_page/dashboard/users/search.php:404
+#: concrete/controllers/single_page/dashboard/users/search.php:405
 msgid "User deleted successfully."
 msgstr "Ο Χρήστης διαγράφηκε με επιτυχία."
 
-#: concrete/controllers/single_page/dashboard/users/search.php:432
+#: concrete/controllers/single_page/dashboard/users/search.php:433
 #, php-format
 msgid "View/Edit %s"
 msgstr "Προβολή / Επεξεργασία %s"
 
-#: concrete/controllers/single_page/dashboard/users/search.php:435
+#: concrete/controllers/single_page/dashboard/users/search.php:436
 msgid "User activated successfully."
 msgstr "Ο Χρήστης Ενεργοποιήθηκε με επιτυχία."
 
-#: concrete/controllers/single_page/dashboard/users/search.php:438
+#: concrete/controllers/single_page/dashboard/users/search.php:439
 msgid "User deactivated successfully."
 msgstr "Ο Χρήστης απενεργοποιήθηκε επιτυχώς."
 
-#: concrete/controllers/single_page/dashboard/users/search.php:441
+#: concrete/controllers/single_page/dashboard/users/search.php:442
 msgid "User created successfully."
 msgstr "Ο Χρήστης δημιουργήθηκε με επιτυχία."
 
-#: concrete/controllers/single_page/dashboard/users/search.php:444
+#: concrete/controllers/single_page/dashboard/users/search.php:445
 msgid "Email marked as valid."
 msgstr "Το e-mail χαρακτηρίζεται ως έγκυρο."
 
@@ -3973,7 +4045,7 @@ msgstr "Οι ρυθμίσεις  κώδικα Παρακολούθησης εν�
 msgid "Cached files removed."
 msgstr "Τα Αποθηκευμένα αρχεία αφαιρέθηκαν."
 
-#: concrete/controllers/single_page/dashboard/system/seo/bulk.php:31
+#: concrete/controllers/single_page/dashboard/system/seo/bulk.php:32
 msgid "success"
 msgstr "επιτυχία"
 
@@ -4831,27 +4903,27 @@ msgstr "Ένα όνομα χρήστη μπορεί να περιέχει μόν
 msgid "The username %s already exists. Please choose another"
 msgstr "Το όνομα χρήστη %s υπάρχει ήδη. Παρακαλώ επιλέξτε ένα άλλο"
 
-#: concrete/controllers/single_page/register.php:194
+#: concrete/controllers/single_page/register.php:195
 msgid "Validate Email Address"
 msgstr "Επικύρωση Διεύθυνσης Email"
 
-#: concrete/controllers/single_page/register.php:255
+#: concrete/controllers/single_page/register.php:256
 msgid "Your account has been created, and you are now logged in."
 msgstr "Ο λογαριασμός σας δημιουργήθηκε, και είστε συνδεδεμένος τώρα."
 
-#: concrete/controllers/single_page/register.php:260
+#: concrete/controllers/single_page/register.php:261
 msgid ""
 "You are registered but you need to validate your email address. Some or all "
 "functionality on this site will be limited until you do so."
 msgstr "Η Εγγραφή σας έγινε, αλλά θα πρέπει να επικυρώσετε τη διεύθυνση email σας. Ορισμένες ή όλες οι λειτουργίες σε αυτό το site θα είναι περιορισμένες μέχρι να το κάνετε."
 
-#: concrete/controllers/single_page/register.php:261
+#: concrete/controllers/single_page/register.php:262
 msgid ""
 "An email has been sent to your email address. Click on the URL contained in "
 "the email to validate your email address."
 msgstr "Ένα email έχει σταλεί στην ηλεκτρονική σας διεύθυνση. Κάντε κλικ στη διεύθυνση URL που περιέχεται στο email για να επικυρώσετε τη διεύθυνση email σας."
 
-#: concrete/controllers/single_page/register.php:266
+#: concrete/controllers/single_page/register.php:267
 msgid ""
 "You are registered but a site administrator must review your account, you "
 "will not be able to login until your account has been approved."
@@ -5761,15 +5833,15 @@ msgstr "Δεν είναι δυνατή η αντιγραφή του κατάλο
 msgid "%s (Retina Version)"
 msgstr "%s (Retina Version)"
 
-#: concrete/src/File/StorageLocation/Configuration/LocalConfiguration.php:69
+#: concrete/src/File/StorageLocation/Configuration/LocalConfiguration.php:73
 msgid "You must include a root path for this storage location."
 msgstr "Θα πρέπει να περιλάβετε μια διαδρομή ρίζας για αυτήν την τοποθεσία αποθήκευσης."
 
-#: concrete/src/File/StorageLocation/Configuration/LocalConfiguration.php:71
+#: concrete/src/File/StorageLocation/Configuration/LocalConfiguration.php:75
 msgid "The specified root path does not exist."
 msgstr "Η συγκεκριμένη διαδρομή ρίζας δεν υπάρχει."
 
-#: concrete/src/File/StorageLocation/Configuration/LocalConfiguration.php:73
+#: concrete/src/File/StorageLocation/Configuration/LocalConfiguration.php:77
 msgid ""
 "Invalid path to file storage location. You may not choose the root "
 "directory."
@@ -5871,29 +5943,39 @@ msgstr "Μη έγκυρος Δείκτης Τύπου Ελέγχου Ταυτό�
 msgid "Invalid Authentication Type ID"
 msgstr "Μη έγκυρο ID Τύπου Ελέγχου Ταυτότητας "
 
-#: concrete/src/Authentication/AuthenticationType.php:265
+#: concrete/src/Authentication/AuthenticationType.php:277
 msgid "The core concrete5 authentication cannot be disabled."
 msgstr "Ο έλεγχος ταυτότητας του πυρήνα του concrete5 δεν μπορεί να απενεργοποιηθεί."
 
-#: concrete/src/Authentication/AuthenticationType.php:356
+#: concrete/src/Authentication/AuthenticationType.php:368
 msgid "This authentication type does not require any customization."
 msgstr "Αυτός ο Τύπος Ελέγχου Ταυτότητας δεν απαιτεί καμία προσαρμογή."
 
+#: concrete/src/Authentication/Type/OAuth/OAuth2/GenericOauth2TypeController.php:38
+#: concrete/src/Authentication/Type/OAuth/OAuth2/GenericOauth2TypeController.php:85
+#, php-format
+msgid "Failed authentication: %s"
+msgstr ""
+
 #: concrete/src/Authentication/Type/OAuth/OAuth1a/GenericOauth1aTypeController.php:39
+#: concrete/src/Authentication/Type/OAuth/OAuth2/GenericOauth2TypeController.php:49
 msgid ""
 "No local user account associated with this user, please log in with a local "
 "account and connect your account from your user profile."
 msgstr "Δεν υπάρχει τοπικός λογαριασμός χρήστη που σχετίζεται με αυτόν το χρήστη, παρακαλώ συνδεθείτε με έναν τοπικό λογαριασμό και συνδέστε στο λογαριασμό σας με το προφίλ χρήστη σας."
 
 #: concrete/src/Authentication/Type/OAuth/OAuth1a/GenericOauth1aTypeController.php:47
+#: concrete/src/Authentication/Type/OAuth/OAuth2/GenericOauth2TypeController.php:60
 msgid "Failed to complete authentication."
 msgstr "Απέτυχε να ολοκληρώσει τον έλεγχο ταυτότητας."
 
 #: concrete/src/Authentication/Type/OAuth/OAuth1a/GenericOauth1aTypeController.php:75
+#: concrete/src/Authentication/Type/OAuth/OAuth2/GenericOauth2TypeController.php:90
 msgid "Successfully attached."
 msgstr "Επιτυχής επισύναψη. "
 
 #: concrete/src/Authentication/Type/OAuth/OAuth1a/GenericOauth1aTypeController.php:79
+#: concrete/src/Authentication/Type/OAuth/OAuth2/GenericOauth2TypeController.php:94
 msgid "Unable to attach user."
 msgstr "Δεν είναι δυνατή η σύνδεση του χρήστη."
 
@@ -6058,7 +6140,7 @@ msgstr "Ομάδα"
 msgid "(Deleted Group)"
 msgstr "(Διαγραμμένη Ομάδα)"
 
-#: concrete/config/install/base/permissions.xml:371
+#: concrete/config/install/base/permissions.xml:379
 #: concrete/src/Permission/Access/Entity/ConversationMessageAuthorEntity.php:42
 msgctxt "PermissionAccessEntityTypeName"
 msgid "Message Author"
@@ -6074,7 +6156,7 @@ msgstr "Συντάκτης Μηνύματος"
 msgid "Add User"
 msgstr "Προσθήκη Χρήστη"
 
-#: concrete/config/install/base/permissions.xml:298
+#: concrete/config/install/base/permissions.xml:300
 #: concrete/src/Permission/Access/Entity/UserEntity.php:68
 msgctxt "PermissionAccessEntityTypeName"
 msgid "User"
@@ -6088,13 +6170,13 @@ msgstr "(Διαγραμμένος Χρήστης)"
 msgid "Add Group Set"
 msgstr "Προσθήκη Σετ Ομάδας"
 
-#: concrete/config/install/base/permissions.xml:318
+#: concrete/config/install/base/permissions.xml:322
 #: concrete/src/Permission/Access/Entity/GroupSetEntity.php:17
 msgctxt "PermissionAccessEntityTypeName"
 msgid "Group Set"
 msgstr "Σετ Ομάδας"
 
-#: concrete/config/install/base/permissions.xml:365
+#: concrete/config/install/base/permissions.xml:373
 #: concrete/src/Permission/Access/Entity/FileUploaderEntity.php:36
 msgctxt "PermissionAccessEntityTypeName"
 msgid "File Uploader"
@@ -6104,7 +6186,7 @@ msgstr "Μεταφορτωτής αρχείων"
 msgid "File Uploader"
 msgstr "Μεταφορτωτής αρχείων"
 
-#: concrete/config/install/base/permissions.xml:359
+#: concrete/config/install/base/permissions.xml:367
 #: concrete/src/Permission/Access/Entity/PageOwnerEntity.php:41
 msgctxt "PermissionAccessEntityTypeName"
 msgid "Page Owner"
@@ -6114,7 +6196,7 @@ msgstr "Ιδιοκτήτης της σελίδας"
 msgid "Add Group Combination"
 msgstr "Προσθήκη Συνδυασμού Ομάδας"
 
-#: concrete/config/install/base/permissions.xml:338
+#: concrete/config/install/base/permissions.xml:344
 #: concrete/src/Permission/Access/Entity/GroupCombinationEntity.php:17
 msgctxt "PermissionAccessEntityTypeName"
 msgid "Group Combination"
@@ -6252,16 +6334,16 @@ msgstr "Όλα τα αντικείμενα"
 msgid "Featured Items"
 msgstr "Προτεινόμενα Είδη"
 
-#: concrete/src/Page/Page.php:2051
+#: concrete/src/Page/Page.php:2076
 #, php-format
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "Η Σελίδα \"%s\" στη διαδρομή \"%s\" διαγράφτηκε."
 
-#: concrete/src/Page/Page.php:2051 concrete/src/Page/Page.php:2115
+#: concrete/src/Page/Page.php:2076 concrete/src/Page/Page.php:2140
 msgid "Page Action"
 msgstr "Ενέργειες Σελίδας"
 
-#: concrete/src/Page/Page.php:2115
+#: concrete/src/Page/Page.php:2140
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "Η Σελίδα \"%s\" στη διαδρομή \"%s\" Μεταφέρθηκε στο κάδο απορριμμάτων."
@@ -6609,32 +6691,32 @@ msgstr "Λεπτομέρειες Μικρογραφίας Διαχείρισης
 msgid "Unable to install database: %s"
 msgstr "Δεν είναι δυνατή η εγκατάσταση της βάσης δεδομένων: %s"
 
-#: concrete/src/Package/StartingPointPackage.php:233
+#: concrete/src/Package/StartingPointPackage.php:235
 msgctxt "GroupName"
 msgid "Guest"
 msgstr "Επισκέπτης"
 
-#: concrete/src/Package/StartingPointPackage.php:233
+#: concrete/src/Package/StartingPointPackage.php:235
 msgctxt "GroupDescription"
 msgid "The guest group represents unregistered visitors to your site."
 msgstr "Η ομάδα επισκεπτών αντιπροσωπεύει μη εγγεγραμμένους επισκέπτες στο site σας."
 
-#: concrete/src/Package/StartingPointPackage.php:234
+#: concrete/src/Package/StartingPointPackage.php:236
 msgctxt "GroupName"
 msgid "Registered Users"
 msgstr "Εγγεγραμμένοι χρήστες"
 
-#: concrete/src/Package/StartingPointPackage.php:234
+#: concrete/src/Package/StartingPointPackage.php:236
 msgctxt "GroupDescription"
 msgid "The registered users group represents all user accounts."
 msgstr "Η ομάδα εγγεγραμμένων χρηστών αντιπροσωπεύει όλους τους λογαριασμούς χρηστών."
 
-#: concrete/src/Package/StartingPointPackage.php:235
+#: concrete/src/Package/StartingPointPackage.php:237
 msgctxt "GroupName"
 msgid "Administrators"
 msgstr "Διαχειριστές"
 
-#: concrete/src/Package/StartingPointPackage.php:251
+#: concrete/src/Package/StartingPointPackage.php:253
 msgid "Won a Badge"
 msgstr "Κερδίσατε ένα Badge"
 
@@ -6828,22 +6910,22 @@ msgstr "Εν αναμονή Μετακίνησης "
 msgid "Approve Move"
 msgstr "Έγκριση Μετακίνησης"
 
-#: concrete/src/Workflow/BasicWorkflow.php:60
+#: concrete/src/Workflow/BasicWorkflow.php:61
 #, php-format
 msgid "On %s, user %s submitted the following request: %s"
 msgstr "Στο %s, ο χρήστης %s υπέβαλε το ακόλουθο αίτημα: %s"
 
 #: concrete/config/install/base/permissions.xml:274
-#: concrete/src/Workflow/BasicWorkflow.php:83
+#: concrete/src/Workflow/BasicWorkflow.php:84
 msgid "Basic Workflow"
 msgstr "Βασική Ροή Εργασιών"
 
-#: concrete/src/Workflow/BasicWorkflow.php:102
+#: concrete/src/Workflow/BasicWorkflow.php:104
 #, php-format
 msgid "%s Submitted by <strong>%s</strong> on %s."
 msgstr "%s Υποβλήθηκε από <strong>%s</strong>  για %s."
 
-#: concrete/src/Workflow/BasicWorkflow.php:128
+#: concrete/src/Workflow/BasicWorkflow.php:130
 #, php-format
 msgid ""
 "On %s, user %s cancelled the following request: \n"
@@ -6854,7 +6936,7 @@ msgid ""
 "\n"
 msgstr "Στις %s, ο χρήστης %s ακύρωσε το ακόλουθο αίτημα: \n\n---\n%s\n---\n"
 
-#: concrete/src/Workflow/BasicWorkflow.php:168
+#: concrete/src/Workflow/BasicWorkflow.php:170
 #, php-format
 msgid ""
 "On %s, user %s approved the following request: \n"
@@ -7784,6 +7866,9 @@ msgid "%s: Basic Details"
 msgstr "%s: Βασικά Στοιχεία"
 
 #: concrete/elements/attribute/type_form_required.php:52
+#: concrete/elements/dashboard/attributes_table.php:53
+#: concrete/elements/dashboard/attributes_table.php:77
+#: concrete/elements/dashboard/attributes_table.php:95
 #: concrete/single_pages/dashboard/pages/feeds.php:82
 #: concrete/single_pages/dashboard/pages/templates/add.php:20
 #: concrete/single_pages/dashboard/pages/templates/view.php:32
@@ -9052,13 +9137,23 @@ msgstr "Μέθοδος Δημοσίευσης"
 msgid "Content disabled in edit mode."
 msgstr "Το περιεχόμενο ειναι απενεργοποιημένο σε κατάσταση επεξεργασίας"
 
-#: concrete/elements/storage_location_types/local.php:9
+#: concrete/elements/storage_location_types/local.php:10
 msgid "Root Path"
 msgstr "Διαδρομή Ρίζας "
 
-#: concrete/elements/storage_location_types/local.php:16
+#: concrete/elements/storage_location_types/local.php:12
+#, php-format
+msgid "Example: %ssome/path"
+msgstr ""
+
+#: concrete/elements/storage_location_types/local.php:17
 msgid "Relative Path"
 msgstr "Σχετική Διαδρομή"
+
+#: concrete/elements/storage_location_types/local.php:18
+#, php-format
+msgid "Example: %s"
+msgstr ""
 
 #: concrete/elements/block_header_view.php:88
 #: concrete/elements/block_header_view.php:92
@@ -10455,149 +10550,149 @@ msgstr "Κενό site"
 msgid "Creates an empty site using the unstyled Elemental theme."
 msgstr "Δημιουργεί ένα κενό site χρησιμοποιώντας το unstyled Elemental θέμα."
 
-#: concrete/config/app.php:377
+#: concrete/config/app.php:378
 msgid "JPEG"
 msgstr "JPEG"
 
-#: concrete/config/app.php:378
+#: concrete/config/app.php:379
 msgid "GIF"
 msgstr "GIF"
 
-#: concrete/config/app.php:379
+#: concrete/config/app.php:380
 msgid "PNG"
 msgstr "PNG"
 
-#: concrete/config/app.php:380
+#: concrete/config/app.php:381
 msgid "Windows Bitmap"
 msgstr "Windows Bitmap"
 
-#: concrete/config/app.php:381
+#: concrete/config/app.php:382
 msgid "TIFF"
 msgstr "TIFF"
 
-#: concrete/config/app.php:383
+#: concrete/config/app.php:384
 msgid "Flash"
 msgstr "Flash"
 
-#: concrete/blocks/feature/form.php:4 concrete/config/app.php:384
+#: concrete/blocks/feature/form.php:4 concrete/config/app.php:385
 #: concrete/single_pages/dashboard/pages/templates/add.php:27
 #: concrete/single_pages/dashboard/pages/templates/view.php:39
 msgid "Icon"
 msgstr "Εικονίδιο "
 
-#: concrete/config/app.php:385
+#: concrete/config/app.php:386
 msgid "SVG"
 msgstr "SVG"
 
-#: concrete/config/app.php:386
+#: concrete/config/app.php:387
 msgid "Windows Video"
 msgstr "Windows Βίντεο"
 
-#: concrete/config/app.php:387
+#: concrete/config/app.php:388
 msgid "Quicktime"
 msgstr "Quicktime"
 
-#: concrete/config/app.php:388
+#: concrete/config/app.php:389
 msgid "AVI"
 msgstr "AVI"
 
-#: concrete/config/app.php:389
+#: concrete/config/app.php:390
 msgid "3GP"
 msgstr "3GP"
 
-#: concrete/attributes/textarea/type_form.php:9 concrete/config/app.php:390
+#: concrete/attributes/textarea/type_form.php:9 concrete/config/app.php:391
 msgid "Plain Text"
 msgstr "Απλό Κείμενο"
 
-#: concrete/config/app.php:391
+#: concrete/config/app.php:392
 msgid "CSV"
 msgstr "CSV"
 
-#: concrete/config/app.php:392
+#: concrete/config/app.php:393
 msgid "XML"
 msgstr "XML"
 
-#: concrete/config/app.php:393
+#: concrete/config/app.php:394
 msgid "PHP"
 msgstr "PHP"
 
-#: concrete/config/app.php:394
+#: concrete/config/app.php:395
 msgid "MS Word"
 msgstr "MS Word"
 
-#: concrete/config/app.php:395
+#: concrete/config/app.php:396
 msgid "Stylesheet"
 msgstr "Φύλλα Stylesheet"
 
-#: concrete/config/app.php:396 concrete/config/app.php:399
+#: concrete/config/app.php:397 concrete/config/app.php:400
 msgid "MP4"
 msgstr "MP4"
 
-#: concrete/config/app.php:397
+#: concrete/config/app.php:398
 msgid "FLV"
 msgstr "FLV"
 
-#: concrete/config/app.php:398
+#: concrete/config/app.php:399
 msgid "MP3"
 msgstr "MP3"
 
-#: concrete/config/app.php:400
+#: concrete/config/app.php:401
 msgid "Realaudio"
 msgstr "Realaudio"
 
-#: concrete/config/app.php:401
+#: concrete/config/app.php:402
 msgid "Windows Audio"
 msgstr "Windows Audio"
 
-#: concrete/config/app.php:402
+#: concrete/config/app.php:403
 msgid "Rich Text"
 msgstr "Εμπλουτισμένο Κείμενο"
 
-#: concrete/config/app.php:403
+#: concrete/config/app.php:404
 msgid "JavaScript"
 msgstr "JavaScript"
 
-#: concrete/config/app.php:404
+#: concrete/config/app.php:405
 msgid "PDF"
 msgstr "PDF"
 
-#: concrete/config/app.php:405
+#: concrete/config/app.php:406
 msgid "Photoshop"
 msgstr "Photoshop"
 
-#: concrete/config/app.php:406
+#: concrete/config/app.php:407
 msgid "MPEG"
 msgstr "MPEG"
 
-#: concrete/config/app.php:407
+#: concrete/config/app.php:408
 msgid "MS Excel"
 msgstr "MS Excel"
 
-#: concrete/config/app.php:408
+#: concrete/config/app.php:409
 msgid "MS Powerpoint"
 msgstr "MS Powerpoint"
 
-#: concrete/config/app.php:409
+#: concrete/config/app.php:410
 msgid "TAR Archive"
 msgstr "Αρχείο TAR "
 
-#: concrete/config/app.php:410
+#: concrete/config/app.php:411
 msgid "Zip Archive"
 msgstr "Αρχείο zip "
 
-#: concrete/config/app.php:411
+#: concrete/config/app.php:412
 msgid "GZip Archive"
 msgstr "Αρχείο GZip"
 
-#: concrete/config/app.php:412
+#: concrete/config/app.php:413
 msgid "OGG"
 msgstr "OGG"
 
-#: concrete/config/app.php:413
+#: concrete/config/app.php:414
 msgid "OGG Video"
 msgstr "Βίντεο OGG"
 
-#: concrete/config/app.php:414
+#: concrete/config/app.php:415
 msgid "WebM"
 msgstr "WebM"
 
@@ -11352,14 +11447,14 @@ msgstr "Μπλοκ Μεσολάβησης για Μπλοκ που πρέπει 
 msgid "Composer Control"
 msgstr "Έλεγχος Συνθέτη"
 
-#: concrete/blocks/core_page_type_composer_control_output/view.php:13
+#: concrete/blocks/core_page_type_composer_control_output/view.php:18
 #, php-format
 msgid ""
 "The %s page type composer form element will output its contents here (Block "
 "ID %s)"
 msgstr "Ο %s συνθέτης τύπου σελίδας στοιχείων φόρμας θα εξάγει το περιεχόμενό του εδώ  (Block ID %s)"
 
-#: concrete/blocks/core_page_type_composer_control_output/edit.php:20
+#: concrete/blocks/core_page_type_composer_control_output/edit.php:25
 msgid "Control"
 msgstr "Έλεγχος"
 

@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-11-27 05:00+0000\n"
-"PO-Revision-Date: 2014-11-27 10:04+0000\n"
+"POT-Creation-Date: 2014-12-02 05:00+0000\n"
+"PO-Revision-Date: 2014-12-02 10:02+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Asturian (Spain) (http://www.transifex.com/projects/p/concrete5/language/ast_ES/)\n"
 "MIME-Version: 1.0\n"
@@ -46,6 +46,10 @@ msgstr "twitter"
 #: concrete/authentication/facebook/form.php:26
 #: concrete/authentication/facebook/hook.php:5
 #: concrete/authentication/facebook/hook.php:12
+#: concrete/authentication/google/form.php:19
+#: concrete/authentication/google/form.php:26
+#: concrete/authentication/google/hook.php:5
+#: concrete/authentication/google/hook.php:12
 #: concrete/authentication/twitter/form.php:39
 #: concrete/authentication/twitter/form.php:47
 #: concrete/authentication/twitter/hook.php:6
@@ -66,12 +70,14 @@ msgid "Register"
 msgstr ""
 
 #: concrete/authentication/facebook/form.php:34
+#: concrete/authentication/google/form.php:34
 #: concrete/authentication/twitter/form.php:55
 #, php-format
 msgid "Sign in with %s"
 msgstr ""
 
 #: concrete/authentication/facebook/form.php:41
+#: concrete/authentication/google/form.php:41
 #: concrete/authentication/twitter/form.php:63
 #, php-format
 msgid "Log in with %s"
@@ -83,6 +89,7 @@ msgstr ""
 
 #: concrete/authentication/community/type_form.php:4
 #: concrete/authentication/facebook/type_form.php:27
+#: concrete/authentication/google/type_form.php:50
 #: concrete/authentication/twitter/type_form.php:5
 #, php-format
 msgid "<a href=\"%s\" target=\"_blank\">Click here</a> to obtain your access keys."
@@ -114,12 +121,100 @@ msgstr ""
 
 #: concrete/authentication/community/type_form.php:25
 #: concrete/authentication/facebook/type_form.php:20
+#: concrete/authentication/google/type_form.php:20
 #: concrete/authentication/twitter/type_form.php:27
 msgid "Allow automatic registration"
 msgstr ""
 
 #: concrete/authentication/twitter/type_form.php:39
 msgid "Hide API secret"
+msgstr ""
+
+#: concrete/authentication/google/form.php:19
+#: concrete/authentication/google/form.php:26
+#: concrete/authentication/google/form.php:34
+#: concrete/authentication/google/hook.php:5
+#: concrete/authentication/google/hook.php:12
+msgid "Google"
+msgstr ""
+
+#: concrete/authentication/community/type_form.php:9
+#: concrete/authentication/facebook/type_form.php:4
+#: concrete/authentication/google/type_form.php:4
+msgid "App ID"
+msgstr ""
+
+#: concrete/authentication/community/type_form.php:13
+#: concrete/authentication/facebook/type_form.php:8
+#: concrete/authentication/google/type_form.php:8
+msgid "App Secret"
+msgstr ""
+
+#: concrete/authentication/community/type_form.php:17
+#: concrete/authentication/community/type_form.php:40
+#: concrete/authentication/facebook/type_form.php:12
+#: concrete/authentication/facebook/type_form.php:39
+#: concrete/authentication/google/type_form.php:12
+#: concrete/authentication/google/type_form.php:62
+msgid "Show secret key"
+msgstr ""
+
+#: concrete/authentication/google/type_form.php:26
+msgid "Domain Filtering"
+msgstr ""
+
+#: concrete/authentication/google/type_form.php:27
+msgid ""
+"Google allows accounts be created against custom domains like "
+"\"example.com\". These lists allow you to use standard PHP regular "
+"expressions to filter against the domain name or the google app domain "
+"account domain.For example user@example.com would filter against "
+"\"example.com\"."
+msgstr ""
+
+#: concrete/authentication/google/type_form.php:33
+msgid "Domain Whitelist regex"
+msgstr ""
+
+#: concrete/authentication/google/type_form.php:35
+#, php-format
+msgid "One per line, to whitelist all %s domains: %s"
+msgstr ""
+
+#: concrete/authentication/google/type_form.php:41
+msgid "Domain Blacklist regex"
+msgstr ""
+
+#: concrete/authentication/google/type_form.php:43
+msgid "One per line"
+msgstr ""
+
+#: concrete/authentication/google/type_form.php:44
+msgid "Regex"
+msgstr ""
+
+#: concrete/authentication/google/type_form.php:44
+msgid "Error Message"
+msgstr ""
+
+#: concrete/authentication/google/type_form.php:44
+#, php-format
+msgid "Format: %s."
+msgstr ""
+
+#: concrete/authentication/google/type_form.php:45
+msgid "Invalid domain."
+msgstr ""
+
+#: concrete/authentication/google/type_form.php:45
+#, php-format
+msgid "To disallow everything other than whitelist: %s."
+msgstr ""
+
+#: concrete/authentication/community/type_form.php:37
+#: concrete/authentication/facebook/type_form.php:36
+#: concrete/authentication/google/type_form.php:59
+msgid "Hide secret key"
 msgstr ""
 
 #: concrete/authentication/community/form.php:19
@@ -153,28 +248,6 @@ msgstr ""
 #: concrete/authentication/community/type_form.php:5
 #, php-format
 msgid "Set the \"Callback URL\" to: %s."
-msgstr ""
-
-#: concrete/authentication/community/type_form.php:9
-#: concrete/authentication/facebook/type_form.php:4
-msgid "App ID"
-msgstr ""
-
-#: concrete/authentication/community/type_form.php:13
-#: concrete/authentication/facebook/type_form.php:8
-msgid "App Secret"
-msgstr ""
-
-#: concrete/authentication/community/type_form.php:17
-#: concrete/authentication/community/type_form.php:40
-#: concrete/authentication/facebook/type_form.php:12
-#: concrete/authentication/facebook/type_form.php:39
-msgid "Show secret key"
-msgstr ""
-
-#: concrete/authentication/community/type_form.php:37
-#: concrete/authentication/facebook/type_form.php:36
-msgid "Hide secret key"
 msgstr ""
 
 #: concrete/authentication/concrete/change_password.php:9
@@ -230,14 +303,7 @@ msgid ""
 "password."
 msgstr ""
 
-#: concrete/authentication/concrete/forgot_password.php:19
-msgid "Reset and Email Password"
-msgstr ""
-
-#: concrete/authentication/concrete/form.php:8
-msgid "Sign in with a local account."
-msgstr ""
-
+#: concrete/authentication/concrete/forgot_password.php:17
 #: concrete/authentication/concrete/form.php:13
 #: concrete/blocks/form/form_setup_html.php:126
 #: concrete/blocks/form/form_setup_html.php:196
@@ -256,6 +322,14 @@ msgstr ""
 #: concrete/views/frontend/install.php:160
 msgid "Email Address"
 msgstr "Direición de corréu"
+
+#: concrete/authentication/concrete/forgot_password.php:19
+msgid "Reset and Email Password"
+msgstr ""
+
+#: concrete/authentication/concrete/form.php:8
+msgid "Sign in with a local account."
+msgstr ""
 
 #: concrete/authentication/concrete/form.php:13
 #: concrete/controllers/single_page/login.php:183
@@ -326,54 +400,54 @@ msgstr ""
 msgid "We have no record of that email address."
 msgstr ""
 
-#: concrete/authentication/concrete/controller.php:180
+#: concrete/authentication/concrete/controller.php:182
 msgid ""
 "Key Expired. Please visit the forgot password page again to have a new key "
 "generated."
 msgstr ""
 
-#: concrete/authentication/concrete/controller.php:189
+#: concrete/authentication/concrete/controller.php:191
 #: concrete/controllers/install.php:328
 #: concrete/controllers/single_page/account/edit_profile.php:94
-#: concrete/controllers/single_page/dashboard/users/search.php:336
+#: concrete/controllers/single_page/dashboard/users/search.php:337
 #: concrete/controllers/single_page/register.php:106
 msgid "The two passwords provided do not match."
 msgstr ""
 
-#: concrete/authentication/concrete/controller.php:214
+#: concrete/authentication/concrete/controller.php:216
 msgid ""
 "Invalid Key. Please visit the forgot password page again to have a new key "
 "generated."
 msgstr ""
 
-#: concrete/authentication/concrete/controller.php:220
+#: concrete/authentication/concrete/controller.php:222
 msgid "Password changed successfully!"
 msgstr ""
 
-#: concrete/authentication/concrete/controller.php:229
+#: concrete/authentication/concrete/controller.php:231
 msgid "Please provide both username and password."
 msgstr ""
 
-#: concrete/authentication/concrete/controller.php:238
+#: concrete/authentication/concrete/controller.php:240
 #: concrete/controllers/single_page/login.php:44
 msgid "Your session has expired. Please sign in again."
 msgstr ""
 
-#: concrete/authentication/concrete/controller.php:243
+#: concrete/authentication/concrete/controller.php:245
 msgid ""
 "This account has not yet been validated. Please check the email associated "
 "with this account and follow the link it contains."
 msgstr ""
 
-#: concrete/authentication/concrete/controller.php:247
+#: concrete/authentication/concrete/controller.php:249
 msgid "Invalid email address or password."
 msgstr ""
 
-#: concrete/authentication/concrete/controller.php:249
+#: concrete/authentication/concrete/controller.php:251
 msgid "Invalid username or password."
 msgstr ""
 
-#: concrete/authentication/concrete/controller.php:253
+#: concrete/authentication/concrete/controller.php:255
 #: concrete/controllers/single_page/login.php:39
 msgid "This user is inactive. Please contact us regarding this account."
 msgstr ""
@@ -1524,7 +1598,7 @@ msgid "Add Message"
 msgstr "Amestar mensaxe"
 
 #: concrete/blocks/html/controller.php:28 concrete/blocks/image/form.php:44
-#: concrete/config/app.php:382 concrete/tools/i18n_redactor_js.php:13
+#: concrete/config/app.php:383 concrete/tools/i18n_redactor_js.php:13
 msgid "HTML"
 msgstr ""
 
@@ -2231,6 +2305,7 @@ msgid "This request took too long."
 msgstr ""
 
 #: concrete/src/Authentication/Type/OAuth/OAuth1a/GenericOauth1aTypeController.php:44
+#: concrete/src/Authentication/Type/OAuth/OAuth2/GenericOauth2TypeController.php:57
 #: concrete/src/Error/Handler/ErrorHandler.php:37
 #: concrete/src/Error/Handler/ErrorHandler.php:43
 #: concrete/tools/i18n_js.php:62
@@ -3179,12 +3254,12 @@ msgid "Files updated successfully."
 msgstr ""
 
 #: concrete/controllers/dialog/file/properties.php:49
-#: concrete/controllers/single_page/dashboard/users/search.php:314
+#: concrete/controllers/single_page/dashboard/users/search.php:315
 msgid "Attribute cleared successfully."
 msgstr ""
 
 #: concrete/controllers/dialog/file/properties.php:72
-#: concrete/controllers/single_page/dashboard/users/search.php:288
+#: concrete/controllers/single_page/dashboard/users/search.php:289
 msgid "Attribute saved successfully."
 msgstr ""
 
@@ -3550,35 +3625,32 @@ msgid "Invalid workflow ID."
 msgstr ""
 
 #: concrete/controllers/single_page/dashboard/workflow/workflows.php:42
-#: concrete/controllers/single_page/dashboard/workflow/workflows.php:83
+#: concrete/controllers/single_page/dashboard/workflow/workflows.php:82
 msgid "You must give the workflow a name."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/workflow/workflows.php:45
-msgid "Workflow Names must only include alphanumerics and spaces."
-msgstr ""
-
-#: concrete/controllers/single_page/dashboard/workflow/workflows.php:73
-msgid "Workflow deleted successfully."
-msgstr ""
-
-#: concrete/controllers/single_page/dashboard/workflow/workflows.php:85
+#: concrete/controllers/single_page/dashboard/workflow/workflows.php:44
+#: concrete/controllers/single_page/dashboard/workflow/workflows.php:84
 msgid "Invalid characters in workflow name."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/workflow/workflows.php:90
+#: concrete/controllers/single_page/dashboard/workflow/workflows.php:72
+msgid "Workflow deleted successfully."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/workflow/workflows.php:89
 msgid "Workflow with that name already exists."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/workflow/workflows.php:95
+#: concrete/controllers/single_page/dashboard/workflow/workflows.php:94
 msgid "Invalid Workflow Type."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/workflow/workflows.php:122
+#: concrete/controllers/single_page/dashboard/workflow/workflows.php:121
 msgid "Workflow created successfully. You may now modify its properties."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/workflow/workflows.php:125
+#: concrete/controllers/single_page/dashboard/workflow/workflows.php:124
 msgid "Workflow updated."
 msgstr ""
 
@@ -3716,85 +3788,85 @@ msgstr ""
 msgid "Avatar saved successfully."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/users/search.php:110
-#: concrete/controllers/single_page/dashboard/users/search.php:113
-#: concrete/controllers/single_page/register.php:159
-#: concrete/controllers/single_page/register.php:163
+#: concrete/controllers/single_page/dashboard/users/search.php:109
+#: concrete/controllers/single_page/dashboard/users/search.php:112
+#: concrete/controllers/single_page/register.php:160
+#: concrete/controllers/single_page/register.php:164
 msgid "Website Registration Notification"
 msgstr ""
 
 #: concrete/controllers/single_page/account/edit_profile.php:73
 #: concrete/controllers/single_page/dashboard/users/add.php:52
-#: concrete/controllers/single_page/dashboard/users/search.php:164
+#: concrete/controllers/single_page/dashboard/users/search.php:165
 #: concrete/controllers/single_page/register.php:58
 msgid "Invalid email address provided."
 msgstr ""
 
 #: concrete/controllers/single_page/account/edit_profile.php:75
 #: concrete/controllers/single_page/dashboard/users/add.php:54
-#: concrete/controllers/single_page/dashboard/users/search.php:166
+#: concrete/controllers/single_page/dashboard/users/search.php:167
 #, php-format
 msgid "The email address '%s' is already in use. Please choose another."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/users/search.php:174
+#: concrete/controllers/single_page/dashboard/users/search.php:175
 msgid "Email saved successfully."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/users/search.php:195
+#: concrete/controllers/single_page/dashboard/users/search.php:196
 msgid "Time zone saved successfully."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/users/search.php:216
+#: concrete/controllers/single_page/dashboard/users/search.php:217
 msgid "Language saved successfully."
 msgstr ""
 
 #: concrete/controllers/single_page/dashboard/users/add.php:58
-#: concrete/controllers/single_page/dashboard/users/search.php:234
+#: concrete/controllers/single_page/dashboard/users/search.php:235
 #: concrete/controllers/single_page/register.php:66
 #, php-format
 msgid "A username must be at least %s characters long."
 msgstr ""
 
 #: concrete/controllers/single_page/dashboard/users/add.php:62
-#: concrete/controllers/single_page/dashboard/users/search.php:238
+#: concrete/controllers/single_page/dashboard/users/search.php:239
 #: concrete/controllers/single_page/register.php:70
 #, php-format
 msgid "A username cannot be more than %s characters long."
 msgstr ""
 
 #: concrete/controllers/single_page/dashboard/users/add.php:67
-#: concrete/controllers/single_page/dashboard/users/search.php:243
+#: concrete/controllers/single_page/dashboard/users/search.php:244
 msgid ""
 "A username may only contain letters, numbers, spaces, dots (not at the "
 "beginning/end), underscores (not at the beginning/end)."
 msgstr ""
 
 #: concrete/controllers/single_page/dashboard/users/add.php:69
-#: concrete/controllers/single_page/dashboard/users/search.php:245
+#: concrete/controllers/single_page/dashboard/users/search.php:246
 msgid ""
 "A username may only contain letters numbers, dots (not at the "
 "beginning/end), underscores (not at the beginning/end)."
 msgstr ""
 
 #: concrete/controllers/single_page/dashboard/users/add.php:74
-#: concrete/controllers/single_page/dashboard/users/search.php:250
+#: concrete/controllers/single_page/dashboard/users/search.php:251
 #, php-format
 msgid "The username '%s' already exists. Please choose another"
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/users/search.php:258
+#: concrete/controllers/single_page/dashboard/users/search.php:259
 msgid "Username saved successfully."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/users/search.php:275
-#: concrete/controllers/single_page/dashboard/users/search.php:303
+#: concrete/controllers/single_page/dashboard/users/search.php:276
+#: concrete/controllers/single_page/dashboard/users/search.php:304
 msgid "You do not have permission to modify this attribute."
 msgstr ""
 
 #: concrete/controllers/single_page/account/edit_profile.php:85
 #: concrete/controllers/single_page/dashboard/users/add.php:83
-#: concrete/controllers/single_page/dashboard/users/search.php:326
+#: concrete/controllers/single_page/dashboard/users/search.php:327
 #: concrete/src/Application/Service/User.php:39
 #, php-format
 msgid "A password must be between %s and %s characters"
@@ -3802,42 +3874,42 @@ msgstr ""
 
 #: concrete/controllers/single_page/account/edit_profile.php:89
 #: concrete/controllers/single_page/dashboard/users/add.php:87
-#: concrete/controllers/single_page/dashboard/users/search.php:332
+#: concrete/controllers/single_page/dashboard/users/search.php:333
 msgid "A password may not contain \", ', >, <, or any spaces."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/users/search.php:345
+#: concrete/controllers/single_page/dashboard/users/search.php:346
 msgid "Password updated successfully."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/users/search.php:379
+#: concrete/controllers/single_page/dashboard/users/search.php:380
 #: concrete/controllers/single_page/login.php:205
 msgctxt "Default locale"
 msgid "** Default"
 msgstr "** Por defeutu"
 
-#: concrete/controllers/single_page/dashboard/users/search.php:404
+#: concrete/controllers/single_page/dashboard/users/search.php:405
 msgid "User deleted successfully."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/users/search.php:432
+#: concrete/controllers/single_page/dashboard/users/search.php:433
 #, php-format
 msgid "View/Edit %s"
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/users/search.php:435
+#: concrete/controllers/single_page/dashboard/users/search.php:436
 msgid "User activated successfully."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/users/search.php:438
+#: concrete/controllers/single_page/dashboard/users/search.php:439
 msgid "User deactivated successfully."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/users/search.php:441
+#: concrete/controllers/single_page/dashboard/users/search.php:442
 msgid "User created successfully."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/users/search.php:444
+#: concrete/controllers/single_page/dashboard/users/search.php:445
 msgid "Email marked as valid."
 msgstr ""
 
@@ -3973,7 +4045,7 @@ msgstr ""
 msgid "Cached files removed."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/system/seo/bulk.php:31
+#: concrete/controllers/single_page/dashboard/system/seo/bulk.php:32
 msgid "success"
 msgstr ""
 
@@ -4831,27 +4903,27 @@ msgstr ""
 msgid "The username %s already exists. Please choose another"
 msgstr ""
 
-#: concrete/controllers/single_page/register.php:194
+#: concrete/controllers/single_page/register.php:195
 msgid "Validate Email Address"
 msgstr ""
 
-#: concrete/controllers/single_page/register.php:255
+#: concrete/controllers/single_page/register.php:256
 msgid "Your account has been created, and you are now logged in."
 msgstr ""
 
-#: concrete/controllers/single_page/register.php:260
+#: concrete/controllers/single_page/register.php:261
 msgid ""
 "You are registered but you need to validate your email address. Some or all "
 "functionality on this site will be limited until you do so."
 msgstr ""
 
-#: concrete/controllers/single_page/register.php:261
+#: concrete/controllers/single_page/register.php:262
 msgid ""
 "An email has been sent to your email address. Click on the URL contained in "
 "the email to validate your email address."
 msgstr ""
 
-#: concrete/controllers/single_page/register.php:266
+#: concrete/controllers/single_page/register.php:267
 msgid ""
 "You are registered but a site administrator must review your account, you "
 "will not be able to login until your account has been approved."
@@ -5761,15 +5833,15 @@ msgstr ""
 msgid "%s (Retina Version)"
 msgstr ""
 
-#: concrete/src/File/StorageLocation/Configuration/LocalConfiguration.php:69
+#: concrete/src/File/StorageLocation/Configuration/LocalConfiguration.php:73
 msgid "You must include a root path for this storage location."
 msgstr ""
 
-#: concrete/src/File/StorageLocation/Configuration/LocalConfiguration.php:71
+#: concrete/src/File/StorageLocation/Configuration/LocalConfiguration.php:75
 msgid "The specified root path does not exist."
 msgstr ""
 
-#: concrete/src/File/StorageLocation/Configuration/LocalConfiguration.php:73
+#: concrete/src/File/StorageLocation/Configuration/LocalConfiguration.php:77
 msgid ""
 "Invalid path to file storage location. You may not choose the root "
 "directory."
@@ -5871,29 +5943,39 @@ msgstr ""
 msgid "Invalid Authentication Type ID"
 msgstr ""
 
-#: concrete/src/Authentication/AuthenticationType.php:265
+#: concrete/src/Authentication/AuthenticationType.php:277
 msgid "The core concrete5 authentication cannot be disabled."
 msgstr ""
 
-#: concrete/src/Authentication/AuthenticationType.php:356
+#: concrete/src/Authentication/AuthenticationType.php:368
 msgid "This authentication type does not require any customization."
 msgstr ""
 
+#: concrete/src/Authentication/Type/OAuth/OAuth2/GenericOauth2TypeController.php:38
+#: concrete/src/Authentication/Type/OAuth/OAuth2/GenericOauth2TypeController.php:85
+#, php-format
+msgid "Failed authentication: %s"
+msgstr ""
+
 #: concrete/src/Authentication/Type/OAuth/OAuth1a/GenericOauth1aTypeController.php:39
+#: concrete/src/Authentication/Type/OAuth/OAuth2/GenericOauth2TypeController.php:49
 msgid ""
 "No local user account associated with this user, please log in with a local "
 "account and connect your account from your user profile."
 msgstr ""
 
 #: concrete/src/Authentication/Type/OAuth/OAuth1a/GenericOauth1aTypeController.php:47
+#: concrete/src/Authentication/Type/OAuth/OAuth2/GenericOauth2TypeController.php:60
 msgid "Failed to complete authentication."
 msgstr ""
 
 #: concrete/src/Authentication/Type/OAuth/OAuth1a/GenericOauth1aTypeController.php:75
+#: concrete/src/Authentication/Type/OAuth/OAuth2/GenericOauth2TypeController.php:90
 msgid "Successfully attached."
 msgstr ""
 
 #: concrete/src/Authentication/Type/OAuth/OAuth1a/GenericOauth1aTypeController.php:79
+#: concrete/src/Authentication/Type/OAuth/OAuth2/GenericOauth2TypeController.php:94
 msgid "Unable to attach user."
 msgstr ""
 
@@ -6058,7 +6140,7 @@ msgstr ""
 msgid "(Deleted Group)"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:371
+#: concrete/config/install/base/permissions.xml:379
 #: concrete/src/Permission/Access/Entity/ConversationMessageAuthorEntity.php:42
 msgctxt "PermissionAccessEntityTypeName"
 msgid "Message Author"
@@ -6074,7 +6156,7 @@ msgstr ""
 msgid "Add User"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:298
+#: concrete/config/install/base/permissions.xml:300
 #: concrete/src/Permission/Access/Entity/UserEntity.php:68
 msgctxt "PermissionAccessEntityTypeName"
 msgid "User"
@@ -6088,13 +6170,13 @@ msgstr ""
 msgid "Add Group Set"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:318
+#: concrete/config/install/base/permissions.xml:322
 #: concrete/src/Permission/Access/Entity/GroupSetEntity.php:17
 msgctxt "PermissionAccessEntityTypeName"
 msgid "Group Set"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:365
+#: concrete/config/install/base/permissions.xml:373
 #: concrete/src/Permission/Access/Entity/FileUploaderEntity.php:36
 msgctxt "PermissionAccessEntityTypeName"
 msgid "File Uploader"
@@ -6104,7 +6186,7 @@ msgstr ""
 msgid "File Uploader"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:359
+#: concrete/config/install/base/permissions.xml:367
 #: concrete/src/Permission/Access/Entity/PageOwnerEntity.php:41
 msgctxt "PermissionAccessEntityTypeName"
 msgid "Page Owner"
@@ -6114,7 +6196,7 @@ msgstr ""
 msgid "Add Group Combination"
 msgstr ""
 
-#: concrete/config/install/base/permissions.xml:338
+#: concrete/config/install/base/permissions.xml:344
 #: concrete/src/Permission/Access/Entity/GroupCombinationEntity.php:17
 msgctxt "PermissionAccessEntityTypeName"
 msgid "Group Combination"
@@ -6252,16 +6334,16 @@ msgstr ""
 msgid "Featured Items"
 msgstr ""
 
-#: concrete/src/Page/Page.php:2051
+#: concrete/src/Page/Page.php:2076
 #, php-format
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr ""
 
-#: concrete/src/Page/Page.php:2051 concrete/src/Page/Page.php:2115
+#: concrete/src/Page/Page.php:2076 concrete/src/Page/Page.php:2140
 msgid "Page Action"
 msgstr ""
 
-#: concrete/src/Page/Page.php:2115
+#: concrete/src/Page/Page.php:2140
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr ""
@@ -6609,32 +6691,32 @@ msgstr ""
 msgid "Unable to install database: %s"
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:233
+#: concrete/src/Package/StartingPointPackage.php:235
 msgctxt "GroupName"
 msgid "Guest"
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:233
+#: concrete/src/Package/StartingPointPackage.php:235
 msgctxt "GroupDescription"
 msgid "The guest group represents unregistered visitors to your site."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:234
+#: concrete/src/Package/StartingPointPackage.php:236
 msgctxt "GroupName"
 msgid "Registered Users"
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:234
+#: concrete/src/Package/StartingPointPackage.php:236
 msgctxt "GroupDescription"
 msgid "The registered users group represents all user accounts."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:235
+#: concrete/src/Package/StartingPointPackage.php:237
 msgctxt "GroupName"
 msgid "Administrators"
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:251
+#: concrete/src/Package/StartingPointPackage.php:253
 msgid "Won a Badge"
 msgstr ""
 
@@ -6828,22 +6910,22 @@ msgstr ""
 msgid "Approve Move"
 msgstr ""
 
-#: concrete/src/Workflow/BasicWorkflow.php:60
+#: concrete/src/Workflow/BasicWorkflow.php:61
 #, php-format
 msgid "On %s, user %s submitted the following request: %s"
 msgstr ""
 
 #: concrete/config/install/base/permissions.xml:274
-#: concrete/src/Workflow/BasicWorkflow.php:83
+#: concrete/src/Workflow/BasicWorkflow.php:84
 msgid "Basic Workflow"
 msgstr ""
 
-#: concrete/src/Workflow/BasicWorkflow.php:102
+#: concrete/src/Workflow/BasicWorkflow.php:104
 #, php-format
 msgid "%s Submitted by <strong>%s</strong> on %s."
 msgstr ""
 
-#: concrete/src/Workflow/BasicWorkflow.php:128
+#: concrete/src/Workflow/BasicWorkflow.php:130
 #, php-format
 msgid ""
 "On %s, user %s cancelled the following request: \n"
@@ -6854,7 +6936,7 @@ msgid ""
 "\n"
 msgstr ""
 
-#: concrete/src/Workflow/BasicWorkflow.php:168
+#: concrete/src/Workflow/BasicWorkflow.php:170
 #, php-format
 msgid ""
 "On %s, user %s approved the following request: \n"
@@ -7784,6 +7866,9 @@ msgid "%s: Basic Details"
 msgstr ""
 
 #: concrete/elements/attribute/type_form_required.php:52
+#: concrete/elements/dashboard/attributes_table.php:53
+#: concrete/elements/dashboard/attributes_table.php:77
+#: concrete/elements/dashboard/attributes_table.php:95
 #: concrete/single_pages/dashboard/pages/feeds.php:82
 #: concrete/single_pages/dashboard/pages/templates/add.php:20
 #: concrete/single_pages/dashboard/pages/templates/view.php:32
@@ -9052,12 +9137,22 @@ msgstr ""
 msgid "Content disabled in edit mode."
 msgstr ""
 
-#: concrete/elements/storage_location_types/local.php:9
+#: concrete/elements/storage_location_types/local.php:10
 msgid "Root Path"
 msgstr ""
 
-#: concrete/elements/storage_location_types/local.php:16
+#: concrete/elements/storage_location_types/local.php:12
+#, php-format
+msgid "Example: %ssome/path"
+msgstr ""
+
+#: concrete/elements/storage_location_types/local.php:17
 msgid "Relative Path"
+msgstr ""
+
+#: concrete/elements/storage_location_types/local.php:18
+#, php-format
+msgid "Example: %s"
 msgstr ""
 
 #: concrete/elements/block_header_view.php:88
@@ -10455,149 +10550,149 @@ msgstr ""
 msgid "Creates an empty site using the unstyled Elemental theme."
 msgstr ""
 
-#: concrete/config/app.php:377
+#: concrete/config/app.php:378
 msgid "JPEG"
 msgstr ""
 
-#: concrete/config/app.php:378
+#: concrete/config/app.php:379
 msgid "GIF"
 msgstr ""
 
-#: concrete/config/app.php:379
+#: concrete/config/app.php:380
 msgid "PNG"
 msgstr ""
 
-#: concrete/config/app.php:380
+#: concrete/config/app.php:381
 msgid "Windows Bitmap"
 msgstr ""
 
-#: concrete/config/app.php:381
+#: concrete/config/app.php:382
 msgid "TIFF"
 msgstr ""
 
-#: concrete/config/app.php:383
+#: concrete/config/app.php:384
 msgid "Flash"
 msgstr ""
 
-#: concrete/blocks/feature/form.php:4 concrete/config/app.php:384
+#: concrete/blocks/feature/form.php:4 concrete/config/app.php:385
 #: concrete/single_pages/dashboard/pages/templates/add.php:27
 #: concrete/single_pages/dashboard/pages/templates/view.php:39
 msgid "Icon"
 msgstr ""
 
-#: concrete/config/app.php:385
+#: concrete/config/app.php:386
 msgid "SVG"
 msgstr ""
 
-#: concrete/config/app.php:386
+#: concrete/config/app.php:387
 msgid "Windows Video"
 msgstr ""
 
-#: concrete/config/app.php:387
+#: concrete/config/app.php:388
 msgid "Quicktime"
 msgstr ""
 
-#: concrete/config/app.php:388
+#: concrete/config/app.php:389
 msgid "AVI"
 msgstr ""
 
-#: concrete/config/app.php:389
+#: concrete/config/app.php:390
 msgid "3GP"
 msgstr ""
 
-#: concrete/attributes/textarea/type_form.php:9 concrete/config/app.php:390
+#: concrete/attributes/textarea/type_form.php:9 concrete/config/app.php:391
 msgid "Plain Text"
 msgstr "Testu planu"
 
-#: concrete/config/app.php:391
+#: concrete/config/app.php:392
 msgid "CSV"
 msgstr ""
 
-#: concrete/config/app.php:392
+#: concrete/config/app.php:393
 msgid "XML"
 msgstr ""
 
-#: concrete/config/app.php:393
+#: concrete/config/app.php:394
 msgid "PHP"
 msgstr ""
 
-#: concrete/config/app.php:394
+#: concrete/config/app.php:395
 msgid "MS Word"
 msgstr ""
 
-#: concrete/config/app.php:395
+#: concrete/config/app.php:396
 msgid "Stylesheet"
 msgstr ""
 
-#: concrete/config/app.php:396 concrete/config/app.php:399
+#: concrete/config/app.php:397 concrete/config/app.php:400
 msgid "MP4"
 msgstr ""
 
-#: concrete/config/app.php:397
+#: concrete/config/app.php:398
 msgid "FLV"
 msgstr ""
 
-#: concrete/config/app.php:398
+#: concrete/config/app.php:399
 msgid "MP3"
 msgstr ""
 
-#: concrete/config/app.php:400
+#: concrete/config/app.php:401
 msgid "Realaudio"
 msgstr ""
 
-#: concrete/config/app.php:401
+#: concrete/config/app.php:402
 msgid "Windows Audio"
 msgstr ""
 
-#: concrete/config/app.php:402
+#: concrete/config/app.php:403
 msgid "Rich Text"
 msgstr ""
 
-#: concrete/config/app.php:403
+#: concrete/config/app.php:404
 msgid "JavaScript"
 msgstr ""
 
-#: concrete/config/app.php:404
+#: concrete/config/app.php:405
 msgid "PDF"
 msgstr ""
 
-#: concrete/config/app.php:405
+#: concrete/config/app.php:406
 msgid "Photoshop"
 msgstr ""
 
-#: concrete/config/app.php:406
+#: concrete/config/app.php:407
 msgid "MPEG"
 msgstr ""
 
-#: concrete/config/app.php:407
+#: concrete/config/app.php:408
 msgid "MS Excel"
 msgstr ""
 
-#: concrete/config/app.php:408
+#: concrete/config/app.php:409
 msgid "MS Powerpoint"
 msgstr ""
 
-#: concrete/config/app.php:409
+#: concrete/config/app.php:410
 msgid "TAR Archive"
 msgstr ""
 
-#: concrete/config/app.php:410
+#: concrete/config/app.php:411
 msgid "Zip Archive"
 msgstr ""
 
-#: concrete/config/app.php:411
+#: concrete/config/app.php:412
 msgid "GZip Archive"
 msgstr ""
 
-#: concrete/config/app.php:412
+#: concrete/config/app.php:413
 msgid "OGG"
 msgstr ""
 
-#: concrete/config/app.php:413
+#: concrete/config/app.php:414
 msgid "OGG Video"
 msgstr ""
 
-#: concrete/config/app.php:414
+#: concrete/config/app.php:415
 msgid "WebM"
 msgstr ""
 
@@ -11352,14 +11447,14 @@ msgstr ""
 msgid "Composer Control"
 msgstr ""
 
-#: concrete/blocks/core_page_type_composer_control_output/view.php:13
+#: concrete/blocks/core_page_type_composer_control_output/view.php:18
 #, php-format
 msgid ""
 "The %s page type composer form element will output its contents here (Block "
 "ID %s)"
 msgstr ""
 
-#: concrete/blocks/core_page_type_composer_control_output/edit.php:20
+#: concrete/blocks/core_page_type_composer_control_output/edit.php:25
 msgid "Control"
 msgstr ""
 
