@@ -11,9 +11,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-12-03 05:00+0000\n"
-"PO-Revision-Date: 2014-12-03 11:37+0000\n"
-"Last-Translator: Michele Locati <michele@locati.it>\n"
+"POT-Creation-Date: 2014-12-04 05:00+0000\n"
+"PO-Revision-Date: 2014-12-04 19:10+0000\n"
+"Last-Translator: Takuro Hishikawa <hishikawa@concrete5.co.jp>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/projects/p/concrete5/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -93,8 +93,8 @@ msgid "Twitter Login Configuration"
 msgstr "Twitterログイン設定"
 
 #: concrete/authentication/community/type_form.php:4
-#: concrete/authentication/facebook/type_form.php:27
-#: concrete/authentication/google/type_form.php:50
+#: concrete/authentication/facebook/type_form.php:45
+#: concrete/authentication/google/type_form.php:78
 #: concrete/authentication/twitter/type_form.php:5
 #, php-format
 msgid "<a href=\"%s\" target=\"_blank\">Click here</a> to obtain your access keys."
@@ -120,18 +120,25 @@ msgid "Consumer Secret (API Secret)"
 msgstr "Consumer Secret (API Secret)"
 
 #: concrete/authentication/twitter/type_form.php:19
-#: concrete/authentication/twitter/type_form.php:42
+#: concrete/authentication/twitter/type_form.php:72
 msgid "Show API secret"
 msgstr "API秘密キーを表示"
 
 #: concrete/authentication/community/type_form.php:25
 #: concrete/authentication/facebook/type_form.php:20
-#: concrete/authentication/google/type_form.php:20
+#: concrete/authentication/google/type_form.php:22
 #: concrete/authentication/twitter/type_form.php:27
 msgid "Allow automatic registration"
 msgstr "自動登録を有効化"
 
-#: concrete/authentication/twitter/type_form.php:39
+#: concrete/authentication/community/type_form.php:31
+#: concrete/authentication/facebook/type_form.php:26
+#: concrete/authentication/google/type_form.php:27
+#: concrete/authentication/twitter/type_form.php:33
+msgid "Group to enter on registration"
+msgstr "登録時に入れるグループ"
+
+#: concrete/authentication/twitter/type_form.php:69
 msgid "Hide API secret"
 msgstr "API秘密キーを非表示"
 
@@ -156,68 +163,68 @@ msgid "App Secret"
 msgstr "App シークレット"
 
 #: concrete/authentication/community/type_form.php:17
-#: concrete/authentication/community/type_form.php:40
+#: concrete/authentication/community/type_form.php:70
 #: concrete/authentication/facebook/type_form.php:12
-#: concrete/authentication/facebook/type_form.php:39
+#: concrete/authentication/facebook/type_form.php:69
 #: concrete/authentication/google/type_form.php:12
-#: concrete/authentication/google/type_form.php:62
+#: concrete/authentication/google/type_form.php:105
 msgid "Show secret key"
 msgstr "秘密キーを表示"
 
-#: concrete/authentication/google/type_form.php:26
+#: concrete/authentication/google/type_form.php:45
 msgid "Domain Filtering"
 msgstr "ドメインフィルタリング"
 
-#: concrete/authentication/google/type_form.php:27
+#: concrete/authentication/google/type_form.php:47
 msgid ""
 "Google allows accounts be created against custom domains like "
 "\"example.com\". These lists allow you to use standard PHP regular "
 "expressions to filter against the domain name or email address. For example "
 "user@example.com would filter against \"example.com\"."
-msgstr ""
+msgstr "Googleは \"example.com\" のような特定のドメインに対してアカウントを発行することができます。このリストでは、PHPの正規表現を使ってドメイン名やメールアドレスをフィルタリングすることができます。例えば、user@example.com は \"example.com\" でフィルタリングできます。"
 
-#: concrete/authentication/google/type_form.php:33
+#: concrete/authentication/google/type_form.php:53
 msgid "Domain Whitelist regex"
 msgstr "ドメインホワイトリスト正規表現"
 
-#: concrete/authentication/google/type_form.php:35
+#: concrete/authentication/google/type_form.php:56
 #, php-format
 msgid "One per line, to whitelist all %s domains: %s"
 msgstr "１行にひとつずつ、%s ドメインの全てをホワイトリストに指定するには: %s"
 
-#: concrete/authentication/google/type_form.php:41
+#: concrete/authentication/google/type_form.php:64
 msgid "Domain Blacklist regex"
 msgstr "ドメインブラックリスト正規表現"
 
-#: concrete/authentication/google/type_form.php:43
+#: concrete/authentication/google/type_form.php:66
 msgid "One per line"
 msgstr "１行にひとつずつ"
 
-#: concrete/authentication/google/type_form.php:44
+#: concrete/authentication/google/type_form.php:69
 msgid "Regex"
 msgstr "正規表現"
 
-#: concrete/authentication/google/type_form.php:44
+#: concrete/authentication/google/type_form.php:69
 msgid "Error Message"
 msgstr "エラーメッセージ"
 
-#: concrete/authentication/google/type_form.php:44
+#: concrete/authentication/google/type_form.php:68
 #, php-format
 msgid "Format: %s."
 msgstr "フォーマット: %s"
 
-#: concrete/authentication/google/type_form.php:45
+#: concrete/authentication/google/type_form.php:72
 msgid "Invalid domain."
 msgstr "無効なドメインです。"
 
-#: concrete/authentication/google/type_form.php:45
+#: concrete/authentication/google/type_form.php:71
 #, php-format
 msgid "To disallow everything other than whitelist: %s."
 msgstr "ホワイトリスト以外のすべてのものを禁止するには: %s"
 
-#: concrete/authentication/community/type_form.php:37
-#: concrete/authentication/facebook/type_form.php:36
-#: concrete/authentication/google/type_form.php:59
+#: concrete/authentication/community/type_form.php:67
+#: concrete/authentication/facebook/type_form.php:66
+#: concrete/authentication/google/type_form.php:102
 msgid "Hide secret key"
 msgstr "秘密キーを隠す"
 

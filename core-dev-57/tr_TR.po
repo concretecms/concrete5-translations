@@ -5,9 +5,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-12-03 05:00+0000\n"
-"PO-Revision-Date: 2014-12-03 10:01+0000\n"
-"Last-Translator: Michele Locati <michele@locati.it>\n"
+"POT-Creation-Date: 2014-12-04 05:00+0000\n"
+"PO-Revision-Date: 2014-12-04 22:20+0000\n"
+"Last-Translator: Adem Coşkuner <info@ademcoskuner.com>\n"
 "Language-Team: Turkish (Turkey) (http://www.transifex.com/projects/p/concrete5/language/tr_TR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -87,8 +87,8 @@ msgid "Twitter Login Configuration"
 msgstr "Twitter Oturum Açma Yapılandırması"
 
 #: concrete/authentication/community/type_form.php:4
-#: concrete/authentication/facebook/type_form.php:27
-#: concrete/authentication/google/type_form.php:50
+#: concrete/authentication/facebook/type_form.php:45
+#: concrete/authentication/google/type_form.php:78
 #: concrete/authentication/twitter/type_form.php:5
 #, php-format
 msgid "<a href=\"%s\" target=\"_blank\">Click here</a> to obtain your access keys."
@@ -114,18 +114,25 @@ msgid "Consumer Secret (API Secret)"
 msgstr "Tüketici Parolası (API Parolası)"
 
 #: concrete/authentication/twitter/type_form.php:19
-#: concrete/authentication/twitter/type_form.php:42
+#: concrete/authentication/twitter/type_form.php:72
 msgid "Show API secret"
 msgstr "API parolasını göster"
 
 #: concrete/authentication/community/type_form.php:25
 #: concrete/authentication/facebook/type_form.php:20
-#: concrete/authentication/google/type_form.php:20
+#: concrete/authentication/google/type_form.php:22
 #: concrete/authentication/twitter/type_form.php:27
 msgid "Allow automatic registration"
 msgstr "Otomatik kayıt olmaya izin ver"
 
-#: concrete/authentication/twitter/type_form.php:39
+#: concrete/authentication/community/type_form.php:31
+#: concrete/authentication/facebook/type_form.php:26
+#: concrete/authentication/google/type_form.php:27
+#: concrete/authentication/twitter/type_form.php:33
+msgid "Group to enter on registration"
+msgstr "Kayıt ardından gireceği grup"
+
+#: concrete/authentication/twitter/type_form.php:69
 msgid "Hide API secret"
 msgstr "API parolasını gizle"
 
@@ -135,7 +142,7 @@ msgstr "API parolasını gizle"
 #: concrete/authentication/google/hook.php:5
 #: concrete/authentication/google/hook.php:12
 msgid "Google"
-msgstr ""
+msgstr "Google"
 
 #: concrete/authentication/community/type_form.php:9
 #: concrete/authentication/facebook/type_form.php:4
@@ -150,68 +157,68 @@ msgid "App Secret"
 msgstr "Uygulama Anahtarı"
 
 #: concrete/authentication/community/type_form.php:17
-#: concrete/authentication/community/type_form.php:40
+#: concrete/authentication/community/type_form.php:70
 #: concrete/authentication/facebook/type_form.php:12
-#: concrete/authentication/facebook/type_form.php:39
+#: concrete/authentication/facebook/type_form.php:69
 #: concrete/authentication/google/type_form.php:12
-#: concrete/authentication/google/type_form.php:62
+#: concrete/authentication/google/type_form.php:105
 msgid "Show secret key"
 msgstr "Gizli Anahtarı Göster"
 
-#: concrete/authentication/google/type_form.php:26
+#: concrete/authentication/google/type_form.php:45
 msgid "Domain Filtering"
-msgstr ""
+msgstr "Domain Filtreleme"
 
-#: concrete/authentication/google/type_form.php:27
+#: concrete/authentication/google/type_form.php:47
 msgid ""
 "Google allows accounts be created against custom domains like "
 "\"example.com\". These lists allow you to use standard PHP regular "
 "expressions to filter against the domain name or email address. For example "
 "user@example.com would filter against \"example.com\"."
-msgstr ""
+msgstr "Google, hesapların \"example.com\" gibi özel alan adlarına karşı hesaplara izin verir. Bu listeler alan adı veya email adresini filtrelemeniz için standart PHP düzenli ifadelerini kullanmanıza izin verir."
 
-#: concrete/authentication/google/type_form.php:33
+#: concrete/authentication/google/type_form.php:53
 msgid "Domain Whitelist regex"
-msgstr ""
+msgstr "Alan Adı Beyaz Liste Düzenli İfadesi"
 
-#: concrete/authentication/google/type_form.php:35
+#: concrete/authentication/google/type_form.php:56
 #, php-format
 msgid "One per line, to whitelist all %s domains: %s"
-msgstr ""
+msgstr "Tüm %s alan adlarını filtrelemek için, her satıra bir tane: %s"
 
-#: concrete/authentication/google/type_form.php:41
+#: concrete/authentication/google/type_form.php:64
 msgid "Domain Blacklist regex"
-msgstr ""
+msgstr "Alan Adı Kara Liste Düzenli İfadesi"
 
-#: concrete/authentication/google/type_form.php:43
+#: concrete/authentication/google/type_form.php:66
 msgid "One per line"
-msgstr ""
+msgstr "Her satıra bir tane"
 
-#: concrete/authentication/google/type_form.php:44
+#: concrete/authentication/google/type_form.php:69
 msgid "Regex"
-msgstr ""
+msgstr "Düzenli İfade"
 
-#: concrete/authentication/google/type_form.php:44
+#: concrete/authentication/google/type_form.php:69
 msgid "Error Message"
-msgstr ""
+msgstr "Hata Mesajı"
 
-#: concrete/authentication/google/type_form.php:44
+#: concrete/authentication/google/type_form.php:68
 #, php-format
 msgid "Format: %s."
-msgstr ""
+msgstr "Format: %s."
 
-#: concrete/authentication/google/type_form.php:45
+#: concrete/authentication/google/type_form.php:72
 msgid "Invalid domain."
-msgstr ""
+msgstr "Geçersiz domain."
 
-#: concrete/authentication/google/type_form.php:45
+#: concrete/authentication/google/type_form.php:71
 #, php-format
 msgid "To disallow everything other than whitelist: %s."
-msgstr ""
+msgstr "Beyaz liste dışındaki her şeyi devre dışı bırakmak için: %s."
 
-#: concrete/authentication/community/type_form.php:37
-#: concrete/authentication/facebook/type_form.php:36
-#: concrete/authentication/google/type_form.php:59
+#: concrete/authentication/community/type_form.php:67
+#: concrete/authentication/facebook/type_form.php:66
+#: concrete/authentication/google/type_form.php:102
 msgid "Hide secret key"
 msgstr "Gizli Anahtarı Gizle"
 
@@ -5834,7 +5841,7 @@ msgstr "Belirtilen kök dizin mevcut değil."
 msgid ""
 "Invalid path to file storage location. You may not choose the root "
 "directory."
-msgstr "Dosya depolama konumu için hatalı yol. Kök dizini seçemezsiniz."
+msgstr "Dosya depolama konumu için geçersiz yol. Kök dizini seçemezsiniz."
 
 #: concrete/src/File/Service/File.php:118
 msgid "An error occurred while attempting to determine file permissions."
@@ -5944,7 +5951,7 @@ msgstr "Bu kimlik doğrulama türü herhangi bir özelleştirme gerektirmiyor."
 #: concrete/src/Authentication/Type/OAuth/OAuth2/GenericOauth2TypeController.php:85
 #, php-format
 msgid "Failed authentication: %s"
-msgstr ""
+msgstr "Başarısız kimlik doğrulama: %s"
 
 #: concrete/src/Authentication/Type/OAuth/OAuth1a/GenericOauth1aTypeController.php:39
 #: concrete/src/Authentication/Type/OAuth/OAuth2/GenericOauth2TypeController.php:49
@@ -6415,7 +6422,7 @@ msgstr "İstisnalar"
 #: concrete/src/Backup/ContentImporter.php:315
 #, php-format
 msgid "Invalid block type handle: %s"
-msgstr "Hatalı blok türü işleci: %s"
+msgstr "Geçersiz blok türü işleci: %s"
 
 #: concrete/src/Backup/Backup.php:24
 #, php-format
@@ -7655,7 +7662,7 @@ msgstr[0] "%d dakika önce"
 #: concrete/src/Conversation/Message/Message.php:283
 #: concrete/src/Conversation/Message/Message.php:295
 msgid "Invalid flag type."
-msgstr "Hatalı etiket türü."
+msgstr "Geçersiz etiket türü."
 
 #: concrete/src/Conversation/FlagType/FlagType.php:19
 msgid "Flag type already initialized."
@@ -9122,7 +9129,7 @@ msgstr "Kök Yol"
 #: concrete/elements/storage_location_types/local.php:12
 #, php-format
 msgid "Example: %ssome/path"
-msgstr ""
+msgstr "Örnek: %sornek/yol"
 
 #: concrete/elements/storage_location_types/local.php:17
 msgid "Relative Path"
@@ -9131,7 +9138,7 @@ msgstr "Bağıl Yol"
 #: concrete/elements/storage_location_types/local.php:18
 #, php-format
 msgid "Example: %s"
-msgstr ""
+msgstr "Örnek: %s"
 
 #: concrete/elements/block_header_view.php:88
 #: concrete/elements/block_header_view.php:92
