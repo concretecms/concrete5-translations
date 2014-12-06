@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-12-04 05:00+0000\n"
-"PO-Revision-Date: 2014-12-04 10:01+0000\n"
+"POT-Creation-Date: 2014-12-05 05:00+0000\n"
+"PO-Revision-Date: 2014-12-05 10:02+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Russian (Russia) (http://www.transifex.com/projects/p/concrete5/language/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -645,7 +645,7 @@ msgstr "По убыванию"
 msgid "Save"
 msgstr "Сохранить"
 
-#: concrete/controllers/backend/file.php:104
+#: concrete/controllers/backend/file.php:111
 #: concrete/controllers/backend/user.php:58
 #: concrete/controllers/backend/user.php:83
 #: concrete/controllers/dialog/file/properties.php:108
@@ -732,7 +732,7 @@ msgstr "Добавить из внешнего URL"
 
 #: concrete/blocks/image/tools/composer_save.php:5
 #: concrete/blocks/image/tools/crop_image.php:5
-#: concrete/controllers/backend/file.php:114
+#: concrete/controllers/backend/file.php:121
 #: concrete/tools/files/import.php:10
 #: concrete/tools/files/importers/incoming.php:8
 #: concrete/tools/files/importers/remote.php:11
@@ -906,7 +906,7 @@ msgstr "Место для хранения файлов успешно сохр�
 #: concrete/elements/panels/page.php:104
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:58
 #: concrete/single_pages/dashboard/pages/types/view.php:46
-#: concrete/src/Package/Package.php:354
+#: concrete/src/Package/Package.php:356
 #: concrete/tools/files/permissions.php:43 concrete/tools/i18n_js.php:139
 #: concrete/tools/i18n_js.php:199
 msgid "Permissions"
@@ -5126,12 +5126,13 @@ msgstr "Зарегистрирован между"
 msgid "Activated Users"
 msgstr "Активированные пользователи"
 
-#: concrete/controllers/backend/file.php:46
+#: concrete/controllers/backend/file.php:47
+#: concrete/controllers/backend/file.php:56
 #, php-format
 msgid "File %s could not be found."
 msgstr "Файл %s не найден."
 
-#: concrete/controllers/backend/file.php:50
+#: concrete/controllers/backend/file.php:51
 #, php-format
 msgid "%s file rescanned successfully."
 msgid_plural "%s files rescanned successfully."
@@ -5139,8 +5140,8 @@ msgstr[0] "%s файл успешно перепроверен."
 msgstr[1] "%s файла успешно перепроверены."
 msgstr[2] "%s файлов успешно перепроверены."
 
-#: concrete/controllers/backend/file.php:70
-#: concrete/controllers/backend/file.php:83
+#: concrete/controllers/backend/file.php:77
+#: concrete/controllers/backend/file.php:90
 msgid "Invalid file version."
 msgstr "Неверная версия файла."
 
@@ -5850,6 +5851,10 @@ msgstr "Не удалось скопировать директорию %s в %s
 msgid "%s (Retina Version)"
 msgstr "%s (для дисплея retina)"
 
+#: concrete/src/File/StorageLocation/Type/Type.php:205
+msgid "Please remove all storage locations using this storage type."
+msgstr ""
+
 #: concrete/src/File/StorageLocation/Configuration/LocalConfiguration.php:73
 msgid "You must include a root path for this storage location."
 msgstr "Необходимо указать корневой путь для этого хранилища. "
@@ -6487,118 +6492,123 @@ msgid ""
 "5.7."
 msgstr "Невозможно установить %s. Проверьте, что этот пакет был обновлен для работы с concrete версии 5.7."
 
-#: concrete/src/Package/Package.php:324
+#: concrete/src/Package/Package.php:326
 msgid "Attribute categories"
 msgstr "Категории атрибутов."
 
-#: concrete/src/Package/Package.php:327
+#: concrete/src/Package/Package.php:329
 msgid "Permission categories"
 msgstr "Категории прав"
 
-#: concrete/src/Package/Package.php:330
+#: concrete/src/Package/Package.php:332
 msgid "Permission access entity types"
 msgstr "Типы прав доступа"
 
-#: concrete/src/Package/Package.php:333
+#: concrete/src/Package/Package.php:335
 msgid "Attribute keys"
 msgstr "Ключи атрибутов"
 
-#: concrete/src/Package/Package.php:336
+#: concrete/src/Package/Package.php:338
 msgid "Attribute sets"
 msgstr "Наборы атрибутов"
 
-#: concrete/src/Package/Package.php:339
+#: concrete/src/Package/Package.php:341
 msgid "Group sets"
 msgstr "Наборы групп"
 
-#: concrete/src/Package/Package.php:342
+#: concrete/src/Package/Package.php:344
 msgid "Page types"
 msgstr "Типы страниц"
 
-#: concrete/src/Package/Package.php:345
+#: concrete/src/Package/Package.php:347
 msgid "Mail importers"
 msgstr "Сборщики почты"
 
-#: concrete/src/Package/Package.php:348
+#: concrete/src/Package/Package.php:350
 msgid "Block types"
 msgstr "Типы блоков"
 
-#: concrete/src/Package/Package.php:351
+#: concrete/src/Package/Package.php:353
 msgid "Page themes"
 msgstr "Темы страниц"
 
-#: concrete/src/Package/Package.php:357
+#: concrete/src/Package/Package.php:359
 msgid "Single pages"
 msgstr "Одиночные страницы"
 
-#: concrete/src/Package/Package.php:360
+#: concrete/src/Package/Package.php:362
 msgid "Attribute types"
 msgstr "Типы атрибутов"
 
-#: concrete/src/Package/Package.php:363
+#: concrete/src/Package/Package.php:365
 msgid "Captcha libraries"
 msgstr "Библиотека Captcha"
 
-#: concrete/src/Package/Package.php:366
+#: concrete/src/Package/Package.php:368
 msgid "Antispam libraries"
 msgstr "Библиотека антиспама"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:39
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:299
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:418
-#: concrete/src/Package/Package.php:369
+#: concrete/src/Package/Package.php:371
 msgid "Jobs"
 msgstr "Задачи"
 
-#: concrete/src/Package/Package.php:372
+#: concrete/src/Package/Package.php:374
 msgid "Workflow types"
 msgstr "Типы рабочих процессов"
 
-#: concrete/src/Package/Package.php:429
+#: concrete/single_pages/dashboard/system/files/storage.php:99
+#: concrete/src/Package/Package.php:377
+msgid "Storage Locations"
+msgstr "Местонахождение хранилища"
+
+#: concrete/src/Package/Package.php:434
 #, php-format
 msgid "%s (%s)"
 msgstr "%s (%s)"
 
-#: concrete/src/Package/Package.php:435
+#: concrete/src/Package/Package.php:440
 #, php-format
 msgid " %s (%s)"
 msgstr " %s (%s)"
 
-#: concrete/src/Package/Package.php:651
+#: concrete/src/Package/Package.php:658
 msgid "You've already installed that package."
 msgstr "Этот пакет уже установлен."
 
-#: concrete/src/Package/Package.php:652
+#: concrete/src/Package/Package.php:659
 msgid "Invalid Package."
 msgstr "Неправильный пакет."
 
-#: concrete/src/Package/Package.php:653
+#: concrete/src/Package/Package.php:660
 #, php-format
 msgid "This package requires concrete5 version %s or greater."
 msgstr "Для установки пакета требуется версия concrete5 %s или выше."
 
-#: concrete/src/Package/Package.php:654
+#: concrete/src/Package/Package.php:661
 msgid "An error occurred while downloading the package."
 msgstr "Произошла ошибка в процессе загрузки пакета."
 
-#: concrete/src/Package/Package.php:655
+#: concrete/src/Package/Package.php:662
 msgid "concrete5 was not able to save the package after download."
 msgstr "CMS concrete5 не смогла сохранить пакет после скачивания."
 
-#: concrete/src/Package/Package.php:656
+#: concrete/src/Package/Package.php:663
 msgid "An error occurred while trying to unzip the package."
 msgstr "Произошла ошибка в процессе распаковки пакета."
 
-#: concrete/src/Package/Package.php:657
+#: concrete/src/Package/Package.php:664
 msgid "An error occurred while trying to install the package."
 msgstr "Произошла ошибка в процессе установки пакета."
 
-#: concrete/src/Package/Package.php:658
+#: concrete/src/Package/Package.php:665
 #, php-format
 msgid "Unable to backup old package directory to %s"
 msgstr "Невозможно создать резервную копию старой директории пакетов в %s"
 
-#: concrete/src/Package/Package.php:659
+#: concrete/src/Package/Package.php:666
 msgid ""
 "This package isn't currently available for this version of concrete5. Please"
 " contact the maintainer of this package for assistance."
@@ -9700,10 +9710,6 @@ msgstr "ID версии файла"
 #: concrete/views/dialogs/file/properties.php:273
 msgid "Deleted User"
 msgstr "Пользователь удален"
-
-#: concrete/views/dialogs/file/properties.php:340
-msgid "File rescanned successfully."
-msgstr "Файл успешно перепроверен."
 
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:114
 #: concrete/views/dialogs/file/thumbnails.php:13
@@ -13912,10 +13918,6 @@ msgid ""
 "Delete this storage location? All files using it will have their storage "
 "location reset to the default."
 msgstr "Удалить это хранилище? Все файлы, относящиеся к нему, будут перенесены в хранилище по умолчанию."
-
-#: concrete/single_pages/dashboard/system/files/storage.php:99
-msgid "Storage Locations"
-msgstr "Местонахождение хранилища"
 
 #: concrete/single_pages/dashboard/system/files/storage.php:109
 msgid "Add Location"
