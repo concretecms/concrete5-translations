@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-12-06 05:00+0000\n"
-"PO-Revision-Date: 2014-12-06 10:01+0000\n"
+"POT-Creation-Date: 2014-12-09 05:00+0000\n"
+"PO-Revision-Date: 2014-12-09 10:03+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Malayalam (India) (http://www.transifex.com/projects/p/concrete5/language/ml_IN/)\n"
 "MIME-Version: 1.0\n"
@@ -741,7 +741,7 @@ msgstr ""
 msgid "Replace"
 msgstr ""
 
-#: concrete/tools/files/import.php:103 concrete/tools/files/replace.php:49
+#: concrete/tools/files/replace.php:49
 #, php-format
 msgid "No files found in %s"
 msgstr ""
@@ -753,22 +753,26 @@ msgstr ""
 #: concrete/blocks/image/tools/composer_save.php:5
 #: concrete/blocks/image/tools/crop_image.php:5
 #: concrete/controllers/backend/file.php:121
-#: concrete/tools/files/import.php:10
+#: concrete/tools/files/import.php:12
 #: concrete/tools/files/importers/incoming.php:8
 #: concrete/tools/files/importers/remote.php:11
 #: concrete/tools/files/importers/single.php:12
 msgid "Unable to add files."
 msgstr ""
 
-#: concrete/tools/files/import.php:24
+#: concrete/tools/files/import.php:26
 msgid "Add Incoming"
 msgstr ""
 
-#: concrete/tools/files/import.php:25
+#: concrete/tools/files/import.php:27
 msgid "Add Remote Files"
 msgstr ""
 
-#: concrete/tools/files/import.php:73
+#: concrete/tools/files/import.php:68
+msgid "Unable to get contents of incoming/ directory"
+msgstr ""
+
+#: concrete/tools/files/import.php:82
 #: concrete/views/dialogs/file/properties.php:40
 #: concrete/views/dialogs/file/properties.php:179
 msgid "Filename"
@@ -776,14 +780,19 @@ msgstr ""
 
 #: concrete/controllers/search/files.php:237
 #: concrete/src/File/Search/ColumnSet/DefaultSet.php:30
-#: concrete/tools/files/import.php:74 concrete/tools/i18n_js.php:97
+#: concrete/tools/files/import.php:83 concrete/tools/i18n_js.php:97
 #: concrete/views/dialogs/file/properties.php:80
 #: concrete/views/image-editor/filters/vignette.php:14
 msgid "Size"
 msgstr ""
 
-#: concrete/tools/files/import.php:92
+#: concrete/tools/files/import.php:101
 msgid "Remove files from incoming/ directory."
+msgstr ""
+
+#: concrete/tools/files/import.php:117
+#, php-format
+msgid "No files found in %s for the storage location \"%s\"."
 msgstr ""
 
 #: concrete/attributes/select/type_form.php:34
@@ -844,7 +853,7 @@ msgstr ""
 #: concrete/tools/dashboard/sitemap_drag_request.php:226
 #: concrete/tools/dashboard/sitemap_drag_request.php:228
 #: concrete/tools/files/delete.php:91 concrete/tools/files/duplicate.php:120
-#: concrete/tools/files/import.php:108 concrete/tools/files/permissions.php:81
+#: concrete/tools/files/import.php:123 concrete/tools/files/permissions.php:81
 #: concrete/tools/files/permissions.php:110
 #: concrete/tools/gathering/item/delete.php:27 concrete/tools/i18n_js.php:10
 #: concrete/tools/i18n_redactor_js.php:42
@@ -891,11 +900,11 @@ msgid "Cancel"
 msgstr ""
 
 #: concrete/single_pages/dashboard/files/search.php:21
-#: concrete/tools/files/import.php:109
+#: concrete/tools/files/import.php:124
 msgid "Add Files"
 msgstr ""
 
-#: concrete/tools/files/import.php:116
+#: concrete/tools/files/import.php:131
 msgid "Enter URL to valid file(s)"
 msgstr ""
 
@@ -1039,9 +1048,9 @@ msgstr ""
 msgid "Unable to copy one or more files."
 msgstr ""
 
-#: concrete/blocks/form/controller.php:333
+#: concrete/blocks/form/controller.php:334
 #: concrete/controllers/backend/user_interface/file.php:20
-#: concrete/src/File/Importer.php:36 concrete/tools/files/duplicate.php:43
+#: concrete/src/File/Importer.php:41 concrete/tools/files/duplicate.php:43
 msgid "Invalid file."
 msgstr ""
 
@@ -4112,15 +4121,19 @@ msgstr ""
 msgid "Advanced permissions enabled."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/system/permissions/antispam.php:12
+#: concrete/controllers/single_page/dashboard/system/permissions/antispam.php:13
 msgid "** None Activated"
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/system/permissions/antispam.php:32
+#: concrete/controllers/single_page/dashboard/system/permissions/antispam.php:22
+msgid "** None Selected"
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/permissions/antispam.php:36
 msgid "Anti-spam settings saved."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/system/permissions/antispam.php:60
+#: concrete/controllers/single_page/dashboard/system/permissions/antispam.php:64
 msgid "Invalid anti-spam library."
 msgstr ""
 
@@ -5895,31 +5908,32 @@ msgstr ""
 msgid "File"
 msgstr ""
 
-#: concrete/blocks/form/controller.php:330 concrete/src/File/Importer.php:39
+#: concrete/blocks/form/controller.php:331 concrete/src/File/Importer.php:44
 msgid "Invalid file extension."
 msgstr ""
 
-#: concrete/src/File/Importer.php:42
+#: concrete/src/File/Importer.php:47
 msgid "The file was only partially uploaded."
 msgstr ""
 
-#: concrete/src/File/Importer.php:45
+#: concrete/src/File/Importer.php:50
 msgid "No default file storage location could be found to store this file."
 msgstr ""
 
-#: concrete/src/File/Importer.php:49
+#: concrete/src/File/Importer.php:54
 #, php-format
 msgid ""
 "Uploaded file is too large. The current value of upload_max_filesize is %s"
 msgstr ""
 
-#: concrete/src/File/Importer.php:52
+#: concrete/src/File/Importer.php:57
+#, php-format
 msgid ""
-"Unable to copy file to storage directory. Please check permissions on your "
-"upload directory and ensure they can be written to by your web server."
+"Unable to copy file to storage location \"%s\". Please check the settings "
+"for the storage location."
 msgstr ""
 
-#: concrete/src/File/Importer.php:56
+#: concrete/src/File/Importer.php:61
 #, php-format
 msgid ""
 "An unknown error occurred while uploading the file. Please check that file uploads are enabled, and that your file does not exceed the size of the post_max_size or upload_max_filesize variables.\n"
@@ -6380,64 +6394,64 @@ msgid "Date"
 msgstr ""
 
 #. Detailed debug information
-#: concrete/src/Logging/Logger.php:100
+#: concrete/src/Logging/Logger.php:101
 msgctxt "Log level"
 msgid "Debug"
 msgstr ""
 
 #. Interesting events
-#: concrete/src/Logging/Logger.php:102
+#: concrete/src/Logging/Logger.php:103
 msgctxt "Log level"
 msgid "Info"
 msgstr ""
 
 #. Uncommon events
-#: concrete/src/Logging/Logger.php:104
+#: concrete/src/Logging/Logger.php:105
 msgctxt "Log level"
 msgid "Notice"
 msgstr ""
 
 #. Exceptional occurrences that are not errors
-#: concrete/src/Logging/Logger.php:106
+#: concrete/src/Logging/Logger.php:107
 msgctxt "Log level"
 msgid "Warning"
 msgstr ""
 
 #. Runtime errors
-#: concrete/src/Logging/Logger.php:108
+#: concrete/src/Logging/Logger.php:109
 msgctxt "Log level"
 msgid "Error"
 msgstr ""
 
 #. Critical conditions
-#: concrete/src/Logging/Logger.php:110
+#: concrete/src/Logging/Logger.php:111
 msgctxt "Log level"
 msgid "Critical"
 msgstr ""
 
 #. Action must be taken immediately
-#: concrete/src/Logging/Logger.php:112
+#: concrete/src/Logging/Logger.php:113
 msgctxt "Log level"
 msgid "Alert"
 msgstr ""
 
 #. Urgent alert
-#: concrete/src/Logging/Logger.php:114
+#: concrete/src/Logging/Logger.php:115
 msgctxt "Log level"
 msgid "Emergency"
 msgstr ""
 
-#: concrete/src/Logging/Logger.php:123
+#: concrete/src/Logging/Logger.php:124
 msgctxt "Log channel"
 msgid "Application"
 msgstr ""
 
-#: concrete/src/Logging/Logger.php:125
+#: concrete/src/Logging/Logger.php:126
 msgctxt "Log channel"
 msgid "Sent Emails"
 msgstr ""
 
-#: concrete/src/Logging/Logger.php:127
+#: concrete/src/Logging/Logger.php:128
 msgctxt "Log channel"
 msgid "Exceptions"
 msgstr ""
@@ -11487,67 +11501,67 @@ msgstr ""
 msgid "Form Captcha"
 msgstr ""
 
-#: concrete/blocks/form/controller.php:32
+#: concrete/blocks/form/controller.php:33
 msgid "Build simple forms and surveys."
 msgstr ""
 
-#: concrete/blocks/form/controller.php:36
+#: concrete/blocks/form/controller.php:37
 #: concrete/single_pages/dashboard/reports/forms.php:87
 msgid "Form"
 msgstr ""
 
-#: concrete/blocks/form/controller.php:41
+#: concrete/blocks/form/controller.php:42
 msgid "Are you sure you want to delete this question?"
 msgstr ""
 
-#: concrete/blocks/form/controller.php:42
+#: concrete/blocks/form/controller.php:43
 msgid "Your form must have a name."
 msgstr ""
 
-#: concrete/blocks/form/controller.php:43
+#: concrete/blocks/form/controller.php:44
 msgid "Please complete all required fields."
 msgstr ""
 
-#: concrete/blocks/form/controller.php:44
+#: concrete/blocks/form/controller.php:45
 msgid "AJAX Error."
 msgstr ""
 
-#: concrete/blocks/form/controller.php:45
+#: concrete/blocks/form/controller.php:46
 msgid "Please add at least one question to your form."
 msgstr ""
 
 #: concrete/blocks/external_form/form/controller/test_form.php:10
-#: concrete/blocks/form/controller.php:104
+#: concrete/blocks/form/controller.php:105
 msgid "Thanks!"
 msgstr ""
 
-#: concrete/blocks/form/controller.php:263
+#: concrete/blocks/form/controller.php:264
 msgid ""
 "Oops, something is wrong with the form you posted (it doesn't have a "
 "question set id)."
 msgstr ""
 
-#: concrete/blocks/form/controller.php:272
+#: concrete/blocks/form/controller.php:273
 msgid "Incorrect captcha code"
 msgstr ""
 
-#: concrete/blocks/form/controller.php:292
+#: concrete/blocks/form/controller.php:293
 msgid "You must enter a valid email address."
 msgstr ""
 
-#: concrete/blocks/form/controller.php:309
+#: concrete/blocks/form/controller.php:310
 msgid "Complete required fields *"
 msgstr ""
 
-#: concrete/blocks/form/controller.php:351
+#: concrete/blocks/form/controller.php:352
 msgid "Please correct the following errors:"
 msgstr ""
 
-#: concrete/blocks/form/controller.php:397
+#: concrete/blocks/form/controller.php:398
 msgid "No file specified"
 msgstr ""
 
-#: concrete/blocks/form/controller.php:465
+#: concrete/blocks/form/controller.php:466
 #, php-format
 msgid "%s Form Submission"
 msgstr ""
