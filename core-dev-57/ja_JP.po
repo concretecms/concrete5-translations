@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-12-09 05:00+0000\n"
-"PO-Revision-Date: 2014-12-09 11:11+0000\n"
+"POT-Creation-Date: 2014-12-10 05:00+0000\n"
+"PO-Revision-Date: 2014-12-10 10:21+0000\n"
 "Last-Translator: Takuro Hishikawa <hishikawa@concrete5.co.jp>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/projects/p/concrete5/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
@@ -692,7 +692,7 @@ msgstr "保存"
 #: concrete/tools/edit_area_popup.php:27 concrete/tools/edit_area_popup.php:67
 #: concrete/tools/edit_collection_popup.php:39
 #: concrete/tools/files/edit.php:12 concrete/tools/files/permissions.php:12
-#: concrete/tools/files/replace.php:12
+#: concrete/tools/files/replace.php:13
 #: concrete/tools/files/selector_data.php:22 concrete/tools/files/star.php:8
 #: concrete/tools/files/view.php:18 concrete/tools/pile_manager.php:10
 #: concrete/tools/sitemap_search_selector.php:5
@@ -731,29 +731,41 @@ msgstr "要求されたファイルが見つかりませんでした。"
 msgid "An unexpected error occurred while looking for the requested file"
 msgstr "要求されたファイルの取得時に予期しないエラーが発生しました"
 
-#: concrete/tools/files/replace.php:22
+#: concrete/tools/files/replace.php:22 concrete/tools/files/replace.php:43
 msgid "Add From Computer"
 msgstr "コンピューターから追加"
 
-#: concrete/tools/files/replace.php:26 concrete/tools/i18n_redactor_js.php:70
+#: concrete/tools/files/replace.php:23
+msgid "Add From Incoming"
+msgstr "入稿用ディレクトリから追加"
+
+#: concrete/tools/files/import.php:27 concrete/tools/files/replace.php:24
+msgid "Add Remote Files"
+msgstr "リモートファイルを追加"
+
+#: concrete/tools/files/replace.php:47 concrete/tools/i18n_redactor_js.php:70
 msgid "Upload"
 msgstr "アップロード"
 
-#: concrete/tools/files/replace.php:32
+#: concrete/tools/files/replace.php:53
 msgid "Add from Incoming Directory"
 msgstr "入稿用ディレクトリーからの追加"
 
-#: concrete/tools/files/replace.php:44 concrete/tools/files/replace.php:65
+#: concrete/tools/files/import.php:68 concrete/tools/files/replace.php:62
+msgid "Unable to get contents of incoming/ directory"
+msgstr "incoming/ ディレクトリのコンテンツを取得できません"
+
+#: concrete/tools/files/replace.php:73 concrete/tools/files/replace.php:99
 #: concrete/tools/i18n_js.php:195
 msgid "Replace"
 msgstr "置き換え"
 
-#: concrete/tools/files/replace.php:49
+#: concrete/tools/files/import.php:117 concrete/tools/files/replace.php:83
 #, php-format
-msgid "No files found in %s"
-msgstr "%s 上にはファイルがありません"
+msgid "No files found in %s for the storage location \"%s\"."
+msgstr "%s にファイルが見つかりません（ファイル保存場所：%s）。"
 
-#: concrete/tools/files/replace.php:55
+#: concrete/tools/files/replace.php:89
 msgid "Add from Remote URL"
 msgstr "URLを指定してファイルを追加"
 
@@ -770,14 +782,6 @@ msgstr "ファイルを追加できません。"
 #: concrete/tools/files/import.php:26
 msgid "Add Incoming"
 msgstr "サーバーから追加"
-
-#: concrete/tools/files/import.php:27
-msgid "Add Remote Files"
-msgstr "リモートファイルを追加"
-
-#: concrete/tools/files/import.php:68
-msgid "Unable to get contents of incoming/ directory"
-msgstr "incoming/ ディレクトリのコンテンツを取得できません"
 
 #: concrete/tools/files/import.php:82
 #: concrete/views/dialogs/file/properties.php:40
@@ -796,11 +800,6 @@ msgstr "サイズ"
 #: concrete/tools/files/import.php:101
 msgid "Remove files from incoming/ directory."
 msgstr "サーバーの入稿用ディレクトリー上のファイルを削除"
-
-#: concrete/tools/files/import.php:117
-#, php-format
-msgid "No files found in %s for the storage location \"%s\"."
-msgstr "%s にファイルが見つかりません（ファイル保存場所：%s）。"
 
 #: concrete/attributes/select/type_form.php:34
 #: concrete/blocks/core_area_layout/form.php:69
@@ -1109,7 +1108,7 @@ msgstr "これらのファイルを削除してよろしいですか？"
 #: concrete/elements/page_controls_footer.php:130
 #: concrete/elements/pages/search.php:32
 #: concrete/single_pages/account/messages/inbox.php:51
-#: concrete/single_pages/dashboard/conversations/messages.php:140
+#: concrete/single_pages/dashboard/conversations/messages.php:142
 #: concrete/single_pages/dashboard/pages/types/view.php:48
 #: concrete/single_pages/dashboard/pages/types/view.php:99
 #: concrete/single_pages/dashboard/reports/forms.php:141
@@ -4334,57 +4333,57 @@ msgstr "ツリー名を正しく入力してください。"
 msgid "You do not have permission to add this tree."
 msgstr "このツリーを追加する権限がありません。"
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:39
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:40
 msgid "Tree added successfully."
 msgstr "ツリーが正常に追加されました。"
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:50
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:115
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:51
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:116
 msgid "Invalid title for category"
 msgstr "無効なカテゴリーのタイトル"
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:54
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:148
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:55
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:149
 msgid "Invalid parent category"
 msgstr "無効な親カテゴリー"
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:59
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:60
 msgid "You may not add a category here."
 msgstr "カテゴリーをここに追加する権限がありません。"
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:81
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:111
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:201
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:82
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:112
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:202
 msgid "Invalid node."
 msgstr "無効なノードです。"
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:85
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:144
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:86
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:145
 msgid "Invalid title for topic"
 msgstr "無効なトピックのタイトル"
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:90
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:120
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:91
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:121
 msgid "You may not edit this node."
 msgstr "このノードを編集する権限がありません。"
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:153
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:154
 msgid "You may not add a topic here."
 msgstr "トピックをここに追加する権限がありません。"
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:174
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:175
 msgid "Tree deleted successfully."
 msgstr "ツリーが正常に削除されました。"
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:205
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:206
 msgid "You may not remove the top level node."
 msgstr "トップレベルのノードを削除することはできません。"
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:210
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:211
 msgid "You may not remove this node."
 msgstr "このノードを削除する権限がありません。"
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:214
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:215
 msgid "Invalid tree type."
 msgstr "無効なツリータイプです。"
 
@@ -6064,12 +6063,13 @@ msgstr "Captchaをクリックすると違う文字候補が出てきます。"
 msgid "Please type the letters and numbers shown in the image."
 msgstr "画像中の文字と数字を入力してください。"
 
-#: concrete/src/Tree/Node/Type/Category.php:11
+#: concrete/src/Tree/Node/Type/Category.php:24
+#: concrete/src/Tree/Node/Type/TopicCategory.php:22
 msgid "Categories"
 msgstr "カテゴリー"
 
 #: concrete/elements/permission/keys/assign_user_groups.php:31
-#: concrete/src/Tree/Node/Type/Group.php:35
+#: concrete/src/Tree/Node/Type/Group.php:42
 msgid "All Groups"
 msgstr "すべてのグループ"
 
@@ -7002,7 +7002,7 @@ msgstr "コメント: \"%s\""
 msgid "Originally requested by %s."
 msgstr "リクエスト申請者： %s"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:133
+#: concrete/single_pages/dashboard/conversations/messages.php:135
 #: concrete/src/Workflow/Progress/Action/ApprovalAction.php:6
 #: concrete/views/panels/page/versions.php:32
 msgid "Approve"
@@ -7833,6 +7833,10 @@ msgstr "マーケットプレイストークンを生成できませんでした
 #: concrete/src/Marketplace/Marketplace.php:261
 msgid "Unable to get information about this product."
 msgstr "この製品に関する情報が取得できません。"
+
+#: concrete/src/Search/ItemList/Database/ItemList.php:75
+msgid "Invalid SQL in order by"
+msgstr "SQLの order by に不正な語句"
 
 #: concrete/src/Search/ItemList/Database/AttributedItemList.php:43
 #, php-format
@@ -12986,49 +12990,49 @@ msgstr "メッセージは現在承認待ちです。"
 msgid "By Anonymous"
 msgstr "匿名で"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:124
+#: concrete/single_pages/dashboard/conversations/messages.php:125
 msgid "View full message."
 msgstr "すべてのメッセージを表示する。"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:124
+#: concrete/single_pages/dashboard/conversations/messages.php:125
 msgid "Minimize message"
 msgstr "メッセージを最小化"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:131
+#: concrete/single_pages/dashboard/conversations/messages.php:133
 msgid "Unapprove"
 msgstr "承認取り消し"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:138
+#: concrete/single_pages/dashboard/conversations/messages.php:140
 #: concrete/single_pages/dashboard/system/backup/backup.php:113
 msgid "Restore"
 msgstr "リストア"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:144
+#: concrete/single_pages/dashboard/conversations/messages.php:146
 msgid "Unmark as spam"
 msgstr "スパム判定を解除"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:146
+#: concrete/single_pages/dashboard/conversations/messages.php:148
 msgid "Mark as spam"
 msgstr "スパムとして判定する"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:150
+#: concrete/single_pages/dashboard/conversations/messages.php:152
 msgid "Mark all user posts as spam"
 msgstr "ユーザーの投稿すべてをスパムとして判定する"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:154
+#: concrete/single_pages/dashboard/conversations/messages.php:156
 #: concrete/single_pages/dashboard/users/search.php:27
 msgid "Deactivate User"
 msgstr "アカウント停止"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:156
+#: concrete/single_pages/dashboard/conversations/messages.php:158
 msgid "User deactivated"
 msgstr "無効なユーザー"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:161
+#: concrete/single_pages/dashboard/conversations/messages.php:163
 msgid "Block user IP Address"
 msgstr "ユーザーのIPアドレスをブロック"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:163
+#: concrete/single_pages/dashboard/conversations/messages.php:165
 msgid "IP Banned"
 msgstr "禁止 IP"
 

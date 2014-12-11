@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-12-09 05:00+0000\n"
-"PO-Revision-Date: 2014-12-09 10:32+0000\n"
+"POT-Creation-Date: 2014-12-10 05:00+0000\n"
+"PO-Revision-Date: 2014-12-10 11:39+0000\n"
 "Last-Translator: Torsten Silbermann <mail@tsilbermann.de>\n"
 "Language-Team: German (Germany) (http://www.transifex.com/projects/p/concrete5/language/de_DE/)\n"
 "MIME-Version: 1.0\n"
@@ -689,7 +689,7 @@ msgstr "Speichern"
 #: concrete/tools/edit_area_popup.php:27 concrete/tools/edit_area_popup.php:67
 #: concrete/tools/edit_collection_popup.php:39
 #: concrete/tools/files/edit.php:12 concrete/tools/files/permissions.php:12
-#: concrete/tools/files/replace.php:12
+#: concrete/tools/files/replace.php:13
 #: concrete/tools/files/selector_data.php:22 concrete/tools/files/star.php:8
 #: concrete/tools/files/view.php:18 concrete/tools/pile_manager.php:10
 #: concrete/tools/sitemap_search_selector.php:5
@@ -728,29 +728,41 @@ msgstr "Die angeforderte Datei konnte nicht gefunden werden."
 msgid "An unexpected error occurred while looking for the requested file"
 msgstr "Bei der Suche nach der angeforderten Datei ist ein Fehler aufgetreten."
 
-#: concrete/tools/files/replace.php:22
+#: concrete/tools/files/replace.php:22 concrete/tools/files/replace.php:43
 msgid "Add From Computer"
 msgstr "Vom Computer hinzufügen"
 
-#: concrete/tools/files/replace.php:26 concrete/tools/i18n_redactor_js.php:70
+#: concrete/tools/files/replace.php:23
+msgid "Add From Incoming"
+msgstr "Vom Server importieren hinzufügen."
+
+#: concrete/tools/files/import.php:27 concrete/tools/files/replace.php:24
+msgid "Add Remote Files"
+msgstr "Per URL importieren"
+
+#: concrete/tools/files/replace.php:47 concrete/tools/i18n_redactor_js.php:70
 msgid "Upload"
 msgstr "Hochladen"
 
-#: concrete/tools/files/replace.php:32
+#: concrete/tools/files/replace.php:53
 msgid "Add from Incoming Directory"
 msgstr "Aus dem incoming-Verzeichnis hinzufügen"
 
-#: concrete/tools/files/replace.php:44 concrete/tools/files/replace.php:65
+#: concrete/tools/files/import.php:68 concrete/tools/files/replace.php:62
+msgid "Unable to get contents of incoming/ directory"
+msgstr "Es ist nicht möglich, Inhalte vom incoming/ Verzeichnis zu laden."
+
+#: concrete/tools/files/replace.php:73 concrete/tools/files/replace.php:99
 #: concrete/tools/i18n_js.php:195
 msgid "Replace"
 msgstr "Ersetzen"
 
-#: concrete/tools/files/replace.php:49
+#: concrete/tools/files/import.php:117 concrete/tools/files/replace.php:83
 #, php-format
-msgid "No files found in %s"
-msgstr "Keine Dateien gefunden in %s"
+msgid "No files found in %s for the storage location \"%s\"."
+msgstr "Für den Dateispeicherort \"%s\" wurden in %s keine Dateien gefunden."
 
-#: concrete/tools/files/replace.php:55
+#: concrete/tools/files/replace.php:89
 msgid "Add from Remote URL"
 msgstr "Von URL hinzufügen"
 
@@ -767,14 +779,6 @@ msgstr "Dateien konnten nicht hinzugefügt werden."
 #: concrete/tools/files/import.php:26
 msgid "Add Incoming"
 msgstr "Von Server importieren"
-
-#: concrete/tools/files/import.php:27
-msgid "Add Remote Files"
-msgstr "Per URL importieren"
-
-#: concrete/tools/files/import.php:68
-msgid "Unable to get contents of incoming/ directory"
-msgstr "Es ist nicht möglich, Inhalte vom incoming/ Verzeichnis zu laden."
 
 #: concrete/tools/files/import.php:82
 #: concrete/views/dialogs/file/properties.php:40
@@ -793,11 +797,6 @@ msgstr "Größe"
 #: concrete/tools/files/import.php:101
 msgid "Remove files from incoming/ directory."
 msgstr "Dateien von incoming-Verzeichnis löschen"
-
-#: concrete/tools/files/import.php:117
-#, php-format
-msgid "No files found in %s for the storage location \"%s\"."
-msgstr "Für den Dateispeicherort \"%s\" wurden in %s keine Dateien gefunden."
 
 #: concrete/attributes/select/type_form.php:34
 #: concrete/blocks/core_area_layout/form.php:69
@@ -1108,7 +1107,7 @@ msgstr "Sollen die folgenden Dateien wirklich gelöscht werden?"
 #: concrete/elements/page_controls_footer.php:130
 #: concrete/elements/pages/search.php:32
 #: concrete/single_pages/account/messages/inbox.php:51
-#: concrete/single_pages/dashboard/conversations/messages.php:140
+#: concrete/single_pages/dashboard/conversations/messages.php:142
 #: concrete/single_pages/dashboard/pages/types/view.php:48
 #: concrete/single_pages/dashboard/pages/types/view.php:99
 #: concrete/single_pages/dashboard/reports/forms.php:141
@@ -4337,57 +4336,57 @@ msgstr "Für den Katalog muss ein gültiger Name angegeben werden."
 msgid "You do not have permission to add this tree."
 msgstr "Sie haben keine Berechtigungen, diesen Katalog hinzuzufügen."
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:39
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:40
 msgid "Tree added successfully."
 msgstr "Katalog wurde hinzugefügt."
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:50
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:115
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:51
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:116
 msgid "Invalid title for category"
 msgstr "Ungültiger Titel für Kategorie"
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:54
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:148
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:55
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:149
 msgid "Invalid parent category"
 msgstr "Ungültige übergeordnete Kategorie"
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:59
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:60
 msgid "You may not add a category here."
 msgstr "Sie können hier keine Kategorie hinzufügen."
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:81
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:111
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:201
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:82
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:112
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:202
 msgid "Invalid node."
 msgstr "Ungültige Verzweigung"
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:85
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:144
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:86
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:145
 msgid "Invalid title for topic"
 msgstr "Ungültiger Titel für Thema"
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:90
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:120
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:91
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:121
 msgid "You may not edit this node."
 msgstr "Diese Verzweigung kann nicht bearbeitet werden."
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:153
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:154
 msgid "You may not add a topic here."
 msgstr "Sie können hier kein Thema hinzufügen."
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:174
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:175
 msgid "Tree deleted successfully."
 msgstr "Der Katalog wurde gelöscht."
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:205
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:206
 msgid "You may not remove the top level node."
 msgstr "Diese Verzweigung der obersten Ebene kann nicht entfernt werden."
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:210
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:211
 msgid "You may not remove this node."
 msgstr "Diese Verzweigung kann nicht entfernt werden."
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:214
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:215
 msgid "Invalid tree type."
 msgstr "Ungültiger Katalogtyp."
 
@@ -6071,12 +6070,13 @@ msgstr "Bitte klicken Sie das Bild an, um einen neuen Sicherheitscode zu laden."
 msgid "Please type the letters and numbers shown in the image."
 msgstr "Bitte die Buchstaben/Ziffern vom Bild im Feld eintragen."
 
-#: concrete/src/Tree/Node/Type/Category.php:11
+#: concrete/src/Tree/Node/Type/Category.php:24
+#: concrete/src/Tree/Node/Type/TopicCategory.php:22
 msgid "Categories"
 msgstr "Kategorien"
 
 #: concrete/elements/permission/keys/assign_user_groups.php:31
-#: concrete/src/Tree/Node/Type/Group.php:35
+#: concrete/src/Tree/Node/Type/Group.php:42
 msgid "All Groups"
 msgstr "Alle Gruppen"
 
@@ -7009,7 +7009,7 @@ msgstr " mit den Hinweisen \"%s\""
 msgid "Originally requested by %s."
 msgstr "Ursprünglich von %s angefordert"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:133
+#: concrete/single_pages/dashboard/conversations/messages.php:135
 #: concrete/src/Workflow/Progress/Action/ApprovalAction.php:6
 #: concrete/views/panels/page/versions.php:32
 msgid "Approve"
@@ -7850,6 +7850,10 @@ msgstr "Ein Marketplace-Schlüssel konnte nicht generiert werden. Stellen Sie si
 #: concrete/src/Marketplace/Marketplace.php:261
 msgid "Unable to get information about this product."
 msgstr "Keine Informationen zu diesem Produkt verfügbar."
+
+#: concrete/src/Search/ItemList/Database/ItemList.php:75
+msgid "Invalid SQL in order by"
+msgstr "Ungültiges SQL, sortiert nach"
 
 #: concrete/src/Search/ItemList/Database/AttributedItemList.php:43
 #, php-format
@@ -13008,49 +13012,49 @@ msgstr "Die Freigabe für die Nachricht steht noch aus."
 msgid "By Anonymous"
 msgstr "Von anonym"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:124
+#: concrete/single_pages/dashboard/conversations/messages.php:125
 msgid "View full message."
 msgstr "Gesamte Nachricht anzeigen"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:124
+#: concrete/single_pages/dashboard/conversations/messages.php:125
 msgid "Minimize message"
 msgstr "Nachricht minimieren"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:131
+#: concrete/single_pages/dashboard/conversations/messages.php:133
 msgid "Unapprove"
 msgstr "Ablehnen"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:138
+#: concrete/single_pages/dashboard/conversations/messages.php:140
 #: concrete/single_pages/dashboard/system/backup/backup.php:113
 msgid "Restore"
 msgstr "Wiederherstellen"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:144
+#: concrete/single_pages/dashboard/conversations/messages.php:146
 msgid "Unmark as spam"
 msgstr "Nicht mehr als Spam markieren"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:146
+#: concrete/single_pages/dashboard/conversations/messages.php:148
 msgid "Mark as spam"
 msgstr "Als Spam markieren"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:150
+#: concrete/single_pages/dashboard/conversations/messages.php:152
 msgid "Mark all user posts as spam"
 msgstr "Alle Benutzerposts als Spam markieren."
 
-#: concrete/single_pages/dashboard/conversations/messages.php:154
+#: concrete/single_pages/dashboard/conversations/messages.php:156
 #: concrete/single_pages/dashboard/users/search.php:27
 msgid "Deactivate User"
 msgstr "Benutzer deaktivieren"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:156
+#: concrete/single_pages/dashboard/conversations/messages.php:158
 msgid "User deactivated"
 msgstr "Benutzer deaktiviert."
 
-#: concrete/single_pages/dashboard/conversations/messages.php:161
+#: concrete/single_pages/dashboard/conversations/messages.php:163
 msgid "Block user IP Address"
 msgstr "IP-Adresse des Benutzers blockieren."
 
-#: concrete/single_pages/dashboard/conversations/messages.php:163
+#: concrete/single_pages/dashboard/conversations/messages.php:165
 msgid "IP Banned"
 msgstr "IP gesperrt"
 

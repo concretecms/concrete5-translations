@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-12-09 05:00+0000\n"
-"PO-Revision-Date: 2014-12-09 11:31+0000\n"
+"POT-Creation-Date: 2014-12-10 05:00+0000\n"
+"PO-Revision-Date: 2014-12-10 14:01+0000\n"
 "Last-Translator: Heikki Ylipaavalniemi\n"
 "Language-Team: Finnish (Finland) (http://www.transifex.com/projects/p/concrete5/language/fi_FI/)\n"
 "MIME-Version: 1.0\n"
@@ -686,7 +686,7 @@ msgstr "Tallenna"
 #: concrete/tools/edit_area_popup.php:27 concrete/tools/edit_area_popup.php:67
 #: concrete/tools/edit_collection_popup.php:39
 #: concrete/tools/files/edit.php:12 concrete/tools/files/permissions.php:12
-#: concrete/tools/files/replace.php:12
+#: concrete/tools/files/replace.php:13
 #: concrete/tools/files/selector_data.php:22 concrete/tools/files/star.php:8
 #: concrete/tools/files/view.php:18 concrete/tools/pile_manager.php:10
 #: concrete/tools/sitemap_search_selector.php:5
@@ -725,29 +725,41 @@ msgstr "Pyydettyä tiedostoa ei löytynyt."
 msgid "An unexpected error occurred while looking for the requested file"
 msgstr "Pyydettyä tiedostoa haettaessa tapahtui odottamaton virhe"
 
-#: concrete/tools/files/replace.php:22
+#: concrete/tools/files/replace.php:22 concrete/tools/files/replace.php:43
 msgid "Add From Computer"
 msgstr "Lisää tietokoneelta"
 
-#: concrete/tools/files/replace.php:26 concrete/tools/i18n_redactor_js.php:70
+#: concrete/tools/files/replace.php:23
+msgid "Add From Incoming"
+msgstr "Lisää saapuvista"
+
+#: concrete/tools/files/import.php:27 concrete/tools/files/replace.php:24
+msgid "Add Remote Files"
+msgstr "Lisää muualla olevia tiedostoja"
+
+#: concrete/tools/files/replace.php:47 concrete/tools/i18n_redactor_js.php:70
 msgid "Upload"
 msgstr "Lataa"
 
-#: concrete/tools/files/replace.php:32
+#: concrete/tools/files/replace.php:53
 msgid "Add from Incoming Directory"
 msgstr "Lisää Incoming-hakemistosta"
 
-#: concrete/tools/files/replace.php:44 concrete/tools/files/replace.php:65
+#: concrete/tools/files/import.php:68 concrete/tools/files/replace.php:62
+msgid "Unable to get contents of incoming/ directory"
+msgstr "Ei onnistuttu hakea incoming/-hakemiston sisältöjä"
+
+#: concrete/tools/files/replace.php:73 concrete/tools/files/replace.php:99
 #: concrete/tools/i18n_js.php:195
 msgid "Replace"
 msgstr "Korvaa"
 
-#: concrete/tools/files/replace.php:49
+#: concrete/tools/files/import.php:117 concrete/tools/files/replace.php:83
 #, php-format
-msgid "No files found in %s"
-msgstr "Tiedostoja ei löytynyt kohteesta %s"
+msgid "No files found in %s for the storage location \"%s\"."
+msgstr "Tiedostoja ei löytynyt paikasta %s varastosijainnille \"%s\"."
 
-#: concrete/tools/files/replace.php:55
+#: concrete/tools/files/replace.php:89
 msgid "Add from Remote URL"
 msgstr "Lisää www-osoitteesta"
 
@@ -764,14 +776,6 @@ msgstr "Tiedostojen lisääminen epäonnistui."
 #: concrete/tools/files/import.php:26
 msgid "Add Incoming"
 msgstr "Lisää saapuva"
-
-#: concrete/tools/files/import.php:27
-msgid "Add Remote Files"
-msgstr "Lisää muualla olevia tiedostoja"
-
-#: concrete/tools/files/import.php:68
-msgid "Unable to get contents of incoming/ directory"
-msgstr "Ei onnistuttu hakea incoming/-hakemiston sisältöjä"
 
 #: concrete/tools/files/import.php:82
 #: concrete/views/dialogs/file/properties.php:40
@@ -790,11 +794,6 @@ msgstr "Koko"
 #: concrete/tools/files/import.php:101
 msgid "Remove files from incoming/ directory."
 msgstr "Poista tiedostot incoming/-hakemistosta."
-
-#: concrete/tools/files/import.php:117
-#, php-format
-msgid "No files found in %s for the storage location \"%s\"."
-msgstr "Tiedostoja ei löytynyt paikasta %s varastosijainnille \"%s\"."
 
 #: concrete/attributes/select/type_form.php:34
 #: concrete/blocks/core_area_layout/form.php:69
@@ -1105,7 +1104,7 @@ msgstr "Haluatko varmasti poistaa seuraavat tiedostot?"
 #: concrete/elements/page_controls_footer.php:130
 #: concrete/elements/pages/search.php:32
 #: concrete/single_pages/account/messages/inbox.php:51
-#: concrete/single_pages/dashboard/conversations/messages.php:140
+#: concrete/single_pages/dashboard/conversations/messages.php:142
 #: concrete/single_pages/dashboard/pages/types/view.php:48
 #: concrete/single_pages/dashboard/pages/types/view.php:99
 #: concrete/single_pages/dashboard/reports/forms.php:141
@@ -4334,57 +4333,57 @@ msgstr "Sinun täytyy määritellä hyväksyttävä nimi puullesi."
 msgid "You do not have permission to add this tree."
 msgstr "Sinulla ei ole oikeutta lisätä tähän puuhun."
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:39
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:40
 msgid "Tree added successfully."
 msgstr "Puu lisätty onnistuneesti."
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:50
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:115
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:51
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:116
 msgid "Invalid title for category"
 msgstr "Virheellinen otsikko kategorialle"
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:54
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:148
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:55
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:149
 msgid "Invalid parent category"
 msgstr "Virheellinen pääkategoria"
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:59
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:60
 msgid "You may not add a category here."
 msgstr "Et voi lisätä kategoriaa tänne."
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:81
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:111
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:201
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:82
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:112
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:202
 msgid "Invalid node."
 msgstr "Virheellinen solmu."
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:85
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:144
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:86
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:145
 msgid "Invalid title for topic"
 msgstr "Virheellinen otsikko aiheelle"
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:90
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:120
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:91
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:121
 msgid "You may not edit this node."
 msgstr "Et voi muokata tätä solmua."
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:153
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:154
 msgid "You may not add a topic here."
 msgstr "Et voi lisätä aihetta tänne."
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:174
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:175
 msgid "Tree deleted successfully."
 msgstr "Puu poistettu onnistuneesti."
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:205
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:206
 msgid "You may not remove the top level node."
 msgstr "Et voi poistaa ylätason solmua."
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:210
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:211
 msgid "You may not remove this node."
 msgstr "Et voi poistaa tätä solmua."
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:214
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:215
 msgid "Invalid tree type."
 msgstr "Virheellinen puutyyppi."
 
@@ -6068,12 +6067,13 @@ msgstr "Napsauta kuvaa nähdäksesi toisen captcha koodin."
 msgid "Please type the letters and numbers shown in the image."
 msgstr "Ole hyvä ja kirjoita kuvassa näkyvät kirjaimet ja numerot."
 
-#: concrete/src/Tree/Node/Type/Category.php:11
+#: concrete/src/Tree/Node/Type/Category.php:24
+#: concrete/src/Tree/Node/Type/TopicCategory.php:22
 msgid "Categories"
 msgstr "Kategoriat"
 
 #: concrete/elements/permission/keys/assign_user_groups.php:31
-#: concrete/src/Tree/Node/Type/Group.php:35
+#: concrete/src/Tree/Node/Type/Group.php:42
 msgid "All Groups"
 msgstr "Kaikki ryhmät"
 
@@ -7006,7 +7006,7 @@ msgstr "kommenteilla \"%s\""
 msgid "Originally requested by %s."
 msgstr "Alunperin pyytänyt %s."
 
-#: concrete/single_pages/dashboard/conversations/messages.php:133
+#: concrete/single_pages/dashboard/conversations/messages.php:135
 #: concrete/src/Workflow/Progress/Action/ApprovalAction.php:6
 #: concrete/views/panels/page/versions.php:32
 msgid "Approve"
@@ -7847,6 +7847,10 @@ msgstr "Kauppapaikan polettia ei voitu luoda. Tarkista, että allow_url_fopen on
 #: concrete/src/Marketplace/Marketplace.php:261
 msgid "Unable to get information about this product."
 msgstr "Tästä tuotteesta ei saatu tietoja."
+
+#: concrete/src/Search/ItemList/Database/ItemList.php:75
+msgid "Invalid SQL in order by"
+msgstr "Virheellinen SQL järjestyksessä"
 
 #: concrete/src/Search/ItemList/Database/AttributedItemList.php:43
 #, php-format
@@ -13005,49 +13009,49 @@ msgstr "Viesti odottaa tällä hetkellä hyväksyntää."
 msgid "By Anonymous"
 msgstr "Tuntematon tekijä"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:124
+#: concrete/single_pages/dashboard/conversations/messages.php:125
 msgid "View full message."
 msgstr "Näytä koko viesti."
 
-#: concrete/single_pages/dashboard/conversations/messages.php:124
+#: concrete/single_pages/dashboard/conversations/messages.php:125
 msgid "Minimize message"
 msgstr "Pienennä viesti"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:131
+#: concrete/single_pages/dashboard/conversations/messages.php:133
 msgid "Unapprove"
 msgstr "Älä hyväksy"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:138
+#: concrete/single_pages/dashboard/conversations/messages.php:140
 #: concrete/single_pages/dashboard/system/backup/backup.php:113
 msgid "Restore"
 msgstr "Palauta"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:144
+#: concrete/single_pages/dashboard/conversations/messages.php:146
 msgid "Unmark as spam"
 msgstr "Poista roskapostiksi merkintä"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:146
+#: concrete/single_pages/dashboard/conversations/messages.php:148
 msgid "Mark as spam"
 msgstr "Merkitse roskapostiksi"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:150
+#: concrete/single_pages/dashboard/conversations/messages.php:152
 msgid "Mark all user posts as spam"
 msgstr "Merkitse kaikki käyttäjän kirjoitukset roskapostiksi"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:154
+#: concrete/single_pages/dashboard/conversations/messages.php:156
 #: concrete/single_pages/dashboard/users/search.php:27
 msgid "Deactivate User"
 msgstr "Poista käyttäjän aktivointi"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:156
+#: concrete/single_pages/dashboard/conversations/messages.php:158
 msgid "User deactivated"
 msgstr "Käyttäjän aktivointi poistettu"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:161
+#: concrete/single_pages/dashboard/conversations/messages.php:163
 msgid "Block user IP Address"
 msgstr "Estä käyttäjän IP-osoite"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:163
+#: concrete/single_pages/dashboard/conversations/messages.php:165
 msgid "IP Banned"
 msgstr "Estetty IP"
 

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-12-09 05:00+0000\n"
-"PO-Revision-Date: 2014-12-09 11:21+0000\n"
+"POT-Creation-Date: 2014-12-10 05:00+0000\n"
+"PO-Revision-Date: 2014-12-10 14:11+0000\n"
 "Last-Translator: Fredrik Lindau <fredrik@fxlindau.se>\n"
 "Language-Team: Swedish (Sweden) (http://www.transifex.com/projects/p/concrete5/language/sv_SE/)\n"
 "MIME-Version: 1.0\n"
@@ -688,7 +688,7 @@ msgstr "Spara"
 #: concrete/tools/edit_area_popup.php:27 concrete/tools/edit_area_popup.php:67
 #: concrete/tools/edit_collection_popup.php:39
 #: concrete/tools/files/edit.php:12 concrete/tools/files/permissions.php:12
-#: concrete/tools/files/replace.php:12
+#: concrete/tools/files/replace.php:13
 #: concrete/tools/files/selector_data.php:22 concrete/tools/files/star.php:8
 #: concrete/tools/files/view.php:18 concrete/tools/pile_manager.php:10
 #: concrete/tools/sitemap_search_selector.php:5
@@ -727,29 +727,41 @@ msgstr "Den efterfrågade filen kunde inte hittas."
 msgid "An unexpected error occurred while looking for the requested file"
 msgstr "Ett oväntat fel uppstod vid sökningen efter den efterfrågade filen"
 
-#: concrete/tools/files/replace.php:22
+#: concrete/tools/files/replace.php:22 concrete/tools/files/replace.php:43
 msgid "Add From Computer"
 msgstr "Lägg till från datorn"
 
-#: concrete/tools/files/replace.php:26 concrete/tools/i18n_redactor_js.php:70
+#: concrete/tools/files/replace.php:23
+msgid "Add From Incoming"
+msgstr "Lägg till från inkommande"
+
+#: concrete/tools/files/import.php:27 concrete/tools/files/replace.php:24
+msgid "Add Remote Files"
+msgstr "Lägg till externa filer"
+
+#: concrete/tools/files/replace.php:47 concrete/tools/i18n_redactor_js.php:70
 msgid "Upload"
 msgstr "Ladda upp"
 
-#: concrete/tools/files/replace.php:32
+#: concrete/tools/files/replace.php:53
 msgid "Add from Incoming Directory"
 msgstr "Lägg till från katalogen incoming"
 
-#: concrete/tools/files/replace.php:44 concrete/tools/files/replace.php:65
+#: concrete/tools/files/import.php:68 concrete/tools/files/replace.php:62
+msgid "Unable to get contents of incoming/ directory"
+msgstr "Kunde inte hämta innehåll från katalogen /incoming"
+
+#: concrete/tools/files/replace.php:73 concrete/tools/files/replace.php:99
 #: concrete/tools/i18n_js.php:195
 msgid "Replace"
 msgstr "Ersätt"
 
-#: concrete/tools/files/replace.php:49
+#: concrete/tools/files/import.php:117 concrete/tools/files/replace.php:83
 #, php-format
-msgid "No files found in %s"
-msgstr "Inga filer hittades i %s"
+msgid "No files found in %s for the storage location \"%s\"."
+msgstr "Inga filer funna i %s för lagringsplats \"%s\"."
 
-#: concrete/tools/files/replace.php:55
+#: concrete/tools/files/replace.php:89
 msgid "Add from Remote URL"
 msgstr "Lägg till från extern URL"
 
@@ -766,14 +778,6 @@ msgstr "Kunde inte lägga till filer."
 #: concrete/tools/files/import.php:26
 msgid "Add Incoming"
 msgstr "Lägg till inkommande"
-
-#: concrete/tools/files/import.php:27
-msgid "Add Remote Files"
-msgstr "Lägg till externa filer"
-
-#: concrete/tools/files/import.php:68
-msgid "Unable to get contents of incoming/ directory"
-msgstr "Kunde inte hämta innehåll från katalogen /incoming"
 
 #: concrete/tools/files/import.php:82
 #: concrete/views/dialogs/file/properties.php:40
@@ -792,11 +796,6 @@ msgstr "Storlek"
 #: concrete/tools/files/import.php:101
 msgid "Remove files from incoming/ directory."
 msgstr "Ta bort filer från katalogen incoming/"
-
-#: concrete/tools/files/import.php:117
-#, php-format
-msgid "No files found in %s for the storage location \"%s\"."
-msgstr "Inga filer funna i %s för lagringsplats \"%s\"."
 
 #: concrete/attributes/select/type_form.php:34
 #: concrete/blocks/core_area_layout/form.php:69
@@ -1107,7 +1106,7 @@ msgstr "Är du säker på att du vill ta bort följande filer?"
 #: concrete/elements/page_controls_footer.php:130
 #: concrete/elements/pages/search.php:32
 #: concrete/single_pages/account/messages/inbox.php:51
-#: concrete/single_pages/dashboard/conversations/messages.php:140
+#: concrete/single_pages/dashboard/conversations/messages.php:142
 #: concrete/single_pages/dashboard/pages/types/view.php:48
 #: concrete/single_pages/dashboard/pages/types/view.php:99
 #: concrete/single_pages/dashboard/reports/forms.php:141
@@ -4336,57 +4335,57 @@ msgstr "Du måste ange ett giltigt namn på ditt träd."
 msgid "You do not have permission to add this tree."
 msgstr "Du saknar behörighet att lägg till detta träd."
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:39
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:40
 msgid "Tree added successfully."
 msgstr "Träd tillagt. "
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:50
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:115
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:51
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:116
 msgid "Invalid title for category"
 msgstr "Ogiltig titel för kategori."
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:54
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:148
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:55
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:149
 msgid "Invalid parent category"
 msgstr "Ogiltig överordnad kategori."
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:59
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:60
 msgid "You may not add a category here."
 msgstr "Du får inte lägga till en kategori här."
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:81
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:111
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:201
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:82
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:112
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:202
 msgid "Invalid node."
 msgstr "Ogiltigt nod.."
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:85
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:144
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:86
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:145
 msgid "Invalid title for topic"
 msgstr "Ogiltig titel för ämne."
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:90
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:120
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:91
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:121
 msgid "You may not edit this node."
 msgstr "Du får inte redigera denna nod."
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:153
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:154
 msgid "You may not add a topic here."
 msgstr "Du får inte lägga till ett ämne här."
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:174
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:175
 msgid "Tree deleted successfully."
 msgstr "Träd borttaget."
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:205
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:206
 msgid "You may not remove the top level node."
 msgstr "Du får inte ta bort denna toppnod."
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:210
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:211
 msgid "You may not remove this node."
 msgstr "Du får inte ta bort denna nod."
 
-#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:214
+#: concrete/controllers/single_page/dashboard/system/attributes/topics.php:215
 msgid "Invalid tree type."
 msgstr "Ogiltig trädtyp."
 
@@ -6070,12 +6069,13 @@ msgstr "Klicka på bilden för att se en ny captcha."
 msgid "Please type the letters and numbers shown in the image."
 msgstr "Var vänlig och skriv in de bokstäver och siffror som visas i bilden."
 
-#: concrete/src/Tree/Node/Type/Category.php:11
+#: concrete/src/Tree/Node/Type/Category.php:24
+#: concrete/src/Tree/Node/Type/TopicCategory.php:22
 msgid "Categories"
 msgstr "Kategorier"
 
 #: concrete/elements/permission/keys/assign_user_groups.php:31
-#: concrete/src/Tree/Node/Type/Group.php:35
+#: concrete/src/Tree/Node/Type/Group.php:42
 msgid "All Groups"
 msgstr "Alla grupper"
 
@@ -7008,7 +7008,7 @@ msgstr "med kommentarerna \"%s\""
 msgid "Originally requested by %s."
 msgstr "Ursprungligen begärd av %s"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:133
+#: concrete/single_pages/dashboard/conversations/messages.php:135
 #: concrete/src/Workflow/Progress/Action/ApprovalAction.php:6
 #: concrete/views/panels/page/versions.php:32
 msgid "Approve"
@@ -7849,6 +7849,10 @@ msgstr "Kunde inte skapa kod för marknadsplatsen. Var vänlig och se till att b
 #: concrete/src/Marketplace/Marketplace.php:261
 msgid "Unable to get information about this product."
 msgstr "Kunde inte få någon information om denna produkt. "
+
+#: concrete/src/Search/ItemList/Database/ItemList.php:75
+msgid "Invalid SQL in order by"
+msgstr "Ogiltig SQL i sortera efter"
 
 #: concrete/src/Search/ItemList/Database/AttributedItemList.php:43
 #, php-format
@@ -13007,49 +13011,49 @@ msgstr "Meddelandet inväntar för närvarande godkännande."
 msgid "By Anonymous"
 msgstr "Av Anonym"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:124
+#: concrete/single_pages/dashboard/conversations/messages.php:125
 msgid "View full message."
 msgstr "Visa hela meddelandet."
 
-#: concrete/single_pages/dashboard/conversations/messages.php:124
+#: concrete/single_pages/dashboard/conversations/messages.php:125
 msgid "Minimize message"
 msgstr "Minimera meddelandet."
 
-#: concrete/single_pages/dashboard/conversations/messages.php:131
+#: concrete/single_pages/dashboard/conversations/messages.php:133
 msgid "Unapprove"
 msgstr "Godkänn inte"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:138
+#: concrete/single_pages/dashboard/conversations/messages.php:140
 #: concrete/single_pages/dashboard/system/backup/backup.php:113
 msgid "Restore"
 msgstr "Återställ"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:144
+#: concrete/single_pages/dashboard/conversations/messages.php:146
 msgid "Unmark as spam"
 msgstr "Avmarkera som skräppost"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:146
+#: concrete/single_pages/dashboard/conversations/messages.php:148
 msgid "Mark as spam"
 msgstr "Markera som skräppost"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:150
+#: concrete/single_pages/dashboard/conversations/messages.php:152
 msgid "Mark all user posts as spam"
 msgstr "Markera alla användarinlägg som skräppost"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:154
+#: concrete/single_pages/dashboard/conversations/messages.php:156
 #: concrete/single_pages/dashboard/users/search.php:27
 msgid "Deactivate User"
 msgstr "Inaktivera användare"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:156
+#: concrete/single_pages/dashboard/conversations/messages.php:158
 msgid "User deactivated"
 msgstr "Användare inaktiverad"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:161
+#: concrete/single_pages/dashboard/conversations/messages.php:163
 msgid "Block user IP Address"
 msgstr "Blockera användarens IP-adress"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:163
+#: concrete/single_pages/dashboard/conversations/messages.php:165
 msgid "IP Banned"
 msgstr "IP blockerat"
 
