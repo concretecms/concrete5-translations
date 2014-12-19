@@ -13,8 +13,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-12-11 05:00+0000\n"
-"PO-Revision-Date: 2014-12-11 10:04+0000\n"
+"POT-Creation-Date: 2014-12-18 05:00+0000\n"
+"PO-Revision-Date: 2014-12-18 10:22+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Dutch (Netherlands) (http://www.transifex.com/projects/p/concrete5/language/nl_NL/)\n"
 "MIME-Version: 1.0\n"
@@ -150,14 +150,17 @@ msgstr "Groep om in te plaatsen na registratie"
 #: concrete/blocks/form/form_setup_html.php:92
 #: concrete/blocks/image/form.php:49
 #: concrete/blocks/image_slider/form_setup_html.php:253
-#: concrete/blocks/survey/edit.php:48 concrete/elements/custom_style.php:61
-#: concrete/elements/custom_style.php:67 concrete/elements/custom_style.php:79
+#: concrete/blocks/survey/edit.php:48
+#: concrete/controllers/single_page/dashboard/system/multilingual/setup.php:71
+#: concrete/elements/custom_style.php:61 concrete/elements/custom_style.php:67
+#: concrete/elements/custom_style.php:79
 #: concrete/elements/permission/access/list.php:33
 #: concrete/elements/permission/labels.php:49
 #: concrete/single_pages/dashboard/pages/single.php:51
 #: concrete/single_pages/dashboard/system/basics/images.php:11
 #: concrete/single_pages/dashboard/system/mail/importers.php:6
 #: concrete/single_pages/dashboard/system/mail/method.php:6
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:50
 #: concrete/single_pages/dashboard/system/permissions/blacklist.php:43
 #: concrete/single_pages/members/profile.php:58 concrete/tools/i18n_js.php:91
 #: concrete/tools/i18n_redactor_js.php:60
@@ -296,18 +299,33 @@ msgid "Enter your new password below."
 msgstr "Voer een nieuw wachtwoord hieronder in (dit zal uw oude wachtwoord per direct vervangen)."
 
 #: concrete/authentication/concrete/change_password.php:20
-#: concrete/single_pages/account/edit_profile.php:70
+#: concrete/single_pages/account/edit_profile.php:76
 msgid "New Password"
 msgstr "Nieuw Wachtwoord"
 
 #: concrete/authentication/concrete/change_password.php:24
-#: concrete/single_pages/account/edit_profile.php:76
+#: concrete/single_pages/account/edit_profile.php:82
 msgid "Confirm New Password"
 msgstr "Bevestig het nieuwe Wachtwoord"
 
 #: concrete/authentication/concrete/change_password.php:28
 msgid "Change password and sign in"
 msgstr "Wachtwoord wijzigen en aanmelden"
+
+#: concrete/authentication/concrete/invalid_token.php:5
+msgid "Unable to validate email"
+msgstr ""
+
+#: concrete/authentication/concrete/invalid_token.php:9
+msgid ""
+"The token you provided doesn't appear to be valid, please paste the url "
+"exactly as it appears in the email."
+msgstr ""
+
+#: concrete/authentication/concrete/email_validated.php:12
+#: concrete/authentication/concrete/invalid_token.php:12
+msgid "Continue"
+msgstr "Doorgaan"
 
 #: concrete/authentication/concrete/password_changed.php:5
 msgid "Successfully changed password"
@@ -403,6 +421,7 @@ msgid "Stay signed in for two weeks"
 msgstr "Blijf twee weken ingelogd"
 
 #: concrete/authentication/concrete/form.php:33
+#: concrete/single_pages/account/edit_profile.php:35
 #: concrete/single_pages/dashboard/users/add.php:48
 #: concrete/single_pages/dashboard/users/search.php:103
 #: concrete/views/frontend/install.php:547
@@ -445,7 +464,7 @@ msgstr "Sleutel verlopen. Ga naar de pagina Wachtwoord vergeten om een nieuwe sl
 
 #: concrete/authentication/concrete/controller.php:191
 #: concrete/controllers/install.php:333
-#: concrete/controllers/single_page/account/edit_profile.php:94
+#: concrete/controllers/single_page/account/edit_profile.php:108
 #: concrete/controllers/single_page/dashboard/users/search.php:337
 #: concrete/controllers/single_page/register.php:106
 msgid "The two passwords provided do not match."
@@ -457,37 +476,44 @@ msgid ""
 "generated."
 msgstr "Deze Wachtwoord reset sleutel is verlopen. Ga opnieuw naar de \"Aanmelden pagina\" en vul uw e-mail adres in bij \"Wachtwoord vergeten?\" (dit zal een nieuwe sleutel voor u genereren)."
 
-#: concrete/authentication/concrete/controller.php:222
-msgid "Password changed successfully!"
-msgstr "Wachtwoord succesvol veranderd!"
-
-#: concrete/authentication/concrete/controller.php:231
+#: concrete/authentication/concrete/controller.php:240
 msgid "Please provide both username and password."
 msgstr "Geef gebruikersnaam en wachtwoord op."
 
-#: concrete/authentication/concrete/controller.php:240
+#: concrete/authentication/concrete/controller.php:249
 #: concrete/controllers/single_page/login.php:44
 msgid "Your session has expired. Please sign in again."
 msgstr "Uw sessie is verlopen, log opnieuw in."
 
-#: concrete/authentication/concrete/controller.php:245
+#: concrete/authentication/concrete/controller.php:254
 msgid ""
 "This account has not yet been validated. Please check the email associated "
 "with this account and follow the link it contains."
 msgstr "Dit profiel is nog niet gevalideerd. Controleer het e-mailadres dat gekoppeld is aan dit profiel en klik op de link in de e-mail."
 
-#: concrete/authentication/concrete/controller.php:249
+#: concrete/authentication/concrete/controller.php:258
 msgid "Invalid email address or password."
 msgstr "Ongeldig e-mail adres of wachtwoord."
 
-#: concrete/authentication/concrete/controller.php:251
+#: concrete/authentication/concrete/controller.php:260
 msgid "Invalid username or password."
 msgstr "Onjuiste gebruikersnaam of wachtwoord."
 
-#: concrete/authentication/concrete/controller.php:255
+#: concrete/authentication/concrete/controller.php:264
 #: concrete/controllers/single_page/login.php:39
 msgid "This user is inactive. Please contact us regarding this account."
 msgstr "Deze gebruiker is inactief. Neem contact met ons op betreffende dit profiel."
+
+#: concrete/authentication/concrete/email_validated.php:5
+#: concrete/single_pages/dashboard/users/search.php:113
+msgid "Email Validated"
+msgstr "E-mail Gevalideerd"
+
+#: concrete/authentication/concrete/email_validated.php:9
+msgid ""
+"This email address has been validated! You may now access the features of "
+"this site."
+msgstr ""
 
 #: concrete/authentication/facebook/form.php:19
 #: concrete/authentication/facebook/form.php:26
@@ -590,17 +616,18 @@ msgstr "Aflopend"
 
 #: concrete/attributes/select/type_form.php:35
 #: concrete/blocks/core_gathering/tools/edit.php:50
+#: concrete/blocks/switch_language/templates/flags_set_default/view.php:34
 #: concrete/elements/attribute/type_form_required.php:130
 #: concrete/elements/block_footer_edit.php:18
 #: concrete/elements/custom_style.php:332
-#: concrete/elements/page_types/composer/form/output/buttons.php:13
+#: concrete/elements/page_types/composer/form/output/buttons.php:11
 #: concrete/elements/permission/detail.php:89
 #: concrete/elements/permission/details/block/timed_guest_access.php:39
 #: concrete/elements/permission/lists/area.php:95
 #: concrete/elements/permission/lists/block.php:66
 #: concrete/elements/permission/lists/file.php:63
 #: concrete/elements/permission/lists/tree/node.php:66
-#: concrete/single_pages/account/edit_profile.php:86
+#: concrete/single_pages/account/edit_profile.php:92
 #: concrete/single_pages/dashboard/blocks/permissions.php:19
 #: concrete/single_pages/dashboard/files/sets.php:101
 #: concrete/single_pages/dashboard/pages/themes/view.php:80
@@ -681,6 +708,7 @@ msgstr "Opslaan"
 #: concrete/controllers/dialog/file/properties.php:111
 #: concrete/controllers/dialog/file/thumbnails/edit.php:35
 #: concrete/controllers/dialog/file/thumbnails/edit.php:38
+#: concrete/controllers/dialog/page/add/compose.php:31
 #: concrete/controllers/search/users.php:39
 #: concrete/controllers/single_page/dashboard/users/search.php:46
 #: concrete/controllers/single_page/dashboard/users/search.php:64
@@ -786,15 +814,15 @@ msgid "Add Incoming"
 msgstr "FTP Incoming"
 
 #: concrete/tools/files/import.php:82
-#: concrete/views/dialogs/file/properties.php:40
-#: concrete/views/dialogs/file/properties.php:179
+#: concrete/views/dialogs/file/properties.php:43
+#: concrete/views/dialogs/file/properties.php:243
 msgid "Filename"
 msgstr "Bestandsnaam"
 
 #: concrete/controllers/search/files.php:237
 #: concrete/src/File/Search/ColumnSet/DefaultSet.php:30
 #: concrete/tools/files/import.php:83 concrete/tools/i18n_js.php:97
-#: concrete/views/dialogs/file/properties.php:80
+#: concrete/views/dialogs/file/properties.php:126
 #: concrete/views/image-editor/filters/vignette.php:14
 msgid "Size"
 msgstr "Grootte"
@@ -846,6 +874,7 @@ msgstr "Bestanden uit incoming/ map verwijderen."
 #: concrete/single_pages/dashboard/system/basics/social.php:36
 #: concrete/single_pages/dashboard/system/basics/social.php:77
 #: concrete/single_pages/dashboard/system/files/permissions.php:22
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:263
 #: concrete/single_pages/dashboard/system/registration/authentication.php:97
 #: concrete/single_pages/dashboard/users/add.php:109
 #: concrete/single_pages/dashboard/users/add_group.php:216
@@ -888,6 +917,7 @@ msgstr "Bestanden uit incoming/ map verwijderen."
 #: concrete/views/dialogs/block/aliasing.php:44
 #: concrete/views/dialogs/block/cache.php:69
 #: concrete/views/dialogs/file/bulk/delete.php:40
+#: concrete/views/dialogs/page/add/compose.php:10
 #: concrete/views/dialogs/page/add_block.php:94
 #: concrete/views/dialogs/page/add_external.php:23
 #: concrete/views/dialogs/page/delete.php:8
@@ -941,7 +971,7 @@ msgstr "Opslaglocatie voor bestanden opgeslagen."
 #: concrete/elements/block_header_view.php:181
 #: concrete/elements/page_controls_footer.php:103
 #: concrete/elements/page_controls_footer.php:106
-#: concrete/elements/panels/page.php:104
+#: concrete/elements/panels/page.php:111
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:58
 #: concrete/single_pages/dashboard/pages/types/view.php:46
 #: concrete/src/Package/Package.php:356
@@ -955,7 +985,7 @@ msgid "Protect with Password"
 msgstr "Bescherm met Wachtwoord"
 
 #: concrete/tools/files/permissions.php:54
-#: concrete/views/dialogs/file/properties.php:91
+#: concrete/views/dialogs/file/properties.php:144
 msgid "Storage Location"
 msgstr "Opslaglocatie"
 
@@ -1056,7 +1086,7 @@ msgstr "Download"
 msgid "Unable to copy one or more files."
 msgstr "Kan een of meer bestanden niet kopiëren."
 
-#: concrete/blocks/form/controller.php:334
+#: concrete/blocks/form/controller.php:335
 #: concrete/controllers/backend/user_interface/file.php:20
 #: concrete/src/File/Importer.php:41 concrete/tools/files/duplicate.php:43
 msgid "Invalid file."
@@ -1238,10 +1268,13 @@ msgstr "Platte weergave"
 #: concrete/single_pages/dashboard/files/sets.php:130
 #: concrete/single_pages/dashboard/files/sets.php:135
 #: concrete/single_pages/dashboard/files/sets.php:153
-#: concrete/single_pages/dashboard/reports/logs.php:21
-#: concrete/single_pages/dashboard/reports/logs.php:26
-#: concrete/single_pages/dashboard/reports/logs.php:55
+#: concrete/single_pages/dashboard/reports/logs.php:20
+#: concrete/single_pages/dashboard/reports/logs.php:25
+#: concrete/single_pages/dashboard/reports/logs.php:54
 #: concrete/single_pages/dashboard/sitemap/full.php:34
+#: concrete/single_pages/dashboard/system/multilingual/page_report.php:13
+#: concrete/single_pages/dashboard/system/multilingual/page_report.php:18
+#: concrete/single_pages/dashboard/system/multilingual/page_report.php:71
 #: concrete/single_pages/dashboard/system/seo/bulk.php:59
 #: concrete/single_pages/dashboard/system/seo/bulk.php:64
 #: concrete/single_pages/dashboard/users/groups/bulkupdate.php:143
@@ -1464,6 +1497,8 @@ msgstr "Alleen gebruikers die lid zijn van ALLE geselecteerde groepen komen in a
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:50
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:102
 #: concrete/single_pages/dashboard/system/mail/importers.php:77
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:13
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:182
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:53
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:207
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:258
@@ -1641,13 +1676,13 @@ msgstr "Ongeldig bovenliggend bericht."
 msgid "Banned words detected."
 msgstr "Verboden woorden gedetecteerd."
 
-#: concrete/blocks/core_conversation/form.php:18
+#: concrete/blocks/core_conversation/form.php:14
 #: concrete/tools/conversations/view_ajax.php:24
 msgid "Add Message"
 msgstr "Bericht toevoegen"
 
 #: concrete/blocks/html/controller.php:28 concrete/blocks/image/form.php:44
-#: concrete/config/app.php:385 concrete/tools/i18n_redactor_js.php:13
+#: concrete/config/app.php:394 concrete/tools/i18n_redactor_js.php:13
 msgid "HTML"
 msgstr "HTML"
 
@@ -1820,9 +1855,9 @@ msgstr "Hoofd verwijderen"
 #: concrete/blocks/youtube/form_setup_html.php:16
 #: concrete/single_pages/dashboard/pages/feeds.php:78
 #: concrete/src/File/Search/ColumnSet/DefaultSet.php:27
-#: concrete/src/File/Version.php:474 concrete/tools/i18n_redactor_js.php:58
-#: concrete/views/dialogs/file/properties.php:96
-#: concrete/views/dialogs/file/properties.php:180
+#: concrete/src/File/Version.php:476 concrete/tools/i18n_redactor_js.php:58
+#: concrete/views/dialogs/file/properties.php:149
+#: concrete/views/dialogs/file/properties.php:244
 msgid "Title"
 msgstr "Titel"
 
@@ -1858,7 +1893,7 @@ msgstr "Link Afbeelding"
 msgid "Text"
 msgstr "Tekst"
 
-#: concrete/config/install/base/dashboard.xml:736
+#: concrete/config/install/base/dashboard.xml:753
 #: concrete/elements/users/confirm_list.php:8
 #: concrete/mail/user_register_approval_required.php:15
 #: concrete/single_pages/account/edit_profile.php:21
@@ -2116,16 +2151,16 @@ msgstr "Aangepast Thema"
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:208
 #: concrete/single_pages/dashboard/users/add_group.php:29
 #: concrete/single_pages/dashboard/users/groups.php:39
-#: concrete/src/File/Version.php:477
+#: concrete/src/File/Version.php:479
 #: concrete/tools/page_types/composer/form/edit_control.php:54
-#: concrete/views/dialogs/file/properties.php:100
+#: concrete/views/dialogs/file/properties.php:155
 #: concrete/views/panels/details/page/attributes.php:58
 msgid "Description"
 msgstr "Omschrijving"
 
 #: concrete/blocks/form/form_setup_html.php:154
 #: concrete/blocks/form/form_setup_html.php:225
-#: concrete/blocks/form/view.php:108
+#: concrete/blocks/form/view.php:107
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:105
 #: concrete/tools/page_types/composer/form/edit_control.php:60
 msgid "Required"
@@ -2181,7 +2216,7 @@ msgstr "Plakken van Klembord"
 
 #: concrete/elements/page_controls_footer.php:112
 #: concrete/elements/page_controls_footer.php:114
-#: concrete/elements/panels/page.php:36 concrete/tools/i18n_js.php:20
+#: concrete/elements/panels/page.php:41 concrete/tools/i18n_js.php:20
 #: concrete/tools/i18n_js.php:49 concrete/tools/i18n_js.php:142
 #: concrete/views/panels/page/design.php:10
 msgid "Design"
@@ -2311,7 +2346,7 @@ msgstr "Onderliggende Pagina Setup"
 msgid "Composer Settings"
 msgstr "Composer Instellingen"
 
-#: concrete/config/install/base/dashboard.xml:425
+#: concrete/config/install/base/dashboard.xml:426
 #: concrete/single_pages/dashboard/pages/themes/view.php:119
 #: concrete/tools/i18n_js.php:57 concrete/views/panels/page/design.php:80
 msgid "Get More Themes"
@@ -2466,8 +2501,9 @@ msgid "Let's start editing a page."
 msgstr "Laten we beginnen met het bewerken van een pagina."
 
 #: concrete/elements/attribute/categories/user.php:26
-#: concrete/elements/page_types/composer/form/output/buttons.php:11
+#: concrete/elements/page_types/composer/form/output/buttons.php:9
 #: concrete/tools/i18n_js.php:93
+#: concrete/views/dialogs/page/add/compose.php:12
 msgid "Edit Mode"
 msgstr "Bewerkmodus"
 
@@ -2524,7 +2560,7 @@ msgstr "Link naar pagina"
 
 #: concrete/elements/page_controls_footer.php:72
 #: concrete/elements/page_controls_footer.php:74
-#: concrete/elements/panels/page.php:48 concrete/tools/i18n_js.php:119
+#: concrete/elements/panels/page.php:53 concrete/tools/i18n_js.php:119
 #: concrete/views/panels/details/page/seo.php:6
 msgid "SEO"
 msgstr "SEO"
@@ -2533,7 +2569,7 @@ msgstr "SEO"
 #: concrete/blocks/page_list/page_list_form.php:99
 #: concrete/elements/page_controls_footer.php:81
 #: concrete/elements/page_controls_footer.php:84
-#: concrete/elements/panels/page.php:59 concrete/tools/i18n_js.php:120
+#: concrete/elements/panels/page.php:64 concrete/tools/i18n_js.php:120
 #: concrete/tools/i18n_js.php:121
 #: concrete/views/panels/details/page/location.php:5
 msgid "Location"
@@ -2581,11 +2617,11 @@ msgstr "Voorvertoning"
 
 #: concrete/config/install/base/dashboard.xml:55
 #: concrete/config/install/base/dashboard.xml:106
-#: concrete/config/install/base/dashboard.xml:291
-#: concrete/config/install/base/dashboard.xml:806
+#: concrete/config/install/base/dashboard.xml:292
+#: concrete/config/install/base/dashboard.xml:823
 #: concrete/elements/page_controls_footer.php:87
 #: concrete/elements/page_controls_footer.php:89
-#: concrete/elements/panels/page.php:79 concrete/single_pages/login.php:42
+#: concrete/elements/panels/page.php:86 concrete/single_pages/login.php:42
 #: concrete/single_pages/login.php:72 concrete/tools/i18n_js.php:134
 #: concrete/tools/i18n_js.php:137 concrete/views/panels/page/attributes.php:6
 msgid "Attributes"
@@ -2593,7 +2629,7 @@ msgstr "Attributen"
 
 #: concrete/elements/page_controls_footer.php:95
 #: concrete/elements/page_controls_footer.php:97
-#: concrete/elements/panels/page.php:92 concrete/tools/i18n_js.php:135
+#: concrete/elements/panels/page.php:99 concrete/tools/i18n_js.php:135
 #: concrete/tools/i18n_js.php:136 concrete/views/dialogs/block/cache.php:24
 msgid "Caching"
 msgstr "In cache plaatsen"
@@ -2614,9 +2650,9 @@ msgstr "Thema en pagina formaat bijgewerkt."
 
 #: concrete/elements/page_controls_footer.php:120
 #: concrete/elements/page_controls_footer.php:122
-#: concrete/elements/panels/page.php:114 concrete/tools/i18n_js.php:143
-#: concrete/views/dialogs/file/properties.php:14
-#: concrete/views/dialogs/file/properties.php:174
+#: concrete/elements/panels/page.php:121 concrete/tools/i18n_js.php:143
+#: concrete/views/dialogs/file/properties.php:15
+#: concrete/views/dialogs/file/properties.php:238
 #: concrete/views/panels/page/versions.php:290
 msgid "Versions"
 msgstr "Versies"
@@ -2741,7 +2777,7 @@ msgstr "Bestand kopiëren"
 msgid "Choose New File"
 msgstr "Kies nieuw bestand"
 
-#: concrete/config/install/base/dashboard.xml:814
+#: concrete/config/install/base/dashboard.xml:831
 #: concrete/elements/files/search.php:20 concrete/elements/files/search.php:54
 #: concrete/tools/i18n_js.php:198
 msgid "Sets"
@@ -2761,7 +2797,9 @@ msgid "You must choose a file."
 msgstr "U moet een bestand kiezen."
 
 #: concrete/elements/files/search.php:21 concrete/tools/i18n_js.php:204
-#: concrete/views/dialogs/file/properties.php:31
+#: concrete/views/dialogs/file/properties.php:32
+#: concrete/views/dialogs/file/properties.php:88
+#: concrete/views/dialogs/file/properties.php:104
 msgid "Rescan"
 msgstr "Opnieuw scannen"
 
@@ -2903,7 +2941,7 @@ msgstr "Hoe lang in de cache bewaren?"
 msgid "Default - %s minutes"
 msgstr "Standaard - %s minuten"
 
-#: concrete/blocks/core_conversation/form.php:155
+#: concrete/blocks/core_conversation/form.php:166
 #: concrete/elements/permission/keys/add_block.php:23
 #: concrete/elements/permission/keys/add_block.php:47
 #: concrete/elements/permission/keys/add_file.php:26
@@ -3047,7 +3085,7 @@ msgstr "Paginatype"
 
 #: concrete/controllers/search/pages.php:286
 #: concrete/tools/pages/delete.php:93
-#: concrete/views/dialogs/file/properties.php:84
+#: concrete/views/dialogs/file/properties.php:134
 msgid "Date Added"
 msgstr "Datum Toegevoegd"
 
@@ -3113,7 +3151,7 @@ msgstr "Deze pagina is verwijderd uit de volledige paginacache."
 msgid "Page template and theme updated successfully."
 msgstr "Paginasjabloon en thema bijgewerkt."
 
-#: concrete/controllers/panel/page/design/customize.php:94
+#: concrete/controllers/panel/page/design/customize.php:95
 msgid "Invalid or non-customizable theme."
 msgstr "Ongeldig of niet-aanpasbaar thema."
 
@@ -3146,6 +3184,7 @@ msgstr[1] "%s versies zijn verwijderd."
 msgid "You do not have permission to delete page versions."
 msgstr "U bent niet gemachtigd om paginaversies te verwijderen."
 
+#: concrete/controllers/backend/page/multilingual.php:93
 #: concrete/controllers/panel/page/versions.php:169
 msgid ""
 "<strong>Request Saved.</strong> You must complete the workflow before this "
@@ -3252,6 +3291,23 @@ msgid ""
 "Page deletion request saved. This action will have to be approved before the"
 " page is deleted."
 msgstr "Verwijderverzoek voor pagina opgeslagen. Deze actie zal moeten worden goedgekeurd voordat de pagina wordt verwijderd."
+
+#: concrete/controllers/dialog/page/add/compose.php:45
+msgid ""
+"You do not have permission to add a page of this type to this location."
+msgstr ""
+
+#: concrete/controllers/dialog/page/add/compose.php:48
+msgid "Invalid parent page."
+msgstr "Gekoppelde pagina is ongeldig."
+
+#: concrete/controllers/dialog/page/add/compose.php:51
+msgid "Invalid page type."
+msgstr ""
+
+#: concrete/controllers/dialog/page/add/compose.php:103
+msgid "Page Added Successfully."
+msgstr ""
 
 #: concrete/controllers/dialog/page/edit_external.php:31
 msgid "External Link updated."
@@ -3404,7 +3460,7 @@ msgstr "Niet goedgekeurd"
 msgid "Recent First"
 msgstr "Meest recente eerste"
 
-#: concrete/blocks/core_conversation/form.php:46
+#: concrete/blocks/core_conversation/form.php:57
 #: concrete/controllers/single_page/dashboard/conversations/messages.php:34
 msgid "Earliest First"
 msgstr "Vroegste eerste"
@@ -3474,7 +3530,7 @@ msgstr "Deze optie is niet beschikbaar."
 msgid "Your site is now connected to the concrete5 community."
 msgstr "Uw website is nu verbonden met de Concrete5 gemeenschap."
 
-#: concrete/config/install/base/dashboard.xml:210
+#: concrete/config/install/base/dashboard.xml:211
 #: concrete/controllers/single_page/dashboard/extend/themes.php:24
 #: concrete/themes/dashboard/marketplace.php:20
 msgid "Themes"
@@ -3638,7 +3694,7 @@ msgstr "Pagina's"
 
 #: concrete/blocks/image/form.php:18
 #: concrete/config/install/base/dashboard.xml:45
-#: concrete/config/install/base/dashboard.xml:571
+#: concrete/config/install/base/dashboard.xml:588
 #: concrete/controllers/single_page/dashboard/workflow/me.php:34
 #: concrete/elements/page_controls_footer.php:143
 #: concrete/themes/dashboard/elements/header.php:52
@@ -3824,14 +3880,14 @@ msgstr "Avatar succesvol opgeslagen."
 msgid "Website Registration Notification"
 msgstr "Website registratie notificatie"
 
-#: concrete/controllers/single_page/account/edit_profile.php:73
+#: concrete/controllers/single_page/account/edit_profile.php:87
 #: concrete/controllers/single_page/dashboard/users/add.php:52
 #: concrete/controllers/single_page/dashboard/users/search.php:165
 #: concrete/controllers/single_page/register.php:58
 msgid "Invalid email address provided."
 msgstr "Onjuist E-mail Adres opgegeven."
 
-#: concrete/controllers/single_page/account/edit_profile.php:75
+#: concrete/controllers/single_page/account/edit_profile.php:89
 #: concrete/controllers/single_page/dashboard/users/add.php:54
 #: concrete/controllers/single_page/dashboard/users/search.php:167
 #, php-format
@@ -3893,7 +3949,7 @@ msgstr "Gebruikersnaam opgeslagen."
 msgid "You do not have permission to modify this attribute."
 msgstr "U heeft onvoldoende machtigingen om dit attribuut te wijzigen."
 
-#: concrete/controllers/single_page/account/edit_profile.php:85
+#: concrete/controllers/single_page/account/edit_profile.php:99
 #: concrete/controllers/single_page/dashboard/users/add.php:83
 #: concrete/controllers/single_page/dashboard/users/search.php:327
 #: concrete/src/Application/Service/User.php:39
@@ -3901,7 +3957,7 @@ msgstr "U heeft onvoldoende machtigingen om dit attribuut te wijzigen."
 msgid "A password must be between %s and %s characters"
 msgstr "Een wachtwoord moet tussen %s en %s karakters bevatten"
 
-#: concrete/controllers/single_page/account/edit_profile.php:89
+#: concrete/controllers/single_page/account/edit_profile.php:103
 #: concrete/controllers/single_page/dashboard/users/add.php:87
 #: concrete/controllers/single_page/dashboard/users/search.php:333
 msgid "A password may not contain \", ', >, <, or any spaces."
@@ -3911,6 +3967,7 @@ msgstr "Een wachtwoord mag geen \", ', >, <, of spaties bevatten."
 msgid "Password updated successfully."
 msgstr "Wachtwoord succesvol bijgewerkt."
 
+#: concrete/controllers/single_page/account/edit_profile.php:34
 #: concrete/controllers/single_page/dashboard/users/search.php:380
 #: concrete/controllers/single_page/login.php:205
 msgctxt "Default locale"
@@ -3963,7 +4020,7 @@ msgstr "Gebruikers Attribuut is bijgewerkt."
 msgid "Invalid Username"
 msgstr "Ongeldige  Gebruikersnaam"
 
-#: concrete/controllers/single_page/account/edit_profile.php:107
+#: concrete/controllers/single_page/account/edit_profile.php:121
 #: concrete/controllers/single_page/dashboard/users/add.php:100
 #: concrete/controllers/single_page/login.php:336
 #: concrete/controllers/single_page/register.php:116
@@ -4153,6 +4210,62 @@ msgstr "Nooit"
 msgid "IP Blacklist settings saved."
 msgstr "IP Blacklist instellingen zijn bijgewerkt."
 
+#: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:26
+msgid "Languages refreshed."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:32
+msgid "Translations exported to PO File and Reloaded."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:38
+msgid "Languages reset."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:57
+msgid "Only the admin user may reset all strings."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/multilingual/setup.php:80
+msgid "Multilingual content enabled"
+msgstr "Meertalige inhoud ingeschakeld"
+
+#: concrete/controllers/single_page/dashboard/system/multilingual/setup.php:86
+msgid "Multilingual content updated"
+msgstr "Meertalige inhoud bijgewerkt"
+
+#: concrete/controllers/single_page/dashboard/system/multilingual/setup.php:92
+msgid "Multilingual tree copied."
+msgstr "Meertalige boom gekopieerd."
+
+#: concrete/controllers/single_page/dashboard/system/multilingual/setup.php:98
+msgid "Section removed."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/multilingual/setup.php:104
+msgid "Default Section settings updated."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/multilingual/setup.php:118
+msgid "Invalid Section"
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/multilingual/setup.php:136
+msgid "Invalid section"
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/multilingual/setup.php:148
+msgid "You must specify a page for this multilingual content section."
+msgstr "U moet een pagina opgeven voor deze taalsectie."
+
+#: concrete/controllers/single_page/dashboard/system/multilingual/setup.php:156
+msgid "A multilingual section page at this location already exists."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/multilingual/setup.php:165
+msgid "This language/region combination already exists."
+msgstr "Deze combinatie van taal/regio bestaat al."
+
 #: concrete/controllers/single_page/dashboard/system/mail/method/test.php:13
 #, php-format
 msgid "The test email has been successfully sent to %s."
@@ -4324,7 +4437,7 @@ msgid ""
 "cannot be manually removed."
 msgstr "Deze attribuutverzameling is vergrendeld. Dat betekent dat deze werd toegevoegd door een pakket en niet handmatig kan worden verwijderd."
 
-#: concrete/config/install/base/dashboard.xml:838
+#: concrete/config/install/base/dashboard.xml:855
 #: concrete/controllers/single_page/dashboard/system/attributes/topics/add.php:14
 #: concrete/single_pages/dashboard/system/attributes/topics/add.php:22
 #: concrete/single_pages/dashboard/system/attributes/topics/view.php:23
@@ -4671,13 +4784,13 @@ msgstr "Datum ingediend"
 
 #: concrete/controllers/single_page/dashboard/reports/forms.php:54
 #: concrete/single_pages/dashboard/reports/forms.php:240
-#: concrete/single_pages/dashboard/reports/logs.php:70
+#: concrete/single_pages/dashboard/reports/logs.php:66
 #: concrete/single_pages/dashboard/reports/statistics.php:78
 #: concrete/single_pages/dashboard/reports/surveys.php:32
 #: concrete/single_pages/dashboard/users/points/assign.php:7
 #: concrete/single_pages/dashboard/users/points/view.php:13
 #: concrete/single_pages/dashboard/users/points/view.php:32
-#: concrete/views/dialogs/file/properties.php:251
+#: concrete/views/dialogs/file/properties.php:323
 #: concrete/views/panels/page/preview_as/form.php:28
 msgid "User"
 msgstr "Gebruiker"
@@ -4896,7 +5009,7 @@ msgstr "Handvaten mogen uitsluitend letters, cijfers of het onderstrepingsteken 
 msgid "Invalid characters in page template name."
 msgstr "Ongeldige tekens in de naam van de sjabloon van de pagina."
 
-#: concrete/controllers/single_page/account/edit_profile.php:21
+#: concrete/controllers/single_page/account/edit_profile.php:22
 msgid "You must be logged in to access this page."
 msgstr "U moet ingelogd zijn om deze pagina te openen."
 
@@ -5003,7 +5116,7 @@ msgstr "KB"
 #: concrete/single_pages/dashboard/workflow/workflows.php:47
 #: concrete/src/File/Search/ColumnSet/DefaultSet.php:26
 #: concrete/src/Page/Search/ColumnSet/DefaultSet.php:34
-#: concrete/views/dialogs/file/properties.php:68
+#: concrete/views/dialogs/file/properties.php:72
 msgid "Type"
 msgstr "Formaat"
 
@@ -5117,7 +5230,7 @@ msgid "Public Date"
 msgstr "Publiseer Datum"
 
 #: concrete/controllers/search/pages.php:290
-#: concrete/src/Permission/Access/Entity/PageOwnerEntity.php:72
+#: concrete/src/Permission/Access/Entity/PageOwnerEntity.php:73
 msgid "Page Owner"
 msgstr "Pagina Eigenaar"
 
@@ -5173,6 +5286,32 @@ msgstr "U mag niet de inhoud inrichten van het gedeelte %s."
 #, php-format
 msgid "You may not add %s to area %s."
 msgstr "U kunt %s niet toevoegen aan gebied %s."
+
+#: concrete/controllers/backend/page/multilingual.php:27
+msgid "Page ignored."
+msgstr ""
+
+#: concrete/controllers/backend/page/multilingual.php:37
+msgid "You cannot assign this page to itself."
+msgstr "U kunt deze pagina niet aan zichzelf toewijzen."
+
+#: concrete/controllers/backend/page/multilingual.php:58
+msgid "Page assigned."
+msgstr ""
+
+#: concrete/controllers/backend/page/multilingual.php:61
+msgid ""
+"The destination page doesn't appear to be in a valid multilingual section."
+msgstr "De doelpagina wordt niet weergegeven als in een geldige taalsectie."
+
+#: concrete/controllers/backend/page/multilingual.php:100
+msgid "Page created."
+msgstr ""
+
+#: concrete/controllers/backend/page/multilingual.php:105
+msgid ""
+"You do not have permission to add this page to this section of the tree."
+msgstr ""
 
 #: concrete/controllers/backend/attributes.php:48
 msgid "Invalid Token"
@@ -5290,7 +5429,7 @@ msgstr "Meest recent"
 msgid "Price"
 msgstr "Prijs"
 
-#: concrete/blocks/core_conversation/form.php:57
+#: concrete/blocks/core_conversation/form.php:68
 #: concrete/themes/dashboard/marketplace.php:45
 msgid "Rating"
 msgstr "Waardering"
@@ -5300,7 +5439,7 @@ msgid "Skill Level"
 msgstr "Moeilijkheidsniveau"
 
 #: concrete/config/install/base/dashboard.xml:4
-#: concrete/config/install/base/dashboard.xml:384
+#: concrete/config/install/base/dashboard.xml:385
 #: concrete/elements/page_controls_footer.php:137
 #: concrete/elements/panels/dashboard.php:11
 #: concrete/elements/panels/dashboard.php:13
@@ -5332,37 +5471,38 @@ msgstr "Gebruikers"
 msgid "Reports"
 msgstr "Rapporten"
 
-#: concrete/config/install/base/dashboard.xml:208
+#: concrete/config/install/base/dashboard.xml:209
 #: concrete/elements/page_controls_footer.php:149
 #: concrete/themes/dashboard/elements/header.php:55
 msgid "Pages & Themes"
 msgstr "Pagina's en Thema's"
 
-#: concrete/config/install/base/dashboard.xml:326
+#: concrete/config/install/base/dashboard.xml:327
 #: concrete/elements/page_controls_footer.php:151
 #: concrete/elements/permission/detail.php:31
 #: concrete/themes/dashboard/elements/header.php:56
 msgid "Workflow"
 msgstr "Workflow"
 
-#: concrete/config/install/base/dashboard.xml:338
+#: concrete/config/install/base/dashboard.xml:339
 #: concrete/elements/page_controls_footer.php:153
 #: concrete/themes/dashboard/elements/header.php:57
 msgid "Stacks & Blocks"
 msgstr "Stapels & Blokken"
 
-#: concrete/config/install/base/dashboard.xml:376
+#: concrete/config/install/base/dashboard.xml:377
 #: concrete/elements/page_controls_footer.php:155
 #: concrete/themes/dashboard/elements/header.php:58
 msgid "Extend concrete5"
 msgstr "Beheer Extensies"
 
-#: concrete/config/install/base/dashboard.xml:442
+#: concrete/config/install/base/dashboard.xml:443
 #: concrete/elements/page_controls_footer.php:157
 #: concrete/themes/dashboard/elements/header.php:59
 msgid "System & Settings"
 msgstr "Systeem & Instellingen"
 
+#: concrete/themes/concrete/view.php:61
 #: concrete/themes/dashboard/elements/header.php:72
 msgctxt "toolbar"
 msgid "Return to Website"
@@ -5442,8 +5582,9 @@ msgstr "Alle rechten voorbehouden."
 msgid "Currently logged in as <b>%s</b>."
 msgstr "Aangemeld als <strong>%s</strong>."
 
-#: concrete/elements/account/menu.php:61
+#: concrete/elements/account/menu.php:47
 #: concrete/elements/page_controls_footer.php:277
+#: concrete/themes/concrete/view.php:51
 #: concrete/themes/dark_chocolate/elements/footer.php:17
 #: concrete/themes/default/elements/footer.php:17
 #: concrete/themes/greek_yogurt/elements/footer.php:19
@@ -5494,6 +5635,17 @@ msgstr "Deel op Twitter"
 #: concrete/themes/greek_yogurt/blog_entry.php:75
 msgid "Share on Facebook"
 msgstr "Deel op Facebook"
+
+#: concrete/elements/page_controls_footer.php:279
+#: concrete/themes/concrete/view.php:53
+msgctxt "toolbar"
+msgid "Sign Out"
+msgstr "Afmelden"
+
+#: concrete/config/install/base/login_registration.xml:28
+#: concrete/elements/account/menu.php:26 concrete/themes/concrete/view.php:69
+msgid "My Account"
+msgstr "Mijn Account"
 
 #: concrete/themes/dark_chocolate/blog_entry.php:19
 #, php-format
@@ -5754,7 +5906,7 @@ msgstr "Ongelezen"
 msgid "Replied"
 msgstr "Beantwoord"
 
-#: concrete/src/Page/Page.php:420
+#: concrete/src/Page/Page.php:422
 #: concrete/src/User/PrivateMessage/PrivateMessage.php:145
 msgid "Unknown User"
 msgstr "Onbekende Gebruiker"
@@ -5910,11 +6062,11 @@ msgstr "Programma"
 #: concrete/single_pages/dashboard/pages/themes/inspect.php:24
 #: concrete/single_pages/dashboard/reports/statistics.php:77
 #: concrete/single_pages/dashboard/system/backup/backup.php:101
-#: concrete/src/File/Type/Type.php:85 concrete/src/File/Version.php:471
+#: concrete/src/File/Type/Type.php:85 concrete/src/File/Version.php:473
 msgid "File"
 msgstr "Bestand"
 
-#: concrete/blocks/form/controller.php:331 concrete/src/File/Importer.php:44
+#: concrete/blocks/form/controller.php:332 concrete/src/File/Importer.php:44
 msgid "Invalid file extension."
 msgstr "Ongeldige bestands extensie."
 
@@ -5958,16 +6110,20 @@ msgstr "Toegevoegd"
 msgid "Active"
 msgstr "Actief"
 
-#: concrete/src/File/Version.php:351
+#: concrete/src/File/Version.php:359
 msgid "(Unknown)"
 msgstr "(Onbekend)"
 
 #: concrete/blocks/tags/controller.php:40
 #: concrete/elements/gathering/data_sources/flickr_feed/options.php:8
-#: concrete/src/File/Version.php:480
-#: concrete/views/dialogs/file/properties.php:104
+#: concrete/src/File/Version.php:482
+#: concrete/views/dialogs/file/properties.php:162
 msgid "Tags"
 msgstr "Labels"
+
+#: concrete/src/File/Version.php:651
+msgid "Invalid dimensions."
+msgstr ""
 
 #: concrete/src/Authentication/AuthenticationType.php:140
 #, php-format
@@ -6020,7 +6176,7 @@ msgstr "Niet mogelijk gebruiker te koppelen."
 
 #. %s is a number
 #: concrete/src/Utility/Service/Number.php:104
-#: concrete/views/dialogs/file/properties.php:81
+#: concrete/views/dialogs/file/properties.php:128
 #, php-format
 msgid "%s byte"
 msgid_plural "%s bytes"
@@ -6068,7 +6224,6 @@ msgstr "Captcha Code"
 msgid "Click the image to see another captcha."
 msgstr "Klik op de afbeelding voor een andere captcha."
 
-#: concrete/blocks/form/view.php:75
 #: concrete/src/Captcha/SecurimageController.php:44
 msgid "Please type the letters and numbers shown in the image."
 msgstr "Type de letters en cijfers van de afbeelding."
@@ -6145,11 +6300,11 @@ msgstr "Geen Eind datum."
 msgid "Repeats %s. "
 msgstr "Wordt herhaald %s."
 
-#: concrete/src/Permission/Key/Key.php:22
+#: concrete/src/Permission/Key/Key.php:23
 msgid "Included"
 msgstr "Inclusief"
 
-#: concrete/src/Permission/Key/Key.php:23
+#: concrete/src/Permission/Key/Key.php:24
 msgid "Excluded"
 msgstr "Exclusief"
 
@@ -6170,7 +6325,7 @@ msgid ""
 "the administrator of this site for more information."
 msgstr "Actie kan niet uitgevoerd worden: uw IP adres is geweerd. Neem contact op met de beheerder van deze website voor meer informatie."
 
-#: concrete/config/install/base/permissions.xml:278
+#: concrete/config/install/base/permissions.xml:279
 #: concrete/src/Permission/Access/Entity/GroupEntity.php:18
 msgctxt "PermissionAccessEntityTypeName"
 msgid "Group"
@@ -6180,7 +6335,7 @@ msgstr "Groep"
 msgid "(Deleted Group)"
 msgstr "Groep is verwijderd."
 
-#: concrete/config/install/base/permissions.xml:379
+#: concrete/config/install/base/permissions.xml:380
 #: concrete/src/Permission/Access/Entity/ConversationMessageAuthorEntity.php:42
 msgctxt "PermissionAccessEntityTypeName"
 msgid "Message Author"
@@ -6196,7 +6351,7 @@ msgstr "Bericht Auteur"
 msgid "Add User"
 msgstr "Gebruiker Toevoegen"
 
-#: concrete/config/install/base/permissions.xml:300
+#: concrete/config/install/base/permissions.xml:301
 #: concrete/src/Permission/Access/Entity/UserEntity.php:68
 msgctxt "PermissionAccessEntityTypeName"
 msgid "User"
@@ -6210,13 +6365,13 @@ msgstr "Verwijderde Gebruikers"
 msgid "Add Group Set"
 msgstr "Groepsverzameling toevoegen"
 
-#: concrete/config/install/base/permissions.xml:322
+#: concrete/config/install/base/permissions.xml:323
 #: concrete/src/Permission/Access/Entity/GroupSetEntity.php:17
 msgctxt "PermissionAccessEntityTypeName"
 msgid "Group Set"
 msgstr "Groepsverzameling"
 
-#: concrete/config/install/base/permissions.xml:373
+#: concrete/config/install/base/permissions.xml:374
 #: concrete/src/Permission/Access/Entity/FileUploaderEntity.php:36
 msgctxt "PermissionAccessEntityTypeName"
 msgid "File Uploader"
@@ -6226,8 +6381,8 @@ msgstr "Bestand Uploader"
 msgid "File Uploader"
 msgstr "Bestand Uploader"
 
-#: concrete/config/install/base/permissions.xml:367
-#: concrete/src/Permission/Access/Entity/PageOwnerEntity.php:41
+#: concrete/config/install/base/permissions.xml:368
+#: concrete/src/Permission/Access/Entity/PageOwnerEntity.php:42
 msgctxt "PermissionAccessEntityTypeName"
 msgid "Page Owner"
 msgstr "Pagina Eigenaar"
@@ -6236,7 +6391,7 @@ msgstr "Pagina Eigenaar"
 msgid "Add Group Combination"
 msgstr "Toevoegen Groep Combinatie"
 
-#: concrete/config/install/base/permissions.xml:344
+#: concrete/config/install/base/permissions.xml:345
 #: concrete/src/Permission/Access/Entity/GroupCombinationEntity.php:17
 msgctxt "PermissionAccessEntityTypeName"
 msgid "Group Combination"
@@ -6299,7 +6454,7 @@ msgctxt "PageTypeComposerControlName"
 msgid "Page Name"
 msgstr "Pagina Naam"
 
-#: concrete/src/Page/Type/Composer/Control/CorePageProperty/NameCorePageProperty.php:39
+#: concrete/src/Page/Type/Composer/Control/CorePageProperty/NameCorePageProperty.php:45
 msgid "You haven't chosen a page name."
 msgstr "U heeft nog geen paginanaam opgegeven."
 
@@ -6344,11 +6499,11 @@ msgstr "Omschrijving"
 msgid "You must specify a page description."
 msgstr "U moet een paginabeschrijving opgeven."
 
-#: concrete/src/Page/Type/Type.php:894
+#: concrete/src/Page/Type/Type.php:898
 msgid "You must choose a page template."
 msgstr "U moet een paginasjabloon kiezen."
 
-#: concrete/src/Page/Type/Type.php:897
+#: concrete/src/Page/Type/Type.php:901
 msgid "This page template is not a valid template for this page type."
 msgstr "Dit paginasjabloon is geen geldig sjabloon voor dit paginatype."
 
@@ -6374,16 +6529,16 @@ msgstr "Alle items"
 msgid "Featured Items"
 msgstr "Aanbevolen items"
 
-#: concrete/src/Page/Page.php:2076
+#: concrete/src/Page/Page.php:2124
 #, php-format
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "Pagina \"%s\" in pad \"%s\" verwijderd"
 
-#: concrete/src/Page/Page.php:2076 concrete/src/Page/Page.php:2140
+#: concrete/src/Page/Page.php:2124 concrete/src/Page/Page.php:2188
 msgid "Page Action"
 msgstr "Pagina actie"
 
-#: concrete/src/Page/Page.php:2140
+#: concrete/src/Page/Page.php:2188
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "Pagina \"%s\" in pad \"%s\" verplaatst naar prullenmand"
@@ -6581,6 +6736,8 @@ msgstr "Workflowtypes"
 msgid "Storage Locations"
 msgstr "Opslaglocaties"
 
+#: concrete/single_pages/dashboard/system/multilingual/page_report.php:88
+#: concrete/single_pages/dashboard/system/multilingual/page_report.php:96
 #: concrete/src/Package/Package.php:434
 #, php-format
 msgid "%s (%s)"
@@ -6960,7 +7117,7 @@ msgstr "Verplaatsing Goedkeuren"
 msgid "On %s, user %s submitted the following request: %s"
 msgstr "Op %s, gebruiker %s heeft het volgende verzoek: %s ingediend "
 
-#: concrete/config/install/base/permissions.xml:274
+#: concrete/config/install/base/permissions.xml:275
 #: concrete/src/Workflow/BasicWorkflow.php:84
 msgid "Basic Workflow"
 msgstr "Basis Workflow"
@@ -7576,7 +7733,7 @@ msgstr "Volledige paginacaching kan drastisch verbeteren van de snelheid van de 
 msgid "Hide All"
 msgstr "Alles verbergen"
 
-#: concrete/elements/page_controls_footer.php:404
+#: concrete/elements/page_controls_footer.php:419
 #: concrete/src/Application/Service/UserInterface.php:285
 msgid "Hide"
 msgstr "Verbergen"
@@ -7607,7 +7764,7 @@ msgstr "Dashboard Home"
 msgid "Customize"
 msgstr "Aanpassen"
 
-#: concrete/config/install/base/dashboard.xml:939
+#: concrete/config/install/base/dashboard.xml:956
 #: concrete/src/Application/Service/Dashboard.php:325
 msgid "Customize Dashboard Home"
 msgstr "Dashboard Home Aanpassen"
@@ -7854,7 +8011,7 @@ msgstr "Kan geen marktplaats token genereren. Zorg er voor dat allow_url_fopen i
 msgid "Unable to get information about this product."
 msgstr "Kan geen informatie over dit product verkrijgen."
 
-#: concrete/src/Search/ItemList/Database/ItemList.php:75
+#: concrete/src/Search/ItemList/Database/ItemList.php:76
 msgid "Invalid SQL in order by"
 msgstr ""
 
@@ -7898,6 +8055,7 @@ msgid "Column %s"
 msgstr "Kolom %s"
 
 #: concrete/elements/progress_bar.php:12
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:216
 msgid "of"
 msgstr "van"
 
@@ -8022,7 +8180,8 @@ msgstr "Bewerk Eigenschappen"
 
 #: concrete/elements/files/search.php:31
 #: concrete/single_pages/dashboard/conversations/messages.php:21
-#: concrete/single_pages/dashboard/reports/logs.php:25
+#: concrete/single_pages/dashboard/reports/logs.php:24
+#: concrete/single_pages/dashboard/system/multilingual/page_report.php:17
 #: concrete/single_pages/dashboard/system/seo/bulk.php:63
 msgid "Keywords"
 msgstr "Zoektermen"
@@ -8174,14 +8333,9 @@ msgstr "Het duurt niet lang en u hoeft uw website niet eens te verlaten."
 msgid "Re-connect to Community"
 msgstr "Verbindt opnieuw met de gemeenschap"
 
-#: concrete/config/install/base/login_registration.xml:28
-#: concrete/elements/account/menu.php:26
-msgid "My Account"
-msgstr "Mijn Account"
-
 #: concrete/config/install/packages/elemental_blank/content.xml:43
 #: concrete/config/install/packages/elemental_full/content.xml:876
-#: concrete/elements/account/menu.php:60
+#: concrete/elements/account/menu.php:46
 #: concrete/single_pages/dashboard/system/view.php:41
 #: concrete/single_pages/dashboard/view.php:42
 #: concrete/single_pages/members/profile.php:17
@@ -8244,53 +8398,60 @@ msgstr "CMS door: <a href=\"%s\">Concrete5</a>."
 msgid "Dashboard – Change Site-wide Settings"
 msgstr "Dashboard - Wijzig algemene instellingen"
 
-#: concrete/elements/page_controls_footer.php:279
-msgctxt "toolbar"
-msgid "Sign Out"
-msgstr "Afmelden"
-
 #: concrete/elements/page_controls_footer.php:286
 msgid "Add Pages and Navigate Your Site"
 msgstr "Pagina's toevoegen en Navigeren door uw site"
 
-#: concrete/elements/page_controls_footer.php:323
+#: concrete/elements/page_controls_footer.php:300
+msgid "Navigate this page in other languages"
+msgstr ""
+
+#: concrete/elements/page_controls_footer.php:338
 msgid "Editing Unavailable."
 msgstr "Bewerken niet beschikbaar."
 
-#: concrete/elements/page_controls_footer.php:324
+#: concrete/elements/page_controls_footer.php:339
 #, php-format
 msgid "%s is currently editing this page."
 msgstr "%s is deze pagina aan het wijzigen / bewerken."
 
-#: concrete/elements/page_controls_footer.php:335
+#: concrete/elements/page_controls_footer.php:350
 msgid "View/Edit Original"
 msgstr "Bekijk/Wijzig Origineel"
 
-#: concrete/elements/page_controls_footer.php:338
+#: concrete/elements/page_controls_footer.php:353
 msgid "Remove Alias"
 msgstr "Alias Verwijderen"
 
-#: concrete/elements/page_controls_footer.php:343
+#: concrete/elements/page_controls_footer.php:358
 msgid "Page Alias."
 msgstr "Pagina Alias."
 
-#: concrete/elements/page_controls_footer.php:344
+#: concrete/elements/page_controls_footer.php:359
 msgid "This page is an alias of one that actually appears elsewhere."
 msgstr "Deze pagina is een alias van een pagina die elders staat."
 
-#: concrete/elements/page_controls_footer.php:424
+#: concrete/elements/page_controls_footer.php:433
+msgid "Page Draft."
+msgstr ""
+
+#: concrete/elements/page_controls_footer.php:434
+msgid "This is an un-published draft."
+msgstr ""
+
+#: concrete/elements/page_controls_footer.php:446
 msgid "Submit for Approval"
 msgstr "Inzenden voor review"
 
-#: concrete/elements/page_controls_footer.php:428
+#: concrete/elements/page_controls_footer.php:450
 msgid "Approve Version"
 msgstr "Versie Goedkeuren"
 
-#: concrete/elements/page_controls_footer.php:437
+#: concrete/elements/page_controls_footer.php:459
 msgid "Page is Pending Approval."
 msgstr "Pagina is wacht op goedkeuring."
 
-#: concrete/elements/page_controls_footer.php:438
+#: concrete/elements/page_controls_footer.php:460
 msgid "This page is newer than what appears to visitors on your live site."
 msgstr "Deze pagina is nieuwer dan wat op bezoekers op uw live site lijkt."
 
@@ -8363,17 +8524,17 @@ msgstr "Afmelden"
 msgid "Page Settings"
 msgstr "Pagina-instellingen"
 
-#: concrete/elements/panels/page.php:23
+#: concrete/elements/panels/page.php:28
 #: concrete/single_pages/dashboard/composer/write.php:21
 msgid "Composer"
 msgstr "Composer"
 
-#: concrete/elements/panels/page.php:127
+#: concrete/elements/panels/page.php:134
 #: concrete/views/panels/page/preview_as/form.php:10
 msgid "View as User"
 msgstr "Weergave als gebruiker"
 
-#: concrete/elements/panels/page.php:138 concrete/elements/panels/page.php:139
+#: concrete/elements/panels/page.php:145 concrete/elements/panels/page.php:146
 msgid "Delete Page"
 msgstr "Verwijder Pagina"
 
@@ -8494,15 +8655,15 @@ msgstr "Marge en Opvulling"
 msgid "Padding"
 msgstr "Opvulling"
 
-#: concrete/blocks/core_conversation/form.php:89
-#: concrete/blocks/core_conversation/form.php:126
+#: concrete/blocks/core_conversation/form.php:100
+#: concrete/blocks/core_conversation/form.php:137
 #: concrete/elements/custom_style.php:185
 #: concrete/elements/custom_style.php:217
 msgid "Top"
 msgstr "Boven"
 
-#: concrete/blocks/core_conversation/form.php:94
-#: concrete/blocks/core_conversation/form.php:132
+#: concrete/blocks/core_conversation/form.php:105
+#: concrete/blocks/core_conversation/form.php:143
 #: concrete/elements/custom_style.php:199
 #: concrete/elements/custom_style.php:231
 msgid "Bottom"
@@ -8577,6 +8738,7 @@ msgid "Edit Details"
 msgstr "Categorie details aanpassen"
 
 #: concrete/elements/workflow/type_form_required.php:50
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:88
 #: concrete/single_pages/dashboard/users/points/actions.php:65
 #: concrete/single_pages/dashboard/users/points/assign.php:45
 msgid "Back to List"
@@ -8707,6 +8869,7 @@ msgstr "Gebruikersnaam of E-mail"
 msgid "In Group"
 msgstr "In groep"
 
+#: concrete/blocks/switch_language/form.php:2
 #: concrete/elements/permission/help.php:3
 #: concrete/elements/permission/help.php:4
 #: concrete/elements/permission/help.php:5
@@ -8991,7 +9154,7 @@ msgstr "Groep is toegevoegd."
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:255
 #: concrete/single_pages/dashboard/users/group_sets.php:13
 #: concrete/single_pages/dashboard/users/points/view.php:36
-#: concrete/views/dialogs/file/properties.php:13
+#: concrete/views/dialogs/file/properties.php:14
 msgid "Details"
 msgstr "Details"
 
@@ -9096,16 +9259,16 @@ msgstr "Dit besturingselement verwijderen? Dit kan niet ongedaan worden gemaakt.
 msgid "Update Set"
 msgstr "Verzameling bijwerken"
 
-#: concrete/elements/page_types/composer/form/output/buttons.php:7
+#: concrete/elements/page_types/composer/form/output/buttons.php:6
 msgid "Publish"
 msgstr "Publiceren"
 
-#: concrete/elements/page_types/composer/form/output/buttons.php:17
+#: concrete/elements/page_types/composer/form/output/buttons.php:15
 #: concrete/views/panels/page/check_in.php:65
 msgid "Discard Draft"
 msgstr "Pagina-ontwerp verwijderen"
 
-#: concrete/elements/page_types/composer/form/output/buttons.php:18
+#: concrete/elements/page_types/composer/form/output/buttons.php:16
 msgid "Save and Exit"
 msgstr "Opslaan en afsluiten"
 
@@ -9171,7 +9334,7 @@ msgstr "Geselecteerde paginasjablonen"
 msgid "Everything But Selected"
 msgstr "Alles behalve geselecteerde"
 
-#: concrete/config/install/base/dashboard.xml:280
+#: concrete/config/install/base/dashboard.xml:281
 #: concrete/elements/page_types/form/base.php:70
 #: concrete/single_pages/dashboard/pages/themes/view.php:52
 msgid "Page Templates"
@@ -9239,7 +9402,7 @@ msgstr "Blok machtigingen"
 
 #: concrete/elements/conversation/message.php:35
 #: concrete/single_pages/dashboard/reports/statistics.php:110
-#: concrete/views/dialogs/file/properties.php:267
+#: concrete/views/dialogs/file/properties.php:341
 msgid "Anonymous"
 msgstr "Anoniem"
 
@@ -9270,7 +9433,7 @@ msgid "Get message URL."
 msgstr "Haal bericht URL"
 
 #: concrete/blocks/form/mini_survey.php:169
-#: concrete/blocks/form/mini_survey.php:171 concrete/blocks/form/view.php:76
+#: concrete/blocks/form/mini_survey.php:171 concrete/blocks/form/view.php:75
 #: concrete/elements/conversation/display.php:30
 #: concrete/single_pages/login.php:106
 msgid "Submit"
@@ -9454,7 +9617,7 @@ msgstr "Override blok type cache instellingen."
 
 #: concrete/blocks/autonav/form_setup_html.php:16
 #: concrete/blocks/page_list/page_list_form.php:11
-#: concrete/config/install/base/dashboard.xml:779
+#: concrete/config/install/base/dashboard.xml:796
 #: concrete/single_pages/dashboard/system/mail/importers.php:19
 #: concrete/views/dialogs/block/cache.php:39
 msgid "Settings"
@@ -9528,6 +9691,8 @@ msgstr "Paginasjabloon"
 msgid "This is a single page. It does not have a page template."
 msgstr "Dit is een enkele pagina. Het heeft geen pagina template."
 
+#: concrete/views/dialogs/page/add.php:16
+#: concrete/views/dialogs/page/add.php:26
 #: concrete/views/dialogs/page/add_block_list.php:36
 #: concrete/views/dialogs/page/add_block_list.php:64
 #: concrete/views/dialogs/page/clipboard.php:22
@@ -9579,6 +9744,11 @@ msgstr "Verwijderde pagina's worden verplaats naar de prullenbak in de sitemap."
 msgid "This cannot be undone."
 msgstr "Dit kan niet ongedaan worden gemaakt"
 
+#: concrete/views/dialogs/page/add/compose.php:11
+#: concrete/views/panels/page/check_in.php:16
+msgid "Publish Page"
+msgstr "Publiceer Pagina"
+
 #: concrete/views/dialogs/page/add.php:10
 msgid "Commonly Used"
 msgstr "Gewoonlijk gebruikt"
@@ -9621,102 +9791,112 @@ msgid ""
 "the past."
 msgstr "Een voorinstelling verwijderen zal geen invloed hebben op alle layouts die deze voorinstelling in het verleden hebben gebruikt."
 
-#: concrete/views/dialogs/file/properties.php:15
+#: concrete/views/dialogs/file/properties.php:16
 msgid "Statistics"
 msgstr "Statistieken"
 
-#: concrete/views/dialogs/file/properties.php:34
+#: concrete/views/dialogs/file/properties.php:35
 msgid "Basic Properties"
 msgstr "Basis Proporties"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:52
 #: concrete/single_pages/dashboard/system/registration/authentication.php:30
-#: concrete/views/dialogs/file/properties.php:36
+#: concrete/views/dialogs/file/properties.php:38
 msgid "ID"
 msgstr "ID"
 
-#: concrete/views/dialogs/file/properties.php:37
+#: concrete/views/dialogs/file/properties.php:40
 msgid "Version"
 msgstr "Versie"
 
-#: concrete/views/dialogs/file/properties.php:47
+#: concrete/views/dialogs/file/properties.php:50
 msgid "URL to File"
 msgstr "URL naar bestand"
 
-#: concrete/views/dialogs/file/properties.php:57
+#: concrete/views/dialogs/file/properties.php:60
 msgid "Dashboard File Manager"
 msgstr "Dashboard Bestandsbeheer"
 
-#: concrete/views/dialogs/file/properties.php:62
+#: concrete/views/dialogs/file/properties.php:65
 msgid "Page Added To"
 msgstr "Pagina toegevoegd aan"
 
-#: concrete/config/install/base/dashboard.xml:589
-#: concrete/views/dialogs/file/properties.php:75
+#: concrete/config/install/base/dashboard.xml:606
+#: concrete/views/dialogs/file/properties.php:82
+#: concrete/views/dialogs/file/properties.php:98
+#: concrete/views/dialogs/file/properties.php:114
 msgid "Thumbnails"
 msgstr "Thumbnails"
 
-#: concrete/views/dialogs/file/properties.php:76
+#: concrete/views/dialogs/file/properties.php:85
+msgid "Invalid file dimensions, please rescan this file."
+msgstr ""
+
+#: concrete/views/dialogs/file/properties.php:101
+msgid "Unknown error retrieving thumbnails, please rescan this file."
+msgstr ""
+
+#: concrete/views/dialogs/file/properties.php:116
 msgid "Thumbnail Images"
 msgstr "Thumbnail Afbeeldingen"
 
-#: concrete/views/dialogs/file/properties.php:85
+#: concrete/views/dialogs/file/properties.php:136
 #, php-format
 msgid "Added by <strong>%s</strong> on %s"
 msgstr "Toegevoegd door <strong>%s</strong> op %s"
 
-#: concrete/views/dialogs/file/properties.php:116
+#: concrete/views/dialogs/file/properties.php:176
 #, php-format
 msgid "%s File Properties"
 msgstr "Bestand Proporties van %s"
 
-#: concrete/views/dialogs/file/properties.php:141
+#: concrete/views/dialogs/file/properties.php:203
 msgid "Other Properties"
 msgstr "Andere Eigenschappen"
 
-#: concrete/views/dialogs/file/properties.php:160
+#: concrete/views/dialogs/file/properties.php:224
 msgid "File Preview"
 msgstr "Bestands voorvertoning"
 
 #: concrete/single_pages/dashboard/users/points/assign.php:28
-#: concrete/views/dialogs/file/properties.php:181
+#: concrete/views/dialogs/file/properties.php:245
 msgid "Comments"
 msgstr "Reacties"
 
-#: concrete/views/dialogs/file/properties.php:182
+#: concrete/views/dialogs/file/properties.php:246
 msgid "Creator"
 msgstr "Auteur"
 
-#: concrete/views/dialogs/file/properties.php:183
+#: concrete/views/dialogs/file/properties.php:247
 msgid "Added On"
 msgstr "Toegevoegd op"
 
-#: concrete/views/dialogs/file/properties.php:197
+#: concrete/views/dialogs/file/properties.php:266
 msgid "Preview File"
 msgstr "Voorvertoningsbestand"
 
-#: concrete/views/dialogs/file/properties.php:210
+#: concrete/views/dialogs/file/properties.php:279
 msgid "Updated "
 msgstr "Bijgewerkt"
 
-#: concrete/views/dialogs/file/properties.php:243
+#: concrete/views/dialogs/file/properties.php:314
 msgid "Total Downloads"
 msgstr "Totale Downloads"
 
-#: concrete/views/dialogs/file/properties.php:248
+#: concrete/views/dialogs/file/properties.php:320
 msgid "Most Recent Downloads"
 msgstr "Meest recente Downloads"
 
-#: concrete/views/dialogs/file/properties.php:252
+#: concrete/views/dialogs/file/properties.php:324
 msgid "Download Time"
 msgstr "Download tijd"
 
-#: concrete/views/dialogs/file/properties.php:253
+#: concrete/views/dialogs/file/properties.php:325
 msgid "File Version ID"
 msgstr "Bestandsversie ID"
 
 #: concrete/single_pages/dashboard/reports/statistics.php:116
-#: concrete/views/dialogs/file/properties.php:273
+#: concrete/views/dialogs/file/properties.php:347
 msgid "Deleted User"
 msgstr "Verwijderde Gebruikers"
 
@@ -9744,6 +9924,34 @@ msgid ""
 "this thumbnail configuration."
 msgstr "Geen thumbnail gevonden. Meestal komt dit doordat het bronbestand kleiner is dan de thumbnail instelling."
 
+#: concrete/views/dialogs/file/thumbnails/edit.php:19
+msgid "Invalid File Dimensions"
+msgstr ""
+
+#: concrete/views/dialogs/file/thumbnails/edit.php:21
+msgid ""
+"The dimensions for this image are either unspecified or invalid. Please "
+"rescan this file or manually enter the correct dimensions."
+msgstr ""
+
+#: concrete/views/dialogs/file/thumbnails/edit.php:27
+msgid "Unknown Error"
+msgstr "Onbekende fout"
+
+#: concrete/views/dialogs/file/thumbnails/edit.php:28
+msgid "An unknown error occurred while trying to find the thumbnails!"
+msgstr ""
+
+#: concrete/views/dialogs/file/thumbnails/edit.php:47
+msgid "Unable to find requested thumbnail"
+msgstr ""
+
+#: concrete/views/dialogs/file/thumbnails/edit.php:49
+msgid ""
+"The thumbnail you requested was not included in the available thumbnails, is"
+" your source image smaller than the thumbnail?"
+msgstr ""
+
 #: concrete/views/panels/page/versions.php:35
 #: concrete/views/panels/sitemap.php:5
 msgid "New Page"
@@ -9761,6 +9969,32 @@ msgstr "Pagina ontwerpen"
 #: concrete/views/panels/sitemap.php:53
 msgid "(Untitled)"
 msgstr "(Untitled)"
+
+#: concrete/views/panels/multilingual.php:6
+msgid "Currently Viewing"
+msgstr ""
+
+#: concrete/views/panels/multilingual.php:16
+msgid "Mapped in Other Sections"
+msgstr ""
+
+#: concrete/views/panels/multilingual.php:30
+msgid "None Created"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/multilingual/page_report.php:148
+#: concrete/views/panels/multilingual.php:35
+#: concrete/views/panels/multilingual.php:37
+msgid "Create Page"
+msgstr ""
+
+#: concrete/views/panels/multilingual.php:37
+msgid "Parent page does not exist. Create the parent page in this tree first."
+msgstr ""
+
+#: concrete/views/panels/multilingual.php:40
+msgid "Map Existing Page"
+msgstr ""
 
 #: concrete/views/panels/details/page/permissions/simple.php:9
 msgid "Who can view this page?"
@@ -9885,7 +10119,7 @@ msgstr "Datum / Tijd"
 msgid "View As"
 msgstr "Weergeven als"
 
-#: concrete/single_pages/dashboard/reports/logs.php:85
+#: concrete/single_pages/dashboard/reports/logs.php:81
 #: concrete/views/panels/page/preview_as/form.php:24
 msgid "Guest"
 msgstr "Gast"
@@ -9953,10 +10187,6 @@ msgstr "Vergelijk"
 msgid "Version Comments"
 msgstr "Versie Omschrijving"
 
-#: concrete/views/panels/page/check_in.php:16
-msgid "Publish Page"
-msgstr "Publiceer Pagina"
-
 #: concrete/views/panels/page/check_in.php:18
 msgid "Publish Changes"
 msgstr "Publiceer Wijzigingen"
@@ -9986,13 +10216,13 @@ msgstr "Blokken"
 msgid "Clipboard"
 msgstr "Klembord"
 
-#: concrete/config/install/base/dashboard.xml:340
+#: concrete/config/install/base/dashboard.xml:341
 #: concrete/config/install/base/login_registration.xml:19
 #: concrete/views/panels/add.php:27
 msgid "Stacks"
 msgstr "Stapels"
 
-#: concrete/config/install/base/dashboard.xml:902
+#: concrete/config/install/base/dashboard.xml:919
 #: concrete/views/panels/add.php:71
 msgid "Stack"
 msgstr "Stapel"
@@ -10113,7 +10343,7 @@ msgstr "Begin met installeren"
 msgid "Site Information"
 msgstr "Website Informatie"
 
-#: concrete/config/install/base/dashboard.xml:452
+#: concrete/config/install/base/dashboard.xml:453
 #: concrete/single_pages/dashboard/system/basics/name.php:7
 #: concrete/views/frontend/install.php:150
 msgid "Site Name"
@@ -10344,6 +10574,8 @@ msgid ""
 " href=\"%s\">have us host a copy</a> for you."
 msgstr "Problemen? Ga naar de <a href=\"%s\">installatie help forums</a> of <a href=\"%s\">laat ons de website hosten</a>."
 
+#: concrete/blocks/switch_language/controller.php:73
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:40
 #: concrete/views/frontend/install.php:553
 msgid "Choose Language"
 msgstr "Kies een taal"
@@ -10596,149 +10828,149 @@ msgstr "Lege Website"
 msgid "Creates an empty site using the unstyled Elemental theme."
 msgstr "Hiermee maakt u een lege site met het Elemental thema."
 
-#: concrete/config/app.php:380
+#: concrete/config/app.php:389
 msgid "JPEG"
 msgstr "JPEG"
 
-#: concrete/config/app.php:381
+#: concrete/config/app.php:390
 msgid "GIF"
 msgstr "GIF"
 
-#: concrete/config/app.php:382
+#: concrete/config/app.php:391
 msgid "PNG"
 msgstr "PNG"
 
-#: concrete/config/app.php:383
+#: concrete/config/app.php:392
 msgid "Windows Bitmap"
 msgstr "Windows Bitmap"
 
-#: concrete/config/app.php:384
+#: concrete/config/app.php:393
 msgid "TIFF"
 msgstr "TIFF"
 
-#: concrete/config/app.php:386
+#: concrete/config/app.php:395
 msgid "Flash"
 msgstr "Flash"
 
-#: concrete/blocks/feature/form.php:4 concrete/config/app.php:387
+#: concrete/blocks/feature/form.php:4 concrete/config/app.php:396
 #: concrete/single_pages/dashboard/pages/templates/add.php:27
 #: concrete/single_pages/dashboard/pages/templates/view.php:39
 msgid "Icon"
 msgstr "Pictogram"
 
-#: concrete/config/app.php:388
+#: concrete/config/app.php:397
 msgid "SVG"
 msgstr "SVG"
 
-#: concrete/config/app.php:389
+#: concrete/config/app.php:398
 msgid "Windows Video"
 msgstr "Windows Video"
 
-#: concrete/config/app.php:390
+#: concrete/config/app.php:399
 msgid "Quicktime"
 msgstr "Quicktime"
 
-#: concrete/config/app.php:391
+#: concrete/config/app.php:400
 msgid "AVI"
 msgstr "AVI"
 
-#: concrete/config/app.php:392
+#: concrete/config/app.php:401
 msgid "3GP"
 msgstr "3GP"
 
-#: concrete/attributes/textarea/type_form.php:9 concrete/config/app.php:393
+#: concrete/attributes/textarea/type_form.php:9 concrete/config/app.php:402
 msgid "Plain Text"
 msgstr "Tekst zonder Opmaak "
 
-#: concrete/config/app.php:394
+#: concrete/config/app.php:403
 msgid "CSV"
 msgstr "CSV"
 
-#: concrete/config/app.php:395
+#: concrete/config/app.php:404
 msgid "XML"
 msgstr "CML"
 
-#: concrete/config/app.php:396
+#: concrete/config/app.php:405
 msgid "PHP"
 msgstr "PHP"
 
-#: concrete/config/app.php:397
+#: concrete/config/app.php:406
 msgid "MS Word"
 msgstr "MS Word"
 
-#: concrete/config/app.php:398
+#: concrete/config/app.php:407
 msgid "Stylesheet"
 msgstr "Stijlblad"
 
-#: concrete/config/app.php:399 concrete/config/app.php:402
+#: concrete/config/app.php:408 concrete/config/app.php:411
 msgid "MP4"
 msgstr "MP4"
 
-#: concrete/config/app.php:400
+#: concrete/config/app.php:409
 msgid "FLV"
 msgstr "FLV"
 
-#: concrete/config/app.php:401
+#: concrete/config/app.php:410
 msgid "MP3"
 msgstr "MP3"
 
-#: concrete/config/app.php:403
+#: concrete/config/app.php:412
 msgid "Realaudio"
 msgstr "Realaudio"
 
-#: concrete/config/app.php:404
+#: concrete/config/app.php:413
 msgid "Windows Audio"
 msgstr "Windows Audio"
 
-#: concrete/config/app.php:405
+#: concrete/config/app.php:414
 msgid "Rich Text"
 msgstr "RTF"
 
-#: concrete/config/app.php:406
+#: concrete/config/app.php:415
 msgid "JavaScript"
 msgstr "JavaScript"
 
-#: concrete/config/app.php:407
+#: concrete/config/app.php:416
 msgid "PDF"
 msgstr "PDF"
 
-#: concrete/config/app.php:408
+#: concrete/config/app.php:417
 msgid "Photoshop"
 msgstr "Photoshop"
 
-#: concrete/config/app.php:409
+#: concrete/config/app.php:418
 msgid "MPEG"
 msgstr "MPEG"
 
-#: concrete/config/app.php:410
+#: concrete/config/app.php:419
 msgid "MS Excel"
 msgstr "MS Excel"
 
-#: concrete/config/app.php:411
+#: concrete/config/app.php:420
 msgid "MS Powerpoint"
 msgstr "MS Powerpoint"
 
-#: concrete/config/app.php:412
+#: concrete/config/app.php:421
 msgid "TAR Archive"
 msgstr "TAR Archief"
 
-#: concrete/config/app.php:413
+#: concrete/config/app.php:422
 msgid "Zip Archive"
 msgstr "Zip Archief"
 
-#: concrete/config/app.php:414
+#: concrete/config/app.php:423
 msgid "GZip Archive"
 msgstr "GZip Archief"
 
-#: concrete/config/app.php:415
+#: concrete/config/app.php:424
 msgid "OGG"
 msgstr "OGG"
 
-#: concrete/config/app.php:416
+#: concrete/config/app.php:425
 msgid "OGG Video"
 msgstr "OGG Video"
 
-#: concrete/config/app.php:417
+#: concrete/config/app.php:426
 msgid "WebM"
 msgstr "WebM"
 
@@ -10918,7 +11150,7 @@ msgstr "Items Per pagina"
 msgid "Enable New Topics"
 msgstr "Inschakelen van nieuwe onderwerpen"
 
-#: concrete/blocks/core_conversation/form.php:117
+#: concrete/blocks/core_conversation/form.php:128
 #: concrete/blocks/core_gathering/form/posting.php:21
 #: concrete/blocks/discussion/form.php:55
 msgid "No, posting is disabled."
@@ -10963,7 +11195,7 @@ msgstr "Gegevensbronnen"
 msgid "Output"
 msgstr "Uitvoer"
 
-#: concrete/blocks/core_conversation/form.php:101
+#: concrete/blocks/core_conversation/form.php:112
 #: concrete/blocks/core_gathering/add.php:8
 #: concrete/blocks/core_gathering/edit.php:9
 #: concrete/blocks/discussion/form.php:42
@@ -11269,6 +11501,18 @@ msgstr "Selecteer WebM videobestand"
 msgid "For adding HTML by hand."
 msgstr "Om handmatig HTML toe te voegen."
 
+#: concrete/blocks/switch_language/controller.php:22
+msgid "Adds a front-end language switcher to your website."
+msgstr "Voegt een front-end taal switcher toe aan uw website."
+
+#: concrete/blocks/switch_language/controller.php:27
+msgid "Switch Language"
+msgstr "Wissel taal"
+
+#: concrete/blocks/switch_language/templates/flags_set_default/view.php:29
+msgid "Remember my choice on this computer."
+msgstr "Onthoud mijn keuze op deze computer."
+
 #: concrete/blocks/core_conversation_message/controller.php:21
 msgid "Places a conversation message into a page."
 msgstr "Plaatst een gespreksbericht in een pagina."
@@ -11284,7 +11528,7 @@ msgstr "Uw onderwerp mag niet leeg zijn."
 #: concrete/blocks/core_conversation_message/composer.php:19
 #: concrete/single_pages/account/messages/inbox.php:173
 #: concrete/single_pages/dashboard/conversations/messages.php:58
-#: concrete/single_pages/dashboard/reports/logs.php:71
+#: concrete/single_pages/dashboard/reports/logs.php:67
 msgid "Message"
 msgstr "Bericht"
 
@@ -11340,135 +11584,135 @@ msgstr "U moet een geldig afbeeldingsbestand opgeven."
 msgid "Empty Image Block."
 msgstr "Leeg afbeeldingsblok"
 
-#: concrete/blocks/core_conversation/form.php:28
+#: concrete/blocks/core_conversation/form.php:39
 #: concrete/blocks/discussion/form.php:20
 msgid "Message List"
 msgstr "Berichtenlijst"
 
-#: concrete/blocks/core_conversation/form.php:30
+#: concrete/blocks/core_conversation/form.php:41
 msgid "Display Mode"
 msgstr "Weergavemodus"
 
-#: concrete/blocks/core_conversation/form.php:34
+#: concrete/blocks/core_conversation/form.php:45
 msgid "Threaded"
 msgstr "Gesprekslijn"
 
-#: concrete/blocks/core_conversation/form.php:40
+#: concrete/blocks/core_conversation/form.php:51
 msgid "Flat"
 msgstr "Plat"
 
-#: concrete/blocks/core_conversation/form.php:45
+#: concrete/blocks/core_conversation/form.php:56
 #: concrete/blocks/discussion/form.php:22
 msgid "Ordering"
 msgstr "Bestellen"
 
-#: concrete/blocks/core_conversation/form.php:46
+#: concrete/blocks/core_conversation/form.php:57
 msgid "Most Recent First"
 msgstr "Meest recente eerst"
 
-#: concrete/blocks/core_conversation/form.php:46
+#: concrete/blocks/core_conversation/form.php:57
 msgid "Highest Rated"
 msgstr "Hoogste Waardering"
 
-#: concrete/blocks/core_conversation/form.php:52
+#: concrete/blocks/core_conversation/form.php:63
 #: concrete/blocks/discussion/form.php:28
 msgid "Display Ordering Option in Page"
 msgstr "Toon volgorde optie in pagina"
 
-#: concrete/blocks/core_conversation/form.php:61
+#: concrete/blocks/core_conversation/form.php:72
 msgid "Enable Comment Rating"
 msgstr "Commentaar waardering inschakelen"
 
-#: concrete/blocks/core_conversation/form.php:66
+#: concrete/blocks/core_conversation/form.php:77
 msgid "Paginate Message List"
 msgstr "Berichtenlijst pagineren"
 
-#: concrete/blocks/core_conversation/form.php:70
+#: concrete/blocks/core_conversation/form.php:81
 msgid "No, display all messages."
 msgstr "Nee, alle berichten weergeven"
 
-#: concrete/blocks/core_conversation/form.php:76
+#: concrete/blocks/core_conversation/form.php:87
 msgid "Yes, display only a sub-set of messages at a time."
 msgstr "Ja, alleen een deelverzameling van berichten op een tijdstip weergegeven."
 
-#: concrete/blocks/core_conversation/form.php:81
+#: concrete/blocks/core_conversation/form.php:92
 msgid "Messages Per Page"
 msgstr "Berichten per pagina"
 
-#: concrete/blocks/core_conversation/form.php:85
+#: concrete/blocks/core_conversation/form.php:96
 msgid "Add New Messages"
 msgstr "Nieuwe berichten toevoegen"
 
-#: concrete/blocks/core_conversation/form.php:103
+#: concrete/blocks/core_conversation/form.php:114
 msgid "Add Message Label"
 msgstr "Berichtlabel toevoegen"
 
-#: concrete/blocks/core_conversation/form.php:107
+#: concrete/blocks/core_conversation/form.php:118
 msgid "Enable Posting"
 msgstr "Berichten toevoegen inschakelen"
 
-#: concrete/blocks/core_conversation/form.php:111
+#: concrete/blocks/core_conversation/form.php:122
 msgid "Yes, this conversation accepts messages and replies."
 msgstr "Ja, dit gesprek accepteert berichten en antwoorden."
 
-#: concrete/blocks/core_conversation/form.php:122
+#: concrete/blocks/core_conversation/form.php:133
 msgid "Display Posting Form"
 msgstr "Toon Berichtformulier"
 
-#: concrete/blocks/core_conversation/form.php:138
+#: concrete/blocks/core_conversation/form.php:149
 #: concrete/blocks/rss_displayer/form_setup_html.php:18
 msgid "Date Format"
 msgstr "Datum Formaat"
 
-#: concrete/blocks/core_conversation/form.php:143
+#: concrete/blocks/core_conversation/form.php:154
 msgid "Use Site Default."
 msgstr "Gebruik de site standaard."
 
-#: concrete/blocks/core_conversation/form.php:149
+#: concrete/blocks/core_conversation/form.php:160
 msgid "Time elapsed since post."
 msgstr "Tijd verstreken sinds plaatsing."
 
-#: concrete/blocks/core_conversation/form.php:162
+#: concrete/blocks/core_conversation/form.php:173
 msgid "File Attachment Management"
 msgstr "Bijlage bestandsbeheer"
 
-#: concrete/blocks/core_conversation/form.php:163
+#: concrete/blocks/core_conversation/form.php:174
 msgid ""
 "Note: Entering values here will override global conversations file "
 "attachment settings for this block if you enable Attachment Overrides for "
 "this Conversation."
 msgstr "Opmerking: Hier ingevoerde instellingen overschrijven de globale bijlage instellingen op conversaties voor dit blok wanneer u de Bijlage Overschrijving aanzet voor deze conversatie."
 
-#: concrete/blocks/core_conversation/form.php:167
+#: concrete/blocks/core_conversation/form.php:178
 msgid "Enable Attachment Overrides"
 msgstr "Bijlage overschrijving inschakelen"
 
-#: concrete/blocks/core_conversation/form.php:175
+#: concrete/blocks/core_conversation/form.php:186
 #: concrete/single_pages/dashboard/system/conversations/settings.php:11
 msgid "Enable Attachments"
 msgstr "Bijlagen inschakelen"
 
-#: concrete/blocks/core_conversation/form.php:180
+#: concrete/blocks/core_conversation/form.php:191
 #: concrete/single_pages/dashboard/system/conversations/settings.php:15
 msgid "Max Attachment Size for Guest Users. (MB)"
 msgstr "Maximale bijlage-grootte voor gastgebruikers. (MB)"
 
-#: concrete/blocks/core_conversation/form.php:186
+#: concrete/blocks/core_conversation/form.php:197
 #: concrete/single_pages/dashboard/system/conversations/settings.php:19
 msgid "Max Attachment Size for Registered Users. (MB)"
 msgstr "Maximale bijlage-grootte voor geregistreerde gebruikers. (MB)"
 
-#: concrete/blocks/core_conversation/form.php:192
+#: concrete/blocks/core_conversation/form.php:203
 #: concrete/single_pages/dashboard/system/conversations/settings.php:23
 msgid "Max Attachments Per Message for Guest Users."
 msgstr "Maximaal aantal bijlagen per bericht voor gastgebruikers."
 
-#: concrete/blocks/core_conversation/form.php:198
+#: concrete/blocks/core_conversation/form.php:209
 #: concrete/single_pages/dashboard/system/conversations/settings.php:27
 msgid "Max Attachments Per Message for Registered Users"
 msgstr "Maximaal aantal bijlagen per bericht voor geregistreerde gebruikers"
 
-#: concrete/blocks/core_conversation/form.php:204
+#: concrete/blocks/core_conversation/form.php:215
 #: concrete/single_pages/dashboard/system/conversations/settings.php:31
 msgid "Allowed File Extensions (Comma separated, no periods)."
 msgstr "Toegestane bestandsextensies (komma gescheiden, geen punten)."
@@ -11546,33 +11790,33 @@ msgstr "Voeg tenminste één vraag toe aan uw formulier."
 msgid "Thanks!"
 msgstr "Bedankt!"
 
-#: concrete/blocks/form/controller.php:264
+#: concrete/blocks/form/controller.php:265
 msgid ""
 "Oops, something is wrong with the form you posted (it doesn't have a "
 "question set id)."
 msgstr "Er is iets mis gegaan met het verzenden van het formulier (het heeft geen vraag set id)."
 
-#: concrete/blocks/form/controller.php:273
+#: concrete/blocks/form/controller.php:274
 msgid "Incorrect captcha code"
 msgstr "Onjuiste captcha code"
 
-#: concrete/blocks/form/controller.php:293
+#: concrete/blocks/form/controller.php:294
 msgid "You must enter a valid email address."
 msgstr "U moet een geldig e-mail adres opgeven."
 
-#: concrete/blocks/form/controller.php:310
+#: concrete/blocks/form/controller.php:311
 msgid "Complete required fields *"
 msgstr "De velden gemarkeerd met  * zijn verplicht"
 
-#: concrete/blocks/form/controller.php:352
+#: concrete/blocks/form/controller.php:353
 msgid "Please correct the following errors:"
 msgstr "Verhelp de volgende fouten:"
 
-#: concrete/blocks/form/controller.php:398
+#: concrete/blocks/form/controller.php:399
 msgid "No file specified"
 msgstr "Geen bestand gespecificeerd"
 
-#: concrete/blocks/form/controller.php:466
+#: concrete/blocks/form/controller.php:467
 #, php-format
 msgid "%s Form Submission"
 msgstr "%s Formulier Versturen"
@@ -12402,7 +12646,7 @@ msgid "Allows users to add social icons to their website"
 msgstr "Stelt gebruikers in staat om Social Media Icons aan hun website toevoegen"
 
 #: concrete/blocks/social_links/controller.php:31
-#: concrete/config/install/base/dashboard.xml:468
+#: concrete/config/install/base/dashboard.xml:469
 msgid "Social Links"
 msgstr "Social Media Links"
 
@@ -12519,7 +12763,7 @@ msgid "Topic List"
 msgstr "Onderwerpenlijst"
 
 #: concrete/blocks/topic_list/controller.php:36
-#: concrete/config/install/base/dashboard.xml:830
+#: concrete/config/install/base/dashboard.xml:847
 msgid "Topics"
 msgstr "Onderwerpen"
 
@@ -12732,6 +12976,7 @@ msgstr "Kies Staat/Provincie"
 #: concrete/attributes/address/composer.php:55
 #: concrete/attributes/address/form.php:52
 #: concrete/attributes/address/type_form.php:3
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:44
 msgid "Choose Country"
 msgstr "Kies land"
 
@@ -13104,7 +13349,7 @@ msgstr "Schermafbeeldingen"
 msgid "No add-ons found."
 msgstr "Geen extensies gevonden."
 
-#: concrete/config/install/base/dashboard.xml:405
+#: concrete/config/install/base/dashboard.xml:406
 #: concrete/single_pages/dashboard/extend/install.php:235
 #: concrete/single_pages/dashboard/extend/update.php:31
 msgid "Update Add-Ons"
@@ -13440,7 +13685,7 @@ msgstr "Bekijk Stacks"
 msgid "Stack Name"
 msgstr "Stapel naam"
 
-#: concrete/config/install/base/dashboard.xml:336
+#: concrete/config/install/base/dashboard.xml:337
 #: concrete/single_pages/dashboard/workflow/me.php:3
 msgid "Waiting for Me"
 msgstr "Wacht op mij"
@@ -13490,7 +13735,7 @@ msgid "Badge Description"
 msgstr "Badge-beschrijving"
 
 #: concrete/config/install/base/dashboard.xml:147
-#: concrete/config/install/base/dashboard.xml:787
+#: concrete/config/install/base/dashboard.xml:804
 #: concrete/single_pages/dashboard/users/add_group.php:102
 #: concrete/single_pages/dashboard/users/groups.php:73
 #: concrete/single_pages/members/profile.php:34
@@ -13826,10 +14071,6 @@ msgstr "Laatste IP-adres"
 msgid "Full Record"
 msgstr "Volledig Bestand"
 
-#: concrete/single_pages/dashboard/users/search.php:113
-msgid "Email Validated"
-msgstr "E-mail Gevalideerd"
-
 #: concrete/single_pages/dashboard/users/search.php:117
 msgid "Unknown"
 msgstr "Onbekend"
@@ -13847,7 +14088,7 @@ msgstr "Hiermee beëindigt u de huidige sessie en wordt u aangemeld als %s"
 msgid "Are you sure you want to permanently remove this user?"
 msgstr "Weet u zeker dat u deze gebruiker definitief wil verwijderen?"
 
-#: concrete/single_pages/account/edit_profile.php:68
+#: concrete/single_pages/account/edit_profile.php:74
 #: concrete/single_pages/dashboard/users/search.php:243
 msgid "Change Password"
 msgstr "Wachtwoord Wijzigen"
@@ -13862,7 +14103,7 @@ msgstr "U hebt geen toegang tot het zoeken van gebruikers. Deze instelling kan v
 msgid "Registration Data"
 msgstr "Registratie informatie"
 
-#: concrete/config/install/base/dashboard.xml:581
+#: concrete/config/install/base/dashboard.xml:598
 #: concrete/single_pages/dashboard/system/files/filetypes.php:3
 msgid "Allowed File Types"
 msgstr "Toegestane bestands Extensies"
@@ -13901,7 +14142,7 @@ msgstr "Voeg een type toe"
 msgid "Delete Location"
 msgstr "Locatie verwijderen"
 
-#: concrete/config/install/base/dashboard.xml:450
+#: concrete/config/install/base/dashboard.xml:451
 #: concrete/single_pages/dashboard/system/files/storage.php:39
 msgid "Basics"
 msgstr "Basisgegevens"
@@ -13974,7 +14215,7 @@ msgstr "Scheidt uitgesloten woorden met een komma. Deze woorden zullen automatis
 msgid "Reset To Default"
 msgstr "Herstellen naar standaard"
 
-#: concrete/config/install/base/dashboard.xml:537
+#: concrete/config/install/base/dashboard.xml:554
 #: concrete/single_pages/dashboard/system/seo/codes.php:8
 msgid "Tracking Codes"
 msgstr "Volg codes"
@@ -14055,6 +14296,7 @@ msgid "Save All"
 msgstr "Alle opslaan"
 
 #: concrete/single_pages/dashboard/pages/single.php:37
+#: concrete/single_pages/dashboard/system/multilingual/page_report.php:176
 #: concrete/single_pages/dashboard/system/seo/bulk.php:201
 msgid "No pages found."
 msgstr "Geen pagina's gevonden."
@@ -14071,7 +14313,7 @@ msgstr "Mooie URL's inschakelen"
 msgid "Code for your .htaccess file"
 msgstr "Code voor uw .htaccess bestand"
 
-#: concrete/config/install/base/dashboard.xml:841
+#: concrete/config/install/base/dashboard.xml:858
 #: concrete/single_pages/dashboard/system/environment/info.php:2
 msgid "Environment"
 msgstr "Omgevings Variabelen"
@@ -14144,7 +14386,7 @@ msgstr "Kan gevoelige informatie blootgeven, gebruik alleen voor ontwikkeling."
 msgid "Example"
 msgstr "Voorbeeld"
 
-#: concrete/config/install/base/dashboard.xml:644
+#: concrete/config/install/base/dashboard.xml:661
 #: concrete/single_pages/dashboard/system/permissions/site.php:7
 msgid "Site Access"
 msgstr "Site Toegang"
@@ -14197,7 +14439,7 @@ msgstr "Actieve Captcha"
 msgid "You have no captcha libraries installed."
 msgstr "U heeft geen capcha bibliotheek geïnstalleerd."
 
-#: concrete/config/install/base/dashboard.xml:691
+#: concrete/config/install/base/dashboard.xml:708
 #: concrete/single_pages/dashboard/system/permissions/maintenance.php:4
 msgid "Maintenance Mode"
 msgstr "Onderhoudsmodus"
@@ -14259,12 +14501,12 @@ msgstr "Alle e-mail adressen in dit veld zullen op de hoogte gebracht worden als
 msgid "You have no anti-spam libraries installed."
 msgstr "U heeft geen anti-spam bibliotheek geïnstalleerd."
 
-#: concrete/config/install/base/dashboard.xml:653
+#: concrete/config/install/base/dashboard.xml:670
 #: concrete/single_pages/dashboard/system/permissions/tasks.php:8
 msgid "Task Permissions"
 msgstr "Taak Machtigingen"
 
-#: concrete/config/install/base/dashboard.xml:661
+#: concrete/config/install/base/dashboard.xml:678
 #: concrete/single_pages/dashboard/system/permissions/users.php:8
 msgid "User Permissions"
 msgstr "Gebruiker Machtigingen"
@@ -14331,6 +14573,238 @@ msgid ""
 "address. To indicate a range, use a wildcard character (e.g. 192.168.15.* "
 "will block 192.168.15.1, 192.168.15.2, etc...)"
 msgstr "Voer IP adressen in, een per regel, om handmatig bepaalde IP adressen buiten te sluiten. Om een reeks aan te geven kunt u gebruik maken van een wildcard (bijvoorbeeld 192.168.15.*)"
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:45
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:71
+msgid "Original String"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:46
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:75
+msgid "Translation"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:65
+msgid "Translate"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:78
+msgid "Save &amp; Continue"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:164
+#, php-format
+msgid ""
+"You must create the directory %s and make it writable before you may run "
+"this tool. Additionally, all files within this directory must be writable."
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:14
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:183
+msgid "Locale"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:184
+msgid "Completion"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:185
+msgid "Last Updated"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:223
+msgid "File not found."
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:226
+msgid "N/A"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:245
+msgid "Reload Strings"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:246
+msgid "Export to .PO"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:248
+msgid "Reset All"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:260
+msgid ""
+"Are you sure? This will remove all translations from all languages, in the "
+"database and in your site PO files. This cannot be undone."
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:264
+msgid "Confirm Reset"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:267
+msgid "Only the admin user may reset all languages."
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:279
+msgid "Reset Languages"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:31
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:118
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:296
+msgid "You have not created any multilingual content sections yet."
+msgstr "U heeft nog geen meertalige inhoud secties gemaakt."
+
+#: concrete/single_pages/dashboard/system/multilingual/page_report.php:25
+msgid "Choose Source"
+msgstr "Kies Bron"
+
+#: concrete/single_pages/dashboard/system/multilingual/page_report.php:34
+msgid "Choose Targets"
+msgstr "Kies doelen"
+
+#: concrete/single_pages/dashboard/system/multilingual/page_report.php:56
+msgid "Display"
+msgstr "Weergeven"
+
+#: concrete/single_pages/dashboard/system/multilingual/page_report.php:60
+msgid "Only Missing Pages"
+msgstr "Alleen ontbrekende pagina's"
+
+#: concrete/single_pages/dashboard/system/multilingual/page_report.php:64
+msgid "All Pages"
+msgstr "Alle pagina's"
+
+#: concrete/single_pages/dashboard/system/multilingual/page_report.php:125
+#: concrete/single_pages/dashboard/system/multilingual/page_report.php:261
+msgid "Ignored"
+msgstr "Genegeerd"
+
+#: concrete/single_pages/dashboard/system/multilingual/page_report.php:137
+msgid "Re-Map"
+msgstr "Opnieuw toewijzen"
+
+#: concrete/single_pages/dashboard/system/multilingual/page_report.php:139
+msgid "Map"
+msgstr "Toewijzen"
+
+#: concrete/single_pages/dashboard/system/multilingual/page_report.php:162
+msgid "Ignore"
+msgstr "Negeer"
+
+#: concrete/single_pages/dashboard/system/multilingual/page_report.php:166
+msgid "Create the parent page first."
+msgstr "Maak eerst de bovenliggende pagina."
+
+#: concrete/single_pages/dashboard/system/multilingual/page_report.php:280
+msgid "You have not defined any multilingual sections for your site yet."
+msgstr "U heeft nog geen taalsecties gedefinieerd voor uw site."
+
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:6
+msgid "Content Sections"
+msgstr "Inhoud secties"
+
+#: concrete/single_pages/dashboard/pages/single.php:29
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:15
+msgid "Path"
+msgstr "Pad"
+
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:34
+msgid "Add a Locale"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:36
+msgid "Choose a Parent Page"
+msgstr "Kies een bovenliggende pagina"
+
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:49
+msgid "Language Icon"
+msgstr "Taalpictogram"
+
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:52
+msgid ""
+"Your locale will be computed from your choice of language and country. Your "
+"language icon will be chosen based on the country."
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:56
+msgid "Add Content Section"
+msgstr "Inhoud sectie toevoegen"
+
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:81
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:133
+msgid "Copy Locale Tree"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:91
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:161
+#, php-format
+msgid "%s (%s, %s)"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:101
+msgid ""
+"Copy all pages from a locale to another section. This will only copy pages "
+"that have not been associated. It will not replace or remove any pages from "
+"the destination section."
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:103
+msgid "Copy From"
+msgstr "Kopiëren"
+
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:108
+msgctxt "Destination"
+msgid "To"
+msgstr "Naar"
+
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:113
+msgid "Copy Tree"
+msgstr "Kopieer boom"
+
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:116
+msgid "You must have more than one multilingual section to use this tool."
+msgstr "Om deze tool te gebruiken moet u meer dan één taalsectie hebben."
+
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:138
+msgid "You must choose two separate multilingual sections to copy from/to"
+msgstr "U moet twee aparte taalsecties selecteren om van/naar te kopiëren"
+
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:149
+msgid "Only the super user may copy locale trees."
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:151
+msgid ""
+"Since one of your multilingual sections is the home page, you may not "
+"duplicate your site tree using this tool. You must manually assign pages "
+"using the page report."
+msgstr "Omdat een van uw taalsecties de homepage is, mag u deze sectie niet dupliceren met behulp van deze tool. U moet handmatig de pagina's toewijzen met behulp van het paginarapport."
+
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:158
+msgid "** None Set"
+msgstr "** Niets ingesteld"
+
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:169
+msgid "Multilingual Settings"
+msgstr "Meertalige instellingen"
+
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:173
+msgid "Default Locale"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:181
+msgid "Attempt to use visitor's locale based on their browser information."
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:187
+msgid "Redirect home page to default locale."
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:194
+msgid "Save Settings"
+msgstr "Instellingen opslaan"
 
 #. %1$s is a configuration name, %2$s is a configuration value
 #: concrete/single_pages/dashboard/system/mail/method/test.php:12
@@ -14542,7 +15016,7 @@ msgstr "Uitschakelen"
 msgid "Enable"
 msgstr "Inschakelen"
 
-#: concrete/config/install/base/dashboard.xml:719
+#: concrete/config/install/base/dashboard.xml:736
 #: concrete/single_pages/dashboard/system/registration/open.php:3
 msgid "Public Registration"
 msgstr "Publieke Registratie"
@@ -14683,7 +15157,7 @@ msgstr "Door gebruiker gedefinieerde tijdzones inschakelen."
 msgid "Server Timezone:"
 msgstr "Server tijdzone:"
 
-#: concrete/config/install/base/dashboard.xml:484
+#: concrete/config/install/base/dashboard.xml:485
 #: concrete/single_pages/dashboard/system/basics/editor.php:2
 msgid "Rich Text Editor"
 msgstr "Rich Tekstbewerker"
@@ -14874,7 +15348,7 @@ msgid ""
 "it may help to clear your cache."
 msgstr "Als uw website oude informatie weergeeft of vreemd gedrag vertoont kan het helpen om de cache te legen."
 
-#: concrete/config/install/base/dashboard.xml:616
+#: concrete/config/install/base/dashboard.xml:633
 #: concrete/single_pages/dashboard/system/optimization/clearcache.php:7
 msgid "Clear Cache"
 msgstr "Cache legen"
@@ -15263,31 +15737,31 @@ msgstr "Laatste reactie"
 msgid "Number of Responses"
 msgstr "Aantal reacties"
 
-#: concrete/single_pages/dashboard/reports/logs.php:33
-#: concrete/single_pages/dashboard/reports/logs.php:69
+#: concrete/single_pages/dashboard/reports/logs.php:32
+#: concrete/single_pages/dashboard/reports/logs.php:65
 msgid "Channel"
 msgstr "Kanaal"
 
-#: concrete/single_pages/dashboard/reports/logs.php:37
+#: concrete/single_pages/dashboard/reports/logs.php:36
 #, php-format
 msgctxt "%s is a channel"
 msgid "Clear all in %s"
 msgstr "Wis alles in %s"
 
-#: concrete/single_pages/dashboard/reports/logs.php:39
+#: concrete/single_pages/dashboard/reports/logs.php:38
 msgid "Clear all"
 msgstr "Alles wissen"
 
-#: concrete/single_pages/dashboard/reports/logs.php:47
-#: concrete/single_pages/dashboard/reports/logs.php:68
+#: concrete/single_pages/dashboard/reports/logs.php:46
+#: concrete/single_pages/dashboard/reports/logs.php:64
 msgid "Level"
 msgstr "Niveau"
 
-#: concrete/single_pages/dashboard/reports/logs.php:67
+#: concrete/single_pages/dashboard/reports/logs.php:63
 msgid "Date/Time"
 msgstr "Datum/Tijd"
 
-#: concrete/single_pages/dashboard/reports/logs.php:92
+#: concrete/single_pages/dashboard/reports/logs.php:88
 #, php-format
 msgctxt "Deleted user"
 msgid "Deleted (id: %s)"
@@ -15508,7 +15982,7 @@ msgstr "Geen toegang tot composer instellingen."
 msgid "Order &amp; Group"
 msgstr "Sorteer &amp; Groep"
 
-#: concrete/config/install/base/dashboard.xml:243
+#: concrete/config/install/base/dashboard.xml:244
 #: concrete/single_pages/dashboard/pages/types/view.php:24
 #: concrete/single_pages/dashboard/pages/types/view.php:66
 msgid "Add Page Type"
@@ -15633,7 +16107,7 @@ msgstr "Geen. Dit bestand zal worden gebruikt door de pagina's met de <strong>%s
 msgid "Return to Themes"
 msgstr "Terug naar Thema's"
 
-#: concrete/config/install/base/dashboard.xml:299
+#: concrete/config/install/base/dashboard.xml:300
 #: concrete/single_pages/dashboard/pages/single.php:5
 msgid "Single Pages"
 msgstr "Enkele Pagina's"
@@ -15645,10 +16119,6 @@ msgstr "Enkele Pagina Toevoegen"
 #: concrete/single_pages/dashboard/pages/single.php:24
 msgid "Already Installed"
 msgstr "Geïnstalleerd"
-
-#: concrete/single_pages/dashboard/pages/single.php:29
-msgid "Path"
-msgstr "Pad"
 
 #: concrete/single_pages/dashboard/pages/single.php:30
 msgid "Package"
@@ -15679,22 +16149,22 @@ msgstr "Profiel Bewerken"
 msgid "Basic Information"
 msgstr "Standaard Informatie"
 
-#: concrete/config/install/base/dashboard.xml:500
+#: concrete/config/install/base/dashboard.xml:501
 #: concrete/single_pages/account/edit_profile.php:26
 msgid "Time Zone"
 msgstr "Tijdzone"
 
-#: concrete/config/install/base/dashboard.xml:727
-#: concrete/single_pages/account/edit_profile.php:56
+#: concrete/config/install/base/dashboard.xml:744
+#: concrete/single_pages/account/edit_profile.php:62
 msgid "Authentication Types"
 msgstr "Verificatietypen"
 
-#: concrete/single_pages/account/edit_profile.php:72
+#: concrete/single_pages/account/edit_profile.php:78
 msgid "Leave blank to keep current password."
 msgstr "Laat leeg om huidige wachtwoord te houden."
 
 #: concrete/single_pages/account/avatar.php:61
-#: concrete/single_pages/account/edit_profile.php:85
+#: concrete/single_pages/account/edit_profile.php:91
 #: concrete/single_pages/account/messages/inbox.php:72
 #: concrete/single_pages/account/messages/inbox.php:222
 msgid "Back to Account"
@@ -15793,7 +16263,7 @@ msgstr "Verstuur bericht"
 msgid "Mailbox"
 msgstr "Mail Berichten"
 
-#: concrete/config/install/base/dashboard.xml:317
+#: concrete/config/install/base/dashboard.xml:318
 #: concrete/config/install/base/login_registration.xml:37
 #: concrete/single_pages/account/messages/inbox.php:195
 msgid "Messages"
@@ -16393,691 +16863,716 @@ msgstr "Logboek"
 msgid "forms, log, error, email, mysql, exception, survey, history"
 msgstr "formulieren, log, fout, e-mail, mysql, uitzondering, overzicht, geschiedenis"
 
-#: concrete/config/install/base/dashboard.xml:208
-#: concrete/config/install/base/dashboard.xml:210
+#: concrete/config/install/base/dashboard.xml:209
+#: concrete/config/install/base/dashboard.xml:211
 msgid "Reskin your site."
 msgstr "Uw website anders vormgeven."
 
 #. Keywords for page /dashboard/pages/themes
-#: concrete/config/install/base/dashboard.xml:213
+#: concrete/config/install/base/dashboard.xml:214
 msgid "new theme, theme, active theme, change theme, template, css"
 msgstr "nieuw thema, thema, actieve thema, wijzig thema, sjabloon, css"
 
-#: concrete/config/install/base/dashboard.xml:218
+#: concrete/config/install/base/dashboard.xml:219
 msgid "Inspect"
 msgstr "Inspecteer"
 
 #. Keywords for page /dashboard/pages/themes/inspect
-#: concrete/config/install/base/dashboard.xml:221
+#: concrete/config/install/base/dashboard.xml:222
 msgid "page types"
 msgstr "paginatypen"
 
-#: concrete/config/install/base/dashboard.xml:230
+#: concrete/config/install/base/dashboard.xml:231
 msgid "Page Types"
 msgstr "Paginatypen"
 
-#: concrete/config/install/base/dashboard.xml:234
+#: concrete/config/install/base/dashboard.xml:235
 msgid "Organize Page Type Order"
 msgstr "Organiseer paginatype volgorde"
 
-#: concrete/config/install/base/dashboard.xml:253
+#: concrete/config/install/base/dashboard.xml:254
 msgid "Compose Form"
 msgstr "Composer formulier"
 
-#: concrete/config/install/base/dashboard.xml:262
+#: concrete/config/install/base/dashboard.xml:263
 msgid "Defaults and Output"
 msgstr "Standaardwaarden en Output"
 
-#: concrete/config/install/base/dashboard.xml:271
+#: concrete/config/install/base/dashboard.xml:272
 msgid "Page Type Permissions"
 msgstr "Pagina Type machtigingen"
 
-#: concrete/config/install/base/dashboard.xml:280
+#: concrete/config/install/base/dashboard.xml:281
 msgid "Form factors for pages in your site."
 msgstr "Diverse vormfactoren voor pagina's in uw site."
 
-#: concrete/config/install/base/dashboard.xml:283
+#: concrete/config/install/base/dashboard.xml:284
 msgid "Add Page Template"
 msgstr "Pagina sjabloon toevoegen"
 
-#: concrete/config/install/base/dashboard.xml:283
+#: concrete/config/install/base/dashboard.xml:284
 msgid "Add page templates to your site."
 msgstr "Sjablonen voor pagina's toevoegen aan uw site."
 
 #. Keywords for page /dashboard/pages/attributes
-#: concrete/config/install/base/dashboard.xml:294
+#: concrete/config/install/base/dashboard.xml:295
 msgid "page attributes, custom"
 msgstr "pagina attributen, handmatig"
 
 #. Keywords for page /dashboard/pages/single
-#: concrete/config/install/base/dashboard.xml:302
+#: concrete/config/install/base/dashboard.xml:303
 msgid "single, page, custom, application"
 msgstr "enkele, pagina, op maat, toepassing"
 
-#: concrete/config/install/base/dashboard.xml:308
+#: concrete/config/install/base/dashboard.xml:309
 msgid "RSS Feeds"
 msgstr "RSS feeds"
 
 #. Keywords for page /dashboard/pages/feeds
-#: concrete/config/install/base/dashboard.xml:311
+#: concrete/config/install/base/dashboard.xml:312
 msgid "atom, rss, feed, syndication"
 msgstr "atom, rss, feed, syndication"
 
-#: concrete/config/install/base/dashboard.xml:316
-#: concrete/config/install/base/dashboard.xml:770
+#: concrete/config/install/base/dashboard.xml:317
+#: concrete/config/install/base/dashboard.xml:787
 msgid "Conversations"
 msgstr "Gesprekken"
 
 #. Keywords for page /dashboard/workflow
-#: concrete/config/install/base/dashboard.xml:329
+#: concrete/config/install/base/dashboard.xml:330
 msgid "add workflow, remove workflow"
 msgstr "Tags toevoegen of verwijderen"
 
-#: concrete/config/install/base/dashboard.xml:334
+#: concrete/config/install/base/dashboard.xml:335
 msgid "Workflow List"
 msgstr "Workflow Lijst"
 
-#: concrete/config/install/base/dashboard.xml:338
+#: concrete/config/install/base/dashboard.xml:339
 msgid "Manage sitewide content and administer block types."
 msgstr "Beheer algemene site content en blok types."
 
-#: concrete/config/install/base/dashboard.xml:340
+#: concrete/config/install/base/dashboard.xml:341
 msgid "Share content across your site."
 msgstr "Deel inhoud door de website."
 
 #. Keywords for page /dashboard/blocks/stacks
-#: concrete/config/install/base/dashboard.xml:343
+#: concrete/config/install/base/dashboard.xml:344
 msgid ""
 "stacks, reusable content, scrapbook, copy, paste, paste block, copy block, "
 "site name, logo"
 msgstr "stapels, herbruikbare inhoud, plakboek, kopiëren, plakken, plakken blok, kopieer blok, website naam, logo"
 
-#: concrete/config/install/base/dashboard.xml:350
+#: concrete/config/install/base/dashboard.xml:351
 msgid "Block & Stack Permissions"
 msgstr "Blokken & Stapel Machtigingen"
 
-#: concrete/config/install/base/dashboard.xml:350
+#: concrete/config/install/base/dashboard.xml:351
 msgid "Control who can add blocks and stacks on your site."
 msgstr "Machtigingen voor het toevoegen van blokken en stapels."
 
-#: concrete/config/install/base/dashboard.xml:352
+#: concrete/config/install/base/dashboard.xml:353
 msgid "Stack List"
 msgstr "Stapel lijst"
 
 #. Keywords for page /dashboard/blocks/stacks/list
-#: concrete/config/install/base/dashboard.xml:361
+#: concrete/config/install/base/dashboard.xml:362
 msgid "edit stacks, view stacks, all stacks"
 msgstr "%s meer om weer te geven. <a href=\"%s\">Alle bekijken</a>"
 
-#: concrete/config/install/base/dashboard.xml:366
+#: concrete/config/install/base/dashboard.xml:367
 msgid "Block Types"
 msgstr "Blok Formaten"
 
-#: concrete/config/install/base/dashboard.xml:366
+#: concrete/config/install/base/dashboard.xml:367
 msgid "Manage the installed block types in your site."
 msgstr "Beheer the geinstalleerde blok types van uw site."
 
 #. Keywords for page /dashboard/blocks/types
-#: concrete/config/install/base/dashboard.xml:369
+#: concrete/config/install/base/dashboard.xml:370
 msgid "block, refresh, custom"
 msgstr "Aangepaste blok types"
 
 #. Keywords for page /dashboard/extend
-#: concrete/config/install/base/dashboard.xml:379
+#: concrete/config/install/base/dashboard.xml:380
 msgid ""
 "add-on, addon, add on, package, app, ecommerce, discussions, forums, themes,"
 " templates, blocks"
 msgstr "add-on, addon, add on, pakket, app, ecommerce, discussies, forums, themes, templates, blokken"
 
-#: concrete/config/install/base/dashboard.xml:397
+#: concrete/config/install/base/dashboard.xml:398
 msgid "Add Functionality"
 msgstr "Extensies toevoegen"
 
-#: concrete/config/install/base/dashboard.xml:397
+#: concrete/config/install/base/dashboard.xml:398
 msgid "Install add-ons & themes."
 msgstr "Extensies & Thema's installeren"
 
 #. Keywords for page /dashboard/extend/install
-#: concrete/config/install/base/dashboard.xml:400
+#: concrete/config/install/base/dashboard.xml:401
 msgid ""
 "add-on, addon, ecommerce, install, discussions, forums, themes, templates, "
 "blocks"
 msgstr "extensie, ecommerce, installatie, discussies, forums, thema's, sjablonen, blokken"
 
-#: concrete/config/install/base/dashboard.xml:405
+#: concrete/config/install/base/dashboard.xml:406
 msgid "Update your installed packages."
 msgstr "Geinstalleerde pakketen updaten."
 
 #. Keywords for page /dashboard/extend/update
-#: concrete/config/install/base/dashboard.xml:408
+#: concrete/config/install/base/dashboard.xml:409
 msgid "update, upgrade"
 msgstr "Vernieuw Concrete5"
 
-#: concrete/config/install/base/dashboard.xml:414
+#: concrete/config/install/base/dashboard.xml:415
 msgid "Connect to the Community"
 msgstr "Verbinden met de community"
 
-#: concrete/config/install/base/dashboard.xml:414
+#: concrete/config/install/base/dashboard.xml:415
 msgid "Connect to the concrete5 community."
 msgstr "Verbinden met de concrete5 community."
 
 #. Keywords for page /dashboard/extend/connect
-#: concrete/config/install/base/dashboard.xml:417
+#: concrete/config/install/base/dashboard.xml:418
 msgid "concrete5.org, my account, marketplace"
 msgstr "Thema gegevens ophalen van de concrete5.org marktplaats."
 
-#: concrete/config/install/base/dashboard.xml:425
+#: concrete/config/install/base/dashboard.xml:426
 msgid "Download themes from concrete5.org."
 msgstr "Download thema's van concrete5.org."
 
 #. Keywords for page /dashboard/extend/themes
-#: concrete/config/install/base/dashboard.xml:428
+#: concrete/config/install/base/dashboard.xml:429
 msgid "buy theme, new theme, marketplace, template"
 msgstr "koop thema, nieuw thema, marktplaats, sjabloon"
 
-#: concrete/config/install/base/dashboard.xml:433
+#: concrete/config/install/base/dashboard.xml:434
 msgid "Get More Add-Ons"
 msgstr "Meer extensies installeren"
 
-#: concrete/config/install/base/dashboard.xml:433
+#: concrete/config/install/base/dashboard.xml:434
 msgid "Download add-ons from concrete5.org."
 msgstr "Download extensies van concrete5.org"
 
 #. Keywords for page /dashboard/extend/addons
-#: concrete/config/install/base/dashboard.xml:436
+#: concrete/config/install/base/dashboard.xml:437
 msgid ""
 "buy addon, buy add on, buy add-on, purchase addon, purchase add on, purchase"
 " add-on, find addon, new addon, marketplace"
 msgstr "koop extensie, koop extensie toevoegen, koop extensie, aankopen extensie, vind extensie, nieuwe extensie, marktplaats"
 
-#: concrete/config/install/base/dashboard.xml:442
+#: concrete/config/install/base/dashboard.xml:443
 msgid "Secure and setup your site."
 msgstr "Uw website configureren."
 
 #. Keywords for page /dashboard/system
-#: concrete/config/install/base/dashboard.xml:445
+#: concrete/config/install/base/dashboard.xml:446
 msgid "dashboard, configuration"
 msgstr "Akismet-instellingen"
 
-#: concrete/config/install/base/dashboard.xml:450
+#: concrete/config/install/base/dashboard.xml:451
 msgid "Basic information about your website."
 msgstr "Basis informatie over uw website."
 
 #. Keywords for page /dashboard/system/basics/name
-#: concrete/config/install/base/dashboard.xml:455
+#: concrete/config/install/base/dashboard.xml:456
 msgid "website name, title"
 msgstr "Naam van de website"
 
-#: concrete/config/install/base/dashboard.xml:460
+#: concrete/config/install/base/dashboard.xml:461
 msgid "Accessibility"
 msgstr "Toegankelijkheid"
 
 #. Keywords for page /dashboard/system/basics/accessibility
-#: concrete/config/install/base/dashboard.xml:463
+#: concrete/config/install/base/dashboard.xml:464
 msgid "accessibility, easy mode"
 msgstr "toegankelijkheid, easy modus"
 
 #. Keywords for page /dashboard/system/basics/social
-#: concrete/config/install/base/dashboard.xml:471
+#: concrete/config/install/base/dashboard.xml:472
 msgid "sharing, facebook, twitter"
 msgstr "delen, facebook, twitter"
 
-#: concrete/config/install/base/dashboard.xml:476
+#: concrete/config/install/base/dashboard.xml:477
 msgid "Bookmark Icons"
 msgstr "Favorieten Pictogrammen"
 
-#: concrete/config/install/base/dashboard.xml:476
+#: concrete/config/install/base/dashboard.xml:477
 msgid "Bookmark icon and mobile home screen icon setup."
 msgstr "Bookmark ikoon en mobiel \\\"home screen\\\" ikoon configuratie."
 
 #. Keywords for page /dashboard/system/basics/icons
-#: concrete/config/install/base/dashboard.xml:479
+#: concrete/config/install/base/dashboard.xml:480
 msgid "logo, favicon, iphone, icon, bookmark"
 msgstr "logo, favicon, iphone, pictogram, bladwijzer"
 
 #. Keywords for page /dashboard/system/basics/editor
-#: concrete/config/install/base/dashboard.xml:487
+#: concrete/config/install/base/dashboard.xml:488
 msgid "tinymce, content block, fonts, editor, content, overlay"
 msgstr "tinymce, inhoud blok, lettertypen, editor, inhoud, overlay"
 
-#: concrete/config/install/base/dashboard.xml:492
+#: concrete/config/install/base/dashboard.xml:493
 msgid "Languages"
 msgstr "Talen"
 
 #. Keywords for page /dashboard/system/basics/multilingual
-#: concrete/config/install/base/dashboard.xml:495
+#: concrete/config/install/base/dashboard.xml:496
 msgid "translate, translation, internationalization, multilingual"
 msgstr "vertaal, vertaling, internationalisatie, meertalig"
 
 #. Keywords for page /dashboard/system/basics/timezone
-#: concrete/config/install/base/dashboard.xml:503
+#: concrete/config/install/base/dashboard.xml:504
 msgid "timezone, profile, locale"
 msgstr "Aan te passen in Profiel."
 
-#: concrete/config/install/base/dashboard.xml:519
+#: concrete/config/install/base/dashboard.xml:510
+msgid "Multilingual"
+msgstr "Meertalige"
+
+#: concrete/config/install/base/dashboard.xml:510
+msgid "Run your site in multiple languages."
+msgstr ""
+
+#. Keywords for page /dashboard/system/multilingual
+#: concrete/config/install/base/dashboard.xml:513
+msgid "multilingual, localization, internationalization, i18n"
+msgstr ""
+
+#: concrete/config/install/base/dashboard.xml:518
+msgid "Multilingual Setup"
+msgstr "Meertalige Setup"
+
+#: concrete/config/install/base/dashboard.xml:520
+msgid "Page Report"
+msgstr "Paginarapport"
+
+#: concrete/config/install/base/dashboard.xml:522
+msgid "Translate Site Interface"
+msgstr ""
+
+#: concrete/config/install/base/dashboard.xml:536
 msgid "SEO & Statistics"
 msgstr "SEO & Statistieken"
 
-#: concrete/config/install/base/dashboard.xml:519
+#: concrete/config/install/base/dashboard.xml:536
 msgid "Enable pretty URLs and tracking codes."
 msgstr "Korte SEO urls inschakelen"
 
-#: concrete/config/install/base/dashboard.xml:521
+#: concrete/config/install/base/dashboard.xml:538
 msgid "Pretty URLs"
 msgstr "Mooie URL's"
 
 #. Keywords for page /dashboard/system/seo/urls
-#: concrete/config/install/base/dashboard.xml:524
+#: concrete/config/install/base/dashboard.xml:541
 msgid "vanity, pretty url, seo, pageview, view"
 msgstr "vanity, mooie url, seo, pagina weergaves, bekijk"
 
-#: concrete/config/install/base/dashboard.xml:529
+#: concrete/config/install/base/dashboard.xml:546
 msgid "Bulk SEO Updater"
 msgstr "SEO Bijwerken"
 
 #. Keywords for page /dashboard/system/seo/bulk
-#: concrete/config/install/base/dashboard.xml:532
+#: concrete/config/install/base/dashboard.xml:549
 msgid "bulk, seo, change keywords, engine, optimization, search"
 msgstr "bulk, seo, wijzig trefwoorden, engine, optimalisatie, zoek"
 
 #. Keywords for page /dashboard/system/seo/codes
-#: concrete/config/install/base/dashboard.xml:540
+#: concrete/config/install/base/dashboard.xml:557
 msgid "traffic, statistics, google analytics, quant, pageviews, hits"
 msgstr "verkeer, statistieken, google analytics, quant, pagina weergaves, hits"
 
-#: concrete/config/install/base/dashboard.xml:545
+#: concrete/config/install/base/dashboard.xml:562
 msgid "Excluded URL Word List"
 msgstr "Lijst met uitgesloten URL-woorden"
 
 #. Keywords for page /dashboard/system/seo/excluded
-#: concrete/config/install/base/dashboard.xml:548
+#: concrete/config/install/base/dashboard.xml:565
 msgid "pretty, slug"
 msgstr "mooi, slug"
 
-#: concrete/config/install/base/dashboard.xml:563
+#: concrete/config/install/base/dashboard.xml:580
 msgid "Search Index"
 msgstr "Zoek Index"
 
 #. Keywords for page /dashboard/system/seo/searchindex
-#: concrete/config/install/base/dashboard.xml:566
+#: concrete/config/install/base/dashboard.xml:583
 msgid "configure search, site search, search option"
 msgstr "Voeg een zoekvak toe aan uw website."
 
-#: concrete/config/install/base/dashboard.xml:573
+#: concrete/config/install/base/dashboard.xml:590
 msgid "File Manager Permissions"
 msgstr "Bestandsbeheer Rechten"
 
 #. Keywords for page /dashboard/system/files/permissions
-#: concrete/config/install/base/dashboard.xml:576
+#: concrete/config/install/base/dashboard.xml:593
 msgid "file options, file manager, upload, modify"
 msgstr "bestand opties, bestands beheer, uploaden, wijzigen"
 
 #. Keywords for page /dashboard/system/files/filetypes
-#: concrete/config/install/base/dashboard.xml:584
+#: concrete/config/install/base/dashboard.xml:601
 msgid "security, files, media, extension, manager, upload"
 msgstr "beveiliging, bestanden, media, extensies, beheer, upload"
 
 #. Keywords for page /dashboard/system/files/thumbnails
-#: concrete/config/install/base/dashboard.xml:592
+#: concrete/config/install/base/dashboard.xml:609
 msgid "images, picture, responsive, retina"
 msgstr "foto\\'s, plaatjes, responsieve, retina"
 
-#: concrete/config/install/base/dashboard.xml:597
+#: concrete/config/install/base/dashboard.xml:614
 msgid "File Storage Locations"
 msgstr "Bestand Opslag Locaties."
 
 #. Keywords for page /dashboard/system/files/storage
-#: concrete/config/install/base/dashboard.xml:600
+#: concrete/config/install/base/dashboard.xml:617
 msgid "security, alternate storage, hide files"
 msgstr "beveiliging, alternatieve opslag, verberg bestanden"
 
-#: concrete/config/install/base/dashboard.xml:606
+#: concrete/config/install/base/dashboard.xml:623
 msgid "Optimization"
 msgstr "Optimalisatie"
 
-#: concrete/config/install/base/dashboard.xml:606
+#: concrete/config/install/base/dashboard.xml:623
 msgid "Keep your site running well."
 msgstr "Houd uw website goed draaiende."
 
-#: concrete/config/install/base/dashboard.xml:608
+#: concrete/config/install/base/dashboard.xml:625
 msgid "Cache & Speed Settings"
 msgstr "Cache & Snelheid Instellingen"
 
 #. Keywords for page /dashboard/system/optimization/cache
-#: concrete/config/install/base/dashboard.xml:611
+#: concrete/config/install/base/dashboard.xml:628
 msgid ""
 "cache option, change cache, override, turn on cache, turn off cache, no "
 "cache, page cache, caching"
 msgstr "cache optie, wijziging cache, overschrijven, aanzetten cache, uitzetten cache, geen cache, pagina cache, caching"
 
 #. Keywords for page /dashboard/system/optimization/clearcache
-#: concrete/config/install/base/dashboard.xml:619
+#: concrete/config/install/base/dashboard.xml:636
 msgid "cache option, turn off cache, no cache, page cache, caching"
 msgstr "cache optie, uitschakelen cache, geen cache, pagina cache, cache"
 
-#: concrete/config/install/base/dashboard.xml:624
+#: concrete/config/install/base/dashboard.xml:641
 msgid "Automated Jobs"
 msgstr "Geautomatiseerde Taken"
 
 #. Keywords for page /dashboard/system/optimization/jobs
-#: concrete/config/install/base/dashboard.xml:627
+#: concrete/config/install/base/dashboard.xml:644
 msgid ""
 "index search, reindex search, build sitemap, sitemap.xml, clear old "
 "versions, page versions, remove old"
 msgstr "index zoeken, herindexeer zoeken, sitemap maken, sitemap.xml, wis oude versies, pagina versies, verwijder oude"
 
-#: concrete/config/install/base/dashboard.xml:632
+#: concrete/config/install/base/dashboard.xml:649
 msgid "Database Query Log"
 msgstr "Database Query Log"
 
 #. Keywords for page /dashboard/system/optimization/query_log
-#: concrete/config/install/base/dashboard.xml:635
+#: concrete/config/install/base/dashboard.xml:652
 msgid "queries, database, mysql"
 msgstr "queries, database, mysql"
 
-#: concrete/config/install/base/dashboard.xml:642
+#: concrete/config/install/base/dashboard.xml:659
 msgid "Permissions & Access"
 msgstr "Machtigingen & Toegang"
 
-#: concrete/config/install/base/dashboard.xml:642
+#: concrete/config/install/base/dashboard.xml:659
 msgid "Control who sees and edits your site."
 msgstr "Bepaal wie uw site kan bekijken en wijzigen."
 
 #. Keywords for page /dashboard/system/permissions/site
-#: concrete/config/install/base/dashboard.xml:647
+#: concrete/config/install/base/dashboard.xml:664
 msgid "editors, hide site, offline, private, public, access"
 msgstr "editors, verberg site, offline, privé, publiek, toegang"
 
 #. Keywords for page /dashboard/system/permissions/tasks
-#: concrete/config/install/base/dashboard.xml:656
+#: concrete/config/install/base/dashboard.xml:673
 msgid "security, actions, administrator, admin, package, marketplace, search"
 msgstr "veiligheid, acties, beheerder, admin, extensie, marktplaats, zoeken"
 
-#: concrete/config/install/base/dashboard.xml:664
+#: concrete/config/install/base/dashboard.xml:681
 msgid "Advanced Permissions"
 msgstr "Geavanceerde Machtigingen"
 
-#: concrete/config/install/base/dashboard.xml:667
+#: concrete/config/install/base/dashboard.xml:684
 msgid "IP Blacklist"
 msgstr "IP Zwarte Lijst"
 
 #. Keywords for page /dashboard/system/permissions/blacklist
-#: concrete/config/install/base/dashboard.xml:670
+#: concrete/config/install/base/dashboard.xml:687
 msgid "security, lock ip, lock out, block ip, address, restrict, access"
 msgstr "veiligheid, lock ip, lock out, blokkeren ip, adres, beperk, machtigingen"
 
-#: concrete/config/install/base/dashboard.xml:675
+#: concrete/config/install/base/dashboard.xml:692
 msgid "Captcha Setup"
 msgstr "Captcha Instellingen"
 
 #. Keywords for page /dashboard/system/permissions/captcha
-#: concrete/config/install/base/dashboard.xml:678
+#: concrete/config/install/base/dashboard.xml:695
 msgid "security, registration"
 msgstr "Registratie Mislukt"
 
-#: concrete/config/install/base/dashboard.xml:683
+#: concrete/config/install/base/dashboard.xml:700
 msgid "Spam Control"
 msgstr "Spam Bestrijding"
 
 #. Keywords for page /dashboard/system/permissions/antispam
-#: concrete/config/install/base/dashboard.xml:686
+#: concrete/config/install/base/dashboard.xml:703
 msgid "antispam, block spam, security"
 msgstr "antispam, blok spam, beveiliging"
 
 #. Keywords for page /dashboard/system/permissions/maintenance
-#: concrete/config/install/base/dashboard.xml:694
+#: concrete/config/install/base/dashboard.xml:711
 msgid "lock site, under construction, hide, hidden"
 msgstr "lock website, in aanbouw, verberg, verbergen"
 
-#: concrete/config/install/base/dashboard.xml:701
+#: concrete/config/install/base/dashboard.xml:718
 msgid "Login & Registration"
 msgstr "Aanmelden & Registratie"
 
-#: concrete/config/install/base/dashboard.xml:701
+#: concrete/config/install/base/dashboard.xml:718
 msgid "Change login behaviors and setup public profiles."
 msgstr "Verander login gedrag en publieke profielen configureren."
 
-#: concrete/config/install/base/dashboard.xml:703
+#: concrete/config/install/base/dashboard.xml:720
 msgid "Login Destination"
 msgstr "Aanmeld bestemmings pagina"
 
 #. Keywords for page /dashboard/system/registration/postlogin
-#: concrete/config/install/base/dashboard.xml:706
+#: concrete/config/install/base/dashboard.xml:723
 msgid "profile, login, redirect, specific, dashboard, administrators"
 msgstr "profiel, login, redirect, specifiek, dashboard, beheerders"
 
-#: concrete/config/install/base/dashboard.xml:711
+#: concrete/config/install/base/dashboard.xml:728
 msgid "Public Profiles"
 msgstr "Publieke profielen"
 
 #. Keywords for page /dashboard/system/registration/profiles
-#: concrete/config/install/base/dashboard.xml:714
+#: concrete/config/install/base/dashboard.xml:731
 msgid "member profile, member page, community, forums, social, avatar"
 msgstr "lid profiel, ledenpagina, gemeenschap, forums, sociaal, avatar"
 
 #. Keywords for page /dashboard/system/registration/open
-#: concrete/config/install/base/dashboard.xml:722
+#: concrete/config/install/base/dashboard.xml:739
 msgid "signup, new user, community, public registration, public, registration"
 msgstr "signup, nieuwe gebruiker, Gemeenschap, openbare registratie, public, registratie"
 
 #. Keywords for page /dashboard/system/registration/authentication
-#: concrete/config/install/base/dashboard.xml:730
+#: concrete/config/install/base/dashboard.xml:747
 msgid "auth, authentication, types, oauth, facebook, login, registration"
 msgstr "auth, verificatie, typen, oauth, facebook, login, registratie"
 
-#: concrete/config/install/base/dashboard.xml:736
+#: concrete/config/install/base/dashboard.xml:753
 msgid "Control how your site send and processes mail."
 msgstr "Beheer hoe uw site e-mail verwerkt en verstuurt."
 
 #. Keywords for page /dashboard/system/mail
-#: concrete/config/install/base/dashboard.xml:739
+#: concrete/config/install/base/dashboard.xml:756
 msgid "smtp, mail settings"
 msgstr "Overkoepelende mail instellingen"
 
-#: concrete/config/install/base/dashboard.xml:744
+#: concrete/config/install/base/dashboard.xml:761
 msgid "SMTP Method"
 msgstr "SMTP Methode"
 
 #. Keywords for page /dashboard/system/mail/method
-#: concrete/config/install/base/dashboard.xml:747
+#: concrete/config/install/base/dashboard.xml:764
 msgid "email server, mail settings, mail configuration, external, internal"
 msgstr "e-mail server, mail instellingen, mail configuratie, externe, interne"
 
-#: concrete/config/install/base/dashboard.xml:752
+#: concrete/config/install/base/dashboard.xml:769
 msgid "Test Mail Settings"
 msgstr "Test mail instellingen"
 
 #. Keywords for page /dashboard/system/mail/method/test
-#: concrete/config/install/base/dashboard.xml:755
+#: concrete/config/install/base/dashboard.xml:772
 msgid "test smtp, test mail"
 msgstr "test smtp, test mail"
 
-#: concrete/config/install/base/dashboard.xml:760
+#: concrete/config/install/base/dashboard.xml:777
 msgid "Email Importers"
 msgstr "E-mail Importeerders"
 
 #. Keywords for page /dashboard/system/mail/importers
-#: concrete/config/install/base/dashboard.xml:763
+#: concrete/config/install/base/dashboard.xml:780
 msgid ""
 "email server, mail settings, mail configuration, private message, message "
 "system, import, email, message"
 msgstr "e-mail server, mail instellingen, mail configuratie, prive-bericht, bericht systeem, importeer, e-mail, bericht"
 
-#: concrete/config/install/base/dashboard.xml:770
+#: concrete/config/install/base/dashboard.xml:787
 msgid "Manage your conversations settings"
 msgstr "Gespreksinstellingen beheren"
 
 #. Keywords for page /dashboard/system/conversations
 #. Keywords for page /dashboard/system/conversations/settings
-#: concrete/config/install/base/dashboard.xml:773
-#: concrete/config/install/base/dashboard.xml:782
+#: concrete/config/install/base/dashboard.xml:790
+#: concrete/config/install/base/dashboard.xml:799
 msgid "conversations"
 msgstr "gesprekken"
 
 #. Keywords for page /dashboard/system/conversations/points
-#: concrete/config/install/base/dashboard.xml:790
+#: concrete/config/install/base/dashboard.xml:807
 msgid "conversations ratings, ratings, community, community points"
 msgstr "gesprekswaarderingen, beoordelingen, gemeenschap, gemeenschapspunten"
 
-#: concrete/config/install/base/dashboard.xml:795
+#: concrete/config/install/base/dashboard.xml:812
 msgid "Banned Words"
 msgstr "Verboden woorden"
 
 #. Keywords for page /dashboard/system/conversations/bannedwords
-#: concrete/config/install/base/dashboard.xml:798
+#: concrete/config/install/base/dashboard.xml:815
 msgid ""
 "conversations bad words, banned words, banned, bad words, bad, words, list"
 msgstr "gesprekken scheldwoorden, verboden woorden, verboden, slechte woorden, slecht, woorden, lijst"
 
-#: concrete/config/install/base/dashboard.xml:803
+#: concrete/config/install/base/dashboard.xml:820
 msgid "Conversation Permissions"
 msgstr "Gespreksmachtigingen"
 
-#: concrete/config/install/base/dashboard.xml:806
+#: concrete/config/install/base/dashboard.xml:823
 msgid "Setup attributes for pages, users, files and more."
 msgstr "Configuratie van pagina attributen, gebruikers, bestanden en meer."
 
 #. Keywords for page /dashboard/system/attributes
-#: concrete/config/install/base/dashboard.xml:809
+#: concrete/config/install/base/dashboard.xml:826
 msgid "attribute configuration"
 msgstr "Akismet-instellingen"
 
-#: concrete/config/install/base/dashboard.xml:814
+#: concrete/config/install/base/dashboard.xml:831
 msgid "Group attributes into sets for easier organization"
 msgstr "Groepeer attributen in verzamelingen voor een eenvoudige structuur"
 
 #. Keywords for page /dashboard/system/attributes/sets
-#: concrete/config/install/base/dashboard.xml:817
+#: concrete/config/install/base/dashboard.xml:834
 msgid "attributes, sets"
 msgstr "attributen, sets"
 
-#: concrete/config/install/base/dashboard.xml:822
+#: concrete/config/install/base/dashboard.xml:839
 msgid "Types"
 msgstr "Formaten"
 
-#: concrete/config/install/base/dashboard.xml:822
+#: concrete/config/install/base/dashboard.xml:839
 msgid "Choose which attribute types are available for different items."
 msgstr "Kies welke attribuut types er berschikbaar zijn voor verschillende items."
 
 #. Keywords for page /dashboard/system/attributes/types
-#: concrete/config/install/base/dashboard.xml:825
+#: concrete/config/install/base/dashboard.xml:842
 msgid "attributes, types"
 msgstr "attributes, types"
 
 #. Keywords for page /dashboard/system/attributes/topics
-#: concrete/config/install/base/dashboard.xml:833
+#: concrete/config/install/base/dashboard.xml:850
 msgid "topics, tags, taxonomy"
 msgstr "onderwerpen, tags, taxonomie"
 
-#: concrete/config/install/base/dashboard.xml:841
+#: concrete/config/install/base/dashboard.xml:858
 msgid "Advanced settings for web developers."
 msgstr "Geadvanceerde instellingen voor web developers."
 
-#: concrete/config/install/base/dashboard.xml:849
+#: concrete/config/install/base/dashboard.xml:866
 msgid "Environment Information"
 msgstr "Omgevings Variabelen"
 
 #. Keywords for page /dashboard/system/environment/info
-#: concrete/config/install/base/dashboard.xml:852
+#: concrete/config/install/base/dashboard.xml:869
 msgid "overrides, system info, debug, support, help"
 msgstr "overrides, system info, debug, support, help"
 
-#: concrete/config/install/base/dashboard.xml:857
+#: concrete/config/install/base/dashboard.xml:874
 msgid "Debug Settings"
 msgstr "Foutopsporing Instelingen"
 
 #. Keywords for page /dashboard/system/environment/debug
-#: concrete/config/install/base/dashboard.xml:860
+#: concrete/config/install/base/dashboard.xml:877
 msgid "errors, exceptions, develop, support, help"
 msgstr "fouten, uitzonderingen, ontwikkelen, ondersteunen, helpen"
 
-#: concrete/config/install/base/dashboard.xml:865
+#: concrete/config/install/base/dashboard.xml:882
 msgid "Logging Settings"
 msgstr "Logboek instellingen"
 
 #. Keywords for page /dashboard/system/environment/logging
-#: concrete/config/install/base/dashboard.xml:868
+#: concrete/config/install/base/dashboard.xml:885
 msgid "email, logging, logs, smtp, pop, errors, mysql, log"
 msgstr "email, logging, logboeken, smtp, pop, fouten, mysql, log"
 
-#: concrete/config/install/base/dashboard.xml:874
+#: concrete/config/install/base/dashboard.xml:891
 msgid "Proxy Server"
 msgstr "Proxy Server"
 
 #. Keywords for page /dashboard/system/environment/proxy
-#: concrete/config/install/base/dashboard.xml:877
+#: concrete/config/install/base/dashboard.xml:894
 msgid "network, proxy server"
 msgstr "Externe SMTP server"
 
-#: concrete/config/install/base/dashboard.xml:882
+#: concrete/config/install/base/dashboard.xml:899
 msgid "Backup & Restore"
 msgstr "Backup & Terugzetten"
 
-#: concrete/config/install/base/dashboard.xml:882
+#: concrete/config/install/base/dashboard.xml:899
 msgid "Backup or restore your website."
 msgstr "Backup en herstellen van uw site."
 
 #. Keywords for page /dashboard/system/backup
-#: concrete/config/install/base/dashboard.xml:885
+#: concrete/config/install/base/dashboard.xml:902
 msgid "export, backup, database, sql, mysql, encryption, restore"
 msgstr "exporteer, backup, database, sql, mysql, encryptie, herstellen"
 
-#: concrete/config/install/base/dashboard.xml:890
+#: concrete/config/install/base/dashboard.xml:907
 msgid "Backup Database"
 msgstr "Backup Database"
 
-#: concrete/config/install/base/dashboard.xml:892
+#: concrete/config/install/base/dashboard.xml:909
 msgid "Update concrete5"
 msgstr "Concrete5 bijwerken"
 
 #. Keywords for page /dashboard/system/backup/update
-#: concrete/config/install/base/dashboard.xml:895
+#: concrete/config/install/base/dashboard.xml:912
 msgid "upgrade, new version, update"
 msgstr "Nieuwe Versie: %s. Upgrade van: %s."
 
-#: concrete/config/install/base/dashboard.xml:903
+#: concrete/config/install/base/dashboard.xml:920
 msgid "Dashboard Primary + Five"
 msgstr "Dashboard Primair + Five"
 
-#: concrete/config/install/base/dashboard.xml:904
+#: concrete/config/install/base/dashboard.xml:921
 msgid "Dashboard Header + Four Column"
 msgstr "Dashboard Header + Vier kolommen"
 
-#: concrete/config/install/base/dashboard.xml:905
+#: concrete/config/install/base/dashboard.xml:922
 msgid "Dashboard Full"
 msgstr "Volledig Dashboard"
 
-#: concrete/config/install/base/dashboard.xml:909
+#: concrete/config/install/base/dashboard.xml:926
 msgctxt "PageTemplateName"
 msgid "Stack"
 msgstr "Stapel"
 
-#: concrete/config/install/base/dashboard.xml:910
+#: concrete/config/install/base/dashboard.xml:927
 msgctxt "PageTemplateName"
 msgid "Dashboard Primary + Five"
 msgstr "Dashboard Primair + Five"
 
-#: concrete/config/install/base/dashboard.xml:911
+#: concrete/config/install/base/dashboard.xml:928
 msgctxt "PageTemplateName"
 msgid "Dashboard Header + Four Column"
 msgstr "Dashboard Header + Vier kolommen"
 
-#: concrete/config/install/base/dashboard.xml:912
+#: concrete/config/install/base/dashboard.xml:929
 msgctxt "PageTemplateName"
 msgid "Dashboard Full"
 msgstr "Volledig Dashboard"
 
-#: concrete/config/install/base/dashboard.xml:917
+#: concrete/config/install/base/dashboard.xml:934
 msgid "Welcome to concrete5"
 msgstr "Welkom bij concrete5"
 
-#: concrete/config/install/base/dashboard.xml:917
+#: concrete/config/install/base/dashboard.xml:934
 msgid ""
 "Learn about how to use concrete5, how to develop for concrete5, and get "
 "general help."
 msgstr "Leer hoe u concrete5 kunt gebruiken, hoe u kunt ontwikkelen voor concrete5 en voor algemene informatie."
 
-#: concrete/config/install/base/dashboard.xml:923
+#: concrete/config/install/base/dashboard.xml:940
 #: concrete/config/install/base/login_registration.xml:47
 #: concrete/config/install/packages/elemental_blank/content.xml:29
 #: concrete/config/install/packages/elemental_full/content.xml:139
@@ -17111,32 +17606,32 @@ msgctxt "AreaName"
 msgid "Main"
 msgstr "Hoofd"
 
-#: concrete/config/install/base/dashboard.xml:948
+#: concrete/config/install/base/dashboard.xml:965
 msgctxt "AreaName"
 msgid "Primary"
 msgstr "Primair"
 
-#: concrete/config/install/base/dashboard.xml:954
+#: concrete/config/install/base/dashboard.xml:971
 msgctxt "AreaName"
 msgid "Secondary 1"
 msgstr "Secundair 1"
 
-#: concrete/config/install/base/dashboard.xml:965
+#: concrete/config/install/base/dashboard.xml:982
 msgctxt "AreaName"
 msgid "Secondary 2"
 msgstr "Secundair 2"
 
-#: concrete/config/install/base/dashboard.xml:976
+#: concrete/config/install/base/dashboard.xml:993
 msgctxt "AreaName"
 msgid "Secondary 3"
 msgstr "Secundair 3"
 
-#: concrete/config/install/base/dashboard.xml:981
+#: concrete/config/install/base/dashboard.xml:998
 msgctxt "AreaName"
 msgid "Secondary 4"
 msgstr "Secundair 4"
 
-#: concrete/config/install/base/dashboard.xml:986
+#: concrete/config/install/base/dashboard.xml:1003
 msgctxt "AreaName"
 msgid "Secondary 5"
 msgstr "Secundair 5"
@@ -17471,7 +17966,7 @@ msgid "Ability to change just the page template for this page."
 msgstr "Vermogen om te veranderen de paginasjabloon voor deze pagina."
 
 #: concrete/config/install/base/permissions.xml:37
-#: concrete/config/install/base/permissions.xml:75
+#: concrete/config/install/base/permissions.xml:76
 msgctxt "PermissionKeyName"
 msgid "Edit Permissions"
 msgstr "Wijzig Machtigingen"
@@ -17534,8 +18029,8 @@ msgid "Can move or copy this page to another location."
 msgstr "Kan deze pagina kopiëren of verplaatsen naar een andere locatie."
 
 #: concrete/config/install/base/permissions.xml:43
-#: concrete/config/install/base/permissions.xml:65
-#: concrete/config/install/base/permissions.xml:76
+#: concrete/config/install/base/permissions.xml:66
+#: concrete/config/install/base/permissions.xml:77
 msgctxt "PermissionKeyName"
 msgid "Schedule Guest Access"
 msgstr "Planning Gast Toegang"
@@ -17545,12 +18040,24 @@ msgctxt "PermissionKeyDescription"
 msgid "Can control scheduled guest access to this page."
 msgstr "Kan geplande toegang geven aan gasten voor deze pagina."
 
-#: concrete/config/install/base/permissions.xml:45
+#: concrete/config/install/base/permissions.xml:44
+msgctxt "PermissionKeyName"
+msgid "Edit Multilingual Settings"
+msgstr ""
+
+#: concrete/config/install/base/permissions.xml:44
+msgctxt "PermissionKeyDescription"
+msgid ""
+"Controls whether a user can see the multilingual settings menu, re-map a "
+"page or set a page as ignored in multilingual settings."
+msgstr ""
+
+#: concrete/config/install/base/permissions.xml:46
 msgctxt "PermissionKeyName"
 msgid "Add Block"
 msgstr "Blok toevoegen"
 
-#: concrete/config/install/base/permissions.xml:45
+#: concrete/config/install/base/permissions.xml:46
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Can add a block to any area on the site. If someone is added here they can "
@@ -17558,12 +18065,12 @@ msgid ""
 " global permissions.)"
 msgstr "Kan een blok aan elk gebied toevoegen op de website. Als iemand hier toegevoegd wordt, dan kan deze blokken toevoegen aan elk gebied (tenzij dat gebied rechten heeft die de globale machtigingen opheffen.)"
 
-#: concrete/config/install/base/permissions.xml:50
+#: concrete/config/install/base/permissions.xml:51
 msgctxt "PermissionKeyName"
 msgid "Add Stack"
 msgstr "Stapel Toevoegen"
 
-#: concrete/config/install/base/permissions.xml:50
+#: concrete/config/install/base/permissions.xml:51
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Can add a stack or block from a stack to any area on the site. If someone is"
@@ -17571,96 +18078,96 @@ msgid ""
 "permissions that override these global permissions.)"
 msgstr "Kan een stapel of blok toevoegen, van een bestaande stapel aan elk gebied op de website. Als iemand hieraan wordt toegevoegd, kan deze stapels toevoegen aan elk gebied. ( tenzij dit gebied machtigingen heet die de globale machtigingen opheffen.)"
 
-#: concrete/config/install/base/permissions.xml:57
+#: concrete/config/install/base/permissions.xml:58
 msgctxt "PermissionKeyName"
 msgid "View Area"
 msgstr "Bekijk Gebied"
 
-#: concrete/config/install/base/permissions.xml:57
+#: concrete/config/install/base/permissions.xml:58
 msgctxt "PermissionKeyDescription"
 msgid "Can view the area and its contents."
 msgstr "Kan dit gebied met inhoud bekijken."
 
-#: concrete/config/install/base/permissions.xml:58
+#: concrete/config/install/base/permissions.xml:59
 msgctxt "PermissionKeyName"
 msgid "Edit Area Contents"
 msgstr "Bewerk Gebied"
 
-#: concrete/config/install/base/permissions.xml:58
+#: concrete/config/install/base/permissions.xml:59
 msgctxt "PermissionKeyDescription"
 msgid "Can edit blocks within this area."
 msgstr "Kan blokken in dit gebied bewerken."
 
-#: concrete/config/install/base/permissions.xml:59
+#: concrete/config/install/base/permissions.xml:60
 msgctxt "PermissionKeyName"
 msgid "Add Block to Area"
 msgstr "Blok toevoegen aan Gebied"
 
-#: concrete/config/install/base/permissions.xml:59
+#: concrete/config/install/base/permissions.xml:60
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Can add blocks to this area. This setting overrides the global Add Block "
 "permission for this area."
 msgstr "Kan blokken toevoegen aan dit gebied. Deze instellingen overschrijven de globale instellingen, voor het toevoegen van een blok aan dit gebied."
 
-#: concrete/config/install/base/permissions.xml:60
+#: concrete/config/install/base/permissions.xml:61
 msgctxt "PermissionKeyName"
 msgid "Add Stack to Area"
 msgstr "Stapel toevoegen aan Gebied."
 
-#: concrete/config/install/base/permissions.xml:60
+#: concrete/config/install/base/permissions.xml:61
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Can add stacks to this area. This setting overrides the global Add Stack "
 "permission for this area."
 msgstr "Kan een stapel toevoegen aan dit gebied. Deze instellingen overschrijven de globale machtigingen voor het toevoegen van een stapel aan dit gebied."
 
-#: concrete/config/install/base/permissions.xml:61
+#: concrete/config/install/base/permissions.xml:62
 msgctxt "PermissionKeyName"
 msgid "Add Layouts to Area"
 msgstr "Layout toevoegen aan Gebied"
 
-#: concrete/config/install/base/permissions.xml:61
+#: concrete/config/install/base/permissions.xml:62
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users get the ability to add layouts to a particular area."
 msgstr "Bepaalt of gebruikers de mogelijkheid hebben om layouts toe te voegen aan een bepaald gebied."
 
-#: concrete/config/install/base/permissions.xml:62
+#: concrete/config/install/base/permissions.xml:63
 msgctxt "PermissionKeyName"
 msgid "Edit Area Design"
 msgstr "Wijzig ontwerp van gebied"
 
-#: concrete/config/install/base/permissions.xml:62
+#: concrete/config/install/base/permissions.xml:63
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users see design controls and can modify an area's custom "
 "CSS."
 msgstr "Bepaalt of gebruikers de design gereedschappen kan zien en handmatig de CSS voor dit gebied kan wijzigen."
 
-#: concrete/config/install/base/permissions.xml:63
+#: concrete/config/install/base/permissions.xml:64
 msgctxt "PermissionKeyName"
 msgid "Edit Area Permissions"
 msgstr "Wijzig Gebied Machtigingen"
 
-#: concrete/config/install/base/permissions.xml:63
+#: concrete/config/install/base/permissions.xml:64
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users can access the permissions on an area. Custom area "
 "permissions could override those of the page."
 msgstr "Bepaalt of gebruikers de gebieds machtigingen kunnen wijzigen. Handmatige gebieds machtigingen kunnen de pagina machtigingen overschrijven."
 
-#: concrete/config/install/base/permissions.xml:64
+#: concrete/config/install/base/permissions.xml:65
 msgctxt "PermissionKeyName"
 msgid "Delete Area Contents"
 msgstr "Verwijder Gebied"
 
-#: concrete/config/install/base/permissions.xml:64
+#: concrete/config/install/base/permissions.xml:65
 msgctxt "PermissionKeyDescription"
 msgid "Controls whether users can delete blocks from this area."
 msgstr "Bepaalt of gebruikers blokken kunnen verwijderen van dit gebied."
 
-#: concrete/config/install/base/permissions.xml:65
+#: concrete/config/install/base/permissions.xml:66
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users can schedule guest access permissions on blocks in "
@@ -17668,483 +18175,483 @@ msgid ""
 "Guest Group."
 msgstr "Bepaalt of gebruikers toegangs machtigingen kunnen toekennen aan gasten voor blokken in dit gebied. Gast Toegang is een verkorte manier om  machtigingen toe te kennen aan de Gasten Groep."
 
-#: concrete/config/install/base/permissions.xml:68
+#: concrete/config/install/base/permissions.xml:69
 msgctxt "PermissionKeyName"
 msgid "View Block"
 msgstr "Bekijk Blok"
 
-#: concrete/config/install/base/permissions.xml:68
+#: concrete/config/install/base/permissions.xml:69
 msgctxt "PermissionKeyDescription"
 msgid "Controls whether users can view this block in the page."
 msgstr "Bepaalt of gebruikers dit blok op deze pagina kunnen bekijken."
 
-#: concrete/config/install/base/permissions.xml:69
+#: concrete/config/install/base/permissions.xml:70
 msgctxt "PermissionKeyName"
 msgid "Edit Block"
 msgstr "Bewerk Blok"
 
-#: concrete/config/install/base/permissions.xml:69
+#: concrete/config/install/base/permissions.xml:70
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users can edit this block. This overrides any area or page "
 "permissions."
 msgstr "Bepaalt of gebruikers dit blok kunnen bewerken. Dit overschrijft alle gebieds en pagina machtigingen."
 
-#: concrete/config/install/base/permissions.xml:70
+#: concrete/config/install/base/permissions.xml:71
 msgctxt "PermissionKeyName"
 msgid "Change Custom Template"
 msgstr "Wijzig Sjabloon"
 
-#: concrete/config/install/base/permissions.xml:70
+#: concrete/config/install/base/permissions.xml:71
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users can change the custom template on this block. This "
 "overrides any area or page permissions."
 msgstr "Bepaalt of gebruikers de handmatige templates voor dit blok kunnen wijzigen. Dit overschrijft alle gebieds en pagina machtigingen."
 
-#: concrete/config/install/base/permissions.xml:71
+#: concrete/config/install/base/permissions.xml:72
 msgctxt "PermissionKeyName"
 msgid "Edit Cache Settings"
 msgstr "Bewerk cache instellingen"
 
-#: concrete/config/install/base/permissions.xml:71
+#: concrete/config/install/base/permissions.xml:72
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users can change the block cache settings for this block "
 "instance."
 msgstr "Bepaalt of gebruikers de blok cache instellingen kunnen veranderen voor dit blok."
 
-#: concrete/config/install/base/permissions.xml:72
+#: concrete/config/install/base/permissions.xml:73
 msgctxt "PermissionKeyName"
 msgid "Edit Name"
 msgstr "Bewerk naam"
 
-#: concrete/config/install/base/permissions.xml:72
+#: concrete/config/install/base/permissions.xml:73
 msgctxt "PermissionKeyDescription"
 msgid "Controls whether users can change the block's name (rarely used.)"
 msgstr "Bepaalt of gebruikers de naam van het blok kunnen veranderen (weinig gebruikt)."
 
-#: concrete/config/install/base/permissions.xml:73
+#: concrete/config/install/base/permissions.xml:74
 msgctxt "PermissionKeyName"
 msgid "Delete Block"
 msgstr "Verwijder Blok"
 
-#: concrete/config/install/base/permissions.xml:73
+#: concrete/config/install/base/permissions.xml:74
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users can delete this block. This overrides any area or "
 "page permissions."
 msgstr "Bepaalt of gebruikers dit blok kunnen verwijderen. Dit overschrijft alle gebieds of pagina machtigingen."
 
-#: concrete/config/install/base/permissions.xml:74
+#: concrete/config/install/base/permissions.xml:75
 msgctxt "PermissionKeyName"
 msgid "Edit Design"
 msgstr "Wijzig Ontwerp"
 
-#: concrete/config/install/base/permissions.xml:74
+#: concrete/config/install/base/permissions.xml:75
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users can set custom design properties or CSS on this "
 "block."
 msgstr "Bepaalt of gebruikers handmatige ontwerp proporties of CSS aan dit blok kunnen toevoegen."
 
-#: concrete/config/install/base/permissions.xml:75
+#: concrete/config/install/base/permissions.xml:76
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users can change permissions on this block, potentially "
 "granting themselves or others greater access."
 msgstr "Bepaalt of gebruikers de machtigingen voor dit blok kunnen wijzigen, dit geeft deze en anderen hogere machtigingen."
 
-#: concrete/config/install/base/permissions.xml:76
+#: concrete/config/install/base/permissions.xml:77
 msgctxt "PermissionKeyDescription"
 msgid ""
 "Controls whether users can schedule guest access permissions on this block. "
 "Guest Access is a shortcut for granting permissions just to the Guest Group."
 msgstr "Bepaalt of gebruikers toegangsrechten voor gasten kunnen plannen op dit blok. Gast Toegang is een snelkoppeling voor het verlenen van rechten  voor de gast-groep."
 
-#: concrete/config/install/base/permissions.xml:78
-#: concrete/config/install/base/permissions.xml:87
+#: concrete/config/install/base/permissions.xml:79
+#: concrete/config/install/base/permissions.xml:88
 msgctxt "PermissionKeyName"
 msgid "View Files"
 msgstr "Bekijk bestanden"
 
-#: concrete/config/install/base/permissions.xml:78
+#: concrete/config/install/base/permissions.xml:79
 msgctxt "PermissionKeyDescription"
 msgid "Can view and download files in the site."
 msgstr "Kan bestanden bekijken en downloaden."
 
-#: concrete/config/install/base/permissions.xml:79
+#: concrete/config/install/base/permissions.xml:80
 msgctxt "PermissionKeyName"
 msgid "Search Files in File Manager"
 msgstr "Zoek bestanden"
 
-#: concrete/config/install/base/permissions.xml:79
+#: concrete/config/install/base/permissions.xml:80
 msgctxt "PermissionKeyDescription"
 msgid "Can access the file manager"
 msgstr "Kan bestandsbeheer niet openen"
 
-#: concrete/config/install/base/permissions.xml:80
-#: concrete/config/install/base/permissions.xml:89
+#: concrete/config/install/base/permissions.xml:81
+#: concrete/config/install/base/permissions.xml:90
 msgctxt "PermissionKeyName"
 msgid "Edit File Properties"
 msgstr "Bewerk Bestands Eigenschappen"
 
-#: concrete/config/install/base/permissions.xml:80
-#: concrete/config/install/base/permissions.xml:89
+#: concrete/config/install/base/permissions.xml:81
+#: concrete/config/install/base/permissions.xml:90
 msgctxt "PermissionKeyDescription"
 msgid "Can edit a file's properties."
 msgstr "Kan bestands eigenschappen wijzigen."
 
-#: concrete/config/install/base/permissions.xml:81
-#: concrete/config/install/base/permissions.xml:90
+#: concrete/config/install/base/permissions.xml:82
+#: concrete/config/install/base/permissions.xml:91
 msgctxt "PermissionKeyName"
 msgid "Edit File Contents"
 msgstr "Bewerk Bestand"
 
-#: concrete/config/install/base/permissions.xml:81
+#: concrete/config/install/base/permissions.xml:82
 msgctxt "PermissionKeyDescription"
 msgid "Can edit or replace files in set."
 msgstr "Kan bestanden in een groep wijzigen."
 
-#: concrete/config/install/base/permissions.xml:82
-#: concrete/config/install/base/permissions.xml:91
+#: concrete/config/install/base/permissions.xml:83
+#: concrete/config/install/base/permissions.xml:92
 msgctxt "PermissionKeyName"
 msgid "Copy File"
 msgstr "Bestand kopiëren"
 
-#: concrete/config/install/base/permissions.xml:82
+#: concrete/config/install/base/permissions.xml:83
 msgctxt "PermissionKeyDescription"
 msgid "Can copy files in file set."
 msgstr "Kan bestanden in een groep kopiëren."
 
-#: concrete/config/install/base/permissions.xml:83
-#: concrete/config/install/base/permissions.xml:92
+#: concrete/config/install/base/permissions.xml:84
+#: concrete/config/install/base/permissions.xml:93
 msgctxt "PermissionKeyName"
 msgid "Edit File Access"
 msgstr "Bewerk Bestands Machtigingen"
 
-#: concrete/config/install/base/permissions.xml:83
+#: concrete/config/install/base/permissions.xml:84
 msgctxt "PermissionKeyDescription"
 msgid "Can edit access to file sets."
 msgstr "Kan machtigingen van betands groepen wijzigen."
 
-#: concrete/config/install/base/permissions.xml:84
+#: concrete/config/install/base/permissions.xml:85
 msgctxt "PermissionKeyName"
 msgid "Delete File Set"
 msgstr "Bestands set verwijderen"
 
-#: concrete/config/install/base/permissions.xml:84
+#: concrete/config/install/base/permissions.xml:85
 msgctxt "PermissionKeyDescription"
 msgid "Can delete file set."
 msgstr "Kunt verwijderen bestandenset."
 
-#: concrete/config/install/base/permissions.xml:85
-#: concrete/config/install/base/permissions.xml:93
+#: concrete/config/install/base/permissions.xml:86
+#: concrete/config/install/base/permissions.xml:94
 msgctxt "PermissionKeyName"
 msgid "Delete File"
 msgstr "Verwijder Bestand"
 
-#: concrete/config/install/base/permissions.xml:85
+#: concrete/config/install/base/permissions.xml:86
 msgctxt "PermissionKeyDescription"
 msgid "Can delete files in set."
 msgstr "Kan bestanden in een groep verwijderen."
 
-#: concrete/config/install/base/permissions.xml:86
+#: concrete/config/install/base/permissions.xml:87
 msgctxt "PermissionKeyName"
 msgid "Add File"
 msgstr "Bestand Toevoegen"
 
-#: concrete/config/install/base/permissions.xml:86
+#: concrete/config/install/base/permissions.xml:87
 msgctxt "PermissionKeyDescription"
 msgid "Can add files to set."
 msgstr "Kan bestanden niet toevoegen aan groep."
 
-#: concrete/config/install/base/permissions.xml:87
+#: concrete/config/install/base/permissions.xml:88
 msgctxt "PermissionKeyDescription"
 msgid "Can view and download files."
 msgstr "Kan bestanden bekijken en downloaden."
 
-#: concrete/config/install/base/permissions.xml:88
+#: concrete/config/install/base/permissions.xml:89
 msgctxt "PermissionKeyName"
 msgid "View File in File Manager"
 msgstr "Bekijk Bestand in Bestandsbeheer"
 
-#: concrete/config/install/base/permissions.xml:88
+#: concrete/config/install/base/permissions.xml:89
 msgctxt "PermissionKeyDescription"
 msgid "Can access the File Manager."
 msgstr "Kan bestandsbeheer niet openen."
 
-#: concrete/config/install/base/permissions.xml:90
+#: concrete/config/install/base/permissions.xml:91
 msgctxt "PermissionKeyDescription"
 msgid "Can edit or replace files."
 msgstr "Kan bestanden bewerken of vervangen."
 
-#: concrete/config/install/base/permissions.xml:91
+#: concrete/config/install/base/permissions.xml:92
 msgctxt "PermissionKeyDescription"
 msgid "Can copy file."
 msgstr "Kan bestand niet kopiëren"
 
-#: concrete/config/install/base/permissions.xml:92
+#: concrete/config/install/base/permissions.xml:93
 msgctxt "PermissionKeyDescription"
 msgid "Can edit access to file."
 msgstr "Kan bestands machtigingen wijzigen."
 
-#: concrete/config/install/base/permissions.xml:93
+#: concrete/config/install/base/permissions.xml:94
 msgctxt "PermissionKeyDescription"
 msgid "Can delete file."
 msgstr "Kan bestand niet verwijderen."
 
-#: concrete/config/install/base/permissions.xml:96
+#: concrete/config/install/base/permissions.xml:97
 msgctxt "PermissionKeyName"
 msgid "Approve or Deny"
 msgstr "Goedkeuren of Weigeren"
 
-#: concrete/config/install/base/permissions.xml:96
+#: concrete/config/install/base/permissions.xml:97
 msgctxt "PermissionKeyDescription"
 msgid "Grant ability to approve workflow."
 msgstr "Kan workflow goedkeuren."
 
-#: concrete/config/install/base/permissions.xml:97
+#: concrete/config/install/base/permissions.xml:98
 msgctxt "PermissionKeyName"
 msgid "Notify on Entry"
 msgstr "Melding bij bericht"
 
-#: concrete/config/install/base/permissions.xml:97
+#: concrete/config/install/base/permissions.xml:98
 msgctxt "PermissionKeyDescription"
 msgid "Notify approvers that a change has entered the workflow."
 msgstr "Informeer fiatteur dat er een wijziging van de workflow is opgetreden."
 
-#: concrete/config/install/base/permissions.xml:98
+#: concrete/config/install/base/permissions.xml:99
 msgctxt "PermissionKeyName"
 msgid "Notify on Approve"
 msgstr "Melding bij Goedkeuren"
 
-#: concrete/config/install/base/permissions.xml:98
+#: concrete/config/install/base/permissions.xml:99
 msgctxt "PermissionKeyDescription"
 msgid "Notify approvers that a change has been approved."
 msgstr "Informeer fiatteurs dat een wijziging is goedgekeurd."
 
-#: concrete/config/install/base/permissions.xml:99
+#: concrete/config/install/base/permissions.xml:100
 msgctxt "PermissionKeyName"
 msgid "Notify on Deny"
 msgstr "Melding bij Weigeren"
 
-#: concrete/config/install/base/permissions.xml:99
+#: concrete/config/install/base/permissions.xml:100
 msgctxt "PermissionKeyDescription"
 msgid "Notify approvers that a change has been denied."
 msgstr "Informeer fiatteur dat een wijziging is afgekeurd."
 
-#: concrete/config/install/base/permissions.xml:102
+#: concrete/config/install/base/permissions.xml:103
 msgctxt "PermissionKeyName"
 msgid "Add Page Type"
 msgstr "Paginatype Toevoegen"
 
-#: concrete/config/install/base/permissions.xml:103
+#: concrete/config/install/base/permissions.xml:104
 msgctxt "PermissionKeyName"
 msgid "Edit Page Type Permissions"
 msgstr "Bewerk paginatype machtigingen"
 
-#: concrete/config/install/base/permissions.xml:104
+#: concrete/config/install/base/permissions.xml:105
 msgctxt "PermissionKeyName"
 msgid "Edit Page Type Drafts"
 msgstr "Paginatype concepten bewerken"
 
-#: concrete/config/install/base/permissions.xml:108
+#: concrete/config/install/base/permissions.xml:109
 msgctxt "PermissionKeyName"
 msgid "View Topic Tree Node"
 msgstr "Weergave onderwerp boomknoop"
 
-#: concrete/config/install/base/permissions.xml:109
+#: concrete/config/install/base/permissions.xml:110
 msgctxt "PermissionKeyName"
 msgid "View Topic Category Tree Node"
 msgstr "Weergave onderwerp categorie boomknoop"
 
-#: concrete/config/install/base/permissions.xml:112
+#: concrete/config/install/base/permissions.xml:113
 msgctxt "PermissionKeyName"
 msgid "Add Message to Conversation"
 msgstr "Bericht toevoegen aan gesprek"
 
-#: concrete/config/install/base/permissions.xml:113
+#: concrete/config/install/base/permissions.xml:114
 msgctxt "PermissionKeyName"
 msgid "Add Message Attachments"
 msgstr "Berichten Bijlage Toevoegen "
 
-#: concrete/config/install/base/permissions.xml:114
+#: concrete/config/install/base/permissions.xml:115
 msgctxt "PermissionKeyName"
 msgid "Edit Conversation Permissions"
 msgstr "Gespreksmachtigingen bewerken"
 
-#: concrete/config/install/base/permissions.xml:115
+#: concrete/config/install/base/permissions.xml:116
 msgctxt "PermissionKeyName"
 msgid "Delete Message"
 msgstr "Bericht verwijderen"
 
-#: concrete/config/install/base/permissions.xml:116
+#: concrete/config/install/base/permissions.xml:117
 msgctxt "PermissionKeyName"
 msgid "Edit Message"
 msgstr "Bericht bewerken"
 
-#: concrete/config/install/base/permissions.xml:117
+#: concrete/config/install/base/permissions.xml:118
 msgctxt "PermissionKeyName"
 msgid "Rate Message"
 msgstr "Beoordeel bericht"
 
-#: concrete/config/install/base/permissions.xml:118
+#: concrete/config/install/base/permissions.xml:119
 msgctxt "PermissionKeyName"
 msgid "Flag Message"
 msgstr "Markeer bericht"
 
-#: concrete/config/install/base/permissions.xml:119
+#: concrete/config/install/base/permissions.xml:120
 msgctxt "PermissionKeyName"
 msgid "Approve Message"
 msgstr "Bericht Goedkeuren"
 
-#: concrete/config/install/base/permissions.xml:122
+#: concrete/config/install/base/permissions.xml:123
 msgctxt "PermissionKeyName"
 msgid "Edit User Details"
 msgstr "Wijzig Gebruiker Details"
 
-#: concrete/config/install/base/permissions.xml:128
+#: concrete/config/install/base/permissions.xml:129
 msgctxt "PermissionKeyName"
 msgid "View User Attributes"
 msgstr "Bekijk Gebruiker Attributen"
 
-#: concrete/config/install/base/permissions.xml:134
+#: concrete/config/install/base/permissions.xml:135
 msgctxt "PermissionKeyName"
 msgid "Activate/Deactivate User"
 msgstr "Activeer/Deactiveer Gebruiker"
 
-#: concrete/config/install/base/permissions.xml:140
+#: concrete/config/install/base/permissions.xml:141
 msgctxt "PermissionKeyName"
 msgid "Sign in as User"
 msgstr "Aanmelden als gebruiker"
 
-#: concrete/config/install/base/permissions.xml:143
+#: concrete/config/install/base/permissions.xml:144
 msgctxt "PermissionKeyName"
 msgid "Upgrade concrete5"
 msgstr "Upgrade concrete5"
 
-#: concrete/config/install/base/permissions.xml:149
+#: concrete/config/install/base/permissions.xml:150
 msgctxt "PermissionKeyName"
 msgid "Access Group Search"
 msgstr "Toegang krijgen tot Groepen zoeken"
 
-#: concrete/config/install/base/permissions.xml:155
+#: concrete/config/install/base/permissions.xml:156
 msgctxt "PermissionKeyName"
 msgid "Delete User"
 msgstr "Verwijder Gebruiker"
 
-#: concrete/config/install/base/permissions.xml:163
+#: concrete/config/install/base/permissions.xml:164
 msgctxt "PermissionKeyName"
 msgid "Search User Group"
 msgstr "Zoek gebruikersgroep"
 
-#: concrete/config/install/base/permissions.xml:166
+#: concrete/config/install/base/permissions.xml:167
 msgctxt "PermissionKeyName"
 msgid "Edit Group"
 msgstr "Groep Wijzigen"
 
-#: concrete/config/install/base/permissions.xml:169
+#: concrete/config/install/base/permissions.xml:170
 msgctxt "PermissionKeyName"
 msgid "Assign Group"
 msgstr "Groep toewijzen"
 
-#: concrete/config/install/base/permissions.xml:173
+#: concrete/config/install/base/permissions.xml:174
 msgctxt "PermissionKeyName"
 msgid "Add Child Group"
 msgstr "Kind groep toevoegen"
 
-#: concrete/config/install/base/permissions.xml:177
+#: concrete/config/install/base/permissions.xml:178
 msgctxt "PermissionKeyName"
 msgid "Edit Group Permissions"
 msgstr "Bewerk groep machtigingen"
 
-#: concrete/config/install/base/permissions.xml:180
+#: concrete/config/install/base/permissions.xml:181
 msgctxt "PermissionKeyName"
 msgid "Access Page Type Permissions"
 msgstr "Paginatype toegangsmachtigingen"
 
-#: concrete/config/install/base/permissions.xml:186
+#: concrete/config/install/base/permissions.xml:187
 msgctxt "PermissionKeyName"
 msgid "Perform Backups"
 msgstr "Backup Uitvoeren"
 
-#: concrete/config/install/base/permissions.xml:192
+#: concrete/config/install/base/permissions.xml:193
 msgctxt "PermissionKeyName"
 msgid "Access Task Permissions"
 msgstr "Bekijk Taak Machtigingen"
 
-#: concrete/config/install/base/permissions.xml:195
+#: concrete/config/install/base/permissions.xml:196
 msgctxt "PermissionKeyName"
 msgid "Access Sitemap"
 msgstr "Bekijk Sitemap"
 
-#: concrete/config/install/base/permissions.xml:201
+#: concrete/config/install/base/permissions.xml:202
 msgctxt "PermissionKeyName"
 msgid "Access Page Type Defaults"
 msgstr "Bekijk Standaard Pagina typen"
 
-#: concrete/config/install/base/permissions.xml:207
+#: concrete/config/install/base/permissions.xml:208
 msgctxt "PermissionKeyName"
 msgid "Customize Themes"
 msgstr "Thema's aanpassen"
 
-#: concrete/config/install/base/permissions.xml:213
+#: concrete/config/install/base/permissions.xml:214
 msgctxt "PermissionKeyName"
 msgid "Manage Layout Presets"
 msgstr "Layout voorinstellingen beheren"
 
-#: concrete/config/install/base/permissions.xml:219
+#: concrete/config/install/base/permissions.xml:220
 msgctxt "PermissionKeyName"
 msgid "Empty Trash"
 msgstr "Leeg prullenbak"
 
-#: concrete/config/install/base/permissions.xml:225
+#: concrete/config/install/base/permissions.xml:226
 msgctxt "PermissionKeyName"
 msgid "Add Topic Tree"
 msgstr "Voeg onderwerp Tree"
 
-#: concrete/config/install/base/permissions.xml:231
+#: concrete/config/install/base/permissions.xml:232
 msgctxt "PermissionKeyName"
 msgid "Remove Topic Tree"
 msgstr "Verwijderen van onderwerp boom"
 
-#: concrete/config/install/base/permissions.xml:237
+#: concrete/config/install/base/permissions.xml:238
 msgctxt "PermissionKeyName"
 msgid "Uninstall Packages"
 msgstr "Paketten deinstalleren"
 
-#: concrete/config/install/base/permissions.xml:243
+#: concrete/config/install/base/permissions.xml:244
 msgctxt "PermissionKeyName"
 msgid "Install Packages"
 msgstr "Installeer Extensies"
 
-#: concrete/config/install/base/permissions.xml:249
+#: concrete/config/install/base/permissions.xml:250
 msgctxt "PermissionKeyName"
 msgid "View Newsflow"
 msgstr "Bekijk Nieuws"
 
-#: concrete/config/install/base/permissions.xml:255
+#: concrete/config/install/base/permissions.xml:256
 msgctxt "PermissionKeyName"
 msgid "Export Site Users"
 msgstr "Gebruikers van de Site exporteren"
 
-#: concrete/config/install/base/permissions.xml:255
+#: concrete/config/install/base/permissions.xml:256
 msgctxt "PermissionKeyDescription"
 msgid "Controls whether a user can export site users or not"
 msgstr "Hiermee bepaalt u of een gebruiker een sitegebruikers of niet exporteren kunt"
 
-#: concrete/config/install/base/permissions.xml:261
+#: concrete/config/install/base/permissions.xml:262
 msgctxt "PermissionKeyName"
 msgid "Access User Search"
 msgstr "Toegang krijgen tot Gebruikers zoeken"
 
-#: concrete/config/install/base/permissions.xml:261
+#: concrete/config/install/base/permissions.xml:262
 msgctxt "PermissionKeyDescription"
 msgid "Controls whether a user can view the search user interface."
 msgstr "Hiermee bepaalt u of een gebruiker de zoekinterface gebruiker kan bekijken."
 
-#: concrete/config/install/base/permissions.xml:270
+#: concrete/config/install/base/permissions.xml:271
 msgid "SecurImage (Default)"
 msgstr "SecurImage (Standaard)"
 
@@ -18183,37 +18690,37 @@ msgctxt "ImageEditorFilterName"
 msgid "Vignette"
 msgstr "Vignet"
 
-#: concrete/config/install/base/blocktypes.xml:53
+#: concrete/config/install/base/blocktypes.xml:54
 msgctxt "SystemContentEditorSnippetName"
 msgid "Page Name"
 msgstr "Paginanaam"
 
-#: concrete/config/install/base/blocktypes.xml:54
+#: concrete/config/install/base/blocktypes.xml:55
 msgctxt "SystemContentEditorSnippetName"
 msgid "User Name"
 msgstr "Gebruikersnaam"
 
-#: concrete/config/install/base/blocktypes.xml:58
+#: concrete/config/install/base/blocktypes.xml:59
 msgctxt "BlockTypeSetName"
 msgid "Basic"
 msgstr "Basis"
 
-#: concrete/config/install/base/blocktypes.xml:66
+#: concrete/config/install/base/blocktypes.xml:67
 msgctxt "BlockTypeSetName"
 msgid "Navigation"
 msgstr "Navigatie"
 
-#: concrete/config/install/base/blocktypes.xml:81
+#: concrete/config/install/base/blocktypes.xml:83
 msgctxt "BlockTypeSetName"
 msgid "Forms"
 msgstr "Formulieren"
 
-#: concrete/config/install/base/blocktypes.xml:86
+#: concrete/config/install/base/blocktypes.xml:88
 msgctxt "BlockTypeSetName"
 msgid "Social Networking"
 msgstr "Social Networking"
 
-#: concrete/config/install/base/blocktypes.xml:94
+#: concrete/config/install/base/blocktypes.xml:96
 msgctxt "BlockTypeSetName"
 msgid "Multimedia"
 msgstr "Multimedia"
@@ -19049,6 +19556,16 @@ msgstr "Datum tijd"
 msgctxt "TemplateFileName"
 msgid "Byline"
 msgstr "Door- Regel"
+
+#: concrete/blocks/switch_language/templates/flags
+msgctxt "TemplateFileName"
+msgid "Flags"
+msgstr "Vlaggen"
+
+#: concrete/blocks/switch_language/templates/flags_set_default
+msgctxt "TemplateFileName"
+msgid "Flags Set Default"
+msgstr "Vlaggen standaardwaarde instellen"
 
 #: concrete/blocks/search/templates/tag_cloud
 msgctxt "TemplateFileName"
