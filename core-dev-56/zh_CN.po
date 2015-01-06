@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2014-11-05 05:00+0000\n"
-"PO-Revision-Date: 2014-11-05 10:05+0000\n"
+"POT-Creation-Date: 2015-01-05 05:00+0000\n"
+"PO-Revision-Date: 2015-01-06 02:10+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/projects/p/concrete5/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -722,7 +722,7 @@ msgstr "已更新"
 #: concrete/elements/collection_delete.php:59
 #: concrete/elements/files/search_results.php:33
 #: concrete/elements/pages/search_results.php:48
-#: concrete/elements/users/search_results.php:50
+#: concrete/elements/users/search_results.php:52
 #: concrete/models/attribute/types/select/type_form.php:19
 #: concrete/single_pages/dashboard/files/sets.php:116
 #: concrete/single_pages/dashboard/pages/types/view.php:192
@@ -1630,7 +1630,7 @@ msgstr "用户属性"
 msgid "Are you sure you would like to activate the following users?"
 msgstr "你确定你想激活以下的用户吗？"
 
-#: concrete/elements/users/search_results.php:42
+#: concrete/elements/users/search_results.php:44
 #: concrete/single_pages/dashboard/pages/themes/view.php:87
 #: concrete/single_pages/dashboard/pages/themes/view.php:89
 #: concrete/tools/users/bulk_activate.php:59
@@ -1704,7 +1704,7 @@ msgstr "没有批量关闭权限的用户已从这个名单删除。"
 msgid "Are you sure you would like to deactivate the following users?"
 msgstr "你确定你想停用以下的用户吗？"
 
-#: concrete/elements/users/search_results.php:43
+#: concrete/elements/users/search_results.php:45
 #: concrete/tools/users/bulk_deactivate.php:69
 msgid "Deactivate"
 msgstr "停用"
@@ -2032,7 +2032,7 @@ msgstr "停用用户"
 msgid "Remove From Group"
 msgstr "从组中删除"
 
-#: concrete/elements/users/search_results.php:46 concrete/tools/i18n_js.php:83
+#: concrete/elements/users/search_results.php:48 concrete/tools/i18n_js.php:83
 msgid "Add to Group"
 msgstr "添加到组"
 
@@ -2206,7 +2206,7 @@ msgstr "无建议"
 msgid "View"
 msgstr "查看"
 
-#: concrete/elements/users/search_results.php:53
+#: concrete/elements/users/search_results.php:55
 #: concrete/tools/i18n_js.php:149
 msgid "Choose"
 msgstr "选择"
@@ -4652,7 +4652,7 @@ msgstr "已处理所有页面，返回下一流程的开始环节。"
 #, php-format
 msgid "%1$d versions deleted from %2$d page (%3$s)"
 msgid_plural "%1$d versions deleted from %2$d pages (%3$s)"
-msgstr[0] ""
+msgstr[0] "从 %2$d 个页面中删除了 %1$d 个版本 (%3$s)"
 
 #: concrete/core/jobs/index_search.php:14
 msgid "Index Search Engine - Updates"
@@ -4691,7 +4691,7 @@ msgstr "索引搜索引擎 - 全部"
 
 #: concrete/core/jobs/index_search_all.php:19
 msgid "Empties the page search index and reindexes all pages."
-msgstr ""
+msgstr "清空页面搜索索引并重新编录。"
 
 #: concrete/core/jobs/index_search_all.php:47
 #, php-format
@@ -4813,7 +4813,7 @@ msgstr ""
 #: concrete/core/models/file_list.php:131
 #, php-format
 msgid "Failed to create zip file as \"%s\": %s"
-msgstr ""
+msgstr "无法创建 zip 文件 \"%s\": %s"
 
 #: concrete/core/models/file_list.php:419
 msgid "Added"
@@ -4881,23 +4881,23 @@ msgstr "无法获得许可密钥%s"
 msgid "Error: no area assigned to layout"
 msgstr "错误：没有分配到布局区域"
 
-#: concrete/core/models/page.php:291
+#: concrete/core/models/page.php:292
 #: concrete/core/models/user_private_message.php:147
 #: concrete/core/models/workflow/progress/history.php:21
 #: concrete/single_pages/profile/friends.php:26
 msgid "Unknown User"
 msgstr "未知用户"
 
-#: concrete/core/models/page.php:1634
+#: concrete/core/models/page.php:1636
 #, php-format
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "在%s路径的%s页面已删除"
 
-#: concrete/core/models/page.php:1634 concrete/core/models/page.php:1696
+#: concrete/core/models/page.php:1636 concrete/core/models/page.php:1698
 msgid "Page Action"
 msgstr "页面动作"
 
-#: concrete/core/models/page.php:1696
+#: concrete/core/models/page.php:1698
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "在%s路径的%s页面已放入回收站"
@@ -5227,7 +5227,7 @@ msgstr "\"%s\" 已被标记为删除。查看页面在这里： %s 。"
 #: concrete/core/models/workflow/request/requests/delete_page.php:29
 #, php-format
 msgid "This %s has been marked for deletion. "
-msgstr ""
+msgstr "%s 已被标记为删除。"
 
 #: concrete/core/models/workflow/request/requests/delete_page.php:30
 #, php-format
@@ -5275,12 +5275,12 @@ msgstr "\"%s\" 挂起更改并需要得到批准。在这里查看页面：%s �
 #: concrete/core/models/workflow/request/requests/approve_page.php:33
 #, php-format
 msgid "Version %s of Page <a href=\"%s\">%s</a> submitted for Approval."
-msgstr ""
+msgstr "页面版本 %s <a href=\"%s\">%s</a> 已提交审核。"
 
 #: concrete/core/models/workflow/request/requests/approve_page.php:34
 #, php-format
 msgid "Page Version %s Submitted for Approval."
-msgstr ""
+msgstr "页面版本 %s 已提交审核。"
 
 #: concrete/core/models/workflow/request/requests/approve_page.php:35
 msgid "Pending Approval"
@@ -5348,7 +5348,7 @@ msgstr "页面的持有人"
 #: concrete/config/install/disabled/blank/content.xml:33
 #: concrete/config/install/disabled/standard/content.xml:33
 #: concrete/core/models/permission/access/entity/types/user.php:13
-#: concrete/elements/users/search_results.php:35
+#: concrete/elements/users/search_results.php:36
 #: concrete/helpers/concrete/upgrade/version_510.php:83
 #: concrete/single_pages/dashboard/users/add.php:19
 msgid "Add User"
@@ -5408,7 +5408,7 @@ msgstr "例外"
 #: concrete/core/models/permission/response.php:62
 #, php-format
 msgid "Unable to get category for permission %s"
-msgstr ""
+msgstr "无法获得权限分类 %s"
 
 #: concrete/core/models/system/captcha/types/securimage/controller.php:31
 msgid "Captcha Code"
@@ -5610,7 +5610,7 @@ msgstr "手柄%s属性已经存在。"
 #: concrete/core/libraries/loader.php:86
 #, php-format
 msgid "Illegal variable name '%s' in element args."
-msgstr ""
+msgstr "元素参数中，变量名 ‘%s’ 无效。"
 
 #: concrete/core/libraries/loader.php:265
 msgid "A database error occurred while processing this request."
@@ -6313,7 +6313,7 @@ msgstr "显示没有在组中的文件。"
 
 #: concrete/elements/files/search_results.php:27
 #: concrete/elements/pages/search_results.php:38
-#: concrete/elements/users/search_results.php:37
+#: concrete/elements/users/search_results.php:39
 msgid "With Selected"
 msgstr "与选定的"
 
@@ -6775,7 +6775,7 @@ msgstr "之前，你可以删除这个页面，你必须删除所有的子页面
 msgid ""
 "Warning! This is a system page. Deleting it could potentially break your "
 "site. Please proceed with caution."
-msgstr ""
+msgstr "警告！这是系统页面，删除它有可能破坏网站，请小心使用。"
 
 #: concrete/elements/collection_delete.php:64
 msgid "Are you sure you wish to delete this page?"
@@ -7167,20 +7167,20 @@ msgid "%s Timed Permissions Found"
 msgstr "%s定时权限已找到"
 
 #: concrete/elements/pages/search_results.php:39
-#: concrete/elements/users/search_results.php:39
+#: concrete/elements/users/search_results.php:41
 msgid "Edit Properties"
 msgstr "编辑属性"
 
-#: concrete/elements/users/search_results.php:47
+#: concrete/elements/users/search_results.php:49
 msgid "Remove from Group"
 msgstr "从组中删除"
 
-#: concrete/elements/users/search_results.php:115
+#: concrete/elements/users/search_results.php:117
 #: concrete/single_pages/members.php:15
 msgid "No users found."
 msgstr "找不到用户。"
 
-#: concrete/elements/users/search_results.php:126
+#: concrete/elements/users/search_results.php:128
 msgid "Export"
 msgstr "导出"
 
