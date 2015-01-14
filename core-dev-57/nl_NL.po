@@ -1,6 +1,6 @@
 # 
 # Translators:
-# Anneke Hulsbosch <anneke@rupzonline.nl>, 2014
+# Anneke Hulsbosch <anneke@rupzonline.nl>, 2014-2015
 # E Maas <contact@companyou.eu>, 2014
 # Joost Rijneveld <joostrijneveld@gmail.com>, 2015
 # akodde <mail@adrikodde.nl>, 2014-2015
@@ -14,9 +14,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-01-06 05:00+0000\n"
-"PO-Revision-Date: 2015-01-06 10:02+0000\n"
-"Last-Translator: Michele Locati <michele@locati.it>\n"
+"POT-Creation-Date: 2015-01-13 05:00+0000\n"
+"PO-Revision-Date: 2015-01-13 10:41+0000\n"
+"Last-Translator: Anneke Hulsbosch <anneke@rupzonline.nl>\n"
 "Language-Team: Dutch (Netherlands) (http://www.transifex.com/projects/p/concrete5/language/nl_NL/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -315,7 +315,7 @@ msgstr "Wachtwoord wijzigen en aanmelden"
 
 #: concrete/authentication/concrete/invalid_token.php:5
 msgid "Unable to validate email"
-msgstr ""
+msgstr "Niet mogelijk om e-mail te valideren"
 
 #: concrete/authentication/concrete/invalid_token.php:9
 msgid ""
@@ -373,7 +373,7 @@ msgstr "Als u uw wachtwoord bent vergeten, vul dan hieronder uw e-mailadres in. 
 #: concrete/single_pages/dashboard/users/search.php:54
 #: concrete/single_pages/login_oauth.php:64
 #: concrete/single_pages/register.php:57
-#: concrete/src/Form/Service/Widget/UserSelector.php:88
+#: concrete/src/Form/Service/Widget/UserSelector.php:89
 #: concrete/tools/users/search_results_export.php:27
 #: concrete/views/frontend/install.php:160
 msgid "Email Address"
@@ -397,7 +397,7 @@ msgstr "Meld u aan met een lokaal account."
 #: concrete/single_pages/dashboard/users/add.php:10
 #: concrete/single_pages/dashboard/users/search.php:50
 #: concrete/single_pages/register.php:50
-#: concrete/src/Form/Service/Widget/UserSelector.php:87
+#: concrete/src/Form/Service/Widget/UserSelector.php:88
 #: concrete/src/User/Search/ColumnSet/DefaultSet.php:29
 #: concrete/tools/users/search_results_export.php:26
 #: concrete/views/panels/page/preview_as/form.php:28
@@ -711,6 +711,10 @@ msgstr "Opslaan"
 #: concrete/controllers/dialog/file/thumbnails/edit.php:35
 #: concrete/controllers/dialog/file/thumbnails/edit.php:38
 #: concrete/controllers/dialog/page/add/compose.php:31
+#: concrete/controllers/panel/detail/page/composer.php:39
+#: concrete/controllers/panel/detail/page/composer.php:52
+#: concrete/controllers/panel/detail/page/composer.php:93
+#: concrete/controllers/panel/detail/page/composer.php:113
 #: concrete/controllers/search/users.php:39
 #: concrete/controllers/single_page/dashboard/users/search.php:46
 #: concrete/controllers/single_page/dashboard/users/search.php:64
@@ -977,7 +981,7 @@ msgstr "Opslaglocatie voor bestanden opgeslagen."
 #: concrete/elements/panels/page.php:111
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:58
 #: concrete/single_pages/dashboard/pages/types/view.php:50
-#: concrete/src/Package/Package.php:378
+#: concrete/src/Package/Package.php:381
 #: concrete/tools/files/permissions.php:51 concrete/tools/i18n_js.php:139
 #: concrete/tools/i18n_js.php:199
 msgid "Permissions"
@@ -1574,7 +1578,7 @@ msgstr "Filters aan het laden..."
 msgid "Loading Image..."
 msgstr "Afbeeldingen aan het laden..."
 
-#: concrete/blocks/faq/form_setup_html.php:15
+#: concrete/blocks/faq/form_setup_html.php:112
 #: concrete/blocks/image_slider/form_setup_html.php:14
 #: concrete/single_pages/dashboard/pages/templates/view.php:13
 #: concrete/single_pages/dashboard/system/backup/backup.php:29
@@ -2151,8 +2155,8 @@ msgstr "Aangepast Label"
 msgid "Custom Template"
 msgstr "Aangepast Thema"
 
-#: concrete/blocks/faq/form_setup_html.php:104
-#: concrete/blocks/faq/form_setup_html.php:132
+#: concrete/blocks/faq/form_setup_html.php:57
+#: concrete/blocks/faq/form_setup_html.php:87
 #: concrete/blocks/image_slider/form_setup_html.php:246
 #: concrete/single_pages/dashboard/blocks/types/view.php:8
 #: concrete/single_pages/dashboard/pages/feeds.php:86
@@ -3129,20 +3133,20 @@ msgstr "Pagina bijgewerkt"
 msgid "Page permissions have been saved."
 msgstr "Paginamachtigingen opgeslagen."
 
-#: concrete/controllers/panel/detail/page/composer.php:34
+#: concrete/controllers/panel/detail/page/composer.php:35
 #, php-format
 msgid "Page saved on %s"
 msgstr "Pagina opgeslagen op %s"
 
-#: concrete/controllers/panel/detail/page/composer.php:57
+#: concrete/controllers/panel/detail/page/composer.php:66
 msgid "You must choose a page to publish this page beneath."
 msgstr "U moet een pagina kiezen om deze pagina onder te publiceren."
 
-#: concrete/controllers/panel/detail/page/composer.php:63
+#: concrete/controllers/panel/detail/page/composer.php:72
 msgid "You do not have permission to publish a page in this location."
 msgstr "U bent niet gemachtigd om een pagina op deze locatie te publiceren."
 
-#: concrete/controllers/panel/detail/page/composer.php:94
+#: concrete/controllers/panel/detail/page/composer.php:107
 msgid "You do not have permission to discard this page."
 msgstr "U bent niet gemachtigd om deze pagina te annuleren."
 
@@ -4891,17 +4895,21 @@ msgstr "U moet een geldige naam voor uw paginatype opgeven."
 msgid "You must specify a valid handle for your page type."
 msgstr "U moet een geldig handvat opgeven voor uw paginatype."
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:110
 #: concrete/controllers/single_page/dashboard/pages/types/add.php:27
+msgid "You must specify a unique handle for your page type."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/pages/types.php:110
+#: concrete/controllers/single_page/dashboard/pages/types/add.php:33
 msgid "You must choose a valid default page template."
 msgstr "U moet een geldige standaard paginasjabloon kiest."
 
 #: concrete/controllers/single_page/dashboard/pages/types.php:123
-#: concrete/controllers/single_page/dashboard/pages/types/add.php:39
+#: concrete/controllers/single_page/dashboard/pages/types/add.php:45
 msgid "You must specify at least one page template."
 msgstr "U moet ten minste één paginasjabloon opgeven."
 
-#: concrete/controllers/single_page/dashboard/pages/types/add.php:43
+#: concrete/controllers/single_page/dashboard/pages/types/add.php:49
 msgid "Invalid page type publish target type."
 msgstr "Type ongeldige pagina publiceren doeltype."
 
@@ -6539,11 +6547,11 @@ msgstr "Omschrijving"
 msgid "You must specify a page description."
 msgstr "U moet een paginabeschrijving opgeven."
 
-#: concrete/src/Page/Type/Type.php:994
+#: concrete/src/Page/Type/Type.php:1005
 msgid "You must choose a page template."
 msgstr "U moet een paginasjabloon kiezen."
 
-#: concrete/src/Page/Type/Type.php:997
+#: concrete/src/Page/Type/Type.php:1008
 msgid "This page template is not a valid template for this page type."
 msgstr "Dit paginasjabloon is geen geldig sjabloon voor dit paginatype."
 
@@ -6569,16 +6577,16 @@ msgstr "Alle items"
 msgid "Featured Items"
 msgstr "Aanbevolen items"
 
-#: concrete/src/Page/Page.php:2151
+#: concrete/src/Page/Page.php:2152
 #, php-format
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "Pagina \"%s\" in pad \"%s\" verwijderd"
 
-#: concrete/src/Page/Page.php:2151 concrete/src/Page/Page.php:2215
+#: concrete/src/Page/Page.php:2152 concrete/src/Page/Page.php:2216
 msgid "Page Action"
 msgstr "Pagina actie"
 
-#: concrete/src/Page/Page.php:2215
+#: concrete/src/Page/Page.php:2216
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "Pagina \"%s\" in pad \"%s\" verplaatst naar prullenmand"
@@ -6704,125 +6712,125 @@ msgid ""
 "5.7."
 msgstr "Niet in staat om %s te installeren. Kijk na of dit pakket is ge-update voor 5.7."
 
-#: concrete/src/Package/Package.php:348
+#: concrete/src/Package/Package.php:351
 msgid "Attribute categories"
 msgstr "Attribuutcategorieën"
 
-#: concrete/src/Package/Package.php:351
+#: concrete/src/Package/Package.php:354
 msgid "Permission categories"
 msgstr "Bevoegdheidscategorieën "
 
-#: concrete/src/Package/Package.php:354
+#: concrete/src/Package/Package.php:357
 msgid "Permission access entity types"
 msgstr "Toegangstypen entiteit toestemming"
 
-#: concrete/src/Package/Package.php:357
+#: concrete/src/Package/Package.php:360
 msgid "Attribute keys"
 msgstr "Attribuutsleutels"
 
-#: concrete/src/Package/Package.php:360
+#: concrete/src/Package/Package.php:363
 msgid "Attribute sets"
 msgstr "Attribuutverzamelingen"
 
-#: concrete/src/Package/Package.php:363
+#: concrete/src/Package/Package.php:366
 msgid "Group sets"
 msgstr "Groepsverzamelingen"
 
-#: concrete/src/Package/Package.php:366
+#: concrete/src/Package/Package.php:369
 msgid "Page types"
 msgstr "Paginatypes"
 
-#: concrete/src/Package/Package.php:369
+#: concrete/src/Package/Package.php:372
 msgid "Mail importers"
 msgstr "Mail importeurs"
 
-#: concrete/src/Package/Package.php:372
+#: concrete/src/Package/Package.php:375
 msgid "Block types"
 msgstr "Bloktypes"
 
-#: concrete/src/Package/Package.php:375
+#: concrete/src/Package/Package.php:378
 msgid "Page themes"
 msgstr "Pagina-thema's"
 
-#: concrete/src/Package/Package.php:381
+#: concrete/src/Package/Package.php:384
 msgid "Single pages"
 msgstr "Enkele pagina's"
 
-#: concrete/src/Package/Package.php:384
+#: concrete/src/Package/Package.php:387
 msgid "Attribute types"
 msgstr "Kenmerktypen"
 
-#: concrete/src/Package/Package.php:387
+#: concrete/src/Package/Package.php:390
 msgid "Captcha libraries"
 msgstr "Captcha-bibliotheken"
 
-#: concrete/src/Package/Package.php:390
+#: concrete/src/Package/Package.php:393
 msgid "Antispam libraries"
 msgstr "Antispam-bibliotheken"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:39
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:299
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:418
-#: concrete/src/Package/Package.php:393
+#: concrete/src/Package/Package.php:396
 msgid "Jobs"
 msgstr "Taken"
 
-#: concrete/src/Package/Package.php:396
+#: concrete/src/Package/Package.php:399
 msgid "Workflow types"
 msgstr "Workflowtypes"
 
 #: concrete/single_pages/dashboard/system/files/storage.php:99
-#: concrete/src/Package/Package.php:399
+#: concrete/src/Package/Package.php:402
 msgid "Storage Locations"
 msgstr "Opslaglocaties"
 
 #: concrete/single_pages/dashboard/system/multilingual/page_report.php:88
 #: concrete/single_pages/dashboard/system/multilingual/page_report.php:96
-#: concrete/src/Package/Package.php:456
+#: concrete/src/Package/Package.php:459
 #, php-format
 msgid "%s (%s)"
 msgstr "%s (%s)"
 
-#: concrete/src/Package/Package.php:462
+#: concrete/src/Package/Package.php:465
 #, php-format
 msgid " %s (%s)"
 msgstr " %s (%s)"
 
-#: concrete/src/Package/Package.php:677
+#: concrete/src/Package/Package.php:680
 msgid "You've already installed that package."
 msgstr "Deze Extensie is al geïnstalleerd."
 
-#: concrete/src/Package/Package.php:678
+#: concrete/src/Package/Package.php:681
 msgid "Invalid Package."
 msgstr "Ongeldige Extensie."
 
-#: concrete/src/Package/Package.php:679
+#: concrete/src/Package/Package.php:682
 #, php-format
 msgid "This package requires concrete5 version %s or greater."
 msgstr "Dit pakket vereist Concrete5 versie %s of hoger."
 
-#: concrete/src/Package/Package.php:680
+#: concrete/src/Package/Package.php:683
 msgid "An error occurred while downloading the package."
 msgstr "Er is een fout opgetreden bij het downloaden van de Extensie."
 
-#: concrete/src/Package/Package.php:681
+#: concrete/src/Package/Package.php:684
 msgid "concrete5 was not able to save the package after download."
 msgstr "Concrete5 was neit in staat om het pakket na de download op te slaan."
 
-#: concrete/src/Package/Package.php:682
+#: concrete/src/Package/Package.php:685
 msgid "An error occurred while trying to unzip the package."
 msgstr "Er is een fout opgetreden bij het uitpakken van de Extensie."
 
-#: concrete/src/Package/Package.php:683
+#: concrete/src/Package/Package.php:686
 msgid "An error occurred while trying to install the package."
 msgstr "Er is een fout opgetreden bij het installeren van de Extensie."
 
-#: concrete/src/Package/Package.php:684
+#: concrete/src/Package/Package.php:687
 #, php-format
 msgid "Unable to backup old package directory to %s"
 msgstr "Kan de oude Extensie niet opslaan in %s directorie"
 
-#: concrete/src/Package/Package.php:685
+#: concrete/src/Package/Package.php:688
 msgid ""
 "This package isn't currently available for this version of concrete5. Please"
 " contact the maintainer of this package for assistance."
@@ -6969,7 +6977,7 @@ msgid "Clear Color Selection"
 msgstr "Wis kleurselectie"
 
 #: concrete/src/Form/Service/Widget/UserSelector.php:34
-#: concrete/src/Form/Service/Widget/UserSelector.php:89
+#: concrete/src/Form/Service/Widget/UserSelector.php:90
 msgid "Choose User"
 msgstr "Kies Gebruiker"
 
@@ -6977,7 +6985,7 @@ msgstr "Kies Gebruiker"
 msgid "Select User"
 msgstr "Selecteer Gebruiker"
 
-#: concrete/src/Form/Service/Widget/UserSelector.php:100
+#: concrete/src/Form/Service/Widget/UserSelector.php:101
 msgid "No users selected."
 msgstr "Geen gebruikers geselecteerd."
 
@@ -8247,35 +8255,35 @@ msgstr "Bestanden in geen enkele verzameling"
 
 #: concrete/elements/files/search.php:70
 msgid "Per Page"
-msgstr ""
+msgstr "Per pagina"
 
 #: concrete/elements/files/search.php:72
 msgid "10"
-msgstr ""
+msgstr "10"
 
 #: concrete/elements/files/search.php:72
 msgid "20"
-msgstr ""
+msgstr "20"
 
 #: concrete/elements/files/search.php:72
 msgid "50"
-msgstr ""
+msgstr "50"
 
 #: concrete/elements/files/search.php:72
 msgid "100"
-msgstr ""
+msgstr "100"
 
 #: concrete/elements/files/search.php:72
 msgid "250"
-msgstr ""
+msgstr "250"
 
 #: concrete/elements/files/search.php:72
 msgid "500"
-msgstr ""
+msgstr "500"
 
 #: concrete/elements/files/search.php:72
 msgid "1000"
-msgstr ""
+msgstr "1000"
 
 #: concrete/elements/files/search.php:83 concrete/elements/pages/search.php:58
 #: concrete/elements/users/search.php:88
@@ -10068,7 +10076,7 @@ msgstr "(Untitled)"
 
 #: concrete/views/panels/multilingual.php:6
 msgid "Currently Viewing"
-msgstr ""
+msgstr "Momenteel aan het bekijken"
 
 #: concrete/views/panels/multilingual.php:16
 msgid "Mapped in Other Sections"
@@ -10076,13 +10084,13 @@ msgstr ""
 
 #: concrete/views/panels/multilingual.php:30
 msgid "None Created"
-msgstr ""
+msgstr "Geen gemaakt"
 
 #: concrete/single_pages/dashboard/system/multilingual/page_report.php:148
 #: concrete/views/panels/multilingual.php:35
 #: concrete/views/panels/multilingual.php:37
 msgid "Create Page"
-msgstr ""
+msgstr "Maak pagina"
 
 #: concrete/views/panels/multilingual.php:37
 msgid "Parent page does not exist. Create the parent page in this tree first."
@@ -10108,7 +10116,7 @@ msgstr "Deze pagina erft haar machtigingen van:"
 msgid "Current Permission Set"
 msgstr "Huidige machtigingenset"
 
-#: concrete/views/panels/details/page/composer.php:8
+#: concrete/views/panels/details/page/composer.php:7
 #, php-format
 msgid "Composer - %s"
 msgstr "Composer - %s"
@@ -11108,7 +11116,7 @@ msgstr "Image Slider"
 msgid "Image Slider disabled in edit mode."
 msgstr "Beeldslider uitgeschakeld in edit mode."
 
-#: concrete/blocks/image_slider/view.php:53
+#: concrete/blocks/image_slider/view.php:59
 msgid "No Slides Entered."
 msgstr "Geen dia's ingevoerd."
 
@@ -11124,7 +11132,7 @@ msgstr "Pijlen"
 msgid "Bullets"
 msgstr "Opsommingstekens"
 
-#: concrete/blocks/faq/form_setup_html.php:89
+#: concrete/blocks/faq/form_setup_html.php:41
 #: concrete/blocks/image_slider/form_setup_html.php:221
 msgid "Add Entry"
 msgstr "Item toevoegen"
@@ -11148,8 +11156,8 @@ msgstr "URL"
 msgid "Choose Page:"
 msgstr "Kies Pagina"
 
-#: concrete/blocks/faq/form_setup_html.php:109
-#: concrete/blocks/faq/form_setup_html.php:137
+#: concrete/blocks/faq/form_setup_html.php:63
+#: concrete/blocks/faq/form_setup_html.php:93
 #: concrete/blocks/image_slider/form_setup_html.php:271
 msgid "Delete Entry"
 msgstr "Item verwijderen"
@@ -11403,8 +11411,8 @@ msgstr "Eigenschap weer te geven:"
 msgid "Page Values"
 msgstr "Pagina waarden"
 
-#: concrete/blocks/faq/form_setup_html.php:100
-#: concrete/blocks/faq/form_setup_html.php:128
+#: concrete/blocks/faq/form_setup_html.php:53
+#: concrete/blocks/faq/form_setup_html.php:83
 #: concrete/blocks/page_attribute_display/form.php:68
 msgid "Title Text"
 msgstr "Titeltekst"
@@ -11510,20 +11518,20 @@ msgstr "Aanbovolen Extensie"
 msgid "Cannot retrieve data from the concrete5 marketplace."
 msgstr "Kan geen data ontvangen van de concrete5 marktplaats."
 
-#: concrete/blocks/faq/controller.php:21
+#: concrete/blocks/faq/controller.php:22
 msgid "Frequently Asked Questions Block"
 msgstr "Veelgestelde vragen-blok"
 
-#: concrete/blocks/faq/controller.php:26
+#: concrete/blocks/faq/controller.php:27
 msgid "FAQ"
 msgstr "FAQ"
 
-#: concrete/blocks/faq/view.php:24
+#: concrete/blocks/faq/view.php:26
 msgid "No Faq Entries Entered."
 msgstr "Geen posten Faq."
 
-#: concrete/blocks/faq/form_setup_html.php:96
-#: concrete/blocks/faq/form_setup_html.php:124
+#: concrete/blocks/faq/form_setup_html.php:49
+#: concrete/blocks/faq/form_setup_html.php:79
 msgid "Navigation Link Text"
 msgstr "Navigatie Linktekst"
 
@@ -14081,7 +14089,7 @@ msgstr "Actie toevoegen"
 
 #: concrete/single_pages/dashboard/users/points/actions.php:59
 msgid "Update Action"
-msgstr ""
+msgstr "Actie bijwerken"
 
 #: concrete/single_pages/dashboard/users/points/actions.php:91
 msgid "Group"
@@ -14694,20 +14702,20 @@ msgstr "Voer IP adressen in, een per regel, om handmatig bepaalde IP adressen bu
 #: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:45
 #: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:71
 msgid "Original String"
-msgstr ""
+msgstr "Originele string"
 
 #: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:46
 #: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:75
 msgid "Translation"
-msgstr ""
+msgstr "Vertaling"
 
 #: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:65
 msgid "Translate"
-msgstr ""
+msgstr "Vertalen"
 
 #: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:78
 msgid "Save &amp; Continue"
-msgstr ""
+msgstr "Bewaren &amp; Verder gaan"
 
 #: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:170
 #, php-format
@@ -14719,19 +14727,19 @@ msgstr ""
 #: concrete/single_pages/dashboard/system/multilingual/setup.php:112
 #: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:190
 msgid "Locale"
-msgstr ""
+msgstr "Locale"
 
 #: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:191
 msgid "Completion"
-msgstr ""
+msgstr "Voltooiing"
 
 #: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:192
 msgid "Last Updated"
-msgstr ""
+msgstr "Laatst bijgewerkt"
 
 #: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:232
 msgid "File not found."
-msgstr ""
+msgstr "Bestand niet gevonden"
 
 #: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:235
 msgid "N/A"
@@ -14739,7 +14747,7 @@ msgstr ""
 
 #: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:254
 msgid "Reload Strings"
-msgstr ""
+msgstr "Strings herladen"
 
 #: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:255
 msgid "Export to .PO"
@@ -14826,11 +14834,11 @@ msgstr ""
 
 #: concrete/single_pages/dashboard/system/multilingual/setup.php:48
 msgid "Suggested countries"
-msgstr ""
+msgstr "Voorgestelde landen"
 
 #: concrete/single_pages/dashboard/system/multilingual/setup.php:50
 msgid "Other countries"
-msgstr ""
+msgstr "Andere landen"
 
 #: concrete/single_pages/dashboard/system/multilingual/setup.php:104
 msgid "Content Sections"
@@ -15522,8 +15530,10 @@ msgid "Off - Good for active theme development when using LESS files."
 msgstr "Uit - Goed voor theme ontwikkeling bij gebruik van LESS bestanden."
 
 #: concrete/single_pages/dashboard/system/optimization/cache.php:42
-msgid "Determines whether "
-msgstr "Bepaalt of"
+msgid ""
+"Determines whether compiled LESS stylesheets should output as compressed "
+"CSS. Uncompressed stylesheets are slightly larger but easier to read."
+msgstr ""
 
 #: concrete/single_pages/dashboard/system/optimization/cache.php:42
 msgid "Compress LESS Output."
@@ -18613,7 +18623,7 @@ msgstr "Informeer fiatteur dat een wijziging is afgekeurd."
 #: concrete/config/install/base/permissions.xml:104
 msgctxt "PermissionKeyName"
 msgid "Add Pages of This Type"
-msgstr ""
+msgstr "Voeg pagina's van dit type toe"
 
 #: concrete/config/install/base/permissions.xml:106
 msgctxt "PermissionKeyName"

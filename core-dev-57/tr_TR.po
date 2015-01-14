@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-01-06 05:00+0000\n"
-"PO-Revision-Date: 2015-01-07 01:20+0000\n"
+"POT-Creation-Date: 2015-01-13 05:00+0000\n"
+"PO-Revision-Date: 2015-01-13 15:11+0000\n"
 "Last-Translator: Adem Coşkuner <info@ademcoskuner.com>\n"
 "Language-Team: Turkish (Turkey) (http://www.transifex.com/projects/p/concrete5/language/tr_TR/)\n"
 "MIME-Version: 1.0\n"
@@ -364,7 +364,7 @@ msgstr "Parola sıfırlama talimatlarını göndereceğimiz e-posta adresinizi a
 #: concrete/single_pages/dashboard/users/search.php:54
 #: concrete/single_pages/login_oauth.php:64
 #: concrete/single_pages/register.php:57
-#: concrete/src/Form/Service/Widget/UserSelector.php:88
+#: concrete/src/Form/Service/Widget/UserSelector.php:89
 #: concrete/tools/users/search_results_export.php:27
 #: concrete/views/frontend/install.php:160
 msgid "Email Address"
@@ -388,7 +388,7 @@ msgstr "Yerel bir hesapla oturum aç."
 #: concrete/single_pages/dashboard/users/add.php:10
 #: concrete/single_pages/dashboard/users/search.php:50
 #: concrete/single_pages/register.php:50
-#: concrete/src/Form/Service/Widget/UserSelector.php:87
+#: concrete/src/Form/Service/Widget/UserSelector.php:88
 #: concrete/src/User/Search/ColumnSet/DefaultSet.php:29
 #: concrete/tools/users/search_results_export.php:26
 #: concrete/views/panels/page/preview_as/form.php:28
@@ -702,6 +702,10 @@ msgstr "Kaydet"
 #: concrete/controllers/dialog/file/thumbnails/edit.php:35
 #: concrete/controllers/dialog/file/thumbnails/edit.php:38
 #: concrete/controllers/dialog/page/add/compose.php:31
+#: concrete/controllers/panel/detail/page/composer.php:39
+#: concrete/controllers/panel/detail/page/composer.php:52
+#: concrete/controllers/panel/detail/page/composer.php:93
+#: concrete/controllers/panel/detail/page/composer.php:113
 #: concrete/controllers/search/users.php:39
 #: concrete/controllers/single_page/dashboard/users/search.php:46
 #: concrete/controllers/single_page/dashboard/users/search.php:64
@@ -968,7 +972,7 @@ msgstr "Dosya depolama konumu başarıyla kaydedildi."
 #: concrete/elements/panels/page.php:111
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:58
 #: concrete/single_pages/dashboard/pages/types/view.php:50
-#: concrete/src/Package/Package.php:378
+#: concrete/src/Package/Package.php:381
 #: concrete/tools/files/permissions.php:51 concrete/tools/i18n_js.php:139
 #: concrete/tools/i18n_js.php:199
 msgid "Permissions"
@@ -1560,7 +1564,7 @@ msgstr "Filtreler Yükleniyor..."
 msgid "Loading Image..."
 msgstr "Resim Yükleniyor..."
 
-#: concrete/blocks/faq/form_setup_html.php:15
+#: concrete/blocks/faq/form_setup_html.php:112
 #: concrete/blocks/image_slider/form_setup_html.php:14
 #: concrete/single_pages/dashboard/pages/templates/view.php:13
 #: concrete/single_pages/dashboard/system/backup/backup.php:29
@@ -2137,8 +2141,8 @@ msgstr "Özel Etiket"
 msgid "Custom Template"
 msgstr "Özel Şablon"
 
-#: concrete/blocks/faq/form_setup_html.php:104
-#: concrete/blocks/faq/form_setup_html.php:132
+#: concrete/blocks/faq/form_setup_html.php:57
+#: concrete/blocks/faq/form_setup_html.php:87
 #: concrete/blocks/image_slider/form_setup_html.php:246
 #: concrete/single_pages/dashboard/blocks/types/view.php:8
 #: concrete/single_pages/dashboard/pages/feeds.php:86
@@ -3115,20 +3119,20 @@ msgstr "Sayfa Güncellendi"
 msgid "Page permissions have been saved."
 msgstr "Sayfa izinleri kaydedildi."
 
-#: concrete/controllers/panel/detail/page/composer.php:34
+#: concrete/controllers/panel/detail/page/composer.php:35
 #, php-format
 msgid "Page saved on %s"
 msgstr "Sayfa %s tarihinde kaydedildi"
 
-#: concrete/controllers/panel/detail/page/composer.php:57
+#: concrete/controllers/panel/detail/page/composer.php:66
 msgid "You must choose a page to publish this page beneath."
 msgstr "Bu sayfayı altında yayınlayacağınız bir sayfa seçmelisiniz."
 
-#: concrete/controllers/panel/detail/page/composer.php:63
+#: concrete/controllers/panel/detail/page/composer.php:72
 msgid "You do not have permission to publish a page in this location."
 msgstr "Bu konumda sayfa yayınlama izniniz yok."
 
-#: concrete/controllers/panel/detail/page/composer.php:94
+#: concrete/controllers/panel/detail/page/composer.php:107
 msgid "You do not have permission to discard this page."
 msgstr "Bu sayfayı iptal etme izniniz yok."
 
@@ -4876,17 +4880,21 @@ msgstr "Sayfa türünüz için geçerli bir isim belirtmelisiniz."
 msgid "You must specify a valid handle for your page type."
 msgstr "Sayfa türünüz için geçerli bir işleç belirtmelisiniz."
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:110
 #: concrete/controllers/single_page/dashboard/pages/types/add.php:27
+msgid "You must specify a unique handle for your page type."
+msgstr "Sayfa tipiniz için benzersiz bir işleç belirtmelisiniz."
+
+#: concrete/controllers/single_page/dashboard/pages/types.php:110
+#: concrete/controllers/single_page/dashboard/pages/types/add.php:33
 msgid "You must choose a valid default page template."
 msgstr "Geçerli bir varsayılan sayfa şablonu belirtmelisiniz."
 
 #: concrete/controllers/single_page/dashboard/pages/types.php:123
-#: concrete/controllers/single_page/dashboard/pages/types/add.php:39
+#: concrete/controllers/single_page/dashboard/pages/types/add.php:45
 msgid "You must specify at least one page template."
 msgstr "En azından bir sayfa şablonu belirtmelisiniz."
 
-#: concrete/controllers/single_page/dashboard/pages/types/add.php:43
+#: concrete/controllers/single_page/dashboard/pages/types/add.php:49
 msgid "Invalid page type publish target type."
 msgstr "Geçersiz yayınlanacak hedef sayfa türü."
 
@@ -6520,11 +6528,11 @@ msgstr "Açıklama"
 msgid "You must specify a page description."
 msgstr "Bir sayfa açıklaması belirtmelisiniz."
 
-#: concrete/src/Page/Type/Type.php:994
+#: concrete/src/Page/Type/Type.php:1005
 msgid "You must choose a page template."
 msgstr "Bir sayfa şablonu seçmelisiniz."
 
-#: concrete/src/Page/Type/Type.php:997
+#: concrete/src/Page/Type/Type.php:1008
 msgid "This page template is not a valid template for this page type."
 msgstr "Sayfa şablonu by sayfa türü için geçerli bir şablon değildir."
 
@@ -6550,16 +6558,16 @@ msgstr "Tüm Ögeler"
 msgid "Featured Items"
 msgstr "Öne Çıkanlar"
 
-#: concrete/src/Page/Page.php:2151
+#: concrete/src/Page/Page.php:2152
 #, php-format
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "\"%s\" sayfası(\"%s\" yolunda olan) silindi"
 
-#: concrete/src/Page/Page.php:2151 concrete/src/Page/Page.php:2215
+#: concrete/src/Page/Page.php:2152 concrete/src/Page/Page.php:2216
 msgid "Page Action"
 msgstr "Sayfa Eylemi"
 
-#: concrete/src/Page/Page.php:2215
+#: concrete/src/Page/Page.php:2216
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "\"%s\" sayfası, \"%s\" yolundan çöpe taşındı"
@@ -6685,125 +6693,125 @@ msgid ""
 "5.7."
 msgstr "%s kurulamıyor. Lütfen bu paketin 5.7 için güncellenmiş olup olmadığını kontrol edin."
 
-#: concrete/src/Package/Package.php:348
+#: concrete/src/Package/Package.php:351
 msgid "Attribute categories"
 msgstr "Özellik kategorileri"
 
-#: concrete/src/Package/Package.php:351
+#: concrete/src/Package/Package.php:354
 msgid "Permission categories"
 msgstr "İzin kategorileri"
 
-#: concrete/src/Package/Package.php:354
+#: concrete/src/Package/Package.php:357
 msgid "Permission access entity types"
 msgstr "İzin erişimi varlık türleri"
 
-#: concrete/src/Package/Package.php:357
+#: concrete/src/Package/Package.php:360
 msgid "Attribute keys"
 msgstr "Özellik anahtarları"
 
-#: concrete/src/Package/Package.php:360
+#: concrete/src/Package/Package.php:363
 msgid "Attribute sets"
 msgstr "Özellik grupları"
 
-#: concrete/src/Package/Package.php:363
+#: concrete/src/Package/Package.php:366
 msgid "Group sets"
 msgstr "Grup kümeleri"
 
-#: concrete/src/Package/Package.php:366
+#: concrete/src/Package/Package.php:369
 msgid "Page types"
 msgstr "Sayfa türleri"
 
-#: concrete/src/Package/Package.php:369
+#: concrete/src/Package/Package.php:372
 msgid "Mail importers"
 msgstr "E-Posta içe aktarıcıları"
 
-#: concrete/src/Package/Package.php:372
+#: concrete/src/Package/Package.php:375
 msgid "Block types"
 msgstr "Blok türleri"
 
-#: concrete/src/Package/Package.php:375
+#: concrete/src/Package/Package.php:378
 msgid "Page themes"
 msgstr "Sayfa temaları"
 
-#: concrete/src/Package/Package.php:381
+#: concrete/src/Package/Package.php:384
 msgid "Single pages"
 msgstr "Özel sayfalar"
 
-#: concrete/src/Package/Package.php:384
+#: concrete/src/Package/Package.php:387
 msgid "Attribute types"
 msgstr "Özellik türleri"
 
-#: concrete/src/Package/Package.php:387
+#: concrete/src/Package/Package.php:390
 msgid "Captcha libraries"
 msgstr "Güvenlik kodu kütüphaneleri"
 
-#: concrete/src/Package/Package.php:390
+#: concrete/src/Package/Package.php:393
 msgid "Antispam libraries"
 msgstr "Antispam kütüphaneleri"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:39
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:299
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:418
-#: concrete/src/Package/Package.php:393
+#: concrete/src/Package/Package.php:396
 msgid "Jobs"
 msgstr "Görevler"
 
-#: concrete/src/Package/Package.php:396
+#: concrete/src/Package/Package.php:399
 msgid "Workflow types"
 msgstr "İş akışı türleri"
 
 #: concrete/single_pages/dashboard/system/files/storage.php:99
-#: concrete/src/Package/Package.php:399
+#: concrete/src/Package/Package.php:402
 msgid "Storage Locations"
 msgstr "Depolama Konumları"
 
 #: concrete/single_pages/dashboard/system/multilingual/page_report.php:88
 #: concrete/single_pages/dashboard/system/multilingual/page_report.php:96
-#: concrete/src/Package/Package.php:456
+#: concrete/src/Package/Package.php:459
 #, php-format
 msgid "%s (%s)"
 msgstr "%s (%s)"
 
-#: concrete/src/Package/Package.php:462
+#: concrete/src/Package/Package.php:465
 #, php-format
 msgid " %s (%s)"
 msgstr " %s (%s)"
 
-#: concrete/src/Package/Package.php:677
+#: concrete/src/Package/Package.php:680
 msgid "You've already installed that package."
 msgstr "Bu paketi zaten yüklemişsiniz."
 
-#: concrete/src/Package/Package.php:678
+#: concrete/src/Package/Package.php:681
 msgid "Invalid Package."
 msgstr "Geçersiz Paket."
 
-#: concrete/src/Package/Package.php:679
+#: concrete/src/Package/Package.php:682
 #, php-format
 msgid "This package requires concrete5 version %s or greater."
 msgstr "Bu paket concrete5 %s ya da daha yüksek sürümüne ihtiyaç duyuyor."
 
-#: concrete/src/Package/Package.php:680
+#: concrete/src/Package/Package.php:683
 msgid "An error occurred while downloading the package."
 msgstr "Paket karşıdan yüklenirken bir hata oluştu."
 
-#: concrete/src/Package/Package.php:681
+#: concrete/src/Package/Package.php:684
 msgid "concrete5 was not able to save the package after download."
 msgstr "concrete5 paketi indirdikten sonra kaydedemedi."
 
-#: concrete/src/Package/Package.php:682
+#: concrete/src/Package/Package.php:685
 msgid "An error occurred while trying to unzip the package."
 msgstr "Paketi açmayı denerken bir hata oluştu."
 
-#: concrete/src/Package/Package.php:683
+#: concrete/src/Package/Package.php:686
 msgid "An error occurred while trying to install the package."
 msgstr "Paketi kurmayı denerken bir hata oluştu."
 
-#: concrete/src/Package/Package.php:684
+#: concrete/src/Package/Package.php:687
 #, php-format
 msgid "Unable to backup old package directory to %s"
 msgstr "Eski paket dizini %s'e yedekleme yapılamıyor."
 
-#: concrete/src/Package/Package.php:685
+#: concrete/src/Package/Package.php:688
 msgid ""
 "This package isn't currently available for this version of concrete5. Please"
 " contact the maintainer of this package for assistance."
@@ -6950,7 +6958,7 @@ msgid "Clear Color Selection"
 msgstr "Renk Seçimini Temizle"
 
 #: concrete/src/Form/Service/Widget/UserSelector.php:34
-#: concrete/src/Form/Service/Widget/UserSelector.php:89
+#: concrete/src/Form/Service/Widget/UserSelector.php:90
 msgid "Choose User"
 msgstr "Kullanıcı Seç"
 
@@ -6958,7 +6966,7 @@ msgstr "Kullanıcı Seç"
 msgid "Select User"
 msgstr "Kullanıcı Seç"
 
-#: concrete/src/Form/Service/Widget/UserSelector.php:100
+#: concrete/src/Form/Service/Widget/UserSelector.php:101
 msgid "No users selected."
 msgstr "Hiçbir kullanıcı seçilmedi."
 
@@ -10077,7 +10085,7 @@ msgstr "Bu sayfa, izinlerini şuradan kopyalar:"
 msgid "Current Permission Set"
 msgstr "Güncel İzin Grubu"
 
-#: concrete/views/panels/details/page/composer.php:8
+#: concrete/views/panels/details/page/composer.php:7
 #, php-format
 msgid "Composer - %s"
 msgstr "Kompozitör - %s"
@@ -11076,7 +11084,7 @@ msgstr "Resim Slayt Gösterisi"
 msgid "Image Slider disabled in edit mode."
 msgstr "Resim Slayt Gösterisi"
 
-#: concrete/blocks/image_slider/view.php:53
+#: concrete/blocks/image_slider/view.php:59
 msgid "No Slides Entered."
 msgstr "Hiçbir Slayt Girilmedi."
 
@@ -11092,7 +11100,7 @@ msgstr "Oklar"
 msgid "Bullets"
 msgstr "Yuvarlak Kutucuklar"
 
-#: concrete/blocks/faq/form_setup_html.php:89
+#: concrete/blocks/faq/form_setup_html.php:41
 #: concrete/blocks/image_slider/form_setup_html.php:221
 msgid "Add Entry"
 msgstr "Kayıt Ekle"
@@ -11116,8 +11124,8 @@ msgstr "URL:"
 msgid "Choose Page:"
 msgstr "Sayfa Seç:"
 
-#: concrete/blocks/faq/form_setup_html.php:109
-#: concrete/blocks/faq/form_setup_html.php:137
+#: concrete/blocks/faq/form_setup_html.php:63
+#: concrete/blocks/faq/form_setup_html.php:93
 #: concrete/blocks/image_slider/form_setup_html.php:271
 msgid "Delete Entry"
 msgstr "Kaydı Sil"
@@ -11371,8 +11379,8 @@ msgstr "Gösterilecek Özellik:"
 msgid "Page Values"
 msgstr "Sayfa Değerleri"
 
-#: concrete/blocks/faq/form_setup_html.php:100
-#: concrete/blocks/faq/form_setup_html.php:128
+#: concrete/blocks/faq/form_setup_html.php:53
+#: concrete/blocks/faq/form_setup_html.php:83
 #: concrete/blocks/page_attribute_display/form.php:68
 msgid "Title Text"
 msgstr "Başlık Metni"
@@ -11478,20 +11486,20 @@ msgstr "Seçilmiş Eklentiler"
 msgid "Cannot retrieve data from the concrete5 marketplace."
 msgstr "concrete5 market'ten veriler çekilemiyor."
 
-#: concrete/blocks/faq/controller.php:21
+#: concrete/blocks/faq/controller.php:22
 msgid "Frequently Asked Questions Block"
 msgstr "Sık Sorulan Sorular Bloğu"
 
-#: concrete/blocks/faq/controller.php:26
+#: concrete/blocks/faq/controller.php:27
 msgid "FAQ"
 msgstr "SSS"
 
-#: concrete/blocks/faq/view.php:24
+#: concrete/blocks/faq/view.php:26
 msgid "No Faq Entries Entered."
 msgstr "Hiçbir SSS Kaydı Girilmedi."
 
-#: concrete/blocks/faq/form_setup_html.php:96
-#: concrete/blocks/faq/form_setup_html.php:124
+#: concrete/blocks/faq/form_setup_html.php:49
+#: concrete/blocks/faq/form_setup_html.php:79
 msgid "Navigation Link Text"
 msgstr "Navigasyon Bağlantı Metni"
 
@@ -15486,8 +15494,10 @@ msgid "Off - Good for active theme development when using LESS files."
 msgstr "Kapalı - LESS dosyalarıyla aktif tema geliştirmek için doğru seçim."
 
 #: concrete/single_pages/dashboard/system/optimization/cache.php:42
-msgid "Determines whether "
-msgstr "Belirlenecekler"
+msgid ""
+"Determines whether compiled LESS stylesheets should output as compressed "
+"CSS. Uncompressed stylesheets are slightly larger but easier to read."
+msgstr "LESS stil dosyalarının sıkıştırılmış CSS olarak çıktısı alınıp alınmayacağına karar verir. Sıkıştırılmamış stil dosyaları biraz daha büyüktür fakat okunması daha kolaydır."
 
 #: concrete/single_pages/dashboard/system/optimization/cache.php:42
 msgid "Compress LESS Output."

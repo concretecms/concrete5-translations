@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-01-12 05:00+0000\n"
-"PO-Revision-Date: 2015-01-12 12:21+0000\n"
+"POT-Creation-Date: 2015-01-13 05:00+0000\n"
+"PO-Revision-Date: 2015-01-13 13:31+0000\n"
 "Last-Translator: Torsten Silbermann <mail@tsilbermann.de>\n"
 "Language-Team: German (Germany) (http://www.transifex.com/projects/p/concrete5/language/de_DE/)\n"
 "MIME-Version: 1.0\n"
@@ -706,6 +706,10 @@ msgstr "Speichern"
 #: concrete/controllers/dialog/file/thumbnails/edit.php:35
 #: concrete/controllers/dialog/file/thumbnails/edit.php:38
 #: concrete/controllers/dialog/page/add/compose.php:31
+#: concrete/controllers/panel/detail/page/composer.php:39
+#: concrete/controllers/panel/detail/page/composer.php:52
+#: concrete/controllers/panel/detail/page/composer.php:93
+#: concrete/controllers/panel/detail/page/composer.php:113
 #: concrete/controllers/search/users.php:39
 #: concrete/controllers/single_page/dashboard/users/search.php:46
 #: concrete/controllers/single_page/dashboard/users/search.php:64
@@ -3124,20 +3128,20 @@ msgstr "Seite aktualisiert"
 msgid "Page permissions have been saved."
 msgstr "Die Seitenberechtigungen wurden gespeichert."
 
-#: concrete/controllers/panel/detail/page/composer.php:34
+#: concrete/controllers/panel/detail/page/composer.php:35
 #, php-format
 msgid "Page saved on %s"
 msgstr "Die Seite wurde am %s gespeichert."
 
-#: concrete/controllers/panel/detail/page/composer.php:57
+#: concrete/controllers/panel/detail/page/composer.php:66
 msgid "You must choose a page to publish this page beneath."
 msgstr "Bitte eine Seite auswählen, unter der diese Seite veröffentlicht werden soll!"
 
-#: concrete/controllers/panel/detail/page/composer.php:63
+#: concrete/controllers/panel/detail/page/composer.php:72
 msgid "You do not have permission to publish a page in this location."
 msgstr "Sie haben nicht die Berechtigung, eine Seite an diesem Ort zu veröffentlichen."
 
-#: concrete/controllers/panel/detail/page/composer.php:94
+#: concrete/controllers/panel/detail/page/composer.php:107
 msgid "You do not have permission to discard this page."
 msgstr "Sie haben nicht die Berechtigung, diese Seite zu verwerfen."
 
@@ -4886,17 +4890,21 @@ msgstr "Für den Seitentyp muss ein zulässiger Name angegeben werden."
 msgid "You must specify a valid handle for your page type."
 msgstr "Für den Seitentyp muss eine zulässige Kennung angegeben werden."
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:110
 #: concrete/controllers/single_page/dashboard/pages/types/add.php:27
+msgid "You must specify a unique handle for your page type."
+msgstr "Es muss eine eindeutige Kennung für den Seitentyp angegeben werden."
+
+#: concrete/controllers/single_page/dashboard/pages/types.php:110
+#: concrete/controllers/single_page/dashboard/pages/types/add.php:33
 msgid "You must choose a valid default page template."
 msgstr "Es muss eine gültige Standard-Seitenvorlage ausgewählt werden."
 
 #: concrete/controllers/single_page/dashboard/pages/types.php:123
-#: concrete/controllers/single_page/dashboard/pages/types/add.php:39
+#: concrete/controllers/single_page/dashboard/pages/types/add.php:45
 msgid "You must specify at least one page template."
 msgstr "Es muss mindestens eine Seitenvorlage angegeben werden."
 
-#: concrete/controllers/single_page/dashboard/pages/types/add.php:43
+#: concrete/controllers/single_page/dashboard/pages/types/add.php:49
 msgid "Invalid page type publish target type."
 msgstr "Der Seitentyp, unter dem dieser Seitentyp veröffentlicht werden soll, ist ungültig."
 
@@ -4914,7 +4922,7 @@ msgstr "Das Theme wurde installiert. Wenn vorhanden, können im untenstehenden F
 msgid ""
 "Theme activated. You may automatically create page templates from template "
 "files contained in your theme using the form below."
-msgstr "Das Theme wurde aktiviert. Das Theme wurde installiert. Wenn vorhanden, können im untenstehenden Formular automatisch Seitenvorlagen von Vorlagendateien erstellt werden, die im Theme enthalten sind."
+msgstr "Das Theme wurde aktiviert. Wenn vorhanden, können im untenstehenden Formular automatisch Seitenvorlagen von Vorlagendateien erstellt werden, die im Theme enthalten sind."
 
 #: concrete/controllers/single_page/dashboard/pages/themes/inspect.php:74
 msgid "You must specify at least one template to create."
@@ -5471,7 +5479,7 @@ msgstr "Bewertung"
 
 #: concrete/themes/dashboard/marketplace.php:46
 msgid "Skill Level"
-msgstr "Anforderungen"
+msgstr "Schwierigkeitsgrad"
 
 #: concrete/config/install/base/dashboard.xml:4
 #: concrete/config/install/base/dashboard.xml:394
@@ -7395,7 +7403,7 @@ msgstr "Hier wird die Struktur der Website dargestellt. Beim Klicken auf den Sei
 msgid ""
 "View a single branch of your Sitemap. Useful for working with large sites "
 "and complex tree structures."
-msgstr "Es wird ein einzelner Zweig der Sitemap dargestellt. Dies ist bei umfangreichen Websites oder komplexen Baumstrukturen hilfreich."
+msgstr "Bei der flachen Seitenansicht wird ein einzelner Zweig der Sitemap dargestellt. Dies ist bei umfangreichen Websites oder komplexen Baumstrukturen hilfreich."
 
 #: concrete/src/Application/Service/UserInterface/Help.php:49
 msgid ""
@@ -7403,13 +7411,13 @@ msgid ""
 "simultaneously by checking the boxes next to the pages you want to perform "
 "the action on, then selecting the action you want to perform from the drop-"
 "down menu."
-msgstr "Hier können Seiten anhand von Name, Typ oder anderer Faktoren gesucht werden. Durch Anklicken der Kontrollkästchen links neben den Seiten ist eine Mehrfachauswahl möglich. In der Auswahlliste im oberen Bereich kann dann eine Aktion für die markierten Seiten durchgeführt werden."
+msgstr "Bei der Seitensuche können Seiten anhand von Name, Typ oder anderer Faktoren gesucht werden. Durch Anklicken der Kontrollkästchen links neben den Seiten ist eine Mehrfachauswahl möglich. In der Auswahlliste im oberen Bereich kann dann eine Aktion für die markierten Seiten durchgeführt werden."
 
 #: concrete/src/Application/Service/UserInterface/Help.php:50
 msgid ""
 "Upload, search, replace, and change files you're using on your site. Change "
 "properties and perform basic image editing tasks."
-msgstr "Hier können Dateien hinzugefügt, ersetzt, oder geändert werden. Verschiedene Einstellungen und eine einfache Bildbearbeitung sind außerdem möglich."
+msgstr "In der Dateiverwaltung können Dateien hinzugefügt, ersetzt oder geändert werden. Weiterhin sind verschiedene Einstellungen und eine einfache Bildbearbeitung möglich."
 
 #: concrete/src/Application/Service/UserInterface/Help.php:51
 msgid ""
@@ -7713,7 +7721,7 @@ msgstr "Attribute oder Blockbereiche dieses Seitentyps, die mit dem Composer bea
 msgid ""
 "Store data about your users-- like site preferences, birthdays, bios and "
 "more. Control which elements are available for users to update themselves."
-msgstr "Hier können Benutzerdaten wie Websitevoreinstellungen, Geburtstage, Lebensläufe gespeichert und festgelegt werden, welche dieser Elemente von den Benutzern selbst geändert werden können."
+msgstr "Hier können Benutzerdaten wie Websitevoreinstellungen, Geburtstage und Lebensläufe gespeichert werden. Weiterhin kann festgelegt werden, welche dieser Elemente von den Benutzern selbst geändert werden können."
 
 #: concrete/src/Application/Service/UserInterface/Help.php:98
 msgid "Manually create new user accounts for your concrete5 site."
@@ -7750,7 +7758,7 @@ msgstr "Hier kann festgelegt werden, wo sich die Seite innerhalb der Website bef
 msgid ""
 "Use the form below to create your page. You can also preview your page in "
 "edit mode at any time."
-msgstr "Zum Erstellen der Seite einfach dieses Formular ausfüllen. Eine Vorschau der Seite ist auch im Bearbeitungsmodus jederzeit möglich."
+msgstr "Zum Erstellen der Seite bitte dieses Formular ausfüllen. Eine Vorschau der Seite ist nach dem Speichern auch im Bearbeitungsmodus möglich."
 
 #: concrete/src/Application/Service/UserInterface/Help.php:120
 msgid ""
@@ -10103,7 +10111,7 @@ msgstr "Diese Seite übernimmt ihre Berechtigungen von:"
 msgid "Current Permission Set"
 msgstr "Aktuelle Berechtigungen"
 
-#: concrete/views/panels/details/page/composer.php:8
+#: concrete/views/panels/details/page/composer.php:7
 #, php-format
 msgid "Composer - %s"
 msgstr "Composer - %s"
@@ -10916,7 +10924,7 @@ msgid ""
 "\n"
 "To view all of this form's submissions, visit %s \n"
 "\n"
-msgstr "\nVom Formular %s Ihre Website wurde gesendet:\n\n%s\n\nFür eine Übersicht aller gesendeten Inhalte dieses Formulars besuchen Sie %s \n\n"
+msgstr "\nVom Formular %s Ihre Website wurde gesendet:\n\n%s\n\nEine Übersicht aller über dieses Formular gesendeten Inhalte finden Sie unter %s.\n\n"
 
 #: concrete/config/install/packages/elemental_full/controller.php:10
 msgid "Full Site"
@@ -12301,7 +12309,7 @@ msgstr "Unterhalb dieser Seite"
 
 #: concrete/blocks/search/form_setup_html.php:55
 msgid "Beneath Another Page"
-msgstr "Unterhalb einer anderen Seite"
+msgstr "Unterhalb einer bestimmten Seite"
 
 #: concrete/blocks/search/form_setup_html.php:75
 #: concrete/blocks/topic_list/form.php:29
@@ -12366,7 +12374,7 @@ msgstr "Seitennavigation"
 #: concrete/blocks/page_list/page_list_form.php:95
 msgid ""
 "Display pagination interface if more items are available than are displayed."
-msgstr "Eine Seitennavigation einblenden, wenn mehr Elemente verfügbar sind, als angezeigt werden."
+msgstr "Seitennavigation einblenden, wenn mehr Elemente verfügbar sind, als angezeigt werden"
 
 #: concrete/blocks/page_list/page_list_form.php:111
 msgid "Beneath this page"
@@ -12374,7 +12382,7 @@ msgstr "Unterhalb dieser Seite"
 
 #: concrete/blocks/page_list/page_list_form.php:118
 msgid "Beneath another page"
-msgstr "Unterhalb einer anderen Seite"
+msgstr "Unterhalb einer bestimmten Seite"
 
 #: concrete/blocks/page_list/page_list_form.php:136
 msgid "Include all child pages"
@@ -12893,7 +12901,7 @@ msgstr "Automatische Navigation"
 
 #: concrete/blocks/autonav/view.php:132
 msgid "Empty Auto-Nav Block."
-msgstr "Leerer Auto-Nav-Block"
+msgstr "Leerer Block Auto-Nav"
 
 #: concrete/blocks/autonav/form_setup_html.php:20
 msgid "Page Order"
@@ -13781,17 +13789,17 @@ msgstr "Es wurden noch keine globalen Bereiche hinzugefügt."
 
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:228
 msgid "No stacks have been added."
-msgstr "Es wurden keine Stapel hinzugefügt."
+msgstr "Es wurden noch keine Stapel erstellt."
 
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:238
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:246
 msgid "View Global Areas"
-msgstr "Globale Bereiche anzeigen"
+msgstr "Globale Bereiche"
 
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:240
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:245
 msgid "View Stacks"
-msgstr "Stapel anzeigen"
+msgstr "Stapel"
 
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:258
 msgid "Stack Name"
@@ -14726,7 +14734,7 @@ msgstr "Letzte Aktualisierung"
 
 #: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:232
 msgid "File not found."
-msgstr "Die Datei konnte nicht gefunden werden."
+msgstr "Keine Datei gefunden"
 
 #: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:235
 msgid "N/A"
@@ -15517,7 +15525,9 @@ msgid "Off - Good for active theme development when using LESS files."
 msgstr "Aus – Beim Benutzen von LESS-Dateien während der Erstellung von Themes empfohlen."
 
 #: concrete/single_pages/dashboard/system/optimization/cache.php:42
-msgid "Determines whether "
+msgid ""
+"Determines whether compiled LESS stylesheets should output as compressed "
+"CSS. Uncompressed stylesheets are slightly larger but easier to read."
 msgstr ""
 
 #: concrete/single_pages/dashboard/system/optimization/cache.php:42
