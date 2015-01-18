@@ -6,9 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-01-16 05:00+0000\n"
-"PO-Revision-Date: 2015-01-16 21:50+0000\n"
-"Last-Translator: Michele Locati <michele@locati.it>\n"
+"POT-Creation-Date: 2015-01-17 05:00+0000\n"
+"PO-Revision-Date: 2015-01-17 17:50+0000\n"
+"Last-Translator: Vasilis Fotopoulos <basalba@gmail.com>\n"
 "Language-Team: Greek (Greece) (http://www.transifex.com/projects/p/concrete5/language/el_GR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -525,12 +525,14 @@ msgstr "facebook"
 #: concrete/controllers/dialog/file/properties.php:54
 #: concrete/controllers/dialog/file/properties.php:78
 #: concrete/controllers/dialog/page/add_block.php:28
+#: concrete/controllers/frontend/jobs.php:67
+#: concrete/controllers/frontend/jobs.php:160
+#: concrete/controllers/frontend/jobs.php:225
 #: concrete/tools/dashboard/sitemap_drag_request.php:7
 #: concrete/tools/dashboard/sitemap_update.php:5
 #: concrete/tools/edit_area_popup.php:6
 #: concrete/tools/edit_collection_popup.php:6
 #: concrete/tools/files/selector_data.php:5
-#: concrete/tools/jobs/run_single.php:61
 #: concrete/tools/pages/customize_search_columns.php:7
 #: concrete/tools/pages/delete.php:10
 #: concrete/tools/pages/intelligent_search.php:7
@@ -1418,13 +1420,6 @@ msgstr[1] "%d σελίδες διαγράφηκαν."
 msgid "Display order saved."
 msgstr "Η Εμφάνιση της παραγγελίας αποθηκεύτηκε."
 
-#: concrete/tools/jobs/run_single.php:52
-#, php-format
-msgid "%d item"
-msgid_plural "%d items"
-msgstr[0] "%d στοιχείο"
-msgstr[1] "%d στοιχεία"
-
 #: concrete/tools/permissions/access_entity.php:12
 msgid "You do not have user search or group search permissions."
 msgstr "Δεν έχετε δικαιώματα αναζήτησης χρηστών ή αναζήτηση ομάδας."
@@ -1684,7 +1679,7 @@ msgid "Add Message"
 msgstr "Προσθήκη μηνύματος"
 
 #: concrete/blocks/html/controller.php:28 concrete/blocks/image/form.php:44
-#: concrete/config/app.php:394 concrete/tools/i18n_redactor_js.php:13
+#: concrete/config/app.php:407 concrete/tools/i18n_redactor_js.php:13
 msgid "HTML"
 msgstr "HTML"
 
@@ -5356,6 +5351,18 @@ msgstr "Δεν έχετε άδεια να προσθέσετε αυτή τη σ�
 msgid "Invalid Token"
 msgstr "Άκυρο διακριτικό"
 
+#: concrete/controllers/frontend/jobs.php:59
+#: concrete/controllers/frontend/jobs.php:153
+msgid "Unknown Job"
+msgstr "Άγνωστος Εργασία"
+
+#: concrete/controllers/frontend/jobs.php:141
+#, php-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d στοιχείο"
+msgstr[1] "%d στοιχεία"
+
 #: concrete/controllers/install.php:80
 #, php-format
 msgid ""
@@ -7228,7 +7235,7 @@ msgstr "Ελέγξτε αυτό το άρθρο στο %s:\n\n%s\n%s"
 msgid "Thought you'd enjoy this article."
 msgstr "Ελπίζουμε ότι απολαύσετε αυτό το άρθρο."
 
-#: concrete/src/Job/Job.php:158 concrete/src/Job/Job.php:312
+#: concrete/src/Job/Job.php:162 concrete/src/Job/Job.php:316
 msgid "The Job was run successfully."
 msgstr "Η εργασία εκτελέστηκε με επιτυχία."
 
@@ -10941,149 +10948,149 @@ msgstr "Κενό site"
 msgid "Creates an empty site using the unstyled Elemental theme."
 msgstr "Δημιουργεί ένα κενό site χρησιμοποιώντας το unstyled Elemental θέμα."
 
-#: concrete/config/app.php:389
+#: concrete/config/app.php:402
 msgid "JPEG"
 msgstr "JPEG"
 
-#: concrete/config/app.php:390
+#: concrete/config/app.php:403
 msgid "GIF"
 msgstr "GIF"
 
-#: concrete/config/app.php:391
+#: concrete/config/app.php:404
 msgid "PNG"
 msgstr "PNG"
 
-#: concrete/config/app.php:392
+#: concrete/config/app.php:405
 msgid "Windows Bitmap"
 msgstr "Windows Bitmap"
 
-#: concrete/config/app.php:393
+#: concrete/config/app.php:406
 msgid "TIFF"
 msgstr "TIFF"
 
-#: concrete/config/app.php:395
+#: concrete/config/app.php:408
 msgid "Flash"
 msgstr "Flash"
 
-#: concrete/blocks/feature/form.php:4 concrete/config/app.php:396
+#: concrete/blocks/feature/form.php:4 concrete/config/app.php:409
 #: concrete/single_pages/dashboard/pages/templates/add.php:27
 #: concrete/single_pages/dashboard/pages/templates/view.php:39
 msgid "Icon"
 msgstr "Εικονίδιο "
 
-#: concrete/config/app.php:397
+#: concrete/config/app.php:410
 msgid "SVG"
 msgstr "SVG"
 
-#: concrete/config/app.php:398
+#: concrete/config/app.php:411
 msgid "Windows Video"
 msgstr "Windows Βίντεο"
 
-#: concrete/config/app.php:399
+#: concrete/config/app.php:412
 msgid "Quicktime"
 msgstr "Quicktime"
 
-#: concrete/config/app.php:400
+#: concrete/config/app.php:413
 msgid "AVI"
 msgstr "AVI"
 
-#: concrete/config/app.php:401
+#: concrete/config/app.php:414
 msgid "3GP"
 msgstr "3GP"
 
-#: concrete/attributes/textarea/type_form.php:9 concrete/config/app.php:402
+#: concrete/attributes/textarea/type_form.php:9 concrete/config/app.php:415
 msgid "Plain Text"
 msgstr "Απλό Κείμενο"
 
-#: concrete/config/app.php:403
+#: concrete/config/app.php:416
 msgid "CSV"
 msgstr "CSV"
 
-#: concrete/config/app.php:404
+#: concrete/config/app.php:417
 msgid "XML"
 msgstr "XML"
 
-#: concrete/config/app.php:405
+#: concrete/config/app.php:418
 msgid "PHP"
 msgstr "PHP"
 
-#: concrete/config/app.php:406
+#: concrete/config/app.php:419
 msgid "MS Word"
 msgstr "MS Word"
 
-#: concrete/config/app.php:407
+#: concrete/config/app.php:420
 msgid "Stylesheet"
 msgstr "Φύλλα Stylesheet"
 
-#: concrete/config/app.php:408 concrete/config/app.php:411
+#: concrete/config/app.php:421 concrete/config/app.php:424
 msgid "MP4"
 msgstr "MP4"
 
-#: concrete/config/app.php:409
+#: concrete/config/app.php:422
 msgid "FLV"
 msgstr "FLV"
 
-#: concrete/config/app.php:410
+#: concrete/config/app.php:423
 msgid "MP3"
 msgstr "MP3"
 
-#: concrete/config/app.php:412
+#: concrete/config/app.php:425
 msgid "Realaudio"
 msgstr "Realaudio"
 
-#: concrete/config/app.php:413
+#: concrete/config/app.php:426
 msgid "Windows Audio"
 msgstr "Windows Audio"
 
-#: concrete/config/app.php:414
+#: concrete/config/app.php:427
 msgid "Rich Text"
 msgstr "Εμπλουτισμένο Κείμενο"
 
-#: concrete/config/app.php:415
+#: concrete/config/app.php:428
 msgid "JavaScript"
 msgstr "JavaScript"
 
-#: concrete/config/app.php:416
+#: concrete/config/app.php:429
 msgid "PDF"
 msgstr "PDF"
 
-#: concrete/config/app.php:417
+#: concrete/config/app.php:430
 msgid "Photoshop"
 msgstr "Photoshop"
 
-#: concrete/config/app.php:418
+#: concrete/config/app.php:431
 msgid "MPEG"
 msgstr "MPEG"
 
-#: concrete/config/app.php:419
+#: concrete/config/app.php:432
 msgid "MS Excel"
 msgstr "MS Excel"
 
-#: concrete/config/app.php:420
+#: concrete/config/app.php:433
 msgid "MS Powerpoint"
 msgstr "MS Powerpoint"
 
-#: concrete/config/app.php:421
+#: concrete/config/app.php:434
 msgid "TAR Archive"
 msgstr "Αρχείο TAR "
 
-#: concrete/config/app.php:422
+#: concrete/config/app.php:435
 msgid "Zip Archive"
 msgstr "Αρχείο zip "
 
-#: concrete/config/app.php:423
+#: concrete/config/app.php:436
 msgid "GZip Archive"
 msgstr "Αρχείο GZip"
 
-#: concrete/config/app.php:424
+#: concrete/config/app.php:437
 msgid "OGG"
 msgstr "OGG"
 
-#: concrete/config/app.php:425
+#: concrete/config/app.php:438
 msgid "OGG Video"
 msgstr "Βίντεο OGG"
 
-#: concrete/config/app.php:426
+#: concrete/config/app.php:439
 msgid "WebM"
 msgstr "WebM"
 
@@ -11693,7 +11700,7 @@ msgstr "Προσθέτει εικόνες και ρολλόβερ από τη β
 msgid "You must select an image."
 msgstr "Πρέπει να επιλέξετε μια εικόνα."
 
-#: concrete/blocks/image/controller.php:119
+#: concrete/blocks/image/controller.php:120
 msgid "You must specify a valid image file."
 msgstr "Πρέπει να καθορίσετε ένα έγκυρο αρχείο εικόνας."
 
