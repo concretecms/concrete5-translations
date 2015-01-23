@@ -11,9 +11,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-01-18 05:00+0000\n"
-"PO-Revision-Date: 2015-01-18 12:00+0000\n"
-"Last-Translator: Takuro Hishikawa <hishikawa@concrete5.co.jp>\n"
+"POT-Creation-Date: 2015-01-22 05:00+0000\n"
+"PO-Revision-Date: 2015-01-22 09:59+0000\n"
+"Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/projects/p/concrete5/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -652,6 +652,7 @@ msgstr "降順"
 #: concrete/single_pages/dashboard/system/conversations/points.php:25
 #: concrete/single_pages/dashboard/system/conversations/settings.php:44
 #: concrete/single_pages/dashboard/system/environment/debug.php:61
+#: concrete/single_pages/dashboard/system/environment/entities.php:30
 #: concrete/single_pages/dashboard/system/environment/logging.php:41
 #: concrete/single_pages/dashboard/system/environment/proxy.php:40
 #: concrete/single_pages/dashboard/system/files/filetypes.php:20
@@ -753,7 +754,7 @@ msgstr "ファイルセットを検索できません。"
 msgid "None of the requested files could be found."
 msgstr "要求されたファイルはいずれも見つかりませんでした。"
 
-#: concrete/src/Backup/ContentExporter.php:204
+#: concrete/src/Backup/ContentExporter.php:203
 #: concrete/src/Legacy/FileList.php:116 concrete/tools/files/download.php:42
 msgid "Could not open with ZipArchive::CREATE"
 msgstr "ZipArchive::CREATE で開くことができませんでした。"
@@ -980,7 +981,7 @@ msgstr "ファイル保存場所が正常に保存されました。"
 #: concrete/elements/panels/page.php:111
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:58
 #: concrete/single_pages/dashboard/pages/types/view.php:50
-#: concrete/src/Package/Package.php:381
+#: concrete/src/Package/Package.php:410
 #: concrete/tools/files/permissions.php:51 concrete/tools/i18n_js.php:139
 #: concrete/tools/i18n_js.php:199
 msgid "Permissions"
@@ -1680,7 +1681,7 @@ msgid "Add Message"
 msgstr "メッセージを追加"
 
 #: concrete/blocks/html/controller.php:28 concrete/blocks/image/form.php:44
-#: concrete/config/app.php:407 concrete/tools/i18n_redactor_js.php:13
+#: concrete/config/app.php:408 concrete/tools/i18n_redactor_js.php:13
 msgid "HTML"
 msgstr "HTML"
 
@@ -4155,6 +4156,25 @@ msgstr "URLリライトが有効になりました。 .htaccess ファイルを�
 msgid "URL rewriting disabled."
 msgstr "URL置換え(URL Rewriting)を無効にしました。"
 
+#: concrete/controllers/single_page/dashboard/system/environment/entities.php:47
+msgid "There are no application specific database entities available."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/environment/entities.php:51
+#, php-format
+msgid ""
+"The application specific entities directory is missing. Please create it "
+"first at: %s."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/environment/entities.php:61
+msgid "Database entities configurations saved."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/environment/entities.php:67
+msgid "Application specific database entities were refreshed."
+msgstr ""
+
 #: concrete/controllers/single_page/dashboard/system/environment/proxy.php:38
 msgid "Proxy configuration saved."
 msgstr "プロキシの設定を保存しました。"
@@ -4208,7 +4228,7 @@ msgid "Invalid anti-spam library."
 msgstr "無効なアンチスパム・ライブラリーです。"
 
 #: concrete/controllers/single_page/dashboard/system/permissions/blacklist.php:16
-#: concrete/elements/permission/duration.php:167
+#: concrete/elements/permission/duration.php:245
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:79
 msgid "Never"
 msgstr "なし"
@@ -5374,7 +5394,7 @@ msgid "Unable to connect to database."
 msgstr "データベースに接続できません。"
 
 #: concrete/controllers/install.php:111
-#: concrete/src/Package/StartingPointPackage.php:191
+#: concrete/src/Package/StartingPointPackage.php:256
 #, php-format
 msgid ""
 "There are already %s tables in this database. concrete5 must be installed in"
@@ -5949,7 +5969,7 @@ msgstr "未読"
 msgid "Replied"
 msgstr "返信済"
 
-#: concrete/src/Page/Page.php:422
+#: concrete/src/Page/Page.php:421
 #: concrete/src/User/PrivateMessage/PrivateMessage.php:145
 msgid "Unknown User"
 msgstr "不明なユーザー"
@@ -6289,6 +6309,31 @@ msgstr "グループツリー"
 msgid "Invalid schema version found. Expecting 0.3"
 msgstr "スキーマバージョンが無効です。0.3が必要"
 
+#: concrete/src/Database/DatabaseStructureManager.php:85
+#, php-format
+msgid ""
+"A file exists in place of the proxy directory. Please remove the '%s' file "
+"to proceed with the proxy class generation."
+msgstr ""
+
+#: concrete/src/Database/DatabaseStructureManager.php:96
+#, php-format
+msgid ""
+"Could not create the proxies directory. Please check the file permissions of"
+" the proxy directory: %s."
+msgstr ""
+
+#: concrete/src/Database/DatabaseStructureManager.php:128
+msgid "The given prefix needs to be a string."
+msgstr ""
+
+#: concrete/src/Database/DatabaseStructureManager.php:139
+#, php-format
+msgid ""
+"Could not delete a proxy file. Please check the permissions of the proxy "
+"directory: %s"
+msgstr ""
+
 #: concrete/src/Error/Handler/ErrorHandler.php:44
 #: concrete/src/Error/Handler/JsonErrorHandler.php:21
 msgid "An error occurred while processing this request."
@@ -6298,7 +6343,7 @@ msgstr "この要求の処理中にエラーが発生しました。"
 msgid "Exception Occurred: "
 msgstr "例外が発生しました: "
 
-#: concrete/src/Backup/ContentExporter.php:207
+#: concrete/src/Backup/ContentExporter.php:206
 #: concrete/src/Legacy/FileList.php:119
 #, php-format
 msgid "Failed to create zip file as \"%s\": %s"
@@ -6318,29 +6363,6 @@ msgstr "次"
 #: concrete/src/Legacy/Pagination.php:172
 msgid "Previous"
 msgstr "前"
-
-#: concrete/src/Permission/Duration.php:172
-#, php-format
-msgid "Starts %s. "
-msgstr "開始　%s. "
-
-#: concrete/src/Permission/Duration.php:174
-msgid "Already Started. "
-msgstr "すでに開始されています。"
-
-#: concrete/src/Permission/Duration.php:177
-#, php-format
-msgid "Ends %s. "
-msgstr "終了　%s"
-
-#: concrete/src/Permission/Duration.php:179
-msgid "No End Date. "
-msgstr "終了日なし。"
-
-#: concrete/src/Permission/Duration.php:182
-#, php-format
-msgid "Repeats %s. "
-msgstr "繰り返し %s"
 
 #: concrete/src/Permission/Key/Key.php:23
 msgid "Included"
@@ -6571,16 +6593,16 @@ msgstr "すべてのアイテム"
 msgid "Featured Items"
 msgstr "おすすめ"
 
-#: concrete/src/Page/Page.php:2152
+#: concrete/src/Page/Page.php:2151
 #, php-format
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "ページ「%s」（パス %s ）を削除しました"
 
-#: concrete/src/Page/Page.php:2152 concrete/src/Page/Page.php:2216
+#: concrete/src/Page/Page.php:2151 concrete/src/Page/Page.php:2215
 msgid "Page Action"
 msgstr "ページアクション"
 
-#: concrete/src/Page/Page.php:2216
+#: concrete/src/Page/Page.php:2215
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "ページ「%s」（パス %s ）をゴミ箱に移動しました"
@@ -6706,261 +6728,261 @@ msgid ""
 "5.7."
 msgstr "%s をインストールできません。このパッケージが5.7用にアップデートされているか確認してください。"
 
-#: concrete/src/Package/Package.php:351
+#: concrete/src/Package/Package.php:380
 msgid "Attribute categories"
 msgstr "属性カテゴリー"
 
-#: concrete/src/Package/Package.php:354
+#: concrete/src/Package/Package.php:383
 msgid "Permission categories"
 msgstr "権限カテゴリー"
 
-#: concrete/src/Package/Package.php:357
+#: concrete/src/Package/Package.php:386
 msgid "Permission access entity types"
 msgstr "権限アクセスエンティティタイプ"
 
-#: concrete/src/Package/Package.php:360
+#: concrete/src/Package/Package.php:389
 msgid "Attribute keys"
 msgstr "属性キー"
 
-#: concrete/src/Package/Package.php:363
+#: concrete/src/Package/Package.php:392
 msgid "Attribute sets"
 msgstr "属性セット"
 
-#: concrete/src/Package/Package.php:366
+#: concrete/src/Package/Package.php:395
 msgid "Group sets"
 msgstr "グループセット"
 
-#: concrete/src/Package/Package.php:369
+#: concrete/src/Package/Package.php:398
 msgid "Page types"
 msgstr "ページタイプ"
 
-#: concrete/src/Package/Package.php:372
+#: concrete/src/Package/Package.php:401
 msgid "Mail importers"
 msgstr "メールインポーター"
 
-#: concrete/src/Package/Package.php:375
+#: concrete/src/Package/Package.php:404
 msgid "Block types"
 msgstr "ブロックタイプ"
 
-#: concrete/src/Package/Package.php:378
+#: concrete/src/Package/Package.php:407
 msgid "Page themes"
 msgstr "ページテーマ"
 
-#: concrete/src/Package/Package.php:384
+#: concrete/src/Package/Package.php:413
 msgid "Single pages"
 msgstr "シングルページ"
 
-#: concrete/src/Package/Package.php:387
+#: concrete/src/Package/Package.php:416
 msgid "Attribute types"
 msgstr "属性タイプ"
 
-#: concrete/src/Package/Package.php:390
+#: concrete/src/Package/Package.php:419
 msgid "Captcha libraries"
 msgstr "CAPTCHAライブラリー"
 
-#: concrete/src/Package/Package.php:393
+#: concrete/src/Package/Package.php:422
 msgid "Antispam libraries"
 msgstr "スパム拒否ライブラリー"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:39
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:299
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:418
-#: concrete/src/Package/Package.php:396
+#: concrete/src/Package/Package.php:425
 msgid "Jobs"
 msgstr "ジョブ"
 
-#: concrete/src/Package/Package.php:399
+#: concrete/src/Package/Package.php:428
 msgid "Workflow types"
 msgstr "ワークフロータイプ"
 
 #: concrete/single_pages/dashboard/system/files/storage.php:99
-#: concrete/src/Package/Package.php:402
+#: concrete/src/Package/Package.php:431
 msgid "Storage Locations"
 msgstr "保存場所"
 
 #: concrete/single_pages/dashboard/system/multilingual/page_report.php:88
 #: concrete/single_pages/dashboard/system/multilingual/page_report.php:96
-#: concrete/src/Package/Package.php:459
+#: concrete/src/Package/Package.php:488
 #, php-format
 msgid "%s (%s)"
 msgstr "%s (%s)"
 
-#: concrete/src/Package/Package.php:465
+#: concrete/src/Package/Package.php:494
 #, php-format
 msgid " %s (%s)"
 msgstr " %s (%s)"
 
-#: concrete/src/Package/Package.php:680
+#: concrete/src/Package/Package.php:726
 msgid "You've already installed that package."
 msgstr "そのパッケージはすでにインストールされています。"
 
-#: concrete/src/Package/Package.php:681
+#: concrete/src/Package/Package.php:727
 msgid "Invalid Package."
 msgstr "無効なパッケージです。"
 
-#: concrete/src/Package/Package.php:682
+#: concrete/src/Package/Package.php:728
 #, php-format
 msgid "This package requires concrete5 version %s or greater."
 msgstr "このパッケージはconcrete5のバージョン %s 以上が必要です。"
 
-#: concrete/src/Package/Package.php:683
+#: concrete/src/Package/Package.php:729
 msgid "An error occurred while downloading the package."
 msgstr "パッケージのダウンロード中にエラーが発生しました。"
 
-#: concrete/src/Package/Package.php:684
+#: concrete/src/Package/Package.php:730
 msgid "concrete5 was not able to save the package after download."
 msgstr "concrete5がダウンロード後のパッケージを保存できませんでした。"
 
-#: concrete/src/Package/Package.php:685
+#: concrete/src/Package/Package.php:731
 msgid "An error occurred while trying to unzip the package."
 msgstr "パッケージのZIPファイルを解凍中にエラーが発生しました。"
 
-#: concrete/src/Package/Package.php:686
+#: concrete/src/Package/Package.php:732
 msgid "An error occurred while trying to install the package."
 msgstr "パッケージのインストール中にエラーが発生しました。"
 
-#: concrete/src/Package/Package.php:687
+#: concrete/src/Package/Package.php:733
 #, php-format
 msgid "Unable to backup old package directory to %s"
 msgstr "旧パッケージを「%s」ディレクトリーにバックアップできません"
 
-#: concrete/src/Package/Package.php:688
+#: concrete/src/Package/Package.php:734
 msgid ""
 "This package isn't currently available for this version of concrete5. Please"
 " contact the maintainer of this package for assistance."
 msgstr "このパッケージは今のバージョンのconcrete5では利用することができません。支援のためにパッケージのメンテナに連絡してください。"
 
-#: concrete/src/Package/StartingPointPackage.php:47
+#: concrete/src/Package/StartingPointPackage.php:45
 msgid "Starting installation and creating directories."
 msgstr "インストールとディレクトリ作成の開始。"
 
-#: concrete/src/Package/StartingPointPackage.php:48
+#: concrete/src/Package/StartingPointPackage.php:46
 msgid "Creating database tables."
 msgstr "データベーステーブルを作成中。"
 
-#: concrete/src/Package/StartingPointPackage.php:49
+#: concrete/src/Package/StartingPointPackage.php:47
 msgid "Adding admin user."
 msgstr "管理者の追加中。"
 
-#: concrete/src/Package/StartingPointPackage.php:50
+#: concrete/src/Package/StartingPointPackage.php:48
 msgid "Installing permissions & workflow."
 msgstr "権限とワークフローをインストール中。"
 
-#: concrete/src/Package/StartingPointPackage.php:51
+#: concrete/src/Package/StartingPointPackage.php:49
 msgid "Creating home page."
 msgstr "ホームページを作成中。"
 
-#: concrete/src/Package/StartingPointPackage.php:52
+#: concrete/src/Package/StartingPointPackage.php:50
 msgid "Installing attributes."
 msgstr "属性をインストール中。"
 
-#: concrete/src/Package/StartingPointPackage.php:53
+#: concrete/src/Package/StartingPointPackage.php:51
 msgid "Adding block types."
 msgstr "ブロックタイプを追加中。"
 
-#: concrete/src/Package/StartingPointPackage.php:54
+#: concrete/src/Package/StartingPointPackage.php:52
 msgid "Adding gathering data sources."
 msgstr "ギャザリングデータソースを追加する。"
 
-#: concrete/src/Package/StartingPointPackage.php:55
+#: concrete/src/Package/StartingPointPackage.php:53
 msgid "Page type basic setup."
 msgstr "ページタイプの基本設定。"
 
-#: concrete/src/Package/StartingPointPackage.php:56
+#: concrete/src/Package/StartingPointPackage.php:54
 msgid "Adding themes."
 msgstr "テーマを追加中。"
 
-#: concrete/src/Package/StartingPointPackage.php:57
+#: concrete/src/Package/StartingPointPackage.php:55
 msgid "Installing automated jobs."
 msgstr "自動実行ジョブをインストール中。"
 
-#: concrete/src/Package/StartingPointPackage.php:58
+#: concrete/src/Package/StartingPointPackage.php:56
 msgid "Installing dashboard."
 msgstr "管理画面をインストール中。"
 
-#: concrete/src/Package/StartingPointPackage.php:59
+#: concrete/src/Package/StartingPointPackage.php:60
 msgid "Installing login and registration pages."
 msgstr "ログイン・ユーザー登録ページをインストール中。"
 
-#: concrete/src/Package/StartingPointPackage.php:60
+#: concrete/src/Package/StartingPointPackage.php:61
 msgid "Adding image editor functionality."
 msgstr "画像編集機能を追加する。"
 
-#: concrete/src/Package/StartingPointPackage.php:61
+#: concrete/src/Package/StartingPointPackage.php:62
 msgid "Configuring site."
 msgstr "サイトの初期設定中。"
 
-#: concrete/src/Package/StartingPointPackage.php:62
+#: concrete/src/Package/StartingPointPackage.php:63
 msgid "Importing files."
 msgstr "ファイルの取り込み中。"
 
-#: concrete/src/Package/StartingPointPackage.php:63
+#: concrete/src/Package/StartingPointPackage.php:64
 msgid "Adding pages and content."
 msgstr "ページとコンテンツを追加中。"
 
-#: concrete/src/Package/StartingPointPackage.php:64
+#: concrete/src/Package/StartingPointPackage.php:65
 msgid "Setting up site permissions."
 msgstr "サイト権限の設定中。"
 
-#: concrete/src/Package/StartingPointPackage.php:65
+#: concrete/src/Package/StartingPointPackage.php:66
 msgid "Prefetching information."
 msgstr "情報の取得中。"
 
-#: concrete/src/Package/StartingPointPackage.php:66
+#: concrete/src/Package/StartingPointPackage.php:67
 msgid "Finishing."
 msgstr "完了。"
 
 #: concrete/single_pages/dashboard/system/files/storage.php:54
-#: concrete/src/Package/StartingPointPackage.php:149
-#: concrete/src/Package/StartingPointPackage.php:152
+#: concrete/src/Package/StartingPointPackage.php:212
+#: concrete/src/Package/StartingPointPackage.php:215
 msgid "Default"
 msgstr "デフォルト"
 
-#: concrete/src/Package/StartingPointPackage.php:150
+#: concrete/src/Package/StartingPointPackage.php:213
 msgid "Local"
 msgstr "ローカル"
 
-#: concrete/src/Package/StartingPointPackage.php:156
+#: concrete/src/Package/StartingPointPackage.php:219
 msgctxt "ThumbnailTypeName"
 msgid "File Manager Thumbnails"
 msgstr "ファイルマネージャーサムネイル"
 
-#: concrete/src/Package/StartingPointPackage.php:164
+#: concrete/src/Package/StartingPointPackage.php:227
 msgctxt "ThumbnailTypeName"
 msgid "File Manager Detail Thumbnails"
 msgstr "ファイルマネージャー詳細サムネイル"
 
-#: concrete/src/Package/StartingPointPackage.php:204
+#: concrete/src/Package/StartingPointPackage.php:273
 #, php-format
 msgid "Unable to install database: %s"
 msgstr "データベースをインストールできません: %s"
 
-#: concrete/src/Package/StartingPointPackage.php:241
+#: concrete/src/Package/StartingPointPackage.php:313
 msgctxt "GroupName"
 msgid "Guest"
 msgstr "ゲスト"
 
-#: concrete/src/Package/StartingPointPackage.php:241
+#: concrete/src/Package/StartingPointPackage.php:314
 msgctxt "GroupDescription"
 msgid "The guest group represents unregistered visitors to your site."
 msgstr "ゲストグループとは、サイトに登録していない訪問者を表します。"
 
-#: concrete/src/Package/StartingPointPackage.php:242
+#: concrete/src/Package/StartingPointPackage.php:319
 msgctxt "GroupName"
 msgid "Registered Users"
 msgstr "登録ユーザー"
 
-#: concrete/src/Package/StartingPointPackage.php:242
+#: concrete/src/Package/StartingPointPackage.php:320
 msgctxt "GroupDescription"
 msgid "The registered users group represents all user accounts."
 msgstr "登録ユーザーとは、すべての登録済みユーザーを表します。"
 
-#: concrete/src/Package/StartingPointPackage.php:243
+#: concrete/src/Package/StartingPointPackage.php:324
 msgctxt "GroupName"
 msgid "Administrators"
 msgstr "管理者"
 
-#: concrete/src/Package/StartingPointPackage.php:259
+#: concrete/src/Package/StartingPointPackage.php:342
 msgid "Won a Badge"
 msgstr "バッジを獲得しました"
 
@@ -6984,8 +7006,8 @@ msgid "No users selected."
 msgstr "ユーザーが選択されていません。"
 
 #. Short date format: see http://www.php.net/manual/en/function.date.php
-#: concrete/src/Form/Service/Widget/DateTime.php:158
-#: concrete/src/Form/Service/Widget/DateTime.php:230
+#: concrete/src/Form/Service/Widget/DateTime.php:159
+#: concrete/src/Form/Service/Widget/DateTime.php:231
 #: concrete/src/Localization/Service/Date.php:538
 msgid "n/j/Y"
 msgstr "Y/m/d"
@@ -7806,7 +7828,7 @@ msgstr "管理画面"
 msgid "Customize"
 msgstr "カスタマイズ"
 
-#: concrete/config/install/base/dashboard.xml:965
+#: concrete/config/install/base/dashboard.xml:974
 #: concrete/src/Application/Service/Dashboard.php:334
 msgid "Customize Dashboard Home"
 msgstr "カスタマイズ管理画面"
@@ -7819,6 +7841,29 @@ msgstr "サイト名"
 #, php-format
 msgid "%s more to display. <strong>View all &gt;</strong>"
 msgstr "あと %s 件あります。<strong>すべて見る &gt;</strong> "
+
+#: concrete/src/Foundation/Repetition/AbstractRepetition.php:490
+#, php-format
+msgid "Starts %s. "
+msgstr "開始　%s. "
+
+#: concrete/src/Foundation/Repetition/AbstractRepetition.php:492
+msgid "Already Started. "
+msgstr "すでに開始されています。"
+
+#: concrete/src/Foundation/Repetition/AbstractRepetition.php:495
+#, php-format
+msgid "Ends %s. "
+msgstr "終了　%s"
+
+#: concrete/src/Foundation/Repetition/AbstractRepetition.php:497
+msgid "No End Date. "
+msgstr "終了日なし。"
+
+#: concrete/src/Foundation/Repetition/AbstractRepetition.php:500
+#, php-format
+msgid "Repeats %s. "
+msgstr "繰り返し %s"
 
 #: concrete/src/Attribute/Controller.php:225
 msgid "Type required."
@@ -9109,84 +9154,116 @@ msgstr "既定の言語"
 msgid "Paste"
 msgstr "ペースト"
 
-#: concrete/elements/permission/duration.php:6
+#: concrete/elements/permission/duration.php:7
 msgid "** Options"
 msgstr "** オプション"
 
-#: concrete/elements/permission/duration.php:7
+#: concrete/elements/permission/duration.php:8
 msgid "Every Day"
 msgstr "毎日"
 
-#: concrete/elements/permission/duration.php:8
+#: concrete/elements/permission/duration.php:9
 msgid "Every Week"
 msgstr "毎週"
 
-#: concrete/elements/permission/duration.php:9
+#: concrete/elements/permission/duration.php:10
 msgid "Every Month"
 msgstr "毎月"
 
-#: concrete/elements/permission/duration.php:69
+#: concrete/elements/permission/duration.php:81
 msgctxt "Start date"
 msgid "From"
 msgstr "開始"
 
-#: concrete/elements/permission/duration.php:71
-#: concrete/elements/permission/duration.php:77
+#: concrete/elements/permission/duration.php:85
+#: concrete/elements/permission/duration.php:95
 msgid "All Day"
 msgstr "終日"
 
-#: concrete/elements/permission/duration.php:75
+#: concrete/elements/permission/duration.php:91
 msgctxt "End date"
 msgid "To"
 msgstr "終了"
 
-#: concrete/elements/permission/duration.php:85
+#: concrete/elements/permission/duration.php:105
 msgid "Repeat..."
 msgstr "繰り返し..."
 
-#: concrete/elements/permission/duration.php:93
+#: concrete/elements/permission/duration.php:115
 msgid "Repeats"
 msgstr "繰り返し"
 
-#: concrete/elements/permission/duration.php:100
-#: concrete/elements/permission/duration.php:118
-#: concrete/elements/permission/duration.php:147
+#: concrete/elements/permission/duration.php:124
+#: concrete/elements/permission/duration.php:178
+#: concrete/elements/permission/duration.php:217
 msgid "Repeat every"
 msgstr "繰り返す間隔"
 
-#: concrete/elements/permission/duration.php:103
+#: concrete/elements/permission/duration.php:132
 msgid "days"
 msgstr "日"
 
-#: concrete/elements/permission/duration.php:112
+#: concrete/elements/permission/duration.php:143
 msgid "Repeat By"
 msgstr "繰り返しの基準"
 
-#: concrete/elements/permission/duration.php:113
+#: concrete/elements/permission/duration.php:149
 msgid "Day of Month"
 msgstr "日付"
 
-#: concrete/elements/permission/duration.php:114
+#: concrete/elements/permission/duration.php:155
 msgid "Day of Week"
 msgstr "曜日"
 
-#: concrete/elements/permission/duration.php:121
+#: concrete/elements/permission/duration.php:162
+msgid "The last "
+msgstr ""
+
+#: concrete/elements/permission/duration.php:164
+msgid "Sunday"
+msgstr ""
+
+#: concrete/elements/permission/duration.php:165
+msgid "Monday"
+msgstr ""
+
+#: concrete/elements/permission/duration.php:166
+msgid "Tuesday"
+msgstr ""
+
+#: concrete/elements/permission/duration.php:167
+msgid "Wednesday"
+msgstr ""
+
+#: concrete/elements/permission/duration.php:168
+msgid "Thursday"
+msgstr ""
+
+#: concrete/elements/permission/duration.php:169
+msgid "Friday"
+msgstr ""
+
+#: concrete/elements/permission/duration.php:170
+msgid "Saturday"
+msgstr ""
+
+#: concrete/elements/permission/duration.php:186
 msgid "months"
 msgstr "月"
 
-#: concrete/elements/permission/duration.php:134
+#: concrete/elements/permission/duration.php:200
 msgid "On"
 msgstr "On"
 
-#: concrete/elements/permission/duration.php:150
+#: concrete/elements/permission/duration.php:225
 msgid "weeks"
 msgstr "週"
 
-#: concrete/elements/permission/duration.php:161
+#: concrete/elements/permission/duration.php:235
 msgid "Starts On"
 msgstr "開始"
 
-#: concrete/elements/permission/duration.php:166
+#: concrete/elements/permission/duration.php:242
 msgid "Ends"
 msgstr "終了"
 
@@ -9696,6 +9773,7 @@ msgstr "ブロックタイプのキャッシュ設定を上書きします。"
 #: concrete/blocks/autonav/form_setup_html.php:16
 #: concrete/blocks/page_list/page_list_form.php:11
 #: concrete/config/install/base/dashboard.xml:805
+#: concrete/single_pages/dashboard/system/environment/entities.php:10
 #: concrete/single_pages/dashboard/system/mail/importers.php:19
 #: concrete/views/dialogs/block/cache.php:39
 msgid "Settings"
@@ -10326,7 +10404,7 @@ msgstr "クリップボード"
 msgid "Stacks"
 msgstr "スタック"
 
-#: concrete/config/install/base/dashboard.xml:928
+#: concrete/config/install/base/dashboard.xml:937
 #: concrete/views/panels/add.php:71
 msgid "Stack"
 msgstr "スタック"
@@ -10930,149 +11008,149 @@ msgstr "空白のサイト"
 msgid "Creates an empty site using the unstyled Elemental theme."
 msgstr "未設定の Elemental テーマを使って空白のサイトを作ります。"
 
-#: concrete/config/app.php:402
+#: concrete/config/app.php:403
 msgid "JPEG"
 msgstr "JPEG"
 
-#: concrete/config/app.php:403
+#: concrete/config/app.php:404
 msgid "GIF"
 msgstr "GIF"
 
-#: concrete/config/app.php:404
+#: concrete/config/app.php:405
 msgid "PNG"
 msgstr "PNG"
 
-#: concrete/config/app.php:405
+#: concrete/config/app.php:406
 msgid "Windows Bitmap"
 msgstr "Windowsビットマップ"
 
-#: concrete/config/app.php:406
+#: concrete/config/app.php:407
 msgid "TIFF"
 msgstr "TIFF"
 
-#: concrete/config/app.php:408
+#: concrete/config/app.php:409
 msgid "Flash"
 msgstr "Flash"
 
-#: concrete/blocks/feature/form.php:4 concrete/config/app.php:409
+#: concrete/blocks/feature/form.php:4 concrete/config/app.php:410
 #: concrete/single_pages/dashboard/pages/templates/add.php:27
 #: concrete/single_pages/dashboard/pages/templates/view.php:39
 msgid "Icon"
 msgstr "アイコン"
 
-#: concrete/config/app.php:410
+#: concrete/config/app.php:411
 msgid "SVG"
 msgstr "SVG"
 
-#: concrete/config/app.php:411
+#: concrete/config/app.php:412
 msgid "Windows Video"
 msgstr "Windowsビデオ"
 
-#: concrete/config/app.php:412
+#: concrete/config/app.php:413
 msgid "Quicktime"
 msgstr "QuickTime"
 
-#: concrete/config/app.php:413
+#: concrete/config/app.php:414
 msgid "AVI"
 msgstr "AVI"
 
-#: concrete/config/app.php:414
+#: concrete/config/app.php:415
 msgid "3GP"
 msgstr "3GP"
 
-#: concrete/attributes/textarea/type_form.php:9 concrete/config/app.php:415
+#: concrete/attributes/textarea/type_form.php:9 concrete/config/app.php:416
 msgid "Plain Text"
 msgstr "テキスト"
 
-#: concrete/config/app.php:416
+#: concrete/config/app.php:417
 msgid "CSV"
 msgstr "CSV"
 
-#: concrete/config/app.php:417
+#: concrete/config/app.php:418
 msgid "XML"
 msgstr "XML"
 
-#: concrete/config/app.php:418
+#: concrete/config/app.php:419
 msgid "PHP"
 msgstr "PHP"
 
-#: concrete/config/app.php:419
+#: concrete/config/app.php:420
 msgid "MS Word"
 msgstr "MSワード"
 
-#: concrete/config/app.php:420
+#: concrete/config/app.php:421
 msgid "Stylesheet"
 msgstr "スタイルシート"
 
-#: concrete/config/app.php:421 concrete/config/app.php:424
+#: concrete/config/app.php:422 concrete/config/app.php:425
 msgid "MP4"
 msgstr "MP4"
 
-#: concrete/config/app.php:422
+#: concrete/config/app.php:423
 msgid "FLV"
 msgstr "FLV"
 
-#: concrete/config/app.php:423
+#: concrete/config/app.php:424
 msgid "MP3"
 msgstr "MP3"
 
-#: concrete/config/app.php:425
+#: concrete/config/app.php:426
 msgid "Realaudio"
 msgstr "Realaudio"
 
-#: concrete/config/app.php:426
+#: concrete/config/app.php:427
 msgid "Windows Audio"
 msgstr "Windowsオーディオ"
 
-#: concrete/config/app.php:427
+#: concrete/config/app.php:428
 msgid "Rich Text"
 msgstr "リッチテキスト"
 
-#: concrete/config/app.php:428
+#: concrete/config/app.php:429
 msgid "JavaScript"
 msgstr "JavaScript"
 
-#: concrete/config/app.php:429
+#: concrete/config/app.php:430
 msgid "PDF"
 msgstr "PDF"
 
-#: concrete/config/app.php:430
+#: concrete/config/app.php:431
 msgid "Photoshop"
 msgstr "Photoshop"
 
-#: concrete/config/app.php:431
+#: concrete/config/app.php:432
 msgid "MPEG"
 msgstr "MPEG"
 
-#: concrete/config/app.php:432
+#: concrete/config/app.php:433
 msgid "MS Excel"
 msgstr "MSエクセル"
 
-#: concrete/config/app.php:433
+#: concrete/config/app.php:434
 msgid "MS Powerpoint"
 msgstr "MSパワーポイント"
 
-#: concrete/config/app.php:434
+#: concrete/config/app.php:435
 msgid "TAR Archive"
 msgstr "TAR書庫"
 
-#: concrete/config/app.php:435
+#: concrete/config/app.php:436
 msgid "Zip Archive"
 msgstr "ZIP書庫"
 
-#: concrete/config/app.php:436
+#: concrete/config/app.php:437
 msgid "GZip Archive"
 msgstr "GZip書庫"
 
-#: concrete/config/app.php:437
+#: concrete/config/app.php:438
 msgid "OGG"
 msgstr "OGG"
 
-#: concrete/config/app.php:438
+#: concrete/config/app.php:439
 msgid "OGG Video"
 msgstr "OGG ビデオ"
 
-#: concrete/config/app.php:439
+#: concrete/config/app.php:440
 msgid "WebM"
 msgstr "WebM"
 
@@ -11456,7 +11534,7 @@ msgstr "HTML/WYSIWYGエディター付テキストブロックです。"
 msgid "Empty Content Block."
 msgstr "空の記事ブロックです。"
 
-#: concrete/blocks/page_list/controller.php:31
+#: concrete/blocks/page_list/controller.php:32
 #: concrete/blocks/tags/controller.php:35
 msgid "List pages based on type, area."
 msgstr "タイプやエリアで指定した範囲のページのリストを表示します。"
@@ -12484,25 +12562,25 @@ msgstr "表示するページがない場合のメッセージ"
 msgid "Included Pages"
 msgstr "含まれるページ"
 
-#: concrete/blocks/page_list/controller.php:36
+#: concrete/blocks/page_list/controller.php:37
 msgid "Page List"
 msgstr "ページリスト"
 
-#: concrete/blocks/page_list/controller.php:42
+#: concrete/blocks/page_list/controller.php:43
 msgid "Please give your RSS Feed a name."
 msgstr "RSSフィードの名前を入力してください。"
 
-#: concrete/blocks/page_list/controller.php:275
+#: concrete/blocks/page_list/controller.php:286
 msgid ""
 "Your RSS feed must have a valid URL, containing only letters, numbers or "
 "underscores"
 msgstr "RSSフィードは有効なURLを設定してください。URLには半角英数字と下線のみ使用できます"
 
-#: concrete/blocks/page_list/controller.php:278
+#: concrete/blocks/page_list/controller.php:289
 msgid "Your RSS feed must have a valid title."
 msgstr "RSSフィードに有効なタイトルを設定してください。"
 
-#: concrete/blocks/page_list/controller.php:281
+#: concrete/blocks/page_list/controller.php:292
 msgid "Your RSS feed must have a valid description."
 msgstr "RSS フィードには有効な説明文を設定してください。"
 
@@ -12852,7 +12930,7 @@ msgstr "検索 - 検索サイドバー用にすべてのトピックの一覧を
 msgid "Page – Display a list of topics for the current page."
 msgstr "ページ - 現在のページのトピックの一覧を表示。"
 
-#: concrete/attributes/topics/type_form.php:45
+#: concrete/attributes/topics/type_form.php:44
 #: concrete/blocks/topic_list/form.php:11
 msgid "Topic Tree"
 msgstr "トピックツリー"
@@ -13206,11 +13284,11 @@ msgstr "値"
 msgid "** All"
 msgstr "** すべて"
 
-#: concrete/attributes/topics/type_form.php:56
+#: concrete/attributes/topics/type_form.php:55
 msgid "Topic Default Parent Node"
 msgstr "トピックのデフォルト親ノード"
 
-#: concrete/attributes/topics/type_form.php:65
+#: concrete/attributes/topics/type_form.php:64
 #, php-format
 msgid ""
 "You have not created a topic tree.\n"
@@ -13218,7 +13296,7 @@ msgid ""
 "before you can use this attribute type."
 msgstr "トピックツリーを作成していません。\nこの属性タイプを使用するためには、\n<a href=\"%s\">トピックページ</a>より、トピックツリーを作成してください。"
 
-#: concrete/attributes/topics/controller.php:292
+#: concrete/attributes/topics/controller.php:304
 msgid "You must specify a valid topic tree parent node ID and topic tree ID."
 msgstr "有効なトピックツリーの親ノード ID とトピックツリー ID を指定してください。"
 
@@ -14428,6 +14506,41 @@ msgstr "サーバー設定一覧"
 #: concrete/single_pages/dashboard/system/environment/info.php:4
 msgid "Unable to load environment info"
 msgstr "環境設定を読み込めません"
+
+#: concrete/single_pages/dashboard/system/environment/entities.php:12
+msgid ""
+"Defines whether the Doctrine proxy classes are created on the fly. On the "
+"fly generation is active when development mode is enabled."
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/environment/entities.php:12
+msgid "Doctrine Development Mode"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/environment/entities.php:17
+msgid "On - Proxy classes will be generated on the fly. Good for development."
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/environment/entities.php:24
+msgid ""
+"Off - Proxy classes need to be manually generated. Helps speed up a live "
+"site."
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/environment/entities.php:38
+msgid "Entities"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/environment/entities.php:40
+msgid ""
+"Search for application specific entities, refresh their database schema and "
+"generate their proxy classes."
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/environment/entities.php:42
+msgctxt "Doctrine"
+msgid "Refresh Entities"
+msgstr ""
 
 #: concrete/single_pages/dashboard/system/environment/proxy.php:13
 msgid "Proxy Host"
@@ -17653,75 +17766,84 @@ msgstr "プロキシサーバー"
 msgid "network, proxy server"
 msgstr "ネットワーク、プロキシサーバー"
 
-#: concrete/config/install/base/dashboard.xml:908
+#: concrete/config/install/base/dashboard.xml:909
+msgid "Database Entities"
+msgstr ""
+
+#. Keywords for page /dashboard/system/environment/entities
+#: concrete/config/install/base/dashboard.xml:912
+msgid "database, entities, doctrine"
+msgstr ""
+
+#: concrete/config/install/base/dashboard.xml:917
 msgid "Backup & Restore"
 msgstr "バックアップとリストア"
 
-#: concrete/config/install/base/dashboard.xml:908
+#: concrete/config/install/base/dashboard.xml:917
 msgid "Backup or restore your website."
 msgstr "サイトのバックアップやリストア"
 
 #. Keywords for page /dashboard/system/backup
-#: concrete/config/install/base/dashboard.xml:911
+#: concrete/config/install/base/dashboard.xml:920
 msgid "export, backup, database, sql, mysql, encryption, restore"
 msgstr "export, backup, database, sql, mysql, encryption, restore"
 
-#: concrete/config/install/base/dashboard.xml:916
+#: concrete/config/install/base/dashboard.xml:925
 msgid "Backup Database"
 msgstr "データベースをバックアップ"
 
-#: concrete/config/install/base/dashboard.xml:918
+#: concrete/config/install/base/dashboard.xml:927
 msgid "Update concrete5"
 msgstr "concrete5をアップグレード"
 
 #. Keywords for page /dashboard/system/backup/update
-#: concrete/config/install/base/dashboard.xml:921
+#: concrete/config/install/base/dashboard.xml:930
 msgid "upgrade, new version, update"
 msgstr "アップグレード、新バージョン、アップデート"
 
-#: concrete/config/install/base/dashboard.xml:929
+#: concrete/config/install/base/dashboard.xml:938
 msgid "Dashboard Primary + Five"
 msgstr "管理画面 プライマリー + 5"
 
-#: concrete/config/install/base/dashboard.xml:930
+#: concrete/config/install/base/dashboard.xml:939
 msgid "Dashboard Header + Four Column"
 msgstr "管理画面 ヘッダー + 4カラム"
 
-#: concrete/config/install/base/dashboard.xml:931
+#: concrete/config/install/base/dashboard.xml:940
 msgid "Dashboard Full"
 msgstr "管理画面フル"
 
-#: concrete/config/install/base/dashboard.xml:935
+#: concrete/config/install/base/dashboard.xml:944
 msgctxt "PageTemplateName"
 msgid "Stack"
 msgstr "スタック"
 
-#: concrete/config/install/base/dashboard.xml:936
+#: concrete/config/install/base/dashboard.xml:945
 msgctxt "PageTemplateName"
 msgid "Dashboard Primary + Five"
 msgstr "管理画面 プライマリー + 5"
 
-#: concrete/config/install/base/dashboard.xml:937
+#: concrete/config/install/base/dashboard.xml:946
 msgctxt "PageTemplateName"
 msgid "Dashboard Header + Four Column"
 msgstr "管理画面 ヘッダー + 4カラム"
 
-#: concrete/config/install/base/dashboard.xml:938
+#: concrete/config/install/base/dashboard.xml:947
 msgctxt "PageTemplateName"
 msgid "Dashboard Full"
 msgstr "管理画面フル"
 
-#: concrete/config/install/base/dashboard.xml:943
+#: concrete/config/install/base/dashboard.xml:952
 msgid "Welcome to concrete5"
 msgstr "concrete5へようこそ"
 
-#: concrete/config/install/base/dashboard.xml:943
+#: concrete/config/install/base/dashboard.xml:952
 msgid ""
 "Learn about how to use concrete5, how to develop for concrete5, and get "
 "general help."
 msgstr "concrete5 の使い方、開発方法を学んだり、一般ヘルプを見る"
 
-#: concrete/config/install/base/dashboard.xml:949
+#: concrete/config/install/base/dashboard.xml:958
 #: concrete/config/install/base/login_registration.xml:47
 #: concrete/config/install/packages/elemental_blank/content.xml:29
 #: concrete/config/install/packages/elemental_full/content.xml:139
@@ -17755,32 +17877,32 @@ msgctxt "AreaName"
 msgid "Main"
 msgstr "メイン"
 
-#: concrete/config/install/base/dashboard.xml:974
+#: concrete/config/install/base/dashboard.xml:983
 msgctxt "AreaName"
 msgid "Primary"
 msgstr "プライマリー"
 
-#: concrete/config/install/base/dashboard.xml:980
+#: concrete/config/install/base/dashboard.xml:989
 msgctxt "AreaName"
 msgid "Secondary 1"
 msgstr "セカンダリー1"
 
-#: concrete/config/install/base/dashboard.xml:991
+#: concrete/config/install/base/dashboard.xml:1000
 msgctxt "AreaName"
 msgid "Secondary 2"
 msgstr "セカンダリー2"
 
-#: concrete/config/install/base/dashboard.xml:1002
+#: concrete/config/install/base/dashboard.xml:1011
 msgctxt "AreaName"
 msgid "Secondary 3"
 msgstr "セカンダリー3"
 
-#: concrete/config/install/base/dashboard.xml:1007
+#: concrete/config/install/base/dashboard.xml:1016
 msgctxt "AreaName"
 msgid "Secondary 4"
 msgstr "セカンダリー 4"
 
-#: concrete/config/install/base/dashboard.xml:1012
+#: concrete/config/install/base/dashboard.xml:1021
 msgctxt "AreaName"
 msgid "Secondary 5"
 msgstr "セカンダリー 5"
