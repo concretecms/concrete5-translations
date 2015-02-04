@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-01-24 05:00+0000\n"
-"PO-Revision-Date: 2015-01-24 09:59+0000\n"
-"Last-Translator: Michele Locati <michele@locati.it>\n"
+"POT-Creation-Date: 2015-02-03 05:00+0000\n"
+"PO-Revision-Date: 2015-02-03 10:35+0000\n"
+"Last-Translator: Torsten Silbermann <mail@tsilbermann.de>\n"
 "Language-Team: German (Germany) (http://www.transifex.com/projects/p/concrete5/language/de_DE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -359,6 +359,7 @@ msgstr "Bitte geben Sie Ihre E-Mail-Adresse an. An diese Adresse wird die Anleit
 #: concrete/blocks/form/form_setup_html.php:126
 #: concrete/blocks/form/form_setup_html.php:196
 #: concrete/controllers/single_page/login.php:181
+#: concrete/elements/conversation/message/author.php:14
 #: concrete/elements/permission/keys/edit_user_properties.php:31
 #: concrete/elements/permission/keys/edit_user_properties.php:68
 #: concrete/mail/user_register.php:16 concrete/mail/user_register.php:47
@@ -735,7 +736,7 @@ msgstr "Dateien von incoming-Verzeichnis löschen"
 #: concrete/src/Form/Service/Widget/Color.php:34
 #: concrete/src/StyleCustomizer/Style/ColorStyle.php:41
 #: concrete/src/Workflow/Progress/Action/CancelAction.php:7
-#: concrete/tools/conversations/edit_message.php:37
+#: concrete/tools/conversations/edit_message.php:46
 #: concrete/tools/dashboard/sitemap_drag_request.php:168
 #: concrete/tools/dashboard/sitemap_drag_request.php:224
 #: concrete/tools/dashboard/sitemap_drag_request.php:226
@@ -981,14 +982,14 @@ msgstr "Sollen die folgenden Dateien wirklich gelöscht werden?"
 
 #: concrete/attributes/select/type_form.php:19
 #: concrete/elements/block_header_view.php:162
-#: concrete/elements/conversation/message.php:45
-#: concrete/elements/conversation/message/topic.php:42
+#: concrete/elements/conversation/message.php:49
+#: concrete/elements/conversation/message/topic.php:41
 #: concrete/elements/files/search.php:25
 #: concrete/elements/page_controls_footer.php:128
 #: concrete/elements/page_controls_footer.php:130
 #: concrete/elements/pages/search.php:32
 #: concrete/single_pages/account/messages/inbox.php:51
-#: concrete/single_pages/dashboard/conversations/messages.php:142
+#: concrete/single_pages/dashboard/conversations/messages.php:141
 #: concrete/single_pages/dashboard/pages/types/view.php:74
 #: concrete/single_pages/dashboard/pages/types/view.php:125
 #: concrete/single_pages/dashboard/reports/forms.php:141
@@ -1362,7 +1363,7 @@ msgstr "Wie lange soll diese Berechtigung gelten?"
 #: concrete/single_pages/dashboard/system/seo/statistics.php:15
 #: concrete/single_pages/dashboard/system/seo/urls.php:29
 #: concrete/single_pages/dashboard/workflow/workflows.php:17
-#: concrete/tools/conversations/edit_message.php:35
+#: concrete/tools/conversations/edit_message.php:42
 #: concrete/tools/i18n_js.php:94 concrete/tools/i18n_redactor_js.php:44
 #: concrete/tools/i18n_redactor_js.php:106
 #: concrete/tools/page_types/composer/form/edit_control.php:71
@@ -1399,6 +1400,7 @@ msgstr "Nur Benutzer, die Mitglieder ALLER ausgewählten Gruppen sind, erhalten 
 
 #: concrete/blocks/testimonial/form.php:22
 #: concrete/elements/attribute/type_form_required.php:61
+#: concrete/elements/conversation/message/author.php:10
 #: concrete/elements/group/search.php:26
 #: concrete/elements/permission/keys/edit_page_properties.php:29
 #: concrete/elements/permission/keys/edit_page_properties.php:65
@@ -1505,17 +1507,17 @@ msgstr "Sind sie sicher?"
 #: concrete/elements/conversation/display.php:60
 #: concrete/elements/conversation/display.php:154
 #: concrete/elements/conversation/display.php:182
-#: concrete/tools/conversations/edit_message.php:36
+#: concrete/tools/conversations/edit_message.php:44
 msgid "Attach Files"
 msgstr "Dateien anhängen"
 
-#: concrete/tools/conversations/add_message.php:52
+#: concrete/tools/conversations/add_message.php:75
 #: concrete/tools/conversations/update_message.php:14
 msgid "Invalid conversation post token."
 msgstr "Ungültiger Beitragstoken"
 
 #: concrete/blocks/core_conversation_message/controller.php:43
-#: concrete/tools/conversations/add_message.php:55
+#: concrete/tools/conversations/add_message.php:78
 #: concrete/tools/conversations/update_message.php:17
 msgid "Your message cannot be empty."
 msgstr "Es muss eine Nachricht erstellt werden."
@@ -1528,12 +1530,12 @@ msgstr "Ungültiges Nachrichtenobjekt"
 msgid "You do not have access to edit this message."
 msgstr "Sie haben keine Berechtigung um diese Nachricht zu bearbeiten."
 
-#: concrete/tools/conversations/add_message.php:40
+#: concrete/tools/conversations/add_message.php:63
 #: concrete/tools/conversations/update_message.php:38
 msgid "You do not have permission to add attachments."
 msgstr "Sie haben keine Berechtigung um Anhänge hinzuzufügen."
 
-#: concrete/tools/conversations/add_message.php:44
+#: concrete/tools/conversations/add_message.php:67
 #: concrete/tools/conversations/update_message.php:42
 msgid "You have too many attachments."
 msgstr "Sie haben zu viele Anhänge hinzugefügt."
@@ -1587,17 +1589,32 @@ msgstr "Ungültige Konversation"
 msgid "You do not have access to add a message to this conversation."
 msgstr "Sie haben keine Berechtigung, dieser Konversation eine Nachricht hinzuzufügen."
 
-#: concrete/tools/conversations/add_message.php:30
-#: concrete/tools/conversations/add_message.php:34
+#: concrete/tools/conversations/add_message.php:31
+msgid "You must enter your name to post this message."
+msgstr "Um diese Nachricht zu posten, geben Sie bitte Ihren Namen ein."
+
+#: concrete/tools/conversations/add_message.php:36
+msgid "You must enter a valid email address to post this message."
+msgstr "Um diese Nachricht zu posten, bitte eine gültige E-Mail-Adresse eingeben."
+
+#: concrete/controllers/single_page/register.php:53
+#: concrete/tools/conversations/add_message.php:43
+msgid ""
+"Incorrect image validation code. Please check the image and re-enter the "
+"letters or numbers as necessary."
+msgstr "Falscher Code. Bitte prüfen Sie das Bild und geben Sie die Buchstaben und Zahlen wie dort zu sehen ein."
+
+#: concrete/tools/conversations/add_message.php:53
+#: concrete/tools/conversations/add_message.php:57
 msgid "Invalid Page."
 msgstr "Ungültige Seite"
 
-#: concrete/tools/conversations/add_message.php:61
+#: concrete/tools/conversations/add_message.php:84
 msgid "Invalid parent message."
 msgstr "Ungültige übergeordnete Nachricht"
 
 #: concrete/blocks/core_conversation_message/controller.php:49
-#: concrete/tools/conversations/add_message.php:66
+#: concrete/tools/conversations/add_message.php:89
 msgid "Banned words detected."
 msgstr "Es wurden zensierte Wörter festgestellt."
 
@@ -1626,7 +1643,7 @@ msgstr "Tabelle"
 #: concrete/blocks/feature/form.php:27 concrete/blocks/file/add.php:10
 #: concrete/blocks/image_slider/form_setup_html.php:251
 #: concrete/elements/conversation/display.php:104
-#: concrete/elements/conversation/message.php:113
+#: concrete/elements/conversation/message.php:117
 #: concrete/tools/i18n_redactor_js.php:17
 msgid "Link"
 msgstr "Link"
@@ -1780,7 +1797,7 @@ msgstr "Kopfzeile löschen"
 #: concrete/blocks/youtube/form_setup_html.php:16
 #: concrete/single_pages/dashboard/pages/feeds.php:78
 #: concrete/src/File/Search/ColumnSet/DefaultSet.php:27
-#: concrete/src/File/Version.php:476 concrete/tools/i18n_redactor_js.php:58
+#: concrete/src/File/Version.php:477 concrete/tools/i18n_redactor_js.php:58
 #: concrete/views/dialogs/file/properties.php:149
 #: concrete/views/dialogs/file/properties.php:244
 msgid "Title"
@@ -1926,7 +1943,7 @@ msgstr "Name (optional)"
 #: concrete/attributes/select/type_form.php:18
 #: concrete/blocks/form/form_setup_html.php:17
 #: concrete/controllers/single_page/dashboard/users/points/actions.php:33
-#: concrete/elements/conversation/message.php:42
+#: concrete/elements/conversation/message.php:46
 #: concrete/single_pages/dashboard/system/conversations/bannedwords.php:42
 #: concrete/single_pages/dashboard/system/conversations/bannedwords.php:64
 #: concrete/single_pages/dashboard/system/mail/importers.php:90
@@ -2073,7 +2090,7 @@ msgstr "Designvorlage"
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:208
 #: concrete/single_pages/dashboard/users/add_group.php:29
 #: concrete/single_pages/dashboard/users/groups.php:39
-#: concrete/src/File/Version.php:479
+#: concrete/src/File/Version.php:480
 #: concrete/tools/page_types/composer/form/edit_control.php:54
 #: concrete/views/dialogs/file/properties.php:155
 #: concrete/views/panels/details/page/attributes.php:58
@@ -4159,19 +4176,19 @@ msgstr "Nie"
 msgid "IP Blacklist settings saved."
 msgstr "Die Einstellungen der Blacklist für IP-Adressen wurden gespeichert."
 
-#: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:27
+#: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:26
 msgid "Languages refreshed."
 msgstr "Die Sprachen wurden aktualisiert."
 
-#: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:33
+#: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:32
 msgid "Translations exported to PO File and Reloaded."
 msgstr "Die Übersetzungen wurden in eine PO-Datei exportiert und neu geladen."
 
-#: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:39
+#: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:38
 msgid "Languages reset."
 msgstr "Die Sprachen wurden zurückgesetzt."
 
-#: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:58
+#: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:57
 msgid "Only the admin user may reset all strings."
 msgstr "Alle Zeichenketten können nur von Administratoren zurückgesetzt werden."
 
@@ -5001,12 +5018,6 @@ msgstr "Von: %s\nGesendet: %s\nBetreff: %s"
 msgid "You haven't written a message!"
 msgstr "Sie haben keine Nachricht eingegeben!"
 
-#: concrete/controllers/single_page/register.php:53
-msgid ""
-"Incorrect image validation code. Please check the image and re-enter the "
-"letters or numbers as necessary."
-msgstr "Falscher Code. Bitte prüfen Sie das Bild und geben Sie die Buchstaben und Zahlen wie dort zu sehen ein."
-
 #: concrete/controllers/single_page/register.php:60
 #, php-format
 msgid "The email address %s is already in use. Please choose another."
@@ -5122,7 +5133,7 @@ msgstr "Sich selbst (Override)"
 msgid "Search All Children?"
 msgstr "Alle Unterseiten durchsuchen"
 
-#: concrete/attributes/boolean/controller.php:41
+#: concrete/attributes/boolean/controller.php:52
 #: concrete/blocks/form/form_setup_html.php:68
 #: concrete/blocks/form/form_setup_html.php:156
 #: concrete/blocks/form/form_setup_html.php:227
@@ -5147,8 +5158,8 @@ msgstr "Alle Unterseiten durchsuchen"
 msgid "No"
 msgstr "Nein"
 
-#: concrete/attributes/boolean/controller.php:41
-#: concrete/attributes/boolean/controller.php:81
+#: concrete/attributes/boolean/controller.php:52
+#: concrete/attributes/boolean/controller.php:92
 #: concrete/blocks/form/form_setup_html.php:62
 #: concrete/blocks/form/form_setup_html.php:155
 #: concrete/blocks/form/form_setup_html.php:226
@@ -5899,7 +5910,7 @@ msgstr "Ungelesen"
 msgid "Replied"
 msgstr "Beantwortet"
 
-#: concrete/src/Page/Page.php:425
+#: concrete/src/Page/Page.php:427
 #: concrete/src/User/PrivateMessage/PrivateMessage.php:145
 msgid "Unknown User"
 msgstr "Unbekannter Benutzer"
@@ -6055,7 +6066,7 @@ msgstr "Anwendung"
 #: concrete/single_pages/dashboard/pages/themes/inspect.php:24
 #: concrete/single_pages/dashboard/reports/statistics.php:77
 #: concrete/single_pages/dashboard/system/backup/backup.php:101
-#: concrete/src/File/Type/Type.php:85 concrete/src/File/Version.php:473
+#: concrete/src/File/Type/Type.php:85 concrete/src/File/Version.php:474
 msgid "File"
 msgstr "Datei"
 
@@ -6103,18 +6114,18 @@ msgstr "Hinzugefügt"
 msgid "Active"
 msgstr "Aktiv"
 
-#: concrete/src/File/Version.php:359
+#: concrete/src/File/Version.php:360
 msgid "(Unknown)"
 msgstr "(unbekannt)"
 
 #: concrete/blocks/tags/controller.php:40
 #: concrete/elements/gathering/data_sources/flickr_feed/options.php:8
-#: concrete/src/File/Version.php:482
+#: concrete/src/File/Version.php:483
 #: concrete/views/dialogs/file/properties.php:162
 msgid "Tags"
 msgstr "Schlagwörter"
 
-#: concrete/src/File/Version.php:651
+#: concrete/src/File/Version.php:652
 msgid "Invalid dimensions."
 msgstr "Ungültige Abmessung"
 
@@ -6213,13 +6224,11 @@ msgstr "Diese Aktion ist hier nicht möglich."
 msgid "Captcha Code"
 msgstr "Ungültiger Sicherheitscode"
 
-#: concrete/src/Captcha/SecurimageController.php:38
-msgid "Click the image to see another captcha."
-msgstr "Bitte klicken Sie das Bild an, um einen neuen Sicherheitscode zu laden."
-
-#: concrete/src/Captcha/SecurimageController.php:44
-msgid "Please type the letters and numbers shown in the image."
-msgstr "Bitte die Buchstaben/Ziffern vom Bild im Feld eintragen."
+#: concrete/src/Captcha/SecurimageController.php:43
+msgid ""
+"Please type the letters and numbers shown in the image. Click the image to "
+"see another captcha."
+msgstr "Bitte die Zeichen von dem Bild eingeben. Um ein neues Captcha anzuzeigen, bitte das Bild anklicken."
 
 #: concrete/src/Tree/Node/Type/Category.php:24
 #: concrete/src/Tree/Node/Type/TopicCategory.php:22
@@ -6494,11 +6503,11 @@ msgstr "Beschreibung"
 msgid "You must specify a page description."
 msgstr "Bitte eine Seitenbeschreibung erstellen."
 
-#: concrete/src/Page/Type/Type.php:1005
+#: concrete/src/Page/Type/Type.php:1029
 msgid "You must choose a page template."
 msgstr "Sie müssen ein Seiten-Template auswählen."
 
-#: concrete/src/Page/Type/Type.php:1008
+#: concrete/src/Page/Type/Type.php:1032
 msgid "This page template is not a valid template for this page type."
 msgstr "Diese Seitenvorlage ist für den Seitentyp nicht zulässig."
 
@@ -6524,16 +6533,16 @@ msgstr "Alle Elemente"
 msgid "Featured Items"
 msgstr "Hervorgehoben"
 
-#: concrete/src/Page/Page.php:2156
+#: concrete/src/Page/Page.php:2158
 #, php-format
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "Die Seite \"%s\" im Pfad \"%s\" wurde gelöscht."
 
-#: concrete/src/Page/Page.php:2156 concrete/src/Page/Page.php:2220
+#: concrete/src/Page/Page.php:2158 concrete/src/Page/Page.php:2222
 msgid "Page Action"
 msgstr "Seitenaktion"
 
-#: concrete/src/Page/Page.php:2220
+#: concrete/src/Page/Page.php:2222
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "Seite\"%s\" im Pfad \"%s\" in den Papierkorb verschoben"
@@ -7164,7 +7173,7 @@ msgstr " mit den Hinweisen \"%s\""
 msgid "Originally requested by %s."
 msgstr "Ursprünglich von %s angefordert"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:135
+#: concrete/single_pages/dashboard/conversations/messages.php:134
 #: concrete/src/Workflow/Progress/Action/ApprovalAction.php:6
 #: concrete/views/panels/page/versions.php:32
 msgid "Approve"
@@ -7816,77 +7825,84 @@ msgstr "Ein Attribut mit der Kennung %s ist bereits vorhanden."
 msgid "Invalid form token. Please reload this form and submit again."
 msgstr "Ungültiger Formularschlüssel: Bitte laden Sie das Formular erneut und senden Sie es noch einmal ab."
 
-#: concrete/src/Conversation/Message/Message.php:144
+#: concrete/single_pages/dashboard/reports/statistics.php:110
+#: concrete/src/Conversation/Message/AuthorFormatter.php:27
+#: concrete/src/Conversation/Message/AuthorFormatter.php:45
+#: concrete/views/dialogs/file/properties.php:341
+msgid "Anonymous"
+msgstr "Anonym"
+
+#: concrete/src/Conversation/Message/Message.php:148
 msgid "This message has been deleted."
 msgstr "Diese Nachricht wurde gelöscht."
 
-#: concrete/src/Conversation/Message/Message.php:148
+#: concrete/src/Conversation/Message/Message.php:152
 msgid "This message has been flagged as spam."
 msgstr "Diese Nachricht wurde als Spam markiert."
 
-#: concrete/src/Conversation/Message/Message.php:152
+#: concrete/src/Conversation/Message/Message.php:156
 msgid "This message is queued for approval."
 msgstr "Die Freigabe für diese Nachricht steht noch aus."
 
 #: concrete/src/Conversation/Discussion/Discussion.php:35
-#: concrete/src/Conversation/Message/Message.php:180
-#: concrete/src/Conversation/Message/Message.php:219
-#: concrete/src/Conversation/Message/Message.php:221
+#: concrete/src/Conversation/Message/Message.php:184
 #: concrete/src/Conversation/Message/Message.php:223
 #: concrete/src/Conversation/Message/Message.php:225
 #: concrete/src/Conversation/Message/Message.php:227
 #: concrete/src/Conversation/Message/Message.php:229
 #: concrete/src/Conversation/Message/Message.php:231
+#: concrete/src/Conversation/Message/Message.php:233
+#: concrete/src/Conversation/Message/Message.php:235
 #, php-format
 msgctxt "Message posted date"
 msgid "Posted on %s"
 msgstr "Geschrieben am %s"
 
-#: concrete/src/Conversation/Message/Message.php:197
-#: concrete/src/Conversation/Message/Message.php:213
+#: concrete/src/Conversation/Message/Message.php:201
+#: concrete/src/Conversation/Message/Message.php:217
 #, php-format
 msgid "%d second ago"
 msgid_plural "%d seconds ago"
 msgstr[0] "vor %d Sekunde"
 msgstr[1] "vor %d Sekunden"
 
-#: concrete/src/Conversation/Message/Message.php:203
+#: concrete/src/Conversation/Message/Message.php:207
 #, php-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "vor %d Jahr"
 msgstr[1] "vor %d Jahren"
 
-#: concrete/src/Conversation/Message/Message.php:205
+#: concrete/src/Conversation/Message/Message.php:209
 #, php-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "vor %d Monat"
 msgstr[1] "vor %d Monaten"
 
-#: concrete/src/Conversation/Message/Message.php:207
+#: concrete/src/Conversation/Message/Message.php:211
 #, php-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "vor %d Tag"
 msgstr[1] "vor %d Tagen"
 
-#: concrete/src/Conversation/Message/Message.php:209
+#: concrete/src/Conversation/Message/Message.php:213
 #, php-format
 msgid "%d hour ago"
 msgid_plural "%d hours ago"
 msgstr[0] "vor %d Stunde"
 msgstr[1] "vor %d Stunden"
 
-#: concrete/src/Conversation/Message/Message.php:211
+#: concrete/src/Conversation/Message/Message.php:215
 #, php-format
 msgid "%d minute ago"
 msgid_plural "%d minutes ago"
 msgstr[0] "vor %d Minute"
 msgstr[1] "vor %d Minuten"
 
-#: concrete/src/Conversation/Message/Message.php:283
-#: concrete/src/Conversation/Message/Message.php:295
+#: concrete/src/Conversation/Message/Message.php:287
+#: concrete/src/Conversation/Message/Message.php:299
 msgid "Invalid flag type."
 msgstr "Ungültiger Markierungstyp."
 
@@ -8886,7 +8902,7 @@ msgstr "Bildervorschau"
 #: concrete/elements/gathering/templates/tile/image_byline_description_center/view.php:15
 #: concrete/elements/gathering/templates/tile/masthead_image_byline_left/view.php:16
 #: concrete/elements/gathering/templates/tile/masthead_image_byline_right/view.php:13
-#: concrete/single_pages/dashboard/conversations/messages.php:111
+#: concrete/single_pages/dashboard/conversations/messages.php:113
 #, php-format
 msgctxt "Authored"
 msgid "By %s"
@@ -9486,35 +9502,29 @@ msgstr "Erweiterte Blockeinstellungen"
 msgid "Block Permissions"
 msgstr "Blockberechtigungen"
 
-#: concrete/elements/conversation/message.php:35
-#: concrete/single_pages/dashboard/reports/statistics.php:110
-#: concrete/views/dialogs/file/properties.php:341
-msgid "Anonymous"
-msgstr "Anonym"
-
-#: concrete/elements/conversation/message.php:48
-#: concrete/elements/conversation/message/topic.php:41
+#: concrete/elements/conversation/message.php:52
+#: concrete/elements/conversation/message/topic.php:40
 msgid "Flag As Spam"
 msgstr "Als Spam markieren"
 
 #: concrete/elements/conversation/display.php:58
 #: concrete/elements/conversation/display.php:152
 #: concrete/elements/conversation/display.php:180
-#: concrete/elements/conversation/message.php:94
-#: concrete/elements/conversation/message/topic.php:45
+#: concrete/elements/conversation/message.php:98
+#: concrete/elements/conversation/message/topic.php:44
 #: concrete/single_pages/account/messages/inbox.php:46
 msgid "Reply"
 msgstr "Antwort"
 
-#: concrete/elements/conversation/message.php:107
+#: concrete/elements/conversation/message.php:111
 msgid "Share message URL on Twitter."
 msgstr "Nachrichten-URL auf Twitter teilen."
 
-#: concrete/elements/conversation/message.php:110
+#: concrete/elements/conversation/message.php:114
 msgid "Share message URL on Facebook."
 msgstr "Nachrichten-URL auf Facebook teilen."
 
-#: concrete/elements/conversation/message.php:113
+#: concrete/elements/conversation/message.php:117
 msgid "Get message URL."
 msgstr "Nachrichten-URL erstellen"
 
@@ -13406,66 +13416,44 @@ msgstr "Sie benötigen Zugriff auf die Sitemap in der Verwaltung, um Seiten such
 msgid "Posted"
 msgstr "Gepostet"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:97
+#: concrete/single_pages/dashboard/conversations/messages.php:100
 msgid "Message is flagged as spam."
 msgstr "Nachricht ist als Spam markiert"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:100
+#: concrete/single_pages/dashboard/conversations/messages.php:103
 msgid "Message is currently deleted."
 msgstr "Die Nachricht wird aktuell gelöscht."
 
-#: concrete/single_pages/dashboard/conversations/messages.php:103
+#: concrete/single_pages/dashboard/conversations/messages.php:106
 msgid "Message is currently pending approval."
 msgstr "Die Freigabe für die Nachricht steht noch aus."
 
-#. when the author of a message is anonymous
-#: concrete/single_pages/dashboard/conversations/messages.php:113
-msgid "By Anonymous"
-msgstr "Von anonym"
-
-#: concrete/single_pages/dashboard/conversations/messages.php:125
-msgid "View full message."
-msgstr "Gesamte Nachricht anzeigen"
-
-#: concrete/single_pages/dashboard/conversations/messages.php:125
-msgid "Minimize message"
-msgstr "Nachricht minimieren"
-
-#: concrete/single_pages/dashboard/conversations/messages.php:133
+#: concrete/single_pages/dashboard/conversations/messages.php:132
 msgid "Unapprove"
 msgstr "Ablehnen"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:140
+#: concrete/single_pages/dashboard/conversations/messages.php:139
 #: concrete/single_pages/dashboard/system/backup/backup.php:113
 msgid "Restore"
 msgstr "Wiederherstellen"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:146
+#: concrete/single_pages/dashboard/conversations/messages.php:145
 msgid "Unmark as spam"
 msgstr "Nicht mehr als Spam markieren"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:148
+#: concrete/single_pages/dashboard/conversations/messages.php:147
 msgid "Mark as spam"
 msgstr "Als Spam markieren"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:152
+#: concrete/single_pages/dashboard/conversations/messages.php:151
 msgid "Mark all user posts as spam"
 msgstr "Alle Benutzerposts als Spam markieren."
 
-#: concrete/single_pages/dashboard/conversations/messages.php:156
-#: concrete/single_pages/dashboard/users/search.php:27
-msgid "Deactivate User"
-msgstr "Benutzer deaktivieren"
-
-#: concrete/single_pages/dashboard/conversations/messages.php:158
-msgid "User deactivated"
-msgstr "Benutzer deaktiviert."
-
-#: concrete/single_pages/dashboard/conversations/messages.php:163
+#: concrete/single_pages/dashboard/conversations/messages.php:164
 msgid "Block user IP Address"
 msgstr "IP-Adresse des Benutzers blockieren."
 
-#: concrete/single_pages/dashboard/conversations/messages.php:165
+#: concrete/single_pages/dashboard/conversations/messages.php:166
 msgid "IP Banned"
 msgstr "IP gesperrt"
 
@@ -14196,6 +14184,10 @@ msgstr "Gruppe aktualisieren"
 #: concrete/single_pages/dashboard/users/search.php:21
 msgid "Mark Email as Valid"
 msgstr "E-Mail-Adresse als gültig markieren"
+
+#: concrete/single_pages/dashboard/users/search.php:27
+msgid "Deactivate User"
+msgstr "Benutzer deaktivieren"
 
 #: concrete/single_pages/dashboard/users/search.php:29
 msgid "Activate User"
