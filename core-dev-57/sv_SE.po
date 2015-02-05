@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-02-03 05:00+0000\n"
-"PO-Revision-Date: 2015-02-03 15:08+0000\n"
+"POT-Creation-Date: 2015-02-04 05:00+0000\n"
+"PO-Revision-Date: 2015-02-04 10:43+0000\n"
 "Last-Translator: Fredrik Lindau <fredrik@fxlindau.se>\n"
 "Language-Team: Swedish (Sweden) (http://www.transifex.com/projects/p/concrete5/language/sv_SE/)\n"
 "MIME-Version: 1.0\n"
@@ -354,6 +354,7 @@ msgstr "Ange din epostadress nedan. Vi kommer skicka instruktioner på hur du å
 
 #: concrete/authentication/concrete/forgot_password.php:17
 #: concrete/authentication/concrete/form.php:13
+#: concrete/blocks/core_conversation/form.php:243
 #: concrete/blocks/form/form_setup_html.php:126
 #: concrete/blocks/form/form_setup_html.php:196
 #: concrete/controllers/single_page/login.php:181
@@ -362,6 +363,7 @@ msgstr "Ange din epostadress nedan. Vi kommer skicka instruktioner på hur du å
 #: concrete/elements/permission/keys/edit_user_properties.php:68
 #: concrete/mail/user_register.php:16 concrete/mail/user_register.php:47
 #: concrete/mail/user_register_approval_required.php:45
+#: concrete/single_pages/dashboard/system/conversations/settings.php:51
 #: concrete/single_pages/dashboard/system/mail/importers.php:79
 #: concrete/single_pages/dashboard/users/add.php:34
 #: concrete/single_pages/dashboard/users/search.php:54
@@ -1330,7 +1332,7 @@ msgstr "Hur länge kommer denna behörighet att gälla?"
 #: concrete/single_pages/dashboard/system/conversations/bannedwords.php:63
 #: concrete/single_pages/dashboard/system/conversations/permissions.php:21
 #: concrete/single_pages/dashboard/system/conversations/points.php:25
-#: concrete/single_pages/dashboard/system/conversations/settings.php:44
+#: concrete/single_pages/dashboard/system/conversations/settings.php:57
 #: concrete/single_pages/dashboard/system/environment/debug.php:61
 #: concrete/single_pages/dashboard/system/environment/entities.php:30
 #: concrete/single_pages/dashboard/system/environment/logging.php:41
@@ -2884,7 +2886,7 @@ msgstr "Cacha under hur lång tid?"
 msgid "Default - %s minutes"
 msgstr "Förvald - %s minuter"
 
-#: concrete/blocks/core_conversation/form.php:166
+#: concrete/blocks/core_conversation/form.php:168
 #: concrete/elements/permission/keys/add_block.php:23
 #: concrete/elements/permission/keys/add_block.php:47
 #: concrete/elements/permission/keys/add_file.php:26
@@ -3405,7 +3407,7 @@ msgstr "Inte godkänd"
 msgid "Recent First"
 msgstr "Senaste först"
 
-#: concrete/blocks/core_conversation/form.php:57
+#: concrete/blocks/core_conversation/form.php:59
 #: concrete/controllers/single_page/dashboard/conversations/messages.php:34
 msgid "Earliest First"
 msgstr "Äldsta först"
@@ -4349,7 +4351,7 @@ msgstr "Den aktiva editorn har blivit uppdaterad."
 msgid "Invalid editor handle."
 msgstr "Ogiltigt handtag för editor."
 
-#: concrete/controllers/single_page/dashboard/system/conversations/settings.php:66
+#: concrete/controllers/single_page/dashboard/system/conversations/settings.php:69
 msgid "Updated conversations settings."
 msgstr "Uppdatera inställningar för konversationer."
 
@@ -5431,7 +5433,7 @@ msgstr "Senaste"
 msgid "Price"
 msgstr "Pris"
 
-#: concrete/blocks/core_conversation/form.php:68
+#: concrete/blocks/core_conversation/form.php:70
 #: concrete/themes/dashboard/marketplace.php:45
 msgid "Rating"
 msgstr "Betyg"
@@ -8716,15 +8718,15 @@ msgstr "Marginal och spaltutfyllnad"
 msgid "Padding"
 msgstr "Utfyllnad"
 
-#: concrete/blocks/core_conversation/form.php:100
-#: concrete/blocks/core_conversation/form.php:137
+#: concrete/blocks/core_conversation/form.php:102
+#: concrete/blocks/core_conversation/form.php:139
 #: concrete/elements/custom_style.php:186
 #: concrete/elements/custom_style.php:218
 msgid "Top"
 msgstr "Topp"
 
-#: concrete/blocks/core_conversation/form.php:105
-#: concrete/blocks/core_conversation/form.php:143
+#: concrete/blocks/core_conversation/form.php:107
+#: concrete/blocks/core_conversation/form.php:145
 #: concrete/elements/custom_style.php:200
 #: concrete/elements/custom_style.php:232
 msgid "Bottom"
@@ -10947,6 +10949,7 @@ msgid ""
 msgstr "\n\nDu måste klicka på följande länk för att aktivera ditt konto på %s:\n\n%s \n\nTack för ditt intresse för %s!\n\n"
 
 #: concrete/mail/block_guestbook_notification.php:4
+#: concrete/mail/new_conversation_message.php:4
 #, php-format
 msgid ""
 "\n"
@@ -10958,6 +10961,11 @@ msgid ""
 "%s \n"
 "\n"
 msgstr "\nDu har fått ett nytt inlägg i din gästbok på din concrete5 webbplats.\n\n%s\n\nFör att läsa detta inlägg, besök %s\n\n"
+
+#: concrete/mail/new_conversation_message.php:3
+#, php-format
+msgid "New Message on Conversation: %s"
+msgstr "Nytt meddelande i konversationen: %s"
 
 #: concrete/mail/block_form_submission.php:10
 #, php-format
@@ -11315,7 +11323,7 @@ msgstr "Objekt per sida"
 msgid "Enable New Topics"
 msgstr "Aktivera nya ämnen"
 
-#: concrete/blocks/core_conversation/form.php:128
+#: concrete/blocks/core_conversation/form.php:130
 #: concrete/blocks/core_gathering/form/posting.php:21
 #: concrete/blocks/discussion/form.php:55
 msgid "No, posting is disabled."
@@ -11360,7 +11368,7 @@ msgstr "Datakälla"
 msgid "Output"
 msgstr "Output"
 
-#: concrete/blocks/core_conversation/form.php:112
+#: concrete/blocks/core_conversation/form.php:114
 #: concrete/blocks/core_gathering/add.php:8
 #: concrete/blocks/core_gathering/edit.php:9
 #: concrete/blocks/discussion/form.php:42
@@ -11754,138 +11762,152 @@ msgstr "Du måste välja en giltig bildfil."
 msgid "Empty Image Block."
 msgstr "Tomt bildblock."
 
-#: concrete/blocks/core_conversation/form.php:39
+#: concrete/blocks/core_conversation/form.php:41
 #: concrete/blocks/discussion/form.php:20
 msgid "Message List"
 msgstr "Meddelandelista"
 
-#: concrete/blocks/core_conversation/form.php:41
+#: concrete/blocks/core_conversation/form.php:43
 msgid "Display Mode"
 msgstr "Visningsläge"
 
-#: concrete/blocks/core_conversation/form.php:45
+#: concrete/blocks/core_conversation/form.php:47
 msgid "Threaded"
 msgstr "Trådad"
 
-#: concrete/blocks/core_conversation/form.php:51
+#: concrete/blocks/core_conversation/form.php:53
 msgid "Flat"
 msgstr "Platt"
 
-#: concrete/blocks/core_conversation/form.php:56
+#: concrete/blocks/core_conversation/form.php:58
 #: concrete/blocks/discussion/form.php:22
 msgid "Ordering"
 msgstr "Sortering"
 
-#: concrete/blocks/core_conversation/form.php:57
+#: concrete/blocks/core_conversation/form.php:59
 msgid "Most Recent First"
 msgstr "Senaste först"
 
-#: concrete/blocks/core_conversation/form.php:57
+#: concrete/blocks/core_conversation/form.php:59
 msgid "Highest Rated"
 msgstr "Högst betyg"
 
-#: concrete/blocks/core_conversation/form.php:63
+#: concrete/blocks/core_conversation/form.php:65
 #: concrete/blocks/discussion/form.php:28
 msgid "Display Ordering Option in Page"
 msgstr "Visa alternativ för sortering på sidan"
 
-#: concrete/blocks/core_conversation/form.php:72
+#: concrete/blocks/core_conversation/form.php:74
 msgid "Enable Comment Rating"
 msgstr "Aktivera betygsättning av kommentarer"
 
-#: concrete/blocks/core_conversation/form.php:77
+#: concrete/blocks/core_conversation/form.php:79
 msgid "Paginate Message List"
 msgstr "Paginera meddelandelista"
 
-#: concrete/blocks/core_conversation/form.php:81
+#: concrete/blocks/core_conversation/form.php:83
 msgid "No, display all messages."
 msgstr "Nej, visa alla meddelanden."
 
-#: concrete/blocks/core_conversation/form.php:87
+#: concrete/blocks/core_conversation/form.php:89
 msgid "Yes, display only a sub-set of messages at a time."
 msgstr "Ja, visa endast en undergrupp av meddelanden åt gången."
 
-#: concrete/blocks/core_conversation/form.php:92
+#: concrete/blocks/core_conversation/form.php:94
 msgid "Messages Per Page"
 msgstr "Meddelanden per sida"
 
-#: concrete/blocks/core_conversation/form.php:96
+#: concrete/blocks/core_conversation/form.php:98
 msgid "Add New Messages"
 msgstr "Lägg till nya meddelanden"
 
-#: concrete/blocks/core_conversation/form.php:114
+#: concrete/blocks/core_conversation/form.php:116
 msgid "Add Message Label"
 msgstr "Lägg till meddelande-etikett "
 
-#: concrete/blocks/core_conversation/form.php:118
+#: concrete/blocks/core_conversation/form.php:120
 msgid "Enable Posting"
 msgstr "Aktivera postning"
 
-#: concrete/blocks/core_conversation/form.php:122
+#: concrete/blocks/core_conversation/form.php:124
 msgid "Yes, this conversation accepts messages and replies."
 msgstr "Ja, denna konversation accepterar meddelanden och svar."
 
-#: concrete/blocks/core_conversation/form.php:133
+#: concrete/blocks/core_conversation/form.php:135
 msgid "Display Posting Form"
 msgstr "Visa formulär för inlägg"
 
-#: concrete/blocks/core_conversation/form.php:149
+#: concrete/blocks/core_conversation/form.php:151
 #: concrete/blocks/rss_displayer/form_setup_html.php:18
 msgid "Date Format"
 msgstr "Datumformat"
 
-#: concrete/blocks/core_conversation/form.php:154
+#: concrete/blocks/core_conversation/form.php:156
 msgid "Use Site Default."
 msgstr "Använd förval för webbplatsen."
 
-#: concrete/blocks/core_conversation/form.php:160
+#: concrete/blocks/core_conversation/form.php:162
 msgid "Time elapsed since post."
 msgstr "Tid som förflutit sedan inlägget postades."
 
-#: concrete/blocks/core_conversation/form.php:173
+#: concrete/blocks/core_conversation/form.php:175
 msgid "File Attachment Management"
 msgstr "Hantera bifogade filer"
 
-#: concrete/blocks/core_conversation/form.php:174
+#: concrete/blocks/core_conversation/form.php:176
 msgid ""
 "Note: Entering values here will override global conversations file "
 "attachment settings for this block if you enable Attachment Overrides for "
 "this Conversation."
 msgstr "Notera: Att ange värden här kommer att åsidosätta de globala inställningarna för bifogade konversationsfiler för detta block om du aktiverar åsidosättning av bifogade filer för denna konversation."
 
-#: concrete/blocks/core_conversation/form.php:178
+#: concrete/blocks/core_conversation/form.php:180
 msgid "Enable Attachment Overrides"
 msgstr "Aktivera åsidosättning för bifogade filer"
 
-#: concrete/blocks/core_conversation/form.php:186
+#: concrete/blocks/core_conversation/form.php:188
 #: concrete/single_pages/dashboard/system/conversations/settings.php:11
 msgid "Enable Attachments"
 msgstr "Aktivera bilagor"
 
-#: concrete/blocks/core_conversation/form.php:191
+#: concrete/blocks/core_conversation/form.php:193
 #: concrete/single_pages/dashboard/system/conversations/settings.php:15
 msgid "Max Attachment Size for Guest Users. (MB)"
 msgstr "Max storlek på bilaga för gästanvändare. (MB)"
 
-#: concrete/blocks/core_conversation/form.php:197
+#: concrete/blocks/core_conversation/form.php:199
 #: concrete/single_pages/dashboard/system/conversations/settings.php:19
 msgid "Max Attachment Size for Registered Users. (MB)"
 msgstr "Max storlek på bilaga för registrerade användare. (MB)"
 
-#: concrete/blocks/core_conversation/form.php:203
+#: concrete/blocks/core_conversation/form.php:205
 #: concrete/single_pages/dashboard/system/conversations/settings.php:23
 msgid "Max Attachments Per Message for Guest Users."
 msgstr "Max antal bilagor per meddelande för gästanvändare."
 
-#: concrete/blocks/core_conversation/form.php:209
+#: concrete/blocks/core_conversation/form.php:211
 #: concrete/single_pages/dashboard/system/conversations/settings.php:27
 msgid "Max Attachments Per Message for Registered Users"
 msgstr "Max antal bilagor per meddelande för registrerade användare."
 
-#: concrete/blocks/core_conversation/form.php:215
+#: concrete/blocks/core_conversation/form.php:217
 #: concrete/single_pages/dashboard/system/conversations/settings.php:31
 msgid "Allowed File Extensions (Comma separated, no periods)."
 msgstr "Tillåtna filändelser (kommaseparerat, inga punkter)."
+
+#: concrete/blocks/core_conversation/form.php:227
+#: concrete/single_pages/dashboard/system/conversations/settings.php:43
+msgid "Notification"
+msgstr "Notifiering"
+
+#: concrete/blocks/core_conversation/form.php:231
+msgid "Override Global Settings"
+msgstr "Åsidosätt globala inställningar"
+
+#: concrete/blocks/core_conversation/form.php:238
+#: concrete/single_pages/dashboard/system/conversations/settings.php:47
+msgid "Send an email when a message is posted."
+msgstr "Skicka ett e-postmeddelande när ett meddelande postas."
 
 #: concrete/blocks/core_conversation/controller.php:33
 msgid "Displays conversations on a page."

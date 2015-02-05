@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-02-03 05:00+0000\n"
-"PO-Revision-Date: 2015-02-03 10:00+0000\n"
+"POT-Creation-Date: 2015-02-04 05:00+0000\n"
+"PO-Revision-Date: 2015-02-04 09:58+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Slovenian (Slovenia) (http://www.transifex.com/projects/p/concrete5/language/sl_SI/)\n"
 "MIME-Version: 1.0\n"
@@ -352,6 +352,7 @@ msgstr "Spodaj vnesite e-poštni naslov. Poslalli vam bomo navodila za ponastavi
 
 #: concrete/authentication/concrete/forgot_password.php:17
 #: concrete/authentication/concrete/form.php:13
+#: concrete/blocks/core_conversation/form.php:243
 #: concrete/blocks/form/form_setup_html.php:126
 #: concrete/blocks/form/form_setup_html.php:196
 #: concrete/controllers/single_page/login.php:181
@@ -360,6 +361,7 @@ msgstr "Spodaj vnesite e-poštni naslov. Poslalli vam bomo navodila za ponastavi
 #: concrete/elements/permission/keys/edit_user_properties.php:68
 #: concrete/mail/user_register.php:16 concrete/mail/user_register.php:47
 #: concrete/mail/user_register_approval_required.php:45
+#: concrete/single_pages/dashboard/system/conversations/settings.php:51
 #: concrete/single_pages/dashboard/system/mail/importers.php:79
 #: concrete/single_pages/dashboard/users/add.php:34
 #: concrete/single_pages/dashboard/users/search.php:54
@@ -1336,7 +1338,7 @@ msgstr "Kako dolgo bo to dovoljenje veljavno?"
 #: concrete/single_pages/dashboard/system/conversations/bannedwords.php:63
 #: concrete/single_pages/dashboard/system/conversations/permissions.php:21
 #: concrete/single_pages/dashboard/system/conversations/points.php:25
-#: concrete/single_pages/dashboard/system/conversations/settings.php:44
+#: concrete/single_pages/dashboard/system/conversations/settings.php:57
 #: concrete/single_pages/dashboard/system/environment/debug.php:61
 #: concrete/single_pages/dashboard/system/environment/entities.php:30
 #: concrete/single_pages/dashboard/system/environment/logging.php:41
@@ -2890,7 +2892,7 @@ msgstr "Kako dolgo naj predpomnim?"
 msgid "Default - %s minutes"
 msgstr "Privzeto - %s minut"
 
-#: concrete/blocks/core_conversation/form.php:166
+#: concrete/blocks/core_conversation/form.php:168
 #: concrete/elements/permission/keys/add_block.php:23
 #: concrete/elements/permission/keys/add_block.php:47
 #: concrete/elements/permission/keys/add_file.php:26
@@ -3413,7 +3415,7 @@ msgstr "Neodobreno"
 msgid "Recent First"
 msgstr "Zadnji najprej"
 
-#: concrete/blocks/core_conversation/form.php:57
+#: concrete/blocks/core_conversation/form.php:59
 #: concrete/controllers/single_page/dashboard/conversations/messages.php:34
 msgid "Earliest First"
 msgstr "Najnovešji najprej"
@@ -4357,7 +4359,7 @@ msgstr "Aktivni urejevalnik je bil posodobljen."
 msgid "Invalid editor handle."
 msgstr "Napačna oznaka urejevalnika."
 
-#: concrete/controllers/single_page/dashboard/system/conversations/settings.php:66
+#: concrete/controllers/single_page/dashboard/system/conversations/settings.php:69
 msgid "Updated conversations settings."
 msgstr ""
 
@@ -5443,7 +5445,7 @@ msgstr "Zadnji"
 msgid "Price"
 msgstr "Cena"
 
-#: concrete/blocks/core_conversation/form.php:68
+#: concrete/blocks/core_conversation/form.php:70
 #: concrete/themes/dashboard/marketplace.php:45
 msgid "Rating"
 msgstr "Lestvica"
@@ -8754,15 +8756,15 @@ msgstr "Robovi in odmiki od roba"
 msgid "Padding"
 msgstr "Odmik od vsebine"
 
-#: concrete/blocks/core_conversation/form.php:100
-#: concrete/blocks/core_conversation/form.php:137
+#: concrete/blocks/core_conversation/form.php:102
+#: concrete/blocks/core_conversation/form.php:139
 #: concrete/elements/custom_style.php:186
 #: concrete/elements/custom_style.php:218
 msgid "Top"
 msgstr "Zgoraj"
 
-#: concrete/blocks/core_conversation/form.php:105
-#: concrete/blocks/core_conversation/form.php:143
+#: concrete/blocks/core_conversation/form.php:107
+#: concrete/blocks/core_conversation/form.php:145
 #: concrete/elements/custom_style.php:200
 #: concrete/elements/custom_style.php:232
 msgid "Bottom"
@@ -10991,6 +10993,7 @@ msgid ""
 msgstr "\n\nZa aktivacijo vašega računa za: %s kliknite na naslednji URL\n\n%s \n\nHvala za zanimanje za %s\n\n"
 
 #: concrete/mail/block_guestbook_notification.php:4
+#: concrete/mail/new_conversation_message.php:4
 #, php-format
 msgid ""
 "\n"
@@ -11002,6 +11005,11 @@ msgid ""
 "%s \n"
 "\n"
 msgstr "\nV knjigi gostov imate na spletni strani concrete5 nov odziv.\n\n%s\n\nZa ogled te knjige gostov obiščite: \n%s \n\n"
+
+#: concrete/mail/new_conversation_message.php:3
+#, php-format
+msgid "New Message on Conversation: %s"
+msgstr ""
 
 #: concrete/mail/block_form_submission.php:10
 #, php-format
@@ -11359,7 +11367,7 @@ msgstr "Elementov na stran"
 msgid "Enable New Topics"
 msgstr "Omogoči novo naslovno temo"
 
-#: concrete/blocks/core_conversation/form.php:128
+#: concrete/blocks/core_conversation/form.php:130
 #: concrete/blocks/core_gathering/form/posting.php:21
 #: concrete/blocks/discussion/form.php:55
 msgid "No, posting is disabled."
@@ -11404,7 +11412,7 @@ msgstr "Podatkovni viri"
 msgid "Output"
 msgstr "Izhod"
 
-#: concrete/blocks/core_conversation/form.php:112
+#: concrete/blocks/core_conversation/form.php:114
 #: concrete/blocks/core_gathering/add.php:8
 #: concrete/blocks/core_gathering/edit.php:9
 #: concrete/blocks/discussion/form.php:42
@@ -11798,138 +11806,152 @@ msgstr "Določiti morate veljavno ime slikovne datoteke."
 msgid "Empty Image Block."
 msgstr "Prazen slikovni blok."
 
-#: concrete/blocks/core_conversation/form.php:39
+#: concrete/blocks/core_conversation/form.php:41
 #: concrete/blocks/discussion/form.php:20
 msgid "Message List"
 msgstr "Seznam sporočil"
 
-#: concrete/blocks/core_conversation/form.php:41
+#: concrete/blocks/core_conversation/form.php:43
 msgid "Display Mode"
 msgstr "Način prikaza"
 
-#: concrete/blocks/core_conversation/form.php:45
+#: concrete/blocks/core_conversation/form.php:47
 msgid "Threaded"
 msgstr "Navojno"
 
-#: concrete/blocks/core_conversation/form.php:51
+#: concrete/blocks/core_conversation/form.php:53
 msgid "Flat"
 msgstr "Ploščato"
 
-#: concrete/blocks/core_conversation/form.php:56
+#: concrete/blocks/core_conversation/form.php:58
 #: concrete/blocks/discussion/form.php:22
 msgid "Ordering"
 msgstr "Razvrščanje"
 
-#: concrete/blocks/core_conversation/form.php:57
+#: concrete/blocks/core_conversation/form.php:59
 msgid "Most Recent First"
 msgstr "Zadnji najprej"
 
-#: concrete/blocks/core_conversation/form.php:57
+#: concrete/blocks/core_conversation/form.php:59
 msgid "Highest Rated"
 msgstr "Najvišje rangirani"
 
-#: concrete/blocks/core_conversation/form.php:63
+#: concrete/blocks/core_conversation/form.php:65
 #: concrete/blocks/discussion/form.php:28
 msgid "Display Ordering Option in Page"
 msgstr "Pokaže možnost razvrščanja na strani"
 
-#: concrete/blocks/core_conversation/form.php:72
+#: concrete/blocks/core_conversation/form.php:74
 msgid "Enable Comment Rating"
 msgstr "Omogoči lestvico komentarja"
 
-#: concrete/blocks/core_conversation/form.php:77
+#: concrete/blocks/core_conversation/form.php:79
 msgid "Paginate Message List"
 msgstr "Oštevilči seznam sporočil"
 
-#: concrete/blocks/core_conversation/form.php:81
+#: concrete/blocks/core_conversation/form.php:83
 msgid "No, display all messages."
 msgstr "Ne, pokaži vsa sporočila."
 
-#: concrete/blocks/core_conversation/form.php:87
+#: concrete/blocks/core_conversation/form.php:89
 msgid "Yes, display only a sub-set of messages at a time."
 msgstr "Da, pokaži le del sporočil naenkrat."
 
-#: concrete/blocks/core_conversation/form.php:92
+#: concrete/blocks/core_conversation/form.php:94
 msgid "Messages Per Page"
 msgstr "Sporočil na stran"
 
-#: concrete/blocks/core_conversation/form.php:96
+#: concrete/blocks/core_conversation/form.php:98
 msgid "Add New Messages"
 msgstr "Dodaj nova sporočila"
 
-#: concrete/blocks/core_conversation/form.php:114
+#: concrete/blocks/core_conversation/form.php:116
 msgid "Add Message Label"
 msgstr "Dodaj oznako sporočila"
 
-#: concrete/blocks/core_conversation/form.php:118
+#: concrete/blocks/core_conversation/form.php:120
 msgid "Enable Posting"
 msgstr "Omogoči odzive"
 
-#: concrete/blocks/core_conversation/form.php:122
+#: concrete/blocks/core_conversation/form.php:124
 msgid "Yes, this conversation accepts messages and replies."
 msgstr "Da, ta pogovor sprejema sporočila in odgovore."
 
-#: concrete/blocks/core_conversation/form.php:133
+#: concrete/blocks/core_conversation/form.php:135
 msgid "Display Posting Form"
 msgstr "Pokaži obrazec za pošiljanje"
 
-#: concrete/blocks/core_conversation/form.php:149
+#: concrete/blocks/core_conversation/form.php:151
 #: concrete/blocks/rss_displayer/form_setup_html.php:18
 msgid "Date Format"
 msgstr "Oblika datuma"
 
-#: concrete/blocks/core_conversation/form.php:154
+#: concrete/blocks/core_conversation/form.php:156
 msgid "Use Site Default."
 msgstr "Uporabi privzeto za spletno stran."
 
-#: concrete/blocks/core_conversation/form.php:160
+#: concrete/blocks/core_conversation/form.php:162
 msgid "Time elapsed since post."
 msgstr "Pretečen čas od objave."
 
-#: concrete/blocks/core_conversation/form.php:173
+#: concrete/blocks/core_conversation/form.php:175
 msgid "File Attachment Management"
 msgstr "Upravljanje pripetih datotek"
 
-#: concrete/blocks/core_conversation/form.php:174
+#: concrete/blocks/core_conversation/form.php:176
 msgid ""
 "Note: Entering values here will override global conversations file "
 "attachment settings for this block if you enable Attachment Overrides for "
 "this Conversation."
 msgstr "Opomba: Vnos vrednosti tu bo preglasil splošne nastavitve za priponke pogovorom v tem bloku, če omogočite preglasitev priponk za ta pogovor."
 
-#: concrete/blocks/core_conversation/form.php:178
+#: concrete/blocks/core_conversation/form.php:180
 msgid "Enable Attachment Overrides"
 msgstr "Omogoči preglasitev priponk"
 
-#: concrete/blocks/core_conversation/form.php:186
+#: concrete/blocks/core_conversation/form.php:188
 #: concrete/single_pages/dashboard/system/conversations/settings.php:11
 msgid "Enable Attachments"
 msgstr "Omogoči priponke"
 
-#: concrete/blocks/core_conversation/form.php:191
+#: concrete/blocks/core_conversation/form.php:193
 #: concrete/single_pages/dashboard/system/conversations/settings.php:15
 msgid "Max Attachment Size for Guest Users. (MB)"
 msgstr "Največja velikost priponke za gostujoče uporabnike. (MB)"
 
-#: concrete/blocks/core_conversation/form.php:197
+#: concrete/blocks/core_conversation/form.php:199
 #: concrete/single_pages/dashboard/system/conversations/settings.php:19
 msgid "Max Attachment Size for Registered Users. (MB)"
 msgstr "Največja velikost priponk za registrirane uporabnike. (MB)"
 
-#: concrete/blocks/core_conversation/form.php:203
+#: concrete/blocks/core_conversation/form.php:205
 #: concrete/single_pages/dashboard/system/conversations/settings.php:23
 msgid "Max Attachments Per Message for Guest Users."
 msgstr "Največ priponk na sporočilo za gostujočega uporabnika."
 
-#: concrete/blocks/core_conversation/form.php:209
+#: concrete/blocks/core_conversation/form.php:211
 #: concrete/single_pages/dashboard/system/conversations/settings.php:27
 msgid "Max Attachments Per Message for Registered Users"
 msgstr "Največ priponk na sporočilo za registrirane uporabnike"
 
-#: concrete/blocks/core_conversation/form.php:215
+#: concrete/blocks/core_conversation/form.php:217
 #: concrete/single_pages/dashboard/system/conversations/settings.php:31
 msgid "Allowed File Extensions (Comma separated, no periods)."
 msgstr "Dovoljeni podaljški datotek (ločeno z vejico, brez pik)."
+
+#: concrete/blocks/core_conversation/form.php:227
+#: concrete/single_pages/dashboard/system/conversations/settings.php:43
+msgid "Notification"
+msgstr ""
+
+#: concrete/blocks/core_conversation/form.php:231
+msgid "Override Global Settings"
+msgstr ""
+
+#: concrete/blocks/core_conversation/form.php:238
+#: concrete/single_pages/dashboard/system/conversations/settings.php:47
+msgid "Send an email when a message is posted."
+msgstr ""
 
 #: concrete/blocks/core_conversation/controller.php:33
 msgid "Displays conversations on a page."

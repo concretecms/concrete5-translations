@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-02-03 05:00+0000\n"
-"PO-Revision-Date: 2015-02-03 10:00+0000\n"
+"POT-Creation-Date: 2015-02-04 05:00+0000\n"
+"PO-Revision-Date: 2015-02-04 09:58+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Russian (Russia) (http://www.transifex.com/projects/p/concrete5/language/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -355,6 +355,7 @@ msgstr "Введите ваш email адрес ниже. Мы отошлем в�
 
 #: concrete/authentication/concrete/forgot_password.php:17
 #: concrete/authentication/concrete/form.php:13
+#: concrete/blocks/core_conversation/form.php:243
 #: concrete/blocks/form/form_setup_html.php:126
 #: concrete/blocks/form/form_setup_html.php:196
 #: concrete/controllers/single_page/login.php:181
@@ -363,6 +364,7 @@ msgstr "Введите ваш email адрес ниже. Мы отошлем в�
 #: concrete/elements/permission/keys/edit_user_properties.php:68
 #: concrete/mail/user_register.php:16 concrete/mail/user_register.php:47
 #: concrete/mail/user_register_approval_required.php:45
+#: concrete/single_pages/dashboard/system/conversations/settings.php:51
 #: concrete/single_pages/dashboard/system/mail/importers.php:79
 #: concrete/single_pages/dashboard/users/add.php:34
 #: concrete/single_pages/dashboard/users/search.php:54
@@ -1335,7 +1337,7 @@ msgstr "Сколько времени будут эти права действ�
 #: concrete/single_pages/dashboard/system/conversations/bannedwords.php:63
 #: concrete/single_pages/dashboard/system/conversations/permissions.php:21
 #: concrete/single_pages/dashboard/system/conversations/points.php:25
-#: concrete/single_pages/dashboard/system/conversations/settings.php:44
+#: concrete/single_pages/dashboard/system/conversations/settings.php:57
 #: concrete/single_pages/dashboard/system/environment/debug.php:61
 #: concrete/single_pages/dashboard/system/environment/entities.php:30
 #: concrete/single_pages/dashboard/system/environment/logging.php:41
@@ -2889,7 +2891,7 @@ msgstr "Как долго кэшировать?"
 msgid "Default - %s minutes"
 msgstr "%s минут"
 
-#: concrete/blocks/core_conversation/form.php:166
+#: concrete/blocks/core_conversation/form.php:168
 #: concrete/elements/permission/keys/add_block.php:23
 #: concrete/elements/permission/keys/add_block.php:47
 #: concrete/elements/permission/keys/add_file.php:26
@@ -3411,7 +3413,7 @@ msgstr "Неодобренные"
 msgid "Recent First"
 msgstr "Самые новые в начале"
 
-#: concrete/blocks/core_conversation/form.php:57
+#: concrete/blocks/core_conversation/form.php:59
 #: concrete/controllers/single_page/dashboard/conversations/messages.php:34
 msgid "Earliest First"
 msgstr "Вначале старые"
@@ -4355,7 +4357,7 @@ msgstr "Используемый редактор изменен."
 msgid "Invalid editor handle."
 msgstr "Недопустимый дескриптор редактора."
 
-#: concrete/controllers/single_page/dashboard/system/conversations/settings.php:66
+#: concrete/controllers/single_page/dashboard/system/conversations/settings.php:69
 msgid "Updated conversations settings."
 msgstr "Настройки бесед обновлены."
 
@@ -5439,7 +5441,7 @@ msgstr "Недавние"
 msgid "Price"
 msgstr "Стоимость"
 
-#: concrete/blocks/core_conversation/form.php:68
+#: concrete/blocks/core_conversation/form.php:70
 #: concrete/themes/dashboard/marketplace.php:45
 msgid "Rating"
 msgstr "Рейтинг"
@@ -8737,15 +8739,15 @@ msgstr "Внешние и внутренние отступы"
 msgid "Padding"
 msgstr "Поля"
 
-#: concrete/blocks/core_conversation/form.php:100
-#: concrete/blocks/core_conversation/form.php:137
+#: concrete/blocks/core_conversation/form.php:102
+#: concrete/blocks/core_conversation/form.php:139
 #: concrete/elements/custom_style.php:186
 #: concrete/elements/custom_style.php:218
 msgid "Top"
 msgstr "Сверху"
 
-#: concrete/blocks/core_conversation/form.php:105
-#: concrete/blocks/core_conversation/form.php:143
+#: concrete/blocks/core_conversation/form.php:107
+#: concrete/blocks/core_conversation/form.php:145
 #: concrete/elements/custom_style.php:200
 #: concrete/elements/custom_style.php:232
 msgid "Bottom"
@@ -10971,6 +10973,7 @@ msgid ""
 msgstr "\n\nВам необходимо нажать на ссылку для активации учетной записи. %s:\n\n%s \n\nСпасибо за интерес к сайту %s\n\n"
 
 #: concrete/mail/block_guestbook_notification.php:4
+#: concrete/mail/new_conversation_message.php:4
 #, php-format
 msgid ""
 "\n"
@@ -10982,6 +10985,11 @@ msgid ""
 "%s \n"
 "\n"
 msgstr "\nЕсть новые сообщения в гостевой книге на Вашем сайте.\n\n%s\n\nДля просмотра сообщений посетите: \n%s \n\n"
+
+#: concrete/mail/new_conversation_message.php:3
+#, php-format
+msgid "New Message on Conversation: %s"
+msgstr ""
 
 #: concrete/mail/block_form_submission.php:10
 #, php-format
@@ -11339,7 +11347,7 @@ msgstr "Элементов на странице"
 msgid "Enable New Topics"
 msgstr "Разрешить новые темы"
 
-#: concrete/blocks/core_conversation/form.php:128
+#: concrete/blocks/core_conversation/form.php:130
 #: concrete/blocks/core_gathering/form/posting.php:21
 #: concrete/blocks/discussion/form.php:55
 msgid "No, posting is disabled."
@@ -11384,7 +11392,7 @@ msgstr "Источники данных"
 msgid "Output"
 msgstr "Вывод на странице"
 
-#: concrete/blocks/core_conversation/form.php:112
+#: concrete/blocks/core_conversation/form.php:114
 #: concrete/blocks/core_gathering/add.php:8
 #: concrete/blocks/core_gathering/edit.php:9
 #: concrete/blocks/discussion/form.php:42
@@ -11778,138 +11786,152 @@ msgstr "Необходимо указать допустимый файл изо
 msgid "Empty Image Block."
 msgstr "Пустой блок Изображение"
 
-#: concrete/blocks/core_conversation/form.php:39
+#: concrete/blocks/core_conversation/form.php:41
 #: concrete/blocks/discussion/form.php:20
 msgid "Message List"
 msgstr "Список сообщений"
 
-#: concrete/blocks/core_conversation/form.php:41
+#: concrete/blocks/core_conversation/form.php:43
 msgid "Display Mode"
 msgstr "Режим отображения"
 
-#: concrete/blocks/core_conversation/form.php:45
+#: concrete/blocks/core_conversation/form.php:47
 msgid "Threaded"
 msgstr "Древовидный"
 
-#: concrete/blocks/core_conversation/form.php:51
+#: concrete/blocks/core_conversation/form.php:53
 msgid "Flat"
 msgstr "Плоский"
 
-#: concrete/blocks/core_conversation/form.php:56
+#: concrete/blocks/core_conversation/form.php:58
 #: concrete/blocks/discussion/form.php:22
 msgid "Ordering"
 msgstr "Сортировка"
 
-#: concrete/blocks/core_conversation/form.php:57
+#: concrete/blocks/core_conversation/form.php:59
 msgid "Most Recent First"
 msgstr "Вначале новые"
 
-#: concrete/blocks/core_conversation/form.php:57
+#: concrete/blocks/core_conversation/form.php:59
 msgid "Highest Rated"
 msgstr "Рейтинговый"
 
-#: concrete/blocks/core_conversation/form.php:63
+#: concrete/blocks/core_conversation/form.php:65
 #: concrete/blocks/discussion/form.php:28
 msgid "Display Ordering Option in Page"
 msgstr "Отображать опцию для сортировки на странице"
 
-#: concrete/blocks/core_conversation/form.php:72
+#: concrete/blocks/core_conversation/form.php:74
 msgid "Enable Comment Rating"
 msgstr "Разрешить рейтинг комментариев"
 
-#: concrete/blocks/core_conversation/form.php:77
+#: concrete/blocks/core_conversation/form.php:79
 msgid "Paginate Message List"
 msgstr "Разбивка по страницам"
 
-#: concrete/blocks/core_conversation/form.php:81
+#: concrete/blocks/core_conversation/form.php:83
 msgid "No, display all messages."
 msgstr "Нет, отображать все сообщения."
 
-#: concrete/blocks/core_conversation/form.php:87
+#: concrete/blocks/core_conversation/form.php:89
 msgid "Yes, display only a sub-set of messages at a time."
 msgstr "Да, показывать указанное ниже число сообщений."
 
-#: concrete/blocks/core_conversation/form.php:92
+#: concrete/blocks/core_conversation/form.php:94
 msgid "Messages Per Page"
 msgstr "Сообщений на странице"
 
-#: concrete/blocks/core_conversation/form.php:96
+#: concrete/blocks/core_conversation/form.php:98
 msgid "Add New Messages"
 msgstr "Добавление сообщений"
 
-#: concrete/blocks/core_conversation/form.php:114
+#: concrete/blocks/core_conversation/form.php:116
 msgid "Add Message Label"
 msgstr "Метка для добавления сообщения"
 
-#: concrete/blocks/core_conversation/form.php:118
+#: concrete/blocks/core_conversation/form.php:120
 msgid "Enable Posting"
 msgstr "Разрешить публикацию сообщений"
 
-#: concrete/blocks/core_conversation/form.php:122
+#: concrete/blocks/core_conversation/form.php:124
 msgid "Yes, this conversation accepts messages and replies."
 msgstr "Да, в этой беседе разрешена публикация сообщений и ответов."
 
-#: concrete/blocks/core_conversation/form.php:133
+#: concrete/blocks/core_conversation/form.php:135
 msgid "Display Posting Form"
 msgstr "Отображать форму для публикации"
 
-#: concrete/blocks/core_conversation/form.php:149
+#: concrete/blocks/core_conversation/form.php:151
 #: concrete/blocks/rss_displayer/form_setup_html.php:18
 msgid "Date Format"
 msgstr "Формат даты"
 
-#: concrete/blocks/core_conversation/form.php:154
+#: concrete/blocks/core_conversation/form.php:156
 msgid "Use Site Default."
 msgstr "Использовать умолчания для сайта."
 
-#: concrete/blocks/core_conversation/form.php:160
+#: concrete/blocks/core_conversation/form.php:162
 msgid "Time elapsed since post."
 msgstr "Время, прошедшее с момента публикации."
 
-#: concrete/blocks/core_conversation/form.php:173
+#: concrete/blocks/core_conversation/form.php:175
 msgid "File Attachment Management"
 msgstr "Управление вложениями"
 
-#: concrete/blocks/core_conversation/form.php:174
+#: concrete/blocks/core_conversation/form.php:176
 msgid ""
 "Note: Entering values here will override global conversations file "
 "attachment settings for this block if you enable Attachment Overrides for "
 "this Conversation."
 msgstr "Примечание: введенные значения будут переопределять глобальные настройки для вложений в данном блоке, если вы включите переопределение вложений для данной беседы."
 
-#: concrete/blocks/core_conversation/form.php:178
+#: concrete/blocks/core_conversation/form.php:180
 msgid "Enable Attachment Overrides"
 msgstr "Переопределить настройки вложений"
 
-#: concrete/blocks/core_conversation/form.php:186
+#: concrete/blocks/core_conversation/form.php:188
 #: concrete/single_pages/dashboard/system/conversations/settings.php:11
 msgid "Enable Attachments"
 msgstr "Разрешить прикрепление файлов"
 
-#: concrete/blocks/core_conversation/form.php:191
+#: concrete/blocks/core_conversation/form.php:193
 #: concrete/single_pages/dashboard/system/conversations/settings.php:15
 msgid "Max Attachment Size for Guest Users. (MB)"
 msgstr "Максимальный размер загружаемого файла для гостей. (MB)"
 
-#: concrete/blocks/core_conversation/form.php:197
+#: concrete/blocks/core_conversation/form.php:199
 #: concrete/single_pages/dashboard/system/conversations/settings.php:19
 msgid "Max Attachment Size for Registered Users. (MB)"
 msgstr "Максимальный размер загружаемого файла для зарегистрированных пользователей. (MB)"
 
-#: concrete/blocks/core_conversation/form.php:203
+#: concrete/blocks/core_conversation/form.php:205
 #: concrete/single_pages/dashboard/system/conversations/settings.php:23
 msgid "Max Attachments Per Message for Guest Users."
 msgstr "Максимальное число вложений в сообщении от гостя."
 
-#: concrete/blocks/core_conversation/form.php:209
+#: concrete/blocks/core_conversation/form.php:211
 #: concrete/single_pages/dashboard/system/conversations/settings.php:27
 msgid "Max Attachments Per Message for Registered Users"
 msgstr "Максимальное число вложений в сообщении от зарегистрированного пользователя."
 
-#: concrete/blocks/core_conversation/form.php:215
+#: concrete/blocks/core_conversation/form.php:217
 #: concrete/single_pages/dashboard/system/conversations/settings.php:31
 msgid "Allowed File Extensions (Comma separated, no periods)."
 msgstr "Допустимые расширения файлов (разделяйте запятыми, без пробелов)."
+
+#: concrete/blocks/core_conversation/form.php:227
+#: concrete/single_pages/dashboard/system/conversations/settings.php:43
+msgid "Notification"
+msgstr ""
+
+#: concrete/blocks/core_conversation/form.php:231
+msgid "Override Global Settings"
+msgstr ""
+
+#: concrete/blocks/core_conversation/form.php:238
+#: concrete/single_pages/dashboard/system/conversations/settings.php:47
+msgid "Send an email when a message is posted."
+msgstr ""
 
 #: concrete/blocks/core_conversation/controller.php:33
 msgid "Displays conversations on a page."

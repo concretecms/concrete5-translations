@@ -5,9 +5,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-02-03 05:00+0000\n"
-"PO-Revision-Date: 2015-02-03 10:00+0000\n"
-"Last-Translator: Michele Locati <michele@locati.it>\n"
+"POT-Creation-Date: 2015-02-04 05:00+0000\n"
+"PO-Revision-Date: 2015-02-04 15:29+0000\n"
+"Last-Translator: Adem Coşkuner <info@ademcoskuner.com>\n"
 "Language-Team: Turkish (Turkey) (http://www.transifex.com/projects/p/concrete5/language/tr_TR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -352,6 +352,7 @@ msgstr "Parola sıfırlama talimatlarını göndereceğimiz e-posta adresinizi a
 
 #: concrete/authentication/concrete/forgot_password.php:17
 #: concrete/authentication/concrete/form.php:13
+#: concrete/blocks/core_conversation/form.php:243
 #: concrete/blocks/form/form_setup_html.php:126
 #: concrete/blocks/form/form_setup_html.php:196
 #: concrete/controllers/single_page/login.php:181
@@ -360,6 +361,7 @@ msgstr "Parola sıfırlama talimatlarını göndereceğimiz e-posta adresinizi a
 #: concrete/elements/permission/keys/edit_user_properties.php:68
 #: concrete/mail/user_register.php:16 concrete/mail/user_register.php:47
 #: concrete/mail/user_register_approval_required.php:45
+#: concrete/single_pages/dashboard/system/conversations/settings.php:51
 #: concrete/single_pages/dashboard/system/mail/importers.php:79
 #: concrete/single_pages/dashboard/users/add.php:34
 #: concrete/single_pages/dashboard/users/search.php:54
@@ -1324,7 +1326,7 @@ msgstr "Bu izin ne kadar süre geçerli kalacak?"
 #: concrete/single_pages/dashboard/system/conversations/bannedwords.php:63
 #: concrete/single_pages/dashboard/system/conversations/permissions.php:21
 #: concrete/single_pages/dashboard/system/conversations/points.php:25
-#: concrete/single_pages/dashboard/system/conversations/settings.php:44
+#: concrete/single_pages/dashboard/system/conversations/settings.php:57
 #: concrete/single_pages/dashboard/system/environment/debug.php:61
 #: concrete/single_pages/dashboard/system/environment/entities.php:30
 #: concrete/single_pages/dashboard/system/environment/logging.php:41
@@ -1583,11 +1585,11 @@ msgstr "Bu konuşmaya mesaj ekleme izniniz yok."
 
 #: concrete/tools/conversations/add_message.php:31
 msgid "You must enter your name to post this message."
-msgstr ""
+msgstr "Bu mesajı göndermek için adınızı girmelisiniz."
 
 #: concrete/tools/conversations/add_message.php:36
 msgid "You must enter a valid email address to post this message."
-msgstr ""
+msgstr "Bu mesajı göndermek için geçerli bir email adresi girmelisiniz."
 
 #: concrete/controllers/single_page/register.php:53
 #: concrete/tools/conversations/add_message.php:43
@@ -2878,7 +2880,7 @@ msgstr "Önbellek Süresi"
 msgid "Default - %s minutes"
 msgstr "Varsayılan - %s dakika"
 
-#: concrete/blocks/core_conversation/form.php:166
+#: concrete/blocks/core_conversation/form.php:168
 #: concrete/elements/permission/keys/add_block.php:23
 #: concrete/elements/permission/keys/add_block.php:47
 #: concrete/elements/permission/keys/add_file.php:26
@@ -3398,7 +3400,7 @@ msgstr "Onaylanmamış"
 msgid "Recent First"
 msgstr "En Yeni İlk Sırada"
 
-#: concrete/blocks/core_conversation/form.php:57
+#: concrete/blocks/core_conversation/form.php:59
 #: concrete/controllers/single_page/dashboard/conversations/messages.php:34
 msgid "Earliest First"
 msgstr "İlk Eklenen İlk Sırada"
@@ -4342,7 +4344,7 @@ msgstr "Aktif editör güncellendi."
 msgid "Invalid editor handle."
 msgstr "Geçersiz editör işleci."
 
-#: concrete/controllers/single_page/dashboard/system/conversations/settings.php:66
+#: concrete/controllers/single_page/dashboard/system/conversations/settings.php:69
 msgid "Updated conversations settings."
 msgstr "Konuşma ayarları güncellendi."
 
@@ -5422,7 +5424,7 @@ msgstr "En Son"
 msgid "Price"
 msgstr "Fiyat"
 
-#: concrete/blocks/core_conversation/form.php:68
+#: concrete/blocks/core_conversation/form.php:70
 #: concrete/themes/dashboard/marketplace.php:45
 msgid "Rating"
 msgstr "Reyting"
@@ -6214,7 +6216,7 @@ msgstr "Güvenlik Kodu"
 msgid ""
 "Please type the letters and numbers shown in the image. Click the image to "
 "see another captcha."
-msgstr ""
+msgstr "Lütfen resimde gösterilen harfleri ve numaraları girin. Başka bir güvenlik kodu görmek için resme tıklayın."
 
 #: concrete/src/Tree/Node/Type/Category.php:24
 #: concrete/src/Tree/Node/Type/TopicCategory.php:22
@@ -8694,15 +8696,15 @@ msgstr "Kenar Boşluğu ve Dolgu"
 msgid "Padding"
 msgstr "Doldurma"
 
-#: concrete/blocks/core_conversation/form.php:100
-#: concrete/blocks/core_conversation/form.php:137
+#: concrete/blocks/core_conversation/form.php:102
+#: concrete/blocks/core_conversation/form.php:139
 #: concrete/elements/custom_style.php:186
 #: concrete/elements/custom_style.php:218
 msgid "Top"
 msgstr "Üst"
 
-#: concrete/blocks/core_conversation/form.php:105
-#: concrete/blocks/core_conversation/form.php:143
+#: concrete/blocks/core_conversation/form.php:107
+#: concrete/blocks/core_conversation/form.php:145
 #: concrete/elements/custom_style.php:200
 #: concrete/elements/custom_style.php:232
 msgid "Bottom"
@@ -10922,6 +10924,7 @@ msgid ""
 msgstr "\n\n%s için hesabınızı etkinleştirmeniz için aşağıdaki bağlantıya tıklamanız gerekir:\n\n%s \n\n%s ile ilgilendiğiniz için teşekkür ederiz\n\n"
 
 #: concrete/mail/block_guestbook_notification.php:4
+#: concrete/mail/new_conversation_message.php:4
 #, php-format
 msgid ""
 "\n"
@@ -10933,6 +10936,11 @@ msgid ""
 "%s \n"
 "\n"
 msgstr "\nconcrete5 web siteniz için yeni bir yanıt alındı.\n\n%s\n\nZiyaretçi defterini görmek için, ziyaret edin: \n%s \n\n"
+
+#: concrete/mail/new_conversation_message.php:3
+#, php-format
+msgid "New Message on Conversation: %s"
+msgstr "Konuşmaya Yeni Bir Mesaj Yazıldı: %s"
 
 #: concrete/mail/block_form_submission.php:10
 #, php-format
@@ -11290,7 +11298,7 @@ msgstr "Sayfa Başına Öğe"
 msgid "Enable New Topics"
 msgstr "Yeni Konuları Etkinleştir"
 
-#: concrete/blocks/core_conversation/form.php:128
+#: concrete/blocks/core_conversation/form.php:130
 #: concrete/blocks/core_gathering/form/posting.php:21
 #: concrete/blocks/discussion/form.php:55
 msgid "No, posting is disabled."
@@ -11335,7 +11343,7 @@ msgstr "Veri Kaynakları"
 msgid "Output"
 msgstr "Çıktı"
 
-#: concrete/blocks/core_conversation/form.php:112
+#: concrete/blocks/core_conversation/form.php:114
 #: concrete/blocks/core_gathering/add.php:8
 #: concrete/blocks/core_gathering/edit.php:9
 #: concrete/blocks/discussion/form.php:42
@@ -11729,138 +11737,152 @@ msgstr "Geçerli bir resim dosyası belirtmelisiniz."
 msgid "Empty Image Block."
 msgstr "Boş Resim Bloğu."
 
-#: concrete/blocks/core_conversation/form.php:39
+#: concrete/blocks/core_conversation/form.php:41
 #: concrete/blocks/discussion/form.php:20
 msgid "Message List"
 msgstr "Mesaj Listesi"
 
-#: concrete/blocks/core_conversation/form.php:41
+#: concrete/blocks/core_conversation/form.php:43
 msgid "Display Mode"
 msgstr "Görüntüleme Modu"
 
-#: concrete/blocks/core_conversation/form.php:45
+#: concrete/blocks/core_conversation/form.php:47
 msgid "Threaded"
 msgstr "Grup(Karşılıklı)"
 
-#: concrete/blocks/core_conversation/form.php:51
+#: concrete/blocks/core_conversation/form.php:53
 msgid "Flat"
 msgstr "Düz"
 
-#: concrete/blocks/core_conversation/form.php:56
+#: concrete/blocks/core_conversation/form.php:58
 #: concrete/blocks/discussion/form.php:22
 msgid "Ordering"
 msgstr "Sıralama"
 
-#: concrete/blocks/core_conversation/form.php:57
+#: concrete/blocks/core_conversation/form.php:59
 msgid "Most Recent First"
 msgstr "En Yeni Üstte"
 
-#: concrete/blocks/core_conversation/form.php:57
+#: concrete/blocks/core_conversation/form.php:59
 msgid "Highest Rated"
 msgstr "En Çok Oylanan"
 
-#: concrete/blocks/core_conversation/form.php:63
+#: concrete/blocks/core_conversation/form.php:65
 #: concrete/blocks/discussion/form.php:28
 msgid "Display Ordering Option in Page"
 msgstr "Sayfada Sıralama Seçeneğini Göster"
 
-#: concrete/blocks/core_conversation/form.php:72
+#: concrete/blocks/core_conversation/form.php:74
 msgid "Enable Comment Rating"
 msgstr "Yorum Puanlamasını Etkinleştir"
 
-#: concrete/blocks/core_conversation/form.php:77
+#: concrete/blocks/core_conversation/form.php:79
 msgid "Paginate Message List"
 msgstr "Mesaj Listesini Sayfalandır"
 
-#: concrete/blocks/core_conversation/form.php:81
+#: concrete/blocks/core_conversation/form.php:83
 msgid "No, display all messages."
 msgstr "Hayır, tüm mesajları göster."
 
-#: concrete/blocks/core_conversation/form.php:87
+#: concrete/blocks/core_conversation/form.php:89
 msgid "Yes, display only a sub-set of messages at a time."
 msgstr "Evet, bir zamandaki mesajların yalnızca bir alt kümesini göster. "
 
-#: concrete/blocks/core_conversation/form.php:92
+#: concrete/blocks/core_conversation/form.php:94
 msgid "Messages Per Page"
 msgstr "Sayfa Başına Mesaj"
 
-#: concrete/blocks/core_conversation/form.php:96
+#: concrete/blocks/core_conversation/form.php:98
 msgid "Add New Messages"
 msgstr "Yeni Mesaj Ekle"
 
-#: concrete/blocks/core_conversation/form.php:114
+#: concrete/blocks/core_conversation/form.php:116
 msgid "Add Message Label"
 msgstr "Mesaj Etiketi Ekle"
 
-#: concrete/blocks/core_conversation/form.php:118
+#: concrete/blocks/core_conversation/form.php:120
 msgid "Enable Posting"
 msgstr "Gönderimi Etkinleştir"
 
-#: concrete/blocks/core_conversation/form.php:122
+#: concrete/blocks/core_conversation/form.php:124
 msgid "Yes, this conversation accepts messages and replies."
 msgstr "Evet, bu konuşma mesajları ve yanıtları kabul eder."
 
-#: concrete/blocks/core_conversation/form.php:133
+#: concrete/blocks/core_conversation/form.php:135
 msgid "Display Posting Form"
 msgstr "Gönderim Formunu Göster"
 
-#: concrete/blocks/core_conversation/form.php:149
+#: concrete/blocks/core_conversation/form.php:151
 #: concrete/blocks/rss_displayer/form_setup_html.php:18
 msgid "Date Format"
 msgstr "Tarih Biçimi"
 
-#: concrete/blocks/core_conversation/form.php:154
+#: concrete/blocks/core_conversation/form.php:156
 msgid "Use Site Default."
 msgstr "Site Varsayılanını Kullan."
 
-#: concrete/blocks/core_conversation/form.php:160
+#: concrete/blocks/core_conversation/form.php:162
 msgid "Time elapsed since post."
 msgstr "Gönderimden bu yana geçen süre."
 
-#: concrete/blocks/core_conversation/form.php:173
+#: concrete/blocks/core_conversation/form.php:175
 msgid "File Attachment Management"
 msgstr "Dosya Eki Yönetimi"
 
-#: concrete/blocks/core_conversation/form.php:174
+#: concrete/blocks/core_conversation/form.php:176
 msgid ""
 "Note: Entering values here will override global conversations file "
 "attachment settings for this block if you enable Attachment Overrides for "
 "this Conversation."
 msgstr "Not: Eğer Eklenti Düzenlemelerini etkinleştirdiyseniz ve buraya bir değer girerseniz bu blok için global konuşma dosya eki ayarları geçersiz kılınacaktır."
 
-#: concrete/blocks/core_conversation/form.php:178
+#: concrete/blocks/core_conversation/form.php:180
 msgid "Enable Attachment Overrides"
 msgstr "Eklenti Düzenlemelerini Etkinleştir"
 
-#: concrete/blocks/core_conversation/form.php:186
+#: concrete/blocks/core_conversation/form.php:188
 #: concrete/single_pages/dashboard/system/conversations/settings.php:11
 msgid "Enable Attachments"
 msgstr "Eklentileri Etkinleştir"
 
-#: concrete/blocks/core_conversation/form.php:191
+#: concrete/blocks/core_conversation/form.php:193
 #: concrete/single_pages/dashboard/system/conversations/settings.php:15
 msgid "Max Attachment Size for Guest Users. (MB)"
 msgstr "Misafir Kullanıcılar İçin Maksimum Ek Boyutu. (MB)"
 
-#: concrete/blocks/core_conversation/form.php:197
+#: concrete/blocks/core_conversation/form.php:199
 #: concrete/single_pages/dashboard/system/conversations/settings.php:19
 msgid "Max Attachment Size for Registered Users. (MB)"
 msgstr "Kayıtlı Kullanıcılar İçin Maksimum Ek Boyutu. (MB)"
 
-#: concrete/blocks/core_conversation/form.php:203
+#: concrete/blocks/core_conversation/form.php:205
 #: concrete/single_pages/dashboard/system/conversations/settings.php:23
 msgid "Max Attachments Per Message for Guest Users."
 msgstr "Misafir Kullanıcılar İçin Mesaj Başına Maksimum Eklenti Sayısı."
 
-#: concrete/blocks/core_conversation/form.php:209
+#: concrete/blocks/core_conversation/form.php:211
 #: concrete/single_pages/dashboard/system/conversations/settings.php:27
 msgid "Max Attachments Per Message for Registered Users"
 msgstr "Kayıtlı Kullanıcılar İçin Mesaj Başına Maksimum Eklenti Sayısı."
 
-#: concrete/blocks/core_conversation/form.php:215
+#: concrete/blocks/core_conversation/form.php:217
 #: concrete/single_pages/dashboard/system/conversations/settings.php:31
 msgid "Allowed File Extensions (Comma separated, no periods)."
 msgstr "İzin Verilen Dosya Uzantıları (ayırmak için virgül kullanın, nokta kullanmayın)"
+
+#: concrete/blocks/core_conversation/form.php:227
+#: concrete/single_pages/dashboard/system/conversations/settings.php:43
+msgid "Notification"
+msgstr "Bildirim"
+
+#: concrete/blocks/core_conversation/form.php:231
+msgid "Override Global Settings"
+msgstr "Genel Ayarları Geçersiz Kıl"
+
+#: concrete/blocks/core_conversation/form.php:238
+#: concrete/single_pages/dashboard/system/conversations/settings.php:47
+msgid "Send an email when a message is posted."
+msgstr "Mesaj gönderildiğinde email gönder."
 
 #: concrete/blocks/core_conversation/controller.php:33
 msgid "Displays conversations on a page."
