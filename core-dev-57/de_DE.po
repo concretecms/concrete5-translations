@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-02-04 05:00+0000\n"
-"PO-Revision-Date: 2015-02-04 10:43+0000\n"
+"POT-Creation-Date: 2015-02-05 05:00+0000\n"
+"PO-Revision-Date: 2015-02-05 10:16+0000\n"
 "Last-Translator: Torsten Silbermann <mail@tsilbermann.de>\n"
 "Language-Team: German (Germany) (http://www.transifex.com/projects/p/concrete5/language/de_DE/)\n"
 "MIME-Version: 1.0\n"
@@ -6635,22 +6635,27 @@ msgstr "Ungültige Blocktyp-Kennung: %s"
 msgid "Unable to create backup file: %s"
 msgstr "Sicherungsdatei: %s konnte nicht erstellt werden"
 
-#: concrete/src/Antispam/Service.php:107
+#: concrete/src/Antispam/Service.php:62
+#, php-format
+msgid "Content %s (author %s, %s) flagged as spam by user %s"
+msgstr "Der Inhalt %s (Autor %s, %s) wurde vom Benutzer %s als Spam markiert."
+
+#: concrete/src/Antispam/Service.php:115
 #, php-format
 msgid "URL: %s"
 msgstr "URL: %s"
 
-#: concrete/src/Antispam/Service.php:111
+#: concrete/src/Antispam/Service.php:119
 #, php-format
 msgid "User: %s (ID %s)"
 msgstr "Benutzer: %s (ID: %s)"
 
-#: concrete/src/Antispam/Service.php:114
+#: concrete/src/Antispam/Service.php:122
 #, php-format
 msgid "Type: %s"
 msgstr "Typ: %s"
 
-#: concrete/src/Antispam/Service.php:121
+#: concrete/src/Antispam/Service.php:129
 msgid "spam"
 msgstr "Spam"
 
@@ -10950,24 +10955,24 @@ msgid ""
 "\n"
 msgstr "\n\nSie müssen auf die folgende URL klicken, um Ihr Konto für %s zu aktivieren:\n\n%s \n\nDanke für Ihr Interesse an %s\n\n"
 
-#: concrete/mail/block_guestbook_notification.php:4
-#: concrete/mail/new_conversation_message.php:4
-#, php-format
-msgid ""
-"\n"
-"There is a new reply on a guestbook in your concrete5 website.\n"
-"\n"
-"%s\n"
-"\n"
-"To view this guestbook, visit: \n"
-"%s \n"
-"\n"
-msgstr "\nEs gibt einen neuen Kommentar im Gästebuch.\n\n%s\n\nUm das Gästebuch zu sehen, besuchen Sie: \n%s \n\n"
-
 #: concrete/mail/new_conversation_message.php:3
 #, php-format
 msgid "New Message on Conversation: %s"
 msgstr "Neue Nachricht in der Konversation: %s"
+
+#: concrete/mail/new_conversation_message.php:4
+#, php-format
+msgid ""
+"\n"
+"%s has posted a new message to the conversation \"%s\":\n"
+"\n"
+"%s\n"
+"\n"
+"You can view the whole conversation at\n"
+"\n"
+"%s\n"
+"\n"
+msgstr "\n%s hat in der Konversation \"%s\" eine neue Nachricht gepostet:\n\n%s\n\nDie gesamte Konversation ist einsehbar unter:\n\n%s\n\n"
 
 #: concrete/mail/block_form_submission.php:10
 #, php-format

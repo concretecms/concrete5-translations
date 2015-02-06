@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-02-04 05:00+0000\n"
-"PO-Revision-Date: 2015-02-05 04:40+0000\n"
+"POT-Creation-Date: 2015-02-05 05:00+0000\n"
+"PO-Revision-Date: 2015-02-05 10:16+0000\n"
 "Last-Translator: Takuro Hishikawa <hishikawa@concrete5.co.jp>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/projects/p/concrete5/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
@@ -1595,7 +1595,7 @@ msgstr "メッセージを送信するには、お名前を入力してくださ
 
 #: concrete/tools/conversations/add_message.php:36
 msgid "You must enter a valid email address to post this message."
-msgstr ""
+msgstr "メッセージを送信するには、正しいメールアドレスを入力してください。"
 
 #: concrete/controllers/single_page/register.php:53
 #: concrete/tools/conversations/add_message.php:43
@@ -6222,7 +6222,7 @@ msgstr "Captcha認証コード"
 msgid ""
 "Please type the letters and numbers shown in the image. Click the image to "
 "see another captcha."
-msgstr ""
+msgstr "画像に表示されている文字や数字を入力してください。画像をクリックすると他のCAPTCHAに切り替わります。"
 
 #: concrete/src/Tree/Node/Type/Category.php:24
 #: concrete/src/Tree/Node/Type/TopicCategory.php:22
@@ -6627,22 +6627,27 @@ msgstr "不正なブロックタイプのハンドル : %s"
 msgid "Unable to create backup file: %s"
 msgstr "バックアップファイルを作成できません: %s"
 
-#: concrete/src/Antispam/Service.php:107
+#: concrete/src/Antispam/Service.php:62
+#, php-format
+msgid "Content %s (author %s, %s) flagged as spam by user %s"
+msgstr "コンテンツ %s (投稿者 %s, %s) はユーザー %s によってスパムフラグが立てられました"
+
+#: concrete/src/Antispam/Service.php:115
 #, php-format
 msgid "URL: %s"
 msgstr "URL: %s"
 
-#: concrete/src/Antispam/Service.php:111
+#: concrete/src/Antispam/Service.php:119
 #, php-format
 msgid "User: %s (ID %s)"
 msgstr "ユーザー: %s (ID %s)"
 
-#: concrete/src/Antispam/Service.php:114
+#: concrete/src/Antispam/Service.php:122
 #, php-format
 msgid "Type: %s"
 msgstr "Type: %s"
 
-#: concrete/src/Antispam/Service.php:121
+#: concrete/src/Antispam/Service.php:129
 msgid "spam"
 msgstr "スパム"
 
@@ -9162,31 +9167,31 @@ msgstr "最終の"
 
 #: concrete/elements/permission/duration.php:164
 msgid "Sunday"
-msgstr ""
+msgstr "日曜日"
 
 #: concrete/elements/permission/duration.php:165
 msgid "Monday"
-msgstr ""
+msgstr "月曜日"
 
 #: concrete/elements/permission/duration.php:166
 msgid "Tuesday"
-msgstr ""
+msgstr "火曜日"
 
 #: concrete/elements/permission/duration.php:167
 msgid "Wednesday"
-msgstr ""
+msgstr "水曜日"
 
 #: concrete/elements/permission/duration.php:168
 msgid "Thursday"
-msgstr ""
+msgstr "木曜日"
 
 #: concrete/elements/permission/duration.php:169
 msgid "Friday"
-msgstr ""
+msgstr "金曜日"
 
 #: concrete/elements/permission/duration.php:170
 msgid "Saturday"
-msgstr ""
+msgstr "土曜日"
 
 #: concrete/elements/permission/duration.php:186
 msgid "months"
@@ -10929,24 +10934,24 @@ msgid ""
 "\n"
 msgstr "\n\n次のURLにアクセスして、 %s のあなたのアカウントを有効にしてください：\n\n%s\n\n%s\n\n"
 
-#: concrete/mail/block_guestbook_notification.php:4
+#: concrete/mail/new_conversation_message.php:3
+#, php-format
+msgid "New Message on Conversation: %s"
+msgstr "コメント欄に新着メッセージがあります: %s"
+
 #: concrete/mail/new_conversation_message.php:4
 #, php-format
 msgid ""
 "\n"
-"There is a new reply on a guestbook in your concrete5 website.\n"
+"%s has posted a new message to the conversation \"%s\":\n"
 "\n"
 "%s\n"
 "\n"
-"To view this guestbook, visit: \n"
-"%s \n"
+"You can view the whole conversation at\n"
 "\n"
-msgstr "\nお使いのconcrete5ウェブサイトに新しいコメントがありました。\n\n%s\n\nゲストブックを確認するには、こちらにアクセス: \n%s \n\n"
-
-#: concrete/mail/new_conversation_message.php:3
-#, php-format
-msgid "New Message on Conversation: %s"
-msgstr ""
+"%s\n"
+"\n"
+msgstr "\n%s がコメント欄 \"%s\" に新しいメッセージを投稿しました:\n\n%s\n\nコメント欄全体はこちらで確認できます\n\n%s\n"
 
 #: concrete/mail/block_form_submission.php:10
 #, php-format
@@ -11879,16 +11884,16 @@ msgstr "許可されるファイル拡張子。(カンマで区切る。ピリ�
 #: concrete/blocks/core_conversation/form.php:227
 #: concrete/single_pages/dashboard/system/conversations/settings.php:43
 msgid "Notification"
-msgstr ""
+msgstr "通知"
 
 #: concrete/blocks/core_conversation/form.php:231
 msgid "Override Global Settings"
-msgstr ""
+msgstr "共通設定を上書き"
 
 #: concrete/blocks/core_conversation/form.php:238
 #: concrete/single_pages/dashboard/system/conversations/settings.php:47
 msgid "Send an email when a message is posted."
-msgstr ""
+msgstr "メッセージが投稿された際にメールを送信する"
 
 #: concrete/blocks/core_conversation/controller.php:33
 msgid "Displays conversations on a page."

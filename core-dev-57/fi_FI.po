@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-02-04 05:00+0000\n"
-"PO-Revision-Date: 2015-02-04 12:42+0000\n"
+"POT-Creation-Date: 2015-02-05 05:00+0000\n"
+"PO-Revision-Date: 2015-02-05 13:30+0000\n"
 "Last-Translator: Heikki Ylipaavalniemi\n"
 "Language-Team: Finnish (Finland) (http://www.transifex.com/projects/p/concrete5/language/fi_FI/)\n"
 "MIME-Version: 1.0\n"
@@ -6631,22 +6631,27 @@ msgstr "Virheellinen lohkotyypin tunniste: %s"
 msgid "Unable to create backup file: %s"
 msgstr "Varmuuskopiotiedostoa ei voitu luoda: %s"
 
-#: concrete/src/Antispam/Service.php:107
+#: concrete/src/Antispam/Service.php:62
+#, php-format
+msgid "Content %s (author %s, %s) flagged as spam by user %s"
+msgstr "Sisällön %s (tekijä %s, %s) merkitsi roskapostiksi käyttäjä %s"
+
+#: concrete/src/Antispam/Service.php:115
 #, php-format
 msgid "URL: %s"
 msgstr "URL: %s"
 
-#: concrete/src/Antispam/Service.php:111
+#: concrete/src/Antispam/Service.php:119
 #, php-format
 msgid "User: %s (ID %s)"
 msgstr "Käyttäjä: %s (Käyttäjätunnus %s)"
 
-#: concrete/src/Antispam/Service.php:114
+#: concrete/src/Antispam/Service.php:122
 #, php-format
 msgid "Type: %s"
 msgstr "Tyyppi: %s"
 
-#: concrete/src/Antispam/Service.php:121
+#: concrete/src/Antispam/Service.php:129
 msgid "spam"
 msgstr "roskaposti"
 
@@ -10946,24 +10951,24 @@ msgid ""
 "\n"
 msgstr "\n\nSinun täytyy napsauttaa seuraavaa URL-osoitetta aktivoidaksesi tilisi %s:\n\n%s \n\nKiitämme kiinnostuksestasi sivustoa %s kohtaan.\n\n"
 
-#: concrete/mail/block_guestbook_notification.php:4
-#: concrete/mail/new_conversation_message.php:4
-#, php-format
-msgid ""
-"\n"
-"There is a new reply on a guestbook in your concrete5 website.\n"
-"\n"
-"%s\n"
-"\n"
-"To view this guestbook, visit: \n"
-"%s \n"
-"\n"
-msgstr "\nConcrete 5 -sivustosi vieraskirjassa on uusi vastaus.\n\n%s\n\nLukeaksesi vieraskirjaa, vieraile: \n%s \n\n"
-
 #: concrete/mail/new_conversation_message.php:3
 #, php-format
 msgid "New Message on Conversation: %s"
 msgstr "Uusi viesti keskustelussa: %s"
+
+#: concrete/mail/new_conversation_message.php:4
+#, php-format
+msgid ""
+"\n"
+"%s has posted a new message to the conversation \"%s\":\n"
+"\n"
+"%s\n"
+"\n"
+"You can view the whole conversation at\n"
+"\n"
+"%s\n"
+"\n"
+msgstr "\n%s lähetti uuden viestin keskusteluun \"%s\":\n\n%s\n\nVoit katsoa koko keskustelun osoitteessa\n\n%s\n\n"
 
 #: concrete/mail/block_form_submission.php:10
 #, php-format
