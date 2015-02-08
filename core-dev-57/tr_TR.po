@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-02-06 05:00+0000\n"
-"PO-Revision-Date: 2015-02-06 16:16+0000\n"
+"POT-Creation-Date: 2015-02-07 05:00+0000\n"
+"PO-Revision-Date: 2015-02-07 21:10+0000\n"
 "Last-Translator: Adem Coşkuner <info@ademcoskuner.com>\n"
 "Language-Team: Turkish (Turkey) (http://www.transifex.com/projects/p/concrete5/language/tr_TR/)\n"
 "MIME-Version: 1.0\n"
@@ -985,7 +985,7 @@ msgstr "Aşağıdaki dosyaları silmek istediğinizden emin misiniz?"
 #: concrete/elements/page_controls_footer.php:130
 #: concrete/elements/pages/search.php:32
 #: concrete/single_pages/account/messages/inbox.php:51
-#: concrete/single_pages/dashboard/conversations/messages.php:141
+#: concrete/single_pages/dashboard/conversations/messages.php:118
 #: concrete/single_pages/dashboard/pages/types/view.php:74
 #: concrete/single_pages/dashboard/pages/types/view.php:125
 #: concrete/single_pages/dashboard/reports/forms.php:141
@@ -1105,9 +1105,9 @@ msgstr "Düz Görünüm"
 #: concrete/elements/group/search.php:27 concrete/elements/pages/search.php:39
 #: concrete/elements/pages/search.php:49 concrete/elements/users/search.php:49
 #: concrete/elements/users/search.php:80
-#: concrete/single_pages/dashboard/conversations/messages.php:17
 #: concrete/single_pages/dashboard/conversations/messages.php:22
-#: concrete/single_pages/dashboard/conversations/messages.php:46
+#: concrete/single_pages/dashboard/conversations/messages.php:27
+#: concrete/single_pages/dashboard/conversations/messages.php:51
 #: concrete/single_pages/dashboard/files/sets.php:130
 #: concrete/single_pages/dashboard/files/sets.php:135
 #: concrete/single_pages/dashboard/files/sets.php:153
@@ -1505,13 +1505,17 @@ msgstr "Emin misiniz?"
 msgid "Attach Files"
 msgstr "Dosya Ekle"
 
-#: concrete/tools/conversations/add_message.php:75
+#: concrete/tools/conversations/delete_message.php:18
+msgid "Message deleted successfully."
+msgstr "Mesaj silindi."
+
+#: concrete/tools/conversations/add_message.php:77
 #: concrete/tools/conversations/update_message.php:14
 msgid "Invalid conversation post token."
 msgstr "Geçersiz konuşma gönderisi anahtarı."
 
 #: concrete/blocks/core_conversation_message/controller.php:43
-#: concrete/tools/conversations/add_message.php:78
+#: concrete/tools/conversations/add_message.php:80
 #: concrete/tools/conversations/update_message.php:17
 msgid "Your message cannot be empty."
 msgstr "Mesajınız boş olamaz."
@@ -1524,12 +1528,12 @@ msgstr "Geçersiz mesaj nesnesi."
 msgid "You do not have access to edit this message."
 msgstr "Bu mesajı düzenleme izniniz yok."
 
-#: concrete/tools/conversations/add_message.php:63
+#: concrete/tools/conversations/add_message.php:65
 #: concrete/tools/conversations/update_message.php:38
 msgid "You do not have permission to add attachments."
 msgstr "Eklenti ekleme izniniz yok."
 
-#: concrete/tools/conversations/add_message.php:67
+#: concrete/tools/conversations/add_message.php:69
 #: concrete/tools/conversations/update_message.php:42
 msgid "You have too many attachments."
 msgstr "Çok fazla eklentiniz var."
@@ -1571,44 +1575,48 @@ msgstr "Ek limitine ulaşıldı"
 msgid "Invalid File Extension"
 msgstr "Geçersiz Dosya Uzantısı"
 
-#: concrete/tools/conversations/add_message.php:13
+#: concrete/tools/conversations/flag_message.php:31
+msgid "Message flagged successfully."
+msgstr "Mesaj işaretlendi."
+
+#: concrete/tools/conversations/add_message.php:15
 msgid "Invalid Block Object."
 msgstr "Geçersiz Blok Nesnesi."
 
-#: concrete/tools/conversations/add_message.php:20
+#: concrete/tools/conversations/add_message.php:22
 msgid "Invalid conversation."
 msgstr "Geçersiz konuşma."
 
-#: concrete/tools/conversations/add_message.php:24
+#: concrete/tools/conversations/add_message.php:26
 msgid "You do not have access to add a message to this conversation."
 msgstr "Bu konuşmaya mesaj ekleme izniniz yok."
 
-#: concrete/tools/conversations/add_message.php:31
+#: concrete/tools/conversations/add_message.php:33
 msgid "You must enter your name to post this message."
 msgstr "Bu mesajı göndermek için adınızı girmelisiniz."
 
-#: concrete/tools/conversations/add_message.php:36
+#: concrete/tools/conversations/add_message.php:38
 msgid "You must enter a valid email address to post this message."
 msgstr "Bu mesajı göndermek için geçerli bir email adresi girmelisiniz."
 
 #: concrete/controllers/single_page/register.php:53
-#: concrete/tools/conversations/add_message.php:43
+#: concrete/tools/conversations/add_message.php:45
 msgid ""
 "Incorrect image validation code. Please check the image and re-enter the "
 "letters or numbers as necessary."
 msgstr "Doğrulama kodu geçersiz. Resmi kontrol edin ve harfleri/rakamları gerektiği şekilde tekrar girin."
 
-#: concrete/tools/conversations/add_message.php:53
-#: concrete/tools/conversations/add_message.php:57
+#: concrete/tools/conversations/add_message.php:55
+#: concrete/tools/conversations/add_message.php:59
 msgid "Invalid Page."
 msgstr "Geçersiz Sayfa."
 
-#: concrete/tools/conversations/add_message.php:84
+#: concrete/tools/conversations/add_message.php:86
 msgid "Invalid parent message."
 msgstr "Geçersiz üst mesaj."
 
 #: concrete/blocks/core_conversation_message/controller.php:49
-#: concrete/tools/conversations/add_message.php:89
+#: concrete/tools/conversations/add_message.php:91
 msgid "Banned words detected."
 msgstr "Yasaklı kelime tespit edildi."
 
@@ -1892,7 +1900,7 @@ msgstr "Metni her iki yana yasla"
 msgid "Insert Horizontal Rule"
 msgstr "Yatay Çizgi Ekle"
 
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:23
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:45
 #: concrete/tools/i18n_redactor_js.php:80
 msgid "Deleted"
 msgstr "Silindi"
@@ -2742,6 +2750,7 @@ msgstr "Bir dosya seçmelisiniz."
 msgid "Rescan"
 msgstr "Yeniden Tara"
 
+#: concrete/elements/permission/keys/add_conversation_message.php:18
 #: concrete/tools/i18n_js.php:205
 msgid "Pending"
 msgstr "Bekliyor"
@@ -3030,6 +3039,7 @@ msgid "Date Added"
 msgstr "Eklenme Tarihi"
 
 #: concrete/single_pages/dashboard/composer/drafts.php:15
+#: concrete/single_pages/dashboard/conversations/messages.php:64
 #: concrete/src/File/Search/ColumnSet/Available.php:9
 #: concrete/src/Page/Search/ColumnSet/DefaultSet.php:38
 #: concrete/tools/pages/delete.php:94
@@ -3386,74 +3396,59 @@ msgstr "Dosya Özelliği Güncellendi."
 msgid "Sort order saved"
 msgstr "Sıralama düzeni kaydedildi"
 
-#: concrete/controllers/search/pages.php:230
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:22
-msgid "Approved"
-msgstr "Onaylanmış"
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:42
+msgid "** Show All"
+msgstr "** Tümünü Göster"
 
 #: concrete/controllers/search/pages.php:229
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:24
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:43
 msgid "Unapproved"
 msgstr "Onaylanmamış"
 
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:33
+#: concrete/controllers/search/pages.php:230
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:44
+#: concrete/elements/permission/keys/add_conversation_message.php:18
+msgid "Approved"
+msgstr "Onaylanmış"
+
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:54
 msgid "Recent First"
 msgstr "En Yeni İlk Sırada"
 
 #: concrete/blocks/core_conversation/form.php:59
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:34
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:55
 msgid "Earliest First"
 msgstr "İlk Eklenen İlk Sırada"
 
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:106
-msgid "Message successfully unapproved."
-msgstr "Mesaj onayı başarıyla kaldırıldı."
-
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:110
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:128
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:146
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:164
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:183
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:202
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:232
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:256
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:275
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:111
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:131
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:152
 msgid "Invalid message"
 msgstr "Geçersiz mesaj"
 
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:124
-msgid "Message successfully approved."
-msgstr "Mesaj başarıyla onaylandı."
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:115
+msgid "You do not have permission to approve this message."
+msgstr "Bu mesajı onaylama izniniz yok."
+
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:121
+msgid "Message approved."
+msgstr "Mesaj onaylandı."
+
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:135
+msgid "You do not have permission to flag this message."
+msgstr "Bu mesajı işaretleme izniniz yok."
 
 #: concrete/controllers/single_page/dashboard/conversations/messages.php:142
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:160
-msgid "Message successfully deleted."
-msgstr "Mesaj başarıyla silindi."
+msgid "Message unflagged."
+msgstr "Mesajın işareti kaldırıldı."
 
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:179
-msgid "Message successfully marked as spam."
-msgstr "Mesaj başarıyla spam olarak işaretlendi."
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:156
+msgid "You do not have permission to restore this message."
+msgstr "Bu mesajı restore etme izniniz yok."
 
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:198
-msgid "Message successfully unmarked as spam."
-msgstr "Mesajdan spam işareti başarıyla kaldırıldı."
-
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:224
-msgid "All user messages marked as spam."
-msgstr "Tüm kullanıcı mesajları spam olarak işaretlendi."
-
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:228
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:252
-msgid "Invalid User"
-msgstr "Geçersiz Kullanıcı"
-
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:248
-msgid "User deactivated."
-msgstr "Kullanıcı devre dışı bırakıldı."
-
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:271
-msgid "IP successfully banned."
-msgstr "IP başarıyla engellendi."
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:162
+msgid "Message restored."
+msgstr "Mesaj restore edildi."
 
 #: concrete/controllers/single_page/dashboard/extend/connect.php:22
 msgid ""
@@ -6292,11 +6287,11 @@ msgstr "Sonraki"
 msgid "Previous"
 msgstr "Önceki"
 
-#: concrete/src/Permission/Key/Key.php:23
+#: concrete/src/Permission/Key/Key.php:27
 msgid "Included"
 msgstr "Dahil Edilen"
 
-#: concrete/src/Permission/Key/Key.php:24
+#: concrete/src/Permission/Key/Key.php:28
 msgid "Excluded"
 msgstr "Hariç Tutulan"
 
@@ -6920,7 +6915,7 @@ msgid "Won a Badge"
 msgstr "Bir Rozet Kazandınız"
 
 #: concrete/single_pages/dashboard/system/basics/icons.php:78
-#: concrete/src/Form/Service/Widget/Color.php:37
+#: concrete/src/Form/Service/Widget/Color.php:38
 #: concrete/src/StyleCustomizer/Style/ColorStyle.php:43
 msgid "Clear Color Selection"
 msgstr "Renk Seçimini Temizle"
@@ -7166,7 +7161,7 @@ msgstr " \"%s\" yorumla birlikte"
 msgid "Originally requested by %s."
 msgstr "Aslen %s tarafından istendi."
 
-#: concrete/single_pages/dashboard/conversations/messages.php:134
+#: concrete/single_pages/dashboard/conversations/messages.php:110
 #: concrete/src/Workflow/Progress/Action/ApprovalAction.php:6
 #: concrete/views/panels/page/versions.php:32
 msgid "Approve"
@@ -8192,7 +8187,7 @@ msgid "Edit Properties"
 msgstr "Özellikleri Düzenle"
 
 #: concrete/elements/files/search.php:31
-#: concrete/single_pages/dashboard/conversations/messages.php:21
+#: concrete/single_pages/dashboard/conversations/messages.php:26
 #: concrete/single_pages/dashboard/reports/logs.php:24
 #: concrete/single_pages/dashboard/system/multilingual/page_report.php:17
 #: concrete/single_pages/dashboard/system/seo/bulk.php:63
@@ -8885,7 +8880,7 @@ msgstr "Resmi Önizle"
 #: concrete/elements/gathering/templates/tile/image_byline_description_center/view.php:15
 #: concrete/elements/gathering/templates/tile/masthead_image_byline_left/view.php:16
 #: concrete/elements/gathering/templates/tile/masthead_image_byline_right/view.php:13
-#: concrete/single_pages/dashboard/conversations/messages.php:113
+#: concrete/single_pages/dashboard/conversations/messages.php:133
 #, php-format
 msgctxt "Authored"
 msgid "By %s"
@@ -9072,6 +9067,14 @@ msgstr "Kim neyi atayamaz?"
 #: concrete/elements/permission/keys/assign_user_groups.php:57
 msgid "No Groups"
 msgstr "Hiçbir Grup"
+
+#: concrete/elements/permission/keys/add_conversation_message.php:9
+msgid "New Message Approval"
+msgstr "Yeni Mesaj Onayı"
+
+#: concrete/elements/permission/keys/add_conversation_message.php:24
+msgid "No access entities selected."
+msgstr "Hiçbir erişim girdisi seçilmedi."
 
 #: concrete/elements/permission/keys/edit_user_properties.php:33
 #: concrete/elements/permission/keys/edit_user_properties.php:70
@@ -9511,6 +9514,10 @@ msgstr "Mesaj adresini Facebook'ta paylaş."
 msgid "Get message URL."
 msgstr "Mesaj adresini al."
 
+#: concrete/elements/conversation/message/pending.php:26
+msgid "This message is pending approval by a moderator."
+msgstr "Bu mesaj bir moderatör tarafından onaylanmayı bekliyor."
+
 #: concrete/blocks/form/mini_survey.php:169
 #: concrete/blocks/form/mini_survey.php:171 concrete/blocks/form/view.php:75
 #: concrete/elements/conversation/display.php:30
@@ -9876,7 +9883,7 @@ msgstr "Sütun Sıralaması"
 msgid "Click and drag to change column order."
 msgstr "Sütun sıralamasını değiştirmek için tıklayıp sürükleyin."
 
-#: concrete/single_pages/dashboard/conversations/messages.php:38
+#: concrete/single_pages/dashboard/conversations/messages.php:43
 #: concrete/views/dialogs/search/customize.php:49
 msgid "Sort By"
 msgstr "Şuna Göre Sırala"
@@ -11685,7 +11692,7 @@ msgstr "Konunuz boş olamaz."
 
 #: concrete/blocks/core_conversation_message/composer.php:19
 #: concrete/single_pages/account/messages/inbox.php:173
-#: concrete/single_pages/dashboard/conversations/messages.php:58
+#: concrete/single_pages/dashboard/conversations/messages.php:65
 #: concrete/single_pages/dashboard/reports/logs.php:67
 msgid "Message"
 msgstr "Mesaj"
@@ -11889,7 +11896,7 @@ msgstr "Genel Ayarları Geçersiz Kıl"
 msgid "Send an email when a message is posted."
 msgstr "Mesaj gönderildiğinde email gönder."
 
-#: concrete/blocks/core_conversation/controller.php:33
+#: concrete/blocks/core_conversation/controller.php:32
 msgid "Displays conversations on a page."
 msgstr "Konuşmaları bir sayfada göster."
 
@@ -12937,7 +12944,7 @@ msgstr "Konu Listesi"
 msgid "Topics"
 msgstr "Konular"
 
-#: concrete/blocks/topic_list/view.php:44
+#: concrete/blocks/topic_list/view.php:43
 msgid "No topics."
 msgstr "Hiçbir konu bulunamadı."
 
@@ -13410,50 +13417,50 @@ msgstr "Tüm sayfalar kontrol paneli erişim izniniz yok."
 msgid "You must have access to the dashboard sitemap to search pages."
 msgstr "Sayfaları aramak için tüm sayfalar kontrol paneline erişim izniniz olmalıdır."
 
-#: concrete/single_pages/dashboard/conversations/messages.php:59
+#: concrete/single_pages/dashboard/conversations/messages.php:35
+msgid "Filter By"
+msgstr "Filtrele"
+
+#: concrete/single_pages/dashboard/conversations/messages.php:63
 msgid "Posted"
 msgstr "Gönderilme"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:100
+#: concrete/single_pages/account/messages/inbox.php:86
+#: concrete/single_pages/dashboard/conversations/messages.php:66
+msgid "Status"
+msgstr "Durum"
+
+#: concrete/single_pages/dashboard/conversations/messages.php:103
+msgid "View Conversation"
+msgstr "Konuşmayı Görüntüle"
+
+#: concrete/single_pages/dashboard/conversations/messages.php:114
+msgid "Flag as Spam"
+msgstr "Spam Olarak İşaretle"
+
+#: concrete/single_pages/dashboard/conversations/messages.php:122
+msgid "Un-Flag As Spam"
+msgstr "Spam İşaretini Kaldır"
+
+#: concrete/single_pages/dashboard/conversations/messages.php:126
+msgid "Un-Delete Message"
+msgstr "Mesajın Silinmesini İptal Et"
+
+#: concrete/single_pages/dashboard/conversations/messages.php:151
+msgid "Message has not been approved."
+msgstr "Mesaj onaylanmamış."
+
+#: concrete/single_pages/dashboard/conversations/messages.php:155
+msgid "Message is deleted."
+msgstr "Mesaj silindi."
+
+#: concrete/single_pages/dashboard/conversations/messages.php:159
 msgid "Message is flagged as spam."
 msgstr "Mesaj spam olarak işaretlendi."
 
-#: concrete/single_pages/dashboard/conversations/messages.php:103
-msgid "Message is currently deleted."
-msgstr "Mesaj şu an silindi."
-
-#: concrete/single_pages/dashboard/conversations/messages.php:106
-msgid "Message is currently pending approval."
-msgstr "Mesaj şu an onay bekliyor."
-
-#: concrete/single_pages/dashboard/conversations/messages.php:132
-msgid "Unapprove"
-msgstr "Onayı Kaldır"
-
-#: concrete/single_pages/dashboard/conversations/messages.php:139
-#: concrete/single_pages/dashboard/system/backup/backup.php:113
-msgid "Restore"
-msgstr "Geri Yükle"
-
-#: concrete/single_pages/dashboard/conversations/messages.php:145
-msgid "Unmark as spam"
-msgstr "Spam işaretini kaldır"
-
-#: concrete/single_pages/dashboard/conversations/messages.php:147
-msgid "Mark as spam"
-msgstr "Spam olarak işaretle"
-
-#: concrete/single_pages/dashboard/conversations/messages.php:151
-msgid "Mark all user posts as spam"
-msgstr "Tüm kullanıcı gönderilerini spam olarak işaretle"
-
-#: concrete/single_pages/dashboard/conversations/messages.php:164
-msgid "Block user IP Address"
-msgstr "Kullanıcı IP adresini engelle"
-
-#: concrete/single_pages/dashboard/conversations/messages.php:166
-msgid "IP Banned"
-msgstr "IP Engellendi"
+#: concrete/single_pages/dashboard/conversations/messages.php:163
+msgid "Message is approved."
+msgstr "Mesaj onaylandı."
 
 #: concrete/single_pages/dashboard/extend/connect.php:6
 msgid "External marketplace support has been disabled for this website."
@@ -15443,6 +15450,10 @@ msgstr "Yedeği Geri YÜkle"
 msgid "Existing Backups"
 msgstr "Var Olan Yedekler"
 
+#: concrete/single_pages/dashboard/system/backup/backup.php:113
+msgid "Restore"
+msgstr "Geri Yükle"
+
 #: concrete/single_pages/dashboard/system/backup/backup.php:124
 msgid "You have no backups available."
 msgstr "Mevcut hiçbir yedeğiniz yok."
@@ -16434,10 +16445,6 @@ msgstr "Bu mesajı silmek istiyor musunuz?"
 #: concrete/single_pages/account/messages/inbox.php:85
 msgid "Sent At"
 msgstr "Gönderilme"
-
-#: concrete/single_pages/account/messages/inbox.php:86
-msgid "Status"
-msgstr "Durum"
 
 #: concrete/single_pages/account/messages/inbox.php:111
 msgid "No messages found."

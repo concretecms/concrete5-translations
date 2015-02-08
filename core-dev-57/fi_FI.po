@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-02-06 05:00+0000\n"
-"PO-Revision-Date: 2015-02-06 11:11+0000\n"
+"POT-Creation-Date: 2015-02-07 05:00+0000\n"
+"PO-Revision-Date: 2015-02-07 10:11+0000\n"
 "Last-Translator: Heikki Ylipaavalniemi\n"
 "Language-Team: Finnish (Finland) (http://www.transifex.com/projects/p/concrete5/language/fi_FI/)\n"
 "MIME-Version: 1.0\n"
@@ -987,7 +987,7 @@ msgstr "Haluatko varmasti poistaa seuraavat tiedostot?"
 #: concrete/elements/page_controls_footer.php:130
 #: concrete/elements/pages/search.php:32
 #: concrete/single_pages/account/messages/inbox.php:51
-#: concrete/single_pages/dashboard/conversations/messages.php:141
+#: concrete/single_pages/dashboard/conversations/messages.php:118
 #: concrete/single_pages/dashboard/pages/types/view.php:74
 #: concrete/single_pages/dashboard/pages/types/view.php:125
 #: concrete/single_pages/dashboard/reports/forms.php:141
@@ -1107,9 +1107,9 @@ msgstr "Litteä näkymä"
 #: concrete/elements/group/search.php:27 concrete/elements/pages/search.php:39
 #: concrete/elements/pages/search.php:49 concrete/elements/users/search.php:49
 #: concrete/elements/users/search.php:80
-#: concrete/single_pages/dashboard/conversations/messages.php:17
 #: concrete/single_pages/dashboard/conversations/messages.php:22
-#: concrete/single_pages/dashboard/conversations/messages.php:46
+#: concrete/single_pages/dashboard/conversations/messages.php:27
+#: concrete/single_pages/dashboard/conversations/messages.php:51
 #: concrete/single_pages/dashboard/files/sets.php:130
 #: concrete/single_pages/dashboard/files/sets.php:135
 #: concrete/single_pages/dashboard/files/sets.php:153
@@ -1509,13 +1509,17 @@ msgstr "Oletko varma?"
 msgid "Attach Files"
 msgstr "Liitä tiedostoja"
 
-#: concrete/tools/conversations/add_message.php:75
+#: concrete/tools/conversations/delete_message.php:18
+msgid "Message deleted successfully."
+msgstr "Viesti poistettu onnistuneesti."
+
+#: concrete/tools/conversations/add_message.php:77
 #: concrete/tools/conversations/update_message.php:14
 msgid "Invalid conversation post token."
 msgstr "Virheellinen keskusteluviestin poletti"
 
 #: concrete/blocks/core_conversation_message/controller.php:43
-#: concrete/tools/conversations/add_message.php:78
+#: concrete/tools/conversations/add_message.php:80
 #: concrete/tools/conversations/update_message.php:17
 msgid "Your message cannot be empty."
 msgstr "Viestisi ei voi olla tyhjä."
@@ -1528,12 +1532,12 @@ msgstr "Virheellinen viestiobjekti."
 msgid "You do not have access to edit this message."
 msgstr "Sinulla ei ole oikeutta muokata tätä viestiä."
 
-#: concrete/tools/conversations/add_message.php:63
+#: concrete/tools/conversations/add_message.php:65
 #: concrete/tools/conversations/update_message.php:38
 msgid "You do not have permission to add attachments."
 msgstr "Sinulla ei ole oikeutta lisätä liitetiedostoja."
 
-#: concrete/tools/conversations/add_message.php:67
+#: concrete/tools/conversations/add_message.php:69
 #: concrete/tools/conversations/update_message.php:42
 msgid "You have too many attachments."
 msgstr "Sinulla on liian monta liitettä."
@@ -1575,44 +1579,48 @@ msgstr "Liitteiden rajoitus saavutettu"
 msgid "Invalid File Extension"
 msgstr "Virheellinen tiedostopääte"
 
-#: concrete/tools/conversations/add_message.php:13
+#: concrete/tools/conversations/flag_message.php:31
+msgid "Message flagged successfully."
+msgstr "Viesti merkitty onnistuneesti."
+
+#: concrete/tools/conversations/add_message.php:15
 msgid "Invalid Block Object."
 msgstr "Virheellinen lohko-objekti."
 
-#: concrete/tools/conversations/add_message.php:20
+#: concrete/tools/conversations/add_message.php:22
 msgid "Invalid conversation."
 msgstr "Virheellinen keskustelu."
 
-#: concrete/tools/conversations/add_message.php:24
+#: concrete/tools/conversations/add_message.php:26
 msgid "You do not have access to add a message to this conversation."
 msgstr "Sinulla ei ole oikeutta lisätä viestiä tähän keskusteluun."
 
-#: concrete/tools/conversations/add_message.php:31
+#: concrete/tools/conversations/add_message.php:33
 msgid "You must enter your name to post this message."
 msgstr "Sinun täytyy antaa nimesi lähettääksesi tämän viestin."
 
-#: concrete/tools/conversations/add_message.php:36
+#: concrete/tools/conversations/add_message.php:38
 msgid "You must enter a valid email address to post this message."
 msgstr "Sinun täytyy antaa toimiva sähköpostiosoite lähettääksesi tämän viestin."
 
 #: concrete/controllers/single_page/register.php:53
-#: concrete/tools/conversations/add_message.php:43
+#: concrete/tools/conversations/add_message.php:45
 msgid ""
 "Incorrect image validation code. Please check the image and re-enter the "
 "letters or numbers as necessary."
 msgstr "Virheellinen kuvavahvistuksen koodi. Tarkista kuva uudelleen ja anna tarvittaessa kirjaimet ja numerot uudelleen."
 
-#: concrete/tools/conversations/add_message.php:53
-#: concrete/tools/conversations/add_message.php:57
+#: concrete/tools/conversations/add_message.php:55
+#: concrete/tools/conversations/add_message.php:59
 msgid "Invalid Page."
 msgstr "Virheellinen sivu."
 
-#: concrete/tools/conversations/add_message.php:84
+#: concrete/tools/conversations/add_message.php:86
 msgid "Invalid parent message."
 msgstr "Virheellinen isäntäviesti."
 
 #: concrete/blocks/core_conversation_message/controller.php:49
-#: concrete/tools/conversations/add_message.php:89
+#: concrete/tools/conversations/add_message.php:91
 msgid "Banned words detected."
 msgstr "Kiellettyjä sanoja havaittu."
 
@@ -1896,7 +1904,7 @@ msgstr "Tasaa teksti"
 msgid "Insert Horizontal Rule"
 msgstr "Lisää vaakaviiva"
 
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:23
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:45
 #: concrete/tools/i18n_redactor_js.php:80
 msgid "Deleted"
 msgstr "Poistettu"
@@ -2746,6 +2754,7 @@ msgstr "Sinun täytyy valita tiedosto."
 msgid "Rescan"
 msgstr "Skannaa uudestaan"
 
+#: concrete/elements/permission/keys/add_conversation_message.php:18
 #: concrete/tools/i18n_js.php:205
 msgid "Pending"
 msgstr "Odottaa"
@@ -3034,6 +3043,7 @@ msgid "Date Added"
 msgstr "Lisätty"
 
 #: concrete/single_pages/dashboard/composer/drafts.php:15
+#: concrete/single_pages/dashboard/conversations/messages.php:64
 #: concrete/src/File/Search/ColumnSet/Available.php:9
 #: concrete/src/Page/Search/ColumnSet/DefaultSet.php:38
 #: concrete/tools/pages/delete.php:94
@@ -3391,74 +3401,59 @@ msgstr "Tiedoston attribuutti päivitetty."
 msgid "Sort order saved"
 msgstr "Jaottelujärjestys tallennettu"
 
-#: concrete/controllers/search/pages.php:230
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:22
-msgid "Approved"
-msgstr "Hyväksytty"
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:42
+msgid "** Show All"
+msgstr "** Näytä kaikki"
 
 #: concrete/controllers/search/pages.php:229
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:24
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:43
 msgid "Unapproved"
 msgstr "Hyväksymätön"
 
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:33
+#: concrete/controllers/search/pages.php:230
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:44
+#: concrete/elements/permission/keys/add_conversation_message.php:18
+msgid "Approved"
+msgstr "Hyväksytty"
+
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:54
 msgid "Recent First"
 msgstr "Uusin ensin"
 
 #: concrete/blocks/core_conversation/form.php:59
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:34
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:55
 msgid "Earliest First"
 msgstr "Vanhin ensin"
 
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:106
-msgid "Message successfully unapproved."
-msgstr "Viesti hylätty onnistuneesti."
-
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:110
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:128
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:146
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:164
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:183
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:202
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:232
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:256
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:275
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:111
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:131
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:152
 msgid "Invalid message"
 msgstr "Virheellinen viesti"
 
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:124
-msgid "Message successfully approved."
-msgstr "Viesti hyväksytty onnistuneesti."
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:115
+msgid "You do not have permission to approve this message."
+msgstr "Sinulla ei ole oikeutta hyväksyä tätä viestiä."
+
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:121
+msgid "Message approved."
+msgstr "Viesti hyväksytty."
+
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:135
+msgid "You do not have permission to flag this message."
+msgstr "Sinulla ei ole oikeutta hyväksyä tätä viestiä."
 
 #: concrete/controllers/single_page/dashboard/conversations/messages.php:142
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:160
-msgid "Message successfully deleted."
-msgstr "Viesti poistettu onnistuneesti."
+msgid "Message unflagged."
+msgstr "Viestin merkintä poistettu."
 
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:179
-msgid "Message successfully marked as spam."
-msgstr "Viesti merkitty onnistuneesti roskapostiksi."
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:156
+msgid "You do not have permission to restore this message."
+msgstr "Sinulla ei ole oikeutta palauttaa tätä viestiä."
 
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:198
-msgid "Message successfully unmarked as spam."
-msgstr "Viesti merkintä roskapostiksi poistettu onnistuneesti."
-
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:224
-msgid "All user messages marked as spam."
-msgstr "Kaikki käyttäjän viestit merkitty roskapostiksi."
-
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:228
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:252
-msgid "Invalid User"
-msgstr "Virheellinen käyttäjä"
-
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:248
-msgid "User deactivated."
-msgstr "Käyttäjän aktivointi peruutettu."
-
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:271
-msgid "IP successfully banned."
-msgstr "IP-osoite estetty onnistuneesti."
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:162
+msgid "Message restored."
+msgstr "Viesti palautetta."
 
 #: concrete/controllers/single_page/dashboard/extend/connect.php:22
 msgid ""
@@ -6302,11 +6297,11 @@ msgstr "Seuraava"
 msgid "Previous"
 msgstr "Edellinen"
 
-#: concrete/src/Permission/Key/Key.php:23
+#: concrete/src/Permission/Key/Key.php:27
 msgid "Included"
 msgstr "Mukana"
 
-#: concrete/src/Permission/Key/Key.php:24
+#: concrete/src/Permission/Key/Key.php:28
 msgid "Excluded"
 msgstr "Ei mukana"
 
@@ -6930,7 +6925,7 @@ msgid "Won a Badge"
 msgstr "Ansaitsi merkin"
 
 #: concrete/single_pages/dashboard/system/basics/icons.php:78
-#: concrete/src/Form/Service/Widget/Color.php:37
+#: concrete/src/Form/Service/Widget/Color.php:38
 #: concrete/src/StyleCustomizer/Style/ColorStyle.php:43
 msgid "Clear Color Selection"
 msgstr "Tyhjennä värivalinta"
@@ -7176,7 +7171,7 @@ msgstr "kommenteilla \"%s\""
 msgid "Originally requested by %s."
 msgstr "Alunperin pyytänyt %s."
 
-#: concrete/single_pages/dashboard/conversations/messages.php:134
+#: concrete/single_pages/dashboard/conversations/messages.php:110
 #: concrete/src/Workflow/Progress/Action/ApprovalAction.php:6
 #: concrete/views/panels/page/versions.php:32
 msgid "Approve"
@@ -8212,7 +8207,7 @@ msgid "Edit Properties"
 msgstr "Muokkaa ominaisuuksia"
 
 #: concrete/elements/files/search.php:31
-#: concrete/single_pages/dashboard/conversations/messages.php:21
+#: concrete/single_pages/dashboard/conversations/messages.php:26
 #: concrete/single_pages/dashboard/reports/logs.php:24
 #: concrete/single_pages/dashboard/system/multilingual/page_report.php:17
 #: concrete/single_pages/dashboard/system/seo/bulk.php:63
@@ -8905,7 +8900,7 @@ msgstr "Esikatsele kuva"
 #: concrete/elements/gathering/templates/tile/image_byline_description_center/view.php:15
 #: concrete/elements/gathering/templates/tile/masthead_image_byline_left/view.php:16
 #: concrete/elements/gathering/templates/tile/masthead_image_byline_right/view.php:13
-#: concrete/single_pages/dashboard/conversations/messages.php:113
+#: concrete/single_pages/dashboard/conversations/messages.php:133
 #, php-format
 msgctxt "Authored"
 msgid "By %s"
@@ -9092,6 +9087,14 @@ msgstr "Kuka ei voi liittää mitä?"
 #: concrete/elements/permission/keys/assign_user_groups.php:57
 msgid "No Groups"
 msgstr "Ei ryhmiä"
+
+#: concrete/elements/permission/keys/add_conversation_message.php:9
+msgid "New Message Approval"
+msgstr "Uusi viestin hyväksyntä"
+
+#: concrete/elements/permission/keys/add_conversation_message.php:24
+msgid "No access entities selected."
+msgstr "Pääsyentiteettejä ei ole valittuna."
 
 #: concrete/elements/permission/keys/edit_user_properties.php:33
 #: concrete/elements/permission/keys/edit_user_properties.php:70
@@ -9531,6 +9534,10 @@ msgstr "Jaa viestin URL-osoite Facebookissa."
 msgid "Get message URL."
 msgstr "Hae viestin URL-osoite."
 
+#: concrete/elements/conversation/message/pending.php:26
+msgid "This message is pending approval by a moderator."
+msgstr "Tämä viesti odottaa valvojan hyväksyntää."
+
 #: concrete/blocks/form/mini_survey.php:169
 #: concrete/blocks/form/mini_survey.php:171 concrete/blocks/form/view.php:75
 #: concrete/elements/conversation/display.php:30
@@ -9898,7 +9905,7 @@ msgstr "Sarakkeiden järjestys"
 msgid "Click and drag to change column order."
 msgstr "Napsauta ja raahaa muuttaaksesi sarakkeiden järjestystä."
 
-#: concrete/single_pages/dashboard/conversations/messages.php:38
+#: concrete/single_pages/dashboard/conversations/messages.php:43
 #: concrete/views/dialogs/search/customize.php:49
 msgid "Sort By"
 msgstr "Järjestele"
@@ -11708,7 +11715,7 @@ msgstr "Aiheesi ei voi olla tyhjä."
 
 #: concrete/blocks/core_conversation_message/composer.php:19
 #: concrete/single_pages/account/messages/inbox.php:173
-#: concrete/single_pages/dashboard/conversations/messages.php:58
+#: concrete/single_pages/dashboard/conversations/messages.php:65
 #: concrete/single_pages/dashboard/reports/logs.php:67
 msgid "Message"
 msgstr "Viesti"
@@ -11912,7 +11919,7 @@ msgstr "Ylikirjoita yleiset asetukset"
 msgid "Send an email when a message is posted."
 msgstr "Lähetä sähköposti, kun viesti lähetetään."
 
-#: concrete/blocks/core_conversation/controller.php:33
+#: concrete/blocks/core_conversation/controller.php:32
 msgid "Displays conversations on a page."
 msgstr "Näyttää keskustelut sivulla."
 
@@ -12962,7 +12969,7 @@ msgstr "Aihelista"
 msgid "Topics"
 msgstr "Aiheet"
 
-#: concrete/blocks/topic_list/view.php:44
+#: concrete/blocks/topic_list/view.php:43
 msgid "No topics."
 msgstr "Ei aiheita."
 
@@ -13435,50 +13442,50 @@ msgstr "Sinulla ei ole pääsyoikeutta hallintapaneelin sivukarttaan."
 msgid "You must have access to the dashboard sitemap to search pages."
 msgstr "Sinulla täytyy olla pääsyoikeus hallintapaneelin sivukarttaan hakeaksesi sivuja."
 
-#: concrete/single_pages/dashboard/conversations/messages.php:59
+#: concrete/single_pages/dashboard/conversations/messages.php:35
+msgid "Filter By"
+msgstr "Suodata mukaan"
+
+#: concrete/single_pages/dashboard/conversations/messages.php:63
 msgid "Posted"
 msgstr "Lähetetty"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:100
+#: concrete/single_pages/account/messages/inbox.php:86
+#: concrete/single_pages/dashboard/conversations/messages.php:66
+msgid "Status"
+msgstr "Tila"
+
+#: concrete/single_pages/dashboard/conversations/messages.php:103
+msgid "View Conversation"
+msgstr "Näytä keskustelu"
+
+#: concrete/single_pages/dashboard/conversations/messages.php:114
+msgid "Flag as Spam"
+msgstr "Merkitse roskapostiksi"
+
+#: concrete/single_pages/dashboard/conversations/messages.php:122
+msgid "Un-Flag As Spam"
+msgstr "Poista roskapostiksi merkintä"
+
+#: concrete/single_pages/dashboard/conversations/messages.php:126
+msgid "Un-Delete Message"
+msgstr "Palauta viesti"
+
+#: concrete/single_pages/dashboard/conversations/messages.php:151
+msgid "Message has not been approved."
+msgstr "Viestiä ei ole hyväksytty."
+
+#: concrete/single_pages/dashboard/conversations/messages.php:155
+msgid "Message is deleted."
+msgstr "Viesti on poistettu."
+
+#: concrete/single_pages/dashboard/conversations/messages.php:159
 msgid "Message is flagged as spam."
 msgstr "Viesti on merkitty roskapostiksi."
 
-#: concrete/single_pages/dashboard/conversations/messages.php:103
-msgid "Message is currently deleted."
-msgstr "Viesti on tällä hetkellä poistettu."
-
-#: concrete/single_pages/dashboard/conversations/messages.php:106
-msgid "Message is currently pending approval."
-msgstr "Viesti odottaa tällä hetkellä hyväksyntää."
-
-#: concrete/single_pages/dashboard/conversations/messages.php:132
-msgid "Unapprove"
-msgstr "Älä hyväksy"
-
-#: concrete/single_pages/dashboard/conversations/messages.php:139
-#: concrete/single_pages/dashboard/system/backup/backup.php:113
-msgid "Restore"
-msgstr "Palauta"
-
-#: concrete/single_pages/dashboard/conversations/messages.php:145
-msgid "Unmark as spam"
-msgstr "Poista roskapostiksi merkintä"
-
-#: concrete/single_pages/dashboard/conversations/messages.php:147
-msgid "Mark as spam"
-msgstr "Merkitse roskapostiksi"
-
-#: concrete/single_pages/dashboard/conversations/messages.php:151
-msgid "Mark all user posts as spam"
-msgstr "Merkitse kaikki käyttäjän kirjoitukset roskapostiksi"
-
-#: concrete/single_pages/dashboard/conversations/messages.php:164
-msgid "Block user IP Address"
-msgstr "Estä käyttäjän IP-osoite"
-
-#: concrete/single_pages/dashboard/conversations/messages.php:166
-msgid "IP Banned"
-msgstr "Estetty IP"
+#: concrete/single_pages/dashboard/conversations/messages.php:163
+msgid "Message is approved."
+msgstr "Viesti on hyväksytty."
 
 #: concrete/single_pages/dashboard/extend/connect.php:6
 msgid "External marketplace support has been disabled for this website."
@@ -15470,6 +15477,10 @@ msgstr "Palauta varmuuskopio"
 msgid "Existing Backups"
 msgstr "Olemassaolevat varmuuskopiot"
 
+#: concrete/single_pages/dashboard/system/backup/backup.php:113
+msgid "Restore"
+msgstr "Palauta"
+
 #: concrete/single_pages/dashboard/system/backup/backup.php:124
 msgid "You have no backups available."
 msgstr "Sinulla ei ole varmuuskopioita saatavilla."
@@ -16461,10 +16472,6 @@ msgstr "Poista tämä viesti?"
 #: concrete/single_pages/account/messages/inbox.php:85
 msgid "Sent At"
 msgstr "Lähetetty"
-
-#: concrete/single_pages/account/messages/inbox.php:86
-msgid "Status"
-msgstr "Tila"
 
 #: concrete/single_pages/account/messages/inbox.php:111
 msgid "No messages found."

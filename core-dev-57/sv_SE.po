@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-02-05 05:00+0000\n"
-"PO-Revision-Date: 2015-02-05 11:11+0000\n"
+"POT-Creation-Date: 2015-02-07 05:00+0000\n"
+"PO-Revision-Date: 2015-02-07 13:21+0000\n"
 "Last-Translator: Fredrik Lindau <fredrik@fxlindau.se>\n"
 "Language-Team: Swedish (Sweden) (http://www.transifex.com/projects/p/concrete5/language/sv_SE/)\n"
 "MIME-Version: 1.0\n"
@@ -812,7 +812,7 @@ msgstr "Lagringsplats för filer sparad."
 #: concrete/elements/panels/page.php:111
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:58
 #: concrete/single_pages/dashboard/pages/types/view.php:50
-#: concrete/src/Package/Package.php:415
+#: concrete/src/Package/Package.php:435
 #: concrete/tools/files/permissions.php:51 concrete/tools/i18n_js.php:139
 #: concrete/tools/i18n_js.php:199
 msgid "Permissions"
@@ -989,7 +989,7 @@ msgstr "Är du säker på att du vill ta bort följande filer?"
 #: concrete/elements/page_controls_footer.php:130
 #: concrete/elements/pages/search.php:32
 #: concrete/single_pages/account/messages/inbox.php:51
-#: concrete/single_pages/dashboard/conversations/messages.php:141
+#: concrete/single_pages/dashboard/conversations/messages.php:118
 #: concrete/single_pages/dashboard/pages/types/view.php:74
 #: concrete/single_pages/dashboard/pages/types/view.php:125
 #: concrete/single_pages/dashboard/reports/forms.php:141
@@ -1109,9 +1109,9 @@ msgstr "Lista"
 #: concrete/elements/group/search.php:27 concrete/elements/pages/search.php:39
 #: concrete/elements/pages/search.php:49 concrete/elements/users/search.php:49
 #: concrete/elements/users/search.php:80
-#: concrete/single_pages/dashboard/conversations/messages.php:17
 #: concrete/single_pages/dashboard/conversations/messages.php:22
-#: concrete/single_pages/dashboard/conversations/messages.php:46
+#: concrete/single_pages/dashboard/conversations/messages.php:27
+#: concrete/single_pages/dashboard/conversations/messages.php:51
 #: concrete/single_pages/dashboard/files/sets.php:130
 #: concrete/single_pages/dashboard/files/sets.php:135
 #: concrete/single_pages/dashboard/files/sets.php:153
@@ -1511,13 +1511,17 @@ msgstr "Är du säker?"
 msgid "Attach Files"
 msgstr "Bifoga filer"
 
-#: concrete/tools/conversations/add_message.php:75
+#: concrete/tools/conversations/delete_message.php:18
+msgid "Message deleted successfully."
+msgstr "Meddelandet borttaget."
+
+#: concrete/tools/conversations/add_message.php:77
 #: concrete/tools/conversations/update_message.php:14
 msgid "Invalid conversation post token."
 msgstr "Ogiltig symbol för konversationsinlägg."
 
 #: concrete/blocks/core_conversation_message/controller.php:43
-#: concrete/tools/conversations/add_message.php:78
+#: concrete/tools/conversations/add_message.php:80
 #: concrete/tools/conversations/update_message.php:17
 msgid "Your message cannot be empty."
 msgstr "Ditt meddelande kan inte vara tomt."
@@ -1530,12 +1534,12 @@ msgstr "Ogiltigt objekt för meddelande."
 msgid "You do not have access to edit this message."
 msgstr "Du har inte behörighet att redigera detta meddelande."
 
-#: concrete/tools/conversations/add_message.php:63
+#: concrete/tools/conversations/add_message.php:65
 #: concrete/tools/conversations/update_message.php:38
 msgid "You do not have permission to add attachments."
 msgstr "Du saknar behörighet att lägg till bilagor."
 
-#: concrete/tools/conversations/add_message.php:67
+#: concrete/tools/conversations/add_message.php:69
 #: concrete/tools/conversations/update_message.php:42
 msgid "You have too many attachments."
 msgstr "Du har för många bilagor."
@@ -1577,44 +1581,48 @@ msgstr "Gräns för antal bilagor nådd"
 msgid "Invalid File Extension"
 msgstr "Ogiltig filtyp."
 
-#: concrete/tools/conversations/add_message.php:13
+#: concrete/tools/conversations/flag_message.php:31
+msgid "Message flagged successfully."
+msgstr "Meddelandet flaggat."
+
+#: concrete/tools/conversations/add_message.php:15
 msgid "Invalid Block Object."
 msgstr "Ogiltigt blockobjekt."
 
-#: concrete/tools/conversations/add_message.php:20
+#: concrete/tools/conversations/add_message.php:22
 msgid "Invalid conversation."
 msgstr "Ogiltig konversation."
 
-#: concrete/tools/conversations/add_message.php:24
+#: concrete/tools/conversations/add_message.php:26
 msgid "You do not have access to add a message to this conversation."
 msgstr "Du har inte behörighet att lägga till ett meddelande i denna konversation."
 
-#: concrete/tools/conversations/add_message.php:31
+#: concrete/tools/conversations/add_message.php:33
 msgid "You must enter your name to post this message."
 msgstr "Du måste ange ditt namn för att posta detta meddelande."
 
-#: concrete/tools/conversations/add_message.php:36
+#: concrete/tools/conversations/add_message.php:38
 msgid "You must enter a valid email address to post this message."
 msgstr "Du måste ange en giltig e-postadress för att posta detta meddelande."
 
 #: concrete/controllers/single_page/register.php:53
-#: concrete/tools/conversations/add_message.php:43
+#: concrete/tools/conversations/add_message.php:45
 msgid ""
 "Incorrect image validation code. Please check the image and re-enter the "
 "letters or numbers as necessary."
 msgstr "Felaktig bekräftelsekod. Var vänlig och titta på bilden igen och fyll i bokstäverna eller siffrorna som visas."
 
-#: concrete/tools/conversations/add_message.php:53
-#: concrete/tools/conversations/add_message.php:57
+#: concrete/tools/conversations/add_message.php:55
+#: concrete/tools/conversations/add_message.php:59
 msgid "Invalid Page."
 msgstr "Ogiltig sida."
 
-#: concrete/tools/conversations/add_message.php:84
+#: concrete/tools/conversations/add_message.php:86
 msgid "Invalid parent message."
 msgstr "Ogiltig överordnat meddelande. "
 
 #: concrete/blocks/core_conversation_message/controller.php:49
-#: concrete/tools/conversations/add_message.php:89
+#: concrete/tools/conversations/add_message.php:91
 msgid "Banned words detected."
 msgstr "Förbjudna ord upptäckta."
 
@@ -1898,7 +1906,7 @@ msgstr "Justera text"
 msgid "Insert Horizontal Rule"
 msgstr "Infoga horisontalt streck"
 
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:23
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:45
 #: concrete/tools/i18n_redactor_js.php:80
 msgid "Deleted"
 msgstr "Borttagen"
@@ -2748,6 +2756,7 @@ msgstr "Du måste välja en fil."
 msgid "Rescan"
 msgstr "Sök igen"
 
+#: concrete/elements/permission/keys/add_conversation_message.php:18
 #: concrete/tools/i18n_js.php:205
 msgid "Pending"
 msgstr "Väntande"
@@ -3036,6 +3045,7 @@ msgid "Date Added"
 msgstr "Inlagd den"
 
 #: concrete/single_pages/dashboard/composer/drafts.php:15
+#: concrete/single_pages/dashboard/conversations/messages.php:64
 #: concrete/src/File/Search/ColumnSet/Available.php:9
 #: concrete/src/Page/Search/ColumnSet/DefaultSet.php:38
 #: concrete/tools/pages/delete.php:94
@@ -3393,74 +3403,59 @@ msgstr "Filegenskap uppdaterat."
 msgid "Sort order saved"
 msgstr "Sorteringsordning sparad."
 
-#: concrete/controllers/search/pages.php:230
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:22
-msgid "Approved"
-msgstr "Godkänd"
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:42
+msgid "** Show All"
+msgstr "** Visa alla"
 
 #: concrete/controllers/search/pages.php:229
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:24
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:43
 msgid "Unapproved"
 msgstr "Inte godkänd"
 
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:33
+#: concrete/controllers/search/pages.php:230
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:44
+#: concrete/elements/permission/keys/add_conversation_message.php:18
+msgid "Approved"
+msgstr "Godkänd"
+
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:54
 msgid "Recent First"
 msgstr "Senaste först"
 
 #: concrete/blocks/core_conversation/form.php:59
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:34
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:55
 msgid "Earliest First"
 msgstr "Äldsta först"
 
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:106
-msgid "Message successfully unapproved."
-msgstr "Meddelandet är inte godkänt."
-
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:110
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:128
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:146
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:164
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:183
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:202
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:232
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:256
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:275
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:111
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:131
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:152
 msgid "Invalid message"
 msgstr "Ogiltigt meddelande"
 
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:124
-msgid "Message successfully approved."
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:115
+msgid "You do not have permission to approve this message."
+msgstr "Du har inte behörighet att godkänna detta meddelande."
+
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:121
+msgid "Message approved."
 msgstr "Meddelandet godkänt."
 
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:135
+msgid "You do not have permission to flag this message."
+msgstr "Du har inte behörighet att flagga detta meddelande."
+
 #: concrete/controllers/single_page/dashboard/conversations/messages.php:142
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:160
-msgid "Message successfully deleted."
-msgstr "Meddelandet borttaget."
+msgid "Message unflagged."
+msgstr "Meddelandet avflaggat."
 
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:179
-msgid "Message successfully marked as spam."
-msgstr "Meddelandet markerat som skräppost."
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:156
+msgid "You do not have permission to restore this message."
+msgstr "Du har inte behörighet att återskapa detta meddelande."
 
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:198
-msgid "Message successfully unmarked as spam."
-msgstr "Meddelandet avmarkerat som skräppost."
-
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:224
-msgid "All user messages marked as spam."
-msgstr "Alla användarmeddelanden är markerade som skräppost."
-
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:228
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:252
-msgid "Invalid User"
-msgstr "Ogiltig användare"
-
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:248
-msgid "User deactivated."
-msgstr "Användare inaktiverad."
-
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:271
-msgid "IP successfully banned."
-msgstr "IP blockerat"
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:162
+msgid "Message restored."
+msgstr "Meddelande återskapat."
 
 #: concrete/controllers/single_page/dashboard/extend/connect.php:22
 msgid ""
@@ -6304,11 +6299,11 @@ msgstr "Nästa"
 msgid "Previous"
 msgstr "Föregående"
 
-#: concrete/src/Permission/Key/Key.php:23
+#: concrete/src/Permission/Key/Key.php:27
 msgid "Included"
 msgstr "Inkluderad"
 
-#: concrete/src/Permission/Key/Key.php:24
+#: concrete/src/Permission/Key/Key.php:28
 msgid "Excluded"
 msgstr "Exkluderad"
 
@@ -6673,125 +6668,125 @@ msgid ""
 "5.7."
 msgstr "Kunde inte installera %s. Kontrollera att paketet har uppdaterats för 5.7."
 
-#: concrete/src/Package/Package.php:385
+#: concrete/src/Package/Package.php:405
 msgid "Attribute categories"
 msgstr "Egenskapskategorier"
 
-#: concrete/src/Package/Package.php:388
+#: concrete/src/Package/Package.php:408
 msgid "Permission categories"
 msgstr "Behörighetskategorier"
 
-#: concrete/src/Package/Package.php:391
+#: concrete/src/Package/Package.php:411
 msgid "Permission access entity types"
 msgstr "Behörighet enhetstyper för åtkomst"
 
-#: concrete/src/Package/Package.php:394
+#: concrete/src/Package/Package.php:414
 msgid "Attribute keys"
 msgstr "Egenskapsnycklar"
 
-#: concrete/src/Package/Package.php:397
+#: concrete/src/Package/Package.php:417
 msgid "Attribute sets"
 msgstr "Egenskapsgrupper"
 
-#: concrete/src/Package/Package.php:400
+#: concrete/src/Package/Package.php:420
 msgid "Group sets"
 msgstr "Gruppuppsättning"
 
-#: concrete/src/Package/Package.php:403
+#: concrete/src/Package/Package.php:423
 msgid "Page types"
 msgstr "Sidtyper"
 
-#: concrete/src/Package/Package.php:406
+#: concrete/src/Package/Package.php:426
 msgid "Mail importers"
 msgstr "Importfilter för e-post"
 
-#: concrete/src/Package/Package.php:409
+#: concrete/src/Package/Package.php:429
 msgid "Block types"
 msgstr "Blocktyper"
 
-#: concrete/src/Package/Package.php:412
+#: concrete/src/Package/Package.php:432
 msgid "Page themes"
 msgstr "Sidoteman"
 
-#: concrete/src/Package/Package.php:418
+#: concrete/src/Package/Package.php:438
 msgid "Single pages"
 msgstr "Specialsidor"
 
-#: concrete/src/Package/Package.php:421
+#: concrete/src/Package/Package.php:441
 msgid "Attribute types"
 msgstr "Egenskapstyper"
 
-#: concrete/src/Package/Package.php:424
+#: concrete/src/Package/Package.php:444
 msgid "Captcha libraries"
 msgstr "Captcha-bibliotek."
 
-#: concrete/src/Package/Package.php:427
+#: concrete/src/Package/Package.php:447
 msgid "Antispam libraries"
 msgstr "Anti-spam-bibliotek"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:39
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:299
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:418
-#: concrete/src/Package/Package.php:430
+#: concrete/src/Package/Package.php:450
 msgid "Jobs"
 msgstr "Jobb"
 
-#: concrete/src/Package/Package.php:433
+#: concrete/src/Package/Package.php:453
 msgid "Workflow types"
 msgstr "Typer av arbetsflöden"
 
 #: concrete/single_pages/dashboard/system/files/storage.php:99
-#: concrete/src/Package/Package.php:436
+#: concrete/src/Package/Package.php:456
 msgid "Storage Locations"
 msgstr "Lagringsplatser"
 
 #: concrete/single_pages/dashboard/system/multilingual/page_report.php:88
 #: concrete/single_pages/dashboard/system/multilingual/page_report.php:96
-#: concrete/src/Package/Package.php:493
+#: concrete/src/Package/Package.php:513
 #, php-format
 msgid "%s (%s)"
 msgstr "%s (%s)"
 
-#: concrete/src/Package/Package.php:499
+#: concrete/src/Package/Package.php:519
 #, php-format
 msgid " %s (%s)"
 msgstr " %s (%s)"
 
-#: concrete/src/Package/Package.php:731
+#: concrete/src/Package/Package.php:751
 msgid "You've already installed that package."
 msgstr "Du har redan installerat det paketet."
 
-#: concrete/src/Package/Package.php:732
+#: concrete/src/Package/Package.php:752
 msgid "Invalid Package."
 msgstr "Ogiltigt paket."
 
-#: concrete/src/Package/Package.php:733
+#: concrete/src/Package/Package.php:753
 #, php-format
 msgid "This package requires concrete5 version %s or greater."
 msgstr "Detta paket kräver concrete5 version %s eller senare."
 
-#: concrete/src/Package/Package.php:734
+#: concrete/src/Package/Package.php:754
 msgid "An error occurred while downloading the package."
 msgstr "Ett fel ägde rum när paketet laddades ned."
 
-#: concrete/src/Package/Package.php:735
+#: concrete/src/Package/Package.php:755
 msgid "concrete5 was not able to save the package after download."
 msgstr "concrete5 kunde inte spara paketet efter nedladdningen."
 
-#: concrete/src/Package/Package.php:736
+#: concrete/src/Package/Package.php:756
 msgid "An error occurred while trying to unzip the package."
 msgstr "Ett fel ägde rum när paketet packades upp med unzip."
 
-#: concrete/src/Package/Package.php:737
+#: concrete/src/Package/Package.php:757
 msgid "An error occurred while trying to install the package."
 msgstr "Ett fel ägde rum när paketet skulle installeras."
 
-#: concrete/src/Package/Package.php:738
+#: concrete/src/Package/Package.php:758
 #, php-format
 msgid "Unable to backup old package directory to %s"
 msgstr "Kunde inte säkerhetskopiera tidigare paketkatalog till %s"
 
-#: concrete/src/Package/Package.php:739
+#: concrete/src/Package/Package.php:759
 msgid ""
 "This package isn't currently available for this version of concrete5. Please"
 " contact the maintainer of this package for assistance."
@@ -6932,7 +6927,7 @@ msgid "Won a Badge"
 msgstr "Vann ett märke"
 
 #: concrete/single_pages/dashboard/system/basics/icons.php:78
-#: concrete/src/Form/Service/Widget/Color.php:37
+#: concrete/src/Form/Service/Widget/Color.php:38
 #: concrete/src/StyleCustomizer/Style/ColorStyle.php:43
 msgid "Clear Color Selection"
 msgstr "Återställ färgval"
@@ -7178,7 +7173,7 @@ msgstr "med kommentarerna \"%s\""
 msgid "Originally requested by %s."
 msgstr "Ursprungligen begärd av %s"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:134
+#: concrete/single_pages/dashboard/conversations/messages.php:110
 #: concrete/src/Workflow/Progress/Action/ApprovalAction.php:6
 #: concrete/views/panels/page/versions.php:32
 msgid "Approve"
@@ -7843,7 +7838,7 @@ msgstr "Detta meddelande har tagits bort."
 
 #: concrete/src/Conversation/Message/Message.php:152
 msgid "This message has been flagged as spam."
-msgstr "Detta meddelande har markerats som skräppost."
+msgstr "Detta meddelande har flaggats som skräppost."
 
 #: concrete/src/Conversation/Message/Message.php:156
 msgid "This message is queued for approval."
@@ -8214,7 +8209,7 @@ msgid "Edit Properties"
 msgstr "Redigera egenskaper"
 
 #: concrete/elements/files/search.php:31
-#: concrete/single_pages/dashboard/conversations/messages.php:21
+#: concrete/single_pages/dashboard/conversations/messages.php:26
 #: concrete/single_pages/dashboard/reports/logs.php:24
 #: concrete/single_pages/dashboard/system/multilingual/page_report.php:17
 #: concrete/single_pages/dashboard/system/seo/bulk.php:63
@@ -8907,7 +8902,7 @@ msgstr "Förhandsgranska bild"
 #: concrete/elements/gathering/templates/tile/image_byline_description_center/view.php:15
 #: concrete/elements/gathering/templates/tile/masthead_image_byline_left/view.php:16
 #: concrete/elements/gathering/templates/tile/masthead_image_byline_right/view.php:13
-#: concrete/single_pages/dashboard/conversations/messages.php:113
+#: concrete/single_pages/dashboard/conversations/messages.php:133
 #, php-format
 msgctxt "Authored"
 msgid "By %s"
@@ -9094,6 +9089,14 @@ msgstr "Vem kan inte tilldela vad?"
 #: concrete/elements/permission/keys/assign_user_groups.php:57
 msgid "No Groups"
 msgstr "Inga grupper"
+
+#: concrete/elements/permission/keys/add_conversation_message.php:9
+msgid "New Message Approval"
+msgstr "Nytt meddelande behöver godkännas."
+
+#: concrete/elements/permission/keys/add_conversation_message.php:24
+msgid "No access entities selected."
+msgstr "Inga åtkomsttyper valda."
 
 #: concrete/elements/permission/keys/edit_user_properties.php:33
 #: concrete/elements/permission/keys/edit_user_properties.php:70
@@ -9510,7 +9513,7 @@ msgstr "Behörigheter för block"
 #: concrete/elements/conversation/message.php:52
 #: concrete/elements/conversation/message/topic.php:40
 msgid "Flag As Spam"
-msgstr "Markera som skräppost"
+msgstr "Flagga som skräppost"
 
 #: concrete/elements/conversation/display.php:58
 #: concrete/elements/conversation/display.php:152
@@ -9532,6 +9535,10 @@ msgstr "Dela meddelande URL på Facebook."
 #: concrete/elements/conversation/message.php:117
 msgid "Get message URL."
 msgstr "Hämta meddelande URL."
+
+#: concrete/elements/conversation/message/pending.php:26
+msgid "This message is pending approval by a moderator."
+msgstr "Detta meddelande inväntar godkännade av en moderator."
 
 #: concrete/blocks/form/mini_survey.php:169
 #: concrete/blocks/form/mini_survey.php:171 concrete/blocks/form/view.php:75
@@ -9900,7 +9907,7 @@ msgstr "Kolumnordning"
 msgid "Click and drag to change column order."
 msgstr "Klicka och dra för att ändra kolumnordning."
 
-#: concrete/single_pages/dashboard/conversations/messages.php:38
+#: concrete/single_pages/dashboard/conversations/messages.php:43
 #: concrete/views/dialogs/search/customize.php:49
 msgid "Sort By"
 msgstr "Sortera efter"
@@ -11710,7 +11717,7 @@ msgstr "Din ämnesrad kan inte vara tom."
 
 #: concrete/blocks/core_conversation_message/composer.php:19
 #: concrete/single_pages/account/messages/inbox.php:173
-#: concrete/single_pages/dashboard/conversations/messages.php:58
+#: concrete/single_pages/dashboard/conversations/messages.php:65
 #: concrete/single_pages/dashboard/reports/logs.php:67
 msgid "Message"
 msgstr "Meddelande"
@@ -11914,7 +11921,7 @@ msgstr "Åsidosätt globala inställningar"
 msgid "Send an email when a message is posted."
 msgstr "Skicka ett e-postmeddelande när ett meddelande postas."
 
-#: concrete/blocks/core_conversation/controller.php:33
+#: concrete/blocks/core_conversation/controller.php:32
 msgid "Displays conversations on a page."
 msgstr "Visa konversationer på en sida."
 
@@ -12964,7 +12971,7 @@ msgstr "Ämneslista"
 msgid "Topics"
 msgstr "Ämnen"
 
-#: concrete/blocks/topic_list/view.php:44
+#: concrete/blocks/topic_list/view.php:43
 msgid "No topics."
 msgstr "Inga ämnen."
 
@@ -13437,50 +13444,50 @@ msgstr "Du saknar åtkomst till sajtkartan på kontrollpanelen."
 msgid "You must have access to the dashboard sitemap to search pages."
 msgstr "Du måste ha åtkomst till sajtkartan i kontrollpanelen för att kunna söka efter sidor."
 
-#: concrete/single_pages/dashboard/conversations/messages.php:59
+#: concrete/single_pages/dashboard/conversations/messages.php:35
+msgid "Filter By"
+msgstr "Filtrera efter"
+
+#: concrete/single_pages/dashboard/conversations/messages.php:63
 msgid "Posted"
 msgstr "Postat"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:100
-msgid "Message is flagged as spam."
-msgstr "Meddelandet är markerat som skräppost."
+#: concrete/single_pages/account/messages/inbox.php:86
+#: concrete/single_pages/dashboard/conversations/messages.php:66
+msgid "Status"
+msgstr "Status"
 
 #: concrete/single_pages/dashboard/conversations/messages.php:103
-msgid "Message is currently deleted."
-msgstr "Meddelandet är för närvarande borttaget."
+msgid "View Conversation"
+msgstr "Visa konversation"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:106
-msgid "Message is currently pending approval."
-msgstr "Meddelandet inväntar för närvarande godkännande."
+#: concrete/single_pages/dashboard/conversations/messages.php:114
+msgid "Flag as Spam"
+msgstr "Flagga som skräppost"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:132
-msgid "Unapprove"
-msgstr "Godkänn inte"
+#: concrete/single_pages/dashboard/conversations/messages.php:122
+msgid "Un-Flag As Spam"
+msgstr "Avflagga som skräppost"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:139
-#: concrete/single_pages/dashboard/system/backup/backup.php:113
-msgid "Restore"
-msgstr "Återställ"
-
-#: concrete/single_pages/dashboard/conversations/messages.php:145
-msgid "Unmark as spam"
-msgstr "Avmarkera som skräppost"
-
-#: concrete/single_pages/dashboard/conversations/messages.php:147
-msgid "Mark as spam"
-msgstr "Markera som skräppost"
+#: concrete/single_pages/dashboard/conversations/messages.php:126
+msgid "Un-Delete Message"
+msgstr "Återskapa meddelande"
 
 #: concrete/single_pages/dashboard/conversations/messages.php:151
-msgid "Mark all user posts as spam"
-msgstr "Markera alla användarinlägg som skräppost"
+msgid "Message has not been approved."
+msgstr "Meddelandet har inte godkänts."
 
-#: concrete/single_pages/dashboard/conversations/messages.php:164
-msgid "Block user IP Address"
-msgstr "Blockera användarens IP-adress"
+#: concrete/single_pages/dashboard/conversations/messages.php:155
+msgid "Message is deleted."
+msgstr "Meddelandet är borttaget."
 
-#: concrete/single_pages/dashboard/conversations/messages.php:166
-msgid "IP Banned"
-msgstr "IP blockerat"
+#: concrete/single_pages/dashboard/conversations/messages.php:159
+msgid "Message is flagged as spam."
+msgstr "Meddelandet är flaggat som skräppost."
+
+#: concrete/single_pages/dashboard/conversations/messages.php:163
+msgid "Message is approved."
+msgstr "Meddelandet är godkänt."
 
 #: concrete/single_pages/dashboard/extend/connect.php:6
 msgid "External marketplace support has been disabled for this website."
@@ -15472,6 +15479,10 @@ msgstr "Återställ backup"
 msgid "Existing Backups"
 msgstr "Befintliga säkerhetskopior"
 
+#: concrete/single_pages/dashboard/system/backup/backup.php:113
+msgid "Restore"
+msgstr "Återställ"
+
 #: concrete/single_pages/dashboard/system/backup/backup.php:124
 msgid "You have no backups available."
 msgstr "Du har inga tillgängliga säkerhetskopior."
@@ -16463,10 +16474,6 @@ msgstr "Ta bort detta meddelande?"
 #: concrete/single_pages/account/messages/inbox.php:85
 msgid "Sent At"
 msgstr "Skickat den"
-
-#: concrete/single_pages/account/messages/inbox.php:86
-msgid "Status"
-msgstr "Status"
 
 #: concrete/single_pages/account/messages/inbox.php:111
 msgid "No messages found."

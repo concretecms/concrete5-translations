@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-02-05 05:00+0000\n"
-"PO-Revision-Date: 2015-02-05 10:16+0000\n"
+"POT-Creation-Date: 2015-02-07 05:00+0000\n"
+"PO-Revision-Date: 2015-02-07 13:21+0000\n"
 "Last-Translator: Takuro Hishikawa <hishikawa@concrete5.co.jp>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/projects/p/concrete5/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
@@ -816,7 +816,7 @@ msgstr "ファイル保存場所が正常に保存されました。"
 #: concrete/elements/panels/page.php:111
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:58
 #: concrete/single_pages/dashboard/pages/types/view.php:50
-#: concrete/src/Package/Package.php:415
+#: concrete/src/Package/Package.php:435
 #: concrete/tools/files/permissions.php:51 concrete/tools/i18n_js.php:139
 #: concrete/tools/i18n_js.php:199
 msgid "Permissions"
@@ -991,7 +991,7 @@ msgstr "これらのファイルを削除してよろしいですか？"
 #: concrete/elements/page_controls_footer.php:130
 #: concrete/elements/pages/search.php:32
 #: concrete/single_pages/account/messages/inbox.php:51
-#: concrete/single_pages/dashboard/conversations/messages.php:141
+#: concrete/single_pages/dashboard/conversations/messages.php:118
 #: concrete/single_pages/dashboard/pages/types/view.php:74
 #: concrete/single_pages/dashboard/pages/types/view.php:125
 #: concrete/single_pages/dashboard/reports/forms.php:141
@@ -1111,9 +1111,9 @@ msgstr "フラットビュー"
 #: concrete/elements/group/search.php:27 concrete/elements/pages/search.php:39
 #: concrete/elements/pages/search.php:49 concrete/elements/users/search.php:49
 #: concrete/elements/users/search.php:80
-#: concrete/single_pages/dashboard/conversations/messages.php:17
 #: concrete/single_pages/dashboard/conversations/messages.php:22
-#: concrete/single_pages/dashboard/conversations/messages.php:46
+#: concrete/single_pages/dashboard/conversations/messages.php:27
+#: concrete/single_pages/dashboard/conversations/messages.php:51
 #: concrete/single_pages/dashboard/files/sets.php:130
 #: concrete/single_pages/dashboard/files/sets.php:135
 #: concrete/single_pages/dashboard/files/sets.php:153
@@ -1511,13 +1511,17 @@ msgstr "よろしいですか？"
 msgid "Attach Files"
 msgstr "添付ファイル"
 
-#: concrete/tools/conversations/add_message.php:75
+#: concrete/tools/conversations/delete_message.php:18
+msgid "Message deleted successfully."
+msgstr "メッセージが正常に削除されました。"
+
+#: concrete/tools/conversations/add_message.php:77
 #: concrete/tools/conversations/update_message.php:14
 msgid "Invalid conversation post token."
 msgstr "コメント欄の投稿トークンが無効です。"
 
 #: concrete/blocks/core_conversation_message/controller.php:43
-#: concrete/tools/conversations/add_message.php:78
+#: concrete/tools/conversations/add_message.php:80
 #: concrete/tools/conversations/update_message.php:17
 msgid "Your message cannot be empty."
 msgstr "メッセージを入力してください。"
@@ -1530,12 +1534,12 @@ msgstr "無効なメッセージオブジェクトです。"
 msgid "You do not have access to edit this message."
 msgstr "このメッセージを編集する権限がありません。"
 
-#: concrete/tools/conversations/add_message.php:63
+#: concrete/tools/conversations/add_message.php:65
 #: concrete/tools/conversations/update_message.php:38
 msgid "You do not have permission to add attachments."
 msgstr "添付ファイルを追加する権限がありません。"
 
-#: concrete/tools/conversations/add_message.php:67
+#: concrete/tools/conversations/add_message.php:69
 #: concrete/tools/conversations/update_message.php:42
 msgid "You have too many attachments."
 msgstr "添付の数が多すぎます。"
@@ -1577,44 +1581,48 @@ msgstr "添付の制限に達しました"
 msgid "Invalid File Extension"
 msgstr "無効なファイル拡張子"
 
-#: concrete/tools/conversations/add_message.php:13
+#: concrete/tools/conversations/flag_message.php:31
+msgid "Message flagged successfully."
+msgstr "メッセージが正常に報告されました。"
+
+#: concrete/tools/conversations/add_message.php:15
 msgid "Invalid Block Object."
 msgstr "無効なブロックオブジェクトです。"
 
-#: concrete/tools/conversations/add_message.php:20
+#: concrete/tools/conversations/add_message.php:22
 msgid "Invalid conversation."
 msgstr "無効なコメント欄です。"
 
-#: concrete/tools/conversations/add_message.php:24
+#: concrete/tools/conversations/add_message.php:26
 msgid "You do not have access to add a message to this conversation."
 msgstr "このコメント欄にメッセージを追加する権限がありません。"
 
-#: concrete/tools/conversations/add_message.php:31
+#: concrete/tools/conversations/add_message.php:33
 msgid "You must enter your name to post this message."
 msgstr "メッセージを送信するには、お名前を入力してください。"
 
-#: concrete/tools/conversations/add_message.php:36
+#: concrete/tools/conversations/add_message.php:38
 msgid "You must enter a valid email address to post this message."
 msgstr "メッセージを送信するには、正しいメールアドレスを入力してください。"
 
 #: concrete/controllers/single_page/register.php:53
-#: concrete/tools/conversations/add_message.php:43
+#: concrete/tools/conversations/add_message.php:45
 msgid ""
 "Incorrect image validation code. Please check the image and re-enter the "
 "letters or numbers as necessary."
 msgstr "認証画像の文字が間違っています。画像にある英文字や数字を確認し、もう一度入れ直してください。"
 
-#: concrete/tools/conversations/add_message.php:53
-#: concrete/tools/conversations/add_message.php:57
+#: concrete/tools/conversations/add_message.php:55
+#: concrete/tools/conversations/add_message.php:59
 msgid "Invalid Page."
 msgstr "無効なページです。"
 
-#: concrete/tools/conversations/add_message.php:84
+#: concrete/tools/conversations/add_message.php:86
 msgid "Invalid parent message."
 msgstr "親メッセージが無効です。"
 
 #: concrete/blocks/core_conversation_message/controller.php:49
-#: concrete/tools/conversations/add_message.php:89
+#: concrete/tools/conversations/add_message.php:91
 msgid "Banned words detected."
 msgstr "禁止語句を検出しました。"
 
@@ -1898,7 +1906,7 @@ msgstr "テキスト両揃え"
 msgid "Insert Horizontal Rule"
 msgstr "水平線を挿入"
 
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:23
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:45
 #: concrete/tools/i18n_redactor_js.php:80
 msgid "Deleted"
 msgstr "削除されました"
@@ -2748,6 +2756,7 @@ msgstr "ファイルを選択してください。"
 msgid "Rescan"
 msgstr "再スキャン"
 
+#: concrete/elements/permission/keys/add_conversation_message.php:18
 #: concrete/tools/i18n_js.php:205
 msgid "Pending"
 msgstr "保留中"
@@ -3036,6 +3045,7 @@ msgid "Date Added"
 msgstr "登録日"
 
 #: concrete/single_pages/dashboard/composer/drafts.php:15
+#: concrete/single_pages/dashboard/conversations/messages.php:64
 #: concrete/src/File/Search/ColumnSet/Available.php:9
 #: concrete/src/Page/Search/ColumnSet/DefaultSet.php:38
 #: concrete/tools/pages/delete.php:94
@@ -3392,74 +3402,59 @@ msgstr "ファイル属性が更新されました。"
 msgid "Sort order saved"
 msgstr "並び順が保存されました"
 
-#: concrete/controllers/search/pages.php:230
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:22
-msgid "Approved"
-msgstr "承認済"
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:42
+msgid "** Show All"
+msgstr "** すべてを表示"
 
 #: concrete/controllers/search/pages.php:229
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:24
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:43
 msgid "Unapproved"
 msgstr "未承認"
 
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:33
+#: concrete/controllers/search/pages.php:230
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:44
+#: concrete/elements/permission/keys/add_conversation_message.php:18
+msgid "Approved"
+msgstr "承認済"
+
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:54
 msgid "Recent First"
 msgstr "新しい順"
 
 #: concrete/blocks/core_conversation/form.php:59
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:34
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:55
 msgid "Earliest First"
 msgstr "古い順"
 
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:106
-msgid "Message successfully unapproved."
-msgstr "メッセージの承認が正常にキャンセルされました。"
-
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:110
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:128
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:146
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:164
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:183
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:202
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:232
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:256
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:275
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:111
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:131
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:152
 msgid "Invalid message"
 msgstr "無効なメッセージ"
 
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:124
-msgid "Message successfully approved."
-msgstr "メッセージが正常に承認されました。"
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:115
+msgid "You do not have permission to approve this message."
+msgstr "このメッセージを承認する権限がありません。"
+
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:121
+msgid "Message approved."
+msgstr "メッセージが承認されました。"
+
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:135
+msgid "You do not have permission to flag this message."
+msgstr "このメッセージを報告する権限がありません。"
 
 #: concrete/controllers/single_page/dashboard/conversations/messages.php:142
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:160
-msgid "Message successfully deleted."
-msgstr "メッセージが正常に削除されました。"
+msgid "Message unflagged."
+msgstr "メッセージの報告を取り消しました。"
 
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:179
-msgid "Message successfully marked as spam."
-msgstr "メッセージが正常にスパムとしてマークされました。"
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:156
+msgid "You do not have permission to restore this message."
+msgstr "このメッセージを復元する権限がありません。"
 
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:198
-msgid "Message successfully unmarked as spam."
-msgstr "メッセージのスパム判定を正常に解除しました。"
-
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:224
-msgid "All user messages marked as spam."
-msgstr "すべてのユーザーメッセージをスパムとして判定しました。"
-
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:228
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:252
-msgid "Invalid User"
-msgstr "無効なユーザー"
-
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:248
-msgid "User deactivated."
-msgstr "ユーザーアカウントを停止しました。"
-
-#: concrete/controllers/single_page/dashboard/conversations/messages.php:271
-msgid "IP successfully banned."
-msgstr "IPアドレスが正常に拒否されました。"
+#: concrete/controllers/single_page/dashboard/conversations/messages.php:162
+msgid "Message restored."
+msgstr "メッセージを復元しました。"
 
 #: concrete/controllers/single_page/dashboard/extend/connect.php:22
 msgid ""
@@ -6298,11 +6293,11 @@ msgstr "次"
 msgid "Previous"
 msgstr "前"
 
-#: concrete/src/Permission/Key/Key.php:23
+#: concrete/src/Permission/Key/Key.php:27
 msgid "Included"
 msgstr "含む"
 
-#: concrete/src/Permission/Key/Key.php:24
+#: concrete/src/Permission/Key/Key.php:28
 msgid "Excluded"
 msgstr "除外"
 
@@ -6630,7 +6625,7 @@ msgstr "バックアップファイルを作成できません: %s"
 #: concrete/src/Antispam/Service.php:62
 #, php-format
 msgid "Content %s (author %s, %s) flagged as spam by user %s"
-msgstr "コンテンツ %s (投稿者 %s, %s) はユーザー %s によってスパムフラグが立てられました"
+msgstr "コンテンツ %s (投稿者 %s, %s) はユーザー %s によってスパムと報告されています"
 
 #: concrete/src/Antispam/Service.php:115
 #, php-format
@@ -6667,125 +6662,125 @@ msgid ""
 "5.7."
 msgstr "%s をインストールできません。このパッケージが5.7用にアップデートされているか確認してください。"
 
-#: concrete/src/Package/Package.php:385
+#: concrete/src/Package/Package.php:405
 msgid "Attribute categories"
 msgstr "属性カテゴリー"
 
-#: concrete/src/Package/Package.php:388
+#: concrete/src/Package/Package.php:408
 msgid "Permission categories"
 msgstr "権限カテゴリー"
 
-#: concrete/src/Package/Package.php:391
+#: concrete/src/Package/Package.php:411
 msgid "Permission access entity types"
 msgstr "権限アクセスエンティティタイプ"
 
-#: concrete/src/Package/Package.php:394
+#: concrete/src/Package/Package.php:414
 msgid "Attribute keys"
 msgstr "属性キー"
 
-#: concrete/src/Package/Package.php:397
+#: concrete/src/Package/Package.php:417
 msgid "Attribute sets"
 msgstr "属性セット"
 
-#: concrete/src/Package/Package.php:400
+#: concrete/src/Package/Package.php:420
 msgid "Group sets"
 msgstr "グループセット"
 
-#: concrete/src/Package/Package.php:403
+#: concrete/src/Package/Package.php:423
 msgid "Page types"
 msgstr "ページタイプ"
 
-#: concrete/src/Package/Package.php:406
+#: concrete/src/Package/Package.php:426
 msgid "Mail importers"
 msgstr "メールインポーター"
 
-#: concrete/src/Package/Package.php:409
+#: concrete/src/Package/Package.php:429
 msgid "Block types"
 msgstr "ブロックタイプ"
 
-#: concrete/src/Package/Package.php:412
+#: concrete/src/Package/Package.php:432
 msgid "Page themes"
 msgstr "ページテーマ"
 
-#: concrete/src/Package/Package.php:418
+#: concrete/src/Package/Package.php:438
 msgid "Single pages"
 msgstr "シングルページ"
 
-#: concrete/src/Package/Package.php:421
+#: concrete/src/Package/Package.php:441
 msgid "Attribute types"
 msgstr "属性タイプ"
 
-#: concrete/src/Package/Package.php:424
+#: concrete/src/Package/Package.php:444
 msgid "Captcha libraries"
 msgstr "CAPTCHAライブラリー"
 
-#: concrete/src/Package/Package.php:427
+#: concrete/src/Package/Package.php:447
 msgid "Antispam libraries"
 msgstr "スパム拒否ライブラリー"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:39
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:299
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:418
-#: concrete/src/Package/Package.php:430
+#: concrete/src/Package/Package.php:450
 msgid "Jobs"
 msgstr "ジョブ"
 
-#: concrete/src/Package/Package.php:433
+#: concrete/src/Package/Package.php:453
 msgid "Workflow types"
 msgstr "ワークフロータイプ"
 
 #: concrete/single_pages/dashboard/system/files/storage.php:99
-#: concrete/src/Package/Package.php:436
+#: concrete/src/Package/Package.php:456
 msgid "Storage Locations"
 msgstr "保存場所"
 
 #: concrete/single_pages/dashboard/system/multilingual/page_report.php:88
 #: concrete/single_pages/dashboard/system/multilingual/page_report.php:96
-#: concrete/src/Package/Package.php:493
+#: concrete/src/Package/Package.php:513
 #, php-format
 msgid "%s (%s)"
 msgstr "%s (%s)"
 
-#: concrete/src/Package/Package.php:499
+#: concrete/src/Package/Package.php:519
 #, php-format
 msgid " %s (%s)"
 msgstr " %s (%s)"
 
-#: concrete/src/Package/Package.php:731
+#: concrete/src/Package/Package.php:751
 msgid "You've already installed that package."
 msgstr "そのパッケージはすでにインストールされています。"
 
-#: concrete/src/Package/Package.php:732
+#: concrete/src/Package/Package.php:752
 msgid "Invalid Package."
 msgstr "無効なパッケージです。"
 
-#: concrete/src/Package/Package.php:733
+#: concrete/src/Package/Package.php:753
 #, php-format
 msgid "This package requires concrete5 version %s or greater."
 msgstr "このパッケージはconcrete5のバージョン %s 以上が必要です。"
 
-#: concrete/src/Package/Package.php:734
+#: concrete/src/Package/Package.php:754
 msgid "An error occurred while downloading the package."
 msgstr "パッケージのダウンロード中にエラーが発生しました。"
 
-#: concrete/src/Package/Package.php:735
+#: concrete/src/Package/Package.php:755
 msgid "concrete5 was not able to save the package after download."
 msgstr "concrete5がダウンロード後のパッケージを保存できませんでした。"
 
-#: concrete/src/Package/Package.php:736
+#: concrete/src/Package/Package.php:756
 msgid "An error occurred while trying to unzip the package."
 msgstr "パッケージのZIPファイルを解凍中にエラーが発生しました。"
 
-#: concrete/src/Package/Package.php:737
+#: concrete/src/Package/Package.php:757
 msgid "An error occurred while trying to install the package."
 msgstr "パッケージのインストール中にエラーが発生しました。"
 
-#: concrete/src/Package/Package.php:738
+#: concrete/src/Package/Package.php:758
 #, php-format
 msgid "Unable to backup old package directory to %s"
 msgstr "旧パッケージを「%s」ディレクトリーにバックアップできません"
 
-#: concrete/src/Package/Package.php:739
+#: concrete/src/Package/Package.php:759
 msgid ""
 "This package isn't currently available for this version of concrete5. Please"
 " contact the maintainer of this package for assistance."
@@ -6926,7 +6921,7 @@ msgid "Won a Badge"
 msgstr "バッジを獲得しました"
 
 #: concrete/single_pages/dashboard/system/basics/icons.php:78
-#: concrete/src/Form/Service/Widget/Color.php:37
+#: concrete/src/Form/Service/Widget/Color.php:38
 #: concrete/src/StyleCustomizer/Style/ColorStyle.php:43
 msgid "Clear Color Selection"
 msgstr "色選択をクリア"
@@ -7172,7 +7167,7 @@ msgstr "コメント: \"%s\""
 msgid "Originally requested by %s."
 msgstr "リクエスト申請者： %s"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:134
+#: concrete/single_pages/dashboard/conversations/messages.php:110
 #: concrete/src/Workflow/Progress/Action/ApprovalAction.php:6
 #: concrete/views/panels/page/versions.php:32
 msgid "Approve"
@@ -7897,11 +7892,11 @@ msgstr[0] "%d 分前"
 #: concrete/src/Conversation/Message/Message.php:287
 #: concrete/src/Conversation/Message/Message.php:299
 msgid "Invalid flag type."
-msgstr "不正なフラグタイプです。"
+msgstr "不正な報告タイプです。"
 
 #: concrete/src/Conversation/FlagType/FlagType.php:19
 msgid "Flag type already initialized."
-msgstr "フラグタイプはすでに初期化されています。"
+msgstr "報告タイプはすでに初期化されています。"
 
 #: concrete/src/Localization/Service/Date.php:107
 msgid "Arctic"
@@ -8198,7 +8193,7 @@ msgid "Edit Properties"
 msgstr "プロパティーを編集"
 
 #: concrete/elements/files/search.php:31
-#: concrete/single_pages/dashboard/conversations/messages.php:21
+#: concrete/single_pages/dashboard/conversations/messages.php:26
 #: concrete/single_pages/dashboard/reports/logs.php:24
 #: concrete/single_pages/dashboard/system/multilingual/page_report.php:17
 #: concrete/single_pages/dashboard/system/seo/bulk.php:63
@@ -8891,7 +8886,7 @@ msgstr "プレビュー画像"
 #: concrete/elements/gathering/templates/tile/image_byline_description_center/view.php:15
 #: concrete/elements/gathering/templates/tile/masthead_image_byline_left/view.php:16
 #: concrete/elements/gathering/templates/tile/masthead_image_byline_right/view.php:13
-#: concrete/single_pages/dashboard/conversations/messages.php:113
+#: concrete/single_pages/dashboard/conversations/messages.php:133
 #, php-format
 msgctxt "Authored"
 msgid "By %s"
@@ -9078,6 +9073,14 @@ msgstr "どれに割り当てられない？"
 #: concrete/elements/permission/keys/assign_user_groups.php:57
 msgid "No Groups"
 msgstr "グループが無い"
+
+#: concrete/elements/permission/keys/add_conversation_message.php:9
+msgid "New Message Approval"
+msgstr "新規メッセージの承認"
+
+#: concrete/elements/permission/keys/add_conversation_message.php:24
+msgid "No access entities selected."
+msgstr "アクセスエンティティが選択されていません。"
 
 #: concrete/elements/permission/keys/edit_user_properties.php:33
 #: concrete/elements/permission/keys/edit_user_properties.php:70
@@ -9517,6 +9520,10 @@ msgstr "メッセージ URL を Facebook で共有する。"
 msgid "Get message URL."
 msgstr "メッセージ URL を取得する。"
 
+#: concrete/elements/conversation/message/pending.php:26
+msgid "This message is pending approval by a moderator."
+msgstr "このメッセージは管理者による承認待ちです。"
+
 #: concrete/blocks/form/mini_survey.php:169
 #: concrete/blocks/form/mini_survey.php:171 concrete/blocks/form/view.php:75
 #: concrete/elements/conversation/display.php:30
@@ -9882,7 +9889,7 @@ msgstr "並び順"
 msgid "Click and drag to change column order."
 msgstr "並び順をドラッグして変更"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:38
+#: concrete/single_pages/dashboard/conversations/messages.php:43
 #: concrete/views/dialogs/search/customize.php:49
 msgid "Sort By"
 msgstr "並び替え"
@@ -11691,7 +11698,7 @@ msgstr "件名は空白にできません。"
 
 #: concrete/blocks/core_conversation_message/composer.php:19
 #: concrete/single_pages/account/messages/inbox.php:173
-#: concrete/single_pages/dashboard/conversations/messages.php:58
+#: concrete/single_pages/dashboard/conversations/messages.php:65
 #: concrete/single_pages/dashboard/reports/logs.php:67
 msgid "Message"
 msgstr "メッセージ"
@@ -11895,7 +11902,7 @@ msgstr "共通設定を上書き"
 msgid "Send an email when a message is posted."
 msgstr "メッセージが投稿された際にメールを送信する"
 
-#: concrete/blocks/core_conversation/controller.php:33
+#: concrete/blocks/core_conversation/controller.php:32
 msgid "Displays conversations on a page."
 msgstr "このページのコメント欄を表示。"
 
@@ -12943,7 +12950,7 @@ msgstr "トピックリスト"
 msgid "Topics"
 msgstr "トピック"
 
-#: concrete/blocks/topic_list/view.php:44
+#: concrete/blocks/topic_list/view.php:43
 msgid "No topics."
 msgstr "トピックがありません。"
 
@@ -13416,50 +13423,50 @@ msgstr "管理画面のサイトマップへのアクセス権限がありませ
 msgid "You must have access to the dashboard sitemap to search pages."
 msgstr "ページを検索するには管理画面のサイトマップにアクセスできる必要があります。"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:59
+#: concrete/single_pages/dashboard/conversations/messages.php:35
+msgid "Filter By"
+msgstr "絞り込み"
+
+#: concrete/single_pages/dashboard/conversations/messages.php:63
 msgid "Posted"
 msgstr "投稿しました"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:100
-msgid "Message is flagged as spam."
-msgstr "メッセージはスパムとマークされました。"
+#: concrete/single_pages/account/messages/inbox.php:86
+#: concrete/single_pages/dashboard/conversations/messages.php:66
+msgid "Status"
+msgstr "ステータス"
 
 #: concrete/single_pages/dashboard/conversations/messages.php:103
-msgid "Message is currently deleted."
-msgstr "メッセージは現在削除されています。"
+msgid "View Conversation"
+msgstr "コメントを見る"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:106
-msgid "Message is currently pending approval."
-msgstr "メッセージは現在承認待ちです。"
+#: concrete/single_pages/dashboard/conversations/messages.php:114
+msgid "Flag as Spam"
+msgstr "スパム報告"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:132
-msgid "Unapprove"
-msgstr "承認取り消し"
+#: concrete/single_pages/dashboard/conversations/messages.php:122
+msgid "Un-Flag As Spam"
+msgstr "スパム報告を取り消し"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:139
-#: concrete/single_pages/dashboard/system/backup/backup.php:113
-msgid "Restore"
-msgstr "リストア"
-
-#: concrete/single_pages/dashboard/conversations/messages.php:145
-msgid "Unmark as spam"
-msgstr "スパム判定を解除"
-
-#: concrete/single_pages/dashboard/conversations/messages.php:147
-msgid "Mark as spam"
-msgstr "スパムとして判定する"
+#: concrete/single_pages/dashboard/conversations/messages.php:126
+msgid "Un-Delete Message"
+msgstr "メッセージの削除の取り消し"
 
 #: concrete/single_pages/dashboard/conversations/messages.php:151
-msgid "Mark all user posts as spam"
-msgstr "ユーザーの投稿すべてをスパムとして判定する"
+msgid "Message has not been approved."
+msgstr "メッセージは未承認です。"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:164
-msgid "Block user IP Address"
-msgstr "ユーザーのIPアドレスをブロック"
+#: concrete/single_pages/dashboard/conversations/messages.php:155
+msgid "Message is deleted."
+msgstr "メッセージは削除されました。"
 
-#: concrete/single_pages/dashboard/conversations/messages.php:166
-msgid "IP Banned"
-msgstr "禁止 IP"
+#: concrete/single_pages/dashboard/conversations/messages.php:159
+msgid "Message is flagged as spam."
+msgstr "メッセージはスパム報告されました。"
+
+#: concrete/single_pages/dashboard/conversations/messages.php:163
+msgid "Message is approved."
+msgstr "メッセージが承認されました。"
 
 #: concrete/single_pages/dashboard/extend/connect.php:6
 msgid "External marketplace support has been disabled for this website."
@@ -15449,6 +15456,10 @@ msgstr "バックアップ復元"
 msgid "Existing Backups"
 msgstr "存在しているバックアップ"
 
+#: concrete/single_pages/dashboard/system/backup/backup.php:113
+msgid "Restore"
+msgstr "リストア"
+
 #: concrete/single_pages/dashboard/system/backup/backup.php:124
 msgid "You have no backups available."
 msgstr "利用可能なバックアップはありません。"
@@ -16440,10 +16451,6 @@ msgstr "このメッセージを削除しますか？"
 #: concrete/single_pages/account/messages/inbox.php:85
 msgid "Sent At"
 msgstr "送信日時"
-
-#: concrete/single_pages/account/messages/inbox.php:86
-msgid "Status"
-msgstr "ステータス"
 
 #: concrete/single_pages/account/messages/inbox.php:111
 msgid "No messages found."
@@ -18757,7 +18764,7 @@ msgstr "メッセージを評価"
 #: concrete/config/install/base/permissions.xml:123
 msgctxt "PermissionKeyName"
 msgid "Flag Message"
-msgstr "メッセージをフラグ"
+msgstr "メッセージを報告"
 
 #: concrete/config/install/base/permissions.xml:124
 msgctxt "PermissionKeyName"
