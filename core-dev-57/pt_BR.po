@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-03-01 05:00+0000\n"
-"PO-Revision-Date: 2015-03-01 18:41+0000\n"
+"POT-Creation-Date: 2015-03-03 05:00+0000\n"
+"PO-Revision-Date: 2015-03-04 03:11+0000\n"
 "Last-Translator: gilberto dos santos alves <gsavix@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/concrete5/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
@@ -689,8 +689,8 @@ msgstr "Remover arquivos de um diretório de recebimento."
 #: concrete/blocks/discussion/view.php:25
 #: concrete/blocks/form/form_setup_html.php:245
 #: concrete/elements/block_footer_edit.php:19
-#: concrete/elements/conversation/display.php:98
-#: concrete/elements/conversation/display.php:101
+#: concrete/elements/conversation/display.php:32
+#: concrete/elements/conversation/display.php:35
 #: concrete/elements/custom_style.php:332
 #: concrete/elements/page_types/composer/form/layout_set/control.php:18
 #: concrete/elements/permission/detail.php:88
@@ -1504,10 +1504,8 @@ msgstr "Carregando imagem..."
 msgid "Are you sure?"
 msgstr "Tem certeza?"
 
-#: concrete/elements/conversation/display.php:32
-#: concrete/elements/conversation/display.php:60
-#: concrete/elements/conversation/display.php:154
-#: concrete/elements/conversation/display.php:182
+#: concrete/elements/conversation/message/add_form.php:25
+#: concrete/elements/conversation/message/add_form.php:53
 #: concrete/tools/conversations/edit_message.php:44
 msgid "Attach Files"
 msgstr "Anexar arquivos"
@@ -1651,7 +1649,7 @@ msgstr "Tabela"
 
 #: concrete/blocks/feature/form.php:27 concrete/blocks/file/add.php:10
 #: concrete/blocks/image_slider/form_setup_html.php:251
-#: concrete/elements/conversation/display.php:104
+#: concrete/elements/conversation/display.php:38
 #: concrete/elements/conversation/message.php:117
 #: concrete/tools/i18n_redactor_js.php:17
 msgid "Link"
@@ -2234,8 +2232,7 @@ msgstr "O bloco foi adicionado à sua área de transferência."
 msgid "Content"
 msgstr "Conteúdo"
 
-#: concrete/elements/conversation/display.php:104
-#: concrete/tools/i18n_js.php:38
+#: concrete/elements/conversation/display.php:38 concrete/tools/i18n_js.php:38
 msgid "Close"
 msgstr "Fechar"
 
@@ -3425,7 +3422,7 @@ msgstr "Mais recentes primeiro"
 
 #: concrete/blocks/core_conversation/form.php:58
 #: concrete/controllers/single_page/dashboard/conversations/messages.php:55
-#: concrete/elements/conversation/display.php:110
+#: concrete/elements/conversation/display.php:44
 msgid "Earliest First"
 msgstr "Mais antigas primeiro"
 
@@ -8759,7 +8756,7 @@ msgstr "Não há nenhum item à sua espera no momento."
 msgid "None."
 msgstr "Nenhum."
 
-#: concrete/elements/conversation/display.php:132
+#: concrete/elements/conversation/display.php:66
 #: concrete/elements/gathering/display.php:29
 msgid "Load More"
 msgstr "Carregar mais"
@@ -9426,10 +9423,8 @@ msgstr "Permissões de bloco"
 msgid "Flag As Spam"
 msgstr "Marcar como spam"
 
-#: concrete/elements/conversation/display.php:58
-#: concrete/elements/conversation/display.php:152
-#: concrete/elements/conversation/display.php:180
 #: concrete/elements/conversation/message.php:98
+#: concrete/elements/conversation/message/add_form.php:51
 #: concrete/elements/conversation/message/topic.php:44
 #: concrete/single_pages/account/messages/inbox.php:46
 msgid "Reply"
@@ -9447,58 +9442,55 @@ msgstr "Compartilhar URL da mensagem no Facebook."
 msgid "Get message URL."
 msgstr "Obter URL da mensagem."
 
-#: concrete/elements/conversation/message/pending.php:26
-msgid "This message is pending approval by a moderator."
-msgstr "Essa mensagem está pendente de aprovação pelo moderador."
-
-#: concrete/elements/conversation/display.php:30
+#: concrete/elements/conversation/message/add_form.php:23
 #: concrete/single_pages/login.php:106
 msgid "Submit"
 msgstr "Enviar"
 
-#: concrete/elements/conversation/display.php:79
-#: concrete/elements/conversation/display.php:204
+#: concrete/elements/conversation/message/add_form.php:72
 msgid "Adding new posts is disabled for this conversation."
 msgstr "Adicionar novas postagens está desabilitado nesta conversa."
 
-#: concrete/elements/conversation/display.php:85
-#: concrete/elements/conversation/display.php:210
+#: concrete/elements/conversation/message/add_form.php:78
 #, php-format
 msgid "You must <a href=\"%s\">sign in</a> to post to this conversation."
 msgstr "Fazer <a href=\"%s\">Login</a> para postar essa conversação."
 
-#: concrete/elements/conversation/display.php:87
-#: concrete/elements/conversation/display.php:212
+#: concrete/elements/conversation/message/add_form.php:80
 msgid "You do not have permission to post this to conversation."
 msgstr "Não há permissão para postar esse conteúdo para uma conversação."
 
-#: concrete/elements/conversation/display.php:98
+#: concrete/elements/conversation/message/pending.php:26
+msgid "This message is pending approval by a moderator."
+msgstr "Essa mensagem está pendente de aprovação pelo moderador."
+
+#: concrete/elements/conversation/display.php:32
 msgid "Delete Message"
 msgstr "Apagar mensagem"
 
-#: concrete/elements/conversation/display.php:99
+#: concrete/elements/conversation/display.php:33
 msgid "Remove this message? Replies to it will not be removed."
 msgstr "Remover esta mensagem? Respostas não serão removidas."
 
-#: concrete/elements/conversation/display.php:101
+#: concrete/elements/conversation/display.php:35
 msgid "Delete Attachment"
 msgstr "Apagar anexo"
 
-#: concrete/elements/conversation/display.php:102
+#: concrete/elements/conversation/display.php:36
 msgid "Remove this attachment?"
 msgstr "Remover este anexo?"
 
 #: concrete/blocks/core_conversation/form.php:58
-#: concrete/elements/conversation/display.php:111
+#: concrete/elements/conversation/display.php:45
 msgid "Most Recent First"
 msgstr "Mais recentes primeiro"
 
 #: concrete/blocks/core_conversation/form.php:58
-#: concrete/elements/conversation/display.php:112
+#: concrete/elements/conversation/display.php:46
 msgid "Highest Rated"
 msgstr "Melhor votado"
 
-#: concrete/elements/conversation/display.php:120
+#: concrete/elements/conversation/display.php:54
 msgid "No messages in this conversation."
 msgstr "Nenhuma mensagem nesta conversa."
 
