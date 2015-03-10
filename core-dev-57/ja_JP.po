@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-03-01 05:00+0000\n"
-"PO-Revision-Date: 2015-03-01 13:31+0000\n"
+"POT-Creation-Date: 2015-03-09 05:00+0000\n"
+"PO-Revision-Date: 2015-03-09 10:23+0000\n"
 "Last-Translator: Takuro Hishikawa <hishikawa@concrete5.co.jp>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/projects/p/concrete5/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
@@ -526,7 +526,7 @@ msgid "facebook"
 msgstr "Facebook"
 
 #: concrete/controllers/backend/page.php:52
-#: concrete/controllers/backend/user_interface.php:39
+#: concrete/controllers/backend/user_interface.php:40
 #: concrete/controllers/backend/user_interface/block.php:47
 #: concrete/controllers/backend/user_interface/file.php:36
 #: concrete/controllers/backend/user_interface/page.php:25
@@ -541,7 +541,6 @@ msgstr "Facebook"
 #: concrete/tools/edit_area_popup.php:6
 #: concrete/tools/edit_collection_popup.php:6
 #: concrete/tools/files/selector_data.php:5 concrete/tools/pages/delete.php:10
-#: concrete/tools/pages/intelligent_search.php:7
 #: concrete/tools/pages/permissions.php:7
 #: concrete/tools/pages/permissions_access.php:7
 #: concrete/tools/pages/search_dialog.php:6
@@ -692,8 +691,8 @@ msgstr "サーバーの入稿用ディレクトリー上のファイルを削除
 #: concrete/blocks/discussion/view.php:25
 #: concrete/blocks/form/form_setup_html.php:245
 #: concrete/elements/block_footer_edit.php:19
-#: concrete/elements/conversation/display.php:98
-#: concrete/elements/conversation/display.php:101
+#: concrete/elements/conversation/display.php:32
+#: concrete/elements/conversation/display.php:35
 #: concrete/elements/custom_style.php:332
 #: concrete/elements/page_types/composer/form/layout_set/control.php:18
 #: concrete/elements/permission/detail.php:88
@@ -729,7 +728,7 @@ msgstr "サーバーの入稿用ディレクトリー上のファイルを削除
 #: concrete/single_pages/dashboard/system/basics/social.php:36
 #: concrete/single_pages/dashboard/system/basics/social.php:77
 #: concrete/single_pages/dashboard/system/files/permissions.php:22
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:272
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:167
 #: concrete/single_pages/dashboard/system/registration/authentication.php:97
 #: concrete/single_pages/dashboard/users/add.php:109
 #: concrete/single_pages/dashboard/users/add_group.php:216
@@ -1425,7 +1424,7 @@ msgstr "選択されたグループすべてに属しているユーザーのみ
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:102
 #: concrete/single_pages/dashboard/system/mail/importers.php:77
 #: concrete/single_pages/dashboard/system/multilingual/setup.php:111
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:189
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:84
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:53
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:207
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:258
@@ -1503,10 +1502,8 @@ msgstr "画像を読み込み中..."
 msgid "Are you sure?"
 msgstr "よろしいですか？"
 
-#: concrete/elements/conversation/display.php:32
-#: concrete/elements/conversation/display.php:60
-#: concrete/elements/conversation/display.php:154
-#: concrete/elements/conversation/display.php:182
+#: concrete/elements/conversation/message/add_form.php:25
+#: concrete/elements/conversation/message/add_form.php:53
 #: concrete/tools/conversations/edit_message.php:44
 msgid "Attach Files"
 msgstr "添付ファイル"
@@ -1632,7 +1629,7 @@ msgid "Add Message"
 msgstr "メッセージを追加"
 
 #: concrete/blocks/html/controller.php:28 concrete/blocks/image/form.php:44
-#: concrete/config/app.php:408 concrete/tools/i18n_redactor_js.php:13
+#: concrete/config/app.php:410 concrete/tools/i18n_redactor_js.php:13
 msgid "HTML"
 msgstr "HTML"
 
@@ -1650,7 +1647,7 @@ msgstr "テーブル"
 
 #: concrete/blocks/feature/form.php:27 concrete/blocks/file/add.php:10
 #: concrete/blocks/image_slider/form_setup_html.php:251
-#: concrete/elements/conversation/display.php:104
+#: concrete/elements/conversation/display.php:38
 #: concrete/elements/conversation/message.php:117
 #: concrete/tools/i18n_redactor_js.php:17
 msgid "Link"
@@ -2233,8 +2230,7 @@ msgstr "ブロックはクリップボードに追加されました。"
 msgid "Content"
 msgstr "記事"
 
-#: concrete/elements/conversation/display.php:104
-#: concrete/tools/i18n_js.php:38
+#: concrete/elements/conversation/display.php:38 concrete/tools/i18n_js.php:38
 msgid "Close"
 msgstr "閉じる"
 
@@ -3423,7 +3419,7 @@ msgstr "新しい順"
 
 #: concrete/blocks/core_conversation/form.php:58
 #: concrete/controllers/single_page/dashboard/conversations/messages.php:55
-#: concrete/elements/conversation/display.php:110
+#: concrete/elements/conversation/display.php:44
 msgid "Earliest First"
 msgstr "古い順"
 
@@ -4186,6 +4182,13 @@ msgstr "言語をリセットしました。"
 #: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:57
 msgid "Only the admin user may reset all strings."
 msgstr "adminユーザーのみ全ての文字列をリセットできます。"
+
+#: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:125
+#: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:132
+#: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:139
+#, php-format
+msgid "Invalid parameter received: %s"
+msgstr "不正なパラメーターを受信しました: %s"
 
 #: concrete/controllers/single_page/dashboard/system/multilingual/setup.php:103
 msgid "Multilingual content enabled"
@@ -7081,7 +7084,7 @@ msgstr "リクエスト申請者： %s"
 msgid "Approve"
 msgstr "承認"
 
-#: concrete/src/Sharing/ShareThisPage/Service.php:38
+#: concrete/src/Sharing/ShareThisPage/Service.php:42
 #, php-format
 msgid ""
 "Check out this article on %s:\n"
@@ -7090,7 +7093,7 @@ msgid ""
 "%s"
 msgstr "%sの記事を確認する\n\n%s\n%s"
 
-#: concrete/src/Sharing/ShareThisPage/Service.php:39
+#: concrete/src/Sharing/ShareThisPage/Service.php:43
 msgid "Thought you'd enjoy this article."
 msgstr "この記事はおすすめです。"
 
@@ -7977,7 +7980,6 @@ msgid "Column %s"
 msgstr "列（縦）の %s"
 
 #: concrete/elements/progress_bar.php:12
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:224
 msgid "of"
 msgstr "of"
 
@@ -8696,7 +8698,7 @@ msgstr "詳細を編集"
 
 #: concrete/elements/workflow/type_form_required.php:50
 #: concrete/single_pages/dashboard/pages/types/attributes.php:32
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:89
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:60
 #: concrete/single_pages/dashboard/users/points/actions.php:65
 #: concrete/single_pages/dashboard/users/points/assign.php:45
 msgid "Back to List"
@@ -8742,7 +8744,7 @@ msgstr "現在あなた宛ての通知はありません。"
 msgid "None."
 msgstr "なし。"
 
-#: concrete/elements/conversation/display.php:132
+#: concrete/elements/conversation/display.php:66
 #: concrete/elements/gathering/display.php:29
 msgid "Load More"
 msgstr "もっと見る"
@@ -9367,6 +9369,7 @@ msgid "Relative Path"
 msgstr "相対パス"
 
 #: concrete/elements/storage_location_types/local.php:18
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:17
 #, php-format
 msgid "Example: %s"
 msgstr "例: %s"
@@ -9409,10 +9412,8 @@ msgstr "ブロック権限"
 msgid "Flag As Spam"
 msgstr "スパム報告する"
 
-#: concrete/elements/conversation/display.php:58
-#: concrete/elements/conversation/display.php:152
-#: concrete/elements/conversation/display.php:180
 #: concrete/elements/conversation/message.php:98
+#: concrete/elements/conversation/message/add_form.php:51
 #: concrete/elements/conversation/message/topic.php:44
 #: concrete/single_pages/account/messages/inbox.php:46
 msgid "Reply"
@@ -9430,58 +9431,55 @@ msgstr "メッセージ URL を Facebook で共有する。"
 msgid "Get message URL."
 msgstr "メッセージ URL を取得する。"
 
-#: concrete/elements/conversation/message/pending.php:26
-msgid "This message is pending approval by a moderator."
-msgstr "このメッセージは管理者による承認待ちです。"
-
-#: concrete/elements/conversation/display.php:30
+#: concrete/elements/conversation/message/add_form.php:23
 #: concrete/single_pages/login.php:106
 msgid "Submit"
 msgstr "送信"
 
-#: concrete/elements/conversation/display.php:79
-#: concrete/elements/conversation/display.php:204
+#: concrete/elements/conversation/message/add_form.php:72
 msgid "Adding new posts is disabled for this conversation."
 msgstr "新しい投稿の追加はこのコメント欄では無効です。"
 
-#: concrete/elements/conversation/display.php:85
-#: concrete/elements/conversation/display.php:210
+#: concrete/elements/conversation/message/add_form.php:78
 #, php-format
 msgid "You must <a href=\"%s\">sign in</a> to post to this conversation."
 msgstr "このコメント欄に投稿するには<a href=\"%s\">ログイン</a>する必要があります。"
 
-#: concrete/elements/conversation/display.php:87
-#: concrete/elements/conversation/display.php:212
+#: concrete/elements/conversation/message/add_form.php:80
 msgid "You do not have permission to post this to conversation."
 msgstr "このコメント欄に投稿する権限がありません。"
 
-#: concrete/elements/conversation/display.php:98
+#: concrete/elements/conversation/message/pending.php:26
+msgid "This message is pending approval by a moderator."
+msgstr "このメッセージは管理者による承認待ちです。"
+
+#: concrete/elements/conversation/display.php:32
 msgid "Delete Message"
 msgstr "メッセージを削除する"
 
-#: concrete/elements/conversation/display.php:99
+#: concrete/elements/conversation/display.php:33
 msgid "Remove this message? Replies to it will not be removed."
 msgstr "このメッセージを削除しますか？このメッセージへの返信は削除されません。"
 
-#: concrete/elements/conversation/display.php:101
+#: concrete/elements/conversation/display.php:35
 msgid "Delete Attachment"
 msgstr "添付ファイルを削除する"
 
-#: concrete/elements/conversation/display.php:102
+#: concrete/elements/conversation/display.php:36
 msgid "Remove this attachment?"
 msgstr "添付ファイルを削除しますか？"
 
 #: concrete/blocks/core_conversation/form.php:58
-#: concrete/elements/conversation/display.php:111
+#: concrete/elements/conversation/display.php:45
 msgid "Most Recent First"
 msgstr "最新順"
 
 #: concrete/blocks/core_conversation/form.php:58
-#: concrete/elements/conversation/display.php:112
+#: concrete/elements/conversation/display.php:46
 msgid "Highest Rated"
 msgstr "評価の高い"
 
-#: concrete/elements/conversation/display.php:120
+#: concrete/elements/conversation/display.php:54
 msgid "No messages in this conversation."
 msgstr "このコメント欄にメッセージはありません。"
 
@@ -9908,6 +9906,7 @@ msgstr "その他の情報"
 msgid "File Preview"
 msgstr "ファイル プレビュー"
 
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:15
 #: concrete/single_pages/dashboard/users/points/assign.php:28
 #: concrete/views/dialogs/file/properties.php:245
 msgid "Comments"
@@ -10900,149 +10899,149 @@ msgstr "空白のサイト"
 msgid "Creates an empty site using the unstyled Elemental theme."
 msgstr "未設定の Elemental テーマを使って空白のサイトを作ります。"
 
-#: concrete/config/app.php:403
+#: concrete/config/app.php:405
 msgid "JPEG"
 msgstr "JPEG"
 
-#: concrete/config/app.php:404
+#: concrete/config/app.php:406
 msgid "GIF"
 msgstr "GIF"
 
-#: concrete/config/app.php:405
+#: concrete/config/app.php:407
 msgid "PNG"
 msgstr "PNG"
 
-#: concrete/config/app.php:406
+#: concrete/config/app.php:408
 msgid "Windows Bitmap"
 msgstr "Windowsビットマップ"
 
-#: concrete/config/app.php:407
+#: concrete/config/app.php:409
 msgid "TIFF"
 msgstr "TIFF"
 
-#: concrete/config/app.php:409
+#: concrete/config/app.php:411
 msgid "Flash"
 msgstr "Flash"
 
-#: concrete/blocks/feature/form.php:4 concrete/config/app.php:410
+#: concrete/blocks/feature/form.php:4 concrete/config/app.php:412
 #: concrete/single_pages/dashboard/pages/templates/add.php:27
 #: concrete/single_pages/dashboard/pages/templates/view.php:39
 msgid "Icon"
 msgstr "アイコン"
 
-#: concrete/config/app.php:411
+#: concrete/config/app.php:413
 msgid "SVG"
 msgstr "SVG"
 
-#: concrete/config/app.php:412
+#: concrete/config/app.php:414
 msgid "Windows Video"
 msgstr "Windowsビデオ"
 
-#: concrete/config/app.php:413
+#: concrete/config/app.php:415
 msgid "Quicktime"
 msgstr "QuickTime"
 
-#: concrete/config/app.php:414
+#: concrete/config/app.php:416
 msgid "AVI"
 msgstr "AVI"
 
-#: concrete/config/app.php:415
+#: concrete/config/app.php:417
 msgid "3GP"
 msgstr "3GP"
 
-#: concrete/attributes/textarea/type_form.php:9 concrete/config/app.php:416
+#: concrete/attributes/textarea/type_form.php:9 concrete/config/app.php:418
 msgid "Plain Text"
 msgstr "テキスト"
 
-#: concrete/config/app.php:417
+#: concrete/config/app.php:419
 msgid "CSV"
 msgstr "CSV"
 
-#: concrete/config/app.php:418
+#: concrete/config/app.php:420
 msgid "XML"
 msgstr "XML"
 
-#: concrete/config/app.php:419
+#: concrete/config/app.php:421
 msgid "PHP"
 msgstr "PHP"
 
-#: concrete/config/app.php:420
+#: concrete/config/app.php:422
 msgid "MS Word"
 msgstr "MSワード"
 
-#: concrete/config/app.php:421
+#: concrete/config/app.php:423
 msgid "Stylesheet"
 msgstr "スタイルシート"
 
-#: concrete/config/app.php:422 concrete/config/app.php:425
+#: concrete/config/app.php:424 concrete/config/app.php:427
 msgid "MP4"
 msgstr "MP4"
 
-#: concrete/config/app.php:423
+#: concrete/config/app.php:425
 msgid "FLV"
 msgstr "FLV"
 
-#: concrete/config/app.php:424
+#: concrete/config/app.php:426
 msgid "MP3"
 msgstr "MP3"
 
-#: concrete/config/app.php:426
+#: concrete/config/app.php:428
 msgid "Realaudio"
 msgstr "Realaudio"
 
-#: concrete/config/app.php:427
+#: concrete/config/app.php:429
 msgid "Windows Audio"
 msgstr "Windowsオーディオ"
 
-#: concrete/config/app.php:428
+#: concrete/config/app.php:430
 msgid "Rich Text"
 msgstr "リッチテキスト"
 
-#: concrete/config/app.php:429
+#: concrete/config/app.php:431
 msgid "JavaScript"
 msgstr "JavaScript"
 
-#: concrete/config/app.php:430
+#: concrete/config/app.php:432
 msgid "PDF"
 msgstr "PDF"
 
-#: concrete/config/app.php:431
+#: concrete/config/app.php:433
 msgid "Photoshop"
 msgstr "Photoshop"
 
-#: concrete/config/app.php:432
+#: concrete/config/app.php:434
 msgid "MPEG"
 msgstr "MPEG"
 
-#: concrete/config/app.php:433
+#: concrete/config/app.php:435
 msgid "MS Excel"
 msgstr "MSエクセル"
 
-#: concrete/config/app.php:434
+#: concrete/config/app.php:436
 msgid "MS Powerpoint"
 msgstr "MSパワーポイント"
 
-#: concrete/config/app.php:435
+#: concrete/config/app.php:437
 msgid "TAR Archive"
 msgstr "TAR書庫"
 
-#: concrete/config/app.php:436
+#: concrete/config/app.php:438
 msgid "Zip Archive"
 msgstr "ZIP書庫"
 
-#: concrete/config/app.php:437
+#: concrete/config/app.php:439
 msgid "GZip Archive"
 msgstr "GZip書庫"
 
-#: concrete/config/app.php:438
+#: concrete/config/app.php:440
 msgid "OGG"
 msgstr "OGG"
 
-#: concrete/config/app.php:439
+#: concrete/config/app.php:441
 msgid "OGG Video"
 msgstr "OGG ビデオ"
 
-#: concrete/config/app.php:440
+#: concrete/config/app.php:442
 msgid "WebM"
 msgstr "WebM"
 
@@ -11126,15 +11125,15 @@ msgstr "サービス"
 msgid "Choose Sharing Service"
 msgstr "シェアサービスを選択"
 
-#: concrete/blocks/share_this_page/controller.php:26
+#: concrete/blocks/share_this_page/controller.php:28
 msgid "Allows users to share this page with social networks."
 msgstr "ソーシャル・ネットワークでこのページをシェアできるようにします。"
 
-#: concrete/blocks/share_this_page/controller.php:31
+#: concrete/blocks/share_this_page/controller.php:33
 msgid "Share This Page"
 msgstr "このページをシェア"
 
-#: concrete/blocks/share_this_page/controller.php:80
+#: concrete/blocks/share_this_page/controller.php:87
 msgid "You must choose at least one service."
 msgstr "少なくともひとつのサービスを選択してください。"
 
@@ -14706,25 +14705,129 @@ msgid ""
 "will block 192.168.15.1, 192.168.15.2, etc...)"
 msgstr "ブロックされたいIPアドレスを1行1アドレス毎に入力してください。アドレスの範囲を指定されたい場合は、ワイルドカード(*)を使用してください。（例：「192.168.15.*」と入力すると、192.168.15.1から、192.168.15.255までのアドレスがブロックされます。）"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:45
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:71
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:14
+msgid ""
+"The current item has changed.\n"
+"If you proceed you will lose your changes.\n"
+"\n"
+"Do you want to proceed anyway?"
+msgstr "現在の項目は変更されています。\n続けると、変更が破棄されます。\n\nこのまま続けてもよろしいですか？"
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:16
+msgid "Context"
+msgstr "文脈"
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:18
+msgid "Filter"
+msgstr "絞り込み"
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:19
 msgid "Original String"
 msgstr "オリジナルの文字列"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:46
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:75
-msgid "Translation"
-msgstr "翻訳"
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:20
+msgid "Please fill-in all plural forms"
+msgstr "複数形をすべて入力してください"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:65
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:21
+msgid "Plural Original String"
+msgstr "複数形のオリジナル文字列"
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:22
+msgid "References"
+msgstr "参照"
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:23
+msgid "Save & Continue"
+msgstr "保存して続ける"
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:24
+msgid "Search for..."
+msgstr "検索..."
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:25
+msgid "Search in contexts"
+msgstr "文脈内で検索"
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:26
+msgid "Search in originals"
+msgstr "原文を検索"
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:27
+msgid "Search in translations"
+msgstr "訳文を検索"
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:28
+msgid "Show approved"
+msgstr "承認済を表示"
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:29
+msgid "Show translated"
+msgstr "翻訳済を表示"
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:30
+msgid "Show unapproved"
+msgstr "未承認を表示"
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:31
+msgid "Show untranslated"
+msgstr "未翻訳を表示"
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:32
+msgid "Singular Original String"
+msgstr "単数形のオリジナル文字列"
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:33
+msgid "Toggle Dropdown"
+msgstr "ドロップダウンを切り替え"
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:34
+msgid "[TAB] Forward"
+msgstr "[TAB] 進める"
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:35
+msgid "[SHIFT]+[TAB] Backward"
+msgstr "[SHIFT]+[TAB] 戻る"
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:36
 msgid "Translate"
 msgstr "翻訳する"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:78
-msgid "Save &amp; Continue"
-msgstr "保存して続ける"
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:37
+msgid "Translation"
+msgstr "翻訳"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:170
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:39
+msgctxt "PluralCase"
+msgid "Zero"
+msgstr "ゼロ"
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:40
+msgctxt "PluralCase"
+msgid "One"
+msgstr "ひとつの"
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:41
+msgctxt "PluralCase"
+msgid "Two"
+msgstr "ふたつの"
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:42
+msgctxt "PluralCase"
+msgid "Few"
+msgstr "いくつかの"
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:43
+msgctxt "PluralCase"
+msgid "Many"
+msgstr "多くの"
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:44
+msgctxt "PluralCase"
+msgid "Other"
+msgstr "他の"
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:67
 #, php-format
 msgid ""
 "You must create the directory %s and make it writable before you may run "
@@ -14732,59 +14835,65 @@ msgid ""
 msgstr "このツールを実行する前に、%s ディレクトリを作成して書き込み可能に設定する必要があります。また、このディレクトリ内のファイルも書き込み可能である必要があります。"
 
 #: concrete/single_pages/dashboard/system/multilingual/setup.php:112
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:190
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:85
 msgid "Locale"
 msgstr "地域"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:191
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:86
 msgid "Completion"
 msgstr "進捗"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:192
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:87
 msgid "Last Updated"
 msgstr "最終更新"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:232
+#. %1$s is the partial number, %2$s is the total number. Example: 2 of 3
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:116
+#, php-format
+msgid "%1$s of %2$s"
+msgstr "%2$s ページ中の %1$s"
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:125
 msgid "File not found."
 msgstr "ファイルが見つかりません。"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:235
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:128
 msgid "N/A"
 msgstr "なし"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:254
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:150
 msgid "Reload Strings"
 msgstr "文字列を再読み込み"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:255
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:151
 msgid "Export to .PO"
 msgstr ".POファイルにエクスポート"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:257
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:153
 msgid "Reset All"
 msgstr "全てをリセット"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:269
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:164
 msgid ""
 "Are you sure? This will remove all translations from all languages, in the "
 "database and in your site PO files. This cannot be undone."
 msgstr "本当に実行しますか？この作業は全ての言語の全ての翻訳を、データベースまたはサイトのPOファイルから削除します。この作業は元に戻せません。"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:273
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:168
 msgid "Confirm Reset"
 msgstr "確認してリセット"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:276
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:172
 msgid "Only the admin user may reset all languages."
 msgstr "adminユーザーのみ全ての言語をリセットできます。"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:288
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:184
 msgid "Reset Languages"
 msgstr "言語をリセット"
 
 #: concrete/single_pages/dashboard/system/multilingual/setup.php:129
 #: concrete/single_pages/dashboard/system/multilingual/setup.php:216
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:305
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:203
 msgid "You have not created any multilingual content sections yet."
 msgstr "サイトに言語セクションが作成されていません。"
 
