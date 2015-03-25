@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-03-18 05:00+0000\n"
-"PO-Revision-Date: 2015-03-18 10:00+0000\n"
+"POT-Creation-Date: 2015-03-24 05:00+0000\n"
+"PO-Revision-Date: 2015-03-24 10:00+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Russian (Russia) (http://www.transifex.com/projects/p/concrete5/language/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -355,7 +355,6 @@ msgstr "Введите ваш email адрес ниже. Мы отошлем в�
 
 #: concrete/authentication/concrete/forgot_password.php:17
 #: concrete/authentication/concrete/form.php:13
-#: concrete/blocks/core_conversation/form.php:228
 #: concrete/blocks/form/form_setup_html.php:130
 #: concrete/blocks/form/form_setup_html.php:200
 #: concrete/controllers/single_page/login.php:181
@@ -364,7 +363,6 @@ msgstr "Введите ваш email адрес ниже. Мы отошлем в�
 #: concrete/elements/permission/keys/edit_user_properties.php:68
 #: concrete/mail/user_register.php:16 concrete/mail/user_register.php:47
 #: concrete/mail/user_register_approval_required.php:45
-#: concrete/single_pages/dashboard/system/conversations/settings.php:51
 #: concrete/single_pages/dashboard/system/mail/importers.php:79
 #: concrete/single_pages/dashboard/users/add.php:34
 #: concrete/single_pages/dashboard/users/search.php:54
@@ -550,6 +548,7 @@ msgstr "Доступ запрещен"
 #: concrete/controllers/backend/file.php:111
 #: concrete/controllers/backend/user.php:58
 #: concrete/controllers/backend/user.php:83
+#: concrete/controllers/dialog/conversation/subscribe.php:28
 #: concrete/controllers/dialog/file/properties.php:108
 #: concrete/controllers/dialog/file/properties.php:111
 #: concrete/controllers/dialog/file/thumbnails/edit.php:35
@@ -688,8 +687,8 @@ msgstr "Удалить файлы из директории /incoming"
 #: concrete/blocks/discussion/view.php:25
 #: concrete/blocks/form/form_setup_html.php:245
 #: concrete/elements/block_footer_edit.php:19
-#: concrete/elements/conversation/display.php:32
-#: concrete/elements/conversation/display.php:35
+#: concrete/elements/conversation/display.php:33
+#: concrete/elements/conversation/display.php:36
 #: concrete/elements/custom_style.php:332
 #: concrete/elements/page_types/composer/form/layout_set/control.php:18
 #: concrete/elements/permission/detail.php:88
@@ -1336,7 +1335,7 @@ msgstr "Сколько времени будут эти права действ�
 #: concrete/single_pages/dashboard/system/conversations/bannedwords.php:63
 #: concrete/single_pages/dashboard/system/conversations/permissions.php:21
 #: concrete/single_pages/dashboard/system/conversations/points.php:25
-#: concrete/single_pages/dashboard/system/conversations/settings.php:57
+#: concrete/single_pages/dashboard/system/conversations/settings.php:59
 #: concrete/single_pages/dashboard/system/environment/debug.php:61
 #: concrete/single_pages/dashboard/system/environment/entities.php:30
 #: concrete/single_pages/dashboard/system/environment/logging.php:41
@@ -1507,8 +1506,8 @@ msgstr "Загрузка изображения..."
 msgid "Are you sure?"
 msgstr "Вы уверены?"
 
-#: concrete/elements/conversation/message/add_form.php:25
-#: concrete/elements/conversation/message/add_form.php:53
+#: concrete/elements/conversation/message/add_form.php:26
+#: concrete/elements/conversation/message/add_form.php:58
 #: concrete/tools/conversations/edit_message.php:44
 msgid "Attach Files"
 msgstr "Прикрепить файлы"
@@ -1634,7 +1633,7 @@ msgid "Add Message"
 msgstr "Добавить сообщение"
 
 #: concrete/blocks/html/controller.php:28 concrete/blocks/image/form.php:44
-#: concrete/config/app.php:411 concrete/tools/i18n_redactor_js.php:13
+#: concrete/config/app.php:417 concrete/tools/i18n_redactor_js.php:13
 msgid "HTML"
 msgstr "HTML"
 
@@ -1652,7 +1651,7 @@ msgstr "Таблица"
 
 #: concrete/blocks/feature/form.php:27 concrete/blocks/file/add.php:10
 #: concrete/blocks/image_slider/form_setup_html.php:251
-#: concrete/elements/conversation/display.php:38
+#: concrete/elements/conversation/display.php:39
 #: concrete/elements/conversation/message.php:117
 #: concrete/tools/i18n_redactor_js.php:17
 msgid "Link"
@@ -2235,7 +2234,7 @@ msgstr "Блок добавлен в ваш буфер обмена."
 msgid "Content"
 msgstr "Контент"
 
-#: concrete/elements/conversation/display.php:38 concrete/tools/i18n_js.php:38
+#: concrete/elements/conversation/display.php:39 concrete/tools/i18n_js.php:38
 msgid "Close"
 msgstr "Закрыть"
 
@@ -3429,7 +3428,7 @@ msgstr "Самые новые в начале"
 
 #: concrete/blocks/core_conversation/form.php:58
 #: concrete/controllers/single_page/dashboard/conversations/messages.php:55
-#: concrete/elements/conversation/display.php:44
+#: concrete/elements/conversation/display.php:45
 msgid "Earliest First"
 msgstr "Самые старые в начале"
 
@@ -3724,7 +3723,7 @@ msgstr "Недопустимые символы в названии набора
 msgid "Group set added successfully."
 msgstr "Набор групп добавлен успешно."
 
-#: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:182
+#: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:186
 #: concrete/controllers/single_page/dashboard/users/group_sets.php:51
 msgid "Group set deleted successfully."
 msgstr "Набор групп успешно удален."
@@ -4690,59 +4689,59 @@ msgstr "Настройки кэширования сохранены."
 msgid "Database query log cleared."
 msgstr "Журнал запросов к базе данных очищен."
 
-#: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:39
-#: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:62
+#: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:43
+#: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:66
 msgid "No job specified."
 msgstr "Задача не определена."
 
-#: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:56
+#: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:60
 msgid "This job cannot be uninstalled."
 msgstr "Эта задача не может быть удалена."
 
-#: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:59
+#: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:63
 msgid "Job not found."
 msgstr "Задача не найдена."
 
-#: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:69
+#: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:73
 msgid "Job successfully uninstalled."
 msgstr "Задача успешно удалена."
 
-#: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:75
+#: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:79
 msgid "Job successfully installed."
 msgstr "Задача успешно установлена."
 
-#: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:91
+#: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:95
 msgid "All running jobs have been reset."
 msgstr "Все работающие задачи были остановлены."
 
-#: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:97
+#: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:101
 msgid "Job set added."
 msgstr "Набор задач добавлен."
 
-#: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:119
-#: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:160
-#: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:198
+#: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:123
+#: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:164
+#: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:202
 msgid "Invalid Job set."
 msgstr "Неверный набор задач."
 
-#: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:149
+#: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:153
 msgid "Job Set updated successfully."
 msgstr "Набор задач успешно обновлен."
 
-#: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:164
-#: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:218
+#: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:168
+#: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:222
 msgid "Specify a name for your Job set."
 msgstr "Укажите имя для набора задач."
 
-#: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:193
+#: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:197
 msgid "You cannot delete the default Job set."
 msgstr "Вы не можете удалить набор задач по умолчанию."
 
-#: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:253
+#: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:257
 msgid "Job schedule updated successfully."
 msgstr "Расписание задачи успешно обновлено."
 
-#: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:269
+#: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:273
 msgid "Job Set schedule updated successfully."
 msgstr "Расписание набора задач успешно обновлено."
 
@@ -6873,7 +6872,7 @@ msgstr "Укажите пользователя"
 msgid "Select User"
 msgstr "Укажите пользователя"
 
-#: concrete/src/Form/Service/Widget/UserSelector.php:101
+#: concrete/src/Form/Service/Widget/UserSelector.php:100
 msgid "No users selected."
 msgstr "Пользователь не выбран."
 
@@ -8791,7 +8790,7 @@ msgstr "Для вас ничего нет"
 msgid "None."
 msgstr "Ничего"
 
-#: concrete/elements/conversation/display.php:66
+#: concrete/elements/conversation/display.php:67
 #: concrete/elements/gathering/display.php:29
 msgid "Load More"
 msgstr "Еще"
@@ -9452,7 +9451,7 @@ msgid "Flag As Spam"
 msgstr "Отметить как спам"
 
 #: concrete/elements/conversation/message.php:98
-#: concrete/elements/conversation/message/add_form.php:51
+#: concrete/elements/conversation/message/add_form.php:56
 #: concrete/elements/conversation/message/topic.php:44
 #: concrete/single_pages/account/messages/inbox.php:46
 msgid "Reply"
@@ -9470,21 +9469,29 @@ msgstr "Поделиться ссылкой в Facebook."
 msgid "Get message URL."
 msgstr "Получить URL адрес сообщения."
 
-#: concrete/elements/conversation/message/add_form.php:23
+#: concrete/elements/conversation/message/add_form.php:24
 #: concrete/single_pages/login.php:106
 msgid "Submit"
 msgstr "Отправить"
 
-#: concrete/elements/conversation/message/add_form.php:72
+#: concrete/elements/conversation/message/add_form.php:29
+msgid "Un-Subscribe"
+msgstr ""
+
+#: concrete/elements/conversation/message/add_form.php:30
+msgid "Subscribe to Conversation"
+msgstr ""
+
+#: concrete/elements/conversation/message/add_form.php:77
 msgid "Adding new posts is disabled for this conversation."
 msgstr "Добавление новых сообщений отключено для данной беседы."
 
-#: concrete/elements/conversation/message/add_form.php:78
+#: concrete/elements/conversation/message/add_form.php:83
 #, php-format
 msgid "You must <a href=\"%s\">sign in</a> to post to this conversation."
 msgstr "Необходимо <a href=\"%s\">войти</a> для участия в данной беседе."
 
-#: concrete/elements/conversation/message/add_form.php:80
+#: concrete/elements/conversation/message/add_form.php:85
 msgid "You do not have permission to post this to conversation."
 msgstr "У вас недостаточно прав для публикации сообщений в этой беседе."
 
@@ -9492,33 +9499,33 @@ msgstr "У вас недостаточно прав для публикации 
 msgid "This message is pending approval by a moderator."
 msgstr "Сообщение ожидает одобрения модератором."
 
-#: concrete/elements/conversation/display.php:32
+#: concrete/elements/conversation/display.php:33
 msgid "Delete Message"
 msgstr "Удалить"
 
-#: concrete/elements/conversation/display.php:33
+#: concrete/elements/conversation/display.php:34
 msgid "Remove this message? Replies to it will not be removed."
 msgstr "Удалить сообщение? Ответы на него удалены не будут."
 
-#: concrete/elements/conversation/display.php:35
+#: concrete/elements/conversation/display.php:36
 msgid "Delete Attachment"
 msgstr "Удалить"
 
-#: concrete/elements/conversation/display.php:36
+#: concrete/elements/conversation/display.php:37
 msgid "Remove this attachment?"
 msgstr "Удалить это вложение?"
 
 #: concrete/blocks/core_conversation/form.php:58
-#: concrete/elements/conversation/display.php:45
+#: concrete/elements/conversation/display.php:46
 msgid "Most Recent First"
 msgstr "Вначале новые"
 
 #: concrete/blocks/core_conversation/form.php:58
-#: concrete/elements/conversation/display.php:46
+#: concrete/elements/conversation/display.php:47
 msgid "Highest Rated"
 msgstr "Рейтинговый"
 
-#: concrete/elements/conversation/display.php:54
+#: concrete/elements/conversation/display.php:55
 msgid "No messages in this conversation."
 msgstr "Нет сообщений в данной беседе."
 
@@ -10043,6 +10050,24 @@ msgid ""
 "The thumbnail you requested was not included in the available thumbnails, is"
 " your source image smaller than the thumbnail?"
 msgstr "Запрашиваемой миниатюры нет в списке доступных миниатюр сайта, возможно ваше изображение меньше, чем требуемый размер миниатюры?"
+
+#: concrete/views/dialogs/conversation/subscribe.php:8
+msgid ""
+"Are you sure you want to unsubscribe from this conversation? You will no "
+"longer receive email updates when new messages are posted."
+msgstr ""
+
+#: concrete/views/dialogs/conversation/subscribe.php:11
+msgid "Unsubscribe"
+msgstr ""
+
+#: concrete/views/dialogs/conversation/subscribe.php:14
+msgid "Subscribe to receive email updates when new messages are posted."
+msgstr ""
+
+#: concrete/views/dialogs/conversation/subscribe.php:16
+msgid "Subscribe"
+msgstr ""
 
 #: concrete/views/panels/page/versions.php:35
 #: concrete/views/panels/sitemap.php:5
@@ -10960,153 +10985,153 @@ msgstr "Пустой сайт"
 msgid "Creates an empty site using the unstyled Elemental theme."
 msgstr "Создание пустого сайта с использованием простейшей  темы без стилей."
 
-#: concrete/config/app.php:406
+#: concrete/config/app.php:412
 msgid "JPEG"
 msgstr "JPEG"
 
-#: concrete/config/app.php:407
+#: concrete/config/app.php:413
 msgid "GIF"
 msgstr "GIF"
 
-#: concrete/config/app.php:408
+#: concrete/config/app.php:414
 msgid "PNG"
 msgstr "PNG"
 
-#: concrete/config/app.php:409
+#: concrete/config/app.php:415
 msgid "Windows Bitmap"
 msgstr "Windows Bitmap"
 
-#: concrete/config/app.php:410
+#: concrete/config/app.php:416
 msgid "TIFF"
 msgstr "TIFF"
 
-#: concrete/config/app.php:412
+#: concrete/config/app.php:418
 msgid "Flash"
 msgstr "Flash"
 
-#: concrete/blocks/feature/form.php:4 concrete/config/app.php:413
+#: concrete/blocks/feature/form.php:4 concrete/config/app.php:419
 #: concrete/single_pages/dashboard/pages/templates/add.php:27
 #: concrete/single_pages/dashboard/pages/templates/view.php:39
 msgid "Icon"
 msgstr "Значок"
 
-#: concrete/config/app.php:414
+#: concrete/config/app.php:420
 msgid "SVG"
 msgstr "SVG"
 
-#: concrete/config/app.php:415
+#: concrete/config/app.php:421
 msgid "Windows Video"
 msgstr "Windows Video"
 
-#: concrete/config/app.php:416
+#: concrete/config/app.php:422
 msgid "Quicktime"
 msgstr "Quicktime"
 
-#: concrete/config/app.php:417
+#: concrete/config/app.php:423
 msgid "AVI"
 msgstr "AVI"
 
-#: concrete/config/app.php:418
+#: concrete/config/app.php:424
 msgid "3GP"
 msgstr "3GP"
 
-#: concrete/attributes/textarea/type_form.php:9 concrete/config/app.php:419
+#: concrete/attributes/textarea/type_form.php:9 concrete/config/app.php:425
 msgid "Plain Text"
 msgstr "Простой текст"
 
-#: concrete/config/app.php:420
+#: concrete/config/app.php:426
 msgid "CSV"
 msgstr "CSV"
 
-#: concrete/config/app.php:421
+#: concrete/config/app.php:427
 msgid "XML"
 msgstr "XML"
 
-#: concrete/config/app.php:422
+#: concrete/config/app.php:428
 msgid "PHP"
 msgstr "PHP"
 
-#: concrete/config/app.php:423
+#: concrete/config/app.php:429
 msgid "MS Word"
 msgstr "MS Word"
 
-#: concrete/config/app.php:424
+#: concrete/config/app.php:430
 msgid "Stylesheet"
 msgstr "Stylesheet"
 
-#: concrete/config/app.php:425
+#: concrete/config/app.php:431
 msgid "MP4"
 msgstr "MP4"
 
-#: concrete/config/app.php:426
+#: concrete/config/app.php:432
 msgid "FLV"
 msgstr "FLV"
 
-#: concrete/config/app.php:427
+#: concrete/config/app.php:433
 msgid "MP3"
 msgstr "MP3"
 
-#: concrete/config/app.php:428
+#: concrete/config/app.php:434
 msgid "MP4 Audio"
 msgstr ""
 
-#: concrete/config/app.php:429
+#: concrete/config/app.php:435
 msgid "Realaudio"
 msgstr "Realaudio"
 
-#: concrete/config/app.php:430
+#: concrete/config/app.php:436
 msgid "Windows Audio"
 msgstr "Windows Audio"
 
-#: concrete/config/app.php:431
+#: concrete/config/app.php:437
 msgid "Rich Text"
 msgstr "Форматированный текст"
 
-#: concrete/config/app.php:432
+#: concrete/config/app.php:438
 msgid "JavaScript"
 msgstr "JavaScript"
 
-#: concrete/config/app.php:433
+#: concrete/config/app.php:439
 msgid "PDF"
 msgstr "PDF"
 
-#: concrete/config/app.php:434
+#: concrete/config/app.php:440
 msgid "Photoshop"
 msgstr "Photoshop"
 
-#: concrete/config/app.php:435
+#: concrete/config/app.php:441
 msgid "MPEG"
 msgstr "MPEG"
 
-#: concrete/config/app.php:436
+#: concrete/config/app.php:442
 msgid "MS Excel"
 msgstr "MS Excel"
 
-#: concrete/config/app.php:437
+#: concrete/config/app.php:443
 msgid "MS Powerpoint"
 msgstr "MS Powerpoint"
 
-#: concrete/config/app.php:438
+#: concrete/config/app.php:444
 msgid "TAR Archive"
 msgstr "Архив TAR"
 
-#: concrete/config/app.php:439
+#: concrete/config/app.php:445
 msgid "Zip Archive"
 msgstr "Архив Zip"
 
-#: concrete/config/app.php:440
+#: concrete/config/app.php:446
 msgid "GZip Archive"
 msgstr "Архив GZip"
 
-#: concrete/config/app.php:441
+#: concrete/config/app.php:447
 msgid "OGG"
 msgstr "OGG"
 
-#: concrete/config/app.php:442
+#: concrete/config/app.php:448
 msgid "OGG Video"
 msgstr "OGG видео"
 
-#: concrete/config/app.php:443
+#: concrete/config/app.php:449
 msgid "WebM"
 msgstr "WebM"
 
@@ -11887,10 +11912,20 @@ msgstr "Уведомление"
 msgid "Override Global Settings"
 msgstr "Переопределение глобальных настроек"
 
-#: concrete/blocks/core_conversation/form.php:223
-#: concrete/single_pages/dashboard/system/conversations/settings.php:47
-msgid "Send an email when a message is posted."
-msgstr "Отправлять на почту при публикации сообщения."
+#: concrete/blocks/core_conversation/form.php:222
+#: concrete/single_pages/dashboard/system/conversations/settings.php:45
+msgid "Users To Receive Conversation Notifications"
+msgstr ""
+
+#: concrete/blocks/core_conversation/form.php:227
+#: concrete/single_pages/dashboard/system/conversations/settings.php:49
+msgid "Subscribe Option"
+msgstr ""
+
+#: concrete/blocks/core_conversation/form.php:230
+#: concrete/single_pages/dashboard/system/conversations/settings.php:52
+msgid "Yes, allow registered users to choose to subscribe to conversations."
+msgstr ""
 
 #: concrete/blocks/core_conversation/controller.php:33
 msgid "Displays conversations on a page."
