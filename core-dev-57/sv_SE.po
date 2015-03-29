@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-03-25 05:00+0000\n"
-"PO-Revision-Date: 2015-03-25 11:21+0000\n"
+"POT-Creation-Date: 2015-03-28 05:00+0000\n"
+"PO-Revision-Date: 2015-03-28 10:21+0000\n"
 "Last-Translator: Fredrik Lindau <fredrik@fxlindau.se>\n"
 "Language-Team: Swedish (Sweden) (http://www.transifex.com/projects/p/concrete5/language/sv_SE/)\n"
 "MIME-Version: 1.0\n"
@@ -786,6 +786,7 @@ msgstr "Ta bort filer från katalogen incoming/"
 msgid "Cancel"
 msgstr "Avbryt"
 
+#: concrete/elements/files/search.php:48
 #: concrete/single_pages/dashboard/files/search.php:21
 #: concrete/tools/files/import.php:124
 msgid "Add Files"
@@ -810,7 +811,7 @@ msgstr "Lagringsplats för filer sparad."
 #: concrete/elements/panels/page.php:111
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:58
 #: concrete/single_pages/dashboard/pages/types/view.php:50
-#: concrete/src/Package/Package.php:442
+#: concrete/src/Package/Package.php:455
 #: concrete/tools/files/permissions.php:51 concrete/tools/i18n_js.php:139
 #: concrete/tools/i18n_js.php:199
 msgid "Permissions"
@@ -1103,7 +1104,7 @@ msgstr "Lista"
 
 #: concrete/blocks/search/controller.php:93
 #: concrete/config/install/packages/elemental_full/content.xml:2337
-#: concrete/elements/files/search.php:33 concrete/elements/files/search.php:76
+#: concrete/elements/files/search.php:33 concrete/elements/files/search.php:85
 #: concrete/elements/group/search.php:27 concrete/elements/pages/search.php:39
 #: concrete/elements/pages/search.php:49 concrete/elements/users/search.php:49
 #: concrete/elements/users/search.php:80
@@ -2770,7 +2771,7 @@ msgid "Choose New File"
 msgstr "Välj ny fil"
 
 #: concrete/config/install/base/dashboard.xml:840
-#: concrete/elements/files/search.php:21 concrete/elements/files/search.php:55
+#: concrete/elements/files/search.php:21 concrete/elements/files/search.php:64
 #: concrete/tools/i18n_js.php:198
 msgid "Sets"
 msgstr "Grupper"
@@ -3215,7 +3216,7 @@ msgstr "Du saknar behörighet att lägga till en sida av den här typen på det 
 
 #: concrete/controllers/panel/page/attributes.php:54
 #: concrete/elements/dashboard/attributes_table.php:72
-#: concrete/elements/files/search.php:60
+#: concrete/elements/files/search.php:69
 #: concrete/views/dialogs/page/add.php:21
 #: concrete/views/dialogs/page/add_block_list.php:54
 #: concrete/views/panels/add.php:335
@@ -6228,6 +6229,11 @@ msgstr "Gruppträd"
 msgid "Invalid schema version found. Expecting 0.3"
 msgstr "Ogiltig schemaversion hittad. Förväntad version 0.3"
 
+#: concrete/src/Database/Schema/Parser/ArrayParser.php:27
+#, php-format
+msgid "Invalid column definition: %s in table %s"
+msgstr "Ogiltig definition för kolumn: %s i tabell %s"
+
 #: concrete/src/Database/DatabaseStructureManager.php:85
 #, php-format
 msgid ""
@@ -6652,129 +6658,129 @@ msgid ""
 "5.7."
 msgstr "Kunde inte installera %s. Kontrollera att paketet har uppdaterats för 5.7."
 
-#: concrete/src/Package/Package.php:412
+#: concrete/src/Package/Package.php:425
 msgid "Attribute categories"
 msgstr "Egenskapskategorier"
 
-#: concrete/src/Package/Package.php:415
+#: concrete/src/Package/Package.php:428
 msgid "Permission categories"
 msgstr "Behörighetskategorier"
 
-#: concrete/src/Package/Package.php:418
+#: concrete/src/Package/Package.php:431
 msgid "Permission access entity types"
 msgstr "Behörighet enhetstyper för åtkomst"
 
-#: concrete/src/Package/Package.php:421
+#: concrete/src/Package/Package.php:434
 msgid "Attribute keys"
 msgstr "Egenskapsnycklar"
 
-#: concrete/src/Package/Package.php:424
+#: concrete/src/Package/Package.php:437
 msgid "Attribute sets"
 msgstr "Egenskapsgrupper"
 
-#: concrete/src/Package/Package.php:427
+#: concrete/src/Package/Package.php:440
 msgid "Group sets"
 msgstr "Gruppuppsättning"
 
-#: concrete/src/Package/Package.php:430
+#: concrete/src/Package/Package.php:443
 msgid "Page types"
 msgstr "Sidtyper"
 
-#: concrete/src/Package/Package.php:433
+#: concrete/src/Package/Package.php:446
 msgid "Mail importers"
 msgstr "Importfilter för e-post"
 
-#: concrete/src/Package/Package.php:436
+#: concrete/src/Package/Package.php:449
 msgid "Block types"
 msgstr "Blocktyper"
 
-#: concrete/src/Package/Package.php:439
+#: concrete/src/Package/Package.php:452
 msgid "Page themes"
 msgstr "Sidoteman"
 
-#: concrete/src/Package/Package.php:445
+#: concrete/src/Package/Package.php:458
 msgid "Single pages"
 msgstr "Specialsidor"
 
-#: concrete/src/Package/Package.php:448
+#: concrete/src/Package/Package.php:461
 msgid "Attribute types"
 msgstr "Egenskapstyper"
 
-#: concrete/src/Package/Package.php:451
+#: concrete/src/Package/Package.php:464
 msgid "Captcha libraries"
 msgstr "Captcha-bibliotek."
 
-#: concrete/src/Package/Package.php:454
+#: concrete/src/Package/Package.php:467
 msgid "Antispam libraries"
 msgstr "Anti-spam-bibliotek"
 
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:39
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:299
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:418
-#: concrete/src/Package/Package.php:457
+#: concrete/src/Package/Package.php:470
 msgid "Jobs"
 msgstr "Jobb"
 
-#: concrete/src/Package/Package.php:460
+#: concrete/src/Package/Package.php:473
 msgid "Workflow types"
 msgstr "Typer av arbetsflöden"
 
-#: concrete/src/Package/Package.php:463
+#: concrete/src/Package/Package.php:476
 msgid "Workflow progress categories"
 msgstr "Kategorier för olika lägen i arbetsflöden"
 
 #: concrete/single_pages/dashboard/system/files/storage.php:99
-#: concrete/src/Package/Package.php:466
+#: concrete/src/Package/Package.php:479
 msgid "Storage Locations"
 msgstr "Lagringsplatser"
 
 #: concrete/single_pages/dashboard/system/multilingual/page_report.php:88
 #: concrete/single_pages/dashboard/system/multilingual/page_report.php:96
-#: concrete/src/Package/Package.php:525
+#: concrete/src/Package/Package.php:538
 #, php-format
 msgid "%s (%s)"
 msgstr "%s (%s)"
 
-#: concrete/src/Package/Package.php:531
+#: concrete/src/Package/Package.php:544
 #, php-format
 msgid " %s (%s)"
 msgstr " %s (%s)"
 
-#: concrete/src/Package/Package.php:765
+#: concrete/src/Package/Package.php:778
 msgid "You've already installed that package."
 msgstr "Du har redan installerat det paketet."
 
-#: concrete/src/Package/Package.php:766
+#: concrete/src/Package/Package.php:779
 msgid "Invalid Package."
 msgstr "Ogiltigt paket."
 
-#: concrete/src/Package/Package.php:767
+#: concrete/src/Package/Package.php:780
 #, php-format
 msgid "This package requires concrete5 version %s or greater."
 msgstr "Detta paket kräver concrete5 version %s eller senare."
 
-#: concrete/src/Package/Package.php:768
+#: concrete/src/Package/Package.php:781
 msgid "An error occurred while downloading the package."
 msgstr "Ett fel ägde rum när paketet laddades ned."
 
-#: concrete/src/Package/Package.php:769
+#: concrete/src/Package/Package.php:782
 msgid "concrete5 was not able to save the package after download."
 msgstr "concrete5 kunde inte spara paketet efter nedladdningen."
 
-#: concrete/src/Package/Package.php:770
+#: concrete/src/Package/Package.php:783
 msgid "An error occurred while trying to unzip the package."
 msgstr "Ett fel ägde rum när paketet packades upp med unzip."
 
-#: concrete/src/Package/Package.php:771
+#: concrete/src/Package/Package.php:784
 msgid "An error occurred while trying to install the package."
 msgstr "Ett fel ägde rum när paketet skulle installeras."
 
-#: concrete/src/Package/Package.php:772
+#: concrete/src/Package/Package.php:785
 #, php-format
 msgid "Unable to backup old package directory to %s"
 msgstr "Kunde inte säkerhetskopiera tidigare paketkatalog till %s"
 
-#: concrete/src/Package/Package.php:773
+#: concrete/src/Package/Package.php:786
 msgid ""
 "This package isn't currently available for this version of concrete5. Please"
 " contact the maintainer of this package for assistance."
@@ -8215,53 +8221,58 @@ msgstr "Anpassa resultatsvisningen"
 msgid "Upload Files"
 msgstr "Ladda upp filer"
 
-#: concrete/elements/files/search.php:52
+#: concrete/elements/files/search.php:48
+#: concrete/single_pages/dashboard/files/search.php:21
+msgid "More Options"
+msgstr "Fler inställningar"
+
+#: concrete/elements/files/search.php:61
 msgid "File Set"
 msgstr "Filgrupp"
 
-#: concrete/elements/files/search.php:61
+#: concrete/elements/files/search.php:70
 msgid "Files in no sets."
 msgstr "Filer utan filgrupp."
 
-#: concrete/elements/files/search.php:71
+#: concrete/elements/files/search.php:80
 msgid "Per Page"
 msgstr "Per sida"
 
-#: concrete/elements/files/search.php:73
+#: concrete/elements/files/search.php:82
 msgid "10"
 msgstr "10"
 
-#: concrete/elements/files/search.php:73
+#: concrete/elements/files/search.php:82
 msgid "20"
 msgstr "20"
 
-#: concrete/elements/files/search.php:73
+#: concrete/elements/files/search.php:82
 msgid "50"
 msgstr "50"
 
-#: concrete/elements/files/search.php:73
+#: concrete/elements/files/search.php:82
 msgid "100"
 msgstr "100"
 
-#: concrete/elements/files/search.php:73
+#: concrete/elements/files/search.php:82
 msgid "250"
 msgstr "250"
 
-#: concrete/elements/files/search.php:73
+#: concrete/elements/files/search.php:82
 msgid "500"
 msgstr "500"
 
-#: concrete/elements/files/search.php:73
+#: concrete/elements/files/search.php:82
 msgid "1000"
 msgstr "1000"
 
-#: concrete/elements/files/search.php:84 concrete/elements/pages/search.php:58
+#: concrete/elements/files/search.php:93 concrete/elements/pages/search.php:58
 #: concrete/elements/users/search.php:88
 msgid "Choose Field"
 msgstr "Välj fält"
 
 #: concrete/blocks/page_attribute_display/form.php:31
-#: concrete/elements/files/search.php:130
+#: concrete/elements/files/search.php:139
 #: concrete/single_pages/dashboard/files/sets.php:73
 msgid "Thumbnail"
 msgstr "Miniatyrbild"
@@ -13392,10 +13403,6 @@ msgstr "Inga filgrupper hittades."
 #: concrete/single_pages/dashboard/files/search.php:15
 msgid "<strong>Upload Files</strong> / Click to Choose or Drag &amp; Drop. / "
 msgstr "<strong>Ladda upp filer</strong> / Klicka för att välja eller drag &amp; släpp. / "
-
-#: concrete/single_pages/dashboard/files/search.php:21
-msgid "More Options"
-msgstr "Fler inställningar"
 
 #: concrete/single_pages/dashboard/files/search.php:27
 msgid "You do not have access to the file manager."
