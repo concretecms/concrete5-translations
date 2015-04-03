@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-04-01 10:00+0000\n"
-"PO-Revision-Date: 2015-04-01 10:07+0000\n"
+"POT-Creation-Date: 2015-04-02 10:00+0000\n"
+"PO-Revision-Date: 2015-04-02 10:22+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Russian (Russia) (http://www.transifex.com/projects/p/concrete5/language/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -160,6 +160,7 @@ msgstr "Группа по умолчанию при регистрации"
 #: concrete/single_pages/dashboard/system/multilingual/setup.php:148
 #: concrete/single_pages/dashboard/system/permissions/blacklist.php:43
 #: concrete/single_pages/members/profile.php:58
+#: concrete/views/dialogs/file/upload_complete.php:53
 msgid "None"
 msgstr "Нет"
 
@@ -461,7 +462,7 @@ msgid ""
 msgstr "Ключ устарел. Пожалуйста, посетите страницу напоминания пароля еще раз для генерации нового персонального ключа."
 
 #: concrete/authentication/concrete/controller.php:191
-#: concrete/controllers/install.php:332
+#: concrete/controllers/install.php:310
 #: concrete/controllers/single_page/account/edit_profile.php:108
 #: concrete/controllers/single_page/dashboard/users/search.php:380
 #: concrete/controllers/single_page/register.php:106
@@ -524,10 +525,10 @@ msgstr "facebook"
 #: concrete/controllers/backend/page.php:52
 #: concrete/controllers/backend/user_interface.php:40
 #: concrete/controllers/backend/user_interface/block.php:47
-#: concrete/controllers/backend/user_interface/file.php:36
+#: concrete/controllers/backend/user_interface/file.php:38
 #: concrete/controllers/backend/user_interface/page.php:25
-#: concrete/controllers/dialog/file/properties.php:54
-#: concrete/controllers/dialog/file/properties.php:78
+#: concrete/controllers/dialog/file/properties.php:59
+#: concrete/controllers/dialog/file/properties.php:84
 #: concrete/controllers/dialog/page/add_block.php:28
 #: concrete/controllers/frontend/jobs.php:67
 #: concrete/controllers/frontend/jobs.php:160
@@ -546,12 +547,12 @@ msgstr "facebook"
 msgid "Access Denied"
 msgstr "Доступ запрещен"
 
-#: concrete/controllers/backend/file.php:111
+#: concrete/controllers/backend/file.php:112
 #: concrete/controllers/backend/user.php:58
 #: concrete/controllers/backend/user.php:83
 #: concrete/controllers/dialog/conversation/subscribe.php:28
-#: concrete/controllers/dialog/file/properties.php:108
-#: concrete/controllers/dialog/file/properties.php:111
+#: concrete/controllers/dialog/file/properties.php:115
+#: concrete/controllers/dialog/file/properties.php:118
 #: concrete/controllers/dialog/file/thumbnails/edit.php:35
 #: concrete/controllers/dialog/file/thumbnails/edit.php:38
 #: concrete/controllers/dialog/page/add/compose.php:30
@@ -651,7 +652,7 @@ msgstr "Добавить из внешнего URL"
 
 #: concrete/blocks/image/tools/composer_save.php:5
 #: concrete/blocks/image/tools/crop_image.php:5
-#: concrete/controllers/backend/file.php:121
+#: concrete/controllers/backend/file.php:122
 #: concrete/tools/files/import.php:12
 #: concrete/tools/files/importers/incoming.php:8
 #: concrete/tools/files/importers/remote.php:11
@@ -663,17 +664,17 @@ msgstr "Невозможно добавить файлы."
 msgid "Add Incoming"
 msgstr "Добавить из /incoming"
 
+#: concrete/elements/files/properties.php:17
 #: concrete/tools/files/import.php:82
-#: concrete/views/dialogs/file/properties.php:43
-#: concrete/views/dialogs/file/properties.php:243
+#: concrete/views/dialogs/file/properties.php:118
 msgid "Filename"
 msgstr "Имя файла"
 
 #: concrete/controllers/frontend/assets_localization.php:112
 #: concrete/controllers/search/files.php:245
+#: concrete/elements/files/properties.php:108
 #: concrete/src/File/Search/ColumnSet/DefaultSet.php:30
 #: concrete/tools/files/import.php:83
-#: concrete/views/dialogs/file/properties.php:126
 #: concrete/views/image-editor/filters/vignette.php:14
 msgid "Size"
 msgstr "Размер"
@@ -690,7 +691,7 @@ msgstr "Удалить файлы из директории /incoming"
 #: concrete/blocks/form/form_setup_html.php:245
 #: concrete/controllers/frontend/assets_localization.php:25
 #: concrete/controllers/frontend/assets_localization.php:312
-#: concrete/controllers/frontend/assets_localization.php:381
+#: concrete/controllers/frontend/assets_localization.php:383
 #: concrete/elements/block_footer_edit.php:19
 #: concrete/elements/conversation/display.php:33
 #: concrete/elements/conversation/display.php:36
@@ -770,6 +771,8 @@ msgstr "Удалить файлы из директории /incoming"
 #: concrete/views/dialogs/block/aliasing.php:44
 #: concrete/views/dialogs/block/cache.php:69
 #: concrete/views/dialogs/file/bulk/delete.php:40
+#: concrete/views/dialogs/file/bulk/sets.php:13
+#: concrete/views/dialogs/file/sets.php:26
 #: concrete/views/dialogs/page/add/compose.php:10
 #: concrete/views/dialogs/page/add_block.php:98
 #: concrete/views/dialogs/page/add_external.php:23
@@ -826,8 +829,8 @@ msgstr "Права доступа"
 msgid "Protect with Password"
 msgstr "Защитить паролем"
 
+#: concrete/elements/files/properties.php:126
 #: concrete/tools/files/permissions.php:54
-#: concrete/views/dialogs/file/properties.php:144
 msgid "Storage Location"
 msgstr "Нахождение хранилища"
 
@@ -863,12 +866,12 @@ msgstr "Все версии файла будут перемещены в выб
 msgid "Save Location"
 msgstr "Сохранить местонахождение"
 
-#: concrete/tools/files/importers/remote.php:113
+#: concrete/tools/files/importers/remote.php:114
 #: concrete/tools/files/importers/single.php:34
 msgid "File uploaded successfully."
 msgstr "Файл успешно загружен."
 
-#: concrete/tools/files/importers/remote.php:115
+#: concrete/tools/files/importers/remote.php:116
 #: concrete/tools/files/importers/single.php:36
 msgid "File replaced successfully."
 msgstr "Файл успешно заменен."
@@ -881,7 +884,7 @@ msgstr "Загрузка завершена."
 msgid "You must select at least one file."
 msgstr "Вы должны выбрать хотя бы один файл."
 
-#: concrete/tools/files/importers/incoming.php:70
+#: concrete/tools/files/importers/incoming.php:68
 #, php-format
 msgid "%s file imported successfully."
 msgid_plural "%s files imported successfully"
@@ -897,19 +900,19 @@ msgstr "Удаленный импорт URL требует установку р
 msgid "You must specify at least one valid URL."
 msgstr "Необходимо указать хотя бы один корректный URL."
 
-#: concrete/tools/files/importers/remote.php:91
+#: concrete/tools/files/importers/remote.php:92
 #, php-format
 msgid "Unknown mime-type: %s"
 msgstr "Неизвестный mime-тип: %s"
 
 #. %s is an URL
-#: concrete/tools/files/importers/remote.php:139
+#: concrete/tools/files/importers/remote.php:141
 #, php-format
 msgid "Could not determine the name of the file at %s"
 msgstr "Невозможно определить название файла по адресу %s"
 
 #. %s is an URL
-#: concrete/tools/files/importers/remote.php:143
+#: concrete/tools/files/importers/remote.php:145
 #, php-format
 msgid "There was an error downloading %s"
 msgstr "Произошла ошибка при скачивании %s"
@@ -926,8 +929,7 @@ msgstr "Произошла ошибка при скачивании %s"
 msgid "Download"
 msgstr "Скачать"
 
-#: concrete/tools/files/add_to.php:7 concrete/tools/files/delete.php:9
-#: concrete/tools/files/duplicate.php:10
+#: concrete/tools/files/delete.php:9 concrete/tools/files/duplicate.php:10
 #: concrete/tools/files/search_results.php:5
 #: concrete/tools/files/selector_data.php:14
 msgid "Unable to access the file manager."
@@ -938,8 +940,8 @@ msgid "Unable to copy one or more files."
 msgstr "Невозможно скопировать один или несколько файлов."
 
 #: concrete/blocks/form/controller.php:348
-#: concrete/controllers/backend/user_interface/file.php:20
-#: concrete/src/File/Importer.php:44 concrete/tools/files/duplicate.php:43
+#: concrete/controllers/backend/user_interface/file.php:21
+#: concrete/src/File/Importer.php:45 concrete/tools/files/duplicate.php:43
 msgid "Invalid file."
 msgstr "Недействительный файл."
 
@@ -1047,7 +1049,6 @@ msgstr "У вас нет прав для перетаскивания узла �
 msgid "Category Name"
 msgstr "Название категории"
 
-#: concrete/elements/files/add_to_sets.php:244
 #: concrete/single_pages/dashboard/pages/feeds.php:35
 #: concrete/single_pages/dashboard/pages/templates/view.php:61
 #: concrete/single_pages/dashboard/system/backup/update.php:67
@@ -1307,7 +1308,7 @@ msgstr "Сколько времени будут эти права действ�
 #: concrete/blocks/switch_language/templates/flags_set_default/view.php:34
 #: concrete/controllers/frontend/assets_localization.php:109
 #: concrete/controllers/frontend/assets_localization.php:314
-#: concrete/controllers/frontend/assets_localization.php:382
+#: concrete/controllers/frontend/assets_localization.php:384
 #: concrete/elements/attribute/type_form_required.php:130
 #: concrete/elements/block_footer_edit.php:18
 #: concrete/elements/custom_style.php:335
@@ -1382,6 +1383,8 @@ msgstr "Сколько времени будут эти права действ�
 #: concrete/tools/users/bulk_group_remove.php:95
 #: concrete/views/dialogs/block/aliasing.php:45
 #: concrete/views/dialogs/block/cache.php:70
+#: concrete/views/dialogs/file/bulk/sets.php:14
+#: concrete/views/dialogs/file/sets.php:27
 #: concrete/views/dialogs/page/design.php:59
 #: concrete/views/dialogs/page/design/css.php:12
 #: concrete/views/dialogs/search/customize.php:73
@@ -1725,6 +1728,7 @@ msgstr "Оформление"
 #: concrete/blocks/faq/form_setup_html.php:57
 #: concrete/blocks/faq/form_setup_html.php:87
 #: concrete/blocks/image_slider/form_setup_html.php:246
+#: concrete/elements/files/properties.php:138
 #: concrete/single_pages/dashboard/blocks/types/view.php:8
 #: concrete/single_pages/dashboard/pages/feeds.php:86
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:208
@@ -1732,7 +1736,6 @@ msgstr "Оформление"
 #: concrete/single_pages/dashboard/users/groups.php:39
 #: concrete/src/File/Version.php:481
 #: concrete/tools/page_types/composer/form/edit_control.php:54
-#: concrete/views/dialogs/file/properties.php:155
 #: concrete/views/panels/details/page/attributes.php:58
 msgid "Description"
 msgstr "Описание"
@@ -1984,8 +1987,8 @@ msgid "Page Type"
 msgstr "Тип страницы"
 
 #: concrete/controllers/search/pages.php:301
+#: concrete/elements/files/properties.php:116
 #: concrete/tools/pages/delete.php:93
-#: concrete/views/dialogs/file/properties.php:134
 msgid "Date Added"
 msgstr "Дата регистрации"
 
@@ -2157,7 +2160,7 @@ msgstr "Пользователи успешно обновлены."
 msgid "You don't have access to update this attribute."
 msgstr "У вас недостаточно прав для изменения данного атрибуты."
 
-#: concrete/controllers/dialog/file/bulk/properties.php:93
+#: concrete/controllers/dialog/file/bulk/properties.php:97
 #: concrete/controllers/dialog/page/bulk/properties.php:90
 #: concrete/controllers/dialog/user/bulk/properties.php:102
 msgid "Attributes cleared successfully."
@@ -2241,23 +2244,28 @@ msgstr "Предустановка разметки области сохран�
 msgid "Invalid layout preset object."
 msgstr "Ошибочный объект предустановки."
 
-#: concrete/controllers/dialog/file/bulk/properties.php:74
+#: concrete/controllers/dialog/file/bulk/sets.php:115
+#: concrete/controllers/dialog/file/sets.php:57
+msgid "File sets updated successfully."
+msgstr ""
+
+#: concrete/controllers/dialog/file/bulk/properties.php:79
 msgid "Files updated successfully."
 msgstr "Файлы успешно обновлены."
 
-#: concrete/controllers/dialog/file/properties.php:49
+#: concrete/controllers/dialog/file/properties.php:54
 #: concrete/controllers/single_page/dashboard/pages/types/attributes.php:75
 #: concrete/controllers/single_page/dashboard/users/search.php:346
 msgid "Attribute cleared successfully."
 msgstr "Атрибут успешно очищен."
 
-#: concrete/controllers/dialog/file/properties.php:72
+#: concrete/controllers/dialog/file/properties.php:78
 #: concrete/controllers/single_page/dashboard/pages/types/attributes.php:54
 #: concrete/controllers/single_page/dashboard/users/search.php:320
 msgid "Attribute saved successfully."
 msgstr "Атрибут сохранен успешно."
 
-#: concrete/controllers/dialog/file/properties.php:102
+#: concrete/controllers/dialog/file/properties.php:109
 #: concrete/controllers/dialog/file/thumbnails/edit.php:30
 msgid "File updated successfully."
 msgstr "Файл успешно обновлен."
@@ -2709,7 +2717,7 @@ msgstr "Необходимо указать поисковый запрос."
 #: concrete/blocks/form/form_setup_html.php:17
 #: concrete/controllers/frontend/assets_localization.php:54
 #: concrete/controllers/frontend/assets_localization.php:199
-#: concrete/controllers/frontend/assets_localization.php:365
+#: concrete/controllers/frontend/assets_localization.php:367
 #: concrete/controllers/single_page/dashboard/users/points/actions.php:33
 #: concrete/elements/conversation/message.php:46
 #: concrete/single_pages/dashboard/system/conversations/bannedwords.php:42
@@ -3736,7 +3744,7 @@ msgstr "Дата заполнения"
 #: concrete/single_pages/dashboard/users/points/assign.php:7
 #: concrete/single_pages/dashboard/users/points/view.php:13
 #: concrete/single_pages/dashboard/users/points/view.php:32
-#: concrete/views/dialogs/file/properties.php:323
+#: concrete/views/dialogs/file/properties.php:198
 msgid "User"
 msgstr "Пользователь"
 
@@ -4078,13 +4086,13 @@ msgid "KB"
 msgstr "KB"
 
 #: concrete/controllers/search/files.php:246
+#: concrete/elements/files/properties.php:49
 #: concrete/single_pages/dashboard/files/sets.php:74
 #: concrete/single_pages/dashboard/files/sets.php:206
 #: concrete/single_pages/dashboard/pages/themes/inspect.php:25
 #: concrete/single_pages/dashboard/workflow/workflows.php:47
 #: concrete/src/File/Search/ColumnSet/DefaultSet.php:26
 #: concrete/src/Page/Search/ColumnSet/DefaultSet.php:34
-#: concrete/views/dialogs/file/properties.php:72
 msgid "Type"
 msgstr "Тип"
 
@@ -4234,13 +4242,13 @@ msgstr "Зарегистрирован между"
 msgid "Activated Users"
 msgstr "Активированные пользователи"
 
-#: concrete/controllers/backend/file.php:47
-#: concrete/controllers/backend/file.php:56
+#: concrete/controllers/backend/file.php:48
+#: concrete/controllers/backend/file.php:57
 #, php-format
 msgid "File %s could not be found."
 msgstr "Файл %s не найден."
 
-#: concrete/controllers/backend/file.php:51
+#: concrete/controllers/backend/file.php:52
 #, php-format
 msgid "%s file rescanned successfully."
 msgid_plural "%s files rescanned successfully."
@@ -4248,8 +4256,8 @@ msgstr[0] "%s файл успешно перепроверен."
 msgstr[1] "%s файла успешно перепроверены."
 msgstr[2] "%s файлов успешно перепроверены."
 
-#: concrete/controllers/backend/file.php:77
-#: concrete/controllers/backend/file.php:90
+#: concrete/controllers/backend/file.php:78
+#: concrete/controllers/backend/file.php:91
 msgid "Invalid file version."
 msgstr "Неверная версия файла."
 
@@ -4643,7 +4651,7 @@ msgstr "Текущее изображение"
 #: concrete/blocks/image/controller.php:31 concrete/blocks/image/form.php:32
 #: concrete/blocks/image_slider/form_setup_html.php:231
 #: concrete/controllers/frontend/assets_localization.php:111
-#: concrete/controllers/frontend/assets_localization.php:357
+#: concrete/controllers/frontend/assets_localization.php:359
 #: concrete/elements/custom_style.php:146
 #: concrete/single_pages/dashboard/users/add_group.php:83
 #: concrete/single_pages/dashboard/users/groups.php:58
@@ -4665,7 +4673,7 @@ msgid "Italic"
 msgstr "Курсив"
 
 #: concrete/controllers/frontend/assets_localization.php:116
-#: concrete/controllers/frontend/assets_localization.php:362
+#: concrete/controllers/frontend/assets_localization.php:364
 #: concrete/src/Editor/RedactorEditor.php:31
 msgid "Underline"
 msgstr "Подчеркнутый"
@@ -4813,7 +4821,7 @@ msgstr "Дизайн и тип"
 #: concrete/elements/page_controls_footer.php:131
 #: concrete/elements/panels/page.php:121
 #: concrete/views/dialogs/file/properties.php:15
-#: concrete/views/dialogs/file/properties.php:238
+#: concrete/views/dialogs/file/properties.php:113
 #: concrete/views/panels/page/versions.php:291
 msgid "Versions"
 msgstr "Версии"
@@ -4896,7 +4904,7 @@ msgstr "Нет результатов."
 #: concrete/blocks/faq/form_setup_html.php:112
 #: concrete/blocks/image_slider/form_setup_html.php:14
 #: concrete/controllers/frontend/assets_localization.php:176
-#: concrete/controllers/frontend/assets_localization.php:412
+#: concrete/controllers/frontend/assets_localization.php:414
 #: concrete/single_pages/dashboard/pages/templates/view.php:13
 #: concrete/single_pages/dashboard/system/backup/backup.php:29
 msgid "Are you sure?"
@@ -4961,10 +4969,12 @@ msgstr "Выбрать новый файл"
 #: concrete/config/install/base/dashboard.xml:840
 #: concrete/controllers/frontend/assets_localization.php:203
 #: concrete/elements/files/search.php:21 concrete/elements/files/search.php:64
+#: concrete/views/dialogs/file/upload_complete.php:22
 msgid "Sets"
 msgstr "Наборы"
 
 #: concrete/controllers/frontend/assets_localization.php:205
+#: concrete/views/dialogs/file/upload_complete.php:12
 msgid "Properties"
 msgstr "Свойства"
 
@@ -4978,10 +4988,10 @@ msgid "You must choose a file."
 msgstr "Необходимо выбрать файл."
 
 #: concrete/controllers/frontend/assets_localization.php:209
+#: concrete/elements/files/properties.php:68
+#: concrete/elements/files/properties.php:84
 #: concrete/elements/files/search.php:22
 #: concrete/views/dialogs/file/properties.php:32
-#: concrete/views/dialogs/file/properties.php:88
-#: concrete/views/dialogs/file/properties.php:104
 msgid "Rescan"
 msgstr "Пересканировать"
 
@@ -4995,8 +5005,8 @@ msgid "Upload Complete"
 msgstr "Загрузка завершена"
 
 #: concrete/controllers/frontend/assets_localization.php:212
-msgid "One or more files failed to upload"
-msgstr "Один или несколько файлов загрузить не удалось."
+msgid "Upload Failed"
+msgstr ""
 
 #: concrete/controllers/frontend/assets_localization.php:213
 msgid "Upload Progress"
@@ -5054,7 +5064,7 @@ msgid "Clone Topic"
 msgstr "Клонировать тему"
 
 #: concrete/blocks/html/controller.php:28 concrete/blocks/image/form.php:44
-#: concrete/config/app.php:429
+#: concrete/config/app.php:434
 #: concrete/controllers/frontend/assets_localization.php:287
 msgid "HTML"
 msgstr "HTML"
@@ -5213,12 +5223,12 @@ msgstr "Удалить заголовок"
 #: concrete/blocks/tags/tag_form.php:10 concrete/blocks/topic_list/form.php:44
 #: concrete/blocks/youtube/form_setup_html.php:16
 #: concrete/controllers/frontend/assets_localization.php:328
+#: concrete/elements/files/properties.php:132
 #: concrete/single_pages/dashboard/files/sets.php:75
 #: concrete/single_pages/dashboard/pages/feeds.php:78
 #: concrete/src/File/Search/ColumnSet/DefaultSet.php:27
 #: concrete/src/File/Version.php:478
-#: concrete/views/dialogs/file/properties.php:149
-#: concrete/views/dialogs/file/properties.php:244
+#: concrete/views/dialogs/file/properties.php:119
 msgid "Title"
 msgstr "Название"
 
@@ -5314,29 +5324,37 @@ msgid "Anchor"
 msgstr "Текст ссылки"
 
 #: concrete/controllers/frontend/assets_localization.php:352
+msgid "Open Link"
+msgstr ""
+
+#: concrete/controllers/frontend/assets_localization.php:353
 msgid "Open link in new tab"
 msgstr "Открывать ссылки в новом окне"
 
-#: concrete/controllers/frontend/assets_localization.php:354
+#: concrete/controllers/frontend/assets_localization.php:355
 msgid "Open link in same window"
 msgstr ""
 
-#: concrete/controllers/frontend/assets_localization.php:355
+#: concrete/controllers/frontend/assets_localization.php:356
+msgid "Open link in Lightbox"
+msgstr ""
+
+#: concrete/controllers/frontend/assets_localization.php:357
 msgid "Link Type"
 msgstr ""
 
-#: concrete/controllers/frontend/assets_localization.php:356
+#: concrete/controllers/frontend/assets_localization.php:358
 msgid "Web Page"
 msgstr ""
 
-#: concrete/controllers/frontend/assets_localization.php:358
+#: concrete/controllers/frontend/assets_localization.php:360
 msgid "Frame Options"
 msgstr ""
 
 #: concrete/blocks/page_attribute_display/form.php:33
 #: concrete/blocks/video/form_setup_html.php:4
 #: concrete/blocks/youtube/form_setup_html.php:24
-#: concrete/controllers/frontend/assets_localization.php:359
+#: concrete/controllers/frontend/assets_localization.php:361
 #: concrete/elements/custom_style.php:169
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:57
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:103
@@ -5349,7 +5367,7 @@ msgstr "Ширина"
 #: concrete/blocks/page_attribute_display/form.php:37
 #: concrete/blocks/video/form_setup_html.php:11
 #: concrete/blocks/youtube/form_setup_html.php:28
-#: concrete/controllers/frontend/assets_localization.php:360
+#: concrete/controllers/frontend/assets_localization.php:362
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:64
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:104
 #: concrete/views/image-editor/control-sets/position.php:27
@@ -5357,64 +5375,64 @@ msgstr "Ширина"
 msgid "Height"
 msgstr "Высота"
 
-#: concrete/controllers/frontend/assets_localization.php:363
+#: concrete/controllers/frontend/assets_localization.php:365
 #: concrete/elements/custom_style.php:129
 msgid "Alignment"
 msgstr "Выравнивание"
 
-#: concrete/controllers/frontend/assets_localization.php:364
+#: concrete/controllers/frontend/assets_localization.php:366
 msgid "Name (optional)"
 msgstr "Имя файла (необязательно)"
 
-#: concrete/controllers/frontend/assets_localization.php:366
+#: concrete/controllers/frontend/assets_localization.php:368
 msgid "Drop file here or "
 msgstr ""
 
-#: concrete/controllers/frontend/assets_localization.php:377
+#: concrete/controllers/frontend/assets_localization.php:379
 msgid "Remove font"
 msgstr "Удалить шрифт"
 
-#: concrete/controllers/frontend/assets_localization.php:378
+#: concrete/controllers/frontend/assets_localization.php:380
 msgid "Change font family"
 msgstr "Изменить шрифт"
 
-#: concrete/controllers/frontend/assets_localization.php:379
+#: concrete/controllers/frontend/assets_localization.php:381
 msgid "Remove font size"
 msgstr "Удалить размер шрифта"
 
-#: concrete/controllers/frontend/assets_localization.php:380
+#: concrete/controllers/frontend/assets_localization.php:382
 msgid "Change font size"
 msgstr "Изменить размер шрифта"
 
-#: concrete/controllers/frontend/assets_localization.php:383
+#: concrete/controllers/frontend/assets_localization.php:385
 msgid "Remove Style"
 msgstr "Сброс стилей"
 
-#: concrete/controllers/frontend/assets_localization.php:395
+#: concrete/controllers/frontend/assets_localization.php:397
 msgid "Loading..."
 msgstr "Загрузка..."
 
-#: concrete/controllers/frontend/assets_localization.php:396
+#: concrete/controllers/frontend/assets_localization.php:398
 msgid "Load error!"
 msgstr "Ошибка загрузки!"
 
-#: concrete/controllers/frontend/assets_localization.php:408
+#: concrete/controllers/frontend/assets_localization.php:410
 msgid "Loading Control Sets..."
 msgstr "Загрузка управляющих элементов..."
 
-#: concrete/controllers/frontend/assets_localization.php:409
+#: concrete/controllers/frontend/assets_localization.php:411
 msgid "Loading Components..."
 msgstr "Загрузка компонентов..."
 
-#: concrete/controllers/frontend/assets_localization.php:410
+#: concrete/controllers/frontend/assets_localization.php:412
 msgid "Loading Filters..."
 msgstr "Загрузка фильтров..."
 
-#: concrete/controllers/frontend/assets_localization.php:411
+#: concrete/controllers/frontend/assets_localization.php:413
 msgid "Loading Image..."
 msgstr "Загрузка изображения..."
 
-#: concrete/controllers/frontend/assets_localization.php:450
+#: concrete/controllers/frontend/assets_localization.php:452
 msgid ""
 "The current item has changed.\n"
 "If you proceed you will lose your changes.\n"
@@ -5422,128 +5440,128 @@ msgid ""
 "Do you want to proceed anyway?"
 msgstr ""
 
-#: concrete/controllers/frontend/assets_localization.php:451
+#: concrete/controllers/frontend/assets_localization.php:453
 #: concrete/single_pages/dashboard/users/points/assign.php:28
-#: concrete/views/dialogs/file/properties.php:245
+#: concrete/views/dialogs/file/properties.php:120
 msgid "Comments"
 msgstr "Комментарии"
 
-#: concrete/controllers/frontend/assets_localization.php:452
+#: concrete/controllers/frontend/assets_localization.php:454
 msgid "Context"
 msgstr ""
 
-#: concrete/controllers/frontend/assets_localization.php:453
+#: concrete/controllers/frontend/assets_localization.php:455
 #: concrete/elements/storage_location_types/local.php:18
 #, php-format
 msgid "Example: %s"
 msgstr "Пример: %s"
 
-#: concrete/controllers/frontend/assets_localization.php:454
+#: concrete/controllers/frontend/assets_localization.php:456
 msgid "Filter"
 msgstr "Фильтр"
 
-#: concrete/controllers/frontend/assets_localization.php:455
+#: concrete/controllers/frontend/assets_localization.php:457
 msgid "Original String"
 msgstr "Исходная строка"
 
-#: concrete/controllers/frontend/assets_localization.php:456
+#: concrete/controllers/frontend/assets_localization.php:458
 msgid "Please fill-in all plural forms"
 msgstr ""
 
-#: concrete/controllers/frontend/assets_localization.php:457
+#: concrete/controllers/frontend/assets_localization.php:459
 msgid "Plural Original String"
 msgstr ""
 
-#: concrete/controllers/frontend/assets_localization.php:458
+#: concrete/controllers/frontend/assets_localization.php:460
 msgid "References"
 msgstr ""
 
-#: concrete/controllers/frontend/assets_localization.php:459
+#: concrete/controllers/frontend/assets_localization.php:461
 msgid "Save & Continue"
 msgstr ""
 
-#: concrete/controllers/frontend/assets_localization.php:460
+#: concrete/controllers/frontend/assets_localization.php:462
 msgid "Search for..."
 msgstr ""
 
-#: concrete/controllers/frontend/assets_localization.php:461
+#: concrete/controllers/frontend/assets_localization.php:463
 msgid "Search in contexts"
 msgstr ""
 
-#: concrete/controllers/frontend/assets_localization.php:462
+#: concrete/controllers/frontend/assets_localization.php:464
 msgid "Search in originals"
 msgstr ""
 
-#: concrete/controllers/frontend/assets_localization.php:463
+#: concrete/controllers/frontend/assets_localization.php:465
 msgid "Search in translations"
 msgstr ""
 
-#: concrete/controllers/frontend/assets_localization.php:464
+#: concrete/controllers/frontend/assets_localization.php:466
 msgid "Show approved"
 msgstr ""
 
-#: concrete/controllers/frontend/assets_localization.php:465
+#: concrete/controllers/frontend/assets_localization.php:467
 msgid "Show translated"
 msgstr ""
 
-#: concrete/controllers/frontend/assets_localization.php:466
+#: concrete/controllers/frontend/assets_localization.php:468
 msgid "Show unapproved"
 msgstr ""
 
-#: concrete/controllers/frontend/assets_localization.php:467
+#: concrete/controllers/frontend/assets_localization.php:469
 msgid "Show untranslated"
 msgstr ""
 
-#: concrete/controllers/frontend/assets_localization.php:468
+#: concrete/controllers/frontend/assets_localization.php:470
 msgid "Singular Original String"
 msgstr ""
 
-#: concrete/controllers/frontend/assets_localization.php:469
+#: concrete/controllers/frontend/assets_localization.php:471
 msgid "Toggle Dropdown"
 msgstr ""
 
-#: concrete/controllers/frontend/assets_localization.php:470
+#: concrete/controllers/frontend/assets_localization.php:472
 msgid "[TAB] Forward"
 msgstr ""
 
-#: concrete/controllers/frontend/assets_localization.php:471
+#: concrete/controllers/frontend/assets_localization.php:473
 msgid "[SHIFT]+[TAB] Backward"
 msgstr ""
 
-#: concrete/controllers/frontend/assets_localization.php:472
+#: concrete/controllers/frontend/assets_localization.php:474
 msgid "Translate"
 msgstr "Перевести"
 
-#: concrete/controllers/frontend/assets_localization.php:473
+#: concrete/controllers/frontend/assets_localization.php:475
 msgid "Translation"
 msgstr "Перевод"
 
-#: concrete/controllers/frontend/assets_localization.php:475
+#: concrete/controllers/frontend/assets_localization.php:477
 msgctxt "PluralCase"
 msgid "Zero"
 msgstr ""
 
-#: concrete/controllers/frontend/assets_localization.php:476
+#: concrete/controllers/frontend/assets_localization.php:478
 msgctxt "PluralCase"
 msgid "One"
 msgstr ""
 
-#: concrete/controllers/frontend/assets_localization.php:477
+#: concrete/controllers/frontend/assets_localization.php:479
 msgctxt "PluralCase"
 msgid "Two"
 msgstr ""
 
-#: concrete/controllers/frontend/assets_localization.php:478
+#: concrete/controllers/frontend/assets_localization.php:480
 msgctxt "PluralCase"
 msgid "Few"
 msgstr ""
 
-#: concrete/controllers/frontend/assets_localization.php:479
+#: concrete/controllers/frontend/assets_localization.php:481
 msgctxt "PluralCase"
 msgid "Many"
 msgstr ""
 
-#: concrete/controllers/frontend/assets_localization.php:480
+#: concrete/controllers/frontend/assets_localization.php:482
 msgctxt "PluralCase"
 msgid "Other"
 msgstr "Другие"
@@ -5595,55 +5613,55 @@ msgstr "Расширение PDO не загружено."
 msgid "concrete5 is already installed."
 msgstr "concrete5 уже установлена."
 
-#: concrete/controllers/install.php:231
+#: concrete/controllers/install.php:209
 msgid ""
 "Your configuration directory config/ does not appear to be writable by the "
 "web server."
 msgstr "config/ -  не доступен для записи"
 
-#: concrete/controllers/install.php:235
+#: concrete/controllers/install.php:213
 msgid ""
 "Your files directory files/ does not appear to be writable by the web "
 "server."
 msgstr "files/ -  не доступен для записи"
 
-#: concrete/controllers/install.php:239
+#: concrete/controllers/install.php:217
 msgid ""
 "Your packages directory packages/ does not appear to be writable by the web "
 "server."
 msgstr "Директория пакетов packages/ закрыта на запись и не может быть обновлена web сервером."
 
-#: concrete/controllers/install.php:290
+#: concrete/controllers/install.php:268
 #, php-format
 msgctxt "InstallError"
 msgid "%s.<br><br>Trace:<br>%s"
 msgstr "%s.<br><br>Trace:<br>%s"
 
-#: concrete/controllers/install.php:318
+#: concrete/controllers/install.php:296
 msgid "Please specify your site's name"
 msgstr "Укажите название вашего сайта"
 
-#: concrete/controllers/install.php:319
+#: concrete/controllers/install.php:297
 msgid "Please specify a valid email address"
 msgstr "Укажите существующий email адрес"
 
-#: concrete/controllers/install.php:320
+#: concrete/controllers/install.php:298
 msgid "You must specify a valid database name"
 msgstr "Укажите название существующей базы данных"
 
-#: concrete/controllers/install.php:321
+#: concrete/controllers/install.php:299
 msgid "You must specify a valid database server"
 msgstr "Укажите сервер базы данных"
 
-#: concrete/controllers/install.php:373
+#: concrete/controllers/install.php:351
 msgid "Unable to open config/app.php for writing."
 msgstr "Файл config/app.php недоступен для записи."
 
-#: concrete/controllers/install.php:394
+#: concrete/controllers/install.php:372
 msgid "Unable to open config/site_user.php for writing."
 msgstr "Файл config/site_user.php недоступен для записи."
 
-#: concrete/controllers/install.php:416
+#: concrete/controllers/install.php:394
 msgid "You must select a valid sample content starting point."
 msgstr "Вы должны выбрать тип содержимого."
 
@@ -5805,31 +5823,31 @@ msgstr "Выход"
 msgid "My Account"
 msgstr "Моя страница"
 
-#: concrete/themes/elemental/page_theme.php:80
+#: concrete/themes/elemental/page_theme.php:82
 msgid "Title Thin"
 msgstr "Тонкий заголовок"
 
-#: concrete/themes/elemental/page_theme.php:81
+#: concrete/themes/elemental/page_theme.php:83
 msgid "Title Caps Bold"
 msgstr "Утолщенные заглавные буквы"
 
-#: concrete/themes/elemental/page_theme.php:82
+#: concrete/themes/elemental/page_theme.php:84
 msgid "Title Caps"
 msgstr "Заглавные буквы"
 
-#: concrete/themes/elemental/page_theme.php:83
+#: concrete/themes/elemental/page_theme.php:85
 msgid "Image Caption"
 msgstr "Подпись к изображению"
 
-#: concrete/themes/elemental/page_theme.php:84
+#: concrete/themes/elemental/page_theme.php:86
 msgid "Standard Button"
 msgstr "Стандартная кнопка"
 
-#: concrete/themes/elemental/page_theme.php:85
+#: concrete/themes/elemental/page_theme.php:87
 msgid "Success Button"
 msgstr "Кнопка success"
 
-#: concrete/themes/elemental/page_theme.php:86
+#: concrete/themes/elemental/page_theme.php:88
 msgid "Primary Button"
 msgstr "Основная кнопка"
 
@@ -6214,32 +6232,38 @@ msgstr "Приложение"
 msgid "File"
 msgstr "Файл"
 
-#: concrete/blocks/form/controller.php:345 concrete/src/File/Importer.php:47
+#: concrete/blocks/form/controller.php:345 concrete/src/File/Importer.php:48
 msgid "Invalid file extension."
 msgstr "Неверное расширение файла."
 
-#: concrete/src/File/Importer.php:50
+#: concrete/src/File/Importer.php:51
 msgid "The file was only partially uploaded."
 msgstr "Файл был получен только частично."
 
-#: concrete/src/File/Importer.php:53
+#: concrete/src/File/Importer.php:54
 msgid "No default file storage location could be found to store this file."
 msgstr "Не найдено хранилище файлов по умолчанию для сохранения файла."
 
 #: concrete/src/File/Importer.php:57
 #, php-format
 msgid ""
+"Uploaded file is too large. The current value of post_max_filesize is %s"
+msgstr ""
+
+#: concrete/src/File/Importer.php:62
+#, php-format
+msgid ""
 "Uploaded file is too large. The current value of upload_max_filesize is %s"
 msgstr "Загруженный файл слишком велик. Текущее значение параметра upload_max_filesize: %s"
 
-#: concrete/src/File/Importer.php:61
+#: concrete/src/File/Importer.php:66
 #, php-format
 msgid ""
 "Unable to copy file to storage location \"%s\". Please check the settings "
 "for the storage location."
 msgstr "Не удалось скопировать файл в хранилище \"%s\". Пожалуйста, проверьте настройки хранилища."
 
-#: concrete/src/File/Importer.php:66
+#: concrete/src/File/Importer.php:71
 #, php-format
 msgid ""
 "An unknown error occurred while uploading the file. Please check that file uploads are enabled, and that your file does not exceed the size of the post_max_size or upload_max_filesize variables.\n"
@@ -6264,9 +6288,9 @@ msgid "(Unknown)"
 msgstr "(неизвестно)"
 
 #: concrete/blocks/tags/controller.php:40
+#: concrete/elements/files/properties.php:145
 #: concrete/elements/gathering/data_sources/flickr_feed/options.php:8
 #: concrete/src/File/Version.php:484
-#: concrete/views/dialogs/file/properties.php:162
 msgid "Tags"
 msgstr "Теги (tags)"
 
@@ -6324,8 +6348,8 @@ msgid "Unable to attach user."
 msgstr "Невозможно привязать пользователя."
 
 #. %s is a number
+#: concrete/elements/files/properties.php:110
 #: concrete/src/Utility/Service/Number.php:104
-#: concrete/views/dialogs/file/properties.php:128
 #, php-format
 msgid "%s byte"
 msgid_plural "%s bytes"
@@ -8000,7 +8024,7 @@ msgstr "Недействительный токен формы. Пожалуйс
 #: concrete/single_pages/dashboard/reports/statistics.php:110
 #: concrete/src/Conversation/Message/AuthorFormatter.php:27
 #: concrete/src/Conversation/Message/AuthorFormatter.php:45
-#: concrete/views/dialogs/file/properties.php:341
+#: concrete/views/dialogs/file/properties.php:216
 msgid "Anonymous"
 msgstr "Анонимный"
 
@@ -8381,6 +8405,52 @@ msgstr "Показывать на форме регистрации."
 msgid "Require on Registration Form."
 msgstr "Обязательное для заполнения."
 
+#: concrete/elements/files/properties.php:12
+#: concrete/single_pages/dashboard/system/optimization/jobs.php:52
+#: concrete/single_pages/dashboard/system/registration/authentication.php:30
+msgid "ID"
+msgstr "ID"
+
+#: concrete/elements/files/properties.php:14
+msgid "Version"
+msgstr "Версия"
+
+#: concrete/elements/files/properties.php:26
+msgid "URL to File"
+msgstr "URL файла"
+
+#: concrete/elements/files/properties.php:37
+msgid "Dashboard File Manager"
+msgstr "Менеджер файлов "
+
+#: concrete/elements/files/properties.php:42
+msgid "Page Added To"
+msgstr "Страница добавлена"
+
+#: concrete/config/install/base/dashboard.xml:615
+#: concrete/elements/files/properties.php:62
+#: concrete/elements/files/properties.php:78
+#: concrete/elements/files/properties.php:94
+msgid "Thumbnails"
+msgstr "Миниатюры"
+
+#: concrete/elements/files/properties.php:65
+msgid "Invalid file dimensions, please rescan this file."
+msgstr "Ошибочные размеры изображения, пересканируйте этот файл."
+
+#: concrete/elements/files/properties.php:81
+msgid "Unknown error retrieving thumbnails, please rescan this file."
+msgstr "Неизвестная ошибка при получении миниатюр, пожалуйста, пересканируйте данный файл."
+
+#: concrete/elements/files/properties.php:96
+msgid "Thumbnail Images"
+msgstr "Изображения миниатюр"
+
+#: concrete/elements/files/properties.php:118
+#, php-format
+msgid "Added by <strong>%s</strong> on %s"
+msgstr "Добавлен <strong>%s</strong> в <strong>%s</strong>"
+
 #: concrete/elements/files/search.php:17 concrete/elements/pages/search.php:21
 #: concrete/elements/users/search.php:25
 msgid "Items Selected"
@@ -8478,36 +8548,24 @@ msgstr "Выбрать поле"
 msgid "Thumbnail"
 msgstr "Миниатюра"
 
-#: concrete/elements/files/add_to_sets.php:79
-msgid "File sets saved successfully."
-msgstr "Набор файлов успешно сохранен."
-
-#: concrete/elements/files/add_to_sets.php:177
-msgid "Add to New Set"
-msgstr "Добавить в новый набор"
-
-#: concrete/elements/files/add_to_sets.php:179
-msgid "Make set public"
-msgstr "Сделать набор общедоступным"
-
-#: concrete/elements/files/add_to_sets.php:186
-msgid "Existing Set"
-msgstr "Список созданных наборов"
-
-#: concrete/elements/files/add_to_sets.php:193
+#: concrete/elements/files/add_to_sets.php:9
 msgid "Filter Sets"
 msgstr "Отфильтровать  наборы"
 
-#: concrete/elements/files/add_to_sets.php:230
-msgid "You have not created any file sets yet."
-msgstr "Нет ни одного набора файлов."
+#: concrete/elements/files/add_to_sets.php:29
+#: concrete/single_pages/dashboard/pages/types/form.php:28
+#: concrete/single_pages/dashboard/pages/types/form.php:34
+#: concrete/single_pages/dashboard/system/attributes/sets.php:138
+#: concrete/single_pages/dashboard/system/attributes/sets.php:151
+#: concrete/single_pages/dashboard/system/optimization/jobs.php:407
+#: concrete/single_pages/dashboard/users/group_sets.php:102
+#: concrete/single_pages/dashboard/users/group_sets.php:122
+msgid "Add Set"
+msgstr "Добавить набор"
 
-#: concrete/elements/files/add_to_sets.php:236
-#, php-format
-msgid ""
-"If a file set does not appear above, you either have no access to add files "
-"to it, or it does not accept the file types %s."
-msgstr "Если набор файлов не появляется выше, то вы либо не имеете доступа для добавления файлов в набор, либо она не принимает файлы с типом %s."
+#: concrete/elements/files/add_to_sets.php:36
+msgid "Public Set."
+msgstr ""
 
 #: concrete/elements/dashboard/attributes_table.php:19
 msgid "Grouped by Set"
@@ -10124,101 +10182,84 @@ msgstr "Статистика"
 msgid "Basic Properties"
 msgstr "Свойства"
 
-#: concrete/single_pages/dashboard/system/optimization/jobs.php:52
-#: concrete/single_pages/dashboard/system/registration/authentication.php:30
-#: concrete/views/dialogs/file/properties.php:38
-msgid "ID"
-msgstr "ID"
-
-#: concrete/views/dialogs/file/properties.php:40
-msgid "Version"
-msgstr "Версия"
-
-#: concrete/views/dialogs/file/properties.php:50
-msgid "URL to File"
-msgstr "URL файла"
-
-#: concrete/views/dialogs/file/properties.php:60
-msgid "Dashboard File Manager"
-msgstr "Менеджер файлов "
-
-#: concrete/views/dialogs/file/properties.php:65
-msgid "Page Added To"
-msgstr "Страница добавлена"
-
-#: concrete/config/install/base/dashboard.xml:615
-#: concrete/views/dialogs/file/properties.php:82
-#: concrete/views/dialogs/file/properties.php:98
-#: concrete/views/dialogs/file/properties.php:114
-msgid "Thumbnails"
-msgstr "Миниатюры"
-
-#: concrete/views/dialogs/file/properties.php:85
-msgid "Invalid file dimensions, please rescan this file."
-msgstr "Ошибочные размеры изображения, пересканируйте этот файл."
-
-#: concrete/views/dialogs/file/properties.php:101
-msgid "Unknown error retrieving thumbnails, please rescan this file."
-msgstr "Неизвестная ошибка при получении миниатюр, пожалуйста, пересканируйте данный файл."
-
-#: concrete/views/dialogs/file/properties.php:116
-msgid "Thumbnail Images"
-msgstr "Изображения миниатюр"
-
-#: concrete/views/dialogs/file/properties.php:136
-#, php-format
-msgid "Added by <strong>%s</strong> on %s"
-msgstr "Добавлен <strong>%s</strong> в <strong>%s</strong>"
-
-#: concrete/views/dialogs/file/properties.php:176
+#: concrete/views/dialogs/file/properties.php:51
 #, php-format
 msgid "%s File Properties"
 msgstr "Свойства файла %s"
 
-#: concrete/views/dialogs/file/properties.php:203
+#: concrete/views/dialogs/file/properties.php:78
 msgid "Other Properties"
 msgstr "Прочие свойства"
 
-#: concrete/views/dialogs/file/properties.php:224
+#: concrete/views/dialogs/file/properties.php:99
 msgid "File Preview"
 msgstr "Просмотр файла"
 
-#: concrete/views/dialogs/file/properties.php:246
+#: concrete/views/dialogs/file/properties.php:121
 msgid "Creator"
 msgstr "Создатель"
 
-#: concrete/views/dialogs/file/properties.php:247
+#: concrete/views/dialogs/file/properties.php:122
 msgid "Added On"
 msgstr "Добавлено"
 
-#: concrete/views/dialogs/file/properties.php:266
+#: concrete/views/dialogs/file/properties.php:141
 msgid "Preview File"
 msgstr "Предварительный просмотр"
 
-#: concrete/views/dialogs/file/properties.php:279
+#: concrete/views/dialogs/file/properties.php:154
 msgid "Updated "
 msgstr "Обновлен "
 
-#: concrete/views/dialogs/file/properties.php:314
+#: concrete/views/dialogs/file/properties.php:189
 msgid "Total Downloads"
 msgstr "Всего скачиваний"
 
-#: concrete/views/dialogs/file/properties.php:320
+#: concrete/views/dialogs/file/properties.php:195
 msgid "Most Recent Downloads"
 msgstr "Последние скачивания"
 
-#: concrete/views/dialogs/file/properties.php:324
+#: concrete/views/dialogs/file/properties.php:199
 msgid "Download Time"
 msgstr "Время загрузки"
 
-#: concrete/views/dialogs/file/properties.php:325
+#: concrete/views/dialogs/file/properties.php:200
 msgid "File Version ID"
 msgstr "ID версии файла"
 
 #: concrete/single_pages/dashboard/reports/statistics.php:116
-#: concrete/views/dialogs/file/properties.php:347
+#: concrete/views/dialogs/file/properties.php:222
 msgid "Deleted User"
 msgstr "Пользователь удален"
+
+#: concrete/views/dialogs/file/upload_complete.php:7
+#, php-format
+msgid "%s file uploaded"
+msgid_plural "%s files uploaded"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: concrete/views/dialogs/file/upload_complete.php:8
+msgid "Choose file"
+msgid_plural "Choose files"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: concrete/views/dialogs/file/upload_complete.php:14
+msgid ""
+"Properties like name, description and tags are unavailable when uploading "
+"multiple files."
+msgstr ""
+
+#: concrete/views/dialogs/file/upload_complete.php:23
+msgid "Add/Remove Sets"
+msgstr ""
+
+#: concrete/views/dialogs/file/upload_complete.php:30
+msgid "Custom Attributes"
+msgstr "Настраиваемые атрибуты"
 
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:114
 #: concrete/views/dialogs/file/thumbnails.php:13
@@ -11206,153 +11247,153 @@ msgstr "Пустой сайт"
 msgid "Creates an empty site using the unstyled Elemental theme."
 msgstr "Создание пустого сайта с использованием простейшей  темы без стилей."
 
-#: concrete/config/app.php:424
+#: concrete/config/app.php:429
 msgid "JPEG"
 msgstr "JPEG"
 
-#: concrete/config/app.php:425
+#: concrete/config/app.php:430
 msgid "GIF"
 msgstr "GIF"
 
-#: concrete/config/app.php:426
+#: concrete/config/app.php:431
 msgid "PNG"
 msgstr "PNG"
 
-#: concrete/config/app.php:427
+#: concrete/config/app.php:432
 msgid "Windows Bitmap"
 msgstr "Windows Bitmap"
 
-#: concrete/config/app.php:428
+#: concrete/config/app.php:433
 msgid "TIFF"
 msgstr "TIFF"
 
-#: concrete/config/app.php:430
+#: concrete/config/app.php:435
 msgid "Flash"
 msgstr "Flash"
 
-#: concrete/blocks/feature/form.php:4 concrete/config/app.php:431
+#: concrete/blocks/feature/form.php:4 concrete/config/app.php:436
 #: concrete/single_pages/dashboard/pages/templates/add.php:27
 #: concrete/single_pages/dashboard/pages/templates/view.php:39
 msgid "Icon"
 msgstr "Значок"
 
-#: concrete/config/app.php:432
+#: concrete/config/app.php:437
 msgid "SVG"
 msgstr "SVG"
 
-#: concrete/config/app.php:433
+#: concrete/config/app.php:438
 msgid "Windows Video"
 msgstr "Windows Video"
 
-#: concrete/config/app.php:434
+#: concrete/config/app.php:439
 msgid "Quicktime"
 msgstr "Quicktime"
 
-#: concrete/config/app.php:435
+#: concrete/config/app.php:440
 msgid "AVI"
 msgstr "AVI"
 
-#: concrete/config/app.php:436
+#: concrete/config/app.php:441
 msgid "3GP"
 msgstr "3GP"
 
-#: concrete/attributes/textarea/type_form.php:8 concrete/config/app.php:437
+#: concrete/attributes/textarea/type_form.php:8 concrete/config/app.php:442
 msgid "Plain Text"
 msgstr "Простой текст"
 
-#: concrete/config/app.php:438
+#: concrete/config/app.php:443
 msgid "CSV"
 msgstr "CSV"
 
-#: concrete/config/app.php:439
+#: concrete/config/app.php:444
 msgid "XML"
 msgstr "XML"
 
-#: concrete/config/app.php:440
+#: concrete/config/app.php:445
 msgid "PHP"
 msgstr "PHP"
 
-#: concrete/config/app.php:441
+#: concrete/config/app.php:446
 msgid "MS Word"
 msgstr "MS Word"
 
-#: concrete/config/app.php:442
+#: concrete/config/app.php:447
 msgid "Stylesheet"
 msgstr "Stylesheet"
 
-#: concrete/config/app.php:443
+#: concrete/config/app.php:448
 msgid "MP4"
 msgstr "MP4"
 
-#: concrete/config/app.php:444
+#: concrete/config/app.php:449
 msgid "FLV"
 msgstr "FLV"
 
-#: concrete/config/app.php:445
+#: concrete/config/app.php:450
 msgid "MP3"
 msgstr "MP3"
 
-#: concrete/config/app.php:446
+#: concrete/config/app.php:451
 msgid "MP4 Audio"
 msgstr ""
 
-#: concrete/config/app.php:447
+#: concrete/config/app.php:452
 msgid "Realaudio"
 msgstr "Realaudio"
 
-#: concrete/config/app.php:448
+#: concrete/config/app.php:453
 msgid "Windows Audio"
 msgstr "Windows Audio"
 
-#: concrete/config/app.php:449
+#: concrete/config/app.php:454
 msgid "Rich Text"
 msgstr "Форматированный текст"
 
-#: concrete/config/app.php:450
+#: concrete/config/app.php:455
 msgid "JavaScript"
 msgstr "JavaScript"
 
-#: concrete/config/app.php:451
+#: concrete/config/app.php:456
 msgid "PDF"
 msgstr "PDF"
 
-#: concrete/config/app.php:452
+#: concrete/config/app.php:457
 msgid "Photoshop"
 msgstr "Photoshop"
 
-#: concrete/config/app.php:453
+#: concrete/config/app.php:458
 msgid "MPEG"
 msgstr "MPEG"
 
-#: concrete/config/app.php:454
+#: concrete/config/app.php:459
 msgid "MS Excel"
 msgstr "MS Excel"
 
-#: concrete/config/app.php:455
+#: concrete/config/app.php:460
 msgid "MS Powerpoint"
 msgstr "MS Powerpoint"
 
-#: concrete/config/app.php:456
+#: concrete/config/app.php:461
 msgid "TAR Archive"
 msgstr "Архив TAR"
 
-#: concrete/config/app.php:457
+#: concrete/config/app.php:462
 msgid "Zip Archive"
 msgstr "Архив Zip"
 
-#: concrete/config/app.php:458
+#: concrete/config/app.php:463
 msgid "GZip Archive"
 msgstr "Архив GZip"
 
-#: concrete/config/app.php:459
+#: concrete/config/app.php:464
 msgid "OGG"
 msgstr "OGG"
 
-#: concrete/config/app.php:460
+#: concrete/config/app.php:465
 msgid "OGG Video"
 msgstr "OGG видео"
 
-#: concrete/config/app.php:461
+#: concrete/config/app.php:466
 msgid "WebM"
 msgstr "WebM"
 
@@ -14238,16 +14279,6 @@ msgstr "Удалить набор групп"
 #: concrete/single_pages/dashboard/users/group_sets.php:95
 msgid "You have not added any group sets."
 msgstr "У вас нет добавленных наборов групп."
-
-#: concrete/single_pages/dashboard/pages/types/form.php:28
-#: concrete/single_pages/dashboard/pages/types/form.php:34
-#: concrete/single_pages/dashboard/system/attributes/sets.php:138
-#: concrete/single_pages/dashboard/system/attributes/sets.php:151
-#: concrete/single_pages/dashboard/system/optimization/jobs.php:407
-#: concrete/single_pages/dashboard/users/group_sets.php:102
-#: concrete/single_pages/dashboard/users/group_sets.php:122
-msgid "Add Set"
-msgstr "Добавить набор"
 
 #: concrete/single_pages/dashboard/users/group_sets.php:127
 #, php-format
