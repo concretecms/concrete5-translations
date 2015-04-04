@@ -5,9 +5,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-04-02 10:00+0000\n"
-"PO-Revision-Date: 2015-04-02 10:22+0000\n"
-"Last-Translator: Michele Locati <michele@locati.it>\n"
+"POT-Creation-Date: 2015-04-03 10:00+0000\n"
+"PO-Revision-Date: 2015-04-04 05:00+0000\n"
+"Last-Translator: Adem Coşkuner <info@ademcoskuner.com>\n"
 "Language-Team: Turkish (Turkey) (http://www.transifex.com/projects/p/concrete5/language/tr_TR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1997,7 +1997,7 @@ msgstr "Sayfalar başarıyla silindi."
 #: concrete/controllers/panel/detail/page/attributes.php:145
 #: concrete/controllers/panel/detail/page/caching.php:24
 #: concrete/controllers/panel/detail/page/caching.php:38
-#: concrete/controllers/panel/detail/page/location.php:127
+#: concrete/controllers/panel/detail/page/location.php:125
 #: concrete/controllers/panel/detail/page/permissions.php:129
 #: concrete/controllers/panel/detail/page/seo.php:72
 msgid "Page Updated"
@@ -2024,7 +2024,7 @@ msgstr "Bu konumda sayfa yayınlama izniniz yok."
 msgid "You do not have permission to discard this page."
 msgstr "Bu sayfayı iptal etme izniniz yok."
 
-#: concrete/controllers/panel/detail/page/location.php:128
+#: concrete/controllers/panel/detail/page/location.php:126
 msgid "Page location information saved successfully."
 msgstr "Sayfa konum bilgisi başarıyla kaydedildi."
 
@@ -2234,7 +2234,7 @@ msgstr "Geçersiz mizanpaj öntanım nesnesi."
 #: concrete/controllers/dialog/file/bulk/sets.php:115
 #: concrete/controllers/dialog/file/sets.php:57
 msgid "File sets updated successfully."
-msgstr ""
+msgstr "Dosya grupları başarıyla güncellendi."
 
 #: concrete/controllers/dialog/file/bulk/properties.php:79
 msgid "Files updated successfully."
@@ -4991,7 +4991,7 @@ msgstr "Yükleme Tamamlandı"
 
 #: concrete/controllers/frontend/assets_localization.php:212
 msgid "Upload Failed"
-msgstr ""
+msgstr "Yükleme Başarısız Oldu"
 
 #: concrete/controllers/frontend/assets_localization.php:213
 msgid "Upload Progress"
@@ -5049,7 +5049,7 @@ msgid "Clone Topic"
 msgstr "Konuyu Çoğalt"
 
 #: concrete/blocks/html/controller.php:28 concrete/blocks/image/form.php:44
-#: concrete/config/app.php:434
+#: concrete/config/app.php:435
 #: concrete/controllers/frontend/assets_localization.php:287
 msgid "HTML"
 msgstr "HTML"
@@ -5310,7 +5310,7 @@ msgstr "Sayfa İçi Bağlantı"
 
 #: concrete/controllers/frontend/assets_localization.php:352
 msgid "Open Link"
-msgstr ""
+msgstr "Bağlantıyı Aç"
 
 #: concrete/controllers/frontend/assets_localization.php:353
 msgid "Open link in new tab"
@@ -5322,7 +5322,7 @@ msgstr "Bağlantıyı aynı pencerede aç"
 
 #: concrete/controllers/frontend/assets_localization.php:356
 msgid "Open link in Lightbox"
-msgstr ""
+msgstr "Bağlantıyı açılır pencerede aç"
 
 #: concrete/controllers/frontend/assets_localization.php:357
 msgid "Link Type"
@@ -5551,6 +5551,20 @@ msgctxt "PluralCase"
 msgid "Other"
 msgstr "Diğer"
 
+#: concrete/controllers/frontend/assets_localization.php:493
+msgid "Drop files here to upload"
+msgstr "Dosyaları yüklemek için buraya bırakın"
+
+#: concrete/controllers/frontend/assets_localization.php:494
+msgid "Your browser does not support drag'n'drop file uploads."
+msgstr "Tarayıcınız sürükle-bırak dosya yüklemeyi desteklemiyor."
+
+#: concrete/controllers/frontend/assets_localization.php:495
+msgid ""
+"Please use the fallback form below to upload your files like in the olden "
+"days."
+msgstr "Dosyalarınızı eski günlerdeki gibi yüklemek için aşağıdaki geri dönüş formunu kullanın."
+
 #: concrete/controllers/frontend/jobs.php:59
 #: concrete/controllers/frontend/jobs.php:153
 msgid "Unknown Job"
@@ -5762,8 +5776,8 @@ msgstr "Kontrol Paneli"
 #: concrete/elements/page_controls_footer.php:300
 #: concrete/themes/dashboard/elements/header.php:88
 msgctxt "toolbar"
-msgid "Add Page"
-msgstr "Sayfa Ekle"
+msgid "Pages"
+msgstr "Sayfa"
 
 #: concrete/themes/dashboard/elements/header_newsflow.php:11
 msgid "Save Positioning"
@@ -6227,7 +6241,7 @@ msgstr "Bu dosyayı depolamak için hiçbir varsayılan dosya depolama konumu bu
 #, php-format
 msgid ""
 "Uploaded file is too large. The current value of post_max_filesize is %s"
-msgstr ""
+msgstr "Yüklenen dosya çok büyük. post_max_filesize'ın şu anki değeri %s"
 
 #: concrete/src/File/Importer.php:62
 #, php-format
@@ -6358,7 +6372,7 @@ msgstr "%s GB"
 msgid "%s TB"
 msgstr "%s TB"
 
-#: concrete/src/View/View.php:297
+#: concrete/src/View/View.php:338
 #, php-format
 msgid "Illegal variable name '%s' in element args."
 msgstr "Öğe argümanlarında geçersiz '%s' değişken adı."
@@ -6595,24 +6609,24 @@ msgid "Foundation"
 msgstr "Temel"
 
 #. %1$s is a filename, %2$s is a PHP class name
-#: concrete/src/Page/Theme/Theme.php:583
+#: concrete/src/Page/Theme/Theme.php:590
 #, php-format
 msgid "The theme file %1$s does not defines the class %2$s"
 msgstr "Tema dosyası %1$s, %2$s sınıfını tanımlamamış"
 
 #. %1$s is a filename, %2$s and %3$s are PHP class names
-#: concrete/src/Page/Theme/Theme.php:588
+#: concrete/src/Page/Theme/Theme.php:595
 #, php-format
 msgid ""
 "The theme file %1$s should define a %2$s class that extends the class %3$s"
 msgstr "Tema dosyası %1$s, %3$s sınıfını genişleten bir %2$s sınıfı tanımlamalıdır"
 
 #: concrete/single_pages/dashboard/pages/types/form.php:50
-#: concrete/src/Page/Theme/Theme.php:705
+#: concrete/src/Page/Theme/Theme.php:712
 msgid "(No Name)"
 msgstr "(İsimsiz)"
 
-#: concrete/src/Page/Theme/Theme.php:750
+#: concrete/src/Page/Theme/Theme.php:757
 msgid "(No Description)"
 msgstr "(Açıklamasız)"
 
@@ -8232,7 +8246,7 @@ msgctxt "Pagination"
 msgid "(current)"
 msgstr "(geçerli)"
 
-#: concrete/src/Area/Area.php:155
+#: concrete/src/Area/Area.php:161
 msgid ""
 "No grid framework found. Grid area methods require a valid grid framework "
 "defined in a PageTheme class."
@@ -8522,7 +8536,7 @@ msgstr "Grup Ekle"
 
 #: concrete/elements/files/add_to_sets.php:36
 msgid "Public Set."
-msgstr ""
+msgstr "Herkese Açık Grup."
 
 #: concrete/elements/dashboard/attributes_table.php:19
 msgid "Grouped by Set"
@@ -8656,8 +8670,8 @@ msgstr "Sayfa Tasarımı, Konumu, Özellikleri ve Ayarları"
 
 #: concrete/elements/page_controls_footer.php:220
 msgctxt "toolbar"
-msgid "Settings"
-msgstr "Ayarlar"
+msgid "Page Settings"
+msgstr "Sayfa Ayarları"
 
 #: concrete/elements/page_controls_footer.php:233
 #: concrete/elements/page_controls_footer.php:241
@@ -8667,8 +8681,8 @@ msgstr "Sayfaya İçerik Ekle"
 #: concrete/elements/page_controls_footer.php:236
 #: concrete/elements/page_controls_footer.php:244
 msgctxt "toolbar"
-msgid "Add"
-msgstr "Ekle"
+msgid "Add Content"
+msgstr "İçerik Ekle"
 
 #: concrete/elements/page_controls_footer.php:267
 #, php-format
@@ -10189,22 +10203,22 @@ msgstr "Silinmiş Kullanıcı"
 #, php-format
 msgid "%s file uploaded"
 msgid_plural "%s files uploaded"
-msgstr[0] ""
+msgstr[0] "%s dosya yüklendi"
 
 #: concrete/views/dialogs/file/upload_complete.php:8
 msgid "Choose file"
 msgid_plural "Choose files"
-msgstr[0] ""
+msgstr[0] "Dosyaları seçin"
 
 #: concrete/views/dialogs/file/upload_complete.php:14
 msgid ""
 "Properties like name, description and tags are unavailable when uploading "
 "multiple files."
-msgstr ""
+msgstr "Ad, açıklama ve etiketler gibi birden çok dosya yüklerken mevcut olmayan özellikler."
 
 #: concrete/views/dialogs/file/upload_complete.php:23
 msgid "Add/Remove Sets"
-msgstr ""
+msgstr "Grupları Ekle/Kaldır"
 
 #: concrete/views/dialogs/file/upload_complete.php:30
 msgid "Custom Attributes"
@@ -11194,153 +11208,153 @@ msgstr "Boş Site"
 msgid "Creates an empty site using the unstyled Elemental theme."
 msgstr "Stilsiz temel temayı kullanarak bir site oluşturur."
 
-#: concrete/config/app.php:429
+#: concrete/config/app.php:430
 msgid "JPEG"
 msgstr "JPEG"
 
-#: concrete/config/app.php:430
+#: concrete/config/app.php:431
 msgid "GIF"
 msgstr "GIF"
 
-#: concrete/config/app.php:431
+#: concrete/config/app.php:432
 msgid "PNG"
 msgstr "PNG"
 
-#: concrete/config/app.php:432
+#: concrete/config/app.php:433
 msgid "Windows Bitmap"
 msgstr "Windows Bitmap"
 
-#: concrete/config/app.php:433
+#: concrete/config/app.php:434
 msgid "TIFF"
 msgstr "TIFF"
 
-#: concrete/config/app.php:435
+#: concrete/config/app.php:436
 msgid "Flash"
 msgstr "Flash"
 
-#: concrete/blocks/feature/form.php:4 concrete/config/app.php:436
+#: concrete/blocks/feature/form.php:4 concrete/config/app.php:437
 #: concrete/single_pages/dashboard/pages/templates/add.php:27
 #: concrete/single_pages/dashboard/pages/templates/view.php:39
 msgid "Icon"
 msgstr "Simge"
 
-#: concrete/config/app.php:437
+#: concrete/config/app.php:438
 msgid "SVG"
 msgstr "SVG"
 
-#: concrete/config/app.php:438
+#: concrete/config/app.php:439
 msgid "Windows Video"
 msgstr "Windows Video"
 
-#: concrete/config/app.php:439
+#: concrete/config/app.php:440
 msgid "Quicktime"
 msgstr "Quicktime"
 
-#: concrete/config/app.php:440
+#: concrete/config/app.php:441
 msgid "AVI"
 msgstr "AVI"
 
-#: concrete/config/app.php:441
+#: concrete/config/app.php:442
 msgid "3GP"
 msgstr "3GP"
 
-#: concrete/attributes/textarea/type_form.php:8 concrete/config/app.php:442
+#: concrete/attributes/textarea/type_form.php:8 concrete/config/app.php:443
 msgid "Plain Text"
 msgstr "Düz Metin"
 
-#: concrete/config/app.php:443
+#: concrete/config/app.php:444
 msgid "CSV"
 msgstr "CSV"
 
-#: concrete/config/app.php:444
+#: concrete/config/app.php:445
 msgid "XML"
 msgstr "XML"
 
-#: concrete/config/app.php:445
+#: concrete/config/app.php:446
 msgid "PHP"
 msgstr "PHP"
 
-#: concrete/config/app.php:446
+#: concrete/config/app.php:447
 msgid "MS Word"
 msgstr "MS Word"
 
-#: concrete/config/app.php:447
+#: concrete/config/app.php:448
 msgid "Stylesheet"
 msgstr "Stil Şablonu"
 
-#: concrete/config/app.php:448
+#: concrete/config/app.php:449
 msgid "MP4"
 msgstr "MP4"
 
-#: concrete/config/app.php:449
+#: concrete/config/app.php:450
 msgid "FLV"
 msgstr "FLV"
 
-#: concrete/config/app.php:450
+#: concrete/config/app.php:451
 msgid "MP3"
 msgstr "MP3"
 
-#: concrete/config/app.php:451
+#: concrete/config/app.php:452
 msgid "MP4 Audio"
 msgstr "MP4 Ses"
 
-#: concrete/config/app.php:452
+#: concrete/config/app.php:453
 msgid "Realaudio"
 msgstr "Realaudio"
 
-#: concrete/config/app.php:453
+#: concrete/config/app.php:454
 msgid "Windows Audio"
 msgstr "Windows Audio"
 
-#: concrete/config/app.php:454
+#: concrete/config/app.php:455
 msgid "Rich Text"
 msgstr "Zengin Metin"
 
-#: concrete/config/app.php:455
+#: concrete/config/app.php:456
 msgid "JavaScript"
 msgstr "JavaScript"
 
-#: concrete/config/app.php:456
+#: concrete/config/app.php:457
 msgid "PDF"
 msgstr "PDF"
 
-#: concrete/config/app.php:457
+#: concrete/config/app.php:458
 msgid "Photoshop"
 msgstr "Photoshop"
 
-#: concrete/config/app.php:458
+#: concrete/config/app.php:459
 msgid "MPEG"
 msgstr "MPEG"
 
-#: concrete/config/app.php:459
+#: concrete/config/app.php:460
 msgid "MS Excel"
 msgstr "MS Excel"
 
-#: concrete/config/app.php:460
+#: concrete/config/app.php:461
 msgid "MS Powerpoint"
 msgstr "MS Powerpoint"
 
-#: concrete/config/app.php:461
+#: concrete/config/app.php:462
 msgid "TAR Archive"
 msgstr "TAR Arşivi"
 
-#: concrete/config/app.php:462
+#: concrete/config/app.php:463
 msgid "Zip Archive"
 msgstr "Zip Arşivi"
 
-#: concrete/config/app.php:463
+#: concrete/config/app.php:464
 msgid "GZip Archive"
 msgstr "GZip Arşivi"
 
-#: concrete/config/app.php:464
+#: concrete/config/app.php:465
 msgid "OGG"
 msgstr "OGG"
 
-#: concrete/config/app.php:465
+#: concrete/config/app.php:466
 msgid "OGG Video"
 msgstr "OGG Video"
 
-#: concrete/config/app.php:466
+#: concrete/config/app.php:467
 msgid "WebM"
 msgstr "WebM"
 
