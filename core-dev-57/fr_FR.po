@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-04-20 04:00+0000\n"
-"PO-Revision-Date: 2015-04-20 11:31+0000\n"
+"POT-Creation-Date: 2015-04-21 07:32+0000\n"
+"PO-Revision-Date: 2015-04-21 08:56+0000\n"
 "Last-Translator: COTE <grcote7@gmail.com>\n"
 "Language-Team: French (France) (http://www.transifex.com/projects/p/concrete5/language/fr_FR/)\n"
 "MIME-Version: 1.0\n"
@@ -574,7 +574,7 @@ msgstr "Accès refusé"
 #: concrete/tools/dashboard/sitemap_empty_trash.php:6
 #: concrete/tools/edit_area_popup.php:27 concrete/tools/edit_area_popup.php:67
 #: concrete/tools/edit_collection_popup.php:39
-#: concrete/tools/files/edit.php:12 concrete/tools/files/permissions.php:12
+#: concrete/tools/files/edit.php:15 concrete/tools/files/permissions.php:12
 #: concrete/tools/files/replace.php:13
 #: concrete/tools/files/selector_data.php:22 concrete/tools/files/star.php:8
 #: concrete/tools/files/view.php:18 concrete/tools/pile_manager.php:10
@@ -732,7 +732,7 @@ msgstr "Supprimer les fichiers du répertoire de la file en attente."
 #: concrete/single_pages/dashboard/system/basics/social.php:36
 #: concrete/single_pages/dashboard/system/basics/social.php:77
 #: concrete/single_pages/dashboard/system/files/permissions.php:22
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:133
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:160
 #: concrete/single_pages/dashboard/system/registration/authentication.php:97
 #: concrete/single_pages/dashboard/users/add.php:109
 #: concrete/single_pages/dashboard/users/add_group.php:221
@@ -1028,6 +1028,10 @@ msgstr "Êtes-vous certain de vouloir supprimer les fichiers suivants ?"
 #: concrete/views/panels/page/versions.php:296
 msgid "Delete"
 msgstr "Supprimer"
+
+#: concrete/tools/files/edit.php:9
+msgid "File Not Found."
+msgstr "Fichier introuvable."
 
 #: concrete/tools/tree/node/remove.php:15
 msgid ""
@@ -1431,7 +1435,7 @@ msgstr "Seul les utilisateurs membres de TOUS les groupes sélectionnés sont é
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:102
 #: concrete/single_pages/dashboard/system/mail/importers.php:77
 #: concrete/single_pages/dashboard/system/multilingual/setup.php:111
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:50
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:77
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:53
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:207
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:258
@@ -1730,7 +1734,7 @@ msgstr "Modèle personnalisé"
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:208
 #: concrete/single_pages/dashboard/users/add_group.php:29
 #: concrete/single_pages/dashboard/users/groups.php:39
-#: concrete/src/File/Version.php:482
+#: concrete/src/File/Version.php:483
 #: concrete/tools/page_types/composer/form/edit_control.php:54
 #: concrete/views/panels/details/page/attributes.php:58
 msgid "Description"
@@ -2125,7 +2129,7 @@ msgstr "Vous n'avez pas la permission d'ajouter une page de ce type à cet empla
 #: concrete/elements/files/search.php:69
 #: concrete/views/dialogs/page/add.php:21
 #: concrete/views/dialogs/page/add_block_list.php:54
-#: concrete/views/panels/add.php:335
+#: concrete/views/panels/add.php:338
 msgid "Other"
 msgstr "Autre"
 
@@ -3150,8 +3154,10 @@ msgid "Languages refreshed."
 msgstr "Langues rafraichies."
 
 #: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:32
-msgid "Translations exported to PO File and Reloaded."
-msgstr "Traductions exportées vers le fichier PO et rechargées."
+#: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:176
+msgid ""
+"The translations have been exported to file and will be used by the website."
+msgstr "Les traductions ont été exportées dans le fichier et seront utilisées par le site."
 
 #: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:38
 msgid "Languages reset."
@@ -3161,12 +3167,16 @@ msgstr "Langues remises à zéro."
 msgid "Only the admin user may reset all strings."
 msgstr "Seul l'administrateur peut remettre à zéro toutes les chaines."
 
-#: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:125
-#: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:132
-#: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:139
+#: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:126
+#: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:133
+#: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:140
 #, php-format
 msgid "Invalid parameter received: %s"
 msgstr "Paramètre invalide: %s"
+
+#: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:168
+msgid "Invalid language identifier"
+msgstr "Identifiant de langage invalide."
 
 #: concrete/controllers/single_page/dashboard/system/multilingual/setup.php:103
 msgid "Multilingual content enabled"
@@ -5519,7 +5529,7 @@ msgstr "Supprimer l'entête"
 #: concrete/single_pages/dashboard/files/sets.php:75
 #: concrete/single_pages/dashboard/pages/feeds.php:78
 #: concrete/src/File/Search/ColumnSet/DefaultSet.php:27
-#: concrete/src/File/Version.php:479
+#: concrete/src/File/Version.php:480
 #: concrete/views/dialogs/file/properties.php:119
 msgid "Title"
 msgstr "Titre"
@@ -6545,7 +6555,7 @@ msgstr "Application"
 #: concrete/single_pages/dashboard/pages/themes/inspect.php:24
 #: concrete/single_pages/dashboard/reports/statistics.php:77
 #: concrete/single_pages/dashboard/system/backup/backup.php:101
-#: concrete/src/File/Type/Type.php:85 concrete/src/File/Version.php:476
+#: concrete/src/File/Type/Type.php:85 concrete/src/File/Version.php:477
 msgid "File"
 msgstr "Fichier"
 
@@ -6600,18 +6610,18 @@ msgstr "Ajouté"
 msgid "Active"
 msgstr "Actif"
 
-#: concrete/src/File/Version.php:361
+#: concrete/src/File/Version.php:362
 msgid "(Unknown)"
 msgstr "(Inconnu)"
 
 #: concrete/blocks/tags/controller.php:40
 #: concrete/elements/files/properties.php:145
 #: concrete/elements/gathering/data_sources/flickr_feed/options.php:8
-#: concrete/src/File/Version.php:485
+#: concrete/src/File/Version.php:486
 msgid "Tags"
 msgstr "Mots-clés"
 
-#: concrete/src/File/Version.php:654
+#: concrete/src/File/Version.php:655
 msgid "Invalid dimensions."
 msgstr "Dimensions invalides"
 
@@ -9411,7 +9421,7 @@ msgstr "Éditer les détails"
 
 #: concrete/elements/workflow/type_form_required.php:50
 #: concrete/single_pages/dashboard/pages/types/attributes.php:32
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:26
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:52
 #: concrete/single_pages/dashboard/users/points/actions.php:65
 #: concrete/single_pages/dashboard/users/points/assign.php:45
 msgid "Back to List"
@@ -10410,7 +10420,7 @@ msgstr "Changer le type de pages existantes peut engendrer un comportement inapp
 #: concrete/views/dialogs/page/add_block_list.php:64
 #: concrete/views/dialogs/page/clipboard.php:22
 #: concrete/views/panels/add.php:91 concrete/views/panels/add.php:192
-#: concrete/views/panels/add.php:306 concrete/views/panels/add.php:348
+#: concrete/views/panels/add.php:309 concrete/views/panels/add.php:351
 #, php-format
 msgid "Add %s"
 msgstr "Ajouter %s"
@@ -11004,11 +11014,11 @@ msgstr[1] "%d Blocs"
 msgid "An error occured while deleting this item:"
 msgstr "Une erreur est survenue pendant la suppression de cet objet:"
 
-#: concrete/views/panels/add.php:325
+#: concrete/views/panels/add.php:328
 msgid "No block types available."
 msgstr "Aucun types de blocs disponibles"
 
-#: concrete/views/panels/add.php:372
+#: concrete/views/panels/add.php:375
 msgid "Get More Blocks"
 msgstr "Obtenir plus de blocs"
 
@@ -15432,7 +15442,13 @@ msgid ""
 "will block 192.168.15.1, 192.168.15.2, etc...)"
 msgstr "Saisissez les adresses IP, une par ligne, dans le formulaire suivant pour bannir des adresses IP manuellement. Pour entrer une plage d'IP, utilisez le caractère de remplacement (ex.: 192.168.15.* bloquera de 192.168.15.1 à 192.168.15.255)."
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:33
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:44
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:53
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:144
+msgid "Save to file"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:60
 #, php-format
 msgid ""
 "You must create the directory %s and make it writable before you may run "
@@ -15440,65 +15456,61 @@ msgid ""
 msgstr "Vous devez créer le répertoire %s et le rendre accessible en écriture avant de pouvoir lancer cet outil. De plus, tous les fichiers dans ce répertoire doivent être accessible en écriture."
 
 #: concrete/single_pages/dashboard/system/multilingual/setup.php:112
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:51
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:78
 msgid "Locale"
 msgstr "Locale"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:52
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:79
 msgid "Completion"
 msgstr "Progression"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:53
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:80
 msgid "Last Updated"
 msgstr "Dernière mise à jour"
 
 #. %1$s is the partial number, %2$s is the total number. Example: 2 of 3
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:82
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:109
 #, php-format
 msgid "%1$s of %2$s"
 msgstr "%1$s de %2$s"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:91
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:118
 msgid "File not found."
 msgstr "Fichier introuvable."
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:94
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:121
 msgid "N/A"
 msgstr "N/A"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:116
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:143
 msgid "Reload Strings"
 msgstr "Recharger les paramètres"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:117
-msgid "Export to .PO"
-msgstr "Exporter vers .PO"
-
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:119
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:146
 msgid "Reset All"
 msgstr "Tout réinitialiser"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:130
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:157
 msgid ""
 "Are you sure? This will remove all translations from all languages, in the "
 "database and in your site PO files. This cannot be undone."
 msgstr "Êtes vous sur? Cela supprimera toutes les traductions de votre langue, en base de donnée ainsi que les fichiers PO du site. Ceci ne peut pas être annulé par la suite."
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:134
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:161
 msgid "Confirm Reset"
 msgstr "Confirmer la réinitialisation"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:138
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:165
 msgid "Only the admin user may reset all languages."
 msgstr "Seul l’administrateur peut réinitialiser toutes les langues."
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:150
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:177
 msgid "Reset Languages"
 msgstr "Réinitialiser les langues"
 
 #: concrete/single_pages/dashboard/system/multilingual/setup.php:129
 #: concrete/single_pages/dashboard/system/multilingual/setup.php:216
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:169
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:196
 msgid "You have not created any multilingual content sections yet."
 msgstr "Vous n'avez encore créé aucune section de contenu multilingue."
 

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-04-19 04:00+0000\n"
-"PO-Revision-Date: 2015-04-19 10:41+0000\n"
+"POT-Creation-Date: 2015-04-21 07:32+0000\n"
+"PO-Revision-Date: 2015-04-21 08:56+0000\n"
 "Last-Translator: Fredrik Lindau <fredrik@fxlindau.se>\n"
 "Language-Team: Swedish (Sweden) (http://www.transifex.com/projects/p/concrete5/language/sv_SE/)\n"
 "MIME-Version: 1.0\n"
@@ -570,7 +570,7 @@ msgstr "Åtkomst nekad"
 #: concrete/tools/dashboard/sitemap_empty_trash.php:6
 #: concrete/tools/edit_area_popup.php:27 concrete/tools/edit_area_popup.php:67
 #: concrete/tools/edit_collection_popup.php:39
-#: concrete/tools/files/edit.php:12 concrete/tools/files/permissions.php:12
+#: concrete/tools/files/edit.php:15 concrete/tools/files/permissions.php:12
 #: concrete/tools/files/replace.php:13
 #: concrete/tools/files/selector_data.php:22 concrete/tools/files/star.php:8
 #: concrete/tools/files/view.php:18 concrete/tools/pile_manager.php:10
@@ -728,7 +728,7 @@ msgstr "Ta bort filer från katalogen incoming/"
 #: concrete/single_pages/dashboard/system/basics/social.php:36
 #: concrete/single_pages/dashboard/system/basics/social.php:77
 #: concrete/single_pages/dashboard/system/files/permissions.php:22
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:133
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:160
 #: concrete/single_pages/dashboard/system/registration/authentication.php:97
 #: concrete/single_pages/dashboard/users/add.php:109
 #: concrete/single_pages/dashboard/users/add_group.php:221
@@ -1024,6 +1024,10 @@ msgstr "Är du säker på att du vill ta bort följande filer?"
 #: concrete/views/panels/page/versions.php:296
 msgid "Delete"
 msgstr "Ta bort"
+
+#: concrete/tools/files/edit.php:9
+msgid "File Not Found."
+msgstr "Filen hittades inte."
 
 #: concrete/tools/tree/node/remove.php:15
 msgid ""
@@ -1427,7 +1431,7 @@ msgstr "Endast användare som är medlemmar ALLA valda grupper kommer att påver
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:102
 #: concrete/single_pages/dashboard/system/mail/importers.php:77
 #: concrete/single_pages/dashboard/system/multilingual/setup.php:111
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:50
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:77
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:53
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:207
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:258
@@ -1726,7 +1730,7 @@ msgstr "Anpassad mall"
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:208
 #: concrete/single_pages/dashboard/users/add_group.php:29
 #: concrete/single_pages/dashboard/users/groups.php:39
-#: concrete/src/File/Version.php:482
+#: concrete/src/File/Version.php:483
 #: concrete/tools/page_types/composer/form/edit_control.php:54
 #: concrete/views/panels/details/page/attributes.php:58
 msgid "Description"
@@ -2121,7 +2125,7 @@ msgstr "Du saknar behörighet att lägga till en sida av den här typen på det 
 #: concrete/elements/files/search.php:69
 #: concrete/views/dialogs/page/add.php:21
 #: concrete/views/dialogs/page/add_block_list.php:54
-#: concrete/views/panels/add.php:335
+#: concrete/views/panels/add.php:338
 msgid "Other"
 msgstr "Annan"
 
@@ -3146,8 +3150,10 @@ msgid "Languages refreshed."
 msgstr "Språk uppdaterade."
 
 #: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:32
-msgid "Translations exported to PO File and Reloaded."
-msgstr "Översättning exporterad till PO-fil och omladdad."
+#: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:176
+msgid ""
+"The translations have been exported to file and will be used by the website."
+msgstr "Översättningarna har exporterats till filer och kommer att användas av webbplatsen."
 
 #: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:38
 msgid "Languages reset."
@@ -3157,12 +3163,16 @@ msgstr "Språk återställt."
 msgid "Only the admin user may reset all strings."
 msgstr "Endast admin-användaren kan återställa alla trådar."
 
-#: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:125
-#: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:132
-#: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:139
+#: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:126
+#: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:133
+#: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:140
 #, php-format
 msgid "Invalid parameter received: %s"
 msgstr "Ogiltig parameter mottagen: %s"
+
+#: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:168
+msgid "Invalid language identifier"
+msgstr "Ogiltig språkidentifierare"
 
 #: concrete/controllers/single_page/dashboard/system/multilingual/setup.php:103
 msgid "Multilingual content enabled"
@@ -5515,7 +5525,7 @@ msgstr "Ta bort sidhuvud"
 #: concrete/single_pages/dashboard/files/sets.php:75
 #: concrete/single_pages/dashboard/pages/feeds.php:78
 #: concrete/src/File/Search/ColumnSet/DefaultSet.php:27
-#: concrete/src/File/Version.php:479
+#: concrete/src/File/Version.php:480
 #: concrete/views/dialogs/file/properties.php:119
 msgid "Title"
 msgstr "Titel"
@@ -6541,7 +6551,7 @@ msgstr "Program"
 #: concrete/single_pages/dashboard/pages/themes/inspect.php:24
 #: concrete/single_pages/dashboard/reports/statistics.php:77
 #: concrete/single_pages/dashboard/system/backup/backup.php:101
-#: concrete/src/File/Type/Type.php:85 concrete/src/File/Version.php:476
+#: concrete/src/File/Type/Type.php:85 concrete/src/File/Version.php:477
 msgid "File"
 msgstr "Fil"
 
@@ -6596,18 +6606,18 @@ msgstr "Tillagd"
 msgid "Active"
 msgstr "Aktiv"
 
-#: concrete/src/File/Version.php:361
+#: concrete/src/File/Version.php:362
 msgid "(Unknown)"
 msgstr "(Okänt)"
 
 #: concrete/blocks/tags/controller.php:40
 #: concrete/elements/files/properties.php:145
 #: concrete/elements/gathering/data_sources/flickr_feed/options.php:8
-#: concrete/src/File/Version.php:485
+#: concrete/src/File/Version.php:486
 msgid "Tags"
 msgstr "Taggar"
 
-#: concrete/src/File/Version.php:654
+#: concrete/src/File/Version.php:655
 msgid "Invalid dimensions."
 msgstr "Ogiltiga dimensioner."
 
@@ -9407,7 +9417,7 @@ msgstr "Redigera uppgifter"
 
 #: concrete/elements/workflow/type_form_required.php:50
 #: concrete/single_pages/dashboard/pages/types/attributes.php:32
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:26
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:52
 #: concrete/single_pages/dashboard/users/points/actions.php:65
 #: concrete/single_pages/dashboard/users/points/assign.php:45
 msgid "Back to List"
@@ -10406,7 +10416,7 @@ msgstr "Att byta sidtyp på existerande sidor kan få oväntade resultat."
 #: concrete/views/dialogs/page/add_block_list.php:64
 #: concrete/views/dialogs/page/clipboard.php:22
 #: concrete/views/panels/add.php:91 concrete/views/panels/add.php:192
-#: concrete/views/panels/add.php:306 concrete/views/panels/add.php:348
+#: concrete/views/panels/add.php:309 concrete/views/panels/add.php:351
 #, php-format
 msgid "Add %s"
 msgstr "Lägg till %s"
@@ -11000,11 +11010,11 @@ msgstr[1] "%d Block"
 msgid "An error occured while deleting this item:"
 msgstr "Ett fel uppstod vid borttagning av detta objekt:"
 
-#: concrete/views/panels/add.php:325
+#: concrete/views/panels/add.php:328
 msgid "No block types available."
 msgstr "Inga blocktyper tillgängliga."
 
-#: concrete/views/panels/add.php:372
+#: concrete/views/panels/add.php:375
 msgid "Get More Blocks"
 msgstr "Hämta fler block"
 
@@ -15428,7 +15438,13 @@ msgid ""
 "will block 192.168.15.1, 192.168.15.2, etc...)"
 msgstr "Fyll i IP-adresser, en per rad, i formuläret nedan för att manuellt blockera en IP-adress. För att ange ett spann, använd ett jokertecken (t.ex. kommer 192.168.15.* att svartlista 192.168.15.1, 192.168.15.2 osv)."
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:33
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:44
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:53
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:144
+msgid "Save to file"
+msgstr "Spara till fil"
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:60
 #, php-format
 msgid ""
 "You must create the directory %s and make it writable before you may run "
@@ -15436,65 +15452,61 @@ msgid ""
 msgstr "Du måste skapa katalogen %s och gör den skrivbar innan du kan köra detta verktyg. Alla filer i denna katalog måste även dessa vara skrivbara."
 
 #: concrete/single_pages/dashboard/system/multilingual/setup.php:112
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:51
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:78
 msgid "Locale"
 msgstr "Språk"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:52
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:79
 msgid "Completion"
 msgstr "Avslutande"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:53
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:80
 msgid "Last Updated"
 msgstr "Senast uppdaterad"
 
 #. %1$s is the partial number, %2$s is the total number. Example: 2 of 3
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:82
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:109
 #, php-format
 msgid "%1$s of %2$s"
 msgstr "%1$s av %2$s"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:91
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:118
 msgid "File not found."
 msgstr "Filen hittades inte."
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:94
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:121
 msgid "N/A"
 msgstr "N/A"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:116
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:143
 msgid "Reload Strings"
 msgstr "Ladda om trådar"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:117
-msgid "Export to .PO"
-msgstr "Exportera till .PO"
-
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:119
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:146
 msgid "Reset All"
 msgstr "Återställ alla"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:130
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:157
 msgid ""
 "Are you sure? This will remove all translations from all languages, in the "
 "database and in your site PO files. This cannot be undone."
 msgstr "Är du säker? Detta kommer ta bort alla översättningar från alla språk, i databasen och i PO-filerna. Detta går inte att ångra."
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:134
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:161
 msgid "Confirm Reset"
 msgstr "Bekräfta återställning"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:138
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:165
 msgid "Only the admin user may reset all languages."
 msgstr "Endast admin-användaren kan återställa alla språk."
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:150
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:177
 msgid "Reset Languages"
 msgstr "Återställ språk"
 
 #: concrete/single_pages/dashboard/system/multilingual/setup.php:129
 #: concrete/single_pages/dashboard/system/multilingual/setup.php:216
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:169
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:196
 msgid "You have not created any multilingual content sections yet."
 msgstr "Du har inte skapat några flerspråkiga innehållssektioner ännu."
 

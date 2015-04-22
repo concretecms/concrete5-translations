@@ -1,7 +1,7 @@
 # 
 # Translators:
 # acliss19xx <acliss19xx@gmail.com>, 2014
-# Fumito Mizuno <ounziw@gmail.com>, 2014
+# Fumito Mizuno <ounziw@gmail.com>, 2014-2015
 # Katz Ueno <katzueno@deerstudio.com>, 2014
 # KeikaKomura <keikakomura@gmail.com>, 2014
 # suneo3476 <suneo3476@gmail.com>, 2014
@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-04-20 04:00+0000\n"
-"PO-Revision-Date: 2015-04-20 09:36+0000\n"
+"POT-Creation-Date: 2015-04-21 07:32+0000\n"
+"PO-Revision-Date: 2015-04-21 14:21+0000\n"
 "Last-Translator: Takuro Hishikawa <hishikawa@concrete5.co.jp>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/projects/p/concrete5/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
@@ -574,7 +574,7 @@ msgstr "アクセス拒否"
 #: concrete/tools/dashboard/sitemap_empty_trash.php:6
 #: concrete/tools/edit_area_popup.php:27 concrete/tools/edit_area_popup.php:67
 #: concrete/tools/edit_collection_popup.php:39
-#: concrete/tools/files/edit.php:12 concrete/tools/files/permissions.php:12
+#: concrete/tools/files/edit.php:15 concrete/tools/files/permissions.php:12
 #: concrete/tools/files/replace.php:13
 #: concrete/tools/files/selector_data.php:22 concrete/tools/files/star.php:8
 #: concrete/tools/files/view.php:18 concrete/tools/pile_manager.php:10
@@ -732,7 +732,7 @@ msgstr "サーバーの入稿用ディレクトリー上のファイルを削除
 #: concrete/single_pages/dashboard/system/basics/social.php:36
 #: concrete/single_pages/dashboard/system/basics/social.php:77
 #: concrete/single_pages/dashboard/system/files/permissions.php:22
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:133
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:160
 #: concrete/single_pages/dashboard/system/registration/authentication.php:97
 #: concrete/single_pages/dashboard/users/add.php:109
 #: concrete/single_pages/dashboard/users/add_group.php:221
@@ -1026,6 +1026,10 @@ msgstr "これらのファイルを削除してよろしいですか？"
 #: concrete/views/panels/page/versions.php:296
 msgid "Delete"
 msgstr "削除"
+
+#: concrete/tools/files/edit.php:9
+msgid "File Not Found."
+msgstr "ファイルが見つかりません。"
 
 #: concrete/tools/tree/node/remove.php:15
 msgid ""
@@ -1427,7 +1431,7 @@ msgstr "選択されたグループすべてに属しているユーザーのみ
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:102
 #: concrete/single_pages/dashboard/system/mail/importers.php:77
 #: concrete/single_pages/dashboard/system/multilingual/setup.php:111
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:50
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:77
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:53
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:207
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:258
@@ -1726,7 +1730,7 @@ msgstr "カスタムテンプレート"
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:208
 #: concrete/single_pages/dashboard/users/add_group.php:29
 #: concrete/single_pages/dashboard/users/groups.php:39
-#: concrete/src/File/Version.php:482
+#: concrete/src/File/Version.php:483
 #: concrete/tools/page_types/composer/form/edit_control.php:54
 #: concrete/views/panels/details/page/attributes.php:58
 msgid "Description"
@@ -2120,7 +2124,7 @@ msgstr "選択された場所にこのタイプのページを追加する権限
 #: concrete/elements/files/search.php:69
 #: concrete/views/dialogs/page/add.php:21
 #: concrete/views/dialogs/page/add_block_list.php:54
-#: concrete/views/panels/add.php:335
+#: concrete/views/panels/add.php:338
 msgid "Other"
 msgstr "その他"
 
@@ -3145,8 +3149,10 @@ msgid "Languages refreshed."
 msgstr "言語が更新されました。"
 
 #: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:32
-msgid "Translations exported to PO File and Reloaded."
-msgstr "翻訳がPOファイルに出力され、再読み込みされました。"
+#: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:176
+msgid ""
+"The translations have been exported to file and will be used by the website."
+msgstr "翻訳がファイルにエクスポートされ、ウェブサイトで仕様可能になりました。"
 
 #: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:38
 msgid "Languages reset."
@@ -3156,12 +3162,16 @@ msgstr "言語をリセットしました。"
 msgid "Only the admin user may reset all strings."
 msgstr "adminユーザーのみ全ての文字列をリセットできます。"
 
-#: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:125
-#: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:132
-#: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:139
+#: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:126
+#: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:133
+#: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:140
 #, php-format
 msgid "Invalid parameter received: %s"
 msgstr "不正なパラメーターを受信しました: %s"
+
+#: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:168
+msgid "Invalid language identifier"
+msgstr "無効な言語識別子です。"
 
 #: concrete/controllers/single_page/dashboard/system/multilingual/setup.php:103
 msgid "Multilingual content enabled"
@@ -5260,24 +5270,24 @@ msgstr "このページにアクセスする際のURLをコントロールしま
 
 #: concrete/controllers/frontend/assets_localization.php:284
 msgid "Properties Panel"
-msgstr ""
+msgstr "プロパティパネル"
 
 #: concrete/controllers/frontend/assets_localization.php:284
 msgid ""
 "The properties panel controls data and details about the current page. You "
 "can also go there to make design customizations for the page. To open the "
 "properties panel, click the icon."
-msgstr ""
+msgstr "プロパティパネルから現在のページのデータや詳細情報をコントロールできます。また、ページのデザインカスタマイズもここから行なえます。プロパティパネルを開くには、このアイコンをクリックしてください。"
 
 #: concrete/controllers/frontend/assets_localization.php:285
 msgid "Page Design"
-msgstr ""
+msgstr "ページデザイン"
 
 #: concrete/controllers/frontend/assets_localization.php:285
 msgid ""
 "From here you can change your page template and customize your page's "
 "styles."
-msgstr ""
+msgstr "ここからページテンプレートの変更と、ページのスタイルのカスタマイズが行なえます。"
 
 #: concrete/controllers/frontend/assets_localization.php:286
 #: concrete/src/Application/Service/Dashboard.php:336
@@ -5287,11 +5297,11 @@ msgstr "カスタマイズ"
 
 #: concrete/controllers/frontend/assets_localization.php:286
 msgid "Click here to load the theme customizer for the page."
-msgstr ""
+msgstr "ここをクリックしてページのテーマカスタマイザーを開きます。"
 
 #: concrete/controllers/frontend/assets_localization.php:289
 msgid "Edit anything on this page by clicking the pencil icon."
-msgstr ""
+msgstr "このページを編集するには、この鉛筆のアイコンをクリックしてください。"
 
 #: concrete/blocks/autonav/form_setup_html.php:16
 #: concrete/blocks/page_list/page_list_form.php:11
@@ -5307,7 +5317,7 @@ msgstr "設定"
 msgid ""
 "Change the general look and options like SEO and permissions. Delete the "
 "page or roll versions back from here as well."
-msgstr ""
+msgstr "見た目やSEO、権限などのオプションの変更、ページの削除、バージョンのロールバックはここから行ないます。"
 
 #: concrete/controllers/frontend/assets_localization.php:291
 msgid "Add Content"
@@ -5317,7 +5327,7 @@ msgstr "コンテンツを追加"
 msgid ""
 "Place a new block on the page. Copy one using the clipboard, or try a "
 "reusable stack."
-msgstr ""
+msgstr "ページへの新しいブロックの配置、クリップボードからのブロックの追加やスタックの追加が行なえます。"
 
 #: concrete/controllers/frontend/assets_localization.php:292
 msgid "Intelligent Search"
@@ -5327,7 +5337,7 @@ msgstr "検索"
 msgid ""
 "At a loss? Try searching here. You can find anything from pages in your site"
 " to settings and how-to documentation."
-msgstr ""
+msgstr "ページを見失ったら、ここから検索してください。管理画面内のページやサイト内のページを検索できます。"
 
 #: concrete/controllers/frontend/assets_localization.php:293
 msgid "Add a new page to your site, or quickly jump around your sitemap."
@@ -5513,7 +5523,7 @@ msgstr "ヘッダを削除"
 #: concrete/single_pages/dashboard/files/sets.php:75
 #: concrete/single_pages/dashboard/pages/feeds.php:78
 #: concrete/src/File/Search/ColumnSet/DefaultSet.php:27
-#: concrete/src/File/Version.php:479
+#: concrete/src/File/Version.php:480
 #: concrete/views/dialogs/file/properties.php:119
 msgid "Title"
 msgstr "タイトル"
@@ -6536,7 +6546,7 @@ msgstr "アプリケーション"
 #: concrete/single_pages/dashboard/pages/themes/inspect.php:24
 #: concrete/single_pages/dashboard/reports/statistics.php:77
 #: concrete/single_pages/dashboard/system/backup/backup.php:101
-#: concrete/src/File/Type/Type.php:85 concrete/src/File/Version.php:476
+#: concrete/src/File/Type/Type.php:85 concrete/src/File/Version.php:477
 msgid "File"
 msgstr "ファイル"
 
@@ -6591,18 +6601,18 @@ msgstr "追加"
 msgid "Active"
 msgstr "有効"
 
-#: concrete/src/File/Version.php:361
+#: concrete/src/File/Version.php:362
 msgid "(Unknown)"
 msgstr "（不明）"
 
 #: concrete/blocks/tags/controller.php:40
 #: concrete/elements/files/properties.php:145
 #: concrete/elements/gathering/data_sources/flickr_feed/options.php:8
-#: concrete/src/File/Version.php:485
+#: concrete/src/File/Version.php:486
 msgid "Tags"
 msgstr "タグ"
 
-#: concrete/src/File/Version.php:654
+#: concrete/src/File/Version.php:655
 msgid "Invalid dimensions."
 msgstr "無効なサイズです。"
 
@@ -9391,7 +9401,7 @@ msgstr "詳細を編集"
 
 #: concrete/elements/workflow/type_form_required.php:50
 #: concrete/single_pages/dashboard/pages/types/attributes.php:32
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:26
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:52
 #: concrete/single_pages/dashboard/users/points/actions.php:65
 #: concrete/single_pages/dashboard/users/points/assign.php:45
 msgid "Back to List"
@@ -10389,7 +10399,7 @@ msgstr "既存ページのページタイプを変更すると、予期せぬ結
 #: concrete/views/dialogs/page/add_block_list.php:64
 #: concrete/views/dialogs/page/clipboard.php:22
 #: concrete/views/panels/add.php:91 concrete/views/panels/add.php:192
-#: concrete/views/panels/add.php:306 concrete/views/panels/add.php:348
+#: concrete/views/panels/add.php:309 concrete/views/panels/add.php:351
 #, php-format
 msgid "Add %s"
 msgstr "%sを追加"
@@ -10979,11 +10989,11 @@ msgstr[0] "%d ブロック"
 msgid "An error occured while deleting this item:"
 msgstr "このアイテムを削除する際にエラーが発生しました："
 
-#: concrete/views/panels/add.php:325
+#: concrete/views/panels/add.php:328
 msgid "No block types available."
 msgstr "利用可能なブロックタイプがありません。"
 
-#: concrete/views/panels/add.php:372
+#: concrete/views/panels/add.php:375
 msgid "Get More Blocks"
 msgstr "他のブロックを入手"
 
@@ -15403,7 +15413,13 @@ msgid ""
 "will block 192.168.15.1, 192.168.15.2, etc...)"
 msgstr "ブロックされたいIPアドレスを1行1アドレス毎に入力してください。アドレスの範囲を指定されたい場合は、ワイルドカード(*)を使用してください。（例：「192.168.15.*」と入力すると、192.168.15.1から、192.168.15.255までのアドレスがブロックされます。）"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:33
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:44
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:53
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:144
+msgid "Save to file"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:60
 #, php-format
 msgid ""
 "You must create the directory %s and make it writable before you may run "
@@ -15411,65 +15427,61 @@ msgid ""
 msgstr "このツールを実行する前に、%s ディレクトリを作成して書き込み可能に設定する必要があります。また、このディレクトリ内のファイルも書き込み可能である必要があります。"
 
 #: concrete/single_pages/dashboard/system/multilingual/setup.php:112
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:51
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:78
 msgid "Locale"
 msgstr "地域"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:52
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:79
 msgid "Completion"
 msgstr "進捗"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:53
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:80
 msgid "Last Updated"
 msgstr "最終更新"
 
 #. %1$s is the partial number, %2$s is the total number. Example: 2 of 3
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:82
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:109
 #, php-format
 msgid "%1$s of %2$s"
 msgstr "%2$s ページ中の %1$s"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:91
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:118
 msgid "File not found."
 msgstr "ファイルが見つかりません。"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:94
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:121
 msgid "N/A"
 msgstr "なし"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:116
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:143
 msgid "Reload Strings"
 msgstr "文字列を再読み込み"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:117
-msgid "Export to .PO"
-msgstr ".POファイルにエクスポート"
-
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:119
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:146
 msgid "Reset All"
 msgstr "全てをリセット"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:130
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:157
 msgid ""
 "Are you sure? This will remove all translations from all languages, in the "
 "database and in your site PO files. This cannot be undone."
 msgstr "本当に実行しますか？この作業は全ての言語の全ての翻訳を、データベースまたはサイトのPOファイルから削除します。この作業は元に戻せません。"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:134
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:161
 msgid "Confirm Reset"
 msgstr "確認してリセット"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:138
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:165
 msgid "Only the admin user may reset all languages."
 msgstr "adminユーザーのみ全ての言語をリセットできます。"
 
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:150
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:177
 msgid "Reset Languages"
 msgstr "言語をリセット"
 
 #: concrete/single_pages/dashboard/system/multilingual/setup.php:129
 #: concrete/single_pages/dashboard/system/multilingual/setup.php:216
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:169
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:196
 msgid "You have not created any multilingual content sections yet."
 msgstr "サイトに言語セクションが作成されていません。"
 
