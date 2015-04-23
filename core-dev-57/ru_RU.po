@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-04-21 07:32+0000\n"
-"PO-Revision-Date: 2015-04-21 07:33+0000\n"
-"Last-Translator: Michele Locati <michele@locati.it>\n"
+"POT-Creation-Date: 2015-04-22 04:00+0000\n"
+"PO-Revision-Date: 2015-04-22 20:51+0000\n"
+"Last-Translator: Anton Schepetkov <schepetkov@gmail.com>\n"
 "Language-Team: Russian (Russia) (http://www.transifex.com/projects/p/concrete5/language/ru_RU/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -730,6 +730,8 @@ msgstr "Удалить файлы из директории /incoming"
 #: concrete/single_pages/dashboard/system/basics/social.php:77
 #: concrete/single_pages/dashboard/system/files/permissions.php:22
 #: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:160
+#: concrete/single_pages/dashboard/system/permissions/tasks.php:22
+#: concrete/single_pages/dashboard/system/permissions/users.php:22
 #: concrete/single_pages/dashboard/system/registration/authentication.php:97
 #: concrete/single_pages/dashboard/users/add.php:109
 #: concrete/single_pages/dashboard/users/add_group.php:221
@@ -1030,7 +1032,7 @@ msgstr "Удалить"
 
 #: concrete/tools/files/edit.php:9
 msgid "File Not Found."
-msgstr ""
+msgstr "Файл не найден."
 
 #: concrete/tools/tree/node/remove.php:15
 msgid ""
@@ -1362,8 +1364,8 @@ msgstr "Сколько времени будут эти права действ�
 #: concrete/single_pages/dashboard/system/permissions/captcha.php:39
 #: concrete/single_pages/dashboard/system/permissions/maintenance.php:17
 #: concrete/single_pages/dashboard/system/permissions/site.php:60
-#: concrete/single_pages/dashboard/system/permissions/tasks.php:22
-#: concrete/single_pages/dashboard/system/permissions/users.php:22
+#: concrete/single_pages/dashboard/system/permissions/tasks.php:23
+#: concrete/single_pages/dashboard/system/permissions/users.php:23
 #: concrete/single_pages/dashboard/system/registration/authentication.php:102
 #: concrete/single_pages/dashboard/system/registration/open.php:92
 #: concrete/single_pages/dashboard/system/registration/postlogin.php:47
@@ -2246,8 +2248,8 @@ msgstr "Предустановка разметки области сохран�
 msgid "Invalid layout preset object."
 msgstr "Ошибочный объект предустановки."
 
-#: concrete/controllers/dialog/file/bulk/sets.php:115
-#: concrete/controllers/dialog/file/sets.php:57
+#: concrete/controllers/dialog/file/bulk/sets.php:117
+#: concrete/controllers/dialog/file/sets.php:59
 msgid "File sets updated successfully."
 msgstr ""
 
@@ -6113,7 +6115,7 @@ msgstr "Стеки и блоки"
 msgid "Extend concrete5"
 msgstr "Расширения Concrete5"
 
-#: concrete/themes/concrete/view.php:61
+#: concrete/themes/concrete/view.php:60
 #: concrete/themes/dashboard/elements/header.php:70
 msgctxt "toolbar"
 msgid "Return to Website"
@@ -6141,18 +6143,18 @@ msgstr "Редактировать страницу"
 
 #: concrete/elements/account/menu.php:47
 #: concrete/elements/page_controls_footer.php:299
-#: concrete/themes/concrete/view.php:51
+#: concrete/themes/concrete/view.php:50
 msgid "Sign Out"
 msgstr "Выход"
 
 #: concrete/elements/page_controls_footer.php:301
-#: concrete/themes/concrete/view.php:53
+#: concrete/themes/concrete/view.php:52
 msgctxt "toolbar"
 msgid "Sign Out"
 msgstr "Выход"
 
 #: concrete/config/install/base/login_registration.xml:28
-#: concrete/elements/account/menu.php:26 concrete/themes/concrete/view.php:69
+#: concrete/elements/account/menu.php:26 concrete/themes/concrete/view.php:68
 msgid "My Account"
 msgstr "Моя страница"
 
@@ -6486,6 +6488,11 @@ msgstr "Не удается обработать личные сообщения
 #: concrete/src/Activity/NewsflowItem.php:109
 msgid "Unable to parse news response."
 msgstr "Не удалось разобрать полученный ответ."
+
+#: concrete/src/Http/ResponseAssetGroup.php:198
+#, php-format
+msgid "\"%s\" is not a valid asset group handle"
+msgstr ""
 
 #: concrete/src/Html/Service/Navigation.php:72
 msgid "Log out"
@@ -12690,6 +12697,10 @@ msgstr "Уведомить меня по email, когда эту форму з�
 #: concrete/blocks/form/form_setup_html.php:59
 msgid "(Seperate multiple emails with a comma)"
 msgstr "(Разделяйте несколько адресов запятыми)"
+
+#: concrete/blocks/form/form_setup_html.php:62
+msgid "http://en.wikipedia.org/wiki/Captcha"
+msgstr ""
 
 #: concrete/blocks/form/form_setup_html.php:62
 #, php-format

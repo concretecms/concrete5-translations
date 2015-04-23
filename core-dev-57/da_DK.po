@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-04-21 07:32+0000\n"
-"PO-Revision-Date: 2015-04-21 07:33+0000\n"
+"POT-Creation-Date: 2015-04-22 04:00+0000\n"
+"PO-Revision-Date: 2015-04-22 08:30+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Danish (Denmark) (http://www.transifex.com/projects/p/concrete5/language/da_DK/)\n"
 "MIME-Version: 1.0\n"
@@ -727,6 +727,8 @@ msgstr "Fjern filer fra mappen incoming/."
 #: concrete/single_pages/dashboard/system/basics/social.php:77
 #: concrete/single_pages/dashboard/system/files/permissions.php:22
 #: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:160
+#: concrete/single_pages/dashboard/system/permissions/tasks.php:22
+#: concrete/single_pages/dashboard/system/permissions/users.php:22
 #: concrete/single_pages/dashboard/system/registration/authentication.php:97
 #: concrete/single_pages/dashboard/users/add.php:109
 #: concrete/single_pages/dashboard/users/add_group.php:221
@@ -1025,7 +1027,7 @@ msgstr "Slet"
 
 #: concrete/tools/files/edit.php:9
 msgid "File Not Found."
-msgstr ""
+msgstr "Fil Ikke Fundet."
 
 #: concrete/tools/tree/node/remove.php:15
 msgid ""
@@ -1355,8 +1357,8 @@ msgstr "Hvor længe vil denne tilladelse være gyldig?"
 #: concrete/single_pages/dashboard/system/permissions/captcha.php:39
 #: concrete/single_pages/dashboard/system/permissions/maintenance.php:17
 #: concrete/single_pages/dashboard/system/permissions/site.php:60
-#: concrete/single_pages/dashboard/system/permissions/tasks.php:22
-#: concrete/single_pages/dashboard/system/permissions/users.php:22
+#: concrete/single_pages/dashboard/system/permissions/tasks.php:23
+#: concrete/single_pages/dashboard/system/permissions/users.php:23
 #: concrete/single_pages/dashboard/system/registration/authentication.php:102
 #: concrete/single_pages/dashboard/system/registration/open.php:92
 #: concrete/single_pages/dashboard/system/registration/postlogin.php:47
@@ -2238,8 +2240,8 @@ msgstr "Område layout preset gemt med succes."
 msgid "Invalid layout preset object."
 msgstr "Ugyldig layout preset objekt."
 
-#: concrete/controllers/dialog/file/bulk/sets.php:115
-#: concrete/controllers/dialog/file/sets.php:57
+#: concrete/controllers/dialog/file/bulk/sets.php:117
+#: concrete/controllers/dialog/file/sets.php:59
 msgid "File sets updated successfully."
 msgstr "File sæt opdateret med succes."
 
@@ -3151,7 +3153,7 @@ msgstr "Sprog opdateret."
 #: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:176
 msgid ""
 "The translations have been exported to file and will be used by the website."
-msgstr ""
+msgstr "Oversættelserne er blevet eksporteret til fil og vil blive brugt af hjemmesiden."
 
 #: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:38
 msgid "Languages reset."
@@ -3170,7 +3172,7 @@ msgstr "Invalid parameter received: %s"
 
 #: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:168
 msgid "Invalid language identifier"
-msgstr ""
+msgstr "Ugyldig sprog identifikator"
 
 #: concrete/controllers/single_page/dashboard/system/multilingual/setup.php:103
 msgid "Multilingual content enabled"
@@ -6103,7 +6105,7 @@ msgstr "Stacks & Blocks"
 msgid "Extend concrete5"
 msgstr "Udvid concrete5"
 
-#: concrete/themes/concrete/view.php:61
+#: concrete/themes/concrete/view.php:60
 #: concrete/themes/dashboard/elements/header.php:70
 msgctxt "toolbar"
 msgid "Return to Website"
@@ -6131,18 +6133,18 @@ msgstr "Rediger side"
 
 #: concrete/elements/account/menu.php:47
 #: concrete/elements/page_controls_footer.php:299
-#: concrete/themes/concrete/view.php:51
+#: concrete/themes/concrete/view.php:50
 msgid "Sign Out"
 msgstr "Log ud"
 
 #: concrete/elements/page_controls_footer.php:301
-#: concrete/themes/concrete/view.php:53
+#: concrete/themes/concrete/view.php:52
 msgctxt "toolbar"
 msgid "Sign Out"
 msgstr "Log ud"
 
 #: concrete/config/install/base/login_registration.xml:28
-#: concrete/elements/account/menu.php:26 concrete/themes/concrete/view.php:69
+#: concrete/elements/account/menu.php:26 concrete/themes/concrete/view.php:68
 msgid "My Account"
 msgstr "Min Konto"
 
@@ -6474,6 +6476,11 @@ msgstr "Kunne ikke behandle privat besked e-mail. Kontroller, at din e-mail inde
 #: concrete/src/Activity/NewsflowItem.php:109
 msgid "Unable to parse news response."
 msgstr "Kunne ikke videregive nyheds respons."
+
+#: concrete/src/Http/ResponseAssetGroup.php:198
+#, php-format
+msgid "\"%s\" is not a valid asset group handle"
+msgstr ""
 
 #: concrete/src/Html/Service/Navigation.php:72
 msgid "Log out"
@@ -12664,6 +12671,10 @@ msgid "(Seperate multiple emails with a comma)"
 msgstr "(Adskil flere emails med et komma)"
 
 #: concrete/blocks/form/form_setup_html.php:62
+msgid "http://en.wikipedia.org/wiki/Captcha"
+msgstr ""
+
+#: concrete/blocks/form/form_setup_html.php:62
 #, php-format
 msgid "Solving a <a href=\"%s\" target=\"_blank\">CAPTCHA</a> Required to Post?"
 msgstr "Kræves en løsning af <a href=\"%s\" target=\"_blank\">CAPTCHA</a> for at skrive?"
@@ -15440,7 +15451,7 @@ msgstr "Skriv IP adresser, en per linje, i nedenstående formular, for manuel ba
 #: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:53
 #: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:144
 msgid "Save to file"
-msgstr ""
+msgstr "Gem til fil"
 
 #: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:60
 #, php-format

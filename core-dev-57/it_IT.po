@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-04-21 07:32+0000\n"
-"PO-Revision-Date: 2015-04-21 08:56+0000\n"
+"POT-Creation-Date: 2015-04-22 04:00+0000\n"
+"PO-Revision-Date: 2015-04-22 09:13+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Italian (Italy) (http://www.transifex.com/projects/p/concrete5/language/it_IT/)\n"
 "MIME-Version: 1.0\n"
@@ -727,6 +727,8 @@ msgstr "Rimuovi i file dalla cartella incoming/."
 #: concrete/single_pages/dashboard/system/basics/social.php:77
 #: concrete/single_pages/dashboard/system/files/permissions.php:22
 #: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:160
+#: concrete/single_pages/dashboard/system/permissions/tasks.php:22
+#: concrete/single_pages/dashboard/system/permissions/users.php:22
 #: concrete/single_pages/dashboard/system/registration/authentication.php:97
 #: concrete/single_pages/dashboard/users/add.php:109
 #: concrete/single_pages/dashboard/users/add_group.php:221
@@ -1355,8 +1357,8 @@ msgstr "Per quanto tempo sarà valida questa autorizzazione?"
 #: concrete/single_pages/dashboard/system/permissions/captcha.php:39
 #: concrete/single_pages/dashboard/system/permissions/maintenance.php:17
 #: concrete/single_pages/dashboard/system/permissions/site.php:60
-#: concrete/single_pages/dashboard/system/permissions/tasks.php:22
-#: concrete/single_pages/dashboard/system/permissions/users.php:22
+#: concrete/single_pages/dashboard/system/permissions/tasks.php:23
+#: concrete/single_pages/dashboard/system/permissions/users.php:23
 #: concrete/single_pages/dashboard/system/registration/authentication.php:102
 #: concrete/single_pages/dashboard/system/registration/open.php:92
 #: concrete/single_pages/dashboard/system/registration/postlogin.php:47
@@ -2238,8 +2240,8 @@ msgstr "La combinazione del layout dell’area è stata salvata."
 msgid "Invalid layout preset object."
 msgstr "Oggetto combinazioni di layout non valido."
 
-#: concrete/controllers/dialog/file/bulk/sets.php:115
-#: concrete/controllers/dialog/file/sets.php:57
+#: concrete/controllers/dialog/file/bulk/sets.php:117
+#: concrete/controllers/dialog/file/sets.php:59
 msgid "File sets updated successfully."
 msgstr "I set di file sono stati aggiornati correttamente."
 
@@ -6103,7 +6105,7 @@ msgstr "Pile e blocchi"
 msgid "Extend concrete5"
 msgstr "Estendi concrete5"
 
-#: concrete/themes/concrete/view.php:61
+#: concrete/themes/concrete/view.php:60
 #: concrete/themes/dashboard/elements/header.php:70
 msgctxt "toolbar"
 msgid "Return to Website"
@@ -6131,18 +6133,18 @@ msgstr "Modifica pagina"
 
 #: concrete/elements/account/menu.php:47
 #: concrete/elements/page_controls_footer.php:299
-#: concrete/themes/concrete/view.php:51
+#: concrete/themes/concrete/view.php:50
 msgid "Sign Out"
 msgstr "Esci"
 
 #: concrete/elements/page_controls_footer.php:301
-#: concrete/themes/concrete/view.php:53
+#: concrete/themes/concrete/view.php:52
 msgctxt "toolbar"
 msgid "Sign Out"
 msgstr "Esci"
 
 #: concrete/config/install/base/login_registration.xml:28
-#: concrete/elements/account/menu.php:26 concrete/themes/concrete/view.php:69
+#: concrete/elements/account/menu.php:26 concrete/themes/concrete/view.php:68
 msgid "My Account"
 msgstr "Il mio account"
 
@@ -6474,6 +6476,11 @@ msgstr "Impossibile analizzare il messaggio email privato. Verificare che l’em
 #: concrete/src/Activity/NewsflowItem.php:109
 msgid "Unable to parse news response."
 msgstr "Impossibile analizzare la risposta delle notizie."
+
+#: concrete/src/Http/ResponseAssetGroup.php:198
+#, php-format
+msgid "\"%s\" is not a valid asset group handle"
+msgstr "“%s” non è un handle di gruppo di risorse valido"
 
 #: concrete/src/Html/Service/Navigation.php:72
 msgid "Log out"
@@ -7756,7 +7763,7 @@ msgstr "Raggruppa gli attributi dei file in set per una migliore organizzatore d
 #: concrete/src/Application/Service/UserInterface/Help/DashboardManager.php:17
 msgid ""
 "File sets provide a flexible way to organize and group your site's assets."
-msgstr "I set di file offrono un modo flessibile per organizzare e raggruppare le attività del sito."
+msgstr "I set di file offrono un modo flessibile per organizzare e raggruppare le risorse del sito."
 
 #: concrete/src/Application/Service/UserInterface/Help/DashboardManager.php:18
 msgid ""
@@ -8106,7 +8113,7 @@ msgid ""
 "Add text content and stylize it using the WYSIWYG editor toolbar. Create "
 "links to pages, files and other site assets by using the upper concrete5 "
 "toolbar."
-msgstr "Aggiunge contenuto di testo formattato utilizzando la barra degli strumenti visuale. Crea collegamenti a pagine, file e altri elementi del sito utilizzando la barra degli strumenti di concrete5 posta in alto."
+msgstr "Aggiunge contenuto di testo formattato utilizzando la barra degli strumenti visuale. Crea collegamenti a pagine, file e altre risorse del sito utilizzando la barra degli strumenti di concrete5 posta in alto."
 
 #: concrete/src/Application/Service/UserInterface/Help/BlockTypeManager.php:12
 msgid ""
@@ -12664,6 +12671,10 @@ msgid "(Seperate multiple emails with a comma)"
 msgstr "(separa più indirizzi email con la virgola)"
 
 #: concrete/blocks/form/form_setup_html.php:62
+msgid "http://en.wikipedia.org/wiki/Captcha"
+msgstr "http://it.wikipedia.org/wiki/CAPTCHA"
+
+#: concrete/blocks/form/form_setup_html.php:62
 #, php-format
 msgid "Solving a <a href=\"%s\" target=\"_blank\">CAPTCHA</a> Required to Post?"
 msgstr "È necessario rispondere a un <a href=\"%s\" target=\"_blank\">CAPTCHA</a> per inviare il form?"
@@ -13257,7 +13268,7 @@ msgstr "Tema consigliato"
 
 #: concrete/blocks/file/controller.php:21
 msgid "Link to files stored in the asset library."
-msgstr "Collegamento ai file salvato nella libreria configurazioni."
+msgstr "Collegamento ai file salvato nella libreria delle risorse."
 
 #: concrete/blocks/file/controller.php:29
 #: concrete/blocks/file/controller.php:39

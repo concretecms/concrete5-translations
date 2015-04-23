@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-04-21 07:32+0000\n"
-"PO-Revision-Date: 2015-04-21 08:56+0000\n"
+"POT-Creation-Date: 2015-04-22 04:00+0000\n"
+"PO-Revision-Date: 2015-04-22 08:54+0000\n"
 "Last-Translator: Torsten Silbermann <mail@tsilbermann.de>\n"
 "Language-Team: German (Germany) (http://www.transifex.com/projects/p/concrete5/language/de_DE/)\n"
 "MIME-Version: 1.0\n"
@@ -731,6 +731,8 @@ msgstr "Dateien von incoming-Verzeichnis löschen"
 #: concrete/single_pages/dashboard/system/basics/social.php:77
 #: concrete/single_pages/dashboard/system/files/permissions.php:22
 #: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:160
+#: concrete/single_pages/dashboard/system/permissions/tasks.php:22
+#: concrete/single_pages/dashboard/system/permissions/users.php:22
 #: concrete/single_pages/dashboard/system/registration/authentication.php:97
 #: concrete/single_pages/dashboard/users/add.php:109
 #: concrete/single_pages/dashboard/users/add_group.php:221
@@ -1359,8 +1361,8 @@ msgstr "Wie lange soll diese Berechtigung gelten?"
 #: concrete/single_pages/dashboard/system/permissions/captcha.php:39
 #: concrete/single_pages/dashboard/system/permissions/maintenance.php:17
 #: concrete/single_pages/dashboard/system/permissions/site.php:60
-#: concrete/single_pages/dashboard/system/permissions/tasks.php:22
-#: concrete/single_pages/dashboard/system/permissions/users.php:22
+#: concrete/single_pages/dashboard/system/permissions/tasks.php:23
+#: concrete/single_pages/dashboard/system/permissions/users.php:23
 #: concrete/single_pages/dashboard/system/registration/authentication.php:102
 #: concrete/single_pages/dashboard/system/registration/open.php:92
 #: concrete/single_pages/dashboard/system/registration/postlogin.php:47
@@ -2242,8 +2244,8 @@ msgstr "Die Vorgabe für Bereichslayout wurde gespeichert."
 msgid "Invalid layout preset object."
 msgstr "Ungültiges Objekt für Layoutvorgaben"
 
-#: concrete/controllers/dialog/file/bulk/sets.php:115
-#: concrete/controllers/dialog/file/sets.php:57
+#: concrete/controllers/dialog/file/bulk/sets.php:117
+#: concrete/controllers/dialog/file/sets.php:59
 msgid "File sets updated successfully."
 msgstr "Die Dateialben wurden aktualisiert."
 
@@ -6107,7 +6109,7 @@ msgstr "Blöcke & Stapel"
 msgid "Extend concrete5"
 msgstr "concrete5 erweitern"
 
-#: concrete/themes/concrete/view.php:61
+#: concrete/themes/concrete/view.php:60
 #: concrete/themes/dashboard/elements/header.php:70
 msgctxt "toolbar"
 msgid "Return to Website"
@@ -6135,18 +6137,18 @@ msgstr "Seite bearbeiten"
 
 #: concrete/elements/account/menu.php:47
 #: concrete/elements/page_controls_footer.php:299
-#: concrete/themes/concrete/view.php:51
+#: concrete/themes/concrete/view.php:50
 msgid "Sign Out"
 msgstr "Abmelden"
 
 #: concrete/elements/page_controls_footer.php:301
-#: concrete/themes/concrete/view.php:53
+#: concrete/themes/concrete/view.php:52
 msgctxt "toolbar"
 msgid "Sign Out"
 msgstr "Abmelden"
 
 #: concrete/config/install/base/login_registration.xml:28
-#: concrete/elements/account/menu.php:26 concrete/themes/concrete/view.php:69
+#: concrete/elements/account/menu.php:26 concrete/themes/concrete/view.php:68
 msgid "My Account"
 msgstr "Mein Konto"
 
@@ -6478,6 +6480,11 @@ msgstr "Die E-Mail der privaten Nachricht konnte nicht verarbeitet werden. War d
 #: concrete/src/Activity/NewsflowItem.php:109
 msgid "Unable to parse news response."
 msgstr "Neuigkeiten konnten nicht geladen werden"
+
+#: concrete/src/Http/ResponseAssetGroup.php:198
+#, php-format
+msgid "\"%s\" is not a valid asset group handle"
+msgstr ""
 
 #: concrete/src/Html/Service/Navigation.php:72
 msgid "Log out"
@@ -12666,6 +12673,10 @@ msgstr "Mich per E-Mail benachrichtigen, wenn dieses Formular abgeschickt wurde"
 #: concrete/blocks/form/form_setup_html.php:59
 msgid "(Seperate multiple emails with a comma)"
 msgstr "(Mehrere E-Mail-Adressen mit einem Komma trennen)"
+
+#: concrete/blocks/form/form_setup_html.php:62
+msgid "http://en.wikipedia.org/wiki/Captcha"
+msgstr "http://de.wikipedia.org/wiki/Captcha"
 
 #: concrete/blocks/form/form_setup_html.php:62
 #, php-format

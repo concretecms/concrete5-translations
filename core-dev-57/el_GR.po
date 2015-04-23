@@ -6,9 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-04-21 07:32+0000\n"
-"PO-Revision-Date: 2015-04-21 07:33+0000\n"
-"Last-Translator: Michele Locati <michele@locati.it>\n"
+"POT-Creation-Date: 2015-04-22 04:00+0000\n"
+"PO-Revision-Date: 2015-04-22 09:53+0000\n"
+"Last-Translator: Vasilis Fotopoulos <basalba@gmail.com>\n"
 "Language-Team: Greek (Greece) (http://www.transifex.com/projects/p/concrete5/language/el_GR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -728,6 +728,8 @@ msgstr "Αφαιρέστε τα αρχεία από τον Κατάλογο  inc
 #: concrete/single_pages/dashboard/system/basics/social.php:77
 #: concrete/single_pages/dashboard/system/files/permissions.php:22
 #: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:160
+#: concrete/single_pages/dashboard/system/permissions/tasks.php:22
+#: concrete/single_pages/dashboard/system/permissions/users.php:22
 #: concrete/single_pages/dashboard/system/registration/authentication.php:97
 #: concrete/single_pages/dashboard/users/add.php:109
 #: concrete/single_pages/dashboard/users/add_group.php:221
@@ -1026,7 +1028,7 @@ msgstr "Διαγραφή"
 
 #: concrete/tools/files/edit.php:9
 msgid "File Not Found."
-msgstr ""
+msgstr "Το αρχείο δεν βρέθηκε."
 
 #: concrete/tools/tree/node/remove.php:15
 msgid ""
@@ -1356,8 +1358,8 @@ msgstr "Για πόσο διάστημα θα ισχύει αυτή η άδει�
 #: concrete/single_pages/dashboard/system/permissions/captcha.php:39
 #: concrete/single_pages/dashboard/system/permissions/maintenance.php:17
 #: concrete/single_pages/dashboard/system/permissions/site.php:60
-#: concrete/single_pages/dashboard/system/permissions/tasks.php:22
-#: concrete/single_pages/dashboard/system/permissions/users.php:22
+#: concrete/single_pages/dashboard/system/permissions/tasks.php:23
+#: concrete/single_pages/dashboard/system/permissions/users.php:23
 #: concrete/single_pages/dashboard/system/registration/authentication.php:102
 #: concrete/single_pages/dashboard/system/registration/open.php:92
 #: concrete/single_pages/dashboard/system/registration/postlogin.php:47
@@ -2239,8 +2241,8 @@ msgstr "Η προρύθμιση layout Περιοχής αποθηκεύτηκε
 msgid "Invalid layout preset object."
 msgstr "Μη έγκυρο αντικείμενο προρυθμισμένου layout."
 
-#: concrete/controllers/dialog/file/bulk/sets.php:115
-#: concrete/controllers/dialog/file/sets.php:57
+#: concrete/controllers/dialog/file/bulk/sets.php:117
+#: concrete/controllers/dialog/file/sets.php:59
 msgid "File sets updated successfully."
 msgstr "Το Σετ αρχείων ενημερώθηκε με επιτυχία."
 
@@ -6104,7 +6106,7 @@ msgstr "Στοίβες & Μπλοκ"
 msgid "Extend concrete5"
 msgstr "Επεκτείνετε το concrete5"
 
-#: concrete/themes/concrete/view.php:61
+#: concrete/themes/concrete/view.php:60
 #: concrete/themes/dashboard/elements/header.php:70
 msgctxt "toolbar"
 msgid "Return to Website"
@@ -6132,18 +6134,18 @@ msgstr "Επεξεργασία σελίδας"
 
 #: concrete/elements/account/menu.php:47
 #: concrete/elements/page_controls_footer.php:299
-#: concrete/themes/concrete/view.php:51
+#: concrete/themes/concrete/view.php:50
 msgid "Sign Out"
 msgstr "Aποσύνδεση"
 
 #: concrete/elements/page_controls_footer.php:301
-#: concrete/themes/concrete/view.php:53
+#: concrete/themes/concrete/view.php:52
 msgctxt "toolbar"
 msgid "Sign Out"
 msgstr "Aποσύνδεση"
 
 #: concrete/config/install/base/login_registration.xml:28
-#: concrete/elements/account/menu.php:26 concrete/themes/concrete/view.php:69
+#: concrete/elements/account/menu.php:26 concrete/themes/concrete/view.php:68
 msgid "My Account"
 msgstr "Ο λογαριασμός μου"
 
@@ -6475,6 +6477,11 @@ msgstr "Δεν είναι δυνατή η επεξεργασία ιδιωτικ�
 #: concrete/src/Activity/NewsflowItem.php:109
 msgid "Unable to parse news response."
 msgstr "Δεν είναι δυνατή η ανάλυση της απόκρισης ειδήσεων."
+
+#: concrete/src/Http/ResponseAssetGroup.php:198
+#, php-format
+msgid "\"%s\" is not a valid asset group handle"
+msgstr ""
 
 #: concrete/src/Html/Service/Navigation.php:72
 msgid "Log out"
@@ -12663,6 +12670,10 @@ msgstr "Ενημέρωσε με όταν κάποιος υποβάλει αυτ�
 #: concrete/blocks/form/form_setup_html.php:59
 msgid "(Seperate multiple emails with a comma)"
 msgstr "(Διαχώρισε πολλαπλά emails με κόμμα)"
+
+#: concrete/blocks/form/form_setup_html.php:62
+msgid "http://en.wikipedia.org/wiki/Captcha"
+msgstr ""
 
 #: concrete/blocks/form/form_setup_html.php:62
 #, php-format
