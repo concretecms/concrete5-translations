@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-05-19 04:00+0000\n"
-"PO-Revision-Date: 2015-05-19 09:03+0000\n"
+"POT-Creation-Date: 2015-05-21 04:00+0000\n"
+"PO-Revision-Date: 2015-05-21 13:56+0000\n"
 "Last-Translator: Torsten Silbermann <mail@tsilbermann.de>\n"
 "Language-Team: German (Germany) (http://www.transifex.com/projects/p/concrete5/language/de_DE/)\n"
 "MIME-Version: 1.0\n"
@@ -463,7 +463,7 @@ msgid ""
 msgstr "Schlüssel abgelaufen. Bitte besuchen Sie die \"Passwort vergessen\"-Seite um einen neuen Schlüssel anzufordern."
 
 #: concrete/authentication/concrete/controller.php:191
-#: concrete/controllers/install.php:310
+#: concrete/controllers/install.php:313
 #: concrete/controllers/single_page/account/edit_profile.php:108
 #: concrete/controllers/single_page/dashboard/users/search.php:380
 #: concrete/controllers/single_page/register.php:106
@@ -868,13 +868,19 @@ msgstr "Alle Versionen einer Datei werden zur ausgewählten Stelle verschoben."
 msgid "Save Location"
 msgstr "Speicherort festlegen"
 
-#: concrete/tools/files/importers/remote.php:114
-#: concrete/tools/files/importers/single.php:34
+#: concrete/tools/files/importers/incoming.php:20
+#: concrete/tools/files/importers/remote.php:21
+#: concrete/tools/files/importers/single.php:23
+msgid "You do not have permission to modify this file."
+msgstr "Sie verfügen nicht über die Berechtigung zum Ändern dieser Datei."
+
+#: concrete/tools/files/importers/remote.php:118
+#: concrete/tools/files/importers/single.php:38
 msgid "File uploaded successfully."
 msgstr "Die Datei wurde erfolgreich hochgeladen."
 
-#: concrete/tools/files/importers/remote.php:116
-#: concrete/tools/files/importers/single.php:36
+#: concrete/tools/files/importers/remote.php:120
+#: concrete/tools/files/importers/single.php:40
 msgid "File replaced successfully."
 msgstr "Die Datei wurde ersetzt."
 
@@ -882,38 +888,38 @@ msgstr "Die Datei wurde ersetzt."
 msgid "Upload Complete."
 msgstr "Hochladen beendet"
 
-#: concrete/tools/files/importers/incoming.php:59
+#: concrete/tools/files/importers/incoming.php:63
 msgid "You must select at least one file."
 msgstr "Sie müssen eine Datei auswählen."
 
-#: concrete/tools/files/importers/incoming.php:68
+#: concrete/tools/files/importers/incoming.php:72
 #, php-format
 msgid "%s file imported successfully."
 msgid_plural "%s files imported successfully"
 msgstr[0] "%s Datei wurde importiert."
 msgstr[1] "%s Dateien wurden importiert."
 
-#: concrete/tools/files/importers/remote.php:33
+#: concrete/tools/files/importers/remote.php:37
 msgid "Remote URL import requires the iconv extension enabled on your server."
 msgstr "Importieren von entfernten URLs setzt die PHP-Erweiterung iconv voraus."
 
-#: concrete/tools/files/importers/remote.php:61
+#: concrete/tools/files/importers/remote.php:65
 msgid "You must specify at least one valid URL."
 msgstr "Es muss mindenstens eine gültige URL angegeben werden."
 
-#: concrete/tools/files/importers/remote.php:92
+#: concrete/tools/files/importers/remote.php:96
 #, php-format
 msgid "Unknown mime-type: %s"
 msgstr "Unbekannter Mime-Typ: %s"
 
 #. %s is an URL
-#: concrete/tools/files/importers/remote.php:141
+#: concrete/tools/files/importers/remote.php:145
 #, php-format
 msgid "Could not determine the name of the file at %s"
 msgstr "Konnte den Namen der Datei unter %s nicht finden."
 
 #. %s is an URL
-#: concrete/tools/files/importers/remote.php:145
+#: concrete/tools/files/importers/remote.php:149
 #, php-format
 msgid "There was an error downloading %s"
 msgstr "Beim Herunterladen von %s ist ein Fehler aufgetreten."
@@ -948,11 +954,11 @@ msgstr "Ungültige Datei"
 
 #: concrete/tools/files/duplicate.php:47
 msgid "You do not have the ability to copy this file."
-msgstr "Sie haben nicht die Berechtigung, die Datei zu kopieren."
+msgstr "Sie verfügen nicht über die Berechtigung zum Kopieren dieser Datei."
 
 #: concrete/tools/files/duplicate.php:84
 msgid "You do not have permission to copy any of the selected files."
-msgstr "Sie haben nicht die Berechtigung, die markierten Dateien zu kopieren."
+msgstr "Sie verfügen nicht über die Berechtigung zum Kopieren der markierten Dateien."
 
 #: concrete/tools/files/duplicate.php:86
 msgid "Are you sure you want to copy the following files?"
@@ -983,7 +989,7 @@ msgstr[1] "%s Dateien wurden gelöscht."
 #: concrete/tools/files/delete.php:58
 #: concrete/views/dialogs/file/bulk/delete.php:8
 msgid "You do not have permission to delete any of the selected files."
-msgstr "Sie haben nicht die Berechtigung, die markierten Dateien zu löschen."
+msgstr "Sie verfügen nicht über die Berechtigung zum Löschen der markierten Dateien."
 
 #: concrete/tools/files/delete.php:61
 #: concrete/views/dialogs/file/bulk/delete.php:11
@@ -1046,7 +1052,7 @@ msgstr "Verzweigung entfernen"
 
 #: concrete/tools/tree/node/drag_request.php:16
 msgid "You do not have permission to drag this node here."
-msgstr "Sie haben nicht die Berechtigung, diesen Verzweigung hierher zu verschieben."
+msgstr "Sie verfügen nicht über die Berechtigung, die Verzweigung hierher zu verschieben."
 
 #: concrete/tools/tree/node/add/topic_category.php:19
 #: concrete/tools/tree/node/edit/topic_category.php:17
@@ -1158,7 +1164,7 @@ msgstr "Sie können die Quell-Seite(n) nicht bewegen oder kopieren."
 msgid ""
 "You do not have sufficient privileges to add this page or these pages to "
 "this destination."
-msgstr "Sie haben nicht die Berechtigung, um eine Seite dieses Typs dem gewählten Ziel hinzuzufügen."
+msgstr "Sie verfügen nicht über die Berechtigung zum Hinzufügen einer Seite dieses Typs zum gewählten Ziel."
 
 #: concrete/tools/dashboard/sitemap_drag_request.php:80
 msgid "You may not move/copy/alias the chosen page(s) to that location."
@@ -1452,7 +1458,7 @@ msgstr "Nur Benutzer, die Mitglieder ALLER ausgewählten Gruppen sind, erhalten 
 #: concrete/views/dialogs/block/aliasing.php:20
 #: concrete/views/dialogs/block/cache.php:11
 #: concrete/views/dialogs/page/add_external.php:7
-#: concrete/views/panels/details/page/attributes.php:28
+#: concrete/views/panels/details/page/attributes.php:30
 #: concrete/views/panels/details/page/seo.php:11
 msgid "Name"
 msgstr "Name"
@@ -1735,7 +1741,7 @@ msgstr "Designvorlage"
 #: concrete/single_pages/dashboard/users/groups.php:39
 #: concrete/src/File/Version.php:483
 #: concrete/tools/page_types/composer/form/edit_control.php:54
-#: concrete/views/panels/details/page/attributes.php:58
+#: concrete/views/panels/details/page/attributes.php:60
 msgid "Description"
 msgstr "Beschreibung"
 
@@ -1763,7 +1769,7 @@ msgstr "Eine oder mehrere Dateien können nicht gelöscht werden."
 msgid ""
 "You do not have permission to modify speed settings on any of the selected "
 "pages."
-msgstr "Sie haben nicht die Berechtigung, die Leistungseinstellungen der gewählten Seiten zu ändern."
+msgstr "Sie verfügen nicht über die Berechtigung zum Ändern der Leistungseinstellungen der gewählten Seiten."
 
 #: concrete/tools/pages/speed_settings.php:95
 #: concrete/views/panels/details/page/caching.php:7
@@ -1864,7 +1870,7 @@ msgstr "Minuten"
 msgid ""
 "You do not have permission to change permissions on any of the selected "
 "pages."
-msgstr "Sie haben nicht die Berechtigung, die Cacheeinstellungen der gewählten Seiten zu ändern."
+msgstr "Sie verfügen nicht über die Berechtigung zum Ändern der Cacheeinstellungen der gewählten Seiten."
 
 #: concrete/tools/pages/permissions.php:86
 #: concrete/views/panels/details/page/permissions/advanced.php:16
@@ -1970,7 +1976,7 @@ msgstr "Es kann nur Zugriff auf die ausgewählten Seiten erteilt werden, wenn di
 
 #: concrete/tools/pages/delete.php:82
 msgid "You do not have permission to delete any of the selected pages."
-msgstr "Sie haben nicht die Berechtigung, die markierten Seiten zu löschen."
+msgstr "Sie verfügen nicht über die Berechtigung zum Löschen der markierten Seiten."
 
 #: concrete/tools/pages/delete.php:85
 msgid "Are you sure you want to delete the following pages?"
@@ -1997,7 +2003,7 @@ msgstr "Hinzugefügt am"
 #: concrete/src/File/Search/ColumnSet/Available.php:9
 #: concrete/src/Page/Search/ColumnSet/DefaultSet.php:38
 #: concrete/tools/pages/delete.php:94
-#: concrete/views/panels/details/page/attributes.php:46
+#: concrete/views/panels/details/page/attributes.php:48
 msgid "Author"
 msgstr "Autor"
 
@@ -2029,11 +2035,11 @@ msgstr "Bitte eine Seite auswählen, unter der diese Seite veröffentlicht werde
 
 #: concrete/controllers/panel/detail/page/composer.php:72
 msgid "You do not have permission to publish a page in this location."
-msgstr "Sie haben nicht die Berechtigung, eine Seite an diesem Ort zu veröffentlichen."
+msgstr "Sie verfügen nicht über die Berechtigung zum Veröffentlichen einer Seite an diesem Ort."
 
 #: concrete/controllers/panel/detail/page/composer.php:100
 msgid "You do not have permission to discard this page."
-msgstr "Sie haben nicht die Berechtigung, diese Seite zu verwerfen."
+msgstr "Sie verfügen nicht über die Berechtigung zum Verwerfen dieser Seite."
 
 #: concrete/controllers/panel/detail/page/location.php:126
 msgid "Page location information saved successfully."
@@ -2121,7 +2127,7 @@ msgstr "Ungültige übergeordnete Seite"
 msgid ""
 "You do not have permissions to add a page of this type in the selected "
 "location."
-msgstr "Sie haben nicht die Berechtigung, diesen Seitentyp am ausgewählten Ort hinzuzufügen."
+msgstr "Sie verfügen nicht über die Berechtigung zum Hinzufügen einer Seite dieses Typs an den ausgewählten Ort."
 
 #: concrete/controllers/panel/page/attributes.php:54
 #: concrete/elements/dashboard/attributes_table.php:72
@@ -2145,8 +2151,8 @@ msgstr "Die erweiterten Blockeinstellungen wurden gespeichert."
 msgid "Custom design reset."
 msgstr "Benutzerdefiniertes Design zurückgesetzt!"
 
-#: concrete/controllers/dialog/area/design.php:98
-#: concrete/controllers/dialog/block/design.php:100
+#: concrete/controllers/dialog/area/design.php:76
+#: concrete/controllers/dialog/block/design.php:80
 msgid "Design updated."
 msgstr "Design aktualisiert"
 
@@ -2204,7 +2210,7 @@ msgstr "Der Löschauftrag wurde gespeichert. Um das Löschen durchzuführen, mus
 #: concrete/controllers/dialog/page/add/compose.php:44
 msgid ""
 "You do not have permission to add a page of this type to this location."
-msgstr "Sie haben nicht die Berechtigung, eine Seite diesen Typs zu diesem Ort hinzuzufügen."
+msgstr "Sie verfügen nicht über die Berechtigung zum Hinzufügen einer Seite dieses Typs an den diesen Ort."
 
 #: concrete/controllers/dialog/page/add/compose.php:47
 msgid "Invalid parent page."
@@ -2307,35 +2313,30 @@ msgid ""
 "<b>%s</b>."
 msgstr "Ihre Website ist auf dem aktuellsten Stand! Die aktuelle Version von concrete5 ist <b>%s</b>."
 
-#: concrete/controllers/single_page/dashboard/files/sets.php:35
+#: concrete/controllers/single_page/dashboard/files/sets.php:38
 msgid "New file set added successfully."
 msgstr "Das neue Dateialbum wurde hinzugefügt."
 
-#: concrete/controllers/single_page/dashboard/files/sets.php:40
+#: concrete/controllers/single_page/dashboard/files/sets.php:44
 msgid "File set deleted successfully."
 msgstr "Das Dateialbum wurde entfernt."
 
-#: concrete/controllers/single_page/dashboard/files/sets.php:59
+#: concrete/controllers/single_page/dashboard/files/sets.php:64
 msgid "You do not have permission to delete this file set."
-msgstr "Sie haben nicht die Berechtigung, dieses Dateialbum zu löschen."
+msgstr "Sie verfügen nicht über die Berechtigung zum Löschen dieses Dateialbums."
 
-#: concrete/controllers/single_page/dashboard/files/sets.php:68
+#: concrete/controllers/single_page/dashboard/files/sets.php:74
 msgid "File set updated successfully."
 msgstr "Das Dateialbum wurde aktualisiert."
 
-#: concrete/controllers/single_page/dashboard/files/sets.php:82
+#: concrete/controllers/single_page/dashboard/files/sets.php:89
 msgid "Invalid ID"
 msgstr "Ungültige ID"
 
-#: concrete/controllers/single_page/dashboard/files/add_set.php:21
-#: concrete/controllers/single_page/dashboard/files/sets.php:86
+#: concrete/controllers/single_page/dashboard/files/add_set.php:25
+#: concrete/controllers/single_page/dashboard/files/sets.php:93
 msgid "Please Enter a Name"
 msgstr "Bitte geben Sie einen Namen an"
-
-#: concrete/controllers/single_page/dashboard/files/sets.php:89
-#, php-format
-msgid "File Set Name cannot contain the characters: %s"
-msgstr "Folgende Zeichen dürfen nicht im Namen des Dateialbums verwendet werden: %s"
 
 #: concrete/controllers/single_page/dashboard/files/attributes.php:19
 #: concrete/controllers/single_page/dashboard/pages/attributes.php:41
@@ -2398,7 +2399,7 @@ msgstr "Ungültige Nachricht"
 
 #: concrete/controllers/single_page/dashboard/conversations/messages.php:115
 msgid "You do not have permission to approve this message."
-msgstr "Sie haben nicht die Berechtigung, diese Nachricht freizugeben."
+msgstr "Sie verfügen nicht über die Berechtigung zum Freigeben dieser Nachricht."
 
 #: concrete/controllers/single_page/dashboard/conversations/messages.php:121
 msgid "Message approved."
@@ -2406,7 +2407,7 @@ msgstr "Nachricht freigegeben"
 
 #: concrete/controllers/single_page/dashboard/conversations/messages.php:135
 msgid "You do not have permission to flag this message."
-msgstr "Sie haben nicht die Berechtigung, diese Nachricht zu markieren."
+msgstr "Sie verfügen nicht über die Berechtigung zum Markieren dieser Nachricht."
 
 #: concrete/controllers/single_page/dashboard/conversations/messages.php:142
 msgid "Message unflagged."
@@ -2414,7 +2415,7 @@ msgstr "Nachricht demarkiert"
 
 #: concrete/controllers/single_page/dashboard/conversations/messages.php:156
 msgid "You do not have permission to restore this message."
-msgstr "Sie haben nicht die Berechtigung, diese Nachricht wiederherzustellen."
+msgstr "Sie verfügen nicht über die Berechtigung zum Wiederherstellen dieser Nachricht."
 
 #: concrete/controllers/single_page/dashboard/conversations/messages.php:162
 msgid "Message restored."
@@ -2429,7 +2430,7 @@ msgstr "Ein unerwarteter Fehler ist beim Verbindungsaufbau Ihrer Seite zum Marke
 #: concrete/src/Marketplace/Marketplace.php:233
 #: concrete/src/Marketplace/Marketplace.php:294
 msgid "You do not have permission to connect this site to the marketplace."
-msgstr "Sie haben nicht die Berechtigung, diese Website mit dem Marketplace zu verbinden."
+msgstr "Sie verfügen nicht über die Berechtigung zum Verbinden dieser Website mit dem Marketplace."
 
 #: concrete/controllers/single_page/dashboard/extend/connect.php:36
 msgid "Your site is now connected to the concrete5 community."
@@ -2458,7 +2459,7 @@ msgstr "Ungültige Marketplace-Element-ID"
 
 #: concrete/controllers/single_page/dashboard/extend/install.php:56
 msgid "You do not have permission to uninstall packages."
-msgstr "Sie haben nicht die Berechtigung, Pakete zu deinstallieren."
+msgstr "Sie verfügen nicht über die Berechtigung zum Deinstallieren von Paketen."
 
 #: concrete/controllers/single_page/dashboard/extend/install.php:60
 msgid "Invalid package."
@@ -2474,7 +2475,7 @@ msgstr "Die Controllerdatei für dieses Paket konnte nicht gefunden werden."
 
 #: concrete/controllers/single_page/dashboard/extend/install.php:155
 msgid "You do not have permission to install add-ons."
-msgstr "Sie haben nicht die Berechtigung, Erweiterungen zu installieren."
+msgstr "Sie verfügen nicht über die Berechtigung zum Installieren von Erweiterungen."
 
 #: concrete/controllers/single_page/dashboard/extend/install.php:161
 msgid "The package has been installed."
@@ -2487,7 +2488,7 @@ msgstr "%s wurde vom Marketplace heruntergeladen."
 
 #: concrete/controllers/single_page/dashboard/extend/install.php:190
 msgid "You do not have permission to download add-ons."
-msgstr "Sie haben nicht die Berechtigung, Erweiterungen herunterzuladen."
+msgstr "Sie verfügen nicht über die Berechtigung zum Herunterladen von Erweiterungen."
 
 #: concrete/controllers/single_page/dashboard/blocks/permissions.php:38
 #: concrete/controllers/single_page/dashboard/pages/types/permissions.php:23
@@ -2509,7 +2510,7 @@ msgstr "Der Stapel wurde gelöscht."
 
 #: concrete/controllers/single_page/dashboard/blocks/stacks.php:76
 msgid "You do not have access to delete this stack."
-msgstr "Sie haben nicht die Berechtigung, diesen Stapel zu löschen."
+msgstr "Sie verfügen nicht über die Berechtigung zum Löschen dieses Stapels."
 
 #: concrete/controllers/single_page/dashboard/blocks/stacks.php:79
 #: concrete/controllers/single_page/dashboard/blocks/stacks.php:110
@@ -2575,7 +2576,7 @@ msgstr "Der Blocktyp wurde neu eingelesen. Etwaige Änderungen an Datenbankschem
 
 #: concrete/controllers/single_page/dashboard/blocks/types.php:75
 msgid "You do not have permission to install custom block types or add-ons."
-msgstr "Sie haben nicht die Berechtigung, eigene Blocktypen oder Erweiterungen zu installieren."
+msgstr "Sie verfügen nicht über die Berechtigung zum Installieren eigener Blocktypen oder Erweiterungen."
 
 #: concrete/controllers/single_page/dashboard/blocks/types.php:83
 msgid "Block type installed successfully."
@@ -2666,7 +2667,7 @@ msgstr "Eine öffentlich angezeigte Beschreibung für dieses Abzeichen muss ange
 #: concrete/controllers/single_page/dashboard/users/add_group.php:81
 #, php-format
 msgid "You do not have permission to add a group beneath %s"
-msgstr "Sie haben nicht die Berechtigung, Gruppen unterhalb von %s hinzuzufügen."
+msgstr "Sie verfügen nicht über die Berechtigung zum Hinzufügen von Gruppen unterhalb von %s."
 
 #: concrete/controllers/single_page/dashboard/users/group_sets.php:24
 #: concrete/controllers/single_page/dashboard/users/group_sets.php:66
@@ -2779,7 +2780,7 @@ msgstr "Die Gruppe wurde aktualisiert."
 
 #: concrete/controllers/single_page/dashboard/users/groups.php:104
 msgid "You do not have permission to perform this action."
-msgstr "Sie haben nicht die Berechtigung, um diese Aktion auszuführen."
+msgstr "Sie verfügen nicht über die Berechtigung zum Ausführen dieser Aktion."
 
 #: concrete/controllers/single_page/dashboard/users/groups.php:110
 msgid "Invalid group ID."
@@ -2867,7 +2868,7 @@ msgstr "Der Benutzername wurde gespeichert."
 #: concrete/controllers/single_page/dashboard/users/search.php:307
 #: concrete/controllers/single_page/dashboard/users/search.php:335
 msgid "You do not have permission to modify this attribute."
-msgstr "Sie haben nicht die Berechtigung, diese Eigenschaft zu ändern."
+msgstr "Sie verfügen nicht über die Berechtigung zum Ändern dieser Eigenschaft."
 
 #: concrete/controllers/single_page/account/edit_profile.php:99
 #: concrete/controllers/single_page/dashboard/users/add.php:83
@@ -3792,7 +3793,7 @@ msgstr "Ungültiger Feed"
 msgid "** No Filtering"
 msgstr "** keine Filterung"
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:34
+#: concrete/controllers/single_page/dashboard/pages/types.php:43
 #: concrete/controllers/single_page/dashboard/pages/types/attributes.php:23
 #: concrete/controllers/single_page/dashboard/pages/types/form.php:21
 #: concrete/controllers/single_page/dashboard/pages/types/output.php:19
@@ -3823,14 +3824,14 @@ msgstr "Album für Formularlayout aktualisiert"
 msgid "You do not have access to edit this page type permissions."
 msgstr "Sie haben keine Berechtigung, die Berechtigungen dieses Seitentyps zu bearbeiten."
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:77
-#: concrete/controllers/single_page/dashboard/pages/types.php:104
+#: concrete/controllers/single_page/dashboard/pages/types.php:97
+#: concrete/controllers/single_page/dashboard/pages/types.php:125
 #: concrete/controllers/single_page/dashboard/pages/types/add.php:20
 msgid "You must specify a valid name for your page type."
 msgstr "Für den Seitentyp muss ein zulässiger Name angegeben werden."
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:80
-#: concrete/controllers/single_page/dashboard/pages/types.php:107
+#: concrete/controllers/single_page/dashboard/pages/types.php:100
+#: concrete/controllers/single_page/dashboard/pages/types.php:128
 #: concrete/controllers/single_page/dashboard/pages/types/add.php:23
 msgid "You must specify a valid handle for your page type."
 msgstr "Für den Seitentyp muss eine zulässige Kennung angegeben werden."
@@ -3839,12 +3840,12 @@ msgstr "Für den Seitentyp muss eine zulässige Kennung angegeben werden."
 msgid "You must specify a unique handle for your page type."
 msgstr "Es muss eine eindeutige Kennung für den Seitentyp angegeben werden."
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:111
+#: concrete/controllers/single_page/dashboard/pages/types.php:132
 #: concrete/controllers/single_page/dashboard/pages/types/add.php:33
 msgid "You must choose a valid default page template."
 msgstr "Es muss eine gültige Standard-Seitenvorlage ausgewählt werden."
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:124
+#: concrete/controllers/single_page/dashboard/pages/types.php:145
 #: concrete/controllers/single_page/dashboard/pages/types/add.php:45
 msgid "You must specify at least one page template."
 msgstr "Es muss mindestens eine Seitenvorlage angegeben werden."
@@ -3895,7 +3896,7 @@ msgstr "Die Seite wurde zurückgesetzt."
 
 #: concrete/controllers/single_page/dashboard/pages/single.php:57
 msgid "You do not have permissions to refresh this page."
-msgstr "Sie haben nicht die Berechtigung, um diese Seite zu aktualisieren."
+msgstr "Sie verfügen nicht über die Berechtigung zum Aktualisieren dieser Seite."
 
 #: concrete/controllers/single_page/dashboard/pages/single.php:63
 msgid "Page Unsuccessfully Refreshed."
@@ -3929,40 +3930,47 @@ msgstr "Seitenattribut erstellt"
 msgid "Page Attribute Deleted."
 msgstr "Seitenattribut gelöscht"
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:11
+#: concrete/controllers/single_page/dashboard/pages/types.php:15
 msgid "Page Type added successfully."
 msgstr "Der Seitentyp wurde hinzugefügt."
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:16
+#: concrete/controllers/single_page/dashboard/pages/types.php:21
 msgid "Page type updated successfully."
 msgstr "Der Seitentyp wurde geändert."
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:21
+#: concrete/controllers/single_page/dashboard/pages/types.php:28
 msgid ""
 "Page type copied successfully. Important! You will need to re-add any blocks"
 " into output areas that you had set on the original page type."
 msgstr "Der Seitentyp wurde erfolgreich kopiert. Wichtig: Blöcke, die in dem ursprünglichen Seitentyp verwendet wurden, müssen erneut hinzugefügt werden."
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:26
+#: concrete/controllers/single_page/dashboard/pages/types.php:34
 msgid "Page type deleted successfully."
 msgstr "Der Seitentyp wurde gelöscht."
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:37
+#: concrete/controllers/single_page/dashboard/pages/types.php:46
 #, php-format
 msgid "Edit %s Page Type"
 msgstr "Seitentyp %s bearbeiten"
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:48
-#: concrete/controllers/single_page/dashboard/pages/types.php:67
-#: concrete/controllers/single_page/dashboard/pages/types.php:93
+#: concrete/controllers/single_page/dashboard/pages/types.php:59
+#: concrete/controllers/single_page/dashboard/pages/types.php:87
+#: concrete/controllers/single_page/dashboard/pages/types.php:114
 msgid "Invalid page type object."
 msgstr "Ungültiges Seitentyp-Objekt"
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:52
+#: concrete/controllers/single_page/dashboard/pages/types.php:63
 msgid "You do not have access to delete this page type."
 msgstr "Sie haben keine Berechtigung, diesen Seitentyp zu löschen."
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:128
+#: concrete/controllers/single_page/dashboard/pages/types.php:69
+#, php-format
+msgid "This page type is in use on %d page."
+msgid_plural "This page type is in use on %d pages."
+msgstr[0] "Dieser Seitentyp wird auf %d Seite genutzt."
+msgstr[1] "Dieser Seitentyp wird auf %d Seiten genutzt."
+
+#: concrete/controllers/single_page/dashboard/pages/types.php:149
 msgid "Invalid page type target type."
 msgstr "Ungültiger Seitentyp"
 
@@ -4660,7 +4668,7 @@ msgstr "Bearbeitungsmodus"
 msgid "Current Image"
 msgstr "Aktuelles Bild"
 
-#: concrete/blocks/image/controller.php:31 concrete/blocks/image/form.php:32
+#: concrete/blocks/image/controller.php:37 concrete/blocks/image/form.php:32
 #: concrete/blocks/image_slider/form_setup_html.php:231
 #: concrete/controllers/frontend/assets_localization.php:111
 #: concrete/controllers/frontend/assets_localization.php:409
@@ -4686,7 +4694,7 @@ msgstr "Kursiv"
 
 #: concrete/controllers/frontend/assets_localization.php:116
 #: concrete/controllers/frontend/assets_localization.php:423
-#: concrete/src/Editor/RedactorEditor.php:32
+#: concrete/src/Editor/RedactorEditor.php:31
 msgid "Underline"
 msgstr "Unterstrichen"
 
@@ -4695,7 +4703,7 @@ msgid "Uppercase"
 msgstr "GROSSBUCHSTABEN"
 
 #: concrete/controllers/frontend/assets_localization.php:118
-#: concrete/src/Editor/RedactorEditor.php:37
+#: concrete/src/Editor/RedactorEditor.php:36
 msgid "Font Size"
 msgstr "Schriftgrößs"
 
@@ -5173,7 +5181,7 @@ msgstr "Mittels dieses Menüs können z.B. der Inhalt des Blocks und sein Ausseh
 #: concrete/elements/page_controls_footer.php:58
 #: concrete/elements/page_controls_footer.php:67
 #: concrete/themes/dashboard/elements/header_newsflow.php:11
-#: concrete/views/panels/details/page/attributes.php:67
+#: concrete/views/panels/details/page/attributes.php:69
 #: concrete/views/panels/details/page/caching.php:115
 #: concrete/views/panels/details/page/location.php:71
 #: concrete/views/panels/details/page/permissions/advanced.php:57
@@ -5342,7 +5350,7 @@ msgid "Insert Video"
 msgstr "Video einfügen"
 
 #: concrete/controllers/frontend/assets_localization.php:340
-#: concrete/src/Editor/RedactorEditor.php:35
+#: concrete/src/Editor/RedactorEditor.php:34
 msgid "Table"
 msgstr "Tabelle"
 
@@ -5408,7 +5416,7 @@ msgid "Bold"
 msgstr "Fett"
 
 #: concrete/controllers/frontend/assets_localization.php:356
-#: concrete/src/Editor/RedactorEditor.php:38
+#: concrete/src/Editor/RedactorEditor.php:37
 msgid "Font Color"
 msgstr "Schriftfarbe"
 
@@ -5990,31 +5998,31 @@ msgctxt "InstallError"
 msgid "%s.<br><br>Trace:<br>%s"
 msgstr "%s.<br><br>Fehlersuche:<br>%s"
 
-#: concrete/controllers/install.php:296
+#: concrete/controllers/install.php:300
 msgid "Please specify your site's name"
 msgstr "Bitte den Namen der Website angeben."
 
-#: concrete/controllers/install.php:297
+#: concrete/controllers/install.php:301
 msgid "Please specify a valid email address"
 msgstr "Bitte geben Sie eine gültige E-Mail-Adresse ein."
 
-#: concrete/controllers/install.php:298
+#: concrete/controllers/install.php:302
 msgid "You must specify a valid database name"
 msgstr "Sie müssen einen gültigen Datenbanknamen angeben."
 
-#: concrete/controllers/install.php:299
+#: concrete/controllers/install.php:303
 msgid "You must specify a valid database server"
 msgstr "Sie müssen einen gültigen Datenbankserver angeben."
 
-#: concrete/controllers/install.php:350
+#: concrete/controllers/install.php:353
 msgid "Unable to open config/app.php for writing."
 msgstr "Die Datei config/app.php konnte nicht gespeichert werden."
 
-#: concrete/controllers/install.php:371
+#: concrete/controllers/install.php:374
 msgid "Unable to open config/site_user.php for writing."
 msgstr "Die Datei \"config/site_user.php\" konnte nicht zum Schreiben geöffnet werden."
 
-#: concrete/controllers/install.php:393
+#: concrete/controllers/install.php:400
 msgid "You must select a valid sample content starting point."
 msgstr "Es muss ein gültiger Beispielinhalt ausgewählt werden."
 
@@ -6200,7 +6208,7 @@ msgstr "403 Fehler"
 
 #: concrete/themes/elemental/page_forbidden.php:11
 msgid "You are not allowed to access this page."
-msgstr "Sie haben nicht die Berechtigung, diese Seite zu betrachten."
+msgstr "Sie verfügen nicht über die Berechtigung zum Betrachten dieser Seite."
 
 #: concrete/jobs/remove_old_page_versions.php:15
 msgid "Remove Old Page Versions"
@@ -6726,19 +6734,19 @@ msgstr "Diese Aktion ist hier nicht möglich."
 msgid "You must specify a plugin key and name."
 msgstr "Es muss ein Name und Schlüssel für das Plugin angegeben werden."
 
-#: concrete/src/Editor/RedactorEditor.php:31
+#: concrete/src/Editor/RedactorEditor.php:30
 msgid "Undo/Redo"
 msgstr "Rückgängig/Wiederholen"
 
-#: concrete/src/Editor/RedactorEditor.php:33
+#: concrete/src/Editor/RedactorEditor.php:32
 msgid "Lightbox"
 msgstr "Lightbox"
 
-#: concrete/src/Editor/RedactorEditor.php:34
+#: concrete/src/Editor/RedactorEditor.php:33
 msgid "Special Characters Palette"
 msgstr "Sonderzeichen"
 
-#: concrete/src/Editor/RedactorEditor.php:36
+#: concrete/src/Editor/RedactorEditor.php:35
 msgid "Font Family"
 msgstr "Schriftart"
 
@@ -8341,7 +8349,7 @@ msgstr "Ungültiger Formularschlüssel: Bitte laden Sie das Formular erneut und 
 
 #: concrete/single_pages/dashboard/reports/statistics.php:110
 #: concrete/src/Conversation/Message/AuthorFormatter.php:27
-#: concrete/src/Conversation/Message/AuthorFormatter.php:48
+#: concrete/src/Conversation/Message/AuthorFormatter.php:50
 #: concrete/views/dialogs/file/properties.php:216
 msgid "Anonymous"
 msgstr "Anonym"
@@ -10162,7 +10170,7 @@ msgstr "Sie müssen sich <a href=\"%s\">anmelden</a>, um diese Konversation zu p
 
 #: concrete/elements/conversation/message/add_form.php:85
 msgid "You do not have permission to post this to conversation."
-msgstr "Sie haben nicht die Berechtigungen, um diese Konversation zu posten."
+msgstr "Sie verfügen nicht über die Berechtigung zum Posten dieser Konversation."
 
 #: concrete/elements/conversation/message/author.php:10
 msgid "Full Name"
@@ -10477,7 +10485,7 @@ msgstr "Häufig verwendet"
 #: concrete/views/dialogs/page/add.php:31
 msgid ""
 "You do not have access to add any page types beneath the selected page."
-msgstr "Sie haben nicht die Berechtigung, Seitentypen unterhalb der ausgewählten Seite hinzuzufügen."
+msgstr "Sie verfügen nicht über die Berechtigung zum Hinzufügen von Seitentypen unterhalb der gewählten Seite."
 
 #: concrete/views/dialogs/search/customize.php:10
 msgid "Choose Columns"
@@ -10838,7 +10846,12 @@ msgstr "Eine Seite muss immer von mindestens einer URL erreichbar sein. Hier wir
 msgid "URL Slug"
 msgstr "URL-Segment"
 
-#: concrete/views/panels/details/page/attributes.php:37
+#: concrete/views/panels/details/page/attributes.php:25
+#, php-format
+msgid "Page ID: %s"
+msgstr "Seiten ID: %s"
+
+#: concrete/views/panels/details/page/attributes.php:39
 msgid "Created Time"
 msgstr "Erstellungszeitpunkt"
 
@@ -11096,7 +11109,7 @@ msgstr "Fehlende Berechtigung"
 #: concrete/single_pages/page_forbidden.php:5
 #: concrete/views/frontend/page_forbidden.php:5
 msgid "You are not authorized to access this page."
-msgstr "Sie haben nicht die Berechtigung, diese Seite zu betrachten."
+msgstr "Sie verfügen nicht über die Berechtigung zum Betrachten dieser Seite."
 
 #: concrete/views/frontend/install.php:23
 msgid "To install concrete5, please fill out the form below."
@@ -12400,15 +12413,15 @@ msgstr "Maximalbreite"
 msgid "Max Height"
 msgstr "Maximalhöhe"
 
-#: concrete/blocks/image/controller.php:27
+#: concrete/blocks/image/controller.php:32
 msgid "Adds images and onstates from the library to pages."
 msgstr "Bilder & Mouseoverbilder aus der Bibliothek hinzufügen"
 
-#: concrete/blocks/image/controller.php:65
+#: concrete/blocks/image/controller.php:74
 msgid "You must select an image."
 msgstr "Es muss ein Bild ausgewählt werden."
 
-#: concrete/blocks/image/controller.php:120
+#: concrete/blocks/image/controller.php:164
 msgid "You must specify a valid image file."
 msgstr "Es muss eine gültige Bilddatei angegeben werden."
 
@@ -12561,11 +12574,11 @@ msgstr "Abooption"
 msgid "Yes, allow registered users to choose to subscribe to conversations."
 msgstr "Registrierten Benutzern erlauben, die Konversation zu abonnieren."
 
-#: concrete/blocks/core_conversation/controller.php:33
+#: concrete/blocks/core_conversation/controller.php:35
 msgid "Displays conversations on a page."
 msgstr "Erstellt eine Seite mit einer Konversation"
 
-#: concrete/blocks/core_conversation/controller.php:38
+#: concrete/blocks/core_conversation/controller.php:40
 msgid "Conversation"
 msgstr "Konversation"
 
@@ -13295,7 +13308,7 @@ msgstr "Zeigt ein Symbol, einen Titel und eine Kurzbeschreibung an"
 msgid "Feature"
 msgstr "Hervorgehoben"
 
-#: concrete/blocks/feature/controller.php:101
+#: concrete/blocks/feature/controller.php:103
 msgid "Choose Icon"
 msgstr "Symbol auswählen"
 
@@ -14043,7 +14056,7 @@ msgstr "<strong>Dateien hochladen</strong> - hierher ziehen oder anklicken | "
 
 #: concrete/single_pages/dashboard/files/search.php:26
 msgid "You do not have access to the file manager."
-msgstr "Sie haben nicht die Berechtigung, auf die Dateiverwaltung zuzugreifen"
+msgstr "Sie verfügen nicht über die Berechtigung zum Zugriff auf die Dateiverwaltung."
 
 #: concrete/single_pages/dashboard/sitemap/full.php:52
 msgid "Page copy operations pending."
@@ -14064,7 +14077,7 @@ msgstr "Die flache Sitemap-Ansicht ermöglicht das Blättern durch sehr lange Li
 
 #: concrete/single_pages/dashboard/sitemap/explore.php:55
 msgid "You do not have access to the dashboard sitemap."
-msgstr "Sie haben nicht die Berechtigung, auf die Sitemap in der Verwaltung zuzugreifen."
+msgstr "Sie verfügen nicht über die Berechtigung zum Zugriff auf die Sitemap in der Verwaltung."
 
 #: concrete/single_pages/dashboard/sitemap/search.php:19
 msgid "You must have access to the dashboard sitemap to search pages."
@@ -14424,7 +14437,7 @@ msgstr "Interne Blocktypen"
 
 #: concrete/single_pages/dashboard/blocks/permissions.php:15
 msgid "You cannot access these permissions."
-msgstr "Sie haben nicht die Berechtigung, diese Berechtigungen zu verändern."
+msgstr "Sie verfügen nicht über die Berechtigung zum Ändern dieser Berechtigungen."
 
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:23
 msgid "Approve Changes"
@@ -14935,7 +14948,7 @@ msgstr "Nur Dateien mit den folgenden Dateiendungen erlauben. Die eingetragenen 
 #: concrete/single_pages/dashboard/system/permissions/tasks.php:17
 #: concrete/single_pages/dashboard/system/permissions/users.php:17
 msgid "You cannot access task permissions."
-msgstr "Sie haben nicht die Berechtigung, Aufgabenberechtigungen zu verändern."
+msgstr "Sie verfügen nicht über die Berechtigung zum Ändern von Aufgabenberechtigungen."
 
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:24
 msgid "Delete Type"
@@ -16223,7 +16236,7 @@ msgstr "Beim Sichern der Datenbank wird eine Sicherungsdatei erstellt und auf de
 
 #: concrete/single_pages/dashboard/system/backup/backup.php:156
 msgid "You do not have permission to create or administer backups."
-msgstr "Sie haben nicht die Berechtigung, Sicherungen zu erstellen oder zu verwalten."
+msgstr "Sie verfügen nicht über die Berechtigung zum Erstellen oder Verwalten von Sicherungen."
 
 #: concrete/single_pages/dashboard/system/backup/update.php:11
 msgid "Check For Updates"
@@ -16349,7 +16362,7 @@ msgstr "Es sind keine Aktualisierungen zur Installation vorhanden."
 
 #: concrete/single_pages/dashboard/system/backup/update.php:299
 msgid "You do not have permission to upgrade this installation of concrete5."
-msgstr "Sie haben nicht die Berechtigung, das System zu aktualisieren."
+msgstr "Sie verfügen nicht über die Berechtigung zum Aktualisieren des Systems."
 
 #: concrete/single_pages/dashboard/system/optimization/clearcache.php:5
 msgid ""

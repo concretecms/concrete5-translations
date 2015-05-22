@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-05-19 04:00+0000\n"
-"PO-Revision-Date: 2015-05-19 08:36+0000\n"
+"POT-Creation-Date: 2015-05-21 04:00+0000\n"
+"PO-Revision-Date: 2015-05-21 16:10+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Chinese (Taiwan) (http://www.transifex.com/projects/p/concrete5/language/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -459,7 +459,7 @@ msgid ""
 msgstr "金鑰過期. 請再次拜訪忘記密碼的頁面以產生一個新的金鑰"
 
 #: concrete/authentication/concrete/controller.php:191
-#: concrete/controllers/install.php:310
+#: concrete/controllers/install.php:313
 #: concrete/controllers/single_page/account/edit_profile.php:108
 #: concrete/controllers/single_page/dashboard/users/search.php:380
 #: concrete/controllers/single_page/register.php:106
@@ -864,13 +864,19 @@ msgstr "檔案的所有版本將被移至所選的位置"
 msgid "Save Location"
 msgstr "儲存位置"
 
-#: concrete/tools/files/importers/remote.php:114
-#: concrete/tools/files/importers/single.php:34
+#: concrete/tools/files/importers/incoming.php:20
+#: concrete/tools/files/importers/remote.php:21
+#: concrete/tools/files/importers/single.php:23
+msgid "You do not have permission to modify this file."
+msgstr ""
+
+#: concrete/tools/files/importers/remote.php:118
+#: concrete/tools/files/importers/single.php:38
 msgid "File uploaded successfully."
 msgstr ""
 
-#: concrete/tools/files/importers/remote.php:116
-#: concrete/tools/files/importers/single.php:36
+#: concrete/tools/files/importers/remote.php:120
+#: concrete/tools/files/importers/single.php:40
 msgid "File replaced successfully."
 msgstr "檔案已成功取代"
 
@@ -878,37 +884,37 @@ msgstr "檔案已成功取代"
 msgid "Upload Complete."
 msgstr "上傳完成."
 
-#: concrete/tools/files/importers/incoming.php:59
+#: concrete/tools/files/importers/incoming.php:63
 msgid "You must select at least one file."
 msgstr "您必須選擇至少一個檔案"
 
-#: concrete/tools/files/importers/incoming.php:68
+#: concrete/tools/files/importers/incoming.php:72
 #, php-format
 msgid "%s file imported successfully."
 msgid_plural "%s files imported successfully"
 msgstr[0] "%s 個檔案已成功匯入."
 
-#: concrete/tools/files/importers/remote.php:33
+#: concrete/tools/files/importers/remote.php:37
 msgid "Remote URL import requires the iconv extension enabled on your server."
 msgstr "您的伺服器必先啟用iconv 擴件以匯入遠端網址."
 
-#: concrete/tools/files/importers/remote.php:61
+#: concrete/tools/files/importers/remote.php:65
 msgid "You must specify at least one valid URL."
 msgstr "你必須至少指定一個有效的網址"
 
-#: concrete/tools/files/importers/remote.php:92
+#: concrete/tools/files/importers/remote.php:96
 #, php-format
 msgid "Unknown mime-type: %s"
 msgstr ""
 
 #. %s is an URL
-#: concrete/tools/files/importers/remote.php:141
+#: concrete/tools/files/importers/remote.php:145
 #, php-format
 msgid "Could not determine the name of the file at %s"
 msgstr ""
 
 #. %s is an URL
-#: concrete/tools/files/importers/remote.php:145
+#: concrete/tools/files/importers/remote.php:149
 #, php-format
 msgid "There was an error downloading %s"
 msgstr ""
@@ -1444,7 +1450,7 @@ msgstr "只有隸屬於 所有 已選的群組之用戶才符合擁有這權限�
 #: concrete/views/dialogs/block/aliasing.php:20
 #: concrete/views/dialogs/block/cache.php:11
 #: concrete/views/dialogs/page/add_external.php:7
-#: concrete/views/panels/details/page/attributes.php:28
+#: concrete/views/panels/details/page/attributes.php:30
 #: concrete/views/panels/details/page/seo.php:11
 msgid "Name"
 msgstr "名稱"
@@ -1727,7 +1733,7 @@ msgstr "自訂範本"
 #: concrete/single_pages/dashboard/users/groups.php:39
 #: concrete/src/File/Version.php:483
 #: concrete/tools/page_types/composer/form/edit_control.php:54
-#: concrete/views/panels/details/page/attributes.php:58
+#: concrete/views/panels/details/page/attributes.php:60
 msgid "Description"
 msgstr "描述"
 
@@ -1989,7 +1995,7 @@ msgstr "新增日期"
 #: concrete/src/File/Search/ColumnSet/Available.php:9
 #: concrete/src/Page/Search/ColumnSet/DefaultSet.php:38
 #: concrete/tools/pages/delete.php:94
-#: concrete/views/panels/details/page/attributes.php:46
+#: concrete/views/panels/details/page/attributes.php:48
 msgid "Author"
 msgstr "作者"
 
@@ -2136,8 +2142,8 @@ msgstr ""
 msgid "Custom design reset."
 msgstr ""
 
-#: concrete/controllers/dialog/area/design.php:98
-#: concrete/controllers/dialog/block/design.php:100
+#: concrete/controllers/dialog/area/design.php:76
+#: concrete/controllers/dialog/block/design.php:80
 msgid "Design updated."
 msgstr ""
 
@@ -2298,35 +2304,30 @@ msgid ""
 "<b>%s</b>."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/files/sets.php:35
+#: concrete/controllers/single_page/dashboard/files/sets.php:38
 msgid "New file set added successfully."
 msgstr "成功地加入新檔案組合"
 
-#: concrete/controllers/single_page/dashboard/files/sets.php:40
+#: concrete/controllers/single_page/dashboard/files/sets.php:44
 msgid "File set deleted successfully."
 msgstr "成功地刪除檔案組合"
 
-#: concrete/controllers/single_page/dashboard/files/sets.php:59
+#: concrete/controllers/single_page/dashboard/files/sets.php:64
 msgid "You do not have permission to delete this file set."
 msgstr "您沒有權限刪除此檔案組合"
 
-#: concrete/controllers/single_page/dashboard/files/sets.php:68
+#: concrete/controllers/single_page/dashboard/files/sets.php:74
 msgid "File set updated successfully."
 msgstr "成功地更新檔案組合"
 
-#: concrete/controllers/single_page/dashboard/files/sets.php:82
+#: concrete/controllers/single_page/dashboard/files/sets.php:89
 msgid "Invalid ID"
 msgstr "無效的 ID"
 
-#: concrete/controllers/single_page/dashboard/files/add_set.php:21
-#: concrete/controllers/single_page/dashboard/files/sets.php:86
+#: concrete/controllers/single_page/dashboard/files/add_set.php:25
+#: concrete/controllers/single_page/dashboard/files/sets.php:93
 msgid "Please Enter a Name"
 msgstr "請輸入一個名稱"
-
-#: concrete/controllers/single_page/dashboard/files/sets.php:89
-#, php-format
-msgid "File Set Name cannot contain the characters: %s"
-msgstr "檔案組合名稱不能包含字元: %s"
 
 #: concrete/controllers/single_page/dashboard/files/attributes.php:19
 #: concrete/controllers/single_page/dashboard/pages/attributes.php:41
@@ -3783,7 +3784,7 @@ msgstr ""
 msgid "** No Filtering"
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:34
+#: concrete/controllers/single_page/dashboard/pages/types.php:43
 #: concrete/controllers/single_page/dashboard/pages/types/attributes.php:23
 #: concrete/controllers/single_page/dashboard/pages/types/form.php:21
 #: concrete/controllers/single_page/dashboard/pages/types/output.php:19
@@ -3814,14 +3815,14 @@ msgstr ""
 msgid "You do not have access to edit this page type permissions."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:77
-#: concrete/controllers/single_page/dashboard/pages/types.php:104
+#: concrete/controllers/single_page/dashboard/pages/types.php:97
+#: concrete/controllers/single_page/dashboard/pages/types.php:125
 #: concrete/controllers/single_page/dashboard/pages/types/add.php:20
 msgid "You must specify a valid name for your page type."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:80
-#: concrete/controllers/single_page/dashboard/pages/types.php:107
+#: concrete/controllers/single_page/dashboard/pages/types.php:100
+#: concrete/controllers/single_page/dashboard/pages/types.php:128
 #: concrete/controllers/single_page/dashboard/pages/types/add.php:23
 msgid "You must specify a valid handle for your page type."
 msgstr ""
@@ -3830,12 +3831,12 @@ msgstr ""
 msgid "You must specify a unique handle for your page type."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:111
+#: concrete/controllers/single_page/dashboard/pages/types.php:132
 #: concrete/controllers/single_page/dashboard/pages/types/add.php:33
 msgid "You must choose a valid default page template."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:124
+#: concrete/controllers/single_page/dashboard/pages/types.php:145
 #: concrete/controllers/single_page/dashboard/pages/types/add.php:45
 msgid "You must specify at least one page template."
 msgstr ""
@@ -3920,40 +3921,46 @@ msgstr "頁面屬性已建立"
 msgid "Page Attribute Deleted."
 msgstr "頁面屬性已刪除"
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:11
+#: concrete/controllers/single_page/dashboard/pages/types.php:15
 msgid "Page Type added successfully."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:16
+#: concrete/controllers/single_page/dashboard/pages/types.php:21
 msgid "Page type updated successfully."
 msgstr "成功地更新頁面類別"
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:21
+#: concrete/controllers/single_page/dashboard/pages/types.php:28
 msgid ""
 "Page type copied successfully. Important! You will need to re-add any blocks"
 " into output areas that you had set on the original page type."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:26
+#: concrete/controllers/single_page/dashboard/pages/types.php:34
 msgid "Page type deleted successfully."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:37
+#: concrete/controllers/single_page/dashboard/pages/types.php:46
 #, php-format
 msgid "Edit %s Page Type"
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:48
-#: concrete/controllers/single_page/dashboard/pages/types.php:67
-#: concrete/controllers/single_page/dashboard/pages/types.php:93
+#: concrete/controllers/single_page/dashboard/pages/types.php:59
+#: concrete/controllers/single_page/dashboard/pages/types.php:87
+#: concrete/controllers/single_page/dashboard/pages/types.php:114
 msgid "Invalid page type object."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:52
+#: concrete/controllers/single_page/dashboard/pages/types.php:63
 msgid "You do not have access to delete this page type."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:128
+#: concrete/controllers/single_page/dashboard/pages/types.php:69
+#, php-format
+msgid "This page type is in use on %d page."
+msgid_plural "This page type is in use on %d pages."
+msgstr[0] ""
+
+#: concrete/controllers/single_page/dashboard/pages/types.php:149
 msgid "Invalid page type target type."
 msgstr ""
 
@@ -4650,7 +4657,7 @@ msgstr "編輯模式"
 msgid "Current Image"
 msgstr ""
 
-#: concrete/blocks/image/controller.php:31 concrete/blocks/image/form.php:32
+#: concrete/blocks/image/controller.php:37 concrete/blocks/image/form.php:32
 #: concrete/blocks/image_slider/form_setup_html.php:231
 #: concrete/controllers/frontend/assets_localization.php:111
 #: concrete/controllers/frontend/assets_localization.php:409
@@ -4676,7 +4683,7 @@ msgstr ""
 
 #: concrete/controllers/frontend/assets_localization.php:116
 #: concrete/controllers/frontend/assets_localization.php:423
-#: concrete/src/Editor/RedactorEditor.php:32
+#: concrete/src/Editor/RedactorEditor.php:31
 msgid "Underline"
 msgstr ""
 
@@ -4685,7 +4692,7 @@ msgid "Uppercase"
 msgstr ""
 
 #: concrete/controllers/frontend/assets_localization.php:118
-#: concrete/src/Editor/RedactorEditor.php:37
+#: concrete/src/Editor/RedactorEditor.php:36
 msgid "Font Size"
 msgstr ""
 
@@ -5163,7 +5170,7 @@ msgstr ""
 #: concrete/elements/page_controls_footer.php:58
 #: concrete/elements/page_controls_footer.php:67
 #: concrete/themes/dashboard/elements/header_newsflow.php:11
-#: concrete/views/panels/details/page/attributes.php:67
+#: concrete/views/panels/details/page/attributes.php:69
 #: concrete/views/panels/details/page/caching.php:115
 #: concrete/views/panels/details/page/location.php:71
 #: concrete/views/panels/details/page/permissions/advanced.php:57
@@ -5332,7 +5339,7 @@ msgid "Insert Video"
 msgstr ""
 
 #: concrete/controllers/frontend/assets_localization.php:340
-#: concrete/src/Editor/RedactorEditor.php:35
+#: concrete/src/Editor/RedactorEditor.php:34
 msgid "Table"
 msgstr ""
 
@@ -5398,7 +5405,7 @@ msgid "Bold"
 msgstr "粗體"
 
 #: concrete/controllers/frontend/assets_localization.php:356
-#: concrete/src/Editor/RedactorEditor.php:38
+#: concrete/src/Editor/RedactorEditor.php:37
 msgid "Font Color"
 msgstr "字元顏色"
 
@@ -5979,31 +5986,31 @@ msgctxt "InstallError"
 msgid "%s.<br><br>Trace:<br>%s"
 msgstr ""
 
-#: concrete/controllers/install.php:296
+#: concrete/controllers/install.php:300
 msgid "Please specify your site's name"
 msgstr "請指定您的網站名稱"
 
-#: concrete/controllers/install.php:297
+#: concrete/controllers/install.php:301
 msgid "Please specify a valid email address"
 msgstr "請指定一個有效的電郵地址"
 
-#: concrete/controllers/install.php:298
+#: concrete/controllers/install.php:302
 msgid "You must specify a valid database name"
 msgstr "您必須指定一個有效的資料庫名稱"
 
-#: concrete/controllers/install.php:299
+#: concrete/controllers/install.php:303
 msgid "You must specify a valid database server"
 msgstr "您必須指定一個有效的資料庫伺服器"
 
-#: concrete/controllers/install.php:350
+#: concrete/controllers/install.php:353
 msgid "Unable to open config/app.php for writing."
 msgstr ""
 
-#: concrete/controllers/install.php:371
+#: concrete/controllers/install.php:374
 msgid "Unable to open config/site_user.php for writing."
 msgstr "無法開啟 config/site_user.php 以寫入"
 
-#: concrete/controllers/install.php:393
+#: concrete/controllers/install.php:400
 msgid "You must select a valid sample content starting point."
 msgstr "您必須選定一個有效的樣品內容起始點"
 
@@ -6712,19 +6719,19 @@ msgstr ""
 msgid "You must specify a plugin key and name."
 msgstr ""
 
-#: concrete/src/Editor/RedactorEditor.php:31
+#: concrete/src/Editor/RedactorEditor.php:30
 msgid "Undo/Redo"
 msgstr ""
 
-#: concrete/src/Editor/RedactorEditor.php:33
+#: concrete/src/Editor/RedactorEditor.php:32
 msgid "Lightbox"
 msgstr ""
 
-#: concrete/src/Editor/RedactorEditor.php:34
+#: concrete/src/Editor/RedactorEditor.php:33
 msgid "Special Characters Palette"
 msgstr ""
 
-#: concrete/src/Editor/RedactorEditor.php:36
+#: concrete/src/Editor/RedactorEditor.php:35
 msgid "Font Family"
 msgstr ""
 
@@ -8327,7 +8334,7 @@ msgstr "無效的表單記號. 請重新載入此表單並再次傳送"
 
 #: concrete/single_pages/dashboard/reports/statistics.php:110
 #: concrete/src/Conversation/Message/AuthorFormatter.php:27
-#: concrete/src/Conversation/Message/AuthorFormatter.php:48
+#: concrete/src/Conversation/Message/AuthorFormatter.php:50
 #: concrete/views/dialogs/file/properties.php:216
 msgid "Anonymous"
 msgstr "匿名"
@@ -10810,7 +10817,12 @@ msgstr ""
 msgid "URL Slug"
 msgstr "切確網址"
 
-#: concrete/views/panels/details/page/attributes.php:37
+#: concrete/views/panels/details/page/attributes.php:25
+#, php-format
+msgid "Page ID: %s"
+msgstr "頁面 ID: %s"
+
+#: concrete/views/panels/details/page/attributes.php:39
 msgid "Created Time"
 msgstr ""
 
@@ -12371,15 +12383,15 @@ msgstr "最大寬度"
 msgid "Max Height"
 msgstr "最大高度"
 
-#: concrete/blocks/image/controller.php:27
+#: concrete/blocks/image/controller.php:32
 msgid "Adds images and onstates from the library to pages."
 msgstr "從藏庫加入影像和現狀到頁面"
 
-#: concrete/blocks/image/controller.php:65
+#: concrete/blocks/image/controller.php:74
 msgid "You must select an image."
 msgstr "您必須選擇一個影像"
 
-#: concrete/blocks/image/controller.php:120
+#: concrete/blocks/image/controller.php:164
 msgid "You must specify a valid image file."
 msgstr ""
 
@@ -12532,11 +12544,11 @@ msgstr ""
 msgid "Yes, allow registered users to choose to subscribe to conversations."
 msgstr ""
 
-#: concrete/blocks/core_conversation/controller.php:33
+#: concrete/blocks/core_conversation/controller.php:35
 msgid "Displays conversations on a page."
 msgstr ""
 
-#: concrete/blocks/core_conversation/controller.php:38
+#: concrete/blocks/core_conversation/controller.php:40
 msgid "Conversation"
 msgstr ""
 
@@ -13265,7 +13277,7 @@ msgstr ""
 msgid "Feature"
 msgstr ""
 
-#: concrete/blocks/feature/controller.php:101
+#: concrete/blocks/feature/controller.php:103
 msgid "Choose Icon"
 msgstr ""
 

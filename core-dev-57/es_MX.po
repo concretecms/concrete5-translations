@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-05-19 04:00+0000\n"
-"PO-Revision-Date: 2015-05-19 08:36+0000\n"
+"POT-Creation-Date: 2015-05-21 04:00+0000\n"
+"PO-Revision-Date: 2015-05-21 16:10+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Spanish (Mexico) (http://www.transifex.com/projects/p/concrete5/language/es_MX/)\n"
 "MIME-Version: 1.0\n"
@@ -461,7 +461,7 @@ msgid ""
 msgstr "Clave caducada. Por favor, visite la página  de contraseña olvidada de nuevo para obtener una nueva clave generada."
 
 #: concrete/authentication/concrete/controller.php:191
-#: concrete/controllers/install.php:310
+#: concrete/controllers/install.php:313
 #: concrete/controllers/single_page/account/edit_profile.php:108
 #: concrete/controllers/single_page/dashboard/users/search.php:380
 #: concrete/controllers/single_page/register.php:106
@@ -866,13 +866,19 @@ msgstr "Todas las versiones del archivo se moverán a la ubicación seleccionada
 msgid "Save Location"
 msgstr "Guardar Ubicacion"
 
-#: concrete/tools/files/importers/remote.php:114
-#: concrete/tools/files/importers/single.php:34
+#: concrete/tools/files/importers/incoming.php:20
+#: concrete/tools/files/importers/remote.php:21
+#: concrete/tools/files/importers/single.php:23
+msgid "You do not have permission to modify this file."
+msgstr ""
+
+#: concrete/tools/files/importers/remote.php:118
+#: concrete/tools/files/importers/single.php:38
 msgid "File uploaded successfully."
 msgstr "Archivo cargado exitosamente."
 
-#: concrete/tools/files/importers/remote.php:116
-#: concrete/tools/files/importers/single.php:36
+#: concrete/tools/files/importers/remote.php:120
+#: concrete/tools/files/importers/single.php:40
 msgid "File replaced successfully."
 msgstr "Archivo remplazado exitosamente."
 
@@ -880,38 +886,38 @@ msgstr "Archivo remplazado exitosamente."
 msgid "Upload Complete."
 msgstr "Subida Completa"
 
-#: concrete/tools/files/importers/incoming.php:59
+#: concrete/tools/files/importers/incoming.php:63
 msgid "You must select at least one file."
 msgstr "Debe seleccionar por lo menos un archivo."
 
-#: concrete/tools/files/importers/incoming.php:68
+#: concrete/tools/files/importers/incoming.php:72
 #, php-format
 msgid "%s file imported successfully."
 msgid_plural "%s files imported successfully"
 msgstr[0] "%s archivo importado exitosamente."
 msgstr[1] "%s archivos importados exitosamente"
 
-#: concrete/tools/files/importers/remote.php:33
+#: concrete/tools/files/importers/remote.php:37
 msgid "Remote URL import requires the iconv extension enabled on your server."
 msgstr "importar URL remota requiere la extensión iconv activado en su servidor."
 
-#: concrete/tools/files/importers/remote.php:61
+#: concrete/tools/files/importers/remote.php:65
 msgid "You must specify at least one valid URL."
 msgstr "Debe especificar por lo menos una URL Valida."
 
-#: concrete/tools/files/importers/remote.php:92
+#: concrete/tools/files/importers/remote.php:96
 #, php-format
 msgid "Unknown mime-type: %s"
 msgstr "Mime-type Desconocido: %s"
 
 #. %s is an URL
-#: concrete/tools/files/importers/remote.php:141
+#: concrete/tools/files/importers/remote.php:145
 #, php-format
 msgid "Could not determine the name of the file at %s"
 msgstr "No se pudo determinar el nombre del archivo en %s"
 
 #. %s is an URL
-#: concrete/tools/files/importers/remote.php:145
+#: concrete/tools/files/importers/remote.php:149
 #, php-format
 msgid "There was an error downloading %s"
 msgstr "Hubo un error descargando %s"
@@ -1450,7 +1456,7 @@ msgstr "Sólo los usuarios que son miembros de TODOS los grupos seleccionados po
 #: concrete/views/dialogs/block/aliasing.php:20
 #: concrete/views/dialogs/block/cache.php:11
 #: concrete/views/dialogs/page/add_external.php:7
-#: concrete/views/panels/details/page/attributes.php:28
+#: concrete/views/panels/details/page/attributes.php:30
 #: concrete/views/panels/details/page/seo.php:11
 msgid "Name"
 msgstr "Nombre"
@@ -1733,7 +1739,7 @@ msgstr "Plantilla Personalizada"
 #: concrete/single_pages/dashboard/users/groups.php:39
 #: concrete/src/File/Version.php:483
 #: concrete/tools/page_types/composer/form/edit_control.php:54
-#: concrete/views/panels/details/page/attributes.php:58
+#: concrete/views/panels/details/page/attributes.php:60
 msgid "Description"
 msgstr "Descripcion"
 
@@ -1995,7 +2001,7 @@ msgstr "Fecha agregada"
 #: concrete/src/File/Search/ColumnSet/Available.php:9
 #: concrete/src/Page/Search/ColumnSet/DefaultSet.php:38
 #: concrete/tools/pages/delete.php:94
-#: concrete/views/panels/details/page/attributes.php:46
+#: concrete/views/panels/details/page/attributes.php:48
 msgid "Author"
 msgstr "Autor"
 
@@ -2143,8 +2149,8 @@ msgstr "Configuraciones de bloque avanzadas guardadas exitosamente."
 msgid "Custom design reset."
 msgstr "Restablecer diseño personalizado."
 
-#: concrete/controllers/dialog/area/design.php:98
-#: concrete/controllers/dialog/block/design.php:100
+#: concrete/controllers/dialog/area/design.php:76
+#: concrete/controllers/dialog/block/design.php:80
 msgid "Design updated."
 msgstr "Diseño actualizado."
 
@@ -2305,35 +2311,30 @@ msgid ""
 "<b>%s</b>."
 msgstr "¡Su sitio ya está actualizado! La versión actual de concrete5 es <b>%s</b>."
 
-#: concrete/controllers/single_page/dashboard/files/sets.php:35
+#: concrete/controllers/single_page/dashboard/files/sets.php:38
 msgid "New file set added successfully."
 msgstr "Nuevo conjunto de archivos añadido exitosamente"
 
-#: concrete/controllers/single_page/dashboard/files/sets.php:40
+#: concrete/controllers/single_page/dashboard/files/sets.php:44
 msgid "File set deleted successfully."
 msgstr "Conjunto de archivos borrado exitosamente"
 
-#: concrete/controllers/single_page/dashboard/files/sets.php:59
+#: concrete/controllers/single_page/dashboard/files/sets.php:64
 msgid "You do not have permission to delete this file set."
 msgstr "No tiene permiso para borrar este conjunto de archivos"
 
-#: concrete/controllers/single_page/dashboard/files/sets.php:68
+#: concrete/controllers/single_page/dashboard/files/sets.php:74
 msgid "File set updated successfully."
 msgstr "conjunto de archivos actualizado exitosamente"
 
-#: concrete/controllers/single_page/dashboard/files/sets.php:82
+#: concrete/controllers/single_page/dashboard/files/sets.php:89
 msgid "Invalid ID"
 msgstr "ID invalida"
 
-#: concrete/controllers/single_page/dashboard/files/add_set.php:21
-#: concrete/controllers/single_page/dashboard/files/sets.php:86
+#: concrete/controllers/single_page/dashboard/files/add_set.php:25
+#: concrete/controllers/single_page/dashboard/files/sets.php:93
 msgid "Please Enter a Name"
 msgstr "Escribe un nombre"
-
-#: concrete/controllers/single_page/dashboard/files/sets.php:89
-#, php-format
-msgid "File Set Name cannot contain the characters: %s"
-msgstr "Conjunto de archivos no puede contener los caracteres: %s"
 
 #: concrete/controllers/single_page/dashboard/files/attributes.php:19
 #: concrete/controllers/single_page/dashboard/pages/attributes.php:41
@@ -3790,7 +3791,7 @@ msgstr "Notificador no válido."
 msgid "** No Filtering"
 msgstr "** Sin Filtrado"
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:34
+#: concrete/controllers/single_page/dashboard/pages/types.php:43
 #: concrete/controllers/single_page/dashboard/pages/types/attributes.php:23
 #: concrete/controllers/single_page/dashboard/pages/types/form.php:21
 #: concrete/controllers/single_page/dashboard/pages/types/output.php:19
@@ -3821,14 +3822,14 @@ msgstr "Conjunto de diseño de forma actualizado."
 msgid "You do not have access to edit this page type permissions."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:77
-#: concrete/controllers/single_page/dashboard/pages/types.php:104
+#: concrete/controllers/single_page/dashboard/pages/types.php:97
+#: concrete/controllers/single_page/dashboard/pages/types.php:125
 #: concrete/controllers/single_page/dashboard/pages/types/add.php:20
 msgid "You must specify a valid name for your page type."
 msgstr "Debe especificar un nombre válido para su tipo de página"
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:80
-#: concrete/controllers/single_page/dashboard/pages/types.php:107
+#: concrete/controllers/single_page/dashboard/pages/types.php:100
+#: concrete/controllers/single_page/dashboard/pages/types.php:128
 #: concrete/controllers/single_page/dashboard/pages/types/add.php:23
 msgid "You must specify a valid handle for your page type."
 msgstr "Debe especificar un manejador válido para su tipo de página."
@@ -3837,12 +3838,12 @@ msgstr "Debe especificar un manejador válido para su tipo de página."
 msgid "You must specify a unique handle for your page type."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:111
+#: concrete/controllers/single_page/dashboard/pages/types.php:132
 #: concrete/controllers/single_page/dashboard/pages/types/add.php:33
 msgid "You must choose a valid default page template."
 msgstr "Debe elegir una plantilla de página por defecto."
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:124
+#: concrete/controllers/single_page/dashboard/pages/types.php:145
 #: concrete/controllers/single_page/dashboard/pages/types/add.php:45
 msgid "You must specify at least one page template."
 msgstr "Debe especificar al menos una plantilla de página."
@@ -3927,40 +3928,47 @@ msgstr "Atributo de pagina creada"
 msgid "Page Attribute Deleted."
 msgstr "Atributo de pagina borrada"
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:11
+#: concrete/controllers/single_page/dashboard/pages/types.php:15
 msgid "Page Type added successfully."
 msgstr "Tipo de Página añadido exitosamente."
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:16
+#: concrete/controllers/single_page/dashboard/pages/types.php:21
 msgid "Page type updated successfully."
 msgstr "Tipo de Página actualizada exitosamente"
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:21
+#: concrete/controllers/single_page/dashboard/pages/types.php:28
 msgid ""
 "Page type copied successfully. Important! You will need to re-add any blocks"
 " into output areas that you had set on the original page type."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:26
+#: concrete/controllers/single_page/dashboard/pages/types.php:34
 msgid "Page type deleted successfully."
 msgstr "Tipo de página borrado exitosamente."
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:37
+#: concrete/controllers/single_page/dashboard/pages/types.php:46
 #, php-format
 msgid "Edit %s Page Type"
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:48
-#: concrete/controllers/single_page/dashboard/pages/types.php:67
-#: concrete/controllers/single_page/dashboard/pages/types.php:93
+#: concrete/controllers/single_page/dashboard/pages/types.php:59
+#: concrete/controllers/single_page/dashboard/pages/types.php:87
+#: concrete/controllers/single_page/dashboard/pages/types.php:114
 msgid "Invalid page type object."
 msgstr "Objeto de tipo de página no válido."
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:52
+#: concrete/controllers/single_page/dashboard/pages/types.php:63
 msgid "You do not have access to delete this page type."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:128
+#: concrete/controllers/single_page/dashboard/pages/types.php:69
+#, php-format
+msgid "This page type is in use on %d page."
+msgid_plural "This page type is in use on %d pages."
+msgstr[0] ""
+msgstr[1] ""
+
+#: concrete/controllers/single_page/dashboard/pages/types.php:149
 msgid "Invalid page type target type."
 msgstr "Tipo destino de tipo de página no válido."
 
@@ -4658,7 +4666,7 @@ msgstr "Modo edicion"
 msgid "Current Image"
 msgstr "Imagen Actual"
 
-#: concrete/blocks/image/controller.php:31 concrete/blocks/image/form.php:32
+#: concrete/blocks/image/controller.php:37 concrete/blocks/image/form.php:32
 #: concrete/blocks/image_slider/form_setup_html.php:231
 #: concrete/controllers/frontend/assets_localization.php:111
 #: concrete/controllers/frontend/assets_localization.php:409
@@ -4684,7 +4692,7 @@ msgstr "Itálica"
 
 #: concrete/controllers/frontend/assets_localization.php:116
 #: concrete/controllers/frontend/assets_localization.php:423
-#: concrete/src/Editor/RedactorEditor.php:32
+#: concrete/src/Editor/RedactorEditor.php:31
 msgid "Underline"
 msgstr "Subrayado"
 
@@ -4693,7 +4701,7 @@ msgid "Uppercase"
 msgstr "Mayúsculas"
 
 #: concrete/controllers/frontend/assets_localization.php:118
-#: concrete/src/Editor/RedactorEditor.php:37
+#: concrete/src/Editor/RedactorEditor.php:36
 msgid "Font Size"
 msgstr "Tamaño de Fuente"
 
@@ -5171,7 +5179,7 @@ msgstr ""
 #: concrete/elements/page_controls_footer.php:58
 #: concrete/elements/page_controls_footer.php:67
 #: concrete/themes/dashboard/elements/header_newsflow.php:11
-#: concrete/views/panels/details/page/attributes.php:67
+#: concrete/views/panels/details/page/attributes.php:69
 #: concrete/views/panels/details/page/caching.php:115
 #: concrete/views/panels/details/page/location.php:71
 #: concrete/views/panels/details/page/permissions/advanced.php:57
@@ -5340,7 +5348,7 @@ msgid "Insert Video"
 msgstr "Insertar Video"
 
 #: concrete/controllers/frontend/assets_localization.php:340
-#: concrete/src/Editor/RedactorEditor.php:35
+#: concrete/src/Editor/RedactorEditor.php:34
 msgid "Table"
 msgstr "Tabla"
 
@@ -5406,7 +5414,7 @@ msgid "Bold"
 msgstr "Negritas"
 
 #: concrete/controllers/frontend/assets_localization.php:356
-#: concrete/src/Editor/RedactorEditor.php:38
+#: concrete/src/Editor/RedactorEditor.php:37
 msgid "Font Color"
 msgstr "Color de Fuente"
 
@@ -5988,31 +5996,31 @@ msgctxt "InstallError"
 msgid "%s.<br><br>Trace:<br>%s"
 msgstr "%s.<br><br>Ruta:<br>%s"
 
-#: concrete/controllers/install.php:296
+#: concrete/controllers/install.php:300
 msgid "Please specify your site's name"
 msgstr "Por favor especifique un nombre para su sitio."
 
-#: concrete/controllers/install.php:297
+#: concrete/controllers/install.php:301
 msgid "Please specify a valid email address"
 msgstr "Por favor especifique un correo electrónico valido."
 
-#: concrete/controllers/install.php:298
+#: concrete/controllers/install.php:302
 msgid "You must specify a valid database name"
 msgstr "Debe especificar un nombre de  base de datos valido."
 
-#: concrete/controllers/install.php:299
+#: concrete/controllers/install.php:303
 msgid "You must specify a valid database server"
 msgstr "Especifique un servidor de base de datos  valido."
 
-#: concrete/controllers/install.php:350
+#: concrete/controllers/install.php:353
 msgid "Unable to open config/app.php for writing."
 msgstr "No se puede abrir config/app.php para escritura."
 
-#: concrete/controllers/install.php:371
+#: concrete/controllers/install.php:374
 msgid "Unable to open config/site_user.php for writing."
 msgstr "No se puede abrir config / site_user.php para escribir."
 
-#: concrete/controllers/install.php:393
+#: concrete/controllers/install.php:400
 msgid "You must select a valid sample content starting point."
 msgstr "Debe seleccionar  contenido de ejemplo válido como  punto de partida."
 
@@ -6724,19 +6732,19 @@ msgstr ""
 msgid "You must specify a plugin key and name."
 msgstr ""
 
-#: concrete/src/Editor/RedactorEditor.php:31
+#: concrete/src/Editor/RedactorEditor.php:30
 msgid "Undo/Redo"
 msgstr ""
 
-#: concrete/src/Editor/RedactorEditor.php:33
+#: concrete/src/Editor/RedactorEditor.php:32
 msgid "Lightbox"
 msgstr ""
 
-#: concrete/src/Editor/RedactorEditor.php:34
+#: concrete/src/Editor/RedactorEditor.php:33
 msgid "Special Characters Palette"
 msgstr ""
 
-#: concrete/src/Editor/RedactorEditor.php:36
+#: concrete/src/Editor/RedactorEditor.php:35
 msgid "Font Family"
 msgstr ""
 
@@ -8339,7 +8347,7 @@ msgstr "Tipo de  formulario no válido. Por favor, vuelva a cargar el formulario
 
 #: concrete/single_pages/dashboard/reports/statistics.php:110
 #: concrete/src/Conversation/Message/AuthorFormatter.php:27
-#: concrete/src/Conversation/Message/AuthorFormatter.php:48
+#: concrete/src/Conversation/Message/AuthorFormatter.php:50
 #: concrete/views/dialogs/file/properties.php:216
 msgid "Anonymous"
 msgstr "Anonimo"
@@ -10836,7 +10844,12 @@ msgstr ""
 msgid "URL Slug"
 msgstr "URL slug"
 
-#: concrete/views/panels/details/page/attributes.php:37
+#: concrete/views/panels/details/page/attributes.php:25
+#, php-format
+msgid "Page ID: %s"
+msgstr "ID de Pagina: %s"
+
+#: concrete/views/panels/details/page/attributes.php:39
 msgid "Created Time"
 msgstr "Hora de creación"
 
@@ -12398,15 +12411,15 @@ msgstr "anchura maxima"
 msgid "Max Height"
 msgstr "Altura maxima"
 
-#: concrete/blocks/image/controller.php:27
+#: concrete/blocks/image/controller.php:32
 msgid "Adds images and onstates from the library to pages."
 msgstr "agregar imágenes y estados desde la biblioteca a las paginas"
 
-#: concrete/blocks/image/controller.php:65
+#: concrete/blocks/image/controller.php:74
 msgid "You must select an image."
 msgstr "Debe seleccionar una imagen"
 
-#: concrete/blocks/image/controller.php:120
+#: concrete/blocks/image/controller.php:164
 msgid "You must specify a valid image file."
 msgstr ""
 
@@ -12559,11 +12572,11 @@ msgstr ""
 msgid "Yes, allow registered users to choose to subscribe to conversations."
 msgstr ""
 
-#: concrete/blocks/core_conversation/controller.php:33
+#: concrete/blocks/core_conversation/controller.php:35
 msgid "Displays conversations on a page."
 msgstr "Muestra conversaciones en una página."
 
-#: concrete/blocks/core_conversation/controller.php:38
+#: concrete/blocks/core_conversation/controller.php:40
 msgid "Conversation"
 msgstr ""
 
@@ -13293,7 +13306,7 @@ msgstr ""
 msgid "Feature"
 msgstr ""
 
-#: concrete/blocks/feature/controller.php:101
+#: concrete/blocks/feature/controller.php:103
 msgid "Choose Icon"
 msgstr "Escoger icono "
 

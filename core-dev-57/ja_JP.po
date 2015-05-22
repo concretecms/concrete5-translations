@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-05-19 04:00+0000\n"
-"PO-Revision-Date: 2015-05-19 11:35+0000\n"
+"POT-Creation-Date: 2015-05-21 04:00+0000\n"
+"PO-Revision-Date: 2015-05-21 21:20+0000\n"
 "Last-Translator: Takuro Hishikawa <hishikawa@concrete5.co.jp>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/projects/p/concrete5/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
@@ -465,7 +465,7 @@ msgid ""
 msgstr "認証キーの期限が切れています。もう一度パスワードリセットのページに行き、リセット作業を行ってください。"
 
 #: concrete/authentication/concrete/controller.php:191
-#: concrete/controllers/install.php:310
+#: concrete/controllers/install.php:313
 #: concrete/controllers/single_page/account/edit_profile.php:108
 #: concrete/controllers/single_page/dashboard/users/search.php:380
 #: concrete/controllers/single_page/register.php:106
@@ -870,13 +870,19 @@ msgstr "すべてのバージョンのファイルが指定場所に移動しま
 msgid "Save Location"
 msgstr "場所を保存"
 
-#: concrete/tools/files/importers/remote.php:114
-#: concrete/tools/files/importers/single.php:34
+#: concrete/tools/files/importers/incoming.php:20
+#: concrete/tools/files/importers/remote.php:21
+#: concrete/tools/files/importers/single.php:23
+msgid "You do not have permission to modify this file."
+msgstr "このファイルを変更する権限がありません。"
+
+#: concrete/tools/files/importers/remote.php:118
+#: concrete/tools/files/importers/single.php:38
 msgid "File uploaded successfully."
 msgstr "ファイルが正常にアップロードされました。"
 
-#: concrete/tools/files/importers/remote.php:116
-#: concrete/tools/files/importers/single.php:36
+#: concrete/tools/files/importers/remote.php:120
+#: concrete/tools/files/importers/single.php:40
 msgid "File replaced successfully."
 msgstr "ファイルが正常に置き換えられました。"
 
@@ -884,37 +890,37 @@ msgstr "ファイルが正常に置き換えられました。"
 msgid "Upload Complete."
 msgstr "アップロード完了。"
 
-#: concrete/tools/files/importers/incoming.php:59
+#: concrete/tools/files/importers/incoming.php:63
 msgid "You must select at least one file."
 msgstr "少なくともひとつのファイルを選択してください。"
 
-#: concrete/tools/files/importers/incoming.php:68
+#: concrete/tools/files/importers/incoming.php:72
 #, php-format
 msgid "%s file imported successfully."
 msgid_plural "%s files imported successfully"
 msgstr[0] "%s ファイルが正常にインポートされました"
 
-#: concrete/tools/files/importers/remote.php:33
+#: concrete/tools/files/importers/remote.php:37
 msgid "Remote URL import requires the iconv extension enabled on your server."
 msgstr "リモートURLインポートは、お使いのサーバーでiconvエクステンションが必要です。"
 
-#: concrete/tools/files/importers/remote.php:61
+#: concrete/tools/files/importers/remote.php:65
 msgid "You must specify at least one valid URL."
 msgstr "少なくともひとつの有効なURLを指定してください。"
 
-#: concrete/tools/files/importers/remote.php:92
+#: concrete/tools/files/importers/remote.php:96
 #, php-format
 msgid "Unknown mime-type: %s"
 msgstr "不明な MIME-TYPE: %s"
 
 #. %s is an URL
-#: concrete/tools/files/importers/remote.php:141
+#: concrete/tools/files/importers/remote.php:145
 #, php-format
 msgid "Could not determine the name of the file at %s"
 msgstr "%s のファイル名を認識できませんでした"
 
 #. %s is an URL
-#: concrete/tools/files/importers/remote.php:145
+#: concrete/tools/files/importers/remote.php:149
 #, php-format
 msgid "There was an error downloading %s"
 msgstr "%s のダウンロード中にエラーが発生しました"
@@ -1450,7 +1456,7 @@ msgstr "選択されたグループすべてに属しているユーザーのみ
 #: concrete/views/dialogs/block/aliasing.php:20
 #: concrete/views/dialogs/block/cache.php:11
 #: concrete/views/dialogs/page/add_external.php:7
-#: concrete/views/panels/details/page/attributes.php:28
+#: concrete/views/panels/details/page/attributes.php:30
 #: concrete/views/panels/details/page/seo.php:11
 msgid "Name"
 msgstr "名前"
@@ -1733,7 +1739,7 @@ msgstr "カスタムテンプレート"
 #: concrete/single_pages/dashboard/users/groups.php:39
 #: concrete/src/File/Version.php:483
 #: concrete/tools/page_types/composer/form/edit_control.php:54
-#: concrete/views/panels/details/page/attributes.php:58
+#: concrete/views/panels/details/page/attributes.php:60
 msgid "Description"
 msgstr "説明"
 
@@ -1995,7 +2001,7 @@ msgstr "登録日"
 #: concrete/src/File/Search/ColumnSet/Available.php:9
 #: concrete/src/Page/Search/ColumnSet/DefaultSet.php:38
 #: concrete/tools/pages/delete.php:94
-#: concrete/views/panels/details/page/attributes.php:46
+#: concrete/views/panels/details/page/attributes.php:48
 msgid "Author"
 msgstr "投稿者"
 
@@ -2142,8 +2148,8 @@ msgstr "高度なブロック設定が正常に保存されました。"
 msgid "Custom design reset."
 msgstr "カスタムデザインをリセットする。"
 
-#: concrete/controllers/dialog/area/design.php:98
-#: concrete/controllers/dialog/block/design.php:100
+#: concrete/controllers/dialog/area/design.php:76
+#: concrete/controllers/dialog/block/design.php:80
 msgid "Design updated."
 msgstr "デザインが更新されました。"
 
@@ -2304,35 +2310,30 @@ msgid ""
 "<b>%s</b>."
 msgstr "このサイトは最新版です。現在の concrete5 バージョンは<b>%s</b>です。"
 
-#: concrete/controllers/single_page/dashboard/files/sets.php:35
+#: concrete/controllers/single_page/dashboard/files/sets.php:38
 msgid "New file set added successfully."
 msgstr "新規ファイルセットが正常に追加されました。"
 
-#: concrete/controllers/single_page/dashboard/files/sets.php:40
+#: concrete/controllers/single_page/dashboard/files/sets.php:44
 msgid "File set deleted successfully."
 msgstr "ファイルセットが正常に削除されました。"
 
-#: concrete/controllers/single_page/dashboard/files/sets.php:59
+#: concrete/controllers/single_page/dashboard/files/sets.php:64
 msgid "You do not have permission to delete this file set."
 msgstr "このファイルセットを削除する権限がありません。"
 
-#: concrete/controllers/single_page/dashboard/files/sets.php:68
+#: concrete/controllers/single_page/dashboard/files/sets.php:74
 msgid "File set updated successfully."
 msgstr "ファイルセットが正常に更新されました。"
 
-#: concrete/controllers/single_page/dashboard/files/sets.php:82
+#: concrete/controllers/single_page/dashboard/files/sets.php:89
 msgid "Invalid ID"
 msgstr "無効なIDです"
 
-#: concrete/controllers/single_page/dashboard/files/add_set.php:21
-#: concrete/controllers/single_page/dashboard/files/sets.php:86
+#: concrete/controllers/single_page/dashboard/files/add_set.php:25
+#: concrete/controllers/single_page/dashboard/files/sets.php:93
 msgid "Please Enter a Name"
 msgstr "名前を入力してください。"
-
-#: concrete/controllers/single_page/dashboard/files/sets.php:89
-#, php-format
-msgid "File Set Name cannot contain the characters: %s"
-msgstr "ファイルセット名には次の文字を含むことができません：%s"
 
 #: concrete/controllers/single_page/dashboard/files/attributes.php:19
 #: concrete/controllers/single_page/dashboard/pages/attributes.php:41
@@ -3789,7 +3790,7 @@ msgstr "無効なフィードです。"
 msgid "** No Filtering"
 msgstr "** フィルタなし"
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:34
+#: concrete/controllers/single_page/dashboard/pages/types.php:43
 #: concrete/controllers/single_page/dashboard/pages/types/attributes.php:23
 #: concrete/controllers/single_page/dashboard/pages/types/form.php:21
 #: concrete/controllers/single_page/dashboard/pages/types/output.php:19
@@ -3820,14 +3821,14 @@ msgstr "フォームレイアウトセットが更新されました。"
 msgid "You do not have access to edit this page type permissions."
 msgstr "このページタイプ権限を編集する権限がありません。"
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:77
-#: concrete/controllers/single_page/dashboard/pages/types.php:104
+#: concrete/controllers/single_page/dashboard/pages/types.php:97
+#: concrete/controllers/single_page/dashboard/pages/types.php:125
 #: concrete/controllers/single_page/dashboard/pages/types/add.php:20
 msgid "You must specify a valid name for your page type."
 msgstr "ページタイプの名前を正しく入力してください。"
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:80
-#: concrete/controllers/single_page/dashboard/pages/types.php:107
+#: concrete/controllers/single_page/dashboard/pages/types.php:100
+#: concrete/controllers/single_page/dashboard/pages/types.php:128
 #: concrete/controllers/single_page/dashboard/pages/types/add.php:23
 msgid "You must specify a valid handle for your page type."
 msgstr "ページタイプのハンドルを正しく入力してください。"
@@ -3836,12 +3837,12 @@ msgstr "ページタイプのハンドルを正しく入力してください。
 msgid "You must specify a unique handle for your page type."
 msgstr "ページタイプハンドルには一意なハンドル名をつけてください。"
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:111
+#: concrete/controllers/single_page/dashboard/pages/types.php:132
 #: concrete/controllers/single_page/dashboard/pages/types/add.php:33
 msgid "You must choose a valid default page template."
 msgstr "デフォルトページテンプレートを正しく選択してください。"
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:124
+#: concrete/controllers/single_page/dashboard/pages/types.php:145
 #: concrete/controllers/single_page/dashboard/pages/types/add.php:45
 msgid "You must specify at least one page template."
 msgstr "少なくともひとつのページテンプレートを選択してください。"
@@ -3926,40 +3927,46 @@ msgstr "ページ属性が作成されました。"
 msgid "Page Attribute Deleted."
 msgstr "ページ属性が削除されました。"
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:11
+#: concrete/controllers/single_page/dashboard/pages/types.php:15
 msgid "Page Type added successfully."
 msgstr "ページタイプが正常に追加されました。"
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:16
+#: concrete/controllers/single_page/dashboard/pages/types.php:21
 msgid "Page type updated successfully."
 msgstr "ページタイプが正常に更新されました。"
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:21
+#: concrete/controllers/single_page/dashboard/pages/types.php:28
 msgid ""
 "Page type copied successfully. Important! You will need to re-add any blocks"
 " into output areas that you had set on the original page type."
 msgstr "ページタイプが正常に複製されました。【重要】オリジナルのページタイプに設置したブロックは再度追加する必要があります。"
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:26
+#: concrete/controllers/single_page/dashboard/pages/types.php:34
 msgid "Page type deleted successfully."
 msgstr "ページタイプが正常に削除されました。"
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:37
+#: concrete/controllers/single_page/dashboard/pages/types.php:46
 #, php-format
 msgid "Edit %s Page Type"
 msgstr "%s ページタイプを編集"
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:48
-#: concrete/controllers/single_page/dashboard/pages/types.php:67
-#: concrete/controllers/single_page/dashboard/pages/types.php:93
+#: concrete/controllers/single_page/dashboard/pages/types.php:59
+#: concrete/controllers/single_page/dashboard/pages/types.php:87
+#: concrete/controllers/single_page/dashboard/pages/types.php:114
 msgid "Invalid page type object."
 msgstr "無効なページタイプオブジェクトです。"
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:52
+#: concrete/controllers/single_page/dashboard/pages/types.php:63
 msgid "You do not have access to delete this page type."
 msgstr "このページタイプを削除する権限がありません。"
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:128
+#: concrete/controllers/single_page/dashboard/pages/types.php:69
+#, php-format
+msgid "This page type is in use on %d page."
+msgid_plural "This page type is in use on %d pages."
+msgstr[0] "このページタイプは %d ページで使われています。"
+
+#: concrete/controllers/single_page/dashboard/pages/types.php:149
 msgid "Invalid page type target type."
 msgstr "ターゲットのページタイプが無効です。"
 
@@ -4656,7 +4663,7 @@ msgstr "編集モード"
 msgid "Current Image"
 msgstr "現在の画像"
 
-#: concrete/blocks/image/controller.php:31 concrete/blocks/image/form.php:32
+#: concrete/blocks/image/controller.php:37 concrete/blocks/image/form.php:32
 #: concrete/blocks/image_slider/form_setup_html.php:231
 #: concrete/controllers/frontend/assets_localization.php:111
 #: concrete/controllers/frontend/assets_localization.php:409
@@ -4682,7 +4689,7 @@ msgstr "斜体"
 
 #: concrete/controllers/frontend/assets_localization.php:116
 #: concrete/controllers/frontend/assets_localization.php:423
-#: concrete/src/Editor/RedactorEditor.php:32
+#: concrete/src/Editor/RedactorEditor.php:31
 msgid "Underline"
 msgstr "下線"
 
@@ -4691,7 +4698,7 @@ msgid "Uppercase"
 msgstr "大文字"
 
 #: concrete/controllers/frontend/assets_localization.php:118
-#: concrete/src/Editor/RedactorEditor.php:37
+#: concrete/src/Editor/RedactorEditor.php:36
 msgid "Font Size"
 msgstr "文字サイズ"
 
@@ -5169,7 +5176,7 @@ msgstr "このメニューから、ブロックを編集したり、表示を変
 #: concrete/elements/page_controls_footer.php:58
 #: concrete/elements/page_controls_footer.php:67
 #: concrete/themes/dashboard/elements/header_newsflow.php:11
-#: concrete/views/panels/details/page/attributes.php:67
+#: concrete/views/panels/details/page/attributes.php:69
 #: concrete/views/panels/details/page/caching.php:115
 #: concrete/views/panels/details/page/location.php:71
 #: concrete/views/panels/details/page/permissions/advanced.php:57
@@ -5338,7 +5345,7 @@ msgid "Insert Video"
 msgstr "ビデオを追加"
 
 #: concrete/controllers/frontend/assets_localization.php:340
-#: concrete/src/Editor/RedactorEditor.php:35
+#: concrete/src/Editor/RedactorEditor.php:34
 msgid "Table"
 msgstr "テーブル"
 
@@ -5404,7 +5411,7 @@ msgid "Bold"
 msgstr "太字"
 
 #: concrete/controllers/frontend/assets_localization.php:356
-#: concrete/src/Editor/RedactorEditor.php:38
+#: concrete/src/Editor/RedactorEditor.php:37
 msgid "Font Color"
 msgstr "フォント色"
 
@@ -5985,31 +5992,31 @@ msgctxt "InstallError"
 msgid "%s.<br><br>Trace:<br>%s"
 msgstr "%s.<br><br>トレース:<br>%s"
 
-#: concrete/controllers/install.php:296
+#: concrete/controllers/install.php:300
 msgid "Please specify your site's name"
 msgstr "サイト名を入力してください"
 
-#: concrete/controllers/install.php:297
+#: concrete/controllers/install.php:301
 msgid "Please specify a valid email address"
 msgstr "有効なメールアドレスを入力してください"
 
-#: concrete/controllers/install.php:298
+#: concrete/controllers/install.php:302
 msgid "You must specify a valid database name"
 msgstr "有効なデータベース名を入力してください"
 
-#: concrete/controllers/install.php:299
+#: concrete/controllers/install.php:303
 msgid "You must specify a valid database server"
 msgstr "有効なデータベースサーバーを入力してください"
 
-#: concrete/controllers/install.php:350
+#: concrete/controllers/install.php:353
 msgid "Unable to open config/app.php for writing."
 msgstr "config/app.phpを保存するために開くことができません。"
 
-#: concrete/controllers/install.php:371
+#: concrete/controllers/install.php:374
 msgid "Unable to open config/site_user.php for writing."
 msgstr "config/site_user.phpを保存するために開くことができません。"
 
-#: concrete/controllers/install.php:393
+#: concrete/controllers/install.php:400
 msgid "You must select a valid sample content starting point."
 msgstr "有効なサンプルコンテンツを選択してください。"
 
@@ -6718,19 +6725,19 @@ msgstr "アクションはここでは有効ではありません。"
 msgid "You must specify a plugin key and name."
 msgstr "プラグインのキーと名前を指定してください。"
 
-#: concrete/src/Editor/RedactorEditor.php:31
+#: concrete/src/Editor/RedactorEditor.php:30
 msgid "Undo/Redo"
 msgstr "元に戻す/やり直し"
 
-#: concrete/src/Editor/RedactorEditor.php:33
+#: concrete/src/Editor/RedactorEditor.php:32
 msgid "Lightbox"
 msgstr "ライトボックス"
 
-#: concrete/src/Editor/RedactorEditor.php:34
+#: concrete/src/Editor/RedactorEditor.php:33
 msgid "Special Characters Palette"
 msgstr "特殊文字パレット"
 
-#: concrete/src/Editor/RedactorEditor.php:36
+#: concrete/src/Editor/RedactorEditor.php:35
 msgid "Font Family"
 msgstr "フォントファミリー"
 
@@ -8333,7 +8340,7 @@ msgstr "無効なフォームのトークンです。再読み込みして送信
 
 #: concrete/single_pages/dashboard/reports/statistics.php:110
 #: concrete/src/Conversation/Message/AuthorFormatter.php:27
-#: concrete/src/Conversation/Message/AuthorFormatter.php:48
+#: concrete/src/Conversation/Message/AuthorFormatter.php:50
 #: concrete/views/dialogs/file/properties.php:216
 msgid "Anonymous"
 msgstr "匿名の"
@@ -10816,7 +10823,12 @@ msgstr "このページは少なくともひとつのURLでアクセス可能で
 msgid "URL Slug"
 msgstr "URLスラッグ"
 
-#: concrete/views/panels/details/page/attributes.php:37
+#: concrete/views/panels/details/page/attributes.php:25
+#, php-format
+msgid "Page ID: %s"
+msgstr "ページ ID: %s"
+
+#: concrete/views/panels/details/page/attributes.php:39
 msgid "Created Time"
 msgstr "作成時間"
 
@@ -12377,15 +12389,15 @@ msgstr "最大横幅"
 msgid "Max Height"
 msgstr "最大縦幅"
 
-#: concrete/blocks/image/controller.php:27
+#: concrete/blocks/image/controller.php:32
 msgid "Adds images and onstates from the library to pages."
 msgstr "ライブラリに保存された画像とマウスオーバー画像を表示します。"
 
-#: concrete/blocks/image/controller.php:65
+#: concrete/blocks/image/controller.php:74
 msgid "You must select an image."
 msgstr "画像を選択してください。"
 
-#: concrete/blocks/image/controller.php:120
+#: concrete/blocks/image/controller.php:164
 msgid "You must specify a valid image file."
 msgstr "画像ファイルを正しく選択してください。"
 
@@ -12538,11 +12550,11 @@ msgstr "購読オプション"
 msgid "Yes, allow registered users to choose to subscribe to conversations."
 msgstr "はい、ユーザーにコメント欄の購読を許可します。"
 
-#: concrete/blocks/core_conversation/controller.php:33
+#: concrete/blocks/core_conversation/controller.php:35
 msgid "Displays conversations on a page."
 msgstr "このページのコメント欄を表示。"
 
-#: concrete/blocks/core_conversation/controller.php:38
+#: concrete/blocks/core_conversation/controller.php:40
 msgid "Conversation"
 msgstr "コメント欄"
 
@@ -13271,7 +13283,7 @@ msgstr "アイコン、タイトル、短い説明文を表示します。"
 msgid "Feature"
 msgstr "特色"
 
-#: concrete/blocks/feature/controller.php:101
+#: concrete/blocks/feature/controller.php:103
 msgid "Choose Icon"
 msgstr "アイコンを選択"
 
