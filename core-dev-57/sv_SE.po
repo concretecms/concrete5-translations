@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-06-11 04:00+0000\n"
-"PO-Revision-Date: 2015-06-11 16:57+0000\n"
-"Last-Translator: Fredrik Lindau <fredrik@fxlindau.se>\n"
+"POT-Creation-Date: 2015-06-12 04:00+0000\n"
+"PO-Revision-Date: 2015-06-12 08:43+0000\n"
+"Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Swedish (Sweden) (http://www.transifex.com/projects/p/concrete5/language/sv_SE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -517,7 +517,7 @@ msgstr "Denna e-postadress har blivit validerad! Du kan nu komma åt funktionern
 msgid "facebook"
 msgstr "facebook"
 
-#: concrete/controllers/backend/page.php:52
+#: concrete/controllers/backend/page.php:58
 #: concrete/controllers/backend/user_interface.php:40
 #: concrete/controllers/backend/user_interface/block.php:47
 #: concrete/controllers/backend/user_interface/file.php:38
@@ -1094,6 +1094,7 @@ msgstr "Ämne"
 msgid "Add"
 msgstr "Lägg till"
 
+#: concrete/controllers/backend/page.php:75
 #: concrete/single_pages/dashboard/sitemap/full.php:80
 #: concrete/tools/sitemap_search_selector.php:5
 msgid "You do not have access to the sitemap."
@@ -1113,7 +1114,7 @@ msgstr "Lista"
 #: concrete/blocks/search/controller.php:93
 #: concrete/config/install/packages/elemental_full/content.xml:2337
 #: concrete/elements/files/search.php:33 concrete/elements/files/search.php:85
-#: concrete/elements/group/search.php:27 concrete/elements/pages/search.php:39
+#: concrete/elements/group/search.php:34 concrete/elements/pages/search.php:39
 #: concrete/elements/pages/search.php:55 concrete/elements/users/search.php:49
 #: concrete/elements/users/search.php:86
 #: concrete/single_pages/dashboard/conversations/messages.php:12
@@ -1312,7 +1313,7 @@ msgstr "Hur länge kommer denna behörighet att gälla?"
 #: concrete/elements/attribute/type_form_required.php:130
 #: concrete/elements/block_footer_edit.php:18
 #: concrete/elements/custom_style.php:335
-#: concrete/elements/page_types/composer/form/output/buttons.php:11
+#: concrete/elements/page_types/composer/form/output/buttons.php:31
 #: concrete/elements/permission/detail.php:89
 #: concrete/elements/permission/details/block/timed_guest_access.php:39
 #: concrete/elements/permission/lists/area.php:95
@@ -1410,7 +1411,7 @@ msgstr "Endast användare som är medlemmar ALLA valda grupper kommer att påver
 
 #: concrete/blocks/testimonial/form.php:22
 #: concrete/elements/attribute/type_form_required.php:61
-#: concrete/elements/group/search.php:26
+#: concrete/elements/group/search.php:33
 #: concrete/elements/permission/keys/edit_page_properties.php:29
 #: concrete/elements/permission/keys/edit_page_properties.php:65
 #: concrete/elements/workflow/edit_type_form_required.php:16
@@ -2832,7 +2833,6 @@ msgstr "Ett användarnamn måste vara minst %s tecken långt."
 msgid "A username cannot be more than %s characters long."
 msgstr "Ett användarnamn kan inte vara längre än %s tecken."
 
-#: concrete/controllers/single_page/dashboard/users/add.php:67
 #: concrete/controllers/single_page/dashboard/users/search.php:266
 msgid ""
 "A username may only contain letters, numbers, spaces, dots (not at the "
@@ -2926,6 +2926,14 @@ msgstr "Egenskapen för användaren är skapat."
 #: concrete/controllers/single_page/dashboard/users/attributes.php:124
 msgid "User Attribute Updated."
 msgstr "Egenskapen för användaren är uppdaterat."
+
+#: concrete/controllers/single_page/dashboard/users/add.php:67
+#: concrete/controllers/single_page/register.php:76
+msgid ""
+"A username may only contain letters, numbers, spaces (not at the "
+"beginning/end), dots (not at the beginning/end), underscores (not at the "
+"beginning/end)."
+msgstr ""
 
 #: concrete/controllers/single_page/dashboard/users/add.php:78
 #: concrete/controllers/single_page/register.php:89
@@ -3584,7 +3592,7 @@ msgstr "Ogiltig länk."
 msgid "Choose a Service"
 msgstr "Välj en tjänst"
 
-#: concrete/controllers/single_page/dashboard/system/basics/multilingual.php:26
+#: concrete/controllers/single_page/dashboard/system/basics/multilingual.php:25
 msgid ""
 "Interface settings saved. Please log out and in again to update all backend "
 "messages."
@@ -4022,13 +4030,11 @@ msgstr "Du har inte skrivit något meddelande!"
 msgid "The email address %s is already in use. Please choose another."
 msgstr "E-postadressen %s används redan. Var vänlig och välj en annan."
 
-#: concrete/controllers/single_page/register.php:76
-msgid "A username may only contain letters, numbers and spaces."
-msgstr "Ett användarnamn får bara innehålla bokstäver, siffror samt mellanslag. "
-
 #: concrete/controllers/single_page/register.php:78
-msgid "A username may only contain letters or numbers."
-msgstr "Ett användarnamn får bara innehålla bokstäver och siffror."
+msgid ""
+"A username may only contain letters, numbers, dots (not at the "
+"beginning/end), underscores (not at the beginning/end)."
+msgstr ""
 
 #: concrete/controllers/single_page/register.php:83
 #, php-format
@@ -4270,6 +4276,11 @@ msgstr[1] "%s filer skannades."
 #: concrete/controllers/backend/file.php:91
 msgid "Invalid file version."
 msgstr "Ogiltig filversion"
+
+#: concrete/controllers/backend/page.php:72
+#: concrete/themes/elemental/page_forbidden.php:11
+msgid "You are not allowed to access this page."
+msgstr "Du saknar tillåtelse att komma åt denna sidan."
 
 #: concrete/controllers/backend/page/arrange_blocks.php:43
 #: concrete/controllers/backend/page/arrange_blocks.php:52
@@ -4650,7 +4661,7 @@ msgstr "Låt oss börja redigera en sida."
 #: concrete/controllers/frontend/assets_localization.php:108
 #: concrete/controllers/frontend/assets_localization.php:285
 #: concrete/elements/attribute/categories/user.php:26
-#: concrete/elements/page_types/composer/form/output/buttons.php:9
+#: concrete/elements/page_types/composer/form/output/buttons.php:27
 #: concrete/views/dialogs/page/add/compose.php:12
 msgid "Edit Mode"
 msgstr "Redigeringsläge"
@@ -6218,10 +6229,6 @@ msgstr "Byggt med <a href=\"http://www.concrete5.org\" class=\"concrete5\">concr
 #: concrete/themes/elemental/page_forbidden.php:10
 msgid "403 Error"
 msgstr "403 Fel"
-
-#: concrete/themes/elemental/page_forbidden.php:11
-msgid "You are not allowed to access this page."
-msgstr "Du saknar tillåtelse att komma åt denna sidan."
 
 #: concrete/jobs/remove_old_page_versions.php:15
 msgid "Remove Old Page Versions"
@@ -10006,16 +10013,23 @@ msgstr "Ta bort denna kontroll? Detta går inte att ångra."
 msgid "Update Set"
 msgstr "Uppdatera grupp"
 
-#: concrete/elements/page_types/composer/form/output/buttons.php:6
+#: concrete/elements/page_types/composer/form/output/buttons.php:9
+#: concrete/elements/page_types/composer/form/output/buttons.php:11
 msgid "Publish"
 msgstr "Publicera"
 
-#: concrete/elements/page_types/composer/form/output/buttons.php:15
+#: concrete/elements/conversation/message/add_form.php:24
+#: concrete/elements/page_types/composer/form/output/buttons.php:16
+#: concrete/single_pages/login.php:101
+msgid "Submit"
+msgstr "Skicka"
+
+#: concrete/elements/page_types/composer/form/output/buttons.php:38
 #: concrete/views/panels/page/check_in.php:65
 msgid "Discard Draft"
 msgstr "Kasta utkast"
 
-#: concrete/elements/page_types/composer/form/output/buttons.php:16
+#: concrete/elements/page_types/composer/form/output/buttons.php:42
 msgid "Save and Exit"
 msgstr "Spara och avsluta"
 
@@ -10164,11 +10178,6 @@ msgstr "Dela meddelande URL på Facebook."
 msgid "Get message URL."
 msgstr "Hämta meddelande URL."
 
-#: concrete/elements/conversation/message/add_form.php:24
-#: concrete/single_pages/login.php:101
-msgid "Submit"
-msgstr "Skicka"
-
 #: concrete/elements/conversation/message/add_form.php:29
 msgid "Un-Subscribe"
 msgstr "Avsluta prenumeration "
@@ -10238,6 +10247,10 @@ msgstr[1] "%d meddelanden"
 #: concrete/elements/pages/search.php:8
 msgid "Permissions Inheritance"
 msgstr "Behörigheternas släktskap"
+
+#: concrete/elements/group/search.php:6
+msgid "You do not have access to the group search."
+msgstr ""
 
 #: concrete/views/image-editor/filters/sepia.php:1
 msgid "Apply a sepia tone"

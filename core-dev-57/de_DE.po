@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-06-11 04:00+0000\n"
-"PO-Revision-Date: 2015-06-11 08:43+0000\n"
-"Last-Translator: Michele Locati <michele@locati.it>\n"
+"POT-Creation-Date: 2015-06-12 04:00+0000\n"
+"PO-Revision-Date: 2015-06-12 14:08+0000\n"
+"Last-Translator: Torsten Silbermann <mail@tsilbermann.de>\n"
 "Language-Team: German (Germany) (http://www.transifex.com/projects/p/concrete5/language/de_DE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -519,7 +519,7 @@ msgstr "Diese E-Mail-Adresse wurde bestätigt. Die Funktionen der Website könne
 msgid "facebook"
 msgstr "Facebook"
 
-#: concrete/controllers/backend/page.php:52
+#: concrete/controllers/backend/page.php:58
 #: concrete/controllers/backend/user_interface.php:40
 #: concrete/controllers/backend/user_interface/block.php:47
 #: concrete/controllers/backend/user_interface/file.php:38
@@ -1096,10 +1096,11 @@ msgstr "Thema"
 msgid "Add"
 msgstr "Hinzufügen"
 
+#: concrete/controllers/backend/page.php:75
 #: concrete/single_pages/dashboard/sitemap/full.php:80
 #: concrete/tools/sitemap_search_selector.php:5
 msgid "You do not have access to the sitemap."
-msgstr "Sie haben keinen Zugriff auf die Sitemap"
+msgstr "Sie verfügen nicht über die Berechtigung zum Zugriff auf die Sitemap."
 
 #: concrete/config/install/base/dashboard.xml:21
 #: concrete/tools/sitemap_search_selector.php:35
@@ -1115,7 +1116,7 @@ msgstr "Flache Ansicht"
 #: concrete/blocks/search/controller.php:93
 #: concrete/config/install/packages/elemental_full/content.xml:2337
 #: concrete/elements/files/search.php:33 concrete/elements/files/search.php:85
-#: concrete/elements/group/search.php:27 concrete/elements/pages/search.php:39
+#: concrete/elements/group/search.php:34 concrete/elements/pages/search.php:39
 #: concrete/elements/pages/search.php:55 concrete/elements/users/search.php:49
 #: concrete/elements/users/search.php:86
 #: concrete/single_pages/dashboard/conversations/messages.php:12
@@ -1314,7 +1315,7 @@ msgstr "Wie lange soll diese Berechtigung gelten?"
 #: concrete/elements/attribute/type_form_required.php:130
 #: concrete/elements/block_footer_edit.php:18
 #: concrete/elements/custom_style.php:335
-#: concrete/elements/page_types/composer/form/output/buttons.php:11
+#: concrete/elements/page_types/composer/form/output/buttons.php:31
 #: concrete/elements/permission/detail.php:89
 #: concrete/elements/permission/details/block/timed_guest_access.php:39
 #: concrete/elements/permission/lists/area.php:95
@@ -1412,7 +1413,7 @@ msgstr "Nur Benutzer, die Mitglieder ALLER ausgewählten Gruppen sind, erhalten 
 
 #: concrete/blocks/testimonial/form.php:22
 #: concrete/elements/attribute/type_form_required.php:61
-#: concrete/elements/group/search.php:26
+#: concrete/elements/group/search.php:33
 #: concrete/elements/permission/keys/edit_page_properties.php:29
 #: concrete/elements/permission/keys/edit_page_properties.php:65
 #: concrete/elements/workflow/edit_type_form_required.php:16
@@ -1517,7 +1518,7 @@ msgstr "Ungültiges Nachrichtenobjekt"
 
 #: concrete/tools/conversations/update_message.php:28
 msgid "You do not have access to edit this message."
-msgstr "Sie haben keine Berechtigung um diese Nachricht zu bearbeiten."
+msgstr "Sie verfügen nicht über die Berechtigung, diese Nachricht zu bearbeiten."
 
 #: concrete/tools/conversations/add_message.php:66
 #: concrete/tools/conversations/update_message.php:38
@@ -1580,15 +1581,15 @@ msgstr "Ungültige Konversation"
 
 #: concrete/tools/conversations/add_message.php:26
 msgid "You do not have access to add a message to this conversation."
-msgstr "Sie haben keine Berechtigung, dieser Konversation eine Nachricht hinzuzufügen."
+msgstr "Sie verfügen nicht über die Berechtigung, dieser Konversation eine Nachricht hinzuzufügen."
 
 #: concrete/tools/conversations/add_message.php:33
 msgid "You must enter your name to post this message."
-msgstr "Um diese Nachricht zu posten, geben Sie bitte Ihren Namen ein."
+msgstr "Bitte Ihren Namen eingeben, um die Nachricht zu posten."
 
 #: concrete/tools/conversations/add_message.php:38
 msgid "You must enter a valid email address to post this message."
-msgstr "Um diese Nachricht zu posten, bitte eine gültige E-Mail-Adresse eingeben."
+msgstr "Bitte eine gültige E-Mail-Adresse zum Posten der Nachricht eingeben."
 
 #: concrete/controllers/single_page/register.php:53
 #: concrete/tools/conversations/add_message.php:46
@@ -2379,7 +2380,7 @@ msgstr "Gelöscht"
 
 #: concrete/controllers/single_page/dashboard/conversations/messages.php:54
 msgid "Recent First"
-msgstr "Neueste zuerst"
+msgstr "Neuste zuerst"
 
 #: concrete/blocks/core_conversation/form.php:58
 #: concrete/controllers/single_page/dashboard/conversations/messages.php:55
@@ -2518,7 +2519,7 @@ msgstr "Ungültiger Stapel"
 
 #: concrete/controllers/single_page/dashboard/blocks/stacks.php:107
 msgid "You do not have access to approve this stack."
-msgstr "Sie haben keinen Zugriff auf die Freigabe dieses Stapels."
+msgstr "Sie verfügen nicht über die Berechtigung zur Freigabe dieses Stapels."
 
 #: concrete/controllers/single_page/dashboard/blocks/stacks.php:136
 msgid "Stack added successfully."
@@ -2757,7 +2758,7 @@ msgstr "Ungültige Gruppe"
 #: concrete/controllers/single_page/dashboard/users/groups.php:36
 #: concrete/controllers/single_page/dashboard/users/groups.php:55
 msgid "You do not have access to edit this group."
-msgstr "Sie haben keinen Zugriff auf das Bearbeiten dieser Gruppe."
+msgstr "Sie verfügen nicht über die Berechtigung zum Bearbeiten dieser Gruppe."
 
 #: concrete/controllers/single_page/dashboard/users/groups.php:44
 msgid "Groups moved successfully."
@@ -2834,7 +2835,6 @@ msgstr "Ein Benutzername muss mindestens %s Zeichen lang sein."
 msgid "A username cannot be more than %s characters long."
 msgstr "Ein Benutzername kann nicht mehr als %s Zeichen lang sein."
 
-#: concrete/controllers/single_page/dashboard/users/add.php:67
 #: concrete/controllers/single_page/dashboard/users/search.php:266
 msgid ""
 "A username may only contain letters, numbers, spaces, dots (not at the "
@@ -2928,6 +2928,14 @@ msgstr "Benutzerattribut erstellt"
 #: concrete/controllers/single_page/dashboard/users/attributes.php:124
 msgid "User Attribute Updated."
 msgstr "Benutzerattribut geändert"
+
+#: concrete/controllers/single_page/dashboard/users/add.php:67
+#: concrete/controllers/single_page/register.php:76
+msgid ""
+"A username may only contain letters, numbers, spaces (not at the "
+"beginning/end), dots (not at the beginning/end), underscores (not at the "
+"beginning/end)."
+msgstr "Ein Benutzername kann nur Buchstaben, Zahlen, Leerzeichen (nicht am Anfang/Ende), Punkte (nicht am Anfang/Ende) und Unterstriche (nicht am Anfang/Ende) enthalten."
 
 #: concrete/controllers/single_page/dashboard/users/add.php:78
 #: concrete/controllers/single_page/register.php:89
@@ -3586,7 +3594,7 @@ msgstr "Ungültiger Link."
 msgid "Choose a Service"
 msgstr "Dienst auswählen"
 
-#: concrete/controllers/single_page/dashboard/system/basics/multilingual.php:26
+#: concrete/controllers/single_page/dashboard/system/basics/multilingual.php:25
 msgid ""
 "Interface settings saved. Please log out and in again to update all backend "
 "messages."
@@ -3791,7 +3799,7 @@ msgstr "** keine Filterung"
 #: concrete/controllers/single_page/dashboard/pages/types/form.php:21
 #: concrete/controllers/single_page/dashboard/pages/types/output.php:19
 msgid "You do not have access to edit this page type."
-msgstr "Sie haben keine Berechtigung, diesen Seitentyp zu bearbeiten."
+msgstr "Sie verfügen nicht über die Berechtigung zum Bearbeiten dieses Seitentyps."
 
 #: concrete/controllers/single_page/dashboard/pages/types/output.php:39
 msgid "Invalid page template."
@@ -3815,7 +3823,7 @@ msgstr "Album für Formularlayout aktualisiert"
 
 #: concrete/controllers/single_page/dashboard/pages/types/permissions.php:19
 msgid "You do not have access to edit this page type permissions."
-msgstr "Sie haben keine Berechtigung, die Berechtigungen dieses Seitentyps zu bearbeiten."
+msgstr "Sie verfügen nicht über die Berechtigung zum Bearbeiten der Berechtigungen dieses Seitentyps."
 
 #: concrete/controllers/single_page/dashboard/pages/types.php:97
 #: concrete/controllers/single_page/dashboard/pages/types.php:125
@@ -3954,7 +3962,7 @@ msgstr "Ungültiges Seitentyp-Objekt"
 
 #: concrete/controllers/single_page/dashboard/pages/types.php:63
 msgid "You do not have access to delete this page type."
-msgstr "Sie haben keine Berechtigung, diesen Seitentyp zu löschen."
+msgstr "Sie verfügen nicht über die Berechtigung zum Löschen dieses Seitentyps."
 
 #: concrete/controllers/single_page/dashboard/pages/types.php:69
 #, php-format
@@ -4024,13 +4032,11 @@ msgstr "Sie haben keine Nachricht eingegeben!"
 msgid "The email address %s is already in use. Please choose another."
 msgstr "Die E-Mail-Adresse %s ist schon in Gebrauch. Bitte wählen Sie eine andere."
 
-#: concrete/controllers/single_page/register.php:76
-msgid "A username may only contain letters, numbers and spaces."
-msgstr "Ein Benutzername kann nur Buchstaben, Zahlen und Leerzeichen enthalten."
-
 #: concrete/controllers/single_page/register.php:78
-msgid "A username may only contain letters or numbers."
-msgstr "Ein Benutzername darf nur Buchstaben und Ziffern enthalten."
+msgid ""
+"A username may only contain letters, numbers, dots (not at the "
+"beginning/end), underscores (not at the beginning/end)."
+msgstr "Ein Benutzername kann nur Buchstaben, Zahlen, Punkte (nicht am Anfang/Ende) und Unterstriche (nicht am Anfang/Ende) enthalten."
 
 #: concrete/controllers/single_page/register.php:83
 #, php-format
@@ -4272,6 +4278,11 @@ msgstr[1] "Es wurden %s Dateien neu eingelesen."
 #: concrete/controllers/backend/file.php:91
 msgid "Invalid file version."
 msgstr "Ungültige Dateiversion"
+
+#: concrete/controllers/backend/page.php:72
+#: concrete/themes/elemental/page_forbidden.php:11
+msgid "You are not allowed to access this page."
+msgstr "Sie verfügen nicht über die Berechtigung zum Betrachten dieser Seite."
 
 #: concrete/controllers/backend/page/arrange_blocks.php:43
 #: concrete/controllers/backend/page/arrange_blocks.php:52
@@ -4652,7 +4663,7 @@ msgstr "Beginnen wir mit der Bearbeitung einer Seite."
 #: concrete/controllers/frontend/assets_localization.php:108
 #: concrete/controllers/frontend/assets_localization.php:285
 #: concrete/elements/attribute/categories/user.php:26
-#: concrete/elements/page_types/composer/form/output/buttons.php:9
+#: concrete/elements/page_types/composer/form/output/buttons.php:27
 #: concrete/views/dialogs/page/add/compose.php:12
 msgid "Edit Mode"
 msgstr "Bearbeitungsmodus"
@@ -6221,10 +6232,6 @@ msgstr "Erstellt mit <a href=\"http://www.concrete5.org\" class=\"concrete5\">co
 msgid "403 Error"
 msgstr "403 Fehler"
 
-#: concrete/themes/elemental/page_forbidden.php:11
-msgid "You are not allowed to access this page."
-msgstr "Sie verfügen nicht über die Berechtigung zum Betrachten dieser Seite."
-
 #: concrete/jobs/remove_old_page_versions.php:15
 msgid "Remove Old Page Versions"
 msgstr "Alte Seitenversionen entfernen"
@@ -7737,7 +7744,7 @@ msgid ""
 "\n"
 "%s\n"
 "%s"
-msgstr "Lesen Sie diesen Artikel auf %s:\n\n%s\n%s"
+msgstr "Ein interessanter Artikel auf der Website %s:\n\n%s\n%s"
 
 #: concrete/src/Sharing/ShareThisPage/Service.php:43
 msgid "Thought you'd enjoy this article."
@@ -10008,16 +10015,23 @@ msgstr "Dieses Element löschen? Dieser Schritt kann nicht rückgängig gemacht 
 msgid "Update Set"
 msgstr "Album aktualisieren"
 
-#: concrete/elements/page_types/composer/form/output/buttons.php:6
+#: concrete/elements/page_types/composer/form/output/buttons.php:9
+#: concrete/elements/page_types/composer/form/output/buttons.php:11
 msgid "Publish"
 msgstr "Veröffentlichen"
 
-#: concrete/elements/page_types/composer/form/output/buttons.php:15
+#: concrete/elements/conversation/message/add_form.php:24
+#: concrete/elements/page_types/composer/form/output/buttons.php:16
+#: concrete/single_pages/login.php:101
+msgid "Submit"
+msgstr "Absenden"
+
+#: concrete/elements/page_types/composer/form/output/buttons.php:38
 #: concrete/views/panels/page/check_in.php:65
 msgid "Discard Draft"
 msgstr "Entwurf verwerfen"
 
-#: concrete/elements/page_types/composer/form/output/buttons.php:16
+#: concrete/elements/page_types/composer/form/output/buttons.php:42
 msgid "Save and Exit"
 msgstr "Speichern und verlassen"
 
@@ -10055,7 +10069,7 @@ msgstr "Kennung des Seitentyps"
 
 #: concrete/elements/page_types/form/base.php:49
 msgid "Default Page Template"
-msgstr "Standard-Seitenvorlage"
+msgstr "Standard Seitenvorlage"
 
 #: concrete/elements/page_types/form/base.php:54
 msgid "Launch in Composer?"
@@ -10166,11 +10180,6 @@ msgstr "Nachrichten-URL auf Facebook teilen."
 msgid "Get message URL."
 msgstr "Nachrichten-URL erstellen"
 
-#: concrete/elements/conversation/message/add_form.php:24
-#: concrete/single_pages/login.php:101
-msgid "Submit"
-msgstr "Absenden"
-
 #: concrete/elements/conversation/message/add_form.php:29
 msgid "Un-Subscribe"
 msgstr "Abbestellen"
@@ -10219,7 +10228,7 @@ msgstr "Anhang löschen"
 #: concrete/blocks/core_conversation/form.php:58
 #: concrete/elements/conversation/display.php:46
 msgid "Most Recent First"
-msgstr "Neueste zuerst"
+msgstr "Neuste zuerst"
 
 #: concrete/blocks/core_conversation/form.php:58
 #: concrete/elements/conversation/display.php:47
@@ -10240,6 +10249,10 @@ msgstr[1] "%d Nachrichten"
 #: concrete/elements/pages/search.php:8
 msgid "Permissions Inheritance"
 msgstr "Berechtigungsvererbung"
+
+#: concrete/elements/group/search.php:6
+msgid "You do not have access to the group search."
+msgstr "Sie verfügen nicht über die Berechtigung zum Durchsuchen von Gruppen."
 
 #: concrete/views/image-editor/filters/sepia.php:1
 msgid "Apply a sepia tone"
@@ -10319,7 +10332,7 @@ msgstr "Klicken Sie auf die Schaltfläche Installieren direkt neben dem Namen de
 msgid ""
 "There are no pages of this type added to your website. If there were, you'd "
 "be able to choose which of those pages this block appears on."
-msgstr "Auf der Website gibt es keine Seiten dieses Typs. Wäre dies der Fall, könnte ausgewählt werden, auf welchen dieser Seiten dieser Block erscheinen soll."
+msgstr "Momentan gibt es keine Seiten dieses Typs. Anderenfalls könnte ausgewählt werden, auf welchen dieser Seiten dieser Block erscheinen soll."
 
 #: concrete/views/dialogs/block/aliasing.php:14
 msgid ""
@@ -13193,7 +13206,7 @@ msgstr "Sitemapreihenfolge"
 
 #: concrete/blocks/page_list/page_list_form.php:193
 msgid "Most recent first"
-msgstr "Neueste zuerst"
+msgstr "Neuste zuerst"
 
 #: concrete/blocks/page_list/page_list_form.php:196
 msgid "Earliest first"
@@ -13359,7 +13372,7 @@ msgstr "Sie müssen Ihre Datei verlinken."
 
 #: concrete/blocks/file/add.php:15 concrete/blocks/file/edit.php:19
 msgid "Force file to download"
-msgstr ""
+msgstr "Herunterladen der Datei erzwingen (nicht anzeigen)"
 
 #: concrete/blocks/file/edit.php:14
 msgid "Text for Linked File"
@@ -13712,7 +13725,7 @@ msgstr "wie in der Sitemap"
 
 #: concrete/blocks/autonav/form_setup_html.php:28
 msgid "with the most recent first."
-msgstr "mit dem neuesten Eintrag zuerst"
+msgstr "mit dem neusten Eintrag zuerst"
 
 #: concrete/blocks/autonav/form_setup_html.php:31
 msgid "with the earliest first."
@@ -14205,7 +14218,7 @@ msgstr "Erweiterungen aktualisieren"
 #: concrete/single_pages/dashboard/extend/update.php:35
 msgid ""
 "You do not have access to download themes or add-ons from the marketplace."
-msgstr "Sie können keine Themes oder Erweiterungen vom concrete5 Marketplace herunterladen."
+msgstr "Sie verfügen nicht über die Berechtigung zum Herunterladen von Themes oder Erweiterungen."
 
 #: concrete/single_pages/dashboard/extend/update.php:39
 msgid "No updates for your add-ons are available."
@@ -14951,7 +14964,7 @@ msgstr "Passwort ändern"
 msgid ""
 "You do not have access to user search. This setting may be changed in the "
 "access section of the dashboard settings page."
-msgstr "Sie haben keinen Zugriff auf die Suche nach Benutzern. Diese Option kann im Zugriffsmodul der Verwaltung unter den Einstellungen geändert werden."
+msgstr "Sie verfügen nicht über die Berechtigung zur Benutzersuche. Diese Option kann im Modul Berechtigungen setzen in der Verwaltung unter den Einstellungen geändert werden."
 
 #: concrete/single_pages/dashboard/users/add.php:62
 msgid "Registration Data"

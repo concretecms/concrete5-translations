@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-06-11 04:00+0000\n"
-"PO-Revision-Date: 2015-06-11 11:23+0000\n"
+"POT-Creation-Date: 2015-06-12 04:00+0000\n"
+"PO-Revision-Date: 2015-06-12 13:24+0000\n"
 "Last-Translator: Takuro Hishikawa <hishikawa@concrete5.co.jp>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/projects/p/concrete5/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
@@ -521,7 +521,7 @@ msgstr "メールアドレスが確認できました！このサイトへのア
 msgid "facebook"
 msgstr "Facebook"
 
-#: concrete/controllers/backend/page.php:52
+#: concrete/controllers/backend/page.php:58
 #: concrete/controllers/backend/user_interface.php:40
 #: concrete/controllers/backend/user_interface/block.php:47
 #: concrete/controllers/backend/user_interface/file.php:38
@@ -1096,6 +1096,7 @@ msgstr "トピック"
 msgid "Add"
 msgstr "新規"
 
+#: concrete/controllers/backend/page.php:75
 #: concrete/single_pages/dashboard/sitemap/full.php:80
 #: concrete/tools/sitemap_search_selector.php:5
 msgid "You do not have access to the sitemap."
@@ -1115,7 +1116,7 @@ msgstr "フラットビュー"
 #: concrete/blocks/search/controller.php:93
 #: concrete/config/install/packages/elemental_full/content.xml:2337
 #: concrete/elements/files/search.php:33 concrete/elements/files/search.php:85
-#: concrete/elements/group/search.php:27 concrete/elements/pages/search.php:39
+#: concrete/elements/group/search.php:34 concrete/elements/pages/search.php:39
 #: concrete/elements/pages/search.php:55 concrete/elements/users/search.php:49
 #: concrete/elements/users/search.php:86
 #: concrete/single_pages/dashboard/conversations/messages.php:12
@@ -1312,7 +1313,7 @@ msgstr "この権限が有効な期間は？"
 #: concrete/elements/attribute/type_form_required.php:130
 #: concrete/elements/block_footer_edit.php:18
 #: concrete/elements/custom_style.php:335
-#: concrete/elements/page_types/composer/form/output/buttons.php:11
+#: concrete/elements/page_types/composer/form/output/buttons.php:31
 #: concrete/elements/permission/detail.php:89
 #: concrete/elements/permission/details/block/timed_guest_access.php:39
 #: concrete/elements/permission/lists/area.php:95
@@ -1410,7 +1411,7 @@ msgstr "選択されたグループすべてに属しているユーザーのみ
 
 #: concrete/blocks/testimonial/form.php:22
 #: concrete/elements/attribute/type_form_required.php:61
-#: concrete/elements/group/search.php:26
+#: concrete/elements/group/search.php:33
 #: concrete/elements/permission/keys/edit_page_properties.php:29
 #: concrete/elements/permission/keys/edit_page_properties.php:65
 #: concrete/elements/workflow/edit_type_form_required.php:16
@@ -2831,7 +2832,6 @@ msgstr "ユーザーIDは%s文字以上である必要があります（半角�
 msgid "A username cannot be more than %s characters long."
 msgstr "ユーザーIDは、%s文字以下である必要があります（半角英数文字）。"
 
-#: concrete/controllers/single_page/dashboard/users/add.php:67
 #: concrete/controllers/single_page/dashboard/users/search.php:266
 msgid ""
 "A username may only contain letters, numbers, spaces, dots (not at the "
@@ -2925,6 +2925,14 @@ msgstr "ユーザー属性が追加されました。"
 #: concrete/controllers/single_page/dashboard/users/attributes.php:124
 msgid "User Attribute Updated."
 msgstr "ユーザー属性が更新されました。"
+
+#: concrete/controllers/single_page/dashboard/users/add.php:67
+#: concrete/controllers/single_page/register.php:76
+msgid ""
+"A username may only contain letters, numbers, spaces (not at the "
+"beginning/end), dots (not at the beginning/end), underscores (not at the "
+"beginning/end)."
+msgstr "ユーザー名は半角英数字、スペース（最初と最後は不可）、ドット（最初と最後は不可）、アンダースコア（最初と最後は不可）のみ使用することができます。"
 
 #: concrete/controllers/single_page/dashboard/users/add.php:78
 #: concrete/controllers/single_page/register.php:89
@@ -3583,7 +3591,7 @@ msgstr "無効なリンクです。"
 msgid "Choose a Service"
 msgstr "サービスを選択"
 
-#: concrete/controllers/single_page/dashboard/system/basics/multilingual.php:26
+#: concrete/controllers/single_page/dashboard/system/basics/multilingual.php:25
 msgid ""
 "Interface settings saved. Please log out and in again to update all backend "
 "messages."
@@ -4020,13 +4028,11 @@ msgstr "メッセージ本文が空白です"
 msgid "The email address %s is already in use. Please choose another."
 msgstr "入力されたメールアドレス %s はすでに使用されています。別のメールアドレスを入力してください。"
 
-#: concrete/controllers/single_page/register.php:76
-msgid "A username may only contain letters, numbers and spaces."
-msgstr "ユーザーIDには、半角英数字と半角空白のみ含めることができます。"
-
 #: concrete/controllers/single_page/register.php:78
-msgid "A username may only contain letters or numbers."
-msgstr "ユーザーIDには、半角英文字と数字のみ含めることができます。"
+msgid ""
+"A username may only contain letters, numbers, dots (not at the "
+"beginning/end), underscores (not at the beginning/end)."
+msgstr "ユーザー名は半角英数字、ドット（最初と最後は不可）、アンダースコア（最初と最後は不可）のみ使用することができます。"
 
 #: concrete/controllers/single_page/register.php:83
 #, php-format
@@ -4267,6 +4273,11 @@ msgstr[0] "%s ファイルが正常に再スキャンされました。"
 #: concrete/controllers/backend/file.php:91
 msgid "Invalid file version."
 msgstr "無効なファイルバージョンです。"
+
+#: concrete/controllers/backend/page.php:72
+#: concrete/themes/elemental/page_forbidden.php:11
+msgid "You are not allowed to access this page."
+msgstr "このページへのアクセス権がありません。"
 
 #: concrete/controllers/backend/page/arrange_blocks.php:43
 #: concrete/controllers/backend/page/arrange_blocks.php:52
@@ -4647,7 +4658,7 @@ msgstr "ページの編集を開始しましょう。"
 #: concrete/controllers/frontend/assets_localization.php:108
 #: concrete/controllers/frontend/assets_localization.php:285
 #: concrete/elements/attribute/categories/user.php:26
-#: concrete/elements/page_types/composer/form/output/buttons.php:9
+#: concrete/elements/page_types/composer/form/output/buttons.php:27
 #: concrete/views/dialogs/page/add/compose.php:12
 msgid "Edit Mode"
 msgstr "編集モード"
@@ -6215,10 +6226,6 @@ msgstr "Built with <a href=\"http://www.concrete5.org\" class=\"concrete5\">conc
 msgid "403 Error"
 msgstr "403エラー"
 
-#: concrete/themes/elemental/page_forbidden.php:11
-msgid "You are not allowed to access this page."
-msgstr "このページへのアクセス権がありません。"
-
 #: concrete/jobs/remove_old_page_versions.php:15
 msgid "Remove Old Page Versions"
 msgstr "古いページバージョンを削除"
@@ -7502,12 +7509,12 @@ msgstr "\"%s\" は保留中の権限の継承があります。ページを表�
 #: concrete/src/Workflow/Request/ChangePagePermissionsInheritanceRequest.php:36
 #, php-format
 msgid "Page Submitted to Change Permission Inheritance to %s."
-msgstr "%s の権限をページが継承するよう申請されました。"
+msgstr "ページ権限の継承設定の %s への変更が申請されました。"
 
 #: concrete/src/Workflow/Request/ChangePagePermissionsInheritanceRequest.php:37
 #, php-format
 msgid "<a href=\"%s\">%s</a> submitted to change permission inheritance to %s."
-msgstr "<a href=\"%s\">%s</a> が %s の権限を継承するよう申請されました。"
+msgstr "<a href=\"%s\">%s</a> の権限の継承設定の %s への変更が申請されました。"
 
 #: concrete/src/Workflow/Request/ChangePagePermissionsInheritanceRequest.php:38
 msgid "Permission Inheritance Changes"
@@ -7617,12 +7624,12 @@ msgstr "\"%s\" は保留中の変更があり、承認が必要です。ペー�
 #: concrete/src/Workflow/Request/ApprovePageRequest.php:37
 #, php-format
 msgid "Version %s of Page <a href=\"%s\">%s</a> submitted for Approval."
-msgstr "ページのバージョン %s の <a href=\"%s\">%s</a> が承認フローに送られました。"
+msgstr "バージョン：%s（ページ：<a href=\"%s\">%s</a>）の承認が申請されました。"
 
 #: concrete/src/Workflow/Request/ApprovePageRequest.php:38
 #, php-format
 msgid "Page Version %s Submitted for Approval."
-msgstr "ページバージョン %s が承認フローに送られました。"
+msgstr "ページバージョン %s の承認が申請されました。"
 
 #: concrete/src/Workflow/Request/ApprovePageRequest.php:39
 msgid "Pending Approval"
@@ -7661,7 +7668,7 @@ msgstr "移動を承認"
 #: concrete/src/Workflow/BasicWorkflow.php:64
 #, php-format
 msgid "On %s, user %s submitted the following request: %s"
-msgstr "%s に %s さんが次のリクエストを申請しました：%s"
+msgstr "%s で %s さんが次のリクエストを申請しました：%s"
 
 #: concrete/config/install/base/permissions.xml:285
 #: concrete/src/Workflow/BasicWorkflow.php:87
@@ -7671,7 +7678,7 @@ msgstr "基本ワークフロー"
 #: concrete/src/Workflow/BasicWorkflow.php:107
 #, php-format
 msgid "%s Submitted by <strong>%s</strong> on %s."
-msgstr "「%s」申請は %s さんが %s に申請しました。"
+msgstr "「%s」申請は %s さんが %s で申請しました。"
 
 #: concrete/src/Workflow/BasicWorkflow.php:133
 #, php-format
@@ -9989,16 +9996,23 @@ msgstr "コントロールを削除しますか？この作業は元に戻せま
 msgid "Update Set"
 msgstr "セットを更新"
 
-#: concrete/elements/page_types/composer/form/output/buttons.php:6
+#: concrete/elements/page_types/composer/form/output/buttons.php:9
+#: concrete/elements/page_types/composer/form/output/buttons.php:11
 msgid "Publish"
 msgstr "公開"
 
-#: concrete/elements/page_types/composer/form/output/buttons.php:15
+#: concrete/elements/conversation/message/add_form.php:24
+#: concrete/elements/page_types/composer/form/output/buttons.php:16
+#: concrete/single_pages/login.php:101
+msgid "Submit"
+msgstr "送信"
+
+#: concrete/elements/page_types/composer/form/output/buttons.php:38
 #: concrete/views/panels/page/check_in.php:65
 msgid "Discard Draft"
 msgstr "下書きを破棄"
 
-#: concrete/elements/page_types/composer/form/output/buttons.php:16
+#: concrete/elements/page_types/composer/form/output/buttons.php:42
 msgid "Save and Exit"
 msgstr "保存して終了"
 
@@ -10147,11 +10161,6 @@ msgstr "メッセージ URL を Facebook で共有する。"
 msgid "Get message URL."
 msgstr "メッセージ URL を取得する。"
 
-#: concrete/elements/conversation/message/add_form.php:24
-#: concrete/single_pages/login.php:101
-msgid "Submit"
-msgstr "送信"
-
 #: concrete/elements/conversation/message/add_form.php:29
 msgid "Un-Subscribe"
 msgstr "購読を解除"
@@ -10220,6 +10229,10 @@ msgstr[0] "%d メッセージ"
 #: concrete/elements/pages/search.php:8
 msgid "Permissions Inheritance"
 msgstr "権限の継承"
+
+#: concrete/elements/group/search.php:6
+msgid "You do not have access to the group search."
+msgstr "グループ検索へのアクセス権限がありません。"
 
 #: concrete/views/image-editor/filters/sepia.php:1
 msgid "Apply a sepia tone"

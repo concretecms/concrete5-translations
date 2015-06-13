@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-06-11 04:00+0000\n"
-"PO-Revision-Date: 2015-06-11 08:44+0000\n"
+"POT-Creation-Date: 2015-06-12 04:00+0000\n"
+"PO-Revision-Date: 2015-06-12 08:42+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Turkish (Turkey) (http://www.transifex.com/projects/p/concrete5/language/tr_TR/)\n"
 "MIME-Version: 1.0\n"
@@ -515,7 +515,7 @@ msgstr "Email adresi doğrulandı! Artık üyelere özel alanlara erişebilirsin
 msgid "facebook"
 msgstr "facebook"
 
-#: concrete/controllers/backend/page.php:52
+#: concrete/controllers/backend/page.php:58
 #: concrete/controllers/backend/user_interface.php:40
 #: concrete/controllers/backend/user_interface/block.php:47
 #: concrete/controllers/backend/user_interface/file.php:38
@@ -1090,6 +1090,7 @@ msgstr "Konu"
 msgid "Add"
 msgstr "Ekle"
 
+#: concrete/controllers/backend/page.php:75
 #: concrete/single_pages/dashboard/sitemap/full.php:80
 #: concrete/tools/sitemap_search_selector.php:5
 msgid "You do not have access to the sitemap."
@@ -1109,7 +1110,7 @@ msgstr "Düz Görünüm"
 #: concrete/blocks/search/controller.php:93
 #: concrete/config/install/packages/elemental_full/content.xml:2337
 #: concrete/elements/files/search.php:33 concrete/elements/files/search.php:85
-#: concrete/elements/group/search.php:27 concrete/elements/pages/search.php:39
+#: concrete/elements/group/search.php:34 concrete/elements/pages/search.php:39
 #: concrete/elements/pages/search.php:55 concrete/elements/users/search.php:49
 #: concrete/elements/users/search.php:86
 #: concrete/single_pages/dashboard/conversations/messages.php:12
@@ -1306,7 +1307,7 @@ msgstr "Bu izin ne kadar süre geçerli kalacak?"
 #: concrete/elements/attribute/type_form_required.php:130
 #: concrete/elements/block_footer_edit.php:18
 #: concrete/elements/custom_style.php:335
-#: concrete/elements/page_types/composer/form/output/buttons.php:11
+#: concrete/elements/page_types/composer/form/output/buttons.php:31
 #: concrete/elements/permission/detail.php:89
 #: concrete/elements/permission/details/block/timed_guest_access.php:39
 #: concrete/elements/permission/lists/area.php:95
@@ -1404,7 +1405,7 @@ msgstr "Sadece seçilen tüm gruplardaki kullanıcılar için bu izin geçerli o
 
 #: concrete/blocks/testimonial/form.php:22
 #: concrete/elements/attribute/type_form_required.php:61
-#: concrete/elements/group/search.php:26
+#: concrete/elements/group/search.php:33
 #: concrete/elements/permission/keys/edit_page_properties.php:29
 #: concrete/elements/permission/keys/edit_page_properties.php:65
 #: concrete/elements/workflow/edit_type_form_required.php:16
@@ -2825,7 +2826,6 @@ msgstr "Bir kullanıcı adı en az %s karakter olmalıdır."
 msgid "A username cannot be more than %s characters long."
 msgstr "Kullanıcı adı %s karakterden uzun olamaz."
 
-#: concrete/controllers/single_page/dashboard/users/add.php:67
 #: concrete/controllers/single_page/dashboard/users/search.php:266
 msgid ""
 "A username may only contain letters, numbers, spaces, dots (not at the "
@@ -2919,6 +2919,14 @@ msgstr "Kullanıcı Özelliği Oluşturuldu."
 #: concrete/controllers/single_page/dashboard/users/attributes.php:124
 msgid "User Attribute Updated."
 msgstr "Kullanıcı Özelliği Güncellendi."
+
+#: concrete/controllers/single_page/dashboard/users/add.php:67
+#: concrete/controllers/single_page/register.php:76
+msgid ""
+"A username may only contain letters, numbers, spaces (not at the "
+"beginning/end), dots (not at the beginning/end), underscores (not at the "
+"beginning/end)."
+msgstr ""
 
 #: concrete/controllers/single_page/dashboard/users/add.php:78
 #: concrete/controllers/single_page/register.php:89
@@ -3577,7 +3585,7 @@ msgstr "Geçersiz bağlandı."
 msgid "Choose a Service"
 msgstr "Bir Servis Seçin"
 
-#: concrete/controllers/single_page/dashboard/system/basics/multilingual.php:26
+#: concrete/controllers/single_page/dashboard/system/basics/multilingual.php:25
 msgid ""
 "Interface settings saved. Please log out and in again to update all backend "
 "messages."
@@ -4014,13 +4022,11 @@ msgstr "Mesaj yazmamışsınız."
 msgid "The email address %s is already in use. Please choose another."
 msgstr "Bu e-posta adresi (%s) kullanımda. Lütfen başka bir tane deneyin."
 
-#: concrete/controllers/single_page/register.php:76
-msgid "A username may only contain letters, numbers and spaces."
-msgstr "Kullanıcı adı yalnızca harf, rakam veya boşluk içerebilir."
-
 #: concrete/controllers/single_page/register.php:78
-msgid "A username may only contain letters or numbers."
-msgstr "Kullanıcı adı yalnızca harf veya rakam içerebilir."
+msgid ""
+"A username may only contain letters, numbers, dots (not at the "
+"beginning/end), underscores (not at the beginning/end)."
+msgstr ""
 
 #: concrete/controllers/single_page/register.php:83
 #, php-format
@@ -4261,6 +4267,11 @@ msgstr[0] "%s dosya başarıyla yeniden tarandı."
 #: concrete/controllers/backend/file.php:91
 msgid "Invalid file version."
 msgstr "Geçersiz dosya sürümü."
+
+#: concrete/controllers/backend/page.php:72
+#: concrete/themes/elemental/page_forbidden.php:11
+msgid "You are not allowed to access this page."
+msgstr "Bu sayfaya erişiminiz sağlanamadı."
 
 #: concrete/controllers/backend/page/arrange_blocks.php:43
 #: concrete/controllers/backend/page/arrange_blocks.php:52
@@ -4641,7 +4652,7 @@ msgstr "Bir sayfayı düzenleyerek başlayalım."
 #: concrete/controllers/frontend/assets_localization.php:108
 #: concrete/controllers/frontend/assets_localization.php:285
 #: concrete/elements/attribute/categories/user.php:26
-#: concrete/elements/page_types/composer/form/output/buttons.php:9
+#: concrete/elements/page_types/composer/form/output/buttons.php:27
 #: concrete/views/dialogs/page/add/compose.php:12
 msgid "Edit Mode"
 msgstr "Düzenleme Modu"
@@ -6208,10 +6219,6 @@ msgstr "<a href=\"http://www.concrete5.org\" class=\"concrete5\">concrete5</a> �
 #: concrete/themes/elemental/page_forbidden.php:10
 msgid "403 Error"
 msgstr "403 Hatası"
-
-#: concrete/themes/elemental/page_forbidden.php:11
-msgid "You are not allowed to access this page."
-msgstr "Bu sayfaya erişiminiz sağlanamadı."
 
 #: concrete/jobs/remove_old_page_versions.php:15
 msgid "Remove Old Page Versions"
@@ -9983,16 +9990,23 @@ msgstr "Bu denetimi silmek istiyor musunuz? Bu işlem geri alınamaz."
 msgid "Update Set"
 msgstr "Grubu Güncelle"
 
-#: concrete/elements/page_types/composer/form/output/buttons.php:6
+#: concrete/elements/page_types/composer/form/output/buttons.php:9
+#: concrete/elements/page_types/composer/form/output/buttons.php:11
 msgid "Publish"
 msgstr "Yayınla"
 
-#: concrete/elements/page_types/composer/form/output/buttons.php:15
+#: concrete/elements/conversation/message/add_form.php:24
+#: concrete/elements/page_types/composer/form/output/buttons.php:16
+#: concrete/single_pages/login.php:101
+msgid "Submit"
+msgstr "Gönder"
+
+#: concrete/elements/page_types/composer/form/output/buttons.php:38
 #: concrete/views/panels/page/check_in.php:65
 msgid "Discard Draft"
 msgstr "Taslağı İptal Et"
 
-#: concrete/elements/page_types/composer/form/output/buttons.php:16
+#: concrete/elements/page_types/composer/form/output/buttons.php:42
 msgid "Save and Exit"
 msgstr "Kaydet ve Çık"
 
@@ -10141,11 +10155,6 @@ msgstr "Mesaj adresini Facebook'ta paylaş."
 msgid "Get message URL."
 msgstr "Mesaj adresini al."
 
-#: concrete/elements/conversation/message/add_form.php:24
-#: concrete/single_pages/login.php:101
-msgid "Submit"
-msgstr "Gönder"
-
 #: concrete/elements/conversation/message/add_form.php:29
 msgid "Un-Subscribe"
 msgstr "Abonelikten Çık"
@@ -10214,6 +10223,10 @@ msgstr[0] "%d Mesaj"
 #: concrete/elements/pages/search.php:8
 msgid "Permissions Inheritance"
 msgstr "İzinlerin Kalıtımı"
+
+#: concrete/elements/group/search.php:6
+msgid "You do not have access to the group search."
+msgstr ""
 
 #: concrete/views/image-editor/filters/sepia.php:1
 msgid "Apply a sepia tone"

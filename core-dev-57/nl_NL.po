@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-06-11 04:00+0000\n"
-"PO-Revision-Date: 2015-06-11 08:43+0000\n"
+"POT-Creation-Date: 2015-06-12 04:00+0000\n"
+"PO-Revision-Date: 2015-06-12 08:42+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Dutch (Netherlands) (http://www.transifex.com/projects/p/concrete5/language/nl_NL/)\n"
 "MIME-Version: 1.0\n"
@@ -524,7 +524,7 @@ msgstr "E-mailadres is gevalideerd! U kunt nu de functionaliteit op deze website
 msgid "facebook"
 msgstr "Facebook"
 
-#: concrete/controllers/backend/page.php:52
+#: concrete/controllers/backend/page.php:58
 #: concrete/controllers/backend/user_interface.php:40
 #: concrete/controllers/backend/user_interface/block.php:47
 #: concrete/controllers/backend/user_interface/file.php:38
@@ -1101,6 +1101,7 @@ msgstr "Onderwerp"
 msgid "Add"
 msgstr "Toevoegen"
 
+#: concrete/controllers/backend/page.php:75
 #: concrete/single_pages/dashboard/sitemap/full.php:80
 #: concrete/tools/sitemap_search_selector.php:5
 msgid "You do not have access to the sitemap."
@@ -1120,7 +1121,7 @@ msgstr "Platte weergave"
 #: concrete/blocks/search/controller.php:93
 #: concrete/config/install/packages/elemental_full/content.xml:2337
 #: concrete/elements/files/search.php:33 concrete/elements/files/search.php:85
-#: concrete/elements/group/search.php:27 concrete/elements/pages/search.php:39
+#: concrete/elements/group/search.php:34 concrete/elements/pages/search.php:39
 #: concrete/elements/pages/search.php:55 concrete/elements/users/search.php:49
 #: concrete/elements/users/search.php:86
 #: concrete/single_pages/dashboard/conversations/messages.php:12
@@ -1319,7 +1320,7 @@ msgstr "Voor hoelang zijn deze machtigingen geldig?"
 #: concrete/elements/attribute/type_form_required.php:130
 #: concrete/elements/block_footer_edit.php:18
 #: concrete/elements/custom_style.php:335
-#: concrete/elements/page_types/composer/form/output/buttons.php:11
+#: concrete/elements/page_types/composer/form/output/buttons.php:31
 #: concrete/elements/permission/detail.php:89
 #: concrete/elements/permission/details/block/timed_guest_access.php:39
 #: concrete/elements/permission/lists/area.php:95
@@ -1417,7 +1418,7 @@ msgstr "Alleen gebruikers die lid zijn van ALLE geselecteerde groepen komen in a
 
 #: concrete/blocks/testimonial/form.php:22
 #: concrete/elements/attribute/type_form_required.php:61
-#: concrete/elements/group/search.php:26
+#: concrete/elements/group/search.php:33
 #: concrete/elements/permission/keys/edit_page_properties.php:29
 #: concrete/elements/permission/keys/edit_page_properties.php:65
 #: concrete/elements/workflow/edit_type_form_required.php:16
@@ -2839,7 +2840,6 @@ msgstr "Een gebruikersnaam moet minimaal %s karakters lang zijn."
 msgid "A username cannot be more than %s characters long."
 msgstr "Een gebruikersnaam mag niet langer dan %s karakters zijn."
 
-#: concrete/controllers/single_page/dashboard/users/add.php:67
 #: concrete/controllers/single_page/dashboard/users/search.php:266
 msgid ""
 "A username may only contain letters, numbers, spaces, dots (not at the "
@@ -2933,6 +2933,14 @@ msgstr "Gebruikers Attribuut is aangemaakt."
 #: concrete/controllers/single_page/dashboard/users/attributes.php:124
 msgid "User Attribute Updated."
 msgstr "Gebruikers Attribuut is bijgewerkt."
+
+#: concrete/controllers/single_page/dashboard/users/add.php:67
+#: concrete/controllers/single_page/register.php:76
+msgid ""
+"A username may only contain letters, numbers, spaces (not at the "
+"beginning/end), dots (not at the beginning/end), underscores (not at the "
+"beginning/end)."
+msgstr ""
 
 #: concrete/controllers/single_page/dashboard/users/add.php:78
 #: concrete/controllers/single_page/register.php:89
@@ -3591,7 +3599,7 @@ msgstr "Ongeldige link."
 msgid "Choose a Service"
 msgstr "Kies een Service"
 
-#: concrete/controllers/single_page/dashboard/system/basics/multilingual.php:26
+#: concrete/controllers/single_page/dashboard/system/basics/multilingual.php:25
 msgid ""
 "Interface settings saved. Please log out and in again to update all backend "
 "messages."
@@ -4029,13 +4037,11 @@ msgstr "U hebt nog geen bericht geschreven!"
 msgid "The email address %s is already in use. Please choose another."
 msgstr "Het e-mail adres %s is in gebruik. Probeer iets anders."
 
-#: concrete/controllers/single_page/register.php:76
-msgid "A username may only contain letters, numbers and spaces."
-msgstr "Een gebruikersnaam mag alleen letters, cijfers en spaties bevatten."
-
 #: concrete/controllers/single_page/register.php:78
-msgid "A username may only contain letters or numbers."
-msgstr "Een gebruikersnaam mag alleen letters en nummers bevatten."
+msgid ""
+"A username may only contain letters, numbers, dots (not at the "
+"beginning/end), underscores (not at the beginning/end)."
+msgstr ""
 
 #: concrete/controllers/single_page/register.php:83
 #, php-format
@@ -4277,6 +4283,11 @@ msgstr[1] "%s bestanden zijn opnieuw ingescand."
 #: concrete/controllers/backend/file.php:91
 msgid "Invalid file version."
 msgstr "Ongeldige bestandsversie."
+
+#: concrete/controllers/backend/page.php:72
+#: concrete/themes/elemental/page_forbidden.php:11
+msgid "You are not allowed to access this page."
+msgstr "U bent niet toegestaan om deze pagina te openen."
 
 #: concrete/controllers/backend/page/arrange_blocks.php:43
 #: concrete/controllers/backend/page/arrange_blocks.php:52
@@ -4657,7 +4668,7 @@ msgstr "Laten we beginnen met het bewerken van een pagina."
 #: concrete/controllers/frontend/assets_localization.php:108
 #: concrete/controllers/frontend/assets_localization.php:285
 #: concrete/elements/attribute/categories/user.php:26
-#: concrete/elements/page_types/composer/form/output/buttons.php:9
+#: concrete/elements/page_types/composer/form/output/buttons.php:27
 #: concrete/views/dialogs/page/add/compose.php:12
 msgid "Edit Mode"
 msgstr "Bewerkmodus"
@@ -6225,10 +6236,6 @@ msgstr "Gebouwd met <a href =\"http://www.concrete5.org\" class =\"concrete5\">c
 #: concrete/themes/elemental/page_forbidden.php:10
 msgid "403 Error"
 msgstr "403 fout"
-
-#: concrete/themes/elemental/page_forbidden.php:11
-msgid "You are not allowed to access this page."
-msgstr "U bent niet toegestaan om deze pagina te openen."
 
 #: concrete/jobs/remove_old_page_versions.php:15
 msgid "Remove Old Page Versions"
@@ -10013,16 +10020,23 @@ msgstr "Dit besturingselement verwijderen? Dit kan niet ongedaan worden gemaakt.
 msgid "Update Set"
 msgstr "Verzameling bijwerken"
 
-#: concrete/elements/page_types/composer/form/output/buttons.php:6
+#: concrete/elements/page_types/composer/form/output/buttons.php:9
+#: concrete/elements/page_types/composer/form/output/buttons.php:11
 msgid "Publish"
 msgstr "Publiceren"
 
-#: concrete/elements/page_types/composer/form/output/buttons.php:15
+#: concrete/elements/conversation/message/add_form.php:24
+#: concrete/elements/page_types/composer/form/output/buttons.php:16
+#: concrete/single_pages/login.php:101
+msgid "Submit"
+msgstr "Versturen"
+
+#: concrete/elements/page_types/composer/form/output/buttons.php:38
 #: concrete/views/panels/page/check_in.php:65
 msgid "Discard Draft"
 msgstr "Pagina-ontwerp verwijderen"
 
-#: concrete/elements/page_types/composer/form/output/buttons.php:16
+#: concrete/elements/page_types/composer/form/output/buttons.php:42
 msgid "Save and Exit"
 msgstr "Opslaan en afsluiten"
 
@@ -10171,11 +10185,6 @@ msgstr "Deel bericht URL op Facebook."
 msgid "Get message URL."
 msgstr "Haal bericht URL"
 
-#: concrete/elements/conversation/message/add_form.php:24
-#: concrete/single_pages/login.php:101
-msgid "Submit"
-msgstr "Versturen"
-
 #: concrete/elements/conversation/message/add_form.php:29
 msgid "Un-Subscribe"
 msgstr ""
@@ -10245,6 +10254,10 @@ msgstr[1] "%d Berichten"
 #: concrete/elements/pages/search.php:8
 msgid "Permissions Inheritance"
 msgstr "Overname van machtigingen"
+
+#: concrete/elements/group/search.php:6
+msgid "You do not have access to the group search."
+msgstr ""
 
 #: concrete/views/image-editor/filters/sepia.php:1
 msgid "Apply a sepia tone"
