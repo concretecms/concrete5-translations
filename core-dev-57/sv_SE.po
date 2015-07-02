@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-06-27 04:00+0000\n"
-"PO-Revision-Date: 2015-06-27 19:31+0000\n"
+"POT-Creation-Date: 2015-07-01 04:00+0000\n"
+"PO-Revision-Date: 2015-06-30 12:35+0000\n"
 "Last-Translator: Fredrik Lindau <fredrik@fxlindau.se>\n"
 "Language-Team: Swedish (Sweden) (http://www.transifex.com/projects/p/concrete5/language/sv_SE/)\n"
 "MIME-Version: 1.0\n"
@@ -139,7 +139,6 @@ msgstr "Grupp att gå med vid registrering"
 #: concrete/authentication/google/type_form.php:29
 #: concrete/authentication/twitter/type_form.php:35
 #: concrete/blocks/autonav/form_setup_html.php:92
-#: concrete/blocks/core_area_layout/form.php:52
 #: concrete/blocks/dashboard_site_activity/view.php:5
 #: concrete/blocks/feature/form.php:34
 #: concrete/blocks/form/form_setup_html.php:94
@@ -678,7 +677,7 @@ msgid "Remove files from incoming/ directory."
 msgstr "Ta bort filer från katalogen incoming/"
 
 #: concrete/attributes/select/type_form.php:34
-#: concrete/blocks/core_area_layout/form.php:182
+#: concrete/blocks/core_area_layout/form.php:69
 #: concrete/blocks/core_gathering/tools/edit.php:49
 #: concrete/blocks/core_gathering/view.php:14
 #: concrete/blocks/discussion/view.php:25
@@ -4400,7 +4399,7 @@ msgstr "Design"
 msgid "Edit Layout"
 msgstr "Redigera layout"
 
-#: concrete/blocks/core_area_layout/form.php:185
+#: concrete/blocks/core_area_layout/form.php:72
 #: concrete/controllers/frontend/assets_localization.php:37
 #: concrete/elements/block_area_footer.php:57
 msgid "Add Layout"
@@ -4682,7 +4681,6 @@ msgstr "Redigeringsläge"
 msgid "Current Image"
 msgstr "Nuvarande bild"
 
-#: concrete/blocks/core_area_layout/form.php:118
 #: concrete/blocks/image/controller.php:37 concrete/blocks/image/form.php:32
 #: concrete/blocks/image_slider/form_setup_html.php:231
 #: concrete/controllers/frontend/assets_localization.php:111
@@ -5356,7 +5354,7 @@ msgid ""
 msgstr "Allt som inte är specifikt för denna sida händer här. Hantera användare, filer, rapportdata och webbplatsövergripande inställningar."
 
 #: concrete/blocks/html/controller.php:28 concrete/blocks/image/form.php:44
-#: concrete/config/app.php:446
+#: concrete/config/app.php:445
 #: concrete/controllers/frontend/assets_localization.php:337
 msgid "HTML"
 msgstr "HTML"
@@ -5529,7 +5527,6 @@ msgstr "Titel"
 msgid "Position"
 msgstr "Position"
 
-#: concrete/blocks/core_area_layout/form.php:157
 #: concrete/controllers/frontend/assets_localization.php:381
 #: concrete/elements/custom_style.php:86
 #: concrete/elements/custom_style.php:221
@@ -5537,7 +5534,6 @@ msgstr "Position"
 msgid "Left"
 msgstr "Vänster"
 
-#: concrete/blocks/core_area_layout/form.php:143
 #: concrete/controllers/frontend/assets_localization.php:382
 #: concrete/elements/custom_style.php:88
 #: concrete/elements/custom_style.php:207
@@ -7176,7 +7172,7 @@ msgctxt "Log channel"
 msgid "Exceptions"
 msgstr "Undantag"
 
-#: concrete/blocks/core_area_layout/controller.php:196
+#: concrete/blocks/core_area_layout/controller.php:192
 #: concrete/src/Backup/ContentImporter.php:317
 #, php-format
 msgid "Invalid block type handle: %s"
@@ -9236,11 +9232,15 @@ msgstr "Behörigheter för områden"
 msgid "Edit Container Layout"
 msgstr "Redigera layouten för containern"
 
-#: concrete/elements/block_area_footer.php:84
+#: concrete/elements/block_area_footer.php:81
+msgid "Edit Layout Design"
+msgstr "Redigera layoutdesign"
+
+#: concrete/elements/block_area_footer.php:85
 msgid "Save Layout as Preset"
 msgstr "Spara layout som förinställning"
 
-#: concrete/elements/block_area_footer.php:85
+#: concrete/elements/block_area_footer.php:86
 msgid "Manage Presets"
 msgstr "Hantera förval"
 
@@ -9271,22 +9271,18 @@ msgstr "Visa som användare"
 msgid "Delete Page"
 msgstr "Ta bort sida"
 
-#: concrete/blocks/core_area_layout/form.php:46
 #: concrete/elements/custom_style.php:67
 msgid "No Repeat"
 msgstr "Ingen repetering"
 
-#: concrete/blocks/core_area_layout/form.php:47
 #: concrete/elements/custom_style.php:68
 msgid "Horizontally"
 msgstr "Horisontellt"
 
-#: concrete/blocks/core_area_layout/form.php:48
 #: concrete/elements/custom_style.php:69
 msgid "Vertically"
 msgstr "Vertikalt"
 
-#: concrete/blocks/core_area_layout/form.php:49
 #: concrete/elements/custom_style.php:70
 msgid "Horizontally & Vertically"
 msgstr "Horisontellt & vertikalt"
@@ -9339,24 +9335,20 @@ msgstr "Länkfärg"
 msgid "Base Font Size"
 msgstr "Bas för fontstorlek"
 
-#: concrete/blocks/core_area_layout/form.php:105
 #: concrete/elements/custom_style.php:145
 msgid "Background Color and Image"
 msgstr "Bakgrundsfärg och bild"
 
-#: concrete/blocks/core_area_layout/form.php:111
 #: concrete/elements/custom_style.php:148
 msgid "Background"
 msgstr "Bakgrund"
 
-#: concrete/blocks/core_area_layout/form.php:113
 #: concrete/elements/custom_style.php:150
 #: concrete/elements/custom_style.php:169
 #: concrete/elements/custom_style.php:306
 msgid "Color"
 msgstr "Färg"
 
-#: concrete/blocks/core_area_layout/form.php:119
 #: concrete/blocks/image/composer.php:21 concrete/blocks/image/form.php:33
 #: concrete/elements/custom_style.php:156
 #: concrete/single_pages/dashboard/pages/feeds.php:101
@@ -9364,7 +9356,6 @@ msgstr "Färg"
 msgid "Choose Image"
 msgstr "Välj bild"
 
-#: concrete/blocks/core_area_layout/form.php:122
 #: concrete/elements/custom_style.php:159
 #: concrete/elements/permission/duration.php:115
 msgid "Repeats"
@@ -9391,19 +9382,16 @@ msgstr "Radie"
 msgid "Margin and Padding"
 msgstr "Marginal och spaltutfyllnad"
 
-#: concrete/blocks/core_area_layout/form.php:134
 #: concrete/elements/custom_style.php:198
 msgid "Padding"
 msgstr "Utfyllnad"
 
-#: concrete/blocks/core_area_layout/form.php:136
 #: concrete/blocks/core_conversation/form.php:124
 #: concrete/elements/custom_style.php:200
 #: concrete/elements/custom_style.php:233
 msgid "Top"
 msgstr "Topp"
 
-#: concrete/blocks/core_area_layout/form.php:150
 #: concrete/blocks/core_conversation/form.php:130
 #: concrete/elements/custom_style.php:214
 #: concrete/elements/custom_style.php:247
@@ -9460,7 +9448,6 @@ msgstr "Dölj detta innehåll på en speciell typ av enheter. Bocka av en enhet 
 msgid "Custom CSS Classes, Block Name, Custom Templates and Reset Styles"
 msgstr "Egna CSS-klasser, blocknamn, egna mallar och återställ stilar"
 
-#: concrete/blocks/core_area_layout/form.php:128
 #: concrete/elements/custom_style.php:356
 msgid "Custom Class"
 msgstr "Egen klass"
@@ -11722,153 +11709,153 @@ msgstr "Tom webbplats"
 msgid "Creates an empty site using the unstyled Elemental theme."
 msgstr "Skapar en tom webbplats och använder det ostylade Elemental-temat."
 
-#: concrete/config/app.php:441
+#: concrete/config/app.php:440
 msgid "JPEG"
 msgstr "JPEG"
 
-#: concrete/config/app.php:442
+#: concrete/config/app.php:441
 msgid "GIF"
 msgstr "GIF"
 
-#: concrete/config/app.php:443
+#: concrete/config/app.php:442
 msgid "PNG"
 msgstr "PNG"
 
-#: concrete/config/app.php:444
+#: concrete/config/app.php:443
 msgid "Windows Bitmap"
 msgstr "Windows-bitmap"
 
-#: concrete/config/app.php:445
+#: concrete/config/app.php:444
 msgid "TIFF"
 msgstr "TIFF"
 
-#: concrete/config/app.php:447
+#: concrete/config/app.php:446
 msgid "Flash"
 msgstr "Flash"
 
-#: concrete/blocks/feature/form.php:4 concrete/config/app.php:448
+#: concrete/blocks/feature/form.php:4 concrete/config/app.php:447
 #: concrete/single_pages/dashboard/pages/templates/add.php:27
 #: concrete/single_pages/dashboard/pages/templates/view.php:39
 msgid "Icon"
 msgstr "Ikon"
 
-#: concrete/config/app.php:449
+#: concrete/config/app.php:448
 msgid "SVG"
 msgstr "SVG"
 
-#: concrete/config/app.php:450
+#: concrete/config/app.php:449
 msgid "Windows Video"
 msgstr "Windows Video"
 
-#: concrete/config/app.php:451
+#: concrete/config/app.php:450
 msgid "Quicktime"
 msgstr "Quicktime"
 
-#: concrete/config/app.php:452
+#: concrete/config/app.php:451
 msgid "AVI"
 msgstr "AVI"
 
-#: concrete/config/app.php:453
+#: concrete/config/app.php:452
 msgid "3GP"
 msgstr "3GP"
 
-#: concrete/attributes/textarea/type_form.php:8 concrete/config/app.php:454
+#: concrete/attributes/textarea/type_form.php:8 concrete/config/app.php:453
 msgid "Plain Text"
 msgstr "Oformaterad text"
 
-#: concrete/config/app.php:455
+#: concrete/config/app.php:454
 msgid "CSV"
 msgstr "CSV"
 
-#: concrete/config/app.php:456
+#: concrete/config/app.php:455
 msgid "XML"
 msgstr "XML"
 
-#: concrete/config/app.php:457
+#: concrete/config/app.php:456
 msgid "PHP"
 msgstr "PHP"
 
-#: concrete/config/app.php:458
+#: concrete/config/app.php:457
 msgid "MS Word"
 msgstr "MS Word"
 
-#: concrete/config/app.php:459
+#: concrete/config/app.php:458
 msgid "Stylesheet"
 msgstr "stilmall"
 
-#: concrete/config/app.php:460
+#: concrete/config/app.php:459
 msgid "MP4"
 msgstr "MP4"
 
-#: concrete/config/app.php:461
+#: concrete/config/app.php:460
 msgid "FLV"
 msgstr "FLV"
 
-#: concrete/config/app.php:462
+#: concrete/config/app.php:461
 msgid "MP3"
 msgstr "MP3"
 
-#: concrete/config/app.php:463
+#: concrete/config/app.php:462
 msgid "MP4 Audio"
 msgstr "MP4 Ljud"
 
-#: concrete/config/app.php:464
+#: concrete/config/app.php:463
 msgid "Realaudio"
 msgstr "Realaudio"
 
-#: concrete/config/app.php:465
+#: concrete/config/app.php:464
 msgid "Windows Audio"
 msgstr "Windows Audio"
 
-#: concrete/config/app.php:466
+#: concrete/config/app.php:465
 msgid "Rich Text"
 msgstr "formaterad text (RTF)"
 
-#: concrete/config/app.php:467
+#: concrete/config/app.php:466
 msgid "JavaScript"
 msgstr "JavaScript"
 
-#: concrete/config/app.php:468
+#: concrete/config/app.php:467
 msgid "PDF"
 msgstr "PDF"
 
-#: concrete/config/app.php:469
+#: concrete/config/app.php:468
 msgid "Photoshop"
 msgstr "Photoshop"
 
-#: concrete/config/app.php:470
+#: concrete/config/app.php:469
 msgid "MPEG"
 msgstr "MPEG"
 
-#: concrete/config/app.php:471
+#: concrete/config/app.php:470
 msgid "MS Excel"
 msgstr "MS Excel"
 
-#: concrete/config/app.php:472
+#: concrete/config/app.php:471
 msgid "MS Powerpoint"
 msgstr "MS Powerpoint"
 
-#: concrete/config/app.php:473
+#: concrete/config/app.php:472
 msgid "TAR Archive"
 msgstr "TAR-arkiv"
 
-#: concrete/config/app.php:474
+#: concrete/config/app.php:473
 msgid "Zip Archive"
 msgstr "Zip-arkiv"
 
-#: concrete/config/app.php:475
+#: concrete/config/app.php:474
 msgid "GZip Archive"
 msgstr "GZip-fil"
 
-#: concrete/config/app.php:476
+#: concrete/config/app.php:475
 msgid "OGG"
 msgstr "OGG"
 
-#: concrete/config/app.php:477
+#: concrete/config/app.php:476
 msgid "OGG Video"
 msgstr "OGG Video"
 
-#: concrete/config/app.php:478
+#: concrete/config/app.php:477
 msgid "WebM"
 msgstr "WebM"
 
@@ -12103,37 +12090,37 @@ msgstr "Output"
 msgid "Posting"
 msgstr "Postar meddelande"
 
-#: concrete/blocks/core_area_layout/form.php:65
+#: concrete/blocks/core_area_layout/form.php:15
 msgid "Grid:"
 msgstr "Rutnät:"
 
-#: concrete/blocks/core_area_layout/form.php:67
+#: concrete/blocks/core_area_layout/form.php:17
 msgid "Grids"
 msgstr "Rutnät:"
 
-#: concrete/blocks/core_area_layout/form.php:71
+#: concrete/blocks/core_area_layout/form.php:21
 msgid "Free-Form Layout"
 msgstr "Friformslayout"
 
-#: concrete/blocks/core_area_layout/form.php:74
+#: concrete/blocks/core_area_layout/form.php:24
 msgid "Presets"
 msgstr "Förinställningar"
 
-#: concrete/blocks/core_area_layout/form.php:83
-#: concrete/blocks/core_area_layout/form.php:91
+#: concrete/blocks/core_area_layout/form.php:33
+#: concrete/blocks/core_area_layout/form.php:41
 msgid "Columns:"
 msgstr "Kolumner:"
 
-#: concrete/blocks/core_area_layout/form.php:99
+#: concrete/blocks/core_area_layout/form.php:49
 msgid "Spacing:"
 msgstr "Mellanrum:"
 
-#: concrete/blocks/core_area_layout/form.php:175
+#: concrete/blocks/core_area_layout/form.php:62
 msgid ""
 "Do you want to delete this layout? This will remove all blocks inside it."
 msgstr "Vill du ta bort denna layout? Detta kommer att radera samtliga block i layouten."
 
-#: concrete/blocks/core_area_layout/form.php:185
+#: concrete/blocks/core_area_layout/form.php:72
 msgid "Update Layout"
 msgstr "Uppdatera layout"
 
@@ -20688,6 +20675,11 @@ msgstr "Sida"
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
 msgid "Body"
 msgstr "Innehåll"
+
+#: concrete/blocks/core_area_layout/templates/parallax
+msgctxt "TemplateFileName"
+msgid "Parallax"
+msgstr "Parallax"
 
 #: concrete/blocks/page_attribute_display/templates/boolean.php
 msgctxt "TemplateFileName"
