@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-07-08 04:00+0000\n"
-"PO-Revision-Date: 2015-07-08 08:48+0000\n"
+"POT-Creation-Date: 2015-07-11 04:00+0000\n"
+"PO-Revision-Date: 2015-07-11 08:47+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Estonian (Estonia) (http://www.transifex.com/p/concrete5/language/et_EE/)\n"
 "MIME-Version: 1.0\n"
@@ -452,7 +452,7 @@ msgid ""
 msgstr ""
 
 #: concrete/authentication/concrete/controller.php:201
-#: concrete/controllers/install.php:313
+#: concrete/controllers/install.php:311
 #: concrete/controllers/single_page/account/edit_profile.php:108
 #: concrete/controllers/single_page/dashboard/users/search.php:380
 #: concrete/controllers/single_page/register.php:106
@@ -810,7 +810,7 @@ msgstr ""
 #: concrete/elements/panels/page.php:111
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:67
 #: concrete/single_pages/dashboard/pages/types/view.php:50
-#: concrete/src/Package/Package.php:140
+#: concrete/src/Package/Package.php:141
 #: concrete/tools/files/permissions.php:51
 msgid "Permissions"
 msgstr "Permisos"
@@ -1105,7 +1105,7 @@ msgstr ""
 msgid "Flat View"
 msgstr ""
 
-#: concrete/blocks/search/controller.php:93
+#: concrete/blocks/search/controller.php:95
 #: concrete/config/install/packages/elemental_full/content.xml:2337
 #: concrete/elements/files/search.php:33 concrete/elements/files/search.php:85
 #: concrete/elements/group/search.php:34 concrete/elements/pages/search.php:39
@@ -1322,7 +1322,7 @@ msgstr ""
 #: concrete/single_pages/dashboard/pages/types/permissions.php:29
 #: concrete/single_pages/dashboard/pages/types/view.php:12
 #: concrete/single_pages/dashboard/system/attributes/types.php:34
-#: concrete/single_pages/dashboard/system/basics/accessibility.php:17
+#: concrete/single_pages/dashboard/system/basics/accessibility.php:23
 #: concrete/single_pages/dashboard/system/basics/editor.php:29
 #: concrete/single_pages/dashboard/system/basics/icons.php:17
 #: concrete/single_pages/dashboard/system/basics/icons.php:39
@@ -2441,7 +2441,7 @@ msgstr "Lisad"
 msgid "The package has been updated successfully."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/extend/install.php:172
+#: concrete/controllers/single_page/dashboard/extend/install.php:184
 #: concrete/controllers/single_page/dashboard/extend/update.php:69
 msgid "Invalid marketplace item ID."
 msgstr ""
@@ -2454,28 +2454,34 @@ msgstr ""
 msgid "Invalid package."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/extend/install.php:98
+#: concrete/controllers/single_page/dashboard/extend/install.php:85
+msgid ""
+"This package contains the active site theme, please change the theme before "
+"uninstalling."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/extend/install.php:110
 msgid "The package has been uninstalled."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/extend/install.php:152
+#: concrete/controllers/single_page/dashboard/extend/install.php:164
 msgid "Package controller file not found."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/extend/install.php:155
+#: concrete/controllers/single_page/dashboard/extend/install.php:167
 msgid "You do not have permission to install add-ons."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/extend/install.php:161
+#: concrete/controllers/single_page/dashboard/extend/install.php:173
 msgid "The package has been installed."
 msgstr "El paquete ha sido instalado."
 
-#: concrete/controllers/single_page/dashboard/extend/install.php:187
+#: concrete/controllers/single_page/dashboard/extend/install.php:199
 #, php-format
 msgid "Marketplace item %s downloaded successfully."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/extend/install.php:190
+#: concrete/controllers/single_page/dashboard/extend/install.php:202
 msgid "You do not have permission to download add-ons."
 msgstr ""
 
@@ -3514,7 +3520,7 @@ msgstr "Los perfiles públicos han sido habilitados."
 msgid "Public profiles have been disabled"
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/system/basics/accessibility.php:19
+#: concrete/controllers/single_page/dashboard/system/basics/accessibility.php:20
 msgid "Successfully saved accessibility settings."
 msgstr ""
 
@@ -4460,7 +4466,7 @@ msgstr ""
 msgid "The block has been added to your clipboard."
 msgstr ""
 
-#: concrete/blocks/content/controller.php:34
+#: concrete/blocks/content/controller.php:38
 #: concrete/controllers/frontend/assets_localization.php:52
 msgid "Content"
 msgstr "Sisu"
@@ -5356,7 +5362,7 @@ msgid ""
 msgstr ""
 
 #: concrete/blocks/html/controller.php:28 concrete/blocks/image/form.php:44
-#: concrete/config/app.php:448
+#: concrete/config/app.php:450
 #: concrete/controllers/frontend/assets_localization.php:337
 msgid "HTML"
 msgstr "HTML"
@@ -5967,11 +5973,11 @@ msgid ""
 "you may do so from the users area of the dashboard."
 msgstr ""
 
-#: concrete/controllers/install.php:105
+#: concrete/controllers/install.php:104
 msgid "Unable to connect to database."
 msgstr "No se puede conectar a la base de datos"
 
-#: concrete/controllers/install.php:111
+#: concrete/controllers/install.php:110
 #: concrete/src/Package/StartingPointPackage.php:257
 #, php-format
 msgid ""
@@ -5979,7 +5985,7 @@ msgid ""
 " an empty database."
 msgstr ""
 
-#: concrete/controllers/install.php:117
+#: concrete/controllers/install.php:116
 msgid ""
 "Your MySQL database does not support InnoDB database tables. These are "
 "required."
@@ -5989,59 +5995,59 @@ msgstr ""
 msgid "The PDO extension is not loaded."
 msgstr ""
 
-#: concrete/controllers/install.php:154
+#: concrete/controllers/install.php:152
 msgid "concrete5 is already installed."
 msgstr "concrete5 on juba paigaldatud."
 
-#: concrete/controllers/install.php:209
+#: concrete/controllers/install.php:207
 msgid ""
 "Your configuration directory config/ does not appear to be writable by the "
 "web server."
 msgstr ""
 
-#: concrete/controllers/install.php:213
+#: concrete/controllers/install.php:211
 msgid ""
 "Your files directory files/ does not appear to be writable by the web "
 "server."
 msgstr ""
 
-#: concrete/controllers/install.php:217
+#: concrete/controllers/install.php:215
 msgid ""
 "Your packages directory packages/ does not appear to be writable by the web "
 "server."
 msgstr ""
 
-#: concrete/controllers/install.php:268
+#: concrete/controllers/install.php:266
 #, php-format
 msgctxt "InstallError"
 msgid "%s.<br><br>Trace:<br>%s"
 msgstr ""
 
-#: concrete/controllers/install.php:300
+#: concrete/controllers/install.php:298
 msgid "Please specify your site's name"
 msgstr "Por favor especifica un nombre para tu sitio."
 
-#: concrete/controllers/install.php:301
+#: concrete/controllers/install.php:299
 msgid "Please specify a valid email address"
 msgstr "Por favor especifica una dirección de email válida."
 
-#: concrete/controllers/install.php:302
+#: concrete/controllers/install.php:300
 msgid "You must specify a valid database name"
 msgstr "Por favor especifica un nombre de base de datos válido."
 
-#: concrete/controllers/install.php:303
+#: concrete/controllers/install.php:301
 msgid "You must specify a valid database server"
 msgstr "Por favor especifica  un servidor de base de datos válido."
 
-#: concrete/controllers/install.php:353
+#: concrete/controllers/install.php:350
 msgid "Unable to open config/app.php for writing."
 msgstr ""
 
-#: concrete/controllers/install.php:374
+#: concrete/controllers/install.php:371
 msgid "Unable to open config/site_user.php for writing."
 msgstr ""
 
-#: concrete/controllers/install.php:400
+#: concrete/controllers/install.php:395
 msgid "You must select a valid sample content starting point."
 msgstr ""
 
@@ -6358,7 +6364,7 @@ msgstr ""
 msgid "Won the <strong>%s</strong> Badge"
 msgstr ""
 
-#: concrete/src/User/Point/Action/Action.php:276
+#: concrete/src/User/Point/Action/Action.php:282
 #, php-format
 msgid "Error saving user point record: %s"
 msgstr ""
@@ -6790,7 +6796,7 @@ msgstr ""
 msgid "All Groups"
 msgstr "Kõik grupid"
 
-#: concrete/src/Tree/Type/Group.php:24
+#: concrete/src/Tree/Type/Group.php:26
 msgctxt "TreeName"
 msgid "Groups Tree"
 msgstr ""
@@ -7004,12 +7010,12 @@ msgctxt "PageTypeComposerControlName"
 msgid "Page Location"
 msgstr ""
 
-#: concrete/src/Page/Type/Composer/Control/CorePageProperty/NameCorePageProperty.php:14
+#: concrete/src/Page/Type/Composer/Control/CorePageProperty/NameCorePageProperty.php:15
 msgctxt "PageTypeComposerControlName"
 msgid "Page Name"
 msgstr "Lehe nimi"
 
-#: concrete/src/Page/Type/Composer/Control/CorePageProperty/NameCorePageProperty.php:45
+#: concrete/src/Page/Type/Composer/Control/CorePageProperty/NameCorePageProperty.php:46
 msgid "You haven't chosen a page name."
 msgstr ""
 
@@ -7045,12 +7051,12 @@ msgstr "Usuario"
 msgid "You must specify a valid user."
 msgstr ""
 
-#: concrete/src/Page/Type/Composer/Control/CorePageProperty/DescriptionCorePageProperty.php:12
+#: concrete/src/Page/Type/Composer/Control/CorePageProperty/DescriptionCorePageProperty.php:13
 msgctxt "PageTypeComposerControlName"
 msgid "Description"
 msgstr "Descripción"
 
-#: concrete/src/Page/Type/Composer/Control/CorePageProperty/DescriptionCorePageProperty.php:26
+#: concrete/src/Page/Type/Composer/Control/CorePageProperty/DescriptionCorePageProperty.php:27
 msgid "You must specify a page description."
 msgstr ""
 
@@ -7224,59 +7230,59 @@ msgid ""
 "5.7."
 msgstr ""
 
-#: concrete/src/Package/Package.php:110
+#: concrete/src/Package/Package.php:111
 msgid "Attribute categories"
 msgstr ""
 
-#: concrete/src/Package/Package.php:113
+#: concrete/src/Package/Package.php:114
 msgid "Permission categories"
 msgstr ""
 
-#: concrete/src/Package/Package.php:116
+#: concrete/src/Package/Package.php:117
 msgid "Permission access entity types"
 msgstr ""
 
-#: concrete/src/Package/Package.php:119
+#: concrete/src/Package/Package.php:120
 msgid "Attribute keys"
 msgstr ""
 
-#: concrete/src/Package/Package.php:122
+#: concrete/src/Package/Package.php:123
 msgid "Attribute sets"
 msgstr ""
 
-#: concrete/src/Package/Package.php:125
+#: concrete/src/Package/Package.php:126
 msgid "Group sets"
 msgstr ""
 
-#: concrete/src/Package/Package.php:128
+#: concrete/src/Package/Package.php:129
 msgid "Page types"
 msgstr ""
 
-#: concrete/src/Package/Package.php:131
+#: concrete/src/Package/Package.php:132
 msgid "Mail importers"
 msgstr ""
 
-#: concrete/src/Package/Package.php:134
+#: concrete/src/Package/Package.php:135
 msgid "Block types"
 msgstr ""
 
-#: concrete/src/Package/Package.php:137
+#: concrete/src/Package/Package.php:138
 msgid "Page themes"
 msgstr ""
 
-#: concrete/src/Package/Package.php:143
+#: concrete/src/Package/Package.php:144
 msgid "Single pages"
 msgstr ""
 
-#: concrete/src/Package/Package.php:146
+#: concrete/src/Package/Package.php:147
 msgid "Attribute types"
 msgstr ""
 
-#: concrete/src/Package/Package.php:149
+#: concrete/src/Package/Package.php:150
 msgid "Captcha libraries"
 msgstr ""
 
-#: concrete/src/Package/Package.php:152
+#: concrete/src/Package/Package.php:153
 msgid "Antispam libraries"
 msgstr ""
 
@@ -7284,70 +7290,70 @@ msgstr ""
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:299
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:418
 #: concrete/src/Console/Command/JobCommand.php:48
-#: concrete/src/Package/Package.php:155
+#: concrete/src/Package/Package.php:156
 msgid "Jobs"
 msgstr ""
 
-#: concrete/src/Package/Package.php:158
+#: concrete/src/Package/Package.php:159
 msgid "Workflow types"
 msgstr ""
 
-#: concrete/src/Package/Package.php:161
+#: concrete/src/Package/Package.php:162
 msgid "Workflow progress categories"
 msgstr ""
 
 #: concrete/single_pages/dashboard/system/files/storage.php:99
-#: concrete/src/Package/Package.php:164
+#: concrete/src/Package/Package.php:165
 msgid "Storage Locations"
 msgstr ""
 
 #: concrete/single_pages/dashboard/system/multilingual/page_report.php:88
 #: concrete/single_pages/dashboard/system/multilingual/page_report.php:96
-#: concrete/src/Package/Package.php:229
+#: concrete/src/Package/Package.php:230
 #, php-format
 msgid "%s (%s)"
 msgstr "%s (%s)"
 
-#: concrete/src/Package/Package.php:238
+#: concrete/src/Package/Package.php:239
 #, php-format
 msgid " %s (%s)"
 msgstr " %s (%s)"
 
-#: concrete/src/Package/Package.php:895
+#: concrete/src/Package/Package.php:918
 msgid "You've already installed that package."
 msgstr "Ese paquete ya ha sido instalado."
 
-#: concrete/src/Package/Package.php:896
+#: concrete/src/Package/Package.php:919
 msgid "Invalid Package."
 msgstr "Vigane pakk."
 
-#: concrete/src/Package/Package.php:897
+#: concrete/src/Package/Package.php:920
 #, php-format
 msgid "This package requires concrete5 version %s or greater."
 msgstr ""
 
-#: concrete/src/Package/Package.php:898
+#: concrete/src/Package/Package.php:921
 msgid "An error occurred while downloading the package."
 msgstr ""
 
-#: concrete/src/Package/Package.php:899
+#: concrete/src/Package/Package.php:922
 msgid "concrete5 was not able to save the package after download."
 msgstr ""
 
-#: concrete/src/Package/Package.php:900
+#: concrete/src/Package/Package.php:923
 msgid "An error occurred while trying to unzip the package."
 msgstr ""
 
-#: concrete/src/Package/Package.php:901
+#: concrete/src/Package/Package.php:924
 msgid "An error occurred while trying to install the package."
 msgstr ""
 
-#: concrete/src/Package/Package.php:903
+#: concrete/src/Package/Package.php:926
 #, php-format
 msgid "Unable to backup old package directory to %s"
 msgstr ""
 
-#: concrete/src/Package/Package.php:907
+#: concrete/src/Package/Package.php:930
 msgid ""
 "This package isn't currently available for this version of concrete5. Please"
 " contact the maintainer of this package for assistance."
@@ -7594,7 +7600,7 @@ msgstr ""
 msgid "Pending Permissions"
 msgstr ""
 
-#: concrete/src/Workflow/Request/Request.php:78
+#: concrete/src/Workflow/Request/Request.php:107
 msgid "This permission key cannot start a workflow."
 msgstr ""
 
@@ -9318,16 +9324,16 @@ msgstr ""
 msgid "Page Settings"
 msgstr ""
 
-#: concrete/elements/panels/page.php:126
+#: concrete/elements/panels/page.php:129
 msgid "Mobile Preview"
 msgstr ""
 
-#: concrete/elements/panels/page.php:139
+#: concrete/elements/panels/page.php:142
 #: concrete/views/panels/page/preview_as/form.php:10
 msgid "View as User"
 msgstr ""
 
-#: concrete/elements/panels/page.php:150 concrete/elements/panels/page.php:151
+#: concrete/elements/panels/page.php:153 concrete/elements/panels/page.php:154
 msgid "Delete Page"
 msgstr "Borrar página"
 
@@ -10885,6 +10891,10 @@ msgstr ""
 msgid "Map Existing Page"
 msgstr ""
 
+#: concrete/views/panels/details/page/devices.php:7
+msgid "Exit Preview"
+msgstr ""
+
 #: concrete/views/panels/details/page/permissions/simple.php:9
 msgid "Who can view this page?"
 msgstr "¿Quien puede ver esta página?"
@@ -11022,28 +11032,24 @@ msgstr ""
 msgid "This page is not currently in the full page cache."
 msgstr ""
 
-#: concrete/views/panels/page/devices.php:11
+#: concrete/views/panels/page/devices.php:12
 msgid "Devices"
 msgstr ""
 
-#: concrete/views/panels/page/devices.php:41
+#: concrete/views/panels/page/devices.php:42
 msgid "General"
 msgstr ""
 
-#: concrete/views/panels/page/devices.php:42
+#: concrete/views/panels/page/devices.php:43
 msgid "Phone"
 msgstr ""
 
-#: concrete/views/panels/page/devices.php:43
+#: concrete/views/panels/page/devices.php:44
 msgid "Tablet"
 msgstr ""
 
-#: concrete/views/panels/page/devices.php:44
+#: concrete/views/panels/page/devices.php:45
 msgid "Desktop"
-msgstr ""
-
-#: concrete/views/panels/page/devices.php:108
-msgid "Exit Preview"
 msgstr ""
 
 #: concrete/views/panels/page/preview_as/form.php:16
@@ -11781,153 +11787,153 @@ msgstr ""
 msgid "Creates an empty site using the unstyled Elemental theme."
 msgstr ""
 
-#: concrete/config/app.php:443
+#: concrete/config/app.php:445
 msgid "JPEG"
 msgstr "JPEG"
 
-#: concrete/config/app.php:444
+#: concrete/config/app.php:446
 msgid "GIF"
 msgstr "GIF"
 
-#: concrete/config/app.php:445
+#: concrete/config/app.php:447
 msgid "PNG"
 msgstr "PNG"
 
-#: concrete/config/app.php:446
+#: concrete/config/app.php:448
 msgid "Windows Bitmap"
 msgstr "Windows Bitmap"
 
-#: concrete/config/app.php:447
+#: concrete/config/app.php:449
 msgid "TIFF"
 msgstr "TIFF"
 
-#: concrete/config/app.php:449
+#: concrete/config/app.php:451
 msgid "Flash"
 msgstr "Flash"
 
-#: concrete/blocks/feature/form.php:4 concrete/config/app.php:450
+#: concrete/blocks/feature/form.php:4 concrete/config/app.php:452
 #: concrete/single_pages/dashboard/pages/templates/add.php:27
 #: concrete/single_pages/dashboard/pages/templates/view.php:39
 msgid "Icon"
 msgstr "Icono"
 
-#: concrete/config/app.php:451
+#: concrete/config/app.php:453
 msgid "SVG"
 msgstr ""
 
-#: concrete/config/app.php:452
+#: concrete/config/app.php:454
 msgid "Windows Video"
 msgstr "Windows Video"
 
-#: concrete/config/app.php:453
+#: concrete/config/app.php:455
 msgid "Quicktime"
 msgstr "Quicktime"
 
-#: concrete/config/app.php:454
+#: concrete/config/app.php:456
 msgid "AVI"
 msgstr "AVI"
 
-#: concrete/config/app.php:455
+#: concrete/config/app.php:457
 msgid "3GP"
 msgstr "3GP"
 
-#: concrete/attributes/textarea/type_form.php:8 concrete/config/app.php:456
+#: concrete/attributes/textarea/type_form.php:8 concrete/config/app.php:458
 msgid "Plain Text"
 msgstr "Texto simple"
 
-#: concrete/config/app.php:457
+#: concrete/config/app.php:459
 msgid "CSV"
 msgstr "CSV"
 
-#: concrete/config/app.php:458
+#: concrete/config/app.php:460
 msgid "XML"
 msgstr "XML"
 
-#: concrete/config/app.php:459
+#: concrete/config/app.php:461
 msgid "PHP"
 msgstr "PHP"
 
-#: concrete/config/app.php:460
+#: concrete/config/app.php:462
 msgid "MS Word"
 msgstr "MS Word"
 
-#: concrete/config/app.php:461
+#: concrete/config/app.php:463
 msgid "Stylesheet"
 msgstr "Hoja de estilos"
 
-#: concrete/config/app.php:462
+#: concrete/config/app.php:464
 msgid "MP4"
 msgstr "MP4"
 
-#: concrete/config/app.php:463
+#: concrete/config/app.php:465
 msgid "FLV"
 msgstr "FLV"
 
-#: concrete/config/app.php:464
+#: concrete/config/app.php:466
 msgid "MP3"
 msgstr "MP3"
 
-#: concrete/config/app.php:465
+#: concrete/config/app.php:467
 msgid "MP4 Audio"
 msgstr ""
 
-#: concrete/config/app.php:466
+#: concrete/config/app.php:468
 msgid "Realaudio"
 msgstr "Realaudio"
 
-#: concrete/config/app.php:467
+#: concrete/config/app.php:469
 msgid "Windows Audio"
 msgstr "Windows Audio"
 
-#: concrete/config/app.php:468
+#: concrete/config/app.php:470
 msgid "Rich Text"
 msgstr "Texto con formato"
 
-#: concrete/config/app.php:469
+#: concrete/config/app.php:471
 msgid "JavaScript"
 msgstr "Javascript"
 
-#: concrete/config/app.php:470
+#: concrete/config/app.php:472
 msgid "PDF"
 msgstr "PDF"
 
-#: concrete/config/app.php:471
+#: concrete/config/app.php:473
 msgid "Photoshop"
 msgstr "Photoshop"
 
-#: concrete/config/app.php:472
+#: concrete/config/app.php:474
 msgid "MPEG"
 msgstr "MPEG"
 
-#: concrete/config/app.php:473
+#: concrete/config/app.php:475
 msgid "MS Excel"
 msgstr "MS Excel"
 
-#: concrete/config/app.php:474
+#: concrete/config/app.php:476
 msgid "MS Powerpoint"
 msgstr "MS Powerpoint"
 
-#: concrete/config/app.php:475
+#: concrete/config/app.php:477
 msgid "TAR Archive"
 msgstr "Archivo TAR"
 
-#: concrete/config/app.php:476
+#: concrete/config/app.php:478
 msgid "Zip Archive"
 msgstr "Archivo Zip"
 
-#: concrete/config/app.php:477
+#: concrete/config/app.php:479
 msgid "GZip Archive"
 msgstr "Archivo gzip"
 
-#: concrete/config/app.php:478
+#: concrete/config/app.php:480
 msgid "OGG"
 msgstr ""
 
-#: concrete/config/app.php:479
+#: concrete/config/app.php:481
 msgid "OGG Video"
 msgstr ""
 
-#: concrete/config/app.php:480
+#: concrete/config/app.php:482
 msgid "WebM"
 msgstr ""
 
@@ -12022,21 +12028,21 @@ msgstr ""
 msgid "You must choose at least one service."
 msgstr ""
 
-#: concrete/blocks/google_map/controller.php:32
+#: concrete/blocks/google_map/controller.php:31
 msgid ""
 "Enter an address and a Google Map of that location will be placed in your "
 "page."
 msgstr ""
 
-#: concrete/blocks/google_map/controller.php:37
+#: concrete/blocks/google_map/controller.php:36
 msgid "Google Map"
 msgstr "Mapa de Google"
 
-#: concrete/blocks/google_map/controller.php:46
+#: concrete/blocks/google_map/controller.php:44
 msgid "You must select a valid location."
 msgstr ""
 
-#: concrete/blocks/google_map/controller.php:50
+#: concrete/blocks/google_map/controller.php:48
 msgid "Please enter a zoom number from 0 to 21."
 msgstr ""
 
@@ -12325,7 +12331,7 @@ msgstr ""
 msgid "Topic Archives: %s"
 msgstr ""
 
-#: concrete/blocks/content/controller.php:30
+#: concrete/blocks/content/controller.php:33
 msgid "HTML/WYSIWYG Editor Content."
 msgstr "Contenido HTML /editor de texto"
 
@@ -12398,11 +12404,11 @@ msgstr ""
 msgid "Navigation Link Text"
 msgstr ""
 
-#: concrete/blocks/next_previous/controller.php:18
+#: concrete/blocks/next_previous/controller.php:22
 msgid "Navigate through sibling pages."
 msgstr ""
 
-#: concrete/blocks/next_previous/controller.php:22
+#: concrete/blocks/next_previous/controller.php:27
 msgid "Next & Previous Nav"
 msgstr ""
 
@@ -13142,7 +13148,7 @@ msgstr ""
 msgid "Picture"
 msgstr ""
 
-#: concrete/attributes/image_file/controller.php:91
+#: concrete/attributes/image_file/controller.php:93
 #: concrete/blocks/file/add.php:7 concrete/blocks/file/edit.php:11
 #: concrete/blocks/testimonial/form.php:17
 #: concrete/single_pages/dashboard/system/basics/icons.php:14
@@ -13188,7 +13194,7 @@ msgstr ""
 msgid "%s, %s"
 msgstr ""
 
-#: concrete/blocks/search/controller.php:88
+#: concrete/blocks/search/controller.php:90
 msgid "Add a search box to your site."
 msgstr "Añadir una caja de búsqueda al sitio"
 
@@ -13243,7 +13249,7 @@ msgid "Number of Pages to Display"
 msgstr ""
 
 #: concrete/blocks/page_list/page_list_form.php:45
-#: concrete/blocks/topic_list/controller.php:36
+#: concrete/blocks/topic_list/controller.php:35
 #: concrete/config/install/base/dashboard.xml:858
 msgid "Topics"
 msgstr ""
@@ -13593,11 +13599,11 @@ msgstr ""
 msgid "Archives"
 msgstr "Arhiivid"
 
-#: concrete/blocks/survey/controller.php:51
+#: concrete/blocks/survey/controller.php:53
 msgid "Provide a simple survey, along with results in a pie chart format."
 msgstr "Hacer una encuesta simple, con resultados en una gráfica."
 
-#: concrete/blocks/survey/controller.php:56
+#: concrete/blocks/survey/controller.php:58
 msgid "Survey"
 msgstr "Encuesta"
 
@@ -13742,15 +13748,15 @@ msgid ""
 "href=\"%s\">View Form Results</a>."
 msgstr ""
 
-#: concrete/blocks/external_form/controller.php:23
+#: concrete/blocks/external_form/controller.php:22
 msgid "Include external forms in the filesystem and place them on pages."
 msgstr ""
 
-#: concrete/blocks/external_form/controller.php:28
+#: concrete/blocks/external_form/controller.php:27
 msgid "External Form"
 msgstr "Formulario externo"
 
-#: concrete/blocks/external_form/controller.php:33
+#: concrete/blocks/external_form/controller.php:32
 msgid "You must select a form."
 msgstr "Debes seleccionar un formulario"
 
@@ -13806,13 +13812,13 @@ msgstr ""
 msgid "Topic Attribute To Display"
 msgstr ""
 
-#: concrete/blocks/topic_list/controller.php:25
+#: concrete/blocks/topic_list/controller.php:24
 msgid ""
 "Displays a list of your site's topics, allowing you to click on them to "
 "filter a page list."
 msgstr ""
 
-#: concrete/blocks/topic_list/controller.php:30
+#: concrete/blocks/topic_list/controller.php:29
 msgid "Topic List"
 msgstr ""
 
@@ -14012,11 +14018,11 @@ msgstr "Valitud riigid"
 msgid "Default Country"
 msgstr "Vaikimisi riik"
 
-#: concrete/attributes/address/controller.php:205
+#: concrete/attributes/address/controller.php:211
 msgid "You must specify at least one country."
 msgstr ""
 
-#: concrete/attributes/address/controller.php:212
+#: concrete/attributes/address/controller.php:218
 msgid "The default country must be in the list of custom countries."
 msgstr ""
 
@@ -14040,8 +14046,8 @@ msgstr "Ainult kuupäev"
 msgid "Text Input Field"
 msgstr "Sekstilahter"
 
-#: concrete/attributes/image_file/controller.php:122
-#: concrete/attributes/image_file/controller.php:136
+#: concrete/attributes/image_file/controller.php:124
+#: concrete/attributes/image_file/controller.php:139
 #, php-format
 msgid "You must specify a valid file for %s"
 msgstr ""
@@ -16262,6 +16268,10 @@ msgstr ""
 
 #: concrete/single_pages/dashboard/system/basics/accessibility.php:11
 msgid "Increase Toolbar Font Size"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/basics/accessibility.php:17
+msgid "Enable Help"
 msgstr ""
 
 #: concrete/single_pages/dashboard/system/basics/icons.php:6
