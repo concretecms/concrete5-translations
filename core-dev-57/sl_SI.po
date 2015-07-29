@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-07-27 04:00+0000\n"
-"PO-Revision-Date: 2015-07-27 08:49+0000\n"
+"POT-Creation-Date: 2015-07-28 04:00+0000\n"
+"PO-Revision-Date: 2015-07-28 08:50+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Slovenian (Slovenia) (http://www.transifex.com/projects/p/concrete5/language/sl_SI/)\n"
 "MIME-Version: 1.0\n"
@@ -423,7 +423,7 @@ msgstr "Jezik"
 msgid "Log in"
 msgstr "Prijava"
 
-#: concrete/authentication/concrete/controller.php:160
+#: concrete/authentication/concrete/controller.php:163
 #: concrete/authentication/concrete/form.php:38
 #: concrete/mail/forgot_password.php:4
 msgid "Forgot Password"
@@ -433,25 +433,25 @@ msgstr "Pozabljeno geslo"
 msgid "Not a member? Register"
 msgstr ""
 
-#: concrete/authentication/concrete/controller.php:62
+#: concrete/authentication/concrete/controller.php:65
 msgid "There was a database error, try again."
 msgstr "Prišlo je do napake v podatkovni bazi, poskusite znova."
 
-#: concrete/authentication/concrete/controller.php:119
+#: concrete/authentication/concrete/controller.php:122
 msgid "Invalid email address."
 msgstr "Napačen naslov e-pošte."
 
-#: concrete/authentication/concrete/controller.php:124
+#: concrete/authentication/concrete/controller.php:127
 msgid "We have no record of that email address."
 msgstr "Tega e-poštnega naslova nimamo zavedenega."
 
-#: concrete/authentication/concrete/controller.php:192
+#: concrete/authentication/concrete/controller.php:195
 msgid ""
 "Key Expired. Please visit the forgot password page again to have a new key "
 "generated."
 msgstr "Ključ je potekel. Obiščite stran za pozabljena gesla za kreiranje novega ključa."
 
-#: concrete/authentication/concrete/controller.php:201
+#: concrete/authentication/concrete/controller.php:204
 #: concrete/controllers/install.php:311
 #: concrete/controllers/single_page/account/edit_profile.php:108
 #: concrete/controllers/single_page/dashboard/users/search.php:380
@@ -459,36 +459,36 @@ msgstr "Ključ je potekel. Obiščite stran za pozabljena gesla za kreiranje nov
 msgid "The two passwords provided do not match."
 msgstr "Vneseni gesli se ne ujemata."
 
-#: concrete/authentication/concrete/controller.php:226
+#: concrete/authentication/concrete/controller.php:229
 msgid ""
 "Invalid Key. Please visit the forgot password page again to have a new key "
 "generated."
 msgstr "Napačen ključ. Ponovno obiščite stran za pozabljena gesla za kreiranje novega ključa."
 
-#: concrete/authentication/concrete/controller.php:250
+#: concrete/authentication/concrete/controller.php:253
 msgid "Please provide both username and password."
 msgstr "Vnesite uporabniško ime in geslo."
 
-#: concrete/authentication/concrete/controller.php:259
+#: concrete/authentication/concrete/controller.php:262
 #: concrete/controllers/single_page/login.php:44
 msgid "Your session has expired. Please sign in again."
 msgstr "Vaša seja je potekla. Prosim, če se ponovno prijavite."
 
-#: concrete/authentication/concrete/controller.php:264
+#: concrete/authentication/concrete/controller.php:267
 msgid ""
 "This account has not yet been validated. Please check the email associated "
 "with this account and follow the link it contains."
 msgstr "Ta račun še ni bil preverjen. Preverite e-pošto povezano s tem računom in sledite povezavi, ki jo vsebuje."
 
-#: concrete/authentication/concrete/controller.php:268
+#: concrete/authentication/concrete/controller.php:271
 msgid "Invalid email address or password."
 msgstr "Nepravilen e-poštni naslov ali geslo."
 
-#: concrete/authentication/concrete/controller.php:270
+#: concrete/authentication/concrete/controller.php:273
 msgid "Invalid username or password."
 msgstr "Nepravilno uporabniško ime ali geslo."
 
-#: concrete/authentication/concrete/controller.php:274
+#: concrete/authentication/concrete/controller.php:277
 #: concrete/controllers/single_page/login.php:39
 msgid "This user is inactive. Please contact us regarding this account."
 msgstr "Uporabnik ni aktiven. Stopite v kontakt z nami glede tega računa."
@@ -1121,9 +1121,9 @@ msgstr "Enostaven pogled"
 #: concrete/single_pages/dashboard/files/sets.php:195
 #: concrete/single_pages/dashboard/files/sets.php:200
 #: concrete/single_pages/dashboard/files/sets.php:218
-#: concrete/single_pages/dashboard/reports/logs.php:20
 #: concrete/single_pages/dashboard/reports/logs.php:25
-#: concrete/single_pages/dashboard/reports/logs.php:54
+#: concrete/single_pages/dashboard/reports/logs.php:30
+#: concrete/single_pages/dashboard/reports/logs.php:59
 #: concrete/single_pages/dashboard/sitemap/full.php:36
 #: concrete/single_pages/dashboard/system/multilingual/page_report.php:13
 #: concrete/single_pages/dashboard/system/multilingual/page_report.php:18
@@ -3762,17 +3762,34 @@ msgstr "Urnik nabora opravil je bil uspešno posodobljen."
 msgid "Today"
 msgstr "Danes"
 
-#: concrete/controllers/single_page/dashboard/reports/logs.php:35
+#: concrete/controllers/single_page/dashboard/reports/logs.php:37
 msgid "All Channels"
 msgstr "Vsi kanali"
 
-#: concrete/controllers/single_page/dashboard/reports/forms.php:53
-msgid "Submitted Date"
-msgstr "Poslan datum"
+#: concrete/controllers/single_page/dashboard/reports/logs.php:81
+#: concrete/single_pages/dashboard/reports/forms.php:237
+#: concrete/single_pages/dashboard/reports/surveys.php:31
+#: concrete/single_pages/dashboard/system/backup/backup.php:100
+#: concrete/src/Page/Search/ColumnSet/DefaultSet.php:36
+msgid "Date"
+msgstr "Datum"
+
+#: concrete/controllers/single_page/dashboard/reports/logs.php:82
+#: concrete/single_pages/dashboard/reports/logs.php:51
+#: concrete/single_pages/dashboard/reports/logs.php:69
+msgid "Level"
+msgstr "Nivo"
+
+#: concrete/controllers/single_page/dashboard/reports/logs.php:83
+#: concrete/single_pages/dashboard/reports/logs.php:37
+#: concrete/single_pages/dashboard/reports/logs.php:70
+msgid "Channel"
+msgstr "Kanal"
 
 #: concrete/controllers/single_page/dashboard/reports/forms.php:54
+#: concrete/controllers/single_page/dashboard/reports/logs.php:84
 #: concrete/single_pages/dashboard/reports/forms.php:240
-#: concrete/single_pages/dashboard/reports/logs.php:66
+#: concrete/single_pages/dashboard/reports/logs.php:71
 #: concrete/single_pages/dashboard/reports/statistics.php:78
 #: concrete/single_pages/dashboard/reports/surveys.php:32
 #: concrete/single_pages/dashboard/users/points/assign.php:10
@@ -3782,6 +3799,31 @@ msgstr "Poslan datum"
 #: concrete/views/panels/page/preview_as/form.php:28
 msgid "User"
 msgstr "Uporabnik"
+
+#: concrete/blocks/core_conversation_message/composer.php:19
+#: concrete/controllers/single_page/dashboard/reports/logs.php:85
+#: concrete/single_pages/account/messages/inbox.php:173
+#: concrete/single_pages/dashboard/conversations/messages.php:55
+#: concrete/single_pages/dashboard/reports/logs.php:72
+msgid "Message"
+msgstr "Sporočilo"
+
+#: concrete/controllers/single_page/dashboard/reports/logs.php:94
+#: concrete/single_pages/dashboard/reports/logs.php:86
+#: concrete/views/panels/page/preview_as/form.php:24
+msgid "Guest"
+msgstr "Gost"
+
+#: concrete/controllers/single_page/dashboard/reports/logs.php:101
+#: concrete/single_pages/dashboard/reports/logs.php:93
+#, php-format
+msgctxt "Deleted user"
+msgid "Deleted (id: %s)"
+msgstr "Pobrisano (id: %s)"
+
+#: concrete/controllers/single_page/dashboard/reports/forms.php:53
+msgid "Submitted Date"
+msgstr "Poslan datum"
 
 #: concrete/controllers/single_page/dashboard/reports/forms.php:102
 #: concrete/single_pages/dashboard/reports/forms.php:269
@@ -6184,7 +6226,7 @@ msgstr "Shranitev umeščanja"
 msgid "Edit Page"
 msgstr "Urejanje strani"
 
-#: concrete/elements/account/menu.php:47
+#: concrete/elements/account/menu.php:48
 #: concrete/elements/page_controls_footer.php:300
 #: concrete/themes/concrete/elements/header.php:50
 msgid "Sign Out"
@@ -6846,25 +6888,25 @@ msgstr "Najdena napačna verzija sheme. Pričakovana 0.3"
 msgid "Invalid column definition: %s in table %s"
 msgstr ""
 
-#: concrete/src/Database/DatabaseStructureManager.php:85
+#: concrete/src/Database/DatabaseStructureManager.php:86
 #, php-format
 msgid ""
 "A file exists in place of the proxy directory. Please remove the '%s' file "
 "to proceed with the proxy class generation."
 msgstr ""
 
-#: concrete/src/Database/DatabaseStructureManager.php:96
+#: concrete/src/Database/DatabaseStructureManager.php:97
 #, php-format
 msgid ""
 "Could not create the proxies directory. Please check the file permissions of"
 " the proxy directory: %s."
 msgstr ""
 
-#: concrete/src/Database/DatabaseStructureManager.php:128
+#: concrete/src/Database/DatabaseStructureManager.php:129
 msgid "The given prefix needs to be a string."
 msgstr ""
 
-#: concrete/src/Database/DatabaseStructureManager.php:139
+#: concrete/src/Database/DatabaseStructureManager.php:140
 #, php-format
 msgid ""
 "Could not delete a proxy file. Please check the permissions of the proxy "
@@ -6998,7 +7040,7 @@ msgstr "Kombinacija skupin"
 msgid " + "
 msgstr "+"
 
-#: concrete/src/Page/Stack/Stack.php:138
+#: concrete/src/Page/Stack/Stack.php:145
 msgid "No Name"
 msgstr "Ni imena"
 
@@ -7143,13 +7185,6 @@ msgstr "Stran \"%s\" s potjo \"%s\" je bila premaknjena v koš"
 #: concrete/src/Page/Search/Result/Result.php:22
 msgid "Score"
 msgstr "Rezultat"
-
-#: concrete/single_pages/dashboard/reports/forms.php:237
-#: concrete/single_pages/dashboard/reports/surveys.php:31
-#: concrete/single_pages/dashboard/system/backup/backup.php:100
-#: concrete/src/Page/Search/ColumnSet/DefaultSet.php:36
-msgid "Date"
-msgstr "Datum"
 
 #. Detailed debug information
 #: concrete/src/Logging/Logger.php:101
@@ -8735,7 +8770,7 @@ msgid ""
 "defined in a PageTheme class."
 msgstr "Ne mreže delovnega prostora. Mrežne področne metode zahtevajo veljaven delovni prostor z mrežo definirano v razredu teme strani."
 
-#: concrete/src/Area/GlobalArea.php:41
+#: concrete/src/Area/GlobalArea.php:52
 #, php-format
 msgid "Sitewide %s"
 msgstr "Stran %s"
@@ -8925,7 +8960,7 @@ msgstr "Uredi lastnosti"
 
 #: concrete/elements/files/search.php:32
 #: concrete/single_pages/dashboard/conversations/messages.php:16
-#: concrete/single_pages/dashboard/reports/logs.php:24
+#: concrete/single_pages/dashboard/reports/logs.php:29
 #: concrete/single_pages/dashboard/system/multilingual/page_report.php:17
 #: concrete/single_pages/dashboard/system/seo/bulk.php:63
 msgid "Keywords"
@@ -9114,7 +9149,7 @@ msgstr "Ponovno se poveži v skupnost"
 
 #: concrete/config/install/packages/elemental_blank/content.xml:43
 #: concrete/config/install/packages/elemental_full/content.xml:875
-#: concrete/elements/account/menu.php:46
+#: concrete/elements/account/menu.php:47
 #: concrete/single_pages/dashboard/system/view.php:41
 #: concrete/single_pages/dashboard/view.php:45
 #: concrete/single_pages/members/profile.php:17
@@ -10751,6 +10786,10 @@ msgid ""
 "the past."
 msgstr "Brisanje nastavitev ne bo učinkovalo na postavitve, ki so uporabljale te nastavitve v preteklosti."
 
+#: concrete/views/dialogs/area/layout/presets/manage.php:18
+msgid "You have no presets."
+msgstr ""
+
 #: concrete/views/dialogs/file/properties.php:16
 msgid "Statistics"
 msgstr "Statistika"
@@ -11113,11 +11152,6 @@ msgstr "Datum/čas"
 #: concrete/views/panels/page/preview_as/form.php:21
 msgid "View As"
 msgstr "Ogled kot"
-
-#: concrete/single_pages/dashboard/reports/logs.php:81
-#: concrete/views/panels/page/preview_as/form.php:24
-msgid "Guest"
-msgstr "Gost"
 
 #: concrete/views/panels/page/preview_as/form.php:25
 msgid "Site User"
@@ -12582,13 +12616,6 @@ msgstr "Sporočilo pogovora"
 #: concrete/blocks/core_conversation_message/controller.php:39
 msgid "Your subject cannot be empty."
 msgstr "Vaša zadeva ne more biti prazna."
-
-#: concrete/blocks/core_conversation_message/composer.php:19
-#: concrete/single_pages/account/messages/inbox.php:173
-#: concrete/single_pages/dashboard/conversations/messages.php:55
-#: concrete/single_pages/dashboard/reports/logs.php:67
-msgid "Message"
-msgstr "Sporočilo"
 
 #: concrete/blocks/image/form.php:36
 msgid "Image Hover"
@@ -17029,35 +17056,24 @@ msgstr "Zadnji odziv"
 msgid "Number of Responses"
 msgstr "Število odzivov"
 
-#: concrete/single_pages/dashboard/reports/logs.php:32
-#: concrete/single_pages/dashboard/reports/logs.php:65
-msgid "Channel"
-msgstr "Kanal"
+#: concrete/single_pages/dashboard/reports/forms.php:214
+#: concrete/single_pages/dashboard/reports/logs.php:10
+msgid "Export to CSV"
+msgstr "Izvoz v CSV"
 
-#: concrete/single_pages/dashboard/reports/logs.php:36
+#: concrete/single_pages/dashboard/reports/logs.php:41
 #, php-format
 msgctxt "%s is a channel"
 msgid "Clear all in %s"
 msgstr "Pobriši vse v %s"
 
-#: concrete/single_pages/dashboard/reports/logs.php:38
+#: concrete/single_pages/dashboard/reports/logs.php:43
 msgid "Clear all"
 msgstr "Pobriši vse"
 
-#: concrete/single_pages/dashboard/reports/logs.php:46
-#: concrete/single_pages/dashboard/reports/logs.php:64
-msgid "Level"
-msgstr "Nivo"
-
-#: concrete/single_pages/dashboard/reports/logs.php:63
+#: concrete/single_pages/dashboard/reports/logs.php:68
 msgid "Date/Time"
 msgstr "Datum/čas"
-
-#: concrete/single_pages/dashboard/reports/logs.php:88
-#, php-format
-msgctxt "Deleted user"
-msgid "Deleted (id: %s)"
-msgstr "Pobrisano (id: %s)"
 
 #: concrete/single_pages/dashboard/reports/forms.php:23
 msgid "Are you sure you want to delete this form submission?"
@@ -17104,10 +17120,6 @@ msgstr "Odzivi na %s"
 #: concrete/single_pages/dashboard/reports/forms.php:209
 msgid "No one has yet submitted this form."
 msgstr "Še nihče ni poslal odziva na ta obrazec."
-
-#: concrete/single_pages/dashboard/reports/forms.php:214
-msgid "Export to CSV"
-msgstr "Izvoz v CSV"
 
 #: concrete/single_pages/dashboard/reports/forms.php:226
 msgid "* Scroll right to view full results"
