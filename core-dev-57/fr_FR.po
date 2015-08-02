@@ -12,9 +12,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-07-31 04:00+0000\n"
-"PO-Revision-Date: 2015-07-31 13:21+0000\n"
-"Last-Translator: COTE <grcote7@gmail.com>\n"
+"POT-Creation-Date: 2015-08-01 04:00+0000\n"
+"PO-Revision-Date: 2015-08-01 18:44+0000\n"
+"Last-Translator: Dorian Marchal <marchal.dorian@gmail.com>\n"
 "Language-Team: French (France) (http://www.transifex.com/projects/p/concrete5/language/fr_FR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -4219,12 +4219,12 @@ msgstr "Rechercher tous les enfants ?"
 #: concrete/blocks/form/form_setup_html.php:172
 #: concrete/blocks/form/form_setup_html.php:257
 #: concrete/blocks/page_attribute_display/templates/boolean.php:5
-#: concrete/blocks/page_list/page_list_form.php:218
-#: concrete/blocks/page_list/page_list_form.php:256
-#: concrete/blocks/page_list/page_list_form.php:272
-#: concrete/blocks/page_list/page_list_form.php:302
-#: concrete/blocks/page_list/page_list_form.php:319
-#: concrete/blocks/page_list/page_list_form.php:341
+#: concrete/blocks/page_list/page_list_form.php:269
+#: concrete/blocks/page_list/page_list_form.php:307
+#: concrete/blocks/page_list/page_list_form.php:323
+#: concrete/blocks/page_list/page_list_form.php:353
+#: concrete/blocks/page_list/page_list_form.php:370
+#: concrete/blocks/page_list/page_list_form.php:392
 #: concrete/controllers/search/pages.php:257
 #: concrete/elements/page_types/form/base.php:55
 #: concrete/elements/page_types/form/base.php:60
@@ -4244,12 +4244,12 @@ msgstr "Non"
 #: concrete/blocks/form/form_setup_html.php:171
 #: concrete/blocks/form/form_setup_html.php:256
 #: concrete/blocks/page_attribute_display/templates/boolean.php:5
-#: concrete/blocks/page_list/page_list_form.php:224
-#: concrete/blocks/page_list/page_list_form.php:262
-#: concrete/blocks/page_list/page_list_form.php:278
-#: concrete/blocks/page_list/page_list_form.php:308
-#: concrete/blocks/page_list/page_list_form.php:326
-#: concrete/blocks/page_list/page_list_form.php:347
+#: concrete/blocks/page_list/page_list_form.php:275
+#: concrete/blocks/page_list/page_list_form.php:313
+#: concrete/blocks/page_list/page_list_form.php:329
+#: concrete/blocks/page_list/page_list_form.php:359
+#: concrete/blocks/page_list/page_list_form.php:377
+#: concrete/blocks/page_list/page_list_form.php:398
 #: concrete/controllers/search/pages.php:258
 #: concrete/elements/page_types/form/base.php:55
 #: concrete/elements/page_types/form/base.php:60
@@ -4820,7 +4820,7 @@ msgid "SEO"
 msgstr "SEO"
 
 #: concrete/blocks/google_map/form_setup_html.php:11
-#: concrete/blocks/page_list/page_list_form.php:141
+#: concrete/blocks/page_list/page_list_form.php:192
 #: concrete/controllers/frontend/assets_localization.php:133
 #: concrete/controllers/frontend/assets_localization.php:134
 #: concrete/elements/page_controls_footer.php:103
@@ -6941,7 +6941,7 @@ msgstr "Impossible d'obtenir la clef de permissions pour %s"
 msgid "Unable to get category for permission %s"
 msgstr "Impossible d'obtenir la catégorie de la permission %s"
 
-#: concrete/src/Permission/IPService.php:68
+#: concrete/src/Permission/IPService.php:67
 msgid ""
 "Unable to complete action: your IP address has been banned. Please contact "
 "the administrator of this site for more information."
@@ -12199,7 +12199,7 @@ msgstr "Sources des données"
 
 #: concrete/blocks/core_gathering/add.php:7
 #: concrete/blocks/core_gathering/edit.php:8
-#: concrete/blocks/page_list/page_list_form.php:212
+#: concrete/blocks/page_list/page_list_form.php:263
 #: concrete/single_pages/dashboard/pages/types/view.php:46
 msgid "Output"
 msgstr "Sortie"
@@ -13185,8 +13185,8 @@ msgid "Picture"
 msgstr "Image"
 
 #: concrete/attributes/image_file/controller.php:93
-#: concrete/blocks/file/add.php:7 concrete/blocks/file/edit.php:11
-#: concrete/blocks/testimonial/form.php:17
+#: concrete/blocks/file/add.php:7 concrete/blocks/file/composer.php:21
+#: concrete/blocks/file/edit.php:11 concrete/blocks/testimonial/form.php:17
 #: concrete/single_pages/dashboard/system/basics/icons.php:14
 #: concrete/single_pages/dashboard/system/basics/icons.php:36
 #: concrete/single_pages/dashboard/system/basics/icons.php:60
@@ -13252,7 +13252,7 @@ msgstr "Texte du bouton"
 msgid "Search for Pages"
 msgstr "Rechercher dans les pages"
 
-#: concrete/blocks/page_list/page_list_form.php:146
+#: concrete/blocks/page_list/page_list_form.php:197
 #: concrete/blocks/search/form_setup_html.php:43
 msgid "Everywhere"
 msgstr "Partout"
@@ -13314,151 +13314,171 @@ msgid ""
 msgstr "Autoriser d'autres blocs comme le bloc de liste de messages à passer des critères de recherche dans le bloc de liste de pages."
 
 #: concrete/blocks/page_list/page_list_form.php:98
+msgid "Filter by Public Date"
+msgstr "Filtrer par date publique"
+
+#: concrete/blocks/page_list/page_list_form.php:123
+msgid "Days in the Past"
+msgstr "Jours passés"
+
+#: concrete/blocks/page_list/page_list_form.php:123
+msgid "Leave 0 to show all past dated pages"
+msgstr "Laissez 0 pour afficher toutes les pages passées"
+
+#: concrete/blocks/page_list/page_list_form.php:130
+msgid "Days in the Future"
+msgstr "Jours à venir"
+
+#: concrete/blocks/page_list/page_list_form.php:130
+msgid "Leave 0 to show all future dated pages"
+msgstr "Laissez 0 pour afficher toutes les pages futures"
+
+#: concrete/blocks/page_list/page_list_form.php:149
 msgid "Other Filters"
 msgstr "Autres filtres"
 
-#: concrete/blocks/page_list/page_list_form.php:104
+#: concrete/blocks/page_list/page_list_form.php:155
 msgid "Featured pages only."
 msgstr "Pages vedettes uniquement."
 
-#: concrete/blocks/page_list/page_list_form.php:109
+#: concrete/blocks/page_list/page_list_form.php:160
 msgid ""
 "(<strong>Note</strong>: You must create the \"is_featured\" page attribute "
 "first.)"
 msgstr "(<strong>Note</strong>: Vous devez d'abord créer l'attribut de page \"is_featured\")"
 
-#: concrete/blocks/page_list/page_list_form.php:117
+#: concrete/blocks/page_list/page_list_form.php:168
 msgid "Display page aliases."
 msgstr "Afficher les alias de page."
 
-#: concrete/blocks/page_list/page_list_form.php:124
+#: concrete/blocks/page_list/page_list_form.php:175
 msgid "Enable Other Blocks to Filter This Page List."
 msgstr "Activer d'autres blocs pour filtrer cette liste de page."
 
-#: concrete/blocks/page_list/page_list_form.php:131
+#: concrete/blocks/page_list/page_list_form.php:182
 msgid "Pagination"
 msgstr "Pagination"
 
-#: concrete/blocks/page_list/page_list_form.php:135
+#: concrete/blocks/page_list/page_list_form.php:186
 msgid ""
 "Display pagination interface if more items are available than are displayed."
 msgstr "Afficher l'interface de pagination s'il y a plus d'objets que ceux affichés"
 
-#: concrete/blocks/page_list/page_list_form.php:153
+#: concrete/blocks/page_list/page_list_form.php:204
 msgid "Beneath this page"
 msgstr "Sous cette page"
 
-#: concrete/blocks/page_list/page_list_form.php:160
+#: concrete/blocks/page_list/page_list_form.php:211
 msgid "Beneath another page"
 msgstr "Cous une autre page"
 
-#: concrete/blocks/page_list/page_list_form.php:178
+#: concrete/blocks/page_list/page_list_form.php:229
 msgid "Include all child pages"
 msgstr "Inclure toutes les pages enfants."
 
-#: concrete/blocks/page_list/page_list_form.php:186
+#: concrete/blocks/page_list/page_list_form.php:237
 msgid "Sort"
 msgstr "Trier"
 
-#: concrete/blocks/page_list/page_list_form.php:190
+#: concrete/blocks/page_list/page_list_form.php:241
 msgid "Sitemap order"
 msgstr "Ordre du plan du site"
 
-#: concrete/blocks/page_list/page_list_form.php:193
+#: concrete/blocks/page_list/page_list_form.php:244
 msgid "Most recent first"
 msgstr "Les plus recents d'abord"
 
-#: concrete/blocks/page_list/page_list_form.php:196
+#: concrete/blocks/page_list/page_list_form.php:247
 msgid "Earliest first"
 msgstr "Les nouveaux d'abord"
 
-#: concrete/blocks/page_list/page_list_form.php:199
+#: concrete/blocks/page_list/page_list_form.php:250
 msgid "Alphabetical order"
 msgstr "Ordre alphabétique"
 
-#: concrete/blocks/page_list/page_list_form.php:202
+#: concrete/blocks/page_list/page_list_form.php:253
 msgid "Reverse alphabetical order"
 msgstr "Ordre alphabétique inversé"
 
-#: concrete/blocks/page_list/page_list_form.php:205
+#: concrete/blocks/page_list/page_list_form.php:256
 msgid "Random"
 msgstr "Aléatoire"
 
-#: concrete/blocks/page_list/page_list_form.php:214
+#: concrete/blocks/page_list/page_list_form.php:265
 msgid "Provide RSS Feed"
 msgstr "Fournir un flux RSS"
 
-#: concrete/blocks/page_list/page_list_form.php:229
+#: concrete/blocks/page_list/page_list_form.php:280
 #, php-format
 msgid "RSS Feed can be found here: <a href=\"%s\" target=\"_blank\">%s</a>"
 msgstr "le flux RSS est introuvable ici: <a href=\"%s\" target=\"_blank\">%s</a>"
 
-#: concrete/blocks/page_list/page_list_form.php:232
+#: concrete/blocks/page_list/page_list_form.php:283
 msgid "RSS Feed Title"
 msgstr "Titre du flux RSS"
 
-#: concrete/blocks/page_list/page_list_form.php:237
+#: concrete/blocks/page_list/page_list_form.php:288
 msgid "RSS Feed Description"
 msgstr "Description du flux RSS"
 
-#: concrete/blocks/page_list/page_list_form.php:241
+#: concrete/blocks/page_list/page_list_form.php:292
 msgid "RSS Feed Location"
 msgstr "Emplacement du flux RSS"
 
-#: concrete/blocks/page_list/page_list_form.php:252
+#: concrete/blocks/page_list/page_list_form.php:303
 msgid "Include Page Name"
 msgstr "Inclure le nom de la page"
 
-#: concrete/blocks/page_list/page_list_form.php:268
+#: concrete/blocks/page_list/page_list_form.php:319
 msgid "Include Page Description"
 msgstr "Inclure la description de page"
 
-#: concrete/blocks/page_list/page_list_form.php:282
+#: concrete/blocks/page_list/page_list_form.php:333
 msgid "Display Truncated Description"
 msgstr "Afficher la description tronquée"
 
-#: concrete/blocks/page_list/page_list_form.php:291
+#: concrete/blocks/page_list/page_list_form.php:342
 msgid "characters"
 msgstr "caractères"
 
-#: concrete/blocks/page_list/page_list_form.php:298
+#: concrete/blocks/page_list/page_list_form.php:349
 msgid "Include Public Page Date"
 msgstr "Inclure la date publique de la page"
 
-#: concrete/blocks/page_list/page_list_form.php:311
+#: concrete/blocks/page_list/page_list_form.php:362
 msgid ""
 "This is usually the date the page is created. It can be changed from the "
 "page attributes panel."
 msgstr "C'est actuellement la date de création de la page. Ce peut être modifié depuis le panneau d'attributs de pages."
 
-#: concrete/blocks/page_list/page_list_form.php:314
+#: concrete/blocks/page_list/page_list_form.php:365
 msgid "Display Thumbnail Image"
 msgstr "Afficher l'image miniature"
 
-#: concrete/blocks/page_list/page_list_form.php:331
+#: concrete/blocks/page_list/page_list_form.php:382
 msgid ""
 "You must create an attribute with the 'thumbnail' handle in order to use "
 "this option."
 msgstr "Vous devez créer un attribut avec l'identifiant unique 'thumbnail' pour pouvoir utiliser cette option."
 
-#: concrete/blocks/page_list/page_list_form.php:337
+#: concrete/blocks/page_list/page_list_form.php:388
 msgid "Use Different Link than Page Name"
 msgstr "Utiliser un lien différent du nom de la page"
 
-#: concrete/blocks/page_list/page_list_form.php:352
+#: concrete/blocks/page_list/page_list_form.php:403
 msgid "Link Text"
 msgstr "Texte du lien"
 
-#: concrete/blocks/page_list/page_list_form.php:359
+#: concrete/blocks/page_list/page_list_form.php:410
 msgid "Title of Page List"
 msgstr "Titre de la liste de pages"
 
-#: concrete/blocks/page_list/page_list_form.php:364
+#: concrete/blocks/page_list/page_list_form.php:415
 msgid "Message to Display When No Pages Listed."
 msgstr "Message à afficher lorsqu'aucune page n'est listée."
 
 #: concrete/blocks/autonav/form_setup_html.php:144
-#: concrete/blocks/page_list/page_list_form.php:377
+#: concrete/blocks/page_list/page_list_form.php:428
 msgid "Included Pages"
 msgstr "Pages inclues"
 
@@ -13470,17 +13490,17 @@ msgstr "Liste de pages"
 msgid "Please give your RSS Feed a name."
 msgstr "Veuillez donner un nom à votre flux RSS."
 
-#: concrete/blocks/page_list/controller.php:289
+#: concrete/blocks/page_list/controller.php:332
 msgid ""
 "Your RSS feed must have a valid URL, containing only letters, numbers or "
 "underscores"
 msgstr "Votre flux RSS doit avoir une URL valide, ne contenant que des lettres, chiffres et tirets bas."
 
-#: concrete/blocks/page_list/controller.php:292
+#: concrete/blocks/page_list/controller.php:335
 msgid "Your RSS feed must have a valid title."
 msgstr "Votre flux RSS doit avoir un titre valide."
 
-#: concrete/blocks/page_list/controller.php:295
+#: concrete/blocks/page_list/controller.php:338
 msgid "Your RSS feed must have a valid description."
 msgstr "Votre flux RSS doit avoir une description valide."
 
@@ -13522,13 +13542,21 @@ msgid "Link to files stored in the asset library."
 msgstr "Lien vers les fichiers stockés dans la bibliothèque."
 
 #: concrete/blocks/file/controller.php:29
-#: concrete/blocks/file/controller.php:44
+#: concrete/blocks/file/controller.php:65
 msgid "You must select a file."
 msgstr "Vous devez sélectionner un fichier."
 
-#: concrete/blocks/file/controller.php:47
+#: concrete/blocks/file/controller.php:41
+msgid "You must specify a valid file."
+msgstr "Vous devez renseigner un fichier valide."
+
+#: concrete/blocks/file/controller.php:68
 msgid "You must give your file a link."
 msgstr "Vous devez donner un lien à votre fichier."
+
+#: concrete/blocks/file/view.php:20
+msgid "Empty File Block."
+msgstr "Bloc Fichier vide."
 
 #: concrete/blocks/file/add.php:15 concrete/blocks/file/edit.php:19
 msgid "Force file to download"
