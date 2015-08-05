@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-08-03 04:00+0000\n"
-"PO-Revision-Date: 2015-08-03 19:40+0000\n"
+"POT-Creation-Date: 2015-08-04 04:00+0000\n"
+"PO-Revision-Date: 2015-08-04 16:12+0000\n"
 "Last-Translator: Adem Coşkuner <info@ademcoskuner.com>\n"
 "Language-Team: Turkish (Turkey) (http://www.transifex.com/concrete5/concrete5/language/tr_TR/)\n"
 "MIME-Version: 1.0\n"
@@ -3683,6 +3683,16 @@ msgstr "Önbellek ayarları kaydedildi."
 msgid "Database query log cleared."
 msgstr "Veritabanı sorgu günlüğü temizlendi."
 
+#: concrete/controllers/single_page/dashboard/system/optimization/query_log.php:67
+#: concrete/single_pages/dashboard/system/optimization/query_log.php:33
+msgid "Times Run"
+msgstr "Çalıştırılma Sayısı"
+
+#: concrete/controllers/single_page/dashboard/system/optimization/query_log.php:68
+#: concrete/single_pages/dashboard/system/optimization/query_log.php:34
+msgid "Query"
+msgstr "Sorgu"
+
 #: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:43
 #: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:66
 msgid "No job specified."
@@ -3739,6 +3749,7 @@ msgstr "Görev takvimi başarıyla güncellendi."
 msgid "Job Set schedule updated successfully."
 msgstr "Görev Grubu takvimi başarıyla güncellendi."
 
+#: concrete/blocks/page_list/page_list_form.php:104
 #: concrete/controllers/single_page/dashboard/reports/statistics.php:50
 #: concrete/src/Localization/Service/Date.php:461
 msgid "Today"
@@ -6586,7 +6597,7 @@ msgid ""
 "or the target directory does not exist."
 msgstr "%s dizini %s adresine kopyalanamıyor. Belki de yanlış izinler ayarlandı veya hedef dizin mevcut değil."
 
-#: concrete/src/File/Image/Thumbnail/Type/Type.php:246
+#: concrete/src/File/Image/Thumbnail/Type/Version.php:82
 #, php-format
 msgid "%s (Retina Version)"
 msgstr "%s (Retina Sürümü)"
@@ -7109,7 +7120,7 @@ msgstr "Bir sayfa şablonu seçmelisiniz."
 msgid "This page template is not a valid template for this page type."
 msgstr "Sayfa şablonu by sayfa türü için geçerli bir şablon değildir."
 
-#: concrete/src/Page/Collection/Version/Version.php:245
+#: concrete/src/Page/Collection/Version/Version.php:243
 #, php-format
 msgid "New Version %s"
 msgstr "Yeni Sürüm %s"
@@ -11796,6 +11807,47 @@ msgstr "Boş Site"
 msgid "Creates an empty site using the unstyled Elemental theme."
 msgstr "Stilsiz temel temayı kullanarak bir site oluşturur."
 
+#: concrete/config/imageeditor.php:12
+#: concrete/config/install/base/image_editor.xml:4
+msgctxt "ImageEditorControlSetName"
+msgid "Position"
+msgstr "Pozisyon"
+
+#: concrete/config/imageeditor.php:23
+#: concrete/config/install/base/image_editor.xml:5
+msgctxt "ImageEditorControlSetName"
+msgid "Filter"
+msgstr "Filtrele"
+
+#: concrete/config/imageeditor.php:37
+msgctxt "ImageEditorFilterName"
+msgid "Gaussian Blur"
+msgstr "Gauss Bulanıklığı"
+
+#: concrete/config/imageeditor.php:47
+#: concrete/config/install/base/image_editor.xml:9
+msgctxt "ImageEditorFilterName"
+msgid "Grayscale"
+msgstr "Gri Ton"
+
+#: concrete/config/imageeditor.php:57
+#: concrete/config/install/base/image_editor.xml:8
+msgctxt "ImageEditorFilterName"
+msgid "None"
+msgstr "Hiçbiri"
+
+#: concrete/config/imageeditor.php:67
+#: concrete/config/install/base/image_editor.xml:10
+msgctxt "ImageEditorFilterName"
+msgid "Sepia"
+msgstr "Sepya"
+
+#: concrete/config/imageeditor.php:77
+#: concrete/config/install/base/image_editor.xml:12
+msgctxt "ImageEditorFilterName"
+msgid "Vignette"
+msgstr "Kitap Süsü"
+
 #: concrete/config/app.php:446
 msgid "JPEG"
 msgstr "JPEG"
@@ -13281,6 +13333,22 @@ msgstr "Konu listesi ve benzer blokların bu sayfa listesi bloğuna arama kriter
 #: concrete/blocks/page_list/page_list_form.php:98
 msgid "Filter by Public Date"
 msgstr "Herkese Açık Yayınlanma Tarihine Göre Filtrele"
+
+#: concrete/blocks/page_list/page_list_form.php:103
+msgid "Show All"
+msgstr "Tümünü Göster"
+
+#: concrete/blocks/page_list/page_list_form.php:105
+msgid "Before Today"
+msgstr "Bugünden Önce"
+
+#: concrete/blocks/page_list/page_list_form.php:106
+msgid "After Today"
+msgstr "Bugünden Sonra"
+
+#: concrete/blocks/page_list/page_list_form.php:107
+msgid "Between"
+msgstr "Arasında"
 
 #: concrete/blocks/page_list/page_list_form.php:123
 msgid "Days in the Past"
@@ -16725,14 +16793,6 @@ msgstr " dakika."
 msgid "Total Logged: %s"
 msgstr "Günlüğe Alınan Toplam: %s"
 
-#: concrete/single_pages/dashboard/system/optimization/query_log.php:33
-msgid "Times Run"
-msgstr "Çalıştırılma Sayısı"
-
-#: concrete/single_pages/dashboard/system/optimization/query_log.php:34
-msgid "Query"
-msgstr "Sorgu"
-
 #: concrete/single_pages/dashboard/system/optimization/query_log.php:43
 msgid "Query Details"
 msgstr "Sorgu Detayları"
@@ -16741,7 +16801,13 @@ msgstr "Sorgu Detayları"
 msgid "Clear Log"
 msgstr "Günlüğü Temizle"
 
-#: concrete/single_pages/dashboard/system/optimization/query_log.php:66
+#: concrete/single_pages/dashboard/reports/forms.php:214
+#: concrete/single_pages/dashboard/reports/logs.php:10
+#: concrete/single_pages/dashboard/system/optimization/query_log.php:65
+msgid "Export to CSV"
+msgstr "CSV Formatında Dışa Aktar"
+
+#: concrete/single_pages/dashboard/system/optimization/query_log.php:72
 msgid "The database query log is empty."
 msgstr "Veritabanı sorgu günlüğü boş."
 
@@ -16990,11 +17056,6 @@ msgstr "Son Yanıt"
 #: concrete/single_pages/dashboard/reports/surveys.php:97
 msgid "Number of Responses"
 msgstr "Yanıt Sayısı"
-
-#: concrete/single_pages/dashboard/reports/forms.php:214
-#: concrete/single_pages/dashboard/reports/logs.php:10
-msgid "Export to CSV"
-msgstr "CSV Formatında Dışa Aktar"
 
 #: concrete/single_pages/dashboard/reports/logs.php:41
 #, php-format
@@ -19893,40 +19954,10 @@ msgstr "Bir kullanıcının kullanıcı arama arayüzünü görüntüleyebilmesi
 msgid "SecurImage (Default)"
 msgstr "SecurImage (Varsayılan)"
 
-#: concrete/config/install/base/image_editor.xml:4
-msgctxt "ImageEditorControlSetName"
-msgid "Position"
-msgstr "Pozisyon"
-
-#: concrete/config/install/base/image_editor.xml:5
-msgctxt "ImageEditorControlSetName"
-msgid "Filter"
-msgstr "Filtrele"
-
-#: concrete/config/install/base/image_editor.xml:8
-msgctxt "ImageEditorFilterName"
-msgid "None"
-msgstr "Hiçbiri"
-
-#: concrete/config/install/base/image_editor.xml:9
-msgctxt "ImageEditorFilterName"
-msgid "Grayscale"
-msgstr "Gri Ton"
-
-#: concrete/config/install/base/image_editor.xml:10
-msgctxt "ImageEditorFilterName"
-msgid "Sepia"
-msgstr "Sepya"
-
 #: concrete/config/install/base/image_editor.xml:11
 msgctxt "ImageEditorFilterName"
 msgid "Blur"
 msgstr "Bulanık"
-
-#: concrete/config/install/base/image_editor.xml:12
-msgctxt "ImageEditorFilterName"
-msgid "Vignette"
-msgstr "Kitap Süsü"
 
 #: concrete/config/install/base/blocktypes.xml:54
 msgctxt "SystemContentEditorSnippetName"

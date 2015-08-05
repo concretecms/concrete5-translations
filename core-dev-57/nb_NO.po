@@ -6,10 +6,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-08-01 04:00+0000\n"
-"PO-Revision-Date: 2015-08-01 08:48+0000\n"
+"POT-Creation-Date: 2015-08-04 04:00+0000\n"
+"PO-Revision-Date: 2015-08-04 08:48+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
-"Language-Team: Norwegian Bokmål (Norway) (http://www.transifex.com/projects/p/concrete5/language/nb_NO/)\n"
+"Language-Team: Norwegian Bokmål (Norway) (http://www.transifex.com/concrete5/concrete5/language/nb_NO/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -3690,6 +3690,16 @@ msgstr "Cache indstillinger gemt."
 msgid "Database query log cleared."
 msgstr ""
 
+#: concrete/controllers/single_page/dashboard/system/optimization/query_log.php:67
+#: concrete/single_pages/dashboard/system/optimization/query_log.php:33
+msgid "Times Run"
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/optimization/query_log.php:68
+#: concrete/single_pages/dashboard/system/optimization/query_log.php:34
+msgid "Query"
+msgstr ""
+
 #: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:43
 #: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:66
 msgid "No job specified."
@@ -3746,6 +3756,7 @@ msgstr "Job tidsplan opdateret med succes."
 msgid "Job Set schedule updated successfully."
 msgstr "Job sæt tidsplan opdateret med succes."
 
+#: concrete/blocks/page_list/page_list_form.php:104
 #: concrete/controllers/single_page/dashboard/reports/statistics.php:50
 #: concrete/src/Localization/Service/Date.php:461
 msgid "Today"
@@ -6598,7 +6609,7 @@ msgid ""
 "or the target directory does not exist."
 msgstr "Kan ikke kopiere mappen %s til %s. Måske er tilladelserne forkert indstillet, eller mappen du kopierer til eksisterer ikke."
 
-#: concrete/src/File/Image/Thumbnail/Type/Type.php:246
+#: concrete/src/File/Image/Thumbnail/Type/Version.php:82
 #, php-format
 msgid "%s (Retina Version)"
 msgstr ""
@@ -7122,7 +7133,7 @@ msgstr ""
 msgid "This page template is not a valid template for this page type."
 msgstr ""
 
-#: concrete/src/Page/Collection/Version/Version.php:245
+#: concrete/src/Page/Collection/Version/Version.php:243
 #, php-format
 msgid "New Version %s"
 msgstr "Ny version %s"
@@ -11824,6 +11835,47 @@ msgstr "Tom Hjemmeside"
 msgid "Creates an empty site using the unstyled Elemental theme."
 msgstr ""
 
+#: concrete/config/imageeditor.php:12
+#: concrete/config/install/base/image_editor.xml:4
+msgctxt "ImageEditorControlSetName"
+msgid "Position"
+msgstr "Position"
+
+#: concrete/config/imageeditor.php:23
+#: concrete/config/install/base/image_editor.xml:5
+msgctxt "ImageEditorControlSetName"
+msgid "Filter"
+msgstr "Filter"
+
+#: concrete/config/imageeditor.php:37
+msgctxt "ImageEditorFilterName"
+msgid "Gaussian Blur"
+msgstr ""
+
+#: concrete/config/imageeditor.php:47
+#: concrete/config/install/base/image_editor.xml:9
+msgctxt "ImageEditorFilterName"
+msgid "Grayscale"
+msgstr ""
+
+#: concrete/config/imageeditor.php:57
+#: concrete/config/install/base/image_editor.xml:8
+msgctxt "ImageEditorFilterName"
+msgid "None"
+msgstr "Ingen"
+
+#: concrete/config/imageeditor.php:67
+#: concrete/config/install/base/image_editor.xml:10
+msgctxt "ImageEditorFilterName"
+msgid "Sepia"
+msgstr ""
+
+#: concrete/config/imageeditor.php:77
+#: concrete/config/install/base/image_editor.xml:12
+msgctxt "ImageEditorFilterName"
+msgid "Vignette"
+msgstr ""
+
 #: concrete/config/app.php:446
 msgid "JPEG"
 msgstr "JPEG"
@@ -13309,6 +13361,22 @@ msgstr ""
 
 #: concrete/blocks/page_list/page_list_form.php:98
 msgid "Filter by Public Date"
+msgstr ""
+
+#: concrete/blocks/page_list/page_list_form.php:103
+msgid "Show All"
+msgstr ""
+
+#: concrete/blocks/page_list/page_list_form.php:105
+msgid "Before Today"
+msgstr ""
+
+#: concrete/blocks/page_list/page_list_form.php:106
+msgid "After Today"
+msgstr ""
+
+#: concrete/blocks/page_list/page_list_form.php:107
+msgid "Between"
 msgstr ""
 
 #: concrete/blocks/page_list/page_list_form.php:123
@@ -16757,14 +16825,6 @@ msgstr "minutter."
 msgid "Total Logged: %s"
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/optimization/query_log.php:33
-msgid "Times Run"
-msgstr ""
-
-#: concrete/single_pages/dashboard/system/optimization/query_log.php:34
-msgid "Query"
-msgstr ""
-
 #: concrete/single_pages/dashboard/system/optimization/query_log.php:43
 msgid "Query Details"
 msgstr ""
@@ -16773,7 +16833,13 @@ msgstr ""
 msgid "Clear Log"
 msgstr "Rens log"
 
-#: concrete/single_pages/dashboard/system/optimization/query_log.php:66
+#: concrete/single_pages/dashboard/reports/forms.php:214
+#: concrete/single_pages/dashboard/reports/logs.php:10
+#: concrete/single_pages/dashboard/system/optimization/query_log.php:65
+msgid "Export to CSV"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/optimization/query_log.php:72
 msgid "The database query log is empty."
 msgstr ""
 
@@ -17022,11 +17088,6 @@ msgstr "Sidste svar"
 #: concrete/single_pages/dashboard/reports/surveys.php:97
 msgid "Number of Responses"
 msgstr "Antal svar"
-
-#: concrete/single_pages/dashboard/reports/forms.php:214
-#: concrete/single_pages/dashboard/reports/logs.php:10
-msgid "Export to CSV"
-msgstr ""
 
 #: concrete/single_pages/dashboard/reports/logs.php:41
 #, php-format
@@ -19926,39 +19987,9 @@ msgstr ""
 msgid "SecurImage (Default)"
 msgstr "SecurImage (Standard)"
 
-#: concrete/config/install/base/image_editor.xml:4
-msgctxt "ImageEditorControlSetName"
-msgid "Position"
-msgstr "Position"
-
-#: concrete/config/install/base/image_editor.xml:5
-msgctxt "ImageEditorControlSetName"
-msgid "Filter"
-msgstr "Filter"
-
-#: concrete/config/install/base/image_editor.xml:8
-msgctxt "ImageEditorFilterName"
-msgid "None"
-msgstr "Ingen"
-
-#: concrete/config/install/base/image_editor.xml:9
-msgctxt "ImageEditorFilterName"
-msgid "Grayscale"
-msgstr ""
-
-#: concrete/config/install/base/image_editor.xml:10
-msgctxt "ImageEditorFilterName"
-msgid "Sepia"
-msgstr ""
-
 #: concrete/config/install/base/image_editor.xml:11
 msgctxt "ImageEditorFilterName"
 msgid "Blur"
-msgstr ""
-
-#: concrete/config/install/base/image_editor.xml:12
-msgctxt "ImageEditorFilterName"
-msgid "Vignette"
 msgstr ""
 
 #: concrete/config/install/base/blocktypes.xml:54

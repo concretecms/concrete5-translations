@@ -7,10 +7,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-08-01 04:00+0000\n"
-"PO-Revision-Date: 2015-08-01 08:51+0000\n"
+"POT-Creation-Date: 2015-08-04 04:00+0000\n"
+"PO-Revision-Date: 2015-08-04 10:45+0000\n"
 "Last-Translator: Heikki Ylipaavalniemi\n"
-"Language-Team: Finnish (Finland) (http://www.transifex.com/projects/p/concrete5/language/fi_FI/)\n"
+"Language-Team: Finnish (Finland) (http://www.transifex.com/concrete5/concrete5/language/fi_FI/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -3691,6 +3691,16 @@ msgstr "Välimuistin asetukset tallennettu."
 msgid "Database query log cleared."
 msgstr "Tietokantakyselyiden loki tyhjennetty."
 
+#: concrete/controllers/single_page/dashboard/system/optimization/query_log.php:67
+#: concrete/single_pages/dashboard/system/optimization/query_log.php:33
+msgid "Times Run"
+msgstr "Ajettu kertaa"
+
+#: concrete/controllers/single_page/dashboard/system/optimization/query_log.php:68
+#: concrete/single_pages/dashboard/system/optimization/query_log.php:34
+msgid "Query"
+msgstr "Kysely"
+
 #: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:43
 #: concrete/controllers/single_page/dashboard/system/optimization/jobs.php:66
 msgid "No job specified."
@@ -3747,6 +3757,7 @@ msgstr "Työn ajastus päivitetty onnistuneesti."
 msgid "Job Set schedule updated successfully."
 msgstr "Töiden ryhmän ajastus päivitetty onnistuneesti."
 
+#: concrete/blocks/page_list/page_list_form.php:104
 #: concrete/controllers/single_page/dashboard/reports/statistics.php:50
 #: concrete/src/Localization/Service/Date.php:461
 msgid "Today"
@@ -6599,7 +6610,7 @@ msgid ""
 "or the target directory does not exist."
 msgstr "Hakemiston %s kopiointi kohtaan %s epäonnistui. Ehkä oikeudet ovat asetettu väärin tai kohdehakemistoa ei ole olemassa."
 
-#: concrete/src/File/Image/Thumbnail/Type/Type.php:246
+#: concrete/src/File/Image/Thumbnail/Type/Version.php:82
 #, php-format
 msgid "%s (Retina Version)"
 msgstr "%s (retinaversio)"
@@ -7123,7 +7134,7 @@ msgstr "Sinun täytyy valita sivupohja."
 msgid "This page template is not a valid template for this page type."
 msgstr "Tämä sivupohja ei ole hyväksytty pohja tälle sivutyypille."
 
-#: concrete/src/Page/Collection/Version/Version.php:245
+#: concrete/src/Page/Collection/Version/Version.php:243
 #, php-format
 msgid "New Version %s"
 msgstr "Uusi versio %s"
@@ -11825,6 +11836,47 @@ msgstr "Tyhjä sivusto"
 msgid "Creates an empty site using the unstyled Elemental theme."
 msgstr "Luo tyhjän sivuston käyttäen ilman tyylejä olevaa Elemental-teemaa."
 
+#: concrete/config/imageeditor.php:12
+#: concrete/config/install/base/image_editor.xml:4
+msgctxt "ImageEditorControlSetName"
+msgid "Position"
+msgstr "Sijainti"
+
+#: concrete/config/imageeditor.php:23
+#: concrete/config/install/base/image_editor.xml:5
+msgctxt "ImageEditorControlSetName"
+msgid "Filter"
+msgstr "Suodata"
+
+#: concrete/config/imageeditor.php:37
+msgctxt "ImageEditorFilterName"
+msgid "Gaussian Blur"
+msgstr "Gauss-sumennus"
+
+#: concrete/config/imageeditor.php:47
+#: concrete/config/install/base/image_editor.xml:9
+msgctxt "ImageEditorFilterName"
+msgid "Grayscale"
+msgstr "Harmaasävyinen"
+
+#: concrete/config/imageeditor.php:57
+#: concrete/config/install/base/image_editor.xml:8
+msgctxt "ImageEditorFilterName"
+msgid "None"
+msgstr "Ei mitään"
+
+#: concrete/config/imageeditor.php:67
+#: concrete/config/install/base/image_editor.xml:10
+msgctxt "ImageEditorFilterName"
+msgid "Sepia"
+msgstr "Seepia"
+
+#: concrete/config/imageeditor.php:77
+#: concrete/config/install/base/image_editor.xml:12
+msgctxt "ImageEditorFilterName"
+msgid "Vignette"
+msgstr "Vignetti"
+
 #: concrete/config/app.php:446
 msgid "JPEG"
 msgstr "JPEG"
@@ -13311,6 +13363,22 @@ msgstr "Sallii muiden lohkojen, kuten aihelista-lohkon, lähettää aihekriteere
 #: concrete/blocks/page_list/page_list_form.php:98
 msgid "Filter by Public Date"
 msgstr "Suodata julkaisupäivän mukaan"
+
+#: concrete/blocks/page_list/page_list_form.php:103
+msgid "Show All"
+msgstr "Näytä kaikki"
+
+#: concrete/blocks/page_list/page_list_form.php:105
+msgid "Before Today"
+msgstr "Ennen tätä päivää"
+
+#: concrete/blocks/page_list/page_list_form.php:106
+msgid "After Today"
+msgstr "Tämän päivän jälkeen"
+
+#: concrete/blocks/page_list/page_list_form.php:107
+msgid "Between"
+msgstr "Välillä"
 
 #: concrete/blocks/page_list/page_list_form.php:123
 msgid "Days in the Past"
@@ -16758,14 +16826,6 @@ msgstr "minuuttia"
 msgid "Total Logged: %s"
 msgstr "Yhteensä lokissa: %s"
 
-#: concrete/single_pages/dashboard/system/optimization/query_log.php:33
-msgid "Times Run"
-msgstr "Ajettu kertaa"
-
-#: concrete/single_pages/dashboard/system/optimization/query_log.php:34
-msgid "Query"
-msgstr "Kysely"
-
 #: concrete/single_pages/dashboard/system/optimization/query_log.php:43
 msgid "Query Details"
 msgstr "Kyselyn tiedot"
@@ -16774,7 +16834,13 @@ msgstr "Kyselyn tiedot"
 msgid "Clear Log"
 msgstr "Tyhjennä loki"
 
-#: concrete/single_pages/dashboard/system/optimization/query_log.php:66
+#: concrete/single_pages/dashboard/reports/forms.php:214
+#: concrete/single_pages/dashboard/reports/logs.php:10
+#: concrete/single_pages/dashboard/system/optimization/query_log.php:65
+msgid "Export to CSV"
+msgstr "Vie CSV-tiedostoon"
+
+#: concrete/single_pages/dashboard/system/optimization/query_log.php:72
 msgid "The database query log is empty."
 msgstr "Tietokannan kyselyloki on tyhjä."
 
@@ -17023,11 +17089,6 @@ msgstr "Viimeisin vastaus"
 #: concrete/single_pages/dashboard/reports/surveys.php:97
 msgid "Number of Responses"
 msgstr "Vastausmäärä"
-
-#: concrete/single_pages/dashboard/reports/forms.php:214
-#: concrete/single_pages/dashboard/reports/logs.php:10
-msgid "Export to CSV"
-msgstr "Vie CSV-tiedostoon"
 
 #: concrete/single_pages/dashboard/reports/logs.php:41
 #, php-format
@@ -19927,40 +19988,10 @@ msgstr "Määrittelee pääseekö käyttäjä näkemään käyttäjähaun käytt
 msgid "SecurImage (Default)"
 msgstr "SecurImage (oletus)"
 
-#: concrete/config/install/base/image_editor.xml:4
-msgctxt "ImageEditorControlSetName"
-msgid "Position"
-msgstr "Sijainti"
-
-#: concrete/config/install/base/image_editor.xml:5
-msgctxt "ImageEditorControlSetName"
-msgid "Filter"
-msgstr "Suodata"
-
-#: concrete/config/install/base/image_editor.xml:8
-msgctxt "ImageEditorFilterName"
-msgid "None"
-msgstr "Ei mitään"
-
-#: concrete/config/install/base/image_editor.xml:9
-msgctxt "ImageEditorFilterName"
-msgid "Grayscale"
-msgstr "Harmaasävyinen"
-
-#: concrete/config/install/base/image_editor.xml:10
-msgctxt "ImageEditorFilterName"
-msgid "Sepia"
-msgstr "Seepia"
-
 #: concrete/config/install/base/image_editor.xml:11
 msgctxt "ImageEditorFilterName"
 msgid "Blur"
 msgstr "Sumennus"
-
-#: concrete/config/install/base/image_editor.xml:12
-msgctxt "ImageEditorFilterName"
-msgid "Vignette"
-msgstr "Vignetti"
 
 #: concrete/config/install/base/blocktypes.xml:54
 msgctxt "SystemContentEditorSnippetName"
