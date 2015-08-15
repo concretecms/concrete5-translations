@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-08-13 04:00+0000\n"
-"PO-Revision-Date: 2015-08-14 00:19+0000\n"
+"POT-Creation-Date: 2015-08-14 04:00+0000\n"
+"PO-Revision-Date: 2015-08-14 14:03+0000\n"
 "Last-Translator: Anton Schepetkov <schepetkov@gmail.com>\n"
 "Language-Team: Russian (Russia) (http://www.transifex.com/concrete5/concrete5/language/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -472,26 +472,26 @@ msgstr "Ошибочный ключ. Пожалуйста, посетите ст
 msgid "Please provide both username and password."
 msgstr "Необходимо указать имя пользователя и пароль."
 
-#: concrete/authentication/concrete/controller.php:273
+#: concrete/authentication/concrete/controller.php:268
 #: concrete/controllers/single_page/login.php:44
 msgid "Your session has expired. Please sign in again."
 msgstr "Ваша сессия истекла. Попробуйте авторизоваться повторно."
 
-#: concrete/authentication/concrete/controller.php:278
+#: concrete/authentication/concrete/controller.php:273
 msgid ""
 "This account has not yet been validated. Please check the email associated "
 "with this account and follow the link it contains."
 msgstr "Эта учетная запись не подтверждена. Пожалуйста, проверьте ваш электронный почтовый ящик. Вам было выслано письмо, содержащее ссылку для подтверждения. Перейдите по ней."
 
-#: concrete/authentication/concrete/controller.php:282
+#: concrete/authentication/concrete/controller.php:283
 msgid "Invalid email address or password."
 msgstr "Неверный email или пароль"
 
-#: concrete/authentication/concrete/controller.php:284
+#: concrete/authentication/concrete/controller.php:285
 msgid "Invalid username or password."
 msgstr "Неверное имя пользователя или пароль"
 
-#: concrete/authentication/concrete/controller.php:288
+#: concrete/authentication/concrete/controller.php:289
 #: concrete/controllers/single_page/login.php:39
 msgid "This user is inactive. Please contact us regarding this account."
 msgstr "Пользователь не активен. Свяжитесь с нами для рассмотрения."
@@ -942,7 +942,7 @@ msgstr "Нет доступа к менеджеру файлов."
 msgid "Unable to copy one or more files."
 msgstr "Невозможно скопировать один или несколько файлов."
 
-#: concrete/blocks/form/controller.php:416
+#: concrete/blocks/form/controller.php:436
 #: concrete/controllers/backend/user_interface/file.php:21
 #: concrete/src/File/Importer.php:47 concrete/tools/files/duplicate.php:43
 msgid "Invalid file."
@@ -1028,8 +1028,8 @@ msgstr "Вы уверенны что хотите удалить следующ�
 #: concrete/views/dialogs/page/delete.php:21
 #: concrete/views/dialogs/page/delete_alias.php:10
 #: concrete/views/panels/add.php:226
-#: concrete/views/panels/page/versions.php:37
-#: concrete/views/panels/page/versions.php:296
+#: concrete/views/panels/page/versions.php:40
+#: concrete/views/panels/page/versions.php:299
 msgid "Delete"
 msgstr "Удалить"
 
@@ -4947,7 +4947,7 @@ msgstr "Дизайн и тип"
 #: concrete/elements/panels/page.php:121
 #: concrete/views/dialogs/file/properties.php:15
 #: concrete/views/dialogs/file/properties.php:86
-#: concrete/views/panels/page/versions.php:291
+#: concrete/views/panels/page/versions.php:294
 msgid "Versions"
 msgstr "Версии"
 
@@ -6465,17 +6465,17 @@ msgstr "Неудачная регистрация"
 #: concrete/mail/mail_importer_error.php:8
 #: concrete/mail/private_message.php:10
 #: concrete/mail/private_message_response_enabled.php:8
-#: concrete/src/User/UserInfo.php:378
+#: concrete/src/User/UserInfo.php:379
 #, php-format
 msgid "Subject: %s"
 msgstr "Тема: %s"
 
-#: concrete/src/User/UserInfo.php:380
+#: concrete/src/User/UserInfo.php:381
 #, php-format
 msgid "Message: %s"
 msgstr "Сообщение: %s"
 
-#: concrete/src/User/UserInfo.php:387
+#: concrete/src/User/UserInfo.php:388
 msgid "(No Subject)"
 msgstr "(без темы)"
 
@@ -6645,15 +6645,15 @@ msgstr "%s (для дисплея retina)"
 msgid "Please remove all storage locations using this storage type."
 msgstr "Пожалуйста удалите все хранилища, использующие данный тип хранилища."
 
-#: concrete/src/File/StorageLocation/Configuration/LocalConfiguration.php:76
+#: concrete/src/File/StorageLocation/Configuration/LocalConfiguration.php:78
 msgid "You must include a root path for this storage location."
 msgstr "Необходимо указать корневой путь для этого хранилища. "
 
-#: concrete/src/File/StorageLocation/Configuration/LocalConfiguration.php:78
+#: concrete/src/File/StorageLocation/Configuration/LocalConfiguration.php:80
 msgid "The specified root path does not exist."
 msgstr "Указанный корневой путь не  существует."
 
-#: concrete/src/File/StorageLocation/Configuration/LocalConfiguration.php:80
+#: concrete/src/File/StorageLocation/Configuration/LocalConfiguration.php:82
 msgid ""
 "Invalid path to file storage location. You may not choose the root "
 "directory."
@@ -6688,7 +6688,7 @@ msgstr "Приложение"
 msgid "File"
 msgstr "Файл"
 
-#: concrete/blocks/form/controller.php:412 concrete/src/File/Importer.php:50
+#: concrete/blocks/form/controller.php:432 concrete/src/File/Importer.php:50
 msgid "Invalid file extension."
 msgstr "Неверное расширение файла."
 
@@ -7079,24 +7079,24 @@ msgid "Foundation"
 msgstr "Foundation"
 
 #. %1$s is a filename, %2$s is a PHP class name
-#: concrete/src/Page/Theme/Theme.php:593
+#: concrete/src/Page/Theme/Theme.php:594
 #, php-format
 msgid "The theme file %1$s does not defines the class %2$s"
 msgstr "Файл темы %1$s не определяет класс %2$s"
 
 #. %1$s is a filename, %2$s and %3$s are PHP class names
-#: concrete/src/Page/Theme/Theme.php:598
+#: concrete/src/Page/Theme/Theme.php:599
 #, php-format
 msgid ""
 "The theme file %1$s should define a %2$s class that extends the class %3$s"
 msgstr "Файл темы%1$s должен определять класс %2$s, а тот в свою очередь расширять класс %3$s"
 
 #: concrete/single_pages/dashboard/pages/types/form.php:54
-#: concrete/src/Page/Theme/Theme.php:729
+#: concrete/src/Page/Theme/Theme.php:730
 msgid "(No Name)"
 msgstr "(Без имени)"
 
-#: concrete/src/Page/Theme/Theme.php:774
+#: concrete/src/Page/Theme/Theme.php:775
 msgid "(No Description)"
 msgstr "(Без описания)"
 
@@ -7167,7 +7167,7 @@ msgstr "Этот шаблон страницы не является допус�
 msgid "New Version %s"
 msgstr "Новая версия %s"
 
-#: concrete/src/Page/Collection/Collection.php:290
+#: concrete/src/Page/Collection/Collection.php:295
 #, php-format
 msgid "Version %d"
 msgstr "Версия %d"
@@ -7184,16 +7184,16 @@ msgstr "Все"
 msgid "Featured Items"
 msgstr "Отобранные позиции"
 
-#: concrete/src/Page/Page.php:2374
+#: concrete/src/Page/Page.php:2381
 #, php-format
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "Страница \"%s\", расположенная в \"%s\" удалена"
 
-#: concrete/src/Page/Page.php:2374 concrete/src/Page/Page.php:2435
+#: concrete/src/Page/Page.php:2381 concrete/src/Page/Page.php:2442
 msgid "Page Action"
 msgstr "Действие страницы"
 
-#: concrete/src/Page/Page.php:2435
+#: concrete/src/Page/Page.php:2442
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "Страница \"%s\", расположенная в \"%s\" перемещена в корзину"
@@ -7266,7 +7266,7 @@ msgctxt "Log channel"
 msgid "Exceptions"
 msgstr "Исключения"
 
-#: concrete/blocks/core_area_layout/controller.php:188
+#: concrete/blocks/core_area_layout/controller.php:190
 #: concrete/src/Backup/ContentImporter.php:311
 #, php-format
 msgid "Invalid block type handle: %s"
@@ -7824,7 +7824,7 @@ msgstr "Первоначально запрошено %s."
 
 #: concrete/single_pages/dashboard/conversations/messages.php:100
 #: concrete/src/Workflow/Progress/Action/ApprovalAction.php:6
-#: concrete/views/panels/page/versions.php:32
+#: concrete/views/panels/page/versions.php:35
 msgid "Approve"
 msgstr "Утвердить"
 
@@ -8800,7 +8800,7 @@ msgstr "Элементы, возвращаемые через getPresets(), об
 msgid "Saved Presets"
 msgstr "Сохраненные предустановки"
 
-#: concrete/src/Area/Layout/Column.php:191
+#: concrete/src/Area/Layout/Column.php:155
 #, php-format
 msgid "Column %s"
 msgstr "Колонка %s"
@@ -10957,7 +10957,7 @@ msgstr "Подпишитесь, чтобы получать на email увед�
 msgid "Subscribe"
 msgstr "Подписаться"
 
-#: concrete/views/panels/page/versions.php:35
+#: concrete/views/panels/page/versions.php:38
 #: concrete/views/panels/sitemap.php:5
 msgid "New Page"
 msgstr "Новая страница"
@@ -11206,26 +11206,34 @@ msgid ""
 "Reset the theme customizations for just this page, or your entire site?"
 msgstr "Сбросить настройку темы для этой страницы или для всего сайта?"
 
-#: concrete/views/panels/page/versions.php:26
+#: concrete/views/panels/page/versions.php:19
+msgid "Edit by"
+msgstr "Отредактировал:"
+
+#: concrete/views/panels/page/versions.php:24
+msgid "Approved by"
+msgstr "Утвердил: "
+
+#: concrete/views/panels/page/versions.php:29
 msgid "This is the approved page version."
 msgstr "Это утвержденная версия страницы."
 
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:197
-#: concrete/views/panels/page/versions.php:33
+#: concrete/views/panels/page/versions.php:36
 msgid "Duplicate"
 msgstr "Дублировать"
 
-#: concrete/views/panels/page/versions.php:51
-#: concrete/views/panels/page/versions.php:53
+#: concrete/views/panels/page/versions.php:54
+#: concrete/views/panels/page/versions.php:56
 msgid "&larr; Newer"
 msgstr "&larr; Новые"
 
-#: concrete/views/panels/page/versions.php:56
-#: concrete/views/panels/page/versions.php:58
+#: concrete/views/panels/page/versions.php:59
+#: concrete/views/panels/page/versions.php:61
 msgid "Older &rarr;"
 msgstr "Старые &rarr;"
 
-#: concrete/views/panels/page/versions.php:296
+#: concrete/views/panels/page/versions.php:299
 msgid "Compare"
 msgstr "Сравнить"
 
@@ -12239,11 +12247,11 @@ msgstr "Широта: %s"
 msgid "Longitude: %s"
 msgstr "Долгота: %s"
 
-#: concrete/blocks/core_stack_display/controller.php:28
+#: concrete/blocks/core_stack_display/controller.php:29
 msgid "Proxy block for stacks added through the UI."
 msgstr "Промежуточный блок для стеков, добавленных через пользовательский интерфейс."
 
-#: concrete/blocks/core_stack_display/controller.php:33
+#: concrete/blocks/core_stack_display/controller.php:34
 msgid "Stack Display"
 msgstr "Отображение стека"
 
@@ -12350,11 +12358,11 @@ msgstr "Хотите удалить эту разметку? Это привед
 msgid "Update Layout"
 msgstr "Обновить разметку"
 
-#: concrete/blocks/core_area_layout/controller.php:29
+#: concrete/blocks/core_area_layout/controller.php:31
 msgid "Proxy block for area layouts."
 msgstr "Промежуточный блок для работы с макетами областей."
 
-#: concrete/blocks/core_area_layout/controller.php:34
+#: concrete/blocks/core_area_layout/controller.php:36
 msgid "Area Layout"
 msgstr "Разметка области"
 
@@ -12945,33 +12953,33 @@ msgstr "Добавьте как минимум один вопрос в вашу
 msgid "Thanks!"
 msgstr "Спасибо!"
 
-#: concrete/blocks/form/controller.php:332
+#: concrete/blocks/form/controller.php:352
 msgid ""
 "Oops, something is wrong with the form you posted (it doesn't have a "
 "question set id)."
 msgstr "Ну воот! Что-то не так с формой, которую вы заполнили (в ней не определены идентификаторы вопросов)."
 
-#: concrete/blocks/form/controller.php:344
+#: concrete/blocks/form/controller.php:364
 msgid "Incorrect captcha code"
 msgstr "Ошибочный код проверки"
 
-#: concrete/blocks/form/controller.php:364
+#: concrete/blocks/form/controller.php:384
 msgid "You must enter a valid email address."
 msgstr "Вы должны ввести правильный email адресс."
 
-#: concrete/blocks/form/controller.php:386
+#: concrete/blocks/form/controller.php:406
 msgid "Complete required fields *"
 msgstr "Пожалуйста заполните все обязательные поля."
 
-#: concrete/blocks/form/controller.php:435
+#: concrete/blocks/form/controller.php:455
 msgid "Please correct the following errors:"
 msgstr "Пожалуйста исправьте следующие ошибки:"
 
-#: concrete/blocks/form/controller.php:481
+#: concrete/blocks/form/controller.php:501
 msgid "No file specified"
 msgstr "Файл не указан"
 
-#: concrete/blocks/form/controller.php:550
+#: concrete/blocks/form/controller.php:570
 #, php-format
 msgid "%s Form Submission"
 msgstr "Отправка формы %s"
