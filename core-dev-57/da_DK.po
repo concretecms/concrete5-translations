@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-08-22 04:00+0000\n"
-"PO-Revision-Date: 2015-08-22 09:47+0000\n"
+"POT-Creation-Date: 2015-08-25 04:00+0000\n"
+"PO-Revision-Date: 2015-08-25 18:20+0000\n"
 "Last-Translator: Michael Jensen-Maar <maar@maargrafisk.dk>\n"
 "Language-Team: Danish (Denmark) (http://www.transifex.com/concrete5/concrete5/language/da_DK/)\n"
 "MIME-Version: 1.0\n"
@@ -512,9 +512,11 @@ msgstr "Denne e-mail-adresse er blevet valideret! Du kan nu få adgang til funkt
 msgid "facebook"
 msgstr "facebook"
 
-#: concrete/controllers/backend/block/action.php:26
-#: concrete/controllers/backend/block/action.php:43
-#: concrete/controllers/backend/block/action.php:61
+#: concrete/controllers/backend/block/action.php:28
+#: concrete/controllers/backend/block/action.php:45
+#: concrete/controllers/backend/block/action.php:63
+#: concrete/controllers/backend/block/action.php:82
+#: concrete/controllers/backend/block/action.php:105
 #: concrete/controllers/backend/page.php:58
 #: concrete/controllers/backend/user_interface.php:40
 #: concrete/controllers/backend/user_interface/block.php:47
@@ -2420,8 +2422,8 @@ msgid ""
 msgstr "Uventet fejl opstod ved forbindelse af din hjemmeside til markedspladsen."
 
 #: concrete/controllers/single_page/dashboard/extend/connect.php:31
-#: concrete/src/Marketplace/Marketplace.php:233
-#: concrete/src/Marketplace/Marketplace.php:294
+#: concrete/src/Marketplace/Marketplace.php:245
+#: concrete/src/Marketplace/Marketplace.php:312
 msgid "You do not have permission to connect this site to the marketplace."
 msgstr "Du har ikke tilladelse til at forbinde denne hjemmeside til markedspladsen."
 
@@ -5432,7 +5434,7 @@ msgid ""
 msgstr "Alt, hvad der ikke er specifikke for denne side sker her. Administrer brugere, filer, rapportering af data og indstillinger for hele hjemmesiden."
 
 #: concrete/blocks/html/controller.php:28 concrete/blocks/image/form.php:44
-#: concrete/config/app.php:453
+#: concrete/config/app.php:455
 #: concrete/controllers/frontend/assets_localization.php:338
 msgid "HTML"
 msgstr "HTML"
@@ -6512,37 +6514,37 @@ msgstr "Ukendt Bruger"
 msgid "Signup Date"
 msgstr "Dato for Tilmelding"
 
-#: concrete/src/Mail/Service.php:503
+#: concrete/src/Mail/Service.php:504
 msgid "Mail Exception Occurred. Unable to send mail: "
 msgstr "Fejl ved udsendelse af mail: "
 
-#: concrete/src/Mail/Service.php:506 concrete/src/Mail/Service.php:527
+#: concrete/src/Mail/Service.php:507 concrete/src/Mail/Service.php:527
 msgid "Template Used"
 msgstr "Tema i brug"
 
 #: concrete/single_pages/account/messages/inbox.php:83
 #: concrete/single_pages/account/messages/inbox.php:163
-#: concrete/src/Mail/Service.php:507
+#: concrete/src/Mail/Service.php:508
 msgid "To"
 msgstr "Til"
 
 #: concrete/single_pages/account/messages/inbox.php:83
-#: concrete/src/Mail/Service.php:508
+#: concrete/src/Mail/Service.php:509
 msgid "From"
 msgstr "Fra"
 
-#: concrete/src/Mail/Service.php:510
+#: concrete/src/Mail/Service.php:511
 msgid "Reply-To"
 msgstr "Svar til"
 
 #: concrete/blocks/core_conversation_message/composer.php:12
 #: concrete/single_pages/account/messages/inbox.php:84
 #: concrete/single_pages/account/messages/inbox.php:168
-#: concrete/src/Mail/Service.php:512
+#: concrete/src/Mail/Service.php:513
 msgid "Subject"
 msgstr "Emne"
 
-#: concrete/src/Mail/Service.php:513
+#: concrete/src/Mail/Service.php:514
 msgid "Body"
 msgstr "Besked"
 
@@ -6640,9 +6642,13 @@ msgid ""
 "directory."
 msgstr "Ugyldig sti til fil lagerets placering. Du må ikke vælge rodmappen."
 
-#: concrete/src/File/Service/File.php:135
+#: concrete/src/File/Service/File.php:136
 msgid "An error occurred while attempting to determine file permissions."
 msgstr "Der opstod en fejl under forsøget på at bestemme filtilladelser."
+
+#: concrete/src/File/Service/File.php:346
+msgid "Request timed out."
+msgstr "Anmodning fik timeout."
 
 #: concrete/src/File/Type/Type.php:70
 msgid "Video"
@@ -8698,7 +8704,12 @@ msgstr "Gratis"
 msgid "Unable to connect to marketplace to retrieve item"
 msgstr "Kan ikke forbinde til markedspladsen"
 
-#: concrete/src/Marketplace/Marketplace.php:213
+#: concrete/src/Marketplace/Marketplace.php:198
+#: concrete/src/Marketplace/Marketplace.php:210
+msgid "Unable to generate a marketplace token. Request timed out."
+msgstr "Kunne ikke generere en markedsplads token. Anmodning fik timeout."
+
+#: concrete/src/Marketplace/Marketplace.php:225
 msgid ""
 "Unable to generate a marketplace token. Please ensure that allow_url_fopen "
 "is turned on, or that cURL is enabled on your server. If these are both "
@@ -8708,7 +8719,7 @@ msgid ""
 "href=\"mailto:help@concrete5.org\">help@concrete5.org</a>."
 msgstr "Kan ikke lave en nøgle til markedspladsen. Tjek at url_fopen er tændt, og at cURL er aktiv på din server. Hvis begge er sandt, er det muligt at din IP adresse er blacklistet på vores server. Spørg venligst din webhost hvad din udgående cURL request Ip adresse er, og email det til os på <a href=\"mailto:help@concrete5.org\">help@concrete5.org</a>."
 
-#: concrete/src/Marketplace/Marketplace.php:267
+#: concrete/src/Marketplace/Marketplace.php:285
 msgid "Unable to get information about this product."
 msgstr "Kan ikke få oplysninger om dette produkt."
 
@@ -11887,153 +11898,153 @@ msgctxt "ImageEditorFilterName"
 msgid "Vignette"
 msgstr "Vignette"
 
-#: concrete/config/app.php:448
+#: concrete/config/app.php:450
 msgid "JPEG"
 msgstr "JPEG"
 
-#: concrete/config/app.php:449
+#: concrete/config/app.php:451
 msgid "GIF"
 msgstr "GIF"
 
-#: concrete/config/app.php:450
+#: concrete/config/app.php:452
 msgid "PNG"
 msgstr "PNG"
 
-#: concrete/config/app.php:451
+#: concrete/config/app.php:453
 msgid "Windows Bitmap"
 msgstr "Windows Bitmap"
 
-#: concrete/config/app.php:452
+#: concrete/config/app.php:454
 msgid "TIFF"
 msgstr "TIFF"
 
-#: concrete/config/app.php:454
+#: concrete/config/app.php:456
 msgid "Flash"
 msgstr "Flash"
 
-#: concrete/blocks/feature/form.php:4 concrete/config/app.php:455
+#: concrete/blocks/feature/form.php:4 concrete/config/app.php:457
 #: concrete/single_pages/dashboard/pages/templates/add.php:27
 #: concrete/single_pages/dashboard/pages/templates/view.php:39
 msgid "Icon"
 msgstr "Ikon"
 
-#: concrete/config/app.php:456
+#: concrete/config/app.php:458
 msgid "SVG"
 msgstr "SVG"
 
-#: concrete/config/app.php:457
+#: concrete/config/app.php:459
 msgid "Windows Video"
 msgstr "Windows Video"
 
-#: concrete/config/app.php:458
+#: concrete/config/app.php:460
 msgid "Quicktime"
 msgstr "Quicktime"
 
-#: concrete/config/app.php:459
+#: concrete/config/app.php:461
 msgid "AVI"
 msgstr "AVI"
 
-#: concrete/config/app.php:460
+#: concrete/config/app.php:462
 msgid "3GP"
 msgstr "3GP"
 
-#: concrete/attributes/textarea/type_form.php:8 concrete/config/app.php:461
+#: concrete/attributes/textarea/type_form.php:8 concrete/config/app.php:463
 msgid "Plain Text"
 msgstr "Ren tekst"
 
-#: concrete/config/app.php:462
+#: concrete/config/app.php:464
 msgid "CSV"
 msgstr "CSV"
 
-#: concrete/config/app.php:463
+#: concrete/config/app.php:465
 msgid "XML"
 msgstr "XML"
 
-#: concrete/config/app.php:464
+#: concrete/config/app.php:466
 msgid "PHP"
 msgstr "PHP"
 
-#: concrete/config/app.php:465
+#: concrete/config/app.php:467
 msgid "MS Word"
 msgstr "MS Word"
 
-#: concrete/config/app.php:466
+#: concrete/config/app.php:468
 msgid "Stylesheet"
 msgstr "Stylesheet"
 
-#: concrete/config/app.php:467
+#: concrete/config/app.php:469
 msgid "MP4"
 msgstr "MP4"
 
-#: concrete/config/app.php:468
+#: concrete/config/app.php:470
 msgid "FLV"
 msgstr "FLV"
 
-#: concrete/config/app.php:469
+#: concrete/config/app.php:471
 msgid "MP3"
 msgstr "MP3"
 
-#: concrete/config/app.php:470
+#: concrete/config/app.php:472
 msgid "MP4 Audio"
 msgstr "MP4 Audio"
 
-#: concrete/config/app.php:471
+#: concrete/config/app.php:473
 msgid "Realaudio"
 msgstr "Realaudio"
 
-#: concrete/config/app.php:472
+#: concrete/config/app.php:474
 msgid "Windows Audio"
 msgstr "Windows Audio"
 
-#: concrete/config/app.php:473
+#: concrete/config/app.php:475
 msgid "Rich Text"
 msgstr "Rigt formatteret Tekst"
 
-#: concrete/config/app.php:474
+#: concrete/config/app.php:476
 msgid "JavaScript"
 msgstr "JavaScript"
 
-#: concrete/config/app.php:475
+#: concrete/config/app.php:477
 msgid "PDF"
 msgstr "PDF"
 
-#: concrete/config/app.php:476
+#: concrete/config/app.php:478
 msgid "Photoshop"
 msgstr "Photoshop"
 
-#: concrete/config/app.php:477
+#: concrete/config/app.php:479
 msgid "MPEG"
 msgstr "MPEG"
 
-#: concrete/config/app.php:478
+#: concrete/config/app.php:480
 msgid "MS Excel"
 msgstr "MS Excel"
 
-#: concrete/config/app.php:479
+#: concrete/config/app.php:481
 msgid "MS Powerpoint"
 msgstr "MS Powerpoint"
 
-#: concrete/config/app.php:480
+#: concrete/config/app.php:482
 msgid "TAR Archive"
 msgstr "TAR arkiv"
 
-#: concrete/config/app.php:481
+#: concrete/config/app.php:483
 msgid "Zip Archive"
 msgstr "Zip arkiv"
 
-#: concrete/config/app.php:482
+#: concrete/config/app.php:484
 msgid "GZip Archive"
 msgstr "GZip arkiv"
 
-#: concrete/config/app.php:483
+#: concrete/config/app.php:485
 msgid "OGG"
 msgstr "OGG"
 
-#: concrete/config/app.php:484
+#: concrete/config/app.php:486
 msgid "OGG Video"
 msgstr "OGG Video"
 
-#: concrete/config/app.php:485
+#: concrete/config/app.php:487
 msgid "WebM"
 msgstr "WebM"
 
