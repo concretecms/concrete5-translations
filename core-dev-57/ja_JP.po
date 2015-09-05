@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-09-03 04:00+0000\n"
-"PO-Revision-Date: 2015-09-03 09:39+0000\n"
+"POT-Creation-Date: 2015-09-04 04:00+0000\n"
+"PO-Revision-Date: 2015-09-04 22:26+0000\n"
 "Last-Translator: Takuro Hishikawa <hishikawa@concrete5.co.jp>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/concrete5/concrete5/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
@@ -555,11 +555,11 @@ msgstr "アクセス拒否"
 #: concrete/controllers/dialog/file/properties.php:118
 #: concrete/controllers/dialog/file/thumbnails/edit.php:35
 #: concrete/controllers/dialog/file/thumbnails/edit.php:38
-#: concrete/controllers/dialog/page/add/compose.php:30
+#: concrete/controllers/dialog/page/add/compose.php:46
 #: concrete/controllers/panel/detail/page/composer.php:39
 #: concrete/controllers/panel/detail/page/composer.php:52
-#: concrete/controllers/panel/detail/page/composer.php:86
-#: concrete/controllers/panel/detail/page/composer.php:106
+#: concrete/controllers/panel/detail/page/composer.php:78
+#: concrete/controllers/panel/detail/page/composer.php:98
 #: concrete/controllers/single_page/dashboard/users/search.php:48
 #: concrete/controllers/single_page/dashboard/users/search.php:66
 #: concrete/tools/dashboard/attribute_set_order_update.php:13
@@ -2024,15 +2024,7 @@ msgstr "ページ権限が正常に保存されました。"
 msgid "Page saved on %s"
 msgstr "更新日時: %s"
 
-#: concrete/controllers/panel/detail/page/composer.php:66
-msgid "You must choose a page to publish this page beneath."
-msgstr "このページを公開する親ページを選択してください。"
-
-#: concrete/controllers/panel/detail/page/composer.php:72
-msgid "You do not have permission to publish a page in this location."
-msgstr "この場所にページを公開する権限がありません。"
-
-#: concrete/controllers/panel/detail/page/composer.php:100
+#: concrete/controllers/panel/detail/page/composer.php:92
 msgid "You do not have permission to discard this page."
 msgstr "このページを削除する権限がありません。"
 
@@ -2202,20 +2194,19 @@ msgid ""
 " page is deleted."
 msgstr "ページ削除リクエストが保存されました。ページが削除される前にこのアクションを承認する必要があります。"
 
-#: concrete/controllers/dialog/page/add/compose.php:44
-msgid ""
-"You do not have permission to add a page of this type to this location."
-msgstr "この場所にこのタイプのページを追加する権限がありません。"
+#: concrete/controllers/dialog/page/add/compose.php:24
+msgid "You do not have permission to add a page of this type."
+msgstr "このタイプのページを追加する権限がありません。"
 
-#: concrete/controllers/dialog/page/add/compose.php:47
-msgid "Invalid parent page."
-msgstr "親ページが無効です。"
-
-#: concrete/controllers/dialog/page/add/compose.php:50
+#: concrete/controllers/dialog/page/add/compose.php:27
 msgid "Invalid page type."
 msgstr "無効なページタイプです。"
 
-#: concrete/controllers/dialog/page/add/compose.php:95
+#: concrete/controllers/dialog/page/add/compose.php:32
+msgid "Invalid parent page."
+msgstr "親ページが無効です。"
+
+#: concrete/controllers/dialog/page/add/compose.php:88
 msgid "Page Added Successfully."
 msgstr "ページが正常に追加されました。"
 
@@ -7161,6 +7152,14 @@ msgstr "ページテンプレートを選択してください。"
 msgid "This page template is not a valid template for this page type."
 msgstr "このページテンプレートはこのページタイプでは有効ではありません。"
 
+#: concrete/src/Page/Type/Validator/StandardValidator.php:43
+msgid "You must choose a page to publish this page beneath."
+msgstr "このページを公開する親ページを選択してください。"
+
+#: concrete/src/Page/Type/Validator/StandardValidator.php:47
+msgid "You do not have permission to publish a page in this location."
+msgstr "この場所にページを公開する権限がありません。"
+
 #: concrete/src/Page/Collection/Version/Version.php:243
 #, php-format
 msgid "New Version %s"
@@ -11004,6 +11003,11 @@ msgstr "今の権限セット"
 #, php-format
 msgid "Composer - %s"
 msgstr "コンポーザー - %s"
+
+#: concrete/views/panels/details/page/composer.php:59
+#: concrete/views/panels/page/check_in.php:79
+msgid "This will remove this draft and it cannot be undone. Are you sure?"
+msgstr "この下書きを削除すると、取り消しできません。本当に実行しますか？"
 
 #: concrete/views/panels/details/page/location.php:14
 msgid "Where will this page live on the site?"

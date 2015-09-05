@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-09-03 04:00+0000\n"
-"PO-Revision-Date: 2015-09-03 09:50+0000\n"
+"POT-Creation-Date: 2015-09-04 04:00+0000\n"
+"PO-Revision-Date: 2015-09-04 09:55+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Italian (Italy) (http://www.transifex.com/concrete5/concrete5/language/it_IT/)\n"
 "MIME-Version: 1.0\n"
@@ -549,11 +549,11 @@ msgstr "Accesso negato"
 #: concrete/controllers/dialog/file/properties.php:118
 #: concrete/controllers/dialog/file/thumbnails/edit.php:35
 #: concrete/controllers/dialog/file/thumbnails/edit.php:38
-#: concrete/controllers/dialog/page/add/compose.php:30
+#: concrete/controllers/dialog/page/add/compose.php:46
 #: concrete/controllers/panel/detail/page/composer.php:39
 #: concrete/controllers/panel/detail/page/composer.php:52
-#: concrete/controllers/panel/detail/page/composer.php:86
-#: concrete/controllers/panel/detail/page/composer.php:106
+#: concrete/controllers/panel/detail/page/composer.php:78
+#: concrete/controllers/panel/detail/page/composer.php:98
 #: concrete/controllers/single_page/dashboard/users/search.php:48
 #: concrete/controllers/single_page/dashboard/users/search.php:66
 #: concrete/tools/dashboard/attribute_set_order_update.php:13
@@ -2022,15 +2022,7 @@ msgstr "Le autorizzazioni della pagina sono state salvate."
 msgid "Page saved on %s"
 msgstr "Pagina salvata il %s"
 
-#: concrete/controllers/panel/detail/page/composer.php:66
-msgid "You must choose a page to publish this page beneath."
-msgstr "È necessario indicare la pagina sotto cui pubblicare questa pagina."
-
-#: concrete/controllers/panel/detail/page/composer.php:72
-msgid "You do not have permission to publish a page in this location."
-msgstr "Non si ha l’autorizzazione per pubblicare pagine in questa posizione."
-
-#: concrete/controllers/panel/detail/page/composer.php:100
+#: concrete/controllers/panel/detail/page/composer.php:92
 msgid "You do not have permission to discard this page."
 msgstr "Non si ha l’autorizzazione di scartare questa pagina."
 
@@ -2201,20 +2193,19 @@ msgid ""
 " page is deleted."
 msgstr "La richiesta di eliminazione della pagina è stata salvata. Questa azione dovrà essere approvata prima di eliminare la pagina."
 
-#: concrete/controllers/dialog/page/add/compose.php:44
-msgid ""
-"You do not have permission to add a page of this type to this location."
-msgstr "Non si ha l’autorizzazione di aggiungere una pagina di questo tipo in questa posizione."
+#: concrete/controllers/dialog/page/add/compose.php:24
+msgid "You do not have permission to add a page of this type."
+msgstr "Non si ha l’autorizzazione per aggiungere una pagina di questo tipo."
 
-#: concrete/controllers/dialog/page/add/compose.php:47
-msgid "Invalid parent page."
-msgstr "Pagina padre non valida."
-
-#: concrete/controllers/dialog/page/add/compose.php:50
+#: concrete/controllers/dialog/page/add/compose.php:27
 msgid "Invalid page type."
 msgstr "Tipo di pagina non valido."
 
-#: concrete/controllers/dialog/page/add/compose.php:95
+#: concrete/controllers/dialog/page/add/compose.php:32
+msgid "Invalid parent page."
+msgstr "Pagina padre non valida."
+
+#: concrete/controllers/dialog/page/add/compose.php:88
 msgid "Page Added Successfully."
 msgstr "Pagina aggiunta correttamente."
 
@@ -7167,6 +7158,14 @@ msgstr "È necessario selezionare un modello di pagina."
 msgid "This page template is not a valid template for this page type."
 msgstr "Questo modello di pagina non è un modello valido per questo tipo di pagina."
 
+#: concrete/src/Page/Type/Validator/StandardValidator.php:43
+msgid "You must choose a page to publish this page beneath."
+msgstr "È necessario indicare la pagina sotto cui pubblicare questa pagina."
+
+#: concrete/src/Page/Type/Validator/StandardValidator.php:47
+msgid "You do not have permission to publish a page in this location."
+msgstr "Non si ha l’autorizzazione per pubblicare pagine in questa posizione."
+
 #: concrete/src/Page/Collection/Version/Version.php:243
 #, php-format
 msgid "New Version %s"
@@ -11024,6 +11023,11 @@ msgstr "Set di autorizzazioni attuale"
 #, php-format
 msgid "Composer - %s"
 msgstr "Composer - %s"
+
+#: concrete/views/panels/details/page/composer.php:59
+#: concrete/views/panels/page/check_in.php:79
+msgid "This will remove this draft and it cannot be undone. Are you sure?"
+msgstr "Questa bozza verrà rimossa definitivamente e non potrà essere ripristinata. Procedere?"
 
 #: concrete/views/panels/details/page/location.php:14
 msgid "Where will this page live on the site?"

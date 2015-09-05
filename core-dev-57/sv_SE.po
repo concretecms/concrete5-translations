@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-09-03 04:00+0000\n"
-"PO-Revision-Date: 2015-09-03 17:22+0000\n"
+"POT-Creation-Date: 2015-09-04 04:00+0000\n"
+"PO-Revision-Date: 2015-09-04 16:39+0000\n"
 "Last-Translator: Fredrik Lindau <fredrik@fxlindau.se>\n"
 "Language-Team: Swedish (Sweden) (http://www.transifex.com/concrete5/concrete5/language/sv_SE/)\n"
 "MIME-Version: 1.0\n"
@@ -551,11 +551,11 @@ msgstr "Åtkomst nekad"
 #: concrete/controllers/dialog/file/properties.php:118
 #: concrete/controllers/dialog/file/thumbnails/edit.php:35
 #: concrete/controllers/dialog/file/thumbnails/edit.php:38
-#: concrete/controllers/dialog/page/add/compose.php:30
+#: concrete/controllers/dialog/page/add/compose.php:46
 #: concrete/controllers/panel/detail/page/composer.php:39
 #: concrete/controllers/panel/detail/page/composer.php:52
-#: concrete/controllers/panel/detail/page/composer.php:86
-#: concrete/controllers/panel/detail/page/composer.php:106
+#: concrete/controllers/panel/detail/page/composer.php:78
+#: concrete/controllers/panel/detail/page/composer.php:98
 #: concrete/controllers/single_page/dashboard/users/search.php:48
 #: concrete/controllers/single_page/dashboard/users/search.php:66
 #: concrete/tools/dashboard/attribute_set_order_update.php:13
@@ -2024,15 +2024,7 @@ msgstr "Behörigheter för sidan har sparats."
 msgid "Page saved on %s"
 msgstr "Sidan sparades den %s"
 
-#: concrete/controllers/panel/detail/page/composer.php:66
-msgid "You must choose a page to publish this page beneath."
-msgstr "Du måste välja en sida att publicera denna sida under."
-
-#: concrete/controllers/panel/detail/page/composer.php:72
-msgid "You do not have permission to publish a page in this location."
-msgstr "Du saknar rättigheter att lägga till en sida på den här platsen."
-
-#: concrete/controllers/panel/detail/page/composer.php:100
+#: concrete/controllers/panel/detail/page/composer.php:92
 msgid "You do not have permission to discard this page."
 msgstr "Du saknar behörighet att kasta denna sida."
 
@@ -2203,20 +2195,19 @@ msgid ""
 " page is deleted."
 msgstr "Förfrågan om borttagning av sida är sparad. Denna åtgärd måste godkännas innan sidan tas bort."
 
-#: concrete/controllers/dialog/page/add/compose.php:44
-msgid ""
-"You do not have permission to add a page of this type to this location."
-msgstr "Du har inte behörighet att lägga till en sida av denna typen på den här platsen."
+#: concrete/controllers/dialog/page/add/compose.php:24
+msgid "You do not have permission to add a page of this type."
+msgstr "Du saknar rättigheter att skapa en ny sida av denna typ."
 
-#: concrete/controllers/dialog/page/add/compose.php:47
-msgid "Invalid parent page."
-msgstr "Ogiltig översida."
-
-#: concrete/controllers/dialog/page/add/compose.php:50
+#: concrete/controllers/dialog/page/add/compose.php:27
 msgid "Invalid page type."
 msgstr "Ogiltig sidtyp."
 
-#: concrete/controllers/dialog/page/add/compose.php:95
+#: concrete/controllers/dialog/page/add/compose.php:32
+msgid "Invalid parent page."
+msgstr "Ogiltig översida."
+
+#: concrete/controllers/dialog/page/add/compose.php:88
 msgid "Page Added Successfully."
 msgstr "Sidtypen lades till."
 
@@ -7169,6 +7160,14 @@ msgstr "Du måste ange en sidomall."
 msgid "This page template is not a valid template for this page type."
 msgstr "Denna sidomall är inte en giltig mall för denna typ av sida."
 
+#: concrete/src/Page/Type/Validator/StandardValidator.php:43
+msgid "You must choose a page to publish this page beneath."
+msgstr "Du måste välja en sida att publicera denna sida under."
+
+#: concrete/src/Page/Type/Validator/StandardValidator.php:47
+msgid "You do not have permission to publish a page in this location."
+msgstr "Du saknar rättigheter att lägga till en sida på den här platsen."
+
 #: concrete/src/Page/Collection/Version/Version.php:243
 #, php-format
 msgid "New Version %s"
@@ -11026,6 +11025,11 @@ msgstr "Nuvarande behörighetsgrupp"
 #, php-format
 msgid "Composer - %s"
 msgstr "Composer - %s"
+
+#: concrete/views/panels/details/page/composer.php:59
+#: concrete/views/panels/page/check_in.php:79
+msgid "This will remove this draft and it cannot be undone. Are you sure?"
+msgstr "Detta kommer att ta bort detta utkast och det går inte att ångra. Är du säker?"
 
 #: concrete/views/panels/details/page/location.php:14
 msgid "Where will this page live on the site?"
