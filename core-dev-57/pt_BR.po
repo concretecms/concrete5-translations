@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-09-11 04:00+0000\n"
-"PO-Revision-Date: 2015-09-11 09:35+0000\n"
-"Last-Translator: Michele Locati <michele@locati.it>\n"
+"POT-Creation-Date: 2015-09-12 04:00+0000\n"
+"PO-Revision-Date: 2015-09-13 03:40+0000\n"
+"Last-Translator: gilberto dos santos alves <gsavix@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/concrete5/concrete5/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1369,7 +1369,7 @@ msgstr "Quanto tempo esta permissão será válida?"
 #: concrete/single_pages/dashboard/system/registration/open.php:92
 #: concrete/single_pages/dashboard/system/registration/postlogin.php:47
 #: concrete/single_pages/dashboard/system/registration/profiles.php:41
-#: concrete/single_pages/dashboard/system/seo/bulk.php:187
+#: concrete/single_pages/dashboard/system/seo/bulk.php:180
 #: concrete/single_pages/dashboard/system/seo/codes.php:22
 #: concrete/single_pages/dashboard/system/seo/excluded.php:13
 #: concrete/single_pages/dashboard/system/seo/searchindex.php:35
@@ -1744,7 +1744,7 @@ msgstr "Descrição"
 
 #: concrete/blocks/form/form_setup_html.php:170
 #: concrete/blocks/form/form_setup_html.php:255
-#: concrete/blocks/form/view.php:104
+#: concrete/blocks/form/view.php:91
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:105
 #: concrete/tools/page_types/composer/form/edit_control.php:60
 msgid "Required"
@@ -1983,7 +1983,7 @@ msgstr "Confirma remoção das seguintes páginas?"
 #: concrete/controllers/search/pages.php:237
 #: concrete/controllers/search/pages.php:327
 #: concrete/single_pages/dashboard/composer/drafts.php:16
-#: concrete/single_pages/dashboard/system/seo/bulk.php:135
+#: concrete/single_pages/dashboard/system/seo/bulk.php:132
 #: concrete/tools/pages/delete.php:92
 #: concrete/views/dialogs/page/design.php:36
 msgid "Page Type"
@@ -2199,7 +2199,7 @@ msgstr "Pedido de remoção de página salvo. Esta ação terá que ser aprovada
 
 #: concrete/controllers/dialog/page/add/compose.php:24
 msgid "You do not have permission to add a page of this type."
-msgstr ""
+msgstr "Não há permissão para adicionar esse tipo de página."
 
 #: concrete/controllers/dialog/page/add/compose.php:27
 msgid "Invalid page type."
@@ -3073,11 +3073,11 @@ msgstr "Arquivo .htaccess pode ser atualizado automaticamente."
 
 #: concrete/controllers/single_page/dashboard/system/seo/urls.php:92
 msgid "The canonical URL provided must start with \"http://\"."
-msgstr ""
+msgstr "Endereço URL fornecido deve iniciar com \"http://\"."
 
 #: concrete/controllers/single_page/dashboard/system/seo/urls.php:96
 msgid "The SSL canonical URL provided must start with \"https://\"."
-msgstr ""
+msgstr "Endereço URL com SSL fornecido deve começar com \"https://\"."
 
 #: concrete/controllers/single_page/dashboard/system/environment/entities.php:47
 msgid "There are no application specific database entities available."
@@ -4056,7 +4056,7 @@ msgid ""
 "You cannot delete a template that is set as the default for any of the page "
 "types. Please change the default template for the following page types "
 "first: %s."
-msgstr ""
+msgstr "Não pode remover um template definido como padrão para algum tipo de página.\nPor favor modificar antes o template padrão para os tipos de página: %s."
 
 #: concrete/controllers/single_page/dashboard/pages/templates.php:54
 msgid "Invalid page template"
@@ -6658,7 +6658,7 @@ msgstr "Ocorreu um erro enquando determinava permissões dos arquivos."
 
 #: concrete/src/File/Service/File.php:346
 msgid "Request timed out."
-msgstr ""
+msgstr "Tempo excedido."
 
 #: concrete/src/File/Type/Type.php:70
 msgid "Video"
@@ -6753,7 +6753,7 @@ msgstr "Conteúdo de Arquivo"
 
 #: concrete/src/File/Version.php:495
 msgid "File Name"
-msgstr ""
+msgstr "Nome Arquivo"
 
 #: concrete/src/File/Version.php:703
 msgid "Invalid dimensions."
@@ -7102,11 +7102,11 @@ msgstr "(sem descrição)"
 #: concrete/src/Page/Type/PublishTarget/Type/PageTypeType.php:38
 msgid ""
 "You must choose the type of page these page types are published beneath."
-msgstr ""
+msgstr "Escolher o tipo de página, sob o qual, essas páginas serão publicadas."
 
 #: concrete/src/Page/Type/PublishTarget/Type/ParentPageType.php:35
 msgid "You must choose a valid parent page for pages of this type."
-msgstr ""
+msgstr "Escolher uma página raiz para páginas deste tipo."
 
 #: concrete/src/Page/Type/Composer/Control/CorePageProperty/PublishTargetCorePageProperty.php:9
 msgctxt "PageTypeComposerControlName"
@@ -7119,6 +7119,7 @@ msgid "Page Name"
 msgstr "Nome da página"
 
 #: concrete/src/Page/Type/Composer/Control/CorePageProperty/DateTimeCorePageProperty.php:28
+#: concrete/src/Page/Type/Composer/Control/CorePageProperty/DescriptionCorePageProperty.php:35
 #: concrete/src/Page/Type/Composer/Control/CorePageProperty/NameCorePageProperty.php:47
 #: concrete/src/Page/Type/Composer/Control/CorePageProperty/UrlSlugCorePageProperty.php:28
 #: concrete/src/Page/Type/Composer/Control/CorePageProperty/UserCorePageProperty.php:32
@@ -7150,10 +7151,6 @@ msgstr "Usuário"
 msgctxt "PageTypeComposerControlName"
 msgid "Description"
 msgstr "Descrição"
-
-#: concrete/src/Page/Type/Composer/Control/CorePageProperty/DescriptionCorePageProperty.php:27
-msgid "You must specify a page description."
-msgstr "Você deve especificar uma descrição de página."
 
 #: concrete/src/Page/Type/Composer/Control/CollectionAttributeControl.php:155
 #: concrete/src/Page/Type/Composer/Control/CollectionAttributeControl.php:164
@@ -8738,7 +8735,7 @@ msgstr "Não foi possível se conectar ao marketplace para carregar este item"
 #: concrete/src/Marketplace/Marketplace.php:198
 #: concrete/src/Marketplace/Marketplace.php:210
 msgid "Unable to generate a marketplace token. Request timed out."
-msgstr ""
+msgstr "Geração token de marketplace falhou. Tempo excedido."
 
 #: concrete/src/Marketplace/Marketplace.php:225
 msgid ""
@@ -9690,7 +9687,7 @@ msgstr "Em breve."
 #: concrete/elements/pages/search.php:38
 #: concrete/elements/workflow/progress/categories/page/pending.php:12
 #: concrete/single_pages/dashboard/composer/drafts.php:14
-#: concrete/single_pages/dashboard/system/seo/bulk.php:133
+#: concrete/single_pages/dashboard/system/seo/bulk.php:130
 msgid "Page Name"
 msgstr "Nome da página"
 
@@ -10269,16 +10266,16 @@ msgstr "Essa página será publicada subordinada \"%s.\""
 
 #: concrete/elements/page_types/target_types/page_type.php:5
 msgid "** Choose a page type"
-msgstr ""
+msgstr "** Escolhe um tipo de página"
 
 #: concrete/elements/page_types/target_types/page_type.php:10
 msgid "Select Menu"
-msgstr ""
+msgstr "Selecionar Menu"
 
 #: concrete/elements/page_types/target_types/all.php:4
 #: concrete/elements/page_types/target_types/page_type.php:10
 msgid "In-Page Sitemap"
-msgstr ""
+msgstr "In-Página Mapa do Site"
 
 #: concrete/elements/page_types/target_types/page_type.php:19
 msgid "Publish Beneath Pages of Type"
@@ -10287,11 +10284,11 @@ msgstr "Publicar Páginas Subordinadas do Tipo"
 #: concrete/elements/page_types/target_types/all.php:12
 #: concrete/elements/page_types/target_types/page_type.php:26
 msgid "Selector Form Factor"
-msgstr ""
+msgstr "Seletor Fator Formulário"
 
 #: concrete/elements/page_types/target_types/all.php:4
 msgid "Sitemap Pop-Up"
-msgstr ""
+msgstr "Mapa do Site Pop-Up"
 
 #: concrete/elements/page_types/form/base.php:39
 msgid "Page Type Name"
@@ -11039,7 +11036,7 @@ msgstr "Compositor - %s"
 #: concrete/views/panels/details/page/composer.php:59
 #: concrete/views/panels/page/check_in.php:79
 msgid "This will remove this draft and it cannot be undone. Are you sure?"
-msgstr ""
+msgstr "Isso irá remover o rascunho e não poderá ser desfeito. Confirmar?"
 
 #: concrete/views/panels/details/page/location.php:14
 msgid "Where will this page live on the site?"
@@ -14649,7 +14646,7 @@ msgstr "Desinstalar Pacote"
 msgid ""
 "This will remove all elements associated with the %s package. While you can "
 "reinstall the package, this may result in data loss."
-msgstr ""
+msgstr "Isso irá remover todos elementos associados com o pacote %s. O pacote poderá ser reinstalado, mas os dados serão perdidos."
 
 #: concrete/single_pages/dashboard/extend/install.php:77
 msgid "Move package to trash directory on server?"
@@ -15442,50 +15439,42 @@ msgstr "Filtrar por:"
 msgid "No Meta Description"
 msgstr "Não há Descrições Metadados"
 
-#: concrete/single_pages/dashboard/system/seo/bulk.php:112
-msgid "No Meta Keywords"
-msgstr "Nenhum Palavra Chave Metadados"
-
-#: concrete/single_pages/dashboard/system/seo/bulk.php:136
+#: concrete/single_pages/dashboard/system/seo/bulk.php:133
 msgid "Single Page"
 msgstr "Página Simples"
 
-#: concrete/single_pages/dashboard/system/seo/bulk.php:137
+#: concrete/single_pages/dashboard/system/seo/bulk.php:134
 msgid "Modified"
 msgstr "Modificado"
 
-#: concrete/single_pages/dashboard/system/seo/bulk.php:142
+#: concrete/single_pages/dashboard/system/seo/bulk.php:139
 msgid "Meta Title"
 msgstr "Meta Title"
 
-#: concrete/single_pages/dashboard/system/seo/bulk.php:151
-#: concrete/single_pages/dashboard/system/seo/bulk.php:162
+#: concrete/single_pages/dashboard/system/seo/bulk.php:148
+#: concrete/single_pages/dashboard/system/seo/bulk.php:159
 msgid "Default value. Click to edit."
 msgstr "Valor padrão. Cique para editar."
 
-#: concrete/single_pages/dashboard/system/seo/bulk.php:154
+#: concrete/single_pages/dashboard/system/seo/bulk.php:151
 msgid "Meta Description"
 msgstr "Meta Description"
 
-#: concrete/single_pages/dashboard/system/seo/bulk.php:166
-msgid "Meta Keywords"
-msgstr "Meta Keywords"
-
-#: concrete/single_pages/dashboard/system/seo/bulk.php:172
+#: concrete/single_pages/dashboard/system/seo/bulk.php:165
 msgid "Slug"
 msgstr "Tipo"
 
-#: concrete/single_pages/dashboard/system/seo/bulk.php:197
+#: concrete/single_pages/dashboard/system/seo/bulk.php:190
 msgid "Save All"
 msgstr "Salvar Todas"
 
 #: concrete/single_pages/dashboard/pages/single.php:37
 #: concrete/single_pages/dashboard/system/multilingual/page_report.php:183
-#: concrete/single_pages/dashboard/system/seo/bulk.php:201
+#: concrete/single_pages/dashboard/system/seo/bulk.php:194
 msgid "No pages found."
 msgstr "Nenhuma página encontrada."
 
-#: concrete/single_pages/dashboard/system/seo/bulk.php:237
+#: concrete/single_pages/dashboard/system/seo/bulk.php:229
 msgid "An error occured while saving."
 msgstr "Erro ocorreu enquanto salvando."
 
@@ -20243,7 +20232,7 @@ msgctxt "AttributeSetName"
 msgid "SEO"
 msgstr "SEO"
 
-#: concrete/config/install/base/attributes.xml:132
+#: concrete/config/install/base/attributes.xml:131
 msgctxt "AttributeSetName"
 msgid "Navigation and Indexing"
 msgstr "Navegação e Indexação"
