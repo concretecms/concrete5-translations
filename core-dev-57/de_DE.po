@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-09-18 04:00+0000\n"
-"PO-Revision-Date: 2015-09-18 09:18+0000\n"
-"Last-Translator: Michele Locati <michele@locati.it>\n"
+"POT-Creation-Date: 2015-09-27 04:00+0000\n"
+"PO-Revision-Date: 2015-09-27 18:29+0000\n"
+"Last-Translator: Torsten Silbermann <mail@tsilbermann.de>\n"
 "Language-Team: German (Germany) (http://www.transifex.com/concrete5/concrete5/language/de_DE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1984,6 +1984,7 @@ msgstr "Sollen die folgenden Seiten wirklich gelöscht werden?"
 #: concrete/controllers/search/pages.php:327
 #: concrete/single_pages/dashboard/composer/drafts.php:16
 #: concrete/single_pages/dashboard/system/seo/bulk.php:132
+#: concrete/src/Backup/ContentImporter/ValueInspector/Item/PageTypeItem.php:12
 #: concrete/tools/pages/delete.php:92
 #: concrete/views/dialogs/page/design.php:36
 msgid "Page Type"
@@ -5335,7 +5336,7 @@ msgstr ""
 
 #: concrete/controllers/frontend/assets_localization.php:274
 msgid "Add Blocks"
-msgstr ""
+msgstr "Blöcke hinzufügen"
 
 #: concrete/controllers/frontend/assets_localization.php:274
 msgid "Click and drag blocks from the add panel into the page to add them."
@@ -6726,6 +6727,7 @@ msgstr "Anwendung"
 #: concrete/single_pages/dashboard/pages/themes/inspect.php:24
 #: concrete/single_pages/dashboard/reports/statistics.php:77
 #: concrete/single_pages/dashboard/system/backup/backup.php:101
+#: concrete/src/Backup/ContentImporter/ValueInspector/Item/FileItem.php:12
 #: concrete/src/File/Type/Type.php:85 concrete/src/File/Version.php:480
 msgid "File"
 msgstr "Datei"
@@ -7329,6 +7331,21 @@ msgstr "Ausnahmen"
 #, php-format
 msgid "Invalid block type handle: %s"
 msgstr "Ungültige Blocktyp-Kennung: %s"
+
+#: concrete/elements/gathering/data_sources/rss_feed/options.php:8
+#: concrete/src/Backup/ContentImporter/ValueInspector/Item/PageFeedItem.php:12
+msgid "RSS Feed"
+msgstr "RSS-Feed"
+
+#: concrete/config/install/packages/elemental_blank/content.xml:10
+#: concrete/src/Backup/ContentImporter/ValueInspector/Item/PageItem.php:12
+msgid "Page"
+msgstr "Seite"
+
+#: concrete/blocks/testimonial/form.php:14
+#: concrete/src/Backup/ContentImporter/ValueInspector/Item/PictureItem.php:10
+msgid "Picture"
+msgstr "Bild"
 
 #: concrete/src/Backup/Backup.php:24
 #, php-format
@@ -9241,7 +9258,7 @@ msgstr "Anleitung starten"
 
 #: concrete/elements/help/dialog/introduction.php:23
 msgid "Add & Change Content"
-msgstr ""
+msgstr "Inhalte hinzufügen & bearbeiten"
 
 #: concrete/elements/help/dialog/introduction.php:26
 msgid "Guide: Change Content"
@@ -9777,10 +9794,6 @@ msgstr "Collagenvorlage bearbeiten"
 #: concrete/elements/gathering/data_sources/twitter/options.php:8
 msgid "Twitter User"
 msgstr "Twitter User"
-
-#: concrete/elements/gathering/data_sources/rss_feed/options.php:8
-msgid "RSS Feed"
-msgstr "RSS-Feed"
 
 #: concrete/elements/gathering/data_sources/page/options.php:15
 msgid "Limit By Page Type"
@@ -13355,10 +13368,6 @@ msgstr "Aktuelle Informationen"
 msgid "Slot"
 msgstr "Slot"
 
-#: concrete/blocks/testimonial/form.php:14
-msgid "Picture"
-msgstr "Bild"
-
 #: concrete/attributes/image_file/controller.php:93
 #: concrete/blocks/file/add.php:7 concrete/blocks/file/composer.php:21
 #: concrete/blocks/file/edit.php:11 concrete/blocks/testimonial/form.php:17
@@ -15833,7 +15842,7 @@ msgstr "Aufgabenberechtigungen"
 #: concrete/config/install/base/dashboard.xml:689
 #: concrete/single_pages/dashboard/system/permissions/users.php:8
 msgid "User Permissions"
-msgstr "Berechtigungen setzen"
+msgstr "Benutzerberechtigungen"
 
 #: concrete/single_pages/dashboard/system/permissions/blacklist.php:8
 msgid "Smart IP Banning"
@@ -20946,10 +20955,6 @@ msgstr "mittelgroßes Bild"
 msgctxt "ThumbnailTypeName"
 msgid "Large Image"
 msgstr "großes Bild"
-
-#: concrete/config/install/packages/elemental_blank/content.xml:10
-msgid "Page"
-msgstr "Seite"
 
 #: concrete/config/install/packages/elemental_blank/content.xml:23
 msgctxt "PageTypeComposerFormLayoutSetControlCustomLabel"
