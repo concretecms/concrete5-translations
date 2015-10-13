@@ -16,9 +16,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-10-08 04:00+0000\n"
-"PO-Revision-Date: 2015-10-08 09:57+0000\n"
-"Last-Translator: Michele Locati <michele@locati.it>\n"
+"POT-Creation-Date: 2015-10-12 04:00+0000\n"
+"PO-Revision-Date: 2015-10-12 20:39+0000\n"
+"Last-Translator: Volluta <volluta@tutanota.com>\n"
 "Language-Team: Dutch (Netherlands) (http://www.transifex.com/concrete5/concrete5/language/nl_NL/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -463,7 +463,7 @@ msgid ""
 msgstr "Sleutel verlopen. Ga naar de pagina Wachtwoord vergeten om een nieuwe sleutel te genereren."
 
 #: concrete/authentication/concrete/controller.php:204
-#: concrete/controllers/install.php:322
+#: concrete/controllers/install.php:324
 #: concrete/controllers/single_page/account/edit_profile.php:108
 #: concrete/controllers/single_page/dashboard/users/search.php:380
 #: concrete/controllers/single_page/register.php:106
@@ -649,7 +649,7 @@ msgstr "Vervangen"
 #: concrete/tools/files/import.php:126 concrete/tools/files/replace.php:83
 #, php-format
 msgid "No files found in %s for the storage location \"%s\"."
-msgstr ""
+msgstr "Geen bestanden gevonden in %s voor de opslaglocatie \"%s\"."
 
 #: concrete/tools/files/replace.php:89
 msgid "Add from Remote URL"
@@ -826,7 +826,7 @@ msgstr "Opslaglocatie voor bestanden opgeslagen."
 #: concrete/elements/panels/page.php:111
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:67
 #: concrete/single_pages/dashboard/pages/types/view.php:50
-#: concrete/src/Package/Package.php:141
+#: concrete/src/Package/Package.php:143
 #: concrete/tools/files/permissions.php:51
 msgid "Permissions"
 msgstr "Machtigingen"
@@ -6134,55 +6134,63 @@ msgstr "De PDO uitbreiding is niet geladen."
 msgid "concrete5 is already installed."
 msgstr "concrete5 is al geinstalleerd"
 
-#: concrete/controllers/install.php:218
+#: concrete/controllers/install.php:169 concrete/views/frontend/install.php:74
+#: concrete/views/frontend/install.php:132
+#: concrete/views/frontend/install.php:258
+#: concrete/views/frontend/install.php:324
+#: concrete/views/frontend/install.php:533
+msgid "Install concrete5"
+msgstr "Installeer concrete5"
+
+#: concrete/controllers/install.php:220
 msgid ""
 "Your configuration directory config/ does not appear to be writable by the "
 "web server."
 msgstr "De configuratiemap config/ is niet beschrijfbaar door de webserver."
 
-#: concrete/controllers/install.php:222
+#: concrete/controllers/install.php:224
 msgid ""
 "Your files directory files/ does not appear to be writable by the web "
 "server."
 msgstr "De map files/ is niet beschrijfbaar door de webserver."
 
-#: concrete/controllers/install.php:226
+#: concrete/controllers/install.php:228
 msgid ""
 "Your packages directory packages/ does not appear to be writable by the web "
 "server."
 msgstr "De map packages/ is niet beschrijfbaar door de webserver."
 
-#: concrete/controllers/install.php:277
+#: concrete/controllers/install.php:279
 #, php-format
 msgctxt "InstallError"
 msgid "%s.<br><br>Trace:<br>%s"
 msgstr "%s.<br><br>Traceer:<br>%s"
 
-#: concrete/controllers/install.php:309
+#: concrete/controllers/install.php:311
 msgid "Please specify your site's name"
 msgstr "U moet een naam voor uw website opgeven."
 
-#: concrete/controllers/install.php:310
+#: concrete/controllers/install.php:312
 msgid "Please specify a valid email address"
 msgstr "U moet een juist e-mailadres opgeven."
 
-#: concrete/controllers/install.php:311
+#: concrete/controllers/install.php:313
 msgid "You must specify a valid database name"
 msgstr "U moet een juiste database naam opgeven"
 
-#: concrete/controllers/install.php:312
+#: concrete/controllers/install.php:314
 msgid "You must specify a valid database server"
 msgstr "U moet een juiste database server opgeven"
 
-#: concrete/controllers/install.php:361
+#: concrete/controllers/install.php:363
 msgid "Unable to open config/app.php for writing."
 msgstr "Kan config/site.php niet openen."
 
-#: concrete/controllers/install.php:382
+#: concrete/controllers/install.php:384
 msgid "Unable to open config/site_user.php for writing."
 msgstr "Config/site_user.php is niet beschrijfbaar."
 
-#: concrete/controllers/install.php:406
+#: concrete/controllers/install.php:408
 msgid "You must select a valid sample content starting point."
 msgstr "Selecteer een geldig inhoud voorbeeld startpunt."
 
@@ -6267,7 +6275,7 @@ msgstr "Extensiebeheer"
 msgid "System & Settings"
 msgstr "Systeem & instellingen"
 
-#: concrete/themes/concrete/elements/header.php:60
+#: concrete/themes/concrete/elements/header.php:63
 #: concrete/themes/dashboard/elements/header.php:70
 msgctxt "toolbar"
 msgid "Return to Website"
@@ -6295,19 +6303,19 @@ msgstr "Pagina bewerken"
 
 #: concrete/elements/account/menu.php:48
 #: concrete/elements/page_controls_footer.php:300
-#: concrete/themes/concrete/elements/header.php:50
+#: concrete/themes/concrete/elements/header.php:53
 msgid "Sign Out"
 msgstr "Afmelden"
 
 #: concrete/elements/page_controls_footer.php:302
-#: concrete/themes/concrete/elements/header.php:52
+#: concrete/themes/concrete/elements/header.php:55
 msgctxt "toolbar"
 msgid "Sign Out"
 msgstr "Afmelden"
 
 #: concrete/config/install/base/login_registration.xml:28
 #: concrete/elements/account/menu.php:26
-#: concrete/themes/concrete/elements/header.php:68
+#: concrete/themes/concrete/elements/header.php:71
 msgid "My Account"
 msgstr "Mijn account"
 
@@ -7399,59 +7407,59 @@ msgid ""
 "5.7."
 msgstr "Niet in staat om %s te installeren. Kijk na of dit pakket is ge-update voor 5.7."
 
-#: concrete/src/Package/Package.php:111
+#: concrete/src/Package/Package.php:113
 msgid "Attribute categories"
 msgstr "Attribuutcategorieën"
 
-#: concrete/src/Package/Package.php:114
+#: concrete/src/Package/Package.php:116
 msgid "Permission categories"
 msgstr "Bevoegdheidscategorieën "
 
-#: concrete/src/Package/Package.php:117
+#: concrete/src/Package/Package.php:119
 msgid "Permission access entity types"
 msgstr "Toegangstypen entiteit toestemming"
 
-#: concrete/src/Package/Package.php:120
+#: concrete/src/Package/Package.php:122
 msgid "Attribute keys"
 msgstr "Attribuutsleutels"
 
-#: concrete/src/Package/Package.php:123
+#: concrete/src/Package/Package.php:125
 msgid "Attribute sets"
 msgstr "Attribuutverzamelingen"
 
-#: concrete/src/Package/Package.php:126
+#: concrete/src/Package/Package.php:128
 msgid "Group sets"
 msgstr "Groepsverzamelingen"
 
-#: concrete/src/Package/Package.php:129
+#: concrete/src/Package/Package.php:131
 msgid "Page types"
 msgstr "Paginatypes"
 
-#: concrete/src/Package/Package.php:132
+#: concrete/src/Package/Package.php:134
 msgid "Mail importers"
 msgstr "Mail importeurs"
 
-#: concrete/src/Package/Package.php:135
+#: concrete/src/Package/Package.php:137
 msgid "Block types"
 msgstr "Bloktypes"
 
-#: concrete/src/Package/Package.php:138
+#: concrete/src/Package/Package.php:140
 msgid "Page themes"
 msgstr "Pagina-thema's"
 
-#: concrete/src/Package/Package.php:144
+#: concrete/src/Package/Package.php:146
 msgid "Single pages"
 msgstr "Enkele pagina's"
 
-#: concrete/src/Package/Package.php:147
+#: concrete/src/Package/Package.php:149
 msgid "Attribute types"
 msgstr "Kenmerktypen"
 
-#: concrete/src/Package/Package.php:150
+#: concrete/src/Package/Package.php:152
 msgid "Captcha libraries"
 msgstr "Captcha-bibliotheken"
 
-#: concrete/src/Package/Package.php:153
+#: concrete/src/Package/Package.php:155
 msgid "Antispam libraries"
 msgstr "Antispam-bibliotheken"
 
@@ -7459,70 +7467,70 @@ msgstr "Antispam-bibliotheken"
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:299
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:418
 #: concrete/src/Console/Command/JobCommand.php:48
-#: concrete/src/Package/Package.php:156
+#: concrete/src/Package/Package.php:158
 msgid "Jobs"
 msgstr "Taken"
 
-#: concrete/src/Package/Package.php:159
+#: concrete/src/Package/Package.php:161
 msgid "Workflow types"
 msgstr "Workflowtypes"
 
-#: concrete/src/Package/Package.php:162
+#: concrete/src/Package/Package.php:164
 msgid "Workflow progress categories"
 msgstr ""
 
 #: concrete/single_pages/dashboard/system/files/storage.php:99
-#: concrete/src/Package/Package.php:165
+#: concrete/src/Package/Package.php:167
 msgid "Storage Locations"
 msgstr "Opslaglocaties"
 
 #: concrete/single_pages/dashboard/system/multilingual/page_report.php:88
 #: concrete/single_pages/dashboard/system/multilingual/page_report.php:96
-#: concrete/src/Package/Package.php:230
+#: concrete/src/Package/Package.php:232
 #, php-format
 msgid "%s (%s)"
 msgstr "%s (%s)"
 
-#: concrete/src/Package/Package.php:239
+#: concrete/src/Package/Package.php:241
 #, php-format
 msgid " %s (%s)"
 msgstr " %s (%s)"
 
-#: concrete/src/Package/Package.php:918
+#: concrete/src/Package/Package.php:928
 msgid "You've already installed that package."
 msgstr "Deze extensie is al geïnstalleerd."
 
-#: concrete/src/Package/Package.php:919
+#: concrete/src/Package/Package.php:929
 msgid "Invalid Package."
 msgstr "Ongeldige extensie."
 
-#: concrete/src/Package/Package.php:920
+#: concrete/src/Package/Package.php:930
 #, php-format
 msgid "This package requires concrete5 version %s or greater."
 msgstr "Dit pakket vereist Concrete5 versie %s of hoger."
 
-#: concrete/src/Package/Package.php:921
+#: concrete/src/Package/Package.php:931
 msgid "An error occurred while downloading the package."
 msgstr "Er is een fout opgetreden bij het downloaden van de extensie."
 
-#: concrete/src/Package/Package.php:922
+#: concrete/src/Package/Package.php:932
 msgid "concrete5 was not able to save the package after download."
 msgstr "Concrete5 was neit in staat om het pakket na de download op te slaan."
 
-#: concrete/src/Package/Package.php:923
+#: concrete/src/Package/Package.php:933
 msgid "An error occurred while trying to unzip the package."
 msgstr "Er is een fout opgetreden bij het uitpakken van de extensie."
 
-#: concrete/src/Package/Package.php:924
+#: concrete/src/Package/Package.php:934
 msgid "An error occurred while trying to install the package."
 msgstr "Er is een fout opgetreden bij het installeren van de extensie."
 
-#: concrete/src/Package/Package.php:926
+#: concrete/src/Package/Package.php:936
 #, php-format
 msgid "Unable to backup old package directory to %s"
 msgstr "Kan de oude extensie niet opslaan in map %s"
 
-#: concrete/src/Package/Package.php:930
+#: concrete/src/Package/Package.php:940
 msgid ""
 "This package isn't currently available for this version of concrete5. Please"
 " contact the maintainer of this package for assistance."
@@ -11466,14 +11474,6 @@ msgstr "U heeft geen toegang tot deze pagina."
 msgid "To install concrete5, please fill out the form below."
 msgstr "Vul het onderstaande formulier in om Concrete5 te installeren."
 
-#: concrete/views/frontend/install.php:74
-#: concrete/views/frontend/install.php:132
-#: concrete/views/frontend/install.php:258
-#: concrete/views/frontend/install.php:324
-#: concrete/views/frontend/install.php:533
-msgid "Install concrete5"
-msgstr "Installeer concrete5"
-
 #: concrete/views/frontend/install.php:88
 msgid "Continue to your site"
 msgstr "Ga verder naar uw website."
@@ -12188,11 +12188,11 @@ msgstr "Voegt een dunne haarlijn horizontale divider aan de pagina."
 msgid "Horizontal Rule"
 msgstr "Horizontale lijn"
 
-#: concrete/blocks/image_slider/controller.php:25
+#: concrete/blocks/image_slider/controller.php:26
 msgid "Display your images and captions in an attractive slideshow format."
 msgstr "Weergave van uw afbeeldingen en bijschriften in een aantrekkelijke slideshow formaat."
 
-#: concrete/blocks/image_slider/controller.php:30
+#: concrete/blocks/image_slider/controller.php:31
 msgid "Image Slider"
 msgstr "Image Slider"
 
@@ -20996,7 +20996,7 @@ msgstr "Door- Regel"
 #: concrete/blocks/page_title/templates/archive.php
 msgctxt "TemplateFileName"
 msgid "Archive"
-msgstr ""
+msgstr "Archief"
 
 #: concrete/blocks/switch_language/templates/flags
 msgctxt "TemplateFileName"
