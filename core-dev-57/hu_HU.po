@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-10-08 04:00+0000\n"
-"PO-Revision-Date: 2015-10-08 09:57+0000\n"
+"POT-Creation-Date: 2015-10-17 04:00+0000\n"
+"PO-Revision-Date: 2015-10-17 08:52+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Hungarian (Hungary) (http://www.transifex.com/concrete5/concrete5/language/hu_HU/)\n"
 "MIME-Version: 1.0\n"
@@ -454,7 +454,7 @@ msgid ""
 msgstr "A kulcs érvényessége lejárt. Kérem látosasson el újra az elfelejtett jelszó oldalra új kulcs készítéséhez."
 
 #: concrete/authentication/concrete/controller.php:204
-#: concrete/controllers/install.php:322
+#: concrete/controllers/install.php:324
 #: concrete/controllers/single_page/account/edit_profile.php:108
 #: concrete/controllers/single_page/dashboard/users/search.php:380
 #: concrete/controllers/single_page/register.php:106
@@ -817,7 +817,7 @@ msgstr "Fájl tárolási hely sikeresen beállítva."
 #: concrete/elements/panels/page.php:111
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:67
 #: concrete/single_pages/dashboard/pages/types/view.php:50
-#: concrete/src/Package/Package.php:141
+#: concrete/src/Package/Package.php:143
 #: concrete/tools/files/permissions.php:51
 msgid "Permissions"
 msgstr "Jogosultságok"
@@ -6125,55 +6125,63 @@ msgstr ""
 msgid "concrete5 is already installed."
 msgstr "A concrete5 már telepítve van."
 
-#: concrete/controllers/install.php:218
+#: concrete/controllers/install.php:169 concrete/views/frontend/install.php:74
+#: concrete/views/frontend/install.php:132
+#: concrete/views/frontend/install.php:258
+#: concrete/views/frontend/install.php:324
+#: concrete/views/frontend/install.php:533
+msgid "Install concrete5"
+msgstr "concrete5 telepítése"
+
+#: concrete/controllers/install.php:220
 msgid ""
 "Your configuration directory config/ does not appear to be writable by the "
 "web server."
 msgstr "A config/ konfigurációs mappa a webszerver számára nem írható."
 
-#: concrete/controllers/install.php:222
+#: concrete/controllers/install.php:224
 msgid ""
 "Your files directory files/ does not appear to be writable by the web "
 "server."
 msgstr "A files/ feltöltendő fájlokat tartalmazó mappa a webszerver számára nem írható."
 
-#: concrete/controllers/install.php:226
+#: concrete/controllers/install.php:228
 msgid ""
 "Your packages directory packages/ does not appear to be writable by the web "
 "server."
 msgstr "Az Ön csomagokat tartalmazó mappája (packages/) nem írható a webszerver számára."
 
-#: concrete/controllers/install.php:277
+#: concrete/controllers/install.php:279
 #, php-format
 msgctxt "InstallError"
 msgid "%s.<br><br>Trace:<br>%s"
 msgstr ""
 
-#: concrete/controllers/install.php:309
+#: concrete/controllers/install.php:311
 msgid "Please specify your site's name"
 msgstr "Kérem adja meg weboldala nevét"
 
-#: concrete/controllers/install.php:310
+#: concrete/controllers/install.php:312
 msgid "Please specify a valid email address"
 msgstr "Kérem adja meg érvényes e-mail címét"
 
-#: concrete/controllers/install.php:311
+#: concrete/controllers/install.php:313
 msgid "You must specify a valid database name"
 msgstr "Adjon meg egy érvényes adatbázis nevet"
 
-#: concrete/controllers/install.php:312
+#: concrete/controllers/install.php:314
 msgid "You must specify a valid database server"
 msgstr "Adjon meg egy érvényes adatbázis szervert"
 
-#: concrete/controllers/install.php:361
+#: concrete/controllers/install.php:363
 msgid "Unable to open config/app.php for writing."
 msgstr ""
 
-#: concrete/controllers/install.php:382
+#: concrete/controllers/install.php:384
 msgid "Unable to open config/site_user.php for writing."
 msgstr "Nem írható a config/site_user.php állomány."
 
-#: concrete/controllers/install.php:406
+#: concrete/controllers/install.php:408
 msgid "You must select a valid sample content starting point."
 msgstr ""
 
@@ -6258,20 +6266,28 @@ msgstr "concrete5 bővítése"
 msgid "System & Settings"
 msgstr "Rendszerbeállítások"
 
-#: concrete/themes/concrete/elements/header.php:60
-#: concrete/themes/dashboard/elements/header.php:70
+#: concrete/elements/account/menu.php:48
+#: concrete/elements/page_controls_footer.php:184
+#: concrete/elements/page_controls_footer.php:303
+#: concrete/themes/concrete/elements/header.php:53
+#: concrete/themes/dashboard/elements/header.php:61
+msgid "Sign Out"
+msgstr "Kijelentkezés"
+
+#: concrete/themes/concrete/elements/header.php:63
+#: concrete/themes/dashboard/elements/header.php:73
 msgctxt "toolbar"
 msgid "Return to Website"
 msgstr ""
 
-#: concrete/elements/page_controls_footer.php:293
-#: concrete/themes/dashboard/elements/header.php:80
+#: concrete/elements/page_controls_footer.php:296
+#: concrete/themes/dashboard/elements/header.php:83
 msgctxt "toolbar"
 msgid "Dashboard"
 msgstr "Vezérlőpult"
 
-#: concrete/elements/page_controls_footer.php:313
-#: concrete/themes/dashboard/elements/header.php:88
+#: concrete/elements/page_controls_footer.php:316
+#: concrete/themes/dashboard/elements/header.php:91
 msgctxt "toolbar"
 msgid "Pages"
 msgstr "oldalak"
@@ -6284,21 +6300,15 @@ msgstr "Állapot mentése"
 msgid "Edit Page"
 msgstr "Oldal szerkesztése"
 
-#: concrete/elements/account/menu.php:48
-#: concrete/elements/page_controls_footer.php:300
-#: concrete/themes/concrete/elements/header.php:50
-msgid "Sign Out"
-msgstr "Kijelentkezés"
-
-#: concrete/elements/page_controls_footer.php:302
-#: concrete/themes/concrete/elements/header.php:52
+#: concrete/elements/page_controls_footer.php:305
+#: concrete/themes/concrete/elements/header.php:55
 msgctxt "toolbar"
 msgid "Sign Out"
 msgstr "Kijelentkezés"
 
 #: concrete/config/install/base/login_registration.xml:28
 #: concrete/elements/account/menu.php:26
-#: concrete/themes/concrete/elements/header.php:68
+#: concrete/themes/concrete/elements/header.php:71
 msgid "My Account"
 msgstr ""
 
@@ -7324,7 +7334,7 @@ msgctxt "Log channel"
 msgid "Exceptions"
 msgstr ""
 
-#: concrete/blocks/core_area_layout/controller.php:190
+#: concrete/blocks/core_area_layout/controller.php:195
 #: concrete/src/Backup/ContentImporter.php:311
 #, php-format
 msgid "Invalid block type handle: %s"
@@ -7390,59 +7400,59 @@ msgid ""
 "5.7."
 msgstr ""
 
-#: concrete/src/Package/Package.php:111
+#: concrete/src/Package/Package.php:113
 msgid "Attribute categories"
 msgstr ""
 
-#: concrete/src/Package/Package.php:114
+#: concrete/src/Package/Package.php:116
 msgid "Permission categories"
 msgstr ""
 
-#: concrete/src/Package/Package.php:117
+#: concrete/src/Package/Package.php:119
 msgid "Permission access entity types"
 msgstr ""
 
-#: concrete/src/Package/Package.php:120
+#: concrete/src/Package/Package.php:122
 msgid "Attribute keys"
 msgstr ""
 
-#: concrete/src/Package/Package.php:123
+#: concrete/src/Package/Package.php:125
 msgid "Attribute sets"
 msgstr ""
 
-#: concrete/src/Package/Package.php:126
+#: concrete/src/Package/Package.php:128
 msgid "Group sets"
 msgstr ""
 
-#: concrete/src/Package/Package.php:129
+#: concrete/src/Package/Package.php:131
 msgid "Page types"
 msgstr ""
 
-#: concrete/src/Package/Package.php:132
+#: concrete/src/Package/Package.php:134
 msgid "Mail importers"
 msgstr ""
 
-#: concrete/src/Package/Package.php:135
+#: concrete/src/Package/Package.php:137
 msgid "Block types"
 msgstr ""
 
-#: concrete/src/Package/Package.php:138
+#: concrete/src/Package/Package.php:140
 msgid "Page themes"
 msgstr ""
 
-#: concrete/src/Package/Package.php:144
+#: concrete/src/Package/Package.php:146
 msgid "Single pages"
 msgstr ""
 
-#: concrete/src/Package/Package.php:147
+#: concrete/src/Package/Package.php:149
 msgid "Attribute types"
 msgstr ""
 
-#: concrete/src/Package/Package.php:150
+#: concrete/src/Package/Package.php:152
 msgid "Captcha libraries"
 msgstr ""
 
-#: concrete/src/Package/Package.php:153
+#: concrete/src/Package/Package.php:155
 msgid "Antispam libraries"
 msgstr ""
 
@@ -7450,70 +7460,70 @@ msgstr ""
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:299
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:418
 #: concrete/src/Console/Command/JobCommand.php:48
-#: concrete/src/Package/Package.php:156
+#: concrete/src/Package/Package.php:158
 msgid "Jobs"
 msgstr "Feladatok"
 
-#: concrete/src/Package/Package.php:159
+#: concrete/src/Package/Package.php:161
 msgid "Workflow types"
 msgstr ""
 
-#: concrete/src/Package/Package.php:162
+#: concrete/src/Package/Package.php:164
 msgid "Workflow progress categories"
 msgstr ""
 
 #: concrete/single_pages/dashboard/system/files/storage.php:99
-#: concrete/src/Package/Package.php:165
+#: concrete/src/Package/Package.php:167
 msgid "Storage Locations"
 msgstr ""
 
 #: concrete/single_pages/dashboard/system/multilingual/page_report.php:88
 #: concrete/single_pages/dashboard/system/multilingual/page_report.php:96
-#: concrete/src/Package/Package.php:230
+#: concrete/src/Package/Package.php:232
 #, php-format
 msgid "%s (%s)"
 msgstr "%s (%s)"
 
-#: concrete/src/Package/Package.php:239
+#: concrete/src/Package/Package.php:241
 #, php-format
 msgid " %s (%s)"
 msgstr " %s (%s)"
 
-#: concrete/src/Package/Package.php:918
+#: concrete/src/Package/Package.php:928
 msgid "You've already installed that package."
 msgstr "Ezt a csomagot már telepítette."
 
-#: concrete/src/Package/Package.php:919
+#: concrete/src/Package/Package.php:929
 msgid "Invalid Package."
 msgstr "Érvénytelen csomag."
 
-#: concrete/src/Package/Package.php:920
+#: concrete/src/Package/Package.php:930
 #, php-format
 msgid "This package requires concrete5 version %s or greater."
 msgstr ""
 
-#: concrete/src/Package/Package.php:921
+#: concrete/src/Package/Package.php:931
 msgid "An error occurred while downloading the package."
 msgstr "Hiba történt a csomag letöltésekor."
 
-#: concrete/src/Package/Package.php:922
+#: concrete/src/Package/Package.php:932
 msgid "concrete5 was not able to save the package after download."
 msgstr ""
 
-#: concrete/src/Package/Package.php:923
+#: concrete/src/Package/Package.php:933
 msgid "An error occurred while trying to unzip the package."
 msgstr "Hiba történt a ZIP csomag kibontásakor."
 
-#: concrete/src/Package/Package.php:924
+#: concrete/src/Package/Package.php:934
 msgid "An error occurred while trying to install the package."
 msgstr "Hiba történt a csomag telepítésekor."
 
-#: concrete/src/Package/Package.php:926
+#: concrete/src/Package/Package.php:936
 #, php-format
 msgid "Unable to backup old package directory to %s"
 msgstr "Nem lehet biztonsági másolatot készíteni a régi csomag könyvtárról ide: %s"
 
-#: concrete/src/Package/Package.php:930
+#: concrete/src/Package/Package.php:940
 msgid ""
 "This package isn't currently available for this version of concrete5. Please"
 " contact the maintainer of this package for assistance."
@@ -8458,7 +8468,7 @@ msgstr "További infó"
 msgid "Launch Guide"
 msgstr ""
 
-#: concrete/elements/page_controls_footer.php:442
+#: concrete/elements/page_controls_footer.php:445
 #: concrete/src/Application/Service/UserInterface.php:357
 msgid "Hide"
 msgstr ""
@@ -9324,107 +9334,107 @@ msgstr "Oldal tulajdonságai"
 msgid "Composer"
 msgstr "Szerkesztő"
 
-#: concrete/elements/page_controls_footer.php:201
+#: concrete/elements/page_controls_footer.php:204
 msgid "Exit Edit Mode"
 msgstr "Kilépés a szerkesztő módból"
 
-#: concrete/elements/page_controls_footer.php:204
+#: concrete/elements/page_controls_footer.php:207
 msgctxt "toolbar"
 msgid "Exit Edit Mode"
 msgstr "Kilépés a szerkesztő módból"
 
-#: concrete/elements/page_controls_footer.php:212
+#: concrete/elements/page_controls_footer.php:215
 msgid "Edit This Page"
 msgstr "Oldal szerkesztése"
 
-#: concrete/elements/page_controls_footer.php:215
+#: concrete/elements/page_controls_footer.php:218
 msgctxt "toolbar"
 msgid "Edit Mode"
 msgstr "Szerkesztő mód"
 
-#: concrete/elements/page_controls_footer.php:230
+#: concrete/elements/page_controls_footer.php:233
 msgid "Page Design, Location, Attributes and Settings"
 msgstr "Oldal Design, Pozíció, Attribútumok és Beállítások"
 
-#: concrete/elements/page_controls_footer.php:233
+#: concrete/elements/page_controls_footer.php:236
 msgctxt "toolbar"
 msgid "Page Settings"
 msgstr "Oldal beállítások"
 
-#: concrete/elements/page_controls_footer.php:246
-#: concrete/elements/page_controls_footer.php:254
+#: concrete/elements/page_controls_footer.php:249
+#: concrete/elements/page_controls_footer.php:257
 msgid "Add Content to The Page"
 msgstr "Tartalom hozzáadása az oldalhoz"
 
-#: concrete/elements/page_controls_footer.php:249
-#: concrete/elements/page_controls_footer.php:257
+#: concrete/elements/page_controls_footer.php:252
+#: concrete/elements/page_controls_footer.php:260
 msgctxt "toolbar"
 msgid "Add Content"
 msgstr ""
 
-#: concrete/elements/page_controls_footer.php:280
+#: concrete/elements/page_controls_footer.php:283
 #, php-format
 msgid "Powered by <a href=\"%s\">concrete5</a>."
 msgstr "Üzemelteti a <a href=\"%s\">concrete5</a>."
 
-#: concrete/elements/page_controls_footer.php:290
+#: concrete/elements/page_controls_footer.php:293
 msgid "Dashboard – Change Site-wide Settings"
 msgstr "Vezérlőpult - Weboldal egésszére kiható beállítások"
 
-#: concrete/elements/page_controls_footer.php:309
+#: concrete/elements/page_controls_footer.php:312
 msgid "Add Pages and Navigate Your Site"
 msgstr "Oldalak hozzáadása és Navigáció"
 
-#: concrete/elements/page_controls_footer.php:323
+#: concrete/elements/page_controls_footer.php:326
 msgid "Navigate this page in other languages"
 msgstr "Ugrás ennek az oldalnak más nyelvi verziójára"
 
-#: concrete/elements/page_controls_footer.php:361
+#: concrete/elements/page_controls_footer.php:364
 msgid "Editing Unavailable."
 msgstr ""
 
-#: concrete/elements/page_controls_footer.php:362
+#: concrete/elements/page_controls_footer.php:365
 #, php-format
 msgid "%s is currently editing this page."
 msgstr "%s szerkeszti jelenleg az oldalt."
 
-#: concrete/elements/page_controls_footer.php:373
+#: concrete/elements/page_controls_footer.php:376
 msgid "View/Edit Original"
 msgstr "Eredeti oldal megtekintése/szerkesztése"
 
-#: concrete/elements/page_controls_footer.php:376
+#: concrete/elements/page_controls_footer.php:379
 msgid "Remove Alias"
 msgstr "Alias törlése"
 
-#: concrete/elements/page_controls_footer.php:381
+#: concrete/elements/page_controls_footer.php:384
 msgid "Page Alias."
 msgstr ""
 
-#: concrete/elements/page_controls_footer.php:382
+#: concrete/elements/page_controls_footer.php:385
 msgid "This page is an alias of one that actually appears elsewhere."
 msgstr ""
 
-#: concrete/elements/page_controls_footer.php:456
+#: concrete/elements/page_controls_footer.php:459
 msgid "Page Draft."
 msgstr ""
 
-#: concrete/elements/page_controls_footer.php:457
+#: concrete/elements/page_controls_footer.php:460
 msgid "This is an un-published draft."
 msgstr ""
 
-#: concrete/elements/page_controls_footer.php:469
+#: concrete/elements/page_controls_footer.php:472
 msgid "Submit for Approval"
 msgstr ""
 
-#: concrete/elements/page_controls_footer.php:473
+#: concrete/elements/page_controls_footer.php:476
 msgid "Approve Version"
 msgstr "Verzió jóváhagyása"
 
-#: concrete/elements/page_controls_footer.php:482
+#: concrete/elements/page_controls_footer.php:485
 msgid "Page is Pending Approval."
 msgstr "Az oldal jóváhagyása folyamatban."
 
-#: concrete/elements/page_controls_footer.php:483
+#: concrete/elements/page_controls_footer.php:486
 msgid "This page is newer than what appears to visitors on your live site."
 msgstr ""
 
@@ -11457,14 +11467,6 @@ msgstr "Nincs jogosultsága hozzáférni ehhez az oldalhoz."
 msgid "To install concrete5, please fill out the form below."
 msgstr "A concrete5 telepítéséhez kérem töltse ki az alábbi űrlapo."
 
-#: concrete/views/frontend/install.php:74
-#: concrete/views/frontend/install.php:132
-#: concrete/views/frontend/install.php:258
-#: concrete/views/frontend/install.php:324
-#: concrete/views/frontend/install.php:533
-msgid "Install concrete5"
-msgstr "concrete5 telepítése"
-
 #: concrete/views/frontend/install.php:88
 msgid "Continue to your site"
 msgstr "Tovább a weboldalhoz"
@@ -12179,11 +12181,11 @@ msgstr ""
 msgid "Horizontal Rule"
 msgstr ""
 
-#: concrete/blocks/image_slider/controller.php:25
+#: concrete/blocks/image_slider/controller.php:26
 msgid "Display your images and captions in an attractive slideshow format."
 msgstr ""
 
-#: concrete/blocks/image_slider/controller.php:30
+#: concrete/blocks/image_slider/controller.php:31
 msgid "Image Slider"
 msgstr "Kép Rotátor"
 
@@ -12436,11 +12438,11 @@ msgstr "Biztos hogy törölni szeretnéd ezt az elrendezést? Ezzel minden benne
 msgid "Update Layout"
 msgstr "Elrendezés frissítése"
 
-#: concrete/blocks/core_area_layout/controller.php:31
+#: concrete/blocks/core_area_layout/controller.php:32
 msgid "Proxy block for area layouts."
 msgstr ""
 
-#: concrete/blocks/core_area_layout/controller.php:36
+#: concrete/blocks/core_area_layout/controller.php:37
 msgid "Area Layout"
 msgstr "Terület elrendezés"
 
@@ -16575,7 +16577,7 @@ msgid "Enable page selection from sitemap."
 msgstr ""
 
 #: concrete/single_pages/dashboard/system/basics/editor.php:18
-msgid "Redactor Plugins"
+msgid "Editor Plugins"
 msgstr ""
 
 #: concrete/single_pages/dashboard/system/basics/images.php:9
