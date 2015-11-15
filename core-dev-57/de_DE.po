@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-11-11 05:00+0000\n"
-"PO-Revision-Date: 2015-11-11 13:55+0000\n"
+"POT-Creation-Date: 2015-11-14 05:00+0000\n"
+"PO-Revision-Date: 2015-11-14 19:46+0000\n"
 "Last-Translator: Torsten Silbermann <mail@tsilbermann.de>\n"
 "Language-Team: German (Germany) (http://www.transifex.com/concrete5/concrete5/language/de_DE/)\n"
 "MIME-Version: 1.0\n"
@@ -556,8 +556,8 @@ msgstr "Zugriff verweigert"
 #: concrete/controllers/dialog/page/add/compose.php:46
 #: concrete/controllers/panel/detail/page/composer.php:39
 #: concrete/controllers/panel/detail/page/composer.php:52
-#: concrete/controllers/panel/detail/page/composer.php:78
-#: concrete/controllers/panel/detail/page/composer.php:98
+#: concrete/controllers/panel/detail/page/composer.php:82
+#: concrete/controllers/panel/detail/page/composer.php:102
 #: concrete/controllers/single_page/dashboard/users/search.php:48
 #: concrete/controllers/single_page/dashboard/users/search.php:66
 #: concrete/tools/dashboard/attribute_set_order_update.php:13
@@ -2026,7 +2026,7 @@ msgstr "Die Seitenberechtigungen wurden gespeichert."
 msgid "Page saved on %s"
 msgstr "Die Seite wurde am %s gespeichert."
 
-#: concrete/controllers/panel/detail/page/composer.php:92
+#: concrete/controllers/panel/detail/page/composer.php:96
 msgid "You do not have permission to discard this page."
 msgstr "Sie verfügen nicht über die Berechtigung zum Verwerfen dieser Seite."
 
@@ -4570,8 +4570,8 @@ msgid "Manage Stack Contents"
 msgstr "Stapel bearbeiten"
 
 #: concrete/controllers/frontend/assets_localization.php:58
-#: concrete/src/Workflow/Request/ApprovePageRequest.php:71
-#: concrete/src/Workflow/Request/ApprovePageRequest.php:72
+#: concrete/src/Workflow/Request/ApprovePageRequest.php:86
+#: concrete/src/Workflow/Request/ApprovePageRequest.php:87
 msgid "Compare Versions"
 msgstr "Versionen vergleichen"
 
@@ -7150,15 +7150,15 @@ msgid ""
 msgstr "In der Datei %1$s des Themes sollte eine Klasse %2$s definiert sein, die die Klasse %3$s erweitert."
 
 #: concrete/single_pages/dashboard/pages/types/form.php:54
-#: concrete/src/Page/Theme/Theme.php:742
+#: concrete/src/Page/Theme/Theme.php:746
 msgid "(No Name)"
 msgstr "(Ohne Name)"
 
-#: concrete/src/Page/Theme/Theme.php:787
+#: concrete/src/Page/Theme/Theme.php:791
 msgid "(No Description)"
 msgstr "(Ohne Beschreibung)"
 
-#: concrete/src/Page/Type/PublishTarget/Type/PageTypeType.php:39
+#: concrete/src/Page/Type/PublishTarget/Type/PageTypeType.php:44
 msgid ""
 "You must choose the type of page these page types are published beneath."
 msgstr "Es muss ein Seitentyp ausgewählt werden unter dem Seiten dieses Typs veröffentlicht werden sollen."
@@ -7801,27 +7801,31 @@ msgstr "<a href=\"%s\">%s</a> hat ungeprüfte Änderungen der Berechtigungsverer
 msgid "Sub-Page Inheritance Changes"
 msgstr "Änderungen der Unterseiten-Vererbungen"
 
-#: concrete/src/Workflow/Request/ApprovePageRequest.php:36
+#: concrete/src/Workflow/Request/ApprovePageRequest.php:43
 #, php-format
 msgid ""
-"\"%s\" has pending changes and needs to be approved. View the page here: %s."
-msgstr "\"%s\" hat unbestätigte Änderungen und muss freigegeben werden. Betrachten Sie die Seite hier: %s."
+"\"%s\" has pending changes and needs to be approved.\n"
+"\n"
+"Version Comments: %s\n"
+"\n"
+"View the page here: %s."
+msgstr "\"%s\" enthält unbestätigte Änderungen und kann freigegeben werden.\n\nVersionskommentare: %s\n\nSeite hier ansehen: %s."
 
-#: concrete/src/Workflow/Request/ApprovePageRequest.php:37
+#: concrete/src/Workflow/Request/ApprovePageRequest.php:45
 #, php-format
 msgid "Version %s of Page <a href=\"%s\">%s</a> submitted for Approval."
 msgstr "Für Version %s der Seite <a href=\"%s\">%s</a> steht eine Freigabe aus."
 
-#: concrete/src/Workflow/Request/ApprovePageRequest.php:38
+#: concrete/src/Workflow/Request/ApprovePageRequest.php:47
 #, php-format
 msgid "Page Version %s Submitted for Approval."
 msgstr "Für Seitenversion %s steht eine Freigabe aus."
 
-#: concrete/src/Workflow/Request/ApprovePageRequest.php:39
+#: concrete/src/Workflow/Request/ApprovePageRequest.php:48
 msgid "Pending Approval"
 msgstr "Ausstehende Freigabe"
 
-#: concrete/src/Workflow/Request/ApprovePageRequest.php:56
+#: concrete/src/Workflow/Request/ApprovePageRequest.php:69
 msgid "Approve Page"
 msgstr "Seite freigeben"
 
@@ -9473,7 +9477,7 @@ msgstr "Die Seite kann freigegeben werden."
 
 #: concrete/elements/page_controls_footer.php:486
 msgid "This page is newer than what appears to visitors on your live site."
-msgstr "Diese Seitenversion ist aktueller als die den Besuchern angezeigte."
+msgstr "Diese Seitenversion ist aktueller als die öffentlich angezeigte."
 
 #: concrete/elements/collection_timed_permission_list.php:16
 msgid "Permission on "
@@ -10314,7 +10318,7 @@ msgstr "Die folgenden Bereichsberechtigungen wurden von einem Bereich übernomme
 #: concrete/elements/permission/lists/area.php:42
 msgid ""
 "The following area permissions are inherited from the page's permissions."
-msgstr "Die folgenden Bereichsberechtigungen wurden von den Seitenberechtigungen geerbt."
+msgstr "Die folgenden Bereichsberechtigungen wurden von den Seitenberechtigungen übernommen."
 
 #: concrete/elements/permission/lists/area.php:53
 msgid "Permissions for this area currently override those of the page."
