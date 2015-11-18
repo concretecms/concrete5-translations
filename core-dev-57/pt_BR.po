@@ -5,14 +5,15 @@
 # gilberto dos santos alves <gsavix@gmail.com>, 2015
 # juliano98 <juliano@itudo.net>, 2015
 # Marcelo Ghelman <marcelo.ghelman@gmail.com>, 2014
+# Marcus Crisostomo <marcus.crisostomo@yahoo.com.br>, 2015
 # Sidney Moretto <sidney.moretto@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-11-14 05:00+0000\n"
-"PO-Revision-Date: 2015-11-14 09:42+0000\n"
-"Last-Translator: Michele Locati <michele@locati.it>\n"
+"POT-Creation-Date: 2015-11-17 05:00+0000\n"
+"PO-Revision-Date: 2015-11-17 12:29+0000\n"
+"Last-Translator: Marcus Crisostomo <marcus.crisostomo@yahoo.com.br>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/concrete5/concrete5/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -5702,6 +5703,7 @@ msgstr "Texto"
 #: concrete/mail/user_register_approval_required_to_user.php:15
 #: concrete/mail/user_register_approval_required_to_user.php:36
 #: concrete/single_pages/account/edit_profile.php:21
+#: concrete/src/Sharing/ShareThisPage/ServiceList.php:14
 #: concrete/src/User/Search/ColumnSet/DefaultSet.php:30
 msgid "Email"
 msgstr "Email"
@@ -7810,7 +7812,7 @@ msgid ""
 "Version Comments: %s\n"
 "\n"
 "View the page here: %s."
-msgstr ""
+msgstr "\"%s\" está pendente de mudanças e necessita de aprovação.\n\nVersão dos Comentários: %s\n\nVer a página aqui: %s."
 
 #: concrete/src/Workflow/Request/ApprovePageRequest.php:45
 #, php-format
@@ -7939,7 +7941,7 @@ msgstr "A tarefa foi executada com sucesso."
 #: concrete/src/Application/Application.php:394
 msgid ""
 "Invalid path traversal. Please make this request with a valid HTTP client."
-msgstr ""
+msgstr "Travessia de caminho inválido. Por favor faça este pedido com um cliente HTTP válido."
 
 #: concrete/src/Application/Service/UserInterface/Help/DashboardManager.php:10
 msgid ""
@@ -8513,6 +8515,17 @@ msgstr "Seu site"
 msgid "%s more to display. <strong>View all &gt;</strong>"
 msgstr "%s mais para exibir. <strong>Ver todos&gt;</strong>"
 
+#: concrete/src/Session/Session.php:59
+#, php-format
+msgid "Session Invalidated. Session IP %s did not match provided IP %s."
+msgstr "Sessão invalidada. Sessão de IP %s não bateu com o IP fornecido %s."
+
+#: concrete/src/Session/Session.php:65
+#, php-format
+msgid ""
+"Session Invalidated. Session user agent %s did not match provided agent %s"
+msgstr "Sessão invalidada. O Agente de sessão de usuário %s não corresponde com o agente %s"
+
 #: concrete/src/Foundation/Repetition/AbstractRepetition.php:481
 #, php-format
 msgid "Starts %s. "
@@ -8837,36 +8850,36 @@ msgstr "Não foi possível pegar uma informação sobre este produto."
 #: concrete/src/Validator/PasswordValidatorServiceProvider.php:36
 #, php-format
 msgid "A password must be between %s and %s characters long."
-msgstr ""
+msgstr "Uma senha deve estar entre %s e %s caracteres longos."
 
 #: concrete/src/Validator/PasswordValidatorServiceProvider.php:40
 #, php-format
 msgid "A password must be at least %s characters long."
-msgstr ""
+msgstr "Uma senha deve ter pelo menos %s caracteres longos."
 
 #: concrete/src/Validator/PasswordValidatorServiceProvider.php:42
 #, php-format
 msgid "A password can be at most %s characters long."
-msgstr ""
+msgstr "Uma senha pode ter mais de %s caracteres longos."
 
 #: concrete/src/Validator/PasswordValidatorServiceProvider.php:45
 msgid "Invalid password."
-msgstr ""
+msgstr "Senha inválida."
 
 #: concrete/src/Validator/PasswordValidatorServiceProvider.php:50
 #, php-format
 msgid "Must be between %s and %s characters long."
-msgstr ""
+msgstr "Deve estar entre %s e %s caracteres longos."
 
 #: concrete/src/Validator/PasswordValidatorServiceProvider.php:54
 #, php-format
 msgid "Must be at least %s characters long."
-msgstr ""
+msgstr "Deve ter pelo menos %s caracteres longos."
 
 #: concrete/src/Validator/PasswordValidatorServiceProvider.php:56
 #, php-format
 msgid "Must be at most %s characters long."
-msgstr ""
+msgstr "Deve ter mais de %s caracteres longos."
 
 #: concrete/src/Search/ItemList/Database/ItemList.php:73
 #: concrete/src/Search/ItemList/Database/ItemList.php:82
@@ -9313,15 +9326,15 @@ msgstr "Executar Guia"
 
 #: concrete/elements/help/dialog/introduction.php:23
 msgid "Add & Change Content"
-msgstr ""
+msgstr "Adicionar e Mudar Conteúdo"
 
 #: concrete/elements/help/dialog/introduction.php:26
 msgid "Guide: Change Content"
-msgstr ""
+msgstr "Guia: Mudar Conteúdo"
 
 #: concrete/elements/help/dialog/introduction.php:27
 msgid "Guide: Add Content"
-msgstr ""
+msgstr "Guia: Adicionar Conteúdo"
 
 #: concrete/elements/help/dialog/introduction.php:31
 msgid "Add a page"
@@ -10409,7 +10422,7 @@ msgstr "Seletor Fator Formulário"
 #: concrete/elements/page_types/target_types/all.php:21
 #: concrete/elements/page_types/target_types/page_type.php:35
 msgid "Display Pages Beneath Page"
-msgstr ""
+msgstr "Exibir Páginas Abaixo da Página"
 
 #: concrete/elements/page_types/target_types/all.php:4
 msgid "Sitemap Pop-Up"
@@ -15700,7 +15713,7 @@ msgstr "Entidades"
 msgid ""
 "Search for application and package-specific entities, refresh their database"
 " schema and generate their proxy classes."
-msgstr ""
+msgstr "Buscar por aplicação e entradas de pacotes específicos, atualizar seu esquema de base de dados e gerar suas classes de proxy."
 
 #: concrete/single_pages/dashboard/system/environment/entities.php:42
 msgctxt "Doctrine"
@@ -16625,7 +16638,7 @@ msgstr "Habilitar seleção de página a partir do mapa do site"
 
 #: concrete/single_pages/dashboard/system/basics/editor.php:18
 msgid "Editor Plugins"
-msgstr ""
+msgstr "Editor de Plugins"
 
 #: concrete/single_pages/dashboard/system/basics/images.php:9
 msgid "Background Image"
