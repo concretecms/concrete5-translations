@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-11-30 05:00+0000\n"
-"PO-Revision-Date: 2015-11-30 10:20+0000\n"
-"Last-Translator: Torsten Silbermann <mail@tsilbermann.de>\n"
+"POT-Creation-Date: 2015-12-01 05:00+0000\n"
+"PO-Revision-Date: 2015-12-01 09:43+0000\n"
+"Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: German (Germany) (http://www.transifex.com/concrete5/concrete5/language/de_DE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2455,6 +2455,7 @@ msgid "Invalid package."
 msgstr "Ungültiges Paket"
 
 #: concrete/controllers/single_page/dashboard/extend/install.php:85
+#: concrete/src/Package/Package.php:980
 msgid ""
 "This package contains the active site theme, please change the theme before "
 "uninstalling."
@@ -6516,17 +6517,17 @@ msgstr "Registrierung fehlgeschlagen"
 #: concrete/mail/mail_importer_error.php:8
 #: concrete/mail/private_message.php:10
 #: concrete/mail/private_message_response_enabled.php:8
-#: concrete/src/User/UserInfo.php:194
+#: concrete/src/User/UserInfo.php:196
 #, php-format
 msgid "Subject: %s"
 msgstr "Betreff: %s"
 
-#: concrete/src/User/UserInfo.php:196
+#: concrete/src/User/UserInfo.php:198
 #, php-format
 msgid "Message: %s"
 msgstr "Nachricht: %s"
 
-#: concrete/src/User/UserInfo.php:203
+#: concrete/src/User/UserInfo.php:205
 msgid "(No Subject)"
 msgstr "(Kein Betreff)"
 
@@ -7483,51 +7484,51 @@ msgstr "Speicherorte"
 
 #: concrete/single_pages/dashboard/system/multilingual/page_report.php:88
 #: concrete/single_pages/dashboard/system/multilingual/page_report.php:96
-#: concrete/src/Package/Package.php:232
+#: concrete/src/Package/Package.php:234
 #, php-format
 msgid "%s (%s)"
 msgstr "%s (%s)"
 
-#: concrete/src/Package/Package.php:241
+#: concrete/src/Package/Package.php:243
 #, php-format
 msgid " %s (%s)"
 msgstr " %s (%s)"
 
-#: concrete/src/Package/Package.php:928
+#: concrete/src/Package/Package.php:966
 msgid "You've already installed that package."
 msgstr "Dieses Paket ist bereits installiert."
 
-#: concrete/src/Package/Package.php:929
+#: concrete/src/Package/Package.php:967
 msgid "Invalid Package."
 msgstr "Ungültiges Paket"
 
-#: concrete/src/Package/Package.php:930
+#: concrete/src/Package/Package.php:968
 #, php-format
 msgid "This package requires concrete5 version %s or greater."
 msgstr "Dieses Paket kann nur in concrete5 ab Version %s verwendet werden."
 
-#: concrete/src/Package/Package.php:931
+#: concrete/src/Package/Package.php:969
 msgid "An error occurred while downloading the package."
 msgstr "Beim Herunterladen des Paketes ist ein Fehler aufgetreten."
 
-#: concrete/src/Package/Package.php:932
+#: concrete/src/Package/Package.php:970
 msgid "concrete5 was not able to save the package after download."
 msgstr "concrete5 konnte das Paket nach dem Herunterladen nicht speichern."
 
-#: concrete/src/Package/Package.php:933
+#: concrete/src/Package/Package.php:971
 msgid "An error occurred while trying to unzip the package."
 msgstr "Beim Entpacken des Paketes ist ein Fehler aufgetreten."
 
-#: concrete/src/Package/Package.php:934
+#: concrete/src/Package/Package.php:972
 msgid "An error occurred while trying to install the package."
 msgstr "Beim Installieren des Paketes ist ein Fehler aufgetreten."
 
-#: concrete/src/Package/Package.php:936
+#: concrete/src/Package/Package.php:974
 #, php-format
 msgid "Unable to backup old package directory to %s"
 msgstr "Das alte Paketverzeichnis konnte nicht nach %s verschoben werden."
 
-#: concrete/src/Package/Package.php:940
+#: concrete/src/Package/Package.php:978
 msgid ""
 "This package isn't currently available for this version of concrete5. Please"
 " contact the maintainer of this package for assistance."
@@ -8484,7 +8485,7 @@ msgstr "Weiterlesen"
 msgid "Launch Guide"
 msgstr "Anleitung starten"
 
-#: concrete/elements/page_controls_footer.php:445
+#: concrete/elements/page_controls_footer.php:446
 #: concrete/src/Application/Service/UserInterface.php:357
 msgid "Hide"
 msgstr "ausblenden"
@@ -9459,38 +9460,41 @@ msgid "View/Edit Original"
 msgstr "Original ansehen/bearbeiten"
 
 #: concrete/elements/page_controls_footer.php:379
+#: concrete/elements/page_controls_footer.php:380
 msgid "Remove Alias"
 msgstr "Alias entfernen"
 
-#: concrete/elements/page_controls_footer.php:384
+#: concrete/elements/page_controls_footer.php:385
 msgid "Page Alias."
 msgstr "Seitenalias"
 
-#: concrete/elements/page_controls_footer.php:385
+#: concrete/elements/page_controls_footer.php:386
 msgid "This page is an alias of one that actually appears elsewhere."
 msgstr "Diese Seite ist ein Alias einer Seite, die an einer anderem Ort angezeigt wird."
 
-#: concrete/elements/page_controls_footer.php:459
+#: concrete/elements/page_controls_footer.php:460
 msgid "Page Draft."
 msgstr "Seitenentwurf"
 
-#: concrete/elements/page_controls_footer.php:460
+#: concrete/elements/page_controls_footer.php:461
 msgid "This is an un-published draft."
 msgstr "Dies ist ein unveröffentlichter Entwurf."
 
-#: concrete/elements/page_controls_footer.php:472
-msgid "Submit for Approval"
-msgstr "Zur Freigabe übermitteln"
+#: concrete/elements/page_controls_footer.php:484
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:40
+#: concrete/views/panels/page/check_in.php:34
+msgid "Submit to Workflow"
+msgstr "Zum Workflow hinzufügen"
 
-#: concrete/elements/page_controls_footer.php:476
+#: concrete/elements/page_controls_footer.php:488
 msgid "Approve Version"
 msgstr "Version freigeben"
 
-#: concrete/elements/page_controls_footer.php:485
+#: concrete/elements/page_controls_footer.php:497
 msgid "Page is Pending Approval."
 msgstr "Die Seite kann freigegeben werden."
 
-#: concrete/elements/page_controls_footer.php:486
+#: concrete/elements/page_controls_footer.php:498
 msgid "This page is newer than what appears to visitors on your live site."
 msgstr "Diese Seitenversion ist aktueller als die öffentlich angezeigte."
 
@@ -11395,11 +11399,6 @@ msgstr "Versionskommentar"
 #: concrete/views/panels/page/check_in.php:18
 msgid "Publish Changes"
 msgstr "Änderungen veröffentlichen"
-
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:40
-#: concrete/views/panels/page/check_in.php:34
-msgid "Submit to Workflow"
-msgstr "Zum Workflow hinzufügen"
 
 #: concrete/views/panels/page/check_in.php:64
 #, php-format

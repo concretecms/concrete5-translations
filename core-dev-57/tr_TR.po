@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2015-11-30 05:00+0000\n"
-"PO-Revision-Date: 2015-11-30 23:43+0000\n"
+"POT-Creation-Date: 2015-12-01 05:00+0000\n"
+"PO-Revision-Date: 2015-12-01 14:43+0000\n"
 "Last-Translator: Adem Coşkuner <info@ademcoskuner.com>\n"
 "Language-Team: Turkish (Turkey) (http://www.transifex.com/concrete5/concrete5/language/tr_TR/)\n"
 "MIME-Version: 1.0\n"
@@ -2446,6 +2446,7 @@ msgid "Invalid package."
 msgstr "Geçersiz paket."
 
 #: concrete/controllers/single_page/dashboard/extend/install.php:85
+#: concrete/src/Package/Package.php:980
 msgid ""
 "This package contains the active site theme, please change the theme before "
 "uninstalling."
@@ -6501,17 +6502,17 @@ msgstr "Kayıt Başarısız"
 #: concrete/mail/mail_importer_error.php:8
 #: concrete/mail/private_message.php:10
 #: concrete/mail/private_message_response_enabled.php:8
-#: concrete/src/User/UserInfo.php:194
+#: concrete/src/User/UserInfo.php:196
 #, php-format
 msgid "Subject: %s"
 msgstr "Konu: %s"
 
-#: concrete/src/User/UserInfo.php:196
+#: concrete/src/User/UserInfo.php:198
 #, php-format
 msgid "Message: %s"
 msgstr "Mesaj: %s"
 
-#: concrete/src/User/UserInfo.php:203
+#: concrete/src/User/UserInfo.php:205
 msgid "(No Subject)"
 msgstr "(Konusuz)"
 
@@ -7467,51 +7468,51 @@ msgstr "Depolama Konumları"
 
 #: concrete/single_pages/dashboard/system/multilingual/page_report.php:88
 #: concrete/single_pages/dashboard/system/multilingual/page_report.php:96
-#: concrete/src/Package/Package.php:232
+#: concrete/src/Package/Package.php:234
 #, php-format
 msgid "%s (%s)"
 msgstr "%s (%s)"
 
-#: concrete/src/Package/Package.php:241
+#: concrete/src/Package/Package.php:243
 #, php-format
 msgid " %s (%s)"
 msgstr " %s (%s)"
 
-#: concrete/src/Package/Package.php:928
+#: concrete/src/Package/Package.php:966
 msgid "You've already installed that package."
 msgstr "Bu paketi zaten yüklemişsiniz."
 
-#: concrete/src/Package/Package.php:929
+#: concrete/src/Package/Package.php:967
 msgid "Invalid Package."
 msgstr "Geçersiz Paket."
 
-#: concrete/src/Package/Package.php:930
+#: concrete/src/Package/Package.php:968
 #, php-format
 msgid "This package requires concrete5 version %s or greater."
 msgstr "Bu paket concrete5 %s ya da daha yüksek sürümüne ihtiyaç duyuyor."
 
-#: concrete/src/Package/Package.php:931
+#: concrete/src/Package/Package.php:969
 msgid "An error occurred while downloading the package."
 msgstr "Paket karşıdan yüklenirken bir hata oluştu."
 
-#: concrete/src/Package/Package.php:932
+#: concrete/src/Package/Package.php:970
 msgid "concrete5 was not able to save the package after download."
 msgstr "concrete5 paketi indirdikten sonra kaydedemedi."
 
-#: concrete/src/Package/Package.php:933
+#: concrete/src/Package/Package.php:971
 msgid "An error occurred while trying to unzip the package."
 msgstr "Paketi açmayı denerken bir hata oluştu."
 
-#: concrete/src/Package/Package.php:934
+#: concrete/src/Package/Package.php:972
 msgid "An error occurred while trying to install the package."
 msgstr "Paketi kurmayı denerken bir hata oluştu."
 
-#: concrete/src/Package/Package.php:936
+#: concrete/src/Package/Package.php:974
 #, php-format
 msgid "Unable to backup old package directory to %s"
 msgstr "Eski paket dizini %s'e yedekleme yapılamıyor."
 
-#: concrete/src/Package/Package.php:940
+#: concrete/src/Package/Package.php:978
 msgid ""
 "This package isn't currently available for this version of concrete5. Please"
 " contact the maintainer of this package for assistance."
@@ -8468,7 +8469,7 @@ msgstr "Detaylar"
 msgid "Launch Guide"
 msgstr "Klavuzu Çalıştır"
 
-#: concrete/elements/page_controls_footer.php:445
+#: concrete/elements/page_controls_footer.php:446
 #: concrete/src/Application/Service/UserInterface.php:357
 msgid "Hide"
 msgstr "Gizle"
@@ -9301,7 +9302,7 @@ msgstr "Klavuzu Çalıştır"
 
 #: concrete/elements/help/dialog/introduction.php:23
 msgid "Add & Change Content"
-msgstr "İçeirk Ekle & Değiştir"
+msgstr "İçerik Ekle & Değiştir"
 
 #: concrete/elements/help/dialog/introduction.php:26
 msgid "Guide: Change Content"
@@ -9433,38 +9434,41 @@ msgid "View/Edit Original"
 msgstr "Orjinali Gör / Düzenle"
 
 #: concrete/elements/page_controls_footer.php:379
+#: concrete/elements/page_controls_footer.php:380
 msgid "Remove Alias"
 msgstr "Yansımayı Kaldır"
 
-#: concrete/elements/page_controls_footer.php:384
+#: concrete/elements/page_controls_footer.php:385
 msgid "Page Alias."
 msgstr "Sayfa Yansımaları."
 
-#: concrete/elements/page_controls_footer.php:385
+#: concrete/elements/page_controls_footer.php:386
 msgid "This page is an alias of one that actually appears elsewhere."
 msgstr "Bu sayfa bir başka bir yerde görünen sayfanın yansımasıdır."
 
-#: concrete/elements/page_controls_footer.php:459
+#: concrete/elements/page_controls_footer.php:460
 msgid "Page Draft."
 msgstr "Sayfa Taslağı."
 
-#: concrete/elements/page_controls_footer.php:460
+#: concrete/elements/page_controls_footer.php:461
 msgid "This is an un-published draft."
 msgstr "Bu yayınlanmamış bir taslaktır."
 
-#: concrete/elements/page_controls_footer.php:472
-msgid "Submit for Approval"
-msgstr "Onay için Gönder"
+#: concrete/elements/page_controls_footer.php:484
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:40
+#: concrete/views/panels/page/check_in.php:34
+msgid "Submit to Workflow"
+msgstr "İş Akışına Gönder"
 
-#: concrete/elements/page_controls_footer.php:476
+#: concrete/elements/page_controls_footer.php:488
 msgid "Approve Version"
 msgstr "Sürümü Onayla"
 
-#: concrete/elements/page_controls_footer.php:485
+#: concrete/elements/page_controls_footer.php:497
 msgid "Page is Pending Approval."
 msgstr "Sayfa Onay Bekliyor."
 
-#: concrete/elements/page_controls_footer.php:486
+#: concrete/elements/page_controls_footer.php:498
 msgid "This page is newer than what appears to visitors on your live site."
 msgstr "Bu sayfa, ziyaretçilerinizin gördüğünden daha yenidir."
 
@@ -11365,11 +11369,6 @@ msgstr "Sürüm Açıklamaları"
 #: concrete/views/panels/page/check_in.php:18
 msgid "Publish Changes"
 msgstr "Değişiklikleri Yayınla"
-
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:40
-#: concrete/views/panels/page/check_in.php:34
-msgid "Submit to Workflow"
-msgstr "İş Akışına Gönder"
 
 #: concrete/views/panels/page/check_in.php:64
 #, php-format
@@ -14801,7 +14800,7 @@ msgstr "Şu an kurulum için hiçbir şey mevcut değil."
 msgid ""
 "This package is corrupted. Make sure it has a valid controller.php file and "
 "that it has been updated for concrete5.7 and later."
-msgstr "Bu paket bozuktur. Geçerli bir controller.php dosyası olduğundan ve concrete5.7 veya sonrası için güncellenmiş olduğundan emin olun."
+msgstr "Bu paket bozulmuş. Geçerli bir controller.php dosyası olduğundan ve concrete5.7 veya sonrası için güncellenmiş olduğundan emin olun."
 
 #: concrete/single_pages/dashboard/extend/install.php:392
 msgid "Can't Install!"
