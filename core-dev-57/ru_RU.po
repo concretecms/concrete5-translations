@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-01-10 05:00+0000\n"
-"PO-Revision-Date: 2016-01-10 09:04+0000\n"
+"POT-Creation-Date: 2016-01-12 05:00+0000\n"
+"PO-Revision-Date: 2016-01-12 09:04+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Russian (Russia) (http://www.transifex.com/concrete5/concrete5/language/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -139,7 +139,7 @@ msgstr "Группа по умолчанию при регистрации"
 #: concrete/authentication/facebook/type_form.php:28
 #: concrete/authentication/google/type_form.php:29
 #: concrete/authentication/twitter/type_form.php:35
-#: concrete/blocks/autonav/form_setup_html.php:92
+#: concrete/blocks/autonav/form_setup_html.php:102
 #: concrete/blocks/dashboard_site_activity/view.php:5
 #: concrete/blocks/feature/form.php:34
 #: concrete/blocks/form/form_setup_html.php:94
@@ -670,6 +670,7 @@ msgstr "Добавить из /incoming"
 msgid "Filename"
 msgstr "Имя файла"
 
+#: concrete/blocks/youtube/form_setup_html.php:30
 #: concrete/controllers/frontend/assets_localization.php:112
 #: concrete/controllers/search/files.php:256
 #: concrete/elements/custom_style.php:187
@@ -5486,6 +5487,7 @@ msgstr "Отредактируйте контент на странице, на�
 
 #: concrete/blocks/autonav/form_setup_html.php:16
 #: concrete/blocks/page_list/page_list_form.php:11
+#: concrete/blocks/youtube/form_setup_html.php:18
 #: concrete/config/install/base/dashboard.xml:815
 #: concrete/controllers/frontend/assets_localization.php:298
 #: concrete/single_pages/dashboard/system/environment/entities.php:10
@@ -5698,7 +5700,6 @@ msgstr "Удалить заголовок"
 #: concrete/blocks/image_slider/form_setup_html.php:273
 #: concrete/blocks/search/form_setup_html.php:30
 #: concrete/blocks/tags/tag_form.php:10 concrete/blocks/topic_list/form.php:44
-#: concrete/blocks/youtube/form_setup_html.php:16
 #: concrete/controllers/frontend/assets_localization.php:390
 #: concrete/elements/files/properties.php:132
 #: concrete/single_pages/dashboard/files/sets.php:75
@@ -5833,7 +5834,7 @@ msgstr "Параметры фрейма"
 
 #: concrete/blocks/page_attribute_display/form.php:34
 #: concrete/blocks/video/form_setup_html.php:4
-#: concrete/blocks/youtube/form_setup_html.php:24
+#: concrete/blocks/youtube/form_setup_html.php:51
 #: concrete/controllers/frontend/assets_localization.php:423
 #: concrete/elements/custom_style.php:210
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:57
@@ -5845,7 +5846,7 @@ msgstr "Ширина"
 
 #: concrete/blocks/page_attribute_display/form.php:38
 #: concrete/blocks/video/form_setup_html.php:11
-#: concrete/blocks/youtube/form_setup_html.php:28
+#: concrete/blocks/youtube/form_setup_html.php:58
 #: concrete/controllers/frontend/assets_localization.php:424
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:64
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:104
@@ -6774,6 +6775,7 @@ msgstr "Произошла ошибка при попытке определен
 msgid "Request timed out."
 msgstr "Время запроса истекло."
 
+#: concrete/blocks/youtube/form_setup_html.php:17
 #: concrete/src/File/Type/Type.php:70
 msgid "Video"
 msgstr "Видео"
@@ -7997,7 +7999,7 @@ msgstr "Печать"
 msgid "The Job was run successfully."
 msgstr "Задача была успешно запущена."
 
-#: concrete/src/Application/Application.php:403
+#: concrete/src/Application/Application.php:417
 msgid ""
 "Invalid path traversal. Please make this request with a valid HTTP client."
 msgstr "Недопустимый путь. Укажите корректный HTTP-запрос."
@@ -8526,10 +8528,9 @@ msgstr "Выберите файл видео с помощью Менеджер�
 #: concrete/src/Application/Service/UserInterface/Help/BlockTypeManager.php:29
 msgid ""
 "Paste a short or long-form YouTube link into the YouTube URL field and "
-"concrete5 will embed the video on your page. The iFrame option is "
-"recommended for best results, especially when displaying pages on mobile "
-"devices."
-msgstr "Вставьте короткую или длинную (разницы нет) ссылку на видео ролик, находящийся на сайте Youtube ссылку в поле \"Ссылка на YouTube\" для отображения видео на странице сайта. Опция IFrame рекомендуется для достижения наилучших результатов, особенно при отображении страниц на мобильных устройствах."
+"concrete5 will embed the video on your page. Playlist URLs and comma "
+"seperated lists of video IDs are also supported."
+msgstr ""
 
 #: concrete/blocks/dashboard_featured_addon/view.php:10
 #: concrete/blocks/dashboard_featured_theme/view.php:10
@@ -11406,11 +11407,10 @@ msgstr "Данная страница должна быть доступна х�
 msgid "URL Slug"
 msgstr "Псевдоним"
 
-#: concrete/blocks/page_list/page_list_form.php:342
 #: concrete/single_pages/dashboard/system/seo/bulk.php:259
 #: concrete/views/panels/details/page/seo.php:64
-msgid "characters"
-msgstr "символы"
+msgid "Characters"
+msgstr ""
 
 #: concrete/views/panels/details/page/attributes.php:25
 #, php-format
@@ -12957,7 +12957,6 @@ msgid ""
 msgstr "Вставка загруженных видео на страницу сайта. Поддерживаются форматы WebM, Ogg и  Quicktime/MPEG4."
 
 #: concrete/blocks/video/controller.php:34
-#: concrete/blocks/youtube/form_setup_html.php:32
 msgid "Video Player"
 msgstr "Видео ролик"
 
@@ -13900,6 +13899,10 @@ msgstr "Отображать краткое описание страницы"
 msgid "Display Truncated Description"
 msgstr "Обрезать краткое описание до указанного числа символов"
 
+#: concrete/blocks/page_list/page_list_form.php:342
+msgid "characters"
+msgstr "символы"
+
 #: concrete/blocks/page_list/page_list_form.php:349
 msgid "Include Public Page Date"
 msgstr "Включить дату публикации страницы"
@@ -13936,7 +13939,7 @@ msgstr "Заголовок списка страниц"
 msgid "Message to Display When No Pages Listed."
 msgstr "Сообщение для показа, когда нет страниц в списке."
 
-#: concrete/blocks/autonav/form_setup_html.php:144
+#: concrete/blocks/autonav/form_setup_html.php:154
 #: concrete/blocks/page_list/page_list_form.php:428
 msgid "Included Pages"
 msgstr "Отображаемые страницы"
@@ -14180,37 +14183,89 @@ msgstr "Только зарегистрированные пользовател
 msgid "Add Option"
 msgstr "Добавить вариант ответа"
 
-#: concrete/blocks/youtube/controller.php:29
+#: concrete/blocks/youtube/controller.php:22
 msgid "Embeds a YouTube Video in your web page."
 msgstr "Размещение видео роликов с сайта YouTube на странице."
 
-#: concrete/blocks/youtube/controller.php:34
+#: concrete/blocks/youtube/controller.php:27
 msgid "YouTube Video"
 msgstr "Видео YouTube"
 
-#: concrete/blocks/youtube/controller.php:41
-msgid "My Video"
-msgstr "Мое видео"
-
-#: concrete/blocks/youtube/view.php:19
+#: concrete/blocks/youtube/view.php:64
 msgid "YouTube Video disabled in edit mode."
 msgstr "Видео не показывается в режиме редактирования."
 
-#: concrete/blocks/youtube/view.php:30
-msgid "You must install Adobe Flash to view this content."
-msgstr "Вам необходимо установить Flash плеер для просмотра содержимого."
-
-#: concrete/blocks/youtube/form_setup_html.php:20
+#: concrete/blocks/youtube/form_setup_html.php:24
 msgid "YouTube URL"
 msgstr "Ссылка на YouTube"
 
 #: concrete/blocks/youtube/form_setup_html.php:34
-msgid "iFrame - Works in more devices"
-msgstr "iFrame - Работает на большинстве устройств"
+msgid "16:9 (widescreen)"
+msgstr ""
 
-#: concrete/blocks/youtube/form_setup_html.php:38
-msgid "Flash Embed - Legacy method"
-msgstr "Внедренный Flash - Оставлено для совместимости"
+#: concrete/blocks/youtube/form_setup_html.php:40
+msgid "4:3"
+msgstr ""
+
+#: concrete/blocks/youtube/form_setup_html.php:46
+msgid "Fixed Size (non-responsive)"
+msgstr ""
+
+#. short for pixels
+#: concrete/blocks/youtube/form_setup_html.php:54
+#: concrete/blocks/youtube/form_setup_html.php:61
+#: concrete/single_pages/dashboard/system/files/image_uploading.php:28
+#: concrete/single_pages/dashboard/system/files/image_uploading.php:37
+msgid "px"
+msgstr "px"
+
+#: concrete/blocks/youtube/form_setup_html.php:69
+msgid "Appearance"
+msgstr ""
+
+#: concrete/blocks/youtube/form_setup_html.php:76
+msgid "Show video information"
+msgstr ""
+
+#: concrete/blocks/youtube/form_setup_html.php:82
+msgid "Show controls"
+msgstr ""
+
+#: concrete/blocks/youtube/form_setup_html.php:93
+msgid "Hide YouTube Logo"
+msgstr ""
+
+#: concrete/blocks/youtube/form_setup_html.php:101
+msgid "Progress Bar Color"
+msgstr ""
+
+#: concrete/blocks/youtube/form_setup_html.php:102
+msgid "Red"
+msgstr ""
+
+#: concrete/blocks/youtube/form_setup_html.php:102
+msgid "White"
+msgstr ""
+
+#: concrete/blocks/youtube/form_setup_html.php:108
+msgid "Playback Options"
+msgstr ""
+
+#: concrete/blocks/youtube/form_setup_html.php:113
+msgid "Show related videos when playback ends"
+msgstr ""
+
+#: concrete/blocks/youtube/form_setup_html.php:119
+msgid "Hide annotations by default"
+msgstr ""
+
+#: concrete/blocks/youtube/form_setup_html.php:125
+msgid "Automatically play"
+msgstr ""
+
+#: concrete/blocks/youtube/form_setup_html.php:131
+msgid "Loop video"
+msgstr ""
 
 #: concrete/blocks/social_links/form.php:4
 msgid "Choose Social Links to Show"
@@ -14393,79 +14448,87 @@ msgid "in reverse sitemap order."
 msgstr "в обратном порядке карты сайта."
 
 #: concrete/blocks/autonav/form_setup_html.php:46
+msgid "System pages"
+msgstr ""
+
+#: concrete/blocks/autonav/form_setup_html.php:50
+msgid "Display system pages."
+msgstr ""
+
+#: concrete/blocks/autonav/form_setup_html.php:56
 msgid "Check Page Permissions"
 msgstr "Проверять права доступа"
 
-#: concrete/blocks/autonav/form_setup_html.php:50
+#: concrete/blocks/autonav/form_setup_html.php:60
 msgid "Display links that may require login."
 msgstr "Показывать страницы, требующие авторизации."
 
-#: concrete/blocks/autonav/form_setup_html.php:56
+#: concrete/blocks/autonav/form_setup_html.php:66
 msgid "Begin Auto Nav"
 msgstr "Показывать страницы"
 
-#: concrete/blocks/autonav/form_setup_html.php:59
+#: concrete/blocks/autonav/form_setup_html.php:69
 msgid "at the top level"
 msgstr "верхнего уровня"
 
-#: concrete/blocks/autonav/form_setup_html.php:62
+#: concrete/blocks/autonav/form_setup_html.php:72
 msgid "at the second level"
 msgstr "второго уровня"
 
-#: concrete/blocks/autonav/form_setup_html.php:65
+#: concrete/blocks/autonav/form_setup_html.php:75
 msgid "at the third level"
 msgstr "третьего уровня"
 
-#: concrete/blocks/autonav/form_setup_html.php:68
+#: concrete/blocks/autonav/form_setup_html.php:78
 msgid "at the level above"
 msgstr "на уровень выше"
 
-#: concrete/blocks/autonav/form_setup_html.php:71
+#: concrete/blocks/autonav/form_setup_html.php:81
 msgid "at the current level"
 msgstr "на текущий уровень"
 
-#: concrete/blocks/autonav/form_setup_html.php:74
+#: concrete/blocks/autonav/form_setup_html.php:84
 msgid "At the level below"
 msgstr "на уровень ниже"
 
-#: concrete/blocks/autonav/form_setup_html.php:77
+#: concrete/blocks/autonav/form_setup_html.php:87
 msgid "Beneath a particular page"
 msgstr "под указанной страницей."
 
-#: concrete/blocks/autonav/form_setup_html.php:88
+#: concrete/blocks/autonav/form_setup_html.php:98
 msgid "Child Pages"
 msgstr "Дочерние страницы"
 
-#: concrete/blocks/autonav/form_setup_html.php:95
+#: concrete/blocks/autonav/form_setup_html.php:105
 msgid "Relevant sub pages."
 msgstr "относящиеся к данной странице"
 
-#: concrete/blocks/autonav/form_setup_html.php:99
+#: concrete/blocks/autonav/form_setup_html.php:109
 msgid "Display breadcrumb trail."
 msgstr "в соответствии с иерархией."
 
-#: concrete/blocks/autonav/form_setup_html.php:102
-#: concrete/blocks/autonav/form_setup_html.php:120
+#: concrete/blocks/autonav/form_setup_html.php:112
+#: concrete/blocks/autonav/form_setup_html.php:130
 msgid "Display all."
 msgstr "показывать все."
 
-#: concrete/blocks/autonav/form_setup_html.php:109
+#: concrete/blocks/autonav/form_setup_html.php:119
 msgid "Page Levels"
 msgstr "Уровни страницы"
 
-#: concrete/blocks/autonav/form_setup_html.php:115
+#: concrete/blocks/autonav/form_setup_html.php:125
 msgid "Display sub pages to current."
 msgstr "показать подстраницы текущей"
 
-#: concrete/blocks/autonav/form_setup_html.php:118
+#: concrete/blocks/autonav/form_setup_html.php:128
 msgid "Display sub pages to current +1."
 msgstr "показать подстраницы текущей +1."
 
-#: concrete/blocks/autonav/form_setup_html.php:122
+#: concrete/blocks/autonav/form_setup_html.php:132
 msgid "Display a custom amount."
 msgstr "показать определенное количество уровней. "
 
-#: concrete/blocks/autonav/form_setup_html.php:132
+#: concrete/blocks/autonav/form_setup_html.php:142
 msgid "levels"
 msgstr "- число уровней"
 
@@ -15697,12 +15760,6 @@ msgstr "Автоматически менять размер загружаем�
 #: concrete/single_pages/dashboard/system/files/image_uploading.php:24
 msgid "Maximum Width"
 msgstr "Максимальная ширина"
-
-#. short for pixels
-#: concrete/single_pages/dashboard/system/files/image_uploading.php:28
-#: concrete/single_pages/dashboard/system/files/image_uploading.php:37
-msgid "px"
-msgstr "px"
 
 #: concrete/single_pages/dashboard/system/files/image_uploading.php:33
 msgid "Maximum Height"

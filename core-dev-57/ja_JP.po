@@ -11,9 +11,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-01-10 05:00+0000\n"
-"PO-Revision-Date: 2016-01-11 04:25+0000\n"
-"Last-Translator: Takuro Hishikawa <hishikawa@concrete5.co.jp>\n"
+"POT-Creation-Date: 2016-01-12 05:00+0000\n"
+"PO-Revision-Date: 2016-01-12 09:04+0000\n"
+"Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/concrete5/concrete5/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -142,7 +142,7 @@ msgstr "登録時に入れるグループ"
 #: concrete/authentication/facebook/type_form.php:28
 #: concrete/authentication/google/type_form.php:29
 #: concrete/authentication/twitter/type_form.php:35
-#: concrete/blocks/autonav/form_setup_html.php:92
+#: concrete/blocks/autonav/form_setup_html.php:102
 #: concrete/blocks/dashboard_site_activity/view.php:5
 #: concrete/blocks/feature/form.php:34
 #: concrete/blocks/form/form_setup_html.php:94
@@ -673,6 +673,7 @@ msgstr "サーバーから追加"
 msgid "Filename"
 msgstr "ファイル名"
 
+#: concrete/blocks/youtube/form_setup_html.php:30
 #: concrete/controllers/frontend/assets_localization.php:112
 #: concrete/controllers/search/files.php:256
 #: concrete/elements/custom_style.php:187
@@ -5465,6 +5466,7 @@ msgstr "このページを編集するには、この鉛筆のアイコンをク
 
 #: concrete/blocks/autonav/form_setup_html.php:16
 #: concrete/blocks/page_list/page_list_form.php:11
+#: concrete/blocks/youtube/form_setup_html.php:18
 #: concrete/config/install/base/dashboard.xml:815
 #: concrete/controllers/frontend/assets_localization.php:298
 #: concrete/single_pages/dashboard/system/environment/entities.php:10
@@ -5677,7 +5679,6 @@ msgstr "ヘッダを削除"
 #: concrete/blocks/image_slider/form_setup_html.php:273
 #: concrete/blocks/search/form_setup_html.php:30
 #: concrete/blocks/tags/tag_form.php:10 concrete/blocks/topic_list/form.php:44
-#: concrete/blocks/youtube/form_setup_html.php:16
 #: concrete/controllers/frontend/assets_localization.php:390
 #: concrete/elements/files/properties.php:132
 #: concrete/single_pages/dashboard/files/sets.php:75
@@ -5812,7 +5813,7 @@ msgstr "フレームオプション"
 
 #: concrete/blocks/page_attribute_display/form.php:34
 #: concrete/blocks/video/form_setup_html.php:4
-#: concrete/blocks/youtube/form_setup_html.php:24
+#: concrete/blocks/youtube/form_setup_html.php:51
 #: concrete/controllers/frontend/assets_localization.php:423
 #: concrete/elements/custom_style.php:210
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:57
@@ -5824,7 +5825,7 @@ msgstr "幅"
 
 #: concrete/blocks/page_attribute_display/form.php:38
 #: concrete/blocks/video/form_setup_html.php:11
-#: concrete/blocks/youtube/form_setup_html.php:28
+#: concrete/blocks/youtube/form_setup_html.php:58
 #: concrete/controllers/frontend/assets_localization.php:424
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:64
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:104
@@ -6744,6 +6745,7 @@ msgstr "ファイルパーミッションの指定中にエラーが発生しま
 msgid "Request timed out."
 msgstr "リクエストがタイムアウトしました。"
 
+#: concrete/blocks/youtube/form_setup_html.php:17
 #: concrete/src/File/Type/Type.php:70
 msgid "Video"
 msgstr "ビデオ"
@@ -7964,7 +7966,7 @@ msgstr "プリント"
 msgid "The Job was run successfully."
 msgstr "ジョブが正常に実行されました。"
 
-#: concrete/src/Application/Application.php:403
+#: concrete/src/Application/Application.php:417
 msgid ""
 "Invalid path traversal. Please make this request with a valid HTTP client."
 msgstr "無効なパス走査を検出しました。正規のHTTPクライアントを使ってリクエストを完了してください。"
@@ -8493,10 +8495,9 @@ msgstr "ファイルマネージャーよりビデオファイルを選択し、
 #: concrete/src/Application/Service/UserInterface/Help/BlockTypeManager.php:29
 msgid ""
 "Paste a short or long-form YouTube link into the YouTube URL field and "
-"concrete5 will embed the video on your page. The iFrame option is "
-"recommended for best results, especially when displaying pages on mobile "
-"devices."
-msgstr "YouTube リンク（短縮または非短縮）を YouTube URL フィールドに貼り付けると concrete5 がページにビデオを埋め込みます。特にモバイル端末向けに表示する場合は、iFrameオプションを選択することを推奨します。"
+"concrete5 will embed the video on your page. Playlist URLs and comma "
+"seperated lists of video IDs are also supported."
+msgstr ""
 
 #: concrete/blocks/dashboard_featured_addon/view.php:10
 #: concrete/blocks/dashboard_featured_theme/view.php:10
@@ -11331,11 +11332,10 @@ msgstr "このページは少なくともひとつのURLでアクセス可能で
 msgid "URL Slug"
 msgstr "URLスラッグ"
 
-#: concrete/blocks/page_list/page_list_form.php:342
 #: concrete/single_pages/dashboard/system/seo/bulk.php:259
 #: concrete/views/panels/details/page/seo.php:64
-msgid "characters"
-msgstr "文字"
+msgid "Characters"
+msgstr ""
 
 #: concrete/views/panels/details/page/attributes.php:25
 #, php-format
@@ -12879,7 +12879,6 @@ msgid ""
 msgstr "ウェブページにビデオを埋め込みます。WebM、Ogg、QuickTime/MPEG4 フォーマットに対応しています。"
 
 #: concrete/blocks/video/controller.php:34
-#: concrete/blocks/youtube/form_setup_html.php:32
 msgid "Video Player"
 msgstr "ビデオプレイヤー"
 
@@ -13819,6 +13818,10 @@ msgstr "ページの説明を含める"
 msgid "Display Truncated Description"
 msgstr "説明文を切り詰めて表示"
 
+#: concrete/blocks/page_list/page_list_form.php:342
+msgid "characters"
+msgstr "文字"
+
 #: concrete/blocks/page_list/page_list_form.php:349
 msgid "Include Public Page Date"
 msgstr "日付を含める"
@@ -13855,7 +13858,7 @@ msgstr "ページリストのタイトル"
 msgid "Message to Display When No Pages Listed."
 msgstr "表示するページがない場合のメッセージ"
 
-#: concrete/blocks/autonav/form_setup_html.php:144
+#: concrete/blocks/autonav/form_setup_html.php:154
 #: concrete/blocks/page_list/page_list_form.php:428
 msgid "Included Pages"
 msgstr "含まれるページ"
@@ -14096,37 +14099,89 @@ msgstr "登録ユーザーのみ"
 msgid "Add Option"
 msgstr "オプションを追加"
 
-#: concrete/blocks/youtube/controller.php:29
+#: concrete/blocks/youtube/controller.php:22
 msgid "Embeds a YouTube Video in your web page."
 msgstr "YouTubeビデオを埋め込みます。"
 
-#: concrete/blocks/youtube/controller.php:34
+#: concrete/blocks/youtube/controller.php:27
 msgid "YouTube Video"
 msgstr "YouTubeビデオ"
 
-#: concrete/blocks/youtube/controller.php:41
-msgid "My Video"
-msgstr "マイビデオ"
-
-#: concrete/blocks/youtube/view.php:19
+#: concrete/blocks/youtube/view.php:64
 msgid "YouTube Video disabled in edit mode."
 msgstr "YouTubeビデオは編集モードでは表示されません。"
 
-#: concrete/blocks/youtube/view.php:30
-msgid "You must install Adobe Flash to view this content."
-msgstr "このコンテンツをご覧になるには、Adobe Flash Playerをインストールする必要があります。"
-
-#: concrete/blocks/youtube/form_setup_html.php:20
+#: concrete/blocks/youtube/form_setup_html.php:24
 msgid "YouTube URL"
 msgstr "YouTube URL"
 
 #: concrete/blocks/youtube/form_setup_html.php:34
-msgid "iFrame - Works in more devices"
-msgstr "iFrame - 様々なデバイスで使用できる"
+msgid "16:9 (widescreen)"
+msgstr ""
 
-#: concrete/blocks/youtube/form_setup_html.php:38
-msgid "Flash Embed - Legacy method"
-msgstr "Flash埋め込み - 古い方法"
+#: concrete/blocks/youtube/form_setup_html.php:40
+msgid "4:3"
+msgstr ""
+
+#: concrete/blocks/youtube/form_setup_html.php:46
+msgid "Fixed Size (non-responsive)"
+msgstr ""
+
+#. short for pixels
+#: concrete/blocks/youtube/form_setup_html.php:54
+#: concrete/blocks/youtube/form_setup_html.php:61
+#: concrete/single_pages/dashboard/system/files/image_uploading.php:28
+#: concrete/single_pages/dashboard/system/files/image_uploading.php:37
+msgid "px"
+msgstr "px"
+
+#: concrete/blocks/youtube/form_setup_html.php:69
+msgid "Appearance"
+msgstr ""
+
+#: concrete/blocks/youtube/form_setup_html.php:76
+msgid "Show video information"
+msgstr ""
+
+#: concrete/blocks/youtube/form_setup_html.php:82
+msgid "Show controls"
+msgstr ""
+
+#: concrete/blocks/youtube/form_setup_html.php:93
+msgid "Hide YouTube Logo"
+msgstr ""
+
+#: concrete/blocks/youtube/form_setup_html.php:101
+msgid "Progress Bar Color"
+msgstr ""
+
+#: concrete/blocks/youtube/form_setup_html.php:102
+msgid "Red"
+msgstr ""
+
+#: concrete/blocks/youtube/form_setup_html.php:102
+msgid "White"
+msgstr ""
+
+#: concrete/blocks/youtube/form_setup_html.php:108
+msgid "Playback Options"
+msgstr ""
+
+#: concrete/blocks/youtube/form_setup_html.php:113
+msgid "Show related videos when playback ends"
+msgstr ""
+
+#: concrete/blocks/youtube/form_setup_html.php:119
+msgid "Hide annotations by default"
+msgstr ""
+
+#: concrete/blocks/youtube/form_setup_html.php:125
+msgid "Automatically play"
+msgstr ""
+
+#: concrete/blocks/youtube/form_setup_html.php:131
+msgid "Loop video"
+msgstr ""
 
 #: concrete/blocks/social_links/form.php:4
 msgid "Choose Social Links to Show"
@@ -14309,79 +14364,87 @@ msgid "in reverse sitemap order."
 msgstr "逆サイトマップ順"
 
 #: concrete/blocks/autonav/form_setup_html.php:46
+msgid "System pages"
+msgstr ""
+
+#: concrete/blocks/autonav/form_setup_html.php:50
+msgid "Display system pages."
+msgstr ""
+
+#: concrete/blocks/autonav/form_setup_html.php:56
 msgid "Check Page Permissions"
 msgstr "ページの権限をチェックする"
 
-#: concrete/blocks/autonav/form_setup_html.php:50
+#: concrete/blocks/autonav/form_setup_html.php:60
 msgid "Display links that may require login."
 msgstr "ログインが必要なページへのリンクを表示する。"
 
-#: concrete/blocks/autonav/form_setup_html.php:56
+#: concrete/blocks/autonav/form_setup_html.php:66
 msgid "Begin Auto Nav"
 msgstr "オートナビ開始階層"
 
-#: concrete/blocks/autonav/form_setup_html.php:59
+#: concrete/blocks/autonav/form_setup_html.php:69
 msgid "at the top level"
 msgstr "トップから"
 
-#: concrete/blocks/autonav/form_setup_html.php:62
+#: concrete/blocks/autonav/form_setup_html.php:72
 msgid "at the second level"
 msgstr "第2階層から"
 
-#: concrete/blocks/autonav/form_setup_html.php:65
+#: concrete/blocks/autonav/form_setup_html.php:75
 msgid "at the third level"
 msgstr "第3階層から"
 
-#: concrete/blocks/autonav/form_setup_html.php:68
+#: concrete/blocks/autonav/form_setup_html.php:78
 msgid "at the level above"
 msgstr "ひとつ上の階層から"
 
-#: concrete/blocks/autonav/form_setup_html.php:71
+#: concrete/blocks/autonav/form_setup_html.php:81
 msgid "at the current level"
 msgstr "現在の階層から"
 
-#: concrete/blocks/autonav/form_setup_html.php:74
+#: concrete/blocks/autonav/form_setup_html.php:84
 msgid "At the level below"
 msgstr "ひとつ下の階層から"
 
-#: concrete/blocks/autonav/form_setup_html.php:77
+#: concrete/blocks/autonav/form_setup_html.php:87
 msgid "Beneath a particular page"
 msgstr "特定のページ下"
 
-#: concrete/blocks/autonav/form_setup_html.php:88
+#: concrete/blocks/autonav/form_setup_html.php:98
 msgid "Child Pages"
 msgstr "子ページ"
 
-#: concrete/blocks/autonav/form_setup_html.php:95
+#: concrete/blocks/autonav/form_setup_html.php:105
 msgid "Relevant sub pages."
 msgstr "関連する下層ページのみ"
 
-#: concrete/blocks/autonav/form_setup_html.php:99
+#: concrete/blocks/autonav/form_setup_html.php:109
 msgid "Display breadcrumb trail."
 msgstr "パンくずリスト形式で表示"
 
-#: concrete/blocks/autonav/form_setup_html.php:102
-#: concrete/blocks/autonav/form_setup_html.php:120
+#: concrete/blocks/autonav/form_setup_html.php:112
+#: concrete/blocks/autonav/form_setup_html.php:130
 msgid "Display all."
 msgstr "すべてを表示"
 
-#: concrete/blocks/autonav/form_setup_html.php:109
+#: concrete/blocks/autonav/form_setup_html.php:119
 msgid "Page Levels"
 msgstr "階層の深さ"
 
-#: concrete/blocks/autonav/form_setup_html.php:115
+#: concrete/blocks/autonav/form_setup_html.php:125
 msgid "Display sub pages to current."
 msgstr "開始レベルから現在のレベル"
 
-#: concrete/blocks/autonav/form_setup_html.php:118
+#: concrete/blocks/autonav/form_setup_html.php:128
 msgid "Display sub pages to current +1."
 msgstr "開始レベルから現在のレベル+1"
 
-#: concrete/blocks/autonav/form_setup_html.php:122
+#: concrete/blocks/autonav/form_setup_html.php:132
 msgid "Display a custom amount."
 msgstr "表示レベルを任意指定"
 
-#: concrete/blocks/autonav/form_setup_html.php:132
+#: concrete/blocks/autonav/form_setup_html.php:142
 msgid "levels"
 msgstr "階層"
 
@@ -15607,12 +15670,6 @@ msgstr "自動でアップロードされた画像をリサイズする"
 #: concrete/single_pages/dashboard/system/files/image_uploading.php:24
 msgid "Maximum Width"
 msgstr "最大幅"
-
-#. short for pixels
-#: concrete/single_pages/dashboard/system/files/image_uploading.php:28
-#: concrete/single_pages/dashboard/system/files/image_uploading.php:37
-msgid "px"
-msgstr "px"
 
 #: concrete/single_pages/dashboard/system/files/image_uploading.php:33
 msgid "Maximum Height"

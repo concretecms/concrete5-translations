@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-01-10 05:00+0000\n"
-"PO-Revision-Date: 2016-01-10 09:06+0000\n"
+"POT-Creation-Date: 2016-01-12 05:00+0000\n"
+"PO-Revision-Date: 2016-01-13 00:21+0000\n"
 "Last-Translator: Heikki Ylipaavalniemi\n"
 "Language-Team: Finnish (Finland) (http://www.transifex.com/concrete5/concrete5/language/fi_FI/)\n"
 "MIME-Version: 1.0\n"
@@ -138,7 +138,7 @@ msgstr "Ryhmä, johon lisätään rekisteröityessä"
 #: concrete/authentication/facebook/type_form.php:28
 #: concrete/authentication/google/type_form.php:29
 #: concrete/authentication/twitter/type_form.php:35
-#: concrete/blocks/autonav/form_setup_html.php:92
+#: concrete/blocks/autonav/form_setup_html.php:102
 #: concrete/blocks/dashboard_site_activity/view.php:5
 #: concrete/blocks/feature/form.php:34
 #: concrete/blocks/form/form_setup_html.php:94
@@ -669,6 +669,7 @@ msgstr "Lisää saapuva"
 msgid "Filename"
 msgstr "Tiedostonimi"
 
+#: concrete/blocks/youtube/form_setup_html.php:30
 #: concrete/controllers/frontend/assets_localization.php:112
 #: concrete/controllers/search/files.php:256
 #: concrete/elements/custom_style.php:187
@@ -5469,6 +5470,7 @@ msgstr "Muokkaa mitä tahansa tällä sivulla napsauttamalla kynäikonia."
 
 #: concrete/blocks/autonav/form_setup_html.php:16
 #: concrete/blocks/page_list/page_list_form.php:11
+#: concrete/blocks/youtube/form_setup_html.php:18
 #: concrete/config/install/base/dashboard.xml:815
 #: concrete/controllers/frontend/assets_localization.php:298
 #: concrete/single_pages/dashboard/system/environment/entities.php:10
@@ -5681,7 +5683,6 @@ msgstr "Poista ylätunniste"
 #: concrete/blocks/image_slider/form_setup_html.php:273
 #: concrete/blocks/search/form_setup_html.php:30
 #: concrete/blocks/tags/tag_form.php:10 concrete/blocks/topic_list/form.php:44
-#: concrete/blocks/youtube/form_setup_html.php:16
 #: concrete/controllers/frontend/assets_localization.php:390
 #: concrete/elements/files/properties.php:132
 #: concrete/single_pages/dashboard/files/sets.php:75
@@ -5816,7 +5817,7 @@ msgstr "Kehyksen asetukset"
 
 #: concrete/blocks/page_attribute_display/form.php:34
 #: concrete/blocks/video/form_setup_html.php:4
-#: concrete/blocks/youtube/form_setup_html.php:24
+#: concrete/blocks/youtube/form_setup_html.php:51
 #: concrete/controllers/frontend/assets_localization.php:423
 #: concrete/elements/custom_style.php:210
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:57
@@ -5828,7 +5829,7 @@ msgstr "Leveys"
 
 #: concrete/blocks/page_attribute_display/form.php:38
 #: concrete/blocks/video/form_setup_html.php:11
-#: concrete/blocks/youtube/form_setup_html.php:28
+#: concrete/blocks/youtube/form_setup_html.php:58
 #: concrete/controllers/frontend/assets_localization.php:424
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:64
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:104
@@ -6751,6 +6752,7 @@ msgstr "Tapahtui virhe yritettäessä selvittää tiedosto-oikeuksia."
 msgid "Request timed out."
 msgstr "Pyyntö vanhentui."
 
+#: concrete/blocks/youtube/form_setup_html.php:17
 #: concrete/src/File/Type/Type.php:70
 msgid "Video"
 msgstr "Video"
@@ -7972,7 +7974,7 @@ msgstr "Tulosta"
 msgid "The Job was run successfully."
 msgstr "Tehtävä ajettiin onnistuneesti."
 
-#: concrete/src/Application/Application.php:403
+#: concrete/src/Application/Application.php:417
 msgid ""
 "Invalid path traversal. Please make this request with a valid HTTP client."
 msgstr "Virheellinen polku. Ole hyvä ja tee pyyntö toimivalla HTTP-päätelaitteella."
@@ -8501,10 +8503,9 @@ msgstr "Valitse videotiedosto tiedostohallinnasta ja määrittele leveys ja kork
 #: concrete/src/Application/Service/UserInterface/Help/BlockTypeManager.php:29
 msgid ""
 "Paste a short or long-form YouTube link into the YouTube URL field and "
-"concrete5 will embed the video on your page. The iFrame option is "
-"recommended for best results, especially when displaying pages on mobile "
-"devices."
-msgstr "Liitä YouTube-linkki lyhyessä tai pitkässä muodossa YouTuben URL-kenttään ja concrete5 upottaa videon sivullesi. Iframe vaihtoehto on suositeltu parhaalle tulokselle, etenkin kun sivuja näytetään mobiililaitteilla."
+"concrete5 will embed the video on your page. Playlist URLs and comma "
+"seperated lists of video IDs are also supported."
+msgstr "Liitä YouTuben lyhyt tai pitkä linkki YouTube URL-kenttään ja concrete5 upottaa videon sivullesi. Soittolistojen URL:t ja pilkuilla erotellut listat videoiden ID:eistä ovat myös tuettuja."
 
 #: concrete/blocks/dashboard_featured_addon/view.php:10
 #: concrete/blocks/dashboard_featured_theme/view.php:10
@@ -11353,11 +11354,10 @@ msgstr "Tämän sivun pitää olla aina saatavissa ainakin yhdessä osoitteessa.
 msgid "URL Slug"
 msgstr "URL-osoitteen pääte"
 
-#: concrete/blocks/page_list/page_list_form.php:342
 #: concrete/single_pages/dashboard/system/seo/bulk.php:259
 #: concrete/views/panels/details/page/seo.php:64
-msgid "characters"
-msgstr "merkin jälkeen"
+msgid "Characters"
+msgstr "Merkit"
 
 #: concrete/views/panels/details/page/attributes.php:25
 #, php-format
@@ -12902,7 +12902,6 @@ msgid ""
 msgstr "Upottaa ladatun videon www-sivulle. Tukee WebM, Ogg ja QuickTime/MPEG4 muotoja."
 
 #: concrete/blocks/video/controller.php:34
-#: concrete/blocks/youtube/form_setup_html.php:32
 msgid "Video Player"
 msgstr "Videosoitin"
 
@@ -13843,6 +13842,10 @@ msgstr "Sisällytä sivun kuvaus"
 msgid "Display Truncated Description"
 msgstr "Näytä typistetty yhteenveto"
 
+#: concrete/blocks/page_list/page_list_form.php:342
+msgid "characters"
+msgstr "merkin jälkeen"
+
 #: concrete/blocks/page_list/page_list_form.php:349
 msgid "Include Public Page Date"
 msgstr "Sisällytä julkinen sivun päivämäärä"
@@ -13879,7 +13882,7 @@ msgstr "Sivulistan otsikko"
 msgid "Message to Display When No Pages Listed."
 msgstr "Näytettävä viesti, kun listattavia sivuja ei ole."
 
-#: concrete/blocks/autonav/form_setup_html.php:144
+#: concrete/blocks/autonav/form_setup_html.php:154
 #: concrete/blocks/page_list/page_list_form.php:428
 msgid "Included Pages"
 msgstr "Sisällytetyt sivut"
@@ -14121,37 +14124,89 @@ msgstr "Vain rekisteröityneet käyttäjät"
 msgid "Add Option"
 msgstr "Lisää vaihtoehto"
 
-#: concrete/blocks/youtube/controller.php:29
+#: concrete/blocks/youtube/controller.php:22
 msgid "Embeds a YouTube Video in your web page."
 msgstr "Upottaa YouTube-videon sivullesi."
 
-#: concrete/blocks/youtube/controller.php:34
+#: concrete/blocks/youtube/controller.php:27
 msgid "YouTube Video"
 msgstr "YouTube-video"
 
-#: concrete/blocks/youtube/controller.php:41
-msgid "My Video"
-msgstr "Minun video"
-
-#: concrete/blocks/youtube/view.php:19
+#: concrete/blocks/youtube/view.php:64
 msgid "YouTube Video disabled in edit mode."
 msgstr "YouTube-video poissa käytöstä muokkaustilassa."
 
-#: concrete/blocks/youtube/view.php:30
-msgid "You must install Adobe Flash to view this content."
-msgstr "Asenna Adobe Flash nähdäksesi tämä sisältö."
-
-#: concrete/blocks/youtube/form_setup_html.php:20
+#: concrete/blocks/youtube/form_setup_html.php:24
 msgid "YouTube URL"
 msgstr "YouTube URL"
 
 #: concrete/blocks/youtube/form_setup_html.php:34
-msgid "iFrame - Works in more devices"
-msgstr "iFrame - toimii suurimmassa osassa laitteista"
+msgid "16:9 (widescreen)"
+msgstr "16:9 (laajakuva)"
 
-#: concrete/blocks/youtube/form_setup_html.php:38
-msgid "Flash Embed - Legacy method"
-msgstr "Flash-upotus - perinteinen tapa"
+#: concrete/blocks/youtube/form_setup_html.php:40
+msgid "4:3"
+msgstr ""
+
+#: concrete/blocks/youtube/form_setup_html.php:46
+msgid "Fixed Size (non-responsive)"
+msgstr "Kiinteä koko (ei responsiivinen)"
+
+#. short for pixels
+#: concrete/blocks/youtube/form_setup_html.php:54
+#: concrete/blocks/youtube/form_setup_html.php:61
+#: concrete/single_pages/dashboard/system/files/image_uploading.php:28
+#: concrete/single_pages/dashboard/system/files/image_uploading.php:37
+msgid "px"
+msgstr "pikseliä"
+
+#: concrete/blocks/youtube/form_setup_html.php:69
+msgid "Appearance"
+msgstr "Ulkoasu"
+
+#: concrete/blocks/youtube/form_setup_html.php:76
+msgid "Show video information"
+msgstr "Näytä videon tiedot"
+
+#: concrete/blocks/youtube/form_setup_html.php:82
+msgid "Show controls"
+msgstr "Näytä kontrollit"
+
+#: concrete/blocks/youtube/form_setup_html.php:93
+msgid "Hide YouTube Logo"
+msgstr "Piilota YouTuben logo"
+
+#: concrete/blocks/youtube/form_setup_html.php:101
+msgid "Progress Bar Color"
+msgstr "Edistymispalkin väri"
+
+#: concrete/blocks/youtube/form_setup_html.php:102
+msgid "Red"
+msgstr "Punainen"
+
+#: concrete/blocks/youtube/form_setup_html.php:102
+msgid "White"
+msgstr "Valkoinen"
+
+#: concrete/blocks/youtube/form_setup_html.php:108
+msgid "Playback Options"
+msgstr "Soittoasetukset"
+
+#: concrete/blocks/youtube/form_setup_html.php:113
+msgid "Show related videos when playback ends"
+msgstr "Näytä liittyvät videot, kun toisto päättyy"
+
+#: concrete/blocks/youtube/form_setup_html.php:119
+msgid "Hide annotations by default"
+msgstr "Piilota kommentit oletuksena"
+
+#: concrete/blocks/youtube/form_setup_html.php:125
+msgid "Automatically play"
+msgstr "Soita automaattisesti"
+
+#: concrete/blocks/youtube/form_setup_html.php:131
+msgid "Loop video"
+msgstr "Toista videota jatkuvasti"
 
 #: concrete/blocks/social_links/form.php:4
 msgid "Choose Social Links to Show"
@@ -14334,79 +14389,87 @@ msgid "in reverse sitemap order."
 msgstr "käänteisessä sivukartan järjestyksessä."
 
 #: concrete/blocks/autonav/form_setup_html.php:46
+msgid "System pages"
+msgstr "Järjestelmäsivut"
+
+#: concrete/blocks/autonav/form_setup_html.php:50
+msgid "Display system pages."
+msgstr "Näytä järjestelmäsivut."
+
+#: concrete/blocks/autonav/form_setup_html.php:56
 msgid "Check Page Permissions"
 msgstr "Tarkista sivun oikeudet"
 
-#: concrete/blocks/autonav/form_setup_html.php:50
+#: concrete/blocks/autonav/form_setup_html.php:60
 msgid "Display links that may require login."
 msgstr "Näytä linkit, jotka voivat vaatia kirjautumista."
 
-#: concrete/blocks/autonav/form_setup_html.php:56
+#: concrete/blocks/autonav/form_setup_html.php:66
 msgid "Begin Auto Nav"
 msgstr "Aloita automaattinen navigaatio"
 
-#: concrete/blocks/autonav/form_setup_html.php:59
+#: concrete/blocks/autonav/form_setup_html.php:69
 msgid "at the top level"
 msgstr "ylätasolta"
 
-#: concrete/blocks/autonav/form_setup_html.php:62
+#: concrete/blocks/autonav/form_setup_html.php:72
 msgid "at the second level"
 msgstr "toiselta tasolta"
 
-#: concrete/blocks/autonav/form_setup_html.php:65
+#: concrete/blocks/autonav/form_setup_html.php:75
 msgid "at the third level"
 msgstr "kolmannelta tasolta"
 
-#: concrete/blocks/autonav/form_setup_html.php:68
+#: concrete/blocks/autonav/form_setup_html.php:78
 msgid "at the level above"
 msgstr "yläpuolella olevalta tasolta"
 
-#: concrete/blocks/autonav/form_setup_html.php:71
+#: concrete/blocks/autonav/form_setup_html.php:81
 msgid "at the current level"
 msgstr "nykyisellä tasolla."
 
-#: concrete/blocks/autonav/form_setup_html.php:74
+#: concrete/blocks/autonav/form_setup_html.php:84
 msgid "At the level below"
 msgstr "alapuolella olevalta tasolta"
 
-#: concrete/blocks/autonav/form_setup_html.php:77
+#: concrete/blocks/autonav/form_setup_html.php:87
 msgid "Beneath a particular page"
 msgstr "Tietyn sivun alapuolella"
 
-#: concrete/blocks/autonav/form_setup_html.php:88
+#: concrete/blocks/autonav/form_setup_html.php:98
 msgid "Child Pages"
 msgstr "Alasivut"
 
-#: concrete/blocks/autonav/form_setup_html.php:95
+#: concrete/blocks/autonav/form_setup_html.php:105
 msgid "Relevant sub pages."
 msgstr "Yhteenkuuluvat alasivut"
 
-#: concrete/blocks/autonav/form_setup_html.php:99
+#: concrete/blocks/autonav/form_setup_html.php:109
 msgid "Display breadcrumb trail."
 msgstr "Näytä murupolku."
 
-#: concrete/blocks/autonav/form_setup_html.php:102
-#: concrete/blocks/autonav/form_setup_html.php:120
+#: concrete/blocks/autonav/form_setup_html.php:112
+#: concrete/blocks/autonav/form_setup_html.php:130
 msgid "Display all."
 msgstr "Näytä kaikki."
 
-#: concrete/blocks/autonav/form_setup_html.php:109
+#: concrete/blocks/autonav/form_setup_html.php:119
 msgid "Page Levels"
 msgstr "Sivutasot"
 
-#: concrete/blocks/autonav/form_setup_html.php:115
+#: concrete/blocks/autonav/form_setup_html.php:125
 msgid "Display sub pages to current."
 msgstr "Näytä nykyisen sivun alasivut."
 
-#: concrete/blocks/autonav/form_setup_html.php:118
+#: concrete/blocks/autonav/form_setup_html.php:128
 msgid "Display sub pages to current +1."
 msgstr "Näytä nykyisen alasivut +1."
 
-#: concrete/blocks/autonav/form_setup_html.php:122
+#: concrete/blocks/autonav/form_setup_html.php:132
 msgid "Display a custom amount."
 msgstr "Näytä itse valitsemasi määrä."
 
-#: concrete/blocks/autonav/form_setup_html.php:132
+#: concrete/blocks/autonav/form_setup_html.php:142
 msgid "levels"
 msgstr "tasot"
 
@@ -15634,12 +15697,6 @@ msgstr "Muuta lähetettyjen kuvien koko automaattisesti"
 #: concrete/single_pages/dashboard/system/files/image_uploading.php:24
 msgid "Maximum Width"
 msgstr "Maksimileveys"
-
-#. short for pixels
-#: concrete/single_pages/dashboard/system/files/image_uploading.php:28
-#: concrete/single_pages/dashboard/system/files/image_uploading.php:37
-msgid "px"
-msgstr "pikseliä"
 
 #: concrete/single_pages/dashboard/system/files/image_uploading.php:33
 msgid "Maximum Height"

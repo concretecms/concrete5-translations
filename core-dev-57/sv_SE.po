@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-01-10 05:00+0000\n"
-"PO-Revision-Date: 2016-01-10 16:02+0000\n"
+"POT-Creation-Date: 2016-01-12 05:00+0000\n"
+"PO-Revision-Date: 2016-01-13 00:25+0000\n"
 "Last-Translator: Fredrik Lindau <fredrik@fxlindau.se>\n"
 "Language-Team: Swedish (Sweden) (http://www.transifex.com/concrete5/concrete5/language/sv_SE/)\n"
 "MIME-Version: 1.0\n"
@@ -138,7 +138,7 @@ msgstr "Grupp att gå med vid registrering"
 #: concrete/authentication/facebook/type_form.php:28
 #: concrete/authentication/google/type_form.php:29
 #: concrete/authentication/twitter/type_form.php:35
-#: concrete/blocks/autonav/form_setup_html.php:92
+#: concrete/blocks/autonav/form_setup_html.php:102
 #: concrete/blocks/dashboard_site_activity/view.php:5
 #: concrete/blocks/feature/form.php:34
 #: concrete/blocks/form/form_setup_html.php:94
@@ -669,6 +669,7 @@ msgstr "Lägg till inkommande"
 msgid "Filename"
 msgstr "Filnamn"
 
+#: concrete/blocks/youtube/form_setup_html.php:30
 #: concrete/controllers/frontend/assets_localization.php:112
 #: concrete/controllers/search/files.php:256
 #: concrete/elements/custom_style.php:187
@@ -5469,6 +5470,7 @@ msgstr "Redigera vad som helst på denna sidan genom att klicka på pennikonen."
 
 #: concrete/blocks/autonav/form_setup_html.php:16
 #: concrete/blocks/page_list/page_list_form.php:11
+#: concrete/blocks/youtube/form_setup_html.php:18
 #: concrete/config/install/base/dashboard.xml:815
 #: concrete/controllers/frontend/assets_localization.php:298
 #: concrete/single_pages/dashboard/system/environment/entities.php:10
@@ -5681,7 +5683,6 @@ msgstr "Ta bort sidhuvud"
 #: concrete/blocks/image_slider/form_setup_html.php:273
 #: concrete/blocks/search/form_setup_html.php:30
 #: concrete/blocks/tags/tag_form.php:10 concrete/blocks/topic_list/form.php:44
-#: concrete/blocks/youtube/form_setup_html.php:16
 #: concrete/controllers/frontend/assets_localization.php:390
 #: concrete/elements/files/properties.php:132
 #: concrete/single_pages/dashboard/files/sets.php:75
@@ -5816,7 +5817,7 @@ msgstr "Inramningsalternativ"
 
 #: concrete/blocks/page_attribute_display/form.php:34
 #: concrete/blocks/video/form_setup_html.php:4
-#: concrete/blocks/youtube/form_setup_html.php:24
+#: concrete/blocks/youtube/form_setup_html.php:51
 #: concrete/controllers/frontend/assets_localization.php:423
 #: concrete/elements/custom_style.php:210
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:57
@@ -5828,7 +5829,7 @@ msgstr "Bredd"
 
 #: concrete/blocks/page_attribute_display/form.php:38
 #: concrete/blocks/video/form_setup_html.php:11
-#: concrete/blocks/youtube/form_setup_html.php:28
+#: concrete/blocks/youtube/form_setup_html.php:58
 #: concrete/controllers/frontend/assets_localization.php:424
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:64
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:104
@@ -6751,6 +6752,7 @@ msgstr "Ett fel uppstod vid försök att bestämma filrättigheter."
 msgid "Request timed out."
 msgstr "Begäran tog för lång tid."
 
+#: concrete/blocks/youtube/form_setup_html.php:17
 #: concrete/src/File/Type/Type.php:70
 msgid "Video"
 msgstr "Video"
@@ -7972,7 +7974,7 @@ msgstr "Skriv ut"
 msgid "The Job was run successfully."
 msgstr "Jobbet utfördes utan fel."
 
-#: concrete/src/Application/Application.php:403
+#: concrete/src/Application/Application.php:417
 msgid ""
 "Invalid path traversal. Please make this request with a valid HTTP client."
 msgstr "Ogiltig sökvägstraversering. Gör denna begäran med en giltigt HTTP-klient."
@@ -8501,10 +8503,9 @@ msgstr "Välj en videofil från filhanteraren och ange en bredd och höjd för h
 #: concrete/src/Application/Service/UserInterface/Help/BlockTypeManager.php:29
 msgid ""
 "Paste a short or long-form YouTube link into the YouTube URL field and "
-"concrete5 will embed the video on your page. The iFrame option is "
-"recommended for best results, especially when displaying pages on mobile "
-"devices."
-msgstr "Klistra in en kort eller lång YouTube-länk i fältet YouTube URL och concrete5 kommer bädda in video på din sida. Alternativet  iframe rekommenderas för bästa resultat, särskilt vid visning på mobila enheter."
+"concrete5 will embed the video on your page. Playlist URLs and comma "
+"seperated lists of video IDs are also supported."
+msgstr "Klistra in en kort eller lång YouTube-länk i fältet YouTube URL och concrete5 kommer bädda in video på din sida. Spellistor och kommaseparerade listor med video ID stöds också."
 
 #: concrete/blocks/dashboard_featured_addon/view.php:10
 #: concrete/blocks/dashboard_featured_theme/view.php:10
@@ -11353,11 +11354,10 @@ msgstr "Sidan måste alltid vara tillgänglig från åtminstone en URL. Detta ä
 msgid "URL Slug"
 msgstr "URL Slug"
 
-#: concrete/blocks/page_list/page_list_form.php:342
 #: concrete/single_pages/dashboard/system/seo/bulk.php:259
 #: concrete/views/panels/details/page/seo.php:64
-msgid "characters"
-msgstr "tecken"
+msgid "Characters"
+msgstr "Tecken"
 
 #: concrete/views/panels/details/page/attributes.php:25
 #, php-format
@@ -12902,7 +12902,6 @@ msgid ""
 msgstr "Infogar en video som har laddats upp på webbplatsen. Stöder WebM-, Ogg- och Quicktime/MPEG4-format."
 
 #: concrete/blocks/video/controller.php:34
-#: concrete/blocks/youtube/form_setup_html.php:32
 msgid "Video Player"
 msgstr "Videospelare"
 
@@ -13843,6 +13842,10 @@ msgstr "Inkludera sidbeskrivning"
 msgid "Display Truncated Description"
 msgstr "Visa nedkortade beskrivningar"
 
+#: concrete/blocks/page_list/page_list_form.php:342
+msgid "characters"
+msgstr "tecken"
+
 #: concrete/blocks/page_list/page_list_form.php:349
 msgid "Include Public Page Date"
 msgstr "Inkludera offentligt siddatum"
@@ -13879,7 +13882,7 @@ msgstr "Rubrik på sidlista"
 msgid "Message to Display When No Pages Listed."
 msgstr "Meddelande att visa när inga sidor listas."
 
-#: concrete/blocks/autonav/form_setup_html.php:144
+#: concrete/blocks/autonav/form_setup_html.php:154
 #: concrete/blocks/page_list/page_list_form.php:428
 msgid "Included Pages"
 msgstr "Inkludera sidor"
@@ -14121,37 +14124,89 @@ msgstr "Endast registrerade användare"
 msgid "Add Option"
 msgstr "Lägg till alternativ"
 
-#: concrete/blocks/youtube/controller.php:29
+#: concrete/blocks/youtube/controller.php:22
 msgid "Embeds a YouTube Video in your web page."
 msgstr "Inkludera en YouTube-video på din websida"
 
-#: concrete/blocks/youtube/controller.php:34
+#: concrete/blocks/youtube/controller.php:27
 msgid "YouTube Video"
 msgstr "YouTube-video"
 
-#: concrete/blocks/youtube/controller.php:41
-msgid "My Video"
-msgstr "Min video"
-
-#: concrete/blocks/youtube/view.php:19
+#: concrete/blocks/youtube/view.php:64
 msgid "YouTube Video disabled in edit mode."
 msgstr "YouTube-video är inaktiverad i redigeringsläget."
 
-#: concrete/blocks/youtube/view.php:30
-msgid "You must install Adobe Flash to view this content."
-msgstr "Du måste installera Adobe Flash Player för att se detta innehåll."
-
-#: concrete/blocks/youtube/form_setup_html.php:20
+#: concrete/blocks/youtube/form_setup_html.php:24
 msgid "YouTube URL"
 msgstr "YouTube URL"
 
 #: concrete/blocks/youtube/form_setup_html.php:34
-msgid "iFrame - Works in more devices"
-msgstr "iFrame - Fungerar i fler enheter"
+msgid "16:9 (widescreen)"
+msgstr "16:9 (widescreen)"
 
-#: concrete/blocks/youtube/form_setup_html.php:38
-msgid "Flash Embed - Legacy method"
-msgstr "Flash-inbäddning - tidigare concrete5-lösning"
+#: concrete/blocks/youtube/form_setup_html.php:40
+msgid "4:3"
+msgstr "4:3"
+
+#: concrete/blocks/youtube/form_setup_html.php:46
+msgid "Fixed Size (non-responsive)"
+msgstr "Fast storlek (ej responsiv)"
+
+#. short for pixels
+#: concrete/blocks/youtube/form_setup_html.php:54
+#: concrete/blocks/youtube/form_setup_html.php:61
+#: concrete/single_pages/dashboard/system/files/image_uploading.php:28
+#: concrete/single_pages/dashboard/system/files/image_uploading.php:37
+msgid "px"
+msgstr "px"
+
+#: concrete/blocks/youtube/form_setup_html.php:69
+msgid "Appearance"
+msgstr "Utseende"
+
+#: concrete/blocks/youtube/form_setup_html.php:76
+msgid "Show video information"
+msgstr "Visa videoinformation"
+
+#: concrete/blocks/youtube/form_setup_html.php:82
+msgid "Show controls"
+msgstr "Visa kontroller"
+
+#: concrete/blocks/youtube/form_setup_html.php:93
+msgid "Hide YouTube Logo"
+msgstr "Dölj YouTube-logo"
+
+#: concrete/blocks/youtube/form_setup_html.php:101
+msgid "Progress Bar Color"
+msgstr "Färg på förloppsindikator"
+
+#: concrete/blocks/youtube/form_setup_html.php:102
+msgid "Red"
+msgstr "Röd"
+
+#: concrete/blocks/youtube/form_setup_html.php:102
+msgid "White"
+msgstr "Vit"
+
+#: concrete/blocks/youtube/form_setup_html.php:108
+msgid "Playback Options"
+msgstr "Uppspelningsalternativ"
+
+#: concrete/blocks/youtube/form_setup_html.php:113
+msgid "Show related videos when playback ends"
+msgstr "Visa relaterade videor när uppspelningen tar slut"
+
+#: concrete/blocks/youtube/form_setup_html.php:119
+msgid "Hide annotations by default"
+msgstr "Dölj annoteringar som förval"
+
+#: concrete/blocks/youtube/form_setup_html.php:125
+msgid "Automatically play"
+msgstr "Automatisk uppspelning"
+
+#: concrete/blocks/youtube/form_setup_html.php:131
+msgid "Loop video"
+msgstr "Loopa video"
 
 #: concrete/blocks/social_links/form.php:4
 msgid "Choose Social Links to Show"
@@ -14334,79 +14389,87 @@ msgid "in reverse sitemap order."
 msgstr "i omvänd ordning enligt sajtkartan."
 
 #: concrete/blocks/autonav/form_setup_html.php:46
+msgid "System pages"
+msgstr "Systemsidor"
+
+#: concrete/blocks/autonav/form_setup_html.php:50
+msgid "Display system pages."
+msgstr "Visa systemsidor."
+
+#: concrete/blocks/autonav/form_setup_html.php:56
 msgid "Check Page Permissions"
 msgstr "Kontrollera sidbehörigheter"
 
-#: concrete/blocks/autonav/form_setup_html.php:50
+#: concrete/blocks/autonav/form_setup_html.php:60
 msgid "Display links that may require login."
 msgstr "Visa länkar som kan kräva inloggning."
 
-#: concrete/blocks/autonav/form_setup_html.php:56
+#: concrete/blocks/autonav/form_setup_html.php:66
 msgid "Begin Auto Nav"
 msgstr "Börja Auto Nav"
 
-#: concrete/blocks/autonav/form_setup_html.php:59
+#: concrete/blocks/autonav/form_setup_html.php:69
 msgid "at the top level"
 msgstr "på den översta nivån"
 
-#: concrete/blocks/autonav/form_setup_html.php:62
+#: concrete/blocks/autonav/form_setup_html.php:72
 msgid "at the second level"
 msgstr "på den andra nivån"
 
-#: concrete/blocks/autonav/form_setup_html.php:65
+#: concrete/blocks/autonav/form_setup_html.php:75
 msgid "at the third level"
 msgstr "på den tredje nivån"
 
-#: concrete/blocks/autonav/form_setup_html.php:68
+#: concrete/blocks/autonav/form_setup_html.php:78
 msgid "at the level above"
 msgstr "på nivån ovanför"
 
-#: concrete/blocks/autonav/form_setup_html.php:71
+#: concrete/blocks/autonav/form_setup_html.php:81
 msgid "at the current level"
 msgstr "på nuvarande nivå"
 
-#: concrete/blocks/autonav/form_setup_html.php:74
+#: concrete/blocks/autonav/form_setup_html.php:84
 msgid "At the level below"
 msgstr "På nivån under"
 
-#: concrete/blocks/autonav/form_setup_html.php:77
+#: concrete/blocks/autonav/form_setup_html.php:87
 msgid "Beneath a particular page"
 msgstr "Under en viss sida"
 
-#: concrete/blocks/autonav/form_setup_html.php:88
+#: concrete/blocks/autonav/form_setup_html.php:98
 msgid "Child Pages"
 msgstr "Undersidor"
 
-#: concrete/blocks/autonav/form_setup_html.php:95
+#: concrete/blocks/autonav/form_setup_html.php:105
 msgid "Relevant sub pages."
 msgstr "Relevanta undersidor."
 
-#: concrete/blocks/autonav/form_setup_html.php:99
+#: concrete/blocks/autonav/form_setup_html.php:109
 msgid "Display breadcrumb trail."
 msgstr "Visa länkstig."
 
-#: concrete/blocks/autonav/form_setup_html.php:102
-#: concrete/blocks/autonav/form_setup_html.php:120
+#: concrete/blocks/autonav/form_setup_html.php:112
+#: concrete/blocks/autonav/form_setup_html.php:130
 msgid "Display all."
 msgstr "Visa alla."
 
-#: concrete/blocks/autonav/form_setup_html.php:109
+#: concrete/blocks/autonav/form_setup_html.php:119
 msgid "Page Levels"
 msgstr "Sidonivåer"
 
-#: concrete/blocks/autonav/form_setup_html.php:115
+#: concrete/blocks/autonav/form_setup_html.php:125
 msgid "Display sub pages to current."
 msgstr "Visa undersidor till nuvarande sida."
 
-#: concrete/blocks/autonav/form_setup_html.php:118
+#: concrete/blocks/autonav/form_setup_html.php:128
 msgid "Display sub pages to current +1."
 msgstr "Visa undersidor till nuvarande sida och en nivå till."
 
-#: concrete/blocks/autonav/form_setup_html.php:122
+#: concrete/blocks/autonav/form_setup_html.php:132
 msgid "Display a custom amount."
 msgstr "Visa ett anpassat antal."
 
-#: concrete/blocks/autonav/form_setup_html.php:132
+#: concrete/blocks/autonav/form_setup_html.php:142
 msgid "levels"
 msgstr "nivåer"
 
@@ -15634,12 +15697,6 @@ msgstr "Skala om uppladdade bilder automatiskt"
 #: concrete/single_pages/dashboard/system/files/image_uploading.php:24
 msgid "Maximum Width"
 msgstr "Max bredd"
-
-#. short for pixels
-#: concrete/single_pages/dashboard/system/files/image_uploading.php:28
-#: concrete/single_pages/dashboard/system/files/image_uploading.php:37
-msgid "px"
-msgstr "px"
 
 #: concrete/single_pages/dashboard/system/files/image_uploading.php:33
 msgid "Maximum Height"
