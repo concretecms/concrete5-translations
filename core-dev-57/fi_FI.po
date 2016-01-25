@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-01-21 05:00+0000\n"
-"PO-Revision-Date: 2016-01-21 14:22+0000\n"
-"Last-Translator: Heikki Ylipaavalniemi\n"
+"POT-Creation-Date: 2016-01-24 11:00+0000\n"
+"PO-Revision-Date: 2016-01-24 11:33+0000\n"
+"Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Finnish (Finland) (http://www.transifex.com/concrete5/concrete5/language/fi_FI/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -455,7 +455,7 @@ msgid ""
 msgstr "Avain vanhentunut. Ole hyvä ja vieraile Unohdin salasanai -sivulla luodaksesi uuden avaimen."
 
 #: concrete/authentication/concrete/controller.php:228
-#: concrete/controllers/install.php:334
+#: concrete/controllers/install.php:341
 #: concrete/controllers/single_page/account/edit_profile.php:102
 #: concrete/controllers/single_page/dashboard/users/search.php:366
 #: concrete/controllers/single_page/register.php:99
@@ -709,7 +709,7 @@ msgstr "Poista tiedostot incoming/-hakemistosta."
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:233
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:313
 #: concrete/single_pages/dashboard/extend/install.php:52
-#: concrete/single_pages/dashboard/extend/install.php:93
+#: concrete/single_pages/dashboard/extend/install.php:97
 #: concrete/single_pages/dashboard/files/add_set.php:19
 #: concrete/single_pages/dashboard/files/sets.php:101
 #: concrete/single_pages/dashboard/pages/feeds.php:63
@@ -929,7 +929,7 @@ msgstr "Virhe ladattaessa osoitetta %s"
 #: concrete/controllers/frontend/assets_localization.php:403
 #: concrete/elements/files/search.php:19
 #: concrete/single_pages/dashboard/extend/addons.php:32
-#: concrete/single_pages/dashboard/extend/install.php:381
+#: concrete/single_pages/dashboard/extend/install.php:385
 #: concrete/single_pages/dashboard/extend/themes.php:34
 #: concrete/single_pages/dashboard/system/backup/backup.php:111
 #: concrete/single_pages/dashboard/system/backup/update.php:232
@@ -1126,9 +1126,9 @@ msgstr "Litteä näkymä"
 #: concrete/single_pages/dashboard/conversations/messages.php:12
 #: concrete/single_pages/dashboard/conversations/messages.php:17
 #: concrete/single_pages/dashboard/conversations/messages.php:41
-#: concrete/single_pages/dashboard/files/sets.php:195
-#: concrete/single_pages/dashboard/files/sets.php:200
-#: concrete/single_pages/dashboard/files/sets.php:218
+#: concrete/single_pages/dashboard/files/sets.php:194
+#: concrete/single_pages/dashboard/files/sets.php:199
+#: concrete/single_pages/dashboard/files/sets.php:217
 #: concrete/single_pages/dashboard/reports/logs.php:25
 #: concrete/single_pages/dashboard/reports/logs.php:30
 #: concrete/single_pages/dashboard/reports/logs.php:59
@@ -1927,7 +1927,7 @@ msgstr "Tämän asetuksen muuttaminen vaikuttaa sivuun heti. Oletko varma?"
 
 #: concrete/controllers/frontend/assets_localization.php:96
 #: concrete/controllers/frontend/assets_localization.php:251
-#: concrete/single_pages/dashboard/extend/install.php:307
+#: concrete/single_pages/dashboard/extend/install.php:311
 #: concrete/single_pages/dashboard/pages/themes/inspect.php:107
 #: concrete/single_pages/dashboard/pages/themes/view.php:18
 #: concrete/src/Application/Service/UserInterface/Help/Formatter.php:21
@@ -2473,7 +2473,7 @@ msgid "Invalid package."
 msgstr "Virheellinen paketti."
 
 #: concrete/controllers/single_page/dashboard/extend/install.php:85
-#: concrete/src/Package/Package.php:990
+#: concrete/src/Package/Package.php:995
 msgid ""
 "This package contains the active site theme, please change the theme before "
 "uninstalling."
@@ -4220,7 +4220,7 @@ msgstr "KB"
 #: concrete/controllers/search/files.php:257
 #: concrete/elements/files/properties.php:49
 #: concrete/single_pages/dashboard/files/sets.php:74
-#: concrete/single_pages/dashboard/files/sets.php:207
+#: concrete/single_pages/dashboard/files/sets.php:206
 #: concrete/single_pages/dashboard/pages/themes/inspect.php:25
 #: concrete/single_pages/dashboard/workflow/workflows.php:47
 #: concrete/src/File/Search/ColumnSet/DefaultSet.php:26
@@ -6129,7 +6129,12 @@ msgid_plural "%d items"
 msgstr[0] "%d kohde"
 msgstr[1] "%d kohdetta"
 
-#: concrete/controllers/install.php:87
+#: concrete/controllers/install.php:81 concrete/controllers/install.php:291
+#, php-format
+msgid "Invalid starting point: %s"
+msgstr ""
+
+#: concrete/controllers/install.php:91
 #, php-format
 msgid ""
 "Congratulations. concrete5 has been installed. You have been logged in as "
@@ -6137,33 +6142,33 @@ msgid ""
 "you may do so from the users area of the dashboard."
 msgstr "Onnittelut, Concrete5 on asennettu. Sinut on kirjattu sisälle tunnuksella <b>%s</b> ja valitsemallasi salasanalla. Jos haluat vaihtaa salasanasi, voit tehdä sen hallintapaneelin käyttäjien osiossa."
 
-#: concrete/controllers/install.php:113
+#: concrete/controllers/install.php:117
 msgid "Unable to connect to database."
 msgstr "Tietokantaan ei saatu yhteyttä."
 
-#: concrete/controllers/install.php:119
-#: concrete/src/Package/StartingPointPackage.php:266
+#: concrete/controllers/install.php:123
+#: concrete/src/Package/StartingPointPackage.php:273
 #, php-format
 msgid ""
 "There are already %s tables in this database. concrete5 must be installed in"
 " an empty database."
 msgstr "Tietokannassa on jo %s taulua. concrete5 täytyy asentaa tyhjään tietokantaan."
 
-#: concrete/controllers/install.php:135
+#: concrete/controllers/install.php:139
 msgid ""
 "Your MySQL database does not support InnoDB database tables. These are "
 "required."
 msgstr "MySQL-tietokantasi ei tue InnoDB-tietokantatauluja. Nämä vaaditaan."
 
-#: concrete/controllers/install.php:149
+#: concrete/controllers/install.php:153
 msgid "The PDO extension is not loaded."
 msgstr "PDO-laajennusta ei ole ladattu."
 
-#: concrete/controllers/install.php:174
+#: concrete/controllers/install.php:178
 msgid "concrete5 is already installed."
 msgstr "concrete5 on jo asennettuna."
 
-#: concrete/controllers/install.php:180 concrete/views/frontend/install.php:75
+#: concrete/controllers/install.php:184 concrete/views/frontend/install.php:75
 #: concrete/views/frontend/install.php:133
 #: concrete/views/frontend/install.php:259
 #: concrete/views/frontend/install.php:325
@@ -6171,55 +6176,55 @@ msgstr "concrete5 on jo asennettuna."
 msgid "Install concrete5"
 msgstr "Asenna concrete5"
 
-#: concrete/controllers/install.php:231
+#: concrete/controllers/install.php:235
 msgid ""
 "Your configuration directory config/ does not appear to be writable by the "
 "web server."
 msgstr "Konfiguraatiohakemisto config/ ei näytä olevan palvelimen kirjoitettavissa."
 
-#: concrete/controllers/install.php:235
+#: concrete/controllers/install.php:239
 msgid ""
 "Your files directory files/ does not appear to be writable by the web "
 "server."
 msgstr "Tiedostohakemistosi files/ ei näytä olevan palvelimen kirjoitettavissa."
 
-#: concrete/controllers/install.php:239
+#: concrete/controllers/install.php:243
 msgid ""
 "Your packages directory packages/ does not appear to be writable by the web "
 "server."
 msgstr "Pakettihakemistosi packages/ ei näytä olevan palvelimen kirjoitettavissa."
 
-#: concrete/controllers/install.php:290
+#: concrete/controllers/install.php:297
 #, php-format
 msgctxt "InstallError"
 msgid "%s.<br><br>Trace:<br>%s"
 msgstr "%s.<br><br>Reitti:<br>%s"
 
-#: concrete/controllers/install.php:322
+#: concrete/controllers/install.php:329
 msgid "Please specify your site's name"
 msgstr "Kirjoita sivustosi nimi"
 
-#: concrete/controllers/install.php:323
+#: concrete/controllers/install.php:330
 msgid "Please specify a valid email address"
 msgstr "Anna toimiva sähköpostiosoite"
 
-#: concrete/controllers/install.php:324
+#: concrete/controllers/install.php:331
 msgid "You must specify a valid database name"
 msgstr "Sinun täytyy antaa toimiva tietokannan nimi"
 
-#: concrete/controllers/install.php:325
+#: concrete/controllers/install.php:332
 msgid "You must specify a valid database server"
 msgstr "Sinun täytyy antaa toimiva tietokantapalvelin"
 
-#: concrete/controllers/install.php:375
+#: concrete/controllers/install.php:382
 msgid "Unable to open config/app.php for writing."
 msgstr "Tiedostoa config/app.php ei voitu avata kirjoittamista varten."
 
-#: concrete/controllers/install.php:395
+#: concrete/controllers/install.php:402
 msgid "Unable to open config/site_user.php for writing."
 msgstr "Tiedostoa config/site_user.php ei voitu avata kirjoittamista varten."
 
-#: concrete/controllers/install.php:419
+#: concrete/controllers/install.php:426
 msgid "You must select a valid sample content starting point."
 msgstr "Sinun täytyy valita hyväksytty esimerkkisisällön lähtökohta."
 
@@ -7373,7 +7378,7 @@ msgctxt "Log channel"
 msgid "Exceptions"
 msgstr "Poikkeukset"
 
-#: concrete/blocks/core_area_layout/controller.php:201
+#: concrete/blocks/core_area_layout/controller.php:204
 #: concrete/src/Backup/ContentImporter.php:311
 #, php-format
 msgid "Invalid block type handle: %s"
@@ -7498,7 +7503,7 @@ msgstr "Roskapostikirjastot"
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:39
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:299
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:418
-#: concrete/src/Console/Command/JobCommand.php:48
+#: concrete/src/Console/Command/JobCommand.php:57
 #: concrete/src/Package/Package.php:168
 msgid "Jobs"
 msgstr "Työt"
@@ -7528,173 +7533,173 @@ msgstr "%s (%s)"
 msgid " %s (%s)"
 msgstr " %s (%s)"
 
-#: concrete/src/Package/Package.php:976
+#: concrete/src/Package/Package.php:981
 msgid "You've already installed that package."
 msgstr "Olet jo asentanut tuon paketin."
 
-#: concrete/src/Package/Package.php:977
+#: concrete/src/Package/Package.php:982
 msgid "Invalid Package."
 msgstr "Virheellinen paketti."
 
-#: concrete/src/Package/Package.php:978
+#: concrete/src/Package/Package.php:983
 #, php-format
 msgid "This package requires concrete5 version %s or greater."
 msgstr "Tämä paketti vaatii concrete5:n version %s tai suuremman."
 
-#: concrete/src/Package/Package.php:979
+#: concrete/src/Package/Package.php:984
 msgid "An error occurred while downloading the package."
 msgstr "Paketin lataamisessa tapahtui virhe."
 
-#: concrete/src/Package/Package.php:980
+#: concrete/src/Package/Package.php:985
 msgid "concrete5 was not able to save the package after download."
 msgstr "concrete5 ei voinut tallentaa pakettia lataamisen jälkeen."
 
-#: concrete/src/Package/Package.php:981
+#: concrete/src/Package/Package.php:986
 msgid "An error occurred while trying to unzip the package."
 msgstr "Paketin purkamisessa tapahtui virhe."
 
-#: concrete/src/Package/Package.php:982
+#: concrete/src/Package/Package.php:987
 msgid "An error occurred while trying to install the package."
 msgstr "Paketin asennuksessa tapahtui virhe."
 
-#: concrete/src/Package/Package.php:984
+#: concrete/src/Package/Package.php:989
 #, php-format
 msgid "Unable to backup old package directory to %s"
 msgstr "Vanhan paketin varmuuskopiointi epäonnistui hakemistoksi %s"
 
-#: concrete/src/Package/Package.php:988
+#: concrete/src/Package/Package.php:993
 msgid ""
 "This package isn't currently available for this version of concrete5. Please"
 " contact the maintainer of this package for assistance."
 msgstr "Tämä paketti ole tällä hetkellä saatavilla tälle Concrete5:n versiolle. Ota yhteyttä paketin ylläpitäjään, jos haluat saada apua."
 
-#: concrete/src/Package/StartingPointPackage.php:45
+#: concrete/src/Package/StartingPointPackage.php:44
 msgid "Starting installation and creating directories."
 msgstr "Aloitetaan asennus ja luodaan hakemistot."
 
-#: concrete/src/Package/StartingPointPackage.php:46
+#: concrete/src/Package/StartingPointPackage.php:45
 msgid "Creating database tables."
 msgstr "Luodaan tietokantataulut."
 
-#: concrete/src/Package/StartingPointPackage.php:47
+#: concrete/src/Package/StartingPointPackage.php:46
 msgid "Adding admin user."
 msgstr "Lisätään ylläpitäjä."
 
-#: concrete/src/Package/StartingPointPackage.php:48
+#: concrete/src/Package/StartingPointPackage.php:47
 msgid "Installing permissions & workflow."
 msgstr "Asennetaan oikeuksia ja työnkulkuja."
 
-#: concrete/src/Package/StartingPointPackage.php:49
+#: concrete/src/Package/StartingPointPackage.php:48
 msgid "Creating home page."
 msgstr "Luodaan kotisivu."
 
-#: concrete/src/Package/StartingPointPackage.php:50
+#: concrete/src/Package/StartingPointPackage.php:49
 msgid "Installing attributes."
 msgstr "Asennetaan attribuutit."
 
-#: concrete/src/Package/StartingPointPackage.php:51
+#: concrete/src/Package/StartingPointPackage.php:50
 msgid "Adding block types."
 msgstr "Lisätään lohkotyypit."
 
-#: concrete/src/Package/StartingPointPackage.php:52
+#: concrete/src/Package/StartingPointPackage.php:51
 msgid "Adding gathering data sources."
 msgstr "Lisätään kokoelman datalähteet."
 
-#: concrete/src/Package/StartingPointPackage.php:53
+#: concrete/src/Package/StartingPointPackage.php:52
 msgid "Page type basic setup."
 msgstr "Sivutyypin perusasetukset."
 
-#: concrete/src/Package/StartingPointPackage.php:54
+#: concrete/src/Package/StartingPointPackage.php:53
 msgid "Adding themes."
 msgstr "Lisätään teemat."
 
-#: concrete/src/Package/StartingPointPackage.php:55
+#: concrete/src/Package/StartingPointPackage.php:54
 msgid "Installing automated jobs."
 msgstr "Asennetaan automatisoidut työt."
 
-#: concrete/src/Package/StartingPointPackage.php:56
+#: concrete/src/Package/StartingPointPackage.php:55
 msgid "Installing dashboard."
 msgstr "Asennetaan hallintapaneeli."
 
-#: concrete/src/Package/StartingPointPackage.php:60
+#: concrete/src/Package/StartingPointPackage.php:59
 msgid "Installing login and registration pages."
 msgstr "Asennetaan kirjautumis- ja rekisteröitymissivut."
 
-#: concrete/src/Package/StartingPointPackage.php:61
+#: concrete/src/Package/StartingPointPackage.php:60
 msgid "Adding image editor functionality."
 msgstr "Lisätään kuvaeditorin toiminnallisuutta."
 
-#: concrete/src/Package/StartingPointPackage.php:62
+#: concrete/src/Package/StartingPointPackage.php:61
 msgid "Configuring site."
 msgstr "Määritellään sivusto."
 
-#: concrete/src/Package/StartingPointPackage.php:63
+#: concrete/src/Package/StartingPointPackage.php:62
 msgid "Importing files."
 msgstr "Tuodaan tiedostot."
 
-#: concrete/src/Package/StartingPointPackage.php:64
+#: concrete/src/Package/StartingPointPackage.php:63
 msgid "Adding pages and content."
 msgstr "Lisätään sivut ja sisällöt."
 
-#: concrete/src/Package/StartingPointPackage.php:65
+#: concrete/src/Package/StartingPointPackage.php:64
 msgid "Setting up site permissions."
 msgstr "Asetetaan sivuston oikeudet."
 
-#: concrete/src/Package/StartingPointPackage.php:66
+#: concrete/src/Package/StartingPointPackage.php:65
 msgid "Finishing."
 msgstr "Viimeistellään."
 
 #: concrete/single_pages/dashboard/system/files/storage.php:54
-#: concrete/src/Package/StartingPointPackage.php:222
-#: concrete/src/Package/StartingPointPackage.php:225
+#: concrete/src/Package/StartingPointPackage.php:229
+#: concrete/src/Package/StartingPointPackage.php:232
 msgid "Default"
 msgstr "Oletus"
 
-#: concrete/src/Package/StartingPointPackage.php:223
+#: concrete/src/Package/StartingPointPackage.php:230
 msgid "Local"
 msgstr "Paikallinen"
 
-#: concrete/src/Package/StartingPointPackage.php:229
+#: concrete/src/Package/StartingPointPackage.php:236
 msgctxt "ThumbnailTypeName"
 msgid "File Manager Thumbnails"
 msgstr "Tiedostohallinnan pienoiskuvat"
 
-#: concrete/src/Package/StartingPointPackage.php:237
+#: concrete/src/Package/StartingPointPackage.php:244
 msgctxt "ThumbnailTypeName"
 msgid "File Manager Detail Thumbnails"
 msgstr "Tiedostohallinnan tietojen pienoiskuvat"
 
-#: concrete/src/Package/StartingPointPackage.php:282
+#: concrete/src/Package/StartingPointPackage.php:289
 #, php-format
 msgid "Unable to install database: %s"
 msgstr "Tietokannan asentaminen epäonnistui: %s"
 
-#: concrete/src/Package/StartingPointPackage.php:322
+#: concrete/src/Package/StartingPointPackage.php:329
 msgctxt "GroupName"
 msgid "Guest"
 msgstr "Vieras"
 
-#: concrete/src/Package/StartingPointPackage.php:323
+#: concrete/src/Package/StartingPointPackage.php:330
 msgctxt "GroupDescription"
 msgid "The guest group represents unregistered visitors to your site."
 msgstr "Vierasryhmä edustaa rekisteröitymättömiä vierailijoita sivustollasi."
 
-#: concrete/src/Package/StartingPointPackage.php:328
+#: concrete/src/Package/StartingPointPackage.php:335
 msgctxt "GroupName"
 msgid "Registered Users"
 msgstr "Rekisteröityneet käyttäjät"
 
-#: concrete/src/Package/StartingPointPackage.php:329
+#: concrete/src/Package/StartingPointPackage.php:336
 msgctxt "GroupDescription"
 msgid "The registered users group represents all user accounts."
 msgstr "Rekisteröityneet käyttäjäryhmä edustaa kaikkia käyttäjätilejä."
 
-#: concrete/src/Package/StartingPointPackage.php:333
+#: concrete/src/Package/StartingPointPackage.php:340
 msgctxt "GroupName"
 msgid "Administrators"
 msgstr "Ylläpitäjät"
 
-#: concrete/src/Package/StartingPointPackage.php:350
+#: concrete/src/Package/StartingPointPackage.php:357
 msgid "Won a Badge"
 msgstr "Ansaitsi merkin"
 
@@ -8618,41 +8623,41 @@ msgstr "Listaa saatavilla olevat työt"
 msgid "Jobs to run (separate multiple jobs with a space)"
 msgstr "Ajettavat työt (erota useammat työt välilyönnillä)"
 
-#: concrete/src/Console/Command/JobCommand.php:37
+#: concrete/src/Console/Command/JobCommand.php:46
 msgid "Available Jobs"
 msgstr "Saatavilla olevat työt"
 
-#: concrete/src/Console/Command/JobCommand.php:39
+#: concrete/src/Console/Command/JobCommand.php:48
 msgid "Job Handle"
 msgstr "Työn tunniste"
 
-#: concrete/src/Console/Command/JobCommand.php:39
+#: concrete/src/Console/Command/JobCommand.php:48
 msgid "Job Name"
 msgstr "Työn nimi"
 
-#: concrete/src/Console/Command/JobCommand.php:46
+#: concrete/src/Console/Command/JobCommand.php:55
 msgid "Available Job Sets"
 msgstr "Saatavilla olevat työryhmät"
 
-#: concrete/src/Console/Command/JobCommand.php:48
+#: concrete/src/Console/Command/JobCommand.php:57
 msgid "Set Name"
 msgstr "Ryhmän nimi"
 
-#: concrete/src/Console/Command/JobCommand.php:63
+#: concrete/src/Console/Command/JobCommand.php:72
 msgid "At least one job must be provided"
 msgstr "Vähintään yksi työ täytyy antaa"
 
-#: concrete/src/Console/Command/JobCommand.php:73
+#: concrete/src/Console/Command/JobCommand.php:84
 #, php-format
 msgid "A job set with name \"%s\" was not found"
 msgstr "Työtä nimellä \"%s\" ei löytynyt"
 
-#: concrete/src/Console/Command/JobCommand.php:84
+#: concrete/src/Console/Command/JobCommand.php:98
 #, php-format
 msgid "A job with handle \"%s\" was not found"
 msgstr "Työtä tunnisteella \"%s\" ei löytynyt"
 
-#: concrete/src/Console/Command/JobCommand.php:97
+#: concrete/src/Console/Command/JobCommand.php:113
 msgid "Job Failed"
 msgstr "Työ epäonnistui"
 
@@ -9278,7 +9283,7 @@ msgid ""
 msgstr "Virhe yhteyden muodostamisessa concrete 5 yhteisöön. Tarkista, että curl ja muut tarvittavat kirjastot ovat päällä."
 
 #: concrete/elements/dashboard/marketplace_connect_failed.php:35
-#: concrete/single_pages/dashboard/extend/install.php:411
+#: concrete/single_pages/dashboard/extend/install.php:415
 #: concrete/single_pages/dashboard/extend/update.php:119
 msgid "Project Page"
 msgstr "Projektisivu"
@@ -10349,7 +10354,7 @@ msgid "User/Group Added"
 msgstr "Käyttäjä tai ryhmä lisätty"
 
 #: concrete/elements/permission/detail.php:34
-#: concrete/single_pages/dashboard/extend/install.php:354
+#: concrete/single_pages/dashboard/extend/install.php:358
 #: concrete/single_pages/dashboard/files/sets.php:29
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:255
 #: concrete/single_pages/dashboard/users/group_sets.php:13
@@ -12774,7 +12779,7 @@ msgstr "Näyttää sivun otsikon"
 msgid "Page Title"
 msgstr "Sivun otsikko"
 
-#: concrete/blocks/page_title/templates/archive.php:4
+#: concrete/blocks/page_title/templates/archive.php:5
 #, php-format
 msgid "Topic Archives: %s"
 msgstr "Aihearkisto: %s"
@@ -14037,12 +14042,12 @@ msgid "Add-On Updates"
 msgstr "Lisäosien päivitykset"
 
 #: concrete/blocks/dashboard_app_status/view.php:17
-#: concrete/single_pages/dashboard/extend/install.php:337
+#: concrete/single_pages/dashboard/extend/install.php:341
 msgid "There is currently <strong>1</strong> update available."
 msgstr "Saatavilla on <strong>1</strong> päivitys."
 
 #: concrete/blocks/dashboard_app_status/view.php:19
-#: concrete/single_pages/dashboard/extend/install.php:339
+#: concrete/single_pages/dashboard/extend/install.php:343
 #, php-format
 msgid "There are currently <strong>%s</strong> updates available."
 msgstr "Saatavilla on <strong>%s</strong> päivitystä."
@@ -14363,7 +14368,7 @@ msgstr "Näyttää listan sivustosi aiheista, sallien sinun napsauttaa niitä su
 msgid "Topic List"
 msgstr "Aihelista"
 
-#: concrete/blocks/topic_list/view.php:43
+#: concrete/blocks/topic_list/view.php:46
 msgid "No topics."
 msgstr "Ei aiheita."
 
@@ -14726,24 +14731,24 @@ msgstr "Tiedostonimi"
 msgid "There are no files in this set."
 msgstr "Tässä ryhmässä ei ole yhtään tiedostoa."
 
-#: concrete/single_pages/dashboard/files/sets.php:199
+#: concrete/single_pages/dashboard/files/sets.php:198
 msgid "File Set Name"
 msgstr "Tiedostoryhmän nimi"
 
-#: concrete/single_pages/dashboard/files/sets.php:210
+#: concrete/single_pages/dashboard/files/sets.php:209
 msgid "Public Sets"
 msgstr "Julkiset ryhmät"
 
-#: concrete/single_pages/dashboard/files/sets.php:211
+#: concrete/single_pages/dashboard/files/sets.php:210
 msgid "My Sets"
 msgstr "Omat ryhmät"
 
 #: concrete/config/install/base/dashboard.xml:71
-#: concrete/single_pages/dashboard/files/sets.php:226
+#: concrete/single_pages/dashboard/files/sets.php:225
 msgid "Add File Set"
 msgstr "Lisää tiedostoryhmä"
 
-#: concrete/single_pages/dashboard/files/sets.php:249
+#: concrete/single_pages/dashboard/files/sets.php:248
 msgid "No file sets found."
 msgstr "Tiedostoryhmiä ei löytynyt."
 
@@ -14869,7 +14874,7 @@ msgid "No add-ons found."
 msgstr "Lisäosia ei löytynyt."
 
 #: concrete/config/install/base/dashboard.xml:415
-#: concrete/single_pages/dashboard/extend/install.php:334
+#: concrete/single_pages/dashboard/extend/install.php:338
 #: concrete/single_pages/dashboard/extend/update.php:31
 #: concrete/single_pages/dashboard/system/backup/update.php:55
 msgid "Update Add-Ons"
@@ -14919,15 +14924,15 @@ msgstr "Tätä lisäosaa ei löytynyt concrete5.org-sivustolta."
 msgid "Update Add-On"
 msgstr "Päivitä lisäosa"
 
-#: concrete/single_pages/dashboard/extend/install.php:412
+#: concrete/single_pages/dashboard/extend/install.php:416
 #: concrete/single_pages/dashboard/extend/update.php:120
 msgid ""
 "Your site is currently connected to the concrete5 community. Your project "
 "page URL is:"
 msgstr "Sivustosi on tällä hetkellä yhdistettynä concrete5-yhteisöön. Sivustosi projektisivun osoite on:"
 
-#: concrete/single_pages/dashboard/extend/install.php:420
-#: concrete/single_pages/dashboard/extend/install.php:422
+#: concrete/single_pages/dashboard/extend/install.php:424
+#: concrete/single_pages/dashboard/extend/install.php:426
 #: concrete/single_pages/dashboard/extend/update.php:130
 #: concrete/single_pages/dashboard/extend/update.php:132
 msgid "Connect to Community"
@@ -14983,92 +14988,92 @@ msgid "Install %s"
 msgstr "Asenna %s"
 
 #: concrete/single_pages/dashboard/extend/install.php:65
-#: concrete/single_pages/dashboard/extend/install.php:291
+#: concrete/single_pages/dashboard/extend/install.php:295
 msgid "Uninstall Package"
 msgstr "Poista paketti"
 
-#: concrete/single_pages/dashboard/extend/install.php:77
+#: concrete/single_pages/dashboard/extend/install.php:81
 #, php-format
 msgid ""
 "This will remove all elements associated with the %s package. While you can "
 "reinstall the package, this may result in data loss."
 msgstr "Tämä poistaa kaikki elementit, jotka ovat liitetty %s -pakettiin. Vaikka voit uudelleenasentaa paketin, voi tämä aiheuttaa tiedonmenetyksiä."
 
-#: concrete/single_pages/dashboard/extend/install.php:81
+#: concrete/single_pages/dashboard/extend/install.php:85
 msgid "Move package to trash directory on server?"
 msgstr "Siirrä paketti roskakoriin palvelimella?"
 
-#: concrete/single_pages/dashboard/extend/install.php:84
+#: concrete/single_pages/dashboard/extend/install.php:88
 msgid "Yes, remove the package's directory from the installation directory."
 msgstr "Kyllä, poista paketin hakemisto asennushakemistosta."
 
-#: concrete/single_pages/dashboard/extend/install.php:92
+#: concrete/single_pages/dashboard/extend/install.php:96
 msgid "Uninstall"
 msgstr "Poista"
 
-#: concrete/single_pages/dashboard/extend/install.php:213
+#: concrete/single_pages/dashboard/extend/install.php:217
 msgid "attribute type icon"
 msgstr "attribuuttityypin ikoni"
 
-#: concrete/single_pages/dashboard/extend/install.php:294
+#: concrete/single_pages/dashboard/extend/install.php:298
 msgid "Back to Add Functionality"
 msgstr "Takaisin Lisää toiminnallisuutta -sivulle"
 
-#: concrete/single_pages/dashboard/extend/install.php:318
+#: concrete/single_pages/dashboard/extend/install.php:322
 msgid "Installation Notes"
 msgstr "Asennuksen muistiinpanot"
 
-#: concrete/single_pages/dashboard/extend/install.php:333
+#: concrete/single_pages/dashboard/extend/install.php:337
 msgid "Add-On updates are available!"
 msgstr "Lisäosien päivityksiä saatavilla!"
 
-#: concrete/single_pages/dashboard/extend/install.php:346
+#: concrete/single_pages/dashboard/extend/install.php:350
 #: concrete/single_pages/dashboard/pages/themes/view.php:27
 msgid "Currently Installed"
 msgstr "Asennettuna"
 
-#: concrete/single_pages/dashboard/extend/install.php:355
-#: concrete/single_pages/dashboard/extend/install.php:382
-#: concrete/single_pages/dashboard/extend/install.php:401
+#: concrete/single_pages/dashboard/extend/install.php:359
+#: concrete/single_pages/dashboard/extend/install.php:386
+#: concrete/single_pages/dashboard/extend/install.php:405
 #: concrete/single_pages/dashboard/system/backup/update.php:69
 #, php-format
 msgctxt "AddonVersion"
 msgid "v.%s"
 msgstr "v.%s"
 
-#: concrete/single_pages/dashboard/extend/install.php:362
+#: concrete/single_pages/dashboard/extend/install.php:366
 msgid "No packages have been installed."
 msgstr "Paketteja ei ole asennettuna."
 
 #: concrete/single_pages/dashboard/blocks/types/view.php:49
-#: concrete/single_pages/dashboard/extend/install.php:367
+#: concrete/single_pages/dashboard/extend/install.php:371
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:203
 msgid "Awaiting Installation"
 msgstr "Odottaa asentamista"
 
-#: concrete/single_pages/dashboard/extend/install.php:371
+#: concrete/single_pages/dashboard/extend/install.php:375
 msgid "Nothing currently available to install."
 msgstr "Asennuksia ei ole saatavilla."
 
-#: concrete/single_pages/dashboard/extend/install.php:395
+#: concrete/single_pages/dashboard/extend/install.php:399
 msgid ""
 "This package is corrupted. Make sure it has a valid controller.php file and "
 "that it has been updated for concrete5.7 and later."
 msgstr "Tämä paketti on korruptoitunut. Tarkista, että sillä on toimiva controller.php tiedosto ja että se on päivitetty concrete5.7:lla ja uudemmille."
 
-#: concrete/single_pages/dashboard/extend/install.php:396
+#: concrete/single_pages/dashboard/extend/install.php:400
 msgid "Can't Install!"
 msgstr "Ei voida asentaa!"
 
 #: concrete/single_pages/dashboard/blocks/types/view.php:57
-#: concrete/single_pages/dashboard/extend/install.php:399
+#: concrete/single_pages/dashboard/extend/install.php:403
 #: concrete/single_pages/dashboard/pages/themes/view.php:104
 #: concrete/single_pages/dashboard/system/attributes/types.php:59
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:218
 msgid "Install"
 msgstr "Asenna"
 
-#: concrete/single_pages/dashboard/extend/install.php:421
+#: concrete/single_pages/dashboard/extend/install.php:425
 msgid ""
 "Your site is not connected to the concrete5 community. Connecting lets you "
 "easily extend a site with themes and add-ons."

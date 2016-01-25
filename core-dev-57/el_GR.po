@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-01-23 05:00+0000\n"
-"PO-Revision-Date: 2016-01-23 14:49+0000\n"
+"POT-Creation-Date: 2016-01-24 11:00+0000\n"
+"PO-Revision-Date: 2016-01-25 06:04+0000\n"
 "Last-Translator: Vasilis Fotopoulos <basalba@gmail.com>\n"
 "Language-Team: Greek (Greece) (http://www.transifex.com/concrete5/concrete5/language/el_GR/)\n"
 "MIME-Version: 1.0\n"
@@ -454,7 +454,7 @@ msgid ""
 msgstr "Το Κλειδί έχει λήξει. Παρακαλούμε επισκεφθείτε την σελίδα επαναφοράς κωδικού πρόσβασης ξανά για να δημιουργήσετε ένα νέο κλειδί."
 
 #: concrete/authentication/concrete/controller.php:228
-#: concrete/controllers/install.php:334
+#: concrete/controllers/install.php:341
 #: concrete/controllers/single_page/account/edit_profile.php:102
 #: concrete/controllers/single_page/dashboard/users/search.php:366
 #: concrete/controllers/single_page/register.php:99
@@ -6128,7 +6128,12 @@ msgid_plural "%d items"
 msgstr[0] "%d στοιχείο"
 msgstr[1] "%d στοιχεία"
 
-#: concrete/controllers/install.php:87
+#: concrete/controllers/install.php:81 concrete/controllers/install.php:291
+#, php-format
+msgid "Invalid starting point: %s"
+msgstr "Μη έγκυρο starting point: %s"
+
+#: concrete/controllers/install.php:91
 #, php-format
 msgid ""
 "Congratulations. concrete5 has been installed. You have been logged in as "
@@ -6136,33 +6141,33 @@ msgid ""
 "you may do so from the users area of the dashboard."
 msgstr "Συγχαρητήρια. Το concrete5 έχει εγκατασταθεί. Έχετε συνδεθεί ως <b>%s</b> με τον κωδικό πρόσβασης που επιλέξατε. Εάν θέλετε να αλλάξετε τον κωδικό πρόσβασης, μπορείτε να το κάνετε από την περιοχή για τους χρήστες του πίνακα ελέγχου."
 
-#: concrete/controllers/install.php:113
+#: concrete/controllers/install.php:117
 msgid "Unable to connect to database."
 msgstr "Δεν είναι δυνατή η σύνδεση με τη βάση δεδομένων."
 
-#: concrete/controllers/install.php:119
-#: concrete/src/Package/StartingPointPackage.php:266
+#: concrete/controllers/install.php:123
+#: concrete/src/Package/StartingPointPackage.php:273
 #, php-format
 msgid ""
 "There are already %s tables in this database. concrete5 must be installed in"
 " an empty database."
 msgstr "Υπάρχουν ήδη %s πίνακες στη Βάση Δεδομένων. Το concrete5 πρέπει να εγκατασταθεί σε μια κενή βάση δεδομένων."
 
-#: concrete/controllers/install.php:135
+#: concrete/controllers/install.php:139
 msgid ""
 "Your MySQL database does not support InnoDB database tables. These are "
 "required."
 msgstr "Η MySQL βάση δεδομένων σας δεν υποστηρίζει Πίνακες InnoDB. Αυτό είναι υποχρεωτικό."
 
-#: concrete/controllers/install.php:149
+#: concrete/controllers/install.php:153
 msgid "The PDO extension is not loaded."
 msgstr "Η επέκταση PDO δεν έχει φορτωθεί."
 
-#: concrete/controllers/install.php:174
+#: concrete/controllers/install.php:178
 msgid "concrete5 is already installed."
 msgstr "Το concrete5 είναι ήδη εγκατεστημένο."
 
-#: concrete/controllers/install.php:180 concrete/views/frontend/install.php:75
+#: concrete/controllers/install.php:184 concrete/views/frontend/install.php:75
 #: concrete/views/frontend/install.php:133
 #: concrete/views/frontend/install.php:259
 #: concrete/views/frontend/install.php:325
@@ -6170,55 +6175,55 @@ msgstr "Το concrete5 είναι ήδη εγκατεστημένο."
 msgid "Install concrete5"
 msgstr "Εγκατάσταση concrete5 "
 
-#: concrete/controllers/install.php:231
+#: concrete/controllers/install.php:235
 msgid ""
 "Your configuration directory config/ does not appear to be writable by the "
 "web server."
 msgstr "Ο Φάκελος ρυθμίσεων σας config/ δεν φαίνεται να είναι εγγράψιμος από τον web server."
 
-#: concrete/controllers/install.php:235
+#: concrete/controllers/install.php:239
 msgid ""
 "Your files directory files/ does not appear to be writable by the web "
 "server."
 msgstr "Ο  φάκελος αρχείων σας files/ δεν φαίνεται να είναι εγγράψιμος από τον web server."
 
-#: concrete/controllers/install.php:239
+#: concrete/controllers/install.php:243
 msgid ""
 "Your packages directory packages/ does not appear to be writable by the web "
 "server."
 msgstr "Ο φάκελος Πακέτων σας packages/ δεν φαίνεται να είναι εγγράψιμος από τον web server."
 
-#: concrete/controllers/install.php:290
+#: concrete/controllers/install.php:297
 #, php-format
 msgctxt "InstallError"
 msgid "%s.<br><br>Trace:<br>%s"
 msgstr "%s.<br><br>Ίχνος:<br>%s"
 
-#: concrete/controllers/install.php:322
+#: concrete/controllers/install.php:329
 msgid "Please specify your site's name"
 msgstr "Παρακαλείστε να αναφέρετε το όνομα της ιστοσελίδας σας"
 
-#: concrete/controllers/install.php:323
+#: concrete/controllers/install.php:330
 msgid "Please specify a valid email address"
 msgstr "Παρακαλείστε  να αναφέρετε μια έγκυρη διεύθυνση email"
 
-#: concrete/controllers/install.php:324
+#: concrete/controllers/install.php:331
 msgid "You must specify a valid database name"
 msgstr "Πρέπει να καθορίσετε ένα έγκυρο όνομα βάσης δεδομένων"
 
-#: concrete/controllers/install.php:325
+#: concrete/controllers/install.php:332
 msgid "You must specify a valid database server"
 msgstr "Πρέπει να ορίσετε έναν έγκυρο server βάσης δεδομένων"
 
-#: concrete/controllers/install.php:375
+#: concrete/controllers/install.php:382
 msgid "Unable to open config/app.php for writing."
 msgstr "Δεν είναι δυνατόν να ανοίξει το config/app.php για γράψιμο."
 
-#: concrete/controllers/install.php:395
+#: concrete/controllers/install.php:402
 msgid "Unable to open config/site_user.php for writing."
 msgstr "Είναι αδύνατο το άνοιγμα του  config/site_user.php για γράψιμο."
 
-#: concrete/controllers/install.php:419
+#: concrete/controllers/install.php:426
 msgid "You must select a valid sample content starting point."
 msgstr "Πρέπει να επιλέξετε ένα έγκυρο περιεχόμενο δείγματος ως σημείο εκκίνησης."
 
@@ -7567,133 +7572,133 @@ msgid ""
 " contact the maintainer of this package for assistance."
 msgstr "Αυτό το πακέτο δεν είναι διαθέσιμο προς το παρόν σ' αυτή την έκδοση του concrete5. Παρακαλούμε επικοινωνήστε με τον υπεύθυνο αυτού του πακέτου για βοήθεια."
 
-#: concrete/src/Package/StartingPointPackage.php:45
+#: concrete/src/Package/StartingPointPackage.php:44
 msgid "Starting installation and creating directories."
 msgstr "Εκκίνηση της εγκατάστασης και δημιουργία καταλόγων."
 
-#: concrete/src/Package/StartingPointPackage.php:46
+#: concrete/src/Package/StartingPointPackage.php:45
 msgid "Creating database tables."
 msgstr "Δημιουργία πινάκων βάσης δεδομένων."
 
-#: concrete/src/Package/StartingPointPackage.php:47
+#: concrete/src/Package/StartingPointPackage.php:46
 msgid "Adding admin user."
 msgstr "Προσθέτοντας τον χρήστη admin."
 
-#: concrete/src/Package/StartingPointPackage.php:48
+#: concrete/src/Package/StartingPointPackage.php:47
 msgid "Installing permissions & workflow."
 msgstr "Εγκατάσταση δικαιωμάτων και ροής εργασίας."
 
-#: concrete/src/Package/StartingPointPackage.php:49
+#: concrete/src/Package/StartingPointPackage.php:48
 msgid "Creating home page."
 msgstr "Δημιουργώντας αρχική σελίδα."
 
-#: concrete/src/Package/StartingPointPackage.php:50
+#: concrete/src/Package/StartingPointPackage.php:49
 msgid "Installing attributes."
 msgstr "Εγκατάσταση χαρακτηριστικών."
 
-#: concrete/src/Package/StartingPointPackage.php:51
+#: concrete/src/Package/StartingPointPackage.php:50
 msgid "Adding block types."
 msgstr "Προσθέτοντας Τύπους Μπλοκ."
 
-#: concrete/src/Package/StartingPointPackage.php:52
+#: concrete/src/Package/StartingPointPackage.php:51
 msgid "Adding gathering data sources."
 msgstr "Προσθέτοντας συλλογή πηγών δεδομένων."
 
-#: concrete/src/Package/StartingPointPackage.php:53
+#: concrete/src/Package/StartingPointPackage.php:52
 msgid "Page type basic setup."
 msgstr "Βασική ρύθμιση Τύπου Σελίδας "
 
-#: concrete/src/Package/StartingPointPackage.php:54
+#: concrete/src/Package/StartingPointPackage.php:53
 msgid "Adding themes."
 msgstr "Προσθήκη θεμάτων."
 
-#: concrete/src/Package/StartingPointPackage.php:55
+#: concrete/src/Package/StartingPointPackage.php:54
 msgid "Installing automated jobs."
 msgstr "Γίνετε η Εγκατάσταση Αυτοματοποιημένων Εργασιών."
 
-#: concrete/src/Package/StartingPointPackage.php:56
+#: concrete/src/Package/StartingPointPackage.php:55
 msgid "Installing dashboard."
 msgstr "Εγκατάσταση του Πίνακα Ελέγχου."
 
-#: concrete/src/Package/StartingPointPackage.php:60
+#: concrete/src/Package/StartingPointPackage.php:59
 msgid "Installing login and registration pages."
 msgstr "Εγκατάσταση των σελίδων σύνδεσης και εγγραφής."
 
-#: concrete/src/Package/StartingPointPackage.php:61
+#: concrete/src/Package/StartingPointPackage.php:60
 msgid "Adding image editor functionality."
 msgstr "Προσθήκη λειτουργικότητας για επεξεργαστή εικόνας."
 
-#: concrete/src/Package/StartingPointPackage.php:62
+#: concrete/src/Package/StartingPointPackage.php:61
 msgid "Configuring site."
 msgstr "Ρύθμιση ιστοσελίδας."
 
-#: concrete/src/Package/StartingPointPackage.php:63
+#: concrete/src/Package/StartingPointPackage.php:62
 msgid "Importing files."
 msgstr "Εισαγωγή αρχείων"
 
-#: concrete/src/Package/StartingPointPackage.php:64
+#: concrete/src/Package/StartingPointPackage.php:63
 msgid "Adding pages and content."
 msgstr "Προσθήκη σελίδων και περιεχόμενου."
 
-#: concrete/src/Package/StartingPointPackage.php:65
+#: concrete/src/Package/StartingPointPackage.php:64
 msgid "Setting up site permissions."
 msgstr "Ρύθμιση δικαιωμάτων του site"
 
-#: concrete/src/Package/StartingPointPackage.php:66
+#: concrete/src/Package/StartingPointPackage.php:65
 msgid "Finishing."
 msgstr "Τελειώνοντας."
 
 #: concrete/single_pages/dashboard/system/files/storage.php:54
-#: concrete/src/Package/StartingPointPackage.php:222
-#: concrete/src/Package/StartingPointPackage.php:225
+#: concrete/src/Package/StartingPointPackage.php:229
+#: concrete/src/Package/StartingPointPackage.php:232
 msgid "Default"
 msgstr "Προεπιλεγμένη"
 
-#: concrete/src/Package/StartingPointPackage.php:223
+#: concrete/src/Package/StartingPointPackage.php:230
 msgid "Local"
 msgstr "Τοπικά"
 
-#: concrete/src/Package/StartingPointPackage.php:229
+#: concrete/src/Package/StartingPointPackage.php:236
 msgctxt "ThumbnailTypeName"
 msgid "File Manager Thumbnails"
 msgstr "Μικρογραφίες Διαχείρισης αρχείων "
 
-#: concrete/src/Package/StartingPointPackage.php:237
+#: concrete/src/Package/StartingPointPackage.php:244
 msgctxt "ThumbnailTypeName"
 msgid "File Manager Detail Thumbnails"
 msgstr "Λεπτομέρειες Μικρογραφίας Διαχείρισης αρχείων "
 
-#: concrete/src/Package/StartingPointPackage.php:282
+#: concrete/src/Package/StartingPointPackage.php:289
 #, php-format
 msgid "Unable to install database: %s"
 msgstr "Δεν είναι δυνατή η εγκατάσταση της βάσης δεδομένων: %s"
 
-#: concrete/src/Package/StartingPointPackage.php:322
+#: concrete/src/Package/StartingPointPackage.php:329
 msgctxt "GroupName"
 msgid "Guest"
 msgstr "Επισκέπτης"
 
-#: concrete/src/Package/StartingPointPackage.php:323
+#: concrete/src/Package/StartingPointPackage.php:330
 msgctxt "GroupDescription"
 msgid "The guest group represents unregistered visitors to your site."
 msgstr "Η ομάδα επισκεπτών αντιπροσωπεύει μη εγγεγραμμένους επισκέπτες στο site σας."
 
-#: concrete/src/Package/StartingPointPackage.php:328
+#: concrete/src/Package/StartingPointPackage.php:335
 msgctxt "GroupName"
 msgid "Registered Users"
 msgstr "Εγγεγραμμένοι χρήστες"
 
-#: concrete/src/Package/StartingPointPackage.php:329
+#: concrete/src/Package/StartingPointPackage.php:336
 msgctxt "GroupDescription"
 msgid "The registered users group represents all user accounts."
 msgstr "Η ομάδα εγγεγραμμένων χρηστών αντιπροσωπεύει όλους τους λογαριασμούς χρηστών."
 
-#: concrete/src/Package/StartingPointPackage.php:333
+#: concrete/src/Package/StartingPointPackage.php:340
 msgctxt "GroupName"
 msgid "Administrators"
 msgstr "Διαχειριστές"
 
-#: concrete/src/Package/StartingPointPackage.php:350
+#: concrete/src/Package/StartingPointPackage.php:357
 msgid "Won a Badge"
 msgstr "Κερδίσατε ένα Badge"
 

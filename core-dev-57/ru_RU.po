@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-01-22 05:00+0000\n"
-"PO-Revision-Date: 2016-01-22 20:16+0000\n"
+"POT-Creation-Date: 2016-01-24 11:00+0000\n"
+"PO-Revision-Date: 2016-01-25 00:38+0000\n"
 "Last-Translator: Anton Schepetkov <schepetkov@gmail.com>\n"
 "Language-Team: Russian (Russia) (http://www.transifex.com/concrete5/concrete5/language/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -456,7 +456,7 @@ msgid ""
 msgstr "Ключ устарел. Пожалуйста, посетите страницу напоминания пароля еще раз для генерации нового персонального ключа."
 
 #: concrete/authentication/concrete/controller.php:228
-#: concrete/controllers/install.php:334
+#: concrete/controllers/install.php:341
 #: concrete/controllers/single_page/account/edit_profile.php:102
 #: concrete/controllers/single_page/dashboard/users/search.php:366
 #: concrete/controllers/single_page/register.php:99
@@ -1131,9 +1131,9 @@ msgstr "Плоский вид"
 #: concrete/single_pages/dashboard/conversations/messages.php:12
 #: concrete/single_pages/dashboard/conversations/messages.php:17
 #: concrete/single_pages/dashboard/conversations/messages.php:41
-#: concrete/single_pages/dashboard/files/sets.php:195
-#: concrete/single_pages/dashboard/files/sets.php:200
-#: concrete/single_pages/dashboard/files/sets.php:218
+#: concrete/single_pages/dashboard/files/sets.php:194
+#: concrete/single_pages/dashboard/files/sets.php:199
+#: concrete/single_pages/dashboard/files/sets.php:217
 #: concrete/single_pages/dashboard/reports/logs.php:25
 #: concrete/single_pages/dashboard/reports/logs.php:30
 #: concrete/single_pages/dashboard/reports/logs.php:59
@@ -4235,7 +4235,7 @@ msgstr "KB"
 #: concrete/controllers/search/files.php:257
 #: concrete/elements/files/properties.php:49
 #: concrete/single_pages/dashboard/files/sets.php:74
-#: concrete/single_pages/dashboard/files/sets.php:207
+#: concrete/single_pages/dashboard/files/sets.php:206
 #: concrete/single_pages/dashboard/pages/themes/inspect.php:25
 #: concrete/single_pages/dashboard/workflow/workflows.php:47
 #: concrete/src/File/Search/ColumnSet/DefaultSet.php:26
@@ -6148,7 +6148,12 @@ msgstr[1] "из %d элементов"
 msgstr[2] "из %d элементов"
 msgstr[3] "из %d элементов"
 
-#: concrete/controllers/install.php:87
+#: concrete/controllers/install.php:81 concrete/controllers/install.php:291
+#, php-format
+msgid "Invalid starting point: %s"
+msgstr "Недопустимый тип содержимого страницы: %s"
+
+#: concrete/controllers/install.php:91
 #, php-format
 msgid ""
 "Congratulations. concrete5 has been installed. You have been logged in as "
@@ -6156,33 +6161,33 @@ msgid ""
 "you may do so from the users area of the dashboard."
 msgstr "Поздравляем! CMS Concrete5 установлена и Вы вошли как <b>%s</b>, с паролем, который вы указали. Если захотите изменить пароль, можете сделать это в панели управления в разделе \"Пользователи и группы\"."
 
-#: concrete/controllers/install.php:113
+#: concrete/controllers/install.php:117
 msgid "Unable to connect to database."
 msgstr "Невозможно соединиться с базой данных"
 
-#: concrete/controllers/install.php:119
-#: concrete/src/Package/StartingPointPackage.php:266
+#: concrete/controllers/install.php:123
+#: concrete/src/Package/StartingPointPackage.php:273
 #, php-format
 msgid ""
 "There are already %s tables in this database. concrete5 must be installed in"
 " an empty database."
 msgstr "В базе данных уже содержатся таблицы - %s. Cms oncrete5 должна устанавливаться с использованием пустой базы данных."
 
-#: concrete/controllers/install.php:135
+#: concrete/controllers/install.php:139
 msgid ""
 "Your MySQL database does not support InnoDB database tables. These are "
 "required."
 msgstr "Ваша база данных MySQL не поддерживает InnoDB таблицы. Это требование обязательно."
 
-#: concrete/controllers/install.php:149
+#: concrete/controllers/install.php:153
 msgid "The PDO extension is not loaded."
 msgstr "Расширение PDO не загружено."
 
-#: concrete/controllers/install.php:174
+#: concrete/controllers/install.php:178
 msgid "concrete5 is already installed."
 msgstr "concrete5 уже установлена."
 
-#: concrete/controllers/install.php:180 concrete/views/frontend/install.php:75
+#: concrete/controllers/install.php:184 concrete/views/frontend/install.php:75
 #: concrete/views/frontend/install.php:133
 #: concrete/views/frontend/install.php:259
 #: concrete/views/frontend/install.php:325
@@ -6190,55 +6195,55 @@ msgstr "concrete5 уже установлена."
 msgid "Install concrete5"
 msgstr "Установка Concrete5"
 
-#: concrete/controllers/install.php:231
+#: concrete/controllers/install.php:235
 msgid ""
 "Your configuration directory config/ does not appear to be writable by the "
 "web server."
 msgstr "config/ -  не доступен для записи"
 
-#: concrete/controllers/install.php:235
+#: concrete/controllers/install.php:239
 msgid ""
 "Your files directory files/ does not appear to be writable by the web "
 "server."
 msgstr "files/ -  не доступен для записи"
 
-#: concrete/controllers/install.php:239
+#: concrete/controllers/install.php:243
 msgid ""
 "Your packages directory packages/ does not appear to be writable by the web "
 "server."
 msgstr "Директория пакетов packages/ закрыта на запись и не может быть обновлена web сервером."
 
-#: concrete/controllers/install.php:290
+#: concrete/controllers/install.php:297
 #, php-format
 msgctxt "InstallError"
 msgid "%s.<br><br>Trace:<br>%s"
 msgstr "%s.<br><br>Trace:<br>%s"
 
-#: concrete/controllers/install.php:322
+#: concrete/controllers/install.php:329
 msgid "Please specify your site's name"
 msgstr "Укажите название вашего сайта"
 
-#: concrete/controllers/install.php:323
+#: concrete/controllers/install.php:330
 msgid "Please specify a valid email address"
 msgstr "Укажите существующий email адрес"
 
-#: concrete/controllers/install.php:324
+#: concrete/controllers/install.php:331
 msgid "You must specify a valid database name"
 msgstr "Укажите название существующей базы данных"
 
-#: concrete/controllers/install.php:325
+#: concrete/controllers/install.php:332
 msgid "You must specify a valid database server"
 msgstr "Укажите сервер базы данных"
 
-#: concrete/controllers/install.php:375
+#: concrete/controllers/install.php:382
 msgid "Unable to open config/app.php for writing."
 msgstr "Файл config/app.php недоступен для записи."
 
-#: concrete/controllers/install.php:395
+#: concrete/controllers/install.php:402
 msgid "Unable to open config/site_user.php for writing."
 msgstr "Файл config/site_user.php недоступен для записи."
 
-#: concrete/controllers/install.php:419
+#: concrete/controllers/install.php:426
 msgid "You must select a valid sample content starting point."
 msgstr "Вы должны выбрать тип содержимого."
 
@@ -7398,7 +7403,7 @@ msgctxt "Log channel"
 msgid "Exceptions"
 msgstr "Исключения"
 
-#: concrete/blocks/core_area_layout/controller.php:201
+#: concrete/blocks/core_area_layout/controller.php:204
 #: concrete/src/Backup/ContentImporter.php:311
 #, php-format
 msgid "Invalid block type handle: %s"
@@ -7523,7 +7528,7 @@ msgstr "Библиотека антиспама"
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:39
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:299
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:418
-#: concrete/src/Console/Command/JobCommand.php:48
+#: concrete/src/Console/Command/JobCommand.php:57
 #: concrete/src/Package/Package.php:168
 msgid "Jobs"
 msgstr "Задачи"
@@ -7593,133 +7598,133 @@ msgid ""
 " contact the maintainer of this package for assistance."
 msgstr "В настоящее время данный пакет недоступен для этой версии concrete5. Пожалуйста, свяжитесь с разработчиками этого пакета."
 
-#: concrete/src/Package/StartingPointPackage.php:45
+#: concrete/src/Package/StartingPointPackage.php:44
 msgid "Starting installation and creating directories."
 msgstr "Запуск установки и создание директорий."
 
-#: concrete/src/Package/StartingPointPackage.php:46
+#: concrete/src/Package/StartingPointPackage.php:45
 msgid "Creating database tables."
 msgstr "Создание таблиц базы данных."
 
-#: concrete/src/Package/StartingPointPackage.php:47
+#: concrete/src/Package/StartingPointPackage.php:46
 msgid "Adding admin user."
 msgstr "Добавление учетной записи администратора"
 
-#: concrete/src/Package/StartingPointPackage.php:48
+#: concrete/src/Package/StartingPointPackage.php:47
 msgid "Installing permissions & workflow."
 msgstr "Установка прав и рабочих процессов."
 
-#: concrete/src/Package/StartingPointPackage.php:49
+#: concrete/src/Package/StartingPointPackage.php:48
 msgid "Creating home page."
 msgstr "Создание главной страницы."
 
-#: concrete/src/Package/StartingPointPackage.php:50
+#: concrete/src/Package/StartingPointPackage.php:49
 msgid "Installing attributes."
 msgstr "Установка атрибутов."
 
-#: concrete/src/Package/StartingPointPackage.php:51
+#: concrete/src/Package/StartingPointPackage.php:50
 msgid "Adding block types."
 msgstr "Добавление типов блоков."
 
-#: concrete/src/Package/StartingPointPackage.php:52
+#: concrete/src/Package/StartingPointPackage.php:51
 msgid "Adding gathering data sources."
 msgstr "Добавление источников сбора данных."
 
-#: concrete/src/Package/StartingPointPackage.php:53
+#: concrete/src/Package/StartingPointPackage.php:52
 msgid "Page type basic setup."
 msgstr "Установка типов страниц."
 
-#: concrete/src/Package/StartingPointPackage.php:54
+#: concrete/src/Package/StartingPointPackage.php:53
 msgid "Adding themes."
 msgstr "Добавление тем оформления."
 
-#: concrete/src/Package/StartingPointPackage.php:55
+#: concrete/src/Package/StartingPointPackage.php:54
 msgid "Installing automated jobs."
 msgstr "Установка автоматизированных задач."
 
-#: concrete/src/Package/StartingPointPackage.php:56
+#: concrete/src/Package/StartingPointPackage.php:55
 msgid "Installing dashboard."
 msgstr "Установка панели управления."
 
-#: concrete/src/Package/StartingPointPackage.php:60
+#: concrete/src/Package/StartingPointPackage.php:59
 msgid "Installing login and registration pages."
 msgstr "Установка страниц авторизации и регистрации."
 
-#: concrete/src/Package/StartingPointPackage.php:61
+#: concrete/src/Package/StartingPointPackage.php:60
 msgid "Adding image editor functionality."
 msgstr "Установка плагинов для редактирования изображений."
 
-#: concrete/src/Package/StartingPointPackage.php:62
+#: concrete/src/Package/StartingPointPackage.php:61
 msgid "Configuring site."
 msgstr "Настройка параметров сайта."
 
-#: concrete/src/Package/StartingPointPackage.php:63
+#: concrete/src/Package/StartingPointPackage.php:62
 msgid "Importing files."
 msgstr "Импортирование файлов"
 
-#: concrete/src/Package/StartingPointPackage.php:64
+#: concrete/src/Package/StartingPointPackage.php:63
 msgid "Adding pages and content."
 msgstr "Добавление страниц и их содержимого."
 
-#: concrete/src/Package/StartingPointPackage.php:65
+#: concrete/src/Package/StartingPointPackage.php:64
 msgid "Setting up site permissions."
 msgstr "Установка прав доступа для сайта."
 
-#: concrete/src/Package/StartingPointPackage.php:66
+#: concrete/src/Package/StartingPointPackage.php:65
 msgid "Finishing."
 msgstr "Завершение."
 
 #: concrete/single_pages/dashboard/system/files/storage.php:54
-#: concrete/src/Package/StartingPointPackage.php:222
-#: concrete/src/Package/StartingPointPackage.php:225
+#: concrete/src/Package/StartingPointPackage.php:229
+#: concrete/src/Package/StartingPointPackage.php:232
 msgid "Default"
 msgstr "По умолчанию"
 
-#: concrete/src/Package/StartingPointPackage.php:223
+#: concrete/src/Package/StartingPointPackage.php:230
 msgid "Local"
 msgstr "Локальный"
 
-#: concrete/src/Package/StartingPointPackage.php:229
+#: concrete/src/Package/StartingPointPackage.php:236
 msgctxt "ThumbnailTypeName"
 msgid "File Manager Thumbnails"
 msgstr "Миниатюра для менеджера файлов"
 
-#: concrete/src/Package/StartingPointPackage.php:237
+#: concrete/src/Package/StartingPointPackage.php:244
 msgctxt "ThumbnailTypeName"
 msgid "File Manager Detail Thumbnails"
 msgstr "Просмотр изображения в менеджере файлов"
 
-#: concrete/src/Package/StartingPointPackage.php:282
+#: concrete/src/Package/StartingPointPackage.php:289
 #, php-format
 msgid "Unable to install database: %s"
 msgstr "Попытка инсталляции базы данных: %s не увенчалась успехом."
 
-#: concrete/src/Package/StartingPointPackage.php:322
+#: concrete/src/Package/StartingPointPackage.php:329
 msgctxt "GroupName"
 msgid "Guest"
 msgstr "Гость"
 
-#: concrete/src/Package/StartingPointPackage.php:323
+#: concrete/src/Package/StartingPointPackage.php:330
 msgctxt "GroupDescription"
 msgid "The guest group represents unregistered visitors to your site."
 msgstr "Группа Гости представляет незарегистрированных пользователей на вашем сайте."
 
-#: concrete/src/Package/StartingPointPackage.php:328
+#: concrete/src/Package/StartingPointPackage.php:335
 msgctxt "GroupName"
 msgid "Registered Users"
 msgstr "Зарегистрированные пользователи"
 
-#: concrete/src/Package/StartingPointPackage.php:329
+#: concrete/src/Package/StartingPointPackage.php:336
 msgctxt "GroupDescription"
 msgid "The registered users group represents all user accounts."
 msgstr "Группы зарегистрированных пользователей представляют все учетные записи пользователей."
 
-#: concrete/src/Package/StartingPointPackage.php:333
+#: concrete/src/Package/StartingPointPackage.php:340
 msgctxt "GroupName"
 msgid "Administrators"
 msgstr "Администраторы"
 
-#: concrete/src/Package/StartingPointPackage.php:350
+#: concrete/src/Package/StartingPointPackage.php:357
 msgid "Won a Badge"
 msgstr "Получение бейджа"
 
@@ -8643,41 +8648,41 @@ msgstr "Список доступных задач"
 msgid "Jobs to run (separate multiple jobs with a space)"
 msgstr "Задачи для запуска (разделяйте отдельные задачи пробелами)"
 
-#: concrete/src/Console/Command/JobCommand.php:37
+#: concrete/src/Console/Command/JobCommand.php:46
 msgid "Available Jobs"
 msgstr "Доступные задачи"
 
-#: concrete/src/Console/Command/JobCommand.php:39
+#: concrete/src/Console/Command/JobCommand.php:48
 msgid "Job Handle"
 msgstr "Дескриптор задачи"
 
-#: concrete/src/Console/Command/JobCommand.php:39
+#: concrete/src/Console/Command/JobCommand.php:48
 msgid "Job Name"
 msgstr "Название задачи"
 
-#: concrete/src/Console/Command/JobCommand.php:46
+#: concrete/src/Console/Command/JobCommand.php:55
 msgid "Available Job Sets"
 msgstr "Доступные наборы задач"
 
-#: concrete/src/Console/Command/JobCommand.php:48
+#: concrete/src/Console/Command/JobCommand.php:57
 msgid "Set Name"
 msgstr "Название"
 
-#: concrete/src/Console/Command/JobCommand.php:63
+#: concrete/src/Console/Command/JobCommand.php:72
 msgid "At least one job must be provided"
 msgstr "Необходимо указать хотя бы одну задачу. "
 
-#: concrete/src/Console/Command/JobCommand.php:73
+#: concrete/src/Console/Command/JobCommand.php:84
 #, php-format
 msgid "A job set with name \"%s\" was not found"
 msgstr "Набор задач с названием \"%s\" не найден"
 
-#: concrete/src/Console/Command/JobCommand.php:84
+#: concrete/src/Console/Command/JobCommand.php:98
 #, php-format
 msgid "A job with handle \"%s\" was not found"
 msgstr "Набор задач с дескриптором \"%s\" не найден"
 
-#: concrete/src/Console/Command/JobCommand.php:97
+#: concrete/src/Console/Command/JobCommand.php:113
 msgid "Job Failed"
 msgstr "Ошибка выполнения задачи"
 
@@ -12829,7 +12834,7 @@ msgstr "Отображает заголовок страницы"
 msgid "Page Title"
 msgstr "Заголовок страницы"
 
-#: concrete/blocks/page_title/templates/archive.php:4
+#: concrete/blocks/page_title/templates/archive.php:5
 #, php-format
 msgid "Topic Archives: %s"
 msgstr "Архивы тем: %s"
@@ -14422,7 +14427,7 @@ msgstr "Отображает список ваших тем на сайте, п�
 msgid "Topic List"
 msgstr "Список тем"
 
-#: concrete/blocks/topic_list/view.php:43
+#: concrete/blocks/topic_list/view.php:46
 msgid "No topics."
 msgstr "Нет тем."
 
@@ -14785,24 +14790,24 @@ msgstr "Имя файла"
 msgid "There are no files in this set."
 msgstr "Файлы отсутствуют в этом наборе."
 
-#: concrete/single_pages/dashboard/files/sets.php:199
+#: concrete/single_pages/dashboard/files/sets.php:198
 msgid "File Set Name"
 msgstr "Имя набора файлов"
 
-#: concrete/single_pages/dashboard/files/sets.php:210
+#: concrete/single_pages/dashboard/files/sets.php:209
 msgid "Public Sets"
 msgstr "Общедоступные наборы"
 
-#: concrete/single_pages/dashboard/files/sets.php:211
+#: concrete/single_pages/dashboard/files/sets.php:210
 msgid "My Sets"
 msgstr "Мои наборы"
 
 #: concrete/config/install/base/dashboard.xml:71
-#: concrete/single_pages/dashboard/files/sets.php:226
+#: concrete/single_pages/dashboard/files/sets.php:225
 msgid "Add File Set"
 msgstr "Добавить набор файлов"
 
-#: concrete/single_pages/dashboard/files/sets.php:249
+#: concrete/single_pages/dashboard/files/sets.php:248
 msgid "No file sets found."
 msgstr "Наборы файлов не найдены."
 

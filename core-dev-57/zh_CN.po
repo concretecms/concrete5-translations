@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-01-21 05:00+0000\n"
-"PO-Revision-Date: 2016-01-21 10:15+0000\n"
+"POT-Creation-Date: 2016-01-24 11:00+0000\n"
+"PO-Revision-Date: 2016-01-24 11:33+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/concrete5/concrete5/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -453,7 +453,7 @@ msgid ""
 msgstr "已过期。请访问“忘记密码”页面，再生成一个新的密钥。"
 
 #: concrete/authentication/concrete/controller.php:228
-#: concrete/controllers/install.php:334
+#: concrete/controllers/install.php:341
 #: concrete/controllers/single_page/account/edit_profile.php:102
 #: concrete/controllers/single_page/dashboard/users/search.php:366
 #: concrete/controllers/single_page/register.php:99
@@ -707,7 +707,7 @@ msgstr "删除incoming/目录中的文件。"
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:233
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:313
 #: concrete/single_pages/dashboard/extend/install.php:52
-#: concrete/single_pages/dashboard/extend/install.php:93
+#: concrete/single_pages/dashboard/extend/install.php:97
 #: concrete/single_pages/dashboard/files/add_set.php:19
 #: concrete/single_pages/dashboard/files/sets.php:101
 #: concrete/single_pages/dashboard/pages/feeds.php:63
@@ -926,7 +926,7 @@ msgstr ""
 #: concrete/controllers/frontend/assets_localization.php:403
 #: concrete/elements/files/search.php:19
 #: concrete/single_pages/dashboard/extend/addons.php:32
-#: concrete/single_pages/dashboard/extend/install.php:381
+#: concrete/single_pages/dashboard/extend/install.php:385
 #: concrete/single_pages/dashboard/extend/themes.php:34
 #: concrete/single_pages/dashboard/system/backup/backup.php:111
 #: concrete/single_pages/dashboard/system/backup/update.php:232
@@ -1122,9 +1122,9 @@ msgstr "平面视图"
 #: concrete/single_pages/dashboard/conversations/messages.php:12
 #: concrete/single_pages/dashboard/conversations/messages.php:17
 #: concrete/single_pages/dashboard/conversations/messages.php:41
-#: concrete/single_pages/dashboard/files/sets.php:195
-#: concrete/single_pages/dashboard/files/sets.php:200
-#: concrete/single_pages/dashboard/files/sets.php:218
+#: concrete/single_pages/dashboard/files/sets.php:194
+#: concrete/single_pages/dashboard/files/sets.php:199
+#: concrete/single_pages/dashboard/files/sets.php:217
 #: concrete/single_pages/dashboard/reports/logs.php:25
 #: concrete/single_pages/dashboard/reports/logs.php:30
 #: concrete/single_pages/dashboard/reports/logs.php:59
@@ -1921,7 +1921,7 @@ msgstr "更改此设置将立即影响此页。你确定吗？"
 
 #: concrete/controllers/frontend/assets_localization.php:96
 #: concrete/controllers/frontend/assets_localization.php:251
-#: concrete/single_pages/dashboard/extend/install.php:307
+#: concrete/single_pages/dashboard/extend/install.php:311
 #: concrete/single_pages/dashboard/pages/themes/inspect.php:107
 #: concrete/single_pages/dashboard/pages/themes/view.php:18
 #: concrete/src/Application/Service/UserInterface/Help/Formatter.php:21
@@ -2466,7 +2466,7 @@ msgid "Invalid package."
 msgstr "无效的程序包。"
 
 #: concrete/controllers/single_page/dashboard/extend/install.php:85
-#: concrete/src/Package/Package.php:990
+#: concrete/src/Package/Package.php:995
 msgid ""
 "This package contains the active site theme, please change the theme before "
 "uninstalling."
@@ -4211,7 +4211,7 @@ msgstr "KB"
 #: concrete/controllers/search/files.php:257
 #: concrete/elements/files/properties.php:49
 #: concrete/single_pages/dashboard/files/sets.php:74
-#: concrete/single_pages/dashboard/files/sets.php:207
+#: concrete/single_pages/dashboard/files/sets.php:206
 #: concrete/single_pages/dashboard/pages/themes/inspect.php:25
 #: concrete/single_pages/dashboard/workflow/workflows.php:47
 #: concrete/src/File/Search/ColumnSet/DefaultSet.php:26
@@ -6118,7 +6118,12 @@ msgid "%d item"
 msgid_plural "%d items"
 msgstr[0] ""
 
-#: concrete/controllers/install.php:87
+#: concrete/controllers/install.php:81 concrete/controllers/install.php:291
+#, php-format
+msgid "Invalid starting point: %s"
+msgstr ""
+
+#: concrete/controllers/install.php:91
 #, php-format
 msgid ""
 "Congratulations. concrete5 has been installed. You have been logged in as "
@@ -6126,33 +6131,33 @@ msgid ""
 "you may do so from the users area of the dashboard."
 msgstr "恭喜你。已安装concrete5。您已按照所选择的密码登录，以 <b>%s</b> 身份。你可以从仪表盘的用户区更改这个密码。"
 
-#: concrete/controllers/install.php:113
+#: concrete/controllers/install.php:117
 msgid "Unable to connect to database."
 msgstr "无法连接到数据库。"
 
-#: concrete/controllers/install.php:119
-#: concrete/src/Package/StartingPointPackage.php:266
+#: concrete/controllers/install.php:123
+#: concrete/src/Package/StartingPointPackage.php:273
 #, php-format
 msgid ""
 "There are already %s tables in this database. concrete5 must be installed in"
 " an empty database."
 msgstr "现在在该数据库中已经有 %s 的表。concrete5必须安装在一个空的数据库。"
 
-#: concrete/controllers/install.php:135
+#: concrete/controllers/install.php:139
 msgid ""
 "Your MySQL database does not support InnoDB database tables. These are "
 "required."
 msgstr ""
 
-#: concrete/controllers/install.php:149
+#: concrete/controllers/install.php:153
 msgid "The PDO extension is not loaded."
 msgstr ""
 
-#: concrete/controllers/install.php:174
+#: concrete/controllers/install.php:178
 msgid "concrete5 is already installed."
 msgstr "已经安装concrete5。"
 
-#: concrete/controllers/install.php:180 concrete/views/frontend/install.php:75
+#: concrete/controllers/install.php:184 concrete/views/frontend/install.php:75
 #: concrete/views/frontend/install.php:133
 #: concrete/views/frontend/install.php:259
 #: concrete/views/frontend/install.php:325
@@ -6160,55 +6165,55 @@ msgstr "已经安装concrete5。"
 msgid "Install concrete5"
 msgstr "安装concrete5"
 
-#: concrete/controllers/install.php:231
+#: concrete/controllers/install.php:235
 msgid ""
 "Your configuration directory config/ does not appear to be writable by the "
 "web server."
 msgstr "Web服务器配置的 config/ 目录不可写。"
 
-#: concrete/controllers/install.php:235
+#: concrete/controllers/install.php:239
 msgid ""
 "Your files directory files/ does not appear to be writable by the web "
 "server."
 msgstr "Web服务器配置的 files/ 目录不可写。"
 
-#: concrete/controllers/install.php:239
+#: concrete/controllers/install.php:243
 msgid ""
 "Your packages directory packages/ does not appear to be writable by the web "
 "server."
 msgstr "Web服务器配置的 packages/ 目录不可写。"
 
-#: concrete/controllers/install.php:290
+#: concrete/controllers/install.php:297
 #, php-format
 msgctxt "InstallError"
 msgid "%s.<br><br>Trace:<br>%s"
 msgstr ""
 
-#: concrete/controllers/install.php:322
+#: concrete/controllers/install.php:329
 msgid "Please specify your site's name"
 msgstr "请注明网站名称"
 
-#: concrete/controllers/install.php:323
+#: concrete/controllers/install.php:330
 msgid "Please specify a valid email address"
 msgstr "请指定一个有效的电子邮件地址"
 
-#: concrete/controllers/install.php:324
+#: concrete/controllers/install.php:331
 msgid "You must specify a valid database name"
 msgstr "您必须指定一个有效的数据库名称"
 
-#: concrete/controllers/install.php:325
+#: concrete/controllers/install.php:332
 msgid "You must specify a valid database server"
 msgstr "您必须指定一个有效的数据库服务器"
 
-#: concrete/controllers/install.php:375
+#: concrete/controllers/install.php:382
 msgid "Unable to open config/app.php for writing."
 msgstr ""
 
-#: concrete/controllers/install.php:395
+#: concrete/controllers/install.php:402
 msgid "Unable to open config/site_user.php for writing."
 msgstr "无法写入 config/site_user.php。"
 
-#: concrete/controllers/install.php:419
+#: concrete/controllers/install.php:426
 msgid "You must select a valid sample content starting point."
 msgstr "您必须选择一个有效样本内容的起点。"
 
@@ -7359,7 +7364,7 @@ msgctxt "Log channel"
 msgid "Exceptions"
 msgstr ""
 
-#: concrete/blocks/core_area_layout/controller.php:201
+#: concrete/blocks/core_area_layout/controller.php:204
 #: concrete/src/Backup/ContentImporter.php:311
 #, php-format
 msgid "Invalid block type handle: %s"
@@ -7484,7 +7489,7 @@ msgstr ""
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:39
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:299
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:418
-#: concrete/src/Console/Command/JobCommand.php:48
+#: concrete/src/Console/Command/JobCommand.php:57
 #: concrete/src/Package/Package.php:168
 msgid "Jobs"
 msgstr ""
@@ -7514,173 +7519,173 @@ msgstr "%s (%s)"
 msgid " %s (%s)"
 msgstr " %s (%s)"
 
-#: concrete/src/Package/Package.php:976
+#: concrete/src/Package/Package.php:981
 msgid "You've already installed that package."
 msgstr "您已经安装了该程序包。"
 
-#: concrete/src/Package/Package.php:977
+#: concrete/src/Package/Package.php:982
 msgid "Invalid Package."
 msgstr "无效的包。"
 
-#: concrete/src/Package/Package.php:978
+#: concrete/src/Package/Package.php:983
 #, php-format
 msgid "This package requires concrete5 version %s or greater."
 msgstr "这个程序包需要安装在 %s 的Concrete5 或更高版本上。"
 
-#: concrete/src/Package/Package.php:979
+#: concrete/src/Package/Package.php:984
 msgid "An error occurred while downloading the package."
 msgstr "下载包时发生错误。"
 
-#: concrete/src/Package/Package.php:980
+#: concrete/src/Package/Package.php:985
 msgid "concrete5 was not able to save the package after download."
 msgstr "Concrete5 无法保存下载的程序包。"
 
-#: concrete/src/Package/Package.php:981
+#: concrete/src/Package/Package.php:986
 msgid "An error occurred while trying to unzip the package."
 msgstr "发生错误，而试图解压缩程序包。"
 
-#: concrete/src/Package/Package.php:982
+#: concrete/src/Package/Package.php:987
 msgid "An error occurred while trying to install the package."
 msgstr "发生错误，同时要安装的软件包。"
 
-#: concrete/src/Package/Package.php:984
+#: concrete/src/Package/Package.php:989
 #, php-format
 msgid "Unable to backup old package directory to %s"
 msgstr "无法备份旧的包目录%s"
 
-#: concrete/src/Package/Package.php:988
+#: concrete/src/Package/Package.php:993
 msgid ""
 "This package isn't currently available for this version of concrete5. Please"
 " contact the maintainer of this package for assistance."
 msgstr "这个包是目前还没有此版本的concrete5。这个包的协助，请联系维护者。"
 
-#: concrete/src/Package/StartingPointPackage.php:45
+#: concrete/src/Package/StartingPointPackage.php:44
 msgid "Starting installation and creating directories."
 msgstr "开始安装，并创建目录。"
 
-#: concrete/src/Package/StartingPointPackage.php:46
+#: concrete/src/Package/StartingPointPackage.php:45
 msgid "Creating database tables."
 msgstr "创建数据库表。"
 
-#: concrete/src/Package/StartingPointPackage.php:47
+#: concrete/src/Package/StartingPointPackage.php:46
 msgid "Adding admin user."
 msgstr "添加管理员用户。"
 
-#: concrete/src/Package/StartingPointPackage.php:48
+#: concrete/src/Package/StartingPointPackage.php:47
 msgid "Installing permissions & workflow."
 msgstr "安装权限和工作流程。"
 
-#: concrete/src/Package/StartingPointPackage.php:49
+#: concrete/src/Package/StartingPointPackage.php:48
 msgid "Creating home page."
 msgstr "创建主页。"
 
-#: concrete/src/Package/StartingPointPackage.php:50
+#: concrete/src/Package/StartingPointPackage.php:49
 msgid "Installing attributes."
 msgstr "安装属性。"
 
-#: concrete/src/Package/StartingPointPackage.php:51
+#: concrete/src/Package/StartingPointPackage.php:50
 msgid "Adding block types."
 msgstr "添加的模块类型。"
 
-#: concrete/src/Package/StartingPointPackage.php:52
+#: concrete/src/Package/StartingPointPackage.php:51
 msgid "Adding gathering data sources."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:53
+#: concrete/src/Package/StartingPointPackage.php:52
 msgid "Page type basic setup."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:54
+#: concrete/src/Package/StartingPointPackage.php:53
 msgid "Adding themes."
 msgstr "添加主题"
 
-#: concrete/src/Package/StartingPointPackage.php:55
+#: concrete/src/Package/StartingPointPackage.php:54
 msgid "Installing automated jobs."
 msgstr "正在安装自动作业。"
 
-#: concrete/src/Package/StartingPointPackage.php:56
+#: concrete/src/Package/StartingPointPackage.php:55
 msgid "Installing dashboard."
 msgstr "安装仪表盘。"
 
-#: concrete/src/Package/StartingPointPackage.php:60
+#: concrete/src/Package/StartingPointPackage.php:59
 msgid "Installing login and registration pages."
 msgstr "安装登录和注册页面。"
 
-#: concrete/src/Package/StartingPointPackage.php:61
+#: concrete/src/Package/StartingPointPackage.php:60
 msgid "Adding image editor functionality."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:62
+#: concrete/src/Package/StartingPointPackage.php:61
 msgid "Configuring site."
 msgstr "设置站点"
 
-#: concrete/src/Package/StartingPointPackage.php:63
+#: concrete/src/Package/StartingPointPackage.php:62
 msgid "Importing files."
 msgstr "导入文件。"
 
-#: concrete/src/Package/StartingPointPackage.php:64
+#: concrete/src/Package/StartingPointPackage.php:63
 msgid "Adding pages and content."
 msgstr "添加网页和内容。"
 
-#: concrete/src/Package/StartingPointPackage.php:65
+#: concrete/src/Package/StartingPointPackage.php:64
 msgid "Setting up site permissions."
 msgstr "设置网站权限。"
 
-#: concrete/src/Package/StartingPointPackage.php:66
+#: concrete/src/Package/StartingPointPackage.php:65
 msgid "Finishing."
 msgstr "表面加工"
 
 #: concrete/single_pages/dashboard/system/files/storage.php:54
-#: concrete/src/Package/StartingPointPackage.php:222
-#: concrete/src/Package/StartingPointPackage.php:225
+#: concrete/src/Package/StartingPointPackage.php:229
+#: concrete/src/Package/StartingPointPackage.php:232
 msgid "Default"
 msgstr "默认"
 
-#: concrete/src/Package/StartingPointPackage.php:223
+#: concrete/src/Package/StartingPointPackage.php:230
 msgid "Local"
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:229
+#: concrete/src/Package/StartingPointPackage.php:236
 msgctxt "ThumbnailTypeName"
 msgid "File Manager Thumbnails"
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:237
+#: concrete/src/Package/StartingPointPackage.php:244
 msgctxt "ThumbnailTypeName"
 msgid "File Manager Detail Thumbnails"
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:282
+#: concrete/src/Package/StartingPointPackage.php:289
 #, php-format
 msgid "Unable to install database: %s"
 msgstr "无法安装数据库： %s"
 
-#: concrete/src/Package/StartingPointPackage.php:322
+#: concrete/src/Package/StartingPointPackage.php:329
 msgctxt "GroupName"
 msgid "Guest"
 msgstr "访客"
 
-#: concrete/src/Package/StartingPointPackage.php:323
+#: concrete/src/Package/StartingPointPackage.php:330
 msgctxt "GroupDescription"
 msgid "The guest group represents unregistered visitors to your site."
 msgstr "客群表示未注册的游客到您的网站。"
 
-#: concrete/src/Package/StartingPointPackage.php:328
+#: concrete/src/Package/StartingPointPackage.php:335
 msgctxt "GroupName"
 msgid "Registered Users"
 msgstr "注册用户"
 
-#: concrete/src/Package/StartingPointPackage.php:329
+#: concrete/src/Package/StartingPointPackage.php:336
 msgctxt "GroupDescription"
 msgid "The registered users group represents all user accounts."
 msgstr "注册用户组代表所有用户帐户。"
 
-#: concrete/src/Package/StartingPointPackage.php:333
+#: concrete/src/Package/StartingPointPackage.php:340
 msgctxt "GroupName"
 msgid "Administrators"
 msgstr "管理员"
 
-#: concrete/src/Package/StartingPointPackage.php:350
+#: concrete/src/Package/StartingPointPackage.php:357
 msgid "Won a Badge"
 msgstr ""
 
@@ -8604,41 +8609,41 @@ msgstr ""
 msgid "Jobs to run (separate multiple jobs with a space)"
 msgstr ""
 
-#: concrete/src/Console/Command/JobCommand.php:37
+#: concrete/src/Console/Command/JobCommand.php:46
 msgid "Available Jobs"
 msgstr ""
 
-#: concrete/src/Console/Command/JobCommand.php:39
+#: concrete/src/Console/Command/JobCommand.php:48
 msgid "Job Handle"
 msgstr ""
 
-#: concrete/src/Console/Command/JobCommand.php:39
+#: concrete/src/Console/Command/JobCommand.php:48
 msgid "Job Name"
 msgstr ""
 
-#: concrete/src/Console/Command/JobCommand.php:46
+#: concrete/src/Console/Command/JobCommand.php:55
 msgid "Available Job Sets"
 msgstr ""
 
-#: concrete/src/Console/Command/JobCommand.php:48
+#: concrete/src/Console/Command/JobCommand.php:57
 msgid "Set Name"
 msgstr ""
 
-#: concrete/src/Console/Command/JobCommand.php:63
+#: concrete/src/Console/Command/JobCommand.php:72
 msgid "At least one job must be provided"
-msgstr ""
-
-#: concrete/src/Console/Command/JobCommand.php:73
-#, php-format
-msgid "A job set with name \"%s\" was not found"
 msgstr ""
 
 #: concrete/src/Console/Command/JobCommand.php:84
 #, php-format
+msgid "A job set with name \"%s\" was not found"
+msgstr ""
+
+#: concrete/src/Console/Command/JobCommand.php:98
+#, php-format
 msgid "A job with handle \"%s\" was not found"
 msgstr ""
 
-#: concrete/src/Console/Command/JobCommand.php:97
+#: concrete/src/Console/Command/JobCommand.php:113
 msgid "Job Failed"
 msgstr ""
 
@@ -9254,7 +9259,7 @@ msgid ""
 msgstr "连接concrete5社区错误。请检查连接和其他需要的库是否启用。"
 
 #: concrete/elements/dashboard/marketplace_connect_failed.php:35
-#: concrete/single_pages/dashboard/extend/install.php:411
+#: concrete/single_pages/dashboard/extend/install.php:415
 #: concrete/single_pages/dashboard/extend/update.php:119
 msgid "Project Page"
 msgstr "项目页面"
@@ -10325,7 +10330,7 @@ msgid "User/Group Added"
 msgstr "用户/组添加"
 
 #: concrete/elements/permission/detail.php:34
-#: concrete/single_pages/dashboard/extend/install.php:354
+#: concrete/single_pages/dashboard/extend/install.php:358
 #: concrete/single_pages/dashboard/files/sets.php:29
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:255
 #: concrete/single_pages/dashboard/users/group_sets.php:13
@@ -12745,7 +12750,7 @@ msgstr ""
 msgid "Page Title"
 msgstr ""
 
-#: concrete/blocks/page_title/templates/archive.php:4
+#: concrete/blocks/page_title/templates/archive.php:5
 #, php-format
 msgid "Topic Archives: %s"
 msgstr ""
@@ -14007,12 +14012,12 @@ msgid "Add-On Updates"
 msgstr "添加更新"
 
 #: concrete/blocks/dashboard_app_status/view.php:17
-#: concrete/single_pages/dashboard/extend/install.php:337
+#: concrete/single_pages/dashboard/extend/install.php:341
 msgid "There is currently <strong>1</strong> update available."
 msgstr "目前有 <strong>1</strong> 更新可用。"
 
 #: concrete/blocks/dashboard_app_status/view.php:19
-#: concrete/single_pages/dashboard/extend/install.php:339
+#: concrete/single_pages/dashboard/extend/install.php:343
 #, php-format
 msgid "There are currently <strong>%s</strong> updates available."
 msgstr "目前<strong>%s</strong>可用的更新。"
@@ -14332,7 +14337,7 @@ msgstr ""
 msgid "Topic List"
 msgstr ""
 
-#: concrete/blocks/topic_list/view.php:43
+#: concrete/blocks/topic_list/view.php:46
 msgid "No topics."
 msgstr ""
 
@@ -14695,24 +14700,24 @@ msgstr ""
 msgid "There are no files in this set."
 msgstr "在这组中没有任何文件。"
 
-#: concrete/single_pages/dashboard/files/sets.php:199
+#: concrete/single_pages/dashboard/files/sets.php:198
 msgid "File Set Name"
 msgstr ""
 
-#: concrete/single_pages/dashboard/files/sets.php:210
+#: concrete/single_pages/dashboard/files/sets.php:209
 msgid "Public Sets"
 msgstr "公共集"
 
-#: concrete/single_pages/dashboard/files/sets.php:211
+#: concrete/single_pages/dashboard/files/sets.php:210
 msgid "My Sets"
 msgstr "我的设置"
 
 #: concrete/config/install/base/dashboard.xml:71
-#: concrete/single_pages/dashboard/files/sets.php:226
+#: concrete/single_pages/dashboard/files/sets.php:225
 msgid "Add File Set"
 msgstr "添加文件集"
 
-#: concrete/single_pages/dashboard/files/sets.php:249
+#: concrete/single_pages/dashboard/files/sets.php:248
 msgid "No file sets found."
 msgstr "找不到文件集。"
 
@@ -14837,7 +14842,7 @@ msgid "No add-ons found."
 msgstr ""
 
 #: concrete/config/install/base/dashboard.xml:415
-#: concrete/single_pages/dashboard/extend/install.php:334
+#: concrete/single_pages/dashboard/extend/install.php:338
 #: concrete/single_pages/dashboard/extend/update.php:31
 #: concrete/single_pages/dashboard/system/backup/update.php:55
 msgid "Update Add-Ons"
@@ -14887,15 +14892,15 @@ msgstr "无法找到此附加上concrete5.org"
 msgid "Update Add-On"
 msgstr "更新添加在"
 
-#: concrete/single_pages/dashboard/extend/install.php:412
+#: concrete/single_pages/dashboard/extend/install.php:416
 #: concrete/single_pages/dashboard/extend/update.php:120
 msgid ""
 "Your site is currently connected to the concrete5 community. Your project "
 "page URL is:"
 msgstr "您的网站目前连接到了 concrete5 社区。你的项目页面地址是："
 
-#: concrete/single_pages/dashboard/extend/install.php:420
-#: concrete/single_pages/dashboard/extend/install.php:422
+#: concrete/single_pages/dashboard/extend/install.php:424
+#: concrete/single_pages/dashboard/extend/install.php:426
 #: concrete/single_pages/dashboard/extend/update.php:130
 #: concrete/single_pages/dashboard/extend/update.php:132
 msgid "Connect to Community"
@@ -14951,92 +14956,92 @@ msgid "Install %s"
 msgstr "安装 %s"
 
 #: concrete/single_pages/dashboard/extend/install.php:65
-#: concrete/single_pages/dashboard/extend/install.php:291
+#: concrete/single_pages/dashboard/extend/install.php:295
 msgid "Uninstall Package"
 msgstr "卸载程序包"
 
-#: concrete/single_pages/dashboard/extend/install.php:77
+#: concrete/single_pages/dashboard/extend/install.php:81
 #, php-format
 msgid ""
 "This will remove all elements associated with the %s package. While you can "
 "reinstall the package, this may result in data loss."
 msgstr ""
 
-#: concrete/single_pages/dashboard/extend/install.php:81
+#: concrete/single_pages/dashboard/extend/install.php:85
 msgid "Move package to trash directory on server?"
 msgstr "将包垃圾服务器上的目录？"
 
-#: concrete/single_pages/dashboard/extend/install.php:84
+#: concrete/single_pages/dashboard/extend/install.php:88
 msgid "Yes, remove the package's directory from the installation directory."
 msgstr "是的，从安装目录删除这个程序包。"
 
-#: concrete/single_pages/dashboard/extend/install.php:92
+#: concrete/single_pages/dashboard/extend/install.php:96
 msgid "Uninstall"
 msgstr "卸载"
 
-#: concrete/single_pages/dashboard/extend/install.php:213
+#: concrete/single_pages/dashboard/extend/install.php:217
 msgid "attribute type icon"
 msgstr ""
 
-#: concrete/single_pages/dashboard/extend/install.php:294
+#: concrete/single_pages/dashboard/extend/install.php:298
 msgid "Back to Add Functionality"
 msgstr "后面添加功能"
 
-#: concrete/single_pages/dashboard/extend/install.php:318
+#: concrete/single_pages/dashboard/extend/install.php:322
 msgid "Installation Notes"
 msgstr "安装注意事项"
 
-#: concrete/single_pages/dashboard/extend/install.php:333
+#: concrete/single_pages/dashboard/extend/install.php:337
 msgid "Add-On updates are available!"
 msgstr "添加更新！"
 
-#: concrete/single_pages/dashboard/extend/install.php:346
+#: concrete/single_pages/dashboard/extend/install.php:350
 #: concrete/single_pages/dashboard/pages/themes/view.php:27
 msgid "Currently Installed"
 msgstr "目前已安装"
 
-#: concrete/single_pages/dashboard/extend/install.php:355
-#: concrete/single_pages/dashboard/extend/install.php:382
-#: concrete/single_pages/dashboard/extend/install.php:401
+#: concrete/single_pages/dashboard/extend/install.php:359
+#: concrete/single_pages/dashboard/extend/install.php:386
+#: concrete/single_pages/dashboard/extend/install.php:405
 #: concrete/single_pages/dashboard/system/backup/update.php:69
 #, php-format
 msgctxt "AddonVersion"
 msgid "v.%s"
 msgstr ""
 
-#: concrete/single_pages/dashboard/extend/install.php:362
+#: concrete/single_pages/dashboard/extend/install.php:366
 msgid "No packages have been installed."
 msgstr "包已安装。"
 
 #: concrete/single_pages/dashboard/blocks/types/view.php:49
-#: concrete/single_pages/dashboard/extend/install.php:367
+#: concrete/single_pages/dashboard/extend/install.php:371
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:203
 msgid "Awaiting Installation"
 msgstr "等待安装"
 
-#: concrete/single_pages/dashboard/extend/install.php:371
+#: concrete/single_pages/dashboard/extend/install.php:375
 msgid "Nothing currently available to install."
 msgstr "没有目前可用的安装。"
 
-#: concrete/single_pages/dashboard/extend/install.php:395
+#: concrete/single_pages/dashboard/extend/install.php:399
 msgid ""
 "This package is corrupted. Make sure it has a valid controller.php file and "
 "that it has been updated for concrete5.7 and later."
 msgstr ""
 
-#: concrete/single_pages/dashboard/extend/install.php:396
+#: concrete/single_pages/dashboard/extend/install.php:400
 msgid "Can't Install!"
 msgstr ""
 
 #: concrete/single_pages/dashboard/blocks/types/view.php:57
-#: concrete/single_pages/dashboard/extend/install.php:399
+#: concrete/single_pages/dashboard/extend/install.php:403
 #: concrete/single_pages/dashboard/pages/themes/view.php:104
 #: concrete/single_pages/dashboard/system/attributes/types.php:59
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:218
 msgid "Install"
 msgstr "安装"
 
-#: concrete/single_pages/dashboard/extend/install.php:421
+#: concrete/single_pages/dashboard/extend/install.php:425
 msgid ""
 "Your site is not connected to the concrete5 community. Connecting lets you "
 "easily extend a site with themes and add-ons."

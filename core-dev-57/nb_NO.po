@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-01-21 05:00+0000\n"
-"PO-Revision-Date: 2016-01-21 10:15+0000\n"
+"POT-Creation-Date: 2016-01-24 11:00+0000\n"
+"PO-Revision-Date: 2016-01-24 11:33+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Norwegian Bokmål (Norway) (http://www.transifex.com/concrete5/concrete5/language/nb_NO/)\n"
 "MIME-Version: 1.0\n"
@@ -455,7 +455,7 @@ msgid ""
 msgstr "Nøkkelen har utløpt. Besøk siden glemt passord for å få en ny nøkkel."
 
 #: concrete/authentication/concrete/controller.php:228
-#: concrete/controllers/install.php:334
+#: concrete/controllers/install.php:341
 #: concrete/controllers/single_page/account/edit_profile.php:102
 #: concrete/controllers/single_page/dashboard/users/search.php:366
 #: concrete/controllers/single_page/register.php:99
@@ -709,7 +709,7 @@ msgstr "Fjern filer fra mappen incoming/."
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:233
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:313
 #: concrete/single_pages/dashboard/extend/install.php:52
-#: concrete/single_pages/dashboard/extend/install.php:93
+#: concrete/single_pages/dashboard/extend/install.php:97
 #: concrete/single_pages/dashboard/files/add_set.php:19
 #: concrete/single_pages/dashboard/files/sets.php:101
 #: concrete/single_pages/dashboard/pages/feeds.php:63
@@ -929,7 +929,7 @@ msgstr "En feil oppstod ved nedlasting av %s"
 #: concrete/controllers/frontend/assets_localization.php:403
 #: concrete/elements/files/search.php:19
 #: concrete/single_pages/dashboard/extend/addons.php:32
-#: concrete/single_pages/dashboard/extend/install.php:381
+#: concrete/single_pages/dashboard/extend/install.php:385
 #: concrete/single_pages/dashboard/extend/themes.php:34
 #: concrete/single_pages/dashboard/system/backup/backup.php:111
 #: concrete/single_pages/dashboard/system/backup/update.php:232
@@ -1126,9 +1126,9 @@ msgstr "Flat visning"
 #: concrete/single_pages/dashboard/conversations/messages.php:12
 #: concrete/single_pages/dashboard/conversations/messages.php:17
 #: concrete/single_pages/dashboard/conversations/messages.php:41
-#: concrete/single_pages/dashboard/files/sets.php:195
-#: concrete/single_pages/dashboard/files/sets.php:200
-#: concrete/single_pages/dashboard/files/sets.php:218
+#: concrete/single_pages/dashboard/files/sets.php:194
+#: concrete/single_pages/dashboard/files/sets.php:199
+#: concrete/single_pages/dashboard/files/sets.php:217
 #: concrete/single_pages/dashboard/reports/logs.php:25
 #: concrete/single_pages/dashboard/reports/logs.php:30
 #: concrete/single_pages/dashboard/reports/logs.php:59
@@ -1927,7 +1927,7 @@ msgstr "Endring av denne innstillingen vil oppdatere denne siden med engang. Er 
 
 #: concrete/controllers/frontend/assets_localization.php:96
 #: concrete/controllers/frontend/assets_localization.php:251
-#: concrete/single_pages/dashboard/extend/install.php:307
+#: concrete/single_pages/dashboard/extend/install.php:311
 #: concrete/single_pages/dashboard/pages/themes/inspect.php:107
 #: concrete/single_pages/dashboard/pages/themes/view.php:18
 #: concrete/src/Application/Service/UserInterface/Help/Formatter.php:21
@@ -2473,7 +2473,7 @@ msgid "Invalid package."
 msgstr "Ugyldig tilleggspakke."
 
 #: concrete/controllers/single_page/dashboard/extend/install.php:85
-#: concrete/src/Package/Package.php:990
+#: concrete/src/Package/Package.php:995
 msgid ""
 "This package contains the active site theme, please change the theme before "
 "uninstalling."
@@ -4220,7 +4220,7 @@ msgstr "KB"
 #: concrete/controllers/search/files.php:257
 #: concrete/elements/files/properties.php:49
 #: concrete/single_pages/dashboard/files/sets.php:74
-#: concrete/single_pages/dashboard/files/sets.php:207
+#: concrete/single_pages/dashboard/files/sets.php:206
 #: concrete/single_pages/dashboard/pages/themes/inspect.php:25
 #: concrete/single_pages/dashboard/workflow/workflows.php:47
 #: concrete/src/File/Search/ColumnSet/DefaultSet.php:26
@@ -6129,7 +6129,12 @@ msgid_plural "%d items"
 msgstr[0] ""
 msgstr[1] "%d elementer"
 
-#: concrete/controllers/install.php:87
+#: concrete/controllers/install.php:81 concrete/controllers/install.php:291
+#, php-format
+msgid "Invalid starting point: %s"
+msgstr ""
+
+#: concrete/controllers/install.php:91
 #, php-format
 msgid ""
 "Congratulations. concrete5 has been installed. You have been logged in as "
@@ -6137,33 +6142,33 @@ msgid ""
 "you may do so from the users area of the dashboard."
 msgstr "Gratulerer. concrete5 er nå installert. Du er logget in som <b>%s</ b> med den passordet du valgte. Hvis du ønsker å endre dette passordet, kan du gjøre det i bruker-området i kontrollpanelet."
 
-#: concrete/controllers/install.php:113
+#: concrete/controllers/install.php:117
 msgid "Unable to connect to database."
 msgstr "Kan ikke koble til databasen."
 
-#: concrete/controllers/install.php:119
-#: concrete/src/Package/StartingPointPackage.php:266
+#: concrete/controllers/install.php:123
+#: concrete/src/Package/StartingPointPackage.php:273
 #, php-format
 msgid ""
 "There are already %s tables in this database. concrete5 must be installed in"
 " an empty database."
 msgstr "Der er allerede %s tabeller i denne database. concrete5 må installeres i en tom database."
 
-#: concrete/controllers/install.php:135
+#: concrete/controllers/install.php:139
 msgid ""
 "Your MySQL database does not support InnoDB database tables. These are "
 "required."
 msgstr "Din MySQL-database støtter ikke InnoDB-tabeller. Dette er påkrevd."
 
-#: concrete/controllers/install.php:149
+#: concrete/controllers/install.php:153
 msgid "The PDO extension is not loaded."
 msgstr "PDO-tilleggspakken er ikke lastet inn."
 
-#: concrete/controllers/install.php:174
+#: concrete/controllers/install.php:178
 msgid "concrete5 is already installed."
 msgstr "concrete5 er allerede installert."
 
-#: concrete/controllers/install.php:180 concrete/views/frontend/install.php:75
+#: concrete/controllers/install.php:184 concrete/views/frontend/install.php:75
 #: concrete/views/frontend/install.php:133
 #: concrete/views/frontend/install.php:259
 #: concrete/views/frontend/install.php:325
@@ -6171,55 +6176,55 @@ msgstr "concrete5 er allerede installert."
 msgid "Install concrete5"
 msgstr "Installer concrete5"
 
-#: concrete/controllers/install.php:231
+#: concrete/controllers/install.php:235
 msgid ""
 "Your configuration directory config/ does not appear to be writable by the "
 "web server."
 msgstr "Det er ikke skrivetilgang til mappen config/ på webtjeneren."
 
-#: concrete/controllers/install.php:235
+#: concrete/controllers/install.php:239
 msgid ""
 "Your files directory files/ does not appear to be writable by the web "
 "server."
 msgstr "Det er ikke skrivetilgang til mappen files/ på webtjeneren."
 
-#: concrete/controllers/install.php:239
+#: concrete/controllers/install.php:243
 msgid ""
 "Your packages directory packages/ does not appear to be writable by the web "
 "server."
 msgstr "Mappen packages/ på webtjeneren er ikke skrivbar."
 
-#: concrete/controllers/install.php:290
+#: concrete/controllers/install.php:297
 #, php-format
 msgctxt "InstallError"
 msgid "%s.<br><br>Trace:<br>%s"
 msgstr "%s.<br><br>Spor:<br>%s"
 
-#: concrete/controllers/install.php:322
+#: concrete/controllers/install.php:329
 msgid "Please specify your site's name"
 msgstr "Skriv inn nettstedets navn"
 
-#: concrete/controllers/install.php:323
+#: concrete/controllers/install.php:330
 msgid "Please specify a valid email address"
 msgstr "Skriv inn en gyldig e-postadresse"
 
-#: concrete/controllers/install.php:324
+#: concrete/controllers/install.php:331
 msgid "You must specify a valid database name"
 msgstr "Du må angi et gyldig database-navn"
 
-#: concrete/controllers/install.php:325
+#: concrete/controllers/install.php:332
 msgid "You must specify a valid database server"
 msgstr "Du må angi en gyldig database-tjener"
 
-#: concrete/controllers/install.php:375
+#: concrete/controllers/install.php:382
 msgid "Unable to open config/app.php for writing."
 msgstr "Kunne ikke skrive til filen config/app.php."
 
-#: concrete/controllers/install.php:395
+#: concrete/controllers/install.php:402
 msgid "Unable to open config/site_user.php for writing."
 msgstr "Kunne ikke skrive til filen config/site.php."
 
-#: concrete/controllers/install.php:419
+#: concrete/controllers/install.php:426
 msgid "You must select a valid sample content starting point."
 msgstr "Du må velge et startpunkt for demo-innhold."
 
@@ -7373,7 +7378,7 @@ msgctxt "Log channel"
 msgid "Exceptions"
 msgstr "Unntak"
 
-#: concrete/blocks/core_area_layout/controller.php:201
+#: concrete/blocks/core_area_layout/controller.php:204
 #: concrete/src/Backup/ContentImporter.php:311
 #, php-format
 msgid "Invalid block type handle: %s"
@@ -7498,7 +7503,7 @@ msgstr "Antispam-bibliotek"
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:39
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:299
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:418
-#: concrete/src/Console/Command/JobCommand.php:48
+#: concrete/src/Console/Command/JobCommand.php:57
 #: concrete/src/Package/Package.php:168
 msgid "Jobs"
 msgstr "Jobber"
@@ -7528,173 +7533,173 @@ msgstr "%s (%s)"
 msgid " %s (%s)"
 msgstr " %s (%s)"
 
-#: concrete/src/Package/Package.php:976
+#: concrete/src/Package/Package.php:981
 msgid "You've already installed that package."
 msgstr "Du har allerede installert denne tilleggspakken."
 
-#: concrete/src/Package/Package.php:977
+#: concrete/src/Package/Package.php:982
 msgid "Invalid Package."
 msgstr "Ugyldig tilleggspakke."
 
-#: concrete/src/Package/Package.php:978
+#: concrete/src/Package/Package.php:983
 #, php-format
 msgid "This package requires concrete5 version %s or greater."
 msgstr "Denne tilleggspakken krever concrete5 version %s eller nyere."
 
-#: concrete/src/Package/Package.php:979
+#: concrete/src/Package/Package.php:984
 msgid "An error occurred while downloading the package."
 msgstr "Det oppstod en feil under henting av pakken."
 
-#: concrete/src/Package/Package.php:980
+#: concrete/src/Package/Package.php:985
 msgid "concrete5 was not able to save the package after download."
 msgstr "concrete5 kunne ikke lagre pakken etter nedlastingen."
 
-#: concrete/src/Package/Package.php:981
+#: concrete/src/Package/Package.php:986
 msgid "An error occurred while trying to unzip the package."
 msgstr "Det oppstod en feil under utpakking av pakken."
 
-#: concrete/src/Package/Package.php:982
+#: concrete/src/Package/Package.php:987
 msgid "An error occurred while trying to install the package."
 msgstr "Det oppstod en feil under installasjon av pakken."
 
-#: concrete/src/Package/Package.php:984
+#: concrete/src/Package/Package.php:989
 #, php-format
 msgid "Unable to backup old package directory to %s"
 msgstr "Kunne ikke foreta sikkerhetskopi til %s av den gamle pakke-mappen"
 
-#: concrete/src/Package/Package.php:988
+#: concrete/src/Package/Package.php:993
 msgid ""
 "This package isn't currently available for this version of concrete5. Please"
 " contact the maintainer of this package for assistance."
 msgstr "Denne pakken er ikke for øyeblikket tilgjengelig for denne versjonen av concrete5. Vennligst kontakt utvikleren av denne pakken for assistanse."
 
-#: concrete/src/Package/StartingPointPackage.php:45
+#: concrete/src/Package/StartingPointPackage.php:44
 msgid "Starting installation and creating directories."
 msgstr "Starter installasjonen og oppretting av mapper."
 
-#: concrete/src/Package/StartingPointPackage.php:46
+#: concrete/src/Package/StartingPointPackage.php:45
 msgid "Creating database tables."
 msgstr "Oppretter databasetabeller."
 
-#: concrete/src/Package/StartingPointPackage.php:47
+#: concrete/src/Package/StartingPointPackage.php:46
 msgid "Adding admin user."
 msgstr "Legger inn administrator."
 
-#: concrete/src/Package/StartingPointPackage.php:48
+#: concrete/src/Package/StartingPointPackage.php:47
 msgid "Installing permissions & workflow."
 msgstr "Installerer tillatelser og godkjenningsflyt."
 
-#: concrete/src/Package/StartingPointPackage.php:49
+#: concrete/src/Package/StartingPointPackage.php:48
 msgid "Creating home page."
 msgstr "Oppretter hjemmeside."
 
-#: concrete/src/Package/StartingPointPackage.php:50
+#: concrete/src/Package/StartingPointPackage.php:49
 msgid "Installing attributes."
 msgstr "Installerer attributter."
 
-#: concrete/src/Package/StartingPointPackage.php:51
+#: concrete/src/Package/StartingPointPackage.php:50
 msgid "Adding block types."
 msgstr "Legger til blokktyper."
 
-#: concrete/src/Package/StartingPointPackage.php:52
+#: concrete/src/Package/StartingPointPackage.php:51
 msgid "Adding gathering data sources."
 msgstr "Legger til innsamling av datakilder."
 
-#: concrete/src/Package/StartingPointPackage.php:53
+#: concrete/src/Package/StartingPointPackage.php:52
 msgid "Page type basic setup."
 msgstr "Enkelt oppsett av sidetype."
 
-#: concrete/src/Package/StartingPointPackage.php:54
+#: concrete/src/Package/StartingPointPackage.php:53
 msgid "Adding themes."
 msgstr "Legger til temaer."
 
-#: concrete/src/Package/StartingPointPackage.php:55
+#: concrete/src/Package/StartingPointPackage.php:54
 msgid "Installing automated jobs."
 msgstr "Installerer automatiserte jobber."
 
-#: concrete/src/Package/StartingPointPackage.php:56
+#: concrete/src/Package/StartingPointPackage.php:55
 msgid "Installing dashboard."
 msgstr "Installerer kontrollpanelet."
 
-#: concrete/src/Package/StartingPointPackage.php:60
+#: concrete/src/Package/StartingPointPackage.php:59
 msgid "Installing login and registration pages."
 msgstr "Installerer login- og registreringssider."
 
-#: concrete/src/Package/StartingPointPackage.php:61
+#: concrete/src/Package/StartingPointPackage.php:60
 msgid "Adding image editor functionality."
 msgstr "Legger til bildebehandleren."
 
-#: concrete/src/Package/StartingPointPackage.php:62
+#: concrete/src/Package/StartingPointPackage.php:61
 msgid "Configuring site."
 msgstr "Konfigurerer nettstedet."
 
-#: concrete/src/Package/StartingPointPackage.php:63
+#: concrete/src/Package/StartingPointPackage.php:62
 msgid "Importing files."
 msgstr "Importerer filer."
 
-#: concrete/src/Package/StartingPointPackage.php:64
+#: concrete/src/Package/StartingPointPackage.php:63
 msgid "Adding pages and content."
 msgstr "Legger til sider og innhold."
 
-#: concrete/src/Package/StartingPointPackage.php:65
+#: concrete/src/Package/StartingPointPackage.php:64
 msgid "Setting up site permissions."
 msgstr "Setter opp nettstedets tillatelser."
 
-#: concrete/src/Package/StartingPointPackage.php:66
+#: concrete/src/Package/StartingPointPackage.php:65
 msgid "Finishing."
 msgstr "Fullfører."
 
 #: concrete/single_pages/dashboard/system/files/storage.php:54
-#: concrete/src/Package/StartingPointPackage.php:222
-#: concrete/src/Package/StartingPointPackage.php:225
+#: concrete/src/Package/StartingPointPackage.php:229
+#: concrete/src/Package/StartingPointPackage.php:232
 msgid "Default"
 msgstr "Standard"
 
-#: concrete/src/Package/StartingPointPackage.php:223
+#: concrete/src/Package/StartingPointPackage.php:230
 msgid "Local"
 msgstr "Lokal"
 
-#: concrete/src/Package/StartingPointPackage.php:229
+#: concrete/src/Package/StartingPointPackage.php:236
 msgctxt "ThumbnailTypeName"
 msgid "File Manager Thumbnails"
 msgstr "Filbehandler miniatyrbilder"
 
-#: concrete/src/Package/StartingPointPackage.php:237
+#: concrete/src/Package/StartingPointPackage.php:244
 msgctxt "ThumbnailTypeName"
 msgid "File Manager Detail Thumbnails"
 msgstr "Filbehandler detalj-miniatyrbilder"
 
-#: concrete/src/Package/StartingPointPackage.php:282
+#: concrete/src/Package/StartingPointPackage.php:289
 #, php-format
 msgid "Unable to install database: %s"
 msgstr "Kan ikke installere database: %s"
 
-#: concrete/src/Package/StartingPointPackage.php:322
+#: concrete/src/Package/StartingPointPackage.php:329
 msgctxt "GroupName"
 msgid "Guest"
 msgstr "Gjest"
 
-#: concrete/src/Package/StartingPointPackage.php:323
+#: concrete/src/Package/StartingPointPackage.php:330
 msgctxt "GroupDescription"
 msgid "The guest group represents unregistered visitors to your site."
 msgstr "Gjestegruppen representerer uregistrerte besøkende på ditt nettsted."
 
-#: concrete/src/Package/StartingPointPackage.php:328
+#: concrete/src/Package/StartingPointPackage.php:335
 msgctxt "GroupName"
 msgid "Registered Users"
 msgstr "Registrerte brukere"
 
-#: concrete/src/Package/StartingPointPackage.php:329
+#: concrete/src/Package/StartingPointPackage.php:336
 msgctxt "GroupDescription"
 msgid "The registered users group represents all user accounts."
 msgstr "Gruppen med registrerte brukere representerer alle brukerkontoene."
 
-#: concrete/src/Package/StartingPointPackage.php:333
+#: concrete/src/Package/StartingPointPackage.php:340
 msgctxt "GroupName"
 msgid "Administrators"
 msgstr "Administratorer"
 
-#: concrete/src/Package/StartingPointPackage.php:350
+#: concrete/src/Package/StartingPointPackage.php:357
 msgid "Won a Badge"
 msgstr "Vant et skilt"
 
@@ -8618,41 +8623,41 @@ msgstr "Vis tilgjengelige jobber"
 msgid "Jobs to run (separate multiple jobs with a space)"
 msgstr "Jobber som skal kjøres (skill flere jobber med et mellomrom)"
 
-#: concrete/src/Console/Command/JobCommand.php:37
+#: concrete/src/Console/Command/JobCommand.php:46
 msgid "Available Jobs"
 msgstr "Tilgjengelige jobber"
 
-#: concrete/src/Console/Command/JobCommand.php:39
+#: concrete/src/Console/Command/JobCommand.php:48
 msgid "Job Handle"
 msgstr "Jobb-handle"
 
-#: concrete/src/Console/Command/JobCommand.php:39
+#: concrete/src/Console/Command/JobCommand.php:48
 msgid "Job Name"
 msgstr "Jobbnavn"
 
-#: concrete/src/Console/Command/JobCommand.php:46
+#: concrete/src/Console/Command/JobCommand.php:55
 msgid "Available Job Sets"
 msgstr "Tilgjengelige jobbsett"
 
-#: concrete/src/Console/Command/JobCommand.php:48
+#: concrete/src/Console/Command/JobCommand.php:57
 msgid "Set Name"
 msgstr "Settnavn"
 
-#: concrete/src/Console/Command/JobCommand.php:63
+#: concrete/src/Console/Command/JobCommand.php:72
 msgid "At least one job must be provided"
 msgstr "Minst en jobb må tilføyes"
 
-#: concrete/src/Console/Command/JobCommand.php:73
+#: concrete/src/Console/Command/JobCommand.php:84
 #, php-format
 msgid "A job set with name \"%s\" was not found"
 msgstr "Et jobbsett med navnet \"%s\" ble ikke funnet"
 
-#: concrete/src/Console/Command/JobCommand.php:84
+#: concrete/src/Console/Command/JobCommand.php:98
 #, php-format
 msgid "A job with handle \"%s\" was not found"
 msgstr "En jobb med handle \"%s\" ble ikke funnet"
 
-#: concrete/src/Console/Command/JobCommand.php:97
+#: concrete/src/Console/Command/JobCommand.php:113
 msgid "Job Failed"
 msgstr "Jobb feilet"
 
@@ -9278,7 +9283,7 @@ msgid ""
 msgstr "Feil ved tilkobling til concrete5-samfunnet. Sjekk at cURL og andre nødvendige biblioteker er installert."
 
 #: concrete/elements/dashboard/marketplace_connect_failed.php:35
-#: concrete/single_pages/dashboard/extend/install.php:411
+#: concrete/single_pages/dashboard/extend/install.php:415
 #: concrete/single_pages/dashboard/extend/update.php:119
 msgid "Project Page"
 msgstr "Projektside"
@@ -10349,7 +10354,7 @@ msgid "User/Group Added"
 msgstr "Bruker/Gruppe lagt til"
 
 #: concrete/elements/permission/detail.php:34
-#: concrete/single_pages/dashboard/extend/install.php:354
+#: concrete/single_pages/dashboard/extend/install.php:358
 #: concrete/single_pages/dashboard/files/sets.php:29
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:255
 #: concrete/single_pages/dashboard/users/group_sets.php:13
@@ -12774,7 +12779,7 @@ msgstr "Viser en sides tittel"
 msgid "Page Title"
 msgstr "Sidetittel"
 
-#: concrete/blocks/page_title/templates/archive.php:4
+#: concrete/blocks/page_title/templates/archive.php:5
 #, php-format
 msgid "Topic Archives: %s"
 msgstr "Emnearkiv: %s"
@@ -14037,12 +14042,12 @@ msgid "Add-On Updates"
 msgstr "Oppdateringer for tilleggspakker"
 
 #: concrete/blocks/dashboard_app_status/view.php:17
-#: concrete/single_pages/dashboard/extend/install.php:337
+#: concrete/single_pages/dashboard/extend/install.php:341
 msgid "There is currently <strong>1</strong> update available."
 msgstr "Det er for øyeblikket <strong>1</strong> oppdatering tilgjengelig."
 
 #: concrete/blocks/dashboard_app_status/view.php:19
-#: concrete/single_pages/dashboard/extend/install.php:339
+#: concrete/single_pages/dashboard/extend/install.php:343
 #, php-format
 msgid "There are currently <strong>%s</strong> updates available."
 msgstr "Det er for øyeblikket <strong>%s</strong> oppdateringer tilgjengelige."
@@ -14363,7 +14368,7 @@ msgstr "Viser en liste av ditt nettsteds emner slik at du kan klikke på de for 
 msgid "Topic List"
 msgstr "Emneliste"
 
-#: concrete/blocks/topic_list/view.php:43
+#: concrete/blocks/topic_list/view.php:46
 msgid "No topics."
 msgstr "Ingen emner."
 
@@ -14726,24 +14731,24 @@ msgstr "Filnavn"
 msgid "There are no files in this set."
 msgstr "Der er ingen filer i dette settet."
 
-#: concrete/single_pages/dashboard/files/sets.php:199
+#: concrete/single_pages/dashboard/files/sets.php:198
 msgid "File Set Name"
 msgstr "Navn på filsett"
 
-#: concrete/single_pages/dashboard/files/sets.php:210
+#: concrete/single_pages/dashboard/files/sets.php:209
 msgid "Public Sets"
 msgstr "Offentlig sett"
 
-#: concrete/single_pages/dashboard/files/sets.php:211
+#: concrete/single_pages/dashboard/files/sets.php:210
 msgid "My Sets"
 msgstr "Mine sett"
 
 #: concrete/config/install/base/dashboard.xml:71
-#: concrete/single_pages/dashboard/files/sets.php:226
+#: concrete/single_pages/dashboard/files/sets.php:225
 msgid "Add File Set"
 msgstr "Legg til filsett"
 
-#: concrete/single_pages/dashboard/files/sets.php:249
+#: concrete/single_pages/dashboard/files/sets.php:248
 msgid "No file sets found."
 msgstr "Ingen filsett funnet."
 
@@ -14869,7 +14874,7 @@ msgid "No add-ons found."
 msgstr "Ingen tilleggspakker funnet."
 
 #: concrete/config/install/base/dashboard.xml:415
-#: concrete/single_pages/dashboard/extend/install.php:334
+#: concrete/single_pages/dashboard/extend/install.php:338
 #: concrete/single_pages/dashboard/extend/update.php:31
 #: concrete/single_pages/dashboard/system/backup/update.php:55
 msgid "Update Add-Ons"
@@ -14919,15 +14924,15 @@ msgstr "Klarte ikke å finne denne tilleggspakken på concrete5.org."
 msgid "Update Add-On"
 msgstr "Oppdater tilleggspakke"
 
-#: concrete/single_pages/dashboard/extend/install.php:412
+#: concrete/single_pages/dashboard/extend/install.php:416
 #: concrete/single_pages/dashboard/extend/update.php:120
 msgid ""
 "Your site is currently connected to the concrete5 community. Your project "
 "page URL is:"
 msgstr "Ditt nettsted er for øyeblikket koblet til concrete5-samfunnet. Din projektside-URL er:"
 
-#: concrete/single_pages/dashboard/extend/install.php:420
-#: concrete/single_pages/dashboard/extend/install.php:422
+#: concrete/single_pages/dashboard/extend/install.php:424
+#: concrete/single_pages/dashboard/extend/install.php:426
 #: concrete/single_pages/dashboard/extend/update.php:130
 #: concrete/single_pages/dashboard/extend/update.php:132
 msgid "Connect to Community"
@@ -14983,92 +14988,92 @@ msgid "Install %s"
 msgstr "Installer %s"
 
 #: concrete/single_pages/dashboard/extend/install.php:65
-#: concrete/single_pages/dashboard/extend/install.php:291
+#: concrete/single_pages/dashboard/extend/install.php:295
 msgid "Uninstall Package"
 msgstr "Avinstaller tilleggspakke"
 
-#: concrete/single_pages/dashboard/extend/install.php:77
+#: concrete/single_pages/dashboard/extend/install.php:81
 #, php-format
 msgid ""
 "This will remove all elements associated with the %s package. While you can "
 "reinstall the package, this may result in data loss."
 msgstr "Dette vil fjerne alle elementer knyttet til pakken %s. Du kan reinstallere pakken, men det kan resultere i tap av data."
 
-#: concrete/single_pages/dashboard/extend/install.php:81
+#: concrete/single_pages/dashboard/extend/install.php:85
 msgid "Move package to trash directory on server?"
 msgstr "Flytt tilleggspakken til papirkurven på tjeneren?"
 
-#: concrete/single_pages/dashboard/extend/install.php:84
+#: concrete/single_pages/dashboard/extend/install.php:88
 msgid "Yes, remove the package's directory from the installation directory."
 msgstr "Ja, fjern tilleggspakkens mappe installasjonsmappen."
 
-#: concrete/single_pages/dashboard/extend/install.php:92
+#: concrete/single_pages/dashboard/extend/install.php:96
 msgid "Uninstall"
 msgstr "Avinstaller"
 
-#: concrete/single_pages/dashboard/extend/install.php:213
+#: concrete/single_pages/dashboard/extend/install.php:217
 msgid "attribute type icon"
 msgstr "ikon for attributtype"
 
-#: concrete/single_pages/dashboard/extend/install.php:294
+#: concrete/single_pages/dashboard/extend/install.php:298
 msgid "Back to Add Functionality"
 msgstr "Tilbake til Legg til funksjonalitet"
 
-#: concrete/single_pages/dashboard/extend/install.php:318
+#: concrete/single_pages/dashboard/extend/install.php:322
 msgid "Installation Notes"
 msgstr "Installasjonsnotater"
 
-#: concrete/single_pages/dashboard/extend/install.php:333
+#: concrete/single_pages/dashboard/extend/install.php:337
 msgid "Add-On updates are available!"
 msgstr "Oppdateringer til tilleggspakker er tilgjengelig!"
 
-#: concrete/single_pages/dashboard/extend/install.php:346
+#: concrete/single_pages/dashboard/extend/install.php:350
 #: concrete/single_pages/dashboard/pages/themes/view.php:27
 msgid "Currently Installed"
 msgstr "Installerte"
 
-#: concrete/single_pages/dashboard/extend/install.php:355
-#: concrete/single_pages/dashboard/extend/install.php:382
-#: concrete/single_pages/dashboard/extend/install.php:401
+#: concrete/single_pages/dashboard/extend/install.php:359
+#: concrete/single_pages/dashboard/extend/install.php:386
+#: concrete/single_pages/dashboard/extend/install.php:405
 #: concrete/single_pages/dashboard/system/backup/update.php:69
 #, php-format
 msgctxt "AddonVersion"
 msgid "v.%s"
 msgstr "v.%s"
 
-#: concrete/single_pages/dashboard/extend/install.php:362
+#: concrete/single_pages/dashboard/extend/install.php:366
 msgid "No packages have been installed."
 msgstr "Ingen tilleggspakker er installert."
 
 #: concrete/single_pages/dashboard/blocks/types/view.php:49
-#: concrete/single_pages/dashboard/extend/install.php:367
+#: concrete/single_pages/dashboard/extend/install.php:371
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:203
 msgid "Awaiting Installation"
 msgstr "Avventer installasjon"
 
-#: concrete/single_pages/dashboard/extend/install.php:371
+#: concrete/single_pages/dashboard/extend/install.php:375
 msgid "Nothing currently available to install."
 msgstr "Ingenting er for øyeblikket tilgjengelig for installering."
 
-#: concrete/single_pages/dashboard/extend/install.php:395
+#: concrete/single_pages/dashboard/extend/install.php:399
 msgid ""
 "This package is corrupted. Make sure it has a valid controller.php file and "
 "that it has been updated for concrete5.7 and later."
 msgstr "Denne tilleggspakken er korrupt. Forsikre deg om at den har en controller.php fil og at pakken er oppdatert for concrete5.7 og senere."
 
-#: concrete/single_pages/dashboard/extend/install.php:396
+#: concrete/single_pages/dashboard/extend/install.php:400
 msgid "Can't Install!"
 msgstr "Kan ikke installere"
 
 #: concrete/single_pages/dashboard/blocks/types/view.php:57
-#: concrete/single_pages/dashboard/extend/install.php:399
+#: concrete/single_pages/dashboard/extend/install.php:403
 #: concrete/single_pages/dashboard/pages/themes/view.php:104
 #: concrete/single_pages/dashboard/system/attributes/types.php:59
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:218
 msgid "Install"
 msgstr "Installer"
 
-#: concrete/single_pages/dashboard/extend/install.php:421
+#: concrete/single_pages/dashboard/extend/install.php:425
 msgid ""
 "Your site is not connected to the concrete5 community. Connecting lets you "
 "easily extend a site with themes and add-ons."
