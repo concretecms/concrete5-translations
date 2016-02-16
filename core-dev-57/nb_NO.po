@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-02-12 05:00+0000\n"
-"PO-Revision-Date: 2016-02-12 10:14+0000\n"
+"POT-Creation-Date: 2016-02-15 05:00+0000\n"
+"PO-Revision-Date: 2016-02-15 10:13+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Norwegian Bokmål (Norway) (http://www.transifex.com/concrete5/concrete5/language/nb_NO/)\n"
 "MIME-Version: 1.0\n"
@@ -456,7 +456,7 @@ msgstr "Nøkkelen har utløpt. Besøk siden glemt passord for å få en ny nøkk
 
 #: concrete/authentication/concrete/controller.php:228
 #: concrete/controllers/install.php:341
-#: concrete/controllers/single_page/account/edit_profile.php:102
+#: concrete/controllers/single_page/account/edit_profile.php:125
 #: concrete/controllers/single_page/dashboard/users/search.php:364
 #: concrete/controllers/single_page/register.php:98
 msgid "The two passwords provided do not match."
@@ -947,7 +947,7 @@ msgstr "Får ikke tilgang til filhåndtering."
 msgid "Unable to copy one or more files."
 msgstr "Kan ikke kopiere en eller flere filer."
 
-#: concrete/blocks/form/controller.php:436
+#: concrete/blocks/form/controller.php:441
 #: concrete/controllers/backend/user_interface/file.php:21
 #: concrete/src/File/Importer.php:67 concrete/tools/files/duplicate.php:43
 msgid "Invalid file."
@@ -2817,14 +2817,14 @@ msgstr "Avatar ble lagret."
 msgid "Website Registration Notification"
 msgstr "Beskjed ved registrering på nettsted"
 
-#: concrete/controllers/single_page/account/edit_profile.php:87
+#: concrete/controllers/single_page/account/edit_profile.php:98
 #: concrete/controllers/single_page/dashboard/users/add.php:52
 #: concrete/controllers/single_page/dashboard/users/search.php:172
 #: concrete/controllers/single_page/register.php:62
 msgid "Invalid email address provided."
 msgstr "Ugyldig e-postadresse."
 
-#: concrete/controllers/single_page/account/edit_profile.php:89
+#: concrete/controllers/single_page/account/edit_profile.php:101
 #: concrete/controllers/single_page/dashboard/users/add.php:54
 #: concrete/controllers/single_page/dashboard/users/search.php:176
 #, php-format
@@ -2889,7 +2889,7 @@ msgstr "Du har ikke tillatelse til å endre denne attributten."
 msgid "Password updated successfully."
 msgstr "Passordet ble oppdatert."
 
-#: concrete/controllers/single_page/account/edit_profile.php:34
+#: concrete/controllers/single_page/account/edit_profile.php:41
 #: concrete/controllers/single_page/dashboard/users/search.php:406
 #: concrete/controllers/single_page/login.php:223
 msgctxt "Default locale"
@@ -2950,7 +2950,7 @@ msgstr "Et brukernavn kan kun inneholde bokstaver, tall, mellomrom (ikke ved beg
 msgid "Invalid Username"
 msgstr "Ugyldig brukernavn"
 
-#: concrete/controllers/single_page/account/edit_profile.php:115
+#: concrete/controllers/single_page/account/edit_profile.php:138
 #: concrete/controllers/single_page/dashboard/users/add.php:93
 #: concrete/controllers/single_page/login.php:361
 #: concrete/controllers/single_page/register.php:108
@@ -4124,9 +4124,18 @@ msgstr "Handles må kun inneholde bokstaver, tall og understreker."
 msgid "Invalid characters in page template name."
 msgstr "Ugyldige tegn i sidemalens navn."
 
-#: concrete/controllers/single_page/account/edit_profile.php:22
+#: concrete/controllers/single_page/account/edit_profile.php:29
 msgid "You must be logged in to access this page."
 msgstr "Du må være logget inn for å få tilgang til denne siden."
+
+#: concrete/controllers/single_page/account/edit_profile.php:110
+msgid "Invalid username provided."
+msgstr ""
+
+#: concrete/controllers/single_page/account/edit_profile.php:112
+#, php-format
+msgid "The username '%s' is already in use. Please choose another."
+msgstr ""
 
 #: concrete/controllers/single_page/account/messages/inbox.php:146
 #, php-format
@@ -6787,7 +6796,7 @@ msgstr "Program"
 msgid "File"
 msgstr "Fil"
 
-#: concrete/blocks/form/controller.php:432 concrete/src/File/Importer.php:70
+#: concrete/blocks/form/controller.php:437 concrete/src/File/Importer.php:70
 msgid "Invalid file extension."
 msgstr "Ugyldig filetternavn."
 
@@ -13277,27 +13286,33 @@ msgid ""
 "question set id)."
 msgstr "Oops, Det er noe galt med skjemaet du sendte (det inneholder ikke et spørsmålsett ID)."
 
-#: concrete/blocks/form/controller.php:364
+#: concrete/blocks/form/controller.php:360
+msgid ""
+"Oops, something is wrong with the form you posted (it doesn't have any "
+"questions)."
+msgstr ""
+
+#: concrete/blocks/form/controller.php:369
 msgid "Incorrect captcha code"
 msgstr "Ukorrekt captcha-kode"
 
-#: concrete/blocks/form/controller.php:384
+#: concrete/blocks/form/controller.php:389
 msgid "You must enter a valid email address."
 msgstr "Du må skrive inn en gyldig e-postadresse."
 
-#: concrete/blocks/form/controller.php:406
+#: concrete/blocks/form/controller.php:411
 msgid "Complete required fields *"
 msgstr "Fullfør påkrevde felter *"
 
-#: concrete/blocks/form/controller.php:455
+#: concrete/blocks/form/controller.php:460
 msgid "Please correct the following errors:"
 msgstr "Vennligst korriger de følgende feilene:"
 
-#: concrete/blocks/form/controller.php:501
+#: concrete/blocks/form/controller.php:506
 msgid "No file specified"
 msgstr "Ingen fil er spesifisert"
 
-#: concrete/blocks/form/controller.php:570
+#: concrete/blocks/form/controller.php:575
 #, php-format
 msgid "%s Form Submission"
 msgstr "%s mottatte skjemaer"

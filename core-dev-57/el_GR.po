@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-02-12 05:00+0000\n"
-"PO-Revision-Date: 2016-02-12 10:17+0000\n"
+"POT-Creation-Date: 2016-02-15 05:00+0000\n"
+"PO-Revision-Date: 2016-02-15 11:46+0000\n"
 "Last-Translator: Vasilis Fotopoulos <basalba@gmail.com>\n"
 "Language-Team: Greek (Greece) (http://www.transifex.com/concrete5/concrete5/language/el_GR/)\n"
 "MIME-Version: 1.0\n"
@@ -455,7 +455,7 @@ msgstr "Το Κλειδί έχει λήξει. Παρακαλούμε επισκ
 
 #: concrete/authentication/concrete/controller.php:228
 #: concrete/controllers/install.php:341
-#: concrete/controllers/single_page/account/edit_profile.php:102
+#: concrete/controllers/single_page/account/edit_profile.php:125
 #: concrete/controllers/single_page/dashboard/users/search.php:364
 #: concrete/controllers/single_page/register.php:98
 msgid "The two passwords provided do not match."
@@ -946,7 +946,7 @@ msgstr "Δεν είναι δυνατή η πρόσβαση στον Διαχει
 msgid "Unable to copy one or more files."
 msgstr "Αδύνατο να αντιγραφούν ένα ή περισσότερα αρχεία."
 
-#: concrete/blocks/form/controller.php:436
+#: concrete/blocks/form/controller.php:441
 #: concrete/controllers/backend/user_interface/file.php:21
 #: concrete/src/File/Importer.php:67 concrete/tools/files/duplicate.php:43
 msgid "Invalid file."
@@ -2816,14 +2816,14 @@ msgstr "Το Avatar αποθηκεύτηκε με επιτυχία."
 msgid "Website Registration Notification"
 msgstr "Γνωστοποίηση Εγγραφής στο Website"
 
-#: concrete/controllers/single_page/account/edit_profile.php:87
+#: concrete/controllers/single_page/account/edit_profile.php:98
 #: concrete/controllers/single_page/dashboard/users/add.php:52
 #: concrete/controllers/single_page/dashboard/users/search.php:172
 #: concrete/controllers/single_page/register.php:62
 msgid "Invalid email address provided."
 msgstr "Η διεύθυνση ηλεκτρονικού ταχυδρομείου που δώσατε είναι Άκυρη."
 
-#: concrete/controllers/single_page/account/edit_profile.php:89
+#: concrete/controllers/single_page/account/edit_profile.php:101
 #: concrete/controllers/single_page/dashboard/users/add.php:54
 #: concrete/controllers/single_page/dashboard/users/search.php:176
 #, php-format
@@ -2888,7 +2888,7 @@ msgstr "Δεν έχετε δικαίωμα να τροποποιήσετε αυ�
 msgid "Password updated successfully."
 msgstr "Κωδικός πρόσβασης ενημερώθηκε επιτυχώς."
 
-#: concrete/controllers/single_page/account/edit_profile.php:34
+#: concrete/controllers/single_page/account/edit_profile.php:41
 #: concrete/controllers/single_page/dashboard/users/search.php:406
 #: concrete/controllers/single_page/login.php:223
 msgctxt "Default locale"
@@ -2949,7 +2949,7 @@ msgstr "Ένα όνομα χρήστη μπορεί να περιέχει μόν
 msgid "Invalid Username"
 msgstr "Μη έγκυρο Όνομα Χρήστη"
 
-#: concrete/controllers/single_page/account/edit_profile.php:115
+#: concrete/controllers/single_page/account/edit_profile.php:138
 #: concrete/controllers/single_page/dashboard/users/add.php:93
 #: concrete/controllers/single_page/login.php:361
 #: concrete/controllers/single_page/register.php:108
@@ -4123,9 +4123,18 @@ msgstr "Οι Δείκτες πρέπει να περιέχουν μόνο γρά
 msgid "Invalid characters in page template name."
 msgstr "Μη έγκυροι χαρακτήρες στο όνομα του προτύπου σελίδας."
 
-#: concrete/controllers/single_page/account/edit_profile.php:22
+#: concrete/controllers/single_page/account/edit_profile.php:29
 msgid "You must be logged in to access this page."
 msgstr "Πρέπει να συνδεθείτε για να αποκτήσετε πρόσβαση σε αυτήν τη σελίδα."
+
+#: concrete/controllers/single_page/account/edit_profile.php:110
+msgid "Invalid username provided."
+msgstr "Δώθηκε μη έγκυρο όνομα χρήστη."
+
+#: concrete/controllers/single_page/account/edit_profile.php:112
+#, php-format
+msgid "The username '%s' is already in use. Please choose another."
+msgstr "Το όνομα χρήστη '%s' είναι ήδη σε χρήση. Παρακαλώ επιλέξτε ένα άλλο."
 
 #: concrete/controllers/single_page/account/messages/inbox.php:146
 #, php-format
@@ -6786,7 +6795,7 @@ msgstr "Εφαρμογή"
 msgid "File"
 msgstr "Αρχείο"
 
-#: concrete/blocks/form/controller.php:432 concrete/src/File/Importer.php:70
+#: concrete/blocks/form/controller.php:437 concrete/src/File/Importer.php:70
 msgid "Invalid file extension."
 msgstr "Μη έγκυρη επέκταση αρχείου."
 
@@ -13276,27 +13285,33 @@ msgid ""
 "question set id)."
 msgstr "Ωχ, κάτι δεν πήγε καλά με τη φόρμα που δημοσιεύσατε (δεν έχει id σετ ερώτησης)."
 
-#: concrete/blocks/form/controller.php:364
+#: concrete/blocks/form/controller.php:360
+msgid ""
+"Oops, something is wrong with the form you posted (it doesn't have any "
+"questions)."
+msgstr "Ωχ, κάτι δεν πήγε καλά με τη μορφή που δημοσιεύτηκε (δεν έχει οποιεσδήποτε ερωτήσεις)."
+
+#: concrete/blocks/form/controller.php:369
 msgid "Incorrect captcha code"
 msgstr "Λάθος κωδικός επαλήθευσης captcha "
 
-#: concrete/blocks/form/controller.php:384
+#: concrete/blocks/form/controller.php:389
 msgid "You must enter a valid email address."
 msgstr "Πρέπει να εισάγετε μια έγκυρη διεύθυνση ηλεκτρονικού ταχυδρομείου."
 
-#: concrete/blocks/form/controller.php:406
+#: concrete/blocks/form/controller.php:411
 msgid "Complete required fields *"
 msgstr "Συμπληρώστε τα απαιτούμενα πεδία *"
 
-#: concrete/blocks/form/controller.php:455
+#: concrete/blocks/form/controller.php:460
 msgid "Please correct the following errors:"
 msgstr "Παρακαλώ διορθώστε τα παρακάτω λάθη:"
 
-#: concrete/blocks/form/controller.php:501
+#: concrete/blocks/form/controller.php:506
 msgid "No file specified"
 msgstr "Δεν έχει οριστεί αρχείο"
 
-#: concrete/blocks/form/controller.php:570
+#: concrete/blocks/form/controller.php:575
 #, php-format
 msgid "%s Form Submission"
 msgstr "%s Υποβολή Φόρμας"

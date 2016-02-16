@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-02-12 05:00+0000\n"
-"PO-Revision-Date: 2016-02-12 11:27+0000\n"
+"POT-Creation-Date: 2016-02-15 05:00+0000\n"
+"PO-Revision-Date: 2016-02-15 11:43+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Italian (Italy) (http://www.transifex.com/concrete5/concrete5/language/it_IT/)\n"
 "MIME-Version: 1.0\n"
@@ -454,7 +454,7 @@ msgstr "Chiave scaduta. È necessario consultare nuovamente la pagina password d
 
 #: concrete/authentication/concrete/controller.php:228
 #: concrete/controllers/install.php:341
-#: concrete/controllers/single_page/account/edit_profile.php:102
+#: concrete/controllers/single_page/account/edit_profile.php:125
 #: concrete/controllers/single_page/dashboard/users/search.php:364
 #: concrete/controllers/single_page/register.php:98
 msgid "The two passwords provided do not match."
@@ -945,7 +945,7 @@ msgstr "Impossibile accedere al gestore dei file."
 msgid "Unable to copy one or more files."
 msgstr "Impossibile copiare uno o più file."
 
-#: concrete/blocks/form/controller.php:436
+#: concrete/blocks/form/controller.php:441
 #: concrete/controllers/backend/user_interface/file.php:21
 #: concrete/src/File/Importer.php:67 concrete/tools/files/duplicate.php:43
 msgid "Invalid file."
@@ -2815,14 +2815,14 @@ msgstr "L’avatar è stato salvato."
 msgid "Website Registration Notification"
 msgstr "Notifica registrazione sito web"
 
-#: concrete/controllers/single_page/account/edit_profile.php:87
+#: concrete/controllers/single_page/account/edit_profile.php:98
 #: concrete/controllers/single_page/dashboard/users/add.php:52
 #: concrete/controllers/single_page/dashboard/users/search.php:172
 #: concrete/controllers/single_page/register.php:62
 msgid "Invalid email address provided."
 msgstr "L’indirizzo email specificato non è corretto."
 
-#: concrete/controllers/single_page/account/edit_profile.php:89
+#: concrete/controllers/single_page/account/edit_profile.php:101
 #: concrete/controllers/single_page/dashboard/users/add.php:54
 #: concrete/controllers/single_page/dashboard/users/search.php:176
 #, php-format
@@ -2887,7 +2887,7 @@ msgstr "Non si ha l’autorizzazione per modificare questo attributo."
 msgid "Password updated successfully."
 msgstr "La password è stata aggiornata."
 
-#: concrete/controllers/single_page/account/edit_profile.php:34
+#: concrete/controllers/single_page/account/edit_profile.php:41
 #: concrete/controllers/single_page/dashboard/users/search.php:406
 #: concrete/controllers/single_page/login.php:223
 msgctxt "Default locale"
@@ -2948,7 +2948,7 @@ msgstr "Il nome utente può contenere solo lettere, numeri, spazi (non all’ini
 msgid "Invalid Username"
 msgstr "Nome utente non valido"
 
-#: concrete/controllers/single_page/account/edit_profile.php:115
+#: concrete/controllers/single_page/account/edit_profile.php:138
 #: concrete/controllers/single_page/dashboard/users/add.php:93
 #: concrete/controllers/single_page/login.php:361
 #: concrete/controllers/single_page/register.php:108
@@ -4122,9 +4122,18 @@ msgstr "GLi handle possono contenere solo lettere, numeri o il simbolo di sottol
 msgid "Invalid characters in page template name."
 msgstr "Caratteri non validi nel nome del modello di pagina."
 
-#: concrete/controllers/single_page/account/edit_profile.php:22
+#: concrete/controllers/single_page/account/edit_profile.php:29
 msgid "You must be logged in to access this page."
 msgstr "È necessario accedere al sito per consultare questa pagina."
+
+#: concrete/controllers/single_page/account/edit_profile.php:110
+msgid "Invalid username provided."
+msgstr "Il nome utente specificato non è valido."
+
+#: concrete/controllers/single_page/account/edit_profile.php:112
+#, php-format
+msgid "The username '%s' is already in use. Please choose another."
+msgstr "Il nome utente “%s” è già in uso. Sceglierne un altro."
 
 #: concrete/controllers/single_page/account/messages/inbox.php:146
 #, php-format
@@ -6785,7 +6794,7 @@ msgstr "Applicazione"
 msgid "File"
 msgstr "File"
 
-#: concrete/blocks/form/controller.php:432 concrete/src/File/Importer.php:70
+#: concrete/blocks/form/controller.php:437 concrete/src/File/Importer.php:70
 msgid "Invalid file extension."
 msgstr "Estensione del file non valida."
 
@@ -13275,27 +13284,33 @@ msgid ""
 "question set id)."
 msgstr "Ops, qualcosa non ha funzionato con il modulo inserito (non ha un identificativo del set di domande)."
 
-#: concrete/blocks/form/controller.php:364
+#: concrete/blocks/form/controller.php:360
+msgid ""
+"Oops, something is wrong with the form you posted (it doesn't have any "
+"questions)."
+msgstr "Ops! Qualcosa nel modulo inviato è andato storto (non contiene alcuna domanda)."
+
+#: concrete/blocks/form/controller.php:369
 msgid "Incorrect captcha code"
 msgstr "Codice captcha non corretto"
 
-#: concrete/blocks/form/controller.php:384
+#: concrete/blocks/form/controller.php:389
 msgid "You must enter a valid email address."
 msgstr "È necessario inserire un indirizzo email valido."
 
-#: concrete/blocks/form/controller.php:406
+#: concrete/blocks/form/controller.php:411
 msgid "Complete required fields *"
 msgstr "Completare i campi richiesti *"
 
-#: concrete/blocks/form/controller.php:455
+#: concrete/blocks/form/controller.php:460
 msgid "Please correct the following errors:"
 msgstr "Correggere i seguenti errori:"
 
-#: concrete/blocks/form/controller.php:501
+#: concrete/blocks/form/controller.php:506
 msgid "No file specified"
 msgstr "Nessun file specificato"
 
-#: concrete/blocks/form/controller.php:570
+#: concrete/blocks/form/controller.php:575
 #, php-format
 msgid "%s Form Submission"
 msgstr "Invio modulo %s"

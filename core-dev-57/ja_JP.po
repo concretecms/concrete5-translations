@@ -11,9 +11,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-02-13 05:00+0000\n"
-"PO-Revision-Date: 2016-02-13 20:05+0000\n"
-"Last-Translator: acliss19xx <acliss19xx@gmail.com>\n"
+"POT-Creation-Date: 2016-02-15 05:00+0000\n"
+"PO-Revision-Date: 2016-02-15 10:16+0000\n"
+"Last-Translator: Takuro Hishikawa <hishikawa@concrete5.co.jp>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/concrete5/concrete5/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -460,7 +460,7 @@ msgstr "認証キーの期限が切れています。もう一度パスワード
 
 #: concrete/authentication/concrete/controller.php:228
 #: concrete/controllers/install.php:341
-#: concrete/controllers/single_page/account/edit_profile.php:102
+#: concrete/controllers/single_page/account/edit_profile.php:125
 #: concrete/controllers/single_page/dashboard/users/search.php:364
 #: concrete/controllers/single_page/register.php:98
 msgid "The two passwords provided do not match."
@@ -950,7 +950,7 @@ msgstr "ファイルマネージャーにアクセスできません。"
 msgid "Unable to copy one or more files."
 msgstr "ファイルをコピーできません。"
 
-#: concrete/blocks/form/controller.php:436
+#: concrete/blocks/form/controller.php:441
 #: concrete/controllers/backend/user_interface/file.php:21
 #: concrete/src/File/Importer.php:67 concrete/tools/files/duplicate.php:43
 msgid "Invalid file."
@@ -2816,14 +2816,14 @@ msgstr "アバターが正常に保存されました。"
 msgid "Website Registration Notification"
 msgstr "ウェブサイト登録通知"
 
-#: concrete/controllers/single_page/account/edit_profile.php:87
+#: concrete/controllers/single_page/account/edit_profile.php:98
 #: concrete/controllers/single_page/dashboard/users/add.php:52
 #: concrete/controllers/single_page/dashboard/users/search.php:172
 #: concrete/controllers/single_page/register.php:62
 msgid "Invalid email address provided."
 msgstr "無効なメールアドレスです。"
 
-#: concrete/controllers/single_page/account/edit_profile.php:89
+#: concrete/controllers/single_page/account/edit_profile.php:101
 #: concrete/controllers/single_page/dashboard/users/add.php:54
 #: concrete/controllers/single_page/dashboard/users/search.php:176
 #, php-format
@@ -2888,7 +2888,7 @@ msgstr "この属性を変更する権限がありません。"
 msgid "Password updated successfully."
 msgstr "パスワードが正常に更新されました。"
 
-#: concrete/controllers/single_page/account/edit_profile.php:34
+#: concrete/controllers/single_page/account/edit_profile.php:41
 #: concrete/controllers/single_page/dashboard/users/search.php:406
 #: concrete/controllers/single_page/login.php:223
 msgctxt "Default locale"
@@ -2949,7 +2949,7 @@ msgstr "ユーザー名は半角英数字、スペース（最初と最後は不
 msgid "Invalid Username"
 msgstr "不正なユーザーIDです。"
 
-#: concrete/controllers/single_page/account/edit_profile.php:115
+#: concrete/controllers/single_page/account/edit_profile.php:138
 #: concrete/controllers/single_page/dashboard/users/add.php:93
 #: concrete/controllers/single_page/login.php:361
 #: concrete/controllers/single_page/register.php:108
@@ -4121,9 +4121,18 @@ msgstr "ハンドルは文字、数字、アンダースコア記号しか含め
 msgid "Invalid characters in page template name."
 msgstr "ページテンプレート名として使えない文字が含まれています。"
 
-#: concrete/controllers/single_page/account/edit_profile.php:22
+#: concrete/controllers/single_page/account/edit_profile.php:29
 msgid "You must be logged in to access this page."
 msgstr "このページを閲覧するにはログインが必要です。"
+
+#: concrete/controllers/single_page/account/edit_profile.php:110
+msgid "Invalid username provided."
+msgstr "無効なユーザー名です。"
+
+#: concrete/controllers/single_page/account/edit_profile.php:112
+#, php-format
+msgid "The username '%s' is already in use. Please choose another."
+msgstr "このユーザー名「%s」はすでに使用されています。他を入力してください。"
 
 #: concrete/controllers/single_page/account/messages/inbox.php:146
 #, php-format
@@ -6780,7 +6789,7 @@ msgstr "アプリケーション"
 msgid "File"
 msgstr "ファイル"
 
-#: concrete/blocks/form/controller.php:432 concrete/src/File/Importer.php:70
+#: concrete/blocks/form/controller.php:437 concrete/src/File/Importer.php:70
 msgid "Invalid file extension."
 msgstr "無効なファイル拡張子です。"
 
@@ -13254,27 +13263,33 @@ msgid ""
 "question set id)."
 msgstr "設定されたフォームになにか問題があります（ID番号が設定されていません）"
 
-#: concrete/blocks/form/controller.php:364
+#: concrete/blocks/form/controller.php:360
+msgid ""
+"Oops, something is wrong with the form you posted (it doesn't have any "
+"questions)."
+msgstr "おっと、投稿されたフォームに何か問題があるようです（質問が設定されていません）。"
+
+#: concrete/blocks/form/controller.php:369
 msgid "Incorrect captcha code"
 msgstr "captchaの入力が間違っていました。"
 
-#: concrete/blocks/form/controller.php:384
+#: concrete/blocks/form/controller.php:389
 msgid "You must enter a valid email address."
 msgstr "有効なemailアドレスを入力してください。"
 
-#: concrete/blocks/form/controller.php:406
+#: concrete/blocks/form/controller.php:411
 msgid "Complete required fields *"
 msgstr "必須項目を入力してください *"
 
-#: concrete/blocks/form/controller.php:455
+#: concrete/blocks/form/controller.php:460
 msgid "Please correct the following errors:"
 msgstr "以下のエラーを修正してください。"
 
-#: concrete/blocks/form/controller.php:501
+#: concrete/blocks/form/controller.php:506
 msgid "No file specified"
 msgstr "ファイルが指定されていません"
 
-#: concrete/blocks/form/controller.php:570
+#: concrete/blocks/form/controller.php:575
 #, php-format
 msgid "%s Form Submission"
 msgstr "%s 新着フォーム"
