@@ -5,9 +5,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-03-22T06:00:16+01:00\n"
-"PO-Revision-Date: 2016-03-22 09:31+0000\n"
-"Last-Translator: Michele Locati <michele@locati.it>\n"
+"POT-Creation-Date: 2016-03-23T06:00:31+01:00\n"
+"PO-Revision-Date: 2016-03-23 12:35+0000\n"
+"Last-Translator: Michael Jensen-Maar <maar@maargrafisk.dk>\n"
 "Language-Team: Danish (Denmark) (http://www.transifex.com/concrete5/concrete5/language/da_DK/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -9430,7 +9430,7 @@ msgstr "Det aktuelle element er ændret.\nHvis du fortsætter, vil du miste dine
 #: concrete/controllers/frontend/assets_localization.php:515
 msgctxt "Translation"
 msgid "Approved"
-msgstr ""
+msgstr "Godkendt"
 
 #: concrete/controllers/frontend/assets_localization.php:516
 #: concrete/views/dialogs/file/properties.php:93
@@ -9529,11 +9529,11 @@ msgstr "Oversættelse"
 
 #: concrete/controllers/frontend/assets_localization.php:539
 msgid "This translation is approved: your changes will need approval."
-msgstr ""
+msgstr "Denne oversættelse er godkendt: ændringerne behøver godkendelse."
 
 #: concrete/controllers/frontend/assets_localization.php:540
 msgid "This translation is not approved."
-msgstr ""
+msgstr "Denne oversættelse er ikke godkendt."
 
 #: concrete/controllers/frontend/assets_localization.php:542
 msgctxt "PluralCase"
@@ -10252,6 +10252,156 @@ msgstr "Der opstod en fejl under forsøget på at bestemme filtilladelser."
 #: concrete/src/File/Service/File.php:346
 msgid "Request timed out."
 msgstr "Anmodning fik timeout."
+
+#: concrete/src/File/Service/Zip.php:153 concrete/src/File/Service/Zip.php:244
+#, php-format
+msgid "Unable to find the ZIP file %s"
+msgstr "Kan ikke finde ZIP filen %s"
+
+#: concrete/src/File/Service/Zip.php:158 concrete/src/File/Service/Zip.php:193
+#, php-format
+msgid "Unable to find the directory %s"
+msgstr "Kan ikke finde mappen %s"
+
+#: concrete/src/File/Service/Zip.php:161
+#, php-format
+msgid "The directory \"%s\" is not writable"
+msgstr "Mappen \"%s\" er ikke skrivebar "
+
+#: concrete/src/File/Service/Zip.php:199
+#, php-format
+msgid "The specified path of the ZIP archive (%s) is a directory, not a file"
+msgstr "Den angivne sti til ZIP arkivet (%s) er en mappe, ikke en fil"
+
+#: concrete/src/File/Service/Zip.php:204
+#, php-format
+msgid "Failed to delete file %s"
+msgstr "Kan ikke slette filen %s"
+
+#: concrete/src/File/Service/Zip.php:265
+msgid "Failed to retrieve the details of a ZIP archive entry."
+msgstr "Kunne ikke hente detaljer for en ZIP arkiv entry."
+
+#: concrete/src/File/Service/Zip.php:318
+msgid "Multi-disk ZIP archives are not supported."
+msgstr "Multi-disk ZIP arkiver understøttes ikke."
+
+#: concrete/src/File/Service/Zip.php:321
+msgid "Renaming a temporary file failed working with a ZIP archive."
+msgstr "Omdøbning af en midlertidig fil mislykkedes ved arbejde med et ZIP-arkiv."
+
+#: concrete/src/File/Service/Zip.php:324
+msgid "Closing ZIP archive failed."
+msgstr "Lukning af ZIP arkiv mislykkedes."
+
+#: concrete/src/File/Service/Zip.php:327
+msgid "Seek error working with a ZIP archive."
+msgstr "Søge fejl under arbejde med et ZIP arkiv."
+
+#: concrete/src/File/Service/Zip.php:330
+msgid "Error reading a file working with a ZIP archive."
+msgstr "Fejl under læsning af en fil under arbejdet med et ZIP-arkiv."
+
+#: concrete/src/File/Service/Zip.php:333
+msgid "Error writing a file working with a ZIP archive."
+msgstr "Fejl under skrivning af en fil under arbejdet med et ZIP-arkiv."
+
+#: concrete/src/File/Service/Zip.php:336
+msgid "CRC error working with a ZIP archive."
+msgstr "CRC fejl under arbejdet med et ZIP arkiv."
+
+#: concrete/src/File/Service/Zip.php:339
+msgid "ZIP archive was closed."
+msgstr "ZIP arkiv blev lukket."
+
+#: concrete/src/File/Service/Zip.php:342
+msgid "File not found working with a ZIP archive."
+msgstr "Fil ikke fundet under arbejdet med et ZIP arkiv."
+
+#: concrete/src/File/Service/Zip.php:345
+msgid "File already exists working with a ZIP archive."
+msgstr "Fil findes allerede under arbejde med et ZIP arkiv."
+
+#: concrete/src/File/Service/Zip.php:348
+msgid "Failed to open a file working with a ZIP archive."
+msgstr "Kunne ikke åbne en fil under arbejdet med et ZIP-arkiv."
+
+#: concrete/src/File/Service/Zip.php:351
+msgid "Failed to open a temporary file working with a ZIP archive."
+msgstr "Kunne ikke åbne en midlertidig fil under arbejdet med et ZIP-arkiv."
+
+#: concrete/src/File/Service/Zip.php:354
+msgid "ZLIB error working with a ZIP archive."
+msgstr "ZLIB fejl under arbejdet med et ZIP arkiv."
+
+#: concrete/src/File/Service/Zip.php:357
+msgid "Out of memory problems working with a ZIP archive."
+msgstr "Mangel på hukommelses problem under arbejdet med et ZIP arkiv."
+
+#: concrete/src/File/Service/Zip.php:360
+msgid "Entry has been changed working with a ZIP archive."
+msgstr "Entry er blevet ændret under arbejdet med et ZIP arkiv."
+
+#: concrete/src/File/Service/Zip.php:363
+msgid "Compression method not supported working with a ZIP archive."
+msgstr "Compression metode understøttes ikke under arbejdet med et ZIP arkiv."
+
+#: concrete/src/File/Service/Zip.php:366
+msgid "Premature end of file working with a ZIP archive."
+msgstr "For tidlig afslutning på fil under arbejdet med et ZIP arkiv."
+
+#: concrete/src/File/Service/Zip.php:369
+msgid "Invalid argument working with a ZIP archive."
+msgstr "Ugyldigt argument under arbejdet med et ZIP arkiv."
+
+#: concrete/src/File/Service/Zip.php:372
+msgid "Not a ZIP archive."
+msgstr "Ikke et ZIP-arkiv."
+
+#: concrete/src/File/Service/Zip.php:375
+msgid "Internal error working with a ZIP archive."
+msgstr "Intern fejl under arbejdet med et ZIP arkiv."
+
+#: concrete/src/File/Service/Zip.php:378
+msgid "ZIP archive is inconsistent."
+msgstr "ZIP-arkiv er inkonsekvent."
+
+#: concrete/src/File/Service/Zip.php:381
+msgid "Can't remove file working with a ZIP archive."
+msgstr "Kan ikke fjerne filen under arbejdet med et ZIP arkiv."
+
+#: concrete/src/File/Service/Zip.php:384
+msgid "Entry has been deleted working with a ZIP archive."
+msgstr "Entry er blevet slettet under arbejdet med et ZIP arkiv."
+
+#: concrete/src/File/Service/Zip.php:387
+#, php-format
+msgid "Unknown ZIP-related problem (code: %s)."
+msgstr "Ukendt ZIP-relateret problem (kode: %s)."
+
+#: concrete/src/File/Service/Zip.php:400
+msgid "Unknown ZIP-related problem"
+msgstr "Ukendt ZIP-relateret problem"
+
+#: concrete/src/File/Service/Zip.php:426
+msgid "Unknown error decompressing a ZIP archive"
+msgstr "Ukendt fejl under dekomprimering af et ZIP arkiv"
+
+#: concrete/src/File/Service/Zip.php:501 concrete/src/File/Service/Zip.php:548
+msgid "Failed to move a temporary file."
+msgstr "Det lykkedes ikke at flytte en midlertidig fil."
+
+#: concrete/src/File/Service/Zip.php:524
+msgid "Failed to determine current directory"
+msgstr "Det lykkedes ikke at bestemme aktuelle mappe"
+
+#: concrete/src/File/Service/Zip.php:527
+msgid "Failed to enter directory "
+msgstr "Det lykkedes ikke at komme ind i mappe"
+
+#: concrete/src/File/Service/Zip.php:532
+msgid "Unknown error compressing a directory"
+msgstr "Ukendt fejl under komprimering af en mappe"
 
 #: concrete/src/File/Type/Type.php:70
 #: concrete/blocks/youtube/form_setup_html.php:17
@@ -15781,7 +15931,7 @@ msgstr "Pause Slideshow ved Hover"
 
 #: concrete/blocks/image_slider/form_setup_html.php:305
 msgid "Maximum Slide Width (0 means no limit)"
-msgstr ""
+msgstr "Maksimal Slide Bredde (0 betyder ingen begrænsning)"
 
 #. short for pixels
 #: concrete/blocks/image_slider/form_setup_html.php:306
