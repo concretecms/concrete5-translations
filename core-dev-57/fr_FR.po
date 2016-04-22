@@ -15,8 +15,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-04-20T06:00:19+02:00\n"
-"PO-Revision-Date: 2016-04-20 08:50+0000\n"
+"POT-Creation-Date: 2016-04-21T06:00:19+02:00\n"
+"PO-Revision-Date: 2016-04-21 08:59+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: French (France) (http://www.transifex.com/concrete5/concrete5/language/fr_FR/)\n"
 "MIME-Version: 1.0\n"
@@ -3976,25 +3976,25 @@ msgstr "Configuration de l'authentification communautaire"
 msgid "Set the \"Callback URL\" to: %s."
 msgstr "Définir \"Url de rappel\" à: %s."
 
-#: concrete/authentication/concrete/change_password.php:3
+#: concrete/authentication/concrete/change_password.php:25
 msgid "Reset Password"
 msgstr "Réinitialiser le mot de passe"
 
-#: concrete/authentication/concrete/change_password.php:4
+#: concrete/authentication/concrete/change_password.php:26
 msgid "Enter your new password below."
 msgstr "Entrez votre nouveau mot de passe ci-dessous."
 
-#: concrete/authentication/concrete/change_password.php:8
+#: concrete/authentication/concrete/change_password.php:30
 #: concrete/single_pages/account/edit_profile.php:76
 msgid "New Password"
 msgstr "Nouveau mot de passe"
 
-#: concrete/authentication/concrete/change_password.php:12
+#: concrete/authentication/concrete/change_password.php:34
 #: concrete/single_pages/account/edit_profile.php:82
 msgid "Confirm New Password"
 msgstr "Confirmer le nouveau mot de passe"
 
-#: concrete/authentication/concrete/change_password.php:16
+#: concrete/authentication/concrete/change_password.php:38
 msgid "Change password and sign in"
 msgstr "Modifier le mot de passe et se connecter"
 
@@ -5722,6 +5722,10 @@ msgid ""
 "You do not have permissions to add a page of this type in the selected "
 "location."
 msgstr "Vous n'avez pas la permission d'ajouter une page de ce type à cet emplacement."
+
+#: concrete/controllers/panel/page/check_in.php:79
+msgid "Please specify the version comments"
+msgstr ""
 
 #: concrete/controllers/panel/page/design.php:183
 msgid "Page updated successfully."
@@ -8868,7 +8872,7 @@ msgstr "Utiliser ce menu pour éditer le contenu d'un bloc, modifiez-le ou retir
 #: concrete/views/panels/details/page/location.php:71
 #: concrete/views/panels/details/page/seo.php:46
 #: concrete/views/panels/page/design/customize.php:90
-#: concrete/views/panels/page/check_in.php:74
+#: concrete/views/panels/page/check_in.php:75
 #: concrete/views/panels/page/design.php:92
 #: concrete/blocks/form/form_setup_html.php:275
 msgid "Save Changes"
@@ -16273,7 +16277,7 @@ msgid "Submit"
 msgstr "Envoyer"
 
 #: concrete/elements/page_types/composer/form/output/buttons.php:38
-#: concrete/views/panels/page/check_in.php:77
+#: concrete/views/panels/page/check_in.php:78
 msgid "Discard Draft"
 msgstr "Supprimer le brouillon"
 
@@ -16959,7 +16963,7 @@ msgid "This is an un-published draft."
 msgstr "Ceci est un brouillon non-publié."
 
 #: concrete/elements/page_controls_footer.php:496
-#: concrete/views/panels/page/check_in.php:34
+#: concrete/views/panels/page/check_in.php:35
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:40
 msgid "Submit to Workflow"
 msgstr "Soumettre au flux de travail"
@@ -17158,7 +17162,7 @@ msgid "Page Attributes"
 msgstr "Attributs de page"
 
 #: concrete/views/dialogs/page/add/compose.php:11
-#: concrete/views/panels/page/check_in.php:16
+#: concrete/views/panels/page/check_in.php:17
 msgid "Publish Page"
 msgstr "Publier la page"
 
@@ -17524,7 +17528,7 @@ msgid "Composer - %s"
 msgstr "Compositeur - %s"
 
 #: concrete/views/panels/details/page/composer.php:59
-#: concrete/views/panels/page/check_in.php:91
+#: concrete/views/panels/page/check_in.php:92
 msgid "This will remove this draft and it cannot be undone. Are you sure?"
 msgstr "Ceci va supprimer ce brouillon et cette action est irréversible. Êtes-vous certain ?"
 
@@ -17600,7 +17604,7 @@ msgstr "URL simplifiée"
 msgid "Characters"
 msgstr "Caractères"
 
-#: concrete/views/panels/details/page/versions.php:10
+#: concrete/views/panels/details/page/versions.php:11
 msgid "Invalid Request."
 msgstr "Requête invalide."
 
@@ -17658,15 +17662,15 @@ msgid ""
 "Reset the theme customizations for just this page, or your entire site?"
 msgstr "Initialiser les personnalisations du thème juste pour cette page, ou pour le site complet ?"
 
-#: concrete/views/panels/page/check_in.php:10
+#: concrete/views/panels/page/check_in.php:11
 msgid "Version Comments"
 msgstr "Commentaires sur la version"
 
-#: concrete/views/panels/page/check_in.php:18
+#: concrete/views/panels/page/check_in.php:19
 msgid "Publish Changes"
 msgstr "Publier les modifications"
 
-#: concrete/views/panels/page/check_in.php:64
+#: concrete/views/panels/page/check_in.php:65
 #, php-format
 msgid ""
 "You can specify page name, page location and attributes from the <a "
@@ -17674,7 +17678,7 @@ msgid ""
 "url=\"%s\" data-panel-transition=\"fade\">Page Compose interface</a>."
 msgstr "Vous pouvez spécifier le nom de la page, la position et les attributs depuis <a href=\"#\" data-launch-panel-detail=\"page-composer\" data-panel-detail-url=\"%s\" data-panel-transition=\"fade\">l'interface compositeur</a>."
 
-#: concrete/views/panels/page/check_in.php:79
+#: concrete/views/panels/page/check_in.php:80
 msgid "Discard Changes"
 msgstr "Annuler les modifications"
 
