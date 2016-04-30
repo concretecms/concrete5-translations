@@ -5,9 +5,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-04-21T06:00:19+02:00\n"
-"PO-Revision-Date: 2016-04-21 08:59+0000\n"
-"Last-Translator: Michele Locati <michele@locati.it>\n"
+"POT-Creation-Date: 2016-04-29T06:00:29+02:00\n"
+"PO-Revision-Date: 2016-04-29 07:22+0000\n"
+"Last-Translator: Michael Jensen-Maar <maar@maargrafisk.dk>\n"
 "Language-Team: Danish (Denmark) (http://www.transifex.com/concrete5/concrete5/language/da_DK/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -820,7 +820,7 @@ msgid "Reskin your site."
 msgstr "Skift tema på din hjemmeside"
 
 #: concrete/config/install/base/dashboard.xml:211
-#: concrete/controllers/single_page/dashboard/extend/themes.php:24
+#: concrete/controllers/single_page/dashboard/extend/themes.php:23
 #: concrete/themes/dashboard/marketplace.php:20
 msgid "Themes"
 msgstr "Temaer"
@@ -2972,7 +2972,7 @@ msgid "SecurImage (Default)"
 msgstr "SecurImage (Standard)"
 
 #: concrete/config/install/base/permissions.xml:285
-#: concrete/src/Workflow/BasicWorkflow.php:115
+#: concrete/src/Workflow/BasicWorkflow.php:113
 msgid "Basic Workflow"
 msgstr "Grundlæggende Workflow"
 
@@ -4549,6 +4549,7 @@ msgid "Unable to get contents of incoming/ directory"
 msgstr "Kunne ikke få fat på filindholdet fra incoming/ mappen"
 
 #: concrete/tools/files/import.php:91
+#: concrete/src/File/Search/ColumnSet/Available.php:14
 #: concrete/elements/files/properties.php:17
 #: concrete/views/dialogs/file/properties.php:91
 msgid "Filename"
@@ -4711,8 +4712,10 @@ msgstr "UGYLDIG HANDLING"
 #: concrete/controllers/frontend/assets_localization.php:403
 #: concrete/elements/files/search.php:19
 #: concrete/single_pages/dashboard/extend/addons.php:32
+#: concrete/single_pages/dashboard/extend/addons.php:120
 #: concrete/single_pages/dashboard/extend/install.php:385
 #: concrete/single_pages/dashboard/extend/themes.php:34
+#: concrete/single_pages/dashboard/extend/themes.php:134
 #: concrete/single_pages/dashboard/system/backup/backup.php:111
 #: concrete/single_pages/dashboard/system/backup/update.php:232
 #: concrete/single_pages/download_file.php:28
@@ -5238,7 +5241,7 @@ msgstr "Ugyldig besked objekt."
 msgid "You do not have access to edit this message."
 msgstr "Du har ikke adgang til redigering af denne besked."
 
-#: concrete/tools/conversations/view_ajax.php:24
+#: concrete/tools/conversations/view_ajax.php:27
 #: concrete/blocks/core_conversation/form.php:13
 msgid "Add Message"
 msgstr "Tilføj Besked"
@@ -5715,7 +5718,7 @@ msgstr "Du har ikke tilladelse til at tilføje en side af denne type på den val
 
 #: concrete/controllers/panel/page/check_in.php:79
 msgid "Please specify the version comments"
-msgstr ""
+msgstr "Skriv venligst versions kommentar"
 
 #: concrete/controllers/panel/page/design.php:183
 msgid "Page updated successfully."
@@ -11524,17 +11527,17 @@ msgstr "Godkend"
 msgid "Originally requested by %s."
 msgstr "Oprindeligt anmodet af %s."
 
-#: concrete/src/Workflow/BasicWorkflow.php:88
+#: concrete/src/Workflow/BasicWorkflow.php:86
 #, php-format
 msgid "On %s, user %s submitted the following request: %s"
 msgstr "Den %s, bruger %s forelagde følgende anmodning: %s"
 
-#: concrete/src/Workflow/BasicWorkflow.php:135
+#: concrete/src/Workflow/BasicWorkflow.php:133
 #, php-format
 msgid "%s Submitted by <strong>%s</strong> on %s."
 msgstr "%s Indsendt af <strong>%s</strong> den %s."
 
-#: concrete/src/Workflow/BasicWorkflow.php:161
+#: concrete/src/Workflow/BasicWorkflow.php:159
 #, php-format
 msgid ""
 "On %s, user %s cancelled the following request: \n"
@@ -12085,6 +12088,8 @@ msgstr "Skjul Alle"
 #: concrete/src/Application/Service/Dashboard.php:169
 #: concrete/blocks/dashboard_featured_addon/view.php:10
 #: concrete/blocks/dashboard_featured_theme/view.php:10
+#: concrete/single_pages/dashboard/extend/addons.php:115
+#: concrete/single_pages/dashboard/extend/themes.php:129
 msgid "Learn More"
 msgstr "Lær mere"
 
@@ -12143,7 +12148,7 @@ msgstr "Din Hjemmeside"
 msgid "Hide"
 msgstr "Skjul"
 
-#: concrete/src/Application/Application.php:426
+#: concrete/src/Application/Application.php:428
 msgid ""
 "Invalid path traversal. Please make this request with a valid HTTP client."
 msgstr "Ugyldig sti gennemløb. Vær venlig at lave denne forespørgsel med en gyldig HTTP-klient."
@@ -21014,7 +21019,9 @@ msgid "Launch"
 msgstr "Start"
 
 #: concrete/single_pages/dashboard/extend/addons.php:32
+#: concrete/single_pages/dashboard/extend/addons.php:120
 #: concrete/single_pages/dashboard/extend/themes.php:34
+#: concrete/single_pages/dashboard/extend/themes.php:134
 msgid "Purchase"
 msgstr "Køb"
 
@@ -21040,7 +21047,7 @@ msgstr "Live Eksempel"
 msgid "Get Help"
 msgstr "Få Hjælp"
 
-#: concrete/single_pages/dashboard/extend/addons.php:128
+#: concrete/single_pages/dashboard/extend/addons.php:132
 msgid "No add-ons found."
 msgstr "Ingen add-ons fundet."
 
@@ -21196,7 +21203,7 @@ msgid ""
 "easily extend a site with themes and add-ons."
 msgstr "Din hjemmeside er ikke forbundet til concrete5 community. Med tilslutning kan du nemt udvide din hjemmeside med temaer og add-ons."
 
-#: concrete/single_pages/dashboard/extend/themes.php:142
+#: concrete/single_pages/dashboard/extend/themes.php:146
 msgid "No themes found."
 msgstr "Ingen temaer fundet."
 
