@@ -11,9 +11,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-04-21T06:00:19+02:00\n"
-"PO-Revision-Date: 2016-04-21 08:59+0000\n"
-"Last-Translator: Michele Locati <michele@locati.it>\n"
+"POT-Creation-Date: 2016-04-30T06:00:31+02:00\n"
+"PO-Revision-Date: 2016-05-01 05:21+0000\n"
+"Last-Translator: Katz Ueno <katzueno@deerstudio.com>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/concrete5/concrete5/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -826,7 +826,7 @@ msgid "Reskin your site."
 msgstr "デザイン管理"
 
 #: concrete/config/install/base/dashboard.xml:211
-#: concrete/controllers/single_page/dashboard/extend/themes.php:24
+#: concrete/controllers/single_page/dashboard/extend/themes.php:23
 #: concrete/themes/dashboard/marketplace.php:20
 msgid "Themes"
 msgstr "テーマ"
@@ -2978,7 +2978,7 @@ msgid "SecurImage (Default)"
 msgstr "SecurImage（標準）"
 
 #: concrete/config/install/base/permissions.xml:285
-#: concrete/src/Workflow/BasicWorkflow.php:115
+#: concrete/src/Workflow/BasicWorkflow.php:113
 msgid "Basic Workflow"
 msgstr "基本ワークフロー"
 
@@ -4553,6 +4553,7 @@ msgid "Unable to get contents of incoming/ directory"
 msgstr "incoming/ ディレクトリのコンテンツを取得できません"
 
 #: concrete/tools/files/import.php:91
+#: concrete/src/File/Search/ColumnSet/Available.php:14
 #: concrete/elements/files/properties.php:17
 #: concrete/views/dialogs/file/properties.php:91
 msgid "Filename"
@@ -4715,8 +4716,10 @@ msgstr "無効な操作"
 #: concrete/controllers/frontend/assets_localization.php:403
 #: concrete/elements/files/search.php:19
 #: concrete/single_pages/dashboard/extend/addons.php:32
+#: concrete/single_pages/dashboard/extend/addons.php:120
 #: concrete/single_pages/dashboard/extend/install.php:385
 #: concrete/single_pages/dashboard/extend/themes.php:34
+#: concrete/single_pages/dashboard/extend/themes.php:134
 #: concrete/single_pages/dashboard/system/backup/backup.php:111
 #: concrete/single_pages/dashboard/system/backup/update.php:232
 #: concrete/single_pages/download_file.php:28
@@ -5240,7 +5243,7 @@ msgstr "無効なメッセージオブジェクトです。"
 msgid "You do not have access to edit this message."
 msgstr "このメッセージを編集する権限がありません。"
 
-#: concrete/tools/conversations/view_ajax.php:24
+#: concrete/tools/conversations/view_ajax.php:27
 #: concrete/blocks/core_conversation/form.php:13
 msgid "Add Message"
 msgstr "メッセージを追加"
@@ -5717,7 +5720,7 @@ msgstr "選択された場所にこのタイプのページを追加する権限
 
 #: concrete/controllers/panel/page/check_in.php:79
 msgid "Please specify the version comments"
-msgstr ""
+msgstr "バージョンコメントを指定してください。"
 
 #: concrete/controllers/panel/page/design.php:183
 msgid "Page updated successfully."
@@ -9432,7 +9435,7 @@ msgstr "現在の項目は変更されています。\n続けると、変更が�
 #: concrete/controllers/frontend/assets_localization.php:515
 msgctxt "Translation"
 msgid "Approved"
-msgstr ""
+msgstr "承認済み"
 
 #: concrete/controllers/frontend/assets_localization.php:516
 #: concrete/views/dialogs/file/properties.php:93
@@ -9531,11 +9534,11 @@ msgstr "翻訳"
 
 #: concrete/controllers/frontend/assets_localization.php:539
 msgid "This translation is approved: your changes will need approval."
-msgstr ""
+msgstr "この翻訳が承認されました: 変更には許可が必要です。"
 
 #: concrete/controllers/frontend/assets_localization.php:540
 msgid "This translation is not approved."
-msgstr ""
+msgstr "この翻訳は承認されていません。"
 
 #: concrete/controllers/frontend/assets_localization.php:542
 msgctxt "PluralCase"
@@ -9861,7 +9864,7 @@ msgstr "写真クレジット："
 msgid ""
 "Built with <a href=\"http://www.concrete5.org\" class=\"concrete5\" "
 "rel=\"nofollow\">concrete5</a> CMS."
-msgstr ""
+msgstr "Built with <a href=\"http://www.concrete5.org\" class=\"concrete5\" rel=\"nofollow\">concrete5</a> CMS."
 
 #: concrete/themes/elemental/page_forbidden.php:10
 msgid "403 Error"
@@ -10255,152 +10258,152 @@ msgstr "リクエストがタイムアウトしました。"
 #: concrete/src/File/Service/Zip.php:153 concrete/src/File/Service/Zip.php:244
 #, php-format
 msgid "Unable to find the ZIP file %s"
-msgstr ""
+msgstr "ZIP ファイル「%s」を見つけられません"
 
 #: concrete/src/File/Service/Zip.php:158 concrete/src/File/Service/Zip.php:193
 #, php-format
 msgid "Unable to find the directory %s"
-msgstr ""
+msgstr "ディレクトリ「%s」を見つけられません"
 
 #: concrete/src/File/Service/Zip.php:161
 #, php-format
 msgid "The directory \"%s\" is not writable"
-msgstr ""
+msgstr "「%s」ディレクトリへ書込みできません。"
 
 #: concrete/src/File/Service/Zip.php:199
 #, php-format
 msgid "The specified path of the ZIP archive (%s) is a directory, not a file"
-msgstr ""
+msgstr "指定された ZIP ファイル (%s) はディレクトリで、ファイルではありませんでした。"
 
 #: concrete/src/File/Service/Zip.php:204
 #, php-format
 msgid "Failed to delete file %s"
-msgstr ""
+msgstr "%s ファイル削除できませんでした。"
 
 #: concrete/src/File/Service/Zip.php:265
 msgid "Failed to retrieve the details of a ZIP archive entry."
-msgstr ""
+msgstr "ZIP ファイルの詳細を取得できませんでした。"
 
 #: concrete/src/File/Service/Zip.php:318
 msgid "Multi-disk ZIP archives are not supported."
-msgstr ""
+msgstr "マルチディスク ZIP ファイルはサポートしていません。"
 
 #: concrete/src/File/Service/Zip.php:321
 msgid "Renaming a temporary file failed working with a ZIP archive."
-msgstr ""
+msgstr "ZIPファイル展開中に作業ファイルの名前変更ができませんでした。"
 
 #: concrete/src/File/Service/Zip.php:324
 msgid "Closing ZIP archive failed."
-msgstr ""
+msgstr "ZIP ファイルを閉じるのに失敗しました。"
 
 #: concrete/src/File/Service/Zip.php:327
 msgid "Seek error working with a ZIP archive."
-msgstr ""
+msgstr "ZIP ファイルの作業中のエラーを探す。"
 
 #: concrete/src/File/Service/Zip.php:330
 msgid "Error reading a file working with a ZIP archive."
-msgstr ""
+msgstr "ZIP ファイルのファイルを読み込む際のエラー。"
 
 #: concrete/src/File/Service/Zip.php:333
 msgid "Error writing a file working with a ZIP archive."
-msgstr ""
+msgstr "ZIPファイルの書き込み中のエラー。"
 
 #: concrete/src/File/Service/Zip.php:336
 msgid "CRC error working with a ZIP archive."
-msgstr ""
+msgstr "ZIPファイル作業中のCRCエラー。"
 
 #: concrete/src/File/Service/Zip.php:339
 msgid "ZIP archive was closed."
-msgstr ""
+msgstr "ZIPファイルが閉じられました。"
 
 #: concrete/src/File/Service/Zip.php:342
 msgid "File not found working with a ZIP archive."
-msgstr ""
+msgstr "ZIPファイルの中にファイルがありませんでした。"
 
 #: concrete/src/File/Service/Zip.php:345
 msgid "File already exists working with a ZIP archive."
-msgstr ""
+msgstr "ZIPファイルにファイルが既に存在しています。"
 
 #: concrete/src/File/Service/Zip.php:348
 msgid "Failed to open a file working with a ZIP archive."
-msgstr ""
+msgstr "ZIPファイル中のファイルを開けませんでした。"
 
 #: concrete/src/File/Service/Zip.php:351
 msgid "Failed to open a temporary file working with a ZIP archive."
-msgstr ""
+msgstr "ZIPファイルの作業ファイルを開けませんでした。"
 
 #: concrete/src/File/Service/Zip.php:354
 msgid "ZLIB error working with a ZIP archive."
-msgstr ""
+msgstr "ZIPファイル作業中のZLIBエラー。"
 
 #: concrete/src/File/Service/Zip.php:357
 msgid "Out of memory problems working with a ZIP archive."
-msgstr ""
+msgstr "ZIPファイル作業中にメモリが不足しました。"
 
 #: concrete/src/File/Service/Zip.php:360
 msgid "Entry has been changed working with a ZIP archive."
-msgstr ""
+msgstr "ZIPファイル中のエントリーが変更されました。"
 
 #: concrete/src/File/Service/Zip.php:363
 msgid "Compression method not supported working with a ZIP archive."
-msgstr ""
+msgstr "ZIPファイルの圧縮方法にサポートしていません。"
 
 #: concrete/src/File/Service/Zip.php:366
 msgid "Premature end of file working with a ZIP archive."
-msgstr ""
+msgstr "ZIPファイルの最後のレコードが未完成です。"
 
 #: concrete/src/File/Service/Zip.php:369
 msgid "Invalid argument working with a ZIP archive."
-msgstr ""
+msgstr "ZIPファイル作業中に不正な引数がありました。"
 
 #: concrete/src/File/Service/Zip.php:372
 msgid "Not a ZIP archive."
-msgstr ""
+msgstr "ZIPファイルではありません。"
 
 #: concrete/src/File/Service/Zip.php:375
 msgid "Internal error working with a ZIP archive."
-msgstr ""
+msgstr "ZIPファイル作業中の内部エラー。"
 
 #: concrete/src/File/Service/Zip.php:378
 msgid "ZIP archive is inconsistent."
-msgstr ""
+msgstr "ZIPファイルが不安定です。"
 
 #: concrete/src/File/Service/Zip.php:381
 msgid "Can't remove file working with a ZIP archive."
-msgstr ""
+msgstr "ZIPファイル中のファイルを取り除けません。"
 
 #: concrete/src/File/Service/Zip.php:384
 msgid "Entry has been deleted working with a ZIP archive."
-msgstr ""
+msgstr "ZIPファイル中のエントリーが削除されました。"
 
 #: concrete/src/File/Service/Zip.php:387
 #, php-format
 msgid "Unknown ZIP-related problem (code: %s)."
-msgstr ""
+msgstr "ZIP関係の不明の問題 (コード: %s)"
 
 #: concrete/src/File/Service/Zip.php:400
 msgid "Unknown ZIP-related problem"
-msgstr ""
+msgstr "不明な ZIP 関連の問題"
 
 #: concrete/src/File/Service/Zip.php:426
 msgid "Unknown error decompressing a ZIP archive"
-msgstr ""
+msgstr "ZIP ファイル解凍中に不明な問題。"
 
 #: concrete/src/File/Service/Zip.php:501 concrete/src/File/Service/Zip.php:548
 msgid "Failed to move a temporary file."
-msgstr ""
+msgstr "作業ファイル移動に失敗しました。"
 
 #: concrete/src/File/Service/Zip.php:524
 msgid "Failed to determine current directory"
-msgstr ""
+msgstr "現在のディレクトリを決定できませんでした。"
 
 #: concrete/src/File/Service/Zip.php:527
 msgid "Failed to enter directory "
-msgstr ""
+msgstr "ディレクトリに入れませんでした。"
 
 #: concrete/src/File/Service/Zip.php:532
 msgid "Unknown error compressing a directory"
-msgstr ""
+msgstr "ディレクトリ圧縮中に不明なエラー"
 
 #: concrete/src/File/Type/Type.php:70
 #: concrete/blocks/youtube/form_setup_html.php:17
@@ -11518,17 +11521,17 @@ msgstr "承認"
 msgid "Originally requested by %s."
 msgstr "リクエスト申請者： %s"
 
-#: concrete/src/Workflow/BasicWorkflow.php:88
+#: concrete/src/Workflow/BasicWorkflow.php:86
 #, php-format
 msgid "On %s, user %s submitted the following request: %s"
 msgstr "%s で %s さんが次のリクエストを申請しました：%s"
 
-#: concrete/src/Workflow/BasicWorkflow.php:135
+#: concrete/src/Workflow/BasicWorkflow.php:133
 #, php-format
 msgid "%s Submitted by <strong>%s</strong> on %s."
 msgstr "「%s」申請は %s さんが %s で申請しました。"
 
-#: concrete/src/Workflow/BasicWorkflow.php:161
+#: concrete/src/Workflow/BasicWorkflow.php:159
 #, php-format
 msgid ""
 "On %s, user %s cancelled the following request: \n"
@@ -12079,6 +12082,8 @@ msgstr "すべて隠す"
 #: concrete/src/Application/Service/Dashboard.php:169
 #: concrete/blocks/dashboard_featured_addon/view.php:10
 #: concrete/blocks/dashboard_featured_theme/view.php:10
+#: concrete/single_pages/dashboard/extend/addons.php:115
+#: concrete/single_pages/dashboard/extend/themes.php:129
 msgid "Learn More"
 msgstr "もっと読む"
 
@@ -12137,7 +12142,7 @@ msgstr "サイト名"
 msgid "Hide"
 msgstr "隠す"
 
-#: concrete/src/Application/Application.php:426
+#: concrete/src/Application/Application.php:428
 msgid ""
 "Invalid path traversal. Please make this request with a valid HTTP client."
 msgstr "無効なパス走査を検出しました。正規のHTTPクライアントを使ってリクエストを完了してください。"
@@ -12410,292 +12415,292 @@ msgstr "昨日の%s"
 #: concrete/src/Localization/Service/StatesProvincesList.php:22
 msgctxt "US State"
 msgid "Alaska"
-msgstr ""
+msgstr "アラスカ"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:23
 msgctxt "US State"
 msgid "Alabama"
-msgstr ""
+msgstr "アラバマ"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:24
 msgctxt "US State"
 msgid "Arkansas"
-msgstr ""
+msgstr "アーカンソー"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:25
 msgctxt "US State"
 msgid "Arizona"
-msgstr ""
+msgstr "アリゾナ"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:26
 msgctxt "US State"
 msgid "California"
-msgstr ""
+msgstr "カリフォルニア"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:27
 msgctxt "US State"
 msgid "Colorado"
-msgstr ""
+msgstr "コロラド"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:28
 msgctxt "US State"
 msgid "Connecticut"
-msgstr ""
+msgstr "コネチカット"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:29
 msgctxt "US State"
 msgid "Washington, DC"
-msgstr ""
+msgstr "ワシントンDC"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:30
 msgctxt "US State"
 msgid "Delaware"
-msgstr ""
+msgstr "デラウェア"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:31
 msgctxt "US State"
 msgid "Florida"
-msgstr ""
+msgstr "フロリダ"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:32
 msgctxt "US State"
 msgid "Georgia"
-msgstr ""
+msgstr "ジョージア"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:33
 msgctxt "US State"
 msgid "Hawaii"
-msgstr ""
+msgstr "ハワイ"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:34
 msgctxt "US State"
 msgid "Iowa"
-msgstr ""
+msgstr "アイオワ"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:35
 msgctxt "US State"
 msgid "Idaho"
-msgstr ""
+msgstr "アイダホ"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:36
 msgctxt "US State"
 msgid "Illinois"
-msgstr ""
+msgstr "イリノイ"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:37
 msgctxt "US State"
 msgid "Indiana"
-msgstr ""
+msgstr "インディアナ"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:38
 msgctxt "US State"
 msgid "Kansas"
-msgstr ""
+msgstr "カンサス"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:39
 msgctxt "US State"
 msgid "Kentucky"
-msgstr ""
+msgstr "ケンタッキー"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:40
 msgctxt "US State"
 msgid "Louisiana"
-msgstr ""
+msgstr "ルイジアナ"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:41
 msgctxt "US State"
 msgid "Massachusetts"
-msgstr ""
+msgstr "マサチューセッツ"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:42
 msgctxt "US State"
 msgid "Maryland"
-msgstr ""
+msgstr "マリーランド"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:43
 msgctxt "US State"
 msgid "Maine"
-msgstr ""
+msgstr "メイン"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:44
 msgctxt "US State"
 msgid "Michigan"
-msgstr ""
+msgstr "ミシガン"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:45
 msgctxt "US State"
 msgid "Minnesota"
-msgstr ""
+msgstr "ミネソタ"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:46
 msgctxt "US State"
 msgid "Missouri"
-msgstr ""
+msgstr "ミズーリ"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:47
 msgctxt "US State"
 msgid "Mississippi"
-msgstr ""
+msgstr "ミシシッピ"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:48
 msgctxt "US State"
 msgid "Montana"
-msgstr ""
+msgstr "モンタナ"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:49
 msgctxt "US State"
 msgid "North Carolina"
-msgstr ""
+msgstr "ノースカロライナ"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:50
 msgctxt "US State"
 msgid "North Dakota"
-msgstr ""
+msgstr "ノースダコタ"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:51
 msgctxt "US State"
 msgid "Nebraska"
-msgstr ""
+msgstr "ネブラスカ"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:52
 msgctxt "US State"
 msgid "New Hampshire"
-msgstr ""
+msgstr "ニューハンプシャー"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:53
 msgctxt "US State"
 msgid "New Jersey"
-msgstr ""
+msgstr "ニュージャージー"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:54
 msgctxt "US State"
 msgid "New Mexico"
-msgstr ""
+msgstr "ニューメキシコ"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:55
 msgctxt "US State"
 msgid "Nevada"
-msgstr ""
+msgstr "ネバダ"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:56
 msgctxt "US State"
 msgid "New York"
-msgstr ""
+msgstr "ニューヨーク"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:57
 msgctxt "US State"
 msgid "Ohio"
-msgstr ""
+msgstr "オハイオ"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:58
 msgctxt "US State"
 msgid "Oklahoma"
-msgstr ""
+msgstr "オクラホマ"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:59
 msgctxt "US State"
 msgid "Oregon"
-msgstr ""
+msgstr "オレゴン"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:60
 msgctxt "US State"
 msgid "Pennsylvania"
-msgstr ""
+msgstr "ペンシルバニア"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:61
 msgctxt "US State"
 msgid "Rhode Island"
-msgstr ""
+msgstr "ロードアイランド"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:62
 msgctxt "US State"
 msgid "South Carolina"
-msgstr ""
+msgstr "サウスカロライナ"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:63
 msgctxt "US State"
 msgid "South Dakota"
-msgstr ""
+msgstr "サウスダコタ"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:64
 msgctxt "US State"
 msgid "Tennessee"
-msgstr ""
+msgstr "テネシー"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:65
 msgctxt "US State"
 msgid "Texas"
-msgstr ""
+msgstr "テキサス"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:66
 msgctxt "US State"
 msgid "Utah"
-msgstr ""
+msgstr "ユタ"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:67
 msgctxt "US State"
 msgid "Virginia"
-msgstr ""
+msgstr "バージニア"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:68
 msgctxt "US State"
 msgid "Vermont"
-msgstr ""
+msgstr "バーモント"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:69
 msgctxt "US State"
 msgid "Washington"
-msgstr ""
+msgstr "ワシントン"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:70
 msgctxt "US State"
 msgid "Wisconsin"
-msgstr ""
+msgstr "ウィスコンシン"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:71
 msgctxt "US State"
 msgid "West Virginia"
-msgstr ""
+msgstr "ウェストバージニア"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:72
 msgctxt "US State"
 msgid "Wyoming"
-msgstr ""
+msgstr "ワイオミング"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:76
 msgctxt "Canadian Province"
 msgid "Alberta"
-msgstr ""
+msgstr "アルベルタ"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:77
 msgctxt "Canadian Province"
 msgid "British Columbia"
-msgstr ""
+msgstr "ブリティッシュコロンビア"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:78
 msgctxt "Canadian Province"
 msgid "Manitoba"
-msgstr ""
+msgstr "マニトバ"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:79
 msgctxt "Canadian Province"
 msgid "New Brunswick"
-msgstr ""
+msgstr "ニューブランズウィック"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:80
 msgctxt "Canadian Province"
 msgid "Newfoundland"
-msgstr ""
+msgstr "ニューファウンドランド"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:81
 msgctxt "Canadian Province"
 msgid "Northwest Territories"
-msgstr ""
+msgstr "ノースウェスト・テリトリーズ"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:82
 msgctxt "Canadian Province"
 msgid "Nova Scotia"
-msgstr ""
+msgstr "ノバスコシア"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:83
 msgctxt "Canadian Province"
@@ -12705,7 +12710,7 @@ msgstr ""
 #: concrete/src/Localization/Service/StatesProvincesList.php:84
 msgctxt "Canadian Province"
 msgid "Ontario"
-msgstr ""
+msgstr "オンタリオ"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:85
 msgctxt "Canadian Province"
@@ -12715,7 +12720,7 @@ msgstr ""
 #: concrete/src/Localization/Service/StatesProvincesList.php:86
 msgctxt "Canadian Province"
 msgid "Quebec"
-msgstr ""
+msgstr "ケベック"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:87
 msgctxt "Canadian Province"
@@ -12725,47 +12730,47 @@ msgstr ""
 #: concrete/src/Localization/Service/StatesProvincesList.php:88
 msgctxt "Canadian Province"
 msgid "Yukon"
-msgstr ""
+msgstr "ユーコン"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:92
 msgctxt "Australian State"
 msgid "Australian Antarctic Territory"
-msgstr ""
+msgstr "Australian Antarctic Territory"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:93
 msgctxt "Australian State"
 msgid "Australian Capital Territory"
-msgstr ""
+msgstr "Australian Capital Territory"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:94
 msgctxt "Australian State"
 msgid "New South Wales"
-msgstr ""
+msgstr "ニューサウスウェールズ"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:95
 msgctxt "Australian State"
 msgid "Northern Territory"
-msgstr ""
+msgstr "ノーザン・テリトリー"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:96
 msgctxt "Australian State"
 msgid "Queensland"
-msgstr ""
+msgstr "クイーンズランド"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:97
 msgctxt "Australian State"
 msgid "South Australia"
-msgstr ""
+msgstr "サウスオーストラリア"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:98
 msgctxt "Australian State"
 msgid "Tasmania"
-msgstr ""
+msgstr "タスマニア"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:99
 msgctxt "Australian State"
 msgid "Victoria"
-msgstr ""
+msgstr "ビクトリア"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:100
 msgctxt "Australian State"
@@ -12780,7 +12785,7 @@ msgstr ""
 #: concrete/src/Localization/Service/StatesProvincesList.php:105
 msgctxt "German State"
 msgid "Berlin"
-msgstr ""
+msgstr "ベルリン"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:106
 msgctxt "German State"
@@ -12805,7 +12810,7 @@ msgstr ""
 #: concrete/src/Localization/Service/StatesProvincesList.php:110
 msgctxt "German State"
 msgid "Hamburg"
-msgstr ""
+msgstr "ハンバーグ"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:111
 msgctxt "German State"
@@ -13235,7 +13240,7 @@ msgstr ""
 #: concrete/src/Localization/Service/StatesProvincesList.php:199
 msgctxt "French Department"
 msgid "Paris"
-msgstr ""
+msgstr "パリ"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:200
 msgctxt "French Department"
@@ -14715,237 +14720,237 @@ msgstr ""
 #: concrete/src/Localization/Service/StatesProvincesList.php:513
 msgctxt "Japanese Prefecture"
 msgid "Hokkaido"
-msgstr ""
+msgstr "北海道"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:514
 msgctxt "Japanese Prefecture"
 msgid "Aomori"
-msgstr ""
+msgstr "青森"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:515
 msgctxt "Japanese Prefecture"
 msgid "Iwate"
-msgstr ""
+msgstr "岩手"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:516
 msgctxt "Japanese Prefecture"
 msgid "Miyagi"
-msgstr ""
+msgstr "宮城"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:517
 msgctxt "Japanese Prefecture"
 msgid "Akita"
-msgstr ""
+msgstr "秋田"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:518
 msgctxt "Japanese Prefecture"
 msgid "Yamagata"
-msgstr ""
+msgstr "山形"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:519
 msgctxt "Japanese Prefecture"
 msgid "Fukushima"
-msgstr ""
+msgstr "福島"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:520
 msgctxt "Japanese Prefecture"
 msgid "Ibaraki"
-msgstr ""
+msgstr "茨城"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:521
 msgctxt "Japanese Prefecture"
 msgid "Tochigi"
-msgstr ""
+msgstr "栃木"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:522
 msgctxt "Japanese Prefecture"
 msgid "Gunma"
-msgstr ""
+msgstr "群馬"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:523
 msgctxt "Japanese Prefecture"
 msgid "Saitama"
-msgstr ""
+msgstr "埼玉"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:524
 msgctxt "Japanese Prefecture"
 msgid "Chiba"
-msgstr ""
+msgstr "千葉"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:525
 msgctxt "Japanese Prefecture"
 msgid "Tokyo"
-msgstr ""
+msgstr "東京"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:526
 msgctxt "Japanese Prefecture"
 msgid "Kanagawa"
-msgstr ""
+msgstr "神奈川"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:527
 msgctxt "Japanese Prefecture"
 msgid "Niigata"
-msgstr ""
+msgstr "新潟"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:528
 msgctxt "Japanese Prefecture"
 msgid "Toyama"
-msgstr ""
+msgstr "富山"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:529
 msgctxt "Japanese Prefecture"
 msgid "Ishikawa"
-msgstr ""
+msgstr "石川"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:530
 msgctxt "Japanese Prefecture"
 msgid "Fukui"
-msgstr ""
+msgstr "福井"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:531
 msgctxt "Japanese Prefecture"
 msgid "Yamanashi"
-msgstr ""
+msgstr "山梨"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:532
 msgctxt "Japanese Prefecture"
 msgid "Nagano"
-msgstr ""
+msgstr "長野"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:533
 msgctxt "Japanese Prefecture"
 msgid "Gifu"
-msgstr ""
+msgstr "岐阜"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:534
 msgctxt "Japanese Prefecture"
 msgid "Shizuoka"
-msgstr ""
+msgstr "静岡"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:535
 msgctxt "Japanese Prefecture"
 msgid "Aichi"
-msgstr ""
+msgstr "愛知"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:536
 msgctxt "Japanese Prefecture"
 msgid "Mie"
-msgstr ""
+msgstr "三重"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:537
 msgctxt "Japanese Prefecture"
 msgid "Shiga"
-msgstr ""
+msgstr "滋賀"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:538
 msgctxt "Japanese Prefecture"
 msgid "Kyoto"
-msgstr ""
+msgstr "京都"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:539
 msgctxt "Japanese Prefecture"
 msgid "Osaka"
-msgstr ""
+msgstr "大阪"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:540
 msgctxt "Japanese Prefecture"
 msgid "Hyogo"
-msgstr ""
+msgstr "兵庫"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:541
 msgctxt "Japanese Prefecture"
 msgid "Nara"
-msgstr ""
+msgstr "奈良"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:542
 msgctxt "Japanese Prefecture"
 msgid "Wakayama"
-msgstr ""
+msgstr "和歌山"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:543
 msgctxt "Japanese Prefecture"
 msgid "Tottori"
-msgstr ""
+msgstr "鳥取"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:544
 msgctxt "Japanese Prefecture"
 msgid "Shimane"
-msgstr ""
+msgstr "島根"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:545
 msgctxt "Japanese Prefecture"
 msgid "Okayama"
-msgstr ""
+msgstr "岡山"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:546
 msgctxt "Japanese Prefecture"
 msgid "Hiroshima"
-msgstr ""
+msgstr "広島"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:547
 msgctxt "Japanese Prefecture"
 msgid "Yamaguchi"
-msgstr ""
+msgstr "山口"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:548
 msgctxt "Japanese Prefecture"
 msgid "Tokushima"
-msgstr ""
+msgstr "徳島"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:549
 msgctxt "Japanese Prefecture"
 msgid "Kagawa"
-msgstr ""
+msgstr "香川"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:550
 msgctxt "Japanese Prefecture"
 msgid "Ehime"
-msgstr ""
+msgstr "愛媛"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:551
 msgctxt "Japanese Prefecture"
 msgid "Kochi"
-msgstr ""
+msgstr "高知"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:552
 msgctxt "Japanese Prefecture"
 msgid "Fukuoka"
-msgstr ""
+msgstr "福岡"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:553
 msgctxt "Japanese Prefecture"
 msgid "Saga"
-msgstr ""
+msgstr "佐賀"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:554
 msgctxt "Japanese Prefecture"
 msgid "Nagasaki"
-msgstr ""
+msgstr "長崎"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:555
 msgctxt "Japanese Prefecture"
 msgid "Kumamoto"
-msgstr ""
+msgstr "熊本"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:556
 msgctxt "Japanese Prefecture"
 msgid "Oita"
-msgstr ""
+msgstr "大分"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:557
 msgctxt "Japanese Prefecture"
 msgid "Miyazaki"
-msgstr ""
+msgstr "宮崎"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:558
 msgctxt "Japanese Prefecture"
 msgid "Kagoshima"
-msgstr ""
+msgstr "鹿児島"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:559
 msgctxt "Japanese Prefecture"
 msgid "Okinawa"
-msgstr ""
+msgstr "沖縄"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:563
 msgctxt "Swiss Canton"
@@ -15075,7 +15080,7 @@ msgstr ""
 #: concrete/src/Localization/Service/StatesProvincesList.php:588
 msgctxt "Swiss Canton"
 msgid "Zurich"
-msgstr ""
+msgstr "チューリッヒ"
 
 #: concrete/src/Marketplace/Marketplace.php:200
 #: concrete/src/Marketplace/Marketplace.php:212
@@ -17879,11 +17884,11 @@ msgstr "PHP の JSON サポートを有効にする必要があります。PHP 5
 
 #: concrete/views/frontend/install.php:369
 msgid "DOM Extension Enabled"
-msgstr ""
+msgstr "DOM エクステンション有効"
 
 #: concrete/views/frontend/install.php:371
 msgid "You must enable PHP's DOM support."
-msgstr ""
+msgstr "PHP の DOM サポートを有効にする必要があります。"
 
 #: concrete/views/frontend/install.php:375
 msgid "ASP Style Tags Disabled"
@@ -18592,7 +18597,7 @@ msgstr "マウスオーバーでスライドショーを一時停止"
 
 #: concrete/blocks/image_slider/form_setup_html.php:305
 msgid "Maximum Slide Width (0 means no limit)"
-msgstr ""
+msgstr "スライド最大横幅 (0 は制限無し)"
 
 #. short for pixels
 #: concrete/blocks/image_slider/form_setup_html.php:306
@@ -20991,7 +20996,9 @@ msgid "Launch"
 msgstr "開く"
 
 #: concrete/single_pages/dashboard/extend/addons.php:32
+#: concrete/single_pages/dashboard/extend/addons.php:120
 #: concrete/single_pages/dashboard/extend/themes.php:34
+#: concrete/single_pages/dashboard/extend/themes.php:134
 msgid "Purchase"
 msgstr "購入"
 
@@ -21016,7 +21023,7 @@ msgstr "動作デモ"
 msgid "Get Help"
 msgstr "サポートを依頼"
 
-#: concrete/single_pages/dashboard/extend/addons.php:128
+#: concrete/single_pages/dashboard/extend/addons.php:132
 msgid "No add-ons found."
 msgstr "アドオンが見つかりませんでした。"
 
@@ -21172,7 +21179,7 @@ msgid ""
 "easily extend a site with themes and add-ons."
 msgstr "現在、あなたのサイトはconcrete５コミュニティに接続されていません。接続すると簡単にテーマやアドオンでサイトを拡張できます。"
 
-#: concrete/single_pages/dashboard/extend/themes.php:142
+#: concrete/single_pages/dashboard/extend/themes.php:146
 msgid "No themes found."
 msgstr "テーマが見つかりませんでした。"
 

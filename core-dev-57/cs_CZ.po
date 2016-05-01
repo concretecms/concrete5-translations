@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-04-24T06:00:17+02:00\n"
-"PO-Revision-Date: 2016-04-24 14:04+0000\n"
+"POT-Creation-Date: 2016-04-29T06:00:29+02:00\n"
+"PO-Revision-Date: 2016-04-30 06:11+0000\n"
 "Last-Translator: Petr Toman <petr.toman@pinknet.cz>\n"
 "Language-Team: Czech (Czech Republic) (http://www.transifex.com/concrete5/concrete5/language/cs_CZ/)\n"
 "MIME-Version: 1.0\n"
@@ -822,7 +822,7 @@ msgid "Reskin your site."
 msgstr "Změnit vzhled webu."
 
 #: concrete/config/install/base/dashboard.xml:211
-#: concrete/controllers/single_page/dashboard/extend/themes.php:24
+#: concrete/controllers/single_page/dashboard/extend/themes.php:23
 #: concrete/themes/dashboard/marketplace.php:20
 msgid "Themes"
 msgstr "Motivy"
@@ -2974,7 +2974,7 @@ msgid "SecurImage (Default)"
 msgstr "SecurImage (výchozí)"
 
 #: concrete/config/install/base/permissions.xml:285
-#: concrete/src/Workflow/BasicWorkflow.php:115
+#: concrete/src/Workflow/BasicWorkflow.php:113
 msgid "Basic Workflow"
 msgstr "Základní workflow"
 
@@ -4553,6 +4553,7 @@ msgid "Unable to get contents of incoming/ directory"
 msgstr "Nelze získat obsah příchozí složky"
 
 #: concrete/tools/files/import.php:91
+#: concrete/src/File/Search/ColumnSet/Available.php:14
 #: concrete/elements/files/properties.php:17
 #: concrete/views/dialogs/file/properties.php:91
 msgid "Filename"
@@ -4715,8 +4716,10 @@ msgstr "NEPLATNÁ AKCE"
 #: concrete/controllers/frontend/assets_localization.php:403
 #: concrete/elements/files/search.php:19
 #: concrete/single_pages/dashboard/extend/addons.php:32
+#: concrete/single_pages/dashboard/extend/addons.php:120
 #: concrete/single_pages/dashboard/extend/install.php:385
 #: concrete/single_pages/dashboard/extend/themes.php:34
+#: concrete/single_pages/dashboard/extend/themes.php:134
 #: concrete/single_pages/dashboard/system/backup/backup.php:111
 #: concrete/single_pages/dashboard/system/backup/update.php:232
 #: concrete/single_pages/download_file.php:28
@@ -5244,7 +5247,7 @@ msgstr "Neplatný objekt zprávy."
 msgid "You do not have access to edit this message."
 msgstr "Nemáte přístup k úpravám této zprávy."
 
-#: concrete/tools/conversations/view_ajax.php:24
+#: concrete/tools/conversations/view_ajax.php:27
 #: concrete/blocks/core_conversation/form.php:13
 msgid "Add Message"
 msgstr "Přidat zprávu"
@@ -9670,7 +9673,7 @@ msgid ""
 "Congratulations. concrete5 has been installed. You have been logged in as "
 "<b>%s</b> with the password you chose. If you wish to change this password, "
 "you may do so from the users area of the dashboard."
-msgstr "Gratulujeme, Concrete5 byla nainstalována. Jste přihlášen/a jako <b>%s</b>. Pokud si chcete změnit heslo, může tak učinit ve správě uživatelů v Administraci."
+msgstr "Gratulujeme, Concrete5 byla nainstalována. Jste přihlášen/a jako <b>%s</b>. Pokud si chcete změnit heslo, můžete tak učinit ve správě uživatelů v Administraci."
 
 #: concrete/controllers/install.php:117
 msgid "Unable to connect to database."
@@ -11538,17 +11541,17 @@ msgstr "Povolit"
 msgid "Originally requested by %s."
 msgstr "Původně požadoval/a %s."
 
-#: concrete/src/Workflow/BasicWorkflow.php:88
+#: concrete/src/Workflow/BasicWorkflow.php:86
 #, php-format
 msgid "On %s, user %s submitted the following request: %s"
 msgstr "%s uživatel %s zaslal následující požadavek: %s"
 
-#: concrete/src/Workflow/BasicWorkflow.php:135
+#: concrete/src/Workflow/BasicWorkflow.php:133
 #, php-format
 msgid "%s Submitted by <strong>%s</strong> on %s."
 msgstr "%s zaslal <strong>%s</strong> na %s."
 
-#: concrete/src/Workflow/BasicWorkflow.php:161
+#: concrete/src/Workflow/BasicWorkflow.php:159
 #, php-format
 msgid ""
 "On %s, user %s cancelled the following request: \n"
@@ -12099,6 +12102,8 @@ msgstr "Skrýt vše"
 #: concrete/src/Application/Service/Dashboard.php:169
 #: concrete/blocks/dashboard_featured_addon/view.php:10
 #: concrete/blocks/dashboard_featured_theme/view.php:10
+#: concrete/single_pages/dashboard/extend/addons.php:115
+#: concrete/single_pages/dashboard/extend/themes.php:129
 msgid "Learn More"
 msgstr "Více informací"
 
@@ -12157,7 +12162,7 @@ msgstr "Váš web"
 msgid "Hide"
 msgstr "Skrýt"
 
-#: concrete/src/Application/Application.php:426
+#: concrete/src/Application/Application.php:428
 msgid ""
 "Invalid path traversal. Please make this request with a valid HTTP client."
 msgstr "Neplatná cesta. Použijte prosím pro dotaz platného HTTP klienta."
@@ -21045,7 +21050,9 @@ msgid "Launch"
 msgstr "Spustit"
 
 #: concrete/single_pages/dashboard/extend/addons.php:32
+#: concrete/single_pages/dashboard/extend/addons.php:120
 #: concrete/single_pages/dashboard/extend/themes.php:34
+#: concrete/single_pages/dashboard/extend/themes.php:134
 msgid "Purchase"
 msgstr "Zakoupit"
 
@@ -21072,7 +21079,7 @@ msgstr "Živé ukázky"
 msgid "Get Help"
 msgstr "Získat nápovědu"
 
-#: concrete/single_pages/dashboard/extend/addons.php:128
+#: concrete/single_pages/dashboard/extend/addons.php:132
 msgid "No add-ons found."
 msgstr "Nebyly nalezeny žádné doplňky."
 
@@ -21228,7 +21235,7 @@ msgid ""
 "easily extend a site with themes and add-ons."
 msgstr "Váš web není připojen ke komunitě Concrete5. Připojení umožní snadné rozšiřování webu pomocí motivů a doplňků."
 
-#: concrete/single_pages/dashboard/extend/themes.php:142
+#: concrete/single_pages/dashboard/extend/themes.php:146
 msgid "No themes found."
 msgstr "Nebyl nalezen žádný motiv."
 
