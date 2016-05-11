@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-04-24T06:00:17+02:00\n"
-"PO-Revision-Date: 2016-04-24 08:03+0000\n"
+"POT-Creation-Date: 2016-05-10T06:00:27+02:00\n"
+"PO-Revision-Date: 2016-05-10 15:25+0000\n"
 "Last-Translator: Heikki Ylipaavalniemi\n"
 "Language-Team: Finnish (Finland) (http://www.transifex.com/concrete5/concrete5/language/fi_FI/)\n"
 "MIME-Version: 1.0\n"
@@ -823,7 +823,7 @@ msgid "Reskin your site."
 msgstr "Muuta sivustosi ulkoasua."
 
 #: concrete/config/install/base/dashboard.xml:211
-#: concrete/controllers/single_page/dashboard/extend/themes.php:24
+#: concrete/controllers/single_page/dashboard/extend/themes.php:23
 #: concrete/themes/dashboard/marketplace.php:20
 msgid "Themes"
 msgstr "Teemat"
@@ -2975,7 +2975,7 @@ msgid "SecurImage (Default)"
 msgstr "SecurImage (oletus)"
 
 #: concrete/config/install/base/permissions.xml:285
-#: concrete/src/Workflow/BasicWorkflow.php:115
+#: concrete/src/Workflow/BasicWorkflow.php:113
 msgid "Basic Workflow"
 msgstr "Perustyönkulku"
 
@@ -3830,7 +3830,7 @@ msgstr "Ryhmä, johon lisätään rekisteröityessä"
 #: concrete/elements/custom_style.php:98
 #: concrete/elements/custom_style.php:109
 #: concrete/views/dialogs/file/upload_complete.php:53
-#: concrete/blocks/image_slider/form_setup_html.php:338
+#: concrete/blocks/image_slider/form_setup_html.php:340
 #: concrete/blocks/image/form.php:49
 #: concrete/blocks/form/form_setup_html.php:94
 #: concrete/blocks/feature/form.php:34 concrete/blocks/survey/edit.php:48
@@ -4552,6 +4552,7 @@ msgid "Unable to get contents of incoming/ directory"
 msgstr "Ei onnistuttu hakea incoming/-hakemiston sisältöjä"
 
 #: concrete/tools/files/import.php:91
+#: concrete/src/File/Search/ColumnSet/Available.php:14
 #: concrete/elements/files/properties.php:17
 #: concrete/views/dialogs/file/properties.php:91
 msgid "Filename"
@@ -4714,8 +4715,10 @@ msgstr "VIRHEELLINEN TOIMINTO"
 #: concrete/controllers/frontend/assets_localization.php:403
 #: concrete/elements/files/search.php:19
 #: concrete/single_pages/dashboard/extend/addons.php:32
+#: concrete/single_pages/dashboard/extend/addons.php:120
 #: concrete/single_pages/dashboard/extend/install.php:385
 #: concrete/single_pages/dashboard/extend/themes.php:34
+#: concrete/single_pages/dashboard/extend/themes.php:134
 #: concrete/single_pages/dashboard/system/backup/backup.php:111
 #: concrete/single_pages/dashboard/system/backup/update.php:232
 #: concrete/single_pages/download_file.php:28
@@ -5241,7 +5244,7 @@ msgstr "Virheellinen viestiobjekti."
 msgid "You do not have access to edit this message."
 msgstr "Sinulla ei ole oikeutta muokata tätä viestiä."
 
-#: concrete/tools/conversations/view_ajax.php:24
+#: concrete/tools/conversations/view_ajax.php:27
 #: concrete/blocks/core_conversation/form.php:13
 msgid "Add Message"
 msgstr "Lisää viesti"
@@ -5354,7 +5357,7 @@ msgstr "Oma sivupohja"
 #: concrete/src/File/Version.php:488
 #: concrete/elements/files/properties.php:138
 #: concrete/views/panels/details/page/attributes.php:60
-#: concrete/blocks/image_slider/form_setup_html.php:331
+#: concrete/blocks/image_slider/form_setup_html.php:333
 #: concrete/blocks/faq/form_setup_html.php:57
 #: concrete/blocks/faq/form_setup_html.php:87
 #: concrete/single_pages/dashboard/blocks/types/view.php:8
@@ -8384,7 +8387,7 @@ msgstr "Nykyinen kuva"
 #: concrete/src/File/Type/Type.php:67
 #: concrete/src/Backup/ContentImporter/ValueInspector/Item/ImageItem.php:10
 #: concrete/elements/custom_style.php:179
-#: concrete/blocks/image_slider/form_setup_html.php:316
+#: concrete/blocks/image_slider/form_setup_html.php:318
 #: concrete/blocks/image/controller.php:37 concrete/blocks/image/form.php:32
 #: concrete/single_pages/dashboard/users/add_group.php:83
 #: concrete/single_pages/dashboard/users/groups.php:58
@@ -9064,7 +9067,7 @@ msgstr "Taulukko"
 #: concrete/controllers/frontend/assets_localization.php:353
 #: concrete/elements/conversation/display.php:39
 #: concrete/elements/conversation/message.php:117
-#: concrete/blocks/image_slider/form_setup_html.php:336
+#: concrete/blocks/image_slider/form_setup_html.php:338
 #: concrete/blocks/feature/form.php:30 concrete/blocks/file/add.php:10
 msgid "Link"
 msgstr "Linkki"
@@ -9204,7 +9207,7 @@ msgstr "Poista ylätunniste"
 #: concrete/src/File/Version.php:485
 #: concrete/elements/files/properties.php:132
 #: concrete/views/dialogs/file/properties.php:92
-#: concrete/blocks/image_slider/form_setup_html.php:327
+#: concrete/blocks/image_slider/form_setup_html.php:329
 #: concrete/blocks/tags/tag_form.php:10 concrete/blocks/image/form.php:72
 #: concrete/blocks/search/form_setup_html.php:30
 #: concrete/blocks/feature/form.php:15
@@ -11527,17 +11530,17 @@ msgstr "Hyväksy"
 msgid "Originally requested by %s."
 msgstr "Alunperin pyytänyt %s."
 
-#: concrete/src/Workflow/BasicWorkflow.php:88
+#: concrete/src/Workflow/BasicWorkflow.php:86
 #, php-format
 msgid "On %s, user %s submitted the following request: %s"
 msgstr "Ajankohtana %s, käyttäjä %s lähetti seuraavan pyynnön: %s"
 
-#: concrete/src/Workflow/BasicWorkflow.php:135
+#: concrete/src/Workflow/BasicWorkflow.php:133
 #, php-format
 msgid "%s Submitted by <strong>%s</strong> on %s."
 msgstr "%s lähettänyt <strong>%s</strong> ajankohtana %s."
 
-#: concrete/src/Workflow/BasicWorkflow.php:161
+#: concrete/src/Workflow/BasicWorkflow.php:159
 #, php-format
 msgid ""
 "On %s, user %s cancelled the following request: \n"
@@ -12088,6 +12091,8 @@ msgstr "Piilota kaikki"
 #: concrete/src/Application/Service/Dashboard.php:169
 #: concrete/blocks/dashboard_featured_addon/view.php:10
 #: concrete/blocks/dashboard_featured_theme/view.php:10
+#: concrete/single_pages/dashboard/extend/addons.php:115
+#: concrete/single_pages/dashboard/extend/themes.php:129
 msgid "Learn More"
 msgstr "Katso lisätietoja"
 
@@ -12146,7 +12151,7 @@ msgstr "Sinun sivustosi"
 msgid "Hide"
 msgstr "Piilota"
 
-#: concrete/src/Application/Application.php:426
+#: concrete/src/Application/Application.php:428
 msgid ""
 "Invalid path traversal. Please make this request with a valid HTTP client."
 msgstr "Virheellinen polku. Ole hyvä ja tee pyyntö toimivalla HTTP-päätelaitteella."
@@ -18619,7 +18624,7 @@ msgid "Maximum Slide Width (0 means no limit)"
 msgstr "Dian maksimileveys (0 tarkoittaa ei rajoitusta)"
 
 #. short for pixels
-#: concrete/blocks/image_slider/form_setup_html.php:306
+#: concrete/blocks/image_slider/form_setup_html.php:307
 #: concrete/blocks/youtube/form_setup_html.php:54
 #: concrete/blocks/youtube/form_setup_html.php:61
 #: concrete/single_pages/dashboard/system/files/image_uploading.php:28
@@ -18627,36 +18632,36 @@ msgstr "Dian maksimileveys (0 tarkoittaa ei rajoitusta)"
 msgid "px"
 msgstr "pikseliä"
 
-#: concrete/blocks/image_slider/form_setup_html.php:312
+#: concrete/blocks/image_slider/form_setup_html.php:314
 msgid "Collapse Slide"
 msgstr "Supista dia"
 
-#: concrete/blocks/image_slider/form_setup_html.php:312
+#: concrete/blocks/image_slider/form_setup_html.php:314
 msgid "Edit Slide"
 msgstr "Muokkaa diaa"
 
-#: concrete/blocks/image_slider/form_setup_html.php:313
+#: concrete/blocks/image_slider/form_setup_html.php:315
 #: concrete/single_pages/dashboard/blocks/types/view.php:31
 #: concrete/single_pages/dashboard/pages/themes/view.php:54
 #: concrete/single_pages/dashboard/pages/themes/view.php:56
 msgid "Remove"
 msgstr "Poista"
 
-#: concrete/blocks/image_slider/form_setup_html.php:339
+#: concrete/blocks/image_slider/form_setup_html.php:341
 #: concrete/blocks/image/form.php:50 concrete/blocks/feature/form.php:35
 msgid "Another Page"
 msgstr "Toinen sivu"
 
-#: concrete/blocks/image_slider/form_setup_html.php:340
+#: concrete/blocks/image_slider/form_setup_html.php:342
 #: concrete/blocks/image/form.php:51 concrete/blocks/feature/form.php:36
 msgid "External URL"
 msgstr "Ulkoinen URL-osoite"
 
-#: concrete/blocks/image_slider/form_setup_html.php:344
+#: concrete/blocks/image_slider/form_setup_html.php:346
 msgid "URL:"
 msgstr "URL-osoite:"
 
-#: concrete/blocks/image_slider/form_setup_html.php:348
+#: concrete/blocks/image_slider/form_setup_html.php:350
 #: concrete/blocks/image/form.php:56 concrete/blocks/feature/form.php:41
 msgid "Choose Page:"
 msgstr "Valitse sivu:"
@@ -21017,7 +21022,9 @@ msgid "Launch"
 msgstr "Käynnistä"
 
 #: concrete/single_pages/dashboard/extend/addons.php:32
+#: concrete/single_pages/dashboard/extend/addons.php:120
 #: concrete/single_pages/dashboard/extend/themes.php:34
+#: concrete/single_pages/dashboard/extend/themes.php:134
 msgid "Purchase"
 msgstr "Osta"
 
@@ -21043,7 +21050,7 @@ msgstr "Live-esimerkki"
 msgid "Get Help"
 msgstr "Hae ohjeita"
 
-#: concrete/single_pages/dashboard/extend/addons.php:128
+#: concrete/single_pages/dashboard/extend/addons.php:132
 msgid "No add-ons found."
 msgstr "Lisäosia ei löytynyt."
 
@@ -21199,7 +21206,7 @@ msgid ""
 "easily extend a site with themes and add-ons."
 msgstr "Sivustosi ei ole yhdistettynä concrete5 yhteisöön. Yhdistäminen antaa sinun asentaa teemoja ja lisäosia helposti."
 
-#: concrete/single_pages/dashboard/extend/themes.php:142
+#: concrete/single_pages/dashboard/extend/themes.php:146
 msgid "No themes found."
 msgstr "Teemoja ei löytynyt."
 
