@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-05-11T12:00:16+02:00\n"
-"PO-Revision-Date: 2016-05-11 11:46+0000\n"
+"POT-Creation-Date: 2016-05-12T06:00:18+02:00\n"
+"PO-Revision-Date: 2016-05-12 17:46+0000\n"
 "Last-Translator: Vasilis Fotopoulos <basalba@gmail.com>\n"
 "Language-Team: Greek (Greece) (http://www.transifex.com/concrete5/concrete5/language/el_GR/)\n"
 "MIME-Version: 1.0\n"
@@ -995,7 +995,7 @@ msgid "Manage sitewide content and administer block types."
 msgstr "Διαχείριση του περιεχομένου όλου του ιστοχώρου και διαχείριση τύπων μπλοκ."
 
 #: concrete/config/install/base/dashboard.xml:357
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:234
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:238
 msgid "Stacks & Global Areas"
 msgstr "Στοίβες & Παγκόσμιες Περιοχές "
 
@@ -1230,7 +1230,7 @@ msgstr "ζώνη ώρας, προφίλ, τοπική ρύθμιση"
 #: concrete/src/Express/Form/Control/Type/AssociationType.php:31
 #: concrete/elements/dashboard/express/detail_navigation.php:19
 msgid "Associations"
-msgstr ""
+msgstr "Σύνδεση"
 
 #: concrete/config/install/base/dashboard.xml:558
 #: concrete/controllers/single_page/dashboard/system/express/entities/forms.php:77
@@ -4465,12 +4465,12 @@ msgstr "Είστε σίγουροι ότι θέλετε να διαγράψετ�
 #: concrete/single_pages/dashboard/express/entries/view_entry.php:16
 #: concrete/single_pages/dashboard/extend/install.php:57
 #: concrete/single_pages/dashboard/extend/install.php:123
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:175
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:265
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:286
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:460
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:501
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:515
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:180
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:270
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:291
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:465
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:506
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:520
 #: concrete/single_pages/dashboard/users/add.php:120
 #: concrete/single_pages/dashboard/users/add_group.php:229
 #: concrete/single_pages/dashboard/users/groups.php:209
@@ -4536,9 +4536,9 @@ msgstr "Ακύρωση"
 #: concrete/attributes/select/type_form.php:20
 #: concrete/single_pages/dashboard/express/entries/view_entry.php:6
 #: concrete/single_pages/dashboard/conversations/messages.php:121
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:113
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:121
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:124
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:118
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:126
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:129
 #: concrete/single_pages/dashboard/users/points/actions.php:129
 #: concrete/single_pages/dashboard/users/points/view.php:68
 #: concrete/single_pages/dashboard/users/groups.php:214
@@ -5027,9 +5027,9 @@ msgstr "Μόνο χρήστες που είναι μέλη όλων των επ�
 #: concrete/single_pages/dashboard/files/sets.php:42
 #: concrete/single_pages/dashboard/sitemap/full.php:36
 #: concrete/single_pages/dashboard/express/entries/folder.php:13
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:260
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:281
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:311
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:265
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:286
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:316
 #: concrete/single_pages/dashboard/users/add_group.php:24
 #: concrete/single_pages/dashboard/users/group_sets.php:16
 #: concrete/single_pages/dashboard/users/group_sets.php:126
@@ -5210,8 +5210,9 @@ msgid "Time Settings"
 msgstr "Ρυθμίσεις Χρόνου"
 
 #: concrete/tools/permissions/access_entity.php:150
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:762
 #: concrete/controllers/frontend/assets_localization.php:27
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:432
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:437
 msgid "Error"
 msgstr "Σφάλμα"
 
@@ -5566,7 +5567,7 @@ msgstr "Τύπος Σελίδας"
 #: concrete/src/File/Search/Field/Field/DateAddedField.php:30
 #: concrete/src/Express/Search/ColumnSet/DefaultSet.php:21
 #: concrete/elements/files/properties.php:132
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:312
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:317
 msgid "Date Added"
 msgstr "Ημερομηνία Προσθήκης"
 
@@ -6299,211 +6300,216 @@ msgstr "Το πακέτο δεν βρέθηκε."
 msgid "Permissions updated successfully."
 msgstr "Τα δικαιώματα ενημερώθηκαν με επιτυχία."
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:94
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:98
 msgctxt "Locale"
 msgid "default"
 msgstr "προεπιλογή"
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:149
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:415
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:447
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:481
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:618
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:153
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:419
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:451
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:485
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:622
 msgid "Invalid stack"
 msgstr "Μη έγκυρη στοίβα"
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:156
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:160
 msgid "Stack added successfully."
 msgstr "Η Στοίβα προστέθηκε με επιτυχία."
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:159
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:163
 msgid "Localized version of stack added successfully."
 msgstr "Η μεταφρασμένη έκδοση της στοίβας προστέθηκε με επιτυχία."
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:162
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:166
 msgid "Localized version of global area added successfully."
 msgstr "Η μεταφρασμένη έκδοση της παγκόσμιας περιοχής προστέθηκε με επιτυχία."
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:165
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:169
 msgid "Stack approved successfully"
 msgstr "Η Στοίβα εγκρίθηκε με επιτυχία."
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:168
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:172
 msgid "Global area approved successfully"
-msgstr ""
+msgstr "Η Παγκόσμια Στοίβα εγκρίθηκε με επιτυχία."
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:171
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:175
 msgid ""
 "Approve request saved. You must complete the approval workflow before these "
 "changes are publicly accessible."
 msgstr "Tο αίτημα έγκρισης αποθηκεύτηκε. Πρέπει να ολοκληρώσετε τη ροή εργασίας έγκρισης πριν οι αλλαγές αυτές είναι προσβάσιμες στο κοινό."
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:174
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:178
 msgid ""
 "Delete request saved. You must complete the delete workflow before this "
 "stack can be deleted."
 msgstr "Το αίτημα Διαγραφής αποθηκεύτηκε. Πρέπει να ολοκληρώσετε τη διαγραφή της ροή εργασίας πριν, για να μπορεί να διαγραφεί η στοίβα."
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:177
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:181
 msgid ""
 "Delete request saved. You must complete the delete workflow before this "
 "stack folder can be deleted."
-msgstr ""
+msgstr "Το αίτημα διαγραφής αποθηκεύτηκε. Πρέπει να ολοκληρώσετε τη ροή εργασίας διαγραφής πριν μπορεί να διαγραφεί αυτός ο φάκελος στοίβας"
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:180
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:184
 msgid ""
 "Delete request saved. You must complete the delete workflow before this "
 "version of the global area can be deleted."
-msgstr ""
+msgstr "Το αίτημα διαγραφής αποθηκεύτηκε. Πρέπει να ολοκληρώσετε τη ροή εργασίας διαγραφής ώστε να μπορέσει να διαγραφεί αυτή η παγκόσμια περιοχή."
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:183
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:187
 msgid ""
 "Rename request saved. You must complete the approval workflow before the "
 "name will be updated."
-msgstr ""
+msgstr "Το αίτημα μετονομασίας αποθηκεύτηκε. Πρέπει να ολοκληρώσετε τη ροή εργασίας επικύρωσης ώστε να μπορέσει να γίνει αυτή η μετονομασία."
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:186
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:190
 msgid "Stack deleted successfully"
 msgstr "Η Στοίβα διαγράφηκε με επιτυχία"
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:189
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:193
 msgid "Global area cleared successfully"
-msgstr ""
+msgstr "Η Παγκόσμια περιοχή εκκαθαρίστικε με επιτυχία"
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:192
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:196
 msgid "Localized version of stack deleted successfully"
-msgstr ""
+msgstr "Η μεταφρασμένη έκδοση της στοίβας διαγράφηκε με επιτυχία"
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:195
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:199
 msgid "Localized version of global area deleted successfully"
-msgstr ""
+msgstr "Η μεταφρασμένη έκδοση της παγκόσμιας περιοχής διαγράφτηκε με επιτυχία"
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:198
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:202
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:756
 msgid "Stack duplicated successfully"
 msgstr "Το διπλότυπο στοίβας δημιουργήθηκε με επιτυχία"
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:201
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:205
 msgid "Stack renamed successfully"
 msgstr "Η Στοίβα μετονομάστηκε με επιτυχία"
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:204
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:208
 msgid "Stack Folder renamed successfully"
-msgstr ""
+msgstr "Ο φάκελος της Στοίβας μετονομάστηκε με επιτυχία"
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:207
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:211
 msgid "Folder added successfully."
-msgstr ""
+msgstr "Ο φάκελος προστέθηκε με επιτυχία"
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:210
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:214
 msgid "Folder deleted successfully."
-msgstr ""
+msgstr "Ο φάκελος διαγράφηκε με επιτυχία"
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:242
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:322
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:246
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:327
 msgid "Global Areas"
 msgstr "Παγκόσμιες Περιοχές"
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:290
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:355
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:669
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:294
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:359
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:673
 msgid "Unable to find the specified stack folder."
-msgstr ""
+msgstr "Αδύνατη η εύρεση της συγκεκριμένης φακέλου στοίβας."
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:298
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:641
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:302
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:645
 msgid "You must give your stack a name."
 msgstr "Θα πρέπει να δώσετε ένα όνομα στη στοίβα σας."
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:313
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:317
 msgid "Unable to find the specified stack"
-msgstr ""
+msgstr "Αδύνατη η εύρεση της συγκεκριμένης στοίβας."
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:319
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:323
 msgid "Unable to find the specified language"
-msgstr ""
+msgstr "Αδύνατη η εύρεση της συγκεκριμένης γλώσσας"
 
 #. %s is a language name
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:322
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:326
 #, php-format
 msgid "There's already a version of this global area in %s"
-msgstr ""
+msgstr "Υπάρχει ήδη μια έκδοση αυτής της παγκόσμιας περιοχής στο %s"
 
 #. %s is a language name
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:324
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:328
 #, php-format
 msgid "There's already a version of this stack in %s"
-msgstr ""
+msgstr "Υπάρχει ήδη μια έκδοση αυτής της στοίβας στο %s"
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:348
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:352
 msgid "You must give the folder a name."
-msgstr ""
+msgstr "Πρέπει να δώσετε στο φάκελο ένα όνομα."
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:408
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:412
 msgid "You do not have access to delete this stack."
 msgstr "Δεν έχετε πρόσβαση για να διαγράψετε αυτή τη στοίβα."
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:410
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:414
 msgid "You do not have access to delete this global area."
-msgstr ""
+msgstr "Δεν έχετε πρόσβαση για να διαγράψετε αυτή τη παγκόσμια περιοχή."
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:444
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:448
 msgid "You do not have access to approve this stack."
 msgstr "Δεν έχετε πρόσβαση για να εγκρίνετε αυτή τη στοίβα."
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:464
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:468
 msgid "You can't rename global areas"
-msgstr ""
+msgstr "Δεν μπορείς να μετονομάσεις παγκόσμιες περιοχές"
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:487
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:491
 msgid "You don't have the permission to rename this stack"
-msgstr ""
+msgstr "Δεν έχετε δικαίωμα πρόσβασης για μετονομασία αυτής της στοίβας."
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:489
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:493
 msgid "You don't have the permission to rename this stack folder"
-msgstr ""
+msgstr "Δεν έχετε δικαίωμα πρόσβασης για μετονομασία αυτό το φάκελο στοίβας."
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:503
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:507
 msgid "The name cannot be empty."
-msgstr ""
+msgstr "Το όνομα δεν μπορεί να είναι κενό."
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:548
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:553
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:561
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:594
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:552
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:557
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:565
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:598
 #, php-format
 msgid "Bad parameter: %s"
-msgstr ""
+msgstr "Μη έγκυρη παράμετρος: %s"
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:578
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:582
 msgid "Unable to find the specified stack or folder"
-msgstr ""
+msgstr "Αδύνατη η εύρεση της συγκεκριμένης στοίβας ή φακέλου."
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:584
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:588
 msgid "Access denied"
-msgstr ""
+msgstr "Δεν επιτρέπεται η πρόσβαση."
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:598
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:602
 msgid "Unable to find the specified stack folder"
-msgstr ""
+msgstr "Αδύνατη η εύρεση της συγκεκριμένης φακέλου στοίβας."
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:609
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:613
 #, php-format
 msgid "%d item has been moved under the folder %s"
 msgid_plural "%d items have been moved under the folder %s"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d στοιχείο μετακινήθηκε στο φάκελο %s"
+msgstr[1] "%d στοιχεία μετακινήθηκαν στο φάκελο %s"
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:621
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:625
 msgid "You can't duplicate global areas"
-msgstr ""
+msgstr "Δεν μπορείτε να αναπαράγετε παγκόσμιες περιοχές"
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:630
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:634
 msgid "You don't have the permission to clone this stack"
-msgstr ""
+msgstr "Δεν έχετε δικαίωμα πρόσβασης για κλωνοποίηση αυτού του φάκελου στοίβας."
 
-#: concrete/controllers/single_page/dashboard/blocks/stacks.php:674
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:678
 msgid "You do not have access to delete this stack folder."
-msgstr ""
+msgstr "Δεν έχετε πρόσβαση για να διαγράψετε αυτό το φάκελο στοίβας."
+
+#: concrete/controllers/single_page/dashboard/blocks/stacks.php:772
+msgid "Stack order updated successfully."
+msgstr "Η ταξινόμηση στοίβας ενημερώθηκε με επιτυχία"
 
 #: concrete/controllers/single_page/dashboard/blocks/types.php:47
 msgid "Display Order Reset."
@@ -6807,7 +6813,7 @@ msgstr "Προβολή / Επεξεργασία %s"
 
 #: concrete/controllers/single_page/dashboard/users/search.php:485
 msgid "User activation workflow initiated."
-msgstr ""
+msgstr "Η ροή εργασιών ενεργοποίησης χρήστη ξεκίνησε."
 
 #: concrete/controllers/single_page/dashboard/users/search.php:487
 msgid "User activated successfully."
@@ -6815,7 +6821,7 @@ msgstr "Ο Χρήστης Ενεργοποιήθηκε με επιτυχία."
 
 #: concrete/controllers/single_page/dashboard/users/search.php:492
 msgid "User deactivation workflow initiated."
-msgstr ""
+msgstr "Η ροή εργασιών απενεργοποίησης χρήστη ξεκίνησε."
 
 #: concrete/controllers/single_page/dashboard/users/search.php:494
 msgid "User deactivated successfully."
@@ -6831,16 +6837,16 @@ msgstr "Το e-mail χαρακτηρίζεται ως έγκυρο."
 
 #: concrete/controllers/single_page/dashboard/users/search.php:504
 msgid "Workflow request is canceled."
-msgstr ""
+msgstr "Το αίτημα ροής εργασίας ακυρώθηκε."
 
 #: concrete/controllers/single_page/dashboard/users/search.php:510
 msgid "User deletion workflow initiated."
-msgstr ""
+msgstr "Η ροή εργασιών διαγραφής χρήστη ξεκίνησε."
 
 #: concrete/controllers/single_page/dashboard/users/search.php:512
 #: concrete/controllers/single_page/dashboard/users/search.php:520
 msgid "User has been deleted."
-msgstr ""
+msgstr "Ο χρήστης έχει διαγραφεί."
 
 #: concrete/controllers/single_page/dashboard/system/files/filetypes.php:25
 msgid "Allowed file types saved."
@@ -7013,107 +7019,107 @@ msgstr "Η διαμόρφωση Proxy αποθηκεύτηκε."
 
 #: concrete/controllers/single_page/dashboard/system/express/entities/associations.php:30
 msgid "** Select Type"
-msgstr ""
+msgstr "** Επιλογή τύπου"
 
 #: concrete/controllers/single_page/dashboard/system/express/entities/associations.php:32
 msgid "Many to One"
-msgstr ""
+msgstr "Πολλοί προς Έναν"
 
 #: concrete/controllers/single_page/dashboard/system/express/entities/associations.php:33
 msgid "One to Many"
-msgstr ""
+msgstr "Ένα προς Πολλά"
 
 #: concrete/controllers/single_page/dashboard/system/express/entities/associations.php:34
 msgid "One to One"
-msgstr ""
+msgstr "Ένα προς ένα"
 
 #: concrete/controllers/single_page/dashboard/system/express/entities/associations.php:35
 msgid "Many to Many"
-msgstr ""
+msgstr "Πολλοί προς πολλούς"
 
 #: concrete/controllers/single_page/dashboard/system/express/entities/associations.php:40
 #: concrete/single_pages/dashboard/system/express/entities/associations.php:12
 msgid "Add Association"
-msgstr ""
+msgstr "Προσθήκη Σύνδεσης"
 
 #: concrete/controllers/single_page/dashboard/system/express/entities/associations.php:47
 msgid "Invalid target entity."
-msgstr ""
+msgstr "Μη έγκυρη οντότητα-στόχος."
 
 #: concrete/controllers/single_page/dashboard/system/express/entities/associations.php:50
 msgid "You must choose what type of association this is."
-msgstr ""
+msgstr "Πρέπει να επιλέξετε τι είδους σύνδεση είναι αυτή."
 
 #: concrete/controllers/single_page/dashboard/system/express/entities/associations.php:54
 msgid "You must give your association a target property name."
-msgstr ""
+msgstr "Πρέπει να δώσετε στη σχέση σας ένα όνομα ιδιότητας στόχου."
 
 #: concrete/controllers/single_page/dashboard/system/express/entities/associations.php:88
 msgid "Association added successfully."
-msgstr ""
+msgstr "Ο Σύνδεσμος προστέθηκε με επιτυχία"
 
 #: concrete/controllers/single_page/dashboard/system/express/entities/associations.php:116
 msgid "Invalid association object."
-msgstr ""
+msgstr "Μη έγκυρο αντικείμενο συνδέσμου."
 
 #: concrete/controllers/single_page/dashboard/system/express/entities/associations.php:125
 msgid "Association deleted successfully."
-msgstr ""
+msgstr "Ο Σύνδεσμος διεγράφη με επιτυχία"
 
 #: concrete/controllers/single_page/dashboard/system/express/entities/associations.php:140
 msgid "Association Details"
-msgstr ""
+msgstr "Λεπτομέριες Συνδέσμου"
 
 #: concrete/controllers/single_page/dashboard/system/express/entities/customize_search.php:45
 msgid "Search preferences saved successfully."
-msgstr ""
+msgstr "Οι προτιμήσεις αναζήτησης αποθηκεύτηκαν με επιτυχία."
 
 #: concrete/controllers/single_page/dashboard/system/express/entities/forms.php:47
 msgid "Form updated successfully."
-msgstr ""
+msgstr "Η Φόρμα ενημερώθηκε με επιτυχία."
 
 #: concrete/controllers/single_page/dashboard/system/express/entities/forms.php:49
 msgid "Form added successfully."
-msgstr ""
+msgstr "Η Φόρμα προστέθηκε με επιτυχία"
 
 #: concrete/controllers/single_page/dashboard/system/express/entities/forms.php:64
 #: concrete/single_pages/dashboard/system/express/entities/forms.php:12
 msgid "Add Form"
-msgstr ""
+msgstr "Προσθήκη φόρμας"
 
 #: concrete/controllers/single_page/dashboard/system/express/entities/forms.php:88
 #: concrete/controllers/single_page/dashboard/system/express/entities/forms.php:279
 msgid "Invalid form object."
-msgstr ""
+msgstr "Μη έγκυρο αντικείμενο φόρμας."
 
 #: concrete/controllers/single_page/dashboard/system/express/entities/forms.php:96
 msgid "Form deleted successfully."
-msgstr ""
+msgstr "Η Φόρμα διεγράφει με επιτυχία."
 
 #: concrete/controllers/single_page/dashboard/system/express/entities/forms.php:107
 #: concrete/controllers/single_page/dashboard/system/express/entities/forms.php:259
 msgid "Invalid field set object."
-msgstr ""
+msgstr "Μη έγκυρο αντικείμενο σετ πεδίων"
 
 #: concrete/controllers/single_page/dashboard/system/express/entities/forms.php:115
 msgid "Field set deleted successfully."
-msgstr ""
+msgstr "Το Σετ Πεδίων έχει διαγραφεί επιτυχώς."
 
 #: concrete/controllers/single_page/dashboard/system/express/entities/forms.php:126
 msgid "Invalid field set control object."
-msgstr ""
+msgstr "Μη έγκυρο αντικείμενο ελέγχου σετ πεδίων"
 
 #: concrete/controllers/single_page/dashboard/system/express/entities/forms.php:134
 msgid "Field set control deleted successfully."
-msgstr ""
+msgstr "Το Σετ Πεδίων έχει διαγραφεί επιτυχώς."
 
 #: concrete/controllers/single_page/dashboard/system/express/entities/forms.php:268
 msgid "Field set updated successfully."
-msgstr ""
+msgstr "Το Σετ Πεδίων ενημερώθηκε με επιτυχία."
 
 #: concrete/controllers/single_page/dashboard/system/express/entities/forms.php:297
 msgid "Form field set added successfully."
-msgstr ""
+msgstr "Το Σετ Πεδίων προστέθηκε επιτυχώς."
 
 #: concrete/controllers/single_page/dashboard/system/express/entities/forms.php:311
 #: concrete/elements/workflow/type_form_required.php:36
@@ -7123,57 +7129,57 @@ msgstr "Επεξεργασία λεπτομερειών"
 
 #: concrete/controllers/single_page/dashboard/system/express/entities/forms.php:327
 msgid "Form Details"
-msgstr ""
+msgstr "Λεπτομέριες Φόρμας"
 
 #: concrete/controllers/single_page/dashboard/system/express/entities.php:14
 #: concrete/elements/dashboard/express/menu.php:28
 msgid "Add Data Object"
-msgstr ""
+msgstr "Προσθήκη Αντικείμενων δεδομένων"
 
 #: concrete/controllers/single_page/dashboard/system/express/entities.php:20
 #: concrete/controllers/single_page/dashboard/system/express/entities.php:124
 msgid "You must give your data object a name."
-msgstr ""
+msgstr "Θα πρέπει να δώσετε ένα όνομα στα αντικείμενα δεδομένων σας."
 
 #: concrete/controllers/single_page/dashboard/system/express/entities.php:23
 #: concrete/controllers/single_page/dashboard/system/express/entities.php:127
 msgid ""
 "You must create a handle for your data object. The handle must be all "
 "lowercase, and contain no spaces."
-msgstr ""
+msgstr "Πρέπει να δημιουργήσετε έναν δείκτη  για το αντικείμενο δεδομένων σας. Ο δείκτης πρέπει να έχει όλα πεζά, και να μην περιέχει κενά."
 
 #: concrete/controllers/single_page/dashboard/system/express/entities.php:51
 msgid "Object added successfully."
-msgstr ""
+msgstr "Το Αντικείμενο προστέθηκε με επιτυχία"
 
 #: concrete/controllers/single_page/dashboard/system/express/entities.php:72
 msgid "Object Details"
-msgstr ""
+msgstr "Λεπτομέριες Αντικειμένου"
 
 #: concrete/controllers/single_page/dashboard/system/express/entities.php:92
 msgid "** Select Form"
-msgstr ""
+msgstr "** Επιλέξτε φόρμα"
 
 #: concrete/controllers/single_page/dashboard/system/express/entities.php:108
 #: concrete/elements/dashboard/express/detail_navigation.php:13
 msgid "Edit Entity"
-msgstr ""
+msgstr "Επεξεργασία Οντότητας"
 
 #: concrete/controllers/single_page/dashboard/system/express/entities.php:130
 msgid "You must choose where the results for your entity are going live."
-msgstr ""
+msgstr "Πρέπει να επιλέξετε που θα πηγαίνουν τα ζωντανά αποτελέσματα για την οντότητά σας."
 
 #: concrete/controllers/single_page/dashboard/system/express/entities.php:143
 msgid "You must specify a valid default view form."
-msgstr ""
+msgstr "Πρέπει να ορίσετε μια έγκυρη μορφή προεπιλεγμένης προβολής φόρμας."
 
 #: concrete/controllers/single_page/dashboard/system/express/entities.php:146
 msgid "You must specify a valid default edit form."
-msgstr ""
+msgstr "Πρέπει να ορίσετε μια έγκυρη μορφή προεπιλεγμένης επεξεργασίας φόρμας."
 
 #: concrete/controllers/single_page/dashboard/system/express/entities.php:163
 msgid "Object updated successfully."
-msgstr ""
+msgstr "Το Αντικείμενο ενημερώθηκε με επιτυχία."
 
 #: concrete/controllers/single_page/dashboard/system/permissions/advanced.php:21
 msgid "Advanced permissions enabled."
@@ -8513,8 +8519,8 @@ msgid "Add Block"
 msgstr "Προσθήκη μπλοκ"
 
 #: concrete/controllers/frontend/assets_localization.php:32
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:502
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:529
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:507
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:534
 msgid "Add Stack"
 msgstr "Προσθήκη Στοίβας"
 
@@ -8907,6 +8913,7 @@ msgstr "SEO"
 #: concrete/elements/panels/page.php:68
 #: concrete/elements/page_controls_footer.php:125
 #: concrete/elements/page_controls_footer.php:128
+#: concrete/views/dialogs/stack/usage.php:9
 #: concrete/views/panels/details/page/location.php:5
 #: concrete/blocks/google_map/form_setup_html.php:11
 #: concrete/blocks/page_list/page_list_form.php:226
@@ -9508,7 +9515,7 @@ msgid ""
 msgstr "Εδώ έχουμε οτιδήποτε που δεν έχει σχέση με αυτή τη σελίδα. Η διαχείριση χρηστών, τα αρχεία, τα δεδομένα αναφοράς και οι ρυθμίσεις κατά μήκος και πλάτος του site."
 
 #: concrete/controllers/frontend/assets_localization.php:362
-#: concrete/config/app.php:532 concrete/blocks/html/controller.php:27
+#: concrete/config/app.php:534 concrete/blocks/html/controller.php:27
 #: concrete/blocks/image/form.php:43
 msgid "HTML"
 msgstr "HTML"
@@ -11046,7 +11053,7 @@ msgid ""
 msgstr "Παρουσιάστηκε άγνωστο σφάλμα κατά τη μεταφόρτωση του αρχείου. Παρακαλώ ελέγξτε ότι είναι ενεργοποιημένη η μεταφόρτωση αρχείων, και ότι το αρχείο σας δεν πρέπει να υπερβαίνει το μέγεθος των μεταβλητών στο post_max_size ή upload_max_filesize. \n\nΜεταφόρτωση Αρχείων : %s \nΜέγιστο μέγεθος μεταφόρτωσης αρχείου: %s \nΜέγιστο μέγεθος Δημοσίευσης: %s"
 
 #: concrete/src/File/Menu.php:50 concrete/views/panels/page/versions.php:36
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:266
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:271
 msgid "Duplicate"
 msgstr "Εις Διπλούν"
 
@@ -11421,23 +11428,23 @@ msgid "IFrame Editing Area"
 msgstr ""
 
 #: concrete/src/Editor/EditorServiceProvider.php:229
-msgid "Concrete5 Inline"
+msgid "concrete5 Inline"
 msgstr ""
 
 #: concrete/src/Editor/EditorServiceProvider.php:235
-msgid "Concrete5 File Browser"
+msgid "concrete5 File Browser"
 msgstr ""
 
 #: concrete/src/Editor/EditorServiceProvider.php:241
-msgid "Concrete5 Upload Image"
+msgid "concrete5 Upload Image"
 msgstr ""
 
 #: concrete/src/Editor/EditorServiceProvider.php:247
-msgid "Concrete5 Link"
+msgid "concrete5 Link"
 msgstr ""
 
 #: concrete/src/Editor/EditorServiceProvider.php:253
-msgid "Concrete5 Styles"
+msgid "concrete5 Styles"
 msgstr ""
 
 #: concrete/src/Editor/PluginManager.php:13
@@ -16305,6 +16312,7 @@ msgstr "%s: Βασικά Στοιχεία"
 #: concrete/elements/dashboard/attributes_table.php:59
 #: concrete/elements/dashboard/attributes_table.php:91
 #: concrete/elements/dashboard/attributes_table.php:114
+#: concrete/views/dialogs/stack/usage.php:8
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:50
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:115
 #: concrete/single_pages/dashboard/system/express/entities/add.php:11
@@ -16464,6 +16472,7 @@ msgid "ID"
 msgstr "ID"
 
 #: concrete/elements/files/properties.php:15
+#: concrete/views/dialogs/stack/usage.php:7
 msgid "Version"
 msgstr "Έκδοση"
 
@@ -16497,7 +16506,7 @@ msgid "Reset Search"
 msgstr ""
 
 #: concrete/elements/files/search_header.php:15
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:483
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:488
 msgid "New Folder"
 msgstr ""
 
@@ -16507,13 +16516,13 @@ msgid "Upload Files"
 msgstr "Ανεβάστε Αρχεία"
 
 #: concrete/elements/files/search_header.php:31
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:510
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:515
 msgid "Folder Name"
 msgstr ""
 
 #: concrete/elements/files/search_header.php:37
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:516
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:538
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:521
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:543
 msgid "Add Folder"
 msgstr ""
 
@@ -18369,6 +18378,10 @@ msgid ""
 " it so changes to Page Defaults will no longer affect this block."
 msgstr "Το μπλοκ αυτό είναι ένα ψευδώνυμο της Προεπιλεγμένης Σελίδας. Η επεξεργασία εδώ θα το \"αποσυνδέσει\" έτσι ώστε οι αλλαγές στη Προεπιλεγμένη σελίδα δεν θα επηρεάσουν αυτό το μπλοκ."
 
+#: concrete/views/dialogs/stack/usage.php:6
+msgid "Page ID"
+msgstr ""
+
 #: concrete/views/dialogs/user/bulk/properties.php:9
 #: concrete/views/dialogs/file/bulk/properties.php:9
 #: concrete/single_pages/dashboard/users/search.php:277
@@ -19565,153 +19578,153 @@ msgstr "Κενό site"
 msgid "Creates an empty site using the unstyled Elemental theme."
 msgstr "Δημιουργεί ένα κενό site χρησιμοποιώντας το unstyled Elemental θέμα."
 
-#: concrete/config/app.php:527
+#: concrete/config/app.php:529
 msgid "JPEG"
 msgstr "JPEG"
 
-#: concrete/config/app.php:528
+#: concrete/config/app.php:530
 msgid "GIF"
 msgstr "GIF"
 
-#: concrete/config/app.php:529
+#: concrete/config/app.php:531
 msgid "PNG"
 msgstr "PNG"
 
-#: concrete/config/app.php:530
+#: concrete/config/app.php:532
 msgid "Windows Bitmap"
 msgstr "Windows Bitmap"
 
-#: concrete/config/app.php:531
+#: concrete/config/app.php:533
 msgid "TIFF"
 msgstr "TIFF"
 
-#: concrete/config/app.php:533
+#: concrete/config/app.php:535
 msgid "Flash"
 msgstr "Flash"
 
-#: concrete/config/app.php:534 concrete/blocks/feature/form.php:4
+#: concrete/config/app.php:536 concrete/blocks/feature/form.php:4
 #: concrete/single_pages/dashboard/pages/templates/add.php:27
 #: concrete/single_pages/dashboard/pages/templates/view.php:40
 msgid "Icon"
 msgstr "Εικονίδιο "
 
-#: concrete/config/app.php:535
+#: concrete/config/app.php:537
 msgid "SVG"
 msgstr "SVG"
 
-#: concrete/config/app.php:536
+#: concrete/config/app.php:538
 msgid "Windows Video"
 msgstr "Windows Βίντεο"
 
-#: concrete/config/app.php:537
+#: concrete/config/app.php:539
 msgid "Quicktime"
 msgstr "Quicktime"
 
-#: concrete/config/app.php:538
+#: concrete/config/app.php:540
 msgid "AVI"
 msgstr "AVI"
 
-#: concrete/config/app.php:539
+#: concrete/config/app.php:541
 msgid "3GP"
 msgstr "3GP"
 
-#: concrete/config/app.php:540 concrete/attributes/textarea/type_form.php:8
+#: concrete/config/app.php:542 concrete/attributes/textarea/type_form.php:8
 msgid "Plain Text"
 msgstr "Απλό Κείμενο"
 
-#: concrete/config/app.php:541
+#: concrete/config/app.php:543
 msgid "CSV"
 msgstr "CSV"
 
-#: concrete/config/app.php:542
+#: concrete/config/app.php:544
 msgid "XML"
 msgstr "XML"
 
-#: concrete/config/app.php:543
+#: concrete/config/app.php:545
 msgid "PHP"
 msgstr "PHP"
 
-#: concrete/config/app.php:544
+#: concrete/config/app.php:546
 msgid "MS Word"
 msgstr "MS Word"
 
-#: concrete/config/app.php:545
+#: concrete/config/app.php:547
 msgid "Stylesheet"
 msgstr "Φύλλα Stylesheet"
 
-#: concrete/config/app.php:546
+#: concrete/config/app.php:548
 msgid "MP4"
 msgstr "MP4"
 
-#: concrete/config/app.php:547
+#: concrete/config/app.php:549
 msgid "FLV"
 msgstr "FLV"
 
-#: concrete/config/app.php:548
+#: concrete/config/app.php:550
 msgid "MP3"
 msgstr "MP3"
 
-#: concrete/config/app.php:549
+#: concrete/config/app.php:551
 msgid "MP4 Audio"
 msgstr "MP4 Audio"
 
-#: concrete/config/app.php:550
+#: concrete/config/app.php:552
 msgid "Realaudio"
 msgstr "Realaudio"
 
-#: concrete/config/app.php:551
+#: concrete/config/app.php:553
 msgid "Windows Audio"
 msgstr "Windows Audio"
 
-#: concrete/config/app.php:552
+#: concrete/config/app.php:554
 msgid "Rich Text"
 msgstr "Εμπλουτισμένο Κείμενο"
 
-#: concrete/config/app.php:553
+#: concrete/config/app.php:555
 msgid "JavaScript"
 msgstr "JavaScript"
 
-#: concrete/config/app.php:554
+#: concrete/config/app.php:556
 msgid "PDF"
 msgstr "PDF"
 
-#: concrete/config/app.php:555
+#: concrete/config/app.php:557
 msgid "Photoshop"
 msgstr "Photoshop"
 
-#: concrete/config/app.php:556
+#: concrete/config/app.php:558
 msgid "MPEG"
 msgstr "MPEG"
 
-#: concrete/config/app.php:557
+#: concrete/config/app.php:559
 msgid "MS Excel"
 msgstr "MS Excel"
 
-#: concrete/config/app.php:558
+#: concrete/config/app.php:560
 msgid "MS Powerpoint"
 msgstr "MS Powerpoint"
 
-#: concrete/config/app.php:559
+#: concrete/config/app.php:561
 msgid "TAR Archive"
 msgstr "Αρχείο TAR "
 
-#: concrete/config/app.php:560
+#: concrete/config/app.php:562
 msgid "Zip Archive"
 msgstr "Αρχείο zip "
 
-#: concrete/config/app.php:561
+#: concrete/config/app.php:563
 msgid "GZip Archive"
 msgstr "Αρχείο GZip"
 
-#: concrete/config/app.php:562
+#: concrete/config/app.php:564
 msgid "OGG"
 msgstr "OGG"
 
-#: concrete/config/app.php:563
+#: concrete/config/app.php:565
 msgid "OGG Video"
 msgstr "Βίντεο OGG"
 
-#: concrete/config/app.php:564
+#: concrete/config/app.php:566
 msgid "WebM"
 msgstr "WebM"
 
@@ -19929,11 +19942,11 @@ msgstr "Γεωγραφικό Μήκος: %s"
 msgid "Google Map disabled in edit mode."
 msgstr "Το Google Map είναι απενεργοποιημένο σε Κατάσταση Επεξεργασίας."
 
-#: concrete/blocks/core_stack_display/controller.php:55
+#: concrete/blocks/core_stack_display/controller.php:57
 msgid "Proxy block for stacks added through the UI."
 msgstr "Μπλοκ Μεσολάβησης για στοίβες που προστέθηκαν μέσω Γραφικού Περιβάλλοντος (UI)"
 
-#: concrete/blocks/core_stack_display/controller.php:60
+#: concrete/blocks/core_stack_display/controller.php:62
 msgid "Stack Display"
 msgstr "Προβολή Στοίβας"
 
@@ -22793,7 +22806,7 @@ msgid "Paste From Clipboard"
 msgstr "Επικόλληση από το πρόχειρο"
 
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:101
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:287
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:292
 msgid "Rename"
 msgstr "Μετονομασία"
 
@@ -22802,83 +22815,88 @@ msgid "Stack Permissions"
 msgstr "Δικαιώματα Στοίβας "
 
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:107
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:258
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:263
 msgid "Duplicate Stack"
 msgstr "Δημιουργία Διπλότυπου Στοίβας"
 
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:113
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:121
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:110
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:111
+msgid "Stack Usage"
+msgstr ""
+
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:118
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:126
 msgid "Delete localized version"
 msgstr ""
 
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:114
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:119
 msgid "Delete localized Global Area"
 msgstr ""
 
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:116
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:121
 msgid "Clear Global Area contents"
 msgstr ""
 
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:116
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:121
 msgid "Clear area"
 msgstr ""
 
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:117
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:122
 msgid "Clear Global Area"
 msgstr "Καθαρισμός Παγκόσμιας Περιοχής"
 
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:122
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:127
 msgid "Delete localized Stack"
 msgstr ""
 
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:124
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:125
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:129
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:130
 msgid "Delete Stack"
 msgstr "Διαγραφή Στοίβας"
 
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:168
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:173
 msgid "Are you sure you want to proceed?"
 msgstr "Είστε σίγουροι ότι θέλετε να συνεχίσετε; "
 
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:170
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:457
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:175
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:462
 #: concrete/single_pages/dashboard/system/attributes/topics/view.php:73
 #: concrete/single_pages/dashboard/system/basics/social.php:33
 #: concrete/single_pages/dashboard/pages/feeds.php:60
 msgid "Are you sure? This action cannot be undone."
 msgstr "Είσαι σίγουρος; Αυτή η ενέργεια δεν μπορεί να αναιρεθεί."
 
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:278
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:283
 msgid "Rename Stack Folder"
 msgstr ""
 
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:278
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:283
 msgid "Rename Stack"
 msgstr "Μετονομασία Στοίβας"
 
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:446
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:451
 msgid "Rename Folder"
 msgstr ""
 
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:447
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:453
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:461
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:452
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:458
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:466
 msgid "Delete Folder"
 msgstr ""
 
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:470
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:475
 msgid "No global areas have been added."
 msgstr "Δεν έχουν προστεθεί παγκόσμιες περιοχές."
 
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:472
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:477
 msgid "No stacks found in this folder."
 msgstr ""
 
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:482
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:487
 msgid "New Stack"
 msgstr ""
 
-#: concrete/single_pages/dashboard/blocks/stacks/view.php:496
+#: concrete/single_pages/dashboard/blocks/stacks/view.php:501
 msgid "Stack Name"
 msgstr "Όνομα Στοίβας"
 
@@ -23509,9 +23527,9 @@ msgstr "Βεβαιωθείτε ότι το site σας είναι ορατό σ�
 #: concrete/single_pages/dashboard/system/seo/urls.php:72
 msgid ""
 "Check this checkbox to remove index.php from your URLs. You will be given "
-"code to place in a file named .htaccess in your web root. Concrete5 will try"
+"code to place in a file named .htaccess in your web root. concrete5 will try"
 " and place this code in the file for you."
-msgstr "Επιλέξτε αυτό το checkbox για να καταργήσετε το index.php από τις διευθύνσεις URL σας. Θα σας δοθεί κώδικας για να τοποθετήσετε σε ένα αρχείο με όνομα .htaccess στη ρίζα της ιστοσελίδα σας. Το Concrete5 θα προσπαθήσουμε να τοποθετήσετε αυτόν τον κώδικα στο αρχείο για σας."
+msgstr ""
 
 #: concrete/single_pages/dashboard/system/seo/urls.php:79
 msgid ""
@@ -24519,8 +24537,8 @@ msgid "Enable Help"
 msgstr "Ενεργοποίηση βοήθειας"
 
 #: concrete/single_pages/dashboard/system/basics/editor.php:5
-msgid "Concrete5 Extensions"
-msgstr "Επεκτάσεις concrete5 "
+msgid "concrete5 Extensions"
+msgstr ""
 
 #: concrete/single_pages/dashboard/system/basics/editor.php:8
 msgid "Enable file selection from file manager."
