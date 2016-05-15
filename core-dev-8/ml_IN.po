@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-05-13T06:00:21+02:00\n"
-"PO-Revision-Date: 2016-05-13 08:48+0000\n"
+"POT-Creation-Date: 2016-05-14T06:00:16+02:00\n"
+"PO-Revision-Date: 2016-05-14 09:12+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Malayalam (India) (http://www.transifex.com/concrete5/concrete5/language/ml_IN/)\n"
 "MIME-Version: 1.0\n"
@@ -4547,7 +4547,7 @@ msgstr ""
 #: concrete/single_pages/dashboard/system/conversations/bannedwords.php:71
 #: concrete/single_pages/dashboard/system/backup/backup.php:119
 #: concrete/single_pages/dashboard/reports/forms/legacy.php:141
-#: concrete/single_pages/dashboard/reports/forms/legacy.php:289
+#: concrete/single_pages/dashboard/reports/forms/legacy.php:247
 #: concrete/single_pages/dashboard/pages/types/view.php:86
 #: concrete/single_pages/dashboard/pages/types/view.php:145
 #: concrete/single_pages/account/messages.php:62
@@ -5658,7 +5658,7 @@ msgid "Confirm Change"
 msgstr ""
 
 #: concrete/tools/pages/permissions_access.php:118
-#: concrete/single_pages/dashboard/system/registration/global_password_reset.php:44
+#: concrete/single_pages/dashboard/system/registration/global_password_reset.php:48
 msgid "Warning:"
 msgstr ""
 
@@ -7837,7 +7837,7 @@ msgstr ""
 #: concrete/single_pages/dashboard/users/points/assign.php:10
 #: concrete/single_pages/dashboard/users/points/view.php:13
 #: concrete/single_pages/dashboard/users/points/view.php:33
-#: concrete/single_pages/dashboard/reports/forms/legacy.php:240
+#: concrete/single_pages/dashboard/reports/forms/legacy.php:198
 #: concrete/single_pages/dashboard/reports/logs.php:70
 #: concrete/single_pages/dashboard/reports/statistics.php:90
 #: concrete/single_pages/dashboard/reports/surveys.php:33
@@ -7845,7 +7845,7 @@ msgid "User"
 msgstr ""
 
 #: concrete/controllers/single_page/dashboard/reports/forms/legacy.php:106
-#: concrete/single_pages/dashboard/reports/forms/legacy.php:269
+#: concrete/single_pages/dashboard/reports/forms/legacy.php:227
 msgid "File not found"
 msgstr ""
 
@@ -7857,7 +7857,7 @@ msgstr ""
 #: concrete/src/Page/Search/ColumnSet/DefaultSet.php:36
 #: concrete/blocks/page_title/form_add_edit.php:59
 #: concrete/single_pages/dashboard/system/backup/backup.php:100
-#: concrete/single_pages/dashboard/reports/forms/legacy.php:237
+#: concrete/single_pages/dashboard/reports/forms/legacy.php:195
 #: concrete/single_pages/dashboard/reports/surveys.php:32
 msgid "Date"
 msgstr ""
@@ -11734,7 +11734,7 @@ msgstr ""
 msgid "You do not have permission to publish a page in this location."
 msgstr ""
 
-#: concrete/src/Page/Collection/Version/Version.php:312
+#: concrete/src/Page/Collection/Version/Version.php:307
 #, php-format
 msgid "New Version %s"
 msgstr ""
@@ -24518,51 +24518,59 @@ msgstr ""
 msgid "Enable"
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/registration/global_password_reset.php:10
+#. a text to be asked to the users to confirm the global password reset
+#. operation
+#: concrete/single_pages/dashboard/system/registration/global_password_reset.php:3
+msgctxt "GlobalPasswordReset"
+msgid "RESET"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/registration/global_password_reset.php:14
 msgid ""
 "Global Password Reset allows Administrators to force reset all user "
 "passwords."
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/registration/global_password_reset.php:11
+#: concrete/single_pages/dashboard/system/registration/global_password_reset.php:15
 msgid ""
 "The system signs out all users, resets their passwords and forces them to "
 "choose a new one."
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/registration/global_password_reset.php:14
+#: concrete/single_pages/dashboard/system/registration/global_password_reset.php:18
 msgid "Note:"
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/registration/global_password_reset.php:14
+#: concrete/single_pages/dashboard/system/registration/global_password_reset.php:18
 msgid ""
 "If you have overridden the standard concrete5 authentication system or you "
 "have created your own, you may not need to reset all passwords."
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/registration/global_password_reset.php:20
+#: concrete/single_pages/dashboard/system/registration/global_password_reset.php:24
 msgid "Edit message"
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/registration/global_password_reset.php:23
+#: concrete/single_pages/dashboard/system/registration/global_password_reset.php:27
 msgid "This message will be shown to users the next time they log in."
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/registration/global_password_reset.php:32
+#: concrete/single_pages/dashboard/system/registration/global_password_reset.php:36
 msgid "Confirmation"
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/registration/global_password_reset.php:35
-msgid "Type \"RESET\" in the following box to proceed."
+#: concrete/single_pages/dashboard/system/registration/global_password_reset.php:39
+#, php-format
+msgid "Type \"%s\" in the following box to proceed."
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/registration/global_password_reset.php:44
+#: concrete/single_pages/dashboard/system/registration/global_password_reset.php:48
 msgid ""
 "This action will automatically log out all users (including yourself) and "
 "reset their passwords."
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/registration/global_password_reset.php:51
+#: concrete/single_pages/dashboard/system/registration/global_password_reset.php:55
 msgid "Reset all passwords"
 msgstr ""
 
@@ -25247,7 +25255,7 @@ msgid "Clear Log"
 msgstr ""
 
 #: concrete/single_pages/dashboard/system/optimization/query_log.php:76
-#: concrete/single_pages/dashboard/reports/forms/legacy.php:214
+#: concrete/single_pages/dashboard/reports/forms/legacy.php:172
 #: concrete/single_pages/dashboard/reports/logs.php:9
 msgid "Export to CSV"
 msgstr ""
@@ -25284,24 +25292,24 @@ msgstr ""
 msgid "Delete Submissions"
 msgstr ""
 
-#: concrete/single_pages/dashboard/reports/forms/legacy.php:198
+#: concrete/single_pages/dashboard/reports/forms/legacy.php:156
 msgid "There are no available forms in your site."
 msgstr ""
 
-#: concrete/single_pages/dashboard/reports/forms/legacy.php:203
+#: concrete/single_pages/dashboard/reports/forms/legacy.php:161
 #, php-format
 msgid "Responses to %s"
 msgstr ""
 
-#: concrete/single_pages/dashboard/reports/forms/legacy.php:209
+#: concrete/single_pages/dashboard/reports/forms/legacy.php:167
 msgid "No one has yet submitted this form."
 msgstr ""
 
-#: concrete/single_pages/dashboard/reports/forms/legacy.php:226
+#: concrete/single_pages/dashboard/reports/forms/legacy.php:184
 msgid "* Scroll right to view full results"
 msgstr ""
 
-#: concrete/single_pages/dashboard/reports/forms/legacy.php:257
+#: concrete/single_pages/dashboard/reports/forms/legacy.php:215
 #, php-format
 msgid "(User ID: %s)"
 msgstr ""
