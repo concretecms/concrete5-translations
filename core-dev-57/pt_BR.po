@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-04-28T06:00:30+02:00\n"
-"PO-Revision-Date: 2016-04-28 18:23+0000\n"
+"POT-Creation-Date: 2016-05-10T06:00:27+02:00\n"
+"PO-Revision-Date: 2016-05-19 19:28+0000\n"
 "Last-Translator: Marcelo Ghelman <marcelo.ghelman@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/concrete5/concrete5/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
@@ -2978,7 +2978,7 @@ msgid "SecurImage (Default)"
 msgstr "SecurImage (Padrão)"
 
 #: concrete/config/install/base/permissions.xml:285
-#: concrete/src/Workflow/BasicWorkflow.php:115
+#: concrete/src/Workflow/BasicWorkflow.php:113
 msgid "Basic Workflow"
 msgstr "Fluxo de trabalho básico"
 
@@ -3833,7 +3833,7 @@ msgstr "Pertencer a que Grupo quando cadastrar"
 #: concrete/elements/custom_style.php:98
 #: concrete/elements/custom_style.php:109
 #: concrete/views/dialogs/file/upload_complete.php:53
-#: concrete/blocks/image_slider/form_setup_html.php:338
+#: concrete/blocks/image_slider/form_setup_html.php:340
 #: concrete/blocks/image/form.php:49
 #: concrete/blocks/form/form_setup_html.php:94
 #: concrete/blocks/feature/form.php:34 concrete/blocks/survey/edit.php:48
@@ -4555,6 +4555,7 @@ msgid "Unable to get contents of incoming/ directory"
 msgstr "Não foi possível obter conteúdo do diretório incoming/"
 
 #: concrete/tools/files/import.php:91
+#: concrete/src/File/Search/ColumnSet/Available.php:14
 #: concrete/elements/files/properties.php:17
 #: concrete/views/dialogs/file/properties.php:91
 msgid "Filename"
@@ -5246,7 +5247,7 @@ msgstr "Objeto de mensagem inválido."
 msgid "You do not have access to edit this message."
 msgstr "Você não tem acesso para editar esta mensagem."
 
-#: concrete/tools/conversations/view_ajax.php:24
+#: concrete/tools/conversations/view_ajax.php:27
 #: concrete/blocks/core_conversation/form.php:13
 msgid "Add Message"
 msgstr "Adicionar Mensagem"
@@ -5359,7 +5360,7 @@ msgstr "Modelo personalizado"
 #: concrete/src/File/Version.php:488
 #: concrete/elements/files/properties.php:138
 #: concrete/views/panels/details/page/attributes.php:60
-#: concrete/blocks/image_slider/form_setup_html.php:331
+#: concrete/blocks/image_slider/form_setup_html.php:333
 #: concrete/blocks/faq/form_setup_html.php:57
 #: concrete/blocks/faq/form_setup_html.php:87
 #: concrete/single_pages/dashboard/blocks/types/view.php:8
@@ -8389,7 +8390,7 @@ msgstr "Imagem atual"
 #: concrete/src/File/Type/Type.php:67
 #: concrete/src/Backup/ContentImporter/ValueInspector/Item/ImageItem.php:10
 #: concrete/elements/custom_style.php:179
-#: concrete/blocks/image_slider/form_setup_html.php:316
+#: concrete/blocks/image_slider/form_setup_html.php:318
 #: concrete/blocks/image/controller.php:37 concrete/blocks/image/form.php:32
 #: concrete/single_pages/dashboard/users/add_group.php:83
 #: concrete/single_pages/dashboard/users/groups.php:58
@@ -9069,7 +9070,7 @@ msgstr "Tabela"
 #: concrete/controllers/frontend/assets_localization.php:353
 #: concrete/elements/conversation/display.php:39
 #: concrete/elements/conversation/message.php:117
-#: concrete/blocks/image_slider/form_setup_html.php:336
+#: concrete/blocks/image_slider/form_setup_html.php:338
 #: concrete/blocks/feature/form.php:30 concrete/blocks/file/add.php:10
 msgid "Link"
 msgstr "Link"
@@ -9209,7 +9210,7 @@ msgstr "Apagar cabeçalho"
 #: concrete/src/File/Version.php:485
 #: concrete/elements/files/properties.php:132
 #: concrete/views/dialogs/file/properties.php:92
-#: concrete/blocks/image_slider/form_setup_html.php:327
+#: concrete/blocks/image_slider/form_setup_html.php:329
 #: concrete/blocks/tags/tag_form.php:10 concrete/blocks/image/form.php:72
 #: concrete/blocks/search/form_setup_html.php:30
 #: concrete/blocks/feature/form.php:15
@@ -11532,17 +11533,17 @@ msgstr "Aprovar"
 msgid "Originally requested by %s."
 msgstr "Requisitado originalmente por %s."
 
-#: concrete/src/Workflow/BasicWorkflow.php:88
+#: concrete/src/Workflow/BasicWorkflow.php:86
 #, php-format
 msgid "On %s, user %s submitted the following request: %s"
 msgstr "Em %s, o usuário %s enviou o seguinte pedido: %s"
 
-#: concrete/src/Workflow/BasicWorkflow.php:135
+#: concrete/src/Workflow/BasicWorkflow.php:133
 #, php-format
 msgid "%s Submitted by <strong>%s</strong> on %s."
 msgstr "%s Enviado por <strong>%s</strong> em %s."
 
-#: concrete/src/Workflow/BasicWorkflow.php:161
+#: concrete/src/Workflow/BasicWorkflow.php:159
 #, php-format
 msgid ""
 "On %s, user %s cancelled the following request: \n"
@@ -12153,7 +12154,7 @@ msgstr "Seu site"
 msgid "Hide"
 msgstr "Ocultar"
 
-#: concrete/src/Application/Application.php:426
+#: concrete/src/Application/Application.php:428
 msgid ""
 "Invalid path traversal. Please make this request with a valid HTTP client."
 msgstr "Travessia de caminho inválido. Por favor faça este pedido com um cliente HTTP válido."
@@ -18626,7 +18627,7 @@ msgid "Maximum Slide Width (0 means no limit)"
 msgstr "Largura Máxima de Slide (0 significa sem limite)"
 
 #. short for pixels
-#: concrete/blocks/image_slider/form_setup_html.php:306
+#: concrete/blocks/image_slider/form_setup_html.php:307
 #: concrete/blocks/youtube/form_setup_html.php:54
 #: concrete/blocks/youtube/form_setup_html.php:61
 #: concrete/single_pages/dashboard/system/files/image_uploading.php:28
@@ -18634,36 +18635,36 @@ msgstr "Largura Máxima de Slide (0 significa sem limite)"
 msgid "px"
 msgstr "px"
 
-#: concrete/blocks/image_slider/form_setup_html.php:312
+#: concrete/blocks/image_slider/form_setup_html.php:314
 msgid "Collapse Slide"
 msgstr "Desmontar Slides"
 
-#: concrete/blocks/image_slider/form_setup_html.php:312
+#: concrete/blocks/image_slider/form_setup_html.php:314
 msgid "Edit Slide"
 msgstr "Editar Slide"
 
-#: concrete/blocks/image_slider/form_setup_html.php:313
+#: concrete/blocks/image_slider/form_setup_html.php:315
 #: concrete/single_pages/dashboard/blocks/types/view.php:31
 #: concrete/single_pages/dashboard/pages/themes/view.php:54
 #: concrete/single_pages/dashboard/pages/themes/view.php:56
 msgid "Remove"
 msgstr "Remover"
 
-#: concrete/blocks/image_slider/form_setup_html.php:339
+#: concrete/blocks/image_slider/form_setup_html.php:341
 #: concrete/blocks/image/form.php:50 concrete/blocks/feature/form.php:35
 msgid "Another Page"
 msgstr "Outra Página"
 
-#: concrete/blocks/image_slider/form_setup_html.php:340
+#: concrete/blocks/image_slider/form_setup_html.php:342
 #: concrete/blocks/image/form.php:51 concrete/blocks/feature/form.php:36
 msgid "External URL"
 msgstr "URL externa"
 
-#: concrete/blocks/image_slider/form_setup_html.php:344
+#: concrete/blocks/image_slider/form_setup_html.php:346
 msgid "URL:"
 msgstr "URL:"
 
-#: concrete/blocks/image_slider/form_setup_html.php:348
+#: concrete/blocks/image_slider/form_setup_html.php:350
 #: concrete/blocks/image/form.php:56 concrete/blocks/feature/form.php:41
 msgid "Choose Page:"
 msgstr "Escolha a pagína:"
