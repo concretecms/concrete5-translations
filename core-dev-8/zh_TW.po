@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-05-24T06:00:16+02:00\n"
-"PO-Revision-Date: 2016-05-24 08:47+0000\n"
+"POT-Creation-Date: 2016-05-25T06:00:23+02:00\n"
+"PO-Revision-Date: 2016-05-25 09:13+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Chinese (Taiwan) (http://www.transifex.com/concrete5/concrete5/language/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -5142,7 +5142,7 @@ msgstr "無增加任何用戶或群組."
 #: concrete/single_pages/dashboard/system/express/entities/forms/details.php:22
 #: concrete/single_pages/dashboard/system/express/entities/forms/edit_control.php:31
 #: concrete/single_pages/dashboard/system/express/entities/associations/add.php:31
-#: concrete/single_pages/dashboard/system/express/entities/add.php:23
+#: concrete/single_pages/dashboard/system/express/entities/add.php:26
 #: concrete/single_pages/dashboard/system/express/entities/customize_search.php:22
 #: concrete/single_pages/dashboard/system/express/entities/edit.php:81
 #: concrete/single_pages/dashboard/system/permissions/antispam.php:63
@@ -5543,7 +5543,7 @@ msgstr "自訂範本"
 #: concrete/single_pages/dashboard/blocks/types/view.php:9
 #: concrete/single_pages/dashboard/users/add_group.php:29
 #: concrete/single_pages/dashboard/users/groups.php:45
-#: concrete/single_pages/dashboard/system/express/entities/add.php:15
+#: concrete/single_pages/dashboard/system/express/entities/add.php:17
 #: concrete/single_pages/dashboard/system/express/entities/edit.php:31
 #: concrete/single_pages/dashboard/system/express/entities/view_details.php:22
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:236
@@ -7207,48 +7207,58 @@ msgstr ""
 msgid "Add Data Object"
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:20
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:124
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:26
+msgid ""
+"You must create a handle for your data object. It may contain only lowercase"
+" letters and underscores."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:30
+msgid ""
+"You must give your data object a name. It may contain only uppercase or "
+"lowercase letters."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:59
+msgid "Object added successfully."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:80
+msgid "Object Details"
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:100
+msgid "** Select Form"
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:116
+#: concrete/elements/dashboard/express/detail_navigation.php:17
+msgid "Edit Entity"
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:132
 msgid "You must give your data object a name."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:23
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:127
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:135
 msgid ""
 "You must create a handle for your data object. The handle must be all "
 "lowercase, and contain no spaces."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:51
-msgid "Object added successfully."
-msgstr ""
-
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:72
-msgid "Object Details"
-msgstr ""
-
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:92
-msgid "** Select Form"
-msgstr ""
-
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:108
-#: concrete/elements/dashboard/express/detail_navigation.php:17
-msgid "Edit Entity"
-msgstr ""
-
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:130
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:138
 msgid "You must choose where the results for your entity are going live."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:143
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:151
 msgid "You must specify a valid default view form."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:146
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:154
 msgid "You must specify a valid default edit form."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:163
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:171
 msgid "Object updated successfully."
 msgstr ""
 
@@ -11579,15 +11589,15 @@ msgid ""
 "directory: %s"
 msgstr ""
 
+#: concrete/src/Error/ErrorList/Error/FieldNotPresentError.php:20
+#, php-format
+msgid "The field %s is required."
+msgstr ""
+
 #: concrete/src/Error/Handler/ErrorHandler.php:43
 #: concrete/src/Error/Handler/JsonErrorHandler.php:20
 msgid "An error occurred while processing this request."
 msgstr "當處理此要求時發生一個錯誤"
-
-#: concrete/src/Error/ErrorBag/Error/FieldNotPresentError.php:20
-#, php-format
-msgid "The field %s is required."
-msgstr ""
 
 #: concrete/src/Legacy/FileList.php:127
 #: concrete/src/Backup/ContentExporter.php:227
@@ -16416,7 +16426,7 @@ msgstr "%s: 基本詳細資料"
 #: concrete/views/dialogs/stack/usage.php:8
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:50
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:115
-#: concrete/single_pages/dashboard/system/express/entities/add.php:11
+#: concrete/single_pages/dashboard/system/express/entities/add.php:12
 #: concrete/single_pages/dashboard/system/express/entities/edit.php:27
 #: concrete/single_pages/dashboard/system/express/entities/view_details.php:19
 #: concrete/single_pages/dashboard/system/attributes/sets.php:32
@@ -16993,7 +17003,7 @@ msgstr "刪除工作流程"
 #: concrete/single_pages/dashboard/express/entries/view_entry.php:4
 #: concrete/single_pages/dashboard/users/points/actions.php:75
 #: concrete/single_pages/dashboard/users/points/assign.php:48
-#: concrete/single_pages/dashboard/system/express/entities/add.php:22
+#: concrete/single_pages/dashboard/system/express/entities/add.php:25
 #: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:65
 #: concrete/single_pages/dashboard/pages/types/attributes.php:34
 #: concrete/single_pages/dashboard/pages/types/form.php:30
@@ -23919,6 +23929,20 @@ msgstr ""
 #: concrete/single_pages/dashboard/system/express/entities/associations/view_association.php:13
 msgid ""
 "Are you sure you want to delete this association? This cannot be undone."
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/express/entities/add.php:9
+msgid ""
+"The name is how your entity will appear in the Dashboard. It may only "
+"contain letters."
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/express/entities/add.php:14
+msgid "A unique string consisting of lowercase letters and underscores only."
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/express/entities/add.php:19
+msgid "An internal description. This is not publicly displayed."
 msgstr ""
 
 #: concrete/single_pages/dashboard/system/express/entities/associations.php:43

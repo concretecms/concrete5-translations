@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-05-24T06:00:16+02:00\n"
-"PO-Revision-Date: 2016-05-24 08:47+0000\n"
+"POT-Creation-Date: 2016-05-25T06:00:23+02:00\n"
+"PO-Revision-Date: 2016-05-25 09:13+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Dutch (Netherlands) (http://www.transifex.com/concrete5/concrete5/language/nl_NL/)\n"
 "MIME-Version: 1.0\n"
@@ -5156,7 +5156,7 @@ msgstr "Geen gebruikers of groepen toegevoegd."
 #: concrete/single_pages/dashboard/system/express/entities/forms/details.php:22
 #: concrete/single_pages/dashboard/system/express/entities/forms/edit_control.php:31
 #: concrete/single_pages/dashboard/system/express/entities/associations/add.php:31
-#: concrete/single_pages/dashboard/system/express/entities/add.php:23
+#: concrete/single_pages/dashboard/system/express/entities/add.php:26
 #: concrete/single_pages/dashboard/system/express/entities/customize_search.php:22
 #: concrete/single_pages/dashboard/system/express/entities/edit.php:81
 #: concrete/single_pages/dashboard/system/permissions/antispam.php:63
@@ -5557,7 +5557,7 @@ msgstr "Aangepast thema"
 #: concrete/single_pages/dashboard/blocks/types/view.php:9
 #: concrete/single_pages/dashboard/users/add_group.php:29
 #: concrete/single_pages/dashboard/users/groups.php:45
-#: concrete/single_pages/dashboard/system/express/entities/add.php:15
+#: concrete/single_pages/dashboard/system/express/entities/add.php:17
 #: concrete/single_pages/dashboard/system/express/entities/edit.php:31
 #: concrete/single_pages/dashboard/system/express/entities/view_details.php:22
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:236
@@ -7223,48 +7223,58 @@ msgstr "Formulier details"
 msgid "Add Data Object"
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:20
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:124
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:26
+msgid ""
+"You must create a handle for your data object. It may contain only lowercase"
+" letters and underscores."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:30
+msgid ""
+"You must give your data object a name. It may contain only uppercase or "
+"lowercase letters."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:59
+msgid "Object added successfully."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:80
+msgid "Object Details"
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:100
+msgid "** Select Form"
+msgstr "** Selecteer formulier "
+
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:116
+#: concrete/elements/dashboard/express/detail_navigation.php:17
+msgid "Edit Entity"
+msgstr "Bewerken Entiteit"
+
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:132
 msgid "You must give your data object a name."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:23
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:127
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:135
 msgid ""
 "You must create a handle for your data object. The handle must be all "
 "lowercase, and contain no spaces."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:51
-msgid "Object added successfully."
-msgstr ""
-
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:72
-msgid "Object Details"
-msgstr ""
-
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:92
-msgid "** Select Form"
-msgstr "** Selecteer formulier "
-
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:108
-#: concrete/elements/dashboard/express/detail_navigation.php:17
-msgid "Edit Entity"
-msgstr "Bewerken Entiteit"
-
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:130
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:138
 msgid "You must choose where the results for your entity are going live."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:143
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:151
 msgid "You must specify a valid default view form."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:146
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:154
 msgid "You must specify a valid default edit form."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:163
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:171
 msgid "Object updated successfully."
 msgstr ""
 
@@ -11602,15 +11612,15 @@ msgid ""
 "directory: %s"
 msgstr ""
 
+#: concrete/src/Error/ErrorList/Error/FieldNotPresentError.php:20
+#, php-format
+msgid "The field %s is required."
+msgstr "Het veld %s is verplicht."
+
 #: concrete/src/Error/Handler/ErrorHandler.php:43
 #: concrete/src/Error/Handler/JsonErrorHandler.php:20
 msgid "An error occurred while processing this request."
 msgstr "Er is een fout opgetreden met het verwerken van dit proces."
-
-#: concrete/src/Error/ErrorBag/Error/FieldNotPresentError.php:20
-#, php-format
-msgid "The field %s is required."
-msgstr "Het veld %s is verplicht."
 
 #: concrete/src/Legacy/FileList.php:127
 #: concrete/src/Backup/ContentExporter.php:227
@@ -13775,7 +13785,7 @@ msgstr "North Carolina"
 #: concrete/src/Localization/Service/StatesProvincesList.php:50
 msgctxt "US State"
 msgid "North Dakota"
-msgstr ""
+msgstr "North Dakota"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:51
 msgctxt "US State"
@@ -13860,7 +13870,7 @@ msgstr "Utah"
 #: concrete/src/Localization/Service/StatesProvincesList.php:67
 msgctxt "US State"
 msgid "Virginia"
-msgstr ""
+msgstr "Virginia"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:68
 msgctxt "US State"
@@ -13880,7 +13890,7 @@ msgstr "Wisconsin"
 #: concrete/src/Localization/Service/StatesProvincesList.php:71
 msgctxt "US State"
 msgid "West Virginia"
-msgstr ""
+msgstr "Graafschap"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:72
 msgctxt "US State"
@@ -13895,17 +13905,17 @@ msgstr "Alberta"
 #: concrete/src/Localization/Service/StatesProvincesList.php:77
 msgctxt "Canadian Province"
 msgid "British Columbia"
-msgstr ""
+msgstr "Brits-Columbia"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:78
 msgctxt "Canadian Province"
 msgid "Manitoba"
-msgstr ""
+msgstr "Manitoba"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:79
 msgctxt "Canadian Province"
 msgid "New Brunswick"
-msgstr ""
+msgstr "New Brunswick"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:80
 msgctxt "Canadian Province"
@@ -13915,17 +13925,17 @@ msgstr "Newfoundland"
 #: concrete/src/Localization/Service/StatesProvincesList.php:81
 msgctxt "Canadian Province"
 msgid "Northwest Territories"
-msgstr ""
+msgstr "Northwest Territories"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:82
 msgctxt "Canadian Province"
 msgid "Nova Scotia"
-msgstr ""
+msgstr "Nova Scotia"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:83
 msgctxt "Canadian Province"
 msgid "Nunavut"
-msgstr ""
+msgstr "Nunavut"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:84
 msgctxt "Canadian Province"
@@ -13935,7 +13945,7 @@ msgstr "Ontario"
 #: concrete/src/Localization/Service/StatesProvincesList.php:85
 msgctxt "Canadian Province"
 msgid "Prince Edward Island"
-msgstr ""
+msgstr "Prins Edwardeiland"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:86
 msgctxt "Canadian Province"
@@ -13945,7 +13955,7 @@ msgstr "Quebec"
 #: concrete/src/Localization/Service/StatesProvincesList.php:87
 msgctxt "Canadian Province"
 msgid "Saskatchewan"
-msgstr ""
+msgstr "Saskatchewan"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:88
 msgctxt "Canadian Province"
@@ -13955,22 +13965,22 @@ msgstr "Yukon"
 #: concrete/src/Localization/Service/StatesProvincesList.php:92
 msgctxt "Australian State"
 msgid "Australian Antarctic Territory"
-msgstr ""
+msgstr "Australisch Antarctisch Territorium"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:93
 msgctxt "Australian State"
 msgid "Australian Capital Territory"
-msgstr ""
+msgstr "Australisch Hoofdstedelijk Territorium"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:94
 msgctxt "Australian State"
 msgid "New South Wales"
-msgstr ""
+msgstr "Nieuw-Zuid-Wales"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:95
 msgctxt "Australian State"
 msgid "Northern Territory"
-msgstr ""
+msgstr "Noordelijk Territorium"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:96
 msgctxt "Australian State"
@@ -13980,7 +13990,7 @@ msgstr "Queensland"
 #: concrete/src/Localization/Service/StatesProvincesList.php:97
 msgctxt "Australian State"
 msgid "South Australia"
-msgstr ""
+msgstr "Zuid-Australië"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:98
 msgctxt "Australian State"
@@ -13995,12 +14005,12 @@ msgstr "Victoria"
 #: concrete/src/Localization/Service/StatesProvincesList.php:100
 msgctxt "Australian State"
 msgid "Western Australia"
-msgstr ""
+msgstr "West-Australië"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:104
 msgctxt "German State"
 msgid "Brandenburg"
-msgstr ""
+msgstr "Brandenburg"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:105
 msgctxt "German State"
@@ -14010,107 +14020,107 @@ msgstr "Berlijn"
 #: concrete/src/Localization/Service/StatesProvincesList.php:106
 msgctxt "German State"
 msgid "Baden-Württemberg"
-msgstr ""
+msgstr "Baden-Württemberg"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:107
 msgctxt "German State"
 msgid "Bavaria"
-msgstr ""
+msgstr "Bavaria"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:108
 msgctxt "German State"
 msgid "Bremen"
-msgstr ""
+msgstr "Bremen"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:109
 msgctxt "German State"
 msgid "Hesse"
-msgstr ""
+msgstr "Hessen"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:110
 msgctxt "German State"
 msgid "Hamburg"
-msgstr ""
+msgstr "Hamburg"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:111
 msgctxt "German State"
 msgid "Mecklenburg-Vorpommern"
-msgstr ""
+msgstr "Mecklenburg-Voorpommeren"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:112
 msgctxt "German State"
 msgid "Lower Saxony"
-msgstr ""
+msgstr "Nedersaksen"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:113
 msgctxt "German State"
 msgid "North Rhine-Westphalia"
-msgstr ""
+msgstr "Noordrijn-Westfalen"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:114
 msgctxt "German State"
 msgid "Rhineland-Palatinate"
-msgstr ""
+msgstr "Rijnland-Palts"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:115
 msgctxt "German State"
 msgid "Schleswig-Holstein"
-msgstr ""
+msgstr "Sleeswijk-Holstein"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:116
 msgctxt "German State"
 msgid "Saarland"
-msgstr ""
+msgstr "Saarland"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:117
 msgctxt "German State"
 msgid "Saxony"
-msgstr ""
+msgstr "Saksen"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:118
 msgctxt "German State"
 msgid "Saxony-Anhalt"
-msgstr ""
+msgstr "Saksen-Anhalt"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:119
 msgctxt "German State"
 msgid "Thuringia"
-msgstr ""
+msgstr "Thüringen"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:123
 msgctxt "French Department"
 msgid "Ain"
-msgstr ""
+msgstr "Ain"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:124
 msgctxt "French Department"
 msgid "Aisne"
-msgstr ""
+msgstr "Aisne"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:125
 msgctxt "French Department"
 msgid "Allier"
-msgstr ""
+msgstr "Allier"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:126
 msgctxt "French Department"
 msgid "Alpes-de-Haute-Provence"
-msgstr ""
+msgstr "Alpes-de-Haute-Provence"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:127
 msgctxt "French Department"
 msgid "Hautes-Alpes"
-msgstr ""
+msgstr "Hautes-Alpes"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:128
 msgctxt "French Department"
 msgid "Alpes-Maritimes"
-msgstr ""
+msgstr "Alpes-Maritimes"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:129
 msgctxt "French Department"
 msgid "Ardèche"
-msgstr ""
+msgstr "Ardèche"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:130
 msgctxt "French Department"
@@ -14375,27 +14385,27 @@ msgstr ""
 #: concrete/src/Localization/Service/StatesProvincesList.php:182
 msgctxt "French Department"
 msgid "Nord"
-msgstr ""
+msgstr "Noord"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:183
 msgctxt "French Department"
 msgid "Oise"
-msgstr ""
+msgstr "Oise"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:184
 msgctxt "French Department"
 msgid "Orne"
-msgstr ""
+msgstr "Orne"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:185
 msgctxt "French Department"
 msgid "Pas-de-Calais"
-msgstr ""
+msgstr "Pas-de-Calais"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:186
 msgctxt "French Department"
 msgid "Puy-de-Dôme"
-msgstr ""
+msgstr "Puy-de-Dôme"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:187
 msgctxt "French Department"
@@ -14425,367 +14435,367 @@ msgstr ""
 #: concrete/src/Localization/Service/StatesProvincesList.php:192
 msgctxt "French Department"
 msgid "Rhône"
-msgstr ""
+msgstr "Rhône"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:193
 msgctxt "French Department"
 msgid "Metropolis of Lyon"
-msgstr ""
+msgstr "Metropole de Lyon"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:194
 msgctxt "French Department"
 msgid "Haute-Saône"
-msgstr ""
+msgstr "Haute-Saône"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:195
 msgctxt "French Department"
 msgid "Saône-et-Loire"
-msgstr ""
+msgstr "Saône-et-Loire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:196
 msgctxt "French Department"
 msgid "Sarthe"
-msgstr ""
+msgstr "Sarthe"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:197
 msgctxt "French Department"
 msgid "Savoie"
-msgstr ""
+msgstr "Savoie"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:198
 msgctxt "French Department"
 msgid "Haute-Savoie"
-msgstr ""
+msgstr "Haute-Savoie"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:199
 msgctxt "French Department"
 msgid "Paris"
-msgstr ""
+msgstr "Parijs"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:200
 msgctxt "French Department"
 msgid "Seine-Maritime"
-msgstr ""
+msgstr "Seine-Maritime"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:201
 msgctxt "French Department"
 msgid "Seine-et-Marne"
-msgstr ""
+msgstr "Seine-et-Marne"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:202
 msgctxt "French Department"
 msgid "Yvelines"
-msgstr ""
+msgstr "Yvelines"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:203
 msgctxt "French Department"
 msgid "Deux-Sèvres"
-msgstr ""
+msgstr "Deux-Sèvres"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:204
 msgctxt "French Department"
 msgid "Somme"
-msgstr ""
+msgstr "Somme"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:205
 msgctxt "French Department"
 msgid "Tarn"
-msgstr ""
+msgstr "Tarn"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:206
 msgctxt "French Department"
 msgid "Tarn-et-Garonne"
-msgstr ""
+msgstr "Tarn-et-Garonne"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:207
 msgctxt "French Department"
 msgid "Var"
-msgstr ""
+msgstr "Var"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:208
 msgctxt "French Department"
 msgid "Vaucluse"
-msgstr ""
+msgstr "Vaucluse"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:209
 msgctxt "French Department"
 msgid "Vendée"
-msgstr ""
+msgstr "Vendée"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:210
 msgctxt "French Department"
 msgid "Vienne"
-msgstr ""
+msgstr "Vienne"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:211
 msgctxt "French Department"
 msgid "Haute-Vienne"
-msgstr ""
+msgstr "Haute-Vienne"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:212
 msgctxt "French Department"
 msgid "Vosges"
-msgstr ""
+msgstr "Vogezen"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:213
 msgctxt "French Department"
 msgid "Yonne"
-msgstr ""
+msgstr "Yonne"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:214
 msgctxt "French Department"
 msgid "Territoire de Belfort"
-msgstr ""
+msgstr "Territoire de Belfort"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:215
 msgctxt "French Department"
 msgid "Essonne"
-msgstr ""
+msgstr "Essonne"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:216
 msgctxt "French Department"
 msgid "Hauts-de-Seine"
-msgstr ""
+msgstr "Hauts-de-Seine"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:217
 msgctxt "French Department"
 msgid "Seine-Saint-Denis"
-msgstr ""
+msgstr "Seine-Saint-Denis"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:218
 msgctxt "French Department"
 msgid "Val-de-Marne"
-msgstr ""
+msgstr "Val-de-Marne"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:219
 msgctxt "French Department"
 msgid "Val-d'Oise"
-msgstr ""
+msgstr "Val-d'Oise"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:220
 msgctxt "French Department"
 msgid "Guadeloupe"
-msgstr ""
+msgstr "Guadeloupe"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:221
 msgctxt "French Department"
 msgid "Martinique"
-msgstr ""
+msgstr "Martinique"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:222
 msgctxt "French Department"
 msgid "Guyane"
-msgstr ""
+msgstr "Frans-Guyana"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:223
 msgctxt "French Department"
 msgid "La Réunion"
-msgstr ""
+msgstr "Réunion"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:224
 msgctxt "French Department"
 msgid "Mayotte"
-msgstr ""
+msgstr "Mayotte"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:228
 msgctxt "British Region"
 msgid "Anglesey"
-msgstr ""
+msgstr "Anglesey"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:229
 msgctxt "British Region"
 msgid "Angus"
-msgstr ""
+msgstr "Angus"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:230
 msgctxt "British Region"
 msgid "Aberdeenshire"
-msgstr ""
+msgstr "Aberdeenshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:231
 msgctxt "British Region"
 msgid "Argyllshire"
-msgstr ""
+msgstr "Argyllshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:232
 msgctxt "British Region"
 msgid "Ayrshire"
-msgstr ""
+msgstr "Ayrshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:233
 msgctxt "British Region"
 msgid "Banffshire"
-msgstr ""
+msgstr "Banffshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:234
 msgctxt "British Region"
 msgid "Bedfordshire"
-msgstr ""
+msgstr "Bedfordshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:235
 msgctxt "British Region"
 msgid "Berkshire"
-msgstr ""
+msgstr "Berkshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:236
 msgctxt "British Region"
 msgid "Berwickshire"
-msgstr ""
+msgstr "Berwickshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:237
 msgctxt "British Region"
 msgid "Brecknockshire"
-msgstr ""
+msgstr "Brecknockshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:238
 msgctxt "British Region"
 msgid "Buckinghamshire"
-msgstr ""
+msgstr "Buckinghamshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:239
 msgctxt "British Region"
 msgid "Buteshire"
-msgstr ""
+msgstr "Buteshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:240
 msgctxt "British Region"
 msgid "Caernarfonshire"
-msgstr ""
+msgstr "Caernarfonshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:241
 msgctxt "British Region"
 msgid "Caithness"
-msgstr ""
+msgstr "Caithness"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:242
 msgctxt "British Region"
 msgid "Cambridgeshire"
-msgstr ""
+msgstr "Cambridgeshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:243
 msgctxt "British Region"
 msgid "Cardiganshire"
-msgstr ""
+msgstr "Cardiganshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:244
 msgctxt "British Region"
 msgid "Carmathenshire"
-msgstr ""
+msgstr "Carmathenshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:245
 msgctxt "British Region"
 msgid "Cheshire"
-msgstr ""
+msgstr "Cheshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:246
 msgctxt "British Region"
 msgid "Clackmannanshire"
-msgstr ""
+msgstr "Clackmannanshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:247
 msgctxt "British Region"
 msgid "Cornwall"
-msgstr ""
+msgstr "Cornwall"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:248
 msgctxt "British Region"
 msgid "Cromartyshire"
-msgstr ""
+msgstr "Cromartyshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:249
 msgctxt "British Region"
 msgid "Cumberland"
-msgstr ""
+msgstr "Cumberland"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:250
 msgctxt "British Region"
 msgid "Denbighshire"
-msgstr ""
+msgstr "Denbighshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:251
 msgctxt "British Region"
 msgid "Derbyshire"
-msgstr ""
+msgstr "Derbyshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:252
 msgctxt "British Region"
 msgid "Devon"
-msgstr ""
+msgstr "Devon"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:253
 msgctxt "British Region"
 msgid "Dorset"
-msgstr ""
+msgstr "Dorset"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:254
 msgctxt "British Region"
 msgid "Dumfriesshire"
-msgstr ""
+msgstr "Dumfriesshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:255
 msgctxt "British Region"
 msgid "Dunbartonshire"
-msgstr ""
+msgstr "Dunbartonshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:256
 msgctxt "British Region"
 msgid "Durham"
-msgstr ""
+msgstr "Durham"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:257
 msgctxt "British Region"
 msgid "East Lothian"
-msgstr ""
+msgstr "Oost-Lothian"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:258
 msgctxt "British Region"
 msgid "Essex"
-msgstr ""
+msgstr "Essex"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:259
 msgctxt "British Region"
 msgid "Fife"
-msgstr ""
+msgstr "Fife"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:260
 msgctxt "British Region"
 msgid "Flintshire"
-msgstr ""
+msgstr "Flintshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:261
 msgctxt "British Region"
 msgid "Glamorgan"
-msgstr ""
+msgstr "Glamorgan"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:262
 msgctxt "British Region"
 msgid "Gloucestershire"
-msgstr ""
+msgstr "Gloucestershire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:263
 msgctxt "British Region"
 msgid "Hampshire"
-msgstr ""
+msgstr "Hampshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:264
 msgctxt "British Region"
 msgid "Herefordshire"
-msgstr ""
+msgstr "Herefordshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:265
 msgctxt "British Region"
 msgid "Hertfordshire"
-msgstr ""
+msgstr "Hertfordshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:266
 msgctxt "British Region"
 msgid "Huntingdonshire"
-msgstr ""
+msgstr "Huntingdonshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:267
 msgctxt "British Region"
 msgid "Inverness-shire"
-msgstr ""
+msgstr "Inverness-shire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:268
 msgctxt "British Region"
@@ -14795,37 +14805,37 @@ msgstr "Kent"
 #: concrete/src/Localization/Service/StatesProvincesList.php:269
 msgctxt "British Region"
 msgid "Kincardineshire"
-msgstr ""
+msgstr "Kincardineshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:270
 msgctxt "British Region"
 msgid "Kinross-shire"
-msgstr ""
+msgstr "Kinross-shire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:271
 msgctxt "British Region"
 msgid "Kircudbrightshire"
-msgstr ""
+msgstr "Kircudbrightshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:272
 msgctxt "British Region"
 msgid "Lanarkshire"
-msgstr ""
+msgstr "Lanarkshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:273
 msgctxt "British Region"
 msgid "Lancashire"
-msgstr ""
+msgstr "Lancashire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:274
 msgctxt "British Region"
 msgid "Leicestershire"
-msgstr ""
+msgstr "Leicestershire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:275
 msgctxt "British Region"
 msgid "Lincolnshire"
-msgstr ""
+msgstr "Lincolnshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:276
 msgctxt "British Region"
@@ -14835,357 +14845,357 @@ msgstr "Londen"
 #: concrete/src/Localization/Service/StatesProvincesList.php:277
 msgctxt "British Region"
 msgid "Merioneth"
-msgstr ""
+msgstr "Merioneth"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:278
 msgctxt "British Region"
 msgid "Merseyside"
-msgstr ""
+msgstr "Merseyside"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:279
 msgctxt "British Region"
 msgid "Middlesex"
-msgstr ""
+msgstr "Middlesex"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:280
 msgctxt "British Region"
 msgid "Midlothian"
-msgstr ""
+msgstr "Midlothian"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:281
 msgctxt "British Region"
 msgid "Monmouthshire"
-msgstr ""
+msgstr "Monmouthshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:282
 msgctxt "British Region"
 msgid "Mongtomeryshire"
-msgstr ""
+msgstr "Mongtomeryshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:283
 msgctxt "British Region"
 msgid "Morayshire"
-msgstr ""
+msgstr "Morayshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:284
 msgctxt "British Region"
 msgid "Nairnshire"
-msgstr ""
+msgstr "Nairnshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:285
 msgctxt "British Region"
 msgid "Northamptonshire"
-msgstr ""
+msgstr "Northamptonshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:286
 msgctxt "British Region"
 msgid "Norfolk"
-msgstr ""
+msgstr "Norfolk"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:287
 msgctxt "British Region"
 msgid "Nottinghamshire"
-msgstr ""
+msgstr "Nottinghamshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:288
 msgctxt "British Region"
 msgid "Northumberland"
-msgstr ""
+msgstr "Northumberland"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:289
 msgctxt "British Region"
 msgid "Orkeny"
-msgstr ""
+msgstr "Orkeny"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:290
 msgctxt "British Region"
 msgid "Oxfordshire"
-msgstr ""
+msgstr "Oxfordshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:291
 msgctxt "British Region"
 msgid "Peeblesshire"
-msgstr ""
+msgstr "Peeblesshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:292
 msgctxt "British Region"
 msgid "Pembrokeshire"
-msgstr ""
+msgstr "Pembrokeshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:293
 msgctxt "British Region"
 msgid "Perthshire"
-msgstr ""
+msgstr "Perthshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:294
 msgctxt "British Region"
 msgid "Radnorshire"
-msgstr ""
+msgstr "Radnorshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:295
 msgctxt "British Region"
 msgid "Renfrewshire"
-msgstr ""
+msgstr "Renfrewshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:296
 msgctxt "British Region"
 msgid "Ross-shire"
-msgstr ""
+msgstr "Ross-shire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:297
 msgctxt "British Region"
 msgid "Roxburghshire"
-msgstr ""
+msgstr "Roxburghshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:298
 msgctxt "British Region"
 msgid "Rutland"
-msgstr ""
+msgstr "Rutland"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:299
 msgctxt "British Region"
 msgid "Selkirkshire"
-msgstr ""
+msgstr "Selkirkshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:300
 msgctxt "British Region"
 msgid "Shetland"
-msgstr ""
+msgstr "Shetland"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:301
 msgctxt "British Region"
 msgid "Shropshire"
-msgstr ""
+msgstr "Shropshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:302
 msgctxt "British Region"
 msgid "Somerset"
-msgstr ""
+msgstr "Somerset"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:303
 msgctxt "British Region"
 msgid "Staffordshire"
-msgstr ""
+msgstr "Staffordshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:304
 msgctxt "British Region"
 msgid "Stirlingshire"
-msgstr ""
+msgstr "Stirlingshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:305
 msgctxt "British Region"
 msgid "Suffolk"
-msgstr ""
+msgstr "Suffolk"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:306
 msgctxt "British Region"
 msgid "Surrey"
-msgstr ""
+msgstr "Surrey"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:307
 msgctxt "British Region"
 msgid "Sussex"
-msgstr ""
+msgstr "Sussex"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:308
 msgctxt "British Region"
 msgid "Sutherland"
-msgstr ""
+msgstr "Sutherland"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:309
 msgctxt "British Region"
 msgid "Warwickshire"
-msgstr ""
+msgstr "Warwickshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:310
 msgctxt "British Region"
 msgid "West Lothian"
-msgstr ""
+msgstr "West Lothian"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:311
 msgctxt "British Region"
 msgid "Westmorland"
-msgstr ""
+msgstr "Westmorland"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:312
 msgctxt "British Region"
 msgid "Wigtownshire"
-msgstr ""
+msgstr "Wigtownshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:313
 msgctxt "British Region"
 msgid "Wiltshire"
-msgstr ""
+msgstr "Wiltshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:314
 msgctxt "British Region"
 msgid "Worcestershire"
-msgstr ""
+msgstr "Worcestershire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:315
 msgctxt "British Region"
 msgid "Yorkshire"
-msgstr ""
+msgstr "Yorkshire"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:319
 msgctxt "Irish County"
 msgid "County Antrim"
-msgstr ""
+msgstr "Graafschap Antrim"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:320
 msgctxt "Irish County"
 msgid "County Armagh"
-msgstr ""
+msgstr "Graafschap Armagh"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:321
 msgctxt "Irish County"
 msgid "County Carlow"
-msgstr ""
+msgstr "Graafschap Carlow"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:322
 msgctxt "Irish County"
 msgid "County Cavan"
-msgstr ""
+msgstr "Graafschap Cavan"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:323
 msgctxt "Irish County"
 msgid "County Clare"
-msgstr ""
+msgstr "Graafschap Clare"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:324
 msgctxt "Irish County"
 msgid "County Cork"
-msgstr ""
+msgstr "Graafschap Cork"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:325
 msgctxt "Irish County"
 msgid "County Londonderry"
-msgstr ""
+msgstr "Graafschap Londonderry"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:326
 msgctxt "Irish County"
 msgid "County Donegal"
-msgstr ""
+msgstr "Graafschap Donegal"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:327
 msgctxt "Irish County"
 msgid "County Down"
-msgstr ""
+msgstr "Graafschap Down"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:328
 msgctxt "Irish County"
 msgid "County Dublin"
-msgstr ""
+msgstr "Graafschap Dublin"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:329
 msgctxt "Irish County"
 msgid "County Fermanagh"
-msgstr ""
+msgstr "Graafschap Fermanagh"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:330
 msgctxt "Irish County"
 msgid "County Galway"
-msgstr ""
+msgstr "Graafschap Galway"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:331
 msgctxt "Irish County"
 msgid "County Kerry"
-msgstr ""
+msgstr "Graafschap Kerry"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:332
 msgctxt "Irish County"
 msgid "County Kildare"
-msgstr ""
+msgstr "Graafschap Kildare"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:333
 msgctxt "Irish County"
 msgid "County Kilkenny"
-msgstr ""
+msgstr "Graafschap Kilkenny"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:334
 msgctxt "Irish County"
 msgid "County Laois"
-msgstr ""
+msgstr "Graafschap Laois"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:335
 msgctxt "Irish County"
 msgid "County Leitrim"
-msgstr ""
+msgstr "Graafschap Leitrim"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:336
 msgctxt "Irish County"
 msgid "County Limerick"
-msgstr ""
+msgstr "Graafschap Limerick"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:337
 msgctxt "Irish County"
 msgid "County Longford"
-msgstr ""
+msgstr "Graafschap Longford"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:338
 msgctxt "Irish County"
 msgid "County Louth"
-msgstr ""
+msgstr "Graafschap Louth"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:339
 msgctxt "Irish County"
 msgid "County Mayo"
-msgstr ""
+msgstr "Graafschap Mayo"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:340
 msgctxt "Irish County"
 msgid "County Meath"
-msgstr ""
+msgstr "Graafschap Meath"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:341
 msgctxt "Irish County"
 msgid "County Monaghan"
-msgstr ""
+msgstr "Graafschap Monaghan"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:342
 msgctxt "Irish County"
 msgid "County Offaly"
-msgstr ""
+msgstr "Graafschap Offaly"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:343
 msgctxt "Irish County"
 msgid "County Roscommon"
-msgstr ""
+msgstr "Graafschap Roscommon"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:344
 msgctxt "Irish County"
 msgid "County Sligo"
-msgstr ""
+msgstr "Graafschap Sligo"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:345
 msgctxt "Irish County"
 msgid "County Tipperary"
-msgstr ""
+msgstr "Graafschap Tipperary"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:346
 msgctxt "Irish County"
 msgid "County Tyrone"
-msgstr ""
+msgstr "Graafschap Tyrone"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:347
 msgctxt "Irish County"
 msgid "County Waterford"
-msgstr ""
+msgstr "Graafschap Waterford"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:348
 msgctxt "Irish County"
 msgid "County Westmeath"
-msgstr ""
+msgstr "Graafschap Westmeath"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:349
 msgctxt "Irish County"
 msgid "County Wexford"
-msgstr ""
+msgstr "Graafschap Wexford"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:350
 msgctxt "Irish County"
 msgid "County Wicklow"
-msgstr ""
+msgstr "Graafschap Wicklow"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:354
 msgctxt "Dutch Province"
@@ -15250,617 +15260,617 @@ msgstr "Zeeland"
 #: concrete/src/Localization/Service/StatesProvincesList.php:369
 msgctxt "Brazilian State"
 msgid "Acre"
-msgstr ""
+msgstr "Acre"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:370
 msgctxt "Brazilian State"
 msgid "Alagoas"
-msgstr ""
+msgstr "Alagoas"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:371
 msgctxt "Brazilian State"
 msgid "Amazonas"
-msgstr ""
+msgstr "Amazonas"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:372
 msgctxt "Brazilian State"
 msgid "Amapá"
-msgstr ""
+msgstr "Amapá"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:373
 msgctxt "Brazilian State"
 msgid "Bahia"
-msgstr ""
+msgstr "Bahia"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:374
 msgctxt "Brazilian State"
 msgid "Ceará"
-msgstr ""
+msgstr "Ceará"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:375
 msgctxt "Brazilian State"
 msgid "Distrito Federal"
-msgstr ""
+msgstr "Federaal Disctrict"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:376
 msgctxt "Brazilian State"
 msgid "Espirito Santo"
-msgstr ""
+msgstr "Espirito Santo"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:377
 msgctxt "Brazilian State"
 msgid "Fernando de Noronha"
-msgstr ""
+msgstr "Fernando de Noronha"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:378
 msgctxt "Brazilian State"
 msgid "Goiás"
-msgstr ""
+msgstr "Goiás"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:379
 msgctxt "Brazilian State"
 msgid "Maranhão"
-msgstr ""
+msgstr "Maranhão"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:380
 msgctxt "Brazilian State"
 msgid "Minas Gerais"
-msgstr ""
+msgstr "Minas Gerais"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:381
 msgctxt "Brazilian State"
 msgid "Mato Grosso do Sul"
-msgstr ""
+msgstr "Mato Grosso do Sul"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:382
 msgctxt "Brazilian State"
 msgid "Mato Grosso"
-msgstr ""
+msgstr "Mato Grosso"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:383
 msgctxt "Brazilian State"
 msgid "Pará"
-msgstr ""
+msgstr "Pará"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:384
 msgctxt "Brazilian State"
 msgid "Paraíba"
-msgstr ""
+msgstr "Paraíba"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:385
 msgctxt "Brazilian State"
 msgid "Pernambuco"
-msgstr ""
+msgstr "Pernambuco"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:386
 msgctxt "Brazilian State"
 msgid "Piauí"
-msgstr ""
+msgstr "Piauí"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:387
 msgctxt "Brazilian State"
 msgid "Paraná"
-msgstr ""
+msgstr "Paraná"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:388
 msgctxt "Brazilian State"
 msgid "Rio de Janeiro"
-msgstr ""
+msgstr "Rio de Janeiro"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:389
 msgctxt "Brazilian State"
 msgid "Rio Grande do Norte"
-msgstr ""
+msgstr "Rio Grande do Norte"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:390
 msgctxt "Brazilian State"
 msgid "Rondônia"
-msgstr ""
+msgstr "Rondônia"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:391
 msgctxt "Brazilian State"
 msgid "Roraima"
-msgstr ""
+msgstr "Roraima"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:392
 msgctxt "Brazilian State"
 msgid "Rio Grande do Sul"
-msgstr ""
+msgstr "Rio Grande do Sul"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:393
 msgctxt "Brazilian State"
 msgid "Santa Catarina"
-msgstr ""
+msgstr "Santa Catarina"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:394
 msgctxt "Brazilian State"
 msgid "Sergipe"
-msgstr ""
+msgstr "Sergipe"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:395
 msgctxt "Brazilian State"
 msgid "São Paulo"
-msgstr ""
+msgstr "São Paulo"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:396
 msgctxt "Brazilian State"
 msgid "Tocantins"
-msgstr ""
+msgstr "Tocantins"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:400
 msgctxt "Italian Provinces"
 msgid "Agrigento"
-msgstr ""
+msgstr "Agrigento"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:401
 msgctxt "Italian Provinces"
 msgid "Alessandria"
-msgstr ""
+msgstr "Alessandria"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:402
 msgctxt "Italian Provinces"
 msgid "Ancona"
-msgstr ""
+msgstr "Ancona"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:403
 msgctxt "Italian Provinces"
 msgid "Aosta"
-msgstr ""
+msgstr "Aosta"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:404
 msgctxt "Italian Provinces"
 msgid "Ascoli Piceno"
-msgstr ""
+msgstr "Ascoli Piceno"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:405
 msgctxt "Italian Provinces"
 msgid "L'Aquila"
-msgstr ""
+msgstr "L'Aquila"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:406
 msgctxt "Italian Provinces"
 msgid "Arezzo"
-msgstr ""
+msgstr "Arezzo"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:407
 msgctxt "Italian Provinces"
 msgid "Asti"
-msgstr ""
+msgstr "Asti"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:408
 msgctxt "Italian Provinces"
 msgid "Avellino"
-msgstr ""
+msgstr "Avellino"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:409
 msgctxt "Italian Provinces"
 msgid "Bari"
-msgstr ""
+msgstr "Bari"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:410
 msgctxt "Italian Provinces"
 msgid "Bergamo"
-msgstr ""
+msgstr "Bergamo"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:411
 msgctxt "Italian Provinces"
 msgid "Biella"
-msgstr ""
+msgstr "Biella"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:412
 msgctxt "Italian Provinces"
 msgid "Belluno"
-msgstr ""
+msgstr "Belluno"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:413
 msgctxt "Italian Provinces"
 msgid "Benevento"
-msgstr ""
+msgstr "Benevento"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:414
 msgctxt "Italian Provinces"
 msgid "Bologna"
-msgstr ""
+msgstr "Bologna"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:415
 msgctxt "Italian Provinces"
 msgid "Brindisi"
-msgstr ""
+msgstr "Brindisi"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:416
 msgctxt "Italian Provinces"
 msgid "Brescia"
-msgstr ""
+msgstr "Brescia"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:417
 msgctxt "Italian Provinces"
 msgid "Barletta-Andria-Trani"
-msgstr ""
+msgstr "Barletta-Andria-Trani"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:418
 msgctxt "Italian Provinces"
 msgid "South Tyrol"
-msgstr ""
+msgstr "Zuid-Tirol"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:419
 msgctxt "Italian Provinces"
 msgid "Cagliari"
-msgstr ""
+msgstr "Cagliari"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:420
 msgctxt "Italian Provinces"
 msgid "Campobasso"
-msgstr ""
+msgstr "Campobasso"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:421
 msgctxt "Italian Provinces"
 msgid "Caserta"
-msgstr ""
+msgstr "Caserta"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:422
 msgctxt "Italian Provinces"
 msgid "Chieti"
-msgstr ""
+msgstr "Chieti"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:423
 msgctxt "Italian Provinces"
 msgid "Carbonia-Iglesias"
-msgstr ""
+msgstr "Carbonia-Iglesias"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:424
 msgctxt "Italian Provinces"
 msgid "Caltanissetta"
-msgstr ""
+msgstr "Caltanissetta"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:425
 msgctxt "Italian Provinces"
 msgid "Cuneo"
-msgstr ""
+msgstr "Cuneo"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:426
 msgctxt "Italian Provinces"
 msgid "Como"
-msgstr ""
+msgstr "Como"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:427
 msgctxt "Italian Provinces"
 msgid "Cremona"
-msgstr ""
+msgstr "Cremona"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:428
 msgctxt "Italian Provinces"
 msgid "Cosenza"
-msgstr ""
+msgstr "Cosenza"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:429
 msgctxt "Italian Provinces"
 msgid "Catania"
-msgstr ""
+msgstr "Catania"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:430
 msgctxt "Italian Provinces"
 msgid "Catanzaro"
-msgstr ""
+msgstr "Catanzaro"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:431
 msgctxt "Italian Provinces"
 msgid "Enna"
-msgstr ""
+msgstr "Enna"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:432
 msgctxt "Italian Provinces"
 msgid "Forlì-Cesena"
-msgstr ""
+msgstr "Forlì-Cesena"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:433
 msgctxt "Italian Provinces"
 msgid "Ferrara"
-msgstr ""
+msgstr "Ferrara"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:434
 msgctxt "Italian Provinces"
 msgid "Foggia"
-msgstr ""
+msgstr "Foggia"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:435
 msgctxt "Italian Provinces"
 msgid "Florence"
-msgstr ""
+msgstr "Florence"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:436
 msgctxt "Italian Provinces"
 msgid "Fermo"
-msgstr ""
+msgstr "Fermo"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:437
 msgctxt "Italian Provinces"
 msgid "Frosinone"
-msgstr ""
+msgstr "Frosinone"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:438
 msgctxt "Italian Provinces"
 msgid "Genoa"
-msgstr ""
+msgstr "Genua"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:439
 msgctxt "Italian Provinces"
 msgid "Gorizia"
-msgstr ""
+msgstr "Gorizia"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:440
 msgctxt "Italian Provinces"
 msgid "Grosseto"
-msgstr ""
+msgstr "Grosseto"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:441
 msgctxt "Italian Provinces"
 msgid "Imperia"
-msgstr ""
+msgstr "Imperia"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:442
 msgctxt "Italian Provinces"
 msgid "Isernia"
-msgstr ""
+msgstr "Isernia"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:443
 msgctxt "Italian Provinces"
 msgid "Crotone"
-msgstr ""
+msgstr "Crotone"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:444
 msgctxt "Italian Provinces"
 msgid "Lecco"
-msgstr ""
+msgstr "Lecco"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:445
 msgctxt "Italian Provinces"
 msgid "Lecce"
-msgstr ""
+msgstr "Lecce"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:446
 msgctxt "Italian Provinces"
 msgid "Livorno"
-msgstr ""
+msgstr "Livorno"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:447
 msgctxt "Italian Provinces"
 msgid "Lodi"
-msgstr ""
+msgstr "Lodi"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:448
 msgctxt "Italian Provinces"
 msgid "Latina"
-msgstr ""
+msgstr "Latina"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:449
 msgctxt "Italian Provinces"
 msgid "Lucca"
-msgstr ""
+msgstr "Lucca"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:450
 msgctxt "Italian Provinces"
 msgid "Monza and Brianza"
-msgstr ""
+msgstr "Monza e Brianza"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:451
 msgctxt "Italian Provinces"
 msgid "Macerata"
-msgstr ""
+msgstr "Macerata"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:452
 msgctxt "Italian Provinces"
 msgid "Messina"
-msgstr ""
+msgstr "Messina"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:453
 msgctxt "Italian Provinces"
 msgid "Milan"
-msgstr ""
+msgstr "Milaan"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:454
 msgctxt "Italian Provinces"
 msgid "Mantua"
-msgstr ""
+msgstr "Mantua"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:455
 msgctxt "Italian Provinces"
 msgid "Modena"
-msgstr ""
+msgstr "Modena"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:456
 msgctxt "Italian Provinces"
 msgid "Massa and Carrara"
-msgstr ""
+msgstr "Massa-Carrara"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:457
 msgctxt "Italian Provinces"
 msgid "Matera"
-msgstr ""
+msgstr "Matera"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:458
 msgctxt "Italian Provinces"
 msgid "Naples"
-msgstr ""
+msgstr "Napels"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:459
 msgctxt "Italian Provinces"
 msgid "Novara"
-msgstr ""
+msgstr "Novara"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:460
 msgctxt "Italian Provinces"
 msgid "Nuoro"
-msgstr ""
+msgstr "Nuoro"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:461
 msgctxt "Italian Provinces"
 msgid "Ogliastra"
-msgstr ""
+msgstr "Ogliastra"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:462
 msgctxt "Italian Provinces"
 msgid "Oristano"
-msgstr ""
+msgstr "Oristano"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:463
 msgctxt "Italian Provinces"
 msgid "Olbia-Tempio"
-msgstr ""
+msgstr "Olbia-Tempio"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:464
 msgctxt "Italian Provinces"
 msgid "Palermo"
-msgstr ""
+msgstr "Palermo"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:465
 msgctxt "Italian Provinces"
 msgid "Piacenza"
-msgstr ""
+msgstr "Piacenza"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:466
 msgctxt "Italian Provinces"
 msgid "Padua"
-msgstr ""
+msgstr "Padua"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:467
 msgctxt "Italian Provinces"
 msgid "Pescara"
-msgstr ""
+msgstr "Pescara"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:468
 msgctxt "Italian Provinces"
 msgid "Perugia"
-msgstr ""
+msgstr "Perugia"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:469
 msgctxt "Italian Provinces"
 msgid "Pisa"
-msgstr ""
+msgstr "Pisa"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:470
 msgctxt "Italian Provinces"
 msgid "Pordenone"
-msgstr ""
+msgstr "Pordenone"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:471
 msgctxt "Italian Provinces"
 msgid "Prato"
-msgstr ""
+msgstr "Prato"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:472
 msgctxt "Italian Provinces"
 msgid "Parma"
-msgstr ""
+msgstr "Parma"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:473
 msgctxt "Italian Provinces"
 msgid "Pistoia"
-msgstr ""
+msgstr "Pistoia"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:474
 msgctxt "Italian Provinces"
 msgid "Pesaro and Urbino"
-msgstr ""
+msgstr "Pesaro-Urbino"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:475
 msgctxt "Italian Provinces"
 msgid "Pavia"
-msgstr ""
+msgstr "Pavia"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:476
 msgctxt "Italian Provinces"
 msgid "Potenza"
-msgstr ""
+msgstr "Potenza"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:477
 msgctxt "Italian Provinces"
 msgid "Ravenna"
-msgstr ""
+msgstr "Ravenna"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:478
 msgctxt "Italian Provinces"
 msgid "Reggio Calabria"
-msgstr ""
+msgstr "Reggio Calabria"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:479
 msgctxt "Italian Provinces"
 msgid "Reggio Emilia"
-msgstr ""
+msgstr "Reggio Emilia"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:480
 msgctxt "Italian Provinces"
 msgid "Ragusa"
-msgstr ""
+msgstr "Ragusa"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:481
 msgctxt "Italian Provinces"
 msgid "Rieti"
-msgstr ""
+msgstr "Rieti"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:482
 msgctxt "Italian Provinces"
 msgid "Rome"
-msgstr ""
+msgstr "Rome"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:483
 msgctxt "Italian Provinces"
 msgid "Rimini"
-msgstr ""
+msgstr "Rimini"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:484
 msgctxt "Italian Provinces"
 msgid "Rovigo"
-msgstr ""
+msgstr "Rovigo"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:485
 msgctxt "Italian Provinces"
 msgid "Salerno"
-msgstr ""
+msgstr "Salerno"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:486
 msgctxt "Italian Provinces"
 msgid "Siena"
-msgstr ""
+msgstr "Siena"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:487
 msgctxt "Italian Provinces"
 msgid "Sondrio"
-msgstr ""
+msgstr "Sondrio"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:488
 msgctxt "Italian Provinces"
 msgid "La Spezia"
-msgstr ""
+msgstr "La Spezia"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:489
 msgctxt "Italian Provinces"
 msgid "Syracuse"
-msgstr ""
+msgstr "Syracuse"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:490
 msgctxt "Italian Provinces"
 msgid "Sassari"
-msgstr ""
+msgstr "Sassari"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:491
 msgctxt "Italian Provinces"
 msgid "Savona"
-msgstr ""
+msgstr "Savona"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:492
 msgctxt "Italian Provinces"
 msgid "Taranto"
-msgstr ""
+msgstr "Tarente"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:493
 msgctxt "Italian Provinces"
 msgid "Teramo"
-msgstr ""
+msgstr "Teramo"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:494
 msgctxt "Italian Provinces"
 msgid "Trento"
-msgstr ""
+msgstr "Trente"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:495
 msgctxt "Italian Provinces"
@@ -15870,42 +15880,42 @@ msgstr "Turijn"
 #: concrete/src/Localization/Service/StatesProvincesList.php:496
 msgctxt "Italian Provinces"
 msgid "Trapani"
-msgstr ""
+msgstr "Trapani"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:497
 msgctxt "Italian Provinces"
 msgid "Terni"
-msgstr ""
+msgstr "Terni"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:498
 msgctxt "Italian Provinces"
 msgid "Trieste"
-msgstr ""
+msgstr "Triëst"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:499
 msgctxt "Italian Provinces"
 msgid "Treviso"
-msgstr ""
+msgstr "Treviso"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:500
 msgctxt "Italian Provinces"
 msgid "Udine"
-msgstr ""
+msgstr "Udine"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:501
 msgctxt "Italian Provinces"
 msgid "Varese"
-msgstr ""
+msgstr "Varese"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:502
 msgctxt "Italian Provinces"
 msgid "Verbano-Cusio-Ossola"
-msgstr ""
+msgstr "Verbano-Cusio-Ossola"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:503
 msgctxt "Italian Provinces"
 msgid "Vercelli"
-msgstr ""
+msgstr "Vercelli"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:504
 msgctxt "Italian Provinces"
@@ -15915,7 +15925,7 @@ msgstr "Venetië"
 #: concrete/src/Localization/Service/StatesProvincesList.php:505
 msgctxt "Italian Provinces"
 msgid "Vicenza"
-msgstr ""
+msgstr "Vicenza"
 
 #: concrete/src/Localization/Service/StatesProvincesList.php:506
 msgctxt "Italian Provinces"
@@ -16449,7 +16459,7 @@ msgstr "%s: Basisgegevens"
 #: concrete/views/dialogs/stack/usage.php:8
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:50
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:115
-#: concrete/single_pages/dashboard/system/express/entities/add.php:11
+#: concrete/single_pages/dashboard/system/express/entities/add.php:12
 #: concrete/single_pages/dashboard/system/express/entities/edit.php:27
 #: concrete/single_pages/dashboard/system/express/entities/view_details.php:19
 #: concrete/single_pages/dashboard/system/attributes/sets.php:32
@@ -17026,7 +17036,7 @@ msgstr "Workflow verwijderen"
 #: concrete/single_pages/dashboard/express/entries/view_entry.php:4
 #: concrete/single_pages/dashboard/users/points/actions.php:75
 #: concrete/single_pages/dashboard/users/points/assign.php:48
-#: concrete/single_pages/dashboard/system/express/entities/add.php:22
+#: concrete/single_pages/dashboard/system/express/entities/add.php:25
 #: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:65
 #: concrete/single_pages/dashboard/pages/types/attributes.php:34
 #: concrete/single_pages/dashboard/pages/types/form.php:30
@@ -17622,7 +17632,7 @@ msgstr "Deze pagina zal worden gepubliceerd onder <a href=\"%s\"> %s</a>."
 
 #: concrete/elements/page_types/target_types/all.php:4
 msgid "Sitemap Pop-Up"
-msgstr ""
+msgstr "Sitemap Pop-up"
 
 #: concrete/elements/page_types/target_types/all.php:4
 #: concrete/elements/page_types/target_types/page_type.php:11
@@ -23966,6 +23976,20 @@ msgstr "Samenwerking Verwijder"
 #: concrete/single_pages/dashboard/system/express/entities/associations/view_association.php:13
 msgid ""
 "Are you sure you want to delete this association? This cannot be undone."
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/express/entities/add.php:9
+msgid ""
+"The name is how your entity will appear in the Dashboard. It may only "
+"contain letters."
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/express/entities/add.php:14
+msgid "A unique string consisting of lowercase letters and underscores only."
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/express/entities/add.php:19
+msgid "An internal description. This is not publicly displayed."
 msgstr ""
 
 #: concrete/single_pages/dashboard/system/express/entities/associations.php:43
