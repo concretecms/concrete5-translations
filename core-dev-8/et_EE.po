@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-06-04T06:00:31+02:00\n"
-"PO-Revision-Date: 2016-06-04 09:52+0000\n"
+"POT-Creation-Date: 2016-06-05T06:01:17+02:00\n"
+"PO-Revision-Date: 2016-06-05 09:39+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Estonian (Estonia) (http://www.transifex.com/concrete5/concrete5/language/et_EE/)\n"
 "MIME-Version: 1.0\n"
@@ -630,7 +630,7 @@ msgstr ""
 #: concrete/config/install/base/dashboard.xml:660
 #: concrete/themes/dashboard/elements/header.php:59
 #: concrete/elements/page_controls_footer.php:239
-#: concrete/blocks/image/form.php:17
+#: concrete/blocks/image/form.php:9
 msgid "Files"
 msgstr "Failid"
 
@@ -3922,7 +3922,7 @@ msgstr ""
 #: concrete/elements/custom_style.php:109
 #: concrete/views/dialogs/file/upload_complete.php:57
 #: concrete/blocks/image_slider/form_setup_html.php:345
-#: concrete/blocks/image/form.php:47
+#: concrete/blocks/image/form.php:32
 #: concrete/blocks/form/form_setup_html.php:95
 #: concrete/blocks/desktop_latest_form/view.php:20
 #: concrete/blocks/feature/form.php:38 concrete/blocks/survey/edit.php:53
@@ -5179,7 +5179,7 @@ msgstr "Ühtegi kasutajat või gruppi ei lisatud."
 #: concrete/single_pages/dashboard/system/basics/name.php:13
 #: concrete/single_pages/dashboard/system/basics/social.php:18
 #: concrete/single_pages/dashboard/system/basics/timezone.php:57
-#: concrete/single_pages/dashboard/system/optimization/cache.php:187
+#: concrete/single_pages/dashboard/system/optimization/cache.php:212
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:211
 #: concrete/single_pages/dashboard/pages/types/composer.php:202
 #: concrete/single_pages/dashboard/pages/types/permissions.php:33
@@ -5761,7 +5761,7 @@ msgid "Until manually cleared"
 msgstr ""
 
 #: concrete/tools/pages/speed_settings.php:130
-#: concrete/single_pages/dashboard/system/optimization/cache.php:121
+#: concrete/single_pages/dashboard/system/optimization/cache.php:141
 msgid "Full Page Caching"
 msgstr ""
 
@@ -6960,6 +6960,12 @@ msgstr ""
 msgid "You may not delete a required thumbnail type."
 msgstr ""
 
+#: concrete/controllers/single_page/dashboard/system/files/thumbnails.php:140
+#: concrete/controllers/single_page/dashboard/system/attributes/sets.php:69
+#: concrete/controllers/single_page/dashboard/system/attributes/sets.php:109
+msgid "That handle is in use."
+msgstr ""
+
 #: concrete/controllers/single_page/dashboard/system/seo/bulk.php:92
 msgid "success"
 msgstr ""
@@ -7588,11 +7594,6 @@ msgstr ""
 #: concrete/controllers/single_page/dashboard/system/attributes/sets.php:65
 #: concrete/controllers/single_page/dashboard/system/attributes/sets.php:105
 msgid "Specify a handle for your attribute set."
-msgstr ""
-
-#: concrete/controllers/single_page/dashboard/system/attributes/sets.php:69
-#: concrete/controllers/single_page/dashboard/system/attributes/sets.php:109
-msgid "That handle is in use."
 msgstr ""
 
 #: concrete/controllers/single_page/dashboard/system/attributes/sets.php:73
@@ -8913,7 +8914,7 @@ msgstr ""
 #: concrete/src/Backup/ContentImporter/ValueInspector/Item/ImageItem.php:8
 #: concrete/elements/custom_style.php:178
 #: concrete/blocks/image_slider/form_setup_html.php:323
-#: concrete/blocks/image/controller.php:36 concrete/blocks/image/form.php:31
+#: concrete/blocks/image/controller.php:32 concrete/blocks/image/form.php:13
 #: concrete/single_pages/dashboard/users/add_group.php:90
 #: concrete/single_pages/dashboard/users/groups.php:65
 #: concrete/single_pages/dashboard/pages/feeds.php:102
@@ -9607,7 +9608,7 @@ msgstr ""
 
 #: concrete/controllers/frontend/assets_localization.php:362
 #: concrete/config/app.php:535 concrete/blocks/html/controller.php:27
-#: concrete/blocks/image/form.php:42
+#: concrete/blocks/image/form.php:27
 msgid "HTML"
 msgstr "HTML"
 
@@ -9764,7 +9765,7 @@ msgstr ""
 #: concrete/elements/files/properties.php:152
 #: concrete/views/dialogs/file/properties.php:100
 #: concrete/blocks/image_slider/form_setup_html.php:334
-#: concrete/blocks/tags/tag_form.php:14 concrete/blocks/image/form.php:70
+#: concrete/blocks/tags/tag_form.php:14 concrete/blocks/image/form.php:65
 #: concrete/blocks/search/form_setup_html.php:32
 #: concrete/blocks/feature/form.php:19
 #: concrete/blocks/date_navigation/form.php:65
@@ -9813,7 +9814,7 @@ msgstr "Texto"
 #: concrete/controllers/frontend/assets_localization.php:412
 #: concrete/elements/workflow/progress/categories/page/pending.php:14
 #: concrete/views/dialogs/page/add_external.php:12
-#: concrete/blocks/image/form.php:59 concrete/blocks/feature/form.php:50
+#: concrete/blocks/image/form.php:51 concrete/blocks/feature/form.php:50
 #: concrete/single_pages/dashboard/system/basics/social.php:71
 msgid "URL"
 msgstr "URL"
@@ -18094,7 +18095,7 @@ msgid "Color"
 msgstr "Värv"
 
 #: concrete/elements/custom_style.php:179
-#: concrete/blocks/image/composer.php:21 concrete/blocks/image/form.php:32
+#: concrete/blocks/image/composer.php:23 concrete/blocks/image/form.php:14
 #: concrete/single_pages/dashboard/system/basics/images.php:19
 #: concrete/single_pages/dashboard/pages/feeds.php:103
 msgid "Choose Image"
@@ -19985,12 +19986,12 @@ msgid "px"
 msgstr "pikslid"
 
 #: concrete/blocks/image_slider/form_setup_html.php:346
-#: concrete/blocks/image/form.php:48 concrete/blocks/feature/form.php:39
+#: concrete/blocks/image/form.php:33 concrete/blocks/feature/form.php:39
 msgid "Another Page"
 msgstr "Teine lehekülg"
 
 #: concrete/blocks/image_slider/form_setup_html.php:347
-#: concrete/blocks/image/form.php:49 concrete/blocks/feature/form.php:40
+#: concrete/blocks/image/form.php:34 concrete/blocks/feature/form.php:40
 msgid "External URL"
 msgstr "Väline URL"
 
@@ -19999,7 +20000,7 @@ msgid "URL:"
 msgstr "URL:"
 
 #: concrete/blocks/image_slider/form_setup_html.php:355
-#: concrete/blocks/image/form.php:54 concrete/blocks/feature/form.php:45
+#: concrete/blocks/image/form.php:44 concrete/blocks/feature/form.php:45
 msgid "Choose Page:"
 msgstr "Vali leht:"
 
@@ -20850,43 +20851,43 @@ msgstr ""
 msgid "Your subject cannot be empty."
 msgstr ""
 
-#: concrete/blocks/image/controller.php:31
+#: concrete/blocks/image/controller.php:27
 msgid "Adds images and onstates from the library to pages."
 msgstr "Añade imágenes de la librería a páginas"
 
-#: concrete/blocks/image/controller.php:73
+#: concrete/blocks/image/controller.php:125
 msgid "You must select an image."
 msgstr "Debes seleccionar una imagen"
 
-#: concrete/blocks/image/controller.php:163
+#: concrete/blocks/image/controller.php:258
 msgid "You must specify a valid image file."
 msgstr ""
 
-#: concrete/blocks/image/form.php:35
+#: concrete/blocks/image/form.php:19
 msgid "Image Hover"
 msgstr ""
 
-#: concrete/blocks/image/form.php:35
+#: concrete/blocks/image/form.php:19
 msgid "(Optional)"
 msgstr ""
 
-#: concrete/blocks/image/form.php:36
+#: concrete/blocks/image/form.php:21
 msgid "Choose Image On-State"
 msgstr "Elige una imagen al pasar el puntero."
 
-#: concrete/blocks/image/form.php:45
+#: concrete/blocks/image/form.php:37
 msgid "Image Link"
 msgstr ""
 
-#: concrete/blocks/image/form.php:65
+#: concrete/blocks/image/form.php:58
 msgid "Alt. Text"
 msgstr ""
 
-#: concrete/blocks/image/form.php:77
+#: concrete/blocks/image/form.php:72
 msgid "Resize Image"
 msgstr ""
 
-#: concrete/blocks/image/form.php:82
+#: concrete/blocks/image/form.php:79
 msgid "Constrain Image Size"
 msgstr ""
 
@@ -20894,7 +20895,7 @@ msgstr ""
 msgid "Max Width"
 msgstr "Maks. laius"
 
-#: concrete/blocks/image/form.php:93
+#: concrete/blocks/image/form.php:95
 msgid "Max Height"
 msgstr "Maks. kõrgus"
 
@@ -25159,122 +25160,116 @@ msgstr ""
 msgid "You do not have permission to upgrade this installation of concrete5."
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:6
-msgid "Stores the output of blocks which support block caching"
-msgstr ""
-
-#: concrete/single_pages/dashboard/system/optimization/cache.php:6
+#: concrete/single_pages/dashboard/system/optimization/cache.php:7
 msgid "Block Cache"
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:13
+#: concrete/single_pages/dashboard/system/optimization/cache.php:7
+msgid "Stores the output of blocks which support block caching"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/optimization/cache.php:16
 msgid "Off - Good for development of custom blocks."
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:22
-#: concrete/single_pages/dashboard/system/optimization/cache.php:44
-#: concrete/single_pages/dashboard/system/optimization/cache.php:70
-#: concrete/single_pages/dashboard/system/optimization/cache.php:93
-#: concrete/single_pages/dashboard/system/optimization/cache.php:115
+#: concrete/single_pages/dashboard/system/optimization/cache.php:25
+#: concrete/single_pages/dashboard/system/optimization/cache.php:50
+#: concrete/single_pages/dashboard/system/optimization/cache.php:80
+#: concrete/single_pages/dashboard/system/optimization/cache.php:107
+#: concrete/single_pages/dashboard/system/optimization/cache.php:134
 msgid "On - Helps speed up a live site."
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:28
+#: concrete/single_pages/dashboard/system/optimization/cache.php:32
+msgid "Theme CSS Cache"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/optimization/cache.php:32
 msgid ""
 "Caches the output of customized theme stylesheets for faster loading. Turn "
 "off if you are editing LESS files in your theme directly."
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:28
-msgid "Theme CSS Cache."
-msgstr ""
-
-#: concrete/single_pages/dashboard/system/optimization/cache.php:35
+#: concrete/single_pages/dashboard/system/optimization/cache.php:41
 msgid "Off - Good for active theme development when using LESS files."
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:50
+#: concrete/single_pages/dashboard/system/optimization/cache.php:58
+msgid "Compress LESS Output"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/optimization/cache.php:58
 msgid ""
 "Determines whether compiled LESS stylesheets should output as compressed "
 "CSS. Uncompressed stylesheets are slightly larger but easier to read."
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:50
-msgid "Compress LESS Output."
-msgstr ""
-
-#: concrete/single_pages/dashboard/system/optimization/cache.php:57
+#: concrete/single_pages/dashboard/system/optimization/cache.php:67
 msgid "Off - Good for debugging generated CSS output."
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:62
+#: concrete/single_pages/dashboard/system/optimization/cache.php:72
 msgid "enable source maps in generated CSS files"
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:77
-msgid "Stores the generation of CSS and JavaScript assets"
-msgstr ""
-
-#: concrete/single_pages/dashboard/system/optimization/cache.php:77
+#: concrete/single_pages/dashboard/system/optimization/cache.php:89
 msgid "CSS and JavaScript Cache"
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:84
+#: concrete/single_pages/dashboard/system/optimization/cache.php:89
+msgid "Stores the generation of CSS and JavaScript assets."
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/optimization/cache.php:98
 msgid "Off - Good for active block and site development."
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:99
-msgid "Stores the location and existence of source code files"
-msgstr ""
-
-#: concrete/single_pages/dashboard/system/optimization/cache.php:99
+#: concrete/single_pages/dashboard/system/optimization/cache.php:115
 msgid "Overrides Cache"
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:106
+#: concrete/single_pages/dashboard/system/optimization/cache.php:115
+msgid "Stores the location and existence of source code files."
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/optimization/cache.php:125
 msgid "Off - Good for development."
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:121
-msgid "Stores the output of an entire page"
+#: concrete/single_pages/dashboard/system/optimization/cache.php:141
+msgid "Stores the output of an entire page."
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:127
+#: concrete/single_pages/dashboard/system/optimization/cache.php:150
 msgid "Off - Turn it on by hand for specific pages."
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:136
+#: concrete/single_pages/dashboard/system/optimization/cache.php:159
 msgid "On - If blocks on the particular page allow it."
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:145
+#: concrete/single_pages/dashboard/system/optimization/cache.php:168
 msgid "On - In all cases."
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:151
-msgid ""
-"Sets the amount of time to store the page output before generating a new "
-"version"
+#: concrete/single_pages/dashboard/system/optimization/cache.php:175
+msgid "Expire Pages from the Cache"
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:151
-msgid "Expire Pages from Cache"
-msgstr ""
-
-#: concrete/single_pages/dashboard/system/optimization/cache.php:158
+#: concrete/single_pages/dashboard/system/optimization/cache.php:182
 #, php-format
 msgid "Every %s (default setting)."
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:167
+#: concrete/single_pages/dashboard/system/optimization/cache.php:191
 msgid "Only when manually removed or the cache is cleared."
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:177
+#: concrete/single_pages/dashboard/system/optimization/cache.php:201
 msgid "Every "
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/optimization/cache.php:179
+#: concrete/single_pages/dashboard/system/optimization/cache.php:203
 msgid " minutes."
 msgstr ""
 
