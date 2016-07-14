@@ -5,9 +5,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-06-30T06:00:30+02:00\n"
-"PO-Revision-Date: 2016-06-30 14:24+0000\n"
-"Last-Translator: Fredrik Lindau <fredrik@fxlindau.se>\n"
+"POT-Creation-Date: 2016-07-13T12:00:19+02:00\n"
+"PO-Revision-Date: 2016-07-13 10:03+0000\n"
+"Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Swedish (Sweden) (http://www.transifex.com/concrete5/concrete5/language/sv_SE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -4608,7 +4608,7 @@ msgstr "Kunde inte kopiera en eller flera filer."
 
 #: concrete/tools/files/duplicate.php:42
 #: concrete/controllers/backend/user_interface/file.php:24
-#: concrete/src/File/Importer.php:67 concrete/blocks/form/controller.php:441
+#: concrete/src/File/Importer.php:67 concrete/blocks/form/controller.php:445
 msgid "Invalid file."
 msgstr "Ogiltig fil."
 
@@ -6672,8 +6672,9 @@ msgstr "Ett användarnamn får endast innehålla bokstäver, nummer, mellanslag 
 
 #: concrete/controllers/single_page/dashboard/users/add.php:71
 #: concrete/controllers/single_page/dashboard/users/search.php:276
+#: concrete/controllers/single_page/register.php:83
 msgid ""
-"A username may only contain letters numbers, dots (not at the "
+"A username may only contain letters, numbers, dots (not at the "
 "beginning/end), underscores (not at the beginning/end)."
 msgstr "Ett användarnamn får endast innehålla bokstäver, nummer, punkter (ej i början eller slutet), understryknings-tecken (ej i början eller slutet)."
 
@@ -8279,12 +8280,6 @@ msgstr "Ogiltig begäran, var vänlig och försök logga in igen."
 #, php-format
 msgid "The email address %s is already in use. Please choose another."
 msgstr "E-postadressen %s används redan. Var vänlig och välj en annan."
-
-#: concrete/controllers/single_page/register.php:83
-msgid ""
-"A username may only contain letters, numbers, dots (not at the "
-"beginning/end), underscores (not at the beginning/end)."
-msgstr "Ett användarnamn får endast innehålla bokstäver, nummer, punkter (ej i början eller slutet), understryknings-tecken (ej i början eller slutet)."
 
 #: concrete/controllers/single_page/register.php:87
 #, php-format
@@ -11083,7 +11078,7 @@ msgstr "Egenskaper för kärnan"
 msgid "Custom Attributes"
 msgstr "Anpassade egenskaper"
 
-#: concrete/src/File/Importer.php:70 concrete/blocks/form/controller.php:437
+#: concrete/src/File/Importer.php:70 concrete/blocks/form/controller.php:441
 #: concrete/attributes/image_file/controller.php:210
 msgid "Invalid file extension."
 msgstr "Ogiltig filändelse."
@@ -18575,7 +18570,7 @@ msgstr "Vanligtvis använda"
 #: concrete/views/dialogs/page/clipboard.php:24
 #: concrete/views/panels/add.php:86 concrete/views/panels/add.php:192
 #: concrete/views/panels/add.php:312 concrete/views/panels/add.php:364
-#: concrete/single_pages/dashboard/express/entries/create.php:20
+#: concrete/single_pages/dashboard/express/entries/create.php:21
 #, php-format
 msgid "Add %s"
 msgstr "Lägg till %s"
@@ -21124,33 +21119,37 @@ msgid ""
 "question set id)."
 msgstr "Hoppsan! Något är fel med formuläret du skickade (det har inget grupp-id för frågor)."
 
-#: concrete/blocks/form/controller.php:360
+#: concrete/blocks/form/controller.php:357
+msgid "Invalid Request"
+msgstr ""
+
+#: concrete/blocks/form/controller.php:364
 msgid ""
 "Oops, something is wrong with the form you posted (it doesn't have any "
 "questions)."
 msgstr "Hoppsan! Något är fel med formuläret du postade (det har inga frågor)."
 
-#: concrete/blocks/form/controller.php:369
+#: concrete/blocks/form/controller.php:373
 msgid "Incorrect captcha code"
 msgstr "Fel CAPTCHA-kod"
 
-#: concrete/blocks/form/controller.php:389
+#: concrete/blocks/form/controller.php:393
 msgid "You must enter a valid email address."
 msgstr "Du måste ange en giltig e-postadress."
 
-#: concrete/blocks/form/controller.php:411
+#: concrete/blocks/form/controller.php:415
 msgid "Complete required fields *"
 msgstr "Fyll i obligatoriska fält *"
 
-#: concrete/blocks/form/controller.php:460
+#: concrete/blocks/form/controller.php:464
 msgid "Please correct the following errors:"
 msgstr "Var vänlig och korrigera följande fel:"
 
-#: concrete/blocks/form/controller.php:506
+#: concrete/blocks/form/controller.php:510
 msgid "No file specified"
 msgstr "Ingen fil vald"
 
-#: concrete/blocks/form/controller.php:575
+#: concrete/blocks/form/controller.php:579
 #: concrete/blocks/express_form/controller.php:182
 #, php-format
 msgid "%s Form Submission"
@@ -21172,8 +21171,8 @@ msgstr "Meddelande att visa när allt är färdigt"
 
 #: concrete/blocks/form/form_setup_html.php:52
 #: concrete/blocks/express_form/form.php:99
-msgid "Notify me by email when people submit this form"
-msgstr "Meddela mig via e-post när någon besvarat detta formulär"
+msgid "Send form submissions to email addresses"
+msgstr ""
 
 #: concrete/blocks/form/form_setup_html.php:58
 #: concrete/blocks/express_form/form.php:105
@@ -22694,7 +22693,7 @@ msgstr "Inkludera systemsidor i sajtkartan"
 msgid "You must have access to the dashboard sitemap to search pages."
 msgstr "Du måste ha åtkomst till sajtkartan i kontrollpanelen för att kunna söka efter sidor."
 
-#: concrete/single_pages/dashboard/express/entries/create.php:29
+#: concrete/single_pages/dashboard/express/entries/create.php:30
 #: concrete/single_pages/dashboard/express/entries/update.php:28
 msgid "You have not created any forms for this data type."
 msgstr ""

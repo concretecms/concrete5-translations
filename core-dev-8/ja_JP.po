@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-06-30T06:00:30+02:00\n"
-"PO-Revision-Date: 2016-06-30 13:44+0000\n"
+"POT-Creation-Date: 2016-07-13T12:00:19+02:00\n"
+"PO-Revision-Date: 2016-07-13 10:23+0000\n"
 "Last-Translator: Katz Ueno <katzueno@deerstudio.com>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/concrete5/concrete5/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
@@ -4608,7 +4608,7 @@ msgstr "ファイルをコピーできません。"
 
 #: concrete/tools/files/duplicate.php:42
 #: concrete/controllers/backend/user_interface/file.php:24
-#: concrete/src/File/Importer.php:67 concrete/blocks/form/controller.php:441
+#: concrete/src/File/Importer.php:67 concrete/blocks/form/controller.php:445
 msgid "Invalid file."
 msgstr "無効なファイルです。"
 
@@ -6668,10 +6668,11 @@ msgstr "ユーザー名は半角英数字、スペース（最初と最後は不
 
 #: concrete/controllers/single_page/dashboard/users/add.php:71
 #: concrete/controllers/single_page/dashboard/users/search.php:276
+#: concrete/controllers/single_page/register.php:83
 msgid ""
-"A username may only contain letters numbers, dots (not at the "
+"A username may only contain letters, numbers, dots (not at the "
 "beginning/end), underscores (not at the beginning/end)."
-msgstr "ユーザーIDは半角英数字、ドット（最初と最後は不可）、アンダースコア（最初と最後は不可）のみ使用することができます。"
+msgstr "ユーザー名は半角英数字、ドット（最初と最後は不可）、アンダースコア（最初と最後は不可）のみ使用することができます。"
 
 #: concrete/controllers/single_page/dashboard/users/add.php:76
 #: concrete/controllers/single_page/dashboard/users/search.php:286
@@ -8273,12 +8274,6 @@ msgstr "無効なリクエストです、もう一度ログインしてみてく
 #, php-format
 msgid "The email address %s is already in use. Please choose another."
 msgstr "入力されたメールアドレス %s はすでに使用されています。別のメールアドレスを入力してください。"
-
-#: concrete/controllers/single_page/register.php:83
-msgid ""
-"A username may only contain letters, numbers, dots (not at the "
-"beginning/end), underscores (not at the beginning/end)."
-msgstr "ユーザー名は半角英数字、ドット（最初と最後は不可）、アンダースコア（最初と最後は不可）のみ使用することができます。"
 
 #: concrete/controllers/single_page/register.php:87
 #, php-format
@@ -11073,7 +11068,7 @@ msgstr "コアプロパティ"
 msgid "Custom Attributes"
 msgstr "カスタム属性"
 
-#: concrete/src/File/Importer.php:70 concrete/blocks/form/controller.php:437
+#: concrete/src/File/Importer.php:70 concrete/blocks/form/controller.php:441
 #: concrete/attributes/image_file/controller.php:210
 msgid "Invalid file extension."
 msgstr "無効なファイル拡張子です。"
@@ -18553,7 +18548,7 @@ msgstr "よく使われている"
 #: concrete/views/dialogs/page/clipboard.php:24
 #: concrete/views/panels/add.php:86 concrete/views/panels/add.php:192
 #: concrete/views/panels/add.php:312 concrete/views/panels/add.php:364
-#: concrete/single_pages/dashboard/express/entries/create.php:20
+#: concrete/single_pages/dashboard/express/entries/create.php:21
 #, php-format
 msgid "Add %s"
 msgstr "%sを追加"
@@ -21092,33 +21087,37 @@ msgid ""
 "question set id)."
 msgstr "設定されたフォームになにか問題があります（ID番号が設定されていません）"
 
-#: concrete/blocks/form/controller.php:360
+#: concrete/blocks/form/controller.php:357
+msgid "Invalid Request"
+msgstr "無効なリクエストです。"
+
+#: concrete/blocks/form/controller.php:364
 msgid ""
 "Oops, something is wrong with the form you posted (it doesn't have any "
 "questions)."
 msgstr "おっと、投稿されたフォームに何か問題があるようです（質問が設定されていません）。"
 
-#: concrete/blocks/form/controller.php:369
+#: concrete/blocks/form/controller.php:373
 msgid "Incorrect captcha code"
 msgstr "captchaの入力が間違っていました。"
 
-#: concrete/blocks/form/controller.php:389
+#: concrete/blocks/form/controller.php:393
 msgid "You must enter a valid email address."
 msgstr "有効なemailアドレスを入力してください。"
 
-#: concrete/blocks/form/controller.php:411
+#: concrete/blocks/form/controller.php:415
 msgid "Complete required fields *"
 msgstr "必須項目を入力してください *"
 
-#: concrete/blocks/form/controller.php:460
+#: concrete/blocks/form/controller.php:464
 msgid "Please correct the following errors:"
 msgstr "以下のエラーを修正してください。"
 
-#: concrete/blocks/form/controller.php:506
+#: concrete/blocks/form/controller.php:510
 msgid "No file specified"
 msgstr "ファイルが指定されていません"
 
-#: concrete/blocks/form/controller.php:575
+#: concrete/blocks/form/controller.php:579
 #: concrete/blocks/express_form/controller.php:182
 #, php-format
 msgid "%s Form Submission"
@@ -21140,8 +21139,8 @@ msgstr "完了したときに表示するメッセージ"
 
 #: concrete/blocks/form/form_setup_html.php:52
 #: concrete/blocks/express_form/form.php:99
-msgid "Notify me by email when people submit this form"
-msgstr "新着フォームのメール通知を受け取りますか？"
+msgid "Send form submissions to email addresses"
+msgstr "送信されたフォームをメールアドレスに送る"
 
 #: concrete/blocks/form/form_setup_html.php:58
 #: concrete/blocks/express_form/form.php:105
@@ -22660,7 +22659,7 @@ msgstr "サイトマップにシステムページを含める"
 msgid "You must have access to the dashboard sitemap to search pages."
 msgstr "ページを検索するには管理画面のサイトマップにアクセスできる必要があります。"
 
-#: concrete/single_pages/dashboard/express/entries/create.php:29
+#: concrete/single_pages/dashboard/express/entries/create.php:30
 #: concrete/single_pages/dashboard/express/entries/update.php:28
 msgid "You have not created any forms for this data type."
 msgstr "このデータタイプのフォームを作成していません。"

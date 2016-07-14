@@ -5,9 +5,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-06-30T06:00:30+02:00\n"
-"PO-Revision-Date: 2016-06-30 18:16+0000\n"
-"Last-Translator: Anton Schepetkov <schepetkov@gmail.com>\n"
+"POT-Creation-Date: 2016-07-13T12:00:19+02:00\n"
+"PO-Revision-Date: 2016-07-13 10:03+0000\n"
+"Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Russian (Russia) (http://www.transifex.com/concrete5/concrete5/language/ru_RU/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -4612,7 +4612,7 @@ msgstr "Невозможно скопировать один или нескол
 
 #: concrete/tools/files/duplicate.php:42
 #: concrete/controllers/backend/user_interface/file.php:24
-#: concrete/src/File/Importer.php:67 concrete/blocks/form/controller.php:441
+#: concrete/src/File/Importer.php:67 concrete/blocks/form/controller.php:445
 msgid "Invalid file."
 msgstr "Недействительный файл."
 
@@ -6684,10 +6684,11 @@ msgstr "Имя пользователя может содержать тольк
 
 #: concrete/controllers/single_page/dashboard/users/add.php:71
 #: concrete/controllers/single_page/dashboard/users/search.php:276
+#: concrete/controllers/single_page/register.php:83
 msgid ""
-"A username may only contain letters numbers, dots (not at the "
+"A username may only contain letters, numbers, dots (not at the "
 "beginning/end), underscores (not at the beginning/end)."
-msgstr "Имя пользователя может содержать только буквы, цифры, точки (если они не в начале и не в конце),  подчеркивание (не в начале и не в конце)."
+msgstr "Имя пользователя может содержать только буквы, цифры, точки (если они не в начале и не в конце), подчеркивания (не в начале и не в конце)."
 
 #: concrete/controllers/single_page/dashboard/users/add.php:76
 #: concrete/controllers/single_page/dashboard/users/search.php:286
@@ -8295,12 +8296,6 @@ msgstr "Недопустимый запрос, попробуйте автори
 #, php-format
 msgid "The email address %s is already in use. Please choose another."
 msgstr "E-mail %s уже используется. Укажите другой."
-
-#: concrete/controllers/single_page/register.php:83
-msgid ""
-"A username may only contain letters, numbers, dots (not at the "
-"beginning/end), underscores (not at the beginning/end)."
-msgstr "Имя пользователя может содержать только буквы, цифры, точки (если они не в начале и не в конце), подчеркивания (не в начале и не в конце)."
 
 #: concrete/controllers/single_page/register.php:87
 #, php-format
@@ -11107,7 +11102,7 @@ msgstr "Основные свойства"
 msgid "Custom Attributes"
 msgstr "Настраиваемые атрибуты"
 
-#: concrete/src/File/Importer.php:70 concrete/blocks/form/controller.php:437
+#: concrete/src/File/Importer.php:70 concrete/blocks/form/controller.php:441
 #: concrete/attributes/image_file/controller.php:210
 msgid "Invalid file extension."
 msgstr "Неверное расширение файла."
@@ -18623,7 +18618,7 @@ msgstr "Часто используемые"
 #: concrete/views/dialogs/page/clipboard.php:24
 #: concrete/views/panels/add.php:86 concrete/views/panels/add.php:192
 #: concrete/views/panels/add.php:312 concrete/views/panels/add.php:364
-#: concrete/single_pages/dashboard/express/entries/create.php:20
+#: concrete/single_pages/dashboard/express/entries/create.php:21
 #, php-format
 msgid "Add %s"
 msgstr "Добавить %s"
@@ -21192,33 +21187,37 @@ msgid ""
 "question set id)."
 msgstr "Ну воот! Что-то не так с формой, которую вы заполнили (в ней не определены идентификаторы вопросов)."
 
-#: concrete/blocks/form/controller.php:360
+#: concrete/blocks/form/controller.php:357
+msgid "Invalid Request"
+msgstr ""
+
+#: concrete/blocks/form/controller.php:364
 msgid ""
 "Oops, something is wrong with the form you posted (it doesn't have any "
 "questions)."
 msgstr "Что-то не так с формой, которую вы заполнили (в ней не определен список вопросов)."
 
-#: concrete/blocks/form/controller.php:369
+#: concrete/blocks/form/controller.php:373
 msgid "Incorrect captcha code"
 msgstr "Ошибочный код проверки"
 
-#: concrete/blocks/form/controller.php:389
+#: concrete/blocks/form/controller.php:393
 msgid "You must enter a valid email address."
 msgstr "Вы должны ввести правильный email адресс."
 
-#: concrete/blocks/form/controller.php:411
+#: concrete/blocks/form/controller.php:415
 msgid "Complete required fields *"
 msgstr "Пожалуйста заполните все обязательные поля."
 
-#: concrete/blocks/form/controller.php:460
+#: concrete/blocks/form/controller.php:464
 msgid "Please correct the following errors:"
 msgstr "Пожалуйста исправьте следующие ошибки:"
 
-#: concrete/blocks/form/controller.php:506
+#: concrete/blocks/form/controller.php:510
 msgid "No file specified"
 msgstr "Файл не указан"
 
-#: concrete/blocks/form/controller.php:575
+#: concrete/blocks/form/controller.php:579
 #: concrete/blocks/express_form/controller.php:182
 #, php-format
 msgid "%s Form Submission"
@@ -21240,8 +21239,8 @@ msgstr "Сообщение для показа по завершению"
 
 #: concrete/blocks/form/form_setup_html.php:52
 #: concrete/blocks/express_form/form.php:99
-msgid "Notify me by email when people submit this form"
-msgstr "Уведомить меня по email, когда эту форму заполнят"
+msgid "Send form submissions to email addresses"
+msgstr ""
 
 #: concrete/blocks/form/form_setup_html.php:58
 #: concrete/blocks/express_form/form.php:105
@@ -22766,7 +22765,7 @@ msgstr "Отображать системные страницы в карте �
 msgid "You must have access to the dashboard sitemap to search pages."
 msgstr "Вам необходимо иметь доступ к карте сайта для поиска страниц."
 
-#: concrete/single_pages/dashboard/express/entries/create.php:29
+#: concrete/single_pages/dashboard/express/entries/create.php:30
 #: concrete/single_pages/dashboard/express/entries/update.php:28
 msgid "You have not created any forms for this data type."
 msgstr "Вы не создали ни одной формы для этого типа данных."
