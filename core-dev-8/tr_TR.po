@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-08-12T06:00:30+02:00\n"
-"PO-Revision-Date: 2016-08-12 09:31+0000\n"
+"POT-Creation-Date: 2016-08-13T12:00:12+02:00\n"
+"PO-Revision-Date: 2016-08-13 10:04+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Turkish (Turkey) (http://www.transifex.com/concrete5/concrete5/language/tr_TR/)\n"
 "MIME-Version: 1.0\n"
@@ -740,7 +740,7 @@ msgstr "kullanıcı özellikleri, kullanıcı verileri, veri topla, kayıt veril
 
 #: concrete/config/install/base/dashboard.xml:114
 #: concrete/src/Permission/Access/Entity/UserEntity.php:68
-#: concrete/single_pages/dashboard/users/search.php:396
+#: concrete/elements/users/search_header.php:20
 msgid "Add User"
 msgstr "Kullanıcı Ekle"
 
@@ -1225,6 +1225,7 @@ msgid "timezone, profile, locale"
 msgstr "zaman bölgesi, profil, yerel"
 
 #: concrete/config/install/base/dashboard.xml:526
+#: concrete/src/User/Search/Field/Manager.php:34
 #: concrete/src/File/Search/Field/Manager.php:38
 #: concrete/src/Page/Search/Field/Manager.php:47
 #: concrete/elements/search/customize_results.php:39
@@ -3662,9 +3663,9 @@ msgstr "Donec blandit lectus nec neque ullamcorper rhoncus. Sed adipiscing tempu
 #: concrete/tools/sitemap_search_selector.php:37
 #: concrete/controllers/frontend/assets_localization.php:92
 #: concrete/themes/dashboard/marketplace.php:39
-#: concrete/elements/files/search_header.php:14
-#: concrete/elements/users/search.php:52 concrete/elements/users/search.php:92
-#: concrete/elements/pages/search_header.php:14
+#: concrete/elements/files/search_header.php:16
+#: concrete/elements/users/search_header.php:10
+#: concrete/elements/pages/search_header.php:15
 #: concrete/elements/group/search.php:33
 #: concrete/views/dialogs/search/advanced_search.php:31
 #: concrete/views/panels/page/attributes.php:9
@@ -4136,7 +4137,7 @@ msgid ""
 msgstr "Anahtar süresi doldu. Yeni bir anahtar oluşturmak için parolamı unuttum sayfasını ziyaret ediniz."
 
 #: concrete/authentication/concrete/controller.php:256
-#: concrete/controllers/single_page/dashboard/users/search.php:367
+#: concrete/controllers/single_page/dashboard/users/search.php:368
 #: concrete/controllers/single_page/account/edit_profile.php:127
 #: concrete/controllers/single_page/register.php:99
 #: concrete/controllers/install.php:342
@@ -4462,7 +4463,7 @@ msgstr "Aşağıdaki dosyaları silmek istediğinizden emin misiniz?"
 #: concrete/src/Form/Service/Widget/Color.php:37
 #: concrete/src/StyleCustomizer/Style/ColorStyle.php:42
 #: concrete/elements/attribute/key/header.php:12
-#: concrete/elements/files/search_header.php:40
+#: concrete/elements/files/search_header.php:44
 #: concrete/elements/dashboard/express/control.php:36
 #: concrete/elements/permission/details/block/timed_guest_access.php:37
 #: concrete/elements/permission/lists/tree/node.php:98
@@ -4578,6 +4579,7 @@ msgstr "Vazgeç"
 #: concrete/src/Tree/Menu/Item/DeleteItem.php:25
 #: concrete/elements/conversation/message/topic.php:50
 #: concrete/elements/conversation/message.php:56
+#: concrete/elements/pages/search.php:57
 #: concrete/elements/block_header_view.php:200
 #: concrete/elements/page_controls_footer.php:223
 #: concrete/elements/page_controls_footer.php:225
@@ -4698,8 +4700,8 @@ msgstr "Dosya Bulunamadı."
 #: concrete/controllers/dialog/file/properties.php:112
 #: concrete/controllers/dialog/file/properties.php:115
 #: concrete/controllers/dialog/conversation/subscribe.php:27
-#: concrete/controllers/single_page/dashboard/users/search.php:49
-#: concrete/controllers/single_page/dashboard/users/search.php:69
+#: concrete/controllers/single_page/dashboard/users/search.php:50
+#: concrete/controllers/single_page/dashboard/users/search.php:70
 #: concrete/controllers/backend/express/entry.php:48
 #: concrete/controllers/backend/user.php:72
 #: concrete/controllers/backend/user.php:96
@@ -5617,6 +5619,7 @@ msgid "Page Type"
 msgstr "Sayfa Türü"
 
 #: concrete/tools/pages/delete.php:96
+#: concrete/src/User/Search/Field/Field/DateAddedField.php:31
 #: concrete/src/File/Search/Field/Field/DateAddedField.php:30
 #: concrete/src/Express/Search/ColumnSet/DefaultSet.php:22
 #: concrete/src/Page/Search/Field/Field/DateAddedField.php:30
@@ -6192,13 +6195,13 @@ msgid "File updated successfully."
 msgstr "Dosya başarıyla güncellendi."
 
 #: concrete/controllers/dialog/file/properties.php:53
-#: concrete/controllers/single_page/dashboard/users/search.php:349
+#: concrete/controllers/single_page/dashboard/users/search.php:350
 #: concrete/controllers/single_page/dashboard/pages/types/attributes.php:77
 msgid "Attribute cleared successfully."
 msgstr "Özellik başarıyla temizlendi."
 
 #: concrete/controllers/dialog/file/properties.php:78
-#: concrete/controllers/single_page/dashboard/users/search.php:323
+#: concrete/controllers/single_page/dashboard/users/search.php:324
 #: concrete/controllers/single_page/dashboard/pages/types/attributes.php:56
 msgid "Attribute saved successfully."
 msgstr "Özellik başarıyla kaydedildi."
@@ -6680,28 +6683,28 @@ msgid "User Point Entry Saved"
 msgstr "Kullanıcı Puan Girdisi Kaydedildi"
 
 #: concrete/controllers/single_page/dashboard/users/add.php:54
-#: concrete/controllers/single_page/dashboard/users/search.php:175
+#: concrete/controllers/single_page/dashboard/users/search.php:176
 #: concrete/controllers/single_page/account/edit_profile.php:100
 #: concrete/controllers/single_page/register.php:63
 msgid "Invalid email address provided."
 msgstr "Geçersiz e-posta adresi girilmiş."
 
 #: concrete/controllers/single_page/dashboard/users/add.php:56
-#: concrete/controllers/single_page/dashboard/users/search.php:179
+#: concrete/controllers/single_page/dashboard/users/search.php:180
 #: concrete/controllers/single_page/account/edit_profile.php:103
 #, php-format
 msgid "The email address '%s' is already in use. Please choose another."
 msgstr "E-posta adresi '%s' zaten kullanılıyor. Lütfen farklı bir adres belirtin."
 
 #: concrete/controllers/single_page/dashboard/users/add.php:60
-#: concrete/controllers/single_page/dashboard/users/search.php:248
+#: concrete/controllers/single_page/dashboard/users/search.php:249
 #: concrete/controllers/single_page/register.php:70
 #, php-format
 msgid "A username must be at least %s characters long."
 msgstr "Bir kullanıcı adı en az %s karakter olmalıdır."
 
 #: concrete/controllers/single_page/dashboard/users/add.php:64
-#: concrete/controllers/single_page/dashboard/users/search.php:257
+#: concrete/controllers/single_page/dashboard/users/search.php:258
 #: concrete/controllers/single_page/register.php:75
 #, php-format
 msgid "A username cannot be more than %s characters long."
@@ -6716,7 +6719,7 @@ msgid ""
 msgstr "Bir kullanıcı adı sadece harfler; sayılar ve başlangıçta veya sonda olmamak üzere boşluklar, noktalar ve alt çizgiler içerebilir."
 
 #: concrete/controllers/single_page/dashboard/users/add.php:71
-#: concrete/controllers/single_page/dashboard/users/search.php:276
+#: concrete/controllers/single_page/dashboard/users/search.php:277
 #: concrete/controllers/single_page/register.php:83
 msgid ""
 "A username may only contain letters, numbers, dots (not at the "
@@ -6724,7 +6727,7 @@ msgid ""
 msgstr "Bir kullanıcı adı sadece harfler, sayılar ve başlangıçta veya sonda olmamak üzere noktalar ve alt çizgiler içerebilir."
 
 #: concrete/controllers/single_page/dashboard/users/add.php:76
-#: concrete/controllers/single_page/dashboard/users/search.php:286
+#: concrete/controllers/single_page/dashboard/users/search.php:287
 #, php-format
 msgid "The username '%s' already exists. Please choose another"
 msgstr "'%s' kullanıcı adı alınmış. Lütfen başka bir tane deneyin"
@@ -6825,12 +6828,12 @@ msgstr "Grup silindi."
 msgid "User Point Entry Deleted"
 msgstr "Kullanıcı Puan Girdisi Silindi"
 
-#: concrete/controllers/single_page/dashboard/users/search.php:55
+#: concrete/controllers/single_page/dashboard/users/search.php:56
 msgid "Avatar saved successfully."
 msgstr "Avatar başarıyla kaydedildi."
 
-#: concrete/controllers/single_page/dashboard/users/search.php:116
-#: concrete/controllers/single_page/dashboard/users/search.php:120
+#: concrete/controllers/single_page/dashboard/users/search.php:117
+#: concrete/controllers/single_page/dashboard/users/search.php:121
 #: concrete/controllers/single_page/register.php:159
 #: concrete/controllers/single_page/register.php:163
 #: concrete/src/Workflow/Request/ActivateUserRequest.php:90
@@ -6838,87 +6841,87 @@ msgstr "Avatar başarıyla kaydedildi."
 msgid "Website Registration Notification"
 msgstr "Kullanıcı Kaydı Bildirimi"
 
-#: concrete/controllers/single_page/dashboard/users/search.php:187
+#: concrete/controllers/single_page/dashboard/users/search.php:188
 msgid "Email saved successfully."
 msgstr "Email başarıyla kaydedildi."
 
-#: concrete/controllers/single_page/dashboard/users/search.php:208
+#: concrete/controllers/single_page/dashboard/users/search.php:209
 msgid "Time zone saved successfully."
 msgstr "Zaman dilimi başarıyla kaydedildi."
 
-#: concrete/controllers/single_page/dashboard/users/search.php:229
+#: concrete/controllers/single_page/dashboard/users/search.php:230
 msgid "Language saved successfully."
 msgstr "Dil başarıyla kaydedildi."
 
-#: concrete/controllers/single_page/dashboard/users/search.php:270
+#: concrete/controllers/single_page/dashboard/users/search.php:271
 msgid ""
 "A username may only contain letters, numbers, spaces, dots (not at the "
 "beginning/end), underscores (not at the beginning/end)."
 msgstr "Bir kullanıcı adı sadece harfler, sayılar, boşluklar, noktalar(başlangıçta veya sonda olmamak üzere) ve alt çizgiler(başlangıçta veya sonda olmamak üzere) içerebilir."
 
-#: concrete/controllers/single_page/dashboard/users/search.php:294
+#: concrete/controllers/single_page/dashboard/users/search.php:295
 msgid "Username saved successfully."
 msgstr "Kullanıcı adı başarıyla kaydedildi."
 
-#: concrete/controllers/single_page/dashboard/users/search.php:310
-#: concrete/controllers/single_page/dashboard/users/search.php:338
+#: concrete/controllers/single_page/dashboard/users/search.php:311
+#: concrete/controllers/single_page/dashboard/users/search.php:339
 msgid "You do not have permission to modify this attribute."
 msgstr "Bu özelliği değiştirme izniniz yok."
 
-#: concrete/controllers/single_page/dashboard/users/search.php:376
+#: concrete/controllers/single_page/dashboard/users/search.php:377
 msgid "Password updated successfully."
 msgstr "Parola başarıyla güncellendi."
 
-#: concrete/controllers/single_page/dashboard/users/search.php:409
+#: concrete/controllers/single_page/dashboard/users/search.php:410
 #: concrete/controllers/single_page/account/edit_profile.php:37
 #: concrete/controllers/single_page/login.php:224
 msgctxt "Default locale"
 msgid "** Default"
 msgstr "** Varsayılan"
 
-#: concrete/controllers/single_page/dashboard/users/search.php:437
+#: concrete/controllers/single_page/dashboard/users/search.php:438
 msgid "User deleted successfully."
 msgstr "Kullanıcı silindi."
 
-#: concrete/controllers/single_page/dashboard/users/search.php:466
+#: concrete/controllers/single_page/dashboard/users/search.php:467
 #, php-format
 msgid "View/Edit %s"
 msgstr "%s'i Görüntüle/Düzenle"
 
-#: concrete/controllers/single_page/dashboard/users/search.php:485
+#: concrete/controllers/single_page/dashboard/users/search.php:486
 msgid "User activation workflow initiated."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/users/search.php:487
+#: concrete/controllers/single_page/dashboard/users/search.php:488
 msgid "User activated successfully."
 msgstr "Kullanıcı başarıyla etkinleştirildi."
 
-#: concrete/controllers/single_page/dashboard/users/search.php:492
+#: concrete/controllers/single_page/dashboard/users/search.php:493
 msgid "User deactivation workflow initiated."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/users/search.php:494
+#: concrete/controllers/single_page/dashboard/users/search.php:495
 msgid "User deactivated successfully."
 msgstr "Kullanıcı başarıyla devre dışı bırakıldı."
 
-#: concrete/controllers/single_page/dashboard/users/search.php:498
+#: concrete/controllers/single_page/dashboard/users/search.php:499
 msgid "User created successfully."
 msgstr "Kullanıcı başarıyla oluşturuldu"
 
-#: concrete/controllers/single_page/dashboard/users/search.php:501
+#: concrete/controllers/single_page/dashboard/users/search.php:502
 msgid "Email marked as valid."
 msgstr "E-posta geçerli olarak işaretlendi."
 
-#: concrete/controllers/single_page/dashboard/users/search.php:504
+#: concrete/controllers/single_page/dashboard/users/search.php:505
 msgid "Workflow request is canceled."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/users/search.php:510
+#: concrete/controllers/single_page/dashboard/users/search.php:511
 msgid "User deletion workflow initiated."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/users/search.php:512
-#: concrete/controllers/single_page/dashboard/users/search.php:520
+#: concrete/controllers/single_page/dashboard/users/search.php:513
+#: concrete/controllers/single_page/dashboard/users/search.php:521
 msgid "User has been deleted."
 msgstr ""
 
@@ -8347,33 +8350,6 @@ msgid ""
 "will not be able to login until your account has been approved."
 msgstr "Kaydınız tamamlandı ancak site yöneticisi hesabınıza onay verdikten sonra oturum açabilirsiniz."
 
-#: concrete/controllers/search/users.php:200
-#: concrete/src/File/Search/Field/Field/DateAddedField.php:36
-#: concrete/src/File/Search/Field/Field/SizeField.php:28
-#: concrete/src/Page/Search/Field/Field/DateAddedField.php:36
-#: concrete/src/Page/Search/Field/Field/DateLastModifiedField.php:36
-#: concrete/src/Page/Search/Field/Field/DatePublicField.php:36
-#: concrete/attributes/number/controller.php:45
-#: concrete/attributes/date_time/controller.php:148
-msgid "to"
-msgstr "şuna"
-
-#: concrete/controllers/search/users.php:203
-msgid "Inactive Users"
-msgstr "Devre Dışı Olan Kullanıcılar"
-
-#: concrete/controllers/search/users.php:203
-msgid "Active Users"
-msgstr "Aktif Kullanıcılar"
-
-#: concrete/controllers/search/users.php:250
-msgid "Registered Between"
-msgstr "Aralığında Kayıtlı"
-
-#: concrete/controllers/search/users.php:251
-msgid "Activated Users"
-msgstr "Etkinleştirilmiş Kullanıcılar"
-
 #: concrete/controllers/backend/tree/node/drag_request.php:56
 msgid "Item copied successfully."
 msgstr ""
@@ -8745,8 +8721,9 @@ msgstr "Bu değeri silmek istediğinizden emin misiniz?"
 
 #: concrete/controllers/frontend/assets_localization.php:93
 #: concrete/src/Marketplace/RemoteItem.php:85
-#: concrete/elements/files/search_header.php:11
-#: concrete/elements/pages/search_header.php:11
+#: concrete/elements/files/search_header.php:15
+#: concrete/elements/users/search_header.php:9
+#: concrete/elements/pages/search_header.php:14
 #: concrete/elements/block_header_view.php:220
 #: concrete/elements/custom_style.php:410
 #: concrete/views/panels/page/design/customize.php:85
@@ -9021,6 +8998,7 @@ msgid "Add Page"
 msgstr "Sayfa Ekle"
 
 #: concrete/controllers/frontend/assets_localization.php:171
+#: concrete/elements/pages/search.php:48
 msgid "Move/Copy"
 msgstr "Taşı/Kopyala"
 
@@ -9128,7 +9106,7 @@ msgstr "Görüntüle"
 #: concrete/controllers/frontend/assets_localization.php:419
 #: concrete/src/Form/Service/Widget/Color.php:38
 #: concrete/src/StyleCustomizer/Style/ColorStyle.php:43
-#: concrete/elements/users/search.php:44
+#: concrete/elements/users/search.php:64
 msgid "Choose"
 msgstr "Seç"
 
@@ -9513,7 +9491,7 @@ msgid ""
 msgstr "Bu sayfaya özgü olmayan herhangi bir şey burada olur. Kullanıcıları, dosyaları, veri raporlamalarını ve site geneli ayarları yönetin."
 
 #: concrete/controllers/frontend/assets_localization.php:364
-#: concrete/config/app.php:557 concrete/blocks/html/controller.php:27
+#: concrete/config/app.php:571 concrete/blocks/html/controller.php:27
 #: concrete/blocks/image/form.php:27
 msgid "HTML"
 msgstr "HTML"
@@ -10602,6 +10580,44 @@ msgstr ""
 msgid "Unvalidated"
 msgstr ""
 
+#: concrete/src/User/Search/Field/Field/DateAddedField.php:37
+#: concrete/src/File/Search/Field/Field/DateAddedField.php:36
+#: concrete/src/File/Search/Field/Field/SizeField.php:28
+#: concrete/src/Page/Search/Field/Field/DateAddedField.php:36
+#: concrete/src/Page/Search/Field/Field/DateLastModifiedField.php:36
+#: concrete/src/Page/Search/Field/Field/DatePublicField.php:36
+#: concrete/attributes/number/controller.php:45
+#: concrete/attributes/date_time/controller.php:148
+msgid "to"
+msgstr "şuna"
+
+#: concrete/src/User/Search/Field/Field/GroupSetField.php:27
+msgid "Group Set"
+msgstr "Grup Kümesi"
+
+#: concrete/src/User/Search/Field/Field/IsActiveField.php:24
+msgid "Activated"
+msgstr ""
+
+#: concrete/src/User/Search/Field/Field/IsActiveField.php:30
+msgid "Inactive Users"
+msgstr "Devre Dışı Olan Kullanıcılar"
+
+#: concrete/src/User/Search/Field/Field/IsActiveField.php:30
+msgid "Active Users"
+msgstr "Aktif Kullanıcılar"
+
+#: concrete/src/User/Search/Field/Field/UserGroupField.php:25
+msgid "User Group"
+msgstr ""
+
+#: concrete/src/User/Search/Field/Manager.php:21
+#: concrete/src/File/Search/Field/Manager.php:24
+#: concrete/src/Express/Form/Control/Type/EntityPropertyType.php:13
+#: concrete/src/Page/Search/Field/Manager.php:28
+msgid "Core Properties"
+msgstr ""
+
 #: concrete/src/User/UserBannedIp.php:88
 msgid "Failed Registration"
 msgstr "Kayıt Başarısız"
@@ -10979,12 +10995,6 @@ msgstr "Dosya Grubu"
 #: concrete/src/File/Search/Field/Field/SizeField.php:30
 msgid "KB"
 msgstr "KB"
-
-#: concrete/src/File/Search/Field/Manager.php:24
-#: concrete/src/Express/Form/Control/Type/EntityPropertyType.php:13
-#: concrete/src/Page/Search/Field/Manager.php:28
-msgid "Core Properties"
-msgstr ""
 
 #: concrete/src/File/Importer.php:70 concrete/blocks/form/controller.php:442
 #: concrete/attributes/image_file/controller.php:210
@@ -16578,8 +16588,8 @@ msgid "Are you sure you want to delete this attribute? This cannot be undone."
 msgstr ""
 
 #: concrete/elements/attribute/key/header.php:13
-#: concrete/elements/attribute/key/header.php:21
-#: concrete/elements/attribute/key/header.php:32
+#: concrete/elements/attribute/key/header.php:20
+#: concrete/elements/attribute/key/header.php:30
 #: concrete/elements/attribute/type_form_required.php:45
 msgid "Delete Attribute"
 msgstr "Özelliği Sil"
@@ -16631,7 +16641,7 @@ msgid "Multiple Values"
 msgstr "Birden Fazla Değer"
 
 #: concrete/elements/attribute/site_standard_list_header.php:10
-#: concrete/elements/attribute/standard_list_header.php:8
+#: concrete/elements/attribute/standard_list_header.php:7
 #: concrete/elements/dashboard/attributes_table.php:25
 msgid "Manage Sets"
 msgstr "Grupları Yönet"
@@ -16728,26 +16738,27 @@ msgstr "Önizleme resimleri alınırken bilinmeyen hata, lütfen bu dosyayı yen
 msgid "Added by <strong>%s</strong> on %s"
 msgstr "<strong>%s</strong> tarafından %s tarihinde eklendi"
 
-#: concrete/elements/files/search_header.php:10
-#: concrete/elements/pages/search_header.php:10
+#: concrete/elements/files/search_header.php:14
+#: concrete/elements/users/search_header.php:8
+#: concrete/elements/pages/search_header.php:13
 msgid "Reset Search"
 msgstr ""
 
-#: concrete/elements/files/search_header.php:20
+#: concrete/elements/files/search_header.php:24
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:476
 msgid "New Folder"
 msgstr ""
 
-#: concrete/elements/files/search_header.php:22
+#: concrete/elements/files/search_header.php:26
 msgid "Upload Files"
 msgstr "Dosya Yükle"
 
-#: concrete/elements/files/search_header.php:35
+#: concrete/elements/files/search_header.php:39
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:503
 msgid "Folder Name"
 msgstr ""
 
-#: concrete/elements/files/search_header.php:41
+#: concrete/elements/files/search_header.php:45
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:509
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:531
 msgid "Add Folder"
@@ -17330,72 +17341,13 @@ msgstr "Ögeyi Sil"
 msgid "Delete Tile"
 msgstr "Kutucuğu Sil"
 
-#: concrete/elements/users/search.php:8
-msgid "Group Set"
-msgstr "Grup Kümesi"
-
-#: concrete/elements/users/search.php:25
+#: concrete/elements/users/search.php:48 concrete/elements/pages/search.php:46
 msgid "Items Selected"
 msgstr "Seçilen Ögeler"
 
-#: concrete/elements/users/search.php:28
+#: concrete/elements/users/search.php:50 concrete/elements/pages/search.php:47
 msgid "Edit Properties"
 msgstr "Özellikleri Düzenle"
-
-#: concrete/elements/users/search.php:51
-msgid "Username or Email"
-msgstr "Kullanıcı Adı veya E-posta"
-
-#: concrete/elements/users/search.php:55
-#: concrete/blocks/express_entry_list/view.php:26
-#: concrete/single_pages/dashboard/sitemap/full.php:40
-msgid "Advanced Search"
-msgstr "Gelişmiş Arama"
-
-#: concrete/elements/users/search.php:56
-#: concrete/views/dialogs/search/advanced_search.php:7
-msgid "Customize Results"
-msgstr "Sonuçları Özelleştir"
-
-#: concrete/elements/users/search.php:61
-msgid "In Group"
-msgstr "Şu Grupta"
-
-#: concrete/elements/users/search.php:87
-msgid "Per Page"
-msgstr "Sayfa Başına"
-
-#: concrete/elements/users/search.php:89
-msgid "10"
-msgstr "10"
-
-#: concrete/elements/users/search.php:89
-msgid "20"
-msgstr "20"
-
-#: concrete/elements/users/search.php:89
-msgid "50"
-msgstr "50"
-
-#: concrete/elements/users/search.php:89
-msgid "100"
-msgstr "100"
-
-#: concrete/elements/users/search.php:89
-msgid "250"
-msgstr "250"
-
-#: concrete/elements/users/search.php:89
-msgid "500"
-msgstr "500"
-
-#: concrete/elements/users/search.php:89
-msgid "1000"
-msgstr "1000"
-
-#: concrete/elements/users/search.php:100
-msgid "Choose Field"
-msgstr "Alan Seçin"
 
 #: concrete/elements/permission/keys/add_block.php:16
 #: concrete/elements/permission/keys/add_file.php:20
@@ -17963,6 +17915,11 @@ msgstr ""
 msgid "Schedule"
 msgstr ""
 
+#: concrete/elements/pages/search.php:47
+#: concrete/elements/page_controls_footer.php:93
+msgid "Page Properties"
+msgstr "Sayfa Özellikleri"
+
 #: concrete/elements/group/search.php:6
 msgid "You do not have access to the group search."
 msgstr "Grup aramasına erişim izniniz yok"
@@ -18337,10 +18294,6 @@ msgstr "Stilleri Temizle"
 msgid "Edit this Page"
 msgstr "Bu Sayfayı Düzenle"
 
-#: concrete/elements/page_controls_footer.php:93
-msgid "Page Properties"
-msgstr "Sayfa Özellikleri"
-
 #: concrete/elements/page_controls_footer.php:267
 msgctxt "toolbar"
 msgid "Exit Edit Defaults"
@@ -18673,7 +18626,7 @@ msgstr ""
 msgid "Other Attributes"
 msgstr "Diğer Özellikler"
 
-#: concrete/views/dialogs/user/search.php:14
+#: concrete/views/dialogs/user/search.php:20
 msgid "Choose Users"
 msgstr "Kullanıcıları Seç"
 
@@ -18765,6 +18718,10 @@ msgstr "Mevcut sayfaların sayfa türünü değiştirmek beklenmeyen şekilde so
 #: concrete/views/dialogs/search/advanced_search.php:6
 msgid "Search Fields"
 msgstr ""
+
+#: concrete/views/dialogs/search/advanced_search.php:7
+msgid "Customize Results"
+msgstr "Sonuçları Özelleştir"
 
 #: concrete/views/dialogs/search/advanced_search.php:14
 msgid "Add Field"
@@ -19868,155 +19825,155 @@ msgstr "Boş Site"
 msgid "Creates an empty site using the unstyled Elemental theme."
 msgstr "Stilsiz temel temayı kullanarak bir site oluşturur."
 
-#: concrete/config/app.php:552
+#: concrete/config/app.php:566
 msgid "JPEG"
 msgstr "JPEG"
 
-#: concrete/config/app.php:553
+#: concrete/config/app.php:567
 msgid "GIF"
 msgstr "GIF"
 
-#: concrete/config/app.php:554
+#: concrete/config/app.php:568
 msgid "PNG"
 msgstr "PNG"
 
-#: concrete/config/app.php:555
+#: concrete/config/app.php:569
 msgid "Windows Bitmap"
 msgstr "Windows Bitmap"
 
-#: concrete/config/app.php:556
+#: concrete/config/app.php:570
 msgid "TIFF"
 msgstr "TIFF"
 
-#: concrete/config/app.php:558
+#: concrete/config/app.php:572
 msgid "Flash"
 msgstr "Flash"
 
-#: concrete/config/app.php:559 concrete/blocks/feature/form.php:6
+#: concrete/config/app.php:573 concrete/blocks/feature/form.php:6
 #: concrete/single_pages/dashboard/pages/templates/add.php:27
 #: concrete/single_pages/dashboard/pages/templates/view.php:40
 msgid "Icon"
 msgstr "Simge"
 
-#: concrete/config/app.php:560
+#: concrete/config/app.php:574
 msgid "SVG"
 msgstr "SVG"
 
-#: concrete/config/app.php:561
+#: concrete/config/app.php:575
 msgid "Windows Video"
 msgstr "Windows Video"
 
-#: concrete/config/app.php:562
+#: concrete/config/app.php:576
 msgid "Quicktime"
 msgstr "Quicktime"
 
-#: concrete/config/app.php:563
+#: concrete/config/app.php:577
 msgid "AVI"
 msgstr "AVI"
 
-#: concrete/config/app.php:564
+#: concrete/config/app.php:578
 msgid "3GP"
 msgstr "3GP"
 
-#: concrete/config/app.php:565 concrete/attributes/textarea/type_form.php:8
+#: concrete/config/app.php:579 concrete/attributes/textarea/type_form.php:8
 msgid "Plain Text"
 msgstr "Düz Metin"
 
-#: concrete/config/app.php:566
+#: concrete/config/app.php:580
 msgid "CSV"
 msgstr "CSV"
 
-#: concrete/config/app.php:567
+#: concrete/config/app.php:581
 msgid "XML"
 msgstr "XML"
 
-#: concrete/config/app.php:568
+#: concrete/config/app.php:582
 msgid "PHP"
 msgstr "PHP"
 
-#: concrete/config/app.php:569
+#: concrete/config/app.php:583
 msgid "MS Word"
 msgstr "MS Word"
 
-#: concrete/config/app.php:570
+#: concrete/config/app.php:584
 msgid "Stylesheet"
 msgstr "Stil Şablonu"
 
-#: concrete/config/app.php:571 concrete/blocks/video/add.php:24
+#: concrete/config/app.php:585 concrete/blocks/video/add.php:24
 #: concrete/blocks/video/edit.php:37
 msgid "MP4"
 msgstr "MP4"
 
-#: concrete/config/app.php:572
+#: concrete/config/app.php:586
 msgid "FLV"
 msgstr "FLV"
 
-#: concrete/config/app.php:573
+#: concrete/config/app.php:587
 msgid "MP3"
 msgstr "MP3"
 
-#: concrete/config/app.php:574
+#: concrete/config/app.php:588
 msgid "MP4 Audio"
 msgstr "MP4 Ses"
 
-#: concrete/config/app.php:575
+#: concrete/config/app.php:589
 msgid "Realaudio"
 msgstr "Realaudio"
 
-#: concrete/config/app.php:576
+#: concrete/config/app.php:590
 msgid "Windows Audio"
 msgstr "Windows Audio"
 
-#: concrete/config/app.php:577
+#: concrete/config/app.php:591
 msgid "Rich Text"
 msgstr "Zengin Metin"
 
-#: concrete/config/app.php:578
+#: concrete/config/app.php:592
 msgid "JavaScript"
 msgstr "JavaScript"
 
-#: concrete/config/app.php:579
+#: concrete/config/app.php:593
 msgid "PDF"
 msgstr "PDF"
 
-#: concrete/config/app.php:580
+#: concrete/config/app.php:594
 msgid "Photoshop"
 msgstr "Photoshop"
 
-#: concrete/config/app.php:581
+#: concrete/config/app.php:595
 msgid "MPEG"
 msgstr "MPEG"
 
-#: concrete/config/app.php:582
+#: concrete/config/app.php:596
 msgid "MS Excel"
 msgstr "MS Excel"
 
-#: concrete/config/app.php:583
+#: concrete/config/app.php:597
 msgid "MS Powerpoint"
 msgstr "MS Powerpoint"
 
-#: concrete/config/app.php:584
+#: concrete/config/app.php:598
 msgid "TAR Archive"
 msgstr "TAR Arşivi"
 
-#: concrete/config/app.php:585
+#: concrete/config/app.php:599
 msgid "Zip Archive"
 msgstr "Zip Arşivi"
 
-#: concrete/config/app.php:586
+#: concrete/config/app.php:600
 msgid "GZip Archive"
 msgstr "GZip Arşivi"
 
-#: concrete/config/app.php:587 concrete/blocks/video/add.php:20
+#: concrete/config/app.php:601 concrete/blocks/video/add.php:20
 #: concrete/blocks/video/edit.php:33
 msgid "OGG"
 msgstr "OGG"
 
-#: concrete/config/app.php:588
+#: concrete/config/app.php:602
 msgid "OGG Video"
 msgstr "OGG Video"
 
-#: concrete/config/app.php:589 concrete/blocks/video/add.php:16
+#: concrete/config/app.php:603 concrete/blocks/video/add.php:16
 #: concrete/blocks/video/edit.php:29
 msgid "WebM"
 msgstr "WebM"
@@ -21668,6 +21625,11 @@ msgstr ""
 #: concrete/blocks/express_entry_list/edit.php:129
 msgid "Alternate Row Background Color"
 msgstr ""
+
+#: concrete/blocks/express_entry_list/view.php:26
+#: concrete/single_pages/dashboard/sitemap/full.php:40
+msgid "Advanced Search"
+msgstr "Gelişmiş Arama"
 
 #: concrete/blocks/express_entry_list/view.php:133
 #, php-format
@@ -23704,7 +23666,7 @@ msgstr "Bu kullanıcıyı kalıcı olarak silmek istediğinizden emin misiniz?"
 msgid "Change Password"
 msgstr "Parolayı Değiştir"
 
-#: concrete/single_pages/dashboard/users/search.php:402
+#: concrete/single_pages/dashboard/users/search.php:412
 msgid ""
 "You do not have access to user search. This setting may be changed in the "
 "access section of the dashboard settings page."
