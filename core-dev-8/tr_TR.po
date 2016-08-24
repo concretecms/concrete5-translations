@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-08-22T06:00:20+02:00\n"
-"PO-Revision-Date: 2016-08-22 09:23+0000\n"
+"POT-Creation-Date: 2016-08-23T12:00:19+02:00\n"
+"PO-Revision-Date: 2016-08-23 14:26+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Turkish (Turkey) (http://www.transifex.com/concrete5/concrete5/language/tr_TR/)\n"
 "MIME-Version: 1.0\n"
@@ -3666,9 +3666,9 @@ msgstr "Donec blandit lectus nec neque ullamcorper rhoncus. Sed adipiscing tempu
 #: concrete/views/panels/page/attributes.php:9
 #: concrete/views/panels/add.php:260
 #: concrete/blocks/express_entry_list/view.php:23
-#: concrete/blocks/search/controller.php:96
+#: concrete/blocks/search/controller.php:97
 #: concrete/single_pages/dashboard/files/sets.php:222
-#: concrete/single_pages/dashboard/sitemap/full.php:37
+#: concrete/single_pages/dashboard/sitemap/full.php:31
 #: concrete/single_pages/dashboard/conversations/messages.php:12
 #: concrete/single_pages/dashboard/conversations/messages.php:17
 #: concrete/single_pages/dashboard/conversations/messages.php:41
@@ -4585,8 +4585,9 @@ msgstr "Vazgeç"
 #: concrete/views/dialogs/page/delete.php:30
 #: concrete/views/dialogs/page/delete_alias.php:10
 #: concrete/views/dialogs/file/bulk/delete.php:49
-#: concrete/views/panels/page/versions.php:42
-#: concrete/views/panels/page/versions.php:301
+#: concrete/views/panels/page/versions.php:43
+#: concrete/views/panels/page/versions.php:44
+#: concrete/views/panels/page/versions.php:329
 #: concrete/views/panels/add.php:225
 #: concrete/attributes/select/type_form.php:20
 #: concrete/single_pages/dashboard/express/entries/view_entry.php:9
@@ -5085,7 +5086,7 @@ msgstr "Sadece seçilen tüm gruplardaki kullanıcılar için bu izin geçerli o
 #: concrete/blocks/testimonial/form.php:22
 #: concrete/single_pages/dashboard/files/add_set.php:10
 #: concrete/single_pages/dashboard/files/sets.php:28
-#: concrete/single_pages/dashboard/sitemap/full.php:36
+#: concrete/single_pages/dashboard/sitemap/full.php:30
 #: concrete/single_pages/dashboard/express/entries/folder.php:13
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:253
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:274
@@ -5625,7 +5626,7 @@ msgstr "Sayfa Türü"
 #: concrete/tools/pages/delete.php:96
 #: concrete/src/User/Search/Field/Field/DateAddedField.php:31
 #: concrete/src/File/Search/Field/Field/DateAddedField.php:30
-#: concrete/src/Express/Search/ColumnSet/DefaultSet.php:22
+#: concrete/src/Express/Search/ColumnSet/Available.php:13
 #: concrete/src/Page/Search/Field/Field/DateAddedField.php:30
 #: concrete/elements/files/properties.php:132
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:305
@@ -5887,7 +5888,7 @@ msgstr "Birisi zaten şu an bu sayfayı düzenliyor."
 
 #: concrete/tools/sitemap_search_selector.php:5
 #: concrete/controllers/backend/page.php:76
-#: concrete/single_pages/dashboard/sitemap/full.php:87
+#: concrete/single_pages/dashboard/sitemap/full.php:81
 msgid "You do not have access to the sitemap."
 msgstr "Sayfa listesine erişim izniniz yok."
 
@@ -5970,46 +5971,50 @@ msgstr "Lütfen sürüm açıklamalarını belirtin."
 msgid "Page updated successfully."
 msgstr "Sayfa güncellendi."
 
-#: concrete/controllers/panel/page/versions.php:63
+#: concrete/controllers/panel/page/versions.php:65
 #, php-format
 msgid "Copy of Version: %s"
 msgstr "%s sürümünün kopyası"
 
-#: concrete/controllers/panel/page/versions.php:66
+#: concrete/controllers/panel/page/versions.php:68
 #, php-format
 msgid "Version %s copied successfully. New version is %s."
 msgstr "%s sürümü başarıyla kopyalandı. %s, yeni sürüm olarak atandı."
 
-#: concrete/controllers/panel/page/versions.php:81
+#: concrete/controllers/panel/page/versions.php:83
 msgid "You do not have permission to create new pages of this type."
 msgstr "Bu türde yeni sayfa oluşturma izniniz yok."
 
-#: concrete/controllers/panel/page/versions.php:89
+#: concrete/controllers/panel/page/versions.php:91
 msgid "New Page Created From Version"
 msgstr "Sürümden Yeni Sayfa Oluşturuldu"
 
-#: concrete/controllers/panel/page/versions.php:135
+#: concrete/controllers/panel/page/versions.php:137
+msgid "You cannot delete all page versions."
+msgstr ""
+
+#: concrete/controllers/panel/page/versions.php:145
 #, php-format
 msgid "%s version deleted successfully"
 msgid_plural "%s versions deleted successfully."
 msgstr[0] "%s sürümleri başarıyla silindi."
 
-#: concrete/controllers/panel/page/versions.php:138
+#: concrete/controllers/panel/page/versions.php:150
 msgid "You do not have permission to delete page versions."
 msgstr "Sayfa sürümlerini silme izniniz yok."
 
-#: concrete/controllers/panel/page/versions.php:169
+#: concrete/controllers/panel/page/versions.php:193
 msgid ""
 "<strong>Request Saved.</strong> You must complete the workflow before this "
 "change is active."
 msgstr "<strong>İstek Kaydedildi.</strong> Değişiklik aktif olmadan önce bu iş akışını tamamlamalısınız."
 
-#: concrete/controllers/panel/page/versions.php:175
+#: concrete/controllers/panel/page/versions.php:199
 #, php-format
 msgid "Version %s approved successfully"
 msgstr "%s sürümü başarıyla onaylandı."
 
-#: concrete/controllers/panel/page/versions.php:179
+#: concrete/controllers/panel/page/versions.php:203
 msgid "You do not have permission to approve page versions."
 msgstr "Sayfa sürümlerini onaylama izniniz yok."
 
@@ -6552,6 +6557,7 @@ msgstr ""
 #: concrete/controllers/single_page/dashboard/blocks/stacks.php:557
 #: concrete/controllers/single_page/dashboard/blocks/stacks.php:565
 #: concrete/controllers/single_page/dashboard/blocks/stacks.php:598
+#: concrete/src/File/Service/File.php:520
 #, php-format
 msgid "Bad parameter: %s"
 msgstr ""
@@ -8399,6 +8405,7 @@ msgstr ""
 
 #: concrete/controllers/backend/file.php:71
 #: concrete/controllers/backend/file.php:88
+#: concrete/src/File/Service/File.php:502
 #, php-format
 msgid "File %s could not be found."
 msgstr "%s dosyası bulunamadı."
@@ -8424,7 +8431,7 @@ msgid "File not found."
 msgstr "Dosya bulunamadı."
 
 #: concrete/controllers/backend/page.php:73
-#: concrete/themes/elemental/page_forbidden.php:11
+#: concrete/themes/elemental/page_forbidden.php:13
 msgid "You are not allowed to access this page."
 msgstr "Bu sayfaya erişiminiz sağlanamadı."
 
@@ -8956,7 +8963,7 @@ msgstr "Tasarım &amp; Tür"
 #: concrete/elements/page_controls_footer.php:211
 #: concrete/views/dialogs/file/properties.php:13
 #: concrete/views/dialogs/file/properties.php:94
-#: concrete/views/panels/page/versions.php:296
+#: concrete/views/panels/page/versions.php:324
 msgid "Versions"
 msgstr "Sürümler"
 
@@ -10096,7 +10103,7 @@ msgid "Unable to connect to database."
 msgstr "Veritabanına bağlanılamıyor."
 
 #: concrete/controllers/install.php:123
-#: concrete/src/Package/StartingPointPackage.php:323
+#: concrete/src/Package/StartingPointPackage.php:313
 #, php-format
 msgid ""
 "There are already %s tables in this database. concrete5 must be installed in"
@@ -10300,59 +10307,59 @@ msgstr "Oturumu Kapat"
 msgid "Photo Credit:"
 msgstr "Fotoğrafın Sahibi:"
 
-#: concrete/themes/elemental/elements/footer.php:64
+#: concrete/themes/elemental/elements/footer.php:68
 msgid ""
 "Built with <a href=\"http://www.concrete5.org\" class=\"concrete5\" "
 "rel=\"nofollow\">concrete5</a> CMS."
 msgstr "<a href=\"http://www.concrete5.org\" class=\"concrete5\" rel=\"nofollow\">concrete5</a> İYS ile oluşturulmuştur."
 
-#: concrete/themes/elemental/page_forbidden.php:10
+#: concrete/themes/elemental/page_forbidden.php:12
 msgid "403 Error"
 msgstr "403 Hatası"
 
-#: concrete/themes/elemental/page_not_found.php:10
+#: concrete/themes/elemental/page_not_found.php:12
 msgid "404 Error"
 msgstr "404 Hatası"
 
-#: concrete/themes/elemental/page_not_found.php:11
+#: concrete/themes/elemental/page_not_found.php:13
 msgid "Page not found."
 msgstr "Sayfa bulunamadı."
 
-#: concrete/themes/elemental/page_theme.php:37
+#: concrete/themes/elemental/page_theme.php:38
 msgid "Elemental"
 msgstr "Temel"
 
-#: concrete/themes/elemental/page_theme.php:42
+#: concrete/themes/elemental/page_theme.php:43
 msgid ""
 "Elegant, spacious theme with support for blogs, portfolios, layouts and "
 "more."
 msgstr "Bloglar, portföyler, mizanpajlar ve daha fazlasını destekleyen zarif, ferah bir tema."
 
-#: concrete/themes/elemental/page_theme.php:97
+#: concrete/themes/elemental/page_theme.php:113
 msgid "Title Thin"
 msgstr "İnce Başlık"
 
-#: concrete/themes/elemental/page_theme.php:98
+#: concrete/themes/elemental/page_theme.php:114
 msgid "Title Caps Bold"
 msgstr "Kalın Büyük Başlık"
 
-#: concrete/themes/elemental/page_theme.php:99
+#: concrete/themes/elemental/page_theme.php:115
 msgid "Title Caps"
 msgstr "Büyük Başlık"
 
-#: concrete/themes/elemental/page_theme.php:100
+#: concrete/themes/elemental/page_theme.php:116
 msgid "Image Caption"
 msgstr "Resim Başlığı"
 
-#: concrete/themes/elemental/page_theme.php:101
+#: concrete/themes/elemental/page_theme.php:117
 msgid "Standard Button"
 msgstr "Standart Buton"
 
-#: concrete/themes/elemental/page_theme.php:102
+#: concrete/themes/elemental/page_theme.php:118
 msgid "Success Button"
 msgstr "Başarılı Butonu"
 
-#: concrete/themes/elemental/page_theme.php:103
+#: concrete/themes/elemental/page_theme.php:119
 msgid "Primary Button"
 msgstr "Birincil Buton"
 
@@ -10744,13 +10751,23 @@ msgid ""
 "directory."
 msgstr "Dosya depolama konumu için geçersiz yol. Kök dizini seçemezsiniz."
 
-#: concrete/src/File/Service/File.php:137
+#: concrete/src/File/Service/File.php:138
 msgid "An error occurred while attempting to determine file permissions."
 msgstr "Dosya izinlerini belirlemeye çalışırken bir hata oluştu."
 
-#: concrete/src/File/Service/File.php:346
+#: concrete/src/File/Service/File.php:347
 msgid "Request timed out."
 msgstr "İstek zaman aşımına uğradı."
+
+#: concrete/src/File/Service/File.php:506
+#, php-format
+msgid "Unable to retrieve the permissions of the file %s"
+msgstr ""
+
+#: concrete/src/File/Service/File.php:524
+#, php-format
+msgid "Unable to set the permissions of the file %s"
+msgstr ""
 
 #: concrete/src/File/Service/Zip.php:153 concrete/src/File/Service/Zip.php:244
 #, php-format
@@ -12244,147 +12261,147 @@ msgid ""
 "uninstalling."
 msgstr "BU paket aktif site temasını içeriyor, lütfen kaldırmadan önce temayı değiştirin."
 
-#: concrete/src/Package/StartingPointPackage.php:61
+#: concrete/src/Package/StartingPointPackage.php:51
 msgid "Starting installation and creating directories."
 msgstr "Kurulum başlatılıyor ve klasörler oluşturuluyor."
 
-#: concrete/src/Package/StartingPointPackage.php:62
+#: concrete/src/Package/StartingPointPackage.php:52
 msgid "Creating database tables."
 msgstr "Veritabanı tabloları oluşturuluyor."
 
-#: concrete/src/Package/StartingPointPackage.php:63
+#: concrete/src/Package/StartingPointPackage.php:53
 msgid "Creating site."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:64
+#: concrete/src/Package/StartingPointPackage.php:54
 msgid "Adding admin user."
 msgstr "Admin kullanıcısı ekleniyor."
 
-#: concrete/src/Package/StartingPointPackage.php:65
+#: concrete/src/Package/StartingPointPackage.php:55
 msgid "Installing permissions & workflow."
 msgstr "İzinler & iş akışları kuruluyor."
 
-#: concrete/src/Package/StartingPointPackage.php:66
+#: concrete/src/Package/StartingPointPackage.php:56
 msgid "Installing Custom Data Objects."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:67
+#: concrete/src/Package/StartingPointPackage.php:57
 msgid "Creating home page."
 msgstr "Ana sayfa oluşturuluyor."
 
-#: concrete/src/Package/StartingPointPackage.php:68
+#: concrete/src/Package/StartingPointPackage.php:58
 msgid "Installing attributes."
 msgstr "Özellikler ekleniyor."
 
-#: concrete/src/Package/StartingPointPackage.php:69
+#: concrete/src/Package/StartingPointPackage.php:59
 msgid "Adding block types."
 msgstr "Blok türleri ekleniyor."
 
-#: concrete/src/Package/StartingPointPackage.php:70
+#: concrete/src/Package/StartingPointPackage.php:60
 msgid "Adding gathering data sources."
 msgstr "Toplama veri kaynakları ekleniyor."
 
-#: concrete/src/Package/StartingPointPackage.php:71
+#: concrete/src/Package/StartingPointPackage.php:61
 msgid "Page type basic setup."
 msgstr "Sayfa türü temel kurulumu."
 
-#: concrete/src/Package/StartingPointPackage.php:72
+#: concrete/src/Package/StartingPointPackage.php:62
 msgid "Adding themes."
 msgstr "Temalar ekleniyor."
 
-#: concrete/src/Package/StartingPointPackage.php:73
+#: concrete/src/Package/StartingPointPackage.php:63
 msgid "Installing automated jobs."
 msgstr "Otomatik görevler kuruluyor."
 
-#: concrete/src/Package/StartingPointPackage.php:74
+#: concrete/src/Package/StartingPointPackage.php:64
 msgid "Installing dashboard."
 msgstr "Kontrol paneli kuruluyor."
 
-#: concrete/src/Package/StartingPointPackage.php:78
+#: concrete/src/Package/StartingPointPackage.php:68
 msgid "Installing login and registration pages."
 msgstr "Kullanıcı girişi ve kayıt sayfaları kuruluyor."
 
-#: concrete/src/Package/StartingPointPackage.php:79
+#: concrete/src/Package/StartingPointPackage.php:69
 msgid "Adding image editor functionality."
 msgstr "Resim düzenleme işlevselliği ekleniyor."
 
-#: concrete/src/Package/StartingPointPackage.php:80
+#: concrete/src/Package/StartingPointPackage.php:70
 msgid "Configuring site."
 msgstr "Site yapılandırılıyor."
 
-#: concrete/src/Package/StartingPointPackage.php:81
+#: concrete/src/Package/StartingPointPackage.php:71
 msgid "Importing files."
 msgstr "Dosyalar alınıyor."
 
-#: concrete/src/Package/StartingPointPackage.php:82
+#: concrete/src/Package/StartingPointPackage.php:72
 msgid "Adding pages and content."
 msgstr "Sayfalar ve içerikler ekleniyor."
 
-#: concrete/src/Package/StartingPointPackage.php:83
+#: concrete/src/Package/StartingPointPackage.php:73
 msgid "Adding desktops."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:84
+#: concrete/src/Package/StartingPointPackage.php:74
 msgid "Setting site permissions."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:85
+#: concrete/src/Package/StartingPointPackage.php:75
 msgid "Finishing."
 msgstr "Bitiriliyor."
 
-#: concrete/src/Package/StartingPointPackage.php:267
-#: concrete/src/Package/StartingPointPackage.php:270
+#: concrete/src/Package/StartingPointPackage.php:257
+#: concrete/src/Package/StartingPointPackage.php:260
 #: concrete/blocks/page_title/form_add_edit.php:68
 #: concrete/blocks/page_title/form_add_edit.php:93
 #: concrete/single_pages/dashboard/system/files/storage.php:61
 msgid "Default"
 msgstr "Varsayılan"
 
-#: concrete/src/Package/StartingPointPackage.php:268
+#: concrete/src/Package/StartingPointPackage.php:258
 msgid "Local"
 msgstr "Yerel"
 
-#: concrete/src/Package/StartingPointPackage.php:278
+#: concrete/src/Package/StartingPointPackage.php:268
 msgctxt "ThumbnailTypeName"
 msgid "File Manager Thumbnails"
 msgstr "Dosya Yöneticisi Önizleme Resimleri"
 
-#: concrete/src/Package/StartingPointPackage.php:286
+#: concrete/src/Package/StartingPointPackage.php:276
 msgctxt "ThumbnailTypeName"
 msgid "File Manager Detail Thumbnails"
 msgstr "Dosya Yöneticisi Detaylı Önizleme Resimleri"
 
-#: concrete/src/Package/StartingPointPackage.php:353
+#: concrete/src/Package/StartingPointPackage.php:343
 #, php-format
 msgid "Unable to install database: %s"
 msgstr "Veritabanı kurulamıyor: %s"
 
-#: concrete/src/Package/StartingPointPackage.php:393
+#: concrete/src/Package/StartingPointPackage.php:383
 msgctxt "GroupName"
 msgid "Guest"
 msgstr "Misafir"
 
-#: concrete/src/Package/StartingPointPackage.php:394
+#: concrete/src/Package/StartingPointPackage.php:384
 msgctxt "GroupDescription"
 msgid "The guest group represents unregistered visitors to your site."
 msgstr "Misarif grubu sitenize kayıt olmayan ziyaretçileri temsil eder."
 
-#: concrete/src/Package/StartingPointPackage.php:399
+#: concrete/src/Package/StartingPointPackage.php:389
 msgctxt "GroupName"
 msgid "Registered Users"
 msgstr "Kayıtlı Kullanıcılar"
 
-#: concrete/src/Package/StartingPointPackage.php:400
+#: concrete/src/Package/StartingPointPackage.php:390
 msgctxt "GroupDescription"
 msgid "The registered users group represents all user accounts."
 msgstr "Kayıtlı kullanıcılar grubu tüm kullanıcı hesaplarını temsil eder."
 
-#: concrete/src/Package/StartingPointPackage.php:404
+#: concrete/src/Package/StartingPointPackage.php:394
 msgctxt "GroupName"
 msgid "Administrators"
 msgstr "Yöneticiler"
 
-#: concrete/src/Package/StartingPointPackage.php:421
+#: concrete/src/Package/StartingPointPackage.php:411
 msgid "Won a Badge"
 msgstr "Bir Rozet Kazandınız"
 
@@ -13411,7 +13428,7 @@ msgstr "Kontrol Paneli Ana Sayfasını Özelleştir"
 msgid "Your Site"
 msgstr "Siteniz"
 
-#: concrete/src/Application/Application.php:435
+#: concrete/src/Application/Application.php:440
 msgid ""
 "Invalid path traversal. Please make this request with a valid HTTP client."
 msgstr ""
@@ -19150,17 +19167,17 @@ msgstr "Onaylayan"
 msgid "This is the approved page version."
 msgstr "Bu, onaylı sayfa sürümüdür."
 
-#: concrete/views/panels/page/versions.php:56
-#: concrete/views/panels/page/versions.php:58
+#: concrete/views/panels/page/versions.php:59
+#: concrete/views/panels/page/versions.php:61
 msgid "&larr; Newer"
 msgstr "&larr; Daha Yeni"
 
-#: concrete/views/panels/page/versions.php:61
-#: concrete/views/panels/page/versions.php:63
+#: concrete/views/panels/page/versions.php:64
+#: concrete/views/panels/page/versions.php:66
 msgid "Older &rarr;"
 msgstr "Daha Eski &rarr;"
 
-#: concrete/views/panels/page/versions.php:301
+#: concrete/views/panels/page/versions.php:329
 msgid "Compare"
 msgstr "Karşılaştır"
 
@@ -21611,7 +21628,7 @@ msgid "Alternate Row Background Color"
 msgstr ""
 
 #: concrete/blocks/express_entry_list/view.php:26
-#: concrete/single_pages/dashboard/sitemap/full.php:40
+#: concrete/single_pages/dashboard/sitemap/full.php:34
 msgid "Advanced Search"
 msgstr "Gelişmiş Arama"
 
@@ -21675,7 +21692,7 @@ msgstr "<a href=\"%s\">%s</a>"
 msgid "%s, %s"
 msgstr "%s, %s"
 
-#: concrete/blocks/search/controller.php:91
+#: concrete/blocks/search/controller.php:92
 msgid "Add a search box to your site."
 msgstr "Sitenize arama kutusu ekleyin."
 
@@ -22771,15 +22788,15 @@ msgstr "Site haritası belirli uzun sayfa listeleri doğrultusunda düz görün�
 msgid "You do not have access to the dashboard sitemap."
 msgstr "Tüm sayfalar kontrol paneli erişim izniniz yok."
 
-#: concrete/single_pages/dashboard/sitemap/full.php:53
+#: concrete/single_pages/dashboard/sitemap/full.php:47
 msgid "Page copy operations pending."
 msgstr "Sayfa kopyalama işlemleri beklemede."
 
-#: concrete/single_pages/dashboard/sitemap/full.php:54
+#: concrete/single_pages/dashboard/sitemap/full.php:48
 msgid "Resume Copy"
 msgstr "Kopyalamayı Sürdür"
 
-#: concrete/single_pages/dashboard/sitemap/full.php:76
+#: concrete/single_pages/dashboard/sitemap/full.php:70
 msgid "Include System Pages in Sitemap"
 msgstr "Site Haritasına Sistem Sayfalarını Dahil Et"
 

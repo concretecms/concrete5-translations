@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-08-22T06:00:20+02:00\n"
-"PO-Revision-Date: 2016-08-22 09:23+0000\n"
+"POT-Creation-Date: 2016-08-23T12:00:19+02:00\n"
+"PO-Revision-Date: 2016-08-23 14:26+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Czech (Czech Republic) (http://www.transifex.com/concrete5/concrete5/language/cs_CZ/)\n"
 "MIME-Version: 1.0\n"
@@ -3668,9 +3668,9 @@ msgstr "Ply ti tiktej k clyt mrusrýdliřed údévli nidi nězběň nidiby. Mlut
 #: concrete/views/panels/page/attributes.php:9
 #: concrete/views/panels/add.php:260
 #: concrete/blocks/express_entry_list/view.php:23
-#: concrete/blocks/search/controller.php:96
+#: concrete/blocks/search/controller.php:97
 #: concrete/single_pages/dashboard/files/sets.php:222
-#: concrete/single_pages/dashboard/sitemap/full.php:37
+#: concrete/single_pages/dashboard/sitemap/full.php:31
 #: concrete/single_pages/dashboard/conversations/messages.php:12
 #: concrete/single_pages/dashboard/conversations/messages.php:17
 #: concrete/single_pages/dashboard/conversations/messages.php:41
@@ -4591,8 +4591,9 @@ msgstr "Zrušit"
 #: concrete/views/dialogs/page/delete.php:30
 #: concrete/views/dialogs/page/delete_alias.php:10
 #: concrete/views/dialogs/file/bulk/delete.php:49
-#: concrete/views/panels/page/versions.php:42
-#: concrete/views/panels/page/versions.php:301
+#: concrete/views/panels/page/versions.php:43
+#: concrete/views/panels/page/versions.php:44
+#: concrete/views/panels/page/versions.php:329
 #: concrete/views/panels/add.php:225
 #: concrete/attributes/select/type_form.php:20
 #: concrete/single_pages/dashboard/express/entries/view_entry.php:9
@@ -5095,7 +5096,7 @@ msgstr "Toto oprávnění budou mít pouze členové patřící do VŠECH vybran
 #: concrete/blocks/testimonial/form.php:22
 #: concrete/single_pages/dashboard/files/add_set.php:10
 #: concrete/single_pages/dashboard/files/sets.php:28
-#: concrete/single_pages/dashboard/sitemap/full.php:36
+#: concrete/single_pages/dashboard/sitemap/full.php:30
 #: concrete/single_pages/dashboard/express/entries/folder.php:13
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:253
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:274
@@ -5635,7 +5636,7 @@ msgstr "Typ stránky"
 #: concrete/tools/pages/delete.php:96
 #: concrete/src/User/Search/Field/Field/DateAddedField.php:31
 #: concrete/src/File/Search/Field/Field/DateAddedField.php:30
-#: concrete/src/Express/Search/ColumnSet/DefaultSet.php:22
+#: concrete/src/Express/Search/ColumnSet/Available.php:13
 #: concrete/src/Page/Search/Field/Field/DateAddedField.php:30
 #: concrete/elements/files/properties.php:132
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:305
@@ -5897,7 +5898,7 @@ msgstr "Tuto stránku již někdo upravuje."
 
 #: concrete/tools/sitemap_search_selector.php:5
 #: concrete/controllers/backend/page.php:76
-#: concrete/single_pages/dashboard/sitemap/full.php:87
+#: concrete/single_pages/dashboard/sitemap/full.php:81
 msgid "You do not have access to the sitemap."
 msgstr "Nemáte přístup na mapu webu."
 
@@ -5980,25 +5981,29 @@ msgstr "Zadejte prosím komentář k verzi"
 msgid "Page updated successfully."
 msgstr "Stránka byla úspěšně aktualizována."
 
-#: concrete/controllers/panel/page/versions.php:63
+#: concrete/controllers/panel/page/versions.php:65
 #, php-format
 msgid "Copy of Version: %s"
 msgstr "Kopie verze: %s"
 
-#: concrete/controllers/panel/page/versions.php:66
+#: concrete/controllers/panel/page/versions.php:68
 #, php-format
 msgid "Version %s copied successfully. New version is %s."
 msgstr "Verze %s byla úspěšně zkopírována. Nová verze je %s."
 
-#: concrete/controllers/panel/page/versions.php:81
+#: concrete/controllers/panel/page/versions.php:83
 msgid "You do not have permission to create new pages of this type."
 msgstr "Nemáte oprávnění vytvářet nové stránky tohoto typu."
 
-#: concrete/controllers/panel/page/versions.php:89
+#: concrete/controllers/panel/page/versions.php:91
 msgid "New Page Created From Version"
 msgstr "Byla vytvořena nová stránka z verze"
 
-#: concrete/controllers/panel/page/versions.php:135
+#: concrete/controllers/panel/page/versions.php:137
+msgid "You cannot delete all page versions."
+msgstr ""
+
+#: concrete/controllers/panel/page/versions.php:145
 #, php-format
 msgid "%s version deleted successfully"
 msgid_plural "%s versions deleted successfully."
@@ -6006,22 +6011,22 @@ msgstr[0] "%s verze úspěšně smazána."
 msgstr[1] "%s verze úspěšně smazány."
 msgstr[2] "%s verzí úspěšně smazáno."
 
-#: concrete/controllers/panel/page/versions.php:138
+#: concrete/controllers/panel/page/versions.php:150
 msgid "You do not have permission to delete page versions."
 msgstr "Nemáte oprávnění mazat verze stránky."
 
-#: concrete/controllers/panel/page/versions.php:169
+#: concrete/controllers/panel/page/versions.php:193
 msgid ""
 "<strong>Request Saved.</strong> You must complete the workflow before this "
 "change is active."
 msgstr "<strong>Požadavek uložen.</strong> Pro aktivaci změny musíte dokončit workflow."
 
-#: concrete/controllers/panel/page/versions.php:175
+#: concrete/controllers/panel/page/versions.php:199
 #, php-format
 msgid "Version %s approved successfully"
 msgstr "Verze %s byla úspěšně schválena"
 
-#: concrete/controllers/panel/page/versions.php:179
+#: concrete/controllers/panel/page/versions.php:203
 msgid "You do not have permission to approve page versions."
 msgstr "Nemáte oprávnění schvalovat verze stránek."
 
@@ -6568,6 +6573,7 @@ msgstr "Název nemůže být prázdný."
 #: concrete/controllers/single_page/dashboard/blocks/stacks.php:557
 #: concrete/controllers/single_page/dashboard/blocks/stacks.php:565
 #: concrete/controllers/single_page/dashboard/blocks/stacks.php:598
+#: concrete/src/File/Service/File.php:520
 #, php-format
 msgid "Bad parameter: %s"
 msgstr "Špatný parametr: %s"
@@ -8421,6 +8427,7 @@ msgstr "Složka přidána."
 
 #: concrete/controllers/backend/file.php:71
 #: concrete/controllers/backend/file.php:88
+#: concrete/src/File/Service/File.php:502
 #, php-format
 msgid "File %s could not be found."
 msgstr "Soubor %s nebyl nalezen."
@@ -8448,7 +8455,7 @@ msgid "File not found."
 msgstr "Soubor nebyl nalezen."
 
 #: concrete/controllers/backend/page.php:73
-#: concrete/themes/elemental/page_forbidden.php:11
+#: concrete/themes/elemental/page_forbidden.php:13
 msgid "You are not allowed to access this page."
 msgstr "Na tuto stránku nemáte přístup."
 
@@ -8980,7 +8987,7 @@ msgstr "Design a typ"
 #: concrete/elements/page_controls_footer.php:211
 #: concrete/views/dialogs/file/properties.php:13
 #: concrete/views/dialogs/file/properties.php:94
-#: concrete/views/panels/page/versions.php:296
+#: concrete/views/panels/page/versions.php:324
 msgid "Versions"
 msgstr "Verze"
 
@@ -10122,7 +10129,7 @@ msgid "Unable to connect to database."
 msgstr "Nelze se připojit k databázi."
 
 #: concrete/controllers/install.php:123
-#: concrete/src/Package/StartingPointPackage.php:323
+#: concrete/src/Package/StartingPointPackage.php:313
 #, php-format
 msgid ""
 "There are already %s tables in this database. concrete5 must be installed in"
@@ -10326,59 +10333,59 @@ msgstr "Odhlásit"
 msgid "Photo Credit:"
 msgstr "Autor fotky:"
 
-#: concrete/themes/elemental/elements/footer.php:64
+#: concrete/themes/elemental/elements/footer.php:68
 msgid ""
 "Built with <a href=\"http://www.concrete5.org\" class=\"concrete5\" "
 "rel=\"nofollow\">concrete5</a> CMS."
 msgstr "Vytvořeno pomocí <a href=\"http://www.concrete5.org\" class=\"concrete5\" rel=\"nofollow\">Concrete5</a> CMS."
 
-#: concrete/themes/elemental/page_forbidden.php:10
+#: concrete/themes/elemental/page_forbidden.php:12
 msgid "403 Error"
 msgstr "Chyba 403"
 
-#: concrete/themes/elemental/page_not_found.php:10
+#: concrete/themes/elemental/page_not_found.php:12
 msgid "404 Error"
 msgstr "Chyba 404"
 
-#: concrete/themes/elemental/page_not_found.php:11
+#: concrete/themes/elemental/page_not_found.php:13
 msgid "Page not found."
 msgstr "Stránka nebyla nalezena."
 
-#: concrete/themes/elemental/page_theme.php:37
+#: concrete/themes/elemental/page_theme.php:38
 msgid "Elemental"
 msgstr "Základní"
 
-#: concrete/themes/elemental/page_theme.php:42
+#: concrete/themes/elemental/page_theme.php:43
 msgid ""
 "Elegant, spacious theme with support for blogs, portfolios, layouts and "
 "more."
 msgstr "Elegantní, prostorný motiv s podporou pro blogy, portfolia, layouty atd."
 
-#: concrete/themes/elemental/page_theme.php:97
+#: concrete/themes/elemental/page_theme.php:113
 msgid "Title Thin"
 msgstr "Tenký titulek"
 
-#: concrete/themes/elemental/page_theme.php:98
+#: concrete/themes/elemental/page_theme.php:114
 msgid "Title Caps Bold"
 msgstr "Tučná velká písmena titulku"
 
-#: concrete/themes/elemental/page_theme.php:99
+#: concrete/themes/elemental/page_theme.php:115
 msgid "Title Caps"
 msgstr "Velká písmena titulku"
 
-#: concrete/themes/elemental/page_theme.php:100
+#: concrete/themes/elemental/page_theme.php:116
 msgid "Image Caption"
 msgstr "Titulek obrázku"
 
-#: concrete/themes/elemental/page_theme.php:101
+#: concrete/themes/elemental/page_theme.php:117
 msgid "Standard Button"
 msgstr "Standardní tlačítko"
 
-#: concrete/themes/elemental/page_theme.php:102
+#: concrete/themes/elemental/page_theme.php:118
 msgid "Success Button"
 msgstr "Tlačítko úspěchu"
 
-#: concrete/themes/elemental/page_theme.php:103
+#: concrete/themes/elemental/page_theme.php:119
 msgid "Primary Button"
 msgstr "Primární tlačítko"
 
@@ -10774,13 +10781,23 @@ msgid ""
 "directory."
 msgstr "Neplatná cesta k umístění úložiště souborů. Možná není vybrána kořenová složka."
 
-#: concrete/src/File/Service/File.php:137
+#: concrete/src/File/Service/File.php:138
 msgid "An error occurred while attempting to determine file permissions."
 msgstr "Při pokusu zjistit oprávnění souboru došlo k chybě."
 
-#: concrete/src/File/Service/File.php:346
+#: concrete/src/File/Service/File.php:347
 msgid "Request timed out."
 msgstr "Požadavek vypršel."
+
+#: concrete/src/File/Service/File.php:506
+#, php-format
+msgid "Unable to retrieve the permissions of the file %s"
+msgstr ""
+
+#: concrete/src/File/Service/File.php:524
+#, php-format
+msgid "Unable to set the permissions of the file %s"
+msgstr ""
 
 #: concrete/src/File/Service/Zip.php:153 concrete/src/File/Service/Zip.php:244
 #, php-format
@@ -12276,147 +12293,147 @@ msgid ""
 "uninstalling."
 msgstr "Tento balíček obsahuje aktivní motiv webu. Před odinstalací prosím změnte motiv."
 
-#: concrete/src/Package/StartingPointPackage.php:61
+#: concrete/src/Package/StartingPointPackage.php:51
 msgid "Starting installation and creating directories."
 msgstr "Spouštím instalaci a vytváření adresářů."
 
-#: concrete/src/Package/StartingPointPackage.php:62
+#: concrete/src/Package/StartingPointPackage.php:52
 msgid "Creating database tables."
 msgstr "Vytvářím databázové tabulky."
 
-#: concrete/src/Package/StartingPointPackage.php:63
+#: concrete/src/Package/StartingPointPackage.php:53
 msgid "Creating site."
 msgstr "Vytvářím web."
 
-#: concrete/src/Package/StartingPointPackage.php:64
+#: concrete/src/Package/StartingPointPackage.php:54
 msgid "Adding admin user."
 msgstr "Přidávám účet administrátora."
 
-#: concrete/src/Package/StartingPointPackage.php:65
+#: concrete/src/Package/StartingPointPackage.php:55
 msgid "Installing permissions & workflow."
 msgstr "Instaluji oprávnění a workflow."
 
-#: concrete/src/Package/StartingPointPackage.php:66
+#: concrete/src/Package/StartingPointPackage.php:56
 msgid "Installing Custom Data Objects."
 msgstr "Instalaji vlastní datové objekty."
 
-#: concrete/src/Package/StartingPointPackage.php:67
+#: concrete/src/Package/StartingPointPackage.php:57
 msgid "Creating home page."
 msgstr "Vytvářím domovskou stránku."
 
-#: concrete/src/Package/StartingPointPackage.php:68
+#: concrete/src/Package/StartingPointPackage.php:58
 msgid "Installing attributes."
 msgstr "Instaluji atributy."
 
-#: concrete/src/Package/StartingPointPackage.php:69
+#: concrete/src/Package/StartingPointPackage.php:59
 msgid "Adding block types."
 msgstr "Přidávám typy bloků."
 
-#: concrete/src/Package/StartingPointPackage.php:70
+#: concrete/src/Package/StartingPointPackage.php:60
 msgid "Adding gathering data sources."
 msgstr "Přidávám datové zdroje sbírek."
 
-#: concrete/src/Package/StartingPointPackage.php:71
+#: concrete/src/Package/StartingPointPackage.php:61
 msgid "Page type basic setup."
 msgstr "Základní nastavení typu stránek."
 
-#: concrete/src/Package/StartingPointPackage.php:72
+#: concrete/src/Package/StartingPointPackage.php:62
 msgid "Adding themes."
 msgstr "Přidávám motivy."
 
-#: concrete/src/Package/StartingPointPackage.php:73
+#: concrete/src/Package/StartingPointPackage.php:63
 msgid "Installing automated jobs."
 msgstr "Instalují se automatické úlohy."
 
-#: concrete/src/Package/StartingPointPackage.php:74
+#: concrete/src/Package/StartingPointPackage.php:64
 msgid "Installing dashboard."
 msgstr "Instaluji panel Administrace."
 
-#: concrete/src/Package/StartingPointPackage.php:78
+#: concrete/src/Package/StartingPointPackage.php:68
 msgid "Installing login and registration pages."
 msgstr "Instaluji přihlašovací a registrační stránku."
 
-#: concrete/src/Package/StartingPointPackage.php:79
+#: concrete/src/Package/StartingPointPackage.php:69
 msgid "Adding image editor functionality."
 msgstr "Přidávám funkce editoru obrázků."
 
-#: concrete/src/Package/StartingPointPackage.php:80
+#: concrete/src/Package/StartingPointPackage.php:70
 msgid "Configuring site."
 msgstr "Konfiguruji web."
 
-#: concrete/src/Package/StartingPointPackage.php:81
+#: concrete/src/Package/StartingPointPackage.php:71
 msgid "Importing files."
 msgstr "Importuji soubory."
 
-#: concrete/src/Package/StartingPointPackage.php:82
+#: concrete/src/Package/StartingPointPackage.php:72
 msgid "Adding pages and content."
 msgstr "Přidávám stránky a obsah."
 
-#: concrete/src/Package/StartingPointPackage.php:83
+#: concrete/src/Package/StartingPointPackage.php:73
 msgid "Adding desktops."
 msgstr "Přidávám plochy."
 
-#: concrete/src/Package/StartingPointPackage.php:84
+#: concrete/src/Package/StartingPointPackage.php:74
 msgid "Setting site permissions."
 msgstr "Nastavuji oprávnění webu."
 
-#: concrete/src/Package/StartingPointPackage.php:85
+#: concrete/src/Package/StartingPointPackage.php:75
 msgid "Finishing."
 msgstr "Dokončuji."
 
-#: concrete/src/Package/StartingPointPackage.php:267
-#: concrete/src/Package/StartingPointPackage.php:270
+#: concrete/src/Package/StartingPointPackage.php:257
+#: concrete/src/Package/StartingPointPackage.php:260
 #: concrete/blocks/page_title/form_add_edit.php:68
 #: concrete/blocks/page_title/form_add_edit.php:93
 #: concrete/single_pages/dashboard/system/files/storage.php:61
 msgid "Default"
 msgstr "Výchozí"
 
-#: concrete/src/Package/StartingPointPackage.php:268
+#: concrete/src/Package/StartingPointPackage.php:258
 msgid "Local"
 msgstr "Místní"
 
-#: concrete/src/Package/StartingPointPackage.php:278
+#: concrete/src/Package/StartingPointPackage.php:268
 msgctxt "ThumbnailTypeName"
 msgid "File Manager Thumbnails"
 msgstr "Náhledy správce souborů"
 
-#: concrete/src/Package/StartingPointPackage.php:286
+#: concrete/src/Package/StartingPointPackage.php:276
 msgctxt "ThumbnailTypeName"
 msgid "File Manager Detail Thumbnails"
 msgstr "Detaily náhledů Správce souborů"
 
-#: concrete/src/Package/StartingPointPackage.php:353
+#: concrete/src/Package/StartingPointPackage.php:343
 #, php-format
 msgid "Unable to install database: %s"
 msgstr "Nelze nainstalovat databázi:%s"
 
-#: concrete/src/Package/StartingPointPackage.php:393
+#: concrete/src/Package/StartingPointPackage.php:383
 msgctxt "GroupName"
 msgid "Guest"
 msgstr "Host"
 
-#: concrete/src/Package/StartingPointPackage.php:394
+#: concrete/src/Package/StartingPointPackage.php:384
 msgctxt "GroupDescription"
 msgid "The guest group represents unregistered visitors to your site."
 msgstr "Skupina hosté představuje nepřihlášené návštěvníky vašeho webu."
 
-#: concrete/src/Package/StartingPointPackage.php:399
+#: concrete/src/Package/StartingPointPackage.php:389
 msgctxt "GroupName"
 msgid "Registered Users"
 msgstr "Registrovaní uživatelé"
 
-#: concrete/src/Package/StartingPointPackage.php:400
+#: concrete/src/Package/StartingPointPackage.php:390
 msgctxt "GroupDescription"
 msgid "The registered users group represents all user accounts."
 msgstr "Skupina registrovaných uživatelů představuje všechny uživatelské účty."
 
-#: concrete/src/Package/StartingPointPackage.php:404
+#: concrete/src/Package/StartingPointPackage.php:394
 msgctxt "GroupName"
 msgid "Administrators"
 msgstr "Administrátoři"
 
-#: concrete/src/Package/StartingPointPackage.php:421
+#: concrete/src/Package/StartingPointPackage.php:411
 msgid "Won a Badge"
 msgstr "Získal/a odznak"
 
@@ -13443,7 +13460,7 @@ msgstr "Přizpůsobit domovskou stránku Administrace"
 msgid "Your Site"
 msgstr "Váš web"
 
-#: concrete/src/Application/Application.php:435
+#: concrete/src/Application/Application.php:440
 msgid ""
 "Invalid path traversal. Please make this request with a valid HTTP client."
 msgstr ""
@@ -19210,17 +19227,17 @@ msgstr "Schválil/a"
 msgid "This is the approved page version."
 msgstr "Toto je schválená verze stránky."
 
-#: concrete/views/panels/page/versions.php:56
-#: concrete/views/panels/page/versions.php:58
+#: concrete/views/panels/page/versions.php:59
+#: concrete/views/panels/page/versions.php:61
 msgid "&larr; Newer"
 msgstr "&larr; Novější"
 
-#: concrete/views/panels/page/versions.php:61
-#: concrete/views/panels/page/versions.php:63
+#: concrete/views/panels/page/versions.php:64
+#: concrete/views/panels/page/versions.php:66
 msgid "Older &rarr;"
 msgstr "Starší &rarr;"
 
-#: concrete/views/panels/page/versions.php:301
+#: concrete/views/panels/page/versions.php:329
 msgid "Compare"
 msgstr "Porovnat"
 
@@ -21687,7 +21704,7 @@ msgid "Alternate Row Background Color"
 msgstr "Barva pozadí každého druhého řádku"
 
 #: concrete/blocks/express_entry_list/view.php:26
-#: concrete/single_pages/dashboard/sitemap/full.php:40
+#: concrete/single_pages/dashboard/sitemap/full.php:34
 msgid "Advanced Search"
 msgstr "Pokročilé vyhledávání"
 
@@ -21751,7 +21768,7 @@ msgstr "<a href=\"%s\">%s</a>"
 msgid "%s, %s"
 msgstr "%s, %s"
 
-#: concrete/blocks/search/controller.php:91
+#: concrete/blocks/search/controller.php:92
 msgid "Add a search box to your site."
 msgstr "Přidá na stránku vyhledávací pole."
 
@@ -22849,15 +22866,15 @@ msgstr "Ploché zobrazení mapy webu umožňuje procházet dlouhé seznamy strá
 msgid "You do not have access to the dashboard sitemap."
 msgstr "Do administrace mapy webu nemáte přístup."
 
-#: concrete/single_pages/dashboard/sitemap/full.php:53
+#: concrete/single_pages/dashboard/sitemap/full.php:47
 msgid "Page copy operations pending."
 msgstr "Probíhá operace kopírování stránky."
 
-#: concrete/single_pages/dashboard/sitemap/full.php:54
+#: concrete/single_pages/dashboard/sitemap/full.php:48
 msgid "Resume Copy"
 msgstr "Obnovit kopii"
 
-#: concrete/single_pages/dashboard/sitemap/full.php:76
+#: concrete/single_pages/dashboard/sitemap/full.php:70
 msgid "Include System Pages in Sitemap"
 msgstr "Zahrnout systémové stránky do mapy webu"
 
