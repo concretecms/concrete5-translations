@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-08-23T12:00:19+02:00\n"
-"PO-Revision-Date: 2016-08-24 00:06+0000\n"
+"POT-Creation-Date: 2016-08-25T06:00:31+02:00\n"
+"PO-Revision-Date: 2016-08-26 01:46+0000\n"
 "Last-Translator: Katz Ueno <katzueno@deerstudio.com>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/concrete5/concrete5/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
@@ -2096,7 +2096,7 @@ msgctxt "ImageEditorFilterName"
 msgid "Vignette"
 msgstr "ビネット"
 
-#: concrete/config/install/base/jobs.xml:13
+#: concrete/config/install/base/jobs.xml:14
 msgctxt "JobSetName"
 msgid "Default"
 msgstr "デフォルト"
@@ -8567,7 +8567,7 @@ msgid "The block has been added to your clipboard."
 msgstr "ブロックはクリップボードに追加されました。"
 
 #: concrete/controllers/frontend/assets_localization.php:53
-#: concrete/blocks/content/controller.php:39
+#: concrete/blocks/content/controller.php:47
 msgid "Content"
 msgstr "記事"
 
@@ -8791,7 +8791,7 @@ msgstr "現在の画像"
 #: concrete/src/Backup/ContentImporter/ValueInspector/Item/ImageItem.php:8
 #: concrete/elements/custom_style.php:183
 #: concrete/blocks/image_slider/form_setup_html.php:321
-#: concrete/blocks/image/controller.php:32 concrete/blocks/image/form.php:13
+#: concrete/blocks/image/controller.php:43 concrete/blocks/image/form.php:13
 #: concrete/single_pages/dashboard/users/add_group.php:89
 #: concrete/single_pages/dashboard/users/groups.php:62
 #: concrete/single_pages/dashboard/pages/feeds.php:102
@@ -8882,6 +8882,7 @@ msgstr "SEO"
 #: concrete/elements/page_controls_footer.php:140
 #: concrete/elements/page_controls_footer.php:142
 #: concrete/views/dialogs/stack/usage.php:9
+#: concrete/views/dialogs/file/usage.php:9
 #: concrete/views/panels/details/page/location.php:5
 #: concrete/blocks/google_map/form_setup_html.php:22
 #: concrete/blocks/page_list/page_list_form.php:239
@@ -9483,7 +9484,7 @@ msgid ""
 msgstr "個別のページ以外に関することは、ここからスタートします。ユーザーやファイルの管理やログの確認、サイト全体の設定を行ないます。"
 
 #: concrete/controllers/frontend/assets_localization.php:364
-#: concrete/config/app.php:570 concrete/blocks/html/controller.php:27
+#: concrete/config/app.php:571 concrete/blocks/html/controller.php:27
 #: concrete/blocks/image/form.php:27
 msgid "HTML"
 msgstr "HTML"
@@ -10488,6 +10489,16 @@ msgstr "ギャザリングを更新"
 msgid "Loads new items into gatherings."
 msgstr "新しい項目へギャザリングを読み込む"
 
+#: concrete/jobs/update_statistics.php:29
+msgid "Update Statistics Trackers"
+msgstr "統計トラッカー更新"
+
+#: concrete/jobs/update_statistics.php:37
+msgid ""
+"Scan the sitemap for file usage and stack usage to update statistics "
+"trackers"
+msgstr "ファイルの使用状況とスタックの使用状況の統計トラッカー更新のためサイトマップをスキャン。"
+
 #: concrete/src/User/Point/Action/Action.php:286
 #, php-format
 msgid "Error saving user point record: %s"
@@ -10556,18 +10567,18 @@ msgstr "登録日"
 msgid "Status"
 msgstr "ステータス"
 
-#: concrete/src/User/Search/ColumnSet/DefaultSet.php:40
+#: concrete/src/User/Search/ColumnSet/DefaultSet.php:41
 #: concrete/src/User/UserList.php:52
 #: concrete/single_pages/dashboard/users/points/actions.php:100
 msgid "Active"
 msgstr "有効"
 
-#: concrete/src/User/Search/ColumnSet/DefaultSet.php:42
+#: concrete/src/User/Search/ColumnSet/DefaultSet.php:43
 #: concrete/src/User/UserList.php:53
 msgid "Inactive"
 msgstr "非アクティブ"
 
-#: concrete/src/User/Search/ColumnSet/DefaultSet.php:44
+#: concrete/src/User/Search/ColumnSet/DefaultSet.php:45
 #: concrete/src/User/UserList.php:54
 msgid "Unvalidated"
 msgstr "無効化"
@@ -10703,6 +10714,11 @@ msgstr "メール詳細： %s"
 #: concrete/src/Activity/NewsflowItem.php:112
 msgid "Unable to parse news response."
 msgstr "ニュースの応答を解読できません。"
+
+#: concrete/src/Http/DefaultDispatcher.php:44
+msgid ""
+"Invalid path traversal. Please make this request with a valid HTTP client."
+msgstr "無効なパス走査を検出しました。正規のHTTPクライアントを使ってリクエストを完了してください。"
 
 #: concrete/src/Http/ResponseAssetGroup.php:213
 #: concrete/src/Editor/Plugin.php:36
@@ -11043,6 +11059,10 @@ msgstr "ファイルのアップロード中に不明なエラーが発生しま
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:259
 msgid "Duplicate"
 msgstr "複製"
+
+#: concrete/src/File/Menu.php:87
+msgid "File Usage"
+msgstr "ファイル使用状況"
 
 #: concrete/src/Authentication/Type/OAuth/OAuth2/GenericOauth2TypeController.php:37
 #: concrete/src/Authentication/Type/OAuth/OAuth2/GenericOauth2TypeController.php:84
@@ -11782,7 +11802,7 @@ msgstr "この場所にページを公開する権限がありません。"
 msgid "New Version %s"
 msgstr "新バージョン %s"
 
-#: concrete/src/Page/Collection/Collection.php:294
+#: concrete/src/Page/Collection/Collection.php:295
 #, php-format
 msgid "Version %d"
 msgstr "バージョン %d"
@@ -13431,11 +13451,6 @@ msgstr "カスタマイズ管理画面"
 #: concrete/src/Application/Service/Dashboard.php:364
 msgid "Your Site"
 msgstr "サイト名"
-
-#: concrete/src/Application/Application.php:440
-msgid ""
-"Invalid path traversal. Please make this request with a valid HTTP client."
-msgstr "無効なパス走査を検出しました。正規のHTTPクライアントを使ってリクエストを完了してください。"
 
 #: concrete/src/Foundation/Repetition/AbstractRepetition.php:485
 #, php-format
@@ -16389,6 +16404,11 @@ msgctxt "Swiss Canton"
 msgid "Zurich"
 msgstr "チューリッヒ"
 
+#: concrete/src/Routing/DispatcherRouteCallback.php:51
+#: concrete/src/Routing/DispatcherRouteCallback.php:52
+msgid "Page not found"
+msgstr "ページが見つかりません"
+
 #: concrete/src/Marketplace/Marketplace.php:77
 msgid ""
 "This package isn't currently available for this version of concrete5 . "
@@ -16542,6 +16562,7 @@ msgstr "%s: 基本情報"
 #: concrete/elements/dashboard/attributes_table.php:91
 #: concrete/elements/dashboard/attributes_table.php:114
 #: concrete/views/dialogs/stack/usage.php:8
+#: concrete/views/dialogs/file/usage.php:8
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:50
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:115
 #: concrete/single_pages/dashboard/system/express/entities/add.php:15
@@ -16704,6 +16725,7 @@ msgstr "ID"
 
 #: concrete/elements/files/properties.php:15
 #: concrete/views/dialogs/stack/usage.php:7
+#: concrete/views/dialogs/file/usage.php:7
 msgid "Version"
 msgstr "バージョン"
 
@@ -18622,6 +18644,7 @@ msgid ""
 msgstr "このブロックはページのデフォルトのエイリアスです。ここで編集するとページのデフォルトから切り離され、以後ページのデフォルトを編集してもこのブロックは影響を受けません。"
 
 #: concrete/views/dialogs/stack/usage.php:6
+#: concrete/views/dialogs/file/usage.php:6
 msgid "Page ID"
 msgstr "ページID"
 
@@ -19830,155 +19853,155 @@ msgstr "空白のサイト"
 msgid "Creates an empty site using the unstyled Elemental theme."
 msgstr "未設定の Elemental テーマを使って空白のサイトを作ります。"
 
-#: concrete/config/app.php:565
+#: concrete/config/app.php:566
 msgid "JPEG"
 msgstr "JPEG"
 
-#: concrete/config/app.php:566
+#: concrete/config/app.php:567
 msgid "GIF"
 msgstr "GIF"
 
-#: concrete/config/app.php:567
+#: concrete/config/app.php:568
 msgid "PNG"
 msgstr "PNG"
 
-#: concrete/config/app.php:568
+#: concrete/config/app.php:569
 msgid "Windows Bitmap"
 msgstr "Windowsビットマップ"
 
-#: concrete/config/app.php:569
+#: concrete/config/app.php:570
 msgid "TIFF"
 msgstr "TIFF"
 
-#: concrete/config/app.php:571
+#: concrete/config/app.php:572
 msgid "Flash"
 msgstr "Flash"
 
-#: concrete/config/app.php:572 concrete/blocks/feature/form.php:6
+#: concrete/config/app.php:573 concrete/blocks/feature/form.php:6
 #: concrete/single_pages/dashboard/pages/templates/add.php:27
 #: concrete/single_pages/dashboard/pages/templates/view.php:40
 msgid "Icon"
 msgstr "アイコン"
 
-#: concrete/config/app.php:573
+#: concrete/config/app.php:574
 msgid "SVG"
 msgstr "SVG"
 
-#: concrete/config/app.php:574
+#: concrete/config/app.php:575
 msgid "Windows Video"
 msgstr "Windowsビデオ"
 
-#: concrete/config/app.php:575
+#: concrete/config/app.php:576
 msgid "Quicktime"
 msgstr "QuickTime"
 
-#: concrete/config/app.php:576
+#: concrete/config/app.php:577
 msgid "AVI"
 msgstr "AVI"
 
-#: concrete/config/app.php:577
+#: concrete/config/app.php:578
 msgid "3GP"
 msgstr "3GP"
 
-#: concrete/config/app.php:578 concrete/attributes/textarea/type_form.php:8
+#: concrete/config/app.php:579 concrete/attributes/textarea/type_form.php:8
 msgid "Plain Text"
 msgstr "テキスト"
 
-#: concrete/config/app.php:579
+#: concrete/config/app.php:580
 msgid "CSV"
 msgstr "CSV"
 
-#: concrete/config/app.php:580
+#: concrete/config/app.php:581
 msgid "XML"
 msgstr "XML"
 
-#: concrete/config/app.php:581
+#: concrete/config/app.php:582
 msgid "PHP"
 msgstr "PHP"
 
-#: concrete/config/app.php:582
+#: concrete/config/app.php:583
 msgid "MS Word"
 msgstr "MSワード"
 
-#: concrete/config/app.php:583
+#: concrete/config/app.php:584
 msgid "Stylesheet"
 msgstr "スタイルシート"
 
-#: concrete/config/app.php:584 concrete/blocks/video/add.php:24
+#: concrete/config/app.php:585 concrete/blocks/video/add.php:24
 #: concrete/blocks/video/edit.php:37
 msgid "MP4"
 msgstr "MP4"
 
-#: concrete/config/app.php:585
+#: concrete/config/app.php:586
 msgid "FLV"
 msgstr "FLV"
 
-#: concrete/config/app.php:586
+#: concrete/config/app.php:587
 msgid "MP3"
 msgstr "MP3"
 
-#: concrete/config/app.php:587
+#: concrete/config/app.php:588
 msgid "MP4 Audio"
 msgstr "MP4オーディオ"
 
-#: concrete/config/app.php:588
+#: concrete/config/app.php:589
 msgid "Realaudio"
 msgstr "Realaudio"
 
-#: concrete/config/app.php:589
+#: concrete/config/app.php:590
 msgid "Windows Audio"
 msgstr "Windowsオーディオ"
 
-#: concrete/config/app.php:590
+#: concrete/config/app.php:591
 msgid "Rich Text"
 msgstr "リッチテキスト"
 
-#: concrete/config/app.php:591
+#: concrete/config/app.php:592
 msgid "JavaScript"
 msgstr "JavaScript"
 
-#: concrete/config/app.php:592
+#: concrete/config/app.php:593
 msgid "PDF"
 msgstr "PDF"
 
-#: concrete/config/app.php:593
+#: concrete/config/app.php:594
 msgid "Photoshop"
 msgstr "Photoshop"
 
-#: concrete/config/app.php:594
+#: concrete/config/app.php:595
 msgid "MPEG"
 msgstr "MPEG"
 
-#: concrete/config/app.php:595
+#: concrete/config/app.php:596
 msgid "MS Excel"
 msgstr "MSエクセル"
 
-#: concrete/config/app.php:596
+#: concrete/config/app.php:597
 msgid "MS Powerpoint"
 msgstr "MSパワーポイント"
 
-#: concrete/config/app.php:597
+#: concrete/config/app.php:598
 msgid "TAR Archive"
 msgstr "TAR書庫"
 
-#: concrete/config/app.php:598
+#: concrete/config/app.php:599
 msgid "Zip Archive"
 msgstr "ZIP書庫"
 
-#: concrete/config/app.php:599
+#: concrete/config/app.php:600
 msgid "GZip Archive"
 msgstr "GZip書庫"
 
-#: concrete/config/app.php:600 concrete/blocks/video/add.php:20
+#: concrete/config/app.php:601 concrete/blocks/video/add.php:20
 #: concrete/blocks/video/edit.php:33
 msgid "OGG"
 msgstr "OGG"
 
-#: concrete/config/app.php:601
+#: concrete/config/app.php:602
 msgid "OGG Video"
 msgstr "OGG ビデオ"
 
-#: concrete/config/app.php:602 concrete/blocks/video/add.php:16
+#: concrete/config/app.php:603 concrete/blocks/video/add.php:16
 #: concrete/blocks/video/edit.php:29
 msgid "WebM"
 msgstr "WebM"
@@ -19992,23 +20015,23 @@ msgstr "ガウシアンブラー"
 msgid "Adds a thin hairline horizontal divider to the page."
 msgstr "ページに細い水平の境界線を追加します。"
 
-#: concrete/blocks/image_slider/controller.php:26
+#: concrete/blocks/image_slider/controller.php:45
 msgid "Display your images and captions in an attractive slideshow format."
 msgstr "魅力的なスライドショーの形式で、画像やキャプションを表示します。"
 
-#: concrete/blocks/image_slider/controller.php:31
+#: concrete/blocks/image_slider/controller.php:50
 msgid "Image Slider"
 msgstr "画像スライダー"
 
-#: concrete/blocks/image_slider/controller.php:145
+#: concrete/blocks/image_slider/controller.php:166
 msgid "Slide Duration must be greater than 0."
 msgstr "スライド間隔は0以上である必要があります。"
 
-#: concrete/blocks/image_slider/controller.php:148
+#: concrete/blocks/image_slider/controller.php:169
 msgid "Slide Transition Speed must be greater than 0."
 msgstr "スライド変化速度は0以上である必要があります。"
 
-#: concrete/blocks/image_slider/controller.php:153
+#: concrete/blocks/image_slider/controller.php:174
 msgid ""
 "Slide Duration must be at least 100 ms greater than the Slide Transition "
 "Speed."
@@ -20665,7 +20688,7 @@ msgstr "Y年n月"
 msgid "See the formatting options for year and month at %s."
 msgstr "西暦や月のフォーマットオプションについては右記を参照 %s"
 
-#: concrete/blocks/content/controller.php:34
+#: concrete/blocks/content/controller.php:42
 msgid "HTML/WYSIWYG Editor Content."
 msgstr "HTML/WYSIWYGエディター付テキストブロックです。"
 
@@ -20949,15 +20972,15 @@ msgstr "コメント欄メッセージ"
 msgid "Your subject cannot be empty."
 msgstr "件名は空白にできません。"
 
-#: concrete/blocks/image/controller.php:27
+#: concrete/blocks/image/controller.php:38
 msgid "Adds images and onstates from the library to pages."
 msgstr "ライブラリに保存された画像とマウスオーバー画像を表示します。"
 
-#: concrete/blocks/image/controller.php:125
+#: concrete/blocks/image/controller.php:136
 msgid "You must select an image."
 msgstr "画像を選択してください。"
 
-#: concrete/blocks/image/controller.php:257
+#: concrete/blocks/image/controller.php:268
 msgid "You must specify a valid image file."
 msgstr "画像ファイルを正しく選択してください。"
 
