@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-09-01T12:00:22+02:00\n"
-"PO-Revision-Date: 2016-09-01 10:02+0000\n"
+"POT-Creation-Date: 2016-09-02T06:00:27+02:00\n"
+"PO-Revision-Date: 2016-09-02 09:32+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Turkish (Turkey) (http://www.transifex.com/concrete5/concrete5/language/tr_TR/)\n"
 "MIME-Version: 1.0\n"
@@ -9668,7 +9668,6 @@ msgstr "Görüntünün Web Bağlantısı"
 #: concrete/controllers/frontend/assets_localization.php:412
 #: concrete/src/File/Type/Type.php:76
 #: concrete/src/Express/Form/Control/Type/Item/TextEntityPropertyItem.php:8
-#: concrete/src/Entity/Express/Control/TextControl.php:74
 msgid "Text"
 msgstr "Metin"
 
@@ -10574,7 +10573,7 @@ msgstr ""
 #: concrete/src/Page/Search/Field/Field/DateLastModifiedField.php:36
 #: concrete/src/Page/Search/Field/Field/DatePublicField.php:36
 #: concrete/attributes/number/controller.php:45
-#: concrete/attributes/date_time/controller.php:152
+#: concrete/attributes/date_time/controller.php:136
 msgid "to"
 msgstr "şuna"
 
@@ -11922,6 +11921,7 @@ msgid "Search All Children?"
 msgstr "Tüm Alt Sayfaları Ara"
 
 #: concrete/src/Page/Search/Field/Field/ParentPageField.php:53
+#: concrete/src/Entity/Attribute/Value/Value/BooleanValue.php:35
 #: concrete/elements/page_types/form/base.php:56
 #: concrete/elements/page_types/form/base.php:61
 #: concrete/blocks/page_attribute_display/templates/boolean.php:6
@@ -11936,7 +11936,6 @@ msgstr "Tüm Alt Sayfaları Ara"
 #: concrete/blocks/page_list/page_list_form.php:473
 #: concrete/blocks/express_form/form.php:119
 #: concrete/blocks/express_form/form.php:224
-#: concrete/attributes/boolean/controller.php:69
 #: concrete/single_pages/dashboard/users/search.php:150
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:130
 #: concrete/single_pages/dashboard/system/mail/importers.php:4
@@ -11949,6 +11948,7 @@ msgid "No"
 msgstr "Hayır"
 
 #: concrete/src/Page/Search/Field/Field/ParentPageField.php:54
+#: concrete/src/Entity/Attribute/Value/Value/BooleanValue.php:35
 #: concrete/elements/page_types/form/base.php:56
 #: concrete/elements/page_types/form/base.php:61
 #: concrete/blocks/page_attribute_display/templates/boolean.php:6
@@ -11963,7 +11963,6 @@ msgstr "Hayır"
 #: concrete/blocks/page_list/page_list_form.php:479
 #: concrete/blocks/express_form/form.php:113
 #: concrete/blocks/express_form/form.php:220
-#: concrete/attributes/boolean/controller.php:69
 #: concrete/single_pages/dashboard/users/search.php:153
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:130
 #: concrete/single_pages/dashboard/system/mail/importers.php:4
@@ -12810,6 +12809,10 @@ msgstr "Dosya Adı"
 #: concrete/src/Entity/File/Version.php:722
 msgid "Invalid dimensions."
 msgstr "Geçersiz boyutlar."
+
+#: concrete/src/Entity/Express/Control/TextControl.php:81
+msgid "(Text)"
+msgstr ""
 
 #: concrete/src/Entity/Page/Feed.php:444
 msgid "No Content."
@@ -22581,48 +22584,6 @@ msgstr "Girdi Biçimi"
 msgid "Rich Text - Default Setting"
 msgstr "Zengin Metin - Varsayılan Ayarlar"
 
-#: concrete/attributes/address/composer.php:8
-#: concrete/attributes/address/form.php:8
-msgid "Address 1"
-msgstr "Adres 1"
-
-#: concrete/attributes/address/composer.php:13
-#: concrete/attributes/address/form.php:13
-msgid "Address 2"
-msgstr "Adres 2"
-
-#: concrete/attributes/address/composer.php:18
-#: concrete/attributes/address/form.php:18
-msgid "City"
-msgstr "Şehir"
-
-#: concrete/attributes/address/composer.php:23
-#: concrete/attributes/address/form.php:23
-msgid "State/Province"
-msgstr "Eyalet/İl"
-
-#: concrete/attributes/address/composer.php:34
-#: concrete/attributes/address/form.php:34
-msgid "Choose State/Province"
-msgstr "Eyalet/İl Seçin"
-
-#: concrete/attributes/address/composer.php:55
-#: concrete/attributes/address/form.php:55
-#: concrete/attributes/address/type_form.php:3
-#: concrete/single_pages/dashboard/system/multilingual/setup.php:151
-msgid "Choose Country"
-msgstr "Ülke Seç"
-
-#: concrete/attributes/address/composer.php:59
-#: concrete/attributes/address/form.php:59
-msgid "Country"
-msgstr "Ülke"
-
-#: concrete/attributes/address/composer.php:64
-#: concrete/attributes/address/form.php:64
-msgid "Postal Code"
-msgstr "Posta Kodu"
-
 #: concrete/attributes/address/controller.php:178
 msgid "You must specify at least one country."
 msgstr "En az bir ülke belirtmelisiniz."
@@ -22630,6 +22591,40 @@ msgstr "En az bir ülke belirtmelisiniz."
 #: concrete/attributes/address/controller.php:185
 msgid "The default country must be in the list of custom countries."
 msgstr "Varsayılan ülke, özel ülkeler listesinde olmalıdır."
+
+#: concrete/attributes/address/form.php:8
+msgid "Address 1"
+msgstr "Adres 1"
+
+#: concrete/attributes/address/form.php:13
+msgid "Address 2"
+msgstr "Adres 2"
+
+#: concrete/attributes/address/form.php:18
+msgid "City"
+msgstr "Şehir"
+
+#: concrete/attributes/address/form.php:23
+msgid "State/Province"
+msgstr "Eyalet/İl"
+
+#: concrete/attributes/address/form.php:34
+msgid "Choose State/Province"
+msgstr "Eyalet/İl Seçin"
+
+#: concrete/attributes/address/form.php:55
+#: concrete/attributes/address/type_form.php:3
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:151
+msgid "Choose Country"
+msgstr "Ülke Seç"
+
+#: concrete/attributes/address/form.php:59
+msgid "Country"
+msgstr "Ülke"
+
+#: concrete/attributes/address/form.php:64
+msgid "Postal Code"
+msgstr "Posta Kodu"
 
 #: concrete/attributes/address/type_form.php:17
 msgid "Address Options"
@@ -22729,7 +22724,7 @@ msgstr "En Popüler İlk Sırada"
 msgid "Values"
 msgstr "Değerler"
 
-#: concrete/attributes/topics/controller.php:325
+#: concrete/attributes/topics/controller.php:314
 msgid "You must specify a valid topic tree parent node ID and topic tree ID."
 msgstr "Geçerli bir konu ağacı üst düğüm ID'si ve konu ağacı ID'si belirtmelisiniz."
 
