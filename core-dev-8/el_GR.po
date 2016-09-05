@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-09-03T12:00:22+02:00\n"
-"PO-Revision-Date: 2016-09-03 17:26+0000\n"
+"POT-Creation-Date: 2016-09-04T06:01:44+02:00\n"
+"PO-Revision-Date: 2016-09-04 19:41+0000\n"
 "Last-Translator: Vasilis Fotopoulos <basalba@gmail.com>\n"
 "Language-Team: Greek (Greece) (http://www.transifex.com/concrete5/concrete5/language/el_GR/)\n"
 "MIME-Version: 1.0\n"
@@ -4619,7 +4619,6 @@ msgid "None of the requested files could be found."
 msgstr "Κανένα από τα αρχεία που ζητήθηκαν δεν μπόρεσε να βρεθεί."
 
 #: concrete/tools/files/download.php:42 concrete/src/Legacy/FileList.php:124
-#: concrete/src/Backup/ContentExporter.php:224
 msgid "Could not open with ZipArchive::CREATE"
 msgstr "Δεν είναι δυνατόν να ανοίξει με ZipArchive::CREATE"
 
@@ -10551,7 +10550,7 @@ msgid "Replied"
 msgstr "Απαντημένα"
 
 #: concrete/src/User/PrivateMessage/PrivateMessage.php:188
-#: concrete/src/Page/Page.php:446
+#: concrete/src/Page/Page.php:450
 msgid "Unknown User"
 msgstr "Άγνωστος Χρήστης"
 
@@ -10724,8 +10723,8 @@ msgstr "Μη έγκυρη πέρασμα διαδρομής. Παρακαλεί�
 msgid "\"%s\" is not a valid asset group handle"
 msgstr "\"%s\" δεν είναι ένας έγκυρος δείκτης ομάδας στοιχείων"
 
-#: concrete/src/Http/ResponseFactory.php:84
 #: concrete/src/Http/ResponseFactory.php:85
+#: concrete/src/Http/ResponseFactory.php:86
 msgid "Page not found"
 msgstr "Η Σελίδα δεν βρέθηκε."
 
@@ -11118,7 +11117,7 @@ msgstr "Αυτός ο Τύπος Ελέγχου Ταυτότητας δεν απ
 
 #. %s is a number
 #. %s is a number
-#: concrete/src/Utility/Service/Number.php:117
+#: concrete/src/Utility/Service/Number.php:145
 #: concrete/elements/files/properties.php:126
 #, php-format
 msgid "%s byte"
@@ -11127,25 +11126,25 @@ msgstr[0] "%s byte"
 msgstr[1] "%s bytes"
 
 #. %s is a number, KB means Kilobyte
-#: concrete/src/Utility/Service/Number.php:121
+#: concrete/src/Utility/Service/Number.php:149
 #, php-format
 msgid "%s KB"
 msgstr "%s KB"
 
 #. %s is a number, MB means Megabyte
-#: concrete/src/Utility/Service/Number.php:125
+#: concrete/src/Utility/Service/Number.php:153
 #, php-format
 msgid "%s MB"
 msgstr "%s MB"
 
 #. %s is a number, GB means Gigabyte
-#: concrete/src/Utility/Service/Number.php:129
+#: concrete/src/Utility/Service/Number.php:157
 #, php-format
 msgid "%s GB"
 msgstr "%s GB"
 
 #. %s is a number, TB means Terabyte
-#: concrete/src/Utility/Service/Number.php:132
+#: concrete/src/Utility/Service/Number.php:160
 #, php-format
 msgid "%s TB"
 msgstr "%s TB"
@@ -11549,7 +11548,6 @@ msgid "An error occurred while processing this request."
 msgstr "Παρουσιάστηκε σφάλμα κατά την επεξεργασία αυτού του αιτήματός."
 
 #: concrete/src/Legacy/FileList.php:127
-#: concrete/src/Backup/ContentExporter.php:227
 #, php-format
 msgid "Failed to create zip file as \"%s\": %s"
 msgstr "Αποτυχία δημιουργίας αρχείου zip ως \"%s\": %s"
@@ -12022,16 +12020,16 @@ msgstr "Κατάσταση Έκδοσης"
 msgid "All"
 msgstr "Όλα"
 
-#: concrete/src/Page/Page.php:2409
+#: concrete/src/Page/Page.php:2413
 #, php-format
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "Η Σελίδα \"%s\" στη διαδρομή \"%s\" διαγράφτηκε."
 
-#: concrete/src/Page/Page.php:2409 concrete/src/Page/Page.php:2465
+#: concrete/src/Page/Page.php:2413 concrete/src/Page/Page.php:2469
 msgid "Page Action"
 msgstr "Ενέργειες Σελίδας"
 
-#: concrete/src/Page/Page.php:2465
+#: concrete/src/Page/Page.php:2469
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "Η Σελίδα \"%s\" στη διαδρομή \"%s\" Μεταφέρθηκε στο κάδο απορριμμάτων."
@@ -12108,6 +12106,12 @@ msgstr "RSS Feed"
 #: concrete/blocks/testimonial/form.php:14
 msgid "Picture"
 msgstr "Εικόνα"
+
+#: concrete/src/Backup/ContentExporter.php:59
+msgid ""
+"Internal content exporter no longer supported. Use the Migration Tool "
+"instead."
+msgstr "Eξαγωγέας  Εσωτερικού περιεχομένου δεν υποστηρίζεται πλέον. Χρησιμοποιήστε το εργαλείο Migration Tool αντ 'αυτού."
 
 #: concrete/src/Backup/ContentImporter.php:380
 #: concrete/blocks/core_area_layout/controller.php:203
