@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-09-23T12:00:21+02:00\n"
-"PO-Revision-Date: 2016-09-23 10:09+0000\n"
+"POT-Creation-Date: 2016-09-24T06:00:33+02:00\n"
+"PO-Revision-Date: 2016-09-24 09:32+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Russian (Russia) (http://www.transifex.com/concrete5/concrete5/language/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -1660,7 +1660,6 @@ msgstr "беседы"
 #: concrete/blocks/page_list/page_list_form.php:7
 #: concrete/blocks/youtube/form_setup_html.php:18
 #: concrete/blocks/autonav/form_setup_html.php:9
-#: concrete/single_pages/dashboard/system/environment/entities.php:10
 #: concrete/single_pages/dashboard/system/mail/importers.php:16
 msgid "Settings"
 msgstr "Настройки"
@@ -5184,7 +5183,6 @@ msgstr "Не добавлены группы или пользователи."
 #: concrete/single_pages/dashboard/system/seo/statistics.php:15
 #: concrete/single_pages/dashboard/system/seo/urls.php:63
 #: concrete/single_pages/dashboard/system/environment/debug.php:61
-#: concrete/single_pages/dashboard/system/environment/entities.php:34
 #: concrete/single_pages/dashboard/system/environment/logging.php:41
 #: concrete/single_pages/dashboard/system/environment/proxy.php:34
 #: concrete/single_pages/dashboard/system/express/entities/forms/details.php:22
@@ -7161,21 +7159,6 @@ msgstr "Канонический URL по протоколу SSH должен н
 #: concrete/controllers/single_page/dashboard/system/environment/debug.php:33
 msgid "Debug configuration saved."
 msgstr "Параметры отладки успешно сохранены."
-
-#: concrete/controllers/single_page/dashboard/system/environment/entities.php:55
-#, php-format
-msgid ""
-"The application specific entities directory is missing. Please create it "
-"first at: %s."
-msgstr "Директория объектов базы данных приложения не найдена. Создайте её в: %s."
-
-#: concrete/controllers/single_page/dashboard/system/environment/entities.php:65
-msgid "Database entities configurations saved."
-msgstr "Настройки объектов базы данных сохранены."
-
-#: concrete/controllers/single_page/dashboard/system/environment/entities.php:71
-msgid "Application specific database entities were refreshed."
-msgstr "Объекты базы данных приложения обновлены."
 
 #: concrete/controllers/single_page/dashboard/system/environment/logging.php:30
 msgid "Logging configuration saved."
@@ -9504,7 +9487,7 @@ msgid ""
 msgstr "Всё, что не касается страниц, находится здесь. Управление пользователями, файлами, просмотр отчетов и настройка сайта."
 
 #: concrete/controllers/frontend/assets_localization.php:364
-#: concrete/config/app.php:572 concrete/blocks/html/controller.php:27
+#: concrete/config/app.php:626 concrete/blocks/html/controller.php:27
 #: concrete/blocks/image/form.php:27
 msgid "HTML"
 msgstr "HTML"
@@ -10581,7 +10564,7 @@ msgid "Replied"
 msgstr "Отвечено"
 
 #: concrete/src/User/PrivateMessage/PrivateMessage.php:188
-#: concrete/src/Page/Page.php:456
+#: concrete/src/Page/Page.php:468
 msgid "Unknown User"
 msgstr "Неизвестный пользователь"
 
@@ -11738,7 +11721,7 @@ msgid ""
 "the administrator of this site for more information."
 msgstr "Невозможно завершить действие: Ваш IP был запрещен. Пожалуйста, свяжитесь с администратором сайта для большей информации."
 
-#: concrete/src/Page/Stack/Stack.php:150
+#: concrete/src/Page/Stack/Stack.php:151
 msgid "No Name"
 msgstr "(Без имени)"
 
@@ -12068,16 +12051,16 @@ msgstr "Статус версии"
 msgid "All"
 msgstr "Все"
 
-#: concrete/src/Page/Page.php:2429
+#: concrete/src/Page/Page.php:2441
 #, php-format
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "Страница \"%s\", расположенная в \"%s\" удалена"
 
-#: concrete/src/Page/Page.php:2429 concrete/src/Page/Page.php:2485
+#: concrete/src/Page/Page.php:2441 concrete/src/Page/Page.php:2497
 msgid "Page Action"
 msgstr "Действие страницы"
 
-#: concrete/src/Page/Page.php:2485
+#: concrete/src/Page/Page.php:2497
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "Страница \"%s\", расположенная в \"%s\" перемещена в корзину"
@@ -12145,6 +12128,12 @@ msgctxt "Log channel"
 msgid "Exceptions"
 msgstr "Исключения"
 
+#: concrete/src/Backup/ContentImporter/Importer/Routine/AbstractPageContentRoutine.php:22
+#: concrete/blocks/core_area_layout/controller.php:203
+#, php-format
+msgid "Invalid block type handle: %s"
+msgstr "Ошибочный идентификатор типа блока: %s"
+
 #: concrete/src/Backup/ContentImporter/ValueInspector/Item/PageFeedItem.php:10
 #: concrete/elements/gathering/data_sources/rss_feed/options.php:8
 msgid "RSS Feed"
@@ -12160,12 +12149,6 @@ msgid ""
 "Internal content exporter no longer supported. Use the Migration Tool "
 "instead."
 msgstr ""
-
-#: concrete/src/Backup/ContentImporter.php:380
-#: concrete/blocks/core_area_layout/controller.php:203
-#, php-format
-msgid "Invalid block type handle: %s"
-msgstr "Ошибочный идентификатор типа блока: %s"
 
 #: concrete/src/Antispam/Service.php:61
 #, php-format
@@ -12263,6 +12246,10 @@ msgstr "Ключи прав доступа"
 #: concrete/src/Package/ItemCategory/PermissionKeyCategory.php:14
 msgid "Permission Categories"
 msgstr "Категории прав доступа"
+
+#: concrete/src/Package/ItemCategory/SiteType.php:23
+msgid "Site Types"
+msgstr ""
 
 #: concrete/src/Package/ItemCategory/StorageLocationType.php:17
 #: concrete/single_pages/dashboard/system/files/storage.php:116
@@ -19991,155 +19978,155 @@ msgstr "Пустой сайт"
 msgid "Creates an empty site using the unstyled Elemental theme."
 msgstr "Создание пустого сайта с использованием простейшей  темы без стилей."
 
-#: concrete/config/app.php:567
+#: concrete/config/app.php:621
 msgid "JPEG"
 msgstr "JPEG"
 
-#: concrete/config/app.php:568
+#: concrete/config/app.php:622
 msgid "GIF"
 msgstr "GIF"
 
-#: concrete/config/app.php:569
+#: concrete/config/app.php:623
 msgid "PNG"
 msgstr "PNG"
 
-#: concrete/config/app.php:570
+#: concrete/config/app.php:624
 msgid "Windows Bitmap"
 msgstr "Windows Bitmap"
 
-#: concrete/config/app.php:571
+#: concrete/config/app.php:625
 msgid "TIFF"
 msgstr "TIFF"
 
-#: concrete/config/app.php:573
+#: concrete/config/app.php:627
 msgid "Flash"
 msgstr "Flash"
 
-#: concrete/config/app.php:574 concrete/blocks/feature/form.php:6
+#: concrete/config/app.php:628 concrete/blocks/feature/form.php:6
 #: concrete/single_pages/dashboard/pages/templates/add.php:27
 #: concrete/single_pages/dashboard/pages/templates/view.php:40
 msgid "Icon"
 msgstr "Значок"
 
-#: concrete/config/app.php:575
+#: concrete/config/app.php:629
 msgid "SVG"
 msgstr "SVG"
 
-#: concrete/config/app.php:576
+#: concrete/config/app.php:630
 msgid "Windows Video"
 msgstr "Windows Video"
 
-#: concrete/config/app.php:577
+#: concrete/config/app.php:631
 msgid "Quicktime"
 msgstr "Quicktime"
 
-#: concrete/config/app.php:578
+#: concrete/config/app.php:632
 msgid "AVI"
 msgstr "AVI"
 
-#: concrete/config/app.php:579
+#: concrete/config/app.php:633
 msgid "3GP"
 msgstr "3GP"
 
-#: concrete/config/app.php:580 concrete/attributes/textarea/type_form.php:8
+#: concrete/config/app.php:634 concrete/attributes/textarea/type_form.php:8
 msgid "Plain Text"
 msgstr "Простой текст"
 
-#: concrete/config/app.php:581
+#: concrete/config/app.php:635
 msgid "CSV"
 msgstr "CSV"
 
-#: concrete/config/app.php:582
+#: concrete/config/app.php:636
 msgid "XML"
 msgstr "XML"
 
-#: concrete/config/app.php:583
+#: concrete/config/app.php:637
 msgid "PHP"
 msgstr "PHP"
 
-#: concrete/config/app.php:584
+#: concrete/config/app.php:638
 msgid "MS Word"
 msgstr "MS Word"
 
-#: concrete/config/app.php:585
+#: concrete/config/app.php:639
 msgid "Stylesheet"
 msgstr "Stylesheet"
 
-#: concrete/config/app.php:586 concrete/blocks/video/add.php:24
+#: concrete/config/app.php:640 concrete/blocks/video/add.php:24
 #: concrete/blocks/video/edit.php:37
 msgid "MP4"
 msgstr "MP4"
 
-#: concrete/config/app.php:587
+#: concrete/config/app.php:641
 msgid "FLV"
 msgstr "FLV"
 
-#: concrete/config/app.php:588
+#: concrete/config/app.php:642
 msgid "MP3"
 msgstr "MP3"
 
-#: concrete/config/app.php:589
+#: concrete/config/app.php:643
 msgid "MP4 Audio"
 msgstr "Аудио формата MP4"
 
-#: concrete/config/app.php:590
+#: concrete/config/app.php:644
 msgid "Realaudio"
 msgstr "Realaudio"
 
-#: concrete/config/app.php:591
+#: concrete/config/app.php:645
 msgid "Windows Audio"
 msgstr "Windows Audio"
 
-#: concrete/config/app.php:592
+#: concrete/config/app.php:646
 msgid "Rich Text"
 msgstr "Форматированный текст"
 
-#: concrete/config/app.php:593
+#: concrete/config/app.php:647
 msgid "JavaScript"
 msgstr "JavaScript"
 
-#: concrete/config/app.php:594
+#: concrete/config/app.php:648
 msgid "PDF"
 msgstr "PDF"
 
-#: concrete/config/app.php:595
+#: concrete/config/app.php:649
 msgid "Photoshop"
 msgstr "Photoshop"
 
-#: concrete/config/app.php:596
+#: concrete/config/app.php:650
 msgid "MPEG"
 msgstr "MPEG"
 
-#: concrete/config/app.php:597
+#: concrete/config/app.php:651
 msgid "MS Excel"
 msgstr "MS Excel"
 
-#: concrete/config/app.php:598
+#: concrete/config/app.php:652
 msgid "MS Powerpoint"
 msgstr "MS Powerpoint"
 
-#: concrete/config/app.php:599
+#: concrete/config/app.php:653
 msgid "TAR Archive"
 msgstr "Архив TAR"
 
-#: concrete/config/app.php:600
+#: concrete/config/app.php:654
 msgid "Zip Archive"
 msgstr "Архив Zip"
 
-#: concrete/config/app.php:601
+#: concrete/config/app.php:655
 msgid "GZip Archive"
 msgstr "Архив GZip"
 
-#: concrete/config/app.php:602 concrete/blocks/video/add.php:20
+#: concrete/config/app.php:656 concrete/blocks/video/add.php:20
 #: concrete/blocks/video/edit.php:33
 msgid "OGG"
 msgstr "OGG"
 
-#: concrete/config/app.php:603
+#: concrete/config/app.php:657
 msgid "OGG Video"
 msgstr "OGG видео"
 
-#: concrete/config/app.php:604 concrete/blocks/video/add.php:16
+#: concrete/config/app.php:658 concrete/blocks/video/add.php:16
 #: concrete/blocks/video/edit.php:29
 msgid "WebM"
 msgstr "WebM"
@@ -24139,40 +24126,14 @@ msgstr "Может содержать конфиденциальную инфо�
 msgid "Example"
 msgstr "Пример"
 
-#: concrete/single_pages/dashboard/system/environment/entities.php:12
-msgid ""
-"Defines whether the Doctrine proxy classes are created on the fly. On the "
-"fly generation is active when development mode is enabled."
-msgstr "Настройки, которые определяют должны ли классы прокси Doctrine генерироваться 'на лету'.  Включите генерацию на лету во время разработки сайта."
+#: concrete/single_pages/dashboard/system/environment/entities.php:6
+msgid "Entity Locations"
+msgstr ""
 
-#: concrete/single_pages/dashboard/system/environment/entities.php:12
-msgid "Doctrine Development Mode"
-msgstr "Режим разработки Doctrine"
-
-#: concrete/single_pages/dashboard/system/environment/entities.php:19
-msgid "On - Proxy classes will be generated on the fly. Good for development."
-msgstr "Включено - классы прокси генерируются \"на лету\". Подходит для разработки."
-
-#: concrete/single_pages/dashboard/system/environment/entities.php:28
-msgid ""
-"Off - Proxy classes need to be manually generated. Helps speed up a live "
-"site."
-msgstr "Отключено - классы прокси должны генерироваться вручную. Это ускоряет работу сайта."
-
-#: concrete/single_pages/dashboard/system/environment/entities.php:42
-msgid "Entities"
-msgstr "Объекты"
-
-#: concrete/single_pages/dashboard/system/environment/entities.php:44
-msgid ""
-"Search for application and package-specific entities, refresh their database"
-" schema and generate their proxy classes."
-msgstr "Поиск объектов в приложениях и пакетах, обновление их схемы баз данных и генерация классов прокси."
-
-#: concrete/single_pages/dashboard/system/environment/entities.php:46
-msgctxt "Doctrine"
-msgid "Refresh Entities"
-msgstr "Обновить объекты"
+#: concrete/single_pages/dashboard/system/environment/entities.php:10
+#, php-format
+msgid "Namespace: %s"
+msgstr ""
 
 #: concrete/single_pages/dashboard/system/environment/info.php:4
 msgid "Unable to load environment info"
