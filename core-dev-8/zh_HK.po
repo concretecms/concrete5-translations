@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-09-24T06:00:33+02:00\n"
-"PO-Revision-Date: 2016-09-24 09:31+0000\n"
+"POT-Creation-Date: 2016-09-30T06:00:24+02:00\n"
+"PO-Revision-Date: 2016-09-30 09:14+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Chinese (Hong Kong) (http://www.transifex.com/concrete5/concrete5/language/zh_HK/)\n"
 "MIME-Version: 1.0\n"
@@ -1658,6 +1658,7 @@ msgstr ""
 #: concrete/blocks/page_list/page_list_form.php:7
 #: concrete/blocks/youtube/form_setup_html.php:18
 #: concrete/blocks/autonav/form_setup_html.php:9
+#: concrete/single_pages/dashboard/system/environment/entities.php:10
 #: concrete/single_pages/dashboard/system/mail/importers.php:16
 msgid "Settings"
 msgstr ""
@@ -1829,7 +1830,7 @@ msgid "Stack Category"
 msgstr ""
 
 #: concrete/config/install/base/dashboard.xml:1038
-#: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:842
+#: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:823
 #: concrete/views/panels/page/devices.php:45
 #: concrete/single_pages/dashboard/system/registration/postlogin.php:18
 msgid "Desktop"
@@ -4895,7 +4896,7 @@ msgstr ""
 #: concrete/controllers/backend/user_interface/file.php:43
 #: concrete/controllers/backend/user_interface/page.php:29
 #: concrete/controllers/backend/page.php:59
-#: concrete/controllers/backend/user_interface.php:42
+#: concrete/controllers/backend/user_interface.php:38
 #: concrete/controllers/frontend/jobs.php:64
 #: concrete/controllers/frontend/jobs.php:155
 #: concrete/controllers/frontend/jobs.php:218
@@ -5169,6 +5170,7 @@ msgstr ""
 #: concrete/single_pages/dashboard/system/seo/statistics.php:15
 #: concrete/single_pages/dashboard/system/seo/urls.php:63
 #: concrete/single_pages/dashboard/system/environment/debug.php:61
+#: concrete/single_pages/dashboard/system/environment/entities.php:34
 #: concrete/single_pages/dashboard/system/environment/logging.php:41
 #: concrete/single_pages/dashboard/system/environment/proxy.php:34
 #: concrete/single_pages/dashboard/system/express/entities/forms/details.php:22
@@ -7132,6 +7134,16 @@ msgstr ""
 
 #: concrete/controllers/single_page/dashboard/system/environment/debug.php:33
 msgid "Debug configuration saved."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/environment/entities.php:68
+msgid "Doctrine development settings updated."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/environment/entities.php:74
+msgid ""
+"Doctrine cache cleared, proxy classes regenerated, entity database table "
+"schema updated."
 msgstr ""
 
 #: concrete/controllers/single_page/dashboard/system/environment/logging.php:30
@@ -9452,7 +9464,7 @@ msgid ""
 msgstr ""
 
 #: concrete/controllers/frontend/assets_localization.php:364
-#: concrete/config/app.php:626 concrete/blocks/html/controller.php:27
+#: concrete/config/app.php:625 concrete/blocks/html/controller.php:27
 #: concrete/blocks/image/form.php:27
 msgid "HTML"
 msgstr ""
@@ -12237,49 +12249,49 @@ msgid ""
 "5.7."
 msgstr ""
 
-#: concrete/src/Package/Package.php:509
+#: concrete/src/Package/Package.php:516
 msgid "You've already installed that package."
 msgstr ""
 
-#: concrete/src/Package/Package.php:510
+#: concrete/src/Package/Package.php:517
 msgid "Invalid Package."
 msgstr ""
 
-#: concrete/src/Package/Package.php:511
+#: concrete/src/Package/Package.php:518
 #, php-format
 msgid "This package requires concrete5 version %s or greater."
 msgstr ""
 
-#: concrete/src/Package/Package.php:512
+#: concrete/src/Package/Package.php:519
 #: concrete/src/Marketplace/Marketplace.php:74
 msgid "An error occurred while downloading the package."
 msgstr ""
 
-#: concrete/src/Package/Package.php:513
+#: concrete/src/Package/Package.php:520
 #: concrete/src/Marketplace/Marketplace.php:88
 msgid "concrete5 was not able to save the package after download."
 msgstr ""
 
-#: concrete/src/Package/Package.php:514
+#: concrete/src/Package/Package.php:521
 msgid "An error occurred while trying to unzip the package."
 msgstr ""
 
-#: concrete/src/Package/Package.php:515
+#: concrete/src/Package/Package.php:522
 msgid "An error occurred while trying to install the package."
 msgstr ""
 
-#: concrete/src/Package/Package.php:517
+#: concrete/src/Package/Package.php:524
 #, php-format
 msgid "Unable to backup old package directory to %s"
 msgstr ""
 
-#: concrete/src/Package/Package.php:521
+#: concrete/src/Package/Package.php:528
 msgid ""
 "This package isn't currently available for this version of concrete5. Please"
 " contact the maintainer of this package for assistance."
 msgstr ""
 
-#: concrete/src/Package/Package.php:523
+#: concrete/src/Package/Package.php:530
 msgid ""
 "This package contains the active site theme, please change the theme before "
 "uninstalling."
@@ -17277,7 +17289,7 @@ msgid "Click for history."
 msgstr ""
 
 #: concrete/elements/workflow/progress/categories/page/pending.php:13
-#: concrete/blocks/page_attribute_display/controller.php:165
+#: concrete/blocks/page_attribute_display/controller.php:164
 #: concrete/single_pages/dashboard/composer/drafts.php:15
 #: concrete/single_pages/dashboard/system/seo/bulk.php:129
 msgid "Page Name"
@@ -17492,6 +17504,7 @@ msgstr ""
 
 #: concrete/elements/permission/keys/edit_page_properties.php:59
 #: concrete/elements/permission/keys/edit_page_properties.php:121
+#: concrete/single_pages/dashboard/system/environment/entities.php:53
 msgid "Paths"
 msgstr ""
 
@@ -19886,155 +19899,155 @@ msgstr ""
 msgid "Creates an empty site using the unstyled Elemental theme."
 msgstr ""
 
-#: concrete/config/app.php:621
+#: concrete/config/app.php:620
 msgid "JPEG"
 msgstr ""
 
-#: concrete/config/app.php:622
+#: concrete/config/app.php:621
 msgid "GIF"
 msgstr ""
 
-#: concrete/config/app.php:623
+#: concrete/config/app.php:622
 msgid "PNG"
 msgstr ""
 
-#: concrete/config/app.php:624
+#: concrete/config/app.php:623
 msgid "Windows Bitmap"
 msgstr ""
 
-#: concrete/config/app.php:625
+#: concrete/config/app.php:624
 msgid "TIFF"
 msgstr ""
 
-#: concrete/config/app.php:627
+#: concrete/config/app.php:626
 msgid "Flash"
 msgstr ""
 
-#: concrete/config/app.php:628 concrete/blocks/feature/form.php:6
+#: concrete/config/app.php:627 concrete/blocks/feature/form.php:6
 #: concrete/single_pages/dashboard/pages/templates/add.php:27
 #: concrete/single_pages/dashboard/pages/templates/view.php:40
 msgid "Icon"
 msgstr ""
 
-#: concrete/config/app.php:629
+#: concrete/config/app.php:628
 msgid "SVG"
 msgstr ""
 
-#: concrete/config/app.php:630
+#: concrete/config/app.php:629
 msgid "Windows Video"
 msgstr ""
 
-#: concrete/config/app.php:631
+#: concrete/config/app.php:630
 msgid "Quicktime"
 msgstr ""
 
-#: concrete/config/app.php:632
+#: concrete/config/app.php:631
 msgid "AVI"
 msgstr ""
 
-#: concrete/config/app.php:633
+#: concrete/config/app.php:632
 msgid "3GP"
 msgstr ""
 
-#: concrete/config/app.php:634 concrete/attributes/textarea/type_form.php:8
+#: concrete/config/app.php:633 concrete/attributes/textarea/type_form.php:8
 msgid "Plain Text"
 msgstr ""
 
-#: concrete/config/app.php:635
+#: concrete/config/app.php:634
 msgid "CSV"
 msgstr ""
 
-#: concrete/config/app.php:636
+#: concrete/config/app.php:635
 msgid "XML"
 msgstr ""
 
-#: concrete/config/app.php:637
+#: concrete/config/app.php:636
 msgid "PHP"
 msgstr ""
 
-#: concrete/config/app.php:638
+#: concrete/config/app.php:637
 msgid "MS Word"
 msgstr ""
 
-#: concrete/config/app.php:639
+#: concrete/config/app.php:638
 msgid "Stylesheet"
 msgstr ""
 
-#: concrete/config/app.php:640 concrete/blocks/video/add.php:24
+#: concrete/config/app.php:639 concrete/blocks/video/add.php:24
 #: concrete/blocks/video/edit.php:37
 msgid "MP4"
 msgstr ""
 
-#: concrete/config/app.php:641
+#: concrete/config/app.php:640
 msgid "FLV"
 msgstr ""
 
-#: concrete/config/app.php:642
+#: concrete/config/app.php:641
 msgid "MP3"
 msgstr ""
 
-#: concrete/config/app.php:643
+#: concrete/config/app.php:642
 msgid "MP4 Audio"
 msgstr ""
 
-#: concrete/config/app.php:644
+#: concrete/config/app.php:643
 msgid "Realaudio"
 msgstr ""
 
-#: concrete/config/app.php:645
+#: concrete/config/app.php:644
 msgid "Windows Audio"
 msgstr ""
 
-#: concrete/config/app.php:646
+#: concrete/config/app.php:645
 msgid "Rich Text"
 msgstr ""
 
-#: concrete/config/app.php:647
+#: concrete/config/app.php:646
 msgid "JavaScript"
 msgstr ""
 
-#: concrete/config/app.php:648
+#: concrete/config/app.php:647
 msgid "PDF"
 msgstr ""
 
-#: concrete/config/app.php:649
+#: concrete/config/app.php:648
 msgid "Photoshop"
 msgstr ""
 
-#: concrete/config/app.php:650
+#: concrete/config/app.php:649
 msgid "MPEG"
 msgstr ""
 
-#: concrete/config/app.php:651
+#: concrete/config/app.php:650
 msgid "MS Excel"
 msgstr ""
 
-#: concrete/config/app.php:652
+#: concrete/config/app.php:651
 msgid "MS Powerpoint"
 msgstr ""
 
-#: concrete/config/app.php:653
+#: concrete/config/app.php:652
 msgid "TAR Archive"
 msgstr ""
 
-#: concrete/config/app.php:654
+#: concrete/config/app.php:653
 msgid "Zip Archive"
 msgstr ""
 
-#: concrete/config/app.php:655
+#: concrete/config/app.php:654
 msgid "GZip Archive"
 msgstr ""
 
-#: concrete/config/app.php:656 concrete/blocks/video/add.php:20
+#: concrete/config/app.php:655 concrete/blocks/video/add.php:20
 #: concrete/blocks/video/edit.php:33
 msgid "OGG"
 msgstr ""
 
-#: concrete/config/app.php:657
+#: concrete/config/app.php:656
 msgid "OGG Video"
 msgstr ""
 
-#: concrete/config/app.php:658 concrete/blocks/video/add.php:16
+#: concrete/config/app.php:657 concrete/blocks/video/add.php:16
 #: concrete/blocks/video/edit.php:29
 msgid "WebM"
 msgstr ""
@@ -20491,19 +20504,19 @@ msgstr ""
 msgid "Page Attribute Display"
 msgstr ""
 
-#: concrete/blocks/page_attribute_display/controller.php:166
+#: concrete/blocks/page_attribute_display/controller.php:165
 msgid "Page Description"
 msgstr ""
 
-#: concrete/blocks/page_attribute_display/controller.php:167
+#: concrete/blocks/page_attribute_display/controller.php:166
 msgid "Page Date Created"
 msgstr ""
 
-#: concrete/blocks/page_attribute_display/controller.php:168
+#: concrete/blocks/page_attribute_display/controller.php:167
 msgid "Page Date Published"
 msgstr ""
 
-#: concrete/blocks/page_attribute_display/controller.php:169
+#: concrete/blocks/page_attribute_display/controller.php:168
 msgid "Page Date Modified"
 msgstr ""
 
@@ -24007,13 +24020,37 @@ msgstr ""
 msgid "Example"
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/environment/entities.php:6
-msgid "Entity Locations"
+#: concrete/single_pages/dashboard/system/environment/entities.php:14
+msgid ""
+"Defines whether the Doctrine proxy classes are created on the fly. On the "
+"fly generation is active when development mode is enabled."
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/environment/entities.php:10
-#, php-format
-msgid "Namespace: %s"
+#: concrete/single_pages/dashboard/system/environment/entities.php:14
+msgid "Doctrine Development Mode"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/environment/entities.php:21
+msgid "On - Proxy classes will be generated on the fly. Good for development."
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/environment/entities.php:30
+msgid ""
+"Off - Proxy classes need to be manually generated. Helps speed up a live "
+"site."
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/environment/entities.php:46
+msgid "Entities"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/environment/entities.php:62
+msgid "Driver"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/environment/entities.php:72
+msgctxt "Doctrine"
+msgid "Refresh Entities"
 msgstr ""
 
 #: concrete/single_pages/dashboard/system/environment/info.php:4
