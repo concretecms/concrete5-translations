@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-10-26T08:09:08+02:00\n"
-"PO-Revision-Date: 2016-10-26 09:36+0000\n"
+"POT-Creation-Date: 2016-11-05T06:00:30+01:00\n"
+"PO-Revision-Date: 2016-11-05 10:06+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Ukrainian (Ukraine) (http://www.transifex.com/concrete5/concrete5/language/uk_UA/)\n"
 "MIME-Version: 1.0\n"
@@ -440,7 +440,7 @@ msgstr ""
 #: concrete/elements/page_controls_footer.php:155
 #: concrete/views/dialogs/file/properties.php:56
 #: concrete/views/panels/page/attributes.php:6
-#: concrete/single_pages/dashboard/pages/types/view.php:47
+#: concrete/single_pages/dashboard/pages/types/view.php:44
 #: concrete/single_pages/login.php:44 concrete/single_pages/login.php:79
 msgid "Attributes"
 msgstr "Атрибути"
@@ -686,7 +686,7 @@ msgstr ""
 
 #: concrete/config/install/base/single_pages/dashboard.xml:263
 #: concrete/elements/dashboard/pages/types/header.php:18
-#: concrete/single_pages/dashboard/pages/types/view.php:110
+#: concrete/single_pages/dashboard/pages/types/view.php:107
 msgid "Add Page Type"
 msgstr "Додати тип сторінки"
 
@@ -708,7 +708,7 @@ msgstr ""
 
 #: concrete/config/install/base/single_pages/dashboard.xml:309
 #: concrete/src/Package/ItemCategory/PageTemplate.php:15
-#: concrete/elements/page_types/form/base.php:71
+#: concrete/elements/page_types/form/base.php:74
 #: concrete/single_pages/dashboard/pages/themes/view.php:59
 msgid "Page Templates"
 msgstr ""
@@ -1435,6 +1435,7 @@ msgstr ""
 #: concrete/blocks/youtube/form_setup_html.php:18
 #: concrete/blocks/autonav/form_setup_html.php:9
 #: concrete/single_pages/dashboard/system/environment/entities.php:10
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:80
 #: concrete/single_pages/dashboard/system/mail/importers.php:16
 msgid "Settings"
 msgstr ""
@@ -1651,7 +1652,7 @@ msgid "Stack Category"
 msgstr ""
 
 #: concrete/config/install/base/single_pages/dashboard.xml:1160
-#: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:833
+#: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:772
 #: concrete/views/panels/page/devices.php:45
 #: concrete/single_pages/dashboard/system/registration/postlogin.php:18
 msgid "Desktop"
@@ -3665,9 +3666,8 @@ msgstr ""
 #: concrete/views/panels/page/attributes.php:9
 #: concrete/views/panels/add.php:260
 #: concrete/blocks/express_entry_list/view.php:23
-#: concrete/blocks/search/controller.php:97
+#: concrete/blocks/search/controller.php:98
 #: concrete/single_pages/dashboard/files/sets.php:222
-#: concrete/single_pages/dashboard/sitemap/full.php:13
 #: concrete/single_pages/dashboard/users/groups/bulkupdate.php:170
 #: concrete/single_pages/dashboard/users/points/view.php:15
 #: concrete/single_pages/dashboard/system/seo/bulk.php:59
@@ -3849,6 +3849,7 @@ msgid "Flash"
 msgstr "Flash"
 
 #: concrete/config/app.php concrete/blocks/feature/form.php:6
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:145
 #: concrete/single_pages/dashboard/pages/templates/add.php:27
 #: concrete/single_pages/dashboard/pages/templates/view.php:40
 msgid "Icon"
@@ -4091,13 +4092,13 @@ msgstr ""
 #: concrete/authentication/community/type_form.php:33
 #: concrete/authentication/facebook/type_form.php:28
 #: concrete/tools/workflow/categories/user.php:5
-#: concrete/controllers/single_page/dashboard/system/multilingual/setup.php:125
+#: concrete/controllers/single_page/dashboard/system/multilingual/setup.php:76
 #: concrete/controllers/frontend/assets_localization.php:110
 #: concrete/controllers/frontend/assets_localization.php:407
 #: concrete/elements/permission/access/list.php:44
 #: concrete/elements/permission/labels.php:50
-#: concrete/elements/custom_style.php:98
-#: concrete/elements/custom_style.php:109
+#: concrete/elements/custom_style.php:100
+#: concrete/elements/custom_style.php:111
 #: concrete/views/dialogs/file/upload_complete.php:57
 #: concrete/blocks/image_slider/form_setup_html.php:339
 #: concrete/blocks/image/form.php:32
@@ -4107,7 +4108,7 @@ msgstr ""
 #: concrete/blocks/express_form/form.php:141
 #: concrete/blocks/autonav/form_setup_html.php:115
 #: concrete/single_pages/dashboard/system/permissions/blacklist.php:44
-#: concrete/single_pages/dashboard/system/multilingual/setup.php:157
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:146
 #: concrete/single_pages/dashboard/system/mail/importers.php:5
 #: concrete/single_pages/dashboard/system/mail/method.php:5
 #: concrete/single_pages/dashboard/system/basics/images.php:12
@@ -4290,7 +4291,7 @@ msgstr "Ключ застарів. Будь ласка, відвідайте с�
 #: concrete/controllers/single_page/dashboard/users/search.php:362
 #: concrete/controllers/single_page/account/edit_profile.php:127
 #: concrete/controllers/single_page/register.php:100
-#: concrete/controllers/install.php:405
+#: concrete/controllers/install.php:428
 msgid "The two passwords provided do not match."
 msgstr "Паролі не співпадають."
 
@@ -4428,8 +4429,10 @@ msgstr ""
 
 #: concrete/authentication/concrete/form.php:28
 #: concrete/src/Editor/EditorServiceProvider.php:75
+#: concrete/views/frontend/install.php:399
 #: concrete/single_pages/dashboard/users/add.php:34
 #: concrete/single_pages/dashboard/users/search.php:120
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:14
 #: concrete/single_pages/account/edit_profile.php:30
 msgid "Language"
 msgstr ""
@@ -4626,7 +4629,7 @@ msgstr ""
 #: concrete/elements/conversation/display.php:37
 #: concrete/elements/conversation/display.php:40
 #: concrete/elements/block_footer_edit.php:24
-#: concrete/elements/custom_style.php:437
+#: concrete/elements/custom_style.php:447
 #: concrete/views/image-editor/controls/position.php:95
 #: concrete/views/image-editor/editor.php:80
 #: concrete/views/dialogs/tree/node/topic/add.php:16
@@ -4695,19 +4698,21 @@ msgstr ""
 #: concrete/single_pages/dashboard/system/permissions/users.php:26
 #: concrete/single_pages/dashboard/system/permissions/workflows.php:19
 #: concrete/single_pages/dashboard/system/permissions/workflows.php:82
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:57
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:165
 #: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:178
 #: concrete/single_pages/dashboard/system/attributes/topics/add.php:18
 #: concrete/single_pages/dashboard/system/attributes/topics/view.php:76
 #: concrete/single_pages/dashboard/system/registration/authentication.php:106
 #: concrete/single_pages/dashboard/system/basics/social.php:36
 #: concrete/single_pages/dashboard/system/basics/social.php:79
-#: concrete/single_pages/dashboard/pages/types/add.php:10
+#: concrete/single_pages/dashboard/pages/types/add.php:7
 #: concrete/single_pages/dashboard/pages/types/form.php:22
 #: concrete/single_pages/dashboard/pages/types/form.php:66
 #: concrete/single_pages/dashboard/pages/types/form.php:84
-#: concrete/single_pages/dashboard/pages/types/view.php:13
-#: concrete/single_pages/dashboard/pages/types/view.php:78
-#: concrete/single_pages/dashboard/pages/types/view.php:138
+#: concrete/single_pages/dashboard/pages/types/view.php:10
+#: concrete/single_pages/dashboard/pages/types/view.php:75
+#: concrete/single_pages/dashboard/pages/types/view.php:135
 #: concrete/single_pages/dashboard/pages/themes/view.php:20
 #: concrete/single_pages/dashboard/pages/templates/add.php:50
 #: concrete/single_pages/dashboard/pages/templates/view.php:64
@@ -4731,7 +4736,7 @@ msgstr "Відмінити"
 #: concrete/src/File/Search/Result/Result.php:75
 #: concrete/src/File/Search/Result/Result.php:77
 #: concrete/src/Tree/Menu/Item/DeleteItem.php:25
-#: concrete/src/Block/Menu/Menu.php:162
+#: concrete/src/Block/Menu/Menu.php:163
 #: concrete/elements/dashboard/users/header.php:54
 #: concrete/elements/conversation/message/topic.php:50
 #: concrete/elements/conversation/message.php:58
@@ -4756,12 +4761,13 @@ msgstr "Відмінити"
 #: concrete/single_pages/dashboard/users/points/view.php:62
 #: concrete/single_pages/dashboard/users/groups.php:208
 #: concrete/single_pages/dashboard/system/express/entities/edit.php:122
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:60
 #: concrete/single_pages/dashboard/system/conversations/bannedwords.php:49
 #: concrete/single_pages/dashboard/system/conversations/bannedwords.php:71
 #: concrete/single_pages/dashboard/reports/forms/legacy.php:141
 #: concrete/single_pages/dashboard/reports/forms/legacy.php:247
-#: concrete/single_pages/dashboard/pages/types/view.php:86
-#: concrete/single_pages/dashboard/pages/types/view.php:145
+#: concrete/single_pages/dashboard/pages/types/view.php:83
+#: concrete/single_pages/dashboard/pages/types/view.php:142
 #: concrete/single_pages/account/messages.php:62
 msgid "Delete"
 msgstr "Видалити"
@@ -4812,8 +4818,8 @@ msgstr ""
 #: concrete/tools/dashboard/sitemap_drag_request.php:226
 #: concrete/controllers/frontend/assets_localization.php:212
 #: concrete/elements/permission/clipboard.php:5
-#: concrete/single_pages/dashboard/pages/types/view.php:57
-#: concrete/single_pages/dashboard/pages/types/view.php:79
+#: concrete/single_pages/dashboard/pages/types/view.php:54
+#: concrete/single_pages/dashboard/pages/types/view.php:76
 msgid "Copy"
 msgstr "Копіювати"
 
@@ -4891,7 +4897,7 @@ msgstr ""
 #: concrete/src/File/Search/ColumnSet/FolderSet.php:65
 #: concrete/src/File/Search/Field/Field/SizeField.php:20
 #: concrete/elements/files/properties.php:148
-#: concrete/elements/custom_style.php:197
+#: concrete/elements/custom_style.php:199
 #: concrete/views/image-editor/filters/vignette.php:14
 #: concrete/blocks/youtube/form_setup_html.php:28
 msgid "Size"
@@ -4946,13 +4952,13 @@ msgstr ""
 #: concrete/tools/files/permissions.php:57
 #: concrete/controllers/frontend/assets_localization.php:161
 #: concrete/controllers/frontend/assets_localization.php:215
-#: concrete/src/File/Menu.php:82 concrete/src/Block/Menu/Menu.php:192
+#: concrete/src/File/Menu.php:82 concrete/src/Block/Menu/Menu.php:193
 #: concrete/elements/panels/page.php:119
 #: concrete/elements/block_area_footer.php:54
 #: concrete/elements/page_controls_footer.php:181
 #: concrete/elements/page_controls_footer.php:183
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:87
-#: concrete/single_pages/dashboard/pages/types/view.php:53
+#: concrete/single_pages/dashboard/pages/types/view.php:50
 msgid "Permissions"
 msgstr ""
 
@@ -5241,12 +5247,11 @@ msgstr ""
 #: concrete/views/dialogs/area/layout/presets.php:16
 #: concrete/views/panels/details/page/attributes.php:33
 #: concrete/views/panels/details/page/seo.php:12
-#: concrete/views/frontend/install.php:263
+#: concrete/views/frontend/install.php:261
 #: concrete/blocks/express_entry_list/edit.php:83
 #: concrete/blocks/testimonial/form.php:22
 #: concrete/single_pages/dashboard/files/add_set.php:10
 #: concrete/single_pages/dashboard/files/sets.php:28
-#: concrete/single_pages/dashboard/sitemap/full.php:11
 #: concrete/single_pages/dashboard/express/entries/folder.php:13
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:253
 #: concrete/single_pages/dashboard/blocks/stacks/view.php:274
@@ -5263,7 +5268,6 @@ msgstr ""
 #: concrete/single_pages/dashboard/system/express/entities/edit.php:23
 #: concrete/single_pages/dashboard/system/express/entities/view_details.php:16
 #: concrete/single_pages/dashboard/system/permissions/workflows.php:49
-#: concrete/single_pages/dashboard/system/multilingual/setup.php:113
 #: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:82
 #: concrete/single_pages/dashboard/system/mail/importers.php:79
 #: concrete/single_pages/dashboard/system/conversations/points.php:13
@@ -5275,8 +5279,8 @@ msgstr ""
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:299
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:477
 #: concrete/single_pages/dashboard/reports/surveys.php:91
-#: concrete/single_pages/dashboard/pages/types/view.php:31
-#: concrete/single_pages/dashboard/pages/types/view.php:62
+#: concrete/single_pages/dashboard/pages/types/view.php:28
+#: concrete/single_pages/dashboard/pages/types/view.php:59
 #: concrete/single_pages/dashboard/pages/templates/add.php:13
 #: concrete/single_pages/dashboard/pages/templates/view.php:26
 #: concrete/single_pages/dashboard/pages/single.php:28
@@ -5307,7 +5311,7 @@ msgstr ""
 #: concrete/elements/permission/detail.php:116
 #: concrete/elements/page_types/composer/form/output/buttons.php:41
 #: concrete/elements/block_footer_edit.php:23
-#: concrete/elements/custom_style.php:440
+#: concrete/elements/custom_style.php:450
 #: concrete/views/image-editor/editor.php:81
 #: concrete/views/dialogs/block/aliasing.php:27
 #: concrete/views/dialogs/block/cache.php:77
@@ -5378,7 +5382,7 @@ msgstr ""
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:216
 #: concrete/single_pages/dashboard/pages/types/composer.php:202
 #: concrete/single_pages/dashboard/pages/types/permissions.php:33
-#: concrete/single_pages/dashboard/pages/types/view.php:14
+#: concrete/single_pages/dashboard/pages/types/view.php:11
 #: concrete/single_pages/dashboard/pages/themes/view.php:92
 #: concrete/single_pages/account/edit_profile.php:89
 msgid "Save"
@@ -5584,7 +5588,7 @@ msgstr ""
 #: concrete/tools/workflow/dialogs/user_details.php:18
 #: concrete/single_pages/dashboard/users/add.php:7
 #: concrete/single_pages/dashboard/users/search.php:22
-#: concrete/single_pages/dashboard/pages/types/view.php:44
+#: concrete/single_pages/dashboard/pages/types/view.php:41
 msgid "Basic Details"
 msgstr "Детально"
 
@@ -5727,12 +5731,12 @@ msgstr ""
 
 #: concrete/tools/page_types/composer/form/edit_control.php:47
 #: concrete/controllers/frontend/assets_localization.php:64
-#: concrete/elements/custom_style.php:407
+#: concrete/elements/custom_style.php:403
 msgid "Custom Template"
 msgstr ""
 
 #: concrete/tools/page_types/composer/form/edit_control.php:51
-#: concrete/src/Entity/File/Version.php:511
+#: concrete/src/Entity/File/Version.php:491
 #: concrete/elements/files/properties.php:184
 #: concrete/views/panels/details/page/attributes.php:70
 #: concrete/blocks/image_slider/form_setup_html.php:332
@@ -6051,14 +6055,14 @@ msgstr ""
 
 #: concrete/tools/sitemap_search_selector.php:5
 #: concrete/controllers/backend/page.php:76
-#: concrete/single_pages/dashboard/sitemap/full.php:53
+#: concrete/single_pages/dashboard/sitemap/full.php:38
 msgid "You do not have access to the sitemap."
 msgstr ""
 
 #: concrete/controllers/panel/detail/page/attributes.php:150
 #: concrete/controllers/panel/detail/page/caching.php:27
 #: concrete/controllers/panel/detail/page/caching.php:42
-#: concrete/controllers/panel/detail/page/location.php:136
+#: concrete/controllers/panel/detail/page/location.php:140
 #: concrete/controllers/panel/detail/page/permissions.php:132
 #: concrete/controllers/panel/detail/page/seo.php:79
 msgid "Page Updated"
@@ -6086,7 +6090,7 @@ msgstr ""
 msgid "You do not have permission to discard this page."
 msgstr ""
 
-#: concrete/controllers/panel/detail/page/location.php:137
+#: concrete/controllers/panel/detail/page/location.php:141
 msgid "Page location information saved successfully."
 msgstr ""
 
@@ -6821,7 +6825,7 @@ msgstr ""
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:85
 #: concrete/single_pages/dashboard/system/permissions/workflows.php:83
 #: concrete/single_pages/dashboard/system/basics/social.php:12
-#: concrete/single_pages/dashboard/pages/types/add.php:11
+#: concrete/single_pages/dashboard/pages/types/add.php:8
 #: concrete/single_pages/dashboard/pages/templates/add.php:51
 #: concrete/single_pages/dashboard/pages/feeds.php:24
 #: concrete/single_pages/dashboard/pages/single.php:19
@@ -7533,6 +7537,8 @@ msgid "** None Activated"
 msgstr ""
 
 #: concrete/controllers/single_page/dashboard/system/permissions/antispam.php:24
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:142
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:209
 msgid "** None Selected"
 msgstr ""
 
@@ -7627,40 +7633,53 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: concrete/controllers/single_page/dashboard/system/multilingual/setup.php:23
-msgid "You must specify a page for this multilingual content section."
-msgstr ""
-
 #: concrete/controllers/single_page/dashboard/system/multilingual/setup.php:31
-msgid "A multilingual section page at this location already exists."
+msgid "** Choose a Page Template"
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/system/multilingual/setup.php:40
+#: concrete/controllers/single_page/dashboard/system/multilingual/setup.php:88
+msgid "You must specify a valid language."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/multilingual/setup.php:91
+msgid "You must specify a valid country."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/multilingual/setup.php:94
+msgid "You must specify a valid URL Slug for the home page."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/multilingual/setup.php:102
+msgid "You must specify a valid page template."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/multilingual/setup.php:108
 msgid "This language/region combination already exists."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/system/multilingual/setup.php:134
-msgid "Multilingual content enabled"
+#: concrete/controllers/single_page/dashboard/system/multilingual/setup.php:116
+msgid "Locale added successfully."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/system/multilingual/setup.php:140
-msgid "Multilingual content updated"
-msgstr ""
-
-#: concrete/controllers/single_page/dashboard/system/multilingual/setup.php:146
-msgid "Section removed."
-msgstr ""
-
-#: concrete/controllers/single_page/dashboard/system/multilingual/setup.php:152
+#: concrete/controllers/single_page/dashboard/system/multilingual/setup.php:149
 msgid "Default Section settings updated."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/system/multilingual/setup.php:180
-msgid "Invalid Section"
+#: concrete/controllers/single_page/dashboard/system/multilingual/setup.php:152
+msgid "Invalid Locale"
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/system/multilingual/setup.php:196
-msgid "Invalid section"
+#: concrete/controllers/single_page/dashboard/system/multilingual/setup.php:168
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:64
+msgid "Only the super user may remove a multilingual section."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/multilingual/setup.php:177
+msgid "Invalid locale object."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/system/multilingual/setup.php:182
+msgid "Section removed."
 msgstr ""
 
 #: concrete/controllers/single_page/dashboard/system/multilingual/translate_interface.php:28
@@ -8691,7 +8710,7 @@ msgid "Design"
 msgstr "Дизайн"
 
 #: concrete/controllers/frontend/assets_localization.php:37
-#: concrete/src/Block/Menu/Menu.php:131
+#: concrete/src/Block/Menu/Menu.php:132
 msgid "Edit Layout"
 msgstr ""
 
@@ -8772,7 +8791,7 @@ msgid ""
 msgstr ""
 
 #: concrete/controllers/frontend/assets_localization.php:58
-#: concrete/src/Block/Menu/Menu.php:125
+#: concrete/src/Block/Menu/Menu.php:126
 msgid "Manage Stack Contents"
 msgstr ""
 
@@ -8786,7 +8805,7 @@ msgid "Blocks arranged successfully."
 msgstr ""
 
 #: concrete/controllers/frontend/assets_localization.php:63
-#: concrete/src/Block/Menu/Menu.php:155
+#: concrete/src/Block/Menu/Menu.php:156
 msgid "Copy to Clipboard"
 msgstr ""
 
@@ -8807,7 +8826,7 @@ msgid "Are you sure you want to delete this custom style preset?"
 msgstr ""
 
 #: concrete/controllers/frontend/assets_localization.php:71
-#: concrete/src/Block/Menu/Menu.php:212 concrete/src/Block/Menu/Menu.php:213
+#: concrete/src/Block/Menu/Menu.php:213 concrete/src/Block/Menu/Menu.php:214
 msgid "Setup on Child Pages"
 msgstr ""
 
@@ -8901,12 +8920,12 @@ msgid "Are you sure you want to remove this value?"
 msgstr ""
 
 #: concrete/controllers/frontend/assets_localization.php:93
-#: concrete/src/Block/Menu/Menu.php:178
+#: concrete/src/Block/Menu/Menu.php:179
 #: concrete/src/Marketplace/RemoteItem.php:85
 #: concrete/elements/files/search_header.php:15
 #: concrete/elements/users/search_header.php:9
 #: concrete/elements/pages/search_header.php:14
-#: concrete/elements/custom_style.php:398
+#: concrete/elements/custom_style.php:400
 #: concrete/views/panels/page/design/customize.php:85
 #: concrete/single_pages/dashboard/system/express/entities/edit.php:50
 msgid "Advanced"
@@ -8921,7 +8940,7 @@ msgid "Page Properties saved."
 msgstr ""
 
 #: concrete/controllers/frontend/assets_localization.php:100
-#: concrete/src/Block/Menu/Menu.php:202 concrete/src/Block/Menu/Menu.php:203
+#: concrete/src/Block/Menu/Menu.php:203 concrete/src/Block/Menu/Menu.php:204
 msgid "Schedule Guest Access"
 msgstr "Планування Гостьового Доступу"
 
@@ -8978,7 +8997,7 @@ msgstr ""
 #: concrete/src/File/Type/Type.php:428
 #: concrete/src/Editor/EditorServiceProvider.php:70
 #: concrete/src/Backup/ContentImporter/ValueInspector/Item/ImageItem.php:8
-#: concrete/elements/custom_style.php:189
+#: concrete/elements/custom_style.php:191
 #: concrete/blocks/image_slider/form_setup_html.php:317
 #: concrete/blocks/image/controller.php:44 concrete/blocks/image/form.php:13
 #: concrete/single_pages/dashboard/users/add_group.php:87
@@ -9821,7 +9840,7 @@ msgid "Delete Head"
 msgstr ""
 
 #: concrete/controllers/frontend/assets_localization.php:405
-#: concrete/src/Entity/File/Version.php:508
+#: concrete/src/Entity/File/Version.php:488
 #: concrete/elements/files/properties.php:176
 #: concrete/views/dialogs/file/properties.php:100
 #: concrete/blocks/image_slider/form_setup_html.php:328
@@ -9836,27 +9855,27 @@ msgid "Title"
 msgstr "Назва"
 
 #: concrete/controllers/frontend/assets_localization.php:406
-#: concrete/elements/custom_style.php:201
+#: concrete/elements/custom_style.php:203
 #: concrete/blocks/testimonial/form.php:27
 msgid "Position"
 msgstr ""
 
 #: concrete/controllers/frontend/assets_localization.php:408
-#: concrete/elements/custom_style.php:110
-#: concrete/elements/custom_style.php:265
-#: concrete/elements/custom_style.php:298
+#: concrete/elements/custom_style.php:112
+#: concrete/elements/custom_style.php:267
+#: concrete/elements/custom_style.php:300
 msgid "Left"
 msgstr ""
 
 #: concrete/controllers/frontend/assets_localization.php:409
-#: concrete/elements/custom_style.php:112
-#: concrete/elements/custom_style.php:251
-#: concrete/elements/custom_style.php:284
+#: concrete/elements/custom_style.php:114
+#: concrete/elements/custom_style.php:253
+#: concrete/elements/custom_style.php:286
 msgid "Right"
 msgstr ""
 
 #: concrete/controllers/frontend/assets_localization.php:410
-#: concrete/elements/custom_style.php:111
+#: concrete/elements/custom_style.php:113
 msgid "Center"
 msgstr ""
 
@@ -9947,7 +9966,7 @@ msgid "Frame Options"
 msgstr ""
 
 #: concrete/controllers/frontend/assets_localization.php:438
-#: concrete/elements/custom_style.php:221
+#: concrete/elements/custom_style.php:223
 #: concrete/views/image-editor/controls/position.php:17
 #: concrete/views/image-editor/controls/position.php:68
 #: concrete/blocks/page_attribute_display/form.php:47
@@ -10011,7 +10030,7 @@ msgid "Change Font Size"
 msgstr ""
 
 #: concrete/controllers/frontend/assets_localization.php:452
-#: concrete/elements/custom_style.php:173
+#: concrete/elements/custom_style.php:175
 msgid "Alignment"
 msgstr ""
 
@@ -10274,12 +10293,12 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: concrete/controllers/install.php:94 concrete/controllers/install.php:354
+#: concrete/controllers/install.php:91 concrete/controllers/install.php:377
 #, php-format
 msgid "Invalid starting point: %s"
 msgstr ""
 
-#: concrete/controllers/install.php:104
+#: concrete/controllers/install.php:101
 #, php-format
 msgid ""
 "concrete5 has been installed. You have been logged in as <b>%s</b> with the "
@@ -10287,105 +10306,105 @@ msgid ""
 "the users area of the dashboard."
 msgstr ""
 
-#: concrete/controllers/install.php:130
+#: concrete/controllers/install.php:127
 msgid "Unable to connect to database."
 msgstr "Не вдається підключитися до бази даних."
 
-#: concrete/controllers/install.php:136
-#: concrete/src/Package/StartingPointPackage.php:319
+#: concrete/controllers/install.php:133
+#: concrete/src/Package/StartingPointPackage.php:320
 #, php-format
 msgid ""
 "There are already %s tables in this database. concrete5 must be installed in"
 " an empty database."
 msgstr "Таблиці %s вже є в базі даних. concrete5 повинна бути встановлена в порожню базу даних."
 
-#: concrete/controllers/install.php:152
+#: concrete/controllers/install.php:149
 msgid ""
 "Your MySQL database does not support InnoDB database tables. These are "
 "required."
 msgstr ""
 
-#: concrete/controllers/install.php:166
+#: concrete/controllers/install.php:163
 msgid "The PDO extension is not loaded."
 msgstr ""
 
-#: concrete/controllers/install.php:180
+#: concrete/controllers/install.php:177
 #, php-format
 msgid "Between %1$s and %2$s Characters"
 msgstr ""
 
-#: concrete/controllers/install.php:183
+#: concrete/controllers/install.php:180
 #, php-format
 msgid "at least %s characters"
 msgstr ""
 
-#: concrete/controllers/install.php:187
+#: concrete/controllers/install.php:184
 #, php-format
 msgid "up to %s characters"
 msgstr ""
 
-#: concrete/controllers/install.php:236
+#: concrete/controllers/install.php:259
 msgid "concrete5 is already installed."
 msgstr "concrete5 вже встановлена​​."
 
-#: concrete/controllers/install.php:242
+#: concrete/controllers/install.php:265
 #: concrete/views/frontend/install.php:111
 #: concrete/views/frontend/install.php:236
-#: concrete/views/frontend/install.php:409
-#: concrete/views/frontend/install.php:428
-#: concrete/views/frontend/install.php:1012
+#: concrete/views/frontend/install.php:426
+#: concrete/views/frontend/install.php:445
+#: concrete/views/frontend/install.php:1029
 msgid "Install concrete5"
 msgstr ""
 
-#: concrete/controllers/install.php:297
+#: concrete/controllers/install.php:320
 msgid ""
 "Your configuration directory config/ does not appear to be writable by the "
 "web server."
 msgstr "Ваш каталог конфігурації config/ не доступний для запису веб-сервером."
 
-#: concrete/controllers/install.php:301
+#: concrete/controllers/install.php:324
 msgid ""
 "Your files directory files/ does not appear to be writable by the web "
 "server."
 msgstr "Ваш каталог файлів files/ не доступний для запису веб-сервером."
 
-#: concrete/controllers/install.php:305
+#: concrete/controllers/install.php:328
 msgid ""
 "Your packages directory packages/ does not appear to be writable by the web "
 "server."
 msgstr "Ваш каталог пакунків packages/ не доступний для запису веб-сервером."
 
-#: concrete/controllers/install.php:360
+#: concrete/controllers/install.php:383
 #, php-format
 msgctxt "InstallError"
 msgid "%s.<br><br>Trace:<br>%s"
 msgstr ""
 
-#: concrete/controllers/install.php:393
+#: concrete/controllers/install.php:416
 msgid "Please specify your site's name"
 msgstr "Будь ласка, вкажіть назву вашого сайту"
 
-#: concrete/controllers/install.php:394
+#: concrete/controllers/install.php:417
 msgid "Please specify a valid email address"
 msgstr "Будь ласка, вкажіть діючу email-адресу"
 
-#: concrete/controllers/install.php:395
+#: concrete/controllers/install.php:418
 msgid "You must specify a valid database name"
 msgstr "Ви повинні вказати правильне ім'я бази даних"
 
-#: concrete/controllers/install.php:396
+#: concrete/controllers/install.php:419
 msgid "You must specify a valid database server"
 msgstr "Ви повинні вказати дійсний сервер бази даних"
 
-#: concrete/controllers/install.php:471
+#: concrete/controllers/install.php:494
 msgid "Unable to open config/app.php for writing."
 msgstr ""
 
-#: concrete/controllers/install.php:492
+#: concrete/controllers/install.php:515
 msgid "Unable to open config/site_user.php for writing."
 msgstr "Файл config/site_user.php недоступний для запису."
 
-#: concrete/controllers/install.php:517
+#: concrete/controllers/install.php:540
 msgid "You must select a valid sample content starting point."
 msgstr "Ви повинні вибрати тип вмісту."
 
@@ -10758,7 +10777,7 @@ msgid "Replied"
 msgstr ""
 
 #: concrete/src/User/PrivateMessage/PrivateMessage.php:188
-#: concrete/src/Page/Page.php:480
+#: concrete/src/Page/Page.php:486
 msgid "Unknown User"
 msgstr "Невідомий користувач"
 
@@ -10794,7 +10813,7 @@ msgstr ""
 #: concrete/src/Page/Search/Field/Field/DateAddedField.php:36
 #: concrete/src/Page/Search/Field/Field/DateLastModifiedField.php:36
 #: concrete/src/Page/Search/Field/Field/DatePublicField.php:36
-#: concrete/attributes/number/controller.php:44
+#: concrete/attributes/number/controller.php:48
 #: concrete/attributes/date_time/controller.php:136
 msgid "to"
 msgstr ""
@@ -10939,6 +10958,119 @@ msgstr ""
 
 #: concrete/src/Html/Service/Navigation.php:74
 msgid "Log out"
+msgstr ""
+
+#: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:44
+msgid "Renaming problematic tables..."
+msgstr ""
+
+#: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:81
+msgid "Migrating old permissions..."
+msgstr ""
+
+#: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:104
+msgid "Migrating file manager permissions..."
+msgstr ""
+
+#: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:133
+msgid "Migrating file set permissions..."
+msgstr ""
+
+#: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:182
+msgid "Updating tables found in doctrine xml..."
+msgstr ""
+
+#: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:202
+msgid "Preparing problematic entity database tables..."
+msgstr ""
+
+#: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:245
+#, php-format
+msgid "Installing entity %s..."
+msgstr ""
+
+#: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:258
+#, php-format
+msgid "Migrating attribute key %s"
+msgstr ""
+
+#: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:413
+#, php-format
+msgid "Importing attribute key settings %s..."
+msgstr ""
+
+#: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:515
+msgid "Updating Dashboard..."
+msgstr ""
+
+#: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:596
+msgid "Adding block types..."
+msgstr ""
+
+#: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:739
+msgid "Adding tree node types..."
+msgstr ""
+
+#: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:769
+msgid "Installing Desktops..."
+msgstr ""
+
+#: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:830
+msgid "Updating Workflows..."
+msgstr ""
+
+#: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:843
+msgid "Installing Site object..."
+msgstr ""
+
+#: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:962
+msgid "Updating tracking code..."
+msgstr ""
+
+#: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:988
+msgid "Adding permissions..."
+msgstr ""
+
+#: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:1000
+msgid "Cleaning old permissions..."
+msgstr ""
+
+#: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:1006
+msgid "Updating topics..."
+msgstr ""
+
+#: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:1018
+msgid "Migrating to new file manager..."
+msgstr ""
+
+#: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:1038
+msgid "Adding notifications..."
+msgstr ""
+
+#: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:1051
+msgid "Updating jobs..."
+msgstr ""
+
+#: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:1059
+msgid "Updating single pages..."
+msgstr ""
+
+#: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:1088
+msgid "Updating locales and multilingual sections..."
+msgstr ""
+
+#: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:1118
+msgid "Moving home page to outside of site trees..."
+msgstr ""
+
+#: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:1125
+#, php-format
+msgid "Migrating multilingual section: %s..."
+msgstr ""
+
+#: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:1148
+#, php-format
+msgid "Setting pages for section %s to site tree %s..."
 msgstr ""
 
 #: concrete/src/Updater/Migrations/Configuration.php:18
@@ -11169,7 +11301,7 @@ msgstr "Додаток"
 
 #: concrete/src/File/Type/Type.php:446
 #: concrete/src/Backup/ContentImporter/ValueInspector/Item/FileItem.php:10
-#: concrete/src/Entity/File/Version.php:505 concrete/blocks/file/add.php:6
+#: concrete/src/Entity/File/Version.php:485 concrete/blocks/file/add.php:6
 #: concrete/blocks/file/controller.php:30 concrete/blocks/file/edit.php:10
 #: concrete/single_pages/dashboard/system/basics/icons.php:38
 #: concrete/single_pages/dashboard/reports/statistics.php:89
@@ -11926,7 +12058,7 @@ msgstr ""
 msgid "Related Pages"
 msgstr ""
 
-#: concrete/src/Page/Stack/Stack.php:162
+#: concrete/src/Page/Stack/Stack.php:160
 msgid "No Name"
 msgstr "Без назви"
 
@@ -12187,8 +12319,8 @@ msgstr ""
 
 #: concrete/src/Page/Search/Field/Field/ParentPageField.php:53
 #: concrete/src/Entity/Attribute/Value/Value/BooleanValue.php:35
-#: concrete/elements/page_types/form/base.php:56
-#: concrete/elements/page_types/form/base.php:61
+#: concrete/elements/page_types/form/base.php:59
+#: concrete/elements/page_types/form/base.php:64
 #: concrete/blocks/page_attribute_display/templates/boolean.php:6
 #: concrete/blocks/form/form_setup_html.php:71
 #: concrete/blocks/form/form_setup_html.php:173
@@ -12216,8 +12348,8 @@ msgstr "Ні"
 
 #: concrete/src/Page/Search/Field/Field/ParentPageField.php:54
 #: concrete/src/Entity/Attribute/Value/Value/BooleanValue.php:35
-#: concrete/elements/page_types/form/base.php:56
-#: concrete/elements/page_types/form/base.php:61
+#: concrete/elements/page_types/form/base.php:59
+#: concrete/elements/page_types/form/base.php:64
 #: concrete/blocks/page_attribute_display/templates/boolean.php:6
 #: concrete/blocks/form/form_setup_html.php:65
 #: concrete/blocks/form/form_setup_html.php:172
@@ -12262,7 +12394,7 @@ msgid "Version Status"
 msgstr ""
 
 #: concrete/src/Page/Search/Field/Field/VersionStatusField.php:49
-#: concrete/elements/page_types/form/base.php:67
+#: concrete/elements/page_types/form/base.php:70
 #: concrete/blocks/page_list/page_list_form.php:30
 #: concrete/blocks/date_navigation/form.php:25
 #: concrete/blocks/date_navigation/view.php:12
@@ -12270,16 +12402,16 @@ msgstr ""
 msgid "All"
 msgstr "Всі"
 
-#: concrete/src/Page/Page.php:2486
+#: concrete/src/Page/Page.php:2507
 #, php-format
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr ""
 
-#: concrete/src/Page/Page.php:2486 concrete/src/Page/Page.php:2546
+#: concrete/src/Page/Page.php:2507 concrete/src/Page/Page.php:2567
 msgid "Page Action"
 msgstr ""
 
-#: concrete/src/Page/Page.php:2546
+#: concrete/src/Page/Page.php:2567
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr ""
@@ -12551,147 +12683,147 @@ msgid ""
 "uninstalling."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:51
+#: concrete/src/Package/StartingPointPackage.php:52
 msgid "Starting installation and creating directories."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:52
+#: concrete/src/Package/StartingPointPackage.php:53
 msgid "Creating database tables."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:53
+#: concrete/src/Package/StartingPointPackage.php:54
 msgid "Creating site."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:54
+#: concrete/src/Package/StartingPointPackage.php:55
 msgid "Adding admin user."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:55
+#: concrete/src/Package/StartingPointPackage.php:56
 msgid "Installing permissions & workflow."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:56
+#: concrete/src/Package/StartingPointPackage.php:57
 msgid "Installing Custom Data Objects."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:57
+#: concrete/src/Package/StartingPointPackage.php:58
 msgid "Creating home page."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:58
+#: concrete/src/Package/StartingPointPackage.php:59
 msgid "Installing attributes."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:59
+#: concrete/src/Package/StartingPointPackage.php:60
 msgid "Adding block types."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:60
+#: concrete/src/Package/StartingPointPackage.php:61
 msgid "Adding gathering data sources."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:61
+#: concrete/src/Package/StartingPointPackage.php:62
 msgid "Page type basic setup."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:62
+#: concrete/src/Package/StartingPointPackage.php:63
 msgid "Adding themes."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:63
+#: concrete/src/Package/StartingPointPackage.php:64
 msgid "Installing automated jobs."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:64
+#: concrete/src/Package/StartingPointPackage.php:65
 msgid "Installing dashboard."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:68
+#: concrete/src/Package/StartingPointPackage.php:69
 msgid "Installing login and registration pages."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:69
+#: concrete/src/Package/StartingPointPackage.php:70
 msgid "Adding image editor functionality."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:70
+#: concrete/src/Package/StartingPointPackage.php:71
 msgid "Configuring site."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:71
+#: concrete/src/Package/StartingPointPackage.php:72
 msgid "Importing files."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:72
+#: concrete/src/Package/StartingPointPackage.php:73
 msgid "Adding pages and content."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:73
+#: concrete/src/Package/StartingPointPackage.php:74
 msgid "Adding desktops."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:74
+#: concrete/src/Package/StartingPointPackage.php:75
 msgid "Setting site permissions."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:75
+#: concrete/src/Package/StartingPointPackage.php:76
 msgid "Finishing."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:265
-#: concrete/src/Package/StartingPointPackage.php:268
+#: concrete/src/Package/StartingPointPackage.php:266
+#: concrete/src/Package/StartingPointPackage.php:269
 #: concrete/blocks/page_title/form_add_edit.php:68
 #: concrete/blocks/page_title/form_add_edit.php:93
 #: concrete/single_pages/dashboard/system/files/storage.php:61
 msgid "Default"
 msgstr "За замовченням"
 
-#: concrete/src/Package/StartingPointPackage.php:266
+#: concrete/src/Package/StartingPointPackage.php:267
 msgid "Local"
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:276
+#: concrete/src/Package/StartingPointPackage.php:277
 msgctxt "ThumbnailTypeName"
 msgid "File Manager Thumbnails"
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:284
+#: concrete/src/Package/StartingPointPackage.php:285
 msgctxt "ThumbnailTypeName"
 msgid "File Manager Detail Thumbnails"
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:349
+#: concrete/src/Package/StartingPointPackage.php:350
 #, php-format
 msgid "Unable to install database: %s"
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:389
+#: concrete/src/Package/StartingPointPackage.php:390
 msgctxt "GroupName"
 msgid "Guest"
 msgstr "Гість"
 
-#: concrete/src/Package/StartingPointPackage.php:390
+#: concrete/src/Package/StartingPointPackage.php:391
 msgctxt "GroupDescription"
 msgid "The guest group represents unregistered visitors to your site."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:395
+#: concrete/src/Package/StartingPointPackage.php:396
 msgctxt "GroupName"
 msgid "Registered Users"
 msgstr "Зареєстровані користувачі"
 
-#: concrete/src/Package/StartingPointPackage.php:396
+#: concrete/src/Package/StartingPointPackage.php:397
 msgctxt "GroupDescription"
 msgid "The registered users group represents all user accounts."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:400
+#: concrete/src/Package/StartingPointPackage.php:401
 msgctxt "GroupName"
 msgid "Administrators"
 msgstr "Адміністратори"
 
-#: concrete/src/Package/StartingPointPackage.php:417
+#: concrete/src/Package/StartingPointPackage.php:418
 msgid "Won a Badge"
 msgstr ""
 
@@ -13066,26 +13198,26 @@ msgstr ""
 msgid "Please remove all storage locations using this storage type."
 msgstr ""
 
-#: concrete/src/Entity/File/Version.php:367
+#: concrete/src/Entity/File/Version.php:347
 msgid "(Unknown)"
 msgstr ""
 
-#: concrete/src/Entity/File/Version.php:514
+#: concrete/src/Entity/File/Version.php:494
 #: concrete/elements/files/properties.php:193
 #: concrete/elements/gathering/data_sources/flickr_feed/options.php:8
 #: concrete/blocks/tags/controller.php:38
 msgid "Tags"
 msgstr "Теги"
 
-#: concrete/src/Entity/File/Version.php:517
+#: concrete/src/Entity/File/Version.php:497
 msgid "File Content"
 msgstr ""
 
-#: concrete/src/Entity/File/Version.php:520
+#: concrete/src/Entity/File/Version.php:500
 msgid "File Name"
 msgstr ""
 
-#: concrete/src/Entity/File/Version.php:745
+#: concrete/src/Entity/File/Version.php:725
 msgid "Invalid dimensions."
 msgstr ""
 
@@ -13728,34 +13860,34 @@ msgstr "Налаштувати головну сторінку панелі ке
 msgid "Your Site"
 msgstr ""
 
-#: concrete/src/Block/Menu/Menu.php:107 concrete/src/Block/Menu/Menu.php:111
+#: concrete/src/Block/Menu/Menu.php:108 concrete/src/Block/Menu/Menu.php:112
 msgid "Do you want to delete this block?"
 msgstr "Ви дійсно хочете видалити цей блок?"
 
-#: concrete/src/Block/Menu/Menu.php:109
+#: concrete/src/Block/Menu/Menu.php:110
 msgid ""
 "Do you want to delete this block? This item is an original. If you delete "
 "it, you will delete all blocks aliased to it"
 msgstr ""
 
-#: concrete/src/Block/Menu/Menu.php:137 concrete/src/Block/Menu/Menu.php:144
+#: concrete/src/Block/Menu/Menu.php:138 concrete/src/Block/Menu/Menu.php:145
 msgid "Edit Block"
 msgstr "Редагувати блок"
 
-#: concrete/src/Block/Menu/Menu.php:147
+#: concrete/src/Block/Menu/Menu.php:148
 #, php-format
 msgid "Edit %s"
 msgstr ""
 
-#: concrete/src/Block/Menu/Menu.php:172
+#: concrete/src/Block/Menu/Menu.php:173
 msgid "Design &amp; Custom Template"
 msgstr ""
 
-#: concrete/src/Block/Menu/Menu.php:179
+#: concrete/src/Block/Menu/Menu.php:180
 msgid "Advanced Block Settings"
 msgstr ""
 
-#: concrete/src/Block/Menu/Menu.php:193
+#: concrete/src/Block/Menu/Menu.php:194
 msgid "Block Permissions"
 msgstr ""
 
@@ -13782,13 +13914,13 @@ msgstr "Немає дати закінчення."
 msgid "Repeats %s. "
 msgstr "Повторюється %s. "
 
-#: concrete/src/Attribute/Key/Key.php:99
+#: concrete/src/Attribute/Key/Key.php:101
 msgid ""
 "You cannot use the legacy attribute add method with any category but the "
 "legacy category."
 msgstr ""
 
-#: concrete/src/Attribute/Key/Key.php:129
+#: concrete/src/Attribute/Key/Key.php:131
 #, php-format
 msgid "Unable to retrieve legacy attribute key for method: %s"
 msgstr ""
@@ -16898,7 +17030,7 @@ msgstr ""
 #: concrete/single_pages/dashboard/system/attributes/sets.php:32
 #: concrete/single_pages/dashboard/system/attributes/sets.php:171
 #: concrete/single_pages/dashboard/system/registration/authentication.php:34
-#: concrete/single_pages/dashboard/pages/types/view.php:66
+#: concrete/single_pages/dashboard/pages/types/view.php:63
 #: concrete/single_pages/dashboard/pages/templates/add.php:20
 #: concrete/single_pages/dashboard/pages/templates/view.php:33
 #: concrete/single_pages/dashboard/pages/feeds.php:94
@@ -17123,7 +17255,7 @@ msgstr ""
 msgid "Headline"
 msgstr ""
 
-#: concrete/elements/dashboard/express/entries/header.php:10
+#: concrete/elements/dashboard/express/entries/header.php:7
 #, php-format
 msgid "New %s"
 msgstr ""
@@ -17290,54 +17422,54 @@ msgstr ""
 msgid "Learn the basics."
 msgstr ""
 
-#: concrete/elements/help/dialog/introduction.php:16
+#: concrete/elements/help/dialog/introduction.php:15
 msgid "Use the toolbar"
 msgstr ""
 
-#: concrete/elements/help/dialog/introduction.php:18
-#: concrete/elements/help/dialog/introduction.php:25
-#: concrete/elements/help/dialog/introduction.php:33
-#: concrete/elements/help/dialog/introduction.php:40
-#: concrete/elements/help/dialog/introduction.php:47
+#: concrete/elements/help/dialog/introduction.php:17
+#: concrete/elements/help/dialog/introduction.php:24
+#: concrete/elements/help/dialog/introduction.php:32
+#: concrete/elements/help/dialog/introduction.php:39
+#: concrete/elements/help/dialog/introduction.php:46
 msgid "Watch Video"
 msgstr ""
 
-#: concrete/elements/help/dialog/introduction.php:19
-#: concrete/elements/help/dialog/introduction.php:34
-#: concrete/elements/help/dialog/introduction.php:41
-#: concrete/elements/help/dialog/introduction.php:48
+#: concrete/elements/help/dialog/introduction.php:18
+#: concrete/elements/help/dialog/introduction.php:33
+#: concrete/elements/help/dialog/introduction.php:40
+#: concrete/elements/help/dialog/introduction.php:47
 msgid "Run Guide"
 msgstr ""
 
-#: concrete/elements/help/dialog/introduction.php:23
+#: concrete/elements/help/dialog/introduction.php:22
 msgid "Add & Change Content"
 msgstr ""
 
-#: concrete/elements/help/dialog/introduction.php:26
-msgid "Guide: Change Content"
+#: concrete/elements/help/dialog/introduction.php:25
+msgid " Change Content"
 msgstr ""
 
-#: concrete/elements/help/dialog/introduction.php:27
+#: concrete/elements/help/dialog/introduction.php:26
 msgid "Guide: Add Content"
 msgstr ""
 
-#: concrete/elements/help/dialog/introduction.php:31
+#: concrete/elements/help/dialog/introduction.php:30
 msgid "Add a page"
 msgstr ""
 
-#: concrete/elements/help/dialog/introduction.php:38
+#: concrete/elements/help/dialog/introduction.php:37
 msgid "Personalize your site"
 msgstr ""
 
-#: concrete/elements/help/dialog/introduction.php:45
+#: concrete/elements/help/dialog/introduction.php:44
 msgid "Cleanup and organize your site"
 msgstr ""
 
-#: concrete/elements/help/dialog/introduction.php:56
+#: concrete/elements/help/dialog/introduction.php:54
 msgid "More help."
 msgstr ""
 
-#: concrete/elements/help/dialog/introduction.php:65
+#: concrete/elements/help/dialog/introduction.php:63
 #: concrete/views/frontend/install.php:139
 #, php-format
 msgid ""
@@ -17345,7 +17477,7 @@ msgid ""
 "editing and site management with concrete5."
 msgstr ""
 
-#: concrete/elements/help/dialog/introduction.php:74
+#: concrete/elements/help/dialog/introduction.php:72
 #: concrete/views/frontend/install.php:159
 #, php-format
 msgid ""
@@ -17353,7 +17485,7 @@ msgid ""
 "theming, building add-ons and custom concrete5 development."
 msgstr ""
 
-#: concrete/elements/help/dialog/introduction.php:83
+#: concrete/elements/help/dialog/introduction.php:81
 #, php-format
 msgid ""
 "Finally, <a href=\"%s\" target=\"_blank\">the forum</a> is full of helpful "
@@ -17440,7 +17572,7 @@ msgstr ""
 
 #: concrete/elements/date_time/duration.php:260
 #: concrete/elements/permission/duration.php:115
-#: concrete/elements/custom_style.php:193
+#: concrete/elements/custom_style.php:195
 msgid "Repeats"
 msgstr ""
 
@@ -17612,6 +17744,7 @@ msgstr ""
 #: concrete/blocks/page_attribute_display/controller.php:164
 #: concrete/single_pages/dashboard/composer/drafts.php:15
 #: concrete/single_pages/dashboard/system/seo/bulk.php:129
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:156
 msgid "Page Name"
 msgstr ""
 
@@ -18102,12 +18235,12 @@ msgid "In-Page Sitemap"
 msgstr ""
 
 #: concrete/elements/page_types/target_types/all.php:14
-#: concrete/elements/page_types/target_types/page_type.php:28
+#: concrete/elements/page_types/target_types/page_type.php:26
 msgid "Selector Form Factor"
 msgstr ""
 
 #: concrete/elements/page_types/target_types/all.php:21
-#: concrete/elements/page_types/target_types/page_type.php:35
+#: concrete/elements/page_types/target_types/page_type.php:31
 msgid "Display Pages Beneath Page"
 msgstr ""
 
@@ -18127,43 +18260,43 @@ msgstr ""
 msgid "Publish Beneath Page"
 msgstr ""
 
-#: concrete/elements/page_types/form/base.php:40
+#: concrete/elements/page_types/form/base.php:43
 msgid "Page Type Name"
 msgstr ""
 
-#: concrete/elements/page_types/form/base.php:45
+#: concrete/elements/page_types/form/base.php:48
 msgid "Page Type Handle"
 msgstr ""
 
-#: concrete/elements/page_types/form/base.php:50
+#: concrete/elements/page_types/form/base.php:53
 msgid "Default Page Template"
 msgstr ""
 
-#: concrete/elements/page_types/form/base.php:55
+#: concrete/elements/page_types/form/base.php:58
 msgid "Launch in Composer?"
 msgstr ""
 
-#: concrete/elements/page_types/form/base.php:60
+#: concrete/elements/page_types/form/base.php:63
 msgid "Is this page type frequently added?"
 msgstr ""
 
-#: concrete/elements/page_types/form/base.php:62
+#: concrete/elements/page_types/form/base.php:65
 msgid "Frequently added page types are always visible in the Pages panel."
 msgstr ""
 
-#: concrete/elements/page_types/form/base.php:66
+#: concrete/elements/page_types/form/base.php:69
 msgid "Allowed Page Templates"
 msgstr ""
 
-#: concrete/elements/page_types/form/base.php:67
+#: concrete/elements/page_types/form/base.php:70
 msgid "Selected Page Templates"
 msgstr ""
 
-#: concrete/elements/page_types/form/base.php:67
+#: concrete/elements/page_types/form/base.php:70
 msgid "Everything But Selected"
 msgstr ""
 
-#: concrete/elements/page_types/form/base.php:78
+#: concrete/elements/page_types/form/base.php:81
 msgid "Publish Method"
 msgstr ""
 
@@ -18366,272 +18499,276 @@ msgstr ""
 msgid "No timed permission assignments"
 msgstr ""
 
-#: concrete/elements/custom_style.php:71
+#: concrete/elements/custom_style.php:73
 msgid "No Repeat"
 msgstr ""
 
-#: concrete/elements/custom_style.php:72
+#: concrete/elements/custom_style.php:74
 msgid "Horizontally"
 msgstr ""
 
-#: concrete/elements/custom_style.php:73
+#: concrete/elements/custom_style.php:75
 msgid "Vertically"
 msgstr ""
 
-#: concrete/elements/custom_style.php:74
+#: concrete/elements/custom_style.php:76
 msgid "Horizontally & Vertically"
 msgstr ""
 
-#: concrete/elements/custom_style.php:77
+#: concrete/elements/custom_style.php:79
 msgid "Auto"
 msgstr ""
 
-#: concrete/elements/custom_style.php:78
+#: concrete/elements/custom_style.php:80
 msgid "Contain"
 msgstr ""
 
-#: concrete/elements/custom_style.php:79
+#: concrete/elements/custom_style.php:81
 msgid "Cover"
 msgstr ""
 
-#: concrete/elements/custom_style.php:80
+#: concrete/elements/custom_style.php:82
 msgid "10%"
 msgstr ""
 
-#: concrete/elements/custom_style.php:81
+#: concrete/elements/custom_style.php:83
 msgid "25%"
 msgstr ""
 
-#: concrete/elements/custom_style.php:82
+#: concrete/elements/custom_style.php:84
 #: concrete/views/image-editor/filters/vignette.php:20
 msgid "50%"
 msgstr ""
 
-#: concrete/elements/custom_style.php:83
+#: concrete/elements/custom_style.php:85
 msgid "75%"
 msgstr ""
 
-#: concrete/elements/custom_style.php:84
+#: concrete/elements/custom_style.php:86
 msgid "100%"
 msgstr ""
 
-#: concrete/elements/custom_style.php:87
+#: concrete/elements/custom_style.php:89
 msgid "Left Top"
 msgstr ""
 
-#: concrete/elements/custom_style.php:88
+#: concrete/elements/custom_style.php:90
 msgid "Left Center"
 msgstr ""
 
-#: concrete/elements/custom_style.php:89
+#: concrete/elements/custom_style.php:91
 msgid "Left Bottom"
 msgstr ""
 
-#: concrete/elements/custom_style.php:90
+#: concrete/elements/custom_style.php:92
 msgid "Center Top"
 msgstr ""
 
-#: concrete/elements/custom_style.php:91
+#: concrete/elements/custom_style.php:93
 msgid "Center Center"
 msgstr ""
 
-#: concrete/elements/custom_style.php:92
+#: concrete/elements/custom_style.php:94
 msgid "Center Bottom"
 msgstr ""
 
-#: concrete/elements/custom_style.php:93
+#: concrete/elements/custom_style.php:95
 msgid "Right Top"
 msgstr ""
 
-#: concrete/elements/custom_style.php:94
+#: concrete/elements/custom_style.php:96
 msgid "Right Center"
 msgstr ""
 
-#: concrete/elements/custom_style.php:95
+#: concrete/elements/custom_style.php:97
 msgid "Right Bottom"
 msgstr ""
 
-#: concrete/elements/custom_style.php:99
+#: concrete/elements/custom_style.php:101
 msgid "Solid"
 msgstr ""
 
-#: concrete/elements/custom_style.php:100
+#: concrete/elements/custom_style.php:102
 msgid "Dotted"
 msgstr ""
 
-#: concrete/elements/custom_style.php:101
+#: concrete/elements/custom_style.php:103
 msgid "Dashed"
 msgstr ""
 
-#: concrete/elements/custom_style.php:102
+#: concrete/elements/custom_style.php:104
 msgid "Double"
 msgstr ""
 
-#: concrete/elements/custom_style.php:103
+#: concrete/elements/custom_style.php:105
 msgid "Groove"
 msgstr ""
 
-#: concrete/elements/custom_style.php:104
+#: concrete/elements/custom_style.php:106
 msgid "Ridge"
 msgstr ""
 
-#: concrete/elements/custom_style.php:105
+#: concrete/elements/custom_style.php:107
 msgid "Inset"
 msgstr ""
 
-#: concrete/elements/custom_style.php:106
+#: concrete/elements/custom_style.php:108
 msgid "Outset"
 msgstr ""
 
-#: concrete/elements/custom_style.php:152
+#: concrete/elements/custom_style.php:154
 msgid "Text Size and Color"
 msgstr ""
 
-#: concrete/elements/custom_style.php:156
+#: concrete/elements/custom_style.php:158
 msgid "Text Color"
 msgstr ""
 
-#: concrete/elements/custom_style.php:161
+#: concrete/elements/custom_style.php:163
 msgid "Link Color"
 msgstr ""
 
-#: concrete/elements/custom_style.php:166
+#: concrete/elements/custom_style.php:168
 msgid "Base Font Size"
 msgstr ""
 
-#: concrete/elements/custom_style.php:179
+#: concrete/elements/custom_style.php:181
 msgid "Background Color and Image"
 msgstr ""
 
-#: concrete/elements/custom_style.php:182
+#: concrete/elements/custom_style.php:184
 msgid "Background"
 msgstr "Фон"
 
-#: concrete/elements/custom_style.php:184
-#: concrete/elements/custom_style.php:212
-#: concrete/elements/custom_style.php:349
+#: concrete/elements/custom_style.php:186
+#: concrete/elements/custom_style.php:214
+#: concrete/elements/custom_style.php:351
 msgid "Color"
 msgstr ""
 
-#: concrete/elements/custom_style.php:190
+#: concrete/elements/custom_style.php:192
 #: concrete/blocks/image/composer.php:23 concrete/blocks/image/form.php:14
 #: concrete/single_pages/dashboard/system/basics/images.php:19
 #: concrete/single_pages/dashboard/pages/feeds.php:103
 msgid "Choose Image"
 msgstr "Виберіть зображення"
 
-#: concrete/elements/custom_style.php:207
+#: concrete/elements/custom_style.php:209
 msgid "Borders"
 msgstr ""
 
-#: concrete/elements/custom_style.php:210
+#: concrete/elements/custom_style.php:212
 msgid "Border"
 msgstr ""
 
-#: concrete/elements/custom_style.php:217
+#: concrete/elements/custom_style.php:219
 msgid "Style"
 msgstr ""
 
-#: concrete/elements/custom_style.php:228
+#: concrete/elements/custom_style.php:230
 #: concrete/views/image-editor/filters/gaussian_blur.php:3
 msgid "Radius"
 msgstr ""
 
-#: concrete/elements/custom_style.php:237
+#: concrete/elements/custom_style.php:239
 msgid "Margin and Padding"
 msgstr ""
 
-#: concrete/elements/custom_style.php:242
+#: concrete/elements/custom_style.php:244
 msgid "Padding"
 msgstr ""
 
-#: concrete/elements/custom_style.php:244
-#: concrete/elements/custom_style.php:277
+#: concrete/elements/custom_style.php:246
+#: concrete/elements/custom_style.php:279
 #: concrete/blocks/core_conversation/form.php:123
 msgid "Top"
 msgstr ""
 
-#: concrete/elements/custom_style.php:258
-#: concrete/elements/custom_style.php:291
+#: concrete/elements/custom_style.php:260
+#: concrete/elements/custom_style.php:293
 #: concrete/blocks/core_conversation/form.php:129
 msgid "Bottom"
 msgstr "Всі"
 
-#: concrete/elements/custom_style.php:275
+#: concrete/elements/custom_style.php:277
 msgid "Margin"
 msgstr ""
 
-#: concrete/elements/custom_style.php:311
+#: concrete/elements/custom_style.php:313
 msgid "Shadow and Rotation (CSS3)"
 msgstr ""
 
-#: concrete/elements/custom_style.php:314
+#: concrete/elements/custom_style.php:316
 msgid "Shadow"
 msgstr ""
 
-#: concrete/elements/custom_style.php:317
+#: concrete/elements/custom_style.php:319
 msgid "Horizontal Position"
 msgstr ""
 
-#: concrete/elements/custom_style.php:324
+#: concrete/elements/custom_style.php:326
 msgid "Vertical Position"
 msgstr ""
 
-#: concrete/elements/custom_style.php:333
+#: concrete/elements/custom_style.php:335
 msgid "Blur"
 msgstr ""
 
-#: concrete/elements/custom_style.php:340
+#: concrete/elements/custom_style.php:342
 msgid "Spread"
 msgstr ""
 
-#: concrete/elements/custom_style.php:356
+#: concrete/elements/custom_style.php:358
 msgid "Rotate"
 msgstr ""
 
-#: concrete/elements/custom_style.php:358
+#: concrete/elements/custom_style.php:360
 msgid "Rotation (in degrees)"
 msgstr ""
 
-#: concrete/elements/custom_style.php:368
+#: concrete/elements/custom_style.php:370
 msgid "Device Visibility"
 msgstr ""
 
-#: concrete/elements/custom_style.php:368
+#: concrete/elements/custom_style.php:370
 msgid ""
 "Hide the current content on a particular type of device. Un-check a device "
 "below to hide the content."
 msgstr ""
 
-#: concrete/elements/custom_style.php:395
+#: concrete/elements/custom_style.php:397
 msgid "Custom CSS Classes, Block Name, Custom Templates and Reset Styles"
 msgstr ""
 
-#: concrete/elements/custom_style.php:400
-msgid "Custom Class"
-msgstr ""
-
-#: concrete/elements/custom_style.php:409
+#: concrete/elements/custom_style.php:405
 msgid "None selected"
 msgstr "Нічого не вибрано"
 
-#: concrete/elements/custom_style.php:421
-msgid "Block Container Class"
+#: concrete/elements/custom_style.php:416
+msgid "Custom Class"
 msgstr ""
 
 #: concrete/elements/custom_style.php:423
+msgid "Custom ID"
+msgstr ""
+
+#: concrete/elements/custom_style.php:431
+msgid "Block Container Class"
+msgstr ""
+
+#: concrete/elements/custom_style.php:433
 msgid "Default Setting"
 msgstr ""
 
-#: concrete/elements/custom_style.php:424
+#: concrete/elements/custom_style.php:434
 msgid "Disable Grid Container"
 msgstr ""
 
-#: concrete/elements/custom_style.php:425
+#: concrete/elements/custom_style.php:435
 msgid "Enable Grid Container"
 msgstr ""
 
-#: concrete/elements/custom_style.php:432
+#: concrete/elements/custom_style.php:442
 msgid "Clear Styles"
 msgstr ""
 
@@ -19386,7 +19523,6 @@ msgid "Canonical"
 msgstr ""
 
 #: concrete/views/panels/details/page/location.php:68
-#: concrete/single_pages/dashboard/system/multilingual/setup.php:115
 #: concrete/single_pages/dashboard/pages/single.php:29
 msgid "Path"
 msgstr ""
@@ -19421,6 +19557,7 @@ msgid ""
 msgstr ""
 
 #: concrete/views/panels/details/page/seo.php:23
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:160
 msgid "URL Slug"
 msgstr ""
 
@@ -19666,205 +19803,225 @@ msgstr ""
 msgid "Site Information"
 msgstr ""
 
-#: concrete/views/frontend/install.php:254
+#: concrete/views/frontend/install.php:253
 msgid "Site"
 msgstr ""
 
-#: concrete/views/frontend/install.php:272
+#: concrete/views/frontend/install.php:270
 msgid "Administrator Email Address"
 msgstr ""
 
-#: concrete/views/frontend/install.php:279
+#: concrete/views/frontend/install.php:277
 msgid "Administrator Password"
 msgstr ""
 
-#: concrete/views/frontend/install.php:286
+#: concrete/views/frontend/install.php:284
 #: concrete/single_pages/dashboard/users/search.php:214
 #: concrete/single_pages/register.php:74
 msgid "Confirm Password"
 msgstr ""
 
-#: concrete/views/frontend/install.php:298
-#: concrete/views/frontend/install.php:369
+#: concrete/views/frontend/install.php:293
+msgid "Starting Point"
+msgstr ""
+
+#: concrete/views/frontend/install.php:321
+#: concrete/views/frontend/install.php:391
 msgid "Database"
 msgstr ""
 
-#: concrete/views/frontend/install.php:307
+#: concrete/views/frontend/install.php:329
 #: concrete/single_pages/dashboard/system/mail/importers.php:80
 msgid "Server"
 msgstr ""
 
-#: concrete/views/frontend/install.php:314
+#: concrete/views/frontend/install.php:336
 msgid "MySQL Username"
 msgstr ""
 
-#: concrete/views/frontend/install.php:321
+#: concrete/views/frontend/install.php:343
 msgid "MySQL Password"
 msgstr ""
 
-#: concrete/views/frontend/install.php:328
+#: concrete/views/frontend/install.php:350
 msgid "Database Name"
 msgstr ""
 
-#: concrete/views/frontend/install.php:339
+#: concrete/views/frontend/install.php:361
 #: concrete/single_pages/dashboard/system/express/entities/add.php:30
 msgid "Advanced Options"
 msgstr ""
 
-#: concrete/views/frontend/install.php:349
+#: concrete/views/frontend/install.php:372
 msgid "URLs & Session"
 msgstr ""
 
-#: concrete/views/frontend/install.php:354
+#: concrete/views/frontend/install.php:377
 msgid "Set canonical URL for HTTP"
 msgstr ""
 
-#: concrete/views/frontend/install.php:362
+#: concrete/views/frontend/install.php:385
 msgid "Set canonical URL over SSL"
 msgstr ""
 
-#: concrete/views/frontend/install.php:368
+#: concrete/views/frontend/install.php:390
 msgid "Session Handler"
 msgstr ""
 
-#: concrete/views/frontend/install.php:369
+#: concrete/views/frontend/install.php:391
 msgid "Default Handler (Recommended)"
 msgstr ""
 
-#: concrete/views/frontend/install.php:375
-msgid "Starting Point"
+#: concrete/views/frontend/install.php:396
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:15
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:134
+#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:83
+msgid "Locale"
 msgstr ""
 
-#: concrete/views/frontend/install.php:429
+#: concrete/views/frontend/install.php:404
+#: concrete/attributes/address/form.php:59
+msgid "Country"
+msgstr ""
+
+#: concrete/views/frontend/install.php:406
+msgid "** Recommended Countries"
+msgstr ""
+
+#: concrete/views/frontend/install.php:410
+msgid "** Other Countries"
+msgstr ""
+
+#: concrete/views/frontend/install.php:446
 msgid "Testing Environment"
 msgstr ""
 
-#: concrete/views/frontend/install.php:496
+#: concrete/views/frontend/install.php:513
 msgid "Required Items"
 msgstr ""
 
 #. %s is the php version
-#: concrete/views/frontend/install.php:520
+#: concrete/views/frontend/install.php:537
 #, php-format
 msgid "PHP %s"
 msgstr ""
 
-#: concrete/views/frontend/install.php:527
+#: concrete/views/frontend/install.php:544
 #, php-format
 msgid "concrete5 requires at least PHP %s"
 msgstr ""
 
-#: concrete/views/frontend/install.php:539
+#: concrete/views/frontend/install.php:556
 msgid "JavaScript Enabled"
 msgstr ""
 
-#: concrete/views/frontend/install.php:543
+#: concrete/views/frontend/install.php:560
 msgid "Please enable JavaScript in your browser."
 msgstr ""
 
-#: concrete/views/frontend/install.php:561
+#: concrete/views/frontend/install.php:578
 msgid "MySQL PDO Extension Enabled"
 msgstr ""
 
-#: concrete/views/frontend/install.php:579
+#: concrete/views/frontend/install.php:596
 msgid "Supports concrete5 request URLs"
 msgstr ""
 
-#: concrete/views/frontend/install.php:583
+#: concrete/views/frontend/install.php:600
 msgid ""
 "concrete5 cannot parse the PATH_INFO or ORIG_PATH_INFO information provided "
 "by your server."
 msgstr ""
 
-#: concrete/views/frontend/install.php:601
+#: concrete/views/frontend/install.php:618
 msgid "JSON Extension Enabled"
 msgstr ""
 
-#: concrete/views/frontend/install.php:608
+#: concrete/views/frontend/install.php:625
 msgid ""
 "You must enable PHP's JSON support. This should be enabled by default in PHP"
 " 5.2 and above."
 msgstr ""
 
-#: concrete/views/frontend/install.php:629
+#: concrete/views/frontend/install.php:646
 msgid "DOM Extension Enabled"
 msgstr ""
 
-#: concrete/views/frontend/install.php:636
+#: concrete/views/frontend/install.php:653
 msgid "You must enable PHP's DOM support."
 msgstr ""
 
-#: concrete/views/frontend/install.php:657
+#: concrete/views/frontend/install.php:674
 msgid "ASP Style Tags Disabled"
 msgstr ""
 
-#: concrete/views/frontend/install.php:664
+#: concrete/views/frontend/install.php:681
 msgid "You must disable PHP's ASP Style Tags."
 msgstr ""
 
-#: concrete/views/frontend/install.php:693
+#: concrete/views/frontend/install.php:710
 msgid "Image Manipulation Available"
 msgstr ""
 
-#: concrete/views/frontend/install.php:700
+#: concrete/views/frontend/install.php:717
 msgid ""
 "concrete5 requires GD library 2.0.1 with JPEG, PNG and GIF support. "
 "Doublecheck that your installation has support for all these image types."
 msgstr ""
 
-#: concrete/views/frontend/install.php:721
+#: concrete/views/frontend/install.php:738
 msgid "XML Support"
 msgstr ""
 
-#: concrete/views/frontend/install.php:728
+#: concrete/views/frontend/install.php:745
 msgid "concrete5 requires PHP XML Parser and SimpleXML extensions"
 msgstr ""
 
-#: concrete/views/frontend/install.php:749
+#: concrete/views/frontend/install.php:766
 msgid "Writable Files and Configuration Directories"
 msgstr ""
 
-#: concrete/views/frontend/install.php:756
+#: concrete/views/frontend/install.php:773
 msgid ""
 "The packages/, application/config/ and application/files/ directories must "
 "be writable by your web server."
 msgstr ""
 
-#: concrete/views/frontend/install.php:767
+#: concrete/views/frontend/install.php:784
 msgid "Cookies Enabled"
 msgstr ""
 
-#: concrete/views/frontend/install.php:771
+#: concrete/views/frontend/install.php:788
 msgid "Cookies must be enabled in your browser to install concrete5."
 msgstr ""
 
-#: concrete/views/frontend/install.php:789
+#: concrete/views/frontend/install.php:806
 msgid "Internationalization Support"
 msgstr ""
 
-#: concrete/views/frontend/install.php:796
+#: concrete/views/frontend/install.php:813
 msgid "You must enable ctype and multibyte string (mbstring) support in PHP."
 msgstr ""
 
-#: concrete/views/frontend/install.php:817
+#: concrete/views/frontend/install.php:834
 msgid "PHP Comments Preserved"
 msgstr ""
 
-#: concrete/views/frontend/install.php:823
+#: concrete/views/frontend/install.php:840
 msgid ""
 "concrete5 is not compatible with opcode caches that strip PHP comments. "
 "Certain configurations of eAccelerator and Zend opcode caching may use this "
 "behavior, and it must be disabled."
 msgstr ""
 
-#: concrete/views/frontend/install.php:852
+#: concrete/views/frontend/install.php:869
 #, php-format
 msgid ""
 "concrete5 will not install with less than %1$s of RAM. Your memory limit is "
 "currently %2$s. Please increase your memory_limit using ini_set."
 msgstr ""
 
-#: concrete/views/frontend/install.php:864
+#: concrete/views/frontend/install.php:881
 #, php-format
 msgid ""
 "concrete5 runs best with at least %1$s of RAM. Your memory limit is "
@@ -19872,59 +20029,59 @@ msgid ""
 "images, and may have to install concrete5 without sample content."
 msgstr ""
 
-#: concrete/views/frontend/install.php:876
+#: concrete/views/frontend/install.php:893
 #, php-format
 msgid "Memory limit %s."
 msgstr ""
 
-#: concrete/views/frontend/install.php:895
+#: concrete/views/frontend/install.php:912
 msgid "Optional Items"
 msgstr ""
 
-#: concrete/views/frontend/install.php:918
+#: concrete/views/frontend/install.php:935
 msgid "Remote File Importing Available"
 msgstr ""
 
-#: concrete/views/frontend/install.php:925
+#: concrete/views/frontend/install.php:942
 msgid ""
 "Remote file importing through the file manager requires the iconv PHP "
 "extension."
 msgstr ""
 
-#: concrete/views/frontend/install.php:955
+#: concrete/views/frontend/install.php:972
 msgid "Zip Support"
 msgstr ""
 
-#: concrete/views/frontend/install.php:962
+#: concrete/views/frontend/install.php:979
 msgid ""
 "Downloading zipped files from the file manager, remote updating and "
 "marketplace integration requires the Zip extension."
 msgstr ""
 
-#: concrete/views/frontend/install.php:977
+#: concrete/views/frontend/install.php:994
 msgid ""
 "There are problems with your installation environment. Please correct them "
 "and click the button below to re-run the pre-installation tests."
 msgstr ""
 
-#: concrete/views/frontend/install.php:978
+#: concrete/views/frontend/install.php:995
 #, php-format
 msgid ""
 "Having trouble? Check the <a href=\"%s\">installation help forums</a>, or <a"
 " href=\"%s\">have us host a copy</a> for you."
 msgstr ""
 
-#: concrete/views/frontend/install.php:987
+#: concrete/views/frontend/install.php:1004
 msgid "Continue to Installation"
 msgstr ""
 
-#: concrete/views/frontend/install.php:994
+#: concrete/views/frontend/install.php:1011
 msgid "Run Tests Again"
 msgstr ""
 
-#: concrete/views/frontend/install.php:1013
+#: concrete/views/frontend/install.php:1030
 #: concrete/blocks/switch_language/controller.php:70
-#: concrete/single_pages/dashboard/system/multilingual/setup.php:147
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:136
 msgid "Choose Language"
 msgstr ""
 
@@ -20539,7 +20696,7 @@ msgstr ""
 #: concrete/blocks/core_gathering/add.php:7
 #: concrete/blocks/core_gathering/edit.php:8
 #: concrete/blocks/page_list/page_list_form.php:338
-#: concrete/single_pages/dashboard/pages/types/view.php:46
+#: concrete/single_pages/dashboard/pages/types/view.php:43
 msgid "Output"
 msgstr ""
 
@@ -21910,7 +22067,6 @@ msgid "Alternate Row Background Color"
 msgstr ""
 
 #: concrete/blocks/express_entry_list/view.php:26
-#: concrete/single_pages/dashboard/sitemap/full.php:16
 msgid "Advanced Search"
 msgstr "Розширений пошук"
 
@@ -21974,7 +22130,7 @@ msgstr ""
 msgid "%s, %s"
 msgstr ""
 
-#: concrete/blocks/search/controller.php:92
+#: concrete/blocks/search/controller.php:93
 msgid "Add a search box to your site."
 msgstr "Додати блок пошуку на вашому сайті."
 
@@ -22637,15 +22793,15 @@ msgstr ""
 msgid "You must choose a valid field type."
 msgstr ""
 
-#: concrete/blocks/express_form/controller.php:550
+#: concrete/blocks/express_form/controller.php:548
 msgid "Input Field Types"
 msgstr ""
 
-#: concrete/blocks/express_form/controller.php:554
+#: concrete/blocks/express_form/controller.php:552
 msgid "Display Text"
 msgstr ""
 
-#: concrete/blocks/express_form/controller.php:557
+#: concrete/blocks/express_form/controller.php:555
 msgid "Other Fields"
 msgstr ""
 
@@ -22817,11 +22973,11 @@ msgstr ""
 msgid "Rich Text - Default Setting"
 msgstr ""
 
-#: concrete/attributes/address/controller.php:178
+#: concrete/attributes/address/controller.php:184
 msgid "You must specify at least one country."
 msgstr "Ви повинні вказати хоча б одну країну."
 
-#: concrete/attributes/address/controller.php:185
+#: concrete/attributes/address/controller.php:191
 msgid "The default country must be in the list of custom countries."
 msgstr "Країна за замовчуванням повинна бути в списку країн."
 
@@ -22847,12 +23003,8 @@ msgstr ""
 
 #: concrete/attributes/address/form.php:55
 #: concrete/attributes/address/type_form.php:3
-#: concrete/single_pages/dashboard/system/multilingual/setup.php:151
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:140
 msgid "Choose Country"
-msgstr ""
-
-#: concrete/attributes/address/form.php:59
-msgid "Country"
 msgstr ""
 
 #: concrete/attributes/address/form.php:64
@@ -22957,7 +23109,7 @@ msgstr ""
 msgid "Values"
 msgstr ""
 
-#: concrete/attributes/topics/controller.php:309
+#: concrete/attributes/topics/controller.php:314
 msgid "You must specify a valid topic tree parent node ID and topic tree ID."
 msgstr ""
 
@@ -23062,15 +23214,15 @@ msgstr ""
 msgid "You do not have access to the dashboard sitemap."
 msgstr ""
 
-#: concrete/single_pages/dashboard/sitemap/full.php:29
+#: concrete/single_pages/dashboard/sitemap/full.php:15
 msgid "Page copy operations pending."
 msgstr ""
 
-#: concrete/single_pages/dashboard/sitemap/full.php:30
+#: concrete/single_pages/dashboard/sitemap/full.php:16
 msgid "Resume Copy"
 msgstr ""
 
-#: concrete/single_pages/dashboard/sitemap/full.php:44
+#: concrete/single_pages/dashboard/sitemap/full.php:30
 msgid "Include System Pages in Sitemap"
 msgstr ""
 
@@ -23083,7 +23235,7 @@ msgstr ""
 msgid "You have not created any forms for this data type."
 msgstr ""
 
-#: concrete/single_pages/dashboard/express/entries/entries.php:28
+#: concrete/single_pages/dashboard/express/entries/entries.php:32
 msgid "None created yet."
 msgstr ""
 
@@ -24677,72 +24829,62 @@ msgstr[1] ""
 msgstr[2] ""
 
 #: concrete/single_pages/dashboard/system/multilingual/copy.php:11
-#: concrete/single_pages/dashboard/system/multilingual/copy.php:71
+#: concrete/single_pages/dashboard/system/multilingual/copy.php:66
 msgid "Copy Locale Tree"
 msgstr ""
 
 #. %1$s is a page name, %2$s is a language name, %3$s is a locale identifier
 #. (eg en_US)
-#: concrete/single_pages/dashboard/system/multilingual/copy.php:21
-#: concrete/single_pages/dashboard/system/multilingual/setup.php:193
+#: concrete/single_pages/dashboard/system/multilingual/copy.php:17
 #, php-format
 msgctxt "PageWithLocale"
-msgid "%1$s (%2$s, %3$s)"
+msgid "%1$s (%2$s)"
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/multilingual/copy.php:31
+#: concrete/single_pages/dashboard/system/multilingual/copy.php:26
 msgid ""
 "Copy all pages from a locale to another section. This will only copy pages "
 "that have not been associated. It will not replace or remove any pages from "
 "the destination section."
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/multilingual/copy.php:33
+#: concrete/single_pages/dashboard/system/multilingual/copy.php:28
 msgid "Copy From"
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/multilingual/copy.php:38
+#: concrete/single_pages/dashboard/system/multilingual/copy.php:33
 msgctxt "Destination"
 msgid "To"
 msgstr "Одержувач"
 
-#: concrete/single_pages/dashboard/system/multilingual/copy.php:43
+#: concrete/single_pages/dashboard/system/multilingual/copy.php:38
 msgid "Copy Tree"
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/multilingual/copy.php:48
-#: concrete/single_pages/dashboard/system/multilingual/copy.php:120
-msgid "You must have more than one multilingual section to use this tool."
+#: concrete/single_pages/dashboard/system/multilingual/copy.php:43
+msgid "You must have more than one locale to use this tool."
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/multilingual/copy.php:52
-#: concrete/single_pages/dashboard/system/multilingual/copy.php:124
-#: concrete/single_pages/dashboard/system/multilingual/copy.php:168
-#: concrete/single_pages/dashboard/system/multilingual/setup.php:137
+#: concrete/single_pages/dashboard/system/multilingual/copy.php:47
+#: concrete/single_pages/dashboard/system/multilingual/copy.php:114
+#: concrete/single_pages/dashboard/system/multilingual/copy.php:157
 #: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:219
 msgid "You have not created any multilingual content sections yet."
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/multilingual/copy.php:76
+#: concrete/single_pages/dashboard/system/multilingual/copy.php:71
 msgid "You must choose two separate multilingual sections to copy from/to"
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/multilingual/copy.php:87
+#: concrete/single_pages/dashboard/system/multilingual/copy.php:82
 msgid "Only the super user may copy locale trees."
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/multilingual/copy.php:91
-msgid ""
-"Since one of your multilingual sections is the home page, you may not "
-"duplicate your site tree using this tool. You must manually assign pages "
-"using the page report."
-msgstr ""
-
-#: concrete/single_pages/dashboard/system/multilingual/copy.php:100
+#: concrete/single_pages/dashboard/system/multilingual/copy.php:89
 msgid "Rescan Multilingual Tree"
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/multilingual/copy.php:107
+#: concrete/single_pages/dashboard/system/multilingual/copy.php:96
 msgid ""
 "Scans all blocks within the selected section. Any links to pages within "
 "another multilingual section will be updated to link to the pages within the"
@@ -24751,23 +24893,21 @@ msgid ""
 "the selected tree."
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/multilingual/copy.php:109
-#: concrete/single_pages/dashboard/system/multilingual/copy.php:115
+#: concrete/single_pages/dashboard/system/multilingual/copy.php:98
+#: concrete/single_pages/dashboard/system/multilingual/copy.php:105
 msgid "Rescan Locale"
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/multilingual/copy.php:140
+#: concrete/single_pages/dashboard/system/multilingual/copy.php:110
+msgid "You must have more than one multilingual section to use this tool."
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/multilingual/copy.php:133
 msgid "Rescan Links"
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/multilingual/copy.php:155
+#: concrete/single_pages/dashboard/system/multilingual/copy.php:148
 msgid "Only the super user may rescan the links inside a multilingual tree."
-msgstr ""
-
-#: concrete/single_pages/dashboard/system/multilingual/copy.php:159
-msgid ""
-"Since one of your multilingual sections is the home page, you may not rescan"
-" the links in your site tree using this tool."
 msgstr ""
 
 #: concrete/single_pages/dashboard/system/multilingual/page_report.php:26
@@ -24825,81 +24965,72 @@ msgstr ""
 msgid "You have not defined any multilingual sections for your site yet."
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/multilingual/setup.php:40
-#: concrete/single_pages/dashboard/system/multilingual/setup.php:152
-#: concrete/single_pages/dashboard/system/multilingual/setup.php:231
-msgid "*** Undetermined country"
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:5
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:166
+msgid "Add Locale"
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/multilingual/setup.php:49
-msgid "Suggested countries"
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:8
+msgid "Locales"
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/multilingual/setup.php:51
-msgid "Other countries"
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:13
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:150
+msgid "Home Page"
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/multilingual/setup.php:105
-msgid "Content Sections"
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:33
+msgid "None Created."
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/multilingual/setup.php:114
-#: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:83
-msgid "Locale"
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:37
+msgid "Delete Locale"
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/multilingual/setup.php:141
-msgid "Add a Locale"
-msgstr ""
-
-#: concrete/single_pages/dashboard/system/multilingual/setup.php:143
-msgid "Choose a Parent Page"
-msgstr ""
-
-#: concrete/single_pages/dashboard/system/multilingual/setup.php:156
-msgid "Language Icon"
-msgstr ""
-
-#: concrete/single_pages/dashboard/system/multilingual/setup.php:159
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:55
 msgid ""
-"Your locale will be computed from your choice of language and country. Your "
-"language icon will be chosen based on the country."
+"Delete this multilingual section? This will remove the entire site tree and "
+"its content from your website."
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/multilingual/setup.php:163
-msgid "Add Content Section"
-msgstr ""
-
-#: concrete/single_pages/dashboard/system/multilingual/setup.php:190
-msgid "** None Set"
-msgstr ""
-
-#: concrete/single_pages/dashboard/system/multilingual/setup.php:197
-msgid "Multilingual Settings"
-msgstr ""
-
-#: concrete/single_pages/dashboard/system/multilingual/setup.php:201
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:83
 msgid "Default Locale"
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/multilingual/setup.php:211
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:91
 msgid "Attempt to use visitor's locale based on their browser information."
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/multilingual/setup.php:217
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:97
 msgid "Redirect home page to default locale."
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/multilingual/setup.php:223
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:103
 msgid "Site interface source locale"
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/multilingual/setup.php:227
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:108
 msgid "*** Unknown or mixed language"
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/multilingual/setup.php:243
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:113
+msgid "*** Undetermined country"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:125
 msgid "Save Settings"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:152
+msgid "Template"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:218
+msgid "Suggested countries"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/multilingual/setup.php:220
+msgid "Other countries"
 msgstr ""
 
 #: concrete/single_pages/dashboard/system/multilingual/translate_interface.php:50
@@ -26134,27 +26265,27 @@ msgid ""
 "for pages created of a certain type."
 msgstr ""
 
-#: concrete/single_pages/dashboard/pages/types/view.php:45
+#: concrete/single_pages/dashboard/pages/types/view.php:42
 msgid "Edit Form"
 msgstr ""
 
-#: concrete/single_pages/dashboard/pages/types/view.php:71
+#: concrete/single_pages/dashboard/pages/types/view.php:68
 msgid "Site Type"
 msgstr ""
 
-#: concrete/single_pages/dashboard/pages/types/view.php:93
+#: concrete/single_pages/dashboard/pages/types/view.php:90
 msgid "Delete this page type? This cannot be undone."
 msgstr ""
 
-#: concrete/single_pages/dashboard/pages/types/view.php:109
+#: concrete/single_pages/dashboard/pages/types/view.php:106
 msgid "You have not created any page types yet."
 msgstr ""
 
-#: concrete/single_pages/dashboard/pages/types/view.php:134
+#: concrete/single_pages/dashboard/pages/types/view.php:131
 msgid "Delete Page Type"
 msgstr ""
 
-#: concrete/single_pages/dashboard/pages/types/view.php:160
+#: concrete/single_pages/dashboard/pages/types/view.php:157
 msgid "Copy Page Type"
 msgstr ""
 
