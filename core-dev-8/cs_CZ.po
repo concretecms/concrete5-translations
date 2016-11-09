@@ -6,9 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-11-05T06:00:30+01:00\n"
-"PO-Revision-Date: 2016-11-05 13:30+0000\n"
-"Last-Translator: Petr Toman <petr.toman@pinknet.cz>\n"
+"POT-Creation-Date: 2016-11-08T06:00:23+01:00\n"
+"PO-Revision-Date: 2016-11-08 09:38+0000\n"
+"Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Czech (Czech Republic) (http://www.transifex.com/concrete5/concrete5/language/cs_CZ/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -5339,7 +5339,7 @@ msgstr "Nebyli přidání žádní uživatelé či skupiny."
 #: concrete/single_pages/dashboard/system/seo/statistics.php:15
 #: concrete/single_pages/dashboard/system/seo/urls.php:63
 #: concrete/single_pages/dashboard/system/environment/debug.php:61
-#: concrete/single_pages/dashboard/system/environment/entities.php:34
+#: concrete/single_pages/dashboard/system/environment/entities.php:70
 #: concrete/single_pages/dashboard/system/environment/logging.php:41
 #: concrete/single_pages/dashboard/system/environment/proxy.php:34
 #: concrete/single_pages/dashboard/system/express/entities/forms/details.php:22
@@ -5372,14 +5372,14 @@ msgstr "Nebyli přidání žádní uživatelé či skupiny."
 #: concrete/single_pages/dashboard/system/registration/open.php:92
 #: concrete/single_pages/dashboard/system/registration/postlogin.php:41
 #: concrete/single_pages/dashboard/system/registration/profiles.php:42
-#: concrete/single_pages/dashboard/system/basics/multilingual/view.php:34
+#: concrete/single_pages/dashboard/system/basics/multilingual/view.php:37
 #: concrete/single_pages/dashboard/system/basics/accessibility.php:26
 #: concrete/single_pages/dashboard/system/basics/editor.php:31
 #: concrete/single_pages/dashboard/system/basics/icons.php:55
 #: concrete/single_pages/dashboard/system/basics/images.php:45
 #: concrete/single_pages/dashboard/system/basics/name.php:35
 #: concrete/single_pages/dashboard/system/basics/social.php:18
-#: concrete/single_pages/dashboard/system/basics/timezone.php:57
+#: concrete/single_pages/dashboard/system/basics/timezone.php:58
 #: concrete/single_pages/dashboard/system/optimization/cache.php:212
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:216
 #: concrete/single_pages/dashboard/pages/types/composer.php:202
@@ -7316,15 +7316,15 @@ msgstr "Zadané zabezpečené kanonické URL musí začínat \"https://\"."
 msgid "Debug configuration saved."
 msgstr "Konfigurace pro ladění byla uložena."
 
-#: concrete/controllers/single_page/dashboard/system/environment/entities.php:68
-msgid "Doctrine development settings updated."
-msgstr "Vývojářská nastavení Doctrine byla aktualizována."
-
-#: concrete/controllers/single_page/dashboard/system/environment/entities.php:74
+#: concrete/controllers/single_page/dashboard/system/environment/entities.php:49
 msgid ""
 "Doctrine cache cleared, proxy classes regenerated, entity database table "
 "schema updated."
 msgstr "Doctrine Cache byla vymazána, proxy třídy přegenerovány, schéma entit dle databázových tabulek bylo aktualizováno."
+
+#: concrete/controllers/single_page/dashboard/system/environment/entities.php:53
+msgid "Doctrine development settings updated."
+msgstr "Vývojářská nastavení Doctrine byla aktualizována."
 
 #: concrete/controllers/single_page/dashboard/system/environment/logging.php:30
 msgid "Logging configuration saved."
@@ -12800,32 +12800,32 @@ msgstr "Detaily náhledů Správce souborů"
 msgid "Unable to install database: %s"
 msgstr "Nelze nainstalovat databázi:%s"
 
-#: concrete/src/Package/StartingPointPackage.php:390
+#: concrete/src/Package/StartingPointPackage.php:387
 msgctxt "GroupName"
 msgid "Guest"
 msgstr "Host"
 
-#: concrete/src/Package/StartingPointPackage.php:391
+#: concrete/src/Package/StartingPointPackage.php:388
 msgctxt "GroupDescription"
 msgid "The guest group represents unregistered visitors to your site."
 msgstr "Skupina hosté představuje nepřihlášené návštěvníky vašeho webu."
 
-#: concrete/src/Package/StartingPointPackage.php:396
+#: concrete/src/Package/StartingPointPackage.php:393
 msgctxt "GroupName"
 msgid "Registered Users"
 msgstr "Registrovaní uživatelé"
 
-#: concrete/src/Package/StartingPointPackage.php:397
+#: concrete/src/Package/StartingPointPackage.php:394
 msgctxt "GroupDescription"
 msgid "The registered users group represents all user accounts."
 msgstr "Skupina registrovaných uživatelů představuje všechny uživatelské účty."
 
-#: concrete/src/Package/StartingPointPackage.php:401
+#: concrete/src/Package/StartingPointPackage.php:398
 msgctxt "GroupName"
 msgid "Administrators"
 msgstr "Administrátoři"
 
-#: concrete/src/Package/StartingPointPackage.php:418
+#: concrete/src/Package/StartingPointPackage.php:415
 msgid "Won a Badge"
 msgstr "Získal/a odznak"
 
@@ -13959,6 +13959,18 @@ msgstr "Zakázaná slova již byla inicializována."
 #: concrete/src/Site/Type/Factory.php:17
 msgid "Default Site Type"
 msgstr "Výchozí typ webu"
+
+#: concrete/src/Console/Command/CompareSchemaCommand.php:80
+#, php-format
+msgid "%s query found"
+msgid_plural "%s queries found"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: concrete/src/Console/Command/CompareSchemaCommand.php:87
+msgid "No differences found between schema and database."
+msgstr ""
 
 #: concrete/src/Console/Command/JobCommand.php:21
 msgid "Run a concrete5 job"
@@ -17958,7 +17970,7 @@ msgstr "Datum/čas zveřejnění"
 
 #: concrete/elements/permission/keys/edit_page_properties.php:59
 #: concrete/elements/permission/keys/edit_page_properties.php:121
-#: concrete/single_pages/dashboard/system/environment/entities.php:53
+#: concrete/single_pages/dashboard/system/environment/entities.php:45
 msgid "Paths"
 msgstr "Cesty"
 
@@ -24400,18 +24412,17 @@ msgid ""
 "site."
 msgstr "Vypnuto - proxy třídy je třeba vygenerovat ručně. Vhodné pro ostrý web kvůli rychlosti."
 
-#: concrete/single_pages/dashboard/system/environment/entities.php:46
+#: concrete/single_pages/dashboard/system/environment/entities.php:38
 msgid "Entities"
 msgstr "Entity"
 
-#: concrete/single_pages/dashboard/system/environment/entities.php:62
+#: concrete/single_pages/dashboard/system/environment/entities.php:54
 msgid "Driver"
 msgstr "driver"
 
-#: concrete/single_pages/dashboard/system/environment/entities.php:72
-msgctxt "Doctrine"
+#: concrete/single_pages/dashboard/system/environment/entities.php:69
 msgid "Refresh Entities"
-msgstr "Obnovit entity"
+msgstr ""
 
 #: concrete/single_pages/dashboard/system/environment/info.php:4
 msgid "Unable to load environment info"
@@ -25458,6 +25469,13 @@ msgstr "Nemáte nainstalovány žádné jazyky. Web Concrete5 poběží v angli�
 msgid "Offer choice of language on login."
 msgstr "Při přihlášení nabízet výběr jazyka."
 
+#: concrete/single_pages/dashboard/system/basics/multilingual/view.php:30
+#, php-format
+msgid ""
+"Additional languages can be downloaded from <a "
+"href=\"%s\">concrete5.org</a>."
+msgstr ""
+
 #: concrete/single_pages/dashboard/system/basics/accessibility.php:8
 msgid "Enable Toolbar Titles"
 msgstr "Povolit popisky v nástrojové liště."
@@ -25566,20 +25584,24 @@ msgstr "Smazat sociální odkaz"
 msgid "Service"
 msgstr "Služba"
 
-#: concrete/single_pages/dashboard/system/basics/timezone.php:13
+#: concrete/single_pages/dashboard/system/basics/timezone.php:14
+msgid "Local User Time"
+msgstr ""
+
+#: concrete/single_pages/dashboard/system/basics/timezone.php:23
 msgid ""
 "With this setting enabled, users may specify their own time zone in their "
 "user profile, and content timestamps will be adjusted accordingly. Without "
 "this setting enabled, content timestamps appear in server time."
 msgstr "Při povolení tohoto nastavení si mohou uživatelé v uživatelském profilu zadat vlastní časové pásmo a časové značky obsahu se příslušným způsobem přizpůsobí. V opačném případě bude u obsahu zobrazován čas ze serveru."
 
-#: concrete/single_pages/dashboard/system/basics/timezone.php:22
+#: concrete/single_pages/dashboard/system/basics/timezone.php:23
 msgid "Enable user defined time zones."
 msgstr "Povolit uživatelsky definovaná časová pásma."
 
-#: concrete/single_pages/dashboard/system/basics/timezone.php:29
-msgid "Server Timezone:"
-msgstr "Časové pásmo serveru:"
+#: concrete/single_pages/dashboard/system/basics/timezone.php:30
+msgid "Server Timezone"
+msgstr ""
 
 #: concrete/single_pages/dashboard/system/backup/backup.php:5
 #, php-format

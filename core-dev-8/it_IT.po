@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-11-05T06:00:30+01:00\n"
-"PO-Revision-Date: 2016-11-05 13:30+0000\n"
+"POT-Creation-Date: 2016-11-08T06:00:23+01:00\n"
+"PO-Revision-Date: 2016-11-08 12:18+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Italian (Italy) (http://www.transifex.com/concrete5/concrete5/language/it_IT/)\n"
 "MIME-Version: 1.0\n"
@@ -5334,7 +5334,7 @@ msgstr "Non è stato aggiunto alcun utente o gruppo."
 #: concrete/single_pages/dashboard/system/seo/statistics.php:15
 #: concrete/single_pages/dashboard/system/seo/urls.php:63
 #: concrete/single_pages/dashboard/system/environment/debug.php:61
-#: concrete/single_pages/dashboard/system/environment/entities.php:34
+#: concrete/single_pages/dashboard/system/environment/entities.php:70
 #: concrete/single_pages/dashboard/system/environment/logging.php:41
 #: concrete/single_pages/dashboard/system/environment/proxy.php:34
 #: concrete/single_pages/dashboard/system/express/entities/forms/details.php:22
@@ -5367,14 +5367,14 @@ msgstr "Non è stato aggiunto alcun utente o gruppo."
 #: concrete/single_pages/dashboard/system/registration/open.php:92
 #: concrete/single_pages/dashboard/system/registration/postlogin.php:41
 #: concrete/single_pages/dashboard/system/registration/profiles.php:42
-#: concrete/single_pages/dashboard/system/basics/multilingual/view.php:34
+#: concrete/single_pages/dashboard/system/basics/multilingual/view.php:37
 #: concrete/single_pages/dashboard/system/basics/accessibility.php:26
 #: concrete/single_pages/dashboard/system/basics/editor.php:31
 #: concrete/single_pages/dashboard/system/basics/icons.php:55
 #: concrete/single_pages/dashboard/system/basics/images.php:45
 #: concrete/single_pages/dashboard/system/basics/name.php:35
 #: concrete/single_pages/dashboard/system/basics/social.php:18
-#: concrete/single_pages/dashboard/system/basics/timezone.php:57
+#: concrete/single_pages/dashboard/system/basics/timezone.php:58
 #: concrete/single_pages/dashboard/system/optimization/cache.php:212
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:216
 #: concrete/single_pages/dashboard/pages/types/composer.php:202
@@ -7307,15 +7307,15 @@ msgstr "L’URL canonico SSL specificato deve iniziare con “https://”."
 msgid "Debug configuration saved."
 msgstr "Informazioni di debug salvate."
 
-#: concrete/controllers/single_page/dashboard/system/environment/entities.php:68
-msgid "Doctrine development settings updated."
-msgstr "Le impostazioni di sviluppo di Doctrine sono state aggiornate."
-
-#: concrete/controllers/single_page/dashboard/system/environment/entities.php:74
+#: concrete/controllers/single_page/dashboard/system/environment/entities.php:49
 msgid ""
 "Doctrine cache cleared, proxy classes regenerated, entity database table "
 "schema updated."
 msgstr "Cache di Doctrine svuotata, classi proxy rigenerate, schema del database delle tabelle delle entità aggiornato."
+
+#: concrete/controllers/single_page/dashboard/system/environment/entities.php:53
+msgid "Doctrine development settings updated."
+msgstr "Le impostazioni di sviluppo di Doctrine sono state aggiornate."
 
 #: concrete/controllers/single_page/dashboard/system/environment/logging.php:30
 msgid "Logging configuration saved."
@@ -12784,32 +12784,32 @@ msgstr "Miniature dei dettagli del gestore dei file"
 msgid "Unable to install database: %s"
 msgstr "Impossibile installare il database: %s"
 
-#: concrete/src/Package/StartingPointPackage.php:390
+#: concrete/src/Package/StartingPointPackage.php:387
 msgctxt "GroupName"
 msgid "Guest"
 msgstr "Ospite"
 
-#: concrete/src/Package/StartingPointPackage.php:391
+#: concrete/src/Package/StartingPointPackage.php:388
 msgctxt "GroupDescription"
 msgid "The guest group represents unregistered visitors to your site."
 msgstr "Il gruppo ospiti rappresenta gli utenti non registrati del sito."
 
-#: concrete/src/Package/StartingPointPackage.php:396
+#: concrete/src/Package/StartingPointPackage.php:393
 msgctxt "GroupName"
 msgid "Registered Users"
 msgstr "Utenti registrati"
 
-#: concrete/src/Package/StartingPointPackage.php:397
+#: concrete/src/Package/StartingPointPackage.php:394
 msgctxt "GroupDescription"
 msgid "The registered users group represents all user accounts."
 msgstr "Il gruppo utenti registrati rappresenta tutti gli account degli utenti."
 
-#: concrete/src/Package/StartingPointPackage.php:401
+#: concrete/src/Package/StartingPointPackage.php:398
 msgctxt "GroupName"
 msgid "Administrators"
 msgstr "Amministratori"
 
-#: concrete/src/Package/StartingPointPackage.php:418
+#: concrete/src/Package/StartingPointPackage.php:415
 msgid "Won a Badge"
 msgstr "Vinta una medaglia"
 
@@ -13943,6 +13943,17 @@ msgstr "Parole vietate già inizializzate."
 #: concrete/src/Site/Type/Factory.php:17
 msgid "Default Site Type"
 msgstr "Tipo di sito predefinito"
+
+#: concrete/src/Console/Command/CompareSchemaCommand.php:80
+#, php-format
+msgid "%s query found"
+msgid_plural "%s queries found"
+msgstr[0] "%s query trovata"
+msgstr[1] "%s query trovate"
+
+#: concrete/src/Console/Command/CompareSchemaCommand.php:87
+msgid "No differences found between schema and database."
+msgstr "Non è stata rilevata alcuna differenza tra lo schema e il database."
 
 #: concrete/src/Console/Command/JobCommand.php:21
 msgid "Run a concrete5 job"
@@ -17932,7 +17943,7 @@ msgstr "Data/ora pubblicazione"
 
 #: concrete/elements/permission/keys/edit_page_properties.php:59
 #: concrete/elements/permission/keys/edit_page_properties.php:121
-#: concrete/single_pages/dashboard/system/environment/entities.php:53
+#: concrete/single_pages/dashboard/system/environment/entities.php:45
 msgid "Paths"
 msgstr "Percorsi"
 
@@ -24360,16 +24371,15 @@ msgid ""
 "site."
 msgstr "Disattiva - Le classi proxy devono essere generate manualmente. In tal modo si velocizza la velocità del sito."
 
-#: concrete/single_pages/dashboard/system/environment/entities.php:46
+#: concrete/single_pages/dashboard/system/environment/entities.php:38
 msgid "Entities"
 msgstr "Entità"
 
-#: concrete/single_pages/dashboard/system/environment/entities.php:62
+#: concrete/single_pages/dashboard/system/environment/entities.php:54
 msgid "Driver"
 msgstr "Driver"
 
-#: concrete/single_pages/dashboard/system/environment/entities.php:72
-msgctxt "Doctrine"
+#: concrete/single_pages/dashboard/system/environment/entities.php:69
 msgid "Refresh Entities"
 msgstr "Aggiorna entità"
 
@@ -25417,6 +25427,13 @@ msgstr "Non è installata alcuna lingua aggiuntiva per l’interfaccia: concrete
 msgid "Offer choice of language on login."
 msgstr "Permetti di selezionare la lingua all’accesso."
 
+#: concrete/single_pages/dashboard/system/basics/multilingual/view.php:30
+#, php-format
+msgid ""
+"Additional languages can be downloaded from <a "
+"href=\"%s\">concrete5.org</a>."
+msgstr "Ulteriori lingue possono essere scaricate dal sito <a href=\"%s\">concrete5.org</a>."
+
 #: concrete/single_pages/dashboard/system/basics/accessibility.php:8
 msgid "Enable Toolbar Titles"
 msgstr "Abilita titoli nella barra degli strumenti"
@@ -25525,20 +25542,24 @@ msgstr "Elimina collegamento social"
 msgid "Service"
 msgstr "Servizio"
 
-#: concrete/single_pages/dashboard/system/basics/timezone.php:13
+#: concrete/single_pages/dashboard/system/basics/timezone.php:14
+msgid "Local User Time"
+msgstr "Ora locale dell’utente"
+
+#: concrete/single_pages/dashboard/system/basics/timezone.php:23
 msgid ""
 "With this setting enabled, users may specify their own time zone in their "
 "user profile, and content timestamps will be adjusted accordingly. Without "
 "this setting enabled, content timestamps appear in server time."
 msgstr "Se questa opzione è attiva gli utenti possono specificare il fuso orario associato al proprio profilo: gli orari dei contenuti verranno adeguati di conseguenza. Se questa opzione non è attiva, verranno mostrati gli orari in base al fuso orario del server."
 
-#: concrete/single_pages/dashboard/system/basics/timezone.php:22
+#: concrete/single_pages/dashboard/system/basics/timezone.php:23
 msgid "Enable user defined time zones."
 msgstr "Abilita fusi orari definiti dall’utente."
 
-#: concrete/single_pages/dashboard/system/basics/timezone.php:29
-msgid "Server Timezone:"
-msgstr "Fuso orario del server:"
+#: concrete/single_pages/dashboard/system/basics/timezone.php:30
+msgid "Server Timezone"
+msgstr "Fuso orario del server"
 
 #: concrete/single_pages/dashboard/system/backup/backup.php:5
 #, php-format
