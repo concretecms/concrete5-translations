@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-11-08T06:00:23+01:00\n"
-"PO-Revision-Date: 2016-11-08 09:38+0000\n"
+"POT-Creation-Date: 2016-11-13T06:00:30+01:00\n"
+"PO-Revision-Date: 2016-11-13 09:59+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Danish (Denmark) (http://www.transifex.com/concrete5/concrete5/language/da_DK/)\n"
 "MIME-Version: 1.0\n"
@@ -1264,6 +1264,7 @@ msgid "Advanced Permissions"
 msgstr "Avancerede Rettigheder"
 
 #: concrete/config/install/base/single_pages/dashboard.xml:787
+#: concrete/src/Package/ItemCategory/Workflow.php:14
 msgid "Workflows"
 msgstr "Workflows"
 
@@ -3087,7 +3088,7 @@ msgid "SecurImage (Default)"
 msgstr "SecurImage (Standard)"
 
 #: concrete/config/install/base/permissions.xml:300
-#: concrete/src/Workflow/BasicWorkflow.php:152
+#: concrete/src/Workflow/BasicWorkflow.php:172
 msgid "Basic Workflow"
 msgstr "Grundlæggende Workflow"
 
@@ -4293,7 +4294,7 @@ msgstr "Nøgle udløbet. Besøg siden glemt kodeord for at få en ny nøgle."
 #: concrete/controllers/single_page/dashboard/users/search.php:362
 #: concrete/controllers/single_page/account/edit_profile.php:127
 #: concrete/controllers/single_page/register.php:100
-#: concrete/controllers/install.php:428
+#: concrete/controllers/install.php:431
 msgid "The two passwords provided do not match."
 msgstr "De to kodeord var ikke ens."
 
@@ -5335,7 +5336,7 @@ msgstr "Ingen brugere eller grupper tilføjet."
 #: concrete/single_pages/dashboard/system/seo/statistics.php:15
 #: concrete/single_pages/dashboard/system/seo/urls.php:63
 #: concrete/single_pages/dashboard/system/environment/debug.php:61
-#: concrete/single_pages/dashboard/system/environment/entities.php:70
+#: concrete/single_pages/dashboard/system/environment/entities.php:82
 #: concrete/single_pages/dashboard/system/environment/logging.php:41
 #: concrete/single_pages/dashboard/system/environment/proxy.php:34
 #: concrete/single_pages/dashboard/system/express/entities/forms/details.php:22
@@ -5370,7 +5371,7 @@ msgstr "Ingen brugere eller grupper tilføjet."
 #: concrete/single_pages/dashboard/system/registration/profiles.php:42
 #: concrete/single_pages/dashboard/system/basics/multilingual/view.php:37
 #: concrete/single_pages/dashboard/system/basics/accessibility.php:26
-#: concrete/single_pages/dashboard/system/basics/editor.php:31
+#: concrete/single_pages/dashboard/system/basics/editor.php:35
 #: concrete/single_pages/dashboard/system/basics/icons.php:55
 #: concrete/single_pages/dashboard/system/basics/images.php:45
 #: concrete/single_pages/dashboard/system/basics/name.php:35
@@ -5757,7 +5758,7 @@ msgstr "Beskrivelse"
 #: concrete/blocks/form/form_setup_html.php:171
 #: concrete/blocks/form/form_setup_html.php:258
 #: concrete/blocks/form/view.php:91 concrete/blocks/express_form/form.php:166
-#: concrete/blocks/express_form/form.php:217
+#: concrete/blocks/express_form/form.php:222
 #: concrete/blocks/express_form/view.php:26
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:119
 #: concrete/single_pages/dashboard/system/express/entities/forms/edit_control.php:20
@@ -7456,14 +7457,14 @@ msgid "Add Data Object"
 msgstr "Tilføje Dataobjekt"
 
 #: concrete/controllers/single_page/dashboard/system/express/entities.php:28
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:212
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:202
 msgid ""
 "You must create a handle for your data object. It may contain only lowercase"
 " letters and underscores."
 msgstr "Du skal oprette et handle for dit data objekt. Det må kun indeholde små bogstaver og understregninger."
 
 #: concrete/controllers/single_page/dashboard/system/express/entities.php:32
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:216
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:206
 msgid "You must give your data object a name."
 msgstr "Du skal give dit dataobjekt et navn."
 
@@ -7481,44 +7482,44 @@ msgstr "** Vælg Element"
 msgid "Invalid express entity."
 msgstr "Ugyldig ekspres element."
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:132
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:122
 msgid "Entity deleted successfully."
 msgstr "Elementet slettet med succes"
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:144
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:134
 msgid "Object Details"
 msgstr "Objekt Detaljer"
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:164
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:154
 msgid "** Select Form"
 msgstr "** Vælg Formular"
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:168
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:158
 msgid "** No Owner"
 msgstr "** Ingen Ejer"
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:189
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:179
 #: concrete/elements/dashboard/express/detail_navigation.php:17
 msgid "Edit Entity"
 msgstr "Redigere Element."
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:220
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:210
 msgid "You must choose where the results for your entity are going live."
 msgstr "Du skal vælge, hvor resultaterne for dit lement går live."
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:224
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:214
 msgid "An entity cannot own itself."
 msgstr "En enhed kan ikke ejer sig selv."
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:237
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:227
 msgid "You must specify a valid default view form."
 msgstr "Du skal angive en gyldig standard visningsformular."
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:240
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:230
 msgid "You must specify a valid default edit form."
 msgstr "Du skal angive en gyldig standard redigeringsformular."
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:273
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:263
 msgid "Object updated successfully."
 msgstr "Objektet opdateret med succes."
 
@@ -7958,7 +7959,7 @@ msgstr "Offentlige profiler er blevet deaktiveret. Offentlig profil og bibliotek
 msgid "Successfully saved accessibility settings."
 msgstr "Gemte indstillinger for tilgængelighed med succes."
 
-#: concrete/controllers/single_page/dashboard/system/basics/editor.php:22
+#: concrete/controllers/single_page/dashboard/system/basics/editor.php:24
 msgid "Options saved successfully."
 msgstr "Indstillinger gemt."
 
@@ -10283,12 +10284,12 @@ msgid_plural "%d items"
 msgstr[0] "%d emne"
 msgstr[1] "%d emner"
 
-#: concrete/controllers/install.php:91 concrete/controllers/install.php:377
+#: concrete/controllers/install.php:93 concrete/controllers/install.php:380
 #, php-format
 msgid "Invalid starting point: %s"
 msgstr "Ugyldig udgangspunkt: %s"
 
-#: concrete/controllers/install.php:101
+#: concrete/controllers/install.php:103
 #, php-format
 msgid ""
 "concrete5 has been installed. You have been logged in as <b>%s</b> with the "
@@ -10296,11 +10297,11 @@ msgid ""
 "the users area of the dashboard."
 msgstr "concrete5 er blevet installeret. Du er blevet logget ind som <b>%s</b> med den adgangskoden, du har valgt. If you wish to change this password, you may do so from the users area of the dashboard."
 
-#: concrete/controllers/install.php:127
+#: concrete/controllers/install.php:129
 msgid "Unable to connect to database."
 msgstr "Kan ikke forbinde til databasen."
 
-#: concrete/controllers/install.php:133
+#: concrete/controllers/install.php:135
 #: concrete/src/Package/StartingPointPackage.php:320
 #, php-format
 msgid ""
@@ -10308,93 +10309,93 @@ msgid ""
 " an empty database."
 msgstr "Der er allerede %s tabeller i denne database. concrete5 skal installeres i en tom database."
 
-#: concrete/controllers/install.php:149
+#: concrete/controllers/install.php:151
 msgid ""
 "Your MySQL database does not support InnoDB database tables. These are "
 "required."
 msgstr "Din MySQL-database understøtter ikke InnoDB databasetabeller. Disse er påkrævet."
 
-#: concrete/controllers/install.php:163
+#: concrete/controllers/install.php:165
 msgid "The PDO extension is not loaded."
 msgstr "PDO udvidelse er ikke indlæst."
 
-#: concrete/controllers/install.php:177
+#: concrete/controllers/install.php:179
 #, php-format
 msgid "Between %1$s and %2$s Characters"
 msgstr "Mellem %1$s og %2$s Karakterer"
 
-#: concrete/controllers/install.php:180
+#: concrete/controllers/install.php:182
 #, php-format
 msgid "at least %s characters"
 msgstr "minimum %s karakterer"
 
-#: concrete/controllers/install.php:184
+#: concrete/controllers/install.php:186
 #, php-format
 msgid "up to %s characters"
 msgstr "op til %s karakterer"
 
-#: concrete/controllers/install.php:259
+#: concrete/controllers/install.php:262
 msgid "concrete5 is already installed."
 msgstr "concrete5 er allerede installeret."
 
-#: concrete/controllers/install.php:265
-#: concrete/views/frontend/install.php:111
-#: concrete/views/frontend/install.php:236
+#: concrete/controllers/install.php:268
+#: concrete/views/frontend/install.php:113
+#: concrete/views/frontend/install.php:238
 #: concrete/views/frontend/install.php:426
 #: concrete/views/frontend/install.php:445
 #: concrete/views/frontend/install.php:1029
 msgid "Install concrete5"
 msgstr "Installer Concrete5"
 
-#: concrete/controllers/install.php:320
+#: concrete/controllers/install.php:323
 msgid ""
 "Your configuration directory config/ does not appear to be writable by the "
 "web server."
 msgstr "Der er ikke skriveadgang til mappen config/ på webserveren. "
 
-#: concrete/controllers/install.php:324
+#: concrete/controllers/install.php:327
 msgid ""
 "Your files directory files/ does not appear to be writable by the web "
 "server."
 msgstr "Der er ikke skriveadgang til mappen files/ på webserveren"
 
-#: concrete/controllers/install.php:328
+#: concrete/controllers/install.php:331
 msgid ""
 "Your packages directory packages/ does not appear to be writable by the web "
 "server."
 msgstr "Din add-on pakke mappe packages/ på webserveren er ikke skrivbar."
 
-#: concrete/controllers/install.php:383
+#: concrete/controllers/install.php:386
 #, php-format
 msgctxt "InstallError"
 msgid "%s.<br><br>Trace:<br>%s"
 msgstr "%s.<br><br>Trace:<br>%s"
 
-#: concrete/controllers/install.php:416
+#: concrete/controllers/install.php:419
 msgid "Please specify your site's name"
 msgstr "Skriv hjemmesidens navn"
 
-#: concrete/controllers/install.php:417
+#: concrete/controllers/install.php:420
 msgid "Please specify a valid email address"
 msgstr "Skriv en gyldig email adresse"
 
-#: concrete/controllers/install.php:418
+#: concrete/controllers/install.php:421
 msgid "You must specify a valid database name"
 msgstr "Du skal angive et gyldigt database navn"
 
-#: concrete/controllers/install.php:419
+#: concrete/controllers/install.php:422
 msgid "You must specify a valid database server"
 msgstr "Du skal angive en gyldig database server"
 
-#: concrete/controllers/install.php:494
+#: concrete/controllers/install.php:497
 msgid "Unable to open config/app.php for writing."
 msgstr "Kan ikke åbne config/app.php for skrivning."
 
-#: concrete/controllers/install.php:515
+#: concrete/controllers/install.php:518
 msgid "Unable to open config/site_user.php for writing."
 msgstr "Der kan ikke skrives til config/site.php."
 
-#: concrete/controllers/install.php:540
+#: concrete/controllers/install.php:543
 msgid "You must select a valid sample content starting point."
 msgstr "Du skal vælge et gyldigt start punkt for demo indhold."
 
@@ -10480,7 +10481,7 @@ msgstr "Rediger side"
 #: concrete/elements/attribute/key/form.php:118
 #: concrete/elements/attribute/site_standard_list_header.php:6
 #: concrete/elements/attribute/type_form_required.php:151
-#: concrete/views/frontend/install.php:181
+#: concrete/views/frontend/install.php:183
 #: concrete/single_pages/dashboard/express/entries/create.php:17
 #: concrete/single_pages/dashboard/express/entries/update.php:17
 #: concrete/single_pages/dashboard/express/entries/view_entry.php:4
@@ -10765,7 +10766,7 @@ msgid "Replied"
 msgstr "Svaret"
 
 #: concrete/src/User/PrivateMessage/PrivateMessage.php:188
-#: concrete/src/Page/Page.php:486
+#: concrete/src/Page/Page.php:488
 msgid "Unknown User"
 msgstr "Ukendt Bruger"
 
@@ -11816,11 +11817,11 @@ msgstr "Kategorier"
 msgid "All Groups"
 msgstr "Alle Grupper"
 
-#: concrete/src/Tree/Node/Node.php:436
+#: concrete/src/Tree/Node/Node.php:421
 msgid "It's not possible to move a node under itself"
 msgstr "Det er ikke muligt at flytte en node under sig selv"
 
-#: concrete/src/Tree/Node/Node.php:440
+#: concrete/src/Tree/Node/Node.php:425
 msgid "It's not possible to move a node under one of its descending nodes"
 msgstr "Det er ikke muligt at flytte en node under en af sine faldende noder"
 
@@ -12319,7 +12320,7 @@ msgstr "Søg Alle Undersider?"
 #: concrete/blocks/page_list/page_list_form.php:449
 #: concrete/blocks/page_list/page_list_form.php:473
 #: concrete/blocks/express_form/form.php:119
-#: concrete/blocks/express_form/form.php:224
+#: concrete/blocks/express_form/form.php:229
 #: concrete/single_pages/dashboard/users/search.php:150
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:130
 #: concrete/single_pages/dashboard/system/express/entities/associations/edit.php:23
@@ -12348,7 +12349,7 @@ msgstr "Nej"
 #: concrete/blocks/page_list/page_list_form.php:456
 #: concrete/blocks/page_list/page_list_form.php:479
 #: concrete/blocks/express_form/form.php:113
-#: concrete/blocks/express_form/form.php:220
+#: concrete/blocks/express_form/form.php:225
 #: concrete/single_pages/dashboard/users/search.php:153
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:130
 #: concrete/single_pages/dashboard/system/express/entities/associations/edit.php:20
@@ -12389,16 +12390,16 @@ msgstr "Version"
 msgid "All"
 msgstr "Alle"
 
-#: concrete/src/Page/Page.php:2507
+#: concrete/src/Page/Page.php:2489
 #, php-format
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "Side \"%s\" med stien \"%s\" slettet"
 
-#: concrete/src/Page/Page.php:2507 concrete/src/Page/Page.php:2567
+#: concrete/src/Page/Page.php:2489 concrete/src/Page/Page.php:2549
 msgid "Page Action"
 msgstr "Side Handling"
 
-#: concrete/src/Page/Page.php:2567
+#: concrete/src/Page/Page.php:2549
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "Side \"%s\" med stien \"%s\" Flyttet til papirkurven"
@@ -12529,7 +12530,7 @@ msgstr "Attribut Kategorier"
 msgid "Attribute Sets"
 msgstr "Attribut Sæt"
 
-#: concrete/src/Package/ItemCategory/AttributeType.php:30
+#: concrete/src/Package/ItemCategory/AttributeType.php:37
 msgid "Attribute Types"
 msgstr "Attribut Typer"
 
@@ -12780,37 +12781,37 @@ msgctxt "ThumbnailTypeName"
 msgid "File Manager Detail Thumbnails"
 msgstr "Filhåndterings Detalje Thumbnails"
 
-#: concrete/src/Package/StartingPointPackage.php:350
+#: concrete/src/Package/StartingPointPackage.php:351
 #, php-format
 msgid "Unable to install database: %s"
 msgstr "Kan ikke installere database: %s"
 
-#: concrete/src/Package/StartingPointPackage.php:387
+#: concrete/src/Package/StartingPointPackage.php:388
 msgctxt "GroupName"
 msgid "Guest"
 msgstr "Gæst"
 
-#: concrete/src/Package/StartingPointPackage.php:388
+#: concrete/src/Package/StartingPointPackage.php:389
 msgctxt "GroupDescription"
 msgid "The guest group represents unregistered visitors to your site."
 msgstr "Denne gruppe repræsenterer uregistreret besøgende på din hjemmeside"
 
-#: concrete/src/Package/StartingPointPackage.php:393
+#: concrete/src/Package/StartingPointPackage.php:394
 msgctxt "GroupName"
 msgid "Registered Users"
 msgstr "Registrerede brugere"
 
-#: concrete/src/Package/StartingPointPackage.php:394
+#: concrete/src/Package/StartingPointPackage.php:395
 msgctxt "GroupDescription"
 msgid "The registered users group represents all user accounts."
 msgstr "Denne registreret brugergruppe repræsenterer alle din brugerkonti."
 
-#: concrete/src/Package/StartingPointPackage.php:398
+#: concrete/src/Package/StartingPointPackage.php:399
 msgctxt "GroupName"
 msgid "Administrators"
 msgstr "Administratorer"
 
-#: concrete/src/Package/StartingPointPackage.php:415
+#: concrete/src/Package/StartingPointPackage.php:416
 msgid "Won a Badge"
 msgstr "Vandt et Badge"
 
@@ -13149,17 +13150,17 @@ msgstr "Afvis"
 msgid "Originally requested by %s."
 msgstr "Oprindeligt anmodet af %s."
 
-#: concrete/src/Workflow/BasicWorkflow.php:125
+#: concrete/src/Workflow/BasicWorkflow.php:145
 #, php-format
 msgid "On %s, user %s submitted the following request: %s"
 msgstr "Den %s, bruger %s forelagde følgende anmodning: %s"
 
-#: concrete/src/Workflow/BasicWorkflow.php:172
+#: concrete/src/Workflow/BasicWorkflow.php:192
 #, php-format
 msgid "%s Submitted by <strong>%s</strong> on %s."
 msgstr "%s Indsendt af <strong>%s</strong> den %s."
 
-#: concrete/src/Workflow/BasicWorkflow.php:198
+#: concrete/src/Workflow/BasicWorkflow.php:218
 #, php-format
 msgid ""
 "On %s, user %s cancelled the following request: \n"
@@ -13170,7 +13171,7 @@ msgid ""
 "\n"
 msgstr "Den %s, bruger %s annullerede følgende anmodning: \n\n---\n%s\n---\n\n"
 
-#: concrete/src/Workflow/BasicWorkflow.php:237
+#: concrete/src/Workflow/BasicWorkflow.php:257
 #, php-format
 msgid ""
 "On %s, user %s approved the following request: \n"
@@ -17458,7 +17459,7 @@ msgid "More help."
 msgstr "Mere hjælp."
 
 #: concrete/elements/help/dialog/introduction.php:63
-#: concrete/views/frontend/install.php:139
+#: concrete/views/frontend/install.php:141
 #, php-format
 msgid ""
 "Read the <a href=\"%s\" target=\"_blank\">User Documentation</a> to learn "
@@ -17466,7 +17467,7 @@ msgid ""
 msgstr "Læs <a href=\"%s\" target=\"_blank\">Bruger Dokumentation</a> for at lære redigering og hjemmeside administration med concrete5.\n(Dokumentation er på Engelsk)."
 
 #: concrete/elements/help/dialog/introduction.php:72
-#: concrete/views/frontend/install.php:159
+#: concrete/views/frontend/install.php:161
 #, php-format
 msgid ""
 "The <a href=\"%s\" target=\"_blank\">Developer Documentation</a> covers "
@@ -18874,6 +18875,10 @@ msgstr "Denne side er nyere end hvad der vises for de besøgende på din hjemmes
 msgid "This version of the page is scheduled to be published on %1$s at %2$s."
 msgstr "Denne version af siden er planlagt til at blive offentliggjort den %1$s kl. %2$s."
 
+#: concrete/elements/page_controls_footer.php:544
+msgid "Publish Now"
+msgstr ""
+
 #: concrete/elements/page_controls_footer.php:546
 msgid "Publish Pending."
 msgstr "Offentliggørelse Afventer."
@@ -19555,7 +19560,7 @@ msgid "Invalid Request."
 msgstr "Ugyldig Anmodning."
 
 #: concrete/views/panels/details/page/versions.php:21
-#: concrete/views/frontend/install.php:25
+#: concrete/views/frontend/install.php:32
 #: concrete/single_pages/dashboard/system/backup/update.php:24
 #, php-format
 msgid "Version %s"
@@ -19721,68 +19726,72 @@ msgstr "Side Kladder"
 msgid "(Untitled)"
 msgstr "(Unavngivet)"
 
-#: concrete/views/frontend/install.php:43
+#: concrete/views/frontend/install.php:44
 msgid ""
 "concrete5 installation is still in progress: you shouldn't close this page "
 "at the moment"
 msgstr "concrete5 installationen er stadig i gang: du bør ikke lukke denne side i øjeblikket"
 
-#: concrete/views/frontend/install.php:87
+#: concrete/views/frontend/install.php:88
 msgid "All Done."
 msgstr "Alle Udført."
 
-#: concrete/views/frontend/install.php:89
+#: concrete/views/frontend/install.php:90
 msgid "Edit Your Site"
 msgstr "Rediger din Hjemmeside"
 
-#: concrete/views/frontend/install.php:112
-#: concrete/views/frontend/install.php:190
+#: concrete/views/frontend/install.php:91
+msgid "Installation Complete."
+msgstr ""
+
+#: concrete/views/frontend/install.php:114
+#: concrete/views/frontend/install.php:192
 msgid "Installing..."
 msgstr "Installerer..."
 
-#: concrete/views/frontend/install.php:120
+#: concrete/views/frontend/install.php:122
 msgid "While You Wait"
 msgstr "Mens du venter"
 
-#: concrete/views/frontend/install.php:128
+#: concrete/views/frontend/install.php:130
 msgid "Forums"
 msgstr "Forums"
 
-#: concrete/views/frontend/install.php:129
+#: concrete/views/frontend/install.php:131
 #, php-format
 msgid ""
 "<a href=\"%s\" target=\"_blank\">The forum</a> on concrete5.org is full of "
 "helpful community members that make concrete5 so great."
 msgstr "<a href=\"%s\" target=\"_blank\">Forummet</a> on concrete5.org is full of helpful community members that make concrete5 so great."
 
-#: concrete/views/frontend/install.php:138
+#: concrete/views/frontend/install.php:140
 msgid "User Documentation"
 msgstr "Bruger Dokumentation"
 
-#: concrete/views/frontend/install.php:148
+#: concrete/views/frontend/install.php:150
 msgid "Screencasts"
 msgstr "Screencasts"
 
-#: concrete/views/frontend/install.php:149
+#: concrete/views/frontend/install.php:151
 #, php-format
 msgid ""
 "The concrete5 <a href=\"%s\" target=\"_blank\">YouTube Channel</a> is full "
 "of useful videos covering how to use concrete5."
 msgstr "concrete5 <a href=\"%s\" target=\"_blank\">YouTube Kanalen</a> is full of useful videos covering how to use concrete5."
 
-#: concrete/views/frontend/install.php:158
+#: concrete/views/frontend/install.php:160
 msgid "Developer Documentation"
 msgstr "Udvikler Dokumentation"
 
-#: concrete/views/frontend/install.php:169
+#: concrete/views/frontend/install.php:171
 msgid "Installation Complete"
 msgstr "Installationen Gennemført"
 
-#: concrete/views/frontend/install.php:188
+#: concrete/views/frontend/install.php:190
 msgid "Beginning Installation"
 msgstr "begynder Installation"
 
-#: concrete/views/frontend/install.php:237
+#: concrete/views/frontend/install.php:239
 msgid "Site Information"
 msgstr "Oplysninger om Hjemmesiden"
 
@@ -21726,7 +21735,7 @@ msgstr "Spørgsmål tilføjet. Klik på preview fanen for at se det."
 #: concrete/blocks/form/form_setup_html.php:117
 #: concrete/blocks/form/form_setup_html.php:203
 #: concrete/blocks/survey/edit.php:18 concrete/blocks/survey/view.php:60
-#: concrete/blocks/express_form/form.php:206
+#: concrete/blocks/express_form/form.php:211
 msgid "Question"
 msgstr "Spørgsmål"
 
@@ -22739,44 +22748,44 @@ msgid "No topics."
 msgstr "Ingen emner."
 
 #: concrete/blocks/express_form/controller.php:57
-#: concrete/blocks/express_form/controller.php:375
-#: concrete/blocks/express_form/controller.php:391
+#: concrete/blocks/express_form/controller.php:373
+#: concrete/blocks/express_form/controller.php:389
 #: concrete/single_pages/dashboard/reports/forms/legacy.php:87
 msgid "Form"
 msgstr "Formular"
 
-#: concrete/blocks/express_form/controller.php:114
+#: concrete/blocks/express_form/controller.php:111
 msgid "Incorrect captcha code."
 msgstr "Forkert captcha kode."
 
-#: concrete/blocks/express_form/controller.php:123
+#: concrete/blocks/express_form/controller.php:120
 msgid "You do not have access to submit this form."
 msgstr "Du har ikke adgang til at indsende denne formular."
 
-#: concrete/blocks/express_form/controller.php:197
+#: concrete/blocks/express_form/controller.php:194
 #, php-format
 msgid "Website Form Submission – %s"
 msgstr "Hjemmeside Formular Indsendelses – %s"
 
-#: concrete/blocks/express_form/controller.php:253
-#: concrete/blocks/express_form/controller.php:326
+#: concrete/blocks/express_form/controller.php:251
+#: concrete/blocks/express_form/controller.php:324
 msgid "You must give this question a name."
 msgstr "Du skal give dette spørgsmål et navn."
 
-#: concrete/blocks/express_form/controller.php:276
-#: concrete/blocks/express_form/controller.php:351
+#: concrete/blocks/express_form/controller.php:274
+#: concrete/blocks/express_form/controller.php:349
 msgid "You must choose a valid field type."
 msgstr "Du skal vælge en gyldig felttype."
 
-#: concrete/blocks/express_form/controller.php:548
+#: concrete/blocks/express_form/controller.php:574
 msgid "Input Field Types"
 msgstr "Input Felttyper"
 
-#: concrete/blocks/express_form/controller.php:552
+#: concrete/blocks/express_form/controller.php:578
 msgid "Display Text"
 msgstr "Visning af Tekst"
 
-#: concrete/blocks/express_form/controller.php:555
+#: concrete/blocks/express_form/controller.php:581
 msgid "Other Fields"
 msgstr "Andre Felter"
 
@@ -22808,7 +22817,7 @@ msgstr "Label for Indsend Knap"
 msgid "Set value of Reply-To to Email Field"
 msgstr "Sæt værdien af Svar Til E-mail Felt"
 
-#: concrete/blocks/express_form/form.php:193
+#: concrete/blocks/express_form/form.php:195
 msgid "** Choose Field"
 msgstr "** Vælg Felt"
 
@@ -23223,13 +23232,20 @@ msgstr "Gem %s"
 msgid "Are you sure you want to delete this entry? This cannot be undone."
 msgstr "Er du sikker på du vil slette denne indtastning? Dette kan ikke fortrydes."
 
-#: concrete/single_pages/dashboard/express/entries.php:3
+#: concrete/single_pages/dashboard/express/entries.php:4
+#: concrete/single_pages/dashboard/system/express/entities.php:4
+msgid "Add Object"
+msgstr "Tilføje Objekt"
+
+#: concrete/single_pages/dashboard/express/entries.php:7
 msgid "Express Objects"
 msgstr "Ekspres Objekter"
 
-#: concrete/single_pages/dashboard/express/entries.php:16
-msgid "No entities created yet."
-msgstr "Ingen enheder oprettet endnu."
+#: concrete/single_pages/dashboard/express/entries.php:20
+msgid ""
+"No entities created yet. First, create an Express object, then you can add "
+"entries to it."
+msgstr ""
 
 #: concrete/single_pages/dashboard/conversations/messages.php:32
 msgid "Posted"
@@ -24376,11 +24392,11 @@ msgstr "Fra - Proxy klasser skal genereres manuelt. Hjælper med hastigheden på
 msgid "Entities"
 msgstr "Enheder"
 
-#: concrete/single_pages/dashboard/system/environment/entities.php:54
+#: concrete/single_pages/dashboard/system/environment/entities.php:66
 msgid "Driver"
 msgstr "Driver"
 
-#: concrete/single_pages/dashboard/system/environment/entities.php:69
+#: concrete/single_pages/dashboard/system/environment/entities.php:81
 msgid "Refresh Entities"
 msgstr ""
 
@@ -24532,10 +24548,8 @@ msgid "Owned By"
 msgstr "Ejet af"
 
 #: concrete/single_pages/dashboard/system/express/entities/add.php:11
-msgid ""
-"The name is how your entity will appear in the Dashboard. It may only "
-"contain letters."
-msgstr "Navnet er, hvordan dit element vises i Kontrolpanelet. Det må kun indeholde bogstaver."
+msgid "The name is how your entity will appear in the Dashboard."
+msgstr ""
 
 #: concrete/single_pages/dashboard/system/express/entities/add.php:19
 msgid "A unique string consisting of lowercase letters and underscores only."
@@ -24611,10 +24625,6 @@ msgstr "Slet Element"
 #: concrete/single_pages/dashboard/system/express/entities/forms.php:42
 msgid "You have not created any forms."
 msgstr "Du har ikke oprettet nogen formularer."
-
-#: concrete/single_pages/dashboard/system/express/entities.php:4
-msgid "Add Object"
-msgstr "Tilføje Objekt"
 
 #: concrete/single_pages/dashboard/system/express/entities.php:28
 msgid "You have not created any data objects."

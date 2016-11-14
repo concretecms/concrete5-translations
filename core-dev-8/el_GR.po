@@ -5,9 +5,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-11-08T06:00:23+01:00\n"
-"PO-Revision-Date: 2016-11-08 20:11+0000\n"
-"Last-Translator: Vasilis Fotopoulos <basalba@gmail.com>\n"
+"POT-Creation-Date: 2016-11-13T06:00:30+01:00\n"
+"PO-Revision-Date: 2016-11-13 09:59+0000\n"
+"Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Greek (Greece) (http://www.transifex.com/concrete5/concrete5/language/el_GR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1263,6 +1263,7 @@ msgid "Advanced Permissions"
 msgstr "Ειδικές άδειες"
 
 #: concrete/config/install/base/single_pages/dashboard.xml:787
+#: concrete/src/Package/ItemCategory/Workflow.php:14
 msgid "Workflows"
 msgstr "Ροή εργασιών"
 
@@ -3086,7 +3087,7 @@ msgid "SecurImage (Default)"
 msgstr "Εικόνα Ασφαλείας (Προεπιλογή)"
 
 #: concrete/config/install/base/permissions.xml:300
-#: concrete/src/Workflow/BasicWorkflow.php:152
+#: concrete/src/Workflow/BasicWorkflow.php:172
 msgid "Basic Workflow"
 msgstr "Βασική Ροή Εργασιών"
 
@@ -4292,7 +4293,7 @@ msgstr "Το Κλειδί έχει λήξει. Παρακαλούμε επισκ
 #: concrete/controllers/single_page/dashboard/users/search.php:362
 #: concrete/controllers/single_page/account/edit_profile.php:127
 #: concrete/controllers/single_page/register.php:100
-#: concrete/controllers/install.php:428
+#: concrete/controllers/install.php:431
 msgid "The two passwords provided do not match."
 msgstr "Οι δύο κωδικοί που δώσατε δεν ταιριάζουν."
 
@@ -5334,7 +5335,7 @@ msgstr "Δεν προστέθηκαν χρήστες ή ομάδες."
 #: concrete/single_pages/dashboard/system/seo/statistics.php:15
 #: concrete/single_pages/dashboard/system/seo/urls.php:63
 #: concrete/single_pages/dashboard/system/environment/debug.php:61
-#: concrete/single_pages/dashboard/system/environment/entities.php:70
+#: concrete/single_pages/dashboard/system/environment/entities.php:82
 #: concrete/single_pages/dashboard/system/environment/logging.php:41
 #: concrete/single_pages/dashboard/system/environment/proxy.php:34
 #: concrete/single_pages/dashboard/system/express/entities/forms/details.php:22
@@ -5369,7 +5370,7 @@ msgstr "Δεν προστέθηκαν χρήστες ή ομάδες."
 #: concrete/single_pages/dashboard/system/registration/profiles.php:42
 #: concrete/single_pages/dashboard/system/basics/multilingual/view.php:37
 #: concrete/single_pages/dashboard/system/basics/accessibility.php:26
-#: concrete/single_pages/dashboard/system/basics/editor.php:31
+#: concrete/single_pages/dashboard/system/basics/editor.php:35
 #: concrete/single_pages/dashboard/system/basics/icons.php:55
 #: concrete/single_pages/dashboard/system/basics/images.php:45
 #: concrete/single_pages/dashboard/system/basics/name.php:35
@@ -5756,7 +5757,7 @@ msgstr "Περιγραφή"
 #: concrete/blocks/form/form_setup_html.php:171
 #: concrete/blocks/form/form_setup_html.php:258
 #: concrete/blocks/form/view.php:91 concrete/blocks/express_form/form.php:166
-#: concrete/blocks/express_form/form.php:217
+#: concrete/blocks/express_form/form.php:222
 #: concrete/blocks/express_form/view.php:26
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:119
 #: concrete/single_pages/dashboard/system/express/entities/forms/edit_control.php:20
@@ -7455,14 +7456,14 @@ msgid "Add Data Object"
 msgstr "Προσθήκη Αντικείμενων δεδομένων"
 
 #: concrete/controllers/single_page/dashboard/system/express/entities.php:28
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:212
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:202
 msgid ""
 "You must create a handle for your data object. It may contain only lowercase"
 " letters and underscores."
 msgstr "Πρέπει να δημιουργήσετε έναν δείκτη  για το αντικείμενο δεδομένων σας. Ο δείκτης πρέπει να έχει μόνο πεζά, και κάτω παύλα."
 
 #: concrete/controllers/single_page/dashboard/system/express/entities.php:32
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:216
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:206
 msgid "You must give your data object a name."
 msgstr "Θα πρέπει να δώσετε ένα όνομα στα αντικείμενα δεδομένων σας."
 
@@ -7480,44 +7481,44 @@ msgstr "** Επιλέξτε Οντότητα"
 msgid "Invalid express entity."
 msgstr "Μη έγκυρη Express Entity"
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:132
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:122
 msgid "Entity deleted successfully."
 msgstr "Η Οντότητα διαγράφηκε με επιτυχία."
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:144
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:134
 msgid "Object Details"
 msgstr "Λεπτομέριες Αντικειμένου"
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:164
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:154
 msgid "** Select Form"
 msgstr "** Επιλέξτε φόρμα"
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:168
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:158
 msgid "** No Owner"
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:189
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:179
 #: concrete/elements/dashboard/express/detail_navigation.php:17
 msgid "Edit Entity"
 msgstr "Επεξεργασία Οντότητας"
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:220
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:210
 msgid "You must choose where the results for your entity are going live."
 msgstr "Πρέπει να επιλέξετε που θα πηγαίνουν τα ζωντανά αποτελέσματα για την οντότητά σας."
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:224
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:214
 msgid "An entity cannot own itself."
 msgstr ""
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:237
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:227
 msgid "You must specify a valid default view form."
 msgstr "Πρέπει να ορίσετε μια έγκυρη μορφή προεπιλεγμένης προβολής φόρμας."
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:240
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:230
 msgid "You must specify a valid default edit form."
 msgstr "Πρέπει να ορίσετε μια έγκυρη μορφή προεπιλεγμένης επεξεργασίας φόρμας."
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:273
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:263
 msgid "Object updated successfully."
 msgstr "Το Αντικείμενο ενημερώθηκε με επιτυχία."
 
@@ -7957,7 +7958,7 @@ msgstr "Τα δημόσια προφίλ απενεργοποιήθηκαν. Τ�
 msgid "Successfully saved accessibility settings."
 msgstr "Επιτυχής αποθήκευση ρυθμίσεων προσβασιμότητας."
 
-#: concrete/controllers/single_page/dashboard/system/basics/editor.php:22
+#: concrete/controllers/single_page/dashboard/system/basics/editor.php:24
 msgid "Options saved successfully."
 msgstr "Οι επιλογές αποθηκεύτηκαν με επιτυχία."
 
@@ -10282,12 +10283,12 @@ msgid_plural "%d items"
 msgstr[0] "%d στοιχείο"
 msgstr[1] "%d στοιχεία"
 
-#: concrete/controllers/install.php:91 concrete/controllers/install.php:377
+#: concrete/controllers/install.php:93 concrete/controllers/install.php:380
 #, php-format
 msgid "Invalid starting point: %s"
 msgstr "Μη έγκυρο starting point: %s"
 
-#: concrete/controllers/install.php:101
+#: concrete/controllers/install.php:103
 #, php-format
 msgid ""
 "concrete5 has been installed. You have been logged in as <b>%s</b> with the "
@@ -10295,11 +10296,11 @@ msgid ""
 "the users area of the dashboard."
 msgstr ""
 
-#: concrete/controllers/install.php:127
+#: concrete/controllers/install.php:129
 msgid "Unable to connect to database."
 msgstr "Δεν είναι δυνατή η σύνδεση με τη βάση δεδομένων."
 
-#: concrete/controllers/install.php:133
+#: concrete/controllers/install.php:135
 #: concrete/src/Package/StartingPointPackage.php:320
 #, php-format
 msgid ""
@@ -10307,93 +10308,93 @@ msgid ""
 " an empty database."
 msgstr "Υπάρχουν ήδη %s πίνακες στη Βάση Δεδομένων. Το concrete5 πρέπει να εγκατασταθεί σε μια κενή βάση δεδομένων."
 
-#: concrete/controllers/install.php:149
+#: concrete/controllers/install.php:151
 msgid ""
 "Your MySQL database does not support InnoDB database tables. These are "
 "required."
 msgstr "Η MySQL βάση δεδομένων σας δεν υποστηρίζει Πίνακες InnoDB. Αυτό είναι υποχρεωτικό."
 
-#: concrete/controllers/install.php:163
+#: concrete/controllers/install.php:165
 msgid "The PDO extension is not loaded."
 msgstr "Η επέκταση PDO δεν έχει φορτωθεί."
 
-#: concrete/controllers/install.php:177
+#: concrete/controllers/install.php:179
 #, php-format
 msgid "Between %1$s and %2$s Characters"
 msgstr ""
 
-#: concrete/controllers/install.php:180
+#: concrete/controllers/install.php:182
 #, php-format
 msgid "at least %s characters"
 msgstr ""
 
-#: concrete/controllers/install.php:184
+#: concrete/controllers/install.php:186
 #, php-format
 msgid "up to %s characters"
 msgstr ""
 
-#: concrete/controllers/install.php:259
+#: concrete/controllers/install.php:262
 msgid "concrete5 is already installed."
 msgstr "Το concrete5 είναι ήδη εγκατεστημένο."
 
-#: concrete/controllers/install.php:265
-#: concrete/views/frontend/install.php:111
-#: concrete/views/frontend/install.php:236
+#: concrete/controllers/install.php:268
+#: concrete/views/frontend/install.php:113
+#: concrete/views/frontend/install.php:238
 #: concrete/views/frontend/install.php:426
 #: concrete/views/frontend/install.php:445
 #: concrete/views/frontend/install.php:1029
 msgid "Install concrete5"
 msgstr "Εγκατάσταση concrete5 "
 
-#: concrete/controllers/install.php:320
+#: concrete/controllers/install.php:323
 msgid ""
 "Your configuration directory config/ does not appear to be writable by the "
 "web server."
 msgstr "Ο Φάκελος ρυθμίσεων σας config/ δεν φαίνεται να είναι εγγράψιμος από τον web server."
 
-#: concrete/controllers/install.php:324
+#: concrete/controllers/install.php:327
 msgid ""
 "Your files directory files/ does not appear to be writable by the web "
 "server."
 msgstr "Ο  φάκελος αρχείων σας files/ δεν φαίνεται να είναι εγγράψιμος από τον web server."
 
-#: concrete/controllers/install.php:328
+#: concrete/controllers/install.php:331
 msgid ""
 "Your packages directory packages/ does not appear to be writable by the web "
 "server."
 msgstr "Ο φάκελος Πακέτων σας packages/ δεν φαίνεται να είναι εγγράψιμος από τον web server."
 
-#: concrete/controllers/install.php:383
+#: concrete/controllers/install.php:386
 #, php-format
 msgctxt "InstallError"
 msgid "%s.<br><br>Trace:<br>%s"
 msgstr "%s.<br><br>Ίχνος:<br>%s"
 
-#: concrete/controllers/install.php:416
+#: concrete/controllers/install.php:419
 msgid "Please specify your site's name"
 msgstr "Παρακαλείστε να αναφέρετε το όνομα της ιστοσελίδας σας"
 
-#: concrete/controllers/install.php:417
+#: concrete/controllers/install.php:420
 msgid "Please specify a valid email address"
 msgstr "Παρακαλείστε  να αναφέρετε μια έγκυρη διεύθυνση email"
 
-#: concrete/controllers/install.php:418
+#: concrete/controllers/install.php:421
 msgid "You must specify a valid database name"
 msgstr "Πρέπει να καθορίσετε ένα έγκυρο όνομα βάσης δεδομένων"
 
-#: concrete/controllers/install.php:419
+#: concrete/controllers/install.php:422
 msgid "You must specify a valid database server"
 msgstr "Πρέπει να ορίσετε έναν έγκυρο server βάσης δεδομένων"
 
-#: concrete/controllers/install.php:494
+#: concrete/controllers/install.php:497
 msgid "Unable to open config/app.php for writing."
 msgstr "Δεν είναι δυνατόν να ανοίξει το config/app.php για γράψιμο."
 
-#: concrete/controllers/install.php:515
+#: concrete/controllers/install.php:518
 msgid "Unable to open config/site_user.php for writing."
 msgstr "Είναι αδύνατο το άνοιγμα του  config/site_user.php για γράψιμο."
 
-#: concrete/controllers/install.php:540
+#: concrete/controllers/install.php:543
 msgid "You must select a valid sample content starting point."
 msgstr "Πρέπει να επιλέξετε ένα έγκυρο περιεχόμενο δείγματος ως σημείο εκκίνησης."
 
@@ -10479,7 +10480,7 @@ msgstr "Επεξεργασία σελίδας"
 #: concrete/elements/attribute/key/form.php:118
 #: concrete/elements/attribute/site_standard_list_header.php:6
 #: concrete/elements/attribute/type_form_required.php:151
-#: concrete/views/frontend/install.php:181
+#: concrete/views/frontend/install.php:183
 #: concrete/single_pages/dashboard/express/entries/create.php:17
 #: concrete/single_pages/dashboard/express/entries/update.php:17
 #: concrete/single_pages/dashboard/express/entries/view_entry.php:4
@@ -10764,7 +10765,7 @@ msgid "Replied"
 msgstr "Απαντημένα"
 
 #: concrete/src/User/PrivateMessage/PrivateMessage.php:188
-#: concrete/src/Page/Page.php:486
+#: concrete/src/Page/Page.php:488
 msgid "Unknown User"
 msgstr "Άγνωστος Χρήστης"
 
@@ -11815,11 +11816,11 @@ msgstr "Κατηγορίες"
 msgid "All Groups"
 msgstr "Όλες οι Ομάδες"
 
-#: concrete/src/Tree/Node/Node.php:436
+#: concrete/src/Tree/Node/Node.php:421
 msgid "It's not possible to move a node under itself"
 msgstr "Δεν ήταν δυνατό να μετακινηθεί ένα κόμβος κάτω από τον εαυτόν του.."
 
-#: concrete/src/Tree/Node/Node.php:440
+#: concrete/src/Tree/Node/Node.php:425
 msgid "It's not possible to move a node under one of its descending nodes"
 msgstr "Δεν ήταν δυνατό να μετακινηθεί ένα κόμβος κάτω από τον υποκείμενό  του."
 
@@ -12318,7 +12319,7 @@ msgstr "Αναζήτηση σε όλες τις θυγατρικές;"
 #: concrete/blocks/page_list/page_list_form.php:449
 #: concrete/blocks/page_list/page_list_form.php:473
 #: concrete/blocks/express_form/form.php:119
-#: concrete/blocks/express_form/form.php:224
+#: concrete/blocks/express_form/form.php:229
 #: concrete/single_pages/dashboard/users/search.php:150
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:130
 #: concrete/single_pages/dashboard/system/express/entities/associations/edit.php:23
@@ -12347,7 +12348,7 @@ msgstr "Όχι"
 #: concrete/blocks/page_list/page_list_form.php:456
 #: concrete/blocks/page_list/page_list_form.php:479
 #: concrete/blocks/express_form/form.php:113
-#: concrete/blocks/express_form/form.php:220
+#: concrete/blocks/express_form/form.php:225
 #: concrete/single_pages/dashboard/users/search.php:153
 #: concrete/single_pages/dashboard/system/files/thumbnails.php:130
 #: concrete/single_pages/dashboard/system/express/entities/associations/edit.php:20
@@ -12388,16 +12389,16 @@ msgstr "Κατάσταση Έκδοσης"
 msgid "All"
 msgstr "Όλα"
 
-#: concrete/src/Page/Page.php:2507
+#: concrete/src/Page/Page.php:2489
 #, php-format
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "Η Σελίδα \"%s\" στη διαδρομή \"%s\" διαγράφτηκε."
 
-#: concrete/src/Page/Page.php:2507 concrete/src/Page/Page.php:2567
+#: concrete/src/Page/Page.php:2489 concrete/src/Page/Page.php:2549
 msgid "Page Action"
 msgstr "Ενέργειες Σελίδας"
 
-#: concrete/src/Page/Page.php:2567
+#: concrete/src/Page/Page.php:2549
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "Η Σελίδα \"%s\" στη διαδρομή \"%s\" Μεταφέρθηκε στο κάδο απορριμμάτων."
@@ -12528,7 +12529,7 @@ msgstr "Κατηγορίες Χαρακτηριστικών"
 msgid "Attribute Sets"
 msgstr "Σετ Χαρακτηριστικών"
 
-#: concrete/src/Package/ItemCategory/AttributeType.php:30
+#: concrete/src/Package/ItemCategory/AttributeType.php:37
 msgid "Attribute Types"
 msgstr "Τύποι Χαρακτηριστικών"
 
@@ -12779,37 +12780,37 @@ msgctxt "ThumbnailTypeName"
 msgid "File Manager Detail Thumbnails"
 msgstr "Λεπτομέρειες Μικρογραφίας Διαχείρισης αρχείων "
 
-#: concrete/src/Package/StartingPointPackage.php:350
+#: concrete/src/Package/StartingPointPackage.php:351
 #, php-format
 msgid "Unable to install database: %s"
 msgstr "Δεν είναι δυνατή η εγκατάσταση της βάσης δεδομένων: %s"
 
-#: concrete/src/Package/StartingPointPackage.php:387
+#: concrete/src/Package/StartingPointPackage.php:388
 msgctxt "GroupName"
 msgid "Guest"
 msgstr "Επισκέπτης"
 
-#: concrete/src/Package/StartingPointPackage.php:388
+#: concrete/src/Package/StartingPointPackage.php:389
 msgctxt "GroupDescription"
 msgid "The guest group represents unregistered visitors to your site."
 msgstr "Η ομάδα επισκεπτών αντιπροσωπεύει μη εγγεγραμμένους επισκέπτες στο site σας."
 
-#: concrete/src/Package/StartingPointPackage.php:393
+#: concrete/src/Package/StartingPointPackage.php:394
 msgctxt "GroupName"
 msgid "Registered Users"
 msgstr "Εγγεγραμμένοι χρήστες"
 
-#: concrete/src/Package/StartingPointPackage.php:394
+#: concrete/src/Package/StartingPointPackage.php:395
 msgctxt "GroupDescription"
 msgid "The registered users group represents all user accounts."
 msgstr "Η ομάδα εγγεγραμμένων χρηστών αντιπροσωπεύει όλους τους λογαριασμούς χρηστών."
 
-#: concrete/src/Package/StartingPointPackage.php:398
+#: concrete/src/Package/StartingPointPackage.php:399
 msgctxt "GroupName"
 msgid "Administrators"
 msgstr "Διαχειριστές"
 
-#: concrete/src/Package/StartingPointPackage.php:415
+#: concrete/src/Package/StartingPointPackage.php:416
 msgid "Won a Badge"
 msgstr "Κερδίσατε ένα Badge"
 
@@ -13148,17 +13149,17 @@ msgstr "Αρνείται"
 msgid "Originally requested by %s."
 msgstr "Αρχικά ζητήθηκε από  %s."
 
-#: concrete/src/Workflow/BasicWorkflow.php:125
+#: concrete/src/Workflow/BasicWorkflow.php:145
 #, php-format
 msgid "On %s, user %s submitted the following request: %s"
 msgstr "Στο %s, ο χρήστης %s υπέβαλε το ακόλουθο αίτημα: %s"
 
-#: concrete/src/Workflow/BasicWorkflow.php:172
+#: concrete/src/Workflow/BasicWorkflow.php:192
 #, php-format
 msgid "%s Submitted by <strong>%s</strong> on %s."
 msgstr "%s Υποβλήθηκε από <strong>%s</strong>  για %s."
 
-#: concrete/src/Workflow/BasicWorkflow.php:198
+#: concrete/src/Workflow/BasicWorkflow.php:218
 #, php-format
 msgid ""
 "On %s, user %s cancelled the following request: \n"
@@ -13169,7 +13170,7 @@ msgid ""
 "\n"
 msgstr "Στις %s, ο χρήστης %s ακύρωσε το ακόλουθο αίτημα: \n\n---\n%s\n---\n"
 
-#: concrete/src/Workflow/BasicWorkflow.php:237
+#: concrete/src/Workflow/BasicWorkflow.php:257
 #, php-format
 msgid ""
 "On %s, user %s approved the following request: \n"
@@ -17457,7 +17458,7 @@ msgid "More help."
 msgstr "Περισσότερη βοήθεια."
 
 #: concrete/elements/help/dialog/introduction.php:63
-#: concrete/views/frontend/install.php:139
+#: concrete/views/frontend/install.php:141
 #, php-format
 msgid ""
 "Read the <a href=\"%s\" target=\"_blank\">User Documentation</a> to learn "
@@ -17465,7 +17466,7 @@ msgid ""
 msgstr "Διαβάστε το  <a href=\"%s\" target=\"_blank\">Τεκμηρίωση χρήστη</a> για να μάθετε την επεξεργασία και τη διαχείριση των site με concrete5."
 
 #: concrete/elements/help/dialog/introduction.php:72
-#: concrete/views/frontend/install.php:159
+#: concrete/views/frontend/install.php:161
 #, php-format
 msgid ""
 "The <a href=\"%s\" target=\"_blank\">Developer Documentation</a> covers "
@@ -18873,6 +18874,10 @@ msgstr "Αυτή η σελίδα είναι νεότερη από ό, τι εμ�
 msgid "This version of the page is scheduled to be published on %1$s at %2$s."
 msgstr "Αυτή η έκδοση της σελίδας έχει προγραμματιστεί να δημοσιευθεί στις %1$s at %2$s."
 
+#: concrete/elements/page_controls_footer.php:544
+msgid "Publish Now"
+msgstr ""
+
 #: concrete/elements/page_controls_footer.php:546
 msgid "Publish Pending."
 msgstr "Η Δημοσίευση Εκκρεμεί"
@@ -19554,7 +19559,7 @@ msgid "Invalid Request."
 msgstr "Άκυρη Αίτηση."
 
 #: concrete/views/panels/details/page/versions.php:21
-#: concrete/views/frontend/install.php:25
+#: concrete/views/frontend/install.php:32
 #: concrete/single_pages/dashboard/system/backup/update.php:24
 #, php-format
 msgid "Version %s"
@@ -19720,68 +19725,72 @@ msgstr "Πρόχειρα Σελίδας "
 msgid "(Untitled)"
 msgstr "(Χωρίς τίτλο)"
 
-#: concrete/views/frontend/install.php:43
+#: concrete/views/frontend/install.php:44
 msgid ""
 "concrete5 installation is still in progress: you shouldn't close this page "
 "at the moment"
 msgstr ""
 
-#: concrete/views/frontend/install.php:87
+#: concrete/views/frontend/install.php:88
 msgid "All Done."
 msgstr ""
 
-#: concrete/views/frontend/install.php:89
+#: concrete/views/frontend/install.php:90
 msgid "Edit Your Site"
 msgstr ""
 
-#: concrete/views/frontend/install.php:112
-#: concrete/views/frontend/install.php:190
+#: concrete/views/frontend/install.php:91
+msgid "Installation Complete."
+msgstr ""
+
+#: concrete/views/frontend/install.php:114
+#: concrete/views/frontend/install.php:192
 msgid "Installing..."
 msgstr ""
 
-#: concrete/views/frontend/install.php:120
+#: concrete/views/frontend/install.php:122
 msgid "While You Wait"
 msgstr ""
 
-#: concrete/views/frontend/install.php:128
+#: concrete/views/frontend/install.php:130
 msgid "Forums"
 msgstr ""
 
-#: concrete/views/frontend/install.php:129
+#: concrete/views/frontend/install.php:131
 #, php-format
 msgid ""
 "<a href=\"%s\" target=\"_blank\">The forum</a> on concrete5.org is full of "
 "helpful community members that make concrete5 so great."
 msgstr ""
 
-#: concrete/views/frontend/install.php:138
+#: concrete/views/frontend/install.php:140
 msgid "User Documentation"
 msgstr ""
 
-#: concrete/views/frontend/install.php:148
+#: concrete/views/frontend/install.php:150
 msgid "Screencasts"
 msgstr ""
 
-#: concrete/views/frontend/install.php:149
+#: concrete/views/frontend/install.php:151
 #, php-format
 msgid ""
 "The concrete5 <a href=\"%s\" target=\"_blank\">YouTube Channel</a> is full "
 "of useful videos covering how to use concrete5."
 msgstr ""
 
-#: concrete/views/frontend/install.php:158
+#: concrete/views/frontend/install.php:160
 msgid "Developer Documentation"
 msgstr ""
 
-#: concrete/views/frontend/install.php:169
+#: concrete/views/frontend/install.php:171
 msgid "Installation Complete"
 msgstr ""
 
-#: concrete/views/frontend/install.php:188
+#: concrete/views/frontend/install.php:190
 msgid "Beginning Installation"
 msgstr "Ξεκινώντας Εγκατάσταση"
 
-#: concrete/views/frontend/install.php:237
+#: concrete/views/frontend/install.php:239
 msgid "Site Information"
 msgstr "Πληροφορίες Ιστοσελίδας "
 
@@ -21725,7 +21734,7 @@ msgstr "Η Ερώτηση προστέθηκε. Για να το δείτε κά
 #: concrete/blocks/form/form_setup_html.php:117
 #: concrete/blocks/form/form_setup_html.php:203
 #: concrete/blocks/survey/edit.php:18 concrete/blocks/survey/view.php:60
-#: concrete/blocks/express_form/form.php:206
+#: concrete/blocks/express_form/form.php:211
 msgid "Question"
 msgstr "Ερώτηση"
 
@@ -22738,44 +22747,44 @@ msgid "No topics."
 msgstr "Κανένα Θέμα."
 
 #: concrete/blocks/express_form/controller.php:57
-#: concrete/blocks/express_form/controller.php:375
-#: concrete/blocks/express_form/controller.php:391
+#: concrete/blocks/express_form/controller.php:373
+#: concrete/blocks/express_form/controller.php:389
 #: concrete/single_pages/dashboard/reports/forms/legacy.php:87
 msgid "Form"
 msgstr "Φόρμα"
 
-#: concrete/blocks/express_form/controller.php:114
+#: concrete/blocks/express_form/controller.php:111
 msgid "Incorrect captcha code."
 msgstr "Λάθος κωδικός επαλήθευσης captcha "
 
-#: concrete/blocks/express_form/controller.php:123
+#: concrete/blocks/express_form/controller.php:120
 msgid "You do not have access to submit this form."
 msgstr "Δεν έχετε πρόσβαση για να υποβάλετε αυτή τη φόρμα."
 
-#: concrete/blocks/express_form/controller.php:197
+#: concrete/blocks/express_form/controller.php:194
 #, php-format
 msgid "Website Form Submission – %s"
 msgstr "Υποβολή φόρμας - %s"
 
-#: concrete/blocks/express_form/controller.php:253
-#: concrete/blocks/express_form/controller.php:326
+#: concrete/blocks/express_form/controller.php:251
+#: concrete/blocks/express_form/controller.php:324
 msgid "You must give this question a name."
 msgstr "Πρέπει να δώσετε στην ερώτηση ένα όνομα."
 
-#: concrete/blocks/express_form/controller.php:276
-#: concrete/blocks/express_form/controller.php:351
+#: concrete/blocks/express_form/controller.php:274
+#: concrete/blocks/express_form/controller.php:349
 msgid "You must choose a valid field type."
 msgstr "Πρέπει να επιλέξετε έναν έγκυρο τύπο πεδίου."
 
-#: concrete/blocks/express_form/controller.php:548
+#: concrete/blocks/express_form/controller.php:574
 msgid "Input Field Types"
 msgstr "Τύποι πεδίου εισαγωγής"
 
-#: concrete/blocks/express_form/controller.php:552
+#: concrete/blocks/express_form/controller.php:578
 msgid "Display Text"
 msgstr "Εμφάνιση Κειμένου"
 
-#: concrete/blocks/express_form/controller.php:555
+#: concrete/blocks/express_form/controller.php:581
 msgid "Other Fields"
 msgstr "Άλλα Πεδία"
 
@@ -22807,7 +22816,7 @@ msgstr "Ετικέτα κουμπιού Υποβολής "
 msgid "Set value of Reply-To to Email Field"
 msgstr "Ορίστε την τιμή των Reply-To σε email πεδίο"
 
-#: concrete/blocks/express_form/form.php:193
+#: concrete/blocks/express_form/form.php:195
 msgid "** Choose Field"
 msgstr "** Επιλέξτε Πεδίο"
 
@@ -23222,13 +23231,20 @@ msgstr "Αποθήκευση %s"
 msgid "Are you sure you want to delete this entry? This cannot be undone."
 msgstr "Είστε σίγουροι ότι θέλετε να διαγράψετε αυτή την καταχώρηση? Αυτό δεν μπορεί να αναιρεθεί."
 
-#: concrete/single_pages/dashboard/express/entries.php:3
+#: concrete/single_pages/dashboard/express/entries.php:4
+#: concrete/single_pages/dashboard/system/express/entities.php:4
+msgid "Add Object"
+msgstr "Προσθήκη Αντικείμενου"
+
+#: concrete/single_pages/dashboard/express/entries.php:7
 msgid "Express Objects"
 msgstr "Express Objects"
 
-#: concrete/single_pages/dashboard/express/entries.php:16
-msgid "No entities created yet."
-msgstr "Δεν δημιουργήθηκαν ακόμη καταχωρήσεις."
+#: concrete/single_pages/dashboard/express/entries.php:20
+msgid ""
+"No entities created yet. First, create an Express object, then you can add "
+"entries to it."
+msgstr ""
 
 #: concrete/single_pages/dashboard/conversations/messages.php:32
 msgid "Posted"
@@ -24375,11 +24391,11 @@ msgstr "Απενεργοποιημένο  - Οι κλάσεις διαμεσολ
 msgid "Entities"
 msgstr "Οντότητες"
 
-#: concrete/single_pages/dashboard/system/environment/entities.php:54
+#: concrete/single_pages/dashboard/system/environment/entities.php:66
 msgid "Driver"
 msgstr "Οδηγός"
 
-#: concrete/single_pages/dashboard/system/environment/entities.php:69
+#: concrete/single_pages/dashboard/system/environment/entities.php:81
 msgid "Refresh Entities"
 msgstr ""
 
@@ -24531,10 +24547,8 @@ msgid "Owned By"
 msgstr ""
 
 #: concrete/single_pages/dashboard/system/express/entities/add.php:11
-msgid ""
-"The name is how your entity will appear in the Dashboard. It may only "
-"contain letters."
-msgstr "Το όνομα είναι το πώς θα εμφανιστεί στο πίνακα ελέγχου σας. Μπορεί να περιέχει μόνο γράμματα."
+msgid "The name is how your entity will appear in the Dashboard."
+msgstr ""
 
 #: concrete/single_pages/dashboard/system/express/entities/add.php:19
 msgid "A unique string consisting of lowercase letters and underscores only."
@@ -24610,10 +24624,6 @@ msgstr "Διαγραφή Οντότητας"
 #: concrete/single_pages/dashboard/system/express/entities/forms.php:42
 msgid "You have not created any forms."
 msgstr "Δεν έχετε δημιουργήσει κάποιες φόρμες."
-
-#: concrete/single_pages/dashboard/system/express/entities.php:4
-msgid "Add Object"
-msgstr "Προσθήκη Αντικείμενου"
 
 #: concrete/single_pages/dashboard/system/express/entities.php:28
 msgid "You have not created any data objects."
