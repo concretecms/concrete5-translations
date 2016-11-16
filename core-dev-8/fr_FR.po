@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-11-14T06:00:23+01:00\n"
-"PO-Revision-Date: 2016-11-14 09:23+0000\n"
+"POT-Creation-Date: 2016-11-15T06:00:35+01:00\n"
+"PO-Revision-Date: 2016-11-15 08:27+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: French (France) (http://www.transifex.com/concrete5/concrete5/language/fr_FR/)\n"
 "MIME-Version: 1.0\n"
@@ -4625,7 +4625,7 @@ msgstr "Êtes-vous certain de vouloir supprimer les fichiers suivants ?"
 #: concrete/src/StyleCustomizer/Style/ColorStyle.php:42
 #: concrete/elements/attribute/key/header.php:12
 #: concrete/elements/files/search_header.php:44
-#: concrete/elements/dashboard/express/control.php:36
+#: concrete/elements/dashboard/express/control.php:39
 #: concrete/elements/permission/details/block/timed_guest_access.php:37
 #: concrete/elements/permission/lists/tree/node.php:98
 #: concrete/elements/permission/lists/area.php:119
@@ -5338,7 +5338,7 @@ msgstr "Aucun utilisateur ou groupe ajouté."
 #: concrete/single_pages/dashboard/system/seo/bulk.php:192
 #: concrete/single_pages/dashboard/system/seo/codes.php:20
 #: concrete/single_pages/dashboard/system/seo/excluded.php:18
-#: concrete/single_pages/dashboard/system/seo/searchindex.php:37
+#: concrete/single_pages/dashboard/system/seo/searchindex.php:36
 #: concrete/single_pages/dashboard/system/seo/statistics.php:15
 #: concrete/single_pages/dashboard/system/seo/urls.php:63
 #: concrete/single_pages/dashboard/system/environment/debug.php:61
@@ -5760,6 +5760,7 @@ msgid "Description"
 msgstr "Description"
 
 #: concrete/tools/page_types/composer/form/edit_control.php:58
+#: concrete/elements/dashboard/express/control.php:23
 #: concrete/elements/page_types/composer/form/layout_set/control.php:26
 #: concrete/blocks/form/form_setup_html.php:171
 #: concrete/blocks/form/form_setup_html.php:258
@@ -7479,7 +7480,7 @@ msgid "Object added successfully."
 msgstr ""
 
 #: concrete/controllers/single_page/dashboard/system/express/entities.php:92
-#: concrete/blocks/express_entry_detail/controller.php:126
+#: concrete/blocks/express_entry_detail/controller.php:125
 #: concrete/blocks/express_entry_list/controller.php:215
 msgid "** Choose Entity"
 msgstr "** Choisir une entité"
@@ -10631,45 +10632,21 @@ msgid "Index Search Engine - Updates"
 msgstr "Index du moteur de recherche - Mises à jour"
 
 #: concrete/jobs/index_search.php:20
-msgid ""
-"Index the site to allow searching to work quickly and accurately. Only "
-"reindexes pages that have changed since last indexing."
-msgstr "Indexer le site pour permettre à la recherche d'être rapide et précise. Ceci ne ré-indexe que les pages qui ont été modifiées depuis la dernière ré-indexation."
+msgid "Index the site to allow searching to work quickly and accurately"
+msgstr ""
 
-#: concrete/jobs/index_search.php:43
-msgid "Indexing complete. Index is up to date"
-msgstr "Indexation terminée. L'index est à jour"
-
-#: concrete/jobs/index_search.php:46
-#, php-format
-msgid ""
-"Index partially updated. %s pages indexed (maximum number.) Re-run this job "
-"to continue this process."
-msgstr "Index partiellement mis à jour. %s pages indexées (maximum). Relancez la tâche pour continuer le processus."
-
-#: concrete/jobs/index_search.php:50
-msgid "Index updated."
-msgstr "Index mis à jour."
-
-#: concrete/jobs/index_search.php:51
-#, php-format
-msgid "%d page required reindexing."
-msgid_plural "%d pages required reindexing."
-msgstr[0] "%d page nécessite une ré-indexation."
-msgstr[1] "%d pages nécessitent une ré-indexation."
-
-#: concrete/jobs/index_search_all.php:23
+#: concrete/jobs/index_search_all.php:44
 msgid "Index Search Engine - All"
 msgstr "Indexer le moteur de recherche - Tout"
 
-#: concrete/jobs/index_search_all.php:28
+#: concrete/jobs/index_search_all.php:49
 msgid "Empties the page search index and reindexes all pages."
 msgstr "Vider l'index de recherche de page et tout ré-indexer."
 
-#: concrete/jobs/index_search_all.php:62
+#: concrete/jobs/index_search_all.php:120
 #, php-format
-msgid "Index updated. %s pages indexed."
-msgstr "Index mis à jour. %s pages indexées."
+msgid "Indexed %s Pages, %s Users, %s Files, and %s Sites."
+msgstr ""
 
 #: concrete/jobs/process_email.php:12
 msgid "Process Email Posts"
@@ -10882,50 +10859,50 @@ msgid ""
 "present in the original message."
 msgstr "Impossible de traiter le courriel. Vérifiez que votre courriel contient le hachage de validation original du message."
 
-#: concrete/src/Mail/Service.php:507
+#: concrete/src/Mail/Service.php:510
 msgid "Mail Exception Occurred. Unable to send mail: "
 msgstr "Une erreur de traitement de courriel est survenue. Impossible d'envoyer le courriel :"
 
-#: concrete/src/Mail/Service.php:510 concrete/src/Mail/Service.php:530
+#: concrete/src/Mail/Service.php:513 concrete/src/Mail/Service.php:533
 msgid "Template Used"
 msgstr "Modèle utilisé"
 
-#: concrete/src/Mail/Service.php:511
+#: concrete/src/Mail/Service.php:514
 #: concrete/single_pages/account/messages.php:95
 #: concrete/single_pages/account/messages.php:206
 msgid "To"
 msgstr "Dans"
 
-#: concrete/src/Mail/Service.php:512
+#: concrete/src/Mail/Service.php:515
 #: concrete/single_pages/account/messages.php:97
 msgid "From"
 msgstr "De"
 
-#: concrete/src/Mail/Service.php:514
+#: concrete/src/Mail/Service.php:517
 msgid "Reply-To"
 msgstr "Répondre à"
 
-#: concrete/src/Mail/Service.php:516
+#: concrete/src/Mail/Service.php:519
 #: concrete/blocks/core_conversation_message/composer.php:12
 #: concrete/single_pages/account/messages.php:99
 #: concrete/single_pages/account/messages.php:211
 msgid "Subject"
 msgstr "Sujet"
 
-#: concrete/src/Mail/Service.php:517
+#: concrete/src/Mail/Service.php:520
 #: concrete/elements/dashboard/express/control/options/text.php:17
 msgid "Body"
 msgstr "Corps"
 
-#: concrete/src/Mail/Service.php:526
+#: concrete/src/Mail/Service.php:529
 msgid "EMAILS ARE ENABLED. THIS EMAIL WAS SENT TO mail()"
 msgstr "LES COURRIELS SONT ACTIVÉS. CE COURRIEL A ÉTÉ ENVOYÉ À mail()"
 
-#: concrete/src/Mail/Service.php:528
+#: concrete/src/Mail/Service.php:531
 msgid "EMAILS ARE DISABLED. THIS EMAIL WAS LOGGED BUT NOT SENT"
 msgstr "LES COURRIELS SONT DÉSACTIVÉS. CE COURRIEL A ÉTÉ ENREGISTRÉ MAIS PAS ENVOYÉ"
 
-#: concrete/src/Mail/Service.php:531
+#: concrete/src/Mail/Service.php:534
 #, php-format
 msgid "Mail Details: %s"
 msgstr "Détails du courriel: %s"
@@ -10946,8 +10923,8 @@ msgstr ""
 msgid "\"%s\" is not a valid asset group handle"
 msgstr "\"%s\" n’est pas un handle d’asset valide"
 
-#: concrete/src/Http/ResponseFactory.php:88
-#: concrete/src/Http/ResponseFactory.php:89
+#: concrete/src/Http/ResponseFactory.php:86
+#: concrete/src/Http/ResponseFactory.php:87
 msgid "Page not found"
 msgstr "Page non trouvée."
 
@@ -10972,6 +10949,7 @@ msgid "Migrating file set permissions..."
 msgstr ""
 
 #: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:182
+#: concrete/src/Updater/Migrations/Migrations/Version20161109000000.php:11
 msgid "Updating tables found in doctrine xml..."
 msgstr ""
 
@@ -11066,6 +11044,10 @@ msgstr ""
 #: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:1148
 #, php-format
 msgid "Setting pages for section %s to site tree %s..."
+msgstr ""
+
+#: concrete/src/Updater/Migrations/Migrations/Version20161109000000.php:17
+msgid "Adding fields to workflow and select tables..."
 msgstr ""
 
 #: concrete/src/Updater/Migrations/Configuration.php:18
@@ -12170,7 +12152,7 @@ msgstr "Vous n'avez pas la permission de publier une page à cet emplacement."
 msgid "New Version %s"
 msgstr "Nouvelle version %s"
 
-#: concrete/src/Page/Collection/Collection.php:295
+#: concrete/src/Page/Collection/Collection.php:300
 #, php-format
 msgid "Version %d"
 msgstr "Version %d"
@@ -13211,7 +13193,7 @@ msgstr "Contenu du fichier"
 msgid "File Name"
 msgstr "Nom du fichier"
 
-#: concrete/src/Entity/File/Version.php:725
+#: concrete/src/Entity/File/Version.php:726
 msgid "Invalid dimensions."
 msgstr "Dimensions invalides"
 
@@ -13248,7 +13230,7 @@ msgstr ""
 msgid "Writing nginx configuration is not implemented"
 msgstr ""
 
-#: concrete/src/Sharing/ShareThisPage/Service.php:45
+#: concrete/src/Sharing/ShareThisPage/Service.php:54
 #, php-format
 msgid ""
 "Check out this article on %s:\n"
@@ -13257,7 +13239,7 @@ msgid ""
 "%s"
 msgstr "Lire cet article sur %s:\n\n%s\n%s"
 
-#: concrete/src/Sharing/ShareThisPage/Service.php:46
+#: concrete/src/Sharing/ShareThisPage/Service.php:55
 msgid "Thought you'd enjoy this article."
 msgstr "Nous pensons que vous aimerez cet article."
 
@@ -17255,21 +17237,21 @@ msgstr ""
 msgid "New %s"
 msgstr ""
 
-#: concrete/elements/dashboard/express/control.php:25
+#: concrete/elements/dashboard/express/control.php:28
 msgid "Edit Control"
 msgstr ""
 
-#: concrete/elements/dashboard/express/control.php:26
+#: concrete/elements/dashboard/express/control.php:29
 #: concrete/elements/page_types/composer/form/layout_set/control.php:43
 #: concrete/single_pages/dashboard/pages/types/form.php:246
 msgid "Delete Control"
 msgstr "Supprimer le contrôle"
 
-#: concrete/elements/dashboard/express/control.php:34
+#: concrete/elements/dashboard/express/control.php:37
 msgid "Are you sure you want to delete this control? This cannot be undone."
 msgstr ""
 
-#: concrete/elements/dashboard/express/control.php:37
+#: concrete/elements/dashboard/express/control.php:40
 #: concrete/single_pages/dashboard/files/sets.php:19
 #: concrete/single_pages/dashboard/users/group_sets.php:56
 #: concrete/single_pages/dashboard/system/express/entities/forms/view_form.php:55
@@ -24260,17 +24242,17 @@ msgstr ""
 msgid "Blacklist - skip the selected areas below when searching content."
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/seo/searchindex.php:19
+#: concrete/single_pages/dashboard/system/seo/searchindex.php:18
 msgid "Areas"
 msgstr "Zones"
 
-#: concrete/single_pages/dashboard/system/seo/searchindex.php:34
+#: concrete/single_pages/dashboard/system/seo/searchindex.php:33
 msgid ""
 "Once the index is clear, you must reindex your site from the Automated Jobs "
 "page."
 msgstr "Une fois que l'index est nettoyé, vous devez ré-indexer votre site depuis la page des tâches automatisées."
 
-#: concrete/single_pages/dashboard/system/seo/searchindex.php:34
+#: concrete/single_pages/dashboard/system/seo/searchindex.php:33
 msgid "Clear Search Index"
 msgstr "Purger l'index de recherche"
 

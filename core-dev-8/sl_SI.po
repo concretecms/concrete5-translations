@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-11-14T06:00:23+01:00\n"
-"PO-Revision-Date: 2016-11-14 09:23+0000\n"
+"POT-Creation-Date: 2016-11-15T06:00:35+01:00\n"
+"PO-Revision-Date: 2016-11-15 08:27+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Slovenian (Slovenia) (http://www.transifex.com/concrete5/concrete5/language/sl_SI/)\n"
 "MIME-Version: 1.0\n"
@@ -4621,7 +4621,7 @@ msgstr "Ali res želite pobrisati naslednje datoteke?"
 #: concrete/src/StyleCustomizer/Style/ColorStyle.php:42
 #: concrete/elements/attribute/key/header.php:12
 #: concrete/elements/files/search_header.php:44
-#: concrete/elements/dashboard/express/control.php:36
+#: concrete/elements/dashboard/express/control.php:39
 #: concrete/elements/permission/details/block/timed_guest_access.php:37
 #: concrete/elements/permission/lists/tree/node.php:98
 #: concrete/elements/permission/lists/area.php:119
@@ -5338,7 +5338,7 @@ msgstr "Ni dodanih uporabnikov ali skupin."
 #: concrete/single_pages/dashboard/system/seo/bulk.php:192
 #: concrete/single_pages/dashboard/system/seo/codes.php:20
 #: concrete/single_pages/dashboard/system/seo/excluded.php:18
-#: concrete/single_pages/dashboard/system/seo/searchindex.php:37
+#: concrete/single_pages/dashboard/system/seo/searchindex.php:36
 #: concrete/single_pages/dashboard/system/seo/statistics.php:15
 #: concrete/single_pages/dashboard/system/seo/urls.php:63
 #: concrete/single_pages/dashboard/system/environment/debug.php:61
@@ -5760,6 +5760,7 @@ msgid "Description"
 msgstr "Opis"
 
 #: concrete/tools/page_types/composer/form/edit_control.php:58
+#: concrete/elements/dashboard/express/control.php:23
 #: concrete/elements/page_types/composer/form/layout_set/control.php:26
 #: concrete/blocks/form/form_setup_html.php:171
 #: concrete/blocks/form/form_setup_html.php:258
@@ -7487,7 +7488,7 @@ msgid "Object added successfully."
 msgstr ""
 
 #: concrete/controllers/single_page/dashboard/system/express/entities.php:92
-#: concrete/blocks/express_entry_detail/controller.php:126
+#: concrete/blocks/express_entry_detail/controller.php:125
 #: concrete/blocks/express_entry_list/controller.php:215
 msgid "** Choose Entity"
 msgstr ""
@@ -10647,47 +10648,21 @@ msgid "Index Search Engine - Updates"
 msgstr "Naredi kazalo za iskalca  - posodobi"
 
 #: concrete/jobs/index_search.php:20
-msgid ""
-"Index the site to allow searching to work quickly and accurately. Only "
-"reindexes pages that have changed since last indexing."
-msgstr "Naredite kazalo, da bo iskanje hitro in natančno. Postopek obnovi le kazalce na spremenjene strani."
+msgid "Index the site to allow searching to work quickly and accurately"
+msgstr ""
 
-#: concrete/jobs/index_search.php:43
-msgid "Indexing complete. Index is up to date"
-msgstr "Kazalo je narejeno in posodobljeno."
-
-#: concrete/jobs/index_search.php:46
-#, php-format
-msgid ""
-"Index partially updated. %s pages indexed (maximum number.) Re-run this job "
-"to continue this process."
-msgstr "Kazalo je delno posodobljeno. %s strani je indeksiran (maksimalno število.) Ponovno zaženite opravilo za nadaljevanje."
-
-#: concrete/jobs/index_search.php:50
-msgid "Index updated."
-msgstr "kazalo je posodobljeno."
-
-#: concrete/jobs/index_search.php:51
-#, php-format
-msgid "%d page required reindexing."
-msgid_plural "%d pages required reindexing."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-
-#: concrete/jobs/index_search_all.php:23
+#: concrete/jobs/index_search_all.php:44
 msgid "Index Search Engine - All"
 msgstr "Naredi kazalo za iskalca - vse"
 
-#: concrete/jobs/index_search_all.php:28
+#: concrete/jobs/index_search_all.php:49
 msgid "Empties the page search index and reindexes all pages."
 msgstr "Pobriše kazalo in ponovno indeksira vse strani."
 
-#: concrete/jobs/index_search_all.php:62
+#: concrete/jobs/index_search_all.php:120
 #, php-format
-msgid "Index updated. %s pages indexed."
-msgstr "Kazalo je posodobljeno. %s strani je indeksiranih."
+msgid "Indexed %s Pages, %s Users, %s Files, and %s Sites."
+msgstr ""
 
 #: concrete/jobs/process_email.php:12
 msgid "Process Email Posts"
@@ -10902,50 +10877,50 @@ msgid ""
 "present in the original message."
 msgstr "Ne morem obdelati e-pošte. Vaše sporočilo mora vsebovati preverjevalni del iz originalnega sporočila."
 
-#: concrete/src/Mail/Service.php:507
+#: concrete/src/Mail/Service.php:510
 msgid "Mail Exception Occurred. Unable to send mail: "
 msgstr "Prišlo je do napake pri pošiljanju e-pošte. Ne morem poslati:"
 
-#: concrete/src/Mail/Service.php:510 concrete/src/Mail/Service.php:530
+#: concrete/src/Mail/Service.php:513 concrete/src/Mail/Service.php:533
 msgid "Template Used"
 msgstr "Predloga v uporabi"
 
-#: concrete/src/Mail/Service.php:511
+#: concrete/src/Mail/Service.php:514
 #: concrete/single_pages/account/messages.php:95
 #: concrete/single_pages/account/messages.php:206
 msgid "To"
 msgstr "Na"
 
-#: concrete/src/Mail/Service.php:512
+#: concrete/src/Mail/Service.php:515
 #: concrete/single_pages/account/messages.php:97
 msgid "From"
 msgstr "Od"
 
-#: concrete/src/Mail/Service.php:514
+#: concrete/src/Mail/Service.php:517
 msgid "Reply-To"
 msgstr "Odgovori"
 
-#: concrete/src/Mail/Service.php:516
+#: concrete/src/Mail/Service.php:519
 #: concrete/blocks/core_conversation_message/composer.php:12
 #: concrete/single_pages/account/messages.php:99
 #: concrete/single_pages/account/messages.php:211
 msgid "Subject"
 msgstr "Zadeva"
 
-#: concrete/src/Mail/Service.php:517
+#: concrete/src/Mail/Service.php:520
 #: concrete/elements/dashboard/express/control/options/text.php:17
 msgid "Body"
 msgstr "Telo besedila"
 
-#: concrete/src/Mail/Service.php:526
+#: concrete/src/Mail/Service.php:529
 msgid "EMAILS ARE ENABLED. THIS EMAIL WAS SENT TO mail()"
 msgstr "E_POŠTA JE OMOGOČENA. TA E_POŠTA JE BILA POSLANA mail()"
 
-#: concrete/src/Mail/Service.php:528
+#: concrete/src/Mail/Service.php:531
 msgid "EMAILS ARE DISABLED. THIS EMAIL WAS LOGGED BUT NOT SENT"
 msgstr "E_POŠTA JE ONEMOGOČENA. TA E-POŠTA JE BILA ZAPISANA V DNEVNIK, NE PA POSLANA"
 
-#: concrete/src/Mail/Service.php:531
+#: concrete/src/Mail/Service.php:534
 #, php-format
 msgid "Mail Details: %s"
 msgstr "Podrobnosti e-pošte: %s"
@@ -10966,8 +10941,8 @@ msgstr ""
 msgid "\"%s\" is not a valid asset group handle"
 msgstr ""
 
-#: concrete/src/Http/ResponseFactory.php:88
-#: concrete/src/Http/ResponseFactory.php:89
+#: concrete/src/Http/ResponseFactory.php:86
+#: concrete/src/Http/ResponseFactory.php:87
 msgid "Page not found"
 msgstr ""
 
@@ -10992,6 +10967,7 @@ msgid "Migrating file set permissions..."
 msgstr ""
 
 #: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:182
+#: concrete/src/Updater/Migrations/Migrations/Version20161109000000.php:11
 msgid "Updating tables found in doctrine xml..."
 msgstr ""
 
@@ -11086,6 +11062,10 @@ msgstr ""
 #: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:1148
 #, php-format
 msgid "Setting pages for section %s to site tree %s..."
+msgstr ""
+
+#: concrete/src/Updater/Migrations/Migrations/Version20161109000000.php:17
+msgid "Adding fields to workflow and select tables..."
 msgstr ""
 
 #: concrete/src/Updater/Migrations/Configuration.php:18
@@ -12192,7 +12172,7 @@ msgstr "Nimate dovoljenja za objavo strani na tej lokaciji."
 msgid "New Version %s"
 msgstr "nova verzija %s"
 
-#: concrete/src/Page/Collection/Collection.php:295
+#: concrete/src/Page/Collection/Collection.php:300
 #, php-format
 msgid "Version %d"
 msgstr "Verzija %d"
@@ -13233,7 +13213,7 @@ msgstr ""
 msgid "File Name"
 msgstr ""
 
-#: concrete/src/Entity/File/Version.php:725
+#: concrete/src/Entity/File/Version.php:726
 msgid "Invalid dimensions."
 msgstr ""
 
@@ -13270,7 +13250,7 @@ msgstr ""
 msgid "Writing nginx configuration is not implemented"
 msgstr ""
 
-#: concrete/src/Sharing/ShareThisPage/Service.php:45
+#: concrete/src/Sharing/ShareThisPage/Service.php:54
 #, php-format
 msgid ""
 "Check out this article on %s:\n"
@@ -13279,7 +13259,7 @@ msgid ""
 "%s"
 msgstr "Preverite ta članek na %s:\n\n%s\n%s"
 
-#: concrete/src/Sharing/ShareThisPage/Service.php:46
+#: concrete/src/Sharing/ShareThisPage/Service.php:55
 msgid "Thought you'd enjoy this article."
 msgstr "Verjetno ste uživali v tem članku."
 
@@ -17299,21 +17279,21 @@ msgstr ""
 msgid "New %s"
 msgstr ""
 
-#: concrete/elements/dashboard/express/control.php:25
+#: concrete/elements/dashboard/express/control.php:28
 msgid "Edit Control"
 msgstr ""
 
-#: concrete/elements/dashboard/express/control.php:26
+#: concrete/elements/dashboard/express/control.php:29
 #: concrete/elements/page_types/composer/form/layout_set/control.php:43
 #: concrete/single_pages/dashboard/pages/types/form.php:246
 msgid "Delete Control"
 msgstr "Pobriši kontrolo"
 
-#: concrete/elements/dashboard/express/control.php:34
+#: concrete/elements/dashboard/express/control.php:37
 msgid "Are you sure you want to delete this control? This cannot be undone."
 msgstr ""
 
-#: concrete/elements/dashboard/express/control.php:37
+#: concrete/elements/dashboard/express/control.php:40
 #: concrete/single_pages/dashboard/files/sets.php:19
 #: concrete/single_pages/dashboard/users/group_sets.php:56
 #: concrete/single_pages/dashboard/system/express/entities/forms/view_form.php:55
@@ -24332,17 +24312,17 @@ msgstr ""
 msgid "Blacklist - skip the selected areas below when searching content."
 msgstr ""
 
-#: concrete/single_pages/dashboard/system/seo/searchindex.php:19
+#: concrete/single_pages/dashboard/system/seo/searchindex.php:18
 msgid "Areas"
 msgstr "Območja"
 
-#: concrete/single_pages/dashboard/system/seo/searchindex.php:34
+#: concrete/single_pages/dashboard/system/seo/searchindex.php:33
 msgid ""
 "Once the index is clear, you must reindex your site from the Automated Jobs "
 "page."
 msgstr "Ko je indeks pobrisan, ga morate ponovno narediti na strani za Avtomatska opravila."
 
-#: concrete/single_pages/dashboard/system/seo/searchindex.php:34
+#: concrete/single_pages/dashboard/system/seo/searchindex.php:33
 msgid "Clear Search Index"
 msgstr "Brisanje iskalnega indeksa"
 

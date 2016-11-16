@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-11-14T06:00:23+01:00\n"
-"PO-Revision-Date: 2016-11-14 12:07+0000\n"
-"Last-Translator: Takuro Hishikawa <hishikawa@concrete5.co.jp>\n"
+"POT-Creation-Date: 2016-11-15T06:00:35+01:00\n"
+"PO-Revision-Date: 2016-11-15 08:27+0000\n"
+"Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/concrete5/concrete5/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -4620,7 +4620,7 @@ msgstr "本当に次のファイルを削除してもよろしいですか？"
 #: concrete/src/StyleCustomizer/Style/ColorStyle.php:42
 #: concrete/elements/attribute/key/header.php:12
 #: concrete/elements/files/search_header.php:44
-#: concrete/elements/dashboard/express/control.php:36
+#: concrete/elements/dashboard/express/control.php:39
 #: concrete/elements/permission/details/block/timed_guest_access.php:37
 #: concrete/elements/permission/lists/tree/node.php:98
 #: concrete/elements/permission/lists/area.php:119
@@ -5331,7 +5331,7 @@ msgstr "ユーザーやグループが追加されていません。"
 #: concrete/single_pages/dashboard/system/seo/bulk.php:192
 #: concrete/single_pages/dashboard/system/seo/codes.php:20
 #: concrete/single_pages/dashboard/system/seo/excluded.php:18
-#: concrete/single_pages/dashboard/system/seo/searchindex.php:37
+#: concrete/single_pages/dashboard/system/seo/searchindex.php:36
 #: concrete/single_pages/dashboard/system/seo/statistics.php:15
 #: concrete/single_pages/dashboard/system/seo/urls.php:63
 #: concrete/single_pages/dashboard/system/environment/debug.php:61
@@ -5753,6 +5753,7 @@ msgid "Description"
 msgstr "説明"
 
 #: concrete/tools/page_types/composer/form/edit_control.php:58
+#: concrete/elements/dashboard/express/control.php:23
 #: concrete/elements/page_types/composer/form/layout_set/control.php:26
 #: concrete/blocks/form/form_setup_html.php:171
 #: concrete/blocks/form/form_setup_html.php:258
@@ -7468,7 +7469,7 @@ msgid "Object added successfully."
 msgstr "オブジェクトが追加されました。"
 
 #: concrete/controllers/single_page/dashboard/system/express/entities.php:92
-#: concrete/blocks/express_entry_detail/controller.php:126
+#: concrete/blocks/express_entry_detail/controller.php:125
 #: concrete/blocks/express_entry_list/controller.php:215
 msgid "** Choose Entity"
 msgstr "** エンティティを選択"
@@ -10616,44 +10617,21 @@ msgid "Index Search Engine - Updates"
 msgstr "検索エンジンインデックス（更新）"
 
 #: concrete/jobs/index_search.php:20
-msgid ""
-"Index the site to allow searching to work quickly and accurately. Only "
-"reindexes pages that have changed since last indexing."
-msgstr "検索を高速かつ正確に行うため、サイトのインデックス（索引）を作成します。最後にインデックスを生成してから変更のあったページのみ再インデックスを行います。"
+msgid "Index the site to allow searching to work quickly and accurately"
+msgstr ""
 
-#: concrete/jobs/index_search.php:43
-msgid "Indexing complete. Index is up to date"
-msgstr "インデックスが作成されました。インデックスは最新です"
-
-#: concrete/jobs/index_search.php:46
-#, php-format
-msgid ""
-"Index partially updated. %s pages indexed (maximum number.) Re-run this job "
-"to continue this process."
-msgstr "インデックスが部分的に更新されました。 %s ページが索引済み (最大値) このジョブを再実行すると残りを索引します。"
-
-#: concrete/jobs/index_search.php:50
-msgid "Index updated."
-msgstr "検索インデックスが更新されました。"
-
-#: concrete/jobs/index_search.php:51
-#, php-format
-msgid "%d page required reindexing."
-msgid_plural "%d pages required reindexing."
-msgstr[0] "%d ページの索引再生成が必要です。"
-
-#: concrete/jobs/index_search_all.php:23
+#: concrete/jobs/index_search_all.php:44
 msgid "Index Search Engine - All"
 msgstr "検索エンジンインデックス（すべて）"
 
-#: concrete/jobs/index_search_all.php:28
+#: concrete/jobs/index_search_all.php:49
 msgid "Empties the page search index and reindexes all pages."
 msgstr "ページ検索インデックスを空にし、すべてのページを再インデックスします。"
 
-#: concrete/jobs/index_search_all.php:62
+#: concrete/jobs/index_search_all.php:120
 #, php-format
-msgid "Index updated. %s pages indexed."
-msgstr "インデックスを更新しました。 %s ページをインデックスしました。"
+msgid "Indexed %s Pages, %s Users, %s Files, and %s Sites."
+msgstr ""
 
 #: concrete/jobs/process_email.php:12
 msgid "Process Email Posts"
@@ -10865,50 +10843,50 @@ msgid ""
 "present in the original message."
 msgstr "Eメールを正常に処理できません。あなたのオリジナルメッセージにバリデーションハッシュがあるかチェックしてください。"
 
-#: concrete/src/Mail/Service.php:507
+#: concrete/src/Mail/Service.php:510
 msgid "Mail Exception Occurred. Unable to send mail: "
 msgstr "メールの例外が発生しました。メールが送信できません:"
 
-#: concrete/src/Mail/Service.php:510 concrete/src/Mail/Service.php:530
+#: concrete/src/Mail/Service.php:513 concrete/src/Mail/Service.php:533
 msgid "Template Used"
 msgstr "使用テンプレート"
 
-#: concrete/src/Mail/Service.php:511
+#: concrete/src/Mail/Service.php:514
 #: concrete/single_pages/account/messages.php:95
 #: concrete/single_pages/account/messages.php:206
 msgid "To"
 msgstr "コピー先"
 
-#: concrete/src/Mail/Service.php:512
+#: concrete/src/Mail/Service.php:515
 #: concrete/single_pages/account/messages.php:97
 msgid "From"
 msgstr "開始"
 
-#: concrete/src/Mail/Service.php:514
+#: concrete/src/Mail/Service.php:517
 msgid "Reply-To"
 msgstr "Reply-To"
 
-#: concrete/src/Mail/Service.php:516
+#: concrete/src/Mail/Service.php:519
 #: concrete/blocks/core_conversation_message/composer.php:12
 #: concrete/single_pages/account/messages.php:99
 #: concrete/single_pages/account/messages.php:211
 msgid "Subject"
 msgstr "件名"
 
-#: concrete/src/Mail/Service.php:517
+#: concrete/src/Mail/Service.php:520
 #: concrete/elements/dashboard/express/control/options/text.php:17
 msgid "Body"
 msgstr "本文"
 
-#: concrete/src/Mail/Service.php:526
+#: concrete/src/Mail/Service.php:529
 msgid "EMAILS ARE ENABLED. THIS EMAIL WAS SENT TO mail()"
 msgstr "メール機能は有効。このメールはmail()もしくはmb_send_mail()に送られました。"
 
-#: concrete/src/Mail/Service.php:528
+#: concrete/src/Mail/Service.php:531
 msgid "EMAILS ARE DISABLED. THIS EMAIL WAS LOGGED BUT NOT SENT"
 msgstr "メール機能は無効。このメールはログに記録されましたが、送信されませんでした"
 
-#: concrete/src/Mail/Service.php:531
+#: concrete/src/Mail/Service.php:534
 #, php-format
 msgid "Mail Details: %s"
 msgstr "メール詳細： %s"
@@ -10929,8 +10907,8 @@ msgstr "無効なパス走査を検出しました。正規のHTTPクライア�
 msgid "\"%s\" is not a valid asset group handle"
 msgstr "\"%s\" は不正なアセットグループハンドルです"
 
-#: concrete/src/Http/ResponseFactory.php:88
-#: concrete/src/Http/ResponseFactory.php:89
+#: concrete/src/Http/ResponseFactory.php:86
+#: concrete/src/Http/ResponseFactory.php:87
 msgid "Page not found"
 msgstr "ページが見つかりません"
 
@@ -10955,6 +10933,7 @@ msgid "Migrating file set permissions..."
 msgstr "ファイルセット権限を移行中..."
 
 #: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:182
+#: concrete/src/Updater/Migrations/Migrations/Version20161109000000.php:11
 msgid "Updating tables found in doctrine xml..."
 msgstr "Doctrine XML に宣言があるテーブルを更新中..."
 
@@ -11050,6 +11029,10 @@ msgstr "多言語セクションを移行中: %s..."
 #, php-format
 msgid "Setting pages for section %s to site tree %s..."
 msgstr "セクション %s ページを %s のサイトツリーに設定中"
+
+#: concrete/src/Updater/Migrations/Migrations/Version20161109000000.php:17
+msgid "Adding fields to workflow and select tables..."
+msgstr ""
 
 #: concrete/src/Updater/Migrations/Configuration.php:18
 msgid "concrete5 Migrations"
@@ -12152,7 +12135,7 @@ msgstr "この場所にページを公開する権限がありません。"
 msgid "New Version %s"
 msgstr "新バージョン %s"
 
-#: concrete/src/Page/Collection/Collection.php:295
+#: concrete/src/Page/Collection/Collection.php:300
 #, php-format
 msgid "Version %d"
 msgstr "バージョン %d"
@@ -13193,7 +13176,7 @@ msgstr "ファイルコンテンツ"
 msgid "File Name"
 msgstr "ファイル名"
 
-#: concrete/src/Entity/File/Version.php:725
+#: concrete/src/Entity/File/Version.php:726
 msgid "Invalid dimensions."
 msgstr "無効なサイズです。"
 
@@ -13230,7 +13213,7 @@ msgstr "nginx の設定を読み込む機能は入っていません。"
 msgid "Writing nginx configuration is not implemented"
 msgstr "nginx の設定を書き込む機能は入っていません。"
 
-#: concrete/src/Sharing/ShareThisPage/Service.php:45
+#: concrete/src/Sharing/ShareThisPage/Service.php:54
 #, php-format
 msgid ""
 "Check out this article on %s:\n"
@@ -13239,7 +13222,7 @@ msgid ""
 "%s"
 msgstr "%sの記事を確認する\n\n%s\n%s"
 
-#: concrete/src/Sharing/ShareThisPage/Service.php:46
+#: concrete/src/Sharing/ShareThisPage/Service.php:55
 msgid "Thought you'd enjoy this article."
 msgstr "この記事はおすすめです。"
 
@@ -17226,21 +17209,21 @@ msgstr "ヘッドライン"
 msgid "New %s"
 msgstr "New %s"
 
-#: concrete/elements/dashboard/express/control.php:25
+#: concrete/elements/dashboard/express/control.php:28
 msgid "Edit Control"
 msgstr "コントロール編集"
 
-#: concrete/elements/dashboard/express/control.php:26
+#: concrete/elements/dashboard/express/control.php:29
 #: concrete/elements/page_types/composer/form/layout_set/control.php:43
 #: concrete/single_pages/dashboard/pages/types/form.php:246
 msgid "Delete Control"
 msgstr "コントロールを削除"
 
-#: concrete/elements/dashboard/express/control.php:34
+#: concrete/elements/dashboard/express/control.php:37
 msgid "Are you sure you want to delete this control? This cannot be undone."
 msgstr "このコントロールを削除していいですか？やり直しできません。"
 
-#: concrete/elements/dashboard/express/control.php:37
+#: concrete/elements/dashboard/express/control.php:40
 #: concrete/single_pages/dashboard/files/sets.php:19
 #: concrete/single_pages/dashboard/users/group_sets.php:56
 #: concrete/single_pages/dashboard/system/express/entities/forms/view_form.php:55
@@ -24217,17 +24200,17 @@ msgstr "ホワイトリスト - 下記で選択されたエリアだけがコン
 msgid "Blacklist - skip the selected areas below when searching content."
 msgstr "ブラックリスト - 下記で選択されたエリアはコンテンツ検索かが除外されます。"
 
-#: concrete/single_pages/dashboard/system/seo/searchindex.php:19
+#: concrete/single_pages/dashboard/system/seo/searchindex.php:18
 msgid "Areas"
 msgstr "エリア"
 
-#: concrete/single_pages/dashboard/system/seo/searchindex.php:34
+#: concrete/single_pages/dashboard/system/seo/searchindex.php:33
 msgid ""
 "Once the index is clear, you must reindex your site from the Automated Jobs "
 "page."
 msgstr "サイトのインデックスをクリアしたら、必ず管理画面中の自動実行ジョブページより再インデックスしてください。"
 
-#: concrete/single_pages/dashboard/system/seo/searchindex.php:34
+#: concrete/single_pages/dashboard/system/seo/searchindex.php:33
 msgid "Clear Search Index"
 msgstr "検索インデックスを消去"
 
