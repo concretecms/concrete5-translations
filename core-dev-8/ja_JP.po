@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-12-08T06:00:47+01:00\n"
-"PO-Revision-Date: 2016-12-08 09:26+0000\n"
-"Last-Translator: Michele Locati <michele@locati.it>\n"
+"POT-Creation-Date: 2016-12-09T06:00:38+01:00\n"
+"PO-Revision-Date: 2016-12-10 06:10+0000\n"
+"Last-Translator: Katz Ueno <katzueno@deerstudio.com>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/concrete5/concrete5/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -4417,7 +4417,7 @@ msgid "Stay signed in for two weeks"
 msgstr "2週間ログインしたままにする"
 
 #: concrete/authentication/concrete/form.php:28
-#: concrete/src/Editor/EditorServiceProvider.php:75
+#: concrete/src/Editor/EditorServiceProvider.php:74
 #: concrete/views/frontend/install.php:404
 #: concrete/single_pages/dashboard/users/add.php:34
 #: concrete/single_pages/dashboard/users/search.php:120
@@ -6144,7 +6144,7 @@ msgstr "すべてのページバージョンは削除できません。"
 
 #: concrete/controllers/panel/page/versions.php:137
 msgid "You cannot delete the active version."
-msgstr ""
+msgstr "有効なバージョンは削除できません。"
 
 #: concrete/controllers/panel/page/versions.php:148
 #, php-format
@@ -7282,7 +7282,7 @@ msgstr "自分のサーバー設定から、この設定セクションを取り
 
 #: concrete/controllers/single_page/dashboard/system/seo/urls.php:129
 msgid "The canonical URL provided must start with \"http://\" or \"https://\"."
-msgstr ""
+msgstr "カノニカルURLは \"http://\" や \"https://\" で始まる必要があります。"
 
 #: concrete/controllers/single_page/dashboard/system/seo/urls.php:132
 msgid "The SSL canonical URL provided must start with \"https://\"."
@@ -7291,7 +7291,7 @@ msgstr "カノニカルURLは \"https://\" で始まっている必要があり�
 #: concrete/controllers/single_page/dashboard/system/seo/urls.php:135
 msgid ""
 "If your canonical URL is an SSL URL, you may not specify a separate SSL URL."
-msgstr ""
+msgstr "カノニカル URL が SSL 接続の場合、SSL の URL を違うものには出来ない場合があります。"
 
 #: concrete/controllers/single_page/dashboard/system/environment/debug.php:33
 msgid "Debug configuration saved."
@@ -8972,7 +8972,7 @@ msgstr "現在の画像"
 #: concrete/controllers/frontend/assets_localization.php:115
 #: concrete/controllers/frontend/assets_localization.php:436
 #: concrete/src/File/Type/Type.php:428
-#: concrete/src/Editor/EditorServiceProvider.php:70
+#: concrete/src/Editor/EditorServiceProvider.php:69
 #: concrete/src/Backup/ContentImporter/ValueInspector/Item/ImageItem.php:8
 #: concrete/elements/custom_style.php:191
 #: concrete/blocks/image_slider/form_setup_html.php:320
@@ -9112,7 +9112,7 @@ msgid "Delete Forever"
 msgstr "完全に削除"
 
 #: concrete/controllers/frontend/assets_localization.php:154
-#: concrete/src/Editor/EditorServiceProvider.php:85
+#: concrete/src/Editor/EditorServiceProvider.php:83
 #: concrete/blocks/form/form_setup_html.php:16
 #: concrete/blocks/page_list/page_list_form.php:8
 #: concrete/blocks/feature/form.php:10
@@ -9673,7 +9673,7 @@ msgid "Insert Video"
 msgstr "ビデオを追加"
 
 #: concrete/controllers/frontend/assets_localization.php:367
-#: concrete/src/Editor/EditorServiceProvider.php:98
+#: concrete/src/Editor/EditorServiceProvider.php:96
 #: concrete/src/Editor/RedactorEditor.php:35
 msgid "Table"
 msgstr "テーブル"
@@ -9986,7 +9986,7 @@ msgid "Insert Character"
 msgstr "特殊文字の挿入"
 
 #: concrete/controllers/frontend/assets_localization.php:445
-#: concrete/src/Editor/EditorServiceProvider.php:103
+#: concrete/src/Editor/EditorServiceProvider.php:100
 msgid "Undo"
 msgstr "取り消す"
 
@@ -11030,15 +11030,15 @@ msgstr "ワークフローにテーブルを追加し、テーブルを選択し
 
 #: concrete/src/Updater/Migrations/Migrations/Version20161203000000.php:18
 msgid "Fixing file folder permissions"
-msgstr ""
+msgstr "ファイルフォルダー権限を修正中"
 
 #: concrete/src/Updater/Migrations/Migrations/Version20161203000000.php:34
 msgid "Updating permission keys to trigger workflows"
-msgstr ""
+msgstr "パーミッションキーを更新し、ワークフローを実行します"
 
 #: concrete/src/Updater/Migrations/Migrations/Version20161203000000.php:42
 msgid "Updating tracking code."
-msgstr ""
+msgstr "トラッキングコードを更新中"
 
 #: concrete/src/Updater/Migrations/Configuration.php:18
 msgid "concrete5 Migrations"
@@ -11595,168 +11595,156 @@ msgid "Format"
 msgstr "フォーマット"
 
 #: concrete/src/Editor/EditorServiceProvider.php:67
-msgid "Form Elements"
-msgstr "フォームエレメント"
-
-#: concrete/src/Editor/EditorServiceProvider.php:68
 #: concrete/blocks/horizontal_rule/controller.php:21
 msgid "Horizontal Rule"
 msgstr "水平線"
 
-#: concrete/src/Editor/EditorServiceProvider.php:69
+#: concrete/src/Editor/EditorServiceProvider.php:68
 msgid "HTML Output Writer"
 msgstr "HTML 出力ライター"
 
-#: concrete/src/Editor/EditorServiceProvider.php:71
+#: concrete/src/Editor/EditorServiceProvider.php:70
 msgid "Enhanced Image"
 msgstr "拡張画像"
 
-#: concrete/src/Editor/EditorServiceProvider.php:72
+#: concrete/src/Editor/EditorServiceProvider.php:71
 msgid "Indent Block"
 msgstr "インデントブロック"
 
-#: concrete/src/Editor/EditorServiceProvider.php:73
+#: concrete/src/Editor/EditorServiceProvider.php:72
 msgid "Indent List"
 msgstr "インデントリスト"
 
-#: concrete/src/Editor/EditorServiceProvider.php:74
+#: concrete/src/Editor/EditorServiceProvider.php:73
 msgid "Justify"
 msgstr "均等割付け"
 
-#: concrete/src/Editor/EditorServiceProvider.php:76
+#: concrete/src/Editor/EditorServiceProvider.php:75
 #: concrete/blocks/express_entry_list/controller.php:41
 msgid "List"
 msgstr "一覧"
 
-#: concrete/src/Editor/EditorServiceProvider.php:77
+#: concrete/src/Editor/EditorServiceProvider.php:76
 msgid "List Style"
 msgstr "リストスタイル"
 
-#: concrete/src/Editor/EditorServiceProvider.php:78
+#: concrete/src/Editor/EditorServiceProvider.php:77
 msgid "Magic Line"
 msgstr "マジックライン"
 
-#: concrete/src/Editor/EditorServiceProvider.php:79
+#: concrete/src/Editor/EditorServiceProvider.php:78
 msgid "Maximize"
 msgstr "最大化"
 
-#: concrete/src/Editor/EditorServiceProvider.php:80
+#: concrete/src/Editor/EditorServiceProvider.php:79
 #: concrete/src/Workflow/Request/ApprovePageRequest.php:74
 #: concrete/views/panels/page/versions.php:45
 #: concrete/views/panels/sitemap.php:6
 msgid "New Page"
 msgstr "新しいページ"
 
-#: concrete/src/Editor/EditorServiceProvider.php:81
+#: concrete/src/Editor/EditorServiceProvider.php:80
 msgid "Page Break"
 msgstr "改ページ"
 
-#: concrete/src/Editor/EditorServiceProvider.php:82
+#: concrete/src/Editor/EditorServiceProvider.php:81
 msgid "Paste As Plain Text"
 msgstr "プレーンテキストの貼り付け"
 
-#: concrete/src/Editor/EditorServiceProvider.php:83
+#: concrete/src/Editor/EditorServiceProvider.php:82
 msgid "Paste from Word"
 msgstr "Word から貼り付け"
 
 #: concrete/src/Editor/EditorServiceProvider.php:84
-msgid "Placeholder"
-msgstr "プレースホルダ―"
-
-#: concrete/src/Editor/EditorServiceProvider.php:86
 msgid "Remove Format"
 msgstr "フォーマットの削除"
 
-#: concrete/src/Editor/EditorServiceProvider.php:87
+#: concrete/src/Editor/EditorServiceProvider.php:85
 msgid "Editor Resize"
 msgstr "エディタリサイズ"
 
-#: concrete/src/Editor/EditorServiceProvider.php:88
+#: concrete/src/Editor/EditorServiceProvider.php:86
 msgid "SpellCheckAsYouType (SCAYT)"
 msgstr "リアルタイムスペルチェック (SCAYT)"
 
-#: concrete/src/Editor/EditorServiceProvider.php:89
+#: concrete/src/Editor/EditorServiceProvider.php:87
 #: concrete/single_pages/dashboard/users/groups/bulkupdate.php:61
 msgid "Select All"
 msgstr "すべてを選択"
 
-#: concrete/src/Editor/EditorServiceProvider.php:90
+#: concrete/src/Editor/EditorServiceProvider.php:88
 msgid "Show Blocks"
 msgstr "ブロックを表示"
 
-#: concrete/src/Editor/EditorServiceProvider.php:91
+#: concrete/src/Editor/EditorServiceProvider.php:89
 msgid "Show Table Borders"
 msgstr "テーブルの枠を表示"
 
-#: concrete/src/Editor/EditorServiceProvider.php:92
+#: concrete/src/Editor/EditorServiceProvider.php:90
 msgid "Insert Smiley"
 msgstr "Smiley を挿入"
 
-#: concrete/src/Editor/EditorServiceProvider.php:93
+#: concrete/src/Editor/EditorServiceProvider.php:91
 msgid "Source Editing Area"
 msgstr "ソース編集エリア"
 
-#: concrete/src/Editor/EditorServiceProvider.php:94
+#: concrete/src/Editor/EditorServiceProvider.php:92
 msgid "Source Dialog"
 msgstr "ソースダイアログ"
 
-#: concrete/src/Editor/EditorServiceProvider.php:95
+#: concrete/src/Editor/EditorServiceProvider.php:93
 msgid "Special Characters"
 msgstr "特殊文字"
 
-#: concrete/src/Editor/EditorServiceProvider.php:96
+#: concrete/src/Editor/EditorServiceProvider.php:94
 msgid "Styles Combo"
 msgstr "スタイルコンボ"
 
-#: concrete/src/Editor/EditorServiceProvider.php:97
+#: concrete/src/Editor/EditorServiceProvider.php:95
 msgid "Tab Key Handling"
 msgstr "Tabキー設定"
 
-#: concrete/src/Editor/EditorServiceProvider.php:99
+#: concrete/src/Editor/EditorServiceProvider.php:97
 msgid "Table Resize"
 msgstr "テーブルリサイズ"
 
-#: concrete/src/Editor/EditorServiceProvider.php:100
+#: concrete/src/Editor/EditorServiceProvider.php:98
 msgid "Table Tools"
 msgstr "テーブルツール"
 
-#: concrete/src/Editor/EditorServiceProvider.php:101
-msgid "Content Templates"
-msgstr "コンテンツテンプレート"
-
-#: concrete/src/Editor/EditorServiceProvider.php:102
+#: concrete/src/Editor/EditorServiceProvider.php:99
 msgid "Editor Toolbar"
 msgstr "編集バー"
 
-#: concrete/src/Editor/EditorServiceProvider.php:104
+#: concrete/src/Editor/EditorServiceProvider.php:101
 msgid "WebSpellChecker"
 msgstr "Web スペルチェッカー"
 
-#: concrete/src/Editor/EditorServiceProvider.php:105
+#: concrete/src/Editor/EditorServiceProvider.php:102
 msgid "IFrame Editing Area"
 msgstr "iFrame 編集エリア"
 
-#: concrete/src/Editor/EditorServiceProvider.php:242
+#: concrete/src/Editor/EditorServiceProvider.php:239
 msgid "concrete5 Inline"
 msgstr "concrete5 インライン"
 
-#: concrete/src/Editor/EditorServiceProvider.php:248
+#: concrete/src/Editor/EditorServiceProvider.php:245
 msgid "concrete5 File Browser"
 msgstr "concrete5 ファイルブラウザ"
 
-#: concrete/src/Editor/EditorServiceProvider.php:254
+#: concrete/src/Editor/EditorServiceProvider.php:251
 msgid "concrete5 Upload Image"
 msgstr "concrete5 画像アップロード"
 
-#: concrete/src/Editor/EditorServiceProvider.php:260
+#: concrete/src/Editor/EditorServiceProvider.php:257
 msgid "concrete5 Link"
 msgstr "concrete5 リンク"
 
-#: concrete/src/Editor/EditorServiceProvider.php:266
+#: concrete/src/Editor/EditorServiceProvider.php:263
 msgid "Normalize On Change"
 msgstr "変更時ノーマライズする"
 
-#: concrete/src/Editor/EditorServiceProvider.php:272
+#: concrete/src/Editor/EditorServiceProvider.php:269
 msgid "concrete5 Styles"
 msgstr "concrete5 スタイル"
 
@@ -19023,7 +19011,7 @@ msgstr "キャッシュ期間を設定してください (単位は秒)。"
 
 #: concrete/views/dialogs/block/delete.php:14
 msgid "Are you sure you wish to delete this block?"
-msgstr ""
+msgstr "このブロックを削除してもよろしいですか？"
 
 #: concrete/views/dialogs/block/delete.php:18
 msgid ""
@@ -19638,7 +19626,7 @@ msgstr "既存ページにマッピング"
 
 #: concrete/views/panels/page/versions.php:23
 msgid "Live"
-msgstr ""
+msgstr "公開"
 
 #: concrete/views/panels/page/versions.php:30
 msgid "Edit by"
@@ -19650,11 +19638,11 @@ msgstr "承認者"
 
 #: concrete/views/panels/page/versions.php:35
 msgid "Scheduled by"
-msgstr ""
+msgstr "スケジュール設定者"
 
 #: concrete/views/panels/page/versions.php:35
 msgid " for "
-msgstr ""
+msgstr "日時"
 
 #: concrete/views/panels/page/versions.php:65
 #: concrete/views/panels/page/versions.php:67
@@ -19699,11 +19687,11 @@ msgstr "(タイトル無し)"
 
 #: concrete/views/frontend/install.php:52
 msgid "An error occurred."
-msgstr ""
+msgstr "エラーが発生しました。"
 
 #: concrete/views/frontend/install.php:53
 msgid "Installation Failed."
-msgstr ""
+msgstr "インストールが失敗しました。"
 
 #: concrete/views/frontend/install.php:58
 msgid ""
@@ -24262,7 +24250,7 @@ msgstr "カノニカル URL"
 
 #: concrete/single_pages/dashboard/system/seo/urls.php:34
 msgid "Separate SSL URL"
-msgstr ""
+msgstr "別 SSL URL"
 
 #: concrete/single_pages/dashboard/system/seo/urls.php:39
 msgid ""
@@ -25338,7 +25326,7 @@ msgstr "On - ログインページから誰もがアカウントを作成でき�
 
 #: concrete/single_pages/dashboard/system/registration/open.php:38
 msgid "On - approve manually"
-msgstr ""
+msgstr "オン - 手動で承認"
 
 #: concrete/single_pages/dashboard/system/registration/open.php:45
 msgid ""
