@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2016-12-13T06:00:33+01:00\n"
-"PO-Revision-Date: 2016-12-13 13:25+0000\n"
+"POT-Creation-Date: 2016-12-17T06:00:36+01:00\n"
+"PO-Revision-Date: 2016-12-17 13:05+0000\n"
 "Last-Translator: Anton Schepetkov <schepetkov@gmail.com>\n"
 "Language-Team: Russian (Russia) (http://www.transifex.com/concrete5/concrete5/language/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -3654,7 +3654,7 @@ msgstr "Donec blandit lectus nec neque ullamcorper rhoncus. Sed adipiscing tempu
 #: concrete/blocks/express_entry_list/view.php:23
 #: concrete/blocks/search/controller.php:98
 #: concrete/single_pages/dashboard/files/sets.php:225
-#: concrete/single_pages/dashboard/users/groups/bulkupdate.php:170
+#: concrete/single_pages/dashboard/users/groups/bulkupdate.php:173
 #: concrete/single_pages/dashboard/users/points/view.php:15
 #: concrete/single_pages/dashboard/system/seo/bulk.php:59
 #: concrete/single_pages/dashboard/system/seo/bulk.php:110
@@ -5146,8 +5146,8 @@ msgstr "Вы переместили \"%s\" в \"%s\". Укажите тип пе
 
 #: concrete/tools/dashboard/sitemap_drag_request.php:204
 #: concrete/controllers/frontend/assets_localization.php:61
-#: concrete/single_pages/dashboard/users/groups/bulkupdate.php:101
-#: concrete/single_pages/dashboard/users/groups/bulkupdate.php:106
+#: concrete/single_pages/dashboard/users/groups/bulkupdate.php:104
+#: concrete/single_pages/dashboard/users/groups/bulkupdate.php:109
 msgid "Move"
 msgstr "Переместить"
 
@@ -7158,7 +7158,7 @@ msgstr "У типа миниатюры должно быть название."
 msgid ""
 "Your thumbnail type handle must only contain lowercase letters and "
 "underscores."
-msgstr "Дескриптор типа миниатюры должен содержать только буквы латинского алфавита в нижнем регистре и знаки подчеркивания."
+msgstr "Идентификатор типа миниатюры должен содержать только буквы латинского алфавита в нижнем регистре и знаки подчеркивания."
 
 #: concrete/controllers/single_page/dashboard/system/files/thumbnails.php:54
 msgid "Width can only be an integer, with no units."
@@ -7197,7 +7197,7 @@ msgstr "Такой идентификатор уже используется."
 
 #: concrete/controllers/single_page/dashboard/system/seo/bulk.php:94
 #: concrete/controllers/single_page/dashboard/system/conversations/points.php:36
-#: concrete/controllers/single_page/dashboard/system/attributes/types.php:23
+#: concrete/controllers/single_page/dashboard/system/attributes/types.php:21
 #: concrete/controllers/single_page/dashboard/system/basics/accessibility.php:26
 #: concrete/controllers/single_page/dashboard/pages/themes.php:40
 msgid "Invalid CSRF token. Please refresh and try again."
@@ -7318,13 +7318,13 @@ msgstr "Если ваш канонический URL работает по пр�
 msgid "Debug configuration saved."
 msgstr "Параметры отладки успешно сохранены."
 
-#: concrete/controllers/single_page/dashboard/system/environment/entities.php:49
+#: concrete/controllers/single_page/dashboard/system/environment/entities.php:38
 msgid ""
 "Doctrine cache cleared, proxy classes regenerated, entity database table "
 "schema updated."
 msgstr "Кеш Doctrine очищен, классы прокси сгенерированы снова, схемы таблиц базы данных объектов обновлены."
 
-#: concrete/controllers/single_page/dashboard/system/environment/entities.php:53
+#: concrete/controllers/single_page/dashboard/system/environment/entities.php:42
 msgid "Doctrine development settings updated."
 msgstr "Настройки разработки Doctrine обновлены."
 
@@ -7460,75 +7460,80 @@ msgstr "Данные формы"
 msgid "Display order updated successfully."
 msgstr "Порядок отображения успешно обновлен."
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:16
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:17
 #: concrete/elements/dashboard/express/menu.php:28
 msgid "Add Data Object"
 msgstr "Добавить объект данных"
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:28
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:191
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:29
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:197
 msgid ""
 "You must create a handle for your data object. It may contain only lowercase"
 " letters and underscores."
 msgstr "Необходимо задать идентификатор для объекта данных. Он может содержать только буквы в нижнем регистре и символы подчеркивания."
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:32
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:195
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:33
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:201
+msgid "An express object with this handle already exists."
+msgstr "Экспресс-объект с таким идентификатором уже существует."
+
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:38
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:206
 msgid "You must give your data object a name."
 msgstr "Необходимо задать имя объекту данных."
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:74
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:80
 msgid "Object added successfully."
 msgstr "Объект успешно добавлен."
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:81
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:87
 #: concrete/blocks/express_entry_detail/controller.php:137
 #: concrete/blocks/express_entry_list/controller.php:215
 msgid "** Choose Entity"
 msgstr "** Выберите объект"
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:102
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:108
 msgid "Invalid express entity."
 msgstr "Недопустимый экспресс-объект."
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:111
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:117
 msgid "Entity deleted successfully."
 msgstr "Объект успешно удален."
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:123
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:129
 msgid "Object Details"
 msgstr "Содержимое объекта"
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:143
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:149
 msgid "** Select Form"
 msgstr "** Выбрать форму"
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:147
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:153
 msgid "** No Owner"
 msgstr "** Нет владельца"
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:168
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:174
 #: concrete/elements/dashboard/express/detail_navigation.php:17
 msgid "Edit Entity"
 msgstr "Редактирование объекта"
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:199
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:210
 msgid "You must choose where the results for your entity are going live."
 msgstr "Необходимо указать где будут храниться результаты действий в объектах."
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:203
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:214
 msgid "An entity cannot own itself."
 msgstr "Объект не может принадлежать сам себе."
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:216
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:227
 msgid "You must specify a valid default view form."
 msgstr "Необходимо указать форму для просмотра по умолчанию."
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:219
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:230
 msgid "You must specify a valid default edit form."
 msgstr "Необходимо указать форму для редактирования по умолчанию."
 
-#: concrete/controllers/single_page/dashboard/system/express/entities.php:252
+#: concrete/controllers/single_page/dashboard/system/express/entities.php:263
 msgid "Object updated successfully."
 msgstr "Объект успешно обновлен."
 
@@ -7733,9 +7738,9 @@ msgstr "Вы получите тестовое сообщение сообщен
 #: concrete/controllers/single_page/dashboard/system/mail/method/test.php:22
 #: concrete/controllers/single_page/dashboard/system/mail/importers.php:26
 #: concrete/controllers/single_page/dashboard/system/mail/method.php:20
-#: concrete/controllers/single_page/dashboard/reports/forms/legacy.php:136
-#: concrete/controllers/single_page/dashboard/reports/forms/legacy.php:144
-#: concrete/controllers/single_page/dashboard/reports/forms/legacy.php:153
+#: concrete/controllers/single_page/dashboard/reports/forms/legacy.php:134
+#: concrete/controllers/single_page/dashboard/reports/forms/legacy.php:142
+#: concrete/controllers/single_page/dashboard/reports/forms/legacy.php:151
 msgid "Invalid Token."
 msgstr "Недопустимый маркер."
 
@@ -7837,7 +7842,7 @@ msgstr "Используемый редактор изменен."
 
 #: concrete/controllers/single_page/dashboard/system/conversations/editor.php:39
 msgid "Invalid editor handle."
-msgstr "Недопустимый дескриптор редактора."
+msgstr "Недопустимый идентификатор редактора."
 
 #: concrete/controllers/single_page/dashboard/system/conversations/points.php:18
 msgid "Rating types updated."
@@ -7910,11 +7915,11 @@ msgstr "Вы не можете удалить данный узел"
 msgid "Invalid tree type."
 msgstr "Недопустимый тип дерева."
 
-#: concrete/controllers/single_page/dashboard/system/attributes/types.php:48
+#: concrete/controllers/single_page/dashboard/system/attributes/types.php:46
 msgid "Attribute Type Associations saved."
 msgstr "Ассоциации с типами атрибутов сохранены"
 
-#: concrete/controllers/single_page/dashboard/system/attributes/types.php:51
+#: concrete/controllers/single_page/dashboard/system/attributes/types.php:49
 msgid "Attribute Type added."
 msgstr "Тип атрибута добавлен."
 
@@ -8146,11 +8151,11 @@ msgstr "Число запусков"
 msgid "Query"
 msgstr "Запрос"
 
-#: concrete/controllers/single_page/dashboard/reports/forms/legacy.php:56
+#: concrete/controllers/single_page/dashboard/reports/forms/legacy.php:54
 msgid "Submitted Date"
 msgstr "Дата заполнения"
 
-#: concrete/controllers/single_page/dashboard/reports/forms/legacy.php:57
+#: concrete/controllers/single_page/dashboard/reports/forms/legacy.php:55
 #: concrete/controllers/single_page/dashboard/reports/logs.php:86
 #: concrete/views/dialogs/file/properties.php:195
 #: concrete/views/panels/page/preview_as/form.php:33
@@ -8164,7 +8169,7 @@ msgstr "Дата заполнения"
 msgid "User"
 msgstr "Пользователь"
 
-#: concrete/controllers/single_page/dashboard/reports/forms/legacy.php:106
+#: concrete/controllers/single_page/dashboard/reports/forms/legacy.php:104
 #: concrete/single_pages/dashboard/reports/forms/legacy.php:227
 msgid "File not found"
 msgstr "Файл не найден"
@@ -8230,19 +8235,20 @@ msgstr "Необходимо указать корректное названи�
 #: concrete/controllers/single_page/dashboard/pages/types.php:117
 #: concrete/controllers/single_page/dashboard/pages/types.php:148
 msgid "You must specify a valid handle for your page type."
-msgstr "Необходимо указать корректный дескриптор для типа страницы."
+msgstr "Необходимо указать корректный идентификатор для типа страницы."
 
 #: concrete/controllers/single_page/dashboard/pages/types/add.php:45
+#: concrete/controllers/single_page/dashboard/pages/types.php:152
 msgid "You must specify a unique handle for your page type."
-msgstr "Необходимо указать уникальный дескриптор для типа страницы."
+msgstr "Необходимо указать уникальный идентификатор для типа страницы."
 
 #: concrete/controllers/single_page/dashboard/pages/types/add.php:51
-#: concrete/controllers/single_page/dashboard/pages/types.php:152
+#: concrete/controllers/single_page/dashboard/pages/types.php:157
 msgid "You must choose a valid default page template."
 msgstr "Необходимо выбрать шаблон страницы по умолчанию."
 
 #: concrete/controllers/single_page/dashboard/pages/types/add.php:63
-#: concrete/controllers/single_page/dashboard/pages/types.php:165
+#: concrete/controllers/single_page/dashboard/pages/types.php:170
 msgid "You must specify at least one page template."
 msgstr "Необходимо указать как минимум один шаблон страницы."
 
@@ -8343,7 +8349,7 @@ msgstr "Необходимо указать описание."
 
 #: concrete/controllers/single_page/dashboard/pages/feeds.php:56
 msgid "A valid handle must contain no punctuation or spaces."
-msgstr "Дескриптор не должен содержать символы пунктуации и пробелы."
+msgstr "Идентификатор не должен содержать символы пунктуации и пробелы."
 
 #: concrete/controllers/single_page/dashboard/pages/feeds.php:108
 msgid "Invalid feed."
@@ -8388,7 +8394,7 @@ msgstr "Вы не можете удалить шаблон, который ус�
 
 #: concrete/controllers/single_page/dashboard/pages/templates.php:53
 msgid "Invalid page template"
-msgstr "Недействительный тип страницы."
+msgstr "Недействительный шаблон страницы."
 
 #: concrete/controllers/single_page/dashboard/pages/templates.php:60
 msgid "Page template added successfully."
@@ -8396,11 +8402,11 @@ msgstr "Шаблон страницы успешно добавлен."
 
 #: concrete/controllers/single_page/dashboard/pages/templates.php:66
 msgid "Page template deleted successfully."
-msgstr "Тип страницы успешно удален."
+msgstr "Шаблон страницы успешно удален."
 
 #: concrete/controllers/single_page/dashboard/pages/templates.php:72
 msgid "Page template updated successfully."
-msgstr "Тип страницы успешно обновлен."
+msgstr "Шаблон страницы успешно обновлен."
 
 #: concrete/controllers/single_page/dashboard/pages/templates.php:86
 msgid "Invalid page template object."
@@ -8464,7 +8470,7 @@ msgstr[1] "Данный тип страницы используется на %d
 msgstr[2] "Данный тип страницы используется на %d страницах."
 msgstr[3] "Данный тип страницы используется на %d страницах."
 
-#: concrete/controllers/single_page/dashboard/pages/types.php:169
+#: concrete/controllers/single_page/dashboard/pages/types.php:174
 msgid "Invalid page type target type."
 msgstr "Недопустимый тип целевой страницы."
 
@@ -10935,7 +10941,7 @@ msgstr "Неверный путь. Путь должен содержать ко
 #: concrete/src/Editor/Plugin.php:36
 #, php-format
 msgid "\"%s\" is not a valid asset group handle"
-msgstr "\"%s\" не является допустимым дескриптором группы."
+msgstr "\"%s\" не является допустимым идентификатором группы."
 
 #: concrete/src/Http/ResponseFactory.php:86
 #: concrete/src/Http/ResponseFactory.php:87
@@ -10973,7 +10979,7 @@ msgid "Preparing problematic entity database tables..."
 msgstr "Подготовка проблемных таблиц базы данных..."
 
 #: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:245
-#: concrete/src/Updater/Migrations/Migrations/Version20161210000000.php:53
+#: concrete/src/Updater/Migrations/Migrations/Version20161216100000.php:53
 #, php-format
 msgid "Installing entity %s..."
 msgstr "Установка объекта %s..."
@@ -11085,6 +11091,10 @@ msgstr "Обновление блоков."
 #: concrete/src/Updater/Migrations/Migrations/Version20161208000000.php:40
 msgid "Updating old empty file attributes."
 msgstr "Обновление старых пустых атрибутов у файлов."
+
+#: concrete/src/Updater/Migrations/Migrations/Version20161216000000.php:21
+msgid "Adding guests to Express Form Blocks."
+msgstr "Добавление гостей в блоки экспресс-формы."
 
 #: concrete/src/Updater/Migrations/Configuration.php:18
 msgid "concrete5 Migrations"
@@ -11456,11 +11466,11 @@ msgstr "Невозможно привязать пользователя."
 #: concrete/src/Authentication/AuthenticationType.php:151
 #, php-format
 msgid "Authentication type with handle %s already exists!"
-msgstr "Тип аутентификации с дескриптором \"%s \" уже существует!"
+msgstr "Тип аутентификации с идентификатором \"%s \" уже существует!"
 
 #: concrete/src/Authentication/AuthenticationType.php:185
 msgid "Invalid Authentication Type Handle"
-msgstr "Недопустимый дескриптор для типа аутентификации."
+msgstr "Недопустимый идентификатор для типа аутентификации."
 
 #: concrete/src/Authentication/AuthenticationType.php:206
 msgid "Invalid Authentication Type ID"
@@ -11539,6 +11549,8 @@ msgid "Core Property"
 msgstr "Основное свойство"
 
 #: concrete/src/Express/Search/ColumnSet/Available.php:17
+#: concrete/single_pages/dashboard/system/express/entities/add.php:43
+#: concrete/single_pages/dashboard/system/express/entities/edit.php:52
 msgid "Custom Display Order"
 msgstr "Настраиваемый порядок отображения"
 
@@ -11547,7 +11559,7 @@ msgstr "Настраиваемый порядок отображения"
 msgid "Element %s does not exist"
 msgstr "Элемент %s не существует."
 
-#: concrete/src/View/ErrorView.php:17
+#: concrete/src/View/ErrorView.php:16
 msgid "Action is not available here."
 msgstr "Невозможно выполнить действие."
 
@@ -11717,7 +11729,7 @@ msgid "SpellCheckAsYouType (SCAYT)"
 msgstr "Проверка правописания через плагин SCAYT (SpellCheckAsYouType)"
 
 #: concrete/src/Editor/EditorServiceProvider.php:87
-#: concrete/single_pages/dashboard/users/groups/bulkupdate.php:61
+#: concrete/single_pages/dashboard/users/groups/bulkupdate.php:64
 msgid "Select All"
 msgstr "Выбрать все"
 
@@ -11883,21 +11895,21 @@ msgstr "Недопустимое определение колонки: %s в т
 msgid "Invalid schema version found. Expecting 0.3"
 msgstr "Обнаружена недопустимая версия схемы базы данных. Требуется версия 0.3"
 
-#: concrete/src/Database/DatabaseStructureManager.php:88
+#: concrete/src/Database/DatabaseStructureManager.php:89
 #, php-format
 msgid ""
 "A file exists in place of the proxy directory. Please remove the '%s' file "
 "to proceed with the proxy class generation."
 msgstr "В директории прокси файл уже существует. Удалите файл '%s' для продолжения процесса генерации классов прокси."
 
-#: concrete/src/Database/DatabaseStructureManager.php:99
+#: concrete/src/Database/DatabaseStructureManager.php:100
 #, php-format
 msgid ""
 "Could not create the proxies directory. Please check the file permissions of"
 " the proxy directory: %s."
 msgstr "Невозможно создать директорию прокси. Проверьте права доступа к директории: %s"
 
-#: concrete/src/Database/DatabaseStructureManager.php:142
+#: concrete/src/Database/DatabaseStructureManager.php:143
 #, php-format
 msgid ""
 "Could not delete a proxy file. Please check the permissions of the proxy "
@@ -12065,7 +12077,7 @@ msgstr "Просмотр похожих страниц"
 msgid "Related Pages"
 msgstr "Похожие страницы"
 
-#: concrete/src/Page/Stack/Stack.php:160
+#: concrete/src/Page/Stack/Stack.php:164
 msgid "No Name"
 msgstr "(Без имени)"
 
@@ -13989,7 +14001,7 @@ msgstr "Запуск задач concrete5"
 
 #: concrete/src/Console/Command/JobCommand.php:22
 msgid "Find jobs by set instead of job handle"
-msgstr "Поиск задач по наборам вместо дескрипторов"
+msgstr "Поиск задач по наборам вместо идентификаторов"
 
 #: concrete/src/Console/Command/JobCommand.php:23
 msgid "List available jobs"
@@ -14005,7 +14017,7 @@ msgstr "Доступные задачи"
 
 #: concrete/src/Console/Command/JobCommand.php:50
 msgid "Job Handle"
-msgstr "Дескриптор задачи"
+msgstr "Идентификатор задачи"
 
 #: concrete/src/Console/Command/JobCommand.php:50
 msgid "Job Name"
@@ -14033,7 +14045,7 @@ msgstr "Набор задач с названием \"%s\" не найден"
 #: concrete/src/Console/Command/JobCommand.php:100
 #, php-format
 msgid "A job with handle \"%s\" was not found"
-msgstr "Набор задач с дескриптором \"%s\" не найден"
+msgstr "Набор задач с идентификатором \"%s\" не найден"
 
 #: concrete/src/Console/Command/JobCommand.php:115
 msgid "Job Failed"
@@ -18301,7 +18313,7 @@ msgstr "Название типа страницы"
 
 #: concrete/elements/page_types/form/base.php:48
 msgid "Page Type Handle"
-msgstr "Дескриптор типа страницы"
+msgstr "Идентификатор типа страницы"
 
 #: concrete/elements/page_types/form/base.php:53
 msgid "Default Page Template"
@@ -21202,7 +21214,7 @@ msgstr "Список страниц в зависимости от типа и/�
 #, php-format
 msgid ""
 "Error: The required page attribute with the handle of: \"%s\" doesn't exist"
-msgstr "Ошибка: Обязательный атрибут: \"%s\" не существует"
+msgstr "Ошибка: Обязательный атрибут страницы с идентификатором \"%s\" не существует"
 
 #: concrete/blocks/tags/tag_form.php:20
 msgid "Display a List of Tags From"
@@ -22498,7 +22510,7 @@ msgstr "Отображать миниатюры"
 msgid ""
 "You must create an attribute with the 'thumbnail' handle in order to use "
 "this option."
-msgstr "Для использования этой опции необходимо создать атрибут с дескриптором 'thumbnail'."
+msgstr "Для использования этой опции необходимо создать атрибут с идентификатором 'thumbnail'."
 
 #: concrete/blocks/page_list/page_list_form.php:469
 msgid "Use Different Link than Page Name"
@@ -23072,11 +23084,11 @@ msgstr "Формат ввода"
 msgid "Rich Text - Default Setting"
 msgstr "Форматированный текст - настройки по умолчанию"
 
-#: concrete/attributes/address/controller.php:184
+#: concrete/attributes/address/controller.php:189
 msgid "You must specify at least one country."
 msgstr "Необходимо указать хотя бы одну из стран."
 
-#: concrete/attributes/address/controller.php:191
+#: concrete/attributes/address/controller.php:196
 msgid "The default country must be in the list of custom countries."
 msgstr "Страна по умолчанию должна быть в списке стран."
 
@@ -23568,7 +23580,7 @@ msgstr "Установка невозможна!"
 
 #: concrete/single_pages/dashboard/extend/install.php:300
 #: concrete/single_pages/dashboard/blocks/types/view.php:69
-#: concrete/single_pages/dashboard/system/attributes/types.php:75
+#: concrete/single_pages/dashboard/system/attributes/types.php:76
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:251
 #: concrete/single_pages/dashboard/pages/themes/view.php:119
 msgid "Install"
@@ -23827,38 +23839,38 @@ msgstr "Название стека"
 msgid "You cannot access these permissions."
 msgstr "У вас нет доступа к этим правам"
 
-#: concrete/single_pages/dashboard/users/groups/bulkupdate.php:8
+#: concrete/single_pages/dashboard/users/groups/bulkupdate.php:11
 msgid "Confirm"
 msgstr "Подтверждение"
 
-#: concrete/single_pages/dashboard/users/groups/bulkupdate.php:11
+#: concrete/single_pages/dashboard/users/groups/bulkupdate.php:14
 #, php-format
 msgid "Move the following group(s) beneath <strong>%s</strong>."
 msgstr "Перемещение ниже указанных групп под группу <strong>%s</strong>."
 
-#: concrete/single_pages/dashboard/users/groups/bulkupdate.php:15
+#: concrete/single_pages/dashboard/users/groups/bulkupdate.php:18
 msgid ""
 "Move the following group(s) <strong>to the top level of groups</strong>."
 msgstr "Перемещение ниже указанных групп <strong>на верхний уровень в дереве всех групп</strong>."
 
-#: concrete/single_pages/dashboard/users/groups/bulkupdate.php:43
+#: concrete/single_pages/dashboard/users/groups/bulkupdate.php:46
 msgid "Move Groups"
 msgstr "Переместить группы"
 
-#: concrete/single_pages/dashboard/users/groups/bulkupdate.php:57
+#: concrete/single_pages/dashboard/users/groups/bulkupdate.php:60
 msgid "Choose Groups to Move"
 msgstr "Выбор групп для перемещения"
 
-#: concrete/single_pages/dashboard/users/groups/bulkupdate.php:78
+#: concrete/single_pages/dashboard/users/groups/bulkupdate.php:81
 msgid "Choose New Parent Location"
 msgstr "Новое расположение групп"
 
-#: concrete/single_pages/dashboard/users/groups/bulkupdate.php:102
+#: concrete/single_pages/dashboard/users/groups/bulkupdate.php:105
 msgid ""
 "Move selected groups (left column) beneath selected group (right column)"
 msgstr "Перемещение всех выбранных групп (в левой колонке) ниже указанной группы (в правой колонке)"
 
-#: concrete/single_pages/dashboard/users/groups/bulkupdate.php:158
+#: concrete/single_pages/dashboard/users/groups/bulkupdate.php:161
 msgid "Search for Groups to Move"
 msgstr "Поиск групп для перемещения"
 
@@ -23872,7 +23884,7 @@ msgstr "Включено"
 #: concrete/single_pages/dashboard/users/points/actions.php:25
 #: concrete/single_pages/dashboard/users/points/actions.php:102
 msgid "Action Handle"
-msgstr "Дескриптор действия"
+msgstr "Идентификатор действия"
 
 #: concrete/single_pages/dashboard/users/points/actions.php:40
 #: concrete/single_pages/dashboard/users/points/actions.php:101
@@ -24685,11 +24697,6 @@ msgstr "Множественная форма представления для 
 #: concrete/single_pages/dashboard/system/express/entities/add.php:40
 msgid "An internal description. This is not publicly displayed."
 msgstr "Внутреннее описание. Это нигде не отображается на сайте."
-
-#: concrete/single_pages/dashboard/system/express/entities/add.php:43
-#: concrete/single_pages/dashboard/system/express/entities/edit.php:52
-msgid "Custom Dispay Order"
-msgstr "Настраиваемый порядок отображения"
 
 #: concrete/single_pages/dashboard/system/express/entities/add.php:46
 #: concrete/single_pages/dashboard/system/express/entities/edit.php:55
