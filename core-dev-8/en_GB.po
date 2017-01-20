@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2017-01-18T06:00:04+01:00\n"
-"PO-Revision-Date: 2017-01-18 08:36+0000\n"
+"POT-Creation-Date: 2017-01-19T06:00:03+01:00\n"
+"PO-Revision-Date: 2017-01-19 08:14+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: English (United Kingdom) (http://www.transifex.com/concrete5/concrete5/language/en_GB/)\n"
 "MIME-Version: 1.0\n"
@@ -2807,7 +2807,7 @@ msgid "SecurImage (Default)"
 msgstr "SecurImage (Default)"
 
 #: concrete/config/install/base/permissions.xml:300
-#: concrete/src/Workflow/BasicWorkflow.php:173
+#: concrete/src/Workflow/BasicWorkflow.php:169
 msgid "Basic Workflow"
 msgstr "Basic Workflow"
 
@@ -6780,11 +6780,11 @@ msgstr ""
 msgid "Folder added."
 msgstr "Folder added."
 
-#: concrete/controllers/backend/tree/node/drag_request.php:56
+#: concrete/controllers/backend/tree/node/drag_request.php:73
 msgid "Item copied successfully."
 msgstr "Item copied successfully."
 
-#: concrete/controllers/backend/tree/node/drag_request.php:59
+#: concrete/controllers/backend/tree/node/drag_request.php:76
 msgid "Item moved successfully."
 msgstr "Item moved successfully."
 
@@ -14466,8 +14466,8 @@ msgstr "Results Folder"
 
 #: concrete/single_pages/dashboard/system/express/entities/edit.php:136
 msgid ""
-"Are you sure you want to delete this entity? All data entries for it will be"
-" removed. This cannot be undone."
+"Are you sure you want to delete this entity? All data entries and all its "
+"associations to other entities will be removed. This cannot be undone."
 msgstr ""
 
 #: concrete/single_pages/dashboard/system/express/entities/edit.php:139
@@ -15769,16 +15769,16 @@ msgstr "Version %d"
 msgid "No Name"
 msgstr "No Name"
 
-#: concrete/src/Page/Page.php:2492
+#: concrete/src/Page/Page.php:2493
 #, php-format
 msgid "Page \"%s\" at path \"%s\" deleted"
 msgstr "Page \"%s\" at path \"%s\" deleted"
 
-#: concrete/src/Page/Page.php:2492 concrete/src/Page/Page.php:2552
+#: concrete/src/Page/Page.php:2493 concrete/src/Page/Page.php:2553
 msgid "Page Action"
 msgstr "Page Action"
 
-#: concrete/src/Page/Page.php:2552
+#: concrete/src/Page/Page.php:2553
 #, php-format
 msgid "Page \"%s\" at path \"%s\" Moved to trash"
 msgstr "Page \"%s\" at path \"%s\" Moved to trash"
@@ -15841,6 +15841,9 @@ msgid "(Deleted Group)"
 msgstr "(Deleted Group)"
 
 #: concrete/src/Permission/Access/Entity/UserEntity.php:85
+#: concrete/src/Workflow/Progress/History.php:40
+#: concrete/src/Workflow/HistoryEntry/BasicHistoryEntry.php:15
+#: concrete/src/Workflow/BasicWorkflow.php:188
 msgid "(Deleted User)"
 msgstr "(Deleted User)"
 
@@ -20105,7 +20108,7 @@ msgstr ""
 msgid "Deny"
 msgstr "Deny"
 
-#: concrete/src/Workflow/Progress/History.php:35
+#: concrete/src/Workflow/Progress/History.php:43
 #, php-format
 msgid "Originally requested by %s."
 msgstr "Originally requested by %s."
@@ -20389,27 +20392,27 @@ msgstr "Approve Move"
 msgid "This permission key cannot start a workflow."
 msgstr "This permission key cannot start a workflow."
 
-#: concrete/src/Workflow/HistoryEntry/BasicHistoryEntry.php:14
+#: concrete/src/Workflow/HistoryEntry/BasicHistoryEntry.php:19
 #, php-format
 msgid "Approved by %s"
 msgstr "Approved by %s"
 
-#: concrete/src/Workflow/HistoryEntry/BasicHistoryEntry.php:17
+#: concrete/src/Workflow/HistoryEntry/BasicHistoryEntry.php:22
 #, php-format
 msgid "Denied by %s"
 msgstr "Denied by %s"
 
-#: concrete/src/Workflow/HistoryEntry/BasicHistoryEntry.php:21
+#: concrete/src/Workflow/HistoryEntry/BasicHistoryEntry.php:26
 #, php-format
 msgid " with the comments \"%s\""
 msgstr " with the comments \"%s\""
 
-#: concrete/src/Workflow/BasicWorkflow.php:146
+#: concrete/src/Workflow/BasicWorkflow.php:145
 #, php-format
 msgid "On %s, user %s submitted the following request: %s"
 msgstr "On %s, user %s submitted the following request: %s"
 
-#: concrete/src/Workflow/BasicWorkflow.php:193
+#: concrete/src/Workflow/BasicWorkflow.php:194
 #, php-format
 msgid "%s Submitted by <strong>%s</strong> on %s."
 msgstr "%s Submitted by <strong>%s</strong> on %s."
@@ -20425,7 +20428,7 @@ msgid ""
 "\n"
 msgstr "On %s, user %s cancelled the following request: \n\n---\n%s\n---\n\n"
 
-#: concrete/src/Workflow/BasicWorkflow.php:258
+#: concrete/src/Workflow/BasicWorkflow.php:259
 #, php-format
 msgid ""
 "On %s, user %s approved the following request: \n"
@@ -20578,6 +20581,10 @@ msgstr ""
 
 #: concrete/src/Updater/Migrations/Migrations/Version20161216000000.php:21
 msgid "Adding guests to Express Form Blocks."
+msgstr ""
+
+#: concrete/src/Updater/Migrations/Migrations/Version20170118000000.php:18
+msgid "Adding cvID to PageTypeComposerOutputBlocks..."
 msgstr ""
 
 #: concrete/src/Updater/Migrations/Configuration.php:18
