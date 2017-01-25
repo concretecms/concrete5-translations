@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2017-01-20T06:00:04+01:00\n"
-"PO-Revision-Date: 2017-01-20 08:41+0000\n"
+"POT-Creation-Date: 2017-01-24T06:00:03+01:00\n"
+"PO-Revision-Date: 2017-01-24 09:13+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Norwegian Bokmål (Norway) (http://www.transifex.com/concrete5/concrete5/language/nb_NO/)\n"
 "MIME-Version: 1.0\n"
@@ -4065,7 +4065,7 @@ msgstr "Du har ikke tillatelse til å godkjenne sideversjoner."
 #: concrete/controllers/panel/detail/page/attributes.php:150
 #: concrete/controllers/panel/detail/page/caching.php:27
 #: concrete/controllers/panel/detail/page/caching.php:42
-#: concrete/controllers/panel/detail/page/location.php:140
+#: concrete/controllers/panel/detail/page/location.php:142
 #: concrete/controllers/panel/detail/page/permissions.php:132
 #: concrete/controllers/panel/detail/page/seo.php:79
 msgid "Page Updated"
@@ -4134,7 +4134,7 @@ msgstr "Adgang nektet."
 msgid "You do not have permission to discard this page."
 msgstr "Du har ikke tillatelser til å forkaste denne siden."
 
-#: concrete/controllers/panel/detail/page/location.php:141
+#: concrete/controllers/panel/detail/page/location.php:143
 msgid "Page location information saved successfully."
 msgstr "Sideplasseringsinformasjonen ble lagret."
 
@@ -4437,7 +4437,7 @@ msgstr "Brukernavnet '%s' finnes allerede. Velg et annet."
 #: concrete/controllers/single_page/account/edit_profile.php:127
 #: concrete/controllers/single_page/dashboard/users/search.php:362
 #: concrete/controllers/single_page/register.php:103
-#: concrete/controllers/install.php:437
+#: concrete/controllers/install.php:434
 #: concrete/authentication/concrete/controller.php:265
 msgid "The two passwords provided do not match."
 msgstr "De to passordene er ikke like."
@@ -8870,7 +8870,7 @@ msgid_plural "%d items"
 msgstr[0] "%d element"
 msgstr[1] "%d elementer"
 
-#: concrete/controllers/install.php:96 concrete/controllers/install.php:386
+#: concrete/controllers/install.php:96 concrete/controllers/install.php:383
 #, php-format
 msgid "Invalid starting point: %s"
 msgstr "Ugyldig startspunkt: %s"
@@ -8888,7 +8888,7 @@ msgid "Unable to connect to database."
 msgstr "Kan ikke koble til databasen."
 
 #: concrete/controllers/install.php:138
-#: concrete/src/Package/StartingPointPackage.php:307
+#: concrete/src/Package/StartingPointPackage.php:328
 #, php-format
 msgid ""
 "There are already %s tables in this database. concrete5 must be installed in"
@@ -8951,37 +8951,37 @@ msgid ""
 "server."
 msgstr "Mappen packages/ på webtjeneren er ikke skrivbar."
 
-#: concrete/controllers/install.php:392
+#: concrete/controllers/install.php:389
 #, php-format
 msgctxt "InstallError"
 msgid "%s.<br><br>Trace:<br>%s"
 msgstr "%s.<br><br>Spor:<br>%s"
 
-#: concrete/controllers/install.php:425
+#: concrete/controllers/install.php:422
 msgid "Please specify your site's name"
 msgstr "Skriv inn nettstedets navn"
 
-#: concrete/controllers/install.php:426
+#: concrete/controllers/install.php:423
 msgid "Please specify a valid email address"
 msgstr "Skriv inn en gyldig e-postadresse"
 
-#: concrete/controllers/install.php:427
+#: concrete/controllers/install.php:424
 msgid "You must specify a valid database name"
 msgstr "Du må angi et gyldig database-navn"
 
-#: concrete/controllers/install.php:428
+#: concrete/controllers/install.php:425
 msgid "You must specify a valid database server"
 msgstr "Du må angi en gyldig database-tjener"
 
-#: concrete/controllers/install.php:503
+#: concrete/controllers/install.php:500
 msgid "Unable to open config/app.php for writing."
 msgstr "Kunne ikke skrive til filen config/app.php."
 
-#: concrete/controllers/install.php:524
+#: concrete/controllers/install.php:521
 msgid "Unable to open config/site_user.php for writing."
 msgstr "Kunne ikke skrive til filen config/site.php."
 
-#: concrete/controllers/install.php:549
+#: concrete/controllers/install.php:546
 msgid "You must select a valid sample content starting point."
 msgstr "Du må velge et startpunkt for demo-innhold."
 
@@ -13575,8 +13575,8 @@ msgid "Delete Location"
 msgstr "Slett plassering"
 
 #: concrete/single_pages/dashboard/system/files/storage.php:61
-#: concrete/src/Package/StartingPointPackage.php:253
-#: concrete/src/Package/StartingPointPackage.php:256
+#: concrete/src/Package/StartingPointPackage.php:274
+#: concrete/src/Package/StartingPointPackage.php:277
 #: concrete/blocks/page_title/form_add_edit.php:68
 #: concrete/blocks/page_title/form_add_edit.php:93
 msgid "Default"
@@ -20480,6 +20480,7 @@ msgstr ""
 
 #: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:245
 #: concrete/src/Updater/Migrations/Migrations/Version20161216100000.php:54
+#: concrete/src/Updater/Migrations/AbstractMigration.php:26
 #, php-format
 msgid "Installing entity %s..."
 msgstr ""
@@ -20598,6 +20599,15 @@ msgstr ""
 
 #: concrete/src/Updater/Migrations/Migrations/Version20170118000000.php:18
 msgid "Adding cvID to PageTypeComposerOutputBlocks..."
+msgstr ""
+
+#: concrete/src/Updater/Migrations/AbstractMigration.php:36
+msgid "Updating database tables found in doctrine xml..."
+msgstr ""
+
+#: concrete/src/Updater/Migrations/AbstractMigration.php:42
+#, php-format
+msgid "Refreshing block type %s"
 msgstr ""
 
 #: concrete/src/Updater/Migrations/Configuration.php:18
@@ -20911,139 +20921,139 @@ msgid ""
 "uninstalling."
 msgstr "Denne tilleggspakken inneholder det aktiverte temaet på nettstedet, vennligst skift tema før du avinnstallerer denne pakken."
 
-#: concrete/src/Package/StartingPointPackage.php:52
+#: concrete/src/Package/StartingPointPackage.php:55
 msgid "Starting installation and creating directories."
 msgstr "Starter installasjonen og oppretting av mapper."
 
-#: concrete/src/Package/StartingPointPackage.php:53
+#: concrete/src/Package/StartingPointPackage.php:56
 msgid "Creating database tables."
 msgstr "Oppretter databasetabeller."
 
-#: concrete/src/Package/StartingPointPackage.php:54
+#: concrete/src/Package/StartingPointPackage.php:57
 msgid "Creating site."
 msgstr "Oppretter side."
 
-#: concrete/src/Package/StartingPointPackage.php:55
+#: concrete/src/Package/StartingPointPackage.php:58
 msgid "Adding admin user."
 msgstr "Legger inn administrator."
 
-#: concrete/src/Package/StartingPointPackage.php:56
+#: concrete/src/Package/StartingPointPackage.php:59
 msgid "Installing permissions & workflow."
 msgstr "Installerer tillatelser og godkjenningsflyt."
 
-#: concrete/src/Package/StartingPointPackage.php:57
+#: concrete/src/Package/StartingPointPackage.php:60
 msgid "Installing Custom Data Objects."
 msgstr "Installerer tilpasset dataobjekter."
 
-#: concrete/src/Package/StartingPointPackage.php:58
+#: concrete/src/Package/StartingPointPackage.php:61
 msgid "Creating home page."
 msgstr "Oppretter hjemmeside."
 
-#: concrete/src/Package/StartingPointPackage.php:59
+#: concrete/src/Package/StartingPointPackage.php:62
 msgid "Installing attributes."
 msgstr "Installerer attributter."
 
-#: concrete/src/Package/StartingPointPackage.php:60
+#: concrete/src/Package/StartingPointPackage.php:63
 msgid "Adding block types."
 msgstr "Legger til blokktyper."
 
-#: concrete/src/Package/StartingPointPackage.php:61
+#: concrete/src/Package/StartingPointPackage.php:64
 msgid "Adding gathering data sources."
 msgstr "Legger til innsamling av datakilder."
 
-#: concrete/src/Package/StartingPointPackage.php:62
+#: concrete/src/Package/StartingPointPackage.php:65
 msgid "Page type basic setup."
 msgstr "Enkelt oppsett av sidetype."
 
-#: concrete/src/Package/StartingPointPackage.php:63
+#: concrete/src/Package/StartingPointPackage.php:66
 msgid "Adding themes."
 msgstr "Legger til temaer."
 
-#: concrete/src/Package/StartingPointPackage.php:64
+#: concrete/src/Package/StartingPointPackage.php:67
 msgid "Installing automated jobs."
 msgstr "Installerer automatiserte jobber."
 
-#: concrete/src/Package/StartingPointPackage.php:65
+#: concrete/src/Package/StartingPointPackage.php:68
 msgid "Installing dashboard."
 msgstr "Installerer kontrollpanelet."
 
-#: concrete/src/Package/StartingPointPackage.php:69
+#: concrete/src/Package/StartingPointPackage.php:72
 msgid "Installing login and registration pages."
 msgstr "Installerer login- og registreringssider."
 
-#: concrete/src/Package/StartingPointPackage.php:70
+#: concrete/src/Package/StartingPointPackage.php:73
 msgid "Adding image editor functionality."
 msgstr "Legger til bildebehandleren."
 
-#: concrete/src/Package/StartingPointPackage.php:71
+#: concrete/src/Package/StartingPointPackage.php:74
 msgid "Configuring site."
 msgstr "Konfigurerer nettstedet."
 
-#: concrete/src/Package/StartingPointPackage.php:72
+#: concrete/src/Package/StartingPointPackage.php:75
 msgid "Importing files."
 msgstr "Importerer filer."
 
-#: concrete/src/Package/StartingPointPackage.php:73
+#: concrete/src/Package/StartingPointPackage.php:76
 msgid "Adding pages and content."
 msgstr "Legger til sider og innhold."
 
-#: concrete/src/Package/StartingPointPackage.php:74
+#: concrete/src/Package/StartingPointPackage.php:77
 msgid "Adding desktops."
 msgstr "Legger til datamaskiner."
 
-#: concrete/src/Package/StartingPointPackage.php:75
+#: concrete/src/Package/StartingPointPackage.php:78
 msgid "Setting site permissions."
 msgstr "Setter siderettigheter."
 
-#: concrete/src/Package/StartingPointPackage.php:76
+#: concrete/src/Package/StartingPointPackage.php:79
 msgid "Finishing."
 msgstr "Fullfører."
 
-#: concrete/src/Package/StartingPointPackage.php:254
+#: concrete/src/Package/StartingPointPackage.php:275
 msgid "Local"
 msgstr "Lokal"
 
-#: concrete/src/Package/StartingPointPackage.php:264
+#: concrete/src/Package/StartingPointPackage.php:285
 msgctxt "ThumbnailTypeName"
 msgid "File Manager Thumbnails"
 msgstr "Filbehandler miniatyrbilder"
 
-#: concrete/src/Package/StartingPointPackage.php:272
+#: concrete/src/Package/StartingPointPackage.php:293
 msgctxt "ThumbnailTypeName"
 msgid "File Manager Detail Thumbnails"
 msgstr "Filbehandler detalj-miniatyrbilder"
 
-#: concrete/src/Package/StartingPointPackage.php:338
+#: concrete/src/Package/StartingPointPackage.php:359
 #, php-format
 msgid "Unable to install database: %s"
 msgstr "Kan ikke installere database: %s"
 
-#: concrete/src/Package/StartingPointPackage.php:375
+#: concrete/src/Package/StartingPointPackage.php:396
 msgctxt "GroupName"
 msgid "Guest"
 msgstr "Gjest"
 
-#: concrete/src/Package/StartingPointPackage.php:376
+#: concrete/src/Package/StartingPointPackage.php:397
 msgctxt "GroupDescription"
 msgid "The guest group represents unregistered visitors to your site."
 msgstr "Gjestegruppen representerer uregistrerte besøkende på ditt nettsted."
 
-#: concrete/src/Package/StartingPointPackage.php:381
+#: concrete/src/Package/StartingPointPackage.php:402
 msgctxt "GroupName"
 msgid "Registered Users"
 msgstr "Registrerte brukere"
 
-#: concrete/src/Package/StartingPointPackage.php:382
+#: concrete/src/Package/StartingPointPackage.php:403
 msgctxt "GroupDescription"
 msgid "The registered users group represents all user accounts."
 msgstr "Gruppen med registrerte brukere representerer alle brukerkontoene."
 
-#: concrete/src/Package/StartingPointPackage.php:386
+#: concrete/src/Package/StartingPointPackage.php:407
 msgctxt "GroupName"
 msgid "Administrators"
 msgstr "Administratorer"
 
-#: concrete/src/Package/StartingPointPackage.php:403
+#: concrete/src/Package/StartingPointPackage.php:424
 msgid "Won a Badge"
 msgstr "Vant et skilt"
 

@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2017-01-20T06:00:04+01:00\n"
-"PO-Revision-Date: 2017-01-20 11:13+0000\n"
+"POT-Creation-Date: 2017-01-24T06:00:03+01:00\n"
+"PO-Revision-Date: 2017-01-24 09:13+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Italian (Italy) (http://www.transifex.com/concrete5/concrete5/language/it_IT/)\n"
 "MIME-Version: 1.0\n"
@@ -4064,7 +4064,7 @@ msgstr "Non si ha l’autorizzazione di approvare le versioni delle pagine."
 #: concrete/controllers/panel/detail/page/attributes.php:150
 #: concrete/controllers/panel/detail/page/caching.php:27
 #: concrete/controllers/panel/detail/page/caching.php:42
-#: concrete/controllers/panel/detail/page/location.php:140
+#: concrete/controllers/panel/detail/page/location.php:142
 #: concrete/controllers/panel/detail/page/permissions.php:132
 #: concrete/controllers/panel/detail/page/seo.php:79
 msgid "Page Updated"
@@ -4133,7 +4133,7 @@ msgstr "Accesso negato."
 msgid "You do not have permission to discard this page."
 msgstr "Non si ha l’autorizzazione di scartare questa pagina."
 
-#: concrete/controllers/panel/detail/page/location.php:141
+#: concrete/controllers/panel/detail/page/location.php:143
 msgid "Page location information saved successfully."
 msgstr "Le informazioni sulla posizione della pagina sono state salvate."
 
@@ -4436,7 +4436,7 @@ msgstr "Il nome utente “%s” è già in uso. Sceglierne un altro."
 #: concrete/controllers/single_page/account/edit_profile.php:127
 #: concrete/controllers/single_page/dashboard/users/search.php:362
 #: concrete/controllers/single_page/register.php:103
-#: concrete/controllers/install.php:437
+#: concrete/controllers/install.php:434
 #: concrete/authentication/concrete/controller.php:265
 msgid "The two passwords provided do not match."
 msgstr "Le due password inserite non coincidono."
@@ -8869,7 +8869,7 @@ msgid_plural "%d items"
 msgstr[0] "%d elemento"
 msgstr[1] "%d elementi"
 
-#: concrete/controllers/install.php:96 concrete/controllers/install.php:386
+#: concrete/controllers/install.php:96 concrete/controllers/install.php:383
 #, php-format
 msgid "Invalid starting point: %s"
 msgstr "Punto iniziale non valido: %s"
@@ -8887,7 +8887,7 @@ msgid "Unable to connect to database."
 msgstr "Impossibile connettersi al database."
 
 #: concrete/controllers/install.php:138
-#: concrete/src/Package/StartingPointPackage.php:307
+#: concrete/src/Package/StartingPointPackage.php:328
 #, php-format
 msgid ""
 "There are already %s tables in this database. concrete5 must be installed in"
@@ -8950,37 +8950,37 @@ msgid ""
 "server."
 msgstr "Sembra che il server web non abbia accesso in scrittura alla cartella dei pacchetti packages/"
 
-#: concrete/controllers/install.php:392
+#: concrete/controllers/install.php:389
 #, php-format
 msgctxt "InstallError"
 msgid "%s.<br><br>Trace:<br>%s"
 msgstr "%s.<br><br>Elenco chiamate:<br>%s"
 
-#: concrete/controllers/install.php:425
+#: concrete/controllers/install.php:422
 msgid "Please specify your site's name"
 msgstr "Specificare il nome del sito"
 
-#: concrete/controllers/install.php:426
+#: concrete/controllers/install.php:423
 msgid "Please specify a valid email address"
 msgstr "Specificare un indirizzo email valido"
 
-#: concrete/controllers/install.php:427
+#: concrete/controllers/install.php:424
 msgid "You must specify a valid database name"
 msgstr "Specificare un nome di database valido"
 
-#: concrete/controllers/install.php:428
+#: concrete/controllers/install.php:425
 msgid "You must specify a valid database server"
 msgstr "Specificare un server valido per il database"
 
-#: concrete/controllers/install.php:503
+#: concrete/controllers/install.php:500
 msgid "Unable to open config/app.php for writing."
 msgstr "Impossibile aprire il file config/app.php in scrittura."
 
-#: concrete/controllers/install.php:524
+#: concrete/controllers/install.php:521
 msgid "Unable to open config/site_user.php for writing."
 msgstr "Impossibile aprire il file config/site_user.php in scrittura."
 
-#: concrete/controllers/install.php:549
+#: concrete/controllers/install.php:546
 msgid "You must select a valid sample content starting point."
 msgstr "È necessario selezionare un punto iniziale valido per il contenuto d’esempio."
 
@@ -13574,8 +13574,8 @@ msgid "Delete Location"
 msgstr "Elimina posizione"
 
 #: concrete/single_pages/dashboard/system/files/storage.php:61
-#: concrete/src/Package/StartingPointPackage.php:253
-#: concrete/src/Package/StartingPointPackage.php:256
+#: concrete/src/Package/StartingPointPackage.php:274
+#: concrete/src/Package/StartingPointPackage.php:277
 #: concrete/blocks/page_title/form_add_edit.php:68
 #: concrete/blocks/page_title/form_add_edit.php:93
 msgid "Default"
@@ -20479,6 +20479,7 @@ msgstr "Preparazione delle tabelle del database con entità problematiche…"
 
 #: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:245
 #: concrete/src/Updater/Migrations/Migrations/Version20161216100000.php:54
+#: concrete/src/Updater/Migrations/AbstractMigration.php:26
 #, php-format
 msgid "Installing entity %s..."
 msgstr "Installazione dell’entità %s…"
@@ -20598,6 +20599,15 @@ msgstr "Aggiunta degli utenti ospite ai blocchi dei moduli Express."
 #: concrete/src/Updater/Migrations/Migrations/Version20170118000000.php:18
 msgid "Adding cvID to PageTypeComposerOutputBlocks..."
 msgstr "Aggiunta di cvID a PageTypeComposerOutputBlocks…"
+
+#: concrete/src/Updater/Migrations/AbstractMigration.php:36
+msgid "Updating database tables found in doctrine xml..."
+msgstr ""
+
+#: concrete/src/Updater/Migrations/AbstractMigration.php:42
+#, php-format
+msgid "Refreshing block type %s"
+msgstr ""
 
 #: concrete/src/Updater/Migrations/Configuration.php:18
 msgid "concrete5 Migrations"
@@ -20910,139 +20920,139 @@ msgid ""
 "uninstalling."
 msgstr "Questo pacchetto contiene il tema attivo del sito: cambiare il tema prima di disinstallarlo."
 
-#: concrete/src/Package/StartingPointPackage.php:52
+#: concrete/src/Package/StartingPointPackage.php:55
 msgid "Starting installation and creating directories."
 msgstr "Avvio dell’installazione e creazione delle cartelle."
 
-#: concrete/src/Package/StartingPointPackage.php:53
+#: concrete/src/Package/StartingPointPackage.php:56
 msgid "Creating database tables."
 msgstr "Creazione delle tabelle nel database."
 
-#: concrete/src/Package/StartingPointPackage.php:54
+#: concrete/src/Package/StartingPointPackage.php:57
 msgid "Creating site."
 msgstr "Creazione del sito."
 
-#: concrete/src/Package/StartingPointPackage.php:55
+#: concrete/src/Package/StartingPointPackage.php:58
 msgid "Adding admin user."
 msgstr "Aggiunta utente admin."
 
-#: concrete/src/Package/StartingPointPackage.php:56
+#: concrete/src/Package/StartingPointPackage.php:59
 msgid "Installing permissions & workflow."
 msgstr "Installazione autorizzazioni e flusso di lavoro."
 
-#: concrete/src/Package/StartingPointPackage.php:57
+#: concrete/src/Package/StartingPointPackage.php:60
 msgid "Installing Custom Data Objects."
 msgstr "Installazione degli oggetti dati personalizzati."
 
-#: concrete/src/Package/StartingPointPackage.php:58
+#: concrete/src/Package/StartingPointPackage.php:61
 msgid "Creating home page."
 msgstr "Creazione homepage."
 
-#: concrete/src/Package/StartingPointPackage.php:59
+#: concrete/src/Package/StartingPointPackage.php:62
 msgid "Installing attributes."
 msgstr "Installazione degli attributi."
 
-#: concrete/src/Package/StartingPointPackage.php:60
+#: concrete/src/Package/StartingPointPackage.php:63
 msgid "Adding block types."
 msgstr "Aggiunta dei tipi di blocco."
 
-#: concrete/src/Package/StartingPointPackage.php:61
+#: concrete/src/Package/StartingPointPackage.php:64
 msgid "Adding gathering data sources."
 msgstr "Aggiunta delle fonti dei dati per il raccoglitore."
 
-#: concrete/src/Package/StartingPointPackage.php:62
+#: concrete/src/Package/StartingPointPackage.php:65
 msgid "Page type basic setup."
 msgstr "Impostazioni di base del tipo di pagina"
 
-#: concrete/src/Package/StartingPointPackage.php:63
+#: concrete/src/Package/StartingPointPackage.php:66
 msgid "Adding themes."
 msgstr "Aggiunta dei temi."
 
-#: concrete/src/Package/StartingPointPackage.php:64
+#: concrete/src/Package/StartingPointPackage.php:67
 msgid "Installing automated jobs."
 msgstr "Installazione dei processi automatici."
 
-#: concrete/src/Package/StartingPointPackage.php:65
+#: concrete/src/Package/StartingPointPackage.php:68
 msgid "Installing dashboard."
 msgstr "Installazione del pannello di controllo."
 
-#: concrete/src/Package/StartingPointPackage.php:69
+#: concrete/src/Package/StartingPointPackage.php:72
 msgid "Installing login and registration pages."
 msgstr "Installazione delle pagine di login e di registrazione."
 
-#: concrete/src/Package/StartingPointPackage.php:70
+#: concrete/src/Package/StartingPointPackage.php:73
 msgid "Adding image editor functionality."
 msgstr "Aggiunta delle funzionalità di modifica delle immagini"
 
-#: concrete/src/Package/StartingPointPackage.php:71
+#: concrete/src/Package/StartingPointPackage.php:74
 msgid "Configuring site."
 msgstr "Configurazione del sito."
 
-#: concrete/src/Package/StartingPointPackage.php:72
+#: concrete/src/Package/StartingPointPackage.php:75
 msgid "Importing files."
 msgstr "Importazione dei file."
 
-#: concrete/src/Package/StartingPointPackage.php:73
+#: concrete/src/Package/StartingPointPackage.php:76
 msgid "Adding pages and content."
 msgstr "Aggiunta di pagine e contenuti."
 
-#: concrete/src/Package/StartingPointPackage.php:74
+#: concrete/src/Package/StartingPointPackage.php:77
 msgid "Adding desktops."
 msgstr "Aggiunta delle scrivanie."
 
-#: concrete/src/Package/StartingPointPackage.php:75
+#: concrete/src/Package/StartingPointPackage.php:78
 msgid "Setting site permissions."
 msgstr "Impostazione delle autorizzazioni del sito."
 
-#: concrete/src/Package/StartingPointPackage.php:76
+#: concrete/src/Package/StartingPointPackage.php:79
 msgid "Finishing."
 msgstr "Conclusione operazioni."
 
-#: concrete/src/Package/StartingPointPackage.php:254
+#: concrete/src/Package/StartingPointPackage.php:275
 msgid "Local"
 msgstr "Locale"
 
-#: concrete/src/Package/StartingPointPackage.php:264
+#: concrete/src/Package/StartingPointPackage.php:285
 msgctxt "ThumbnailTypeName"
 msgid "File Manager Thumbnails"
 msgstr "Miniature del gestore dei file"
 
-#: concrete/src/Package/StartingPointPackage.php:272
+#: concrete/src/Package/StartingPointPackage.php:293
 msgctxt "ThumbnailTypeName"
 msgid "File Manager Detail Thumbnails"
 msgstr "Miniature dei dettagli del gestore dei file"
 
-#: concrete/src/Package/StartingPointPackage.php:338
+#: concrete/src/Package/StartingPointPackage.php:359
 #, php-format
 msgid "Unable to install database: %s"
 msgstr "Impossibile installare il database: %s"
 
-#: concrete/src/Package/StartingPointPackage.php:375
+#: concrete/src/Package/StartingPointPackage.php:396
 msgctxt "GroupName"
 msgid "Guest"
 msgstr "Ospite"
 
-#: concrete/src/Package/StartingPointPackage.php:376
+#: concrete/src/Package/StartingPointPackage.php:397
 msgctxt "GroupDescription"
 msgid "The guest group represents unregistered visitors to your site."
 msgstr "Il gruppo ospiti rappresenta gli utenti non registrati del sito."
 
-#: concrete/src/Package/StartingPointPackage.php:381
+#: concrete/src/Package/StartingPointPackage.php:402
 msgctxt "GroupName"
 msgid "Registered Users"
 msgstr "Utenti registrati"
 
-#: concrete/src/Package/StartingPointPackage.php:382
+#: concrete/src/Package/StartingPointPackage.php:403
 msgctxt "GroupDescription"
 msgid "The registered users group represents all user accounts."
 msgstr "Il gruppo utenti registrati rappresenta tutti gli account degli utenti."
 
-#: concrete/src/Package/StartingPointPackage.php:386
+#: concrete/src/Package/StartingPointPackage.php:407
 msgctxt "GroupName"
 msgid "Administrators"
 msgstr "Amministratori"
 
-#: concrete/src/Package/StartingPointPackage.php:403
+#: concrete/src/Package/StartingPointPackage.php:424
 msgid "Won a Badge"
 msgstr "Vinta una medaglia"
 

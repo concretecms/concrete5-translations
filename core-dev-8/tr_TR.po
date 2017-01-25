@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2017-01-20T06:00:04+01:00\n"
-"PO-Revision-Date: 2017-01-20 08:41+0000\n"
+"POT-Creation-Date: 2017-01-24T06:00:03+01:00\n"
+"PO-Revision-Date: 2017-01-24 09:13+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Turkish (Turkey) (http://www.transifex.com/concrete5/concrete5/language/tr_TR/)\n"
 "MIME-Version: 1.0\n"
@@ -4062,7 +4062,7 @@ msgstr "Sayfa sürümlerini onaylama izniniz yok."
 #: concrete/controllers/panel/detail/page/attributes.php:150
 #: concrete/controllers/panel/detail/page/caching.php:27
 #: concrete/controllers/panel/detail/page/caching.php:42
-#: concrete/controllers/panel/detail/page/location.php:140
+#: concrete/controllers/panel/detail/page/location.php:142
 #: concrete/controllers/panel/detail/page/permissions.php:132
 #: concrete/controllers/panel/detail/page/seo.php:79
 msgid "Page Updated"
@@ -4131,7 +4131,7 @@ msgstr "Erişim Engellendi."
 msgid "You do not have permission to discard this page."
 msgstr "Bu sayfayı iptal etme izniniz yok."
 
-#: concrete/controllers/panel/detail/page/location.php:141
+#: concrete/controllers/panel/detail/page/location.php:143
 msgid "Page location information saved successfully."
 msgstr "Sayfa konum bilgisi başarıyla kaydedildi."
 
@@ -4431,7 +4431,7 @@ msgstr "Kullanıcı adı '%s' zaten kullanılıyor. Lütfen başka bir kullanıc
 #: concrete/controllers/single_page/account/edit_profile.php:127
 #: concrete/controllers/single_page/dashboard/users/search.php:362
 #: concrete/controllers/single_page/register.php:103
-#: concrete/controllers/install.php:437
+#: concrete/controllers/install.php:434
 #: concrete/authentication/concrete/controller.php:265
 msgid "The two passwords provided do not match."
 msgstr "Girilen iki parola birbiriyle eşleşmiyor."
@@ -8859,7 +8859,7 @@ msgid "%d item"
 msgid_plural "%d items"
 msgstr[0] "%d öge"
 
-#: concrete/controllers/install.php:96 concrete/controllers/install.php:386
+#: concrete/controllers/install.php:96 concrete/controllers/install.php:383
 #, php-format
 msgid "Invalid starting point: %s"
 msgstr "Geçersiz başlangıç noktası: %s"
@@ -8877,7 +8877,7 @@ msgid "Unable to connect to database."
 msgstr "Veritabanına bağlanılamıyor."
 
 #: concrete/controllers/install.php:138
-#: concrete/src/Package/StartingPointPackage.php:307
+#: concrete/src/Package/StartingPointPackage.php:328
 #, php-format
 msgid ""
 "There are already %s tables in this database. concrete5 must be installed in"
@@ -8940,37 +8940,37 @@ msgid ""
 "server."
 msgstr "Sunucu, paket dizininiz \"packages/\"a yazamıyor."
 
-#: concrete/controllers/install.php:392
+#: concrete/controllers/install.php:389
 #, php-format
 msgctxt "InstallError"
 msgid "%s.<br><br>Trace:<br>%s"
 msgstr "%s.<br><br>İz:<br>%s"
 
-#: concrete/controllers/install.php:425
+#: concrete/controllers/install.php:422
 msgid "Please specify your site's name"
 msgstr "Lütfen sitenizin adını belirtin"
 
-#: concrete/controllers/install.php:426
+#: concrete/controllers/install.php:423
 msgid "Please specify a valid email address"
 msgstr "Geçerli bir e-posta adresi yazın"
 
-#: concrete/controllers/install.php:427
+#: concrete/controllers/install.php:424
 msgid "You must specify a valid database name"
 msgstr "Geçerli bir veritabanı adı belirtmelisiniz"
 
-#: concrete/controllers/install.php:428
+#: concrete/controllers/install.php:425
 msgid "You must specify a valid database server"
 msgstr "Geçerli bir veritabanı sunucusu belirtmelisiniz"
 
-#: concrete/controllers/install.php:503
+#: concrete/controllers/install.php:500
 msgid "Unable to open config/app.php for writing."
 msgstr "config/app.php yazım için açılamadı."
 
-#: concrete/controllers/install.php:524
+#: concrete/controllers/install.php:521
 msgid "Unable to open config/site_user.php for writing."
 msgstr "config/site_user.php dosyası yazma için açılamıyor."
 
-#: concrete/controllers/install.php:549
+#: concrete/controllers/install.php:546
 msgid "You must select a valid sample content starting point."
 msgstr "Başlangıç noktası için geçerli bir örnek seçmelisiniz."
 
@@ -13559,8 +13559,8 @@ msgid "Delete Location"
 msgstr "Konumu Sil"
 
 #: concrete/single_pages/dashboard/system/files/storage.php:61
-#: concrete/src/Package/StartingPointPackage.php:253
-#: concrete/src/Package/StartingPointPackage.php:256
+#: concrete/src/Package/StartingPointPackage.php:274
+#: concrete/src/Package/StartingPointPackage.php:277
 #: concrete/blocks/page_title/form_add_edit.php:68
 #: concrete/blocks/page_title/form_add_edit.php:93
 msgid "Default"
@@ -20451,6 +20451,7 @@ msgstr ""
 
 #: concrete/src/Updater/Migrations/Migrations/Version20160725000000.php:245
 #: concrete/src/Updater/Migrations/Migrations/Version20161216100000.php:54
+#: concrete/src/Updater/Migrations/AbstractMigration.php:26
 #, php-format
 msgid "Installing entity %s..."
 msgstr ""
@@ -20569,6 +20570,15 @@ msgstr ""
 
 #: concrete/src/Updater/Migrations/Migrations/Version20170118000000.php:18
 msgid "Adding cvID to PageTypeComposerOutputBlocks..."
+msgstr ""
+
+#: concrete/src/Updater/Migrations/AbstractMigration.php:36
+msgid "Updating database tables found in doctrine xml..."
+msgstr ""
+
+#: concrete/src/Updater/Migrations/AbstractMigration.php:42
+#, php-format
+msgid "Refreshing block type %s"
 msgstr ""
 
 #: concrete/src/Updater/Migrations/Configuration.php:18
@@ -20882,139 +20892,139 @@ msgid ""
 "uninstalling."
 msgstr "BU paket aktif site temasını içeriyor, lütfen kaldırmadan önce temayı değiştirin."
 
-#: concrete/src/Package/StartingPointPackage.php:52
+#: concrete/src/Package/StartingPointPackage.php:55
 msgid "Starting installation and creating directories."
 msgstr "Kurulum başlatılıyor ve klasörler oluşturuluyor."
 
-#: concrete/src/Package/StartingPointPackage.php:53
+#: concrete/src/Package/StartingPointPackage.php:56
 msgid "Creating database tables."
 msgstr "Veritabanı tabloları oluşturuluyor."
 
-#: concrete/src/Package/StartingPointPackage.php:54
+#: concrete/src/Package/StartingPointPackage.php:57
 msgid "Creating site."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:55
+#: concrete/src/Package/StartingPointPackage.php:58
 msgid "Adding admin user."
 msgstr "Admin kullanıcısı ekleniyor."
 
-#: concrete/src/Package/StartingPointPackage.php:56
+#: concrete/src/Package/StartingPointPackage.php:59
 msgid "Installing permissions & workflow."
 msgstr "İzinler & iş akışları kuruluyor."
 
-#: concrete/src/Package/StartingPointPackage.php:57
+#: concrete/src/Package/StartingPointPackage.php:60
 msgid "Installing Custom Data Objects."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:58
+#: concrete/src/Package/StartingPointPackage.php:61
 msgid "Creating home page."
 msgstr "Ana sayfa oluşturuluyor."
 
-#: concrete/src/Package/StartingPointPackage.php:59
+#: concrete/src/Package/StartingPointPackage.php:62
 msgid "Installing attributes."
 msgstr "Özellikler ekleniyor."
 
-#: concrete/src/Package/StartingPointPackage.php:60
+#: concrete/src/Package/StartingPointPackage.php:63
 msgid "Adding block types."
 msgstr "Blok türleri ekleniyor."
 
-#: concrete/src/Package/StartingPointPackage.php:61
+#: concrete/src/Package/StartingPointPackage.php:64
 msgid "Adding gathering data sources."
 msgstr "Toplama veri kaynakları ekleniyor."
 
-#: concrete/src/Package/StartingPointPackage.php:62
+#: concrete/src/Package/StartingPointPackage.php:65
 msgid "Page type basic setup."
 msgstr "Sayfa türü temel kurulumu."
 
-#: concrete/src/Package/StartingPointPackage.php:63
+#: concrete/src/Package/StartingPointPackage.php:66
 msgid "Adding themes."
 msgstr "Temalar ekleniyor."
 
-#: concrete/src/Package/StartingPointPackage.php:64
+#: concrete/src/Package/StartingPointPackage.php:67
 msgid "Installing automated jobs."
 msgstr "Otomatik görevler kuruluyor."
 
-#: concrete/src/Package/StartingPointPackage.php:65
+#: concrete/src/Package/StartingPointPackage.php:68
 msgid "Installing dashboard."
 msgstr "Kontrol paneli kuruluyor."
 
-#: concrete/src/Package/StartingPointPackage.php:69
+#: concrete/src/Package/StartingPointPackage.php:72
 msgid "Installing login and registration pages."
 msgstr "Kullanıcı girişi ve kayıt sayfaları kuruluyor."
 
-#: concrete/src/Package/StartingPointPackage.php:70
+#: concrete/src/Package/StartingPointPackage.php:73
 msgid "Adding image editor functionality."
 msgstr "Resim düzenleme işlevselliği ekleniyor."
 
-#: concrete/src/Package/StartingPointPackage.php:71
+#: concrete/src/Package/StartingPointPackage.php:74
 msgid "Configuring site."
 msgstr "Site yapılandırılıyor."
 
-#: concrete/src/Package/StartingPointPackage.php:72
+#: concrete/src/Package/StartingPointPackage.php:75
 msgid "Importing files."
 msgstr "Dosyalar alınıyor."
 
-#: concrete/src/Package/StartingPointPackage.php:73
+#: concrete/src/Package/StartingPointPackage.php:76
 msgid "Adding pages and content."
 msgstr "Sayfalar ve içerikler ekleniyor."
 
-#: concrete/src/Package/StartingPointPackage.php:74
+#: concrete/src/Package/StartingPointPackage.php:77
 msgid "Adding desktops."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:75
+#: concrete/src/Package/StartingPointPackage.php:78
 msgid "Setting site permissions."
 msgstr ""
 
-#: concrete/src/Package/StartingPointPackage.php:76
+#: concrete/src/Package/StartingPointPackage.php:79
 msgid "Finishing."
 msgstr "Bitiriliyor."
 
-#: concrete/src/Package/StartingPointPackage.php:254
+#: concrete/src/Package/StartingPointPackage.php:275
 msgid "Local"
 msgstr "Yerel"
 
-#: concrete/src/Package/StartingPointPackage.php:264
+#: concrete/src/Package/StartingPointPackage.php:285
 msgctxt "ThumbnailTypeName"
 msgid "File Manager Thumbnails"
 msgstr "Dosya Yöneticisi Önizleme Resimleri"
 
-#: concrete/src/Package/StartingPointPackage.php:272
+#: concrete/src/Package/StartingPointPackage.php:293
 msgctxt "ThumbnailTypeName"
 msgid "File Manager Detail Thumbnails"
 msgstr "Dosya Yöneticisi Detaylı Önizleme Resimleri"
 
-#: concrete/src/Package/StartingPointPackage.php:338
+#: concrete/src/Package/StartingPointPackage.php:359
 #, php-format
 msgid "Unable to install database: %s"
 msgstr "Veritabanı kurulamıyor: %s"
 
-#: concrete/src/Package/StartingPointPackage.php:375
+#: concrete/src/Package/StartingPointPackage.php:396
 msgctxt "GroupName"
 msgid "Guest"
 msgstr "Misafir"
 
-#: concrete/src/Package/StartingPointPackage.php:376
+#: concrete/src/Package/StartingPointPackage.php:397
 msgctxt "GroupDescription"
 msgid "The guest group represents unregistered visitors to your site."
 msgstr "Misarif grubu sitenize kayıt olmayan ziyaretçileri temsil eder."
 
-#: concrete/src/Package/StartingPointPackage.php:381
+#: concrete/src/Package/StartingPointPackage.php:402
 msgctxt "GroupName"
 msgid "Registered Users"
 msgstr "Kayıtlı Kullanıcılar"
 
-#: concrete/src/Package/StartingPointPackage.php:382
+#: concrete/src/Package/StartingPointPackage.php:403
 msgctxt "GroupDescription"
 msgid "The registered users group represents all user accounts."
 msgstr "Kayıtlı kullanıcılar grubu tüm kullanıcı hesaplarını temsil eder."
 
-#: concrete/src/Package/StartingPointPackage.php:386
+#: concrete/src/Package/StartingPointPackage.php:407
 msgctxt "GroupName"
 msgid "Administrators"
 msgstr "Yöneticiler"
 
-#: concrete/src/Package/StartingPointPackage.php:403
+#: concrete/src/Package/StartingPointPackage.php:424
 msgid "Won a Badge"
 msgstr "Bir Rozet Kazandınız"
 
