@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2017-02-16T06:00:05+01:00\n"
-"PO-Revision-Date: 2017-02-16 14:04+0000\n"
+"POT-Creation-Date: 2017-02-18T06:00:05+01:00\n"
+"PO-Revision-Date: 2017-02-18 12:19+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Italian (Italy) (http://www.transifex.com/concrete5/concrete5/language/it_IT/)\n"
 "MIME-Version: 1.0\n"
@@ -13136,6 +13136,7 @@ msgstr "Se il sito presenta informazioni obsolete o si comporta in modo anomalo,
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:42
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:341
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:482
+#: concrete/src/Console/Command/JobCommand.php:59
 #: concrete/src/Package/ItemCategory/Job.php:16
 msgid "Jobs"
 msgstr "Processi"
@@ -14702,6 +14703,7 @@ msgid "There are no files in this set."
 msgstr "Non ci sono file in questo set."
 
 #: concrete/single_pages/dashboard/files/sets.php:188
+#: concrete/src/Console/Command/JobCommand.php:59
 #: concrete/elements/files/add_to_sets.php:41
 msgid "Set Name"
 msgstr "Nome del set"
@@ -15545,14 +15547,14 @@ msgstr "Token del form non valido. Ricaricare questo modulo e inviarlo nuovament
 msgid "Banned word already initialized."
 msgstr "Parole vietate già inizializzate."
 
-#: concrete/src/Console/Command/CompareSchemaCommand.php:82
+#: concrete/src/Console/Command/CompareSchemaCommand.php:89
 #, php-format
 msgid "%s query found"
 msgid_plural "%s queries found"
 msgstr[0] "%s query trovata"
 msgstr[1] "%s query trovate"
 
-#: concrete/src/Console/Command/CompareSchemaCommand.php:89
+#: concrete/src/Console/Command/CompareSchemaCommand.php:96
 msgid "No differences found between schema and database."
 msgstr "Non è stata rilevata alcuna differenza tra lo schema e il database."
 
@@ -15571,6 +15573,40 @@ msgstr "Elenco dei processi automatici disponibili"
 #: concrete/src/Console/Command/JobCommand.php:28
 msgid "Jobs to run (separate multiple jobs with a space)"
 msgstr "Processi automatici da eseguire (separa più processi automatici con uno spazio)"
+
+#: concrete/src/Console/Command/JobCommand.php:48
+msgid "Available Jobs"
+msgstr "Processi automatici disponibili"
+
+#: concrete/src/Console/Command/JobCommand.php:50
+msgid "Job Handle"
+msgstr "Handle del processo automatico"
+
+#: concrete/src/Console/Command/JobCommand.php:50
+msgid "Job Name"
+msgstr "Nome del processo automatico"
+
+#: concrete/src/Console/Command/JobCommand.php:57
+msgid "Available Job Sets"
+msgstr "Set di processi automatici disponibili"
+
+#: concrete/src/Console/Command/JobCommand.php:74
+msgid "At least one job must be provided"
+msgstr "È necessario specificare almeno un processo automatico"
+
+#: concrete/src/Console/Command/JobCommand.php:86
+#, php-format
+msgid "A job set with name \"%s\" was not found"
+msgstr "Non è stato possibile trovare il set di processi automatici con nome “%s”"
+
+#: concrete/src/Console/Command/JobCommand.php:100
+#, php-format
+msgid "A job with handle \"%s\" was not found"
+msgstr "Non è stato possibile trovare il processo automatico con handle “%s”"
+
+#: concrete/src/Console/Command/JobCommand.php:115
+msgid "Job Failed"
+msgstr "Processo automatico fallito"
 
 #: concrete/src/Page/Type/Composer/Control/CorePageProperty/DateTimeCorePageProperty.php:19
 msgctxt "PageTypeComposerControlName"
@@ -19899,7 +19935,7 @@ msgstr "La lunghezza deve essere al massimo di %s caratteri."
 msgid "Element %s does not exist"
 msgstr "L’elemento %s non esiste"
 
-#: concrete/src/View/ErrorView.php:16
+#: concrete/src/View/ErrorView.php:19
 msgid "Action is not available here."
 msgstr "Azione non disponibile qui."
 

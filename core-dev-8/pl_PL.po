@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2017-02-16T06:00:05+01:00\n"
-"PO-Revision-Date: 2017-02-16 10:08+0000\n"
+"POT-Creation-Date: 2017-02-18T06:00:05+01:00\n"
+"PO-Revision-Date: 2017-02-18 09:32+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Polish (Poland) (http://www.transifex.com/concrete5/concrete5/language/pl_PL/)\n"
 "MIME-Version: 1.0\n"
@@ -13165,6 +13165,7 @@ msgstr "Jeśli witryna wyświetla przestarzałe informacje lub zachowuje się n
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:42
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:341
 #: concrete/single_pages/dashboard/system/optimization/jobs.php:482
+#: concrete/src/Console/Command/JobCommand.php:59
 #: concrete/src/Package/ItemCategory/Job.php:16
 msgid "Jobs"
 msgstr "Zadania"
@@ -14731,6 +14732,7 @@ msgid "There are no files in this set."
 msgstr "Nie ma plików w tym zestawie."
 
 #: concrete/single_pages/dashboard/files/sets.php:188
+#: concrete/src/Console/Command/JobCommand.php:59
 #: concrete/elements/files/add_to_sets.php:41
 msgid "Set Name"
 msgstr "Ustaw nazwę"
@@ -15590,7 +15592,7 @@ msgstr "Nieprawidłowa cecha formularza. Proszę odświeżyć formularz i wysła
 msgid "Banned word already initialized."
 msgstr "Zakazane słowo zostało zainicjowane."
 
-#: concrete/src/Console/Command/CompareSchemaCommand.php:82
+#: concrete/src/Console/Command/CompareSchemaCommand.php:89
 #, php-format
 msgid "%s query found"
 msgid_plural "%s queries found"
@@ -15599,7 +15601,7 @@ msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
 
-#: concrete/src/Console/Command/CompareSchemaCommand.php:89
+#: concrete/src/Console/Command/CompareSchemaCommand.php:96
 msgid "No differences found between schema and database."
 msgstr ""
 
@@ -15618,6 +15620,40 @@ msgstr "Lista dostępnych zadań"
 #: concrete/src/Console/Command/JobCommand.php:28
 msgid "Jobs to run (separate multiple jobs with a space)"
 msgstr "Zadania do uruchomienia (rozdziel zadania przecinkami)"
+
+#: concrete/src/Console/Command/JobCommand.php:48
+msgid "Available Jobs"
+msgstr ""
+
+#: concrete/src/Console/Command/JobCommand.php:50
+msgid "Job Handle"
+msgstr ""
+
+#: concrete/src/Console/Command/JobCommand.php:50
+msgid "Job Name"
+msgstr ""
+
+#: concrete/src/Console/Command/JobCommand.php:57
+msgid "Available Job Sets"
+msgstr ""
+
+#: concrete/src/Console/Command/JobCommand.php:74
+msgid "At least one job must be provided"
+msgstr ""
+
+#: concrete/src/Console/Command/JobCommand.php:86
+#, php-format
+msgid "A job set with name \"%s\" was not found"
+msgstr ""
+
+#: concrete/src/Console/Command/JobCommand.php:100
+#, php-format
+msgid "A job with handle \"%s\" was not found"
+msgstr ""
+
+#: concrete/src/Console/Command/JobCommand.php:115
+msgid "Job Failed"
+msgstr ""
 
 #: concrete/src/Page/Type/Composer/Control/CorePageProperty/DateTimeCorePageProperty.php:19
 msgctxt "PageTypeComposerControlName"
@@ -19954,7 +19990,7 @@ msgstr "Musi mieć maksymalnie %s znaków długości."
 msgid "Element %s does not exist"
 msgstr ""
 
-#: concrete/src/View/ErrorView.php:16
+#: concrete/src/View/ErrorView.php:19
 msgid "Action is not available here."
 msgstr "Akcja nie jest tutaj dostępna."
 
