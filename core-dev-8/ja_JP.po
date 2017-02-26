@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2017-02-23T06:00:04+01:00\n"
-"PO-Revision-Date: 2017-02-23 10:19+0000\n"
-"Last-Translator: Katz Ueno <katzueno@deerstudio.com>\n"
+"POT-Creation-Date: 2017-02-25T06:00:05+01:00\n"
+"PO-Revision-Date: 2017-02-25 09:00+0000\n"
+"Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/concrete5/concrete5/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -725,7 +725,7 @@ msgstr "タイムゾーン、プロフィール、場所"
 
 #: concrete/config/install/base/single_pages/dashboard.xml:512
 #: concrete/single_pages/dashboard/system/basics/name.php:19
-#: concrete/src/User/Search/Field/Manager.php:34
+#: concrete/src/User/Search/Field/Manager.php:35
 #: concrete/src/Page/Search/Field/Manager.php:49
 #: concrete/src/File/Search/Field/Manager.php:38
 #: concrete/views/dialogs/file/upload_complete.php:34
@@ -4446,7 +4446,7 @@ msgstr "このユーザー名「%s」はすでに使用されています。他�
 
 #: concrete/controllers/single_page/account/edit_profile.php:125
 #: concrete/controllers/single_page/dashboard/users/search.php:362
-#: concrete/controllers/single_page/register.php:108
+#: concrete/controllers/single_page/register.php:112
 #: concrete/controllers/install.php:434
 #: concrete/authentication/concrete/controller.php:265
 msgid "The two passwords provided do not match."
@@ -4649,20 +4649,20 @@ msgstr "検索文字列を入力してください。"
 
 #: concrete/controllers/single_page/dashboard/users/add.php:60
 #: concrete/controllers/single_page/dashboard/users/search.php:249
-#: concrete/controllers/single_page/register.php:79
+#: concrete/controllers/single_page/register.php:80
 #, php-format
 msgid "A username must be at least %s characters long."
 msgstr "ユーザーIDは%s文字以上である必要があります（半角英数字）。"
 
 #: concrete/controllers/single_page/dashboard/users/add.php:64
 #: concrete/controllers/single_page/dashboard/users/search.php:258
-#: concrete/controllers/single_page/register.php:84
+#: concrete/controllers/single_page/register.php:87
 #, php-format
 msgid "A username cannot be more than %s characters long."
 msgstr "ユーザーIDは、%s文字以下である必要があります（半角英数文字）。"
 
 #: concrete/controllers/single_page/dashboard/users/add.php:69
-#: concrete/controllers/single_page/register.php:90
+#: concrete/controllers/single_page/register.php:94
 msgid ""
 "A username may only contain letters, numbers, spaces (not at the "
 "beginning/end), dots (not at the beginning/end), underscores (not at the "
@@ -4671,7 +4671,7 @@ msgstr "ユーザー名は半角英数字、スペース（最初と最後は不
 
 #: concrete/controllers/single_page/dashboard/users/add.php:71
 #: concrete/controllers/single_page/dashboard/users/search.php:274
-#: concrete/controllers/single_page/register.php:92
+#: concrete/controllers/single_page/register.php:96
 msgid ""
 "A username may only contain letters, numbers, dots (not at the "
 "beginning/end), underscores (not at the beginning/end)."
@@ -4684,7 +4684,7 @@ msgid "The username '%s' already exists. Please choose another"
 msgstr "ユーザーID「%s」はすでに使用されています。別のIDを入力してください。"
 
 #: concrete/controllers/single_page/dashboard/users/add.php:80
-#: concrete/controllers/single_page/register.php:101
+#: concrete/controllers/single_page/register.php:105
 msgid "Invalid Username"
 msgstr "不正なユーザーIDです。"
 
@@ -4784,10 +4784,10 @@ msgstr "アバターが正常に保存されました。"
 
 #: concrete/controllers/single_page/dashboard/users/search.php:116
 #: concrete/controllers/single_page/dashboard/users/search.php:120
-#: concrete/controllers/single_page/register.php:170
 #: concrete/controllers/single_page/register.php:174
-#: concrete/src/Workflow/Request/ActivateUserRequest.php:90
-#: concrete/src/Workflow/Request/ActivateUserRequest.php:94
+#: concrete/controllers/single_page/register.php:178
+#: concrete/src/Workflow/Request/ActivateUserRequest.php:128
+#: concrete/src/Workflow/Request/ActivateUserRequest.php:132
 msgid "Website Registration Notification"
 msgstr "ウェブサイト登録通知"
 
@@ -6306,7 +6306,7 @@ msgid ""
 "enter your email address below to create this now."
 msgstr "アカウントがアップグレードされ新しいパスワードが必要です。登録したメールアドレスを入力し、新しいパスワードを作成してください。"
 
-#: concrete/controllers/single_page/dashboard/system/registration/open.php:73
+#: concrete/controllers/single_page/dashboard/system/registration/open.php:60
 msgid "Registration settings have been saved."
 msgstr "ユーザー登録設定が保存されました。"
 
@@ -6712,7 +6712,7 @@ msgstr "メールアドレス"
 #: concrete/single_pages/dashboard/users/search.php:24
 #: concrete/single_pages/dashboard/system/mail/importers.php:36
 #: concrete/single_pages/dashboard/system/mail/method.php:31
-#: concrete/single_pages/dashboard/system/registration/open.php:76
+#: concrete/single_pages/dashboard/system/registration/open.php:69
 #: concrete/single_pages/register.php:58
 #: concrete/src/User/Search/ColumnSet/DefaultSet.php:29
 #: concrete/src/Form/Service/Widget/UserSelector.php:117
@@ -6743,12 +6743,12 @@ msgstr "認証画像の文字が違います。画像に表示されている文
 msgid "The email address %s is already in use. Please choose another."
 msgstr "入力されたメールアドレス %s はすでに使用されています。別のメールアドレスを入力してください。"
 
-#: concrete/controllers/single_page/register.php:96
+#: concrete/controllers/single_page/register.php:100
 #, php-format
 msgid "The username %s already exists. Please choose another"
 msgstr "ユーザーID %s はすでに使用されています。別のIDを入力してください。"
 
-#: concrete/controllers/single_page/register.php:129
+#: concrete/controllers/single_page/register.php:135
 msgid "Invalid token."
 msgstr "無効なトークンです。"
 
@@ -6756,23 +6756,23 @@ msgstr "無効なトークンです。"
 msgid "Validate Email Address"
 msgstr "メールアドレスを確認"
 
-#: concrete/controllers/single_page/register.php:293
+#: concrete/controllers/single_page/register.php:278
 msgid "Your account has been created, and you are now logged in."
 msgstr "あなたのアカウントが作成されました。すでにログインしています。"
 
-#: concrete/controllers/single_page/register.php:299
+#: concrete/controllers/single_page/register.php:284
 msgid ""
 "You are registered but you need to validate your email address. Some or all "
 "functionality on this site will be limited until you do so."
 msgstr "ユーザー登録が完了しましたが、メールアドレスの確認が必要です。それまで、サイト内の機能の一部が利用できない場合があります。"
 
-#: concrete/controllers/single_page/register.php:300
+#: concrete/controllers/single_page/register.php:285
 msgid ""
 "An email has been sent to your email address. Click on the URL contained in "
 "the email to validate your email address."
 msgstr "メールアドレス確認のメールが送信されました。メールの中にあるURLをクリックして、メールアドレスの確認作業を行ってください。"
 
-#: concrete/controllers/single_page/register.php:307
+#: concrete/controllers/single_page/register.php:292
 msgid ""
 "You are registered but a site administrator must review your account, you "
 "will not be able to login until your account has been approved."
@@ -7524,7 +7524,7 @@ msgstr "編集モード"
 #: concrete/single_pages/dashboard/system/seo/urls.php:60
 #: concrete/single_pages/dashboard/system/registration/authentication.php:111
 #: concrete/single_pages/dashboard/system/registration/notification.php:24
-#: concrete/single_pages/dashboard/system/registration/open.php:99
+#: concrete/single_pages/dashboard/system/registration/open.php:92
 #: concrete/single_pages/dashboard/system/registration/postlogin.php:41
 #: concrete/single_pages/dashboard/system/registration/profiles.php:52
 #: concrete/single_pages/dashboard/system/express/entities/associations/add.php:47
@@ -7572,7 +7572,7 @@ msgstr "現在の画像"
 #: concrete/single_pages/dashboard/pages/feeds.php:102
 #: concrete/src/Backup/ContentImporter/ValueInspector/Item/ImageItem.php:8
 #: concrete/src/Editor/EditorServiceProvider.php:69
-#: concrete/src/File/Type/Type.php:428 concrete/blocks/image/controller.php:44
+#: concrete/src/File/Type/Type.php:440 concrete/blocks/image/controller.php:44
 #: concrete/blocks/image/form.php:13
 #: concrete/blocks/image_slider/form_setup_html.php:320
 #: concrete/elements/custom_style.php:191
@@ -7976,8 +7976,8 @@ msgid "Rescan"
 msgstr "再スキャン"
 
 #: concrete/controllers/frontend/assets_localization.php:222
-#: concrete/src/Workflow/Request/ActivateUserRequest.php:58
-#: concrete/src/Workflow/Request/DeleteUserRequest.php:30
+#: concrete/src/Workflow/Request/ActivateUserRequest.php:85
+#: concrete/src/Workflow/Request/DeleteUserRequest.php:31
 #: concrete/elements/permission/keys/add_conversation_message.php:19
 msgid "Pending"
 msgstr "保留中"
@@ -8515,7 +8515,7 @@ msgstr "画像Webリンク"
 
 #: concrete/controllers/frontend/assets_localization.php:412
 #: concrete/src/Express/Form/Control/Type/Item/TextEntityPropertyItem.php:8
-#: concrete/src/File/Type/Type.php:434
+#: concrete/src/File/Type/Type.php:446
 msgid "Text"
 msgstr "テキスト"
 
@@ -9939,7 +9939,7 @@ msgstr "本当に次のユーザーアカウントを有効にしてもよろし
 #: concrete/tools/users/bulk_activate.php:93
 #: concrete/single_pages/dashboard/pages/themes/view.php:55
 #: concrete/single_pages/dashboard/pages/themes/view.php:57
-#: concrete/src/Workflow/Request/ActivateUserRequest.php:142
+#: concrete/src/Workflow/Request/ActivateUserRequest.php:180
 msgid "Activate"
 msgstr "有効"
 
@@ -9954,7 +9954,7 @@ msgid "Are you sure you would like to deactivate the following users?"
 msgstr "本当に次のユーザーアカウントを停止してもよろしいですか？"
 
 #: concrete/tools/users/bulk_deactivate.php:105
-#: concrete/src/Workflow/Request/ActivateUserRequest.php:140
+#: concrete/src/Workflow/Request/ActivateUserRequest.php:178
 msgid "Deactivate"
 msgstr "無効化する"
 
@@ -11112,7 +11112,7 @@ msgstr "最近ダウンロードされた5件"
 #: concrete/single_pages/dashboard/system/basics/icons.php:38
 #: concrete/src/Entity/File/Version.php:611
 #: concrete/src/Backup/ContentImporter/ValueInspector/Item/FileItem.php:10
-#: concrete/src/File/Type/Type.php:446 concrete/blocks/file/add.php:6
+#: concrete/src/File/Type/Type.php:458 concrete/blocks/file/add.php:6
 #: concrete/blocks/file/controller.php:30 concrete/blocks/file/edit.php:10
 msgid "File"
 msgstr "ファイル"
@@ -11706,7 +11706,7 @@ msgstr "このログインセッションを終了し、%sとしてログイン�
 msgid "Are you sure you want to permanently remove this user?"
 msgstr "本当にこのユーザーを完全に削除してもよろしいですか？"
 
-#: concrete/single_pages/dashboard/users/search.php:361
+#: concrete/single_pages/dashboard/users/search.php:368
 msgid ""
 "You do not have access to user search. This setting may be changed in the "
 "access section of the dashboard settings page."
@@ -12753,7 +12753,7 @@ msgid "Manage Attributes"
 msgstr "属性管理"
 
 #: concrete/single_pages/dashboard/system/basics/name.php:11
-#: concrete/src/User/Search/Field/Manager.php:20
+#: concrete/src/User/Search/Field/Manager.php:21
 #: concrete/src/Express/Form/Control/Type/EntityPropertyType.php:16
 #: concrete/src/Page/Search/Field/Manager.php:29
 #: concrete/src/File/Search/Field/Manager.php:24
@@ -13473,7 +13473,7 @@ msgid "Active Conversation Editor"
 msgstr "有効化されているコメント欄エディタ"
 
 #: concrete/single_pages/dashboard/system/conversations/settings.php:49
-#: concrete/single_pages/dashboard/system/registration/open.php:51
+#: concrete/single_pages/dashboard/system/registration/open.php:44
 #: concrete/blocks/core_conversation/form.php:210
 msgid "Notification"
 msgstr "通知"
@@ -14333,36 +14333,32 @@ msgid "On - anyone can create an account from Login page"
 msgstr "On - ログインページから誰もがアカウントを作成できます"
 
 #: concrete/single_pages/dashboard/system/registration/open.php:38
-msgid "On - approve manually"
-msgstr "オン - 手動で承認"
-
-#: concrete/single_pages/dashboard/system/registration/open.php:45
 msgid ""
 "Validate - anyone can create an account from Login page, once validated by "
 "email"
 msgstr "認証 - 誰もがログインページからアカウントを作成し、メール認証で有効化できます。"
 
-#: concrete/single_pages/dashboard/system/registration/open.php:56
+#: concrete/single_pages/dashboard/system/registration/open.php:49
 msgid "Send admin an email when new user registers."
 msgstr "新規ユーザー登録があった際に管理者にメールで通知します。"
 
-#: concrete/single_pages/dashboard/system/registration/open.php:61
+#: concrete/single_pages/dashboard/system/registration/open.php:54
 msgid "Email address"
 msgstr "メールアドレス"
 
-#: concrete/single_pages/dashboard/system/registration/open.php:66
+#: concrete/single_pages/dashboard/system/registration/open.php:59
 msgid "Spam"
 msgstr "スパム"
 
-#: concrete/single_pages/dashboard/system/registration/open.php:71
+#: concrete/single_pages/dashboard/system/registration/open.php:64
 msgid "CAPTCHA required"
 msgstr "CAPTCHAが必要です"
 
-#: concrete/single_pages/dashboard/system/registration/open.php:82
+#: concrete/single_pages/dashboard/system/registration/open.php:75
 msgid "Ask for Username & password on login form"
 msgstr "ログインフォームでユーザー名とパスワードを求める。"
 
-#: concrete/single_pages/dashboard/system/registration/open.php:91
+#: concrete/single_pages/dashboard/system/registration/open.php:84
 msgid "Ask for Email & password on login form"
 msgstr "ログインフォームでメールアドレスとパスワードを求める。"
 
@@ -16657,7 +16653,7 @@ msgid "Publish Changes"
 msgstr "変更を公開"
 
 #: concrete/src/Application/Service/Composer.php:69
-#: concrete/elements/page_controls_footer.php:516
+#: concrete/elements/page_controls_footer.php:475
 msgid "Submit to Workflow"
 msgstr "ワークフローに送信"
 
@@ -20107,20 +20103,20 @@ msgstr "ディレクトリに入れませんでした。"
 msgid "Unknown error compressing a directory"
 msgstr "ディレクトリ圧縮中に不明なエラー"
 
-#: concrete/src/File/Type/Type.php:431
+#: concrete/src/File/Type/Type.php:443
 #: concrete/blocks/youtube/form_setup_html.php:17
 msgid "Video"
 msgstr "ビデオ"
 
-#: concrete/src/File/Type/Type.php:437
+#: concrete/src/File/Type/Type.php:449
 msgid "Audio"
 msgstr "オーディオ"
 
-#: concrete/src/File/Type/Type.php:440
+#: concrete/src/File/Type/Type.php:452
 msgid "Document"
 msgstr "ドキュメント"
 
-#: concrete/src/File/Type/Type.php:443
+#: concrete/src/File/Type/Type.php:455
 msgid "Application"
 msgstr "アプリケーション"
 
@@ -20224,59 +20220,77 @@ msgid "Originally requested by %s."
 msgstr "リクエスト申請者： %s"
 
 #: concrete/src/Workflow/Request/ActivateUserRequest.php:50
+#: concrete/src/Workflow/Request/ActivateUserRequest.php:51
+#: concrete/src/Workflow/Request/ActivateUserRequest.php:52
+msgid "Invalid user."
+msgstr ""
+
+#: concrete/src/Workflow/Request/ActivateUserRequest.php:64
+#, php-format
+msgid ""
+"User account \"%s\" has pending deactivation request which needs to be "
+"approved."
+msgstr ""
+
+#: concrete/src/Workflow/Request/ActivateUserRequest.php:68
+#, php-format
+msgid "User <a target=\"_blank\" href=\"%s\">%s</a> submitted for Deactivation."
+msgstr ""
+
+#: concrete/src/Workflow/Request/ActivateUserRequest.php:72
+msgid "User submitted for Deactivation."
+msgstr ""
+
+#: concrete/src/Workflow/Request/ActivateUserRequest.php:75
 #, php-format
 msgid ""
 "User account \"%s\" has pending activation request which needs to be "
 "approved."
 msgstr "\"%s\" ユーザーに承認が必要な有効化リクエストが有ります。"
 
-#: concrete/src/Workflow/Request/ActivateUserRequest.php:52
+#: concrete/src/Workflow/Request/ActivateUserRequest.php:79
 #, php-format
-msgid "User %s Submitted for Approval."
-msgstr "User %s が承認フローに送られました。"
+msgid "User <a target=\"_blank\" href=\"%s\">%s</a> submitted for Approval."
+msgstr ""
 
-#: concrete/src/Workflow/Request/ActivateUserRequest.php:54
-msgid "User Submitted for Deactivation."
-msgstr "ユーザーの停止リクエストが送られました。"
+#: concrete/src/Workflow/Request/ActivateUserRequest.php:83
+msgid "User submitted for Approval."
+msgstr ""
 
-#: concrete/src/Workflow/Request/ActivateUserRequest.php:56
-msgid "User Submitted for Approval."
-msgstr "ユーザーの承認リクエストが送られました。"
-
-#: concrete/src/Workflow/Request/ActivateUserRequest.php:68
+#: concrete/src/Workflow/Request/ActivateUserRequest.php:98
 #, php-format
 msgid "User %s has been deactivated."
 msgstr "%s ユーザーが無効化されました。"
 
-#: concrete/src/Workflow/Request/ActivateUserRequest.php:73
+#: concrete/src/Workflow/Request/ActivateUserRequest.php:107
 #, php-format
 msgid "User %s has been activated."
 msgstr "%s ユーザーが有効化されました。"
 
-#: concrete/src/Workflow/Request/ActivateUserRequest.php:114
+#: concrete/src/Workflow/Request/ActivateUserRequest.php:152
 msgid "User deactivation request has been cancelled."
 msgstr "ユーザーの無効化リクエストがキャンセルされました。"
 
-#: concrete/src/Workflow/Request/ActivateUserRequest.php:116
+#: concrete/src/Workflow/Request/ActivateUserRequest.php:154
 msgid "User activation request has been cancelled."
 msgstr "ユーザーの有効化リクエストがキャンセルされました。"
 
-#: concrete/src/Workflow/Request/ActivateUserRequest.php:151
+#: concrete/src/Workflow/Request/ActivateUserRequest.php:188
 #: concrete/src/Workflow/Request/ApprovePageRequest.php:127
-#: concrete/src/Workflow/Request/DeleteUserRequest.php:83
+#: concrete/src/Workflow/Request/DeleteUserRequest.php:100
 msgid "Review"
 msgstr "レビュー"
 
-#: concrete/src/Workflow/Request/ActivateUserRequest.php:152
-#: concrete/src/Workflow/Request/DeleteUserRequest.php:84
+#: concrete/src/Workflow/Request/ActivateUserRequest.php:189
+#: concrete/src/Workflow/Request/DeleteUserRequest.php:101
 msgid "User Details"
 msgstr "ユーザーの詳細"
 
-#: concrete/src/Workflow/Request/ActivateUserRequest.php:171
+#: concrete/src/Workflow/Request/ActivateUserRequest.php:208
 msgid "Deactivation"
 msgstr "無効化"
 
-#: concrete/src/Workflow/Request/ActivateUserRequest.php:173
+#: concrete/src/Workflow/Request/ActivateUserRequest.php:210
 msgid "Activation"
 msgstr "有効化"
 
@@ -20439,36 +20453,36 @@ msgstr "削除を承認"
 msgid "Global Area emptied"
 msgstr "グローバルエリアをカラにしました。"
 
-#: concrete/src/Workflow/Request/DeleteUserRequest.php:26
+#: concrete/src/Workflow/Request/DeleteUserRequest.php:27
 #, php-format
 msgid ""
 "User account \"%s\" has been marked for deletion. The deletion request needs"
 " to be approved."
 msgstr "%s ユーザーが削除候補としてマークされました。削除リクエストは承認が必要です。"
 
-#: concrete/src/Workflow/Request/DeleteUserRequest.php:28
+#: concrete/src/Workflow/Request/DeleteUserRequest.php:29
 #, php-format
 msgid "User %s Submitted for Deletion."
 msgstr "%s ユーザーの削除リクエストが送られました。"
 
-#: concrete/src/Workflow/Request/DeleteUserRequest.php:29
+#: concrete/src/Workflow/Request/DeleteUserRequest.php:30
 msgid "User Submitted for Deletion."
 msgstr "ユーザーの削除リクエストが送られました。"
 
-#: concrete/src/Workflow/Request/DeleteUserRequest.php:42
+#: concrete/src/Workflow/Request/DeleteUserRequest.php:59
 #, php-format
 msgid "User %s has been deleted."
 msgstr "ユーザー %s が削除されました。"
 
-#: concrete/src/Workflow/Request/DeleteUserRequest.php:54
+#: concrete/src/Workflow/Request/DeleteUserRequest.php:71
 msgid "User deletion request has been cancelled."
 msgstr "ユーザーの削除リクエストがキャンセルされました。"
 
-#: concrete/src/Workflow/Request/DeleteUserRequest.php:76
+#: concrete/src/Workflow/Request/DeleteUserRequest.php:93
 msgid "Delete User"
 msgstr "ユーザー削除"
 
-#: concrete/src/Workflow/Request/DeleteUserRequest.php:102
+#: concrete/src/Workflow/Request/DeleteUserRequest.php:119
 msgid "Deletion"
 msgstr "削除"
 
@@ -20734,8 +20748,8 @@ msgid ""
 "Invalid path traversal. Please make this request with a valid HTTP client."
 msgstr "無効なパス走査を検出しました。正規のHTTPクライアントを使ってリクエストを完了してください。"
 
-#: concrete/src/Http/ResponseFactory.php:81
 #: concrete/src/Http/ResponseFactory.php:82
+#: concrete/src/Http/ResponseFactory.php:83
 msgid "Page not found"
 msgstr "ページが見つかりません"
 
@@ -25758,6 +25772,10 @@ msgstr "昇順"
 msgid "Descending"
 msgstr "降順"
 
+#: concrete/elements/search/customize_results.php:110
+msgid "Number of Results"
+msgstr ""
+
 #: concrete/elements/help/dialog/introduction.php:10
 msgid "Learn the basics."
 msgstr "基本を学びましょう。"
@@ -26855,37 +26873,37 @@ msgstr "ページエイリアス。"
 msgid "This page is an alias of one that actually appears elsewhere."
 msgstr "このページは、他の位置に存在するページのエイリアスです。"
 
-#: concrete/elements/page_controls_footer.php:494
+#: concrete/elements/page_controls_footer.php:453
 msgid "Page Draft."
 msgstr "ページの下書き。"
 
-#: concrete/elements/page_controls_footer.php:495
+#: concrete/elements/page_controls_footer.php:454
 msgid "This is an un-published draft."
 msgstr "これは未公開の下書きです。"
 
-#: concrete/elements/page_controls_footer.php:519
+#: concrete/elements/page_controls_footer.php:478
 msgid "Approve Version"
 msgstr "このバージョンを承認する"
 
-#: concrete/elements/page_controls_footer.php:524
+#: concrete/elements/page_controls_footer.php:483
 msgid "Page is Pending Approval."
 msgstr "ページは承認待ちです。"
 
-#: concrete/elements/page_controls_footer.php:525
+#: concrete/elements/page_controls_footer.php:484
 msgid "This page is newer than what appears to visitors on your live site."
 msgstr "このページは訪問者が公開サイトにアクセスした時に表示される状態より新しい内容になっています。"
 
 #. %1$s is a date, %2$s is a time
-#: concrete/elements/page_controls_footer.php:536
+#: concrete/elements/page_controls_footer.php:495
 #, php-format
 msgid "This version of the page is scheduled to be published on %1$s at %2$s."
 msgstr "このページのバージョンは %1$s の %2$s に公開予定です。"
 
-#: concrete/elements/page_controls_footer.php:537
+#: concrete/elements/page_controls_footer.php:496
 msgid "Publish Now"
 msgstr "今すぐ公開"
 
-#: concrete/elements/page_controls_footer.php:539
+#: concrete/elements/page_controls_footer.php:498
 msgid "Publish Pending."
 msgstr "公開保留中"
 
