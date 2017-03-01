@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: concrete5\n"
 "Report-Msgid-Bugs-To: http://www.concrete5.org/developers/bugs/\n"
-"POT-Creation-Date: 2017-02-25T06:00:05+01:00\n"
-"PO-Revision-Date: 2017-02-25 09:00+0000\n"
+"POT-Creation-Date: 2017-02-28T06:00:05+01:00\n"
+"PO-Revision-Date: 2017-02-28 09:12+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/concrete5/concrete5/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
@@ -249,7 +249,7 @@ msgstr "user attributes, user data, gather data, registration data"
 
 #: concrete/config/install/base/single_pages/dashboard.xml:114
 #: concrete/src/Permission/Access/Entity/UserEntity.php:68
-#: concrete/elements/users/search_header.php:20
+#: concrete/elements/users/search_header.php:28
 msgid "Add User"
 msgstr "ユーザーを追加"
 
@@ -729,7 +729,7 @@ msgstr "タイムゾーン、プロフィール、場所"
 #: concrete/src/Page/Search/Field/Manager.php:49
 #: concrete/src/File/Search/Field/Manager.php:38
 #: concrete/views/dialogs/file/upload_complete.php:34
-#: concrete/elements/search/customize_results.php:40
+#: concrete/elements/search/customize_results.php:42
 msgid "Custom Attributes"
 msgstr "カスタム属性"
 
@@ -3983,6 +3983,8 @@ msgid "Invalid or non-customizable theme."
 msgstr "カスタマイズできないテーマです。"
 
 #: concrete/controllers/panel/page/attributes.php:54
+#: concrete/tools/workflow/dialogs/user_details.php:75
+#: concrete/single_pages/dashboard/users/search.php:212
 #: concrete/views/dialogs/page/add.php:29
 #: concrete/views/dialogs/page/add_block_list.php:57
 #: concrete/views/panels/add.php:351
@@ -4112,8 +4114,8 @@ msgstr "更新日時: %s"
 #: concrete/controllers/dialog/file/thumbnails/edit.php:40
 #: concrete/controllers/dialog/file/properties.php:112
 #: concrete/controllers/dialog/file/properties.php:115
-#: concrete/controllers/single_page/dashboard/users/search.php:48
-#: concrete/controllers/single_page/dashboard/users/search.php:68
+#: concrete/controllers/single_page/dashboard/users/search.php:50
+#: concrete/controllers/single_page/dashboard/users/search.php:70
 #: concrete/controllers/backend/express/entry.php:49
 #: concrete/controllers/backend/user.php:72
 #: concrete/controllers/backend/user.php:96
@@ -4277,8 +4279,8 @@ msgstr "属性が正常にクリアされました。"
 #: concrete/tools/edit_area_popup.php:5
 #: concrete/tools/edit_collection_popup.php:6
 #: concrete/tools/sitemap_overlay.php:6
-#: concrete/src/Page/Controller/DashboardExpressEntriesPageController.php:150
-#: concrete/src/Page/Controller/DashboardExpressEntriesPageController.php:198
+#: concrete/src/Page/Controller/DashboardExpressEntriesPageController.php:163
+#: concrete/src/Page/Controller/DashboardExpressEntriesPageController.php:211
 msgid "Access Denied"
 msgstr "アクセス拒否"
 
@@ -4349,13 +4351,13 @@ msgid "File storage locations updated successfully."
 msgstr "ファイル保存場所が正常に更新されました。"
 
 #: concrete/controllers/dialog/file/properties.php:53
-#: concrete/controllers/single_page/dashboard/users/search.php:344
+#: concrete/controllers/single_page/dashboard/users/search.php:353
 #: concrete/controllers/single_page/dashboard/pages/types/attributes.php:77
 msgid "Attribute cleared successfully."
 msgstr "属性が正常にクリアされました。"
 
 #: concrete/controllers/dialog/file/properties.php:78
-#: concrete/controllers/single_page/dashboard/users/search.php:318
+#: concrete/controllers/single_page/dashboard/users/search.php:327
 #: concrete/controllers/single_page/dashboard/pages/types/attributes.php:56
 msgid "Attribute saved successfully."
 msgstr "属性が正常に保存されました。"
@@ -4411,7 +4413,7 @@ msgid "You must be logged in to access this page."
 msgstr "このページを閲覧するにはログインが必要です。"
 
 #: concrete/controllers/single_page/account/edit_profile.php:35
-#: concrete/controllers/single_page/dashboard/users/search.php:405
+#: concrete/controllers/single_page/dashboard/users/search.php:414
 #: concrete/controllers/single_page/login.php:225
 msgctxt "Default locale"
 msgid "** Default"
@@ -4423,14 +4425,14 @@ msgstr "プロフィールが正常に更新されました。"
 
 #: concrete/controllers/single_page/account/edit_profile.php:98
 #: concrete/controllers/single_page/dashboard/users/add.php:54
-#: concrete/controllers/single_page/dashboard/users/search.php:175
+#: concrete/controllers/single_page/dashboard/users/search.php:184
 #: concrete/controllers/single_page/register.php:72
 msgid "Invalid email address provided."
 msgstr "無効なメールアドレスです。"
 
 #: concrete/controllers/single_page/account/edit_profile.php:101
 #: concrete/controllers/single_page/dashboard/users/add.php:56
-#: concrete/controllers/single_page/dashboard/users/search.php:179
+#: concrete/controllers/single_page/dashboard/users/search.php:188
 #, php-format
 msgid "The email address '%s' is already in use. Please choose another."
 msgstr "メールアドレス「%s」はすでに使用されています。別のメールアドレスを入力してください。"
@@ -4445,7 +4447,7 @@ msgid "The username '%s' is already in use. Please choose another."
 msgstr "このユーザー名「%s」はすでに使用されています。他を入力してください。"
 
 #: concrete/controllers/single_page/account/edit_profile.php:125
-#: concrete/controllers/single_page/dashboard/users/search.php:362
+#: concrete/controllers/single_page/dashboard/users/search.php:371
 #: concrete/controllers/single_page/register.php:112
 #: concrete/controllers/install.php:434
 #: concrete/authentication/concrete/controller.php:265
@@ -4589,7 +4591,7 @@ msgstr "新規"
 #: concrete/controllers/frontend/assets_localization.php:209
 #: concrete/controllers/frontend/assets_localization.php:258
 #: concrete/controllers/frontend/assets_localization.php:454
-#: concrete/tools/workflow/dialogs/user_details.php:69
+#: concrete/tools/workflow/dialogs/user_details.php:95
 #: concrete/single_pages/members/profile.php:17
 #: concrete/single_pages/dashboard/users/points/actions.php:130
 #: concrete/single_pages/dashboard/system/mail/importers.php:92
@@ -4648,14 +4650,14 @@ msgid "You must specify a search string."
 msgstr "検索文字列を入力してください。"
 
 #: concrete/controllers/single_page/dashboard/users/add.php:60
-#: concrete/controllers/single_page/dashboard/users/search.php:249
+#: concrete/controllers/single_page/dashboard/users/search.php:258
 #: concrete/controllers/single_page/register.php:80
 #, php-format
 msgid "A username must be at least %s characters long."
 msgstr "ユーザーIDは%s文字以上である必要があります（半角英数字）。"
 
 #: concrete/controllers/single_page/dashboard/users/add.php:64
-#: concrete/controllers/single_page/dashboard/users/search.php:258
+#: concrete/controllers/single_page/dashboard/users/search.php:267
 #: concrete/controllers/single_page/register.php:87
 #, php-format
 msgid "A username cannot be more than %s characters long."
@@ -4670,7 +4672,7 @@ msgid ""
 msgstr "ユーザー名は半角英数字、スペース（最初と最後は不可）、ドット（最初と最後は不可）、アンダースコア（最初と最後は不可）のみ使用することができます。"
 
 #: concrete/controllers/single_page/dashboard/users/add.php:71
-#: concrete/controllers/single_page/dashboard/users/search.php:274
+#: concrete/controllers/single_page/dashboard/users/search.php:283
 #: concrete/controllers/single_page/register.php:96
 msgid ""
 "A username may only contain letters, numbers, dots (not at the "
@@ -4678,7 +4680,7 @@ msgid ""
 msgstr "ユーザー名は半角英数字、ドット（最初と最後は不可）、アンダースコア（最初と最後は不可）のみ使用することができます。"
 
 #: concrete/controllers/single_page/dashboard/users/add.php:76
-#: concrete/controllers/single_page/dashboard/users/search.php:281
+#: concrete/controllers/single_page/dashboard/users/search.php:290
 #, php-format
 msgid "The username '%s' already exists. Please choose another"
 msgstr "ユーザーID「%s」はすでに使用されています。別のIDを入力してください。"
@@ -4778,12 +4780,12 @@ msgstr "グループが正常に削除されました。"
 msgid "User Point Entry Deleted"
 msgstr "ユーザポイントエントリーが削除されました"
 
-#: concrete/controllers/single_page/dashboard/users/search.php:54
+#: concrete/controllers/single_page/dashboard/users/search.php:56
 msgid "Avatar saved successfully."
 msgstr "アバターが正常に保存されました。"
 
-#: concrete/controllers/single_page/dashboard/users/search.php:116
-#: concrete/controllers/single_page/dashboard/users/search.php:120
+#: concrete/controllers/single_page/dashboard/users/search.php:118
+#: concrete/controllers/single_page/dashboard/users/search.php:122
 #: concrete/controllers/single_page/register.php:174
 #: concrete/controllers/single_page/register.php:178
 #: concrete/src/Workflow/Request/ActivateUserRequest.php:128
@@ -4791,80 +4793,84 @@ msgstr "アバターが正常に保存されました。"
 msgid "Website Registration Notification"
 msgstr "ウェブサイト登録通知"
 
-#: concrete/controllers/single_page/dashboard/users/search.php:187
+#: concrete/controllers/single_page/dashboard/users/search.php:196
 msgid "Email saved successfully."
 msgstr "Eメールが正常に保存されました。"
 
-#: concrete/controllers/single_page/dashboard/users/search.php:208
+#: concrete/controllers/single_page/dashboard/users/search.php:217
 msgid "Time zone saved successfully."
 msgstr "タイムゾーンが正常に保存されました。"
 
-#: concrete/controllers/single_page/dashboard/users/search.php:229
+#: concrete/controllers/single_page/dashboard/users/search.php:238
 msgid "Language saved successfully."
 msgstr "言語が正常に保存されました。"
 
-#: concrete/controllers/single_page/dashboard/users/search.php:268
+#: concrete/controllers/single_page/dashboard/users/search.php:277
 msgid ""
 "A username may only contain letters, numbers, spaces, dots (not at the "
 "beginning/end), underscores (not at the beginning/end)."
 msgstr "ユーザーIDは半角英数字、スペース、ドット（最初と最後は不可）、アンダースコア（最初と最後は不可）のみ使用することができます。"
 
-#: concrete/controllers/single_page/dashboard/users/search.php:289
+#: concrete/controllers/single_page/dashboard/users/search.php:298
 msgid "Username saved successfully."
 msgstr "ユーザ名が正常に保存されました。"
 
-#: concrete/controllers/single_page/dashboard/users/search.php:305
-#: concrete/controllers/single_page/dashboard/users/search.php:333
+#: concrete/controllers/single_page/dashboard/users/search.php:314
+#: concrete/controllers/single_page/dashboard/users/search.php:342
 msgid "You do not have permission to modify this attribute."
 msgstr "この属性を変更する権限がありません。"
 
-#: concrete/controllers/single_page/dashboard/users/search.php:371
+#: concrete/controllers/single_page/dashboard/users/search.php:380
 msgid "Password updated successfully."
 msgstr "パスワードが正常に更新されました。"
 
-#: concrete/controllers/single_page/dashboard/users/search.php:433
+#: concrete/controllers/single_page/dashboard/users/search.php:442
 msgid "User deleted successfully."
 msgstr "ユーザーが正常に削除されました。"
 
-#: concrete/controllers/single_page/dashboard/users/search.php:462
+#: concrete/controllers/single_page/dashboard/users/search.php:479
 #, php-format
 msgid "View/Edit %s"
 msgstr "%s を表示/編集"
 
-#: concrete/controllers/single_page/dashboard/users/search.php:487
+#: concrete/controllers/single_page/dashboard/users/search.php:504
 msgid "User activation workflow initiated."
 msgstr "ユーザーアクティベーションの承認フローが送られました。"
 
-#: concrete/controllers/single_page/dashboard/users/search.php:489
+#: concrete/controllers/single_page/dashboard/users/search.php:506
 msgid "User activated successfully."
 msgstr "ユーザーアカウントが正常に有効化されました。"
 
-#: concrete/controllers/single_page/dashboard/users/search.php:494
+#: concrete/controllers/single_page/dashboard/users/search.php:511
 msgid "User deactivation workflow initiated."
 msgstr "ユーザー無効化の承認フローが送られました。"
 
-#: concrete/controllers/single_page/dashboard/users/search.php:496
+#: concrete/controllers/single_page/dashboard/users/search.php:513
 msgid "User deactivated successfully."
 msgstr "ユーザーアカウントが正常に停止されました。"
 
-#: concrete/controllers/single_page/dashboard/users/search.php:500
+#: concrete/controllers/single_page/dashboard/users/search.php:517
 msgid "User created successfully."
 msgstr "ユーザが正常に作成されました。"
 
-#: concrete/controllers/single_page/dashboard/users/search.php:503
+#: concrete/controllers/single_page/dashboard/users/search.php:520
 msgid "Email marked as valid."
 msgstr "メールアドレスが有効として判定されました。"
 
-#: concrete/controllers/single_page/dashboard/users/search.php:506
+#: concrete/controllers/single_page/dashboard/users/search.php:523
+msgid "Email validation sent."
+msgstr ""
+
+#: concrete/controllers/single_page/dashboard/users/search.php:526
 msgid "Workflow request is canceled."
 msgstr "承認フローリクエストがキャンセルされました。"
 
-#: concrete/controllers/single_page/dashboard/users/search.php:512
+#: concrete/controllers/single_page/dashboard/users/search.php:532
 msgid "User deletion workflow initiated."
 msgstr "ユーザー削除の承認フローが送られました。"
 
-#: concrete/controllers/single_page/dashboard/users/search.php:514
-#: concrete/controllers/single_page/dashboard/users/search.php:521
+#: concrete/controllers/single_page/dashboard/users/search.php:534
+#: concrete/controllers/single_page/dashboard/users/search.php:541
 msgid "User has been deleted."
 msgstr "ユーザーが削除されました。"
 
@@ -6732,7 +6738,7 @@ msgid "Invalid Request, please attempt login again."
 msgstr "無効なリクエストです、もう一度ログインしてみてください。"
 
 #: concrete/controllers/single_page/register.php:67
-#: concrete/tools/conversations/add_message.php:49
+#: concrete/tools/conversations/add_message.php:50
 msgid ""
 "Incorrect image validation code. Please check the image and re-enter the "
 "letters or numbers as necessary."
@@ -6752,27 +6758,23 @@ msgstr "ユーザーID %s はすでに使用されています。別のIDを入�
 msgid "Invalid token."
 msgstr "無効なトークンです。"
 
-#: concrete/controllers/single_page/register.php:216
-msgid "Validate Email Address"
-msgstr "メールアドレスを確認"
-
-#: concrete/controllers/single_page/register.php:278
+#: concrete/controllers/single_page/register.php:262
 msgid "Your account has been created, and you are now logged in."
 msgstr "あなたのアカウントが作成されました。すでにログインしています。"
 
-#: concrete/controllers/single_page/register.php:284
+#: concrete/controllers/single_page/register.php:268
 msgid ""
 "You are registered but you need to validate your email address. Some or all "
 "functionality on this site will be limited until you do so."
 msgstr "ユーザー登録が完了しましたが、メールアドレスの確認が必要です。それまで、サイト内の機能の一部が利用できない場合があります。"
 
-#: concrete/controllers/single_page/register.php:285
+#: concrete/controllers/single_page/register.php:269
 msgid ""
 "An email has been sent to your email address. Click on the URL contained in "
 "the email to validate your email address."
 msgstr "メールアドレス確認のメールが送信されました。メールの中にあるURLをクリックして、メールアドレスの確認作業を行ってください。"
 
-#: concrete/controllers/single_page/register.php:292
+#: concrete/controllers/single_page/register.php:276
 msgid ""
 "You are registered but a site administrator must review your account, you "
 "will not be able to login until your account has been approved."
@@ -6925,7 +6927,7 @@ msgstr "読み込み中"
 #: concrete/tools/pages/permissions_access.php:174
 #: concrete/tools/pages/speed_settings.php:185
 #: concrete/tools/gathering/item/delete.php:27
-#: concrete/tools/conversations/edit_message.php:50
+#: concrete/tools/conversations/edit_message.php:54
 #: concrete/tools/files/delete.php:103 concrete/tools/files/duplicate.php:122
 #: concrete/tools/files/import.php:212 concrete/tools/files/import.php:217
 #: concrete/tools/files/permissions.php:98
@@ -6939,7 +6941,7 @@ msgstr "読み込み中"
 #: concrete/single_pages/dashboard/users/group_sets.php:40
 #: concrete/single_pages/dashboard/users/group_sets.php:55
 #: concrete/single_pages/dashboard/users/groups.php:203
-#: concrete/single_pages/dashboard/users/search.php:230
+#: concrete/single_pages/dashboard/users/search.php:249
 #: concrete/single_pages/dashboard/pages/templates/add.php:50
 #: concrete/single_pages/dashboard/pages/templates/view.php:64
 #: concrete/single_pages/dashboard/pages/types/add.php:7
@@ -7027,8 +7029,8 @@ msgstr "読み込み中"
 #: concrete/blocks/core_gathering/view.php:15
 #: concrete/blocks/form/form_setup_html.php:274
 #: concrete/blocks/express_form/form.php:80
-#: concrete/elements/conversation/display.php:37
-#: concrete/elements/conversation/display.php:40
+#: concrete/elements/conversation/display.php:38
+#: concrete/elements/conversation/display.php:41
 #: concrete/elements/page_types/composer/form/layout_set/control.php:42
 #: concrete/elements/attribute/key/header.php:12
 #: concrete/elements/files/search_header.php:44
@@ -7174,7 +7176,7 @@ msgstr "レイアウト固定を解除"
 #: concrete/elements/conversation/message/topic.php:50
 #: concrete/elements/conversation/message.php:58
 #: concrete/elements/pages/search.php:57
-#: concrete/elements/dashboard/users/header.php:54
+#: concrete/elements/dashboard/users/header.php:59
 #: concrete/elements/page_controls_footer.php:224
 #: concrete/elements/page_controls_footer.php:226
 msgid "Delete"
@@ -7216,8 +7218,8 @@ msgstr "記事"
 
 #: concrete/controllers/frontend/assets_localization.php:54
 #: concrete/tools/files/import.php:207
-#: concrete/tools/workflow/dialogs/user_details.php:68
-#: concrete/elements/conversation/display.php:43
+#: concrete/tools/workflow/dialogs/user_details.php:94
+#: concrete/elements/conversation/display.php:44
 msgid "Close"
 msgstr "閉じる"
 
@@ -7471,7 +7473,7 @@ msgstr "編集モード"
 #: concrete/tools/users/bulk_group_remove.php:100
 #: concrete/tools/pages/permissions.php:193
 #: concrete/tools/pages/permissions_access.php:175
-#: concrete/tools/conversations/edit_message.php:42
+#: concrete/tools/conversations/edit_message.php:46
 #: concrete/single_pages/account/edit_profile.php:88
 #: concrete/single_pages/dashboard/pages/types/composer.php:202
 #: concrete/single_pages/dashboard/pages/types/permissions.php:33
@@ -8335,8 +8337,8 @@ msgstr "テーブル"
 #: concrete/controllers/frontend/assets_localization.php:368
 #: concrete/blocks/feature/form.php:34
 #: concrete/blocks/image_slider/form_setup_html.php:340
-#: concrete/elements/conversation/display.php:43
-#: concrete/elements/conversation/message.php:159
+#: concrete/elements/conversation/display.php:44
+#: concrete/elements/conversation/message.php:173
 msgid "Link"
 msgstr "リンク"
 
@@ -8911,7 +8913,7 @@ msgid ""
 msgstr "添付ファイルを削除する際にエラーが発生しました。再読み込みしてから、もう一度お試しください。"
 
 #: concrete/controllers/frontend/assets_localization.php:598
-#: concrete/elements/conversation/display.php:41
+#: concrete/elements/conversation/display.php:42
 msgid "Remove this attachment?"
 msgstr "添付ファイルを削除しますか？"
 
@@ -9452,7 +9454,7 @@ msgstr "パスワードをリセットしてメールで送信"
 #: concrete/authentication/concrete/form.php:14
 #: concrete/single_pages/dashboard/users/add.php:17
 #: concrete/single_pages/dashboard/users/search.php:55
-#: concrete/single_pages/dashboard/users/search.php:220
+#: concrete/single_pages/dashboard/users/search.php:239
 #: concrete/single_pages/dashboard/system/mail/importers.php:41
 #: concrete/single_pages/dashboard/system/mail/method.php:36
 #: concrete/single_pages/download_file.php:36
@@ -10223,7 +10225,7 @@ msgstr "標準 - %s 分"
 
 #: concrete/tools/pages/speed_settings.php:172
 #: concrete/views/panels/details/page/caching.php:86
-#: concrete/blocks/core_conversation/form.php:152
+#: concrete/blocks/core_conversation/form.php:182
 #: concrete/elements/permission/keys/add_block.php:25
 #: concrete/elements/permission/keys/add_block.php:60
 #: concrete/elements/permission/keys/add_file.php:29
@@ -10252,7 +10254,7 @@ msgid "minutes"
 msgstr "分"
 
 #: concrete/tools/pages/speed_settings.php:186
-#: concrete/single_pages/dashboard/users/search.php:231
+#: concrete/single_pages/dashboard/users/search.php:250
 #: concrete/single_pages/dashboard/pages/templates/view.php:67
 #: concrete/single_pages/dashboard/pages/feeds.php:44
 #: concrete/single_pages/dashboard/system/backup/update.php:298
@@ -10305,57 +10307,67 @@ msgstr "添付の制限に達しました"
 msgid "Invalid File Extension"
 msgstr "無効なファイル拡張子"
 
-#: concrete/tools/conversations/add_message.php:18
+#: concrete/tools/conversations/add_message.php:19
 msgid "Invalid Block Object."
 msgstr "無効なブロックオブジェクトです。"
 
-#: concrete/tools/conversations/add_message.php:25
+#: concrete/tools/conversations/add_message.php:26
 msgid "Invalid conversation."
 msgstr "無効なコメント欄です。"
 
-#: concrete/tools/conversations/add_message.php:29
+#: concrete/tools/conversations/add_message.php:30
 msgid "You do not have access to add a message to this conversation."
 msgstr "このコメント欄にメッセージを追加する権限がありません。"
 
-#: concrete/tools/conversations/add_message.php:36
+#: concrete/tools/conversations/add_message.php:37
 msgid "You must enter your name to post this message."
 msgstr "メッセージを送信するには、お名前を入力してください。"
 
-#: concrete/tools/conversations/add_message.php:41
+#: concrete/tools/conversations/add_message.php:42
 msgid "You must enter a valid email address to post this message."
 msgstr "メッセージを送信するには、正しいメールアドレスを入力してください。"
 
-#: concrete/tools/conversations/add_message.php:58
 #: concrete/tools/conversations/add_message.php:62
+#: concrete/tools/conversations/add_message.php:66
 msgid "Invalid Page."
 msgstr "無効なページです。"
 
-#: concrete/tools/conversations/add_message.php:71
-#: concrete/tools/conversations/update_message.php:39
+#: concrete/tools/conversations/add_message.php:75
+#: concrete/tools/conversations/update_message.php:40
 msgid "You do not have permission to add attachments."
 msgstr "添付ファイルを追加する権限がありません。"
 
-#: concrete/tools/conversations/add_message.php:75
-#: concrete/tools/conversations/update_message.php:43
+#: concrete/tools/conversations/add_message.php:79
+#: concrete/tools/conversations/update_message.php:44
 msgid "You have too many attachments."
 msgstr "添付の数が多すぎます。"
 
-#: concrete/tools/conversations/add_message.php:82
+#: concrete/tools/conversations/add_message.php:87
+#: concrete/tools/conversations/update_message.php:51
+msgid "Reviews have not been enabled for this discussion."
+msgstr ""
+
+#: concrete/tools/conversations/add_message.php:89
+#: concrete/tools/conversations/update_message.php:53
+msgid "A review must be a rating between 1 and 5."
+msgstr ""
+
+#: concrete/tools/conversations/add_message.php:94
 #: concrete/tools/conversations/update_message.php:15
 msgid "Invalid conversation post token."
 msgstr "コメント欄の投稿トークンが無効です。"
 
-#: concrete/tools/conversations/add_message.php:85
+#: concrete/tools/conversations/add_message.php:97
 #: concrete/tools/conversations/update_message.php:18
 #: concrete/blocks/core_conversation_message/controller.php:49
 msgid "Your message cannot be empty."
 msgstr "メッセージを入力してください。"
 
-#: concrete/tools/conversations/add_message.php:92
+#: concrete/tools/conversations/add_message.php:104
 msgid "Invalid parent message."
 msgstr "親メッセージが無効です。"
 
-#: concrete/tools/conversations/add_message.php:97
+#: concrete/tools/conversations/add_message.php:109
 #: concrete/blocks/core_conversation_message/controller.php:55
 msgid "Banned words detected."
 msgstr "禁止語句を検出しました。"
@@ -10364,9 +10376,9 @@ msgstr "禁止語句を検出しました。"
 msgid "Message deleted successfully."
 msgstr "メッセージが正常に削除されました。"
 
-#: concrete/tools/conversations/edit_message.php:45
-#: concrete/elements/conversation/message/add_form.php:34
-#: concrete/elements/conversation/message/add_form.php:86
+#: concrete/tools/conversations/edit_message.php:49
+#: concrete/elements/conversation/message/add_form.php:38
+#: concrete/elements/conversation/message/add_form.php:90
 msgid "Attach Files"
 msgstr "添付ファイル"
 
@@ -10742,14 +10754,14 @@ msgstr "最新バージョン"
 msgid "Invalid user provided."
 msgstr "無効なユーザーが提供されました。"
 
-#: concrete/tools/workflow/dialogs/user_details.php:18
+#: concrete/tools/workflow/dialogs/user_details.php:24
 #: concrete/single_pages/dashboard/users/add.php:7
 #: concrete/single_pages/dashboard/users/search.php:22
 #: concrete/single_pages/dashboard/pages/types/view.php:41
 msgid "Basic Details"
 msgstr "基本情報"
 
-#: concrete/tools/workflow/dialogs/user_details.php:43
+#: concrete/tools/workflow/dialogs/user_details.php:49
 #: concrete/single_pages/dashboard/users/add.php:61
 #: concrete/single_pages/dashboard/users/group_sets.php:19
 #: concrete/single_pages/dashboard/users/group_sets.php:102
@@ -10758,7 +10770,7 @@ msgstr "基本情報"
 msgid "Groups"
 msgstr "グループ"
 
-#: concrete/tools/workflow/dialogs/user_details.php:50
+#: concrete/tools/workflow/dialogs/user_details.php:56
 msgid "User Attributes"
 msgstr "ユーザー属性"
 
@@ -10797,7 +10809,7 @@ msgid "Basic Information"
 msgstr "基本情報"
 
 #: concrete/single_pages/account/edit_profile.php:70
-#: concrete/single_pages/dashboard/users/search.php:297
+#: concrete/single_pages/dashboard/users/search.php:316
 msgid "Change Password"
 msgstr "パスワード変更"
 
@@ -10828,9 +10840,9 @@ msgid "Action"
 msgstr "アクション"
 
 #: concrete/single_pages/account/messages.php:54
-#: concrete/elements/conversation/message/add_form.php:83
+#: concrete/elements/conversation/message/add_form.php:87
 #: concrete/elements/conversation/message/topic.php:54
-#: concrete/elements/conversation/message.php:130
+#: concrete/elements/conversation/message.php:144
 msgid "Reply"
 msgstr "返信"
 
@@ -11039,6 +11051,9 @@ msgstr "このフォームの回答は、まだありません。"
 #: concrete/single_pages/dashboard/reports/forms/legacy.php:172
 #: concrete/single_pages/dashboard/reports/logs.php:9
 #: concrete/single_pages/dashboard/system/optimization/query_log.php:76
+#: concrete/elements/users/search_header.php:24
+#: concrete/elements/dashboard/reports/forms/header.php:6
+#: concrete/elements/dashboard/express/entries/header.php:5
 msgid "Export to CSV"
 msgstr "CSVに出力"
 
@@ -11685,28 +11700,22 @@ msgstr "はい"
 msgid "Add Groups"
 msgstr "グループを追加"
 
-#: concrete/single_pages/dashboard/users/search.php:194
-#: concrete/views/dialogs/file/bulk/properties.php:9
-#: concrete/views/dialogs/user/bulk/properties.php:9
-msgid "Other Attributes"
-msgstr "その他の属性"
-
-#: concrete/single_pages/dashboard/users/search.php:225
+#: concrete/single_pages/dashboard/users/search.php:244
 #: concrete/single_pages/register.php:74
 #: concrete/views/frontend/install.php:291
 msgid "Confirm Password"
 msgstr "パスワード確認"
 
-#: concrete/single_pages/dashboard/users/search.php:268
+#: concrete/single_pages/dashboard/users/search.php:287
 #, php-format
 msgid "This will end your current session and sign you in as %s"
 msgstr "このログインセッションを終了し、%sとしてログインします"
 
-#: concrete/single_pages/dashboard/users/search.php:272
+#: concrete/single_pages/dashboard/users/search.php:291
 msgid "Are you sure you want to permanently remove this user?"
 msgstr "本当にこのユーザーを完全に削除してもよろしいですか？"
 
-#: concrete/single_pages/dashboard/users/search.php:368
+#: concrete/single_pages/dashboard/users/search.php:387
 msgid ""
 "You do not have access to user search. This setting may be changed in the "
 "access section of the dashboard settings page."
@@ -13435,32 +13444,32 @@ msgid ""
 msgstr "注意：これらの設定は個別のコメント欄ブロックの設定画面で上書きすることが可能です。"
 
 #: concrete/single_pages/dashboard/system/conversations/settings.php:17
-#: concrete/blocks/core_conversation/form.php:170
+#: concrete/blocks/core_conversation/form.php:200
 msgid "Enable Attachments"
 msgstr "ファイル添付を有効にする"
 
 #: concrete/single_pages/dashboard/system/conversations/settings.php:21
-#: concrete/blocks/core_conversation/form.php:176
+#: concrete/blocks/core_conversation/form.php:206
 msgid "Max Attachment Size for Guest Users. (MB)"
 msgstr "ゲストユーザーに許可する、添付ファイル最大容量値 (MB)"
 
 #: concrete/single_pages/dashboard/system/conversations/settings.php:25
-#: concrete/blocks/core_conversation/form.php:182
+#: concrete/blocks/core_conversation/form.php:212
 msgid "Max Attachment Size for Registered Users. (MB)"
 msgstr "登録ユーザーに許可する添付ファイル最大容量 (MB)"
 
 #: concrete/single_pages/dashboard/system/conversations/settings.php:29
-#: concrete/blocks/core_conversation/form.php:188
+#: concrete/blocks/core_conversation/form.php:218
 msgid "Max Attachments Per Message for Guest Users."
 msgstr "ゲストユーザーに許可する添付ファイル数"
 
 #: concrete/single_pages/dashboard/system/conversations/settings.php:33
-#: concrete/blocks/core_conversation/form.php:194
+#: concrete/blocks/core_conversation/form.php:224
 msgid "Max Attachments Per Message for Registered Users"
 msgstr "登録ユーザーに許可する添付ファイル数"
 
 #: concrete/single_pages/dashboard/system/conversations/settings.php:37
-#: concrete/blocks/core_conversation/form.php:200
+#: concrete/blocks/core_conversation/form.php:230
 msgid "Allowed File Extensions (Comma separated, no periods)."
 msgstr "許可されるファイル拡張子。(カンマで区切る。ピリオドは入れない)"
 
@@ -13474,22 +13483,22 @@ msgstr "有効化されているコメント欄エディタ"
 
 #: concrete/single_pages/dashboard/system/conversations/settings.php:49
 #: concrete/single_pages/dashboard/system/registration/open.php:44
-#: concrete/blocks/core_conversation/form.php:210
+#: concrete/blocks/core_conversation/form.php:240
 msgid "Notification"
 msgstr "通知"
 
 #: concrete/single_pages/dashboard/system/conversations/settings.php:51
-#: concrete/blocks/core_conversation/form.php:219
+#: concrete/blocks/core_conversation/form.php:249
 msgid "Users To Receive Conversation Notifications"
 msgstr "コメント欄の通知を受け取るユーザー"
 
 #: concrete/single_pages/dashboard/system/conversations/settings.php:55
-#: concrete/blocks/core_conversation/form.php:223
+#: concrete/blocks/core_conversation/form.php:253
 msgid "Subscribe Option"
 msgstr "購読オプション"
 
 #: concrete/single_pages/dashboard/system/conversations/settings.php:59
-#: concrete/blocks/core_conversation/form.php:226
+#: concrete/blocks/core_conversation/form.php:256
 msgid "Yes, allow registered users to choose to subscribe to conversations."
 msgstr "はい、ユーザーにコメント欄の購読を許可します。"
 
@@ -15017,7 +15026,7 @@ msgstr "必須属性"
 
 #: concrete/single_pages/login.php:119
 #: concrete/blocks/express_form/controller.php:71
-#: concrete/elements/conversation/message/add_form.php:31
+#: concrete/elements/conversation/message/add_form.php:35
 msgid "Submit"
 msgstr "送信"
 
@@ -15160,6 +15169,10 @@ msgstr "非アクティブ"
 msgid "Unvalidated"
 msgstr "無効化"
 
+#: concrete/src/User/StatusService.php:33
+msgid "Validate Email Address"
+msgstr "メールアドレスを確認"
+
 #: concrete/src/User/UserBannedIp.php:88
 msgid "Failed Registration"
 msgstr "ユーザー登録に失敗"
@@ -15293,70 +15306,70 @@ msgid "Flag type already initialized."
 msgstr "報告タイプはすでに初期化されています。"
 
 #: concrete/src/Conversation/Discussion/Discussion.php:47
-#: concrete/src/Conversation/Message/Message.php:274
-#: concrete/src/Conversation/Message/Message.php:314
-#: concrete/src/Conversation/Message/Message.php:316
-#: concrete/src/Conversation/Message/Message.php:318
-#: concrete/src/Conversation/Message/Message.php:320
-#: concrete/src/Conversation/Message/Message.php:323
-#: concrete/src/Conversation/Message/Message.php:326
-#: concrete/src/Conversation/Message/Message.php:329
+#: concrete/src/Conversation/Message/Message.php:300
+#: concrete/src/Conversation/Message/Message.php:340
+#: concrete/src/Conversation/Message/Message.php:342
+#: concrete/src/Conversation/Message/Message.php:344
+#: concrete/src/Conversation/Message/Message.php:346
+#: concrete/src/Conversation/Message/Message.php:349
+#: concrete/src/Conversation/Message/Message.php:352
+#: concrete/src/Conversation/Message/Message.php:355
 #, php-format
 msgctxt "Message posted date"
 msgid "Posted on %s"
 msgstr "投稿日：%s"
 
-#: concrete/src/Conversation/Message/Message.php:231
+#: concrete/src/Conversation/Message/Message.php:257
 msgid "This message has been deleted."
 msgstr "このメッセージは削除されました。"
 
-#: concrete/src/Conversation/Message/Message.php:236
+#: concrete/src/Conversation/Message/Message.php:262
 msgid "This message has been flagged as spam."
 msgstr "このメッセージはスパム報告されました。"
 
-#: concrete/src/Conversation/Message/Message.php:241
+#: concrete/src/Conversation/Message/Message.php:267
 msgid "This message is queued for approval."
 msgstr "このメッセージは承認待ちです。"
 
-#: concrete/src/Conversation/Message/Message.php:292
-#: concrete/src/Conversation/Message/Message.php:308
+#: concrete/src/Conversation/Message/Message.php:318
+#: concrete/src/Conversation/Message/Message.php:334
 #, php-format
 msgid "%d second ago"
 msgid_plural "%d seconds ago"
 msgstr[0] "%d 秒前"
 
-#: concrete/src/Conversation/Message/Message.php:298
+#: concrete/src/Conversation/Message/Message.php:324
 #, php-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
 msgstr[0] "%d 年前"
 
-#: concrete/src/Conversation/Message/Message.php:300
+#: concrete/src/Conversation/Message/Message.php:326
 #, php-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d ヶ月前"
 
-#: concrete/src/Conversation/Message/Message.php:302
+#: concrete/src/Conversation/Message/Message.php:328
 #, php-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d 日前"
 
-#: concrete/src/Conversation/Message/Message.php:304
+#: concrete/src/Conversation/Message/Message.php:330
 #, php-format
 msgid "%d hour ago"
 msgid_plural "%d hours ago"
 msgstr[0] "%d 時間前"
 
-#: concrete/src/Conversation/Message/Message.php:306
+#: concrete/src/Conversation/Message/Message.php:332
 #, php-format
 msgid "%d minute ago"
 msgid_plural "%d minutes ago"
 msgstr[0] "%d 分前"
 
-#: concrete/src/Conversation/Message/Message.php:396
-#: concrete/src/Conversation/Message/Message.php:409
+#: concrete/src/Conversation/Message/Message.php:422
+#: concrete/src/Conversation/Message/Message.php:435
 msgid "Invalid flag type."
 msgstr "不正な報告タイプです。"
 
@@ -15729,11 +15742,11 @@ msgid ""
 msgstr "getEntity() をオーバーライドしていなければ、getEntityName で名前をつけたメソッドを定義する必要があります。"
 
 #: concrete/src/Page/Controller/DashboardExpressEntityPageController.php:58
-#: concrete/src/Page/Controller/DashboardExpressEntriesPageController.php:233
+#: concrete/src/Page/Controller/DashboardExpressEntriesPageController.php:246
 msgid "You do not have access to add entries of this entity type."
 msgstr "このエントリータイプのエントリーを追加できる権限がありません。"
 
-#: concrete/src/Page/Controller/DashboardExpressEntriesPageController.php:93
+#: concrete/src/Page/Controller/DashboardExpressEntriesPageController.php:106
 #: concrete/blocks/date_navigation/form.php:45
 #: concrete/blocks/express_form/form.php:8
 #: concrete/blocks/express_form/form.php:116
@@ -15741,35 +15754,35 @@ msgstr "このエントリータイプのエントリーを追加できる権限
 msgid "Results"
 msgstr "結果"
 
-#: concrete/src/Page/Controller/DashboardExpressEntriesPageController.php:127
+#: concrete/src/Page/Controller/DashboardExpressEntriesPageController.php:140
 msgid "You do not have access to delete entries of this entity type."
 msgstr "このエントリータイプのエントリーを削除できる権限がありません。"
 
-#: concrete/src/Page/Controller/DashboardExpressEntriesPageController.php:138
+#: concrete/src/Page/Controller/DashboardExpressEntriesPageController.php:151
 msgid "Entry deleted successfully."
 msgstr "エントリーが正常に削除されました。"
 
-#: concrete/src/Page/Controller/DashboardExpressEntriesPageController.php:238
+#: concrete/src/Page/Controller/DashboardExpressEntriesPageController.php:251
 msgid "You do not have access to edit entries of this entity type."
 msgstr "このエントリータイプのエントリーを編集できる権限がありません。"
 
 #. %s is an Express entity name
-#: concrete/src/Page/Controller/DashboardExpressEntriesPageController.php:253
+#: concrete/src/Page/Controller/DashboardExpressEntriesPageController.php:266
 #, php-format
 msgctxt "Express"
 msgid "New record %s added successfully."
 msgstr "新レコード %s が追加されました。"
 
-#: concrete/src/Page/Controller/DashboardExpressEntriesPageController.php:255
+#: concrete/src/Page/Controller/DashboardExpressEntriesPageController.php:268
 msgid "View Record Here"
 msgstr "レコード閲覧"
 
-#: concrete/src/Page/Controller/DashboardExpressEntriesPageController.php:262
+#: concrete/src/Page/Controller/DashboardExpressEntriesPageController.php:275
 #, php-format
 msgid "%s updated successfully."
 msgstr "%s が正常に更新されました。"
 
-#: concrete/src/Page/Controller/DashboardExpressEntriesPageController.php:268
+#: concrete/src/Page/Controller/DashboardExpressEntriesPageController.php:280
 msgid "Invalid form."
 msgstr "無効なフォーム。"
 
@@ -15870,7 +15883,7 @@ msgstr "関連するページ"
 msgid "New Version %s"
 msgstr "新バージョン %s"
 
-#: concrete/src/Page/Collection/Collection.php:300
+#: concrete/src/Page/Collection/Collection.php:305
 #, php-format
 msgid "Version %d"
 msgstr "バージョン %d"
@@ -21781,6 +21794,11 @@ msgid ""
 " your source image smaller than the thumbnail?"
 msgstr "リクエストされたサムネイルは有効なサムネイルに登録されていないか、元画像がサムネイルより小さい可能性があります。"
 
+#: concrete/views/dialogs/file/bulk/properties.php:9
+#: concrete/views/dialogs/user/bulk/properties.php:9
+msgid "Other Attributes"
+msgstr "その他の属性"
+
 #: concrete/views/dialogs/file/bulk/storage.php:24
 msgid "Move Location"
 msgstr "場所を移動"
@@ -22915,7 +22933,7 @@ msgstr "ページあたりのトピック件数"
 #: concrete/blocks/discussion/form.php:42
 #: concrete/blocks/core_gathering/add.php:8
 #: concrete/blocks/core_gathering/edit.php:9
-#: concrete/blocks/core_conversation/form.php:98
+#: concrete/blocks/core_conversation/form.php:128
 msgid "Posting"
 msgstr "投稿"
 
@@ -22930,7 +22948,7 @@ msgstr "はい、コメント欄はオープンで、新規トピックを投稿
 
 #: concrete/blocks/discussion/form.php:55
 #: concrete/blocks/core_gathering/form/posting.php:21
-#: concrete/blocks/core_conversation/form.php:114
+#: concrete/blocks/core_conversation/form.php:144
 msgid "No, posting is disabled."
 msgstr "いいえ、投稿を無効にします。"
 
@@ -24660,7 +24678,7 @@ msgid "Feed Title"
 msgstr "フィードタイトル"
 
 #: concrete/blocks/rss_displayer/form_setup_html.php:17
-#: concrete/blocks/core_conversation/form.php:136
+#: concrete/blocks/core_conversation/form.php:166
 msgid "Date Format"
 msgstr "日付書式"
 
@@ -25000,11 +25018,11 @@ msgstr "表示レベルを任意指定"
 msgid "levels"
 msgstr "階層"
 
-#: concrete/blocks/core_conversation/controller.php:35
+#: concrete/blocks/core_conversation/controller.php:45
 msgid "Displays conversations on a page."
 msgstr "このページのコメント欄を表示。"
 
-#: concrete/blocks/core_conversation/controller.php:40
+#: concrete/blocks/core_conversation/controller.php:50
 msgid "Conversation"
 msgstr "コメント欄"
 
@@ -25021,21 +25039,22 @@ msgid "Flat"
 msgstr "フラット"
 
 #: concrete/blocks/core_conversation/form.php:57
-#: concrete/elements/conversation/display.php:53
+#: concrete/elements/conversation/display.php:54
 msgid "Earliest First"
 msgstr "古い順"
 
 #: concrete/blocks/core_conversation/form.php:57
-#: concrete/elements/conversation/display.php:57
+#: concrete/elements/conversation/display.php:58
 msgid "Most Recent First"
 msgstr "最新順"
 
 #: concrete/blocks/core_conversation/form.php:57
-#: concrete/elements/conversation/display.php:61
+#: concrete/elements/conversation/display.php:62
 msgid "Highest Rated"
 msgstr "評価の高い"
 
 #: concrete/blocks/core_conversation/form.php:68
+#: concrete/elements/conversation/message/review.php:9
 #: concrete/themes/dashboard/marketplace.php:68
 msgid "Rating"
 msgstr "評価"
@@ -25044,74 +25063,86 @@ msgstr "評価"
 msgid "Enable Comment Rating"
 msgstr "コメント評価機能を有効にする"
 
-#: concrete/blocks/core_conversation/form.php:77
+#: concrete/blocks/core_conversation/form.php:78
+msgid "Turn Top-Level Posts into Reviews"
+msgstr ""
+
+#: concrete/blocks/core_conversation/form.php:86
+msgid "Aggregate ratings by attribute"
+msgstr ""
+
+#: concrete/blocks/core_conversation/form.php:95
+msgid "Create a `Rating` page attribute in order to aggregate ratings."
+msgstr ""
+
+#: concrete/blocks/core_conversation/form.php:107
 msgid "Paginate Message List"
 msgstr "メッセージ一覧ページ付け"
 
-#: concrete/blocks/core_conversation/form.php:81
+#: concrete/blocks/core_conversation/form.php:111
 msgid "No, display all messages."
 msgstr "付けずに、メッセージすべてを表示。"
 
-#: concrete/blocks/core_conversation/form.php:87
+#: concrete/blocks/core_conversation/form.php:117
 msgid "Yes, display only a sub-set of messages at a time."
 msgstr "付けて、指定数のメッセージのみを表示する"
 
-#: concrete/blocks/core_conversation/form.php:92
+#: concrete/blocks/core_conversation/form.php:122
 msgid "Messages Per Page"
 msgstr "ページあたりのメッセージ数"
 
-#: concrete/blocks/core_conversation/form.php:100
+#: concrete/blocks/core_conversation/form.php:130
 msgid "Add Message Label"
 msgstr "メッセージを追加ラベル"
 
-#: concrete/blocks/core_conversation/form.php:104
+#: concrete/blocks/core_conversation/form.php:134
 msgid "Enable Posting"
 msgstr "投稿を有効にする"
 
-#: concrete/blocks/core_conversation/form.php:108
+#: concrete/blocks/core_conversation/form.php:138
 msgid "Yes, this conversation accepts messages and replies."
 msgstr "はい、このコメント欄はメッセージと返信を受け付けます。"
 
-#: concrete/blocks/core_conversation/form.php:119
+#: concrete/blocks/core_conversation/form.php:149
 msgid "Display Posting Form"
 msgstr "投稿フォームを表示"
 
-#: concrete/blocks/core_conversation/form.php:123
+#: concrete/blocks/core_conversation/form.php:153
 #: concrete/elements/custom_style.php:246
 #: concrete/elements/custom_style.php:279
 msgid "Top"
 msgstr "上"
 
-#: concrete/blocks/core_conversation/form.php:129
+#: concrete/blocks/core_conversation/form.php:159
 #: concrete/elements/custom_style.php:260
 #: concrete/elements/custom_style.php:293
 msgid "Bottom"
 msgstr "下"
 
-#: concrete/blocks/core_conversation/form.php:140
+#: concrete/blocks/core_conversation/form.php:170
 msgid "Use Site Default."
 msgstr "サイトデフォルトを使用。"
 
-#: concrete/blocks/core_conversation/form.php:146
+#: concrete/blocks/core_conversation/form.php:176
 msgid "Time elapsed since post."
 msgstr "投稿からの時間。"
 
-#: concrete/blocks/core_conversation/form.php:159
+#: concrete/blocks/core_conversation/form.php:189
 msgid "File Attachment Management"
 msgstr "添付ファイル管理"
 
-#: concrete/blocks/core_conversation/form.php:160
+#: concrete/blocks/core_conversation/form.php:190
 msgid ""
 "Note: Entering values here will override global conversations file "
 "attachment settings for this block if you enable Attachment Overrides for "
 "this Conversation."
 msgstr "注記：このコメント欄のファイル添付のオーバーライドを有効にした場合、入力した値はこのブロックに対してコメント欄のファイル添付のグローバル設定を上書きします。"
 
-#: concrete/blocks/core_conversation/form.php:164
+#: concrete/blocks/core_conversation/form.php:194
 msgid "Enable Attachment Overrides"
 msgstr "ファイル添付のオーバーライドを有効にする"
 
-#: concrete/blocks/core_conversation/form.php:214
+#: concrete/blocks/core_conversation/form.php:244
 msgid "Override Global Settings"
 msgstr "共通設定を上書き"
 
@@ -25276,24 +25307,24 @@ msgstr "ファイルの使用状況とスタックの使用状況の統計トラ
 msgid "Sign Out"
 msgstr "ログアウト"
 
-#: concrete/elements/conversation/message/add_form.php:44
+#: concrete/elements/conversation/message/add_form.php:48
 msgid "Un-Subscribe"
 msgstr "購読を解除"
 
-#: concrete/elements/conversation/message/add_form.php:48
+#: concrete/elements/conversation/message/add_form.php:52
 msgid "Subscribe to Conversation"
 msgstr "新着コメントを購読"
 
-#: concrete/elements/conversation/message/add_form.php:115
+#: concrete/elements/conversation/message/add_form.php:119
 msgid "Adding new posts is disabled for this conversation."
 msgstr "新しい投稿の追加はこのコメント欄では無効です。"
 
-#: concrete/elements/conversation/message/add_form.php:121
+#: concrete/elements/conversation/message/add_form.php:125
 #, php-format
 msgid "You must <a href=\"%s\">sign in</a> to post to this conversation."
 msgstr "このコメント欄に投稿するには<a href=\"%s\">ログイン</a>する必要があります。"
 
-#: concrete/elements/conversation/message/add_form.php:123
+#: concrete/elements/conversation/message/add_form.php:127
 msgid "You do not have permission to post this to conversation."
 msgstr "このコメント欄に投稿する権限がありません。"
 
@@ -25320,36 +25351,36 @@ msgid "%d Message"
 msgid_plural "%d Messages"
 msgstr[0] "%d メッセージ"
 
-#: concrete/elements/conversation/display.php:37
+#: concrete/elements/conversation/display.php:38
 msgid "Delete Message"
 msgstr "メッセージを削除"
 
-#: concrete/elements/conversation/display.php:38
+#: concrete/elements/conversation/display.php:39
 msgid "Remove this message? Replies to it will not be removed."
 msgstr "このメッセージを削除しますか？このメッセージへの返信は削除されません。"
 
-#: concrete/elements/conversation/display.php:40
+#: concrete/elements/conversation/display.php:41
 msgid "Delete Attachment"
 msgstr "添付ファイルを削除する"
 
-#: concrete/elements/conversation/display.php:72
+#: concrete/elements/conversation/display.php:73
 msgid "No messages in this conversation."
 msgstr "このコメント欄にメッセージはありません。"
 
-#: concrete/elements/conversation/display.php:85
+#: concrete/elements/conversation/display.php:86
 #: concrete/elements/gathering/display.php:35
 msgid "Load More"
 msgstr "もっと見る"
 
-#: concrete/elements/conversation/message.php:153
+#: concrete/elements/conversation/message.php:167
 msgid "Share message URL on Twitter."
 msgstr "メッセージ URL を Twitter で共有する。"
 
-#: concrete/elements/conversation/message.php:156
+#: concrete/elements/conversation/message.php:170
 msgid "Share message URL on Facebook."
 msgstr "メッセージ URL を Facebook で共有する。"
 
-#: concrete/elements/conversation/message.php:159
+#: concrete/elements/conversation/message.php:173
 msgid "Get message URL."
 msgstr "メッセージ URL を取得する。"
 
@@ -25736,43 +25767,43 @@ msgstr "ユーザーキーワード検索に含める"
 msgid "Field available in Dashboard User Search."
 msgstr "管理画面のユーザー検索で使用する"
 
-#: concrete/elements/search/customize_results.php:17
+#: concrete/elements/search/customize_results.php:19
 msgid "Choose Columns"
 msgstr "カラムを選択"
 
-#: concrete/elements/search/customize_results.php:22
+#: concrete/elements/search/customize_results.php:24
 msgid "Standard Properties"
 msgstr "基本プロパティー"
 
-#: concrete/elements/search/customize_results.php:56
+#: concrete/elements/search/customize_results.php:58
 msgid "Column Order"
 msgstr "並び順"
 
-#: concrete/elements/search/customize_results.php:58
+#: concrete/elements/search/customize_results.php:60
 msgid "Click and drag to change column order."
 msgstr "並び順をドラッグして変更"
 
-#: concrete/elements/search/customize_results.php:73
+#: concrete/elements/search/customize_results.php:75
 msgid "Sort By"
 msgstr "並び替え"
 
-#: concrete/elements/search/customize_results.php:77
+#: concrete/elements/search/customize_results.php:79
 msgid "Default Column"
 msgstr "デフォルトカラム"
 
-#: concrete/elements/search/customize_results.php:93
+#: concrete/elements/search/customize_results.php:95
 msgid "Direction"
 msgstr "方向"
 
-#: concrete/elements/search/customize_results.php:100
+#: concrete/elements/search/customize_results.php:102
 msgid "Ascending"
 msgstr "昇順"
 
-#: concrete/elements/search/customize_results.php:103
+#: concrete/elements/search/customize_results.php:105
 msgid "Descending"
 msgstr "降順"
 
-#: concrete/elements/search/customize_results.php:110
+#: concrete/elements/search/customize_results.php:112
 msgid "Number of Results"
 msgstr ""
 
@@ -25959,27 +25990,35 @@ msgstr "モバイルプレビュー"
 msgid "Delete Page"
 msgstr "ページ削除"
 
-#: concrete/elements/dashboard/reports/forms/header.php:7
+#: concrete/elements/dashboard/reports/forms/header.php:10
 msgid "Legacy Forms"
 msgstr "レガシーフォーム"
 
-#: concrete/elements/dashboard/users/header.php:15
-msgid "Mark Email as Valid"
-msgstr "メールアドレス確認済みとする"
+#: concrete/elements/dashboard/users/header.php:14
+msgid "Validate"
+msgstr ""
 
-#: concrete/elements/dashboard/users/header.php:27
+#: concrete/elements/dashboard/users/header.php:18
+msgid "Mark Email As Valid"
+msgstr ""
+
+#: concrete/elements/dashboard/users/header.php:21
+msgid "Send Email Validation"
+msgstr ""
+
+#: concrete/elements/dashboard/users/header.php:32
 msgid "Send Private Message"
 msgstr "プライベートメッセージを送る"
 
-#: concrete/elements/dashboard/users/header.php:35
+#: concrete/elements/dashboard/users/header.php:40
 msgid "Deactivate User"
 msgstr "ユーザーアカウントを停止する"
 
-#: concrete/elements/dashboard/users/header.php:40
+#: concrete/elements/dashboard/users/header.php:45
 msgid "Activate User"
 msgstr "ユーザーアカウントを有効にする"
 
-#: concrete/elements/dashboard/users/header.php:48
+#: concrete/elements/dashboard/users/header.php:53
 msgid "Sign in As User"
 msgstr "ユーザーとしてログイン"
 
