@@ -1,7 +1,3 @@
-concrete5-translations
-======================
+This is an old repository containing outdated language files for concrete5.
 
-In this repository you can find the latest copies of the concrete5 .po and .mo files.
-They are pulled from transifex.com
-
-Do you want to see a pretty chart with the translation progress? [Here it is!](http://concrete5.github.io/concrete5-translations/)
+The most up-to-date language files are available at [translate.concrete5.org](https://translate.concrete5.org)
